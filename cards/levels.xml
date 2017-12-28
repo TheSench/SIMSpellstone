@@ -26,6 +26,12 @@
     <!-- Fusion 2 salvage amount -->
     <sp_cost>5</sp_cost>
     <!-- This is how much it costs to increase to next level, not how much this level costs -->
+    <buyback_cost0>10</buyback_cost0>
+    <!-- Cost to get this card from buyback at Fusion 0 -->
+    <buyback_cost1>80</buyback_cost1>
+    <!-- Cost to get this card from buyback at Fusion 1 -->
+    <buyback_cost2>240</buyback_cost2>
+    <!-- Cost to get this card from buyback at Fusion 2 -->
   </card_level>
   <card_level>
     <rarity>1</rarity>
@@ -50,6 +56,9 @@
     <salvage1>55</salvage1>
     <salvage2>120</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost0>25</buyback_cost0>
+    <buyback_cost1>110</buyback_cost1>
+    <buyback_cost2>240</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>2</rarity>
@@ -82,6 +91,9 @@
     <salvage1>130</salvage1>
     <salvage2>280</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost0>60</buyback_cost0>
+    <buyback_cost1>260</buyback_cost1>
+    <buyback_cost2>560</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>3</rarity>
@@ -117,11 +129,22 @@
   <!-- Legendary -->
   <card_level>
     <rarity>4</rarity>
+    <level>0</level>
+    <shard_fragment_cost>50</shard_fragment_cost>
+    <shard_sp_cost>100</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>4</rarity>
     <level>1</level>
     <salvage0>60</salvage0>
     <salvage1>280</salvage1>
     <salvage2>560</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost0>120</buyback_cost0>
+    <buyback_cost1>560</buyback_cost1>
+    <buyback_cost2>1120</buyback_cost2>
+    <shard_fragment_cost>75</shard_fragment_cost>
+    <shard_sp_cost>200</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>4</rarity>
@@ -130,6 +153,8 @@
     <salvage1>285</salvage1>
     <salvage2>565</salvage2>
     <sp_cost>15</sp_cost>
+    <shard_fragment_cost>100</shard_fragment_cost>
+    <shard_sp_cost>300</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>4</rarity>
@@ -138,6 +163,8 @@
     <salvage1>290</salvage1>
     <salvage2>570</salvage2>
     <sp_cost>30</sp_cost>
+    <shard_fragment_cost>150</shard_fragment_cost>
+    <shard_sp_cost>400</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>4</rarity>
@@ -146,6 +173,8 @@
     <salvage1>300</salvage1>
     <salvage2>580</salvage2>
     <sp_cost>75</sp_cost>
+    <shard_fragment_cost>225</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>4</rarity>
@@ -154,6 +183,8 @@
     <salvage1>310</salvage1>
     <salvage2>590</salvage2>
     <sp_cost>150</sp_cost>
+    <shard_fragment_cost>300</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>4</rarity>
@@ -161,8 +192,38 @@
     <salvage0>150</salvage0>
     <salvage1>320</salvage1>
     <salvage2>600</salvage2>
+    <shard_fragment_cost>400</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>4</rarity>
+    <level>7</level>
+    <shard_fragment_cost>600</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>4</rarity>
+    <level>8</level>
+    <shard_fragment_cost>900</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>4</rarity>
+    <level>9</level>
+    <shard_fragment_cost>1200</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>4</rarity>
+    <level>10</level>
   </card_level>
   <!-- Mythic -->
+  <card_level>
+    <rarity>5</rarity>
+    <level>0</level>
+    <shard_fragment_cost>50</shard_fragment_cost>
+    <shard_sp_cost>100</shard_sp_cost>
+  </card_level>
   <card_level>
     <rarity>5</rarity>
     <level>1</level>
@@ -170,6 +231,11 @@
     <salvage1>560</salvage1>
     <salvage2>1100</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost0>120</buyback_cost0>
+    <buyback_cost1>1120</buyback_cost1>
+    <buyback_cost2>2200</buyback_cost2>
+    <shard_fragment_cost>75</shard_fragment_cost>
+    <shard_sp_cost>200</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -178,6 +244,8 @@
     <salvage1>565</salvage1>
     <salvage2>1105</salvage2>
     <sp_cost>15</sp_cost>
+    <shard_fragment_cost>100</shard_fragment_cost>
+    <shard_sp_cost>300</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -186,6 +254,8 @@
     <salvage1>570</salvage1>
     <salvage2>1110</salvage2>
     <sp_cost>30</sp_cost>
+    <shard_fragment_cost>150</shard_fragment_cost>
+    <shard_sp_cost>400</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -194,6 +264,8 @@
     <salvage1>580</salvage1>
     <salvage2>1120</salvage2>
     <sp_cost>75</sp_cost>
+    <shard_fragment_cost>225</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -202,6 +274,8 @@
     <salvage1>590</salvage1>
     <salvage2>1130</salvage2>
     <sp_cost>150</sp_cost>
+    <shard_fragment_cost>300</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -210,6 +284,8 @@
     <salvage1>600</salvage1>
     <salvage2>1140</salvage2>
     <sp_cost>300</sp_cost>
+    <shard_fragment_cost>400</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -217,6 +293,24 @@
     <salvage0>300</salvage0>
     <salvage1>650</salvage1>
     <salvage2>1190</salvage2>
+    <shard_fragment_cost>600</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>5</rarity>
+    <level>8</level>
+    <shard_fragment_cost>900</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>5</rarity>
+    <level>9</level>
+    <shard_fragment_cost>1200</shard_fragment_cost>
+    <shard_sp_cost>500</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>5</rarity>
+    <level>10</level>
   </card_level>
   <!-- Player Levels -->
   <level>

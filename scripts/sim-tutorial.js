@@ -15,12 +15,18 @@
         $("#tutorial-close, #tutorial-skip").click(closeTutorial);
         $("#tutorial-next").click(nextTutorial);
         $("#tutorial-prev").click(previousTutorial);
+        if (typeof delayTutorial === "undefined") {
+            checkTutorial();
+        }
+    });
+
+    function checkTutorial() {
         if (storageAPI.shouldShowTutorial) {
             showTutorial();
         } else {
             closeTutorial();
         }
-    });
+    }
 
     function showTutorial() {
         tutorialIndex = 0;
@@ -101,4 +107,5 @@
     }
 
     window.showTutorial = showTutorial;
+    window.checkTutorial = checkTutorial;
 });

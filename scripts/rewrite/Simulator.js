@@ -1,0 +1,7 @@
+﻿var Simulator = (function () {
+
+
+
+    return {
+    };
+}());

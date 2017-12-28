@@ -34,6 +34,10 @@
 			req: <sub_achievement>1</sub_achievement>
 		13: Runes
 			req: <sub_achievement>1</sub_achievement>
+		14: Crafting
+			req: 
+		15: Arena
+			req: <tier>1</tier>
 		
 		VALID ACHIEVEMENT REQS:
 			<achievement_req>		(-1 is hidden)
@@ -1556,6 +1560,118 @@
       <wb>100</wb>
     </reward>
   </achievement>
+  <achievement>
+    <id>423</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXIII</name>
+    <desc>Collect 8,500 Bounties.</desc>
+    <achievement_req>422</achievement_req>
+    <req>
+      <pvp_wins>8500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>424</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXIV</name>
+    <desc>Collect 9,000 Bounties.</desc>
+    <achievement_req>423</achievement_req>
+    <req>
+      <pvp_wins>9000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>425</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXV</name>
+    <desc>Collect 9,500 Bounties.</desc>
+    <achievement_req>424</achievement_req>
+    <req>
+      <pvp_wins>9500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>426</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXVI</name>
+    <desc>Collect 10,000 Bounties.</desc>
+    <achievement_req>425</achievement_req>
+    <req>
+      <pvp_wins>10000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>427</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXVII</name>
+    <desc>Collect 10,500 Bounties.</desc>
+    <achievement_req>426</achievement_req>
+    <req>
+      <pvp_wins>10500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>428</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXVIII</name>
+    <desc>Collect 11,000 Bounties.</desc>
+    <achievement_req>427</achievement_req>
+    <req>
+      <pvp_wins>11000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>429</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXIX</name>
+    <desc>Collect 11,500 Bounties.</desc>
+    <achievement_req>428</achievement_req>
+    <req>
+      <pvp_wins>11500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>430</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXX</name>
+    <desc>Collect 12,000 Bounties.</desc>
+    <achievement_req>429</achievement_req>
+    <req>
+      <pvp_wins>12000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
   <!-- 451+ Bounty Rank Achievements -->
   <achievement>
     <id>451</id>
@@ -1660,6 +1776,24 @@
     <pvp_rank_req>10</pvp_rank_req>
     <req>
       <upgrade_hero>1</upgrade_hero>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>612</id>
+    <type>6</type>
+    <order>303</order>
+    <name>Legendary Hero Scyer!</name>
+    <desc>Complete the 'Tinman's Change of Heart' campaign on Mastery Level 7.</desc>
+    <achievement_req>602</achievement_req>
+    <pvp_rank_req>10</pvp_rank_req>
+    <locked_start_time>1509469200</locked_start_time>
+    <!--  Tue, 31 Oct 2017 17:00:00 -->
+    <req>
+      <campaign>3011</campaign>
+      <level>7</level>
     </req>
     <reward>
       <pack>12</pack>
@@ -2278,6 +2412,55 @@
     </reward>
   </achievement>
   <!-- END Runes Quests  -->
+  <!-- 1501+: Arena Quests -->
+  <achievement>
+    <id>1501</id>
+    <type>15</type>
+    <order>901</order>
+    <icon>ArenaIcon</icon>
+    <icon_bundle>31</icon_bundle>
+    <name>Silver Division</name>
+    <desc>Reach Silver Division in the Arena.</desc>
+    <achievement_req>451</achievement_req>
+    <req>
+      <tier>4</tier>
+    </req>
+    <reward>
+      <item id="2525" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1502</id>
+    <type>15</type>
+    <order>901</order>
+    <icon>ArenaIcon</icon>
+    <icon_bundle>31</icon_bundle>
+    <name>Gold Division</name>
+    <desc>Reach Gold Division in the Arena.</desc>
+    <achievement_req>1501</achievement_req>
+    <req>
+      <tier>7</tier>
+    </req>
+    <reward>
+      <item id="4001" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1503</id>
+    <type>15</type>
+    <order>901</order>
+    <icon>ArenaIcon</icon>
+    <icon_bundle>31</icon_bundle>
+    <name>Platinum Division</name>
+    <desc>Reach Platinum Division in the Arena.</desc>
+    <achievement_req>1502</achievement_req>
+    <req>
+      <tier>10</tier>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
   <!-- 3001+: Event Quests START -->
   <!-- Event 2 Dragons -->
   <achievement>
@@ -4849,7 +5032,7 @@
       <gold>800</gold>
     </reward>
   </achievement>
-  <!-- Event 18 -->
+  <!-- Event 18 dragons -->
   <achievement>
     <id>3166</id>
     <type>2</type>
@@ -4999,6 +5182,2477 @@
     <achievement_req>3174</achievement_req>
     <req>
       <campaign>1101</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Event 19 -->
+  <achievement>
+    <id>3176</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Secret Mission</name>
+    <desc>Complete the 'The Secret Mission' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1102</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3177</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Secret Mission</name>
+    <desc>Complete the 'The Secret Mission' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3176</achievement_req>
+    <req>
+      <campaign>1102</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3178</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Gold Versus Dawn</name>
+    <desc>Complete the 'Gold Versus Dawn' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1103</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3179</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Gold Versus Dawn</name>
+    <desc>Complete the 'Gold Versus Dawn' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3178</achievement_req>
+    <req>
+      <campaign>1103</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3180</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking the Corruption</name>
+    <desc>Complete the 'Tracking the Corruption' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1104</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3181</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking the Corruption</name>
+    <desc>Complete the 'Tracking the Corruption' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3180</achievement_req>
+    <req>
+      <campaign>1104</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3182</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Corrupted Waters</name>
+    <desc>Complete the 'Corrupted Waters' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1105</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3183</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Corrupted Waters</name>
+    <desc>Complete the 'Corrupted Waters' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3182</achievement_req>
+    <req>
+      <campaign>1105</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3184</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Alternate Plan</name>
+    <desc>Complete the 'Alternate Plan' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1106</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3185</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Alternate Plan</name>
+    <desc>Complete the 'Alternate Plan' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3184</achievement_req>
+    <req>
+      <campaign>1106</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Christmas Achievements -->
+  <achievement>
+    <id>3186</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spirits of Time</name>
+    <desc>Complete the 'Spirits of Time' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1107</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3187</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spirits of Time</name>
+    <desc>Complete the 'Spirits of Time' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3186</achievement_req>
+    <req>
+      <campaign>1107</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 1 -->
+  <achievement>
+    <id>3188</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Healer</name>
+    <desc>Complete the 'The Healer' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1109</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3189</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Healer</name>
+    <desc>Complete the 'The Healer' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <achievement_req>3188</achievement_req>
+    <req>
+      <campaign>1109</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3190</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Healer</name>
+    <desc>Complete the 'The Healer' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <achievement_req>3189</achievement_req>
+    <req>
+      <campaign>1109</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3191</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Healer</name>
+    <desc>Complete the 'The Healer' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <achievement_req>3190</achievement_req>
+    <req>
+      <campaign>1109</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3192</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Guardian</name>
+    <desc>Complete the 'The Guardian' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1485450000</locked_start_time>
+    <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1110</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3193</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Guardian</name>
+    <desc>Complete the 'The Guardian' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1485450000</locked_start_time>
+    <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
+    <achievement_req>3192</achievement_req>
+    <req>
+      <campaign>1110</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3194</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Guardian</name>
+    <desc>Complete the 'The Guardian' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1485450000</locked_start_time>
+    <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
+    <achievement_req>3193</achievement_req>
+    <req>
+      <campaign>1110</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3195</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Guardian</name>
+    <desc>Complete the 'The Guardian' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1485450000</locked_start_time>
+    <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
+    <achievement_req>3194</achievement_req>
+    <req>
+      <campaign>1110</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Event Campaign Extra Node -->
+  <achievement>
+    <id>3196</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Weakening the Lady of the Sea</name>
+    <desc>Complete the 'Weakening the Lady of the Sea' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1108</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3048" number="50" />
+      <event_points id="7016" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3197</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Weakening the Lady of the Sea</name>
+    <desc>Complete the 'Weakening the Lady of the Sea' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <achievement_req>3196</achievement_req>
+    <req>
+      <campaign>1108</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2522" number="10" />
+    </reward>
+  </achievement>
+  <!-- End Extra Node -->
+  <achievement>
+    <id>3198</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1112</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3199</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3198</achievement_req>
+    <req>
+      <campaign>1112</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3200</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3199</achievement_req>
+    <req>
+      <campaign>1112</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3201</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3200</achievement_req>
+    <req>
+      <campaign>1112</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3202</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1113</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3203</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3202</achievement_req>
+    <req>
+      <campaign>1113</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3204</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3203</achievement_req>
+    <req>
+      <campaign>1113</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3205</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3204</achievement_req>
+    <req>
+      <campaign>1113</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 2 -->
+  <!-- Extra Node -->
+  <achievement>
+    <id>3206</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Snowdust Forge</name>
+    <desc>Complete the 'Snowdust Forge' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1114</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3049" number="50" />
+      <event_points id="7018" number="50" /> --&gt;
+		</reward>
+  </achievement>
+  <achievement>
+    <id>3207</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Snowdust Forge</name>
+    <desc>Complete the 'Snowdust Forge' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3206</achievement_req>
+    <req>
+      <campaign>1114</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Mission Nodes -->
+  <achievement>
+    <id>3208</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1115</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3209</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3208</achievement_req>
+    <req>
+      <campaign>1115</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3210</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3209</achievement_req>
+    <req>
+      <campaign>1115</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3211</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3210</achievement_req>
+    <req>
+      <campaign>1115</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3212</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 2.</desc>
+    <mission_req>5508</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3208</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3213</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3212</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3214</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 6.</desc>
+    <mission_req>5508</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3213</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3215</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3214</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Infinity Craft Recipe -->
+  <achievement>
+    <id>3216</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dyrnwyn's Test</name>
+    <desc>Complete the 'Dyrnwyn's Test' campaign on Mastery Level 1.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1117</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8001" number="1" />
+    </reward>
+  </achievement>
+  <!-- Campaign Event 2 -->
+  <achievement>
+    <id>3217</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 2.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <req>
+      <campaign>1118</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3218</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 4.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <achievement_req>3217</achievement_req>
+    <req>
+      <campaign>1118</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3219</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 6.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <achievement_req>3218</achievement_req>
+    <req>
+      <campaign>1118</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3220</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 7.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <achievement_req>3219</achievement_req>
+    <req>
+      <campaign>1118</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3221</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 2.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <req>
+      <campaign>1119</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3222</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 4.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <achievement_req>3221</achievement_req>
+    <req>
+      <campaign>1119</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3223</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 6.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <achievement_req>3222</achievement_req>
+    <req>
+      <campaign>1119</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3224</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 7.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <achievement_req>3223</achievement_req>
+    <req>
+      <campaign>1119</campaign>&gt;
+			<level>7</level></req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 3 -->
+  <!-- Extra Node -->
+  <achievement>
+    <id>3225</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Soul Power</name>
+    <desc>Complete the 'Soul Power' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <req>
+      <campaign>1124</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3053" number="50" />
+      <event_points id="7020" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3226</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Soul Power</name>
+    <desc>Complete the 'Soul Power' campaign on Mastery Level 7.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3225</achievement_req>
+    <req>
+      <campaign>1124</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3227</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <req>
+      <campaign>1125</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3228</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3227</achievement_req>
+    <req>
+      <campaign>1125</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3229</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3228</achievement_req>
+    <req>
+      <campaign>1125</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3230</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3229</achievement_req>
+    <req>
+      <campaign>1125</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3231</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 2.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <req>
+      <campaign>1126</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3232</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 4.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <achievement_req>3231</achievement_req>
+    <req>
+      <campaign>1126</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3233</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 6.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <achievement_req>3232</achievement_req>
+    <req>
+      <campaign>1126</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3234</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 7.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <achievement_req>3233</achievement_req>
+    <req>
+      <campaign>1126</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Zhulong Crafting Recipe -->
+  <achievement>
+    <id>3235</id>
+    <type>2</type>
+    <order>101</order>
+    <name>This is the Final Battle</name>
+    <desc>Complete the 'This is the Final Battle' campaign on Mastery Level 1.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <req>
+      <campaign>1127</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8002" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3236</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 2.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <req>
+      <campaign>1128</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3237</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 4.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <achievement_req>3236</achievement_req>
+    <req>
+      <campaign>1128</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3238</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 6.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <achievement_req>3237</achievement_req>
+    <req>
+      <campaign>1128</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3239</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 7.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <achievement_req>3238</achievement_req>
+    <req>
+      <campaign>1128</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3240</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 2.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <req>
+      <campaign>1129</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3241</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 4.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <achievement_req>3240</achievement_req>
+    <req>
+      <campaign>1129</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3242</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 6.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <achievement_req>3241</achievement_req>
+    <req>
+      <campaign>1129</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3243</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 7.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <achievement_req>3242</achievement_req>
+    <req>
+      <campaign>1129</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 4 -->
+  <achievement>
+    <id>3244</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Honey Buzz</name>
+    <desc>Complete the 'Honey Buzz' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <req>
+      <campaign>1130</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3056" number="50" />
+      <event_points id="7022" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3245</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Honey Buzz</name>
+    <desc>Complete the 'Honey Buzz' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3244</achievement_req>
+    <req>
+      <campaign>1130</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3246</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <req>
+      <campaign>1131</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3247</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3246</achievement_req>
+    <req>
+      <campaign>1131</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3248</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3247</achievement_req>
+    <req>
+      <campaign>1131</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3249</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3248</achievement_req>
+    <req>
+      <campaign>1131</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3250</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 2.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <req>
+      <campaign>1132</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3251</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 4.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <achievement_req>3250</achievement_req>
+    <req>
+      <campaign>1132</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3252</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 6.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <achievement_req>3251</achievement_req>
+    <req>
+      <campaign>1132</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3253</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 7.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <achievement_req>3252</achievement_req>
+    <req>
+      <campaign>1132</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Dune Runner Recipe -->
+  <achievement>
+    <id>3254</id>
+    <type>2</type>
+    <order>101</order>
+    <name>No Place is Home</name>
+    <desc>Complete the 'No Place is Home' campaign on Mastery Level 1.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <req>
+      <campaign>1133</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8003" number="1" />
+    </reward>
+  </achievement>
+  <!-- Mythic Titan Campaign Bluefire (unused)
+	
+	<achievement>
+		<id>3255</id>
+		<type>2</type>
+		<icon>black_boss_gem</icon>
+		<icon_bundle>15</icon_bundle>
+		<name>Reality Distorts...</name>
+		<desc>Complete the 'Reality Distorts...' Campaign.</desc>
+		<order>625</order>
+		<achievement_req>3235</achievement_req>
+		<req>
+			<campaign>3009</campaign>
+			<level>7</level>
+		</req>
+		<reward>
+			<item id='2506' number='9' />
+		</reward>
+	</achievement> -->
+  <!-- Campaign Event 4 Weeks 5-8 -->
+  <achievement>
+    <id>3256</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 2.</desc>
+    <mission_req>5649</mission_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3257</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 4.</desc>
+    <mission_req>5649</mission_req>
+    <achievement_req>3256</achievement_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3258</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 6.</desc>
+    <mission_req>5649</mission_req>
+    <achievement_req>3257</achievement_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3259</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 7.</desc>
+    <mission_req>5649</mission_req>
+    <achievement_req>3258</achievement_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3260</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 2.</desc>
+    <mission_req>3666</mission_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3261</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 4.</desc>
+    <mission_req>3666</mission_req>
+    <achievement_req>3260</achievement_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3262</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 6.</desc>
+    <mission_req>3666</mission_req>
+    <achievement_req>3261</achievement_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3263</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 7.</desc>
+    <mission_req>3666</mission_req>
+    <achievement_req>3262</achievement_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 5 -->
+  <achievement>
+    <id>3264</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Sea Temple Defenses</name>
+    <desc>Complete the 'Sea Temple Defenses' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <req>
+      <campaign>1136</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3059" number="50" />
+      <event_points id="7024" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3265</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Sea Temple Defenses</name>
+    <desc>Complete the 'Sea Temple Defenses' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3264</achievement_req>
+    <req>
+      <campaign>1136</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3266</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <req>
+      <campaign>1137</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3267</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3266</achievement_req>
+    <req>
+      <campaign>1137</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3268</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3267</achievement_req>
+    <req>
+      <campaign>1137</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3269</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3268</achievement_req>
+    <req>
+      <campaign>1137</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3270</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 2.</desc>
+    <mission_req>5666</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <req>
+      <campaign>1138</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3271</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 4.</desc>
+    <mission_req>5666</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <achievement_req>3270</achievement_req>
+    <req>
+      <campaign>1138</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3272</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 6.</desc>
+    <mission_req>5666</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <achievement_req>3271</achievement_req>
+    <req>
+      <campaign>1138</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3273</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 7.</desc>
+    <mission_req>5666</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <achievement_req>3272</achievement_req>
+    <req>
+      <campaign>1138</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Pharite Snapper Recipe -->
+  <achievement>
+    <id>3274</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Through Fire and Water</name>
+    <desc>Complete the 'Fire and Water' campaign on Mastery Level 1.</desc>
+    <mission_req>5666</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <req>
+      <campaign>1139</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8004" number="1" />
+    </reward>
+  </achievement>
+  <!-- Campaign 5 weeks 5-8 -->
+  <achievement>
+    <id>3275</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 2.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <req>
+      <campaign>1140</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3276</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 4.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <achievement_req>3275</achievement_req>
+    <req>
+      <campaign>1140</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3277</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 6.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <achievement_req>3276</achievement_req>
+    <req>
+      <campaign>1140</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3278</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 7.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <achievement_req>3277</achievement_req>
+    <req>
+      <campaign>1140</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3279</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 2.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <req>
+      <campaign>1141</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3280</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 4.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <achievement_req>3279</achievement_req>
+    <req>
+      <campaign>1141</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3281</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 6.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <achievement_req>3280</achievement_req>
+    <req>
+      <campaign>1141</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3282</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 7.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <achievement_req>3281</achievement_req>
+    <req>
+      <campaign>1141</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 6 -->
+  <achievement>
+    <id>3283</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mining Resources</name>
+    <desc>Complete the 'Mining Resources' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <req>
+      <campaign>1142</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3062" number="50" />
+      <event_points id="7026" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3284</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mining Resources</name>
+    <desc>Complete the 'Mining Resources' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3283</achievement_req>
+    <req>
+      <campaign>1142</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3285</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <req>
+      <campaign>1143</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3286</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3285</achievement_req>
+    <req>
+      <campaign>1143</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3287</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3286</achievement_req>
+    <req>
+      <campaign>1143</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3288</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3287</achievement_req>
+    <req>
+      <campaign>1143</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3289</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 2.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <req>
+      <campaign>1144</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3290</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 4.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <achievement_req>3289</achievement_req>
+    <req>
+      <campaign>1144</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3291</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 6.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <achievement_req>3290</achievement_req>
+    <req>
+      <campaign>1144</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3292</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 7.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <achievement_req>3291</achievement_req>
+    <req>
+      <campaign>1144</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Halloween Mecha -->
+  <achievement>
+    <id>3293</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1145</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3294</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3293</achievement_req>
+    <req>
+      <campaign>1145</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Vali Recipe -->
+  <achievement>
+    <id>3295</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Fireshard Giant</name>
+    <desc>Complete the 'Fireshard Giant' campaign on Mastery Level 1.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <req>
+      <campaign>1146</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8005" number="1" />
+    </reward>
+  </achievement>
+  <!-- Campaign Event 6 Weeks 5-8 -->
+  <achievement>
+    <id>3296</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 2.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <req>
+      <campaign>1147</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3297</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 4.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <achievement_req>3296</achievement_req>
+    <req>
+      <campaign>1147</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3298</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 6.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <achievement_req>3297</achievement_req>
+    <req>
+      <campaign>1147</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3299</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 7.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <achievement_req>3298</achievement_req>
+    <req>
+      <campaign>1147</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3300</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Confronting the Robot Within</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 2.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <req>
+      <campaign>1148</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3301</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Confronting the Robot Within</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 4.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <achievement_req>3300</achievement_req>
+    <req>
+      <campaign>1148</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3302</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Confronting the Robot Within</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 6.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <achievement_req>3301</achievement_req>
+    <req>
+      <campaign>1148</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3303</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 7.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <achievement_req>3302</achievement_req>
+    <req>
+      <campaign>1148</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 7 Weeks 1-4 -->
+  <achievement>
+    <id>3304</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Orbs' Power Source</name>
+    <desc>Complete the 'Orbs' Power Source' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <req>
+      <campaign>1149</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3065" number="50" />
+      <event_points id="7028" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3305</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Orbs' Power Source</name>
+    <desc>Complete the 'Orbs' Power Source' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3304</achievement_req>
+    <req>
+      <campaign>1149</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3306</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <req>
+      <campaign>1150</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3307</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3306</achievement_req>
+    <req>
+      <campaign>1150</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3308</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3307</achievement_req>
+    <req>
+      <campaign>1150</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3309</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3308</achievement_req>
+    <req>
+      <campaign>1150</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3310</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 2.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <req>
+      <campaign>1151</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3311</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 4.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <achievement_req>3310</achievement_req>
+    <req>
+      <campaign>1151</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3312</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 6.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <achievement_req>3311</achievement_req>
+    <req>
+      <campaign>1151</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3313</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 7.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <achievement_req>3312</achievement_req>
+    <req>
+      <campaign>1151</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Christmas 2017 Achievements -->
+  <achievement>
+    <id>3314</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Giftbringer</name>
+    <desc>Complete the 'The Giftbringer' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1152</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3315</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Giftbringer</name>
+    <desc>Complete the 'The Giftbringer' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3314</achievement_req>
+    <req>
+      <campaign>1152</campaign>
       <level>7</level>
     </req>
     <reward>

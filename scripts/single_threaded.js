@@ -4,7 +4,6 @@
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
-        card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
         time_start = Date.now();
         time_stop = 0;
@@ -15,7 +14,7 @@
         SIM_CONTROLLER.getConfiguration();
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, getraid);
+        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
 
         hideUI();
 
@@ -24,6 +23,7 @@
         wins = 0;
         losses = 0;
         draws = 0;
+        points = 0;
 
         outp(""); // Clear display
         if (!SIMULATOR.user_controlled) {
@@ -125,7 +125,11 @@
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
+    var seedtest = (_GET("seedtest") || 0);
     function run_sim(skipResults) {
+        if (seedtest) {
+            Math.seedrandom(seedtest++);
+        }
         if (!SIMULATOR.simulate()) return false;
         if (!skipResults) SIM_CONTROLLER.processSimResult();
     }
@@ -156,6 +160,7 @@
         } else {
             losses++;
         }
+        points += SIMULATOR.calculatePoints();
         games++;
 
         // Increment total turn count

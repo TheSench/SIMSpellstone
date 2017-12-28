@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <guideCategory>
+    <id>1</id>
+    <name>Combat</name>
+  </guideCategory>
+  <guideCategory>
+    <id>2</id>
+    <name>Deck Building</name>
+  </guideCategory>
+  <guideCategory>
+    <id>3</id>
+    <name>Heroes</name>
+  </guideCategory>
+  <guideCategory>
+    <id>4</id>
+    <name>Campaigns</name>
+  </guideCategory>
+  <guideCategory>
+    <id>5</id>
+    <name>Bounty Hunting</name>
+  </guideCategory>
+  <guideCategory>
+    <id>20</id>
+    <name>Skills</name>
+  </guideCategory>
+  <!-- COMBAT -->
+  <guide>
+    <id>100</id>
+    <key>combat</key>
+    <category>1</category>
+    <name>Attack and Health</name>
+    <description>All cards have an Attack and Health value. When a card's Health reaches 0, it will be destroyed.</description>
+  </guide>
+  <guide>
+    <id>101</id>
+    <category>1</category>
+    <name>Delay</name>
+    <description>Most cards will have a delay time. This is the number of turns it takes for the card to activate. Inactive cards will not attack, but can still be attacked.</description>
+  </guide>
+  <guide>
+    <id>102</id>
+    <category>1</category>
+    <name>Attacking enemy Cards</name>
+    <description>Active cards will always attack the enemy card directly across from them.</description>
+  </guide>
+  <guide>
+    <id>103</id>
+    <category>1</category>
+    <name>Attacking enemy Hero</name>
+    <description>If there is no enemy card across, an active card will instead attack the enemy Hero.</description>
+  </guide>
+  <guide>
+    <id>104</id>
+    <category>1</category>
+    <name>Victory and Defeat</name>
+    <description>Victory is achieved by reducing the enemy Hero health to zero. If your Hero health is reduced to zero first, you will be Defeated.</description>
+  </guide>
+  <guide>
+    <id>105</id>
+    <category>1</category>
+    <name>Drawing Cards</name>
+    <description>Each turn, you draw a random card from your Deck to your Hand, as long as your Deck is not empty.</description>
+  </guide>
+  <guide>
+    <id>106</id>
+    <category>1</category>
+    <name>Playing Cards</name>
+    <description>After you draw a card, you can play any card in your Hand.</description>
+  </guide>
+  <guide>
+    <id>107</id>
+    <category>1</category>
+    <name>Skills</name>
+    <description>Many cards have one or more Skills. Each skill has very different effects. Mastering Skills is necessary to become a successful Adventurer!</description>
+  </guide>
+  <guide>
+    <id>108</id>
+    <category>1</category>
+    <name>Skill Targeting</name>
+    <description>Skills can have several different targets. In some cases, skills may target random friendly or enemy cards. Other skills may target all cards. Others still can target specific types of cards - like Wyld or Frogs.</description>
+  </guide>
+  <!-- Deck Building -->
+  <guide>
+    <id>200</id>
+    <category>2</category>
+    <name>Basics</name>
+    <description>To overcome the toughest challenges, you will have to master the art of Deck Building! There are multiple ways to do improve your deck.</description>
+  </guide>
+  <guide>
+    <id>201</id>
+    <category>2</category>
+    <name>New Cards</name>
+    <description>You can make your deck stronger by acquiring newer, higher rarity cards from Campaigns, Quests, and the Store.</description>
+  </guide>
+  <guide>
+    <id>202</id>
+    <category>2</category>
+    <key>upgrade</key>
+    <name>Upgrading</name>
+    <description>You can also improve your deck by upgrading your cards. Upgrading will improve the Attack, Health, and Skills of your cards. Upgrade as often as you can!</description>
+  </guide>
+  <guide>
+    <id>203</id>
+    <category>2</category>
+    <name>Fusion</name>
+    <description>Fusion is an advanced technique to improve cards. You can combine two cards of the same type if they are both at their Maximum Upgrade Level. The resulting card will be even better, and can always be further upgraded even more!</description>
+  </guide>
+  <guide>
+    <id>204</id>
+    <category>2</category>
+    <key>vaporize</key>
+    <name>Vaporizing</name>
+    <description>You can vaporize old and unused cards to gain additional Arcane Dust. Vaporized cards are removed permanently, but the Dust can be used to upgrade your most important Cards!</description>
+  </guide>
+  <guide>
+    <id>205</id>
+    <category>2</category>
+    <key>editdeck</key>
+    <name>Strategy</name>
+    <description>The best decks contain very rare, high level cards. You can also improve your deck by using cards with Skills that work well together.</description>
+  </guide>
+  <!-- Heroes -->
+  <guide>
+    <id>300</id>
+    <category>3</category>
+    <key>heroes</key>
+    <name>Basics</name>
+  </guide>
+  <!-- <guide>
+		<id>300</id>
+		<category>3</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>300</id>
+		<category>3</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>300</id>
+		<category>3</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>300</id>
+		<category>3</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>300</id>
+		<category>3</category>
+		<name></name>
+		<description></description>
+	</guide> -->
+  <!-- Campaigns -->
+  <guide>
+    <id>400</id>
+    <category>4</category>
+    <key>map</key>
+    <name>Basics</name>
+    <description></description>
+  </guide>
+  <!-- <guide>
+		<id>400</id>
+		<category>4</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>400</id>
+		<category>4</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>400</id>
+		<category>4</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>400</id>
+		<category>4</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>400</id>
+		<category>4</category>
+		<name></name>
+		<description></description>
+	</guide> -->
+  <!-- Bounty Hunting -->
+  <guide>
+    <id>500</id>
+    <category>5</category>
+    <key>pvp</key>
+    <name>Basics</name>
+    <description></description>
+  </guide>
+  <!-- <guide>
+		<id>500</id>
+		<category>5</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>500</id>
+		<category>5</category>
+		<name></name>
+		<description></description>
+	</guide> 
+	<guide>
+		<id>500</id>
+		<category>5</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>500</id>
+		<category>5</category>
+		<name></name>
+		<description></description>
+	</guide>
+	<guide>
+		<id>500</id>
+		<category>5</category>
+		<name></name>
+		<description></description>
+	</guide> -->
+  <!-- Skills -->
+  <!-- automatically added from the skills XML -->
+</root>

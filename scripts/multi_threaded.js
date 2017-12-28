@@ -285,7 +285,9 @@
         getordered2 = document.getElementById('ordered2').checked;
         getexactorder = true;
         getexactorder2 = true;
+        getcampaign = document.getElementById('campaign').value;
         getmission = document.getElementById('mission').value;
+        missionlevel = document.getElementById('mission_level').value;
         getraid = document.getElementById('raid').value;
         raidlevel = document.getElementById('raid_level').value;;
         getsiege = document.getElementById('siege').checked;
@@ -313,7 +315,7 @@
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
-            cache_cpu_deck = load_deck_mission(getmission);
+            cache_cpu_deck = load_deck_mission(getmission, missionlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
@@ -321,8 +323,6 @@
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
-
-        card_cache = {};
 
         var params = {};
         params['cache_player_deck'] = cache_player_deck;
@@ -332,7 +332,9 @@
         params['getordered2'] = getordered2;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getcampaign'] = getcampaign;
         params['getmission'] = getmission;
+        params['missionlevel'] = missionlevel;
         params['getraid'] = getraid;
         params['getclash'] = getclash;
         params['raidlevel'] = raidlevel;
@@ -443,7 +445,7 @@
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
-            cache_cpu_deck = load_deck_mission(getmission);
+            cache_cpu_deck = load_deck_mission(getmission, missionlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
@@ -451,8 +453,6 @@
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
-
-        card_cache = {};
 
         outp(""); // Clear display
         hideTable();
@@ -466,7 +466,9 @@
         params['getordered2'] = getordered2;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getcampaign'] = getcampaign;
         params['getmission'] = getmission;
+        params['missionlevel'] = missionlevel;
         params['getraid'] = getraid;
         params['raidlevel'] = raidlevel;
         params['getsiege'] = getsiege;
@@ -517,6 +519,7 @@
         params['getordered2'] = getordered2;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getcampaign'] = getcampaign;
         params['getmission'] = getmission;
         params['getraid'] = getraid;
         params['raidlevel'] = raidlevel;

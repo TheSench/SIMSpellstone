@@ -269,7 +269,7 @@
     <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl">
         <label for="loadDeckName"><strong>Deck:</strong></label><br />
         <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
-            <option ng-repeat="key in keys(savedDecks) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
+            <option ng-repeat="key in keys(getSavedDecks()) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
         </select>
     </div>
     <footer id="footer"></footer>

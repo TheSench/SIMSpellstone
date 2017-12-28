@@ -18,6 +18,7 @@
 
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
+    <script type="text/javascript" src="scripts/data/skills.js"></script>
     <script id="cards_script" type="text/javascript" src="scripts/data/cards.js"></script>
     <script id="cards_script" type="text/javascript" src="scripts/data/fusions.js"></script>
     <script id="cards_script" type="text/javascript" src="scripts/data/bges.js"></script>
@@ -143,7 +144,7 @@
                                                 <option default value="" class="grey">Select a Raid/Dungeon...</option>
                                                 <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
                                             </select>
-                                            <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
+                                            <input style="float:initial;" type="NUMBER" id="raid_level" min="1" max="40" step="1" value="25" size="6">
                                         </div>
                                     </div>
                                 </div>
@@ -233,7 +234,7 @@
     <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl">
         <label for="loadDeckName"><strong>Deck:</strong></label><br />
         <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
-            <option ng-repeat="key in keys(savedDecks) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
+            <option ng-repeat="key in keys(getSavedDecks()) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
         </select>
     </div>
     <footer id="footer"></footer>

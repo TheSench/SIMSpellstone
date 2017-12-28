@@ -229,6 +229,14 @@
     <card_id>21043</card_id>
     <resource card_id="11043" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11044</card_id>
+    <resource card_id="1044" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21044</card_id>
+    <resource card_id="11044" number="2" />
+  </fusion_recipe>
   <!-- CHAOS BASE SET COMMONS BEGIN -->
   <fusion_recipe>
     <card_id>11300</card_id>
@@ -424,6 +432,14 @@
     <card_id>21332</card_id>
     <resource card_id="11332" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11333</card_id>
+    <resource card_id="1333" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21333</card_id>
+    <resource card_id="11333" number="2" />
+  </fusion_recipe>
   <!-- CHAOS BASE SET LEGENDARIES BEGIN -->
   <fusion_recipe>
     <card_id>11340</card_id>
@@ -456,6 +472,14 @@
   <fusion_recipe>
     <card_id>21343</card_id>
     <resource card_id="11343" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11344</card_id>
+    <resource card_id="1344" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21344</card_id>
+    <resource card_id="11344" number="2" />
   </fusion_recipe>
   <!-- WYLD BASE SET COMMONS BEGIN -->
   <fusion_recipe>
@@ -652,6 +676,22 @@
     <card_id>21632</card_id>
     <resource card_id="11632" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11633</card_id>
+    <resource card_id="1633" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21633</card_id>
+    <resource card_id="11633" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11634</card_id>
+    <resource card_id="1634" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21634</card_id>
+    <resource card_id="11634" number="2" />
+  </fusion_recipe>
   <!-- WYLD BASE SET LEGENDARIES BEGIN -->
   <fusion_recipe>
     <card_id>11640</card_id>
@@ -684,6 +724,14 @@
   <fusion_recipe>
     <card_id>21643</card_id>
     <resource card_id="11643" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11644</card_id>
+    <resource card_id="1644" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21644</card_id>
+    <resource card_id="11644" number="2" />
   </fusion_recipe>
   <!-- END SET 1000 - Standard -->
   <!-- START SET 2000 - Reward -->
@@ -1188,6 +1236,380 @@
   <fusion_recipe>
     <card_id>22068</card_id>
     <resource card_id="12068" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12069</card_id>
+    <resource card_id="2069" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22069</card_id>
+    <resource card_id="12069" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12070</card_id>
+    <resource card_id="2070" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22070</card_id>
+    <resource card_id="12070" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12071</card_id>
+    <resource card_id="2071" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22071</card_id>
+    <resource card_id="12071" number="2" />
+  </fusion_recipe>
+  <!-- Scylla Item Fusion -->
+  <fusion_recipe>
+    <card_id>2073</card_id>
+    <resource card_id="2072" number="1" />
+    <resource item_id="2522" number="250" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>2074</card_id>
+    <resource card_id="2073" number="1" />
+    <resource item_id="2522" number="1000" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12075</card_id>
+    <resource card_id="2075" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22075</card_id>
+    <resource card_id="12075" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12076</card_id>
+    <resource card_id="2076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22076</card_id>
+    <resource card_id="12076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12077</card_id>
+    <resource card_id="2077" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22077</card_id>
+    <resource card_id="12077" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12078</card_id>
+    <resource card_id="2078" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22078</card_id>
+    <resource card_id="12078" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12079</card_id>
+    <resource card_id="2079" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22079</card_id>
+    <resource card_id="12079" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12080</card_id>
+    <resource card_id="2080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22080</card_id>
+    <resource card_id="12080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12081</card_id>
+    <resource card_id="2081" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22081</card_id>
+    <resource card_id="12081" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12082</card_id>
+    <resource card_id="2082" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22082</card_id>
+    <resource card_id="12082" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12083</card_id>
+    <resource card_id="2083" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22083</card_id>
+    <resource card_id="12083" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12084</card_id>
+    <resource card_id="2084" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22084</card_id>
+    <resource card_id="12084" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12085</card_id>
+    <resource card_id="2085" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22085</card_id>
+    <resource card_id="12085" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12086</card_id>
+    <resource card_id="2086" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22086</card_id>
+    <resource card_id="12086" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12087</card_id>
+    <resource card_id="2087" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22087</card_id>
+    <resource card_id="12087" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12088</card_id>
+    <resource card_id="2088" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22088</card_id>
+    <resource card_id="12088" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12089</card_id>
+    <resource card_id="2089" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22089</card_id>
+    <resource card_id="12089" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12090</card_id>
+    <resource card_id="2090" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22090</card_id>
+    <resource card_id="12090" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12091</card_id>
+    <resource card_id="2091" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22091</card_id>
+    <resource card_id="12091" number="2" />
+  </fusion_recipe>
+  <!-- Verus Item Fusion -->
+  <fusion_recipe>
+    <card_id>2093</card_id>
+    <resource card_id="2092" number="1" />
+    <resource item_id="2524" number="2500" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>2094</card_id>
+    <resource card_id="2093" number="1" />
+    <resource item_id="2524" number="5000" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12095</card_id>
+    <resource card_id="2095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22095</card_id>
+    <resource card_id="12095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12096</card_id>
+    <resource card_id="2096" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22096</card_id>
+    <resource card_id="12096" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12097</card_id>
+    <resource card_id="2097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22097</card_id>
+    <resource card_id="12097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12098</card_id>
+    <resource card_id="2098" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22098</card_id>
+    <resource card_id="12098" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12099</card_id>
+    <resource card_id="2099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22099</card_id>
+    <resource card_id="12099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12100</card_id>
+    <resource card_id="2100" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22100</card_id>
+    <resource card_id="12100" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12101</card_id>
+    <resource card_id="2101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22101</card_id>
+    <resource card_id="12101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12102</card_id>
+    <resource card_id="2102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22102</card_id>
+    <resource card_id="12102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12103</card_id>
+    <resource card_id="2103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22103</card_id>
+    <resource card_id="12103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12104</card_id>
+    <resource card_id="2104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22104</card_id>
+    <resource card_id="12104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12105</card_id>
+    <resource card_id="2105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22105</card_id>
+    <resource card_id="12105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12106</card_id>
+    <resource card_id="2106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22106</card_id>
+    <resource card_id="12106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12107</card_id>
+    <resource card_id="2107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22107</card_id>
+    <resource card_id="12107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12108</card_id>
+    <resource card_id="2108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22108</card_id>
+    <resource card_id="12108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12109</card_id>
+    <resource card_id="2109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22109</card_id>
+    <resource card_id="12109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12110</card_id>
+    <resource card_id="2110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22110</card_id>
+    <resource card_id="12110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12111</card_id>
+    <resource card_id="2111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22111</card_id>
+    <resource card_id="12111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12112</card_id>
+    <resource card_id="2112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22112</card_id>
+    <resource card_id="12112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12113</card_id>
+    <resource card_id="2113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22113</card_id>
+    <resource card_id="12113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12114</card_id>
+    <resource card_id="2114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22114</card_id>
+    <resource card_id="12114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12115</card_id>
+    <resource card_id="2115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22115</card_id>
+    <resource card_id="12115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12116</card_id>
+    <resource card_id="2116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22116</card_id>
+    <resource card_id="12116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12117</card_id>
+    <resource card_id="2117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22117</card_id>
+    <resource card_id="12117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12118</card_id>
+    <resource card_id="2118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22118</card_id>
+    <resource card_id="12118" number="2" />
   </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
@@ -1953,6 +2375,22 @@
     <resource card_id="15094" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15095</card_id>
+    <resource card_id="5095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25095</card_id>
+    <resource card_id="15095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15096</card_id>
+    <resource card_id="5096" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25096</card_id>
+    <resource card_id="15096" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15097</card_id>
     <resource card_id="5097" number="2" />
   </fusion_recipe>
@@ -1967,6 +2405,590 @@
   <fusion_recipe>
     <card_id>25098</card_id>
     <resource card_id="15098" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15099</card_id>
+    <resource card_id="5099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25099</card_id>
+    <resource card_id="15099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15100</card_id>
+    <resource card_id="5100" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25100</card_id>
+    <resource card_id="15100" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15101</card_id>
+    <resource card_id="5101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25101</card_id>
+    <resource card_id="15101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15102</card_id>
+    <resource card_id="5102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25102</card_id>
+    <resource card_id="15102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15103</card_id>
+    <resource card_id="5103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25103</card_id>
+    <resource card_id="15103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15104</card_id>
+    <resource card_id="5104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25104</card_id>
+    <resource card_id="15104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15105</card_id>
+    <resource card_id="5105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25105</card_id>
+    <resource card_id="15105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15106</card_id>
+    <resource card_id="5106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25106</card_id>
+    <resource card_id="15106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15107</card_id>
+    <resource card_id="5107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25107</card_id>
+    <resource card_id="15107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15108</card_id>
+    <resource card_id="5108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25108</card_id>
+    <resource card_id="15108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15109</card_id>
+    <resource card_id="5109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25109</card_id>
+    <resource card_id="15109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15110</card_id>
+    <resource card_id="5110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25110</card_id>
+    <resource card_id="15110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15111</card_id>
+    <resource card_id="5111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25111</card_id>
+    <resource card_id="15111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15112</card_id>
+    <resource card_id="5112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25112</card_id>
+    <resource card_id="15112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15113</card_id>
+    <resource card_id="5113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25113</card_id>
+    <resource card_id="15113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15114</card_id>
+    <resource card_id="5114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25114</card_id>
+    <resource card_id="15114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15115</card_id>
+    <resource card_id="5115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25115</card_id>
+    <resource card_id="15115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15116</card_id>
+    <resource card_id="5116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25116</card_id>
+    <resource card_id="15116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15117</card_id>
+    <resource card_id="5117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25117</card_id>
+    <resource card_id="15117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15118</card_id>
+    <resource card_id="5118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25118</card_id>
+    <resource card_id="15118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15119</card_id>
+    <resource card_id="5119" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25119</card_id>
+    <resource card_id="15119" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15120</card_id>
+    <resource card_id="5120" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25120</card_id>
+    <resource card_id="15120" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15121</card_id>
+    <resource card_id="5121" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25121</card_id>
+    <resource card_id="15121" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15122</card_id>
+    <resource card_id="5122" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25122</card_id>
+    <resource card_id="15122" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15123</card_id>
+    <resource card_id="5123" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25123</card_id>
+    <resource card_id="15123" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15124</card_id>
+    <resource card_id="5124" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25124</card_id>
+    <resource card_id="15124" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15125</card_id>
+    <resource card_id="5125" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25125</card_id>
+    <resource card_id="15125" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15126</card_id>
+    <resource card_id="5126" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25126</card_id>
+    <resource card_id="15126" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15127</card_id>
+    <resource card_id="5127" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25127</card_id>
+    <resource card_id="15127" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15128</card_id>
+    <resource card_id="5128" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25128</card_id>
+    <resource card_id="15128" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15129</card_id>
+    <resource card_id="5129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25129</card_id>
+    <resource card_id="15129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15130</card_id>
+    <resource card_id="5130" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25130</card_id>
+    <resource card_id="15130" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15131</card_id>
+    <resource card_id="5131" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25131</card_id>
+    <resource card_id="15131" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15132</card_id>
+    <resource card_id="5132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25132</card_id>
+    <resource card_id="15132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15133</card_id>
+    <resource card_id="5133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25133</card_id>
+    <resource card_id="15133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15134</card_id>
+    <resource card_id="5134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25134</card_id>
+    <resource card_id="15134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15135</card_id>
+    <resource card_id="5135" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25135</card_id>
+    <resource card_id="15135" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15136</card_id>
+    <resource card_id="5136" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25136</card_id>
+    <resource card_id="15136" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15137</card_id>
+    <resource card_id="5137" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25137</card_id>
+    <resource card_id="15137" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15138</card_id>
+    <resource card_id="5138" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25138</card_id>
+    <resource card_id="15138" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15139</card_id>
+    <resource card_id="5139" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25139</card_id>
+    <resource card_id="15139" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15140</card_id>
+    <resource card_id="5140" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25140</card_id>
+    <resource card_id="15140" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15141</card_id>
+    <resource card_id="5141" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25141</card_id>
+    <resource card_id="15141" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15142</card_id>
+    <resource card_id="5142" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25142</card_id>
+    <resource card_id="15142" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15143</card_id>
+    <resource card_id="5143" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25143</card_id>
+    <resource card_id="15143" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15144</card_id>
+    <resource card_id="5144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25144</card_id>
+    <resource card_id="15144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15145</card_id>
+    <resource card_id="5145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25145</card_id>
+    <resource card_id="15145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15146</card_id>
+    <resource card_id="5146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25146</card_id>
+    <resource card_id="15146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15147</card_id>
+    <resource card_id="5147" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25147</card_id>
+    <resource card_id="15147" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15148</card_id>
+    <resource card_id="5148" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25148</card_id>
+    <resource card_id="15148" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15149</card_id>
+    <resource card_id="5149" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25149</card_id>
+    <resource card_id="15149" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15150</card_id>
+    <resource card_id="5150" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25150</card_id>
+    <resource card_id="15150" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15151</card_id>
+    <resource card_id="5151" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25151</card_id>
+    <resource card_id="15151" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15152</card_id>
+    <resource card_id="5152" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25152</card_id>
+    <resource card_id="15152" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15153</card_id>
+    <resource card_id="5153" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25153</card_id>
+    <resource card_id="15153" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15154</card_id>
+    <resource card_id="5154" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25154</card_id>
+    <resource card_id="15154" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15155</card_id>
+    <resource card_id="5155" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25155</card_id>
+    <resource card_id="15155" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15156</card_id>
+    <resource card_id="5156" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25156</card_id>
+    <resource card_id="15156" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15157</card_id>
+    <resource card_id="5157" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25157</card_id>
+    <resource card_id="15157" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15158</card_id>
+    <resource card_id="5158" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25158</card_id>
+    <resource card_id="15158" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15159</card_id>
+    <resource card_id="5159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25159</card_id>
+    <resource card_id="15159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15160</card_id>
+    <resource card_id="5160" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25160</card_id>
+    <resource card_id="15160" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15161</card_id>
+    <resource card_id="5161" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25161</card_id>
+    <resource card_id="15161" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15162</card_id>
+    <resource card_id="5162" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25162</card_id>
+    <resource card_id="15162" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15163</card_id>
+    <resource card_id="5163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25163</card_id>
+    <resource card_id="15163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15164</card_id>
+    <resource card_id="5164" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25164</card_id>
+    <resource card_id="15164" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15165</card_id>
+    <resource card_id="5165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25165</card_id>
+    <resource card_id="15165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15166</card_id>
+    <resource card_id="5166" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25166</card_id>
+    <resource card_id="15166" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15167</card_id>
+    <resource card_id="5167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25167</card_id>
+    <resource card_id="15167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15168</card_id>
+    <resource card_id="5168" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25168</card_id>
+    <resource card_id="15168" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15169</card_id>
+    <resource card_id="5169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25169</card_id>
+    <resource card_id="15169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15170</card_id>
+    <resource card_id="5170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25170</card_id>
+    <resource card_id="15170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15171</card_id>
+    <resource card_id="5171" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25171</card_id>
+    <resource card_id="15171" number="2" />
   </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -2738,12 +3760,596 @@
     <resource card_id="16096" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>16097</card_id>
+    <resource card_id="6097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26097</card_id>
+    <resource card_id="16097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16098</card_id>
+    <resource card_id="6098" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26098</card_id>
+    <resource card_id="16098" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16099</card_id>
+    <resource card_id="6099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26099</card_id>
+    <resource card_id="16099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>16100</card_id>
     <resource card_id="6100" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>26100</card_id>
     <resource card_id="16100" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16101</card_id>
+    <resource card_id="6101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26101</card_id>
+    <resource card_id="16101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16102</card_id>
+    <resource card_id="6102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26102</card_id>
+    <resource card_id="16102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16103</card_id>
+    <resource card_id="6103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26103</card_id>
+    <resource card_id="16103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16104</card_id>
+    <resource card_id="6104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26104</card_id>
+    <resource card_id="16104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16105</card_id>
+    <resource card_id="6105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26105</card_id>
+    <resource card_id="16105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16106</card_id>
+    <resource card_id="6106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26106</card_id>
+    <resource card_id="16106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16107</card_id>
+    <resource card_id="6107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26107</card_id>
+    <resource card_id="16107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16108</card_id>
+    <resource card_id="6108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26108</card_id>
+    <resource card_id="16108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16109</card_id>
+    <resource card_id="6109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26109</card_id>
+    <resource card_id="16109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16110</card_id>
+    <resource card_id="6110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26110</card_id>
+    <resource card_id="16110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16111</card_id>
+    <resource card_id="6111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26111</card_id>
+    <resource card_id="16111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16112</card_id>
+    <resource card_id="6112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26112</card_id>
+    <resource card_id="16112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16113</card_id>
+    <resource card_id="6113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26113</card_id>
+    <resource card_id="16113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16114</card_id>
+    <resource card_id="6114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26114</card_id>
+    <resource card_id="16114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16115</card_id>
+    <resource card_id="6115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26115</card_id>
+    <resource card_id="16115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16116</card_id>
+    <resource card_id="6116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26116</card_id>
+    <resource card_id="16116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16117</card_id>
+    <resource card_id="6117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26117</card_id>
+    <resource card_id="16117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16118</card_id>
+    <resource card_id="6118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26118</card_id>
+    <resource card_id="16118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16119</card_id>
+    <resource card_id="6119" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26119</card_id>
+    <resource card_id="16119" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16120</card_id>
+    <resource card_id="6120" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26120</card_id>
+    <resource card_id="16120" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16121</card_id>
+    <resource card_id="6121" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26121</card_id>
+    <resource card_id="16121" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16122</card_id>
+    <resource card_id="6122" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26122</card_id>
+    <resource card_id="16122" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16123</card_id>
+    <resource card_id="6123" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26123</card_id>
+    <resource card_id="16123" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16124</card_id>
+    <resource card_id="6124" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26124</card_id>
+    <resource card_id="16124" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16125</card_id>
+    <resource card_id="6125" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26125</card_id>
+    <resource card_id="16125" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16126</card_id>
+    <resource card_id="6126" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26126</card_id>
+    <resource card_id="16126" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16127</card_id>
+    <resource card_id="6127" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26127</card_id>
+    <resource card_id="16127" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16128</card_id>
+    <resource card_id="6128" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26128</card_id>
+    <resource card_id="16128" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16129</card_id>
+    <resource card_id="6129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26129</card_id>
+    <resource card_id="16129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16130</card_id>
+    <resource card_id="6130" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26130</card_id>
+    <resource card_id="16130" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16131</card_id>
+    <resource card_id="6131" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26131</card_id>
+    <resource card_id="16131" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16132</card_id>
+    <resource card_id="6132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26132</card_id>
+    <resource card_id="16132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16133</card_id>
+    <resource card_id="6133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26133</card_id>
+    <resource card_id="16133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16134</card_id>
+    <resource card_id="6134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26134</card_id>
+    <resource card_id="16134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16135</card_id>
+    <resource card_id="6135" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26135</card_id>
+    <resource card_id="16135" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16136</card_id>
+    <resource card_id="6136" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26136</card_id>
+    <resource card_id="16136" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16137</card_id>
+    <resource card_id="6137" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26137</card_id>
+    <resource card_id="16137" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16138</card_id>
+    <resource card_id="6138" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26138</card_id>
+    <resource card_id="16138" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16139</card_id>
+    <resource card_id="6139" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26139</card_id>
+    <resource card_id="16139" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16140</card_id>
+    <resource card_id="6140" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26140</card_id>
+    <resource card_id="16140" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16141</card_id>
+    <resource card_id="6141" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26141</card_id>
+    <resource card_id="16141" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16142</card_id>
+    <resource card_id="6142" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26142</card_id>
+    <resource card_id="16142" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16143</card_id>
+    <resource card_id="6143" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26143</card_id>
+    <resource card_id="16143" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16144</card_id>
+    <resource card_id="6144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26144</card_id>
+    <resource card_id="16144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16145</card_id>
+    <resource card_id="6145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26145</card_id>
+    <resource card_id="16145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16146</card_id>
+    <resource card_id="6146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26146</card_id>
+    <resource card_id="16146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16147</card_id>
+    <resource card_id="6147" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26147</card_id>
+    <resource card_id="16147" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16148</card_id>
+    <resource card_id="6148" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26148</card_id>
+    <resource card_id="16148" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16149</card_id>
+    <resource card_id="6149" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26149</card_id>
+    <resource card_id="16149" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16150</card_id>
+    <resource card_id="6150" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26150</card_id>
+    <resource card_id="16150" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16151</card_id>
+    <resource card_id="6151" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26151</card_id>
+    <resource card_id="16151" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16152</card_id>
+    <resource card_id="6152" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26152</card_id>
+    <resource card_id="16152" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16153</card_id>
+    <resource card_id="6153" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26153</card_id>
+    <resource card_id="16153" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16154</card_id>
+    <resource card_id="6154" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26154</card_id>
+    <resource card_id="16154" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16155</card_id>
+    <resource card_id="6155" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26155</card_id>
+    <resource card_id="16155" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16157</card_id>
+    <resource card_id="6157" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26157</card_id>
+    <resource card_id="16157" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16158</card_id>
+    <resource card_id="6158" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26158</card_id>
+    <resource card_id="16158" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16159</card_id>
+    <resource card_id="6159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26159</card_id>
+    <resource card_id="16159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16160</card_id>
+    <resource card_id="6160" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26160</card_id>
+    <resource card_id="16160" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16161</card_id>
+    <resource card_id="6161" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26161</card_id>
+    <resource card_id="16161" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16163</card_id>
+    <resource card_id="6163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26163</card_id>
+    <resource card_id="16163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16164</card_id>
+    <resource card_id="6164" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26164</card_id>
+    <resource card_id="16164" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16165</card_id>
+    <resource card_id="6165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26165</card_id>
+    <resource card_id="16165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16166</card_id>
+    <resource card_id="6166" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26166</card_id>
+    <resource card_id="16166" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16167</card_id>
+    <resource card_id="6167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26167</card_id>
+    <resource card_id="16167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16168</card_id>
+    <resource card_id="6168" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26168</card_id>
+    <resource card_id="16168" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16169</card_id>
+    <resource card_id="6169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26169</card_id>
+    <resource card_id="16169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16170</card_id>
+    <resource card_id="6170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26170</card_id>
+    <resource card_id="16170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16172</card_id>
+    <resource card_id="6172" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26172</card_id>
+    <resource card_id="16172" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16174</card_id>
+    <resource card_id="6174" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26174</card_id>
+    <resource card_id="16174" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -3499,12 +5105,612 @@
     <resource card_id="17093" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>17094</card_id>
+    <resource card_id="7094" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27094</card_id>
+    <resource card_id="17094" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17095</card_id>
+    <resource card_id="7095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27095</card_id>
+    <resource card_id="17095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>17096</card_id>
     <resource card_id="7096" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>27096</card_id>
     <resource card_id="17096" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17097</card_id>
+    <resource card_id="7097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27097</card_id>
+    <resource card_id="17097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17098</card_id>
+    <resource card_id="7098" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27098</card_id>
+    <resource card_id="17098" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17099</card_id>
+    <resource card_id="7099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27099</card_id>
+    <resource card_id="17099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17100</card_id>
+    <resource card_id="7100" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27100</card_id>
+    <resource card_id="17100" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17101</card_id>
+    <resource card_id="7101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27101</card_id>
+    <resource card_id="17101" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17102</card_id>
+    <resource card_id="7102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27102</card_id>
+    <resource card_id="17102" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17103</card_id>
+    <resource card_id="7103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27103</card_id>
+    <resource card_id="17103" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17104</card_id>
+    <resource card_id="7104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27104</card_id>
+    <resource card_id="17104" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17105</card_id>
+    <resource card_id="7105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27105</card_id>
+    <resource card_id="17105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17106</card_id>
+    <resource card_id="7106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27106</card_id>
+    <resource card_id="17106" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17107</card_id>
+    <resource card_id="7107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27107</card_id>
+    <resource card_id="17107" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17108</card_id>
+    <resource card_id="7108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27108</card_id>
+    <resource card_id="17108" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17109</card_id>
+    <resource card_id="7109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27109</card_id>
+    <resource card_id="17109" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17110</card_id>
+    <resource card_id="7110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27110</card_id>
+    <resource card_id="17110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17111</card_id>
+    <resource card_id="7111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27111</card_id>
+    <resource card_id="17111" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17112</card_id>
+    <resource card_id="7112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27112</card_id>
+    <resource card_id="17112" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17113</card_id>
+    <resource card_id="7113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27113</card_id>
+    <resource card_id="17113" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17114</card_id>
+    <resource card_id="7114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27114</card_id>
+    <resource card_id="17114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17115</card_id>
+    <resource card_id="7115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27115</card_id>
+    <resource card_id="17115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17116</card_id>
+    <resource card_id="7116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27116</card_id>
+    <resource card_id="17116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17117</card_id>
+    <resource card_id="7117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27117</card_id>
+    <resource card_id="17117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17118</card_id>
+    <resource card_id="7118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27118</card_id>
+    <resource card_id="17118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17119</card_id>
+    <resource card_id="7119" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27119</card_id>
+    <resource card_id="17119" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17120</card_id>
+    <resource card_id="7120" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27120</card_id>
+    <resource card_id="17120" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17121</card_id>
+    <resource card_id="7121" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27121</card_id>
+    <resource card_id="17121" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17122</card_id>
+    <resource card_id="7122" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27122</card_id>
+    <resource card_id="17122" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17123</card_id>
+    <resource card_id="7123" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27123</card_id>
+    <resource card_id="17123" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17124</card_id>
+    <resource card_id="7124" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27124</card_id>
+    <resource card_id="17124" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17125</card_id>
+    <resource card_id="7125" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27125</card_id>
+    <resource card_id="17125" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17126</card_id>
+    <resource card_id="7126" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27126</card_id>
+    <resource card_id="17126" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17127</card_id>
+    <resource card_id="7127" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27127</card_id>
+    <resource card_id="17127" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17128</card_id>
+    <resource card_id="7128" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27128</card_id>
+    <resource card_id="17128" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17129</card_id>
+    <resource card_id="7129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27129</card_id>
+    <resource card_id="17129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17130</card_id>
+    <resource card_id="7130" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27130</card_id>
+    <resource card_id="17130" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17131</card_id>
+    <resource card_id="7131" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27131</card_id>
+    <resource card_id="17131" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17132</card_id>
+    <resource card_id="7132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27132</card_id>
+    <resource card_id="17132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17133</card_id>
+    <resource card_id="7133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27133</card_id>
+    <resource card_id="17133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17134</card_id>
+    <resource card_id="7134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27134</card_id>
+    <resource card_id="17134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17135</card_id>
+    <resource card_id="7135" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27135</card_id>
+    <resource card_id="17135" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17137</card_id>
+    <resource card_id="7137" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27137</card_id>
+    <resource card_id="17137" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17138</card_id>
+    <resource card_id="7138" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27138</card_id>
+    <resource card_id="17138" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17139</card_id>
+    <resource card_id="7139" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27139</card_id>
+    <resource card_id="17139" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17140</card_id>
+    <resource card_id="7140" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27140</card_id>
+    <resource card_id="17140" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17141</card_id>
+    <resource card_id="7141" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27141</card_id>
+    <resource card_id="17141" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17143</card_id>
+    <resource card_id="7143" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27143</card_id>
+    <resource card_id="17143" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17144</card_id>
+    <resource card_id="7144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27144</card_id>
+    <resource card_id="17144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17145</card_id>
+    <resource card_id="7145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27145</card_id>
+    <resource card_id="17145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17146</card_id>
+    <resource card_id="7146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27146</card_id>
+    <resource card_id="17146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17147</card_id>
+    <resource card_id="7147" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27147</card_id>
+    <resource card_id="17147" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17148</card_id>
+    <resource card_id="7148" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27148</card_id>
+    <resource card_id="17148" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17149</card_id>
+    <resource card_id="7149" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27149</card_id>
+    <resource card_id="17149" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17150</card_id>
+    <resource card_id="7150" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27150</card_id>
+    <resource card_id="17150" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17151</card_id>
+    <resource card_id="7151" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27151</card_id>
+    <resource card_id="17151" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17152</card_id>
+    <resource card_id="7152" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27152</card_id>
+    <resource card_id="17152" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17153</card_id>
+    <resource card_id="7153" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27153</card_id>
+    <resource card_id="17153" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17154</card_id>
+    <resource card_id="7154" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27154</card_id>
+    <resource card_id="17154" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17155</card_id>
+    <resource card_id="7155" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27155</card_id>
+    <resource card_id="17155" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17156</card_id>
+    <resource card_id="7156" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27156</card_id>
+    <resource card_id="17156" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17157</card_id>
+    <resource card_id="7157" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27157</card_id>
+    <resource card_id="17157" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17158</card_id>
+    <resource card_id="7158" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27158</card_id>
+    <resource card_id="17158" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17159</card_id>
+    <resource card_id="7159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27159</card_id>
+    <resource card_id="17159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17160</card_id>
+    <resource card_id="7160" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27160</card_id>
+    <resource card_id="17160" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17161</card_id>
+    <resource card_id="7161" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27161</card_id>
+    <resource card_id="17161" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17162</card_id>
+    <resource card_id="7162" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27162</card_id>
+    <resource card_id="17162" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17163</card_id>
+    <resource card_id="7163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27163</card_id>
+    <resource card_id="17163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17164</card_id>
+    <resource card_id="7164" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27164</card_id>
+    <resource card_id="17164" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17165</card_id>
+    <resource card_id="7165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27165</card_id>
+    <resource card_id="17165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17166</card_id>
+    <resource card_id="7166" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27166</card_id>
+    <resource card_id="17166" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17167</card_id>
+    <resource card_id="7167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27167</card_id>
+    <resource card_id="17167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17168</card_id>
+    <resource card_id="7168" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27168</card_id>
+    <resource card_id="17168" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17169</card_id>
+    <resource card_id="7169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27169</card_id>
+    <resource card_id="17169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17170</card_id>
+    <resource card_id="7170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27170</card_id>
+    <resource card_id="17170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17171</card_id>
+    <resource card_id="7171" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27171</card_id>
+    <resource card_id="17171" number="2" />
   </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
@@ -3619,54 +5825,6 @@
   <fusion_recipe>
     <card_id>28019</card_id>
     <resource card_id="18019" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18020</card_id>
-    <resource card_id="8020" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28020</card_id>
-    <resource card_id="18020" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18021</card_id>
-    <resource card_id="8021" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28021</card_id>
-    <resource card_id="18021" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18022</card_id>
-    <resource card_id="8022" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28022</card_id>
-    <resource card_id="18022" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18023</card_id>
-    <resource card_id="8023" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28023</card_id>
-    <resource card_id="18023" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18024</card_id>
-    <resource card_id="8024" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28024</card_id>
-    <resource card_id="18024" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18025</card_id>
-    <resource card_id="8025" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28025</card_id>
-    <resource card_id="18025" number="2" />
   </fusion_recipe>
   <!-- END SET 8000 - Story Element Assaults -->
 </root>

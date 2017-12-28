@@ -1,0 +1,884 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- TUTORIALS START -->
+  <tutorial>
+    <id>10</id>
+    <name>In First Mission</name>
+    <completion>
+      <flagreq id="completedMission" key="1" value="1" />
+      <!-- Completed the first mission -->
+    </completion>
+    <step>
+      <step_id>1</step_id>
+    </step>
+    <step>
+      <step_id>10</step_id>
+      <flagreq id="showHand" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>Send your Woodland Fairy into combat by dragging it onto the battlefield.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+      <tutorial_event>close_popups</tutorial_event>
+    </step>
+    <step>
+      <step_id>20</step_id>
+      <arrow id="cardInHand1600" target_id="battlefield" />
+      <!-- Shows a "drag" animation from the first card to the battlefield -->
+    </step>
+    <step>
+      <step_id>30</step_id>
+      <flagreq id="playedCard" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>All cards have an Attack and Health value. When a card's health reaches zero, it disappears!</text>
+          <icon>tutorial_attack_health</icon>
+        </line>
+      </message>
+    </step>
+    <step>
+      <step_id>40</step_id>
+      <flagreq id="showHand" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>Now send a Moss Golem in! These big guys are slower, but they pack a big punch!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+      <tutorial_event>close_popups</tutorial_event>
+    </step>
+    <step>
+      <step_id>50</step_id>
+      <arrow id="cardInHand1601" target_id="battlefield" />
+      <!-- Shows a "drag" animation from the first card to the battlefield -->
+    </step>
+    <step>
+      <step_id>60</step_id>
+      <flagreq id="playedCard" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>Many cards have a delay. It will take this number of turns for the card to activate and attack.</text>
+          <icon>tutorial_delay</icon>
+        </line>
+      </message>
+    </step>
+    <step>
+      <step_id>70</step_id>
+      <flagreq id="showHand" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <icon>Combat_Health_Bar_Shield</icon>
+          <text>Reduce the enemy Hero's health to zero to achieve Victory!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>You have the basics! Now let's see how you do on your own!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+      <tutorial_event>close_popups</tutorial_event>
+    </step>
+    <step>
+      <step_id>80</step_id>
+      <unlock_ui>1</unlock_ui>
+    </step>
+  </tutorial>
+  <tutorial>
+    <id>20</id>
+    <name>Mission Popup</name>
+    <completion>
+      <flagreq id="inCombat" value="1" />
+      <!-- Completed the first mission -->
+    </completion>
+    <step>
+      <step_id>10</step_id>
+      <flagreq id="nav" key="missions" value="1" />
+      <tutorial_event>show_mission_info</tutorial_event>
+    </step>
+    <step>
+      <step_id>20</step_id>
+      <flagreq id="popupOpen" key="missionPopup" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>You're off to a great start! Let's continue our training!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+    <step>
+      <step_id>30</step_id>
+      <arrow id="startMissionButton" />
+    </step>
+  </tutorial>
+  <!-- GUIDES START -->
+  <guide>
+    <id>1</id>
+    <name>Quest</name>
+    <trigger>
+      <flagreq id="inQuestScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>40</step_id>
+      <arrow id="collectAchievementButton" />
+    </step>
+    <step>
+      <step_id>50</step_id>
+      <flagreq id="achievementCollected" value="1" />
+      <arrow id="completeAchievementButton" />
+    </step>
+    <step>
+      <step_id>60</step_id>
+      <flagreq id="achievementCompleteClosed" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>You just completed a Quest! This is a great way to earn special rewards!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Make sure to check back with me often for new Quests! SQUAWK!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+      <!-- <tutorial_event>close_popups</tutorial_event>
+			<tutorial_event>show_mission_info</tutorial_event>-->
+    </step>
+    <step>
+      <step_id>70</step_id>
+      <arrow id="achievement" />
+    </step>
+    <!-- <step>
+			<step_id>1</step_id>
+		</step>
+		<step>
+			<step_id>10</step_id>
+			<message>
+				<line>
+					<commander>raven</commander>
+					<text>You've just completed a Quest! Let's go claim our reward.</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+			<tutorial_event>close_popups</tutorial_event>
+		</step>
+		<step>
+			<step_id>20</step_id>
+			<arrow id='mapQuestButton' />
+			<tutorial_event>close_popups</tutorial_event>
+		</step>
+		<step>
+			<flagreq id='inQuestScreen' value='1'/>
+			<step_id>30</step_id>
+			<message>
+				<line>
+					<commander>raven</commander>
+					<text>When you complete a Quest you can click it to claim your rewards!</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+		</step>
+		<step>
+			<step_id>40</step_id>
+			<arrow id='achievement.ready' />
+		</step>
+		<step>
+			<step_id>50</step_id>
+			<flagreq id='achievementTapped' value='1'/>
+			<arrow id='completeAchievementButton' />
+		</step>
+		<step>
+			<step_id>60</step_id>
+			<flagreq id='achievementCompleteClosed' value='1'/>
+			<message>
+				<line>
+					<commander>raven</commander>
+					<text>If you are ever lost, Quests are where you can find the next step in your adventure!</text>
+				</line>
+				<line>
+					<commander>raven</commander>
+					<text>Make sure to check back with me often for new Quests! SQUAWK!</text>
+				</line>
+			</message>
+			<confirm>1</confirm>
+			<tutorial_event>close_popups</tutorial_event>
+			<tutorial_event>show_mission_info</tutorial_event>
+		</step> -->
+  </guide>
+  <guide>
+    <id>2</id>
+    <name>Edit</name>
+    <trigger>
+      <flagreq id="inEditScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>Here you can view all of the cards you currently have collected!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Drag cards between your inventory and deck to update your team! SQUAWK!!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>3</id>
+    <name>Salvage</name>
+    <trigger>
+      <flagreq id="inSalvageScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>On this screen you can choose cards you own to vaporize.</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Vaporizing cards you no longer want permanently removes them but gives you Arcane Dust to use for card upgrades!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>4</id>
+    <name>Upgrade</name>
+    <trigger>
+      <flagreq id="inUpgradeScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>This is where you can upgrade your cards! Select a card and combine it with Arcane Dust to make it grow stronger!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>5</id>
+    <name>Fusion</name>
+    <trigger>
+      <flagreq id="inFuseScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>Now that you have leveled a card to maximum level you can combine it with a matching maximum level card.</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Doing this will create an all new fusion card!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>6</id>
+    <name>Tome</name>
+    <trigger>
+      <flagreq id="inTomeScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>This is your Tome of Heroes. Spend gold to recruit new heroes to your team!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>But be warned, the most powerful of heroes will only join the team of powerful mages.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>7</id>
+    <name>Bounty</name>
+    <trigger>
+      <flagreq id="pvpUnlocked" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>bountyhunter</commander>
+          <text>Come, check out the Bounty board. There are plenty of no-good hooligans on the loose!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+    <step>
+      <step_id>20</step_id>
+      <arrow id="bountyHunter" />
+    </step>
+    <step>
+      <step_id>30</step_id>
+      <flagreq id="inBountyScreen" value="1" />
+      <message>
+        <line>
+          <commander>bountyhunter</commander>
+          <text>Bounties offer big rewards for defeating other players! Make a name for yourself by defeating as many enemies as you can!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+    <step>
+      <step_id>20</step_id>
+      <arrow id="battleRivalButton" />
+    </step>
+  </guide>
+  <guide>
+    <id>8</id>
+    <name>Store</name>
+    <trigger>
+      <flagreq id="inStoreScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>goblinmerchant</commander>
+          <enemy>1</enemy>
+          <text>The store is where you can purchase new crystals that I have collected for you.</text>
+        </line>
+        <line>
+          <commander>goblinmerchant</commander>
+          <enemy>1</enemy>
+          <text>As a token of my gratitude, I will sell you this crystal I have brought from far away lands. A treasure like this, I can let it go for... 12,000 gold!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Hey! Don't ignore me! Why did you follow us back to the airship?</text>
+        </line>
+        <line>
+          <commander>goblinmerchant</commander>
+          <enemy>1</enemy>
+          <text>Okay, okay. Hm. You drive a tough bargain. How about... 100 gold!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Are you even listen- SQUAWK!? You dropped the price that much?!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+    <step>
+      <step_id>20</step_id>
+      <arrow id="storePack1" />
+    </step>
+  </guide>
+  <guide>
+    <id>9</id>
+    <name>Campaign Mastery</name>
+    <trigger>
+      <flagreq id="masteryPopup" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <icon>new_star_LG</icon>
+          <text>You can return to Master campaigns you've already completed. They will get harder, but you can get better rewards!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <icon>new_star_LG</icon>
+          <text>Tap on the Mastery Star to see all of the rewards you can get from higher level Campaigns!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+    <step>
+      <step_id>20</step_id>
+      <arrow id="storePack1" />
+    </step>
+  </guide>
+  <guide>
+    <id>11</id>
+    <name>Store Quest</name>
+    <trigger>
+      <flagreq id="completedQuest" value="101" />
+    </trigger>
+    <step>
+      <step_id>20</step_id>
+    </step>
+    <step>
+      <step_id>30</step_id>
+      <flagreq id="newPackPopupOpened" value="1" />
+      <arrow id="boughtPackOkButton" />
+    </step>
+    <step>
+      <step_id>40</step_id>
+      <flagreq id="newPackPopupClosed" value="1" />
+      <arrow id="collectAchievementButton" />
+    </step>
+    <step>
+      <step_id>50</step_id>
+      <flagreq id="achievementCollected" value="1" />
+      <arrow id="completeAchievementButton" />
+    </step>
+    <step>
+      <step_id>60</step_id>
+      <flagreq id="achievementCompleteClosed" value="1" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>Great work! Now let's get right back into the action!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+    <step>
+      <step_id>70</step_id>
+      <arrow id="achievement" />
+    </step>
+  </guide>
+  <guide>
+    <id>12</id>
+    <!-- Removed from game -->
+    <name>Scout Missions</name>
+    <trigger>
+      <flagreq id="inScoutMissionScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>On this screen you can send out scout parties to complete missions and collect rewards!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Increasing your player level will increase your chances of success! So check back here often!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>13</id>
+    <!-- Removed from game -->
+    <name>Runecrafting</name>
+    <trigger>
+      <flagreq id="inRunecraftingPopup" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>You can now craft Runes! These will grant bonuses to the attack, health, or skills of a card.</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>You'll need a Runeshell and other components to be able to craft them. You'll get a random Rune each time!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>14</id>
+    <name>Rune Embedding</name>
+    <trigger>
+      <flagreq id="inRuneEmbedPopup" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>You must "Embed" a rune for a card to get the rune's bonus.</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>Once you embed a rune, it will be bound to the card, so you won't get it back! Embed your runes carefully!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>15</id>
+    <name>Crafting</name>
+    <trigger>
+      <flagreq id="inCraftingPopup" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>You can now craft recipes! Select a recipe from the list and you can start crafting! SQUAWK!</text>
+        </line>
+        <line>
+          <commander>raven</commander>
+          <text>New recipes can be found throughout your adventures! Any recipes you find will be added to this list.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>16</id>
+    <name>Item Vaporize</name>
+    <trigger>
+      <flagreq id="inItemSalvageScreen" value="1" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>Here you can vaporize items you no longer want. Not all items can be vaporized, but if they can they will show up here. SQUAWK.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>17</id>
+    <name>Arena Battle Guide</name>
+    <trigger>
+      <flagreq id="usingSkill" value="slow" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <commander>raven</commander>
+          <text>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <!-- SKILL GUIDES -->
+  <guide>
+    <id>1001</id>
+    <name>Skill Guide: Heal</name>
+    <trigger>
+      <flagreq id="usingSkill" value="heal" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="activeCard" value="heal" />
+      <message>
+        <line>
+          <skill>heal</skill>
+          <commander>raven</commander>
+          <text>This creature is using Heal, which will return the missing health of an allied creature.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1002</id>
+    <name>Skill Guide: Armor</name>
+    <trigger>
+      <flagreq id="usingSkill" value="armored" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>armored</skill>
+          <commander>raven</commander>
+          <text>This creature has Armor, which will prevent a portion of attack damage dealt to it.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1003</id>
+    <name>Skill Guide: Bolt</name>
+    <trigger>
+      <flagreq id="usingSkill" value="strike" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>strike</skill>
+          <commander>raven</commander>
+          <text>This creature has Bolt, which will deal damage to a random enemy creature.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1004</id>
+    <name>Skill Guide: Empower</name>
+    <trigger>
+      <flagreq id="usingSkill" value="rally" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>rally</skill>
+          <commander>raven</commander>
+          <text>This creature has Empower, which will temporarily increase an allied creature's attack.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1005</id>
+    <name>Skill Guide: Vengeance</name>
+    <trigger>
+      <flagreq id="usingSkill" value="counter" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>counter</skill>
+          <commander>raven</commander>
+          <text>This creature has Vengeance; it deals damage back to a creature that attacks it.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1006</id>
+    <name>Skill Guide: Weaken</name>
+    <trigger>
+      <flagreq id="usingSkill" value="weaken" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>weaken</skill>
+          <commander>raven</commander>
+          <text>This creature has Weaken, which will temporarily decrease an enemy creature's attack.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1007</id>
+    <name>Skill Guide: Pierce</name>
+    <trigger>
+      <flagreq id="usingSkill" value="pierce" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>pierce</skill>
+          <commander>raven</commander>
+          <text>This creature has Pierce; it ignores a portion of enemy Armor and Barriers.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1008</id>
+    <name>Skill Guide: Poison</name>
+    <trigger>
+      <flagreq id="usingSkill" value="poison" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>poison</skill>
+          <commander>raven</commander>
+          <text>This creature has Poison; enemy creatures damaged by this card take additional poison damage at the end of the turn.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1009</id>
+    <name>Skill Guide: Siphon</name>
+    <trigger>
+      <flagreq id="usingSkill" value="leech" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>leech</skill>
+          <commander>raven</commander>
+          <text>This creature has Siphon; it will heal when it deals attack damage.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1010</id>
+    <name>Skill Guide: Invisibility</name>
+    <trigger>
+      <flagreq id="usingSkill" value="evade" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>evade</skill>
+          <commander>raven</commander>
+          <text>This creature has Invisibility; it will avoid a number of enemy skills.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1011</id>
+    <name>Skill Guide: Hex</name>
+    <trigger>
+      <flagreq id="usingSkill" value="enfeeble" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>enfeeble</skill>
+          <commander>raven</commander>
+          <text>This creature has Hex; enemy creatures who are hexed take additional damage.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1012</id>
+    <name>Skill Guide: Barrier</name>
+    <trigger>
+      <flagreq id="usingSkill" value="protect" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>protect</skill>
+          <commander>raven</commander>
+          <text>This creature has Barrier, which will reduce the next damage dealt to an allied creature.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1013</id>
+    <name>Skill Guide: Enhance</name>
+    <trigger>
+      <flagreq id="usingSkill" value="enhance" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>enhance</skill>
+          <commander>raven</commander>
+          <text>This creature has Enhance, which will increase the effect of the skill it is enhancing.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1014</id>
+    <name>Skill Guide: Freeze</name>
+    <trigger>
+      <flagreq id="usingSkill" value="jam" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>jam</skill>
+          <commander>raven</commander>
+          <text>This creature has Freeze, which will prevent an enemy creature from attacking or activating skills for a turn.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1015</id>
+    <name>Skill Guide: Dualstrike</name>
+    <trigger>
+      <flagreq id="usingSkill" value="flurry" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>flurry</skill>
+          <commander>raven</commander>
+          <text>This creature has Dualstrike; it will attack twice in a single turn.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1016</id>
+    <name>Skill Guide: Scorch</name>
+    <trigger>
+      <flagreq id="usingSkill" value="burn" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>burn</skill>
+          <commander>raven</commander>
+          <text>This creature has Scorch; burned enemies will take stacking burn damage at the end of the turn until the fire wears off.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+</root>

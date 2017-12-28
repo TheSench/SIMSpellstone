@@ -1,24 +1,83 @@
 ﻿'use strict';
 
 var loadDeckDialog;
+var mapBGEDialog;
 
 $(function () {
     $("#deck1").change(function ()
     {
         this.value = this.value.trim();
-        deckChanged("attack_deck", hash_decode(this.value));
+        deckChanged("attack_deck", hash_decode(this.value), 'player');
     });
 
     $("#deck2").change(function ()
     {
         this.value = this.value.trim();
-        deckChanged("defend_deck", hash_decode(this.value));
+        deckChanged("defend_deck", hash_decode(this.value), 'cpu');
     });
 
-    function deckChanged(deckID, newDeck) {
+    $("#battleground").change(function () {
+        $("#deck1").change();
+        if ($("#deck2").val()) {
+            $("#deck2").change();
+        } else if ($("#mission").val()) {
+            $("#mission").change();
+        } else if ($("#raid").val()) {
+            $("#raid").change();
+        }
+    });
+
+    var bges = $('label[bge-desc]');
+    for (var i = 0; i < bges.length; i++) {
+        var lblBge = $(bges[i]);
+        lblBge.hover(showTooltip, hideTooltip);
+        /*
+        var tooltip = $('<div class="tooltip">' + lblBge.attr("bge-desc") + '</div>');
+        var parent = lblBge.parent();
+        parent.append($('<div></div>').append([lblBge.prev(), lblBge, tooltip]));
+        */
+    }
+
+    function showTooltip(event) {
+        var $container = $("#tooltip");
+        var $text = $("#tooltip-text");
+
+        $text.html($(event.target).attr('bge-desc'));
+        $text.width(200);
+        $container.show();
+
+        $("#tooltip .arrow")
+            .css("borderTopWidth", 0)
+            .css("borderBottomWidth", 0);
+
+        var offset = $(event.target).offset();
+        offset.left -= 230;
+        offset.top -= ($container.outerHeight() / 2) - 10;
+        $container.offset(offset);
+
+        var arrowHeight = $text.innerHeight() / 2 - 4;
+
+        $("#tooltip .arrow")
+            .css("borderTopWidth", arrowHeight)
+            .css("borderBottomWidth", arrowHeight);
+    }
+
+    function hideTooltip(event) {
+        $("#tooltip").hide();
+    }
+
+    function deckChanged(deckID, newDeck, owner) {
         var $deck = $("#" + deckID);
         $deck.children().remove();
-        $deck.append(CARD_GUI.makeDeckHTML(newDeck));
+        if (!_DEFINED("seedtest")) {
+            SIM_CONTROLLER.getConfiguration();
+            var battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+            battlegrounds = battlegrounds.onCreate.filter(function (bge) {
+                return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
+            });
+
+            $deck.append(CARD_GUI.makeDeckHTML(newDeck, false, battlegrounds));
+        }
     }
     var accordions = $(".accordion").accordion({
         collapsible: true,
@@ -32,7 +91,7 @@ $(function () {
         var raidlevel = $('#raid_level');
         if (selectedRaid) {
             newDeck = load_deck_raid(selectedRaid, raidlevel.val());
-            if (RAIDS[selectedRaid].type === "dungeon") {
+            if (RAIDS[selectedRaid].type === "Dungeon") {
                 raidlevel.attr("max", 150);
             } else {
                 raidlevel.attr("max", 40);
@@ -41,22 +100,24 @@ $(function () {
             newDeck = hash_decode('');
             raidlevel.attr("max", 40);
         }
-        deckChanged("defend_deck", newDeck);
+
+        deckChanged("defend_deck", newDeck, 'cpu');
     });
 
-    $("#campaign").change(function () {
+    $("#location, #campaign").change(function () {
         $("#mission").change();
     });
 
-    $("#mission").change(function () {
+    $("#mission, #mission_level").change(function () {
         var newDeck;
-        if (this.value) {
-            var missionLevel = document.getElementById('mission_level').value;
-            newDeck = load_deck_mission(this.value, missionLevel);
+        var missionID = $('#mission').val();
+        if (missionID) {
+            var missionLevel = $('#mission_level').val();
+            newDeck = load_deck_mission(missionID, missionLevel);
         } else {
             newDeck = hash_decode('');
         }
-        deckChanged("defend_deck", newDeck);
+        deckChanged("defend_deck", newDeck, 'cpu');
     });
 
     loadDeckDialog = $("#loadDeckDialog").dialog({
@@ -81,7 +142,21 @@ $(function () {
             Cancel: function () {
                 loadDeckDialog.dialog("close");
             }
-        },
+        }
+    });
+    mapBGEDialog = $("#bgeDialog").dialog({
+        autoOpen: false,
+        minWidth: 320,
+        modal: true,
+        resizable: false,
+        buttons: {
+            OK: function () {
+                mapBGEDialog.dialog("close");
+            },
+            Cancel: function () {
+                mapBGEDialog.dialog("close");
+            }
+        }
     });
 
     deckChanged("attack_deck", hash_decode(''));
@@ -92,7 +167,35 @@ $(function () {
 
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
+
+    if (_DEFINED("latestCards")) {
+        var callback = null;
+        if (_DEFINED("autostart")) {
+            callback = function () {
+                SIM_CONTROLLER.startsim(1);
+            };
+        }
+        updateGameData(callback);
+    } else {
+        loadCardCache();
+    }
 });
+
+function doneLoading() {
+    $("body").removeClass("loading");
+    checkTutorial();
+}
+
+function updateGameData(callback) {
+    var done = doneLoading;
+    if (callback) {
+        done = function () {
+            doneLoading();
+            callback();
+        }
+    }
+    DATA_UPDATER.updateData(done, true);
+}
 
 function setDeckSortable(deckField, associatedHashField)
 {
@@ -124,8 +227,12 @@ function setDeckSortable(deckField, associatedHashField)
     });
 }
 
+function showMapBGEs() {
+    mapBGEDialog.dialog("open");
+    mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+}
+
 function loadDeck(hashField) {
-    var decks = storageAPI.getSavedDecks;
     $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
     loadDeckDialog.dialog("open");
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
@@ -148,4 +255,37 @@ function toggleTheme() {
         $("#toggleTheme").val("Light Theme");
     }
     dark = !dark;
+}
+
+var frames = [];
+var frameInterval = null;
+function drawField(field, hand, callback, turn, activeUnit) {
+    var newFrame = CARD_GUI.doDrawField(field, hand, callback, turn, activeUnit);
+    frames.push(newFrame);
+    if (!frameInterval) {
+        drawFrames();
+        frameInterval = setInterval(drawFrames, 500);
+    }
+}
+
+function clearFrames() {
+    frames = [];
+    clearInterval(frameInterval);
+    frameInterval = null;
+}
+
+var disabledInterval = false;
+function drawFrames() {
+    if (frames.length === 0) {
+        if (disabledInterval) {
+            clearInterval(frameInterval);
+            frameInterval = null;
+        } else {
+            disabledInterval = true;
+        }
+    } else {
+        var frame = frames.splice(0, 1)[0];
+        $("#cardSpace").children().remove().end().append(frame);
+        disabledInterval = false;
+    }
 }

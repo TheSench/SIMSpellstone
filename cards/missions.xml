@@ -60,9 +60,19 @@
     <!-- 244 -->
   </feature_lock>
   <feature_lock>
+    <id>bulkraresalvage</id>
+    <mission_req>244</mission_req>
+    <!-- 244 -->
+  </feature_lock>
+  <feature_lock>
     <id>salvage</id>
     <achievement_req>1101</achievement_req>
     <!-- player has edited deck -->
+  </feature_lock>
+  <feature_lock>
+    <id>cardbuyback</id>
+    <mission_req>244</mission_req>
+    <!-- 244 -->
   </feature_lock>
   <feature_lock>
     <id>crafting</id>
@@ -94,6 +104,16 @@
     <id>heroupgrades</id>
     <mission_req>11</mission_req>
     <!-- 11 -->
+  </feature_lock>
+  <feature_lock>
+    <id>mythichall</id>
+    <mission_req>244</mission_req>
+    <!-- 244 -->
+  </feature_lock>
+  <feature_lock>
+    <id>maxupgrade</id>
+    <vip_req>4</vip_req>
+    <!-- 4 -->
   </feature_lock>
   <!-- COMBAT OPTIONS -->
   <feature_lock>
@@ -1875,7 +1895,7 @@
     <name>Lord of the Undead</name>
     <energy>4</energy>
     <commander id="207" />
-    <desc>You have come face to face with Tarian, leader of the Chaos mages. Before he can ask him what he knows of the Heart of Blue Fire, a figure attacks from the shadows.</desc>
+    <desc>You have come face to face with Tarian, leader of the Chaos mages. Before you can ask him what he knows about the Heart of Blue Fire, a figure attacks from the shadows.</desc>
     <speech>
       <line>
         <commander>necromancer</commander>
@@ -4369,7 +4389,7 @@
     <id>364</id>
     <name>Final Round </name>
     <energy>12</energy>
-    <desc>Oda is starting to sweat as he defeats another wave enemies. As he wipes his brow, the ground begins to shake...</desc>
+    <desc>Oda is starting to sweat as he defeats another wave of enemies. As he wipes his brow, the ground begins to shake...</desc>
     <commander id="303" />
     <deck>
       <card id="1613" name="Acidic Spider" />
@@ -5608,7 +5628,7 @@
       <line>
         <commander>owlmystic</commander>
         <enemy>0</enemy>
-        <text>Your hand... you  are a follower of Chaos magic. Do you know where your are, orc? We do not take kind to the dark arts here.</text>
+        <text>Your hand... you  are a follower of Chaos magic. Do you know where you are, orc? We do not take kindly to the dark arts here.</text>
       </line>
     </speech>
   </mission>
@@ -5962,6 +5982,172 @@
     </speech>
   </mission>
   <!-- END Hero Upgrade Missions -->
+  <!-- Hero UNLOCK Legends -->
+  <mission>
+    <id>1548</id>
+    <name>Lost in Digital Darkness</name>
+    <energy>10</energy>
+    <desc>Scyer stumbles through Fireshard Mine, cooling steam coming from his shoulder pads. He stares mindlessly ahead, his vision receptors unable to recognize the world.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="2109" mastery_level="3" name="Scorchfist Avenger" />
+      <card id="5137" mastery_level="4" name="Forgesoul Construct" />
+      <card id="5150" mastery_level="5" name="Deepspear Warfarer" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="6157" mastery_level="7" name="Dawnblade Huntress" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1549</id>
+    <name>Mystery Unlock</name>
+    <energy>10</energy>
+    <desc>Scyer fails to sense the obstacle on the ground, and he trips straight over it. Although he doesn't try to move right away, he eventually reaches out and finds the offending object. It's a chest...</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="6153" mastery_level="2" name="Ribbit Roaster" />
+      <card id="6153" mastery_level="3" name="Ribbit Roaster" />
+      <card id="5156" mastery_level="4" name="Tiltyard Ribbot" />
+      <card id="5156" mastery_level="5" name="Tiltyard Ribbot" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="6157" mastery_level="7" name="Dawnblade Huntress" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1550</id>
+    <name>Cooler Heads Prevail</name>
+    <energy>10</energy>
+    <desc>His hands crush the heavy lock that was meant to protect the chest. Reaching inside, he finds some kind of mechanism. Just holding it causes a calm to befall him. His vision sensors come back to life, the world slowly coming to focus.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="5142" mastery_level="4" name="Buzzblade" />
+      <card id="5137" mastery_level="5" name="Forgesoul Construct" />
+      <card id="6000" mastery_level="6" name="Furnace Mech" />
+      <card id="2113" mastery_level="7" name="Vali, the Thunderer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>A memory long forgotten, now in my mind... An item lost, I now find.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1551</id>
+    <name>Forgotten Treachery</name>
+    <energy>10</energy>
+    <desc>Scyer recalls a memory about his meeting with an infamous goblin, Reks. When Reks failed to coerce Scyer and his mecha brethren to aid their cause, Reks stole and locked away an important piece that was imperative to Scyer's critical thinking protocol.</desc>
+    <commander id="369" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="6153" name="Ribbit Roaster" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="1333" mastery_level="2" name="Steelcat Mechanist" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="6088" mastery_level="4" name="Doxum's Construct" />
+      <card id="6093" mastery_level="5" name="Noz Onehand" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="2113" mastery_level="7" name="Vali, the Thunderer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Rrrargh! I remember the goblin and his trick, to take my mind and make me sick!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1552</id>
+    <name>To Make Amends</name>
+    <energy>10</energy>
+    <desc>Scyer realizes the opportunity that he's missed. He runs back to his camp, desperate to find you and Aria, in an attempt to make amends.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="6153" name="Ribbit Roaster" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2110" mastery_level="2" name="Weathered Widgit" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="5131" mastery_level="4" name="Steelscale, Sky's Domain" />
+      <card id="5131" mastery_level="5" name="Steelscale, Sky's Domain" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1553</id>
+    <name>Yesterday's Enemy</name>
+    <energy>10</energy>
+    <desc>Scyer manages to catch up to you, as your airship prepares to leave. He shouts loudly, waving you down.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="5150" mastery_level="4" name="Deepspear Warfarer" />
+      <card id="5137" mastery_level="5" name="Forgesoul Construct" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>I have to make this right. With you I shall fight!</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Rival Mission Nodes START -->
   <!-- Starts at 2001 -->
   <rival>
@@ -5995,15 +6181,16 @@
     <name>Elaria</name>
     <mapBG>map1</mapBG>
     <combatBG>CombatBGElaria</combatBG>
+    <preview name="Map_Banner_Map1" bundle="102" />
     <arena_x>900</arena_x>
     <arena_y>330</arena_y>
   </location>
   <location>
     <id>2</id>
     <name>Luminis</name>
-    <combatBG>CombatBGLuminis</combatBG>
     <mapBG>map3</mapBG>
-    <!-- <bundle>2</bundle> -->
+    <combatBG>CombatBGLuminis</combatBG>
+    <preview name="Map_Banner_Map2" bundle="102" />
     <req>6</req>
     <arena_x>200</arena_x>
     <arena_y>300</arena_y>
@@ -6014,6 +6201,7 @@
     <mapBG>map2</mapBG>
     <asset_bundle>4</asset_bundle>
     <combatBG>CombatBGKarthos</combatBG>
+    <preview name="Map_Banner_Map3" bundle="102" />
     <req>12</req>
     <arena_x>750</arena_x>
     <arena_y>180</arena_y>
@@ -6024,6 +6212,7 @@
     <mapBG>map4</mapBG>
     <asset_bundle>4</asset_bundle>
     <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_Map4" bundle="102" />
     <req>18</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
@@ -6034,6 +6223,7 @@
     <mapBG>EventMap_009</mapBG>
     <asset_bundle>48</asset_bundle>
     <combatBG>CombatBGEvent004</combatBG>
+    <preview name="Map_Banner_EventMap_009" bundle="102" />
     <req>24</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
@@ -6044,7 +6234,100 @@
     <mapBG>Map_Seaside</mapBG>
     <asset_bundle>54</asset_bundle>
     <combatBG>CombatBGEvent008</combatBG>
+    <preview name="Map_Banner_Seaside" bundle="102" />
     <req>30</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>7</id>
+    <name>Duskwillow</name>
+    <mapBG>Map_Duskwillow</mapBG>
+    <asset_bundle>81</asset_bundle>
+    <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_Duskwillow" bundle="102" />
+    <unlock_time>1484240400</unlock_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <req>24</req>
+    <!-- The Void Campaign -->
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>8</id>
+    <name>Frigore</name>
+    <mapBG>EventMap_006</mapBG>
+    <combatBG>CombatBGEvent006</combatBG>
+    <preview name="Map_Banner_EventMap_006" bundle="102" />
+    <asset_bundle>29</asset_bundle>
+    <unlock_time>1489078800</unlock_time>
+    <!-- Thu, 09 March 2017 17:00:00 -->
+    <req>24</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>9</id>
+    <name>The Void Plane</name>
+    <mapBG>Map_VoidPlane</mapBG>
+    <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_VoidPlane" bundle="102" />
+    <asset_bundle>81</asset_bundle>
+    <unlock_time>1493917200</unlock_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <req>24</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>10</id>
+    <name>Beetleton Bunker</name>
+    <mapBG>Map_Beetleton_Bunker</mapBG>
+    <asset_bundle>66</asset_bundle>
+    <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_Beetleton_Bunker" bundle="102" />
+    <unlock_time>1498755600</unlock_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <req>24</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>11</id>
+    <name>Pharos Temple</name>
+    <mapBG>Map_SeafolkWaterTemple</mapBG>
+    <asset_bundle>101</asset_bundle>
+    <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_SeafolkWaterTemple" bundle="102" />
+    <unlock_time>1503594000</unlock_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <req>24</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>12</id>
+    <name>Fireshard Mine</name>
+    <mapBG>Map_StripMine</mapBG>
+    <asset_bundle>101</asset_bundle>
+    <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_StripMine" bundle="102" />
+    <unlock_time>1508432400</unlock_time>
+    <!-- Thu, 19 October 2017 17:00:00 -->
+    <req>24</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>13</id>
+    <name>The Celestial Vault</name>
+    <mapBG>Map_Elementals_03</mapBG>
+    <combatBG>CombatBGEvent003</combatBG>
+    <preview name="Map_Banner_Elementals_03" bundle="102" />
+    <unlock_time>1513270800</unlock_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <asset_bundle>115</asset_bundle>
+    <req>24</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>

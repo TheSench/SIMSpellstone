@@ -30,6 +30,8 @@
             return this;
         }
 
+        $scope.visible = false;
+
         $scope.getCardImage = function ()
         {
             var image = new Image();
@@ -37,7 +39,7 @@
 
             image.onerror = function ()
             {
-                if (this.naturalHeight != 330)
+                if (this.naturalHeight !== 330)
                 {
                     this.src = th.replace('ImagesLarge', 'Images');
                     this.onload = null;
@@ -49,7 +51,7 @@
         }
 
         var image;
-        $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg"
+        $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg";
         $scope.$watch('card.id', function (newValue, oldValue)
         {
             if (newValue)
@@ -62,7 +64,10 @@
                 image = new Image();
                 image.onerror = function ()
                 {
-                    this.onerror = null;
+                    this.onerror = function () {
+                        this.onerror = null;
+                        this.src = "res/cardImagesLarge/NotFound.jpg";
+                    };
                     this.src = this.src.replace('ImagesLarge', 'Images');
                 };
                 image.onload = function ()
@@ -120,12 +125,11 @@
         $scope.getRarityIcon = function ()
         {
             var card = $scope.card;
-            if (card.rarity > 0)
-            {
-                return "res/cardAssets/Level_" + card.rarity + "_" + card.level + ".png";
-            } else if (card.maxLevel > 1)
-            {
-                return "res/cardAssets/" + card.maxLevel + "_" + card.level + ".png";
+            if (card.rarity > 0) {
+            	var rarityType = card.rarity + ((card.maxLevel > Number(card.rarity) + 2) ? '_' + card.maxLevel : '');
+            	return "res/cardAssets/Level_" + rarityType + "_" + card.level + ".png";
+            } else if (card.maxLevel > 1) {
+                return "res/cardAssets/" +card.maxLevel + "_" +card.level + ".png";
             }
         }
 
@@ -134,7 +138,7 @@
             var fusions = $window.FUSIONS;
             for (var key in fusions)
             {
-                if (fusions[key] == $scope.id)
+                if (fusions[key] === $scope.id)
                 {
                     return key;
                 }
@@ -210,57 +214,15 @@
             return ("res/cardAssets/" + fusion + ".png");
         }
 
-        $scope.getSkillIcon = function (skillName)
+        $scope.getSkillIcon = function (skillID)
         {
-            var src = "res/skills/";
-            var iconName = skillName.charAt(0).toUpperCase() + skillName.slice(1) + '.png';
-            switch (skillName)
-            {
-                case 'armored':
-                    iconName = 'Armor.png';
-                    break;
-                case 'strike':
-                    iconName = 'Bolt.png';
-                    break;
-                case 'poisonstrike':
-                    iconName = 'Poisonbolt.png';
-                    break;
-                case 'burn':
-                    iconName = 'Scorch.png';
-                    break;
-                case 'flurry':
-                    iconName = 'Dualstrike.png';
-                    break;
-                case 'enfeeble':
-                    iconName = 'Hex.png';
-                    break;
-                case 'jam':
-                    iconName = 'Freeze.png';
-                    break;
-                case 'leech':
-                    iconName = 'Siphon.png';
-                    break;
-                case 'evade':
-                    iconName = 'Invisibility.png';
-                    break;
-                case 'counter':
-                    iconName = 'Vengeance.png';
-                    break;
-                case 'protect':
-                    iconName = 'Barrier.png';
-                    break;
-                case 'protect_ice':
-                    iconName = "Iceshatter.png";
-                    break;
-                case 'rally':
-                    iconName = 'Empower.png';
-                    break;
-                default:
-                    iconName = (skillName.charAt(0).toUpperCase() + skillName.slice(1)) + ".png";
-                    break;
-            }
-            src += iconName;
-            return src;
+            var skillData = SKILL_DATA[skillID];
+            return "res/skills/" + (skillData ? skillData.icon : skillID) + ".png";
+        }
+
+        $scope.getSkillDescription = function (skillID) {
+            var skillData = SKILL_DATA[skillID];
+            return (skillData ? skillData.desc || skillData.name : skillID);
         }
 
         var setNames = {
@@ -280,7 +242,11 @@
 
         $scope.getFaction = function (factionID)
         {
-            return $window.factions.names[factionID];
+            var faction = $window.factions.names[factionID];
+            if (faction === "Tower") {
+                faction = "";
+            }
+            return faction;
         }
 
         $scope.decrementFusion = function ()
@@ -341,25 +307,107 @@
         }
     };
 
+    var DeckBuilderCtrl = function ($scope, $window) {
+        $scope.getSkillIcon = function (skillID) {
+            var skillData = SKILL_DATA[skillID];
+            return "res/skills/" + (skillData ? skillData.icon : skillID) + ".png";
+        }
+
+        $scope.supportedSkills = [
+            'armored',
+            'barrage',
+            'berserk',
+            'burn',
+            //'burn2',
+            'corrosive',
+            'counter',
+            'counterburn',
+            'enfeeble',
+            'enhance',
+            //'enlarge',
+            'enrage',
+            'evade',
+            'evadebarrier',
+            'fervor',
+            'flurry',
+            'frost',
+            'fury',
+            'heal',
+            //'ignite',
+            'imbue',
+            //'intensify',
+            'jam',
+            'leech',
+            'legion',
+            //'mark',
+            'nullify',
+            'pierce',
+            'poison',
+            'poisonstrike',
+            'protect',
+            //'protect_ice',
+            //'protect_seafolk',
+            'rally',
+            //'reanimate',
+            //'resurrect',
+            'scorchbreath',
+            'silence',
+            //'slow',
+            'strike',
+            'taunt',
+            'valor',
+            //'venom',
+            'weaken',
+            'weakenself',
+        ].sort(function (idA, idB) {
+            return SKILL_DATA[idA].name.localeCompare(SKILL_DATA[idB].name);
+        });
+
+        $scope.getSkillName = function (skillID) {
+            var skillData = SKILL_DATA[skillID];
+            return (skillData ? skillData.name : skillID);
+        }
+
+        $scope.showAdvancedFilters = $window.showAdvancedFilters;
+
+        $scope.filterSkill = function (event, skillID) {
+            $window.filterSkill(event.target, skillID, event.altKey);
+        }
+    }
+
     angular.module('simulatorApp')
         .controller('CardDetailsCtrl', ['$scope', '$window', CardDetailsCtrl])
+        .directive('ngRightClick', function($parse) {
+            return function (scope, element, attrs) {
+                var fn = $parse(attrs.ngRightClick);
+                element.contextmenu(function (event) {
+                    scope.$apply(function () {
+                        event.preventDefault();
+                        fn(scope, { $event: event });
+                    });
+                });
+            };
+        })
         .directive('cardDetails', function ()
         {
             return {
-                scope: {
-                    id: "@unitId",
-                    level: "@unitLevel",
-                },
                 restrict: 'A',
                 replace: true,
                 templateUrl: 'templates/card-template.html',
                 controller: CardDetailsCtrl
             }
-        }).filter('capitalize', function ()
-        {
+        })
+		.directive('sssAutofocus', function () {
+			return {
+				link: function (scope, elem, attr) {
+					elem.focus();
+				}
+			}
+		})
+		.filter('capitalize', function () {
             return function (input)
             {
-                if (!!input)
+                if (input)
                 {
                     var parts = input.split(' ');
                     for (var i = 0; i < parts.length; i++)
@@ -374,9 +422,10 @@
                     return ''
                 };
             }
-        }).filter('convertName', function ()
-        {
+		})
+		.filter('convertName', function () {
             return window.convertName;
-        });
+        })
+        .controller('DeckBuilderCtrl', ['$scope', '$window', DeckBuilderCtrl]);
 
 }(angular));

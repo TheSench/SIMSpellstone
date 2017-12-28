@@ -4,7 +4,7 @@
     'use strict';
 
     var DeckStorageCtrl = function ($scope, $window) {
-        $scope.savedDecks = $window.storageAPI.savedDecks;
+        $scope.getSavedDecks = $window.storageAPI.getSavedDecks;
 
         $scope.keys = function (obj) {
             return (obj ? Object.keys(obj) : []);
@@ -37,46 +37,95 @@ if (function (type) {
 }('localStorage')) {
     (function () {
         var SaveFields = {
-            decks: "SavedDecks"
+            decks: "SavedDecks",
+            tutorial: "Tutorial"
         }
 
         storageAPI.initialize = function () {
-            SaveFields.tutorial = "Tutorial-" + getCurrentPage();
+            var currentPage = getCurrentPage();
 
-            loadField("savedDecks", SaveFields.decks, {}, true);
-            loadField("shouldShowTutorial", SaveFields.tutorial, true);
+            convertSavedDecks();
+
+            storageAPI.getField(SaveFields.decks, "savedDecks", {});
+            storageAPI.shouldShowTutorial = storageAPI.getField(SaveFields.tutorial, currentPage, true)[currentPage];
 
             var cachedOnUpdate = storageAPI.onUpdateDecks;
-            storageAPI.onUpdateDecks = function () {
+            storageAPI.onUpdateDecks = function (savedDecks) {
                 cachedOnUpdate();
-                localStorage.setItem(SaveFields.decks, JSON.stringify(storageAPI.savedDecks));
+                storageAPI.setField(SaveFields.decks, "savedDecks", savedDecks);
             };
 
             var cachedSetShowTutorial = storageAPI.setShowTutorial;
             storageAPI.setShowTutorial = function (value) {
                 cachedSetShowTutorial(value);
-                localStorage.setItem(SaveFields.tutorial, JSON.stringify(storageAPI.shouldShowTutorial));
+                storageAPI.setField(SaveFields.tutorial, currentPage, value);
             };
         };
 
-        function loadField(fieldName, storageName, defaultValue) {
+        storageAPI.getField = function (storageName, fieldName, defaultValue) {
 
-            var value = localStorage.getItem(storageName);
-            if (value) {
+            var storage = getStorage(storageName);
+    
+            var value = storage[fieldName];
+            if (typeof value === 'undefined') {
+                value = defaultValue;
+                storageAPI.setField(storageName, fieldName, value);
+            }
+
+            return value;
+        }
+
+        storageAPI.setField = function (storageName, fieldName, newValue) {
+            var storage = getStorage(storageName);
+            storage[fieldName] = newValue;
+            localStorage.setItem(storageName, JSON.stringify(storage));
+        }
+
+        function getStorage(storageName) {
+            var storage = localStorage.getItem(storageName);
+            if (storage) {
                 try {
-                    value = JSON.parse(value);
-                } catch (e) {
-                    value = defaultValue;
+                    storage = JSON.parse(storage);
+                } catch (err) {
+                    storage = {}
                 }
             } else {
-                value = defaultValue;
+                storage = {};
             }
-            storageAPI[fieldName] = value;
+            storageAPI.data[storageName] = storage;
+            return storage;
         }
+
+        function convertSavedDecks() {
+            var storage = getStorage(SaveFields.decks);
+            if (typeof storage.savedDecks === 'undefined') {
+                storageAPI.setField(SaveFields.decks, "savedDecks", storage);
+            }
+        }
+
+        window.addEventListener('storage', function (e) {
+        	if (e.key !== '__storage_test__') {
+        		var oldValue = localStorage.getItem(e.key);
+        		if (oldValue !== e.newValue) {
+        			angular.element('#loadDeckDialog').scope().$apply(
+						localStorage.setItem(e.key, e.newValue)
+					);
+        		}
+        	}
+        });
     }());
 } else {
     (function () {
         storageAPI.initialize = function () {
+            storageAPI.getSavedDecks = function () { return {} };
+            storageAPI.loadDeck = notSupported;
+            storageAPI.deleteDeck = notSupported;
+            storageAPI.clearDecks = notSupported;
+            storageAPI.getField = function (storageName, fieldName, defaultValue) {
+                return defaultValue;
+            }
+            storageAPI.setField = function () { };
+
             storageAPI.savedDecks = {};
             storageAPI.shouldShowTutorial = true;
         };
@@ -92,26 +141,34 @@ if (function (type) {
         decks: "SavedDecks"
     }
 
+    storageAPI.data = {};
+
+    storageAPI.getSavedDecks = function () {
+        return storageAPI.getField(SaveFields.decks, "savedDecks", {});
+    }
+
     storageAPI.saveDeck = function (name, hash) {
-        storageAPI.savedDecks[name] = hash;
-        storageAPI.onUpdateDecks();
+        var savedDecks = storageAPI.getSavedDecks();
+        savedDecks[name] = hash;
+        storageAPI.onUpdateDecks(savedDecks);
     };
 
     storageAPI.loadDeck = function (name) {
-        return storageAPI.savedDecks[name];
+        return storageAPI.getSavedDecks()[name];
     };
 
     storageAPI.deleteDeck = function (name) {
-        delete storageAPI.savedDecks[name];
-        storageAPI.onUpdateDecks();
+        var savedDecks = storageAPI.getSavedDecks();
+        delete savedDecks[name];
+        storageAPI.onUpdateDecks(savedDecks);
     };
 
     storageAPI.clearDecks = function (name) {
-        var savedDecks = storageAPI.savedDecks;
+        var savedDecks = storageAPI.getSavedDecks();
         for (var name in savedDecks) {
             delete savedDecks[name];
         }
-        storageAPI.onUpdateDecks();
+        storageAPI.onUpdateDecks(savedDecks);
     };
 
     storageAPI.onUpdateDecks = function () {
@@ -122,7 +179,7 @@ if (function (type) {
     };
 
     storageAPI.setShowTutorial = function (value) {
-        storageAPI.shouldShowTutorial = value;
+        shouldShowTutorial = value;
     }
 
     storageAPI.initialize();

@@ -103,6 +103,12 @@
            msg: 'Right-clicking on a card will display a detailed view of the card.',
            actions: [showDetails, hideFilters]
        },
+       /*
+       {
+           actions: [hideDeck, showDetails, hideFilters],
+           msg: "Placeholder"
+       },
+       */
        {
            ui: "#filter-container",
            msg: 'The "Filters" section allows you to filter the cards in the collection.',
@@ -114,7 +120,7 @@
            actions: [clearFilters]
        },
        {
-           ui: "#fervor",
+           ui: "[name=skill][data-filter=fervor]",
            msg: 'For instance, clicking the "Fervor" filter will only show units that have the skill "Fervor".',
            actions: [filter]
        },
@@ -136,7 +142,7 @@
            actions: [filter, advancedFilter, setAdvancedFilter]
        },
        {
-           ui: "#fervor",
+           ui: "[name=skill][data-filter=fervor]",
            dialog: true,
            msg: 'Clicking "OK" will apply the advanced filtering.',
            actions: [saveAdvancedFilters]
@@ -144,6 +150,20 @@
        {
            ui: "#collection-container",
            msg: 'Now only units with at least "Fervor 4" are visible.'
+       },
+       {
+           ui: "#filter-container",
+           msg: 'Holding the "Alt" key while clicking on a filter while hide cards that match that filter (not supported by all filters).',
+           actions: [removeExclusiveFilter]
+       },
+       {
+           ui: "[name=skill][data-filter=enfeeble]",
+           msg: 'For instance, holding "Alt" and clicking the "Hex" filter will hide all units that have the skill "Hex".',
+           actions: [filterExclusive]
+       },
+       {
+           ui: "#collection-container",
+           msg: 'Now only units with no "Hex" and at least "Fervor 4" are visible.'
        },
        {
            ui: "#name-container",
@@ -158,7 +178,7 @@
        {
            ui: "#name-container",
            msg: 'Tip: If the collection is filtered down to a single card, pressing "Enter" while in the Name Filter will add that card to your deck.',
-           actions: [setNameFilter]
+           actions: [setNameFilter, saveAdvancedFilters, filterExclusive]
        },
        {
            ui: "#clear-filters",
@@ -211,17 +231,30 @@
     }
 
     function filter() {
-        var fervor = $("#fervor");
-        while (fervor.hasClass("selected-advanced")) {
-            fervor.click();
-        }
+        var fervor = $("[name=skill][data-filter=fervor]");
         while (!fervor.hasClass("selected")) {
             fervor.click();
         }
     }
 
+    function filterExclusive() {
+        var vengeance = $("[name=skill][data-filter=enfeeble]");
+        var e = jQuery.Event("click");
+        e.altKey = true;
+        while (!vengeance.hasClass("excluded")) {
+            vengeance.trigger(e);
+        }
+    }
+
+    function removeExclusiveFilter() {
+        var fervor = $("[name=skill][data-filter=enfeeble]");
+        while (fervor.hasClass("excluded") || fervor.hasClass("selected")) {
+            fervor.click();
+        }
+    }
+
     function advancedFilter() {
-        $("#fervor").contextmenu();
+        $("[name=skill][data-filter=fervor]").contextmenu();
         resetFocus();
     }
 
@@ -256,7 +289,7 @@
     }
 
     function removeCard() {
-        updateHash("g~pAAQwrxIglFpBQWkpBglFpB4jrBC4jrBC4jrBC");
+        updateHash("g~pAAQwrxIQWkpBglFpB4jrBC4jrBC4jrBC");
     }
 
     function removeCommander() {
@@ -279,7 +312,8 @@
     }
 
     function closeEditUnit() {
-        optionsDialog.dialog('option', 'buttons')["Cancel"].apply(optionsDialog);
+        //updateHash("g~pAAQwrxIglFpBQWkpBglFpB4jrBC4jrBC4jrBC");
+        optionsDialog.dialog("close");
     }
 
     function clearHash() {
