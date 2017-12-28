@@ -10,5 +10,9 @@
   {
     "outputFile": "styles/sass/themes/light.css",
     "inputFile": "styles/sass/themes/light.scss"
+  },
+  {
+    "outputFile": "styles/sass/header.css",
+    "inputFile": "styles/sass/header.scss"
   }
 ]
