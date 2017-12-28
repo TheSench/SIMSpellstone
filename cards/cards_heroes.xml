@@ -9287,8 +9287,8 @@
     <id>405</id>
     <card_type>1</card_type>
     <name>Crimsonwing Apostle</name>
-    <portrait>necromancer</portrait>
-    <asset_bundle></asset_bundle>
+    <portrait>Portrait_Avian_Cultist</portrait>
+    <asset_bundle>109</asset_bundle>
     <health>65</health>
     <rarity>4</rarity>
     <skill id="imbue" x="1" all="1" s="armored" />
@@ -9326,6 +9326,57 @@
       <health>79</health>
       <skill id="imbue" x="2" all="1" s="armored" />
       <skill id="rally" x="2" all="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>406</id>
+    <card_type>1</card_type>
+    <name>Hero's Blessed, Yakov</name>
+    <portrait>Portrait_Avian_Cultist</portrait>
+    <asset_bundle>109</asset_bundle>
+    <desc>"Xi raxeh ruoy ecixov morf rafa, tey hxtiw rehxtien eman ron mrof nac Xi rewsna hxcus reyarp, kees em txen nix Nevahyks."</desc>
+    <!--  <asset_bundle></asset_bundle> -->
+    <health>75</health>
+    <rarity>4</rarity>
+    <skill id="enhance" x="2" s="rally" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="strike" x="4" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>79</health>
+      <skill id="enhance" x="2" s="rally" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>84</health>
+      <skill id="enhance" x="3" s="rally" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>89</health>
+      <skill id="enhance" x="3" s="rally" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>94</health>
+      <skill id="enhance" x="4" s="rally" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="enhance" x="4" s="rally" />
+      <skill id="protect" x="3" all="1" />
       <skill id="strike" x="6" />
     </upgrade>
   </unit>

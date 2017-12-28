@@ -84,6 +84,11 @@
     <achievement_req>451</achievement_req>
     <!-- player has reached bounty rank 5 deck -->
   </feature_lock>
+  <feature_lock>
+    <id>challenges</id>
+    <mission_req>64</mission_req>
+    <!-- 64 -->
+  </feature_lock>
   <!-- NON CORE FEATURES -->
   <feature_lock>
     <id>guildlivepvp</id>

@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = false;
+static bool downloadFiles = true;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -71,10 +71,11 @@ void Main()
 	var missionPortraits = missionsXML.SelectMany(node => node.Descendants("commander")).ToLookup(node => node.Value).Where(l => l.Key.Length > 0).Select(l => l.Key);
 	foreach (var portrait in missionPortraits)
 	{
-		var imageFile = Path.Combine(path, @"..\res\cardImages\", "portrait_" + portrait + ".png");
+		var imageName = "portrait_" + portrait.Replace("Portrait_", "");
+		var imageFile = Path.Combine(path, @"..\res\cardImages\", imageName + ".png");
 		if (!File.Exists(imageFile))
 		{
-			notFound.Add("portrait_" + portrait, "???");
+			notFound.Add(imageName, "???");
 		}
 	}
 
@@ -384,7 +385,11 @@ void Main()
 		location_id = node.Element("location_id").Value,
 		side_mission = (string)node.Element("side_mission"),
 		battleground_id = (string)node.Element("battleground_id"),
-		missions = node.Element("missions").Elements("mission_id").Select(mission_id => Int32.Parse(mission_id.Value)).ToArray()
+		missions = node.Element("missions").Elements("mission_id").Select(mission_id => Int32.Parse(mission_id.Value)).ToArray(),
+		items = node.Elements("find_item").Select(el => new item() {
+			id = Int32.Parse(el.Attribute("id").Value),
+			dropRate = Double.Parse(el.Attribute("drop_per_energy").Value)
+		}).ToArray()
 	}).OrderBy(campaign => campaign.location_id).ThenBy(campaign => campaign.id);
 
 	// Get Missions
@@ -446,7 +451,8 @@ void Main()
 			{
 				writer.WriteLine("    \"battleground_id\": \"" + campaign.battleground_id + "\",");
 			}
-			writer.WriteLine("    \"missions\": [\"" + String.Join("\",\"", campaign.missions) + "\"]");
+			writer.WriteLine("    \"missions\": [\"" + String.Join("\",\"", campaign.missions) + "\"],");
+			writer.WriteLine("    \"items\": {" + String.Join<item>(", ", campaign.items) + "}");
 			writer.WriteLine("  },");
 		}
 		writer.Write("};\r\n");
@@ -869,7 +875,7 @@ public partial class unit
 		{
 			if (this.portraitField != null)
 			{
-				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "");
+				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "").Replace("Portrait_", "");
 			}
 			else
 			{
@@ -1403,6 +1409,17 @@ public partial class campaign
 	public string side_mission { get; set; }
 	public string battleground_id { get; set;}
 	public int[] missions { get; set; }
+	public item[] items {get; set; }
+}
+
+public partial class item {
+	public int id;
+	public double dropRate;
+
+	public override string ToString()
+	{
+		return String.Format("\"{0}\": {1}", id, dropRate);
+	}
 }
 
 public partial class mission

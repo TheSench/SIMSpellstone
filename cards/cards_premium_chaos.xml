@@ -21222,6 +21222,138 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6171</id>
+    <card_type>2</card_type>
+    <name>Kiki</name>
+    <picture>Avian_Claw_Warrior_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514480400</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="flurry" c="6" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="pierce" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+      <skill id="strike" x="1" all="1" />
+      <skill id="pierce" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <desc>"The Kiki were armed by mountain tribes to ward off enemies, they didn't expect the Kiki to turn on them too." - History of Arcantica III</desc>
+  </unit>
+  <unit>
+    <id>16171</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Kiki Tori</name>
+    <picture>Avian_Claw_Warrior_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514480400</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="pierce" x="2" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="pierce" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="pierce" x="4" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26171</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Kiki Kyutoryu</name>
+    <picture>Avian_Claw_Warrior_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514480400</hidden_until_time>
+    <attack>7</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="pierce" x="4" />
+    <skill id="flurry" c="3" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="pierce" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="2" all="1" />
+      <skill id="pierce" x="6" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6172</id>
     <card_type>2</card_type>
     <name>Steel Plover</name>

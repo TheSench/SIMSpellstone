@@ -24765,7 +24765,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
         <text>Wingless creatures have no right to flight, now be judged by the Order of Crimsonwings!</text>
       </line>
@@ -24801,7 +24801,7 @@
         <text>Avian attackers, how conveniently timed! Tell me, you wouldn't be affiliated with the Redfeather Avians, would you?</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
         <text>Red though we both may be, a feather's power is limited by its wing. Do not confuse royal blood with peons.</text>
       </line>
@@ -24887,7 +24887,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
         <text>It is a price we are willing to risk, but the orbs' power must be ours. The strong will survive, and the weak will die. It matters not if they are our own.</text>
       </line>
@@ -24923,7 +24923,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
         <text>You may have defeated us here, but we will find holes in your defenses. Retreat!</text>
       </line>
@@ -24983,7 +24983,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
         <text>...And let us find peace in the realm between the factions of Aether, Chaos, and Wyld. Unite in our power of wings, and soar unto the heavens.</text>
       </line>
@@ -25043,7 +25043,7 @@
         <text>Huff... We can continue this as long as you, huff, like. But we'll just catch up and beat you again.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
         <text>So you claim, but your heavy breathing betrays your body's truth.</text>
       </line>
@@ -25074,7 +25074,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
         <text>The Celestial Vault holds many secrets. Would you defend the Elementals if you knew the truth?</text>
       </line>
@@ -25271,8 +25271,491 @@
       </line>
       <line>
         <commander>bearcommander</commander>
-        <enemy>0</enemy>
+        <enemy>1</enemy>
         <text>It's a great time to enjoy food and holiday cheer!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Boss Node In the Name of the Nameless -->
+  <mission>
+    <id>5802</id>
+    <name>Far from Over</name>
+    <energy>9</energy>
+    <desc>The portal appears to reach its limit, waning to the smallest possible dot. Suddenly, it howls and tears itself open. A fiercely bright light covers the Vault's ceiling, above the portal's sheet of darkness, creating a brilliant paradox of light and dark.</desc>
+    <commander id="406" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="6170" name="Ostromech Stepclaw" />
+      <card id="6113" name="Trojan Crow" />
+      <card id="6114" name="Blazing Emissary" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="7110" name="Toxin Glider" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="7056" name="Trailblazer" />
+      <card id="5115" mastery_level="2" name="Papyrus Crane" />
+      <card id="5056" mastery_level="3" name="Kaliri the Foremost" />
+      <card id="5056" mastery_level="4" name="Kaliri the Foremost" />
+      <card id="5047" mastery_level="5" name="Sky Fisher" />
+      <card id="5115" mastery_level="6" name="Papyrus Crane" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5803</id>
+    <name>An Unknown Blessing</name>
+    <energy>9</energy>
+    <desc>Magistrate Yakov holds his wings up, as if to receive the blessing of light and dark. A voice you have never heard before speaks an incomprehensible language from inside the portal. Light and darkness converge in a beam, firing straight at the Crimsonwing Avian.</desc>
+    <commander id="406" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="6170" name="Ostromech Stepclaw" />
+      <card id="6113" name="Trojan Crow" />
+      <card id="6114" name="Blazing Emissary" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="7110" name="Toxin Glider" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="7056" name="Trailblazer" />
+      <card id="5115" mastery_level="2" name="Papyrus Crane" />
+      <card id="5056" mastery_level="3" name="Kaliri the Foremost" />
+      <card id="5056" mastery_level="4" name="Kaliri the Foremost" />
+      <card id="5047" mastery_level="5" name="Sky Fisher" />
+      <card id="5115" mastery_level="6" name="Papyrus Crane" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5804</id>
+    <name>Newfound Powers</name>
+    <energy>9</energy>
+    <desc>The portal has disappeared completely, the ensuing silence pronounced in its absence, save for Yakov's erratic breathing. His eyes aglow with wonder, a white-flame power flickering beneath, he moves his wing and Magistrate Agni is tossed by an invisible power, like a ragdoll.</desc>
+    <commander id="406" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="6170" name="Ostromech Stepclaw" />
+      <card id="6113" name="Trojan Crow" />
+      <card id="6114" name="Blazing Emissary" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="7110" name="Toxin Glider" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="7056" name="Trailblazer" />
+      <card id="5115" mastery_level="2" name="Papyrus Crane" />
+      <card id="5056" mastery_level="3" name="Kaliri the Foremost" />
+      <card id="5056" mastery_level="4" name="Kaliri the Foremost" />
+      <card id="5047" mastery_level="5" name="Sky Fisher" />
+      <card id="5115" mastery_level="6" name="Papyrus Crane" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5805</id>
+    <name>Heretical Strength</name>
+    <energy>9</energy>
+    <desc>You face Magistrate Yakov alone. A single crimson feather spirals down to the earth, before Magistrate Yakov. White fire engulfs his body, imbued with new and powerful magic, he shouts praise to the forgotten hero, and promises to complete her will by defeating you.</desc>
+    <commander id="406" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="6170" name="Ostromech Stepclaw" />
+      <card id="6113" name="Trojan Crow" />
+      <card id="6114" name="Blazing Emissary" />
+      <card id="7114" name="Worshipped Statue" />
+      <card id="7110" name="Toxin Glider" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="7056" name="Trailblazer" />
+      <card id="5115" mastery_level="2" name="Papyrus Crane" />
+      <card id="5056" mastery_level="3" name="Kaliri the Foremost" />
+      <card id="5056" mastery_level="4" name="Kaliri the Foremost" />
+      <card id="5047" mastery_level="5" name="Sky Fisher" />
+      <card id="5115" mastery_level="6" name="Papyrus Crane" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 7 Weeks 5-8 -->
+  <mission>
+    <id>5806</id>
+    <name>The Lava Orb's Strengths</name>
+    <energy>9</energy>
+    <desc>The Crimsonwing Avian places his wing on the Lava Orb. Energy begins to transfer from the orb to his body. The lava island rumbles uncertainly...</desc>
+    <commander id="405" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="2041" name="Sharpwing" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7075" name="Diamode" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="7057" mastery_level="2" name="Bill Crasher" />
+      <card id="5044" mastery_level="3" name="Telepathic Magi" />
+      <card id="2031" mastery_level="4" name="Dryad" />
+      <card id="7114" mastery_level="5" name="Worshipped Statue" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5115" mastery_level="7" name="Papyrus Crane" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>You are very strong, as one would expect from the champion that defeated Bluefire... even if he was weakened at the time.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5807</id>
+    <name>Absorbing the Orb</name>
+    <energy>9</energy>
+    <desc>The Crimsonwing Avian is draining energy from the Orb! Cedric redoubles his efforts, before island's energy source becomes imbalanced.</desc>
+    <commander id="354" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="7045" name="Sakura" />
+      <card id="7078" name="Saprolite" />
+      <card id="2082" mastery_level="2" name="Ecru Spear" />
+      <card id="5114" mastery_level="3" name="Wingward" />
+      <card id="5133" mastery_level="4" name="Magnetic Elemental" />
+      <card id="2043" mastery_level="5" name="Eos" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>But can the same strength be said of your companions?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5808</id>
+    <name>Cedric's Respite</name>
+    <energy>9</energy>
+    <desc>The Avians retreat again from your fearsome power. Cedric is still winded from your previous running, but there is yet one more orb to protect.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7055" name="Valley Strider" />
+      <card id="5114" name="Wingward" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="2056" name="Drainor" />
+      <card id="5046" name="Dawn" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="6053" mastery_level="5" name="Squire Gorger" />
+      <card id="5110" mastery_level="6" name="Alectryon" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5809</id>
+    <name>For the Sake of Field</name>
+    <energy>9</energy>
+    <desc>The Avians shriek about one final chance, leaving you and Cedric to claim the Lava Orb. Cedric sits down, still catching his breath.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="6056" name="Potoo" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="6077" name="Enigma" />
+      <card id="5081" name="Brahzee" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="6112" mastery_level="3" name="Fire Hawk" />
+      <card id="6015" mastery_level="4" name="Acidic Sludge" />
+      <card id="7058" mastery_level="5" name="Steppe Stalker" />
+      <card id="5013" mastery_level="6" name="Radiance" />
+      <card id="5112" mastery_level="7" name="Cloudwing Chaser" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>You go on ahead, adventurer. I'll protect the Lava Orb. I'm certain they'll be heading to the last island.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5810</id>
+    <name>Pursuing the Crimsonwings</name>
+    <energy>9</energy>
+    <desc>You continue your pursuit to the final island, which houses the Basin Orb. You spot a group of Avians that have surrounded the Orb...</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7004" name="Ice Golem" />
+      <card id="6077" name="Enigma" />
+      <card id="2082" mastery_level="2" name="Ecru Spear" />
+      <card id="7057" mastery_level="3" name="Bill Crasher" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="7056" mastery_level="5" name="Trailblazer" />
+      <card id="5019" mastery_level="6" name="Vivid Aurora" />
+      <card id="5056" mastery_level="7" name="Kaliri the Foremost" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5811</id>
+    <name>Feather Versus Wing</name>
+    <energy>9</energy>
+    <desc>Upon getting closer to the Basin Orb, you realize that there are two groups of Avians, each fighting each other! You recognize one as Magistrate Agni, who had beseeched the Elementals for aid.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="7004" name="Ice Golem" />
+      <card id="7113" mastery_level="2" name="Revenge from Above" />
+      <card id="6112" mastery_level="3" name="Fire Hawk" />
+      <card id="6046" mastery_level="4" name="Celerity" />
+      <card id="6114" mastery_level="5" name="Blazing Emissary" />
+      <card id="5032" mastery_level="6" name="Hail Hurler" />
+      <card id="5173" mastery_level="7" name="Frostcrier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>0</enemy>
+        <text>It's about time you showed up. We wouldn't be able to last without reinforcements.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5812</id>
+    <name>Missing Mastermind</name>
+    <energy>9</energy>
+    <desc>You and Magistrate Agni clear out the rest of the Crimsonwing Avians. However, you realize the leader of the Redwings was not at this battle...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="2042" mastery_level="2" name="Carrion Hunter" />
+      <card id="5114" mastery_level="3" name="Wingward" />
+      <card id="2058" mastery_level="4" name="Bismuth Bully" />
+      <card id="5052" mastery_level="5" name="Paradise Avian" />
+      <card id="5132" mastery_level="6" name="Whirlwinder" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>0</enemy>
+        <text>The Orbs should be safe now. However, the Redwings revealed their plot. They want to enter the inner sanctum of the Celestial Vault.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5813</id>
+    <name>The Orbs' Light</name>
+    <energy>9</energy>
+    <desc>The earth rumbles again. The Basin Orb begins to glow, enveloped by a mystical light. From the other two islands, you see similar glows in the distance. The lights converge above the islands...</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="5114" name="Wingward" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7171" mastery_level="2" name="Warpwood Warlock" />
+      <card id="6056" mastery_level="3" name="Potoo" />
+      <card id="2010" mastery_level="4" name="Silver Wind" />
+      <card id="5059" mastery_level="5" name="Bemola" />
+      <card id="6136" mastery_level="6" name="Cosmic Elemental" />
+      <card id="7112" mastery_level="7" name="Fountain Guardian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5814</id>
+    <name>Trust Issues</name>
+    <energy>9</energy>
+    <desc>You see the Crimsonwing Leader flying in the distance. He follows the light, disappearing where the three beams converge...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="6056" name="Potoo" />
+      <card id="6056" name="Potoo" />
+      <card id="6172" name="Steel Plover" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="5058" mastery_level="2" name="Crescent Moon Owl" />
+      <card id="2041" mastery_level="3" name="Sharpwing" />
+      <card id="6015" mastery_level="4" name="Acidic Sludge" />
+      <card id="7111" mastery_level="5" name="Aurai" />
+      <card id="7133" mastery_level="6" name="Light of the Grove" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>0</enemy>
+        <text>Only Elementals or those with wings can reach the sanctum of the Celestial Vault.</text>
+      </line>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>0</enemy>
+        <text>Do you trust me, adventurer? I can bring you to the sanctum.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5815</id>
+    <name>Belief in the Redfeather</name>
+    <energy>9</energy>
+    <desc>You remember Cedric's warning and Groc's worry about the Avian Magistrate. However, something is clearly happening, and it would be unwise to ignore. You offer your hand to Magistrate Agni.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2041" name="Sharpwing" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2009" name="Sapling" />
+      <card id="1027" mastery_level="2" name="Griffin Knight" />
+      <card id="7057" mastery_level="3" name="Bill Crasher" />
+      <card id="5046" mastery_level="4" name="Dawn" />
+      <card id="7172" mastery_level="5" name="Rivertorch Renegade" />
+      <card id="6076" mastery_level="6" name="Magmatic Bang" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>0</enemy>
+        <text>Only Elementals or those with wings can reach the sanctum of the Celestial Vault.</text>
+      </line>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>0</enemy>
+        <text>Do you trust me, adventurer? I can bring you to the sanctum.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5816</id>
+    <name>To the Heart of the Vault</name>
+    <energy>9</energy>
+    <desc>Magistrate Agni lifts you with all her might, her wings flapping furiously. She brings you closer to the light, and it envelopes the two of you completely...</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="2031" name="Dryad" />
+      <card id="6077" name="Enigma" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="7029" mastery_level="3" name="Owl Griffin" />
+      <card id="7045" mastery_level="4" name="Sakura" />
+      <card id="2043" mastery_level="5" name="Eos" />
+      <card id="5079" mastery_level="6" name="Cyclopnid" />
+      <card id="5001" mastery_level="7" name="Aven Skypiercer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>0</enemy>
+        <text>Thank you, adventurer. I promise that this was the right decision.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5817</id>
+    <name>To the Celestial Vault's Core</name>
+    <energy>9</energy>
+    <desc>You fall a short distance, tumbling as you hit tiled ground. Magistrate Agni collapses next to you, chest heaving from exerting so much strength. You can hear voices in the near distance.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6172" name="Steel Plover" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2009" name="Sapling" />
+      <card id="7078" name="Saprolite" />
+      <card id="2082" mastery_level="2" name="Ecru Spear" />
+      <card id="5114" mastery_level="3" name="Wingward" />
+      <card id="7075" mastery_level="4" name="Diamode" />
+      <card id="6114" mastery_level="5" name="Blazing Emissary" />
+      <card id="5048" mastery_level="6" name="Highborn Rose" />
+      <card id="5110" mastery_level="7" name="Alectryon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5818</id>
+    <name>Mystical Realm</name>
+    <energy>9</energy>
+    <desc>You have arrived at a shrine, with statues of the three factions, forming a triangle depiction of Aether, Wyld, and Chaos. At its center is a spring, glowing with energy. Standing before it is the Crimsonwing Avian.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2031" name="Dryad" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="6112" mastery_level="2" name="Fire Hawk" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="6046" mastery_level="4" name="Celerity" />
+      <card id="5047" mastery_level="5" name="Sky Fisher" />
+      <card id="5134" mastery_level="6" name="Ocotillo" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>This place is where Elementals cross from the spiritual world and into the physical realm.</text>
       </line>
     </speech>
   </mission>

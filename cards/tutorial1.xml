@@ -570,7 +570,7 @@
       <message>
         <line>
           <commander>raven</commander>
-          <text>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</text>
+          <text>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</text>
         </line>
       </message>
       <confirm>1</confirm>

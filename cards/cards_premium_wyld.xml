@@ -21496,4 +21496,264 @@
       <skill id="poison" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7172</id>
+    <card_type>2</card_type>
+    <name>Rivertorch Renegade</name>
+    <picture>Fencer_Avian_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513875600</hidden_until_time>
+    <attack>6</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="3" />
+    <skill id="pierce" x="3" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="3" y="3" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="4" y="3" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+    </upgrade>
+    <desc>The king of Rivertorch didn't understand why the citizens did not like his new bird seed tax.</desc>
+  </unit>
+  <unit>
+    <id>17172</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Rivertorch Rebel</name>
+    <picture>Fencer_Avian_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513875600</hidden_until_time>
+    <attack>6</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="3" />
+    <skill id="enrage" x="1" all="1" y="10" />
+    <skill id="pierce" x="4" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="4" y="3" />
+      <skill id="enrage" x="1" all="1" y="10" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="5" y="3" />
+      <skill id="enrage" x="1" all="1" y="10" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="5" y="3" />
+      <skill id="enrage" x="1" all="1" y="10" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27172</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Rivertorch Revolter</name>
+    <picture>Fencer_Avian_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513875600</hidden_until_time>
+    <attack>6</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="5" y="3" />
+    <skill id="enrage" x="1" all="1" y="10" />
+    <skill id="pierce" x="6" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="6" y="3" />
+      <skill id="enrage" x="1" all="1" y="10" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="6" y="3" />
+      <skill id="enrage" x="1" all="1" y="10" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="6" y="3" />
+      <skill id="enrage" x="2" all="1" y="10" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7173</id>
+    <card_type>2</card_type>
+    <name>Wyris Shaman</name>
+    <picture>Tribal_Avian_Warrior_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514480400</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" all="1" y="10" />
+    <skill id="protect" x="1" all="1" y="10" />
+    <skill id="enfeeble" x="2" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="heal" x="1" all="1" y="10" />
+      <skill id="protect" x="1" all="1" y="10" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="2" all="1" y="10" />
+      <skill id="protect" x="1" all="1" y="10" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17173</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wyris Spellmaster</name>
+    <picture>Tribal_Avian_Warrior_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514480400</hidden_until_time>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="2" all="1" y="10" />
+    <skill id="protect" x="1" all="1" y="10" />
+    <skill id="enfeeble" x="3" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="heal" x="2" all="1" y="10" />
+      <skill id="protect" x="1" all="1" y="10" />
+      <skill id="enfeeble" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="2" all="1" y="10" />
+      <skill id="protect" x="2" all="1" y="10" />
+      <skill id="enfeeble" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="3" all="1" y="10" />
+      <skill id="protect" x="2" all="1" y="10" />
+      <skill id="enfeeble" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27173</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wyris Lightmaster</name>
+    <picture>Tribal_Avian_Warrior_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514480400</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="3" all="1" y="10" />
+    <skill id="protect" x="2" all="1" y="10" />
+    <skill id="enfeeble" x="5" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="3" all="1" y="10" />
+      <skill id="protect" x="2" all="1" y="10" />
+      <skill id="enfeeble" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="4" all="1" y="10" />
+      <skill id="protect" x="3" all="1" y="10" />
+      <skill id="enfeeble" x="6" />
+    </upgrade>
+  </unit>
 </root>

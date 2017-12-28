@@ -7659,5 +7659,23 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Eos Craft Recipe -->
+  <achievement>
+    <id>3316</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In the Name of the Nameless</name>
+    <desc>Complete the 'In the Name of the Nameless' campaign on Mastery Level 1.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <req>
+      <campaign>1153</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8006" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

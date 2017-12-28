@@ -6900,4 +6900,50 @@
       <skill id="heal" x="5" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8103</id>
+    <card_type>2</card_type>
+    <name>Blightwind Whisper</name>
+    <picture>Wind_Ghost_A</picture>
+    <asset_bundle>91</asset_bundle>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="5" />
+    <skill id="heal" x="6" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+      <skill id="heal" x="5" />
+      <skill id="heal" x="6" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+      <skill id="heal" x="5" />
+      <skill id="heal" x="6" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
 </root>
