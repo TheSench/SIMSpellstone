@@ -5,21 +5,6 @@ body {
     padding: 0;
 }
 
-
-footer {
-    background-color: $primary-neutral;
-    font-family: Arial, sans-serif;
-    font-size: 1em;
-    display: table;
-    width: 100%;
-    /*
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    */
-    padding: 10px 0;
-}
-
 header {
     background-color: $primary-neutral;
     margin-bottom: 10px;
@@ -77,5 +62,32 @@ header {
         padding: 5px 5px;
         text-decoration: none;
         cursor: pointer;
+    }
+}
+
+footer {
+    background-color: $primary-neutral;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    display: table;
+    width: 100%;
+    /*
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    */
+    padding: 10px 0;
+    
+
+    .privacy-policy {
+        float: left;
+    }
+
+    .donate-form {
+        float: right;
+
+        input {
+            background-color: transparent;
+        }
     }
 }

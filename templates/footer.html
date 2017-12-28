@@ -1,13 +1,23 @@
-﻿<script>
-    // iubenda relies on the windows.onload event handler, but the DOM may already be loaded before the time this template is loaded and run.
-    // Reroute the iubenda call to window.addEventListener to jQuerys $(document).ready(), which we have control over.
-    var origAttach = window.addEventListener;
-    window.addEventListener = function (ignore, callback) { $(document).ready(callback) };
-</script>
-<a href="//www.iubenda.com/privacy-policy/7910998" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
-<script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
-<script>
-    // After the iubenda event handler is attached, revert window.addEventListener
-    window.addEventListener = origAttach;
-    delete origAttach;
-</script>
+﻿<div class="privacy-policy">
+    <script>
+        // iubenda relies on the windows.onload event handler, but the DOM may already be loaded before the time this template is loaded and run.
+        // Reroute the iubenda call to window.addEventListener to jQuerys $(document).ready(), which we have control over.
+        var origAttach = window.addEventListener;
+        window.addEventListener = function (ignore, callback) { $(document).ready(callback) };
+    </script>
+    <a href="//www.iubenda.com/privacy-policy/7910998" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+    <script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+    <script>
+        // After the iubenda event handler is attached, revert window.addEventListener
+        window.addEventListener = origAttach;
+        delete origAttach;
+    </script>
+</div>
+<div class="donate-form">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCDgTX8+wx+cemHlRXycx+dGC2XeUhHngt9/pWL6YEcdxWitlvIsvQc2EMg1H/HrgaTXbRy4bIELOuaEJObZ/jLu5LZiH/H/wtx4vjJx8qUMfZL47qWHl+1/9ES8ohZ/NU697ttPj1Byrfojc39c4WRN54237GqJrG17D5ZdSVQDTELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQI8XtxeBYgPT2AgYBCeBurJvGUfSVyauuNSztugCChCyhowMrJvoyplKq1oS2ZpGwrrakdhksSER+Gl0joaCoYu46pVj8NiHAGQ/RlOAXCGlT4TFTtzNN+QbF/SNqkb59uxCb1hLzYmnc8iV82jEux+s3ALKR8bMazq99EQ2jS/ICQiovSojlAAnaqsaCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE2MDgzMTE3MzI0N1owIwYJKoZIhvcNAQkEMRYEFJxrCDmkv1wIXBI+qn3iZYI/9dyXMA0GCSqGSIb3DQEBAQUABIGAMSlwlJI+ORj7l+R4VXjByCyFExXlk6HEAYtdmf2fcJeDsHAXEOBkjInXrcH0xy0XOGfTtqt8FkiI3f9sB79VJW4Elu2iPifHWSljO3qt2gGz7z67aQQvRkNwDfo2UYfHAN5SkrgUqeRRleEEfCiP0WEZM57inpbBwtO8hFbX+kg=-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+</div>
