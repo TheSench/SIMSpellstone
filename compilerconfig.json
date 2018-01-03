@@ -14,5 +14,9 @@
   {
     "outputFile": "styles/sass/header.css",
     "inputFile": "styles/sass/header.scss"
+  },
+  {
+    "outputFile": "styles/carddetails.css",
+    "inputFile": "styles/carddetails.scss"
   }
 ]
