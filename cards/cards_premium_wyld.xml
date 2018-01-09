@@ -21756,4 +21756,143 @@
       <skill id="enfeeble" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7174</id>
+    <card_type>2</card_type>
+    <name>Mugen and Young Hawk</name>
+    <picture>Sage_Insect_and_Avian_Son_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515258000</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="13" />
+    <skill id="jam" c="6" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="3" y="13" />
+      <skill id="jam" c="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+      <skill id="rally" x="4" y="13" />
+      <skill id="jam" c="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="4" y="13" />
+      <skill id="jam" c="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17174</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Mugen and Son Hawk</name>
+    <picture>Sage_Insect_and_Avian_Son_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515258000</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="13" />
+    <skill id="jam" c="4" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="5" y="13" />
+      <skill id="jam" c="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="5" y="13" />
+      <skill id="jam" c="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+      <skill id="rally" x="5" y="13" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27174</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Mugen and True Hawk</name>
+    <picture>Sage_Insect_and_Avian_Son_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515258000</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="5" y="13" />
+    <skill id="jam" c="3" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="6" y="13" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="7" y="13" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
 </root>

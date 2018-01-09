@@ -1059,6 +1059,111 @@
       <sp>500</sp>
     </reward>
   </achievement>
+  <achievement>
+    <id>268</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XVIII</name>
+    <desc>Collect a total of 1400 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>267</achievement_req>
+    <req>
+      <mastery_stars>1400</mastery_stars>
+    </req>
+    <reward>
+      <item id="4013" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>269</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XIX</name>
+    <desc>Collect a total of 1500 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>268</achievement_req>
+    <req>
+      <mastery_stars>1500</mastery_stars>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>270</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XX</name>
+    <desc>Collect a total of 1600 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>269</achievement_req>
+    <req>
+      <mastery_stars>1600</mastery_stars>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>271</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXI</name>
+    <desc>Collect a total of 1700 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>270</achievement_req>
+    <req>
+      <mastery_stars>1700</mastery_stars>
+    </req>
+    <reward>
+      <item id="4013" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>272</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXII</name>
+    <desc>Collect a total of 1800 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>271</achievement_req>
+    <req>
+      <mastery_stars>1800</mastery_stars>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>273</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXIII</name>
+    <desc>Collect a total of 1900 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>272</achievement_req>
+    <req>
+      <mastery_stars>1900</mastery_stars>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>274</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXIV</name>
+    <desc>Collect a total of 2000 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>273</achievement_req>
+    <req>
+      <mastery_stars>2000</mastery_stars>
+    </req>
+    <reward>
+      <item id="4013" number="1" />
+    </reward>
+  </achievement>
   <!-- Daily Quests -->
   <!-- 
 	<achievement> 
@@ -1667,6 +1772,174 @@
     <achievement_req>429</achievement_req>
     <req>
       <pvp_wins>12000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>431</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXI</name>
+    <desc>Collect 12,500 Bounties.</desc>
+    <achievement_req>430</achievement_req>
+    <req>
+      <pvp_wins>12500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>432</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXII</name>
+    <desc>Collect 13,000 Bounties.</desc>
+    <achievement_req>431</achievement_req>
+    <req>
+      <pvp_wins>13000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>433</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXIII</name>
+    <desc>Collect 13,500 Bounties.</desc>
+    <achievement_req>432</achievement_req>
+    <req>
+      <pvp_wins>13500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>434</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXIV</name>
+    <desc>Collect 14,000 Bounties.</desc>
+    <achievement_req>433</achievement_req>
+    <req>
+      <pvp_wins>14000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>435</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXV</name>
+    <desc>Collect 14,500 Bounties.</desc>
+    <achievement_req>434</achievement_req>
+    <req>
+      <pvp_wins>14500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>436</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXVI</name>
+    <desc>Collect 15,000 Bounties.</desc>
+    <achievement_req>435</achievement_req>
+    <req>
+      <pvp_wins>15000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>437</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXVII</name>
+    <desc>Collect 15,500 Bounties.</desc>
+    <achievement_req>436</achievement_req>
+    <req>
+      <pvp_wins>15500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>438</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXVIII</name>
+    <desc>Collect 16,000 Bounties.</desc>
+    <achievement_req>437</achievement_req>
+    <req>
+      <pvp_wins>16000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>439</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXIX</name>
+    <desc>Collect 16,500 Bounties.</desc>
+    <achievement_req>438</achievement_req>
+    <req>
+      <pvp_wins>16500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>440</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XL</name>
+    <desc>Collect 17,000 Bounties.</desc>
+    <achievement_req>439</achievement_req>
+    <req>
+      <pvp_wins>17000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>441</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XLI</name>
+    <desc>Collect 17,500 Bounties.</desc>
+    <achievement_req>440</achievement_req>
+    <req>
+      <pvp_wins>17500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>442</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XLII</name>
+    <desc>Collect 18,000 Bounties.</desc>
+    <achievement_req>441</achievement_req>
+    <req>
+      <pvp_wins>18000</pvp_wins>
     </req>
     <reward>
       <wb>100</wb>
@@ -7675,6 +7948,149 @@
     </req>
     <reward>
       <item id="8006" number="1" />
+    </reward>
+  </achievement>
+  <!-- Campaign Event 7 Weeks 5-8 -->
+  <achievement>
+    <id>3317</id>
+    <type>2</type>
+    <order>101</order>
+    <name>An Ally in Red</name>
+    <desc>Complete the 'An Ally in Red' campaign on Mastery Level 2.</desc>
+    <mission_req>5796</mission_req>
+    <locked_start_time>1515690000</locked_start_time>
+    <!-- Thu, 11 Jan 2018 17:00:00 -->
+    <req>
+      <campaign>1154</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3318</id>
+    <type>2</type>
+    <order>101</order>
+    <name>An Ally in Red</name>
+    <desc>Complete the 'An Ally in Red' campaign on Mastery Level 4.</desc>
+    <mission_req>5796</mission_req>
+    <locked_start_time>1515690000</locked_start_time>
+    <!-- Thu, 11 Jan 2018 17:00:00 -->
+    <achievement_req>3317</achievement_req>
+    <req>
+      <campaign>1154</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3319</id>
+    <type>2</type>
+    <order>101</order>
+    <name>An Ally in Red</name>
+    <desc>Complete the 'An Ally in Red' campaign on Mastery Level 6.</desc>
+    <mission_req>5796</mission_req>
+    <locked_start_time>1515690000</locked_start_time>
+    <!-- Thu, 11 Jan 2018 17:00:00 -->
+    <achievement_req>3318</achievement_req>
+    <req>
+      <campaign>1154</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3320</id>
+    <type>2</type>
+    <order>101</order>
+    <name>An Ally in Red</name>
+    <desc>Complete the 'An Ally in Red' campaign on Mastery Level 6.</desc>
+    <mission_req>5796</mission_req>
+    <locked_start_time>1515690000</locked_start_time>
+    <!-- Thu, 11 Jan 2018 17:00:00 -->
+    <achievement_req>3319</achievement_req>
+    <req>
+      <campaign>1154</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3321</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Forgotten Hero</name>
+    <desc>Complete the 'Forgotten Hero' campaign on Mastery Level 2.</desc>
+    <mission_req>5818</mission_req>
+    <locked_start_time>1516899600</locked_start_time>
+    <!-- Thu, 25 Jan 2018 17:00:00 -->
+    <req>
+      <campaign>1155</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3322</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Forgotten Hero</name>
+    <desc>Complete the 'Forgotten Hero' campaign on Mastery Level 4.</desc>
+    <mission_req>5818</mission_req>
+    <locked_start_time>1516899600</locked_start_time>
+    <!-- Thu, 25 Jan 2018 17:00:00 -->
+    <achievement_req>3321</achievement_req>
+    <req>
+      <campaign>1155</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3323</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Forgotten Hero</name>
+    <desc>Complete the 'Forgotten Hero' campaign on Mastery Level 6.</desc>
+    <mission_req>5818</mission_req>
+    <locked_start_time>1516899600</locked_start_time>
+    <!-- Thu, 25 Jan 2018 17:00:00 -->
+    <achievement_req>3322</achievement_req>
+    <req>
+      <campaign>1155</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3324</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Forgotten Hero</name>
+    <desc>Complete the 'Forgotten Hero' campaign on Mastery Level 7.</desc>
+    <mission_req>5818</mission_req>
+    <locked_start_time>1516899600</locked_start_time>
+    <!-- Thu, 25 Jan 2018 17:00:00 -->
+    <achievement_req>3323</achievement_req>
+    <req>
+      <campaign>1155</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
     </reward>
   </achievement>
   <!-- END Event Quests  -->

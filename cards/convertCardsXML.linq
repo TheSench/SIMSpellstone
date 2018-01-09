@@ -4,6 +4,7 @@
 </Query>
 
 static bool downloadFiles = true;
+static bool forceSpoilers = false;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -355,7 +356,7 @@ void Main()
 		fusions = fusions.Union(newFusions);
 	}
 
-	if (newUnits.Count > 0)
+	if (newUnits.Count > 0 || (downloadFiles && forceSpoilers))
 	{
 		var spoilers = "var spoilers = {};\r\n" + String.Join("\r\n", newUnits.Select(id => String.Format("spoilers[{0}] = true;", id)));
 		newUnits.Dump("New Units:");

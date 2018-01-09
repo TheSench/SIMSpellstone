@@ -21761,29 +21761,120 @@
     </upgrade>
   </unit>
   <unit>
-    <id>5177</id>
+    <id>5174</id>
     <card_type>2</card_type>
-    <name>Thunderbird</name>
-    <picture>Tornado_Bird_A</picture>
+    <name>Cloudbreak Elites</name>
+    <picture>Avian_Angel_Sky_Assault_A</picture>
     <asset_bundle>114</asset_bundle>
-    <hidden_until_time>1514221200</hidden_until_time>
+    <hidden_until_time>1515258000</hidden_until_time>
     <attack>4</attack>
-    <health>19</health>
+    <health>17</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="strike" x="1" all="1" />
-    <skill id="frost" x="1" />
-    <skill id="weaken" x="2" />
+    <skill id="valor" x="3" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="flurry" c="5" />
     <type>1</type>
+    <sub_type>6</sub_type>
     <sub_type>10</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>20</health>
+      <skill id="valor" x="3" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="4" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15174</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Cloudshatter Elites</name>
+    <picture>Avian_Angel_Sky_Assault_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515258000</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
       <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="5" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="6" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25174</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dawnsword Elites</name>
+    <picture>Avian_Angel_Sky_Assault_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515258000</hidden_until_time>
+    <attack>4</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="6" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="7" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -21791,101 +21882,145 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="strike" x="1" all="1" />
-      <skill id="frost" x="2" />
-      <skill id="weaken" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="strike" x="1" all="1" />
-      <skill id="frost" x="2" />
-      <skill id="weaken" x="3" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>15177</id>
-    <card_type>2</card_type>
-    <fusion_level>1</fusion_level>
-    <name>Arc Thunderbird</name>
-    <picture>Tornado_Bird_A</picture>
-    <asset_bundle>114</asset_bundle>
-    <hidden_until_time>1514221200</hidden_until_time>
-    <attack>5</attack>
-    <health>22</health>
-    <cost>2</cost>
-    <rarity>4</rarity>
-    <skill id="strike" x="1" all="1" />
-    <skill id="frost" x="2" />
-    <skill id="weaken" x="3" />
-    <type>1</type>
-    <sub_type>10</sub_type>
-    <set>4000</set>
-    <upgrade>
-      <level>2</level>
-      <health>23</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>24</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <attack>6</attack>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="strike" x="1" all="1" />
-      <skill id="frost" x="3" />
-      <skill id="weaken" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="strike" x="1" all="1" />
-      <skill id="frost" x="3" />
-      <skill id="weaken" x="4" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>25177</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Regal Thunderbird</name>
-    <picture>Tornado_Bird_B</picture>
-    <asset_bundle>114</asset_bundle>
-    <hidden_until_time>1514221200</hidden_until_time>
-    <attack>6</attack>
-    <health>25</health>
-    <cost>2</cost>
-    <rarity>4</rarity>
-    <skill id="strike" x="1" all="1" />
-    <skill id="frost" x="3" />
-    <skill id="weaken" x="4" />
-    <type>1</type>
-    <sub_type>10</sub_type>
-    <set>4000</set>
-    <upgrade>
-      <level>2</level>
       <health>26</health>
     </upgrade>
     <upgrade>
+      <level>6</level>
+      <skill id="valor" x="8" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5175</id>
+    <card_type>2</card_type>
+    <name>Spirit of Cygnus</name>
+    <picture>Cygnus_Swan_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515085200</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="2" />
+    <skill id="heal" x="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
       <level>3</level>
-      <attack>7</attack>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>27</health>
+      <health>14</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="strike" x="2" all="1" />
-      <skill id="frost" x="3" />
-      <skill id="weaken" x="4" />
+      <skill id="heal" x="2" />
+      <skill id="heal" x="2" />
+      <skill id="flurry" c="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="strike" x="2" all="1" />
-      <skill id="frost" x="4" />
-      <skill id="weaken" x="5" />
+      <skill id="heal" x="2" />
+      <skill id="heal" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15175</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Soul of Cygnus</name>
+    <picture>Cygnus_Swan_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515085200</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="2" />
+    <skill id="heal" x="2" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="3" />
+      <skill id="heal" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25175</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Avatar of Cygnus</name>
+    <picture>Cygnus_Swan_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1515085200</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="3" />
+    <skill id="heal" x="3" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="4" />
+      <skill id="heal" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="4" />
+      <skill id="heal" x="4" />
+      <skill id="flurry" c="3" />
     </upgrade>
   </unit>
   <unit>
@@ -22026,6 +22161,134 @@
       <skill id="counter" x="8" />
       <skill id="valor" x="10" />
       <skill id="frost" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5177</id>
+    <card_type>2</card_type>
+    <name>Thunderbird</name>
+    <picture>Tornado_Bird_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514221200</hidden_until_time>
+    <attack>4</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15177</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Arc Thunderbird</name>
+    <picture>Tornado_Bird_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514221200</hidden_until_time>
+    <attack>5</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="frost" x="2" />
+    <skill id="weaken" x="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25177</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Regal Thunderbird</name>
+    <picture>Tornado_Bird_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1514221200</hidden_until_time>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="frost" x="3" />
+    <skill id="weaken" x="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="2" all="1" />
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="2" all="1" />
+      <skill id="frost" x="4" />
+      <skill id="weaken" x="5" />
     </upgrade>
   </unit>
 </root>
