@@ -1014,7 +1014,7 @@ var SIMULATOR = {};
 				target.attack_rally += rally_amt;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += debug_name(src_card) + ' is enlarged by ' + rally_amt + '<br>';
+					echo += debug_name(src_card) + ' enlarges ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 				}
 
 				affected++;

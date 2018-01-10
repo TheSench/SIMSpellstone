@@ -2,7 +2,7 @@
 <root>
   <!--
 		1-100		DO NOT USE, OFF LIMITS!!
-		101-500		World Event BGE
+		101-500		Tribal Event BGE
 		501-1000	Specialty BGE
 		1001-2000	Personal BGE
 		2001-3000	Enemy Scaling BGE
@@ -33,7 +33,9 @@
 			</target_effect>
 		</skill>
  	-->
-  <!-- 101-500: World Event BGE -->
+  <!-- =================================== -->
+  <!-- ==== 101-500: Tribal Event BGE ==== -->
+  <!-- =================================== -->
   <battleground>
     <id>101</id>
     <name>Age of Dragons</name>
@@ -77,7 +79,7 @@
   </battleground>
   <battleground>
     <id>105</id>
-    <name>Devouring Hunger</name>
+    <name>Relentless Hunger</name>
     <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 30% of their base Attack.</desc>
     <web_picture>filter_undead_64.png</web_picture>
     <icon>filter_undead_64</icon>
@@ -377,7 +379,56 @@
       </skill>
     </effect>
   </battleground>
-  <!-- 501-1000: Specialty BGE -->
+  <battleground>
+    <id>119</id>
+    <name>Elemental Conflux</name>
+    <desc>Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 20% base Health.</desc>
+    <web_picture>filter_elementals_64.png</web_picture>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <card_type>99</card_type>
+      <skill id="enlarge" mult=".5" all="1" yy="1,5" />
+      <!-- mult is based on attack -->
+      <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
+        <target_effect>
+          <prefab>Empower_Target_Elemental</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2,5" />
+      <skill id="displayEffect" trigger="onSkill" yy="2,5" s="counter">
+        <actor_effect>
+          <prefab>ReinforceActive</prefab>
+          <bundle_id>105</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <scale_health base="health" mult="0.2" yy="3,5" />
+      <skill id="displayEffect" trigger="onPlay" yy="3,5">
+        <actor_effect>
+          <prefab>ReinforceBreak</prefab>
+          <bundle_id>105</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>120</id>
+    <name>Dragonfire</name>
+    <desc>Dragons gain Scorch equal to 15% of their base Health.</desc>
+    <icon>filter_dragon_64.png</icon>
+    <effect>
+      <add_skill id="burn" mult="0.15" base="health" y="9" />
+    </effect>
+  </battleground>
+  <!-- ================================= -->
+  <!-- ==== 501-1000: Specialty BGE ==== -->
+  <!-- ================================= -->
   <battleground>
     <id>501</id>
     <name>Castle Siege</name>
@@ -756,7 +807,29 @@
       <skill id="enhance" s="counter" mult="0.5" all="1" />
     </effect>
   </battleground>
-  <!-- 1001+: Personal BGE -->
+  <battleground>
+    <id>524</id>
+    <name>Berserker Rage</name>
+    <desc>Berserk skills are 50% more effective.</desc>
+    <icon>Berserk_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="berserk" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>525</id>
+    <name>Vanishing Enchantment</name>
+    <desc>All cards gain Invisibility 99.</desc>
+    <icon>Invisibility_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="evade" x="99" />
+    </effect>
+  </battleground>
+  <!-- ============================= -->
+  <!-- ==== 1001+: Personal BGE ==== -->
+  <!-- ============================= -->
   <battleground>
     <id>1001</id>
     <name>Primal Mending</name>
@@ -776,7 +849,9 @@
       <skill id="protect" x="2" all="1" y="4" />
     </effect>
   </battleground>
-  <!-- 2001+: Enemy Scaling BGE -->
+  <!-- ================================== -->
+  <!-- ==== 2001+: Enemy Scaling BGE ==== -->
+  <!-- ================================== -->
   <battleground>
     <id>2001</id>
     <name>Scylla's Presence</name>
@@ -1281,7 +1356,9 @@
       <scale_attributes base_mult=".1" mult=".03" />
     </effect>
   </battleground>
-  <!-- Arena BGEs -->
+  <!-- ==================== -->
+  <!-- ==== Arena BGEs ==== -->
+  <!-- ==================== -->
   <battleground>
     <id>5001</id>
     <name>The Arena</name>

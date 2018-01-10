@@ -47,7 +47,7 @@ window.onerror = function (message, url, linenumber) {
 }
 
 // When Page Loads...
-$(function () {
+function processQueryString() {
 
 	$("#header").load("templates/header.html", function () {
 		if (typeof showTutorial !== "undefined") {
@@ -150,6 +150,8 @@ $(function () {
 		setSelectedMapBattlegrounds(mapBges);
 	}
 
+	$("#battleground").change();
+
 	$('#sims').val(_GET('sims') || 10000);
 
 	if (_DEFINED("debug")) $('#debug').click();
@@ -190,7 +192,7 @@ $(function () {
 			open: function (event, ui) { $(".ui-dialog-titlebar-close", ui.dialog | ui).hide(); }
 		});
 	}
-});
+}
 
 var style;
 var u_black = false;

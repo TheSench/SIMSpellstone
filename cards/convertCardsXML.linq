@@ -3,8 +3,8 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
-static bool forceSpoilers = false;
+static bool downloadFiles = false;
+static bool forceSpoilers = true;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -582,6 +582,7 @@ public class battleground
 	[XmlArrayItem(Type = typeof(add_skill), ElementName = "add_skill")]
 	[XmlArrayItem(Type = typeof(evolve_skill), ElementName = "evolve_skill")]
 	[XmlArrayItem(Type = typeof(skill), ElementName = "skill")]
+	[XmlArrayItem(Type = typeof(scale_health), ElementName = "scale_health")]
 	[XmlArrayItem(Type = typeof(scale_attributes), ElementName = "scale_attributes")]
 	[XmlArrayItem(Type = typeof(on_play), ElementName = "on_play")]
 	[XmlArrayItem(Type = typeof(starting_card), ElementName = "starting_card")]
@@ -671,17 +672,17 @@ public class battleground
 				}
 				sb.Append(tabs2).Append("{\r\n");
 				AppendEntryString(sb, "effect_type", effect_i.GetType().Name, tabs3);
-				if (effect_i is skill)
-				{
-					AppendSkill(sb, (skill)effect_i, tabs3, false);
-				}
-				else if (effect_i is evolve_skill)
+				if (effect_i is evolve_skill)
 				{
 					AppendEvolve(sb, (evolve_skill)effect_i, tabs3);
 				}
 				else if (effect_i is add_skill)
 				{
 					AppendAddSkill(sb, (add_skill)effect_i, tabs3);
+				}
+				else if (effect_i is scale_health)
+				{
+					AppendScaleHealth(sb, (scale_health)effect_i, tabs3);
 				}
 				else if (effect_i is scale_attributes)
 				{
@@ -694,6 +695,10 @@ public class battleground
 				else if (effect_i is trap_card)
 				{
 					AppendTrap(sb, (trap_card)effect_i, tabs3);
+				}
+				else
+				{
+					AppendSkill(sb, (skill)effect_i, tabs3, false);
 				}
 				sb.Append(tabs2).Append("},\r\n");
 			}
@@ -714,7 +719,7 @@ public abstract class CardType
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-public partial class unit
+public class unit
 {
 	const string unitTabs = "    ";
 	const string upgradeTabs = "      ";
@@ -986,7 +991,7 @@ public partial class unit
 }
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class unitUpgrade
+public class unitUpgrade
 {
 	private string levelField;
 	private string attackField;
@@ -1039,11 +1044,43 @@ public partial class unitUpgrade
 }
 
 /// <remarks/>
+public abstract class battlegroundEffect
+{
+	private string yField;
+	private string idField;
+
+	public virtual bool skip { get { return false; } }
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string id
+	{
+		get { return this.idField; }
+		set { this.idField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string y
+	{
+		get { return this.yField; }
+		set { this.yField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string yy
+	{
+		get { return this.yField; }
+		set { this.yField = value; }
+	}
+}
+
+/// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class skill : battlegroundEffect
+public class skill : battlegroundEffect
 {
 	private string xField;
-	private string yField;
 	private string cField;
 	private string sField;
 	private string allField;
@@ -1088,14 +1125,6 @@ public partial class skill : battlegroundEffect
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string y
-	{
-		get { return this.yField; }
-		set { this.yField = value; }
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
 	public string c
 	{
 		get { return this.cField; }
@@ -1121,24 +1150,7 @@ public partial class skill : battlegroundEffect
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class battlegroundEffect
-{
-	private string idField;
-	
-	public virtual bool skip { get { return false; } }
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string id
-	{
-		get { return this.idField; }
-		set { this.idField = value; }
-	}
-}
-
-/// <remarks/>
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class evolve_skill : battlegroundEffect
+public class evolve_skill : battlegroundEffect
 {
 	private string sField;
 	private string allField;
@@ -1162,43 +1174,12 @@ public partial class evolve_skill : battlegroundEffect
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class add_skill : battlegroundEffect
+public class add_skill : skill
 {
-	private string xField;
-	private string yField;
-	private string cField;
-	private string sField;
-	private string allField;
-	private string multField;
-	private string on_delay_multField;
 	private string baseField;
 	private string cardField;
 	private string levelField;
 	private string rarityField;
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string x
-	{
-		get { return this.xField; }
-		set { this.xField = value; }
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string mult
-	{
-		get { return this.multField; }
-		set { this.multField = value; }
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string on_delay_mult
-	{
-		get { return this.on_delay_multField; }
-		set { this.on_delay_multField = value; }
-	}
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute("base")]
@@ -1206,38 +1187,6 @@ public partial class add_skill : battlegroundEffect
 	{
 		get { return this.baseField; }
 		set { this.baseField = value; }
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string y
-	{
-		get { return this.yField; }
-		set { this.yField = value; }
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string c
-	{
-		get { return this.cField; }
-		set { this.cField = value; }
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string s
-	{
-		get { return this.sField; }
-		set { this.sField = value; }
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string all
-	{
-		get { return this.allField; }
-		set { this.allField = value; }
 	}
 
 	/// <remarks/>
@@ -1267,9 +1216,8 @@ public partial class add_skill : battlegroundEffect
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class scale_attributes : battlegroundEffect
+public class scale_attributes : battlegroundEffect
 {
-	private string yField;
 	private string base_multField;
 	private string multField;
 
@@ -1288,19 +1236,25 @@ public partial class scale_attributes : battlegroundEffect
 		get { return this.multField; }
 		set { this.multField = value; }
 	}
+}
+
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public class scale_health : scale_attributes
+{
+	private string baseField;
 
 	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string y
+	[System.Xml.Serialization.XmlAttributeAttribute("base")]
+	public string Base
 	{
-		get { return this.yField; }
-		set { this.yField = value; }
+		get { return this.baseField; }
+		set { this.baseField = value; }
 	}
 }
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class on_play : battlegroundEffect
+public class on_play : battlegroundEffect
 {
 	private string attackerField;
 	private string defenderField;
@@ -1329,16 +1283,18 @@ public partial class on_play : battlegroundEffect
 		get { return this.first_playField; }
 		set { this.first_playField = value; }
 	}
-	
+
 	[XmlElement("add_skill", typeof(add_skill))]
 	[XmlElement("evolve_skill", typeof(evolve_skill))]
+	[XmlElement("scale_health", typeof(scale_health))]
+	[XmlElement("scale_attributes", typeof(scale_attributes))]
 	[XmlElement("skill", typeof(skill))]
 	public battlegroundEffect effect { get; set; }
 }
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class starting_card : battlegroundEffect
+public class starting_card : battlegroundEffect
 {
 	private string levelField;
 	private string rankField;
@@ -1362,12 +1318,11 @@ public partial class starting_card : battlegroundEffect
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class trap_card : battlegroundEffect
+public class trap_card : battlegroundEffect
 {
 	private string baseField;
 	private string multField;
 	private string target_deckField;
-	private string yField;
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]
@@ -1392,17 +1347,9 @@ public partial class trap_card : battlegroundEffect
 		get { return this.target_deckField; }
 		set { this.target_deckField = value; }
 	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string y
-	{
-		get { return this.yField; }
-		set { this.yField = value; }
-	}
 }
 
-public partial class campaign
+public class campaign
 {
 	public string id { get; set; }
 	public string name { get; set; }
@@ -1413,7 +1360,7 @@ public partial class campaign
 	public item[] items {get; set; }
 }
 
-public partial class item {
+public class item {
 	public int id;
 	public double dropRate;
 
@@ -1423,7 +1370,7 @@ public partial class item {
 	}
 }
 
-public partial class mission
+public class mission
 {
 	public string id { get; set; }
 	public string name { get; set; }
@@ -1431,7 +1378,7 @@ public partial class mission
 	public missionCard[] deck { get; set; }
 }
 
-public partial class missionCard
+public class missionCard
 {
 	public string id { get; set; }
 	public string level { get; set; }
@@ -1578,6 +1525,15 @@ private static void AppendScaling(StringBuilder sb, scale_attributes skill, stri
 	AppendEntryString(sb, "y", skill.y, tabs);
 }
 
+private static void AppendScaleHealth(StringBuilder sb, scale_health skill, string tabs)
+{
+	AppendEntryString(sb, "id", skill.id, tabs);
+	AppendEntryString(sb, "base", skill.Base, tabs);
+	AppendEntry(sb, "base_mult", skill.base_mult, tabs);
+	AppendEntry(sb, "mult", skill.mult, tabs);
+	AppendEntryString(sb, "y", skill.y, tabs);
+}
+
 private static void AppendOnPlay(StringBuilder sb, on_play skill, string tabs)
 {
 	AppendEntryString(sb, "id", skill.id, tabs);
@@ -1589,17 +1545,17 @@ private static void AppendOnPlay(StringBuilder sb, on_play skill, string tabs)
 	var effect = skill.effect;
 	var tabs2 = tabs + "\t";
 	AppendEntryString(sb, "effect_type", effect.GetType().Name, tabs2);
-	if (effect is skill)
-	{
-		AppendSkill(sb, (skill)effect, tabs2, false);
-	}
-	else if (effect is evolve_skill)
+	if (effect is evolve_skill)
 	{
 		AppendEvolve(sb, (evolve_skill)effect, tabs2);
 	}
 	else if (effect is add_skill)
 	{
 		AppendAddSkill(sb, (add_skill)effect, tabs2);
+	}
+	else if (effect is scale_health)
+	{
+		AppendScaleHealth(sb, (scale_health)effect, tabs2);
 	}
 	else if (effect is scale_attributes)
 	{
@@ -1612,6 +1568,10 @@ private static void AppendOnPlay(StringBuilder sb, on_play skill, string tabs)
 	else if (effect is trap_card)
 	{
 		AppendTrap(sb, (trap_card)effect, tabs2);
+	}
+	else
+	{
+		AppendSkill(sb, (skill)effect, tabs2, false);
 	}
 	sb.Append(tabs).Append("}\r\n");
 }

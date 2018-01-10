@@ -60,7 +60,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "105": {
-    "name": "Devouring Hunger",
+    "name": "Relentless Hunger",
     "id": "105",
     "desc": "The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 30% of their base Attack.",
     "effect": [
@@ -291,6 +291,48 @@ var BATTLEGROUNDS = {
         "base": "attack",
         "y": "16",
         "all": "1",
+      },
+    ]
+  },
+  "119": {
+    "name": "Elemental Conflux",
+    "id": "119",
+    "desc": "Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 20% base Health.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enlarge",
+        "mult": .5,
+        "y": "1,5",
+        "all": "1",
+      },
+      {
+        "effect_type": "add_skill",
+        "id": "counter",
+        "mult": .5,
+        "base": "attack",
+        "y": "2,5",
+        "all": "1",
+      },
+      {
+        "effect_type": "scale_health",
+        "base": "health",
+        "mult": 0.2,
+        "y": "3,5",
+      },
+    ]
+  },
+  "120": {
+    "name": "Dragonfire",
+    "id": "120",
+    "desc": "Dragons gain Scorch equal to 15% of their base Health.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "burn",
+        "mult": 0.15,
+        "base": "health",
+        "y": "9",
       },
     ]
   },
@@ -975,6 +1017,32 @@ var BATTLEGROUNDS = {
         "mult": 0.5,
         "s": "counter",
         "all": "1",
+      },
+    ]
+  },
+  "524": {
+    "name": "Berserker Rage",
+    "id": "524",
+    "desc": "Berserk skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "berserk",
+        "all": "1",
+      },
+    ]
+  },
+  "525": {
+    "name": "Vanishing Enchantment",
+    "id": "525",
+    "desc": "All cards gain Invisibility 99.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "evade",
+        "x": 99,
       },
     ]
   },

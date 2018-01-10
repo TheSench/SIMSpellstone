@@ -333,14 +333,25 @@ var makeUnit = (function () {
                     }
                 }
             } else if (skillModifier.modifierType == "scale" && !isToken) {
-                for (var j = 0; j < skillModifier.effects.length; j++) {
-                    var mult = skillModifier.effects[j].mult;
-                    var plusAttack = Math.ceil(new_card.attack * mult);
-                    new_card.attack += plusAttack;
-                    var plusHealth = Math.ceil(new_card.health * mult);
-                    new_card.health += plusHealth;
-                    scaleSkills(new_card, original_skills, mult);
+            	for (var j = 0; j < skillModifier.effects.length; j++) {
+            		var scaling = skillModifier.effects[j];
+            		if (new_card.isInFaction(scaling.y)) {
+            			var mult = scaling.mult;
+            			var plusAttack = Math.ceil(new_card.attack * mult);
+            			new_card.attack += plusAttack;
+            			var plusHealth = Math.ceil(new_card.health * mult);
+            			new_card.health += plusHealth;
+            			scaleSkills(new_card, original_skills, mult);
+            		}
                 }
+            } else if (skillModifier.modifierType == "scale_health" && !isToken) {
+            	for (var j = 0; j < skillModifier.effects.length; j++) {
+            		var scaling = skillModifier.effects[j];
+            		if (new_card.isInFaction(scaling.y)) {
+            			var plusHealth = Math.ceil(new_card[scaling.base] * scaling.mult);
+            			new_card.health += plusHealth;
+            		}
+            	}
             }
         }
     }
@@ -663,10 +674,20 @@ var makeUnit = (function () {
 
         // Filters by faction
         isInFaction: function (faction) {
-            if (faction === undefined) return 1;
-            if (this.type == faction) return 1;
-            if (this.sub_type.indexOf(faction.toString()) >= 0) return 1;
-            return 0;
+        	if (faction === undefined) return 1;
+        	var factions = faction.split(',');
+        	if (factions.length <= 1) {
+        		if (this.type == faction) return 1;
+        		if (this.sub_type.indexOf(faction.toString()) >= 0) return 1;
+        		return 0;
+        	} else {
+        		for (var i = 0; i < factions.length; i++) {
+        			if (!this.isInFaction(factions[i])) {
+        				return 0;
+        			}
+        		}
+        		return 1;
+        	}
         },
 
         resetTimers: function () {
@@ -874,6 +895,9 @@ var MakeSkillModifier = (function () {
         } else if (effect_type === "scale_attributes") {
             this.modifierType = "scale";
             this.effects = [effect];
+        } else if (effect_type === "scale_health") {
+        	this.modifierType = "scale_health";
+        	this.effects = [effect];
         }
     }
 
@@ -1033,7 +1057,7 @@ function addRaidBGE(battlegrounds, raidID, raidLevel) {
                     var bge = MakeBattleground(battleground.name, effect, mult);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onTurn.push(bge);
-                } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes") {
+                } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes" || effect_type === "scale_health") {
                     var bge = MakeSkillModifier(battleground.name, effect);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
@@ -1073,7 +1097,7 @@ function addBgeFromList(battlegrounds, battleground, player) {
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onTurn.push(bge);
-        } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes") {
+        } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes" || effect_type === "scale_health") {
             var bge = MakeSkillModifier(battleground.name, effect);
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true

@@ -179,6 +179,8 @@ $(function () {
     } else {
         loadCardCache();
     }
+
+    processQueryString();
 });
 
 function doneLoading() {
