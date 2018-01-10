@@ -317,7 +317,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "scale_health",
         "base": "health",
-        "mult": 0.2,
+        "mult": 0.25,
         "y": "3,5",
       },
     ]

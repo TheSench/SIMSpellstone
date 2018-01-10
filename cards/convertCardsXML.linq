@@ -3,8 +3,8 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = false;
-static bool forceSpoilers = true;
+static bool downloadFiles = true;
+static bool forceSpoilers = false;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
