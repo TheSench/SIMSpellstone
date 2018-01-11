@@ -1560,7 +1560,7 @@
     <upgrade>
       <level>5</level>
       <skill id="armored" x="3" />
-      <skill id="protect" x="3" />
+      <skill id="protect" x="4" />
       <skill id="weaken" x="2" all="1" />
     </upgrade>
   </unit>
@@ -1572,11 +1572,11 @@
     <picture>Glass_Colossuss_C</picture>
     <asset_bundle>8</asset_bundle>
     <attack>8</attack>
-    <health>26</health>
+    <health>30</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="3" />
-    <skill id="protect" x="4" />
+    <skill id="protect" x="5" />
     <skill id="weaken" x="2" all="1" />
     <type>1</type>
     <sub_type>5</sub_type>
@@ -1584,22 +1584,23 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>28</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>30</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="armored" x="4" />
-      <skill id="protect" x="4" />
+      <skill id="protect" x="6" />
       <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>33</health>
       <skill id="armored" x="4" />
-      <skill id="protect" x="5" />
+      <skill id="protect" x="7" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
   </unit>
@@ -4528,7 +4529,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>31</health>
+      <health>32</health>
       <skill id="counter" x="5" />
       <skill id="strike" x="1" all="1" />
       <skill id="burn" x="3" />
@@ -4536,9 +4537,10 @@
     <upgrade>
       <level>5</level>
       <attack>7</attack>
-      <skill id="counter" x="5" />
+      <health>34</health>
+      <skill id="counter" x="6" />
       <skill id="strike" x="2" all="1" />
-      <skill id="burn" x="3" />
+      <skill id="burn" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -5839,7 +5841,7 @@
     <!-- Burnhorn -->
     <picture>Fire_Elemental_Bull_B</picture>
     <asset_bundle>38</asset_bundle>
-    <attack>9</attack>
+    <attack>10</attack>
     <health>37</health>
     <cost>4</cost>
     <rarity>4</rarity>
@@ -5860,22 +5862,24 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>11</attack>
       <skill id="counter" x="7" />
       <skill id="burn" x="4" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>42</health>
+      <health>43</health>
       <skill id="counter" x="7" />
       <skill id="burn" x="5" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>10</attack>
+      <health>45</health>
+      <attack>12</attack>
       <skill id="counter" x="7" />
-      <skill id="burn" x="5" />
+      <skill id="burn" x="6" />
       <skill id="weaken" x="4" all="1" />
     </upgrade>
   </unit>

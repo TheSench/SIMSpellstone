@@ -5155,7 +5155,7 @@
     <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>1</attack>
-    <health>25</health>
+    <health>34</health>
     <cost>4</cost>
     <rarity>3</rarity>
     <skill id="strike" x="3" />
@@ -5166,27 +5166,27 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>26</health>
+      <health>36</health>
       <skill id="strike" x="3" />
       <skill id="frost" x="2" />
       <skill id="burn" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>38</health>
       <attack>2</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>29</health>
+      <health>39</health>
       <skill id="strike" x="4" />
       <skill id="frost" x="2" />
       <skill id="burn" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>30</health>
-      <skill id="strike" x="4" />
+      <health>40</health>
+      <skill id="strike" x="6" />
       <skill id="frost" x="2" />
       <skill id="burn" x="3" />
     </upgrade>
@@ -5201,10 +5201,10 @@
     <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>2</attack>
-    <health>31</health>
+    <health>41</health>
     <cost>4</cost>
     <rarity>3</rarity>
-    <skill id="strike" x="4" />
+    <skill id="strike" x="7" />
     <skill id="frost" x="2" />
     <skill id="burn" x="3" />
     <type>2</type>
@@ -5212,29 +5212,30 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>32</health>
+      <health>42</health>
       <attack>3</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>33</health>
-      <skill id="strike" x="4" />
+      <health>43</health>
+      <skill id="strike" x="8" />
       <skill id="frost" x="3" />
       <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>34</health>
-      <skill id="strike" x="5" />
-      <skill id="frost" x="3" />
+      <health>44</health>
+      <skill id="strike" x="9" />
+      <skill id="frost" x="4" />
       <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>36</health>
-      <skill id="strike" x="5" />
-      <skill id="frost" x="3" />
-      <skill id="burn" x="4" />
+      <health>45</health>
+      <attack>4</attack>
+      <skill id="strike" x="10" />
+      <skill id="frost" x="5" />
+      <skill id="burn" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -9431,14 +9432,14 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>28</health>
+      <health>31</health>
       <skill id="burn" x="3" />
       <skill id="berserk" x="2" />
       <skill id="flurry" c="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>29</health>
+      <health>33</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -9456,7 +9457,7 @@
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1472749200</hidden_until_time>
     <attack>5</attack>
-    <health>30</health>
+    <health>34</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="burn" x="4" />
@@ -9473,24 +9474,24 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>31</health>
+      <health>35</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>32</health>
+      <health>36</health>
       <skill id="burn" x="4" />
-      <skill id="berserk" x="2" />
+      <skill id="berserk" x="3" />
       <skill id="flurry" c="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>6</attack>
-      <health>33</health>
+      <health>38</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="burn" x="5" />
-      <skill id="berserk" x="3" />
+      <skill id="burn" x="6" />
+      <skill id="berserk" x="4" />
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
@@ -9674,7 +9675,7 @@
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473958800</hidden_until_time>
     <attack>7</attack>
-    <health>32</health>
+    <health>35</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="strike" x="2" all="1" />
@@ -9685,33 +9686,33 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>33</health>
+      <health>36</health>
       <skill id="strike" x="3" all="1" />
       <skill id="burn" x="3" />
       <skill id="pierce" x="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>34</health>
+      <health>38</health>
       <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>35</health>
+      <health>40</health>
       <skill id="strike" x="3" all="1" />
       <skill id="burn" x="3" />
       <skill id="pierce" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>36</health>
+      <health>43</health>
       <skill id="strike" x="3" all="1" />
       <skill id="burn" x="4" />
       <skill id="pierce" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>37</health>
+      <health>45</health>
       <skill id="strike" x="4" all="1" />
       <skill id="burn" x="4" />
       <skill id="pierce" x="6" />
@@ -9726,7 +9727,7 @@
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473958800</hidden_until_time>
     <attack>9</attack>
-    <health>39</health>
+    <health>46</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="strike" x="4" all="1" />
@@ -9737,36 +9738,37 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>40</health>
+      <health>47</health>
       <skill id="strike" x="4" all="1" />
       <skill id="burn" x="4" />
       <skill id="pierce" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>41</health>
+      <health>48</health>
       <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>42</health>
+      <health>49</health>
       <skill id="strike" x="5" all="1" />
       <skill id="burn" x="4" />
       <skill id="pierce" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>43</health>
+      <health>50</health>
       <skill id="strike" x="5" all="1" />
-      <skill id="burn" x="4" />
+      <skill id="burn" x="5" />
       <skill id="pierce" x="8" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>45</health>
-      <skill id="strike" x="5" all="1" />
-      <skill id="burn" x="5" />
-      <skill id="pierce" x="8" />
+      <health>52</health>
+      <attack>11</attack>
+      <skill id="strike" x="6" all="1" />
+      <skill id="burn" x="6" />
+      <skill id="pierce" x="11" />
     </upgrade>
   </unit>
   <unit>
@@ -10002,7 +10004,7 @@
     <picture>Titanium_Snake_B</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473094800</hidden_until_time>
-    <attack>5</attack>
+    <attack>6</attack>
     <health>31</health>
     <cost>3</cost>
     <rarity>4</rarity>
@@ -10020,7 +10022,7 @@
     <upgrade>
       <level>3</level>
       <health>33</health>
-      <attack>6</attack>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -10028,13 +10030,15 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="fervor" x="3" y="5" />
+      <skill id="fervor" x="4" y="5" />
       <skill id="poison" x="7" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="fervor" x="4" y="5" />
+      <health>36</health>
+      <attack>8</attack>
+      <skill id="fervor" x="5" y="5" />
       <skill id="poison" x="8" />
       <skill id="flurry" c="3" />
     </upgrade>
@@ -21732,6 +21736,136 @@
       <skill id="evade" x="2" />
       <skill id="strike" x="3" all="1" />
       <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6175</id>
+    <card_type>2</card_type>
+    <name>Toxic Steam</name>
+    <picture>Elemental_Smoke_Demon_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enrage" x="1" y="5" />
+    <skill id="poison" x="1" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enrage" x="1" y="5" />
+      <skill id="poison" x="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enrage" x="2" y="5" />
+      <skill id="poison" x="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16175</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Toxic Exhaust</name>
+    <picture>Elemental_Smoke_Demon_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enrage" x="2" y="5" />
+    <skill id="poison" x="2" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enrage" x="2" y="5" />
+      <skill id="poison" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enrage" x="3" y="5" />
+      <skill id="poison" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enrage" x="3" y="5" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26175</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Toxic Miasma</name>
+    <picture>Elemental_Smoke_Demon_B</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enrage" x="4" y="5" />
+    <skill id="poison" x="3" />
+    <skill id="leech" x="7" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" x="4" y="5" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enrage" x="5" y="5" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
 </root>

@@ -3712,6 +3712,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>19</health>
       <skill id="counter" x="3" />
       <skill id="burn" x="2" />
       <skill id="pierce" x="3" />
@@ -3725,7 +3726,7 @@
     <picture>Brimestone_Monster_B</picture>
     <asset_bundle>50</asset_bundle>
     <attack>7</attack>
-    <health>18</health>
+    <health>20</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="counter" x="3" />
@@ -3742,20 +3743,21 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>19</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="counter" x="4" />
+      <skill id="counter" x="5" />
       <skill id="burn" x="2" />
       <skill id="pierce" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>8</attack>
-      <skill id="counter" x="4" />
+      <health>22</health>
+      <skill id="counter" x="6" />
       <skill id="burn" x="3" />
-      <skill id="pierce" x="5" />
+      <skill id="pierce" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -6227,9 +6229,9 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="counter" x="3" />
+      <skill id="counter" x="4" />
       <skill id="legion" x="2" y="5" />
-      <skill id="nullify" x="1" />
+      <skill id="nullify" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -6244,9 +6246,9 @@
     <health>12</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="counter" x="3" />
-    <skill id="legion" x="2" y="5" />
-    <skill id="nullify" x="1" />
+    <skill id="counter" x="4" />
+    <skill id="legion" x="3" y="5" />
+    <skill id="nullify" x="2" />
     <type>2</type>
     <sub_type>5</sub_type>
     <set>2000</set>
@@ -6260,13 +6262,14 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="counter" x="3" />
-      <skill id="legion" x="2" y="5" />
-      <skill id="nullify" x="2" />
+      <skill id="counter" x="5" />
+      <skill id="legion" x="3" y="5" />
+      <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>6</attack>
+      <health>15</health>
     </upgrade>
   </unit>
   <unit>
@@ -6336,9 +6339,10 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <skill id="armored" x="1" />
       <skill id="rally" x="2" y="5" all="1" />
       <skill id="weaken" x="2" all="1" />
-      <health>16</health>
+      <health>18</health>
     </upgrade>
   </unit>
   <unit>
@@ -6350,10 +6354,10 @@
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1472144400</hidden_until_time>
     <attack>6</attack>
-    <health>17</health>
+    <health>19</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="armored" x="1" />
+    <skill id="armored" x="2" />
     <skill id="rally" x="2" all="1" y="5" />
     <skill id="weaken" x="2" all="1" />
     <type>1</type>
@@ -6361,7 +6365,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>18</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -6369,11 +6373,14 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>19</health>
+      <health>21</health>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="1" />
+      <health>22</health>
+      <attack>8</attack>
+      <skill id="armored" x="3" />
       <skill id="rally" x="3" all="1" y="5" />
       <skill id="weaken" x="2" all="1" />
     </upgrade>
@@ -13331,6 +13338,251 @@
       <skill id="heal" x="5" />
       <skill id="heal" x="5" />
       <skill id="protect" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2119</id>
+    <card_type>2</card_type>
+    <name>Flaming Hailwing</name>
+    <picture>Fire_Ice_Phoenix_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="1" />
+    <skill id="burn" x="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12119</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Blazing Hailwing</name>
+    <picture>Fire_Ice_Phoenix_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>3</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="2" />
+    <skill id="burn" x="2" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="frost" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22119</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Searing Hailwing</name>
+    <picture>Fire_Ice_Phoenix_B</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>3</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="3" />
+    <skill id="burn" x="3" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="4" />
+      <skill id="burn" x="4" />
+      <skill id="frost" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2120</id>
+    <card_type>2</card_type>
+    <name>Emerald Carbuncle</name>
+    <picture>Emerald_Elemental_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>6</attack>
+    <health>32</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="rally" x="3" />
+    <skill id="poison" x="3" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="corrosive" x="3" />
+      <skill id="rally" x="4" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="rally" x="4" />
+      <skill id="poison" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12120</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Jaded Carbuncle</name>
+    <picture>Emerald_Elemental_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>7</attack>
+    <health>36</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="rally" x="4" />
+    <skill id="poison" x="4" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="corrosive" x="4" />
+      <skill id="rally" x="5" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <skill id="corrosive" x="5" />
+      <skill id="rally" x="5" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="corrosive" x="5" />
+      <skill id="rally" x="5" />
+      <skill id="poison" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22120</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bewitched Carbuncle</name>
+    <picture>Emerald_Elemental_B</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1515690000</hidden_until_time>
+    <attack>9</attack>
+    <health>40</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="rally" x="5" />
+    <skill id="poison" x="5" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+      <skill id="corrosive" x="5" />
+      <skill id="rally" x="6" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="corrosive" x="6" />
+      <skill id="rally" x="6" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="6" />
+      <skill id="rally" x="7" />
+      <skill id="poison" x="6" />
     </upgrade>
   </unit>
 </root>

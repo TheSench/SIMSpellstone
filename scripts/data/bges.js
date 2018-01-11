@@ -297,7 +297,7 @@ var BATTLEGROUNDS = {
   "119": {
     "name": "Elemental Conflux",
     "id": "119",
-    "desc": "Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 20% base Health.",
+    "desc": "Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.",
     "effect": [
       {
         "effect_type": "skill",

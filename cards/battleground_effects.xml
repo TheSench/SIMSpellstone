@@ -382,7 +382,7 @@
   <battleground>
     <id>119</id>
     <name>Elemental Conflux</name>
-    <desc>Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 20% base Health.</desc>
+    <desc>Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
@@ -400,17 +400,17 @@
       <add_skill id="counter" mult=".5" base="attack" all="1" yy="2,5" />
       <skill id="displayEffect" trigger="onSkill" yy="2,5" s="counter">
         <actor_effect>
-          <prefab>ReinforceActive</prefab>
-          <bundle_id>105</bundle_id>
+          <prefab>elemental_BGE_chaos</prefab>
+          <bundle_id>96</bundle_id>
           <duration>1</duration>
           <delay>0</delay>
         </actor_effect>
       </skill>
-      <scale_health base="health" mult="0.2" yy="3,5" />
+      <scale_health base="health" mult="0.25" yy="3,5" />
       <skill id="displayEffect" trigger="onPlay" yy="3,5">
         <actor_effect>
-          <prefab>ReinforceBreak</prefab>
-          <bundle_id>105</bundle_id>
+          <prefab>elemental_BGE_wyld</prefab>
+          <bundle_id>96</bundle_id>
           <duration>1</duration>
           <delay>0</delay>
         </actor_effect>

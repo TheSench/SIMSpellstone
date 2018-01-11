@@ -5349,80 +5349,79 @@
     <find_item id="3065" drop_per_energy=".4" />
   </campaign>
   <!-- Campaign Event 7 Weeks 5-8 -->
-  <!--
-	<campaign> 
-		<id>1154</id>
-		<name>An Ally in Red</name>
-		<campaign_req id='1151' level='1' />
-		<locked_start_time>1515690000</locked_start_time>	| Thu, 11 Jan 2018 17:00:00 |
-		<battleground_id>2030</battleground_id>
-		<location_id>13</location_id>
-		<x>731</x>
-		<y>310</y>
-		<combatBG>CombatBGEvent003</combatBG>
-		<missions>
-			<mission_id>5806</mission_id>
-			<mission_id>5807</mission_id>
-			<mission_id>5808</mission_id>
-			<mission_id>5809</mission_id>
-			<mission_id>5810</mission_id>
-			<mission_id>5811</mission_id>
-			<mission_id>5812</mission_id>
-			<mission_id>5813</mission_id>
-			<mission_id>5814</mission_id>
-			<mission_id>5815</mission_id>
-			<mission_id>5816</mission_id>
-			<mission_id>5817</mission_id>
-			<mission_id>5818</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2115' />
-			<card level='5' id='512' />
-			<card level='6' id='2024' />
-			<item level='7' id='3066' />
-		</rewards>
-		<find_item id='3065' drop_per_energy='.6' />
-	</campaign>
-	
-	<campaign> 
-		<id>1155</id>
-		<name>Forgotten Hero</name>
-		<campaign_req id='1154' level='1' />
-		<locked_start_time>1516899600</locked_start_time>	| Thu, 25 Jan 2018 17:00:00 |
-		<battleground_id>2030</battleground_id>
-		<location_id>13</location_id>
-		<x>721</x>
-		<y>600</y>
-		<combatBG>CombatBGEvent003</combatBG>
-		<missions>
-			<mission_id>5819</mission_id>
-			<mission_id>5820</mission_id>
-			<mission_id>5821</mission_id>
-			<mission_id>5822</mission_id>
-			<mission_id>5823</mission_id>
-			<mission_id>5824</mission_id>
-			<mission_id>5825</mission_id>
-			<mission_id>5826</mission_id>
-			<mission_id>5827</mission_id>
-			<mission_id>5828</mission_id>
-			<mission_id>5829</mission_id>
-			<mission_id>5830</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2115' />
-			<card level='5' id='512' />
-			<card level='6' id='2024' />
-			<item level='7' id='3066' />
-		</rewards>
-		<find_item id='3065' drop_per_energy='.8' />
-	</campaign>
--->
+  <campaign>
+    <id>1154</id>
+    <name>An Ally in Red</name>
+    <campaign_req id="1151" level="1" />
+    <locked_start_time>1515690000</locked_start_time>
+    <!-- Thu, 11 Jan 2018 17:00:00 -->
+    <battleground_id>2030</battleground_id>
+    <location_id>13</location_id>
+    <x>731</x>
+    <y>310</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5806</mission_id>
+      <mission_id>5807</mission_id>
+      <mission_id>5808</mission_id>
+      <mission_id>5809</mission_id>
+      <mission_id>5810</mission_id>
+      <mission_id>5811</mission_id>
+      <mission_id>5812</mission_id>
+      <mission_id>5813</mission_id>
+      <mission_id>5814</mission_id>
+      <mission_id>5815</mission_id>
+      <mission_id>5816</mission_id>
+      <mission_id>5817</mission_id>
+      <mission_id>5818</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2119" />
+      <card level="5" id="512" />
+      <card level="6" id="2058" />
+      <item level="7" id="3066" />
+    </rewards>
+    <find_item id="3065" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1155</id>
+    <name>Forgotten Hero</name>
+    <campaign_req id="1154" level="1" />
+    <locked_start_time>1516899600</locked_start_time>
+    <!-- Thu, 25 Jan 2018 17:00:00 -->
+    <battleground_id>2030</battleground_id>
+    <location_id>13</location_id>
+    <x>721</x>
+    <y>600</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5819</mission_id>
+      <mission_id>5820</mission_id>
+      <mission_id>5821</mission_id>
+      <mission_id>5822</mission_id>
+      <mission_id>5823</mission_id>
+      <mission_id>5824</mission_id>
+      <mission_id>5825</mission_id>
+      <mission_id>5826</mission_id>
+      <mission_id>5827</mission_id>
+      <mission_id>5828</mission_id>
+      <mission_id>5829</mission_id>
+      <mission_id>5830</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2120" />
+      <card level="5" id="512" />
+      <card level="6" id="2032" />
+      <item level="7" id="3066" />
+    </rewards>
+    <find_item id="3065" drop_per_energy=".8" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
