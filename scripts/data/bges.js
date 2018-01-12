@@ -1643,4 +1643,10 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "6001": {
+    "name": "Global VFX",
+    "id": "6001",
+    "desc": "",
+    "hidden": true,
+  },
 };

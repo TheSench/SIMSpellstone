@@ -21868,4 +21868,131 @@
       <skill id="leech" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6179</id>
+    <card_type>2</card_type>
+    <name>Sol Doumu</name>
+    <picture>Sun_Elemental_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516035600</hidden_until_time>
+    <attack>8</attack>
+    <health>38</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="corrosive" x="8" />
+    <skill id="strike" x="3" all="1" />
+    <type>2</type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <skill id="counterburn" x="3" />
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16179</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Solis Doumu</name>
+    <picture>Sun_Elemental_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516035600</hidden_until_time>
+    <attack>9</attack>
+    <health>43</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="corrosive" x="8" />
+    <skill id="strike" x="4" all="1" />
+    <type>2</type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="4" />
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="4" />
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>46</health>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26179</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Solstice Doumu</name>
+    <picture>Sun_Elemental_B</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516035600</hidden_until_time>
+    <attack>11</attack>
+    <health>47</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="corrosive" x="8" />
+    <skill id="strike" x="5" all="1" />
+    <type>2</type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counterburn" x="4" />
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="5" />
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="7" all="1" />
+    </upgrade>
+  </unit>
 </root>

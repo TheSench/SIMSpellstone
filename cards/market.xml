@@ -1043,10 +1043,10 @@
     <desc>Contains between 10 and 25 Embersouls! Used to create the Mythic card ^cF90FNarix, Dragonlord^cFFFF!</desc>
     <priority>45</priority>
     <hc_cost>90</hc_cost>
+    <!-- Remove from store if player has this card -->
+    <hidden_card_req>2039</hidden_card_req>
     <asset_prefab>embersoulBag</asset_prefab>
     <bundle>35</bundle>
-    <card_restriction>2039</card_restriction>
-    <!-- Remove from store if player has this card -->
     <item_pack>
       <pulls>1</pulls>
       <item id="2515" quantity="10" weight=".25" />
@@ -1074,10 +1074,10 @@
     <desc>Contains between 10 and 25 Brinesouls! Used to create the Mythic card ^cF90FScylla, Sea's Torment^cFFFF!</desc>
     <priority>46</priority>
     <hc_cost>90</hc_cost>
+    <!-- Remove from store if player has this card -->
+    <hidden_card_req>2074</hidden_card_req>
     <asset_prefab>brinesoul_bag</asset_prefab>
     <bundle>35</bundle>
-    <card_restriction>2039</card_restriction>
-    <!-- Remove from store if player has this card -->
     <item_pack>
       <pulls>1</pulls>
       <item id="2522" quantity="10" weight=".25" />
@@ -1105,10 +1105,10 @@
     <desc>Contains between 60 and 150 Windsouls! Used to create the Mythic card ^cF90FVerus, the Galeheart^cFFFF!</desc>
     <priority>47</priority>
     <hc_cost>90</hc_cost>
+    <!-- Remove from store if player has this card -->
+    <hidden_card_req>2094</hidden_card_req>
     <asset_prefab>windsoul_bag</asset_prefab>
     <bundle>35</bundle>
-    <card_restriction>2094</card_restriction>
-    <!-- Remove from store if player has this card -->
     <item_pack>
       <pulls>1</pulls>
       <item id="2524" quantity="60" weight=".25" />
@@ -4634,5 +4634,24 @@
     <hc_cost>90</hc_cost>
     <!-- Stuff to give -->
     <item id="2522" quantity="40" />
+  </store_item>
+  <store_item>
+    <id>5101</id>
+    <name>River Elemental Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFRiver Elemental^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7044" display_card_id="7044" />
+    </cards>
   </store_item>
 </root>

@@ -42,10 +42,10 @@ var SKILL_DATA = {
 		desc: 'When damaged by an attack, deal damage to attacker'
 	},
 	counterburn : {
-		name: 'Counterburn',
+		name: 'Emberhide',
 		type: 'passive',
 		icon: 'counterburn',
-		desc: 'Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn'
+		desc: 'When damaged by an attack, Scorch the attacker'
 	},
 	enfeeble : {
 		name: 'Hex',

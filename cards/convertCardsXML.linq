@@ -133,7 +133,7 @@ void Main()
 
 	var skillRenames = new Dictionary<string, string>()
 	{
-		{"counterburn", "Counterburn"}
+		{"counterburn", "Emberhide"}
 	};
 
 	var skillIconChanges = new Dictionary<string, string>()

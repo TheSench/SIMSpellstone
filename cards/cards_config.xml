@@ -126,8 +126,19 @@
     <balance_points>3</balance_points>
   </skillType>
   <skillType>
-    <id>corrosive</id>
+    <id>counterburn</id>
     <order>50</order>
+    <icon>fury_vengeance</icon>
+    <name>Emberhide</name>
+    <desc>When damaged by an attack, Scorch the attacker</desc>
+    <status_flag>burn</status_flag>
+    <status_flag>burn_cooldown</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>4</balance_points>
+  </skillType>
+  <skillType>
+    <id>corrosive</id>
+    <order>60</order>
     <icon>corrosive</icon>
     <name>Corrosive</name>
     <desc>Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.</desc>
@@ -139,7 +150,7 @@
   <!-- Triggered -->
   <skillType>
     <id>valor</id>
-    <order>60</order>
+    <order>70</order>
     <icon>valor</icon>
     <name>Valor</name>
     <desc>First time this activates, gains Attack permanently if opposing creature has more Attack.</desc>
@@ -149,7 +160,7 @@
   <!-- Activation -->
   <skillType>
     <id>rally</id>
-    <order>70</order>
+    <order>80</order>
     <icon>empower</icon>
     <name>Empower</name>
     <upkeep>1</upkeep>
@@ -164,7 +175,7 @@
   </skillType>
   <skillType>
     <id>heal</id>
-    <order>80</order>
+    <order>90</order>
     <icon>heal</icon>
     <name>Heal</name>
     <desc>Heals a random allied creature</desc>
@@ -176,7 +187,7 @@
   </skillType>
   <skillType>
     <id>protect</id>
-    <order>90</order>
+    <order>100</order>
     <icon>mystic_barrier</icon>
     <name>Barrier</name>
     <desc>Reduces the next Damage dealt to a random allied creature</desc>
@@ -189,7 +200,7 @@
   </skillType>
   <skillType>
     <id>legion</id>
-    <order>100</order>
+    <order>110</order>
     <icon>legion</icon>
     <name>Legion</name>
     <upkeep>1</upkeep>
@@ -202,7 +213,7 @@
   </skillType>
   <skillType>
     <id>fervor</id>
-    <order>110</order>
+    <order>120</order>
     <icon>fervor</icon>
     <name>Fervor</name>
     <upkeep>1</upkeep>
@@ -215,7 +226,7 @@
   </skillType>
   <skillType>
     <id>enfeeble</id>
-    <order>120</order>
+    <order>130</order>
     <icon>hex</icon>
     <name>Hex</name>
     <desc>Increase Damage dealt to a random enemy creature</desc>
@@ -227,7 +238,7 @@
   </skillType>
   <skillType>
     <id>strike</id>
-    <order>130</order>
+    <order>140</order>
     <icon>arcane_shot</icon>
     <name>Bolt</name>
     <desc>Deals damage to a random enemy creature</desc>
@@ -239,7 +250,7 @@
   </skillType>
   <skillType>
     <id>frost</id>
-    <order>140</order>
+    <order>150</order>
     <icon>frostbreath</icon>
     <name>Frostbreath</name>
     <desc>Deals damage in a cone to up to three creatures in front of it.</desc>
@@ -250,7 +261,7 @@
   </skillType>
   <skillType>
     <id>burn</id>
-    <order>150</order>
+    <order>160</order>
     <icon>burn</icon>
     <name>Scorch</name>
     <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
@@ -262,7 +273,7 @@
   </skillType>
   <skillType>
     <id>burn2</id>
-    <order>150</order>
+    <order>160</order>
     <icon>burn</icon>
     <name>Scorch 2</name>
     <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
@@ -275,7 +286,7 @@
   </skillType>
   <skillType>
     <id>jam</id>
-    <order>160</order>
+    <order>170</order>
     <icon>freeze</icon>
     <name>Freeze</name>
     <desc>Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.</desc>
@@ -286,7 +297,7 @@
   </skillType>
   <skillType>
     <id>weaken</id>
-    <order>170</order>
+    <order>180</order>
     <icon>hinder</icon>
     <name>Weaken</name>
     <desc>Reduces Attack of a random enemy creature</desc>
@@ -298,7 +309,7 @@
   </skillType>
   <skillType>
     <id>enrage</id>
-    <order>180</order>
+    <order>190</order>
     <icon>enrage</icon>
     <name>Enrage</name>
     <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.</desc>
@@ -312,7 +323,7 @@
   <!-- Modifiers -->
   <skillType>
     <id>pierce</id>
-    <order>190</order>
+    <order>200</order>
     <icon>puncture</icon>
     <name>Pierce</name>
     <desc>Reduces the effect of enemy Armor and Barriers</desc>
@@ -322,7 +333,7 @@
   <!-- Damage -->
   <skillType>
     <id>silence</id>
-    <order>200</order>
+    <order>210</order>
     <icon>silence</icon>
     <name>Silence</name>
     <desc>Removes all skills from damaged enemy creature for one turn.</desc>
@@ -332,10 +343,10 @@
   </skillType>
   <skillType>
     <id>nullify</id>130
-		<order>210</order><icon>nullify</icon><name>Nullify</name><desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc><attributes x="1" y="0" all="0" c="0" s="0" /><status_flag>nullified</status_flag><balance_points>6</balance_points></skillType>
+		<order>220</order><icon>nullify</icon><name>Nullify</name><desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc><attributes x="1" y="0" all="0" c="0" s="0" /><status_flag>nullified</status_flag><balance_points>6</balance_points></skillType>
   <skillType>
     <id>poison</id>
-    <order>220</order>
+    <order>230</order>
     <icon>corrupt</icon>
     <name>Poison</name>
     <desc>Poisons creatures damaged by this card, dealing additional damage at the end of turn</desc>
@@ -346,7 +357,7 @@
   </skillType>
   <skillType>
     <id>leech</id>
-    <order>230</order>
+    <order>240</order>
     <icon>siphon</icon>
     <name>Siphon</name>
     <desc>Heals this card as it deals Attack damage</desc>
@@ -355,7 +366,7 @@
   </skillType>
   <skillType>
     <id>berserk</id>
-    <order>240</order>
+    <order>250</order>
     <icon>berserk</icon>
     <name>Berserk</name>
     <desc>When this creature deals attack damage, Attack is permanently increased</desc>
@@ -365,7 +376,7 @@
   <!-- Dualstrike -->
   <skillType>
     <id>flurry</id>
-    <order>250</order>
+    <order>260</order>
     <icon>swiftness</icon>
     <name>Dualstrike</name>
     <desc>Activates twice in one turn. Activates every {c} turns.</desc>
@@ -440,17 +451,6 @@
     <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
     <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>counterburn</id>
-    <order>500</order>
-    <icon>burn</icon>
-    <name>Vengence Scorch</name>
-    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn</desc>
-    <status_flag>burn</status_flag>
-    <status_flag>burn_cooldown</status_flag>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
   <skillType>

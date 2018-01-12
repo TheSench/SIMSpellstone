@@ -39,6 +39,8 @@
         background-image: url("../res/cardAssets/Commander_BG_Wyld.png"); }
       .card-details .art-holder.commander.void {
         background-image: url("../res/cardAssets/Commander_BG_Void.png"); }
+  .card-details .skill-icon {
+    width: 21px; }
   .card-details .card-art {
     max-height: 330px;
     width: 100%;

@@ -6,7 +6,9 @@
 		501-1000	Specialty BGE
 		1001-2000	Personal BGE
 		2001-3000	Enemy Scaling BGE
-		3001+		Map Expansion BGE
+		3001-4000	Map Expansion BGE
+		5001-6000	Arena BGE
+		6001+		Special
 		
 	-->
   <!--
@@ -1399,6 +1401,25 @@
       <on_play first_play="1" defender="1">
         <add_skill id="haste" x="1" />
       </on_play>
+    </effect>
+  </battleground>
+  <!-- ====================== -->
+  <!-- ==== Special BGEs ==== -->
+  <!-- ====================== -->
+  <battleground>
+    <id>6001</id>
+    <name>Global VFX</name>
+    <effect>
+      <skill id="displayEffect" trigger="onSkill" s="counterburn">
+        <target_effect>
+          <prefab>FireVengence_Reverse</prefab>
+          <prefab_enemy>FireVengence</prefab_enemy>
+          <bundle_id>69</bundle_id>
+          <delay>0</delay>
+          <duration>2</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
     </effect>
   </battleground>
 </root>
