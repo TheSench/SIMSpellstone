@@ -21883,6 +21883,7 @@
     <skill id="corrosive" x="8" />
     <skill id="strike" x="3" all="1" />
     <type>2</type>
+    <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
@@ -21924,6 +21925,7 @@
     <skill id="corrosive" x="8" />
     <skill id="strike" x="4" all="1" />
     <type>2</type>
+    <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
@@ -21968,6 +21970,7 @@
     <skill id="corrosive" x="8" />
     <skill id="strike" x="5" all="1" />
     <type>2</type>
+    <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>

@@ -102409,7 +102409,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "2",
-    "sub_type": [],
+    "sub_type": ["5"],
     "health": 38,
     "attack": 8,
     "cost": 4,
@@ -102475,7 +102475,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "2",
-    "sub_type": [],
+    "sub_type": ["5"],
     "health": 43,
     "attack": 9,
     "cost": 4,
@@ -102555,7 +102555,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "2",
-    "sub_type": [],
+    "sub_type": ["5"],
     "health": 47,
     "attack": 11,
     "cost": 4,
@@ -201247,4 +201247,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1515790546859.18;
+var CardsUpdated = 1516041855195.41;
