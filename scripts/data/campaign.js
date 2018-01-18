@@ -67,6 +67,10 @@ var LOCATIONS = {
     "id": "13",
     "name": "The Celestial Vault",
   },
+  "14": {
+    "id": "14",
+    "name": "Skyhaven",
+  },
   "2": {
     "id": "2",
     "name": "Luminis",
@@ -1189,7 +1193,7 @@ var CAMPAIGNS = {
     "id": "1155",
     "name": "Forgotten Hero",
     "location_id": "13",
-    "battleground_id": "2030",
+    "battleground_id": "2031",
     "missions": ["5819","5820","5821","5822","5823","5824","5825","5826","5827","5828","5829","5830"],
     "items": {"3065": 0.8}
   },

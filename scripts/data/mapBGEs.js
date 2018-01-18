@@ -2204,8 +2204,7 @@ var MAP_BATTLEGROUNDS = {
 			  	"effect": [
 				  {
 				  	"effect_type": "skill",
-				  	"id": "imbue",
-				  	"s": "enrage",
+				  	"id": "enrage",
 				  	"x": 1,
 				  	"all": "1",
 				  	"ally_only": "1"
@@ -2218,8 +2217,7 @@ var MAP_BATTLEGROUNDS = {
 			  	"effect": [
 				  {
 				  	"effect_type": "skill",
-				  	"id": "imbue",
-				  	"s": "enrage",
+				  	"id": "enrage",
 				  	"x": 2,
 				  	"all": "1",
 				  	"ally_only": "1"
@@ -2232,8 +2230,7 @@ var MAP_BATTLEGROUNDS = {
 			  	"effect": [
 				  {
 				  	"effect_type": "skill",
-				  	"id": "imbue",
-				  	"s": "enrage",
+				  	"id": "enrage",
 				  	"x": 3,
 				  	"all": "1",
 				  	"ally_only": "1"
@@ -2246,8 +2243,7 @@ var MAP_BATTLEGROUNDS = {
 			  	"effect": [
 				  {
 				  	"effect_type": "skill",
-				  	"id": "imbue",
-				  	"s": "enrage",
+				  	"id": "enrage",
 				  	"x": 4,
 				  	"all": "1",
 				  	"ally_only": "1"
@@ -2260,8 +2256,7 @@ var MAP_BATTLEGROUNDS = {
 			  	"effect": [
 				  {
 				  	"effect_type": "skill",
-				  	"id": "imbue",
-				  	"s": "enrage",
+				  	"id": "enrage",
 				  	"x": 6,
 				  	"all": "1",
 				  	"ally_only": "1"
@@ -2274,8 +2269,7 @@ var MAP_BATTLEGROUNDS = {
 			  	"effect": [
 				  {
 				  	"effect_type": "skill",
-				  	"id": "imbue",
-				  	"s": "enrage",
+				  	"id": "enrage",
 				  	"x": 8,
 				  	"all": "1",
 				  	"ally_only": "1"

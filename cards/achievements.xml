@@ -7586,7 +7586,7 @@
     <order>101</order>
     <name>In Search of Love</name>
     <desc>Complete the 'In Search of Love' campaign on Mastery Level 2.</desc>
-    <mission_req>5745</mission_req>
+    <mission_req>5738</mission_req>
     <locked_start_time>1510851600</locked_start_time>
     <!-- Thu, 16 Nov 2017 17:00:00 -->
     <req>
@@ -7603,7 +7603,7 @@
     <order>101</order>
     <name>In Search of Love</name>
     <desc>Complete the 'In Search of Love' campaign on Mastery Level 4.</desc>
-    <mission_req>5745</mission_req>
+    <mission_req>5738</mission_req>
     <locked_start_time>1510851600</locked_start_time>
     <!-- Thu, 16 Nov 2017 17:00:00 -->
     <achievement_req>3296</achievement_req>
@@ -7621,7 +7621,7 @@
     <order>101</order>
     <name>In Search of Love</name>
     <desc>Complete the 'In Search of Love' campaign on Mastery Level 6.</desc>
-    <mission_req>5745</mission_req>
+    <mission_req>5738</mission_req>
     <locked_start_time>1510851600</locked_start_time>
     <!-- Thu, 16 Nov 2017 17:00:00 -->
     <achievement_req>3297</achievement_req>
@@ -7639,7 +7639,7 @@
     <order>101</order>
     <name>In Search of Love</name>
     <desc>Complete the 'In Search of Love' campaign on Mastery Level 7.</desc>
-    <mission_req>5745</mission_req>
+    <mission_req>5738</mission_req>
     <locked_start_time>1510851600</locked_start_time>
     <!-- Thu, 16 Nov 2017 17:00:00 -->
     <achievement_req>3298</achievement_req>

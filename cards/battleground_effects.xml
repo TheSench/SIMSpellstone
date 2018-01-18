@@ -1355,7 +1355,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".03" />
+      <scale_attributes base_mult=".1" mult=".05" />
     </effect>
   </battleground>
   <!-- ==================== -->

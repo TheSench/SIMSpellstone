@@ -6337,6 +6337,19 @@
     <arena_y>150</arena_y>
   </location>
   <location>
+    <id>14</id>
+    <name>Skyhaven</name>
+    <mapBG>EventMap_008</mapBG>
+    <combatBG>CombatBGEvent008</combatBG>
+    <preview name="Map_Banner_Elementals_03" bundle="102" />
+    <unlock_time>1517504400</unlock_time>
+    <!-- Thu, 1 Feb 2018 17:00:00 -->
+    <asset_bundle>44</asset_bundle>
+    <req>24</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
     <id>100</id>
     <name>Salt Wastes</name>
     <mapBG>EventMap_001</mapBG>
