@@ -333,7 +333,7 @@ void Main()
 		var unit = new unit()
 		{
 			id = fullID,
-			name = (imageName.IndexOf("New") == 0 ? "New Art" : "Unused Art"),
+			name = (imageName.IndexOf("New") == 0 ? "New Art" : String.Format("Unused Art - '{0}'", imageName)),
 			picture = key,
 			rarity = "0",
 			card_type = "2",

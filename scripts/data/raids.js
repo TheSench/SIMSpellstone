@@ -2050,7 +2050,7 @@
 			  {
 			  	"id": "5030",
 			  	"mastery_level": "6",
-			  	"remove_mastery_level": "17"
+			  	"remove_mastery_level": "16"
 			  },
 			  {
 			  	"id": "6031",
@@ -2089,7 +2089,7 @@
 			  {
 			  	"id": "5023",
 			  	"mastery_level": "11",
-			  	"remove_mastery_level": "16"
+			  	"remove_mastery_level": "15"
 			  },
 			  {
 			  	"id": "8002",
@@ -2102,12 +2102,12 @@
 			  {
 			  	"id": "6027",
 			  	"mastery_level": "12",
-			  	"remove_mastery_level": "18"
+			  	"remove_mastery_level": "17"
 			  },
 			  {
 			  	"id": "5026",
 			  	"mastery_level": "13",
-			  	"remove_mastery_level": "19"
+			  	"remove_mastery_level": "18"
 			  },
 			  {
 			  	"id": "5031",
@@ -2121,19 +2121,19 @@
 			  },
 			  {
 			  	"id": "8004",
-			  	"mastery_level": "16"
+			  	"mastery_level": "15"
 			  },
 			  {
 			  	"id": "8000",
-			  	"mastery_level": "17"
+			  	"mastery_level": "16"
 			  },
 			  {
 			  	"id": "8001",
-			  	"mastery_level": "18"
+			  	"mastery_level": "17"
 			  },
 			  {
 			  	"id": "8002",
-			  	"mastery_level": "19"
+			  	"mastery_level": "18"
 			  },
 			  {
 			  	"id": "8000",

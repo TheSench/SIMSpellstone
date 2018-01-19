@@ -22560,4 +22560,135 @@
       <skill id="frost" x="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5181</id>
+    <card_type>2</card_type>
+    <name>Himamanav</name>
+    <picture>Elemental_Angel_Demon_Wind_Monkey_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516640400</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="2" y="5" />
+    <skill id="frost" x="1" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="legion" x="2" y="5" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" x="3" y="5" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+      <health>21</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15181</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Himamanav's Breath</name>
+    <picture>Elemental_Angel_Demon_Wind_Monkey_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516640400</hidden_until_time>
+    <attack>7</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="3" y="5" />
+    <skill id="frost" x="1" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" x="3" y="5" />
+      <skill id="frost" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="legion" x="4" y="5" />
+      <skill id="frost" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25181</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Himamanav's Essence</name>
+    <picture>Elemental_Angel_Demon_Wind_Monkey_B</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516640400</hidden_until_time>
+    <attack>8</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="4" y="5" />
+    <skill id="frost" x="2" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="legion" x="5" y="5" />
+      <skill id="frost" x="2" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="6" y="5" />
+      <skill id="frost" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
 </root>

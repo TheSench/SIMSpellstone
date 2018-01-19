@@ -2622,43 +2622,43 @@
     <name>Frostbite</name>
     <portrait>Portrait_Frostbite</portrait>
     <attack>0</attack>
-    <health>30</health>
+    <health>55</health>
     <rarity>4</rarity>
     <skill id="protect" x="1" all="1" />
-    <skill id="rally" x="1" all="1" />
+    <skill id="rally" x="2" all="1" />
     <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>40</health>
-      <skill id="protect" x="1" all="1" />
-      <skill id="rally" x="1" all="1" />
+      <health>62</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="rally" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>50</health>
-      <skill id="protect" x="1" all="1" />
-      <skill id="rally" x="2" all="1" />
+      <health>70</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="rally" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>60</health>
+      <health>77</health>
       <skill id="protect" x="2" all="1" />
-      <skill id="rally" x="2" all="1" />
+      <skill id="rally" x="3" all="1" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>70</health>
-      <skill id="protect" x="2" all="1" />
+      <health>86</health>
+      <skill id="protect" x="3" all="1" />
       <skill id="rally" x="3" all="1" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>80</health>
-      <skill id="protect" x="3" all="1" />
-      <skill id="rally" x="3" all="1" />
+      <health>93</health>
+      <skill id="protect" x="4" all="1" />
+      <skill id="rally" x="4" all="1" />
       <skill id="jam" c="4" />
     </upgrade>
   </unit>
