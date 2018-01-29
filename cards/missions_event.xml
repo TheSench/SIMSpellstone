@@ -26138,4 +26138,451 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 8 -->
+  <!-- Extra Node -->
+  <mission>
+    <id>5831</id>
+    <name>The Mystic Library's Keepers</name>
+    <energy>9</energy>
+    <desc>Small, wispy spirits float around the library's books. They seem particularly attracted to the glyphs that Yuriel has drawn. When you hold up Yuriel's books, the creatures gather to you....</desc>
+    <commander id="362" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="5168" name="Lamia's Shield" />
+      <card id="2054" name="Pack Runner" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="2052" mastery_level="2" name="Protector of Skyhaven" />
+      <card id="2085" mastery_level="3" name="Faithstay Supplier" />
+      <card id="6119" mastery_level="4" name="Shadowy Muse" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="5019" mastery_level="6" name="Vivid Aurora" />
+      <card id="7175" mastery_level="7" name="Leafsurge Warrior" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5832</id>
+    <name>Word Eater Power</name>
+    <energy>9</energy>
+    <desc>The little spirits imbue the books with magical powers. You sense within the pages even greater power. With more spirits, it seems you would unlock the tomes' abilities...</desc>
+    <commander id="276" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="5130" name="Drakeling Fosterer" />
+      <card id="6069" name="Arachnolite" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1030" name="Paladin" />
+      <card id="7116" mastery_level="2" name="Watchful Hexhound" />
+      <card id="7118" mastery_level="3" name="Fleetfoot Wolper" />
+      <card id="6119" mastery_level="4" name="Shadowy Muse" />
+      <card id="6070" mastery_level="5" name="Petrifier" />
+      <card id="6079" mastery_level="6" name="Heinous Smoggler" />
+      <card id="7080" mastery_level="7" name="Spornacle" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 8 Weeks 1-4 -->
+  <mission>
+    <id>5833</id>
+    <name>Queen of the Angels</name>
+    <energy>9</energy>
+    <desc>The Angel Queen has invited you to Skyhaven, claiming to have uncovered a great secret. You fly your airship to the Angels' home, preparing to meet their leader.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="2010" name="Silver Wind" />
+      <card id="6046" name="Celerity" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="2027" name="Halo Mage" />
+      <card id="1031" name="Noble Champion" />
+      <card id="2054" mastery_level="2" name="Pack Runner" />
+      <card id="7041" mastery_level="3" name="Feral Angel" />
+      <card id="2030" mastery_level="4" name="Ebon Duelist" />
+      <card id="5117" mastery_level="5" name="Spark Chronicler" />
+      <card id="6078" mastery_level="6" name="Radiation Golem" />
+      <card id="5074" mastery_level="7" name="Godfried the Hunter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Hero, it is good to finally meet you. I am Leyla, the Queen of the Skyhaven Angels.</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>And this here is Sparky!</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Rrr..... Rrrar!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5834</id>
+    <name>Royal Dragonling</name>
+    <energy>9</energy>
+    <desc>Malchior bursts into the throne room. Grinning widely, he runs up to the Angel Queen, and takes the paw of her pet dragon. He shakes it vigorously, the dragonling snarling in response.</desc>
+    <commander id="318" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2031" name="Dryad" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="6038" mastery_level="2" name="Hemlock" />
+      <card id="2029" mastery_level="3" name="Sly Critters" />
+      <card id="2085" mastery_level="4" name="Faithstay Supplier" />
+      <card id="2084" mastery_level="5" name="Apocalypse Rider" />
+      <card id="5132" mastery_level="6" name="Whirlwinder" />
+      <card id="5121" mastery_level="7" name="Cauterizing Psalm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Oh I'm so glad to finally meet you, your Majesty! </text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Grraoww.... Rrrarh!</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Who is this man...?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5835</id>
+    <name>Knowledgeable Friends</name>
+    <energy>9</energy>
+    <desc>You explain to the Angel Queen that Malchior is an expert on The Void and all things arcane. She nods, petting the head of her young dragon, which continues to glower ferociously at Malchior.</desc>
+    <commander id="318" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="7004" name="Ice Golem" />
+      <card id="7038" name="Sol King" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="1031" mastery_level="2" name="Noble Champion" />
+      <card id="7116" mastery_level="3" name="Watchful Hexhound" />
+      <card id="7070" mastery_level="4" name="Laughing Menace" />
+      <card id="2052" mastery_level="5" name="Protector of Skyhaven" />
+      <card id="6175" mastery_level="6" name="Toxic Steam" />
+      <card id="5075" mastery_level="7" name="Arith" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5836</id>
+    <name>An Invitation to Share Secrets</name>
+    <energy>9</energy>
+    <desc>Leyla's face brightens when you finish your explanation. She claps her hands together joyfully, properly welcoming Malchior to the Skyhaven Kingdom.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7045" name="Sakura" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="1030" name="Paladin" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7118" mastery_level="2" name="Fleetfoot Wolper" />
+      <card id="5072" mastery_level="3" name="Blind Seer" />
+      <card id="2030" mastery_level="4" name="Ebon Duelist" />
+      <card id="1327" mastery_level="5" name="Fallen Angel" />
+      <card id="7081" mastery_level="6" name="Llinella" />
+      <card id="6073" mastery_level="7" name="Obsidian" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>I see. Your expertise may be needed, Mr. Malchior. We have found the most peculiar hidden room, tucked away in our archive.</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Perhaps it belonged to the original inhabitants of Skyhaven.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>How exciting!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5837</id>
+    <name>The Queen's Assistant</name>
+    <energy>9</energy>
+    <desc>The Angel Queen Leyla calls out to one of her trusted servants. You see a familiar face that you have not seen in a long time...</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1617" name="Water Elemental" />
+      <card id="7075" name="Diamode" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7041" mastery_level="2" name="Feral Angel" />
+      <card id="7116" mastery_level="3" name="Watchful Hexhound" />
+      <card id="7038" mastery_level="4" name="Sol King" />
+      <card id="1031" mastery_level="5" name="Noble Champion" />
+      <card id="7043" mastery_level="6" name="Anima" />
+      <card id="5076" mastery_level="7" name="Sorath, the Valkyrie" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Yuriel! Take them to the Mystic Library.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>1</enemy>
+        <text>Whooo? ....Oh, you. I do hope you'll let bygones be bygones.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5838</id>
+    <name>Yuriel's New Life</name>
+    <energy>9</energy>
+    <desc>Yuriel takes you further inside Skyhaven at the Queen's request. He tells you about what he's been up to since you last fought him in The Void. Now, Yuriel has been helping the Angel Queen in safeguarding powerful artifacts.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="7078" name="Saprolite" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5118" mastery_level="2" name="Chalice Courier" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="2084" mastery_level="4" name="Apocalypse Rider" />
+      <card id="2085" mastery_level="5" name="Faithstay Supplier" />
+      <card id="6136" mastery_level="6" name="Cosmic Elemental" />
+      <card id="7069" mastery_level="7" name="Stoneblade Seraphim" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5839</id>
+    <name>Skyhaven's Library</name>
+    <energy>9</energy>
+    <desc>You reach the library of Skyhaven. Well-kept tomes line the shelves, of various thickness and colors. It is brightly lit and clean, an empty table at its center.</desc>
+    <commander id="343" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="1030" name="Paladin" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="7118" mastery_level="2" name="Fleetfoot Wolper" />
+      <card id="7041" mastery_level="3" name="Feral Angel" />
+      <card id="6070" mastery_level="4" name="Petrifier" />
+      <card id="5040" mastery_level="5" name="Winged Trumpeter" />
+      <card id="5048" mastery_level="6" name="Highborn Rose" />
+      <card id="7040" mastery_level="7" name="Warden of the Leaf" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>I can't believe an entire room remained undiscovered for so many years!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Ho, hoo. 'Room' doesn't quite do it justice. Pull out that sea green book...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5840</id>
+    <name>Skyhaven's Secret Library</name>
+    <energy>9</energy>
+    <desc>You pull out a misplaced book from the shelf. The ground rumbles as one of the shelves slides to the side, revealing a hidden passage. The inside is dark, but you can see the outline of more shelves and books, and the musty smell of ancient paper.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="6077" name="Enigma" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="1030" mastery_level="2" name="Paladin" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="5117" mastery_level="4" name="Spark Chronicler" />
+      <card id="5072" mastery_level="5" name="Blind Seer" />
+      <card id="5134" mastery_level="6" name="Ocotillo" />
+      <card id="6118" mastery_level="7" name="Kindlecrack Demon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>We tried to explore earlier, but we were attacked by strange guardians. Be careful; there's no telling how far this hidden library goes...</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Somebody killed a lot of trees to make this library.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5841</id>
+    <name>Book Labyrinth</name>
+    <energy>9</energy>
+    <desc>Yuriel leads you and Malchior into the secret passageway. The inside of shelves and books stretches farther than you can see, creating narrow paths.</desc>
+    <commander id="346" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="5046" name="Dawn" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="1025" mastery_level="2" name="Lightbound Archer" />
+      <card id="6119" mastery_level="3" name="Shadowy Muse" />
+      <card id="2085" mastery_level="4" name="Faithstay Supplier" />
+      <card id="7041" mastery_level="5" name="Feral Angel" />
+      <card id="5013" mastery_level="6" name="Radiance" />
+      <card id="6117" mastery_level="7" name="Whispering Ophanim" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>This place is a veritable maze. A labyrinth of books!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5842</id>
+    <name>Tome Projection</name>
+    <energy>9</energy>
+    <desc>A book on one of the shelves begins to rattle. Yuriel cautions you, and the group moves towards it slowly. The tome falls to the floor, projecting an angelic image that takes form, charging at you!</desc>
+    <commander id="362" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1617" name="Water Elemental" />
+      <card id="2032" name="Brimstone" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="1030" name="Paladin" />
+      <card id="1025" mastery_level="2" name="Lightbound Archer" />
+      <card id="6070" mastery_level="3" name="Petrifier" />
+      <card id="7038" mastery_level="4" name="Sol King" />
+      <card id="2027" mastery_level="5" name="Halo Mage" />
+      <card id="5049" mastery_level="6" name="Joryl" />
+      <card id="5116" mastery_level="7" name="Justice" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>These books are bound with powerful magic. They must be set to guard against intruders.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5843</id>
+    <name>Guardian Angels</name>
+    <energy>9</energy>
+    <desc>More dusty books rattle and fall to the earth. Each one summons a different angel, the guardians bringing their might against you.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="2056" name="Drainor" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="7038" name="Sol King" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="1327" mastery_level="2" name="Fallen Angel" />
+      <card id="7070" mastery_level="3" name="Laughing Menace" />
+      <card id="7038" mastery_level="4" name="Sol King" />
+      <card id="2027" mastery_level="5" name="Halo Mage" />
+      <card id="7077" mastery_level="6" name="Crystallum" />
+      <card id="6074" mastery_level="7" name="Deific Channeler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5844</id>
+    <name>Archived Traps</name>
+    <energy>9</energy>
+    <desc>The ranks of summoned angels begin to thin. Each one you defeat fades away like a ghost, leaving no trace of its existence, save for books which remain fallen on the ground.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="2009" name="Sapling" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="1031" mastery_level="2" name="Noble Champion" />
+      <card id="6038" mastery_level="3" name="Hemlock" />
+      <card id="2054" mastery_level="4" name="Pack Runner" />
+      <card id="5118" mastery_level="5" name="Chalice Courier" />
+      <card id="6043" mastery_level="6" name="Sandstorm" />
+      <card id="5071" mastery_level="7" name="Stoic Watcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>I doubt those guardians are the only defense for this library. Keep an eye out for traps!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

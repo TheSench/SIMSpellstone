@@ -95,7 +95,7 @@
     <name>Invisibility</name>
     <desc>Avoids enemy skills</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>5</balance_points>
+    <balance_points>10</balance_points>
   </skillType>
   <skillType>
     <id>taunt</id>
@@ -318,7 +318,7 @@
     <desc_all_faction>Enrage all ally {y} creatures. Until your next turn, every time the creatures takes damage from an Attack, it gains Attack permanently.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <vfx_location>edge</vfx_location>
-    <balance_points>6</balance_points>
+    <balance_points>3</balance_points>
   </skillType>
   <!-- Modifiers -->
   <skillType>
@@ -343,7 +343,7 @@
   </skillType>
   <skillType>
     <id>nullify</id>130
-		<order>220</order><icon>nullify</icon><name>Nullify</name><desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc><attributes x="1" y="0" all="0" c="0" s="0" /><status_flag>nullified</status_flag><balance_points>6</balance_points></skillType>
+		<order>220</order><icon>nullify</icon><name>Nullify</name><desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc><attributes x="1" y="0" all="0" c="0" s="0" /><status_flag>nullified</status_flag><balance_points>4</balance_points></skillType>
   <skillType>
     <id>poison</id>
     <order>230</order>

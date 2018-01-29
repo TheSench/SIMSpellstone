@@ -4679,8 +4679,8 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <desc>Gives one random ^cE7FFDual Legendary^cFFFF Elemental card from Premium Set! May be purchased two times!</desc>
-    <asset_prefab>event_025_4thOfJulySale</asset_prefab>
-    <bundle>94</bundle>
+    <asset_prefab>event_033_dual_legendary</asset_prefab>
+    <bundle>117</bundle>
     <background_prefab>legendary_card_banner</background_prefab>
     <background_bundle>35</background_bundle>
     <!-- <icon>rune_component_bag_item</icon> -->
@@ -4697,12 +4697,32 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <show_desc>1</show_desc>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Double Elemental Epic Pack cards from Premium set. May be purchased 5 times!</desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Elemental cards from Premium set. May be purchased 5 times!</desc>
     <asset_prefab>event_025_two_epics</asset_prefab>
     <bundle>94</bundle>
     <icon>icon_purple_crystal</icon>
     <hc_cost>100</hc_cost>
     <!-- Stuff to give -->
     <pack>3082</pack>
+  </store_item>
+  <store_item>
+    <id>5104</id>
+    <name>Grim Pollination Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFGrim Pollination^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7135" display_card_id="7135" />
+    </cards>
   </store_item>
 </root>

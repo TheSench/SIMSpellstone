@@ -348,8 +348,10 @@ var makeUnit = (function () {
             	for (var j = 0; j < skillModifier.effects.length; j++) {
             		var scaling = skillModifier.effects[j];
             		if (new_card.isInFaction(scaling.y)) {
-            			var plusHealth = Math.ceil(new_card[scaling.base] * scaling.mult);
-            			new_card.health += plusHealth;
+            			// Bug 56916
+            			//new_card.health += Math.ceil(new_card[scaling.base] * scaling.mult);
+            			var withoutRunes = get_card_by_id({ id: new_card.id, level: new_card.level })[scaling.base];
+            			new_card.health += Math.ceil(withoutRunes * scaling.mult);
             		}
             	}
             }

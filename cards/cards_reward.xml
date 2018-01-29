@@ -13389,8 +13389,8 @@
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="valor" x="2" />
-    <skill id="burn" x="2" />
     <skill id="frost" x="1" />
+    <skill id="burn" x="2" />
     <type>1</type>
     <sub_type>5</sub_type>
     <sub_type>10</sub_type>
@@ -13406,14 +13406,14 @@
     <upgrade>
       <level>4</level>
       <skill id="valor" x="2" />
-      <skill id="burn" x="3" />
       <skill id="frost" x="1" />
+      <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="valor" x="3" />
-      <skill id="burn" x="3" />
       <skill id="frost" x="1" />
+      <skill id="burn" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -13429,8 +13429,8 @@
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="valor" x="3" />
-    <skill id="burn" x="3" />
     <skill id="frost" x="1" />
+    <skill id="burn" x="3" />
     <type>1</type>
     <sub_type>5</sub_type>
     <sub_type>10</sub_type>
@@ -13446,14 +13446,14 @@
     <upgrade>
       <level>4</level>
       <skill id="valor" x="3" />
-      <skill id="burn" x="4" />
       <skill id="frost" x="1" />
+      <skill id="burn" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="valor" x="4" />
-      <skill id="burn" x="4" />
       <skill id="frost" x="1" />
+      <skill id="burn" x="4" />
     </upgrade>
   </unit>
   <unit>

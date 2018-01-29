@@ -6342,8 +6342,8 @@
     <mapBG>EventMap_008</mapBG>
     <combatBG>CombatBGEvent008</combatBG>
     <preview name="Map_Banner_Elementals_03" bundle="102" />
-    <unlock_time>1517504400</unlock_time>
-    <!-- Thu, 1 Feb 2018 17:00:00 -->
+    <unlock_time>1518109200</unlock_time>
+    <!-- Thu, 8 Feb 2018 17:00:00 -->
     <asset_bundle>44</asset_bundle>
     <req>24</req>
     <arena_x>250</arena_x>

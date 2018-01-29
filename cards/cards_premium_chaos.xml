@@ -21869,6 +21869,274 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6176</id>
+    <card_type>2</card_type>
+    <name>Searsteel Soldier</name>
+    <picture>Fire_Elemental_Goblin_Team_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516899600</hidden_until_time>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="burn" x="1" />
+      <skill id="enrage" x="1" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="burn" x="2" />
+      <skill id="enrage" x="1" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+    <desc>At Goblin Rise Stronghold they have created devices to keep elementals and channel their strength. The elementals don't seem to mind the company.</desc>
+  </unit>
+  <unit>
+    <id>16176</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Searsteel Charger</name>
+    <picture>Fire_Elemental_Goblin_Team_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516899600</hidden_until_time>
+    <attack>3</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="burn" x="2" />
+    <skill id="enrage" x="1" all="1" y="2" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="burn" x="2" />
+      <skill id="enrage" x="2" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="burn" x="3" />
+      <skill id="enrage" x="2" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26176</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Searsteel Commander</name>
+    <picture>Fire_Elemental_Goblin_Team_B</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516899600</hidden_until_time>
+    <attack>3</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="burn" x="3" />
+    <skill id="enrage" x="2" all="1" y="2" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="3" />
+      <skill id="enrage" x="2" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="3" />
+      <skill id="enrage" x="3" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="4" />
+      <skill id="enrage" x="3" all="1" y="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6178</id>
+    <card_type>2</card_type>
+    <name>Bitumen Elemental</name>
+    <picture>Fire_Elemental_Mecha_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516899600</hidden_until_time>
+    <attack>8</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="2" />
+    <skill id="burn" x="2" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="3" />
+      <skill id="burn" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16178</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bitumen Firespreader</name>
+    <picture>Fire_Elemental_Mecha_A</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516899600</hidden_until_time>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="burn" x="3" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="counterburn" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="4" />
+      <skill id="burn" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26178</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bitumen Scorcher</name>
+    <picture>Fire_Elemental_Mecha_B</picture>
+    <asset_bundle>118</asset_bundle>
+    <hidden_until_time>1516899600</hidden_until_time>
+    <attack>11</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="burn" x="4" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="5" />
+      <skill id="burn" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="5" />
+      <skill id="burn" x="5" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6179</id>
     <card_type>2</card_type>
     <name>Sol Doumu</name>
