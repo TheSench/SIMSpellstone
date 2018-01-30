@@ -26585,4 +26585,385 @@
       </line>
     </speech>
   </mission>
+  <mission>
+    <id>5845</id>
+    <name>Stone Visage</name>
+    <energy>9</energy>
+    <desc>You continue farther in the ancient library. You eventually reach a branch in the path, with an angelic statue at the center of the crossroad. As you near it, the stone visage crumbles, the statue becoming like a real angel.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6038" name="Hemlock" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7041" mastery_level="2" name="Feral Angel" />
+      <card id="7070" mastery_level="3" name="Laughing Menace" />
+      <card id="7116" mastery_level="4" name="Watchful Hexhound" />
+      <card id="5118" mastery_level="5" name="Chalice Courier" />
+      <card id="5165" mastery_level="6" name="Electrumus" />
+      <card id="2028" mastery_level="7" name="Infinity" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Greetings, knowledge seekers. I am Razi, the caretaker of the Arcane Library.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5846</id>
+    <name>Living Statue</name>
+    <energy>9</energy>
+    <desc>Malchior gets dangerously close to the former statue Razi, poking the angel's arm. Razi recoils, staring with mixed confusion and anger at the sage.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2032" name="Brimstone" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="5072" name="Blind Seer" />
+      <card id="2085" mastery_level="2" name="Faithstay Supplier" />
+      <card id="2029" mastery_level="3" name="Sly Critters" />
+      <card id="7118" mastery_level="4" name="Fleetfoot Wolper" />
+      <card id="5117" mastery_level="5" name="Spark Chronicler" />
+      <card id="5154" mastery_level="6" name="Glaucus" />
+      <card id="7072" mastery_level="7" name="Murabi" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>How did you do that becoming a person out of a statue thing? Is your flesh still hardened like stone?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>It is through stone that I have been immortalized through the ages. Now I wait to guide those who seek the truth.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5847</id>
+    <name>An Ally...?</name>
+    <energy>9</energy>
+    <desc>Yuriel eyes the angel skeptically. He takes a look around the archive of books, as if expecting a trap or more fights. Razi waits patiently.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="6046" name="Celerity" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="2029" name="Sly Critters" />
+      <card id="7118" mastery_level="2" name="Fleetfoot Wolper" />
+      <card id="2029" mastery_level="3" name="Sly Critters" />
+      <card id="2085" mastery_level="4" name="Faithstay Supplier" />
+      <card id="2030" mastery_level="5" name="Ebon Duelist" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="6120" mastery_level="7" name="Oni Blade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Are you saying that you'll help us get farther? What awaits us at the end?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>It is the truth that awaits those who are worthy. Now come, follow me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5848</id>
+    <name>Fighting for the Truth</name>
+    <energy>9</energy>
+    <desc>For now, Malchior and Yuriel seem to accept Razi's offer of aid. You follow the angel, taking one of the two paths. She points to a clearing, warning that a fight is imminent with the library's guardians.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="5118" mastery_level="2" name="Chalice Courier" />
+      <card id="5072" mastery_level="3" name="Blind Seer" />
+      <card id="7073" mastery_level="4" name="Heralded Slugger" />
+      <card id="1025" mastery_level="5" name="Lightbound Archer" />
+      <card id="7120" mastery_level="6" name="Liliane's Blessing" />
+      <card id="6071" mastery_level="7" name="Masked Heraid" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5849</id>
+    <name>Spike Traps</name>
+    <energy>9</energy>
+    <desc>Razi points to a small depression in one of the tiles, claiming that it is one of the library's traps. Malchior tosses a book on the pressure plate. The tile crumbles, revealing dangerous-looking spikes, impaling the helpless book.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="6077" name="Enigma" />
+      <card id="5046" name="Dawn" />
+      <card id="6070" name="Petrifier" />
+      <card id="2054" name="Pack Runner" />
+      <card id="5072" name="Blind Seer" />
+      <card id="6119" mastery_level="2" name="Shadowy Muse" />
+      <card id="1025" mastery_level="3" name="Lightbound Archer" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="1327" mastery_level="5" name="Fallen Angel" />
+      <card id="7119" mastery_level="6" name="Bunnpaa" />
+      <card id="7071" mastery_level="7" name="Gorilleus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>I must wonder, everything in this library has so far tried to kill us.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>You claim to be the caretaker, and yet are guiding us through the traps, unlike your violent statue friends.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5850</id>
+    <name>Dungeon Progress</name>
+    <energy>9</energy>
+    <desc>More guardians rise from the books, fighting against you, Malchior, and Yuriel. Razi stands off to the side, helping neither side, as the guardians ignore her and focus on your group.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="2010" name="Silver Wind" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7116" mastery_level="2" name="Watchful Hexhound" />
+      <card id="2085" mastery_level="3" name="Faithstay Supplier" />
+      <card id="5118" mastery_level="4" name="Chalice Courier" />
+      <card id="2029" mastery_level="5" name="Sly Critters" />
+      <card id="7117" mastery_level="6" name="Rael, Skyhaven Giant" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Knowledge is meant to be shared, not hoarded. But it can also be a dangerous thing, if it falls in the wrong hands.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5851</id>
+    <name>Contingency Plan</name>
+    <energy>9</energy>
+    <desc>The path through the archive seems to stretch on forever. Razi continues to guide you, expertly navigating through each turn and warning of the more dangerous traps, while letting you fight the guardians.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="7045" name="Sakura" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="5135" name="Shatterwind" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="5072" name="Blind Seer" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="5117" mastery_level="2" name="Spark Chronicler" />
+      <card id="7118" mastery_level="3" name="Fleetfoot Wolper" />
+      <card id="7118" mastery_level="4" name="Fleetfoot Wolper" />
+      <card id="2029" mastery_level="5" name="Sly Critters" />
+      <card id="5074" mastery_level="6" name="Godfried the Hunter" />
+      <card id="6040" mastery_level="7" name="Scorching Cutlass" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>We've taken so many twists and turns, I'm starting to get all turned around.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>I've marked each intersection with a small rune. Even if something happens to Razi, we'll be able to find our way back.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5852</id>
+    <name>Angel Agents</name>
+    <energy>9</energy>
+    <desc>The archive's shelves eventually end. The path opens up to a wide area, with nothing visible except blank tile. Razi motions for your group to stop.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="5081" name="Brahzee" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="5135" name="Shatterwind" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="7038" name="Sol King" />
+      <card id="5117" mastery_level="2" name="Spark Chronicler" />
+      <card id="2084" mastery_level="3" name="Apocalypse Rider" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="6070" mastery_level="5" name="Petrifier" />
+      <card id="5120" mastery_level="6" name="Seraph of Stone Rise" />
+      <card id="5031" mastery_level="7" name="Frostlance Valkyrie" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Be very careful. One stray step could close the true path.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>You will face a number of Mystic Library protectors.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5853</id>
+    <name>Invisible Maze</name>
+    <energy>9</energy>
+    <desc>Razi leads you through a complicated invisible maze, taking calculated turns without any marker. Yuriel carefully places a rune at each turn, creating an escape path should things go wrong.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1030" name="Paladin" />
+      <card id="7038" name="Sol King" />
+      <card id="6038" mastery_level="2" name="Hemlock" />
+      <card id="7041" mastery_level="3" name="Feral Angel" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="7118" mastery_level="5" name="Fleetfoot Wolper" />
+      <card id="5116" mastery_level="6" name="Justice" />
+      <card id="7040" mastery_level="7" name="Warden of the Leaf" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5854</id>
+    <name>Test of Might</name>
+    <energy>9</energy>
+    <desc>When Razi stops, more creatures materialize. The angelic guardians bring their might against you, while Malchior and Yuriel aid your efforts.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="2031" name="Dryad" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6038" name="Hemlock" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="2085" mastery_level="4" name="Faithstay Supplier" />
+      <card id="2052" mastery_level="5" name="Protector of Skyhaven" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="2086" mastery_level="7" name="Rimelight Crusader" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5855</id>
+    <name>Final Trial</name>
+    <energy>9</energy>
+    <desc>Once the fighting ends, Razi continues the strange path. She stops a few more times, waiting for guardians to appear, and for you to ultimately defeat them.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1617" name="Water Elemental" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="7078" name="Saprolite" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="5072" name="Blind Seer" />
+      <card id="6070" name="Petrifier" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="2030" mastery_level="2" name="Ebon Duelist" />
+      <card id="7116" mastery_level="3" name="Watchful Hexhound" />
+      <card id="7118" mastery_level="4" name="Fleetfoot Wolper" />
+      <card id="5118" mastery_level="5" name="Chalice Courier" />
+      <card id="2055" mastery_level="6" name="Wrath" />
+      <card id="1041" mastery_level="7" name="Avenging Angel" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>How much farther must we go?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>The truth is past this last trial.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5856</id>
+    <name>Innermost Chamber</name>
+    <energy>9</energy>
+    <desc>Finally you reach a great door. Razi pushes it open, the hinges squeeking loudly. Past it lies a room filled with more books, this one with a great cathedral-like ceiling. Painted on it is a mural...</desc>
+    <commander id="362" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1014" name="Cherub" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="7075" name="Diamode" />
+      <card id="7075" name="Diamode" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1025" mastery_level="2" name="Lightbound Archer" />
+      <card id="5040" mastery_level="3" name="Winged Trumpeter" />
+      <card id="6119" mastery_level="4" name="Shadowy Muse" />
+      <card id="5117" mastery_level="5" name="Spark Chronicler" />
+      <card id="6074" mastery_level="6" name="Deific Channeler" />
+      <card id="6118" mastery_level="7" name="Kindlecrack Demon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Now, you shall know this land's history.</text>
+      </line>
+    </speech>
+  </mission>
 </root>

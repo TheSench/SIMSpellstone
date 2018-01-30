@@ -428,6 +428,31 @@
       <add_skill id="burn" mult="0.15" base="health" y="9" />
     </effect>
   </battleground>
+  <battleground>
+    <id>121</id>
+    <name>Angelic Assault</name>
+    <desc>Angels have transcended, gaining Legion equal to 15% of their base Health.</desc>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <effect>
+      <add_skill id="legion" mult="0.15" base="health" y="6" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
+        <projectile_effect>
+          <prefab>Legion_Projectile</prefab>
+          <delay>0</delay>
+          <duration>.5</duration>
+          <translation>.5</translation>
+          <offset>2</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>Legion_Angel_Target</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -1356,6 +1381,23 @@
     <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult=".1" mult=".05" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 8 -->
+  <battleground>
+    <id>2032</id>
+    <name>Crystalsky Hymn</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_avian_64.png</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>5</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
   <!-- ==================== -->

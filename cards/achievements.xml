@@ -8093,5 +8093,184 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 8 -->
+  <achievement>
+    <id>3325</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Word Eaters</name>
+    <desc>Complete the 'The Word Eaters' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1518109200</locked_start_time>
+    <!-- Thu, 08 Feb 2018 17:00:00 -->
+    <req>
+      <campaign>1156</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3068" number="50" />
+      <event_points id="7030" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3326</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Word Eaters</name>
+    <desc>Complete the 'The Word Eaters' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1518109200</locked_start_time>
+    <!-- Thu, 08 Feb 2018 17:00:00 -->
+    <achievement_req>3325</achievement_req>
+    <req>
+      <campaign>1156</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3327</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Skyhaven Secret</name>
+    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1518109200</locked_start_time>
+    <!-- Thu, 08 Feb 2018 17:00:00 -->
+    <req>
+      <campaign>1157</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3328</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Skyhaven Secret</name>
+    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1518109200</locked_start_time>
+    <!-- Thu, 08 Feb 2018 17:00:00 -->
+    <achievement_req>3327</achievement_req>
+    <req>
+      <campaign>1157</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3329</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Skyhaven Secret</name>
+    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1518109200</locked_start_time>
+    <!-- Thu, 08 Feb 2018 17:00:00 -->
+    <achievement_req>3328</achievement_req>
+    <req>
+      <campaign>1157</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3330</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Skyhaven Secret</name>
+    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1518109200</locked_start_time>
+    <!-- Thu, 08 Feb 2018 17:00:00 -->
+    <achievement_req>3329</achievement_req>
+    <req>
+      <campaign>1157</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3331</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Stone Guide</name>
+    <desc>Complete the 'Stone Guide' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1519318800</locked_start_time>
+    <!-- Thu, 22 Feb 2018 17:00:00 -->
+    <req>
+      <campaign>1158</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3332</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Stone Guide</name>
+    <desc>Complete the 'Stone Guide' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1519318800</locked_start_time>
+    <!-- Thu, 22 Feb 2018 17:00:00 -->
+    <achievement_req>3331</achievement_req>
+    <req>
+      <campaign>1158</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3333</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Stone Guide</name>
+    <desc>Complete the 'Stone Guide' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1519318800</locked_start_time>
+    <!-- Thu, 22 Feb 2018 17:00:00 -->
+    <achievement_req>3332</achievement_req>
+    <req>
+      <campaign>1158</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3334</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Stone Guide</name>
+    <desc>Complete the 'Stone Guide' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1519318800</locked_start_time>
+    <!-- Thu, 22 Feb 2018 17:00:00 -->
+    <achievement_req>3333</achievement_req>
+    <req>
+      <campaign>1158</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

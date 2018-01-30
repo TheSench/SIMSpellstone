@@ -336,6 +336,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "121": {
+    "name": "Angelic Assault",
+    "id": "121",
+    "desc": "Angels have transcended, gaining Legion equal to 15% of their base Health.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "legion",
+        "mult": 0.15,
+        "base": "health",
+        "y": "6",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -1568,6 +1582,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .1,
         "mult": .05,
+      },
+    ]
+  },
+  "2032": {
+    "name": "Crystalsky Hymn",
+    "id": "2032",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
       },
     ]
   },
