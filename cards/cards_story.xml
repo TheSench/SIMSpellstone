@@ -6486,4 +6486,106 @@
       <skill id="weaken" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8104</id>
+    <card_type>2</card_type>
+    <name>Celestial Statue</name>
+    <picture>Warrior_Angel_C</picture>
+    <asset_bundle>8</asset_bundle>
+    <attack>2</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="legion" x="1" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="legion" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <attack>3</attack>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="legion" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="armored" x="3" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="legion" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <attack>4</attack>
+      <skill id="armored" x="4" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="legion" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="armored" x="4" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="legion" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8105</id>
+    <card_type>2</card_type>
+    <name>Divine Statue</name>
+    <picture>Angel_Knight_C</picture>
+    <asset_bundle>8</asset_bundle>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="protect" x="1" all="1" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+      <skill id="evade" x="1" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="evade" x="2" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="4" all="1" />
+    </upgrade>
+  </unit>
 </root>

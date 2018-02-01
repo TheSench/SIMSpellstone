@@ -5516,7 +5516,7 @@
       <card level="4" id="2118" />
       <card level="5" id="512" />
       <card level="6" id="2042" />
-      <item level="7" id="3070" />
+      <item level="7" id="3069" />
     </rewards>
     <find_item id="3068" drop_per_energy=".4" />
   </campaign>

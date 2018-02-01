@@ -2369,5 +2369,301 @@ var MAP_BATTLEGROUNDS = {
 		  	]
 		  }
 		]
+	},
+	"3009": {
+		"id": "3009",
+		"name": "Yuriel's Mystic Tomes",
+		"desc": "Yuriel's lent out his magical tomes, which can imbue great powers. Collect Word Eaters to strengthen his Mystic Tomes!",
+		"location_id": "14",
+		"effects": [
+		  {
+		  	"id": "26",
+		  	"name": "Tome of Firebolt",
+		  	"upgrades": [
+			  {
+			  	"desc": "",
+			  	"effect": [
+
+			  	]
+			  },
+			  {
+			  	"desc": "All enemy creatures are hit with Bolt 1 each turn.",
+			  	"name": "Tome of Firebolt",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "strike",
+				  	"x": 1,
+				  	"all": "1",
+				  	"enemy_only": "1",
+				  	"ally_turn": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All enemy creatures are hit with Bolt 2 each turn.",
+			  	"name": "Tome of Firebolt",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "strike",
+				  	"x": 2,
+				  	"all": "1",
+				  	"enemy_only": "1",
+				  	"ally_turn": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All enemy creatures are hit with Bolt 3 each turn.",
+			  	"name": "Tome of Firebolt",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "strike",
+				  	"x": 3,
+				  	"all": "1",
+				  	"enemy_only": "1",
+				  	"ally_turn": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All enemy creatures are hit with Bolt 4 each turn.",
+			  	"name": "Tome of Firebolt",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "strike",
+				  	"x": 4,
+				  	"all": "1",
+				  	"enemy_only": "1",
+				  	"ally_turn": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All enemy creatures are hit with Bolt 5 each turn.",
+			  	"name": "Tome of Firebolt",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "strike",
+				  	"x": 5,
+				  	"all": "1",
+				  	"enemy_only": "1",
+				  	"ally_turn": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All enemy creatures are hit with Bolt 6 each turn.",
+			  	"name": "Tome of Firebolt",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "strike",
+				  	"x": 6,
+				  	"all": "1",
+				  	"enemy_only": "1",
+				  	"ally_turn": "1"
+				  }
+			  	]
+			  }
+		  	]
+		  },
+		  {
+		  	"id": "27",
+		  	"name": "Tome of Shielding",
+		  	"upgrades": [
+			  {
+			  	"desc": "",
+			  	"effect": [
+
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Armor 1 each turn.",
+			  	"name": "Tome of Shielding",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "armored",
+				  	"x": 1,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Armor 2 each turn.",
+			  	"name": "Tome of Shielding",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "armored",
+				  	"x": 2,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Armor 3 each turn.",
+			  	"name": "Tome of Shielding",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "armored",
+				  	"x": 3,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Armor 4 each turn.",
+			  	"name": "Tome of Shielding",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "armored",
+				  	"x": 4,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Armor 6 each turn.",
+			  	"name": "Tome of Shielding",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "armored",
+				  	"x": 6,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Armor 8 each turn.",
+			  	"name": "Tome of Shielding",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "armored",
+				  	"x": 8,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  }
+		  	]
+		  },
+		  {
+		  	"id": "28",
+		  	"name": "Tome of Darkness",
+		  	"upgrades": [
+			  {
+			  	"desc": "",
+			  	"effect": [
+
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Nullify 1 each turn.",
+			  	"name": "Tome of Darkness",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "nullify",
+				  	"x": 1,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Nullify 2 each turn.",
+			  	"name": "Tome of Darkness",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "nullify",
+				  	"x": 2,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Nullify 3 each turn.",
+			  	"name": "Tome of Darkness",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "nullify",
+				  	"x": 3,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Nullify 4 each turn.",
+			  	"name": "Tome of Darkness",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "nullify",
+				  	"x": 4,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Nullify 6 each turn.",
+			  	"name": "Tome of Darkness",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "nullify",
+				  	"x": 6,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Nullify 8 each turn.",
+			  	"name": "Tome of Darkness",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "nullify",
+				  	"x": 8,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  }
+		  	]
+		  }
+		]
 	}
 };

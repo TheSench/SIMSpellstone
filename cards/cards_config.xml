@@ -580,6 +580,33 @@
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
+  <skillType>
+    <id>regenerate</id>
+    <order>500</order>
+    <icon>regenerate</icon>
+    <name>Regenerate</name>
+    <desc>Heal X at end of turn.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>absorb</id>
+    <order>500</order>
+    <icon>absorb</icon>
+    <name>Absorb</name>
+    <desc>Each turn reduces X damage from skill based damage.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>daze</id>
+    <order>500</order>
+    <icon>daze</icon>
+    <name>Daze</name>
+    <desc>When this deals damage to an enemy, Weaken it by X for one turn.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
   <!-- =================== -->
   <!-- == CARD FACTIONS == -->
   <!-- =================== -->

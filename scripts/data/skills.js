@@ -1,4 +1,10 @@
 var SKILL_DATA = {
+	absorb : {
+		name: 'Absorb',
+		type: 'activation',
+		icon: 'absorb',
+		desc: 'Each turn reduces X damage from skill based damage.'
+	},
 	armored : {
 		name: 'Armor',
 		type: 'passive',
@@ -46,6 +52,12 @@ var SKILL_DATA = {
 		type: 'passive',
 		icon: 'counterburn',
 		desc: 'When damaged by an attack, Scorch the attacker'
+	},
+	daze : {
+		name: 'Daze',
+		type: 'activation',
+		icon: 'daze',
+		desc: 'When this deals damage to an enemy, Weaken it by X for one turn.'
 	},
 	enfeeble : {
 		name: 'Hex',
@@ -214,6 +226,12 @@ var SKILL_DATA = {
 		type: 'onDeath',
 		icon: 'reanimate',
 		desc: 'Revives on first death'
+	},
+	regenerate : {
+		name: 'Regenerate',
+		type: 'activation',
+		icon: 'regenerate',
+		desc: 'Heal X at end of turn.'
 	},
 	reinforce : {
 		name: 'Energy Shield',

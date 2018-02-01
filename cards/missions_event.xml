@@ -26196,7 +26196,7 @@
     <desc>The Angel Queen has invited you to Skyhaven, claiming to have uncovered a great secret. You fly your airship to the Angels' home, preparing to meet their leader.</desc>
     <commander id="313" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1315" name="Nix Elemental" />
@@ -26237,7 +26237,7 @@
     <desc>Malchior bursts into the throne room. Grinning widely, he runs up to the Angel Queen, and takes the paw of her pet dragon. He shakes it vigorously, the dragonling snarling in response.</desc>
     <commander id="318" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1010" name="Lightning Elemental" />
@@ -26278,7 +26278,7 @@
     <desc>You explain to the Angel Queen that Malchior is an expert on The Void and all things arcane. She nods, petting the head of her young dragon, which continues to glower ferociously at Malchior.</desc>
     <commander id="318" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1012" name="Cloud Sylph" />
@@ -26302,7 +26302,7 @@
     <desc>Leyla's face brightens when you finish your explanation. She claps her hands together joyfully, properly welcoming Malchior to the Skyhaven Kingdom.</desc>
     <commander id="328" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="7017" name="Coral Elemental" />
@@ -26327,7 +26327,7 @@
       <line>
         <commander>angelqueen</commander>
         <enemy>0</enemy>
-        <text>Perhaps it belonged to the original inhabitants of Skyhaven.</text>
+        <text>Perhaps it belonged to the original architects of Skyhaven.</text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -26343,7 +26343,7 @@
     <desc>The Angel Queen Leyla calls out to one of her trusted servants. You see a familiar face that you have not seen in a long time...</desc>
     <commander id="324" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1617" name="Water Elemental" />
@@ -26379,7 +26379,7 @@
     <desc>Yuriel takes you further inside Skyhaven at the Queen's request. He tells you about what he's been up to since you last fought him in The Void. Now, Yuriel has been helping the Angel Queen in safeguarding powerful artifacts.</desc>
     <commander id="313" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1010" name="Lightning Elemental" />
@@ -26403,7 +26403,7 @@
     <desc>You reach the library of Skyhaven. Well-kept tomes line the shelves, of various thickness and colors. It is brightly lit and clean, an empty table at its center.</desc>
     <commander id="343" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1012" name="Cloud Sylph" />
@@ -26439,7 +26439,7 @@
     <desc>You pull out a misplaced book from the shelf. The ground rumbles as one of the shelves slides to the side, revealing a hidden passage. The inside is dark, but you can see the outline of more shelves and books, and the musty smell of ancient paper.</desc>
     <commander id="326" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="7017" name="Coral Elemental" />
@@ -26475,7 +26475,7 @@
     <desc>Yuriel leads you and Malchior into the secret passageway. The inside of shelves and books stretches farther than you can see, creating narrow paths.</desc>
     <commander id="346" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1012" name="Cloud Sylph" />
@@ -26506,7 +26506,7 @@
     <desc>A book on one of the shelves begins to rattle. Yuriel cautions you, and the group moves towards it slowly. The tome falls to the floor, projecting an angelic image that takes form, charging at you!</desc>
     <commander id="362" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1617" name="Water Elemental" />
@@ -26535,9 +26535,9 @@
     <name>Guardian Angels</name>
     <energy>9</energy>
     <desc>More dusty books rattle and fall to the earth. Each one summons a different angel, the guardians bringing their might against you.</desc>
-    <commander id="4" />
+    <commander id="407" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="5017" name="Steam Tempest" />
@@ -26561,7 +26561,7 @@
     <desc>The ranks of summoned angels begin to thin. Each one you defeat fades away like a ghost, leaving no trace of its existence, save for books which remain fallen on the ground.</desc>
     <commander id="362" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="6017" name="Tar Pit Stalker" />
@@ -26590,9 +26590,9 @@
     <name>Stone Visage</name>
     <energy>9</energy>
     <desc>You continue farther in the ancient library. You eventually reach a branch in the path, with an angelic statue at the center of the crossroad. As you near it, the stone visage crumbles, the statue becoming like a real angel.</desc>
-    <commander id="4" />
+    <commander id="407" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="7017" name="Coral Elemental" />
       <card id="5133" name="Magnetic Elemental" />
@@ -26610,7 +26610,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>Greetings, knowledge seekers. I am Razi, the caretaker of the Arcane Library.</text>
       </line>
@@ -26623,7 +26623,7 @@
     <desc>Malchior gets dangerously close to the former statue Razi, poking the angel's arm. Razi recoils, staring with mixed confusion and anger at the sage.</desc>
     <commander id="362" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1315" name="Nix Elemental" />
       <card id="2120" name="Emerald Carbuncle" />
@@ -26646,7 +26646,7 @@
         <text>How did you do that becoming a person out of a statue thing? Is your flesh still hardened like stone?</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>It is through stone that I have been immortalized through the ages. Now I wait to guide those who seek the truth.</text>
       </line>
@@ -26659,7 +26659,7 @@
     <desc>Yuriel eyes the angel skeptically. He takes a look around the archive of books, as if expecting a trap or more fights. Razi waits patiently.</desc>
     <commander id="328" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="5017" name="Steam Tempest" />
       <card id="6046" name="Celerity" />
@@ -26682,7 +26682,7 @@
         <text>Are you saying that you'll help us get farther? What awaits us at the end?</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>It is the truth that awaits those who are worthy. Now come, follow me.</text>
       </line>
@@ -26693,9 +26693,9 @@
     <name>Fighting for the Truth</name>
     <energy>9</energy>
     <desc>For now, Malchior and Yuriel seem to accept Razi's offer of aid. You follow the angel, taking one of the two paths. She points to a clearing, warning that a fight is imminent with the library's guardians.</desc>
-    <commander id="4" />
+    <commander id="407" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="7017" name="Coral Elemental" />
       <card id="7021" name="Shadow Elemental" />
@@ -26719,7 +26719,7 @@
     <desc>Razi points to a small depression in one of the tiles, claiming that it is one of the library's traps. Malchior tosses a book on the pressure plate. The tile crumbles, revealing dangerous-looking spikes, impaling the helpless book.</desc>
     <commander id="324" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1010" name="Lightning Elemental" />
       <card id="5133" name="Magnetic Elemental" />
@@ -26739,7 +26739,7 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text>I must wonder, everything in this library has so far tried to kill us.</text>
+        <text>I must wonder, everything in this library has tried to kill us.</text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -26755,7 +26755,7 @@
     <desc>More guardians rise from the books, fighting against you, Malchior, and Yuriel. Razi stands off to the side, helping neither side, as the guardians ignore her and focus on your group.</desc>
     <commander id="362" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1315" name="Nix Elemental" />
       <card id="2010" name="Silver Wind" />
@@ -26773,7 +26773,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>Knowledge is meant to be shared, not hoarded. But it can also be a dangerous thing, if it falls in the wrong hands.</text>
       </line>
@@ -26784,9 +26784,9 @@
     <name>Contingency Plan</name>
     <energy>9</energy>
     <desc>The path through the archive seems to stretch on forever. Razi continues to guide you, expertly navigating through each turn and warning of the more dangerous traps, while letting you fight the guardians.</desc>
-    <commander id="4" />
+    <commander id="407" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="6006" name="Chaos Golem" />
       <card id="7045" name="Sakura" />
@@ -26822,7 +26822,7 @@
     <desc>The archive's shelves eventually end. The path opens up to a wide area, with nothing visible except blank tile. Razi motions for your group to stop.</desc>
     <commander id="362" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1315" name="Nix Elemental" />
       <card id="5081" name="Brahzee" />
@@ -26840,12 +26840,12 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>Be very careful. One stray step could close the true path.</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>You will face a number of Mystic Library protectors.</text>
       </line>
@@ -26856,9 +26856,9 @@
     <name>Invisible Maze</name>
     <energy>9</energy>
     <desc>Razi leads you through a complicated invisible maze, taking calculated turns without any marker. Yuriel carefully places a rune at each turn, creating an escape path should things go wrong.</desc>
-    <commander id="4" />
+    <commander id="407" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="6006" name="Chaos Golem" />
       <card id="7015" name="Bog Aberration" />
@@ -26882,7 +26882,7 @@
     <desc>When Razi stops, more creatures materialize. The angelic guardians bring their might against you, while Malchior and Yuriel aid your efforts.</desc>
     <commander id="348" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1010" name="Lightning Elemental" />
       <card id="7021" name="Shadow Elemental" />
@@ -26904,9 +26904,9 @@
     <name>Final Trial</name>
     <energy>9</energy>
     <desc>Once the fighting ends, Razi continues the strange path. She stops a few more times, waiting for guardians to appear, and for you to ultimately defeat them.</desc>
-    <commander id="4" />
+    <commander id="407" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="1014" name="Cherub" />
       <card id="1617" name="Water Elemental" />
       <card id="2008" name="Shadow of Ash" />
@@ -26929,7 +26929,7 @@
         <text>How much farther must we go?</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>The truth is past this last trial.</text>
       </line>
@@ -26942,7 +26942,7 @@
     <desc>Finally you reach a great door. Razi pushes it open, the hinges squeeking loudly. Past it lies a room filled with more books, this one with a great cathedral-like ceiling. Painted on it is a mural...</desc>
     <commander id="362" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="1014" name="Cherub" />
       <card id="1012" name="Cloud Sylph" />
       <card id="7075" name="Diamode" />
@@ -26960,7 +26960,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
         <text>Now, you shall know this land's history.</text>
       </line>

@@ -1388,7 +1388,8 @@
     <id>2032</id>
     <name>Crystalsky Hymn</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->

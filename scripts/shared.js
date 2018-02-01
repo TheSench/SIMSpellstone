@@ -311,7 +311,7 @@ var makeUnit = (function () {
                         new_skill.id = addedSkill.id;
                         if (addedSkill.mult) {
                             if (addedSkill.base) {
-                                var base = new_card[addedSkill.base];
+                            	var base = getStatBeforeRunes(new_card, addedSkill.base);
                                 if (addedSkill.base == "rarity") base--;
                                 new_skill.x = Math.ceil(addedSkill.mult * base);
                             } else {
@@ -348,11 +348,15 @@ var makeUnit = (function () {
             	for (var j = 0; j < skillModifier.effects.length; j++) {
             		var scaling = skillModifier.effects[j];
             		if (new_card.isInFaction(scaling.y)) {
-            			new_card.health += Math.ceil(new_card[scaling.base] * scaling.mult);
+            			new_card.health += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
             		}
             	}
             }
         }
+    }
+
+    function getStatBeforeRunes(card, statBase) {
+    	return get_card_by_id({ id: card.id, level: card.level })[statBase];
     }
 
     function scaleSkills(new_card, skillList, mult) {
