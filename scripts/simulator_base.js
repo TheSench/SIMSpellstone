@@ -514,6 +514,17 @@ var SIMULATOR = {};
 						strike_damage = 0;
 					}
 				}
+				if (absorb) {
+					strike_damage -= absorb;
+				}
+
+				if (strike_damage < 0) {
+					strike_damage = 0;
+				}
+
+				if (strike_damage < 0) {
+					strike_damage = 0;
+				}
 
 				var poisonDamage = 0;
 				if (strike_damage > 0 && poison && target.isAlive()) {
@@ -528,6 +539,7 @@ var SIMULATOR = {};
 					if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					if (protect) echo += ' Barrier: -' + protect;
+					if (absorb) echo += ' Absorb: -' + absorb;
 					echo += ') = ' + amount + ' damage</u><br>';
 					echo += debug_name(source) + ' bolts ' + debug_name(target) + ' for ' + amount + ' damage';
 					if (!target.isAlive()) {
@@ -806,12 +818,20 @@ var SIMULATOR = {};
 						frost_damage = 0;
 					}
 				}
+				if (absorb) {
+					frost_damage -= absorb;
+				}
+
+				if (frost_damage < 0) {
+					frost_damage = 0;
+				}
 
 				do_damage(src_card, target, frost_damage, shatter, function (source, target, amount) {
 					echo += '<u>(Frostbreath: +' + frost;
 					if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					if (protect) echo += ' Barrier: -' + protect;
+					if (absorb) echo += ' Absorb: -' + absorb;
 					echo += ') = ' + amount + ' damage</u><br>';
 					echo += debug_name(source) + ' breathes frost at ' + debug_name(target) + ' for ' + amount + ' damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
@@ -1246,6 +1266,7 @@ var SIMULATOR = {};
 
 					// Check Protect/Enfeeble
 					var protect = 0;
+					var absorb = 0;
 					if (target['protected']) protect = target['protected'];
 
 					var shatter = false;
@@ -1259,11 +1280,19 @@ var SIMULATOR = {};
 							strike_damage = 0;
 						}
 					}
+					if (absorb) {
+						strike_damage -= absorb;
+					}
+
+					if (strike_damage < 0) {
+						strike_damage = 0;
+					}
 
 					do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
 						echo += '<u>(Barrage: +1';
 						if (enhanced) echo += ' Enhance: +' + enhanced;
 						if (protect) echo += ' Barrier: -' + protect;
+						if (absorb) echo += ' Absorb: -' + absorb;
 						echo += ') = ' + amount + ' damage</u><br>';
 						echo += debug_name(source) + ' throws a bomb at ' + debug_name(target) + ' for ' + amount + ' damage';
 						echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
@@ -2477,6 +2506,26 @@ var SIMULATOR = {};
 
 			if (!current_assault.isAlive()) {
 				doOnDeathSkills(current_assault, null);
+			} else {
+				// Regenerate
+				if (current_assault.regenerate && current_assault.isDamaged()) {
+
+					var regen_health = current_assault.regenerate;
+					var enhanced = getEnhancement(current_assault, 'regenerate');
+					if (enhanced) {
+						if (enhanced < 0) {
+							enhanced = Math.ceil(regen_health * -enhanced);
+						}
+						regen_health += enhanced;
+					}
+					var healthMissing = current_assault.health - current_assault.health_left;
+					if (regen_health >= healthMissing) {
+						regen_health = healthMissing;
+					}
+
+					current_assault.health_left += regen_health;
+					if (debug) echo += debug_name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
+				}
 			}
 		}
 	};
@@ -2668,7 +2717,6 @@ var SIMULATOR = {};
 			}
 
 			// Nullify
-			// - Attacker must not have died to Vengeance
 			// - Attacker must have taken damage
 			// - Target must be an assault
 			if (current_assault.nullify) {
@@ -2685,12 +2733,29 @@ var SIMULATOR = {};
 			}
 
 			// Silence
-			// - Attacker must not have died to Vengeance
 			// - Attacker must have taken damage
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
 				if (debug) echo += debug_name(current_assault) + ' inflicts silence on ' + debug_name(target) + '<br>';
+			}
+
+			// Daze
+			// - Target must have taken damage
+			// - Target must be an assault
+			if (current_assault.daze) {
+
+				var dazed = current_assault.daze;
+				var enhanced = getEnhancement(current_assault, 'daze');
+				if (enhanced) {
+					if (enhanced < 0) {
+						enhanced = Math.ceil(dazed * -enhanced);
+					}
+					dazed += enhanced;
+				}
+
+				target.attack_weaken += Math.min(dazed, target.adjustedAttack());
+				if (debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target + ' for ' + dazed + '<br>';
 			}
 		}
 
@@ -2873,11 +2938,20 @@ var SIMULATOR = {};
 			attacker.protected -= counterDamage;
 			counterDamage = 0;
 		}
+		// TODO: Does Absorb block Vengeance?
+		if (absorb) {
+			counterDamage -= absorb;
+		}
+
+		if (counterDamage < 0) {
+			counterDamage = 0;
+		}
 
 		if (debug) {
 			echo += '<u>(' + counterType + ': +' + counterBase;
 			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
 			if (protect) echo += ' Barrier: -' + protect;
+			if (absorb) echo += ' Absorb: -' + absorb;
 			echo += ') = ' + counterDamage + ' damage</u><br>';
 		}
 

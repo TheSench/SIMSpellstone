@@ -15,6 +15,7 @@
     <item_desc>Collect Noctrus Flintclaw Stones to craft and upgrade the Legendary Noctrus Flintclaw card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
     <type>3</type>
     <sub_type>10</sub_type>
     <attack>9</attack>
@@ -103,6 +104,7 @@
     <item_desc>Collect Foxfire Stones to craft and upgrade the Legendary Foxfire card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
     <type>2</type>
     <sub_type>5</sub_type>
     <sub_type>7</sub_type>

@@ -1,3 +1,5 @@
+"use strict";
+
 var MAP_BATTLEGROUNDS = {
 	"3001": {
 		"id": "3001",

@@ -1057,6 +1057,7 @@ var BATTLEGROUNDS = {
         "effect_type": "add_skill",
         "id": "evade",
         "x": 99,
+        "all": "1",
       },
     ]
   },

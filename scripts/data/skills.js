@@ -1,7 +1,7 @@
 var SKILL_DATA = {
 	absorb : {
 		name: 'Absorb',
-		type: 'activation',
+		type: 'passive',
 		icon: 'absorb',
 		desc: 'Each turn reduces X damage from skill based damage.'
 	},
@@ -55,7 +55,7 @@ var SKILL_DATA = {
 	},
 	daze : {
 		name: 'Daze',
-		type: 'activation',
+		type: 'passive',
 		icon: 'daze',
 		desc: 'When this deals damage to an enemy, Weaken it by X for one turn.'
 	},
@@ -229,7 +229,7 @@ var SKILL_DATA = {
 	},
 	regenerate : {
 		name: 'Regenerate',
-		type: 'activation',
+		type: 'passive',
 		icon: 'regenerate',
 		desc: 'Heal X at end of turn.'
 	},

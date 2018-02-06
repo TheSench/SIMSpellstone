@@ -848,10 +848,10 @@
     <id>525</id>
     <name>Vanishing Enchantment</name>
     <desc>All cards gain Invisibility 99.</desc>
-    <icon>Invisibility_BGE_64</icon>
+    <icon>Vanishing_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <add_skill id="evade" x="99" />
+      <add_skill id="evade" x="99" all="1" />
     </effect>
   </battleground>
   <!-- ============================= -->
