@@ -2755,7 +2755,7 @@ var SIMULATOR = {};
 				}
 
 				target.attack_weaken += Math.min(dazed, target.adjustedAttack());
-				if (debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target + ' for ' + dazed + '<br>';
+				if (debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target) + ' for ' + dazed + '<br>';
 			}
 		}
 
