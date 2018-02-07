@@ -2922,8 +2922,8 @@ var SIMULATOR = {};
 		var counterDamage = counterBase + counterEnhancement;
 
 		// Protect
-		var protect = (target.protected || 0);
-		var absorb = (target.absorb || 0);
+		var protect = (attacker.protected || 0);
+		var absorb = (attacker.absorb || 0);
 		if (counterDamage >= protect) {
 			attacker.protected = 0;
 			counterDamage -= protect;
