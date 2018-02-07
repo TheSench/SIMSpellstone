@@ -295,8 +295,8 @@ var SIMULATOR = {};
 
 			var p = get_p(src_card);
 
-			var protect = skill['x'];
-			var all = skill['all'];
+			var protect = skill.x;
+			var all = skill.all;
 
 			var field_p_assaults = field[p]['assaults'];
 
@@ -448,7 +448,7 @@ var SIMULATOR = {};
 
 			var o = get_o(src_card);
 
-			var strike = skill.x
+			var strike = skill.x;
 			var faction = skill.y;
 			var all = skill.all;
 
@@ -496,13 +496,11 @@ var SIMULATOR = {};
 				var strike_damage = strike;
 
 				// Check Protect/Enfeeble
-				var enfeeble = target.enfeebled;
-				var protect = 0;
-				if (target['protected']) protect = target['protected'];
+				var enfeeble = (target.enfeebled || 0);
+				var protect = (target.protected || 0);
+				var absorb = (target.absorb || 0);
 
-				if (enfeeble) {
-					strike_damage += enfeeble;
-				}
+				strike_damage += enfeeble;
 				var shatter = false;
 				if (protect) {
 					if (strike_damage >= protect) {
@@ -535,7 +533,7 @@ var SIMULATOR = {};
 				}
 
 				do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
-					echo += '<u>(Strike: +' + strike;
+					echo += '<u>(Strike: +' + skill.x;
 					if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					if (protect) echo += ' Barrier: -' + protect;
@@ -697,7 +695,7 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 			var o = get_o(src_card);
 
-			var all = skill['all'];
+			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -753,7 +751,7 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 			var o = get_o(src_card);
 
-			var frost = skill['x'];
+			var frost = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id);
 			if (enhanced) {
 				if (enhanced < 0) {
@@ -762,7 +760,7 @@ var SIMULATOR = {};
 				frost += enhanced;
 			}
 
-			var all = skill['all'];
+			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -797,16 +795,11 @@ var SIMULATOR = {};
 				var frost_damage = frost;
 
 				// Check Protect/Enfeeble
-				var enfeeble = target.enfeebled;
-				var protect = 0;
-				if (target['protected']) protect = target['protected'];
+				var enfeeble = (target.enfeebled || 0);
+				var protect = (target.protected || 0);
+				var absorb = (target.absorb || 0);
 
-				if (enfeeble) {
-					frost_damage += enfeeble;
-				}
-				if (enhanced) {
-					frost_damage += enhanced;
-				}
+				frost_damage += enfeeble;
 				var shatter = false;
 				if (protect) {
 					if (frost_damage >= protect) {
@@ -827,7 +820,7 @@ var SIMULATOR = {};
 				}
 
 				do_damage(src_card, target, frost_damage, shatter, function (source, target, amount) {
-					echo += '<u>(Frostbreath: +' + frost;
+					echo += '<u>(Frostbreath: +' + skill.x;
 					if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					if (protect) echo += ' Barrier: -' + protect;
@@ -853,9 +846,9 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 			var o = get_o(src_card);
 
-			var enfeeble = skill['x'];
+			var enfeeble = skill.x;
 
-			var all = skill['all'];
+			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -922,9 +915,9 @@ var SIMULATOR = {};
 				var o = get_o(src_card);
 			}
 
-			var weaken = skill['x'];
+			var weaken = skill.x;
 
-			var all = skill['all'];
+			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -992,7 +985,7 @@ var SIMULATOR = {};
 
 			var p = get_p(src_card);
 
-			var rally = skill['x'];
+			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id);
 			if (enhanced) {
 				if (enhanced < 0) {
@@ -1000,7 +993,7 @@ var SIMULATOR = {};
 				}
 				rally += enhanced;
 			}
-			var all = skill['all'];
+			var all = skill.all;
 
 			var field_p_assaults = field[p]['assaults'];
 
@@ -1053,8 +1046,8 @@ var SIMULATOR = {};
 
 			var p = get_p(src_card);
 
-			var rally = skill['x'];
-			var all = skill['all'];
+			var rally = skill.x;
+			var all = skill.all;
 
 			var field_p_assaults = field[p]['assaults'];
 
@@ -1121,7 +1114,7 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 			var field_p_assaults = field[p]['assaults'];
 
-			var rally = skill['x'];
+			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id);
 			if (enhanced) {
 				if (enhanced < 0) {
@@ -1169,7 +1162,7 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 			var field_p_assaults = field[p]['assaults'];
 
-			var rally = skill['x'];
+			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id);
 			if (enhanced) {
 				if (enhanced < 0) {
@@ -1265,9 +1258,8 @@ var SIMULATOR = {};
 					var strike_damage = strike;
 
 					// Check Protect/Enfeeble
-					var protect = 0;
-					var absorb = 0;
-					if (target['protected']) protect = target['protected'];
+					var protect = (target.protected || 0);
+					var absorb = (target.absorb || 0);
 
 					var shatter = false;
 					if (protect) {
@@ -1447,10 +1439,10 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 			var o = get_o(src_card);
 
-			var x = skill['x'];
+			var x = skill.x;
 			var c = skill['c'];
 			var s = skill['s'];
-			var all = skill['all'];
+			var all = skill.all;
 
 			var field_p_assaults = field[p]['assaults'];
 			var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
@@ -1513,9 +1505,9 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 			var o = get_o(src_card);
 
-			var mark = skill['x'];
+			var mark = skill.x;
 
-			var all = skill['all'];
+			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -2930,7 +2922,8 @@ var SIMULATOR = {};
 		var counterDamage = counterBase + counterEnhancement;
 
 		// Protect
-		var protect = (attacker.protected || 0);
+		var protect = (target.protected || 0);
+		var absorb = (target.absorb || 0);
 		if (counterDamage >= protect) {
 			attacker.protected = 0;
 			counterDamage -= protect;
