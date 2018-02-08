@@ -2034,7 +2034,7 @@
     <picture>Paladin_Angel_C</picture>
     <asset_bundle>2</asset_bundle>
     <attack>5</attack>
-    <health>24</health>
+    <health>29</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="3" />
@@ -2046,20 +2046,25 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>26</health>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>6</attack>
+      <skill id="armored" x="3" />
+      <skill id="heal" x="7" y="1" />
+      <skill id="protect" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="3" />
-      <skill id="heal" x="6" y="1" />
+      <attack>7</attack>
+      <health>33</health>
+      <skill id="armored" x="4" />
+      <skill id="heal" x="8" y="1" />
       <skill id="protect" x="3" all="1" />
     </upgrade>
   </unit>
@@ -2553,14 +2558,16 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>17</health>
       <skill id="counter" x="5" />
-      <skill id="burn" x="1" />
+      <skill id="burn" x="2" />
       <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>6</attack>
       <skill id="counter" x="5" />
-      <skill id="burn" x="2" />
+      <skill id="burn" x="3" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -2663,7 +2670,7 @@
     <health>18</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="counter" x="3" />
+    <skill id="counter" x="5" />
     <skill id="rally" x="3" y="1" all="1" />
     <skill id="heal" x="5" y="6" />
     <type>1</type>
@@ -2688,10 +2695,10 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>23</health>
-      <skill id="counter" x="4" />
-      <skill id="rally" x="3" all="1" y="1" />
-      <skill id="heal" x="5" y="6" />
+      <health>25</health>
+      <skill id="counter" x="6" />
+      <skill id="rally" x="4" all="1" y="1" />
+      <skill id="heal" x="6" y="6" />
     </upgrade>
   </unit>
   <unit>
@@ -4642,18 +4649,20 @@
     <upgrade>
       <level>3</level>
       <skill id="counter" x="3" />
-      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="3" />
       <skill id="flurry" c="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>7</attack>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="counter" x="3" />
-      <skill id="enfeeble" x="3" />
-      <skill id="flurry" c="5" />
+      <health>22</health>
+      <skill id="counter" x="4" />
+      <skill id="enfeeble" x="4" />
+      <skill id="flurry" c="4" />
     </upgrade>
   </unit>
   <unit>

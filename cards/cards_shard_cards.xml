@@ -172,4 +172,85 @@
       <skill id="burn" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4002</id>
+    <card_type>2</card_type>
+    <name>Razi the Fallen Light</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Crimson_Winged_Angel_B</picture>
+    <asset_bundle>120</asset_bundle>
+    <item_name>Razi Stone</item_name>
+    <item_desc>Collect Razi Stones to craft and upgrade the Legendary Razi the Fallen Light card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="4" y="6" />
+    <skill id="legion" x="2" />
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="5" y="6" />
+      <skill id="legion" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="5" y="6" />
+      <skill id="legion" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="5" y="6" />
+      <skill id="legion" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="6" y="6" />
+      <skill id="legion" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="7" y="6" />
+      <skill id="legion" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>7</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>19</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="7" y="6" />
+      <skill id="legion" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>8</attack>
+      <health>20</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="7" y="6" />
+      <skill id="legion" x="4" />
+    </upgrade>
+  </unit>
 </root>
