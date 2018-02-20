@@ -21092,6 +21092,143 @@ var CARDS = {
       },
     }
   },
+  "408": {
+    "id": "408",
+    "name": "Razi, Whisper Worshipper",
+    "picture": "portrait_portraits_crimson_winged_angel",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "sub_type": [],
+    "health": 76,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 3,
+        "s": "armored",
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 80,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 85,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 89,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 94,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 99,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 6,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -43485,7 +43622,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["9","6"],
+    "sub_type": ["6","9"],
     "health": 18,
     "attack": 4,
     "cost": 3,
@@ -43568,7 +43705,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["9","6"],
+    "sub_type": ["6","9"],
     "health": 23,
     "attack": 6,
     "cost": 3,
@@ -43666,7 +43803,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["9","6"],
+    "sub_type": ["6","9"],
     "health": 28,
     "attack": 7,
     "cost": 3,
@@ -54768,7 +54905,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["11","6"],
+    "sub_type": ["6","11"],
     "health": 8,
     "attack": 2,
     "cost": 1,
@@ -54840,7 +54977,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["11","6"],
+    "sub_type": ["6","11"],
     "health": 11,
     "attack": 3,
     "cost": 1,
@@ -54899,7 +55036,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["11","6"],
+    "sub_type": ["6","11"],
     "health": 14,
     "attack": 4,
     "cost": 1,
@@ -63711,6 +63848,506 @@ var CARDS = {
           {
             "id": "flurry",
             "c": 2,
+          },
+        ],
+      },
+    }
+  },
+  "5183": {
+    "id": "5183",
+    "name": "Swordslayer Giant",
+    "picture": "Angel_Sword_In_Stone_A",
+    "hidden_until": "1518714000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 30,
+    "attack": 8,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "6",
+          },
+        ],
+      },
+      "4": {
+        "health": 32,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "6",
+          },
+        ],
+      },
+      "6": {
+        "health": 33,
+        "skill": [],
+      },
+    }
+  },
+  "15183": {
+    "id": "15183",
+    "name": "Swordslayer Juggernaut",
+    "picture": "Angel_Sword_In_Stone_A",
+    "hidden_until": "1518714000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 33,
+    "attack": 8,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "counter",
+        "x": 5,
+      },
+      {
+        "id": "rally",
+        "x": 7,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 9,
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "6",
+          },
+        ],
+      },
+      "4": {
+        "health": 35,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "6",
+          },
+        ],
+      },
+      "6": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "6",
+          },
+        ],
+      },
+    }
+  },
+  "25183": {
+    "id": "25183",
+    "name": "Swordslayer Colossus",
+    "picture": "Angel_Sword_In_Stone_B",
+    "hidden_until": "1518714000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 36,
+    "attack": 9,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "counter",
+        "x": 7,
+      },
+      {
+        "id": "rally",
+        "x": 8,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "rally",
+            "x": 9,
+            "y": "6",
+          },
+        ],
+      },
+      "3": {
+        "attack": 10,
+        "health": 37,
+        "skill": [],
+      },
+      "4": {
+        "health": 38,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "rally",
+            "x": 9,
+            "y": "6",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "counter",
+            "x": 8,
+          },
+          {
+            "id": "rally",
+            "x": 10,
+            "y": "6",
+          },
+        ],
+      },
+    }
+  },
+  "5184": {
+    "id": "5184",
+    "name": "Icy Grimkite",
+    "picture": "Guardian_Angel_Dragon_A",
+    "hidden_until": "1518714000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6","9"],
+    "health": 19,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 22,
+        "skill": [],
+      },
+    }
+  },
+  "15184": {
+    "id": "15184",
+    "name": "Glacial Grimkite",
+    "picture": "Guardian_Angel_Dragon_A",
+    "hidden_until": "1518714000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6","9"],
+    "health": 22,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 24,
+        "skill": [],
+      },
+    }
+  },
+  "25184": {
+    "id": "25184",
+    "name": "Frosted Grimkite",
+    "picture": "Guardian_Angel_Dragon_B",
+    "hidden_until": "1518714000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6","9"],
+    "health": 25,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 5,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "skill": [],
+      },
+      "5": {
+        "health": 27,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
           },
         ],
       },
@@ -86241,7 +86878,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "2",
-    "sub_type": ["9","6"],
+    "sub_type": ["6","9"],
     "health": 16,
     "attack": 4,
     "cost": 2,
@@ -86302,7 +86939,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "2",
-    "sub_type": ["9","6"],
+    "sub_type": ["6","9"],
     "health": 20,
     "attack": 5,
     "cost": 2,
@@ -86380,7 +87017,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "2",
-    "sub_type": ["9","6"],
+    "sub_type": ["6","9"],
     "health": 24,
     "attack": 5,
     "cost": 2,
@@ -104432,6 +105069,281 @@ var CARDS = {
           {
             "id": "strike",
             "x": 7,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "6181": {
+    "id": "6181",
+    "name": "Fearlord Xerthis",
+    "picture": "Mecha_Angel_Arm_Demon_A",
+    "hidden_until": "1519059600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","16"],
+    "health": 29,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "6",
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 31,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 33,
+        "skill": [],
+      },
+    }
+  },
+  "16181": {
+    "id": "16181",
+    "name": "Horrorlord Xerthis",
+    "picture": "Mecha_Angel_Arm_Demon_A",
+    "hidden_until": "1519059600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","16"],
+    "health": 33,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 5,
+      },
+      {
+        "id": "fervor",
+        "x": 4,
+        "y": "6",
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 35,
+        "skill": [],
+      },
+      "6": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "fervor",
+            "x": 6,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "26181": {
+    "id": "26181",
+    "name": "Terrorlord Xerthis",
+    "picture": "Mecha_Angel_Arm_Demon_B",
+    "hidden_until": "1519059600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","16"],
+    "health": 36,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 7,
+      },
+      {
+        "id": "fervor",
+        "x": 7,
+        "y": "6",
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 37,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "health": 38,
+        "skill": [],
+      },
+      "4": {
+        "health": 39,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 8,
+          },
+          {
+            "id": "fervor",
+            "x": 7,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 8,
+          },
+          {
+            "id": "fervor",
+            "x": 8,
+            "y": "6",
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
             "all": "1",
           },
         ],
@@ -146919,6 +147831,255 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "7182": {
+    "id": "7182",
+    "name": "Axion, the Valiant",
+    "picture": "Champion_Frog_Angel_A",
+    "hidden_until": "1518454800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","6"],
+    "health": 13,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 15,
+        "skill": [],
+      },
+    }
+  },
+  "17182": {
+    "id": "17182",
+    "name": "Axion, the Stalwart",
+    "picture": "Champion_Frog_Angel_A",
+    "hidden_until": "1518454800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","6"],
+    "health": 15,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27182": {
+    "id": "27182",
+    "name": "Axion, the Unyielding",
+    "picture": "Champion_Frog_Angel_B",
+    "hidden_until": "1518454800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","6"],
+    "health": 17,
+    "attack": 7,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "pierce",
+        "x": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "attack": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 8,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
           },
         ],
       },
@@ -203292,8 +204453,23 @@ var CARDS = {
   },
   "9999": {
     "id": "9999",
-    "name": "Unused Art - 'Aria'",
-    "picture": "Aria_A",
+    "name": "Unused Art - 'Angel_Demon_Cube'",
+    "picture": "Angel_Demon_Cube_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19999": {
+    "id": "19999",
+    "name": "Unused Art - 'Angel_Demon_Cube'",
+    "picture": "Angel_Demon_Cube_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203307,8 +204483,8 @@ var CARDS = {
   },
   "9998": {
     "id": "9998",
-    "name": "Unused Art - 'Avian_Dragon_Team'",
-    "picture": "Avian_Dragon_Team_A",
+    "name": "Unused Art - 'Angel_Demon_Insect'",
+    "picture": "Angel_Demon_Insect_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203322,8 +204498,8 @@ var CARDS = {
   },
   "19998": {
     "id": "19998",
-    "name": "Unused Art - 'Avian_Dragon_Team'",
-    "picture": "Avian_Dragon_Team_B",
+    "name": "Unused Art - 'Angel_Demon_Insect'",
+    "picture": "Angel_Demon_Insect_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203337,8 +204513,23 @@ var CARDS = {
   },
   "9997": {
     "id": "9997",
-    "name": "Unused Art - 'Avian_Stag'",
-    "picture": "Avian_Stag_A",
+    "name": "Unused Art - 'Angel_Seafolk_Dolphin'",
+    "picture": "Angel_Seafolk_Dolphin_A.psd",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19997": {
+    "id": "19997",
+    "name": "Unused Art - 'Angel_Seafolk_Dolphin'",
+    "picture": "Angel_Seafolk_Dolphin_B.psd",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203352,8 +204543,8 @@ var CARDS = {
   },
   "9996": {
     "id": "9996",
-    "name": "Unused Art - 'Birdhouse_Armor'",
-    "picture": "Birdhouse_Armor_A",
+    "name": "Unused Art - 'Angel_Snowtiger'",
+    "picture": "Angel_Snowtiger_A.psd",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203367,8 +204558,8 @@ var CARDS = {
   },
   "19996": {
     "id": "19996",
-    "name": "Unused Art - 'Birdhouse_Armor'",
-    "picture": "Birdhouse_Armor_B",
+    "name": "Unused Art - 'Angel_Snowtiger'",
+    "picture": "Angel_Snowtiger_B.psd",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203382,23 +204573,8 @@ var CARDS = {
   },
   "9995": {
     "id": "9995",
-    "name": "Unused Art - 'Brimstone_Priest_Frog'",
-    "picture": "Brimstone_Priest_Frog_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19995": {
-    "id": "19995",
-    "name": "Unused Art - 'Brimstone_Priest_Frog'",
-    "picture": "Brimstone_Priest_Frog_B",
+    "name": "Unused Art - 'Aria'",
+    "picture": "Aria_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203412,8 +204588,8 @@ var CARDS = {
   },
   "9994": {
     "id": "9994",
-    "name": "Unused Art - 'Cicada_Crier'",
-    "picture": "Cicada_Crier_A",
+    "name": "Unused Art - 'Avian_Dragon_Team'",
+    "picture": "Avian_Dragon_Team_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203427,8 +204603,8 @@ var CARDS = {
   },
   "19994": {
     "id": "19994",
-    "name": "Unused Art - 'Cicada_Crier'",
-    "picture": "Cicada_Crier_B",
+    "name": "Unused Art - 'Avian_Dragon_Team'",
+    "picture": "Avian_Dragon_Team_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203442,23 +204618,8 @@ var CARDS = {
   },
   "9993": {
     "id": "9993",
-    "name": "Unused Art - 'Eagle_Weaponmaster'",
-    "picture": "Eagle_Weaponmaster_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19993": {
-    "id": "19993",
-    "name": "Unused Art - 'Eagle_Weaponmaster'",
-    "picture": "Eagle_Weaponmaster_B",
+    "name": "Unused Art - 'Avian_Stag'",
+    "picture": "Avian_Stag_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203472,8 +204633,23 @@ var CARDS = {
   },
   "9992": {
     "id": "9992",
-    "name": "Unused Art - 'Elyse'",
-    "picture": "Elyse_A",
+    "name": "Unused Art - 'Birdhouse_Armor'",
+    "picture": "Birdhouse_Armor_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19992": {
+    "id": "19992",
+    "name": "Unused Art - 'Birdhouse_Armor'",
+    "picture": "Birdhouse_Armor_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203487,8 +204663,23 @@ var CARDS = {
   },
   "9991": {
     "id": "9991",
-    "name": "Unused Art - 'Fire_Fox_Ghost'",
-    "picture": "Fire_Fox_Ghost_A",
+    "name": "Unused Art - 'Brimstone_Priest_Frog'",
+    "picture": "Brimstone_Priest_Frog_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19991": {
+    "id": "19991",
+    "name": "Unused Art - 'Brimstone_Priest_Frog'",
+    "picture": "Brimstone_Priest_Frog_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203502,8 +204693,8 @@ var CARDS = {
   },
   "9990": {
     "id": "9990",
-    "name": "Unused Art - 'Frog_Guardian_Dragon'",
-    "picture": "Frog_Guardian_Dragon_A",
+    "name": "Unused Art - 'Cicada_Crier'",
+    "picture": "Cicada_Crier_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203517,8 +204708,8 @@ var CARDS = {
   },
   "19990": {
     "id": "19990",
-    "name": "Unused Art - 'Frog_Guardian_Dragon'",
-    "picture": "Frog_Guardian_Dragon_B",
+    "name": "Unused Art - 'Cicada_Crier'",
+    "picture": "Cicada_Crier_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203530,10 +204721,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19989": {
-    "id": "19989",
-    "name": "Unused Art - 'Frost_Bite'",
-    "picture": "Frost_Bite_B",
+  "9989": {
+    "id": "9989",
+    "name": "Unused Art - 'Crimson_Winged_Angel'",
+    "picture": "Crimson_Winged_Angel_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203547,8 +204738,23 @@ var CARDS = {
   },
   "9988": {
     "id": "9988",
-    "name": "Unused Art - 'General'",
-    "picture": "General_A",
+    "name": "Unused Art - 'Eagle_Weaponmaster'",
+    "picture": "Eagle_Weaponmaster_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19988": {
+    "id": "19988",
+    "name": "Unused Art - 'Eagle_Weaponmaster'",
+    "picture": "Eagle_Weaponmaster_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203562,23 +204768,8 @@ var CARDS = {
   },
   "9987": {
     "id": "9987",
-    "name": "Unused Art - 'Giant_Mosquito'",
-    "picture": "Giant_Mosquito_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "Unused Art - 'Giant_Mosquito'",
-    "picture": "Giant_Mosquito_B",
+    "name": "Unused Art - 'Elyse'",
+    "picture": "Elyse_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203592,23 +204783,8 @@ var CARDS = {
   },
   "9986": {
     "id": "9986",
-    "name": "Unused Art - 'Hedgehog_Mecha'",
-    "picture": "Hedgehog_Mecha_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19986": {
-    "id": "19986",
-    "name": "Unused Art - 'Hedgehog_Mecha'",
-    "picture": "Hedgehog_Mecha_B",
+    "name": "Unused Art - 'Fire_Fox_Ghost'",
+    "picture": "Fire_Fox_Ghost_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203622,8 +204798,8 @@ var CARDS = {
   },
   "9985": {
     "id": "9985",
-    "name": "Unused Art - 'Mergoat_Capricorn'",
-    "picture": "Mergoat_Capricorn_A",
+    "name": "Unused Art - 'Frog_Guardian_Dragon'",
+    "picture": "Frog_Guardian_Dragon_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203637,23 +204813,8 @@ var CARDS = {
   },
   "19985": {
     "id": "19985",
-    "name": "Unused Art - 'Mergoat_Capricorn'",
-    "picture": "Mergoat_Capricorn_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9984": {
-    "id": "9984",
-    "name": "Unused Art - 'Merman_Guardian'",
-    "picture": "Merman_Guardian_A",
+    "name": "Unused Art - 'Frog_Guardian_Dragon'",
+    "picture": "Frog_Guardian_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203667,8 +204828,8 @@ var CARDS = {
   },
   "19984": {
     "id": "19984",
-    "name": "Unused Art - 'Merman_Guardian'",
-    "picture": "Merman_Guardian_B",
+    "name": "Unused Art - 'Frost_Bite'",
+    "picture": "Frost_Bite_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203680,10 +204841,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29983": {
-    "id": "29983",
-    "name": "Unused Art - 'Monster'",
-    "picture": "Monster_C",
+  "9983": {
+    "id": "9983",
+    "name": "Unused Art - 'General'",
+    "picture": "General_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203695,10 +204856,40 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29982": {
-    "id": "29982",
-    "name": "Unused Art - 'Mythic_Avian'",
-    "picture": "Mythic_Avian_C",
+  "9982": {
+    "id": "9982",
+    "name": "Unused Art - 'Giant_Mosquito'",
+    "picture": "Giant_Mosquito_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19982": {
+    "id": "19982",
+    "name": "Unused Art - 'Giant_Mosquito'",
+    "picture": "Giant_Mosquito_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9981": {
+    "id": "9981",
+    "name": "Unused Art - 'Guardian_Angel_Dragon'",
+    "picture": "Guardian_Angel_Dragon_A.psd",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203712,8 +204903,8 @@ var CARDS = {
   },
   "19981": {
     "id": "19981",
-    "name": "Unused Art - 'Mythic_Dragon'",
-    "picture": "Mythic_Dragon_B",
+    "name": "Unused Art - 'Guardian_Angel_Dragon'",
+    "picture": "Guardian_Angel_Dragon_B.psd",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203727,8 +204918,23 @@ var CARDS = {
   },
   "9980": {
     "id": "9980",
-    "name": "Unused Art - 'Mythic_Seafolk'",
-    "picture": "Mythic_Seafolk_A",
+    "name": "Unused Art - 'Hedgehog_Mecha'",
+    "picture": "Hedgehog_Mecha_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19980": {
+    "id": "19980",
+    "name": "Unused Art - 'Hedgehog_Mecha'",
+    "picture": "Hedgehog_Mecha_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203742,8 +204948,23 @@ var CARDS = {
   },
   "9979": {
     "id": "9979",
-    "name": "Unused Art - 'Mythic_Undead'",
-    "picture": "Mythic_Undead_A",
+    "name": "Unused Art - 'Ice_Barrier_Angel'",
+    "picture": "Ice_Barrier_Angel_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19979": {
+    "id": "19979",
+    "name": "Unused Art - 'Ice_Barrier_Angel'",
+    "picture": "Ice_Barrier_Angel_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203757,8 +204978,8 @@ var CARDS = {
   },
   "9978": {
     "id": "9978",
-    "name": "Unused Art - 'Oda'",
-    "picture": "Oda_A",
+    "name": "Unused Art - 'Leg_Angel_Sword_In_Stone'",
+    "picture": "Leg_Angel_Sword_In_Stone_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203772,8 +204993,8 @@ var CARDS = {
   },
   "19978": {
     "id": "19978",
-    "name": "Unused Art - 'Oda'",
-    "picture": "Oda_B",
+    "name": "Unused Art - 'Leg_Angel_Sword_In_Stone'",
+    "picture": "Leg_Angel_Sword_In_Stone_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203785,10 +205006,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29978": {
-    "id": "29978",
-    "name": "Unused Art - 'Oda'",
-    "picture": "Oda_C",
+  "9977": {
+    "id": "9977",
+    "name": "Unused Art - 'Martial_Artist_Angel'",
+    "picture": "Martial_Artist_Angel_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203802,8 +205023,8 @@ var CARDS = {
   },
   "19977": {
     "id": "19977",
-    "name": "Unused Art - 'Promo_Dragon'",
-    "picture": "Promo_Dragon_B",
+    "name": "Unused Art - 'Martial_Artist_Angel'",
+    "picture": "Martial_Artist_Angel_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203817,8 +205038,8 @@ var CARDS = {
   },
   "9976": {
     "id": "9976",
-    "name": "Unused Art - 'Seraph'",
-    "picture": "Seraph_A",
+    "name": "Unused Art - 'Mergoat_Capricorn'",
+    "picture": "Mergoat_Capricorn_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203832,8 +205053,8 @@ var CARDS = {
   },
   "19976": {
     "id": "19976",
-    "name": "Unused Art - 'Seraph'",
-    "picture": "Seraph_B",
+    "name": "Unused Art - 'Mergoat_Capricorn'",
+    "picture": "Mergoat_Capricorn_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203847,8 +205068,8 @@ var CARDS = {
   },
   "9975": {
     "id": "9975",
-    "name": "Unused Art - 'Spiky_Bug'",
-    "picture": "Spiky_Bug_A",
+    "name": "Unused Art - 'Merman_Guardian'",
+    "picture": "Merman_Guardian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203862,8 +205083,8 @@ var CARDS = {
   },
   "19975": {
     "id": "19975",
-    "name": "Unused Art - 'Spiky_Bug'",
-    "picture": "Spiky_Bug_B",
+    "name": "Unused Art - 'Merman_Guardian'",
+    "picture": "Merman_Guardian_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203875,10 +205096,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9974": {
-    "id": "9974",
-    "name": "Unused Art - 'Tarian'",
-    "picture": "Tarian_A",
+  "29974": {
+    "id": "29974",
+    "name": "Unused Art - 'Monster'",
+    "picture": "Monster_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203890,10 +205111,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9973": {
-    "id": "9973",
-    "name": "Unused Art - 'Tremor_Wurm'",
-    "picture": "Tremor_Wurm_A",
+  "29973": {
+    "id": "29973",
+    "name": "Unused Art - 'Mythic_Avian'",
+    "picture": "Mythic_Avian_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203905,10 +205126,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9972": {
-    "id": "9972",
-    "name": "Unused Art - 'Unused1'",
-    "picture": "Unused1_A",
+  "19972": {
+    "id": "19972",
+    "name": "Unused Art - 'Mythic_Dragon'",
+    "picture": "Mythic_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203922,8 +205143,8 @@ var CARDS = {
   },
   "9971": {
     "id": "9971",
-    "name": "Unused Art - 'Unused2'",
-    "picture": "Unused2_A",
+    "name": "Unused Art - 'Mythic_Seafolk'",
+    "picture": "Mythic_Seafolk_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203937,8 +205158,8 @@ var CARDS = {
   },
   "9970": {
     "id": "9970",
-    "name": "Unused Art - 'Unused3'",
-    "picture": "Unused3_A",
+    "name": "Unused Art - 'Mythic_Undead'",
+    "picture": "Mythic_Undead_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203952,8 +205173,38 @@ var CARDS = {
   },
   "9969": {
     "id": "9969",
-    "name": "Unused Art - 'Ursurio'",
-    "picture": "Ursurio_A",
+    "name": "Unused Art - 'Oda'",
+    "picture": "Oda_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19969": {
+    "id": "19969",
+    "name": "Unused Art - 'Oda'",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29969": {
+    "id": "29969",
+    "name": "Unused Art - 'Oda'",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203967,8 +205218,8 @@ var CARDS = {
   },
   "9968": {
     "id": "9968",
-    "name": "Unused Art - 'Victorian_Card_Ghost'",
-    "picture": "Victorian_Card_Ghost_A",
+    "name": "Unused Art - 'Priestess_Angel'",
+    "picture": "Priestess_Angel_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203982,8 +205233,8 @@ var CARDS = {
   },
   "19968": {
     "id": "19968",
-    "name": "Unused Art - 'Victorian_Card_Ghost'",
-    "picture": "Victorian_Card_Ghost_B",
+    "name": "Unused Art - 'Priestess_Angel'",
+    "picture": "Priestess_Angel_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -203995,10 +205246,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9967": {
-    "id": "9967",
-    "name": "Unused Art - 'Void_Abomination'",
-    "picture": "Void_Abomination_A",
+  "19967": {
+    "id": "19967",
+    "name": "Unused Art - 'Promo_Dragon'",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -204012,6 +205263,201 @@ var CARDS = {
   },
   "9966": {
     "id": "9966",
+    "name": "Unused Art - 'Seraph'",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19966": {
+    "id": "19966",
+    "name": "Unused Art - 'Seraph'",
+    "picture": "Seraph_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9965": {
+    "id": "9965",
+    "name": "Unused Art - 'Spiky_Bug'",
+    "picture": "Spiky_Bug_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19965": {
+    "id": "19965",
+    "name": "Unused Art - 'Spiky_Bug'",
+    "picture": "Spiky_Bug_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9964": {
+    "id": "9964",
+    "name": "Unused Art - 'Tarian'",
+    "picture": "Tarian_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9963": {
+    "id": "9963",
+    "name": "Unused Art - 'Tremor_Wurm'",
+    "picture": "Tremor_Wurm_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9962": {
+    "id": "9962",
+    "name": "Unused Art - 'Unused1'",
+    "picture": "Unused1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9961": {
+    "id": "9961",
+    "name": "Unused Art - 'Unused2'",
+    "picture": "Unused2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9960": {
+    "id": "9960",
+    "name": "Unused Art - 'Unused3'",
+    "picture": "Unused3_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9959": {
+    "id": "9959",
+    "name": "Unused Art - 'Ursurio'",
+    "picture": "Ursurio_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9958": {
+    "id": "9958",
+    "name": "Unused Art - 'Victorian_Card_Ghost'",
+    "picture": "Victorian_Card_Ghost_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19958": {
+    "id": "19958",
+    "name": "Unused Art - 'Victorian_Card_Ghost'",
+    "picture": "Victorian_Card_Ghost_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9957": {
+    "id": "9957",
+    "name": "Unused Art - 'Void_Abomination'",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9956": {
+    "id": "9956",
     "name": "Unused Art - 'Yuriel'",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -204026,4 +205472,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1518110200829.21;
+var CardsUpdated = 1519140397170.06;

@@ -2463,7 +2463,7 @@
     <name>Double Elemental Epic Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Double Elemental Epic Pack cards from Premium set.</desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Elemental cards from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
@@ -2499,6 +2499,21 @@
     <hc_cost>1000</hc_cost>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" fusion_level="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3085</id>
+    <name>Double Angel Legendary Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two guaranteed ^cE7FFLegendary^cFFFF+ Angel cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
     </cards>
   </store_item>
   <!-- ======================================= -->
@@ -4769,5 +4784,76 @@
     <hc_cost>400</hc_cost>
     <!-- Stuff to give -->
     <pack>3084</pack>
+  </store_item>
+  <store_item>
+    <id>5106</id>
+    <name>Tiamat Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFTiamat^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6100" display_card_id="6100" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5107</id>
+    <name>Legendary Rune Boost Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>210</priority>
+    <desc>Includes a ^cE7FFLegendary Rune Sliver^cFFFF, 25 Arcane Fragments and 20 Inscription Powder! May be purchased 3 times!</desc>
+    <asset_prefab>rune_bundle</asset_prefab>
+    <bundle>15</bundle>
+    <hc_cost>200</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4013" quantity="1" />
+    <item id="4001" quantity="20" />
+    <item id="2001" quantity="25" />
+  </store_item>
+  <store_item>
+    <id>5108</id>
+    <name>Unlimited Energy Refill Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased an unlimited number of times!</desc>
+    <asset_prefab>event_012_energyChest</asset_prefab>
+    <bundle>62</bundle>
+    <icon>energy_refill_20</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <item id="1004" quantity="15" />
+  </store_item>
+  <store_item>
+    <id>5109</id>
+    <name>Justice Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFJustice^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5116" display_card_id="5116" />
+    </cards>
   </store_item>
 </root>

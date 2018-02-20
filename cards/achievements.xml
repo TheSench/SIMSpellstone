@@ -8272,5 +8272,23 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Rimelight Crusader Craft Recipe -->
+  <achievement>
+    <id>3335</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Buried Secrets</name>
+    <desc>Complete the 'Buried Secrets' campaign on Mastery Level 1.</desc>
+    <mission_req>5844</mission_req>
+    <locked_start_time>1519318800</locked_start_time>
+    <!-- Thu, 22 Feb 2018 17:00:00 -->
+    <req>
+      <campaign>1159</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8007" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

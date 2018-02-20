@@ -99,12 +99,21 @@
   </skillType>
   <skillType>
     <id>taunt</id>
-    <order>20</order>
+    <order>25</order>
     <icon>taunt</icon>
     <name>Taunt</name>
     <desc>Attack damage dealt to adjacent creatures is dealt to this creature instead.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>absorb</id>
+    <order>20</order>
+    <icon>absorb</icon>
+    <name>Absorb</name>
+    <desc>Reduces the next damage dealt to this creature from skills.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -147,10 +156,19 @@
     <vfx_location>center</vfx_location>
     <balance_points>4</balance_points>
   </skillType>
+  <skillType>
+    <id>regenerate</id>
+    <order>500</order>
+    <icon>regenerate</icon>
+    <name>Regenerate</name>
+    <desc>Heals itself at the end of turn, even while on delay.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
   <!-- Triggered -->
   <skillType>
     <id>valor</id>
-    <order>70</order>
+    <order>80</order>
     <icon>valor</icon>
     <name>Valor</name>
     <desc>First time this activates, gains Attack permanently if opposing creature has more Attack.</desc>
@@ -160,7 +178,7 @@
   <!-- Activation -->
   <skillType>
     <id>rally</id>
-    <order>80</order>
+    <order>90</order>
     <icon>empower</icon>
     <name>Empower</name>
     <upkeep>1</upkeep>
@@ -175,7 +193,7 @@
   </skillType>
   <skillType>
     <id>heal</id>
-    <order>90</order>
+    <order>100</order>
     <icon>heal</icon>
     <name>Heal</name>
     <desc>Heals a random allied creature</desc>
@@ -187,20 +205,20 @@
   </skillType>
   <skillType>
     <id>protect</id>
-    <order>100</order>
+    <order>110</order>
     <icon>mystic_barrier</icon>
     <name>Barrier</name>
-    <desc>Reduces the next Damage dealt to a random allied creature</desc>
-    <desc_all>Reduces the next Damage dealt to all allied creatures</desc_all>
-    <desc_faction>Reduces the next Damage dealt to a random allied {y} creature</desc_faction>
-    <desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
+    <desc>Reduces the next damage dealt to a random allied creature</desc>
+    <desc_all>Reduces the next damage dealt to all allied creatures</desc_all>
+    <desc_faction>Reduces the next damage dealt to a random allied {y} creature</desc_faction>
+    <desc_all_faction>Reduces the next damage dealt to all allied {y} creatures</desc_all_faction>
     <status_flag>protect</status_flag>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <balance_points>2</balance_points>
   </skillType>
   <skillType>
     <id>legion</id>
-    <order>110</order>
+    <order>120</order>
     <icon>legion</icon>
     <name>Legion</name>
     <upkeep>1</upkeep>
@@ -213,7 +231,7 @@
   </skillType>
   <skillType>
     <id>fervor</id>
-    <order>120</order>
+    <order>130</order>
     <icon>fervor</icon>
     <name>Fervor</name>
     <upkeep>1</upkeep>
@@ -226,11 +244,11 @@
   </skillType>
   <skillType>
     <id>enfeeble</id>
-    <order>130</order>
+    <order>140</order>
     <icon>hex</icon>
     <name>Hex</name>
-    <desc>Increase Damage dealt to a random enemy creature</desc>
-    <desc_all>Increase Damage dealt to all enemy creatures</desc_all>
+    <desc>Increase damage dealt to a random enemy creature</desc>
+    <desc_all>Increase damage dealt to all enemy creatures</desc_all>
     <status_flag>enfeeble</status_flag>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <vfx_location>center</vfx_location>
@@ -238,7 +256,7 @@
   </skillType>
   <skillType>
     <id>strike</id>
-    <order>140</order>
+    <order>150</order>
     <icon>arcane_shot</icon>
     <name>Bolt</name>
     <desc>Deals damage to a random enemy creature</desc>
@@ -250,7 +268,7 @@
   </skillType>
   <skillType>
     <id>frost</id>
-    <order>150</order>
+    <order>160</order>
     <icon>frostbreath</icon>
     <name>Frostbreath</name>
     <desc>Deals damage in a cone to up to three creatures in front of it.</desc>
@@ -261,7 +279,7 @@
   </skillType>
   <skillType>
     <id>burn</id>
-    <order>160</order>
+    <order>170</order>
     <icon>burn</icon>
     <name>Scorch</name>
     <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
@@ -273,7 +291,7 @@
   </skillType>
   <skillType>
     <id>burn2</id>
-    <order>160</order>
+    <order>171</order>
     <icon>burn</icon>
     <name>Scorch 2</name>
     <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
@@ -286,7 +304,7 @@
   </skillType>
   <skillType>
     <id>jam</id>
-    <order>170</order>
+    <order>180</order>
     <icon>freeze</icon>
     <name>Freeze</name>
     <desc>Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.</desc>
@@ -297,7 +315,7 @@
   </skillType>
   <skillType>
     <id>weaken</id>
-    <order>180</order>
+    <order>190</order>
     <icon>hinder</icon>
     <name>Weaken</name>
     <desc>Reduces Attack of a random enemy creature</desc>
@@ -309,7 +327,7 @@
   </skillType>
   <skillType>
     <id>enrage</id>
-    <order>190</order>
+    <order>200</order>
     <icon>enrage</icon>
     <name>Enrage</name>
     <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.</desc>
@@ -323,7 +341,7 @@
   <!-- Modifiers -->
   <skillType>
     <id>pierce</id>
-    <order>200</order>
+    <order>210</order>
     <icon>puncture</icon>
     <name>Pierce</name>
     <desc>Reduces the effect of enemy Armor and Barriers</desc>
@@ -333,7 +351,7 @@
   <!-- Damage -->
   <skillType>
     <id>silence</id>
-    <order>210</order>
+    <order>215</order>
     <icon>silence</icon>
     <name>Silence</name>
     <desc>Removes all skills from damaged enemy creature for one turn.</desc>
@@ -356,8 +374,17 @@
     <balance_points>3</balance_points>
   </skillType>
   <skillType>
-    <id>leech</id>
+    <id>daze</id>
     <order>240</order>
+    <icon>daze</icon>
+    <name>Daze</name>
+    <desc>When this creature deals attack damage, reduce the Attack of damaged creature.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>leech</id>
+    <order>250</order>
     <icon>siphon</icon>
     <name>Siphon</name>
     <desc>Heals this card as it deals Attack damage</desc>
@@ -366,7 +393,7 @@
   </skillType>
   <skillType>
     <id>berserk</id>
-    <order>250</order>
+    <order>260</order>
     <icon>berserk</icon>
     <name>Berserk</name>
     <desc>When this creature deals attack damage, Attack is permanently increased</desc>
@@ -376,7 +403,7 @@
   <!-- Dualstrike -->
   <skillType>
     <id>flurry</id>
-    <order>260</order>
+    <order>270</order>
     <icon>swiftness</icon>
     <name>Dualstrike</name>
     <desc>Activates twice in one turn. Activates every {c} turns.</desc>
@@ -421,10 +448,10 @@
     <order>500</order>
     <icon>mystic_barrier</icon>
     <name>Iceshatter Barrier</name>
-    <desc>Reduces the next Damage dealt to a random allied creature</desc>
-    <desc_all>Reduces the next Damage dealt to all allied creatures</desc_all>
-    <desc_faction>Reduces the next Damage dealt to a random allied {y} creature</desc_faction>
-    <desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
+    <desc>Reduces the next damage dealt to a random allied creature</desc>
+    <desc_all>Reduces the next damage dealt to all allied creatures</desc_all>
+    <desc_faction>Reduces the next damage dealt to a random allied {y} creature</desc_faction>
+    <desc_all_faction>Reduces the next damage dealt to all allied {y} creatures</desc_all_faction>
     <status_flag>protect</status_flag>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <hidden>1</hidden>
@@ -577,33 +604,6 @@
     <icon>enlarge</icon>
     <name>Enlarge</name>
     <desc>Permanently increases the Attack of a creature when played, while this creature is active</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>regenerate</id>
-    <order>500</order>
-    <icon>regenerate</icon>
-    <name>Regenerate</name>
-    <desc>Heal X at end of turn.</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>absorb</id>
-    <order>500</order>
-    <icon>absorb</icon>
-    <name>Absorb</name>
-    <desc>Each turn reduces X damage from skill based damage.</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>daze</id>
-    <order>500</order>
-    <icon>daze</icon>
-    <name>Daze</name>
-    <desc>When this deals damage to an enemy, Weaken it by X for one turn.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>

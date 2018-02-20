@@ -1401,6 +1401,22 @@
       <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
+  <!-- Campaign Event 8 Boss -->
+  <battleground>
+    <id>2033</id>
+    <name>Crimsondrop Lullaby</name>
+    <desc>Razi, Whisper Worshipper fights harder with each passing Mastery level, increasing cards' stats!</desc>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".03" />
+    </effect>
+  </battleground>
   <!-- ==================== -->
   <!-- ==== Arena BGEs ==== -->
   <!-- ==================== -->

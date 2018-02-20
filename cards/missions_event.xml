@@ -26966,4 +26966,100 @@
       </line>
     </speech>
   </mission>
+  <mission>
+    <id>5857</id>
+    <name>By a Higher Power</name>
+    <energy>9</energy>
+    <desc>Razi lifts her hands, her gaze dark and yet seeming to stare into nothing. The ground rumbles. A great crack tears across the mural, scrawling across the ceiling.</desc>
+    <commander id="408" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="8105" name="Divine Statue" />
+      <card id="7069" name="Stoneblade Seraphim" />
+      <card id="7182" name="Axion, the Valiant" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="6100" name="Tiamat" />
+      <card id="6040" name="Scorching Cutlass" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="2028" name="Infinity" />
+      <card id="2028" mastery_level="2" name="Infinity" />
+      <card id="5088" mastery_level="3" name="Betrayal" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5031" mastery_level="5" name="Frostlance Valkyrie" />
+      <card id="2083" mastery_level="6" name="Habrok, the Lance" />
+      <card id="7182" mastery_level="7" name="Axion, the Valiant" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5858</id>
+    <name>Daring Escape</name>
+    <energy>9</energy>
+    <desc>Malchior grabs your arm and pulls on Yuriel's wing. You stumble at first but eventually catch your stride, the three of you racing towards the exit. Whispers of unintellible words echo quietly, while the earth splits and cracks and roars.</desc>
+    <commander id="408" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="8105" name="Divine Statue" />
+      <card id="7069" name="Stoneblade Seraphim" />
+      <card id="7182" name="Axion, the Valiant" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="6100" name="Tiamat" />
+      <card id="6040" name="Scorching Cutlass" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="2028" name="Infinity" />
+      <card id="2028" mastery_level="2" name="Infinity" />
+      <card id="5088" mastery_level="3" name="Betrayal" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5031" mastery_level="5" name="Frostlance Valkyrie" />
+      <card id="2083" mastery_level="6" name="Habrok, the Lance" />
+      <card id="7182" mastery_level="7" name="Axion, the Valiant" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5859</id>
+    <name>Retracing Steps</name>
+    <energy>9</energy>
+    <desc>Yuriel shouts to follow the glyphs, warning of untriggered traps. You weave through the invisible maze, desperately trying to find your way back through his markings. You finally make it through, only to be greeted by more guardians, rising from fallen books.</desc>
+    <commander id="408" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="8105" name="Divine Statue" />
+      <card id="7069" name="Stoneblade Seraphim" />
+      <card id="7182" name="Axion, the Valiant" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="6100" name="Tiamat" />
+      <card id="6040" name="Scorching Cutlass" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="2028" name="Infinity" />
+      <card id="2028" mastery_level="2" name="Infinity" />
+      <card id="5088" mastery_level="3" name="Betrayal" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5031" mastery_level="5" name="Frostlance Valkyrie" />
+      <card id="2083" mastery_level="6" name="Habrok, the Lance" />
+      <card id="7182" mastery_level="7" name="Axion, the Valiant" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5860</id>
+    <name>Crimsonwing Secrets</name>
+    <energy>9</energy>
+    <desc>Finally you clear the last of the guardians, the exit to Skyhaven looming before you. Light flashes, Razi appearing in its brilliance, blocking your path. Arms still outspread, her pupils are consumed, leaving nothing but white film. She blocks your path, the library collapsing behind you...</desc>
+    <commander id="408" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="8105" name="Divine Statue" />
+      <card id="7069" name="Stoneblade Seraphim" />
+      <card id="7182" name="Axion, the Valiant" />
+      <card id="2083" name="Habrok, the Lance" />
+      <card id="6100" name="Tiamat" />
+      <card id="6040" name="Scorching Cutlass" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="2028" name="Infinity" />
+      <card id="2028" mastery_level="2" name="Infinity" />
+      <card id="5088" mastery_level="3" name="Betrayal" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5031" mastery_level="5" name="Frostlance Valkyrie" />
+      <card id="2083" mastery_level="6" name="Habrok, the Lance" />
+      <card id="7182" mastery_level="7" name="Axion, the Valiant" />
+    </deck>
+  </mission>
 </root>

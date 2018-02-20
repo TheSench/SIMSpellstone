@@ -3,7 +3,7 @@ var SKILL_DATA = {
 		name: 'Absorb',
 		type: 'passive',
 		icon: 'absorb',
-		desc: 'Each turn reduces X damage from skill based damage.'
+		desc: 'Reduces the next damage dealt to this creature from skills.'
 	},
 	armored : {
 		name: 'Armor',
@@ -57,13 +57,13 @@ var SKILL_DATA = {
 		name: 'Daze',
 		type: 'passive',
 		icon: 'daze',
-		desc: 'When this deals damage to an enemy, Weaken it by X for one turn.'
+		desc: 'When this creature deals attack damage, reduce the Attack of damaged creature.'
 	},
 	enfeeble : {
 		name: 'Hex',
 		type: 'activation',
 		icon: 'hex',
-		desc: 'Increase Damage dealt to a random enemy creature'
+		desc: 'Increase damage dealt to a random enemy creature'
 	},
 	enhance : {
 		name: 'Enhance',
@@ -201,13 +201,13 @@ var SKILL_DATA = {
 		name: 'Barrier',
 		type: 'activation',
 		icon: 'mystic_barrier',
-		desc: 'Reduces the next Damage dealt to a random allied creature'
+		desc: 'Reduces the next damage dealt to a random allied creature'
 	},
 	protect_ice : {
 		name: 'Iceshatter Barrier',
 		type: 'activation',
 		icon: 'iceshatter',
-		desc: 'Reduces the next Damage dealt to a random allied creature'
+		desc: 'Reduces the next damage dealt to a random allied creature'
 	},
 	protect_seafolk : {
 		name: 'Barrier',
@@ -231,7 +231,7 @@ var SKILL_DATA = {
 		name: 'Regenerate',
 		type: 'passive',
 		icon: 'regenerate',
-		desc: 'Heal X at end of turn.'
+		desc: 'Heals itself at the end of turn, even while on delay.'
 	},
 	reinforce : {
 		name: 'Energy Shield',

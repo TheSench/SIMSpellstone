@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- TUTORIALS START -->
+  <!-- ============================== -->
+  <!-- ====== TUTORIALS START ======= -->
+  <!-- ============================== -->
   <tutorial>
     <id>10</id>
     <name>In First Mission</name>
@@ -576,7 +578,9 @@
       <confirm>1</confirm>
     </step>
   </guide>
-  <!-- SKILL GUIDES -->
+  <!-- ============================== -->
+  <!-- ======== SKILL GUIDES ======== -->
+  <!-- ============================== -->
   <guide>
     <id>1001</id>
     <name>Skill Guide: Heal</name>
@@ -876,6 +880,397 @@
           <skill>burn</skill>
           <commander>raven</commander>
           <text>This creature has Scorch; burned enemies will take stacking burn damage at the end of the turn until the fire wears off.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1017</id>
+    <name>Skill Guide: Frostbreath</name>
+    <trigger>
+      <flagreq id="usingSkill" value="frost" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>frost</skill>
+          <commander>raven</commander>
+          <text>This creature has Frostbreath; it will deal damage in a cone in front of it.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1018</id>
+    <name>Skill Guide: Imbue</name>
+    <trigger>
+      <flagreq id="usingSkill" value="imbue" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>imbue</skill>
+          <commander>raven</commander>
+          <text>This creature has Imbue; it will give a random enemy creature the skill indicated.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1019</id>
+    <name>Skill Guide: Berserk</name>
+    <trigger>
+      <flagreq id="usingSkill" value="berserk" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>berserk</skill>
+          <commander>raven</commander>
+          <text>This creature has Berserk; its attack increases every time it successfully deals attack damage.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1020</id>
+    <name>Skill Guide: Legion</name>
+    <trigger>
+      <flagreq id="usingSkill" value="legion" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>legion</skill>
+          <commander>raven</commander>
+          <text>This creature has Legion; it will increase the strength of allied cards adjacent to it.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1021</id>
+    <name>Skill Guide: Fervor</name>
+    <trigger>
+      <flagreq id="usingSkill" value="fervor" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>fervor</skill>
+          <commander>raven</commander>
+          <text>This creature has Fervor; it will become more powerful when the cards adjacent to it are a certain faction.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1022</id>
+    <name>Skill Guide: Valor</name>
+    <trigger>
+      <flagreq id="usingSkill" value="valor" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>valor</skill>
+          <commander>raven</commander>
+          <text>This creature has Valor; when it activates, it gets more Attack if the enemy creature across from it has a higher Attack.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1023</id>
+    <name>Skill Guide: Nullify</name>
+    <trigger>
+      <flagreq id="usingSkill" value="nullify" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>nullify</skill>
+          <commander>raven</commander>
+          <text>This creature has Nullify; creatures damaged by this cannot benefit from a number of allied skills.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1024</id>
+    <name>Skill Guide: Corrosive</name>
+    <trigger>
+      <flagreq id="usingSkill" value="corrosive" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>corrosive</skill>
+          <commander>raven</commander>
+          <text>This creature has Corrosive. Creatures attacking it have their attack lowered. This effect can stack, but wears off if not re-applied.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1025</id>
+    <name>Skill Guide: Enrage</name>
+    <trigger>
+      <flagreq id="usingSkill" value="enrage" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>enrage</skill>
+          <commander>raven</commander>
+          <text>This creature has Enrage; anytime this creature is damaged from an attack, its attack increases.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1026</id>
+    <name>Skill Guide: Emberhide</name>
+    <trigger>
+      <flagreq id="usingSkill" value="counterburn" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>counterburn</skill>
+          <commander>raven</commander>
+          <text>This creature has Emberhide, which deals Scorch damage back to a creature that attacks it.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1027</id>
+    <name>Skill Guide: Absorb</name>
+    <trigger>
+      <flagreq id="usingSkill" value="absorb" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>absorb</skill>
+          <commander>raven</commander>
+          <text>This creature has Absorb, which will reduce the next damage dealt to it from enemy skills.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1028</id>
+    <name>Skill Guide: Daze</name>
+    <trigger>
+      <flagreq id="usingSkill" value="daze" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>daze</skill>
+          <commander>raven</commander>
+          <text>This creature has Daze, which will reduce the attack of enemy creatures that it damages.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1029</id>
+    <name>Skill Guide: Regenerate</name>
+    <trigger>
+      <flagreq id="usingSkill" value="regenerate" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>regenerate</skill>
+          <commander>raven</commander>
+          <text>This creature has Regenerate; it heals itself at the end of every turn.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1030</id>
+    <name>Skill Guide: Taunt</name>
+    <trigger>
+      <flagreq id="usingSkill" value="taunt" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>taunt</skill>
+          <commander>raven</commander>
+          <text>This creature has Taunt; it will take attack damage for its adjacent allies.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1031</id>
+    <name>Skill Guide: Silence</name>
+    <trigger>
+      <flagreq id="usingSkill" value="silence" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>silence</skill>
+          <commander>raven</commander>
+          <text>This creature has Silence; enemy creatures dealt damage by it have all of their skills removed temporarily. </text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1032</id>
+    <name>Skill Guide: Maelstrom's Fury</name>
+    <trigger>
+      <flagreq id="usingSkill" value="fury" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>fury</skill>
+          <commander>raven</commander>
+          <text>This creature has Maelstrom's Fury; when damaged it will deal damage back to the attacker and gain Attack permanently.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1033</id>
+    <name>Skill Guide: Wing Ward</name>
+    <trigger>
+      <flagreq id="usingSkill" value="evadebarrier" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>evadebarrier</skill>
+          <commander>raven</commander>
+          <text>This creature has Wing Ward, which gives a random allied creature Invisibility and Barrier for a turn.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1034</id>
+    <name>Skill Guide: Scorchbreath</name>
+    <trigger>
+      <flagreq id="usingSkill" value="scorchbreath" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>scorchbreath</skill>
+          <commander>raven</commander>
+          <text>This creature has Scorchbreath, which deals Scorch damage in a cone in front of it.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <!-- ============================== -->
+  <!-- === ADDITIONAL MISC GUIDES === -->
+  <!-- ============================== -->
+  <guide>
+    <id>2001</id>
+    <name>Champion Overflow: Legendary</name>
+    <trigger>
+      <flagreq id="rewardedItem" value="104003" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <asset name="arena_coin" bundle="58" />
+          <commander>raven</commander>
+          <text>SQUAWK?! You've reached the maximum number of stones needed to upgrade this Legendary Champion Card! That's amazing!</text>
+        </line>
+        <line>
+          <asset name="arena_coin" bundle="58" />
+          <commander>raven</commander>
+          <text>All future Champion Stones of that type will been converted to a new mysterious Mythic Champion Stone. What could this be for?!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>2002</id>
+    <name>Champion Overflow: Mythic</name>
+    <trigger>
+      <flagreq id="rewardedItem" value="19" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <message>
+        <line>
+          <asset name="arena_coin" bundle="58" />
+          <commander>raven</commander>
+          <text>SQUAWK?! You've reached the maximum number of stones needed to upgrade the Mythic Champion?! That's amazing!</text>
+        </line>
+        <line>
+          <asset name="arena_coin" bundle="58" />
+          <commander>raven</commander>
+          <text>All future Mythic Champion Stones will been converted to RUnecrafter's Stones. This is -SQUAWK- AMAZING!!</text>
         </line>
       </message>
       <confirm>1</confirm>

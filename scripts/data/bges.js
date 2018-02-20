@@ -1602,6 +1602,22 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2033": {
+    "name": "Crimsondrop Lullaby",
+    "id": "2033",
+    "desc": "Razi, Whisper Worshipper fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
+        "mult": .03,
+      },
+    ]
+  },
   "5001": {
     "name": "The Arena",
     "id": "5001",
