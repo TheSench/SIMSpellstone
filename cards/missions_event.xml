@@ -27062,4 +27062,96 @@
       <card id="7182" mastery_level="7" name="Axion, the Valiant" />
     </deck>
   </mission>
+  <!-- Campaign Event 8 Weeks 5-8 -->
+  <mission>
+    <id>5861</id>
+    <name>Ancient Wars</name>
+    <energy>9</energy>
+    <desc>The ceiling's mural shifts beneath your gaze. The pictures change the longer you stare, playing out a story. There appears small groups in the painting, of goblins and orcs. They fight against another group of creatures...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1030" name="Paladin" />
+      <card id="2029" mastery_level="2" name="Sly Critters" />
+      <card id="5117" mastery_level="3" name="Spark Chronicler" />
+      <card id="7070" mastery_level="4" name="Laughing Menace" />
+      <card id="1041" mastery_level="5" name="Avenging Angel" />
+      <card id="5094" mastery_level="6" name="Luminesce Dragon" />
+      <card id="5039" mastery_level="7" name="Ethereal Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>In the old days, the tribes were divided. Each one fended for itself.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>However, the goblins and orcs formed an alliance, and invaded the other tribes' homes. </text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5862</id>
+    <name>Slayer of the Salt Wastes</name>
+    <energy>9</energy>
+    <desc>A new symbol of red wings appears, uniting the creatures being attacked. The red wings rally the creatures, leading them against the goblins and orcs. Razi continues her history lesson.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="5072" name="Blind Seer" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1031" mastery_level="2" name="Noble Champion" />
+      <card id="6119" mastery_level="3" name="Shadowy Muse" />
+      <card id="2084" mastery_level="4" name="Apocalypse Rider" />
+      <card id="7040" mastery_level="5" name="Warden of the Leaf" />
+      <card id="6023" mastery_level="6" name="Broodmother" />
+      <card id="7071" mastery_level="7" name="Gorilleus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>It was a Crimson-Winged Hero who united the scattered tribes, leading them against their attackers.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5863</id>
+    <name>Eternal Devotion</name>
+    <energy>9</energy>
+    <desc>As Razi talks, the mural shifts again. The angels in the picture become larger and more life-like. Next to you, Yuriel shouts in alarm and points towards the books. Identical warriors to the ones in the mural have appeared, prepared for combat!</desc>
+    <commander id="407" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6061" name="Decagon" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="1030" name="Paladin" />
+      <card id="2052" mastery_level="2" name="Protector of Skyhaven" />
+      <card id="6038" mastery_level="3" name="Hemlock" />
+      <card id="7118" mastery_level="4" name="Fleetfoot Wolper" />
+      <card id="6118" mastery_level="5" name="Kindlecrack Demon" />
+      <card id="5128" mastery_level="6" name="Torchrime Terrorizer" />
+      <card id="7069" mastery_level="7" name="Stoneblade Seraphim" />
+    </deck>
+  </mission>
 </root>

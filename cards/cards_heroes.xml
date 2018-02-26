@@ -9434,6 +9434,7 @@
     <name>Razi, Whisper Worshipper</name>
     <portrait>Portraits_Crimson_Winged_Angel</portrait>
     <asset_bundle>109</asset_bundle>
+    <desc>Erats otnix ehxt Syba, dna ehxt Syba serats kcab ta uxoy. Rewop sesir nix ehxt nerab senredliw.</desc>
     <health>76</health>
     <rarity>4</rarity>
     <skill id="imbue" x="3" all="1" s="armored" />

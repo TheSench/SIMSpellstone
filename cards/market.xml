@@ -1254,22 +1254,22 @@
     <name>x10 Angel Epic Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives ten Epic Angel cards or higher.</desc>
+    <desc>Gives ten Epic Angel cards or higher from Premium.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -4855,5 +4855,22 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="5116" display_card_id="5116" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5110</id>
+    <name>x10 Angel Mega Bundle!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>510</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives ^cF00FTEN ^cFFFFrandom ^c0DFFEpic^cFFFF+ Angel cards from Premium set! May be purchased 3 times!</desc>
+    <asset_prefab>event_008_chest_w4</asset_prefab>
+    <bundle>46</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3008</pack>
   </store_item>
 </root>

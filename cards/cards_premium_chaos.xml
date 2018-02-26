@@ -22396,6 +22396,139 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6180</id>
+    <card_type>2</card_type>
+    <name>Cloaked Revenapod</name>
+    <picture>Angel_Demon_Insect_A</picture>
+    <asset_bundle>120</asset_bundle>
+    <hidden_until_time>1519318800</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="nullify" x="1" />
+    <skill id="poison" x="2" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="nullify" x="1" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="nullify" x="1" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16180</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Veiled Revenapod</name>
+    <picture>Angel_Demon_Insect_A</picture>
+    <asset_bundle>120</asset_bundle>
+    <hidden_until_time>1519318800</hidden_until_time>
+    <attack>6</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="nullify" x="1" />
+    <skill id="poison" x="4" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="nullify" x="1" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="nullify" x="2" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="nullify" x="2" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26180</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Shrouded Revenapod</name>
+    <picture>Angel_Demon_Insect_B</picture>
+    <asset_bundle>120</asset_bundle>
+    <hidden_until_time>1519318800</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="nullify" x="2" />
+    <skill id="poison" x="6" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="nullify" x="2" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="nullify" x="3" />
+      <skill id="poison" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6181</id>
     <card_type>2</card_type>
     <name>Fearlord Xerthis</name>
@@ -22532,6 +22665,137 @@
       <skill id="corrosive" x="8" />
       <skill id="fervor" x="8" y="6" />
       <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6182</id>
+    <card_type>2</card_type>
+    <name>Ezuth the Expelled</name>
+    <picture>Angel_Demon_Cube_A</picture>
+    <asset_bundle>120</asset_bundle>
+    <hidden_until_time>1519664400</hidden_until_time>
+    <attack>9</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="leech" x="3" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16182</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ezuth the Banished</name>
+    <picture>Angel_Demon_Cube_A</picture>
+    <asset_bundle>120</asset_bundle>
+    <hidden_until_time>1519664400</hidden_until_time>
+    <attack>10</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26182</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ezuth the Exiled</name>
+    <picture>Angel_Demon_Cube_B</picture>
+    <asset_bundle>120</asset_bundle>
+    <hidden_until_time>1519664400</hidden_until_time>
+    <attack>11</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="leech" x="7" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
 </root>
