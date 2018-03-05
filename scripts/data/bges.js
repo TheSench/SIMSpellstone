@@ -325,12 +325,12 @@ var BATTLEGROUNDS = {
   "120": {
     "name": "Dragonfire",
     "id": "120",
-    "desc": "Dragons gain Scorch equal to 15% of their base Health.",
+    "desc": "Dragons gain Scorch equal to 20% of their base Health.",
     "effect": [
       {
         "effect_type": "add_skill",
         "id": "burn",
-        "mult": 0.15,
+        "mult": 0.2,
         "base": "health",
         "y": "9",
       },
@@ -1615,6 +1615,38 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .2,
         "mult": .03,
+      },
+    ]
+  },
+  "2034": {
+    "name": "Crystalsky Hymn",
+    "id": "2034",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
+  "2035": {
+    "name": "Crystalsky Hymn",
+    "id": "2035",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
+        "mult": .01,
       },
     ]
   },

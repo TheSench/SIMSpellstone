@@ -4873,4 +4873,23 @@
     <!-- Stuff to give -->
     <pack>3008</pack>
   </store_item>
+  <store_item>
+    <id>5111</id>
+    <name>Murabi Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMurabi^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7072" display_card_id="7072" />
+    </cards>
+  </store_item>
 </root>

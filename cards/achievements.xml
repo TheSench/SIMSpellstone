@@ -8290,5 +8290,140 @@
       <item id="8007" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 8 Weeks 5-8 -->
+  <achievement>
+    <id>3336</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimson Hero</name>
+    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 2.</desc>
+    <mission_req>5856</mission_req>
+    <locked_start_time>1520528400</locked_start_time>
+    <req>
+      <campaign>1160</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3337</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimson Hero</name>
+    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 4.</desc>
+    <mission_req>5856</mission_req>
+    <locked_start_time>1520528400</locked_start_time>
+    <achievement_req>3336</achievement_req>
+    <req>
+      <campaign>1160</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3338</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimson Hero</name>
+    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 6.</desc>
+    <mission_req>5856</mission_req>
+    <locked_start_time>1520528400</locked_start_time>
+    <achievement_req>3337</achievement_req>
+    <req>
+      <campaign>1160</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3339</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimson Hero</name>
+    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 7.</desc>
+    <mission_req>5856</mission_req>
+    <locked_start_time>1520528400</locked_start_time>
+    <achievement_req>3338</achievement_req>
+    <req>
+      <campaign>1160</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3340</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crimsonwing Angels</name>
+    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 2.</desc>
+    <mission_req>5873</mission_req>
+    <locked_start_time>1521738000</locked_start_time>
+    <req>
+      <campaign>1161</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3341</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crimsonwing Angels</name>
+    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 4.</desc>
+    <mission_req>5873</mission_req>
+    <locked_start_time>1521738000</locked_start_time>
+    <achievement_req>3340</achievement_req>
+    <req>
+      <campaign>1161</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3342</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crimsonwing Angels</name>
+    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 6.</desc>
+    <mission_req>5873</mission_req>
+    <locked_start_time>1521738000</locked_start_time>
+    <achievement_req>3341</achievement_req>
+    <req>
+      <campaign>1161</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3343</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crimsonwing Angels</name>
+    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 7.</desc>
+    <mission_req>5873</mission_req>
+    <locked_start_time>1521738000</locked_start_time>
+    <achievement_req>3342</achievement_req>
+    <req>
+      <campaign>1161</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

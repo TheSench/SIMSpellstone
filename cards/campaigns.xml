@@ -5552,6 +5552,80 @@
     </rewards>
     <find_item id="3068" drop_per_energy=".4" />
   </campaign>
+  <!-- 
+	<campaign> 
+		<id>1160</id>
+		<name>The Crimson Hero</name>
+		<campaign_req id='1158' level='1' />
+		<locked_start_time>1520528400</locked_start_time>	| Thu, 08 March 2018 17:00:00 |
+		<battleground_id>2034</battleground_id>
+		<location_id>14</location_id>
+		<x>660</x>
+		<y>215</y>
+		<combatBG>CombatBGEvent008</combatBG>
+		<missions>
+			<mission_id>5861</mission_id>
+			<mission_id>5862</mission_id>
+			<mission_id>5863</mission_id>
+			<mission_id>5864</mission_id>
+			<mission_id>5865</mission_id>
+			<mission_id>5866</mission_id>
+			<mission_id>5867</mission_id>
+			<mission_id>5868</mission_id>
+			<mission_id>5869</mission_id>
+			<mission_id>5870</mission_id>
+			<mission_id>5871</mission_id>
+			<mission_id>5872</mission_id>
+			<mission_id>5873</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2122' />
+			<card level='5' id='512' />
+			<card level='6' id='2027' />
+			<item level='7' id='3069' />
+		</rewards>
+		<find_item id='3068' drop_per_energy='.6' />
+	</campaign>
+	
+	<campaign> 
+		<id>1161</id>
+		<name>Crimsonwing Angels</name>
+		<campaign_req id='1160' level='1' />
+		<locked_start_time>1521738000</locked_start_time>	| Thu, 22 March 2018 17:00:00 |
+		<battleground_id>2035</battleground_id>
+		<location_id>14</location_id>
+		<x>470</x>
+		<y>190</y>
+		<combatBG>CombatBGEvent008</combatBG>
+		<missions>
+			<mission_id>5874</mission_id>
+			<mission_id>5875</mission_id>
+			<mission_id>5876</mission_id>
+			<mission_id>5877</mission_id>
+			<mission_id>5878</mission_id>
+			<mission_id>5879</mission_id>
+			<mission_id>5880</mission_id>
+			<mission_id>5881</mission_id>
+			<mission_id>5882</mission_id>
+			<mission_id>5883</mission_id>
+			<mission_id>5884</mission_id>
+			<mission_id>5885</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2122' />
+			<card level='5' id='512' />
+			<card level='6' id='2027' />
+			<item level='7' id='3069' />
+		</rewards>
+		<find_item id='3068' drop_per_energy='.8' />
+	</campaign>
+	-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

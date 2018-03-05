@@ -27070,7 +27070,7 @@
     <desc>The ceiling's mural shifts beneath your gaze. The pictures change the longer you stare, playing out a story. There appears small groups in the painting, of goblins and orcs. They fight against another group of creatures...</desc>
     <commander id="313" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="5012" name="Static Drake" />
       <card id="5010" name="Concealed Dragon" />
       <card id="7128" name="Denizen of the Trees" />
@@ -27106,7 +27106,7 @@
     <desc>A new symbol of red wings appears, uniting the creatures being attacked. The red wings rally the creatures, leading them against the goblins and orcs. Razi continues her history lesson.</desc>
     <commander id="362" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8105" name="Divine Statue" />
       <card id="7012" name="Life Drake" />
       <card id="6097" name="Hoard Dragon" />
       <card id="7062" name="Brine Bellower" />
@@ -27137,7 +27137,7 @@
     <desc>As Razi talks, the mural shifts again. The angels in the picture become larger and more life-like. Next to you, Yuriel shouts in alarm and points towards the books. Identical warriors to the ones in the mural have appeared, prepared for combat!</desc>
     <commander id="407" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8104" name="Celestial Statue" />
       <card id="6012" name="Ember Drake" />
       <card id="6061" name="Decagon" />
       <card id="7061" name="Thickskin Dragon" />
@@ -27153,5 +27153,708 @@
       <card id="5128" mastery_level="6" name="Torchrime Terrorizer" />
       <card id="7069" mastery_level="7" name="Stoneblade Seraphim" />
     </deck>
+  </mission>
+  <mission>
+    <id>5864</id>
+    <name>Unification</name>
+    <energy>9</energy>
+    <desc>You fight off history's replicas, each defeated guardian disappearing as soon as you strike the final blow. The mural's image has shifted again, matching Razi's words.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7012" name="Life Drake" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1030" name="Paladin" />
+      <card id="7118" mastery_level="2" name="Fleetfoot Wolper" />
+      <card id="5118" mastery_level="3" name="Chalice Courier" />
+      <card id="2029" mastery_level="4" name="Sly Critters" />
+      <card id="6074" mastery_level="5" name="Deific Channeler" />
+      <card id="5029" mastery_level="6" name="Snowback Dragon" />
+      <card id="6040" mastery_level="7" name="Scorching Cutlass" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>The threat was gone, but the Crimson Hero imagined a greater future. She attempted to unify all the winged tribes...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5865</id>
+    <name>Bluefire's Promise</name>
+    <energy>9</energy>
+    <desc>The painting changes to show a dragon, one with blue wings and a burning heart. It looms terrifyingly over the symbol of red wings...</desc>
+    <commander id="381" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2084" mastery_level="2" name="Apocalypse Rider" />
+      <card id="2052" mastery_level="3" name="Protector of Skyhaven" />
+      <card id="7038" mastery_level="4" name="Sol King" />
+      <card id="5031" mastery_level="5" name="Frostlance Valkyrie" />
+      <card id="6099" mastery_level="6" name="Opposing Forces" />
+      <card id="7096" mastery_level="7" name="Vala, Sleeping Earth" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>A great dragon from another dimension reached out to the Crimson Hero. The Blue Dragon of Fire promised to unite the tribes peacefully...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5866</id>
+    <name>Trance Peace</name>
+    <energy>9</energy>
+    <desc>Dark energy radiates from the dragon image. It taints the area around it, spreading across the mural.</desc>
+    <commander id="355" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7012" name="Life Drake" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="6119" mastery_level="2" name="Shadowy Muse" />
+      <card id="5040" mastery_level="3" name="Winged Trumpeter" />
+      <card id="2085" mastery_level="4" name="Faithstay Supplier" />
+      <card id="5043" mastery_level="5" name="Empyrean" />
+      <card id="6060" mastery_level="6" name="Pudgytusk" />
+      <card id="7132" mastery_level="7" name="Bastion Percher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>But the peace that Bluefire offered was false. It rotted the land, and destroyed the minds of the Crimson Hero's loved ones.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5867</id>
+    <name>Tainted World</name>
+    <energy>9</energy>
+    <desc>The red wings remain free from the dragon's darkness, but the area around it has been corrupted. The rest of the mural has been draped in spiderweb-like darkness.</desc>
+    <commander id="381" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="5012" name="Static Drake" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="2054" name="Pack Runner" />
+      <card id="6038" name="Hemlock" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2030" mastery_level="2" name="Ebon Duelist" />
+      <card id="7116" mastery_level="3" name="Watchful Hexhound" />
+      <card id="1030" mastery_level="4" name="Paladin" />
+      <card id="5039" mastery_level="5" name="Ethereal Knight" />
+      <card id="6062" mastery_level="6" name="Abzu" />
+      <card id="7127" mastery_level="7" name="Basilclaw Clutch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>The Hero cried out for the dragon to stop, but he did not listen.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5868</id>
+    <name>Hero's Fight</name>
+    <energy>9</energy>
+    <desc>The red wings confront the dragon figure. Part of the mural's clarity is restored, the darkness creeping away from the two figures.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7012" name="Life Drake" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="6061" name="Decagon" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6070" name="Petrifier" />
+      <card id="7070" mastery_level="2" name="Laughing Menace" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="1025" mastery_level="4" name="Lightbound Archer" />
+      <card id="6073" mastery_level="5" name="Obsidian" />
+      <card id="6009" mastery_level="6" name="Siphon Dragon" />
+      <card id="5121" mastery_level="7" name="Cauterizing Psalm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>And so the Hero plunged into The Void Plane, where the dragon hid, to prevent his essence from tainting more of her world.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5869</id>
+    <name>Weak Heart</name>
+    <energy>9</energy>
+    <desc>The image twists again, white spikes growing around the red wings and dragon images. A heart appears between the two...</desc>
+    <commander id="381" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="5072" name="Blind Seer" />
+      <card id="6070" name="Petrifier" />
+      <card id="1327" mastery_level="2" name="Fallen Angel" />
+      <card id="7116" mastery_level="3" name="Watchful Hexhound" />
+      <card id="7073" mastery_level="4" name="Heralded Slugger" />
+      <card id="5075" mastery_level="5" name="Arith" />
+      <card id="7060" mastery_level="6" name="Shenami" />
+      <card id="5116" mastery_level="7" name="Justice" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>A great battle ensued, but the Hero realized that Bluefire's heart was his weakness.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>Without it, he could not leave The Void Plane. So she pulled it from his chest, and fled.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5870</id>
+    <name>Winged Battle</name>
+    <energy>9</energy>
+    <desc>The dragon image contorts into a fierce snarl. Its claw lifts towards the heart, but the heart draws closer to the red wings.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="5012" name="Static Drake" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7038" name="Sol King" />
+      <card id="7116" mastery_level="2" name="Watchful Hexhound" />
+      <card id="7116" mastery_level="3" name="Watchful Hexhound" />
+      <card id="2030" mastery_level="4" name="Ebon Duelist" />
+      <card id="5071" mastery_level="5" name="Stoic Watcher" />
+      <card id="7008" mastery_level="6" name="Rock Dragon" />
+      <card id="5120" mastery_level="7" name="Seraph of Stone Rise" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>Bluefire would not let her win so easily...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5871</id>
+    <name>Lost in the Abyss</name>
+    <energy>9</energy>
+    <desc>The red wings, still holding the heart, vanish from the mural. The webbed darkness inverts, turning upon the dragon, eventually swallowing him and leaving nothing left.</desc>
+    <commander id="355" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1030" name="Paladin" />
+      <card id="7038" name="Sol King" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2030" mastery_level="2" name="Ebon Duelist" />
+      <card id="5072" mastery_level="3" name="Blind Seer" />
+      <card id="2084" mastery_level="4" name="Apocalypse Rider" />
+      <card id="5077" mastery_level="5" name="Everspark Ace" />
+      <card id="6132" mastery_level="6" name="Deception Scalelord" />
+      <card id="1042" mastery_level="7" name="Archgeneral" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>Bluefire tossed the world's memories of the hero into the abyss.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>The Crimson Hero's name and exploits, and those of her closest allies, would be forgotten by all.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5872</id>
+    <name>Curious Malchior</name>
+    <energy>9</energy>
+    <desc>While Razi is telling her story, and while you and Yuriel fight off the strange statue apparitions, Malchior conducts his own search. He begins poking around the library surrounding the mural...</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7012" name="Life Drake" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="2090" name="Terra Dweller" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="1030" name="Paladin" />
+      <card id="1031" name="Noble Champion" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="6119" mastery_level="2" name="Shadowy Muse" />
+      <card id="7070" mastery_level="3" name="Laughing Menace" />
+      <card id="2084" mastery_level="4" name="Apocalypse Rider" />
+      <card id="5003" mastery_level="5" name="White Knight" />
+      <card id="6128" mastery_level="6" name="Grimhunt Wings" />
+      <card id="1041" mastery_level="7" name="Avenging Angel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5873</id>
+    <name>The Hidden Tome</name>
+    <energy>9</energy>
+    <desc>Malchior pulls out a book with a thick binder. It's black and with golden trim. He pages through it, eyes lighting up, and sidles up close to you while Razi continues to talk...</desc>
+    <commander id="362" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="7012" name="Life Drake" />
+      <card id="6061" name="Decagon" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7038" name="Sol King" />
+      <card id="6070" name="Petrifier" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="2027" name="Halo Mage" />
+      <card id="5040" mastery_level="2" name="Winged Trumpeter" />
+      <card id="2085" mastery_level="3" name="Faithstay Supplier" />
+      <card id="2084" mastery_level="4" name="Apocalypse Rider" />
+      <card id="7040" mastery_level="5" name="Warden of the Leaf" />
+      <card id="6024" mastery_level="6" name="Bane Dragon" />
+      <card id="7119" mastery_level="7" name="Bunnpaa" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Psst.... adventurer, take a look at this. This book looks like it's written in a strange language, but I don't think it's that simple...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5874</id>
+    <name>Coded Writings</name>
+    <energy>9</energy>
+    <desc>Malchior continues to go through the book. The words are strange, as if written in a different language, but Malchior seems to have a different theory...</desc>
+    <commander id="362" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2029" name="Sly Critters" />
+      <card id="1030" name="Paladin" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="2085" mastery_level="2" name="Faithstay Supplier" />
+      <card id="2084" mastery_level="3" name="Apocalypse Rider" />
+      <card id="5023" mastery_level="4" name="Nightfall Dragon" />
+      <card id="2028" mastery_level="5" name="Infinity" />
+      <card id="7094" mastery_level="6" name="Basilisk" />
+      <card id="6074" mastery_level="7" name="Deific Channeler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>This book is actually written in some kind of code!</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Now wait a tick, there must be an amazing secret inside...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5875</id>
+    <name>Void-Touched Power</name>
+    <energy>9</energy>
+    <desc>Malchior decodes part of the book. He surmises that there is some kind of great secret hidden in its pages, and believes he has found an important clue.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="5040" mastery_level="2" name="Winged Trumpeter" />
+      <card id="2052" mastery_level="3" name="Protector of Skyhaven" />
+      <card id="5023" mastery_level="4" name="Nightfall Dragon" />
+      <card id="5076" mastery_level="5" name="Sorath, the Valkyrie" />
+      <card id="2006" mastery_level="6" name="Zhulong" />
+      <card id="6120" mastery_level="7" name="Oni Blade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>The general subject seems to be about a hidden power, accessible to those who were touched by The Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5876</id>
+    <name>Interrupted Story</name>
+    <energy>9</energy>
+    <desc>Razi drones on her lesson of the past. As she nears finishing her story, she stops, seeing Malchior waving the book in front of you.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="5072" mastery_level="2" name="Blind Seer" />
+      <card id="5117" mastery_level="3" name="Spark Chronicler" />
+      <card id="5026" mastery_level="4" name="Frostfire Wyrm" />
+      <card id="7072" mastery_level="5" name="Murabi" />
+      <card id="1340" mastery_level="6" name="Blazekin Dragon" />
+      <card id="2055" mastery_level="7" name="Wrath" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>The Crimsonwinged Hero will return soon. The only way to avoid her reckoning...</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>... What's that book you're holding?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5877</id>
+    <name>Subtle Discovery</name>
+    <energy>9</energy>
+    <desc>Malchior proudly holds up the book so that Razi can also see what he has found. Yuriel hisses at the sage, but Malchior is unashamed of the secrets he's uncovered.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="6070" name="Petrifier" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="6119" mastery_level="2" name="Shadowy Muse" />
+      <card id="5117" mastery_level="3" name="Spark Chronicler" />
+      <card id="6130" mastery_level="4" name="Shadowed Wyvern" />
+      <card id="6117" mastery_level="5" name="Whispering Ophanim" />
+      <card id="1040" mastery_level="6" name="Storm Dragon" />
+      <card id="6182" mastery_level="7" name="Ezuth the Expelled" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>I've found this amazing book about some kind of secret power, hidden away in a barren wasteland!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Malchior! Why did you tell her that?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5878</id>
+    <name>Stolen Knowledge</name>
+    <energy>9</energy>
+    <desc>Razi's face darkens. An uncomfortable amount of silence passes. Malchior slowly turns the book away from her, hiding the tome within his shirt. There is an extremely noticeable lump beneath his clothes where he's stashed it.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2029" name="Sly Critters" />
+      <card id="7118" mastery_level="2" name="Fleetfoot Wolper" />
+      <card id="7116" mastery_level="3" name="Watchful Hexhound" />
+      <card id="7032" mastery_level="4" name="Nidhogg" />
+      <card id="2086" mastery_level="5" name="Rimelight Crusader" />
+      <card id="1040" mastery_level="6" name="Storm Dragon" />
+      <card id="6182" mastery_level="7" name="Ezuth the Expelled" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>That power is reserved for those who have sworn their service to the Crimsonwings.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5879</id>
+    <name>Expected Betrayal</name>
+    <energy>9</energy>
+    <desc>Malchior smiles awkwardly at Razi's furious glower. A light shines from the mural, tracing the shapes of angelic guardians, far more than you faced previously.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="2085" mastery_level="2" name="Faithstay Supplier" />
+      <card id="1327" mastery_level="3" name="Fallen Angel" />
+      <card id="5063" mastery_level="4" name="Runic Dragon" />
+      <card id="6177" mastery_level="5" name="Diabolic Summoner" />
+      <card id="6026" mastery_level="6" name="Smokefang" />
+      <card id="2028" mastery_level="7" name="Infinity" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Razi? You're not going to try and kill us now, are you?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5880</id>
+    <name>Gathering Resolve</name>
+    <energy>9</energy>
+    <desc>The outline of the images glow, taking form from the mural's drawings. Razi rises at their center...</desc>
+    <commander id="355" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7095" name="Talonsaur" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="7038" name="Sol King" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2054" name="Pack Runner" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="1030" mastery_level="3" name="Paladin" />
+      <card id="5061" mastery_level="4" name="Thunderfist Rex" />
+      <card id="1042" mastery_level="5" name="Archgeneral" />
+      <card id="5008" mastery_level="6" name="Ice Dragon" />
+      <card id="1041" mastery_level="7" name="Avenging Angel" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>You are a champion who defeated Bluefire. I know I lack that power, yet even so...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5881</id>
+    <name>Destroyed Knowledge</name>
+    <energy>9</energy>
+    <desc>The library trembles. You turn to the room's exit, only to find that more guardians have arrived behind you, blocking your path.</desc>
+    <commander id="355" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="6061" name="Decagon" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2054" name="Pack Runner" />
+      <card id="2054" name="Pack Runner" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="1025" mastery_level="3" name="Lightbound Archer" />
+      <card id="7060" mastery_level="4" name="Shenami" />
+      <card id="7040" mastery_level="5" name="Warden of the Leaf" />
+      <card id="2006" mastery_level="6" name="Zhulong" />
+      <card id="7071" mastery_level="7" name="Gorilleus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>I see you have no intention of leaving the continent. </text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>If the knowledge here will be used against us Crimsonwings, then the library is better off destroyed!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5882</id>
+    <name>Inevitable Conflict</name>
+    <energy>9</energy>
+    <desc>The ground lurches, a terrible cracking sound resounding through the walls. Razi points her winged allies to attack you and your group.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1030" mastery_level="2" name="Paladin" />
+      <card id="5117" mastery_level="3" name="Spark Chronicler" />
+      <card id="6058" mastery_level="4" name="Tarragon Cuttail" />
+      <card id="7117" mastery_level="5" name="Rael, Skyhaven Giant" />
+      <card id="6062" mastery_level="6" name="Abzu" />
+      <card id="6074" mastery_level="7" name="Deific Channeler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>You have already wasted precious time here while our allies our busy.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>1</enemy>
+        <text>Now, be trapped beneath the rubble!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5883</id>
+    <name>Angelic Flight</name>
+    <energy>9</energy>
+    <desc>You, Malchior, and Yuriel fight against the legion of angels. You focus on clearing a path, while Yuriel and Malchior handle the angels behind you.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="2090" name="Terra Dweller" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="1030" name="Paladin" />
+      <card id="5118" mastery_level="2" name="Chalice Courier" />
+      <card id="7038" mastery_level="3" name="Sol King" />
+      <card id="6009" mastery_level="4" name="Siphon Dragon" />
+      <card id="6071" mastery_level="5" name="Masked Heraid" />
+      <card id="6059" mastery_level="6" name="Violetfire Igniter" />
+      <card id="7069" mastery_level="7" name="Stoneblade Seraphim" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5884</id>
+    <name>Overstayed Welcome</name>
+    <energy>9</energy>
+    <desc>The moment the path is clear, the three of you bolt towards the exit. However, the invisible maze and a host of other unactivated traps impede your progress.</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="7095" name="Talonsaur" />
+      <card id="1031" name="Noble Champion" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1030" name="Paladin" />
+      <card id="2052" mastery_level="2" name="Protector of Skyhaven" />
+      <card id="7118" mastery_level="3" name="Fleetfoot Wolper" />
+      <card id="6099" mastery_level="4" name="Opposing Forces" />
+      <card id="5039" mastery_level="5" name="Ethereal Knight" />
+      <card id="6060" mastery_level="6" name="Pudgytusk" />
+      <card id="2086" mastery_level="7" name="Rimelight Crusader" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>As fascinating as this conversation is, I do believe it's time to leave!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5885</id>
+    <name>Yuriel's Escape Plan</name>
+    <energy>9</energy>
+    <desc>Yuriel takes the lead point. He waves his wing, the runes activating and showing the path through the maze.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="2027" name="Halo Mage" />
+      <card id="5040" mastery_level="2" name="Winged Trumpeter" />
+      <card id="6070" mastery_level="3" name="Petrifier" />
+      <card id="7096" mastery_level="4" name="Vala, Sleeping Earth" />
+      <card id="6039" mastery_level="5" name="Auroch" />
+      <card id="5023" mastery_level="6" name="Nightfall Dragon" />
+      <card id="2086" mastery_level="7" name="Rimelight Crusader" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Don't panic! Follow the marks I made on our way in.</text>
+      </line>
+    </speech>
   </mission>
 </root>

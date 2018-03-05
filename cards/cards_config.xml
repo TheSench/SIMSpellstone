@@ -111,7 +111,7 @@
     <id>absorb</id>
     <order>20</order>
     <icon>absorb</icon>
-    <name>Absorb</name>
+    <name>Ward</name>
     <desc>Reduces the next damage dealt to this creature from skills.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
@@ -378,9 +378,9 @@
     <order>240</order>
     <icon>daze</icon>
     <name>Daze</name>
-    <desc>When this creature deals attack damage, reduce the Attack of damaged creature.</desc>
+    <desc>When this creature deals attack damage, reduce the Attack of the damaged creature.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
+    <balance_points>1.5</balance_points>
   </skillType>
   <skillType>
     <id>leech</id>

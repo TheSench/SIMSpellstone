@@ -64354,6 +64354,277 @@ var CARDS = {
       },
     }
   },
+  "5186": {
+    "id": "5186",
+    "name": "Priestess of Mending",
+    "picture": "Priestess_Angel_A",
+    "hidden_until": "1520269200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 9,
+    "attack": 3,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "6",
+          },
+        ],
+      },
+      "6": {
+        "health": 12,
+        "skill": [],
+      },
+    }
+  },
+  "15186": {
+    "id": "15186",
+    "name": "Priestess of Radiance",
+    "picture": "Priestess_Angel_A",
+    "hidden_until": "1520269200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 12,
+    "attack": 4,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "6",
+          },
+        ],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "6",
+          },
+        ],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "6",
+          },
+        ],
+      },
+    }
+  },
+  "25186": {
+    "id": "25186",
+    "name": "Priestess of Light",
+    "picture": "Priestess_Angel_B",
+    "hidden_until": "1520269200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 15,
+    "attack": 4,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 4,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "6",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "6",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "6",
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -127530,7 +127801,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "3",
-    "sub_type": ["9","4"],
+    "sub_type": ["4","9"],
     "health": 13,
     "attack": 3,
     "cost": 2,
@@ -127628,7 +127899,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "3",
-    "sub_type": ["9","4"],
+    "sub_type": ["4","9"],
     "health": 18,
     "attack": 4,
     "cost": 2,
@@ -127712,7 +127983,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "3",
-    "sub_type": ["9","4"],
+    "sub_type": ["4","9"],
     "health": 22,
     "attack": 6,
     "cost": 2,
@@ -148826,6 +149097,303 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "7183": {
+    "id": "7183",
+    "name": "Monastery Angel",
+    "picture": "Martial_Artist_Angel_A",
+    "hidden_until": "1519923600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["6"],
+    "health": 12,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "3",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "6",
+        "all": "1",
+      },
+      {
+        "id": "daze",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "17183": {
+    "id": "17183",
+    "name": "Monastery Keeper",
+    "picture": "Martial_Artist_Angel_A",
+    "hidden_until": "1519923600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["6"],
+    "health": 15,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "3",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "6",
+        "all": "1",
+      },
+      {
+        "id": "daze",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "27183": {
+    "id": "27183",
+    "name": "Monastery Monk",
+    "picture": "Martial_Artist_Angel_B",
+    "hidden_until": "1519923600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["6"],
+    "health": 17,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 6,
+        "y": "3",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "6",
+        "all": "1",
+      },
+      {
+        "id": "daze",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "3",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "6",
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 6,
           },
         ],
       },
@@ -205694,36 +206262,6 @@ var CARDS = {
   },
   "9979": {
     "id": "9979",
-    "name": "Unused Art - 'Martial_Artist_Angel'",
-    "picture": "Martial_Artist_Angel_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19979": {
-    "id": "19979",
-    "name": "Unused Art - 'Martial_Artist_Angel'",
-    "picture": "Martial_Artist_Angel_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9978": {
-    "id": "9978",
     "name": "Unused Art - 'Mergoat_Capricorn'",
     "picture": "Mergoat_Capricorn_A",
     "rarity": "0",
@@ -205737,8 +206275,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19978": {
-    "id": "19978",
+  "19979": {
+    "id": "19979",
     "name": "Unused Art - 'Mergoat_Capricorn'",
     "picture": "Mergoat_Capricorn_B",
     "rarity": "0",
@@ -205752,8 +206290,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9977": {
-    "id": "9977",
+  "9978": {
+    "id": "9978",
     "name": "Unused Art - 'Merman_Guardian'",
     "picture": "Merman_Guardian_A",
     "rarity": "0",
@@ -205767,8 +206305,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19977": {
-    "id": "19977",
+  "19978": {
+    "id": "19978",
     "name": "Unused Art - 'Merman_Guardian'",
     "picture": "Merman_Guardian_B",
     "rarity": "0",
@@ -205782,8 +206320,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29976": {
-    "id": "29976",
+  "29977": {
+    "id": "29977",
     "name": "Unused Art - 'Monster'",
     "picture": "Monster_C",
     "rarity": "0",
@@ -205797,8 +206335,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29975": {
-    "id": "29975",
+  "29976": {
+    "id": "29976",
     "name": "Unused Art - 'Mythic_Avian'",
     "picture": "Mythic_Avian_C",
     "rarity": "0",
@@ -205812,8 +206350,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19974": {
-    "id": "19974",
+  "19975": {
+    "id": "19975",
     "name": "Unused Art - 'Mythic_Dragon'",
     "picture": "Mythic_Dragon_B",
     "rarity": "0",
@@ -205827,8 +206365,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9973": {
-    "id": "9973",
+  "9974": {
+    "id": "9974",
     "name": "Unused Art - 'Mythic_Seafolk'",
     "picture": "Mythic_Seafolk_A",
     "rarity": "0",
@@ -205842,8 +206380,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9972": {
-    "id": "9972",
+  "9973": {
+    "id": "9973",
     "name": "Unused Art - 'Mythic_Undead'",
     "picture": "Mythic_Undead_A",
     "rarity": "0",
@@ -205857,8 +206395,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9971": {
-    "id": "9971",
+  "9972": {
+    "id": "9972",
     "name": "Unused Art - 'Oda'",
     "picture": "Oda_A",
     "rarity": "0",
@@ -205872,8 +206410,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19971": {
-    "id": "19971",
+  "19972": {
+    "id": "19972",
     "name": "Unused Art - 'Oda'",
     "picture": "Oda_B",
     "rarity": "0",
@@ -205887,8 +206425,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29971": {
-    "id": "29971",
+  "29972": {
+    "id": "29972",
     "name": "Unused Art - 'Oda'",
     "picture": "Oda_C",
     "rarity": "0",
@@ -205902,38 +206440,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9970": {
-    "id": "9970",
-    "name": "Unused Art - 'Priestess_Angel'",
-    "picture": "Priestess_Angel_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19970": {
-    "id": "19970",
-    "name": "Unused Art - 'Priestess_Angel'",
-    "picture": "Priestess_Angel_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19969": {
-    "id": "19969",
+  "19971": {
+    "id": "19971",
     "name": "Unused Art - 'Promo_Dragon'",
     "picture": "Promo_Dragon_B",
     "rarity": "0",
@@ -205947,8 +206455,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9968": {
-    "id": "9968",
+  "9970": {
+    "id": "9970",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_A",
     "rarity": "0",
@@ -205962,8 +206470,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19968": {
-    "id": "19968",
+  "19970": {
+    "id": "19970",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_B",
     "rarity": "0",
@@ -205977,8 +206485,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9967": {
-    "id": "9967",
+  "9969": {
+    "id": "9969",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_A",
     "rarity": "0",
@@ -205992,8 +206500,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19967": {
-    "id": "19967",
+  "19969": {
+    "id": "19969",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_B",
     "rarity": "0",
@@ -206007,8 +206515,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9966": {
-    "id": "9966",
+  "9968": {
+    "id": "9968",
     "name": "Unused Art - 'Tarian'",
     "picture": "Tarian_A",
     "rarity": "0",
@@ -206022,8 +206530,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9965": {
-    "id": "9965",
+  "9967": {
+    "id": "9967",
     "name": "Unused Art - 'Tremor_Wurm'",
     "picture": "Tremor_Wurm_A",
     "rarity": "0",
@@ -206037,8 +206545,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9964": {
-    "id": "9964",
+  "9966": {
+    "id": "9966",
     "name": "Unused Art - 'Unused1'",
     "picture": "Unused1_A",
     "rarity": "0",
@@ -206052,8 +206560,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9963": {
-    "id": "9963",
+  "9965": {
+    "id": "9965",
     "name": "Unused Art - 'Unused2'",
     "picture": "Unused2_A",
     "rarity": "0",
@@ -206067,8 +206575,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9962": {
-    "id": "9962",
+  "9964": {
+    "id": "9964",
     "name": "Unused Art - 'Unused3'",
     "picture": "Unused3_A",
     "rarity": "0",
@@ -206082,8 +206590,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9961": {
-    "id": "9961",
+  "9963": {
+    "id": "9963",
     "name": "Unused Art - 'Ursurio'",
     "picture": "Ursurio_A",
     "rarity": "0",
@@ -206097,8 +206605,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9960": {
-    "id": "9960",
+  "9962": {
+    "id": "9962",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_A",
     "rarity": "0",
@@ -206112,8 +206620,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19960": {
-    "id": "19960",
+  "19962": {
+    "id": "19962",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_B",
     "rarity": "0",
@@ -206127,8 +206635,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9959": {
-    "id": "9959",
+  "9961": {
+    "id": "9961",
     "name": "Unused Art - 'Void_Abomination'",
     "picture": "Void_Abomination_A",
     "rarity": "0",
@@ -206142,8 +206650,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9958": {
-    "id": "9958",
+  "9960": {
+    "id": "9960",
     "name": "Unused Art - 'Yuriel'",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -206158,4 +206666,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1519670638438.9;
+var CardsUpdated = 1520256576308.37;

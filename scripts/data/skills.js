@@ -1,6 +1,6 @@
 var SKILL_DATA = {
 	absorb : {
-		name: 'Absorb',
+		name: 'Ward',
 		type: 'passive',
 		icon: 'absorb',
 		desc: 'Reduces the next damage dealt to this creature from skills.'
@@ -57,7 +57,7 @@ var SKILL_DATA = {
 		name: 'Daze',
 		type: 'passive',
 		icon: 'daze',
-		desc: 'When this creature deals attack damage, reduce the Attack of damaged creature.'
+		desc: 'When this creature deals attack damage, reduce the Attack of the damaged creature.'
 	},
 	enfeeble : {
 		name: 'Hex',

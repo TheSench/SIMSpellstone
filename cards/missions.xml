@@ -120,6 +120,11 @@
     <vip_req>4</vip_req>
     <!-- 4 -->
   </feature_lock>
+  <feature_lock>
+    <id>kongcrosspromo</id>
+    <mission_req>11</mission_req>
+    <!-- -1 -->
+  </feature_lock>
   <!-- COMBAT OPTIONS -->
   <feature_lock>
     <id>combatspeed</id>

@@ -422,10 +422,10 @@
   <battleground>
     <id>120</id>
     <name>Dragonfire</name>
-    <desc>Dragons gain Scorch equal to 15% of their base Health.</desc>
+    <desc>Dragons gain Scorch equal to 20% of their base Health.</desc>
     <icon>filter_dragon_64.png</icon>
     <effect>
-      <add_skill id="burn" mult="0.15" base="health" y="9" />
+      <add_skill id="burn" mult="0.2" base="health" y="9" />
     </effect>
   </battleground>
   <battleground>
@@ -1415,6 +1415,41 @@
     <!-- Starting Mastery Level -->
     <effect>
       <scale_attributes base_mult=".2" mult=".03" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 8 -->
+  <battleground>
+    <id>2034</id>
+    <name>Crystalsky Hymn</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2035</id>
+    <name>Crystalsky Hymn</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".01" />
     </effect>
   </battleground>
   <!-- ==================== -->
