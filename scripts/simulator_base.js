@@ -2435,6 +2435,27 @@ var SIMULATOR = {};
 			current_assault.dualstrike_triggered = false;
 			current_assault.silenced = false;
 
+			// Regenerate
+			if (current_assault.regenerate && current_assault.isDamaged()) {
+
+				var regen_health = current_assault.regenerate;
+				var enhanced = getEnhancement(current_assault, 'regenerate');
+				if (enhanced) {
+					if (enhanced < 0) {
+						enhanced = Math.ceil(regen_health * -enhanced);
+					}
+					regen_health += enhanced;
+				}
+				var healthMissing = current_assault.health - current_assault.health_left;
+				if (regen_health >= healthMissing) {
+					regen_health = healthMissing;
+				}
+
+				current_assault.health_left += regen_health;
+				if (debug) echo += debug_name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
+			}
+
+			// Poison
 			var amount = current_assault.poisoned;
 			if (amount) {
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
@@ -2443,6 +2464,7 @@ var SIMULATOR = {};
 				});
 			}
 
+			// Venom
 			var amount = current_assault.envenomed;
 			if (amount) {
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
@@ -2451,6 +2473,7 @@ var SIMULATOR = {};
 				});
 			}
 
+			// Scorch
 			var scorch = current_assault.scorched;
 			if (scorch) {
 				amount = scorch['amount'];
@@ -2490,26 +2513,6 @@ var SIMULATOR = {};
 
 			if (!current_assault.isAlive()) {
 				doOnDeathSkills(current_assault, null);
-			} else {
-				// Regenerate
-				if (current_assault.regenerate && current_assault.isDamaged()) {
-
-					var regen_health = current_assault.regenerate;
-					var enhanced = getEnhancement(current_assault, 'regenerate');
-					if (enhanced) {
-						if (enhanced < 0) {
-							enhanced = Math.ceil(regen_health * -enhanced);
-						}
-						regen_health += enhanced;
-					}
-					var healthMissing = current_assault.health - current_assault.health_left;
-					if (regen_health >= healthMissing) {
-						regen_health = healthMissing;
-					}
-
-					current_assault.health_left += regen_health;
-					if (debug) echo += debug_name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
-				}
 			}
 		}
 	};
