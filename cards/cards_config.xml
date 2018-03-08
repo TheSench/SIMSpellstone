@@ -158,12 +158,12 @@
   </skillType>
   <skillType>
     <id>regenerate</id>
-    <order>500</order>
+    <order>70</order>
     <icon>regenerate</icon>
     <name>Regenerate</name>
     <desc>Heals itself at the end of turn, even while on delay.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
+    <balance_points>3</balance_points>
   </skillType>
   <!-- Triggered -->
   <skillType>

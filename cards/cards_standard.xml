@@ -2394,6 +2394,8 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>6</attack>
+      <health>38</health>
       <skill id="armored" x="4" />
       <skill id="protect" x="3" all="1" />
       <skill id="flurry" c="3" />
@@ -2406,8 +2408,8 @@
     <name>Stormcleaver Dragon</name>
     <picture>Storm_Dragon_C</picture>
     <asset_bundle>2</asset_bundle>
-    <attack>6</attack>
-    <health>34</health>
+    <attack>7</attack>
+    <health>40</health>
     <cost>4</cost>
     <skill id="armored" x="4" />
     <skill id="protect" x="3" all="1" />
@@ -2419,15 +2421,15 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>36</health>
+      <health>42</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>38</health>
+      <health>43</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>7</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -2437,6 +2439,8 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>9</attack>
+      <health>45</health>
       <skill id="armored" x="5" />
       <skill id="protect" x="3" all="1" />
       <skill id="flurry" c="2" />
@@ -5482,9 +5486,9 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="3" all="1" />
       <skill id="burn" x="4" />
-      <skill id="pierce" x="8" />
+      <skill id="pierce" x="10" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -5500,9 +5504,10 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="strike" x="3" all="1" />
-      <skill id="burn" x="4" />
-      <skill id="pierce" x="8" />
+      <health>36</health>
+      <skill id="strike" x="4" all="1" />
+      <skill id="burn" x="5" />
+      <skill id="pierce" x="11" />
     </upgrade>
   </unit>
   <unit>
@@ -8170,6 +8175,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>26</health>
       <skill id="armored" x="2" />
       <skill id="enfeeble" all="1" x="1" />
       <skill id="poison" x="5" />
@@ -8184,7 +8190,7 @@
     <picture>Poison_Dragon_B</picture>
     <asset_bundle>38</asset_bundle>
     <attack>6</attack>
-    <health>24</health>
+    <health>29</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="2" />
@@ -8196,7 +8202,7 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -8204,16 +8210,17 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>27</health>
+      <health>31</health>
       <skill id="armored" x="3" />
       <skill id="enfeeble" all="1" x="2" />
       <skill id="poison" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>28</health>
-      <skill id="armored" x="3" />
-      <skill id="enfeeble" all="1" x="2" />
+      <health>32</health>
+      <attack>8</attack>
+      <skill id="armored" x="4" />
+      <skill id="enfeeble" all="1" x="3" />
       <skill id="poison" x="7" />
     </upgrade>
   </unit>
