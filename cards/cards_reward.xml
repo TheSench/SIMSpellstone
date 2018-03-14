@@ -13998,7 +13998,7 @@
     <rarity>3</rarity>
     <skill id="armored" x="3" />
     <skill id="strike" x="1" all="1" />
-    <skill id="daze" x="3" />
+    <skill id="daze" x="4" />
     <type>1</type>
     <sub_type>9</sub_type>
     <sub_type>16</sub_type>
@@ -14019,7 +14019,7 @@
       <level>5</level>
       <skill id="armored" x="3" />
       <skill id="strike" x="1" all="1" />
-      <skill id="daze" x="4" />
+      <skill id="daze" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -14036,7 +14036,7 @@
     <rarity>3</rarity>
     <skill id="armored" x="3" />
     <skill id="strike" x="1" all="1" />
-    <skill id="daze" x="4" />
+    <skill id="daze" x="5" />
     <type>1</type>
     <sub_type>9</sub_type>
     <sub_type>16</sub_type>
@@ -14053,13 +14053,13 @@
       <level>4</level>
       <skill id="armored" x="4" />
       <skill id="strike" x="1" all="1" />
-      <skill id="daze" x="4" />
+      <skill id="daze" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="4" />
       <skill id="strike" x="2" all="1" />
-      <skill id="daze" x="5" />
+      <skill id="daze" x="6" />
     </upgrade>
   </unit>
 </root>

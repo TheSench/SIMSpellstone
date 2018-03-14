@@ -22996,4 +22996,137 @@
       <skill id="daze" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7184</id>
+    <card_type>2</card_type>
+    <name>Marshwing Rider</name>
+    <picture>Tropical_Dragon_Tamer_A</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1520528400</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="regenerate" x="3" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="4" />
+      <skill id="regenerate" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="regenerate" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="4" />
+      <skill id="regenerate" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17184</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Marshwing Shaman</name>
+    <picture>Tropical_Dragon_Tamer_A</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1520528400</hidden_until_time>
+    <attack>6</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="regenerate" x="4" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="corrosive" x="5" />
+      <skill id="regenerate" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="5" />
+      <skill id="regenerate" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="5" />
+      <skill id="regenerate" x="5" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27184</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Marshwing Torcher</name>
+    <picture>Tropical_Dragon_Tamer_B</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1520528400</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="regenerate" x="5" />
+    <skill id="berserk" x="4" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="6" />
+      <skill id="regenerate" x="5" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="6" />
+      <skill id="regenerate" x="6" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
 </root>

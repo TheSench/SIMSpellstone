@@ -106107,6 +106107,490 @@ var CARDS = {
       },
     }
   },
+  "6183": {
+    "id": "6183",
+    "name": "Knowledge Hoarder",
+    "picture": "Library_Sand_Dragon_A",
+    "hidden_until": "1520528400000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "health": 29,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "9",
+      },
+      {
+        "id": "burn",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 31,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "health": 32,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "9",
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "16183": {
+    "id": "16183",
+    "name": "Knowledge Devourer",
+    "picture": "Library_Sand_Dragon_A",
+    "hidden_until": "1520528400000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "health": 33,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 4,
+        "y": "9",
+      },
+      {
+        "id": "burn",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "9",
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 34,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "skill": [],
+      },
+      "5": {
+        "health": 35,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "9",
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "26183": {
+    "id": "26183",
+    "name": "Knowledge Scorcher",
+    "picture": "Library_Sand_Dragon_B",
+    "hidden_until": "1520528400000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "health": 36,
+    "attack": 8,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 5,
+        "y": "9",
+      },
+      {
+        "id": "burn",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 37,
+        "skill": [],
+      },
+      "3": {
+        "attack": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 38,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "9",
+          },
+          {
+            "id": "burn",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 6,
+            "y": "9",
+          },
+          {
+            "id": "burn",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "6185": {
+    "id": "6185",
+    "name": "Heilong",
+    "picture": "Tower_Eater_Dragon_A",
+    "hidden_until": "1520874000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9","12"],
+    "health": 20,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "enrage",
+        "x": 5,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "enrage",
+            "x": 6,
+            "y": "12",
+          },
+        ],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "enrage",
+            "x": 6,
+            "y": "12",
+          },
+        ],
+      },
+      "6": {
+        "health": 23,
+        "skill": [],
+      },
+    }
+  },
+  "16185": {
+    "id": "16185",
+    "name": "Heilong the Angered",
+    "picture": "Tower_Eater_Dragon_A",
+    "hidden_until": "1520874000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9","12"],
+    "health": 23,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "enrage",
+        "x": 7,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "enrage",
+            "x": 7,
+            "y": "12",
+          },
+        ],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "enrage",
+            "x": 8,
+            "y": "12",
+          },
+        ],
+      },
+      "6": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "enrage",
+            "x": 8,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
+  "26185": {
+    "id": "26185",
+    "name": "Heilong the Enraged",
+    "picture": "Tower_Eater_Dragon_B",
+    "hidden_until": "1520874000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9","12"],
+    "health": 26,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 6,
+      },
+      {
+        "id": "frost",
+        "x": 4,
+      },
+      {
+        "id": "enrage",
+        "x": 8,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "enrage",
+            "x": 9,
+            "y": "12",
+          },
+        ],
+      },
+      "3": {
+        "attack": 8,
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "health": 28,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "enrage",
+            "x": 9,
+            "y": "12",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "frost",
+            "x": 5,
+          },
+          {
+            "id": "enrage",
+            "x": 10,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -149412,6 +149896,256 @@ var CARDS = {
       },
     }
   },
+  "7184": {
+    "id": "7184",
+    "name": "Marshwing Rider",
+    "picture": "Tropical_Dragon_Tamer_A",
+    "hidden_until": "1520528400000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 18,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "regenerate",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "regenerate",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "regenerate",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "regenerate",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17184": {
+    "id": "17184",
+    "name": "Marshwing Shaman",
+    "picture": "Tropical_Dragon_Tamer_A",
+    "hidden_until": "1520528400000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 21,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "regenerate",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "regenerate",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "regenerate",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "regenerate",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "27184": {
+    "id": "27184",
+    "name": "Marshwing Torcher",
+    "picture": "Tropical_Dragon_Tamer_B",
+    "hidden_until": "1520528400000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 24,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 5,
+      },
+      {
+        "id": "regenerate",
+        "x": 5,
+      },
+      {
+        "id": "berserk",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "regenerate",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
   "2000": {
     "id": "2000",
     "name": "Wasteland Nomad",
@@ -175232,7 +175966,7 @@ var CARDS = {
       },
       {
         "id": "daze",
-        "x": 3,
+        "x": 4,
       },
     ],
     "upgrades": {
@@ -175261,7 +175995,7 @@ var CARDS = {
           },
           {
             "id": "daze",
-            "x": 4,
+            "x": 5,
           },
         ],
       },
@@ -175293,7 +176027,7 @@ var CARDS = {
       },
       {
         "id": "daze",
-        "x": 4,
+        "x": 5,
       },
     ],
     "upgrades": {
@@ -175318,7 +176052,7 @@ var CARDS = {
           },
           {
             "id": "daze",
-            "x": 4,
+            "x": 5,
           },
         ],
       },
@@ -175335,7 +176069,7 @@ var CARDS = {
           },
           {
             "id": "daze",
-            "x": 5,
+            "x": 6,
           },
         ],
       },
@@ -175900,7 +176634,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 5,
+            "x": 4,
           },
           {
             "id": "strike",
@@ -175918,7 +176652,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 6,
+            "x": 5,
           },
           {
             "id": "strike",
@@ -175937,7 +176671,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 7,
+            "x": 5,
           },
           {
             "id": "strike",
@@ -175955,7 +176689,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 8,
+            "x": 6,
           },
           {
             "id": "strike",
@@ -175974,7 +176708,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 9,
+            "x": 7,
           },
           {
             "id": "strike",
@@ -175992,7 +176726,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 10,
+            "x": 8,
           },
           {
             "id": "strike",
@@ -176010,7 +176744,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 10,
+            "x": 8,
           },
           {
             "id": "strike",
@@ -176029,7 +176763,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 11,
+            "x": 9,
           },
           {
             "id": "strike",
@@ -176047,7 +176781,7 @@ var CARDS = {
           },
           {
             "id": "regenerate",
-            "x": 12,
+            "x": 10,
           },
           {
             "id": "strike",
@@ -186005,7 +186739,7 @@ var CARDS = {
     "skill": [
       {
         "id": "strike",
-        "x": 2,
+        "x": 3,
         "all": "1",
       },
       {
@@ -186014,7 +186748,7 @@ var CARDS = {
       },
       {
         "id": "pierce",
-        "x": 7,
+        "x": 9,
       },
     ],
     "upgrades": {
@@ -186036,16 +186770,44 @@ var CARDS = {
         ],
       },
       "3": {
+        "attack": 8,
         "health": 32,
         "skill": [],
       },
       "4": {
         "health": 33,
-        "skill": [],
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 11,
+          },
+        ],
       },
       "5": {
-        "attack": 8,
-        "skill": [],
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 11,
+          },
+        ],
       },
       "6": {
         "health": 36,
@@ -207304,4 +208066,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1520514209037.35;
+var CardsUpdated = 1521032312679.45;
