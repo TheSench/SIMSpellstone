@@ -495,22 +495,18 @@ var SIMULATOR = {};
 				// Check Protect/Enfeeble
 				var enfeeble = (target.enfeebled || 0);
 				var protect = (target.protected || 0);
-				var absorb = (target.absorb || 0);
+				var warded = (target.warded || 0);
 
 				strike_damage += enfeeble;
 				var shatter = false;
-				if (protect) {
-					if (strike_damage >= protect) {
-						shatter = target.barrier_ice;
-						target.protected = 0;
-						strike_damage -= protect;
-					} else {
-						target.protected -= strike_damage;
-						strike_damage = 0;
-					}
+				if (warded) {
+					strike_damage -= applyDamageReduction(target, 'warded', strike_damage);
 				}
-				if (absorb) {
-					strike_damage -= absorb;
+				if (protect) {
+					strike_damage -= applyDamageReduction(target, 'protected', strike_damage);
+					if (target.protected == 0) {
+						shatter = target.barrier_ice;
+					}
 				}
 
 				if (strike_damage < 0) {
@@ -534,7 +530,7 @@ var SIMULATOR = {};
 					if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					if (protect) echo += ' Barrier: -' + protect;
-					if (absorb) echo += ' Absorb: -' + absorb;
+					if (warded) echo += ' Ward: -' + warded;
 					echo += ') = ' + amount + ' damage</u><br>';
 					echo += debug_name(source) + ' bolts ' + debug_name(target) + ' for ' + amount + ' damage';
 					if (!target.isAlive()) {
@@ -778,8 +774,8 @@ var SIMULATOR = {};
 				var target = field_x_assaults[targets[key]];
 
 				// Check Evade
-				if (target['invisible']) {
-					target['invisible']--;
+				if (target.invisible) {
+					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
@@ -791,22 +787,18 @@ var SIMULATOR = {};
 				// Check Protect/Enfeeble
 				var enfeeble = (target.enfeebled || 0);
 				var protect = (target.protected || 0);
-				var absorb = (target.absorb || 0);
+				var warded = (target.warded || 0);
 
 				frost_damage += enfeeble;
 				var shatter = false;
-				if (protect) {
-					if (frost_damage >= protect) {
-						shatter = target.barrier_ice;
-						target.protected = 0;
-						frost_damage -= protect;
-					} else {
-						target.protected -= frost_damage;
-						frost_damage = 0;
-					}
+				if (warded) {
+					frost_damage -= applyDamageReduction(target, 'warded', frost_damage);
 				}
-				if (absorb) {
-					frost_damage -= absorb;
+				if (protect) {
+					frost_damage -= applyDamageReduction(target, 'protected', frost_damage);
+					if (target.protected == 0) {
+						shatter = target.barrier_ice;
+					}
 				}
 
 				if (frost_damage < 0) {
@@ -818,7 +810,7 @@ var SIMULATOR = {};
 					if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					if (protect) echo += ' Barrier: -' + protect;
-					if (absorb) echo += ' Absorb: -' + absorb;
+					if (warded) echo += ' Ward: -' + warded;
 					echo += ') = ' + amount + ' damage</u><br>';
 					echo += debug_name(source) + ' breathes frost at ' + debug_name(target) + ' for ' + amount + ' damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
@@ -875,8 +867,8 @@ var SIMULATOR = {};
 				var target = field_x_assaults[targets[key]];
 
 				// Check Evade
-				if (target['invisible']) {
-					target['invisible']--;
+				if (target.invisible) {
+					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
@@ -951,8 +943,8 @@ var SIMULATOR = {};
 				var target = field_x_assaults[targets[key]];
 
 				// Check Evade
-				if (target['invisible']) {
-					target['invisible']--;
+				if (target.invisible) {
+					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
@@ -1257,21 +1249,17 @@ var SIMULATOR = {};
 
 					// Check Protect/Enfeeble
 					var protect = (target.protected || 0);
-					var absorb = (target.absorb || 0);
+					var warded = (target.warded || 0);
 
 					var shatter = false;
-					if (protect) {
-						if (strike_damage >= protect) {
-							shatter = target.barrier_ice;
-							target['protected'] = 0;
-							strike_damage -= protect;
-						} else {
-							target['protected'] -= strike_damage;
-							strike_damage = 0;
-						}
+					if (warded) {
+						strike_damage -= applyDamageReduction(target, 'warded', strike_damage);
 					}
-					if (absorb) {
-						strike_damage -= absorb;
+					if (protect) {
+						strike_damage -= applyDamageReduction(target, 'protected', strike_damage);
+						if (target.protected == 0) {
+							shatter = target.barrier_ice;
+						}
 					}
 
 					if (strike_damage < 0) {
@@ -1282,7 +1270,7 @@ var SIMULATOR = {};
 						echo += '<u>(Barrage: +1';
 						if (enhanced) echo += ' Enhance: +' + enhanced;
 						if (protect) echo += ' Barrier: -' + protect;
-						if (absorb) echo += ' Absorb: -' + absorb;
+						if (warded) echo += ' Ward: -' + warded;
 						echo += ') = ' + amount + ' damage</u><br>';
 						echo += debug_name(source) + ' throws a bomb at ' + debug_name(target) + ' for ' + amount + ' damage';
 						echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
@@ -2077,6 +2065,7 @@ var SIMULATOR = {};
 			current_assault.invisible = 0;
 			current_assault.protected = 0;
 			current_assault.barrier_ice = 0;
+			current_assault.warded = 0;
 			current_assault.enhanced = {};
 			current_assault.removeImbue();
 
@@ -2297,21 +2286,11 @@ var SIMULATOR = {};
 		// Do Commander Early Activation Skills
 		doEarlyActivationSkills(field_p.commander);
 
-		// Reset invisibility count after enhance has had a chance to fire
+		// Reset invisibile/ward after enhance has had a chance to fire
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 			var current_assault = field_p_assaults[key];
-			if (current_assault.evade) {
-				current_assault.invisible = current_assault.evade;
-				var enhanced = getEnhancement(current_assault, 'evade');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(current_assault.invisible * -enhanced);
-					}
-					current_assault.invisible += enhanced;
-				}
-			} else {
-				current_assault.invisible = 0;
-			}
+			setPassiveStatus(current_assault, 'evade', 'invisible');
+			setPassiveStatus(current_assault, 'absorb', 'warded');
 		}
 
 		// Do Unit Early Activation Skills
@@ -2389,6 +2368,34 @@ var SIMULATOR = {};
 		if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 	};
 
+	function setPassiveStatus(assault, skillName, statusName) {
+		var statusValue = 0;
+
+		if (assault[skillName]) {
+			statusValue = assault[skillName];
+			var enhanced = getEnhancement(assault, skillName);
+			if (enhanced) {
+				if (enhanced < 0) {
+					enhanced = Math.ceil(statusValue * -enhanced);
+				}
+				statusValue += enhanced;
+			}
+		}
+
+		assault[statusName] = statusValue;
+	}
+
+	function applyDamageReduction(target, statusName, damage) {
+		var statusValue = target[statusName];
+		if (damage >= statusValue) {
+			target[statusName] = 0;
+			return statusValue;
+		} else {
+			target[statusName] -= damage;
+			return damage;
+		}
+	}
+
 	function doCountDowns(unit) {
 		doSkillCountDowns(unit, unit.skill);
 		doSkillCountDowns(unit, unit.earlyActivationSkills);
@@ -2458,6 +2465,9 @@ var SIMULATOR = {};
 			// Poison
 			var amount = current_assault.poisoned;
 			if (amount) {
+				if (warded) {
+					amount -= applyDamageReduction(target, 'warded', amount);
+				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += debug_name(target) + ' takes ' + amount + ' poison damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
@@ -2467,8 +2477,13 @@ var SIMULATOR = {};
 			// Venom
 			var amount = current_assault.envenomed;
 			if (amount) {
+				if (warded) {
+					amount -= applyDamageReduction(target, 'warded', amount);
+				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
-					echo += debug_name(target) + ' takes ' + amount + ' venom damage';
+					echo += debug_name(target) + ' takes ' + amount;
+					if(warded) echo += ' (Ward: -' + warded + ')';
+					echo += ' venom damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 				});
 			}
@@ -2477,8 +2492,13 @@ var SIMULATOR = {};
 			var scorch = current_assault.scorched;
 			if (scorch) {
 				amount = scorch['amount'];
+				if (warded) {
+					amount -= applyDamageReduction(target, 'warded', amount);
+				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
-					echo += debug_name(target) + ' takes ' + amount + ' scorch damage';
+					echo += debug_name(target) + ' takes ' + amount;
+					if (warded) echo += ' (Ward: -' + warded + ')';
+					echo += ' scorch damage';
 					if (!target.isAlive()) echo += ' and it dies';
 					else if (!target.scorched) echo += ' and scorch wears off';
 					echo += '<br>';
@@ -2913,18 +2933,13 @@ var SIMULATOR = {};
 		var counterDamage = counterBase + counterEnhancement;
 
 		// Protect
+		var warded = (attacker.warded || 0);
 		var protect = (attacker.protected || 0);
-		var absorb = (attacker.absorb || 0);
-		if (counterDamage >= protect) {
-			attacker.protected = 0;
-			counterDamage -= protect;
-		} else {
-			attacker.protected -= counterDamage;
-			counterDamage = 0;
+		if (warded) {
+			amount -= applyDamageReduction(target, 'warded', amount);
 		}
-		// TODO: Does Absorb block Vengeance?
-		if (absorb) {
-			counterDamage -= absorb;
+		if (protect) {
+			amount -= applyDamageReduction(target, 'protected', amount);
 		}
 
 		if (counterDamage < 0) {
@@ -2935,7 +2950,7 @@ var SIMULATOR = {};
 			echo += '<u>(' + counterType + ': +' + counterBase;
 			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
 			if (protect) echo += ' Barrier: -' + protect;
-			if (absorb) echo += ' Absorb: -' + absorb;
+			if (warded) echo += ' Ward: -' + warded;
 			echo += ') = ' + counterDamage + ' damage</u><br>';
 		}
 

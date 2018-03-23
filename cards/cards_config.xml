@@ -112,9 +112,8 @@
     <order>20</order>
     <icon>absorb</icon>
     <name>Ward</name>
-    <desc>Reduces the next damage dealt to this creature from skills.</desc>
+    <desc>Prevents X damage taken from skills each round.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>armored</id>
@@ -604,6 +603,15 @@
     <icon>enlarge</icon>
     <name>Enlarge</name>
     <desc>Permanently increases the Attack of a creature when played, while this creature is active</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>heartseeker</id>
+    <order>500</order>
+    <icon>heartseeker</icon>
+    <name>Heartseeker</name>
+    <desc>The enemy creature across from this creature gains a stacking debuff</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>

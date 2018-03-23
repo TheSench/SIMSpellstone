@@ -3,7 +3,7 @@ var SKILL_DATA = {
 		name: 'Ward',
 		type: 'passive',
 		icon: 'absorb',
-		desc: 'Reduces the next damage dealt to this creature from skills.'
+		desc: 'Prevents X damage taken from skills each round.'
 	},
 	armored : {
 		name: 'Armor',
@@ -130,6 +130,12 @@ var SKILL_DATA = {
 		type: 'activation',
 		icon: 'heal',
 		desc: 'Heals a random allied creature'
+	},
+	heartseeker : {
+		name: 'Heartseeker',
+		type: 'activation',
+		icon: 'heartseeker',
+		desc: 'The enemy creature across from this creature gains a stacking debuff'
 	},
 	ignite : {
 		name: 'Ignite',

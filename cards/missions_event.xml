@@ -27857,4 +27857,821 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 9 -->
+  <!-- Extra Node -->
+  <mission>
+    <id>5886</id>
+    <name>Dragon Feed</name>
+    <energy>9</energy>
+    <desc>In Goblin Rise Stronghold, there are a number of items that the goblins use for supplies. Some are traditional, but others include small explosives and metallic crafts. Fiona's dragons have become addicted to the little sparklers.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="5012" name="Static Drake" />
+      <card id="7012" name="Life Drake" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="5158" name="Chilltide Stormtender" />
+      <card id="5141" name="Nimbocaster" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="1628" name="Garganotos" />
+      <card id="6021" mastery_level="2" name="Marsh Ogre" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="2062" mastery_level="4" name="Deadeye Apprentice" />
+      <card id="6090" mastery_level="5" name="Crackshot" />
+      <card id="7008" mastery_level="6" name="Rock Dragon" />
+      <card id="5129" mastery_level="7" name="Shackled Gatekeeper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5887</id>
+    <name>Dragon Affection</name>
+    <energy>9</energy>
+    <desc>A closer inspection reveals that, despite lighting on fire and smoking, the firework look-alike is actually candy. If you can become friends with Fiona's dragonlings, they might help you in your journey.</desc>
+    <commander id="259" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="6044" name="Firewalker" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="6050" name="Wortwog" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="1628" name="Garganotos" />
+      <card id="7145" mastery_level="2" name="Metalsmith" />
+      <card id="5091" mastery_level="3" name="Armor Thief" />
+      <card id="2053" mastery_level="4" name="Rocket Rider" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="6062" mastery_level="6" name="Abzu" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 9 Weeks 1-4 -->
+  <mission>
+    <id>5888</id>
+    <name>An Ally's Distress</name>
+    <energy>9</energy>
+    <desc>Fiona the dragontamer has sent your airship a distress message. You agree to meet her just outside one of the infamous goblin camps, Goblin Rise Stronghold...</desc>
+    <commander id="310" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7095" name="Talonsaur" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="1628" name="Garganotos" />
+      <card id="5010" mastery_level="2" name="Concealed Dragon" />
+      <card id="6089" mastery_level="3" name="Fire Belcher" />
+      <card id="6143" mastery_level="4" name="Dynamic Entry" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="6023" mastery_level="6" name="Broodmother" />
+      <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>I'm glad you could make it, adventurer. </text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>After I separated from you in Beetleton Bunker, I've been trying to locate the Insects' missing Spellstone Hammer.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5889</id>
+    <name>Team Assembled</name>
+    <energy>9</energy>
+    <desc>Another approaches from the distance. You realize that it is Orgoth, one of the orc tribe leaders. Fiona gestures for him to join your little circle.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5089" name="Gomblit" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="1628" name="Garganotos" />
+      <card id="6131" mastery_level="2" name="Winged Abducter" />
+      <card id="6072" mastery_level="3" name="Bone Wielder" />
+      <card id="2063" mastery_level="4" name="Hob Fletcher" />
+      <card id="7090" mastery_level="5" name="Prospector" />
+      <card id="6060" mastery_level="6" name="Pudgytusk" />
+      <card id="7143" mastery_level="7" name="Hog Bronco" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>1</enemy>
+        <text>Howdy, Fiona and adventurer. It's been a while, eh.</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Good, we've all assembled. Now I can explain...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5890</id>
+    <name>The Goblins' Plot</name>
+    <energy>9</energy>
+    <desc>Fiona huddles closely to you and Orgoth, furtively looking behind her shoulder, as if expecting the goblins to be listening. The distance is great enough that you doubt even the scouts could see you.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="1628" name="Garganotos" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
+      <card id="2062" mastery_level="3" name="Deadeye Apprentice" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="7146" mastery_level="5" name="Goblin Brigand" />
+      <card id="1640" mastery_level="6" name="Life Dragon" />
+      <card id="6014" mastery_level="7" name="Armored Siegefist" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>I saw Decim with the Spellstone Hammer. The goblins escorted him into the fortress.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5891</id>
+    <name>The Wildcard</name>
+    <energy>9</energy>
+    <desc>Fiona huddles closely to you and Orgoth, furtively looking behind her shoulder, as if expecting the goblins to be listening. The distance is great enough that you doubt even the scouts could see you.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="1628" name="Garganotos" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5062" mastery_level="2" name="Cliffhanger Wyrm" />
+      <card id="2062" mastery_level="3" name="Deadeye Apprentice" />
+      <card id="6143" mastery_level="4" name="Dynamic Entry" />
+      <card id="6144" mastery_level="5" name="Crossbomb Gremlin" />
+      <card id="6132" mastery_level="6" name="Deception Scalelord" />
+      <card id="7089" mastery_level="7" name="Elder Shaman" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Fiona and Decim are both inhabitants of the same region, Tarragon Peak. Fiona expresses her distress upon learning of Decim's involvement with the Spellstone Hammer.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5892</id>
+    <name>Mediator's Reminder</name>
+    <energy>9</energy>
+    <desc>The orc tribe has worked closely in the past with the goblins. Fiona has called Orgoth the orc to act as a mediator, and handle the situation as delicately as possible.</desc>
+    <commander id="317" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="1628" name="Garganotos" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="6063" mastery_level="2" name="Firetail Dragon" />
+      <card id="7146" mastery_level="3" name="Goblin Brigand" />
+      <card id="6021" mastery_level="4" name="Marsh Ogre" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="6130" mastery_level="6" name="Shadowed Wyvern" />
+      <card id="5092" mastery_level="7" name="Tundra Reaver" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Well it ain't like the goblins are inherently evil, missie. He might have a reason.</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>I'm guessing ya want us to find out what he's doing, and 'save' him, eh.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5893</id>
+    <name>Off the Books</name>
+    <energy>9</energy>
+    <desc>With the situation assessed, Orgoth gives his best advice. Knowing that Fiona has had bad relationships with the goblins in the past, he suggests the wisest approach to entering the Goblin Fortress...</desc>
+    <commander id="317" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="1628" name="Garganotos" />
+      <card id="5091" name="Armor Thief" />
+      <card id="7090" name="Prospector" />
+      <card id="5010" mastery_level="2" name="Concealed Dragon" />
+      <card id="6089" mastery_level="3" name="Fire Belcher" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="6009" mastery_level="6" name="Siphon Dragon" />
+      <card id="7001" mastery_level="7" name="Hekaton" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>I don't want to strain our relationship with the goblins anymore than where it's at.</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Aye, aye. I know a way to get ya both in the fort, and we'll keep it on the down-low, off the goblins' radar.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5894</id>
+    <name>Underground Entrance</name>
+    <energy>9</energy>
+    <desc>Orgoth takes you farther away from Goblin Rise Stronghold. Fiona starts to protest, before Orgoth reveals a secret passage that leads underground.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="1628" name="Garganotos" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2066" mastery_level="2" name="Basalt Dragon" />
+      <card id="6144" mastery_level="3" name="Crossbomb Gremlin" />
+      <card id="6072" mastery_level="4" name="Bone Wielder" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="6059" mastery_level="6" name="Violetfire Igniter" />
+      <card id="7088" mastery_level="7" name="Jubjub" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5895</id>
+    <name>Abandoned Entrance</name>
+    <energy>9</energy>
+    <desc>The passage seems to be an abandoned mining tunnel. There are rail cart tracks bent out of place. Orgoth uses the light from his fist to illuminate the way.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6061" name="Decagon" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="2045" mastery_level="2" name="Chillbeard Giant" />
+      <card id="2102" mastery_level="3" name="Lowbog Shaman" />
+      <card id="2063" mastery_level="4" name="Hob Fletcher" />
+      <card id="5091" mastery_level="5" name="Armor Thief" />
+      <card id="7060" mastery_level="6" name="Shenami" />
+      <card id="6145" mastery_level="7" name="Goblin Butcher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5896</id>
+    <name>Abandoned Entrance</name>
+    <energy>9</energy>
+    <desc>A few goblin patrols roam the tunnels. However, you're able to take them out quickly, beofre they can return to fortress and warn the rest of their tribe.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7129" mastery_level="2" name="Zealous Snapjaw" />
+      <card id="6089" mastery_level="3" name="Fire Belcher" />
+      <card id="7146" mastery_level="4" name="Goblin Brigand" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="6026" mastery_level="6" name="Smokefang" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Take out the small patrols of goblins. We'll be outta Goblin Rise before they know somethin's up.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5897</id>
+    <name>Goblin Rise Infiltration</name>
+    <energy>9</energy>
+    <desc>Orgoth leads you through the winding abandoned mine, motioning for you to stop as he comes to one particular sector. Slowly he pushes open the hatch, peering cautiously on the surface, before announcing it clear for the two of you two follow.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="7090" name="Prospector" />
+      <card id="1628" name="Garganotos" />
+      <card id="5089" name="Gomblit" />
+      <card id="2001" mastery_level="2" name="Dunetooth Demon" />
+      <card id="6089" mastery_level="3" name="Fire Belcher" />
+      <card id="2064" mastery_level="4" name="Tome Sneak" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="6024" mastery_level="6" name="Bane Dragon" />
+      <card id="6142" mastery_level="7" name="Ba Dim Boom" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Try not to let 'em spot ya. We'll never leave Goblin Rise if they catch us in the middle of infiltratin'.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5898</id>
+    <name>Clear Coast</name>
+    <energy>9</energy>
+    <desc>You find yourself in an unused storage room, with rocks and debris piled in the corner. The three of you sneak out of the empty room, onto the ramparts of Goblin Rise.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="2090" name="Terra Dweller" />
+      <card id="1628" name="Garganotos" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="7129" mastery_level="2" name="Zealous Snapjaw" />
+      <card id="6072" mastery_level="3" name="Bone Wielder" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="2063" mastery_level="5" name="Hob Fletcher" />
+      <card id="1340" mastery_level="6" name="Blazekin Dragon" />
+      <card id="6014" mastery_level="7" name="Armored Siegefist" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5899</id>
+    <name>Nefarious Plot</name>
+    <energy>9</energy>
+    <desc>As you move across the ramparts, Fiona points down below to the main courtyard. A group of goblins have gathered, one of them holding a hammer with a crystallized rock on it. But not just any rock...</desc>
+    <commander id="341" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="1628" name="Garganotos" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="2123" mastery_level="2" name="Firestoke Clawsmith" />
+      <card id="7145" mastery_level="3" name="Metalsmith" />
+      <card id="2102" mastery_level="4" name="Lowbog Shaman" />
+      <card id="7090" mastery_level="5" name="Prospector" />
+      <card id="1040" mastery_level="6" name="Storm Dragon" />
+      <card id="7144" mastery_level="7" name="Kazamo" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Would you look at that... It's the Spellstone Hammer!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5900</id>
+    <name>Spellstone Hammer</name>
+    <energy>9</energy>
+    <desc>The goblin wielding the hammer gives it a mighty swing. It cracks the ground, an object growing from its source. In its place is a Mecha, shaped like a dragon.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6061" name="Decagon" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7087" name="Goblites" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="1631" mastery_level="2" name="Venom Dragon" />
+      <card id="6144" mastery_level="3" name="Crossbomb Gremlin" />
+      <card id="7145" mastery_level="4" name="Metalsmith" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="2006" mastery_level="6" name="Zhulong" />
+      <card id="7026" mastery_level="7" name="Frostjaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Goblin_Captain</commander>
+        <enemy>1</enemy>
+        <text>Wowee, Baldur! That's one heck of a toy!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Heh, the sky's the limit, boys. We can make ANYTHING.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5901</id>
+    <name>New Tribal Leader</name>
+    <energy>9</energy>
+    <desc>Even without Reks or his sister Xerkahn, it seems the goblins have continued their original plans. The strength of their arms has increased since you last saw them. </desc>
+    <commander id="341" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="1628" name="Garganotos" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="7090" name="Prospector" />
+      <card id="2123" mastery_level="2" name="Firestoke Clawsmith" />
+      <card id="2064" mastery_level="3" name="Tome Sneak" />
+      <card id="5091" mastery_level="4" name="Armor Thief" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="7127" mastery_level="6" name="Basilclaw Clutch" />
+      <card id="5090" mastery_level="7" name="Reks' Faithful" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>The strongest or the craftiest... a goblin needs one of those traits to become a leader.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5902</id>
+    <name>A Spellstone's Power</name>
+    <energy>9</energy>
+    <desc>You spy on the small group of goblins in the courtyard. The one with the Spellstone Hammer gives it a mighty swing, creating another mechanical creature.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="1628" name="Garganotos" />
+      <card id="5091" name="Armor Thief" />
+      <card id="7087" name="Goblites" />
+      <card id="7095" mastery_level="2" name="Talonsaur" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="7096" mastery_level="6" name="Vala, Sleeping Earth" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>One good whack with this hammer and we can improve our defenses.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>I'd like to see the fool who thinks he can take on an army of Goblins and Mechas!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5903</id>
+    <name>Stolen Property</name>
+    <energy>9</energy>
+    <desc>Fiona's fist clenches at the sight of the goblins playing with such a powerful artifact, especially one that they have stolen. She inches closer...</desc>
+    <commander id="353" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="7090" name="Prospector" />
+      <card id="7095" mastery_level="2" name="Talonsaur" />
+      <card id="5091" mastery_level="3" name="Armor Thief" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="6128" mastery_level="6" name="Grimhunt Wings" />
+      <card id="6111" mastery_level="7" name="Aspects of the Ashes" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>We need to get that Spellstone Hammer. Its rightful owners are the Insects of Beetleton.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5904</id>
+    <name>The Mission's Meaning</name>
+    <energy>9</energy>
+    <desc>Orgoth places a hand on Fiona's shoulder, gently pulling her back. He reminds her of her original purpose...</desc>
+    <commander id="341" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6090" name="Crackshot" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7128" mastery_level="2" name="Denizen of the Trees" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="2053" mastery_level="4" name="Rocket Rider" />
+      <card id="6144" mastery_level="5" name="Crossbomb Gremlin" />
+      <card id="5063" mastery_level="6" name="Runic Dragon" />
+      <card id="5148" mastery_level="7" name="Gribmalda of Wings" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Whoa there, little lady. Are you here for the Spellstone Hammer... or for Decim?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5905</id>
+    <name>The Search for Decim</name>
+    <energy>9</energy>
+    <desc>Fiona grudgingly agrees with Orgoth's logic. Her worry outstrips the need to retrieve the Spellstone Hammer.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="5089" name="Gomblit" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="7128" mastery_level="2" name="Denizen of the Trees" />
+      <card id="5091" mastery_level="3" name="Armor Thief" />
+      <card id="6144" mastery_level="4" name="Crossbomb Gremlin" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="5128" mastery_level="6" name="Torchrime Terrorizer" />
+      <card id="6146" mastery_level="7" name="Dragonfly Runner" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Grr, you're right. If we cause a commotion now, we'll never find Decim.</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Yep. Let's keep movin' then.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5906</id>
+    <name>Creatures Locked, Forgotten</name>
+    <energy>9</energy>
+    <desc>The three of you continue your infiltration. Since Decim isn't in any of the visible areas of the Stronghold, Orgoth takes you down to the cells. Some of them are filled with the same mechas created by the Spellstone Hammer...</desc>
+    <commander id="340" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7095" name="Talonsaur" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="6131" mastery_level="2" name="Winged Abducter" />
+      <card id="2062" mastery_level="3" name="Deadeye Apprentice" />
+      <card id="2063" mastery_level="4" name="Hob Fletcher" />
+      <card id="2053" mastery_level="5" name="Rocket Rider" />
+      <card id="7032" mastery_level="6" name="Nidhogg" />
+      <card id="7019" mastery_level="7" name="Lady of the Swamp" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5907</id>
+    <name>Following the Singer</name>
+    <energy>9</energy>
+    <desc>The path has poor lighting, torches flickering eerily as you continue your descent. The mechas snap their jaws angrily as you pass, straining against the bars. Then you can hear a voice singing...</desc>
+    <commander id="311" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="7087" name="Goblites" />
+      <card id="7090" name="Prospector" />
+      <card id="6131" mastery_level="2" name="Winged Abducter" />
+      <card id="2102" mastery_level="3" name="Lowbog Shaman" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="7146" mastery_level="5" name="Goblin Brigand" />
+      <card id="6183" mastery_level="6" name="Knowledge Hoarder" />
+      <card id="1344" mastery_level="7" name="Boomsting Duo" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>Nobody knows the trouble I've seen...</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>That voice... Decim is here!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5908</id>
+    <name>Ungrateful Detainee</name>
+    <energy>9</energy>
+    <desc>You find Decim sitting inside one of the cells. It appears the goblins have locked him away. Fiona runs to the bars, but Decim remains seated and scowls.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="7087" name="Goblites" />
+      <card id="2066" mastery_level="2" name="Basalt Dragon" />
+      <card id="5091" mastery_level="3" name="Armor Thief" />
+      <card id="7090" mastery_level="4" name="Prospector" />
+      <card id="6144" mastery_level="5" name="Crossbomb Gremlin" />
+      <card id="6058" mastery_level="6" name="Tarragon Cuttail" />
+      <card id="2103" mastery_level="7" name="Siren" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>Fiona? Ugh.</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Ugh? Excuse me? And here I was going to let you out of that cell!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5909</id>
+    <name>All According to Plan</name>
+    <energy>9</energy>
+    <desc>Decim shakes his head. Despite his predicament, he seems unconcerned with his current situation. A small creature moves in the darkest corners of Decim's cell, frightened blue orbs fixated on you.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="2123" mastery_level="2" name="Firestoke Clawsmith" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="2062" mastery_level="4" name="Deadeye Apprentice" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="7132" mastery_level="6" name="Bastion Percher" />
+      <card id="6176" mastery_level="7" name="Searsteel Soldier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>It's not like I needed your help or anything! Everything's going according to plan.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5910</id>
+    <name>Fiona's Suspicion</name>
+    <energy>9</energy>
+    <desc>The creature dashes behind Decim's back before you can get a good luck at it. Fiona questions Decim's 'plan' about getting captured in Goblin Rise Stronghold...</desc>
+    <commander id="341" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="7090" name="Prospector" />
+      <card id="5089" name="Gomblit" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2090" mastery_level="2" name="Terra Dweller" />
+      <card id="5091" mastery_level="3" name="Armor Thief" />
+      <card id="2102" mastery_level="4" name="Lowbog Shaman" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="7008" mastery_level="6" name="Rock Dragon" />
+      <card id="7091" mastery_level="7" name="Wave Plunderer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>And what exactly, is your plan? What were you doing with the Spellstone Hammer?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5911</id>
+    <name>Dragonling Friend</name>
+    <energy>9</energy>
+    <desc>Decim reaches behind him, gently pulling a cat-sized scaled creature. A young wind drake is in the cell with him, cowering before your gaze, and snuggling closer to Decim.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2123" name="Firestoke Clawsmith" />
+      <card id="1628" name="Garganotos" />
+      <card id="5089" name="Gomblit" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="1631" mastery_level="2" name="Venom Dragon" />
+      <card id="6090" mastery_level="3" name="Crackshot" />
+      <card id="7146" mastery_level="4" name="Goblin Brigand" />
+      <card id="6144" mastery_level="5" name="Crossbomb Gremlin" />
+      <card id="7184" mastery_level="6" name="Marshwing Rider" />
+      <card id="5144" mastery_level="7" name="Wee Sparkcaster" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>I traded the Spellstone Hammer for this little guy's freedom.</text>
+      </line>
+      <line>
+        <commander>Sailing_Drake</commander>
+        <enemy>1</enemy>
+        <text>Awoo....</text>
+      </line>
+    </speech>
+  </mission>
 </root>

@@ -261,10 +261,12 @@ var defaultStatusValues = {
     enraged: 0,
     envenomed: 0,
     imbued: 0,
+	invisible: 0,
     nullified: 0,
     poisoned: 0,
     protected: 0,
     scorched: 0,
+	warded: 0,
     // Boolean-Status
     jammed: false,
     silenced: false,

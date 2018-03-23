@@ -1077,7 +1077,7 @@
   </guide>
   <guide>
     <id>1027</id>
-    <name>Skill Guide: Absorb</name>
+    <name>Skill Guide: Ward</name>
     <trigger>
       <flagreq id="usingSkill" value="absorb" />
     </trigger>
@@ -1088,7 +1088,7 @@
         <line>
           <skill>absorb</skill>
           <commander>raven</commander>
-          <text>This creature has Absorb, which will reduce the next damage dealt to it from enemy skills.</text>
+          <text>This creature has Ward, which will reduce the next damage dealt to it from enemy skills.</text>
         </line>
       </message>
       <confirm>1</confirm>

@@ -64635,6 +64635,546 @@ var CARDS = {
       },
     }
   },
+  "5188": {
+    "id": "5188",
+    "name": "Movra, Dragon Ruler",
+    "picture": "Dragon_Ruler_A",
+    "hidden_until": "1521738000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 19,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "absorb",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "9",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "9",
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "9",
+          },
+        ],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "9",
+          },
+        ],
+      },
+    }
+  },
+  "15188": {
+    "id": "15188",
+    "name": "Movra, Dragon Royal",
+    "picture": "Dragon_Ruler_A",
+    "hidden_until": "1521738000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 22,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "absorb",
+        "x": 5,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "9",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "9",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "9",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "9",
+          },
+        ],
+      },
+    }
+  },
+  "25188": {
+    "id": "25188",
+    "name": "Movra, Dragon King",
+    "picture": "Dragon_Ruler_B",
+    "hidden_until": "1521738000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 25,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "absorb",
+        "x": 6,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 4,
+        "y": "9",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 7,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "9",
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 8,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "9",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 8,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 5,
+            "y": "9",
+          },
+        ],
+      },
+    }
+  },
+  "5189": {
+    "id": "5189",
+    "name": "Armorscald Dragon",
+    "picture": "War_Armor_Dragon_A",
+    "hidden_until": "1521478800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 28,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 31,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "15189": {
+    "id": "15189",
+    "name": "Armorscald Basher",
+    "picture": "War_Armor_Dragon_A",
+    "hidden_until": "1521478800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 32,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 33,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 35,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "25189": {
+    "id": "25189",
+    "name": "Armorscald Sieger",
+    "picture": "War_Armor_Dragon_B",
+    "hidden_until": "1521478800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 36,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 5,
+      },
+      {
+        "id": "burn",
+        "x": 4,
+      },
+      {
+        "id": "flurry",
+        "c": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 37,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "health": 38,
+        "skill": [],
+      },
+      "5": {
+        "health": 39,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -106323,6 +106863,297 @@ var CARDS = {
           {
             "id": "burn",
             "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "6184": {
+    "id": "6184",
+    "name": "Thundering Hellwing",
+    "picture": "Hell_Dragon_Angel_A",
+    "hidden_until": "1521133200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","9"],
+    "health": 28,
+    "attack": 8,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counterburn",
+        "x": 2,
+      },
+      {
+        "id": "enrage",
+        "x": 2,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 29,
+        "skill": [],
+      },
+      "3": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 2,
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "attack": 9,
+        "skill": [],
+      },
+      "5": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 3,
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 3,
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "16184": {
+    "id": "16184",
+    "name": "Bellowing Hellwing",
+    "picture": "Hell_Dragon_Angel_A",
+    "hidden_until": "1521133200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","9"],
+    "health": 32,
+    "attack": 9,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counterburn",
+        "x": 3,
+      },
+      {
+        "id": "enrage",
+        "x": 3,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 4,
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 34,
+        "skill": [],
+      },
+      "5": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 4,
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 4,
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "26184": {
+    "id": "26184",
+    "name": "Dominating Hellwing",
+    "picture": "Hell_Dragon_Angel_B",
+    "hidden_until": "1521133200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","9"],
+    "health": 35,
+    "attack": 11,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counterburn",
+        "x": 5,
+      },
+      {
+        "id": "enrage",
+        "x": 4,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [],
+      },
+      "3": {
+        "health": 37,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 5,
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+        ],
+      },
+      "4": {
+        "attack": 12,
+        "skill": [],
+      },
+      "5": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 6,
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 6,
+          },
+          {
+            "id": "enrage",
+            "x": 5,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 9,
           },
         ],
       },
@@ -150141,6 +150972,270 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "7185": {
+    "id": "7185",
+    "name": "Crashing Tidalsaur",
+    "picture": "Elemental_Water_Dragon_A",
+    "hidden_until": "1521738000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["5","9"],
+    "health": 18,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "9",
+      },
+      {
+        "id": "daze",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "health": 21,
+        "skill": [],
+      },
+    }
+  },
+  "17185": {
+    "id": "17185",
+    "name": "Swelling Tidalsaur",
+    "picture": "Elemental_Water_Dragon_A",
+    "hidden_until": "1521738000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["5","9"],
+    "health": 22,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "9",
+      },
+      {
+        "id": "daze",
+        "x": 5,
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "health": 25,
+        "skill": [],
+      },
+    }
+  },
+  "27185": {
+    "id": "27185",
+    "name": "Raging Tidalsaur",
+    "picture": "Elemental_Water_Dragon_B",
+    "hidden_until": "1521738000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["5","9"],
+    "health": 25,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 7,
+        "y": "9",
+      },
+      {
+        "id": "daze",
+        "x": 6,
+      },
+      {
+        "id": "leech",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 7,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+        ],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "attack": 9,
+        "health": 28,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 7,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "9",
+          },
+          {
+            "id": "daze",
+            "x": 8,
+          },
+          {
+            "id": "leech",
+            "x": 8,
           },
         ],
       },
@@ -208066,4 +209161,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1521032312679.45;
+var CardsUpdated = 1521823102072.01;
