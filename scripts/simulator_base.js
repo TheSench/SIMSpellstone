@@ -2936,12 +2936,11 @@ var SIMULATOR = {};
 		// Protect
 		var warded = (attacker.warded || 0);
     var protect = (attacker.protected || 0);
-    var amount = 0;
 		if (warded) {
-			amount -= applyDamageReduction(attacker, 'warded', amount);
+			counterDamage -= applyDamageReduction(attacker, 'warded', counterDamage);
 		}
 		if (protect) {
-			amount -= applyDamageReduction(attacker, 'protected', amount);
+			counterDamage -= applyDamageReduction(attacker, 'protected', counterDamage);
 		}
 
 		if (counterDamage < 0) {
