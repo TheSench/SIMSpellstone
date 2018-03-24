@@ -2433,7 +2433,8 @@ var SIMULATOR = {};
 	function processDOTs(field_p_assaults) {
 
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-			var current_assault = field_p_assaults[key];
+      var current_assault = field_p_assaults[key];
+      var warded = current_assault.warded || 0;
 
 			current_assault.jammed = false;
 			current_assault.attack_rally = 0;
@@ -2466,7 +2467,7 @@ var SIMULATOR = {};
 			var amount = current_assault.poisoned;
 			if (amount) {
 				if (warded) {
-					amount -= applyDamageReduction(target, 'warded', amount);
+					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += debug_name(target) + ' takes ' + amount + ' poison damage';
@@ -2478,7 +2479,7 @@ var SIMULATOR = {};
 			var amount = current_assault.envenomed;
 			if (amount) {
 				if (warded) {
-					amount -= applyDamageReduction(target, 'warded', amount);
+					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += debug_name(target) + ' takes ' + amount;
@@ -2493,7 +2494,7 @@ var SIMULATOR = {};
 			if (scorch) {
 				amount = scorch['amount'];
 				if (warded) {
-					amount -= applyDamageReduction(target, 'warded', amount);
+					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += debug_name(target) + ' takes ' + amount;
@@ -2934,12 +2935,13 @@ var SIMULATOR = {};
 
 		// Protect
 		var warded = (attacker.warded || 0);
-		var protect = (attacker.protected || 0);
+    var protect = (attacker.protected || 0);
+    var amount = 0;
 		if (warded) {
-			amount -= applyDamageReduction(target, 'warded', amount);
+			amount -= applyDamageReduction(attacker, 'warded', amount);
 		}
 		if (protect) {
-			amount -= applyDamageReduction(target, 'protected', amount);
+			amount -= applyDamageReduction(attacker, 'protected', amount);
 		}
 
 		if (counterDamage < 0) {
