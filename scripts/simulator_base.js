@@ -2465,6 +2465,7 @@ var SIMULATOR = {};
 			// Poison
 			var amount = current_assault.poisoned;
 			if (amount) {
+				var warded = current_assault.warded;
 				if (warded) {
 					amount -= applyDamageReduction(target, 'warded', amount);
 				}
@@ -2477,6 +2478,7 @@ var SIMULATOR = {};
 			// Venom
 			var amount = current_assault.envenomed;
 			if (amount) {
+				var warded = current_assault.warded;
 				if (warded) {
 					amount -= applyDamageReduction(target, 'warded', amount);
 				}
@@ -2491,6 +2493,7 @@ var SIMULATOR = {};
 			// Scorch
 			var scorch = current_assault.scorched;
 			if (scorch) {
+				var warded = current_assault.warded;
 				amount = scorch['amount'];
 				if (warded) {
 					amount -= applyDamageReduction(target, 'warded', amount);
