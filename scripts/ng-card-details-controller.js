@@ -314,6 +314,7 @@
         }
 
         $scope.supportedSkills = [
+			'absorb',
             'armored',
             'barrage',
             'berserk',
@@ -350,6 +351,7 @@
             'rally',
             //'reanimate',
             //'resurrect',
+			'regenerate',
             'scorchbreath',
             'silence',
             //'slow',

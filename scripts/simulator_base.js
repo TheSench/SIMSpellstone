@@ -2467,10 +2467,12 @@ var SIMULATOR = {};
 			if (amount) {
 				var warded = current_assault.warded;
 				if (warded) {
-					amount -= applyDamageReduction(target, 'warded', amount);
+					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
-					echo += debug_name(target) + ' takes ' + amount + ' poison damage';
+					echo += debug_name(target) + ' takes ' + amount;
+					if (warded) echo += ' (Poison: +' + current_assault.poisoned + ' Ward: -' + warded + ')';
+					echo += ' poison damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 				});
 			}
@@ -2480,11 +2482,11 @@ var SIMULATOR = {};
 			if (amount) {
 				var warded = current_assault.warded;
 				if (warded) {
-					amount -= applyDamageReduction(target, 'warded', amount);
+					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += debug_name(target) + ' takes ' + amount;
-					if(warded) echo += ' (Ward: -' + warded + ')';
+					if(warded) echo += ' (Venom: +' + current_assault.envenomed + ' Ward: -' + warded + ')';
 					echo += ' venom damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 				});
@@ -2493,14 +2495,14 @@ var SIMULATOR = {};
 			// Scorch
 			var scorch = current_assault.scorched;
 			if (scorch) {
+				amount = scorch.amount;
 				var warded = current_assault.warded;
-				amount = scorch['amount'];
 				if (warded) {
-					amount -= applyDamageReduction(target, 'warded', amount);
+					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += debug_name(target) + ' takes ' + amount;
-					if (warded) echo += ' (Ward: -' + warded + ')';
+					if (warded) echo += ' (Scorch: +' + scorch.amount + ' Ward: -' + warded + ')';
 					echo += ' scorch damage';
 					if (!target.isAlive()) echo += ' and it dies';
 					else if (!target.scorched) echo += ' and scorch wears off';
@@ -2939,10 +2941,10 @@ var SIMULATOR = {};
 		var warded = (attacker.warded || 0);
 		var protect = (attacker.protected || 0);
 		if (warded) {
-			amount -= applyDamageReduction(target, 'warded', amount);
+			counterDamage -= applyDamageReduction(attacker, 'warded', counterDamage);
 		}
 		if (protect) {
-			amount -= applyDamageReduction(target, 'protected', amount);
+			counterDamage -= applyDamageReduction(attacker, 'protected', counterDamage);
 		}
 
 		if (counterDamage < 0) {
