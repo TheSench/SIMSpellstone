@@ -2433,7 +2433,8 @@ var SIMULATOR = {};
 	function processDOTs(field_p_assaults) {
 
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-			var current_assault = field_p_assaults[key];
+      var current_assault = field_p_assaults[key];
+      var warded = current_assault.warded || 0;
 
 			current_assault.jammed = false;
 			current_assault.attack_rally = 0;
@@ -2939,7 +2940,7 @@ var SIMULATOR = {};
 
 		// Protect
 		var warded = (attacker.warded || 0);
-		var protect = (attacker.protected || 0);
+    var protect = (attacker.protected || 0);
 		if (warded) {
 			counterDamage -= applyDamageReduction(attacker, 'warded', counterDamage);
 		}
