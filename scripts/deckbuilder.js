@@ -1645,6 +1645,7 @@ var showAdvancedFilters = function (skill) {
 
 	switch (skill) {
 		// x="1" y="0" all="0" c="0" s="0"
+		case 'absorb':
 		case 'armored':
 		case 'barrage':
 		case 'berserk':
@@ -1660,6 +1661,7 @@ var showAdvancedFilters = function (skill) {
 		case 'nullify':
 		case 'pierce':
 		case 'poison':
+		case 'regenerate':
 		case 'scorchbreath':
 		case 'taunt':
 		case 'valor':

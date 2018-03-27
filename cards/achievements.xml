@@ -8425,5 +8425,175 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 9 -->
+  <achievement>
+    <id>3344</id>
+    <type>2</type>
+    <order>101</order>
+    <name>For the Love of Dragons</name>
+    <desc>Complete the 'For the Love of Dragons' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1522947600</locked_start_time>
+    <req>
+      <campaign>1162</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3071" number="50" />
+      <event_points id="7032" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3345</id>
+    <type>2</type>
+    <order>101</order>
+    <name>For the Love of Dragons</name>
+    <desc>Complete the 'For the Love of Dragons' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1522947600</locked_start_time>
+    <achievement_req>3344</achievement_req>
+    <req>
+      <campaign>1162</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 9 weeks 1-4 -->
+  <achievement>
+    <id>3346</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Best Laid Plans</name>
+    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1522947600</locked_start_time>
+    <req>
+      <campaign>1163</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3347</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Best Laid Plans</name>
+    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1522947600</locked_start_time>
+    <achievement_req>3346</achievement_req>
+    <req>
+      <campaign>1163</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3348</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Best Laid Plans</name>
+    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1522947600</locked_start_time>
+    <achievement_req>3347</achievement_req>
+    <req>
+      <campaign>1163</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3349</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Best Laid Plans</name>
+    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1522947600</locked_start_time>
+    <achievement_req>3348</achievement_req>
+    <req>
+      <campaign>1163</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3350</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Missing Pyrokinetic</name>
+    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 2.</desc>
+    <mission_req>5899</mission_req>
+    <locked_start_time>1524157200</locked_start_time>
+    <req>
+      <campaign>1164</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3351</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Missing Pyrokinetic</name>
+    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 4.</desc>
+    <mission_req>5899</mission_req>
+    <locked_start_time>1524157200</locked_start_time>
+    <achievement_req>3350</achievement_req>
+    <req>
+      <campaign>1164</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3352</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Missing Pyrokinetic</name>
+    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 6.</desc>
+    <mission_req>5899</mission_req>
+    <locked_start_time>1524157200</locked_start_time>
+    <achievement_req>3351</achievement_req>
+    <req>
+      <campaign>1164</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3353</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Missing Pyrokinetic</name>
+    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 7.</desc>
+    <mission_req>5899</mission_req>
+    <locked_start_time>1524157200</locked_start_time>
+    <achievement_req>3352</achievement_req>
+    <req>
+      <campaign>1164</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

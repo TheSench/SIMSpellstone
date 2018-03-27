@@ -6588,4 +6588,111 @@
       <skill id="protect" x="4" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8106</id>
+    <card_type>2</card_type>
+    <name>Mecha Hammer Creation</name>
+    <picture>Fortified_Tower_B</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="poison" x="2" />
+    <skill id="barrage" x="5" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <attack>5</attack>
+      <skill id="armored" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="barrage" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <attack>6</attack>
+      <skill id="armored" x="2" />
+      <skill id="poison" x="2" />
+      <skill id="barrage" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="armored" x="2" />
+      <skill id="poison" x="3" />
+      <skill id="barrage" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+      <health>28</health>
+      <skill id="armored" x="3" />
+      <skill id="poison" x="3" />
+      <skill id="barrage" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>30</health>
+      <skill id="armored" x="3" />
+      <skill id="poison" x="4" />
+      <skill id="barrage" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8107</id>
+    <card_type>2</card_type>
+    <name>Firework Explosive</name>
+    <picture>Floating_Word_C</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>0</attack>
+    <health>40</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="1" />
+    <skill id="burn" x="5" />
+    <skill id="barrage" x="16" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>44</health>
+      <skill id="counterburn" x="1" />
+      <skill id="burn" x="6" />
+      <skill id="barrage" x="17" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+      <skill id="counterburn" x="2" />
+      <skill id="burn" x="7" />
+      <skill id="barrage" x="19" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>52</health>
+      <skill id="counterburn" x="3" />
+      <skill id="burn" x="8" />
+      <skill id="barrage" x="21" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+      <skill id="counterburn" x="4" />
+      <skill id="burn" x="9" />
+      <skill id="barrage" x="23" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="counterburn" x="5" />
+      <skill id="burn" x="10" />
+      <skill id="barrage" x="25" />
+    </upgrade>
+  </unit>
 </root>

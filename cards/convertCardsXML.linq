@@ -179,6 +179,12 @@ void Main()
 		}
 		skillIconNames.Add(icon);
 
+		var imageFile = Path.Combine(path, @"..\res\skills\", icon + ".png");
+		if (!File.Exists(imageFile))
+		{
+			icon = "unknown";
+		}
+
 		return new
 		{
 			id = id,

@@ -5422,7 +5422,7 @@
     </rewards>
     <find_item id="3065" drop_per_energy=".8" />
   </campaign>
-  <!-- Campaign Event 8 -->
+  <!-- Campaign Event 8 Angels -->
   <!-- Extra Node -->
   <campaign>
     <id>1156</id>
@@ -5624,6 +5624,104 @@
       <item level="7" id="3069" />
     </rewards>
     <find_item id="3068" drop_per_energy=".8" />
+  </campaign>
+  <!-- Campaign Event 9 -->
+  <!-- Extra Node -->
+  <campaign>
+    <id>1162</id>
+    <name>For the Love of Dragons</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1522947600</locked_start_time>
+    <!-- Thu, 05 April 2018 17:00:00 -->
+    <location_id>15</location_id>
+    <x>85</x>
+    <y>234</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5886</mission_id>
+      <mission_id>5887</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2121" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3071" drop_per_energy=".1" />
+  </campaign>
+  <campaign>
+    <id>1163</id>
+    <name>Best Laid Plans</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1522947600</locked_start_time>
+    <!-- Thu, 05 April 2018 17:00:00 -->
+    <location_id>15</location_id>
+    <x>234</x>
+    <y>404</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5888</mission_id>
+      <mission_id>5889</mission_id>
+      <mission_id>5890</mission_id>
+      <mission_id>5891</mission_id>
+      <mission_id>5892</mission_id>
+      <mission_id>5893</mission_id>
+      <mission_id>5894</mission_id>
+      <mission_id>5895</mission_id>
+      <mission_id>5896</mission_id>
+      <mission_id>5897</mission_id>
+      <mission_id>5898</mission_id>
+      <mission_id>5899</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2030" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="3069" />
+    </rewards>
+    <find_item id="3071" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1164</id>
+    <name>The Missing Pyrokinetic</name>
+    <campaign_req id="1163" level="1" />
+    <locked_start_time>1524157200</locked_start_time>
+    <!-- Thu, 19 April 2018 17:00:00 -->
+    <battleground_id>2032</battleground_id>
+    <location_id>15</location_id>
+    <x>390</x>
+    <y>510</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5900</mission_id>
+      <mission_id>5901</mission_id>
+      <mission_id>5902</mission_id>
+      <mission_id>5903</mission_id>
+      <mission_id>5904</mission_id>
+      <mission_id>5905</mission_id>
+      <mission_id>5906</mission_id>
+      <mission_id>5907</mission_id>
+      <mission_id>5908</mission_id>
+      <mission_id>5909</mission_id>
+      <mission_id>5910</mission_id>
+      <mission_id>5911</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2122" />
+      <card level="5" id="512" />
+      <card level="6" id="2027" />
+      <item level="7" id="3069" />
+    </rewards>
+    <find_item id="3071" drop_per_energy=".4" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

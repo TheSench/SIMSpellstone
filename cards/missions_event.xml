@@ -27762,7 +27762,7 @@
       <line>
         <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
-        <text>You have already wasted precious time here while our allies our busy.</text>
+        <text>You have already wasted precious time here while our allies are busy.</text>
       </line>
       <line>
         <commander>Portraits_Crimson_Winged_Angel</commander>
@@ -27915,7 +27915,7 @@
     <desc>Fiona the dragontamer has sent your airship a distress message. You agree to meet her just outside one of the infamous goblin camps, Goblin Rise Stronghold...</desc>
     <commander id="310" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="6012" name="Ember Drake" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -27951,7 +27951,7 @@
     <desc>Another approaches from the distance. You realize that it is Orgoth, one of the orc tribe leaders. Fiona gestures for him to join your little circle.</desc>
     <commander id="310" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="7012" name="Life Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -27987,7 +27987,7 @@
     <desc>Fiona huddles closely to you and Orgoth, furtively looking behind her shoulder, as if expecting the goblins to be listening. The distance is great enough that you doubt even the scouts could see you.</desc>
     <commander id="311" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="7012" name="Life Drake" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28018,7 +28018,7 @@
     <desc>Fiona huddles closely to you and Orgoth, furtively looking behind her shoulder, as if expecting the goblins to be listening. The distance is great enough that you doubt even the scouts could see you.</desc>
     <commander id="320" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="7012" name="Life Drake" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28049,7 +28049,7 @@
     <desc>The orc tribe has worked closely in the past with the goblins. Fiona has called Orgoth the orc to act as a mediator, and handle the situation as delicately as possible.</desc>
     <commander id="317" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="6012" name="Ember Drake" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28085,7 +28085,7 @@
     <desc>With the situation assessed, Orgoth gives his best advice. Knowing that Fiona has had bad relationships with the goblins in the past, he suggests the wisest approach to entering the Goblin Fortress...</desc>
     <commander id="317" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="5012" name="Static Drake" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28121,7 +28121,7 @@
     <desc>Orgoth takes you farther away from Goblin Rise Stronghold. Fiona starts to protest, before Orgoth reveals a secret passage that leads underground.</desc>
     <commander id="311" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="7012" name="Life Drake" />
       <card id="7012" name="Life Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28145,7 +28145,7 @@
     <desc>The passage seems to be an abandoned mining tunnel. There are rail cart tracks bent out of place. Orgoth uses the light from his fist to illuminate the way.</desc>
     <commander id="348" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28169,7 +28169,7 @@
     <desc>A few goblin patrols roam the tunnels. However, you're able to take them out quickly, beofre they can return to fortress and warn the rest of their tribe.</desc>
     <commander id="323" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="7012" name="Life Drake" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28200,7 +28200,7 @@
     <desc>Orgoth leads you through the winding abandoned mine, motioning for you to stop as he comes to one particular sector. Slowly he pushes open the hatch, peering cautiously on the surface, before announcing it clear for the two of you two follow.</desc>
     <commander id="311" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="7012" name="Life Drake" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28231,7 +28231,7 @@
     <desc>You find yourself in an unused storage room, with rocks and debris piled in the corner. The three of you sneak out of the empty room, onto the ramparts of Goblin Rise.</desc>
     <commander id="311" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="5012" name="Static Drake" />
       <card id="7012" name="Life Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28255,7 +28255,7 @@
     <desc>As you move across the ramparts, Fiona points down below to the main courtyard. A group of goblins have gathered, one of them holding a hammer with a crystallized rock on it. But not just any rock...</desc>
     <commander id="341" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="7012" name="Life Drake" />
       <card id="6007" name="Goblin Crew" />
@@ -28286,7 +28286,7 @@
     <desc>The goblin wielding the hammer gives it a mighty swing. It cracks the ground, an object growing from its source. In its place is a Mecha, shaped like a dragon.</desc>
     <commander id="353" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="6021" name="Marsh Ogre" />
@@ -28322,7 +28322,7 @@
     <desc>Even without Reks or his sister Xerkahn, it seems the goblins have continued their original plans. The strength of their arms has increased since you last saw them. </desc>
     <commander id="341" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="6144" name="Crossbomb Gremlin" />
@@ -28353,7 +28353,7 @@
     <desc>You spy on the small group of goblins in the courtyard. The one with the Spellstone Hammer gives it a mighty swing, creating another mechanical creature.</desc>
     <commander id="320" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="6144" name="Crossbomb Gremlin" />
@@ -28389,7 +28389,7 @@
     <desc>Fiona's fist clenches at the sight of the goblins playing with such a powerful artifact, especially one that they have stolen. She inches closer...</desc>
     <commander id="353" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="7012" name="Life Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="7146" name="Goblin Brigand" />
@@ -28420,7 +28420,7 @@
     <desc>Orgoth places a hand on Fiona's shoulder, gently pulling her back. He reminds her of her original purpose...</desc>
     <commander id="341" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="6143" name="Dynamic Entry" />
@@ -28451,7 +28451,7 @@
     <desc>Fiona grudgingly agrees with Orgoth's logic. Her worry outstrips the need to retrieve the Spellstone Hammer.</desc>
     <commander id="348" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="6072" name="Bone Wielder" />
@@ -28487,7 +28487,7 @@
     <desc>The three of you continue your infiltration. Since Decim isn't in any of the visible areas of the Stronghold, Orgoth takes you down to the cells. Some of them are filled with the same mechas created by the Spellstone Hammer...</desc>
     <commander id="340" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="7012" name="Life Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="6144" name="Crossbomb Gremlin" />
@@ -28511,7 +28511,7 @@
     <desc>The path has poor lighting, torches flickering eerily as you continue your descent. The mechas snap their jaws angrily as you pass, straining against the bars. Then you can hear a voice singing...</desc>
     <commander id="311" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="7146" name="Goblin Brigand" />
@@ -28547,7 +28547,7 @@
     <desc>You find Decim sitting inside one of the cells. It appears the goblins have locked him away. Fiona runs to the bars, but Decim remains seated and scowls.</desc>
     <commander id="320" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="5012" name="Static Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="2064" name="Tome Sneak" />
@@ -28583,7 +28583,7 @@
     <desc>Decim shakes his head. Despite his predicament, he seems unconcerned with his current situation. A small creature moves in the darkest corners of Decim's cell, frightened blue orbs fixated on you.</desc>
     <commander id="320" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="2063" name="Hob Fletcher" />
@@ -28614,7 +28614,7 @@
     <desc>The creature dashes behind Decim's back before you can get a good luck at it. Fiona questions Decim's 'plan' about getting captured in Goblin Rise Stronghold...</desc>
     <commander id="341" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8107" name="Firework Explosive" />
       <card id="7012" name="Life Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="7146" name="Goblin Brigand" />
@@ -28645,7 +28645,7 @@
     <desc>Decim reaches behind him, gently pulling a cat-sized scaled creature. A young wind drake is in the cell with him, cowering before your gaze, and snuggling closer to Decim.</desc>
     <commander id="353" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
       <card id="6007" name="Goblin Crew" />
       <card id="2063" name="Hob Fletcher" />

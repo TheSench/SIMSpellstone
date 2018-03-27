@@ -151241,6 +151241,281 @@ var CARDS = {
       },
     }
   },
+  "7186": {
+    "id": "7186",
+    "name": "Owlscar Dragon",
+    "picture": "Owl_Dragon_A",
+    "hidden_until": "1522083600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9","10"],
+    "health": 11,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 3,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17186": {
+    "id": "17186",
+    "name": "Owlscar Blight",
+    "picture": "Owl_Dragon_A",
+    "hidden_until": "1522083600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9","10"],
+    "health": 14,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 5,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 16,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "27186": {
+    "id": "27186",
+    "name": "Owlscar Scourge",
+    "picture": "Owl_Dragon_B",
+    "hidden_until": "1522083600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9","10"],
+    "health": 16,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 6,
+      },
+      {
+        "id": "poison",
+        "x": 5,
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 7,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 8,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 8,
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "2000": {
     "id": "2000",
     "name": "Wasteland Nomad",
@@ -208260,6 +208535,240 @@ var CARDS = {
       },
     }
   },
+  "8106": {
+    "id": "8106",
+    "name": "Mecha Hammer Creation",
+    "picture": "Fortified_Tower_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["16"],
+    "health": 20,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+      {
+        "id": "barrage",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "health": 22,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "barrage",
+            "x": 6,
+          },
+        ],
+      },
+      "3": {
+        "attack": 6,
+        "health": 24,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "barrage",
+            "x": 7,
+          },
+        ],
+      },
+      "4": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "barrage",
+            "x": 8,
+          },
+        ],
+      },
+      "5": {
+        "attack": 7,
+        "health": 28,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "barrage",
+            "x": 9,
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "health": 30,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "barrage",
+            "x": 10,
+          },
+        ],
+      },
+    }
+  },
+  "8107": {
+    "id": "8107",
+    "name": "Firework Explosive",
+    "picture": "Floating_Word_C",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": [],
+    "health": 40,
+    "attack": 0,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counterburn",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 5,
+      },
+      {
+        "id": "barrage",
+        "x": 16,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 6,
+          },
+          {
+            "id": "barrage",
+            "x": 17,
+          },
+        ],
+      },
+      "3": {
+        "health": 48,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 7,
+          },
+          {
+            "id": "barrage",
+            "x": 19,
+          },
+        ],
+      },
+      "4": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 8,
+          },
+          {
+            "id": "barrage",
+            "x": 21,
+          },
+        ],
+      },
+      "5": {
+        "health": 56,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 9,
+          },
+          {
+            "id": "barrage",
+            "x": 23,
+          },
+        ],
+      },
+      "6": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "counterburn",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 10,
+          },
+          {
+            "id": "barrage",
+            "x": 25,
+          },
+        ],
+      },
+    }
+  },
   "9999": {
     "id": "9999",
     "name": "Unused Art - 'Angel_Seafolk_Dolphin'",
@@ -209161,4 +209670,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1521823102072.01;
+var CardsUpdated = 1522164550120.33;

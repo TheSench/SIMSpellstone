@@ -2,7 +2,7 @@ var SKILL_DATA = {
 	absorb : {
 		name: 'Ward',
 		type: 'passive',
-		icon: 'absorb',
+		icon: 'unknown',
 		desc: 'Prevents X damage taken from skills each round.'
 	},
 	armored : {
@@ -56,7 +56,7 @@ var SKILL_DATA = {
 	daze : {
 		name: 'Daze',
 		type: 'passive',
-		icon: 'daze',
+		icon: 'unknown',
 		desc: 'When this creature deals attack damage, reduce the Attack of the damaged creature.'
 	},
 	enfeeble : {
@@ -134,7 +134,7 @@ var SKILL_DATA = {
 	heartseeker : {
 		name: 'Heartseeker',
 		type: 'activation',
-		icon: 'heartseeker',
+		icon: 'unknown',
 		desc: 'The enemy creature across from this creature gains a stacking debuff'
 	},
 	ignite : {
@@ -152,7 +152,7 @@ var SKILL_DATA = {
 	intensify : {
 		name: 'Intensify',
 		type: 'activation',
-		icon: 'intensify',
+		icon: 'unknown',
 		desc: 'Increases the value of Scorch or Poison on an enemy creature'
 	},
 	jam : {
@@ -236,7 +236,7 @@ var SKILL_DATA = {
 	regenerate : {
 		name: 'Regenerate',
 		type: 'passive',
-		icon: 'regenerate',
+		icon: 'unknown',
 		desc: 'Heals itself at the end of turn, even while on delay.'
 	},
 	reinforce : {

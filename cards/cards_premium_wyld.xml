@@ -23268,4 +23268,145 @@
       <skill id="leech" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7186</id>
+    <card_type>2</card_type>
+    <name>Owlscar Dragon</name>
+    <picture>Owl_Dragon_A</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1522083600</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="3" />
+    <skill id="poison" x="2" />
+    <skill id="leech" x="2" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="4" />
+      <skill id="poison" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="4" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="5" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17186</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Owlscar Blight</name>
+    <picture>Owl_Dragon_A</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1522083600</hidden_until_time>
+    <attack>3</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="poison" x="3" />
+    <skill id="leech" x="3" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="5" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="5" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="valor" x="6" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="6" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27186</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Owlscar Scourge</name>
+    <picture>Owl_Dragon_B</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1522083600</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="6" />
+    <skill id="poison" x="5" />
+    <skill id="leech" x="5" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <skill id="valor" x="7" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="8" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="8" />
+      <skill id="poison" x="6" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
 </root>
