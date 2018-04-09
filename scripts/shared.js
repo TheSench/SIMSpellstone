@@ -268,7 +268,8 @@ var defaultStatusValues = {
     scorched: 0,
 	warded: 0,
     // Boolean-Status
-    jammed: false,
+	jammed: false,
+	jammedSelf: false,
     silenced: false,
     valor_triggered: false,
     dualstrike_triggered: false,
@@ -428,6 +429,7 @@ var makeUnit = (function () {
             this.nullified = 0;
             this.silenced = false;
             this.jammed = false;
+            this.jammedSelf = false;
             this.dualstrike_triggered = false;
 
             var poison = this.poisoned;
@@ -2481,6 +2483,7 @@ var factions = {
         14: 'Bear',
         15: 'Token',
         16: 'Mecha',
+        17: 'Knight',
 
         999: 'Tower'
     },
@@ -2502,6 +2505,7 @@ var factions = {
         Bear: 14,
         Token: 15,
         Mecha: 16,
+    	Knight: 17,
 
         Tower: 999
     }

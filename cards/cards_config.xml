@@ -468,18 +468,6 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
-    <id>weakenself</id>
-    <order>500</order>
-    <icon>hinder</icon>
-    <name>Weaken Ally</name>
-    <desc>Reduces Attack of a random allied creature</desc>
-    <desc_all>Reduces the Attack of all ally creatures</desc_all>
-    <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
-    <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
-    <attributes x="1" y="0" all="1" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
     <id>barrage</id>
     <order>500</order>
     <icon>arcane_shot</icon>
@@ -556,6 +544,42 @@
     <!-- This skill occurs before all other actions -->
     <hidden>1</hidden>
   </skillType>
+  <!-- SELF TARGET SKILLS -->
+  <skillType>
+    <id>weakenself</id>
+    <order>500</order>
+    <icon>hinder</icon>
+    <name>Weaken Ally</name>
+    <desc>Reduces Attack of a random allied creature</desc>
+    <desc_all>Reduces the Attack of all ally creatures</desc_all>
+    <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
+    <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>burnself</id>
+    <order>500</order>
+    <icon>burn</icon>
+    <name>Scorch Self</name>
+    <desc>Deals stacking damage to this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <status_flag>burn</status_flag>
+    <status_flag>burn_cooldown</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <vfx_location>edge</vfx_location>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>jamself</id>
+    <order>500</order>
+    <icon>freeze</icon>
+    <name>Freeze Self</name>
+    <desc>This creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.</desc>
+    <status_flag>jammed</status_flag>
+    <status_flag>jam_countdown</status_flag>
+    <attributes x="0" y="0" all="1" c="1" s="0" />
+    <hidden>1</hidden>
+  </skillType>
   <!-- TEST SKILLS -->
   <skillType>
     <id>intensify</id>
@@ -581,15 +605,15 @@
     <id>reanimate</id>
     <order>500</order>
     <icon>reanimate</icon>
-    <name>Reanimate</name>
-    <desc>Revives on first death</desc>
+    <name>A Knight's Fate</name>
+    <desc>On death, is subject to a cruel fate.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <status_flag>reanimated</status_flag>
     <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>resurrect</id>
-    <order>500</order>
+    <order>505</order>
     <icon>frostbreath</icon>
     <name>Resurrect</name>
     <desc>Resurrects creatures when they die.</desc>
@@ -706,6 +730,12 @@
     <id>16</id>
     <name>Mecha</name>
     <icon>filter_mech_32</icon>
+  </unitType>
+  <unitType>
+    <id>17</id>
+    <name>Knight</name>
+    <icon></icon>
+    <hidden>1</hidden>
   </unitType>
   <!-- =================== -->
   <!-- ==== CARD SETS ==== -->

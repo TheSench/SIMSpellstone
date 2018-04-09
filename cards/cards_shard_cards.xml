@@ -344,4 +344,92 @@
       <skill id="strike" all="1" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4005</id>
+    <card_type>2</card_type>
+    <name>Boldur, Bridge Builder</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Spellstone_Hammer_Goblin_B</picture>
+    <asset_bundle>125</asset_bundle>
+    <item_name>Boldur Stone</item_name>
+    <item_desc>Collect Boldur Stones to craft and upgrade the Legendary Boldur, Bridge Builder card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="protect" all="1" x="2" />
+    <skill id="daze" x="6" />
+    <skill id="berserk" x="3" />
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="protect" all="1" x="2" />
+      <skill id="daze" x="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="protect" all="1" x="3" />
+      <skill id="daze" x="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="protect" all="1" x="3" />
+      <skill id="daze" x="7" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>9</attack>
+      <health>29</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="8" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>10</attack>
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="9" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>30</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="9" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>11</attack>
+      <health>31</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="10" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>12</attack>
+      <health>32</health>
+      <skill id="protect" all="1" x="5" />
+      <skill id="daze" x="10" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
 </root>

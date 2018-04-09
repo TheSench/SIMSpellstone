@@ -5645,7 +5645,7 @@
       <card level="1" id="510" />
       <card level="2" id="510" />
       <card level="3" id="510" />
-      <card level="4" id="2121" />
+      <card level="4" id="2125" />
       <card level="5" id="510" />
       <card level="6" id="510" />
       <card level="7" id="510" />
@@ -5680,10 +5680,10 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2030" />
+      <card level="4" id="2101" />
       <card level="5" id="512" />
       <card level="6" id="512" />
-      <item level="7" id="3069" />
+      <item level="7" id="3072" />
     </rewards>
     <find_item id="3071" drop_per_energy=".2" />
   </campaign>
@@ -5693,7 +5693,7 @@
     <campaign_req id="1163" level="1" />
     <locked_start_time>1524157200</locked_start_time>
     <!-- Thu, 19 April 2018 17:00:00 -->
-    <battleground_id>2032</battleground_id>
+    <battleground_id>2036</battleground_id>
     <location_id>15</location_id>
     <x>390</x>
     <y>510</y>
@@ -5716,12 +5716,97 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2122" />
+      <card level="4" id="2126" />
       <card level="5" id="512" />
-      <card level="6" id="2027" />
-      <item level="7" id="3069" />
+      <card level="6" id="2053" />
+      <item level="7" id="3072" />
     </rewards>
     <find_item id="3071" drop_per_energy=".4" />
+  </campaign>
+  <!-- Knights on Strike Campaigns -->
+  <campaign>
+    <id>1165</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Knights on Strike</name>
+    <icon id="KnightNode" bundle="123" />
+    <location_id>14</location_id>
+    <x>530</x>
+    <y>510</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5912</mission_id>
+      <mission_id>5913</mission_id>
+      <mission_id>5914</mission_id>
+      <mission_id>5915</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" />
+      <item level="2" id="1011" />
+      <item level="3" id="1011" />
+      <card level="4" id="511" />
+      <item level="5" id="1011" />
+      <item level="6" id="1011" />
+      <item level="7" id="1012" />
+    </rewards>
+    <find_item id="3068" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1166</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Toknight's the Knight</name>
+    <icon id="KnightNode" bundle="123" />
+    <campaign_req id="1165" level="1" />
+    <location_id>14</location_id>
+    <x>700</x>
+    <y>410</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5916</mission_id>
+      <mission_id>5917</mission_id>
+      <mission_id>5918</mission_id>
+      <mission_id>5919</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="511" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <item level="7" id="2528" />
+    </rewards>
+    <find_item id="3068" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1167</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dragons... I Hate Dragons</name>
+    <campaign_req id="1165" level="1" />
+    <icon id="KnightNode" bundle="123" />
+    <battleground_id>526</battleground_id>
+    <location_id>14</location_id>
+    <x>780</x>
+    <y>270</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5920</mission_id>
+      <mission_id>5921</mission_id>
+      <mission_id>5922</mission_id>
+      <mission_id>5923</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="2002" />
+      <card level="3" id="2002" />
+      <card level="4" id="511" />
+      <card level="5" id="2002" />
+      <card level="6" id="2002" />
+      <item level="7" id="4013" />
+    </rewards>
+    <find_item id="3068" drop_per_energy=".6" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

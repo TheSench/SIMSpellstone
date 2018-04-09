@@ -35,6 +35,12 @@ var SKILL_DATA = {
 		icon: 'burn',
 		desc: 'Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.'
 	},
+	burnself : {
+		name: 'Scorch Self',
+		type: 'activation',
+		icon: 'burn',
+		desc: 'Deals stacking damage to this creature at end of turn. Wears off if not reapplied for a turn.'
+	},
 	corrosive : {
 		name: 'Corrosive',
 		type: 'passive',
@@ -161,6 +167,12 @@ var SKILL_DATA = {
 		icon: 'freeze',
 		desc: 'Random enemy creature doesn\'t attack or activate abilities on its next turn. Activates every {c} turns.'
 	},
+	jamself : {
+		name: 'Freeze Self',
+		type: 'activation',
+		icon: 'freeze',
+		desc: 'This creature doesn\'t attack or activate abilities on its next turn. Activates every {c} turns.'
+	},
 	leech : {
 		name: 'Siphon',
 		type: 'passive',
@@ -228,10 +240,10 @@ var SKILL_DATA = {
 		desc: 'Boosts Attack of a random allied creature'
 	},
 	reanimate : {
-		name: 'Reanimate',
+		name: 'A Knight\'s Fate',
 		type: 'onDeath',
 		icon: 'reanimate',
-		desc: 'Revives on first death'
+		desc: 'On death, is subject to a cruel fate.'
 	},
 	regenerate : {
 		name: 'Regenerate',

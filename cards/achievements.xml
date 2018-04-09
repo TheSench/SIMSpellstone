@@ -8595,5 +8595,23 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Pinpin, Dragon Handler recipe -->
+  <achievement>
+    <id>3354</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Test of Might</name>
+    <desc>Complete the 'A Test of Might' campaign on Mastery Level 1.</desc>
+    <mission_req>5844</mission_req>
+    <locked_start_time>1524157200</locked_start_time>
+    <!-- Thu, 19 April 2018 17:00:00 -->
+    <req>
+      <campaign>1168</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8008" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

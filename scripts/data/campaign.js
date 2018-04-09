@@ -1247,6 +1247,28 @@ var CAMPAIGNS = {
     "missions": ["5874","5875","5876","5877","5878","5879","5880","5881","5882","5883","5884","5885"],
     "items": {"3068": 0.8}
   },
+  "1165": {
+    "id": "1165",
+    "name": "Knights on Strike",
+    "location_id": "14",
+    "missions": ["5912","5913","5914","5915"],
+    "items": {"3068": 0.6}
+  },
+  "1166": {
+    "id": "1166",
+    "name": "Toknight's the Knight",
+    "location_id": "14",
+    "missions": ["5916","5917","5918","5919"],
+    "items": {"3068": 0.6}
+  },
+  "1167": {
+    "id": "1167",
+    "name": "Dragons... I Hate Dragons",
+    "location_id": "14",
+    "battleground_id": "526",
+    "missions": ["5920","5921","5922","5923"],
+    "items": {"3068": 0.6}
+  },
   "1162": {
     "id": "1162",
     "name": "For the Love of Dragons",
@@ -1265,7 +1287,7 @@ var CAMPAIGNS = {
     "id": "1164",
     "name": "The Missing Pyrokinetic",
     "location_id": "15",
-    "battleground_id": "2032",
+    "battleground_id": "2036",
     "missions": ["5900","5901","5902","5903","5904","5905","5906","5907","5908","5909","5910","5911"],
     "items": {"3071": 0.4}
   },
@@ -64369,7 +64391,7 @@ var MISSIONS = {
     "id": "5889",
     "name": "Team Assembled",
     "commander": {
-        "id": "310"
+        "id": "356"
     },
     "deck": [
       {
@@ -64429,7 +64451,7 @@ var MISSIONS = {
     "id": "5890",
     "name": "The Goblins' Plot",
     "commander": {
-        "id": "311"
+        "id": "310"
     },
     "deck": [
       {
@@ -64609,7 +64631,7 @@ var MISSIONS = {
     "id": "5893",
     "name": "Off the Books",
     "commander": {
-        "id": "317"
+        "id": "311"
     },
     "deck": [
       {
@@ -64669,7 +64691,7 @@ var MISSIONS = {
     "id": "5894",
     "name": "Underground Entrance",
     "commander": {
-        "id": "311"
+        "id": "317"
     },
     "deck": [
       {
@@ -65509,7 +65531,7 @@ var MISSIONS = {
     "id": "5908",
     "name": "Ungrateful Detainee",
     "commander": {
-        "id": "320"
+        "id": "321"
     },
     "deck": [
       {
@@ -65741,6 +65763,726 @@ var MISSIONS = {
       },
       {
         "id": "5144",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5912": {
+    "id": "5912",
+    "name": "Knights Unite!",
+    "commander": {
+        "id": "410"
+    },
+    "deck": [
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8112",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8109",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8109",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8112",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5913": {
+    "id": "5913",
+    "name": "Knightmare Story",
+    "commander": {
+        "id": "410"
+    },
+    "deck": [
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8112",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8112",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8112",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8109",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5914": {
+    "id": "5914",
+    "name": "Knight Life",
+    "commander": {
+        "id": "410"
+    },
+    "deck": [
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8116"
+      },
+      {
+        "id": "8116"
+      },
+      {
+        "id": "8116"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8112",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8116",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8116",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5915": {
+    "id": "5915",
+    "name": "Friday Knight Lights",
+    "commander": {
+        "id": "410"
+    },
+    "deck": [
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8116"
+      },
+      {
+        "id": "8116",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8109",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8112",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5916": {
+    "id": "5916",
+    "name": "Toknight We Fight!",
+    "commander": {
+        "id": "409"
+    },
+    "deck": [
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8115",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8115",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8110",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8118",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8110",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8118",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5917": {
+    "id": "5917",
+    "name": "Toknight We Dine in Heck!",
+    "commander": {
+        "id": "409"
+    },
+    "deck": [
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8110",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8110",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8115",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8118",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8115",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8118",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5918": {
+    "id": "5918",
+    "name": "Hot Date, Toknight",
+    "commander": {
+        "id": "409"
+    },
+    "deck": [
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8118",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8118",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8110",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8115",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8110",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8115",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5919": {
+    "id": "5919",
+    "name": "No Sleep Toknight!",
+    "commander": {
+        "id": "409"
+    },
+    "deck": [
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8118"
+      },
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8110"
+      },
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8115"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8109",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8116",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8109",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5920": {
+    "id": "5920",
+    "name": "A Good Knight to Die",
+    "commander": {
+        "id": "411"
+    },
+    "deck": [
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8111",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8111",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8113",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8114",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8113",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8114",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5921": {
+    "id": "5921",
+    "name": "All Knighter",
+    "commander": {
+        "id": "411"
+    },
+    "deck": [
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8113",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8113",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8111",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8114",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8111",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8114",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5922": {
+    "id": "5922",
+    "name": "A Knight to Remember",
+    "commander": {
+        "id": "411"
+    },
+    "deck": [
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8117"
+      },
+      {
+        "id": "8108"
+      },
+      {
+        "id": "8112"
+      },
+      {
+        "id": "8109"
+      },
+      {
+        "id": "8114",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8114",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8113",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8111",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8113",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8111",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5923": {
+    "id": "5923",
+    "name": "Good Knight and Good Luck",
+    "commander": {
+        "id": "411"
+    },
+    "deck": [
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8111"
+      },
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8113"
+      },
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8114"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "8109",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8117",
+        "mastery_level": "4"
+      },
+      {
+        "id": "8116",
+        "mastery_level": "5"
+      },
+      {
+        "id": "8108",
+        "mastery_level": "6"
+      },
+      {
+        "id": "8109",
         "mastery_level": "7"
       },
     ]

@@ -27949,7 +27949,7 @@
     <name>Team Assembled</name>
     <energy>9</energy>
     <desc>Another approaches from the distance. You realize that it is Orgoth, one of the orc tribe leaders. Fiona gestures for him to join your little circle.</desc>
-    <commander id="310" />
+    <commander id="356" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />
       <card id="6012" name="Ember Drake" />
@@ -27985,7 +27985,7 @@
     <name>The Goblins' Plot</name>
     <energy>9</energy>
     <desc>Fiona huddles closely to you and Orgoth, furtively looking behind her shoulder, as if expecting the goblins to be listening. The distance is great enough that you doubt even the scouts could see you.</desc>
-    <commander id="311" />
+    <commander id="310" />
     <deck>
       <card id="8107" name="Firework Explosive" />
       <card id="7012" name="Life Drake" />
@@ -28015,7 +28015,7 @@
     <id>5891</id>
     <name>The Wildcard</name>
     <energy>9</energy>
-    <desc>Fiona huddles closely to you and Orgoth, furtively looking behind her shoulder, as if expecting the goblins to be listening. The distance is great enough that you doubt even the scouts could see you.</desc>
+    <desc>Fiona and Decim are both inhabitants of the same region, Tarragon Peak. Fiona expresses her distress upon learning of Decim's involvement with the Spellstone Hammer.</desc>
     <commander id="320" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />
@@ -28038,7 +28038,7 @@
       <line>
         <commander>dragontamer</commander>
         <enemy>0</enemy>
-        <text>Fiona and Decim are both inhabitants of the same region, Tarragon Peak. Fiona expresses her distress upon learning of Decim's involvement with the Spellstone Hammer.</text>
+        <text>Decim's a bit of a wildcard, but he's actually a good person. It seems odd that he'd willingly help the goblins.</text>
       </line>
     </speech>
   </mission>
@@ -28083,7 +28083,7 @@
     <name>Off the Books</name>
     <energy>9</energy>
     <desc>With the situation assessed, Orgoth gives his best advice. Knowing that Fiona has had bad relationships with the goblins in the past, he suggests the wisest approach to entering the Goblin Fortress...</desc>
-    <commander id="317" />
+    <commander id="311" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />
       <card id="5012" name="Static Drake" />
@@ -28119,7 +28119,7 @@
     <name>Underground Entrance</name>
     <energy>9</energy>
     <desc>Orgoth takes you farther away from Goblin Rise Stronghold. Fiona starts to protest, before Orgoth reveals a secret passage that leads underground.</desc>
-    <commander id="311" />
+    <commander id="317" />
     <deck>
       <card id="8107" name="Firework Explosive" />
       <card id="7012" name="Life Drake" />
@@ -28166,7 +28166,7 @@
     <id>5896</id>
     <name>Abandoned Entrance</name>
     <energy>9</energy>
-    <desc>A few goblin patrols roam the tunnels. However, you're able to take them out quickly, beofre they can return to fortress and warn the rest of their tribe.</desc>
+    <desc>A few goblin patrols roam the tunnels. However, you're able to take them out quickly, before they can return to the fortress and warn the rest of their tribe.</desc>
     <commander id="323" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -28197,7 +28197,7 @@
     <id>5897</id>
     <name>Goblin Rise Infiltration</name>
     <energy>9</energy>
-    <desc>Orgoth leads you through the winding abandoned mine, motioning for you to stop as he comes to one particular sector. Slowly he pushes open the hatch, peering cautiously on the surface, before announcing it clear for the two of you two follow.</desc>
+    <desc>Orgoth leads you through the winding abandoned mine, motioning for you to stop as he comes to one particular sector. Slowly he pushes open the hatch, peering cautiously on the surface, before announcing the coast is clear for the two of you to follow.</desc>
     <commander id="311" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />
@@ -28283,7 +28283,7 @@
     <id>5900</id>
     <name>Spellstone Hammer</name>
     <energy>9</energy>
-    <desc>The goblin wielding the hammer gives it a mighty swing. It cracks the ground, an object growing from its source. In its place is a Mecha, shaped like a dragon.</desc>
+    <desc>The goblin wielding the hammer gives it a mighty swing. It cracks the ground, an object growing from its source. In its place is a mecha, shaped like a dragon.</desc>
     <commander id="353" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -28306,7 +28306,7 @@
       <line>
         <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
-        <text>Wowee, Baldur! That's one heck of a toy!</text>
+        <text>Wowee, Boldur! That's one heck of a toy!</text>
       </line>
       <line>
         <commander>necromancer</commander>
@@ -28545,7 +28545,7 @@
     <name>Ungrateful Detainee</name>
     <energy>9</energy>
     <desc>You find Decim sitting inside one of the cells. It appears the goblins have locked him away. Fiona runs to the bars, but Decim remains seated and scowls.</desc>
-    <commander id="320" />
+    <commander id="321" />
     <deck>
       <card id="8107" name="Firework Explosive" />
       <card id="5012" name="Static Drake" />
@@ -28671,6 +28671,394 @@
         <commander>Sailing_Drake</commander>
         <enemy>1</enemy>
         <text>Awoo....</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Knights on Strike -->
+  <mission>
+    <id>5912</id>
+    <name>Knights Unite!</name>
+    <energy>1</energy>
+    <desc>STRIKE! After years of physical and mental abuse, The Knights of Arcantica have decided to band together with one goal in mind: survival... and perhaps a pension plan.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8117" />
+      <card id="8117" />
+      <card id="8117" mastery_level="2" />
+      <card id="8117" mastery_level="3" />
+      <card id="8112" mastery_level="4" />
+      <card id="8109" mastery_level="5" />
+      <card id="8109" mastery_level="6" />
+      <card id="8112" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_002</commander>
+        <enemy>1</enemy>
+        <text>What do we want? Safe working conditions and resonable compenstation! When do want it? NOW!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5913</id>
+    <name>Knightmare Story</name>
+    <energy>1</energy>
+    <desc>NOW HIRING: Seeking young, able-bodied heroes with a thirst for adventure. Tasks may include heavy manual and skilled work including hacking, slashing, and beast slaying. No experience required.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8108" mastery_level="2" />
+      <card id="8112" mastery_level="3" />
+      <card id="8108" mastery_level="4" />
+      <card id="8112" mastery_level="5" />
+      <card id="8112" mastery_level="6" />
+      <card id="8109" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_002</commander>
+        <enemy>1</enemy>
+        <text>Replace us? REPLACE US?! Why don't you replace my missing limbs, you bunch of dragon licking gold sticklers!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5914</id>
+    <name>Knight Life</name>
+    <energy>1</energy>
+    <desc>HELP WANTED: Love exotic animals? Want to travel Arcantica? Have an itch to save the world? Apply within! Must maintain immune response to exposure to infectious and parasitic diseases. Health benefits not included.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8116" />
+      <card id="8116" />
+      <card id="8116" />
+      <card id="8108" mastery_level="2" />
+      <card id="8112" mastery_level="3" />
+      <card id="8116" mastery_level="4" />
+      <card id="8117" mastery_level="5" />
+      <card id="8117" mastery_level="6" />
+      <card id="8116" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_001</commander>
+        <enemy>1</enemy>
+        <text>It's turning green. I don't... I don't think it should be turning green. You think I should get it checked?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5915</id>
+    <name>Friday Knight Lights</name>
+    <energy>1</energy>
+    <desc>SUMMER INTERNSHIP: Gain exposure, real world experience, and a life-time of bragging rights. Must be available to work all necessary hours, including weekends, holidays, special events and all shifts. Unpaid.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8117" />
+      <card id="8117" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8116" />
+      <card id="8116" mastery_level="2" />
+      <card id="8117" mastery_level="3" />
+      <card id="8109" mastery_level="4" />
+      <card id="8108" mastery_level="5" />
+      <card id="8117" mastery_level="6" />
+      <card id="8112" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>1</enemy>
+        <text>THIS WAS SUPPOSED TO BE FOR COLLEGE CREDIT!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5916</id>
+    <name>Toknight We Fight!</name>
+    <energy>1</energy>
+    <desc>There once was a knight named Toknight. Who had dreams of daring, and might. With his parents to blame, for his prophetic name, he sought out to claim his birthright.</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8115" mastery_level="2" />
+      <card id="8115" mastery_level="3" />
+      <card id="8110" mastery_level="4" />
+      <card id="8118" mastery_level="5" />
+      <card id="8110" mastery_level="6" />
+      <card id="8118" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>TAP TAP- Is this thing on? Can ev'body hear me? Yo! WHAT'S UP SKYHAAAAAVEN?!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>Yo! I got a special tale for ya' tonight- it's a tale so tall it will fill you with fright!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>Prepare yourself, for the story of Toknight the knight... tonight.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5917</id>
+    <name>Toknight We Dine in Heck!</name>
+    <energy>1</energy>
+    <desc>He traveled the land far and wide, seeking adventure to assuage his pride. He sought to slay beasts and to perform many feats, but only found himself terrified.</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8110" mastery_level="2" />
+      <card id="8110" mastery_level="3" />
+      <card id="8115" mastery_level="4" />
+      <card id="8118" mastery_level="5" />
+      <card id="8115" mastery_level="6" />
+      <card id="8118" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>(Listen. Feats and Beasts is close enough, okay? Limericking ain't easy.)</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5918</id>
+    <name>Hot Date, Toknight</name>
+    <energy>1</energy>
+    <desc>So many fangs! So many scales! So many claws! Beasts with talons, tenticles, and paws! Some had eight eyes, and horrifying cries, to expose Toknight's fears and his flaws.</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8118" mastery_level="2" />
+      <card id="8118" mastery_level="3" />
+      <card id="8110" mastery_level="4" />
+      <card id="8115" mastery_level="5" />
+      <card id="8110" mastery_level="6" />
+      <card id="8115" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_001</commander>
+        <enemy>1</enemy>
+        <text>(Before you ask, no, there are no translations for this. You are welcome to try.)</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5919</id>
+    <name>No Sleep Toknight!</name>
+    <energy>1</energy>
+    <desc>No true knight, not even a squire, would quake in fear as I pose and spit fire. With pure rhythm and rhyme, and sick beats in set time. I'm Arcantica's Greatest, Fury Mecha Scyer!</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8108" mastery_level="2" />
+      <card id="8109" mastery_level="3" />
+      <card id="8117" mastery_level="4" />
+      <card id="8116" mastery_level="5" />
+      <card id="8108" mastery_level="6" />
+      <card id="8109" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>You can catch my latest single on my website!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5920</id>
+    <name>A Good Knight to Die</name>
+    <energy>1</energy>
+    <desc>RAAAAAAAAAAAAAAAAWR. Rwar raw rawr raaaaaaa ra rwar! RAWR RAWR!</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8111" mastery_level="2" />
+      <card id="8111" mastery_level="3" />
+      <card id="8113" mastery_level="4" />
+      <card id="8114" mastery_level="5" />
+      <card id="8113" mastery_level="6" />
+      <card id="8114" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>Haven't had enough, eh? COME ON THEN!</text>
+      </line>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>Ye don't have any Dragons over there, do ye? I hate Dragons...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5921</id>
+    <name>All Knighter</name>
+    <energy>1</energy>
+    <desc>Raw raaaaar rawr ra? Rawr. Ra ra rawr. Rarawr, rawr raaaaawr raa rwar rawr.</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8113" mastery_level="2" />
+      <card id="8113" mastery_level="3" />
+      <card id="8111" mastery_level="4" />
+      <card id="8114" mastery_level="5" />
+      <card id="8111" mastery_level="6" />
+      <card id="8114" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>Take this! And this! And... this! YEAH! AND THE LITTLE ONE TOO!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5922</id>
+    <name>A Knight to Remember</name>
+    <energy>1</energy>
+    <desc>RAWR! RA RAW RAAAAAWR!</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8114" mastery_level="2" />
+      <card id="8114" mastery_level="3" />
+      <card id="8113" mastery_level="4" />
+      <card id="8111" mastery_level="5" />
+      <card id="8113" mastery_level="6" />
+      <card id="8111" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>KICK IT! KICK IT AGAIN!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5923</id>
+    <name>Good Knight and Good Luck</name>
+    <energy>1</energy>
+    <desc>Raaaaaaawr. :'(</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8108" mastery_level="2" />
+      <card id="8109" mastery_level="3" />
+      <card id="8117" mastery_level="4" />
+      <card id="8116" mastery_level="5" />
+      <card id="8108" mastery_level="6" />
+      <card id="8109" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>... Wait... are we the bad guys?</text>
       </line>
     </speech>
   </mission>

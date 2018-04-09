@@ -3178,8 +3178,8 @@
     <name>Frostjaw Giant</name>
     <picture>Ice_Giant_A</picture>
     <asset_bundle>33</asset_bundle>
-    <attack>8</attack>
-    <health>19</health>
+    <attack>9</attack>
+    <health>25</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
@@ -3190,7 +3190,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>20</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -3200,7 +3200,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>22</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -3210,7 +3210,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>9</attack>
+      <attack>10</attack>
     </upgrade>
   </unit>
   <unit>
@@ -3220,8 +3220,8 @@
     <name>Hulking Frostjaw</name>
     <picture>Ice_Giant_B</picture>
     <asset_bundle>33</asset_bundle>
-    <attack>9</attack>
-    <health>23</health>
+    <attack>11</attack>
+    <health>30</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
@@ -3232,7 +3232,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>24</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -3242,17 +3242,21 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>26</health>
+      <health>33</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="evade" x="2" />
-      <skill id="armored" x="4" />
+      <skill id="armored" x="5" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>10</attack>
+      <health>34</health>
+      <attack>12</attack>
+      <skill id="evade" x="3" />
+      <skill id="armored" x="6" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
   <unit>
@@ -10954,14 +10958,16 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>13</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
       <health>14</health>
     </upgrade>
     <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
       <level>5</level>
+      <health>17</health>
       <skill id="evade" x="1" />
       <skill id="rally" x="2" all="1" y="3" />
       <skill id="jam" c="5" />
@@ -11047,8 +11053,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>22</health>
       <skill id="armored" x="3" />
-      <skill id="rally" x="1" all="1" />
+      <skill id="rally" x="2" all="1" />
       <skill id="pierce" x="4" />
     </upgrade>
   </unit>
@@ -11061,18 +11068,18 @@
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1477587600</hidden_until_time>
     <attack>8</attack>
-    <health>21</health>
+    <health>24</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="3" />
-    <skill id="rally" x="1" all="1" />
+    <skill id="rally" x="2" all="1" />
     <skill id="pierce" x="5" />
     <type>3</type>
     <sub_type>11</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>22</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -11080,19 +11087,20 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>23</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="4" />
-      <skill id="rally" x="1" all="1" />
+      <skill id="rally" x="2" all="1" />
       <skill id="pierce" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>10</attack>
       <skill id="armored" x="4" />
-      <skill id="rally" x="2" all="1" />
-      <skill id="pierce" x="6" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="pierce" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -11184,8 +11192,8 @@
     <picture>Shaman_Goblin_B</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1478192400</hidden_until_time>
-    <attack>4</attack>
-    <health>15</health>
+    <attack>5</attack>
+    <health>16</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="protect" x="1" y="11" />
@@ -11198,28 +11206,29 @@
       <level>2</level>
       <skill id="protect" x="1" all="1" y="11" />
       <skill id="enfeeble" x="1" />
-      <skill id="poison" x="3" />
+      <skill id="poison" x="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>16</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>19</health>
       <skill id="protect" x="1" all="1" y="11" />
       <skill id="enfeeble" x="1" all="1" />
-      <skill id="poison" x="3" />
-      <health>17</health>
+      <skill id="poison" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>7</attack>
       <skill id="protect" x="2" all="1" y="11" />
-      <skill id="enfeeble" x="1" all="1" />
-      <skill id="poison" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="poison" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -11321,24 +11330,25 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>18</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>7</attack>
-      <health>19</health>
+      <health>23</health>
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="rally" x="4" y="11" />
-      <skill id="rally" x="2" y="11" />
-      <skill id="leech" x="5" />
+      <skill id="rally" x="3" y="11" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>24</health>
+      <skill id="rally" x="5" y="11" />
       <skill id="rally" x="4" y="11" />
-      <skill id="rally" x="3" y="11" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -18119,19 +18129,19 @@
       <level>3</level>
       <skill id="armored" x="3" />
       <skill id="rally" x="3" y="11" />
-      <skill id="enrage" x="2" />
+      <skill id="enrage" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="armored" x="3" />
       <skill id="rally" x="4" y="11" />
-      <skill id="enrage" x="2" />
+      <skill id="enrage" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="3" />
       <skill id="rally" x="4" y="11" />
-      <skill id="enrage" x="3" />
+      <skill id="enrage" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -18148,7 +18158,7 @@
     <rarity>3</rarity>
     <skill id="armored" x="3" />
     <skill id="rally" x="4" y="11" />
-    <skill id="enrage" x="3" />
+    <skill id="enrage" x="6" />
     <type>3</type>
     <sub_type>11</sub_type>
     <set>3000</set>
@@ -18164,14 +18174,15 @@
       <level>4</level>
       <skill id="armored" x="4" />
       <skill id="rally" x="4" y="11" />
-      <skill id="enrage" x="3" />
+      <skill id="enrage" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>16</health>
+      <attack>6</attack>
       <skill id="armored" x="4" />
       <skill id="rally" x="5" y="11" />
-      <skill id="enrage" x="4" />
+      <skill id="enrage" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -23407,6 +23418,143 @@
       <skill id="valor" x="8" />
       <skill id="poison" x="6" />
       <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7188</id>
+    <card_type>2</card_type>
+    <name>Honeycomb Thrower</name>
+    <picture>Beehive_Thrower_Goblin_A</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1522947600</hidden_until_time>
+    <attack>8</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="3" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="daze" x="3" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="regenerate" x="3" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <skill id="regenerate" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17188</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Honeycomb Chucker</name>
+    <picture>Beehive_Thrower_Goblin_A</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1522947600</hidden_until_time>
+    <attack>9</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="4" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="daze" x="5" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="regenerate" x="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <skill id="regenerate" x="5" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="daze" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="5" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="daze" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>25</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27188</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Honeycomb Lobber</name>
+    <picture>Beehive_Thrower_Goblin_B</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1522947600</hidden_until_time>
+    <attack>9</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="daze" x="6" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="regenerate" x="6" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="daze" x="8" />
     </upgrade>
   </unit>
 </root>

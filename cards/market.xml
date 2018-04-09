@@ -2516,6 +2516,20 @@
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3086</id>
+    <name>100x Common Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives 100 ^cDDDFCommon^cFFFF cards with NO chance of upgrade! Worst chance at ^cE7FFLegendary^cFFFF cards! May be bought an unlimited number of times!</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="1" set="1000" num_pulls="100" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -4891,5 +4905,61 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="7072" display_card_id="7072" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5112</id>
+    <name>Archgeneral Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFArchgeneral^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="1042" display_card_id="1042" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5113</id>
+    <name>Marshwing Rider Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMarshwing Rider^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7184" display_card_id="7184" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5114</id>
+    <name>100x Common Pack!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 100 Common cards with NO chance of upgrade! Worst chance at ^cE7FFLegendary^cFFFF cards! May be bought an unlimited number of times!</desc>
+    <asset_prefab>basic_100_pack</asset_prefab>
+    <background_prefab>basic_100_pack_banner</background_prefab>
+    <bundle>123</bundle>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>78</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <pack>3086</pack>
   </store_item>
 </root>

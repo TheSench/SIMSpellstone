@@ -1061,6 +1061,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "526": {
+    "name": "Dragons are the Worst",
+    "id": "526",
+    "desc": "Dragons gain Bolt all Knight 5.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "strike",
+        "x": 5,
+        "y": "9",
+        "all": "1",
+      },
+    ]
+  },
   "1001": {
     "name": "Primal Mending",
     "id": "1001",
@@ -1647,6 +1661,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .2,
         "mult": .01,
+      },
+    ]
+  },
+  "2036": {
+    "name": "Metalschema Samba",
+    "id": "2036",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
       },
     ]
   },

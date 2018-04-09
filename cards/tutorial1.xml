@@ -1227,6 +1227,49 @@
       <confirm>1</confirm>
     </step>
   </guide>
+  <guide>
+    <id>1035</id>
+    <name>Skill Guide: Scorch Self</name>
+    <trigger>
+      <flagreq id="usingSkill" value="burnself" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>burnself</skill>
+          <commander>raven</commander>
+          <text>Umm. I think he set himself on fire...</text>
+        </line>
+        <line>
+          <skill>burnself</skill>
+          <commander>raven</commander>
+          <text>... Should we help?</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1036</id>
+    <name>Skill Guide: Freeze Self</name>
+    <trigger>
+      <flagreq id="usingSkill" value="jamself" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>jamself</skill>
+          <commander>raven</commander>
+          <text>SQUAK! He's so nervous he froze up! No wonder he's always getting beat up!</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
   <!-- ============================== -->
   <!-- === ADDITIONAL MISC GUIDES === -->
   <!-- ============================== -->

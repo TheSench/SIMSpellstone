@@ -221,26 +221,48 @@ var SIMULATOR = {};
 
 	var activationSkills = {
 
+		burnself: function burnself(src_card, skill) {
+			var scorch = skill.x;
+
+			if (!src_card.scorched) {
+				src_card.scorched = {
+					amount: scorch,
+					timer: 2
+				};
+			} else {
+				src_card.scorched.amount += scorch;
+				src_card.scorched.timer = 2;
+			}
+			if (debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on itself<br>';
+
+			return 1;
+		},
 		// Scorch
 		// - cone-shaped scorch
-		scorchbreath: function(src_card, skill) {
-			return activationSkills.burn(src_card, skill, true);
+		scorchbreath: function scorchbreath(src_card, skill) {
+			return activationSkills.burn(src_card, skill);
 		},
 		// Scorch
 		// - Target must be an assault
-		burn: function (src_card, skill, cone) {
+		burn: function burn(src_card, skill) {
 
 			var o = get_o(src_card);
 
-			var field_o_assaults = field[o]['assaults'];
+			var field_o_assaults = field[o].assaults;
 
 			var targets;
-			if (cone) {
-				var startKey = Math.max(0, src_card.key - 1);
-				var endKey = Math.min(field_o_assaults.length, src_card.key + 2);
-				targets = field_o_assaults.slice(startKey, endKey);
-			} else {
-				targets = field_o_assaults.slice(src_card.key, src_card.key+1);
+			switch (skill.id) {
+				case 'scorchbreath':
+					var startKey = Math.max(0, src_card.key - 1);
+					var endKey = Math.min(field_o_assaults.length, src_card.key + 2);
+					targets = field_o_assaults.slice(startKey, endKey);
+					break;
+				case 'burnself':
+					targets = [src_card];
+					break;
+				default:
+					targets = field_o_assaults.slice(src_card.key, src_card.key + 1);
+					break;
 			}
 			if (!targets.length) return 0;
 
@@ -681,14 +703,22 @@ var SIMULATOR = {};
 		// - Targets active_next_turn, unjammed enemy assaults
 		// - Can be evaded
 		// - If evaded, cooldown timer is not reset (tries again next turn)
-		jam: function (src_card, skill) {
+		jamself: function jamself(src_card, skill) {
+
+			src_card.jammed = true;
+			src_card.jammedSelf = true;
+			if (debug) echo += debug_name(src_card) + ' freezes itself<br>';
+
+			return 1;
+		},
+		jam: function jam(src_card, skill) {
 
 			var p = get_p(src_card);
 			var o = get_o(src_card);
 
 			var all = skill.all;
 
-			var field_x_assaults = field[o]['assaults'];
+			var field_x_assaults = field[o].assaults;
 
 			var targets = [];
 
@@ -888,16 +918,20 @@ var SIMULATOR = {};
 		// - Can be evaded
 		// - Can be enhanced
 		weakenself: function (src_card, skill) {
-			return activationSkills.weaken(src_card, skill, true);
+			return activationSkills.weaken(src_card, skill);
 		},
-		weaken: function (src_card, skill, self) {
+		weaken: function (src_card, skill) {
 
 			var faction = skill['y'];
 
-			if (self) {
-				var o = get_p(src_card);
-			} else {
-				var o = get_o(src_card);
+			var o;
+			switch (skill.id) {
+				case 'weakenself':
+					o = get_p(src_card);
+					break;
+				default:
+					o = get_o(src_card);
+					break;
 			}
 
 			var weaken = skill.x;
@@ -2435,7 +2469,12 @@ var SIMULATOR = {};
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 			var current_assault = field_p_assaults[key];
 
-			current_assault.jammed = false;
+			// Make sure jam-self doesn't wear off at end of turn it was applied
+			if (current_assault.jammedSelf) {
+				current_assault.jammedSelf = false;
+			} else {
+				current_assault.jammed = false;
+			}
 			current_assault.attack_rally = 0;
 			current_assault.attack_weaken = 0;
 			current_assault.nullified = 0;

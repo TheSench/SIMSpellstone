@@ -5358,18 +5358,22 @@
     <upgrade>
       <level>3</level>
       <health>10</health>
+      <attack>3</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>11</health>
       <skill id="enfeeble" x="3" />
       <skill id="burn" x="2" />
       <skill id="weaken" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="3" />
+      <health>12</health>
+      <attack>4</attack>
+      <skill id="enfeeble" x="4" />
       <skill id="burn" x="3" />
-      <skill id="weaken" x="4" />
+      <skill id="weaken" x="5" />
     </upgrade>
   </unit>
   <!-- Legendarys BEGIN - 1340 -->
@@ -6020,15 +6024,17 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>17</health>
       <skill id="strike" x="5" />
-      <skill id="nullify" x="1" />
+      <skill id="nullify" x="2" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>17</health>
+      <health>18</health>
+      <attack>6</attack>
       <skill id="strike" x="5" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="3" />
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>
@@ -7842,30 +7848,32 @@
     <rarity>3</rarity>
     <skill id="rally" x="4" />
     <skill id="pierce" x="5" />
-    <skill id="poison" x="3" />
+    <skill id="poison" x="4" />
     <type>3</type>
     <sub_type>11</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>20</health>
+      <health>21</health>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="rally" x="4" />
+      <skill id="rally" x="5" />
       <skill id="pierce" x="6" />
-      <skill id="poison" x="3" />
+      <skill id="poison" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="rally" x="5" />
-      <skill id="pierce" x="6" />
-      <skill id="poison" x="3" />
+      <skill id="rally" x="6" />
+      <skill id="pierce" x="7" />
+      <skill id="poison" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
+      <attack>7</attack>
+      <health>22</health>
     </upgrade>
   </unit>
   <unit>
