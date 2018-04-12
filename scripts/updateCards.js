@@ -126,8 +126,8 @@ var DATA_UPDATER = (function () {
             var cardData = storageAPI.getField("GameData", "CardCache");
 
             if (cardData) {
-                cardData.newFusions = (cardData.newCards || {});
-                cardData.newCards = (cardData.newFusions || {});
+                cardData.newCards = (cardData.newCards || {});
+                cardData.newFusions = (cardData.newFusions || {});
                 $.extend(cardData.newCards, newCards);
                 $.extend(cardData.newFusions, newFusions);
             } else {
