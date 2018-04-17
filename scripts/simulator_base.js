@@ -850,6 +850,50 @@ var SIMULATOR = {};
 			return affected;
 		},
 
+		heartseeker: function (src_card, skill) {
+
+			var faction = skill['y'];
+
+			var o = get_o(src_card);
+
+			var heartseeker = skill.x;
+
+			var all = skill.all;
+
+			var targets = field_o_assaults.slice(src_card.key, src_card.key + 1);
+
+			// No Targets
+			if (!targets.length) return 0;
+
+			var enhanced = getEnhancement(src_card, skill.id);
+			if (enhanced) {
+				if (enhanced < 0) {
+					enhanced = Math.ceil(heartseeker * -enhanced);
+				}
+				heartseeker += enhanced;
+			}
+
+			var affected = 0;
+
+			for (var key = 0, len = targets.length; key < len; key++) {
+				var target = field_x_assaults[targets[key]];
+
+				// Check Evade
+				if (target.invisible) {
+					target.invisible--;
+					if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
+					continue;
+				}
+
+				affected++;
+
+				// TODO: =, max, or +=?
+				target['heartseeker'] += heartseeker;
+				if (debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
+			}
+
+			return affected;
+		},
 		// Enfeeble (Hex)
 		// - Can target specific faction
 		// - Targets enemy assaults
@@ -2094,7 +2138,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			current_assault.enfeebled = current_assault.envenomed;
+			current_assault.enfeebled = current_assault.envenomed + current_assault.heartseeker;
 			current_assault.enraged = 0;
 			current_assault.invisible = 0;
 			current_assault.protected = 0;

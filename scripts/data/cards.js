@@ -21343,6 +21343,137 @@ var CARDS = {
       },
     }
   },
+  "412": {
+    "id": "412",
+    "name": "Boldur, the Bravest",
+    "picture": "portrait_portraits_boldur",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 81,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 2,
+        "y": "11",
+        "s": "berserk",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 84,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "y": "11",
+            "s": "berserk",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 88,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "y": "11",
+            "s": "berserk",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 91,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "y": "11",
+            "s": "berserk",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 95,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "y": "11",
+            "s": "berserk",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 99,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "y": "11",
+            "s": "berserk",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -152683,6 +152814,268 @@ var CARDS = {
       },
     }
   },
+  "7187": {
+    "id": "7187",
+    "name": "Forest Hydra",
+    "picture": "Dragon_Forest_Hyrda_A",
+    "hidden_until": "1523725200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 11,
+    "attack": 3,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "daze",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "attack": 4,
+        "skill": [],
+      },
+    }
+  },
+  "17187": {
+    "id": "17187",
+    "name": "Deepwood Hydra",
+    "picture": "Dragon_Forest_Hyrda_A",
+    "hidden_until": "1523725200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 13,
+    "attack": 4,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "daze",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27187": {
+    "id": "27187",
+    "name": "Darkwood Hydra",
+    "picture": "Dragon_Forest_Hyrda_B",
+    "hidden_until": "1523725200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 15,
+    "attack": 4,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "daze",
+        "x": 5,
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "daze",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "daze",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "7188": {
     "id": "7188",
     "name": "Honeycomb Thrower",
@@ -152954,6 +153347,297 @@ var CARDS = {
           {
             "id": "daze",
             "x": 8,
+          },
+        ],
+      },
+    }
+  },
+  "7190": {
+    "id": "7190",
+    "name": "Drix and Acidfire",
+    "picture": "Goblin_Dragon_Tamer_A",
+    "hidden_until": "1523898000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9","11"],
+    "health": 30,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "regenerate",
+        "x": 4,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "11",
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [],
+      },
+      "3": {
+        "health": 32,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "skill": [],
+      },
+      "6": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "17190": {
+    "id": "17190",
+    "name": "Drix and Acidflare",
+    "picture": "Goblin_Dragon_Tamer_A",
+    "hidden_until": "1523898000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9","11"],
+    "health": 34,
+    "attack": 8,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "regenerate",
+        "x": 5,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "11",
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+        ],
+      },
+      "4": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 8,
+          },
+        ],
+      },
+      "5": {
+        "attack": 9,
+        "skill": [],
+      },
+      "6": {
+        "health": 37,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 8,
+          },
+        ],
+      },
+    }
+  },
+  "27190": {
+    "id": "27190",
+    "name": "Drix and Acidflames",
+    "picture": "Goblin_Dragon_Tamer_B",
+    "hidden_until": "1523898000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9","11"],
+    "health": 37,
+    "attack": 9,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "regenerate",
+        "x": 7,
+      },
+      {
+        "id": "heal",
+        "x": 4,
+        "y": "11",
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 8,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 7,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 9,
+          },
+        ],
+      },
+      "3": {
+        "health": 39,
+        "skill": [],
+      },
+      "4": {
+        "attack": 10,
+        "health": 40,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 8,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 9,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 8,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 10,
           },
         ],
       },
@@ -180242,6 +180926,165 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "6600": {
+    "id": "6600",
+    "name": "Sigix the Charcannon",
+    "picture": "Goblin_Battery_Cyborg_B",
+    "rarity": "4",
+    "set": "5100",
+    "card_type": "2",
+    "shard_card": 1,
+    "type": "2",
+    "sub_type": ["11","16"],
+    "health": 15,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 10,
+    "skill": [
+      {
+        "id": "regenerate",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "health": 17,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "skill": [],
+      },
+      "6": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "7": {
+        "attack": 9,
+        "health": 19,
+        "skill": [],
+      },
+      "8": {
+        "attack": 10,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
+          },
+        ],
+      },
+      "9": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
+          },
+        ],
+      },
+      "10": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "regenerate",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
           },
         ],
       },
@@ -207622,7 +208465,7 @@ var CARDS = {
   },
   "8079": {
     "id": "8079",
-    "name": "Vorpal Essencer",
+    "name": "Vorpal Warpbeast",
     "picture": "Void_Elemental_C",
     "rarity": "4",
     "set": "9999",
@@ -207635,9 +208478,8 @@ var CARDS = {
     "maxLevel": 6,
     "skill": [
       {
-        "id": "rally",
+        "id": "weaken",
         "x": 1,
-        "y": "8",
         "all": "1",
       },
       {
@@ -207654,9 +208496,8 @@ var CARDS = {
         "health": 17,
         "skill": [
           {
-            "id": "rally",
+            "id": "weaken",
             "x": 1,
-            "y": "8",
             "all": "1",
           },
           {
@@ -207673,9 +208514,8 @@ var CARDS = {
         "health": 18,
         "skill": [
           {
-            "id": "rally",
+            "id": "weaken",
             "x": 2,
-            "y": "8",
             "all": "1",
           },
           {
@@ -207692,9 +208532,8 @@ var CARDS = {
         "health": 20,
         "skill": [
           {
-            "id": "rally",
+            "id": "weaken",
             "x": 2,
-            "y": "8",
             "all": "1",
           },
           {
@@ -207716,9 +208555,8 @@ var CARDS = {
         "health": 26,
         "skill": [
           {
-            "id": "rally",
+            "id": "weaken",
             "x": 3,
-            "y": "8",
             "all": "1",
           },
           {
@@ -208597,7 +209435,7 @@ var CARDS = {
   },
   "8088": {
     "id": "8088",
-    "name": "Vorpal Essencer",
+    "name": "Vorpal Necroblaster",
     "picture": "Necromancer_Goblin_B",
     "rarity": "4",
     "set": "9999",
@@ -211976,6 +212814,137 @@ var CARDS = {
       },
     }
   },
+  "8119": {
+    "id": "8119",
+    "name": "Brittle Ragescale",
+    "picture": "Mecha_Energy_Shield_Dragon_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["16","9"],
+    "health": 2,
+    "attack": 2,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 20,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "enrage",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 3,
+        "health": 3,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 21,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "attack": 4,
+        "health": 3,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 22,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "health": 4,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 23,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 4,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 24,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 6,
+        "health": 5,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 26,
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "9999": {
     "id": "9999",
     "name": "Unused Art - 'Angel_Seafolk_Dolphin'",
@@ -212877,4 +213846,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1523286832766.11;
+var CardsUpdated = 1523972013771.02;

@@ -23421,6 +23421,141 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7187</id>
+    <card_type>2</card_type>
+    <name>Forest Hydra</name>
+    <picture>Dragon_Forest_Hyrda_A</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1523725200</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="daze" x="2" />
+    <skill id="leech" x="2" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="daze" x="3" />
+      <skill id="leech" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="daze" x="3" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>4</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17187</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Deepwood Hydra</name>
+    <picture>Dragon_Forest_Hyrda_A</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1523725200</hidden_until_time>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="daze" x="4" />
+    <skill id="leech" x="3" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="daze" x="4" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="daze" x="4" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="daze" x="5" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="daze" x="5" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27187</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Darkwood Hydra</name>
+    <picture>Dragon_Forest_Hyrda_B</picture>
+    <asset_bundle>122</asset_bundle>
+    <hidden_until_time>1523725200</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="daze" x="5" />
+    <skill id="leech" x="5" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="daze" x="6" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="daze" x="6" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>17</health>
+      <skill id="daze" x="6" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7188</id>
     <card_type>2</card_type>
     <name>Honeycomb Thrower</name>
@@ -23555,6 +23690,149 @@
       <skill id="regenerate" x="7" />
       <skill id="enfeeble" x="3" all="1" />
       <skill id="daze" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7190</id>
+    <card_type>2</card_type>
+    <name>Drix and Acidfire</name>
+    <picture>Goblin_Dragon_Tamer_A</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1523898000</hidden_until_time>
+    <attack>7</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="4" />
+    <skill id="heal" x="2" all="1" y="11" />
+    <skill id="poison" x="5" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="5" />
+      <skill id="heal" x="2" all="1" y="11" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="regenerate" x="5" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="poison" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17190</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Drix and Acidflare</name>
+    <picture>Goblin_Dragon_Tamer_A</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1523898000</hidden_until_time>
+    <attack>8</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="heal" x="3" all="1" y="11" />
+    <skill id="poison" x="6" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="regenerate" x="5" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="regenerate" x="6" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="regenerate" x="6" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>37</health>
+      <skill id="regenerate" x="6" />
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27190</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Drix and Acidflames</name>
+    <picture>Goblin_Dragon_Tamer_B</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1523898000</hidden_until_time>
+    <attack>9</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="heal" x="4" all="1" y="11" />
+    <skill id="poison" x="8" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="regenerate" x="7" />
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="8" />
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="8" />
+      <skill id="heal" x="5" all="1" y="11" />
+      <skill id="poison" x="10" />
     </upgrade>
   </unit>
 </root>

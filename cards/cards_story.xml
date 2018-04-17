@@ -5191,14 +5191,14 @@
   <unit>
     <id>8079</id>
     <card_type>2</card_type>
-    <name>Vorpal Essencer</name>
+    <name>Vorpal Warpbeast</name>
     <picture>Void_Elemental_C</picture>
     <asset_bundle>9</asset_bundle>
     <attack>5</attack>
     <health>16</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="rally" x="1" all="1" y="8" />
+    <skill id="weaken" x="1" all="1" />
     <skill id="jam" c="4" />
     <skill id="leech" x="6" />
     <type>8</type>
@@ -5207,21 +5207,21 @@
     <upgrade>
       <level>2</level>
       <health>17</health>
-      <skill id="rally" x="1" all="1" y="8" />
+      <skill id="weaken" x="1" all="1" />
       <skill id="jam" c="3" />
       <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>18</health>
-      <skill id="rally" x="2" all="1" y="8" />
+      <skill id="weaken" x="2" all="1" />
       <skill id="jam" c="3" />
       <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>20</health>
-      <skill id="rally" x="2" all="1" y="8" />
+      <skill id="weaken" x="2" all="1" />
       <skill id="jam" c="3" />
       <skill id="leech" x="7" />
     </upgrade>
@@ -5233,7 +5233,7 @@
     <upgrade>
       <level>6</level>
       <health>26</health>
-      <skill id="rally" x="3" all="1" y="8" />
+      <skill id="weaken" x="3" all="1" />
       <skill id="jam" c="3" />
       <skill id="leech" x="8" />
     </upgrade>
@@ -5639,7 +5639,7 @@
   <unit>
     <id>8088</id>
     <card_type>2</card_type>
-    <name>Vorpal Essencer</name>
+    <name>Vorpal Necroblaster</name>
     <picture>Necromancer_Goblin_B</picture>
     <asset_bundle>74</asset_bundle>
     <attack>6</attack>
@@ -7258,6 +7258,64 @@
       <skill id="evade" x="10" />
       <skill id="armored" x="50" />
       <skill id="reanimate" x="1" />
+    </upgrade>
+  </unit>
+  <!-- Campaign Event 9 Boss -->
+  <unit>
+    <id>8119</id>
+    <card_type>2</card_type>
+    <name>Brittle Ragescale</name>
+    <picture>Mecha_Energy_Shield_Dragon_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <attack>2</attack>
+    <health>2</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="20" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="enrage" x="1" all="1" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <sub_type>9</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>3</health>
+      <attack>3</attack>
+      <skill id="armored" x="21" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="enrage" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+      <attack>4</attack>
+      <skill id="armored" x="22" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+      <attack>5</attack>
+      <skill id="armored" x="23" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="enrage" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>4</health>
+      <skill id="armored" x="24" />
+      <skill id="protect" x="4" all="1" />
+      <skill id="enrage" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+      <health>5</health>
+      <skill id="armored" x="26" />
+      <skill id="protect" x="5" all="1" />
+      <skill id="enrage" x="5" all="1" />
     </upgrade>
   </unit>
 </root>

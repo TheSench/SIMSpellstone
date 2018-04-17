@@ -28309,7 +28309,7 @@
         <text>Wowee, Boldur! That's one heck of a toy!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Boldur</commander>
         <enemy>1</enemy>
         <text>Heh, the sky's the limit, boys. We can make ANYTHING.</text>
       </line>
@@ -28371,12 +28371,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Boldur</commander>
         <enemy>1</enemy>
         <text>One good whack with this hammer and we can improve our defenses.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Boldur</commander>
         <enemy>1</enemy>
         <text>I'd like to see the fool who thinks he can take on an army of Goblins and Mechas!</text>
       </line>
@@ -29061,5 +29061,102 @@
         <text>... Wait... are we the bad guys?</text>
       </line>
     </speech>
+  </mission>
+  <!-- A Test of Might -->
+  <mission>
+    <id>5924</id>
+    <name>Bravest Goblin</name>
+    <energy>9</energy>
+    <desc>The goblins have formed a tight ring around your band, making escape impossible. At Boldur's decree, the goblins move quickly. The wind drake is scooped up and dropped in a sack pouch, the goblins deftly tying it with rope.</desc>
+    <commander id="412" />
+    <deck>
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5147" name="Bard of Gobsburg" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="1344" name="Boomsting Duo" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="6049" mastery_level="2" name="Goblin Explosioneer" />
+      <card id="7144" mastery_level="3" name="Kazamo" />
+      <card id="5088" mastery_level="4" name="Betrayal" />
+      <card id="5088" mastery_level="5" name="Betrayal" />
+      <card id="2101" mastery_level="6" name="Rot Goblin" />
+      <card id="6092" mastery_level="7" name="Smog Charger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5925</id>
+    <name>Without Alternative</name>
+    <energy>9</energy>
+    <desc>The goblins catch Decim's swing before it completes, forcing him to the ground. They usher Orgoth to the side, while you stand side by side with Fiona, facing Boldur. The goblins begin to bounce, voices rising as they cheer Boldur's courage.</desc>
+    <commander id="412" />
+    <deck>
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5147" name="Bard of Gobsburg" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="1344" name="Boomsting Duo" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="6049" mastery_level="2" name="Goblin Explosioneer" />
+      <card id="7144" mastery_level="3" name="Kazamo" />
+      <card id="5088" mastery_level="4" name="Betrayal" />
+      <card id="5088" mastery_level="5" name="Betrayal" />
+      <card id="2101" mastery_level="6" name="Rot Goblin" />
+      <card id="6092" mastery_level="7" name="Smog Charger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5926</id>
+    <name>Fearless</name>
+    <energy>9</energy>
+    <desc>Boldur spits in his hands, rubbing them together vigorously. He takes a firm grip on the hammer's handle, pausing just for a second to wink at Fiona. She starts to sputter in disgust, but before she can give a proper insult, Boldur slams the hammer against the ground!</desc>
+    <commander id="412" />
+    <deck>
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5147" name="Bard of Gobsburg" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="1344" name="Boomsting Duo" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="6049" mastery_level="2" name="Goblin Explosioneer" />
+      <card id="7144" mastery_level="3" name="Kazamo" />
+      <card id="5088" mastery_level="4" name="Betrayal" />
+      <card id="5088" mastery_level="5" name="Betrayal" />
+      <card id="2101" mastery_level="6" name="Rot Goblin" />
+      <card id="6092" mastery_level="7" name="Smog Charger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5927</id>
+    <name>A Simple Contest</name>
+    <energy>9</energy>
+    <desc>The earth rumbles, structures springing from the ground beneath the hammer's might. Boldur swings again and again, all the while the goblins' shrieks rise to a deafening clamor, an unsteady chorus of 'fight, fight, fight'!</desc>
+    <commander id="412" />
+    <deck>
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5092" name="Tundra Reaver" />
+      <card id="5147" name="Bard of Gobsburg" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="6093" name="Noz Onehand" />
+      <card id="1344" name="Boomsting Duo" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="6049" mastery_level="2" name="Goblin Explosioneer" />
+      <card id="7144" mastery_level="3" name="Kazamo" />
+      <card id="5088" mastery_level="4" name="Betrayal" />
+      <card id="5088" mastery_level="5" name="Betrayal" />
+      <card id="2101" mastery_level="6" name="Rot Goblin" />
+      <card id="6092" mastery_level="7" name="Smog Charger" />
+    </deck>
   </mission>
 </root>

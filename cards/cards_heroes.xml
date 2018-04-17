@@ -9578,4 +9578,53 @@
     </upgrade>
     <desc>Killed by a dragon near Tarragon Peaks. No it was not glorious. The dragon didn't even see him. It was an accident.</desc>
   </unit>
+  <unit>
+    <id>412</id>
+    <card_type>1</card_type>
+    <name>Boldur, the Bravest</name>
+    <portrait>Portraits_Boldur</portrait>
+    <asset_bundle>86</asset_bundle>
+    <health>81</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="2" y="11" s="berserk" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="weaken" x="3" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>84</health>
+      <skill id="imbue" x="2" y="11" s="berserk" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>88</health>
+      <skill id="imbue" x="3" y="11" s="berserk" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>91</health>
+      <skill id="imbue" x="3" y="11" s="berserk" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>95</health>
+      <skill id="imbue" x="4" y="11" s="berserk" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="imbue" x="5" y="11" s="berserk" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="weaken" x="6" />
+    </upgrade>
+  </unit>
 </root>

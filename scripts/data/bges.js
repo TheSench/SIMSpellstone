@@ -1680,6 +1680,22 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2037": {
+    "name": "Arbitrator Sing-Along",
+    "id": "2037",
+    "desc": "Boldur, the Bravest fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .3,
+        "mult": .01,
+      },
+    ]
+  },
   "5001": {
     "name": "The Arena",
     "id": "5001",

@@ -1480,6 +1480,22 @@
       <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
+  <!-- Campaign Event 9 Boss -->
+  <battleground>
+    <id>2037</id>
+    <name>Arbitrator Sing-Along</name>
+    <desc>Boldur, the Bravest fights harder with each passing Mastery level, increasing cards' stats!</desc>
+    <icon>filter_goblin_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".3" mult=".01" />
+    </effect>
+  </battleground>
   <!-- ==================== -->
   <!-- ==== Arena BGEs ==== -->
   <!-- ==================== -->

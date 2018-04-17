@@ -12,11 +12,14 @@
   <!-- Chaos        - 1300-1599 -->
   <!-- Wyld         - 1600-1899 -->
   <!-- Reward Set       - 2000-2999 -->
-  <!-- Shard Cards	  - 3000-4999 -->
+  <!-- Reward Shard	  - 4000-4999 -->
   <!-- Premium Set      - 5000-7999 -->
-  <!-- Aether       - 5000-5999 -->
-  <!-- Chaos        - 6000-6999 -->
-  <!-- Wyld         - 7000-7999 -->
+  <!-- Aether       - 5000-5599 -->
+  <!-- Aether Shard - 5600-5999 -->
+  <!-- Chaos        - 6000-6599 -->
+  <!-- Chaos Shard  - 6600-6999 -->
+  <!-- Wyld         - 7000-7599 -->
+  <!-- Wyld Shard	  - 7600-7999 -->
   <!-- Enemy Set        - 8000-8999 -->
   <!-- Fusion 1         - 1xxxx -->
   <!-- Fusion 2         - 2xxxx -->
@@ -441,6 +444,16 @@
     <balance_points>8</balance_points>
     <hidden>1</hidden>
   </skillType>
+  <skillType>
+    <id>heartseeker</id>
+    <order>15</order>
+    <icon>puncture</icon>
+    <!-- <icon>heartseeker</icon> -->
+    <name>Heartseeker</name>
+    <desc>Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
   <!-- Special -->
   <skillType>
     <id>protect_ice</id>
@@ -630,15 +643,6 @@
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
-  <skillType>
-    <id>heartseeker</id>
-    <order>500</order>
-    <icon>heartseeker</icon>
-    <name>Heartseeker</name>
-    <desc>The enemy creature across from this creature gains a stacking debuff</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
   <!-- =================== -->
   <!-- == CARD FACTIONS == -->
   <!-- =================== -->
@@ -795,6 +799,13 @@
   </cardSet>
   <cardSet>
     <id>5100</id>
+    <name>Champion Premium</name>
+    <visible>1</visible>
+    <icon>set_icon_shard</icon>
+    <picture>set_icon_shard</picture>
+  </cardSet>
+  <cardSet>
+    <id>5200</id>
     <name>Mythic Champion</name>
     <visible>1</visible>
     <icon>set_icon_shard</icon>

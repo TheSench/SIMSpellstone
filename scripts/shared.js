@@ -260,6 +260,7 @@ var defaultStatusValues = {
     enfeebled: 0,
     enraged: 0,
     envenomed: 0,
+	heartseeker: 0,
     imbued: 0,
 	invisible: 0,
     nullified: 0,
@@ -414,7 +415,7 @@ var makeUnit = (function () {
                 }
             }
 
-            this.enfeebled = this.envenomed;
+            this.enfeebled = this.envenomed + this.heartseeker;
             this.enraged = 0;
             this.protected = 0;
             this.barrier_ice = 0;

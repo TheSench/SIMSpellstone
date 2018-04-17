@@ -140,8 +140,8 @@ var SKILL_DATA = {
 	heartseeker : {
 		name: 'Heartseeker',
 		type: 'activation',
-		icon: 'unknown',
-		desc: 'The enemy creature across from this creature gains a stacking debuff'
+		icon: 'puncture',
+		desc: 'Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks.'
 	},
 	ignite : {
 		name: 'Ignite',

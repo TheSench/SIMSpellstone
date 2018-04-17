@@ -5723,7 +5723,7 @@
     </rewards>
     <find_item id="3071" drop_per_energy=".4" />
   </campaign>
-  <!-- Knights on Strike Campaigns -->
+  <!-- Knights on Strike April Fool's Campaigns -->
   <campaign>
     <id>1165</id>
     <hidden>1</hidden>
@@ -5807,6 +5807,40 @@
       <item level="7" id="4013" />
     </rewards>
     <find_item id="3068" drop_per_energy=".6" />
+  </campaign>
+  <!-- Campaign Event 9 -->
+  <!-- A Test of Might -->
+  <campaign>
+    <id>1168</id>
+    <name>A Test of Might</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1163" level="1" />
+    <locked_start_time>1524157200</locked_start_time>
+    <!-- Thu, 19 April 2018 17:00:00 -->
+    <battleground_id>2037</battleground_id>
+    <location_id>15</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>730</x>
+    <y>250</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5924</mission_id>
+      <mission_id>5925</mission_id>
+      <mission_id>5926</mission_id>
+      <mission_id>5927</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3073" />
+      <item level="5" id="3073" />
+      <item level="6" id="3073" />
+      <item level="7" id="3073" />
+    </rewards>
+    <find_item id="3071" drop_per_energy=".4" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
