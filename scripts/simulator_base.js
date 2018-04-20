@@ -858,12 +858,10 @@ var SIMULATOR = {};
 
 			var heartseeker = skill.x;
 
-			var all = skill.all;
-
-			var targets = field_o_assaults.slice(src_card.key, src_card.key + 1);
+			var target = field_o_assaults[src_card.key];
 
 			// No Targets
-			if (!targets.length) return 0;
+			if (!target) return 0;
 
 			var enhanced = getEnhancement(src_card, skill.id);
 			if (enhanced) {
@@ -873,26 +871,10 @@ var SIMULATOR = {};
 				heartseeker += enhanced;
 			}
 
-			var affected = 0;
+			target['heartseeker'] += heartseeker;
+			if (debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
 
-			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
-
-				// Check Evade
-				if (target.invisible) {
-					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
-					continue;
-				}
-
-				affected++;
-
-				// TODO: =, max, or +=?
-				target['heartseeker'] += heartseeker;
-				if (debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
-			}
-
-			return affected;
+			return 1;
 		},
 		// Enfeeble (Hex)
 		// - Can target specific faction
