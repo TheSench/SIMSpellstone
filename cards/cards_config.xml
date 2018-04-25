@@ -57,6 +57,7 @@
   <!-- =================== -->
   <!-- ====== SKILLS ===== -->
   <!-- =================== -->
+  <!-- <icon_bundle>	bundle tag -->
   <skillType>
     <id>0</id>
     <name>Attack</name>
@@ -333,9 +334,9 @@
     <icon>enrage</icon>
     <name>Enrage</name>
     <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.</desc>
-    <desc_all>Enrage all ally creatures. Until your next turn, every time the creatures takes damage from an Attack, it gains Attack permanently.</desc_all>
+    <desc_all>Enrage all ally creatures. Until your next turn, every time the creatures take damage from an Attack, they gain Attack permanently.</desc_all>
     <desc_faction>Enrage a random ally {y} creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.</desc_faction>
-    <desc_all_faction>Enrage all ally {y} creatures. Until your next turn, every time the creatures takes damage from an Attack, it gains Attack permanently.</desc_all_faction>
+    <desc_all_faction>Enrage all ally {y} creatures. Until your next turn, every time the creatures take damage from an Attack, they gain Attack permanently.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <vfx_location>edge</vfx_location>
     <balance_points>3</balance_points>
@@ -646,6 +647,7 @@
   <!-- =================== -->
   <!-- == CARD FACTIONS == -->
   <!-- =================== -->
+  <!-- <icon_bundle>	bundle tag -->
   <unitType>
     <id>0</id>
     <name></name>
@@ -744,6 +746,7 @@
   <!-- =================== -->
   <!-- ==== CARD SETS ==== -->
   <!-- =================== -->
+  <!-- <picture_bundle>	bundle tag -->
   <cardSet>
     <id>1000</id>
     <name>Standard</name>
@@ -764,8 +767,6 @@
     <id>2000</id>
     <name>Reward</name>
     <visible>1</visible>
-    <!-- <icon>set_icon_premium</icon>
-		<picture>set_icon_premium</picture> -->
     <icon>set_icon_reward</icon>
     <picture>set_icon_reward</picture>
   </cardSet>

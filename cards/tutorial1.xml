@@ -1283,14 +1283,14 @@
       <step_id>10</step_id>
       <message>
         <line>
-          <asset name="arena_coin" bundle="58" />
+          <asset name="tutorial_LegendaryToMythic" bundle="30" />
           <commander>raven</commander>
           <text>SQUAWK?! You've reached the maximum number of stones needed to upgrade this Legendary Champion Card! That's amazing!</text>
         </line>
         <line>
-          <asset name="arena_coin" bundle="58" />
+          <asset name="tutorial_LegendaryToMythic" bundle="30" />
           <commander>raven</commander>
-          <text>All future Champion Stones of that type will been converted to a new mysterious Mythic Champion Stone. What could this be for?!</text>
+          <text>All future Champion Stones of that type will been converted to a new Mythic Champion Stone. Who is this mysterious champion?!</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1306,14 +1306,14 @@
       <step_id>10</step_id>
       <message>
         <line>
-          <asset name="arena_coin" bundle="58" />
+          <asset name="tutorial_MythicToRunestone" bundle="30" />
           <commander>raven</commander>
           <text>SQUAWK?! You've reached the maximum number of stones needed to upgrade the Mythic Champion?! That's amazing!</text>
         </line>
         <line>
-          <asset name="arena_coin" bundle="58" />
+          <asset name="tutorial_MythicToRunestone" bundle="30" />
           <commander>raven</commander>
-          <text>All future Mythic Champion Stones will been converted to RUnecrafter's Stones. This is -SQUAWK- AMAZING!!</text>
+          <text>All future Mythic Champion Stones will been converted to Runecrafter's Stones. This is -SQUAWK- AMAZING!!</text>
         </line>
       </message>
       <confirm>1</confirm>

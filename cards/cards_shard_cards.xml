@@ -12,7 +12,7 @@
     <picture>Avian_Stag_B</picture>
     <asset_bundle>114</asset_bundle>
     <item_name>Noctrus Flintclaw Stone</item_name>
-    <item_desc>Collect Noctrus Flintclaw Stones to craft and upgrade the Legendary Noctrus Flintclaw card!</item_desc>
+    <item_desc>Collect Noctrus Flintclaw Stones to upgrade the Legendary Noctrus Flintclaw card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -101,7 +101,7 @@
     <picture>Fire_Fox_Ghost_B</picture>
     <asset_bundle>118</asset_bundle>
     <item_name>Foxfire Stone</item_name>
-    <item_desc>Collect Foxfire Stones to craft and upgrade the Legendary Foxfire card!</item_desc>
+    <item_desc>Collect Foxfire Stones to upgrade the Legendary Foxfire card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -182,7 +182,7 @@
     <picture>Crimson_Winged_Angel_B</picture>
     <asset_bundle>120</asset_bundle>
     <item_name>Razi Stone</item_name>
-    <item_desc>Collect Razi Stones to craft and upgrade the Legendary Razi the Fallen Light card!</item_desc>
+    <item_desc>Collect Razi Stones to upgrade the Legendary Razi the Fallen Light card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -254,6 +254,92 @@
     </upgrade>
   </unit>
   <unit>
+    <id>4003</id>
+    <name>Lev, Forgotten Hero</name>
+    <set>5200</set>
+    <shard_card>1</shard_card>
+    <asset_prefab>mythicWyld_A</asset_prefab>
+    <picture>mythicWyld_A</picture>
+    <asset_bundle>57</asset_bundle>
+    <item_name>Lev Stone</item_name>
+    <item_desc>Collect Lev Stones to upgrade the Mythic Lev, Forgotten Hero card!</item_desc>
+    <item_icon>championStone_mythic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>19</item_overflow_item_id>
+    <type>3</type>
+    <attack>7</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>5</rarity>
+    <skill id="evade" x="3" />
+    <skill id="heartseeker" x="3" />
+    <skill id="daze" x="7" />
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+      <health>28</health>
+      <skill id="evade" x="3" />
+      <skill id="heartseeker" x="3" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <skill id="evade" x="3" />
+      <skill id="heartseeker" x="4" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>30</health>
+      <skill id="evade" x="4" />
+      <skill id="heartseeker" x="4" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+      <skill id="evade" x="4" />
+      <skill id="heartseeker" x="5" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>32</health>
+      <skill id="evade" x="4" />
+      <skill id="heartseeker" x="5" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>33</health>
+      <skill id="evade" x="4" />
+      <skill id="heartseeker" x="6" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>11</attack>
+      <health>34</health>
+      <skill id="evade" x="4" />
+      <skill id="heartseeker" x="6" />
+      <skill id="daze" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>12</attack>
+      <health>35</health>
+      <skill id="evade" x="5" />
+      <skill id="heartseeker" x="7" />
+      <skill id="daze" x="11" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>4004</id>
     <card_type>2</card_type>
     <name>Lok'thor, the Reborn</name>
@@ -263,7 +349,7 @@
     <picture>Reborn_Dragon_A</picture>
     <asset_bundle>122</asset_bundle>
     <item_name>Lok'thor Stone</item_name>
-    <item_desc>Collect Lok'thor Stones to craft and upgrade the Legendary Lok'thor, the Reborn card!</item_desc>
+    <item_desc>Collect Lok'thor Stones to upgrade the Legendary Lok'thor, the Reborn card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -354,7 +440,7 @@
     <picture>Spellstone_Hammer_Goblin_B</picture>
     <asset_bundle>125</asset_bundle>
     <item_name>Boldur Stone</item_name>
-    <item_desc>Collect Boldur Stones to craft and upgrade the Legendary Boldur, Bridge Builder card!</item_desc>
+    <item_desc>Collect Boldur Stones to upgrade the Legendary Boldur, Bridge Builder card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -445,7 +531,7 @@
     <picture>Goblin_Battery_Cyborg_B</picture>
     <asset_bundle>125</asset_bundle>
     <item_name>Sigix Stone</item_name>
-    <item_desc>Collect Sigix Stones to craft and upgrade the Legendary Sigix the Charcannon card!</item_desc>
+    <item_desc>Collect Sigix Stones to upgrade the Legendary Sigix the Charcannon card!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -516,6 +602,99 @@
       <skill id="regenerate" x="7" />
       <skill id="burn" x="5" />
       <skill id="nullify" x="4" />
+    </upgrade>
+  </unit>
+  <!-- ============================= -->
+  <!-- === WYLD PREMIUM CHAMPION === -->
+  <!-- ============================= -->
+  <unit>
+    <id>7600</id>
+    <card_type>2</card_type>
+    <name>Glory Seeker Arran</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Hiker_Goblin_B</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1524502800</hidden_until_time>
+    <item_name>Arran Stone</item_name>
+    <item_desc>Collect Arran Stones to upgrade the Legendary Glory Seeker Arran card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="leech" x="6" />
+    <skill id="heal" all="1" x="2" />
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="corrosive" x="5" />
+      <skill id="leech" x="7" />
+      <skill id="heal" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <skill id="corrosive" x="6" />
+      <skill id="leech" x="7" />
+      <skill id="heal" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>27</health>
+      <skill id="corrosive" x="7" />
+      <skill id="leech" x="7" />
+      <skill id="heal" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="corrosive" x="7" />
+      <skill id="leech" x="8" />
+      <skill id="heal" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>28</health>
+      <skill id="corrosive" x="7" />
+      <skill id="leech" x="9" />
+      <skill id="heal" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>10</attack>
+      <skill id="corrosive" x="7" />
+      <skill id="leech" x="9" />
+      <skill id="heal" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>29</health>
+      <skill id="corrosive" x="8" />
+      <skill id="leech" x="9" />
+      <skill id="heal" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>11</attack>
+      <health>30</health>
+      <skill id="corrosive" x="8" />
+      <skill id="leech" x="10" />
+      <skill id="heal" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>31</health>
+      <skill id="corrosive" x="9" />
+      <skill id="leech" x="10" />
+      <skill id="heal" all="1" x="6" />
     </upgrade>
   </unit>
 </root>

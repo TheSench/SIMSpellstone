@@ -28611,7 +28611,7 @@
     <id>5910</id>
     <name>Fiona's Suspicion</name>
     <energy>9</energy>
-    <desc>The creature dashes behind Decim's back before you can get a good luck at it. Fiona questions Decim's 'plan' about getting captured in Goblin Rise Stronghold...</desc>
+    <desc>The creature dashes behind Decim's back before you can get a good look at it. Fiona questions Decim's 'plan' about getting captured in Goblin Rise Stronghold...</desc>
     <commander id="341" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -29158,5 +29158,814 @@
       <card id="2101" mastery_level="6" name="Rot Goblin" />
       <card id="6092" mastery_level="7" name="Smog Charger" />
     </deck>
+  </mission>
+  <!-- Campaign Event 9 Weeks 5-8 -->
+  <mission>
+    <id>5928</id>
+    <name>The Timid Wind Drake</name>
+    <energy>9</energy>
+    <desc>Decim holds the limp dragonling proudly, as if awaiting your appraisal. It continues to make small whimpering noises, barely meeting your gaze for more than a second.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5089" name="Gomblit" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="7145" name="Metalsmith" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2063" mastery_level="2" name="Hob Fletcher" />
+      <card id="6089" mastery_level="3" name="Fire Belcher" />
+      <card id="6090" mastery_level="4" name="Crackshot" />
+      <card id="7026" mastery_level="5" name="Frostjaw" />
+      <card id="6145" mastery_level="6" name="Goblin Butcher" />
+      <card id="2113" mastery_level="7" name="Vali, the Thunderer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Is that... a dragonling?</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>It's pretty cool, isn't it? I'm a dragon tamer now!</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Decim... no. That's not how that works.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5929</id>
+    <name>Need for Speed</name>
+    <energy>9</energy>
+    <desc>Decim drops the dragonling in his lap. It crawls out immediately, scrambling behind him and attaching itself to his back. Orgoth clears his throat, interrupting the fight between Fiona and Decim.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="1628" name="Garganotos" />
+      <card id="5163" name="Bark Hound" />
+      <card id="2111" name="Drillbot" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="7146" mastery_level="2" name="Goblin Brigand" />
+      <card id="7090" mastery_level="3" name="Prospector" />
+      <card id="6021" mastery_level="4" name="Marsh Ogre" />
+      <card id="6094" mastery_level="5" name="Gob Launcher" />
+      <card id="7143" mastery_level="6" name="Hog Bronco" />
+      <card id="6157" mastery_level="7" name="Dawnblade Huntress" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>You're just jealous that I've got a dragon of my own!</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Aight kids. We don't really got time for this. Let's get a move on.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5930</id>
+    <name>Lone Wolf</name>
+    <energy>9</energy>
+    <desc>Orgoth uses a lockpick against Decim's door. However, as soon as Orgoth opens it, Decim pushes past Fiona and runs down the path! The dragonling clutches Decim's scarf, bobbing up and down as he runs.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="6090" name="Crackshot" />
+      <card id="1628" name="Garganotos" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="7087" name="Goblites" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7146" mastery_level="2" name="Goblin Brigand" />
+      <card id="7090" mastery_level="3" name="Prospector" />
+      <card id="7087" mastery_level="4" name="Goblites" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="7088" mastery_level="6" name="Jubjub" />
+      <card id="5164" mastery_level="7" name="Chromium Centaur" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Decim, where are you going?! Ooh, he is just impossible!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5931</id>
+    <name>The Right Thing to Do</name>
+    <energy>9</energy>
+    <desc>The group tries to decide if they want to put up with Decim's strange behavior. He hasn't exactly been a team player...</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="7090" name="Prospector" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6158" name="Orbos" />
+      <card id="7145" name="Metalsmith" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="2063" mastery_level="2" name="Hob Fletcher" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="6089" mastery_level="4" name="Fire Belcher" />
+      <card id="7147" mastery_level="5" name="Kraag" />
+      <card id="7001" mastery_level="6" name="Hekaton" />
+      <card id="5142" mastery_level="7" name="Buzzblade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>You sure you want to save him?</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>I'm having second thoughts. But we can't let that poor dragonling get involved with Decim's terrible decisions!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5932</id>
+    <name>The Wrong Thing to Do</name>
+    <energy>9</energy>
+    <desc>You pursue Decim's path. However, you hear strange scraping and mechanical noises. You catch up, only to see Decim using a key to unlock every single cell that contains a mecha creature...</desc>
+    <commander id="16" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="6159" name="Solder Charger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="1628" name="Garganotos" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="2102" mastery_level="2" name="Lowbog Shaman" />
+      <card id="2126" mastery_level="3" name="One Punch Flare" />
+      <card id="6004" mastery_level="4" name="Branding Construct" />
+      <card id="6014" mastery_level="5" name="Armored Siegefist" />
+      <card id="6000" mastery_level="6" name="Furnace Mech" />
+      <card id="5165" mastery_level="7" name="Electrumus" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5933</id>
+    <name>Mecha Freedom</name>
+    <energy>9</energy>
+    <desc>Decim slams more of the cell's doors open. The creatures create a barrier and stop you from reaching Decim, as he continues to open more and more doors. Some wander above ground...</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2111" name="Drillbot" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2053" mastery_level="2" name="Rocket Rider" />
+      <card id="2126" mastery_level="3" name="One Punch Flare" />
+      <card id="7161" mastery_level="4" name="Alphamecha" />
+      <card id="7148" mastery_level="5" name="Pointystick Pezack" />
+      <card id="7163" mastery_level="6" name="Alloy of the Trees" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>No creature deserves to be caged! Run free!</text>
+      </line>
+      <line>
+        <commander>windupdragons</commander>
+        <enemy>1</enemy>
+        <text>*SNAP SNAP*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5934</id>
+    <name>An Attempt at Sanity</name>
+    <energy>9</energy>
+    <desc>Decim continues freeing the creatures, while Fiona and Orgoth try to get him to listen to reason. The mechas chomp at anything in their path, Decim avoiding them narrowly on more than one occasion.</desc>
+    <commander id="16" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="5163" name="Bark Hound" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="2126" mastery_level="2" name="One Punch Flare" />
+      <card id="7146" mastery_level="3" name="Goblin Brigand" />
+      <card id="5163" mastery_level="4" name="Bark Hound" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="7166" mastery_level="6" name="Rejuvenation Acolyte" />
+      <card id="5150" mastery_level="7" name="Deepspear Warfarer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Are ya crazy?! These things are gonna run rampant!</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Decim, for once in your life, listen to me and stop freeing those things!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>FREEDOM!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5935</id>
+    <name>Fighting Through the Stronghold</name>
+    <energy>9</energy>
+    <desc>Decim bursts through the door that separates the dungeon from the rest of the stronghold. You fight off the mechas, doing your best to catch up with him.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6159" name="Solder Charger" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7090" name="Prospector" />
+      <card id="7145" mastery_level="2" name="Metalsmith" />
+      <card id="2102" mastery_level="3" name="Lowbog Shaman" />
+      <card id="2124" mastery_level="4" name="Bulbscale Construct" />
+      <card id="5144" mastery_level="5" name="Wee Sparkcaster" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="5131" mastery_level="7" name="Steelscale, Sky's Domain" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5936</id>
+    <name>Prisoner Escape</name>
+    <energy>9</energy>
+    <desc>The goblins you saw earlier are still in the courtyard. They look up in surprise as the door opens, Decim with the freed mechas. Chaos ensues as goblins fight off the mechas.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7145" name="Metalsmith" />
+      <card id="1628" name="Garganotos" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6158" name="Orbos" />
+      <card id="7090" name="Prospector" />
+      <card id="7090" name="Prospector" />
+      <card id="2064" mastery_level="2" name="Tome Sneak" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="2107" mastery_level="4" name="Battleborn Toad" />
+      <card id="5092" mastery_level="5" name="Tundra Reaver" />
+      <card id="5164" mastery_level="6" name="Chromium Centaur" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>What the-</text>
+      </line>
+      <line>
+        <commander>Portrait_Goblin_Captain</commander>
+        <enemy>1</enemy>
+        <text>Prisoner escape?! Stop them!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5937</id>
+    <name>Goblin Guards</name>
+    <energy>9</energy>
+    <desc>The goblins try to gather to fight against the enraged mechas and also re-capture Decim. You are swept up in the confusion, fighting both forces of goblins and mechas alike.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="5163" name="Bark Hound" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="6089" mastery_level="2" name="Fire Belcher" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="2107" mastery_level="4" name="Battleborn Toad" />
+      <card id="5147" mastery_level="5" name="Bard of Gobsburg" />
+      <card id="2113" mastery_level="6" name="Vali, the Thunderer" />
+      <card id="5162" mastery_level="7" name="Aloier, Dragon Sentinel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5938</id>
+    <name>Out of Control</name>
+    <energy>9</energy>
+    <desc>One mecha's footsteps clomp closer, the earth vibrating beneath its pressure. The entrance to the prison cell explodes in falling debris. The machination's arms sweep indiscriminately, hitting goblins, mechas, and everything in its path.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7161" name="Alphamecha" />
+      <card id="5163" name="Bark Hound" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="2126" mastery_level="2" name="One Punch Flare" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="6145" mastery_level="5" name="Goblin Butcher" />
+      <card id="6000" mastery_level="6" name="Furnace Mech" />
+      <card id="6181" mastery_level="7" name="Fearlord Xerthis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>Whoa, whoa whoa whoa whoa! Calm down!</text>
+      </line>
+      <line>
+        <commander>Sailing_Drake</commander>
+        <enemy>1</enemy>
+        <text>Grr!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5939</id>
+    <name>Turned Against Their Savior</name>
+    <energy>9</energy>
+    <desc>The gigantic mecha backhands Decim, sending his form flying through the air. The wind drake scrambles to avoid being squashed, Decim laying in a collapsed heap on the ground. The giant mecha clomps closer...</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="5089" name="Gomblit" />
+      <card id="7161" name="Alphamecha" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2111" name="Drillbot" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="2126" mastery_level="2" name="One Punch Flare" />
+      <card id="1628" mastery_level="3" name="Garganotos" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="7143" mastery_level="5" name="Hog Bronco" />
+      <card id="7163" mastery_level="6" name="Alloy of the Trees" />
+      <card id="7165" mastery_level="7" name="Raging Irontusk" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5940</id>
+    <name>For a Dragon and His Boy</name>
+    <energy>9</energy>
+    <desc>The drake runs a few steps, before looking back and returning to Decim, but even the drake's nudge fails to rouse Decim. The drake positions itself between Decim and the mecha, snarling even as its body quivers. Your group runs to their aid, positioning yourself between the dragonling and mecha.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="7145" name="Metalsmith" />
+      <card id="6159" name="Solder Charger" />
+      <card id="2111" name="Drillbot" />
+      <card id="2111" name="Drillbot" />
+      <card id="7090" name="Prospector" />
+      <card id="1628" name="Garganotos" />
+      <card id="2126" mastery_level="2" name="One Punch Flare" />
+      <card id="2102" mastery_level="3" name="Lowbog Shaman" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="7089" mastery_level="5" name="Elder Shaman" />
+      <card id="2113" mastery_level="6" name="Vali, the Thunderer" />
+      <card id="7162" mastery_level="7" name="Timberhead Diver" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Hold on, we're here to help!</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Just try to take us, ya tin can!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5941</id>
+    <name>Alerted Enemies</name>
+    <energy>9</energy>
+    <desc>You deal the final blow against the gigantic mecha, cleaning up the rest of the forces. However, the goblins have assembled as more of the chaos dies down...</desc>
+    <commander id="414" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6004" name="Branding Construct" />
+      <card id="1628" name="Garganotos" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="2053" mastery_level="2" name="Rocket Rider" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="2124" mastery_level="4" name="Bulbscale Construct" />
+      <card id="6142" mastery_level="5" name="Ba Dim Boom" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="7188" mastery_level="7" name="Honeycomb Thrower" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>Just what in the world is going on here! Who ARE you people?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5942</id>
+    <name>Out of the Frying Pan</name>
+    <energy>9</energy>
+    <desc>Decim manages to finally pull himself together. He rises, swaying unsteadily on his feet, the wind drake prancing happily at his recovery.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7145" name="Metalsmith" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6158" name="Orbos" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="7087" mastery_level="2" name="Goblites" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="2107" mastery_level="4" name="Battleborn Toad" />
+      <card id="7026" mastery_level="5" name="Frostjaw" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="6092" mastery_level="7" name="Smog Charger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Whoa... look at all these angry people...</text>
+      </line>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>I recognize some of you... Yer enemies of our tribe!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5943</id>
+    <name>An Attempted Recovery</name>
+    <energy>9</energy>
+    <desc>Orgoth pushes his way past you, Fiona, and Decim. Fiona originally recruited him because of his skills, and he intends to make use of it even in the poorest of situations. He attempts to negotiate with the goblins...</desc>
+    <commander id="414" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="2062" mastery_level="2" name="Deadeye Apprentice" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="2117" mastery_level="4" name="Aero Enforcer" />
+      <card id="5148" mastery_level="5" name="Gribmalda of Wings" />
+      <card id="6093" mastery_level="6" name="Noz Onehand" />
+      <card id="6092" mastery_level="7" name="Smog Charger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>'Alo there, mister goblin sir! Pardon our abrupt entry, but we were lookin' for our friend here.</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Surely you recognize me? We played cards in that little outpost of the Salt Wastes.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5944</id>
+    <name>The Goblins' Heart</name>
+    <energy>9</energy>
+    <desc>The goblins are on the verge of assaulting you with their full force. Orgoth does his best to keep them at bay, while the goblins continue to pick off the remaining rampaging mechas.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="5091" name="Armor Thief" />
+      <card id="5089" name="Gomblit" />
+      <card id="5163" name="Bark Hound" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6090" name="Crackshot" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="6144" mastery_level="2" name="Crossbomb Gremlin" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="2117" mastery_level="4" name="Aero Enforcer" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+      <card id="6187" mastery_level="7" name="Xerkhan's Warship" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Think you can find it in yer hearts to let us go?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5945</id>
+    <name>A Weighty Decision</name>
+    <energy>9</energy>
+    <desc>Boldur strokes his chin, contemplating Orgoth's words. There is a familiar glint to his eye as he sizes Orgoth up, perhaps recognizing him from a more friendly encounter.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="7161" name="Alphamecha" />
+      <card id="6159" name="Solder Charger" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="7087" name="Goblites" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="1628" mastery_level="2" name="Garganotos" />
+      <card id="6143" mastery_level="3" name="Dynamic Entry" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="5156" mastery_level="5" name="Tiltyard Ribbot" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+      <card id="7089" mastery_level="7" name="Elder Shaman" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5946</id>
+    <name>More Trouble Than Worth</name>
+    <energy>9</energy>
+    <desc>Boldur weighs the decision carefully. The Spellstone Hammer remains firmly in his grasp.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7090" name="Prospector" />
+      <card id="6159" name="Solder Charger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="5089" mastery_level="2" name="Gomblit" />
+      <card id="6072" mastery_level="3" name="Bone Wielder" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="6093" mastery_level="6" name="Noz Onehand" />
+      <card id="7143" mastery_level="7" name="Hog Bronco" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>Hmm.... well that fiery human has caused us a load a' trouble. Letting him go might benefit us...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5947</id>
+    <name>Chance Revenge</name>
+    <energy>9</energy>
+    <desc>Boldur considers the other benefits the goblins could receive by defeating you. He gets a little closer with the Spellstone Hammer.</desc>
+    <commander id="414" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6090" name="Crackshot" />
+      <card id="1628" name="Garganotos" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6159" name="Solder Charger" />
+      <card id="7090" name="Prospector" />
+      <card id="6090" name="Crackshot" />
+      <card id="6072" mastery_level="2" name="Bone Wielder" />
+      <card id="6072" mastery_level="3" name="Bone Wielder" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="2106" mastery_level="5" name="Pharite Snapjaw" />
+      <card id="6178" mastery_level="6" name="Bitumen Elemental" />
+      <card id="5191" mastery_level="7" name="Bubble Gumm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>But you're traveling with two of our greatest enemies, the ones who beat our old bosses....</text>
+      </line>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>My mates won't accept you gettin' out for free.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5948</id>
+    <name>Goblins' Bloodlust</name>
+    <energy>9</energy>
+    <desc>The stronghold is locked in a tense standstill. Goblins surround you, eager to take revenge. They wait only for Boldur to make a final decision...</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="1628" name="Garganotos" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6158" name="Orbos" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6072" mastery_level="2" name="Bone Wielder" />
+      <card id="2102" mastery_level="3" name="Lowbog Shaman" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="6170" mastery_level="5" name="Ostromech Stepclaw" />
+      <card id="6080" mastery_level="6" name="Titanirous" />
+      <card id="5090" mastery_level="7" name="Reks' Faithful" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5949</id>
+    <name>A Unique Solution</name>
+    <energy>9</energy>
+    <desc>Boldur decides to compromise. Rather than take what the goblins want, or what Orgoth has proposed, Boldur has come up with his own decision...</desc>
+    <commander id="414" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5163" name="Bark Hound" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6089" mastery_level="2" name="Fire Belcher" />
+      <card id="2053" mastery_level="3" name="Rocket Rider" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="6161" mastery_level="5" name="Torero" />
+      <card id="2112" mastery_level="6" name="Warrior Karna" />
+      <card id="5092" mastery_level="7" name="Tundra Reaver" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>Aight, here's what we're gonna do. We're going to have a friendly fight, not to the death, see. A test of might!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5950</id>
+    <name>Goblin Arena Ring</name>
+    <energy>9</energy>
+    <desc>Boldur decides to compromise. Rather than take what the goblins want, or what Orgoth has proposed, Boldur has come up with his own decision...</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="7090" name="Prospector" />
+      <card id="2111" name="Drillbot" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="6159" name="Solder Charger" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="1628" name="Garganotos" />
+      <card id="7087" mastery_level="2" name="Goblites" />
+      <card id="1628" mastery_level="3" name="Garganotos" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="6157" mastery_level="5" name="Dawnblade Huntress" />
+      <card id="7188" mastery_level="6" name="Honeycomb Thrower" />
+      <card id="6094" mastery_level="7" name="Gob Launcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>I need to know how I stack up against such strong heroes!</text>
+      </line>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>Ya can leave after. But if we win, we're takin' that dragon as a prize.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5951</id>
+    <name>For a Prize</name>
+    <energy>9</energy>
+    <desc>Fiona adds her own ultimatum. If you and your group are going to go along with Boldur's suggestion, then she wants something in return...</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="2053" mastery_level="2" name="Rocket Rider" />
+      <card id="2063" mastery_level="3" name="Hob Fletcher" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="6146" mastery_level="5" name="Dragonfly Runner" />
+      <card id="7165" mastery_level="6" name="Raging Irontusk" />
+      <card id="7148" mastery_level="7" name="Pointystick Pezack" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Then it's only fair that we get a prize if we win, too! If we win, we'll take the Spellstone Hammer!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5952</id>
+    <name>The Goblins' Wager</name>
+    <energy>9</energy>
+    <desc>Boldur agrees, but only on the condition that the stakes be raised even higher. Then he prepares for the final showdown...</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6158" name="Orbos" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="7090" mastery_level="2" name="Prospector" />
+      <card id="2126" mastery_level="3" name="One Punch Flare" />
+      <card id="2101" mastery_level="4" name="Rot Goblin" />
+      <card id="6160" mastery_level="5" name="Steamrager" />
+      <card id="7165" mastery_level="6" name="Raging Irontusk" />
+      <card id="7147" mastery_level="7" name="Kraag" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>Yer askin' a lot girlie... but fine. If we win, we keep the dragon.</text>
+      </line>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>1</enemy>
+        <text>If you win, ya get the Spellstone Hammer!</text>
+      </line>
+    </speech>
   </mission>
 </root>

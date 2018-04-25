@@ -23483,4 +23483,135 @@
       <skill id="pierce" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6188</id>
+    <card_type>2</card_type>
+    <name>Dune Thief</name>
+    <picture>Goblin_Dune_Runner_Bandit_A</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1524157200</hidden_until_time>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="2" />
+    <skill id="weaken" x="2" />
+    <skill id="flurry" c="5" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="2" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="3" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16188</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dune Runner</name>
+    <picture>Goblin_Dune_Runner_Bandit_A</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1524157200</hidden_until_time>
+    <attack>5</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="weaken" x="3" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="4" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+      <skill id="absorb" x="4" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="4" />
+      <skill id="weaken" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26188</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dune Bandit</name>
+    <picture>Goblin_Dune_Runner_Bandit_B</picture>
+    <asset_bundle>125</asset_bundle>
+    <hidden_until_time>1524157200</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="weaken" x="4" />
+    <skill id="flurry" c="3" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="5" />
+      <skill id="weaken" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="6" />
+      <skill id="weaken" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
 </root>

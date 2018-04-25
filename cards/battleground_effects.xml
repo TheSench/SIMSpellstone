@@ -453,6 +453,60 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>122</id>
+    <name>Energy Warding</name>
+    <desc>All Mechas have upgraded their protective protocols, gaining Ward equal to 3 plus 10% of their base Health.</desc>
+    <icon>filter_mech_64</icon>
+    <effect>
+      <add_skill id="absorb" mult=".1" all="1" y="16" />
+      <skill id="displayEffect" trigger="onSkill" s="absorb">
+        <target_effect>
+          <prefab>ReinforceActive</prefab>
+          <bundle_id>105</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>123</id>
+    <name>Aether Triumph</name>
+    <desc>Aether have their Attack and Health increased by 25% of the base.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enlarge" mult=".25" all="1" y="1" />
+      <!-- mult is based on attack -->
+      <scale_health base="health" mult="0.25" y="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>124</id>
+    <name>Chaos Triumph</name>
+    <desc>Chaos have their Attack and Health increased by 25% of the base.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enlarge" mult=".25" all="1" y="2" />
+      <!-- mult is based on attack -->
+      <scale_health base="health" mult="0.25" y="2" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>125</id>
+    <name>Wyld Triumph</name>
+    <desc>Wyld have their Attack and Health increased by 25% of the base.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enlarge" mult=".25" all="1" y="3" />
+      <!-- mult is based on attack -->
+      <scale_health base="health" mult="0.25" y="3" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -862,6 +916,241 @@
     <icon_bundle>31</icon_bundle>
     <effect>
       <add_skill id="strike" x="5" y="9" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>527</id>
+    <name>Invincible Armor</name>
+    <desc>All cards gain Armor 99.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="armored" x="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>528</id>
+    <name>Forgeborn</name>
+    <desc>All cards gain Scorch equal to 10% of their base Health.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="burn" mult="0.1" base="health" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>529</id>
+    <name>Null Enchantment</name>
+    <desc>All cards gain Nullify 99.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="nullify" x="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>530</id>
+    <name>Corrosive Husk</name>
+    <desc>All cards gain Corrosive 99.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="corrosive" x="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>531</id>
+    <name>Master Warding Shield</name>
+    <desc>All cards gain Ward 99.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="absorb" x="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>532</id>
+    <name>Furious Soul</name>
+    <desc>All cards get Enraged equal to 20% of their base Health.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enrage" mult=".2" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>533</id>
+    <name>Powderkeg</name>
+    <desc>All cards gain Barrage equal to their base Attack.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="barrage" mult="1" base="attack" />
+      <skill id="displayEffect" trigger="onSkill" s="barrage">
+        <projectile_effect>
+          <prefab>goblinBombProjectile</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0</delay>
+          <duration>.75</duration>
+          <translation>.75</translation>
+          <offset>0</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>goblinBombTarget</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>.75</delay>
+          <duration>1.25</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>534</id>
+    <name>Runepocalypse</name>
+    <desc>All bonuses from Runes are doubled﻿.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <rune_mult>2</rune_mult>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>535</id>
+    <name>Celerity Crash</name>
+    <desc>All cards are 1 Delay.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <!-- Delay reduced to 1 here -->
+    </effect>
+  </battleground>
+  <battleground>
+    <id>536</id>
+    <name>Conflux</name>
+    <desc>All creatures gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.</desc>
+    <web_picture>filter_elementals_64.png</web_picture>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <card_type>99</card_type>
+      <skill id="enlarge" mult=".5" all="1" y="1" />
+      <!-- mult is based on attack -->
+      <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
+        <target_effect>
+          <prefab>Empower_Target_Elemental</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2,5" />
+      <skill id="displayEffect" trigger="onSkill" y="2" s="counter">
+        <actor_effect>
+          <prefab>elemental_BGE_chaos</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <scale_health base="health" mult="0.25" y="3" />
+      <skill id="displayEffect" trigger="onPlay" y="3">
+        <actor_effect>
+          <prefab>elemental_BGE_wyld</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>537</id>
+    <name>Molten Scales</name>
+    <desc>Emberhide skills deal 50% more damage.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="counterburn" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>538</id>
+    <name>Vulcanos' Favor</name>
+    <desc>Scorchbreath skill deal 50% more damage.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="scorchbreath" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>539</id>
+    <name>Legion's Call</name>
+    <desc>Legion skills are 50% more effective.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="legion" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>540</id>
+    <name>Crippling Blows</name>
+    <desc>Weaken and Weaken All skills are 50% more effective.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="weaken" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>541</id>
+    <name>Tainted Strike</name>
+    <desc>Poison skills deal 50% more damage.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="poison" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>542</id>
+    <name>Sundering Blades</name>
+    <desc>Pierce skills are 50% more effective.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="pierce" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>543</id>
+    <name>Mending Aura</name>
+    <desc>Heal and Heal All skills are 50% more effective.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="heal" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>544</id>
+    <name>Regrowth Burst</name>
+    <desc>Regenerate skills are 50% more effective.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="regenerate" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>545</id>
+    <name>Draining Soul</name>
+    <desc>Siphon skills are 50% more effective.</desc>
+    <icon>xxxxxxxxxxxxx</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="leech" mult="0.5" all="1" />
     </effect>
   </battleground>
   <!-- ============================= -->
@@ -1494,6 +1783,40 @@
     <!-- Starting Mastery Level -->
     <effect>
       <scale_attributes base_mult=".3" mult=".01" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2038</id>
+    <name>Metalschema Samba</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_goblin_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>5</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2039</id>
+    <name>Metalschema Samba</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_goblin_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>5</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".01" />
     </effect>
   </battleground>
   <!-- ==================== -->

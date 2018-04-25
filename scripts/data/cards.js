@@ -21474,6 +21474,199 @@ var CARDS = {
       },
     }
   },
+  "413": {
+    "id": "413",
+    "name": "Mechanical Giant",
+    "picture": "portrait_giantmechaboss",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "sub_type": [],
+    "health": 75,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 3,
+        "s": "burn",
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 77,
+        "skill": [],
+      },
+      "3": {
+        "health": 79,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "burn",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 81,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "burn",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 83,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "burn",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 86,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "s": "burn",
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "414": {
+    "id": "414",
+    "name": "Boldur, the Unbreakable",
+    "picture": "portrait_portraits_boldur",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 76,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 1,
+        "s": "berserk",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 78,
+        "skill": [],
+      },
+      "3": {
+        "health": 81,
+        "skill": [],
+      },
+      "4": {
+        "health": 84,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "berserk",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 87,
+        "skill": [],
+      },
+      "6": {
+        "health": 90,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "berserk",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -65660,6 +65853,289 @@ var CARDS = {
       },
     }
   },
+  "5190": {
+    "id": "5190",
+    "name": "Goblin Rise Cadet",
+    "picture": "Goblin_Plane_Engineer_A",
+    "hidden_until": "1524157200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "health": 18,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "11",
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "15190": {
+    "id": "15190",
+    "name": "Goblin Rise Pilot",
+    "picture": "Goblin_Plane_Engineer_A",
+    "hidden_until": "1524157200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "health": 22,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "11",
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 24,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "25190": {
+    "id": "25190",
+    "name": "Goblin Rise Ace",
+    "picture": "Goblin_Plane_Engineer_B",
+    "hidden_until": "1524157200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "health": 25,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 5,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "11",
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "11",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5191": {
     "id": "5191",
     "name": "Bubble Gumm",
@@ -108694,6 +109170,244 @@ var CARDS = {
           {
             "id": "pierce",
             "x": 8,
+          },
+        ],
+      },
+    }
+  },
+  "6188": {
+    "id": "6188",
+    "name": "Dune Thief",
+    "picture": "Goblin_Dune_Runner_Bandit_A",
+    "hidden_until": "1524157200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "health": 10,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "absorb",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
+  "16188": {
+    "id": "16188",
+    "name": "Dune Runner",
+    "picture": "Goblin_Dune_Runner_Bandit_A",
+    "hidden_until": "1524157200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "health": 12,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "absorb",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26188": {
+    "id": "26188",
+    "name": "Dune Bandit",
+    "picture": "Goblin_Dune_Runner_Bandit_B",
+    "hidden_until": "1524157200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "health": 15,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "absorb",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
           },
         ],
       },
@@ -180549,6 +181263,181 @@ var CARDS = {
       },
     }
   },
+  "4003": {
+    "id": "4003",
+    "name": "Lev, Forgotten Hero",
+    "picture": "mythicWyld_A",
+    "rarity": "5",
+    "set": "5200",
+    "card_type": "2",
+    "shard_card": 1,
+    "type": "3",
+    "sub_type": [],
+    "health": 27,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 10,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 3,
+      },
+      {
+        "id": "heartseeker",
+        "x": 3,
+      },
+      {
+        "id": "daze",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "health": 28,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "heartseeker",
+            "x": 3,
+          },
+          {
+            "id": "daze",
+            "x": 8,
+          },
+        ],
+      },
+      "3": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "heartseeker",
+            "x": 4,
+          },
+          {
+            "id": "daze",
+            "x": 8,
+          },
+        ],
+      },
+      "4": {
+        "attack": 9,
+        "health": 30,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "heartseeker",
+            "x": 4,
+          },
+          {
+            "id": "daze",
+            "x": 9,
+          },
+        ],
+      },
+      "5": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "heartseeker",
+            "x": 5,
+          },
+          {
+            "id": "daze",
+            "x": 9,
+          },
+        ],
+      },
+      "6": {
+        "attack": 10,
+        "skill": [],
+      },
+      "7": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "heartseeker",
+            "x": 5,
+          },
+          {
+            "id": "daze",
+            "x": 10,
+          },
+        ],
+      },
+      "8": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "heartseeker",
+            "x": 6,
+          },
+          {
+            "id": "daze",
+            "x": 10,
+          },
+        ],
+      },
+      "9": {
+        "attack": 11,
+        "health": 34,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "heartseeker",
+            "x": 6,
+          },
+          {
+            "id": "daze",
+            "x": 11,
+          },
+        ],
+      },
+      "10": {
+        "attack": 12,
+        "health": 35,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 5,
+          },
+          {
+            "id": "heartseeker",
+            "x": 7,
+          },
+          {
+            "id": "daze",
+            "x": 11,
+          },
+        ],
+      },
+    }
+  },
   "4004": {
     "id": "4004",
     "name": "Lok'thor, the Reborn",
@@ -181085,6 +181974,203 @@ var CARDS = {
           {
             "id": "nullify",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "7600": {
+    "id": "7600",
+    "name": "Glory Seeker Arran",
+    "picture": "Hiker_Goblin_B",
+    "hidden_until": "1524502800000",
+    "rarity": "4",
+    "set": "5100",
+    "card_type": "2",
+    "shard_card": 1,
+    "type": "3",
+    "sub_type": ["11"],
+    "health": 25,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 10,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 5,
+      },
+      {
+        "id": "leech",
+        "x": 6,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 8,
+        "health": 27,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "attack": 9,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "7": {
+        "attack": 10,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "8": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 8,
+          },
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "9": {
+        "attack": 11,
+        "health": 30,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 8,
+          },
+          {
+            "id": "leech",
+            "x": 10,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "10": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 9,
+          },
+          {
+            "id": "leech",
+            "x": 10,
+          },
+          {
+            "id": "heal",
+            "x": 6,
+            "all": "1",
           },
         ],
       },
@@ -213846,4 +214932,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1523972013771.02;
+var CardsUpdated = 1524678402423.84;

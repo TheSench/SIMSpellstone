@@ -8602,7 +8602,7 @@
     <order>101</order>
     <name>A Test of Might</name>
     <desc>Complete the 'A Test of Might' campaign on Mastery Level 1.</desc>
-    <mission_req>5844</mission_req>
+    <mission_req>5899</mission_req>
     <locked_start_time>1524157200</locked_start_time>
     <!-- Thu, 19 April 2018 17:00:00 -->
     <req>

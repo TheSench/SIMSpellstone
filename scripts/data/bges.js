@@ -350,6 +350,80 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "122": {
+    "name": "Energy Warding",
+    "id": "122",
+    "desc": "All Mechas have upgraded their protective protocols, gaining Ward equal to 3 plus 10% of their base Health.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "absorb",
+        "mult": .1,
+        "y": "16",
+        "all": "1",
+      },
+    ]
+  },
+  "123": {
+    "name": "Aether Triumph",
+    "id": "123",
+    "desc": "Aether have their Attack and Health increased by 25% of the base.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enlarge",
+        "mult": .25,
+        "y": "1",
+        "all": "1",
+      },
+      {
+        "effect_type": "scale_health",
+        "base": "health",
+        "mult": 0.25,
+        "y": "1",
+      },
+    ]
+  },
+  "124": {
+    "name": "Chaos Triumph",
+    "id": "124",
+    "desc": "Chaos have their Attack and Health increased by 25% of the base.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enlarge",
+        "mult": .25,
+        "y": "2",
+        "all": "1",
+      },
+      {
+        "effect_type": "scale_health",
+        "base": "health",
+        "mult": 0.25,
+        "y": "2",
+      },
+    ]
+  },
+  "125": {
+    "name": "Wyld Triumph",
+    "id": "125",
+    "desc": "Wyld have their Attack and Health increased by 25% of the base.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enlarge",
+        "mult": .25,
+        "y": "3",
+        "all": "1",
+      },
+      {
+        "effect_type": "scale_health",
+        "base": "health",
+        "mult": 0.25,
+        "y": "3",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -1075,6 +1149,263 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "527": {
+    "name": "Invincible Armor",
+    "id": "527",
+    "desc": "All cards gain Armor 99.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "armored",
+        "x": 99,
+        "all": "1",
+      },
+    ]
+  },
+  "528": {
+    "name": "Forgeborn",
+    "id": "528",
+    "desc": "All cards gain Scorch equal to 10% of their base Health.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "burn",
+        "mult": 0.1,
+        "base": "health",
+      },
+    ]
+  },
+  "529": {
+    "name": "Null Enchantment",
+    "id": "529",
+    "desc": "All cards gain Nullify 99.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "nullify",
+        "x": 99,
+        "all": "1",
+      },
+    ]
+  },
+  "530": {
+    "name": "Corrosive Husk",
+    "id": "530",
+    "desc": "All cards gain Corrosive 99.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "corrosive",
+        "x": 99,
+        "all": "1",
+      },
+    ]
+  },
+  "531": {
+    "name": "Master Warding Shield",
+    "id": "531",
+    "desc": "All cards gain Ward 99.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "absorb",
+        "x": 99,
+        "all": "1",
+      },
+    ]
+  },
+  "532": {
+    "name": "Furious Soul",
+    "id": "532",
+    "desc": "All cards get Enraged equal to 20% of their base Health.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enrage",
+        "mult": .2,
+        "all": "1",
+      },
+    ]
+  },
+  "533": {
+    "name": "Powderkeg",
+    "id": "533",
+    "desc": "All cards gain Barrage equal to their base Attack.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "barrage",
+        "mult": 1,
+        "base": "attack",
+      },
+    ]
+  },
+  "534": {
+    "name": "Runepocalypse",
+    "id": "534",
+    "desc": "All bonuses from Runes are doubled﻿.",
+    "hidden": true,
+  },
+  "535": {
+    "name": "Celerity Crash",
+    "id": "535",
+    "desc": "All cards are 1 Delay.",
+    "hidden": true,
+  },
+  "536": {
+    "name": "Conflux",
+    "id": "536",
+    "desc": "All creatures gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enlarge",
+        "mult": .5,
+        "y": "1",
+        "all": "1",
+      },
+      {
+        "effect_type": "add_skill",
+        "id": "counter",
+        "mult": .5,
+        "base": "attack",
+        "y": "2,5",
+        "all": "1",
+      },
+      {
+        "effect_type": "scale_health",
+        "base": "health",
+        "mult": 0.25,
+        "y": "3",
+      },
+    ]
+  },
+  "537": {
+    "name": "Molten Scales",
+    "id": "537",
+    "desc": "Emberhide skills deal 50% more damage.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "counterburn",
+        "all": "1",
+      },
+    ]
+  },
+  "538": {
+    "name": "Vulcanos' Favor",
+    "id": "538",
+    "desc": "Scorchbreath skill deal 50% more damage.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "scorchbreath",
+        "all": "1",
+      },
+    ]
+  },
+  "539": {
+    "name": "Legion's Call",
+    "id": "539",
+    "desc": "Legion skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "legion",
+        "all": "1",
+      },
+    ]
+  },
+  "540": {
+    "name": "Crippling Blows",
+    "id": "540",
+    "desc": "Weaken and Weaken All skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "weaken",
+        "all": "1",
+      },
+    ]
+  },
+  "541": {
+    "name": "Tainted Strike",
+    "id": "541",
+    "desc": "Poison skills deal 50% more damage.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "poison",
+        "all": "1",
+      },
+    ]
+  },
+  "542": {
+    "name": "Sundering Blades",
+    "id": "542",
+    "desc": "Pierce skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "pierce",
+        "all": "1",
+      },
+    ]
+  },
+  "543": {
+    "name": "Mending Aura",
+    "id": "543",
+    "desc": "Heal and Heal All skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "heal",
+        "all": "1",
+      },
+    ]
+  },
+  "544": {
+    "name": "Regrowth Burst",
+    "id": "544",
+    "desc": "Regenerate skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "regenerate",
+        "all": "1",
+      },
+    ]
+  },
+  "545": {
+    "name": "Draining Soul",
+    "id": "545",
+    "desc": "Siphon skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "leech",
+        "all": "1",
+      },
+    ]
+  },
   "1001": {
     "name": "Primal Mending",
     "id": "1001",
@@ -1692,6 +2023,38 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "scale_attributes",
         "base_mult": .3,
+        "mult": .01,
+      },
+    ]
+  },
+  "2038": {
+    "name": "Metalschema Samba",
+    "id": "2038",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
+  "2039": {
+    "name": "Metalschema Samba",
+    "id": "2039",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
         "mult": .01,
       },
     ]
