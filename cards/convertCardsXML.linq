@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 static bool forceSpoilers = false;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
@@ -596,6 +596,8 @@ public class battleground
 	[XmlArrayItem(Type = typeof(on_play), ElementName = "on_play")]
 	[XmlArrayItem(Type = typeof(starting_card), ElementName = "starting_card")]
 	[XmlArrayItem(Type = typeof(trap_card), ElementName = "trap_card")]
+	[XmlArrayItem(Type = typeof(runeMultiplier), ElementName = "rune_mult")]
+	[XmlArrayItem(Type = typeof(statChange), ElementName = "stat")]
 	public battlegroundEffect[] effect { get; set; }
 	public string id { get; set; }
 	
@@ -704,6 +706,14 @@ public class battleground
 				else if (effect_i is trap_card)
 				{
 					AppendTrap(sb, (trap_card)effect_i, tabs3);
+				}
+				else if (effect_i is statChange)
+				{
+					AppendStatChange(sb, (statChange)effect_i, tabs3);
+				}
+				else if (effect_i is runeMultiplier)
+				{
+					AppendRuneMultiplier(sb, (runeMultiplier)effect_i, tabs3);
 				}
 				else
 				{
@@ -1358,6 +1368,52 @@ public class trap_card : battlegroundEffect
 	}
 }
 
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public class runeMultiplier : battlegroundEffect
+{
+	private string multField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string mult
+	{
+		get { return this.multField; }
+		set { this.multField = value; }
+	}
+}
+
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public class statChange : battlegroundEffect
+{
+	private string attackField;
+	private string healthField;
+	private string costField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string attack
+	{
+		get { return this.attackField; }
+		set { this.attackField = value; }
+	}
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string health
+	{
+		get { return this.healthField; }
+		set { this.healthField = value; }
+	}
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string cost
+	{
+		get { return this.costField; }
+		set { this.costField = value; }
+	}
+}
+
 public class campaign
 {
 	public string id { get; set; }
@@ -1507,6 +1563,18 @@ private static void AppendEvolve(StringBuilder sb, evolve_skill evolve, string t
 	AppendEntryString(sb, "id", evolve.id, tabs);
 	AppendEntryString(sb, "s", evolve.s, tabs);
 	AppendEntryString(sb, "all", evolve.all, tabs);
+}
+
+private static void AppendRuneMultiplier(StringBuilder sb, runeMultiplier rune_mult, string tabs)
+{
+	AppendEntryString(sb, "mult", rune_mult.mult, tabs);
+}
+
+private static void AppendStatChange(StringBuilder sb, statChange statChange, string tabs)
+{
+	AppendEntryString(sb, "attack", statChange.attack, tabs);
+	AppendEntryString(sb, "health", statChange.health, tabs);
+	AppendEntryString(sb, "cost", statChange.cost, tabs);
 }
 
 private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tabs)

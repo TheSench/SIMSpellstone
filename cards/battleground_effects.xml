@@ -10,8 +10,22 @@
 		5001-6000	Arena BGE
 		6001+		Special
 		
-	-->
-  <!--
+		<add_skill>
+			id='absorb' 	skill name
+			mult='.1' 		multiplier
+			base='health' 	always needs a base; attack or health
+			x='3' 			x + (base*mult). If no mult that x is just the value.
+			all='1' 		if this is left out will be 1 random target
+			y='16'			targeting restriction
+
+		<skill>
+			id='heal' 	skill name
+			mult='.2' 		multiplier
+			base='health' 	depends on a skill to skill basis if this is needed or not
+			x='3' 			x + (base*mult). If no mult that x is just the value.
+			all='1' 		if this is left out will be 1 random target
+			y='16'			targeting restriction
+
 		displayEffect example setup 
 		
 		<skill id='displayEffect' trigger='onSkill' s='strike' >
@@ -459,7 +473,7 @@
     <desc>All Mechas have upgraded their protective protocols, gaining Ward equal to 3 plus 10% of their base Health.</desc>
     <icon>filter_mech_64</icon>
     <effect>
-      <add_skill id="absorb" mult=".1" all="1" y="16" />
+      <add_skill id="absorb" mult=".1" base="health" x="3" all="1" y="16" />
       <skill id="displayEffect" trigger="onSkill" s="absorb">
         <target_effect>
           <prefab>ReinforceActive</prefab>
@@ -475,36 +489,33 @@
     <id>123</id>
     <name>Aether Triumph</name>
     <desc>Aether have their Attack and Health increased by 25% of the base.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
-    <icon_bundle>110</icon_bundle>
+    <icon>filter_aether_64</icon>
     <effect>
       <skill id="enlarge" mult=".25" all="1" y="1" />
       <!-- mult is based on attack -->
-      <scale_health base="health" mult="0.25" y="1" />
+      <scale_health base="health" mult="0.25" yy="1" />
     </effect>
   </battleground>
   <battleground>
     <id>124</id>
     <name>Chaos Triumph</name>
     <desc>Chaos have their Attack and Health increased by 25% of the base.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
-    <icon_bundle>110</icon_bundle>
+    <icon>filter_chaos_64</icon>
     <effect>
       <skill id="enlarge" mult=".25" all="1" y="2" />
       <!-- mult is based on attack -->
-      <scale_health base="health" mult="0.25" y="2" />
+      <scale_health base="health" mult="0.25" yy="2" />
     </effect>
   </battleground>
   <battleground>
     <id>125</id>
     <name>Wyld Triumph</name>
     <desc>Wyld have their Attack and Health increased by 25% of the base.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
-    <icon_bundle>110</icon_bundle>
+    <icon>filter_wyld_64</icon>
     <effect>
       <skill id="enlarge" mult=".25" all="1" y="3" />
       <!-- mult is based on attack -->
-      <scale_health base="health" mult="0.25" y="3" />
+      <scale_health base="health" mult="0.25" yy="3" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -922,7 +933,7 @@
     <id>527</id>
     <name>Invincible Armor</name>
     <desc>All cards gain Armor 99.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>99Armor_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <add_skill id="armored" x="99" all="1" />
@@ -932,7 +943,7 @@
     <id>528</id>
     <name>Forgeborn</name>
     <desc>All cards gain Scorch equal to 10% of their base Health.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Scorch_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <add_skill id="burn" mult="0.1" base="health" />
@@ -942,7 +953,7 @@
     <id>529</id>
     <name>Null Enchantment</name>
     <desc>All cards gain Nullify 99.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Nullify_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <add_skill id="nullify" x="99" all="1" />
@@ -952,7 +963,7 @@
     <id>530</id>
     <name>Corrosive Husk</name>
     <desc>All cards gain Corrosive 99.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Corrosive_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <add_skill id="corrosive" x="99" all="1" />
@@ -962,7 +973,7 @@
     <id>531</id>
     <name>Master Warding Shield</name>
     <desc>All cards gain Ward 99.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Ward99_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <add_skill id="absorb" x="99" all="1" />
@@ -972,7 +983,8 @@
     <id>532</id>
     <name>Furious Soul</name>
     <desc>All cards get Enraged equal to 20% of their base Health.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Enraged_BGE_100</icon>
+    <!-- actually _64 -->
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enrage" mult=".2" all="1" />
@@ -982,7 +994,7 @@
     <id>533</id>
     <name>Powderkeg</name>
     <desc>All cards gain Barrage equal to their base Attack.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Barrage_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <add_skill id="barrage" mult="1" base="attack" />
@@ -1008,8 +1020,8 @@
   <battleground>
     <id>534</id>
     <name>Runepocalypse</name>
-    <desc>All bonuses from Runes are doubled﻿.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <desc>All bonuses from Runes are doubled.</desc>
+    <icon>Rune_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <rune_mult>2</rune_mult>
@@ -1019,18 +1031,18 @@
     <id>535</id>
     <name>Celerity Crash</name>
     <desc>All cards are 1 Delay.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>1Delay_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <!-- Delay reduced to 1 here -->
+      <stat cost="1" />
     </effect>
   </battleground>
   <battleground>
     <id>536</id>
     <name>Conflux</name>
     <desc>All creatures gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.</desc>
-    <web_picture>filter_elementals_64.png</web_picture>
-    <icon>filter_elementals_64</icon>
+    <icon>Conflux_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
     <effect>
       <card_type>99</card_type>
       <skill id="enlarge" mult=".5" all="1" y="1" />
@@ -1052,7 +1064,7 @@
           <delay>0</delay>
         </actor_effect>
       </skill>
-      <scale_health base="health" mult="0.25" y="3" />
+      <scale_health base="health" mult="0.25" yy="3" />
       <skill id="displayEffect" trigger="onPlay" y="3">
         <actor_effect>
           <prefab>elemental_BGE_wyld</prefab>
@@ -1067,7 +1079,7 @@
     <id>537</id>
     <name>Molten Scales</name>
     <desc>Emberhide skills deal 50% more damage.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Emberhide_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="counterburn" mult="0.5" all="1" />
@@ -1077,7 +1089,7 @@
     <id>538</id>
     <name>Vulcanos' Favor</name>
     <desc>Scorchbreath skill deal 50% more damage.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Scorchbreathe_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="scorchbreath" mult="0.5" all="1" />
@@ -1087,7 +1099,7 @@
     <id>539</id>
     <name>Legion's Call</name>
     <desc>Legion skills are 50% more effective.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Legion_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="legion" mult="0.5" all="1" />
@@ -1097,7 +1109,7 @@
     <id>540</id>
     <name>Crippling Blows</name>
     <desc>Weaken and Weaken All skills are 50% more effective.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Weaken_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="weaken" mult="0.5" all="1" />
@@ -1107,7 +1119,7 @@
     <id>541</id>
     <name>Tainted Strike</name>
     <desc>Poison skills deal 50% more damage.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Poison_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="poison" mult="0.5" all="1" />
@@ -1117,7 +1129,7 @@
     <id>542</id>
     <name>Sundering Blades</name>
     <desc>Pierce skills are 50% more effective.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Pierce_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="pierce" mult="0.5" all="1" />
@@ -1127,7 +1139,7 @@
     <id>543</id>
     <name>Mending Aura</name>
     <desc>Heal and Heal All skills are 50% more effective.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Heal_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="heal" mult="0.5" all="1" />
@@ -1137,7 +1149,7 @@
     <id>544</id>
     <name>Regrowth Burst</name>
     <desc>Regenerate skills are 50% more effective.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Regenerate_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="regenerate" mult="0.5" all="1" />
@@ -1147,7 +1159,7 @@
     <id>545</id>
     <name>Draining Soul</name>
     <desc>Siphon skills are 50% more effective.</desc>
-    <icon>xxxxxxxxxxxxx</icon>
+    <icon>Siphon_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="leech" mult="0.5" all="1" />

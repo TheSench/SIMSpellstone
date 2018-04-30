@@ -287,11 +287,27 @@ function applyDefaultStatuses(card) {
 
 var CardPrototype;
 var makeUnit = (function () {
-    function modifySkills(new_card, original_skills, skillModifiers, isToken) {
+    function modifySkillsPreRune(new_card, original_skills, skillModifiers, isToken) {
         new_card.highlighted = [];
         for (var i = 0; i < skillModifiers.length; i++) {
             var skillModifier = skillModifiers[i];
-            if (skillModifier.modifierType == "evolve") {
+            if (skillModifier.modifierType == "statChange" && !isToken) {
+            	for (var j = 0; j < skillModifier.effects.length; j++) {
+            		var statChange = skillModifier.effects[j];
+            		if (new_card.isInFaction(statChange.y)) {
+                        Object.keys(statChange).forEach(function(stat) {
+                            new_card[stat] = statChange[stat];
+                        });
+            		}
+            	}
+            }
+        }
+    }
+    function modifySkillsPostRune(new_card, original_skills, skillModifiers, isToken) {
+        new_card.highlighted = [];
+        for (var i = 0; i < skillModifiers.length; i++) {
+            var skillModifier = skillModifiers[i];
+            if (skillModifier.modifierType == "evolve_skill") {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var evolution = skillModifier.effects[j];
                     for (var key in original_skills) {
@@ -305,7 +321,7 @@ var makeUnit = (function () {
                         }
                     }
                 }
-            } else if (skillModifier.modifierType == "add") {
+            } else if (skillModifier.modifierType == "add_skill") {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var addedSkill = skillModifier.effects[j];
                     if (new_card.isInFaction(addedSkill.y)) {
@@ -313,16 +329,14 @@ var makeUnit = (function () {
 
                         var new_skill = {};
                         new_skill.id = addedSkill.id;
+                        new_skill.x = addedSkill.x || 0;
                         if (addedSkill.mult) {
                             if (addedSkill.base) {
                             	var base = getStatBeforeRunes(new_card, addedSkill.base);
-                                if (addedSkill.base == "rarity") base--;
-                                new_skill.x = Math.ceil(addedSkill.mult * base);
+                                new_skill.x += Math.ceil(addedSkill.mult * base);
                             } else {
                                 new_skill.mult = addedSkill.mult;
                             }
-                        } else {
-                            new_skill.x = addedSkill.x;
                         }
                         new_skill.z = addedSkill.z;
                         new_skill.c = addedSkill.c;
@@ -336,7 +350,7 @@ var makeUnit = (function () {
                         new_card.highlighted.push(new_skill.id);
                     }
                 }
-            } else if (skillModifier.modifierType == "scale" && !isToken) {
+            } else if (skillModifier.modifierType == "scale_attributes" && !isToken) {
             	for (var j = 0; j < skillModifier.effects.length; j++) {
             		var scaling = skillModifier.effects[j];
             		if (new_card.isInFaction(scaling.y)) {
@@ -751,16 +765,32 @@ var makeUnit = (function () {
 
         original_skills = original_skills.slice();
 
+        if (skillModifiers && skillModifiers.length) {
+            modifySkillsPreRune(card, original_skills, skillModifiers, isToken);
+        }
+
         if (runes) {
             card.addRunes(runes);
-            addRunesToSkills(original_skills, runes);
+            var runeMult = 1;
+            if (skillModifiers) {
+                skillModifiers.forEach(function(skillModifier) {
+                    if (skillModifier.modifierType == "runeMultiplier") {
+                        skillModifier.effects.forEach(function(effect) {
+                            if (card.isInFaction(effect.y)) {
+                                runeMult = parseInt(effect.mult);
+                            }
+                        });
+                    }
+                });
+            }
+            addRunesToSkills(original_skills, runes, runeMult);
         } else {
             card.runes = [];
         }
 
         // Apply BGEs
         if (skillModifiers && skillModifiers.length) {
-            modifySkills(card, original_skills, skillModifiers, isToken);
+            modifySkillsPostRune(card, original_skills, skillModifiers, isToken);
         }
 
         if (skillMult) {
@@ -838,7 +868,7 @@ var addRunes = function (card, runes) {
     }
 };
 
-function addRunesToSkills(skills, runes) {
+function addRunesToSkills(skills, runes, runeMult) {
     if (!runes) return;
     for (var i = 0, len = runes.length; i < len; i++) {
         var runeID = runes[i].id;
@@ -855,8 +885,8 @@ function addRunesToSkills(skills, runes) {
                         skill = copy_skill(skill);
                         if (!amount && mult) amount = Math.ceil(skill.x * mult);
                         if (boost.min_bonus) amount = Math.max(amount, boost.min_bonus);
-                        if (amount) skill.x += parseInt(amount);
-                        if (boost.c) skill.c -= parseInt(boost.c);
+                        if (amount) skill.x += (parseInt(amount) * runeMult);
+                        if (boost.c) skill.c -= Math.min(skill.c, (parseInt(boost.c) * runeMult));
                         skill.boosted = true;
                         skills[s] = skill;
                         break;
@@ -893,20 +923,8 @@ var canUseRune = function (card, runeID) {
 var MakeSkillModifier = (function () {
     var Modifier = function (name, effect) {
         this.name = name;
-        var effect_type = effect.effect_type;
-        if (effect_type === "add_skill") {
-            this.modifierType = "add";
-            this.effects = [effect];
-        } else if (effect_type === "evolve_skill") {
-            this.modifierType = "evolve";
-            this.effects = [effect];
-        } else if (effect_type === "scale_attributes") {
-            this.modifierType = "scale";
-            this.effects = [effect];
-        } else if (effect_type === "scale_health") {
-        	this.modifierType = "scale_health";
-        	this.effects = [effect];
-        }
+        this.modifierType = effect.effect_type;
+        this.effects = [effect];
     }
 
     return (function (name, effects) {
@@ -1065,7 +1083,7 @@ function addRaidBGE(battlegrounds, raidID, raidLevel) {
                     var bge = MakeBattleground(battleground.name, effect, mult);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onTurn.push(bge);
-                } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes" || effect_type === "scale_health") {
+                } else if (["evolve_skill", "add_skill", "scale_attributes", "scale_health", "statChange", "runeMultiplier"].indexOf(effect_Type) >= 0) {
                     var bge = MakeSkillModifier(battleground.name, effect);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
@@ -1105,7 +1123,7 @@ function addBgeFromList(battlegrounds, battleground, player) {
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onTurn.push(bge);
-        } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes" || effect_type === "scale_health") {
+        } else if (["evolve_skill", "add_skill", "scale_attributes", "scale_health", "statChange", "runeMultiplier"].indexOf(effect_type) >= 0) {
             var bge = MakeSkillModifier(battleground.name, effect);
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true

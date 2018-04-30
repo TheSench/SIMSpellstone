@@ -8613,5 +8613,146 @@
       <item id="8008" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 9 weeks 5-8 -->
+  <achievement>
+    <id>3355</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Prisoner Escape</name>
+    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 2.</desc>
+    <mission_req>5911</mission_req>
+    <locked_start_time>1525366800</locked_start_time>
+    <!-- Thu, 03 May 2018 17:00:00 -->
+    <achievement_req>3350</achievement_req>
+    <req>
+      <campaign>1169</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3356</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Prisoner Escape</name>
+    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 4.</desc>
+    <mission_req>5911</mission_req>
+    <locked_start_time>1525366800</locked_start_time>
+    <!-- Thu, 03 May 2018 17:00:00 -->
+    <achievement_req>3355</achievement_req>
+    <req>
+      <campaign>1169</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3357</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Prisoner Escape</name>
+    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 6.</desc>
+    <mission_req>5911</mission_req>
+    <locked_start_time>1525366800</locked_start_time>
+    <!-- Thu, 03 May 2018 17:00:00 -->
+    <achievement_req>3356</achievement_req>
+    <req>
+      <campaign>1169</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3358</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Prisoner Escape</name>
+    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 7.</desc>
+    <mission_req>5911</mission_req>
+    <locked_start_time>1525366800</locked_start_time>
+    <!-- Thu, 03 May 2018 17:00:00 -->
+    <achievement_req>3357</achievement_req>
+    <req>
+      <campaign>1169</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3359</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Direct Encounter</name>
+    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 2.</desc>
+    <mission_req>5924</mission_req>
+    <locked_start_time>1526576400</locked_start_time>
+    <achievement_req>0</achievement_req>
+    <req>
+      <campaign>1170</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3360</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Direct Encounter</name>
+    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 4.</desc>
+    <mission_req>5924</mission_req>
+    <locked_start_time>1526576400</locked_start_time>
+    <achievement_req>3359</achievement_req>
+    <req>
+      <campaign>1170</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3361</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Direct Encounter</name>
+    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 6.</desc>
+    <mission_req>5924</mission_req>
+    <locked_start_time>1526576400</locked_start_time>
+    <achievement_req>3360</achievement_req>
+    <req>
+      <campaign>1170</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3362</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Direct Encounter</name>
+    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 7.</desc>
+    <mission_req>5924</mission_req>
+    <locked_start_time>1526576400</locked_start_time>
+    <achievement_req>3361</achievement_req>
+    <req>
+      <campaign>1170</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

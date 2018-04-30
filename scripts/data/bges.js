@@ -358,7 +358,9 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "absorb",
+        "x": 3,
         "mult": .1,
+        "base": "health",
         "y": "16",
         "all": "1",
       },
@@ -1243,14 +1245,24 @@ var BATTLEGROUNDS = {
   "534": {
     "name": "Runepocalypse",
     "id": "534",
-    "desc": "All bonuses from Runes are doubled﻿.",
-    "hidden": true,
+    "desc": "All bonuses from Runes are doubled.",
+    "effect": [
+      {
+        "effect_type": "runeMultiplier",
+        "mult": "2",
+      },
+    ]
   },
   "535": {
     "name": "Celerity Crash",
     "id": "535",
     "desc": "All cards are 1 Delay.",
-    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "statChange",
+        "cost": "1",
+      },
+    ]
   },
   "536": {
     "name": "Conflux",

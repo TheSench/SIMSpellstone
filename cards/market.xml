@@ -2551,6 +2551,27 @@
 		<cycle_length>86400</cycle_length> 	cycle length in seconds. Keep same per pack or may f*** everything
 		<start_offset>0</start_offset> 		offset from UTC in seconds 
 	-->
+  <!-- 4001 is used for Mystery Crate, DO NOT USE -->
+  <store_item>
+    <id>4001</id>
+    <name>Drake's Mystery Treasure Jackpot</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Cycling Jackpot</desc>
+    <cannot_be_purchased>1</cannot_be_purchased>
+    <priority>5</priority>
+    <scale_prices>1</scale_prices>
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <costed_items>
+      <item id="104000" />
+      <item id="104001" />
+      <item id="104002" />
+      <item id="104004" />
+      <item id="104005" />
+    </costed_items>
+  </store_item>
   <store_item>
     <id>4002</id>
     <name>Cycling Item</name>
@@ -4994,6 +5015,25 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="6072" display_card_id="6072" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5117</id>
+    <name>Goblin Explosioneer Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFGoblin Explosioneer^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6049" display_card_id="6049" />
     </cards>
   </store_item>
 </root>
