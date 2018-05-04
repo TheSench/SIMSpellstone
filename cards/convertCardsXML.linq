@@ -3,8 +3,13 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 static bool forceSpoilers = false;
+
+static Dictionary<string, string> skillIDChanges = new Dictionary<string, string>()
+{
+	{"absorb_mecha", "absorb"}
+};
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -138,7 +143,7 @@ void Main()
 	{
 		{"counterburn", "Emberhide"}
 	};
-
+	
 	var skillIconChanges = new Dictionary<string, string>()
 	{
 		{"reinforce", "reinforce"}
@@ -214,12 +219,19 @@ void Main()
 	new DirectoryInfo(skillFiles).GetFiles("*.png", SearchOption.TopDirectoryOnly).ToList().Where(f => !skillIconNames.Contains(f.Name.Replace(".png", ""))).Select(f => f.Name).Dump("Extra Icon Files");
 
 	var skillsJSON = String.Format("var SKILL_DATA = {{\r\n{0}\r\n}}", String.Join(",\r\n", skills.Select(skill => String.Format(
-@"	{0} : {{
-		name: '{1}',
-		type: '{2}',
-		icon: '{3}',
-		desc: '{4}'
-	}}", skill.id, skill.name, skill.type, skill.icon, skill.desc.Replace("'", "\'")))));
+@"	""{0}"" : {{
+		""name"": ""{1}"",
+		""type"": ""{2}"",
+		""icon"": ""{3}"",
+		""desc"": ""{4}""
+	}}", skill.id, skill.name, skill.type, skill.icon, skill.desc.Replace("'", "\'"))))) + @"
+for(var skillID in SKILL_DATA) {
+	var skillInfo = SKILL_DATA[skillID];
+	if(['turnStart', 'onAttack', 'onDamaged', 'turnEnd'].indexOf(skillInfo.type) >= 0) {
+		skillInfo.type = 'passive';
+	}
+}
+";
 	File.WriteAllText(Path.Combine(path, "../scripts/data", "skills.js"), skillsJSON);
 
 	var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
@@ -596,6 +608,8 @@ public class battleground
 	[XmlArrayItem(Type = typeof(on_play), ElementName = "on_play")]
 	[XmlArrayItem(Type = typeof(starting_card), ElementName = "starting_card")]
 	[XmlArrayItem(Type = typeof(trap_card), ElementName = "trap_card")]
+	[XmlArrayItem(Type = typeof(runeMultiplier), ElementName = "rune_mult")]
+	[XmlArrayItem(Type = typeof(statChange), ElementName = "stat")]
 	public battlegroundEffect[] effect { get; set; }
 	public string id { get; set; }
 	
@@ -704,6 +718,14 @@ public class battleground
 				else if (effect_i is trap_card)
 				{
 					AppendTrap(sb, (trap_card)effect_i, tabs3);
+				}
+				else if (effect_i is runeMultiplier)
+				{
+					AppendRuneMultiplier(sb, (runeMultiplier)effect_i, tabs3);
+				}
+				else if (effect_i is statChange)
+				{
+					AppendStatChange(sb, (statChange)effect_i, tabs3);
 				}
 				else
 				{
@@ -1065,7 +1087,18 @@ public abstract class battlegroundEffect
 	public string id
 	{
 		get { return this.idField; }
-		set { this.idField = value; }
+		set
+		{
+			string mapped;
+			if (skillIDChanges.TryGetValue(value, out mapped))
+			{
+				this.idField = mapped;
+			}
+			else
+			{
+				this.idField = value;
+			}
+		}
 	}
 
 	/// <remarks/>
@@ -1358,6 +1391,48 @@ public class trap_card : battlegroundEffect
 	}
 }
 
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public class runeMultiplier : battlegroundEffect
+{
+	private string multField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlText()]
+	public string mult
+	{
+		get { return this.multField; }
+		set { this.multField = value; }
+	}
+}
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public class statChange : battlegroundEffect
+{
+	private string attackField;
+	private string healthField;
+	private string costField;
+
+	[System.Xml.Serialization.XmlAttribute()]
+	public string attack
+	{
+		get { return this.attackField; }
+		set { this.attackField = value; }
+	}
+
+	[System.Xml.Serialization.XmlAttribute()]
+	public string health
+	{
+		get { return this.healthField; }
+		set { this.healthField = value; }
+	}
+
+	[System.Xml.Serialization.XmlAttribute()]
+	public string cost
+	{
+		get { return this.costField; }
+		set { this.costField = value; }
+	}
+}
+
 public class campaign
 {
 	public string id { get; set; }
@@ -1601,6 +1676,18 @@ private static void AppendTrap(StringBuilder sb, trap_card info, string tabs)
 	AppendEntry(sb, "mult", info.mult, tabs);
 	AppendEntryString(sb, "target_deck", info.target_deck, tabs);
 	AppendEntryString(sb, "y", info.y, tabs);
+}
+
+private static void AppendRuneMultiplier(StringBuilder sb, runeMultiplier info, string tabs)
+{
+	AppendEntry(sb, "mult", info.mult, tabs);
+}
+
+private static void AppendStatChange(StringBuilder sb, statChange info, string tabs)
+{
+	AppendEntryString(sb, "attack", info.attack, tabs);
+	AppendEntryString(sb, "health", info.health, tabs);
+	AppendEntryString(sb, "cost", info.cost, tabs);
 }
 
 private static void Normalize(string fileName, bool downloadFiles)
