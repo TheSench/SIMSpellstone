@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = false;
+static bool downloadFiles = true;
 static bool forceSpoilers = false;
 
 static Dictionary<string, string> skillIDChanges = new Dictionary<string, string>()
