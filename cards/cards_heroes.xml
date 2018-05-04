@@ -197,7 +197,7 @@
     <card_type>1</card_type>
     <name>Tarian the Lich Lord</name>
     <portrait>lichking</portrait>
-    <desc>Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton afterall.</desc>
+    <desc>Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton after all.</desc>
     <attack>0</attack>
     <health>22</health>
     <skill id="imbue" s="leech" x="2" />

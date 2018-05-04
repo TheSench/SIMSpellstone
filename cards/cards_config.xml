@@ -57,7 +57,9 @@
   <!-- =================== -->
   <!-- ====== SKILLS ===== -->
   <!-- =================== -->
-  <!-- <icon_bundle>	bundle tag -->
+  <!-- <icon_bundle>	bundle tag 
+		Asset bundle loaded skill icons auto append _32 to them.
+		Add in the name without _32, but make sure a _32 version exists in bundle -->
   <skillType>
     <id>0</id>
     <name>Attack</name>
@@ -793,7 +795,7 @@
   </cardSet>
   <cardSet>
     <id>5000</id>
-    <name>Champion</name>
+    <name>Champion Reward</name>
     <visible>1</visible>
     <icon>set_icon_shard</icon>
     <picture>set_icon_shard</picture>

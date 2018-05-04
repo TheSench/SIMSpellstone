@@ -473,11 +473,11 @@
     <desc>All Mechas have upgraded their protective protocols, gaining Ward equal to 3 plus 10% of their base Health.</desc>
     <icon>filter_mech_64</icon>
     <effect>
-      <add_skill id="absorb" mult=".1" base="health" x="3" all="1" y="16" />
-      <skill id="displayEffect" trigger="onSkill" s="absorb">
+      <add_skill id="absorb_mecha" mult=".1" base="health" x="3" all="1" y="16" />
+      <skill id="displayEffect" trigger="onSkill" s="absorb_mecha">
         <target_effect>
           <prefab>ReinforceActive</prefab>
-          <bundle_id>105</bundle_id>
+          <bundle_id>107</bundle_id>
           <duration>1</duration>
           <loop>true</loop>
           <sound>shield</sound>
@@ -1055,7 +1055,7 @@
           <shake>true</shake>
         </target_effect>
       </skill>
-      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2,5" />
+      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2" />
       <skill id="displayEffect" trigger="onSkill" y="2" s="counter">
         <actor_effect>
           <prefab>elemental_BGE_chaos</prefab>
@@ -1806,7 +1806,7 @@
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
-    <starting_level>5</starting_level>
+    <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
@@ -1823,7 +1823,7 @@
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
-    <starting_level>5</starting_level>
+    <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <max_level>7</max_level>
     <!-- Max Mastery Level -->

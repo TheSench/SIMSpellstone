@@ -1249,7 +1249,7 @@ var BATTLEGROUNDS = {
     "effect": [
       {
         "effect_type": "runeMultiplier",
-        "mult": "2",
+        "mult": 2,
       },
     ]
   },
@@ -1281,7 +1281,7 @@ var BATTLEGROUNDS = {
         "id": "counter",
         "mult": .5,
         "base": "attack",
-        "y": "2,5",
+        "y": "2",
         "all": "1",
       },
       {
@@ -2045,7 +2045,7 @@ var BATTLEGROUNDS = {
     "desc": "Non-token enemies become stronger with each passing Mastery level.",
     "enemy_only": true,
     "scale_with_level": "1",
-    "starting_level": "5",
+    "starting_level": "0",
     "hidden": true,
     "effect": [
       {
@@ -2061,7 +2061,7 @@ var BATTLEGROUNDS = {
     "desc": "Non-token enemies become stronger with each passing Mastery level.",
     "enemy_only": true,
     "scale_with_level": "1",
-    "starting_level": "5",
+    "starting_level": "0",
     "hidden": true,
     "effect": [
       {

@@ -8623,7 +8623,6 @@
     <mission_req>5911</mission_req>
     <locked_start_time>1525366800</locked_start_time>
     <!-- Thu, 03 May 2018 17:00:00 -->
-    <achievement_req>3350</achievement_req>
     <req>
       <campaign>1169</campaign>
       <level>2</level>

@@ -5156,14 +5156,14 @@
     <upgrade>
       <level>5</level>
       <skill id="armored" x="4" />
-      <skill id="rally" x="2" all="1" y="1" />
-      <skill id="heal" x="5" />
+      <skill id="rally" x="3" all="1" y="1" />
+      <skill id="heal" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="3" all="1" y="1" />
-      <skill id="heal" x="6" />
+      <skill id="armored" x="5" />
+      <skill id="rally" x="4" all="1" y="1" />
+      <skill id="heal" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -16903,21 +16903,23 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="3" />
       <skill id="burn" x="3" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>11</attack>
       <skill id="armored" x="4" />
       <skill id="burn" x="4" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
-      <skill id="burn" x="4" />
-      <skill id="nullify" x="3" />
+      <health>27</health>
+      <skill id="armored" x="5" />
+      <skill id="burn" x="5" />
+      <skill id="nullify" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -17918,18 +17920,20 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>16</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>18</health>
       <skill id="armored" x="4" />
-      <skill id="burn" x="2" />
+      <skill id="burn" x="3" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>19</health>
       <skill id="armored" x="4" />
-      <skill id="burn" x="3" />
+      <skill id="burn" x="4" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -20344,39 +20348,43 @@
     <picture>Spiked_Barrier_Mecha_B</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1508432400</hidden_until_time>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>28</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="4" />
     <skill id="counter" x="6" />
-    <skill id="protect" x="5" y="16" />
+    <skill id="protect" x="7" y="16" />
     <type>1</type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
+      <attack>5</attack>
       <health>29</health>
       <skill id="armored" x="4" />
       <skill id="counter" x="7" />
-      <skill id="protect" x="5" y="16" />
+      <skill id="protect" x="8" y="16" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>7</attack>
       <health>30</health>
       <skill id="armored" x="5" />
       <skill id="counter" x="7" />
-      <skill id="protect" x="5" y="16" />
+      <skill id="protect" x="9" y="16" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="5" />
+      <attack>8</attack>
+      <health>32</health>
+      <skill id="armored" x="6" />
       <skill id="counter" x="8" />
-      <skill id="protect" x="6" y="16" />
+      <skill id="protect" x="10" y="16" />
     </upgrade>
   </unit>
   <unit>
@@ -20608,8 +20616,8 @@
     <health>20</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="3" y="16" />
-    <skill id="weaken" x="3" />
+    <skill id="rally" x="4" y="16" />
+    <skill id="weaken" x="4" />
     <skill id="flurry" c="3" />
     <type>1</type>
     <sub_type>16</sub_type>
@@ -20629,8 +20637,8 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="4" y="16" />
-      <skill id="weaken" x="4" />
+      <skill id="rally" x="5" y="16" />
+      <skill id="weaken" x="5" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -20753,13 +20761,14 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>17</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>19</health>
       <skill id="armored" x="4" />
-      <skill id="rally" x="6" y="16" />
-      <skill id="jam" c="4" />
+      <skill id="rally" x="7" y="16" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
   <unit>
@@ -24176,6 +24185,265 @@
       <skill id="absorb" x="9" />
       <skill id="jam" c="2" />
       <skill id="weaken" x="5" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5194</id>
+    <card_type>2</card_type>
+    <name>Gelidbeam Spatha</name>
+    <picture>Beam_Blade_Mecha_A</picture>
+    <asset_bundle>127</asset_bundle>
+    <hidden_until_time>1525712400</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="4" />
+    <skill id="frost" x="2" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="4" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15194</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Gelidbeam Soldier</name>
+    <picture>Beam_Blade_Mecha_A</picture>
+    <asset_bundle>127</asset_bundle>
+    <hidden_until_time>1525712400</hidden_until_time>
+    <attack>4</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="5" />
+    <skill id="frost" x="2" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="6" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="6" />
+      <skill id="frost" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25194</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gelidbeam Dualist</name>
+    <picture>Beam_Blade_Mecha_B</picture>
+    <asset_bundle>127</asset_bundle>
+    <hidden_until_time>1525712400</hidden_until_time>
+    <attack>5</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="frost" x="3" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="8" />
+      <skill id="frost" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5195</id>
+    <card_type>2</card_type>
+    <name>Owlnaut Z-3</name>
+    <picture>Mecha_Cyborg_Avian_A</picture>
+    <asset_bundle>127</asset_bundle>
+    <hidden_until_time>1526922000</hidden_until_time>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="2" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="2" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="3" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="3" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15195</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Owlnaut Z-30</name>
+    <picture>Mecha_Cyborg_Avian_A</picture>
+    <asset_bundle>127</asset_bundle>
+    <hidden_until_time>1526922000</hidden_until_time>
+    <attack>3</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="4" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="5" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25195</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Owlnaut Z-300</name>
+    <picture>Mecha_Cyborg_Avian_B</picture>
+    <asset_bundle>127</asset_bundle>
+    <hidden_until_time>1526922000</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="6" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="7" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="flurry" c="3" />
     </upgrade>
   </unit>
 </root>

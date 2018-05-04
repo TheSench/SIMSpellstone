@@ -518,6 +518,99 @@
       <skill id="berserk" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4006</id>
+    <card_type>2</card_type>
+    <name>LOCO-5000</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Train_Mecha_B</picture>
+    <asset_bundle>127</asset_bundle>
+    <item_name>LOCO-5000 Stone</item_name>
+    <item_desc>Collect LOCO-5000 Stones to upgrade the Legendary LOCO-5000 card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <attack>6</attack>
+    <health>44</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="berserk" x="3" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <health>45</health>
+      <skill id="absorb" x="7" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <skill id="absorb" x="7" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>47</health>
+      <skill id="absorb" x="7" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="absorb" x="8" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>9</attack>
+      <health>50</health>
+      <skill id="absorb" x="9" />
+      <skill id="berserk" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>10</attack>
+      <health>51</health>
+      <skill id="absorb" x="10" />
+      <skill id="berserk" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>11</attack>
+      <health>52</health>
+      <skill id="absorb" x="10" />
+      <skill id="berserk" x="6" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>12</attack>
+      <health>53</health>
+      <skill id="absorb" x="11" />
+      <skill id="berserk" x="7" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>55</health>
+      <skill id="absorb" x="12" />
+      <skill id="berserk" x="7" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- ============================== -->
   <!-- === CHAOS PREMIUM CHAMPION === -->
   <!-- ============================== -->
@@ -604,6 +697,97 @@
       <skill id="nullify" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6601</id>
+    <card_type>2</card_type>
+    <name>Elytragor, Beacon's Call</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Monster_Guardian_Mecha_B</picture>
+    <asset_bundle>127</asset_bundle>
+    <item_name>Elytragor Stone</item_name>
+    <item_desc>Collect Elytragor Stones to upgrade the Legendary Elytragor, Beacon's Call card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <sub_type>16</sub_type>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="weaken" all="1" x="3" />
+    <skill id="berserk" x="4" />
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="absorb" x="7" />
+      <skill id="weaken" all="1" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <health>36</health>
+      <skill id="absorb" x="7" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <health>37</health>
+      <skill id="absorb" x="8" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+      <skill id="absorb" x="9" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>12</attack>
+      <skill id="absorb" x="9" />
+      <skill id="weaken" all="1" x="5" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>39</health>
+      <skill id="absorb" x="9" />
+      <skill id="weaken" all="1" x="5" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>40</health>
+      <skill id="absorb" x="10" />
+      <skill id="weaken" all="1" x="5" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>13</attack>
+      <health>41</health>
+      <skill id="absorb" x="10" />
+      <skill id="weaken" all="1" x="5" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>42</health>
+      <skill id="absorb" x="10" />
+      <skill id="weaken" all="1" x="6" />
+      <skill id="berserk" x="8" />
+    </upgrade>
+  </unit>
   <!-- ============================= -->
   <!-- === WYLD PREMIUM CHAMPION === -->
   <!-- ============================= -->
@@ -629,72 +813,72 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="5" />
-    <skill id="leech" x="6" />
     <skill id="heal" all="1" x="2" />
+    <skill id="leech" x="6" />
     <upgrade>
       <level>2</level>
       <health>26</health>
       <skill id="corrosive" x="5" />
-      <skill id="leech" x="7" />
       <skill id="heal" all="1" x="3" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>7</attack>
       <skill id="corrosive" x="6" />
-      <skill id="leech" x="7" />
       <skill id="heal" all="1" x="3" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>8</attack>
       <health>27</health>
       <skill id="corrosive" x="7" />
-      <skill id="leech" x="7" />
       <skill id="heal" all="1" x="4" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>9</attack>
       <skill id="corrosive" x="7" />
-      <skill id="leech" x="8" />
       <skill id="heal" all="1" x="4" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>28</health>
       <skill id="corrosive" x="7" />
-      <skill id="leech" x="9" />
       <skill id="heal" all="1" x="4" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <attack>10</attack>
       <skill id="corrosive" x="7" />
-      <skill id="leech" x="9" />
       <skill id="heal" all="1" x="5" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <health>29</health>
       <skill id="corrosive" x="8" />
-      <skill id="leech" x="9" />
       <skill id="heal" all="1" x="5" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <attack>11</attack>
       <health>30</health>
       <skill id="corrosive" x="8" />
-      <skill id="leech" x="10" />
       <skill id="heal" all="1" x="5" />
+      <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <health>31</health>
       <skill id="corrosive" x="9" />
-      <skill id="leech" x="10" />
       <skill id="heal" all="1" x="6" />
+      <skill id="leech" x="10" />
     </upgrade>
   </unit>
 </root>

@@ -29553,7 +29553,7 @@
     <id>5940</id>
     <name>For a Dragon and His Boy</name>
     <energy>9</energy>
-    <desc>The drake runs a few steps, before looking back and returning to Decim, but even the drake's nudge fails to rouse Decim. The drake positions itself between Decim and the mecha, snarling even as its body quivers. Your group runs to their aid, positioning yourself between the dragonling and mecha.</desc>
+    <desc>The drake runs away a few steps, before looking back and returning to Decim. The drake positions itself between Decim and the mecha, snarling even as its body quivers. Your group runs to their aid, positioning yourself between the dragonling and mecha.</desc>
     <commander id="413" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />
@@ -29936,7 +29936,7 @@
     <id>5952</id>
     <name>The Goblins' Wager</name>
     <energy>9</energy>
-    <desc>Boldur agrees, but only on the condition that the stakes be raised even higher. Then he prepares for the final showdown...</desc>
+    <desc>Boldur agrees, deciding that Fiona's terms are only fair. Then he prepares for the final showdown...</desc>
     <commander id="413" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />

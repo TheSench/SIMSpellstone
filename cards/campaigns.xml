@@ -5842,6 +5842,80 @@
     </rewards>
     <find_item id="3071" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event 9 Weeks 5-8 -->
+  <campaign>
+    <id>1169</id>
+    <name>Prisoner Escape</name>
+    <campaign_req id="1164" level="1" />
+    <locked_start_time>1525366800</locked_start_time>
+    <!-- Thu, 03 May 2018 17:00:00 GMT -->
+    <battleground_id>2038</battleground_id>
+    <location_id>15</location_id>
+    <x>710</x>
+    <y>510</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5928</mission_id>
+      <mission_id>5929</mission_id>
+      <mission_id>5930</mission_id>
+      <mission_id>5931</mission_id>
+      <mission_id>5932</mission_id>
+      <mission_id>5933</mission_id>
+      <mission_id>5934</mission_id>
+      <mission_id>5935</mission_id>
+      <mission_id>5936</mission_id>
+      <mission_id>5937</mission_id>
+      <mission_id>5938</mission_id>
+      <mission_id>5939</mission_id>
+      <mission_id>5940</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2127" />
+      <card level="5" id="512" />
+      <card level="6" id="2002" />
+      <item level="7" id="3072" />
+    </rewards>
+    <find_item id="3071" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1170</id>
+    <name>Direct Encounter</name>
+    <campaign_req id="1169" level="1" />
+    <locked_start_time>1526576400</locked_start_time>
+    <!-- Thu, 17 May 2018 17:00:00 GMT -->
+    <battleground_id>2039</battleground_id>
+    <location_id>15</location_id>
+    <x>790</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5941</mission_id>
+      <mission_id>5942</mission_id>
+      <mission_id>5943</mission_id>
+      <mission_id>5944</mission_id>
+      <mission_id>5945</mission_id>
+      <mission_id>5946</mission_id>
+      <mission_id>5947</mission_id>
+      <mission_id>5948</mission_id>
+      <mission_id>5949</mission_id>
+      <mission_id>5950</mission_id>
+      <mission_id>5951</mission_id>
+      <mission_id>5952</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2128" />
+      <card level="5" id="512" />
+      <card level="6" id="2111" />
+      <item level="7" id="3072" />
+    </rewards>
+    <find_item id="3071" drop_per_energy=".6" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
