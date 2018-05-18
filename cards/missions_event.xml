@@ -29968,4 +29968,878 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 10 -->
+  <!-- Extra node -->
+  <mission>
+    <id>5953</id>
+    <name>Coconut Frenzy</name>
+    <energy>9</energy>
+    <desc>The beach seems to have mystical properties in the air. The coconuts are imbued with magical properties. Perhaps if you bring them to the Seers, they can grant you greater powers.</desc>
+    <commander id="344" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6038" name="Hemlock" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5011" mastery_level="2" name="Sky Whale" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="5041" mastery_level="4" name="Skylance Raiders" />
+      <card id="5161" mastery_level="5" name="Bolster Bot" />
+      <card id="5164" mastery_level="6" name="Chromium Centaur" />
+      <card id="6157" mastery_level="7" name="Dawnblade Huntress" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5954</id>
+    <name>Title</name>
+    <energy>9</energy>
+    <desc>xxxx</desc>
+    <commander id="281" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5158" name="Chilltide Stormtender" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="7066" name="Aquine" />
+      <card id="5011" mastery_level="2" name="Sky Whale" />
+      <card id="5108" mastery_level="3" name="Aurora Skimmer" />
+      <card id="7109" mastery_level="4" name="Clownder" />
+      <card id="2110" mastery_level="5" name="Weathered Widgit" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="5151" mastery_level="7" name="Brinebelly" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 10 -->
+  <mission>
+    <id>5955</id>
+    <name>Arrival at Forgotten Island</name>
+    <energy>9</energy>
+    <desc>Malchior has successfully decoded the book he acquired from Skyhaven. In it, it described an ancient civilization, hidden away on a Forgotten Island. With King Proteus's help, you were able to find the island. Ursurio has decided to accompany you.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5158" name="Chilltide Stormtender" />
+      <card id="7109" name="Clownder" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7151" mastery_level="2" name="Sawtooth" />
+      <card id="7005" mastery_level="3" name="Tsunamari" />
+      <card id="5073" mastery_level="4" name="Shell Invader" />
+      <card id="2127" mastery_level="5" name="RT-87 Rescinder" />
+      <card id="7163" mastery_level="6" name="Alloy of the Trees" />
+      <card id="2080" mastery_level="7" name="Hunter Zind" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>Here we are, as promised. The Forgotten Island.</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>It was once a hotbed of Scylla worshippers, so be careful of any zealots you encounter.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5956</id>
+    <name>Beach Beauty</name>
+    <energy>9</energy>
+    <desc>King Proteus sends you off, before diving below the waves. The beach's sand is pleasantly warm, seagulls cawing overhead. A dark jungle grows untamed at the beach's border, deeper into the island.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="5163" name="Bark Hound" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="6150" name="Deep Dino" />
+      <card id="7151" mastery_level="2" name="Sawtooth" />
+      <card id="7149" mastery_level="3" name="Trident Merman" />
+      <card id="2079" mastery_level="4" name="Koi Guardian" />
+      <card id="2109" mastery_level="5" name="Scorchfist Avenger" />
+      <card id="6190" mastery_level="6" name="Twinblast" />
+      <card id="7003" mastery_level="7" name="Kraken" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>What a beautiful beach! I'd love to stretch out and do a little sunbathing...</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>But my nose smells trouble, so we can't relax yet.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5957</id>
+    <name>The Island's Wildlife</name>
+    <energy>9</energy>
+    <desc>Ursurio teaches you how to most efficiently navigate the terrain. You follow the beach rather than immediately heading off to the jungle, searching for the source of the river that flows into the ocean.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6159" name="Solder Charger" />
+      <card id="7109" name="Clownder" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="6149" name="Pufferspine" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="2105" mastery_level="3" name="Shockscale Eel" />
+      <card id="2078" mastery_level="4" name="Septuamaid" />
+      <card id="2111" mastery_level="5" name="Drillbot" />
+      <card id="6000" mastery_level="6" name="Furnace Mech" />
+      <card id="6151" mastery_level="7" name="Cetus" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5958</id>
+    <name>Zealot Raiders</name>
+    <energy>9</energy>
+    <desc>You see some Seafolk Raiders grouped at the far end of the beach. They're standing in a circle, seemingly oblivious to your presence. You can hear raucous laughter, and spy movement of something in the circle...</desc>
+    <commander id="352" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6159" name="Solder Charger" />
+      <card id="2076" name="Adorabilis" />
+      <card id="5163" name="Bark Hound" />
+      <card id="6159" name="Solder Charger" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5011" mastery_level="2" name="Sky Whale" />
+      <card id="2104" mastery_level="3" name="Sharkcrusher" />
+      <card id="5041" mastery_level="4" name="Skylance Raiders" />
+      <card id="7164" mastery_level="5" name="Pinegrove Primate" />
+      <card id="7166" mastery_level="6" name="Rejuvenation Acolyte" />
+      <card id="7014" mastery_level="7" name="Genbu" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>What are those raiders doing? If they're hurting  someone, we have to help!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5959</id>
+    <name>For an Unknown Cause</name>
+    <energy>9</energy>
+    <desc>You pound across the sand, ready to come to the stranger's aid. The raiders notice your presence, their attention shifting towards you.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="7149" name="Trident Merman" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="7161" name="Alphamecha" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5149" mastery_level="2" name="Flatfish Ward" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="6149" mastery_level="4" name="Pufferspine" />
+      <card id="6158" mastery_level="5" name="Orbos" />
+      <card id="2113" mastery_level="6" name="Vali, the Thunderer" />
+      <card id="5153" mastery_level="7" name="Octopulse" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5960</id>
+    <name>Recognition</name>
+    <energy>9</energy>
+    <desc>The Seafolk raiders snarl at your approach. They abandon whatever it was they were doing in their circle, coming towards you with their weapons drawn!</desc>
+    <commander id="359" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7109" name="Clownder" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="2079" mastery_level="3" name="Koi Guardian" />
+      <card id="7151" mastery_level="4" name="Sawtooth" />
+      <card id="2110" mastery_level="5" name="Weathered Widgit" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="5109" mastery_level="7" name="Cyclospout" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>It's the ones who attacked Lady Scylla. Get them!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5961</id>
+    <name>Crabby Victim</name>
+    <energy>9</energy>
+    <desc>You and Ursurio easily defeat the waves of Seafolk raiders. Ursurio takes a closer look at where the raiders had originally formed their circle. A crab scuttles back and forth in the sand. Ursurio grabs it by its pincer, lifting it up.</desc>
+    <commander id="344" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2111" name="Drillbot" />
+      <card id="2111" name="Drillbot" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5011" mastery_level="2" name="Sky Whale" />
+      <card id="7107" mastery_level="3" name="Hammer Krab" />
+      <card id="6149" mastery_level="4" name="Pufferspine" />
+      <card id="2110" mastery_level="5" name="Weathered Widgit" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+      <card id="7003" mastery_level="7" name="Kraken" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Huh, there's no one else here. Just this tasty-looking crab.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>What- Unhand me, you fiend! I am not for eating!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5962</id>
+    <name>The Crab Seer</name>
+    <energy>9</energy>
+    <desc>Ursurio drops the crab in surprise. The crab falls upside-down into the sand, struggling to right itself. Gently, you nudge it back on its feet.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="6149" mastery_level="2" name="Pufferspine" />
+      <card id="7066" mastery_level="3" name="Aquine" />
+      <card id="6149" mastery_level="4" name="Pufferspine" />
+      <card id="2110" mastery_level="5" name="Weathered Widgit" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="7150" mastery_level="7" name="Ika-Roa" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Thank you, my friend. Without you, I would have ended up as crab meat!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Mm, but yes. I see you have come to this island for a purpose. To discover the truth...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5963</id>
+    <name>Forgotten Knowledge</name>
+    <energy>9</energy>
+    <desc>The Crab Seer shuffles back and forth sideways, unable to sit still. She scratches her head with a pincer claw, trying to remember.... something....</desc>
+    <commander id="391" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5163" name="Bark Hound" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2078" mastery_level="2" name="Septuamaid" />
+      <card id="6108" mastery_level="3" name="Redwater Angler" />
+      <card id="1634" mastery_level="4" name="Brightshoal Warrior" />
+      <card id="2002" mastery_level="5" name="Lantern Guardian" />
+      <card id="5165" mastery_level="6" name="Electrumus" />
+      <card id="7152" mastery_level="7" name="Shellter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Wow, how can you tell? That's exactly why we're here!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>I can tell because, I... well... This is embarrassing. I don't remember why.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5964</id>
+    <name>A Message for a Champion</name>
+    <energy>9</energy>
+    <desc>The Crab Seer seems to know who you are without any introductions. However, she seems less sure about her own story...</desc>
+    <commander id="298" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7109" mastery_level="2" name="Clownder" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="2110" mastery_level="5" name="Weathered Widgit" />
+      <card id="6080" mastery_level="6" name="Titanirous" />
+      <card id="7153" mastery_level="7" name="Kelpcatcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>But you are the Champion of The Void, and I know I have been waiting for you. I must deliver a message!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>...Now what was the message...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5965</id>
+    <name>Recollection</name>
+    <energy>9</energy>
+    <desc>The Crab Seer desperately wants to remember the message. She scuttles around in a circle, waving her claws. Ursurio follows behind her, hoping to help.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6158" name="Orbos" />
+      <card id="6158" name="Orbos" />
+      <card id="6149" name="Pufferspine" />
+      <card id="7149" mastery_level="2" name="Trident Merman" />
+      <card id="7149" mastery_level="3" name="Trident Merman" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="2002" mastery_level="5" name="Lantern Guardian" />
+      <card id="6148" mastery_level="6" name="Narwhal Spiker" />
+      <card id="7162" mastery_level="7" name="Timberhead Diver" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>I don't know whether to be impressed or disappointed!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Quiet, loud one! I cannot think! I cannot remember to tell you to find the other seers!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Oh...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5966</id>
+    <name>The Three Seers</name>
+    <energy>9</energy>
+    <desc>Finally, the crab remembers part of the message she wants to tell you. However, it seems like you have only found one piece of a much larger puzzle...</desc>
+    <commander id="344" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="2111" name="Drillbot" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="7109" mastery_level="3" name="Clownder" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="2109" mastery_level="5" name="Scorchfist Avenger" />
+      <card id="6161" mastery_level="6" name="Torero" />
+      <card id="7165" mastery_level="7" name="Raging Irontusk" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>It looks like you remembered after all.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>I wish I recalled more details. But yes... one in the jungle, and one in the ruins. You must find them.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5967</id>
+    <name>Jungle Exploration</name>
+    <energy>9</energy>
+    <desc>Following the waterway that leads deeper into the island, you heed the crab seer's words and search for one of her companions. The tropical air becomes oppressively humid in the jungle...</desc>
+    <commander id="298" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2105" mastery_level="2" name="Shockscale Eel" />
+      <card id="7066" mastery_level="3" name="Aquine" />
+      <card id="6110" mastery_level="4" name="Sea Mantis" />
+      <card id="7164" mastery_level="5" name="Pinegrove Primate" />
+      <card id="6160" mastery_level="6" name="Steamrager" />
+      <card id="7191" mastery_level="7" name="Rustcast Witch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>The seers could lead us to the lost civilization. It's worth checking out, at least.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5968</id>
+    <name>Deeper in the Jungle</name>
+    <energy>9</energy>
+    <desc>There is no path for you to follow. The wilderness is violent and untamed, the foliage scraping against your legs. Even this far into the island, you sometimes encounter Seafolk raider patrols...</desc>
+    <commander id="286" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="1634" mastery_level="2" name="Brightshoal Warrior" />
+      <card id="7107" mastery_level="3" name="Hammer Krab" />
+      <card id="6110" mastery_level="4" name="Sea Mantis" />
+      <card id="2002" mastery_level="5" name="Lantern Guardian" />
+      <card id="6167" mastery_level="6" name="Macabre Machine" />
+      <card id="5154" mastery_level="7" name="Glaucus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>It's weird that we're still seeing raiders this far in.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Do you think they're looking for something? Maybe... pirate treasure?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5969</id>
+    <name>Just Asking</name>
+    <energy>9</energy>
+    <desc>Ursurio politely asks one of the Seafolk raiders if they're searching for pirate treasure. The raider attempts to stab him with a trident in response.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7151" name="Sawtooth" />
+      <card id="1634" mastery_level="2" name="Brightshoal Warrior" />
+      <card id="5107" mastery_level="3" name="Thrumming Beacon" />
+      <card id="6110" mastery_level="4" name="Sea Mantis" />
+      <card id="6159" mastery_level="5" name="Solder Charger" />
+      <card id="5105" mastery_level="6" name="Sea Whisperer" />
+      <card id="5153" mastery_level="7" name="Octopulse" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5970</id>
+    <name>Abandoned Civilization</name>
+    <energy>9</energy>
+    <desc>You give up attempting to reason with Scylla's followers, and instead focus on finding the crab seer's friend. Peculiar ruined structures, remnants of a civilization, can be found half-buried in the earth...</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="7149" name="Trident Merman" />
+      <card id="6150" name="Deep Dino" />
+      <card id="5163" name="Bark Hound" />
+      <card id="7066" name="Aquine" />
+      <card id="2078" name="Septuamaid" />
+      <card id="1630" mastery_level="2" name="Giant Squid" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="6110" mastery_level="4" name="Sea Mantis" />
+      <card id="2127" mastery_level="5" name="RT-87 Rescinder" />
+      <card id="2080" mastery_level="6" name="Hunter Zind" />
+      <card id="5150" mastery_level="7" name="Deepspear Warfarer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>These ruins are ancient. They must have belonged to the natives of Arcantica.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>But why did they leave them? And where did they go?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5971</id>
+    <name>Living Foliage</name>
+    <energy>9</energy>
+    <desc>Eventually Ursurio tires and requests that the two of you take a break. He leans heavily against a tree... only for it to move back suddenly, causing Ursurio to fall on the ground.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="7066" name="Aquine" />
+      <card id="6149" name="Pufferspine" />
+      <card id="6159" name="Solder Charger" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7151" mastery_level="2" name="Sawtooth" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="6110" mastery_level="4" name="Sea Mantis" />
+      <card id="7109" mastery_level="5" name="Clownder" />
+      <card id="7023" mastery_level="6" name="Zolmosh the Fist" />
+      <card id="5151" mastery_level="7" name="Brinebelly" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Excuse me! Please do not touch!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Who is this? Are you a friend of the Crab Seer?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5972</id>
+    <name>The Spriggan Seer</name>
+    <energy>9</energy>
+    <desc>The spriggan poses elegantly, bowing and shaking his fronds in your direction. His  speech is very formal, the opposite of what you've come to expect on this wilderness island. </desc>
+    <commander id="303" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="7109" name="Clownder" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="2076" mastery_level="2" name="Adorabilis" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="6110" mastery_level="4" name="Sea Mantis" />
+      <card id="1630" mastery_level="5" name="Giant Squid" />
+      <card id="7108" mastery_level="6" name="Quetee" />
+      <card id="6106" mastery_level="7" name="Bailong" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I am a very important person. </text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Oh?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Yes, very important. You should feel very proud to meet me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5973</id>
+    <name>Raider Interruption</name>
+    <energy>9</energy>
+    <desc>Interrupting your chance to continue further, the seafolk raiders have gathered again. They seem intent on getting to the Spriggan Seer, but you block their path and protect your new friend.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6004" name="Branding Construct" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2076" mastery_level="2" name="Adorabilis" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="6108" mastery_level="4" name="Redwater Angler" />
+      <card id="6149" mastery_level="5" name="Pufferspine" />
+      <card id="6107" mastery_level="6" name="Great Lava Crab" />
+      <card id="5156" mastery_level="7" name="Tiltyard Ribbot" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I don't remember WHY, but I must be. Otherwise, those silly seafolk would leave me alone!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Speaking of those raiders... Here they come!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5974</id>
+    <name>In Search of Treasure</name>
+    <energy>9</energy>
+    <desc>You continue to fend off the seafolk. Relentlessly they attack, undaunted by the amount that fall beneath your might.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="7149" name="Trident Merman" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2076" mastery_level="2" name="Adorabilis" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="6150" mastery_level="5" name="Deep Dino" />
+      <card id="5109" mastery_level="6" name="Cyclospout" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Ah! I know now! They want my treasure.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Pirate treasure? Food? </text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5975</id>
+    <name>The Residual Nectar</name>
+    <energy>9</energy>
+    <desc>The Spriggan hands you a small flask, filled with a golden liquid. You carefully stow it away in a safe place.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6159" name="Solder Charger" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6150" name="Deep Dino" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6150" name="Deep Dino" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2076" mastery_level="2" name="Adorabilis" />
+      <card id="7109" mastery_level="3" name="Clownder" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="6150" mastery_level="5" name="Deep Dino" />
+      <card id="2080" mastery_level="6" name="Hunter Zind" />
+      <card id="5150" mastery_level="7" name="Deepspear Warfarer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Take this Residual Nectar. I created it to restore memories, but I forgot how I made it.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Shouldn't you drink it then? Or perhaps our Crab Seer friend...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5976</id>
+    <name>The Final Search</name>
+    <energy>9</energy>
+    <desc>The Spriggan gives you some more advice before you depart. He points you in a different direction, where you can see the remnants of some ruins rising from the jungle's trees.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7005" name="Tsunamari" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="2078" name="Septuamaid" />
+      <card id="6108" mastery_level="2" name="Redwater Angler" />
+      <card id="2079" mastery_level="3" name="Koi Guardian" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="1634" mastery_level="5" name="Brightshoal Warrior" />
+      <card id="5106" mastery_level="6" name="Acuro, Sea Captain" />
+      <card id="6178" mastery_level="7" name="Bitumen Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>No... if you're after the island's secrets, there is one who can help better than I.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>There is still one more seer, from the Insect tribe. You will find her in the ruins, and give her this.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5977</id>
+    <name>Edible Treasure</name>
+    <energy>9</energy>
+    <desc>Ursurio offers to hold on to the nectar for you. After considering it briefly, you decide to keep it for now, to fulfill the seer's request.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5163" name="Bark Hound" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6149" name="Pufferspine" />
+      <card id="6158" name="Orbos" />
+      <card id="7151" name="Sawtooth" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="7151" mastery_level="3" name="Sawtooth" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="2105" mastery_level="5" name="Shockscale Eel" />
+      <card id="6151" mastery_level="6" name="Cetus" />
+      <card id="6185" mastery_level="7" name="Heilong" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Don't eat it! You must give it to the right seer.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Oh! Okay, okay... Not even a little bite?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5978</id>
+    <name>Ursurio's Fear</name>
+    <energy>9</energy>
+    <desc>You and Ursurio continue your journey through the jungle. More moss-covered bricks frequent the ground, as you begin to traverse towards the ruin structure.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="6149" name="Pufferspine" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="6149" name="Pufferspine" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="6135" mastery_level="4" name="Burnshell" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="5104" mastery_level="7" name="Pisces" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>I hope amnesia isn't contagious. I don't want to forget all my stashed snacks.</text>
+      </line>
+    </speech>
+  </mission>
 </root>

@@ -76,7 +76,7 @@ var BATTLEGROUNDS = {
   "106": {
     "name": "Angelic Legion",
     "id": "106",
-    "desc": "Angels have risen to fight, gaining Legion equal to 50% of the their base Attack.",
+    "desc": "Angels have risen to fight, gaining Legion equal to 50% of their base Attack.",
     "effect": [
       {
         "effect_type": "add_skill",

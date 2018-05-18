@@ -69,8 +69,25 @@
 			701-799 = Vaporizer
 			801-899 = Runes
 			
-			
-		EVENT ACHIEVEMENTS: Start at ID 3001
+		ID's
+			101-200 = Store
+			201-250 = Core Map 
+			251-300 = Mastery Star 
+			301-400 = Card Upgrades
+			401-500 = Bounties
+			501-600 = Guild
+			601-700 = Heroes
+			701-800 = Card Fusions
+			801-900 = Arcane Dust
+		   901-1000 = <BLANK>
+          1001-1100 = Kongregate Account
+		  1101-1200 = Deck Editting
+		  1201-1300 = <BLANK>
+		  1301-1400 = Rune Crafting
+		  1401-1500 = <BLANK>
+		  1501-1600 = Arena Achievements
+		  3001-4000 = Non-Core Maps
+		  4001-4500 = Non-Core Maps Meta
 	-->
   <!-- 100: Store Quests START -->
   <achievement>
@@ -8753,5 +8770,383 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 10 -->
+  <achievement>
+    <id>3363</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Castaway Cove</name>
+    <desc>Complete the 'Castaway Cove' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <req>
+      <campaign>1171</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3074" number="50" />
+      <event_points id="7034" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3364</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Castaway Cove</name>
+    <desc>Complete the 'Castaway Cove' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <achievement_req>3364</achievement_req>
+    <req>
+      <campaign>1171</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3365</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Island of Secrets</name>
+    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <req>
+      <campaign>1172</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3366</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Island of Secrets</name>
+    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <req>
+      <campaign>1172</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3367</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Island of Secrets</name>
+    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <achievement_req>3366</achievement_req>
+    <req>
+      <campaign>1172</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3368</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Island of Secrets</name>
+    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <achievement_req>3367</achievement_req>
+    <req>
+      <campaign>1172</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3369</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost History</name>
+    <desc>Complete the 'Lost History' campaign on Mastery Level 2.</desc>
+    <mission_req>5966</mission_req>
+    <locked_start_time>1528995600</locked_start_time>
+    <!-- Thu, June 14 2018 17:00:00 -->
+    <req>
+      <campaign>1173</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3370</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost History</name>
+    <desc>Complete the 'Lost History' campaign on Mastery Level 4.</desc>
+    <mission_req>5966</mission_req>
+    <locked_start_time>1528995600</locked_start_time>
+    <!-- Thu, June 14 2018 17:00:00 -->
+    <achievement_req>3369</achievement_req>
+    <req>
+      <campaign>1173</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3371</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost History</name>
+    <desc>Complete the 'Lost History' campaign on Mastery Level 6.</desc>
+    <mission_req>5966</mission_req>
+    <locked_start_time>1528995600</locked_start_time>
+    <!-- Thu, June 14 2018 17:00:00 -->
+    <achievement_req>3370</achievement_req>
+    <req>
+      <campaign>1173</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3372</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost History</name>
+    <desc>Complete the 'Lost History' campaign on Mastery Level 7.</desc>
+    <mission_req>5966</mission_req>
+    <locked_start_time>1528995600</locked_start_time>
+    <!-- Thu, June 14 2018 17:00:00 -->
+    <achievement_req>3371</achievement_req>
+    <req>
+      <campaign>1173</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
+  <!-- START Non-Core Maps Meta -->
+  <achievement>
+    <!-- Duskwillow -->
+    <id>4001</id>
+    <type>2</type>
+    <order>631</order>
+    <name>Vanquisher of Duskwillow</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Duskwillow.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5469</mission_req>
+    <req>
+      <campaign>1108</campaign>
+      <campaign>1109</campaign>
+      <campaign>1110</campaign>
+      <campaign>1111</campaign>
+      <campaign>1112</campaign>
+      <campaign>1113</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Frigore -->
+    <id>4002</id>
+    <type>2</type>
+    <order>632</order>
+    <name>Vanquisher of Frigore</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Frigore.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5524</mission_req>
+    <req>
+      <campaign>1114</campaign>
+      <campaign>1115</campaign>
+      <campaign>1116</campaign>
+      <campaign>1117</campaign>
+      <campaign>1118</campaign>
+      <campaign>1119</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Void Plane -->
+    <id>4003</id>
+    <type>2</type>
+    <order>633</order>
+    <name>Vanquisher of The Void Plane</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Void Plane.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5594</mission_req>
+    <req>
+      <campaign>1124</campaign>
+      <campaign>1125</campaign>
+      <campaign>1126</campaign>
+      <campaign>1127</campaign>
+      <campaign>1128</campaign>
+      <campaign>1129</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2508" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Beetleton Bunker -->
+    <id>4004</id>
+    <type>2</type>
+    <order>634</order>
+    <name>Vanquisher of Beetleton Bunker</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Beetleton Bunker.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5653</mission_req>
+    <req>
+      <campaign>1130</campaign>
+      <campaign>1131</campaign>
+      <campaign>1132</campaign>
+      <campaign>1133</campaign>
+      <campaign>1134</campaign>
+      <campaign>1135</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Pharos Temple -->
+    <id>4005</id>
+    <type>2</type>
+    <order>635</order>
+    <name>Vanquisher of Pharos Temple</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Pharos Temple.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5683</mission_req>
+    <req>
+      <campaign>1136</campaign>
+      <campaign>1137</campaign>
+      <campaign>1138</campaign>
+      <campaign>1139</campaign>
+      <campaign>1140</campaign>
+      <campaign>1141</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Fireshard Mine -->
+    <id>4006</id>
+    <type>2</type>
+    <order>636</order>
+    <name>Vanquisher of Fireshard Mine</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Fireshard Mine.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5745</mission_req>
+    <req>
+      <campaign>1142</campaign>
+      <campaign>1143</campaign>
+      <campaign>1144</campaign>
+      <campaign>1146</campaign>
+      <campaign>1147</campaign>
+      <campaign>1148</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Celestial Vault -->
+    <id>4007</id>
+    <type>2</type>
+    <order>637</order>
+    <name>Vanquisher of The Celestial Vault</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Celestial Vault.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5805</mission_req>
+    <req>
+      <campaign>1149</campaign>
+      <campaign>1150</campaign>
+      <campaign>1151</campaign>
+      <campaign>1153</campaign>
+      <campaign>1154</campaign>
+      <campaign>1155</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Skyhaven -->
+    <id>4008</id>
+    <type>2</type>
+    <order>638</order>
+    <name>Vanquisher of Skyhaven</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Skyhaven.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5860</mission_req>
+    <req>
+      <campaign>1156</campaign>
+      <campaign>1157</campaign>
+      <campaign>1158</campaign>
+      <campaign>1159</campaign>
+      <campaign>1160</campaign>
+      <campaign>1161</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Goblin Rise Stronghold -->
+    <id>4009</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Goblin Rise Stronghold</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Goblin Rise Stronghold.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5927</mission_req>
+    <req>
+      <campaign>1162</campaign>
+      <campaign>1163</campaign>
+      <campaign>1164</campaign>
+      <campaign>1168</campaign>
+      <campaign>1169</campaign>
+      <campaign>1170</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <!-- Non-Core Maps Meta END -->
 </root>

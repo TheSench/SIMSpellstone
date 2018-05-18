@@ -156087,7 +156087,7 @@ var CARDS = {
   "7190": {
     "id": "7190",
     "name": "Drix and Acidfire",
-    "picture": "Goblin_Dragon_Tamer_A",
+    "picture": "Goblin_Dragon_A",
     "hidden_until": "1523898000000",
     "rarity": "4",
     "set": "4000",
@@ -156169,7 +156169,7 @@ var CARDS = {
   "17190": {
     "id": "17190",
     "name": "Drix and Acidflare",
-    "picture": "Goblin_Dragon_Tamer_A",
+    "picture": "Goblin_Dragon_A",
     "hidden_until": "1523898000000",
     "rarity": "4",
     "set": "4000",
@@ -156281,7 +156281,7 @@ var CARDS = {
   "27190": {
     "id": "27190",
     "name": "Drix and Acidflames",
-    "picture": "Goblin_Dragon_Tamer_B",
+    "picture": "Goblin_Dragon_B",
     "hidden_until": "1523898000000",
     "rarity": "4",
     "set": "4000",
@@ -218615,4 +218615,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1525444352745.85;
+var CardsUpdated = 1526648085611.93;

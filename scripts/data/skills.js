@@ -320,9 +320,7 @@ var SKILL_DATA = {
 }
 for(var skillID in SKILL_DATA) {
 	var skillInfo = SKILL_DATA[skillID];
-	if(skillID === 'flurry') {
-		skillInfo.type = 'flurry';
-	} else if(['turnStart', 'onAttack', 'onDamaged', 'turnEnd'].indexOf(skillInfo.type) >= 0) {
+	if(['turnStart', 'onAttack', 'onDamaged', 'turnEnd'].indexOf(skillInfo.type) >= 0) {
 		skillInfo.type = 'passive';
 	}
 }

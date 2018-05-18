@@ -5914,7 +5914,7 @@
       <card level="6" id="2111" />
       <item level="7" id="3072" />
     </rewards>
-    <find_item id="3071" drop_per_energy=".6" />
+    <find_item id="3071" drop_per_energy=".8" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
@@ -6007,6 +6007,7 @@
 		 -->
     <name>Applied Knowledge</name>
     <side_mission>1</side_mission>
+    <icon id="HeroIcon_Elyse_64" bundle="58" />
     <upgraded_hero_req>7</upgraded_hero_req>
     <pvp_rank_req>10</pvp_rank_req>
     <location_id>0</location_id>
@@ -6039,6 +6040,7 @@
 		 -->
     <name>Oda and the Serpent</name>
     <side_mission>1</side_mission>
+    <icon id="HeroIcon_Oda_64" bundle="58" />
     <upgraded_hero_req>1</upgraded_hero_req>
     <pvp_rank_req>10</pvp_rank_req>
     <location_id>0</location_id>
@@ -6071,6 +6073,7 @@
 		 -->
     <name>Losing Baggage</name>
     <side_mission>1</side_mission>
+    <icon id="HeroIcon_Aria_64" bundle="58" />
     <upgraded_hero_req>4</upgraded_hero_req>
     <pvp_rank_req>10</pvp_rank_req>
     <location_id>0</location_id>
@@ -6103,6 +6106,7 @@
 		 -->
     <name>Trial by Dragonfire</name>
     <side_mission>1</side_mission>
+    <icon id="HeroIcon_Decim_64" bundle="58" />
     <upgraded_hero_req>5</upgraded_hero_req>
     <pvp_rank_req>10</pvp_rank_req>
     <location_id>0</location_id>
@@ -6135,6 +6139,7 @@
 		 -->
     <name>Yuriel and the Orc</name>
     <side_mission>1</side_mission>
+    <icon id="HeroIcon_Yuriel_64" bundle="58" />
     <upgraded_hero_req>2</upgraded_hero_req>
     <pvp_rank_req>10</pvp_rank_req>
     <location_id>0</location_id>
@@ -6167,6 +6172,7 @@
 		 -->
     <name>Night Watch</name>
     <side_mission>1</side_mission>
+    <icon id="HeroIcon_Ursurio_64" bundle="58" />
     <upgraded_hero_req>8</upgraded_hero_req>
     <pvp_rank_req>10</pvp_rank_req>
     <location_id>0</location_id>
@@ -6264,6 +6270,7 @@
     <id>3011</id>
     <name>Tinman's Change of Heart</name>
     <campaign_req id="1143" level="1" />
+    <icon id="HeroIcon_Mecha_64" bundle="58" />
     <locked_start_time>1509469200</locked_start_time>
     <!--  Tue, 31 Oct 2017 17:00:00 -->
     <location_id>12</location_id>

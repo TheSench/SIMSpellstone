@@ -106,7 +106,7 @@
   <battleground>
     <id>106</id>
     <name>Angelic Legion</name>
-    <desc>Angels have risen to fight, gaining Legion equal to 50% of the their base Attack.</desc>
+    <desc>Angels have risen to fight, gaining Legion equal to 50% of their base Attack.</desc>
     <icon>filter_angel2_64</icon>
     <icon_bundle>87</icon_bundle>
     <effect>
