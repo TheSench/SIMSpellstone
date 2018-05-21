@@ -227,7 +227,9 @@ void Main()
 	}}", skill.id, skill.name, skill.type, skill.icon, skill.desc.Replace("'", "\'"))))) + @"
 for(var skillID in SKILL_DATA) {
 	var skillInfo = SKILL_DATA[skillID];
-	if(['turnStart', 'onAttack', 'onDamaged', 'turnEnd'].indexOf(skillInfo.type) >= 0) {
+	if(skillID === 'flurry') {
+		skillInfo.type = 'flurry';
+	} else if(['turnStart', 'onAttack', 'onDamaged', 'turnEnd'].indexOf(skillInfo.type) >= 0) {
 		skillInfo.type = 'passive';
 	}
 }

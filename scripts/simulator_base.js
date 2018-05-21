@@ -858,7 +858,7 @@ var SIMULATOR = {};
 
 			var heartseeker = skill.x;
 
-			var target = field_o_assaults[src_card.key];
+			var target = field[o].assaults[src_card.key];
 
 			// No Targets
 			if (!target) return 0;
@@ -871,7 +871,8 @@ var SIMULATOR = {};
 				heartseeker += enhanced;
 			}
 
-			target['heartseeker'] += heartseeker;
+			target.heartseeker += heartseeker;
+			target.enfeebled += heartseeker;
 			if (debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
 
 			return 1;
