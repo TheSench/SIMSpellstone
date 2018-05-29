@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 static bool forceSpoilers = false;
 
 static Dictionary<string, string> skillIDChanges = new Dictionary<string, string>()
@@ -605,6 +605,7 @@ public class battleground
 	[XmlArrayItem(Type = typeof(add_skill), ElementName = "add_skill")]
 	[XmlArrayItem(Type = typeof(evolve_skill), ElementName = "evolve_skill")]
 	[XmlArrayItem(Type = typeof(skill), ElementName = "skill")]
+	[XmlArrayItem(Type = typeof(scale_attack), ElementName = "scale_attack")]
 	[XmlArrayItem(Type = typeof(scale_health), ElementName = "scale_health")]
 	[XmlArrayItem(Type = typeof(scale_attributes), ElementName = "scale_attributes")]
 	[XmlArrayItem(Type = typeof(on_play), ElementName = "on_play")]
@@ -705,9 +706,9 @@ public class battleground
 				{
 					AppendAddSkill(sb, (add_skill)effect_i, tabs3);
 				}
-				else if (effect_i is scale_health)
+				else if (effect_i is scale_stat)
 				{
-					AppendScaleHealth(sb, (scale_health)effect_i, tabs3);
+					AppendScaleStat(sb, (scale_stat)effect_i, tabs3);
 				}
 				else if (effect_i is scale_attributes)
 				{
@@ -1282,8 +1283,11 @@ public class scale_attributes : battlegroundEffect
 	}
 }
 
+public class scale_attack : scale_stat { }
+public class scale_health : scale_stat { }
+
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public class scale_health : scale_attributes
+public class scale_stat : scale_attributes
 {
 	private string baseField;
 
@@ -1328,11 +1332,17 @@ public class on_play : battlegroundEffect
 		set { this.first_playField = value; }
 	}
 
-	[XmlElement("add_skill", typeof(add_skill))]
-	[XmlElement("evolve_skill", typeof(evolve_skill))]
-	[XmlElement("scale_health", typeof(scale_health))]
-	[XmlElement("scale_attributes", typeof(scale_attributes))]
-	[XmlElement("skill", typeof(skill))]
+	[XmlElement(Type = typeof(add_skill), ElementName = "add_skill")]
+	[XmlElement(Type = typeof(evolve_skill), ElementName = "evolve_skill")]
+	[XmlElement(Type = typeof(skill), ElementName = "skill")]
+	[XmlElement(Type = typeof(scale_attack), ElementName = "scale_attack")]
+	[XmlElement(Type = typeof(scale_health), ElementName = "scale_health")]
+	[XmlElement(Type = typeof(scale_attributes), ElementName = "scale_attributes")]
+	[XmlElement(Type = typeof(on_play), ElementName = "on_play")]
+	[XmlElement(Type = typeof(starting_card), ElementName = "starting_card")]
+	[XmlElement(Type = typeof(trap_card), ElementName = "trap_card")]
+	[XmlElement(Type = typeof(runeMultiplier), ElementName = "rune_mult")]
+	[XmlElement(Type = typeof(statChange), ElementName = "stat")]
 	public battlegroundEffect effect { get; set; }
 }
 
@@ -1611,7 +1621,7 @@ private static void AppendScaling(StringBuilder sb, scale_attributes skill, stri
 	AppendEntryString(sb, "y", skill.y, tabs);
 }
 
-private static void AppendScaleHealth(StringBuilder sb, scale_health skill, string tabs)
+private static void AppendScaleStat(StringBuilder sb, scale_stat skill, string tabs)
 {
 	AppendEntryString(sb, "id", skill.id, tabs);
 	AppendEntryString(sb, "base", skill.Base, tabs);
@@ -1639,9 +1649,9 @@ private static void AppendOnPlay(StringBuilder sb, on_play skill, string tabs)
 	{
 		AppendAddSkill(sb, (add_skill)effect, tabs2);
 	}
-	else if (effect is scale_health)
+	else if (effect is scale_stat)
 	{
-		AppendScaleHealth(sb, (scale_health)effect, tabs2);
+		AppendScaleStat(sb, (scale_stat)effect, tabs2);
 	}
 	else if (effect is scale_attributes)
 	{

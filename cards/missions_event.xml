@@ -29869,7 +29869,7 @@
     <id>5950</id>
     <name>Goblin Arena Ring</name>
     <energy>9</energy>
-    <desc>Boldur decides to compromise. Rather than take what the goblins want, or what Orgoth has proposed, Boldur has come up with his own decision...</desc>
+    <desc>The goblins cheer at Boldur's decision. They form a tight circle around you, preventing any chance of escape.</desc>
     <commander id="320" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />
@@ -29974,7 +29974,7 @@
     <id>5953</id>
     <name>Coconut Frenzy</name>
     <energy>9</energy>
-    <desc>The beach seems to have mystical properties in the air. The coconuts are imbued with magical properties. Perhaps if you bring them to the Seers, they can grant you greater powers.</desc>
+    <desc>The beach seems to have mystical properties in the air. The coconuts have been imbued with the same aura. Perhaps if you bring them to the seers, they can grant you greater powers.</desc>
     <commander id="344" />
     <deck>
       <card id="7007" name="Water Serpent" />
@@ -29996,9 +29996,9 @@
   </mission>
   <mission>
     <id>5954</id>
-    <name>Title</name>
+    <name>Coconut Elixir</name>
     <energy>9</energy>
-    <desc>xxxx</desc>
+    <desc>Grown on soil entrenched with the island's strange properties, the coconuts have become more than just simple fruit. The seers are able to extract their properties, combine with other island elements, and create a sweet elixir.</desc>
     <commander id="281" />
     <deck>
       <card id="7007" name="Water Serpent" />
@@ -30026,7 +30026,7 @@
     <desc>Malchior has successfully decoded the book he acquired from Skyhaven. In it, it described an ancient civilization, hidden away on a Forgotten Island. With King Proteus's help, you were able to find the island. Ursurio has decided to accompany you.</desc>
     <commander id="328" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30062,7 +30062,7 @@
     <desc>King Proteus sends you off, before diving below the waves. The beach's sand is pleasantly warm, seagulls cawing overhead. A dark jungle grows untamed at the beach's border, deeper into the island.</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30098,7 +30098,7 @@
     <desc>Ursurio teaches you how to most efficiently navigate the terrain. You follow the beach rather than immediately heading off to the jungle, searching for the source of the river that flows into the ocean.</desc>
     <commander id="324" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30122,7 +30122,7 @@
     <desc>You see some Seafolk Raiders grouped at the far end of the beach. They're standing in a circle, seemingly oblivious to your presence. You can hear raucous laughter, and spy movement of something in the circle...</desc>
     <commander id="352" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30153,7 +30153,7 @@
     <desc>You pound across the sand, ready to come to the stranger's aid. The raiders notice your presence, their attention shifting towards you.</desc>
     <commander id="298" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30177,7 +30177,7 @@
     <desc>The Seafolk raiders snarl at your approach. They abandon whatever it was they were doing in their circle, coming towards you with their weapons drawn!</desc>
     <commander id="359" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30208,7 +30208,7 @@
     <desc>You and Ursurio easily defeat the waves of Seafolk raiders. Ursurio takes a closer look at where the raiders had originally formed their circle. A crab scuttles back and forth in the sand. Ursurio grabs it by its pincer, lifting it up.</desc>
     <commander id="344" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30244,7 +30244,7 @@
     <desc>Ursurio drops the crab in surprise. The crab falls upside-down into the sand, struggling to right itself. Gently, you nudge it back on its feet.</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30280,7 +30280,7 @@
     <desc>The Crab Seer shuffles back and forth sideways, unable to sit still. She scratches her head with a pincer claw, trying to remember.... something....</desc>
     <commander id="391" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30316,7 +30316,7 @@
     <desc>The Crab Seer seems to know who you are without any introductions. However, she seems less sure about her own story...</desc>
     <commander id="298" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30357,7 +30357,7 @@
     <desc>The Crab Seer desperately wants to remember the message. She scuttles around in a circle, waving her claws. Ursurio follows behind her, hoping to help.</desc>
     <commander id="298" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30398,7 +30398,7 @@
     <desc>Finally, the crab remembers part of the message she wants to tell you. However, it seems like you have only found one piece of a much larger puzzle...</desc>
     <commander id="344" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="1011" name="Archive Keeper" />
@@ -30434,7 +30434,7 @@
     <desc>Following the waterway that leads deeper into the island, you heed the crab seer's words and search for one of her companions. The tropical air becomes oppressively humid in the jungle...</desc>
     <commander id="298" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="6004" name="Branding Construct" />
@@ -30465,7 +30465,7 @@
     <desc>There is no path for you to follow. The wilderness is violent and untamed, the foliage scraping against your legs. Even this far into the island, you sometimes encounter Seafolk raider patrols...</desc>
     <commander id="286" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="2002" name="Lantern Guardian" />
@@ -30501,7 +30501,7 @@
     <desc>Ursurio politely asks one of the Seafolk raiders if they're searching for pirate treasure. The raider attempts to stab him with a trident in response.</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="2128" name="Stilt-walker Sentinel" />
@@ -30525,7 +30525,7 @@
     <desc>You give up attempting to reason with Scylla's followers, and instead focus on finding the crab seer's friend. Peculiar ruined structures, remnants of a civilization, can be found half-buried in the earth...</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="5161" name="Bolster Bot" />
@@ -30561,7 +30561,7 @@
     <desc>Eventually Ursurio tires and requests that the two of you take a break. He leans heavily against a tree... only for it to move back suddenly, causing Ursurio to fall on the ground.</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="2109" name="Scorchfist Avenger" />
@@ -30597,7 +30597,7 @@
     <desc>The spriggan poses elegantly, bowing and shaking his fronds in your direction. His  speech is very formal, the opposite of what you've come to expect on this wilderness island. </desc>
     <commander id="303" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="7164" name="Pinegrove Primate" />
@@ -30635,10 +30635,10 @@
     <id>5973</id>
     <name>Raider Interruption</name>
     <energy>9</energy>
-    <desc>Interrupting your chance to continue further, the seafolk raiders have gathered again. They seem intent on getting to the Spriggan Seer, but you block their path and protect your new friend.</desc>
+    <desc>Interrupting your chance to continue further, the Seafolk raiders have gathered again. They seem intent on getting to the Spriggan Seer, but you block their path and protect your new friend.</desc>
     <commander id="359" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="6004" name="Branding Construct" />
@@ -30658,7 +30658,7 @@
       <line>
         <commander>templeguardian</commander>
         <enemy>0</enemy>
-        <text>I don't remember WHY, but I must be. Otherwise, those silly seafolk would leave me alone!</text>
+        <text>I don't remember WHY, but I must be. Otherwise, those silly Seafolk would leave me alone!</text>
       </line>
       <line>
         <commander>bearcommander</commander>
@@ -30671,10 +30671,10 @@
     <id>5974</id>
     <name>In Search of Treasure</name>
     <energy>9</energy>
-    <desc>You continue to fend off the seafolk. Relentlessly they attack, undaunted by the amount that fall beneath your might.</desc>
+    <desc>You continue to fend off the Seafolk. Relentlessly they attack, undaunted by the amount that fall beneath your might.</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="7161" name="Alphamecha" />
@@ -30710,7 +30710,7 @@
     <desc>The Spriggan hands you a small flask, filled with a golden liquid. You carefully stow it away in a safe place.</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="6159" name="Solder Charger" />
@@ -30743,10 +30743,10 @@
     <id>5976</id>
     <name>The Final Search</name>
     <energy>9</energy>
-    <desc>The Spriggan gives you some more advice before you depart. He points you in a different direction, where you can see the remnants of some ruins rising from the jungle's trees.</desc>
+    <desc>The Spriggan gives you some more advice before you depart. He points you in a different direction, where you can see tall remnants of ruins rising from the jungle's trees.</desc>
     <commander id="359" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="2002" name="Lantern Guardian" />
@@ -30782,7 +30782,7 @@
     <desc>Ursurio offers to hold on to the nectar for you. After considering it briefly, you decide to keep it for now, to fulfill the seer's request.</desc>
     <commander id="328" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="5163" name="Bark Hound" />
@@ -30818,7 +30818,7 @@
     <desc>You and Ursurio continue your journey through the jungle. More moss-covered bricks frequent the ground, as you begin to traverse towards the ruin structure.</desc>
     <commander id="397" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8120" name="Carnivorous Gorillaroar" />
       <card id="7007" name="Water Serpent" />
       <card id="1011" name="Archive Keeper" />
       <card id="2110" name="Weathered Widgit" />

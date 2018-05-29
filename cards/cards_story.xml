@@ -7318,4 +7318,55 @@
       <skill id="enrage" x="5" all="1" />
     </upgrade>
   </unit>
+  <!-- Campaign Event 10 -->
+  <unit>
+    <id>8120</id>
+    <card_type>2</card_type>
+    <name>Carnivorous Gorillaroar</name>
+    <picture>Chalicotherium_B</picture>
+    <asset_bundle>40</asset_bundle>
+    <attack>3</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="protect" x="5" all="1" />
+    <skill id="pierce" x="10" />
+    <skill id="flurry" c="4" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="protect" x="5" all="1" />
+      <skill id="pierce" x="12" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <skill id="protect" x="6" all="1" />
+      <skill id="pierce" x="14" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>2</health>
+      <skill id="protect" x="6" all="1" />
+      <skill id="pierce" x="16" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <skill id="protect" x="7" all="1" />
+      <skill id="pierce" x="18" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>3</health>
+      <skill id="protect" x="8" all="1" />
+      <skill id="pierce" x="20" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
 </root>

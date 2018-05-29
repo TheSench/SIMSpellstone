@@ -426,6 +426,19 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "126": {
+    "name": "Brine Edge",
+    "id": "126",
+    "desc": "Seafolk harness the power of the ocean, increasing their Attack by 15% of their base Health!",
+    "effect": [
+      {
+        "effect_type": "scale_attack",
+        "base": "health",
+        "mult": 0.15,
+        "y": "12",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -2068,6 +2081,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .2,
         "mult": .01,
+      },
+    ]
+  },
+  "2040": {
+    "name": "Streaming Amnesic Hula",
+    "id": "2040",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
       },
     ]
   },

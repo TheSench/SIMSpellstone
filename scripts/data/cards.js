@@ -110910,6 +110910,219 @@ var CARDS = {
       },
     }
   },
+  "6194": {
+    "id": "6194",
+    "name": "Caldera Explorer",
+    "picture": "Lava_Skating_Mecha_A",
+    "hidden_until": "1527526800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["16"],
+    "health": 19,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "counterburn",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "counterburn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "counterburn",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "16194": {
+    "id": "16194",
+    "name": "Caldera Pioneer",
+    "picture": "Lava_Skating_Mecha_A",
+    "hidden_until": "1527526800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["16"],
+    "health": 22,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "counterburn",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "counterburn",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "counterburn",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 24,
+        "skill": [],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [],
+      },
+    }
+  },
+  "26194": {
+    "id": "26194",
+    "name": "Caldera Pathfinder",
+    "picture": "Lava_Skating_Mecha_B",
+    "hidden_until": "1527526800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["16"],
+    "health": 24,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "counterburn",
+        "x": 4,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "attack": 9,
+        "skill": [],
+      },
+      "5": {
+        "health": 27,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "counterburn",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -217744,6 +217957,126 @@ var CARDS = {
       },
     }
   },
+  "8120": {
+    "id": "8120",
+    "name": "Carnivorous Gorillaroar",
+    "picture": "Chalicotherium_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": [],
+    "health": 1,
+    "attack": 3,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 5,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 10,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 12,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 6,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 14,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 2,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 6,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 16,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 7,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 18,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 3,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 8,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 20,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
   "9999": {
     "id": "9999",
     "name": "Unused Art - 'Angel_Seafolk_Dolphin'",
@@ -218615,4 +218948,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1526648085611.93;
+var CardsUpdated = 1527616839139.95;

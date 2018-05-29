@@ -5916,6 +5916,104 @@
     </rewards>
     <find_item id="3071" drop_per_energy=".8" />
   </campaign>
+  <!-- Campaign Event 10 -->
+  <!-- Extra Node -->
+  <campaign>
+    <id>1171</id>
+    <name>Castaway Cove</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <location_id>16</location_id>
+    <x>85</x>
+    <y>234</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5953</mission_id>
+      <mission_id>5954</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2125" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3074" drop_per_energy=".1" />
+  </campaign>
+  <campaign>
+    <id>1172</id>
+    <name>Island of Secrets</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1527786000</locked_start_time>
+    <!-- Thu, May 31 2018 17:00:00 -->
+    <location_id>16</location_id>
+    <x>234</x>
+    <y>404</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5955</mission_id>
+      <mission_id>5956</mission_id>
+      <mission_id>5957</mission_id>
+      <mission_id>5958</mission_id>
+      <mission_id>5959</mission_id>
+      <mission_id>5960</mission_id>
+      <mission_id>5961</mission_id>
+      <mission_id>5962</mission_id>
+      <mission_id>5963</mission_id>
+      <mission_id>5964</mission_id>
+      <mission_id>5965</mission_id>
+      <mission_id>5966</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2101" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="3075" />
+    </rewards>
+    <find_item id="3074" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1173</id>
+    <name>Lost History</name>
+    <campaign_req id="1172" level="1" />
+    <locked_start_time>1528995600</locked_start_time>
+    <!-- Thu, June 14 2018 17:00:00 -->
+    <battleground_id>2040</battleground_id>
+    <location_id>16</location_id>
+    <x>390</x>
+    <y>510</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5967</mission_id>
+      <mission_id>5968</mission_id>
+      <mission_id>5969</mission_id>
+      <mission_id>5970</mission_id>
+      <mission_id>5971</mission_id>
+      <mission_id>5972</mission_id>
+      <mission_id>5973</mission_id>
+      <mission_id>5974</mission_id>
+      <mission_id>5975</mission_id>
+      <mission_id>5976</mission_id>
+      <mission_id>5977</mission_id>
+      <mission_id>5978</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2126" />
+      <card level="5" id="512" />
+      <card level="6" id="2053" />
+      <item level="7" id="3075" />
+    </rewards>
+    <find_item id="3074" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

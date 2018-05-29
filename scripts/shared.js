@@ -361,12 +361,12 @@ var makeUnit = (function () {
             			new_card.health += plusHealth;
             			scaleSkills(new_card, original_skills, mult);
             		}
-                }
-            } else if (skillModifier.modifierType == "scale_health" && !isToken) {
+              }
+            } else if (skillModifier.modifierType == "scale_stat" && !isToken) {
             	for (var j = 0; j < skillModifier.effects.length; j++) {
             		var scaling = skillModifier.effects[j];
             		if (new_card.isInFaction(scaling.y)) {
-            			new_card.health += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
+            			new_card[skillModifier.scaledStat] += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
             		}
             	}
             }
@@ -920,17 +920,22 @@ var canUseRune = function (card, runeID) {
     return true;
 }
 
-var MakeSkillModifier = (function () {
-    var Modifier = function (name, effect) {
-        this.name = name;
-        this.modifierType = effect.effect_type;
-        this.effects = [effect];
-    }
+function MakeSkillModifier(name, effect) {
+  return {
+    name: name,
+    modifierType: effect.effect_type,
+    effects: [effect]
+  };
+}
 
-    return (function (name, effects) {
-        return new Modifier(name, effects);
-    })
-}());
+function MakeStatScaler(name, effect) {
+  return {
+    name: name,
+    modifierType: "scale_stat",
+    scaledStat: effect.effect_type.replace("scale_", ""),
+    effects: [effect]
+  };
+}
 
 var MakeOnPlayBGE = (function () {
     var OnPlayBGE = function (name, effect) {
@@ -1083,10 +1088,14 @@ function addRaidBGE(battlegrounds, raidID, raidLevel) {
                     var bge = MakeBattleground(battleground.name, effect, mult);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onTurn.push(bge);
-                } else if (["evolve_skill", "add_skill", "scale_attributes", "scale_health", "statChange", "runeMultiplier"].indexOf(effect_Type) >= 0) {
+                } else if (["evolve_skill", "add_skill", "scale_attributes", "statChange", "runeMultiplier"].indexOf(effect_Type) >= 0) {
                     var bge = MakeSkillModifier(battleground.name, effect);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
+                } else if (["scale_attack", "scale_health"].indexOf(effect_Type) >= 0) {
+                  var bge = MakeStatScaler(battleground.name, effect);
+                  bge.enemy_only = enemy_only;
+                  battlegrounds.onCreate.push(bge);
                 } else if (effect_type === "trap_card") {
                     var bge = MakeTrap(battleground.name, effect);
                     bge.enemy_only = enemy_only;
@@ -1123,12 +1132,17 @@ function addBgeFromList(battlegrounds, battleground, player) {
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onTurn.push(bge);
-        } else if (["evolve_skill", "add_skill", "scale_attributes", "scale_health", "statChange", "runeMultiplier"].indexOf(effect_type) >= 0) {
+        } else if (["evolve_skill", "add_skill", "scale_attributes", "statChange", "runeMultiplier"].indexOf(effect_type) >= 0) {
             var bge = MakeSkillModifier(battleground.name, effect);
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onCreate.push(bge);
-        } else if (effect_type === "trap_card") {
+        } else if (["scale_attack", "scale_health"].indexOf(effect_type) >= 0) {
+          var bge = MakeStatScaler(battleground.name, effect);
+          if (player === 'player') bge.ally_only = true
+          if (player === 'cpu') bge.enemy_only = true
+          battlegrounds.onCreate.push(bge);
+      } else if (effect_type === "trap_card") {
             var bge = MakeTrap(battleground.name, effect);
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true

@@ -8798,7 +8798,7 @@
     <mission_req>244</mission_req>
     <locked_start_time>1527786000</locked_start_time>
     <!-- Thu, May 31 2018 17:00:00 -->
-    <achievement_req>3364</achievement_req>
+    <achievement_req>3363</achievement_req>
     <req>
       <campaign>1171</campaign>
       <level>7</level>
@@ -8811,8 +8811,8 @@
     <id>3365</id>
     <type>2</type>
     <order>101</order>
-    <name>The Island of Secrets</name>
-    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 2.</desc>
+    <name>Island of Secrets</name>
+    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 2.</desc>
     <mission_req>244</mission_req>
     <locked_start_time>1527786000</locked_start_time>
     <!-- Thu, May 31 2018 17:00:00 -->
@@ -8828,11 +8828,12 @@
     <id>3366</id>
     <type>2</type>
     <order>101</order>
-    <name>The Island of Secrets</name>
-    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 4.</desc>
+    <name>Island of Secrets</name>
+    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 4.</desc>
     <mission_req>244</mission_req>
     <locked_start_time>1527786000</locked_start_time>
     <!-- Thu, May 31 2018 17:00:00 -->
+    <achievement_req>3365</achievement_req>
     <req>
       <campaign>1172</campaign>
       <level>4</level>
@@ -8845,8 +8846,8 @@
     <id>3367</id>
     <type>2</type>
     <order>101</order>
-    <name>The Island of Secrets</name>
-    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 6.</desc>
+    <name>Island of Secrets</name>
+    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 6.</desc>
     <mission_req>244</mission_req>
     <locked_start_time>1527786000</locked_start_time>
     <!-- Thu, May 31 2018 17:00:00 -->
@@ -8863,8 +8864,8 @@
     <id>3368</id>
     <type>2</type>
     <order>101</order>
-    <name>The Island of Secrets</name>
-    <desc>Complete the 'The Island of Secrets' campaign on Mastery Level 7.</desc>
+    <name>Island of Secrets</name>
+    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 7.</desc>
     <mission_req>244</mission_req>
     <locked_start_time>1527786000</locked_start_time>
     <!-- Thu, May 31 2018 17:00:00 -->
