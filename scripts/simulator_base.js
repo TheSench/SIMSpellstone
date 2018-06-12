@@ -1452,6 +1452,7 @@ var SIMULATOR = {};
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = field_p_assaults[targets[key]];
+				var amount = enrage;
 
 				// Check Nullify
 				if (target.nullified) {
@@ -1462,10 +1463,14 @@ var SIMULATOR = {};
 
 				affected++;
 
-				target['enraged'] += enrage;
+				if (skill.mult) {
+					amount = Math.ceil(skill.mult * target.health);
+				}
+
+				target['enraged'] += amount;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + enrage + '<br>';
+					echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + amount + '<br>';
 				}
 			}
 
