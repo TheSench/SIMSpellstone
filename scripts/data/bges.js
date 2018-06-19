@@ -2100,6 +2100,22 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2041": {
+    "name": "Tumultuous Rain Dance",
+    "id": "2041",
+    "desc": "Typheous, Ship Devourer fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .25,
+        "mult": .01,
+      },
+    ]
+  },
   "5001": {
     "name": "The Arena",
     "id": "5001",

@@ -529,9 +529,9 @@
       <scale_attack base="health" mult="0.15" yy="12" />
       <skill id="displayEffect" trigger="onPlay" yy="12">
         <actor_effect>
-          <prefab>elemental_BGE_wyld</prefab>
+          <prefab>WaterEmpower</prefab>
           <bundle_id>96</bundle_id>
-          <duration>1</duration>
+          <duration>2</duration>
           <delay>0</delay>
         </actor_effect>
       </skill>
@@ -626,7 +626,7 @@
     <id>504</id>
     <name>Nethergore's Reckoning</name>
     <desc>Nethergore Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <web_picture>undead_raid_badge_64.png</web_picture>
+    <icon>undead_raid_badge_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -1856,7 +1856,6 @@
     <name>Streaming Amnesic Hula</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_seafolk_64</icon>
-    <icon_bundle>87</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -1866,6 +1865,21 @@
     <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult=".008" mult=".0025" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 10 Boss Storm Lord Father -->
+  <battleground>
+    <id>2041</id>
+    <name>Tumultuous Rain Dance</name>
+    <desc>Typheous, Ship Devourer fights harder with each passing Mastery level, increasing cards' stats!</desc>
+    <icon>filter_seafolk_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".25" mult=".01" />
     </effect>
   </battleground>
   <!-- ==================== -->

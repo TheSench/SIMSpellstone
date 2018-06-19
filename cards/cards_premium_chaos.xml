@@ -13282,15 +13282,18 @@
     <upgrade>
       <level>4</level>
       <health>35</health>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>36</health>
       <skill id="evade" x="3" />
       <skill id="burn" x="4" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>37</health>
       <skill id="evade" x="3" />
       <skill id="burn" x="5" />
       <skill id="berserk" x="5" />
@@ -13395,7 +13398,7 @@
     <rarity>4</rarity>
     <skill id="counter" x="5" />
     <skill id="enfeeble" x="1" all="1" />
-    <skill id="burn" x="2" />
+    <skill id="burn" x="3" />
     <type>2</type>
     <sub_type>12</sub_type>
     <set>3000</set>
@@ -13417,13 +13420,14 @@
       <health>25</health>
       <skill id="counter" x="6" />
       <skill id="enfeeble" x="1" all="1" />
-      <skill id="burn" x="2" />
+      <skill id="burn" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>26</health>
       <skill id="counter" x="7" />
       <skill id="enfeeble" x="2" all="1" />
-      <skill id="burn" x="3" />
+      <skill id="burn" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -13526,15 +13530,17 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>22</health>
       <skill id="evade" x="2" />
-      <skill id="enfeeble" x="4" />
-      <skill id="pierce" x="4" />
+      <skill id="enfeeble" x="6" />
+      <skill id="pierce" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="2" />
-      <skill id="enfeeble" x="5" />
-      <skill id="pierce" x="5" />
+      <health>23</health>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="7" />
+      <skill id="pierce" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -13781,18 +13787,20 @@
     <upgrade>
       <level>3</level>
       <health>18</health>
+      <attack>5</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="evade" x="2" />
-      <skill id="enfeeble" x="4" />
-      <skill id="nullify" x="1" />
+      <skill id="enfeeble" x="5" />
+      <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>6</attack>
       <skill id="evade" x="2" />
-      <skill id="enfeeble" x="5" />
-      <skill id="nullify" x="2" />
+      <skill id="enfeeble" x="6" />
+      <skill id="nullify" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -24161,6 +24169,277 @@
       <skill id="evade" x="3" />
       <skill id="counterburn" x="5" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6195</id>
+    <card_type>2</card_type>
+    <name>Magmurchin</name>
+    <picture>Seafolk_Sea_Urchin_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>8</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="counterburn" x="3" />
+    <skill id="enrage" x="1" all="1" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="4" />
+      <skill id="counterburn" x="3" />
+      <skill id="enrage" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="absorb" x="4" />
+      <skill id="counterburn" x="4" />
+      <skill id="enrage" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="4" />
+      <skill id="counterburn" x="4" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16195</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Steaming Magmurchin</name>
+    <picture>Seafolk_Sea_Urchin_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="counterburn" x="4" />
+    <skill id="enrage" x="2" all="1" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="absorb" x="5" />
+      <skill id="counterburn" x="4" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="6" />
+      <skill id="counterburn" x="4" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="6" />
+      <skill id="counterburn" x="5" />
+      <skill id="enrage" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26195</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Boiling Magmurchin</name>
+    <picture>Seafolk_Sea_Urchin_B</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>10</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="counterburn" x="5" />
+    <skill id="enrage" x="3" all="1" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="7" />
+      <skill id="counterburn" x="5" />
+      <skill id="enrage" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="8" />
+      <skill id="counterburn" x="5" />
+      <skill id="enrage" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="8" />
+      <skill id="counterburn" x="6" />
+      <skill id="enrage" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6198</id>
+    <card_type>2</card_type>
+    <name>Rattleclank Courtesan</name>
+    <picture>Seafolk_Mecha_Mermaid_Mistress_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1528131600</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="2" />
+    <skill id="nullify" x="2" />
+    <skill id="poison" x="3" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="2" />
+      <skill id="nullify" x="2" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="2" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16198</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Rattleclank Lady</name>
+    <picture>Seafolk_Mecha_Mermaid_Mistress_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1528131600</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="3" />
+    <skill id="nullify" x="2" />
+    <skill id="poison" x="4" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="2" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="3" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="4" />
+      <skill id="nullify" x="3" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26198</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Rattleclank Empress</name>
+    <picture>Seafolk_Mecha_Mermaid_Mistress_B</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1528131600</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="4" />
+    <skill id="nullify" x="3" />
+    <skill id="poison" x="6" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="5" />
+      <skill id="nullify" x="3" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="burn" x="5" />
+      <skill id="nullify" x="4" />
+      <skill id="poison" x="7" />
     </upgrade>
   </unit>
 </root>

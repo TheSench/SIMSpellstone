@@ -1691,6 +1691,22 @@
     <card_id>22128</card_id>
     <resource card_id="12128" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12129</card_id>
+    <resource card_id="2129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22129</card_id>
+    <resource card_id="12129" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12130</card_id>
+    <resource card_id="2130" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22130</card_id>
+    <resource card_id="12130" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->
@@ -3238,6 +3254,22 @@
     <card_id>25195</card_id>
     <resource card_id="15195" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15197</card_id>
+    <resource card_id="5197" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25197</card_id>
+    <resource card_id="15197" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15198</card_id>
+    <resource card_id="5198" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25198</card_id>
+    <resource card_id="15198" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -4758,6 +4790,22 @@
   <fusion_recipe>
     <card_id>26194</card_id>
     <resource card_id="16194" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16195</card_id>
+    <resource card_id="6195" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26195</card_id>
+    <resource card_id="16195" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16198</card_id>
+    <resource card_id="6198" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26198</card_id>
+    <resource card_id="16198" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -6296,48 +6344,32 @@
     <card_id>27193</card_id>
     <resource card_id="17193" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17194</card_id>
+    <resource card_id="7194" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27194</card_id>
+    <resource card_id="17194" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17196</card_id>
+    <resource card_id="7196" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27196</card_id>
+    <resource card_id="17196" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17197</card_id>
+    <resource card_id="7197" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27197</card_id>
+    <resource card_id="17197" number="2" />
+  </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
-  <fusion_recipe>
-    <card_id>18011</card_id>
-    <resource card_id="8011" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28011</card_id>
-    <resource card_id="18011" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18012</card_id>
-    <resource card_id="8012" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28012</card_id>
-    <resource card_id="18012" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18013</card_id>
-    <resource card_id="8013" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28013</card_id>
-    <resource card_id="18013" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18014</card_id>
-    <resource card_id="8014" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28014</card_id>
-    <resource card_id="18014" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>18015</card_id>
-    <resource card_id="8015" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>28015</card_id>
-    <resource card_id="18015" number="2" />
-  </fusion_recipe>
   <fusion_recipe>
     <card_id>18016</card_id>
     <resource card_id="8016" number="2" />

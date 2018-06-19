@@ -5925,8 +5925,8 @@
     <locked_start_time>1527786000</locked_start_time>
     <!-- Thu, May 31 2018 17:00:00 -->
     <location_id>16</location_id>
-    <x>85</x>
-    <y>234</y>
+    <x>290</x>
+    <y>236</y>
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>5953</mission_id>
@@ -5936,7 +5936,7 @@
       <card level="1" id="510" />
       <card level="2" id="510" />
       <card level="3" id="510" />
-      <card level="4" id="2125" />
+      <card level="4" id="2129" />
       <card level="5" id="510" />
       <card level="6" id="510" />
       <card level="7" id="510" />
@@ -5950,7 +5950,7 @@
     <locked_start_time>1527786000</locked_start_time>
     <!-- Thu, May 31 2018 17:00:00 -->
     <location_id>16</location_id>
-    <x>234</x>
+    <x>284</x>
     <y>404</y>
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
@@ -5971,7 +5971,7 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2101" />
+      <card level="4" id="2078" />
       <card level="5" id="512" />
       <card level="6" id="512" />
       <item level="7" id="3075" />
@@ -5986,9 +5986,9 @@
     <!-- Thu, June 14 2018 17:00:00 -->
     <battleground_id>2040</battleground_id>
     <location_id>16</location_id>
-    <x>390</x>
-    <y>510</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <x>330</x>
+    <y>610</y>
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>5967</mission_id>
       <mission_id>5968</mission_id>
@@ -6007,10 +6007,42 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2126" />
+      <card level="4" id="2130" />
       <card level="5" id="512" />
-      <card level="6" id="2053" />
+      <card level="6" id="2070" />
       <item level="7" id="3075" />
+    </rewards>
+    <find_item id="3074" drop_per_energy=".4" />
+  </campaign>
+  <campaign>
+    <id>1174</id>
+    <name>Storm Lord Father</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1172" level="1" />
+    <locked_start_time>1528995600</locked_start_time>
+    <!--  Thu, June 14 2018 17:00:00 -->
+    <battleground_id>2041</battleground_id>
+    <location_id>16</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>760</x>
+    <y>220</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5979</mission_id>
+      <mission_id>5980</mission_id>
+      <mission_id>5981</mission_id>
+      <mission_id>5982</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3076" />
+      <item level="5" id="3076" />
+      <item level="6" id="3076" />
+      <item level="7" id="3076" />
     </rewards>
     <find_item id="3074" drop_per_energy=".4" />
   </campaign>

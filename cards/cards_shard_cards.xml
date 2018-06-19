@@ -611,6 +611,97 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4007</id>
+    <card_type>2</card_type>
+    <name>Typhoeus, Storm Father</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Sky_Sea_Monster_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <item_name>Typhoeus Stone</item_name>
+    <item_desc>Collect Typhoeus Stones to upgrade the Legendary Typhoeus, Storm Father card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <attack>6</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="strike" all="1" x="2" />
+    <skill id="frost" x="2" />
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+      <skill id="absorb" x="5" />
+      <skill id="strike" all="1" x="2" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <skill id="absorb" x="5" />
+      <skill id="strike" all="1" x="2" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="absorb" x="6" />
+      <skill id="strike" all="1" x="3" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+      <skill id="absorb" x="7" />
+      <skill id="strike" all="1" x="3" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>27</health>
+      <skill id="absorb" x="7" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>8</attack>
+      <health>28</health>
+      <skill id="absorb" x="7" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="frost" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>9</attack>
+      <health>29</health>
+      <skill id="absorb" x="8" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="frost" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>10</attack>
+      <health>30</health>
+      <skill id="absorb" x="9" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="frost" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>11</attack>
+      <health>31</health>
+      <skill id="absorb" x="10" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="frost" x="4" />
+    </upgrade>
+  </unit>
   <!-- ============================== -->
   <!-- === CHAOS PREMIUM CHAMPION === -->
   <!-- ============================== -->
@@ -788,6 +879,80 @@
       <skill id="berserk" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6602</id>
+    <card_type>2</card_type>
+    <name>Apex Land Shark</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk_Land_Shark_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <item_name>Land Shark Stone</item_name>
+    <item_desc>Collect Land Shark Stones to upgrade the Legendary Apex Land Shark card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="leech" x="4" />
+    <skill id="berserk" x="2" />
+    <skill id="flurry" c="3" />
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>6</attack>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- ============================= -->
   <!-- === WYLD PREMIUM CHAMPION === -->
   <!-- ============================= -->
@@ -880,5 +1045,95 @@
       <skill id="heal" all="1" x="6" />
       <skill id="leech" x="10" />
     </upgrade>
+  </unit>
+  <unit>
+    <id>7601</id>
+    <card_type>2</card_type>
+    <name>Nemea, the Lost Regent</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk_Sea_Lion_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1529082000</hidden_until_time>
+    <item_name>Nemea Stone</item_name>
+    <item_desc>Collect Nemea Stones to upgrade the Legendary Nemea, the Lost Regent card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <attack>8</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="fervor" y="3" x="3" />
+    <skill id="daze" x="7" />
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="regenerate" x="6" />
+      <skill id="fervor" y="3" x="3" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="regenerate" x="7" />
+      <skill id="fervor" y="3" x="3" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>27</health>
+      <skill id="regenerate" x="7" />
+      <skill id="fervor" y="3" x="4" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+      <skill id="regenerate" x="8" />
+      <skill id="fervor" y="3" x="4" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>28</health>
+      <skill id="regenerate" x="8" />
+      <skill id="fervor" y="3" x="5" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>29</health>
+      <skill id="regenerate" x="8" />
+      <skill id="fervor" y="3" x="5" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>11</attack>
+      <skill id="regenerate" x="9" />
+      <skill id="fervor" y="3" x="5" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>30</health>
+      <skill id="regenerate" x="10" />
+      <skill id="fervor" y="3" x="5" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>12</attack>
+      <skill id="regenerate" x="10" />
+      <skill id="fervor" y="3" x="6" />
+      <skill id="daze" x="11" />
+    </upgrade>
+    <desc>Lost but Sea King.</desc>
   </unit>
 </root>

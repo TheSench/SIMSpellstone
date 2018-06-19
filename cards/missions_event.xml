@@ -30231,7 +30231,7 @@
         <text>Huh, there's no one else here. Just this tasty-looking crab.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>What- Unhand me, you fiend! I am not for eating!</text>
       </line>
@@ -30262,12 +30262,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>Thank you, my friend. Without you, I would have ended up as crab meat!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>Mm, but yes. I see you have come to this island for a purpose. To discover the truth...</text>
       </line>
@@ -30303,7 +30303,7 @@
         <text>Wow, how can you tell? That's exactly why we're here!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>I can tell because, I... well... This is embarrassing. I don't remember why.</text>
       </line>
@@ -30334,17 +30334,17 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>But you are the Champion of The Void, and I know I have been waiting for you. I must deliver a message!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>...</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>...Now what was the message...</text>
       </line>
@@ -30380,12 +30380,12 @@
         <text>I don't know whether to be impressed or disappointed!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>Quiet, loud one! I cannot think! I cannot remember to tell you to find the other seers!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>Oh...</text>
       </line>
@@ -30421,7 +30421,7 @@
         <text>It looks like you remembered after all.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Crab_Sage</commander>
         <enemy>0</enemy>
         <text>I wish I recalled more details. But yes... one in the jungle, and one in the ruins. You must find them.</text>
       </line>
@@ -30579,7 +30579,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>Excuse me! Please do not touch!</text>
       </line>
@@ -30615,7 +30615,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>I am a very important person. </text>
       </line>
@@ -30625,7 +30625,7 @@
         <text>Oh?</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>Yes, very important. You should feel very proud to meet me.</text>
       </line>
@@ -30656,7 +30656,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>I don't remember WHY, but I must be. Otherwise, those silly Seafolk would leave me alone!</text>
       </line>
@@ -30692,7 +30692,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>Ah! I know now! They want my treasure.</text>
       </line>
@@ -30728,7 +30728,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>Take this Residual Nectar. I created it to restore memories, but I forgot how I made it.</text>
       </line>
@@ -30764,12 +30764,12 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>No... if you're after the island's secrets, there is one who can help better than I.</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>There is still one more seer, from the Insect tribe. You will find her in the ruins, and give her this.</text>
       </line>
@@ -30800,7 +30800,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
         <text>Don't eat it! You must give it to the right seer.</text>
       </line>
@@ -30841,5 +30841,101 @@
         <text>I hope amnesia isn't contagious. I don't want to forget all my stashed snacks.</text>
       </line>
     </speech>
+  </mission>
+  <mission>
+    <id>5979</id>
+    <name>Monsoon Summoner</name>
+    <energy>9</energy>
+    <desc>The ship's deck is slick with rainwater, the storm drenching you in a matter of seconds. A monster's roar cracks like thunder, lightning dancing at the creature's call.</desc>
+    <commander id="415" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="6151" name="Cetus" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7054" name="The Thing Below" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7025" name="Webclaw Dragon" />
+      <card id="6185" name="Heilong" />
+      <card id="6185" name="Heilong" />
+      <card id="7003" name="Kraken" />
+      <card id="5151" mastery_level="2" name="Brinebelly" />
+      <card id="5106" mastery_level="3" name="Acuro, Sea Captain" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="7194" mastery_level="5" name="Coralscape Grappler" />
+      <card id="6106" mastery_level="6" name="Bailong" />
+      <card id="7025" mastery_level="7" name="Webclaw Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5980</id>
+    <name>Father of Storms</name>
+    <energy>9</energy>
+    <desc>Typhoeus snakes in the sky towards your ship, its monstrous form coiling lazily the deck. Ursurio bellows fiercely, stabbing the nearest coil with his spear. The creature hisses and the monster's grip loosens.</desc>
+    <commander id="415" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="6151" name="Cetus" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7054" name="The Thing Below" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7025" name="Webclaw Dragon" />
+      <card id="6185" name="Heilong" />
+      <card id="6185" name="Heilong" />
+      <card id="7003" name="Kraken" />
+      <card id="5151" mastery_level="2" name="Brinebelly" />
+      <card id="5106" mastery_level="3" name="Acuro, Sea Captain" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="7194" mastery_level="5" name="Coralscape Grappler" />
+      <card id="6106" mastery_level="6" name="Bailong" />
+      <card id="7025" mastery_level="7" name="Webclaw Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5981</id>
+    <name>Monster Spawn</name>
+    <energy>9</energy>
+    <desc>The airship creaks uncertainly beneath the weight of the creature. Typhoeus opens its maw, saliva thick like a pool around its teeth. Monsters swim inside, falling to your bridge as Typhoeus drools.</desc>
+    <commander id="415" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="6151" name="Cetus" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7054" name="The Thing Below" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7025" name="Webclaw Dragon" />
+      <card id="6185" name="Heilong" />
+      <card id="6185" name="Heilong" />
+      <card id="7003" name="Kraken" />
+      <card id="5151" mastery_level="2" name="Brinebelly" />
+      <card id="5106" mastery_level="3" name="Acuro, Sea Captain" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="7194" mastery_level="5" name="Coralscape Grappler" />
+      <card id="6106" mastery_level="6" name="Bailong" />
+      <card id="7025" mastery_level="7" name="Webclaw Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5982</id>
+    <name>Barely Holding On</name>
+    <energy>9</energy>
+    <desc>You and Ursurio fight the creatures that have spawned from Typhoeus. The sky sea monster shrieks, lightning descending from the heavens and striking the ship. It rocks uncertainly, a black plume of smoke emitting from the impact...</desc>
+    <commander id="415" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="6151" name="Cetus" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7054" name="The Thing Below" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7025" name="Webclaw Dragon" />
+      <card id="6185" name="Heilong" />
+      <card id="6185" name="Heilong" />
+      <card id="7003" name="Kraken" />
+      <card id="5151" mastery_level="2" name="Brinebelly" />
+      <card id="5106" mastery_level="3" name="Acuro, Sea Captain" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="7194" mastery_level="5" name="Coralscape Grappler" />
+      <card id="6106" mastery_level="6" name="Bailong" />
+      <card id="7025" mastery_level="7" name="Webclaw Dragon" />
+    </deck>
   </mission>
 </root>

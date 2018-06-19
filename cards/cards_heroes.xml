@@ -3402,7 +3402,7 @@
     <upgrade>
       <level>6</level>
       <health>70</health>
-      <skill id="enhance" s="berserk" all="1" x="1" />
+      <skill id="enhance" s="berserk" all="1" x="2" />
       <skill id="heal" all="1" x="2" />
     </upgrade>
   </unit>
@@ -4635,8 +4635,7 @@
     <upgrade>
       <level>5</level>
       <health>57</health>
-      <skill id="rally" x="1" />
-      <skill id="rally" x="3" />
+      <skill id="rally" x="4" />
       <skill id="heal" x="4" />
     </upgrade>
   </unit>
@@ -4777,7 +4776,7 @@
   <unit>
     <id>304</id>
     <card_type>1</card_type>
-    <name>Skyward Beast</name>
+    <name>Skyward Bird</name>
     <portrait>feralbird</portrait>
     <attack>0</attack>
     <health>29</health>
@@ -6770,7 +6769,7 @@
     <portrait>groundelemental2</portrait>
     <attack>0</attack>
     <health>72</health>
-    <skill id="imbue" x="1" y="5" all="1" s="berserk" />
+    <skill id="imbue" x="1" all="1" s="berserk" />
     <skill id="enfeeble" x="2" all="1" />
     <skill id="weaken" x="2" all="1" />
     <rarity>5</rarity>
@@ -7422,7 +7421,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>57</health>
+      <health>87</health>
       <skill id="imbue" x="2" all="1" s="burn" />
       <skill id="heal" x="2" all="1" />
       <skill id="protect" x="2" />
@@ -7932,19 +7931,19 @@
       <level>2</level>
       <health>62</health>
       <skill id="imbue" s="silence" />
-      <skill id="weaken" all="2" x="1" />
+      <skill id="weaken" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>71</health>
       <skill id="imbue" s="silence" />
-      <skill id="weaken" all="3" x="1" />
+      <skill id="weaken" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>80</health>
       <skill id="imbue" all="1" s="silence" />
-      <skill id="weaken" all="3" x="1" />
+      <skill id="weaken" all="1" x="3" />
       <skill id="enfeeble" all="1" x="1" />
     </upgrade>
     <desc>Obyto14 is a Designer for Spellstone. He's also the one who wrote this text. It's weird writing about yourself.</desc>
@@ -8067,7 +8066,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>57</health>
+      <health>87</health>
       <skill id="imbue" x="3" all="1" s="counter" />
       <skill id="enfeeble" x="2" all="1" />
       <skill id="weaken" x="3" c="4" />
@@ -8101,7 +8100,7 @@
     <name>Elyse's Shadow</name>
     <portrait>elyseupgrade</portrait>
     <attack>0</attack>
-    <health>69</health>
+    <health>59</health>
     <skill id="imbue" s="poison" x="1" />
     <skill id="heal" x="2" />
     <rarity>4</rarity>
@@ -8204,7 +8203,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>57</health>
+      <health>87</health>
       <skill id="imbue" x="1" all="1" s="berserk" />
       <skill id="enfeeble" x="1" all="1" />
       <skill id="weaken" x="2" c="4" />
@@ -9711,6 +9710,55 @@
       <skill id="imbue" x="3" s="berserk" />
       <skill id="protect" x="2" all="1" />
       <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>415</id>
+    <card_type>1</card_type>
+    <name>Typhoeus, Ship Devourer</name>
+    <portrait>Portrait_Sky_Sea_Monster</portrait>
+    <asset_bundle>130</asset_bundle>
+    <health>70</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" y="12" s="frost" />
+    <skill id="protect" x="2" />
+    <skill id="strike" x="1" all="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>75</health>
+      <skill id="imbue" x="1" y="12" s="frost" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>81</health>
+      <skill id="imbue" x="2" y="12" s="frost" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>87</health>
+      <skill id="imbue" x="2" y="12" s="frost" />
+      <skill id="protect" x="4" all="1" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>93</health>
+      <skill id="imbue" x="2" y="12" s="frost" />
+      <skill id="protect" x="4" all="1" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="imbue" x="3" y="12" s="frost" />
+      <skill id="protect" x="5" all="1" />
+      <skill id="strike" x="3" all="1" />
     </upgrade>
   </unit>
 </root>

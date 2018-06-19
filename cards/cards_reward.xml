@@ -8398,7 +8398,7 @@
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="strike" x="4" />
-    <skill id="weaken" x="3" />
+    <skill id="weaken" x="4" />
     <skill id="nullify" x="1" />
     <type>1</type>
     <sub_type>12</sub_type>
@@ -8415,14 +8415,14 @@
       <level>4</level>
       <health>16</health>
       <skill id="strike" x="5" />
-      <skill id="weaken" x="3" />
-      <skill id="nullify" x="1" />
+      <skill id="weaken" x="5" />
+      <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="strike" x="5" />
-      <skill id="weaken" x="4" />
-      <skill id="nullify" x="2" />
+      <skill id="strike" x="6" />
+      <skill id="weaken" x="6" />
+      <skill id="nullify" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -8529,25 +8529,26 @@
       <health>27</health>
       <skill id="armored" x="3" />
       <skill id="rally" x="2" all="1" y="12" />
-      <skill id="poison" x="5" />
+      <skill id="poison" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>29</health>
-      <skill id="armored" x="3" />
+      <health>31</health>
+      <skill id="armored" x="4" />
       <skill id="rally" x="3" all="1" y="12" />
-      <skill id="poison" x="5" />
+      <skill id="poison" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>30</health>
-      <skill id="armored" x="4" />
+      <health>33</health>
+      <attack>7</attack>
+      <skill id="armored" x="5" />
       <skill id="rally" x="3" all="1" y="12" />
-      <skill id="poison" x="6" />
+      <skill id="poison" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -8635,7 +8636,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="evade" x="1" />
-    <skill id="strike" x="4" />
+    <skill id="strike" x="5" />
     <skill id="frost" x="1" />
     <type>2</type>
     <sub_type>12</sub_type>
@@ -8651,12 +8652,16 @@
     <upgrade>
       <level>4</level>
       <health>22</health>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="6" />
+      <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>23</health>
       <skill id="evade" x="2" />
-      <skill id="strike" x="5" />
-      <skill id="frost" x="2" />
+      <skill id="strike" x="7" />
+      <skill id="frost" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -8763,6 +8768,7 @@
     <upgrade>
       <level>3</level>
       <health>23</health>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -8772,8 +8778,9 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="3" />
-      <skill id="protect" x="5" y="12" />
+      <attack>8</attack>
+      <skill id="armored" x="4" />
+      <skill id="protect" x="8" y="12" />
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
@@ -11609,13 +11616,14 @@
       <level>4</level>
       <skill id="evade" x="2" />
       <skill id="armored" x="3" />
-      <skill id="rally" x="7" y="12" />
+      <skill id="rally" x="8" y="12" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>32</health>
       <skill id="evade" x="2" />
-      <skill id="armored" x="4" />
-      <skill id="rally" x="8" y="12" />
+      <skill id="armored" x="5" />
+      <skill id="rally" x="9" y="12" />
     </upgrade>
   </unit>
   <unit>
@@ -11717,32 +11725,35 @@
     <cost>4</cost>
     <rarity>3</rarity>
     <skill id="counter" x="6" />
-    <skill id="strike" x="2" all="1" />
-    <skill id="weaken" x="7" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="weaken" x="8" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>38</health>
+      <health>39</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>39</health>
+      <health>41</health>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>40</health>
+      <health>42</health>
       <skill id="counter" x="7" />
-      <skill id="strike" x="2" all="1" />
-      <skill id="weaken" x="7" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="weaken" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>44</health>
+      <attack>9</attack>
       <skill id="counter" x="7" />
-      <skill id="strike" x="3" all="1" />
-      <skill id="weaken" x="8" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="weaken" x="10" />
     </upgrade>
   </unit>
   <unit>
@@ -14579,6 +14590,252 @@
       <skill id="regenerate" x="7" />
       <skill id="valor" x="12" />
       <skill id="pierce" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2129</id>
+    <card_type>2</card_type>
+    <name>Pharos Guardian</name>
+    <picture>Underwater_Mecha_Protector_Seafolk_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="daze" x="2" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <skill id="armored" x="2" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12129</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Pharos Protector</name>
+    <picture>Underwater_Mecha_Protector_Seafolk_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="daze" x="3" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <skill id="armored" x="3" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22129</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pharos Keeper</name>
+    <picture>Underwater_Mecha_Protector_Seafolk_B</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>7</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="daze" x="5" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="daze" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="daze" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2130</id>
+    <card_type>2</card_type>
+    <name>Sea's Saw</name>
+    <picture>Seamonster_Maw_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>6</attack>
+    <health>36</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="regenerate" x="2" />
+    <skill id="frost" x="3" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="corrosive" x="3" />
+      <skill id="regenerate" x="2" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="3" />
+      <skill id="regenerate" x="3" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+      <skill id="corrosive" x="3" />
+      <skill id="regenerate" x="3" />
+      <skill id="frost" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12130</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Sea's Jaw</name>
+    <picture>Seamonster_Maw_A</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>7</attack>
+    <health>39</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="regenerate" x="3" />
+    <skill id="frost" x="4" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="4" />
+      <skill id="regenerate" x="4" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22130</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sea's Maw</name>
+    <picture>Seamonster_Maw_B</picture>
+    <asset_bundle>129</asset_bundle>
+    <hidden_until_time>1527786000</hidden_until_time>
+    <attack>8</attack>
+    <health>42</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="regenerate" x="5" />
+    <skill id="frost" x="5" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>43</health>
+      <skill id="corrosive" x="5" />
+      <skill id="regenerate" x="5" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="corrosive" x="6" />
+      <skill id="regenerate" x="5" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="6" />
+      <skill id="regenerate" x="6" />
+      <skill id="frost" x="7" />
     </upgrade>
   </unit>
 </root>

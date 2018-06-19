@@ -8949,6 +8949,24 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Hunter Zind -->
+  <achievement>
+    <id>3373</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Storm Lord Father</name>
+    <desc>Complete the 'Storm Lord Father' campaign on Mastery Level 1.</desc>
+    <mission_req>5966</mission_req>
+    <locked_start_time>1528995600</locked_start_time>
+    <!-- Thu, June 14 2018 17:00:00 -->
+    <req>
+      <campaign>1174</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8010" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

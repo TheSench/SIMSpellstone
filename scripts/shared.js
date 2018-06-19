@@ -587,6 +587,7 @@ var makeUnit = (function () {
                 case 'flurry':
                     if (!this.flurry) {
                         this.flurry = skill;
+                        this.flurry.countdown = 0;
                         this.imbued.flurry = true;
                     }
                     return;

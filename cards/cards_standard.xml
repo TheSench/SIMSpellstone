@@ -8093,7 +8093,7 @@
     <rarity>3</rarity>
     <skill id="enfeeble" x="6" />
     <skill id="jam" c="4" />
-    <skill id="leech" x="5" />
+    <skill id="leech" x="7" />
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
@@ -8105,20 +8105,23 @@
     <upgrade>
       <level>3</level>
       <attack>7</attack>
-      <health>29</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>8</attack>
+      <health>33</health>
       <skill id="enfeeble" x="7" />
       <skill id="jam" c="4" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>31</health>
+      <attack>9</attack>
+      <health>35</health>
       <skill id="enfeeble" x="8" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -8572,13 +8575,13 @@
       <level>4</level>
       <skill id="armored" x="3" />
       <skill id="valor" x="6" />
-      <skill id="leech" x="4" />
+      <skill id="leech" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="4" />
       <skill id="valor" x="6" />
-      <skill id="leech" x="5" />
+      <skill id="leech" x="6" />
     </upgrade>
   </unit>
   <!-- Legendarys BEGIN - 1640 -->
