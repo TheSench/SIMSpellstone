@@ -30938,4 +30938,820 @@
       <card id="7025" mastery_level="7" name="Webclaw Dragon" />
     </deck>
   </mission>
+  <!-- Campaign Event 10 weeks 5-8 -->
+  <mission>
+    <id>5983</id>
+    <name>Abandoned Ruins</name>
+    <energy>9</energy>
+    <desc>You arrive at a ruined structure, the river flowing through its remnants. However, despite the Spriggan's instructions, there doesn't appear to be anyone except the raiders...</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6150" name="Deep Dino" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="7151" name="Sawtooth" />
+      <card id="7109" name="Clownder" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="7066" mastery_level="3" name="Aquine" />
+      <card id="2050" mastery_level="4" name="Slithering Pincer" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="7150" mastery_level="6" name="Ika-Roa" />
+      <card id="7068" mastery_level="7" name="Eve Allurephid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>It doesn't look like anyone has lived here in a long time.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Let's find that entrance to the ruins that the Spriggan Seer told us about.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5984</id>
+    <name>The Search for the Seer</name>
+    <energy>9</energy>
+    <desc>You search the area carefully. Shifting back some branches that covered a portion of the ruins, you find an entrance leading deeper inside. Ursurio picks up and lights a nearby torch.</desc>
+    <commander id="384" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="6149" name="Pufferspine" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5069" name="Heralidae" />
+      <card id="2105" mastery_level="2" name="Shockscale Eel" />
+      <card id="7066" mastery_level="3" name="Aquine" />
+      <card id="5069" mastery_level="4" name="Heralidae" />
+      <card id="6195" mastery_level="5" name="Magmurchin" />
+      <card id="7152" mastery_level="6" name="Shellter" />
+      <card id="7139" mastery_level="7" name="Icesyte" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5985</id>
+    <name>Nearby Footsteps</name>
+    <energy>9</energy>
+    <desc>Writings in a strange language cover the wall, illuminated by Ursurio's torch. Ursurio motions for you to stop. As the two of you sit still in absolute silence, you hear the steady drip of water... and the pitter-patter of footsteps.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6150" name="Deep Dino" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5011" name="Sky Whale" />
+      <card id="1630" name="Giant Squid" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2048" name="Sandmite" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="1634" mastery_level="2" name="Brightshoal Warrior" />
+      <card id="5149" mastery_level="3" name="Flatfish Ward" />
+      <card id="1330" mastery_level="4" name="Devouring Locusts" />
+      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="5197" mastery_level="6" name="Deepcharge Caller" />
+      <card id="2051" mastery_level="7" name="Dune Hopper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Listen! That scurrying... it's too light to be the raiders, and too heavy to be a rat.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5986</id>
+    <name>Battle Chatter</name>
+    <energy>9</energy>
+    <desc>The sound of steps get closer. Strange shadows of creatures with many legs dance on the wall. You hear a high-pitched chatter... and then the feral bugs appear.</desc>
+    <commander id="319" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="7151" name="Sawtooth" />
+      <card id="7109" name="Clownder" />
+      <card id="1633" name="Leafback" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="1630" mastery_level="2" name="Giant Squid" />
+      <card id="5041" mastery_level="3" name="Skylance Raiders" />
+      <card id="7140" mastery_level="4" name="Clawgro" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="5066" mastery_level="6" name="Scarab Beast" />
+      <card id="6068" mastery_level="7" name="Night Larva" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Feral bugs! This must be their home.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Get out of the way, bugs! We need to find the Insect Seer!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5987</id>
+    <name>Feral Attack</name>
+    <energy>9</energy>
+    <desc>Waves of the bugs fall upon you, indignant that you've disturbed their home. You and Ursurio fight the viscious creatures, but more crawl out from every corner.</desc>
+    <commander id="284" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="7109" name="Clownder" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="2078" name="Septuamaid" />
+      <card id="1633" name="Leafback" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="1630" mastery_level="2" name="Giant Squid" />
+      <card id="6150" mastery_level="3" name="Deep Dino" />
+      <card id="2098" mastery_level="4" name="Cocoon Crawler" />
+      <card id="6109" mastery_level="5" name="Captain Gnaw" />
+      <card id="7063" mastery_level="6" name="Poisac Crawler" />
+      <card id="5140" mastery_level="7" name="Copperhorn Beetle" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5988</id>
+    <name>Insect Ally</name>
+    <energy>9</energy>
+    <desc>An elegant Insect of black and red wings arrives, wielding a magical flame. She joins you in fighting against the feral bugs.</desc>
+    <commander id="319" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="2076" name="Adorabilis" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="7066" name="Aquine" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7149" name="Trident Merman" />
+      <card id="2099" name="White Regemage" />
+      <card id="6069" name="Arachnolite" />
+      <card id="7151" mastery_level="2" name="Sawtooth" />
+      <card id="5152" mastery_level="3" name="Mermaid Merchant" />
+      <card id="2049" mastery_level="4" name="Contrapede" />
+      <card id="5153" mastery_level="5" name="Octopulse" />
+      <card id="5068" mastery_level="6" name="Aht-Aht Carrier" />
+      <card id="6064" mastery_level="7" name="Dreaded Shock" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>Take this, you mindless monsters!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Are you the Insect Seer? We've been looking for you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5989</id>
+    <name>Trust Us</name>
+    <energy>9</energy>
+    <desc>Taking out the flask of residual nectar, you offer it to the Seer. She takes it from you hesitantly, before downing it all in one gulp.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7149" name="Trident Merman" />
+      <card id="6150" name="Deep Dino" />
+      <card id="1630" name="Giant Squid" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="7107" mastery_level="2" name="Hammer Krab" />
+      <card id="5011" mastery_level="3" name="Sky Whale" />
+      <card id="6066" mastery_level="4" name="Psychic Beetle" />
+      <card id="5109" mastery_level="5" name="Cyclospout" />
+      <card id="6037" mastery_level="6" name="Keeper of Souls" />
+      <card id="6065" mastery_level="7" name="Torchsnout" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Here, take this nectar. It's from the Spriggan Seer.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>From the who? This better not be poison.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5990</id>
+    <name>Temporary Effects</name>
+    <energy>9</energy>
+    <desc>The Insect Seer coughs and sputters after drinking the nectar. She collapses on her legs, breathing heavily. The empty flask shatters on the ground.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7066" name="Aquine" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5073" name="Shell Invader" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5069" name="Heralidae" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="7151" mastery_level="3" name="Sawtooth" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7105" mastery_level="5" name="Charybdis" />
+      <card id="6057" mastery_level="6" name="Beammite" />
+      <card id="6140" mastery_level="7" name="Maskcraft Scarab" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Oh no! Was it actually poison?</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>*cough* No... No, it's fine. The elixir's effect is only temporary. We must hurry before I forget everything again.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5991</id>
+    <name>Remembering the Truth</name>
+    <energy>9</energy>
+    <desc>The Insect Seer holds her head. A minute passes. Slowly she rises, collecting herself. Even without your explanation, she understands your purpose.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6149" name="Pufferspine" />
+      <card id="7151" name="Sawtooth" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="1630" name="Giant Squid" />
+      <card id="6069" name="Arachnolite" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5149" mastery_level="2" name="Flatfish Ward" />
+      <card id="7151" mastery_level="3" name="Sawtooth" />
+      <card id="2048" mastery_level="4" name="Sandmite" />
+      <card id="7014" mastery_level="5" name="Genbu" />
+      <card id="7067" mastery_level="6" name="Mantis" />
+      <card id="7064" mastery_level="7" name="Willowfly" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>You came here because the Crimsonwings are becoming a problem.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>They attacked us in The Celestial Vault and in Skyhaven. They are growing very bold.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5992</id>
+    <name>The Island's Inhabitants</name>
+    <energy>9</energy>
+    <desc>With her memories returned, the Insect Seer offers you insight on events in the past. This island was the start of a series of events, long ago...</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2078" name="Septuamaid" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="6044" name="Firewalker" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="5011" mastery_level="2" name="Sky Whale" />
+      <card id="5152" mastery_level="3" name="Mermaid Merchant" />
+      <card id="2098" mastery_level="4" name="Cocoon Crawler" />
+      <card id="6107" mastery_level="5" name="Great Lava Crab" />
+      <card id="7048" mastery_level="6" name="Bogskull Widow" />
+      <card id="6138" mastery_level="7" name="Bitter Therix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>They seek to revive our leader, who fell against The Void. This island was her home.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>It was my tribe, the Rhynio Insects, who adopted the Champion who would later unite the scattered tribes.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5993</id>
+    <name>Fallen Rhynio Tribe</name>
+    <energy>9</energy>
+    <desc>She explains to you the sad truth that has befallen her former comrades. The Insect Seer reveals the truth about all the feral Insects you have been fighting.</desc>
+    <commander id="366" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="7151" name="Sawtooth" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7109" name="Clownder" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7151" name="Sawtooth" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="7107" mastery_level="2" name="Hammer Krab" />
+      <card id="7149" mastery_level="3" name="Trident Merman" />
+      <card id="2049" mastery_level="4" name="Contrapede" />
+      <card id="7054" mastery_level="5" name="The Thing Below" />
+      <card id="6008" mastery_level="6" name="Thousand Arm Demon" />
+      <card id="5138" mastery_level="7" name="Geyser Rocva" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>The Crimsonwings' memories have become tangled. Like pieces of a puzzle forced into the wrong places.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>And the Rhynio tribe, cursed to lose their minds. Without their memories, they became the feral bugs you now see.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5994</id>
+    <name>Cursed Insects</name>
+    <energy>9</energy>
+    <desc>Ursurio is distressed after hearing the Insect Seer's story. However, she insists there are more important matters at hand...</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="7151" name="Sawtooth" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2099" name="White Regemage" />
+      <card id="7149" mastery_level="2" name="Trident Merman" />
+      <card id="2078" mastery_level="3" name="Septuamaid" />
+      <card id="5139" mastery_level="4" name="Loyal Guard" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="7068" mastery_level="6" name="Eve Allurephid" />
+      <card id="7068" mastery_level="7" name="Eve Allurephid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Can we help them? Can we help you?</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>Aha... you are kind to offer. But no. To avoid The Void's curse, the Spriggan Seer developed a concoction to empty our minds.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>Do not fret for us. It's more important that you stop the Crimsonwings.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5995</id>
+    <name>No Price Too Great</name>
+    <energy>9</energy>
+    <desc>The Insect Seer reveals the Crimsonwings' true plan. To achieve their goals, the Crimsonwings would inevitably unleash a great evil upon the world...</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7140" name="Clawgro" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2105" mastery_level="2" name="Shockscale Eel" />
+      <card id="5011" mastery_level="3" name="Sky Whale" />
+      <card id="5139" mastery_level="4" name="Loyal Guard" />
+      <card id="7108" mastery_level="5" name="Quetee" />
+      <card id="2100" mastery_level="6" name="Kheptronos" />
+      <card id="6068" mastery_level="7" name="Night Larva" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>To free their leader, they will need to open The Void.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>No! We sealed The Void. We can't let them open it again. Can they even do that?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5996</id>
+    <name>Place of Destiny</name>
+    <energy>9</energy>
+    <desc>The Insect Seer reveals the location of the Crimsonwings' plan. With such specific conditions required to be met, you suspect you might be able to stop the Crimsonwings before they can finish their plot...</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="2076" name="Adorabilis" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="6044" name="Firewalker" />
+      <card id="2105" mastery_level="2" name="Shockscale Eel" />
+      <card id="1634" mastery_level="3" name="Brightshoal Warrior" />
+      <card id="7105" mastery_level="4" name="Charybdis" />
+      <card id="6107" mastery_level="5" name="Great Lava Crab" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="7048" mastery_level="7" name="Bogskull Widow" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>The Champion's companions are lost in the spirit world, but their power could free her.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>If you stop the Crimsonwings from freeing the Champion's companions, the seal on The Void cannot be undone.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>If all else fails, intercept them at a place where neither grass nor tree can grow. That is the entrance to The Abyss, the Champion's prison.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5997</id>
+    <name>The Stone Tablet</name>
+    <energy>9</energy>
+    <desc>The Nameless Hero's home was originally on this island. The Insect Seer points to a few clues that she left behind, which might provide more insight into her activities.</desc>
+    <commander id="416" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="5069" name="Heralidae" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7151" name="Sawtooth" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="7066" name="Aquine" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2104" mastery_level="2" name="Sharkcrusher" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="7014" mastery_level="4" name="Genbu" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="5140" mastery_level="7" name="Copperhorn Beetle" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>The Forgotten Hero visited this place before she left to fight Bluefire. Look carefully to the stone tablets if you seek the truth.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5998</id>
+    <name>The Second Tablet</name>
+    <energy>9</energy>
+    <desc>You take a moment to look over the cavern's writings. However, they're coded in the same fashion as the book Malchior found in Skyhaven. Or is there some other kind of secret beneath their words?</desc>
+    <commander id="417" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="6044" name="Firewalker" />
+      <card id="7066" name="Aquine" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7140" name="Clawgro" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="1634" mastery_level="2" name="Brightshoal Warrior" />
+      <card id="6149" mastery_level="3" name="Pufferspine" />
+      <card id="7152" mastery_level="4" name="Shellter" />
+      <card id="6151" mastery_level="5" name="Cetus" />
+      <card id="6065" mastery_level="6" name="Torchsnout" />
+      <card id="6008" mastery_level="7" name="Thousand Arm Demon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5999</id>
+    <name>The Third Tablet</name>
+    <energy>9</energy>
+    <desc>You find one more tablet, which seems to be connected to the other two. However, Ursurio is growing impatient. With the knowledge that the Crimsonwings plan to unseal an entrance to The Void, you will have to race them to defeat their plan.</desc>
+    <commander id="418" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="6150" name="Deep Dino" />
+      <card id="2076" name="Adorabilis" />
+      <card id="6150" name="Deep Dino" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="1633" name="Leafback" />
+      <card id="1633" name="Leafback" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="7109" mastery_level="3" name="Clownder" />
+      <card id="6109" mastery_level="4" name="Captain Gnaw" />
+      <card id="5197" mastery_level="5" name="Deepcharge Caller" />
+      <card id="6057" mastery_level="6" name="Beammite" />
+      <card id="6064" mastery_level="7" name="Dreaded Shock" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6000</id>
+    <name>Powerful Foe</name>
+    <energy>9</energy>
+    <desc>The earth rumbles, dust and rocks falling dangerously from the ruins's partially collapsed ceiling. You look around for the source of the earthquake...</desc>
+    <commander id="319" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="7109" name="Clownder" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2078" mastery_level="2" name="Septuamaid" />
+      <card id="2076" mastery_level="3" name="Adorabilis" />
+      <card id="7054" mastery_level="4" name="The Thing Below" />
+      <card id="6195" mastery_level="5" name="Magmurchin" />
+      <card id="6037" mastery_level="6" name="Keeper of Souls" />
+      <card id="7067" mastery_level="7" name="Mantis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>What was THAT?</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>The seafolk you fought earlier worship Typhoeus, Scylla's brother.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6001</id>
+    <name>Typhoeus's Awakening</name>
+    <energy>9</energy>
+    <desc>The Insect Seer suspects that the seafolk raiders have awakened a terrible beast. With Ursurio's urging, you leave behind the cave writings.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7151" name="Sawtooth" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5011" name="Sky Whale" />
+      <card id="2099" name="White Regemage" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="7151" mastery_level="2" name="Sawtooth" />
+      <card id="2105" mastery_level="3" name="Shockscale Eel" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="7196" mastery_level="5" name="Vodnik, Sea's Shield" />
+      <card id="7063" mastery_level="6" name="Poisac Crawler" />
+      <card id="6064" mastery_level="7" name="Dreaded Shock" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>0</enemy>
+        <text>They must have gotten their hands on residual nectar to revive Typhoeus from the sea's depths...</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>You should have warned us sooner! Come on, let's get out of here!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6002</id>
+    <name>Backtracking</name>
+    <energy>9</energy>
+    <desc>You and Ursurio run through the ruin, back towards the entrance. After fighting waves of the seafolk, you realize that the Insect Seer has not come with you. She has stayed behind with the ancient writings.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6150" name="Deep Dino" />
+      <card id="5011" name="Sky Whale" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="1633" name="Leafback" />
+      <card id="7107" mastery_level="2" name="Hammer Krab" />
+      <card id="2104" mastery_level="3" name="Sharkcrusher" />
+      <card id="6107" mastery_level="4" name="Great Lava Crab" />
+      <card id="5151" mastery_level="5" name="Brinebelly" />
+      <card id="5138" mastery_level="6" name="Geyser Rocva" />
+      <card id="5068" mastery_level="7" name="Aht-Aht Carrier" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6003</id>
+    <name>Monsoons and Raiders</name>
+    <energy>9</energy>
+    <desc>The island's weather has transformed to a terrifying storm. Wind shrieks through the palm trees, which sway so violently they threaten to snap in half. Thick rain pounds down so hard that it hurts, the sky's clouds twisted and dark.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="6044" name="Firewalker" />
+      <card id="5073" name="Shell Invader" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2048" name="Sandmite" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="7149" mastery_level="2" name="Trident Merman" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="5109" mastery_level="4" name="Cyclospout" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="7139" mastery_level="6" name="Icesyte" />
+      <card id="2051" mastery_level="7" name="Dune Hopper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>0</enemy>
+        <text>The heretics appear! Kill them in the name of Lord Typhoeus! Avenge Lady Scylla's soul!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6004</id>
+    <name>Storm Ruler</name>
+    <energy>9</energy>
+    <desc>A ferocious roar rumbles like thunder as lightning streaks through the sky. From the dark clouds swims a beast with a thousand teeth, descending from the heavens.</desc>
+    <commander id="319" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="6149" name="Pufferspine" />
+      <card id="7066" name="Aquine" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7109" name="Clownder" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="7109" mastery_level="2" name="Clownder" />
+      <card id="2104" mastery_level="3" name="Sharkcrusher" />
+      <card id="5197" mastery_level="4" name="Deepcharge Caller" />
+      <card id="5153" mastery_level="5" name="Octopulse" />
+      <card id="6140" mastery_level="6" name="Maskcraft Scarab" />
+      <card id="6138" mastery_level="7" name="Bitter Therix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Is that thing the cause of this storm?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6005</id>
+    <name>Escape from Monsoon</name>
+    <energy>9</energy>
+    <desc>Your airship circles around, battered fiercely from the storm. Elyse appears at the airship's entrance. She tosses a rope down to you and Ursurio. </desc>
+    <commander id="359" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="2049" name="Contrapede" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7066" name="Aquine" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="7140" name="Clawgro" />
+      <card id="6044" name="Firewalker" />
+      <card id="6150" mastery_level="2" name="Deep Dino" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="7054" mastery_level="4" name="The Thing Below" />
+      <card id="5151" mastery_level="5" name="Brinebelly" />
+      <card id="5140" mastery_level="6" name="Copperhorn Beetle" />
+      <card id="7063" mastery_level="7" name="Poisac Crawler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Hurry up and get in! This ship can't withstand this weather for very long!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6006</id>
+    <name>Typhoeus's Pursuit</name>
+    <energy>9</energy>
+    <desc>You manage to get inside the ship, still dripping wet. Lightning flashes dangerously nearby, the airship traveling between twin bolts. Ursurio points to the window, where you see a streak of scales...</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="7140" name="Clawgro" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6150" name="Deep Dino" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="2076" mastery_level="2" name="Adorabilis" />
+      <card id="1634" mastery_level="3" name="Brightshoal Warrior" />
+      <card id="6151" mastery_level="4" name="Cetus" />
+      <card id="5150" mastery_level="5" name="Deepspear Warfarer" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="6140" mastery_level="7" name="Maskcraft Scarab" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Uhh, that thing is still chasing us!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6007</id>
+    <name>To the Bridge!</name>
+    <energy>9</energy>
+    <desc>Elyse and the others are doing their best to keep the airship flying. She points you and Ursurio to a hatch that leads to the ship's bridge.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8120" name="Carnivorous Gorillaroar" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7109" name="Clownder" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7149" name="Trident Merman" />
+      <card id="5069" name="Heralidae" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="7109" mastery_level="2" name="Clownder" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="5109" mastery_level="4" name="Cyclospout" />
+      <card id="5104" mastery_level="5" name="Pisces" />
+      <card id="6192" mastery_level="6" name="Buzzing Elytrite" />
+      <card id="6068" mastery_level="7" name="Night Larva" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Get up to the bridge and stop it! If that thing coils around the whole ship, we're going to crash!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

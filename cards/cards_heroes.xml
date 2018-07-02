@@ -7219,9 +7219,6 @@
     <upgrade>
       <level>2</level>
       <health>60</health>
-      <skill id="imbue" s="nullify" x="1" />
-      <skill id="protect" x="1" />
-      <skill id="protect" x="1" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -7424,7 +7421,7 @@
       <health>87</health>
       <skill id="imbue" x="2" all="1" s="burn" />
       <skill id="heal" x="2" all="1" />
-      <skill id="protect" x="2" />
+      <skill id="protect" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -9759,6 +9756,132 @@
       <skill id="imbue" x="3" y="12" s="frost" />
       <skill id="protect" x="5" all="1" />
       <skill id="strike" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>416</id>
+    <card_type>1</card_type>
+    <name>Cave Writings</name>
+    <portrait>cavernsofcrossings</portrait>
+    <desc>Xi evah detrats ot etirw nix sihxt edoc hxtiw ehxt egdelwonk tahxt ym yreve evom six ylekil gnieb dehxctaw. Neve ym sthxguohxt yam ton eb efas, dna Xi evil gniwonknu tsuj woh hxcum Ehxt Diov sah deretla ym dnim.</desc>
+    <health>67</health>
+    <rarity>3</rarity>
+    <skill id="imbue" x="1" all="1" s="armored" />
+    <skill id="enhance" x="1" s="poison" />
+    <skill id="rally" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>69</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="enhance" x="2" s="poison" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>71</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="enhance" x="3" s="poison" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>73</health>
+      <skill id="imbue" x="3" all="1" s="armored" />
+      <skill id="enhance" x="4" s="poison" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>76</health>
+      <skill id="imbue" x="4" all="1" s="armored" />
+      <skill id="enhance" x="5" s="poison" />
+      <skill id="rally" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>417</id>
+    <card_type>1</card_type>
+    <name>Cave Writings</name>
+    <portrait>cavernsofcrossings</portrait>
+    <desc>Erifeulb six ton ehxt redael fo Ehxt Diov, tub stix nesohxc ratava. Ehxt Diov six raf retaerg nahxt a elgnis ytitne. Tix six ehxt wolf fo seiromem dna smaerd; a revir fo senkrad tahxt slop nix ehxt mlaer tix slac Ehxt Syba.</desc>
+    <health>67</health>
+    <rarity>3</rarity>
+    <skill id="imbue" x="1" all="1" s="armored" />
+    <skill id="enhance" x="1" s="burn" />
+    <skill id="rally" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>69</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="enhance" x="2" s="burn" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>71</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="enhance" x="3" s="burn" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>73</health>
+      <skill id="imbue" x="3" all="1" s="armored" />
+      <skill id="enhance" x="4" s="burn" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>76</health>
+      <skill id="imbue" x="4" all="1" s="armored" />
+      <skill id="enhance" x="5" s="burn" />
+      <skill id="rally" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>418</id>
+    <card_type>1</card_type>
+    <name>Cave Writings</name>
+    <portrait>cavernsofcrossings</portrait>
+    <desc>Xi raef ym snoinapmoc dluow riapsed fix yehxt wenk Exht S’diov eurt erutan: gnicneulfni smaerd dna slaedix hxcihxw eripsnix su ot thxgif. Hxtiw S'erifeulb Treah, Ix nac Ehxt Syba. Stix noitcurtsed liw tneverp Exht Diov morf gniretne smaerd.</desc>
+    <health>67</health>
+    <rarity>3</rarity>
+    <skill id="imbue" x="1" all="1" s="armored" />
+    <skill id="enhance" x="1" s="nullify" />
+    <skill id="rally" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>69</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="enhance" x="2" s="nullify" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>71</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="enhance" x="3" s="nullify" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>73</health>
+      <skill id="imbue" x="3" all="1" s="armored" />
+      <skill id="enhance" x="4" s="nullify" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>76</health>
+      <skill id="imbue" x="4" all="1" s="armored" />
+      <skill id="enhance" x="5" s="nullify" />
+      <skill id="rally" x="3" all="1" />
     </upgrade>
   </unit>
 </root>

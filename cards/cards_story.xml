@@ -1596,6 +1596,7 @@
     <health>19</health>
     <cost>0</cost>
     <rarity>3</rarity>
+    <skill id="evade" x="3" />
     <skill id="jam" c="2" />
     <type>2</type>
     <set>9999</set>
@@ -3928,14 +3929,10 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>2</health>
-      <skill id="enfeeble" x="3" all="1" />
-      <skill id="weaken" x="3" />
-      <skill id="poison" x="1" />
+      <health>3</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>3</health>
       <skill id="enfeeble" x="3" all="1" />
       <skill id="weaken" x="4" />
       <skill id="poison" x="1" />
@@ -3969,20 +3966,20 @@
     <upgrade>
       <level>3</level>
       <skill id="armored" x="7" />
-      <skill id="protect" x="1" all="1" />
+      <skill id="protect" x="2" all="1" />
       <skill id="flurry" c="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>2</health>
       <skill id="armored" x="8" />
-      <skill id="protect" x="1" all="1" />
+      <skill id="protect" x="2" all="1" />
       <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="9" />
-      <skill id="protect" x="2" all="1" />
+      <skill id="protect" x="3" all="1" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
@@ -3990,7 +3987,7 @@
       <attack>2</attack>
       <health>2</health>
       <skill id="armored" x="10" />
-      <skill id="protect" x="2" all="1" />
+      <skill id="protect" x="3" all="1" />
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
@@ -4335,15 +4332,12 @@
     <upgrade>
       <level>4</level>
       <skill id="evade" x="2" />
-      <skill id="poison" x="4" />
+      <skill id="poison" x="5" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>9</health>
-      <skill id="evade" x="2" />
-      <skill id="poison" x="5" />
-      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -4357,7 +4351,7 @@
     <picture>Flaming_Skeleton_Warrior_C</picture>
     <asset_bundle>10</asset_bundle>
     <attack>3</attack>
-    <health>14</health>
+    <health>13</health>
     <cost>0</cost>
     <rarity>4</rarity>
     <skill id="enfeeble" x="2" all="1" />
@@ -4368,16 +4362,19 @@
     <set>9999</set>
     <upgrade>
       <level>2</level>
+      <health>14</health>
     </upgrade>
     <upgrade>
       <level>3</level>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>15</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -4393,7 +4390,7 @@
     <picture>Frog_Shaman_B</picture>
     <asset_bundle>18</asset_bundle>
     <attack>8</attack>
-    <health>45</health>
+    <health>43</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="armored" x="4" />
@@ -4404,9 +4401,11 @@
     <set>9999</set>
     <upgrade>
       <level>2</level>
+      <health>44</health>
     </upgrade>
     <upgrade>
       <level>3</level>
+      <health>45</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -4414,10 +4413,11 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>47</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>47</health>
+      <health>48</health>
     </upgrade>
   </unit>
   <!-- Void Core Dungeon -->
@@ -5864,14 +5864,12 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>18</health>
       <skill id="evade" x="7" />
       <skill id="fervor" x="2" y="3" />
       <skill id="poison" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
       <health>18</health>
     </upgrade>
     <upgrade>

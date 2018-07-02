@@ -4985,7 +4985,7 @@
     <rarity>3</rarity>
     <skill id="enfeeble" x="3" />
     <skill id="poison" x="4" />
-    <skill id="leech" x="4" />
+    <skill id="leech" x="5" />
     <type>2</type>
     <sub_type>13</sub_type>
     <set>1000</set>
@@ -4993,8 +4993,8 @@
     <upgrade>
       <level>2</level>
       <skill id="enfeeble" x="4" />
-      <skill id="poison" x="4" />
-      <skill id="leech" x="4" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -5006,9 +5006,10 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="4" />
-      <skill id="poison" x="5" />
-      <skill id="leech" x="5" />
+      <attack>6</attack>
+      <skill id="enfeeble" x="5" />
+      <skill id="poison" x="6" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -8440,7 +8441,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="evade" x="1" />
-    <skill id="heal" x="5" y="13" />
+    <skill id="heal" x="6" y="13" />
     <skill id="berserk" x="2" />
     <type>3</type>
     <sub_type>13</sub_type>
@@ -8456,14 +8457,17 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>22</health>
       <skill id="evade" x="2" />
-      <skill id="heal" x="5" y="13" />
+      <skill id="heal" x="7" y="13" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>23</health>
+      <attack>8</attack>
       <skill id="evade" x="2" />
-      <skill id="heal" x="6" y="13" />
+      <skill id="heal" x="8" y="13" />
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>

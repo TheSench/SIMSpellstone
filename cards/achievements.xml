@@ -8967,6 +8967,141 @@
       <item id="8010" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 10 weeks 5-8 -->
+  <achievement>
+    <id>3374</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Civilization</name>
+    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 2.</desc>
+    <mission_req>5978</mission_req>
+    <locked_start_time>1530205200</locked_start_time>
+    <req>
+      <campaign>1175</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3375</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Civilization</name>
+    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 4.</desc>
+    <mission_req>5978</mission_req>
+    <locked_start_time>1530205200</locked_start_time>
+    <achievement_req>3374</achievement_req>
+    <req>
+      <campaign>1175</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3376</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Civilization</name>
+    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 6.</desc>
+    <mission_req>5978</mission_req>
+    <locked_start_time>1530205200</locked_start_time>
+    <achievement_req>3375</achievement_req>
+    <req>
+      <campaign>1175</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3377</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Civilization</name>
+    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 7.</desc>
+    <mission_req>5978</mission_req>
+    <locked_start_time>1530205200</locked_start_time>
+    <achievement_req>3376</achievement_req>
+    <req>
+      <campaign>1175</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3378</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Storm Incarnate</name>
+    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 2.</desc>
+    <mission_req>5995</mission_req>
+    <locked_start_time>1531414800</locked_start_time>
+    <req>
+      <campaign>1176</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3379</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Storm Incarnate</name>
+    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 4.</desc>
+    <mission_req>5995</mission_req>
+    <locked_start_time>1531414800</locked_start_time>
+    <achievement_req>3378</achievement_req>
+    <req>
+      <campaign>1176</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3380</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Storm Incarnate</name>
+    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 6.</desc>
+    <mission_req>5995</mission_req>
+    <locked_start_time>1531414800</locked_start_time>
+    <achievement_req>3379</achievement_req>
+    <req>
+      <campaign>1176</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3381</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Storm Incarnate</name>
+    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 7.</desc>
+    <mission_req>5995</mission_req>
+    <locked_start_time>1531414800</locked_start_time>
+    <achievement_req>3380</achievement_req>
+    <req>
+      <campaign>1176</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

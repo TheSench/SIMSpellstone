@@ -6046,6 +6046,79 @@
     </rewards>
     <find_item id="3074" drop_per_energy=".4" />
   </campaign>
+  <campaign>
+    <id>1175</id>
+    <name>Lost Civilization</name>
+    <campaign_req id="1173" level="1" />
+    <locked_start_time>1530205200</locked_start_time>
+    <!-- Thu, June 28 2018 17:00:00 -->
+    <battleground_id>2042</battleground_id>
+    <location_id>16</location_id>
+    <x>700</x>
+    <y>500</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5983</mission_id>
+      <mission_id>5984</mission_id>
+      <mission_id>5985</mission_id>
+      <mission_id>5986</mission_id>
+      <mission_id>5987</mission_id>
+      <mission_id>5988</mission_id>
+      <mission_id>5989</mission_id>
+      <mission_id>5990</mission_id>
+      <mission_id>5991</mission_id>
+      <mission_id>5992</mission_id>
+      <mission_id>5993</mission_id>
+      <mission_id>5994</mission_id>
+      <mission_id>5995</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2131" />
+      <card level="5" id="512" />
+      <card level="6" id="2077" />
+      <item level="7" id="3075" />
+    </rewards>
+    <find_item id="3074" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1176</id>
+    <name>Storm Incarnate</name>
+    <campaign_req id="1175" level="1" />
+    <locked_start_time>1531414800</locked_start_time>
+    <!-- Thu, July 12 2018 17:00:00 -->
+    <battleground_id>2043</battleground_id>
+    <location_id>16</location_id>
+    <x>815</x>
+    <y>355</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5996</mission_id>
+      <mission_id>5997</mission_id>
+      <mission_id>5998</mission_id>
+      <mission_id>5999</mission_id>
+      <mission_id>6000</mission_id>
+      <mission_id>6001</mission_id>
+      <mission_id>6002</mission_id>
+      <mission_id>6003</mission_id>
+      <mission_id>6004</mission_id>
+      <mission_id>6005</mission_id>
+      <mission_id>6006</mission_id>
+      <mission_id>6007</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2132" />
+      <card level="5" id="512" />
+      <card level="6" id="2099" />
+      <item level="7" id="3075" />
+    </rewards>
+    <find_item id="3074" drop_per_energy=".8" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

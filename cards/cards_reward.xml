@@ -5183,8 +5183,8 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="pierce" x="4" />
-      <skill id="leech" x="3" />
+      <skill id="pierce" x="5" />
+      <skill id="leech" x="4" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
@@ -5198,8 +5198,10 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="pierce" x="5" />
-      <skill id="leech" x="4" />
+      <health>16</health>
+      <attack>7</attack>
+      <skill id="pierce" x="6" />
+      <skill id="leech" x="5" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -5423,10 +5425,11 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
+      <health>23</health>
+      <attack>7</attack>
       <skill id="evade" x="2" />
       <skill id="fervor" x="5" y="13" />
-      <skill id="poison" x="5" />
+      <skill id="poison" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -5556,7 +5559,8 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="5" />
+      <health>38</health>
+      <skill id="armored" x="6" />
       <skill id="jam" c="3" />
       <skill id="berserk" x="5" />
     </upgrade>
@@ -10867,7 +10871,7 @@
     <picture>Cocoon_Monster_Insect_B</picture>
     <asset_bundle>98</asset_bundle>
     <hidden_until_time>1498755600</hidden_until_time>
-    <attack>7</attack>
+    <attack>8</attack>
     <health>22</health>
     <cost>2</cost>
     <rarity>3</rarity>
@@ -10879,11 +10883,11 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>8</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>23</health>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -10893,8 +10897,8 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="corrosive" x="5" />
-      <skill id="nullify" x="2" />
+      <skill id="corrosive" x="6" />
+      <skill id="nullify" x="3" />
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>
@@ -11072,7 +11076,7 @@
     <health>20</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="3" />
+    <skill id="armored" x="4" />
     <skill id="weaken" x="1" all="1" />
     <skill id="flurry" c="4" />
     <type>1</type>
@@ -11096,7 +11100,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="5" />
       <skill id="weaken" x="2" all="1" />
       <skill id="flurry" c="4" />
     </upgrade>
@@ -11113,7 +11117,7 @@
     <health>23</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="4" />
+    <skill id="armored" x="5" />
     <skill id="weaken" x="2" all="1" />
     <skill id="flurry" c="3" />
     <type>1</type>
@@ -11129,8 +11133,8 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="5" />
-      <skill id="weaken" x="2" all="1" />
+      <skill id="armored" x="6" />
+      <skill id="weaken" x="3" all="1" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
@@ -11140,6 +11144,7 @@
     <upgrade>
       <level>6</level>
       <attack>10</attack>
+      <health>27</health>
     </upgrade>
   </unit>
   <unit>
@@ -14836,6 +14841,246 @@
       <skill id="corrosive" x="6" />
       <skill id="regenerate" x="6" />
       <skill id="frost" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2131</id>
+    <card_type>2</card_type>
+    <name>Spear Terror</name>
+    <picture>GiantGnat_A</picture>
+    <asset_bundle>132</asset_bundle>
+    <hidden_until_time>1530205200</hidden_until_time>
+    <attack>7</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="regenerate" x="4" />
+    <skill id="enrage" x="2" all="1" y="13" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="regenerate" x="4" />
+      <skill id="enrage" x="2" all="1" y="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12131</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Spear Horror</name>
+    <picture>GiantGnat_A</picture>
+    <asset_bundle>132</asset_bundle>
+    <hidden_until_time>1530205200</hidden_until_time>
+    <attack>8</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="5" />
+    <skill id="regenerate" x="5" />
+    <skill id="enrage" x="2" all="1" y="13" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="5" />
+      <skill id="regenerate" x="5" />
+      <skill id="enrage" x="3" all="1" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="6" />
+      <skill id="regenerate" x="5" />
+      <skill id="enrage" x="3" all="1" y="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22131</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Spear Nightmare</name>
+    <picture>GiantGnat_B</picture>
+    <asset_bundle>132</asset_bundle>
+    <hidden_until_time>1530205200</hidden_until_time>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="6" />
+    <skill id="regenerate" x="6" />
+    <skill id="enrage" x="3" all="1" y="13" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="7" />
+      <skill id="regenerate" x="6" />
+      <skill id="enrage" x="3" all="1" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="7" />
+      <skill id="regenerate" x="7" />
+      <skill id="enrage" x="4" all="1" y="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2132</id>
+    <card_type>2</card_type>
+    <name>Seaweevil</name>
+    <picture>BugShrimp_A</picture>
+    <asset_bundle>132</asset_bundle>
+    <hidden_until_time>1530205200</hidden_until_time>
+    <attack>2</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="poison" x="3" />
+    <skill id="daze" x="3" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="4" />
+      <skill id="poison" x="3" />
+      <skill id="daze" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="4" />
+      <skill id="poison" x="3" />
+      <skill id="daze" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="4" />
+      <skill id="poison" x="4" />
+      <skill id="daze" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12132</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Venweevil</name>
+    <picture>BugShrimp_A</picture>
+    <asset_bundle>132</asset_bundle>
+    <hidden_until_time>1530205200</hidden_until_time>
+    <attack>3</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="poison" x="4" />
+    <skill id="daze" x="4" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="5" />
+      <skill id="poison" x="4" />
+      <skill id="daze" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="5" />
+      <skill id="poison" x="4" />
+      <skill id="daze" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="5" />
+      <skill id="poison" x="5" />
+      <skill id="daze" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22132</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Toxweevil</name>
+    <picture>BugShrimp_B</picture>
+    <asset_bundle>132</asset_bundle>
+    <hidden_until_time>1530205200</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="poison" x="5" />
+    <skill id="daze" x="5" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="7" />
+      <skill id="poison" x="5" />
+      <skill id="daze" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="7" />
+      <skill id="poison" x="6" />
+      <skill id="daze" x="6" />
     </upgrade>
   </unit>
 </root>

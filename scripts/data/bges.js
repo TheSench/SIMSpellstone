@@ -266,7 +266,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "117": {
-    "name": "Insectile Venom",
+    "name": "Venom",
     "id": "117",
     "desc": "Insects gain Venom equal to 10% of their Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.",
     "effect": [
@@ -436,6 +436,21 @@ var BATTLEGROUNDS = {
         "base": "health",
         "mult": 0.15,
         "y": "12",
+      },
+    ]
+  },
+  "127": {
+    "name": "Insectile Venom",
+    "id": "127",
+    "desc": "Insects gain Venom equal to 1 plus 15% of their base Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "venom",
+        "x": 1,
+        "mult": 0.15,
+        "base": "health",
+        "y": "13",
       },
     ]
   },
@@ -2112,6 +2127,38 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "scale_attributes",
         "base_mult": .25,
+        "mult": .01,
+      },
+    ]
+  },
+  "2042": {
+    "name": "Streaming Amnesic Hula",
+    "id": "2042",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
+  "2043": {
+    "name": "Streaming Amnesic Hula",
+    "id": "2043",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
         "mult": .01,
       },
     ]

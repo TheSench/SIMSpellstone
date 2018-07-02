@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <config max_level="50" />
+  <config max_level="60" />
   <!-- Scrub -->
   <card_level>
     <rarity>0</rarity>
@@ -533,5 +533,45 @@
   <level>
     <id>50</id>
     <xp>1970000</xp>
+  </level>
+  <level>
+    <id>51</id>
+    <xp>2090000</xp>
+  </level>
+  <level>
+    <id>52</id>
+    <xp>2210000</xp>
+  </level>
+  <level>
+    <id>53</id>
+    <xp>2330000</xp>
+  </level>
+  <level>
+    <id>54</id>
+    <xp>2450000</xp>
+  </level>
+  <level>
+    <id>55</id>
+    <xp>2570000</xp>
+  </level>
+  <level>
+    <id>56</id>
+    <xp>2690000</xp>
+  </level>
+  <level>
+    <id>57</id>
+    <xp>2810000</xp>
+  </level>
+  <level>
+    <id>58</id>
+    <xp>2930000</xp>
+  </level>
+  <level>
+    <id>59</id>
+    <xp>3050000</xp>
+  </level>
+  <level>
+    <id>60</id>
+    <xp>3170000</xp>
   </level>
 </root>
