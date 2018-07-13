@@ -31754,4 +31754,842 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 11 -->
+  <!-- Extra Node -->
+  <mission>
+    <id>6008</id>
+    <name>Golden Leaf Power</name>
+    <energy>9</energy>
+    <desc>Golden Crown Village is best known for its iconic golden leaves. The trees were enchanted by the Elementals in the past, giving them similar energy found in the Arcane Ores, like empty Spellstones.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1015" name="Windfrog" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="6159" name="Solder Charger" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6139" mastery_level="2" name="Sand Wurm" />
+      <card id="5065" mastery_level="3" name="Hive Guard" />
+      <card id="6154" mastery_level="4" name="Egg Thief" />
+      <card id="7053" mastery_level="5" name="Bee Eater" />
+      <card id="5101" mastery_level="6" name="Sycophant" />
+      <card id="6064" mastery_level="7" name="Dreaded Shock" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6009</id>
+    <name>Airship Energy</name>
+    <energy>9</energy>
+    <desc>When ground into fine powder, the golden leaves can be used as an energy catalyst for your airship. Collecting the golden leaves should get more of your airship's defenses up and running.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="6022" name="Illusion Caster" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6159" name="Solder Charger" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="1633" mastery_level="2" name="Leafback" />
+      <card id="6069" mastery_level="3" name="Arachnolite" />
+      <card id="2011" mastery_level="4" name="Poliworg" />
+      <card id="5102" mastery_level="5" name="Tribe Tracker" />
+      <card id="5157" mastery_level="6" name="Spellbind Magus" />
+      <card id="6138" mastery_level="7" name="Bitter Therix" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 11 weeks 1-4 -->
+  <mission>
+    <id>6010</id>
+    <name>Impact Remains</name>
+    <energy>9</energy>
+    <desc>When you awake, you find yourself on a pile of golden leaves. The air smells like sulfur, and you can see your airship nearby, billowing black smoke. Malchior rises from your side, fretting over the ship.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2098" mastery_level="2" name="Cocoon Crawler" />
+      <card id="6050" mastery_level="3" name="Wortwog" />
+      <card id="7098" mastery_level="4" name="Survivalist" />
+      <card id="5050" mastery_level="5" name="Cloud Spear" />
+      <card id="5066" mastery_level="6" name="Scarab Beast" />
+      <card id="5018" mastery_level="7" name="Grand Knight Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Alright, who's the one who decided to make the punch the party version, it has given me a killer headache.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Oh wait, I remember now. We crashed! The landing was a bit rough. But we managed to avoid the sea.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6011</id>
+    <name>Damaged Airship</name>
+    <energy>9</energy>
+    <desc>The airship has sustained visible damage. Multiple windows, including the gigantic windshield have broken, leaving fragmented glass shards on the ground. </desc>
+    <commander id="315" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7099" name="Toadplay" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="6044" name="Firewalker" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="2012" mastery_level="3" name="Frogling Swarm" />
+      <card id="5155" mastery_level="4" name="Silvertongue Fencer" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="5138" mastery_level="6" name="Geyser Rocva" />
+      <card id="6152" mastery_level="7" name="Bladesear Infuser" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>That last impact knocked us out of the ship. Roll call! Everyone here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6012</id>
+    <name>Scattered Companions</name>
+    <energy>9</energy>
+    <desc>Your companions have been scattered. You help Elyse to her feet, while checking on the others. Ursurio lays on the grass, while Scyer hangs from a nearby treetop, golden leaves sticking out of his head.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="2011" name="Poliworg" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="1328" mastery_level="3" name="Poison Bullfrog" />
+      <card id="6050" mastery_level="4" name="Wortwog" />
+      <card id="5020" mastery_level="5" name="Frost Frog" />
+      <card id="5140" mastery_level="6" name="Copperhorn Beetle" />
+      <card id="6048" mastery_level="7" name="Bulwraag" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I'm okay. What about everyone else?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Urgh... let me sleep just five more minutes...</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>That was one bumpy ride. Hopefully nobody died!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6013</id>
+    <name>Scattered Friends</name>
+    <energy>9</energy>
+    <desc>In front of the broken windshield, Oda rises to his feet, dusting off fragments of glass. Aria shakes her head, grumbling loudly.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="2049" name="Contrapede" />
+      <card id="2131" mastery_level="2" name="Spear Terror" />
+      <card id="2034" mastery_level="3" name="Leap Frog Duo" />
+      <card id="6020" mastery_level="4" name="Croak Piercer" />
+      <card id="7016" mastery_level="5" name="Webfist Shaman" />
+      <card id="5193" mastery_level="6" name="Rhynio Battlecharger" />
+      <card id="6101" mastery_level="7" name="Chasm Dowager" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I avoided most of the glass shards... I'm mainly unharmed.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Ugh, remind me why we allow the crazy man to fly the airship.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6014</id>
+    <name>Cedric's Memory</name>
+    <energy>9</energy>
+    <desc>Cedric looks at the golden leaves and the gigantic trees. They tower far into the sky, patches of light filtering through their holes. </desc>
+    <commander id="249" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="7053" name="Bee Eater" />
+      <card id="7098" name="Survivalist" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="2099" name="White Regemage" />
+      <card id="1633" mastery_level="2" name="Leafback" />
+      <card id="2014" mastery_level="3" name="Tadpole Warmage" />
+      <card id="5099" mastery_level="4" name="Croak Dropper" />
+      <card id="7155" mastery_level="5" name="Seashell Footpad" />
+      <card id="6008" mastery_level="6" name="Thousand Arm Demon" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>I recognize the unique color of the leaves. We must be near Golden Crown Village.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6015</id>
+    <name>Golden Crown Request</name>
+    <energy>9</energy>
+    <desc>The airship is bathed in sunlight, having broken the branches high overhead. Dangerous-looking sparks emit at regular intervals from the ship's engine.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1015" name="Windfrog" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="5065" mastery_level="2" name="Hive Guard" />
+      <card id="7099" mastery_level="3" name="Toadplay" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="6154" mastery_level="5" name="Egg Thief" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="6101" mastery_level="7" name="Chasm Dowager" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>We'll need to do some repairs before this airship can fly again.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, can you find the Golden Crown Mayor and ask for her help? We'll need supplies, and more hands, to properly get the ship up and running.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>I'll come with you. I know this area well.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6016</id>
+    <name>Dawnglow Trainees</name>
+    <energy>9</energy>
+    <desc>You leave your broken airship behind, traveling with Cedric. You have only taken a few steps, when a frog with a colorful headpiece stops your progress...</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="2011" name="Poliworg" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="6050" name="Wortwog" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="2048" mastery_level="2" name="Sandmite" />
+      <card id="2012" mastery_level="3" name="Frogling Swarm" />
+      <card id="6020" mastery_level="4" name="Croak Piercer" />
+      <card id="7155" mastery_level="5" name="Seashell Footpad" />
+      <card id="6065" mastery_level="6" name="Torchsnout" />
+      <card id="6155" mastery_level="7" name="Jorang, Frog Chemist" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Tribal_Frog</commander>
+        <enemy>1</enemy>
+        <text>Rribit! The former First Sword of the Dawnglow Emperor!</text>
+      </line>
+      <line>
+        <commander>Portraits_Tribal_Frog</commander>
+        <enemy>1</enemy>
+        <text>It is an honor to meet you in person. Please, grant us some training!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6017</id>
+    <name>Dawnglow Love</name>
+    <energy>9</energy>
+    <desc>A battalion of colorful frogs do battle with you and Cedric. Cedric tells them to stop, yet the overzealous frogs demand to test their skills.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2050" mastery_level="2" name="Slithering Pincer" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="7098" mastery_level="4" name="Survivalist" />
+      <card id="5020" mastery_level="5" name="Frost Frog" />
+      <card id="7048" mastery_level="6" name="Bogskull Widow" />
+      <card id="7042" mastery_level="7" name="Scurvy Hopper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6018</id>
+    <name>Cedric's Past Connections</name>
+    <energy>9</energy>
+    <desc>A new frog steps forward. In her hand, she wields a dream catcher like a wand. Her choice of clothes and colors shows that she is part of the Dawnglow frogs.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5053" name="Anura Witch" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="2131" mastery_level="2" name="Spear Terror" />
+      <card id="5020" mastery_level="3" name="Frost Frog" />
+      <card id="7053" mastery_level="4" name="Bee Eater" />
+      <card id="2011" mastery_level="5" name="Poliworg" />
+      <card id="6068" mastery_level="6" name="Night Larva" />
+      <card id="6105" mastery_level="7" name="Wasteland Crusher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Enough, please. Contain your excitement.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Kachina? What are you doing here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6019</id>
+    <name>Kachina, the Dreamer</name>
+    <energy>9</energy>
+    <desc>Cedric recognizes the frog. He tells you that Kachina is the Frog Emperor's Dreamer, and that she often provides advice and runs the Emperor's errands. </desc>
+    <commander id="292" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="7099" name="Toadplay" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="1633" name="Leafback" />
+      <card id="7140" mastery_level="2" name="Clawgro" />
+      <card id="5050" mastery_level="3" name="Cloud Spear" />
+      <card id="7098" mastery_level="4" name="Survivalist" />
+      <card id="6050" mastery_level="5" name="Wortwog" />
+      <card id="6037" mastery_level="6" name="Keeper of Souls" />
+      <card id="7156" mastery_level="7" name="Dawnglow Sharpshot" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>We Dawnglow Frogs have come to ask the Golden Crown Mayor for assistance.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>That is also our purpose. Let's go to the village together.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6020</id>
+    <name>Dawnglow Recruits</name>
+    <energy>9</energy>
+    <desc>Kachina and the overeager Dawnglow frogs join you. Although you have recently had poor experiences with the Dawnglow Frogs, it seems Cedric's presence prevents them striking out... too harshly.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="7098" name="Survivalist" />
+      <card id="6154" name="Egg Thief" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2049" mastery_level="2" name="Contrapede" />
+      <card id="6020" mastery_level="3" name="Croak Piercer" />
+      <card id="2012" mastery_level="4" name="Frogling Swarm" />
+      <card id="7099" mastery_level="5" name="Toadplay" />
+      <card id="7068" mastery_level="6" name="Eve Allurephid" />
+      <card id="7103" mastery_level="7" name="Wavomancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6021</id>
+    <name>Golden Crown Heart</name>
+    <energy>9</energy>
+    <desc>Your group arrives at the heart of Golden Crown Village. The Frogs here have made homes out of leaves, expertly crafting the great trees to wind up like stairs that lead across the village.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7098" name="Survivalist" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1633" name="Leafback" />
+      <card id="6069" mastery_level="2" name="Arachnolite" />
+      <card id="7157" mastery_level="3" name="Webtoe Quickfirst" />
+      <card id="2069" mastery_level="4" name="Webfoot Surfer" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="7063" mastery_level="6" name="Poisac Crawler" />
+      <card id="2071" mastery_level="7" name="Sproutfrog Rainwisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Ahh, so good to see you again, young adventurer, cute Kachina, and little Ol' Cedric!</text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Your timing is impeccable. The fly pies have just come out of the oven. Come, sit a while and eat.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Campaign Event 11 weeks 3-4 -->
+  <mission>
+    <id>6022</id>
+    <name>Home Sweet Fly Pie</name>
+    <energy>9</energy>
+    <desc>The Mayor of Golden Crown is busy taking her pies out of the oven. She sets it on the window to cool, motioning for everyone to sit at the table.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6044" name="Firewalker" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="5053" name="Anura Witch" />
+      <card id="6154" name="Egg Thief" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="2131" name="Spear Terror" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="5102" mastery_level="3" name="Tribe Tracker" />
+      <card id="2034" mastery_level="4" name="Leap Frog Duo" />
+      <card id="2012" mastery_level="5" name="Frogling Swarm" />
+      <card id="5100" mastery_level="6" name="Lifegiver Augur" />
+      <card id="2013" mastery_level="7" name="Stoneclad Toad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Unfortunately we have little time for pleasantries, Mayor. And please don't call me that.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6023</id>
+    <name>The Mayor's Concern</name>
+    <energy>9</energy>
+    <desc>You and Cedric tell the Mayor about your daring escape from Forgotten Island. The monster Typhoeus did enough damage to your ship to cause it to crash.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1313" name="Lavafrog" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6050" name="Wortwog" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5139" mastery_level="2" name="Loyal Guard" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="7157" mastery_level="4" name="Webtoe Quickfirst" />
+      <card id="5155" mastery_level="5" name="Silvertongue Fencer" />
+      <card id="7049" mastery_level="6" name="Boundtoad" />
+      <card id="1643" mastery_level="7" name="Nimble Leaper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Oh dear, were any of you harmed in the crash? That explains the smoke and loud noise we heard.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>We're alright, Mayor, but we could use some help with the ship.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6024</id>
+    <name>News of Crimsonwings</name>
+    <energy>9</energy>
+    <desc>After you explain your plight, Kachina requests the Mayor for aid of a different cause. Kachina has also traveled for a different reason...</desc>
+    <commander id="317" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="7098" name="Survivalist" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="5099" mastery_level="4" name="Croak Dropper" />
+      <card id="7020" mastery_level="5" name="Trapper Frog" />
+      <card id="5159" mastery_level="6" name="Vortex Palm" />
+      <card id="1043" mastery_level="7" name="Lilypad Bard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Mayor, are you aware of the Crimsonwings near the edge of your border?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6025</id>
+    <name>Remnants of the Past</name>
+    <energy>9</energy>
+    <desc>The Golden Crown Mayor frowns at Kachina's declaration. The village once shared borders with the Redfeather Avians, but most had moved out after The Void's attack.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2011" name="Poliworg" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="6050" mastery_level="3" name="Wortwog" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="6154" mastery_level="5" name="Egg Thief" />
+      <card id="6103" mastery_level="6" name="Ribbitaksu" />
+      <card id="5054" mastery_level="7" name="Reckless Ballista" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>A small congregation of former Redfeathers have taken up residence in an old temple...</text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>I did not realize they were also part of the Crimsonwings.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6026</id>
+    <name>Request of Golden Crown Aid</name>
+    <energy>9</energy>
+    <desc>Kachina reveals her purpose of traveling from Dawnglow to Golden Crown. She requests her own assistance of the Mayor.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1313" name="Lavafrog" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7099" name="Toadplay" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="5020" mastery_level="3" name="Frost Frog" />
+      <card id="6020" mastery_level="4" name="Croak Piercer" />
+      <card id="7155" mastery_level="5" name="Seashell Footpad" />
+      <card id="6018" mastery_level="6" name="Underwater Lasher" />
+      <card id="6052" mastery_level="7" name="Fuming Beast" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>They have stolen an artifact that belongs to Dawnglow. We were hoping our sister tribe of Golden Crown would aid us against these thieves.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6027</id>
+    <name>A Request for a Request</name>
+    <energy>9</energy>
+    <desc>The Golden Crown Mayor looks deeply concerned at Kachina's report. She explains her own issues, before turning to you...</desc>
+    <commander id="315" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="1618" name="Frog Scout" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="7053" name="Bee Eater" />
+      <card id="7099" name="Toadplay" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2099" name="White Regemage" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="7155" mastery_level="3" name="Seashell Footpad" />
+      <card id="2011" mastery_level="4" name="Poliworg" />
+      <card id="1328" mastery_level="5" name="Poison Bullfrog" />
+      <card id="5160" mastery_level="6" name="Tetsudo's Shield" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>We Golden Crown frogs aren't fighters. However... perhaps you could help them in our stead, adventurer?</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>It sounds fair. A favor for a favor, after all.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6028</id>
+    <name>Time to Strike</name>
+    <energy>9</energy>
+    <desc>The Dawnglow Frogs have come to fight a war against the Crimsonwings. Perhaps this is an opportunity to strike first, instead of waiting for their inevitable attack.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1313" name="Lavafrog" />
+      <card id="7140" name="Clawgro" />
+      <card id="7099" name="Toadplay" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="6154" name="Egg Thief" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="6066" mastery_level="2" name="Psychic Beetle" />
+      <card id="7020" mastery_level="3" name="Trapper Frog" />
+      <card id="2012" mastery_level="4" name="Frogling Swarm" />
+      <card id="2014" mastery_level="5" name="Tadpole Warmage" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6029</id>
+    <name>Travel Through Golden Crown</name>
+    <energy>9</energy>
+    <desc>Cedric, you, Kachina, and a host of Dawnglow frogs leave the village. Kachina apologizes to you on behalf of Dawnglow for the earlier hostilities the tribe has shown you.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="1313" name="Lavafrog" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="6050" name="Wortwog" />
+      <card id="7053" name="Bee Eater" />
+      <card id="5069" name="Heralidae" />
+      <card id="6066" mastery_level="2" name="Psychic Beetle" />
+      <card id="6051" mastery_level="3" name="Treeblade Thief" />
+      <card id="7155" mastery_level="4" name="Seashell Footpad" />
+      <card id="2034" mastery_level="5" name="Leap Frog Duo" />
+      <card id="7156" mastery_level="6" name="Dawnglow Sharpshot" />
+      <card id="7159" mastery_level="7" name="Lucky Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Dawnglow has always been divided. The divisions prioritize different things.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6030</id>
+    <name>Reminiscing</name>
+    <energy>9</energy>
+    <desc>Cedric seems sympathetic to Kachina's apology. Once a servant of the Emperor, he relates to Kachina's own position.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="7053" name="Bee Eater" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="2131" name="Spear Terror" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="7098" mastery_level="3" name="Survivalist" />
+      <card id="7099" mastery_level="4" name="Toadplay" />
+      <card id="2014" mastery_level="5" name="Tadpole Warmage" />
+      <card id="7100" mastery_level="6" name="Snow Caller" />
+      <card id="7097" mastery_level="7" name="Caustic Toadbog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>The Emperor's political games grated on my nerves. That's what eventually lead me to live in Golden Crown.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6031</id>
+    <name>The Path Forward</name>
+    <energy>9</energy>
+    <desc>You continue your journey through Golden Crown, fighting off monsters and the overly eager frogs.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1313" name="Lavafrog" />
+      <card id="7140" name="Clawgro" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="7053" name="Bee Eater" />
+      <card id="2049" name="Contrapede" />
+      <card id="6139" mastery_level="2" name="Sand Wurm" />
+      <card id="6050" mastery_level="3" name="Wortwog" />
+      <card id="6154" mastery_level="4" name="Egg Thief" />
+      <card id="6102" mastery_level="5" name="Ribbithold Guards" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6032</id>
+    <name>The Old Dawnglow Days</name>
+    <energy>9</energy>
+    <desc>Kachina laments Cedric's decision. The old Frog's service to the Emperor was legendary, and news of war prowess is still whispered among the Dawnglow ranks.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7140" name="Clawgro" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6154" name="Egg Thief" />
+      <card id="2048" name="Sandmite" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="6020" mastery_level="3" name="Croak Piercer" />
+      <card id="5050" mastery_level="4" name="Cloud Spear" />
+      <card id="7016" mastery_level="5" name="Webfist Shaman" />
+      <card id="2071" mastery_level="6" name="Sproutfrog Rainwisher" />
+      <card id="6152" mastery_level="7" name="Bladesear Infuser" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>I don't deny that he is a certain type of personality. But your presence is missed, Cedric. I've heard many great stories of your deeds.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6033</id>
+    <name>An Offer to Return</name>
+    <energy>9</energy>
+    <desc>Kachina seems to be trying to get Cedric to return. The old Frog's expertise has certainly been valuable to your team...</desc>
+    <commander id="292" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="6050" name="Wortwog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="5069" name="Heralidae" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="6050" mastery_level="3" name="Wortwog" />
+      <card id="5020" mastery_level="4" name="Frost Frog" />
+      <card id="7020" mastery_level="5" name="Trapper Frog" />
+      <card id="1643" mastery_level="6" name="Nimble Leaper" />
+      <card id="5018" mastery_level="7" name="Grand Knight Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Perhaps one day you would consider coming back.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
 </root>

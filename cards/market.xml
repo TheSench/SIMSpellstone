@@ -2633,6 +2633,20 @@
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3092</id>
+    <name>Double Legendary Insect Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary or higher Goblin card from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -3221,7 +3235,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes one ^cE7FFLegendary ^cFFFFInsect card and three additional ^c0DFFEpic^cFFFF+ Insect cards from Premium set! May be purchased three times!</desc>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFInsect card and three additional ^c0DFFEpic^cFFFF+ Insect cards from Premium set! May be purchased 10 times!</desc>
     <asset_prefab>event_013_crystal_legendary</asset_prefab>
     <background_prefab>event_013_banner_legenadaryPack</background_prefab>
     <bundle>64</bundle>
@@ -5142,6 +5156,25 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="6157" display_card_id="6157" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5119</id>
+    <name>Copperhorn Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFCopperhorn Beetle^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5140" display_card_id="5140" />
     </cards>
   </store_item>
 </root>

@@ -1962,6 +1962,118 @@
       <wb>100</wb>
     </reward>
   </achievement>
+  <achievement>
+    <id>443</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXIX</name>
+    <desc>Collect 18,500 Bounties.</desc>
+    <achievement_req>442</achievement_req>
+    <req>
+      <pvp_wins>18500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>444</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XL</name>
+    <desc>Collect 19,000 Bounties.</desc>
+    <achievement_req>443</achievement_req>
+    <req>
+      <pvp_wins>1900</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>445</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XLI</name>
+    <desc>Collect 19,500 Bounties.</desc>
+    <achievement_req>444</achievement_req>
+    <req>
+      <pvp_wins>19500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>446</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XLII</name>
+    <desc>Collect 20,000 Bounties.</desc>
+    <achievement_req>445</achievement_req>
+    <req>
+      <pvp_wins>20000</pvp_wins>
+    </req>
+    <reward>
+      <wb>200</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>447</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXXIX</name>
+    <desc>Collect 20,500 Bounties.</desc>
+    <achievement_req>446</achievement_req>
+    <req>
+      <pvp_wins>20500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>448</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XL</name>
+    <desc>Collect 21,000 Bounties.</desc>
+    <achievement_req>447</achievement_req>
+    <req>
+      <pvp_wins>21000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>449</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XLI</name>
+    <desc>Collect 21,500 Bounties.</desc>
+    <achievement_req>448</achievement_req>
+    <req>
+      <pvp_wins>21500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>450</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XLII</name>
+    <desc>Collect 22,000 Bounties.</desc>
+    <achievement_req>449</achievement_req>
+    <req>
+      <pvp_wins>22000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
   <!-- 451+ Bounty Rank Achievements -->
   <achievement>
     <id>451</id>
@@ -9296,6 +9408,28 @@
       <campaign>1168</campaign>
       <campaign>1169</campaign>
       <campaign>1170</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Forgotten Island -->
+    <id>4010</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Forgotten Island</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Forgotten Island.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5982</mission_req>
+    <req>
+      <campaign>1171</campaign>
+      <campaign>1172</campaign>
+      <campaign>1173</campaign>
+      <campaign>1174</campaign>
+      <campaign>1175</campaign>
+      <campaign>1176</campaign>
       <level>7</level>
     </req>
     <reward>
