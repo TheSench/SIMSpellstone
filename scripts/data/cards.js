@@ -191671,6 +191671,190 @@ var CARDS = {
       },
     }
   },
+  "6603": {
+    "id": "6603",
+    "name": "Kabuto, Samurai Myth",
+    "picture": "Samurai_Bug_A",
+    "rarity": "4",
+    "set": "5100",
+    "card_type": "2",
+    "shard_card": 1,
+    "type": "2",
+    "sub_type": ["13"],
+    "health": 35,
+    "attack": 10,
+    "cost": 3,
+    "maxLevel": 10,
+    "skill": [
+      {
+        "id": "absorb",
+        "x": 6,
+      },
+      {
+        "id": "counterburn",
+        "x": 4,
+      },
+      {
+        "id": "regenerate",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 7,
+          },
+          {
+            "id": "counterburn",
+            "x": 5,
+          },
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 37,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 8,
+          },
+          {
+            "id": "counterburn",
+            "x": 5,
+          },
+          {
+            "id": "regenerate",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "attack": 11,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 8,
+          },
+          {
+            "id": "counterburn",
+            "x": 6,
+          },
+          {
+            "id": "regenerate",
+            "x": 7,
+          },
+        ],
+      },
+      "5": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 8,
+          },
+          {
+            "id": "counterburn",
+            "x": 6,
+          },
+          {
+            "id": "regenerate",
+            "x": 8,
+          },
+        ],
+      },
+      "6": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 9,
+          },
+          {
+            "id": "counterburn",
+            "x": 6,
+          },
+          {
+            "id": "regenerate",
+            "x": 9,
+          },
+        ],
+      },
+      "7": {
+        "attack": 12,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 9,
+          },
+          {
+            "id": "counterburn",
+            "x": 6,
+          },
+          {
+            "id": "regenerate",
+            "x": 10,
+          },
+        ],
+      },
+      "8": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 9,
+          },
+          {
+            "id": "counterburn",
+            "x": 7,
+          },
+          {
+            "id": "regenerate",
+            "x": 10,
+          },
+        ],
+      },
+      "9": {
+        "attack": 13,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 10,
+          },
+          {
+            "id": "counterburn",
+            "x": 7,
+          },
+          {
+            "id": "regenerate",
+            "x": 10,
+          },
+        ],
+      },
+      "10": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "absorb",
+            "x": 11,
+          },
+          {
+            "id": "counterburn",
+            "x": 8,
+          },
+          {
+            "id": "regenerate",
+            "x": 11,
+          },
+        ],
+      },
+    }
+  },
   "7600": {
     "id": "7600",
     "name": "Glory Seeker Arran",
@@ -223978,21 +224162,6 @@ var CARDS = {
   },
   "9964": {
     "id": "9964",
-    "name": "Unused Art - 'Samurai_Bug'",
-    "picture": "Samurai_Bug_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9963": {
-    "id": "9963",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_A",
     "rarity": "0",
@@ -224006,8 +224175,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19963": {
-    "id": "19963",
+  "19964": {
+    "id": "19964",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_B",
     "rarity": "0",
@@ -224021,8 +224190,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9962": {
-    "id": "9962",
+  "9963": {
+    "id": "9963",
     "name": "Unused Art - 'Spellstone_Hammer_Goblin'",
     "picture": "Spellstone_Hammer_Goblin_A",
     "rarity": "0",
@@ -224036,8 +224205,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9961": {
-    "id": "9961",
+  "9962": {
+    "id": "9962",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_A",
     "rarity": "0",
@@ -224051,8 +224220,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19961": {
-    "id": "19961",
+  "19962": {
+    "id": "19962",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_B",
     "rarity": "0",
@@ -224066,8 +224235,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9960": {
-    "id": "9960",
+  "9961": {
+    "id": "9961",
     "name": "Unused Art - 'Tarian'",
     "picture": "Tarian_A",
     "rarity": "0",
@@ -224081,8 +224250,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9959": {
-    "id": "9959",
+  "9960": {
+    "id": "9960",
     "name": "Unused Art - 'Tremor_Wurm'",
     "picture": "Tremor_Wurm_A",
     "rarity": "0",
@@ -224096,8 +224265,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9958": {
-    "id": "9958",
+  "9959": {
+    "id": "9959",
     "name": "Unused Art - 'Unused1'",
     "picture": "Unused1_A",
     "rarity": "0",
@@ -224111,8 +224280,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9957": {
-    "id": "9957",
+  "9958": {
+    "id": "9958",
     "name": "Unused Art - 'Unused2'",
     "picture": "Unused2_A",
     "rarity": "0",
@@ -224126,8 +224295,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9956": {
-    "id": "9956",
+  "9957": {
+    "id": "9957",
     "name": "Unused Art - 'Unused3'",
     "picture": "Unused3_A",
     "rarity": "0",
@@ -224141,8 +224310,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9955": {
-    "id": "9955",
+  "9956": {
+    "id": "9956",
     "name": "Unused Art - 'Ursurio'",
     "picture": "Ursurio_A",
     "rarity": "0",
@@ -224156,8 +224325,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9954": {
-    "id": "9954",
+  "9955": {
+    "id": "9955",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_A",
     "rarity": "0",
@@ -224171,8 +224340,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19954": {
-    "id": "19954",
+  "19955": {
+    "id": "19955",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_B",
     "rarity": "0",
@@ -224186,8 +224355,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9953": {
-    "id": "9953",
+  "9954": {
+    "id": "9954",
     "name": "Unused Art - 'Void_Abomination'",
     "picture": "Void_Abomination_A",
     "rarity": "0",
@@ -224201,8 +224370,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9952": {
-    "id": "9952",
+  "9953": {
+    "id": "9953",
     "name": "Unused Art - 'Yuriel'",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -224217,4 +224386,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1531485104813.53;
+var CardsUpdated = 1531486678642.06;

@@ -26,16 +26,22 @@ void Main()
 {
 	string xmlFile;
 
+	var cardFiles = new List<string>()
+	{ //"cards.xml"
+		"cards_heroes.xml",
+		"cards_premium_aether.xml",
+		"cards_premium_chaos.xml",
+		"cards_premium_wyld.xml",
+		"cards_reward.xml",
+		"cards_shard.xml",
+		"cards_special.xml",
+		"cards_standard.xml",
+		"cards_story.xml"
+	};
+	
 	HashSet<string> existingUnits = new HashSet<string>(
-		LoadUnits("cards_heroes.xml")
-		.Union(LoadUnits("cards_premium_aether.xml"))
-		.Union(LoadUnits("cards_premium_chaos.xml"))
-		.Union(LoadUnits("cards_premium_wyld.xml"))
-		.Union(LoadUnits("cards_reward.xml"))
-		.Union(LoadUnits("cards_shard_cards.xml"))
-		.Union(LoadUnits("cards_special.xml"))
-		.Union(LoadUnits("cards_standard.xml"))
-		.Union(LoadUnits("cards_story.xml")));
+		cardFiles.SelectMany(cardFile => LoadUnits(cardFile))
+	);
 
 
 	HashSet<string> newUnits = new HashSet<string>();
@@ -44,17 +50,7 @@ void Main()
 	Normalize("achievements.xml", downloadFiles);
 	Normalize("battleground_effects.xml", downloadFiles);
 	Normalize("campaigns.xml", downloadFiles);
-	Normalize("cards.xml", downloadFiles);
-	Normalize("cards_config.xml", downloadFiles);
-	Normalize("cards_heroes.xml", downloadFiles);
-	Normalize("cards_premium_aether.xml", downloadFiles);
-	Normalize("cards_premium_chaos.xml", downloadFiles);
-	Normalize("cards_premium_wyld.xml", downloadFiles);
-	Normalize("cards_reward.xml", downloadFiles);
-	Normalize("cards_shard_cards.xml", downloadFiles);
-	Normalize("cards_special.xml", downloadFiles);
-	Normalize("cards_standard.xml", downloadFiles);
-	Normalize("cards_story.xml", downloadFiles);
+	cardFiles.ForEach(cardFile => Normalize(cardFile, downloadFiles));
 	Normalize("fusion_recipes_cj2.xml", downloadFiles);
 	Normalize("guilds.xml", downloadFiles);
 	Normalize("guide.xml", downloadFiles);
@@ -244,18 +240,6 @@ for(var skillID in SKILL_DATA) {
 
 	g_unitIDs = new HashSet<string>();
 
-	var cardFiles = new[] 
-	{ //"cards.xml"
-		"cards_heroes.xml",
-		"cards_premium_aether.xml",
-		"cards_premium_chaos.xml",
-		"cards_premium_wyld.xml",
-		"cards_reward.xml",
-		"cards_shard_cards.xml",
-		"cards_special.xml",
-		"cards_standard.xml",
-		"cards_story.xml"
-	};
 	foreach (var filename in cardFiles)
 	{
 		xmlFile = Path.Combine(path, filename);
