@@ -323,6 +323,7 @@
             'corrosive',
             'counter',
             'counterburn',
+            'daze',
             'enfeeble',
             'enhance',
             //'enlarge',

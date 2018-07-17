@@ -1984,7 +1984,7 @@
     <desc>Collect 19,000 Bounties.</desc>
     <achievement_req>443</achievement_req>
     <req>
-      <pvp_wins>1900</pvp_wins>
+      <pvp_wins>19000</pvp_wins>
     </req>
     <reward>
       <pack>13</pack>
@@ -9208,6 +9208,176 @@
     <achievement_req>3380</achievement_req>
     <req>
       <campaign>1176</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 11 -->
+  <achievement>
+    <id>3382</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Golden Leaves</name>
+    <desc>Complete the 'Golden Leaves' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1532624400</locked_start_time>
+    <req>
+      <campaign>1177</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3077" number="50" />
+      <event_points id="7036" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3383</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Golden Leaves</name>
+    <desc>Complete the 'Golden Leaves' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1532624400</locked_start_time>
+    <achievement_req>3382</achievement_req>
+    <req>
+      <campaign>1177</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 11 weeks 1-4 -->
+  <achievement>
+    <id>3384</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crash Site</name>
+    <desc>Complete the 'Crash Site' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1532624400</locked_start_time>
+    <req>
+      <campaign>1178</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3385</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crash Site</name>
+    <desc>Complete the 'Crash Site' campaign on Mastery Level 4.</desc>
+    <mission_req>224</mission_req>
+    <locked_start_time>1532624400</locked_start_time>
+    <achievement_req>3384</achievement_req>
+    <req>
+      <campaign>1178</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3386</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crash Site</name>
+    <desc>Complete the 'Crash Site' campaign on Mastery Level 6.</desc>
+    <mission_req>224</mission_req>
+    <locked_start_time>1532624400</locked_start_time>
+    <achievement_req>3385</achievement_req>
+    <req>
+      <campaign>1178</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3387</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crash Site</name>
+    <desc>Complete the 'Crash Site' campaign on Mastery Level 7.</desc>
+    <mission_req>224</mission_req>
+    <locked_start_time>1532624400</locked_start_time>
+    <achievement_req>3386</achievement_req>
+    <req>
+      <campaign>1178</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3388</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Center</name>
+    <desc>Complete the 'Village Center' campaign on Mastery Level 2.</desc>
+    <mission_req>6021</mission_req>
+    <locked_start_time>1533834000</locked_start_time>
+    <req>
+      <campaign>1179</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3389</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Center</name>
+    <desc>Complete the 'Village Center' campaign on Mastery Level 4.</desc>
+    <mission_req>6021</mission_req>
+    <locked_start_time>1533834000</locked_start_time>
+    <achievement_req>3388</achievement_req>
+    <req>
+      <campaign>1179</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3390</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Center</name>
+    <desc>Complete the 'Village Center' campaign on Mastery Level 6.</desc>
+    <mission_req>6021</mission_req>
+    <locked_start_time>1533834000</locked_start_time>
+    <achievement_req>3389</achievement_req>
+    <req>
+      <campaign>1179</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3391</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Center</name>
+    <desc>Complete the 'Village Center' campaign on Mastery Level 7.</desc>
+    <mission_req>6021</mission_req>
+    <locked_start_time>1533834000</locked_start_time>
+    <achievement_req>3390</achievement_req>
+    <req>
+      <campaign>1179</campaign>
       <level>7</level>
     </req>
     <reward>

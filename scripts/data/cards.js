@@ -22017,7 +22017,7 @@ var CARDS = {
   "418": {
     "id": "418",
     "name": "Cave Writings",
-    "desc": "Xi raef ym snoinapmoc dluow riapsed fix yehxt wenk Exht S’diov eurt erutan: gnicneulfni smaerd dna slaedix hxcihxw eripsnix su ot thxgif. Hxtiw S'erifeulb Treah, Ix nac Ehxt Syba. Stix noitcurtsed liw tneverp Exht Diov morf gniretne smaerd.",
+    "desc": "Xi raef ym snoinapmoc dluow riapsed fix yehxt wenk Exht S'diov eurt erutan: gnicneulfni smaerd dna slaedix hxcihxw eripsnix su ot thxgif. Hxtiw S'erifeulb Treah, Ix nac retne Ehxt Syba. Stix noitcurtsed liw tneverp Exht Diov morf gniretne smaerd.",
     "picture": "portrait_cavernsofcrossings",
     "rarity": "3",
     "set": "9999",
@@ -161347,6 +161347,231 @@ var CARDS = {
       },
     }
   },
+  "7200": {
+    "id": "7200",
+    "name": "Sewer Slipper",
+    "picture": "Insect_Sewer_Bug_A",
+    "hidden_until": "1531760400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["13"],
+    "health": 13,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "daze",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "daze",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "daze",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "17200": {
+    "id": "17200",
+    "name": "Drainage Slipper",
+    "picture": "Insect_Sewer_Bug_A",
+    "hidden_until": "1531760400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["13"],
+    "health": 16,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 4,
+      },
+      {
+        "id": "daze",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "daze",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "daze",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "health": 18,
+        "skill": [],
+      },
+    }
+  },
+  "27200": {
+    "id": "27200",
+    "name": "Cesspool Slipper",
+    "picture": "Insect_Sewer_Bug_B",
+    "hidden_until": "1531760400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["13"],
+    "health": 18,
+    "attack": 7,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "poison",
+        "x": 6,
+      },
+      {
+        "id": "daze",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+          {
+            "id": "daze",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+          {
+            "id": "daze",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
   "7201": {
     "id": "7201",
     "name": "Queen Bee",
@@ -223877,36 +224102,6 @@ var CARDS = {
   },
   "9977": {
     "id": "9977",
-    "name": "Unused Art - 'Insect_Sewer_Bug'",
-    "picture": "Insect_Sewer_Bug_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19977": {
-    "id": "19977",
-    "name": "Unused Art - 'Insect_Sewer_Bug'",
-    "picture": "Insect_Sewer_Bug_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9976": {
-    "id": "9976",
     "name": "Unused Art - 'Insect_Undead_Butterfly_Skeleton'",
     "picture": "Insect_Undead_Butterfly_Skeleton_A",
     "rarity": "0",
@@ -223920,8 +224115,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9975": {
-    "id": "9975",
+  "9976": {
+    "id": "9976",
     "name": "Unused Art - 'Leg_Angel_Sword_In_Stone'",
     "picture": "Leg_Angel_Sword_In_Stone_A",
     "rarity": "0",
@@ -223935,8 +224130,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19975": {
-    "id": "19975",
+  "19976": {
+    "id": "19976",
     "name": "Unused Art - 'Leg_Angel_Sword_In_Stone'",
     "picture": "Leg_Angel_Sword_In_Stone_B",
     "rarity": "0",
@@ -223950,8 +224145,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9974": {
-    "id": "9974",
+  "9975": {
+    "id": "9975",
     "name": "Unused Art - 'Mergoat_Capricorn'",
     "picture": "Mergoat_Capricorn_A",
     "rarity": "0",
@@ -223965,8 +224160,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19974": {
-    "id": "19974",
+  "19975": {
+    "id": "19975",
     "name": "Unused Art - 'Mergoat_Capricorn'",
     "picture": "Mergoat_Capricorn_B",
     "rarity": "0",
@@ -223980,8 +224175,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9973": {
-    "id": "9973",
+  "9974": {
+    "id": "9974",
     "name": "Unused Art - 'Merman_Guardian'",
     "picture": "Merman_Guardian_A",
     "rarity": "0",
@@ -223995,8 +224190,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19973": {
-    "id": "19973",
+  "19974": {
+    "id": "19974",
     "name": "Unused Art - 'Merman_Guardian'",
     "picture": "Merman_Guardian_B",
     "rarity": "0",
@@ -224010,8 +224205,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29972": {
-    "id": "29972",
+  "29973": {
+    "id": "29973",
     "name": "Unused Art - 'Monster'",
     "picture": "Monster_C",
     "rarity": "0",
@@ -224025,8 +224220,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29971": {
-    "id": "29971",
+  "29972": {
+    "id": "29972",
     "name": "Unused Art - 'Mythic_Avian'",
     "picture": "Mythic_Avian_C",
     "rarity": "0",
@@ -224040,8 +224235,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9970": {
-    "id": "9970",
+  "9971": {
+    "id": "9971",
     "name": "Unused Art - 'Mythic_Champion'",
     "picture": "Mythic_Champion_A",
     "rarity": "0",
@@ -224055,8 +224250,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19969": {
-    "id": "19969",
+  "19970": {
+    "id": "19970",
     "name": "Unused Art - 'Mythic_Dragon'",
     "picture": "Mythic_Dragon_B",
     "rarity": "0",
@@ -224070,8 +224265,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9968": {
-    "id": "9968",
+  "9969": {
+    "id": "9969",
     "name": "Unused Art - 'Mythic_Seafolk'",
     "picture": "Mythic_Seafolk_A",
     "rarity": "0",
@@ -224085,8 +224280,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9967": {
-    "id": "9967",
+  "9968": {
+    "id": "9968",
     "name": "Unused Art - 'Mythic_Undead'",
     "picture": "Mythic_Undead_A",
     "rarity": "0",
@@ -224100,8 +224295,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9966": {
-    "id": "9966",
+  "9967": {
+    "id": "9967",
     "name": "Unused Art - 'Oda'",
     "picture": "Oda_A",
     "rarity": "0",
@@ -224115,8 +224310,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19966": {
-    "id": "19966",
+  "19967": {
+    "id": "19967",
     "name": "Unused Art - 'Oda'",
     "picture": "Oda_B",
     "rarity": "0",
@@ -224130,8 +224325,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29966": {
-    "id": "29966",
+  "29967": {
+    "id": "29967",
     "name": "Unused Art - 'Oda'",
     "picture": "Oda_C",
     "rarity": "0",
@@ -224145,8 +224340,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19965": {
-    "id": "19965",
+  "19966": {
+    "id": "19966",
     "name": "Unused Art - 'Promo_Dragon'",
     "picture": "Promo_Dragon_B",
     "rarity": "0",
@@ -224160,8 +224355,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9964": {
-    "id": "9964",
+  "9965": {
+    "id": "9965",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_A",
     "rarity": "0",
@@ -224175,8 +224370,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19964": {
-    "id": "19964",
+  "19965": {
+    "id": "19965",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_B",
     "rarity": "0",
@@ -224190,8 +224385,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9963": {
-    "id": "9963",
+  "9964": {
+    "id": "9964",
     "name": "Unused Art - 'Spellstone_Hammer_Goblin'",
     "picture": "Spellstone_Hammer_Goblin_A",
     "rarity": "0",
@@ -224205,8 +224400,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9962": {
-    "id": "9962",
+  "9963": {
+    "id": "9963",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_A",
     "rarity": "0",
@@ -224220,8 +224415,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19962": {
-    "id": "19962",
+  "19963": {
+    "id": "19963",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_B",
     "rarity": "0",
@@ -224235,8 +224430,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9961": {
-    "id": "9961",
+  "9962": {
+    "id": "9962",
     "name": "Unused Art - 'Tarian'",
     "picture": "Tarian_A",
     "rarity": "0",
@@ -224250,8 +224445,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9960": {
-    "id": "9960",
+  "9961": {
+    "id": "9961",
     "name": "Unused Art - 'Tremor_Wurm'",
     "picture": "Tremor_Wurm_A",
     "rarity": "0",
@@ -224265,8 +224460,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9959": {
-    "id": "9959",
+  "9960": {
+    "id": "9960",
     "name": "Unused Art - 'Unused1'",
     "picture": "Unused1_A",
     "rarity": "0",
@@ -224280,8 +224475,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9958": {
-    "id": "9958",
+  "9959": {
+    "id": "9959",
     "name": "Unused Art - 'Unused2'",
     "picture": "Unused2_A",
     "rarity": "0",
@@ -224295,8 +224490,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9957": {
-    "id": "9957",
+  "9958": {
+    "id": "9958",
     "name": "Unused Art - 'Unused3'",
     "picture": "Unused3_A",
     "rarity": "0",
@@ -224310,8 +224505,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9956": {
-    "id": "9956",
+  "9957": {
+    "id": "9957",
     "name": "Unused Art - 'Ursurio'",
     "picture": "Ursurio_A",
     "rarity": "0",
@@ -224325,8 +224520,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9955": {
-    "id": "9955",
+  "9956": {
+    "id": "9956",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_A",
     "rarity": "0",
@@ -224340,8 +224535,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19955": {
-    "id": "19955",
+  "19956": {
+    "id": "19956",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_B",
     "rarity": "0",
@@ -224355,8 +224550,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9954": {
-    "id": "9954",
+  "9955": {
+    "id": "9955",
     "name": "Unused Art - 'Void_Abomination'",
     "picture": "Void_Abomination_A",
     "rarity": "0",
@@ -224370,8 +224565,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9953": {
-    "id": "9953",
+  "9954": {
+    "id": "9954",
     "name": "Unused Art - 'Yuriel'",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -224386,4 +224581,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1531486678642.06;
+var CardsUpdated = 1531846209765.81;

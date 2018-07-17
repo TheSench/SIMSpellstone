@@ -6119,6 +6119,103 @@
     </rewards>
     <find_item id="3074" drop_per_energy=".8" />
   </campaign>
+  <!-- Campaign Event 11 -->
+  <campaign>
+    <id>1177</id>
+    <name>Golden Leaves</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1532624400</locked_start_time>
+    <!-- Thu, July 26 2018 17:00:00 -->
+    <location_id>17</location_id>
+    <x>210</x>
+    <y>475</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>6008</mission_id>
+      <mission_id>6009</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2129" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3077" drop_per_energy=".1" />
+  </campaign>
+  <campaign>
+    <id>1178</id>
+    <name>Crash Site</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1532624400</locked_start_time>
+    <!-- Thu, July 26 2018 17:00:00 -->
+    <location_id>17</location_id>
+    <x>370</x>
+    <y>450</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>6010</mission_id>
+      <mission_id>6011</mission_id>
+      <mission_id>6012</mission_id>
+      <mission_id>6013</mission_id>
+      <mission_id>6014</mission_id>
+      <mission_id>6015</mission_id>
+      <mission_id>6016</mission_id>
+      <mission_id>6017</mission_id>
+      <mission_id>6018</mission_id>
+      <mission_id>6019</mission_id>
+      <mission_id>6020</mission_id>
+      <mission_id>6021</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2078" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="3078" />
+    </rewards>
+    <find_item id="3077" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1179</id>
+    <name>Village Center</name>
+    <campaign_req id="1178" level="1" />
+    <locked_start_time>1533834000</locked_start_time>
+    <!-- Thu, Aug 09 2018 17:00:00 -->
+    <battleground_id>2044</battleground_id>
+    <location_id>17</location_id>
+    <x>300</x>
+    <y>233</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6022</mission_id>
+      <mission_id>6023</mission_id>
+      <mission_id>6024</mission_id>
+      <mission_id>6025</mission_id>
+      <mission_id>6026</mission_id>
+      <mission_id>6027</mission_id>
+      <mission_id>6028</mission_id>
+      <mission_id>6029</mission_id>
+      <mission_id>6030</mission_id>
+      <mission_id>6031</mission_id>
+      <mission_id>6032</mission_id>
+      <mission_id>6033</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2130" />
+      <card level="5" id="512" />
+      <card level="6" id="2070" />
+      <item level="7" id="3078" />
+    </rewards>
+    <find_item id="3077" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

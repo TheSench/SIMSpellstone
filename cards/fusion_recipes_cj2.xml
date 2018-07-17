@@ -6441,6 +6441,14 @@
     <resource card_id="17198" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>17200</card_id>
+    <resource card_id="7200" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27200</card_id>
+    <resource card_id="17200" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>17201</card_id>
     <resource card_id="7201" number="2" />
   </fusion_recipe>

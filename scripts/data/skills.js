@@ -2,7 +2,7 @@ var SKILL_DATA = {
 	"absorb" : {
 		"name": "Ward",
 		"type": "turnStart",
-		"icon": "unknown",
+		"icon": "absorb",
 		"desc": "Prevents X damage taken from skills each round."
 	},
 	"armored" : {
@@ -62,7 +62,7 @@ var SKILL_DATA = {
 	"daze" : {
 		"name": "Daze",
 		"type": "onAttack",
-		"icon": "unknown",
+		"icon": "daze",
 		"desc": "When this creature deals attack damage, reduce the Attack of the damaged creature."
 	},
 	"enfeeble" : {
@@ -248,7 +248,7 @@ var SKILL_DATA = {
 	"regenerate" : {
 		"name": "Regenerate",
 		"type": "turnEnd",
-		"icon": "unknown",
+		"icon": "regenerate",
 		"desc": "Heals itself at the end of turn, even while on delay."
 	},
 	"reinforce" : {

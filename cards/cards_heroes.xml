@@ -9847,7 +9847,7 @@
     <card_type>1</card_type>
     <name>Cave Writings</name>
     <portrait>cavernsofcrossings</portrait>
-    <desc>Xi raef ym snoinapmoc dluow riapsed fix yehxt wenk Exht S’diov eurt erutan: gnicneulfni smaerd dna slaedix hxcihxw eripsnix su ot thxgif. Hxtiw S'erifeulb Treah, Ix nac Ehxt Syba. Stix noitcurtsed liw tneverp Exht Diov morf gniretne smaerd.</desc>
+    <desc>Xi raef ym snoinapmoc dluow riapsed fix yehxt wenk Exht S'diov eurt erutan: gnicneulfni smaerd dna slaedix hxcihxw eripsnix su ot thxgif. Hxtiw S'erifeulb Treah, Ix nac retne Ehxt Syba. Stix noitcurtsed liw tneverp Exht Diov morf gniretne smaerd.</desc>
     <health>67</health>
     <rarity>3</rarity>
     <skill id="imbue" x="1" all="1" s="armored" />
