@@ -219,6 +219,11 @@ var SIMULATOR = {};
 		dying.ondeath_triggered = true;
 	};
 
+  var passiveSkills = ['counter', 'counterburn', 'counterpoison', 'armored', 'evade'];
+  function requiresActiveTurn(skillName) {
+    return passiveSkills.indexOf(skillName) === -1;
+  }
+
 	var activationSkills = {
 
 		burnself: function burnself(src_card, skill) {
@@ -1362,7 +1367,7 @@ var SIMULATOR = {};
 			var all = skill.all;
 
 			var field_p_assaults = field[p]['assaults'];
-			var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
+			var require_active_turn = requiresActiveTurn(s);
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
@@ -1496,7 +1501,7 @@ var SIMULATOR = {};
 			var all = skill.all;
 
 			var field_p_assaults = field[p]['assaults'];
-			var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
+			var require_active_turn = requiresActiveTurn(s);
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
@@ -2770,8 +2775,8 @@ var SIMULATOR = {};
 					}
 					poison += enhanced;
 				}
-				if (poison > target['poisoned']) {
-					target['poisoned'] = poison;
+				if (poison > target.poisoned) {
+					target.poisoned = poison;
 					if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
 				}
 			}
@@ -2921,6 +2926,24 @@ var SIMULATOR = {};
 					current_assault.scorched.timer = 2;
 				}
 				if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+			}
+
+			// Counterpoison
+			// - Target must have received some amount of damage
+			if (target.counterpoison) {
+				var poison = target.counterpoison || 0;
+				var enhanced = getEnhancement(target, 'counterpoison');
+				if (enhanced) {
+					if (enhanced < 0) {
+						enhanced = Math.ceil(poison * -enhanced);
+					}
+					poison += enhanced;
+        }
+        
+				if (poison > current_assault.poisoned) {
+					current_assault.poisoned = poison;
+          if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+				}
 			}
 
 			// Fury

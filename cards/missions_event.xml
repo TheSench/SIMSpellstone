@@ -31812,7 +31812,7 @@
     <desc>When you awake, you find yourself on a pile of golden leaves. The air smells like sulfur, and you can see your airship nearby, billowing black smoke. Malchior rises from your side, fretting over the ship.</desc>
     <commander id="292" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="5022" name="Webfoot Raider" />
       <card id="6022" name="Illusion Caster" />
       <card id="1318" name="Smelted Lava Slug" />
@@ -31848,7 +31848,7 @@
     <desc>The airship has sustained visible damage. Multiple windows, including the gigantic windshield have broken, leaving fragmented glass shards on the ground. </desc>
     <commander id="315" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1015" name="Windfrog" />
       <card id="1313" name="Lavafrog" />
       <card id="1613" name="Acidic Spider" />
@@ -31879,7 +31879,7 @@
     <desc>Your companions have been scattered. You help Elyse to her feet, while checking on the others. Ursurio lays on the grass, while Scyer hangs from a nearby treetop, golden leaves sticking out of his head.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6022" name="Illusion Caster" />
       <card id="1313" name="Lavafrog" />
       <card id="1318" name="Smelted Lava Slug" />
@@ -31920,7 +31920,7 @@
     <desc>In front of the broken windshield, Oda rises to his feet, dusting off fragments of glass. Aria shakes her head, grumbling loudly.</desc>
     <commander id="292" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1015" name="Windfrog" />
       <card id="5022" name="Webfoot Raider" />
       <card id="1613" name="Acidic Spider" />
@@ -31956,7 +31956,7 @@
     <desc>Cedric looks at the golden leaves and the gigantic trees. They tower far into the sky, patches of light filtering through their holes. </desc>
     <commander id="249" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1313" name="Lavafrog" />
       <card id="1313" name="Lavafrog" />
       <card id="1318" name="Smelted Lava Slug" />
@@ -31987,7 +31987,7 @@
     <desc>The airship is bathed in sunlight, having broken the branches high overhead. Dangerous-looking sparks emit at regular intervals from the ship's engine.</desc>
     <commander id="326" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="5022" name="Webfoot Raider" />
       <card id="1015" name="Windfrog" />
       <card id="1318" name="Smelted Lava Slug" />
@@ -32028,7 +32028,7 @@
     <desc>You leave your broken airship behind, traveling with Cedric. You have only taken a few steps, when a frog with a colorful headpiece stops your progress...</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1618" name="Frog Scout" />
       <card id="1618" name="Frog Scout" />
       <card id="1613" name="Acidic Spider" />
@@ -32064,7 +32064,7 @@
     <desc>A battalion of colorful frogs do battle with you and Cedric. Cedric tells them to stop, yet the overzealous frogs demand to test their skills.</desc>
     <commander id="290" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1618" name="Frog Scout" />
       <card id="1618" name="Frog Scout" />
       <card id="1318" name="Smelted Lava Slug" />
@@ -32088,7 +32088,7 @@
     <desc>A new frog steps forward. In her hand, she wields a dream catcher like a wand. Her choice of clothes and colors shows that she is part of the Dawnglow frogs.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="5022" name="Webfoot Raider" />
       <card id="1313" name="Lavafrog" />
       <card id="1613" name="Acidic Spider" />
@@ -32106,7 +32106,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Dream_Catcher</commander>
         <enemy>1</enemy>
         <text>Enough, please. Contain your excitement.</text>
       </line>
@@ -32124,7 +32124,7 @@
     <desc>Cedric recognizes the frog. He tells you that Kachina is the Frog Emperor's Dreamer, and that she often provides advice and runs the Emperor's errands. </desc>
     <commander id="292" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1015" name="Windfrog" />
       <card id="1015" name="Windfrog" />
       <card id="1318" name="Smelted Lava Slug" />
@@ -32142,7 +32142,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Dream_Catcher</commander>
         <enemy>1</enemy>
         <text>We Dawnglow Frogs have come to ask the Golden Crown Mayor for assistance.</text>
       </line>
@@ -32160,7 +32160,7 @@
     <desc>Kachina and the overeager Dawnglow frogs join you. Although you have recently had poor experiences with the Dawnglow Frogs, it seems Cedric's presence prevents them striking out... too harshly.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1313" name="Lavafrog" />
       <card id="1618" name="Frog Scout" />
       <card id="1613" name="Acidic Spider" />
@@ -32184,7 +32184,7 @@
     <desc>Your group arrives at the heart of Golden Crown Village. The Frogs here have made homes out of leaves, expertly crafting the great trees to wind up like stairs that lead across the village.</desc>
     <commander id="292" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1015" name="Windfrog" />
       <card id="6022" name="Illusion Caster" />
       <card id="1613" name="Acidic Spider" />
@@ -32221,7 +32221,7 @@
     <desc>The Mayor of Golden Crown is busy taking her pies out of the oven. She sets it on the window to cool, motioning for everyone to sit at the table.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1015" name="Windfrog" />
       <card id="6022" name="Illusion Caster" />
       <card id="6044" name="Firewalker" />
@@ -32252,7 +32252,7 @@
     <desc>You and Cedric tell the Mayor about your daring escape from Forgotten Island. The monster Typhoeus did enough damage to your ship to cause it to crash.</desc>
     <commander id="290" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1313" name="Lavafrog" />
       <card id="5022" name="Webfoot Raider" />
       <card id="5067" name="Squito Roamer" />
@@ -32288,7 +32288,7 @@
     <desc>After you explain your plight, Kachina requests the Mayor for aid of a different cause. Kachina has also traveled for a different reason...</desc>
     <commander id="317" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6022" name="Illusion Caster" />
       <card id="5022" name="Webfoot Raider" />
       <card id="5067" name="Squito Roamer" />
@@ -32306,7 +32306,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Dream_Catcher</commander>
         <enemy>1</enemy>
         <text>Mayor, are you aware of the Crimsonwings near the edge of your border?</text>
       </line>
@@ -32319,7 +32319,7 @@
     <desc>The Golden Crown Mayor frowns at Kachina's declaration. The village once shared borders with the Redfeather Avians, but most had moved out after The Void's attack.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="6022" name="Illusion Caster" />
       <card id="6022" name="Illusion Caster" />
       <card id="6066" name="Psychic Beetle" />
@@ -32355,7 +32355,7 @@
     <desc>Kachina reveals her purpose of traveling from Dawnglow to Golden Crown. She requests her own assistance of the Mayor.</desc>
     <commander id="290" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="5022" name="Webfoot Raider" />
       <card id="1313" name="Lavafrog" />
       <card id="5067" name="Squito Roamer" />
@@ -32373,7 +32373,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Dream_Catcher</commander>
         <enemy>1</enemy>
         <text>They have stolen an artifact that belongs to Dawnglow. We were hoping our sister tribe of Golden Crown would aid us against these thieves.</text>
       </line>
@@ -32386,7 +32386,7 @@
     <desc>The Golden Crown Mayor looks deeply concerned at Kachina's report. She explains her own issues, before turning to you...</desc>
     <commander id="315" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1015" name="Windfrog" />
       <card id="1618" name="Frog Scout" />
       <card id="2050" name="Slithering Pincer" />
@@ -32422,7 +32422,7 @@
     <desc>The Dawnglow Frogs have come to fight a war against the Crimsonwings. Perhaps this is an opportunity to strike first, instead of waiting for their inevitable attack.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="5022" name="Webfoot Raider" />
       <card id="1313" name="Lavafrog" />
       <card id="7140" name="Clawgro" />
@@ -32446,7 +32446,7 @@
     <desc>Cedric, you, Kachina, and a host of Dawnglow frogs leave the village. Kachina apologizes to you on behalf of Dawnglow for the earlier hostilities the tribe has shown you.</desc>
     <commander id="292" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1015" name="Windfrog" />
       <card id="1313" name="Lavafrog" />
       <card id="7065" name="Disturbed Swarm" />
@@ -32464,9 +32464,9 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Dream_Catcher</commander>
         <enemy>1</enemy>
-        <text>Dawnglow has always been divided. The divisions prioritize differently from each other.</text>
+        <text>Dawnglow has always been divided. The divisions prioritize tasks autonomously.</text>
       </line>
     </speech>
   </mission>
@@ -32477,7 +32477,7 @@
     <desc>Cedric seems sympathetic to Kachina's apology. Once a servant of the Emperor, he relates to Kachina's own position.</desc>
     <commander id="249" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6022" name="Illusion Caster" />
       <card id="5022" name="Webfoot Raider" />
       <card id="6139" name="Sand Wurm" />
@@ -32508,7 +32508,7 @@
     <desc>You continue your journey through Golden Crown, fighting off monsters and the overly eager frogs.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="5022" name="Webfoot Raider" />
       <card id="1313" name="Lavafrog" />
       <card id="7140" name="Clawgro" />
@@ -32529,10 +32529,10 @@
     <id>6032</id>
     <name>The Old Dawnglow Days</name>
     <energy>9</energy>
-    <desc>Kachina laments Cedric's decision. The old Frog's service to the Emperor was legendary, and news of war prowess is still whispered among the Dawnglow ranks.</desc>
+    <desc>Kachina laments Cedric's decision. The old Frog's service to the Emperor was legendary, and news of his war prowess is still whispered among the Dawnglow ranks.</desc>
     <commander id="290" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6022" name="Illusion Caster" />
       <card id="5022" name="Webfoot Raider" />
       <card id="7140" name="Clawgro" />
@@ -32550,7 +32550,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Dream_Catcher</commander>
         <enemy>1</enemy>
         <text>I don't deny that he is a certain type of personality. But your presence is missed, Cedric. I've heard many great stories of your deeds.</text>
       </line>
@@ -32563,7 +32563,7 @@
     <desc>Kachina seems to be trying to get Cedric to return. The old Frog's expertise has certainly been valuable to your team...</desc>
     <commander id="292" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8121" name="Canopy Monster" />
       <card id="1015" name="Windfrog" />
       <card id="1015" name="Windfrog" />
       <card id="5139" name="Loyal Guard" />
@@ -32581,7 +32581,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portrait_Dream_Catcher</commander>
         <enemy>1</enemy>
         <text>Perhaps one day you would consider coming back.</text>
       </line>

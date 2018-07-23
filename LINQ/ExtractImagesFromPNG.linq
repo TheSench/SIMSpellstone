@@ -9,7 +9,7 @@ static string convertedFolder;
 static string _allImagesPath;
 bool overwrite = false;
 
-string assetName = "cardpack_event_038";
+string assetName = "cardpack_event_040";
 static CardType type = CardType.Assault;
 static string imageFilter = "";
 

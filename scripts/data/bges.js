@@ -454,6 +454,21 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "128": {
+    "name": "Poisonhide",
+    "id": "128",
+    "desc": "When a Frog is damaged by an attack, it deals Poison damage to the attacker equal to 3 plus 10% of the Frog's base Health.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "counterpoison",
+        "x": 3,
+        "mult": 0.1,
+        "base": "health",
+        "y": "4",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -2160,6 +2175,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .2,
         "mult": .01,
+      },
+    ]
+  },
+  "2044": {
+    "name": "Sunrisen Divertimento",
+    "id": "2044",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
       },
     ]
   },

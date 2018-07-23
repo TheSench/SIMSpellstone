@@ -6385,7 +6385,7 @@
     <name>Golden Crown Village</name>
     <mapBG>EventMap_010</mapBG>
     <combatBG>CombatBGEvent004</combatBG>
-    <preview name="Map_Banner_BeachJungle" bundle="102" />
+    <preview name="Map_Banner_EventMap_010" bundle="102" />
     <unlock_time>1532624400</unlock_time>
     <!-- Thu, July 26 2018 17:00:00 -->
     <asset_bundle>48</asset_bundle>
