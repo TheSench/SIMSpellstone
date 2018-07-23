@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = false;
+static bool downloadFiles = true;
 static bool forceSpoilers = false;
 
 static Dictionary<string, string> skillIDChanges = new Dictionary<string, string>()
@@ -241,6 +241,10 @@ for(var skillID in SKILL_DATA) {
 
 	g_unitIDs = new HashSet<string>();
 
+	var imageRemappings = new Dictionary<string, string>()
+	{
+		{"4003", "Mythic_Champion_A"}
+	};
 	foreach (var filename in cardFiles)
 	{
 		xmlFile = Path.Combine(path, filename);
@@ -249,6 +253,10 @@ for(var skillID in SKILL_DATA) {
 		{
 			var stringReader = new StringReader(unitXML.ToString());
 			var unit = (unit)unitDeserializer.Deserialize(stringReader);
+			if(imageRemappings.TryGetValue(unit.id, out string remappedPortrait))
+			{
+				unit.picture = remappedPortrait;
+			}
 			units.Add(unit);
 			if (!existingUnits.Contains(unit.id))
 			{
