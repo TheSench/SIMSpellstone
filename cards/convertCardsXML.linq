@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 static bool forceSpoilers = false;
 
 static Dictionary<string, string> skillIDChanges = new Dictionary<string, string>()
@@ -73,7 +73,7 @@ void Main()
 	var missionPortraits = missionsXML.SelectMany(node => node.Descendants("commander")).ToLookup(node => node.Value).Where(l => l.Key.Length > 0).Select(l => l.Key);
 	foreach (var portrait in missionPortraits)
 	{
-		var imageName = "portrait_" + portrait.Replace("Portrait_", "");
+		var imageName = "portrait_" + portrait.Replace("Portrait_", "").Replace("Portraits_", "");
 		var imageFile = Path.Combine(path, @"..\res\cardImages\", imageName + ".png");
 		if (!File.Exists(imageFile))
 		{
@@ -214,13 +214,14 @@ void Main()
 	skillIconNames.Where(icon => !File.Exists(Path.Combine(skillFiles, icon + ".png"))).ToList().Dump("Missing Icons");
 	new DirectoryInfo(skillFiles).GetFiles("*.png", SearchOption.TopDirectoryOnly).ToList().Where(f => !skillIconNames.Contains(f.Name.Replace(".png", ""))).Select(f => f.Name).Dump("Extra Icon Files");
 
-	var skillsJSON = String.Format("var SKILL_DATA = {{\r\n{0}\r\n}}", String.Join(",\r\n", skills.Select(skill => String.Format(
+	var skillsJSON = String.Format("var SKILL_DATA = {{\r\n{0}\r\n}};", String.Join(",\r\n", skills.Select(skill => String.Format(
 @"	""{0}"" : {{
 		""name"": ""{1}"",
 		""type"": ""{2}"",
 		""icon"": ""{3}"",
 		""desc"": ""{4}""
-	}}", skill.id, skill.name, skill.type, skill.icon, skill.desc.Replace("'", "\'"))))) + @"
+	}}", skill.id, skill.name.Replace(@"\'", "'"), skill.type, skill.icon, skill.desc.Replace(@"\'", "'"))))) + @"
+	
 for(var skillID in SKILL_DATA) {
 	var skillInfo = SKILL_DATA[skillID];
 	if(skillID === 'flurry') {
@@ -317,7 +318,7 @@ for(var skillID in SKILL_DATA) {
 		}
 		var imageName = key.Substring(0, split);
 		var suffix = image.Key[split + 1];
-		int fusion = suffixMap[suffix];
+		suffixMap.TryGetValue(suffix, out int fusion);
 		
 		string fullID;
 		if (unusedIDHash.ContainsKey(imageName))
@@ -899,7 +900,7 @@ public class unit
 		{
 			if (this.portraitField != null)
 			{
-				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "").Replace("Portrait_", "");
+				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "").Replace("Portrait_", "").Replace("Portraits_", "");
 			}
 			else
 			{

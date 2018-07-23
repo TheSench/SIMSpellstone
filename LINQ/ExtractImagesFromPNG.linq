@@ -245,7 +245,7 @@ private void ExtractImages(string assetName, string filename, Bitmap srcImage, L
 					var spriteName = sprite.Name;
 					if (type == CardType.Commander)
 					{
-						spriteName = "portrait_" + spriteName.ToLower().Replace("portrait_", "");
+						spriteName = "portrait_" + spriteName.ToLower().Replace("portrait_", "").Replace("portraits_", "");
 					}
 					var newFileName = String.Format("{0}.{1}", spriteName, imageFormat).Dump();
 					cropped.RotateFlip(rotation);

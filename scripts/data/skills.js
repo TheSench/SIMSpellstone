@@ -126,7 +126,7 @@ var SKILL_DATA = {
 		"desc": "Deals damage in a cone to up to three creatures in front of it."
 	},
 	"fury" : {
-		"name": "Maelstrom\'s Fury",
+		"name": "Maelstrom's Fury",
 		"type": "onDamaged",
 		"icon": "fury",
 		"desc": "When damaged by an attack, deal damage to attacker and increase Attack permanently"
@@ -135,7 +135,7 @@ var SKILL_DATA = {
 		"name": "Haste",
 		"type": "activation",
 		"icon": "fury",
-		"desc": "Decreases the creature\'s delay."
+		"desc": "Decreases the creature's delay."
 	},
 	"heal" : {
 		"name": "Heal",
@@ -171,13 +171,13 @@ var SKILL_DATA = {
 		"name": "Freeze",
 		"type": "activation",
 		"icon": "freeze",
-		"desc": "Random enemy creature doesn\'t attack or activate abilities on its next turn. Activates every {c} turns."
+		"desc": "Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns."
 	},
 	"jamself" : {
 		"name": "Freeze Self",
 		"type": "activation",
 		"icon": "freeze",
-		"desc": "This creature doesn\'t attack or activate abilities on its next turn. Activates every {c} turns."
+		"desc": "This creature doesn't attack or activate abilities on its next turn. Activates every {c} turns."
 	},
 	"leech" : {
 		"name": "Siphon",
@@ -246,7 +246,7 @@ var SKILL_DATA = {
 		"desc": "Boosts Attack of a random allied creature"
 	},
 	"reanimate" : {
-		"name": "A Knight\'s Fate",
+		"name": "A Knight's Fate",
 		"type": "onDeath",
 		"icon": "reanimate",
 		"desc": "On death, is subject to a cruel fate."
@@ -285,7 +285,7 @@ var SKILL_DATA = {
 		"name": "Slow",
 		"type": "activation",
 		"icon": "bind",
-		"desc": "Increases the creature\'s delay."
+		"desc": "Increases the creature's delay."
 	},
 	"strike" : {
 		"name": "Bolt",
@@ -323,7 +323,8 @@ var SKILL_DATA = {
 		"icon": "hinder",
 		"desc": "Reduces Attack of a random allied creature"
 	}
-}
+};
+	
 for(var skillID in SKILL_DATA) {
 	var skillInfo = SKILL_DATA[skillID];
 	if(skillID === 'flurry') {
