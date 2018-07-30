@@ -3253,5 +3253,295 @@ var MAP_BATTLEGROUNDS = {
         ]
       }
     ]
+  },
+  "3012": {
+    "id": "3012",
+    "name": "Airship Upgrades",
+    "desc": "Repair your airship and get its defense functions back online. Use Golden Leaves as catalyst!",
+    "location_id": "17",
+    "effects": [
+      {
+        "id": "35",
+        "name": "Airship Support",
+        "upgrades": [
+          {
+            "desc": "",
+            "effect": [
+              
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 1 each turn.",
+            "name": "Airship Support",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 1,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 2 each turn.",
+            "name": "Airship Support",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 2,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 3 each turn.",
+            "name": "Airship Support",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 3,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 4 each turn.",
+            "name": "Airship Support",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 4,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 5 each turn.",
+            "name": "Airship Support",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 5,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 6 each turn.",
+            "name": "Airship Support",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 6,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "36",
+        "name": "Airship Countermeasures",
+        "upgrades": [
+          {
+            "desc": "",
+            "effect": [
+              
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Vengeance 1 each turn.",
+            "name": "Airship Countermeasures",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "counter",
+                "x": 1,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Vengeance 2 each turn.",
+            "name": "Airship Countermeasures",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "counter",
+                "x": 2,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Vengeance 4 each turn.",
+            "name": "Airship Countermeasures",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "counter",
+                "x": 4,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Vengeance 6 each turn.",
+            "name": "Airship Countermeasures",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "counter",
+                "x": 6,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Vengeance 8 each turn.",
+            "name": "Airship Countermeasures",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "counter",
+                "x": 8,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Vengeance 10 each turn.",
+            "name": "Airship Countermeasures",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "counter",
+                "x": 10,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "37",
+        "name": "Airship Cannon",
+        "upgrades": [
+          {
+            "desc": "",
+            "effect": [
+              
+            ]
+          },
+          {
+            "desc": "All enemy creatures are hit with Bolt 1 each turn.",
+            "name": "Airship Cannon",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "strike",
+                "x": 1,
+                "all": "1",
+                "enemy_only": "1",
+                "ally_turn": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All enemy creatures are hit with Bolt 2 each turn.",
+            "name": "Airship Cannon",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "strike",
+                "x": 2,
+                "all": "1",
+                "enemy_only": "1",
+                "ally_turn": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All enemy creatures are hit with Bolt 3 each turn.",
+            "name": "Airship Cannon",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "strike",
+                "x": 3,
+                "all": "1",
+                "enemy_only": "1",
+                "ally_turn": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All enemy creatures are hit with Bolt 4 each turn.",
+            "name": "Airship Cannon",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "strike",
+                "x": 4,
+                "all": "1",
+                "enemy_only": "1",
+                "ally_turn": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All enemy creatures are hit with Bolt 5 each turn.",
+            "name": "Airship Cannon",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "strike",
+                "x": 5,
+                "all": "1",
+                "enemy_only": "1",
+                "ally_turn": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All enemy creatures are hit with Bolt 6 each turn.",
+            "name": "Airship Cannon",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "strike",
+                "x": 6,
+                "all": "1",
+                "enemy_only": "1",
+                "ally_turn": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 };

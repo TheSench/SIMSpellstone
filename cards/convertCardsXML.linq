@@ -243,7 +243,7 @@ for(var skillID in SKILL_DATA) {
 
 	var imageRemappings = new Dictionary<string, string>()
 	{
-		{"4003", "Mythic_Champion_A"}
+		//{"4003", "Mythic_Champion_A"}
 	};
 	foreach (var filename in cardFiles)
 	{

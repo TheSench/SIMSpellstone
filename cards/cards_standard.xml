@@ -2970,7 +2970,8 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
+      <health>26</health>
+      <skill id="armored" x="5" />
       <skill id="valor" x="9" />
       <skill id="legion" x="4" />
     </upgrade>
@@ -4735,7 +4736,7 @@
       <level>4</level>
       <skill id="evade" x="1" />
       <skill id="enfeeble" x="1" all="1" />
-      <skill id="poison" x="4" />
+      <skill id="poison" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -4755,7 +4756,7 @@
     <rarity>3</rarity>
     <skill id="evade" x="2" />
     <skill id="enfeeble" x="1" all="1" />
-    <skill id="poison" x="4" />
+    <skill id="poison" x="6" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
@@ -4771,12 +4772,13 @@
     <upgrade>
       <level>4</level>
       <attack>7</attack>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="evade" x="2" />
       <skill id="enfeeble" x="2" all="1" />
-      <skill id="poison" x="5" />
+      <skill id="poison" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -7735,16 +7737,20 @@
     <upgrade>
       <level>3</level>
       <attack>6</attack>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>32</health>
+      <attack>7</attack>
+      <health>33</health>
       <skill id="evade" x="2" />
       <skill id="heal" x="4" all="1" y="4" />
       <skill id="enfeeble" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>8</attack>
+      <health>34</health>
       <skill id="evade" x="2" />
       <skill id="heal" x="4" all="1" y="4" />
       <skill id="enfeeble" x="3" all="1" />

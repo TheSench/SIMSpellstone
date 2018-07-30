@@ -557,7 +557,7 @@
         <target_effect>
           <prefab>PoisonHide</prefab>
           <bundle_id>96</bundle_id>
-          <delay>.5</delay>
+          <delay>0.1</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>

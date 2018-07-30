@@ -59,12 +59,6 @@ var SKILL_DATA = {
 		"icon": "counterburn",
 		"desc": "When damaged by an attack, Scorch the attacker"
 	},
-	"counterpoison" : {
-		"name": "Poisonhide",
-		"type": "onDamaged",
-		"icon": "counterpoison",
-		"desc": "When damaged by an attack, Poison the attacker"
-	},
 	"daze" : {
 		"name": "Daze",
 		"type": "onAttack",
