@@ -457,12 +457,12 @@ var BATTLEGROUNDS = {
   "128": {
     "name": "Poisonhide",
     "id": "128",
-    "desc": "When a Frog is damaged by an attack, it deals Poison damage to the attacker equal to 3 plus 10% of the Frog's base Health.",
+    "desc": "When a Frog is damaged by an attack, it deals Poison damage to the attacker equal to 5 plus 10% of the Frog's base Health.",
     "effect": [
       {
         "effect_type": "add_skill",
         "id": "counterpoison",
-        "x": 3,
+        "x": 5,
         "mult": 0.1,
         "base": "health",
         "y": "4",

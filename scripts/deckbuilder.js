@@ -1657,6 +1657,7 @@ var showAdvancedFilters = function (skill) {
 		case 'evadebarrier':
 		case 'frost':
 		case 'fury':
+		case 'heartseeker':
 		case 'leech':
 		case 'nullify':
 		case 'pierce':

@@ -163204,6 +163204,269 @@ var CARDS = {
       },
     }
   },
+  "7203": {
+    "id": "7203",
+    "name": "Tuloom, Spirit Shaman",
+    "picture": "ShamanGhostFrog01",
+    "hidden_until": "1533574800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","7"],
+    "health": 18,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "17203": {
+    "id": "17203",
+    "name": "Tuloom, Ghost Shaman",
+    "picture": "ShamanGhostFrog01",
+    "hidden_until": "1533574800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","7"],
+    "health": 22,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "27203": {
+    "id": "27203",
+    "name": "Tuloom, Soul Shaman",
+    "picture": "ShamanGhostFrog02",
+    "hidden_until": "1533574800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","7"],
+    "health": 26,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 5,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+        ],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 28,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 9,
+          },
+        ],
+      },
+    }
+  },
   "2000": {
     "id": "2000",
     "name": "Wasteland Nomad",
@@ -194449,6 +194712,213 @@ var CARDS = {
           {
             "id": "daze",
             "x": 11,
+          },
+        ],
+      },
+    }
+  },
+  "7602": {
+    "id": "7602",
+    "name": "Leafsinger",
+    "picture": "Treemaster_Frog_A",
+    "hidden_until": "1533229200000",
+    "rarity": "4",
+    "set": "5100",
+    "card_type": "2",
+    "shard_card": 1,
+    "type": "3",
+    "sub_type": ["4"],
+    "health": 25,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 10,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 5,
+        "y": "4",
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "daze",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 6,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 6,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 7,
+          },
+        ],
+      },
+      "4": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 7,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 7,
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "health": 29,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 7,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 8,
+          },
+        ],
+      },
+      "6": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 7,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 9,
+          },
+        ],
+      },
+      "7": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 8,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 9,
+          },
+        ],
+      },
+      "8": {
+        "attack": 9,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 8,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 10,
+          },
+        ],
+      },
+      "9": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 9,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 10,
+          },
+        ],
+      },
+      "10": {
+        "attack": 10,
+        "health": 33,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 9,
+            "y": "4",
+          },
+          {
+            "id": "heal",
+            "x": 6,
+            "all": "1",
+          },
+          {
+            "id": "daze",
+            "x": 10,
           },
         ],
       },
@@ -226711,21 +227181,6 @@ var CARDS = {
   },
   "9950": {
     "id": "9950",
-    "name": "Unused Art - 'Treemaster_Frog'",
-    "picture": "Treemaster_Frog_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9949": {
-    "id": "9949",
     "name": "Unused Art - 'Tremor_Wurm'",
     "picture": "Tremor_Wurm_A",
     "rarity": "0",
@@ -226739,8 +227194,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9948": {
-    "id": "9948",
+  "9949": {
+    "id": "9949",
     "name": "Unused Art - 'Unused1'",
     "picture": "Unused1_A",
     "rarity": "0",
@@ -226754,8 +227209,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9947": {
-    "id": "9947",
+  "9948": {
+    "id": "9948",
     "name": "Unused Art - 'Unused2'",
     "picture": "Unused2_A",
     "rarity": "0",
@@ -226769,8 +227224,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9946": {
-    "id": "9946",
+  "9947": {
+    "id": "9947",
     "name": "Unused Art - 'Unused3'",
     "picture": "Unused3_A",
     "rarity": "0",
@@ -226784,8 +227239,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9945": {
-    "id": "9945",
+  "9946": {
+    "id": "9946",
     "name": "Unused Art - 'Ursurio'",
     "picture": "Ursurio_A",
     "rarity": "0",
@@ -226799,8 +227254,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9944": {
-    "id": "9944",
+  "9945": {
+    "id": "9945",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_A",
     "rarity": "0",
@@ -226814,8 +227269,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19944": {
-    "id": "19944",
+  "19945": {
+    "id": "19945",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_B",
     "rarity": "0",
@@ -226829,8 +227284,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9943": {
-    "id": "9943",
+  "9944": {
+    "id": "9944",
     "name": "Unused Art - 'Void_Abomination'",
     "picture": "Void_Abomination_A",
     "rarity": "0",
@@ -226844,8 +227299,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9942": {
-    "id": "9942",
+  "9943": {
+    "id": "9943",
     "name": "Unused Art - 'Yuriel'",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -226860,4 +227315,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1533052543456.31;
+var CardsUpdated = 1533146240960.92;

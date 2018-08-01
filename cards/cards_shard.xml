@@ -1400,4 +1400,94 @@
     </upgrade>
     <desc>Lost but Sea King.</desc>
   </unit>
+  <unit>
+    <id>7602</id>
+    <card_type>2</card_type>
+    <name>Leafsinger</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Treemaster_Frog_A</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1533229200</hidden_until_time>
+    <item_name>Leafsinger Stone</item_name>
+    <item_desc>Collect Leafsinger Stones to upgrade the Legendary Leafsinger card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <attack>7</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" y="4" x="5" />
+    <skill id="heal" all="1" x="2" />
+    <skill id="daze" x="6" />
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="heal" y="4" x="6" />
+      <skill id="heal" all="1" x="2" />
+      <skill id="daze" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="heal" y="4" x="6" />
+      <skill id="heal" all="1" x="3" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="heal" y="4" x="7" />
+      <skill id="heal" all="1" x="3" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <health>29</health>
+      <skill id="heal" y="4" x="7" />
+      <skill id="heal" all="1" x="4" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="heal" y="4" x="7" />
+      <skill id="heal" all="1" x="4" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>31</health>
+      <skill id="heal" y="4" x="8" />
+      <skill id="heal" all="1" x="5" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>9</attack>
+      <skill id="heal" y="4" x="8" />
+      <skill id="heal" all="1" x="5" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>32</health>
+      <skill id="heal" y="4" x="9" />
+      <skill id="heal" all="1" x="5" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>10</attack>
+      <health>33</health>
+      <skill id="heal" y="4" x="9" />
+      <skill id="heal" all="1" x="6" />
+      <skill id="daze" x="10" />
+    </upgrade>
+  </unit>
 </root>

@@ -549,10 +549,10 @@
   <battleground>
     <id>128</id>
     <name>Poisonhide</name>
-    <desc>When a Frog is damaged by an attack, it deals Poison damage to the attacker equal to 3 plus 10% of the Frog's base Health.</desc>
+    <desc>When a Frog is damaged by an attack, it deals Poison damage to the attacker equal to 5 plus 10% of the Frog's base Health.</desc>
     <icon>filter_frog_64</icon>
     <effect>
-      <add_skill id="counterpoison" mult="0.1" base="health" x="3" y="4" />
+      <add_skill id="counterpoison" mult="0.1" base="health" x="5" y="4" />
       <skill id="displayEffect" trigger="onSkill" s="counterpoison">
         <target_effect>
           <prefab>PoisonHide</prefab>

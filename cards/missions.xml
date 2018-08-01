@@ -125,6 +125,11 @@
     <mission_req>11</mission_req>
     <!-- -1 -->
   </feature_lock>
+  <feature_lock>
+    <id>auto_battle</id>
+    <mission_req>11</mission_req>
+    <!-- 104 -->
+  </feature_lock>
   <!-- COMBAT OPTIONS -->
   <feature_lock>
     <id>combatspeed</id>

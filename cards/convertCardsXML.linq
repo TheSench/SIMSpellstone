@@ -50,6 +50,7 @@ void Main()
 	Normalize("achievements.xml", downloadFiles);
 	Normalize("battleground_effects.xml", downloadFiles);
 	Normalize("campaigns.xml", downloadFiles);
+	Normalize("cards_config.xml", downloadFiles);
 	cardFiles.ForEach(cardFile => Normalize(cardFile, downloadFiles));
 	Normalize("fusion_recipes_cj2.xml", downloadFiles);
 	Normalize("guilds.xml", downloadFiles);
@@ -93,6 +94,7 @@ void Main()
 		{"corrosive", "onDamaged"},
 		{"counter", "onDamaged"},
 		{"counterburn", "onDamaged"},
+		{"counterpoison", "onDamaged"},
 		{"daze", "onAttack"},
 		{"evade", "turnStart"},
 		{"fury", "onDamaged"},
@@ -152,6 +154,7 @@ void Main()
 		{"protect_ice", "iceshatter"},
 		{"poisonstrike", "poison_bolt"},
 		{"counterburn", "counterburn"},
+		{"counterpoison", "counterburn"},
 		{"slow", "bind"},
 		{"enlarge", "empower"}
 	};
