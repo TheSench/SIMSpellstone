@@ -24584,6 +24584,136 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6199</id>
+    <card_type>2</card_type>
+    <name>Solblade</name>
+    <picture>Dark_Knight_Sword_Frog_A</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1533834000</hidden_until_time>
+    <attack>5</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="3" />
+    <skill id="burn" x="2" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="regenerate" x="3" />
+      <skill id="burn" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+      <skill id="regenerate" x="4" />
+      <skill id="burn" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16199</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Solblade Knight</name>
+    <picture>Dark_Knight_Sword_Frog_A</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1533834000</hidden_until_time>
+    <attack>6</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="burn" x="3" />
+    <skill id="flurry" c="3" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="5" />
+      <skill id="burn" x="4" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26199</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Solblade Darknight</name>
+    <picture>Dark_Knight_Sword_Frog_B</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1533834000</hidden_until_time>
+    <attack>7</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="burn" x="4" />
+    <skill id="flurry" c="2" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="regenerate" x="6" />
+      <skill id="burn" x="5" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="7" />
+      <skill id="burn" x="6" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6201</id>
     <card_type>2</card_type>
     <name>Blasteye Sentry</name>

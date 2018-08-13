@@ -1966,7 +1966,7 @@
     <id>443</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XXXIX</name>
+    <name>Bounty Hunter XLIII</name>
     <desc>Collect 18,500 Bounties.</desc>
     <achievement_req>442</achievement_req>
     <req>
@@ -1980,7 +1980,7 @@
     <id>444</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XL</name>
+    <name>Bounty Hunter XLIV</name>
     <desc>Collect 19,000 Bounties.</desc>
     <achievement_req>443</achievement_req>
     <req>
@@ -1994,7 +1994,7 @@
     <id>445</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XLI</name>
+    <name>Bounty Hunter XL</name>
     <desc>Collect 19,500 Bounties.</desc>
     <achievement_req>444</achievement_req>
     <req>
@@ -2008,7 +2008,7 @@
     <id>446</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XLII</name>
+    <name>Bounty Hunter XLI</name>
     <desc>Collect 20,000 Bounties.</desc>
     <achievement_req>445</achievement_req>
     <req>
@@ -2022,7 +2022,7 @@
     <id>447</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XXXIX</name>
+    <name>Bounty Hunter XLII</name>
     <desc>Collect 20,500 Bounties.</desc>
     <achievement_req>446</achievement_req>
     <req>
@@ -2036,7 +2036,7 @@
     <id>448</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XL</name>
+    <name>Bounty Hunter XLIII</name>
     <desc>Collect 21,000 Bounties.</desc>
     <achievement_req>447</achievement_req>
     <req>
@@ -2050,7 +2050,7 @@
     <id>449</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XLI</name>
+    <name>Bounty Hunter XLIX</name>
     <desc>Collect 21,500 Bounties.</desc>
     <achievement_req>448</achievement_req>
     <req>
@@ -2064,7 +2064,7 @@
     <id>450</id>
     <type>4</type>
     <order>506</order>
-    <name>Bounty Hunter XLII</name>
+    <name>Bounty Hunter L</name>
     <desc>Collect 22,000 Bounties.</desc>
     <achievement_req>449</achievement_req>
     <req>
@@ -9382,6 +9382,24 @@
     </req>
     <reward>
       <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Stoneclad Toad -->
+  <achievement>
+    <id>3392</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dream Awakened</name>
+    <desc>Complete the 'Dream Awakened' campaign on Mastery Level 1.</desc>
+    <mission_req>5966</mission_req>
+    <locked_start_time>1533834000</locked_start_time>
+    <!-- Thu, Aug 09 2018 17:00:00 -->
+    <req>
+      <campaign>1180</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8011" number="1" />
     </reward>
   </achievement>
   <!-- END Event Quests  -->

@@ -6014,6 +6014,7 @@
     </rewards>
     <find_item id="3074" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node Storm Lord Father -->
   <campaign>
     <id>1174</id>
     <name>Storm Lord Father</name>
@@ -6190,7 +6191,7 @@
     <location_id>17</location_id>
     <x>300</x>
     <y>233</y>
-    <combatBG>CombatBGEvent008</combatBG>
+    <combatBG>CombatBGEvent004</combatBG>
     <missions>
       <mission_id>6022</mission_id>
       <mission_id>6023</mission_id>
@@ -6213,6 +6214,39 @@
       <card level="5" id="512" />
       <card level="6" id="2069" />
       <item level="7" id="3078" />
+    </rewards>
+    <find_item id="3077" drop_per_energy=".4" />
+  </campaign>
+  <!-- Boss Node Dream Awakened -->
+  <campaign>
+    <id>1180</id>
+    <name>Dream Awakened</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1178" level="1" />
+    <locked_start_time>1533834000</locked_start_time>
+    <!-- Thu, Aug 09 2018 17:00:00 -->
+    <battleground_id>2045</battleground_id>
+    <location_id>17</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>800</x>
+    <y>320</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>6034</mission_id>
+      <mission_id>6035</mission_id>
+      <mission_id>6036</mission_id>
+      <mission_id>6037</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3079" />
+      <item level="5" id="3079" />
+      <item level="6" id="3079" />
+      <item level="7" id="3079" />
     </rewards>
     <find_item id="3077" drop_per_energy=".4" />
   </campaign>

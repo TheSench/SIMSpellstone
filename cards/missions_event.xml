@@ -32592,4 +32592,101 @@
       </line>
     </speech>
   </mission>
+  <!-- Boss Node Dream Awakened -->
+  <mission>
+    <id>6034</id>
+    <name>Light Extinguished</name>
+    <energy>9</energy>
+    <desc>An unending army of Frogs attacks. When one falls, another takes its place. Kachina raises her dream catcher slowly, until its net covers the brightest star. The night sky's color drains, the blue bleeding into darkness, blackness seeping around you. The bell tolls three.</desc>
+    <commander id="419" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="5160" name="Tetsudo's Shield" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7050" name="Krieg, Northern Sword" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="7102" name="Croaker's Disciple" />
+      <card id="2071" mastery_level="2" name="Sproutfrog Rainwisher" />
+      <card id="5157" mastery_level="3" name="Spellbind Magus" />
+      <card id="5101" mastery_level="4" name="Sycophant" />
+      <card id="7165" mastery_level="5" name="Wrathstomp Irontusk" />
+      <card id="7100" mastery_level="6" name="Tempest Caller" />
+      <card id="7120" mastery_level="7" name="Liliane's Blessing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6035</id>
+    <name>Discarded Dreams</name>
+    <energy>9</energy>
+    <desc>You shove off one Frog, and another, trying desperately to reach Kachina. One by one, the stars blink and fade out, falling from the sky and into the dark void beneath your feet. The bell tolls six.</desc>
+    <commander id="419" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="5160" name="Tetsudo's Shield" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7050" name="Krieg, Northern Sword" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="7102" name="Croaker's Disciple" />
+      <card id="2071" mastery_level="2" name="Sproutfrog Rainwisher" />
+      <card id="5157" mastery_level="3" name="Spellbind Magus" />
+      <card id="5101" mastery_level="4" name="Sycophant" />
+      <card id="7165" mastery_level="5" name="Wrathstomp Irontusk" />
+      <card id="7100" mastery_level="6" name="Tempest Caller" />
+      <card id="7120" mastery_level="7" name="Liliane's Blessing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6036</id>
+    <name>The Time Draws Near</name>
+    <energy>9</energy>
+    <desc>The sound of the bell rings in steady intervals, the echo muted and off-tone. You shove and push the Frogs out of your way, as a voice sings quietly, the words too whispered for you to make out. The bell tolls nine.</desc>
+    <commander id="419" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="5160" name="Tetsudo's Shield" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7050" name="Krieg, Northern Sword" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="7102" name="Croaker's Disciple" />
+      <card id="2071" mastery_level="2" name="Sproutfrog Rainwisher" />
+      <card id="5157" mastery_level="3" name="Spellbind Magus" />
+      <card id="5101" mastery_level="4" name="Sycophant" />
+      <card id="7165" mastery_level="5" name="Wrathstomp Irontusk" />
+      <card id="7100" mastery_level="6" name="Tempest Caller" />
+      <card id="7120" mastery_level="7" name="Liliane's Blessing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6037</id>
+    <name>A Dream's Demise</name>
+    <energy>9</energy>
+    <desc>Kachina's dream catcher drains the last rays of light, dousing the night sky in darkness. Her dream catcher brightens like a torch, light playing eerily off her features, wings steeped in black and red. The frogs gathering around her for one final fight. The bell tolls twelve.</desc>
+    <commander id="419" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="5160" name="Tetsudo's Shield" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7050" name="Krieg, Northern Sword" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="7102" name="Croaker's Disciple" />
+      <card id="2071" mastery_level="2" name="Sproutfrog Rainwisher" />
+      <card id="5157" mastery_level="3" name="Spellbind Magus" />
+      <card id="5101" mastery_level="4" name="Sycophant" />
+      <card id="7165" mastery_level="5" name="Wrathstomp Irontusk" />
+      <card id="7100" mastery_level="6" name="Tempest Caller" />
+      <card id="7120" mastery_level="7" name="Liliane's Blessing" />
+    </deck>
+  </mission>
 </root>

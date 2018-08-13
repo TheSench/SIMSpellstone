@@ -442,7 +442,7 @@ var BATTLEGROUNDS = {
   "127": {
     "name": "Insectile Venom",
     "id": "127",
-    "desc": "Insects gain Venom equal to 1 plus 15% of their base Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.",
+    "desc": "Insects gain Venom equal to 1 plus 15% of their base Health. Creatures affected by Venom take damage at the end of the turn, and take additional damage from attacks and skills.",
     "effect": [
       {
         "effect_type": "add_skill",
@@ -2191,6 +2191,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .008,
         "mult": .0025,
+      },
+    ]
+  },
+  "2045": {
+    "name": "Prelude of Light",
+    "id": "2045",
+    "desc": "Kachina, Transcended fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .25,
+        "mult": .01,
       },
     ]
   },

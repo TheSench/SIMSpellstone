@@ -127,8 +127,8 @@
   </feature_lock>
   <feature_lock>
     <id>auto_battle</id>
-    <mission_req>11</mission_req>
-    <!-- 104 -->
+    <mission_req>104</mission_req>
+    <!-- 104 feature -->
   </feature_lock>
   <!-- COMBAT OPTIONS -->
   <feature_lock>
