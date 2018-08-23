@@ -9402,6 +9402,149 @@
       <item id="8011" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 11 weeks 5-8 -->
+  <achievement>
+    <id>3393</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Outskirts</name>
+    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 2.</desc>
+    <mission_req>6033</mission_req>
+    <locked_start_time>1535043600</locked_start_time>
+    <!-- Thu, Aug 23 2018 17:00:00 -->
+    <req>
+      <campaign>1181</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3394</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Outskirts</name>
+    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 4.</desc>
+    <mission_req>6033</mission_req>
+    <locked_start_time>1535043600</locked_start_time>
+    <!-- Thu, Aug 23 2018 17:00:00 -->
+    <achievement_req>3393</achievement_req>
+    <req>
+      <campaign>1181</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3395</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Outskirts</name>
+    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 6.</desc>
+    <mission_req>6033</mission_req>
+    <locked_start_time>1535043600</locked_start_time>
+    <achievement_req>3394</achievement_req>
+    <!-- Thu, Aug 23 2018 17:00:00 -->
+    <req>
+      <campaign>1181</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3396</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Village Outskirts</name>
+    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 7.</desc>
+    <mission_req>6033</mission_req>
+    <locked_start_time>1535043600</locked_start_time>
+    <!-- Thu, Aug 23 2018 17:00:00 -->
+    <achievement_req>3395</achievement_req>
+    <req>
+      <campaign>1181</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3397</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Dream's Depths</name>
+    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 2.</desc>
+    <mission_req>6050</mission_req>
+    <locked_start_time>1536253200</locked_start_time>
+    <!-- Thu, Sept 06 2018 17:00:00 -->
+    <req>
+      <campaign>1182</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3398</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Dream's Depths</name>
+    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 4.</desc>
+    <mission_req>6050</mission_req>
+    <locked_start_time>1536253200</locked_start_time>
+    <!-- Thu, Sept 06 2018 17:00:00 -->
+    <achievement_req>3397</achievement_req>
+    <req>
+      <campaign>1182</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3399</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Dream's Depths</name>
+    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 6.</desc>
+    <mission_req>6050</mission_req>
+    <locked_start_time>1536253200</locked_start_time>
+    <!-- Thu, Sept 06 2018 17:00:00 -->
+    <achievement_req>3398</achievement_req>
+    <req>
+      <campaign>1182</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3400</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Dream's Depths</name>
+    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 7.</desc>
+    <mission_req>6050</mission_req>
+    <locked_start_time>1536253200</locked_start_time>
+    <!-- Thu, Sept 06 2018 17:00:00 -->
+    <achievement_req>3399</achievement_req>
+    <req>
+      <campaign>1182</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -9618,6 +9761,28 @@
       <campaign>1174</campaign>
       <campaign>1175</campaign>
       <campaign>1176</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Golden Crown Village -->
+    <id>4011</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Golden Crown Village</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Golden Crown Village.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6037</mission_req>
+    <req>
+      <campaign>1177</campaign>
+      <campaign>1178</campaign>
+      <campaign>1179</campaign>
+      <campaign>1180</campaign>
+      <campaign>1181</campaign>
+      <campaign>1182</campaign>
       <level>7</level>
     </req>
     <reward>

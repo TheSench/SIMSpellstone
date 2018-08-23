@@ -285,11 +285,12 @@
   </battleground>
   <battleground>
     <id>114</id>
-    <name>Eagle Eye</name>
-    <desc>Each Avian marks a random target upon first activation, Hexing them for 30% of their base Attack. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
+    <name>Eyes in the Sky</name>
+    <desc>Each Avian marks a random target upon first activation, Hexing them for 15% of their base Health. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
     <icon>filter_avian_64.png</icon>
     <effect>
-      <add_skill id="mark" mult="0.3" base="attack" y="10" />
+      <!-- <add_skill id='mark' mult='0.3' base='attack' y='10' /> -->
+      <add_skill id="mark" mult="0.15" base="health" y="10" />
       <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
         <target_effect>
           <prefab>EagleEye</prefab>
@@ -1971,6 +1972,39 @@
     <!-- Starting Mastery Level -->
     <effect>
       <scale_attributes base_mult=".25" mult=".01" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 11 -->
+  <battleground>
+    <id>2046</id>
+    <name>Sunrisen Divertimento</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_frog_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2047</id>
+    <name>Sunrisen Divertimento</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_frog_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".01" />
     </effect>
   </battleground>
   <!-- ==================== -->

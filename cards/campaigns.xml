@@ -6250,6 +6250,80 @@
     </rewards>
     <find_item id="3077" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event 11 weeks 5-8 -->
+  <campaign>
+    <id>1181</id>
+    <name>Village Outskirts</name>
+    <campaign_req id="1179" level="1" />
+    <locked_start_time>1535043600</locked_start_time>
+    <!-- Thu, Aug 23 2018 17:00:00 -->
+    <battleground_id>2046</battleground_id>
+    <location_id>17</location_id>
+    <x>460</x>
+    <y>203</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>6038</mission_id>
+      <mission_id>6039</mission_id>
+      <mission_id>6040</mission_id>
+      <mission_id>6041</mission_id>
+      <mission_id>6042</mission_id>
+      <mission_id>6043</mission_id>
+      <mission_id>6044</mission_id>
+      <mission_id>6045</mission_id>
+      <mission_id>6046</mission_id>
+      <mission_id>6047</mission_id>
+      <mission_id>6048</mission_id>
+      <mission_id>6049</mission_id>
+      <mission_id>6050</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2135" />
+      <card level="5" id="512" />
+      <card level="6" id="2119" />
+      <item level="7" id="3078" />
+    </rewards>
+    <find_item id="3077" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1182</id>
+    <name>The Dream's Depths</name>
+    <campaign_req id="1181" level="1" />
+    <locked_start_time>1536253200</locked_start_time>
+    <!-- Thu, Sept 06 2018 17:00:00 -->
+    <battleground_id>2047</battleground_id>
+    <location_id>17</location_id>
+    <x>600</x>
+    <y>253</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>6051</mission_id>
+      <mission_id>6052</mission_id>
+      <mission_id>6053</mission_id>
+      <mission_id>6054</mission_id>
+      <mission_id>6055</mission_id>
+      <mission_id>6056</mission_id>
+      <mission_id>6057</mission_id>
+      <mission_id>6058</mission_id>
+      <mission_id>6059</mission_id>
+      <mission_id>6060</mission_id>
+      <mission_id>6061</mission_id>
+      <mission_id>6062</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2136" />
+      <card level="5" id="512" />
+      <card level="6" id="2081" />
+      <item level="7" id="3078" />
+    </rewards>
+    <find_item id="3077" drop_per_energy=".8" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

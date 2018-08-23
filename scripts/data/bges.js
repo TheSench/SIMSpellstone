@@ -186,15 +186,15 @@ var BATTLEGROUNDS = {
     ]
   },
   "114": {
-    "name": "Eagle Eye",
+    "name": "Eyes in the Sky",
     "id": "114",
-    "desc": "Each Avian marks a random target upon first activation, Hexing them for 30% of their base Attack. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.",
+    "desc": "Each Avian marks a random target upon first activation, Hexing them for 15% of their base Health. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.",
     "effect": [
       {
         "effect_type": "add_skill",
         "id": "mark",
-        "mult": 0.3,
-        "base": "attack",
+        "mult": 0.15,
+        "base": "health",
         "y": "10",
       },
     ]
@@ -467,20 +467,6 @@ var BATTLEGROUNDS = {
         "base": "health",
         "y": "4",
       },
-    ]
-  },
-  "129": {
-    "name": "Eyes in the Sky (preview)",
-    "id": "129",
-    "desc": "Each Avian marks a random target upon first activation, Hexing them for 15% of their base Health. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.",
-    "effect": [
-      {
-        "effect_type": "add_skill",
-        "id": "mark",
-        "mult": 0.15,
-        "base": "health",
-        "y": "10"
-      }
     ]
   },
   "501": {
@@ -2220,6 +2206,38 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "scale_attributes",
         "base_mult": .25,
+        "mult": .01,
+      },
+    ]
+  },
+  "2046": {
+    "name": "Sunrisen Divertimento",
+    "id": "2046",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
+  "2047": {
+    "name": "Sunrisen Divertimento",
+    "id": "2047",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
         "mult": .01,
       },
     ]

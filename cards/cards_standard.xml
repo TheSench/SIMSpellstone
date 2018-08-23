@@ -1706,10 +1706,11 @@
     <upgrade>
       <level>3</level>
       <health>16</health>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>6</attack>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
