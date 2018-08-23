@@ -25874,4 +25874,138 @@
       <skill id="leech" x="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7204</id>
+    <card_type>2</card_type>
+    <name>Gold Crown Mayor</name>
+    <picture>GoldenMayorFrog_A</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1534438800</hidden_until_time>
+    <attack>8</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="rally" x="2" all="1" y="4" />
+    <skill id="heal" x="2" all="1" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="2" all="1" y="4" />
+      <skill id="heal" x="3" all="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="3" all="1" y="4" />
+      <skill id="heal" x="3" all="1" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17204</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Gold Crown Leader</name>
+    <picture>GoldenMayorFrog_A</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1534438800</hidden_until_time>
+    <attack>9</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="rally" x="3" all="1" y="4" />
+    <skill id="heal" x="3" all="1" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="3" all="1" y="4" />
+      <skill id="heal" x="3" all="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="3" all="1" y="4" />
+      <skill id="heal" x="4" all="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="4" all="1" y="4" />
+      <skill id="heal" x="4" all="1" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27204</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gold Crown Matriarch</name>
+    <picture>GoldenMayorFrog_B</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1534438800</hidden_until_time>
+    <attack>11</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="rally" x="4" all="1" y="4" />
+    <skill id="heal" x="5" all="1" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="rally" x="4" all="1" y="4" />
+      <skill id="heal" x="5" all="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="rally" x="5" all="1" y="4" />
+      <skill id="heal" x="6" all="1" y="4" />
+    </upgrade>
+  </unit>
 </root>

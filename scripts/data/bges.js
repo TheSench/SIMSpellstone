@@ -469,6 +469,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "129": {
+    "name": "Eyes in the Sky (preview)",
+    "id": "129",
+    "desc": "Each Avian marks a random target upon first activation, Hexing them for 15% of their base Health. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "mark",
+        "mult": 0.15,
+        "base": "health",
+        "y": "10"
+      }
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",

@@ -32689,4 +32689,470 @@
       <card id="7120" mastery_level="7" name="Liliane's Blessing" />
     </deck>
   </mission>
+  <!-- Campaign Event 11 weeks 5-8 -->
+  <mission>
+    <id>6038</id>
+    <name>The Void's Cost</name>
+    <energy>9</energy>
+    <desc>Your journey takes you to the border of Golden Crown. In the distance, you can see a barren landscape, of dirt and charred tree stumps.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7053" name="Bee Eater" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="7053" name="Bee Eater" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="2041" mastery_level="2" name="Sharpwing" />
+      <card id="2040" mastery_level="3" name="Owlmancer" />
+      <card id="5050" mastery_level="4" name="Cloud Spear" />
+      <card id="6105" mastery_level="5" name="Wasteland Crusher" />
+      <card id="5159" mastery_level="6" name="Vortex Palm" />
+      <card id="5177" mastery_level="7" name="Thunderbird" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>We're close to Redfeather Valley... or what remains of it, at least.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>It looks worse than I expected. No wonder Magistrate Agni sought refuge in The Celestial Vault.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6039</id>
+    <name>Missing Scouts</name>
+    <energy>9</energy>
+    <desc>The Dawnglow Frogs are known for their fighting power, but even Kachina didn't dare enter this area unprepared. She tells you about one of the scouting teams sent to investigate this area....</desc>
+    <commander id="289" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1015" name="Windfrog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="7099" name="Toadplay" />
+      <card id="6050" name="Wortwog" />
+      <card id="6154" name="Egg Thief" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2042" mastery_level="2" name="Carrion Hunter" />
+      <card id="2082" mastery_level="3" name="Ecru Spear" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="5205" mastery_level="5" name="Dawnfire Knight" />
+      <card id="6152" mastery_level="6" name="Bladesear Infuser" />
+      <card id="6171" mastery_level="7" name="Kiki" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dream_Catcher</commander>
+        <enemy>0</enemy>
+        <text>Be careful. Our Lilypad division was originally sent to investigate this area, but they have gone missing.</text>
+      </line>
+      <line>
+        <commander>Portrait_Dream_Catcher</commander>
+        <enemy>0</enemy>
+        <text>That's why I asked the Mayor for additional aid.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6040</id>
+    <name>Avian Priests</name>
+    <energy>9</energy>
+    <desc>Your party is getting close to the temple. Avians in dark colored robes roam the area. You recognize some from the Crimsonwing attack at The Celestial Vault...</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="2011" name="Poliworg" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="7099" name="Toadplay" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="7029" mastery_level="2" name="Owl Griffin" />
+      <card id="2081" mastery_level="3" name="Starstriker" />
+      <card id="5099" mastery_level="4" name="Croak Dropper" />
+      <card id="6048" mastery_level="5" name="Bulwraag" />
+      <card id="6018" mastery_level="6" name="Underwater Lasher" />
+      <card id="6173" mastery_level="7" name="Toxophilite Watcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>Ka-kraw! More intruders? Teach these flightless ones some manners!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6041</id>
+    <name>Fighting on the Fringe</name>
+    <energy>9</energy>
+    <desc>The Avians descend upon you. They fight with with a fierce fury, targeting you before Kachina or Cedric. They clearly remember your fight against them...</desc>
+    <commander id="307" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1313" name="Lavafrog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="5053" name="Anura Witch" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="7171" mastery_level="2" name="Warpwood Warlock" />
+      <card id="6056" mastery_level="3" name="Potoo" />
+      <card id="7053" mastery_level="4" name="Bee Eater" />
+      <card id="6103" mastery_level="5" name="Ribbitaksu" />
+      <card id="1043" mastery_level="6" name="Lilypad Bard" />
+      <card id="7114" mastery_level="7" name="Worshipped Statue" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6042</id>
+    <name>Kachina's Fury</name>
+    <energy>9</energy>
+    <desc>You fend off the encroaching Crimsonwings Avians. Kachina demands answers for her missing Frog brethren.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1015" name="Windfrog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="2011" name="Poliworg" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="6050" name="Wortwog" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="6112" mastery_level="2" name="Fire Hawk" />
+      <card id="5044" mastery_level="3" name="Telepathic Magi" />
+      <card id="7053" mastery_level="4" name="Bee Eater" />
+      <card id="6199" mastery_level="5" name="Solblade" />
+      <card id="2071" mastery_level="6" name="Sproutfrog Rainwisher" />
+      <card id="7112" mastery_level="7" name="Fountain Guardian" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dream_Catcher</commander>
+        <enemy>0</enemy>
+        <text>Tell us what you have done with the other Dawnglow frogs!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6043</id>
+    <name>Of Frogs and Feathers</name>
+    <energy>9</energy>
+    <desc>The Crimsonwing Avians show little mercy. They continue to fight against you and your friends, relentlessly trying to take you down.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="7099" name="Toadplay" />
+      <card id="7099" name="Toadplay" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7057" mastery_level="3" name="Bill Crasher" />
+      <card id="6154" mastery_level="4" name="Egg Thief" />
+      <card id="7103" mastery_level="5" name="Wavomancer" />
+      <card id="7100" mastery_level="6" name="Snow Caller" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6044</id>
+    <name>Hope for Dawnglow...?</name>
+    <energy>9</energy>
+    <desc>As if on cue, the division of frogs emerges with part of the Crimsonwings' forces. However, something is wrong... the frogs are armed, but raise their weapons to aid the Crimsonwings!</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="7098" name="Survivalist" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="7057" mastery_level="2" name="Bill Crasher" />
+      <card id="5016" mastery_level="3" name="Fowl Swarm" />
+      <card id="7099" mastery_level="4" name="Toadplay" />
+      <card id="7049" mastery_level="5" name="Boundtoad" />
+      <card id="6052" mastery_level="6" name="Fuming Beast" />
+      <card id="6113" mastery_level="7" name="Trojan Crow" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>They had a little chat with High Priestess Tanit, that's all.</text>
+      </line>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>Now, they've realized the error of their past ways.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6045</id>
+    <name>In the Face of Evil</name>
+    <energy>9</energy>
+    <desc>Kachina remains surprisingly calm despite the Crimsonwing's declaration and the Lilypad Division's betrayal. The Crimsonwing takes note of the brave Frog.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7098" name="Survivalist" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7053" name="Bee Eater" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="6050" name="Wortwog" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2042" mastery_level="2" name="Carrion Hunter" />
+      <card id="2082" mastery_level="3" name="Ecru Spear" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="6101" mastery_level="5" name="Chasm Dowager" />
+      <card id="5018" mastery_level="6" name="Grand Knight Frog" />
+      <card id="6114" mastery_level="7" name="Blazing Emissary" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dream_Catcher</commander>
+        <enemy>0</enemy>
+        <text>Free them. They are of little use to you.</text>
+      </line>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>Hm, if you desire a favor from us, then you must first prove your worth...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6046</id>
+    <name>To the Crimsonwings' Lair</name>
+    <energy>9</energy>
+    <desc>The Crimsonwings pause. They lead you to the temple, a small stone structure at the edge of golden trees.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2011" name="Poliworg" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="1027" mastery_level="2" name="Griffin Knight" />
+      <card id="5044" mastery_level="3" name="Telepathic Magi" />
+      <card id="5102" mastery_level="4" name="Tribe Tracker" />
+      <card id="5202" mastery_level="5" name="Alchebian" />
+      <card id="5054" mastery_level="6" name="Reckless Ballista" />
+      <card id="5176" mastery_level="7" name="Raywing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>The High Priestess was the first to dream. If you are worthy of what you seek, then you will find it within her realm.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6047</id>
+    <name>The Redfeather Temple</name>
+    <energy>9</energy>
+    <desc>You ascend great stone stairs that lead to the temple's entrance. The interior is dark, but the Crimsonwing lights a torch and leads you deeper. Despite its age, the temple is clean, without visible dust or cobwebs.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="6172" name="Steel Plover" />
+      <card id="6172" mastery_level="2" name="Steel Plover" />
+      <card id="6054" mastery_level="3" name="Shadowcrafter" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="1643" mastery_level="5" name="Nimble Leaper" />
+      <card id="5159" mastery_level="6" name="Vortex Palm" />
+      <card id="5110" mastery_level="7" name="Alectryon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6048</id>
+    <name>Dream Elixir</name>
+    <energy>9</energy>
+    <desc>You stop before an altar. A statue has been carved into the stone on the wall; an Avian bowed in prayer, as if looking down to the altar. A conspicuous vial of blue liquid sits at the center.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5114" mastery_level="2" name="Wingward" />
+      <card id="5113" mastery_level="3" name="Bishop Rook" />
+      <card id="7016" mastery_level="4" name="Webfist Shaman" />
+      <card id="7052" mastery_level="5" name="Toad the Ravenous" />
+      <card id="7097" mastery_level="6" name="Caustic Toadbog" />
+      <card id="5173" mastery_level="7" name="Frostcrier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dream_Catcher</commander>
+        <enemy>0</enemy>
+        <text>This is... the stolen artifact, the dream elixir!</text>
+      </line>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>1</enemy>
+        <text>When you drink this elixir, you will fall into slumber. If you can prove yourself worthy to our High Priestess within the dream, we will release the frogs, and return the artifact.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Er, are you telling us to enter a dream?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6049</id>
+    <name>Kachina's Resolve</name>
+    <energy>9</energy>
+    <desc>Kachina eyes the vial, before looking to you and the Crimsonwing. She picks up the vial.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7053" name="Bee Eater" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="6154" name="Egg Thief" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" mastery_level="2" name="Valley Strider" />
+      <card id="5060" mastery_level="3" name="Quack Apprentice" />
+      <card id="2011" mastery_level="4" name="Poliworg" />
+      <card id="5205" mastery_level="5" name="Dawnfire Knight" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="5177" mastery_level="7" name="Thunderbird" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dream_Catcher</commander>
+        <enemy>0</enemy>
+        <text>I'll do it. I must.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6050</id>
+    <name>A Safety Precaution</name>
+    <energy>9</energy>
+    <desc>Cedric casts a wary look around the temple. You are completely surrounded by the Crimsonwing Avians, yet the trial would leave you defenseless.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="6154" name="Egg Thief" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="1027" mastery_level="2" name="Griffin Knight" />
+      <card id="6112" mastery_level="3" name="Fire Hawk" />
+      <card id="2012" mastery_level="4" name="Frogling Swarm" />
+      <card id="6155" mastery_level="5" name="Jorang, Frog Chemist" />
+      <card id="7042" mastery_level="6" name="Scurvy Hopper" />
+      <card id="2043" mastery_level="7" name="Eos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>I don't entirely trust these Avians, for us to simply fall asleep in front of them.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>I'll remain watch, while you attempt this trial, adventurer. We can't let Kachina do it alone.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6051</id>
+    <name>Into the Dream</name>
+    <energy>9</energy>
+    <desc>After Kachina finishes taking a swig of the vial, she hands it to you. A large portion of the elixir still remains, but you take a very small sip.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="7099" name="Toadplay" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="7098" name="Survivalist" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="2042" mastery_level="2" name="Carrion Hunter" />
+      <card id="5016" mastery_level="3" name="Fowl Swarm" />
+      <card id="5052" mastery_level="4" name="Paradise Avian" />
+      <card id="5159" mastery_level="5" name="Vortex Palm" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="7172" mastery_level="7" name="Rivertorch Renegade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6052</id>
+    <name>Sinking Sensation</name>
+    <energy>9</energy>
+    <desc>Your lips and face grow numb. The sensation spreads across your whole body, and your vision begins to blur. You lay down before the medicine knocks you off your feet, and close your eyes.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="5053" name="Anura Witch" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="5044" mastery_level="3" name="Telepathic Magi" />
+      <card id="5056" mastery_level="4" name="Kaliri the Foremost" />
+      <card id="5157" mastery_level="5" name="Spellbind Magus" />
+      <card id="6199" mastery_level="6" name="Solblade" />
+      <card id="7111" mastery_level="7" name="Aurai" />
+    </deck>
+  </mission>
 </root>
