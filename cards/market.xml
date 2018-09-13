@@ -181,7 +181,8 @@
   <store_item>
     <id>11</id>
     <name>Rare Pack</name>
-    <category>1</category>
+    <category>0</category>
+    <hidden>1</hidden>
     <desc>Gives two cards from Standard Set with one guaranteed ^c8E5FRare ^cFFFFor higher.</desc>
     <priority>15</priority>
     <asset_prefab>rare_pack</asset_prefab>
@@ -2647,7 +2648,7 @@
     <name>Double Legendary Insect Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Goblin card from Premium Set.</desc>
+    <desc>Gives two copies of one guaranteed Legendary or higher Insect card from Premium Set.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -2669,6 +2670,20 @@
     <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" fusion_level="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3094</id>
+    <name>Double Legendary Avian Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary or higher Avian card from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000,4000" number="2" />
     </cards>
   </store_item>
   <!-- ======================================= -->
@@ -3300,7 +3315,7 @@
     <asset_prefab>legendary_crystal</asset_prefab>
     <bundle>30</bundle>
     <icon>icon_purple_crystal</icon>
-    <hc_cost>200</hc_cost>
+    <hc_cost>180</hc_cost>
     <show_desc>1</show_desc>
     <!-- Stuff to give -->
     <pack>13</pack>
@@ -5240,5 +5255,62 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="6054" display_card_id="6054" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5122</id>
+    <name>Cloudwhale Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFCloudwhale Rider^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="1045" display_card_id="1045" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5123</id>
+    <name>Winged Warrior Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFWinged Warrior^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="1034" display_card_id="1034" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5124</id>
+    <name>Chest of Bounty Unlimited</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes four Bounty Refill +10 and 1500 gold! May be purchased an unlimited number of times!</desc>
+    <asset_prefab>bounty_pack_4</asset_prefab>
+    <bundle>15</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <gold>1500</gold>
+    <item id="1024" quantity="4" />
   </store_item>
 </root>

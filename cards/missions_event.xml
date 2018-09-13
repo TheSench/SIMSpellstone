@@ -33468,4 +33468,485 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 12 -->
+  <mission>
+    <id>6063</id>
+    <name>Signal of Light</name>
+    <energy>18</energy>
+    <desc>With the aid of the Golden Crown frogs, you were able to get your airship back up and running. However, you had barely started flying when your group noticed a gigantic ray of light in the night sky, emitting from the destroyed Redfeather Village... </desc>
+    <commander id="343" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1629" name="Rock Titan" />
+      <card id="7029" mastery_level="2" name="Owl Griffin" />
+      <card id="5016" mastery_level="3" name="Fowl Swarm" />
+      <card id="7004" mastery_level="4" name="Ice Golem" />
+      <card id="7078" mastery_level="5" name="Saprolite" />
+      <card id="6114" mastery_level="6" name="Blazing Emissary" />
+      <card id="5178" mastery_level="7" name="Skadi, Snow Princess" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Then we are at an impasse. You're not allowed to continue alone, General.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>I can do it if you'd just give me a chance, sir.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6064</id>
+    <name>Reunion from Karthos</name>
+    <energy>18</energy>
+    <desc>A half-transparent gray bubble covers the desecrated village. The light ascends from its center, passing through the barrier and reaching to the heavens. You spot two familiar faces next to the barrier, and descend to meet them.</desc>
+    <commander id="327" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6056" name="Potoo" />
+      <card id="2041" name="Sharpwing" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2032" name="Brimstone" />
+      <card id="6112" mastery_level="2" name="Fire Hawk" />
+      <card id="7055" mastery_level="3" name="Valley Strider" />
+      <card id="7045" mastery_level="4" name="Sakura" />
+      <card id="2010" mastery_level="5" name="Silver Wind" />
+      <card id="5110" mastery_level="6" name="Alectryon" />
+      <card id="5181" mastery_level="7" name="Himamanav" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Ah, adventurer. Your timing is impeccable. I assume you're also here to investigate that strange light.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6065</id>
+    <name>The Undead Barrier</name>
+    <energy>18</energy>
+    <desc>The land past the barrier has been ravaged. Only the blackened stumps of trees remain of a once great forest. Straw and wood remnants of houses are scattered at irregular intervals in the earth.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1617" name="Water Elemental" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="6077" name="Enigma" />
+      <card id="2031" name="Dryad" />
+      <card id="7057" mastery_level="2" name="Bill Crasher" />
+      <card id="7171" mastery_level="3" name="Warpwood Warlock" />
+      <card id="7075" mastery_level="4" name="Diamode" />
+      <card id="5080" mastery_level="5" name="Djinnflame Brawler" />
+      <card id="5112" mastery_level="6" name="Cloudwing Chaser" />
+      <card id="6043" mastery_level="7" name="Sandstorm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>This barrier seems to be crafted to ward the Undead, so I cannot pass.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>But that's strange, isn't it? Why would such a thing be here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6066</id>
+    <name>Trouble Seeker</name>
+    <energy>18</energy>
+    <desc>General Garrick has always been a magnet for trouble. He was originally infected by The Void, and had served under its influence for months. After being freed, Samael hunted him in fear that Garrick would return to its influence.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="2081" name="Starstriker" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="6172" mastery_level="3" name="Steel Plover" />
+      <card id="6015" mastery_level="4" name="Acidic Sludge" />
+      <card id="5081" mastery_level="5" name="Brahzee" />
+      <card id="5175" mastery_level="6" name="Spirit of Cygnus" />
+      <card id="6076" mastery_level="7" name="Magmatic Bang" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>I wasn't about to let General Garrick do this alone. You know he has a talent for finding trouble.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Concerned for me, sir?</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Karthos would be weaker for losing a valuable general, is all...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6067</id>
+    <name>Deserted Village</name>
+    <energy>18</energy>
+    <desc>You and General Garrick step through the barrier. The gray film passes through your skin harmlessly, leaving an odd tingling sensation. Tarian watches you helplessly, as you depart deeper into the desolate village.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5114" name="Wingward" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="7075" name="Diamode" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="5060" mastery_level="2" name="Quack Apprentice" />
+      <card id="6172" mastery_level="3" name="Steel Plover" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="5046" mastery_level="5" name="Dawn" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="5082" mastery_level="7" name="Memory" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6068</id>
+    <name>Restless Creatures</name>
+    <energy>18</energy>
+    <desc>Elementals drift aimlessly in the night. Feral avians, displaced and without their senses after being exposed to vast amounts of The Void, wander with mindless aggression.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5114" name="Wingward" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="2075" name="Arcane Snowman" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="5058" mastery_level="3" name="Crescent Moon Owl" />
+      <card id="6075" mastery_level="4" name="Consuming Mireling" />
+      <card id="7078" mastery_level="5" name="Saprolite" />
+      <card id="7111" mastery_level="6" name="Aurai" />
+      <card id="1642" mastery_level="7" name="Icestone Beast" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Redfeather Valley was one of the first places The Void targetted.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>The entire world would be like this if you had failed to seal The Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6069</id>
+    <name>Inside the Barrier</name>
+    <energy>18</energy>
+    <desc>You travel with Garrick quickly, towards the light source. It seems to be originating from the center of the destroyed village.</desc>
+    <commander id="288" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2057" name="Twister" />
+      <card id="5016" mastery_level="2" name="Fowl Swarm" />
+      <card id="5114" mastery_level="3" name="Wingward" />
+      <card id="6046" mastery_level="4" name="Celerity" />
+      <card id="2010" mastery_level="5" name="Silver Wind" />
+      <card id="5177" mastery_level="6" name="Thunderbird" />
+      <card id="7077" mastery_level="7" name="Crystallum" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>What would cause such a light, especially since no one lives here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6070</id>
+    <name>Home of the Departed</name>
+    <energy>18</energy>
+    <desc>As you travel further into the village's remains, you see a few trees have managed to avoid the destruction. However, only the restless Elementals and feral birds have their homes here now, and there is no sign of its previous inhabitants.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="7004" name="Ice Golem" />
+      <card id="2056" name="Drainor" />
+      <card id="5060" mastery_level="2" name="Quack Apprentice" />
+      <card id="2082" mastery_level="3" name="Ecru Spear" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="5046" mastery_level="5" name="Dawn" />
+      <card id="6113" mastery_level="6" name="Trojan Crow" />
+      <card id="7076" mastery_level="7" name="Avalanche Fiend" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Perhaps it's a distress signal from one of the living.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6071</id>
+    <name>The Path Forward</name>
+    <energy>18</energy>
+    <desc>The two of you are making good progress, despite the enemies you face. The light source is hidden behind a patch of tall trees, but you should arrive in just a few minutes...</desc>
+    <commander id="243" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="2009" name="Sapling" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="6077" name="Enigma" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="7055" mastery_level="3" name="Valley Strider" />
+      <card id="7078" mastery_level="4" name="Saprolite" />
+      <card id="5081" mastery_level="5" name="Brahzee" />
+      <card id="5176" mastery_level="6" name="Raywing" />
+      <card id="7046" mastery_level="7" name="Brambleblight" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6072</id>
+    <name>Disappearing Answers</name>
+    <energy>18</energy>
+    <desc>The beam wavers. The intense light flickers and fades to a thin line, before vanishing completely. You and Garrick quicken your pace.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1617" name="Water Elemental" />
+      <card id="7078" name="Saprolite" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="6056" name="Potoo" />
+      <card id="2009" name="Sapling" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="1034" mastery_level="2" name="Winged Warrior" />
+      <card id="7030" mastery_level="3" name="Arctic Ambusher" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="2058" mastery_level="5" name="Bismuth Bully" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="7134" mastery_level="7" name="Prismadew" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Look! The light is disappearing... </text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6073</id>
+    <name>The Barrier Machine</name>
+    <energy>18</energy>
+    <desc>You reach the area that you think is where the light originated from. Although there are no sentient creatures nearby, you see a strange machine...</desc>
+    <commander id="288" />
+    <deck>
+      <card id="8121" name="Canopy Monster" />
+      <card id="1617" name="Water Elemental" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="6042" mastery_level="2" name="Shadow of Thunder" />
+      <card id="5114" mastery_level="3" name="Wingward" />
+      <card id="2008" mastery_level="4" name="Shadow of Ash" />
+      <card id="2032" mastery_level="5" name="Brimstone" />
+      <card id="5110" mastery_level="6" name="Alectryon" />
+      <card id="7133" mastery_level="7" name="Light of the Grove" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>The only thing here is this machine. It seems to be generating the barrier against Undead.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6074</id>
+    <name>Plan to Reunite</name>
+    <energy>18</energy>
+    <desc>The machine is rusted and noisy, chugging the gray film which filters above to form the barrier. The controls are so stiff that they threaten to snap with rust when you try to move them.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2041" name="Sharpwing" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="7015" mastery_level="2" name="Bog Aberration" />
+      <card id="7057" mastery_level="3" name="Bill Crasher" />
+      <card id="6042" mastery_level="4" name="Shadow of Thunder" />
+      <card id="5080" mastery_level="5" name="Djinnflame Brawler" />
+      <card id="6173" mastery_level="6" name="Toxophilite Watcher" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Let's turn the barrier off and rendezvous with Lord Tarian.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- We have nothing to fear in sweet harmony -->
+  <mission>
+    <id>6075</id>
+    <name>Mission 1</name>
+    <energy>10</energy>
+    <desc>xxx</desc>
+    <commander id="420" />
+    <deck>
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="5187" name="Star Chaser" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="6055" name="Phoenix" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="4008" name="Rhynio Sun Warrior" />
+      <card id="4009" name="Kachina, the Dreamer" />
+      <card id="4010" name="Columba, Firewing Monk" />
+      <card id="8122" name="Promised Victory" />
+      <card id="8122" name="Promised Victory" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6076</id>
+    <name>Mission 2</name>
+    <energy>10</energy>
+    <desc>xxx</desc>
+    <commander id="420" />
+    <deck>
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="5187" name="Star Chaser" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="6055" name="Phoenix" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="4008" name="Rhynio Sun Warrior" />
+      <card id="4009" name="Kachina, the Dreamer" />
+      <card id="4010" name="Columba, Firewing Monk" />
+      <card id="8122" name="Promised Victory" />
+      <card id="8122" name="Promised Victory" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6077</id>
+    <name>Mission 3</name>
+    <energy>10</energy>
+    <desc>xxx</desc>
+    <commander id="420" />
+    <deck>
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="5187" name="Star Chaser" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="6055" name="Phoenix" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="4008" name="Rhynio Sun Warrior" />
+      <card id="4009" name="Kachina, the Dreamer" />
+      <card id="4010" name="Columba, Firewing Monk" />
+      <card id="8122" name="Promised Victory" />
+      <card id="8122" name="Promised Victory" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6078</id>
+    <name>Mission 4</name>
+    <energy>10</energy>
+    <desc>xxx</desc>
+    <commander id="420" />
+    <deck>
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="5187" name="Star Chaser" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="6055" name="Phoenix" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="4008" name="Rhynio Sun Warrior" />
+      <card id="4009" name="Kachina, the Dreamer" />
+      <card id="4010" name="Columba, Firewing Monk" />
+      <card id="8122" name="Promised Victory" />
+      <card id="8122" name="Promised Victory" />
+    </deck>
+  </mission>
 </root>

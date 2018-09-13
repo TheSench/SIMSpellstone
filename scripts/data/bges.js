@@ -2242,6 +2242,38 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2048": {
+    "name": "Shattered Rifthowl",
+    "id": "2048",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
+      },
+    ]
+  },
+  "2049": {
+    "name": "Harmonious Crimson Litany",
+    "id": "2049",
+    "desc": "Tanit, First Dreamer fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "7",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
   "5001": {
     "name": "The Arena",
     "id": "5001",

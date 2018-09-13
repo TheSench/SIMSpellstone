@@ -9538,7 +9538,7 @@
       <level>6</level>
       <health>60</health>
     </upgrade>
-    <desc>""Hear ye, hear ye! Being a knight sucks. I wanted to own an apothecary."</desc>
+    <desc>"Hear ye, hear ye! Being a knight sucks. I wanted to own an apothecary."</desc>
   </unit>
   <unit>
     <id>411</id>
@@ -9931,6 +9931,54 @@
       <skill id="enhance" x="6" s="corrosive" />
       <skill id="heal" x="5" all="1" y="4" />
       <skill id="strike" x="6" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>420</id>
+    <card_type>1</card_type>
+    <name>Tanit, First Dreamer</name>
+    <portrait>Portrait_Avian_Priest</portrait>
+    <desc>A shared dream, once forgotten, begged us to remember: we have nothing to fear in sweet harmony.</desc>
+    <health>95</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" s="silence" />
+    <skill id="heal" x="40" c="10" />
+    <skill id="strike" x="25" c="10" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="imbue" x="1" s="silence" />
+      <skill id="heal" x="51" c="8" />
+      <skill id="strike" x="25" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>96</health>
+      <skill id="imbue" x="1" s="silence" />
+      <skill id="heal" x="63" c="7" />
+      <skill id="strike" x="29" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>97</health>
+      <skill id="imbue" x="1" s="silence" />
+      <skill id="heal" x="75" c="5" />
+      <skill id="strike" x="31" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>98</health>
+      <skill id="imbue" x="1" s="silence" />
+      <skill id="heal" x="87" c="5" />
+      <skill id="strike" x="33" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="imbue" x="1" s="silence" />
+      <skill id="heal" x="99" c="5" />
+      <skill id="strike" x="35" />
     </upgrade>
   </unit>
 </root>

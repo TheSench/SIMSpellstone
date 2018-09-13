@@ -6324,6 +6324,66 @@
     </rewards>
     <find_item id="3077" drop_per_energy=".8" />
   </campaign>
+  <!-- Campaign Event 12 -->
+  <campaign>
+    <id>1183</id>
+    <name>Mysterious Light</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1537462800</locked_start_time>
+    <!-- Thu, Sept 20 2018 17:00:00 -->
+    <location_id>18</location_id>
+    <x>270</x>
+    <y>485</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6063</mission_id>
+      <mission_id>6064</mission_id>
+      <mission_id>6065</mission_id>
+      <mission_id>6066</mission_id>
+      <mission_id>6067</mission_id>
+      <mission_id>6068</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2136" />
+      <card level="5" id="512" />
+      <card level="6" id="2081" />
+      <item level="7" id="3081" />
+    </rewards>
+    <find_item id="3080" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1184</id>
+    <name>Inside the Barrier</name>
+    <campaign_req id="1183" level="1" />
+    <locked_start_time>1538672400</locked_start_time>
+    <!-- Thu, Oct 04 2018 17:00:00 -->
+    <battleground_id>2048</battleground_id>
+    <location_id>18</location_id>
+    <x>450</x>
+    <y>393</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6069</mission_id>
+      <mission_id>6070</mission_id>
+      <mission_id>6071</mission_id>
+      <mission_id>6072</mission_id>
+      <mission_id>6073</mission_id>
+      <mission_id>6074</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2134" />
+      <card level="5" id="512" />
+      <card level="6" id="2069" />
+      <item level="7" id="3081" />
+    </rewards>
+    <find_item id="3080" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -6704,4 +6764,38 @@
     </rewards>
     <find_item id="3062" drop_per_energy=".2" />
   </campaign>
+  <!-- Champion Bosses -->
+  <!--
+	<campaign> 
+		<id>3012</id>
+		<name>Campaign Title</name>
+		<type>2</type>
+		<icon id='white_boss_gem' bundle='15' />
+		<campaign_req id='1180' level='7' />
+		<locked_start_time>1511370000</locked_start_time>	 |  Wed, 22 Nov 2017 17:00:00 |
+		<side_mission>1</side_mission>
+		<battleground_id>2049</battleground_id>
+		<location_id>17</location_id>
+		<show_level>1</show_level>
+		<show_ranking>1</show_ranking>
+		<x>485</x>
+		<y>512</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>6075</mission_id>
+			<mission_id>6076</mission_id>
+			<mission_id>6077</mission_id>
+			<mission_id>6078</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='510' />
+			<card level='2' id='510' />
+			<item level='3' id='2506' number='3' />
+			<card level='4' id='511' />
+			<item level='5' id='2506' number='3' />
+			<card level='6' id='512' />
+			<item level='7' id='2506' number='3' />
+		</rewards>
+	</campaign>
+	-->
 </root>

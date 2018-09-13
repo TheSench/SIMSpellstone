@@ -13,9 +13,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Pierce 2.",
@@ -95,9 +93,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are protected by Barrier 1 each turn.",
@@ -172,9 +168,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Healed for 1 each turn.",
@@ -262,9 +256,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "Whenever the enemy plays a creature, The Assassin deals 10% of their health to them as damage.",
@@ -378,9 +370,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Armor 1 each turn.",
@@ -474,9 +464,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Scorch 1 each turn.",
@@ -570,9 +558,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Healed for 1 each turn.",
@@ -668,9 +654,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Empowered 1 each turn.",
@@ -758,9 +742,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "Weaken one enemy creature by 2.",
@@ -845,9 +827,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "One of your creatures gains Nullify 1 every turn.",
@@ -940,9 +920,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Emberhide 1 each turn.",
@@ -1036,9 +1014,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Healed for 1 each turn.",
@@ -1126,9 +1102,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Berserk 1 each turn.",
@@ -1230,9 +1204,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Armor 1 each turn.",
@@ -1326,9 +1298,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Siphon 1 each turn.",
@@ -1422,9 +1392,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Berserk 1 each turn.",
@@ -1526,9 +1494,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All enemy creatures are hit with Bolt 1 each turn.",
@@ -1622,9 +1588,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Pierce 2 each turn.",
@@ -1718,9 +1682,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Vengeance 1 each turn.",
@@ -1822,9 +1784,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are protected by Barrier 1 each turn.",
@@ -1912,9 +1872,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Healed for 1 each turn.",
@@ -2002,9 +1960,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Scorch 1 each turn.",
@@ -2106,9 +2062,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Healed for 1 each turn.",
@@ -2196,9 +2150,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Enrage 1 each turn.",
@@ -2286,9 +2238,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are protected by Barrier 1 each turn.",
@@ -2384,9 +2334,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All enemy creatures are hit with Bolt 1 each turn.",
@@ -2480,9 +2428,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Armor 1 each turn.",
@@ -2576,9 +2522,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Nullify 1 each turn.",
@@ -2680,9 +2624,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Ward 1 each turn.",
@@ -2776,9 +2718,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Emberhide 1 each turn.",
@@ -2872,9 +2812,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Siphon 1 each turn.",
@@ -2976,9 +2914,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Pierce 2 each turn.",
@@ -3072,9 +3008,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Healed for 1 each turn.",
@@ -3162,9 +3096,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Emberhide 1 each turn.",
@@ -3257,7 +3189,7 @@ var MAP_BATTLEGROUNDS = {
   "3012": {
     "id": "3012",
     "name": "Airship Upgrades",
-    "desc": "Repair your airship and get its defense functions back online. Use Golden Leaves as catalyst!",
+    "desc": "Repair your airship and get its defense functions back online. Use Golden Leaves as a catalyst!",
     "location_id": "17",
     "effects": [
       {
@@ -3266,9 +3198,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures are Healed for 1 each turn.",
@@ -3356,9 +3286,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All of your creatures gain Vengeance 1 each turn.",
@@ -3452,9 +3380,7 @@ var MAP_BATTLEGROUNDS = {
         "upgrades": [
           {
             "desc": "",
-            "effect": [
-              
-            ]
+            "effect": []
           },
           {
             "desc": "All enemy creatures are hit with Bolt 1 each turn.",
@@ -3537,6 +3463,290 @@ var MAP_BATTLEGROUNDS = {
                 "all": "1",
                 "enemy_only": "1",
                 "ally_turn": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "3013": {
+    "id": "3013",
+    "name": "Ancient Glyphs",
+    "desc": "Ancient rocks with symbols of runes carved upon them once served as Redfeather Valley's defense system. Power them up with Black Blossoms!",
+    "location_id": "18",
+    "effects": [
+      {
+        "id": "38",
+        "name": "Healing Glyph",
+        "upgrades": [
+          {
+            "desc": "",
+            "effect": []
+          },
+          {
+            "desc": "All of your creatures are Healed for 1 each turn.",
+            "name": "Healing Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 1,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 2 each turn.",
+            "name": "Healing Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 2,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 3 each turn.",
+            "name": "Healing Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 3,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 4 each turn.",
+            "name": "Healing Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 4,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 5 each turn.",
+            "name": "Healing Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 5,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures are Healed for 6 each turn.",
+            "name": "Healing Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "heal",
+                "x": 6,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "39",
+        "name": "Shielding Glyph",
+        "upgrades": [
+          {
+            "desc": "",
+            "effect": []
+          },
+          {
+            "desc": "All of your creatures gain Armor 1 each turn.",
+            "name": "Shielding Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "armored",
+                "x": 1,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Armor 2 each turn.",
+            "name": "Shielding Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "armored",
+                "x": 2,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Armor 3 each turn.",
+            "name": "Shielding Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "armored",
+                "x": 3,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Armor 4 each turn.",
+            "name": "Shielding Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "armored",
+                "x": 4,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Armor 6 each turn.",
+            "name": "Shielding Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "armored",
+                "x": 6,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Armor 8 each turn.",
+            "name": "Shielding Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "armored",
+                "x": 8,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "40",
+        "name": "Scorching Glyph",
+        "upgrades": [
+          {
+            "desc": "",
+            "effect": []
+          },
+          {
+            "desc": "All of your creatures gain Scorch 1 each turn.",
+            "name": "Scorching Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "burn",
+                "x": 1,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Scorch 2 each turn.",
+            "name": "Scorching Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "burn",
+                "x": 2,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Scorch 3 each turn.",
+            "name": "Scorching Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "burn",
+                "x": 3,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Scorch 4 each turn.",
+            "name": "Scorching Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "burn",
+                "x": 4,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Scorch 6 each turn.",
+            "name": "Scorching Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "burn",
+                "x": 6,
+                "all": "1",
+                "ally_only": "1"
+              }
+            ]
+          },
+          {
+            "desc": "All of your creatures gain Scorch 8 each turn.",
+            "name": "Scorching Glyph",
+            "effect": [
+              {
+                "effect_type": "skill",
+                "id": "imbue",
+                "s": "burn",
+                "x": 8,
+                "all": "1",
+                "ally_only": "1"
               }
             ]
           }

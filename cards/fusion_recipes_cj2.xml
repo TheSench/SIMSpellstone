@@ -196,6 +196,22 @@
     <card_id>21032</card_id>
     <resource card_id="11032" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11033</card_id>
+    <resource card_id="1033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21033</card_id>
+    <resource card_id="11033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11034</card_id>
+    <resource card_id="1034" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21034</card_id>
+    <resource card_id="11034" number="2" />
+  </fusion_recipe>
   <!-- AETHER BASE SET LEGENDARIES BEGIN -->
   <fusion_recipe>
     <card_id>11040</card_id>
@@ -236,6 +252,14 @@
   <fusion_recipe>
     <card_id>21044</card_id>
     <resource card_id="11044" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11045</card_id>
+    <resource card_id="1045" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21045</card_id>
+    <resource card_id="11045" number="2" />
   </fusion_recipe>
   <!-- CHAOS BASE SET COMMONS BEGIN -->
   <fusion_recipe>
@@ -440,6 +464,14 @@
     <card_id>21333</card_id>
     <resource card_id="11333" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11334</card_id>
+    <resource card_id="1334" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21334</card_id>
+    <resource card_id="11334" number="2" />
+  </fusion_recipe>
   <!-- CHAOS BASE SET LEGENDARIES BEGIN -->
   <fusion_recipe>
     <card_id>11340</card_id>
@@ -480,6 +512,14 @@
   <fusion_recipe>
     <card_id>21344</card_id>
     <resource card_id="11344" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11345</card_id>
+    <resource card_id="1345" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21345</card_id>
+    <resource card_id="11345" number="2" />
   </fusion_recipe>
   <!-- WYLD BASE SET COMMONS BEGIN -->
   <fusion_recipe>
@@ -692,6 +732,14 @@
     <card_id>21634</card_id>
     <resource card_id="11634" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11635</card_id>
+    <resource card_id="1635" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21635</card_id>
+    <resource card_id="11635" number="2" />
+  </fusion_recipe>
   <!-- WYLD BASE SET LEGENDARIES BEGIN -->
   <fusion_recipe>
     <card_id>11640</card_id>
@@ -732,6 +780,14 @@
   <fusion_recipe>
     <card_id>21644</card_id>
     <resource card_id="11644" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>11645</card_id>
+    <resource card_id="1645" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>21645</card_id>
+    <resource card_id="11645" number="2" />
   </fusion_recipe>
   <!-- END SET 1000 - Standard -->
   <!-- START SET 2000 - Reward -->
@@ -3398,6 +3454,22 @@
     <card_id>25206</card_id>
     <resource card_id="15206" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15207</card_id>
+    <resource card_id="5207" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25207</card_id>
+    <resource card_id="15207" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15208</card_id>
+    <resource card_id="5208" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25208</card_id>
+    <resource card_id="15208" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -4926,6 +4998,14 @@
   <fusion_recipe>
     <card_id>26195</card_id>
     <resource card_id="16195" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16196</card_id>
+    <resource card_id="6196" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26196</card_id>
+    <resource card_id="16196" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>16197</card_id>

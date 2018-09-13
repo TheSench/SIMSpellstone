@@ -24319,6 +24319,128 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6196</id>
+    <card_type>2</card_type>
+    <name>Raptrys</name>
+    <picture>FacelessAvian_A</picture>
+    <asset_bundle>137</asset_bundle>
+    <hidden_until_time>1536253200</hidden_until_time>
+    <attack>1</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>12</health>
+    </upgrade>
+    <desc>A shadow upon the night sky.</desc>
+  </unit>
+  <unit>
+    <id>16196</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hunting Raptrys</name>
+    <picture>FacelessAvian_A</picture>
+    <asset_bundle>137</asset_bundle>
+    <hidden_until_time>1536253200</hidden_until_time>
+    <attack>2</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="frost" x="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26196</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Stalking Raptrys</name>
+    <picture>FacelessAvian_B</picture>
+    <asset_bundle>137</asset_bundle>
+    <hidden_until_time>1536253200</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="frost" x="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="frost" x="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6197</id>
     <card_type>2</card_type>
     <name>Monarch Scorcher</name>
@@ -24716,137 +24838,6 @@
     </upgrade>
   </unit>
   <unit>
-    <id>6201</id>
-    <card_type>2</card_type>
-    <name>Blasteye Sentry</name>
-    <picture>Flaming_Frog_Elemental_A</picture>
-    <asset_bundle>135</asset_bundle>
-    <hidden_until_time>1532970000</hidden_until_time>
-    <attack>10</attack>
-    <health>42</health>
-    <cost>4</cost>
-    <rarity>4</rarity>
-    <skill id="counterburn" x="3" />
-    <skill id="corrosive" x="3" />
-    <skill id="enfeeble" x="3" all="1" />
-    <type>2</type>
-    <sub_type>4</sub_type>
-    <set>4000</set>
-    <upgrade>
-      <level>2</level>
-      <health>43</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>44</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <skill id="counterburn" x="3" />
-      <skill id="corrosive" x="4" />
-      <skill id="enfeeble" x="3" all="1" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <attack>11</attack>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <health>45</health>
-      <skill id="counterburn" x="4" />
-      <skill id="corrosive" x="4" />
-      <skill id="enfeeble" x="3" all="1" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>16201</id>
-    <card_type>2</card_type>
-    <fusion_level>1</fusion_level>
-    <name>Blasteye Watchtower</name>
-    <picture>Flaming_Frog_Elemental_A</picture>
-    <asset_bundle>135</asset_bundle>
-    <hidden_until_time>1532970000</hidden_until_time>
-    <attack>11</attack>
-    <health>46</health>
-    <cost>4</cost>
-    <rarity>4</rarity>
-    <skill id="counterburn" x="4" />
-    <skill id="corrosive" x="4" />
-    <skill id="enfeeble" x="3" all="1" />
-    <type>2</type>
-    <sub_type>4</sub_type>
-    <set>4000</set>
-    <upgrade>
-      <level>2</level>
-      <health>47</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <skill id="counterburn" x="4" />
-      <skill id="corrosive" x="5" />
-      <skill id="enfeeble" x="3" all="1" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>48</health>
-      <skill id="counterburn" x="4" />
-      <skill id="corrosive" x="5" />
-      <skill id="enfeeble" x="4" all="1" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <attack>12</attack>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <health>49</health>
-    </upgrade>
-  </unit>
-  <unit>
-    <id>26201</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Blasteye Rampart</name>
-    <picture>Flaming_Frog_Elemental_B</picture>
-    <asset_bundle>135</asset_bundle>
-    <hidden_until_time>1532970000</hidden_until_time>
-    <attack>12</attack>
-    <health>49</health>
-    <cost>4</cost>
-    <rarity>4</rarity>
-    <skill id="counterburn" x="4" />
-    <skill id="corrosive" x="6" />
-    <skill id="enfeeble" x="4" all="1" />
-    <type>2</type>
-    <sub_type>4</sub_type>
-    <set>4000</set>
-    <upgrade>
-      <level>2</level>
-      <health>50</health>
-      <attack>13</attack>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>51</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>52</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="counterburn" x="5" />
-      <skill id="corrosive" x="6" />
-      <skill id="enfeeble" x="4" all="1" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="counterburn" x="5" />
-      <skill id="corrosive" x="7" />
-      <skill id="enfeeble" x="5" all="1" />
-    </upgrade>
-  </unit>
-  <unit>
     <id>6200</id>
     <card_type>2</card_type>
     <name>Embered Demise</name>
@@ -24987,6 +24978,137 @@
       <skill id="absorb" x="8" />
       <skill id="regenerate" x="8" />
       <skill id="burn" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6201</id>
+    <card_type>2</card_type>
+    <name>Blasteye Sentry</name>
+    <picture>Flaming_Frog_Elemental_A</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1532970000</hidden_until_time>
+    <attack>10</attack>
+    <health>42</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="corrosive" x="3" />
+    <skill id="enfeeble" x="3" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="3" />
+      <skill id="corrosive" x="4" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>45</health>
+      <skill id="counterburn" x="4" />
+      <skill id="corrosive" x="4" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16201</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Blasteye Watchtower</name>
+    <picture>Flaming_Frog_Elemental_A</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1532970000</hidden_until_time>
+    <attack>11</attack>
+    <health>46</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="corrosive" x="4" />
+    <skill id="enfeeble" x="3" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="4" />
+      <skill id="corrosive" x="5" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="counterburn" x="4" />
+      <skill id="corrosive" x="5" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>49</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26201</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Blasteye Rampart</name>
+    <picture>Flaming_Frog_Elemental_B</picture>
+    <asset_bundle>135</asset_bundle>
+    <hidden_until_time>1532970000</hidden_until_time>
+    <attack>12</attack>
+    <health>49</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="corrosive" x="6" />
+    <skill id="enfeeble" x="4" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>50</health>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>51</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>52</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="5" />
+      <skill id="corrosive" x="6" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="5" />
+      <skill id="corrosive" x="7" />
+      <skill id="enfeeble" x="5" all="1" />
     </upgrade>
   </unit>
 </root>

@@ -9391,7 +9391,7 @@
     <order>101</order>
     <name>Dream Awakened</name>
     <desc>Complete the 'Dream Awakened' campaign on Mastery Level 1.</desc>
-    <mission_req>5966</mission_req>
+    <mission_req>6037</mission_req>
     <locked_start_time>1533834000</locked_start_time>
     <!-- Thu, Aug 09 2018 17:00:00 -->
     <req>
@@ -9543,6 +9543,132 @@
     </req>
     <reward>
       <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 12 -->
+  <achievement>
+    <id>3401</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mysterious Light</name>
+    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 1.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1537462800</locked_start_time>
+    <!-- Thu, Sept 20 2018 17:00:00 -->
+    <req>
+      <campaign>1183</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3080" number="50" />
+      <event_points id="7040" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3402</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mysterious Light</name>
+    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1537462800</locked_start_time>
+    <!-- Thu, Sept 20 2018 17:00:00 -->
+    <achievement_req>3401</achievement_req>
+    <req>
+      <campaign>1183</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3403</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mysterious Light</name>
+    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1537462800</locked_start_time>
+    <!-- Thu, Sept 20 2018 17:00:00 -->
+    <achievement_req>3402</achievement_req>
+    <req>
+      <campaign>1183</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3404</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mysterious Light</name>
+    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1537462800</locked_start_time>
+    <achievement_req>3403</achievement_req>
+    <req>
+      <campaign>1183</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3405</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Inside the Barrier</name>
+    <desc>Complete the 'Inside the Barrier' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1538672400</locked_start_time>
+    <!-- Thu, Oct 4 2018 17:00:00 -->
+    <achievement_req>3401</achievement_req>
+    <req>
+      <campaign>1184</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3406</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Inside the Barrier</name>
+    <desc>Complete the 'Inside the Barrier' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1538672400</locked_start_time>
+    <!-- Thu, Oct 4 2018 17:00:00 -->
+    <achievement_req>3405</achievement_req>
+    <req>
+      <campaign>1184</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3407</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Inside the Barrier</name>
+    <desc>Complete the 'Inside the Barrier' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1537462800</locked_start_time>
+    <!-- Thu, Oct 4 2018 17:00:00 -->
+    <achievement_req>3406</achievement_req>
+    <req>
+      <campaign>1184</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
     </reward>
   </achievement>
   <!-- END Event Quests  -->

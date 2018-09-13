@@ -968,6 +968,94 @@
       <skill id="berserk" x="7" />
     </upgrade>
   </unit>
+  <!-- =============================== -->
+  <!-- === AETHER PREMIUM CHAMPION === -->
+  <!-- =============================== -->
+  <unit>
+    <id>5600</id>
+    <card_type>2</card_type>
+    <name>Tanit, Divinity's Focus</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Avian_Priest_Champion_A</picture>
+    <asset_bundle>137</asset_bundle>
+    <item_name>Tanit Stone</item_name>
+    <item_desc>Collect Tanit Stones to upgrade the Legendary Tanit, Divinity's Focus card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <attack>10</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="heal" all="1" x="4" />
+    <skill id="strike" all="1" x="3" />
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="absorb" x="7" />
+      <skill id="heal" all="1" x="4" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="8" />
+      <skill id="heal" all="1" x="5" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+      <skill id="absorb" x="9" />
+      <skill id="heal" all="1" x="6" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>40</health>
+      <skill id="absorb" x="10" />
+      <skill id="heal" all="1" x="6" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>13</attack>
+      <skill id="absorb" x="10" />
+      <skill id="heal" all="1" x="6" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>41</health>
+      <skill id="absorb" x="11" />
+      <skill id="heal" all="1" x="7" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>42</health>
+      <skill id="absorb" x="11" />
+      <skill id="heal" all="1" x="7" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>14</attack>
+      <health>43</health>
+      <skill id="absorb" x="12" />
+      <skill id="heal" all="1" x="8" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+  </unit>
   <!-- ============================== -->
   <!-- === CHAOS PREMIUM CHAMPION === -->
   <!-- ============================== -->
