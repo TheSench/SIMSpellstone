@@ -1833,10 +1833,11 @@
     <health>14</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="counter" x="2" />
+    <skill id="counter" x="3" />
     <skill id="burn" x="1" />
     <skill id="poison" x="3" />
     <type>2</type>
+    <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
@@ -1849,19 +1850,19 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="counter" x="2" />
+      <skill id="counter" x="4" />
       <skill id="burn" x="2" />
       <skill id="poison" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="counter" x="3" />
+      <skill id="counter" x="5" />
       <skill id="burn" x="2" />
       <skill id="poison" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="counter" x="3" />
+      <skill id="counter" x="5" />
       <skill id="burn" x="2" />
       <skill id="poison" x="4" />
     </upgrade>
@@ -1874,39 +1875,41 @@
     <picture>Arcane_Pumpkin_A</picture>
     <asset_bundle>28</asset_bundle>
     <attack>5</attack>
-    <health>17</health>
+    <health>18</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="counter" x="3" />
+    <skill id="counter" x="6" />
     <skill id="burn" x="2" />
     <skill id="poison" x="4" />
     <type>2</type>
+    <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>18</health>
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>6</attack>
-      <health>19</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="counter" x="3" />
+      <skill id="counter" x="6" />
       <skill id="burn" x="3" />
       <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="counter" x="4" />
+      <attack>7</attack>
+      <skill id="counter" x="7" />
       <skill id="burn" x="3" />
       <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>20</health>
-      <skill id="counter" x="4" />
+      <health>21</health>
+      <skill id="counter" x="7" />
       <skill id="burn" x="3" />
       <skill id="poison" x="5" />
     </upgrade>
@@ -1918,42 +1921,45 @@
     <name>Pumpking Kong</name>
     <picture>Arcane_Pumpkin_B</picture>
     <asset_bundle>28</asset_bundle>
-    <attack>6</attack>
-    <health>21</health>
+    <attack>7</attack>
+    <health>22</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="counter" x="4" />
-    <skill id="burn" x="3" />
+    <skill id="counter" x="7" />
+    <skill id="burn" x="4" />
     <skill id="poison" x="5" />
     <type>2</type>
+    <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>22</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <attack>7</attack>
       <health>23</health>
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
       <level>4</level>
-      <skill id="counter" x="4" />
-      <skill id="burn" x="4" />
-      <skill id="poison" x="5" />
+      <health>25</health>
+      <skill id="counter" x="8" />
+      <skill id="burn" x="5" />
+      <skill id="poison" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="counter" x="5" />
-      <skill id="burn" x="4" />
-      <skill id="poison" x="5" />
+      <attack>9</attack>
+      <skill id="counter" x="8" />
+      <skill id="burn" x="5" />
+      <skill id="poison" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>24</health>
-      <skill id="counter" x="5" />
-      <skill id="burn" x="4" />
-      <skill id="poison" x="6" />
+      <health>26</health>
+      <skill id="counter" x="9" />
+      <skill id="burn" x="5" />
+      <skill id="poison" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -15581,6 +15587,246 @@
       <skill id="armored" x="4" />
       <skill id="poison" x="6" />
       <skill id="daze" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2137</id>
+    <card_type>2</card_type>
+    <name>Eolian Elemental</name>
+    <picture>Gusty_Elemental_Color_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1537462800</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="2" />
+    <skill id="frost" x="1" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="3" />
+      <skill id="frost" x="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <health>19</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12137</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Eolian Primeval</name>
+    <picture>Gusty_Elemental_Color_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1537462800</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="frost" x="1" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="4" />
+      <skill id="frost" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="4" />
+      <skill id="frost" x="2" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22137</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Eolian Djinn</name>
+    <picture>Gusty_Elemental_Color_B</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1537462800</hidden_until_time>
+    <attack>8</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="frost" x="2" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="6" />
+      <skill id="frost" x="2" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="6" />
+      <skill id="frost" x="3" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2138</id>
+    <card_type>2</card_type>
+    <name>Magma Cougar</name>
+    <picture>Elemental_Mecha_Tiger_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1537462800</hidden_until_time>
+    <attack>5</attack>
+    <health>29</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counterburn" x="2" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="burn" x="2" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="3" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="3" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12138</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Magmara Cougar</name>
+    <picture>Elemental_Mecha_Tiger_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1537462800</hidden_until_time>
+    <attack>6</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="burn" x="3" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="4" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="4" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22138</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Magmarch Cougar</name>
+    <picture>Elemental_Mecha_Tiger_B</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1537462800</hidden_until_time>
+    <attack>8</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="burn" x="4" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="5" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="5" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="burn" x="5" />
     </upgrade>
   </unit>
 </root>
