@@ -164,7 +164,7 @@ void Main()
 	var skillIconNames = new List<string>();
 	var skillFiles = Path.Combine(path, "../res/skills");
 	var skills = XDocument.Load(Path.Combine(path, "cards_config.xml")).Descendants("skillType")
-	.Where(node => node.Element("icon") != null)
+	.Where(node => node.Element("desc") != null)
 	.Select(node =>
 	{
 		var id = node.Element("id").Value;
@@ -173,7 +173,7 @@ void Main()
 		{
 			if (!iconRemappings.TryGetValue(id, out icon))
 			{
-				icon = node.Element("icon").Value;
+				icon = node.Element("icon")?.Value;
 			}
 		}
 		string name;
@@ -208,15 +208,6 @@ void Main()
 			desc = "Reduces the next Damage dealt to a random allied creature",
 			icon = "mystic_barrier",
 			type = "activation",
-			order = "0"
-		},
-		new
-		{
-			id = "unearth",
-			name = "Unearth",
-			desc = "When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity.",
-			icon = "reanimate",
-			type = "onDeath",
 			order = "0"
 		}
 	})

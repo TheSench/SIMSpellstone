@@ -302,8 +302,8 @@ var SKILL_DATA = {
 	"unearth" : {
 		"name": "Unearth",
 		"type": "onDeath",
-		"icon": "reanimate",
-		"desc": "When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity."
+		"icon": "unknown",
+		"desc": "When a non token creature dies, it spawns a Token creature with stats based on its own stats"
 	},
 	"valor" : {
 		"name": "Valor",
