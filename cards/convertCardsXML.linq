@@ -209,6 +209,15 @@ void Main()
 			icon = "mystic_barrier",
 			type = "activation",
 			order = "0"
+		},
+		new
+		{
+			id = "unearth",
+			name = "Unearth",
+			desc = "When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity.",
+			icon = "reanimate",
+			type = "onDeath",
+			order = "0"
 		}
 	})
 	.OrderBy(skill => skill.id);

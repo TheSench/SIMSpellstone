@@ -299,6 +299,12 @@ var SKILL_DATA = {
 		"icon": "taunt",
 		"desc": "Attack damage dealt to adjacent creatures is dealt to this creature instead."
 	},
+	"unearth" : {
+		"name": "Unearth",
+		"type": "onDeath",
+		"icon": "reanimate",
+		"desc": "When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity."
+	},
 	"valor" : {
 		"name": "Valor",
 		"type": "turnStart",
