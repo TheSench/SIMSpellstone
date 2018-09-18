@@ -302,7 +302,7 @@ var SKILL_DATA = {
 	"unearth" : {
 		"name": "Unearth",
 		"type": "onDeath",
-		"icon": "unknown",
+		"icon": "reanimate",
 		"desc": "When a non token creature dies, it spawns a Token creature with stats based on its own stats"
 	},
 	"valor" : {

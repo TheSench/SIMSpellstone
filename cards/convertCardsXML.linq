@@ -156,7 +156,8 @@ void Main()
 		{"counterburn", "counterburn"},
 		{"counterpoison", "counterburn"},
 		{"slow", "bind"},
-		{"enlarge", "empower"}
+		{"enlarge", "empower"},
+		{"unearth", "reanimate"}
 	};
 	
 	var mapped = new Dictionary<string, string>();
