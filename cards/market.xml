@@ -1010,8 +1010,8 @@
     <hc_cost>5000</hc_cost>
     <asset_prefab>MassiveRunecrafterChest</asset_prefab>
     <bundle>35</bundle>
-    <desc_list name="Runecrafter Pouch" icon="rune_component_bag_item" bundle="17" quantity="10" />
-    <desc_list name="Random Rare Rune" icon="rune_empty_rare" bundle="34" quantity="1" />
+    <desc_list name="Runecrafter Pouch" icon="rune_component_bag_item" bundle="17" quantity="20" />
+    <desc_list name="Random Epic Rune" icon="rune_empty_epic" bundle="34" quantity="1" />
     <item_pack>
       <pulls>10</pulls>
       <item id="4013" quantity="1" weight=".3" />
@@ -1033,6 +1033,7 @@
       <item id="2501" quantity="60" weight=".3" />
       <item id="2501" quantity="80" weight=".1" />
     </item_pack>
+    <random_rune number="1" min_rarity="3" max_rarity="4" set="1" />
   </store_item>
   <store_item>
     <id>91</id>
