@@ -22288,12 +22288,12 @@ var CARDS = {
       {
         "id": "heal",
         "x": 40,
-        "c": 10,
+        "c": 8,
       },
       {
         "id": "strike",
         "x": 25,
-        "c": 10,
+        "c": 7,
       },
     ],
     "upgrades": {
@@ -22392,6 +22392,121 @@ var CARDS = {
           {
             "id": "strike",
             "x": 35,
+          },
+        ],
+      },
+    }
+  },
+  "421": {
+    "id": "421",
+    "name": "Agonized Amarok",
+    "picture": "portrait_necromancer",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 76,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 4,
+        "s": "poison",
+      },
+      {
+        "id": "enhance",
+        "x": 2,
+        "s": "regenerate",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 80,
+        "skill": [],
+      },
+      "3": {
+        "health": 85,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "regenerate",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 89,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "regenerate",
+          },
+          {
+            "id": "heal",
+            "x": 6,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 94,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 6,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 4,
+            "s": "regenerate",
+          },
+          {
+            "id": "heal",
+            "x": 6,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 99,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 6,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 5,
+            "s": "regenerate",
+          },
+          {
+            "id": "heal",
+            "x": 7,
+            "all": "1",
           },
         ],
       },
@@ -187435,7 +187550,7 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "health": 28,
+    "health": 30,
     "attack": 6,
     "cost": 3,
     "maxLevel": 5,
@@ -187457,7 +187572,7 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 29,
+        "health": 31,
         "skill": [
           {
             "id": "counter",
@@ -187477,11 +187592,11 @@ var CARDS = {
       },
       "3": {
         "attack": 7,
-        "health": 30,
+        "health": 32,
         "skill": [],
       },
       "4": {
-        "health": 31,
+        "health": 34,
         "skill": [
           {
             "id": "counter",
@@ -187500,6 +187615,7 @@ var CARDS = {
         ],
       },
       "5": {
+        "health": 35,
         "skill": [
           {
             "id": "counter",
@@ -199667,6 +199783,193 @@ var CARDS = {
             "id": "strike",
             "x": 6,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "5601": {
+    "id": "5601",
+    "name": "Volsung Icewind",
+    "picture": "Iciclle_Dragon_Elemental_B",
+    "rarity": "4",
+    "set": "5100",
+    "card_type": "2",
+    "shard_card": 1,
+    "type": "1",
+    "sub_type": ["5","9"],
+    "health": 26,
+    "attack": 9,
+    "cost": 2,
+    "maxLevel": 10,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 10,
+        "health": 27,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "attack": 11,
+        "health": 29,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 12,
+        "health": 30,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 6,
+          },
+        ],
+      },
+      "7": {
+        "attack": 13,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 7,
+          },
+        ],
+      },
+      "8": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 7,
+          },
+        ],
+      },
+      "9": {
+        "attack": 14,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "frost",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 7,
+          },
+        ],
+      },
+      "10": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 7,
+          },
+          {
+            "id": "frost",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 8,
           },
         ],
       },
@@ -234087,7 +234390,7 @@ var CARDS = {
   "8122": {
     "id": "8122",
     "name": "Promised Victory",
-    "picture": "Promo_Dragon_B",
+    "picture": "Promo_Dragon_A",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -235110,8 +235413,23 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9967": {
-    "id": "9967",
+  "19967": {
+    "id": "19967",
+    "name": "Unused Art - 'Promo_Dragon'",
+    "picture": "Promo_Dragon_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9966": {
+    "id": "9966",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_A",
     "rarity": "0",
@@ -235125,8 +235443,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19967": {
-    "id": "19967",
+  "19966": {
+    "id": "19966",
     "name": "Unused Art - 'Seraph'",
     "picture": "Seraph_B",
     "rarity": "0",
@@ -235140,8 +235458,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19966": {
-    "id": "19966",
+  "19965": {
+    "id": "19965",
     "name": "Unused Art - 'Sierra_Knight'",
     "picture": "Sierra_Knight_B",
     "rarity": "0",
@@ -235155,8 +235473,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9965": {
-    "id": "9965",
+  "9964": {
+    "id": "9964",
     "name": "Unused Art - 'Spellstone_Hammer_Goblin'",
     "picture": "Spellstone_Hammer_Goblin_A",
     "rarity": "0",
@@ -235170,8 +235488,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9964": {
-    "id": "9964",
+  "9963": {
+    "id": "9963",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_A",
     "rarity": "0",
@@ -235185,8 +235503,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19964": {
-    "id": "19964",
+  "19963": {
+    "id": "19963",
     "name": "Unused Art - 'Spiky_Bug'",
     "picture": "Spiky_Bug_B",
     "rarity": "0",
@@ -235200,8 +235518,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19963": {
-    "id": "19963",
+  "19962": {
+    "id": "19962",
     "name": "Unused Art - 'Stone_Knight'",
     "picture": "Stone_Knight_B",
     "rarity": "0",
@@ -235215,8 +235533,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9962": {
-    "id": "9962",
+  "9961": {
+    "id": "9961",
     "name": "Unused Art - 'Tarian'",
     "picture": "Tarian_A",
     "rarity": "0",
@@ -235230,8 +235548,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19961": {
-    "id": "19961",
+  "19960": {
+    "id": "19960",
     "name": "Unused Art - 'Tower_Knight'",
     "picture": "Tower_Knight_B",
     "rarity": "0",
@@ -235245,8 +235563,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9960": {
-    "id": "9960",
+  "9959": {
+    "id": "9959",
     "name": "Unused Art - 'Train_Mecha'",
     "picture": "Train_Mecha_A",
     "rarity": "0",
@@ -235260,8 +235578,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9959": {
-    "id": "9959",
+  "9958": {
+    "id": "9958",
     "name": "Unused Art - 'Tremor_Wurm'",
     "picture": "Tremor_Wurm_A",
     "rarity": "0",
@@ -235275,8 +235593,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9958": {
-    "id": "9958",
+  "9957": {
+    "id": "9957",
     "name": "Unused Art - 'Unused1'",
     "picture": "Unused1_A",
     "rarity": "0",
@@ -235290,8 +235608,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9957": {
-    "id": "9957",
+  "9956": {
+    "id": "9956",
     "name": "Unused Art - 'Unused2'",
     "picture": "Unused2_A",
     "rarity": "0",
@@ -235305,8 +235623,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9956": {
-    "id": "9956",
+  "9955": {
+    "id": "9955",
     "name": "Unused Art - 'Unused3'",
     "picture": "Unused3_A",
     "rarity": "0",
@@ -235320,8 +235638,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9955": {
-    "id": "9955",
+  "9954": {
+    "id": "9954",
     "name": "Unused Art - 'Ursurio'",
     "picture": "Ursurio_A",
     "rarity": "0",
@@ -235335,8 +235653,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9954": {
-    "id": "9954",
+  "9953": {
+    "id": "9953",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_A",
     "rarity": "0",
@@ -235350,8 +235668,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19954": {
-    "id": "19954",
+  "19953": {
+    "id": "19953",
     "name": "Unused Art - 'Victorian_Card_Ghost'",
     "picture": "Victorian_Card_Ghost_B",
     "rarity": "0",
@@ -235365,8 +235683,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9953": {
-    "id": "9953",
+  "9952": {
+    "id": "9952",
     "name": "Unused Art - 'Void_Abomination'",
     "picture": "Void_Abomination_A",
     "rarity": "0",
@@ -235380,8 +235698,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9952": {
-    "id": "9952",
+  "9951": {
+    "id": "9951",
     "name": "Unused Art - 'Yuriel'",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -235396,4 +235714,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1537671727228.11;
+var CardsUpdated = 1538131152315.64;

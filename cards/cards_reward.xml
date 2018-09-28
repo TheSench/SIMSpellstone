@@ -10533,7 +10533,7 @@
     <asset_bundle>95</asset_bundle>
     <hidden_until_time>1496336400</hidden_until_time>
     <attack>6</attack>
-    <health>28</health>
+    <health>30</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="counter" x="6" />
@@ -10544,25 +10544,26 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>29</health>
+      <health>31</health>
       <skill id="counter" x="7" />
       <skill id="heal" x="4" all="1" y="5" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>30</health>
+      <health>32</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>31</health>
+      <health>34</health>
       <skill id="counter" x="7" />
       <skill id="heal" x="4" all="1" y="5" />
       <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>35</health>
       <skill id="counter" x="7" />
       <skill id="heal" x="5" all="1" y="5" />
       <skill id="frost" x="5" />

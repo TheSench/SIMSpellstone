@@ -33861,7 +33861,7 @@
     <commander id="420" />
     <deck>
       <card id="8124" name="Unfounded Revenge" />
-      <card id="8124" name="Unfounded Revenge" />
+      <card id="6137" name="Deluging Bile" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="5187" name="Star Chaser" />
@@ -33885,7 +33885,7 @@
     <commander id="420" />
     <deck>
       <card id="8124" name="Unfounded Revenge" />
-      <card id="8124" name="Unfounded Revenge" />
+      <card id="6137" name="Deluging Bile" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="5187" name="Star Chaser" />
@@ -33909,7 +33909,7 @@
     <commander id="420" />
     <deck>
       <card id="8124" name="Unfounded Revenge" />
-      <card id="8124" name="Unfounded Revenge" />
+      <card id="6137" name="Deluging Bile" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="5187" name="Star Chaser" />
@@ -33933,7 +33933,7 @@
     <commander id="420" />
     <deck>
       <card id="8124" name="Unfounded Revenge" />
-      <card id="8124" name="Unfounded Revenge" />
+      <card id="6137" name="Deluging Bile" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="8123" name="Fear of the Vanquished" />
       <card id="5187" name="Star Chaser" />
@@ -33947,6 +33947,103 @@
       <card id="4010" name="Columba, Firewing Monk" />
       <card id="8122" name="Promised Victory" />
       <card id="8122" name="Promised Victory" />
+    </deck>
+  </mission>
+  <!-- Boss Node Rift Howl -->
+  <mission>
+    <id>6079</id>
+    <name>Reality Breaker</name>
+    <energy>9</energy>
+    <desc>A claw rips through the fabric of reality, trembling as it digs desperately into the ground. A wolf-like creature pulls itself forward, emerging from the air. Crystals containing The Void's essence grow from the wolf's matted fur.</desc>
+    <commander id="421" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6200" name="Embered Demise" />
+      <card id="6200" name="Embered Demise" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7013" name="Gold Elemental" />
+      <card id="6080" mastery_level="2" name="Titanirous" />
+      <card id="5181" mastery_level="3" name="Himamanav" />
+      <card id="5181" mastery_level="4" name="Himamanav" />
+      <card id="5210" mastery_level="5" name="Fading Light" />
+      <card id="4001" mastery_level="6" name="Foxfire" />
+      <card id="2022" mastery_level="7" name="Avalanche Equine" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6080</id>
+    <name>The Will to Live</name>
+    <energy>9</energy>
+    <desc>The beast's form quakes from the immense physical exertion. Its breaths are labored and uneven, wide eyes focused on the horizon. Its hind leg slips, disappearing from sight, but its other claws clench again as it pushes forward into existence.</desc>
+    <commander id="421" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6200" name="Embered Demise" />
+      <card id="6200" name="Embered Demise" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7013" name="Gold Elemental" />
+      <card id="6080" mastery_level="2" name="Titanirous" />
+      <card id="5181" mastery_level="3" name="Himamanav" />
+      <card id="5181" mastery_level="4" name="Himamanav" />
+      <card id="5210" mastery_level="5" name="Fading Light" />
+      <card id="4001" mastery_level="6" name="Foxfire" />
+      <card id="2022" mastery_level="7" name="Avalanche Equine" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6081</id>
+    <name>Cornered Beast</name>
+    <energy>9</energy>
+    <desc>The wolf's eyes finally recognize your presence. The beast recoils, the hair on the back of its neck bristling. Its form flickers; its eyes flash with a ferocity that only cornered beasts know.</desc>
+    <commander id="421" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6200" name="Embered Demise" />
+      <card id="6200" name="Embered Demise" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7013" name="Gold Elemental" />
+      <card id="6080" mastery_level="2" name="Titanirous" />
+      <card id="5181" mastery_level="3" name="Himamanav" />
+      <card id="5181" mastery_level="4" name="Himamanav" />
+      <card id="5210" mastery_level="5" name="Fading Light" />
+      <card id="4001" mastery_level="6" name="Foxfire" />
+      <card id="2022" mastery_level="7" name="Avalanche Equine" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6082</id>
+    <name>Mercy</name>
+    <energy>9</energy>
+    <desc>The wolf arches its back and howls. A long, agonizing song of a painful journey across dimensions. The creatures mimic its scream, creating an uneven cacophony that crescendos and shatters the tranquil night air.</desc>
+    <commander id="421" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6200" name="Embered Demise" />
+      <card id="6200" name="Embered Demise" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7206" name="Twigform Mystic" />
+      <card id="7013" name="Gold Elemental" />
+      <card id="6080" mastery_level="2" name="Titanirous" />
+      <card id="5181" mastery_level="3" name="Himamanav" />
+      <card id="5181" mastery_level="4" name="Himamanav" />
+      <card id="5210" mastery_level="5" name="Fading Light" />
+      <card id="4001" mastery_level="6" name="Foxfire" />
+      <card id="2022" mastery_level="7" name="Avalanche Equine" />
     </deck>
   </mission>
 </root>

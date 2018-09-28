@@ -9942,8 +9942,8 @@
     <health>95</health>
     <rarity>4</rarity>
     <skill id="imbue" x="1" s="silence" />
-    <skill id="heal" x="40" c="10" />
-    <skill id="strike" x="25" c="10" />
+    <skill id="heal" x="40" c="8" />
+    <skill id="strike" x="25" c="7" />
     <type>1</type>
     <set>9999</set>
     <upgrade>
@@ -9979,6 +9979,52 @@
       <skill id="imbue" x="1" s="silence" />
       <skill id="heal" x="99" c="5" />
       <skill id="strike" x="35" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>421</id>
+    <card_type>1</card_type>
+    <name>Agonized Amarok</name>
+    <portrait>necromancer</portrait>
+    <asset_bundle></asset_bundle>
+    <health>76</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="4" s="poison" />
+    <skill id="enhance" x="2" s="regenerate" />
+    <skill id="heal" x="3" all="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>80</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>85</health>
+      <skill id="imbue" x="5" s="poison" />
+      <skill id="enhance" x="3" s="regenerate" />
+      <skill id="heal" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>89</health>
+      <skill id="imbue" x="5" s="poison" />
+      <skill id="enhance" x="3" s="regenerate" />
+      <skill id="heal" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>94</health>
+      <skill id="imbue" x="6" s="poison" />
+      <skill id="enhance" x="4" s="regenerate" />
+      <skill id="heal" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="imbue" x="6" s="poison" />
+      <skill id="enhance" x="5" s="regenerate" />
+      <skill id="heal" x="7" all="1" />
     </upgrade>
   </unit>
 </root>

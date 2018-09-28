@@ -1143,6 +1143,97 @@
       <skill id="strike" all="1" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5601</id>
+    <card_type>2</card_type>
+    <name>Volsung Icewind</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Iciclle_Dragon_Elemental_B</picture>
+    <asset_bundle>141</asset_bundle>
+    <item_name>Volsung Stone</item_name>
+    <item_desc>Collect Volsung Stones to upgrade the Legendary Volsung Icewind card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <sub_type>9</sub_type>
+    <attack>9</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="frost" x="2" />
+    <skill id="berserk" x="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <health>27</health>
+      <skill id="armored" x="4" />
+      <skill id="frost" x="2" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+      <skill id="armored" x="4" />
+      <skill id="frost" x="2" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <health>29</health>
+      <skill id="armored" x="5" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <health>30</health>
+      <skill id="armored" x="5" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>31</health>
+      <skill id="armored" x="6" />
+      <skill id="frost" x="4" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>13</attack>
+      <skill id="armored" x="6" />
+      <skill id="frost" x="4" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>32</health>
+      <skill id="armored" x="6" />
+      <skill id="frost" x="4" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>14</attack>
+      <skill id="armored" x="6" />
+      <skill id="frost" x="5" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>34</health>
+      <skill id="armored" x="7" />
+      <skill id="frost" x="5" />
+      <skill id="berserk" x="8" />
+    </upgrade>
+  </unit>
   <!-- ============================== -->
   <!-- === CHAOS PREMIUM CHAMPION === -->
   <!-- ============================== -->

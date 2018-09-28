@@ -6384,6 +6384,40 @@
     </rewards>
     <find_item id="3080" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node Rifthowl -->
+  <!-- 
+	<campaign> 
+		<id>1185</id>
+		<name>Rift Howl</name>
+		<type>2</type>
+		<icon id='gem_Boss_LG' bundle='0' />
+		<campaign_req id='1183' level='1' />
+		<locked_start_time>1538672400</locked_start_time> | Thu, Oct 04 2018 17:00:00 |
+		<battleground_id>2050</battleground_id>
+		<location_id>18</location_id>
+		<show_level>1</show_level>
+		<show_ranking>1</show_ranking>
+		<x>270</x>
+		<y>320</y>
+		<combatBG>CombatBGEvent004</combatBG>
+		<missions>
+			<mission_id>6079</mission_id>
+			<mission_id>6080</mission_id>
+			<mission_id>6081</mission_id>
+			<mission_id>6082</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='512' />
+			<card level='3' id='512' />
+			<item level='4' id='3082' />
+			<item level='5' id='3082' />
+			<item level='6' id='3082' />
+			<item level='7' id='3082' />
+		</rewards>
+		<find_item id='3080' drop_per_energy='.4' />
+	</campaign>
+	-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -6775,6 +6809,7 @@
 		<locked_start_time>1511370000</locked_start_time>	 |  Wed, 22 Nov 2017 17:00:00 |
 		<side_mission>1</side_mission>
 		<battleground_id>2049</battleground_id>
+		<exclude_map_bges>1</exclude_map_bges>
 		<location_id>17</location_id>
 		<show_level>1</show_level>
 		<show_ranking>1</show_ranking>

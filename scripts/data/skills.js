@@ -287,6 +287,12 @@ var SKILL_DATA = {
 		"icon": "bind",
 		"desc": "Increases the creature's delay."
 	},
+	"stasis" : {
+		"name": "Stasis",
+		"type": "activation",
+		"icon": "unknown",
+		"desc": "Reduce any damage dealt to this by X while it is on delay or frozen."
+	},
 	"strike" : {
 		"name": "Bolt",
 		"type": "activation",
