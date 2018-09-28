@@ -3029,7 +3029,7 @@ var SIMULATOR = {};
 
 		// Protect
 		var damageInfo = modifySkillDamage(attacker, counterDamage, {enfeeble: true});
-		strike_damage = damageInfo.damage;
+		counterDamage = damageInfo.damage;
 		var shatter = damageInfo.shatter;
 
 		if (debug) {
