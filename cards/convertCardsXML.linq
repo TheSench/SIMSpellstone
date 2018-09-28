@@ -104,6 +104,7 @@ void Main()
 		{"poison", "onAttack"},
 		{"regenerate", "turnEnd"},
 		{"reinforce", "onAttack"},
+		{"stasis", "turnStart"},
 		{"valor", "turnStart"},
 		{"venom", "onAttack"},
 		// Flurry

@@ -267,6 +267,7 @@ var defaultStatusValues = {
     poisoned: 0,
     protected: 0,
     scorched: 0,
+    stasisField: 0,
 	warded: 0,
     // Boolean-Status
 	jammed: false,
@@ -432,6 +433,7 @@ var makeUnit = (function () {
             this.enfeebled = this.envenomed + this.heartseeker;
             this.enraged = 0;
             this.protected = 0;
+            this.stasisField = 0;
             this.barrier_ice = 0;
             this.enhanced = {};
             this.removeImbue();

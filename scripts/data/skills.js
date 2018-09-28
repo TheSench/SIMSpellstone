@@ -289,7 +289,7 @@ var SKILL_DATA = {
 	},
 	"stasis" : {
 		"name": "Stasis",
-		"type": "activation",
+		"type": "turnStart",
 		"icon": "unknown",
 		"desc": "Reduce any damage dealt to this by X while it is on delay or frozen."
 	},
