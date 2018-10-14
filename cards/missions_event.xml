@@ -33468,7 +33468,7 @@
       </line>
     </speech>
   </mission>
-  <!-- Campaign Event 12 -->
+  <!-- Campaign Event 12 weeks 1-4 -->
   <mission>
     <id>6063</id>
     <name>Signal of Light</name>
@@ -34045,5 +34045,381 @@
       <card id="4001" mastery_level="6" name="Foxfire" />
       <card id="2022" mastery_level="7" name="Avalanche Equine" />
     </deck>
+  </mission>
+  <!-- Campaign Event 12 weeks 5-8 -->
+  <mission>
+    <id>6083</id>
+    <name>Barrier Down</name>
+    <energy>18</energy>
+    <desc>The machine wheezes as it turns off. The particles it emits cease, the sky becoming lighter until the gray barrier eventually dissipates. And the earth begins to shake...</desc>
+    <commander id="347" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="7004" name="Ice Golem" />
+      <card id="7045" name="Sakura" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="6005" mastery_level="2" name="Gloomkin" />
+      <card id="5123" mastery_level="3" name="Shadow Stalker" />
+      <card id="6164" mastery_level="4" name="Abomination" />
+      <card id="5048" mastery_level="5" name="Highborn Rose" />
+      <card id="6076" mastery_level="6" name="Magmatic Bang" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Er, do you hear that rumbling? What is it?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6084</id>
+    <name>Army of Undead</name>
+    <energy>18</energy>
+    <desc>Footsteps pound, and an Undead army emerges from the forest! They move with surprising speed, heading towards you.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="7004" name="Ice Golem" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="6077" name="Enigma" />
+      <card id="6125" name="Deadly Shot" />
+      <card id="5135" mastery_level="2" name="Shatterwind" />
+      <card id="6164" mastery_level="3" name="Abomination" />
+      <card id="7035" mastery_level="4" name="Carrion Tiger" />
+      <card id="5182" mastery_level="5" name="Lun Seles" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="6124" mastery_level="7" name="Enfeebling Vizier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>An entire army of Undead warriors... look out!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6085</id>
+    <name>Trapped Souls of the Barrier</name>
+    <energy>18</energy>
+    <desc>You and Garrick fight off the Undead horde. To make matters worse, the Elementals are encouraged further by the Undead attack, stirring restlessly...</desc>
+    <commander id="330" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="7084" name="Witchwood" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="6123" name="Battleborn Destrier" />
+      <card id="7075" mastery_level="2" name="Diamode" />
+      <card id="6016" mastery_level="3" name="Skeletal Giant" />
+      <card id="2114" mastery_level="4" name="Ironbound Bonewalker" />
+      <card id="5180" mastery_level="5" name="Magmaroot" />
+      <card id="5134" mastery_level="6" name="Ocotillo" />
+      <card id="5037" mastery_level="7" name="Dauntless Baneblade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6086</id>
+    <name>A Skeleton Behind You</name>
+    <energy>18</energy>
+    <desc>A skeleton has snuck up behind you! As you whirl around to prepare for an incoming attack, you stop yourself upon seeing a familiar face.</desc>
+    <commander id="336" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="7170" name="Gallows Hand" />
+      <card id="6046" name="Celerity" />
+      <card id="2057" name="Twister" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="6075" mastery_level="2" name="Consuming Mireling" />
+      <card id="6125" mastery_level="3" name="Deadly Shot" />
+      <card id="1331" mastery_level="4" name="Fallen Soldiers" />
+      <card id="5132" mastery_level="5" name="Whirlwinder" />
+      <card id="5178" mastery_level="6" name="Skadi, Snow Princess" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>You fools! This was supposed to just be an information gathering mission...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6087</id>
+    <name>Redfeather's Barrier</name>
+    <energy>18</energy>
+    <desc>Tarian joins you and Garrick in fighting against the Undead and Elementals. His gigantic ax is making quick work of the lesser Undead.</desc>
+    <commander id="243" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="2075" name="Arcane Snowman" />
+      <card id="5135" name="Shatterwind" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2056" name="Drainor" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="6015" mastery_level="2" name="Acidic Sludge" />
+      <card id="6164" mastery_level="3" name="Abomination" />
+      <card id="2115" mastery_level="4" name="Druid of Rot" />
+      <card id="5082" mastery_level="5" name="Memory" />
+      <card id="5048" mastery_level="6" name="Highborn Rose" />
+      <card id="5126" mastery_level="7" name="Ominous Canvas" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>I suspect a previous Redfeather inhabitant crafted that machine. Not to keep Undead OUT...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6088</id>
+    <name>The Valley's Corruption</name>
+    <energy>18</energy>
+    <desc>The desecrated village once housed the Redfeather Valley inhabitants. When a rift to The Void opened, the Avians were too weak to vanquish their enemies.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="5033" name="Lost Soul" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2032" name="Brimstone" />
+      <card id="6034" name="Bone Viper" />
+      <card id="7004" mastery_level="2" name="Ice Golem" />
+      <card id="5168" mastery_level="3" name="Lamia's Shield" />
+      <card id="1332" mastery_level="4" name="Vampiric Emira" />
+      <card id="5049" mastery_level="5" name="Joryl" />
+      <card id="5211" mastery_level="6" name="Peakchill Giant" />
+      <card id="5083" mastery_level="7" name="Honor Risen" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>But to keep the corruption IN. The Void's power must have caused an Undead infestation.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6089</id>
+    <name>Uncontrollable Corruption</name>
+    <energy>18</energy>
+    <desc>Although the Undead ranks are thinning, there are still a great amount of enemies. Garrick appeals to the Chaos leader for help.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6083" name="Lockejaw" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="5046" name="Dawn" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2032" name="Brimstone" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="6081" name="Apparition" />
+      <card id="5046" mastery_level="2" name="Dawn" />
+      <card id="7035" mastery_level="3" name="Carrion Tiger" />
+      <card id="6175" mastery_level="4" name="Toxic Steam" />
+      <card id="5179" mastery_level="5" name="Grimacing Bolt" />
+      <card id="5048" mastery_level="6" name="Highborn Rose" />
+      <card id="6122" mastery_level="7" name="Relentless Dead" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Can't you use your influence to control them, sir?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6090</id>
+    <name>Valley of Undead</name>
+    <energy>18</energy>
+    <desc>Tarian continues to aid you as best as he can. The valley has created a chokehold where the Undead cannot pass through without first passing your group, allowing you to protect the border.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6123" name="Battleborn Destrier" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="2056" name="Drainor" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5135" name="Shatterwind" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="7075" mastery_level="2" name="Diamode" />
+      <card id="6036" mastery_level="3" name="Cursed Ogre" />
+      <card id="6134" mastery_level="4" name="Primitive Hearth" />
+      <card id="6047" mastery_level="5" name="Wither" />
+      <card id="5045" mastery_level="6" name="Echo Elemental" />
+      <card id="6032" mastery_level="7" name="Mumohotep" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>They are not natives to Karthos, so I cannot. No, there is only one solution.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6091</id>
+    <name>Shall Not Pass</name>
+    <energy>18</energy>
+    <desc>Undead continue to filter through the valley. They can sense the barrier's absence, now seeking to make it to the open world.</desc>
+    <commander id="243" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="6164" name="Abomination" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="6005" name="Gloomkin" />
+      <card id="2056" name="Drainor" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="6081" name="Apparition" />
+      <card id="1026" mastery_level="2" name="Glass Colossus" />
+      <card id="5168" mastery_level="3" name="Lamia's Shield" />
+      <card id="6079" mastery_level="4" name="Heinous Smoggler" />
+      <card id="6179" mastery_level="5" name="Sol Doumu" />
+      <card id="1642" mastery_level="6" name="Icestone Beast" />
+      <card id="6087" mastery_level="7" name="Dread Obliterator" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>We must defeat them all so that they cannot harm the rest of the world.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6092</id>
+    <name>Missing Answers</name>
+    <energy>18</energy>
+    <desc>Garrick pauses his assault to look up at the sky. Without the barrier, it is a deep blue, with sparse clouds and stars. There is no trace of the previous ray of light.</desc>
+    <commander id="284" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="2031" name="Dryad" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="7045" name="Sakura" />
+      <card id="2056" name="Drainor" />
+      <card id="5081" name="Brahzee" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2075" mastery_level="2" name="Arcane Snowman" />
+      <card id="6036" mastery_level="3" name="Cursed Ogre" />
+      <card id="5032" mastery_level="4" name="Hail Hurler" />
+      <card id="7077" mastery_level="5" name="Crystallum" />
+      <card id="8037" mastery_level="6" name="Sludge River" />
+      <card id="5167" mastery_level="7" name="Hierophant of Evening" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>We still never figured out what was causing that light.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6093</id>
+    <name>The Light's Source</name>
+    <energy>18</energy>
+    <desc>As if it had heard Garrick's musing, the ray of light abruptly blasts into the night sky again. It is accompanied by a bestial wolf howl, the source extremely close. Your eyes take a moment to adjust... </desc>
+    <commander id="270" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="2088" name="Bog Witch" />
+      <card id="6046" name="Celerity" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="2009" mastery_level="2" name="Sapling" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
+      <card id="5045" mastery_level="4" name="Echo Elemental" />
+      <card id="2015" mastery_level="5" name="Pumpking" />
+      <card id="1343" mastery_level="6" name="Firehorn" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>And there is our answer...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>That creature has some unusual power to travel through dimensions...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6094</id>
+    <name>Plane Pain</name>
+    <energy>18</energy>
+    <desc>The creature resembles that of a wolf, but crystals are going from its body. When the beast's howl ends, so too does the light. Its eyes land on you, a snarl twisting across its maw.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="2056" name="Drainor" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6077" name="Enigma" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2009" mastery_level="2" name="Sapling" />
+      <card id="6016" mastery_level="3" name="Skeletal Giant" />
+      <card id="7175" mastery_level="4" name="Leafsurge Warrior" />
+      <card id="7079" mastery_level="5" name="Carina" />
+      <card id="7177" mastery_level="6" name="Flowstone, Ancient One" />
+      <card id="6003" mastery_level="7" name="Black Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>But the path to The Void Plane is closed, and it's caught between realities.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Its pain is stirring up the Undead and Elementals. If we beat it, it should let the others rest.</text>
+      </line>
+    </speech>
   </mission>
 </root>

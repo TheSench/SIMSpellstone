@@ -11,6 +11,12 @@ var SKILL_DATA = {
 		"icon": "shield",
 		"desc": "Prevents damage taken by attacks"
 	},
+	"backlash" : {
+		"name": "Backlash",
+		"type": "activation",
+		"icon": "unknown",
+		"desc": "Whenever an enemy uses a targeted skill on this card, Bolt it for X"
+	},
 	"barrage" : {
 		"name": "barrage",
 		"type": "earlyActivation",
@@ -291,7 +297,7 @@ var SKILL_DATA = {
 		"name": "Stasis",
 		"type": "turnStart",
 		"icon": "unknown",
-		"desc": "Reduce any damage dealt to this by X while it is on delay or frozen."
+		"desc": "Reduce any damage dealt to this by X while it is on delay or frozen"
 	},
 	"strike" : {
 		"name": "Bolt",

@@ -26629,4 +26629,281 @@
       <skill id="daze" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5211</id>
+    <card_type>2</card_type>
+    <name>Peakchill Giant</name>
+    <picture>IceElemental_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1538672400</hidden_until_time>
+    <attack>8</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="counter" x="3" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="3" />
+      <skill id="counter" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <skill id="absorb" x="3" />
+      <skill id="counter" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="absorb" x="4" />
+      <skill id="counter" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>31</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15211</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Peakchill Elemental</name>
+    <picture>IceElemental_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1538672400</hidden_until_time>
+    <attack>9</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="counter" x="5" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="5" />
+      <skill id="counter" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+      <skill id="absorb" x="5" />
+      <skill id="counter" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="5" />
+      <skill id="counter" x="6" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+      <skill id="absorb" x="6" />
+      <skill id="counter" x="6" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25211</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Peakchill Vanquisher</name>
+    <picture>IceElemental_B</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1538672400</hidden_until_time>
+    <attack>10</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="counter" x="7" />
+    <skill id="jam" c="2" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="7" />
+      <skill id="counter" x="8" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="8" />
+      <skill id="counter" x="9" />
+      <skill id="jam" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5212</id>
+    <card_type>2</card_type>
+    <name>Sparktail Cirrus</name>
+    <picture>Cloud_Fox_Elemental_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1539018000</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="2" />
+    <skill id="pierce" x="2" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="burn" x="2" />
+      <skill id="pierce" x="3" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="3" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15212</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Crackletail Cirrus</name>
+    <picture>Cloud_Fox_Elemental_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1539018000</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="3" />
+    <skill id="pierce" x="4" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="4" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>17</health>
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25212</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Thundertail Cirrus</name>
+    <picture>Cloud_Fox_Elemental_B</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1539018000</hidden_until_time>
+    <attack>6</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="5" />
+    <skill id="pierce" x="5" />
+    <skill id="nullify" x="3" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="burn" x="5" />
+      <skill id="pierce" x="6" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="6" />
+      <skill id="pierce" x="6" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="burn" x="6" />
+      <skill id="pierce" x="7" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+  </unit>
 </root>

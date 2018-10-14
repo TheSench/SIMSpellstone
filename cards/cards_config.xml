@@ -661,7 +661,16 @@
     <order>20</order>
     <icon>stasis</icon>
     <name>Stasis</name>
-    <desc>Reduce any damage dealt to this by X while it is on delay or frozen.</desc>
+    <desc>Reduce any damage dealt to this by X while it is on delay or frozen</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>backlash</id>
+    <order>20</order>
+    <icon>backlash</icon>
+    <name>Backlash</name>
+    <desc>Whenever an enemy uses a targeted skill on this card, Bolt it for X</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>

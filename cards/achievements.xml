@@ -9689,6 +9689,132 @@
       <item id="8012" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 12 weeks 5-8 -->
+  <achievement>
+    <id>3409</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Barrier Destruction</name>
+    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 1.</desc>
+    <mission_req>6074</mission_req>
+    <locked_start_time>1539882000</locked_start_time>
+    <!-- Thu, Oct 18 2018 17:00:00 -->
+    <req>
+      <campaign>1186</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3080" number="50" />
+      <event_points id="7039" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3410</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Barrier Destruction</name>
+    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 2.</desc>
+    <mission_req>6074</mission_req>
+    <locked_start_time>1539882000</locked_start_time>
+    <!-- Thu, Oct 18 2018 17:00:00 -->
+    <achievement_req>3409</achievement_req>
+    <req>
+      <campaign>1186</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3411</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Barrier Destruction</name>
+    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 4.</desc>
+    <mission_req>6074</mission_req>
+    <locked_start_time>1539882000</locked_start_time>
+    <!-- Thu, Oct 18 2018 17:00:00 -->
+    <achievement_req>3410</achievement_req>
+    <req>
+      <campaign>1186</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3412</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Barrier Destruction</name>
+    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 6.</desc>
+    <mission_req>6074</mission_req>
+    <locked_start_time>1539882000</locked_start_time>
+    <!-- Thu, Oct 18 2018 17:00:00 -->
+    <achievement_req>3411</achievement_req>
+    <req>
+      <campaign>1186</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3413</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Spirit Between Planes</name>
+    <desc>Complete the 'The Spirit Between Planes' campaign on Mastery Level 2.</desc>
+    <mission_req>6088</mission_req>
+    <locked_start_time>1541091600</locked_start_time>
+    <!-- Thu, Nov 1 2018 17:00:00 -->
+    <req>
+      <campaign>1187</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3414</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Spirit Between Planes</name>
+    <desc>Complete the 'The Spirit Between Planes' campaign on Mastery Level 4.</desc>
+    <mission_req>6088</mission_req>
+    <locked_start_time>1541091600</locked_start_time>
+    <!-- Thu, Nov 1 2018 17:00:00 -->
+    <achievement_req>3413</achievement_req>
+    <req>
+      <campaign>1187</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3415</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Spirit Between Planes</name>
+    <desc>Complete the 'The Spirit Between Planes' campaign on Mastery Level 6.</desc>
+    <mission_req>6088</mission_req>
+    <locked_start_time>1541091600</locked_start_time>
+    <!-- Thu, Nov 1 2018 17:00:00 -->
+    <achievement_req>3414</achievement_req>
+    <req>
+      <campaign>1187</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
