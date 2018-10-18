@@ -15,7 +15,7 @@ var SKILL_DATA = {
 		"name": "Backlash",
 		"type": "activation",
 		"icon": "unknown",
-		"desc": "Whenever an enemy uses a targeted skill on this card, Bolt it for X"
+		"desc": "After being targeted by an enemy creature's skill, deals damage back."
 	},
 	"barrage" : {
 		"name": "barrage",
@@ -294,10 +294,10 @@ var SKILL_DATA = {
 		"desc": "Increases the creature's delay."
 	},
 	"stasis" : {
-		"name": "Stasis",
+		"name": "Shroud",
 		"type": "turnStart",
 		"icon": "unknown",
-		"desc": "Reduce any damage dealt to this by X while it is on delay or frozen"
+		"desc": "Reduces damage taken from each Attack and Skill while on delay or Frozen."
 	},
 	"strike" : {
 		"name": "Bolt",

@@ -10059,5 +10059,26 @@
       <item id="2531" number="1" />
     </reward>
   </achievement>
+  <achievement>
+    <!-- Desolate Red Valley -->
+    <id>4012</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Desolate Red Valley</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Desolate Red Valley.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6082</mission_req>
+    <req>
+      <campaign>1183</campaign>
+      <campaign>1184</campaign>
+      <campaign>1185</campaign>
+      <campaign>1186</campaign>
+      <campaign>1187</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
   <!-- Non-Core Maps Meta END -->
 </root>

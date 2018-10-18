@@ -6417,68 +6417,67 @@
     </rewards>
     <find_item id="3080" drop_per_energy=".4" />
   </campaign>
-  <!-- Campaign Event 12 weeks 5-8 
-	
-	<campaign> 
-		<id>1186</id>
-		<name>Barrier Destruction</name>
-		<campaign_req id='1184' level='1' />
-		<locked_start_time>1539882000</locked_start_time> | Thu, Oct 18 2018 17:00:00 |
-		<battleground_id>2051</battleground_id>
-		<location_id>18</location_id>
-		<x>650</x>
-		<y>345</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>6083</mission_id>
-			<mission_id>6084</mission_id>
-			<mission_id>6085</mission_id>
-			<mission_id>6086</mission_id>
-			<mission_id>6087</mission_id>
-			<mission_id>6088</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2138' />
-			<card level='5' id='512' />
-			<card level='6' id='2096' />
-			<item level='7' id='3081' />
-		</rewards>
-		<find_item id='3080' drop_per_energy='.6' />
-	</campaign>
-	
-	<campaign> 
-		<id>1187</id>
-		<name>The Spirit Between Planes</name>
-		<campaign_req id='1186' level='1' />
-		<locked_start_time>1541091600</locked_start_time> | Thu, Nov 01 2018 17:00:00 |
-		<battleground_id>2052</battleground_id>
-		<location_id>18</location_id>
-		<x>840</x>
-		<y>580</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>6089</mission_id>
-			<mission_id>6090</mission_id>
-			<mission_id>6091</mission_id>
-			<mission_id>6092</mission_id>
-			<mission_id>6093</mission_id>
-			<mission_id>6094</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2138' />
-			<card level='5' id='512' />
-			<card level='6' id='2096' />
-			<item level='7' id='3081' />
-		</rewards>
-		<find_item id='3080' drop_per_energy='.8' />
-	</campaign>
-	-->
+  <!-- Campaign Event 12 weeks 5-8 -->
+  <campaign>
+    <id>1186</id>
+    <name>Barrier Destruction</name>
+    <campaign_req id="1184" level="1" />
+    <locked_start_time>1539882000</locked_start_time>
+    <!-- Thu, Oct 18 2018 17:00:00 -->
+    <battleground_id>2051</battleground_id>
+    <location_id>18</location_id>
+    <x>650</x>
+    <y>345</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6083</mission_id>
+      <mission_id>6084</mission_id>
+      <mission_id>6085</mission_id>
+      <mission_id>6086</mission_id>
+      <mission_id>6087</mission_id>
+      <mission_id>6088</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2139" />
+      <card level="5" id="512" />
+      <card level="6" id="2115" />
+      <item level="7" id="3081" />
+    </rewards>
+    <find_item id="3080" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1187</id>
+    <name>The Spirit Between Planes</name>
+    <campaign_req id="1186" level="1" />
+    <locked_start_time>1541091600</locked_start_time>
+    <!-- Thu, Nov 01 2018 17:00:00 -->
+    <battleground_id>2052</battleground_id>
+    <location_id>18</location_id>
+    <x>840</x>
+    <y>580</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6089</mission_id>
+      <mission_id>6090</mission_id>
+      <mission_id>6091</mission_id>
+      <mission_id>6092</mission_id>
+      <mission_id>6093</mission_id>
+      <mission_id>6094</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2140" />
+      <card level="5" id="512" />
+      <card level="6" id="2087" />
+      <item level="7" id="3081" />
+    </rewards>
+    <find_item id="3080" drop_per_energy=".8" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

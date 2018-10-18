@@ -844,6 +844,8 @@
     <hc_cost>20</hc_cost>
     <asset_prefab>rune_bag</asset_prefab>
     <bundle>15</bundle>
+    <icon>rune_component_bag_item</icon>
+    <icon_bundle>17</icon_bundle>
     <drop_key>
       <drop_rarity id="1" name="1" color="^cFFFF" weight="1" />
       <drop_rarity id="2" name="2" color="^c8E5F" weight=".6" />
@@ -1114,6 +1116,7 @@
     <hidden_card_req>2039</hidden_card_req>
     <asset_prefab>embersoulBag</asset_prefab>
     <bundle>35</bundle>
+    <no_drop_rate>1</no_drop_rate>
     <item_pack>
       <pulls>1</pulls>
       <item id="2515" quantity="10" weight=".25" />
@@ -1145,6 +1148,7 @@
     <hidden_card_req>2074</hidden_card_req>
     <asset_prefab>brinesoul_bag</asset_prefab>
     <bundle>35</bundle>
+    <no_drop_rate>1</no_drop_rate>
     <item_pack>
       <pulls>1</pulls>
       <item id="2522" quantity="10" weight=".25" />
@@ -1176,6 +1180,7 @@
     <hidden_card_req>2094</hidden_card_req>
     <asset_prefab>windsoul_bag</asset_prefab>
     <bundle>35</bundle>
+    <no_drop_rate>1</no_drop_rate>
     <item_pack>
       <pulls>1</pulls>
       <item id="2524" quantity="60" weight=".25" />
@@ -5370,6 +5375,26 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="6178" display_card_id="6178" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5126</id>
+    <name>Hierophant Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFHierophant of Evening^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5167" display_card_id="5167" />
     </cards>
   </store_item>
 </root>

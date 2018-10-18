@@ -62,13 +62,13 @@ var BATTLEGROUNDS = {
   "105": {
     "name": "Relentless Hunger",
     "id": "105",
-    "desc": "The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 30% of their base Attack.",
+    "desc": "The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 15% of their base Health.",
     "effect": [
       {
         "effect_type": "add_skill",
         "id": "berserk",
-        "mult": .3,
-        "base": "attack",
+        "mult": .15,
+        "base": "health",
         "y": "7",
       },
     ]

@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 var RUNES = {
-	"5011": {
+  "5011": {
     "id": "5011",
     "name": "Rune of Minor Health",
     "type": "3",

@@ -96,11 +96,11 @@
   <battleground>
     <id>105</id>
     <name>Relentless Hunger</name>
-    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 30% of their base Attack.</desc>
+    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 15% of their base Health.</desc>
     <web_picture>filter_undead_64.png</web_picture>
     <icon>filter_undead_64</icon>
     <effect>
-      <add_skill id="berserk" mult=".3" base="attack" y="7" />
+      <add_skill id="berserk" mult=".15" base="health" y="7" />
     </effect>
   </battleground>
   <battleground>

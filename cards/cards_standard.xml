@@ -5532,24 +5532,26 @@
     <upgrade>
       <level>2</level>
       <health>15</health>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>15</health>
       <skill id="evade" x="1" />
       <skill id="legion" x="3" y="2" />
-      <skill id="strike" x="3" />
+      <skill id="strike" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>6</attack>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>16</health>
-      <skill id="evade" x="1" />
+      <attack>8</attack>
+      <skill id="evade" x="2" />
       <skill id="legion" x="3" y="2" />
-      <skill id="strike" x="4" />
+      <skill id="strike" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -6292,6 +6294,7 @@
     <upgrade>
       <level>2</level>
       <health>14</health>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -6299,19 +6302,22 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>16</health>
       <skill id="enfeeble" x="2" />
       <skill id="enfeeble" x="2" />
       <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="2" />
+      <health>17</health>
+      <skill id="enfeeble" x="3" />
       <skill id="enfeeble" x="2" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>6</attack>
+      <health>18</health>
+      <attack>7</attack>
     </upgrade>
   </unit>
   <unit>
@@ -9046,15 +9052,17 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>22</health>
       <skill id="rally" x="6" y="7" />
       <skill id="protect" x="2" y="3" all="1" />
-      <skill id="leech" x="5" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>23</health>
       <skill id="rally" x="6" y="7" />
       <skill id="protect" x="3" y="3" all="1" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>

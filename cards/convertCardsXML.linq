@@ -1,6 +1,8 @@
 <Query Kind="Program">
   <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
+  <NuGetReference>Newtonsoft.Json</NuGetReference>
   <Namespace>System.Xml.Serialization</Namespace>
+  <Namespace>Newtonsoft.Json</Namespace>
 </Query>
 
 static bool downloadFiles = true;
@@ -448,19 +450,20 @@ for(var skillID in SKILL_DATA) {
 	file = new FileInfo(Path.Combine(path, "../scripts/data", "campaign.js"));
 	using (var writer = file.CreateText())
 	{
-		writer.Write("var LOCATIONS = {\r\n");
-		foreach (var location in locations)
-		{
-			writer.WriteLine("  \"" + location.id + "\": {");
-			writer.WriteLine("    \"id\": \"" + location.id + "\",");
-			writer.WriteLine("    \"name\": \"" + location.name + "\",");
-			writer.WriteLine("  },");
-		}
-		writer.Write("};\r\n");
+		writer.Write("var LOCATIONS = {");
+		writer.WriteLine(String.Join(",",
+			locations
+				.OrderBy(location => Int32.Parse(location.id))
+				.Select(location => $"\r\n  \"{location.id}\": {JsonConvert.SerializeObject(location, Newtonsoft.Json.Formatting.Indented)}"))
+		);
+		writer.WriteLine("};");
 
 		writer.Write("var CAMPAIGNS = {\r\n");
-		foreach (var campaign in campaigns)
+		var i = 0;
+		var count = campaigns.Count();
+		foreach(var campaign in campaigns)
 		{
+			i++;
 			writer.WriteLine("  \"" + campaign.id + "\": {");
 			writer.WriteLine("    \"id\": \"" + campaign.id + "\",");
 			writer.WriteLine("    \"name\": \"" + campaign.name + "\",");
@@ -475,13 +478,19 @@ for(var skillID in SKILL_DATA) {
 			}
 			writer.WriteLine("    \"missions\": [\"" + String.Join("\",\"", campaign.missions) + "\"],");
 			writer.WriteLine("    \"items\": {" + String.Join<item>(", ", campaign.items) + "}");
-			writer.WriteLine("  },");
+			writer.WriteLine("  }");
+			if(i < count) {
+				writer.Write(",");
+			}
 		}
-		writer.Write("};\r\n");
+		writer.WriteLine("};");
 
 		writer.WriteLine("var MISSIONS = {");
+		i = 0;
+		count = missions.Count();
 		foreach (var mission in missions)
 		{
+			i++;
 			writer.WriteLine("  \"" + mission.id + "\": {");
 			writer.WriteLine("    \"id\": \"" + mission.id + "\",");
 			writer.WriteLine("    \"name\": \"" + mission.name + "\",");
@@ -489,14 +498,24 @@ for(var skillID in SKILL_DATA) {
 			writer.WriteLine(mission.commander.ToString());
 			writer.WriteLine("    },");
 			writer.WriteLine("    \"deck\": [");
+			var j = 0;
 			foreach (var card in mission.deck)
 			{
+				j++;
 				writer.WriteLine("      {");
 				writer.WriteLine(card.ToString());
 				writer.WriteLine("      },");
+				if (j < mission.deck.Length)
+				{
+					writer.Write(",");
+				}
 			}
 			writer.WriteLine("    ]");
-			writer.WriteLine("  },");
+			writer.WriteLine("  }");
+			if (i < count)
+			{
+				writer.Write(",");
+			}
 		}
 		writer.WriteLine("};");
 	}
