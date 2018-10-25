@@ -2,7 +2,7 @@
 
 var BATTLEGROUNDS = {
 	"101": {
-		"desc": "All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 25%.",
+		"desc": "All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 25%",
 		"effect": [
 			{
 				"all": "1",
