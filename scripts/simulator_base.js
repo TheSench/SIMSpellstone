@@ -142,6 +142,19 @@ var SIMULATOR = {};
 		});
 	};
 
+	function getActivatedSkill(skillMap, skillId) {
+		return (skillMap[skillId] || notImplemented);
+	}
+
+	function notImplemented(src_card, skill) {
+		if (debug) {
+			var skillName = (SKILL_DATA[skill.id] ? SKILL_DATA[skill.id].name : skill.id);
+			echo += debug_name(src_card) + ' attempts to use ' + skillName + ', but it is not implemented.<br>';
+		}
+
+		return 0;
+	}
+
 	// Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
 	function doEarlyActivations(field_p) {
 		var field_p_assaults = field_p.assaults;
@@ -187,7 +200,8 @@ var SIMULATOR = {};
 			for (var i = 0; i < len; i++) {
 				var skill = skills[i];
 				if (!skill.countdown) {
-					var affected = earlyActivationSkills[skill.id](source_card, skill);
+					var skillFn = getActivatedSkill(earlyActivationSkills, skill.id);
+					var affected = skillFn(source_card, skill);
 					if (skill.c && affected > 0) {
 						skill.countdown = skill.c;
 					}
@@ -1743,7 +1757,8 @@ var SIMULATOR = {};
 			}
 
 			// Delegate to skill function
-			var affected = activationSkills[skill.id](src_card, skill);
+			var skillFn = getActivatedSkill(activationSkills, skill.id);
+			var affected = skillFn(src_card, skill);
 
 			if (skill.c && affected > 0) {
 				skill.countdown = skill.c;

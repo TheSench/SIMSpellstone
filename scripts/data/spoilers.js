@@ -1,17 +1,18 @@
-var spoilers = {};
-spoilers[6205] = true;
-spoilers[16205] = true;
-spoilers[26205] = true;
-spoilers[7210] = true;
-spoilers[17210] = true;
-spoilers[27210] = true;
-spoilers[7212] = true;
-spoilers[17212] = true;
-spoilers[27212] = true;
-spoilers[2139] = true;
-spoilers[12139] = true;
-spoilers[22139] = true;
-spoilers[2140] = true;
-spoilers[12140] = true;
-spoilers[22140] = true;
-spoilers[4012] = true;
+var spoilers = {
+    "6205": true,
+    "16205": true,
+    "26205": true,
+    "7210": true,
+    "17210": true,
+    "27210": true,
+    "7212": true,
+    "17212": true,
+    "27212": true,
+    "2139": true,
+    "12139": true,
+    "22139": true,
+    "2140": true,
+    "12140": true,
+    "22140": true,
+    "4012": true
+};

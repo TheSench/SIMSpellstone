@@ -145,13 +145,9 @@ void Main()
 		{"counterburn", "Emberhide"}
 	};
 	
-	var skillIconChanges = new Dictionary<string, string>()
-	{
-		{"reinforce", "reinforce"}
-	};
-
 	var iconRemappings = new Dictionary<string, string>()
 	{
+		{"reinforce", "reinforce"},
 		{"mark", "eagle_eye"},
 		{"barrage", "barrage"},
 		{"protect_ice", "iceshatter"},
@@ -173,12 +169,9 @@ void Main()
 	{
 		var id = node.Element("id").Value;
 		string icon;
-		if (!skillIconChanges.TryGetValue(id, out icon))
+		if (!iconRemappings.TryGetValue(id, out icon))
 		{
-			if (!iconRemappings.TryGetValue(id, out icon))
-			{
-				icon = node.Element("icon")?.Value;
-			}
+			icon = node.Element("icon")?.Value;
 		}
 		string name;
 		if (!skillRenames.TryGetValue(id, out name))
@@ -317,6 +310,7 @@ for(var skillID in SKILL_DATA) {
 	var unitID = 10000;
 	var unusedIDHash = new System.Collections.Generic.Dictionary<string, string>();
 	var newFusions = new List<fusionRecipe>();
+	
 	foreach (var image in unusedImages)
 	{
 		var key = image.Key;
@@ -444,7 +438,7 @@ for(var skillID in SKILL_DATA) {
 			writer.Write(unit.ToString());
 		}
 		writer.Write("};\r\n");
-		writer.Write("var CardsUpdated = " + DateTime.Now.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds + ";");
+		writer.Write("var DataUpdated = " + DateTime.Now.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds + ";");
 	}
 
 	file = new FileInfo(Path.Combine(path, "../scripts/data", "campaign.js"));
@@ -504,7 +498,7 @@ for(var skillID in SKILL_DATA) {
 				j++;
 				writer.WriteLine("      {");
 				writer.WriteLine(card.ToString());
-				writer.WriteLine("      },");
+				writer.WriteLine("      }");
 				if (j < mission.deck.Length)
 				{
 					writer.Write(",");
@@ -780,12 +774,7 @@ public class unit
 	const string skillUpgradeTabs = "        ";
 
 	public void AppendUnit(StringBuilder sb)
-	{
-		if (name == "Croak Dropper")
-		{
-			var breakpoint = true;
-		}
-		
+	{		
 		sb.Append("  \"").Append(id).Append("\": {\r\n");
 		AppendEntryString(sb, "id", id, unitTabs);
 		AppendEntryString(sb, "name", name, unitTabs);
@@ -836,10 +825,11 @@ public class unit
 			foreach (var upgrade in upgrades)
 			{
 				sb.Append(upgradeTabs).Append("\"").Append(upgrade.level).Append("\": {\r\n");
-				AppendEntry(sb, "attack", upgrade.attack, skillUpgradePropTabs);
-				AppendEntry(sb, "health", upgrade.health, skillUpgradePropTabs);
-				AppendEntry(sb, "cost", upgrade.cost, skillUpgradePropTabs);
+				AppendEntryString(sb, "name", upgrade.name, skillUpgradePropTabs);
 				AppendEntryString(sb, "desc", upgrade.desc, skillUpgradePropTabs);
+				AppendEntry(sb, "health", upgrade.health, skillUpgradePropTabs);
+				AppendEntry(sb, "attack", upgrade.attack, skillUpgradePropTabs);
+				AppendEntry(sb, "cost", upgrade.cost, skillUpgradePropTabs);
 				AppendSkills(sb, upgrade.skills, skillUpgradePropTabs);
 				sb.Append(upgradeTabs).Append("},\r\n");
 			}
@@ -1048,6 +1038,7 @@ public class unitUpgrade
 	private string attackField;
 	private string healthField;
 	private string costField;
+	private string nameField;
 	private string descField;
 	private skill[] skillField;
 
@@ -1077,6 +1068,12 @@ public class unitUpgrade
 	{
 		get { return this.costField; }
 		set { this.costField = value; }
+	}
+
+	public string name
+	{
+		get { return this.nameField; }
+		set { this.nameField = value.Replace("\"", "\\\""); }
 	}
 
 	public string desc
@@ -1616,10 +1613,10 @@ private static void AppendEvolve(StringBuilder sb, evolve_skill evolve, string t
 private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tabs)
 {
 	AppendEntryString(sb, "id", skill.id, tabs);
-	AppendEntry(sb, "x", skill.x, tabs);
+	AppendEntryString(sb, "base", skill.Base, tabs);
 	AppendEntry(sb, "mult", skill.mult, tabs);
 	AppendEntry(sb, "on_delay_mult", skill.on_delay_mult, tabs);
-	AppendEntryString(sb, "base", skill.Base, tabs);
+	AppendEntry(sb, "x", skill.x, tabs);
 	AppendEntryString(sb, "y", skill.y, tabs);
 	//AppendEntry(sb, "z", skill.z, tabs);
 	AppendEntry(sb, "c", skill.c, tabs);
@@ -1633,8 +1630,8 @@ private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tab
 private static void AppendScaling(StringBuilder sb, scale_attributes skill, string tabs)
 {
 	AppendEntryString(sb, "id", skill.id, tabs);
-	AppendEntry(sb, "base_mult", skill.base_mult, tabs);
 	AppendEntry(sb, "mult", skill.mult, tabs);
+	AppendEntry(sb, "base_mult", skill.base_mult, tabs);
 	AppendEntryString(sb, "y", skill.y, tabs);
 }
 
@@ -1642,8 +1639,8 @@ private static void AppendScaleStat(StringBuilder sb, scale_stat skill, string t
 {
 	AppendEntryString(sb, "id", skill.id, tabs);
 	AppendEntryString(sb, "base", skill.Base, tabs);
-	AppendEntry(sb, "base_mult", skill.base_mult, tabs);
 	AppendEntry(sb, "mult", skill.mult, tabs);
+	AppendEntry(sb, "base_mult", skill.base_mult, tabs);
 	AppendEntryString(sb, "y", skill.y, tabs);
 }
 

@@ -1,348 +1,350 @@
+"use strict"
+
 var SKILL_DATA = {
-	"absorb" : {
-		"name": "Ward",
-		"type": "turnStart",
+	"absorb": {
+		"desc": "Prevents X damage taken from skills each round.",
 		"icon": "absorb",
-		"desc": "Prevents X damage taken from skills each round."
+		"name": "Ward",
+		"type": "turnStart"
 	},
-	"armored" : {
-		"name": "Armor",
-		"type": "passive",
+	"armored": {
+		"desc": "Prevents damage taken by attacks",
 		"icon": "shield",
-		"desc": "Prevents damage taken by attacks"
+		"name": "Armor",
+		"type": "passive"
 	},
-	"backlash" : {
+	"backlash": {
+		"desc": "After being targeted by an enemy creature's skill, deals damage back.",
+		"icon": "payback",
 		"name": "Backlash",
-		"type": "activation",
-		"icon": "unknown",
-		"desc": "After being targeted by an enemy creature's skill, deals damage back."
+		"type": "activation"
 	},
-	"barrage" : {
-		"name": "barrage",
-		"type": "earlyActivation",
+	"barrage": {
+		"desc": "Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.",
 		"icon": "barrage",
-		"desc": "Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom."
+		"name": "barrage",
+		"type": "earlyActivation"
 	},
-	"berserk" : {
-		"name": "Berserk",
-		"type": "onAttack",
+	"berserk": {
+		"desc": "When this creature deals attack damage, Attack is permanently increased",
 		"icon": "berserk",
-		"desc": "When this creature deals attack damage, Attack is permanently increased"
+		"name": "Berserk",
+		"type": "onAttack"
 	},
-	"burn" : {
+	"burn": {
+		"desc": "Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.",
+		"icon": "burn",
 		"name": "Scorch",
-		"type": "activation",
-		"icon": "burn",
-		"desc": "Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn."
+		"type": "activation"
 	},
-	"burn2" : {
+	"burn2": {
+		"desc": "Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.",
+		"icon": "burn",
 		"name": "Scorch 2",
-		"type": "activation",
-		"icon": "burn",
-		"desc": "Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn."
+		"type": "activation"
 	},
-	"burnself" : {
+	"burnself": {
+		"desc": "Deals stacking damage to this creature at end of turn. Wears off if not reapplied for a turn.",
+		"icon": "burn",
 		"name": "Scorch Self",
-		"type": "activation",
-		"icon": "burn",
-		"desc": "Deals stacking damage to this creature at end of turn. Wears off if not reapplied for a turn."
+		"type": "activation"
 	},
-	"corrosive" : {
-		"name": "Corrosive",
-		"type": "onDamaged",
+	"corrosive": {
+		"desc": "Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.",
 		"icon": "corrosive",
-		"desc": "Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn."
+		"name": "Corrosive",
+		"type": "onDamaged"
 	},
-	"counter" : {
-		"name": "Vengeance",
-		"type": "onDamaged",
+	"counter": {
+		"desc": "When damaged by an attack, deal damage to attacker",
 		"icon": "vengeance",
-		"desc": "When damaged by an attack, deal damage to attacker"
+		"name": "Vengeance",
+		"type": "onDamaged"
 	},
-	"counterburn" : {
+	"counterburn": {
+		"desc": "When damaged by an attack, Scorch the attacker",
+		"icon": "counterburn",
 		"name": "Emberhide",
-		"type": "onDamaged",
-		"icon": "counterburn",
-		"desc": "When damaged by an attack, Scorch the attacker"
+		"type": "onDamaged"
 	},
-	"counterpoison" : {
+	"counterpoison": {
+		"desc": "When damaged by an attack, Poison the attacker",
+		"icon": "counterburn",
 		"name": "Poisonhide",
-		"type": "onDamaged",
-		"icon": "counterburn",
-		"desc": "When damaged by an attack, Poison the attacker"
+		"type": "onDamaged"
 	},
-	"daze" : {
-		"name": "Daze",
-		"type": "onAttack",
+	"daze": {
+		"desc": "When this creature deals attack damage, reduce the Attack of the damaged creature.",
 		"icon": "daze",
-		"desc": "When this creature deals attack damage, reduce the Attack of the damaged creature."
+		"name": "Daze",
+		"type": "onAttack"
 	},
-	"enfeeble" : {
-		"name": "Hex",
-		"type": "activation",
+	"enfeeble": {
+		"desc": "Increase damage dealt to a random enemy creature",
 		"icon": "hex",
-		"desc": "Increase damage dealt to a random enemy creature"
+		"name": "Hex",
+		"type": "activation"
 	},
-	"enhance" : {
-		"name": "Enhance",
-		"type": "earlyActivation",
+	"enhance": {
+		"desc": "Increase effect of skill on a random allied creature",
 		"icon": "enhance",
-		"desc": "Increase effect of skill on a random allied creature"
+		"name": "Enhance",
+		"type": "earlyActivation"
 	},
-	"enlarge" : {
+	"enlarge": {
+		"desc": "Permanently increases the Attack of a creature when played, while this creature is active",
+		"icon": "empower",
 		"name": "Enlarge",
-		"type": "earlyActivation",
-		"icon": "empower",
-		"desc": "Permanently increases the Attack of a creature when played, while this creature is active"
+		"type": "earlyActivation"
 	},
-	"enrage" : {
-		"name": "Enrage",
-		"type": "earlyActivation",
+	"enrage": {
+		"desc": "Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.",
 		"icon": "enrage",
-		"desc": "Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently."
+		"name": "Enrage",
+		"type": "earlyActivation"
 	},
-	"evade" : {
-		"name": "Invisibility",
-		"type": "turnStart",
+	"evade": {
+		"desc": "Avoids enemy skills",
 		"icon": "invisibility",
-		"desc": "Avoids enemy skills"
+		"name": "Invisibility",
+		"type": "turnStart"
 	},
-	"evadebarrier" : {
-		"name": "Wing Ward",
-		"type": "activation",
+	"evadebarrier": {
+		"desc": "Applies Barrier and Invisibility to a random target allied creature",
 		"icon": "avian_barrier",
-		"desc": "Applies Barrier and Invisibility to a random target allied creature"
+		"name": "Wing Ward",
+		"type": "activation"
 	},
-	"fervor" : {
-		"name": "Fervor",
-		"type": "earlyActivation",
+	"fervor": {
+		"desc": "Empowers this creature for each adjacent allied creature.",
 		"icon": "fervor",
-		"desc": "Empowers this creature for each adjacent allied creature."
+		"name": "Fervor",
+		"type": "earlyActivation"
 	},
-	"flurry" : {
-		"name": "Dualstrike",
-		"type": "turnStart",
+	"flurry": {
+		"desc": "Activates twice in one turn. Activates every {c} turns.",
 		"icon": "swiftness",
-		"desc": "Activates twice in one turn. Activates every {c} turns."
+		"name": "Dualstrike",
+		"type": "turnStart"
 	},
-	"frost" : {
+	"frost": {
+		"desc": "Deals damage in a cone to up to three creatures in front of it.",
+		"icon": "frostbreath",
 		"name": "Frostbreath",
-		"type": "activation",
-		"icon": "frostbreath",
-		"desc": "Deals damage in a cone to up to three creatures in front of it."
+		"type": "activation"
 	},
-	"fury" : {
+	"fury": {
+		"desc": "When damaged by an attack, deal damage to attacker and increase Attack permanently",
+		"icon": "fury",
 		"name": "Maelstrom's Fury",
-		"type": "onDamaged",
-		"icon": "fury",
-		"desc": "When damaged by an attack, deal damage to attacker and increase Attack permanently"
+		"type": "onDamaged"
 	},
-	"haste" : {
+	"haste": {
+		"desc": "Decreases the creature's delay.",
+		"icon": "fury",
 		"name": "Haste",
-		"type": "activation",
-		"icon": "fury",
-		"desc": "Decreases the creature's delay."
+		"type": "activation"
 	},
-	"heal" : {
-		"name": "Heal",
-		"type": "activation",
+	"heal": {
+		"desc": "Heals a random allied creature",
 		"icon": "heal",
-		"desc": "Heals a random allied creature"
+		"name": "Heal",
+		"type": "activation"
 	},
-	"heartseeker" : {
-		"name": "Heartseeker",
-		"type": "activation",
+	"heartseeker": {
+		"desc": "Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks.",
 		"icon": "heartseeker",
-		"desc": "Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks."
+		"name": "Heartseeker",
+		"type": "activation"
 	},
-	"ignite" : {
-		"name": "Ignite",
-		"type": "activation",
+	"ignite": {
+		"desc": "Increases the Scorch value on a Scorched enemy creature, or deal Scorch damage to a random enemy creature",
 		"icon": "ignite",
-		"desc": "Increases the Scorch value on a Scorched enemy creature, or deal Scorch damage to a random enemy creature"
+		"name": "Ignite",
+		"type": "activation"
 	},
-	"imbue" : {
-		"name": "Imbue",
-		"type": "earlyActivation",
+	"imbue": {
+		"desc": "Grants a random allied creature a skill until the start of your next turn",
 		"icon": "imbue",
-		"desc": "Grants a random allied creature a skill until the start of your next turn"
+		"name": "Imbue",
+		"type": "earlyActivation"
 	},
-	"intensify" : {
+	"intensify": {
+		"desc": "Increases the value of Scorch or Poison on an enemy creature",
+		"icon": "intensify",
 		"name": "Intensify",
-		"type": "activation",
-		"icon": "unknown",
-		"desc": "Increases the value of Scorch or Poison on an enemy creature"
+		"type": "activation"
 	},
-	"jam" : {
+	"jam": {
+		"desc": "Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.",
+		"icon": "freeze",
 		"name": "Freeze",
-		"type": "activation",
-		"icon": "freeze",
-		"desc": "Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns."
+		"type": "activation"
 	},
-	"jamself" : {
+	"jamself": {
+		"desc": "This creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.",
+		"icon": "freeze",
 		"name": "Freeze Self",
-		"type": "activation",
-		"icon": "freeze",
-		"desc": "This creature doesn't attack or activate abilities on its next turn. Activates every {c} turns."
+		"type": "activation"
 	},
-	"leech" : {
-		"name": "Siphon",
-		"type": "onAttack",
+	"leech": {
+		"desc": "Heals this card as it deals Attack damage",
 		"icon": "siphon",
-		"desc": "Heals this card as it deals Attack damage"
+		"name": "Siphon",
+		"type": "onAttack"
 	},
-	"legion" : {
-		"name": "Legion",
-		"type": "earlyActivation",
+	"legion": {
+		"desc": "Empowers allied creatures adjacent to this creature.",
 		"icon": "legion",
-		"desc": "Empowers allied creatures adjacent to this creature."
+		"name": "Legion",
+		"type": "earlyActivation"
 	},
-	"mark" : {
-		"name": "Mark",
-		"type": "earlyActivation",
+	"mark": {
+		"desc": "Marks a random target upon first activation, Hexing them for 30% of their base Attack. The creature chooses a new mark when their current mark dies. Ignores Invisibility.",
 		"icon": "eagle_eye",
-		"desc": "Marks a random target upon first activation, Hexing them for 30% of their base Attack. The creature chooses a new mark when their current mark dies. Ignores Invisibility."
+		"name": "Mark",
+		"type": "earlyActivation"
 	},
-	"nullify" : {
-		"name": "Nullify",
-		"type": "onAttack",
+	"nullify": {
+		"desc": "Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.",
 		"icon": "nullify",
-		"desc": "Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills."
+		"name": "Nullify",
+		"type": "onAttack"
 	},
-	"pierce" : {
-		"name": "Pierce",
-		"type": "passive",
+	"pierce": {
+		"desc": "Reduces the effect of enemy Armor and Barriers",
 		"icon": "puncture",
-		"desc": "Reduces the effect of enemy Armor and Barriers"
+		"name": "Pierce",
+		"type": "passive"
 	},
-	"poison" : {
-		"name": "Poison",
-		"type": "onAttack",
+	"poison": {
+		"desc": "Poisons creatures damaged by this card, dealing additional damage at the end of turn",
 		"icon": "corrupt",
-		"desc": "Poisons creatures damaged by this card, dealing additional damage at the end of turn"
+		"name": "Poison",
+		"type": "onAttack"
 	},
-	"poisonstrike" : {
-		"name": "Poisonbolt",
-		"type": "activation",
+	"poisonstrike": {
+		"desc": "Deals bolt damage to a random enemy creature and leaves poison",
 		"icon": "poison_bolt",
-		"desc": "Deals bolt damage to a random enemy creature and leaves poison"
+		"name": "Poisonbolt",
+		"type": "activation"
 	},
-	"protect" : {
-		"name": "Barrier",
-		"type": "activation",
+	"protect": {
+		"desc": "Reduces the next damage dealt to a random allied creature",
 		"icon": "mystic_barrier",
-		"desc": "Reduces the next damage dealt to a random allied creature"
+		"name": "Barrier",
+		"type": "activation"
 	},
-	"protect_ice" : {
-		"name": "Iceshatter Barrier",
-		"type": "activation",
+	"protect_ice": {
+		"desc": "Reduces the next damage dealt to a random allied creature",
 		"icon": "iceshatter",
-		"desc": "Reduces the next damage dealt to a random allied creature"
+		"name": "Iceshatter Barrier",
+		"type": "activation"
 	},
-	"protect_seafolk" : {
-		"name": "Barrier",
-		"type": "activation",
+	"protect_seafolk": {
+		"desc": "Reduces the next Damage dealt to a random allied creature",
 		"icon": "mystic_barrier",
-		"desc": "Reduces the next Damage dealt to a random allied creature"
+		"name": "Barrier",
+		"type": "activation"
 	},
-	"rally" : {
-		"name": "Empower",
-		"type": "earlyActivation",
+	"rally": {
+		"desc": "Boosts Attack of a random allied creature",
 		"icon": "empower",
-		"desc": "Boosts Attack of a random allied creature"
+		"name": "Empower",
+		"type": "earlyActivation"
 	},
-	"reanimate" : {
+	"reanimate": {
+		"desc": "On death, is subject to a cruel fate.",
+		"icon": "reanimate",
 		"name": "A Knight's Fate",
-		"type": "onDeath",
-		"icon": "reanimate",
-		"desc": "On death, is subject to a cruel fate."
+		"type": "onDeath"
 	},
-	"regenerate" : {
-		"name": "Regenerate",
-		"type": "turnEnd",
+	"regenerate": {
+		"desc": "Heals itself at the end of turn, even while on delay.",
 		"icon": "regenerate",
-		"desc": "Heals itself at the end of turn, even while on delay."
+		"name": "Regenerate",
+		"type": "turnEnd"
 	},
-	"reinforce" : {
-		"name": "Energy Shield",
-		"type": "onAttack",
+	"reinforce": {
+		"desc": "When this creature deals Attack damage they gain a Barrier",
 		"icon": "reinforce",
-		"desc": "When this creature deals Attack damage they gain a Barrier"
+		"name": "Energy Shield",
+		"type": "onAttack"
 	},
-	"resurrect" : {
-		"name": "Resurrect",
-		"type": "activation",
+	"resurrect": {
+		"desc": "Resurrects creatures when they die.",
 		"icon": "frostbreath",
-		"desc": "Resurrects creatures when they die."
+		"name": "Resurrect",
+		"type": "activation"
 	},
-	"scorchbreath" : {
-		"name": "Scorchbreath",
-		"type": "activation",
+	"scorchbreath": {
+		"desc": "Deals scorch in a cone to up to three creatures in front of it",
 		"icon": "scorchbreath",
-		"desc": "Deals scorch in a cone to up to three creatures in front of it"
+		"name": "Scorchbreath",
+		"type": "activation"
 	},
-	"silence" : {
-		"name": "Silence",
-		"type": "toggle",
+	"silence": {
+		"desc": "Removes all skills from damaged enemy creature for one turn.",
 		"icon": "silence",
-		"desc": "Removes all skills from damaged enemy creature for one turn."
+		"name": "Silence",
+		"type": "toggle"
 	},
-	"slow" : {
-		"name": "Slow",
-		"type": "activation",
+	"slow": {
+		"desc": "Increases the creature's delay.",
 		"icon": "bind",
-		"desc": "Increases the creature's delay."
+		"name": "Slow",
+		"type": "activation"
 	},
-	"stasis" : {
+	"stasis": {
+		"desc": "Reduces damage taken from each Attack and Skill while on delay or Frozen.",
+		"icon": "shroud",
 		"name": "Shroud",
-		"type": "turnStart",
-		"icon": "unknown",
-		"desc": "Reduces damage taken from each Attack and Skill while on delay or Frozen."
+		"type": "turnStart"
 	},
-	"strike" : {
-		"name": "Bolt",
-		"type": "activation",
+	"strike": {
+		"desc": "Deals damage to a random enemy creature",
 		"icon": "arcane_shot",
-		"desc": "Deals damage to a random enemy creature"
+		"name": "Bolt",
+		"type": "activation"
 	},
-	"taunt" : {
-		"name": "Taunt",
-		"type": "toggle",
+	"taunt": {
+		"desc": "Attack damage dealt to adjacent creatures is dealt to this creature instead.",
 		"icon": "taunt",
-		"desc": "Attack damage dealt to adjacent creatures is dealt to this creature instead."
+		"name": "Taunt",
+		"type": "toggle"
 	},
-	"unearth" : {
-		"name": "Unearth",
-		"type": "onDeath",
+	"unearth": {
+		"desc": "When a non token creature dies, it spawns a Token creature with stats based on its own stats",
 		"icon": "reanimate",
-		"desc": "When a non token creature dies, it spawns a Token creature with stats based on its own stats"
+		"name": "Unearth",
+		"type": "onDeath"
 	},
-	"valor" : {
-		"name": "Valor",
-		"type": "turnStart",
+	"valor": {
+		"desc": "First time this activates, gains Attack permanently if opposing creature has more Attack.",
 		"icon": "valor",
-		"desc": "First time this activates, gains Attack permanently if opposing creature has more Attack."
+		"name": "Valor",
+		"type": "turnStart"
 	},
-	"venom" : {
-		"name": "Venom",
-		"type": "onAttack",
+	"venom": {
+		"desc": "Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn",
 		"icon": "venom",
-		"desc": "Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn"
+		"name": "Venom",
+		"type": "onAttack"
 	},
-	"weaken" : {
+	"weaken": {
+		"desc": "Reduces Attack of a random enemy creature",
+		"icon": "hinder",
 		"name": "Weaken",
-		"type": "activation",
-		"icon": "hinder",
-		"desc": "Reduces Attack of a random enemy creature"
+		"type": "activation"
 	},
-	"weakenself" : {
-		"name": "Weaken Ally",
-		"type": "activation",
+	"weakenself": {
+		"desc": "Reduces Attack of a random allied creature",
 		"icon": "hinder",
-		"desc": "Reduces Attack of a random allied creature"
+		"name": "Weaken Ally",
+		"type": "activation"
 	}
 };
-	
+
 for(var skillID in SKILL_DATA) {
 	var skillInfo = SKILL_DATA[skillID];
 	if(skillID === 'flurry') {

@@ -2730,6 +2730,21 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" fusion_level="2" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3096</id>
+    <name>Quad Undead Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Undead or higher card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" fusion_level="2" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
