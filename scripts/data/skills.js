@@ -2,19 +2,19 @@
 
 var SKILL_DATA = {
 	"absorb": {
-		"desc": "Prevents X damage taken from skills each round.",
+		"desc": "Prevents this much damage taken from Skills or Statuses each round.",
 		"icon": "absorb",
 		"name": "Ward",
 		"type": "turnStart"
 	},
 	"armored": {
-		"desc": "Prevents damage taken by attacks",
+		"desc": "Reduces damage taken from each Attack.",
 		"icon": "shield",
 		"name": "Armor",
 		"type": "passive"
 	},
 	"backlash": {
-		"desc": "After being targeted by an enemy creature's skill, deals damage back.",
+		"desc": "After being targeted by an enemy creature's Skill, deals damage back.",
 		"icon": "payback",
 		"name": "Backlash",
 		"type": "activation"
@@ -26,19 +26,19 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"berserk": {
-		"desc": "When this creature deals attack damage, Attack is permanently increased",
+		"desc": "After dealing Attack damage, permanently increases Attack.",
 		"icon": "berserk",
 		"name": "Berserk",
 		"type": "onAttack"
 	},
 	"burn": {
-		"desc": "Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.",
+		"desc": "Inflicts Scorch on the opposing creature. Scorch deals damage at end of turn until Scorch is not inflicted for a turn.",
 		"icon": "burn",
 		"name": "Scorch",
 		"type": "activation"
 	},
 	"burn2": {
-		"desc": "Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.",
+		"desc": "Inflicts Scorch on the opposing creature. Scorch deals damage at end of turn until Scorch is not inflicted for a turn.",
 		"icon": "burn",
 		"name": "Scorch 2",
 		"type": "activation"
@@ -50,19 +50,19 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"corrosive": {
-		"desc": "Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.",
+		"desc": "After taking Attack damage, inflicts Corrosive back, reducing Attack until Corrosive is not inflicted for two turns.",
 		"icon": "corrosive",
 		"name": "Corrosive",
 		"type": "onDamaged"
 	},
 	"counter": {
-		"desc": "When damaged by an attack, deal damage to attacker",
+		"desc": "After taking Attack damage, deals damage back.",
 		"icon": "vengeance",
 		"name": "Vengeance",
 		"type": "onDamaged"
 	},
 	"counterburn": {
-		"desc": "When damaged by an attack, Scorch the attacker",
+		"desc": "After taking Attack damage, inflicts Scorch back.",
 		"icon": "counterburn",
 		"name": "Emberhide",
 		"type": "onDamaged"
@@ -74,19 +74,19 @@ var SKILL_DATA = {
 		"type": "onDamaged"
 	},
 	"daze": {
-		"desc": "When this creature deals attack damage, reduce the Attack of the damaged creature.",
+		"desc": "After dealing Attack damage, inflicts Daze, reducing Attack.",
 		"icon": "daze",
 		"name": "Daze",
 		"type": "onAttack"
 	},
 	"enfeeble": {
-		"desc": "Increase damage dealt to a random enemy creature",
+		"desc": "Inflicts Hex on a random enemy creature, causing it to take extra damage each time it is damaged.",
 		"icon": "hex",
 		"name": "Hex",
 		"type": "activation"
 	},
 	"enhance": {
-		"desc": "Increase effect of skill on a random allied creature",
+		"desc": "Increases the effect of this Skill for a random ally creature.",
 		"icon": "enhance",
 		"name": "Enhance",
 		"type": "earlyActivation"
@@ -98,43 +98,43 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"enrage": {
-		"desc": "Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.",
+		"desc": "Grants Enrage to a random ally creature, causing it to permanently increase Attack after taking Attack damage.",
 		"icon": "enrage",
 		"name": "Enrage",
 		"type": "earlyActivation"
 	},
 	"evade": {
-		"desc": "Avoids enemy skills",
+		"desc": "Avoids this many targeted enemy Skills each round.",
 		"icon": "invisibility",
 		"name": "Invisibility",
 		"type": "turnStart"
 	},
 	"evadebarrier": {
-		"desc": "Applies Barrier and Invisibility to a random target allied creature",
+		"desc": "Grants Barrier and Invisibility to a random ally creature.",
 		"icon": "avian_barrier",
 		"name": "Wing Ward",
 		"type": "activation"
 	},
 	"fervor": {
-		"desc": "Empowers this creature for each adjacent allied creature.",
+		"desc": "At start of turn, grants self Fervor for each adjacent creature, increasing Attack.",
 		"icon": "fervor",
 		"name": "Fervor",
 		"type": "earlyActivation"
 	},
 	"flurry": {
-		"desc": "Activates twice in one turn. Activates every {c} turns.",
+		"desc": "Every {c} turns, Attacks twice and uses other Skills twice.",
 		"icon": "swiftness",
 		"name": "Dualstrike",
 		"type": "turnStart"
 	},
 	"frost": {
-		"desc": "Deals damage in a cone to up to three creatures in front of it.",
+		"desc": "Deals damage to the opposing creature and its adjacent creatures.",
 		"icon": "frostbreath",
 		"name": "Frostbreath",
 		"type": "activation"
 	},
 	"fury": {
-		"desc": "When damaged by an attack, deal damage to attacker and increase Attack permanently",
+		"desc": "After taking Attack damage, deals damage back and permanently increases Attack.",
 		"icon": "fury",
 		"name": "Maelstrom's Fury",
 		"type": "onDamaged"
@@ -146,7 +146,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"heal": {
-		"desc": "Heals a random allied creature",
+		"desc": "Heals a random ally creature.",
 		"icon": "heal",
 		"name": "Heal",
 		"type": "activation"
@@ -164,7 +164,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"imbue": {
-		"desc": "Grants a random allied creature a skill until the start of your next turn",
+		"desc": "Adds this Skill to a random ally creature.",
 		"icon": "imbue",
 		"name": "Imbue",
 		"type": "earlyActivation"
@@ -176,7 +176,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"jam": {
-		"desc": "Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.",
+		"desc": "Every {c} turns, inflicts Freeze on a random enemy creature, disabling its Attack and activation Skills.",
 		"icon": "freeze",
 		"name": "Freeze",
 		"type": "activation"
@@ -188,13 +188,13 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"leech": {
-		"desc": "Heals this card as it deals Attack damage",
+		"desc": "After dealing Attack damage, heals self.",
 		"icon": "siphon",
 		"name": "Siphon",
 		"type": "onAttack"
 	},
 	"legion": {
-		"desc": "Empowers allied creatures adjacent to this creature.",
+		"desc": "At start of turn, grants adjacent allies Legion, increasing Attack.",
 		"icon": "legion",
 		"name": "Legion",
 		"type": "earlyActivation"
@@ -206,19 +206,19 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"nullify": {
-		"desc": "Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.",
+		"desc": "After dealing Attack damage, inflicts Nullify, causing the creature to avoid this many targeted ally Skills.",
 		"icon": "nullify",
 		"name": "Nullify",
 		"type": "onAttack"
 	},
 	"pierce": {
-		"desc": "Reduces the effect of enemy Armor and Barriers",
+		"desc": "Reduces the effect of damage reduction and prevention on Attack damage.",
 		"icon": "puncture",
 		"name": "Pierce",
 		"type": "passive"
 	},
 	"poison": {
-		"desc": "Poisons creatures damaged by this card, dealing additional damage at the end of turn",
+		"desc": "After dealing Attack damage, permanently inflicts Poison, dealing damage at end of turn. Poison does not stack.",
 		"icon": "corrupt",
 		"name": "Poison",
 		"type": "onAttack"
@@ -230,7 +230,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"protect": {
-		"desc": "Reduces the next damage dealt to a random allied creature",
+		"desc": "Grants Barrier to a random ally creature, preventing this much damage taken.",
 		"icon": "mystic_barrier",
 		"name": "Barrier",
 		"type": "activation"
@@ -248,7 +248,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"rally": {
-		"desc": "Boosts Attack of a random allied creature",
+		"desc": "At start of turn, grants Empower to a random ally creature, increasing Attack.",
 		"icon": "empower",
 		"name": "Empower",
 		"type": "earlyActivation"
@@ -260,7 +260,7 @@ var SKILL_DATA = {
 		"type": "onDeath"
 	},
 	"regenerate": {
-		"desc": "Heals itself at the end of turn, even while on delay.",
+		"desc": "At end of turn, heals self, even while on delay.",
 		"icon": "regenerate",
 		"name": "Regenerate",
 		"type": "turnEnd"
@@ -278,13 +278,13 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"scorchbreath": {
-		"desc": "Deals scorch in a cone to up to three creatures in front of it",
+		"desc": "Inflicts Scorch to the opposing creature and its adjacent creatures.",
 		"icon": "scorchbreath",
 		"name": "Scorchbreath",
 		"type": "activation"
 	},
 	"silence": {
-		"desc": "Removes all skills from damaged enemy creature for one turn.",
+		"desc": "After dealing Attack damage, inflicts Silence, disabling all Skills.",
 		"icon": "silence",
 		"name": "Silence",
 		"type": "toggle"
@@ -302,7 +302,7 @@ var SKILL_DATA = {
 		"type": "turnStart"
 	},
 	"strike": {
-		"desc": "Deals damage to a random enemy creature",
+		"desc": "Deals damage to a random enemy creature.",
 		"icon": "arcane_shot",
 		"name": "Bolt",
 		"type": "activation"
@@ -320,7 +320,7 @@ var SKILL_DATA = {
 		"type": "onDeath"
 	},
 	"valor": {
-		"desc": "First time this activates, gains Attack permanently if opposing creature has more Attack.",
+		"desc": "At start of turn, permanently increases Attack if opposing creature has more Attack, even while on delay.",
 		"icon": "valor",
 		"name": "Valor",
 		"type": "turnStart"
@@ -332,7 +332,7 @@ var SKILL_DATA = {
 		"type": "onAttack"
 	},
 	"weaken": {
-		"desc": "Reduces Attack of a random enemy creature",
+		"desc": "Inflicts Weaken on a random enemy creature, reducing Attack.",
 		"icon": "hinder",
 		"name": "Weaken",
 		"type": "activation"

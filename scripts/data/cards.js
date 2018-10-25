@@ -92023,6 +92023,106 @@ var CARDS = {
 			}
 		}
 	},
+	"7211": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1540832400000",
+		"id": "7211",
+		"maxLevel": 6,
+		"name": "Twistvine",
+		"picture": "Tree_Skeleton_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2,
+				"y": "3"
+			},
+			{
+				"id": "leech",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"5",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"attack": 8,
+				"health": 34,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"7212": {
 		"attack": 4,
 		"card_type": "2",
@@ -173639,6 +173739,91 @@ var CARDS = {
 			}
 		}
 	},
+	"17211": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1540832400000",
+		"id": "17211",
+		"maxLevel": 6,
+		"name": "Twistbranch",
+		"picture": "Tree_Skeleton_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3,
+				"y": "3"
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"5",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"health": 37,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"skill": []
+			}
+		}
+	},
 	"17212": {
 		"attack": 4,
 		"card_type": "2",
@@ -242622,6 +242807,105 @@ var CARDS = {
 					{
 						"id": "leech",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"27211": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1540832400000",
+		"id": "27211",
+		"maxLevel": 6,
+		"name": "Twistwood",
+		"picture": "Tree_Skeleton_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4,
+				"y": "3"
+			},
+			{
+				"id": "leech",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"5",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"attack": 11,
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "3"
+					},
+					{
+						"id": "leech",
+						"x": 10
 					}
 				]
 			}
