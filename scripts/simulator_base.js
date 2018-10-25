@@ -2072,21 +2072,21 @@ var SIMULATOR = {};
 				if (turn !== 3 || !tournament) {
 					current_assault.timer--;
 					if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+				}
+			}
 
-					// Check valor
-					if (current_assault.valor && current_assault.isActive()) {
-						var enemy = field_o_assaults[i];
-						if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
-							current_assault.attack_valor = current_assault.valor;
-							if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
-						} else if (debug) {
-							echo += debug_name(current_assault) + ' activates valor but ';
-							if (!enemy) {
-								echo += 'there is no opposing enemy.<br/>'
-							} else {
-								echo += 'enemy is not strong enough.<br/>'
-							}
-						}
+			// Check valor
+			if (current_assault.valor) {
+				var enemy = field_o_assaults[i];
+				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
+					current_assault.attack_valor = current_assault.valor;
+					if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
+				} else if (debug) {
+					echo += debug_name(current_assault) + ' activates valor but ';
+					if (!enemy) {
+						echo += 'there is no opposing enemy.<br/>'
+					} else {
+						echo += 'enemy is not strong enough.<br/>'
 					}
 				}
 			}
