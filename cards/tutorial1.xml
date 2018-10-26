@@ -1270,6 +1270,44 @@
       <confirm>1</confirm>
     </step>
   </guide>
+  <guide>
+    <id>1037</id>
+    <name>Skill Guide: Shroud</name>
+    <trigger>
+      <flagreq id="usingSkill" value="stasis" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>stasis</skill>
+          <commander>raven</commander>
+          <text>This creature has Shroud, which will reduce damage it takes while on Delay or Frozen.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
+  <guide>
+    <id>1038</id>
+    <name>Skill Guide: Backlash</name>
+    <trigger>
+      <flagreq id="usingSkill" value="backlash" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>backlash</skill>
+          <commander>raven</commander>
+          <text>This creature has Backlash, which will deal damage back to enemy creatures that target it with Skills.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
   <!-- ============================== -->
   <!-- === ADDITIONAL MISC GUIDES === -->
   <!-- ============================== -->

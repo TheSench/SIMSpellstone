@@ -63,7 +63,7 @@ void Main()
 	Normalize("missions_event.xml", downloadFiles);
 	Normalize("passive_missions.xml", downloadFiles);
 	Normalize("tutorial1.xml", downloadFiles);
-
+return;
 	StringBuilder sbJSON = new StringBuilder();
 	List<unit> units = new List<unit>();
 

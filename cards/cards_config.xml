@@ -71,10 +71,10 @@
     <name>Imbue</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
-    <desc>Grants a random allied creature a skill until the start of your next turn</desc>
-    <desc_all>Grants all allied creatures a skill until the start of your next turn</desc_all>
-    <desc_faction>Grants a random allied {y} creature a skill until the start of your next turn</desc_faction>
-    <desc_all_faction>Grants all allied {y} creatures a skill until the start of your next turn</desc_all_faction>
+    <desc>Adds this Skill to a random ally creature.</desc>
+    <desc_all>Adds this Skill to all ally creatures.</desc_all>
+    <desc_faction>Adds this Skill to a random {y} ally.</desc_faction>
+    <desc_all_faction>Adds this Skill to all {y} allies.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="1" s="1" />
     <vfx_location>top</vfx_location>
     <hidden>1</hidden>
@@ -87,19 +87,18 @@
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="1" all="1" c="1" s="1" />
-    <desc>Increase effect of skill on a random allied creature</desc>
-    <desc_all>Increase effect of skill on all allied creatures</desc_all>
-    <desc_faction>Increase effect of skill on a random allied {y} creature</desc_faction>
-    <desc_all_faction>Increase effect of skill on all allied {y} creatures</desc_all_faction>
-    <hidden>1</hidden>
-  </skillType>
+    <desc>Increases the effect of this Skill for a random ally creature.</desc>
+    <desc_all>Increases the effect of this Skill for all ally creatures.</desc_all>
+    <desc_faction>Increases the effect of this Skill for a random {y} ally.</desc_faction>
+    <desc_all_faction>Increases the effect of this Skill for all {y} allies.</desc_all_faction>=
+		<hidden>1</hidden></skillType>
   <!-- Defensive -->
   <skillType>
     <id>evade</id>
     <order>10</order>
     <icon>invisibility</icon>
     <name>Invisibility</name>
-    <desc>Avoids enemy skills</desc>
+    <desc>Avoids this many targeted enemy Skills each round.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>10</balance_points>
   </skillType>
@@ -118,7 +117,7 @@
     <order>20</order>
     <icon>absorb</icon>
     <name>Ward</name>
-    <desc>Prevents X damage taken from skills each round.</desc>
+    <desc>Prevents this much damage taken from Skills or Statuses each round.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
   </skillType>
   <skillType>
@@ -128,14 +127,13 @@
     <name>Shroud</name>
     <desc>Reduces damage taken from each Attack and Skill while on delay or Frozen.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>armored</id>
     <order>40</order>
     <icon>shield</icon>
     <name>Armor</name>
-    <desc>Prevents damage taken by attacks</desc>
+    <desc>Reduces damage taken from each Attack.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>2</balance_points>
   </skillType>
@@ -144,16 +142,15 @@
     <order>50</order>
     <icon>payback</icon>
     <name>Backlash</name>
-    <desc>After being targeted by an enemy creature's skill, deals damage back.</desc>
+    <desc>After being targeted by an enemy creature's Skill, deals damage back.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>counter</id>
     <order>60</order>
     <icon>vengeance</icon>
     <name>Vengeance</name>
-    <desc>When damaged by an attack, deal damage to attacker</desc>
+    <desc>After taking Attack damage, deals damage back.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
@@ -162,7 +159,7 @@
     <order>70</order>
     <icon>fury_vengeance</icon>
     <name>Emberhide</name>
-    <desc>When damaged by an attack, Scorch the attacker</desc>
+    <desc>After taking Attack damage, inflicts Scorch back.</desc>
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -173,7 +170,7 @@
     <order>80</order>
     <icon>corrosive</icon>
     <name>Corrosive</name>
-    <desc>Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.</desc>
+    <desc>After taking Attack damage, inflicts Corrosive back, reducing Attack until Corrosive is not inflicted for two turns.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <status_flag>corrosion</status_flag>
     <vfx_location>center</vfx_location>
@@ -184,7 +181,7 @@
     <order>90</order>
     <icon>regenerate</icon>
     <name>Regenerate</name>
-    <desc>Heals itself at the end of turn, even while on delay.</desc>
+    <desc>At end of turn, heals self, even while on delay.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
@@ -194,7 +191,7 @@
     <order>100</order>
     <icon>valor</icon>
     <name>Valor</name>
-    <desc>First time this activates, gains Attack permanently if opposing creature has more Attack.</desc>
+    <desc>At start of turn, permanently increases Attack if opposing creature has more Attack, even while on delay.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
@@ -206,10 +203,10 @@
     <name>Empower</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
-    <desc>Boosts Attack of a random allied creature</desc>
-    <desc_all>Boosts Attack of all allied creatures</desc_all>
-    <desc_faction>Boosts Attack of a random allied {y} creature</desc_faction>
-    <desc_all_faction>Boosts Attack of all allied {y} creatures</desc_all_faction>
+    <desc>At start of turn, grants Empower to a random ally creature, increasing Attack.</desc>
+    <desc_all>At start of turn, grants Empower to all ally creatures, increasing Attack.</desc_all>
+    <desc_faction>At start of turn, grants Empower to a random ally {y}, increasing Attack.</desc_faction>
+    <desc_all_faction>At start of turn, grants Empower to all ally {y}, increasing Attack.</desc_all_faction>
     <status_flag>attack_boost</status_flag>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <balance_points>3</balance_points>
@@ -219,10 +216,10 @@
     <order>120</order>
     <icon>heal</icon>
     <name>Heal</name>
-    <desc>Heals a random allied creature</desc>
-    <desc_all>Heals all allied creatures</desc_all>
-    <desc_faction>Heals a random allied {y} creature</desc_faction>
-    <desc_all_faction>Heals all allied {y} creatures</desc_all_faction>
+    <desc>Heals a random ally creature.</desc>
+    <desc_all>Heals all ally creatures.</desc_all>
+    <desc_faction>Heals a random {y} ally.</desc_faction>
+    <desc_all_faction>Heals all {y} allies.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <balance_points>2</balance_points>
   </skillType>
@@ -231,10 +228,10 @@
     <order>130</order>
     <icon>mystic_barrier</icon>
     <name>Barrier</name>
-    <desc>Reduces the next damage dealt to a random allied creature</desc>
-    <desc_all>Reduces the next damage dealt to all allied creatures</desc_all>
-    <desc_faction>Reduces the next damage dealt to a random allied {y} creature</desc_faction>
-    <desc_all_faction>Reduces the next damage dealt to all allied {y} creatures</desc_all_faction>
+    <desc>Grants Barrier to a random ally creature, preventing this much damage taken.</desc>
+    <desc_all>Grants Barrier to all ally creatures, preventing this much damage taken.</desc_all>
+    <desc_faction>Grants Barrier to a random {y} ally, preventing this much damage taken.</desc_faction>
+    <desc_all_faction>Grants Barrier to all {y} allies, preventing this much damage taken.</desc_all_faction>
     <status_flag>protect</status_flag>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <balance_points>2</balance_points>
@@ -246,8 +243,8 @@
     <name>Legion</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
-    <desc>Empowers allied creatures adjacent to this creature.</desc>
-    <desc_faction>Empowers allied {y} creatures adjacent to this creature.</desc_faction>
+    <desc>At start of turn, grants adjacent allies Legion, increasing Attack.</desc>
+    <desc_faction>At start of turn, grants adjacent {y} allies Legion, increasing Attack.</desc_faction>
     <status_flag>attack_boost</status_flag>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <balance_points>5</balance_points>
@@ -259,8 +256,8 @@
     <name>Fervor</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
-    <desc>Empowers this creature for each adjacent allied creature.</desc>
-    <desc_faction>Empowers this creature for each adjacent allied {y} creature.</desc_faction>
+    <desc>At start of turn, grants self Fervor for each adjacent creature, increasing Attack.</desc>
+    <desc_faction>At start of turn, grants self Fervor for each adjacent {y}, increasing Attack.</desc_faction>
     <status_flag>attack_boost</status_flag>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <balance_points>5</balance_points>
@@ -270,8 +267,8 @@
     <order>160</order>
     <icon>hex</icon>
     <name>Hex</name>
-    <desc>Increase damage dealt to a random enemy creature</desc>
-    <desc_all>Increase damage dealt to all enemy creatures</desc_all>
+    <desc>Inflicts Hex on a random enemy creature, causing it to take extra damage each time it is damaged.</desc>
+    <desc_all>Inflicts Hex on all enemy creatures, causing them to take extra damage each time they are damaged.</desc_all>
     <status_flag>enfeeble</status_flag>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <vfx_location>center</vfx_location>
@@ -282,10 +279,10 @@
     <order>170</order>
     <icon>arcane_shot</icon>
     <name>Bolt</name>
-    <desc>Deals damage to a random enemy creature</desc>
-    <desc_all>Deals damage to all enemy creatures</desc_all>
-    <desc_faction>Deals damage to a random enemy {y} creature</desc_faction>
-    <desc_all_faction>Deals damage to all enemy {y} creatures</desc_all_faction>
+    <desc>Deals damage to a random enemy creature.</desc>
+    <desc_all>Deals damage to all enemy creatures.</desc_all>
+    <desc_faction>Deals damage to a random {y} enemy.</desc_faction>
+    <desc_all_faction>Deals damage to all {y} enemies.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
@@ -294,7 +291,7 @@
     <order>180</order>
     <icon>frostbreath</icon>
     <name>Frostbreath</name>
-    <desc>Deals damage in a cone to up to three creatures in front of it.</desc>
+    <desc>Deals damage to the opposing creature and its adjacent creatures.</desc>
     <status_flag>frost</status_flag>
     <status_flag>frost_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -305,7 +302,7 @@
     <order>190</order>
     <icon>burn</icon>
     <name>Scorch</name>
-    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <desc>Inflicts Scorch on the opposing creature. Scorch deals damage at end of turn until Scorch is not inflicted for a turn.</desc>
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -317,7 +314,7 @@
     <order>191</order>
     <icon>burn</icon>
     <name>Scorch 2</name>
-    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <desc>Inflicts Scorch on the opposing creature. Scorch deals damage at end of turn until Scorch is not inflicted for a turn.</desc>
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -330,7 +327,8 @@
     <order>200</order>
     <icon>freeze</icon>
     <name>Freeze</name>
-    <desc>Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.</desc>
+    <desc>Every {c} turns, inflicts Freeze on a random enemy creature, disabling its Attack and activation Skills.</desc>
+    <desc_all>Every {c} turns, inflicts Freeze on all enemy creatures, disabling their Attacks and activation Skills.</desc_all>
     <status_flag>jammed</status_flag>
     <status_flag>jam_countdown</status_flag>
     <attributes x="0" y="0" all="1" c="1" s="0" />
@@ -341,10 +339,10 @@
     <order>210</order>
     <icon>hinder</icon>
     <name>Weaken</name>
-    <desc>Reduces Attack of a random enemy creature</desc>
-    <desc_all>Reduces the Attack of all enemy creatures</desc_all>
-    <desc_faction>Reduces the Attack of a random enemy {y} creature</desc_faction>
-    <desc_all_faction>Reduces the attack of all enemy {y} creatures</desc_all_faction>
+    <desc>Inflicts Weaken on a random enemy creature, reducing Attack.</desc>
+    <desc_all>Inflicts Weaken on all enemy creatures, reducing Attack.</desc_all>
+    <desc_faction>Inflicts Weaken on a random {y} enemy, reducing Attack.</desc_faction>
+    <desc_all_faction>Inflicts Weaken on all {y} enemies, reducing Attack.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <balance_points>1.5</balance_points>
   </skillType>
@@ -353,10 +351,10 @@
     <order>220</order>
     <icon>enrage</icon>
     <name>Enrage</name>
-    <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.</desc>
-    <desc_all>Enrage all ally creatures. Until your next turn, every time the creatures take damage from an Attack, they gain Attack permanently.</desc_all>
-    <desc_faction>Enrage a random ally {y} creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.</desc_faction>
-    <desc_all_faction>Enrage all ally {y} creatures. Until your next turn, every time the creatures take damage from an Attack, they gain Attack permanently.</desc_all_faction>
+    <desc>Grants Enrage to a random ally creature, causing it to permanently increase Attack after taking Attack damage.</desc>
+    <desc_all>Grants Enrage to all ally creatures, causing them to permanently increase Attack after taking Attack damage.</desc_all>
+    <desc_faction>Grants Enrage to a random {y} ally, causing it to permanently increase Attack after taking Attack damage.</desc_faction>
+    <desc_all_faction>Grants Enrage to all {y} allies, causing them to permanently increase Attack after taking Attack damage.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <vfx_location>edge</vfx_location>
     <balance_points>3</balance_points>
@@ -367,7 +365,7 @@
     <order>230</order>
     <icon>puncture</icon>
     <name>Pierce</name>
-    <desc>Reduces the effect of enemy Armor and Barriers</desc>
+    <desc>Reduces the effect of damage reduction and prevention on Attack damage.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>1.5</balance_points>
   </skillType>
@@ -377,20 +375,27 @@
     <order>235</order>
     <icon>silence</icon>
     <name>Silence</name>
-    <desc>Removes all skills from damaged enemy creature for one turn.</desc>
+    <desc>After dealing Attack damage, inflicts Silence, disabling all Skills.</desc>
     <attributes x="1" y="1" all="0" c="1" s="0" />
     <balance_points>1</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
-    <id>nullify</id>130
-		<order>240</order><icon>nullify</icon><name>Nullify</name><desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc><attributes x="1" y="0" all="0" c="0" s="0" /><status_flag>nullified</status_flag><balance_points>4</balance_points></skillType>
+    <id>nullify</id>
+    <order>240</order>
+    <icon>nullify</icon>
+    <name>Nullify</name>
+    <desc>After dealing Attack damage, inflicts Nullify, causing the creature to avoid this many targeted ally Skills.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <status_flag>nullified</status_flag>
+    <balance_points>4</balance_points>
+  </skillType>
   <skillType>
     <id>poison</id>
     <order>250</order>
     <icon>corrupt</icon>
     <name>Poison</name>
-    <desc>Poisons creatures damaged by this card, dealing additional damage at the end of turn</desc>
+    <desc>After dealing Attack damage, permanently inflicts Poison, dealing damage at end of turn. Poison does not stack.</desc>
     <status_flag>poison</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <vfx_location>center</vfx_location>
@@ -401,7 +406,7 @@
     <order>260</order>
     <icon>daze</icon>
     <name>Daze</name>
-    <desc>When this creature deals attack damage, reduce the Attack of the damaged creature.</desc>
+    <desc>After dealing Attack damage, inflicts Daze, reducing Attack.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>1.5</balance_points>
   </skillType>
@@ -410,7 +415,7 @@
     <order>270</order>
     <icon>siphon</icon>
     <name>Siphon</name>
-    <desc>Heals this card as it deals Attack damage</desc>
+    <desc>After dealing Attack damage, heals self.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>1.5</balance_points>
   </skillType>
@@ -419,7 +424,7 @@
     <order>280</order>
     <icon>berserk</icon>
     <name>Berserk</name>
-    <desc>When this creature deals attack damage, Attack is permanently increased</desc>
+    <desc>After dealing Attack damage, permanently increases Attack.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>6</balance_points>
   </skillType>
@@ -429,7 +434,7 @@
     <order>290</order>
     <icon>swiftness</icon>
     <name>Dualstrike</name>
-    <desc>Activates twice in one turn. Activates every {c} turns.</desc>
+    <desc>Every {c} turns, Attacks twice and uses other Skills twice.</desc>
     <status_flag>flurry_countdown</status_flag>
     <attributes x="0" y="0" all="0" c="1" s="0" />
     <balance_points>10</balance_points>
@@ -440,7 +445,7 @@
     <order>1</order>
     <icon>fury</icon>
     <name>Maelstrom's Fury</name>
-    <desc>When damaged by an attack, deal damage to attacker and increase Attack permanently</desc>
+    <desc>After taking Attack damage, deals damage back and permanently increases Attack.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
     <hidden>1</hidden>
@@ -451,7 +456,7 @@
     <icon>avian_barrier</icon>
     <name>Wing Ward</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Applies Barrier and Invisibility to a random target allied creature</desc>
+    <desc>Grants Barrier and Invisibility to a random ally creature.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -459,7 +464,7 @@
     <order>175</order>
     <icon>scorchbreath</icon>
     <name>Scorchbreath</name>
-    <desc>Deals scorch in a cone to up to three creatures in front of it</desc>
+    <desc>Inflicts Scorch to the opposing creature and its adjacent creatures.</desc>
     <status_flag>burn</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>8</balance_points>
