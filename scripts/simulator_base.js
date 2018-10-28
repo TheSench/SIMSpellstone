@@ -2396,7 +2396,7 @@ var SIMULATOR = {};
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
-		damage += enfeeble - stasis;
+		damage += enfeeble - shrouded;
 		var shatter = false;
 		if (warded) {
 			damage -= applyDamageReduction(target, 'warded', damage);
@@ -2414,7 +2414,7 @@ var SIMULATOR = {};
 		var echo = '';
 		if(debug) {
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-			if (stasis) echo += ' Stasis: -' + stasis;
+			if (shrouded) echo += ' Stasis: -' + shrouded;
 			if (protect) echo += ' Barrier: -' + protect;
 			if (warded) echo += ' Ward: -' + warded;
 		}
