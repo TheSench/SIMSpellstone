@@ -258,6 +258,14 @@ var SIMULATOR = {};
 		}
 	}
 
+	function checkShroud(unit) {
+		if(unit.isActive() && unit.isUnjammed()) {
+			return 0;
+		} else {
+			return (unit.stasis || 0);
+		}
+	}
+
 	var activationSkills = {
 
 		burnself: function burnself(src_card, skill) {
@@ -2384,7 +2392,7 @@ var SIMULATOR = {};
 		// Check Protect/Enfeeble
 		exclusions = (exclusions || {});
 		var enfeeble = (exclusions.enfeeble ? 0 : (target.enfeebled || 0));
-		var shrouded = (exclusions.stasis ? 0 : (target.shrouded || 0));
+		var shrouded = (exclusions.stasis ? 0 : checkShroud(target));
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
@@ -2636,7 +2644,7 @@ var SIMULATOR = {};
 		var protect = target.protected;
 		var shatter = false;
 		var armor = target.armored;
-		var shrouded = target.stasis;
+		var shrouded = checkShroud(target);
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debug) {
@@ -2669,7 +2677,7 @@ var SIMULATOR = {};
 				}
 			}
 		}
-		if (shrouded && !target.isActive() || !target.isUnjammed()) {
+		if (shrouded) {
 			shrouded += getEnhancement(target, 'stasis', shrouded);
 			if (debug) {
 				echo += ' Shroud: -' + shrouded;
