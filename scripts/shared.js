@@ -267,7 +267,6 @@ var defaultStatusValues = {
     poisoned: 0,
     protected: 0,
     scorched: 0,
-    stasisField: 0,
 	warded: 0,
     // Boolean-Status
 	jammed: false,
@@ -433,7 +432,6 @@ var makeUnit = (function () {
             this.enfeebled = this.envenomed + this.heartseeker;
             this.enraged = 0;
             this.protected = 0;
-            this.stasisField = 0;
             this.barrier_ice = 0;
             this.enhanced = {};
             this.removeImbue();
@@ -807,9 +805,13 @@ var makeUnit = (function () {
 }());
 
 
-var getEnhancement = function (card, s) {
+var getEnhancement = function (card, s, base) {
     var enhancements = card.enhanced;
-    return (enhancements ? (enhancements[s] || 0) : 0);
+    var enhanced = (enhancements ? (enhancements[s] || 0) : 0);
+    if (enhanced < 0) {
+        enhanced = Math.ceil(base * -enhanced);
+    }
+    return enhanced;
 };
 
 var isImbued = function (card, skillID, i) {

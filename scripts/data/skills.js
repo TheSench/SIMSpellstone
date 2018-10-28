@@ -17,7 +17,7 @@ var SKILL_DATA = {
 		"desc": "After being targeted by an enemy creature's Skill, deals damage back.",
 		"icon": "payback",
 		"name": "Backlash",
-		"type": "activation"
+		"type": "passive"
 	},
 	"barrage": {
 		"desc": "Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.",
@@ -299,7 +299,7 @@ var SKILL_DATA = {
 		"desc": "Reduces damage taken from each Attack and Skill while on delay or Frozen.",
 		"icon": "shroud",
 		"name": "Shroud",
-		"type": "turnStart"
+		"type": "passive"
 	},
 	"strike": {
 		"desc": "Deals damage to a random enemy creature.",

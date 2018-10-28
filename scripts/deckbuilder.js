@@ -1648,6 +1648,7 @@ var showAdvancedFilters = function (skill) {
 		case 'absorb':
 		case 'armored':
 		case 'barrage':
+		case 'backlash':
 		case 'berserk':
 		case 'burn':
 		case 'corrosive':
@@ -1664,6 +1665,7 @@ var showAdvancedFilters = function (skill) {
 		case 'poison':
 		case 'regenerate':
 		case 'scorchbreath':
+		case 'stasis':
 		case 'taunt':
 		case 'valor':
 			$("div#amount").show();

@@ -458,7 +458,7 @@ var CARD_GUI = {};
 		htmlSkill.className = "skill";
 		htmlSkill.appendChild(getSkillIcon(skill.id));
 		var imbued = isImbued(card, skill.id, i);
-		var enhancement = getEnhancement(card, skill.id);
+		var enhancement = getEnhancement(card, skill.id, skill.x);
 		if (imbued) {
 			htmlSkill.classList.add("imbued");
 		} else if (skill.boosted || enhancement) {
@@ -467,7 +467,6 @@ var CARD_GUI = {};
 		if (skill.all) htmlSkill.innerHTML += (" All ");
 		if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
 		if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
-		if (enhancement < 0) enhancement = Math.ceil(skill.x * -enhancement);
 		var x = (skill.x | 0) + enhancement;
 		if (x) htmlSkill.innerHTML += (" " + x + " ");
 		if (skill.c) {

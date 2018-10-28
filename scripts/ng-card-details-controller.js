@@ -274,6 +274,7 @@
     $scope.supportedSkills = [
       'absorb',
       'armored',
+      'backlash',
       'barrage',
       'berserk',
       'burn',
@@ -315,6 +316,7 @@
       'scorchbreath',
       'silence',
       //'slow',
+      'stasis',
       'strike',
       'taunt',
       'valor',

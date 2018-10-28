@@ -196,8 +196,9 @@ var SIMULATOR = {};
 		}
 
 		var activations = (dualstrike ? 2 : 1);
+		var isAlive = makeLivenessCheck(source_card);
 		for (var a = 0; a < activations; a++) {
-			for (var i = 0; i < len; i++) {
+			for (var i = 0; i < len && isAlive(); i++) {
 				var skill = skills[i];
 				if (!skill.countdown) {
 					var skillFn = getActivatedSkill(earlyActivationSkills, skill.id);
@@ -213,6 +214,17 @@ var SIMULATOR = {};
 			}
 		}
 	};
+
+	function alwaysTrue() {
+		return true;
+	}
+	function makeLivenessCheck(maybeUnit) {
+		if(maybeUnit.isAlive) {
+			return maybeUnit.isAlive.bind(maybeUnit);
+		} else {
+			return alwaysTrue;
+		}
+	}
 
 	function doOnDeathSkills(dying, killer) {
 
@@ -233,10 +245,18 @@ var SIMULATOR = {};
 		dying.ondeath_triggered = true;
 	};
 
-  var passiveSkills = ['counter', 'counterburn', 'counterpoison', 'armored', 'evade'];
-  function requiresActiveTurn(skillName) {
-    return passiveSkills.indexOf(skillName) === -1;
-  }
+	var passiveSkills = ['backlash', 'counter', 'counterburn', 'counterpoison', 'armored', 'evade', 'stasis'];
+	function requiresActiveTurn(skillName) {
+		return passiveSkills.indexOf(skillName) === -1;
+	}
+
+	function backlash(attacker, defender) {
+		if (defender.isAlive()) {
+			var baseDamage = defender.backlash;
+			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
+			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement);
+		}
+	}
 
 	var activationSkills = {
 
@@ -286,13 +306,8 @@ var SIMULATOR = {};
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = getEnhancement(src_card, 'burn');
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(scorch * -enhanced);
-				}
-				scorch += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, 'burn', scorch);
+			scorch += enhanced;
 
 			var affected = 0;
 			for (var i = 0; i < targets.length; i++) {
@@ -357,13 +372,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(protect * -enhanced);
-				}
-				protect += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, protect);
+			protect += enhanced;
 
 			var affected = 0;
 
@@ -435,13 +445,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(heal * -enhanced);
-				}
-				heal += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, heal);
+			heal += enhanced;
 
 			var affected = 0;
 
@@ -509,13 +514,8 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(strike * -enhanced);
-				}
-				strike += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, strike);
+			strike += enhanced;
 
 			var affected = 0;
 
@@ -559,6 +559,10 @@ var SIMULATOR = {};
 					}
 					echo += '<br>';
 				});
+
+				if(target.backlash) {
+					backlash(src_card, target);
+				}
 			}
 
 			return affected;
@@ -596,13 +600,8 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(intensify * -enhanced);
-				}
-				intensify += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, intensify);
+			intensify += enhanced;
 
 			var affected = 0;
 
@@ -629,6 +628,10 @@ var SIMULATOR = {};
 				}
 
 				if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' by ' + intensify + '<br>';
+				
+				if(target.backlash) {
+					backlash(src_card, target);
+				}
 			}
 
 			return affected;
@@ -665,13 +668,8 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(ignite * -enhanced);
-				}
-				ignite += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, ignite);
+			ignite += enhanced;
 
 			var affected = 0;
 
@@ -689,6 +687,10 @@ var SIMULATOR = {};
 
 				target.scorch(ignite);
 				if (debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
+
+				if(target.backlash) {
+					backlash(src_card, target);
+				}
 			}
 
 			return affected;
@@ -753,6 +755,10 @@ var SIMULATOR = {};
 
 				target.jammed = true;
 				if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
+
+				if(target.backlash) {
+					backlash(src_card, target);
+				}
 			}
 
 			return affected;
@@ -769,13 +775,8 @@ var SIMULATOR = {};
 			var o = get_o(src_card);
 
 			var frost = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(frost * -enhanced);
-				}
-				frost += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, frost);
+			frost += enhanced;
 
 			var all = skill.all;
 
@@ -825,6 +826,10 @@ var SIMULATOR = {};
 					echo += debug_name(source) + ' breathes frost at ' + debug_name(target) + ' for ' + amount + ' damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 				});
+
+				if(target.backlash) {
+					backlash(src_card, target);
+				}
 			}
 
 			return affected;
@@ -843,13 +848,8 @@ var SIMULATOR = {};
 			// No Targets
 			if (!target) return 0;
 
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(heartseeker * -enhanced);
-				}
-				heartseeker += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, heartseeker);
+			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
 			target.enfeebled += heartseeker;
@@ -890,13 +890,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(enfeeble * -enhanced);
-				}
-				enfeeble += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, enfeeble);
+			enfeeble += enhanced;
 
 			var affected = 0;
 
@@ -914,6 +909,10 @@ var SIMULATOR = {};
 
 				target['enfeebled'] += enfeeble;
 				if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
+
+				if(target.backlash) {
+					backlash(src_card, target);
+				}
 			}
 
 			return affected;
@@ -970,13 +969,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(weaken * -enhanced);
-				}
-				weaken += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, weaken);
+			weaken += enhanced;
 
 			var affected = 0;
 
@@ -997,6 +991,10 @@ var SIMULATOR = {};
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
 				}
+
+				if(target.backlash) {
+					backlash(src_card, target);
+				}
 			}
 
 			return affected;
@@ -1015,13 +1013,8 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(rally * -enhanced);
-				}
-				rally += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, rally);
+			rally += enhanced;
 			var all = skill.all;
 
 			var field_p_assaults = field[p]['assaults'];
@@ -1098,13 +1091,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(rally * -enhanced);
-				}
-				rally += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, rally);
+			rally += enhanced;
 
 			var affected = 0;
 
@@ -1147,13 +1135,8 @@ var SIMULATOR = {};
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(rally * -enhanced);
-				}
-				rally += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, rally);
+			rally += enhanced;
 
 			var faction = skill['y'];
 
@@ -1195,13 +1178,8 @@ var SIMULATOR = {};
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(rally * -enhanced);
-				}
-				rally += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, rally);
+			rally += enhanced;
 
 			var faction = skill['y'];
 
@@ -1247,13 +1225,8 @@ var SIMULATOR = {};
 
 			var field_x_assaults = field[o].assaults;
 
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(barrages * -enhanced);
-				}
-				barrages += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, barrages);
+			barrages += enhanced;
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
 				for (var key = 0, len = field_x_assaults.length; key < len; key++) {
@@ -1404,13 +1377,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(enrage * -enhanced);
-				}
-				enrage += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, enrage);
+			enrage += enhanced;
 
 			var affected = 0;
 
@@ -1547,13 +1515,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(mark * -enhanced);
-				}
-				mark += enhanced;
-			}
+			var enhanced = getEnhancement(src_card, skill.id, mark);
+			mark += enhanced;
 
 			var affected = 0;
 
@@ -1749,7 +1712,8 @@ var SIMULATOR = {};
 
 		var skills = src_card.skill;
 
-		for (var i = 0, len = skills.length; i < len; i++) {
+		var isAlive = makeLivenessCheck(src_card);
+		for (var i = 0, len = skills.length; i < len && isAlive(); i++) {
 			var skill = skills[i];
 
 			if (skill.countdown) {
@@ -2317,16 +2281,11 @@ var SIMULATOR = {};
 		// Do Commander Early Activation Skills
 		doEarlyActivationSkills(field_p.commander);
 
-		// Set invisibile/ward/stasisField after enhance has had a chance to fire
+		// Set invisibile/ward/shrouded after enhance has had a chance to fire
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 			var current_assault = field_p_assaults[key];
 			setPassiveStatus(current_assault, 'evade', 'invisible');
 			setPassiveStatus(current_assault, 'absorb', 'warded');
-			if(current_assault.isActive() && current_assault.isUnjammed()) {
-				current_assault.stasisField = 0;
-			} else {
-				setPassiveStatus(current_assault, 'stasis', 'stasisField');
-			}
 		}
 
 		// Do Unit Early Activation Skills
@@ -2366,6 +2325,11 @@ var SIMULATOR = {};
 
 				// Activation skills
 				activation_skills(current_assault);
+
+				// See if unit died from Backlash/Iceshatter
+				if (!current_assault.isAlive()) {
+					continue;
+				}
 
 				// Check attack
 				// - check rally and weaken
@@ -2409,13 +2373,8 @@ var SIMULATOR = {};
 
 		if (assault[skillName]) {
 			statusValue = assault[skillName];
-			var enhanced = getEnhancement(assault, skillName);
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(statusValue * -enhanced);
-				}
-				statusValue += enhanced;
-			}
+			var enhanced = getEnhancement(assault, skillName, statusValue);
+			statusValue += enhanced;
 		}
 
 		assault[statusName] = statusValue;
@@ -2425,7 +2384,7 @@ var SIMULATOR = {};
 		// Check Protect/Enfeeble
 		exclusions = (exclusions || {});
 		var enfeeble = (exclusions.enfeeble ? 0 : (target.enfeebled || 0));
-		var stasis = (exclusions.stasis ? 0 : (target.stasisField || 0));
+		var stasis = (exclusions.stasis ? 0 : (target.shrouded || 0));
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
@@ -2526,13 +2485,8 @@ var SIMULATOR = {};
 			if (current_assault.regenerate && current_assault.isDamaged()) {
 
 				var regen_health = current_assault.regenerate;
-				var enhanced = getEnhancement(current_assault, 'regenerate');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(regen_health * -enhanced);
-					}
-					regen_health += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'regenerate', regen_health);
+				regen_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (regen_health >= healthMissing) {
 					regen_health = healthMissing;
@@ -2669,32 +2623,17 @@ var SIMULATOR = {};
 		// var pierce = current_assault['skill']['pierce'];
 		var pierce = current_assault.pierce;
 		if (pierce) {
-			var enhanced = getEnhancement(current_assault, 'pierce');
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(pierce * -enhanced);
-				}
-				pierce += enhanced;
-			}
+			var enhanced = getEnhancement(current_assault, 'pierce', pierce);
+			pierce += enhanced;
 		} else {
 			pierce = 0;
 		}
 
 		// Damage reduction
 		var protect = target.protected;
-		var stasisField = target.stasisFeild;
 		var shatter = false;
 		var armor = target.armored;
-		if (armor) {
-			var enhanced = getEnhancement(target, 'armored');
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(armor * -enhanced);
-				}
-				armor += enhanced;
-			}
-		}
-
+		var stasis = target.stasis;
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debug) {
@@ -2727,13 +2666,25 @@ var SIMULATOR = {};
 				}
 			}
 		}
-		if (stasisField) {
+		if (stasis && !target.isActive() || !target.isUnjammed()) {
+			stasis += getEnhancement(target, 'stasis', stasis);
 			if (debug) {
-				echo += ' Stasis: -' + stasisField;
+				echo += ' Shroud: -' + stasis;
 			}
-			damage -= stasisField;
+			// Remove pierce from Shroud
+			if (pierce) {
+				if (pierce > stasis) {
+					if (debug) echo += ' Pierce: +' + stasis;
+					stasis = 0;
+				} else {
+					if (debug) echo += ' Pierce: +' + pierce;
+					stasis -= pierce;
+				}
+			}
+			damage -= stasis;
 		}
 		if (armor) {
+			armor += getEnhancement(target, 'armored', armor);
 			if (debug) {
 				echo += ' Armor: -' + armor;
 			}
@@ -2779,13 +2730,8 @@ var SIMULATOR = {};
 			// - Target must not be already poisoned of that level
 			if (current_assault.poison) {
 				var poison = current_assault.poison;
-				var enhanced = getEnhancement(current_assault, 'poison');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(poison * -enhanced);
-					}
-					poison += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'poison', poison);
+				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
 					if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
@@ -2799,13 +2745,8 @@ var SIMULATOR = {};
 			// - Sets envenomed to greater of target's current envenomed or new venom
 			if (current_assault.venom) {
 				var venom = current_assault.venom;
-				var enhanced = getEnhancement(current_assault, 'venom');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(venom * -enhanced);
-					}
-					venom += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'venom', venom);
+				venom += enhanced;
 
 				if (venom > target.envenomed) {
 					var hexIncrease = venom - target.envenomed;
@@ -2820,13 +2761,8 @@ var SIMULATOR = {};
 			// - Target must be an assault
 			if (current_assault.nullify) {
 				var nullify = current_assault.nullify;
-				var enhanced = getEnhancement(current_assault, 'nullify');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(nullify * -enhanced);
-					}
-					nullify += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'nullify', nullify);
+				nullify += enhanced;
 				target.nullified += nullify;
 				if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
 			}
@@ -2845,13 +2781,8 @@ var SIMULATOR = {};
 			if (current_assault.daze) {
 
 				var dazed = current_assault.daze;
-				var enhanced = getEnhancement(current_assault, 'daze');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(dazed * -enhanced);
-					}
-					dazed += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'daze', dazed);
+				dazed += enhanced;
 
 				target.attack_weaken += dazed;
 				if (debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target) + ' for ' + dazed + '<br>';
@@ -2873,13 +2804,8 @@ var SIMULATOR = {};
 			if (current_assault.leech && current_assault.isDamaged()) {
 
 				var leech_health = current_assault.leech;
-				var enhanced = getEnhancement(current_assault, 'leech');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(leech_health * -enhanced);
-					}
-					leech_health += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'leech', leech_health);
+				leech_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (leech_health >= healthMissing) {
 					leech_health = healthMissing;
@@ -2891,13 +2817,8 @@ var SIMULATOR = {};
 
 			if (current_assault.reinforce) {
 				var reinforce = current_assault.reinforce;
-				var enhanced = getEnhancement(current_assault, 'reinforce');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(reinforce * -enhanced);
-					}
-					reinforce += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'reinforce', reinforce);
+				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
 				if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
@@ -2909,12 +2830,7 @@ var SIMULATOR = {};
 			if (target.counter) {
 
 				var counterBase = 0 + target.counter;
-				var counterEnhancement = getEnhancement(target, 'counter');
-				if (counterEnhancement) {
-					if (counterEnhancement < 0) {
-						counterEnhancement = Math.ceil(counterBase * -counterEnhancement);
-					}
-				}
+				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
 
 				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
 			}
@@ -2923,13 +2839,8 @@ var SIMULATOR = {};
 			// - Target must have received some amount of damage
 			if (target.counterburn) {
 				var scorch = target.counterburn || 0;
-				var enhanced = getEnhancement(target, 'counterburn');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(scorch * -enhanced);
-					}
-					scorch += enhanced;
-				}
+				var enhanced = getEnhancement(target, 'counterburn', scorch);
+				scorch += enhanced;
 				if (!current_assault.scorched) {
 					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
 				} else {
@@ -2943,17 +2854,12 @@ var SIMULATOR = {};
 			// - Target must have received some amount of damage
 			if (target.counterpoison) {
 				var poison = target.counterpoison || 0;
-				var enhanced = getEnhancement(target, 'counterpoison');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(poison * -enhanced);
-					}
-					poison += enhanced;
-        }
+				var enhanced = getEnhancement(target, 'counterpoison', poison);
+				poison += enhanced;
         
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-          if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+          			if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
 				}
 			}
 
@@ -2961,12 +2867,7 @@ var SIMULATOR = {};
 			// - Target must have received some amount of damage
 			if (target.fury) {
 				var furyBase = target.fury;
-				var furyEnhancement = getEnhancement(target, 'counter');
-				if (furyEnhancement) {
-					if (furyEnhancement < 0) {
-						furyEnhancement = Math.ceil(furyBase * -furyEnhancement);
-					}
-				}
+				var furyEnhancement = getEnhancement(target, 'counter', furyBase);
 
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
@@ -2989,13 +2890,8 @@ var SIMULATOR = {};
 			if (current_assault.berserk) {
 
 				var berserk = current_assault.berserk;
-				var enhanced = getEnhancement(current_assault, 'berserk');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(berserk * -enhanced);
-					}
-					berserk += enhanced;
-				}
+				var enhanced = getEnhancement(current_assault, 'berserk', berserk);
+				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
 				if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
@@ -3008,13 +2904,8 @@ var SIMULATOR = {};
 		// - Target must have received some amount of damage
 		if (target.corrosive) {
 			var corrosion = target.corrosive || 0;
-			var enhanced = getEnhancement(target, 'corrosive');
-			if (enhanced) {
-				if (enhanced < 0) {
-					enhanced = Math.ceil(corrosion * -enhanced);
-				}
-				corrosion += enhanced;
-			}
+			var enhanced = getEnhancement(target, 'corrosive', corrosion);
+			corrosion += enhanced;
 			if (current_assault.corroded) {
 				current_assault.corroded.amount += corrosion;
 				current_assault.corroded.timer = 2;
