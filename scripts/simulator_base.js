@@ -2384,7 +2384,7 @@ var SIMULATOR = {};
 		// Check Protect/Enfeeble
 		exclusions = (exclusions || {});
 		var enfeeble = (exclusions.enfeeble ? 0 : (target.enfeebled || 0));
-		var stasis = (exclusions.stasis ? 0 : (target.shrouded || 0));
+		var shrouded = (exclusions.stasis ? 0 : (target.shrouded || 0));
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
@@ -2398,6 +2398,9 @@ var SIMULATOR = {};
 			if (target.protected == 0) {
 				shatter = target.barrier_ice;
 			}
+		}
+		if (shrouded) {
+			damage -= applyDamageReduction(target, 'stasis', damage);
 		}
 
 		var echo = '';
@@ -2633,7 +2636,7 @@ var SIMULATOR = {};
 		var protect = target.protected;
 		var shatter = false;
 		var armor = target.armored;
-		var stasis = target.stasis;
+		var shrouded = target.stasis;
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debug) {
@@ -2666,22 +2669,22 @@ var SIMULATOR = {};
 				}
 			}
 		}
-		if (stasis && !target.isActive() || !target.isUnjammed()) {
-			stasis += getEnhancement(target, 'stasis', stasis);
+		if (shrouded && !target.isActive() || !target.isUnjammed()) {
+			shrouded += getEnhancement(target, 'stasis', shrouded);
 			if (debug) {
-				echo += ' Shroud: -' + stasis;
+				echo += ' Shroud: -' + shrouded;
 			}
 			// Remove pierce from Shroud
 			if (pierce) {
-				if (pierce > stasis) {
-					if (debug) echo += ' Pierce: +' + stasis;
-					stasis = 0;
+				if (pierce > shrouded) {
+					if (debug) echo += ' Pierce: +' + shrouded;
+					shrouded = 0;
 				} else {
 					if (debug) echo += ' Pierce: +' + pierce;
-					stasis -= pierce;
+					shrouded -= pierce;
 				}
 			}
-			damage -= stasis;
+			damage -= shrouded;
 		}
 		if (armor) {
 			armor += getEnhancement(target, 'armored', armor);
