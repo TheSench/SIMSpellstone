@@ -58606,6 +58606,7 @@ var CARDS = {
 		"name": "Noya of Slicing Ice",
 		"picture": "Avian_Snow_Sphinx_A",
 		"rarity": "4",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "absorb",
@@ -59016,6 +59017,182 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 2
+					}
+				]
+			}
+		}
+	},
+	"5213": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1541091600000",
+		"id": "5213",
+		"maxLevel": 6,
+		"name": "Mountking Warder",
+		"picture": "Undead_Skeleton_Armor_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"attack": 9,
+				"skill": []
+			},
+			"4": {
+				"health": 34,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"5214": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1541091600000",
+		"id": "5214",
+		"maxLevel": 6,
+		"name": "Bonebite Freebooter",
+		"picture": "Undead_Mecha_Skeleton_Dog_Mecha_Master_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "protect",
+				"x": 5,
+				"y": "16"
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "16"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "16"
+					}
+				]
+			},
+			"5": {
+				"health": 23,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "16"
 					}
 				]
 			}
@@ -139079,6 +139256,7 @@ var CARDS = {
 		"name": "Noya of Biting Cold",
 		"picture": "Avian_Snow_Sphinx_A",
 		"rarity": "4",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "absorb",
@@ -139502,6 +139680,208 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"15213": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1541091600000",
+		"id": "15213",
+		"maxLevel": 6,
+		"name": "Mountking Crusher",
+		"picture": "Undead_Skeleton_Armor_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 36,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
+			}
+		}
+	},
+	"15214": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1541091600000",
+		"id": "15214",
+		"maxLevel": 6,
+		"name": "Bonebite Pirate",
+		"picture": "Undead_Mecha_Skeleton_Dog_Mecha_Master_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "protect",
+				"x": 7,
+				"y": "16"
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "16"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "16"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 8,
+						"y": "16"
+					}
+				]
+			},
+			"5": {
+				"health": 25,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 9,
+						"y": "16"
 					}
 				]
 			}
@@ -208232,6 +208612,7 @@ var CARDS = {
 		"name": "Noya of Bitter Winds",
 		"picture": "Avian_Snow_Sphinx_B",
 		"rarity": "4",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "absorb",
@@ -208630,6 +209011,194 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"25213": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1541091600000",
+		"id": "25213",
+		"maxLevel": 6,
+		"name": "Mountking Defender",
+		"picture": "Undead_Skeleton_Armor_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"skill": []
+			},
+			"4": {
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"25214": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1541091600000",
+		"id": "25214",
+		"maxLevel": 6,
+		"name": "Bonebite Highjacker",
+		"picture": "Undead_Mecha_Skeleton_Dog_Mecha_Master_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"id": "protect",
+				"x": 9,
+				"y": "16"
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 10,
+						"y": "16"
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"skill": []
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 10,
+						"y": "16"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 11,
+						"y": "16"
 					}
 				]
 			}

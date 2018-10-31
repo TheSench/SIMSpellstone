@@ -3599,6 +3599,19 @@ var CAMPAIGNS = {
 		],
 		"name": "The Spirit Between Planes"
 	},
+	"1188": {
+		"id": "1188",
+		"items": {
+			"3080": 0.4
+		},
+		"location_id": "18",
+		"missions": [
+			"6095",
+			"6096",
+			"6097"
+		],
+		"name": "Legend of Pumpking"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -79505,5 +79518,185 @@ var MISSIONS = {
 		],
 		"id": "6094",
 		"name": "Plane Pain"
+	},
+	"6095": {
+		"commander": {
+			"id": "344"
+		},
+		"deck": [
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1329"
+			},
+			{
+				"id": "1330"
+			},
+			{
+				"id": "1330"
+			},
+			{
+				"id": "11331"
+			},
+			{
+				"id": "1328",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2024",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1626",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5082",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6035",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6095",
+		"name": "The Tale of Pumpking"
+	},
+	"6096": {
+		"commander": {
+			"id": "342"
+		},
+		"deck": [
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "1332"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6096",
+		"name": "Pumpking's Appearance"
+	},
+	"6097": {
+		"commander": {
+			"id": "342"
+		},
+		"deck": [
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1315"
+			},
+			{
+				"id": "1315"
+			},
+			{
+				"id": "1632"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5035",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2062",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6097",
+		"name": "More Treat Than Trick"
 	}
 };
