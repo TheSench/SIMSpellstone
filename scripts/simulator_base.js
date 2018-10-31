@@ -2408,7 +2408,7 @@ var SIMULATOR = {};
 			}
 		}
 		if (shrouded) {
-			damage -= applyDamageReduction(target, 'stasis', damage);
+			damage -= shrouded;
 		}
 
 		var echo = '';
