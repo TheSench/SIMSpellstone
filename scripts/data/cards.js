@@ -74868,6 +74868,102 @@ var CARDS = {
 			}
 		}
 	},
+	"6206": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 20,
+		"hidden_until": "1541437200000",
+		"id": "6206",
+		"maxLevel": 6,
+		"name": "Bloodboil Mage",
+		"picture": "Undead_Insect_Cauldron_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"id": "rally",
+				"x": 3,
+				"y": "13"
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 21,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"4": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"health": 23,
+				"skill": []
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -156398,6 +156494,88 @@ var CARDS = {
 			}
 		}
 	},
+	"16206": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1541437200000",
+		"id": "16206",
+		"maxLevel": 6,
+		"name": "Bloodboil Banemage",
+		"picture": "Undead_Insect_Cauldron_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 5,
+				"y": "13"
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 24,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "13"
+					}
+				]
+			},
+			"4": {
+				"health": 25,
+				"skill": []
+			},
+			"5": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "13"
+					}
+				]
+			},
+			"6": {
+				"health": 26,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -225589,6 +225767,101 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"26206": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1541437200000",
+		"id": "26206",
+		"maxLevel": 6,
+		"name": "Bloodboil Cursemage",
+		"picture": "Undead_Insect_Cauldron_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "rally",
+				"x": 6,
+				"y": "13"
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "13"
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "13"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "13"
 					}
 				]
 			}
