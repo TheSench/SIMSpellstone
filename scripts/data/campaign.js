@@ -77,6 +77,10 @@ var LOCATIONS = {
 		"id": "18",
 		"name": "Desolate Red Valley"
 	},
+	"19": {
+		"id": "19",
+		"name": "Tarragon Peak"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -3611,6 +3615,39 @@ var CAMPAIGNS = {
 			"6097"
 		],
 		"name": "Legend of Pumpking"
+	},
+	"1189": {
+		"id": "1189",
+		"items": {
+			"3083": 0.2
+		},
+		"location_id": "19",
+		"missions": [
+			"6098",
+			"6099",
+			"6100",
+			"6101",
+			"6102",
+			"6103"
+		],
+		"name": "Home of Dragons"
+	},
+	"1190": {
+		"battleground_id": "2053",
+		"id": "1190",
+		"items": {
+			"3083": 0.4
+		},
+		"location_id": "19",
+		"missions": [
+			"6104",
+			"6105",
+			"6106",
+			"6107",
+			"6108",
+			"6109"
+		],
+		"name": "Dragon Fossils"
 	},
 	"3000": {
 		"id": "3000",
@@ -79705,7 +79742,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8045"
 			},
 			{
 				"id": "7012"
@@ -79765,7 +79802,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8107"
 			},
 			{
 				"id": "7012"
@@ -79825,7 +79862,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8045"
 			},
 			{
 				"id": "1311"
@@ -79885,7 +79922,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8107"
 			},
 			{
 				"id": "1314"
@@ -79945,7 +79982,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8045"
 			},
 			{
 				"id": "1319"
@@ -79997,7 +80034,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6102",
-		"name": "Dragon Fossils"
+		"name": "Dragon Secrets"
 	},
 	"6103": {
 		"commander": {
@@ -80005,7 +80042,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8107"
 			},
 			{
 				"id": "1314"
@@ -80065,7 +80102,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8045"
 			},
 			{
 				"id": "1319"
@@ -80125,7 +80162,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8107"
 			},
 			{
 				"id": "1319"
@@ -80185,7 +80222,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8045"
 			},
 			{
 				"id": "1314"
@@ -80245,7 +80282,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8107"
 			},
 			{
 				"id": "1314"
@@ -80305,7 +80342,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8045"
 			},
 			{
 				"id": "1314"
@@ -80365,7 +80402,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "5006"
+				"id": "8107"
 			},
 			{
 				"id": "1314"

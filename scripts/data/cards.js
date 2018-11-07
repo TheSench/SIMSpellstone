@@ -59198,6 +59198,87 @@ var CARDS = {
 			}
 		}
 	},
+	"5215": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 28,
+		"hidden_until": "1541696400000",
+		"id": "5215",
+		"maxLevel": 6,
+		"name": "Goldshield Enchanter",
+		"picture": "Undead_Lichlord_Scroll_Enchanter_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 29,
+				"skill": []
+			},
+			"3": {
+				"health": 30,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 31,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -139983,6 +140064,87 @@ var CARDS = {
 			}
 		}
 	},
+	"15215": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1541696400000",
+		"id": "15215",
+		"maxLevel": 6,
+		"name": "Goldshield Scrollmaster",
+		"picture": "Undead_Lichlord_Scroll_Enchanter_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "counterburn",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"health": 34,
+				"skill": []
+			},
+			"5": {
+				"health": 35,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -209377,6 +209539,87 @@ var CARDS = {
 						"id": "protect",
 						"x": 11,
 						"y": "16"
+					}
+				]
+			}
+		}
+	},
+	"25215": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1541696400000",
+		"id": "25215",
+		"maxLevel": 6,
+		"name": "Goldshield Firereader",
+		"picture": "Undead_Lichlord_Scroll_Enchanter_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 36,
+				"skill": []
+			},
+			"3": {
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 38,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
 					}
 				]
 			}

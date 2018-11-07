@@ -3753,5 +3753,295 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3013",
 		"location_id": "18",
 		"name": "Ancient Glyphs"
+	},
+	"3014": {
+		"desc": "Ancient rocks with symbols of runes carved upon them once served as Redfeather Valley's defense system. Power them up with Black Blossoms!",
+		"effects": [
+			{
+				"id": "41",
+				"name": "Fossil A",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Ward 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 1
+							}
+						],
+						"name": "Fossil A"
+					},
+					{
+						"desc": "All of your creatures gain Ward 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 2
+							}
+						],
+						"name": "Fossil A"
+					},
+					{
+						"desc": "All of your creatures gain Ward 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 3
+							}
+						],
+						"name": "Fossil A"
+					},
+					{
+						"desc": "All of your creatures gain Ward 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 4
+							}
+						],
+						"name": "Fossil A"
+					},
+					{
+						"desc": "All of your creatures gain Ward 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 6
+							}
+						],
+						"name": "Fossil A"
+					},
+					{
+						"desc": "All of your creatures gain Ward 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 8
+							}
+						],
+						"name": "Fossil A"
+					}
+				]
+			},
+			{
+				"id": "42",
+				"name": "Fossil B",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 1
+							}
+						],
+						"name": "Fossil B"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 2
+							}
+						],
+						"name": "Fossil B"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 4
+							}
+						],
+						"name": "Fossil B"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 6
+							}
+						],
+						"name": "Fossil B"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 8
+							}
+						],
+						"name": "Fossil B"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 10
+							}
+						],
+						"name": "Fossil B"
+					}
+				]
+			},
+			{
+				"id": "43",
+				"name": "Fossil C",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 1
+							}
+						],
+						"name": "Fossil C"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 2
+							}
+						],
+						"name": "Fossil C"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 3
+							}
+						],
+						"name": "Fossil C"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 4
+							}
+						],
+						"name": "Fossil C"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 5
+							}
+						],
+						"name": "Fossil C"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 6
+							}
+						],
+						"name": "Fossil C"
+					}
+				]
+			}
+		],
+		"id": "3014",
+		"location_id": "19",
+		"name": "Ancient Glyphs"
 	}
 };
