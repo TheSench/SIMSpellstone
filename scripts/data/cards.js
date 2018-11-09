@@ -92585,6 +92585,84 @@ var CARDS = {
 			}
 		}
 	},
+	"7213": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 20,
+		"hidden_until": "1542042000000",
+		"id": "7213",
+		"maxLevel": 6,
+		"name": "Siren of the Bog",
+		"picture": "Undead_Sea_Ghost_Lady_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"c": 5,
+				"id": "jam"
+			},
+			{
+				"id": "poison",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					},
+					{
+						"id": "poison",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 21,
+				"skill": []
+			},
+			"4": {
+				"health": 22,
+				"skill": []
+			},
+			"5": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					},
+					{
+						"id": "poison",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 23,
+				"skill": []
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -174639,6 +174717,97 @@ var CARDS = {
 			}
 		}
 	},
+	"17213": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1542042000000",
+		"id": "17213",
+		"maxLevel": 6,
+		"name": "Siren of the Swamp",
+		"picture": "Undead_Sea_Ghost_Lady_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			},
+			{
+				"id": "poison",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 25,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"health": 26,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -244086,6 +244255,84 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"27213": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1542042000000",
+		"id": "27213",
+		"maxLevel": 6,
+		"name": "Siren of the Drowned",
+		"picture": "Undead_Sea_Ghost_Lady_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			},
+			{
+				"id": "poison",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"attack": 10,
+				"skill": []
+			},
+			"5": {
+				"health": 29,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "poison",
+						"x": 7
 					}
 				]
 			}
