@@ -3755,11 +3755,11 @@ var MAP_BATTLEGROUNDS = {
 		"name": "Ancient Glyphs"
 	},
 	"3014": {
-		"desc": "Ancient rocks with symbols of runes carved upon them once served as Redfeather Valley's defense system. Power them up with Black Blossoms!",
+		"desc": "The spirits of dragon protectors who died protecting Tarragon Peak. Receive their blessing by offering Dragon Claws!",
 		"effects": [
 			{
 				"id": "41",
-				"name": "Fossil A",
+				"name": "Ward Fossil",
 				"upgrades": [
 					{
 						"desc": "",
@@ -3777,7 +3777,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 1
 							}
 						],
-						"name": "Fossil A"
+						"name": "Ward Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
@@ -3791,7 +3791,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 2
 							}
 						],
-						"name": "Fossil A"
+						"name": "Ward Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Ward 3 each turn.",
@@ -3805,7 +3805,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 3
 							}
 						],
-						"name": "Fossil A"
+						"name": "Ward Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Ward 4 each turn.",
@@ -3819,7 +3819,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 4
 							}
 						],
-						"name": "Fossil A"
+						"name": "Ward Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Ward 6 each turn.",
@@ -3833,7 +3833,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 6
 							}
 						],
-						"name": "Fossil A"
+						"name": "Ward Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Ward 8 each turn.",
@@ -3847,13 +3847,13 @@ var MAP_BATTLEGROUNDS = {
 								"x": 8
 							}
 						],
-						"name": "Fossil A"
+						"name": "Ward Fossil"
 					}
 				]
 			},
 			{
 				"id": "42",
-				"name": "Fossil B",
+				"name": "Vengeful Fossil",
 				"upgrades": [
 					{
 						"desc": "",
@@ -3871,7 +3871,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 1
 							}
 						],
-						"name": "Fossil B"
+						"name": "Vengeful Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 2 each turn.",
@@ -3885,7 +3885,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 2
 							}
 						],
-						"name": "Fossil B"
+						"name": "Vengeful Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 4 each turn.",
@@ -3899,7 +3899,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 4
 							}
 						],
-						"name": "Fossil B"
+						"name": "Vengeful Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 6 each turn.",
@@ -3913,7 +3913,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 6
 							}
 						],
-						"name": "Fossil B"
+						"name": "Vengeful Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 8 each turn.",
@@ -3927,7 +3927,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 8
 							}
 						],
-						"name": "Fossil B"
+						"name": "Vengeful Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 10 each turn.",
@@ -3941,13 +3941,13 @@ var MAP_BATTLEGROUNDS = {
 								"x": 10
 							}
 						],
-						"name": "Fossil B"
+						"name": "Vengeful Fossil"
 					}
 				]
 			},
 			{
 				"id": "43",
-				"name": "Fossil C",
+				"name": "Spitfire Fossil",
 				"upgrades": [
 					{
 						"desc": "",
@@ -3965,7 +3965,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 1
 							}
 						],
-						"name": "Fossil C"
+						"name": "Spitfire Fossil"
 					},
 					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
@@ -3979,7 +3979,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 2
 							}
 						],
-						"name": "Fossil C"
+						"name": "Spitfire Fossil"
 					},
 					{
 						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
@@ -3993,7 +3993,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 3
 							}
 						],
-						"name": "Fossil C"
+						"name": "Spitfire Fossil"
 					},
 					{
 						"desc": "All enemy creatures are hit with Bolt 4 each turn.",
@@ -4007,7 +4007,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 4
 							}
 						],
-						"name": "Fossil C"
+						"name": "Spitfire Fossil"
 					},
 					{
 						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
@@ -4021,7 +4021,7 @@ var MAP_BATTLEGROUNDS = {
 								"x": 5
 							}
 						],
-						"name": "Fossil C"
+						"name": "Spitfire Fossil"
 					},
 					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
@@ -4035,13 +4035,13 @@ var MAP_BATTLEGROUNDS = {
 								"x": 6
 							}
 						],
-						"name": "Fossil C"
+						"name": "Spitfire Fossil"
 					}
 				]
 			}
 		],
 		"id": "3014",
 		"location_id": "19",
-		"name": "Ancient Glyphs"
+		"name": "Ancestor Dragons"
 	}
 };
