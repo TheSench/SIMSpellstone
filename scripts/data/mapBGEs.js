@@ -3755,7 +3755,7 @@ var MAP_BATTLEGROUNDS = {
 		"name": "Ancient Glyphs"
 	},
 	"3014": {
-		"desc": "The spirits of dragon protectors who died protecting Tarragon Peak. Receive their blessing by offering Dragon Claws!",
+		"desc": "The spirits of dragon legends who died protecting Tarragon Peak. Receive their blessing by offering Dragon Claws!",
 		"effects": [
 			{
 				"id": "41",

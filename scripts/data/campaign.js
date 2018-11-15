@@ -80338,7 +80338,7 @@ var MISSIONS = {
 	},
 	"6108": {
 		"commander": {
-			"id": "4"
+			"id": "422"
 		},
 		"deck": [
 			{
@@ -80398,7 +80398,7 @@ var MISSIONS = {
 	},
 	"6109": {
 		"commander": {
-			"id": "4"
+			"id": "422"
 		},
 		"deck": [
 			{
