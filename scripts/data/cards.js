@@ -75566,6 +75566,84 @@ var CARDS = {
 			}
 		}
 	},
+	"6209": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1542646800000",
+		"id": "6209",
+		"maxLevel": 6,
+		"name": "Wyribbit",
+		"picture": "Frog_Dragon_Frog_Dragonling_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "burn",
+				"x": 1
+			},
+			{
+				"id": "nullify",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 14,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 15,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"attack": 6,
+				"skill": []
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -93899,13 +93977,13 @@ var CARDS = {
 				"x": 2
 			},
 			{
-				"id": "poison",
-				"x": 7
-			},
-			{
 				"all": "1",
 				"id": "enrage",
 				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 7
 			}
 		],
 		"sub_type": [
@@ -93921,13 +93999,13 @@ var CARDS = {
 						"x": 2
 					},
 					{
-						"id": "poison",
-						"x": 8
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 8
 					}
 				]
 			},
@@ -93939,13 +94017,13 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "poison",
-						"x": 8
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 8
 					}
 				]
 			},
@@ -93957,13 +94035,13 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "poison",
-						"x": 8
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 8
 					}
 				]
 			},
@@ -93976,13 +94054,13 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "poison",
-						"x": 9
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 9
 					}
 				]
 			},
@@ -93994,13 +94072,13 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "poison",
-						"x": 9
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 9
 					}
 				]
 			},
@@ -94012,13 +94090,13 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "poison",
-						"x": 10
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 10
 					}
 				]
 			},
@@ -94030,13 +94108,13 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "poison",
-						"x": 11
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 11
 					}
 				]
 			},
@@ -94048,13 +94126,13 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "poison",
-						"x": 12
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 12
 					}
 				]
 			},
@@ -94066,13 +94144,13 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"id": "poison",
-						"x": 12
-					},
-					{
 						"all": "1",
 						"id": "enrage",
 						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 12
 					}
 				]
 			}
@@ -157685,6 +157763,108 @@ var CARDS = {
 			"6": {
 				"health": 37,
 				"skill": []
+			}
+		}
+	},
+	"16209": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1542646800000",
+		"id": "16209",
+		"maxLevel": 6,
+		"name": "Wyribbit Flametongue",
+		"picture": "Frog_Dragon_Frog_Dragonling_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 17,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
 			}
 		}
 	},
@@ -227511,6 +227691,96 @@ var CARDS = {
 						"id": "enrage",
 						"x": 7,
 						"y": "9"
+					}
+				]
+			}
+		}
+	},
+	"26209": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1542646800000",
+		"id": "26209",
+		"maxLevel": 6,
+		"name": "Wyribbit Ashtongue",
+		"picture": "Frog_Dragon_Frog_Dragonling_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 4
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 4
 					}
 				]
 			}
