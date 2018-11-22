@@ -1,6 +1,7 @@
 var spoilers = {
-	"6209": true,
-	"7603": true,
-	"16209": true,
-	"26209": true
+	"5216": true,
+	"7604": true,
+	"8125": true,
+	"15216": true,
+	"25216": true
 };

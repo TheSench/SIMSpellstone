@@ -59701,6 +59701,72 @@ var CARDS = {
 			}
 		}
 	},
+	"5216": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"hidden_until": "1543251600000",
+		"id": "5216",
+		"maxLevel": 6,
+		"name": "Drakon",
+		"picture": "Undead_Dragon_Ghost_Dragon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7",
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 21,
+				"skill": []
+			},
+			"6": {
+				"health": 22,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -94156,6 +94222,193 @@ var CARDS = {
 			}
 		}
 	},
+	"7604": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1542906000000",
+		"id": "7604",
+		"maxLevel": 10,
+		"name": "Tropicano Rex",
+		"picture": "Dragon_Tropical_Poison_Dragon_A",
+		"rarity": "4",
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "frost",
+				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"health": 29,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "frost",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"7": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "frost",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"8": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "frost",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			},
+			"9": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "frost",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "frost",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
 	"8000": {
 		"attack": 3,
 		"card_type": "2",
@@ -107552,6 +107805,122 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"8125": {
+		"card_type": "1",
+		"desc": "Envious creatures, we dragons sing retribution.",
+		"health": 76,
+		"id": "8125",
+		"maxLevel": 6,
+		"name": "Teroxis the Steadfast",
+		"picture": "portrait_dragon_sage",
+		"rarity": "4",
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "armored",
+				"x": 1
+			},
+			{
+				"id": "enhance",
+				"s": "burn",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 80,
+				"skill": []
+			},
+			"3": {
+				"health": 85,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 89,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 94,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 4
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
 					}
 				]
 			}
@@ -141070,6 +141439,97 @@ var CARDS = {
 						"x": 3
 					}
 				]
+			}
+		}
+	},
+	"15216": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1543251600000",
+		"id": "15216",
+		"maxLevel": 6,
+		"name": "Venerated Drakon",
+		"picture": "Undead_Dragon_Ghost_Dragon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7",
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": []
 			}
 		}
 	},
@@ -211075,6 +211535,97 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"25216": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1543251600000",
+		"id": "25216",
+		"maxLevel": 6,
+		"name": "Hallowed Drakon",
+		"picture": "Undead_Dragon_Ghost_Dragon_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"7",
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 6
 					}
 				]
 			}

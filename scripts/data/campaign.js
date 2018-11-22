@@ -3649,6 +3649,21 @@ var CAMPAIGNS = {
 		],
 		"name": "Dragon Fossils"
 	},
+	"1191": {
+		"battleground_id": "2054",
+		"id": "1191",
+		"items": {
+			"3083": 0.4
+		},
+		"location_id": "19",
+		"missions": [
+			"6110",
+			"6111",
+			"6112",
+			"6113"
+		],
+		"name": "A Promise Left Behind"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -80455,5 +80470,245 @@ var MISSIONS = {
 		],
 		"id": "6109",
 		"name": "Dragon Tongue"
+	},
+	"6110": {
+		"commander": {
+			"id": "8125"
+		},
+		"deck": [
+			{
+				"id": "8107"
+			},
+			{
+				"id": "6128"
+			},
+			{
+				"id": "7184"
+			},
+			{
+				"id": "6099"
+			},
+			{
+				"id": "5189"
+			},
+			{
+				"id": "7060"
+			},
+			{
+				"id": "7186"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6132",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5023",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6099",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6098",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6110",
+		"name": "Ambassadors"
+	},
+	"6111": {
+		"commander": {
+			"id": "8125"
+		},
+		"deck": [
+			{
+				"id": "8107"
+			},
+			{
+				"id": "6128"
+			},
+			{
+				"id": "7184"
+			},
+			{
+				"id": "6099"
+			},
+			{
+				"id": "5189"
+			},
+			{
+				"id": "7060"
+			},
+			{
+				"id": "7186"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6132",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5023",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6099",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6098",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6111",
+		"name": "Alliance Formation"
+	},
+	"6112": {
+		"commander": {
+			"id": "8125"
+		},
+		"deck": [
+			{
+				"id": "8107"
+			},
+			{
+				"id": "6128"
+			},
+			{
+				"id": "7184"
+			},
+			{
+				"id": "6099"
+			},
+			{
+				"id": "5189"
+			},
+			{
+				"id": "7060"
+			},
+			{
+				"id": "7186"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6132",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5023",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6099",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6098",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6112",
+		"name": "Distress Fire"
+	},
+	"6113": {
+		"commander": {
+			"id": "8125"
+		},
+		"deck": [
+			{
+				"id": "8107"
+			},
+			{
+				"id": "6128"
+			},
+			{
+				"id": "7184"
+			},
+			{
+				"id": "6099"
+			},
+			{
+				"id": "5189"
+			},
+			{
+				"id": "7060"
+			},
+			{
+				"id": "7186"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214"
+			},
+			{
+				"id": "7214",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6132",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5023",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6099",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6098",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6113",
+		"name": "Onesided Loyalty"
 	}
 };
