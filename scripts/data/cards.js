@@ -22611,6 +22611,122 @@ var CARDS = {
 			}
 		}
 	},
+	"423": {
+		"card_type": "1",
+		"desc": "Envious creatures, we dragons sing retribution.",
+		"health": 76,
+		"id": "423",
+		"maxLevel": 6,
+		"name": "Teroxis the Steadfast",
+		"picture": "portrait_dragon_sage",
+		"rarity": "4",
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "armored",
+				"x": 1
+			},
+			{
+				"id": "enhance",
+				"s": "burn",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 80,
+				"skill": []
+			},
+			"3": {
+				"health": 85,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 89,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 94,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "armored",
+						"x": 4
+					},
+					{
+						"id": "enhance",
+						"s": "burn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -59767,6 +59883,84 @@ var CARDS = {
 			}
 		}
 	},
+	"5217": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1543510800000",
+		"id": "5217",
+		"maxLevel": 6,
+		"name": "Azazreal, Herald",
+		"picture": "Dragon_Angel_Fire_Feathered_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"id": "daze",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6",
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "daze",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 13,
+				"skill": []
+			},
+			"4": {
+				"health": 14,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "daze",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"health": 15,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -93417,6 +93611,88 @@ var CARDS = {
 			}
 		}
 	},
+	"7217": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 30,
+		"hidden_until": "1543510800000",
+		"id": "7217",
+		"maxLevel": 6,
+		"name": "Amrita, Drake Healer",
+		"picture": "Goblin_Dragon_Nature_Goblin_Dragonmaster_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"9",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 31,
+				"skill": []
+			},
+			"3": {
+				"health": 32,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 33,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -107805,122 +108081,6 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 6
-					}
-				]
-			}
-		}
-	},
-	"8125": {
-		"card_type": "1",
-		"desc": "Envious creatures, we dragons sing retribution.",
-		"health": 76,
-		"id": "8125",
-		"maxLevel": 6,
-		"name": "Teroxis the Steadfast",
-		"picture": "portrait_dragon_sage",
-		"rarity": "4",
-		"set": "9999",
-		"skill": [
-			{
-				"id": "imbue",
-				"s": "armored",
-				"x": 1
-			},
-			{
-				"id": "enhance",
-				"s": "burn",
-				"x": 2
-			},
-			{
-				"all": "1",
-				"id": "strike",
-				"x": 1
-			}
-		],
-		"sub_type": [],
-		"type": "3",
-		"upgrades": {
-			"2": {
-				"health": 80,
-				"skill": []
-			},
-			"3": {
-				"health": 85,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "armored",
-						"x": 2
-					},
-					{
-						"id": "enhance",
-						"s": "burn",
-						"x": 2
-					},
-					{
-						"all": "1",
-						"id": "strike",
-						"x": 1
-					}
-				]
-			},
-			"4": {
-				"health": 89,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "armored",
-						"x": 2
-					},
-					{
-						"id": "enhance",
-						"s": "burn",
-						"x": 3
-					},
-					{
-						"all": "1",
-						"id": "strike",
-						"x": 2
-					}
-				]
-			},
-			"5": {
-				"health": 94,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "armored",
-						"x": 3
-					},
-					{
-						"id": "enhance",
-						"s": "burn",
-						"x": 3
-					},
-					{
-						"all": "1",
-						"id": "strike",
-						"x": 2
-					}
-				]
-			},
-			"6": {
-				"health": 99,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "armored",
-						"x": 4
-					},
-					{
-						"id": "enhance",
-						"s": "burn",
-						"x": 4
-					},
-					{
-						"all": "1",
-						"id": "strike",
-						"x": 3
 					}
 				]
 			}
@@ -141529,6 +141689,84 @@ var CARDS = {
 			},
 			"6": {
 				"health": 25,
+				"skill": []
+			}
+		}
+	},
+	"15217": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1543510800000",
+		"id": "15217",
+		"maxLevel": 6,
+		"name": "Azazreal, Prophet",
+		"picture": "Dragon_Angel_Fire_Feathered_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"id": "daze",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6",
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 17,
+				"skill": []
+			},
+			"6": {
+				"health": 18,
 				"skill": []
 			}
 		}
@@ -176407,6 +176645,102 @@ var CARDS = {
 			"6": {
 				"health": 17,
 				"skill": []
+			}
+		}
+	},
+	"17217": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 34,
+		"hidden_until": "1543510800000",
+		"id": "17217",
+		"maxLevel": 6,
+		"name": "Amrita, Drake Shaman",
+		"picture": "Goblin_Dragon_Nature_Goblin_Dragonmaster_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"9",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 36,
+				"skill": []
+			},
+			"5": {
+				"attack": 8,
+				"health": 37,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
 			}
 		}
 	},
@@ -211631,6 +211965,84 @@ var CARDS = {
 			}
 		}
 	},
+	"25217": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1543510800000",
+		"id": "25217",
+		"maxLevel": 6,
+		"name": "Azazreal, Harbinger",
+		"picture": "Dragon_Angel_Fire_Feathered_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"id": "daze",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6",
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"health": 20,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -246470,6 +246882,102 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27217": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1543510800000",
+		"id": "27217",
+		"maxLevel": 6,
+		"name": "Amrita, Drake Oracle",
+		"picture": "Goblin_Dragon_Nature_Goblin_Dragonmaster_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"9",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
 					}
 				]
 			}
