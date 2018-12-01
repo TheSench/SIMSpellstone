@@ -59961,6 +59961,71 @@ var CARDS = {
 			}
 		}
 	},
+	"5218": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1543856400000",
+		"id": "5218",
+		"maxLevel": 6,
+		"name": "Jyrn of Slicing Snow",
+		"picture": "Dragon_Wild_Snow_Dragon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"health": 14,
+				"skill": []
+			},
+			"4": {
+				"attack": 6,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 1
+					},
+					{
+						"id": "berserk",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"health": 15,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -141771,6 +141836,83 @@ var CARDS = {
 			}
 		}
 	},
+	"15218": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1543856400000",
+		"id": "15218",
+		"maxLevel": 6,
+		"name": "Jyrn of Bitter Snow",
+		"picture": "Dragon_Wild_Snow_Dragon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 16,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 17,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -212038,6 +212180,95 @@ var CARDS = {
 					{
 						"c": 3,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"25218": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1543856400000",
+		"id": "25218",
+		"maxLevel": 6,
+		"name": "Jyrn of Shattering Snow",
+		"picture": "Dragon_Wild_Snow_Dragon_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "frost",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
 					}
 				]
 			}
