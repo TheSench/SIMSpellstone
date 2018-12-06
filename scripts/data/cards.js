@@ -93676,6 +93676,102 @@ var CARDS = {
 			}
 		}
 	},
+	"7215": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 17,
+		"hidden_until": "1544115600000",
+		"id": "7215",
+		"maxLevel": 6,
+		"name": "Forgewing Whelp",
+		"picture": "Mecha_Dragon_Wood_Constructed_Dragon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "fervor",
+				"x": 3,
+				"y": "9"
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"9",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "9"
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "9"
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "9"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"7217": {
 		"attack": 6,
 		"card_type": "2",
@@ -176790,6 +176886,88 @@ var CARDS = {
 			}
 		}
 	},
+	"17215": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1544115600000",
+		"id": "17215",
+		"maxLevel": 6,
+		"name": "Forgewing Wyvern",
+		"picture": "Mecha_Dragon_Wood_Constructed_Dragon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "fervor",
+				"x": 4,
+				"y": "9"
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"9",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": []
+			},
+			"5": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 26,
+				"skill": []
+			}
+		}
+	},
 	"17217": {
 		"attack": 7,
 		"card_type": "2",
@@ -247109,6 +247287,102 @@ var CARDS = {
 					{
 						"id": "regenerate",
 						"x": 8
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27215": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1544115600000",
+		"id": "27215",
+		"maxLevel": 6,
+		"name": "Forgewing Terror",
+		"picture": "Mecha_Dragon_Wood_Constructed_Dragon_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "9"
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"9",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"attack": 6,
+				"health": 29,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "9"
 					},
 					{
 						"id": "berserk",
