@@ -60476,6 +60476,72 @@ var CARDS = {
 			}
 		}
 	},
+	"5221": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 28,
+		"hidden_until": "1545066000000",
+		"id": "5221",
+		"maxLevel": 5,
+		"name": "Coreheart",
+		"picture": "Mecha_Frosty_Mecha_A",
+		"rarity": "3",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1,
+				"y": "16"
+			},
+			{
+				"id": "frost",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 29,
+				"skill": []
+			},
+			"3": {
+				"health": 30,
+				"skill": []
+			},
+			"4": {
+				"attack": 6,
+				"health": 31,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "16"
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -76568,6 +76634,101 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"6211": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 17,
+		"hidden_until": "1545066000000",
+		"id": "6211",
+		"maxLevel": 6,
+		"name": "Hanabi Crawler",
+		"picture": "Fireworks_Mecha_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			},
+			{
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"id": "strike",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"health": 20,
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 21,
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "strike",
 						"x": 3
 					}
 				]
@@ -142967,6 +143128,72 @@ var CARDS = {
 			}
 		}
 	},
+	"15221": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1545066000000",
+		"id": "15221",
+		"maxLevel": 5,
+		"name": "Frigid Coreheart",
+		"picture": "Mecha_Frosty_Mecha_A",
+		"rarity": "3",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2,
+				"y": "16"
+			},
+			{
+				"id": "frost",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "16"
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 7,
+				"skill": []
+			},
+			"5": {
+				"health": 35,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -159942,6 +160169,87 @@ var CARDS = {
 						"x": 4
 					}
 				]
+			}
+		}
+	},
+	"16211": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1545066000000",
+		"id": "16211",
+		"maxLevel": 6,
+		"name": "Hanabi Burrower",
+		"picture": "Fireworks_Mecha_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"id": "strike",
+				"x": 3
+			},
+			{
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 5,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 23,
+				"skill": []
+			},
+			"5": {
+				"health": 24,
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": []
 			}
 		}
 	},
@@ -213939,6 +214247,86 @@ var CARDS = {
 			}
 		}
 	},
+	"25221": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1545066000000",
+		"id": "25221",
+		"maxLevel": 5,
+		"name": "Frozen Coreheart",
+		"picture": "Mecha_Frosty_Mecha_B",
+		"rarity": "3",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3,
+				"y": "16"
+			},
+			{
+				"id": "frost",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"attack": 8,
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "16"
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "16"
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -230812,6 +231200,102 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"26211": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1545066000000",
+		"id": "26211",
+		"maxLevel": 6,
+		"name": "Hanabi Ravager",
+		"picture": "Fireworks_Mecha_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			},
+			{
+				"id": "strike",
+				"x": 5
+			},
+			{
+				"id": "strike",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 6,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 29,
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"id": "strike",
 						"x": 6
 					}
 				]
