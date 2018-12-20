@@ -40378,6 +40378,96 @@ var CARDS = {
 			}
 		}
 	},
+	"2145": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"id": "2145",
+		"maxLevel": 6,
+		"name": "Astaroth",
+		"picture": "Chaos_Mecha_Bit_Heroes_A",
+		"rarity": "4",
+		"set": "2000",
+		"skill": [
+			{
+				"id": "strike",
+				"x": 4
+			},
+			{
+				"id": "frost",
+				"x": 1
+			},
+			{
+				"id": "leech",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 1
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 1
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 1
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"health": 22,
+				"skill": []
+			}
+		}
+	},
 	"4000": {
 		"attack": 9,
 		"card_type": "2",
@@ -60476,6 +60566,99 @@ var CARDS = {
 			}
 		}
 	},
+	"5220": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1545930000000",
+		"id": "5220",
+		"maxLevel": 6,
+		"name": "Wallbot",
+		"picture": "Mecha_Shielding_Mecha_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "protect",
+				"x": 2,
+				"y": "16"
+			},
+			{
+				"id": "protect",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "protect",
+						"x": 2,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "protect",
+						"x": 3,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "protect",
+						"x": 3,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 14,
+				"skill": []
+			}
+		}
+	},
 	"5221": {
 		"attack": 5,
 		"card_type": "2",
@@ -60539,6 +60722,84 @@ var CARDS = {
 						"x": 2
 					}
 				]
+			}
+		}
+	},
+	"5222": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 0,
+		"health": 9,
+		"hidden_until": "1546275600000",
+		"id": "5222",
+		"maxLevel": 6,
+		"name": "Automaburner",
+		"picture": "Mecha_Undead_Skeleton_Mecha_Knight_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 2
+			},
+			{
+				"id": "valor",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 11,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 2
+					},
+					{
+						"id": "valor",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"health": 12,
+				"skill": []
 			}
 		}
 	},
@@ -60918,6 +61179,190 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"5602": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"id": "5602",
+		"maxLevel": 10,
+		"name": "TZ-530 the Impassable",
+		"picture": "Mecha_Defender_Mecha_A",
+		"rarity": "4",
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"attack": 12,
+				"health": 40,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"attack": 13,
+				"health": 41,
+				"skill": []
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"8": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"9": {
+				"health": 42,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"10": {
+				"attack": 15,
+				"health": 43,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
 						"x": 8
 					}
 				]
@@ -76732,6 +77177,83 @@ var CARDS = {
 						"x": 3
 					}
 				]
+			}
+		}
+	},
+	"6212": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 20,
+		"hidden_until": "1545670800000",
+		"id": "6212",
+		"maxLevel": 6,
+		"name": "Iron Ninjutsu",
+		"picture": "Mecha_Ninja_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "pierce",
+				"x": 5
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "pierce",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 21,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 22,
+				"skill": []
 			}
 		}
 	},
@@ -94697,6 +95219,255 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"7218": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"hidden_until": "1545930000000",
+		"id": "7218",
+		"maxLevel": 6,
+		"name": "Zuphlas",
+		"picture": "Mecha_Angel_Droid_Controller_Angel_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 2
+			},
+			{
+				"id": "rally",
+				"x": 1
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"6",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"health": 20,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"7219": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 4,
+		"health": 42,
+		"hidden_until": "1546534800000",
+		"id": "7219",
+		"maxLevel": 6,
+		"name": "Hoggernaut MK I",
+		"picture": "Mecha_Pig_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "rally",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 43,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 44,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 45,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"7220": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 17,
+		"hidden_until": "1545325200000",
+		"id": "7220",
+		"maxLevel": 5,
+		"name": "Gadgit",
+		"picture": "Wylde_Mecha_Gadget_Mecha_A",
+		"rarity": "3",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 1
+			},
+			{
+				"id": "backlash",
+				"x": 1
+			},
+			{
+				"id": "nullify",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "backlash",
+						"x": 1
+					},
+					{
+						"id": "nullify",
+						"x": 1
 					}
 				]
 			}
@@ -125306,6 +126077,97 @@ var CARDS = {
 			}
 		}
 	},
+	"12145": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"id": "12145",
+		"maxLevel": 6,
+		"name": "Astaroth, the Destroyer",
+		"picture": "Chaos_Mecha_Bit_Heroes_A",
+		"rarity": "4",
+		"set": "2000",
+		"skill": [
+			{
+				"id": "strike",
+				"x": 6
+			},
+			{
+				"id": "frost",
+				"x": 1
+			},
+			{
+				"id": "leech",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "strike",
+						"x": 7
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
 	"15000": {
 		"attack": 6,
 		"card_type": "2",
@@ -143128,6 +143990,112 @@ var CARDS = {
 			}
 		}
 	},
+	"15220": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1545930000000",
+		"id": "15220",
+		"maxLevel": 6,
+		"name": "Rapid Wallbot",
+		"picture": "Mecha_Shielding_Mecha_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "protect",
+				"x": 3,
+				"y": "16"
+			},
+			{
+				"id": "protect",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "protect",
+						"x": 3,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 16,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"15221": {
 		"attack": 6,
 		"card_type": "2",
@@ -143191,6 +144159,96 @@ var CARDS = {
 			"5": {
 				"health": 35,
 				"skill": []
+			}
+		}
+	},
+	"15222": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 0,
+		"health": 12,
+		"hidden_until": "1546275600000",
+		"id": "15222",
+		"maxLevel": 6,
+		"name": "Bold Automaburner",
+		"picture": "Mecha_Undead_Skeleton_Mecha_Knight_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "valor",
+				"x": 4
+			},
+			{
+				"id": "burn",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 13,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 14,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 2
+					}
+				]
 			}
 		}
 	},
@@ -160250,6 +161308,95 @@ var CARDS = {
 			"6": {
 				"health": 25,
 				"skill": []
+			}
+		}
+	},
+	"16212": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1545670800000",
+		"id": "16212",
+		"maxLevel": 6,
+		"name": "Carbon Ninjutsu",
+		"picture": "Mecha_Ninja_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "pierce",
+				"x": 7
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 24,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
 			}
 		}
 	},
@@ -178595,6 +179742,255 @@ var CARDS = {
 			}
 		}
 	},
+	"17218": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1545930000000",
+		"id": "17218",
+		"maxLevel": 6,
+		"name": "Zuphlas the Monitor",
+		"picture": "Mecha_Angel_Droid_Controller_Angel_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"6",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 23,
+				"skill": []
+			},
+			"6": {
+				"health": 24,
+				"skill": []
+			}
+		}
+	},
+	"17219": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 4,
+		"health": 46,
+		"hidden_until": "1546534800000",
+		"id": "17219",
+		"maxLevel": 6,
+		"name": "Hoggernaut MK II",
+		"picture": "Mecha_Pig_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 10
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 47,
+				"skill": []
+			},
+			"4": {
+				"health": 48,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 49,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"17220": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1545325200000",
+		"id": "17220",
+		"maxLevel": 5,
+		"name": "Rolling Gadgit",
+		"picture": "Wylde_Mecha_Gadget_Mecha_A",
+		"rarity": "3",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "backlash",
+				"x": 1
+			},
+			{
+				"id": "nullify",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					}
+				]
+			},
+			"3": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -196172,6 +197568,96 @@ var CARDS = {
 					{
 						"id": "burn",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"22145": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"id": "22145",
+		"maxLevel": 6,
+		"name": "Astaroth, the Dark Lord",
+		"picture": "Chaos_Mecha_Bit_Heroes_A",
+		"rarity": "4",
+		"set": "2000",
+		"skill": [
+			{
+				"id": "strike",
+				"x": 7
+			},
+			{
+				"id": "frost",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "strike",
+						"x": 8
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "strike",
+						"x": 8
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "strike",
+						"x": 9
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 9
 					}
 				]
 			}
@@ -214247,6 +215733,86 @@ var CARDS = {
 			}
 		}
 	},
+	"25220": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1545930000000",
+		"id": "25220",
+		"maxLevel": 6,
+		"name": "Agile Wallbot",
+		"picture": "Mecha_Shielding_Mecha_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "protect",
+				"x": 5,
+				"y": "16"
+			},
+			{
+				"id": "protect",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 17,
+				"skill": []
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 18,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "protect",
+						"x": 5,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "16"
+					},
+					{
+						"id": "protect",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"25221": {
 		"attack": 7,
 		"card_type": "2",
@@ -214322,6 +215888,96 @@ var CARDS = {
 					{
 						"id": "frost",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"25222": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 0,
+		"health": 15,
+		"hidden_until": "1546275600000",
+		"id": "25222",
+		"maxLevel": 6,
+		"name": "Valiant Automaburner",
+		"picture": "Mecha_Undead_Skeleton_Mecha_Knight_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"id": "burn",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 3,
+				"skill": []
+			},
+			"3": {
+				"health": 16,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 3
 					}
 				]
 			}
@@ -231297,6 +232953,83 @@ var CARDS = {
 					{
 						"id": "strike",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"26212": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1545670800000",
+		"id": "26212",
+		"maxLevel": 6,
+		"name": "Steel Ninjutsu",
+		"picture": "Mecha_Ninja_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "pierce",
+				"x": 8
+			},
+			{
+				"c": 2,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"attack": 11,
+				"skill": []
+			},
+			"5": {
+				"health": 27,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"c": 2,
+						"id": "flurry"
 					}
 				]
 			}
@@ -249697,6 +251430,243 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"27218": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1545930000000",
+		"id": "27218",
+		"maxLevel": 6,
+		"name": "Zuphlas the Director",
+		"picture": "Mecha_Angel_Droid_Controller_Angel_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"6",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 25,
+				"skill": []
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"health": 27,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"27219": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 4,
+		"health": 49,
+		"hidden_until": "1546534800000",
+		"id": "27219",
+		"maxLevel": 6,
+		"name": "Hoggernaut MK III",
+		"picture": "Mecha_Pig_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "rally",
+				"x": 13
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 50,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 14
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 51,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 52,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 14
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 15
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27220": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1545325200000",
+		"id": "27220",
+		"maxLevel": 5,
+		"name": "Bashing Gadgit",
+		"picture": "Wylde_Mecha_Gadget_Mecha_B",
+		"rarity": "3",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"health": 24,
+				"skill": []
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 3
 					}
 				]
 			}
