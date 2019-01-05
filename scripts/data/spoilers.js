@@ -1,24 +1,5 @@
 var spoilers = {
-	"2145": true,
-	"5220": true,
-	"5222": true,
-	"5602": true,
-	"6212": true,
-	"7218": true,
-	"7219": true,
-	"7220": true,
-	"12145": true,
-	"15220": true,
-	"15222": true,
-	"16212": true,
-	"17218": true,
-	"17219": true,
-	"17220": true,
-	"22145": true,
-	"25220": true,
-	"25222": true,
-	"26212": true,
-	"27218": true,
-	"27219": true,
-	"27220": true
+	"7221": true,
+	"17221": true,
+	"27221": true
 };

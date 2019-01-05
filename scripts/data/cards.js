@@ -95473,6 +95473,85 @@ var CARDS = {
 			}
 		}
 	},
+	"7221": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 29,
+		"hidden_until": "1546880400000",
+		"id": "7221",
+		"maxLevel": 6,
+		"name": "Icejaw Turtle",
+		"picture": "Ice_Turtle_Mecha_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 1
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"12",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 1
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 30,
+				"skill": []
+			},
+			"4": {
+				"attack": 11,
+				"health": 31,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 1
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 32,
+				"skill": []
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -179991,6 +180070,72 @@ var CARDS = {
 			}
 		}
 	},
+	"17221": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1546880400000",
+		"id": "17221",
+		"maxLevel": 6,
+		"name": "Icejaw Snapper",
+		"picture": "Ice_Turtle_Mecha_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 2
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"12",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 35,
+				"skill": []
+			},
+			"6": {
+				"health": 36,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -251667,6 +251812,85 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"27221": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1546880400000",
+		"id": "27221",
+		"maxLevel": 6,
+		"name": "Icejaw Devastator",
+		"picture": "Ice_Turtle_Mecha_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "frost",
+				"x": 3
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"12",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"attack": 14,
+				"health": 38,
+				"skill": []
+			},
+			"5": {
+				"health": 39,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"c": 2,
+						"id": "jam"
 					}
 				]
 			}

@@ -4043,5 +4043,289 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3014",
 		"location_id": "19",
 		"name": "Ancestor Dragons"
+	},
+	"3015": {
+		"desc": "Your friends are giving you their strength to fight in the arena. Purchase upgrades with Gladius Coins!",
+		"effects": [
+			{
+				"id": "44",
+				"name": "Samael",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Scorch 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 1
+							}
+						],
+						"name": "Samael"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 2
+							}
+						],
+						"name": "Samael"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 3
+							}
+						],
+						"name": "Samael"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 4
+							}
+						],
+						"name": "Samael"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 6
+							}
+						],
+						"name": "Samael"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 8
+							}
+						],
+						"name": "Samael"
+					}
+				]
+			},
+			{
+				"id": "45",
+				"name": "Yuriel",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 1
+							}
+						],
+						"name": "Yuriel"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 2
+							}
+						],
+						"name": "Yuriel"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 3 each turn.",
+						"effect": [
+							{
+								"all": "3",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 3
+							}
+						],
+						"name": "Yuriel"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 4
+							}
+						],
+						"name": "Yuriel"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 5
+							}
+						],
+						"name": "Yuriel"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 6
+							}
+						],
+						"name": "Yuriel"
+					}
+				]
+			},
+			{
+				"id": "46",
+				"name": "Arena Equipment",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Armor 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 1
+							}
+						],
+						"name": "Arena Equipment"
+					},
+					{
+						"desc": "All of your creatures gain Armor 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 2
+							}
+						],
+						"name": "Arena Equipment"
+					},
+					{
+						"desc": "All of your creatures gain Armor 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 3
+							}
+						],
+						"name": "Arena Equipment"
+					},
+					{
+						"desc": "All of your creatures gain Armor 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 4
+							}
+						],
+						"name": "Arena Equipment"
+					},
+					{
+						"desc": "All of your creatures gain Armor 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 6
+							}
+						],
+						"name": "Arena Equipment"
+					},
+					{
+						"desc": "All of your creatures gain Armor 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 8
+							}
+						],
+						"name": "Arena Equipment"
+					}
+				]
+			}
+		],
+		"id": "3015",
+		"location_id": "20",
+		"name": "Fighting Spirits"
 	}
 };
