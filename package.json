@@ -1,0 +1,31 @@
+{
+  "name": "simspellstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSench/SIMSpellstone.git"
+  },
+  "author": "Jon Senchyna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSench/SIMSpellstone/issues"
+  },
+  "homepage": "https://github.com/TheSench/SIMSpellstone#readme"
+}

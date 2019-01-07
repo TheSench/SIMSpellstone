@@ -1747,12 +1747,12 @@ function hash_encode(deck) {
             indexes.push(numberToBase64(current_card.index));
             has_indexes = true;
         }
-        var triplet = unitInfo_to_base64(current_card);
+        var tripvar = unitInfo_to_base64(current_card);
         // Short-circuit encoding of multiples for now
-        if (false && triplet == current_hash[lastIndex]) {
+        if (false && tripvar == current_hash[lastIndex]) {
             copies[lastIndex]++;
         } else {
-            current_hash.push(triplet);
+            current_hash.push(tripvar);
             copies.push(1);
             lastIndex++;
         }
@@ -1854,7 +1854,7 @@ function hash_decode(hash) {
 // Convert card list into an actual deck
 // - assume that first card is always commander
 // - possible delimiters include ; , :
-// - sometimes name is not complete
+// - sometimes name is not compvare
 // - include common abbreviations, such as EMP, BoD, EQG, etc.
 // - case-insensitive
 // - recognize multiple copies of cards
@@ -2077,16 +2077,16 @@ function update_preset_deck(deck) {
 
     var randomizationInfo = deck.commander.randomInfo;
     if (randomizationInfo) {
-        let possibilities = randomizationInfo.possibilities;
-        let newCommander = ~~(Math.random() * possibilities.length);
-        let unit = getPresetUnit(possibilities[newCommander], randomizationInfo.level, randomizationInfo.maxedAt);
+        var possibilities = randomizationInfo.possibilities;
+        var newCommander = ~~(Math.random() * possibilities.length);
+        var unit = getPresetUnit(possibilities[newCommander], randomizationInfo.level, randomizationInfo.maxedAt);
         unit.randomInfo = randomizationInfo;
         deck.commander = unit;
     }
 
     var cpu_cards = deck.deck;
-    for (let i = 0, len = cpu_cards.length; i < len; i++) {
-        let unit = cpu_cards[i];
+    for (var i = 0, len = cpu_cards.length; i < len; i++) {
+        var unit = cpu_cards[i];
         var randomizationInfo = unit.randomInfo;
         if (randomizationInfo) {
             unit = getPresetUnit(randomizationInfo.unitInfo, randomizationInfo.level, randomizationInfo.maxedAt);
@@ -2118,13 +2118,13 @@ function getPresetCommander(deckInfo, level) {
 }
 
 function getUpgradePoints(level, maxedAt, maxUpgradePoints) {
-    var percentComplete;
+    var percentCompvare;
     if (maxedAt == 7) {
-        percentComplete = (level - 1) / (maxedAt - 1);
+        percentCompvare = (level - 1) / (maxedAt - 1);
     } else {
-        percentComplete = (level / maxedAt);
+        percentCompvare = (level / maxedAt);
     }
-    var points = Math.ceil(maxUpgradePoints * percentComplete);
+    var points = Math.ceil(maxUpgradePoints * percentCompvare);
     return points;
 }
 
