@@ -6999,10 +6999,10 @@ function onDeckLoaded(newHash, hashField)
 var dark = false;
 function toggleTheme() {
     if (dark) {
-        $("#theme").attr("href", "styles/sass/themes/light.css")
+        $("#theme").attr("href", "dist/light.min.css")
         $("#toggleTheme").val("Dark Theme");
     } else {
-        $("#theme").attr("href", "styles/sass/themes/dark.css")
+        $("#theme").attr("href", "dist/dark.min.css")
         $("#toggleTheme").val("Light Theme");
     }
     dark = !dark;

@@ -143,19 +143,52 @@ module.exports = function (grunt) {
                 }
             }
         },
-        /*
         cssmin: {
-            target: {
+            main: {
                 files: [{
-                    expand: true,
-                    cwd: 'release/css',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'release/css',
-                    ext: '.min.css'
+                    src: [
+                        'styles/sass/header.css',
+                        'styles/card.css',
+                        'styles/sass/tutorial.css',
+                        'styles/loading.css'
+                    ],
+                    dest: 'dist/main.min.css'
+                }]
+            },
+            deckbuilder: {
+                files: [{
+                    src: [
+                        'styles/deckbuilder.css',
+                        'styles/carddetails.css'
+                    ],
+                    dest: 'dist/deckbuilder.min.css'
+                }]
+            },
+            spritesheet: {
+                files: [{
+                    src: [
+                        'styles/spritesheet.css'
+                    ],
+                    dest: 'dist/spritesheet.min.css'
+                }]
+            },
+            lightTheme: {
+                files: [{
+                    src: [
+                        'styles/sass/themes/light.css'
+                    ],
+                    dest: 'dist/light.min.css'
+                }]
+            },
+            darkTheme: {
+                files: [{
+                    src: [
+                        'styles/sass/themes/dark.css'
+                    ],
+                    dest: 'dist/css/dark.min.css'
                 }]
             }
         },
-        */
         clean: ['dist']
     });
 
@@ -165,6 +198,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['clean', /*'jshint', */'concat', /*'cssmin',*/ 'uglify']);
+    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'cssmin', 'uglify']);
 
 };
