@@ -22,8 +22,7 @@
         }
     };
 
-    angular.module('core', []);
-    angular.module('core')
+    angular.module('core', [])
         .filter('forMissions', function () {
             return function (campaigns, missions) {
                 if (!campaigns || !missions) return campaigns;

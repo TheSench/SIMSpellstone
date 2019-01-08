@@ -387,7 +387,6 @@ function addCardEvent($collection, eventName, callback) {
 var showDetails = function (event, htmlCard) {
 	event.preventDefault();
 
-	var show = false;
 	var unit = getUnitFromCard(htmlCard);
 
 	cardDetailScope.setUnit(unit).$apply();

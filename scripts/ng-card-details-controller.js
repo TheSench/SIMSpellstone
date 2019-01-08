@@ -341,23 +341,25 @@
 
   angular.module('simulatorApp')
     .controller('CardDetailsCtrl', ['$scope', '$window', CardDetailsCtrl])
-    .directive('ngRightClick', function ($parse) {
-      return function (scope, element, attrs) {
-        var fn = $parse(attrs.ngRightClick);
-        element.contextmenu(function (event) {
-          scope.$apply(function () {
-            event.preventDefault();
-            fn(scope, { $event: event });
+    .directive('ngRightClick', ['$parse', function ($parse) {
+      return {
+        link: function (scope, element, attrs) {
+          var fn = $parse(attrs.ngRightClick);
+          element.contextmenu(function (event) {
+            scope.$apply(function () {
+              event.preventDefault();
+              fn(scope, { $event: event });
+            });
           });
-        });
+        }
       };
-    })
+    }])
     .directive('cardDetails', function () {
       return {
         restrict: 'A',
         replace: true,
         templateUrl: 'templates/card-template.html',
-        controller: CardDetailsCtrl
+        controller: 'CardDetailsCtrl'
       };
     })
     .directive('sssAutofocus', function () {

@@ -100,16 +100,19 @@ module.exports = function (grunt) {
                 }
             },
             deckbuilder: {
+                mangle: false,
                 files: {
                     'dist/deckbuilder.min.js': ['<%= concat.deckbuilder.dest %>']
                 }
             },
             simulator: {
+                mangle: false,
                 files: {
                     'dist/simulator.min.js': ['<%= concat.simulator.dest %>']
                 }
             },
             practice: {
+                mangle: false,
                 files: {
                     'dist/practice.min.js': ['<%= concat.practice.dest %>']
                 }
@@ -139,6 +142,19 @@ module.exports = function (grunt) {
                 }
             }
         },
+        /*
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'release/css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'release/css',
+                    ext: '.min.css'
+                }]
+            }
+        },
+        */
         clean: ['dist']
     });
 
@@ -146,7 +162,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'uglify']);
+    grunt.registerTask('default', ['clean', /*'jshint', */'concat', /*'cssmin',*/ 'uglify']);
 
 };

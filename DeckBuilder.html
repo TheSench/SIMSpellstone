@@ -29,32 +29,13 @@
     <link rel="preload" as="image" href="res/sprites/SpriteSheet10.jpg" />
     <link rel="preload" as="image" href="res/sprites/SpriteSheet11.jpg" />
 
-    <script src="lib/jquery-2.2.1.min.js"></script>
-    <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-    <!--<script src="lib/touch-punch/jquery.ui.touch-punch.min.js"></script>-->
+    <script src="dist/vendor.js"></script>
     <script src="lib/chartist/chartist.min.js"></script>
     <script src="lib/chartist/chartist-plugin-legend.js"></script>
     <script src="lib/chartist/chartist-plugin-tooltip.min.js"></script>
-
-    <script src="lib/angular.min.js"></script>
-
-    <!-- This script contains the cached data for cards, missions, quests, raids,
-        and battlegrounds -->
-    <script src="scripts/data/skills.js"></script>
-    <script src="scripts/data/cards.js"></script>
-    <script src="scripts/data/fusions.js"></script>
-    <script src="scripts/data/runes.js"></script>
-    <script src="scripts/data/common.js"></script>
-    <script src="scripts/shared.js"></script>
-    <script src="scripts/cards_gui.js"></script>
-    <script src="scripts/updateCards.js"></script>
-    <script src="scripts/deckbuilder.js"></script>
-    <script src="scripts/localstorage-controller.js"></script>
-    <script src="scripts/ng-card-details-controller.js"></script>
-    <script src="scripts/data/spoilers.js"></script>
-
-    <script src="scripts/tutorial/deckbuilder-tutorial.js"></script>
-    <script src="scripts/sim-tutorial.js"></script>
+    
+    <script src="dist/data.min.js"></script>
+    <script src="dist/deckbuilder.js"></script>
 </head>
 <body onload="initDeckBuilder()" ng-controller="DeckBuilderCtrl">
     <header style="display:none" id="header"></header>

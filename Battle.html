@@ -12,47 +12,9 @@
     <link rel="icon" type="image/png" href="res/favicon-16x16.png">
     <!--<link rel="stylesheet" href="Content/themes/base/smoothness.css">-->
 
-    <script src="lib/jquery-2.2.1.min.js"></script>
-    <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-
-    <script src="lib/angular.min.js"></script>
-
-    <!-- This script contains the cached data for cards, missions, quests, raids,
-        and battlegrounds -->
-    <script src="scripts/data/skills.js"></script>
-    <script src="scripts/data/cards.js"></script>
-    <script src="scripts/data/fusions.js"></script>
-    <script src="scripts/data/bges.js"></script>
-    <script src="scripts/data/mapBGEs.js"></script>
-    <script src="scripts/data/campaign.js"></script>
-    <script src="scripts/data/runes.js"></script>
-    <script src="scripts/data/raids.js"></script>
-    <script src="scripts/data/common.js"></script>
-    <script src="scripts/updateCards.js"></script>
-
-    <script id="shared_functions" src="scripts/shared.js"></script>
-
-    <script id="single_threaded_simulator" src="scripts/sim_controller.js"></script>
-    <script id="single_threaded_simulator" src="scripts/single_threaded.js"></script>
-
-    <!-- These are the generic functions/variables used to simulate battles.
-    All of the logic for simulating a single battle goes in here.
-    -->
-    <script id="simulator_base" src="scripts/simulator_base.js"></script>
-    <script id="simulator_base" src="scripts/card_battle.js"></script>
-
-    <!-- This script handles the base GUI functionality (getting user input and displaying simulation). -->
-    <script src="scripts/ng-simulator-controller.js"></script>
-    <script id="deckstorage" src="scripts/localstorage-controller.js"></script>
-    <script id="gui_script_2.0" src="scripts/gui_script_2.0.js"></script>
-    <script id="gui_script" src="scripts/gui_script.js"></script>
-
-    <!-- This script handles drawing the UI for user-controlled mode. -->
-    <script id="gui_script" src="scripts/cards_gui.js"></script>
-
-    <!-- SIMULATOR CODE ENDS HERE -->
-    <script src="scripts/tutorial/simulator-tutorial.js"></script>
-    <script src="scripts/sim-tutorial.js"></script>
+    <script src="dist/vendor.js"></script>
+    <script src="dist/data.min.js"></script>
+    <script src="dist/practice.min.js"></script>
 </head>
 <body ng-controller="SimulatorCtrl" ng-init="campaignSections()">
     <header id="header"></header>

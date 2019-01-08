@@ -13,54 +13,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.0/seedrandom.min.js"></script>
     <!--<link rel="stylesheet" href="Content/themes/base/smoothness.css">-->
 
-    <script src="lib/jquery-2.2.1.min.js"></script>
-    <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 
-    <script src="lib/angular.min.js"></script>
-
-    <!-- This script contains the cached data for cards, missions, quests, raids,
-        and battlegrounds -->
-    <script src="scripts/data/skills.js"></script>
-    <script src="scripts/data/cards.js"></script>
-    <script src="scripts/data/fusions.js"></script>
-    <script src="scripts/data/bges.js"></script>
-    <script src="scripts/data/mapBGEs.js"></script>
-    <script src="scripts/data/campaign.js"></script>
-    <script src="scripts/data/runes.js"></script>
-    <script src="scripts/data/raids.js"></script>
-    <script src="scripts/updateCards.js"></script>
-    <script src="scripts/data/common.js"></script>
-
-    <!-- SIMULATOR CODE BEGINS HERE -->
-    <!--
-    These are the functions that are used by both the GUI script and the worker
-    scripts. The following logic goes in here:
-    * Shuffle()
-    * Copy functions
-    * "Card ID is..." functions
-    * debug_dump functtions
-    * generate_card_list()
-    * hash encoding/decoding
-    * load_deck_from_x functions
-    * get_x_by_id functions
-    * -->
-    <script src="scripts/shared.js"></script>
-
-    <script src="scripts/sim_controller.js"></script>
-    <!--<script src="scripts/determine.js"></script>-->
-    <script src="scripts/simulator_base.js"></script>
-    <script src="scripts/single_threaded.js"></script>
-
-    <!-- This script handles the base GUI functionality (getting user input and displaying simulation). -->
-    <script src="scripts/ng-simulator-controller.js"></script>
-    <script src="scripts/localstorage-controller.js"></script>
-    <script src="scripts/gui_script_2.0.js"></script>
-    <script src="scripts/gui_script.js"></script>
-    <script src="scripts/cards_gui.js"></script>
-
-    <!-- SIMULATOR CODE ENDS HERE -->
-    <script src="scripts/tutorial/simulator-tutorial.js"></script>
-    <script src="scripts/sim-tutorial.js"></script>
+    <script src="dist/vendor.js"></script>
+    <script src="dist/data.min.js"></script>
+    <script src="dist/simulator.min.js"></script>
 </head>
 <body ng-controller="SimulatorCtrl" ng-init="campaignSections()">
     <header id="header"></header>
