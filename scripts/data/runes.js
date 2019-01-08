@@ -993,6 +993,43 @@ var RUNES = {
 		"type": "3",
 		"usable": "0"
 	},
+	"5201": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Nullify +1",
+		"icon": "rune_nullify_epic",
+		"id": "5201",
+		"name": "Rune of Nullification",
+		"rarity": "3",
+		"set": "3",
+		"stat_boost": {
+			"skill": {
+				"id": "nullify",
+				"x": "1"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5202": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Nullify +50%, rounded up. Minimum +2.",
+		"icon": "rune_nullify_legendary",
+		"id": "5202",
+		"name": "Rune of Greater Nullification",
+		"rarity": "4",
+		"set": "3",
+		"stat_boost": {
+			"skill": {
+				"id": "nullify",
+				"min_bonus": "2",
+				"mult": "0.5"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
 	"5211": {
 		"bundle": "34",
 		"category": "3",
