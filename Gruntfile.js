@@ -11,6 +11,7 @@ module.exports = function (grunt) {
             },
             deckbuilder: {
                 src: [
+                    'scripts/data/fixGlobals.js',
                     'scripts/shared.js',
                     'scripts/cards_gui.js',
                     'scripts/updateCards.js',
@@ -24,11 +25,12 @@ module.exports = function (grunt) {
             },
             simulator: {
                 src: [
+                    'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
                     'scripts/shared.js',
                     'scripts/sim_controller.js',
-                    'scripts/simulator_base.js',
                     'scripts/single_threaded.js',
+                    'scripts/simulator_base.js',
                     'scripts/ng-simulator-controller.js',
                     'scripts/localstorage-controller.js',
                     'scripts/gui_script_2.0.js',
@@ -41,6 +43,7 @@ module.exports = function (grunt) {
             },
             practice: {
                 src: [
+                    'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
                     'scripts/shared.js',
                     'scripts/sim_controller.js',
@@ -62,6 +65,7 @@ module.exports = function (grunt) {
                     'scripts/data/skills.js',
                     'scripts/data/cards.js',
                     'scripts/data/fusions.js',
+                    'scripts/data/spoilers.js',
                     'scripts/data/bges.js',
                     'scripts/data/mapBGEs.js',
                     'scripts/data/campaign.js',
