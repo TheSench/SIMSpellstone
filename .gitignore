@@ -162,3 +162,9 @@ saved_decks.js
 /res/skills/extracted
 /packages
 /tests
+
+# Intermediary build files
+/dist/data.js
+/dist/deckbuilder.js
+/dist/practice.js
+/dist/simulator.js
