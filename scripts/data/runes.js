@@ -1001,7 +1001,7 @@ var RUNES = {
 		"id": "5201",
 		"name": "Rune of Nullification",
 		"rarity": "3",
-		"set": "3",
+		"set": "1",
 		"stat_boost": {
 			"skill": {
 				"id": "nullify",
@@ -1019,7 +1019,7 @@ var RUNES = {
 		"id": "5202",
 		"name": "Rune of Greater Nullification",
 		"rarity": "4",
-		"set": "3",
+		"set": "1",
 		"stat_boost": {
 			"skill": {
 				"id": "nullify",
