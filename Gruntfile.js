@@ -185,7 +185,7 @@ module.exports = function (grunt) {
                     src: [
                         'styles/sass/themes/dark.css'
                     ],
-                    dest: 'dist/css/dark.min.css'
+                    dest: 'dist/dark.min.css'
                 }]
             }
         },
