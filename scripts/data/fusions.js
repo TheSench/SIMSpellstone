@@ -1772,8 +1772,3 @@ var FUSIONS = {
 	"18018": "28018",
 	"18019": "28019"
 };
-var REVERSE_FUSIONS = {};
-for(var id in FUSIONS) {
-	var fusion = FUSIONS[id];
-	REVERSE_FUSIONS[fusion] = id;
-}
