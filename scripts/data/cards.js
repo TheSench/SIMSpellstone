@@ -40640,7 +40640,7 @@ var CARDS = {
 		"sub_type": [
 			"6"
 		],
-		"type": "3",
+		"type": "1",
 		"upgrades": {
 			"2": {
 				"health": 12,
@@ -77771,7 +77771,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"6"
+			"6",
+			"11"
 		],
 		"type": "2",
 		"upgrades": {
@@ -77837,6 +77838,84 @@ var CARDS = {
 						"x": 2
 					}
 				]
+			}
+		}
+	},
+	"6215": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 29,
+		"hidden_until": "1547485200000",
+		"id": "6215",
+		"maxLevel": 6,
+		"name": "Sabriel",
+		"picture": "Fire_Wing_Angel_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 2
+			},
+			{
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 30,
+				"skill": []
+			},
+			"3": {
+				"health": 31,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"health": 32,
+				"skill": []
 			}
 		}
 	},
@@ -126940,7 +127019,7 @@ var CARDS = {
 		"sub_type": [
 			"6"
 		],
-		"type": "3",
+		"type": "1",
 		"upgrades": {
 			"2": {
 				"skill": [
@@ -162353,7 +162432,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"6"
+			"6",
+			"11"
 		],
 		"type": "2",
 		"upgrades": {
@@ -162403,6 +162483,110 @@ var CARDS = {
 						"all": "1",
 						"id": "weaken",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"16215": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1547485200000",
+		"id": "16215",
+		"maxLevel": 6,
+		"name": "Sabriel the Avenger",
+		"picture": "Fire_Wing_Angel_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 3
+			},
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 4
 					}
 				]
 			}
@@ -198870,7 +199054,7 @@ var CARDS = {
 		"sub_type": [
 			"6"
 		],
-		"type": "3",
+		"type": "1",
 		"upgrades": {
 			"2": {
 				"health": 16,
@@ -234432,7 +234616,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"6"
+			"6",
+			"11"
 		],
 		"type": "2",
 		"upgrades": {
@@ -234482,6 +234667,97 @@ var CARDS = {
 						"all": "1",
 						"id": "weaken",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"26215": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1547485200000",
+		"id": "26215",
+		"maxLevel": 6,
+		"name": "Sabriel the Punisher",
+		"picture": "Fire_Wing_Angel_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 5
+			},
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"id": "burn",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 39,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 6
 					}
 				]
 			}
