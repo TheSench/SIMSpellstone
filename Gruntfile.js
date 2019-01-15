@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+    const mozjpeg = require('imagemin-mozjpeg');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -192,7 +193,22 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        clean: ['dist']
+        clean: ['dist'],
+        imagemin: {
+            sprites: {
+                options: {
+                    progressive: true,
+                    optimizationLevel: 7,
+                    use: [mozjpeg()]
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'res/sprites',
+                    src: ['**/*.jpg'],
+                    dest: 'dist/sprites'
+                }]
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -200,7 +216,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'cssmin', 'imagemin', 'uglify']);
 
 };

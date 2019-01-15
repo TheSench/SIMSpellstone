@@ -13,8 +13,10 @@
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
     "grunt-contrib-jshint": "^2.0.0",
-    "grunt-contrib-uglify": "^4.0.0"
+    "grunt-contrib-uglify": "^4.0.0",
+    "imagemin-mozjpeg": "^8.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
