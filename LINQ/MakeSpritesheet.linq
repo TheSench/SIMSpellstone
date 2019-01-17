@@ -7,6 +7,7 @@
 void Main()
 {
 	var path = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImages\");
+	var spritePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\sprites\");
 	var files = new DirectoryInfo(path).GetFiles().OrderBy(file => file.CreationTime);
 	var imageFileNames = new List<string>();
 	var portraitFileNames = new List<string>();
@@ -81,7 +82,7 @@ void Main()
 					writer.WriteLine(".sprite-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
 					AddImage(fileName, spriteSheet, x, y);
 				}
-				spriteSheet.Save(Path.Combine(path, sheetName), ImageFormat.Png);
+				spriteSheet.Save(Path.Combine(spritePath, sheetName), ImageFormat.Png);
 				offset += i;
 			}
 			sheetIndex++;
@@ -113,7 +114,7 @@ void Main()
 					writer.WriteLine(".portrait-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
 					AddPortrait(fileName, spriteSheet, x, y);
 				}
-				spriteSheet.Save(Path.Combine(path, sheetName), ImageFormat.Png);
+				spriteSheet.Save(Path.Combine(spritePath, sheetName), ImageFormat.Png);
 				offset += i;
 			}
 			sheetIndex++;
