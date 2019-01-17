@@ -1067,6 +1067,191 @@ var RUNES = {
 		"type": "3",
 		"usable": "0"
 	},
+	"5221": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Ward +2",
+		"icon": "rune_ward_epic",
+		"id": "5221",
+		"name": "Rune of Warding",
+		"rarity": "3",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "absorb",
+				"x": "2"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5222": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Ward +30%, rounded up. Minimum +3.",
+		"icon": "rune_ward_legendary",
+		"id": "5222",
+		"name": "Rune of Greater Warding",
+		"rarity": "4",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "absorb",
+				"min_bonus": "3",
+				"mult": "0.3"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5231": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Shroud +1",
+		"icon": "rune_shroud_epic",
+		"id": "5231",
+		"name": "Rune of Shroud",
+		"rarity": "3",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "stasis",
+				"x": "1"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5241": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Backlash +1",
+		"icon": "rune_backlash_epic",
+		"id": "5241",
+		"name": "Rune of Backlash",
+		"rarity": "3",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "backlash",
+				"x": "1"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5251": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Emberhide +1",
+		"icon": "rune_emberhide_epic",
+		"id": "5251",
+		"name": "Rune of Emberhide",
+		"rarity": "3",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "counterburn",
+				"x": "1"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5261": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Enrage +2",
+		"icon": "rune_enrage_epic",
+		"id": "5261",
+		"name": "Rune of Enrage",
+		"rarity": "3",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "enrage",
+				"x": "2"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5262": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Enrage All +1",
+		"icon": "rune_enrage all_epic",
+		"id": "5262",
+		"name": "Rune of Mass Enrage",
+		"rarity": "3",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"all": "1",
+				"id": "enrage",
+				"x": "1"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5263": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Enrage All +50%, rounded up. Minimum +2.",
+		"icon": "rune_enrage all_legendary",
+		"id": "5263",
+		"name": "Rune of Greater Mass Enrage",
+		"rarity": "4",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"all": "1",
+				"id": "enrage",
+				"min_bonus": "2",
+				"mult": "0.5"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5271": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Daze +2",
+		"icon": "rune_daze_epic",
+		"id": "5271",
+		"name": "Rune of Dazing",
+		"rarity": "3",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "daze",
+				"x": "2"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
+	"5272": {
+		"bundle": "34",
+		"category": "3",
+		"desc": "Daze +50%, rounded up. Minimum +3.",
+		"icon": "rune_daze_legendary",
+		"id": "5272",
+		"name": "Rune of Greater Dazing",
+		"rarity": "4",
+		"set": "1",
+		"stat_boost": {
+			"skill": {
+				"id": "daze",
+				"min_bonus": "3",
+				"mult": "0.5"
+			}
+		},
+		"type": "3",
+		"usable": "0"
+	},
 	"5501": {
 		"bundle": "34",
 		"category": "3",
