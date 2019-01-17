@@ -22735,6 +22735,7 @@ var CARDS = {
 		"id": "424",
 		"maxLevel": 6,
 		"name": "Batara, Blood Sword",
+		"picture": "portrait_angel_demon_samurai",
 		"rarity": "4",
 		"set": "9999",
 		"skill": [
@@ -22865,6 +22866,137 @@ var CARDS = {
 						"c": 2,
 						"id": "weaken",
 						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"425": {
+		"card_type": "1",
+		"health": 80,
+		"id": "425",
+		"maxLevel": 6,
+		"name": "Fallen Gladiator",
+		"picture": "portrait_blind_monk_angel",
+		"rarity": "4",
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "daze",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "armored",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 3
+			}
+		],
+		"sub_type": [],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 83,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 87,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 91,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 95,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 5
 					}
 				]
 			}
@@ -61854,6 +61986,187 @@ var CARDS = {
 			}
 		}
 	},
+	"5603": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"id": "5603",
+		"maxLevel": 10,
+		"name": "Dina the Iridescent",
+		"picture": "Angel_Stained_Glass_Wings_Angel_A",
+		"rarity": "4",
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"id": "pierce",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"health": 19,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					}
+				]
+			},
+			"7": {
+				"attack": 10,
+				"health": 20,
+				"skill": []
+			},
+			"8": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					}
+				]
+			},
+			"9": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					}
+				]
+			},
+			"10": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 12
+					}
+				]
+			}
+		}
+	},
 	"6000": {
 		"attack": 4,
 		"card_type": "2",
@@ -96290,6 +96603,90 @@ var CARDS = {
 						"all": "1",
 						"id": "rally",
 						"x": 2
+					}
+				]
+			}
+		}
+	},
+	"7224": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1548090000000",
+		"id": "7224",
+		"maxLevel": 6,
+		"name": "Floral Sprite",
+		"picture": "Angel_Nature_Angel_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "6"
+					}
+				]
+			},
+			"4": {
+				"attack": 5,
+				"health": 21,
+				"skill": []
+			},
+			"5": {
+				"health": 22,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "6"
 					}
 				]
 			}
@@ -181344,6 +181741,104 @@ var CARDS = {
 			}
 		}
 	},
+	"17224": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1548090000000",
+		"id": "17224",
+		"maxLevel": 6,
+		"name": "Hallowed Sprite",
+		"picture": "Angel_Nature_Angel_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "6"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "6"
+					}
+				]
+			},
+			"4": {
+				"attack": 6,
+				"health": 24,
+				"skill": []
+			},
+			"5": {
+				"health": 25,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "6"
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -253572,6 +254067,104 @@ var CARDS = {
 						"all": "1",
 						"id": "rally",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"27224": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1548090000000",
+		"id": "27224",
+		"maxLevel": 6,
+		"name": "Wispfight Sprite",
+		"picture": "Angel_Nature_Angel_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "6"
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "6"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "6"
 					}
 				]
 			}
