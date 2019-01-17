@@ -1199,7 +1199,7 @@ var RUNES = {
 		"bundle": "34",
 		"category": "3",
 		"desc": "Enrage All +50%, rounded up. Minimum +2.",
-		"icon": "rune_enrage all_legendary",
+		"icon": "rune_enrage_all_legendary",
 		"id": "5263",
 		"name": "Rune of Greater Mass Enrage",
 		"rarity": "4",
