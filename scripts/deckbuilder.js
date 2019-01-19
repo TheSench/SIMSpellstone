@@ -82,7 +82,7 @@ var initDeckBuilder = function () {
 	$(window).resize(onResize);
 
 	window.onwheel = changePage;
-	//window.oncontextmenu = hideContext;
+	window.oncontextmenu = hideContext;
 
 	$("#rows").val(storageAPI.getField("deckBuilder", "rows", 3));
 	$("#rows").bind("change", function() {
@@ -212,11 +212,7 @@ var setupPopups = function () {
 				advancedFilters.dialog("close");
 			}
 		},
-		open: function () {
-			jQuery('.ui-widget-overlay').bind('click', function () {
-				advancedFilters.dialog('close');
-			})
-		},
+		open: closeDialogOnOverlayClick
 	});
 	optionsDialog = $("#unitOptions").dialog({
 		autoOpen: false,
@@ -238,11 +234,7 @@ var setupPopups = function () {
 				disableTracking = false;
 			}
 		},
-		open: function () {
-			jQuery('.ui-widget-overlay').bind('click', function () {
-				optionsDialog.dialog('close');
-			})
-		},
+		open: closeDialogOnOverlayClick
 	}).bind("change", function () {
 		modifyCard(optionsDialog);
 	});
@@ -276,11 +268,7 @@ var setupPopups = function () {
 				saveDeckDialog.dialog("close");
 			}
 		},
-		open: function () {
-			jQuery('.ui-widget-overlay').bind('click', function () {
-				saveDeckDialog.dialog('close');
-			})
-		},
+		open: closeDialogOnOverlayClick
 	});
 
 	loadDeckDialog = $("#loadDeckDialog").dialog({
@@ -306,11 +294,7 @@ var setupPopups = function () {
 				loadDeckDialog.dialog("close");
 			}
 		},
-		open: function () {
-			jQuery('.ui-widget-overlay').bind('click', function () {
-				loadDeckDialog.dialog('close');
-			})
-		},
+		open: closeDialogOnOverlayClick
 	});
 
 	detailsDialog = $("#detailedView").dialog({
@@ -320,16 +304,21 @@ var setupPopups = function () {
 		autoOpen: false,
 		modal: true,
 		resizable: false,
-		open: function () {
-			jQuery('.ui-widget-overlay').bind('click', function () {
-				detailsDialog.dialog('close');
-			})
-		},
+		open: closeDialogOnOverlayClick,
 		close: function () {
 			cardDetailScope.visible = false;
 		}
 	});
 }
+
+var closeDialogOnOverlayClick = function closeDialogOnOverlayClick() {
+	var targetDialog = $(this);
+	jQuery('.ui-widget-overlay')
+		.bind('click contextmenu', function onClickOverlay(event) {
+			targetDialog.dialog('close');
+			event.preventDefault();
+		});
+};
 
 var drawAllCards = function () {
 	drawCardList();

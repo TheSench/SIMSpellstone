@@ -100,12 +100,13 @@ module.exports = function (grunt) {
                 // the banner is inserted at the top of the output
             },
             data: {
+                mangle: false,
                 files: {
                     'dist/data.min.js': ['<%= concat.data.dest %>']
                 }
             },
             deckbuilder: {
-                mangle: false,
+                mangle: true,
                 files: {
                     'dist/deckbuilder.min.js': ['<%= concat.deckbuilder.dest %>']
                 }
