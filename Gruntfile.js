@@ -111,13 +111,13 @@ module.exports = function (grunt) {
                 }
             },
             simulator: {
-                mangle: false,
+                mangle: true,
                 files: {
                     'dist/simulator.min.js': ['<%= concat.simulator.dest %>']
                 }
             },
             practice: {
-                mangle: false,
+                mangle: true,
                 files: {
                     'dist/practice.min.js': ['<%= concat.practice.dest %>']
                 }
@@ -145,6 +145,35 @@ module.exports = function (grunt) {
                     FUSIONS: true,
                     storageAPI: true
                 }
+            }
+        },
+        sass: {
+            styles: {
+                files: [{
+                    expand: true,
+                    cwd: 'styles',
+                    src: ['carddetails.scss'],
+                    dest: 'styles',
+                    ext: '.css'
+                  }]
+            },
+            sass: {
+                files: [{
+                    expand: true,
+                    cwd: 'styles/sass',
+                    src: ['tutorial.scss', 'header.scss'],
+                    dest: 'styles/sass',
+                    ext: '.css'
+                  }]
+            },
+            themes: {
+                files: [{
+                    expand: true,
+                    cwd: 'styles/sass/themes',
+                    src: ['light.scss', 'dark.scss'],
+                    dest: 'styles/sass/themes',
+                    ext: '.css'
+                  }]
             }
         },
         cssmin: {
@@ -215,9 +244,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'cssmin', 'imagemin', 'uglify']);
+    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify']);
 
 };

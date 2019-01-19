@@ -154,6 +154,9 @@
             font-size: 15px;
             font-style: italic;
             text-shadow: none;
+            // Put this on top of set image in case text is long
+            position: relative;
+            z-index: 1;
         }
 
         .mythic {
