@@ -22884,13 +22884,13 @@ var CARDS = {
 			{
 				"id": "imbue",
 				"s": "daze",
-				"x": 7
+				"x": 6
 			},
 			{
 				"all": "1",
 				"id": "imbue",
 				"s": "armored",
-				"x": 4
+				"x": 3
 			},
 			{
 				"id": "rally",
@@ -22902,6 +22902,66 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"health": 83,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 87,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 91,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "daze",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 95,
 				"skill": [
 					{
 						"id": "imbue",
@@ -22920,79 +22980,19 @@ var CARDS = {
 					}
 				]
 			},
-			"3": {
-				"health": 87,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "daze",
-						"x": 9
-					},
-					{
-						"all": "1",
-						"id": "imbue",
-						"s": "armored",
-						"x": 5
-					},
-					{
-						"id": "rally",
-						"x": 4
-					}
-				]
-			},
-			"4": {
-				"health": 91,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "daze",
-						"x": 10
-					},
-					{
-						"all": "1",
-						"id": "imbue",
-						"s": "armored",
-						"x": 5
-					},
-					{
-						"id": "rally",
-						"x": 4
-					}
-				]
-			},
-			"5": {
-				"health": 95,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "daze",
-						"x": 11
-					},
-					{
-						"all": "1",
-						"id": "imbue",
-						"s": "armored",
-						"x": 6
-					},
-					{
-						"id": "rally",
-						"x": 4
-					}
-				]
-			},
 			"6": {
 				"health": 99,
 				"skill": [
 					{
 						"id": "imbue",
 						"s": "daze",
-						"x": 12
+						"x": 8
 					},
 					{
 						"all": "1",
 						"id": "imbue",
 						"s": "armored",
-						"x": 6
+						"x": 4
 					},
 					{
 						"id": "rally",
@@ -61420,6 +61420,96 @@ var CARDS = {
 			}
 		}
 	},
+	"5223": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1548349200000",
+		"id": "5223",
+		"maxLevel": 6,
+		"name": "Syl, Warrior Angel",
+		"picture": "Angel_of_Battle_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "pierce",
+				"x": 3
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "pierce",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -78154,6 +78244,102 @@ var CARDS = {
 			}
 		}
 	},
+	"6214": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 28,
+		"hidden_until": "1548349200000",
+		"id": "6214",
+		"maxLevel": 6,
+		"name": "Trampling Demon",
+		"picture": "Mecha_Angel_Demonic_Horse_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "counter",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"6",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 29,
+				"skill": []
+			},
+			"3": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 32,
+				"skill": []
+			}
+		}
+	},
 	"6215": {
 		"attack": 6,
 		"card_type": "2",
@@ -78228,6 +78414,71 @@ var CARDS = {
 			"6": {
 				"attack": 7,
 				"health": 32,
+				"skill": []
+			}
+		}
+	},
+	"6216": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"hidden_until": "1548694800000",
+		"id": "6216",
+		"maxLevel": 6,
+		"name": "Gilgamesh",
+		"picture": "Corrupt_Arm_Angel_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"health": 21,
+				"skill": []
+			},
+			"6": {
+				"health": 22,
 				"skill": []
 			}
 		}
@@ -145652,6 +145903,84 @@ var CARDS = {
 			}
 		}
 	},
+	"15223": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1548349200000",
+		"id": "15223",
+		"maxLevel": 6,
+		"name": "Syl, Warrior Queen",
+		"picture": "Angel_of_Battle_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "pierce",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": []
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -162885,6 +163214,103 @@ var CARDS = {
 			}
 		}
 	},
+	"16214": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1548349200000",
+		"id": "16214",
+		"maxLevel": 6,
+		"name": "Trampling Blade",
+		"picture": "Mecha_Angel_Demonic_Horse_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "counter",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": []
+			},
+			"4": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"16215": {
 		"attack": 7,
 		"card_type": "2",
@@ -162986,6 +163412,96 @@ var CARDS = {
 						"x": 4
 					}
 				]
+			}
+		}
+	},
+	"16216": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1548694800000",
+		"id": "16216",
+		"maxLevel": 6,
+		"name": "Corrupt Gilgamesh",
+		"picture": "Corrupt_Arm_Angel_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": []
 			}
 		}
 	},
@@ -218029,6 +218545,84 @@ var CARDS = {
 			}
 		}
 	},
+	"25223": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1548349200000",
+		"id": "25223",
+		"maxLevel": 6,
+		"name": "Syl, Battle Incarnate",
+		"picture": "Angel_of_Battle_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "pierce",
+				"x": 7
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"attack": 10,
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -235167,6 +235761,102 @@ var CARDS = {
 			}
 		}
 	},
+	"26214": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1548349200000",
+		"id": "26214",
+		"maxLevel": 6,
+		"name": "Trampling Deathblade",
+		"picture": "Mecha_Angel_Demonic_Horse_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"6",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"health": 39,
+				"skill": []
+			},
+			"5": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"26215": {
 		"attack": 8,
 		"card_type": "2",
@@ -235253,6 +235943,96 @@ var CARDS = {
 					{
 						"id": "burn",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"26216": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1548694800000",
+		"id": "26216",
+		"maxLevel": 6,
+		"name": "Dark Gilgamesh",
+		"picture": "Corrupt_Arm_Angel_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"id": "leech",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 10
 					}
 				]
 			}
