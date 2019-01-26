@@ -3750,6 +3750,21 @@ var CAMPAIGNS = {
 		],
 		"name": "Warrior's Path"
 	},
+	"1197": {
+		"battleground_id": "2058",
+		"id": "1197",
+		"items": {
+			"3086": 0.4
+		},
+		"location_id": "20",
+		"missions": [
+			"6143",
+			"6144",
+			"6145",
+			"6146"
+		],
+		"name": "Schism"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
