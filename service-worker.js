@@ -1,5 +1,7 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
 
+workbox.googleAnalytics.initialize();
+
 if (workbox) {
     workbox.routing.registerRoute(
         /.*\.html/,
