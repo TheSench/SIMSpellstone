@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "cypress run",
-    "serve": "live-server --ignore=res,scripts",
+    "start": "http-server -o --cors",
     "open": "cypress open"
   },
   "repository": {
