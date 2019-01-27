@@ -126,7 +126,7 @@
                 var percent_complete = (games / (num_sims) * 100).toFixed(2);
                 var elapse = time_elapsed();
                 var batch_size = games - last_games[0];
-                var batch_elapse = batch_time_elapsed(last_start_times[0]);
+                var batch_elapse = timer.batchElapsed(last_start_times[0]);
                 var simpersecbatch = 0;
                 if (batch_elapse == 0) {
                     simpersecbatch = 0;

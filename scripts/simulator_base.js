@@ -1597,7 +1597,7 @@ var SIMULATOR = {};
 					"maxLevel": 1,
 					"skill": [],
 				};
-				var filler = get_card_by_id({ id: 0, level: 1 });
+				var filler = getCardByID({ id: 0, level: 1 });
 				filler.name = "filler";
 				filler.health_left = 0;
 				for (var i = field_x_assaults.length; i < toKey; i++) {

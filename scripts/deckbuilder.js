@@ -650,8 +650,8 @@ var setHash = function (hash) {
 
 var sortDeck = function () {
 	deck.deck.sort(function (unitA, unitB) {
-		var cardA = get_card_by_id(unitA);
-		var cardB = get_card_by_id(unitB);
+		var cardA = getCardByID(unitA);
+		var cardB = getCardByID(unitB);
 		var compare;
 		compare = (cardA.rarity - cardB.rarity);
 		if (compare) return compare;
@@ -768,7 +768,7 @@ var removeFromDeck = function (htmlCard) {
 		unit = deck.commander;
 		if (areEqual(unit, elariaCaptain)) return;
 		deck.commander = elariaCaptain;
-		var card = get_card_by_id(elariaCaptain);
+		var card = getCardByID(elariaCaptain);
 		//$htmlCard.replaceWith(CARD_GUI.create_card_html(card));
 		var captain = $(CARD_GUI.create_card_html(card));
 		replaceCard($htmlCard, captain);
@@ -839,7 +839,7 @@ var updateGraphs = function () {
 	var sub_types = {};
 	for (var i = 0; i < deck.deck.length; i++) {
 		var unit = deck.deck[i];
-		var card = get_card_by_id(unit);
+		var card = getCardByID(unit);
 		delays[card.cost]++;
 		types[card.type] = (types[card.type] || 0) + 1;
 		attackStats.push(Number(card.attack));
@@ -985,7 +985,7 @@ var updateGraphs = function () {
 	var sub_types = {};
 	for (var i = 0; i < deck.deck.length; i++) {
 		var unit = deck.deck[i];
-		var card = get_card_by_id(unit);
+		var card = getCardByID(unit);
 		delays[card.cost]++;
 		types[card.type] = (types[card.type] || 0) + 1;
 		attackStats.push(Number(card.attack));
@@ -1045,7 +1045,7 @@ var updateGraphs = function () {
 		]
 	}, options);
 
-	var totalHealth = get_card_by_id(deck.commander).health + healthStats.reduce(function (prev, curr) { return prev + curr }, 0);
+	var totalHealth = getCardByID(deck.commander).health + healthStats.reduce(function (prev, curr) { return prev + curr }, 0);
 	var HPPL = totalHealth / 15;
 	var labels = [];
 	var healthNeeded = [];
@@ -1737,7 +1737,7 @@ var showCardOptions = function (event, htmlCard) {
 		var unit = deck.deck[index];
 	}
 	optionsDialog.index = index;
-	var card = get_card_by_id(unit);
+	var card = getCardByID(unit);
 
 	$("#upgradeDiv").hide();
 	var upgradeLevel = document.getElementById("upgrade");
@@ -1865,7 +1865,7 @@ var modifyCard = function (optionsDialog) {
 		if (fusion >= 0) unitID = fusion + unitID;
 		unit.id = parseInt(unitID);
 	}
-	var card = get_card_by_id(unit);
+	var card = getCardByID(unit);
 	showRunePicker(card);
 	setCard(optionsDialog.index, unit);
 	setHash(hash_encode(deck));
@@ -1882,7 +1882,7 @@ var setCard = function (index, unit) {
 	} else {
 		deck.deck[index] = unit;
 	}
-	var htmlCard = CARD_GUI.create_card_html(get_card_by_id(unit), false, false);
+	var htmlCard = CARD_GUI.create_card_html(getCardByID(unit), false, false);
 	$deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 }
 
@@ -1996,7 +1996,7 @@ var applyFilters = function (keepPage, skipDraw) {
 			 || dualFactionHidden[key]) {
 		} else {
 			unitsFiltered.push(unit);
-			var card = get_card_by_id(unit);
+			var card = getCardByID(unit);
 			if (!addedNames[card.name]) {
 				names.push(card.name);
 				addedNames[card.name] = true;
@@ -2144,8 +2144,8 @@ function doSort(select) {
 		if (sortField === 'id') {
 			return compareByID(unitA, unitB);
 		} else {
-			var cardA = get_card_by_id(unitA);
-			var cardB = get_card_by_id(unitB);
+			var cardA = getCardByID(unitA);
+			var cardB = getCardByID(unitB);
 			if (sortField === 'sub_type') {
 				comparison = compareBySubfactions(cardA, cardB);
 			} else {

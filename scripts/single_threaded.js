@@ -41,7 +41,7 @@
     // Interrupt simulations
     SIM_CONTROLLER.stopsim = function () {
         time_stop = new Date();
-        var elapse = time_elapsed();
+        var elapse = timer.elapsed();
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
@@ -75,9 +75,9 @@
                     var temp = games / (games + sims_left) * 100;
                     temp = temp.toFixed(2);
 
-                    var elapse = time_elapsed();
+                    var elapse = timer.elapsed();
 
-                    var batch_elapse = batch_time_elapsed();
+                    var batch_elapse = timer.batchElapsed();
                     if (batch_elapse == 0) {
                         simpersecbatch = 0;
                     } else {
@@ -107,7 +107,7 @@
             run_sims_batch = 0;
             time_stop = new Date();
 
-            var elapse = time_elapsed();
+            var elapse = timer.elapsed();
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(2);
 
