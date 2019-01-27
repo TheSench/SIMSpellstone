@@ -238,6 +238,39 @@ module.exports = function (grunt) {
                     dest: 'dist/sprites'
                 }]
             }
+        },
+        copy: {
+            html: {
+              files: [
+                {
+                    expand: true,
+                    cwd: 'html',
+                    src: ['**'],
+                    dest: './'
+                },
+              ],
+            },
+          },
+        cacheBust: {
+            deckbuilder: {
+                options: {
+                    assets: [
+                        '**/*.css',
+                        'dist/main.min.js',
+                        'dist/vendor.min.js',
+                        'dist/deckbuilder.min.js',
+                        'dist/practice.min.js',
+                        'dist/simulator.min.js',
+                        'lib/**'
+                    ],
+                    queryString: true
+                },
+                src: [
+                    'DeckBuilder.html',
+                    'Battle.html',
+                    'Titans.html'
+                ]
+            },
         }
     });
 
@@ -248,7 +281,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-cache-bust');
 
-    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify']);
+    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy', 'cacheBust']);
 
 };

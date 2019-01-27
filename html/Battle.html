@@ -3,15 +3,15 @@
 <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
-    <link id="theme" rel="stylesheet" type="text/css" href="dist/light.min.css?45c374d5757a16fe">
-    <link rel="stylesheet" type="text/css" href="dist/main.min.css?533868e363be0168">
-    <link rel="stylesheet" type="text/css" href="dist/spritesheet.min.css?f4005c9ade414807">
+    <link id="theme" rel="stylesheet" type="text/css" href="dist/light.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/main.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/spritesheet.min.css">
     <link rel="icon" type="image/png" href="res/favicon-16x16.png">
     <!--<link rel="stylesheet" href="Content/themes/base/smoothness.css?77adc541adae20cf">-->
 
     <script src="dist/vendor.js"></script>
     <script src="dist/data.min.js"></script>
-    <script src="dist/simulator.min.js?4fab646bde06f243"></script>
+    <script src="dist/practice.min.js"></script>
 </head>
 <body ng-controller="SimulatorCtrl" ng-init="campaignSections()">
     <header id="header"></header>
@@ -49,8 +49,9 @@
                                 <div id="attacker-advanced">
                                     <h6>Advanced Settings</h6>
                                     <div id="deckContainer" class="collapsible">
-                                        <div id="ordered-container"><input type="checkbox" id="ordered"><label for="ordered">Ordered</label></div>
-                                        <div id="exactorder-container"><input type="checkbox" id="exactorder"><label for="exactorder">Don't Shuffle</label></div>
+                                        <div id="auto-container"><input type="checkbox" ng-model="auto" id="auto_mode"><label for="auto_mode">Auto Mode</label></div>
+                                        <div id="ordered-container"><input type="checkbox" ng-disabled="!auto" id="ordered"><label for="ordered" ng-class="{grey:!auto}">Ordered</label></div>
+                                        <div id="exactorder-container"><input type="checkbox" ng-disabled="!auto" id="exactorder"><label for="exactorder" ng-class="{grey:!auto}">Don't Shuffle</label></div>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +111,7 @@
                                     <div>
                                         <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label><br />
                                         <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label><br />
-                                        <input type="checkbox" id="surge"><label for="surge">Defender First</label><br />
+                                        <div id="surge-container"><input type="checkbox" id="surge"><label for="surge">Defender First</label></div>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +125,7 @@
                                 <div id="siege-container">
                                     <input type="checkbox" id="siege" ng-model="tower"><label for="siege">Use Tower</label>
                                 </div>
-                                <input type="number" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
+                                <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
                                 <select id="tower_type" ng-disabled="!tower">
                                     <option ng-repeat="type in towerTypes()" value="{{type.id}}">{{type.name}}</option>
                                 </select>
@@ -185,16 +186,22 @@
                                     <input type="radio" name="debugMode" checked ng-disabled="!debugMode"><label>First Fight</label>
                                 </div>
                                 <div class="table-cell">
-                                    <input type="radio" class="table-cell" id="mass_debug" name="debugMode" ng-disabled="!debugMode"><label>Mass Debug Mode (slow)</label>
+                                    <input type="radio" class="table-cell" id="mass_debug" name="mass_debug" ng-disabled="!debugMode"><label>Mass Debug Mode (slow)</label>
                                 </div>
                             </div>
-
                             <div class="table-row">
                                 <div class="table-cell">
-                                    <input type="radio" class="table-cell" id="win_debug" name="debugMode" ng-disabled="!debugMode"><label>First Win</label>
+                                    <input type="radio" class="table-cell" id="win_debug" name="win_debug" ng-disabled="!debugMode"><label>First Win</label>
                                 </div>
                                 <div class="table-cell">
-                                    <input type="radio" class="table-cell" id="loss_debug" name="debugMode" ng-disabled="!debugMode"><label>First Loss</label>
+                                    <input type="radio" class="table-cell" id="loss_debug" name="loss_debug" ng-disabled="!debugMode"><label>First Loss</label>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <input type="checkbox" class="table-cell" id="animations" name="animations"><label>Show Animations (Incomplete)</label>
+                                </div>
+                                <div class="table-cell">
                                 </div>
                             </div>
                         </div>
@@ -211,6 +218,7 @@
                             <div id="attack_deck" class="float-left"></div>
                         </div>
                     </div>
+                    <div class="deckSpacer"></div>
                     <div class="deckView">
                         <h3>Defender</h3>
                         <div>
@@ -220,18 +228,10 @@
                 </div>
             </div>
             <hr />
-            <div id="sims-container" class="inline">
-                <label for="sims">Number of Simulations: </label><input type="text" id="sims">
-            </div><br />
-            <input id="btn_simulate" type="button" value="Simulate" style="text-align: center; font-weight: bold;" />
-            <input type="button" id="generate_link" value="Generate Link" style="text-align: center; font-weight: normal;" />
-            <input type="button" id="display_history" value="Show History" style="text-align: center; font-weight: normal;" />
+            <input id="btn_simulate" type="button" value="Battle!" style="text-align: center; font-weight: bold;">
+            <input type="button" id="generate_link" value="Generate Link" style="text-align: center; font-weight: normal;">
         </form>
     </div>
-    <br />
-    <div id="cardSpace" class="flaot-left"></div>
-    <br />
-    <span id="stop" style="display: none;"><input id="btnStop" type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br />TIP: Switching browser tabs may cause your simulation to pause!</span>
     <br />
     <div id="simulationStatus" style="display:none">
         <strong id="simStatusMsg"></strong> <span id="progress"></span>
@@ -240,34 +240,9 @@
             <span id="simsPerSec"></span> simulations per second<br>
         </div>
     </div>
-    <div id="winrateTable" style="display:none;">
-        <table cellspacing="0" cellpadding="0" border="0">
-            <tbody>
-                <tr>
-                    <td>
-                        <table cellspacing="0" cellpadding="5" style="border: 1px solid #000000;">
-                            <tbody>
-                                <tr><td>Wins</td><td id="wins"></td><td id="winrate"></td></tr>
-                                <tr><td>Losses</td><td id="losses"></td><td id="lossrate"></td></tr>
-                                <tr><td>Draws</td><td id="draws"></td><td id="drawrate"></td></tr>
-                                <tr><td>+/-</td><td id="marginGames">1105</td><td id="marginPercent">0.00%</td></tr>
-                                <tr style="background-color: #000; color: #fff;"><td>Battles</td><td class="battleCount">843817</td><td id="percentComplete"></td></tr>
-                            </tbody>
-                        </table>
-                    </td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <table cellspacing="0" cellpadding="5" style="border: 1px solid #000000;">
-                            <tbody>
-                                <tr><td>Avg. Battle Length</td><td id="avgLength"></td></tr>
-                                <tr><td>Avg. Points</td><td id="avgPoints"></td></tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <div id="cardSpace" class="flaot-left"></div>
+    <span id="stop" style="display: none;"><input type="button" value="Restart" onclick="SIM_CONTROLLER.startsim()"><input id="btnStop" type="button" value="Stop"><br />TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <br />
     <span id="content"></span>
     <!-- Dialogs -->
     <div id="dialogHolder" style="display:none;">
