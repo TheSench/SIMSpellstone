@@ -143,8 +143,8 @@ var timer = {
     elapsedSeconds: function elapsedSeconds(start, end) {
         return ((end - start) / 1000).toFixed(3);
     },
-    batchElapsed: function batchElapsed() {
-        return timer.timeSince(time_started || time_start_batch);
+    batchElapsed: function batchElapsed(start) {
+        return timer.timeSince(start || time_start_batch);
     }
 };
 
