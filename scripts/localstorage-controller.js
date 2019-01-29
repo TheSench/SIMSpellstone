@@ -31,15 +31,15 @@ if (function (type) {
         storage.setItem(x, x);
         storage.removeItem(x);
         return true;
-} catch (e) {
+    } catch (e) {
         return false;
-}
+    }
 }('localStorage')) {
     (function () {
         var SaveFields = {
             decks: "SavedDecks",
             tutorial: "Tutorial"
-        }
+        };
 
         storageAPI.initialize = function () {
             var currentPage = getCurrentPage();
@@ -65,7 +65,7 @@ if (function (type) {
         storageAPI.getField = function (storageName, fieldName, defaultValue) {
 
             var storage = getStorage(storageName);
-    
+
             var value = storage[fieldName];
             if (typeof value === 'undefined') {
                 value = defaultValue;
@@ -73,13 +73,13 @@ if (function (type) {
             }
 
             return value;
-        }
+        };
 
         storageAPI.setField = function (storageName, fieldName, newValue) {
             var storage = getStorage(storageName);
             storage[fieldName] = newValue;
             localStorage.setItem(storageName, JSON.stringify(storage));
-        }
+        };
 
         function getStorage(storageName) {
             var storage = localStorage.getItem(storageName);
@@ -87,7 +87,7 @@ if (function (type) {
                 try {
                     storage = JSON.parse(storage);
                 } catch (err) {
-                    storage = {}
+                    storage = {};
                 }
             } else {
                 storage = {};
@@ -104,26 +104,26 @@ if (function (type) {
         }
 
         window.addEventListener('storage', function (e) {
-        	if (e.key !== '__storage_test__') {
-        		var oldValue = localStorage.getItem(e.key);
-        		if (oldValue !== e.newValue) {
-        			angular.element('#loadDeckDialog').scope().$apply(
-						localStorage.setItem(e.key, e.newValue)
-					);
-        		}
-        	}
+            if (e.key !== '__storage_test__') {
+                var oldValue = localStorage.getItem(e.key);
+                if (oldValue !== e.newValue) {
+                    angular.element('#loadDeckDialog').scope().$apply(
+                        localStorage.setItem(e.key, e.newValue)
+                    );
+                }
+            }
         });
     }());
 } else {
     (function () {
         storageAPI.initialize = function () {
-            storageAPI.getSavedDecks = function () { return {} };
+            storageAPI.getSavedDecks = function () { return {}; };
             storageAPI.loadDeck = notSupported;
             storageAPI.deleteDeck = notSupported;
             storageAPI.clearDecks = notSupported;
             storageAPI.getField = function (storageName, fieldName, defaultValue) {
                 return defaultValue;
-            }
+            };
             storageAPI.setField = function () { };
 
             storageAPI.savedDecks = {};
@@ -139,13 +139,13 @@ if (function (type) {
 (function () {
     var SaveFields = {
         decks: "SavedDecks"
-    }
+    };
 
     storageAPI.data = {};
 
     storageAPI.getSavedDecks = function () {
         return storageAPI.getField(SaveFields.decks, "savedDecks", {});
-    }
+    };
 
     storageAPI.saveDeck = function (name, hash) {
         var savedDecks = storageAPI.getSavedDecks();
@@ -180,7 +180,7 @@ if (function (type) {
 
     storageAPI.setShowTutorial = function (value) {
         shouldShowTutorial = value;
-    }
+    };
 
     storageAPI.initialize();
 

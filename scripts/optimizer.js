@@ -9,7 +9,7 @@ SIM_CONTROLLER.startsim = function () {
 
     origStartSim();
     SIM_CONTROLLER.end_sims_callback = function () { hideUI(); setTimeout(SIM_CONTROLLER.startsim, Math.random() * 3000 + 1000, setSimStatus("Substituting next card...")); };
-}
+};
 
 function spliceAndReturn(array, start, deleteCount, add) {
     array.splice(start, deleteCount, add);

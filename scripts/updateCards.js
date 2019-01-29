@@ -26,7 +26,7 @@ var DATA_UPDATER = (function () {
                 saveCardCache();
                 doneLoading();
                 callback && callback();
-            }
+            };
             $.when.apply($, promises).then(finishedLoading, finishedLoading);
         } else {
             if (callback) callback();
@@ -51,7 +51,7 @@ var DATA_UPDATER = (function () {
                 }
             },
             async: true,
-            cache: false,
+            cache: false
         });
     }
 
@@ -96,7 +96,7 @@ var DATA_UPDATER = (function () {
                             }
                             newCards[id] = cardData;
                         }
-                        CARDS[id] = cardData
+                        CARDS[id] = cardData;
                     }
                     var fusions = doc.getElementsByTagName("fusion_recipe");
                     for (var i = 0; i < fusions.length; i++) {
@@ -113,7 +113,7 @@ var DATA_UPDATER = (function () {
                     }
                 },
                 async: true,
-                cache: false,
+                cache: false
             });
             promises.push(promise);
         }
@@ -210,7 +210,7 @@ var DATA_UPDATER = (function () {
         var nodes = node.getElementsByTagName("upgrade");
         var upgrades = {};
         for (var i = 0; i < nodes.length; i++) {
-            upgrades[i+2] = getUpgradeFromXML(nodes[i]);
+            upgrades[i + 2] = getUpgradeFromXML(nodes[i]);
         }
         return upgrades;
     }
@@ -243,7 +243,7 @@ var DATA_UPDATER = (function () {
             object[field] = value;
         }
     }
-    
+
     function addNumericField(object, node, field, isAtt) {
         var value = getNumeric(node, field, isAtt);
         if (value >= 0) {
@@ -322,7 +322,7 @@ var DATA_UPDATER = (function () {
                 }
             },
             async: false,
-            cache: false,
+            cache: false
         });
     }
 
@@ -361,7 +361,7 @@ var DATA_UPDATER = (function () {
                 }
             },
             async: false,
-            cache: false,
+            cache: false
         });
     }
 

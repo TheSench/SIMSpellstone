@@ -6,7 +6,7 @@
     var max_workers = 1;
 
     // Create a new worker object and add a listener to handle messages from it.
-    function createWorker (id) {
+    function createWorker(id) {
         var worker = new Worker('scripts/worker.js');
         worker.postMessage = worker.webkitPostMessage || worker.postMessage;
         worker.id = id;
@@ -16,7 +16,7 @@
         worker.postMessage(ab, [ab]);
         worker.onerror = function (e) {
             window.onerror(e.message, "Worker-" + id + ":" + e.filename, e.lineno);
-        }
+        };
 
         var use_transferables = !ab.byteLength; // If Transferable Objects are supported, ab will be cleared when postMessage is called (it gets "transferred" to the receiver)
         if (use_transferables) {
@@ -37,7 +37,7 @@
     // Handle messages from the worker thread using Transferable Objects
     // (Transferable Objects are faster, but they are not supported
     // by all browsers.)
-    function  ProcessTransferableObjectsMessage (e) {
+    function ProcessTransferableObjectsMessage(e) {
         if (sims_left) {
             var msg = e.data;
             var view = new DataView(msg, 0, 4);
@@ -69,7 +69,7 @@
                     } else if (!sims_left) {
                         display_final_results();
                     } else if (debug && (win_debug || loss_debug)) {
-                        if ( (win_debug && num_wins) || (loss_debug && (num_losses || num_draws)) ){
+                        if ((win_debug && num_wins) || (loss_debug && (num_losses || num_draws))) {
                             SIM_CONTROLLER.stopsim(1);
                             display_final_results();
                         }
@@ -77,14 +77,14 @@
                     break;
 
                 default:
-                    // No other mesage types at this time
+                // No other mesage types at this time
             }
         }
     }
 
     // Handle messages from the worker thread using Structured Cloning
     // (used when Transferable Objects are NOT supported by the browser)
-    function ProcessStructuredCloningMessage (e) {
+    function ProcessStructuredCloningMessage(e) {
         if (sims_left) {
             var msg = e.data;
             switch (msg.cmd) {
@@ -112,11 +112,11 @@
                     break;
 
                 default:
-                    // No other mesage types at this time
+                // No other mesage types at this time
             }
         }
     }
-        
+
     // Update the GUI with the current status (sims/sec, % complete, etc...)
     function display_progress() {
         // If stopsims was called, don't display any more output
@@ -289,7 +289,7 @@
         getmission = document.getElementById('mission').value;
         missionlevel = document.getElementById('mission_level').value;
         getraid = document.getElementById('raid').value;
-        raidlevel = document.getElementById('raid_level').value;;
+        raidlevel = document.getElementById('raid_level').value;
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
         tower_type = document.getElementById('tower_type').value;
@@ -366,7 +366,7 @@
                 workers[worker_index].postMessage({ 'cmd': 'initializeSims', 'data': params });
             }
         }
-    }
+    };
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.updateField = function (field) {
@@ -396,7 +396,7 @@
         run_sims(field);
 
         return false;
-    }
+    };
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
@@ -439,7 +439,7 @@
         }
 
         // Load enemy deck
-        pvpAI = !_DEFINED("randomAI");;
+        pvpAI = !_DEFINED("randomAI");
         if (getdeck2) {
             cache_cpu_deck = hash_decode(getdeck2);
         } else if (getcardlist2) {
@@ -481,7 +481,7 @@
         params['win_debug'] = win_debug;
         params['mass_debug'] = mass_debug;
         params['user_controlled'] = false;
-        
+
         for (var i = 0; i < max_workers; i++) {
             setupWorkerField(workers[i]);
             workers[i].postMessage({ 'cmd': 'initializeSims', 'data': params });
@@ -491,7 +491,7 @@
         run_sims();
 
         return false;
-    }
+    };
 
     // Interrupt simulations
     SIM_CONTROLLER.nextDeck = function (nextHash) {
@@ -510,7 +510,7 @@
         sims_left = num_sims;
 
         cache_player_deck = hash_decode(nextHash);
-        
+
         var params = {};
         params['cache_player_deck'] = cache_player_deck;
         params['cache_cpu_deck'] = cache_cpu_deck;
@@ -542,7 +542,7 @@
         hideUI();
 
         run_sims();
-    }
+    };
 
     // Interrupt simulations
     SIM_CONTROLLER.stopsim = function (supress_output) {
@@ -565,10 +565,10 @@
             showWinrate();
         }
         showUI();
-    }
+    };
 
-    function setupWorkerField() { };
-    
+    function setupWorkerField() { }
+
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
     function run_sims(field) {
@@ -602,7 +602,7 @@
             }
         }
     }
-    
+
     Object.defineProperties(SIM_CONTROLLER, {
         setupWorkerField: {
             get: function () {
@@ -611,7 +611,7 @@
             set: function (value) {
                 setupWorkerField = value;
             }
-        },
+        }
     });
 
     var workers = [];

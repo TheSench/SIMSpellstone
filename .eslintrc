@@ -1,0 +1,38 @@
+{
+    "extends": "defaults/configurations/eslint",
+    "env": {
+      "browser": true,
+      "jquery": true
+    },
+    "globals": {
+        "$": true,
+        "jQuery": true,
+        "console": true,
+        "angular": true,
+        "document": true,
+        "window": true,
+        "BATTLEGROUNDS": true,
+        "SIMULATOR": true,
+        "CARDS": true,
+        "FUSIONS": true,
+        "storageAPI": true,
+        "ArrayBuffer": true,
+        "Int32Array": true,
+        "Uint16Array": true
+    },
+    "rules": {
+  
+      "eqeqeq": 1,
+      "comma-dangle": 2,
+      "no-console": 0,
+      "no-debugger": 1,
+      "no-extra-semi": 2,
+      "no-extra-parens": 0,
+      "no-irregular-whitespace": 1,
+      "no-redeclare": 0,
+      "no-undef": 2,
+      "no-unused-vars": 1,
+      "semi": 1,
+      "semi-spacing": 1
+    }
+}

@@ -77,7 +77,7 @@ var SIM_CONTROLLER = (function () {
 
         showUI();
 
-        if(SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
+        if (SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
 
         if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
     }

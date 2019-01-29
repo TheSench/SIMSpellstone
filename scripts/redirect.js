@@ -1,1 +1,0 @@
-location.assign(location.href.replace("_2.0.html", ".html"));

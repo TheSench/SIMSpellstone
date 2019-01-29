@@ -38,7 +38,7 @@ $(document).ready(function () {
     function sendConnection(c) {
         connect(c);
         origSurge = $("#surge").is(":checked");
-        
+
 
         var message = {
             type: 'requestFight',
@@ -189,7 +189,7 @@ $(document).ready(function () {
         cardInfo.owner = (cardInfo.owner === "player" ? "cpu" : "player");
     }
 
-    function log(msg) { 
+    function log(msg) {
         $('.log').append(msg + '<br/>');
         console.log(msg);
     }

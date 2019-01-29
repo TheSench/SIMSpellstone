@@ -60,7 +60,7 @@ var CARD_GUI = {};
 
 		return $cardSpace;
 	}
-	
+
 	function draw_inventory(list) {
 		var cards = make_card_list(list);
 		var $cardSpace = $("#deck");
@@ -68,9 +68,8 @@ var CARD_GUI = {};
 		$cardSpace.append(cards);
 		return $cardSpace;
 	}
-	
-	function draw_inventory(deck)
-	{
+
+	function draw_inventory(deck) {
 		var cards = make_card_list(deck.deck);
 		var $cardSpace = $("#deck");
 		$cardSpace.children().remove();
@@ -79,7 +78,7 @@ var CARD_GUI = {};
 		$cardSpace.append(cards);
 		return $cardSpace;
 	}
-	
+
 	function make_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
 		skip = skip || 0;
 		var htmlCard;
@@ -87,7 +86,7 @@ var CARD_GUI = {};
 		var multiplier;
 		var uniqueCard = 0;
 		var cards = [];
-		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end) ; i++) {
+		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
 			var listEntry = list[i];
 			var unit = getCardByID(listEntry);
 			if (areEqual(unit, lastUnit)) {
@@ -152,7 +151,7 @@ var CARD_GUI = {};
 	function draw_field(field, activeUnit) {
 		var cards = createDiv("float-left");
 		var commander = field.commander;
-		var htmlCard = create_card_html(commander, false, true)
+		var htmlCard = create_card_html(commander, false, true);
 		if (activeUnit === -1) {
 			highlightCard(htmlCard);
 		}
@@ -605,7 +604,7 @@ var CARD_GUI = {};
 		5000: "Champion",
 		5100: "Champion",
 		9999: "StoryElements"
-	}
+	};
 
 	CARD_GUI.clearCardSpace = clearCardSpace;
 	CARD_GUI.clearDeckSpace = clearDeckSpace;

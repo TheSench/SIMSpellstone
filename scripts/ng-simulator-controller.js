@@ -8,12 +8,12 @@
     };
 
     var filterChildren = function (unfiltered, parentID, parents, childrenField, childIDField) {
-        var parent = parents.filter(function(parent) { return parent.id == parentID; })[0];
+        var parent = parents.filter(function (parent) { return parent.id == parentID; })[0];
         if (parent) {
             var children = parent[childrenField];
             var filtered = unfiltered.filter(function (child) {
                 var childID = child[childIDField];
-                var isChildOfParent = children.indexOf(childID) >= 0
+                var isChildOfParent = children.indexOf(childID) >= 0;
                 return isChildOfParent;
             });
             return filtered;
@@ -27,7 +27,7 @@
             return function (campaigns, missions) {
                 if (!campaigns || !missions) return campaigns;
 
-                var newCampaigns = [];;
+                var newCampaigns = [];
                 for (var i = 0, len = campaigns.length; i < len; i++) {
                     var campaign = campaigns[i];
                     var missionsInCampaign = campaign.missions;
@@ -112,16 +112,16 @@
                 .sort(function (raidA, raidB) {
                     return Number(raidB.id) - Number(raidA.id);
                 })
-            .forEach(function (raid) {
-                if (!filtered[raid.name]) {
-                    filtered[raid.name] = raid;
-                }
-            });
+                .forEach(function (raid) {
+                    if (!filtered[raid.name]) {
+                        filtered[raid.name] = raid;
+                    }
+                });
             return toArray(filtered)
                 .sort(function (raidA, raidB) {
                     return Number(raidA.id) - Number(raidB.id);
                 });
-        }
+        };
 
         $scope.getLocationClass = function (location) {
             if (!location) {
@@ -151,7 +151,7 @@
                     return campaign.id == selected;
                 })[0];
             }
-            if(!campaign) {
+            if (!campaign) {
                 return "grey";
             } else if (campaign.side_mission) {
                 return (campaign.location_id == 0 ? "heroUpgrade" : "mythic");
@@ -179,16 +179,16 @@
         }
 
         $scope.towerTypes = ["Castle Tower", "Cannon Tower", "Tree of Life"];
-        
+
         $scope.selectableBattlegrounds = function () {
             var selectable = [];
-            for(var id in $scope.battlegrounds) {
+            for (var id in $scope.battlegrounds) {
                 var BGE = $scope.battlegrounds[id];
-                if(!(BGE.hidden || BGE.isTower)) selectable.push(BGE);
+                if (!(BGE.hidden || BGE.isTower)) selectable.push(BGE);
             }
             selectable.sort(function (a, b) { return a.id - b.id; });
             return selectable;
-        }
+        };
 
         $scope.personalBattlegrounds = function () {
             var selectable = [];
@@ -199,7 +199,7 @@
             }
             selectable.sort(function (a, b) { return a.id - b.id; });
             return selectable;
-        }
+        };
 
         $scope.towerTypes = function () {
             var towerTypes = [];
@@ -209,10 +209,10 @@
             }
             towerTypes.sort(function (a, b) { return a.id - b.id; });
             return towerTypes;
-        }
+        };
 
         $scope.$watch("debugMode", function (newValue, oldValue) {
         });
     }
-    
+
 }(angular));

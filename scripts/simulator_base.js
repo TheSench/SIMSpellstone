@@ -76,7 +76,7 @@ var SIMULATOR = {};
 					if (!current_assault.isAlive()) {
 						if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
 					}
-						// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
+					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
 						current_assault['key'] = newkey;
 						units[newkey] = current_assault;
@@ -217,7 +217,7 @@ var SIMULATOR = {};
 		return true;
 	}
 	function makeLivenessCheck(maybeUnit) {
-		if(maybeUnit.isAlive) {
+		if (maybeUnit.isAlive) {
 			return maybeUnit.isAlive.bind(maybeUnit);
 		} else {
 			return alwaysTrue;
@@ -249,7 +249,7 @@ var SIMULATOR = {};
 	}
 
 	function backlash(attacker, defender) {
-		if(attacker.isAssault() && defender.isAlive()) {
+		if (attacker.isAssault() && defender.isAlive()) {
 			var baseDamage = defender.backlash;
 			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
 			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement);
@@ -257,7 +257,7 @@ var SIMULATOR = {};
 	}
 
 	function checkShroud(unit) {
-		if(unit.isActive() && unit.isUnjammed()) {
+		if (unit.isActive() && unit.isUnjammed()) {
 			return 0;
 		} else {
 			return (unit.stasis || 0);
@@ -366,7 +366,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-				&& (!onlyOnDelay || !target.isActive())) {
+					&& (!onlyOnDelay || !target.isActive())) {
 					targets.push(key);
 				}
 			}
@@ -439,7 +439,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-				&& (all || target.isDamaged())) {
+					&& (all || target.isDamaged())) {
 					targets.push(key);
 				}
 			}
@@ -566,7 +566,7 @@ var SIMULATOR = {};
 					echo += '<br>';
 				});
 
-				if(target.backlash) {
+				if (target.backlash) {
 					backlash(src_card, target);
 				}
 			}
@@ -593,7 +593,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
 				var target = field_x_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-				&& (target.scorched || target.poisoned)) {
+					&& (target.scorched || target.poisoned)) {
 					targets.push(key);
 				}
 			}
@@ -634,8 +634,8 @@ var SIMULATOR = {};
 				}
 
 				if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' by ' + intensify + '<br>';
-				
-				if(target.backlash) {
+
+				if (target.backlash) {
 					backlash(src_card, target);
 				}
 			}
@@ -694,7 +694,7 @@ var SIMULATOR = {};
 				target.scorch(ignite);
 				if (debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
 
-				if(target.backlash) {
+				if (target.backlash) {
 					backlash(src_card, target);
 				}
 			}
@@ -730,7 +730,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
 				var target = field_x_assaults[key];
 				if (target.isAlive()
-				&& (all || (target.isActiveNextTurn() && target.isUnjammed()))) {
+					&& (all || (target.isActiveNextTurn() && target.isUnjammed()))) {
 					targets.push(key);
 				}
 			}
@@ -762,7 +762,7 @@ var SIMULATOR = {};
 				target.jammed = true;
 				if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
 
-				if(target.backlash) {
+				if (target.backlash) {
 					backlash(src_card, target);
 				}
 			}
@@ -833,7 +833,7 @@ var SIMULATOR = {};
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 				});
 
-				if(target.backlash) {
+				if (target.backlash) {
 					backlash(src_card, target);
 				}
 			}
@@ -916,7 +916,7 @@ var SIMULATOR = {};
 				target['enfeebled'] += enfeeble;
 				if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
 
-				if(target.backlash) {
+				if (target.backlash) {
 					backlash(src_card, target);
 				}
 			}
@@ -957,7 +957,7 @@ var SIMULATOR = {};
 				for (var key = 0, len = field_x_assaults.length; key < len; key++) {
 					var target = field_x_assaults[key];
 					if (target.isAlive() && target.isInFaction(faction)
-					&& (all || (target.isActiveNextTurn() && target.isUnjammed() && (include0Strength || target.hasAttack())))) {
+						&& (all || (target.isActiveNextTurn() && target.isUnjammed() && (include0Strength || target.hasAttack())))) {
 						targets.push(key);
 					}
 				}
@@ -998,7 +998,7 @@ var SIMULATOR = {};
 					echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
 				}
 
-				if(target.backlash) {
+				if (target.backlash) {
 					backlash(src_card, target);
 				}
 			}
@@ -1029,7 +1029,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-				&& (all || (target.isUnjammed() && target.isActive()))) {
+					&& (all || (target.isUnjammed() && target.isActive()))) {
 					targets.push(key);
 				}
 			}
@@ -1083,9 +1083,9 @@ var SIMULATOR = {};
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
-				
+
 				if (target.isAlive() && target.isInFaction(faction)
-				&& (all || (target.isActive() && target.isUnjammed()))) {
+					&& (all || (target.isActive() && target.isUnjammed()))) {
 					targets.push(key);
 				}
 			}
@@ -1268,7 +1268,7 @@ var SIMULATOR = {};
 					var strike_damage = strike;
 
 					// Check Protect/Enfeeble
-					var damageInfo = modifySkillDamage(target, strike_damage, {enfeeble: true});
+					var damageInfo = modifySkillDamage(target, strike_damage, { enfeeble: true });
 					strike_damage = damageInfo.damage;
 					var shatter = damageInfo.shatter;
 
@@ -1310,8 +1310,8 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-				&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))
-				&& target.hasSkill(s)) {
+					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))
+					&& target.hasSkill(s)) {
 					targets.push(key);
 				}
 			}
@@ -1439,7 +1439,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-				&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))) {
+					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))) {
 					targets.push(key);
 				}
 			}
@@ -1557,7 +1557,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
 				var target = field_x_assaults[key];
 				if (target.isAlive()
-				&& target.isInFaction(faction)) {
+					&& target.isInFaction(faction)) {
 					targets.push(key);
 				}
 			}
@@ -1789,14 +1789,14 @@ var SIMULATOR = {};
 		if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
 		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
-								 : getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-								 : chooseCardRandomly);                     // Player AI falls back on picking a random card
+			: getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+				: chooseCardRandomly);                     // Player AI falls back on picking a random card
 
 		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
 								: */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-								: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
-								: getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
-								: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
+				: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
+					: getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
+						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
 
 	// Simulate one game
@@ -2195,7 +2195,7 @@ var SIMULATOR = {};
 					played = true;
 					break;
 				}
-					// Compare advanced priority field
+				// Compare advanced priority field
 				else if (priority_id > 0) {
 					if (priority_id == b_priority) {
 						samePriority = handIdx;
@@ -2410,7 +2410,7 @@ var SIMULATOR = {};
 		}
 
 		var echo = '';
-		if(debug) {
+		if (debug) {
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 			if (shrouded) echo += ' Stasis: -' + shrouded;
 			if (protect) echo += ' Barrier: -' + protect;
@@ -2423,7 +2423,7 @@ var SIMULATOR = {};
 
 		return {
 			damage: damage,
-			shatter : shatter,
+			shatter: shatter,
 			echo: echo
 		};
 	}
@@ -2529,7 +2529,7 @@ var SIMULATOR = {};
 				}
 				do_damage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += debug_name(target) + ' takes ' + amount;
-					if(warded) echo += ' (Venom: +' + current_assault.envenomed + ' Ward: -' + warded + ')';
+					if (warded) echo += ' (Venom: +' + current_assault.envenomed + ' Ward: -' + warded + ')';
 					echo += ' venom damage';
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 				});
@@ -2865,10 +2865,10 @@ var SIMULATOR = {};
 				var poison = target.counterpoison || 0;
 				var enhanced = getEnhancement(target, 'counterpoison', poison);
 				poison += enhanced;
-        
+
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-          			if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+					if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
 				}
 			}
 
@@ -2943,7 +2943,7 @@ var SIMULATOR = {};
 		var counterDamage = counterBase + counterEnhancement;
 
 		// Protect
-		var damageInfo = modifySkillDamage(attacker, counterDamage, {enfeeble: true});
+		var damageInfo = modifySkillDamage(attacker, counterDamage, { enfeeble: true });
 		counterDamage = damageInfo.damage;
 		var shatter = damageInfo.shatter;
 

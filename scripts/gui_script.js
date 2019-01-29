@@ -44,7 +44,7 @@ window.onerror = function (message, url, linenumber) {
 
 	// Stop the recursion if any
 	if (current_timeout) clearTimeout(current_timeout);
-}
+};
 
 // When Page Loads...
 function processQueryString() {
@@ -159,7 +159,7 @@ function processQueryString() {
 	if (_DEFINED("loss_debug")) $('#loss_debug').click();
 	if (_DEFINED("win_debug")) $('#win_debug').click();
 	if (_DEFINED("play_debug")) $('#play_debug').click();
-	
+
 	document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
 	if (_DEFINED('autostart') && !_DEFINED("latestCards")) {
@@ -198,7 +198,7 @@ var style;
 var u_black = false;
 function toggle_u() {
 	var append = false;
-	if (typeof style == 'undefined') {
+	if (typeof style === 'undefined') {
 		append = true;
 		style = document.createElement('style');
 	} else {
@@ -335,17 +335,17 @@ function showWinrate() {
 		// Generate links
 		var links = '';
 		links += '<br>' +
-		'<br>' +
-		'<i>Non-autostart link</i>' +
-		'<br>' +
-		'<a href="' + generate_link() + '">' + generate_link() + '</a>' +
-		'<br>' +
-		'<br>' +
-		'<i>Autostart link</i>' +
-		'<br>' +
-		'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
-		'<br>' +
-		'<br>';
+			'<br>' +
+			'<i>Non-autostart link</i>' +
+			'<br>' +
+			'<a href="' + generate_link() + '">' + generate_link() + '</a>' +
+			'<br>' +
+			'<br>' +
+			'<i>Autostart link</i>' +
+			'<br>' +
+			'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
+			'<br>' +
+			'<br>';
 		if (debug) return links;
 	}
 	// Win/Loss ratios
@@ -392,7 +392,7 @@ function showWinrate() {
 		var deck = [];
 		var deck1Hash = document.getElementById('deck1').value;
 		var deck1List = $('#cardlist').val();
-		if(deck1List) deck1List = deck1List.value;
+		if (deck1List) deck1List = deck1List.value;
 
 		// Load player deck
 		if (deck1Hash) {
@@ -449,7 +449,7 @@ function marginOfError(wins, games) {
 	var N = games;
 	var stdErr = Math.sqrt((p * (1 - p)) / N);
 	var Z95 = 1.96;
-	return ((stdErr * Z95)+0.5/N)*100;
+	return ((stdErr * Z95) + 0.5 / N) * 100;
 }
 
 // Generate a link from current settings and input
@@ -461,7 +461,7 @@ function generate_link(autostart) {
 	var url_base = document.URL;
 	var index_of_query = url_base.indexOf('?');
 	if (index_of_query > 0) {
-		url_base = url_base.substring(0, index_of_query)
+		url_base = url_base.substring(0, index_of_query);
 	}
 
 	var parameters = [];
@@ -520,7 +520,7 @@ function generate_link(autostart) {
 	if (bges) {
 		parameters.push('enemybges=' + bges);
 	}
-	
+
 
 	addValueParam(parameters, "sims");
 
@@ -529,7 +529,7 @@ function generate_link(autostart) {
 	addBoolParam(parameters, "loss_debug");
 	addBoolParam(parameters, "win_debug");
 	addBoolParam(parameters, "play_debug");
-	
+
 	if (autostart) {
 		parameters.push('autostart');
 	}
@@ -562,16 +562,16 @@ function addBoolParam(params, paramName) {
 }
 
 function load_deck_builder_for_field(fieldID) {
-	var field = $("#"+fieldID);
+	var field = $("#" + fieldID);
 	var deck = {
 		commander: elariaCaptain,
-		deck: [],
+		deck: []
 	};
 	var hash = field.val();
 	if (!hash) {
 		hash = hash_encode({
 			commander: elariaCaptain,
-			deck: [],
+			deck: []
 		});
 	}
 	open_deck_builder("Card Hash", hash, null, field);
@@ -596,7 +596,7 @@ function load_deck_builder(player) {
 	// Load player deck
 	var deck = {
 		commander: elariaCaptain,
-		deck: [],
+		deck: []
 	};
 	if (getdeck) {
 		deck = hash_decode(getdeck);
@@ -619,7 +619,7 @@ function load_deck_builder(player) {
 	}
 	else {
 		currentDeckBuilder.focus();
-	};
+	}
 }
 
 function open_deck_builder(name, hash, inventory, deckHashField) {
@@ -653,8 +653,8 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
 	$(win).load((function (name, deckHashField) {
 		return function () {
 			// Tie deck-builder back to the hash field in the simulator.
-			if (deckHashField) win.updateSimulator = function (hash) { deckHashField.val(hash).change() };
-		}
+			if (deckHashField) win.updateSimulator = function (hash) { deckHashField.val(hash).change(); };
+		};
 	})(name, deckHashField));
 
 	return win;
@@ -662,18 +662,18 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
 
 function display_generated_link() {
 	outp('' +
-	'<br>' +
-	'<i>Non-autostart link</i>' +
-	'<br>' +
-	'<a href="' + generate_link() + '">' + generate_link() + '</a>' +
-	'<br>' +
-	'<br>' +
-	'<i>Autostart link</i>' +
-	'<br>' +
-	'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
-	'<br>' +
-	'<br>' +
-	'');
+		'<br>' +
+		'<i>Non-autostart link</i>' +
+		'<br>' +
+		'<a href="' + generate_link() + '">' + generate_link() + '</a>' +
+		'<br>' +
+		'<br>' +
+		'<i>Autostart link</i>' +
+		'<br>' +
+		'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
+		'<br>' +
+		'<br>' +
+		'');
 }
 
 function clear_history() {
@@ -683,16 +683,16 @@ function clear_history() {
 
 function display_history() {
 	outp('' +
-	'<br>' +
-	'<hr>' +
-	(battle_history || 'No history available.') +
-	'<hr>' +
-	'<br>' +
-	'<br>' +
-	'<input type="button" value="Clear History" onclick="clear_history();" style="text-align: center; font-weight: normal;">' +
-	'<br>' +
-	'<br>' +
-	'');
+		'<br>' +
+		'<hr>' +
+		(battle_history || 'No history available.') +
+		'<hr>' +
+		'<br>' +
+		'<br>' +
+		'<input type="button" value="Clear History" onclick="clear_history();" style="text-align: center; font-weight: normal;">' +
+		'<br>' +
+		'<br>' +
+		'');
 }
 
 function supports_html5_storage() {

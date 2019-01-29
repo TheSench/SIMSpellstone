@@ -4,7 +4,7 @@
 
     var overlayHtml = $("<div></div>");
     $(document.body).append(overlayHtml);
-    overlayHtml.load("templates/tutorial-overlay.html", null, function() {
+    overlayHtml.load("templates/tutorial-overlay.html", null, function () {
         overlayHtml.replaceWith(function () {
             return $(this).contents();
         });
@@ -34,7 +34,7 @@
         var tutorial = $("#tutorial").show();
     }
 
-   
+
     var tutorialIndex = 0;
     function nextTutorial() {
         tutorialIndex++;

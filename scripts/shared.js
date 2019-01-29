@@ -24,9 +24,9 @@ if (typeof String.prototype.format !== 'function') {
         var args = arguments;
         return this.replace(/{(\d+)}/g, function (match, number) {
             return typeof args[number] !== 'undefined'
-              ? args[number]
-              : match
-            ;
+                ? args[number]
+                : match
+                ;
         });
     };
 }
@@ -61,7 +61,7 @@ var curry = function (uncurried) {
     var parameters = Array.prototype.slice.call(arguments, 1);
     return function () {
         return uncurried.apply(this, parameters.concat(
-          Array.prototype.slice.call(arguments, 0)
+            Array.prototype.slice.call(arguments, 0)
         ));
     };
 };
@@ -216,26 +216,26 @@ var defaultStatusValues = {
     enfeebled: 0,
     enraged: 0,
     envenomed: 0,
-	heartseeker: 0,
+    heartseeker: 0,
     imbued: 0,
-	invisible: 0,
+    invisible: 0,
     nullified: 0,
     poisoned: 0,
     protected: 0,
     scorched: 0,
-	warded: 0,
+    warded: 0,
     // Boolean-Status
-	jammed: false,
-	jammedSelf: false,
+    jammed: false,
+    jammedSelf: false,
     silenced: false,
     valor_triggered: false,
     dualstrike_triggered: false,
     ondeath_triggered: false,
-	reanimated: false
+    reanimated: false
 };
 function applyDefaultStatuses(card) {
-	card.removeImbue();
-	card.enhanced = {};
+    card.removeImbue();
+    card.enhanced = {};
     for (var status in defaultStatusValues) {
         card[status] = defaultStatusValues[status];
     }
@@ -248,14 +248,14 @@ var makeUnit = (function () {
         for (var i = 0; i < skillModifiers.length; i++) {
             var skillModifier = skillModifiers[i];
             if (skillModifier.modifierType == "statChange" && !isToken) {
-            	for (var j = 0; j < skillModifier.effects.length; j++) {
-            		var statChange = skillModifier.effects[j];
-            		if (new_card.isInFaction(statChange.y)) {
-                        Object.keys(statChange).forEach(function(stat) {
+                for (var j = 0; j < skillModifier.effects.length; j++) {
+                    var statChange = skillModifier.effects[j];
+                    if (new_card.isInFaction(statChange.y)) {
+                        Object.keys(statChange).forEach(function (stat) {
                             new_card[stat] = statChange[stat];
                         });
-            		}
-            	}
+                    }
+                }
             }
         }
     }
@@ -288,7 +288,7 @@ var makeUnit = (function () {
                         new_skill.x = addedSkill.x || 0;
                         if (addedSkill.mult) {
                             if (addedSkill.base) {
-                            	var base = getStatBeforeRunes(new_card, addedSkill.base);
+                                var base = getStatBeforeRunes(new_card, addedSkill.base);
                                 new_skill.x += Math.ceil(addedSkill.mult * base);
                             } else {
                                 new_skill.mult = addedSkill.mult;
@@ -307,30 +307,30 @@ var makeUnit = (function () {
                     }
                 }
             } else if (skillModifier.modifierType === "scale_attributes" && !isToken) {
-            	for (var j = 0; j < skillModifier.effects.length; j++) {
-            		var scaling = skillModifier.effects[j];
-            		if (new_card.isInFaction(scaling.y)) {
-            			var mult = scaling.mult;
-            			var plusAttack = Math.ceil(new_card.attack * mult);
-            			new_card.attack += plusAttack;
-            			var plusHealth = Math.ceil(new_card.health * mult);
-            			new_card.health += plusHealth;
-            			scaleSkills(new_card, original_skills, mult);
-            		}
-              }
+                for (var j = 0; j < skillModifier.effects.length; j++) {
+                    var scaling = skillModifier.effects[j];
+                    if (new_card.isInFaction(scaling.y)) {
+                        var mult = scaling.mult;
+                        var plusAttack = Math.ceil(new_card.attack * mult);
+                        new_card.attack += plusAttack;
+                        var plusHealth = Math.ceil(new_card.health * mult);
+                        new_card.health += plusHealth;
+                        scaleSkills(new_card, original_skills, mult);
+                    }
+                }
             } else if (skillModifier.modifierType === "scale_stat" && !isToken) {
-            	for (var j = 0; j < skillModifier.effects.length; j++) {
-            		var scaling = skillModifier.effects[j];
-            		if (new_card.isInFaction(scaling.y)) {
-            			new_card[skillModifier.scaledStat] += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
-            		}
-            	}
+                for (var j = 0; j < skillModifier.effects.length; j++) {
+                    var scaling = skillModifier.effects[j];
+                    if (new_card.isInFaction(scaling.y)) {
+                        new_card[skillModifier.scaledStat] += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
+                    }
+                }
             }
         }
     }
 
     function getStatBeforeRunes(card, statBase) {
-    	return getCardByID({ id: card.id, level: card.level })[statBase];
+        return getCardByID({ id: card.id, level: card.level })[statBase];
     }
 
     function scaleSkills(new_card, skillList, mult) {
@@ -512,7 +512,7 @@ var makeUnit = (function () {
             for (var key in target_skills) {
                 var skill = target_skills[key];
                 if (skill.id !== s) continue;
-                if (typeof all !== "undefined" && (skill.all||0) != all) continue;
+                if (typeof all !== "undefined" && (skill.all || 0) != all) continue;
                 return true;
             }
             return false;
@@ -529,7 +529,7 @@ var makeUnit = (function () {
         },
 
         adjustedAttack: function () {
-        	return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken - this.attack_corroded);
+            return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken - this.attack_corroded);
         },
 
         permanentAttack: function () {
@@ -538,20 +538,20 @@ var makeUnit = (function () {
 
         // Filters by faction
         isInFaction: function (faction) {
-        	if (faction === undefined) return 1;
-        	var factions = faction.split(',');
-        	if (factions.length <= 1) {
-        		if (this.type == faction) return 1;
-        		if (this.sub_type.indexOf(faction.toString()) >= 0) return 1;
-        		return 0;
-        	} else {
-        		for (var i = 0; i < factions.length; i++) {
-        			if (!this.isInFaction(factions[i])) {
-        				return 0;
-        			}
-        		}
-        		return 1;
-        	}
+            if (faction === undefined) return 1;
+            var factions = faction.split(',');
+            if (factions.length <= 1) {
+                if (this.type == faction) return 1;
+                if (this.sub_type.indexOf(faction.toString()) >= 0) return 1;
+                return 0;
+            } else {
+                for (var i = 0; i < factions.length; i++) {
+                    if (!this.isInFaction(factions[i])) {
+                        return 0;
+                    }
+                }
+                return 1;
+            }
         },
 
         resetTimers: function () {
@@ -615,9 +615,9 @@ var makeUnit = (function () {
             card.addRunes(runes);
             var runeMult = 1;
             if (skillModifiers) {
-                skillModifiers.forEach(function(skillModifier) {
+                skillModifiers.forEach(function (skillModifier) {
                     if (skillModifier.modifierType == "runeMultiplier") {
-                        skillModifier.effects.forEach(function(effect) {
+                        skillModifier.effects.forEach(function (effect) {
                             if (card.isInFaction(effect.y)) {
                                 runeMult = parseInt(effect.mult);
                             }
@@ -758,8 +758,8 @@ var canUseRune = function (card, runeID) {
     }
     for (var key in statBoost) {
         if (key == "skill") {
-        	var skill = statBoost[key];
-        	var all = (skill.all ? 1 : 0);
+            var skill = statBoost[key];
+            var all = (skill.all ? 1 : 0);
             if (!card.hasSkill(skill.id, all)) return false;
         }
     }
@@ -767,20 +767,20 @@ var canUseRune = function (card, runeID) {
 };
 
 function MakeSkillModifier(name, effect) {
-  return {
-    name: name,
-    modifierType: effect.effect_type,
-    effects: [effect]
-  };
+    return {
+        name: name,
+        modifierType: effect.effect_type,
+        effects: [effect]
+    };
 }
 
 function MakeStatScalar(name, effect) {
-  return {
-    name: name,
-    modifierType: "scale_stat",
-    scaledStat: effect.effect_type.replace("scale_", ""),
-    effects: [effect]
-  };
+    return {
+        name: name,
+        modifierType: "scale_stat",
+        scaledStat: effect.effect_type.replace("scale_", ""),
+        effects: [effect]
+    };
 }
 
 var MakeOnPlayBGE = (function () {
@@ -936,9 +936,9 @@ function addRaidBGE(battlegrounds, raidID, raidLevel) {
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
                 } else if (["scale_attack", "scale_health"].indexOf(effect_Type) >= 0) {
-                  var bge = MakeStatScalar(battleground.name, effect);
-                  bge.enemy_only = enemy_only;
-                  battlegrounds.onCreate.push(bge);
+                    var bge = MakeStatScalar(battleground.name, effect);
+                    bge.enemy_only = enemy_only;
+                    battlegrounds.onCreate.push(bge);
                 } else if (effect_type === "trap_card") {
                     var bge = MakeTrap(battleground.name, effect);
                     bge.enemy_only = enemy_only;
@@ -981,11 +981,11 @@ function addBgeFromList(battlegrounds, battleground, player) {
             if (player === 'cpu') bge.enemy_only = true;
             battlegrounds.onCreate.push(bge);
         } else if (["scale_attack", "scale_health"].indexOf(effect_type) >= 0) {
-          var bge = MakeStatScalar(battleground.name, effect);
-          if (player === 'player') bge.ally_only = true;
-          if (player === 'cpu') bge.enemy_only = true;
-          battlegrounds.onCreate.push(bge);
-      } else if (effect_type === "trap_card") {
+            var bge = MakeStatScalar(battleground.name, effect);
+            if (player === 'player') bge.ally_only = true;
+            if (player === 'cpu') bge.enemy_only = true;
+            battlegrounds.onCreate.push(bge);
+        } else if (effect_type === "trap_card") {
             var bge = MakeTrap(battleground.name, effect);
             if (player === 'player') bge.ally_only = true;
             if (player === 'cpu') bge.enemy_only = true;
@@ -1416,11 +1416,11 @@ var priorityDelimiter = '|';
 
 var noFusionInHash = {};
 for (var id in CARDS) {
-	if (id < 10000) {
-		var fusion = FUSIONS[id];
-		if (!fusion || Number(fusion) < 10000) {
-			noFusionInHash[id] = true;
-		}
+    if (id < 10000) {
+        var fusion = FUSIONS[id];
+        if (!fusion || Number(fusion) < 10000) {
+            noFusionInHash[id] = true;
+        }
     }
 }
 
@@ -1432,8 +1432,8 @@ function unitInfo_to_base64(unit_info) {
     var level = (parseInt(unit_info.level) - 1);
 
     if (noFusionInHash[baseID]) {
-    	var fusion = Math.floor(level / 7);
-    	var level = level % 7;
+        var fusion = Math.floor(level / 7);
+        var level = level % 7;
     } else {
         var fusion = Math.floor(baseID / 10000);
         baseID %= 10000;
@@ -1469,7 +1469,7 @@ function base64_to_unitInfo(base64) {
     var unitID = dec;
 
     if (noFusionInHash[unitID]) {
-    	level += fusion * 7;
+        level += fusion * 7;
     } else if (fusion > 0) {
         unitID = Number(fusion + '' + unitID);
     }
@@ -2013,10 +2013,10 @@ function getPresetUnit(unitInfo, level, maxedAt) {
             cardID = fuseCard(cardID);
         }
     } else if (level > 1 && is_commander(cardID)) {
-    	var maxUpgrades = (Number(loadCard(cardID).rarity) + 1);
-    	var upgradesPerLevel = maxUpgrades / (maxedAt - 1);
-    	var levelsFromBase = level - 1;
-    	unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
+        var maxUpgrades = (Number(loadCard(cardID).rarity) + 1);
+        var upgradesPerLevel = maxUpgrades / (maxedAt - 1);
+        var levelsFromBase = level - 1;
+        unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
     }
 
     var unit = makeUnitInfo(cardID, unitLevel);
@@ -2377,7 +2377,7 @@ var factions = {
         Bear: 14,
         Token: 15,
         Mecha: 16,
-    	Knight: 17,
+        Knight: 17,
 
         Tower: 999
     }

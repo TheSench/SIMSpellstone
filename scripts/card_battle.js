@@ -5,7 +5,7 @@
     SIM_CONTROLLER.end_sims_callback = function () {
         hideUI();   // Cheap hack to keep Setup hidden
         draw_match_end();
-    }
+    };
 
     SIM_CONTROLLER.stop_sims_callback = draw_match_end;
 

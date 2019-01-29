@@ -85,7 +85,7 @@ var initDeckBuilder = function () {
 	window.oncontextmenu = hideContext;
 
 	$("#rows").val(storageAPI.getField("deckBuilder", "rows", 3));
-	$("#rows").bind("change", function() {
+	$("#rows").bind("change", function () {
 		storageAPI.setField("deckBuilder", "rows", $("#rows").val());
 	});
 
@@ -912,9 +912,9 @@ var updateGraphs = function () {
 
 	var data = {
 		labels: ['Attack', 'Health', 'Delay'], series: [
-				{ value: avgAttack, className: 'ct-series-attack' },
-				{ value: avgHealth, className: 'ct-series-health' },
-				{ value: avgDelay, className: 'ct-series-delay' }
+			{ value: avgAttack, className: 'ct-series-attack' },
+			{ value: avgHealth, className: 'ct-series-health' },
+			{ value: avgDelay, className: 'ct-series-delay' }
 		]
 	};
 	new Chartist.Bar('#averagesChart', data, options).on('draw', function (data) {
@@ -977,7 +977,7 @@ var updateGraphs = function () {
 	var data2 = { labels: labels, series: data2 };
 	new Chartist.Pie('#subfactionChart', data2, options);
 
-	
+
 	var attackStats = [];
 	var healthStats = [];
 	var delayStats = [];
@@ -1050,7 +1050,7 @@ var updateGraphs = function () {
 	var labels = [];
 	var healthNeeded = [];
 	for (var i = 0; i <= 15; i++) {
-		labels.push(130-i);
+		labels.push(130 - i);
 		healthNeeded.push(Math.ceil(HPPL * i));
 	}
 
@@ -1659,7 +1659,7 @@ var showAdvancedFilters = function (skill) {
 			$("div#amount").show();
 			break;
 
-		 // x="1" y="1" all="0" c="0" s="0"
+		// x="1" y="1" all="0" c="0" s="0"
 		case 'silence':
 			$("div#amount").show();
 			$("div#faction").show();
@@ -1695,7 +1695,7 @@ var showAdvancedFilters = function (skill) {
 			$("div#amount").show();
 			$("label[for=all]").show();
 			break;
-			// x="1" y="1" all="1" c="1" s="1"
+		// x="1" y="1" all="1" c="1" s="1"
 		case 'enhance':
 		case 'imbue':
 			$("div#amount").show();
@@ -1894,7 +1894,7 @@ var filterSet = function (button, sets, exclude) {
 		button.classList.remove("selected");
 		button.checked = false;
 		clear = "selected";
-	} else if(button.classList.contains("excluded")) {
+	} else if (button.classList.contains("excluded")) {
 		button.classList.remove("excluded");
 		button.checked = false;
 		clear = "excluded";
@@ -1990,10 +1990,10 @@ var applyFilters = function (keepPage, skipDraw) {
 		var unit = unitsShown[i];
 		var key = makeUnitKey(unit);
 		if (skillHidden[key] || factionHidden[key] || subfactionHidden[key]
-			 || attackHidden[key] || healthHidden[key] || delayHidden[key]
-			 || typeHidden[key] || fusionHidden[key] || setHidden[key]
-			 || nameHidden[key] || rarityHidden[key] || skillHiddenAdv[key]
-			 || dualFactionHidden[key]) {
+			|| attackHidden[key] || healthHidden[key] || delayHidden[key]
+			|| typeHidden[key] || fusionHidden[key] || setHidden[key]
+			|| nameHidden[key] || rarityHidden[key] || skillHiddenAdv[key]
+			|| dualFactionHidden[key]) {
 		} else {
 			unitsFiltered.push(unit);
 			var card = getCardByID(unit);

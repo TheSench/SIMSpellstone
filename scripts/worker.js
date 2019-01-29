@@ -37,7 +37,7 @@ function ProcessMessage(e) {
         case 'initializeSims':
             initializeSims(msg.data);
             break;
-    };
+    }
 }
 
 // Initialize worker thread - runs once when worker thread is created
@@ -110,7 +110,7 @@ function returnResultsTransferableObjects() {
     if (debug) length += (echo.length * 2); // 2 bytes for each char
     var buffer = new ArrayBuffer(length);
     var view = new Int32Array(buffer, 0, 6);
-    view[0] = MSG_TYPE_RESULTS
+    view[0] = MSG_TYPE_RESULTS;
     view[1] = games;
     view[2] = wins;
     view[3] = draws;
@@ -147,7 +147,7 @@ function returnResultsStructuredCloning() {
 // prevents new batches from starting until new simulation loop is started
 SIM_CONTROLLER.stopsim = function () {
     running = false;
-}
+};
 
 // Initializes a single simulation - runs once before each individual simulation
 // - needs to reset the decks and fields before each simulation
@@ -177,7 +177,7 @@ function processSimResult() {
         result = 'draw';
         draws++;
     }
-    
+
     if (debug || captureSeed) {
         if (!mass_debug && !loss_debug && !win_debug) {
             sims_left = 0;

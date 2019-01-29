@@ -36,7 +36,7 @@
         current_timeout = setTimeout(run_sims);
 
         return false;
-    }
+    };
 
     // Interrupt simulations
     SIM_CONTROLLER.stopsim = function () {
@@ -54,8 +54,8 @@
         }
         showUI();
 
-        if (SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback()
-    }
+        if (SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback();
+    };
 
     function run_sims() {
 
@@ -63,7 +63,7 @@
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((debug ||play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debug || play_debug) && !mass_debug && !loss_debug && !win_debug) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
         } else if (sims_left > 0) {
@@ -156,7 +156,7 @@
         if (result == 'draw') {
             draws++;
         } else if (result) {
-            wins++;;
+            wins++;
         } else {
             losses++;
         }
@@ -211,7 +211,7 @@
         }
 
         return result;
-    }
+    };
 
     // Global variables used by single-threaded simulator
     var run_sims_count = 0;
