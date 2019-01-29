@@ -1,7 +1,6 @@
-"use strict";
-
 var SIMULATOR = {};
 (function () {
+	"use strict";
 
 	// Play card
 	function play_card(card, p, turn, quiet) {
@@ -53,17 +52,17 @@ var SIMULATOR = {};
 		if (showAnimations) {
 			drawField(field, null, null, turn);
 		}
-	};
+	}
 
 	// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 	function remove_dead() {
 		remove_dead_cards('player');
 		remove_dead_cards('cpu');
-	};
+	}
 
 	// Shift over to the left if there are any gaps.
 	function remove_dead_cards(p) {
-		var units = field[p].assaults
+		var units = field[p].assaults;
 		// Find first dead unit (don't need to update the keys of any units before this one)
 		for (var key = 0, len = units.length; key < len; key++) {
 			var current_assault = units[key];
@@ -90,22 +89,22 @@ var SIMULATOR = {};
 				break;
 			}
 		}
-	};
+	}
 
 	// Picks one target by random
 	function choose_random_target(targets) {
-		var targetIndex = ~~(Math.random() * targets.length)
+		var targetIndex = ~~(Math.random() * targets.length);
 		return [targets[targetIndex]];
-	};
+	}
 
 	function get_p(card) {
 		return card.owner;
-	};
+	}
 
 	function get_o(card) {
 		if (card.owner == 'cpu') return 'player';
 		if (card.owner == 'player') return 'cpu';
-	};
+	}
 
 	// Deal damage to card
 	// and keep track of cards that have died this turn
@@ -114,7 +113,6 @@ var SIMULATOR = {};
 			target.health_left = 0;
 		} else {
 			target.health_left -= damage;
-		   
 		}
 
 		if (debug) logFn(source, target, damage);
@@ -125,7 +123,7 @@ var SIMULATOR = {};
 		if (!target.isAlive() && source) {
 			doOnDeathSkills(target, source);
 		}
-	};
+	}
 
 	function iceshatter(src_card) {
 		// Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
@@ -140,7 +138,7 @@ var SIMULATOR = {};
 			echo += debug_name(source) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
-	};
+	}
 
 	function getActivatedSkill(skillMap, skillId) {
 		return (skillMap[skillId] || notImplemented);
@@ -176,7 +174,7 @@ var SIMULATOR = {};
 				doEarlyActivationSkills(current_unit);
 			}
 		}
-	};
+	}
 
 	function doEarlyActivationSkills(source_card) {
 
@@ -185,7 +183,7 @@ var SIMULATOR = {};
 		if (len == 0) return;
 
 		if (source_card.silenced) {
-			if (debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>"
+			if (debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
@@ -213,7 +211,7 @@ var SIMULATOR = {};
 				}
 			}
 		}
-	};
+	}
 
 	function alwaysTrue() {
 		return true;
@@ -243,7 +241,7 @@ var SIMULATOR = {};
 		}
 
 		dying.ondeath_triggered = true;
-	};
+	}
 
 	var passiveSkills = ['backlash', 'counter', 'counterburn', 'counterpoison', 'armored', 'evade', 'stasis'];
 	function requiresActiveTurn(skillName) {
@@ -585,7 +583,7 @@ var SIMULATOR = {};
 
 			var o = get_o(src_card);
 
-			var intensify = skill.x
+			var intensify = skill.x;
 			var faction = skill.y;
 			var all = skill.all;
 
@@ -654,7 +652,7 @@ var SIMULATOR = {};
 
 			var o = get_o(src_card);
 
-			var ignite = skill.x
+			var ignite = skill.x;
 			var faction = skill.y;
 			var all = skill.all;
 
@@ -793,7 +791,7 @@ var SIMULATOR = {};
 			var targets = [];
 
 			var i = src_card['key'] - 1;
-			var end = i + 2
+			var end = i + 2;
 			for (; i <= end; i++) {
 				var target = field_x_assaults[i];
 				if (target && target.isAlive()) {
@@ -963,7 +961,7 @@ var SIMULATOR = {};
 						targets.push(key);
 					}
 				}
-			}
+			};
 			getTargets(false);
 			// Only target 0-strength units if there are no 1+ strength units left
 			if (!targets.length) {
@@ -1006,7 +1004,7 @@ var SIMULATOR = {};
 			}
 
 			return affected;
-		},
+		}
 	};
 
 	var earlyActivationSkills = {
@@ -1202,7 +1200,7 @@ var SIMULATOR = {};
 				if (target && target.isInFaction(faction)) {
 					fervorAmount += rally;
 				}
-				target_key += 2
+				target_key += 2;
 			}
 
 			if (fervorAmount) {
@@ -1227,7 +1225,7 @@ var SIMULATOR = {};
 
 			var o = get_o(src_card);
 
-			var barrages = skill.x
+			var barrages = skill.x;
 			var faction = skill.y;
 			var all = skill.all;
 
@@ -1454,7 +1452,7 @@ var SIMULATOR = {};
 			var skill = {
 				id: s,
 				x: x
-			}
+			};
 
 			// Check All
 			if (!all) {
@@ -1595,7 +1593,7 @@ var SIMULATOR = {};
 					"attack": 0,
 					"cost": 0,
 					"maxLevel": 1,
-					"skill": [],
+					"skill": []
 				};
 				var filler = getCardByID({ id: 0, level: 1 });
 				filler.name = "filler";
@@ -1605,7 +1603,7 @@ var SIMULATOR = {};
 				}
 			}
 			field_x_assaults.splice(toKey, 0, target);
-			for (var i = Math.min(toKey, fromKey), end = Math.max(toKey, fromKey) ; i <= end; i++) {
+			for (var i = Math.min(toKey, fromKey), end = Math.max(toKey, fromKey); i <= end; i++) {
 				field_x_assaults[i].key = i;
 			}
 
@@ -1622,7 +1620,7 @@ var SIMULATOR = {};
 
 		ambush: function (src_card, target, skill) {
 
-			var x = skill.x
+			var x = skill.x;
 			var base = skill.base;
 			var mult = skill.mult;
 
@@ -1642,7 +1640,7 @@ var SIMULATOR = {};
 
 		slow: function (src_card, target, skill) {
 
-			var x = skill.x
+			var x = skill.x;
 			var base = skill.base;
 			var mult = skill.mult;
 
@@ -1659,7 +1657,7 @@ var SIMULATOR = {};
 			}
 
 			return 1;
-		},
+		}
 	};
 
 	var onDeathSkills = {
@@ -1714,7 +1712,7 @@ var SIMULATOR = {};
 	function activation_skills(src_card) {
 
 		if (src_card.silenced) {
-			if (debug) echo += debug_name(src_card) + " is silenced and cannot use skills</br>"
+			if (debug) echo += debug_name(src_card) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
@@ -1740,7 +1738,7 @@ var SIMULATOR = {};
 				drawField(field, null, null, turn, src_card);
 			}
 		}
-	};
+	}
 
 	function initializeBattle() {
 
@@ -1754,7 +1752,7 @@ var SIMULATOR = {};
 			player: {
 				deck: []
 			}
-		}
+		};
 
 		SIMULATOR.deck = deck;
 
@@ -1839,7 +1837,7 @@ var SIMULATOR = {};
 		}
 
 		return performTurns(0);
-	};
+	}
 
 	function setupDecks() {
 		// Cache decks where possible
@@ -2056,9 +2054,9 @@ var SIMULATOR = {};
 				} else if (debug) {
 					echo += debug_name(current_assault) + ' activates valor but ';
 					if (!enemy) {
-						echo += 'there is no opposing enemy.<br/>'
+						echo += 'there is no opposing enemy.<br/>';
 					} else {
-						echo += 'enemy is not strong enough.<br/>'
+						echo += 'enemy is not strong enough.<br/>';
 					}
 				}
 			}
@@ -2113,7 +2111,7 @@ var SIMULATOR = {};
 			removeFromDeck(deck_p_deck, card_picked);
 		}
 		return true;
-	};
+	}
 
 	function removeFromDeck(deck, index) {
 		var key = index;
@@ -2187,7 +2185,7 @@ var SIMULATOR = {};
 			var priority_id = desiredCard.priority;
 
 			var samePriority = -1;
-			var cardInHand
+			var cardInHand;
 			for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
 				cardInHand = hand[handIdx];
 				var b_priority = cardInHand.priority;
@@ -2374,7 +2372,7 @@ var SIMULATOR = {};
 
 		//debug_dump_field(field);
 		if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
-	};
+	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
 		var statusValue = 0;
@@ -2585,7 +2583,7 @@ var SIMULATOR = {};
 				doOnDeathSkills(current_assault, null);
 			}
 		}
-	};
+	}
 
 	function doAttack(current_assault, field_o_assaults, field_o_commander) {
 
@@ -2938,7 +2936,7 @@ var SIMULATOR = {};
 			drawField(field, null, null, turn, current_assault);
 		}
 		// -- END OF STATUS INFLICTION --
-	};
+	}
 
 	function doCounterDamage(attacker, defender, counterType, counterBase, counterEnhancement) {
 
@@ -2972,7 +2970,7 @@ var SIMULATOR = {};
 			cpu: {
 				total: 0,
 				taken: 0
-			},
+			}
 		};
 
 		for (var i in uids) {
@@ -3112,6 +3110,6 @@ var SIMULATOR = {};
 			set: function (value) {
 				livePvP = value;
 			}
-		},
+		}
 	});
 })();

@@ -124,15 +124,24 @@ module.exports = function (grunt) {
                 }
             }
         },
+        watch: {
+            scripts: {
+                files: ['scripts/**/*.js'],
+                tasks: ['jshint'],
+                options: {
+                    spawn: false
+                }
+            }
+        },
         jshint: {
-            files: [
+            all: [
                 'Gruntfile.js',
                 'scripts/**/*.js',
                 '!scripts/data/**'
             ],
             options: {
                 // options here to override JSHint defaults
-                undef: false,
+                undef: true,
                 globals: {
                     $: true,
                     jQuery: true,
@@ -144,7 +153,10 @@ module.exports = function (grunt) {
                     SIMULATOR: true,
                     CARDS: true,
                     FUSIONS: true,
-                    storageAPI: true
+                    storageAPI: true,
+                    ArrayBuffer: true,
+                    Int32Array: true,
+                    Uint16Array: true
                 }
             }
         },
@@ -156,7 +168,7 @@ module.exports = function (grunt) {
                     src: ['carddetails.scss'],
                     dest: 'styles',
                     ext: '.css'
-                  }]
+                }]
             },
             sass: {
                 files: [{
@@ -165,7 +177,7 @@ module.exports = function (grunt) {
                     src: ['tutorial.scss', 'header.scss'],
                     dest: 'styles/sass',
                     ext: '.css'
-                  }]
+                }]
             },
             themes: {
                 files: [{
@@ -174,7 +186,7 @@ module.exports = function (grunt) {
                     src: ['light.scss', 'dark.scss'],
                     dest: 'styles/sass/themes',
                     ext: '.css'
-                  }]
+                }]
             }
         },
         cssmin: {
@@ -241,16 +253,16 @@ module.exports = function (grunt) {
         },
         copy: {
             html: {
-              files: [
-                {
-                    expand: true,
-                    cwd: 'html',
-                    src: ['**'],
-                    dest: './'
-                },
-              ],
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'html',
+                        src: ['**'],
+                        dest: './'
+                    },
+                ],
             },
-          },
+        },
         cacheBust: {
             deckbuilder: {
                 options: {
@@ -283,7 +295,13 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-cache-bust');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy', 'cacheBust']);
 
+    // On watch events configure jshint:all to only run on changed file
+    // on watch events configure jshint:all to only run on changed file
+    grunt.event.on('watch', function (action, filepath) {
+        grunt.config(['jshint', 'all'], filepath);
+    });
 };
