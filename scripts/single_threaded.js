@@ -5,8 +5,7 @@
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
         total_turns = 0;
-        time_start = Date.now();
-        time_stop = 0;
+        matchTimer.reset();
         echo = '';
         games = 0;
         run_sims_batch = 0;
@@ -40,8 +39,8 @@
 
     // Interrupt simulations
     SIM_CONTROLLER.stopsim = function () {
-        time_stop = new Date();
-        var elapse = timer.elapsed();
+        matchTimer.stop();
+        var elapse = matchTimer.elapsed();
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
@@ -75,9 +74,9 @@
                     var temp = games / (games + sims_left) * 100;
                     temp = temp.toFixed(2);
 
-                    var elapse = timer.elapsed();
+                    var elapse = matchTimer.elapsed();
 
-                    var batch_elapse = timer.batchElapsed();
+                    var batch_elapse = matchTimer.batchElapsed();
                     if (batch_elapse == 0) {
                         simpersecbatch = 0;
                     } else {
@@ -96,7 +95,7 @@
                 // Batch messes up mass debug and loss debug! var's disable batch!
                 if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
 
-                time_start_batch = new Date();
+                matchTimer.startBatch();
                 current_timeout = setTimeout(run_sims, 1);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     run_sim();
@@ -105,9 +104,9 @@
         } else {
             run_sims_count = 0;
             run_sims_batch = 0;
-            time_stop = new Date();
+            matchTimer.stop();
 
-            var elapse = timer.elapsed();
+            var elapse = matchTimer.elapsed();
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(2);
 

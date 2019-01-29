@@ -745,10 +745,6 @@ var num_sims = 0;
 var last_games = [];
 var sims_left = 0;
 var current_timeout;
-var time_start = 0;
-var time_stop = 0;
-var time_start_batch = 0;
-var time_end = 0;	// TODO: Use this
 var surge = false;
 var battleground = [];
 var total_turns = 0;

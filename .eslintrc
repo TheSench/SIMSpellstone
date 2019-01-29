@@ -15,6 +15,7 @@
         "SIMULATOR": true,
         "CARDS": true,
         "FUSIONS": true,
+        "SKILL_DATA": true,
         "storageAPI": true,
         "ArrayBuffer": true,
         "Int32Array": true,

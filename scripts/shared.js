@@ -131,20 +131,30 @@ function _DEFINED(variable) {
     return false;
 }
 
-var timer = {
+var matchTimer = {
     // Time elapsed
     elapsed: function elapsed() {
-        var end = (time_stop || Date.now());
-        return timer.elapsedSeconds(time_start, end);
+        var end = (this.timeStop || Date.now());
+        return this.elapsedSeconds(this.timeStart, end);
     },
     timeSince: function timeSince(start) {
-        return timer.elapsedSeconds(start, Date.now());
+        return this.elapsedSeconds(start, Date.now());
     },
     elapsedSeconds: function elapsedSeconds(start, end) {
         return ((end - start) / 1000).toFixed(3);
     },
     batchElapsed: function batchElapsed(start) {
-        return timer.timeSince(start || time_start_batch);
+        return this.timeSince(start || this.batchStarted);
+    },
+    startBatch: function startBatch() {
+        this.batchStarted = Date.now();
+    },
+    stop: function stopTimer() {
+        this.timeStop = Date.now();
+    },
+    reset: function resetTimer() {
+        this.timeStart = Date.now();
+        this.timeStop = 0;
     }
 };
 

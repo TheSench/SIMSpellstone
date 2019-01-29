@@ -54,7 +54,7 @@ var SIM_CONTROLLER = (function () {
         var result = SIM_CONTROLLER.processSimResult();
 
         sims_left = 0;
-        time_stop = new Date();
+        matchTimer.stop();
 
 
         var msg;

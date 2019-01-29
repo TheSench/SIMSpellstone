@@ -123,10 +123,9 @@
         if (sims_left > 0) {
             if (progress) {
                 progress = false;
-                var percent_complete = (games / (num_sims) * 100).toFixed(2);
                 var elapse = time_elapsed();
                 var batch_size = games - last_games[0];
-                var batch_elapse = timer.batchElapsed(last_start_times[0]);
+                var batch_elapse = matchTimer.batchElapsed(last_start_times[0]);
                 var simpersecbatch = 0;
                 if (batch_elapse == 0) {
                     simpersecbatch = 0;
@@ -209,7 +208,7 @@
     function display_debug_results(win, draw) {
 
         sims_left = 0;
-        time_stop = new Date().getTime();
+        matchTimer.stop();
 
         var msg;
         if (result == 'draw') {
@@ -230,7 +229,7 @@
     // Display the final results after a simulation loop has completed
     function display_final_results() {
 
-        time_stop = new Date().getTime();
+        matchTimer.stop();
 
         var elapse = time_elapsed();
         var simpersec = games / elapse;
@@ -254,8 +253,7 @@
 
         // Reset these
         total_turns = 0;
-        time_start = new Date().getTime();
-        time_stop = 0;
+        matchTimer.reset();
         echo = '';
         found_desired = 0;
         games = 0;
@@ -372,8 +370,7 @@
     SIM_CONTROLLER.updateField = function (field) {
 
         total_turns = 0;
-        time_start = new Date().getTime();
-        time_stop = 0;
+        matchTimer.reset();
         echo = '';
         found_desired = 0;
         games = 0;
@@ -409,8 +406,7 @@
         }
 
         total_turns = 0;
-        time_start = Date.now();
-        time_stop = 0;
+        matchTimer.reset();
         echo = '';
         found_desired = 0;
         games = 0;
@@ -497,8 +493,7 @@
     SIM_CONTROLLER.nextDeck = function (nextHash) {
 
         total_turns = 0;
-        time_start = new Date().getTime();
-        time_stop = 0;
+        matchTimer.reset();
         echo = '';
         found_desired = 0;
         games = 0;
@@ -548,7 +543,7 @@
     SIM_CONTROLLER.stopsim = function (supress_output) {
 
         sims_left = 0;
-        time_stop = new Date().getTime();
+        matchTimer.stop();
         var elapse = time_elapsed();
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(2);
@@ -579,7 +574,7 @@
                 workers[0].postMessage({ 'cmd': 'run_sims' });
             }
         } else {
-            time_start_batch = new Date().getTime();
+            matchTimer.startBatch();
 
             var sims_per_worker = ~~(num_sims / max_workers);
             var remainingSims = num_sims - (sims_per_worker * max_workers);
