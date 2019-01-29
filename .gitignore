@@ -4,6 +4,9 @@ settings.json
 # Packages
 node_modules/
 
+# Test results
+cypress/videos/
+
 # Saved decks file
 saved_decks.js
 /res/items/unnamed
