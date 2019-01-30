@@ -162,7 +162,7 @@ var initDeckBuilder = function () {
 	}
 
 	$("#graph-accordion").click(updateGraphs);
-}
+};
 
 function updateGameData() {
 	setTimeout(DATA_UPDATER.updateData, 1, loadCards, true);
@@ -174,7 +174,7 @@ var loadCards = function () {
 	drawAllCards();
 	$("body").removeClass("loading");
 	checkTutorial();
-}
+};
 
 var setupPopups = function () {
 
@@ -183,7 +183,7 @@ var setupPopups = function () {
 
 	$(".accordion").accordion({
 		collapsible: true,
-		heightStyle: "content",
+		heightStyle: "content"
 	});
 
 	$(".start-closed").accordion('option', 'active', false).show();
@@ -309,7 +309,7 @@ var setupPopups = function () {
 			cardDetailScope.visible = false;
 		}
 	});
-}
+};
 
 var closeDialogOnOverlayClick = function closeDialogOnOverlayClick() {
 	var targetDialog = $(this);
@@ -323,7 +323,7 @@ var closeDialogOnOverlayClick = function closeDialogOnOverlayClick() {
 var drawAllCards = function () {
 	drawCardList();
 	drawDeck();
-}
+};
 
 var drawDeck = function () {
 
@@ -337,7 +337,7 @@ var drawDeck = function () {
 		setDeckName(name);
 	}
 	doDrawDeck();
-}
+};
 
 function doDrawDeck() {
 	/*if (inventoryMode) {
@@ -346,7 +346,7 @@ function doDrawDeck() {
 		$deck = CARD_GUI.draw_deck(deck, inventoryMode);
 	}
 	updateHash();
-};
+}
 
 function addDeckEventHandlers($deck) {
 	addCardEvent($deck, "mousedown", duplicate);
@@ -385,7 +385,7 @@ var showDetails = function (event, htmlCard) {
 	detailsDialog.dialog("open");
 
 	detailsDialog.onloaded = setInventory;
-}
+};
 
 function duplicate(event, htmlCard) {
 	if (event.ctrlKey) {
@@ -417,7 +417,7 @@ var drawCardList = function () {
 	unitsShown = [];
 	if (inventory) {
 		fromInventory = true;
-		inventory = hash_decode(inventory);
+		inventory = base64.decodeHash(inventory);
 		var commander = inventory.commander;
 		inventory = inventory.deck;
 		if (commander && !areEqual(commander, elariaCaptain)) {
@@ -449,7 +449,7 @@ var drawCardList = function () {
 	sortCards(document.getElementById("sortField"));
 
 	applyFilters();
-}
+};
 
 var page = 0;
 var pages = 0;
@@ -510,7 +510,7 @@ function adjustTable(filler) {
 			var sibling = filler.nextElementSibling;
 			while (sibling) {
 				siblings.push(sibling);
-				sibling = sibling.nextElementSibling
+				sibling = sibling.nextElementSibling;
 			}
 			if (siblings.length) {
 				var tr = document.createElement("tr");
@@ -577,12 +577,12 @@ function pageDown() {
 var redrawCardList = function (keepPaging) {
 	sortCards(document.getElementById("sortField"));
 	applyFilters(keepPaging);
-}
+};
 
 var addInventoryUnit = function (unit) {
 	units.push(unit);
 	unitsShown.push(unit);
-}
+};
 
 var addUnit = function (id, spoilers) {
 	addUnitLevels(id);
@@ -593,7 +593,7 @@ var addUnit = function (id, spoilers) {
 		addUnitLevels("1" + id);
 		addUnitLevels("2" + id);
 	}
-}
+};
 
 var addUnitLevels = function (id) {
 	var card = allCards[id];
@@ -604,7 +604,7 @@ var addUnitLevels = function (id) {
 			if (showUpgrades || level == card.maxLevel) unitsShown.push(unit);
 		}
 	}
-}
+};
 
 var resetDeck = function () {
 	/*if (inventoryMode) {
@@ -612,7 +612,7 @@ var resetDeck = function () {
 	} else */ {
 		hash_changed('oZ0IB');
 	}
-}
+};
 
 var disableTracking = false;
 var hash_changed = function (hash) {
@@ -626,7 +626,7 @@ var hash_changed = function (hash) {
 
 	updateSimulator(hash);
 
-	deck = hash_decode(hash);
+	deck = base64.decodeHash(hash);
 
 	if (!hash) deck.commander = null;
 
@@ -641,12 +641,12 @@ var hash_changed = function (hash) {
 	doDrawDeck();
 
 	generateLink();
-}
+};
 
 var setHash = function (hash) {
 	$("#hash").val(hash);
 	generateLink();
-}
+};
 
 var sortDeck = function () {
 	deck.deck.sort(function (unitA, unitB) {
@@ -665,12 +665,12 @@ var sortDeck = function () {
 		return compare;
 	});
 	doDrawDeck();
-}
+};
 
 var addToDeck = function (event, htmlCard) {
 	var unit = getUnitFromCard(htmlCard);
 	addUnitToDeck(unit, htmlCard);
-}
+};
 
 var addUnitToDeck = function (unit, htmlCard) {
 	var $htmlCard = $(htmlCard).clone().find(".multiplier").remove().end();
@@ -697,7 +697,7 @@ var addUnitToDeck = function (unit, htmlCard) {
 		if (emptySpaces.length) {
 			replaceCard(emptySpaces.first(), $htmlCard);
 		} else {
-			$deck.append($htmlCard)
+			$deck.append($htmlCard);
 		}
 	}
 
@@ -742,7 +742,7 @@ function removeFromInventory(unit) {
 
 var removeFromDeck = function (htmlCard) {
 	var unit;
-	var $htmlCard = $(htmlCard)//$(event.delegateTarget)
+	var $htmlCard = $(htmlCard);//$(event.delegateTarget)
 	var index = $htmlCard.index();
 	/*if (inventoryMode) {
 		var inventory = deck.deck;
@@ -793,7 +793,7 @@ var removeFromDeck = function (htmlCard) {
 var highlight = function (event, htmlCard) {
 	highlighted = $(htmlCard).index();
 	updateHighlights();
-}
+};
 
 var highlighted = -1;
 function updateHighlights() {
@@ -806,11 +806,11 @@ function updateHighlights() {
 
 	var hash_highlighter = document.getElementById('hash_highlighter');
 	hash_highlighter.innerHTML = highlightedHash;
-	$(hash_highlighter).width($(hash_highlighted).width())
+	$(hash_highlighter).width($(hash_highlighted).width());
 }
 
 var updateHash = function () {
-	var deckHash = hash_encode(deck);
+	var deckHash = base64.encodeHash(deck);
 	setHash(deckHash);
 
 	updateHighlights();
@@ -820,11 +820,11 @@ var updateHash = function () {
 	updateSimulator(deckHash);
 
 	updateGraphs();
-}
+};
 
 var updateSimulator = function (deckHash) {
 	// Placeholder function - set by Simulator
-}
+};
 
 var updateGraphs = function () {
 	var graphsContainer = $("#deckGraphs");
@@ -853,7 +853,7 @@ var updateGraphs = function () {
 			sub_types[subFaction] = (sub_types[subFaction] || 0) + 1;
 		}
 	}
-	var numericSort = function (a, b) { return a - b };
+	var numericSort = function (a, b) { return a - b; };
 	attackStats.sort(numericSort);
 	healthStats.sort(numericSort);
 	delayStats.sort(numericSort);
@@ -999,7 +999,7 @@ var updateGraphs = function () {
 			sub_types[subFaction] = (sub_types[subFaction] || 0) + 1;
 		}
 	}
-	var numericSort = function (a, b) { return a - b };
+	var numericSort = function (a, b) { return a - b; };
 	attackStats.sort(numericSort);
 	healthStats.sort(numericSort);
 	delayStats.sort(numericSort);
@@ -1045,7 +1045,7 @@ var updateGraphs = function () {
 		]
 	}, options);
 
-	var totalHealth = getCardByID(deck.commander).health + healthStats.reduce(function (prev, curr) { return prev + curr }, 0);
+	var totalHealth = getCardByID(deck.commander).health + healthStats.reduce(function (prev, curr) { return prev + curr; }, 0);
 	var HPPL = totalHealth / 15;
 	var labels = [];
 	var healthNeeded = [];
@@ -1068,10 +1068,10 @@ var updateGraphs = function () {
 	new Chartist.Line('#hpplChart', {
 		labels: labels,
 		series: [
-			{ name: 'Health Lost', className: 'ct-series-attack', data: healthNeeded },
+			{ name: 'Health Lost', className: 'ct-series-attack', data: healthNeeded }
 		]
 	}, options);
-}
+};
 
 var changeTracking = [];
 var currentChange = -1;
@@ -1088,7 +1088,7 @@ function addChange(hash) {
 }
 
 function KeyPress(e) {
-	var evtobj = window.event ? event : e
+	var evtobj = window.event ? event : e;
 	if (evtobj.ctrlKey) {
 		if (evtobj.keyCode == 90) {
 			undo();
@@ -1103,7 +1103,7 @@ document.onkeydown = KeyPress;
 function stopPropagation(id) {
 	document.getElementById(id).onkeydown = function (e) {
 		e.stopPropagation();
-	}
+	};
 }
 
 function undo() {
@@ -1111,12 +1111,12 @@ function undo() {
 		var $hash = $(document.getElementById("hash"));
 		$hash.on("focus", preventFocus);
 
-		disableTracking = true
+		disableTracking = true;
 
 		currentChange--;
 		var hash = changeTracking[currentChange];
 		setHash(hash);
-		deck = hash_decode(hash);
+		deck = base64.decodeHash(hash);
 		doDrawDeck();
 
 		$hash.off("focus");
@@ -1134,7 +1134,7 @@ function redo() {
 		currentChange++;
 		var hash = changeTracking[currentChange];
 		setHash(hash);
-		deck = hash_decode(hash);
+		deck = base64.decodeHash(hash);
 		doDrawDeck();
 
 		$hash.off("focus");
@@ -1145,13 +1145,13 @@ function redo() {
 var preventFocus = function (event) {
 	$(this).blur();
 	event.stopPropagation();
-}
+};
 
 var onClickFilter = function (event, filterFunction, altKey) {
 	var button = event.target;
 	var filter = button.getAttribute("data-filter");
 	filterFunction(button, filter, altKey);
-}
+};
 
 var onContextMenu = function (event) {
 	event.preventDefault();
@@ -1159,7 +1159,7 @@ var onContextMenu = function (event) {
 	var button = event.target;
 	var skill = button.getAttribute("data-filter");
 	showAdvancedFilters(skill);
-}
+};
 
 var filterAdvanced = function (skill) {
 	var info = {
@@ -1168,8 +1168,8 @@ var filterAdvanced = function (skill) {
 		y: undefined,
 		c: undefined,
 		s: undefined,
-		all: undefined,
-	}
+		all: undefined
+	};
 
 	for (var i = 0; i < skillFiltersAdv.length; i++) {
 		if (skillFiltersAdv[i].id == skill) {
@@ -1222,7 +1222,7 @@ var filterAdvanced = function (skill) {
 	}
 
 	checkAdvancedFilters();
-}
+};
 
 var checkAdvancedFilters = function () {
 	skillHiddenAdv = {};
@@ -1239,7 +1239,7 @@ var checkAdvancedFilters = function () {
 		var info = skillFiltersAdv[key];
 	}
 	applyFilters();
-}
+};
 
 var filterSkill = function (button, skill, exclude) {
 	if (button.classList.contains("selected")) {
@@ -1375,7 +1375,7 @@ var filterSubfaction = function (button, faction, exclude) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var filterDualFaction = function (button, faction, exclude) {
 
@@ -1404,7 +1404,7 @@ var filterDualFaction = function (button, faction, exclude) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var filterAttack = function (button, min, max) {
 	attackHidden = {};
@@ -1436,7 +1436,7 @@ var filterAttack = function (button, min, max) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var filterHealth = function (button, min, max) {
 	healthHidden = {};
@@ -1468,7 +1468,7 @@ var filterHealth = function (button, min, max) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var filterDelay = function (button, delay, exclude) {
 	delayHidden = {};
@@ -1528,7 +1528,7 @@ var filterDelay = function (button, delay, exclude) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var filterType = function (button, type) {
 	typeHidden = {};
@@ -1560,7 +1560,7 @@ var filterType = function (button, type) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var filterFusion = function (button, fusion) {
 	fusionHidden = {};
@@ -1593,7 +1593,7 @@ var filterFusion = function (button, fusion) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var showAdvancedFilters = function (skill) {
 
@@ -1718,12 +1718,12 @@ var showAdvancedFilters = function (skill) {
 		default:
 			return null;
 	}
-	advancedFilters.dialog("option", "position", { mw: "center", at: "center", of: $("[data-filter=" + skill + "]")[0] });;
+	advancedFilters.dialog("option", "position", { mw: "center", at: "center", of: $("[data-filter=" + skill + "]")[0] });
 	advancedFilters.dialog("open");
 	advancedFilters.skill = skill;
 
 	return false;
-}
+};
 
 var showCardOptions = function (event, htmlCard) {
 	event.preventDefault();
@@ -1777,14 +1777,14 @@ var showCardOptions = function (event, htmlCard) {
 
 	if (show) {
 		disableTracking = true;
-		optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
+		optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });
 		optionsDialog.dialog("open");
 		optionsDialog.unit = unit;
 		optionsDialog.originalUnit = $.extend({}, unit);
 	}
 
 	return false;
-}
+};
 
 function hideContext(event) {
 	event.preventDefault();
@@ -1833,7 +1833,7 @@ var showRunePicker = function (card) {
 	} else {
 		return false;
 	}
-}
+};
 
 var toggleUnreleasedRunes = function (checkbox) {
 	var runesToToggle = optionsDialog.hiddenOptions;
@@ -1841,7 +1841,7 @@ var toggleUnreleasedRunes = function (checkbox) {
 		runesToToggle[i].hidden = !checkbox.checked;
 		runesToToggle[i].disabled = !checkbox.checked;
 	}
-}
+};
 
 var modifyCard = function (optionsDialog) {
 	var unit = optionsDialog.unit;
@@ -1868,13 +1868,13 @@ var modifyCard = function (optionsDialog) {
 	var card = getCardByID(unit);
 	showRunePicker(card);
 	setCard(optionsDialog.index, unit);
-	setHash(hash_encode(deck));
-}
+	setHash(base64.encodeHash(deck));
+};
 
 var resetCard = function (optionsDialog) {
 	setCard(optionsDialog.index, optionsDialog.originalUnit);
-	setHash(hash_encode(deck));
-}
+	setHash(base64.encodeHash(deck));
+};
 
 var setCard = function (index, unit) {
 	if (index < 0) {
@@ -1884,7 +1884,7 @@ var setCard = function (index, unit) {
 	}
 	var htmlCard = CARD_GUI.create_card_html(getCardByID(unit), false, false);
 	$deck.find(".card").eq(index + 1).replaceWith(htmlCard);
-}
+};
 
 var filterSet = function (button, sets, exclude) {
 	setHidden = {};
@@ -1948,7 +1948,7 @@ var filterSet = function (button, sets, exclude) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var filterRarity = function (button, rarity) {
 	rarityHidden = {};
@@ -1980,7 +1980,7 @@ var filterRarity = function (button, rarity) {
 		}
 	}
 	applyFilters();
-}
+};
 
 var applyFilters = function (keepPage, skipDraw) {
 	unitsFiltered = [];
@@ -2008,7 +2008,7 @@ var applyFilters = function (keepPage, skipDraw) {
 	if (!skipDraw) {
 		doDrawCardList(unitsFiltered, !keepPage);
 	}
-}
+};
 
 var hasSkill = function (unit, skill) {
 	var card = get_slim_card_by_id(unit, true);
@@ -2017,7 +2017,7 @@ var hasSkill = function (unit, skill) {
 		if (skill == skills[i].id) return true;
 	}
 	return false;
-}
+};
 
 var hasSkillAdvanced = function (unit, skillInfo) {
 	var card = get_slim_card_by_id(unit, true);
@@ -2035,7 +2035,7 @@ var hasSkillAdvanced = function (unit, skillInfo) {
 		}
 	}
 	return false;
-}
+};
 
 var clearFilters = function () {
 	attackHidden = {};
@@ -2079,13 +2079,13 @@ var clearFilters = function () {
 	$("#nameFilter").val("");
 
 	applyFilters();
-}
+};
 
 var isInFaction = function (unit, faction) {
 	var factionID = factions.IDs[faction];
 	var card = get_slim_card_by_id(unit, true);
 	return (card.type == factionID);
-}
+};
 
 var isInSubfaction = function (unit, faction) {
 	var factionID = factions.IDs[faction];
@@ -2095,12 +2095,12 @@ var isInSubfaction = function (unit, faction) {
 	} else {
 		return (card.sub_type.indexOf(factionID.toString()) >= 0);
 	}
-}
+};
 
 var isDualFaction = function (unit) {
 	var card = get_slim_card_by_id(unit, true);
 	return (card.sub_type.length > 1);
-}
+};
 
 var isInRange = function (unit, field, min, max) {
 	var card = get_slim_card_by_id(unit, true);
@@ -2109,11 +2109,11 @@ var isInRange = function (unit, field, min, max) {
 	if (min >= 0 && value < min) return false;
 	if (max >= 0 && value > max) return false;
 	return true;
-}
+};
 
 var toggleSkillDetails = function () {
 	applyFilters(true);
-}
+};
 
 var toggleUpgrades = function (checkbox) {
 	showUpgrades = checkbox.checked;
@@ -2123,7 +2123,7 @@ var toggleUpgrades = function (checkbox) {
 		$("body").removeClass("loading");
 		applyFilters(false);
 	}, 1);
-}
+};
 
 function sortAndDraw(select) {
 	doSort(select);
@@ -2132,7 +2132,7 @@ function sortAndDraw(select) {
 
 var sortCards = function (select) {
 	doSort(select);
-}
+};
 
 function doSort(select) {
 	var sortField = select.value;
@@ -2194,7 +2194,7 @@ var compareByID = function (unitA, unitB) {
 	if (comparison != 0) return comparison;
 
 	return sortByRunes(unitA, unitB);
-}
+};
 
 function compareBySubfactions(cardA, cardB) {
 	var subfactionsA = cardA.sub_type;
@@ -2219,7 +2219,7 @@ function sortByRunes(unitA, unitB) {
 var getUnitFromCard = function (htmlCard) {
 	var unit = {
 		id: htmlCard.attributes.getNamedItem("data-id").value,
-		level: htmlCard.attributes.getNamedItem("data-level").value,
+		level: htmlCard.attributes.getNamedItem("data-level").value
 	};
 	var runeIDs = htmlCard.attributes.getNamedItem("data-runeids").value.split(",");
 	var runes = [];
@@ -2235,7 +2235,7 @@ var getUnitFromCard = function (htmlCard) {
 	}
 	unit.runes = runes;
 	return unit;
-}
+};
 
 var skillStyle = document.createElement('style');
 (function () {
@@ -2314,7 +2314,7 @@ function generateLink() {
 		params.push("hash=" + hash);
 	}
 	if (inventory) {
-		params.push("inventory=" + hash_encode({ commander: elariaCaptain, deck: inventory }));
+		params.push("inventory=" + base64.encodeHash({ commander: elariaCaptain, deck: inventory }));
 	}
 	if (inventoryMode) {
 		params.push("unlimited");

@@ -299,27 +299,23 @@
         // Cache decks where possible
         // Load player deck
         if (getdeck) {
-            cache_player_deck = hash_decode(getdeck);
-        } else if (getcardlist) {
-            cache_player_deck = load_deck_from_cardlist(getcardlist);
+            cache_player_deck = base64.decodeHash(getdeck);
         } else {
-            cache_player_deck = load_deck_from_cardlist();
+            cache_player_deck = getDefaultDeck();
         }
 
         // Load enemy deck
         pvpAI = !_DEFINED("randomAI");
         if (getdeck2) {
-            cache_cpu_deck = hash_decode(getdeck2);
-        } else if (getcardlist2) {
-            cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
+            cache_cpu_deck = base64.decodeHash(getdeck2);
         } else if (getmission) {
-            cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+            cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
-            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+            cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else {
-            cache_cpu_deck = load_deck_from_cardlist();
+            cache_cpu_deck = getDefaultDeck();
         }
 
         var params = {};
@@ -427,27 +423,23 @@
         // Cache decks where possible
         // Load player deck
         if (getdeck) {
-            cache_player_deck = hash_decode(getdeck);
-        } else if (getcardlist) {
-            cache_player_deck = load_deck_from_cardlist(getcardlist);
+            cache_player_deck = base64.decodeHash(getdeck);
         } else {
-            cache_player_deck = load_deck_from_cardlist();
+            cache_player_deck = getDefaultDeck();
         }
 
         // Load enemy deck
         pvpAI = !_DEFINED("randomAI");
         if (getdeck2) {
-            cache_cpu_deck = hash_decode(getdeck2);
-        } else if (getcardlist2) {
-            cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
+            cache_cpu_deck = base64.decodeHash(getdeck2);
         } else if (getmission) {
-            cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+            cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
-            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+            cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else {
-            cache_cpu_deck = load_deck_from_cardlist();
+            cache_cpu_deck = getDefaultDeck();
         }
 
         outp(""); // Clear display
@@ -504,7 +496,7 @@
         //num_sims = Number(document.getElementById('sims').value) || 0;
         sims_left = num_sims;
 
-        cache_player_deck = hash_decode(nextHash);
+        cache_player_deck = base64.decodeHash(nextHash);
 
         var params = {};
         params['cache_player_deck'] = cache_player_deck;

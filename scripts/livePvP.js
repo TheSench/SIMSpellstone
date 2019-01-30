@@ -275,7 +275,7 @@ $(document).ready(function () {
         var bgCheckBoxes = document.getElementsByName("battleground");
         for (var i = 0; i < bgCheckBoxes.length; i++) {
             d = bgCheckBoxes[i];
-            if (d.checked) bges += decimal_to_base64(d.value, 2);
+            if (d.checked) bges += base64.fromDecimal(d.value, 2);
         }
         return bges;
     }
@@ -283,7 +283,7 @@ $(document).ready(function () {
     function setBGEs(bges) {
         $("#battleground input").prop("checked", false);
         for (var i = 0; i < bges.length; i += 2) {
-            var bge = base64_to_decimal(bges.substring(i, i + 2));
+            var bge = base64.toDecimal(bges.substring(i, i + 2));
             $("#battleground_" + bge).prop('checked', true);
         }
     }

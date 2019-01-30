@@ -6,12 +6,12 @@ var mapBGEDialog;
 $(function () {
     $("#deck1").change(function () {
         this.value = this.value.trim();
-        deckChanged("attack_deck", hash_decode(this.value), 'player');
+        deckChanged("attack_deck", base64.decodeHash(this.value), 'player');
     });
 
     $("#deck2").change(function () {
         this.value = this.value.trim();
-        deckChanged("defend_deck", hash_decode(this.value), 'cpu');
+        deckChanged("defend_deck", base64.decodeHash(this.value), 'cpu');
     });
 
     $("#battleground").change(function () {
@@ -88,14 +88,14 @@ $(function () {
         var selectedRaid = $("#raid").val();
         var raidlevel = $('#raid_level');
         if (selectedRaid) {
-            newDeck = load_deck_raid(selectedRaid, raidlevel.val());
+            newDeck = loadDeck.raid(selectedRaid, raidlevel.val());
             if (RAIDS[selectedRaid].type === "Dungeon") {
                 raidlevel.attr("max", 150);
             } else {
                 raidlevel.attr("max", 40);
             }
         } else {
-            newDeck = hash_decode('');
+            newDeck = base64.decodeHash('');
             raidlevel.attr("max", 40);
         }
 
@@ -111,9 +111,9 @@ $(function () {
         var missionID = $('#mission').val();
         if (missionID) {
             var missionLevel = $('#mission_level').val();
-            newDeck = load_deck_mission(missionID, missionLevel);
+            newDeck = loadDeck.mission(missionID, missionLevel);
         } else {
-            newDeck = hash_decode('');
+            newDeck = base64.decodeHash('');
         }
         deckChanged("defend_deck", newDeck, 'cpu');
     });
@@ -157,11 +157,8 @@ $(function () {
         }
     });
 
-    deckChanged("attack_deck", hash_decode(''));
-    deckChanged("defend_deck", hash_decode(''));
-
-    // Disable this as we now draw the full deck
-    debug_dump_decks = function () { };
+    deckChanged("attack_deck", base64.decodeHash(''));
+    deckChanged("defend_deck", base64.decodeHash(''));
 
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
@@ -214,10 +211,10 @@ function setDeckSortable(deckField, associatedHashField) {
             var newPos = ui.item.index() - 1;
 
             var hashField = $(associatedHashField);
-            var deck = hash_decode(hashField.val());
+            var deck = base64.decodeHash(hashField.val());
             var array = deck.deck;
             array.splice(newPos, 0, array.splice(origPos, 1)[0]);
-            var hash = hash_encode(deck);
+            var hash = base64.encodeHash(deck);
             hashField.val(hash);
         }
     });

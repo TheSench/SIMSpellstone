@@ -3,74 +3,21 @@
 <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
-    <link rel="stylesheet" type="text/css" href="styles/card.css">
-    <link id="theme" rel="stylesheet" type="text/css" href="styles/sass/themes/light.css">
-    <link rel="stylesheet" type="text/css" href="styles/sass/header.css">
-    <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
-    <link rel="stylesheet" type="text/css" href="styles/sass/tutorial.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="dist/light.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/main.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/spritesheet.min.css">
     <link rel="icon" type="image/png" href="res/favicon-16x16.png">
-    <!--<link rel="stylesheet" href="Content/themes/base/smoothness.css">-->
 
-    <script src="lib/jquery-2.2.1.min.js"></script>
-    <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-
-    <script src="lib/angular.min.js"></script>
-
-    <!-- This script contains the cached data for cards, missions, quests, raids,
-        and battlegrounds -->
-    <script src="scripts/data/skills.js"></script>
-    <script src="scripts/data/cards.js"></script>
-    <script src="scripts/data/fusions.js"></script>
-    <script src="scripts/data/bges.js"></script>
-    <script src="scripts/data/campaign.js"></script>
-    <script src="scripts/data/runes.js"></script>
-    <script src="scripts/data/raids.js"></script>
-    <script src="scripts/data/common.js"></script>
-
-    <script id="shared_functions" src="scripts/shared.js"></script>
-
-    <script id="single_threaded_simulator" src="scripts/sim_controller.js"></script>
-    <script id="single_threaded_simulator" src="scripts/single_threaded.js"></script>
-
-    <!-- These are the generic functions/variables used to simulate battles.
-    All of the logic for simulating a single battle goes in here.
-    -->
-    <script id="simulator_base" src="scripts/simulator_base.js"></script>
-    <script id="simulator_base" src="scripts/card_battle.js"></script>
-
-    <!-- This script handles the base GUI functionality (getting user input and displaying simulation). -->
-    <script src="scripts/ng-simulator-controller.js"></script>
-    <script id="deckstorage" src="scripts/localstorage-controller.js"></script>
-    <script id="gui_script_2.0" src="scripts/gui_script_2.0.js"></script>
-    <script id="gui_script" src="scripts/gui_script.js"></script>
-
-    <!-- This script handles drawing the UI for user-controlled mode. -->
-    <script id="gui_script" src="scripts/cards_gui.js"></script>
-
-    <!-- SIMULATOR CODE ENDS HERE -->
-    <script src="scripts/tutorial/pvp-tutorial.js"></script>
-    <script src="scripts/sim-tutorial.js"></script>
-    <script src="lib/peer.min.js"></script>
-    <script src="scripts/livePvP.js"></script>
+    <script src="dist/vendor.js"></script>
+    <script src="dist/data.min.js"></script>
+    <script src="dist/livePvP.min.js"></script>
 </head>
 <body>
     <header id="header"></header>
     <input id="toggleTheme" type="button" onclick="toggleTheme()" value="Dark Theme" />
     <label for="myPeeerID">My ID</label>
     <input id="myPeerID" type="text" size="20" onclick="this.select();" readonly="readonly" />
-    <!--
-    <div class="circle primary-black">Primary-Black</div>
-    <div class="circle primary-neutral">Primary-Neutral</div>
-    <div class="circle primary-color">Primary</div>
-    <div class="circle primary-tint">Primary-Tint</div>
-    <div class="circle primary-white">Primary-White</div>
-    <br/>
-    <div class="circle secondary-black">Secondary-Black</div>
-    <div class="circle secondary-neutral">Secondary-Neutral</div>
-    <div class="circle secondary-color">Secondary</div>
-    <div class="circle secondary-tint">Secondary-Tint</div>
-    <div class="circle secondary-white">Secondary-White</div>
-    -->
+
     <div id="ui" ng-controller="SimulatorCtrl" ng-init="campaignSections()">
         <form>
             <hr />

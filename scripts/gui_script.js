@@ -119,7 +119,7 @@ function processQueryString() {
 		var bges = _GET('bges');
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
-			var bge = base64_to_decimal(bges.substring(i, i + 2));
+			var bge = base64.toDecimal(bges.substring(i, i + 2));
 			$("#battleground_" + bge).prop('checked', true);
 		}
 	} else {
@@ -133,7 +133,7 @@ function processQueryString() {
 	if (bges) {
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
-			var bge = base64_to_decimal(bges.substring(i, i + 2)) + 10000;
+			var bge = base64.toDecimal(bges.substring(i, i + 2)) + 10000;
 			$("#self-battleground_" + bge).prop('checked', true);
 		}
 	}
@@ -141,7 +141,7 @@ function processQueryString() {
 	if (bges) {
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
-			var bge = base64_to_decimal(bges.substring(i, i + 2)) + 10000;
+			var bge = base64.toDecimal(bges.substring(i, i + 2)) + 10000;
 			$("#enemy-battleground_" + bge).prop('checked', true);
 		}
 	}
@@ -392,17 +392,13 @@ function showWinrate() {
 		var current_deck = '';
 		var deck = [];
 		var deck1Hash = document.getElementById('deck1').value;
-		var deck1List = $('#cardlist').val();
-		if (deck1List) deck1List = deck1List.value;
 
 		// Load player deck
 		if (deck1Hash) {
-			deck.player = hash_decode(deck1Hash);
-		} else if (deck1List) {
-			deck.player = load_deck_from_cardlist(deck1List);
+			deck.player = base64.decodeHash(deck1Hash);
 		}
 		if (deck.player) {
-			current_deck = hash_encode(deck.player);
+			current_deck = base64.encodeHash(deck.player);
 		}
 
 		//battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
@@ -498,7 +494,7 @@ function generate_link(autostart) {
 	var bgCheckBoxes = document.getElementsByName("battleground");
 	for (var i = 0; i < bgCheckBoxes.length; i++) {
 		d = bgCheckBoxes[i];
-		if (d.checked) bges += decimal_to_base64(d.value, 2);
+		if (d.checked) bges += base64.fromDecimal(d.value, 2);
 	}
 	parameters.push('bges=' + bges);
 
@@ -506,7 +502,7 @@ function generate_link(autostart) {
 	var bgCheckBoxes = document.getElementsByName("self-battleground");
 	for (var i = 0; i < bgCheckBoxes.length; i++) {
 		d = bgCheckBoxes[i];
-		if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
+		if (d.checked) bges += base64.fromDecimal(d.value - 10000, 2);
 	}
 	if (bges) {
 		parameters.push('selfbges=' + bges);
@@ -516,7 +512,7 @@ function generate_link(autostart) {
 	var bgCheckBoxes = document.getElementsByName("enemy-battleground");
 	for (var i = 0; i < bgCheckBoxes.length; i++) {
 		d = bgCheckBoxes[i];
-		if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
+		if (d.checked) bges += base64.fromDecimal(d.value - 10000, 2);
 	}
 	if (bges) {
 		parameters.push('enemybges=' + bges);
@@ -570,7 +566,7 @@ function load_deck_builder_for_field(fieldID) {
 	};
 	var hash = field.val();
 	if (!hash) {
-		hash = hash_encode({
+		hash = base64.encodeHash({
 			commander: elariaCaptain,
 			deck: []
 		});
@@ -580,7 +576,7 @@ function load_deck_builder_for_field(fieldID) {
 
 var deckBuilders = {};
 function load_deck_builder(player) {
-	if (player == 'player') {
+	if (player === 'player') {
 		var getdeck = $('#deck1').val();
 		var getmission;
 		var missionlevel;
@@ -600,15 +596,15 @@ function load_deck_builder(player) {
 		deck: []
 	};
 	if (getdeck) {
-		deck = hash_decode(getdeck);
+		deck = base64.decodeHash(getdeck);
 	} else if (getmission) {
-		deck = load_deck_mission(getmission, missionlevel);
+		deck = loadDeck.mission(getmission, missionlevel);
 	} else if (getraid) {
-		deck = load_deck_raid(getraid, raidlevel);
+		deck = loadDeck.raid(getraid, raidlevel);
 	}
 	var hash;
 	if (deck) {
-		hash = hash_encode(deck);
+		hash = base64.encodeHash(deck);
 	}
 
 	var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');

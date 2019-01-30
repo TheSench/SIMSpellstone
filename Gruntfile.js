@@ -13,6 +13,7 @@ module.exports = function (grunt) {
             deckbuilder: {
                 src: [
                     'scripts/data/fixGlobals.js',
+                    'scripts/modules/hashing.js',
                     'scripts/shared.js',
                     'scripts/cards_gui.js',
                     'scripts/updateCards.js',
@@ -28,6 +29,9 @@ module.exports = function (grunt) {
                 src: [
                     'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
+                    'scripts/modules/hashing.js',
+                    'scripts/modules/loadDeck.js',
+                    'scripts/modules/logging.js',
                     'scripts/shared.js',
                     'scripts/sim_controller.js',
                     'scripts/single_threaded.js',
@@ -44,22 +48,19 @@ module.exports = function (grunt) {
             },
             practice: {
                 src: [
-                    'scripts/data/fixGlobals.js',
-                    'scripts/updateCards.js',
-                    'scripts/shared.js',
-                    'scripts/sim_controller.js',
-                    'scripts/single_threaded.js',
-                    'scripts/simulator_base.js',
-                    'scripts/card_battle.js',
-                    'scripts/ng-simulator-controller.js',
-                    'scripts/localstorage-controller.js',
-                    'scripts/gui_script_2.0.js',
-                    'scripts/gui_script.js',
-                    'scripts/cards_gui.js',
-                    'scripts/tutorial/simulator-tutorial.js',
-                    'scripts/sim-tutorial.js'
+                    '<%= concat.simulator.dest %>',
+                    'scripts/card_battle.js'
                 ],
                 dest: 'dist/practice.js'
+            },
+            livePvP: {
+                src: [
+                    '<%= concat.practice.dest %>',
+                    'scripts/tutorial/pvp-tutorial.js',
+                    'lib/peer.min.js',
+                    'scripts/livePvP.js'
+                ],
+                dest: 'dist/livePvp.js'
             },
             data: {
                 src: [
@@ -121,6 +122,12 @@ module.exports = function (grunt) {
                 mangle: true,
                 files: {
                     'dist/practice.min.js': ['<%= concat.practice.dest %>']
+                }
+            },
+            livePvP: {
+                mangle: true,
+                files: {
+                    'dist/livePvP.min.js': ['<%= concat.livePvP.dest %>']
                 }
             }
         },

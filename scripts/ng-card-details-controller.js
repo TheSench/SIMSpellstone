@@ -384,8 +384,8 @@
         }
       };
     })
-    .filter('convertName', function () {
-      return window.convertName;
+    .filter('skillNameFromID', function () {
+      return window.skillNameFromID;
     })
     .controller('DeckBuilderCtrl', ['$scope', '$window', DeckBuilderCtrl]);
 
