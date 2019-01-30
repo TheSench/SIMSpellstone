@@ -4,7 +4,6 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-
         concat: {
             options: {
                 // define a string to put between each file in the concatenated output
@@ -271,7 +270,7 @@ module.exports = function (grunt) {
             },
         },
         cacheBust: {
-            deckbuilder: {
+            static: {
                 options: {
                     assets: [
                         '**/*.css',
@@ -287,7 +286,8 @@ module.exports = function (grunt) {
                 src: [
                     'DeckBuilder.html',
                     'Battle.html',
-                    'Titans.html'
+                    'Titans.html',
+                    'LivePvP.html'
                 ]
             },
         }
