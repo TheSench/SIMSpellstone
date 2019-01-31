@@ -61510,6 +61510,95 @@ var CARDS = {
 			}
 		}
 	},
+	"5224": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 29,
+		"hidden_until": "1548954000000",
+		"id": "5224",
+		"maxLevel": 6,
+		"name": "Baaht, Fire Forger",
+		"picture": "Elemental_Angel_Blackmith_Living_Flame_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2,
+				"y": "6"
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 30,
+				"skill": []
+			},
+			"3": {
+				"health": 31,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "6"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "6"
+					}
+				]
+			},
+			"5": {
+				"health": 32,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "6"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "6"
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -96856,6 +96945,89 @@ var CARDS = {
 						"x": 2
 					}
 				]
+			}
+		}
+	},
+	"7223": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"hidden_until": "1549299600000",
+		"id": "7223",
+		"maxLevel": 6,
+		"name": "Vombomber Recruit",
+		"picture": "Frog_Angel_Bomber_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4",
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"health": 22,
+				"skill": []
 			}
 		}
 	},
@@ -145981,6 +146153,112 @@ var CARDS = {
 			}
 		}
 	},
+	"15224": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1548954000000",
+		"id": "15224",
+		"maxLevel": 6,
+		"name": "Baaht, Flame Forger",
+		"picture": "Elemental_Angel_Blackmith_Living_Flame_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3,
+				"y": "6"
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 34,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "6"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "6"
+					}
+				]
+			},
+			"4": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "6"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "6"
+					}
+				]
+			},
+			"5": {
+				"health": 36,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "6"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "6"
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -182254,6 +182532,88 @@ var CARDS = {
 						"x": 2
 					}
 				]
+			}
+		}
+	},
+	"17223": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1549299600000",
+		"id": "17223",
+		"maxLevel": 6,
+		"name": "Vombomber Cadet",
+		"picture": "Frog_Angel_Bomber_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4",
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": []
+			},
+			"5": {
+				"attack": 8,
+				"health": 25,
+				"skill": []
+			},
+			"6": {
+				"health": 26,
+				"skill": []
 			}
 		}
 	},
@@ -218623,6 +218983,96 @@ var CARDS = {
 			}
 		}
 	},
+	"25224": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1548954000000",
+		"id": "25224",
+		"maxLevel": 6,
+		"name": "Baaht, Infero Forger",
+		"picture": "Elemental_Angel_Blackmith_Living_Flame_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4,
+				"y": "6"
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 5,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"health": 39,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "6"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "6"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "6"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6,
+						"y": "6"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -254847,6 +255297,102 @@ var CARDS = {
 						"all": "1",
 						"id": "rally",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"27223": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1549299600000",
+		"id": "27223",
+		"maxLevel": 6,
+		"name": "Vombomber",
+		"picture": "Frog_Angel_Bomber_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4",
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 29,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
 					}
 				]
 			}
