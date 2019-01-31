@@ -57,18 +57,8 @@ function parseInt(value) {
     return value >> 0;
 }
 
-var curry = function (uncurried) {
-    var parameters = Array.prototype.slice.call(arguments, 1);
-    return function () {
-        return uncurried.apply(this, parameters.concat(
-            Array.prototype.slice.call(arguments, 0)
-        ));
-    };
-};
-
-
 /* Inspired by https://davidwalsh.name/javascript-debounce-function */
-Function.prototype.debounce = function (wait) {
+Function.prototype.debounce = function debounce(wait) {
     var func = this;
     var timeout;
     return function () {
@@ -81,30 +71,23 @@ Function.prototype.debounce = function (wait) {
         timeout = setTimeout(later, wait);
     };
 };
-Function.prototype.throttle = (function () {
 
-    var _emptyFunc = function () { };
-
-    return function (wait) {
-        var func = this;
-        var timeout;
-        var fired = false;
-        return function () {
-            var context = this, args = arguments;
-            if (timeout) {
-                fired = false;
-            } else {
+Function.prototype.throttle = function throttle(wait) {
+    var func = this;
+    var timeout;
+    
+    return function () {
+        var context = this, args = arguments;
+        if (!timeout) {
+            func.apply(context, args);
+            var later = function () {
+                timeout = null;
                 func.apply(context, args);
-                fired = true;
-                var later = function () {
-                    timeout = null;
-                    func.apply(context, args);
-                };
-                timeout = setTimeout(later, 250);
-            }
-        };
+            };
+            timeout = setTimeout(later, wait);
+        }
     };
-}());
+};
 
 // GET variables
 function _GET(variable) {
@@ -665,7 +648,6 @@ var getEnhancement = function (card, s, base) {
 };
 
 var isImbued = function (card, skillID, i) {
-    var activation = false;
     var imbueSkillsKey;
     var skillType = SKILL_DATA[skillID].type;
     switch (skillType) {
@@ -711,7 +693,7 @@ var addRunes = function (card, runes) {
 
         for (var key in statBoost) {
             var boost = statBoost[key];
-            if (key == "skill") {
+            if (key === "skill") {
                 // Will be handled later
             } else {
                 if (isNaN(boost)) {
@@ -730,13 +712,13 @@ function addRunesToSkills(skills, runes, runeMult) {
         var statBoost = RUNES[runeID].stat_boost;
         for (var key in statBoost) {
             var boost = statBoost[key];
-            if (key == "skill") {
+            if (key === "skill") {
                 var skillID = boost.id;
                 var amount = boost.x;
                 var mult = boost.mult;
                 for (var s = 0; s < skills.length; s++) {
                     var skill = skills[s];
-                    if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
+                    if (skill.id === skillID && (skill.all || 0) == (boost.all || 0)) {
                         skill = copy_skill(skill);
                         if (!amount && mult) amount = Math.ceil(skill.x * mult);
                         if (boost.min_bonus) amount = Math.max(amount, boost.min_bonus);
@@ -766,7 +748,7 @@ var canUseRune = function (card, runeID) {
         }
     }
     for (var key in statBoost) {
-        if (key == "skill") {
+        if (key === "skill") {
             var skill = statBoost[key];
             var all = (skill.all ? 1 : 0);
             if (!card.hasSkill(skill.id, all)) return false;
@@ -855,7 +837,7 @@ var MakeTrap = (function () {
                     targets[index].trap = trap;
 
                     if (debug) {
-                        echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
+                        echo += this.name + ' inserts ' + log.name(trap) + ' into the opposing deck.<br/>';
                     }
                 }
             }
@@ -940,11 +922,11 @@ function addRaidBGE(battlegrounds, raidID, raidLevel) {
                     var bge = MakeBattleground(battleground.name, effect, mult);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onTurn.push(bge);
-                } else if (["evolve_skill", "add_skill", "scale_attributes", "statChange", "runeMultiplier"].indexOf(effect_Type) >= 0) {
+                } else if (["evolve_skill", "add_skill", "scale_attributes", "statChange", "runeMultiplier"].indexOf(effect_type) >= 0) {
                     var bge = MakeSkillModifier(battleground.name, effect);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
-                } else if (["scale_attack", "scale_health"].indexOf(effect_Type) >= 0) {
+                } else if (["scale_attack", "scale_health"].indexOf(effect_type) >= 0) {
                     var bge = MakeStatScalar(battleground.name, effect);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
