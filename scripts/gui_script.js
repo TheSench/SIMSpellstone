@@ -2,7 +2,8 @@
 
 var deckPopupDialog;
 
-window.onerror = function (message, url, linenumber) {
+window.addEventListener('error', function (message, url, linenumber) {
+
 	if (linenumber == 0) {
 		var msg = "<br><br><i>Error Message:</i><br><br>" +
 			"<i>It appears you're having trouble loading SimSpellstone. " +
@@ -44,7 +45,7 @@ window.onerror = function (message, url, linenumber) {
 
 	// Stop the recursion if any
 	if (current_timeout) clearTimeout(current_timeout);
-};
+});
 
 // When Page Loads...
 function processQueryString() {
