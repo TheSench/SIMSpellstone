@@ -81,7 +81,6 @@ module.exports = function (grunt) {
                     'lib/jquery-2.2.1.min.js',
                     'lib/jquery-ui-1.11.4.custom/jquery-ui.min.js',
                     'lib/angular.min.js',
-                    'lib/googleAnalytics.js',
                     'lib/seedrandom.min.js'
                 ],
                 dest: 'dist/vendor.js'

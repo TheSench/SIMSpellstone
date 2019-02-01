@@ -2,9 +2,15 @@
 
 var deckPopupDialog;
 
-window.addEventListener('error', function (message, url, linenumber) {
+window.addEventListener('error', function (message, url, lineNumber) {
+	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
 
-	if (linenumber == 0) {
+	ga('send', 'exception', {
+		'exDescription': errorDescription,
+		'exFatal': false
+	});
+
+	if (lineNumber === 0) {
 		var msg = "<br><br><i>Error Message:</i><br><br>" +
 			"<i>It appears you're having trouble loading SimSpellstone. " +
 			"Thanks.</i><br><br>";
@@ -15,33 +21,31 @@ window.addEventListener('error', function (message, url, linenumber) {
 		}
 		return 1;
 	}
-	var err_msg = "JavaScript error:\n " + message + "\n on line " + linenumber + "\n for " + url;
-	var short_msg = err_msg;
 
-	err_msg += "\n";
-	err_msg += "Browser CodeName: " + navigator.appCodeName + "\n";
-	err_msg += "Browser Name: " + navigator.appName + "\n";
-	err_msg += "Browser Version: " + navigator.appVersion + "\n";
-	err_msg += "Cookies Enabled: " + navigator.cookieEnabled + "\n";
-	err_msg += "Platform: " + navigator.platform + "\n";
-	err_msg += "User-agent header: " + navigator.userAgent + "\n";
-	err_msg += "SimSpellstone version: " + text_version + "\n";
+	errorDescription += "\n";
+	errorDescription += "Browser CodeName: " + navigator.appCodeName + "\n";
+	errorDescription += "Browser Name: " + navigator.appName + "\n";
+	errorDescription += "Browser Version: " + navigator.appVersion + "\n";
+	errorDescription += "Cookies Enabled: " + navigator.cookieEnabled + "\n";
+	errorDescription += "Platform: " + navigator.platform + "\n";
+	errorDescription += "User-agent header: " + navigator.userAgent + "\n";
+	errorDescription += "SimSpellstone version: " + text_version + "\n";
 
-	if (getdeck) err_msg += "Deck hash: " + getdeck + "\n";
-	if (getcardlist) err_msg += "Card list: " + getcardlist + "\n";
-	if (getordered) err_msg += "Ordered: Yes\n";
-	if (getexactorder) err_msg += "Exact-order: Yes\n";
-	if (surge) err_msg += "Surge: Yes\n";
-	if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
-	if (getcardlist2) err_msg += "Enemy Card list: " + getcardlist2 + "\n";
-	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
-	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
-	if (getmission) err_msg += "Mission ID: " + getmission + "\n";
-	if (getraid) err_msg += "Raid ID: " + getraid + "\n";
-	if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
-	if (games) err_msg += "Sims run so far: " + games + "\n";
+	if (getdeck) errorDescription += "Deck hash: " + getdeck + "\n";
+	if (getcardlist) errorDescription += "Card list: " + getcardlist + "\n";
+	if (getordered) errorDescription += "Ordered: Yes\n";
+	if (getexactorder) errorDescription += "Exact-order: Yes\n";
+	if (surge) errorDescription += "Surge: Yes\n";
+	if (getdeck2) errorDescription += "Enemy deck hash: " + getdeck2 + "\n";
+	if (getcardlist2) errorDescription += "Enemy Card list: " + getcardlist2 + "\n";
+	if (getordered2) errorDescription += "Enemy Ordered: Yes\n";
+	if (getexactorder2) errorDescription += "Enemy Exact-order: Yes\n";
+	if (getmission) errorDescription += "Mission ID: " + getmission + "\n";
+	if (getraid) errorDescription += "Raid ID: " + getraid + "\n";
+	if (getbattleground) errorDescription += "Battleground ID: " + getbattleground + "\n";
+	if (games) errorDescription += "Sims run so far: " + games + "\n";
 
-	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
+	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + errorDescription + "</blockquote></textarea>" + echo);
 
 	// Stop the recursion if any
 	if (current_timeout) clearTimeout(current_timeout);

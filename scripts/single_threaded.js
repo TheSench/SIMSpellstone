@@ -32,6 +32,7 @@
             setSimStatus("");
         }
 
+        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', sims_left);
         current_timeout = setTimeout(run_sims);
 
         return false;
@@ -57,7 +58,6 @@
     };
 
     function run_sims() {
-
         if (SIMULATOR.user_controlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();

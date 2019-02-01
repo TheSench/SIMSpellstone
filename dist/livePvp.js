@@ -898,18 +898,8 @@ function parseInt(value) {
     return value >> 0;
 }
 
-var curry = function (uncurried) {
-    var parameters = Array.prototype.slice.call(arguments, 1);
-    return function () {
-        return uncurried.apply(this, parameters.concat(
-            Array.prototype.slice.call(arguments, 0)
-        ));
-    };
-};
-
-
 /* Inspired by https://davidwalsh.name/javascript-debounce-function */
-Function.prototype.debounce = function (wait) {
+Function.prototype.debounce = function debounce(wait) {
     var func = this;
     var timeout;
     return function () {
@@ -922,30 +912,23 @@ Function.prototype.debounce = function (wait) {
         timeout = setTimeout(later, wait);
     };
 };
-Function.prototype.throttle = (function () {
 
-    var _emptyFunc = function () { };
-
-    return function (wait) {
-        var func = this;
-        var timeout;
-        var fired = false;
-        return function () {
-            var context = this, args = arguments;
-            if (timeout) {
-                fired = false;
-            } else {
+Function.prototype.throttle = function throttle(wait) {
+    var func = this;
+    var timeout;
+    
+    return function () {
+        var context = this, args = arguments;
+        if (!timeout) {
+            func.apply(context, args);
+            var later = function () {
+                timeout = null;
                 func.apply(context, args);
-                fired = true;
-                var later = function () {
-                    timeout = null;
-                    func.apply(context, args);
-                };
-                timeout = setTimeout(later, 250);
-            }
-        };
+            };
+            timeout = setTimeout(later, wait);
+        }
     };
-}());
+};
 
 // GET variables
 function _GET(variable) {
@@ -1506,7 +1489,6 @@ var getEnhancement = function (card, s, base) {
 };
 
 var isImbued = function (card, skillID, i) {
-    var activation = false;
     var imbueSkillsKey;
     var skillType = SKILL_DATA[skillID].type;
     switch (skillType) {
@@ -1552,7 +1534,7 @@ var addRunes = function (card, runes) {
 
         for (var key in statBoost) {
             var boost = statBoost[key];
-            if (key == "skill") {
+            if (key === "skill") {
                 // Will be handled later
             } else {
                 if (isNaN(boost)) {
@@ -1571,13 +1553,13 @@ function addRunesToSkills(skills, runes, runeMult) {
         var statBoost = RUNES[runeID].stat_boost;
         for (var key in statBoost) {
             var boost = statBoost[key];
-            if (key == "skill") {
+            if (key === "skill") {
                 var skillID = boost.id;
                 var amount = boost.x;
                 var mult = boost.mult;
                 for (var s = 0; s < skills.length; s++) {
                     var skill = skills[s];
-                    if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
+                    if (skill.id === skillID && (skill.all || 0) == (boost.all || 0)) {
                         skill = copy_skill(skill);
                         if (!amount && mult) amount = Math.ceil(skill.x * mult);
                         if (boost.min_bonus) amount = Math.max(amount, boost.min_bonus);
@@ -1607,7 +1589,7 @@ var canUseRune = function (card, runeID) {
         }
     }
     for (var key in statBoost) {
-        if (key == "skill") {
+        if (key === "skill") {
             var skill = statBoost[key];
             var all = (skill.all ? 1 : 0);
             if (!card.hasSkill(skill.id, all)) return false;
@@ -1696,7 +1678,7 @@ var MakeTrap = (function () {
                     targets[index].trap = trap;
 
                     if (debug) {
-                        echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
+                        echo += this.name + ' inserts ' + log.name(trap) + ' into the opposing deck.<br/>';
                     }
                 }
             }
@@ -1781,11 +1763,11 @@ function addRaidBGE(battlegrounds, raidID, raidLevel) {
                     var bge = MakeBattleground(battleground.name, effect, mult);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onTurn.push(bge);
-                } else if (["evolve_skill", "add_skill", "scale_attributes", "statChange", "runeMultiplier"].indexOf(effect_Type) >= 0) {
+                } else if (["evolve_skill", "add_skill", "scale_attributes", "statChange", "runeMultiplier"].indexOf(effect_type) >= 0) {
                     var bge = MakeSkillModifier(battleground.name, effect);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
-                } else if (["scale_attack", "scale_health"].indexOf(effect_Type) >= 0) {
+                } else if (["scale_attack", "scale_health"].indexOf(effect_type) >= 0) {
                     var bge = MakeStatScalar(battleground.name, effect);
                     bge.enemy_only = enemy_only;
                     battlegrounds.onCreate.push(bge);
@@ -2404,6 +2386,7 @@ var SIM_CONTROLLER = (function () {
             setSimStatus("");
         }
 
+        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', sims_left);
         current_timeout = setTimeout(run_sims);
 
         return false;
@@ -2429,7 +2412,6 @@ var SIM_CONTROLLER = (function () {
     };
 
     function run_sims() {
-
         if (SIMULATOR.user_controlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
@@ -6387,9 +6369,15 @@ function drawFrames() {
 
 var deckPopupDialog;
 
-window.addEventListener('error', function (message, url, linenumber) {
+window.addEventListener('error', function (message, url, lineNumber) {
+	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
 
-	if (linenumber == 0) {
+	ga('send', 'exception', {
+		'exDescription': errorDescription,
+		'exFatal': false
+	});
+
+	if (lineNumber === 0) {
 		var msg = "<br><br><i>Error Message:</i><br><br>" +
 			"<i>It appears you're having trouble loading SimSpellstone. " +
 			"Thanks.</i><br><br>";
@@ -6400,33 +6388,31 @@ window.addEventListener('error', function (message, url, linenumber) {
 		}
 		return 1;
 	}
-	var err_msg = "JavaScript error:\n " + message + "\n on line " + linenumber + "\n for " + url;
-	var short_msg = err_msg;
 
-	err_msg += "\n";
-	err_msg += "Browser CodeName: " + navigator.appCodeName + "\n";
-	err_msg += "Browser Name: " + navigator.appName + "\n";
-	err_msg += "Browser Version: " + navigator.appVersion + "\n";
-	err_msg += "Cookies Enabled: " + navigator.cookieEnabled + "\n";
-	err_msg += "Platform: " + navigator.platform + "\n";
-	err_msg += "User-agent header: " + navigator.userAgent + "\n";
-	err_msg += "SimSpellstone version: " + text_version + "\n";
+	errorDescription += "\n";
+	errorDescription += "Browser CodeName: " + navigator.appCodeName + "\n";
+	errorDescription += "Browser Name: " + navigator.appName + "\n";
+	errorDescription += "Browser Version: " + navigator.appVersion + "\n";
+	errorDescription += "Cookies Enabled: " + navigator.cookieEnabled + "\n";
+	errorDescription += "Platform: " + navigator.platform + "\n";
+	errorDescription += "User-agent header: " + navigator.userAgent + "\n";
+	errorDescription += "SimSpellstone version: " + text_version + "\n";
 
-	if (getdeck) err_msg += "Deck hash: " + getdeck + "\n";
-	if (getcardlist) err_msg += "Card list: " + getcardlist + "\n";
-	if (getordered) err_msg += "Ordered: Yes\n";
-	if (getexactorder) err_msg += "Exact-order: Yes\n";
-	if (surge) err_msg += "Surge: Yes\n";
-	if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
-	if (getcardlist2) err_msg += "Enemy Card list: " + getcardlist2 + "\n";
-	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
-	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
-	if (getmission) err_msg += "Mission ID: " + getmission + "\n";
-	if (getraid) err_msg += "Raid ID: " + getraid + "\n";
-	if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
-	if (games) err_msg += "Sims run so far: " + games + "\n";
+	if (getdeck) errorDescription += "Deck hash: " + getdeck + "\n";
+	if (getcardlist) errorDescription += "Card list: " + getcardlist + "\n";
+	if (getordered) errorDescription += "Ordered: Yes\n";
+	if (getexactorder) errorDescription += "Exact-order: Yes\n";
+	if (surge) errorDescription += "Surge: Yes\n";
+	if (getdeck2) errorDescription += "Enemy deck hash: " + getdeck2 + "\n";
+	if (getcardlist2) errorDescription += "Enemy Card list: " + getcardlist2 + "\n";
+	if (getordered2) errorDescription += "Enemy Ordered: Yes\n";
+	if (getexactorder2) errorDescription += "Enemy Exact-order: Yes\n";
+	if (getmission) errorDescription += "Mission ID: " + getmission + "\n";
+	if (getraid) errorDescription += "Raid ID: " + getraid + "\n";
+	if (getbattleground) errorDescription += "Battleground ID: " + getbattleground + "\n";
+	if (games) errorDescription += "Sims run so far: " + games + "\n";
 
-	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
+	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + errorDescription + "</blockquote></textarea>" + echo);
 
 	// Stop the recursion if any
 	if (current_timeout) clearTimeout(current_timeout);

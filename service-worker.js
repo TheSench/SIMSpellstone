@@ -5,7 +5,7 @@ workbox.googleAnalytics.initialize();
 if (workbox) {
     workbox.routing.registerRoute(
         /.*\.html/,
-        workbox.strategies.staleWhileRevalidate({
+        workbox.strategies.networkFirst({
             cacheName: 'html-cache'
         })
     );
