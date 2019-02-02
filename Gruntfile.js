@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+    require('time-grunt')(grunt);
     const mozjpeg = require('imagemin-mozjpeg');
 
     grunt.initConfig({
@@ -11,9 +12,10 @@ module.exports = function (grunt) {
             },
             deckbuilder: {
                 src: [
+                    //'scripts/require.config.js',
+                    'scripts/modules/cardApi.js',
                     'scripts/data/fixGlobals.js',
                     'scripts/modules/hashing.js',
-                    'scripts/modules/makeUnit.js',
                     'scripts/shared.js',
                     'scripts/cards_gui.js',
                     'scripts/updateCards.js',
@@ -27,12 +29,13 @@ module.exports = function (grunt) {
             },
             simulator: {
                 src: [
+                    //'scripts/require.config.js',
+                    'scripts/modules/cardApi.js',
                     'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
                     'scripts/modules/hashing.js',
                     'scripts/modules/loadDeck.js',
                     'scripts/modules/logging.js',
-                    'scripts/modules/makeUnit.js',
                     'scripts/shared.js',
                     'scripts/sim_controller.js',
                     'scripts/single_threaded.js',
@@ -83,7 +86,9 @@ module.exports = function (grunt) {
                     'lib/jquery-3.3.1.min.js',
                     'lib/jquery-ui-1.12.1.custom/jquery-ui.min.js',
                     'lib/angular.min.js',
-                    'lib/seedrandom.min.js'
+                    'lib/seedrandom.min.js',
+                    //'lib/require.js'
+                    'scripts/require.sync.js'
                 ],
                 dest: 'dist/vendor.js'
             },
@@ -147,9 +152,23 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            scripts: {
-                files: ['scripts/**/*.js'],
+            jhint: {
+                files: [
+                    'scripts/**/*.js'
+                ],
                 tasks: ['jshint'],
+                options: {
+                    spawn: false
+                }
+            },
+            rebuild: {
+                files: [
+                    'register-worker.js',
+                    'service-worker.js',
+                    'scripts/**/*.js',
+                    'html/**/*.html'
+                ],
+                tasks: ['build-main'],
                 options: {
                     spawn: false
                 }
@@ -319,8 +338,15 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-cache-bust');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-newer');
 
-    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy', 'cacheBust']);
+    grunt.registerTask('concat-main', ['newer:concat:deckbuilder','newer:concat:simulator','newer:concat:practice','newer:concat:livePvP']);
+    grunt.registerTask('uglify-main', ['newer:uglify:deckbuilder','newer:uglify:simulator','newer:uglify:practice','newer:uglify:livePvP']);
+
+    grunt.registerTask('full-build', ['clean', /*'jshint',*/ 'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy:html', 'cacheBust']);
+    grunt.registerTask('build-main', ['concat-main', 'uglify-main', 'newer:copy:html', 'newer:cacheBust']);
+
+    grunt.registerTask('default', ['full-build']);
 
     // On watch events configure jshint:all to only run on changed file
     // on watch events configure jshint:all to only run on changed file

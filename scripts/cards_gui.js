@@ -1,6 +1,10 @@
 ﻿"use strict";
+
 var CARD_GUI = {};
 (function () {
+	
+	var cardApi = require('cardApi');
+
 	var assetsRoot = '';
 
 	function clearCardSpace() {

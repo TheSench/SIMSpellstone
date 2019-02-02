@@ -1,4 +1,4 @@
-var cardApi = (function () {
+define('cardApi', function () {
     var api = {
         byId: getCardByID,
         byIdSlim: getSlimCardByID,
@@ -683,4 +683,4 @@ var cardApi = (function () {
     }());
 
     return api;
-})();
+});

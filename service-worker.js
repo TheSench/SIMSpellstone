@@ -1,8 +1,14 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
 
-workbox.googleAnalytics.initialize();
-
 if (workbox) {
+    workbox.setConfig({
+        debug: false
+    });
+    
+    workbox.core.setLogLevel(workbox.core.LOG_LEVELS.silent);
+    
+    workbox.googleAnalytics.initialize();
+    
     workbox.routing.registerRoute(
         /.*\.html/,
         workbox.strategies.networkFirst({
@@ -29,14 +35,14 @@ if (workbox) {
     );
     workbox.routing.registerRoute(
         /.*\.png/,
-      workbox.strategies.cacheFirst({
-        cacheName: 'image-cache'
-      })
+        workbox.strategies.cacheFirst({
+            cacheName: 'image-cache'
+        })
     );
     workbox.routing.registerRoute(
         /\/sprites\/.*\.jpg/,
-      workbox.strategies.cacheFirst({
-        cacheName: 'sprite-cache'
-      })
+        workbox.strategies.cacheFirst({
+            cacheName: 'sprite-cache'
+        })
     );
 }

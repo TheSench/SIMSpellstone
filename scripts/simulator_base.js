@@ -1,5 +1,8 @@
 var SIMULATOR = {};
 (function () {
+	
+	var cardApi = require('cardApi');
+
 	"use strict";
 
 	// Play card

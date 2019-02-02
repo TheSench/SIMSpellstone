@@ -1,5 +1,7 @@
 ﻿"use strict";
 
+var cardApi = require('cardApi');
+
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
 

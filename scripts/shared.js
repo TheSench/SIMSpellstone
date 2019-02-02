@@ -1,5 +1,7 @@
 "use strict";
 
+var cardApi = require('cardApi');
+
 window.loadCardCache = function loadCardCache() {
     var cardData = storageAPI.getField("GameData", "CardCache");
     if (cardData && cardData.lastUpdated > DataUpdated) {

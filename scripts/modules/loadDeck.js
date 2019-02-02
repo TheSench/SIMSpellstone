@@ -1,4 +1,6 @@
 var loadDeck = (function () {
+    var cardApi = require('cardApi');
+    
     var api = {
         mission: loadMissionDeck,
         raid: loadRaidDeck

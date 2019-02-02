@@ -1,845 +1,4 @@
-// Convert skills to 1.0 version
-for(var skillID in SKILL_DATA) {
-	var skillInfo = SKILL_DATA[skillID];
-	if(skillID === 'flurry') {
-		skillInfo.type = 'flurry';
-	} else if(['turnStart', 'onAttack', 'onDamaged', 'turnEnd'].indexOf(skillInfo.type) >= 0) {
-		skillInfo.type = 'passive';
-	}
-}
-// Create REVERSE_FUSIONS
-var REVERSE_FUSIONS = {};
-for(var id in FUSIONS) {
-	var fusion = FUSIONS[id];
-	REVERSE_FUSIONS[fusion] = id;
-};"use strict";
-
-var DATA_UPDATER = (function () {
-
-    var baseUrl = "https://spellstone.synapse-games.com";
-
-    var newCards = {};
-    var newBGEs = {};
-    var newFusions = {};
-    var lastUpdate = null;
-
-    function updateData(callback, forceUpdate) {
-
-        $("body").addClass("loading");
-        $("#loadingSplash").html("Checking for New Cards...");
-        // Don't update more than once per minute
-        var now = Date.now();
-        if (!lastUpdate || lastUpdate - now > 60000 || forceUpdate) {
-            lastUpdate = now;
-            newCards = {};
-            var promises = [];
-            promises.push(updateCards());
-            //promises.push(updateBGEs());
-            //promises.push(updateCampaignData());
-            var finishedLoading = function finishedLoading() {
-                saveCardCache();
-                doneLoading();
-                callback && callback();
-            };
-            $.when.apply($, promises).then(finishedLoading, finishedLoading);
-        } else {
-            if (callback) callback();
-        }
-    }
-
-    function updateBGEs() {
-        newBGEs = {};
-        return jQuery.ajax({
-            url: baseUrl + "/assets/battleground_effects.xml",
-            success: function (doc) {
-                var battlegrounds = doc.getElementsByTagName("battleground");
-                for (var i = 0; i < battlegrounds.length; i++) {
-                    var battleground = battlegrounds[i];
-                    var id = getValue(battleground, "id");
-                    var battlegroundData = getBattlegroundFromXML(battleground);
-
-                    if (JSON.stringify(BATTLEGROUNDS[id]) !== JSON.stringify(battlegroundData)) {
-                        newBGEs[id] = battlegroundData;
-                        BATTLEGROUNDS[id] = battlegroundData;
-                    }
-                }
-            },
-            async: true,
-            cache: false
-        });
-    }
-
-    function doneLoading() {
-        $("body").removeClass("loading");
-    }
-
-    var cardFiles = [
-        //"cards.xml"
-        "cards_heroes.xml",
-        "cards_premium_aether.xml",
-        "cards_premium_chaos.xml",
-        "cards_premium_wyld.xml",
-        "cards_reward.xml",
-        "cards_shard.xml",
-        "cards_special.xml",
-        "cards_standard.xml",
-        "cards_story.xml",
-        "fusion_recipes_cj2.xml"
-    ];
-    function updateCards() {
-        var promises = [];
-        for (var file = 0; file < cardFiles.length; file++) {
-            var promise = jQuery.ajax({
-                url: baseUrl + "/assets/" + cardFiles[file],
-                success: function (doc) {
-                    var trackNewCards = (typeof spoilers !== "undefined");
-                    var units = doc.getElementsByTagName("unit");
-                    for (var i = 0; i < units.length; i++) {
-                        var unit = units[i];
-                        var id = getValue(units[i], "id");
-                        var cardData = getUnitFromXML(units[i]);
-                        var newInfo = false;
-                        if (!CARDS[id]) {
-                            newInfo = true;
-                        } else if (JSON.stringify(CARDS[id]) !== JSON.stringify(cardData)) {
-                            newInfo = true;
-                        }
-                        if (newInfo) {
-                            if (trackNewCards) {
-                                spoilers[id] = true;
-                            }
-                            newCards[id] = cardData;
-                        }
-                        CARDS[id] = cardData;
-                    }
-                    var fusions = doc.getElementsByTagName("fusion_recipe");
-                    for (var i = 0; i < fusions.length; i++) {
-                        var node = fusions[i];
-                        var fusion = getValue(node, "card_id", false);
-                        var resource = node.getElementsByTagName("resource")[0];
-                        if (resource) {
-                            var base = getValue(resource, "card_id", true);
-                            if (!FUSIONS[base] || FUSIONS[base] != fusion) {
-                                newFusions[base] = fusion;
-                                FUSIONS[base] = fusion;
-                            }
-                        }
-                    }
-                },
-                async: true,
-                cache: false
-            });
-            promises.push(promise);
-        }
-
-        return $.when.apply($, promises);
-    }
-
-    function saveCardCache() {
-        if (typeof storageAPI !== "undefined") {
-            var cardData = storageAPI.getField("GameData", "CardCache");
-
-            if (cardData) {
-                cardData.newCards = (cardData.newCards || {});
-                cardData.newFusions = (cardData.newFusions || {});
-                $.extend(cardData.newCards, newCards);
-                $.extend(cardData.newFusions, newFusions);
-            } else {
-                cardData = {
-                    newCards: newCards,
-                    newFusions: newFusions
-                };
-            }
-            cardData.lastUpdated = Date.now();
-
-            storageAPI.setField("GameData", "CardCache", cardData);
-        }
-    }
-
-    function getUnitFromXML(node) {
-        var unit = {};
-        unit.id = getValue(node, "id");
-        unit.name = getValue(node, "name");
-        addField(unit, node, "desc");
-        unit.picture = getValue(node, "picture") || prefix(getValue(node, "asset_prefab"), "prefab_");
-        if (!unit.picture) {
-            var portrait = getValue(node, "portrait");
-            if (portrait) {
-                unit.picture = "portrait_" + portrait.toLowerCase().replace("portrait_", "");
-            } else {
-                unit.picture = "NotFound";
-            }
-        }
-        var hidden_until = (getValue(node, "hidden_until") || getValue(node, "hidden_until_time"));
-        if (hidden_until) unit.hidden_until = hidden_until + "000";
-        unit.rarity = getValue(node, "rarity");
-        unit.set = getValue(node, "set");
-        unit.card_type = getValue(node, "card_type");
-        addNumericField(unit, node, "shard_card");
-        unit.type = getValue(node, "type") || 0;
-        unit.sub_type = (getValues(node, "sub_type") || []);
-
-        addNumericField(unit, node, "health");
-        if (unit.card_type != "1") {
-            addNumericField(unit, node, "attack");
-            addNumericField(unit, node, "cost");
-        }
-        var upgrades = getUpgradesFromXML(node);
-        unit.maxLevel = 1 + Object.keys(upgrades).length;
-
-        unit.skill = getSkillsFromXML(node);
-        unit.upgrades = upgrades;
-
-        return unit;
-    }
-
-    function getSkillsFromXML(node) {
-        var children = node.childNodes;
-        var skills = [];
-        for (var i = 0; i < children.length; i++) {
-            var child = children[i];
-            if (child.nodeName === "skill") {
-                skills.push(getSkillFromXML(child));
-            }
-        }
-        return skills;
-    }
-
-    function getSkillFromXML(node) {
-        var skill = {
-            id: getValue(node, "id", true)
-        };
-        addNumericField(skill, node, "x", true);
-        addNumericField(skill, node, "mult", true);
-        addNumericField(skill, node, "on_delay_mult", true);
-        addField(skill, node, "y", true);
-        addNumericField(skill, node, "z", true);
-        addNumericField(skill, node, "c", true);
-        addField(skill, node, "s", true);
-        addField(skill, node, "all", true);
-        return skill;
-    }
-
-    function getUpgradesFromXML(node) {
-        var nodes = node.getElementsByTagName("upgrade");
-        var upgrades = {};
-        for (var i = 0; i < nodes.length; i++) {
-            upgrades[i + 2] = getUpgradeFromXML(nodes[i]);
-        }
-        return upgrades;
-    }
-
-    function getUpgradeFromXML(node) {
-        var upgrade = {};
-        addNumericField(upgrade, node, "attack");
-        addNumericField(upgrade, node, "health");
-        addNumericField(upgrade, node, "cost");
-        addField(upgrade, node, "desc");
-        upgrade.skill = getSkillsFromXML(node);
-        return upgrade;
-    }
-
-    function getBattlegroundFromXML(node) {
-        var battleground = {};
-        battleground.id = getValue(node, "id");
-        battleground.name = getValue(node, "name");
-        battleground.desc = getValue(node, "desc");
-        battleground.desc = getBool(node, "enemy_only");
-        addField(battleground, node, "scale_with_level");
-        addField(battleground, node, "starting_level");
-
-        return battleground;
-    }
-
-    function addField(object, node, field, isAtt) {
-        var value = getValue(node, field, isAtt);
-        if (value != null && value.length > 0) {
-            object[field] = value;
-        }
-    }
-
-    function addNumericField(object, node, field, isAtt) {
-        var value = getNumeric(node, field, isAtt);
-        if (value >= 0) {
-            object[field] = value;
-        }
-    }
-
-    function getValue(node, name, isAtt) {
-        if (isAtt) {
-            return node.getAttribute(name);
-        } else {
-            var values = getValues(node, name);
-            return (values ? values[0] : null);
-        }
-    }
-
-    function getBool(node, name, isAtt) {
-        var val;
-        if (isAtt) {
-            val = node.getAttribute(name);
-        } else {
-            var values = getValues(node, name);
-            val = (values ? values[0] : null);
-        }
-        return (val == 1);
-    }
-
-    function prefix(value, prefix) {
-        if (value) {
-            return prefix + value;
-        } else {
-            return value;
-        }
-    }
-
-    function getValues(node, name) {
-        var values = null;
-        var tags = $(node).children(name);
-        if (tags.length > 0) {
-            values = [];
-            for (var i = 0; i < tags.length; i++) {
-                values.push(tags[i].textContent);
-            }
-        }
-        return values;
-    }
-
-    function getNumeric(node, tagName, isAtt) {
-        var value = getValue(node, tagName, isAtt);
-        if (value != null) {
-            return Number(value);
-        } else {
-            return -1;
-        }
-    }
-
-    function updateCampaignData() {
-        var promises = [];
-        promises.push(updateCampaigns());
-        promises.push(updateMissions("/assets/missions.xml"));
-        promises.push(updateMissions("/assets/missions_event.xml"));
-        return $.when.apply($, promises);
-    }
-
-    function updateCampaigns() {
-        jQuery.ajax({
-            url: baseUrl + "/assets/campaigns.xml",
-            success: function (doc) {
-                var campaigns = doc.getElementsByTagName("campaign");
-                for (var i = 0; i < campaigns.length; i++) {
-                    var campaign = campaigns[i];
-                    var id = getValue(campaign, "id");
-                    if (!CAMPAIGNS[id]) {
-                        CAMPAIGNS[id] = getCampaignFromXML(campaign);
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
-    }
-
-    function getCampaignFromXML(node) {
-        var campaign = {
-            id: getValue(node, "id"),
-            name: getValue(node, "name"),
-            missions: getCampaignMissionsFromXML(node)
-        };
-        return campaign;
-    }
-
-    function getCampaignMissionsFromXML(node) {
-        var nodes = node.getElementsByTagName("mission_id");
-        var missions = [];
-        for (var i = 0; i < nodes.length; i++) {
-            missions.push(nodes[i].innerHTML);
-        }
-        return missions;
-    }
-
-    function updateMissions(fileURL) {
-        jQuery.ajax({
-            url: baseUrl + fileURL,
-            success: function (doc) {
-                var missions = doc.getElementsByTagName("mission");
-                for (var i = 0; i < missions.length; i++) {
-                    var mission = missions[i];
-                    var id = getValue(mission, "id");
-                    if (!MISSIONS[id]) {
-                        MISSIONS[id] = {
-                            id: id,
-                            name: getValue(mission, "name")
-                        };
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
-    }
-
-    return {
-        updateData: updateData
-    };
-})();;var base64 = (function () {
-    "use strict";
-
-    var api = {
-        encodeHash: encode,
-        decodeHash: decode,
-        fromDecimal: decimalToBase64,
-        toDecimal: base64ToDecimal,
-        fromUnitInfo: unitInfoToBase64
-    };
-
-    var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
-    
-    var noFusionInHash = {};
-    for (var id in CARDS) {
-        if (id < 10000) {
-            var fusion = FUSIONS[id];
-            if (!fusion || Number(fusion) < 10000) {
-                noFusionInHash[id] = true;
-            }
-        }
-    }
-    
-    // Used to determine how to hash runeIDs
-    var maxRuneID = 1000;
-    function unitInfoToBase64(unitInfo) {
-    
-        var baseID = parseInt(unitInfo.id);
-        var level = (parseInt(unitInfo.level) - 1);
-    
-        if (noFusionInHash[baseID]) {
-            var fusion = Math.floor(level / 7);
-            var level = level % 7;
-        } else {
-            var fusion = Math.floor(baseID / 10000);
-            baseID %= 10000;
-        }
-    
-        var runeID = 0;
-        if (unitInfo.runes.length) {
-            runeID = parseInt(unitInfo.runes[0].id);
-            runeID %= 5000; // Runes IDs are all in the range of 5001 - 5500
-        }
-    
-        var dec = baseID;
-        dec = dec * 3 + fusion;
-        dec = dec * 7 + level;
-        dec = dec * maxRuneID + runeID;
-    
-        return decimalToBase64(dec, 5);
-    }
-    
-    function base64ToUnitInfo(base64) {
-    
-        var dec = base64ToDecimal(base64);
-    
-        var runeID = dec % maxRuneID;
-        dec = (dec - runeID) / maxRuneID;
-    
-        var level = dec % 7;
-        dec = (dec - level++) / 7;
-        var fusion = dec % 3;
-        dec = (dec - fusion) / 3;
-        var unitID = dec;
-    
-        if (noFusionInHash[unitID]) {
-            level += fusion * 7;
-        } else if (fusion > 0) {
-            unitID = Number(fusion + '' + unitID);
-        }
-    
-        var unitInfo = makeUnitInfo(unitID, level);
-        if (runeID > 0) {
-            unitInfo.runes.push({
-                id: runeID + 5000
-            });
-        }
-    
-        return unitInfo;
-    }
-    
-    function decimalToBase64(dec, len) {
-        var base64 = '';
-        for (var i = 0; i < len; i++) {
-            var part = dec % 64;
-            base64 += base64chars[part];
-            dec = (dec - part) / 64;
-        }
-        return base64;
-    }
-    
-    function base64ToDecimal(base64) {
-        var dec = 0;
-        for (var i = base64.length - 1; i >= 0; i--) {
-            dec *= 64;
-            var part = base64chars.indexOf(base64[i]);
-            dec += part;
-        }
-        return dec;
-    }
-
-    function encode(deck) {
-        var base64Units = [];
-
-        if (deck.commander) {
-            base64Units.push(deck.commander);
-        }
-        return base64Units.concat(deck.deck)
-            .map(unitInfoToBase64)
-            .join("");
-    }
-    
-    function decode(hash) {
-
-        var current_deck = { deck: [] };
-        var unitInfo;
-        var entryLength = 5;
-        
-        for (var i = 0; i < hash.length; i += entryLength) {
-            var unitHash = hash.substr(i, entryLength);
-            unitInfo = base64ToUnitInfo(unitHash);
-
-            if (unitInfo) {
-                if (loadCard(unitInfo.id)) {
-                    // Repeat previous card multiple times
-                    if (!current_deck.commander && is_commander(unitInfo.id)) {
-                        current_deck.commander = unitInfo;
-                        // Add to deck
-                    } else {
-                        current_deck.deck.push(unitInfo);
-                    }
-                } else {
-                    console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
-                }
-            }
-        }
-
-        // Default commander to Elaria Captain if none found
-        if (!current_deck.commander) {
-            current_deck.commander = elariaCaptain;
-        }
-
-        return current_deck;
-    }
-    
-    return api;
-})();;var loadDeck = (function () {
-    var api = {
-        mission: loadMissionDeck,
-        raid: loadRaidDeck
-    };
-
-    function getUpgradePoints(level, maxedAt, maxUpgradePoints) {
-        var percentCompvare;
-        if (maxedAt == 7) {
-            percentCompvare = (level - 1) / (maxedAt - 1);
-        } else {
-            percentCompvare = (level / maxedAt);
-        }
-        var points = Math.ceil(maxUpgradePoints * percentCompvare);
-        return points;
-    }
-
-    function baseFusion(unit) {
-        var baseID = unit.id;
-        var id;
-        do {
-            id = baseID;
-            baseID = REVERSE_FUSIONS[id];
-        } while (typeof baseID !== "undefined");
-        return id;
-    }
-
-    function getMaxFusions(unit) {
-        var id = baseFusion(unit);
-        var fusion = -1;
-        while (typeof id !== "undefined") {
-            fusion++;
-            id = FUSIONS[id];
-        }
-        return fusion;
-    }
-
-    function getMaxUpgradePoints(deck) {
-        var maxUpgradePoints = 0;
-        for (var i = 0; i < deck.length; i++) {
-            var unit = deck[i];
-            var card = cardApi.byId(unit);
-            var maxFusions = getMaxFusions(card);
-            var maxLevel = card.maxLevel;
-            maxUpgradePoints += ((maxFusions + 1) * maxLevel - 1);
-        }
-        return maxUpgradePoints;
-    }
-
-    function getRandomCard(unitInfo) {
-        var possibilities = [];
-        for (var id in CARDS) {
-            if (REVERSE_FUSIONS[id]) continue;
-            var card = CARDS[id];
-            if (card.card_type == '1') {
-                continue;
-            }
-            if (unitInfo.max_rarity && Number(unitInfo.max_rarity) < Number(card.rarity) ||
-                unitInfo.min_rarity && Number(unitInfo.min_rarity) > Number(card.rarity)) {
-                continue;
-            }
-            if (unitInfo.type && !(unitInfo.type == card.type || card.sub_type.indexOf(unitInfo.type.toString()) >= 0)) {
-                continue;
-            }
-            if (unitInfo.set) {
-                var sets = unitInfo.set.split(",");
-                if (sets.indexOf(card.set) < 0) {
-                    continue;
-                }
-            }
-            possibilities.push(id);
-        }
-        var chosen = ~~(Math.random() * possibilities.length);
-        return possibilities[chosen];
-    }
-
-    function getPresetUnit(unitInfo, level, maxedAt) {
-        level = parseInt(level);
-        if (unitInfo.mastery_level && level < parseInt(unitInfo.mastery_level)) return null;
-        if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
-
-        var cardID = unitInfo.id;
-        var random = false;
-        if (!cardID) {
-            cardID = getRandomCard(unitInfo);
-            random = true;
-        }
-        var unitLevel = (unitInfo.level || 1);
-
-        if (level >= maxedAt) {
-            unitLevel = 7;
-            if (canFuse(cardID)) {
-                cardID = fuseCard(cardID);
-            }
-        } else if (level > 1 && is_commander(cardID)) {
-            var maxUpgrades = (Number(loadCard(cardID).rarity) + 1);
-            var upgradesPerLevel = maxUpgrades / (maxedAt - 1);
-            var levelsFromBase = level - 1;
-            unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
-        }
-
-        var unit = makeUnitInfo(cardID, unitLevel);
-
-        if (random) {
-            unit.randomInfo = { unitInfo: unitInfo, level: level, maxedAt: maxedAt };
-        }
-        return unit;
-    }
-
-    function upgradeCard(unitInfo) {
-        var maxLevel = (parseInt(loadCard(unitInfo.id).rarity) + 2);
-        if (unitInfo.level == maxLevel) {
-            if (canFuse(unitInfo.id)) {
-                unitInfo.id = fuseCard(unitInfo.id, 1);
-                unitInfo.level = 1;
-            } else {
-                return false;
-            }
-        } else {
-            unitInfo.level++;
-        }
-        return true;
-    }
-
-    function canFuse(cardID) {
-        if (DoNotFuse.indexOf(cardID) > -1) {
-            return false;
-        } else if (is_commander(cardID)) {
-            return false;
-        } else if (FUSIONS[cardID]) {
-            return true;
-        }
-        return false;
-    }
-
-    function fuseCard(cardID, fusion) {
-        if (DoNotFuse.indexOf(cardID) == -1) {
-            // Fuse X number of times
-            if (fusion) {
-                for (var i = 0; i < fusion; i++) {
-                    cardID = doFuseCard(cardID);
-                }
-                // Max fusion
-            } else {
-                do {
-                    var fused = doFuseCard(cardID);
-                    cardID = fused;
-                } while (cardID !== fused);
-            }
-        }
-        return cardID;
-    }
-
-    function doFuseCard(cardID) {
-        var fused = FUSIONS[cardID];
-        if (fused) {
-            return fused;
-        } else {
-            return cardID;
-        }
-    }
-
-    function getPresetCommander(deckInfo, level) {
-        level = parseInt(level);
-        var commander = deckInfo.commander;
-        if (commander.card) {
-            var possibilities = [];
-            for (var i = 0; i < commander.card.length; i++) {
-                var card = commander.card[i];
-                var minLevel = parseInt(card.min_mastery_level) || 0;
-                var maxedAt = parseInt(card.max_mastery_level) || 999;
-                if (level >= minLevel && level <= maxedAt) {
-                    possibilities.push(card);
-                }
-            }
-            var chosen = ~~(Math.random() * possibilities.length);
-            commander = possibilities[chosen];
-            commander.possibilities = possibilities;
-        }
-        return commander;
-    }
-
-    var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
-    function load_preset_deck(deckInfo, level, upgradeLevels) {
-
-        var maxedAt = upgradeLevels + 1;
-        if (!level) level = maxedAt;
-
-        var current_deck = [];
-        current_deck.deck = [];
-        var commanderInfo = getPresetCommander(deckInfo, level);
-        var commander = getPresetUnit(commanderInfo, level, maxedAt);   // Set commander to max level
-        if (commanderInfo.possibilities) {
-            commander.randomInfo = { possibilities: commanderInfo.possibilities, level: level, maxedAt: maxedAt };
-        }
-        current_deck.commander = commander;
-        var presetDeck = deckInfo.deck;
-
-        var deck = current_deck.deck;
-        for (var current_key in presetDeck) {
-            var unitInfo = presetDeck[current_key];
-            var unit = getPresetUnit(unitInfo, level, maxedAt);
-            if (unit) {
-                deck.push(unit);
-            }
-        }
-
-        var maxUpgradePoints = getMaxUpgradePoints(deck);
-        var upgradePoints = getUpgradePoints(level, maxedAt, maxUpgradePoints);
-        if (level > 1 && level < maxedAt) {
-            var canFuse = deck.slice();
-            while (upgradePoints > 0 && canFuse.length > 0) {
-                var index = Math.floor(Math.random() * canFuse.length);
-                if (upgradeCard(canFuse[index])) {
-                    upgradePoints--;
-                } else {
-                    canFuse.splice(index, 1);
-                }
-            }
-        }
-
-        return current_deck;
-    }
-
-    // Load mission deck
-    function loadMissionDeck(id, level) {
-        var missionInfo = MISSIONS[id];
-        if (missionInfo) {
-            return load_preset_deck(missionInfo, level, 6);
-        } else {
-            return 0;
-        }
-    }
-
-    function loadRaidDeck(id, level, maxedAt) {
-        if (!maxedAt) maxedAt = 25;
-        var raidInfo = RAIDS[id];
-        if (raidInfo) {
-            var newRaidInfo = {
-                commander: raidInfo.commander,
-                deck: raidInfo.deck.card
-            };
-            return load_preset_deck(newRaidInfo, level, Number(raidInfo.upgradeLevels));
-        } else {
-            return 0;
-        }
-    }
-
-    return api;
-})();;var log = (function() {
-    var api = {
-        skill: logSkill,
-        name: logCardName
-    };
-
-    function truncate(value) {
-        if (value > Math.floor(value)) {
-            value = value.toFixed(1);
-        }
-        return value;
-    }
-
-    function logSkill(skill) {
-        var output = skillNameFromID(skill.id);
-        if (skill.all) output += ' all';
-        if (skill.y) output += ' ' + factions.names[skill.y];
-        if (skill.s) output += ' ' + skillNameFromID(skill.s);
-        if (skill.c) output += ' every ' + skill.c + ' turns';
-        else if (skill.x) output += ' ' + skill.x;
-        return output;
-    }
-
-    function logCardName(card, hideStats) {
-        if (card.owner === 'cpu') {
-            var tag = 'i';
-        } else {
-            var tag = 'b';
-        }
-        var output = '<' + tag + '>';
-        output += card.name;
-        if (card.runes.length) output += "*";
-        if (card.maxLevel > 1) output += '{' + card.level + '/' + card.maxLevel + '}';
-        if (card.key !== undefined) output += ' (' + card.key + ')';
-        output += '</' + tag + '>';
-        if (!hideStats) {
-            output += '<u>';
-            if (card.isCommander()) {
-                output += ' [';
-                if (card.health_left !== undefined) output += truncate(card.health_left);
-                else output += card.health;
-                output += ' HP]';
-            } else if (card.isAssault()) {
-                output += ' [';
-                var atk = card.adjustedAttack();
-                if (isNaN(atk) || atk == undefined) atk = card.attack;
-                output += atk;
-                output += '/';
-                if (card.health_left !== undefined) output += truncate(card.health_left);
-                else output += card.health;
-                output += '/';
-                if (card.timer !== undefined) output += card.timer;
-                else output += card.cost;
-                output += ']';
-            }
-            output += '</u>';
-        }
-    
-        return output;
-    }
-
-    return api;
-})();;var cardApi = (function () {
+define('cardApi', function () {
     var api = {
         byId: getCardByID,
         byIdSlim: getSlimCardByID,
@@ -1524,7 +683,852 @@ var DATA_UPDATER = (function () {
     }());
 
     return api;
+});;// Convert skills to 1.0 version
+for(var skillID in SKILL_DATA) {
+	var skillInfo = SKILL_DATA[skillID];
+	if(skillID === 'flurry') {
+		skillInfo.type = 'flurry';
+	} else if(['turnStart', 'onAttack', 'onDamaged', 'turnEnd'].indexOf(skillInfo.type) >= 0) {
+		skillInfo.type = 'passive';
+	}
+}
+// Create REVERSE_FUSIONS
+var REVERSE_FUSIONS = {};
+for(var id in FUSIONS) {
+	var fusion = FUSIONS[id];
+	REVERSE_FUSIONS[fusion] = id;
+};"use strict";
+
+var DATA_UPDATER = (function () {
+
+    var baseUrl = "https://spellstone.synapse-games.com";
+
+    var newCards = {};
+    var newBGEs = {};
+    var newFusions = {};
+    var lastUpdate = null;
+
+    function updateData(callback, forceUpdate) {
+
+        $("body").addClass("loading");
+        $("#loadingSplash").html("Checking for New Cards...");
+        // Don't update more than once per minute
+        var now = Date.now();
+        if (!lastUpdate || lastUpdate - now > 60000 || forceUpdate) {
+            lastUpdate = now;
+            newCards = {};
+            var promises = [];
+            promises.push(updateCards());
+            //promises.push(updateBGEs());
+            //promises.push(updateCampaignData());
+            var finishedLoading = function finishedLoading() {
+                saveCardCache();
+                doneLoading();
+                callback && callback();
+            };
+            $.when.apply($, promises).then(finishedLoading, finishedLoading);
+        } else {
+            if (callback) callback();
+        }
+    }
+
+    function updateBGEs() {
+        newBGEs = {};
+        return jQuery.ajax({
+            url: baseUrl + "/assets/battleground_effects.xml",
+            success: function (doc) {
+                var battlegrounds = doc.getElementsByTagName("battleground");
+                for (var i = 0; i < battlegrounds.length; i++) {
+                    var battleground = battlegrounds[i];
+                    var id = getValue(battleground, "id");
+                    var battlegroundData = getBattlegroundFromXML(battleground);
+
+                    if (JSON.stringify(BATTLEGROUNDS[id]) !== JSON.stringify(battlegroundData)) {
+                        newBGEs[id] = battlegroundData;
+                        BATTLEGROUNDS[id] = battlegroundData;
+                    }
+                }
+            },
+            async: true,
+            cache: false
+        });
+    }
+
+    function doneLoading() {
+        $("body").removeClass("loading");
+    }
+
+    var cardFiles = [
+        //"cards.xml"
+        "cards_heroes.xml",
+        "cards_premium_aether.xml",
+        "cards_premium_chaos.xml",
+        "cards_premium_wyld.xml",
+        "cards_reward.xml",
+        "cards_shard.xml",
+        "cards_special.xml",
+        "cards_standard.xml",
+        "cards_story.xml",
+        "fusion_recipes_cj2.xml"
+    ];
+    function updateCards() {
+        var promises = [];
+        for (var file = 0; file < cardFiles.length; file++) {
+            var promise = jQuery.ajax({
+                url: baseUrl + "/assets/" + cardFiles[file],
+                success: function (doc) {
+                    var trackNewCards = (typeof spoilers !== "undefined");
+                    var units = doc.getElementsByTagName("unit");
+                    for (var i = 0; i < units.length; i++) {
+                        var unit = units[i];
+                        var id = getValue(units[i], "id");
+                        var cardData = getUnitFromXML(units[i]);
+                        var newInfo = false;
+                        if (!CARDS[id]) {
+                            newInfo = true;
+                        } else if (JSON.stringify(CARDS[id]) !== JSON.stringify(cardData)) {
+                            newInfo = true;
+                        }
+                        if (newInfo) {
+                            if (trackNewCards) {
+                                spoilers[id] = true;
+                            }
+                            newCards[id] = cardData;
+                        }
+                        CARDS[id] = cardData;
+                    }
+                    var fusions = doc.getElementsByTagName("fusion_recipe");
+                    for (var i = 0; i < fusions.length; i++) {
+                        var node = fusions[i];
+                        var fusion = getValue(node, "card_id", false);
+                        var resource = node.getElementsByTagName("resource")[0];
+                        if (resource) {
+                            var base = getValue(resource, "card_id", true);
+                            if (!FUSIONS[base] || FUSIONS[base] != fusion) {
+                                newFusions[base] = fusion;
+                                FUSIONS[base] = fusion;
+                            }
+                        }
+                    }
+                },
+                async: true,
+                cache: false
+            });
+            promises.push(promise);
+        }
+
+        return $.when.apply($, promises);
+    }
+
+    function saveCardCache() {
+        if (typeof storageAPI !== "undefined") {
+            var cardData = storageAPI.getField("GameData", "CardCache");
+
+            if (cardData) {
+                cardData.newCards = (cardData.newCards || {});
+                cardData.newFusions = (cardData.newFusions || {});
+                $.extend(cardData.newCards, newCards);
+                $.extend(cardData.newFusions, newFusions);
+            } else {
+                cardData = {
+                    newCards: newCards,
+                    newFusions: newFusions
+                };
+            }
+            cardData.lastUpdated = Date.now();
+
+            storageAPI.setField("GameData", "CardCache", cardData);
+        }
+    }
+
+    function getUnitFromXML(node) {
+        var unit = {};
+        unit.id = getValue(node, "id");
+        unit.name = getValue(node, "name");
+        addField(unit, node, "desc");
+        unit.picture = getValue(node, "picture") || prefix(getValue(node, "asset_prefab"), "prefab_");
+        if (!unit.picture) {
+            var portrait = getValue(node, "portrait");
+            if (portrait) {
+                unit.picture = "portrait_" + portrait.toLowerCase().replace("portrait_", "");
+            } else {
+                unit.picture = "NotFound";
+            }
+        }
+        var hidden_until = (getValue(node, "hidden_until") || getValue(node, "hidden_until_time"));
+        if (hidden_until) unit.hidden_until = hidden_until + "000";
+        unit.rarity = getValue(node, "rarity");
+        unit.set = getValue(node, "set");
+        unit.card_type = getValue(node, "card_type");
+        addNumericField(unit, node, "shard_card");
+        unit.type = getValue(node, "type") || 0;
+        unit.sub_type = (getValues(node, "sub_type") || []);
+
+        addNumericField(unit, node, "health");
+        if (unit.card_type != "1") {
+            addNumericField(unit, node, "attack");
+            addNumericField(unit, node, "cost");
+        }
+        var upgrades = getUpgradesFromXML(node);
+        unit.maxLevel = 1 + Object.keys(upgrades).length;
+
+        unit.skill = getSkillsFromXML(node);
+        unit.upgrades = upgrades;
+
+        return unit;
+    }
+
+    function getSkillsFromXML(node) {
+        var children = node.childNodes;
+        var skills = [];
+        for (var i = 0; i < children.length; i++) {
+            var child = children[i];
+            if (child.nodeName === "skill") {
+                skills.push(getSkillFromXML(child));
+            }
+        }
+        return skills;
+    }
+
+    function getSkillFromXML(node) {
+        var skill = {
+            id: getValue(node, "id", true)
+        };
+        addNumericField(skill, node, "x", true);
+        addNumericField(skill, node, "mult", true);
+        addNumericField(skill, node, "on_delay_mult", true);
+        addField(skill, node, "y", true);
+        addNumericField(skill, node, "z", true);
+        addNumericField(skill, node, "c", true);
+        addField(skill, node, "s", true);
+        addField(skill, node, "all", true);
+        return skill;
+    }
+
+    function getUpgradesFromXML(node) {
+        var nodes = node.getElementsByTagName("upgrade");
+        var upgrades = {};
+        for (var i = 0; i < nodes.length; i++) {
+            upgrades[i + 2] = getUpgradeFromXML(nodes[i]);
+        }
+        return upgrades;
+    }
+
+    function getUpgradeFromXML(node) {
+        var upgrade = {};
+        addNumericField(upgrade, node, "attack");
+        addNumericField(upgrade, node, "health");
+        addNumericField(upgrade, node, "cost");
+        addField(upgrade, node, "desc");
+        upgrade.skill = getSkillsFromXML(node);
+        return upgrade;
+    }
+
+    function getBattlegroundFromXML(node) {
+        var battleground = {};
+        battleground.id = getValue(node, "id");
+        battleground.name = getValue(node, "name");
+        battleground.desc = getValue(node, "desc");
+        battleground.desc = getBool(node, "enemy_only");
+        addField(battleground, node, "scale_with_level");
+        addField(battleground, node, "starting_level");
+
+        return battleground;
+    }
+
+    function addField(object, node, field, isAtt) {
+        var value = getValue(node, field, isAtt);
+        if (value != null && value.length > 0) {
+            object[field] = value;
+        }
+    }
+
+    function addNumericField(object, node, field, isAtt) {
+        var value = getNumeric(node, field, isAtt);
+        if (value >= 0) {
+            object[field] = value;
+        }
+    }
+
+    function getValue(node, name, isAtt) {
+        if (isAtt) {
+            return node.getAttribute(name);
+        } else {
+            var values = getValues(node, name);
+            return (values ? values[0] : null);
+        }
+    }
+
+    function getBool(node, name, isAtt) {
+        var val;
+        if (isAtt) {
+            val = node.getAttribute(name);
+        } else {
+            var values = getValues(node, name);
+            val = (values ? values[0] : null);
+        }
+        return (val == 1);
+    }
+
+    function prefix(value, prefix) {
+        if (value) {
+            return prefix + value;
+        } else {
+            return value;
+        }
+    }
+
+    function getValues(node, name) {
+        var values = null;
+        var tags = $(node).children(name);
+        if (tags.length > 0) {
+            values = [];
+            for (var i = 0; i < tags.length; i++) {
+                values.push(tags[i].textContent);
+            }
+        }
+        return values;
+    }
+
+    function getNumeric(node, tagName, isAtt) {
+        var value = getValue(node, tagName, isAtt);
+        if (value != null) {
+            return Number(value);
+        } else {
+            return -1;
+        }
+    }
+
+    function updateCampaignData() {
+        var promises = [];
+        promises.push(updateCampaigns());
+        promises.push(updateMissions("/assets/missions.xml"));
+        promises.push(updateMissions("/assets/missions_event.xml"));
+        return $.when.apply($, promises);
+    }
+
+    function updateCampaigns() {
+        jQuery.ajax({
+            url: baseUrl + "/assets/campaigns.xml",
+            success: function (doc) {
+                var campaigns = doc.getElementsByTagName("campaign");
+                for (var i = 0; i < campaigns.length; i++) {
+                    var campaign = campaigns[i];
+                    var id = getValue(campaign, "id");
+                    if (!CAMPAIGNS[id]) {
+                        CAMPAIGNS[id] = getCampaignFromXML(campaign);
+                    }
+                }
+            },
+            async: false,
+            cache: false
+        });
+    }
+
+    function getCampaignFromXML(node) {
+        var campaign = {
+            id: getValue(node, "id"),
+            name: getValue(node, "name"),
+            missions: getCampaignMissionsFromXML(node)
+        };
+        return campaign;
+    }
+
+    function getCampaignMissionsFromXML(node) {
+        var nodes = node.getElementsByTagName("mission_id");
+        var missions = [];
+        for (var i = 0; i < nodes.length; i++) {
+            missions.push(nodes[i].innerHTML);
+        }
+        return missions;
+    }
+
+    function updateMissions(fileURL) {
+        jQuery.ajax({
+            url: baseUrl + fileURL,
+            success: function (doc) {
+                var missions = doc.getElementsByTagName("mission");
+                for (var i = 0; i < missions.length; i++) {
+                    var mission = missions[i];
+                    var id = getValue(mission, "id");
+                    if (!MISSIONS[id]) {
+                        MISSIONS[id] = {
+                            id: id,
+                            name: getValue(mission, "name")
+                        };
+                    }
+                }
+            },
+            async: false,
+            cache: false
+        });
+    }
+
+    return {
+        updateData: updateData
+    };
+})();;var base64 = (function () {
+    "use strict";
+
+    var api = {
+        encodeHash: encode,
+        decodeHash: decode,
+        fromDecimal: decimalToBase64,
+        toDecimal: base64ToDecimal,
+        fromUnitInfo: unitInfoToBase64
+    };
+
+    var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
+    
+    var noFusionInHash = {};
+    for (var id in CARDS) {
+        if (id < 10000) {
+            var fusion = FUSIONS[id];
+            if (!fusion || Number(fusion) < 10000) {
+                noFusionInHash[id] = true;
+            }
+        }
+    }
+    
+    // Used to determine how to hash runeIDs
+    var maxRuneID = 1000;
+    function unitInfoToBase64(unitInfo) {
+    
+        var baseID = parseInt(unitInfo.id);
+        var level = (parseInt(unitInfo.level) - 1);
+    
+        if (noFusionInHash[baseID]) {
+            var fusion = Math.floor(level / 7);
+            var level = level % 7;
+        } else {
+            var fusion = Math.floor(baseID / 10000);
+            baseID %= 10000;
+        }
+    
+        var runeID = 0;
+        if (unitInfo.runes.length) {
+            runeID = parseInt(unitInfo.runes[0].id);
+            runeID %= 5000; // Runes IDs are all in the range of 5001 - 5500
+        }
+    
+        var dec = baseID;
+        dec = dec * 3 + fusion;
+        dec = dec * 7 + level;
+        dec = dec * maxRuneID + runeID;
+    
+        return decimalToBase64(dec, 5);
+    }
+    
+    function base64ToUnitInfo(base64) {
+    
+        var dec = base64ToDecimal(base64);
+    
+        var runeID = dec % maxRuneID;
+        dec = (dec - runeID) / maxRuneID;
+    
+        var level = dec % 7;
+        dec = (dec - level++) / 7;
+        var fusion = dec % 3;
+        dec = (dec - fusion) / 3;
+        var unitID = dec;
+    
+        if (noFusionInHash[unitID]) {
+            level += fusion * 7;
+        } else if (fusion > 0) {
+            unitID = Number(fusion + '' + unitID);
+        }
+    
+        var unitInfo = makeUnitInfo(unitID, level);
+        if (runeID > 0) {
+            unitInfo.runes.push({
+                id: runeID + 5000
+            });
+        }
+    
+        return unitInfo;
+    }
+    
+    function decimalToBase64(dec, len) {
+        var base64 = '';
+        for (var i = 0; i < len; i++) {
+            var part = dec % 64;
+            base64 += base64chars[part];
+            dec = (dec - part) / 64;
+        }
+        return base64;
+    }
+    
+    function base64ToDecimal(base64) {
+        var dec = 0;
+        for (var i = base64.length - 1; i >= 0; i--) {
+            dec *= 64;
+            var part = base64chars.indexOf(base64[i]);
+            dec += part;
+        }
+        return dec;
+    }
+
+    function encode(deck) {
+        var base64Units = [];
+
+        if (deck.commander) {
+            base64Units.push(deck.commander);
+        }
+        return base64Units.concat(deck.deck)
+            .map(unitInfoToBase64)
+            .join("");
+    }
+    
+    function decode(hash) {
+
+        var current_deck = { deck: [] };
+        var unitInfo;
+        var entryLength = 5;
+        
+        for (var i = 0; i < hash.length; i += entryLength) {
+            var unitHash = hash.substr(i, entryLength);
+            unitInfo = base64ToUnitInfo(unitHash);
+
+            if (unitInfo) {
+                if (loadCard(unitInfo.id)) {
+                    // Repeat previous card multiple times
+                    if (!current_deck.commander && is_commander(unitInfo.id)) {
+                        current_deck.commander = unitInfo;
+                        // Add to deck
+                    } else {
+                        current_deck.deck.push(unitInfo);
+                    }
+                } else {
+                    console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
+                }
+            }
+        }
+
+        // Default commander to Elaria Captain if none found
+        if (!current_deck.commander) {
+            current_deck.commander = elariaCaptain;
+        }
+
+        return current_deck;
+    }
+    
+    return api;
+})();;var loadDeck = (function () {
+    var cardApi = require('cardApi');
+    
+    var api = {
+        mission: loadMissionDeck,
+        raid: loadRaidDeck
+    };
+
+    function getUpgradePoints(level, maxedAt, maxUpgradePoints) {
+        var percentCompvare;
+        if (maxedAt == 7) {
+            percentCompvare = (level - 1) / (maxedAt - 1);
+        } else {
+            percentCompvare = (level / maxedAt);
+        }
+        var points = Math.ceil(maxUpgradePoints * percentCompvare);
+        return points;
+    }
+
+    function baseFusion(unit) {
+        var baseID = unit.id;
+        var id;
+        do {
+            id = baseID;
+            baseID = REVERSE_FUSIONS[id];
+        } while (typeof baseID !== "undefined");
+        return id;
+    }
+
+    function getMaxFusions(unit) {
+        var id = baseFusion(unit);
+        var fusion = -1;
+        while (typeof id !== "undefined") {
+            fusion++;
+            id = FUSIONS[id];
+        }
+        return fusion;
+    }
+
+    function getMaxUpgradePoints(deck) {
+        var maxUpgradePoints = 0;
+        for (var i = 0; i < deck.length; i++) {
+            var unit = deck[i];
+            var card = cardApi.byId(unit);
+            var maxFusions = getMaxFusions(card);
+            var maxLevel = card.maxLevel;
+            maxUpgradePoints += ((maxFusions + 1) * maxLevel - 1);
+        }
+        return maxUpgradePoints;
+    }
+
+    function getRandomCard(unitInfo) {
+        var possibilities = [];
+        for (var id in CARDS) {
+            if (REVERSE_FUSIONS[id]) continue;
+            var card = CARDS[id];
+            if (card.card_type == '1') {
+                continue;
+            }
+            if (unitInfo.max_rarity && Number(unitInfo.max_rarity) < Number(card.rarity) ||
+                unitInfo.min_rarity && Number(unitInfo.min_rarity) > Number(card.rarity)) {
+                continue;
+            }
+            if (unitInfo.type && !(unitInfo.type == card.type || card.sub_type.indexOf(unitInfo.type.toString()) >= 0)) {
+                continue;
+            }
+            if (unitInfo.set) {
+                var sets = unitInfo.set.split(",");
+                if (sets.indexOf(card.set) < 0) {
+                    continue;
+                }
+            }
+            possibilities.push(id);
+        }
+        var chosen = ~~(Math.random() * possibilities.length);
+        return possibilities[chosen];
+    }
+
+    function getPresetUnit(unitInfo, level, maxedAt) {
+        level = parseInt(level);
+        if (unitInfo.mastery_level && level < parseInt(unitInfo.mastery_level)) return null;
+        if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
+
+        var cardID = unitInfo.id;
+        var random = false;
+        if (!cardID) {
+            cardID = getRandomCard(unitInfo);
+            random = true;
+        }
+        var unitLevel = (unitInfo.level || 1);
+
+        if (level >= maxedAt) {
+            unitLevel = 7;
+            if (canFuse(cardID)) {
+                cardID = fuseCard(cardID);
+            }
+        } else if (level > 1 && is_commander(cardID)) {
+            var maxUpgrades = (Number(loadCard(cardID).rarity) + 1);
+            var upgradesPerLevel = maxUpgrades / (maxedAt - 1);
+            var levelsFromBase = level - 1;
+            unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
+        }
+
+        var unit = makeUnitInfo(cardID, unitLevel);
+
+        if (random) {
+            unit.randomInfo = { unitInfo: unitInfo, level: level, maxedAt: maxedAt };
+        }
+        return unit;
+    }
+
+    function upgradeCard(unitInfo) {
+        var maxLevel = (parseInt(loadCard(unitInfo.id).rarity) + 2);
+        if (unitInfo.level == maxLevel) {
+            if (canFuse(unitInfo.id)) {
+                unitInfo.id = fuseCard(unitInfo.id, 1);
+                unitInfo.level = 1;
+            } else {
+                return false;
+            }
+        } else {
+            unitInfo.level++;
+        }
+        return true;
+    }
+
+    function canFuse(cardID) {
+        if (DoNotFuse.indexOf(cardID) > -1) {
+            return false;
+        } else if (is_commander(cardID)) {
+            return false;
+        } else if (FUSIONS[cardID]) {
+            return true;
+        }
+        return false;
+    }
+
+    function fuseCard(cardID, fusion) {
+        if (DoNotFuse.indexOf(cardID) == -1) {
+            // Fuse X number of times
+            if (fusion) {
+                for (var i = 0; i < fusion; i++) {
+                    cardID = doFuseCard(cardID);
+                }
+                // Max fusion
+            } else {
+                do {
+                    var fused = doFuseCard(cardID);
+                    cardID = fused;
+                } while (cardID !== fused);
+            }
+        }
+        return cardID;
+    }
+
+    function doFuseCard(cardID) {
+        var fused = FUSIONS[cardID];
+        if (fused) {
+            return fused;
+        } else {
+            return cardID;
+        }
+    }
+
+    function getPresetCommander(deckInfo, level) {
+        level = parseInt(level);
+        var commander = deckInfo.commander;
+        if (commander.card) {
+            var possibilities = [];
+            for (var i = 0; i < commander.card.length; i++) {
+                var card = commander.card[i];
+                var minLevel = parseInt(card.min_mastery_level) || 0;
+                var maxedAt = parseInt(card.max_mastery_level) || 999;
+                if (level >= minLevel && level <= maxedAt) {
+                    possibilities.push(card);
+                }
+            }
+            var chosen = ~~(Math.random() * possibilities.length);
+            commander = possibilities[chosen];
+            commander.possibilities = possibilities;
+        }
+        return commander;
+    }
+
+    var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
+    function load_preset_deck(deckInfo, level, upgradeLevels) {
+
+        var maxedAt = upgradeLevels + 1;
+        if (!level) level = maxedAt;
+
+        var current_deck = [];
+        current_deck.deck = [];
+        var commanderInfo = getPresetCommander(deckInfo, level);
+        var commander = getPresetUnit(commanderInfo, level, maxedAt);   // Set commander to max level
+        if (commanderInfo.possibilities) {
+            commander.randomInfo = { possibilities: commanderInfo.possibilities, level: level, maxedAt: maxedAt };
+        }
+        current_deck.commander = commander;
+        var presetDeck = deckInfo.deck;
+
+        var deck = current_deck.deck;
+        for (var current_key in presetDeck) {
+            var unitInfo = presetDeck[current_key];
+            var unit = getPresetUnit(unitInfo, level, maxedAt);
+            if (unit) {
+                deck.push(unit);
+            }
+        }
+
+        var maxUpgradePoints = getMaxUpgradePoints(deck);
+        var upgradePoints = getUpgradePoints(level, maxedAt, maxUpgradePoints);
+        if (level > 1 && level < maxedAt) {
+            var canFuse = deck.slice();
+            while (upgradePoints > 0 && canFuse.length > 0) {
+                var index = Math.floor(Math.random() * canFuse.length);
+                if (upgradeCard(canFuse[index])) {
+                    upgradePoints--;
+                } else {
+                    canFuse.splice(index, 1);
+                }
+            }
+        }
+
+        return current_deck;
+    }
+
+    // Load mission deck
+    function loadMissionDeck(id, level) {
+        var missionInfo = MISSIONS[id];
+        if (missionInfo) {
+            return load_preset_deck(missionInfo, level, 6);
+        } else {
+            return 0;
+        }
+    }
+
+    function loadRaidDeck(id, level, maxedAt) {
+        if (!maxedAt) maxedAt = 25;
+        var raidInfo = RAIDS[id];
+        if (raidInfo) {
+            var newRaidInfo = {
+                commander: raidInfo.commander,
+                deck: raidInfo.deck.card
+            };
+            return load_preset_deck(newRaidInfo, level, Number(raidInfo.upgradeLevels));
+        } else {
+            return 0;
+        }
+    }
+
+    return api;
+})();;var log = (function() {
+    var api = {
+        skill: logSkill,
+        name: logCardName
+    };
+
+    function truncate(value) {
+        if (value > Math.floor(value)) {
+            value = value.toFixed(1);
+        }
+        return value;
+    }
+
+    function logSkill(skill) {
+        var output = skillNameFromID(skill.id);
+        if (skill.all) output += ' all';
+        if (skill.y) output += ' ' + factions.names[skill.y];
+        if (skill.s) output += ' ' + skillNameFromID(skill.s);
+        if (skill.c) output += ' every ' + skill.c + ' turns';
+        else if (skill.x) output += ' ' + skill.x;
+        return output;
+    }
+
+    function logCardName(card, hideStats) {
+        if (card.owner === 'cpu') {
+            var tag = 'i';
+        } else {
+            var tag = 'b';
+        }
+        var output = '<' + tag + '>';
+        output += card.name;
+        if (card.runes.length) output += "*";
+        if (card.maxLevel > 1) output += '{' + card.level + '/' + card.maxLevel + '}';
+        if (card.key !== undefined) output += ' (' + card.key + ')';
+        output += '</' + tag + '>';
+        if (!hideStats) {
+            output += '<u>';
+            if (card.isCommander()) {
+                output += ' [';
+                if (card.health_left !== undefined) output += truncate(card.health_left);
+                else output += card.health;
+                output += ' HP]';
+            } else if (card.isAssault()) {
+                output += ' [';
+                var atk = card.adjustedAttack();
+                if (isNaN(atk) || atk == undefined) atk = card.attack;
+                output += atk;
+                output += '/';
+                if (card.health_left !== undefined) output += truncate(card.health_left);
+                else output += card.health;
+                output += '/';
+                if (card.timer !== undefined) output += card.timer;
+                else output += card.cost;
+                output += ']';
+            }
+            output += '</u>';
+        }
+    
+        return output;
+    }
+
+    return api;
 })();;"use strict";
+
+var cardApi = require('cardApi');
 
 window.loadCardCache = function loadCardCache() {
     var cardData = storageAPI.getField("GameData", "CardCache");
@@ -2528,6 +2532,9 @@ var SIM_CONTROLLER = (function () {
     var run_sims_batch = 0;
 })();;var SIMULATOR = {};
 (function () {
+	
+	var cardApi = require('cardApi');
+
 	"use strict";
 
 	// Play card
@@ -7083,8 +7090,12 @@ var tournament = false;
 var suppressOutput = false;
 var orders = {};
 var cardStats = {};;"use strict";
+
 var CARD_GUI = {};
 (function () {
+	
+	var cardApi = require('cardApi');
+
 	var assetsRoot = '';
 
 	function clearCardSpace() {
