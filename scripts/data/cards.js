@@ -218991,7 +218991,7 @@ var CARDS = {
 		"hidden_until": "1548954000000",
 		"id": "25224",
 		"maxLevel": 6,
-		"name": "Baaht, Infero Forger",
+		"name": "Baaht, Inferno Forger",
 		"picture": "Elemental_Angel_Blackmith_Living_Flame_B",
 		"rarity": "4",
 		"set": "4000",
