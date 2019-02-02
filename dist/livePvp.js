@@ -2128,54 +2128,10 @@ function getDefaultDeck() {
     };
 }
 
-var reverseFusions;
-function getFusion(cardID) {
-    var fusion = 0,
-        base;
 
-    if (!reverseFusions) getReverseFusions();
-
-    do {
-        base = reverseFusions[cardID];
-        fusion++;
-    } while (base);
-    return fusion;
-}
-
-function getReverseFusions() {
-    reverseFusions = {};
-    for (var key in FUSIONS) {
-        reverseFusions[FUSIONS[key]] = key;
-    }
-}
 
 function loadCard(id) {
     var card = CARDS[id];
-    return card;
-}
-
-function getCardInfo(unit) {
-    var id = unit.id;
-    var level = unit.level;
-
-    var original = CARDS[id];
-
-    var card = Object.assign({}, original);
-    if (level > 1) {
-        if (level > 1) {
-            for (var key in original.upgrades) {
-                var upgrade = original.upgrades[key];
-                if (upgrade.cost !== undefined) card.cost = upgrade.cost;
-                if (upgrade.health !== undefined) card.health = upgrade.health;
-                if (upgrade.attack !== undefined) card.attack = upgrade.attack;
-                if (upgrade.desc !== undefined) card.desc = upgrade.desc;
-                if (upgrade.skill.length > 0) card.skill = upgrade.skill;
-                if (key == level) break;
-            }
-        }
-    }
-    card.level = level;
-    card.maxLevel = original.maxLevel;
     return card;
 }
 

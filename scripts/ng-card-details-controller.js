@@ -1,18 +1,43 @@
 (function (angular) {
   'use strict';
 
+  function getCardInfo(unit) {
+    var id = unit.id;
+    var level = unit.level;
+
+    var original = CARDS[id];
+
+    var card = Object.assign({}, original);
+    if (level > 1) {
+      if (level > 1) {
+        for (var key in original.upgrades) {
+          var upgrade = original.upgrades[key];
+          if (upgrade.cost !== undefined) card.cost = upgrade.cost;
+          if (upgrade.health !== undefined) card.health = upgrade.health;
+          if (upgrade.attack !== undefined) card.attack = upgrade.attack;
+          if (upgrade.desc !== undefined) card.desc = upgrade.desc;
+          if (upgrade.skill.length > 0) card.skill = upgrade.skill;
+          if (key == level) break;
+        }
+      }
+    }
+    card.level = level;
+    card.maxLevel = original.maxLevel;
+    return card;
+  }
+
   var CardDetailsCtrl = function ($scope, $window) {
     $window.cardDetailScope = $scope;
     if ($scope.id && $scope.level) {
       $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
-        $scope.card = $window.getCardInfo($scope.unit);
+        $scope.card = getCardInfo($scope.unit);
     }
 
     $scope.setUnit = function (unit) {
       $scope.id = unit.id;
       $scope.level = unit.level;
       $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
-        $scope.card = $window.getCardInfo($scope.unit);
+        $scope.card = getCardInfo($scope.unit);
       $scope.releaseDate = (function () {
         var hiddenUntil = $scope.card.hidden_until;
         if (hiddenUntil) {
@@ -222,11 +247,11 @@
       if (fused) {
         $scope.id = fused;
         $scope.unit.id = $scope.id;
-        $scope.card = $window.getCardInfo($scope.unit);
+        $scope.card = getCardInfo($scope.unit);
         if ($scope.level > $scope.card.maxLevel) {
           $scope.level = $scope.card.maxLevel;
           $scope.unit.level = $scope.level;
-          $scope.card = $window.getCardInfo($scope.unit);
+          $scope.card = getCardInfo($scope.unit);
         }
       }
     };
@@ -237,11 +262,11 @@
         var max = ($scope.level == $scope.card.maxLevel);
         $scope.id = fused;
         $scope.unit.id = $scope.id;
-        $scope.card = $window.getCardInfo($scope.unit);
+        $scope.card = getCardInfo($scope.unit);
         if (max && $scope.level < $scope.card.maxLevel) {
           $scope.level = $scope.card.maxLevel;
           $scope.unit.level = $scope.level;
-          $scope.card = $window.getCardInfo($scope.unit);
+          $scope.card = getCardInfo($scope.unit);
         }
       }
     };
@@ -252,7 +277,7 @@
         $scope.level--;
       }
       $scope.unit.level = $scope.level;
-      $scope.card = $window.getCardInfo($scope.unit);
+      $scope.card = getCardInfo($scope.unit);
     };
 
     $scope.incrementLevel = function () {
@@ -261,7 +286,7 @@
         $scope.level++;
       }
       $scope.unit.level = $scope.level;
-      $scope.card = $window.getCardInfo($scope.unit);
+      $scope.card = getCardInfo($scope.unit);
     };
   };
 
