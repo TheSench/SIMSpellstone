@@ -4,6 +4,7 @@ var CARD_GUI = {};
 (function () {
 	
 	var cardApi = require('cardApi');
+	var runeApi = require('runeApi');
 
 	var assetsRoot = '';
 
@@ -257,7 +258,7 @@ var CARD_GUI = {};
 		for (var i = 0, len = runes.length; i < len; i++) {
 			var runeID = runes[i].id;
 			runeIDs.push(runes[i].id);
-			var rune = getRune(runeID);
+			var rune = runeApi.getRune(runeID);
 			for (var key in rune.stat_boost) {
 				if (key == "skill") {
 					key = rune.stat_boost.skill.id;

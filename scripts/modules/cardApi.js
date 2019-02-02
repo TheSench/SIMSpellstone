@@ -7,6 +7,9 @@ define('cardApi', function () {
         applyDefaultStatuses: applyDefaultStatuses
     };
 
+    var skillApi = require('skillApi');
+	var runeApi = require('runeApi');
+
     var defaultStatusValues = {
         // Attack Modifiers
         attack_berserk: 0,
@@ -47,6 +50,30 @@ define('cardApi', function () {
         card.enhanced = {};
         for (var status in defaultStatusValues) {
             card[status] = defaultStatusValues[status];
+        }
+    }
+
+    function addRunes(card, runes) {
+        if (!card.runes) card.runes = [];
+        for (var i = 0, len = runes.length; i < len; i++) {
+            var runeID = runes[i].id;
+            var statBoost = runeApi.getRune(runeID).stat_boost;
+            card.runes.push({
+                id: runeID,
+                stat_boost: statBoost
+            });
+    
+            for (var key in statBoost) {
+                var boost = statBoost[key];
+                if (key === "skill") {
+                    // Will be handled later
+                } else {
+                    if (isNaN(boost)) {
+                        boost = Math.max(Math.ceil(card[key] * boost.mult), (boost.min_bonus || 1));
+                    }
+                    card[key] += parseInt(boost);
+                }
+            }
         }
     }
 
@@ -159,7 +186,7 @@ define('cardApi', function () {
                     for (var s = 0; s < skills.length; s++) {
                         var skill = skills[s];
                         if (skill.id === skillID && (skill.all || 0) == (boost.all || 0)) {
-                            skill = copySkill(skill);
+                            skill = skillApi.copySkill(skill);
                             if (!amount && mult) amount = Math.ceil(skill.x * mult);
                             if (boost.min_bonus) amount = Math.max(amount, boost.min_bonus);
                             if (amount) skill.x += (parseInt(amount) * runeMult);
@@ -172,78 +199,6 @@ define('cardApi', function () {
                 }
             }
         }
-    }
-
-    function setSkill(new_card, skill) {
-        // These skills could have multiple instances
-        var skillID = skill.id;
-        var skillType = SKILL_DATA[skillID].type;
-        switch (skillType) {
-            case 'toggle':
-                new_card[skillID] = true;
-                return;
-    
-            case 'passive':
-                new_card[skill.id] = (new_card[skill.id] | 0) + skill.x;
-                break;
-    
-            case 'flurry':
-                new_card[skill.id] = skill;
-                break;
-    
-            case 'onDeath':
-                new_card.onDeathSkills.push(skill);
-                break;
-    
-            case 'earlyActivation':
-                new_card.earlyActivationSkills.push(skill);
-                break;
-    
-            case 'activation':
-            default:
-                new_card.skill.push(skill);
-                break;
-        }
-    }
-
-    function copySkill(original_skill) {
-        var new_skill = {};
-        new_skill.id = original_skill.id;
-        new_skill.x = original_skill.x;
-        new_skill.mult = original_skill.mult;
-        new_skill.on_delay_mult = original_skill.on_delay_mult;
-        new_skill.all = original_skill.all;
-        new_skill.y = original_skill.y;
-        new_skill.z = original_skill.z;
-        new_skill.c = original_skill.c;
-        new_skill.s = original_skill.s;
-        return new_skill;
-    }
-
-    function copySkills(new_card, original_skills, mult) {
-        new_card.skill = [];
-        new_card.earlyActivationSkills = [];
-        new_card.onDeathSkills = [];
-        var skillTimers = [];
-        var reusable = true;
-        for (var key in original_skills) {
-            var newSkill = original_skills[key];
-            if (newSkill.c) {   // If skill has a timer, we need to clone it
-                var copiedSkill = copySkill(newSkill);
-                setSkill(new_card, copiedSkill);
-                skillTimers.push(copiedSkill);
-                reusable = false;
-            } else if (mult) {
-                var copiedSkill = copySkill(newSkill);
-                //copySkill.x = ~~(copySkill.x * mult);   // Floor the results
-                copiedSkill.x = Math.ceil(copiedSkill.x * mult);
-                setSkill(new_card, copiedSkill);
-            } else {            // If skill has no timer, we can use the same instance
-                setSkill(new_card, newSkill);
-            }
-        }
-        new_card.reusableSkills = reusable;
-        new_card.skillTimers = skillTimers;
     }
 
     var makeUnit = (function () {
@@ -275,7 +230,7 @@ define('cardApi', function () {
                         for (var key in original_skills) {
                             var skill = original_skills[key];
                             if (skill.id == evolution.id && skill.all == evolution.all) {
-                                skill = copySkill(skill);
+                                skill = skillApi.copySkill(skill);
                                 skill.id = evolution.s;
                                 skill.boosted = true;
                                 original_skills[key] = skill;
@@ -343,7 +298,7 @@ define('cardApi', function () {
             for (var key in skillList) {
                 var skill = skillList[key];
                 if (skill.x) {
-                    skill = copySkill(skill);
+                    skill = skillApi.copySkill(skill);
                     skill.x += Math.ceil(skill.x * mult);
                     skill.boosted = true;
                     skillList[key] = skill;
@@ -644,7 +599,7 @@ define('cardApi', function () {
                 scaleSkills(card, original_skills, skillMult);
             }
 
-            copySkills(card, original_skills);
+            skillApi.copySkills(card, original_skills);
 
             return card;
         });
@@ -653,7 +608,7 @@ define('cardApi', function () {
     var makeBattleground = (function () {
         var Battleground = function (name, original_skills, mult) {
             this.name = name;
-            copySkills(this, [original_skills], mult);
+            skillApi.copySkills(this, [original_skills], mult);
         };
 
         Battleground.prototype = {

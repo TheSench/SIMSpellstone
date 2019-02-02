@@ -1,6 +1,7 @@
 ﻿"use strict";
 
 var cardApi = require('cardApi');
+var runeApi = require('runeApi');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
@@ -1813,7 +1814,7 @@ var showRunePicker = function (card) {
 	if (card.rarity >= 3 && !card.isCommander()) {
 		for (var key in RUNES) {
 			var rune = RUNES[key];
-			if (canUseRune(card, rune.id)) {
+			if (runeApi.canUseRune(card, rune.id)) {
 				var option = document.createElement('option');
 				option.appendChild(document.createTextNode(rune.desc));
 				option.value = rune.id;
