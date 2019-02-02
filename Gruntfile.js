@@ -80,8 +80,8 @@ module.exports = function (grunt) {
             },
             vendor: {
                 src: [
-                    'lib/jquery-2.2.1.min.js',
-                    'lib/jquery-ui-1.11.4.custom/jquery-ui.min.js',
+                    'lib/jquery-3.3.1.min.js',
+                    'lib/jquery-ui-1.12.1.custom/jquery-ui.min.js',
                     'lib/angular.min.js',
                     'lib/seedrandom.min.js'
                 ],

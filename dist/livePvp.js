@@ -2044,39 +2044,6 @@ function addBgeFromList(battlegrounds, battleground, player) {
     }
 }
 
-
-function setSkill_2(new_card, skill) {
-    // These skills could have multiple instances
-    var skillID = skill.id;
-    var skillType = SKILL_DATA[skillID].type;
-    switch (skillType) {
-        case 'toggle':
-            new_card[skillID] = true;
-            return;
-
-        case 'passive':
-            new_card[skill.id] = (new_card[skill.id] | 0) + skill.x;
-            break;
-
-        case 'flurry':
-            new_card[skill.id] = skill;
-            break;
-
-        case 'onDeath':
-            new_card.onDeathSkills.push(skill);
-            break;
-
-        case 'earlyActivation':
-            new_card.earlyActivationSkills.push(skill);
-            break;
-
-        case 'activation':
-        default:
-            new_card.skill.push(skill);
-            break;
-    }
-}
-
 function skillNameFromID(skillID) {
     var skillData = SKILL_DATA[skillID];
     return (skillData ? skillData.name : skillID);
@@ -7121,7 +7088,7 @@ var CARD_GUI = {};
 	var assetsRoot = '';
 
 	function clearCardSpace() {
-		var cardSpace = $("#cardSpace").empty();
+		$("#cardSpace").empty();
 	}
 
 	function clearDeckSpace() {

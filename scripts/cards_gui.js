@@ -4,7 +4,7 @@ var CARD_GUI = {};
 	var assetsRoot = '';
 
 	function clearCardSpace() {
-		var cardSpace = $("#cardSpace").empty();
+		$("#cardSpace").empty();
 	}
 
 	function clearDeckSpace() {
