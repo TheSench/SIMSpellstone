@@ -1595,7 +1595,7 @@ var SIMULATOR = {};
 					"maxLevel": 1,
 					"skill": []
 				};
-				var filler = getCardByID({ id: 0, level: 1 });
+				var filler = cardApi.byId({ id: 0, level: 1 });
 				filler.name = "filler";
 				filler.health_left = 0;
 				for (var i = field_x_assaults.length; i < toKey; i++) {
@@ -1670,7 +1670,7 @@ var SIMULATOR = {};
 
 			// Get base card
 			var unearthedUnit = makeUnitInfo((skill.card || dying.id), (skill.level || skill.x));
-			var unearthedCard = get_card_apply_battlegrounds(unearthedUnit, null, true);
+			var unearthedCard = cardApi.byIdWithBgeApplied(unearthedUnit, null, true);
 			unearthedCard.isToken = true;
 
 			var mult = skill.mult;
@@ -1828,7 +1828,7 @@ var SIMULATOR = {};
 			var tower = towerBGE.effect[tower_level];
 			if (tower) {
 				tower = makeUnitInfo(tower.id, tower.level);
-				var towerCard = get_card_apply_battlegrounds(tower);
+				var towerCard = cardApi.byIdWithBgeApplied(tower);
 				var uid = 150;
 				towerCard.uid = uid;
 				field.uids[uid] = towerCard;

@@ -5,7 +5,7 @@ var deckPopupDialog;
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
 
-	ga('send', 'exception', {
+	window.sa('send', 'exception', {
 		'exDescription': errorDescription,
 		'exFatal': false
 	});

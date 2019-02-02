@@ -13,6 +13,7 @@ module.exports = function (grunt) {
                 src: [
                     'scripts/data/fixGlobals.js',
                     'scripts/modules/hashing.js',
+                    'scripts/modules/makeUnit.js',
                     'scripts/shared.js',
                     'scripts/cards_gui.js',
                     'scripts/updateCards.js',
@@ -31,6 +32,7 @@ module.exports = function (grunt) {
                     'scripts/modules/hashing.js',
                     'scripts/modules/loadDeck.js',
                     'scripts/modules/logging.js',
+                    'scripts/modules/makeUnit.js',
                     'scripts/shared.js',
                     'scripts/sim_controller.js',
                     'scripts/single_threaded.js',
@@ -99,31 +101,46 @@ module.exports = function (grunt) {
                 // the banner is inserted at the top of the output
             },
             data: {
-                mangle: false,
+                options: {
+                    mangle: false,
+                    sourceMap: true
+                },
                 files: {
                     'dist/data.min.js': ['<%= concat.data.dest %>']
                 }
             },
             deckbuilder: {
-                mangle: true,
+                options: {
+                    mangle: true,
+                    sourceMap: true
+                },
                 files: {
                     'dist/deckbuilder.min.js': ['<%= concat.deckbuilder.dest %>']
                 }
             },
             simulator: {
-                mangle: true,
+                options: {
+                    mangle: true,
+                    sourceMap: true
+                },
                 files: {
                     'dist/simulator.min.js': ['<%= concat.simulator.dest %>']
                 }
             },
             practice: {
-                mangle: true,
+                options: {
+                    mangle: true,
+                    sourceMap: true
+                },
                 files: {
                     'dist/practice.min.js': ['<%= concat.practice.dest %>']
                 }
             },
             livePvP: {
-                mangle: true,
+                options: {
+                    mangle: true,
+                    sourceMap: true
+                },
                 files: {
                     'dist/livePvP.min.js': ['<%= concat.livePvP.dest %>']
                 }

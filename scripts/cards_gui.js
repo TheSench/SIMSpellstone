@@ -21,14 +21,14 @@ var CARD_GUI = {};
 
 	function makeDeckHTML(deck, noblanks, battlegrounds) {
 		var cards = [];
-		var commander = getCardByID(deck.commander);
+		var commander = cardApi.byId(deck.commander);
 		cards.push(create_card_html(commander, false, false));
 		for (var i = 0, len = deck.deck.length; i < len; i++) {
 			var deckEntry = deck.deck[i];
 			if (battlegrounds) {
-				var unit = get_card_apply_battlegrounds(deckEntry, battlegrounds);
+				var unit = cardApi.byIdWithBgeApplied(deckEntry, battlegrounds);
 			} else {
-				var unit = getCardByID(deckEntry);
+				var unit = cardApi.byId(deckEntry);
 			}
 			cards.push(create_card_html(unit, false, false));
 		}
@@ -42,7 +42,7 @@ var CARD_GUI = {};
 		var listHTML = createDiv("float-left");
 		for (var i = 0, len = deck.deck.length; i < len; i++) {
 			var deckEntry = deck.deck[i];
-			var unit = getCardByID(deckEntry);
+			var unit = cardApi.byId(deckEntry);
 			var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, null, i);
 			if (deckEntry.index !== undefined) {
 				htmlCard.setAttribute("data-index", deckEntry.index);
@@ -88,7 +88,7 @@ var CARD_GUI = {};
 		var cards = [];
 		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
 			var listEntry = list[i];
-			var unit = getCardByID(listEntry);
+			var unit = cardApi.byId(listEntry);
 			if (areEqual(unit, lastUnit)) {
 				multiplier++;
 			} else {

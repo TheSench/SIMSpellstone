@@ -6,6 +6,7 @@ node_modules/
 
 # Test results
 cypress/videos/
+cypress/screenshots/
 
 # Saved decks file
 saved_decks.js
