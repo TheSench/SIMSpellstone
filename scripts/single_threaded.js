@@ -1,6 +1,7 @@
 "use strict";
 
 (function () {
+    var bgeApi = require('bgeApi');
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
@@ -13,7 +14,7 @@
         SIM_CONTROLLER.getConfiguration();
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
 
         hideUI();
 

@@ -4,6 +4,8 @@ var loadDeckDialog;
 var mapBGEDialog;
 
 $(function () {
+    var bgeApi = require('bgeApi');
+    
     $("#deck1").change(function () {
         this.value = this.value.trim();
         deckChanged("attack_deck", base64.decodeHash(this.value), 'player');
@@ -69,7 +71,7 @@ $(function () {
         $deck.children().remove();
         if (!_DEFINED("seedtest")) {
             SIM_CONTROLLER.getConfiguration();
-            var battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+            var battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });

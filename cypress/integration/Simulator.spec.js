@@ -31,4 +31,7 @@ describe('Deck Tests', function() {
 
     testDeck('(1/3/1 armor 1) vs (1/6/0) ', 'QpLQAIFMQB', 'QpLQAQcHQB', 100);
     testDeck('(1/3/1 bolt 1) vs (1/3/1 armor 1) ', 'QpLQAoKOoB', 'QpLQAIFMQB', 100);
+
+    // TODO: Rune test
+    //testDeck('(1/6/1 empower 2+3) vs (1/3/1 armor 1) ', 'QpLQAphWSB', 'QpLQAIFMQB', 100);
 });
