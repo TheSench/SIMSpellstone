@@ -7,6 +7,7 @@ define('cardApi', function () {
         applyDefaultStatuses: applyDefaultStatuses
     };
 
+	var cardInfo = require('cardInfo');
     var skillApi = require('skillApi');
 	var runeApi = require('runeApi');
 
@@ -79,7 +80,7 @@ define('cardApi', function () {
 
     function getCardByID(unit, skillModifiers, skillMult, isToken) {
 
-        var current_card = loadCard(unit.id);
+        var current_card = cardInfo.loadCard(unit.id);
 
         // Not a valid card
         if (!current_card) {
@@ -105,7 +106,7 @@ define('cardApi', function () {
 
     function getSlimCardByID(unit, getDetails) {
 
-        var current_card = loadCard(unit.id);
+        var current_card = cardInfo.loadCard(unit.id);
         var new_card = {};
         if (current_card.card_type == "1") {
             new_card.isCommander = function () { return true; };

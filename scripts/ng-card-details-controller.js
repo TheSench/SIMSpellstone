@@ -1,5 +1,7 @@
 (function (angular) {
   'use strict';
+  
+	var cardInfo = require('cardInfo');
 
   function getCardInfo(unit) {
     var id = unit.id;
@@ -55,7 +57,7 @@
 
     $scope.getCardImage = function () {
       var image = new Image();
-      image.src = "res/cardImagesLarge/" + loadCard($scope.card.id).picture + ".jpg";
+      image.src = "res/cardImagesLarge/" + cardInfo.loadCard($scope.card.id).picture + ".jpg";
 
       image.onerror = function () {
         if (this.naturalHeight !== 330) {
@@ -65,7 +67,7 @@
         $modal.find('img').attr('src', this.src);
       };
 
-      return "res/cardImagesLarge/" + loadCard($scope.card.id).picture + ".jpg";
+      return "res/cardImagesLarge/" + cardInfo.loadCard($scope.card.id).picture + ".jpg";
     };
 
     var image;
@@ -73,7 +75,7 @@
     $scope.$watch('card.id', function (newValue, oldValue) {
       if (newValue) {
         var extension = ".jpg";
-        if (is_commander(newValue)) {
+        if (cardInfo.isCommander(newValue)) {
           extension = ".png";
         }
         image = new Image();
@@ -90,7 +92,7 @@
           $scope.imageSrc = image.src;
           $scope.$apply();
         };
-        image.src = "res/cardImagesLarge/" + loadCard(newValue).picture + extension;
+        image.src = "res/cardImagesLarge/" + cardInfo.loadCard(newValue).picture + extension;
       }
       else {
         $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg";
@@ -98,7 +100,7 @@
     });
 
     $scope.isCommander = function () {
-      return $window.is_commander($scope.id);
+      return $window.cardInfo.isCommander($scope.id);
     };
 
     $scope.commanderClass = function () {

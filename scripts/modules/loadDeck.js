@@ -1,4 +1,5 @@
 var loadDeck = (function () {
+	var cardInfo = require('cardInfo');
     var cardApi = require('cardApi');
     
     var api = {
@@ -94,8 +95,8 @@ var loadDeck = (function () {
             if (canFuse(cardID)) {
                 cardID = fuseCard(cardID);
             }
-        } else if (level > 1 && is_commander(cardID)) {
-            var maxUpgrades = (Number(loadCard(cardID).rarity) + 1);
+        } else if (level > 1 && cardInfo.isCommander(cardID)) {
+            var maxUpgrades = (Number(cardInfo.loadCard(cardID).rarity) + 1);
             var upgradesPerLevel = maxUpgrades / (maxedAt - 1);
             var levelsFromBase = level - 1;
             unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
@@ -110,7 +111,7 @@ var loadDeck = (function () {
     }
 
     function upgradeCard(unitInfo) {
-        var maxLevel = (parseInt(loadCard(unitInfo.id).rarity) + 2);
+        var maxLevel = (parseInt(cardInfo.loadCard(unitInfo.id).rarity) + 2);
         if (unitInfo.level == maxLevel) {
             if (canFuse(unitInfo.id)) {
                 unitInfo.id = fuseCard(unitInfo.id, 1);
@@ -127,7 +128,7 @@ var loadDeck = (function () {
     function canFuse(cardID) {
         if (DoNotFuse.indexOf(cardID) > -1) {
             return false;
-        } else if (is_commander(cardID)) {
+        } else if (cardInfo.isCommander(cardID)) {
             return false;
         } else if (FUSIONS[cardID]) {
             return true;

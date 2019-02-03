@@ -267,25 +267,6 @@ function getDefaultDeck() {
 
 
 
-function loadCard(id) {
-    var card = CARDS[id];
-    return card;
-}
-
-function is_commander(id) {
-    var card = loadCard(id);
-    return (card && card.card_type == '1');
-}
-
-function is_assault(id) {
-    var card = loadCard(id);
-    return (card && card.card_type == '2');
-}
-
-function is_trap(id) {
-    var card = loadCard(id);
-    return (card && card.card_type == '3');
-}
 
 function makeUnitInfo(id, level, runes) {
     var unit = {

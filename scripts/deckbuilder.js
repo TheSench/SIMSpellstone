@@ -2,6 +2,7 @@
 
 var cardApi = require('cardApi');
 var runeApi = require('runeApi');
+var cardInfo = require('cardInfo');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
@@ -696,7 +697,7 @@ var addUnitToDeck = function (unit, htmlCard) {
 		deck.deck.push(unit);
 		//$deck.append($htmlCard);
 		doDrawDeck();
-	} else*/ if (is_commander(unit.id)) {
+	} else*/ if (cardInfo.isCommander(unit.id)) {
 
 		if (areEqual(deck.commander, unit)) return;
 		deck.commander = unit;
@@ -2149,7 +2150,7 @@ function doSort(select) {
 	var sortField = select.value;
 	unitsShown.sort(function (unitA, unitB) {
 		// Always sort by commander/unit first
-		var comparison = is_commander(unitB.id) - is_commander(unitA.id);
+		var comparison = cardInfo.isCommander(unitB.id) - cardInfo.isCommander(unitA.id);
 		if (comparison != 0) return comparison;
 
 		if (sortField === 'id') {

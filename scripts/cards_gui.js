@@ -4,6 +4,7 @@ var CARD_GUI = {};
 (function () {
 	
 	var cardApi = require('cardApi');
+	var cardInfo = require('cardInfo');
 	var runeApi = require('runeApi');
 
 	var assetsRoot = '';
@@ -273,7 +274,7 @@ var CARD_GUI = {};
 		}
 		htmlCard.setAttribute("data-runeids", runeIDs.join(","));
 
-		var picture = loadCard(card.id).picture;
+		var picture = cardInfo.loadCard(card.id).picture;
 		if (picture) {
 			var icon = document.createElement("i");
 			if (picture.indexOf("portrait_") == 0) {

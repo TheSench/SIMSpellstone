@@ -13,6 +13,7 @@ module.exports = function (grunt) {
             deckbuilder: {
                 src: [
                     //'scripts/require.config.js',
+                    'scripts/modules/cardInfo.js',
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
                     'scripts/modules/cardApi.js',
@@ -33,6 +34,7 @@ module.exports = function (grunt) {
             simulator: {
                 src: [
                     //'scripts/require.config.js',
+                    'scripts/modules/cardInfo.js',
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
                     'scripts/modules/cardApi.js',

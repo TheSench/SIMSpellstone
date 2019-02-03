@@ -1,5 +1,7 @@
 var base64 = (function () {
     "use strict";
+    
+	var cardInfo = require('cardInfo');
 
     var api = {
         encodeHash: encode,
@@ -121,9 +123,9 @@ var base64 = (function () {
             unitInfo = base64ToUnitInfo(unitHash);
 
             if (unitInfo) {
-                if (loadCard(unitInfo.id)) {
+                if (cardInfo.loadCard(unitInfo.id)) {
                     // Repeat previous card multiple times
-                    if (!current_deck.commander && is_commander(unitInfo.id)) {
+                    if (!current_deck.commander && cardInfo.isCommander(unitInfo.id)) {
                         current_deck.commander = unitInfo;
                         // Add to deck
                     } else {
