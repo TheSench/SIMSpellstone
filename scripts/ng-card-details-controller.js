@@ -2,6 +2,7 @@
   'use strict';
   
 	var cardInfo = require('cardInfo');
+  var skillApi = require('skillApi');
 	var factions = require('factions');
 
   // Global arrays
@@ -422,8 +423,8 @@
         }
       };
     })
-    .filter('skillNameFromID', function () {
-      return window.skillNameFromID;
+    .filter('skillApi.nameFromId', function () {
+      return window.skillApi.nameFromId;
     })
     .controller('DeckBuilderCtrl', ['$scope', '$window', DeckBuilderCtrl]);
 

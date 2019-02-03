@@ -4,7 +4,8 @@ var log = (function() {
         name: logCardName
     };
     
-	var factions = require('factions');
+    var factions = require('factions');
+    var skillApi = require('skillApi');
 
     function truncate(value) {
         if (value > Math.floor(value)) {
@@ -14,10 +15,10 @@ var log = (function() {
     }
 
     function logSkill(skill) {
-        var output = skillNameFromID(skill.id);
+        var output = skillApi.nameFromId(skill.id);
         if (skill.all) output += ' all';
         if (skill.y) output += ' ' + factions.names[skill.y];
-        if (skill.s) output += ' ' + skillNameFromID(skill.s);
+        if (skill.s) output += ' ' + skillApi.nameFromId(skill.s);
         if (skill.c) output += ' every ' + skill.c + ' turns';
         else if (skill.x) output += ' ' + skill.x;
         return output;

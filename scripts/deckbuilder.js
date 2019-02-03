@@ -1,9 +1,11 @@
 ﻿"use strict";
 
+var base64 = require('base64');
 var cardApi = require('cardApi');
 var runeApi = require('runeApi');
 var cardInfo = require('cardInfo');
 var factions = require('factions');
+var unitInfo = require('unitInfo');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
@@ -433,7 +435,7 @@ var drawCardList = function () {
 		inventory = base64.decodeHash(inventory);
 		var commander = inventory.commander;
 		inventory = inventory.deck;
-		if (commander && !areEqual(commander, elariaCaptain)) {
+		if (commander && !unitInfo.areEqual(commander, elariaCaptain)) {
 			inventory.push(commander);
 		}
 
@@ -483,7 +485,7 @@ function doDrawCardList(cardList, resetPage) {
 	var unique = 0;
 	for (var i = 0, len = cardList.length; i < len; i++) {
 		var unit = cardList[i];
-		if (!areEqual(unit, lastUnit)) unique++;
+		if (!unitInfo.areEqual(unit, lastUnit)) unique++;
 		lastUnit = unit;
 	}
 	pages = Math.max(Math.ceil(unique / cards), 1);
@@ -630,7 +632,7 @@ var resetDeck = function () {
 var disableTracking = false;
 var hash_changed = function (hash) {
 	if (fromInventory) {
-		if (!areEqual(deck.commander, elariaCaptain)) unitsShown.push(deck.commander);
+		if (!unitInfo.areEqual(deck.commander, elariaCaptain)) unitsShown.push(deck.commander);
 		unitsShown.push.apply(unitsShown, deck.deck);
 		redrawCardList(true);
 	}
@@ -644,7 +646,7 @@ var hash_changed = function (hash) {
 	if (!hash) deck.commander = null;
 
 	if (fromInventory) {
-		if (!areEqual(deck.commander, elariaCaptain)) removeFromInventory(deck.commander);
+		if (!unitInfo.areEqual(deck.commander, elariaCaptain)) removeFromInventory(deck.commander);
 		for (var i = 0; i < deck.deck.length; i++) {
 			removeFromInventory(deck.deck[i]);
 		}
@@ -700,7 +702,7 @@ var addUnitToDeck = function (unit, htmlCard) {
 		doDrawDeck();
 	} else*/ if (cardInfo.isCommander(unit.id)) {
 
-		if (areEqual(deck.commander, unit)) return;
+		if (unitInfo.areEqual(deck.commander, unit)) return;
 		deck.commander = unit;
 		replaceCard($deck.find(".card").first(), $htmlCard);
 	} else {
@@ -745,7 +747,7 @@ function replaceCard(oldCard, newCard) {
 function removeFromInventory(unit) {
 	for (var i = 0; i < unitsShown.length; i++) {
 		var unit_i = unitsShown[i];
-		if (areEqual(unit, unit_i)) {
+		if (unitInfo.areEqual(unit, unit_i)) {
 			var removed = unitsShown.splice(i, 1);
 			return removed[0];
 		}
@@ -765,7 +767,7 @@ var removeFromDeck = function (htmlCard) {
 		for (var len = inventory.length; i < len; i++) {
 			var unit = inventory[i];
 			if (lastUnit) {
-				if (!areEqual(unit, lastUnit)) {
+				if (!unitInfo.areEqual(unit, lastUnit)) {
 					invIndex++;
 				}
 			}
@@ -779,7 +781,7 @@ var removeFromDeck = function (htmlCard) {
 		doDrawDeck();
 	} else*/ if (index == 0) {
 		unit = deck.commander;
-		if (areEqual(unit, elariaCaptain)) return;
+		if (unitInfo.areEqual(unit, elariaCaptain)) return;
 		deck.commander = elariaCaptain;
 		var card = cardApi.byId(elariaCaptain);
 		//$htmlCard.replaceWith(CARD_GUI.create_card_html(card));

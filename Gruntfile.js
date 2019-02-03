@@ -15,13 +15,18 @@ module.exports = function (grunt) {
                     'scripts/require.sync.js',
                     //'scripts/require.config.js',
                     'scripts/modules/factions.js',
-                    'scripts/modules/cardInfo.js',
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
+                    'scripts/modules/cardInfo.js',
+
+                    'scripts/modules/base64.js',
+
                     'scripts/modules/cardApi.js',
+                    
+                    'scripts/modules/unitInfo.js',
                     'scripts/modules/bgeApi.js',
+
                     'scripts/data/fixGlobals.js',
-                    'scripts/modules/hashing.js',
                     'scripts/shared.js',
                     'scripts/cards_gui.js',
                     'scripts/updateCards.js',
@@ -38,14 +43,19 @@ module.exports = function (grunt) {
                     'scripts/require.sync.js',
                     //'scripts/require.config.js',
                     'scripts/modules/factions.js',
-                    'scripts/modules/cardInfo.js',
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
+                    'scripts/modules/cardInfo.js',
+
+                    'scripts/modules/base64.js',
+
                     'scripts/modules/cardApi.js',
+                    
+                    'scripts/modules/unitInfo.js',
                     'scripts/modules/bgeApi.js',
+
                     'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
-                    'scripts/modules/hashing.js',
                     'scripts/modules/loadDeck.js',
                     'scripts/modules/logging.js',
                     'scripts/shared.js',

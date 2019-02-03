@@ -62,41 +62,13 @@
 
         Tower: 999
     }
-});;define('cardInfo', function() {
-    var api = {
-        loadCard: loadCard,
-        isCommander: isCommander,
-        isAssault: isAssault,
-        isTrap: isTrap
-    };
-
-    function loadCard(id) {
-        var card = CARDS[id];
-        return card;
-    }
-
-    function isCommander(id) {
-        var card = loadCard(id);
-        return (card && card.card_type == '1');
-    }
-    
-    function isAssault(id) {
-        var card = loadCard(id);
-        return (card && card.card_type == '2');
-    }
-    
-    function isTrap(id) {
-        var card = loadCard(id);
-        return (card && card.card_type == '3');
-    }
-
-    return api;
 });;define('skillApi', function () {
 
     var api = {
         setSkill: setSkill,
         copySkill: copySkill,
-        copySkills: copySkills
+        copySkills: copySkills,
+        nameFromId: skillNameFromID
     };
 
     function setSkill(new_card, skill) {
@@ -171,6 +143,11 @@
         new_card.skillTimers = skillTimers;
     }
 
+    function skillNameFromID(skillID) {
+        var skillData = SKILL_DATA[skillID];
+        return (skillData ? skillData.name : skillID);
+    }
+
     return api;
 });;define('runeApi', function () {
     var api = {
@@ -226,6 +203,183 @@
         }
     }
 
+    return api;
+});;define('cardInfo', function() {
+    var api = {
+        loadCard: loadCard,
+        isCommander: isCommander,
+        isAssault: isAssault,
+        isTrap: isTrap
+    };
+
+    function loadCard(id) {
+        var card = CARDS[id];
+        return card;
+    }
+
+    function isCommander(id) {
+        var card = loadCard(id);
+        return (card && card.card_type == '1');
+    }
+    
+    function isAssault(id) {
+        var card = loadCard(id);
+        return (card && card.card_type == '2');
+    }
+    
+    function isTrap(id) {
+        var card = loadCard(id);
+        return (card && card.card_type == '3');
+    }
+
+    return api;
+});;define('base64', function () {
+    "use strict";
+    
+	var cardInfo = require('cardInfo');
+
+    var api = {
+        encodeHash: encode,
+        decodeHash: decode,
+        fromDecimal: decimalToBase64,
+        toDecimal: base64ToDecimal,
+        fromUnitInfo: unitInfoToBase64
+    };
+
+    var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
+    
+    var noFusionInHash = {};
+    for (var id in CARDS) {
+        if (id < 10000) {
+            var fusion = FUSIONS[id];
+            if (!fusion || Number(fusion) < 10000) {
+                noFusionInHash[id] = true;
+            }
+        }
+    }
+    
+    // Used to determine how to hash runeIDs
+    var maxRuneID = 1000;
+    function unitInfoToBase64(unitInfo) {
+    
+        var baseID = parseInt(unitInfo.id);
+        var level = (parseInt(unitInfo.level) - 1);
+    
+        if (noFusionInHash[baseID]) {
+            var fusion = Math.floor(level / 7);
+            var level = level % 7;
+        } else {
+            var fusion = Math.floor(baseID / 10000);
+            baseID %= 10000;
+        }
+    
+        var runeID = 0;
+        if (unitInfo.runes.length) {
+            runeID = parseInt(unitInfo.runes[0].id);
+            runeID %= 5000; // Runes IDs are all in the range of 5001 - 5500
+        }
+    
+        var dec = baseID;
+        dec = dec * 3 + fusion;
+        dec = dec * 7 + level;
+        dec = dec * maxRuneID + runeID;
+    
+        return decimalToBase64(dec, 5);
+    }
+    
+    function base64ToUnitInfo(base64) {
+    
+        var dec = base64ToDecimal(base64);
+    
+        var runeID = dec % maxRuneID;
+        dec = (dec - runeID) / maxRuneID;
+    
+        var level = dec % 7;
+        dec = (dec - level++) / 7;
+        var fusion = dec % 3;
+        dec = (dec - fusion) / 3;
+        var unitID = dec;
+    
+        if (noFusionInHash[unitID]) {
+            level += fusion * 7;
+        } else if (fusion > 0) {
+            unitID = Number(fusion + '' + unitID);
+        }
+    
+        var unitInfo = makeUnitInfo(unitID, level);
+        if (runeID > 0) {
+            unitInfo.runes.push({
+                id: runeID + 5000
+            });
+        }
+    
+        return unitInfo;
+    }
+    
+    function decimalToBase64(dec, len) {
+        var base64 = '';
+        for (var i = 0; i < len; i++) {
+            var part = dec % 64;
+            base64 += base64chars[part];
+            dec = (dec - part) / 64;
+        }
+        return base64;
+    }
+    
+    function base64ToDecimal(base64) {
+        var dec = 0;
+        for (var i = base64.length - 1; i >= 0; i--) {
+            dec *= 64;
+            var part = base64chars.indexOf(base64[i]);
+            dec += part;
+        }
+        return dec;
+    }
+
+    function encode(deck) {
+        var base64Units = [];
+
+        if (deck.commander) {
+            base64Units.push(deck.commander);
+        }
+        return base64Units.concat(deck.deck)
+            .map(unitInfoToBase64)
+            .join("");
+    }
+    
+    function decode(hash) {
+
+        var current_deck = { deck: [] };
+        var unitInfo;
+        var entryLength = 5;
+        
+        for (var i = 0; i < hash.length; i += entryLength) {
+            var unitHash = hash.substr(i, entryLength);
+            unitInfo = base64ToUnitInfo(unitHash);
+
+            if (unitInfo) {
+                if (cardInfo.loadCard(unitInfo.id)) {
+                    // Repeat previous card multiple times
+                    if (!current_deck.commander && cardInfo.isCommander(unitInfo.id)) {
+                        current_deck.commander = unitInfo;
+                        // Add to deck
+                    } else {
+                        current_deck.deck.push(unitInfo);
+                    }
+                } else {
+                    console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
+                }
+            }
+        }
+
+        // Default commander to Elaria Captain if none found
+        if (!current_deck.commander) {
+            current_deck.commander = elariaCaptain;
+        }
+
+        return current_deck;
+    }
+    
     return api;
 });;define('cardApi', function () {
     var api = {
@@ -868,6 +1022,78 @@
     }());
 
     return api;
+});;define('unitInfo', function () {
+    var api = {
+        areEqual: areEqual,
+        getEnhancement: getEnhancement,
+        initializeUnit: initializeUnit,
+        isImbued: isImbued
+    };
+    
+    var base64 = require('base64');
+    var cardApi = require('cardApi');
+
+    function areEqual(unitInfo1, unitInfo2) {
+        if ((!unitInfo1) !== (!unitInfo2)) return false; // Silly null-check
+        var hash1 = base64.fromUnitInfo(unitInfo1);
+        var hash2 = base64.fromUnitInfo(unitInfo2);
+        return (hash1 === hash2);
+    }
+
+    function initializeUnit(unit, p, newKey) {
+        unit.owner = p;
+        unit.timer = unit.cost;
+        unit.health_left = unit.health;
+        // Setup status effects
+        cardApi.applyDefaultStatuses(unit);
+        unit.key = newKey;
+        if (!unit.reusableSkills) unit.resetTimers();
+    }
+
+    function getEnhancement(unit, s, base) {
+        var enhancements = unit.enhanced;
+        var enhanced = (enhancements ? (enhancements[s] || 0) : 0);
+        if (enhanced < 0) {
+            enhanced = Math.ceil(base * -enhanced);
+        }
+        return enhanced;
+    }
+
+    function isImbued(unit, skillID, i) {
+        var imbueSkillsKey;
+        var skillType = SKILL_DATA[skillID].type;
+        switch (skillType) {
+            case 'flurry':
+            case 'toggle':
+                return unit.imbued[skillID];
+    
+            case 'passive':
+                return (unit[skillID] === unit.imbued[skillID]);
+    
+            case 'onDeath':
+                imbueSkillsKey = 'onDeathSkills';
+                break;
+    
+            case 'earlyActivation':
+                imbueSkillsKey = 'earlyActivationSkills';
+                break;
+    
+            case 'activation':
+            default:
+                imbueSkillsKey = 'skill';
+                break;
+        }
+    
+    
+        // Mark the first added skill index
+        if (unit.imbued[imbueSkillsKey] !== undefined) {
+            return (i >= unit.imbued[imbueSkillsKey]);
+        } else {
+            return false;
+        }
+    }
+    
+    return api;
 });;define('bgeApi', function () {
     var api = {
         getBattlegrounds: getBattlegrounds
@@ -1496,154 +1722,6 @@ var DATA_UPDATER = (function () {
     return {
         updateData: updateData
     };
-})();;var base64 = (function () {
-    "use strict";
-    
-	var cardInfo = require('cardInfo');
-
-    var api = {
-        encodeHash: encode,
-        decodeHash: decode,
-        fromDecimal: decimalToBase64,
-        toDecimal: base64ToDecimal,
-        fromUnitInfo: unitInfoToBase64
-    };
-
-    var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
-    
-    var noFusionInHash = {};
-    for (var id in CARDS) {
-        if (id < 10000) {
-            var fusion = FUSIONS[id];
-            if (!fusion || Number(fusion) < 10000) {
-                noFusionInHash[id] = true;
-            }
-        }
-    }
-    
-    // Used to determine how to hash runeIDs
-    var maxRuneID = 1000;
-    function unitInfoToBase64(unitInfo) {
-    
-        var baseID = parseInt(unitInfo.id);
-        var level = (parseInt(unitInfo.level) - 1);
-    
-        if (noFusionInHash[baseID]) {
-            var fusion = Math.floor(level / 7);
-            var level = level % 7;
-        } else {
-            var fusion = Math.floor(baseID / 10000);
-            baseID %= 10000;
-        }
-    
-        var runeID = 0;
-        if (unitInfo.runes.length) {
-            runeID = parseInt(unitInfo.runes[0].id);
-            runeID %= 5000; // Runes IDs are all in the range of 5001 - 5500
-        }
-    
-        var dec = baseID;
-        dec = dec * 3 + fusion;
-        dec = dec * 7 + level;
-        dec = dec * maxRuneID + runeID;
-    
-        return decimalToBase64(dec, 5);
-    }
-    
-    function base64ToUnitInfo(base64) {
-    
-        var dec = base64ToDecimal(base64);
-    
-        var runeID = dec % maxRuneID;
-        dec = (dec - runeID) / maxRuneID;
-    
-        var level = dec % 7;
-        dec = (dec - level++) / 7;
-        var fusion = dec % 3;
-        dec = (dec - fusion) / 3;
-        var unitID = dec;
-    
-        if (noFusionInHash[unitID]) {
-            level += fusion * 7;
-        } else if (fusion > 0) {
-            unitID = Number(fusion + '' + unitID);
-        }
-    
-        var unitInfo = makeUnitInfo(unitID, level);
-        if (runeID > 0) {
-            unitInfo.runes.push({
-                id: runeID + 5000
-            });
-        }
-    
-        return unitInfo;
-    }
-    
-    function decimalToBase64(dec, len) {
-        var base64 = '';
-        for (var i = 0; i < len; i++) {
-            var part = dec % 64;
-            base64 += base64chars[part];
-            dec = (dec - part) / 64;
-        }
-        return base64;
-    }
-    
-    function base64ToDecimal(base64) {
-        var dec = 0;
-        for (var i = base64.length - 1; i >= 0; i--) {
-            dec *= 64;
-            var part = base64chars.indexOf(base64[i]);
-            dec += part;
-        }
-        return dec;
-    }
-
-    function encode(deck) {
-        var base64Units = [];
-
-        if (deck.commander) {
-            base64Units.push(deck.commander);
-        }
-        return base64Units.concat(deck.deck)
-            .map(unitInfoToBase64)
-            .join("");
-    }
-    
-    function decode(hash) {
-
-        var current_deck = { deck: [] };
-        var unitInfo;
-        var entryLength = 5;
-        
-        for (var i = 0; i < hash.length; i += entryLength) {
-            var unitHash = hash.substr(i, entryLength);
-            unitInfo = base64ToUnitInfo(unitHash);
-
-            if (unitInfo) {
-                if (cardInfo.loadCard(unitInfo.id)) {
-                    // Repeat previous card multiple times
-                    if (!current_deck.commander && cardInfo.isCommander(unitInfo.id)) {
-                        current_deck.commander = unitInfo;
-                        // Add to deck
-                    } else {
-                        current_deck.deck.push(unitInfo);
-                    }
-                } else {
-                    console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
-                }
-            }
-        }
-
-        // Default commander to Elaria Captain if none found
-        if (!current_deck.commander) {
-            current_deck.commander = elariaCaptain;
-        }
-
-        return current_deck;
-    }
-    
-    return api;
 })();;var loadDeck = (function () {
 	var cardInfo = require('cardInfo');
     var cardApi = require('cardApi');
@@ -1902,7 +1980,8 @@ var DATA_UPDATER = (function () {
         name: logCardName
     };
     
-	var factions = require('factions');
+    var factions = require('factions');
+    var skillApi = require('skillApi');
 
     function truncate(value) {
         if (value > Math.floor(value)) {
@@ -1912,10 +1991,10 @@ var DATA_UPDATER = (function () {
     }
 
     function logSkill(skill) {
-        var output = skillNameFromID(skill.id);
+        var output = skillApi.nameFromId(skill.id);
         if (skill.all) output += ' all';
         if (skill.y) output += ' ' + factions.names[skill.y];
-        if (skill.s) output += ' ' + skillNameFromID(skill.s);
+        if (skill.s) output += ' ' + skillApi.nameFromId(skill.s);
         if (skill.c) output += ' every ' + skill.c + ' turns';
         else if (skill.x) output += ' ' + skill.x;
         return output;
@@ -2117,16 +2196,6 @@ function shuffle(list) {
     }
 }
 
-function initializeCard(card, p, newKey) {
-    card.owner = p;
-    card.timer = card.cost;
-    card.health_left = card.health;
-    // Setup status effects
-    cardApi.applyDefaultStatuses(card);
-    card.key = newKey;
-    if (!card.reusableSkills) card.resetTimers();
-}
-
 function copy_deck(original_deck) {
     var new_deck = {};
     new_deck.commander = original_deck.commander;
@@ -2154,61 +2223,6 @@ function copy_card_list(original_card_list) {
         new_card_list[key] = original_card_list[key];
     }
     return new_card_list;
-}
-
-var getEnhancement = function (card, s, base) {
-    var enhancements = card.enhanced;
-    var enhanced = (enhancements ? (enhancements[s] || 0) : 0);
-    if (enhanced < 0) {
-        enhanced = Math.ceil(base * -enhanced);
-    }
-    return enhanced;
-};
-
-var isImbued = function (card, skillID, i) {
-    var imbueSkillsKey;
-    var skillType = SKILL_DATA[skillID].type;
-    switch (skillType) {
-        case 'flurry':
-        case 'toggle':
-            return card.imbued[skillID];
-
-        case 'passive':
-            return (card[skillID] === card.imbued[skillID]);
-
-        case 'onDeath':
-            imbueSkillsKey = 'onDeathSkills';
-            break;
-
-        case 'earlyActivation':
-            imbueSkillsKey = 'earlyActivationSkills';
-            break;
-
-        case 'activation':
-        default:
-            imbueSkillsKey = 'skill';
-            break;
-    }
-
-
-    // Mark the first added skill index
-    if (card.imbued[imbueSkillsKey] !== undefined) {
-        return (i >= card.imbued[imbueSkillsKey]);
-    } else {
-        return false;
-    }
-};
-
-function skillNameFromID(skillID) {
-    var skillData = SKILL_DATA[skillID];
-    return (skillData ? skillData.name : skillID);
-}
-
-function areEqual(unitInfo1, unitInfo2) {
-    if ((!unitInfo1) !== (!unitInfo2)) return false; // Silly null-check
-    var hash1 = base64.fromUnitInfo(unitInfo1);
-    var hash2 = base64.fromUnitInfo(unitInfo2);
-    return (hash1 === hash2);
 }
 
 // Convert card list into an actual deck
@@ -2561,6 +2575,9 @@ var SIM_CONTROLLER = (function () {
 (function () {
 	
 	var cardApi = require('cardApi');
+    var skillApi = require('skillApi');
+	var base64 = require('base64');
+	var unitInfo = require('unitInfo');
 
 	"use strict";
 
@@ -2813,7 +2830,7 @@ var SIM_CONTROLLER = (function () {
 	function backlash(attacker, defender) {
 		if (attacker.isAssault() && defender.isAlive()) {
 			var baseDamage = defender.backlash;
-			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
+			var enhancement = unitInfo.getEnhancement(defender, 'backlash', baseDamage);
 			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement);
 		}
 	}
@@ -2874,7 +2891,7 @@ var SIM_CONTROLLER = (function () {
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = getEnhancement(src_card, 'burn', scorch);
+			var enhanced = unitInfo.getEnhancement(src_card, 'burn', scorch);
 			scorch += enhanced;
 
 			var affected = 0;
@@ -2940,7 +2957,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, protect);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
 
 			var affected = 0;
@@ -3013,7 +3030,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, heal);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, heal);
 			heal += enhanced;
 
 			var affected = 0;
@@ -3082,7 +3099,7 @@ var SIM_CONTROLLER = (function () {
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id, strike);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, strike);
 			strike += enhanced;
 
 			var affected = 0;
@@ -3168,7 +3185,7 @@ var SIM_CONTROLLER = (function () {
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id, intensify);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, intensify);
 			intensify += enhanced;
 
 			var affected = 0;
@@ -3236,7 +3253,7 @@ var SIM_CONTROLLER = (function () {
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id, ignite);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, ignite);
 			ignite += enhanced;
 
 			var affected = 0;
@@ -3343,7 +3360,7 @@ var SIM_CONTROLLER = (function () {
 			var o = get_o(src_card);
 
 			var frost = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, frost);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, frost);
 			frost += enhanced;
 
 			var all = skill.all;
@@ -3416,7 +3433,7 @@ var SIM_CONTROLLER = (function () {
 			// No Targets
 			if (!target) return 0;
 
-			var enhanced = getEnhancement(src_card, skill.id, heartseeker);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, heartseeker);
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
@@ -3458,7 +3475,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, enfeeble);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enfeeble);
 			enfeeble += enhanced;
 
 			var affected = 0;
@@ -3537,7 +3554,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, weaken);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, weaken);
 			weaken += enhanced;
 
 			var affected = 0;
@@ -3581,7 +3598,7 @@ var SIM_CONTROLLER = (function () {
 			var p = get_p(src_card);
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 			var all = skill.all;
 
@@ -3659,7 +3676,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var affected = 0;
@@ -3703,7 +3720,7 @@ var SIM_CONTROLLER = (function () {
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -3746,7 +3763,7 @@ var SIM_CONTROLLER = (function () {
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -3793,7 +3810,7 @@ var SIM_CONTROLLER = (function () {
 
 			var field_x_assaults = field[o].assaults;
 
-			var enhanced = getEnhancement(src_card, skill.id, barrages);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, barrages);
 			barrages += enhanced;
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
@@ -3945,7 +3962,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, enrage);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
 
 			var affected = 0;
@@ -4083,7 +4100,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, mark);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, mark);
 			mark += enhanced;
 
 			var affected = 0;
@@ -4749,7 +4766,7 @@ var SIM_CONTROLLER = (function () {
 				var b_priority = cardInHand.priority;
 
 				// If this is the exact card at this spot
-				if (areEqual(desiredCard, cardInHand)) {
+				if (unitInfo.areEqual(desiredCard, cardInHand)) {
 					played = true;
 					break;
 				}
@@ -4936,7 +4953,7 @@ var SIM_CONTROLLER = (function () {
 
 		if (assault[skillName]) {
 			statusValue = assault[skillName];
-			var enhanced = getEnhancement(assault, skillName, statusValue);
+			var enhanced = unitInfo.getEnhancement(assault, skillName, statusValue);
 			statusValue += enhanced;
 		}
 
@@ -5021,9 +5038,9 @@ var SIM_CONTROLLER = (function () {
 				skill.countdown--;
 				if (debug) {
 					if (skill.countdown) {
-						echo += log.name(unit) + ' charges ' + skillNameFromID(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
+						echo += log.name(unit) + ' charges ' + skillApi.nameFromId(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
 					} else {
-						echo += log.name(unit) + ' readies ' + skillNameFromID(skill.id) + '<br/>';
+						echo += log.name(unit) + ' readies ' + skillApi.nameFromId(skill.id) + '<br/>';
 					}
 				}
 			}
@@ -5051,7 +5068,7 @@ var SIM_CONTROLLER = (function () {
 			if (current_assault.regenerate && current_assault.isDamaged()) {
 
 				var regen_health = current_assault.regenerate;
-				var enhanced = getEnhancement(current_assault, 'regenerate', regen_health);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'regenerate', regen_health);
 				regen_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (regen_health >= healthMissing) {
@@ -5189,7 +5206,7 @@ var SIM_CONTROLLER = (function () {
 		// var pierce = current_assault['skill']['pierce'];
 		var pierce = current_assault.pierce;
 		if (pierce) {
-			var enhanced = getEnhancement(current_assault, 'pierce', pierce);
+			var enhanced = unitInfo.getEnhancement(current_assault, 'pierce', pierce);
 			pierce += enhanced;
 		} else {
 			pierce = 0;
@@ -5233,7 +5250,7 @@ var SIM_CONTROLLER = (function () {
 			}
 		}
 		if (shrouded) {
-			shrouded += getEnhancement(target, 'stasis', shrouded);
+			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
 			if (debug) {
 				echo += ' Shroud: -' + shrouded;
 			}
@@ -5250,7 +5267,7 @@ var SIM_CONTROLLER = (function () {
 			damage -= shrouded;
 		}
 		if (armor) {
-			armor += getEnhancement(target, 'armored', armor);
+			armor += unitInfo.getEnhancement(target, 'armored', armor);
 			if (debug) {
 				echo += ' Armor: -' + armor;
 			}
@@ -5296,7 +5313,7 @@ var SIM_CONTROLLER = (function () {
 			// - Target must not be already poisoned of that level
 			if (current_assault.poison) {
 				var poison = current_assault.poison;
-				var enhanced = getEnhancement(current_assault, 'poison', poison);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'poison', poison);
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
@@ -5311,7 +5328,7 @@ var SIM_CONTROLLER = (function () {
 			// - Sets envenomed to greater of target's current envenomed or new venom
 			if (current_assault.venom) {
 				var venom = current_assault.venom;
-				var enhanced = getEnhancement(current_assault, 'venom', venom);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'venom', venom);
 				venom += enhanced;
 
 				if (venom > target.envenomed) {
@@ -5327,7 +5344,7 @@ var SIM_CONTROLLER = (function () {
 			// - Target must be an assault
 			if (current_assault.nullify) {
 				var nullify = current_assault.nullify;
-				var enhanced = getEnhancement(current_assault, 'nullify', nullify);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
 				if (debug) echo += log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target) + '<br>';
@@ -5347,7 +5364,7 @@ var SIM_CONTROLLER = (function () {
 			if (current_assault.daze) {
 
 				var dazed = current_assault.daze;
-				var enhanced = getEnhancement(current_assault, 'daze', dazed);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'daze', dazed);
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
@@ -5370,7 +5387,7 @@ var SIM_CONTROLLER = (function () {
 			if (current_assault.leech && current_assault.isDamaged()) {
 
 				var leech_health = current_assault.leech;
-				var enhanced = getEnhancement(current_assault, 'leech', leech_health);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'leech', leech_health);
 				leech_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (leech_health >= healthMissing) {
@@ -5383,7 +5400,7 @@ var SIM_CONTROLLER = (function () {
 
 			if (current_assault.reinforce) {
 				var reinforce = current_assault.reinforce;
-				var enhanced = getEnhancement(current_assault, 'reinforce', reinforce);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'reinforce', reinforce);
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
@@ -5396,7 +5413,7 @@ var SIM_CONTROLLER = (function () {
 			if (target.counter) {
 
 				var counterBase = 0 + target.counter;
-				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
+				var counterEnhancement = unitInfo.getEnhancement(target, 'counter', counterBase);
 
 				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
 			}
@@ -5405,7 +5422,7 @@ var SIM_CONTROLLER = (function () {
 			// - Target must have received some amount of damage
 			if (target.counterburn) {
 				var scorch = target.counterburn || 0;
-				var enhanced = getEnhancement(target, 'counterburn', scorch);
+				var enhanced = unitInfo.getEnhancement(target, 'counterburn', scorch);
 				scorch += enhanced;
 				if (!current_assault.scorched) {
 					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
@@ -5420,7 +5437,7 @@ var SIM_CONTROLLER = (function () {
 			// - Target must have received some amount of damage
 			if (target.counterpoison) {
 				var poison = target.counterpoison || 0;
-				var enhanced = getEnhancement(target, 'counterpoison', poison);
+				var enhanced = unitInfo.getEnhancement(target, 'counterpoison', poison);
 				poison += enhanced;
 
 				if (poison > current_assault.poisoned) {
@@ -5433,7 +5450,7 @@ var SIM_CONTROLLER = (function () {
 			// - Target must have received some amount of damage
 			if (target.fury) {
 				var furyBase = target.fury;
-				var furyEnhancement = getEnhancement(target, 'counter', furyBase);
+				var furyEnhancement = unitInfo.getEnhancement(target, 'counter', furyBase);
 
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
@@ -5456,7 +5473,7 @@ var SIM_CONTROLLER = (function () {
 			if (current_assault.berserk) {
 
 				var berserk = current_assault.berserk;
-				var enhanced = getEnhancement(current_assault, 'berserk', berserk);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'berserk', berserk);
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
@@ -5470,7 +5487,7 @@ var SIM_CONTROLLER = (function () {
 		// - Target must have received some amount of damage
 		if (target.corrosive) {
 			var corrosion = target.corrosive || 0;
-			var enhanced = getEnhancement(target, 'corrosive', corrosion);
+			var enhanced = unitInfo.getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
 			if (current_assault.corroded) {
 				current_assault.corroded.amount += corrosion;
@@ -6081,6 +6098,7 @@ var mapBGEDialog;
 
 $(function () {
     var bgeApi = require('bgeApi');
+    var base64 = require('base64');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();
@@ -6361,6 +6379,7 @@ function drawFrames() {
 };"use strict";
 
 var deckPopupDialog;
+var base64 = require('base64');
 
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -7127,6 +7146,7 @@ var CARD_GUI = {};
 	var cardInfo = require('cardInfo');
 	var runeApi = require('runeApi');
 	var factions = require('factions');
+	var unitInfo = require('unitInfo');
 
 	var assetsRoot = '';
 
@@ -7216,7 +7236,7 @@ var CARD_GUI = {};
 		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
 			var listEntry = list[i];
 			var unit = cardApi.byId(listEntry);
-			if (areEqual(unit, lastUnit)) {
+			if (unitInfo.areEqual(unit, lastUnit)) {
 				multiplier++;
 			} else {
 				if ((uniqueCard >= skip)) {
@@ -7583,8 +7603,8 @@ var CARD_GUI = {};
 		var htmlSkill = document.createElement("span");
 		htmlSkill.className = "skill";
 		htmlSkill.appendChild(getSkillIcon(skill.id));
-		var imbued = isImbued(card, skill.id, i);
-		var enhancement = getEnhancement(card, skill.id, skill.x);
+		var imbued = unitInfo.isImbued(card, skill.id, i);
+		var enhancement = unitInfo.getEnhancement(card, skill.id, skill.x);
 		if (imbued) {
 			htmlSkill.classList.add("imbued");
 		} else if (skill.boosted || enhancement) {
@@ -8200,6 +8220,7 @@ var battle_sim = true;;function getTutorialScript() {
 else if(c==ArrayBuffer)this.pack_bin(h.useArrayBufferView?new Uint8Array(a):a);else if("BYTES_PER_ELEMENT"in a)this.pack_bin(h.useArrayBufferView?new Uint8Array(a.buffer):a.buffer);else if(c==Object)this.pack_object(a);else if(c==Date)this.pack_string(a.toString());else{if("function"!=typeof a.toBinaryPack)throw new Error('Type "'+c.toString()+'" not yet supported');this.bufferBuilder.append(a.toBinaryPack())}}}this.bufferBuilder.flush()},d.prototype.pack_bin=function(a){var b=a.length||a.byteLength||a.size;if(15>=b)this.pack_uint8(160+b);else if(65535>=b)this.bufferBuilder.append(218),this.pack_uint16(b);else{if(!(4294967295>=b))throw new Error("Invalid length");this.bufferBuilder.append(219),this.pack_uint32(b)}this.bufferBuilder.append(a)},d.prototype.pack_string=function(a){var b=f(a);if(15>=b)this.pack_uint8(176+b);else if(65535>=b)this.bufferBuilder.append(216),this.pack_uint16(b);else{if(!(4294967295>=b))throw new Error("Invalid length");this.bufferBuilder.append(217),this.pack_uint32(b)}this.bufferBuilder.append(a)},d.prototype.pack_array=function(a){var b=a.length;if(15>=b)this.pack_uint8(144+b);else if(65535>=b)this.bufferBuilder.append(220),this.pack_uint16(b);else{if(!(4294967295>=b))throw new Error("Invalid length");this.bufferBuilder.append(221),this.pack_uint32(b)}for(var c=0;b>c;c++)this.pack(a[c])},d.prototype.pack_integer=function(a){if(a>=-32&&127>=a)this.bufferBuilder.append(255&a);else if(a>=0&&255>=a)this.bufferBuilder.append(204),this.pack_uint8(a);else if(a>=-128&&127>=a)this.bufferBuilder.append(208),this.pack_int8(a);else if(a>=0&&65535>=a)this.bufferBuilder.append(205),this.pack_uint16(a);else if(a>=-32768&&32767>=a)this.bufferBuilder.append(209),this.pack_int16(a);else if(a>=0&&4294967295>=a)this.bufferBuilder.append(206),this.pack_uint32(a);else if(a>=-2147483648&&2147483647>=a)this.bufferBuilder.append(210),this.pack_int32(a);else if(a>=-0x8000000000000000&&0x8000000000000000>=a)this.bufferBuilder.append(211),this.pack_int64(a);else{if(!(a>=0&&0x10000000000000000>=a))throw new Error("Invalid integer");this.bufferBuilder.append(207),this.pack_uint64(a)}},d.prototype.pack_double=function(a){var b=0;0>a&&(b=1,a=-a);var c=Math.floor(Math.log(a)/Math.LN2),d=a/Math.pow(2,c)-1,e=Math.floor(d*Math.pow(2,52)),f=Math.pow(2,32),g=b<<31|c+1023<<20|e/f&1048575,h=e%f;this.bufferBuilder.append(203),this.pack_int32(g),this.pack_int32(h)},d.prototype.pack_object=function(a){var b=Object.keys(a),c=b.length;if(15>=c)this.pack_uint8(128+c);else if(65535>=c)this.bufferBuilder.append(222),this.pack_uint16(c);else{if(!(4294967295>=c))throw new Error("Invalid length");this.bufferBuilder.append(223),this.pack_uint32(c)}for(var d in a)a.hasOwnProperty(d)&&(this.pack(d),this.pack(a[d]))},d.prototype.pack_uint8=function(a){this.bufferBuilder.append(a)},d.prototype.pack_uint16=function(a){this.bufferBuilder.append(a>>8),this.bufferBuilder.append(255&a)},d.prototype.pack_uint32=function(a){var b=4294967295&a;this.bufferBuilder.append((4278190080&b)>>>24),this.bufferBuilder.append((16711680&b)>>>16),this.bufferBuilder.append((65280&b)>>>8),this.bufferBuilder.append(255&b)},d.prototype.pack_uint64=function(a){var b=a/Math.pow(2,32),c=a%Math.pow(2,32);this.bufferBuilder.append((4278190080&b)>>>24),this.bufferBuilder.append((16711680&b)>>>16),this.bufferBuilder.append((65280&b)>>>8),this.bufferBuilder.append(255&b),this.bufferBuilder.append((4278190080&c)>>>24),this.bufferBuilder.append((16711680&c)>>>16),this.bufferBuilder.append((65280&c)>>>8),this.bufferBuilder.append(255&c)},d.prototype.pack_int8=function(a){this.bufferBuilder.append(255&a)},d.prototype.pack_int16=function(a){this.bufferBuilder.append((65280&a)>>8),this.bufferBuilder.append(255&a)},d.prototype.pack_int32=function(a){this.bufferBuilder.append(a>>>24&255),this.bufferBuilder.append((16711680&a)>>>16),this.bufferBuilder.append((65280&a)>>>8),this.bufferBuilder.append(255&a)},d.prototype.pack_int64=function(a){var b=Math.floor(a/Math.pow(2,32)),c=a%Math.pow(2,32);this.bufferBuilder.append((4278190080&b)>>>24),this.bufferBuilder.append((16711680&b)>>>16),this.bufferBuilder.append((65280&b)>>>8),this.bufferBuilder.append(255&b),this.bufferBuilder.append((4278190080&c)>>>24),this.bufferBuilder.append((16711680&c)>>>16),this.bufferBuilder.append((65280&c)>>>8),this.bufferBuilder.append(255&c)}},{"./bufferbuilder":11}],11:[function(a,b){function c(){this._pieces=[],this._parts=[]}var d={};d.useBlobBuilder=function(){try{return new Blob([]),!1}catch(a){return!0}}(),d.useArrayBufferView=!d.useBlobBuilder&&function(){try{return 0===new Blob([new Uint8Array([])]).size}catch(a){return!0}}(),b.exports.binaryFeatures=d;var e=b.exports.BlobBuilder;"undefined"!=typeof window&&(e=b.exports.BlobBuilder=window.WebKitBlobBuilder||window.MozBlobBuilder||window.MSBlobBuilder||window.BlobBuilder),c.prototype.append=function(a){"number"==typeof a?this._pieces.push(a):(this.flush(),this._parts.push(a))},c.prototype.flush=function(){if(this._pieces.length>0){var a=new Uint8Array(this._pieces);d.useArrayBufferView||(a=a.buffer),this._parts.push(a),this._pieces=[]}},c.prototype.getBuffer=function(){if(this.flush(),d.useBlobBuilder){for(var a=new e,b=0,c=this._parts.length;c>b;b++)a.append(this._parts[b]);return a.getBlob()}return new Blob(this._parts)},b.exports.BufferBuilder=c},{}],12:[function(a,b){function c(a,b){return this instanceof c?(this._dc=a,d.debug=b,this._outgoing={},this._incoming={},this._received={},this._window=1e3,this._mtu=500,this._interval=0,this._count=0,this._queue=[],void this._setupDC()):new c(a)}var d=a("./util");c.prototype.send=function(a){var b=d.pack(a);return b.size<this._mtu?void this._handleSend(["no",b]):(this._outgoing[this._count]={ack:0,chunks:this._chunk(b)},d.debug&&(this._outgoing[this._count].timer=new Date),this._sendWindowedChunks(this._count),void(this._count+=1))},c.prototype._setupInterval=function(){var a=this;this._timeout=setInterval(function(){var b=a._queue.shift();if(b._multiple)for(var c=0,d=b.length;d>c;c+=1)a._intervalSend(b[c]);else a._intervalSend(b)},this._interval)},c.prototype._intervalSend=function(a){var b=this;a=d.pack(a),d.blobToBinaryString(a,function(a){b._dc.send(a)}),0===b._queue.length&&(clearTimeout(b._timeout),b._timeout=null)},c.prototype._processAcks=function(){for(var a in this._outgoing)this._outgoing.hasOwnProperty(a)&&this._sendWindowedChunks(a)},c.prototype._handleSend=function(a){for(var b=!0,c=0,d=this._queue.length;d>c;c+=1){var e=this._queue[c];e===a?b=!1:e._multiple&&-1!==e.indexOf(a)&&(b=!1)}b&&(this._queue.push(a),this._timeout||this._setupInterval())},c.prototype._setupDC=function(){var a=this;this._dc.onmessage=function(b){var c=b.data,e=c.constructor;if(e===String){var f=d.binaryStringToArrayBuffer(c);c=d.unpack(f),a._handleMessage(c)}}},c.prototype._handleMessage=function(a){var b,c=a[1],e=this._incoming[c],f=this._outgoing[c];switch(a[0]){case"no":var g=c;g&&this.onmessage(d.unpack(g));break;case"end":if(b=e,this._received[c]=a[2],!b)break;this._ack(c);break;case"ack":if(b=f){var h=a[2];b.ack=Math.max(h,b.ack),b.ack>=b.chunks.length?(d.log("Time: ",new Date-b.timer),delete this._outgoing[c]):this._processAcks()}break;case"chunk":if(b=e,!b){var i=this._received[c];if(i===!0)break;b={ack:["ack",c,0],chunks:[]},this._incoming[c]=b}var j=a[2],k=a[3];b.chunks[j]=new Uint8Array(k),j===b.ack[2]&&this._calculateNextAck(c),this._ack(c);break;default:this._handleSend(a)}},c.prototype._chunk=function(a){for(var b=[],c=a.size,e=0;c>e;){var f=Math.min(c,e+this._mtu),g=a.slice(e,f),h={payload:g};b.push(h),e=f}return d.log("Created",b.length,"chunks."),b},c.prototype._ack=function(a){var b=this._incoming[a].ack;this._received[a]===b[2]&&(this._complete(a),this._received[a]=!0),this._handleSend(b)},c.prototype._calculateNextAck=function(a){for(var b=this._incoming[a],c=b.chunks,d=0,e=c.length;e>d;d+=1)if(void 0===c[d])return void(b.ack[2]=d);b.ack[2]=c.length},c.prototype._sendWindowedChunks=function(a){d.log("sendWindowedChunks for: ",a);for(var b=this._outgoing[a],c=b.chunks,e=[],f=Math.min(b.ack+this._window,c.length),g=b.ack;f>g;g+=1)c[g].sent&&g!==b.ack||(c[g].sent=!0,e.push(["chunk",a,g,c[g].payload]));b.ack+this._window>=c.length&&e.push(["end",a,c.length]),e._multiple=!0,this._handleSend(e)},c.prototype._complete=function(a){d.log("Completed called for",a);var b=this,c=this._incoming[a].chunks,e=new Blob(c);d.blobToArrayBuffer(e,function(a){b.onmessage(d.unpack(a))}),delete this._incoming[a]},c.higherBandwidthSDP=function(a){var b=navigator.appVersion.match(/Chrome\/(.*?) /);if(b&&(b=parseInt(b[1].split(".").shift()),31>b)){var c=a.split("b=AS:30"),d="b=AS:102400";if(c.length>1)return c[0]+d+c[1]}return a},c.prototype.onmessage=function(){},b.exports.Reliable=c},{"./util":13}],13:[function(a,b){var c=a("js-binarypack"),d={debug:!1,inherits:function(a,b){a.super_=b,a.prototype=Object.create(b.prototype,{constructor:{value:a,enumerable:!1,writable:!0,configurable:!0}})},extend:function(a,b){for(var c in b)b.hasOwnProperty(c)&&(a[c]=b[c]);return a},pack:c.pack,unpack:c.unpack,log:function(){if(d.debug){for(var a=[],b=0;b<arguments.length;b++)a[b]=arguments[b];a.unshift("Reliable: "),console.log.apply(console,a)}},setZeroTimeout:function(a){function b(b){d.push(b),a.postMessage(e,"*")}function c(b){b.source==a&&b.data==e&&(b.stopPropagation&&b.stopPropagation(),d.length&&d.shift()())}var d=[],e="zero-timeout-message";return a.addEventListener?a.addEventListener("message",c,!0):a.attachEvent&&a.attachEvent("onmessage",c),b}(this),blobToArrayBuffer:function(a,b){var c=new FileReader;c.onload=function(a){b(a.target.result)},c.readAsArrayBuffer(a)},blobToBinaryString:function(a,b){var c=new FileReader;c.onload=function(a){b(a.target.result)},c.readAsBinaryString(a)},binaryStringToArrayBuffer:function(a){for(var b=new Uint8Array(a.length),c=0;c<a.length;c++)b[c]=255&a.charCodeAt(c);return b.buffer},randomToken:function(){return Math.random().toString(36).substr(2)}};b.exports=d},{"js-binarypack":10}]},{},[3]);;var emptyFunction = SIMULATOR.sendBattleUpdate = function () { };
 
 var cardInfo = require('cardInfo');
+var base64 = require('base64');
 
 $(document).ready(function () {
     // Connect to PeerJS, have server assign an ID instead of providing one

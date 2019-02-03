@@ -155,16 +155,6 @@ function shuffle(list) {
     }
 }
 
-function initializeCard(card, p, newKey) {
-    card.owner = p;
-    card.timer = card.cost;
-    card.health_left = card.health;
-    // Setup status effects
-    cardApi.applyDefaultStatuses(card);
-    card.key = newKey;
-    if (!card.reusableSkills) card.resetTimers();
-}
-
 function copy_deck(original_deck) {
     var new_deck = {};
     new_deck.commander = original_deck.commander;
@@ -192,61 +182,6 @@ function copy_card_list(original_card_list) {
         new_card_list[key] = original_card_list[key];
     }
     return new_card_list;
-}
-
-var getEnhancement = function (card, s, base) {
-    var enhancements = card.enhanced;
-    var enhanced = (enhancements ? (enhancements[s] || 0) : 0);
-    if (enhanced < 0) {
-        enhanced = Math.ceil(base * -enhanced);
-    }
-    return enhanced;
-};
-
-var isImbued = function (card, skillID, i) {
-    var imbueSkillsKey;
-    var skillType = SKILL_DATA[skillID].type;
-    switch (skillType) {
-        case 'flurry':
-        case 'toggle':
-            return card.imbued[skillID];
-
-        case 'passive':
-            return (card[skillID] === card.imbued[skillID]);
-
-        case 'onDeath':
-            imbueSkillsKey = 'onDeathSkills';
-            break;
-
-        case 'earlyActivation':
-            imbueSkillsKey = 'earlyActivationSkills';
-            break;
-
-        case 'activation':
-        default:
-            imbueSkillsKey = 'skill';
-            break;
-    }
-
-
-    // Mark the first added skill index
-    if (card.imbued[imbueSkillsKey] !== undefined) {
-        return (i >= card.imbued[imbueSkillsKey]);
-    } else {
-        return false;
-    }
-};
-
-function skillNameFromID(skillID) {
-    var skillData = SKILL_DATA[skillID];
-    return (skillData ? skillData.name : skillID);
-}
-
-function areEqual(unitInfo1, unitInfo2) {
-    if ((!unitInfo1) !== (!unitInfo2)) return false; // Silly null-check
-    var hash1 = base64.fromUnitInfo(unitInfo1);
-    var hash2 = base64.fromUnitInfo(unitInfo2);
-    return (hash1 === hash2);
 }
 
 // Convert card list into an actual deck

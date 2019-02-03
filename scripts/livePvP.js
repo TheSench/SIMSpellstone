@@ -1,6 +1,7 @@
 ﻿var emptyFunction = SIMULATOR.sendBattleUpdate = function () { };
 
 var cardInfo = require('cardInfo');
+var base64 = require('base64');
 
 $(document).ready(function () {
     // Connect to PeerJS, have server assign an ID instead of providing one

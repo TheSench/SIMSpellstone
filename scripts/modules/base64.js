@@ -1,4 +1,4 @@
-var base64 = (function () {
+define('base64', function () {
     "use strict";
     
 	var cardInfo = require('cardInfo');
@@ -146,4 +146,4 @@ var base64 = (function () {
     }
     
     return api;
-})();
+});

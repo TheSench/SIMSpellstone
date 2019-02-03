@@ -5,6 +5,7 @@ var mapBGEDialog;
 
 $(function () {
     var bgeApi = require('bgeApi');
+    var base64 = require('base64');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();

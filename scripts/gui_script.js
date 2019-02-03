@@ -1,6 +1,7 @@
 "use strict";
 
 var deckPopupDialog;
+var base64 = require('base64');
 
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;

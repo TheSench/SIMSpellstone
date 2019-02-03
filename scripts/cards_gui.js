@@ -7,6 +7,7 @@ var CARD_GUI = {};
 	var cardInfo = require('cardInfo');
 	var runeApi = require('runeApi');
 	var factions = require('factions');
+	var unitInfo = require('unitInfo');
 
 	var assetsRoot = '';
 
@@ -96,7 +97,7 @@ var CARD_GUI = {};
 		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
 			var listEntry = list[i];
 			var unit = cardApi.byId(listEntry);
-			if (areEqual(unit, lastUnit)) {
+			if (unitInfo.areEqual(unit, lastUnit)) {
 				multiplier++;
 			} else {
 				if ((uniqueCard >= skip)) {
@@ -463,8 +464,8 @@ var CARD_GUI = {};
 		var htmlSkill = document.createElement("span");
 		htmlSkill.className = "skill";
 		htmlSkill.appendChild(getSkillIcon(skill.id));
-		var imbued = isImbued(card, skill.id, i);
-		var enhancement = getEnhancement(card, skill.id, skill.x);
+		var imbued = unitInfo.isImbued(card, skill.id, i);
+		var enhancement = unitInfo.getEnhancement(card, skill.id, skill.x);
 		if (imbued) {
 			htmlSkill.classList.add("imbued");
 		} else if (skill.boosted || enhancement) {

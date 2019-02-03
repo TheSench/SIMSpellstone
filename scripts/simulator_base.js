@@ -2,6 +2,9 @@ var SIMULATOR = {};
 (function () {
 	
 	var cardApi = require('cardApi');
+    var skillApi = require('skillApi');
+	var base64 = require('base64');
+	var unitInfo = require('unitInfo');
 
 	"use strict";
 
@@ -254,7 +257,7 @@ var SIMULATOR = {};
 	function backlash(attacker, defender) {
 		if (attacker.isAssault() && defender.isAlive()) {
 			var baseDamage = defender.backlash;
-			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
+			var enhancement = unitInfo.getEnhancement(defender, 'backlash', baseDamage);
 			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement);
 		}
 	}
@@ -315,7 +318,7 @@ var SIMULATOR = {};
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = getEnhancement(src_card, 'burn', scorch);
+			var enhanced = unitInfo.getEnhancement(src_card, 'burn', scorch);
 			scorch += enhanced;
 
 			var affected = 0;
@@ -381,7 +384,7 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, protect);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
 
 			var affected = 0;
@@ -454,7 +457,7 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, heal);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, heal);
 			heal += enhanced;
 
 			var affected = 0;
@@ -523,7 +526,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id, strike);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, strike);
 			strike += enhanced;
 
 			var affected = 0;
@@ -609,7 +612,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id, intensify);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, intensify);
 			intensify += enhanced;
 
 			var affected = 0;
@@ -677,7 +680,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var enhanced = getEnhancement(src_card, skill.id, ignite);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, ignite);
 			ignite += enhanced;
 
 			var affected = 0;
@@ -784,7 +787,7 @@ var SIMULATOR = {};
 			var o = get_o(src_card);
 
 			var frost = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, frost);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, frost);
 			frost += enhanced;
 
 			var all = skill.all;
@@ -857,7 +860,7 @@ var SIMULATOR = {};
 			// No Targets
 			if (!target) return 0;
 
-			var enhanced = getEnhancement(src_card, skill.id, heartseeker);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, heartseeker);
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
@@ -899,7 +902,7 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, enfeeble);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enfeeble);
 			enfeeble += enhanced;
 
 			var affected = 0;
@@ -978,7 +981,7 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, weaken);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, weaken);
 			weaken += enhanced;
 
 			var affected = 0;
@@ -1022,7 +1025,7 @@ var SIMULATOR = {};
 			var p = get_p(src_card);
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 			var all = skill.all;
 
@@ -1100,7 +1103,7 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var affected = 0;
@@ -1144,7 +1147,7 @@ var SIMULATOR = {};
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -1187,7 +1190,7 @@ var SIMULATOR = {};
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -1234,7 +1237,7 @@ var SIMULATOR = {};
 
 			var field_x_assaults = field[o].assaults;
 
-			var enhanced = getEnhancement(src_card, skill.id, barrages);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, barrages);
 			barrages += enhanced;
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
@@ -1386,7 +1389,7 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, enrage);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
 
 			var affected = 0;
@@ -1524,7 +1527,7 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
-			var enhanced = getEnhancement(src_card, skill.id, mark);
+			var enhanced = unitInfo.getEnhancement(src_card, skill.id, mark);
 			mark += enhanced;
 
 			var affected = 0;
@@ -2190,7 +2193,7 @@ var SIMULATOR = {};
 				var b_priority = cardInHand.priority;
 
 				// If this is the exact card at this spot
-				if (areEqual(desiredCard, cardInHand)) {
+				if (unitInfo.areEqual(desiredCard, cardInHand)) {
 					played = true;
 					break;
 				}
@@ -2377,7 +2380,7 @@ var SIMULATOR = {};
 
 		if (assault[skillName]) {
 			statusValue = assault[skillName];
-			var enhanced = getEnhancement(assault, skillName, statusValue);
+			var enhanced = unitInfo.getEnhancement(assault, skillName, statusValue);
 			statusValue += enhanced;
 		}
 
@@ -2462,9 +2465,9 @@ var SIMULATOR = {};
 				skill.countdown--;
 				if (debug) {
 					if (skill.countdown) {
-						echo += log.name(unit) + ' charges ' + skillNameFromID(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
+						echo += log.name(unit) + ' charges ' + skillApi.nameFromId(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
 					} else {
-						echo += log.name(unit) + ' readies ' + skillNameFromID(skill.id) + '<br/>';
+						echo += log.name(unit) + ' readies ' + skillApi.nameFromId(skill.id) + '<br/>';
 					}
 				}
 			}
@@ -2492,7 +2495,7 @@ var SIMULATOR = {};
 			if (current_assault.regenerate && current_assault.isDamaged()) {
 
 				var regen_health = current_assault.regenerate;
-				var enhanced = getEnhancement(current_assault, 'regenerate', regen_health);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'regenerate', regen_health);
 				regen_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (regen_health >= healthMissing) {
@@ -2630,7 +2633,7 @@ var SIMULATOR = {};
 		// var pierce = current_assault['skill']['pierce'];
 		var pierce = current_assault.pierce;
 		if (pierce) {
-			var enhanced = getEnhancement(current_assault, 'pierce', pierce);
+			var enhanced = unitInfo.getEnhancement(current_assault, 'pierce', pierce);
 			pierce += enhanced;
 		} else {
 			pierce = 0;
@@ -2674,7 +2677,7 @@ var SIMULATOR = {};
 			}
 		}
 		if (shrouded) {
-			shrouded += getEnhancement(target, 'stasis', shrouded);
+			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
 			if (debug) {
 				echo += ' Shroud: -' + shrouded;
 			}
@@ -2691,7 +2694,7 @@ var SIMULATOR = {};
 			damage -= shrouded;
 		}
 		if (armor) {
-			armor += getEnhancement(target, 'armored', armor);
+			armor += unitInfo.getEnhancement(target, 'armored', armor);
 			if (debug) {
 				echo += ' Armor: -' + armor;
 			}
@@ -2737,7 +2740,7 @@ var SIMULATOR = {};
 			// - Target must not be already poisoned of that level
 			if (current_assault.poison) {
 				var poison = current_assault.poison;
-				var enhanced = getEnhancement(current_assault, 'poison', poison);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'poison', poison);
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
@@ -2752,7 +2755,7 @@ var SIMULATOR = {};
 			// - Sets envenomed to greater of target's current envenomed or new venom
 			if (current_assault.venom) {
 				var venom = current_assault.venom;
-				var enhanced = getEnhancement(current_assault, 'venom', venom);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'venom', venom);
 				venom += enhanced;
 
 				if (venom > target.envenomed) {
@@ -2768,7 +2771,7 @@ var SIMULATOR = {};
 			// - Target must be an assault
 			if (current_assault.nullify) {
 				var nullify = current_assault.nullify;
-				var enhanced = getEnhancement(current_assault, 'nullify', nullify);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
 				if (debug) echo += log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target) + '<br>';
@@ -2788,7 +2791,7 @@ var SIMULATOR = {};
 			if (current_assault.daze) {
 
 				var dazed = current_assault.daze;
-				var enhanced = getEnhancement(current_assault, 'daze', dazed);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'daze', dazed);
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
@@ -2811,7 +2814,7 @@ var SIMULATOR = {};
 			if (current_assault.leech && current_assault.isDamaged()) {
 
 				var leech_health = current_assault.leech;
-				var enhanced = getEnhancement(current_assault, 'leech', leech_health);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'leech', leech_health);
 				leech_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (leech_health >= healthMissing) {
@@ -2824,7 +2827,7 @@ var SIMULATOR = {};
 
 			if (current_assault.reinforce) {
 				var reinforce = current_assault.reinforce;
-				var enhanced = getEnhancement(current_assault, 'reinforce', reinforce);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'reinforce', reinforce);
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
@@ -2837,7 +2840,7 @@ var SIMULATOR = {};
 			if (target.counter) {
 
 				var counterBase = 0 + target.counter;
-				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
+				var counterEnhancement = unitInfo.getEnhancement(target, 'counter', counterBase);
 
 				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
 			}
@@ -2846,7 +2849,7 @@ var SIMULATOR = {};
 			// - Target must have received some amount of damage
 			if (target.counterburn) {
 				var scorch = target.counterburn || 0;
-				var enhanced = getEnhancement(target, 'counterburn', scorch);
+				var enhanced = unitInfo.getEnhancement(target, 'counterburn', scorch);
 				scorch += enhanced;
 				if (!current_assault.scorched) {
 					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
@@ -2861,7 +2864,7 @@ var SIMULATOR = {};
 			// - Target must have received some amount of damage
 			if (target.counterpoison) {
 				var poison = target.counterpoison || 0;
-				var enhanced = getEnhancement(target, 'counterpoison', poison);
+				var enhanced = unitInfo.getEnhancement(target, 'counterpoison', poison);
 				poison += enhanced;
 
 				if (poison > current_assault.poisoned) {
@@ -2874,7 +2877,7 @@ var SIMULATOR = {};
 			// - Target must have received some amount of damage
 			if (target.fury) {
 				var furyBase = target.fury;
-				var furyEnhancement = getEnhancement(target, 'counter', furyBase);
+				var furyEnhancement = unitInfo.getEnhancement(target, 'counter', furyBase);
 
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
@@ -2897,7 +2900,7 @@ var SIMULATOR = {};
 			if (current_assault.berserk) {
 
 				var berserk = current_assault.berserk;
-				var enhanced = getEnhancement(current_assault, 'berserk', berserk);
+				var enhanced = unitInfo.getEnhancement(current_assault, 'berserk', berserk);
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
@@ -2911,7 +2914,7 @@ var SIMULATOR = {};
 		// - Target must have received some amount of damage
 		if (target.corrosive) {
 			var corrosion = target.corrosive || 0;
-			var enhanced = getEnhancement(target, 'corrosive', corrosion);
+			var enhanced = unitInfo.getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
 			if (current_assault.corroded) {
 				current_assault.corroded.amount += corrosion;

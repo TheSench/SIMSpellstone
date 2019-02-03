@@ -3,7 +3,8 @@ define('skillApi', function () {
     var api = {
         setSkill: setSkill,
         copySkill: copySkill,
-        copySkills: copySkills
+        copySkills: copySkills,
+        nameFromId: skillNameFromID
     };
 
     function setSkill(new_card, skill) {
@@ -76,6 +77,11 @@ define('skillApi', function () {
         }
         new_card.reusableSkills = reusable;
         new_card.skillTimers = skillTimers;
+    }
+
+    function skillNameFromID(skillID) {
+        var skillData = SKILL_DATA[skillID];
+        return (skillData ? skillData.name : skillID);
     }
 
     return api;
