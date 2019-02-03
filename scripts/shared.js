@@ -141,12 +141,7 @@ function copy_card_list(original_card_list) {
 // - recognize multiple copies of cards
 // - if can't figure out what card it is, ignore it and move on
 // - support raid-only and mission-only cards by using Dracorex[1042] notation
-function getDefaultDeck() {
-    return {
-        commander: elariaCaptain,
-        deck: []
-    };
-}
+
 
 function makeUnitInfo(id, level, runes) {
     var unit = {

@@ -5,6 +5,7 @@ var SIMULATOR = {};
     var skillApi = require('skillApi');
 	var base64 = require('base64');
 	var unitInfo = require('unitInfo');
+    var loadDeck = require('loadDeck');
 
 	"use strict";
 
@@ -1851,7 +1852,7 @@ var SIMULATOR = {};
 		if (getdeck) {
 			cache_player_deck = base64.decodeHash(getdeck);
 		} else {
-			cache_player_deck = getDefaultDeck();
+			cache_player_deck = loadDeck.defaultDeck();
 		}
 		cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
@@ -1867,7 +1868,7 @@ var SIMULATOR = {};
 			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
-			cache_cpu_deck = getDefaultDeck();
+			cache_cpu_deck = loadDeck.defaultDeck();
 		}
 		cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 	}

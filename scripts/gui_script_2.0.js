@@ -7,6 +7,7 @@ $(function () {
     var bgeApi = require('bgeApi');
     var base64 = require('base64');
     var urlHelpers = require('urlHelpers');
+    var loadDeck = require('loadDeck');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();

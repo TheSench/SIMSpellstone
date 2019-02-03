@@ -1,10 +1,11 @@
-var loadDeck = (function () {
+define('loadDeck', function () {
 	var cardInfo = require('cardInfo');
     var cardApi = require('cardApi');
     
     var api = {
         mission: loadMissionDeck,
-        raid: loadRaidDeck
+        raid: loadRaidDeck,
+        defaultDeck: getDefaultDeck
     };
 
     function getUpgradePoints(level, maxedAt, maxUpgradePoints) {
@@ -249,5 +250,12 @@ var loadDeck = (function () {
         }
     }
 
+    function getDefaultDeck() {
+        return {
+            commander: elariaCaptain,
+            deck: []
+        };
+    }
+
     return api;
-})();
+});

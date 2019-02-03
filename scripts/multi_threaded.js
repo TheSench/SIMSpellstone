@@ -4,6 +4,7 @@
     var base64 = require('base64');
     var matchTimer = require('matchTimer');
     var urlHelpers = require('urlHelpers');
+    var loadDeck = require('loadDeck');
 
     // Global variables needed by the GUI thread when workers are used
     var max_workers = 1;
@@ -304,7 +305,7 @@
         if (getdeck) {
             cache_player_deck = base64.decodeHash(getdeck);
         } else {
-            cache_player_deck = getDefaultDeck();
+            cache_player_deck = loadDeck.defaultDeck();
         }
 
         // Load enemy deck
@@ -318,7 +319,7 @@
             cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else {
-            cache_cpu_deck = getDefaultDeck();
+            cache_cpu_deck = loadDeck.defaultDeck();
         }
 
         var params = {};
@@ -428,7 +429,7 @@
         if (getdeck) {
             cache_player_deck = base64.decodeHash(getdeck);
         } else {
-            cache_player_deck = getDefaultDeck();
+            cache_player_deck = loadDeck.defaultDeck();
         }
 
         // Load enemy deck
@@ -442,7 +443,7 @@
             cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else {
-            cache_cpu_deck = getDefaultDeck();
+            cache_cpu_deck = loadDeck.defaultDeck();
         }
 
         outp(""); // Clear display
