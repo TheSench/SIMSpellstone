@@ -273,6 +273,48 @@
     }
 
     return api;
+});;define('urlHelpers', function () {
+    var api = {
+        paramDefined: paramDefined,
+        paramValue: paramValue,
+        getCurrentPage: getCurrentPage
+    };
+
+    // GET variables
+    function paramValue(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
+            if (decodeURIComponent(pair[0]) == variable) {
+                return decodeURIComponent(pair[1] ? pair[1] : '');
+            }
+        }
+        return undefined;
+    }
+
+    function paramDefined(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
+            if (decodeURIComponent(pair[0]) == variable) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function getCurrentPage() {
+        var currentPage = window.location.href;
+        var pageEnd = currentPage.indexOf(".html");
+        currentPage = currentPage.substring(0, pageEnd);
+        var pageStart = currentPage.lastIndexOf("/") + 1;
+        currentPage = currentPage.substring(pageStart).toLowerCase();
+        return currentPage;
+    }
+
+    return api;
 });;define('base64', function () {
     "use strict";
     
@@ -2172,33 +2214,6 @@ Function.prototype.throttle = function throttle(wait) {
     };
 };
 
-// GET variables
-function _GET(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (decodeURIComponent(pair[0]) == variable) {
-            return decodeURIComponent(pair[1] ? pair[1] : '');
-        }
-    }
-    return undefined;
-}
-
-function _DEFINED(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (decodeURIComponent(pair[0]) == variable) {
-            return true;
-        }
-    }
-    return false;
-}
-
-
-
 function shuffle(list) {
     var i = list.length, j, tempi, tempj;
     if (i == 0) return false;
@@ -2268,14 +2283,6 @@ function makeUnitInfo(id, level, runes) {
 
 var elariaCaptain = makeUnitInfo(202, 1);
 
-function getCurrentPage() {
-    var currentPage = window.location.href;
-    var pageEnd = currentPage.indexOf(".html");
-    currentPage = currentPage.substring(0, pageEnd);
-    var pageStart = currentPage.lastIndexOf("/") + 1;
-    currentPage = currentPage.substring(pageStart).toLowerCase();
-    return currentPage;
-}
 
 ;"use strict";
 
@@ -2374,6 +2381,7 @@ var SIM_CONTROLLER = (function () {
 (function () {
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
+    var urlHelpers = require('urlHelpers');
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
@@ -2497,7 +2505,7 @@ var SIM_CONTROLLER = (function () {
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
-    var seedtest = (_GET("seedtest") || 0);
+    var seedtest = (urlHelpers.paramValue("seedtest") || 0);
     function run_sim(skipResults) {
         if (seedtest) {
             Math.seedrandom(seedtest++);
@@ -5959,13 +5967,15 @@ if (function (type) {
     }
 }('localStorage')) {
     (function () {
+        var urlHelpers = require('urlHelpers');
+        
         var SaveFields = {
             decks: "SavedDecks",
             tutorial: "Tutorial"
         };
 
         storageAPI.initialize = function () {
-            var currentPage = getCurrentPage();
+            var currentPage = urlHelpers.getCurrentPage();
 
             convertSavedDecks();
 
@@ -6116,6 +6126,7 @@ var mapBGEDialog;
 $(function () {
     var bgeApi = require('bgeApi');
     var base64 = require('base64');
+    var urlHelpers = require('urlHelpers');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();
@@ -6180,7 +6191,7 @@ $(function () {
     function deckChanged(deckID, newDeck, owner) {
         var $deck = $("#" + deckID);
         $deck.children().remove();
-        if (!_DEFINED("seedtest")) {
+        if (!urlHelpers.paramDefined("seedtest")) {
             SIM_CONTROLLER.getConfiguration();
             var battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
@@ -6276,9 +6287,9 @@ $(function () {
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 
-    if (_DEFINED("latestCards")) {
+    if (urlHelpers.paramDefined("latestCards")) {
         var callback = null;
-        if (_DEFINED("autostart")) {
+        if (urlHelpers.paramDefined("autostart")) {
             callback = function () {
                 SIM_CONTROLLER.startsim(1);
             };
@@ -6397,6 +6408,7 @@ function drawFrames() {
 
 var deckPopupDialog;
 var base64 = require('base64');
+var urlHelpers = require('urlHelpers');
 
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -6472,32 +6484,32 @@ function processQueryString() {
 
 	$("#display_history").on("click", display_history);
 
-	$('#deck1').val(_GET('deck1')).change();
-	$('#deck2').val(_GET('deck2')).change();
+	$('#deck1').val(urlHelpers.paramValue('deck1')).change();
+	$('#deck2').val(urlHelpers.paramValue('deck2')).change();
 
-	$('#surge').prop("checked", _DEFINED("surge"));
-	$('#siege').prop("checked", _DEFINED("siege"));
-	var tower_level = Math.min(Math.max(_GET('tower_level') || 18, 0), 18);
+	$('#surge').prop("checked", urlHelpers.paramDefined("surge"));
+	$('#siege').prop("checked", urlHelpers.paramDefined("siege"));
+	var tower_level = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
 	$('#tower_level').val(tower_level);
 
-	var tower_type = (_GET('tower_type') || 501);
+	var tower_type = (urlHelpers.paramValue('tower_type') || 501);
 	$("#tower_type").val(tower_type);
 
-	$('#auto_mode').prop("checked", _DEFINED("auto_mode"));
-	$('#tournament').prop("checked", _DEFINED("tournament"));
-	$('#ordered').prop("checked", _DEFINED("ordered"));
-	$('#exactorder').prop("checked", _DEFINED("exactorder"));
+	$('#auto_mode').prop("checked", urlHelpers.paramDefined("auto_mode"));
+	$('#tournament').prop("checked", urlHelpers.paramDefined("tournament"));
+	$('#ordered').prop("checked", urlHelpers.paramDefined("ordered"));
+	$('#exactorder').prop("checked", urlHelpers.paramDefined("exactorder"));
 
-	$('#ordered2').prop("checked", _DEFINED("ordered2"));
-	$('#exactorder2').prop("checked", _DEFINED("exactorder2"));
-	if (_DEFINED("randomAI")) {
+	$('#ordered2').prop("checked", urlHelpers.paramDefined("ordered2"));
+	$('#exactorder2').prop("checked", urlHelpers.paramDefined("exactorder2"));
+	if (urlHelpers.paramDefined("randomAI")) {
 		pvpAI = false;
 	}
 
-	var locationID = _GET('location');
-	var campaignID = _GET('campaign');
-	var missionID = _GET('mission');
-	var raidID = _GET('raid');
+	var locationID = urlHelpers.paramValue('location');
+	var campaignID = urlHelpers.paramValue('campaign');
+	var missionID = urlHelpers.paramValue('mission');
+	var raidID = urlHelpers.paramValue('raid');
 	if (locationID) $('#location').val(locationID).change();
 	if (campaignID) {
 		if (!locationID) {
@@ -6507,16 +6519,16 @@ function processQueryString() {
 		$('#campaign').val(campaignID).change();
 	}
 	if (missionID) {
-		$('#mission_level').val(_GET('mission_level') || 7);
+		$('#mission_level').val(urlHelpers.paramValue('mission_level') || 7);
 		$('#mission').val(missionID).change();
 	}
 	if (raidID) {
-		$('#raid_level').val(_GET('raid_level') || 25);
+		$('#raid_level').val(urlHelpers.paramValue('raid_level') || 25);
 		$('#raid').val(raidID).change();
 	}
 
-	if (_DEFINED("bges")) {
-		var bges = _GET('bges');
+	if (urlHelpers.paramDefined("bges")) {
+		var bges = urlHelpers.paramValue('bges');
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
 			var bge = base64.toDecimal(bges.substring(i, i + 2));
@@ -6529,7 +6541,7 @@ function processQueryString() {
 			$("#battleground_" + current_bges[i]).prop('checked', true);
 		}
 	}
-	var bges = _GET('selfbges');
+	var bges = urlHelpers.paramValue('selfbges');
 	if (bges) {
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
@@ -6537,7 +6549,7 @@ function processQueryString() {
 			$("#self-battleground_" + bge).prop('checked', true);
 		}
 	}
-	var bges = _GET('enemybges');
+	var bges = urlHelpers.paramValue('enemybges');
 	if (bges) {
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
@@ -6546,26 +6558,26 @@ function processQueryString() {
 		}
 	}
 
-	var mapBges = _GET("mapBges");
+	var mapBges = urlHelpers.paramValue("mapBges");
 	if (mapBges) {
 		setSelectedMapBattlegrounds(mapBges);
 	}
 
 	$("#battleground").change();
 
-	$('#sims').val(_GET('sims') || 10000);
+	$('#sims').val(urlHelpers.paramValue('sims') || 10000);
 
-	if (_DEFINED("debug")) $('#debug').click();
-	if (_DEFINED("mass_debug")) $('#mass_debug').click();
-	if (_DEFINED("loss_debug")) $('#loss_debug').click();
-	if (_DEFINED("win_debug")) $('#win_debug').click();
-	if (_DEFINED("play_debug")) $('#play_debug').click();
+	if (urlHelpers.paramDefined("debug")) $('#debug').click();
+	if (urlHelpers.paramDefined("mass_debug")) $('#mass_debug').click();
+	if (urlHelpers.paramDefined("loss_debug")) $('#loss_debug').click();
+	if (urlHelpers.paramDefined("win_debug")) $('#win_debug').click();
+	if (urlHelpers.paramDefined("play_debug")) $('#play_debug').click();
 
 	document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
-	if (_DEFINED('autostart') && !_DEFINED("latestCards")) {
+	if (urlHelpers.paramDefined('autostart') && !urlHelpers.paramDefined("latestCards")) {
 		SIM_CONTROLLER.startsim(1);
-	} else if (_DEFINED('unit_tests')) {
+	} else if (urlHelpers.paramDefined('unit_tests')) {
 		var body = document.getElementsByTagName("body")[0];
 		var script = document.createElement("script");
 		script.src = "scripts/unit_tests.js";
@@ -7031,7 +7043,7 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
 	if (name) {
 		parameters.push("name=" + name);
 	}
-	if (_DEFINED("ajax")) {
+	if (urlHelpers.paramDefined("ajax")) {
 		parameters.push("ajax");
 	}
 	parameters.push("fromSim");
@@ -7808,9 +7820,11 @@ function createDiv(className, value) {
 function createSpan(className, value) {
 	return $("<span>").addClass(className).html(value)[0];
 };function getTutorialScript() {
+    var urlHelpers = require('urlHelpers');
+    
     var tutorialParts = [
        {
-           msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Simulator.",
+           msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Simulator."
        },
        {
            ui: "#setup-container",
@@ -7845,7 +7859,7 @@ function createSpan(className, value) {
        },
        {
            ui: "#attacker-advanced",
-           msg: 'This section contains some additional settings for the attacker that determine how their deck is played.',
+           msg: 'This section contains some additional settings for the attacker that determine how their deck is played.'
        },
        {
            ui: "#auto-container",
@@ -7896,7 +7910,7 @@ function createSpan(className, value) {
        {
            ui: "#defender-advanced",
            msg: 'This section contains some additional settings for the defender that determine how their deck is played.',
-           actions: [clearRaid],
+           actions: [clearRaid]
        },
        {
            ui: "#surge-container",
@@ -7958,7 +7972,7 @@ function createSpan(className, value) {
        }
     ];
 
-    var currentPage = getCurrentPage();
+    var currentPage = urlHelpers.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {
@@ -8130,6 +8144,8 @@ function createSpan(className, value) {
 })();
 
 var battle_sim = true;;function getTutorialScript() {
+    var urlHelpers = require('urlHelpers');
+    
     var tutorialParts = [
        {
            msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Live PvP functions.",
@@ -8165,15 +8181,15 @@ var battle_sim = true;;function getTutorialScript() {
        },
        {
            ui: "#first-player-advantage-container",
-           msg: 'This section lets you pick various options for dealing with "First-Player Advantage".',
+           msg: 'This section lets you pick various options for dealing with "First-Player Advantage".'
        },
        {
            ui: "#surge-container",
-           msg: 'This setting makes the defender go first.',
+           msg: 'This setting makes the defender go first.'
        },
        {
            ui: "#tournament-container",
-           msg: 'This setting causes the attacker\'s first card to not tick down right away.',
+           msg: 'This setting causes the attacker\'s first card to not tick down right away.'
        },
        {
            ui: "#tower-container",
@@ -8195,10 +8211,10 @@ var battle_sim = true;;function getTutorialScript() {
        {
            ui: "#btn_simulate",
            msg: 'Finally, click "Connect!" to start the fight.'
-       },
+       }
     ];
 
-    var currentPage = getCurrentPage();
+    var currentPage = urlHelpers.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {

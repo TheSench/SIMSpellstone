@@ -36,13 +36,15 @@ if (function (type) {
     }
 }('localStorage')) {
     (function () {
+        var urlHelpers = require('urlHelpers');
+        
         var SaveFields = {
             decks: "SavedDecks",
             tutorial: "Tutorial"
         };
 
         storageAPI.initialize = function () {
-            var currentPage = getCurrentPage();
+            var currentPage = urlHelpers.getCurrentPage();
 
             convertSavedDecks();
 

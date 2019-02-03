@@ -1,8 +1,10 @@
 "use strict";
 
 (function () {
+    var urlHelpers = require('urlHelpers');
+    
     var use_workers = false;
-    if (typeof (_GET('maxworkers')) === 'undefined') {
+    if (typeof (urlHelpers.paramValue('maxworkers')) === 'undefined') {
         // Explicitly using the single-threaded version
     } else if (typeof (Worker) === "undefined") {
         // The browser doesn't support Workers (IE9 and before)

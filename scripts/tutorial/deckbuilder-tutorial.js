@@ -1,7 +1,9 @@
 ﻿function getTutorialScript() {
+    var urlHelpers = require('urlHelpers');
+
     var tutorialParts = [
        {
-           msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Deck Builder.",
+           msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Deck Builder."
        },
        {
            ui: "#deckContainer",
@@ -190,7 +192,7 @@
        }
     ];
 
-    var currentPage = getCurrentPage();
+    var currentPage = urlHelpers.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {

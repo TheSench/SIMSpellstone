@@ -3,6 +3,7 @@
 (function () {
     var base64 = require('base64');
     var matchTimer = require('matchTimer');
+    var urlHelpers = require('urlHelpers');
 
     // Global variables needed by the GUI thread when workers are used
     var max_workers = 1;
@@ -307,7 +308,7 @@
         }
 
         // Load enemy deck
-        pvpAI = !_DEFINED("randomAI");
+        pvpAI = !urlHelpers.paramDefined("randomAI");
         if (getdeck2) {
             cache_cpu_deck = base64.decodeHash(getdeck2);
         } else if (getmission) {
@@ -431,7 +432,7 @@
         }
 
         // Load enemy deck
-        pvpAI = !_DEFINED("randomAI");
+        pvpAI = !urlHelpers.paramDefined("randomAI");
         if (getdeck2) {
             cache_cpu_deck = base64.decodeHash(getdeck2);
         } else if (getmission) {

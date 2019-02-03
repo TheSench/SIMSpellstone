@@ -91,33 +91,6 @@ Function.prototype.throttle = function throttle(wait) {
     };
 };
 
-// GET variables
-function _GET(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (decodeURIComponent(pair[0]) == variable) {
-            return decodeURIComponent(pair[1] ? pair[1] : '');
-        }
-    }
-    return undefined;
-}
-
-function _DEFINED(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (decodeURIComponent(pair[0]) == variable) {
-            return true;
-        }
-    }
-    return false;
-}
-
-
-
 function shuffle(list) {
     var i = list.length, j, tempi, tempj;
     if (i == 0) return false;
@@ -187,12 +160,4 @@ function makeUnitInfo(id, level, runes) {
 
 var elariaCaptain = makeUnitInfo(202, 1);
 
-function getCurrentPage() {
-    var currentPage = window.location.href;
-    var pageEnd = currentPage.indexOf(".html");
-    currentPage = currentPage.substring(0, pageEnd);
-    var pageStart = currentPage.lastIndexOf("/") + 1;
-    currentPage = currentPage.substring(pageStart).toLowerCase();
-    return currentPage;
-}
 

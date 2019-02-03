@@ -1,4 +1,6 @@
 ﻿function getTutorialScript() {
+    var urlHelpers = require('urlHelpers');
+    
     var tutorialParts = [
        {
            msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Live PvP functions.",
@@ -34,15 +36,15 @@
        },
        {
            ui: "#first-player-advantage-container",
-           msg: 'This section lets you pick various options for dealing with "First-Player Advantage".',
+           msg: 'This section lets you pick various options for dealing with "First-Player Advantage".'
        },
        {
            ui: "#surge-container",
-           msg: 'This setting makes the defender go first.',
+           msg: 'This setting makes the defender go first.'
        },
        {
            ui: "#tournament-container",
-           msg: 'This setting causes the attacker\'s first card to not tick down right away.',
+           msg: 'This setting causes the attacker\'s first card to not tick down right away.'
        },
        {
            ui: "#tower-container",
@@ -64,10 +66,10 @@
        {
            ui: "#btn_simulate",
            msg: 'Finally, click "Connect!" to start the fight.'
-       },
+       }
     ];
 
-    var currentPage = getCurrentPage();
+    var currentPage = urlHelpers.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {

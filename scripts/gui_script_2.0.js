@@ -6,6 +6,7 @@ var mapBGEDialog;
 $(function () {
     var bgeApi = require('bgeApi');
     var base64 = require('base64');
+    var urlHelpers = require('urlHelpers');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();
@@ -70,7 +71,7 @@ $(function () {
     function deckChanged(deckID, newDeck, owner) {
         var $deck = $("#" + deckID);
         $deck.children().remove();
-        if (!_DEFINED("seedtest")) {
+        if (!urlHelpers.paramDefined("seedtest")) {
             SIM_CONTROLLER.getConfiguration();
             var battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
@@ -166,9 +167,9 @@ $(function () {
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 
-    if (_DEFINED("latestCards")) {
+    if (urlHelpers.paramDefined("latestCards")) {
         var callback = null;
-        if (_DEFINED("autostart")) {
+        if (urlHelpers.paramDefined("autostart")) {
             callback = function () {
                 SIM_CONTROLLER.startsim(1);
             };

@@ -6,6 +6,7 @@ var runeApi = require('runeApi');
 var cardInfo = require('cardInfo');
 var factions = require('factions');
 var unitInfo = require('unitInfo');
+var urlHelpers = require('urlHelpers');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
@@ -63,7 +64,7 @@ var $deck;
 var $cardSpace;
 
 var initDeckBuilder = function () {
-	if (!_DEFINED("fromSim")) {
+	if (!urlHelpers.paramDefined("fromSim")) {
 		$("#header").load("templates/header.html", function () {
 			$("#header").show();
 			if (typeof showTutorial !== "undefined") {
@@ -134,7 +135,7 @@ var initDeckBuilder = function () {
 		}
 	});
 
-	inventory = (_GET('inventory') || inventory);
+	inventory = (urlHelpers.paramValue('inventory') || inventory);
 
 	$("[name=rarity]").click(function (event) {
 		onClickFilter(event, filterRarity, event.altKey);
@@ -155,7 +156,7 @@ var initDeckBuilder = function () {
 		onClickFilter(event, filterDualFaction, event.altKey);
 	});
 
-	if (_DEFINED("spoilers") || _DEFINED("latestCards")) {
+	if (urlHelpers.paramDefined("spoilers") || urlHelpers.paramDefined("latestCards")) {
 		$("#loadingSplash").html("Checking for New Cards...");
 		updateGameData();
 	} else {
@@ -163,7 +164,7 @@ var initDeckBuilder = function () {
 		setTimeout(loadCards, 1);
 	}
 
-	if (_DEFINED("unlimited")) {
+	if (urlHelpers.paramDefined("unlimited")) {
 		$deck = $("#deck");
 		toggleInventoryMode();
 	}
@@ -203,7 +204,7 @@ var setupPopups = function () {
 
 	$(".start-closed").accordion('option', 'active', false).show();
 
-	if (_DEFINED("spoilers")) {
+	if (urlHelpers.paramDefined("spoilers")) {
 		$("#deck-container, #filter-container").accordion('option', 'active', false).show();
 	}
 
@@ -342,12 +343,12 @@ var drawAllCards = function () {
 
 var drawDeck = function () {
 
-	var hash = _GET('hash') || $("#hash").val();
+	var hash = urlHelpers.paramValue('hash') || $("#hash").val();
 	if (hash) {
 		hash_changed(hash);
 	}
 
-	var name = _GET('name');
+	var name = urlHelpers.paramValue('name');
 	if (name) {
 		setDeckName(name);
 	}
@@ -448,7 +449,7 @@ var drawCardList = function () {
 			deck.deck[i] = removeFromInventory(unit);
 		}
 	} else {
-		if (_DEFINED('spoilers')) {
+		if (urlHelpers.paramDefined('spoilers')) {
 			for (var id in spoilers) {
 				addUnitLevels(id);
 			}
@@ -2320,7 +2321,7 @@ function toggleInventoryMode() {
 
 function generateLink() {
 	var params = [];
-	var name = _GET('name');
+	var name = urlHelpers.paramValue('name');
 	var hash = $("#hash").val();
 	if (name) {
 		params.push("name=" + name);
@@ -2334,7 +2335,7 @@ function generateLink() {
 	if (inventoryMode) {
 		params.push("unlimited");
 	}
-	if (_DEFINED("spoilers")) {
+	if (urlHelpers.paramDefined("spoilers")) {
 		params.push("spoilers");
 	}
 	var link = "http://thesench.github.io/SIMSpellstone/DeckBuilder.html";

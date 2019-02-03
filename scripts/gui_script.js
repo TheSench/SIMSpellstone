@@ -2,6 +2,7 @@
 
 var deckPopupDialog;
 var base64 = require('base64');
+var urlHelpers = require('urlHelpers');
 
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -77,32 +78,32 @@ function processQueryString() {
 
 	$("#display_history").on("click", display_history);
 
-	$('#deck1').val(_GET('deck1')).change();
-	$('#deck2').val(_GET('deck2')).change();
+	$('#deck1').val(urlHelpers.paramValue('deck1')).change();
+	$('#deck2').val(urlHelpers.paramValue('deck2')).change();
 
-	$('#surge').prop("checked", _DEFINED("surge"));
-	$('#siege').prop("checked", _DEFINED("siege"));
-	var tower_level = Math.min(Math.max(_GET('tower_level') || 18, 0), 18);
+	$('#surge').prop("checked", urlHelpers.paramDefined("surge"));
+	$('#siege').prop("checked", urlHelpers.paramDefined("siege"));
+	var tower_level = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
 	$('#tower_level').val(tower_level);
 
-	var tower_type = (_GET('tower_type') || 501);
+	var tower_type = (urlHelpers.paramValue('tower_type') || 501);
 	$("#tower_type").val(tower_type);
 
-	$('#auto_mode').prop("checked", _DEFINED("auto_mode"));
-	$('#tournament').prop("checked", _DEFINED("tournament"));
-	$('#ordered').prop("checked", _DEFINED("ordered"));
-	$('#exactorder').prop("checked", _DEFINED("exactorder"));
+	$('#auto_mode').prop("checked", urlHelpers.paramDefined("auto_mode"));
+	$('#tournament').prop("checked", urlHelpers.paramDefined("tournament"));
+	$('#ordered').prop("checked", urlHelpers.paramDefined("ordered"));
+	$('#exactorder').prop("checked", urlHelpers.paramDefined("exactorder"));
 
-	$('#ordered2').prop("checked", _DEFINED("ordered2"));
-	$('#exactorder2').prop("checked", _DEFINED("exactorder2"));
-	if (_DEFINED("randomAI")) {
+	$('#ordered2').prop("checked", urlHelpers.paramDefined("ordered2"));
+	$('#exactorder2').prop("checked", urlHelpers.paramDefined("exactorder2"));
+	if (urlHelpers.paramDefined("randomAI")) {
 		pvpAI = false;
 	}
 
-	var locationID = _GET('location');
-	var campaignID = _GET('campaign');
-	var missionID = _GET('mission');
-	var raidID = _GET('raid');
+	var locationID = urlHelpers.paramValue('location');
+	var campaignID = urlHelpers.paramValue('campaign');
+	var missionID = urlHelpers.paramValue('mission');
+	var raidID = urlHelpers.paramValue('raid');
 	if (locationID) $('#location').val(locationID).change();
 	if (campaignID) {
 		if (!locationID) {
@@ -112,16 +113,16 @@ function processQueryString() {
 		$('#campaign').val(campaignID).change();
 	}
 	if (missionID) {
-		$('#mission_level').val(_GET('mission_level') || 7);
+		$('#mission_level').val(urlHelpers.paramValue('mission_level') || 7);
 		$('#mission').val(missionID).change();
 	}
 	if (raidID) {
-		$('#raid_level').val(_GET('raid_level') || 25);
+		$('#raid_level').val(urlHelpers.paramValue('raid_level') || 25);
 		$('#raid').val(raidID).change();
 	}
 
-	if (_DEFINED("bges")) {
-		var bges = _GET('bges');
+	if (urlHelpers.paramDefined("bges")) {
+		var bges = urlHelpers.paramValue('bges');
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
 			var bge = base64.toDecimal(bges.substring(i, i + 2));
@@ -134,7 +135,7 @@ function processQueryString() {
 			$("#battleground_" + current_bges[i]).prop('checked', true);
 		}
 	}
-	var bges = _GET('selfbges');
+	var bges = urlHelpers.paramValue('selfbges');
 	if (bges) {
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
@@ -142,7 +143,7 @@ function processQueryString() {
 			$("#self-battleground_" + bge).prop('checked', true);
 		}
 	}
-	var bges = _GET('enemybges');
+	var bges = urlHelpers.paramValue('enemybges');
 	if (bges) {
 		// Each BGE is a 2-character ID in Base64
 		for (var i = 0; i < bges.length; i += 2) {
@@ -151,26 +152,26 @@ function processQueryString() {
 		}
 	}
 
-	var mapBges = _GET("mapBges");
+	var mapBges = urlHelpers.paramValue("mapBges");
 	if (mapBges) {
 		setSelectedMapBattlegrounds(mapBges);
 	}
 
 	$("#battleground").change();
 
-	$('#sims').val(_GET('sims') || 10000);
+	$('#sims').val(urlHelpers.paramValue('sims') || 10000);
 
-	if (_DEFINED("debug")) $('#debug').click();
-	if (_DEFINED("mass_debug")) $('#mass_debug').click();
-	if (_DEFINED("loss_debug")) $('#loss_debug').click();
-	if (_DEFINED("win_debug")) $('#win_debug').click();
-	if (_DEFINED("play_debug")) $('#play_debug').click();
+	if (urlHelpers.paramDefined("debug")) $('#debug').click();
+	if (urlHelpers.paramDefined("mass_debug")) $('#mass_debug').click();
+	if (urlHelpers.paramDefined("loss_debug")) $('#loss_debug').click();
+	if (urlHelpers.paramDefined("win_debug")) $('#win_debug').click();
+	if (urlHelpers.paramDefined("play_debug")) $('#play_debug').click();
 
 	document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
-	if (_DEFINED('autostart') && !_DEFINED("latestCards")) {
+	if (urlHelpers.paramDefined('autostart') && !urlHelpers.paramDefined("latestCards")) {
 		SIM_CONTROLLER.startsim(1);
-	} else if (_DEFINED('unit_tests')) {
+	} else if (urlHelpers.paramDefined('unit_tests')) {
 		var body = document.getElementsByTagName("body")[0];
 		var script = document.createElement("script");
 		script.src = "scripts/unit_tests.js";
@@ -636,7 +637,7 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
 	if (name) {
 		parameters.push("name=" + name);
 	}
-	if (_DEFINED("ajax")) {
+	if (urlHelpers.paramDefined("ajax")) {
 		parameters.push("ajax");
 	}
 	parameters.push("fromSim");

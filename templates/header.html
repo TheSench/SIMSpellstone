@@ -22,7 +22,8 @@
 </nav>
 <script>
     (function () {
-        $("#" + getCurrentPage()).addClass("current-page");
+        var currentPage = urlHelpers.getCurrentPage();
+        $("#" + currentPage).addClass("current-page");
     }());
 </script>
 <script src="lib/googleAnalytics.js"></script>

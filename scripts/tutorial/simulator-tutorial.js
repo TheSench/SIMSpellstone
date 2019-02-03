@@ -1,7 +1,9 @@
 ﻿function getTutorialScript() {
+    var urlHelpers = require('urlHelpers');
+    
     var tutorialParts = [
        {
-           msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Simulator.",
+           msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Simulator."
        },
        {
            ui: "#setup-container",
@@ -36,7 +38,7 @@
        },
        {
            ui: "#attacker-advanced",
-           msg: 'This section contains some additional settings for the attacker that determine how their deck is played.',
+           msg: 'This section contains some additional settings for the attacker that determine how their deck is played.'
        },
        {
            ui: "#auto-container",
@@ -87,7 +89,7 @@
        {
            ui: "#defender-advanced",
            msg: 'This section contains some additional settings for the defender that determine how their deck is played.',
-           actions: [clearRaid],
+           actions: [clearRaid]
        },
        {
            ui: "#surge-container",
@@ -149,7 +151,7 @@
        }
     ];
 
-    var currentPage = getCurrentPage();
+    var currentPage = urlHelpers.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {

@@ -19,6 +19,7 @@ module.exports = function (grunt) {
                     'scripts/modules/runeApi.js',
                     'scripts/modules/cardInfo.js',
                     'scripts/modules/matchTimer.js',
+                    'scripts/modules/urlHelpers.js',
 
                     'scripts/modules/base64.js',
 
@@ -48,6 +49,7 @@ module.exports = function (grunt) {
                     'scripts/modules/runeApi.js',
                     'scripts/modules/cardInfo.js',
                     'scripts/modules/matchTimer.js',
+                    'scripts/modules/urlHelpers.js',
 
                     'scripts/modules/base64.js',
 
