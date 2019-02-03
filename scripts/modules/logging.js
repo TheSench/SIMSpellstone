@@ -3,6 +3,8 @@ var log = (function() {
         skill: logSkill,
         name: logCardName
     };
+    
+	var factions = require('factions');
 
     function truncate(value) {
         if (value > Math.floor(value)) {

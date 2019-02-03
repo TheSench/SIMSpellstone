@@ -12,7 +12,9 @@ module.exports = function (grunt) {
             },
             deckbuilder: {
                 src: [
+                    'scripts/require.sync.js',
                     //'scripts/require.config.js',
+                    'scripts/modules/factions.js',
                     'scripts/modules/cardInfo.js',
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
@@ -33,7 +35,9 @@ module.exports = function (grunt) {
             },
             simulator: {
                 src: [
+                    'scripts/require.sync.js',
                     //'scripts/require.config.js',
+                    'scripts/modules/factions.js',
                     'scripts/modules/cardInfo.js',
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
@@ -94,9 +98,8 @@ module.exports = function (grunt) {
                     'lib/jquery-3.3.1.min.js',
                     'lib/jquery-ui-1.12.1.custom/jquery-ui.min.js',
                     'lib/angular.min.js',
-                    'lib/seedrandom.min.js',
+                    'lib/seedrandom.min.js'
                     //'lib/require.js'
-                    'scripts/require.sync.js'
                 ],
                 dest: 'dist/vendor.js'
             },

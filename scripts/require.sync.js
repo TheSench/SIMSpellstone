@@ -2,7 +2,11 @@
     var modules = {};
 
     window.define = function define(name, moduleDefinition) {
-        modules[name] = moduleDefinition();
+        if (typeof moduleDefinition === "function") {
+            modules[name] = moduleDefinition();
+        } else {
+            modules[name] = moduleDefinition;
+        }
     };
 
     window.require = function require(name) {

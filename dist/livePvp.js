@@ -1,4 +1,68 @@
-define('cardInfo', function() {
+(function () {
+    var modules = {};
+
+    window.define = function define(name, moduleDefinition) {
+        if (typeof moduleDefinition === "function") {
+            modules[name] = moduleDefinition();
+        } else {
+            modules[name] = moduleDefinition;
+        }
+    };
+
+    window.require = function require(name) {
+        var module = modules[name];
+        if (module) {
+            return module;
+        } else {
+            throw "Module '" + name + "' is not defined yet.";
+        }
+    };
+})();;define('factions', {
+    names: {
+        0: 'Factionless',
+        1: 'Aether',
+        2: 'Chaos',
+        3: 'Wyld',
+        4: 'Frog',
+        5: 'Elemental',
+        6: 'Angel',
+        7: 'Undead',
+        8: 'Void',
+        9: 'Dragon',
+        10: 'Avian',
+        11: 'Goblin',
+        12: 'Seafolk',
+        13: 'Insect',
+        14: 'Bear',
+        15: 'Token',
+        16: 'Mecha',
+        17: 'Knight',
+
+        999: 'Tower'
+    },
+    IDs: {
+        Factionless: 0,
+        Aether: 1,
+        Chaos: 2,
+        Wyld: 3,
+        Frog: 4,
+        Elemental: 5,
+        Angel: 6,
+        Undead: 7,
+        Void: 8,
+        Dragon: 9,
+        Avian: 10,
+        Goblin: 11,
+        Seafolk: 12,
+        Insect: 13,
+        Bear: 14,
+        Token: 15,
+        Mecha: 16,
+        Knight: 17,
+
+        Tower: 999
+    }
+});;define('cardInfo', function() {
     var api = {
         loadCard: loadCard,
         isCommander: isCommander,
@@ -1837,6 +1901,8 @@ var DATA_UPDATER = (function () {
         skill: logSkill,
         name: logCardName
     };
+    
+	var factions = require('factions');
 
     function truncate(value) {
         if (value > Math.floor(value)) {
@@ -2161,9 +2227,6 @@ function getDefaultDeck() {
     };
 }
 
-
-
-
 function makeUnitInfo(id, level, runes) {
     var unit = {
         id: Number(id),
@@ -2176,10 +2239,6 @@ function makeUnitInfo(id, level, runes) {
 
 var elariaCaptain = makeUnitInfo(202, 1);
 
-function getRarity(rarity) {
-    return rarityStrings[rarity];
-}
-
 function getCurrentPage() {
     var currentPage = window.location.href;
     var pageEnd = currentPage.indexOf(".html");
@@ -2189,62 +2248,7 @@ function getCurrentPage() {
     return currentPage;
 }
 
-// Global arrays
-var rarityStrings = [
-    "",
-    "Common",
-    "Rare",
-    "Epic",
-    "Legendary",
-    "Mythic"
-];
-
-var factions = {
-    names: {
-        0: 'Factionless',
-        1: 'Aether',
-        2: 'Chaos',
-        3: 'Wyld',
-        4: 'Frog',
-        5: 'Elemental',
-        6: 'Angel',
-        7: 'Undead',
-        8: 'Void',
-        9: 'Dragon',
-        10: 'Avian',
-        11: 'Goblin',
-        12: 'Seafolk',
-        13: 'Insect',
-        14: 'Bear',
-        15: 'Token',
-        16: 'Mecha',
-        17: 'Knight',
-
-        999: 'Tower'
-    },
-    IDs: {
-        Factionless: 0,
-        Aether: 1,
-        Chaos: 2,
-        Wyld: 3,
-        Frog: 4,
-        Elemental: 5,
-        Angel: 6,
-        Undead: 7,
-        Void: 8,
-        Dragon: 9,
-        Avian: 10,
-        Goblin: 11,
-        Seafolk: 12,
-        Insect: 13,
-        Bear: 14,
-        Token: 15,
-        Mecha: 16,
-        Knight: 17,
-
-        Tower: 999
-    }
-};;"use strict";
+;"use strict";
 
 var SIM_CONTROLLER = (function () {
 
@@ -7122,6 +7126,7 @@ var CARD_GUI = {};
 	var cardApi = require('cardApi');
 	var cardInfo = require('cardInfo');
 	var runeApi = require('runeApi');
+	var factions = require('factions');
 
 	var assetsRoot = '';
 

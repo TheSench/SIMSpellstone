@@ -6,6 +6,7 @@ var CARD_GUI = {};
 	var cardApi = require('cardApi');
 	var cardInfo = require('cardInfo');
 	var runeApi = require('runeApi');
+	var factions = require('factions');
 
 	var assetsRoot = '';
 

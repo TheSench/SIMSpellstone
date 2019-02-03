@@ -3,6 +3,7 @@
 var cardApi = require('cardApi');
 var runeApi = require('runeApi');
 var cardInfo = require('cardInfo');
+var factions = require('factions');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;

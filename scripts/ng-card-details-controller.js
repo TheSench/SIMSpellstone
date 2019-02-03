@@ -2,6 +2,17 @@
   'use strict';
   
 	var cardInfo = require('cardInfo');
+	var factions = require('factions');
+
+  // Global arrays
+  var rarityStrings = [
+      "",
+      "Common",
+      "Rare",
+      "Epic",
+      "Legendary",
+      "Mythic"
+  ];
 
   function getCardInfo(unit) {
     var id = unit.id;
@@ -112,7 +123,7 @@
     };
 
     $scope.getRarityString = function () {
-      return $window.rarityStrings[$scope.card.rarity];
+      return rarityStrings[$scope.card.rarity];
     };
 
     $scope.fontSize = function () {
@@ -237,7 +248,7 @@
     };
 
     $scope.getFaction = function (factionID) {
-      var faction = $window.factions.names[factionID];
+      var faction = factions.names[factionID];
       if (faction === "Tower") {
         faction = "";
       }
