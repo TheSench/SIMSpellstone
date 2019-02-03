@@ -1776,24 +1776,24 @@ var SIMULATOR = {};
 
 		// Load player deck
 		if (cache_player_deck_cards) {
-			deck['player'] = copy_deck(cache_player_deck_cards);
+			deck['player'] = loadDeck.copyDeck(cache_player_deck_cards);
 		}
 
 		// Load enemy deck
 		if (getmission && missionlevel > 1 && missionlevel < 7) {
 			cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
 		} else if (getraid) {
 			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
 		}
 		if (cache_cpu_deck_cards) {
-			deck['cpu'] = copy_deck(cache_cpu_deck_cards);
+			deck['cpu'] = loadDeck.copyDeck(cache_cpu_deck_cards);
 		}
 
 		// Set up deck order priority reference
-		if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
-		if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+		if (getordered && !getexactorder) deck.player.ordered = loadDeck.copyCardList(deck.player.deck);
+		if (getordered2 && !getexactorder2) deck.cpu.ordered = loadDeck.copyCardList(deck.cpu.deck);
 
 		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
 			: getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
@@ -1854,7 +1854,7 @@ var SIMULATOR = {};
 		} else {
 			cache_player_deck = loadDeck.defaultDeck();
 		}
-		cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
+		cache_player_deck_cards = loadDeck.getDeckCards(cache_player_deck, 'player');
 
 		// Load enemy deck
 		pvpAI = true;
@@ -1870,7 +1870,7 @@ var SIMULATOR = {};
 		} else {
 			cache_cpu_deck = loadDeck.defaultDeck();
 		}
-		cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+		cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
 	}
 
 	function setupField(field) {

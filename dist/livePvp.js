@@ -1111,7 +1111,10 @@
     var api = {
         mission: loadMissionDeck,
         raid: loadRaidDeck,
-        defaultDeck: getDefaultDeck
+        defaultDeck: getDefaultDeck,
+        copyCardList: copyCardList,
+        copyDeck: copyDeck,
+        getDeckCards: getDeckCards
     };
 
     function getUpgradePoints(level, maxedAt, maxUpgradePoints) {
@@ -1361,6 +1364,35 @@
             commander: elariaCaptain,
             deck: []
         };
+    }
+
+    function copyCardList(original_card_list) {
+        var new_card_list = [];
+        for (var key = 0, len = original_card_list.length; key < len; key++) {
+            new_card_list[key] = original_card_list[key];
+        }
+        return new_card_list;
+    }
+
+    function copyDeck(original_deck) {
+        var new_deck = {};
+        new_deck.commander = original_deck.commander;
+        new_deck.deck = copyCardList(original_deck.deck);
+        return new_deck;
+    }
+
+    function getDeckCards(original_deck, owner) {
+        var new_deck = {};
+        new_deck.commander = cardApi.byId(original_deck.commander);
+        new_deck.deck = [];
+        var list = original_deck.deck;
+        var battlegrounds = SIMULATOR.battlegrounds.onCreate.filter(function (bge) {
+            return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
+        });
+        for (var i = 0, len = list.length; i < len; i++) {
+            new_deck.deck.push(cardApi.byIdWithBgeApplied(list[i], battlegrounds));
+        }
+        return new_deck;
     }
 
     return api;
@@ -2234,34 +2266,6 @@ function shuffle(list) {
     }
 }
 
-function copy_deck(original_deck) {
-    var new_deck = {};
-    new_deck.commander = original_deck.commander;
-    new_deck.deck = copy_card_list(original_deck.deck);
-    return new_deck;
-}
-
-function getDeckCards(original_deck, owner) {
-    var new_deck = {};
-    new_deck.commander = cardApi.byId(original_deck.commander);
-    new_deck.deck = [];
-    var list = original_deck.deck;
-    var battlegrounds = SIMULATOR.battlegrounds.onCreate.filter(function (bge) {
-        return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
-    });
-    for (var i = 0, len = list.length; i < len; i++) {
-        new_deck.deck.push(cardApi.byIdWithBgeApplied(list[i], battlegrounds));
-    }
-    return new_deck;
-}
-
-function copy_card_list(original_card_list) {
-    var new_card_list = [];
-    for (var key = 0, len = original_card_list.length; key < len; key++) {
-        new_card_list[key] = original_card_list[key];
-    }
-    return new_card_list;
-}
 
 // Convert card list into an actual deck
 // - assume that first card is always commander
@@ -4377,24 +4381,24 @@ var SIM_CONTROLLER = (function () {
 
 		// Load player deck
 		if (cache_player_deck_cards) {
-			deck['player'] = copy_deck(cache_player_deck_cards);
+			deck['player'] = loadDeck.copyDeck(cache_player_deck_cards);
 		}
 
 		// Load enemy deck
 		if (getmission && missionlevel > 1 && missionlevel < 7) {
 			cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
 		} else if (getraid) {
 			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
 		}
 		if (cache_cpu_deck_cards) {
-			deck['cpu'] = copy_deck(cache_cpu_deck_cards);
+			deck['cpu'] = loadDeck.copyDeck(cache_cpu_deck_cards);
 		}
 
 		// Set up deck order priority reference
-		if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
-		if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+		if (getordered && !getexactorder) deck.player.ordered = loadDeck.copyCardList(deck.player.deck);
+		if (getordered2 && !getexactorder2) deck.cpu.ordered = loadDeck.copyCardList(deck.cpu.deck);
 
 		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
 			: getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
@@ -4455,7 +4459,7 @@ var SIM_CONTROLLER = (function () {
 		} else {
 			cache_player_deck = loadDeck.defaultDeck();
 		}
-		cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
+		cache_player_deck_cards = loadDeck.getDeckCards(cache_player_deck, 'player');
 
 		// Load enemy deck
 		pvpAI = true;
@@ -4471,7 +4475,7 @@ var SIM_CONTROLLER = (function () {
 		} else {
 			cache_cpu_deck = loadDeck.defaultDeck();
 		}
-		cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+		cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
 	}
 
 	function setupField(field) {

@@ -103,34 +103,6 @@ function shuffle(list) {
     }
 }
 
-function copy_deck(original_deck) {
-    var new_deck = {};
-    new_deck.commander = original_deck.commander;
-    new_deck.deck = copy_card_list(original_deck.deck);
-    return new_deck;
-}
-
-function getDeckCards(original_deck, owner) {
-    var new_deck = {};
-    new_deck.commander = cardApi.byId(original_deck.commander);
-    new_deck.deck = [];
-    var list = original_deck.deck;
-    var battlegrounds = SIMULATOR.battlegrounds.onCreate.filter(function (bge) {
-        return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
-    });
-    for (var i = 0, len = list.length; i < len; i++) {
-        new_deck.deck.push(cardApi.byIdWithBgeApplied(list[i], battlegrounds));
-    }
-    return new_deck;
-}
-
-function copy_card_list(original_card_list) {
-    var new_card_list = [];
-    for (var key = 0, len = original_card_list.length; key < len; key++) {
-        new_card_list[key] = original_card_list[key];
-    }
-    return new_card_list;
-}
 
 // Convert card list into an actual deck
 // - assume that first card is always commander
