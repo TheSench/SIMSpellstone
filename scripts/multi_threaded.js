@@ -2,6 +2,7 @@
 
 (function () {
     var base64 = require('base64');
+    var matchTimer = require('matchTimer');
 
     // Global variables needed by the GUI thread when workers are used
     var max_workers = 1;

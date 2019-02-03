@@ -233,6 +233,46 @@
     }
 
     return api;
+});;define('matchTimer', function() {
+    var api = {
+        elapsed: elapsed,
+        batchElapsed: batchElapsed,
+        startBatch: startBatch,
+        stop: stopTimer,
+        reset: resetTimer
+    };
+
+    function elapsedSeconds(start, end) {
+        return ((end - start) / 1000).toFixed(3);
+    }
+
+    function timeSince(start) {
+        return elapsedSeconds(start, Date.now());
+    }
+
+    function elapsed() {
+        var end = (this.timeStop || Date.now());
+        return elapsedSeconds(this.timeStart, end);
+    }
+
+    function batchElapsed(start) {
+        return timeSince(start || this.batchStarted);
+    }
+
+    function startBatch() {
+        this.batchStarted = Date.now();
+    }
+
+    function stopTimer() {
+        this.timeStop = Date.now();
+    }
+
+    function resetTimer() {
+        this.timeStart = Date.now();
+        this.timeStop = 0;
+    }
+
+    return api;
 });;define('base64', function () {
     "use strict";
     
@@ -2157,32 +2197,7 @@ function _DEFINED(variable) {
     return false;
 }
 
-var matchTimer = {
-    // Time elapsed
-    elapsed: function elapsed() {
-        var end = (this.timeStop || Date.now());
-        return this.elapsedSeconds(this.timeStart, end);
-    },
-    timeSince: function timeSince(start) {
-        return this.elapsedSeconds(start, Date.now());
-    },
-    elapsedSeconds: function elapsedSeconds(start, end) {
-        return ((end - start) / 1000).toFixed(3);
-    },
-    batchElapsed: function batchElapsed(start) {
-        return this.timeSince(start || this.batchStarted);
-    },
-    startBatch: function startBatch() {
-        this.batchStarted = Date.now();
-    },
-    stop: function stopTimer() {
-        this.timeStop = Date.now();
-    },
-    reset: function resetTimer() {
-        this.timeStart = Date.now();
-        this.timeStop = 0;
-    }
-};
+
 
 function shuffle(list) {
     var i = list.length, j, tempi, tempj;
@@ -2265,6 +2280,7 @@ function getCurrentPage() {
 ;"use strict";
 
 var SIM_CONTROLLER = (function () {
+    var matchTimer = require('matchTimer');
 
     function getConfiguration() {
         getdeck = $('#deck1').val();
@@ -2357,6 +2373,7 @@ var SIM_CONTROLLER = (function () {
 
 (function () {
     var bgeApi = require('bgeApi');
+    var matchTimer = require('matchTimer');
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
@@ -2589,7 +2606,7 @@ var SIM_CONTROLLER = (function () {
 		if (!card.id) return 0;
 
 		var newKey = field_p_assaults.length;
-		initializeCard(card, p, newKey);
+		unitInfo.initializeUnit(card, p, newKey);
 		card.played = true;
 
 		if (card.isAssault()) {

@@ -2,6 +2,7 @@
 
 (function () {
     var bgeApi = require('bgeApi');
+    var matchTimer = require('matchTimer');
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {

@@ -116,32 +116,7 @@ function _DEFINED(variable) {
     return false;
 }
 
-var matchTimer = {
-    // Time elapsed
-    elapsed: function elapsed() {
-        var end = (this.timeStop || Date.now());
-        return this.elapsedSeconds(this.timeStart, end);
-    },
-    timeSince: function timeSince(start) {
-        return this.elapsedSeconds(start, Date.now());
-    },
-    elapsedSeconds: function elapsedSeconds(start, end) {
-        return ((end - start) / 1000).toFixed(3);
-    },
-    batchElapsed: function batchElapsed(start) {
-        return this.timeSince(start || this.batchStarted);
-    },
-    startBatch: function startBatch() {
-        this.batchStarted = Date.now();
-    },
-    stop: function stopTimer() {
-        this.timeStop = Date.now();
-    },
-    reset: function resetTimer() {
-        this.timeStart = Date.now();
-        this.timeStop = 0;
-    }
-};
+
 
 function shuffle(list) {
     var i = list.length, j, tempi, tempj;

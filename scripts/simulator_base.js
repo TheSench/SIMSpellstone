@@ -16,7 +16,7 @@ var SIMULATOR = {};
 		if (!card.id) return 0;
 
 		var newKey = field_p_assaults.length;
-		initializeCard(card, p, newKey);
+		unitInfo.initializeUnit(card, p, newKey);
 		card.played = true;
 
 		if (card.isAssault()) {

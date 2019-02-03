@@ -18,6 +18,7 @@ module.exports = function (grunt) {
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
                     'scripts/modules/cardInfo.js',
+                    'scripts/modules/matchTimer.js',
 
                     'scripts/modules/base64.js',
 
@@ -46,6 +47,7 @@ module.exports = function (grunt) {
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
                     'scripts/modules/cardInfo.js',
+                    'scripts/modules/matchTimer.js',
 
                     'scripts/modules/base64.js',
 

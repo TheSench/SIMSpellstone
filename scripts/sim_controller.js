@@ -1,6 +1,7 @@
 "use strict";
 
 var SIM_CONTROLLER = (function () {
+    var matchTimer = require('matchTimer');
 
     function getConfiguration() {
         getdeck = $('#deck1').val();
