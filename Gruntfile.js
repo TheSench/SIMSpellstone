@@ -13,6 +13,7 @@ module.exports = function (grunt) {
             deckbuilder: {
                 src: [
                     'scripts/require.sync.js',
+                    'scripts/polyfills.js',
                     //'scripts/require.config.js',
                     'scripts/modules/factions.js',
                     'scripts/modules/skillApi.js',
@@ -43,6 +44,7 @@ module.exports = function (grunt) {
             simulator: {
                 src: [
                     'scripts/require.sync.js',
+                    'scripts/polyfills.js',
                     //'scripts/require.config.js',
                     'scripts/modules/factions.js',
                     'scripts/modules/skillApi.js',

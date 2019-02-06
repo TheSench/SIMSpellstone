@@ -565,22 +565,6 @@ function addBoolParam(params, paramName) {
 	}
 }
 
-function load_deck_builder_for_field(fieldID) {
-	var field = $("#" + fieldID);
-	var deck = {
-		commander: elariaCaptain,
-		deck: []
-	};
-	var hash = field.val();
-	if (!hash) {
-		hash = base64.encodeHash({
-			commander: elariaCaptain,
-			deck: []
-		});
-	}
-	open_deck_builder("Card Hash", hash, null, field);
-}
-
 var deckBuilders = {};
 function load_deck_builder(player) {
 	if (player === 'player') {
@@ -598,21 +582,16 @@ function load_deck_builder(player) {
 	}
 
 	// Load player deck
-	var deck = {
-		commander: elariaCaptain,
-		deck: []
-	};
 	if (getdeck) {
 		deck = base64.decodeHash(getdeck);
 	} else if (getmission) {
 		deck = loadDeck.mission(getmission, missionlevel);
 	} else if (getraid) {
 		deck = loadDeck.raid(getraid, raidlevel);
+	} else {
+		deck = loadDeck.defaultDeck();
 	}
-	var hash;
-	if (deck) {
-		hash = base64.encodeHash(deck);
-	}
+	var hash = base64.encodeHash(deck);
 
 	var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
 	var deckHashField = (player ? $("#" + (player == 'player' ? 'deck1' : 'deck2')) : null);
@@ -654,12 +633,12 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
 	var win = window.open(url, '', windowFeatures);
 
 	// Push values to window once it has loaded
-	$(win).load((function (name, deckHashField) {
+	$(win).load((function (deckHashField) {
 		return function () {
 			// Tie deck-builder back to the hash field in the simulator.
 			if (deckHashField) win.updateSimulator = function (hash) { deckHashField.val(hash).change(); };
 		};
-	})(name, deckHashField));
+	})(deckHashField));
 
 	return win;
 }
@@ -697,14 +676,6 @@ function display_history() {
 		'<br>' +
 		'<br>' +
 		'');
-}
-
-function supports_html5_storage() {
-	try {
-		return 'localStorage' in window && window['localStorage'] !== null;
-	} catch (e) {
-		return false;
-	}
 }
 
 // Initialize global variables
