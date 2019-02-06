@@ -1,6 +1,7 @@
 var SIMULATOR = {};
 (function () {
 	
+    var log = require('log');
 	var cardApi = require('cardApi');
     var skillApi = require('skillApi');
 	var base64 = require('base64');
@@ -10,7 +11,7 @@ var SIMULATOR = {};
 	"use strict";
 
 	// Play card
-	function play_card(card, p, turn, quiet) {
+	function playCard(card, p, turn, quiet) {
 		var field_p_assaults = field[p]['assaults'];
 
 		// Not a valid card
@@ -62,13 +63,13 @@ var SIMULATOR = {};
 	}
 
 	// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
-	function remove_dead() {
-		remove_dead_cards('player');
-		remove_dead_cards('cpu');
+	function removeDead() {
+		removeDeadUnits('player');
+		removeDeadUnits('cpu');
 	}
 
 	// Shift over to the left if there are any gaps.
-	function remove_dead_cards(p) {
+	function removeDeadUnits(p) {
 		var units = field[p].assaults;
 		// Find first dead unit (don't need to update the keys of any units before this one)
 		for (var key = 0, len = units.length; key < len; key++) {
@@ -99,16 +100,16 @@ var SIMULATOR = {};
 	}
 
 	// Picks one target by random
-	function choose_random_target(targets) {
+	function chooseRandomTarget(targets) {
 		var targetIndex = ~~(Math.random() * targets.length);
 		return [targets[targetIndex]];
 	}
 
-	function get_p(card) {
+	function getPlayer(card) {
 		return card.owner;
 	}
 
-	function get_o(card) {
+	function getOpponent(card) {
 		if (card.owner == 'cpu') return 'player';
 		if (card.owner == 'player') return 'cpu';
 	}
@@ -136,7 +137,7 @@ var SIMULATOR = {};
 		// Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
 		var amount = src_card.barrier_ice;
 		//if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
-		var o = get_o(src_card);
+		var o = getOpponent(src_card);
 		var field_o = field[o];
 		var target = field_o.assaults[src_card.key];
 		if (!target || !target.isAlive()) target = field_o.commander;
@@ -298,7 +299,7 @@ var SIMULATOR = {};
 		// - Target must be an assault
 		burn: function burn(src_card, skill) {
 
-			var o = get_o(src_card);
+			var o = getOpponent(src_card);
 
 			var field_o_assaults = field[o].assaults;
 
@@ -362,7 +363,7 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
+			var p = getPlayer(src_card);
 
 			var protect = skill.x;
 			var all = skill.all;
@@ -383,7 +384,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
@@ -434,7 +435,7 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		heal: function (src_card, skill) {
 
-			var p = get_p(src_card);
+			var p = getPlayer(src_card);
 
 			var faction = skill.y;
 			var heal = skill.x;
@@ -456,7 +457,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, heal);
 			heal += enhanced;
@@ -503,7 +504,7 @@ var SIMULATOR = {};
 		},
 		strike: function (src_card, skill, poison) {
 
-			var o = get_o(src_card);
+			var o = getOpponent(src_card);
 
 			var strike = skill.x;
 			var faction = skill.y;
@@ -524,7 +525,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, strike);
@@ -588,7 +589,7 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		intensify: function (src_card, skill, poison) {
 
-			var o = get_o(src_card);
+			var o = getOpponent(src_card);
 
 			var intensify = skill.x;
 			var faction = skill.y;
@@ -610,7 +611,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, intensify);
@@ -657,7 +658,7 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		ignite: function (src_card, skill, poison) {
 
-			var o = get_o(src_card);
+			var o = getOpponent(src_card);
 
 			var ignite = skill.x;
 			var faction = skill.y;
@@ -678,7 +679,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, ignite);
@@ -725,8 +726,8 @@ var SIMULATOR = {};
 		},
 		jam: function jam(src_card, skill) {
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
+			var p = getPlayer(src_card);
+			var o = getOpponent(src_card);
 
 			var all = skill.all;
 
@@ -748,7 +749,7 @@ var SIMULATOR = {};
 			}
 
 			// Check All
-			if (!all) targets = choose_random_target(targets);
+			if (!all) targets = chooseRandomTarget(targets);
 
 			var affected = 0;
 
@@ -784,8 +785,8 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		frost: function (src_card, skill) {
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
+			var p = getPlayer(src_card);
+			var o = getOpponent(src_card);
 
 			var frost = skill.x;
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, frost);
@@ -852,7 +853,7 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var o = get_o(src_card);
+			var o = getOpponent(src_card);
 
 			var heartseeker = skill.x;
 
@@ -879,8 +880,8 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
+			var p = getPlayer(src_card);
+			var o = getOpponent(src_card);
 
 			var enfeeble = skill.x;
 
@@ -901,7 +902,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enfeeble);
 			enfeeble += enhanced;
@@ -946,10 +947,10 @@ var SIMULATOR = {};
 			var o;
 			switch (skill.id) {
 				case 'weakenself':
-					o = get_p(src_card);
+					o = getPlayer(src_card);
 					break;
 				default:
-					o = get_o(src_card);
+					o = getOpponent(src_card);
 					break;
 			}
 
@@ -980,7 +981,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, weaken);
 			weaken += enhanced;
@@ -1023,7 +1024,7 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
+			var p = getPlayer(src_card);
 
 			var rally = skill.x;
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
@@ -1046,7 +1047,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 
 			var affected = 0;
@@ -1080,7 +1081,7 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
+			var p = getPlayer(src_card);
 
 			var rally = skill.x;
 			var all = skill.all;
@@ -1102,7 +1103,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
@@ -1144,7 +1145,7 @@ var SIMULATOR = {};
 		// - Can be enhanced?
 		legion: function (src_card, skill) {
 
-			var p = get_p(src_card);
+			var p = getPlayer(src_card);
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
@@ -1187,7 +1188,7 @@ var SIMULATOR = {};
 		// - Can be enhanced?
 		fervor: function (src_card, skill) {
 
-			var p = get_p(src_card);
+			var p = getPlayer(src_card);
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
@@ -1230,7 +1231,7 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		barrage: function (src_card, skill) {
 
-			var o = get_o(src_card);
+			var o = getOpponent(src_card);
 
 			var barrages = skill.x;
 			var faction = skill.y;
@@ -1254,7 +1255,7 @@ var SIMULATOR = {};
 
 				// Check All
 				if (!all) {
-					targets = choose_random_target(targets);
+					targets = chooseRandomTarget(targets);
 				}
 
 				var affected = 0;
@@ -1302,8 +1303,8 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
+			var p = getPlayer(src_card);
+			var o = getOpponent(src_card);
 
 			var x = skill.x;
 			var faction = skill.y;
@@ -1330,7 +1331,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 
 			var affected = 0;
@@ -1367,7 +1368,7 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		enrage: function (src_card, skill) {
 
-			var p = get_p(src_card);
+			var p = getPlayer(src_card);
 
 			var faction = skill.y;
 			var enrage = skill.x;
@@ -1388,7 +1389,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
@@ -1432,8 +1433,8 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
+			var p = getPlayer(src_card);
+			var o = getOpponent(src_card);
 
 			var x = skill.x;
 			var c = skill['c'];
@@ -1463,7 +1464,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 
 			var affected = 0;
@@ -1498,8 +1499,8 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
+			var p = getPlayer(src_card);
+			var o = getOpponent(src_card);
 
 			var mark = skill.x;
 
@@ -1526,7 +1527,7 @@ var SIMULATOR = {};
 
 			// Check All
 			if (!all) {
-				targets = choose_random_target(targets);
+				targets = chooseRandomTarget(targets);
 			}
 			var enhanced = unitInfo.getEnhancement(src_card, skill.id, mark);
 			mark += enhanced;
@@ -1554,8 +1555,8 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
+			var p = getPlayer(src_card);
+			var o = getOpponent(src_card);
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -1687,7 +1688,7 @@ var SIMULATOR = {};
 				unearthedCard.health = Math.floor(dying.health * mult);
 			}
 
-			play_card(unearthedCard, dying.owner, true);
+			playCard(unearthedCard, dying.owner, true);
 
 			if (debug) {
 				echo += log.name(unearthedCard) + ' is unearthed</br>';
@@ -1839,7 +1840,7 @@ var SIMULATOR = {};
 				var uid = 150;
 				towerCard.uid = uid;
 				field.uids[uid] = towerCard;
-				play_card(towerCard, 'cpu', -1, true);
+				playCard(towerCard, 'cpu', -1, true);
 			}
 		}
 
@@ -2099,7 +2100,7 @@ var SIMULATOR = {};
 				for (var i = 0; i < deck_p_deck.length; i++) {
 					var card = deck_p_deck[i];
 					if (card.trap) {
-						play_card(card.trap, p, turn);
+						playCard(card.trap, p, turn);
 						card.trap = false;
 					}
 					if (i === 2) break;
@@ -2109,7 +2110,7 @@ var SIMULATOR = {};
 
 			if (card_picked < 0) return false;
 
-			play_card(deck_p_deck[card_picked], p, turn);
+			playCard(deck_p_deck[card_picked], p, turn);
 
 			removeFromDeck(deck_p_deck, card_picked);
 		}
@@ -2371,7 +2372,7 @@ var SIMULATOR = {};
 		processDOTs(field_p_assaults);
 
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
-		remove_dead();
+		removeDead();
 
 		if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 	}

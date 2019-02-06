@@ -1,4 +1,4 @@
-var log = (function() {
+define('log', function() {
     var api = {
         skill: logSkill,
         name: logCardName
@@ -63,4 +63,4 @@ var log = (function() {
     }
 
     return api;
-})();
+});

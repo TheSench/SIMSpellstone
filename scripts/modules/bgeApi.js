@@ -3,6 +3,7 @@ define('bgeApi', function () {
         getBattlegrounds: getBattlegrounds
     };
 
+    var log = require('log');
     var cardApi = require('cardApi');
 
     function MakeSkillModifier(name, effect) {

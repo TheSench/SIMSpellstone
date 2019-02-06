@@ -27,7 +27,6 @@ module.exports = function (grunt) {
                     'scripts/modules/cardApi.js',
 
                     'scripts/modules/unitInfo.js',
-                    'scripts/modules/bgeApi.js',
 
                     'scripts/data/fixGlobals.js',
                     'scripts/shared.js',
@@ -53,6 +52,7 @@ module.exports = function (grunt) {
                     'scripts/modules/matchTimer.js',
                     'scripts/modules/urlHelpers.js',
 
+                    'scripts/modules/log.js',
                     'scripts/modules/base64.js',
 
                     'scripts/modules/cardApi.js',
@@ -63,7 +63,6 @@ module.exports = function (grunt) {
 
                     'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
-                    'scripts/modules/logging.js',
                     'scripts/shared.js',
                     'scripts/sim_controller.js',
                     'scripts/single_threaded.js',
