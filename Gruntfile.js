@@ -27,10 +27,10 @@ module.exports = function (grunt) {
                     'scripts/modules/cardApi.js',
 
                     'scripts/modules/unitInfo.js',
+                    'scripts/modules/cardUI.js',
 
                     'scripts/data/fixGlobals.js',
                     'scripts/shared.js',
-                    'scripts/cards_gui.js',
                     'scripts/updateCards.js',
                     'scripts/deckbuilder.js',
                     'scripts/localstorage-controller.js',
@@ -52,7 +52,6 @@ module.exports = function (grunt) {
                     'scripts/modules/matchTimer.js',
                     'scripts/modules/urlHelpers.js',
                     'scripts/modules/debugLog.js',
-                    'scripts/modules/animations.js',
 
                     'scripts/modules/log.js',
                     'scripts/modules/base64.js',
@@ -62,6 +61,9 @@ module.exports = function (grunt) {
                     'scripts/modules/loadDeck.js',
                     'scripts/modules/unitInfo.js',
                     'scripts/modules/bgeApi.js',
+                    'scripts/modules/cardUI.js',
+
+                    'scripts/modules/animations.js',
 
                     'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
@@ -73,7 +75,6 @@ module.exports = function (grunt) {
                     'scripts/localstorage-controller.js',
                     'scripts/gui_script_2.0.js',
                     'scripts/gui_script.js',
-                    'scripts/cards_gui.js',
                     'scripts/tutorial/simulator-tutorial.js',
                     'scripts/sim-tutorial.js'
                 ],

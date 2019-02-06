@@ -2,6 +2,7 @@
 
 var cardInfo = require('cardInfo');
 var base64 = require('base64');
+var cardUI = require('cardUI');
 
 $(document).ready(function () {
     // Connect to PeerJS, have server assign an ID instead of providing one
@@ -96,7 +97,7 @@ $(document).ready(function () {
                 break;
 
             case 'rejected':
-                CARD_GUI.clearCardSpace();
+                cardUI.clearCardSpace();
                 outp('Opponent is not ready');
                 disconnect();
                 break;
@@ -180,7 +181,7 @@ $(document).ready(function () {
             field.player = field.cpu;
             field.cpu = player;
 
-            CARD_GUI.draw_cards(field);
+            cardUI.draw_cards(field);
 
             SIMULATOR.performTurns(turn, true);
         }
@@ -225,7 +226,7 @@ $(document).ready(function () {
 
         outp(""); // Clear display
         setSimStatus("");
-        CARD_GUI.clearCardSpace();
+        cardUI.clearCardSpace();
 
         ready = true;
 

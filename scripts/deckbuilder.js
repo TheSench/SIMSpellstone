@@ -7,6 +7,7 @@ var cardInfo = require('cardInfo');
 var factions = require('factions');
 var unitInfo = require('unitInfo');
 var urlHelpers = require('urlHelpers');
+var cardUI = require('cardUI');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
@@ -357,9 +358,9 @@ var drawDeck = function () {
 
 function doDrawDeck() {
 	/*if (inventoryMode) {
-		$deck = CARD_GUI.draw_inventory(deck.deck);
+		$deck = cardUI.draw_inventory(deck.deck);
 	} else */ {
-		$deck = CARD_GUI.draw_deck(deck, inventoryMode);
+		$deck = cardUI.draw_deck(deck, inventoryMode);
 	}
 	updateHash();
 }
@@ -496,10 +497,10 @@ function doDrawCardList(cardList, resetPage) {
 			page = pages - 1;
 			start = cards * page;
 		}
-		CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext, start, start + cards);
+		cardUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext, start, start + cards);
 	} else {
 		page = 0;
-		CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
+		cardUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
 	}
 	document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
 	$cardSpace = $("#cardSpace");
@@ -785,8 +786,8 @@ var removeFromDeck = function (htmlCard) {
 		if (unitInfo.areEqual(unit, elariaCaptain)) return;
 		deck.commander = elariaCaptain;
 		var card = cardApi.byId(elariaCaptain);
-		//$htmlCard.replaceWith(CARD_GUI.create_card_html(card));
-		var captain = $(CARD_GUI.create_card_html(card));
+		//$htmlCard.replaceWith(cardUI.create_card_html(card));
+		var captain = $(cardUI.create_card_html(card));
 		replaceCard($htmlCard, captain);
 	} else {
 		unit = deck.deck.splice(index - 1, 1)[0];
@@ -1898,7 +1899,7 @@ var setCard = function (index, unit) {
 	} else {
 		deck.deck[index] = unit;
 	}
-	var htmlCard = CARD_GUI.create_card_html(cardApi.byId(unit), false, false);
+	var htmlCard = cardUI.create_card_html(cardApi.byId(unit), false, false);
 	$deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 };
 

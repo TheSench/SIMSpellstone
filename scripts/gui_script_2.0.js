@@ -8,6 +8,7 @@ $(function () {
     var base64 = require('base64');
     var urlHelpers = require('urlHelpers');
     var loadDeck = require('loadDeck');
+    var cardUI = require('cardUI');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();
@@ -79,7 +80,7 @@ $(function () {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
 
-            $deck.append(CARD_GUI.makeDeckHTML(newDeck, false, battlegrounds));
+            $deck.append(cardUI.makeDeckHTML(newDeck, false, battlegrounds));
         }
     }
     var accordions = $(".accordion").accordion({

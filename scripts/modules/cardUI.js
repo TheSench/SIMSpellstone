@@ -1,8 +1,6 @@
-﻿"use strict";
+﻿define('cardUI', function () {
+	"use strict";
 
-var CARD_GUI = {};
-(function () {
-	
 	var cardApi = require('cardApi');
 	var cardInfo = require('cardInfo');
 	var runeApi = require('runeApi');
@@ -601,6 +599,14 @@ var CARD_GUI = {};
 		return assetsRoot + 'res/' + subpath + '/';
 	}
 
+	function createImg(src, className) {
+		return $("<img>").addClass(className).attr("src", src)[0];
+	}
+
+	function createDiv(className, value) {
+		return $("<div>").addClass(className).html(value)[0];
+	}
+
 	var setNames = {
 		1000: "Basic",
 		1100: "Legacy",
@@ -614,22 +620,24 @@ var CARD_GUI = {};
 		9999: "StoryElements"
 	};
 
-	CARD_GUI.clearCardSpace = clearCardSpace;
-	CARD_GUI.clearDeckSpace = clearDeckSpace;
-	CARD_GUI.draw_deck = draw_deck;
-	CARD_GUI.create_card_html = create_card_html;
-	CARD_GUI.makeDeckHTML = makeDeckHTML;
-	CARD_GUI.makeCardListHTML = makeCardListHTML;
-	CARD_GUI.draw_card_list = draw_card_list;
-	CARD_GUI.draw_cards = draw_cards;
-	CARD_GUI.doDrawField = doDrawField;
-	CARD_GUI.draw_inventory = draw_inventory;
-	CARD_GUI.draw_hand = draw_hand;
-	CARD_GUI.createItemHTML = createItemHTML;
-	CARD_GUI.addMult = addMult;
-	CARD_GUI.addWeight = addWeight;
+	var api = {
+		clearCardSpace: clearCardSpace,
+		clearDeckSpace: clearDeckSpace,
+		draw_deck: draw_deck,
+		create_card_html: create_card_html,
+		makeDeckHTML: makeDeckHTML,
+		makeCardListHTML: makeCardListHTML,
+		draw_card_list: draw_card_list,
+		draw_cards: draw_cards,
+		doDrawField: doDrawField,
+		draw_inventory: draw_inventory,
+		draw_hand: draw_hand,
+		createItemHTML: createItemHTML,
+		addMult: addMult,
+		addWeight: addWeight
+	};
 
-	Object.defineProperties(CARD_GUI, {
+	Object.defineProperties(api, {
 		assetsRoot: {
 			get: function () {
 				return assetsRoot;
@@ -639,16 +647,6 @@ var CARD_GUI = {};
 			}
 		}
 	});
-})();
 
-function createImg(src, className) {
-	return $("<img>").addClass(className).attr("src", src)[0];
-}
-
-function createDiv(className, value) {
-	return $("<div>").addClass(className).html(value)[0];
-}
-
-function createSpan(className, value) {
-	return $("<span>").addClass(className).html(value)[0];
-}
+	return api;
+});

@@ -1,4 +1,7 @@
 define('animations', function () {
+    
+    var cardUI = require('cardUI');
+
     var api = {
         drawField: drawField,
         clearFrames: clearFrames
@@ -9,7 +12,7 @@ define('animations', function () {
     var disabledInterval = false;
 
     function drawField(field, hand, callback, turn, activeUnit) {
-        var newFrame = CARD_GUI.doDrawField(field, hand, callback, turn, activeUnit);
+        var newFrame = cardUI.doDrawField(field, hand, callback, turn, activeUnit);
         frames.push(newFrame);
         if (!frameInterval) {
             drawFrames();
