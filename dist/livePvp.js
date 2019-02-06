@@ -389,6 +389,47 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
+});;define('animations', function () {
+    var api = {
+        drawField: drawField,
+        clearFrames: clearFrames
+    };
+
+    var frames = [];
+    var frameInterval = null;
+    var disabledInterval = false;
+
+    function drawField(field, hand, callback, turn, activeUnit) {
+        var newFrame = CARD_GUI.doDrawField(field, hand, callback, turn, activeUnit);
+        frames.push(newFrame);
+        if (!frameInterval) {
+            drawFrames();
+            frameInterval = setInterval(drawFrames, 500);
+        }
+    }
+
+    function clearFrames() {
+        frames = [];
+        clearInterval(frameInterval);
+        frameInterval = null;
+    }
+
+    function drawFrames() {
+        if (frames.length === 0) {
+            if (disabledInterval) {
+                clearInterval(frameInterval);
+                frameInterval = null;
+            } else {
+                disabledInterval = true;
+            }
+        } else {
+            var frame = frames.splice(0, 1)[0];
+            $("#cardSpace").children().remove().end().append(frame);
+            disabledInterval = false;
+        }
+    }
+
+    return api;
 });;define('log', function() {
     var api = {
         skill: logSkill,
@@ -2619,6 +2660,7 @@ var SIM_CONTROLLER = (function () {
 	var unitInfo = require('unitInfo');
 	var loadDeck = require('loadDeck');
 	var debugLog = require('debugLog');
+	var animations = require('animations');
 
 	"use strict";
 
@@ -2672,7 +2714,7 @@ var SIM_CONTROLLER = (function () {
 			}
 		}
 		if (showAnimations) {
-			drawField(field, null, null, turn);
+			animations.drawField(field, null, null, turn);
 		}
 	}
 
@@ -2810,20 +2852,21 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function doEarlyActivationSkills(sourceCard) {
-
 		var skills = sourceCard.earlyActivationSkills;
 		var len = skills.length;
 		if (!len) return;
 
 		if (sourceCard.silenced) {
-			if (debugLog.enabled) echo += log.name(sourceCard) + " is silenced and cannot use skills</br>";
+			if (debugLog.enabled) {
+				debugLog.writeLine(log.name(sourceCard) + " is silenced and cannot use skills");
+			}
 			return;
 		}
 
 		var dualstrike = sourceCard.dualstrike_triggered;
 		if (debugLog.enabled && dualstrike) {
 			// var main attack loop deal with resetting timer
-			echo += log.name(sourceCard) + ' activates dualstrike<br>';
+			debugLog.writeLine(log.name(sourceCard) + ' activates dualstrike');
 		}
 
 		var activations = (dualstrike ? 2 : 1);
@@ -2839,7 +2882,7 @@ var SIM_CONTROLLER = (function () {
 					}
 
 					if (showAnimations) {
-						drawField(field, null, null, turn, sourceCard);
+						animations.drawField(field, null, null, turn, sourceCard);
 					}
 				}
 			}
@@ -2849,6 +2892,7 @@ var SIM_CONTROLLER = (function () {
 	function alwaysTrue() {
 		return true;
 	}
+	
 	function makeLivenessCheck(maybeUnit) {
 		if (maybeUnit.isAlive) {
 			return maybeUnit.isAlive.bind(maybeUnit);
@@ -2869,7 +2913,7 @@ var SIM_CONTROLLER = (function () {
 			onDeathSkills[skill.id](dying, killer, skill);
 
 			if (showAnimations) {
-				drawField(field, null, null, turn, dying);
+				animations.drawField(field, null, null, turn, dying);
 			}
 		}
 
@@ -4368,7 +4412,7 @@ var SIM_CONTROLLER = (function () {
 			}
 
 			if (showAnimations) {
-				drawField(field, null, null, turn, sourceUnit);
+				animations.drawField(field, null, null, turn, sourceUnit);
 			}
 		}
 	}
@@ -4530,7 +4574,7 @@ var SIM_CONTROLLER = (function () {
 	SIMULATOR.pause = false;
 
 	function onCardChosen(turn, drawCards) {
-		clearFrames();
+		animations.clearFrames();
 		performTurns(turn, drawCards);
 	}
 
@@ -4760,7 +4804,7 @@ var SIM_CONTROLLER = (function () {
 		if (drawCards) {
 			hideTable();
 			outputTurns(echo);
-			drawField(field, null, performTurns, turn);
+			animations.drawField(field, null, performTurns, turn);
 			SIMULATOR.sendBattleUpdate(turn);
 		}
 
@@ -4784,7 +4828,7 @@ var SIM_CONTROLLER = (function () {
 		if (drawCards) {
 			hideTable();
 			outputTurns(echo);
-			drawField(field, drawableHand, onCardChosen, turn);
+			animations.drawField(field, drawableHand, onCardChosen, turn);
 		}
 		if (choice === undefined) {
 			return -1;
@@ -5351,7 +5395,7 @@ var SIM_CONTROLLER = (function () {
 		});
 
 		if (showAnimations) {
-			drawField(field, null, null, turn, current_assault);
+			animations.drawField(field, null, null, turn, current_assault);
 		}
 
 		// WINNING CONDITION
@@ -5561,7 +5605,7 @@ var SIM_CONTROLLER = (function () {
 		}
 
 		if (showAnimations) {
-			drawField(field, null, null, turn, current_assault);
+			animations.drawField(field, null, null, turn, current_assault);
 		}
 		// -- END OF STATUS INFLICTION --
 	}
@@ -6401,39 +6445,6 @@ function toggleTheme() {
         $("#toggleTheme").val("Light Theme");
     }
     dark = !dark;
-}
-
-var frames = [];
-var frameInterval = null;
-function drawField(field, hand, callback, turn, activeUnit) {
-    var newFrame = CARD_GUI.doDrawField(field, hand, callback, turn, activeUnit);
-    frames.push(newFrame);
-    if (!frameInterval) {
-        drawFrames();
-        frameInterval = setInterval(drawFrames, 500);
-    }
-}
-
-function clearFrames() {
-    frames = [];
-    clearInterval(frameInterval);
-    frameInterval = null;
-}
-
-var disabledInterval = false;
-function drawFrames() {
-    if (frames.length === 0) {
-        if (disabledInterval) {
-            clearInterval(frameInterval);
-            frameInterval = null;
-        } else {
-            disabledInterval = true;
-        }
-    } else {
-        var frame = frames.splice(0, 1)[0];
-        $("#cardSpace").children().remove().end().append(frame);
-        disabledInterval = false;
-    }
 };"use strict";
 
 var deckPopupDialog;

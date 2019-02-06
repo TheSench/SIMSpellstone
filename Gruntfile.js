@@ -52,6 +52,7 @@ module.exports = function (grunt) {
                     'scripts/modules/matchTimer.js',
                     'scripts/modules/urlHelpers.js',
                     'scripts/modules/debugLog.js',
+                    'scripts/modules/animations.js',
 
                     'scripts/modules/log.js',
                     'scripts/modules/base64.js',
