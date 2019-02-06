@@ -2,6 +2,7 @@
 
 var SIM_CONTROLLER = (function () {
     var matchTimer = require('matchTimer');
+    var debugLog = require('debugLog');
 
     function getConfiguration() {
         getdeck = $('#deck1').val();
@@ -31,9 +32,9 @@ var SIM_CONTROLLER = (function () {
 
         sims_left = $('#sims').val() || 1;
 
-        debug = $('#debug').is(':checked');
-        play_debug = debug && $('#play_debug').is(':checked');
-        if (play_debug) debug = false;
+        debugLog.enabled = $('#debug').is(':checked');
+        play_debug = debugLog.enabled && $('#play_debug').is(':checked');
+        if (play_debug) debugLog.enabled = false;
         mass_debug = $('#mass_debug').is(':checked');
         win_debug = $('#win_debug').is(':checked');
         loss_debug = $('#loss_debug').is(':checked');

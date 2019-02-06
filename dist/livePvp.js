@@ -373,6 +373,22 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
+});;define('debugLog', function() {
+    var api = {
+        enabled: false,
+        write: write,
+        writeLine: writeLine
+    };
+
+    function write(message) {
+        echo += message;
+    }
+
+    function writeLine(message) {
+        echo += message + '</br>';
+    }
+
+    return api;
 });;define('log', function() {
     var api = {
         skill: logSkill,
@@ -1598,6 +1614,7 @@ Function.prototype.throttle = function throttle(wait) {
 
     var log = require('log');
     var cardApi = require('cardApi');
+    var debugLog = require('debugLog');
 
     function MakeSkillModifier(name, effect) {
         return {
@@ -1678,7 +1695,7 @@ Function.prototype.throttle = function throttle(wait) {
                         var index = (~~(Math.random() * targets.length));
                         targets[index].trap = trap;
     
-                        if (debug) {
+                        if (debugLog.enabled) {
                             echo += this.name + ' inserts ' + log.name(trap) + ' into the opposing deck.<br/>';
                         }
                     }
@@ -2282,6 +2299,7 @@ var elariaCaptain = makeUnitInfo(202, 1);
 
 var SIM_CONTROLLER = (function () {
     var matchTimer = require('matchTimer');
+    var debugLog = require('debugLog');
 
     function getConfiguration() {
         getdeck = $('#deck1').val();
@@ -2311,9 +2329,9 @@ var SIM_CONTROLLER = (function () {
 
         sims_left = $('#sims').val() || 1;
 
-        debug = $('#debug').is(':checked');
-        play_debug = debug && $('#play_debug').is(':checked');
-        if (play_debug) debug = false;
+        debugLog.enabled = $('#debug').is(':checked');
+        play_debug = debugLog.enabled && $('#play_debug').is(':checked');
+        if (play_debug) debugLog.enabled = false;
         mass_debug = $('#mass_debug').is(':checked');
         win_debug = $('#win_debug').is(':checked');
         loss_debug = $('#loss_debug').is(':checked');
@@ -2376,6 +2394,7 @@ var SIM_CONTROLLER = (function () {
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
     var urlHelpers = require('urlHelpers');
+    var debugLog = require('debugLog');
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
@@ -2437,7 +2456,7 @@ var SIM_CONTROLLER = (function () {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((debug || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
         } else if (sims_left > 0) {
@@ -2468,7 +2487,7 @@ var SIM_CONTROLLER = (function () {
                     run_sims_batch = sims_left;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(run_sims, 1);
@@ -2540,7 +2559,7 @@ var SIM_CONTROLLER = (function () {
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
 
-        if (debug || play_debug) {
+        if (debugLog.enabled || play_debug) {
             if (loss_debug) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
@@ -2598,7 +2617,8 @@ var SIM_CONTROLLER = (function () {
     var skillApi = require('skillApi');
 	var base64 = require('base64');
 	var unitInfo = require('unitInfo');
-    var loadDeck = require('loadDeck');
+	var loadDeck = require('loadDeck');
+	var debugLog = require('debugLog');
 
 	"use strict";
 
@@ -2617,7 +2637,9 @@ var SIM_CONTROLLER = (function () {
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((debug || play_debug) && !quiet) echo += log.name(field[p].commander) + ' plays ' + log.name(card) + '<br>';
+		if ((debugLog.enabled || play_debug) && !quiet) {
+			debugLog.writeLine(log.name(field[p].commander) + ' plays ' + log.name(card));
+		}
 
 		if (card.isTrap()) {
 			doEarlyActivationSkills(card);
@@ -2629,16 +2651,16 @@ var SIM_CONTROLLER = (function () {
 				var o = (p === 'player' ? 'cpu' : 'player');
 
 				if (battleground.defender) {
-					if (!surge && p != 'cpu') continue;
-					if (surge && p != 'player') continue;
+					if (!surge && p !== 'cpu') continue;
+					if (surge && p !== 'player') continue;
 					battleground.owner = o;
 				} else if (battleground.attacker) {
-					if (!surge && p != 'player') continue;
-					if (surge && p != 'cpu') continue;
+					if (!surge && p !== 'player') continue;
+					if (surge && p !== 'cpu') continue;
 					battleground.owner = p;
 				} else {
-					if (battleground.enemy_only && p != 'cpu') continue;
-					if (battleground.ally_only && p != 'player') continue;
+					if (battleground.enemy_only && p !== 'cpu') continue;
+					if (battleground.ally_only && p !== 'player') continue;
 					battleground.owner = p;
 				}
 
@@ -2668,13 +2690,17 @@ var SIM_CONTROLLER = (function () {
 			var current_assault = units[key];
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
-				if (debug) echo += log.name(current_assault) + ' <strong>is removed from field</strong><br>';
+				if (debugLog.enabled) {
+					debugLog.writeLine(log.name(current_assault) + ' <strong>is removed from field</strong>');
+				}
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						if (debug) echo += log.name(current_assault) + ' <strong>is removed from field</strong><br>';
+						if (debugLog.enabled){
+							debugLog.writeLine(log.name(current_assault) + ' <strong>is removed from field</strong>');
+						}
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
@@ -2697,8 +2723,12 @@ var SIM_CONTROLLER = (function () {
 		return [targets[targetIndex]];
 	}
 
-	function getPlayer(card) {
+	function getOwner(card) {
 		return card.owner;
+	}
+
+	function getAlliedField(card) {
+		return field[getOwner(card)];
 	}
 
 	function getOpponent(card) {
@@ -2706,37 +2736,40 @@ var SIM_CONTROLLER = (function () {
 		if (card.owner == 'player') return 'cpu';
 	}
 
+	function getOpposingField(card) {
+		return field[getOpponent(card)];
+	}
+
 	// Deal damage to card
 	// and keep track of cards that have died this turn
-	function do_damage(source, target, damage, shatter, logFn) {
-		if (damage >= target.health_left) {
-			target.health_left = 0;
+	function doDamage(sourceUnit, targetUnit, damage, shatter, logFn) {
+		if (damage >= targetUnit.health_left) {
+			targetUnit.health_left = 0;
 		} else {
-			target.health_left -= damage;
+			targetUnit.health_left -= damage;
 		}
 
-		if (debug) logFn(source, target, damage);
+		if (debugLog.enabled) logFn(sourceUnit, targetUnit, damage);
 
 		if (shatter) {
-			iceshatter(target);
+			iceshatter(targetUnit);
 		}
-		if (!target.isAlive() && source) {
-			doOnDeathSkills(target, source);
+		if (!targetUnit.isAlive() && sourceUnit) {
+			doOnDeathSkills(targetUnit, sourceUnit);
 		}
 	}
 
-	function iceshatter(src_card) {
+	function iceshatter(sourceUnit) {
 		// Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
-		var amount = src_card.barrier_ice;
-		//if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
-		var o = getOpponent(src_card);
-		var field_o = field[o];
-		var target = field_o.assaults[src_card.key];
-		if (!target || !target.isAlive()) target = field_o.commander;
+		var amount = sourceUnit.barrier_ice;
+		//if (amount > sourceUnit.barrier_ice) amount = sourceUnit.barrier_ice;
+		var opposingField = getOpposingField(sourceUnit);
+		var targetUnit = opposingField.assaults[sourceUnit.key];
+		if (!targetUnit || !targetUnit.isAlive()) targetUnit = opposingField.commander;
 
-		do_damage(src_card, target, amount, null, function (source, target, amount) {
-			echo += log.name(source) + "'s barrier shatters and hits " + log.name(target) + ' for ' + amount + ' damage';
-			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+		doDamage(sourceUnit, targetUnit, amount, null, function (source, target, amount) {
+			debugLog.write(log.name(source) + "'s barrier shatters and hits " + log.name(target) + ' for ' + amount + ' damage');
+			debugLog.writeLine(!target.isAlive() ? ' and it dies' : '');
 		});
 	}
 
@@ -2744,69 +2777,69 @@ var SIM_CONTROLLER = (function () {
 		return (skillMap[skillId] || notImplemented);
 	}
 
-	function notImplemented(src_card, skill) {
-		if (debug) {
+	function notImplemented(sourceUnit, skill) {
+		if (debugLog.enabled) {
 			var skillName = (SKILL_DATA[skill.id] ? SKILL_DATA[skill.id].name : skill.id);
-			echo += log.name(src_card) + ' attempts to use ' + skillName + ', but it is not implemented.<br>';
+			debugLog.writeLine(log.name(sourceUnit) + ' attempts to use ' + skillName + ', but it is not implemented.');
 		}
 
 		return 0;
 	}
 
 	// Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
-	function doEarlyActivations(field_p) {
-		var field_p_assaults = field_p.assaults;
-		for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
-			var current_unit = field_p_assaults[unit_key];
+	function doEarlyActivations(fieldOfActivePlayer) {
+		var unitsOfActivePlayer = fieldOfActivePlayer.assaults;
+		for (var unit_key = 0, unit_len = unitsOfActivePlayer.length; unit_key < unit_len; unit_key++) {
+			var currentUnit = unitsOfActivePlayer[unit_key];
 
-			if (current_unit.isAlive() && current_unit.isActive() && current_unit.isUnjammed()) {
+			if (currentUnit.isAlive() && currentUnit.isActive() && currentUnit.isUnjammed()) {
 
 				// Check for Dualstrike
-				var dualstrike = current_unit.flurry;
+				var dualstrike = currentUnit.flurry;
 				if (dualstrike && dualstrike.countdown === 0) {
 					// Dual-strike does not activate if unit has 0 attack
-					if (current_unit.hasAttack()) {
+					if (currentUnit.hasAttack()) {
 						dualstrike.countdown = dualstrike.c;
-						current_unit.dualstrike_triggered = true;
+						currentUnit.dualstrike_triggered = true;
 					}
 				}
 
-				doEarlyActivationSkills(current_unit);
+				doEarlyActivationSkills(currentUnit);
 			}
 		}
 	}
 
-	function doEarlyActivationSkills(source_card) {
+	function doEarlyActivationSkills(sourceCard) {
 
-		var skills = source_card.earlyActivationSkills;
+		var skills = sourceCard.earlyActivationSkills;
 		var len = skills.length;
-		if (len == 0) return;
+		if (!len) return;
 
-		if (source_card.silenced) {
-			if (debug) echo += log.name(source_card) + " is silenced and cannot use skills</br>";
+		if (sourceCard.silenced) {
+			if (debugLog.enabled) echo += log.name(sourceCard) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
-		var dualstrike = source_card.dualstrike_triggered;
-		if (debug && dualstrike) {
+		var dualstrike = sourceCard.dualstrike_triggered;
+		if (debugLog.enabled && dualstrike) {
 			// var main attack loop deal with resetting timer
-			echo += log.name(source_card) + ' activates dualstrike<br>';
+			echo += log.name(sourceCard) + ' activates dualstrike<br>';
 		}
 
 		var activations = (dualstrike ? 2 : 1);
-		var isAlive = makeLivenessCheck(source_card);
+		var isAlive = makeLivenessCheck(sourceCard);
 		for (var a = 0; a < activations; a++) {
 			for (var i = 0; i < len && isAlive(); i++) {
 				var skill = skills[i];
 				if (!skill.countdown) {
 					var skillFn = getActivatedSkill(earlyActivationSkills, skill.id);
-					var affected = skillFn(source_card, skill);
+					var affected = skillFn(sourceCard, skill);
 					if (skill.c && affected > 0) {
 						skill.countdown = skill.c;
 					}
 
 					if (showAnimations) {
-						drawField(field, null, null, turn, source_card);
+						drawField(field, null, null, turn, sourceCard);
 					}
 				}
 			}
@@ -2866,53 +2899,53 @@ var SIM_CONTROLLER = (function () {
 
 	var activationSkills = {
 
-		burnself: function burnself(src_card, skill) {
+		burnself: function burnself(sourceUnit, skill) {
 			var scorch = skill.x;
 
-			if (!src_card.scorched) {
-				src_card.scorched = {
+			if (!sourceUnit.scorched) {
+				sourceUnit.scorched = {
 					amount: scorch,
 					timer: 2
 				};
 			} else {
-				src_card.scorched.amount += scorch;
-				src_card.scorched.timer = 2;
+				sourceUnit.scorched.amount += scorch;
+				sourceUnit.scorched.timer = 2;
 			}
-			if (debug) echo += log.name(src_card) + ' inflicts scorch(' + scorch + ') on itself<br>';
+			if (debugLog.enabled) echo += log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on itself<br>';
 
 			return 1;
 		},
 		// Scorch
 		// - cone-shaped scorch
-		scorchbreath: function scorchbreath(src_card, skill) {
-			return activationSkills.burn(src_card, skill);
+		scorchbreath: function scorchbreath(sourceUnit, skill) {
+			return activationSkills.burn(sourceUnit, skill);
 		},
 		// Scorch
 		// - Target must be an assault
-		burn: function burn(src_card, skill) {
+		burn: function burn(sourceUnit, skill) {
 
-			var o = getOpponent(src_card);
+			var o = getOpponent(sourceUnit);
 
 			var field_o_assaults = field[o].assaults;
 
 			var targets;
 			switch (skill.id) {
 				case 'scorchbreath':
-					var startKey = Math.max(0, src_card.key - 1);
-					var endKey = Math.min(field_o_assaults.length, src_card.key + 2);
+					var startKey = Math.max(0, sourceUnit.key - 1);
+					var endKey = Math.min(field_o_assaults.length, sourceUnit.key + 2);
 					targets = field_o_assaults.slice(startKey, endKey);
 					break;
 				case 'burnself':
-					targets = [src_card];
+					targets = [sourceUnit];
 					break;
 				default:
-					targets = field_o_assaults.slice(src_card.key, src_card.key + 1);
+					targets = field_o_assaults.slice(sourceUnit.key, sourceUnit.key + 1);
 					break;
 			}
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = unitInfo.getEnhancement(src_card, 'burn', scorch);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, 'burn', scorch);
 			scorch += enhanced;
 
 			var affected = 0;
@@ -2928,7 +2961,7 @@ var SIM_CONTROLLER = (function () {
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				if (debug) echo += log.name(src_card) + ' inflicts scorch(' + scorch + ') on ' + log.name(target) + '<br>';
+				if (debugLog.enabled) echo += log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on ' + log.name(target) + '<br>';
 
 				affected++;
 			}
@@ -2940,22 +2973,22 @@ var SIM_CONTROLLER = (function () {
 		// - Can target specific faction
 		// - Targets allied assaults
 		// - Can be enhanced
-		protect_ice: function (src_card, skill) {
-			return activationSkills.protect(src_card, skill, "barrier_ice");
+		protect_ice: function (sourceUnit, skill) {
+			return activationSkills.protect(sourceUnit, skill, "barrier_ice");
 		},
-		protect_seafolk: function (src_card, skill) {
-			return activationSkills.protect(src_card, skill, null, null, true);
+		protect_seafolk: function (sourceUnit, skill) {
+			return activationSkills.protect(sourceUnit, skill, null, null, true);
 		},
-		evadebarrier: function (src_card, skill) {
-			return activationSkills.protect(src_card, skill, "invisible", function (target, amount) {
+		evadebarrier: function (sourceUnit, skill) {
+			return activationSkills.protect(sourceUnit, skill, "invisible", function (target, amount) {
 				return ' and imbues it with invisible ' + amount;
 			});
 		},
-		protect: function (src_card, skill, additional, additionalDebug, onlyOnDelay) {
+		protect: function (sourceUnit, skill, additional, additionalDebug, onlyOnDelay) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
+			var p = getOwner(sourceUnit);
 
 			var protect = skill.x;
 			var all = skill.all;
@@ -2978,7 +3011,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, protect);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, protect);
 			protect += enhanced;
 
 			var affected = 0;
@@ -2989,7 +3022,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debug) echo += log.name(src_card) + ' protects ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' protects ' + log.name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -3008,9 +3041,9 @@ var SIM_CONTROLLER = (function () {
 				if (additional) {
 					target[additional] = (target[additional] || 0) + protect_amt;
 				}
-				if (debug) {
+				if (debugLog.enabled) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(src_card) + ' barriers ' + log.name(target) + ' by ' + protect_amt;
+					echo += log.name(sourceUnit) + ' barriers ' + log.name(target) + ' by ' + protect_amt;
 					if (typeof additionalDebug === "function") {
 						echo += additionalDebug(target, protect_amt);
 					}
@@ -3025,9 +3058,9 @@ var SIM_CONTROLLER = (function () {
 		// - Can target specific faction
 		// - Targets allied damaged assaults
 		// - Can be enhanced
-		heal: function (src_card, skill) {
+		heal: function (sourceUnit, skill) {
 
-			var p = getPlayer(src_card);
+			var p = getOwner(sourceUnit);
 
 			var faction = skill.y;
 			var heal = skill.x;
@@ -3051,7 +3084,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, heal);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, heal);
 			heal += enhanced;
 
 			var affected = 0;
@@ -3062,7 +3095,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debug) echo += log.name(src_card) + ' heals ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' heals ' + log.name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -3076,9 +3109,9 @@ var SIM_CONTROLLER = (function () {
 
 				if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
 				target['health_left'] += heal_amt;
-				if (debug) {
+				if (debugLog.enabled) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(src_card) + ' heals ' + log.name(target) + ' by ' + heal_amt + '<br>';
+					echo += log.name(sourceUnit) + ' heals ' + log.name(target) + ' by ' + heal_amt + '<br>';
 				}
 			}
 
@@ -3091,12 +3124,12 @@ var SIM_CONTROLLER = (function () {
 		// - Can be evaded
 		// - Must calculate enfeeble/protect
 		// - Can be enhanced
-		poisonstrike: function (src_card, skill, poison) {
-			return activationSkills.strike(src_card, skill, true);
+		poisonstrike: function (sourceUnit, skill, poison) {
+			return activationSkills.strike(sourceUnit, skill, true);
 		},
-		strike: function (src_card, skill, poison) {
+		strike: function (sourceUnit, skill, poison) {
 
-			var o = getOpponent(src_card);
+			var o = getOpponent(sourceUnit);
 
 			var strike = skill.x;
 			var faction = skill.y;
@@ -3120,7 +3153,7 @@ var SIM_CONTROLLER = (function () {
 				targets = chooseRandomTarget(targets);
 			}
 
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, strike);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, strike);
 			strike += enhanced;
 
 			var affected = 0;
@@ -3131,7 +3164,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += log.name(src_card) + ' bolts ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' bolts ' + log.name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
@@ -3152,7 +3185,7 @@ var SIM_CONTROLLER = (function () {
 					}
 				}
 
-				do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
+				doDamage(sourceUnit, target, strike_damage, shatter, function (source, target, amount) {
 					echo += '<u>(Strike: +' + skill.x;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					echo += damageInfo.echo;
@@ -3167,7 +3200,7 @@ var SIM_CONTROLLER = (function () {
 				});
 
 				if (target.backlash) {
-					backlash(src_card, target);
+					backlash(sourceUnit, target);
 				}
 			}
 
@@ -3179,9 +3212,9 @@ var SIM_CONTROLLER = (function () {
 		// - Targets poisoned/scorched enemy assaults
 		// - Can be evaded
 		// - Can be enhanced
-		intensify: function (src_card, skill, poison) {
+		intensify: function (sourceUnit, skill, poison) {
 
-			var o = getOpponent(src_card);
+			var o = getOpponent(sourceUnit);
 
 			var intensify = skill.x;
 			var faction = skill.y;
@@ -3206,7 +3239,7 @@ var SIM_CONTROLLER = (function () {
 				targets = chooseRandomTarget(targets);
 			}
 
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, intensify);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, intensify);
 			intensify += enhanced;
 
 			var affected = 0;
@@ -3220,7 +3253,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += log.name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
@@ -3233,10 +3266,10 @@ var SIM_CONTROLLER = (function () {
 					target.poisoned += intensify;
 				}
 
-				if (debug) echo += log.name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' by ' + intensify + '<br>';
+				if (debugLog.enabled) echo += log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' by ' + intensify + '<br>';
 
 				if (target.backlash) {
-					backlash(src_card, target);
+					backlash(sourceUnit, target);
 				}
 			}
 
@@ -3248,9 +3281,9 @@ var SIM_CONTROLLER = (function () {
 		// - Targets enemy assaults
 		// - Can be evaded
 		// - Can be enhanced
-		ignite: function (src_card, skill, poison) {
+		ignite: function (sourceUnit, skill, poison) {
 
-			var o = getOpponent(src_card);
+			var o = getOpponent(sourceUnit);
 
 			var ignite = skill.x;
 			var faction = skill.y;
@@ -3274,7 +3307,7 @@ var SIM_CONTROLLER = (function () {
 				targets = chooseRandomTarget(targets);
 			}
 
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, ignite);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, ignite);
 			ignite += enhanced;
 
 			var affected = 0;
@@ -3285,17 +3318,17 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += log.name(src_card) + ' ignites ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' ignites ' + log.name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
 				affected++;
 
 				target.scorch(ignite);
-				if (debug) echo += log.name(src_card) + ' ignites(' + ignite + ') ' + log.name(target) + '<br>';
+				if (debugLog.enabled) echo += log.name(sourceUnit) + ' ignites(' + ignite + ') ' + log.name(target) + '<br>';
 
 				if (target.backlash) {
-					backlash(src_card, target);
+					backlash(sourceUnit, target);
 				}
 			}
 
@@ -3308,18 +3341,18 @@ var SIM_CONTROLLER = (function () {
 		// - Targets active_next_turn, unjammed enemy assaults
 		// - Can be evaded
 		// - If evaded, cooldown timer is not reset (tries again next turn)
-		jamself: function jamself(src_card, skill) {
+		jamself: function jamself(sourceUnit, skill) {
 
-			src_card.jammed = true;
-			src_card.jammedSelf = true;
-			if (debug) echo += log.name(src_card) + ' freezes itself<br>';
+			sourceUnit.jammed = true;
+			sourceUnit.jammedSelf = true;
+			if (debugLog.enabled) echo += log.name(sourceUnit) + ' freezes itself<br>';
 
 			return 1;
 		},
-		jam: function jam(src_card, skill) {
+		jam: function jam(sourceUnit, skill) {
 
-			var p = getPlayer(src_card);
-			var o = getOpponent(src_card);
+			var p = getOwner(sourceUnit);
+			var o = getOpponent(sourceUnit);
 
 			var all = skill.all;
 
@@ -3353,17 +3386,17 @@ var SIM_CONTROLLER = (function () {
 					target.invisible--;
 					// Missed - retry next turn
 					skill.countdown = 0;
-					if (debug) echo += log.name(src_card) + ' freezes ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' freezes ' + log.name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
 				affected++;
 
 				target.jammed = true;
-				if (debug) echo += log.name(src_card) + ' freezes ' + log.name(target) + '<br>';
+				if (debugLog.enabled) echo += log.name(sourceUnit) + ' freezes ' + log.name(target) + '<br>';
 
 				if (target.backlash) {
-					backlash(src_card, target);
+					backlash(sourceUnit, target);
 				}
 			}
 
@@ -3375,13 +3408,13 @@ var SIM_CONTROLLER = (function () {
 		// - Can be evaded
 		// - Must calculate enfeeble/protect
 		// - Can be enhanced
-		frost: function (src_card, skill) {
+		frost: function (sourceUnit, skill) {
 
-			var p = getPlayer(src_card);
-			var o = getOpponent(src_card);
+			var p = getOwner(sourceUnit);
+			var o = getOpponent(sourceUnit);
 
 			var frost = skill.x;
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, frost);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, frost);
 			frost += enhanced;
 
 			var all = skill.all;
@@ -3390,7 +3423,7 @@ var SIM_CONTROLLER = (function () {
 
 			var targets = [];
 
-			var i = src_card['key'] - 1;
+			var i = sourceUnit['key'] - 1;
 			var end = i + 2;
 			for (; i <= end; i++) {
 				var target = field_x_assaults[i];
@@ -3410,7 +3443,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += log.name(src_card) + ' breathes frost at ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' breathes frost at ' + log.name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
@@ -3424,7 +3457,7 @@ var SIM_CONTROLLER = (function () {
 				frost_damage = damageInfo.damage;
 				var shatter = damageInfo.shatter;
 
-				do_damage(src_card, target, frost_damage, shatter, function (source, target, amount) {
+				doDamage(sourceUnit, target, frost_damage, shatter, function (source, target, amount) {
 					echo += '<u>(Frostbreath: +' + skill.x;
 					if (enhanced) echo += ' Enhance: +' + enhanced;
 					echo += damageInfo.echo;
@@ -3434,32 +3467,32 @@ var SIM_CONTROLLER = (function () {
 				});
 
 				if (target.backlash) {
-					backlash(src_card, target);
+					backlash(sourceUnit, target);
 				}
 			}
 
 			return affected;
 		},
 
-		heartseeker: function (src_card, skill) {
+		heartseeker: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var o = getOpponent(src_card);
+			var o = getOpponent(sourceUnit);
 
 			var heartseeker = skill.x;
 
-			var target = field[o].assaults[src_card.key];
+			var target = field[o].assaults[sourceUnit.key];
 
 			// No Targets
 			if (!target) return 0;
 
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, heartseeker);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, heartseeker);
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
 			target.enfeebled += heartseeker;
-			if (debug) echo += log.name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + log.name(target) + '<br>';
+			if (debugLog.enabled) echo += log.name(sourceUnit) + ' inflicts heartseeker ' + heartseeker + ' on ' + log.name(target) + '<br>';
 
 			return 1;
 		},
@@ -3468,12 +3501,12 @@ var SIM_CONTROLLER = (function () {
 		// - Targets enemy assaults
 		// - Can be evaded
 		// - Can be enhanced
-		enfeeble: function (src_card, skill) {
+		enfeeble: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
-			var o = getOpponent(src_card);
+			var p = getOwner(sourceUnit);
+			var o = getOpponent(sourceUnit);
 
 			var enfeeble = skill.x;
 
@@ -3496,7 +3529,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enfeeble);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, enfeeble);
 			enfeeble += enhanced;
 
 			var affected = 0;
@@ -3507,17 +3540,17 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += log.name(src_card) + ' hexes ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' hexes ' + log.name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
 				affected++;
 
 				target['enfeebled'] += enfeeble;
-				if (debug) echo += log.name(src_card) + ' hexes ' + log.name(target) + ' by ' + enfeeble + '<br>';
+				if (debugLog.enabled) echo += log.name(sourceUnit) + ' hexes ' + log.name(target) + ' by ' + enfeeble + '<br>';
 
 				if (target.backlash) {
-					backlash(src_card, target);
+					backlash(sourceUnit, target);
 				}
 			}
 
@@ -3529,20 +3562,20 @@ var SIM_CONTROLLER = (function () {
 		// - Targets active_next_turn, unjammed, enemy assaults with attack > 0
 		// - Can be evaded
 		// - Can be enhanced
-		weakenself: function (src_card, skill) {
-			return activationSkills.weaken(src_card, skill);
+		weakenself: function (sourceUnit, skill) {
+			return activationSkills.weaken(sourceUnit, skill);
 		},
-		weaken: function (src_card, skill) {
+		weaken: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
 			var o;
 			switch (skill.id) {
 				case 'weakenself':
-					o = getPlayer(src_card);
+					o = getOwner(sourceUnit);
 					break;
 				default:
-					o = getOpponent(src_card);
+					o = getOpponent(sourceUnit);
 					break;
 			}
 
@@ -3575,7 +3608,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, weaken);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, weaken);
 			weaken += enhanced;
 
 			var affected = 0;
@@ -3586,20 +3619,20 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += log.name(src_card) + ' weakens ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' weakens ' + log.name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
 				affected++;
 
 				target.attack_weaken += weaken;
-				if (debug) {
+				if (debugLog.enabled) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(src_card) + ' weakens ' + log.name(target) + ' by ' + weaken + '<br>';
+					echo += log.name(sourceUnit) + ' weakens ' + log.name(target) + ' by ' + weaken + '<br>';
 				}
 
 				if (target.backlash) {
-					backlash(src_card, target);
+					backlash(sourceUnit, target);
 				}
 			}
 
@@ -3612,14 +3645,14 @@ var SIM_CONTROLLER = (function () {
 		// - Targets self
 		// - Can be enhanced
 		// - Cannot be nullified
-		enlarge: function (src_card, skill) {
+		enlarge: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
+			var p = getOwner(sourceUnit);
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 			var all = skill.all;
 
@@ -3654,9 +3687,9 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				target.attack_rally += rally_amt;
-				if (debug) {
+				if (debugLog.enabled) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(src_card) + ' enlarges ' + log.name(target) + ' by ' + rally_amt + '<br>';
+					echo += log.name(sourceUnit) + ' enlarges ' + log.name(target) + ' by ' + rally_amt + '<br>';
 				}
 
 				affected++;
@@ -3669,11 +3702,11 @@ var SIM_CONTROLLER = (function () {
 		// - Can target specific faction
 		// - Targets allied unjammed, active assaults
 		// - Can be enhanced
-		rally: function (src_card, skill) {
+		rally: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
+			var p = getOwner(sourceUnit);
 
 			var rally = skill.x;
 			var all = skill.all;
@@ -3697,7 +3730,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var affected = 0;
@@ -3709,7 +3742,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debug) echo += log.name(src_card) + ' empowers ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' empowers ' + log.name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -3722,9 +3755,9 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				target.attack_rally += rally_amt;
-				if (debug) {
+				if (debugLog.enabled) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(src_card) + ' empowers ' + log.name(target) + ' by ' + rally_amt + '<br>';
+					echo += log.name(sourceUnit) + ' empowers ' + log.name(target) + ' by ' + rally_amt + '<br>';
 				}
 			}
 
@@ -3735,18 +3768,18 @@ var SIM_CONTROLLER = (function () {
 		// - Targets specific faction
 		// - Targets allied adjacent unjammed, active assaults
 		// - Can be enhanced?
-		legion: function (src_card, skill) {
+		legion: function (sourceUnit, skill) {
 
-			var p = getPlayer(src_card);
+			var p = getOwner(sourceUnit);
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
 
-			var target_key = src_card['key'] - 1;
+			var target_key = sourceUnit['key'] - 1;
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
@@ -3759,13 +3792,13 @@ var SIM_CONTROLLER = (function () {
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
-						if (debug) echo += log.name(src_card) + ' activates legion and empowers ' + log.name(target) + ' but it is nullified!<br>';
+						if (debugLog.enabled) echo += log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' but it is nullified!<br>';
 					} else {
 						affected++;
 						target.attack_rally += rally;
-						if (debug) {
+						if (debugLog.enabled) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-							echo += log.name(src_card) + ' activates legion and empowers ' + log.name(target) + ' by ' + rally + '<br>';
+							echo += log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' by ' + rally + '<br>';
 						}
 					}
 				}
@@ -3778,20 +3811,20 @@ var SIM_CONTROLLER = (function () {
 		// Fervor
 		// - Targets self for each adjacent unjammed, active assault in specific faction
 		// - Can be enhanced?
-		fervor: function (src_card, skill) {
+		fervor: function (sourceUnit, skill) {
 
-			var p = getPlayer(src_card);
+			var p = getOwner(sourceUnit);
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, rally);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
 
 			var fervorAmount = 0;
 
-			var target_key = src_card['key'] - 1;
+			var target_key = sourceUnit['key'] - 1;
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
@@ -3804,10 +3837,10 @@ var SIM_CONTROLLER = (function () {
 			}
 
 			if (fervorAmount) {
-				src_card['attack_rally'] += fervorAmount;
-				if (debug) {
+				sourceUnit['attack_rally'] += fervorAmount;
+				if (debugLog.enabled) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+					echo += log.name(sourceUnit) + ' activates fervor for ' + fervorAmount + '<br>';
 				}
 				return 1;
 			} else {
@@ -3821,9 +3854,9 @@ var SIM_CONTROLLER = (function () {
 		// - Can be evaded
 		// - Must calculate enfeeble/protect
 		// - Can be enhanced
-		barrage: function (src_card, skill) {
+		barrage: function (sourceUnit, skill) {
 
-			var o = getOpponent(src_card);
+			var o = getOpponent(sourceUnit);
 
 			var barrages = skill.x;
 			var faction = skill.y;
@@ -3831,7 +3864,7 @@ var SIM_CONTROLLER = (function () {
 
 			var field_x_assaults = field[o].assaults;
 
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, barrages);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, barrages);
 			barrages += enhanced;
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
@@ -3859,7 +3892,7 @@ var SIM_CONTROLLER = (function () {
 					// Check Evade
 					if (target.invisible) {
 						target.invisible--;
-						if (debug) echo += log.name(src_card) + ' throws a bomb at ' + log.name(target) + ' but it is invisible!<br>';
+						if (debugLog.enabled) echo += log.name(sourceUnit) + ' throws a bomb at ' + log.name(target) + ' but it is invisible!<br>';
 						continue;
 					}
 
@@ -3872,7 +3905,7 @@ var SIM_CONTROLLER = (function () {
 					strike_damage = damageInfo.damage;
 					var shatter = damageInfo.shatter;
 
-					do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
+					doDamage(sourceUnit, target, strike_damage, shatter, function (source, target, amount) {
 						echo += '<u>(Barrage: +1';
 						echo += damageInfo.echo;
 						echo += ') = ' + amount + ' damage</u><br>';
@@ -3891,12 +3924,12 @@ var SIM_CONTROLLER = (function () {
 		// - Target must be active this turn (for activation skills only)
 		// - Target must not be frozen (for activation skills only)
 		// - Target must have specific "enhanceable skill"
-		enhance: function (src_card, skill) {
+		enhance: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
-			var o = getOpponent(src_card);
+			var p = getOwner(sourceUnit);
+			var o = getOpponent(sourceUnit);
 
 			var x = skill.x;
 			var faction = skill.y;
@@ -3934,7 +3967,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debug) echo += log.name(src_card) + ' enhances ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -3943,11 +3976,11 @@ var SIM_CONTROLLER = (function () {
 				var enhancements = target.enhanced;
 				if (x > 0) {
 					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debug) echo += log.name(src_card) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + x + '<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + x + '<br>';
 				} else if (mult > 0) {
 					// temporarily use negatives for multiplier
 					enhancements[s] = -mult;
-					if (debug) echo += log.name(src_card) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + (mult * 100) + '%<br>';
 				}
 			}
 
@@ -3958,9 +3991,9 @@ var SIM_CONTROLLER = (function () {
 		// - Can target specific faction
 		// - Targets allied assaults
 		// - Can be enhanced
-		enrage: function (src_card, skill) {
+		enrage: function (sourceUnit, skill) {
 
-			var p = getPlayer(src_card);
+			var p = getOwner(sourceUnit);
 
 			var faction = skill.y;
 			var enrage = skill.x;
@@ -3983,7 +4016,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, enrage);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, enrage);
 			enrage += enhanced;
 
 			var affected = 0;
@@ -3995,7 +4028,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debug) echo += log.name(src_card) + ' enrages ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enrages ' + log.name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -4006,9 +4039,9 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				target['enraged'] += amount;
-				if (debug) {
+				if (debugLog.enabled) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(src_card) + ' enrages ' + log.name(target) + ' by ' + amount + '<br>';
+					echo += log.name(sourceUnit) + ' enrages ' + log.name(target) + ' by ' + amount + '<br>';
 				}
 			}
 
@@ -4021,12 +4054,12 @@ var SIM_CONTROLLER = (function () {
 		// - Target must be active this turn (for activation skills only)
 		// - Target must not be frozen (for activation skills only)
 		// - Target must have specific "enhanceable skill" ("all" versions aren't counted)
-		imbue: function (src_card, skill) {
+		imbue: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
-			var o = getOpponent(src_card);
+			var p = getOwner(sourceUnit);
+			var o = getOpponent(sourceUnit);
 
 			var x = skill.x;
 			var c = skill['c'];
@@ -4067,7 +4100,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debug) echo += log.name(src_card) + ' enhances ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -4077,22 +4110,22 @@ var SIM_CONTROLLER = (function () {
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debug) echo += log.name(src_card) + ' imbues ' + log.name(target, false) + ' existing ' + log.skill(skill) + ' by ' + x + '<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' existing ' + log.skill(skill) + ' by ' + x + '<br>';
 				} else {
 					target.imbue(skill);
-					if (debug) echo += log.name(src_card) + ' imbues ' + log.name(target, false) + ' with ' + log.skill(skill) + '<br>';
+					if (debugLog.enabled) echo += log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' with ' + log.skill(skill) + '<br>';
 				}
 			}
 
 			return affected;
 		},
 
-		mark: function (src_card, skill) {
+		mark: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
-			var o = getOpponent(src_card);
+			var p = getOwner(sourceUnit);
+			var o = getOpponent(sourceUnit);
 
 			var mark = skill.x;
 
@@ -4100,7 +4133,7 @@ var SIM_CONTROLLER = (function () {
 
 			var field_x_assaults = field[o]['assaults'];
 
-			var markTarget = src_card.mark_target;
+			var markTarget = sourceUnit.mark_target;
 			var targets = [];
 			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
 				var target = field_x_assaults[key];
@@ -4121,7 +4154,7 @@ var SIM_CONTROLLER = (function () {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(src_card, skill.id, mark);
+			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, mark);
 			mark += enhanced;
 
 			var affected = 0;
@@ -4132,9 +4165,9 @@ var SIM_CONTROLLER = (function () {
 				affected++;
 
 				target.enfeebled += mark;
-				src_card.mark_target = target.uid;
+				sourceUnit.mark_target = target.uid;
 
-				if (debug) echo += log.name(src_card) + ' marks ' + log.name(target) + ' by ' + mark + '<br>';
+				if (debugLog.enabled) echo += log.name(sourceUnit) + ' marks ' + log.name(target) + ' by ' + mark + '<br>';
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -4143,16 +4176,16 @@ var SIM_CONTROLLER = (function () {
 			return affected;
 		},
 
-		snaretongue: function (src_card, skill) {
+		snaretongue: function (sourceUnit, skill) {
 
 			var faction = skill['y'];
 
-			var p = getPlayer(src_card);
-			var o = getOpponent(src_card);
+			var p = getOwner(sourceUnit);
+			var o = getOpponent(sourceUnit);
 
 			var field_x_assaults = field[o]['assaults'];
 
-			var markTarget = src_card.mark_target;
+			var markTarget = sourceUnit.mark_target;
 			var targets = [];
 			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
 				var target = field_x_assaults[key];
@@ -4170,11 +4203,11 @@ var SIM_CONTROLLER = (function () {
 				return ((field_x_assaults[target].health_left < field_x_assaults[weakest].health_left) ? target : weakest);
 			}, targets[0])];
 
-			var toKey = src_card.key;
+			var toKey = sourceUnit.key;
 			var fromKey = target.key;
 			if (toKey === toKey) {
 				// No change in position
-				if (debug) echo += log.name(src_card) + ' activates snaretongue and keeps ' + log.name(target) + ' in front of it<br>';
+				if (debugLog.enabled) echo += log.name(sourceUnit) + ' activates snaretongue and keeps ' + log.name(target) + ' in front of it<br>';
 				return false;
 			}
 
@@ -4207,7 +4240,7 @@ var SIM_CONTROLLER = (function () {
 				field_x_assaults[i].key = i;
 			}
 
-			if (debug) echo += log.name(src_card) + ' activates snaretongue and pulls ' + log.name(target) + ' in front of it<br>';
+			if (debugLog.enabled) echo += log.name(sourceUnit) + ' activates snaretongue and pulls ' + log.name(target) + ' in front of it<br>';
 
 			// Set countdown so skill can't trigger twice on dual-strike turn
 			skill.countdown = 1;
@@ -4218,7 +4251,7 @@ var SIM_CONTROLLER = (function () {
 
 	var onPlaySkills = {
 
-		ambush: function (src_card, target, skill) {
+		ambush: function (sourceUnit, target, skill) {
 
 			var x = skill.x;
 			var base = skill.base;
@@ -4230,7 +4263,7 @@ var SIM_CONTROLLER = (function () {
 				damage = Math.ceil(target[base] * mult);
 			}
 
-			do_damage(src_card, target, damage, null, function (source, target, amount) {
+			doDamage(sourceUnit, target, damage, null, function (source, target, amount) {
 				echo += log.name(source) + ' ambushes ' + log.name(target) + ' for ' + amount + ' damage';
 				echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 			});
@@ -4238,7 +4271,7 @@ var SIM_CONTROLLER = (function () {
 			return 1;
 		},
 
-		slow: function (src_card, target, skill) {
+		slow: function (sourceUnit, target, skill) {
 
 			var x = skill.x;
 			var base = skill.base;
@@ -4252,8 +4285,8 @@ var SIM_CONTROLLER = (function () {
 
 			target.timer += slow;
 
-			if (debug) {
-				echo += log.name(src_card) + ' slows ' + log.name(target) + ' by ' + slow + '<br>';
+			if (debugLog.enabled) {
+				echo += log.name(sourceUnit) + ' slows ' + log.name(target) + ' by ' + slow + '<br>';
 			}
 
 			return 1;
@@ -4282,7 +4315,7 @@ var SIM_CONTROLLER = (function () {
 
 			playCard(unearthedCard, dying.owner, true);
 
-			if (debug) {
+			if (debugLog.enabled) {
 				echo += log.name(unearthedCard) + ' is unearthed</br>';
 			}
 
@@ -4299,7 +4332,7 @@ var SIM_CONTROLLER = (function () {
 			dying.health_left = skill.x;
 			dying.reanimated = true;
 
-			if (debug) {
+			if (debugLog.enabled) {
 				echo += ' and is reanimated</br>';
 			}
 
@@ -4309,16 +4342,16 @@ var SIM_CONTROLLER = (function () {
 
 	// Activation Skills
 	// - Must traverse through skills from top to bottom
-	function activation_skills(src_card) {
+	function activation_skills(sourceUnit) {
 
-		if (src_card.silenced) {
-			if (debug) echo += log.name(src_card) + " is silenced and cannot use skills</br>";
+		if (sourceUnit.silenced) {
+			if (debugLog.enabled) echo += log.name(sourceUnit) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
-		var skills = src_card.skill;
+		var skills = sourceUnit.skill;
 
-		var isAlive = makeLivenessCheck(src_card);
+		var isAlive = makeLivenessCheck(sourceUnit);
 		for (var i = 0, len = skills.length; i < len && isAlive(); i++) {
 			var skill = skills[i];
 
@@ -4328,14 +4361,14 @@ var SIM_CONTROLLER = (function () {
 
 			// Delegate to skill function
 			var skillFn = getActivatedSkill(activationSkills, skill.id);
-			var affected = skillFn(src_card, skill);
+			var affected = skillFn(sourceUnit, skill);
 
 			if (skill.c && affected > 0) {
 				skill.countdown = skill.c;
 			}
 
 			if (showAnimations) {
-				drawField(field, null, null, turn, src_card);
+				drawField(field, null, null, turn, sourceUnit);
 			}
 		}
 	}
@@ -4561,7 +4594,7 @@ var SIM_CONTROLLER = (function () {
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+				if (debugLog.enabled) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 				return true;
 			}
 		}
@@ -4609,7 +4642,7 @@ var SIM_CONTROLLER = (function () {
 			var o = first_player;
 		}
 
-		if (debug) {
+		if (debugLog.enabled) {
 			var commander_p = log.name(field[p]['commander']);
 			var deck_p = deck[p].deck;
 			echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u><br>';
@@ -4637,7 +4670,7 @@ var SIM_CONTROLLER = (function () {
 			if (current_assault.timer > 0) {
 				if (turn !== 3 || !tournament) {
 					current_assault.timer--;
-					if (debug) echo += log.name(current_assault) + ' reduces its timer<br>';
+					if (debugLog.enabled) echo += log.name(current_assault) + ' reduces its timer<br>';
 				}
 			}
 
@@ -4646,8 +4679,8 @@ var SIM_CONTROLLER = (function () {
 				var enemy = field_o_assaults[i];
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
 					current_assault.attack_valor += current_assault.valor;
-					if (debug) echo += log.name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
-				} else if (debug) {
+					if (debugLog.enabled) echo += log.name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
+				} else if (debugLog.enabled) {
 					echo += log.name(current_assault) + ' activates valor but ';
 					if (!enemy) {
 						echo += 'there is no opposing enemy.<br/>';
@@ -4913,14 +4946,14 @@ var SIM_CONTROLLER = (function () {
 
 			// Check jammed ("frozen")
 			if (current_assault['jammed']) {
-				if (debug) echo += log.name(current_assault) + ' is frozen and cannot attack<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' is frozen and cannot attack<br>';
 				continue;
 			}
 
 			var activations = 1;
 			if (current_assault.dualstrike_triggered) {
 				activations++;
-				if (debug) echo += log.name(current_assault) + ' activates dualstrike<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' activates dualstrike<br>';
 			}
 
 			for (; activations > 0; activations--) {
@@ -4936,7 +4969,7 @@ var SIM_CONTROLLER = (function () {
 				// Check attack
 				// - check rally and weaken
 				if (!current_assault.hasAttack()) {
-					if (debug && current_assault.permanentAttack() > 0) echo += log.name(current_assault) + ' is weakened and cannot attack<br>';
+					if (debugLog.enabled && current_assault.permanentAttack() > 0) echo += log.name(current_assault) + ' is weakened and cannot attack<br>';
 					continue;
 				}
 
@@ -4966,7 +4999,7 @@ var SIM_CONTROLLER = (function () {
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		removeDead();
 
-		if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+		if (debugLog.enabled) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -5005,7 +5038,7 @@ var SIM_CONTROLLER = (function () {
 		}
 
 		var echo = '';
-		if (debug) {
+		if (debugLog.enabled) {
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 			if (shrouded) echo += ' Stasis: -' + shrouded;
 			if (protect) echo += ' Barrier: -' + protect;
@@ -5042,7 +5075,7 @@ var SIM_CONTROLLER = (function () {
 		if (dualStrike && dualStrike.countdown) {
 			dualStrike.countdown--;
 
-			if (debug) {
+			if (debugLog.enabled) {
 				if (dualStrike.countdown) {
 					echo += log.name(unit) + ' charges  dualstrike (ready in ' + dualStrike.countdown + ' turns)<br/>';
 				} else {
@@ -5057,7 +5090,7 @@ var SIM_CONTROLLER = (function () {
 			var skill = skills[i];
 			if (skill.countdown) {
 				skill.countdown--;
-				if (debug) {
+				if (debugLog.enabled) {
 					if (skill.countdown) {
 						echo += log.name(unit) + ' charges ' + skillApi.nameFromId(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
 					} else {
@@ -5097,7 +5130,7 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				current_assault.health_left += regen_health;
-				if (debug) echo += log.name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
 			}
 
 			// Poison
@@ -5107,7 +5140,7 @@ var SIM_CONTROLLER = (function () {
 				if (warded) {
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
-				do_damage(null, current_assault, amount, null, function (source, target, amount) {
+				doDamage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += log.name(target) + ' takes ' + amount;
 					if (warded) echo += ' (Poison: +' + current_assault.poisoned + ' Ward: -' + warded + ')';
 					echo += ' poison damage';
@@ -5122,7 +5155,7 @@ var SIM_CONTROLLER = (function () {
 				if (warded) {
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
-				do_damage(null, current_assault, amount, null, function (source, target, amount) {
+				doDamage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += log.name(target) + ' takes ' + amount;
 					if (warded) echo += ' (Venom: +' + current_assault.envenomed + ' Ward: -' + warded + ')';
 					echo += ' venom damage';
@@ -5138,7 +5171,7 @@ var SIM_CONTROLLER = (function () {
 				if (warded) {
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
-				do_damage(null, current_assault, amount, null, function (source, target, amount) {
+				doDamage(null, current_assault, amount, null, function (source, target, amount) {
 					echo += log.name(target) + ' takes ' + amount;
 					if (warded) echo += ' (Scorch: +' + scorch.amount + ' Ward: -' + warded + ')';
 					echo += ' scorch damage';
@@ -5162,13 +5195,13 @@ var SIM_CONTROLLER = (function () {
 				if (corroded.timer < 0) {
 					current_assault.corroded = false;
 					current_assault.attack_corroded = 0;
-					if (debug) {
+					if (debugLog.enabled) {
 						echo += log.name(current_assault) + ' recovers from corrosion<br>';
 					}
 				} else {
 					var corrosion = corroded.amount;
 					current_assault.attack_corroded = corrosion;
-					if (debug) {
+					if (debugLog.enabled) {
 						echo += log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 					}
 				}
@@ -5203,7 +5236,7 @@ var SIM_CONTROLLER = (function () {
 					}
 				}
 			}
-			if (taunted && debug) echo += log.name(target) + ' taunts ' + log.name(current_assault);
+			if (taunted && debugLog.enabled) echo += log.name(target) + ' taunts ' + log.name(current_assault);
 		}
 
 		// -- CALCULATE DAMAGE --
@@ -5213,7 +5246,7 @@ var SIM_CONTROLLER = (function () {
 		var enfeeble = target.enfeebled;
 		damage += enfeeble;
 
-		if (debug) {
+		if (debugLog.enabled) {
 			echo += '<u>(Attack: +' + current_assault.attack;
 			if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
 			if (current_assault.attack_valor) echo += ' Valor: +' + current_assault.attack_valor;
@@ -5240,18 +5273,18 @@ var SIM_CONTROLLER = (function () {
 		var shrouded = checkShroud(target);
 		// Barrier is applied BEFORE Armor
 		if (protect) {
-			if (debug) {
+			if (debugLog.enabled) {
 				echo += ' Barrier: -' + protect;
 			}
 			// Remove pierce from Barrier
 			if (pierce) {
 				if (pierce >= protect) {
-					if (debug) echo += ' Pierce: +' + protect;
+					if (debugLog.enabled) echo += ' Pierce: +' + protect;
 					pierce -= protect;
 					protect = 0;
 					target.protected = 0;
 				} else {
-					if (debug) echo += ' Pierce: +' + pierce;
+					if (debugLog.enabled) echo += ' Pierce: +' + pierce;
 					protect -= pierce;
 					target.protected -= pierce;
 					// Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
@@ -5272,16 +5305,16 @@ var SIM_CONTROLLER = (function () {
 		}
 		if (shrouded) {
 			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
-			if (debug) {
+			if (debugLog.enabled) {
 				echo += ' Shroud: -' + shrouded;
 			}
 			// Remove pierce from Shroud
 			if (pierce) {
 				if (pierce > shrouded) {
-					if (debug) echo += ' Pierce: +' + shrouded;
+					if (debugLog.enabled) echo += ' Pierce: +' + shrouded;
 					shrouded = 0;
 				} else {
-					if (debug) echo += ' Pierce: +' + pierce;
+					if (debugLog.enabled) echo += ' Pierce: +' + pierce;
 					shrouded -= pierce;
 				}
 			}
@@ -5289,16 +5322,16 @@ var SIM_CONTROLLER = (function () {
 		}
 		if (armor) {
 			armor += unitInfo.getEnhancement(target, 'armored', armor);
-			if (debug) {
+			if (debugLog.enabled) {
 				echo += ' Armor: -' + armor;
 			}
 			// Remove pierce from Armor
 			if (pierce) {
 				if (pierce > armor) {
-					if (debug) echo += ' Pierce: +' + armor;
+					if (debugLog.enabled) echo += ' Pierce: +' + armor;
 					armor = 0;
 				} else {
-					if (debug) echo += ' Pierce: +' + pierce;
+					if (debugLog.enabled) echo += ' Pierce: +' + pierce;
 					armor -= pierce;
 				}
 			}
@@ -5307,12 +5340,12 @@ var SIM_CONTROLLER = (function () {
 
 		if (damage < 0) damage = 0;
 
-		if (debug) echo += ') = ' + damage + ' damage</u><br>';
+		if (debugLog.enabled) echo += ') = ' + damage + ' damage</u><br>';
 
 		// -- END OF CALCULATE DAMAGE --
 
 		// Deal damage to target
-		do_damage(current_assault, target, damage, null, function (source, target, amount) {
+		doDamage(current_assault, target, damage, null, function (source, target, amount) {
 			echo += log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
@@ -5338,7 +5371,7 @@ var SIM_CONTROLLER = (function () {
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					if (debug) echo += log.name(current_assault) + ' inflicts poison(' + poison + ') on ' + log.name(target) + '<br>';
+					if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts poison(' + poison + ') on ' + log.name(target) + '<br>';
 				}
 			}
 
@@ -5356,7 +5389,7 @@ var SIM_CONTROLLER = (function () {
 					var hexIncrease = venom - target.envenomed;
 					target.envenomed = venom;
 					target.enfeebled += hexIncrease;
-					if (debug) echo += log.name(current_assault) + ' inflicts venom(' + venom + ') on ' + log.name(target) + '<br>';
+					if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts venom(' + venom + ') on ' + log.name(target) + '<br>';
 				}
 			}
 
@@ -5368,7 +5401,7 @@ var SIM_CONTROLLER = (function () {
 				var enhanced = unitInfo.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				if (debug) echo += log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target) + '<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target) + '<br>';
 			}
 
 			// Silence
@@ -5376,7 +5409,7 @@ var SIM_CONTROLLER = (function () {
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
-				if (debug) echo += log.name(current_assault) + ' inflicts silence on ' + log.name(target) + '<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts silence on ' + log.name(target) + '<br>';
 			}
 
 			// Daze
@@ -5389,7 +5422,7 @@ var SIM_CONTROLLER = (function () {
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				if (debug) echo += log.name(current_assault) + ' dazed ' + log.name(target) + ' for ' + dazed + '<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' dazed ' + log.name(target) + ' for ' + dazed + '<br>';
 			}
 		}
 
@@ -5416,7 +5449,7 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				current_assault.health_left += leech_health;
-				if (debug) echo += log.name(current_assault) + ' siphons ' + leech_health + ' health<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' siphons ' + leech_health + ' health<br>';
 			}
 
 			if (current_assault.reinforce) {
@@ -5425,7 +5458,7 @@ var SIM_CONTROLLER = (function () {
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
-				if (debug) echo += log.name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
 			}
 
 			// Counter
@@ -5451,7 +5484,7 @@ var SIM_CONTROLLER = (function () {
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				if (debug) echo += log.name(target) + ' inflicts counterburn(' + scorch + ') on ' + log.name(current_assault) + '<br>';
+				if (debugLog.enabled) echo += log.name(target) + ' inflicts counterburn(' + scorch + ') on ' + log.name(current_assault) + '<br>';
 			}
 
 			// Counterpoison
@@ -5463,7 +5496,7 @@ var SIM_CONTROLLER = (function () {
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					if (debug) echo += log.name(target) + ' inflicts counterpoison(' + poison + ') on ' + log.name(current_assault) + '<br>';
+					if (debugLog.enabled) echo += log.name(target) + ' inflicts counterpoison(' + poison + ') on ' + log.name(current_assault) + '<br>';
 				}
 			}
 
@@ -5476,7 +5509,7 @@ var SIM_CONTROLLER = (function () {
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
 					target.attack_berserk += fury;
-					if (debug) {
+					if (debugLog.enabled) {
 						echo += log.name(target) + ' activates fury and gains ' + fury + ' attack<br>';
 					}
 				}
@@ -5486,7 +5519,7 @@ var SIM_CONTROLLER = (function () {
 
 			if (target.enraged > 0) {
 				target.attack_berserk += target.enraged;
-				if (debug) echo += log.name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
+				if (debugLog.enabled) echo += log.name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
 			}
 
 			// Berserk
@@ -5498,7 +5531,7 @@ var SIM_CONTROLLER = (function () {
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
-				if (debug) echo += log.name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
+				if (debugLog.enabled) echo += log.name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
 			}
 		}
 
@@ -5516,9 +5549,9 @@ var SIM_CONTROLLER = (function () {
 			} else {
 				current_assault.corroded = { amount: corrosion, timer: 2 };
 			}
-			if (debug) echo += log.name(target) + ' inflicts corrosion(' + corrosion + ') on ' + log.name(current_assault) + '<br>';
+			if (debugLog.enabled) echo += log.name(target) + ' inflicts corrosion(' + corrosion + ') on ' + log.name(current_assault) + '<br>';
 			current_assault.attack_corroded = corrosion;
-			if (debug) {
+			if (debugLog.enabled) {
 				echo += log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 			}
 		}
@@ -5542,14 +5575,14 @@ var SIM_CONTROLLER = (function () {
 		counterDamage = damageInfo.damage;
 		var shatter = damageInfo.shatter;
 
-		if (debug) {
+		if (debugLog.enabled) {
 			echo += '<u>(' + counterType + ': +' + counterBase;
 			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
 			echo += damageInfo.echo;
 			echo += ') = ' + counterDamage + ' damage</u><br>';
 		}
 
-		do_damage(defender, attacker, counterDamage, null, function (source, target, amount) {
+		doDamage(defender, attacker, counterDamage, null, function (source, target, amount) {
 			echo += log.name(target) + ' takes ' + amount + ' ' + counterType.toLowerCase() + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
@@ -6407,6 +6440,7 @@ var deckPopupDialog;
 var base64 = require('base64');
 var urlHelpers = require('urlHelpers');
 var loadDeck = require('loadDeck');
+var debugLog = require('debugLog');
 
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -6742,7 +6776,7 @@ function outputTurns(turnData) {
 function showWinrate() {
 
 	if (suppressOutput) {
-	} else if (debug || sims_left == 0) {
+	} else if (debugLog.enabled || sims_left == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -6757,7 +6791,7 @@ function showWinrate() {
 			'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
 			'<br>' +
 			'<br>';
-		if (debug) return links;
+		if (debugLog.enabled) return links;
 	}
 	// Win/Loss ratios
 	var winPercent = wins / games;
@@ -7084,7 +7118,6 @@ function display_history() {
 // Initialize global variables
 var battle_history = '';
 var max_turns = 100;
-var debug = false;
 var mass_debug = false;
 var loss_debug = false;
 var win_debug = false;

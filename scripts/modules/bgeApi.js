@@ -5,6 +5,7 @@ define('bgeApi', function () {
 
     var log = require('log');
     var cardApi = require('cardApi');
+    var debugLog = require('debugLog');
 
     function MakeSkillModifier(name, effect) {
         return {
@@ -85,7 +86,7 @@ define('bgeApi', function () {
                         var index = (~~(Math.random() * targets.length));
                         targets[index].trap = trap;
     
-                        if (debug) {
+                        if (debugLog.enabled) {
                             echo += this.name + ' inserts ' + log.name(trap) + ' into the opposing deck.<br/>';
                         }
                     }

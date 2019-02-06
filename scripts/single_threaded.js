@@ -4,6 +4,7 @@
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
     var urlHelpers = require('urlHelpers');
+    var debugLog = require('debugLog');
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
@@ -65,7 +66,7 @@
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((debug || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
         } else if (sims_left > 0) {
@@ -96,7 +97,7 @@
                     run_sims_batch = sims_left;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(run_sims, 1);
@@ -168,7 +169,7 @@
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
 
-        if (debug || play_debug) {
+        if (debugLog.enabled || play_debug) {
             if (loss_debug) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;

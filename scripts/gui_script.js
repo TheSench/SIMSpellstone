@@ -4,6 +4,7 @@ var deckPopupDialog;
 var base64 = require('base64');
 var urlHelpers = require('urlHelpers');
 var loadDeck = require('loadDeck');
+var debugLog = require('debugLog');
 
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -339,7 +340,7 @@ function outputTurns(turnData) {
 function showWinrate() {
 
 	if (suppressOutput) {
-	} else if (debug || sims_left == 0) {
+	} else if (debugLog.enabled || sims_left == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -354,7 +355,7 @@ function showWinrate() {
 			'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
 			'<br>' +
 			'<br>';
-		if (debug) return links;
+		if (debugLog.enabled) return links;
 	}
 	// Win/Loss ratios
 	var winPercent = wins / games;
@@ -681,7 +682,6 @@ function display_history() {
 // Initialize global variables
 var battle_history = '';
 var max_turns = 100;
-var debug = false;
 var mass_debug = false;
 var loss_debug = false;
 var win_debug = false;
