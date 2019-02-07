@@ -58,7 +58,6 @@ var SIM_CONTROLLER = (function () {
         sims_left = 0;
         matchTimer.stop();
 
-
         var msg;
         var points = "";
         if (getdeck2) {
