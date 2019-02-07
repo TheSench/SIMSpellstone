@@ -699,40 +699,10 @@ var SIMULATOR = {};
 				}
 			}
 
-			// No Targets
-			if (!targets.length) return 0;
-
-			// Check All
-			if (!all) {
-				targets = chooseRandomTarget(targets);
-			}
-
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, ignite);
-			ignite += enhanced;
-
-			var affected = 0;
-
-			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
-
-				// Check Evade
-				if (target.invisible) {
-					target.invisible--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' ignites ' + log.name(target) + ' but it is invisible!');
-					continue;
-				}
-
-				affected++;
-
-				target.scorch(ignite);
-				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' ignites(' + ignite + ') ' + log.name(target));
-
-				if (target.backlash) {
-					backlash(sourceUnit, target);
-				}
-			}
-
-			return affected;
+			var doApplyDebuff = function doApplyDebuff(target, skillValue) {
+				target.scorch(skillValue);
+			};
+			return applyDebuff(sourceUnit, skill, 'ignites', targets, field_x_assaults, doApplyDebuff);
 		},
 
 		// Jam (Freeze)
@@ -876,8 +846,6 @@ var SIMULATOR = {};
 
 		heartseeker: function (sourceUnit, skill) {
 
-			var faction = skill['y'];
-
 			var o = getOpponent(sourceUnit);
 
 			var heartseeker = skill.x;
@@ -905,12 +873,7 @@ var SIMULATOR = {};
 
 			var faction = skill['y'];
 
-			var p = getOwner(sourceUnit);
 			var o = getOpponent(sourceUnit);
-
-			var enfeeble = skill.x;
-
-			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -922,39 +885,10 @@ var SIMULATOR = {};
 				}
 			}
 
-			// No Targets
-			if (!targets.length) return 0;
-
-			// Check All
-			if (!all) {
-				targets = chooseRandomTarget(targets);
-			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, enfeeble);
-			enfeeble += enhanced;
-
-			var affected = 0;
-
-			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
-
-				// Check Evade
-				if (target.invisible) {
-					target.invisible--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' hexes ' + log.name(target) + ' but it is invisible!');
-					continue;
-				}
-
-				affected++;
-
-				target['enfeebled'] += enfeeble;
-				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' hexes ' + log.name(target) + ' by ' + enfeeble);
-
-				if (target.backlash) {
-					backlash(sourceUnit, target);
-				}
-			}
-
-			return affected;
+			var doApplyDebuff = function(target, skillValue) {
+				target.enfeebled += skillValue;
+			};
+			return applyDebuff(sourceUnit, skill, 'hexes', targets, field_x_assaults, doApplyDebuff);
 		},
 
 		// Weaken
@@ -979,8 +913,6 @@ var SIMULATOR = {};
 					break;
 			}
 
-			var weaken = skill.x;
-
 			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
@@ -1001,44 +933,52 @@ var SIMULATOR = {};
 				getTargets(true);
 			}
 
-			// No Targets
-			if (!targets.length) return 0;
-
-			// Check All
-			if (!all) {
-				targets = chooseRandomTarget(targets);
-			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, weaken);
-			weaken += enhanced;
-
-			var affected = 0;
-
-			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
-
-				// Check Evade
-				if (target.invisible) {
-					target.invisible--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' weakens ' + log.name(target) + ' but it is invisible!');
-					continue;
-				}
-
-				affected++;
-
-				target.attack_weaken += weaken;
-				if (debugLog.enabled) {
-					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-					debugLog.appendLines(log.name(sourceUnit) + ' weakens ' + log.name(target) + ' by ' + weaken);
-				}
-
-				if (target.backlash) {
-					backlash(sourceUnit, target);
-				}
-			}
-
-			return affected;
+			var doApplyDebuff = function(target, skillValue) {
+				target.attack_weaken += skillValue;
+			};
+			return applyDebuff(sourceUnit, skill, 'weakens', targets, field_x_assaults, doApplyDebuff);
 		}
 	};
+
+	function applyDebuff(sourceUnit, skill, skillVerb, targetKeys, targetField, doApplyDebuff) {
+
+		// No Targets
+		if (!targetKeys.length) return 0;
+
+		var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, skill.x);
+		var skillValue = skill.x + enhanced;
+
+		// Check All
+		if (!skill.all) {
+			targetKeys = chooseRandomTarget(targetKeys);
+		}
+
+		var affected = 0;
+		for (var key = 0, len = targetKeys.length; key < len; key++) {
+			var target = targetField[targetKeys[key]];
+
+			// Check Evade
+			if (target.invisible) {
+				target.invisible--;
+				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + log.name(target) + ' but it is invisible!');
+				continue;
+			}
+
+			affected++;
+
+			doApplyDebuff(target, skillValue);
+			if (debugLog.enabled) {
+				if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+				debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + log.name(target) + ' by ' + skillValue);
+			}
+
+			if (target.backlash) {
+				backlash(sourceUnit, target);
+			}
+		}
+
+		return affected;
+	}
 
 	var earlyActivationSkills = {
 		// Rally
@@ -1574,78 +1514,6 @@ var SIMULATOR = {};
 			}
 
 			return affected;
-		},
-
-		snaretongue: function (sourceUnit, skill) {
-
-			var faction = skill['y'];
-
-			var p = getOwner(sourceUnit);
-			var o = getOpponent(sourceUnit);
-
-			var field_x_assaults = field[o]['assaults'];
-
-			var markTarget = sourceUnit.mark_target;
-			var targets = [];
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive()
-					&& target.isInFaction(faction)) {
-					targets.push(key);
-				}
-			}
-
-			// No Targets
-			if (!targets.length) return 0;
-
-			// Find weakest
-			var target = field_x_assaults[targets.reduce(function (weakest, target) {
-				return ((field_x_assaults[target].health_left < field_x_assaults[weakest].health_left) ? target : weakest);
-			}, targets[0])];
-
-			var toKey = sourceUnit.key;
-			var fromKey = target.key;
-			if (toKey === toKey) {
-				// No change in position
-				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' activates snaretongue and keeps ' + log.name(target) + ' in front of it');
-				return false;
-			}
-
-			field_x_assaults.splice(target.key, 1);
-			if (field_x_assaults.length < toKey) {
-				CARDS[0] = CARDS[0] || {
-					"id": "0",
-					"name": "Filler",
-					"picture": "",
-					"rarity": "0",
-					"set": "9999",
-					"card_type": "0",
-					"type": "0",
-					"sub_type": [],
-					"health": 1,
-					"attack": 0,
-					"cost": 0,
-					"maxLevel": 1,
-					"skill": []
-				};
-				var filler = cardApi.byId({ id: 0, level: 1 });
-				filler.name = "filler";
-				filler.health_left = 0;
-				for (var i = field_x_assaults.length; i < toKey; i++) {
-					field_x_assaults.push(filler);
-				}
-			}
-			field_x_assaults.splice(toKey, 0, target);
-			for (var i = Math.min(toKey, fromKey), end = Math.max(toKey, fromKey); i <= end; i++) {
-				field_x_assaults[i].key = i;
-			}
-
-			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' activates snaretongue and pulls ' + log.name(target) + ' in front of it');
-
-			// Set countdown so skill can't trigger twice on dual-strike turn
-			skill.countdown = 1;
-
-			return 1;
 		}
 	};
 
