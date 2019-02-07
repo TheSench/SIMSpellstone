@@ -33,6 +33,7 @@ describe('Debug Tests', function() {
 });
 
 describe('Deck Tests', function() {
+
     testDeck('(1/1/1) vs (1/1/1) ', 'QpLQA4DowA', 'QpLQA4DowA', 100);
 
     // wins if 1/1/1 is dropped first
@@ -40,7 +41,10 @@ describe('Deck Tests', function() {
 
     testDeck('(1/3/1 armor 1) vs (1/6/0) ', 'QpLQAIFMQB', 'QpLQAQcHQB', 100);
     testDeck('(1/3/1 bolt 1) vs (1/3/1 armor 1) ', 'QpLQAoKOoB', 'QpLQAIFMQB', 100);
-
+    testDeck('(1/4/1 weaken 1) vs 1/8/0) ', 'QpLQAY7soB', 'QpLQAA6IQB', 100);
+    testDeck('(3/6/1 hex 2,pierce 2) vs 3/5/0) ', 'QpLQAIjRpB', 'QpLQAIPLoB', 100);
+    testDeck('(3/6/1 hex 2,pierce 2) vs 3/9/2 poison 3) ', 'QpLQAIjRpB', 'QpLQAwMXoB', 100);
+    
     // TODO: Rune test
-    //testDeck('(1/6/1 empower 2+3) vs (1/3/1 armor 1) ', 'QpLQAphWSB', 'QpLQAIFMQB', 100);
+    testDeck('(5/4/0 poison 3+2, pierce 6, invis 2) vs (3/10/2 bolt 2, counter 2) ', 'QpLQAEKiqB', 'QpLQAQHVQB', 100);
 });
