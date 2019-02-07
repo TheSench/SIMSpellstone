@@ -247,6 +247,12 @@ var SKILL_DATA = {
 		"name": "Barrier",
 		"type": "activation"
 	},
+	"radiance": {
+		"desc": "At start of turn, grants adjacent allies Radiance, increasing Attack.",
+		"icon": "legion",
+		"name": "radiance",
+		"type": "earlyActivation"
+	},
 	"rally": {
 		"desc": "At start of turn, grants Empower to a random ally creature, increasing Attack.",
 		"icon": "empower",

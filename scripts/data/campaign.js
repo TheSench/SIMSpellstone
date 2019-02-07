@@ -3765,6 +3765,40 @@ var CAMPAIGNS = {
 		],
 		"name": "Schism"
 	},
+	"1198": {
+		"battleground_id": "2059",
+		"id": "1198",
+		"items": {
+			"3086": 0.6
+		},
+		"location_id": "20",
+		"missions": [
+			"6147",
+			"6148",
+			"6149",
+			"6150",
+			"6151",
+			"6152"
+		],
+		"name": "Shades of the Past"
+	},
+	"1199": {
+		"battleground_id": "2060",
+		"id": "1199",
+		"items": {
+			"3086": 0.8
+		},
+		"location_id": "20",
+		"missions": [
+			"6153",
+			"6154",
+			"6155",
+			"6156",
+			"6157",
+			"6158"
+		],
+		"name": "Crimsonwing Foundation"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
