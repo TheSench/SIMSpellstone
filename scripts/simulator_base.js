@@ -9,6 +9,9 @@ var SIMULATOR = {};
 	var loadDeck = require('loadDeck');
 	var debugLog = require('debugLog');
 	var animations = require('animations');
+    var simController = require('simController');
+
+	var max_turns = 100;
 
 	"use strict";
 
@@ -61,7 +64,7 @@ var SIMULATOR = {};
 				battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
 			}
 		}
-		if (showAnimations) {
+		if (animations.areShown) {
 			animations.drawField(field, null, null, turn);
 		}
 	}
@@ -229,7 +232,7 @@ var SIMULATOR = {};
 						skill.countdown = skill.c;
 					}
 
-					if (showAnimations) {
+					if (animations.areShown) {
 						animations.drawField(field, null, null, turn, sourceCard);
 					}
 				}
@@ -260,7 +263,7 @@ var SIMULATOR = {};
 			var skill = skills[i];
 			onDeathSkills[skill.id](dying, killer, skill);
 
-			if (showAnimations) {
+			if (animations.areShown) {
 				animations.drawField(field, null, null, turn, dying);
 			}
 		}
@@ -1635,7 +1638,7 @@ var SIMULATOR = {};
 				skill.countdown = skill.c;
 			}
 
-			if (showAnimations) {
+			if (animations.areShown) {
 				animations.drawField(field, null, null, turn, sourceUnit);
 			}
 		}
@@ -1809,7 +1812,7 @@ var SIMULATOR = {};
 		}
 		var done = performTurnsInner(turn, drawCards);
 		if (done && user_controlled) {
-			SIM_CONTROLLER.debug_end();
+			simController.debug_end();
 		}
 		return done;
 	}
@@ -1849,7 +1852,7 @@ var SIMULATOR = {};
 		turn++;
 		// Continue simulation
 		for (; turn <= max_turns + 1; turn++) {
-			if (turn == max_turns + 1) {
+			if (turn === max_turns + 1) {
 				// Ended in draw
 				simulating = false;
 				return true;
@@ -2618,7 +2621,7 @@ var SIMULATOR = {};
 			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 		});
 
-		if (showAnimations) {
+		if (animations.areShown) {
 			animations.drawField(field, null, null, turn, current_assault);
 		}
 
@@ -2828,7 +2831,7 @@ var SIMULATOR = {};
 			doOnDeathSkills(current_assault, target);
 		}
 
-		if (showAnimations) {
+		if (animations.areShown) {
 			animations.drawField(field, null, null, turn, current_assault);
 		}
 		// -- END OF STATUS INFLICTION --

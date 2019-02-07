@@ -9,6 +9,7 @@ $(function () {
     var urlHelpers = require('urlHelpers');
     var loadDeck = require('loadDeck');
     var cardUI = require('cardUI');
+    var simController = require('simController');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();
@@ -74,8 +75,8 @@ $(function () {
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!urlHelpers.paramDefined("seedtest")) {
-            SIM_CONTROLLER.getConfiguration();
-            var battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+            var config = simController.getConfiguration();
+            var battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -173,7 +174,7 @@ $(function () {
         var callback = null;
         if (urlHelpers.paramDefined("autostart")) {
             callback = function () {
-                SIM_CONTROLLER.startsim(1);
+                simController.startsim(1);
             };
         }
         updateGameData(callback);

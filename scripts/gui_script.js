@@ -5,6 +5,7 @@ var base64 = require('base64');
 var urlHelpers = require('urlHelpers');
 var loadDeck = require('loadDeck');
 var debugLog = require('debugLog');
+var simController = require('simController');
 
 window.addEventListener('error', function (message, url, lineNumber) {
 	var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -65,8 +66,8 @@ function processQueryString() {
 
 	$("#generate_link").on("click", display_generated_link);
 
-	$("#btn_simulate").on("click", SIM_CONTROLLER.startsim);
-	$("#btnStop").on("click", SIM_CONTROLLER.stopsim);
+	$("#btn_simulate").on("click", simController.startsim);
+	$("#btnStop").on("click", simController.stopsim);
 
 	$("#display_history").on("click", display_history);
 
@@ -162,7 +163,7 @@ function processQueryString() {
 	document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
 	if (urlHelpers.paramDefined('autostart') && !urlHelpers.paramDefined("latestCards")) {
-		SIM_CONTROLLER.startsim(1);
+		simController.startsim(1);
 	} else if (urlHelpers.paramDefined('unit_tests')) {
 		var body = document.getElementsByTagName("body")[0];
 		var script = document.createElement("script");
@@ -676,13 +677,11 @@ function display_history() {
 
 // Initialize global variables
 var battle_history = '';
-var max_turns = 100;
 var mass_debug = false;
 var loss_debug = false;
 var win_debug = false;
 var found_desired = false;
 var play_debug = false;
-var showAnimations = false;
 var getdeck = '';
 var getdeck2 = '';
 var getcardlist = '';
@@ -691,7 +690,6 @@ var getordered = false;
 var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
-var getcampaign = 0;
 var getmission = 0;
 var missionlevel = 0;
 var getraid = false;
@@ -722,7 +720,6 @@ var cache_cpu_deck;
 var cache_player_deck_cards;
 var cache_cpu_deck_cards;
 var choice = undefined;
-var auto_mode = false;
 var tournament = false;
 var suppressOutput = false;
 var orders = {};

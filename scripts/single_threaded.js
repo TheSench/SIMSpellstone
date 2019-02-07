@@ -5,19 +5,20 @@
     var matchTimer = require('matchTimer');
     var urlHelpers = require('urlHelpers');
     var debugLog = require('debugLog');
+    var simController = require('simController');
 
     // Initialize simulation loop - runs once per simulation session
-    SIM_CONTROLLER.startsim = function () {
+    simController.startsim = function () {
         total_turns = 0;
         matchTimer.reset();
         debugLog.clear();
         games = 0;
         run_sims_batch = 0;
 
-        SIM_CONTROLLER.getConfiguration();
+        var config = simController.getConfiguration();
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
 
         hideUI();
 
@@ -43,7 +44,7 @@
     };
 
     // Interrupt simulations
-    SIM_CONTROLLER.stopsim = function () {
+    simController.stopsim = function () {
         matchTimer.stop();
         var elapse = matchTimer.elapsed();
         var simpersec = games / elapse;
@@ -58,17 +59,17 @@
         }
         showUI();
 
-        if (SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback();
+        if (simController.stop_sims_callback) simController.stop_sims_callback();
     };
 
     function run_sims() {
         if (SIMULATOR.user_controlled) {
             if (run_sim(true)) {
-                SIM_CONTROLLER.debug_end();
+                simController.debug_end();
             }
         } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
             run_sim(true);
-            SIM_CONTROLLER.debug_end();
+            simController.debug_end();
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
@@ -120,7 +121,7 @@
 
             showUI();
 
-            if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
+            if (simController.end_sims_callback) simController.end_sims_callback();
         }
     }
 
@@ -132,10 +133,10 @@
             Math.seedrandom(seedtest++);
         }
         if (!SIMULATOR.simulate()) return false;
-        if (!skipResults) SIM_CONTROLLER.processSimResult();
+        if (!skipResults) simController.processSimResult();
     }
 
-    SIM_CONTROLLER.processSimResult = function () {
+    simController.processSimResult = function () {
 
         var result;
         if (!SIMULATOR.field.player.commander.isAlive()) {

@@ -65,6 +65,8 @@ module.exports = function (grunt) {
 
                     'scripts/modules/animations.js',
 
+                    'scripts/modules/simController.js',
+
                     'scripts/data/fixGlobals.js',
                     'scripts/updateCards.js',
                     'scripts/shared.js',

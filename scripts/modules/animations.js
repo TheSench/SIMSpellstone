@@ -3,6 +3,7 @@ define('animations', function () {
     var cardUI = require('cardUI');
 
     var api = {
+        areShown: false,
         drawField: drawField,
         clearFrames: clearFrames
     };

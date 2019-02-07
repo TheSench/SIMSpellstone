@@ -1,8 +1,17 @@
-"use strict";
+define('simController', function () {
+    "use strict";
 
-var SIM_CONTROLLER = (function () {
     var matchTimer = require('matchTimer');
     var debugLog = require('debugLog');
+    var animations = require('animations');
+
+    var SIM_CONTROLLER = {
+        getConfiguration: getConfiguration,
+        debug_end: debug_end,
+
+        end_sims_callback: null,
+        stop_sims_callback: null
+    };
 
     function getConfiguration() {
         getdeck = $('#deck1').val();
@@ -10,7 +19,7 @@ var SIM_CONTROLLER = (function () {
         getexactorder = $('#exactorder').is(':checked');
 
         getdeck2 = $('#deck2').val();
-        getcampaign = $('#campaign').val();
+        var selectedCampaign = $('#campaign').val();
         getmission = $('#mission').val();
         missionlevel = $('#mission_level').val();
         getraid = $('#raid').val();
@@ -38,15 +47,44 @@ var SIM_CONTROLLER = (function () {
         mass_debug = $('#mass_debug').is(':checked');
         win_debug = $('#win_debug').is(':checked');
         loss_debug = $('#loss_debug').is(':checked');
-        showAnimations = $('#animations').is(':checked');
+        animations.areShown = $('#animations').is(':checked');
 
         if ($('#auto_mode').length) {
-            auto_mode = $('#auto_mode').is(':checked');
+            var auto_mode = $('#auto_mode').is(':checked');
             SIMULATOR.user_controlled = !auto_mode;
         }
 
         // Not currently in UI - attacker's first card has +1 delay
         tournament = $("#tournament").is(":checked");
+
+        return {
+            getdeck: getdeck,
+            getordered: getordered,
+            getexactorder: getexactorder,
+            getdeck2: getdeck2,
+            selectedCampaign: selectedCampaign,
+            getmission: getmission,
+            missionlevel: missionlevel,
+            getraid: getraid,
+            raidlevel: raidlevel,
+            getordered2: getordered2,
+            getexactorder2: getexactorder2,
+            surge: surge,
+            getsiege: getsiege,
+            tower_level: tower_level,
+            tower_type: tower_type,
+            getbattleground: getbattleground,
+            selfbges: selfbges,
+            enemybges: enemybges,
+            mapbges: mapbges,
+            sims_left: sims_left,
+            play_debug: play_debug,
+            mass_debug: mass_debug,
+            win_debug: win_debug,
+            loss_debug: loss_debug,
+            auto_mode: auto_mode,
+            tournament: tournament
+        };
     }
 
     // Loops through all simulations
@@ -81,11 +119,8 @@ var SIM_CONTROLLER = (function () {
         if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
     }
 
-    return {
-        getConfiguration: getConfiguration,
-        debug_end: debug_end,
+    // temporary stop-gap so HTML files can reference this module
+    window.SIM_CONTROLLER = SIM_CONTROLLER;
 
-        end_sims_callback: null,
-        stop_sims_callback: null
-    };
-})();
+    return SIM_CONTROLLER;
+});
