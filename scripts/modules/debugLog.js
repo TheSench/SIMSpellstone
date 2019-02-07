@@ -1,16 +1,42 @@
 define('debugLog', function() {
     var api = {
         enabled: false,
-        write: write,
-        writeLine: writeLine
+        getLog: getLog,
+        clear: clear,
+        prepend: prepend,
+        prependLines: prependLines,
+        append: append,
+        appendLines: appendLines
     };
 
-    function write(message) {
-        echo += message;
+    var content = '';
+
+    function clear() {
+        content = '';
     }
 
-    function writeLine(message) {
-        echo += message + '</br>';
+    function getLog() {
+        return content;
+    }
+
+    function prepend(message) {
+        content = message + content;
+    }
+
+    function prependLines() {
+        for(var i = 0; i < arguments.length; i++) {
+            prepend(arguments[i] + '</br>');
+        }
+    }
+
+    function append(message) {
+        content += message;
+    }
+
+    function appendLines() {
+        for(var i = 0; i < arguments.length; i++) {
+            append(arguments[i] + '</br>');
+        }
     }
 
     return api;

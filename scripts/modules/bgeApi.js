@@ -87,7 +87,7 @@ define('bgeApi', function () {
                         targets[index].trap = trap;
     
                         if (debugLog.enabled) {
-                            echo += this.name + ' inserts ' + log.name(trap) + ' into the opposing deck.<br/>';
+                            debugLog.appendLines(this.name + ' inserts ' + log.name(trap) + ' into the opposing deck.');
                         }
                     }
                 }

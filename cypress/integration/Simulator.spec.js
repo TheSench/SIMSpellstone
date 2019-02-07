@@ -25,6 +25,13 @@ describe('Initialization', function () {
     });
 });
 
+describe('Debug Tests', function() {
+    it('doesn\'t crash', function () {
+        cy.visit(baseUrl + '?deck1=QpLQAoAlrBoAlrBoAlrBoAlrBoAlrB&deck2=QpLQAoAlrBoAlrBoAlrBoAlrBoAlrB&debug&autostart');
+        cy.get('#show-turns').should('have.value', 'Show All');
+    });
+});
+
 describe('Deck Tests', function() {
     testDeck('(1/1/1) vs (1/1/1) ', 'QpLQA4DowA', 'QpLQA4DowA', 100);
 

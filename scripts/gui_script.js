@@ -33,23 +33,13 @@ window.addEventListener('error', function (message, url, lineNumber) {
 	errorDescription += "Cookies Enabled: " + navigator.cookieEnabled + "\n";
 	errorDescription += "Platform: " + navigator.platform + "\n";
 	errorDescription += "User-agent header: " + navigator.userAgent + "\n";
-	errorDescription += "SimSpellstone version: " + text_version + "\n";
+	try {
+	errorDescription += "URL: " + generate_link() + "\n";
+	} catch (err) {
+		// Swallow
+	}
 
-	if (getdeck) errorDescription += "Deck hash: " + getdeck + "\n";
-	if (getcardlist) errorDescription += "Card list: " + getcardlist + "\n";
-	if (getordered) errorDescription += "Ordered: Yes\n";
-	if (getexactorder) errorDescription += "Exact-order: Yes\n";
-	if (surge) errorDescription += "Surge: Yes\n";
-	if (getdeck2) errorDescription += "Enemy deck hash: " + getdeck2 + "\n";
-	if (getcardlist2) errorDescription += "Enemy Card list: " + getcardlist2 + "\n";
-	if (getordered2) errorDescription += "Enemy Ordered: Yes\n";
-	if (getexactorder2) errorDescription += "Enemy Exact-order: Yes\n";
-	if (getmission) errorDescription += "Mission ID: " + getmission + "\n";
-	if (getraid) errorDescription += "Raid ID: " + getraid + "\n";
-	if (getbattleground) errorDescription += "Battleground ID: " + getbattleground + "\n";
-	if (games) errorDescription += "Sims run so far: " + games + "\n";
-
-	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + errorDescription + "</blockquote></textarea>" + echo);
+	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + errorDescription + "</blockquote></textarea>");
 
 	// Stop the recursion if any
 	if (current_timeout) clearTimeout(current_timeout);
@@ -301,7 +291,12 @@ function outp(text) {
 	$("#content").html(text);
 }
 
-function outputTurns(turnData) {
+function outputTurns() {
+	var turnData = debugLog.getLog();
+	if(!turnData) {
+		return;
+	}
+
 	if (closeDiv) {
 		turnData += "</div>";
 		closeDiv = false;
@@ -709,7 +704,6 @@ var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
 var pvpAI = true;
-var echo = '';
 var closeDiv = false;
 var wins = 0;
 var losses = 0;

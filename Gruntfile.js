@@ -87,15 +87,6 @@ module.exports = function (grunt) {
                 ],
                 dest: 'dist/practice.js'
             },
-            livePvP: {
-                src: [
-                    '<%= concat.practice.dest %>',
-                    'scripts/tutorial/pvp-tutorial.js',
-                    'lib/peer.min.js',
-                    'scripts/livePvP.js'
-                ],
-                dest: 'dist/livePvp.js'
-            },
             data: {
                 src: [
                     'scripts/data/skills.js',
@@ -168,15 +159,6 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'dist/practice.min.js': ['<%= concat.practice.dest %>']
-                }
-            },
-            livePvP: {
-                options: {
-                    mangle: true,
-                    sourceMap: true
-                },
-                files: {
-                    'dist/livePvP.min.js': ['<%= concat.livePvP.dest %>']
                 }
             }
         },
@@ -369,8 +351,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-newer');
 
-    grunt.registerTask('concat-main', ['newer:concat:deckbuilder','newer:concat:simulator','newer:concat:practice','newer:concat:livePvP']);
-    grunt.registerTask('uglify-main', ['newer:uglify:deckbuilder','newer:uglify:simulator','newer:uglify:practice','newer:uglify:livePvP']);
+    grunt.registerTask('concat-main', ['newer:concat:deckbuilder','newer:concat:simulator','newer:concat:practice']);
+    grunt.registerTask('uglify-main', ['newer:uglify:deckbuilder','newer:uglify:simulator','newer:uglify:practice']);
 
     grunt.registerTask('full-build', ['clean', /*'jshint',*/ 'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy:html', 'cacheBust']);
     grunt.registerTask('build-main', ['concat-main', 'uglify-main', 'newer:copy:html', 'newer:cacheBust']);

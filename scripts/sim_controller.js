@@ -72,9 +72,7 @@ var SIM_CONTROLLER = (function () {
             msg = '<br><h1>LOSS' + points + '</h1><br>';
         }
 
-        if (echo) {
-            outputTurns(echo);
-        }
+        outputTurns();
         setSimStatus(msg);
 
         showUI();

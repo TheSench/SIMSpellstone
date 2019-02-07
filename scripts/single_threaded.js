@@ -10,7 +10,7 @@
     SIM_CONTROLLER.startsim = function () {
         total_turns = 0;
         matchTimer.reset();
-        echo = '';
+        debugLog.clear();
         games = 0;
         run_sims_batch = 0;
 
@@ -114,9 +114,7 @@
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(2);
 
-            if (echo) {
-                outp(echo);
-            }
+            outp(debugLog.getLog());
             setSimStatus("Simulations complete.", elapse, simpersec);
             showWinrate();
 
@@ -171,46 +169,45 @@
 
         if (debugLog.enabled || play_debug) {
             if (loss_debug) {
-                if (result == 'draw') {
-                    echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
-                    echo += '<br><h1>DRAW</h1><br>';
+                if (result === 'draw') {
+                    debugLog.prependLines('Draw found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.appendLines('', '<h1>DRAW</h1>');
                     sims_left = 0;
                 } else if (result) {
+                    debugLog.clear();
                     if (!sims_left) {
-                        echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
-                    } else {
-                        echo = '';
+                        debugLog.appendLines('No losses found after ' + games + ' games. No debug output to display.');
                     }
                 } else {
-                    echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
-                    echo += '<br><h1>LOSS</h1><br>';
+                    debugLog.prependLines('Loss found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.appendLines('', '<h1>LOSS</h1>');
                     sims_left = 0;
                 }
             } else if (win_debug) {
-                if (result && result != 'draw') {
-                    echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
-                    echo += '<br><h1>WIN</h1><br>';
+                if (result && result !== 'draw') {
+                    debugLog.prependLines('Win found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.appendLines('', '<h1>WIN</h1>');
                     sims_left = 0;
                 } else {
+                    debugLog.clear();
                     if (!sims_left) {
-                        echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
-                    } else {
-                        echo = '';
+                        debugLog.appendLines('No wins found after ' + games + ' games. No debug output to display.');
                     }
                 }
             } else if (mass_debug) {
-                if (result == 'draw') {
-                    echo += '<br><h1>DRAW</h1><br>';
+                debugLog.appendLines('');
+                if (result === 'draw') {
+                    debugLog.appendLines('<h1>DRAW</h1>');
                 } else if (result) {
-                    echo += '<br><h1>WIN</h1><br>';
+                    debugLog.appendLines('<h1>WIN</h1>');
                 } else {
-                    echo += '<br><h1>LOSS</h1><br>';
+                    debugLog.appendLines('<h1>LOSS</h1>');
                 }
             }
 
-            if (mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+            if (mass_debug && sims_left) {
+                debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
+            }
         }
 
         return result;

@@ -28,7 +28,7 @@ var SIMULATOR = {};
 		}
 
 		if ((debugLog.enabled || play_debug) && !quiet) {
-			debugLog.writeLine(log.name(field[p].commander) + ' plays ' + log.name(card));
+			debugLog.appendLines(log.name(field[p].commander) + ' plays ' + log.name(card));
 		}
 
 		if (card.isTrap()) {
@@ -81,7 +81,7 @@ var SIMULATOR = {};
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
 				if (debugLog.enabled) {
-					debugLog.writeLine(log.name(current_assault) + ' <strong>is removed from field</strong>');
+					debugLog.appendLines(log.name(current_assault) + ' <strong>is removed from field</strong>');
 				}
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
@@ -89,7 +89,7 @@ var SIMULATOR = {};
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
 						if (debugLog.enabled){
-							debugLog.writeLine(log.name(current_assault) + ' <strong>is removed from field</strong>');
+							debugLog.appendLines(log.name(current_assault) + ' <strong>is removed from field</strong>');
 						}
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
@@ -158,8 +158,8 @@ var SIMULATOR = {};
 		if (!targetUnit || !targetUnit.isAlive()) targetUnit = opposingField.commander;
 
 		doDamage(sourceUnit, targetUnit, amount, null, function (source, target, amount) {
-			debugLog.write(log.name(source) + "'s barrier shatters and hits " + log.name(target) + ' for ' + amount + ' damage');
-			debugLog.writeLine(!target.isAlive() ? ' and it dies' : '');
+			debugLog.append(log.name(source) + "'s barrier shatters and hits " + log.name(target) + ' for ' + amount + ' damage');
+			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 		});
 	}
 
@@ -170,7 +170,7 @@ var SIMULATOR = {};
 	function notImplemented(sourceUnit, skill) {
 		if (debugLog.enabled) {
 			var skillName = (SKILL_DATA[skill.id] ? SKILL_DATA[skill.id].name : skill.id);
-			debugLog.writeLine(log.name(sourceUnit) + ' attempts to use ' + skillName + ', but it is not implemented.');
+			debugLog.appendLines(log.name(sourceUnit) + ' attempts to use ' + skillName + ', but it is not implemented.');
 		}
 
 		return 0;
@@ -206,7 +206,7 @@ var SIMULATOR = {};
 
 		if (sourceCard.silenced) {
 			if (debugLog.enabled) {
-				debugLog.writeLine(log.name(sourceCard) + " is silenced and cannot use skills");
+				debugLog.appendLines(log.name(sourceCard) + " is silenced and cannot use skills");
 			}
 			return;
 		}
@@ -214,7 +214,7 @@ var SIMULATOR = {};
 		var dualstrike = sourceCard.dualstrike_triggered;
 		if (debugLog.enabled && dualstrike) {
 			// var main attack loop deal with resetting timer
-			debugLog.writeLine(log.name(sourceCard) + ' activates dualstrike');
+			debugLog.appendLines(log.name(sourceCard) + ' activates dualstrike');
 		}
 
 		var activations = (dualstrike ? 2 : 1);
@@ -303,7 +303,9 @@ var SIMULATOR = {};
 				sourceUnit.scorched.amount += scorch;
 				sourceUnit.scorched.timer = 2;
 			}
-			if (debugLog.enabled) echo += log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on itself<br>';
+			if (debugLog.enabled) {
+				debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on itself');
+			}
 
 			return 1;
 		},
@@ -353,7 +355,9 @@ var SIMULATOR = {};
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				if (debugLog.enabled) echo += log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on ' + log.name(target) + '<br>';
+				if (debugLog.enabled) {
+					debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on ' + log.name(target));
+				}
 
 				affected++;
 			}
@@ -414,7 +418,9 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' protects ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) {
+						debugLog.appendLines(log.name(sourceUnit) + ' protects ' + log.name(target) + ' but it is nullified!');
+					}
 					continue;
 				}
 
@@ -434,12 +440,14 @@ var SIMULATOR = {};
 					target[additional] = (target[additional] || 0) + protect_amt;
 				}
 				if (debugLog.enabled) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(sourceUnit) + ' barriers ' + log.name(target) + ' by ' + protect_amt;
-					if (typeof additionalDebug === "function") {
-						echo += additionalDebug(target, protect_amt);
+					if (enhanced) {
+						debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
 					}
-					echo += '<br>';
+					var line = log.name(sourceUnit) + ' barriers ' + log.name(target) + ' by ' + protect_amt;
+					if (typeof additionalDebug === "function") {
+						line += additionalDebug(target, protect_amt);
+					}
+					debugLog.appendLines(line);
 				}
 			}
 
@@ -487,7 +495,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' heals ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' heals ' + log.name(target) + ' but it is nullified!');
 					continue;
 				}
 
@@ -502,8 +510,8 @@ var SIMULATOR = {};
 				if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
 				target['health_left'] += heal_amt;
 				if (debugLog.enabled) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(sourceUnit) + ' heals ' + log.name(target) + ' by ' + heal_amt + '<br>';
+					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+					debugLog.appendLines(log.name(sourceUnit) + ' heals ' + log.name(target) + ' by ' + heal_amt);
 				}
 			}
 
@@ -556,7 +564,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' bolts ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' bolts ' + log.name(target) + ' but it is invisible!');
 					continue;
 				}
 
@@ -578,17 +586,17 @@ var SIMULATOR = {};
 				}
 
 				doDamage(sourceUnit, target, strike_damage, shatter, function (source, target, amount) {
-					echo += '<u>(Strike: +' + skill.x;
-					if (enhanced) echo += ' Enhance: +' + enhanced;
-					echo += damageInfo.echo;
-					echo += ') = ' + amount + ' damage</u><br>';
-					echo += log.name(source) + ' bolts ' + log.name(target) + ' for ' + amount + ' damage';
+					debugLog.appendLines('<u>(Strike: +' + skill.x);
+					if (enhanced) debugLog.appendLines(' Enhance: +' + enhanced);
+					debugLog.appendLines(damageInfo.echo);
+					debugLog.appendLines(') = ' + amount + ' damage</u>');
+					debugLog.appendLines(log.name(source) + ' bolts ' + log.name(target) + ' for ' + amount + ' damage');
 					if (!target.isAlive()) {
-						echo += ' and it dies';
+						debugLog.appendLines(' and it dies');
 					} else if (poisonDamage) {
-						echo += ' and inflicts poison(' + poisonDamage + ') on it';
+						debugLog.appendLines(' and inflicts poison(' + poisonDamage + ') on it');
 					}
-					echo += '<br>';
+					debugLog.appendLines('');
 				});
 
 				if (target.backlash) {
@@ -645,7 +653,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' but it is invisible!');
 					continue;
 				}
 
@@ -658,7 +666,7 @@ var SIMULATOR = {};
 					target.poisoned += intensify;
 				}
 
-				if (debugLog.enabled) echo += log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' by ' + intensify + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' by ' + intensify);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -710,14 +718,14 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' ignites ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' ignites ' + log.name(target) + ' but it is invisible!');
 					continue;
 				}
 
 				affected++;
 
 				target.scorch(ignite);
-				if (debugLog.enabled) echo += log.name(sourceUnit) + ' ignites(' + ignite + ') ' + log.name(target) + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' ignites(' + ignite + ') ' + log.name(target));
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -737,7 +745,7 @@ var SIMULATOR = {};
 
 			sourceUnit.jammed = true;
 			sourceUnit.jammedSelf = true;
-			if (debugLog.enabled) echo += log.name(sourceUnit) + ' freezes itself<br>';
+			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' freezes itself');
 
 			return 1;
 		},
@@ -778,14 +786,14 @@ var SIMULATOR = {};
 					target.invisible--;
 					// Missed - retry next turn
 					skill.countdown = 0;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' freezes ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' freezes ' + log.name(target) + ' but it is invisible!');
 					continue;
 				}
 
 				affected++;
 
 				target.jammed = true;
-				if (debugLog.enabled) echo += log.name(sourceUnit) + ' freezes ' + log.name(target) + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' freezes ' + log.name(target));
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -835,7 +843,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' breathes frost at ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' breathes frost at ' + log.name(target) + ' but it is invisible!');
 					continue;
 				}
 
@@ -850,12 +858,12 @@ var SIMULATOR = {};
 				var shatter = damageInfo.shatter;
 
 				doDamage(sourceUnit, target, frost_damage, shatter, function (source, target, amount) {
-					echo += '<u>(Frostbreath: +' + skill.x;
-					if (enhanced) echo += ' Enhance: +' + enhanced;
-					echo += damageInfo.echo;
-					echo += ') = ' + amount + ' damage</u><br>';
-					echo += log.name(source) + ' breathes frost at ' + log.name(target) + ' for ' + amount + ' damage';
-					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+					debugLog.appendLines('<u>(Frostbreath: +' + skill.x);
+					if (enhanced) debugLog.appendLines(' Enhance: +' + enhanced);
+					debugLog.appendLines(damageInfo.echo);
+					debugLog.appendLines(') = ' + amount + ' damage</u>');
+					debugLog.appendLines(log.name(source) + ' breathes frost at ' + log.name(target) + ' for ' + amount + ' damage');
+					debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 				});
 
 				if (target.backlash) {
@@ -884,7 +892,7 @@ var SIMULATOR = {};
 
 			target.heartseeker += heartseeker;
 			target.enfeebled += heartseeker;
-			if (debugLog.enabled) echo += log.name(sourceUnit) + ' inflicts heartseeker ' + heartseeker + ' on ' + log.name(target) + '<br>';
+			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' inflicts heartseeker ' + heartseeker + ' on ' + log.name(target));
 
 			return 1;
 		},
@@ -932,14 +940,14 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' hexes ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' hexes ' + log.name(target) + ' but it is invisible!');
 					continue;
 				}
 
 				affected++;
 
 				target['enfeebled'] += enfeeble;
-				if (debugLog.enabled) echo += log.name(sourceUnit) + ' hexes ' + log.name(target) + ' by ' + enfeeble + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' hexes ' + log.name(target) + ' by ' + enfeeble);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -1011,7 +1019,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' weakens ' + log.name(target) + ' but it is invisible!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' weakens ' + log.name(target) + ' but it is invisible!');
 					continue;
 				}
 
@@ -1019,8 +1027,8 @@ var SIMULATOR = {};
 
 				target.attack_weaken += weaken;
 				if (debugLog.enabled) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(sourceUnit) + ' weakens ' + log.name(target) + ' by ' + weaken + '<br>';
+					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+					debugLog.appendLines(log.name(sourceUnit) + ' weakens ' + log.name(target) + ' by ' + weaken);
 				}
 
 				if (target.backlash) {
@@ -1080,8 +1088,8 @@ var SIMULATOR = {};
 
 				target.attack_rally += rally_amt;
 				if (debugLog.enabled) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(sourceUnit) + ' enlarges ' + log.name(target) + ' by ' + rally_amt + '<br>';
+					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+					debugLog.appendLines(log.name(sourceUnit) + ' enlarges ' + log.name(target) + ' by ' + rally_amt);
 				}
 
 				affected++;
@@ -1134,7 +1142,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' empowers ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' empowers ' + log.name(target) + ' but it is nullified!');
 					continue;
 				}
 
@@ -1148,8 +1156,8 @@ var SIMULATOR = {};
 
 				target.attack_rally += rally_amt;
 				if (debugLog.enabled) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(sourceUnit) + ' empowers ' + log.name(target) + ' by ' + rally_amt + '<br>';
+					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+					debugLog.appendLines(log.name(sourceUnit) + ' empowers ' + log.name(target) + ' by ' + rally_amt);
 				}
 			}
 
@@ -1184,13 +1192,13 @@ var SIMULATOR = {};
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
-						if (debugLog.enabled) echo += log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' but it is nullified!<br>';
+						if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' but it is nullified!');
 					} else {
 						affected++;
 						target.attack_rally += rally;
 						if (debugLog.enabled) {
-							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-							echo += log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' by ' + rally + '<br>';
+							if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+							debugLog.appendLines(log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' by ' + rally);
 						}
 					}
 				}
@@ -1231,8 +1239,8 @@ var SIMULATOR = {};
 			if (fervorAmount) {
 				sourceUnit['attack_rally'] += fervorAmount;
 				if (debugLog.enabled) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(sourceUnit) + ' activates fervor for ' + fervorAmount + '<br>';
+					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+					debugLog.appendLines(log.name(sourceUnit) + ' activates fervor for ' + fervorAmount);
 				}
 				return 1;
 			} else {
@@ -1284,7 +1292,7 @@ var SIMULATOR = {};
 					// Check Evade
 					if (target.invisible) {
 						target.invisible--;
-						if (debugLog.enabled) echo += log.name(sourceUnit) + ' throws a bomb at ' + log.name(target) + ' but it is invisible!<br>';
+						if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' throws a bomb at ' + log.name(target) + ' but it is invisible!');
 						continue;
 					}
 
@@ -1298,11 +1306,11 @@ var SIMULATOR = {};
 					var shatter = damageInfo.shatter;
 
 					doDamage(sourceUnit, target, strike_damage, shatter, function (source, target, amount) {
-						echo += '<u>(Barrage: +1';
-						echo += damageInfo.echo;
-						echo += ') = ' + amount + ' damage</u><br>';
-						echo += log.name(source) + ' throws a bomb at ' + log.name(target) + ' for ' + amount + ' damage';
-						echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+						debugLog.appendLines('<u>(Barrage: +1');
+						debugLog.appendLines(damageInfo.echo);
+						debugLog.appendLines(') = ' + amount + ' damage</u>');
+						debugLog.appendLines(log.name(source) + ' throws a bomb at ' + log.name(target) + ' for ' + amount + ' damage');
+						debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 					});
 				}
 			}
@@ -1359,7 +1367,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!');
 					continue;
 				}
 
@@ -1368,11 +1376,11 @@ var SIMULATOR = {};
 				var enhancements = target.enhanced;
 				if (x > 0) {
 					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + x + '<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + x);
 				} else if (mult > 0) {
 					// temporarily use negatives for multiplier
 					enhancements[s] = -mult;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + (mult * 100) + '%');
 				}
 			}
 
@@ -1420,7 +1428,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enrages ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enrages ' + log.name(target) + ' but it is nullified!');
 					continue;
 				}
 
@@ -1432,8 +1440,8 @@ var SIMULATOR = {};
 
 				target['enraged'] += amount;
 				if (debugLog.enabled) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += log.name(sourceUnit) + ' enrages ' + log.name(target) + ' by ' + amount + '<br>';
+					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+					debugLog.appendLines(log.name(sourceUnit) + ' enrages ' + log.name(target) + ' by ' + amount);
 				}
 			}
 
@@ -1492,7 +1500,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!');
 					continue;
 				}
 
@@ -1502,10 +1510,10 @@ var SIMULATOR = {};
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' existing ' + log.skill(skill) + ' by ' + x + '<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' existing ' + log.skill(skill) + ' by ' + x);
 				} else {
 					target.imbue(skill);
-					if (debugLog.enabled) echo += log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' with ' + log.skill(skill) + '<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' with ' + log.skill(skill));
 				}
 			}
 
@@ -1559,7 +1567,7 @@ var SIMULATOR = {};
 				target.enfeebled += mark;
 				sourceUnit.mark_target = target.uid;
 
-				if (debugLog.enabled) echo += log.name(sourceUnit) + ' marks ' + log.name(target) + ' by ' + mark + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' marks ' + log.name(target) + ' by ' + mark);
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -1599,7 +1607,7 @@ var SIMULATOR = {};
 			var fromKey = target.key;
 			if (toKey === toKey) {
 				// No change in position
-				if (debugLog.enabled) echo += log.name(sourceUnit) + ' activates snaretongue and keeps ' + log.name(target) + ' in front of it<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' activates snaretongue and keeps ' + log.name(target) + ' in front of it');
 				return false;
 			}
 
@@ -1632,7 +1640,7 @@ var SIMULATOR = {};
 				field_x_assaults[i].key = i;
 			}
 
-			if (debugLog.enabled) echo += log.name(sourceUnit) + ' activates snaretongue and pulls ' + log.name(target) + ' in front of it<br>';
+			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' activates snaretongue and pulls ' + log.name(target) + ' in front of it');
 
 			// Set countdown so skill can't trigger twice on dual-strike turn
 			skill.countdown = 1;
@@ -1656,8 +1664,8 @@ var SIMULATOR = {};
 			}
 
 			doDamage(sourceUnit, target, damage, null, function (source, target, amount) {
-				echo += log.name(source) + ' ambushes ' + log.name(target) + ' for ' + amount + ' damage';
-				echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+				debugLog.appendLines(log.name(source) + ' ambushes ' + log.name(target) + ' for ' + amount + ' damage');
+				debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 			});
 
 			return 1;
@@ -1678,7 +1686,7 @@ var SIMULATOR = {};
 			target.timer += slow;
 
 			if (debugLog.enabled) {
-				echo += log.name(sourceUnit) + ' slows ' + log.name(target) + ' by ' + slow + '<br>';
+				debugLog.appendLines(log.name(sourceUnit) + ' slows ' + log.name(target) + ' by ' + slow);
 			}
 
 			return 1;
@@ -1708,7 +1716,7 @@ var SIMULATOR = {};
 			playCard(unearthedCard, dying.owner, true);
 
 			if (debugLog.enabled) {
-				echo += log.name(unearthedCard) + ' is unearthed</br>';
+				debugLog.appendLines(log.name(unearthedCard) + ' is unearthed</br>');
 			}
 
 			return 1;
@@ -1725,7 +1733,7 @@ var SIMULATOR = {};
 			dying.reanimated = true;
 
 			if (debugLog.enabled) {
-				echo += ' and is reanimated</br>';
+				debugLog.appendLines(' and is reanimated</br>');
 			}
 
 			return 1;
@@ -1737,7 +1745,7 @@ var SIMULATOR = {};
 	function activation_skills(sourceUnit) {
 
 		if (sourceUnit.silenced) {
-			if (debugLog.enabled) echo += log.name(sourceUnit) + " is silenced and cannot use skills</br>";
+			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + " is silenced and cannot use skills</br>");
 			return;
 		}
 
@@ -1986,7 +1994,7 @@ var SIMULATOR = {};
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				if (debugLog.enabled) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+				if (debugLog.enabled) debugLog.appendLines('<u>Turn ' + turn + ' ends</u><br><br></div>');
 				return true;
 			}
 		}
@@ -2037,13 +2045,13 @@ var SIMULATOR = {};
 		if (debugLog.enabled) {
 			var commander_p = log.name(field[p]['commander']);
 			var deck_p = deck[p].deck;
-			echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u><br>';
+			debugLog.appendLines('<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u>');
 
 			if (turn <= 2) {
-				echo += debugDraw(commander_p, deck_p, 0);
-				echo += debugDraw(commander_p, deck_p, 1);
+				debugLog.appendLines(debugDraw(commander_p, deck_p, 0));
+				debugLog.appendLines(debugDraw(commander_p, deck_p, 1));
 			}
-			echo += debugDraw(commander_p, deck_p, 2);
+			debugLog.appendLines(debugDraw(commander_p, deck_p, 2));
 		}
 
 		var field_p = field[p];
@@ -2062,7 +2070,7 @@ var SIMULATOR = {};
 			if (current_assault.timer > 0) {
 				if (turn !== 3 || !tournament) {
 					current_assault.timer--;
-					if (debugLog.enabled) echo += log.name(current_assault) + ' reduces its timer<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' reduces its timer');
 				}
 			}
 
@@ -2071,13 +2079,13 @@ var SIMULATOR = {};
 				var enemy = field_o_assaults[i];
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
 					current_assault.attack_valor += current_assault.valor;
-					if (debugLog.enabled) echo += log.name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor);
 				} else if (debugLog.enabled) {
-					echo += log.name(current_assault) + ' activates valor but ';
+					debugLog.appendLines(log.name(current_assault) + ' activates valor but ');
 					if (!enemy) {
-						echo += 'there is no opposing enemy.<br/>';
+						debugLog.appendLines('there is no opposing enemy.');
 					} else {
-						echo += 'enemy is not strong enough.<br/>';
+						debugLog.appendLines('enemy is not strong enough.');
 					}
 				}
 			}
@@ -2151,7 +2159,7 @@ var SIMULATOR = {};
 
 		if (drawCards) {
 			hideTable();
-			outputTurns(echo);
+			outputTurns();
 			animations.drawField(field, null, performTurns, turn);
 			SIMULATOR.sendBattleUpdate(turn);
 		}
@@ -2175,7 +2183,7 @@ var SIMULATOR = {};
 		}
 		if (drawCards) {
 			hideTable();
-			outputTurns(echo);
+			outputTurns();
 			animations.drawField(field, drawableHand, onCardChosen, turn);
 		}
 		if (choice === undefined) {
@@ -2338,14 +2346,14 @@ var SIMULATOR = {};
 
 			// Check jammed ("frozen")
 			if (current_assault['jammed']) {
-				if (debugLog.enabled) echo += log.name(current_assault) + ' is frozen and cannot attack<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' is frozen and cannot attack');
 				continue;
 			}
 
 			var activations = 1;
 			if (current_assault.dualstrike_triggered) {
 				activations++;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' activates dualstrike<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' activates dualstrike');
 			}
 
 			for (; activations > 0; activations--) {
@@ -2361,7 +2369,7 @@ var SIMULATOR = {};
 				// Check attack
 				// - check rally and weaken
 				if (!current_assault.hasAttack()) {
-					if (debugLog.enabled && current_assault.permanentAttack() > 0) echo += log.name(current_assault) + ' is weakened and cannot attack<br>';
+					if (debugLog.enabled && current_assault.permanentAttack() > 0) debugLog.appendLines(log.name(current_assault) + ' is weakened and cannot attack');
 					continue;
 				}
 
@@ -2391,7 +2399,7 @@ var SIMULATOR = {};
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		removeDead();
 
-		if (debugLog.enabled) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+		if (debugLog.enabled) debugLog.appendLines('<u>Turn ' + turn + ' ends</u><br><br></div>');
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -2431,10 +2439,10 @@ var SIMULATOR = {};
 
 		var echo = '';
 		if (debugLog.enabled) {
-			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-			if (shrouded) echo += ' Stasis: -' + shrouded;
-			if (protect) echo += ' Barrier: -' + protect;
-			if (warded) echo += ' Ward: -' + warded;
+			if (enfeeble) debugLog.appendLines(' Enfeeble: +' + enfeeble);
+			if (shrouded) debugLog.appendLines(' Stasis: -' + shrouded);
+			if (protect) debugLog.appendLines(' Barrier: -' + protect);
+			if (warded) debugLog.appendLines(' Ward: -' + warded);
 		}
 
 		if (damage < 0) {
@@ -2469,9 +2477,9 @@ var SIMULATOR = {};
 
 			if (debugLog.enabled) {
 				if (dualStrike.countdown) {
-					echo += log.name(unit) + ' charges  dualstrike (ready in ' + dualStrike.countdown + ' turns)<br/>';
+					debugLog.appendLines(log.name(unit) + ' charges  dualstrike (ready in ' + dualStrike.countdown + ' turns)');
 				} else {
-					echo += log.name(unit) + ' readies dualstrike<br/>';
+					debugLog.appendLines(log.name(unit) + ' readies dualstrike');
 				}
 			}
 		}
@@ -2484,9 +2492,9 @@ var SIMULATOR = {};
 				skill.countdown--;
 				if (debugLog.enabled) {
 					if (skill.countdown) {
-						echo += log.name(unit) + ' charges ' + skillApi.nameFromId(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
+						debugLog.appendLines(log.name(unit) + ' charges ' + skillApi.nameFromId(skill.id) + ' (ready in ' + skill.countdown + ' turns)');
 					} else {
-						echo += log.name(unit) + ' readies ' + skillApi.nameFromId(skill.id) + '<br/>';
+						debugLog.appendLines(log.name(unit) + ' readies ' + skillApi.nameFromId(skill.id));
 					}
 				}
 			}
@@ -2522,7 +2530,7 @@ var SIMULATOR = {};
 				}
 
 				current_assault.health_left += regen_health;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' regenerates ' + regen_health + ' health');
 			}
 
 			// Poison
@@ -2533,10 +2541,10 @@ var SIMULATOR = {};
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				doDamage(null, current_assault, amount, null, function (source, target, amount) {
-					echo += log.name(target) + ' takes ' + amount;
-					if (warded) echo += ' (Poison: +' + current_assault.poisoned + ' Ward: -' + warded + ')';
-					echo += ' poison damage';
-					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+					debugLog.appendLines(log.name(target) + ' takes ' + amount);
+					if (warded) debugLog.appendLines(' (Poison: +' + current_assault.poisoned + ' Ward: -' + warded + ')');
+					debugLog.appendLines(' poison damage');
+					debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 				});
 			}
 
@@ -2548,10 +2556,10 @@ var SIMULATOR = {};
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				doDamage(null, current_assault, amount, null, function (source, target, amount) {
-					echo += log.name(target) + ' takes ' + amount;
-					if (warded) echo += ' (Venom: +' + current_assault.envenomed + ' Ward: -' + warded + ')';
-					echo += ' venom damage';
-					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+					debugLog.appendLines(log.name(target) + ' takes ' + amount);
+					if (warded) debugLog.appendLines(' (Venom: +' + current_assault.envenomed + ' Ward: -' + warded + ')');
+					debugLog.appendLines(' venom damage');
+					debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 				});
 			}
 
@@ -2564,12 +2572,12 @@ var SIMULATOR = {};
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
 				}
 				doDamage(null, current_assault, amount, null, function (source, target, amount) {
-					echo += log.name(target) + ' takes ' + amount;
-					if (warded) echo += ' (Scorch: +' + scorch.amount + ' Ward: -' + warded + ')';
-					echo += ' scorch damage';
-					if (!target.isAlive()) echo += ' and it dies';
-					else if (!target.scorched) echo += ' and scorch wears off';
-					echo += '<br>';
+					debugLog.appendLines(log.name(target) + ' takes ' + amount);
+					if (warded) debugLog.appendLines(' (Scorch: +' + scorch.amount + ' Ward: -' + warded + ')');
+					debugLog.appendLines(' scorch damage');
+					if (!target.isAlive()) debugLog.appendLines(' and it dies');
+					else if (!target.scorched) debugLog.appendLines(' and scorch wears off');
+					debugLog.appendLines('');
 				});
 
 				if (scorch['timer'] > 1) {
@@ -2588,13 +2596,13 @@ var SIMULATOR = {};
 					current_assault.corroded = false;
 					current_assault.attack_corroded = 0;
 					if (debugLog.enabled) {
-						echo += log.name(current_assault) + ' recovers from corrosion<br>';
+						debugLog.appendLines(log.name(current_assault) + ' recovers from corrosion');
 					}
 				} else {
 					var corrosion = corroded.amount;
 					current_assault.attack_corroded = corrosion;
 					if (debugLog.enabled) {
-						echo += log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
+						debugLog.appendLines(log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion');
 					}
 				}
 			}
@@ -2628,7 +2636,7 @@ var SIMULATOR = {};
 					}
 				}
 			}
-			if (taunted && debugLog.enabled) echo += log.name(target) + ' taunts ' + log.name(current_assault);
+			if (taunted && debugLog.enabled) debugLog.appendLines(log.name(target) + ' taunts ' + log.name(current_assault));
 		}
 
 		// -- CALCULATE DAMAGE --
@@ -2639,13 +2647,13 @@ var SIMULATOR = {};
 		damage += enfeeble;
 
 		if (debugLog.enabled) {
-			echo += '<u>(Attack: +' + current_assault.attack;
-			if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
-			if (current_assault.attack_valor) echo += ' Valor: +' + current_assault.attack_valor;
-			if (current_assault.attack_rally) echo += ' Rally: +' + current_assault.attack_rally;
-			if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
-			if (current_assault.attack_corroded) echo += ' Corrosion: -' + current_assault.attack_corroded;
-			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+			debugLog.appendLines('<u>(Attack: +' + current_assault.attack);
+			if (current_assault.attack_berserk) debugLog.appendLines(' Berserk: +' + current_assault.attack_berserk);
+			if (current_assault.attack_valor) debugLog.appendLines(' Valor: +' + current_assault.attack_valor);
+			if (current_assault.attack_rally) debugLog.appendLines(' Rally: +' + current_assault.attack_rally);
+			if (current_assault.attack_weaken) debugLog.appendLines(' Weaken: -' + current_assault.attack_weaken);
+			if (current_assault.attack_corroded) debugLog.appendLines(' Corrosion: -' + current_assault.attack_corroded);
+			if (enfeeble) debugLog.appendLines(' Enfeeble: +' + enfeeble);
 		}
 
 		// Pierce
@@ -2666,17 +2674,17 @@ var SIMULATOR = {};
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debugLog.enabled) {
-				echo += ' Barrier: -' + protect;
+				debugLog.appendLines(' Barrier: -' + protect);
 			}
 			// Remove pierce from Barrier
 			if (pierce) {
 				if (pierce >= protect) {
-					if (debugLog.enabled) echo += ' Pierce: +' + protect;
+					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + protect);
 					pierce -= protect;
 					protect = 0;
 					target.protected = 0;
 				} else {
-					if (debugLog.enabled) echo += ' Pierce: +' + pierce;
+					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
 					protect -= pierce;
 					target.protected -= pierce;
 					// Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
@@ -2698,15 +2706,15 @@ var SIMULATOR = {};
 		if (shrouded) {
 			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
 			if (debugLog.enabled) {
-				echo += ' Shroud: -' + shrouded;
+				debugLog.appendLines(' Shroud: -' + shrouded);
 			}
 			// Remove pierce from Shroud
 			if (pierce) {
 				if (pierce > shrouded) {
-					if (debugLog.enabled) echo += ' Pierce: +' + shrouded;
+					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + shrouded);
 					shrouded = 0;
 				} else {
-					if (debugLog.enabled) echo += ' Pierce: +' + pierce;
+					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
 					shrouded -= pierce;
 				}
 			}
@@ -2715,15 +2723,15 @@ var SIMULATOR = {};
 		if (armor) {
 			armor += unitInfo.getEnhancement(target, 'armored', armor);
 			if (debugLog.enabled) {
-				echo += ' Armor: -' + armor;
+				debugLog.appendLines(' Armor: -' + armor);
 			}
 			// Remove pierce from Armor
 			if (pierce) {
 				if (pierce > armor) {
-					if (debugLog.enabled) echo += ' Pierce: +' + armor;
+					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + armor);
 					armor = 0;
 				} else {
-					if (debugLog.enabled) echo += ' Pierce: +' + pierce;
+					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
 					armor -= pierce;
 				}
 			}
@@ -2732,14 +2740,14 @@ var SIMULATOR = {};
 
 		if (damage < 0) damage = 0;
 
-		if (debugLog.enabled) echo += ') = ' + damage + ' damage</u><br>';
+		if (debugLog.enabled) debugLog.appendLines(') = ' + damage + ' damage</u>');
 
 		// -- END OF CALCULATE DAMAGE --
 
 		// Deal damage to target
 		doDamage(current_assault, target, damage, null, function (source, target, amount) {
-			echo += log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage';
-			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+			debugLog.appendLines(log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage');
+			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 		});
 
 		if (showAnimations) {
@@ -2763,7 +2771,7 @@ var SIMULATOR = {};
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts poison(' + poison + ') on ' + log.name(target) + '<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts poison(' + poison + ') on ' + log.name(target));
 				}
 			}
 
@@ -2781,7 +2789,7 @@ var SIMULATOR = {};
 					var hexIncrease = venom - target.envenomed;
 					target.envenomed = venom;
 					target.enfeebled += hexIncrease;
-					if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts venom(' + venom + ') on ' + log.name(target) + '<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts venom(' + venom + ') on ' + log.name(target));
 				}
 			}
 
@@ -2793,7 +2801,7 @@ var SIMULATOR = {};
 				var enhanced = unitInfo.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target) + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target));
 			}
 
 			// Silence
@@ -2801,7 +2809,7 @@ var SIMULATOR = {};
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' inflicts silence on ' + log.name(target) + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts silence on ' + log.name(target));
 			}
 
 			// Daze
@@ -2814,7 +2822,7 @@ var SIMULATOR = {};
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' dazed ' + log.name(target) + ' for ' + dazed + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' dazed ' + log.name(target) + ' for ' + dazed);
 			}
 		}
 
@@ -2841,7 +2849,7 @@ var SIMULATOR = {};
 				}
 
 				current_assault.health_left += leech_health;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' siphons ' + leech_health + ' health<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' siphons ' + leech_health + ' health');
 			}
 
 			if (current_assault.reinforce) {
@@ -2850,7 +2858,7 @@ var SIMULATOR = {};
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' reinforces itself with barrier ' + reinforce);
 			}
 
 			// Counter
@@ -2876,7 +2884,7 @@ var SIMULATOR = {};
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				if (debugLog.enabled) echo += log.name(target) + ' inflicts counterburn(' + scorch + ') on ' + log.name(current_assault) + '<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(target) + ' inflicts counterburn(' + scorch + ') on ' + log.name(current_assault));
 			}
 
 			// Counterpoison
@@ -2888,7 +2896,7 @@ var SIMULATOR = {};
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					if (debugLog.enabled) echo += log.name(target) + ' inflicts counterpoison(' + poison + ') on ' + log.name(current_assault) + '<br>';
+					if (debugLog.enabled) debugLog.appendLines(log.name(target) + ' inflicts counterpoison(' + poison + ') on ' + log.name(current_assault));
 				}
 			}
 
@@ -2902,7 +2910,7 @@ var SIMULATOR = {};
 					var fury = furyBase + furyEnhancement;
 					target.attack_berserk += fury;
 					if (debugLog.enabled) {
-						echo += log.name(target) + ' activates fury and gains ' + fury + ' attack<br>';
+						debugLog.appendLines(log.name(target) + ' activates fury and gains ' + fury + ' attack');
 					}
 				}
 
@@ -2911,7 +2919,7 @@ var SIMULATOR = {};
 
 			if (target.enraged > 0) {
 				target.attack_berserk += target.enraged;
-				if (debugLog.enabled) echo += log.name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
+				if (debugLog.enabled) debugLog.appendLines(log.name(target) + " is enraged and gains " + target.enraged + " attack!</br>");
 			}
 
 			// Berserk
@@ -2923,7 +2931,7 @@ var SIMULATOR = {};
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
-				if (debugLog.enabled) echo += log.name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
+				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' activates berserk and gains ' + berserk + ' attack');
 			}
 		}
 
@@ -2941,10 +2949,10 @@ var SIMULATOR = {};
 			} else {
 				current_assault.corroded = { amount: corrosion, timer: 2 };
 			}
-			if (debugLog.enabled) echo += log.name(target) + ' inflicts corrosion(' + corrosion + ') on ' + log.name(current_assault) + '<br>';
+			if (debugLog.enabled) debugLog.appendLines(log.name(target) + ' inflicts corrosion(' + corrosion + ') on ' + log.name(current_assault));
 			current_assault.attack_corroded = corrosion;
 			if (debugLog.enabled) {
-				echo += log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
+				debugLog.appendLines(log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion');
 			}
 		}
 
@@ -2968,15 +2976,15 @@ var SIMULATOR = {};
 		var shatter = damageInfo.shatter;
 
 		if (debugLog.enabled) {
-			echo += '<u>(' + counterType + ': +' + counterBase;
-			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
-			echo += damageInfo.echo;
-			echo += ') = ' + counterDamage + ' damage</u><br>';
+			debugLog.appendLines('<u>(' + counterType + ': +' + counterBase);
+			if (counterEnhancement) debugLog.appendLines(' Enhance: +' + counterEnhancement);
+			debugLog.appendLines(damageInfo.echo);
+			debugLog.appendLines(') = ' + counterDamage + ' damage</u>');
 		}
 
 		doDamage(defender, attacker, counterDamage, null, function (source, target, amount) {
-			echo += log.name(target) + ' takes ' + amount + ' ' + counterType.toLowerCase() + ' damage';
-			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+			debugLog.appendLines(log.name(target) + ' takes ' + amount + ' ' + counterType.toLowerCase() + ' damage');
+			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 		});
 	}
 
