@@ -43,14 +43,14 @@
   var CardDetailsCtrl = function ($scope, $window) {
     $window.cardDetailScope = $scope;
     if ($scope.id && $scope.level) {
-      $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
+      $scope.unit = $window.unitInfo.create($scope.id, $scope.level),
         $scope.card = getCardInfo($scope.unit);
     }
 
     $scope.setUnit = function (unit) {
       $scope.id = unit.id;
       $scope.level = unit.level;
-      $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
+      $scope.unit = $window.unitInfo.create($scope.id, $scope.level),
         $scope.card = getCardInfo($scope.unit);
       $scope.releaseDate = (function () {
         var hiddenUntil = $scope.card.hidden_until;

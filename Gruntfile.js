@@ -23,7 +23,6 @@ module.exports = function (grunt) {
                     'scripts/modules/urlHelpers.js',
 
                     'scripts/modules/base64.js',
-
                     'scripts/modules/cardApi.js',
 
                     'scripts/modules/unitInfo.js',
@@ -55,14 +54,13 @@ module.exports = function (grunt) {
 
                     'scripts/modules/log.js',
                     'scripts/modules/base64.js',
-
                     'scripts/modules/cardApi.js',
                     
-                    'scripts/modules/loadDeck.js',
                     'scripts/modules/unitInfo.js',
                     'scripts/modules/bgeApi.js',
                     'scripts/modules/cardUI.js',
 
+                    'scripts/modules/loadDeck.js',
                     'scripts/modules/animations.js',
 
                     'scripts/modules/simController.js',

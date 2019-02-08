@@ -1,6 +1,7 @@
 define('loadDeck', function () {
 	var cardInfo = require('cardInfo');
     var cardApi = require('cardApi');
+    var unitInfo = require('unitInfo');
     
     var api = {
         mission: loadMissionDeck,
@@ -106,7 +107,7 @@ define('loadDeck', function () {
             unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
         }
 
-        var unit = makeUnitInfo(cardID, unitLevel);
+        var unit = unitInfo.create(cardID, unitLevel);
 
         if (random) {
             unit.randomInfo = { unitInfo: unitInfo, level: level, maxedAt: maxedAt };
@@ -255,7 +256,7 @@ define('loadDeck', function () {
 
     function getDefaultDeck() {
         return {
-            commander: elariaCaptain,
+            commander: unitInfo.defaultCommander,
             deck: []
         };
     }

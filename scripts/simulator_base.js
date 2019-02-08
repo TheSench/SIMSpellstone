@@ -1573,7 +1573,7 @@ var SIMULATOR = {};
 			}
 
 			// Get base card
-			var unearthedUnit = makeUnitInfo((skill.card || dying.id), (skill.level || skill.x));
+			var unearthedUnit = unitInfo.create((skill.card || dying.id), (skill.level || skill.x));
 			var unearthedCard = cardApi.byIdWithBgeApplied(unearthedUnit, null, true);
 			unearthedCard.isToken = true;
 
@@ -1731,7 +1731,7 @@ var SIMULATOR = {};
 			var towerBGE = BATTLEGROUNDS[tower_type];
 			var tower = towerBGE.effect[tower_level];
 			if (tower) {
-				tower = makeUnitInfo(tower.id, tower.level);
+				tower = unitInfo.create(tower.id, tower.level);
 				var towerCard = cardApi.byIdWithBgeApplied(tower);
 				var uid = 150;
 				towerCard.uid = uid;

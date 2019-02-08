@@ -14,7 +14,7 @@ var delayTutorial = true;
 
 var fromInventory = false;
 var deck = [];
-deck.commander = elariaCaptain;
+deck.commander = unitInfo.defaultCommander;
 deck.deck = [];
 var inventory;
 var inventoryMode = false;
@@ -418,7 +418,7 @@ function duplicate(event, htmlCard) {
 		var unit = deck.deck[index - 1];
 		var clone = $htmlCard.clone();
 		clone.insertBefore($htmlCard.parent().children()[index]);
-		deck.deck.splice(index, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
+		deck.deck.splice(index, 0, unitInfo.create(unit.id, unit.level, unit.runes || []));
 		updateHash();
 	}
 }
@@ -437,7 +437,7 @@ var drawCardList = function () {
 		inventory = base64.decodeHash(inventory);
 		var commander = inventory.commander;
 		inventory = inventory.deck;
-		if (commander && !unitInfo.areEqual(commander, elariaCaptain)) {
+		if (commander && !unitInfo.areEqual(commander, unitInfo.defaultCommander)) {
 			inventory.push(commander);
 		}
 
@@ -616,7 +616,7 @@ var addUnitLevels = function (id) {
 	var card = allCards[id];
 	if (card) {
 		for (var level = 1; level <= card.maxLevel; level++) {
-			var unit = makeUnitInfo(id, level);
+			var unit = unitInfo.create(id, level);
 			units.push(unit);
 			if (showUpgrades || level == card.maxLevel) unitsShown.push(unit);
 		}
@@ -634,7 +634,7 @@ var resetDeck = function () {
 var disableTracking = false;
 var hash_changed = function (hash) {
 	if (fromInventory) {
-		if (!unitInfo.areEqual(deck.commander, elariaCaptain)) unitsShown.push(deck.commander);
+		if (!unitInfo.areEqual(deck.commander, unitInfo.defaultCommander)) unitsShown.push(deck.commander);
 		unitsShown.push.apply(unitsShown, deck.deck);
 		redrawCardList(true);
 	}
@@ -648,7 +648,7 @@ var hash_changed = function (hash) {
 	if (!hash) deck.commander = null;
 
 	if (fromInventory) {
-		if (!unitInfo.areEqual(deck.commander, elariaCaptain)) removeFromInventory(deck.commander);
+		if (!unitInfo.areEqual(deck.commander, unitInfo.defaultCommander)) removeFromInventory(deck.commander);
 		for (var i = 0; i < deck.deck.length; i++) {
 			removeFromInventory(deck.deck[i]);
 		}
@@ -783,9 +783,9 @@ var removeFromDeck = function (htmlCard) {
 		doDrawDeck();
 	} else*/ if (index == 0) {
 		unit = deck.commander;
-		if (unitInfo.areEqual(unit, elariaCaptain)) return;
-		deck.commander = elariaCaptain;
-		var card = cardApi.byId(elariaCaptain);
+		if (unitInfo.areEqual(unit, unitInfo.defaultCommander)) return;
+		deck.commander = unitInfo.defaultCommander;
+		var card = cardApi.byId(unitInfo.defaultCommander);
 		//$htmlCard.replaceWith(cardUI.create_card_html(card));
 		var captain = $(cardUI.create_card_html(card));
 		replaceCard($htmlCard, captain);
@@ -2331,7 +2331,7 @@ function generateLink() {
 		params.push("hash=" + hash);
 	}
 	if (inventory) {
-		params.push("inventory=" + base64.encodeHash({ commander: elariaCaptain, deck: inventory }));
+		params.push("inventory=" + base64.encodeHash({ commander: unitInfo.defaultCommander, deck: inventory }));
 	}
 	if (inventoryMode) {
 		params.push("unlimited");

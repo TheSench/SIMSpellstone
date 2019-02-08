@@ -25,10 +25,10 @@ define('base64', function () {
     
     // Used to determine how to hash runeIDs
     var maxRuneID = 1000;
-    function unitInfoToBase64(unitInfo) {
+    function unitInfoToBase64(unit) {
     
-        var baseID = parseInt(unitInfo.id);
-        var level = (parseInt(unitInfo.level) - 1);
+        var baseID = parseInt(unit.id);
+        var level = (parseInt(unit.level) - 1);
     
         if (noFusionInHash[baseID]) {
             var fusion = Math.floor(level / 7);
@@ -39,8 +39,8 @@ define('base64', function () {
         }
     
         var runeID = 0;
-        if (unitInfo.runes.length) {
-            runeID = parseInt(unitInfo.runes[0].id);
+        if (unit.runes.length) {
+            runeID = parseInt(unit.runes[0].id);
             runeID %= 5000; // Runes IDs are all in the range of 5001 - 5500
         }
     
@@ -71,14 +71,14 @@ define('base64', function () {
             unitID = Number(fusion + '' + unitID);
         }
     
-        var unitInfo = makeUnitInfo(unitID, level);
+        var unit = unitInfo.create(unitID, level);
         if (runeID > 0) {
-            unitInfo.runes.push({
+            unit.runes.push({
                 id: runeID + 5000
             });
         }
     
-        return unitInfo;
+        return unit;
     }
     
     function decimalToBase64(dec, len) {
@@ -115,31 +115,31 @@ define('base64', function () {
     function decode(hash) {
 
         var current_deck = { deck: [] };
-        var unitInfo;
+        var unit;
         var entryLength = 5;
         
         for (var i = 0; i < hash.length; i += entryLength) {
             var unitHash = hash.substr(i, entryLength);
-            unitInfo = base64ToUnitInfo(unitHash);
+            unit = base64ToUnitInfo(unitHash);
 
-            if (unitInfo) {
-                if (cardInfo.loadCard(unitInfo.id)) {
+            if (unit) {
+                if (cardInfo.loadCard(unit.id)) {
                     // Repeat previous card multiple times
-                    if (!current_deck.commander && cardInfo.isCommander(unitInfo.id)) {
-                        current_deck.commander = unitInfo;
+                    if (!current_deck.commander && cardInfo.isCommander(unit.id)) {
+                        current_deck.commander = unit;
                         // Add to deck
                     } else {
-                        current_deck.deck.push(unitInfo);
+                        current_deck.deck.push(unit);
                     }
                 } else {
-                    console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
+                    console.log("Could not decode '" + unitHash + "' (" + unit.id + ")");
                 }
             }
         }
 
         // Default commander to Elaria Captain if none found
         if (!current_deck.commander) {
-            current_deck.commander = elariaCaptain;
+            current_deck.commander = unit.defaultCommander;
         }
 
         return current_deck;

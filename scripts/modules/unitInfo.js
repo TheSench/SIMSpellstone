@@ -3,11 +3,23 @@ define('unitInfo', function () {
         areEqual: areEqual,
         getEnhancement: getEnhancement,
         initializeUnit: initializeUnit,
-        isImbued: isImbued
+        isImbued: isImbued,
+        create: makeUnitInfo,
+        elariaCaptain: makeUnitInfo(202, 1)
     };
     
     var base64 = require('base64');
     var cardApi = require('cardApi');
+
+    function makeUnitInfo(id, level, runes) {
+        var unit = {
+            id: Number(id),
+            level: Number(level),
+            runes: []
+        };
+        if (runes) unit.runes = runes;
+        return unit;
+    }
 
     function areEqual(unitInfo1, unitInfo2) {
         if ((!unitInfo1) !== (!unitInfo2)) return false; // Silly null-check

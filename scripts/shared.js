@@ -30,29 +30,3 @@ function shuffle(list) {
         list[j] = tempi;
     }
 }
-
-
-// Convert card list into an actual deck
-// - assume that first card is always commander
-// - possible delimiters include ; , :
-// - sometimes name is not compvare
-// - include common abbreviations, such as EMP, BoD, EQG, etc.
-// - case-insensitive
-// - recognize multiple copies of cards
-// - if can't figure out what card it is, ignore it and move on
-// - support raid-only and mission-only cards by using Dracorex[1042] notation
-
-
-function makeUnitInfo(id, level, runes) {
-    var unit = {
-        id: Number(id),
-        level: Number(level),
-        runes: []
-    };
-    if (runes) unit.runes = runes;
-    return unit;
-}
-
-var elariaCaptain = makeUnitInfo(202, 1);
-
-
