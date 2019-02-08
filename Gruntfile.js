@@ -23,6 +23,7 @@ module.exports = function (grunt) {
                     'scripts/modules/urlHelpers.js',
                     'scripts/modules/storageAPI.js',
 
+                    'scripts/modules/dataUpdater.js',
                     'scripts/modules/base64.js',
                     'scripts/modules/cardApi.js',
 
@@ -31,7 +32,6 @@ module.exports = function (grunt) {
 
                     'scripts/data/fixGlobals.js',
                     'scripts/shared.js',
-                    'scripts/updateCards.js',
                     'scripts/deckbuilder.js',
                     'scripts/localstorage-controller.js',
                     'scripts/ng-card-details-controller.js',
@@ -53,7 +53,8 @@ module.exports = function (grunt) {
                     'scripts/modules/urlHelpers.js',
                     'scripts/modules/debugLog.js',
                     'scripts/modules/storageAPI.js',
-
+                    
+                    'scripts/modules/dataUpdater.js',
                     'scripts/modules/log.js',
                     'scripts/modules/base64.js',
                     'scripts/modules/cardApi.js',
@@ -68,7 +69,6 @@ module.exports = function (grunt) {
                     'scripts/modules/simController.js',
 
                     'scripts/data/fixGlobals.js',
-                    'scripts/updateCards.js',
                     'scripts/shared.js',
                     'scripts/sim_controller.js',
                     'scripts/single_threaded.js',

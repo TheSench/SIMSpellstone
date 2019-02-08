@@ -3,14 +3,16 @@
 var loadDeckDialog;
 var mapBGEDialog;
 
+var bgeApi = require('bgeApi');
+var base64 = require('base64');
+var urlHelpers = require('urlHelpers');
+var loadDeck = require('loadDeck');
+var cardUI = require('cardUI');
+var simController = require('simController');
+var storageAPI = require('storageAPI');
+var dataUpdater = require('dataUpdater');
+
 $(function () {
-    var bgeApi = require('bgeApi');
-    var base64 = require('base64');
-    var urlHelpers = require('urlHelpers');
-    var loadDeck = require('loadDeck');
-    var cardUI = require('cardUI');
-    var simController = require('simController');
-    var storageAPI = require('storageAPI');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();
@@ -199,7 +201,7 @@ function updateGameData(callback) {
             callback();
         };
     }
-    DATA_UPDATER.updateData(done, true);
+    dataUpdater.updateData(done, true);
 }
 
 function setDeckSortable(deckField, associatedHashField) {

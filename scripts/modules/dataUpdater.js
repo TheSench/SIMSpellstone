@@ -1,12 +1,15 @@
 "use strict";
 
-var DATA_UPDATER = (function () {
+define('dataUpdater', function () {
+    var api = {
+        updateData: updateData
+    };
+
     var storageAPI = require('storageAPI');
 
     var baseUrl = "https://spellstone.synapse-games.com";
 
     var newCards = {};
-    var newBGEs = {};
     var newFusions = {};
     var lastUpdate = null;
 
@@ -32,28 +35,6 @@ var DATA_UPDATER = (function () {
         } else {
             if (callback) callback();
         }
-    }
-
-    function updateBGEs() {
-        newBGEs = {};
-        return jQuery.ajax({
-            url: baseUrl + "/assets/battleground_effects.xml",
-            success: function (doc) {
-                var battlegrounds = doc.getElementsByTagName("battleground");
-                for (var i = 0; i < battlegrounds.length; i++) {
-                    var battleground = battlegrounds[i];
-                    var id = getValue(battleground, "id");
-                    var battlegroundData = getBattlegroundFromXML(battleground);
-
-                    if (JSON.stringify(BATTLEGROUNDS[id]) !== JSON.stringify(battlegroundData)) {
-                        newBGEs[id] = battlegroundData;
-                        BATTLEGROUNDS[id] = battlegroundData;
-                    }
-                }
-            },
-            async: true,
-            cache: false
-        });
     }
 
     function doneLoading() {
@@ -83,8 +64,8 @@ var DATA_UPDATER = (function () {
                     var units = doc.getElementsByTagName("unit");
                     for (var i = 0; i < units.length; i++) {
                         var unit = units[i];
-                        var id = getValue(units[i], "id");
-                        var cardData = getUnitFromXML(units[i]);
+                        var id = getValue(unit, "id");
+                        var cardData = getUnitFromXML(unit);
                         var newInfo = false;
                         if (!CARDS[id]) {
                             newInfo = true;
@@ -106,7 +87,7 @@ var DATA_UPDATER = (function () {
                         var resource = node.getElementsByTagName("resource")[0];
                         if (resource) {
                             var base = getValue(resource, "card_id", true);
-                            if (!FUSIONS[base] || FUSIONS[base] != fusion) {
+                            if (!FUSIONS[base] || FUSIONS[base] !== fusion) {
                                 newFusions[base] = fusion;
                                 FUSIONS[base] = fusion;
                             }
@@ -167,7 +148,7 @@ var DATA_UPDATER = (function () {
         unit.sub_type = (getValues(node, "sub_type") || []);
 
         addNumericField(unit, node, "health");
-        if (unit.card_type != "1") {
+        if (unit.card_type !== "1") {
             addNumericField(unit, node, "attack");
             addNumericField(unit, node, "cost");
         }
@@ -226,18 +207,6 @@ var DATA_UPDATER = (function () {
         return upgrade;
     }
 
-    function getBattlegroundFromXML(node) {
-        var battleground = {};
-        battleground.id = getValue(node, "id");
-        battleground.name = getValue(node, "name");
-        battleground.desc = getValue(node, "desc");
-        battleground.desc = getBool(node, "enemy_only");
-        addField(battleground, node, "scale_with_level");
-        addField(battleground, node, "starting_level");
-
-        return battleground;
-    }
-
     function addField(object, node, field, isAtt) {
         var value = getValue(node, field, isAtt);
         if (value != null && value.length > 0) {
@@ -259,17 +228,6 @@ var DATA_UPDATER = (function () {
             var values = getValues(node, name);
             return (values ? values[0] : null);
         }
-    }
-
-    function getBool(node, name, isAtt) {
-        var val;
-        if (isAtt) {
-            val = node.getAttribute(name);
-        } else {
-            var values = getValues(node, name);
-            val = (values ? values[0] : null);
-        }
-        return (val == 1);
     }
 
     function prefix(value, prefix) {
@@ -301,72 +259,5 @@ var DATA_UPDATER = (function () {
         }
     }
 
-    function updateCampaignData() {
-        var promises = [];
-        promises.push(updateCampaigns());
-        promises.push(updateMissions("/assets/missions.xml"));
-        promises.push(updateMissions("/assets/missions_event.xml"));
-        return $.when.apply($, promises);
-    }
-
-    function updateCampaigns() {
-        jQuery.ajax({
-            url: baseUrl + "/assets/campaigns.xml",
-            success: function (doc) {
-                var campaigns = doc.getElementsByTagName("campaign");
-                for (var i = 0; i < campaigns.length; i++) {
-                    var campaign = campaigns[i];
-                    var id = getValue(campaign, "id");
-                    if (!CAMPAIGNS[id]) {
-                        CAMPAIGNS[id] = getCampaignFromXML(campaign);
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
-    }
-
-    function getCampaignFromXML(node) {
-        var campaign = {
-            id: getValue(node, "id"),
-            name: getValue(node, "name"),
-            missions: getCampaignMissionsFromXML(node)
-        };
-        return campaign;
-    }
-
-    function getCampaignMissionsFromXML(node) {
-        var nodes = node.getElementsByTagName("mission_id");
-        var missions = [];
-        for (var i = 0; i < nodes.length; i++) {
-            missions.push(nodes[i].innerHTML);
-        }
-        return missions;
-    }
-
-    function updateMissions(fileURL) {
-        jQuery.ajax({
-            url: baseUrl + fileURL,
-            success: function (doc) {
-                var missions = doc.getElementsByTagName("mission");
-                for (var i = 0; i < missions.length; i++) {
-                    var mission = missions[i];
-                    var id = getValue(mission, "id");
-                    if (!MISSIONS[id]) {
-                        MISSIONS[id] = {
-                            id: id,
-                            name: getValue(mission, "name")
-                        };
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
-    }
-
-    return {
-        updateData: updateData
-    };
-})();
+    return api;
+});

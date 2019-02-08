@@ -9,6 +9,7 @@ var unitInfo = require('unitInfo');
 var urlHelpers = require('urlHelpers');
 var cardUI = require('cardUI');
 var storageAPI = require('storageAPI');
+var dataUpdater = require('dataUpdater');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
@@ -183,7 +184,7 @@ var makeUnitKey = function (unit) {
 };
 
 function updateGameData() {
-	setTimeout(DATA_UPDATER.updateData, 1, loadCards, true);
+	setTimeout(dataUpdater.updateData, 1, loadCards, true);
 }
 
 var loadCards = function () {
