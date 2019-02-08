@@ -5,10 +5,9 @@ define('unitInfo', function () {
         initializeUnit: initializeUnit,
         isImbued: isImbued,
         create: makeUnitInfo,
-        elariaCaptain: makeUnitInfo(202, 1)
+        defaultCommander: makeUnitInfo(202, 1) // Elaria Captain
     };
-    
-    var base64 = require('base64');
+
     var cardApi = require('cardApi');
 
     function makeUnitInfo(id, level, runes) {
@@ -21,11 +20,15 @@ define('unitInfo', function () {
         return unit;
     }
 
+    function getRuneID(unit) {
+        return (unit.runes.length && unit.runes[0].id) || 0;
+    }
+
     function areEqual(unitInfo1, unitInfo2) {
-        if ((!unitInfo1) !== (!unitInfo2)) return false; // Silly null-check
-        var hash1 = base64.fromUnitInfo(unitInfo1);
-        var hash2 = base64.fromUnitInfo(unitInfo2);
-        return (hash1 === hash2);
+        return (!unitInfo1) === (!unitInfo2) // Silly null-check
+            && unitInfo1.id === unitInfo2.id
+            && unitInfo1.level === unitInfo2.level
+            && getRuneID(unitInfo1) === getRuneID(unitInfo2);
     }
 
     function initializeUnit(unit, p, newKey) {
@@ -54,25 +57,25 @@ define('unitInfo', function () {
             case 'flurry':
             case 'toggle':
                 return unit.imbued[skillID];
-    
+
             case 'passive':
                 return (unit[skillID] === unit.imbued[skillID]);
-    
+
             case 'onDeath':
                 imbueSkillsKey = 'onDeathSkills';
                 break;
-    
+
             case 'earlyActivation':
                 imbueSkillsKey = 'earlyActivationSkills';
                 break;
-    
+
             case 'activation':
             default:
                 imbueSkillsKey = 'skill';
                 break;
         }
-    
-    
+
+
         // Mark the first added skill index
         if (unit.imbued[imbueSkillsKey] !== undefined) {
             return (i >= unit.imbued[imbueSkillsKey]);
@@ -80,6 +83,6 @@ define('unitInfo', function () {
             return false;
         }
     }
-    
+
     return api;
 });

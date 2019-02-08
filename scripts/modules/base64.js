@@ -1,7 +1,8 @@
 define('base64', function () {
     "use strict";
     
-	var cardInfo = require('cardInfo');
+    var cardInfo = require('cardInfo');
+    var unitInfo = require('unitInfo');
 
     var api = {
         encodeHash: encode,
@@ -139,7 +140,7 @@ define('base64', function () {
 
         // Default commander to Elaria Captain if none found
         if (!current_deck.commander) {
-            current_deck.commander = unit.defaultCommander;
+            current_deck.commander = unitInfo.defaultCommander;
         }
 
         return current_deck;

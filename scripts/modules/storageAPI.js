@@ -1,7 +1,11 @@
 define('storageAPI', function () {
     "use strict";
 
-    var api = {};
+    var storageAPI = {};
+    var SaveFields = {
+        decks: "SavedDecks"
+    };
+    var $loadDialogScope;
 
     function localStorageSupported() {
         // LocalStorage Support Check : https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
@@ -128,12 +132,6 @@ define('storageAPI', function () {
         limitedAPI();
     }
 
-    
-    var SaveFields = {
-        decks: "SavedDecks"
-    };
-    var $loadDialogScope;
-
     storageAPI.data = {};
 
     storageAPI.getSavedDecks = function () {
@@ -173,5 +171,5 @@ define('storageAPI', function () {
 
     storageAPI.initialize();
 
-    return api;
+    return storageAPI;
 });
