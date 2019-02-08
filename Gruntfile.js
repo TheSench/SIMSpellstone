@@ -357,7 +357,7 @@ module.exports = function (grunt) {
     grunt.registerTask('uglify-main', ['newer:uglify:deckbuilder','newer:uglify:simulator','newer:uglify:practice']);
 
     grunt.registerTask('full-build', ['clean', /*'jshint',*/ 'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy:html', 'cacheBust']);
-    grunt.registerTask('build-main', ['concat-main', 'uglify-main', 'newer:copy:html', 'newer:cacheBust']);
+    grunt.registerTask('build-main', ['concat-main', 'uglify-main', 'newer:copy:html', 'cacheBust']);
 
     grunt.registerTask('default', ['full-build']);
 
