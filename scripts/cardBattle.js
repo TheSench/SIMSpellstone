@@ -1,19 +1,17 @@
-"use strict";
-
 (function () {
+    "use strict";
+
     var cardUI = require('cardUI');
     var simController = require('simController');
 
     simController.end_sims_callback = function () {
         hideUI();   // Cheap hack to keep Setup hidden
-        draw_match_end();
+        drawMatchEnd();
     };
 
-    simController.stop_sims_callback = draw_match_end;
+    simController.stop_sims_callback = drawMatchEnd;
 
-    function draw_match_end() {
+    function drawMatchEnd() {
         cardUI.draw_cards(SIMULATOR.field);   // Draw battlefield with no hand
     }
 })();
-
-var battle_sim = true;

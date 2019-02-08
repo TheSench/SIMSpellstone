@@ -86,7 +86,7 @@ module.exports = function (grunt) {
             practice: {
                 src: [
                     '<%= concat.simulator.dest %>',
-                    'scripts/card_battle.js'
+                    'scripts/cardBattle.js'
                 ],
                 dest: 'dist/practice.js'
             },
