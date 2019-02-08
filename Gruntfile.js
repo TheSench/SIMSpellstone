@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                 // define a string to put between each file in the concatenated output
                 separator: ';'
             },
-            deckbuilder: {
+            shared: {
                 src: [
                     'scripts/require.sync.js',
                     'scripts/polyfills.js',
@@ -23,16 +23,20 @@ module.exports = function (grunt) {
                     'scripts/modules/urlHelpers.js',
                     'scripts/modules/storageAPI.js',
 
+                    'scripts/modules/loadCardCache.js',
                     'scripts/modules/dataUpdater.js',
                     'scripts/modules/cardApi.js',
 
                     'scripts/modules/unitInfo.js',
                     'scripts/modules/cardUI.js',
 
-                    'scripts/modules/base64.js',
-
+                    'scripts/modules/base64.js'
+                ],
+                dest: 'dist/shared.js'
+            },
+            deckbuilder: {
+                src: [
                     'scripts/data/fixGlobals.js',
-                    'scripts/shared.js',
                     'scripts/deckbuilder.js',
                     'scripts/localstorage-controller.js',
                     'scripts/ng-card-details-controller.js',
@@ -43,34 +47,18 @@ module.exports = function (grunt) {
             },
             simulator: {
                 src: [
-                    'scripts/require.sync.js',
-                    'scripts/polyfills.js',
-                    //'scripts/require.config.js',
-                    'scripts/modules/factions.js',
-                    'scripts/modules/skillApi.js',
-                    'scripts/modules/runeApi.js',
-                    'scripts/modules/cardInfo.js',
-                    'scripts/modules/matchTimer.js',
-                    'scripts/modules/urlHelpers.js',
                     'scripts/modules/debugLog.js',
-                    'scripts/modules/storageAPI.js',
-                    
-                    'scripts/modules/dataUpdater.js',
-                    'scripts/modules/log.js',
-                    'scripts/modules/cardApi.js',
-                    
-                    'scripts/modules/unitInfo.js',
-                    'scripts/modules/bgeApi.js',
-                    'scripts/modules/cardUI.js',
 
-                    'scripts/modules/base64.js',
+                    'scripts/modules/log.js',
+                    
+                    'scripts/modules/bgeApi.js',
+
                     'scripts/modules/loadDeck.js',
                     'scripts/modules/animations.js',
 
                     'scripts/modules/simController.js',
 
                     'scripts/data/fixGlobals.js',
-                    'scripts/shared.js',
                     'scripts/sim_controller.js',
                     'scripts/single_threaded.js',
                     'scripts/simulator_base.js',
@@ -135,6 +123,15 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'dist/data.min.js': ['<%= concat.data.dest %>']
+                }
+            },
+            shared:{
+                options: {
+                    mangle: true,
+                    sourceMap: true
+                },
+                files: {
+                    'dist/shared.min.js': ['<%= concat.shared.dest %>']
                 }
             },
             deckbuilder: {
@@ -354,8 +351,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-newer');
 
-    grunt.registerTask('concat-main', ['newer:concat:deckbuilder','newer:concat:simulator','newer:concat:practice']);
-    grunt.registerTask('uglify-main', ['newer:uglify:deckbuilder','newer:uglify:simulator','newer:uglify:practice']);
+    grunt.registerTask('concat-main', ['newer:concat:deckbuilder', 'newer:concat:simulator', 'newer:concat:practice']);
+    grunt.registerTask('uglify-main', ['newer:uglify:deckbuilder', 'newer:uglify:simulator', 'newer:uglify:practice']);
 
     grunt.registerTask('full-build', ['clean', /*'jshint',*/ 'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy:html', 'cacheBust']);
     grunt.registerTask('build-main', ['concat-main', 'uglify-main', 'newer:copy:html', 'copy:html', 'cacheBust']);

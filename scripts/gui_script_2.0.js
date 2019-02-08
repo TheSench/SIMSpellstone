@@ -11,6 +11,7 @@ var cardUI = require('cardUI');
 var simController = require('simController');
 var storageAPI = require('storageAPI');
 var dataUpdater = require('dataUpdater');
+var loadCardCache = require('loadCardCache');
 
 $(function () {
     

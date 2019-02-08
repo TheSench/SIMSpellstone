@@ -1703,6 +1703,18 @@ var SIMULATOR = {};
 						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
 
+	function shuffle(list) {
+		var i = list.length, j, tempi, tempj;
+		if (i == 0) return false;
+		while (--i) {
+			j = ~~(Math.random() * (i + 1));
+			tempi = list[i];
+			tempj = list[j];
+			list[i] = tempj;
+			list[j] = tempi;
+		}
+	}
+
 	// Simulate one game
 	function simulate() {
 		simulating = true;

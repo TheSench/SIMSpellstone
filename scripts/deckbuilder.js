@@ -10,6 +10,7 @@ var urlHelpers = require('urlHelpers');
 var cardUI = require('cardUI');
 var storageAPI = require('storageAPI');
 var dataUpdater = require('dataUpdater');
+var loadCardCache = require('loadCardCache');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
