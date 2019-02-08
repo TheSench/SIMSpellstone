@@ -17,6 +17,3 @@ saved_decks.js
 
 # Intermediary build files
 /dist/data.js
-/dist/deckbuilder.js
-/dist/practice.js
-/dist/simulator.js
