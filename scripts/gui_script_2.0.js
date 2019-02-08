@@ -10,6 +10,7 @@ $(function () {
     var loadDeck = require('loadDeck');
     var cardUI = require('cardUI');
     var simController = require('simController');
+    var storageAPI = require('storageAPI');
     
     $("#deck1").change(function () {
         this.value = this.value.trim();

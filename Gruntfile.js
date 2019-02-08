@@ -21,6 +21,7 @@ module.exports = function (grunt) {
                     'scripts/modules/cardInfo.js',
                     'scripts/modules/matchTimer.js',
                     'scripts/modules/urlHelpers.js',
+                    'scripts/modules/storageAPI.js',
 
                     'scripts/modules/base64.js',
                     'scripts/modules/cardApi.js',
@@ -51,6 +52,7 @@ module.exports = function (grunt) {
                     'scripts/modules/matchTimer.js',
                     'scripts/modules/urlHelpers.js',
                     'scripts/modules/debugLog.js',
+                    'scripts/modules/storageAPI.js',
 
                     'scripts/modules/log.js',
                     'scripts/modules/base64.js',

@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    var storageAPI = require('storageAPI');
 
     var tutorialParts = getTutorialScript();
 
@@ -31,7 +32,7 @@
     function showTutorial() {
         tutorialIndex = 0;
         setTutorial();
-        var tutorial = $("#tutorial").show();
+        $("#tutorial").show();
     }
 
 

@@ -1,6 +1,7 @@
 "use strict";
 
 var DATA_UPDATER = (function () {
+    var storageAPI = require('storageAPI');
 
     var baseUrl = "https://spellstone.synapse-games.com";
 

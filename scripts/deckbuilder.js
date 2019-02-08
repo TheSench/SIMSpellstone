@@ -8,6 +8,7 @@ var factions = require('factions');
 var unitInfo = require('unitInfo');
 var urlHelpers = require('urlHelpers');
 var cardUI = require('cardUI');
+var storageAPI = require('storageAPI');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
