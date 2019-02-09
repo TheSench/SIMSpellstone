@@ -47,6 +47,7 @@ module.exports = function (grunt) {
             },
             simulator: {
                 src: [
+                    'scripts/modules/config.js',
                     'scripts/modules/debugLog.js',
 
                     'scripts/modules/log.js',
@@ -55,8 +56,12 @@ module.exports = function (grunt) {
 
                     'scripts/modules/loadDeck.js',
                     'scripts/modules/animations.js',
+                    
+                    'scripts/modules/ui.js',
 
                     'scripts/modules/simController.js',
+
+                    'scripts/modules/startup.js',
 
                     'scripts/data/fixGlobals.js',
                     'scripts/sim_controller.js',
@@ -64,7 +69,6 @@ module.exports = function (grunt) {
                     'scripts/simulator_base.js',
                     'scripts/ng-simulator-controller.js',
                     'scripts/localstorage-controller.js',
-                    'scripts/gui_script_2.0.js',
                     'scripts/gui_script.js',
                     'scripts/tutorial/simulator-tutorial.js',
                     'scripts/sim-tutorial.js'

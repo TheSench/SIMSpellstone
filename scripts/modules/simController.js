@@ -4,6 +4,7 @@ define('simController', function () {
     var matchTimer = require('matchTimer');
     var debugLog = require('debugLog');
     var animations = require('animations');
+    var ui = require('ui');
 
     var SIM_CONTROLLER = {
         getConfiguration: getConfiguration,
@@ -33,10 +34,10 @@ define('simController', function () {
         tower_type = $('#tower_type').val();
 
         if (BATTLEGROUNDS) {
-            getbattleground = getSelectedBattlegrounds();
-            selfbges = getSelectedBattlegrounds("self-");
-            enemybges = getSelectedBattlegrounds("enemy-");
-            mapbges = (getmission ? getSelectedMapBattlegrounds() : "");
+            getbattleground = ui.getSelectedBattlegrounds();
+            selfbges = ui.getSelectedBattlegrounds("self-");
+            enemybges = ui.getSelectedBattlegrounds("enemy-");
+            mapbges = (getmission ? ui.getSelectedMapBattlegrounds() : "");
         }
 
         sims_left = $('#sims').val() || 1;
@@ -109,10 +110,10 @@ define('simController', function () {
             msg = '<br><h1>LOSS' + points + '</h1><br>';
         }
 
-        outputTurns();
-        setSimStatus(msg);
+        ui.displayTurns();
+        ui.setSimStatus(msg);
 
-        showUI();
+        ui.show();
 
         if (SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
 

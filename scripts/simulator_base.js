@@ -10,6 +10,8 @@ var SIMULATOR = {};
 	var debugLog = require('debugLog');
 	var animations = require('animations');
     var simController = require('simController');
+    var ui = require('ui');
+    var config = require('config');
 
 	var max_turns = 100;
 
@@ -1698,7 +1700,7 @@ var SIMULATOR = {};
 
 		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
 								: */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-				: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
+				: config.pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
 					: getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
 						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
@@ -1766,16 +1768,16 @@ var SIMULATOR = {};
 		cache_player_deck_cards = loadDeck.getDeckCards(cache_player_deck, 'player');
 
 		// Load enemy deck
-		pvpAI = true;
+		config.pvpAI = true;
 		if (getdeck2) {
 			cache_cpu_deck = base64.decodeHash(getdeck2);
-			if (getmission) pvpAI = false;
+			if (getmission) config.pvpAI = false;
 		} else if (getmission) {
 			cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
-			pvpAI = false;    // PvE decks do not use "Smart AI"
+			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else if (getraid) {
 			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
-			pvpAI = false;    // PvE decks do not use "Smart AI"
+			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
 			cache_cpu_deck = loadDeck.defaultDeck();
 		}
@@ -2041,8 +2043,8 @@ var SIMULATOR = {};
 		closeDiv = true;
 
 		if (drawCards) {
-			hideTable();
-			outputTurns();
+			ui.hideTable();
+			ui.displayTurns();
 			animations.drawField(field, null, performTurns, turn);
 			SIMULATOR.sendBattleUpdate(turn);
 		}
@@ -2065,8 +2067,8 @@ var SIMULATOR = {};
 			drawableHand.push(card);
 		}
 		if (drawCards) {
-			hideTable();
-			outputTurns();
+			ui.hideTable();
+			ui.displayTurns();
 			animations.drawField(field, drawableHand, onCardChosen, turn);
 		}
 		if (choice === undefined) {

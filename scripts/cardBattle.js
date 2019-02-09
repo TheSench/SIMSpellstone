@@ -3,9 +3,10 @@
 
     var cardUI = require('cardUI');
     var simController = require('simController');
+    var ui = require('ui');
 
     simController.end_sims_callback = function () {
-        hideUI();   // Cheap hack to keep Setup hidden
+        ui.hide();   // Cheap hack to keep Setup hidden
         drawMatchEnd();
     };
 

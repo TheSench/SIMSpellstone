@@ -6,6 +6,7 @@
     var urlHelpers = require('urlHelpers');
     var debugLog = require('debugLog');
     var simController = require('simController');
+    var ui = require('ui');
 
     // Initialize simulation loop - runs once per simulation session
     simController.startsim = function () {
@@ -20,7 +21,7 @@
         // Set up battleground effects, if any
         SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
 
-        hideUI();
+        ui.hide();
 
         SIMULATOR.setupDecks();
 
@@ -29,12 +30,12 @@
         draws = 0;
         points = 0;
 
-        outp(""); // Clear display
+        ui.displayText(""); // Clear display
         if (!SIMULATOR.user_controlled) {
-            hideTable();
-            setSimStatus("Initializing simulations...");
+            ui.hideTable();
+            ui.setSimStatus("Initializing simulations...");
         } else {
-            setSimStatus("");
+            ui.setSimStatus("");
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', sims_left);
@@ -54,10 +55,10 @@
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
         if (!SIMULATOR.user_controlled) {
-            setSimStatus("Simulations interrupted.", elapse, simpersec);
-            showWinrate();
+            ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
+            ui.showWinrate();
         }
-        showUI();
+        ui.show();
 
         if (simController.stop_sims_callback) simController.stop_sims_callback();
     };
@@ -88,8 +89,8 @@
                         simpersecbatch = run_sims_batch / batch_elapse;
                     }
 
-                    setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
-                    showWinrate();
+                    ui.setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
+                    ui.showWinrate();
                 }
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
@@ -115,11 +116,11 @@
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(2);
 
-            outp(debugLog.getLog());
-            setSimStatus("Simulations complete.", elapse, simpersec);
-            showWinrate();
+            ui.displayText(debugLog.getLog());
+            ui.setSimStatus("Simulations complete.", elapse, simpersec);
+            ui.showWinrate();
 
-            showUI();
+            ui.show();
 
             if (simController.end_sims_callback) simController.end_sims_callback();
         }
