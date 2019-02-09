@@ -5,14 +5,14 @@
     var simController = require('simController');
     var ui = require('ui');
 
-    simController.end_sims_callback = function () {
+    simController.endSimsCallback = function () {
         ui.hide();   // Cheap hack to keep Setup hidden
-        drawMatchEnd();
+        displayMatchEnd();
     };
 
-    simController.stop_sims_callback = drawMatchEnd;
+    simController.stop_sims_callback = displayMatchEnd;
 
-    function drawMatchEnd() {
-        cardUI.draw_cards(SIMULATOR.field);   // Draw battlefield with no hand
+    function displayMatchEnd() {
+        cardUI.displayCards(SIMULATOR.field);   // Draw battlefield with no hand
     }
 })();

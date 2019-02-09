@@ -682,7 +682,7 @@ function(
     var disabledInterval = false;
 
     function drawField(field, hand, callback, turn, activeUnit) {
-        var newFrame = cardUI.doDrawField(field, hand, callback, turn, activeUnit);
+        var newFrame = cardUI.doDisplayField(field, hand, callback, turn, activeUnit);
         frames.push(newFrame);
         if (!frameInterval) {
             drawFrames();
@@ -742,7 +742,7 @@ define('ui', [
 		setSimStatus: setSimStatus,
 		loadDeckBuilder: loadDeckBuilder,
 		updateGameData: updateGameData,
-		loadDeck: loadDeck,
+		loadSavedDeck: loadSavedDeck,
 		toggleTheme: toggleTheme
 	};
 
@@ -1199,7 +1199,7 @@ define('ui', [
 		dataUpdater.updateData(done, true);
 	}
 
-	function loadDeck(hashField) {
+	function loadSavedDeck(hashField) {
 		$('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
 		loadDeckDialog.dialog("open");
 		loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
@@ -1320,7 +1320,7 @@ var cardStats = {};;define('simController', [
         getConfiguration: getConfiguration,
         debug_end: debug_end,
 
-        end_sims_callback: null,
+        endSimsCallback: null,
         stop_sims_callback: null
     };
 
@@ -1427,7 +1427,7 @@ var cardStats = {};;define('simController', [
 
         if (SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
 
-        if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
+        if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
     }
 
     // temporary stop-gap so HTML files can reference this module
@@ -1524,7 +1524,7 @@ var cardStats = {};;define('simController', [
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
 
-            $deck.append(cardUI.makeDeckHTML(newDeck, false, battlegrounds));
+            $deck.append(cardUI.deckToHtml(newDeck, false, battlegrounds));
         }
     }
 
@@ -1966,7 +1966,7 @@ for(var id in FUSIONS) {
 
             ui.show();
 
-            if (simController.end_sims_callback) simController.end_sims_callback();
+            if (simController.endSimsCallback) simController.endSimsCallback();
         }
     }
 

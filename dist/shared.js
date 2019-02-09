@@ -1605,17 +1605,17 @@ define('dataUpdater', [
 		cardSpace.innerHTML = '';
 	}
 
-	function draw_deck(deck, noblanks) {
+	function displayDeck(deck, noblanks) {
 		var $deck = $("#deck");
 		$deck.children().remove();
-		$deck.append(makeDeckHTML(deck, noblanks));
+		$deck.append(deckToHtml(deck, noblanks));
 		return $deck;
 	}
 
-	function makeDeckHTML(deck, noblanks, battlegrounds) {
+	function deckToHtml(deck, noblanks, battlegrounds) {
 		var cards = [];
 		var commander = cardApi.byId(deck.commander);
-		cards.push(create_card_html(commander, false, false));
+		cards.push(cardToHtml(commander, false, false));
 		for (var i = 0, len = deck.deck.length; i < len; i++) {
 			var deckEntry = deck.deck[i];
 			if (battlegrounds) {
@@ -1623,7 +1623,7 @@ define('dataUpdater', [
 			} else {
 				var unit = cardApi.byId(deckEntry);
 			}
-			cards.push(create_card_html(unit, false, false));
+			cards.push(cardToHtml(unit, false, false));
 		}
 		if (!noblanks) for (; i < 15; i++) {
 			cards.push(createDiv("card blank"));
@@ -1631,22 +1631,8 @@ define('dataUpdater', [
 		return cards;
 	}
 
-	function makeCardListHTML(deck, onclick, onrightclick) {
-		var listHTML = createDiv("float-left");
-		for (var i = 0, len = deck.deck.length; i < len; i++) {
-			var deckEntry = deck.deck[i];
-			var unit = cardApi.byId(deckEntry);
-			var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, null, i);
-			if (deckEntry.index !== undefined) {
-				htmlCard.setAttribute("data-index", deckEntry.index);
-			}
-			listHTML.appendChild(htmlCard);
-		}
-		return listHTML;
-	}
-
-	function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
-		var cards = make_card_list(list, compactSkills, null, null, /*onclick, onrightclick,*/ skip, end);
+	function displayCardList(list, compactSkills, skip, end) {
+		var cards = cardListToHtml(list, compactSkills, skip, end);
 		var $cardSpace = $("#cardSpace");
 		$cardSpace.empty();
 		$cardSpace.append(cards);
@@ -1654,29 +1640,29 @@ define('dataUpdater', [
 		return $cardSpace;
 	}
 
-	function draw_inventory(list) {
-		var cards = make_card_list(list);
+	function displayInventory(list) {
+		var cards = cardListToHtml(list);
 		var $cardSpace = $("#deck");
 		$cardSpace.children().remove();
 		$cardSpace.append(cards);
 		return $cardSpace;
 	}
 
-	function draw_inventory(deck) {
-		var cards = make_card_list(deck.deck);
+	function displayInventory(deck) {
+		var cards = cardListToHtml(deck.deck);
 		var $cardSpace = $("#deck");
 		$cardSpace.children().remove();
-		$cardSpace.append(make_card_list([deck.commander]));
-		//$deck.find(".card").hide();
-		$cardSpace.append(cards);
+		$cardSpace
+			.append(cardListToHtml([deck.commander]))
+			.append(cards);
 		return $cardSpace;
 	}
 
-	function make_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
+	function cardListToHtml(list, showCompactSkills, skip, end) {
 		skip = skip || 0;
 		var htmlCard;
 		var lastUnit;
-		var multiplier;
+		var multiplier = 1;
 		var uniqueCard = 0;
 		var cards = [];
 		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
@@ -1688,7 +1674,7 @@ define('dataUpdater', [
 				if ((uniqueCard >= skip)) {
 					addMult(htmlCard, multiplier);
 					multiplier = 1;
-					htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick, null, i);
+					htmlCard = cardToHtml(unit, showCompactSkills, false, i);
 					htmlCard.setAttribute("data-i", i);
 					if (listEntry.index !== undefined) {
 						htmlCard.setAttribute("data-index", listEntry.index);
@@ -1703,7 +1689,7 @@ define('dataUpdater', [
 		return cards;
 	}
 
-	function doDrawField(field, drawableHand, callback, turn, activeUnit) {
+	function doDisplayField(field, drawableHand, callback, turn, activeUnit) {
 		if (!drawableHand) drawableHand = [];
 		var fieldHTML = [];
 		if (turn) {
@@ -1713,38 +1699,34 @@ define('dataUpdater', [
 		}
 
 		var divField = createDiv("field");
-		var activeUnitOwner = null;
+		var activePlayerUnit = null;
+		var activeCpuUnit = null;
 		if (activeUnit) {
-			var activeUnitOwner = activeUnit.owner;
-			if (activeUnit.isCommander()) {
-				activeUnit = -1;
+			activeUnit = (activeUnit.isCommander() ? -1 : activeUnit.key);
+			if(activeUnit.owner === 'player') {
+				activePlayerUnit = activeUnit;
 			} else {
-				activeUnit = activeUnit.key;
+				activeCpuUnit = activeUnit;
 			}
 		}
-		if (activeUnitOwner === 'player') {
-			divField.appendChild(draw_field(field.cpu));
-			divField.appendChild(draw_field(field.player, activeUnit));
-		} else {
-			divField.appendChild(draw_field(field.cpu, activeUnit));
-			divField.appendChild(draw_field(field.player));
-		}
+		divField.appendChild(displayField(field.cpu, activePlayerUnit));
+		divField.appendChild(displayField(field.player, activeCpuUnit));
 		fieldHTML.push(divField);
-		fieldHTML.push(draw_hand(drawableHand, callback, turn));
+		fieldHTML.push(displayHand(drawableHand, callback, turn));
 		fieldHTML.push(document.createElement('br'));
 		fieldHTML.push(document.createElement('br'));
 		return fieldHTML;
 	}
 
-	function draw_cards(field, drawableHand, callback, turn) {
-		var fieldHTML = doDrawField(field, drawableHand, callback, turn);
+	function displayCards(field, drawableHand, callback, turn) {
+		var fieldHTML = doDisplayField(field, drawableHand, callback, turn);
 		$("#cardSpace").children().remove().end().append(fieldHTML);
 	}
 
-	function draw_field(field, activeUnit) {
+	function displayField(field, activeUnit) {
 		var cards = createDiv("float-left");
 		var commander = field.commander;
-		var htmlCard = create_card_html(commander, false, true);
+		var htmlCard = cardToHtml(commander, false, true);
 		if (activeUnit === -1) {
 			highlightCard(htmlCard);
 		}
@@ -1752,7 +1734,7 @@ define('dataUpdater', [
 		var units = field.assaults;
 		if (units) for (var i = 0, len = units.length; i < len; i++) {
 			var unit = units[i];
-			var htmlCard = create_card_html(unit, false, true);
+			var htmlCard = cardToHtml(unit, false, true);
 			if (unit.timer) htmlCard.classList.add("inactive");
 			if (activeUnit === i) {
 				highlightCard(htmlCard);
@@ -1762,16 +1744,16 @@ define('dataUpdater', [
 		return cards;
 	}
 
-	function draw_hand(hand, callback, state) {
+	function displayHand(hand, callback, state) {
 		var cards = createDiv("float-left hand");
 		for (var i = 0, len = hand.length; i < len; i++) {
 			var unit = hand[i];
 			if (!unit) continue;
-			var htmlCard = create_card_html(unit, false);
+			var htmlCard = cardToHtml(unit, false);
 			if (i === 0) htmlCard.classList.add("left");
 			else if (i === 2) htmlCard.classList.add("right");
 			else if (i > 2) htmlCard.classList.add("inactive");
-			var cardidx = i;
+			
 			if (callback) {
 				htmlCard.addEventListener("click", (function (inner) {
 					return function () {
@@ -1790,12 +1772,7 @@ define('dataUpdater', [
 	}
 
 	function addMult(htmlCard, multiplier) {
-		// Handle range values
-		var iMult = parseInt(multiplier);
-		if (iMult == multiplier) {
-			multiplier = (iMult > 1 ? iMult : null);
-		}
-		if (multiplier) {
+		if (multiplier > 1) {
 			var multDiv = createDiv("multiplier", "x" + multiplier);
 			multDiv.setAttribute("data-count", multiplier);
 			var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
@@ -1804,36 +1781,7 @@ define('dataUpdater', [
 		}
 	}
 
-	function addWeight(htmlCard, weight) {
-		if (weight > 0) {
-			var weightDiv = createDiv("weight", (weight * 100).toFixed(2) + "%");
-			weightDiv.setAttribute("data-count", weight);
-			var weightIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "weight");
-			htmlCard.appendChild(weightIcon);
-			htmlCard.appendChild(weightDiv);
-		}
-	}
-
-	function createItemHTML(name, quantity, image) {
-		var htmlCard = createDiv("card item");
-
-		var background = document.createElement("i");
-		background.className = 'sprite sprite-Item';
-		htmlCard.appendChild(background);
-		if (image) {
-			image = createImg(getAssetPath("items") + image + ".png");
-			image.className = 'item-image';
-			htmlCard.appendChild(image);
-		}
-		var divName = createDiv("card-name", name);
-		htmlCard.appendChild(divName);
-		htmlCard.classList.add('factionless');
-		htmlCard.appendChild(createDiv("faction"));
-		addMult(htmlCard, quantity);
-		return htmlCard;
-	}
-
-	function create_card_html(card, compactSkills, onField, onclick, onrightclick, onmouseover, state) {
+	function cardToHtml(card, showCompactSkills, onField, state) {
 		var htmlCard = createDiv("card");
 		// Add ID to card
 		htmlCard.setAttribute("data-id", card.id);
@@ -1928,7 +1876,7 @@ define('dataUpdater', [
 		var skillsDetail = divSkills.cloneNode(true);
 		skillsDetail.className = "card-skills-detailed";
 		if (skillsShort.hasChildNodes()) {
-			if (compactSkills) {
+			if (showCompactSkills) {
 				htmlCard.appendChild(skillsShort);
 				htmlCard.appendChild(divSkills);
 			} else {
@@ -1973,7 +1921,7 @@ define('dataUpdater', [
 			}
 			htmlLevel.className = "level";
 			if (card.id > 9999) {
-				var fusion = ((card.id.toString()[0] == "1") ? "Dualfuse" : "Quadfuse");
+				var fusion = ((card.id.toString()[0] === "1") ? "Dualfuse" : "Quadfuse");
 				fusion = createImg(getAssetPath("cardAssets") + fusion + ".png");
 				fusion.className = "fusion";
 				htmlCard.appendChild(fusion);
@@ -1983,27 +1931,6 @@ define('dataUpdater', [
 			var htmlLevel = createImg(getAssetPath("cardAssets") + card.maxLevel + "_" + card.level + ".png");
 			htmlLevel.className = "level";
 			htmlCard.appendChild(htmlLevel);
-		}
-		if (onclick) {
-			htmlCard.addEventListener("click", (function (inner) {
-				return function () {
-					return onclick(htmlCard, state);
-				};
-			})(htmlCard, state));
-		}
-		if (onrightclick) {
-			htmlCard.oncontextmenu = (function (inner) {
-				return function () {
-					return onrightclick(htmlCard, state);
-				};
-			})(htmlCard, state);
-		}
-		if (onmouseover) {
-			htmlCard.onmouseover = (function (inner) {
-				return function () {
-					return onmouseover(htmlCard, state);
-				};
-			})(htmlCard, state);
 		}
 		return htmlCard;
 	}
@@ -2018,7 +1945,7 @@ define('dataUpdater', [
 	}
 
 	function getPassiveSkills(divSkills, skillsShort, card, onField, boosts) {
-		var passiveSkills = Object.getOwnPropertyNames(SKILL_DATA).filter(function (skillID) {
+		Object.getOwnPropertyNames(SKILL_DATA).filter(function (skillID) {
 			return ["passive", "toggle"].indexOf(SKILL_DATA[skillID].type) >= 0;
 		}).forEach(function (skill) {
 			getNonActivatedSkill(divSkills, skillsShort, onField, card, skill, boosts);
@@ -2089,12 +2016,6 @@ define('dataUpdater', [
 
 	function getStatuses(card) {
 		var debuffs = [];
-		/*
-		if (card.attack_weaken) {
-			var status = createStatus("weaken", card.attack_weaken);
-			debuffs.push(status);
-		}
-		*/
 		if (card.enfeebled) {
 			var status = createStatus("enfeeble", card.enfeebled);
 			debuffs.push(status);
@@ -2103,12 +2024,6 @@ define('dataUpdater', [
 			var status = createStatus("enfeeble", card.marked);
 			debuffs.push(status);
 		}
-		/*
-		if (card.jammed) {
-			var status = createStatus("jam");
-			debuffs.push(status);
-		}
-		*/
 		if (card.nullified) {
 			var status = createStatus("nullify", card.nullified);
 			debuffs.push(status);
@@ -2123,16 +2038,6 @@ define('dataUpdater', [
 		}
 
 		var buffs = [];
-		/*
-		if (card.attack_rally) {
-			var status = createStatus("rally", card.attack_rally);
-			buffs.push(status);
-		}
-		if (card.attack_berserk) {
-			var status = createStatus("berserk", card.attack_berserk);
-			buffs.push(status);
-		}
-		*/
 		if (card.enraged) {
 			var status = createStatus("enrage", card.enraged);
 			debuffs.push(status);
@@ -2210,18 +2115,13 @@ define('dataUpdater', [
 	var api = {
 		clearCardSpace: clearCardSpace,
 		clearDeckSpace: clearDeckSpace,
-		draw_deck: draw_deck,
-		create_card_html: create_card_html,
-		makeDeckHTML: makeDeckHTML,
-		makeCardListHTML: makeCardListHTML,
-		draw_card_list: draw_card_list,
-		draw_cards: draw_cards,
-		doDrawField: doDrawField,
-		draw_inventory: draw_inventory,
-		draw_hand: draw_hand,
-		createItemHTML: createItemHTML,
-		addMult: addMult,
-		addWeight: addWeight
+		displayDeck: displayDeck,
+		cardToHtml: cardToHtml,
+		deckToHtml: deckToHtml,
+		displayCardList: displayCardList,
+		displayCards: displayCards,
+		doDisplayField: doDisplayField,
+		displayInventory: displayInventory
 	};
 
 	Object.defineProperties(api, {

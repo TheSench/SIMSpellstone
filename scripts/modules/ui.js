@@ -28,7 +28,7 @@ define('ui', [
 		setSimStatus: setSimStatus,
 		loadDeckBuilder: loadDeckBuilder,
 		updateGameData: updateGameData,
-		loadDeck: loadDeck,
+		loadSavedDeck: loadSavedDeck,
 		toggleTheme: toggleTheme
 	};
 
@@ -485,7 +485,7 @@ define('ui', [
 		dataUpdater.updateData(done, true);
 	}
 
-	function loadDeck(hashField) {
+	function loadSavedDeck(hashField) {
 		$('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
 		loadDeckDialog.dialog("open");
 		loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });

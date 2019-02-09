@@ -122,7 +122,7 @@
 
             ui.show();
 
-            if (simController.end_sims_callback) simController.end_sims_callback();
+            if (simController.endSimsCallback) simController.endSimsCallback();
         }
     }
 

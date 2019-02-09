@@ -88,7 +88,7 @@ define('startup', [
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
 
-            $deck.append(cardUI.makeDeckHTML(newDeck, false, battlegrounds));
+            $deck.append(cardUI.deckToHtml(newDeck, false, battlegrounds));
         }
     }
 

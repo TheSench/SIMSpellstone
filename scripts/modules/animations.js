@@ -16,7 +16,7 @@ define('animations', [
     var disabledInterval = false;
 
     function drawField(field, hand, callback, turn, activeUnit) {
-        var newFrame = cardUI.doDrawField(field, hand, callback, turn, activeUnit);
+        var newFrame = cardUI.doDisplayField(field, hand, callback, turn, activeUnit);
         frames.push(newFrame);
         if (!frameInterval) {
             drawFrames();

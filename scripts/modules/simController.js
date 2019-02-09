@@ -15,7 +15,7 @@ define('simController', [
         getConfiguration: getConfiguration,
         debug_end: debug_end,
 
-        end_sims_callback: null,
+        endSimsCallback: null,
         stop_sims_callback: null
     };
 
@@ -122,7 +122,7 @@ define('simController', [
 
         if (SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
 
-        if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
+        if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
     }
 
     // temporary stop-gap so HTML files can reference this module

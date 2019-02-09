@@ -361,9 +361,9 @@ var drawDeck = function () {
 
 function doDrawDeck() {
 	/*if (inventoryMode) {
-		$deck = cardUI.draw_inventory(deck.deck);
+		$deck = cardUI.displayInventory(deck.deck);
 	} else */ {
-		$deck = cardUI.draw_deck(deck, inventoryMode);
+		$deck = cardUI.displayDeck(deck, inventoryMode);
 	}
 	updateHash();
 }
@@ -500,10 +500,10 @@ function doDrawCardList(cardList, resetPage) {
 			page = pages - 1;
 			start = cards * page;
 		}
-		cardUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext, start, start + cards);
+		cardUI.displayCardList(cardList, detailedSkills, start, start + cards);
 	} else {
 		page = 0;
-		cardUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
+		cardUI.displayCardList(cardList, detailedSkills);
 	}
 	document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
 	$cardSpace = $("#cardSpace");
@@ -762,35 +762,15 @@ function removeFromInventory(unit) {
 
 var removeFromDeck = function (htmlCard) {
 	var unit;
-	var $htmlCard = $(htmlCard);//$(event.delegateTarget)
+	var $htmlCard = $(htmlCard);
 	var index = $htmlCard.index();
-	/*if (inventoryMode) {
-		var inventory = deck.deck;
-		var invIndex = 0;
-		var i = 0;
-		var lastUnit;
-		for (var len = inventory.length; i < len; i++) {
-			var unit = inventory[i];
-			if (lastUnit) {
-				if (!unitInfo.areEqual(unit, lastUnit)) {
-					invIndex++;
-				}
-			}
-			if (invIndex == index) {
-				break;
-			}
-			lastUnit = unit;
-		}
-		unit = deck.deck.splice(i, 1)[0];
-		//$htmlCard.remove();
-		doDrawDeck();
-	} else*/ if (index == 0) {
+	
+	if (index == 0) {
 		unit = deck.commander;
 		if (unitInfo.areEqual(unit, unitInfo.defaultCommander)) return;
 		deck.commander = unitInfo.defaultCommander;
 		var card = cardApi.byId(unitInfo.defaultCommander);
-		//$htmlCard.replaceWith(cardUI.create_card_html(card));
-		var captain = $(cardUI.create_card_html(card));
+		var captain = $(cardUI.cardToHtml(card));
 		replaceCard($htmlCard, captain);
 	} else {
 		unit = deck.deck.splice(index - 1, 1)[0];
@@ -1902,7 +1882,7 @@ var setCard = function (index, unit) {
 	} else {
 		deck.deck[index] = unit;
 	}
-	var htmlCard = cardUI.create_card_html(cardApi.byId(unit), false, false);
+	var htmlCard = cardUI.cardToHtml(cardApi.byId(unit), false, false);
 	$deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 };
 

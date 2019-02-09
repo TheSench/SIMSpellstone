@@ -49,7 +49,7 @@
                                     <input id="deck1" type="text" value="" onfocus="$(this).select();">
                                 </div>
                                 <input id="edit-player" type="button" onclick="ui.loadDeckBuilder('player');" value="Edit" />
-                                <input id="load-player" type="button" onclick="ui.loadDeck('#deck1');" value="Load" />
+                                <input id="load-player" type="button" onclick="ui.loadSavedDeck('#deck1');" value="Load" />
                                 <div id="attacker-advanced">
                                     <h6>Advanced Settings</h6>
                                     <div id="deckContainer" class="collapsible">
@@ -69,7 +69,7 @@
                                         <input type="text" id="deck2" value="" onfocus="$(this).select();">
                                     </div>
                                     <input id="edit-cpu" type="button" onclick="ui.loadDeckBuilder('cpu');" value="Edit" />
-                                    <input id="load-cpu" type="button" onclick="ui.loadDeck('#deck2');" value="Load" />
+                                    <input id="load-cpu" type="button" onclick="ui.loadSavedDeck('#deck2');" value="Load" />
                                 </div>
                                 <div id="pve-container">
                                     <h6>PvE Decks</h6>
