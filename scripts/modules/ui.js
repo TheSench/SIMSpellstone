@@ -6,14 +6,16 @@ define('ui', [
 	'loadDeck',
 	'debugLog',
 	'storageAPI',
-	'dataUpdater'
+	'dataUpdater',
+	'matchStats'
 ], function (
 	base64,
 	urlHelpers,
 	loadDeck,
 	debugLog,
 	storageAPI,
-	dataUpdater
+	dataUpdater,
+	matchStats
 ) {
 	var api = {
 		show: showUI,
@@ -190,35 +192,35 @@ define('ui', [
 			if (debugLog.enabled) return links;
 		}
 		// Win/Loss ratios
-		var winPercent = wins / games;
+		var winPercent = matchStats.matchesWon / matchStats.matchesPlayed;
 		var winrate = (winPercent * 100).toFixed(2) + "%";
-		$("#wins").html(wins);
+		$("#wins").html(matchStats.matchesWon);
 		$("#winrate").html(winrate);
 
-		var lossrate = losses / games * 100;
+		var lossrate = matchStats.matchesLost / matchStats.matchesPlayed * 100;
 		lossrate = lossrate.toFixed(2) + "%";
-		$("#losses").html(losses);
+		$("#losses").html(matchStats.matchesLost);
 		$("#lossrate").html(lossrate);
 
-		var drawrate = draws / games * 100;
+		var drawrate = matchStats.matchesDrawn / matchStats.matchesPlayed * 100;
 		drawrate = drawrate.toFixed(2) + "%";
-		$("#draws").html(draws);
+		$("#draws").html(matchStats.matchesDrawn);
 		$("#drawrate").html(drawrate);
 
-		var mErr = _marginOfError(wins, games);
-		$("#marginGames").html((mErr * games).toFixed(0));
+		var mErr = _marginOfError(matchStats.matchesWon, matchStats.matchesPlayed);
+		$("#marginGames").html((mErr * matchStats.matchesPlayed).toFixed(0));
 		mErr = mErr.toFixed(2) + "%";
 		$("#marginPercent").html(mErr);
 
-		var totalSims = games + sims_left;
-		var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
-		$(".battleCount").html(games);
+		var totalSims = matchStats.matchesPlayed + sims_left;
+		var percentComplete = (matchStats.matchesPlayed * 100 / totalSims).toFixed("2") + "%";
+		$(".battleCount").html(matchStats.matchesPlayed);
 		$("#percentComplete").html(percentComplete);
 
 		// Calculate Average length of battle
-		$("#avgLength").html((total_turns / games).toFixed(1));
+		$("#avgLength").html((matchStats.totalTurns / matchStats.matchesPlayed).toFixed(1));
 
-		$("#avgPoints").html((points / games).toFixed(2));
+		$("#avgPoints").html((matchStats.totalPoints / matchStats.matchesPlayed).toFixed(2));
 
 		$("#winrateTable").show();
 		// Final output
@@ -255,9 +257,9 @@ define('ui', [
 	function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 		$("#simStatusMsg").html(simStatusMsg);
 		if (elapse && simsPerSec) {
-			var totalSims = games + sims_left;
-			var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
-			var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
+			var totalSims = matchStats.matchesPlayed + sims_left;
+			var percentComplete = (matchStats.matchesPlayed * 100 / totalSims).toFixed("2") + "%";
+			var progress = ('(' + matchStats.matchesPlayed + '/' + totalSims + ') ' + percentComplete);
 			$("#progress").html(progress);
 			$("#speed").show();
 			$("#elapsed").html(elapse);
@@ -270,11 +272,11 @@ define('ui', [
 	}
 
 	// http://onlinestatbook.com/2/estimation/proportion_ci.html
-	function _marginOfError(wins, games) {
-		if (games <= 1) return 1;
+	function _marginOfError(matchStats.matchesWon, matchStats.matchesPlayed) {
+		if (matchStats.matchesPlayed <= 1) return 1;
 
-		var p = wins / games;
-		var N = games;
+		var p = matchStats.matchesWon / matchStats.matchesPlayed;
+		var N = matchStats.matchesPlayed;
 		var stdErr = Math.sqrt((p * (1 - p)) / N);
 		var Z95 = 1.96;
 		return ((stdErr * Z95) + 0.5 / N) * 100;

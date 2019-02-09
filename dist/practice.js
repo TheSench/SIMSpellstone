@@ -4,7 +4,16 @@ define('config', [], function() {
    };
 });
 
-
+define('matchStats', [], function() {
+   return {
+      matchesPlayed: 0,
+      matchesWon: 0,
+      matchesLost: 0,
+      matchesDrawn: 0,
+      totalTurns: 0,
+      totalPoints: 0
+   };
+});
 
 // Initialize global variables
 var battle_history = '';
@@ -30,18 +39,12 @@ var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
 var closeDiv = false;
-var wins = 0;
-var losses = 0;
-var draws = 0;
-var games = 0;
-var points = 0;
 var sims_left = 0;
 var current_timeout;
 var surge = false;
 var battleground = [];
-var total_turns = 0;
 var choice = undefined;
-var tournament = false;;define('debugLog', [], function() {
+var tournament = false;define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,
@@ -83,7 +86,7 @@ var tournament = false;;define('debugLog', [], function() {
     }
 
     return api;
-});;define('log', [
+});define('log', [
     'factions',
     'skillApi'
 ],
@@ -154,7 +157,7 @@ function(
     }
 
     return api;
-});;define('bgeApi', [
+});define('bgeApi', [
     'log',
     'cardApi',
     'debugLog'
@@ -404,7 +407,7 @@ function(
     }
 
     return api;
-});;define('loadDeck', [
+});define('loadDeck', [
     'cardInfo',
     'cardApi',
     'unitInfo'
@@ -703,7 +706,7 @@ function(
     }
 
     return api;
-});;define('animations', [
+});define('animations', [
     'cardUI'
 ], function (
     cardUI
@@ -751,7 +754,7 @@ function(
     }
 
     return api;
-});;"use strict";
+});"use strict";
 
 define('ui', [
 	'base64',
@@ -759,14 +762,16 @@ define('ui', [
 	'loadDeck',
 	'debugLog',
 	'storageAPI',
-	'dataUpdater'
+	'dataUpdater',
+	'matchStats'
 ], function (
 	base64,
 	urlHelpers,
 	loadDeck,
 	debugLog,
 	storageAPI,
-	dataUpdater
+	dataUpdater,
+	matchStats
 ) {
 	var api = {
 		show: showUI,
@@ -943,35 +948,35 @@ define('ui', [
 			if (debugLog.enabled) return links;
 		}
 		// Win/Loss ratios
-		var winPercent = wins / games;
+		var winPercent = matchStats.matchesWon / matchStats.matchesPlayed;
 		var winrate = (winPercent * 100).toFixed(2) + "%";
-		$("#wins").html(wins);
+		$("#wins").html(matchStats.matchesWon);
 		$("#winrate").html(winrate);
 
-		var lossrate = losses / games * 100;
+		var lossrate = matchStats.matchesLost / matchStats.matchesPlayed * 100;
 		lossrate = lossrate.toFixed(2) + "%";
-		$("#losses").html(losses);
+		$("#losses").html(matchStats.matchesLost);
 		$("#lossrate").html(lossrate);
 
-		var drawrate = draws / games * 100;
+		var drawrate = matchStats.matchesDrawn / matchStats.matchesPlayed * 100;
 		drawrate = drawrate.toFixed(2) + "%";
-		$("#draws").html(draws);
+		$("#draws").html(matchStats.matchesDrawn);
 		$("#drawrate").html(drawrate);
 
-		var mErr = _marginOfError(wins, games);
-		$("#marginGames").html((mErr * games).toFixed(0));
+		var mErr = _marginOfError(matchStats.matchesWon, matchStats.matchesPlayed);
+		$("#marginGames").html((mErr * matchStats.matchesPlayed).toFixed(0));
 		mErr = mErr.toFixed(2) + "%";
 		$("#marginPercent").html(mErr);
 
-		var totalSims = games + sims_left;
-		var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
-		$(".battleCount").html(games);
+		var totalSims = matchStats.matchesPlayed + sims_left;
+		var percentComplete = (matchStats.matchesPlayed * 100 / totalSims).toFixed("2") + "%";
+		$(".battleCount").html(matchStats.matchesPlayed);
 		$("#percentComplete").html(percentComplete);
 
 		// Calculate Average length of battle
-		$("#avgLength").html((total_turns / games).toFixed(1));
+		$("#avgLength").html((matchStats.totalTurns / matchStats.matchesPlayed).toFixed(1));
 
-		$("#avgPoints").html((points / games).toFixed(2));
+		$("#avgPoints").html((matchStats.totalPoints / matchStats.matchesPlayed).toFixed(2));
 
 		$("#winrateTable").show();
 		// Final output
@@ -1008,9 +1013,9 @@ define('ui', [
 	function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 		$("#simStatusMsg").html(simStatusMsg);
 		if (elapse && simsPerSec) {
-			var totalSims = games + sims_left;
-			var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
-			var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
+			var totalSims = matchStats.matchesPlayed + sims_left;
+			var percentComplete = (matchStats.matchesPlayed * 100 / totalSims).toFixed("2") + "%";
+			var progress = ('(' + matchStats.matchesPlayed + '/' + totalSims + ') ' + percentComplete);
 			$("#progress").html(progress);
 			$("#speed").show();
 			$("#elapsed").html(elapse);
@@ -1291,7 +1296,7 @@ define('ui', [
 	window.ui = api;
 
 	return api;
-});;define('simController', [
+});define('simController', [
     'matchTimer',
     'debugLog',
     'animations',
@@ -1422,7 +1427,7 @@ define('ui', [
     window.SIM_CONTROLLER = SIM_CONTROLLER;
 
     return SIM_CONTROLLER;
-});;define('startup', [
+});define('startup', [
 	'base64',
 	'urlHelpers',
 	'simController',
@@ -1816,7 +1821,7 @@ define('ui', [
 
         processQueryString();
     });
-});;// Convert skills to 1.0 version
+});// Convert skills to 1.0 version
 for(var skillID in SKILL_DATA) {
 	var skillInfo = SKILL_DATA[skillID];
 	if(skillID === 'flurry') {
@@ -1830,7 +1835,7 @@ var REVERSE_FUSIONS = {};
 for(var id in FUSIONS) {
 	var fusion = FUSIONS[id];
 	REVERSE_FUSIONS[fusion] = id;
-};"use strict";
+}"use strict";
 
 (function () {
     var bgeApi = require('bgeApi');
@@ -1839,13 +1844,14 @@ for(var id in FUSIONS) {
     var debugLog = require('debugLog');
     var simController = require('simController');
     var ui = require('ui');
+    var matchStats = require('matchStats');
 
     // Initialize simulation loop - runs once per simulation session
     simController.startsim = function () {
-        total_turns = 0;
+        matchStats.totalTurns = 0;
         matchTimer.reset();
         debugLog.clear();
-        games = 0;
+        matchStats.matchesPlayed = 0;
         run_sims_batch = 0;
 
         var config = simController.getConfiguration();
@@ -1857,10 +1863,10 @@ for(var id in FUSIONS) {
 
         SIMULATOR.setupDecks();
 
-        wins = 0;
-        losses = 0;
-        draws = 0;
-        points = 0;
+        matchStats.matchesWon = 0;
+        matchStats.matchesLost = 0;
+        matchStats.matchesDrawn = 0;
+        matchStats.totalPoints = 0;
 
         ui.displayText(""); // Clear display
         if (!SIMULATOR.user_controlled) {
@@ -1880,7 +1886,7 @@ for(var id in FUSIONS) {
     simController.stopsim = function () {
         matchTimer.stop();
         var elapse = matchTimer.elapsed();
-        var simpersec = games / elapse;
+        var simpersec = matchStats.matchesPlayed / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
 
@@ -1909,7 +1915,7 @@ for(var id in FUSIONS) {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + sims_left) * 100;
+                    var temp = matchStats.matchesPlayed / (matchStats.matchesPlayed + sims_left) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -1945,7 +1951,7 @@ for(var id in FUSIONS) {
             matchTimer.stop();
 
             var elapse = matchTimer.elapsed();
-            var simpersec = games / elapse;
+            var simpersec = matchStats.matchesPlayed / elapse;
             simpersec = simpersec.toFixed(2);
 
             ui.displayText(debugLog.getLog());
@@ -1989,43 +1995,43 @@ for(var id in FUSIONS) {
 
         // Increment wins/losses/games
         if (result == 'draw') {
-            draws++;
+            matchStats.matchesDrawn++;
         } else if (result) {
-            wins++;
+            matchStats.matchesWon++;
         } else {
-            losses++;
+            matchStats.matchesLost++;
         }
-        points += SIMULATOR.calculatePoints();
-        games++;
+        matchStats.totalPoints += SIMULATOR.calculatePoints();
+        matchStats.matchesPlayed++;
 
         // Increment total turn count
-        total_turns += SIMULATOR.simulation_turns;
+        matchStats.totalTurns += SIMULATOR.simulation_turns;
 
         if (debugLog.enabled || play_debug) {
             if (loss_debug) {
                 if (result === 'draw') {
-                    debugLog.prependLines('Draw found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.prependLines('Draw found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>DRAW</h1>');
                     sims_left = 0;
                 } else if (result) {
                     debugLog.clear();
                     if (!sims_left) {
-                        debugLog.appendLines('No losses found after ' + games + ' games. No debug output to display.');
+                        debugLog.appendLines('No losses found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 } else {
-                    debugLog.prependLines('Loss found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.prependLines('Loss found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>LOSS</h1>');
                     sims_left = 0;
                 }
             } else if (win_debug) {
                 if (result && result !== 'draw') {
-                    debugLog.prependLines('Win found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.prependLines('Win found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>WIN</h1>');
                     sims_left = 0;
                 } else {
                     debugLog.clear();
                     if (!sims_left) {
-                        debugLog.appendLines('No wins found after ' + games + ' games. No debug output to display.');
+                        debugLog.appendLines('No wins found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 }
             } else if (mass_debug) {
@@ -2050,7 +2056,7 @@ for(var id in FUSIONS) {
     // Global variables used by single-threaded simulator
     var run_sims_count = 0;
     var run_sims_batch = 0;
-})();;var SIMULATOR = {};
+})();var SIMULATOR = {};
 (function () {
 	
     var log = require('log');
@@ -5081,7 +5087,7 @@ for(var id in FUSIONS) {
 			}
 		}
 	});
-})();;(function (angular) {
+})();(function (angular) {
     'use strict';
 
     var filterByParent = function (unfiltered, parentID, parentIDField) {
@@ -5299,7 +5305,7 @@ for(var id in FUSIONS) {
     }
 
 }(angular));
-;(function (angular) {
+(function (angular) {
     'use strict';
 
     var storageAPI = require('storageAPI');
@@ -5321,7 +5327,7 @@ for(var id in FUSIONS) {
 
     module.controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
 
-}(angular));;define('tutorialScript', [
+}(angular));define('tutorialScript', [
     'urlHelpers'
 ], function getTutorialScript(
     urlHelpers
@@ -5523,7 +5529,7 @@ for(var id in FUSIONS) {
     }
 
     return tutorialParts;
-});;$(document).ready(function () {
+});$(document).ready(function () {
     var storageAPI = require('storageAPI');
     var tutorialParts = require('tutorialScript');
 

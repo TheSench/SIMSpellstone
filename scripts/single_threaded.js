@@ -7,13 +7,14 @@
     var debugLog = require('debugLog');
     var simController = require('simController');
     var ui = require('ui');
+    var matchStats = require('matchStats');
 
     // Initialize simulation loop - runs once per simulation session
     simController.startsim = function () {
-        total_turns = 0;
+        matchStats.totalTurns = 0;
         matchTimer.reset();
         debugLog.clear();
-        games = 0;
+        matchStats.matchesPlayed = 0;
         run_sims_batch = 0;
 
         var config = simController.getConfiguration();
@@ -25,10 +26,10 @@
 
         SIMULATOR.setupDecks();
 
-        wins = 0;
-        losses = 0;
-        draws = 0;
-        points = 0;
+        matchStats.matchesWon = 0;
+        matchStats.matchesLost = 0;
+        matchStats.matchesDrawn = 0;
+        matchStats.totalPoints = 0;
 
         ui.displayText(""); // Clear display
         if (!SIMULATOR.user_controlled) {
@@ -48,7 +49,7 @@
     simController.stopsim = function () {
         matchTimer.stop();
         var elapse = matchTimer.elapsed();
-        var simpersec = games / elapse;
+        var simpersec = matchStats.matchesPlayed / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
 
@@ -77,7 +78,7 @@
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + sims_left) * 100;
+                    var temp = matchStats.matchesPlayed / (matchStats.matchesPlayed + sims_left) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -113,7 +114,7 @@
             matchTimer.stop();
 
             var elapse = matchTimer.elapsed();
-            var simpersec = games / elapse;
+            var simpersec = matchStats.matchesPlayed / elapse;
             simpersec = simpersec.toFixed(2);
 
             ui.displayText(debugLog.getLog());
@@ -157,43 +158,43 @@
 
         // Increment wins/losses/games
         if (result == 'draw') {
-            draws++;
+            matchStats.matchesDrawn++;
         } else if (result) {
-            wins++;
+            matchStats.matchesWon++;
         } else {
-            losses++;
+            matchStats.matchesLost++;
         }
-        points += SIMULATOR.calculatePoints();
-        games++;
+        matchStats.totalPoints += SIMULATOR.calculatePoints();
+        matchStats.matchesPlayed++;
 
         // Increment total turn count
-        total_turns += SIMULATOR.simulation_turns;
+        matchStats.totalTurns += SIMULATOR.simulation_turns;
 
         if (debugLog.enabled || play_debug) {
             if (loss_debug) {
                 if (result === 'draw') {
-                    debugLog.prependLines('Draw found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.prependLines('Draw found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>DRAW</h1>');
                     sims_left = 0;
                 } else if (result) {
                     debugLog.clear();
                     if (!sims_left) {
-                        debugLog.appendLines('No losses found after ' + games + ' games. No debug output to display.');
+                        debugLog.appendLines('No losses found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 } else {
-                    debugLog.prependLines('Loss found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.prependLines('Loss found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>LOSS</h1>');
                     sims_left = 0;
                 }
             } else if (win_debug) {
                 if (result && result !== 'draw') {
-                    debugLog.prependLines('Win found after ' + games + ' games. Displaying debug output...', '');
+                    debugLog.prependLines('Win found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>WIN</h1>');
                     sims_left = 0;
                 } else {
                     debugLog.clear();
                     if (!sims_left) {
-                        debugLog.appendLines('No wins found after ' + games + ' games. No debug output to display.');
+                        debugLog.appendLines('No wins found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 }
             } else if (mass_debug) {

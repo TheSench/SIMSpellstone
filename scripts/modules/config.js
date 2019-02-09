@@ -4,7 +4,16 @@ define('config', [], function() {
    };
 });
 
-
+define('matchStats', [], function() {
+   return {
+      matchesPlayed: 0,
+      matchesWon: 0,
+      matchesLost: 0,
+      matchesDrawn: 0,
+      totalTurns: 0,
+      totalPoints: 0
+   };
+});
 
 // Initialize global variables
 var battle_history = '';
@@ -30,15 +39,9 @@ var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
 var closeDiv = false;
-var wins = 0;
-var losses = 0;
-var draws = 0;
-var games = 0;
-var points = 0;
 var sims_left = 0;
 var current_timeout;
 var surge = false;
 var battleground = [];
-var total_turns = 0;
 var choice = undefined;
 var tournament = false;
