@@ -14,6 +14,10 @@ var SIMULATOR = {};
     var config = require('config');
 
 	var max_turns = 100;
+	var playerDeckCached;
+	var cpuDeckCached;
+	var cpuCardsCached;
+	var playerCardsCached;
 
 	"use strict";
 
@@ -1674,20 +1678,20 @@ var SIMULATOR = {};
 		SIMULATOR.field = field;
 
 		// Load player deck
-		if (cache_player_deck_cards) {
-			deck['player'] = loadDeck.copyDeck(cache_player_deck_cards);
+		if (playerCardsCached) {
+			deck['player'] = loadDeck.copyDeck(playerCardsCached);
 		}
 
 		// Load enemy deck
 		if (getmission && missionlevel > 1 && missionlevel < 7) {
-			cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
-			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
+			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
+			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 		} else if (getraid) {
-			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
-			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
+			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
+			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 		}
-		if (cache_cpu_deck_cards) {
-			deck['cpu'] = loadDeck.copyDeck(cache_cpu_deck_cards);
+		if (cpuCardsCached) {
+			deck['cpu'] = loadDeck.copyDeck(cpuCardsCached);
 		}
 
 		// Set up deck order priority reference
@@ -1761,27 +1765,27 @@ var SIMULATOR = {};
 		// Cache decks where possible
 		// Load player deck
 		if (getdeck) {
-			cache_player_deck = base64.decodeHash(getdeck);
+			playerDeckCached = base64.decodeHash(getdeck);
 		} else {
-			cache_player_deck = loadDeck.defaultDeck();
+			playerDeckCached = loadDeck.defaultDeck();
 		}
-		cache_player_deck_cards = loadDeck.getDeckCards(cache_player_deck, 'player');
+		playerCardsCached = loadDeck.getDeckCards(playerDeckCached, 'player');
 
 		// Load enemy deck
 		config.pvpAI = true;
 		if (getdeck2) {
-			cache_cpu_deck = base64.decodeHash(getdeck2);
+			cpuDeckCached = base64.decodeHash(getdeck2);
 			if (getmission) config.pvpAI = false;
 		} else if (getmission) {
-			cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
+			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else if (getraid) {
-			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
+			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
-			cache_cpu_deck = loadDeck.defaultDeck();
+			cpuDeckCached = loadDeck.defaultDeck();
 		}
-		cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
+		cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 	}
 
 	function setupField(field) {

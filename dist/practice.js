@@ -11,12 +11,9 @@ var battle_history = '';
 var mass_debug = false;
 var loss_debug = false;
 var win_debug = false;
-var found_desired = false;
 var play_debug = false;
 var getdeck = '';
 var getdeck2 = '';
-var getcardlist = '';
-var getcardlist2 = '';
 var getordered = false;
 var getordered2 = false;
 var getexactorder = false;
@@ -38,22 +35,13 @@ var losses = 0;
 var draws = 0;
 var games = 0;
 var points = 0;
-var num_sims = 0;
-var last_games = [];
 var sims_left = 0;
 var current_timeout;
 var surge = false;
 var battleground = [];
 var total_turns = 0;
-var cache_player_deck;
-var cache_cpu_deck;
-var cache_player_deck_cards;
-var cache_cpu_deck_cards;
 var choice = undefined;
-var tournament = false;
-var suppressOutput = false;
-var orders = {};
-var cardStats = {};;define('debugLog', [], function() {
+var tournament = false;;define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,
@@ -937,9 +925,7 @@ define('ui', [
 	// Return table of simulation results
 	function showWinrate() {
 
-		if (suppressOutput) {
-			// Do nothing
-		} else if (debugLog.enabled || sims_left == 0) {
+		if (debugLog.enabled || sims_left == 0) {
 			// Generate links
 			var links = '';
 			links += '<br>' +
@@ -2080,6 +2066,10 @@ for(var id in FUSIONS) {
     var config = require('config');
 
 	var max_turns = 100;
+	var playerDeckCached;
+	var cpuDeckCached;
+	var cpuCardsCached;
+	var playerCardsCached;
 
 	"use strict";
 
@@ -3740,20 +3730,20 @@ for(var id in FUSIONS) {
 		SIMULATOR.field = field;
 
 		// Load player deck
-		if (cache_player_deck_cards) {
-			deck['player'] = loadDeck.copyDeck(cache_player_deck_cards);
+		if (playerCardsCached) {
+			deck['player'] = loadDeck.copyDeck(playerCardsCached);
 		}
 
 		// Load enemy deck
 		if (getmission && missionlevel > 1 && missionlevel < 7) {
-			cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
-			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
+			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
+			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 		} else if (getraid) {
-			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
-			cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
+			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
+			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 		}
-		if (cache_cpu_deck_cards) {
-			deck['cpu'] = loadDeck.copyDeck(cache_cpu_deck_cards);
+		if (cpuCardsCached) {
+			deck['cpu'] = loadDeck.copyDeck(cpuCardsCached);
 		}
 
 		// Set up deck order priority reference
@@ -3827,27 +3817,27 @@ for(var id in FUSIONS) {
 		// Cache decks where possible
 		// Load player deck
 		if (getdeck) {
-			cache_player_deck = base64.decodeHash(getdeck);
+			playerDeckCached = base64.decodeHash(getdeck);
 		} else {
-			cache_player_deck = loadDeck.defaultDeck();
+			playerDeckCached = loadDeck.defaultDeck();
 		}
-		cache_player_deck_cards = loadDeck.getDeckCards(cache_player_deck, 'player');
+		playerCardsCached = loadDeck.getDeckCards(playerDeckCached, 'player');
 
 		// Load enemy deck
 		config.pvpAI = true;
 		if (getdeck2) {
-			cache_cpu_deck = base64.decodeHash(getdeck2);
+			cpuDeckCached = base64.decodeHash(getdeck2);
 			if (getmission) config.pvpAI = false;
 		} else if (getmission) {
-			cache_cpu_deck = loadDeck.mission(getmission, missionlevel);
+			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else if (getraid) {
-			cache_cpu_deck = loadDeck.raid(getraid, raidlevel);
+			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
-			cache_cpu_deck = loadDeck.defaultDeck();
+			cpuDeckCached = loadDeck.defaultDeck();
 		}
-		cache_cpu_deck_cards = loadDeck.getDeckCards(cache_cpu_deck, 'cpu');
+		cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 	}
 
 	function setupField(field) {

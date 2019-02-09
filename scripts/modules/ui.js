@@ -172,9 +172,7 @@ define('ui', [
 	// Return table of simulation results
 	function showWinrate() {
 
-		if (suppressOutput) {
-			// Do nothing
-		} else if (debugLog.enabled || sims_left == 0) {
+		if (debugLog.enabled || sims_left == 0) {
 			// Generate links
 			var links = '';
 			links += '<br>' +
