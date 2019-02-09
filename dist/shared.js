@@ -1,11 +1,27 @@
 (function () {
     var modules = {};
-
-    window.define = function define(name, moduleDefinition) {
+    
+    function defineWithoutDependencies(name, moduleDefinition) {
         if (typeof moduleDefinition === "function") {
             modules[name] = moduleDefinition();
         } else {
             modules[name] = moduleDefinition;
+        }
+    }
+    
+    function defineWithDependencies(name, dependencies, moduleDefinition) {
+        var injectables = dependencies.map(function loadDependency(name) {
+            return modules[name];
+        });
+
+        modules[name] = moduleDefinition.apply(this, injectables);
+    }
+
+    window.define = function whichDefine() {
+        if(arguments.length === 2) {
+            defineWithoutDependencies.apply(this, arguments);
+        } else {
+            defineWithDependencies.apply(this, arguments);
         }
     };
 
@@ -2211,11 +2227,14 @@ define('dataUpdater', function () {
 	});
 
 	return api;
-});;define('base64', function () {
+});;define('base64', [
+    'cardInfo',
+    'unitInfo'
+], function (
+    cardInfo,
+    unitInfo
+) {
     "use strict";
-    
-    var cardInfo = require('cardInfo');
-    var unitInfo = require('unitInfo');
 
     var api = {
         encodeHash: encode,

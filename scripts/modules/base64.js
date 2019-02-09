@@ -1,8 +1,11 @@
-define('base64', function () {
+define('base64', [
+    'cardInfo',
+    'unitInfo'
+], function (
+    cardInfo,
+    unitInfo
+) {
     "use strict";
-    
-    var cardInfo = require('cardInfo');
-    var unitInfo = require('unitInfo');
 
     var api = {
         encodeHash: encode,
