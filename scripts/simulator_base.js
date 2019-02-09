@@ -2904,23 +2904,24 @@ var SIMULATOR = {};
 		healthStats.cpu.percent = stats.taken / stats.total;
 
 		var commander_o = field.cpu.commander;
+		var matchPoints;
 		if (getdeck2) {
 			if (commander_o.isAlive() && !forceWin) {
 				// 0-25 points, based on percentage of damage dealt to enemy
-				var points = Math.floor(healthStats.cpu.percent * 25);
+				matchPoints = Math.floor(healthStats.cpu.percent * 25);
 			} else {
 				// 115-130 points, based on percentage of damage taken
-				var points = 130 - Math.floor(healthStats.player.percent * 15);
+				matchPoints = 130 - Math.floor(healthStats.player.percent * 15);
 			}
 		} else {
 			if (commander_o.isAlive() && !forceWin) {
-				var points = Math.floor(healthStats.cpu.percent / 0.02);
-				points = Math.max(5, points);
+				matchPoints = Math.floor(healthStats.cpu.percent / 0.02);
+				matchPoints = Math.max(5, matchPoints);
 			} else {
-				var points = 200 - Math.floor(healthStats.player.percent / 0.02);
+				matchPoints = 200 - Math.floor(healthStats.player.percent / 0.02);
 			}
 		}
-		return points;
+		return matchPoints;
 	}
 
 	var deck = {};

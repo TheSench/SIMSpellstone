@@ -139,13 +139,13 @@ define('bgeApi', [
         }
     }
 
-    function addBgesFromList(battlegrounds, getbattleground, player) {
-        if (!getbattleground) return null;
-        var selected = getbattleground.split(",");
+    function addBgesFromList(currentBgeList, newBges, player) {
+        if (!newBges) return null;
+        var selected = newBges.split(",");
         for (var i = 0; i < selected.length; i++) {
             var id = selected[i];
             var battleground = BATTLEGROUNDS[id];
-            addBgeFromList(battlegrounds, battleground, player);
+            addBgeFromList(currentBgeList, battleground, player);
         }
     }
 
@@ -225,7 +225,7 @@ define('bgeApi', [
         }
     }
 
-    function getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, campaignID, missionlevel, raidID, raidlevel) {
+    function getBattlegrounds(matchBges, selfBges, enemyBges, mapBges, campaignID, missionlevel, raidID, raidlevel) {
 
         // Set up battleground effects, if any
         var battlegrounds = {
@@ -234,10 +234,10 @@ define('bgeApi', [
             onCardPlayed: []
         };
 
-        addBgesFromList(battlegrounds, getbattleground);
-        addBgesFromList(battlegrounds, selfbges, 'player');
-        addBgesFromList(battlegrounds, enemybges, 'cpu');
-        addMapBGEs(battlegrounds, mapbges, 'player');
+        addBgesFromList(battlegrounds, matchBges);
+        addBgesFromList(battlegrounds, selfBges, 'player');
+        addBgesFromList(battlegrounds, enemyBges, 'cpu');
+        addMapBGEs(battlegrounds, mapBges, 'player');
 
         if (campaignID) {
             addMissionBGE(battlegrounds, campaignID, missionlevel);

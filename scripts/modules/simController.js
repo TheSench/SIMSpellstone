@@ -38,8 +38,12 @@ define('simController', [
         tower_level = $('#tower_level').val();
         tower_type = $('#tower_type').val();
 
+        var selectedBges = '';
+        var selfbges = '';
+        var enemybges = '';
+        var mapbges = '';
         if (BATTLEGROUNDS) {
-            getbattleground = ui.getSelectedBattlegrounds();
+            selectedBges = ui.getSelectedBattlegrounds();
             selfbges = ui.getSelectedBattlegrounds("self-");
             enemybges = ui.getSelectedBattlegrounds("enemy-");
             mapbges = (getmission ? ui.getSelectedMapBattlegrounds() : "");
@@ -79,7 +83,7 @@ define('simController', [
             getsiege: getsiege,
             tower_level: tower_level,
             tower_type: tower_type,
-            getbattleground: getbattleground,
+            selectedBges: selectedBges,
             selfbges: selfbges,
             enemybges: enemybges,
             mapbges: mapbges,
@@ -103,16 +107,16 @@ define('simController', [
         matchTimer.stop();
 
         var msg;
-        var points = "";
+        var matchPoints = "";
         if (getdeck2) {
-            points = " (" + SIMULATOR.calculatePoints() + " points)";
+            matchPoints = " (" + SIMULATOR.calculatePoints() + " points)";
         }
         if (result == 'draw') {
-            msg = '<br><h1>DRAW' + points + '</h1><br>';
+            msg = '<br><h1>DRAW' + matchPoints + '</h1><br>';
         } else if (result) {
-            msg = '<br><h1>WIN' + points + '</h1><br>';
+            msg = '<br><h1>WIN' + matchPoints + '</h1><br>';
         } else {
-            msg = '<br><h1>LOSS' + points + '</h1><br>';
+            msg = '<br><h1>LOSS' + matchPoints + '</h1><br>';
         }
 
         ui.displayTurns();

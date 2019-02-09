@@ -100,30 +100,30 @@ define('ui', [
 
 	function getSelectedBattlegrounds(prefix) {
 		prefix = (prefix || "");
-		var getbattleground = [];
+		var selectedBattlegrounds = [];
 		var bgCheckBoxes = document.getElementsByName(prefix + "battleground");
 		for (var i = 0; i < bgCheckBoxes.length; i++) {
 			var checkbox = bgCheckBoxes[i];
 			if (checkbox && checkbox.checked) {
-				getbattleground.push(checkbox.value);
+				selectedBattlegrounds.push(checkbox.value);
 			}
 		}
-		getbattleground = getbattleground.join();
-		return getbattleground;
+		selectedBattlegrounds = selectedBattlegrounds.join();
+		return selectedBattlegrounds;
 	}
 
 	function getSelectedMapBattlegrounds() {
-		var getbattleground = [];
+		var selectedBattlegrounds = [];
 		var locationID = $("#location").val();
 		var selects = document.getElementsByName("map-battleground");
 		for (var i = 0; i < selects.length; i++) {
 			var select = selects[i];
 			if (select.value > 0) {
-				getbattleground.push(locationID + "-" + i + "-" + select.value);
+				selectedBattlegrounds.push(locationID + "-" + i + "-" + select.value);
 			}
 		}
-		getbattleground = getbattleground.join();
-		return getbattleground;
+		selectedBattlegrounds = selectedBattlegrounds.join();
+		return selectedBattlegrounds;
 	}
 
 	// Modify HTML to output simulation results
@@ -272,11 +272,11 @@ define('ui', [
 	}
 
 	// http://onlinestatbook.com/2/estimation/proportion_ci.html
-	function _marginOfError(matchStats.matchesWon, matchStats.matchesPlayed) {
-		if (matchStats.matchesPlayed <= 1) return 1;
+	function _marginOfError(wins, games) {
+		if (games <= 1) return 1;
 
-		var p = matchStats.matchesWon / matchStats.matchesPlayed;
-		var N = matchStats.matchesPlayed;
+		var p = wins / games;
+		var N = games;
 		var stdErr = Math.sqrt((p * (1 - p)) / N);
 		var Z95 = 1.96;
 		return ((stdErr * Z95) + 0.5 / N) * 100;

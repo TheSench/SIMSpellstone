@@ -31,10 +31,6 @@ var getmission = 0;
 var missionlevel = 0;
 var getraid = false;
 var raidlevel = 0;
-var getbattleground = '';
-var enemybges = '';
-var selfbges = '';
-var mapbges = '';
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
@@ -44,7 +40,7 @@ var current_timeout;
 var surge = false;
 var battleground = [];
 var choice = undefined;
-var tournament = false;define('debugLog', [], function() {
+var tournament = false;;define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,
@@ -86,7 +82,7 @@ var tournament = false;define('debugLog', [], function() {
     }
 
     return api;
-});define('log', [
+});;define('log', [
     'factions',
     'skillApi'
 ],
@@ -157,7 +153,7 @@ function(
     }
 
     return api;
-});define('bgeApi', [
+});;define('bgeApi', [
     'log',
     'cardApi',
     'debugLog'
@@ -298,13 +294,13 @@ function(
         }
     }
 
-    function addBgesFromList(battlegrounds, getbattleground, player) {
-        if (!getbattleground) return null;
-        var selected = getbattleground.split(",");
+    function addBgesFromList(currentBgeList, newBges, player) {
+        if (!newBges) return null;
+        var selected = newBges.split(",");
         for (var i = 0; i < selected.length; i++) {
             var id = selected[i];
             var battleground = BATTLEGROUNDS[id];
-            addBgeFromList(battlegrounds, battleground, player);
+            addBgeFromList(currentBgeList, battleground, player);
         }
     }
 
@@ -384,7 +380,7 @@ function(
         }
     }
 
-    function getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, campaignID, missionlevel, raidID, raidlevel) {
+    function getBattlegrounds(matchBges, selfBges, enemyBges, mapBges, campaignID, missionlevel, raidID, raidlevel) {
 
         // Set up battleground effects, if any
         var battlegrounds = {
@@ -393,10 +389,10 @@ function(
             onCardPlayed: []
         };
 
-        addBgesFromList(battlegrounds, getbattleground);
-        addBgesFromList(battlegrounds, selfbges, 'player');
-        addBgesFromList(battlegrounds, enemybges, 'cpu');
-        addMapBGEs(battlegrounds, mapbges, 'player');
+        addBgesFromList(battlegrounds, matchBges);
+        addBgesFromList(battlegrounds, selfBges, 'player');
+        addBgesFromList(battlegrounds, enemyBges, 'cpu');
+        addMapBGEs(battlegrounds, mapBges, 'player');
 
         if (campaignID) {
             addMissionBGE(battlegrounds, campaignID, missionlevel);
@@ -407,7 +403,7 @@ function(
     }
 
     return api;
-});define('loadDeck', [
+});;define('loadDeck', [
     'cardInfo',
     'cardApi',
     'unitInfo'
@@ -706,7 +702,7 @@ function(
     }
 
     return api;
-});define('animations', [
+});;define('animations', [
     'cardUI'
 ], function (
     cardUI
@@ -754,7 +750,7 @@ function(
     }
 
     return api;
-});"use strict";
+});;"use strict";
 
 define('ui', [
 	'base64',
@@ -856,30 +852,30 @@ define('ui', [
 
 	function getSelectedBattlegrounds(prefix) {
 		prefix = (prefix || "");
-		var getbattleground = [];
+		var selectedBattlegrounds = [];
 		var bgCheckBoxes = document.getElementsByName(prefix + "battleground");
 		for (var i = 0; i < bgCheckBoxes.length; i++) {
 			var checkbox = bgCheckBoxes[i];
 			if (checkbox && checkbox.checked) {
-				getbattleground.push(checkbox.value);
+				selectedBattlegrounds.push(checkbox.value);
 			}
 		}
-		getbattleground = getbattleground.join();
-		return getbattleground;
+		selectedBattlegrounds = selectedBattlegrounds.join();
+		return selectedBattlegrounds;
 	}
 
 	function getSelectedMapBattlegrounds() {
-		var getbattleground = [];
+		var selectedBattlegrounds = [];
 		var locationID = $("#location").val();
 		var selects = document.getElementsByName("map-battleground");
 		for (var i = 0; i < selects.length; i++) {
 			var select = selects[i];
 			if (select.value > 0) {
-				getbattleground.push(locationID + "-" + i + "-" + select.value);
+				selectedBattlegrounds.push(locationID + "-" + i + "-" + select.value);
 			}
 		}
-		getbattleground = getbattleground.join();
-		return getbattleground;
+		selectedBattlegrounds = selectedBattlegrounds.join();
+		return selectedBattlegrounds;
 	}
 
 	// Modify HTML to output simulation results
@@ -1296,7 +1292,7 @@ define('ui', [
 	window.ui = api;
 
 	return api;
-});define('simController', [
+});;define('simController', [
     'matchTimer',
     'debugLog',
     'animations',
@@ -1336,8 +1332,12 @@ define('ui', [
         tower_level = $('#tower_level').val();
         tower_type = $('#tower_type').val();
 
+        var selectedBges = '';
+        var selfbges = '';
+        var enemybges = '';
+        var mapbges = '';
         if (BATTLEGROUNDS) {
-            getbattleground = ui.getSelectedBattlegrounds();
+            selectedBges = ui.getSelectedBattlegrounds();
             selfbges = ui.getSelectedBattlegrounds("self-");
             enemybges = ui.getSelectedBattlegrounds("enemy-");
             mapbges = (getmission ? ui.getSelectedMapBattlegrounds() : "");
@@ -1377,7 +1377,7 @@ define('ui', [
             getsiege: getsiege,
             tower_level: tower_level,
             tower_type: tower_type,
-            getbattleground: getbattleground,
+            selectedBges: selectedBges,
             selfbges: selfbges,
             enemybges: enemybges,
             mapbges: mapbges,
@@ -1401,16 +1401,16 @@ define('ui', [
         matchTimer.stop();
 
         var msg;
-        var points = "";
+        var matchPoints = "";
         if (getdeck2) {
-            points = " (" + SIMULATOR.calculatePoints() + " points)";
+            matchPoints = " (" + SIMULATOR.calculatePoints() + " points)";
         }
         if (result == 'draw') {
-            msg = '<br><h1>DRAW' + points + '</h1><br>';
+            msg = '<br><h1>DRAW' + matchPoints + '</h1><br>';
         } else if (result) {
-            msg = '<br><h1>WIN' + points + '</h1><br>';
+            msg = '<br><h1>WIN' + matchPoints + '</h1><br>';
         } else {
-            msg = '<br><h1>LOSS' + points + '</h1><br>';
+            msg = '<br><h1>LOSS' + matchPoints + '</h1><br>';
         }
 
         ui.displayTurns();
@@ -1427,7 +1427,7 @@ define('ui', [
     window.SIM_CONTROLLER = SIM_CONTROLLER;
 
     return SIM_CONTROLLER;
-});define('startup', [
+});;define('startup', [
 	'base64',
 	'urlHelpers',
 	'simController',
@@ -1512,7 +1512,7 @@ define('ui', [
         $deck.children().remove();
         if (!urlHelpers.paramDefined("seedtest")) {
             var config = simController.getConfiguration();
-            var battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+            var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -1821,7 +1821,7 @@ define('ui', [
 
         processQueryString();
     });
-});// Convert skills to 1.0 version
+});;// Convert skills to 1.0 version
 for(var skillID in SKILL_DATA) {
 	var skillInfo = SKILL_DATA[skillID];
 	if(skillID === 'flurry') {
@@ -1835,7 +1835,7 @@ var REVERSE_FUSIONS = {};
 for(var id in FUSIONS) {
 	var fusion = FUSIONS[id];
 	REVERSE_FUSIONS[fusion] = id;
-}"use strict";
+};"use strict";
 
 (function () {
     var bgeApi = require('bgeApi');
@@ -1857,7 +1857,7 @@ for(var id in FUSIONS) {
         var config = simController.getConfiguration();
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.selectedBges, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
 
         ui.hide();
 
@@ -2056,7 +2056,7 @@ for(var id in FUSIONS) {
     // Global variables used by single-threaded simulator
     var run_sims_count = 0;
     var run_sims_batch = 0;
-})();var SIMULATOR = {};
+})();;var SIMULATOR = {};
 (function () {
 	
     var log = require('log');
@@ -4962,23 +4962,24 @@ for(var id in FUSIONS) {
 		healthStats.cpu.percent = stats.taken / stats.total;
 
 		var commander_o = field.cpu.commander;
+		var matchPoints;
 		if (getdeck2) {
 			if (commander_o.isAlive() && !forceWin) {
 				// 0-25 points, based on percentage of damage dealt to enemy
-				var points = Math.floor(healthStats.cpu.percent * 25);
+				matchPoints = Math.floor(healthStats.cpu.percent * 25);
 			} else {
 				// 115-130 points, based on percentage of damage taken
-				var points = 130 - Math.floor(healthStats.player.percent * 15);
+				matchPoints = 130 - Math.floor(healthStats.player.percent * 15);
 			}
 		} else {
 			if (commander_o.isAlive() && !forceWin) {
-				var points = Math.floor(healthStats.cpu.percent / 0.02);
-				points = Math.max(5, points);
+				matchPoints = Math.floor(healthStats.cpu.percent / 0.02);
+				matchPoints = Math.max(5, matchPoints);
 			} else {
-				var points = 200 - Math.floor(healthStats.player.percent / 0.02);
+				matchPoints = 200 - Math.floor(healthStats.player.percent / 0.02);
 			}
 		}
-		return points;
+		return matchPoints;
 	}
 
 	var deck = {};
@@ -5087,7 +5088,7 @@ for(var id in FUSIONS) {
 			}
 		}
 	});
-})();(function (angular) {
+})();;(function (angular) {
     'use strict';
 
     var filterByParent = function (unfiltered, parentID, parentIDField) {
@@ -5305,7 +5306,7 @@ for(var id in FUSIONS) {
     }
 
 }(angular));
-(function (angular) {
+;(function (angular) {
     'use strict';
 
     var storageAPI = require('storageAPI');
@@ -5327,7 +5328,7 @@ for(var id in FUSIONS) {
 
     module.controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
 
-}(angular));define('tutorialScript', [
+}(angular));;define('tutorialScript', [
     'urlHelpers'
 ], function getTutorialScript(
     urlHelpers
@@ -5529,7 +5530,7 @@ for(var id in FUSIONS) {
     }
 
     return tutorialParts;
-});$(document).ready(function () {
+});;$(document).ready(function () {
     var storageAPI = require('storageAPI');
     var tutorialParts = require('tutorialScript');
 

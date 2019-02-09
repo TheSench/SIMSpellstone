@@ -20,7 +20,7 @@
         var config = simController.getConfiguration();
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.selectedBges, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
 
         ui.hide();
 

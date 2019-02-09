@@ -83,7 +83,7 @@ define('startup', [
         $deck.children().remove();
         if (!urlHelpers.paramDefined("seedtest")) {
             var config = simController.getConfiguration();
-            var battlegrounds = bgeApi.getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+            var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
