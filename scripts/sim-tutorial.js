@@ -1,7 +1,6 @@
 ﻿$(document).ready(function () {
     var storageAPI = require('storageAPI');
-
-    var tutorialParts = getTutorialScript();
+    var tutorialParts = require('tutorialScript');
 
     var overlayHtml = $("<div></div>");
     $(document.body).append(overlayHtml);
@@ -9,7 +8,7 @@
         overlayHtml.replaceWith(function () {
             return $(this).contents();
         });
-        $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function (event) {
+        $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function () {
             storageAPI.setShowTutorial(this.checked);
         });
         $("#help").click(showTutorial);
@@ -35,7 +34,6 @@
         $("#tutorial").show();
     }
 
-
     var tutorialIndex = 0;
     function nextTutorial() {
         tutorialIndex++;
@@ -60,10 +58,8 @@
         var tutorialPart = tutorialParts[tutorialIndex];
 
         var actions = tutorialPart.actions;
-        if (actions) {
-            for (var i = 0; i < actions.length; i++) {
-                actions[i]();
-            }
+        if(actions) {
+            actions.forEach(function triggerAction(action) {action(); });
         }
 
         var msg = tutorialPart.msg;
@@ -104,7 +100,14 @@
 
     function showUI(target) {
         var position = target.offset();
-        $(".overlay-fog").css({ top: (position.top - 2) + 'px', left: (position.left - 2) + 'px' }).width((target.outerWidth() + 4) + 'px').height((target.outerHeight() + 4) + 'px');
+
+        $(".overlay-fog")
+            .css({ 
+                top: (position.top - 2) + 'px', 
+                left: (position.left - 2) + 'px' 
+            })
+            .width((target.outerWidth() + 4) + 'px')
+            .height((target.outerHeight() + 4) + 'px');
     }
 
     window.showTutorial = showTutorial;

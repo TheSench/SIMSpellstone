@@ -1,5 +1,9 @@
-﻿function getTutorialScript() {
-    var urlHelpers = require('urlHelpers');
+﻿define('tutorialScript', [
+    'urlHelpers'
+], function getTutorialScript(
+    urlHelpers
+) {
+    'user strict';
     
     var tutorialParts = [
        {
@@ -196,4 +200,4 @@
     }
 
     return tutorialParts;
-}
+});

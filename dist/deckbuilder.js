@@ -2819,8 +2819,12 @@ function externalData(hash, inventoryHash) {
     .controller('DeckBuilderCtrl', ['$scope', '$window', DeckBuilderCtrl]);
 
 }(angular));
-;function getTutorialScript() {
-    var urlHelpers = require('urlHelpers');
+;define('tutorialScript', [
+    'urlHelpers'
+], function getTutorialScript(
+    urlHelpers
+) {
+    'use strict';
 
     var tutorialParts = [
        {
@@ -3152,10 +3156,9 @@ function externalData(hash, inventoryHash) {
     }
 
     return tutorialParts;
-};$(document).ready(function () {
+});;$(document).ready(function () {
     var storageAPI = require('storageAPI');
-
-    var tutorialParts = getTutorialScript();
+    var tutorialParts = require('tutorialScript');
 
     var overlayHtml = $("<div></div>");
     $(document.body).append(overlayHtml);
@@ -3163,7 +3166,7 @@ function externalData(hash, inventoryHash) {
         overlayHtml.replaceWith(function () {
             return $(this).contents();
         });
-        $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function (event) {
+        $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function () {
             storageAPI.setShowTutorial(this.checked);
         });
         $("#help").click(showTutorial);
@@ -3189,7 +3192,6 @@ function externalData(hash, inventoryHash) {
         $("#tutorial").show();
     }
 
-
     var tutorialIndex = 0;
     function nextTutorial() {
         tutorialIndex++;
@@ -3214,10 +3216,8 @@ function externalData(hash, inventoryHash) {
         var tutorialPart = tutorialParts[tutorialIndex];
 
         var actions = tutorialPart.actions;
-        if (actions) {
-            for (var i = 0; i < actions.length; i++) {
-                actions[i]();
-            }
+        if(actions) {
+            actions.forEach(function triggerAction(action) {action(); });
         }
 
         var msg = tutorialPart.msg;
@@ -3258,7 +3258,14 @@ function externalData(hash, inventoryHash) {
 
     function showUI(target) {
         var position = target.offset();
-        $(".overlay-fog").css({ top: (position.top - 2) + 'px', left: (position.left - 2) + 'px' }).width((target.outerWidth() + 4) + 'px').height((target.outerHeight() + 4) + 'px');
+
+        $(".overlay-fog")
+            .css({ 
+                top: (position.top - 2) + 'px', 
+                left: (position.left - 2) + 'px' 
+            })
+            .width((target.outerWidth() + 4) + 'px')
+            .height((target.outerHeight() + 4) + 'px');
     }
 
     window.showTutorial = showTutorial;
