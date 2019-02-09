@@ -324,6 +324,7 @@ module.exports = function (grunt) {
                 options: {
                     assets: [
                         '**/*.css',
+                        'dist/shared.min.js',
                         'dist/main.min.js',
                         'dist/vendor.min.js',
                         'dist/deckbuilder.min.js',
