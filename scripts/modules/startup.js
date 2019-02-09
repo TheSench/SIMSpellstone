@@ -83,7 +83,7 @@ define('startup', [
         $deck.children().remove();
         if (!urlHelpers.paramDefined("seedtest")) {
             var config = simController.getConfiguration();
-            var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+            var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -168,11 +168,11 @@ define('startup', [
 
 		$('#surge').prop("checked", urlHelpers.paramDefined("surge"));
 		$('#siege').prop("checked", urlHelpers.paramDefined("siege"));
-		var tower_level = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
-		$('#tower_level').val(tower_level);
+		var towerLevel = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
+		$('#tower_level').val(towerLevel);
 
-		var tower_type = (urlHelpers.paramValue('tower_type') || 501);
-		$("#tower_type").val(tower_type);
+		var towerType = (urlHelpers.paramValue('tower_type') || 501);
+		$("#tower_type").val(towerType);
 
 		$('#auto_mode').prop("checked", urlHelpers.paramDefined("auto_mode"));
 		$('#tournament').prop("checked", urlHelpers.paramDefined("tournament"));
@@ -323,17 +323,17 @@ define('startup', [
         $("#raid, #raid_level").change(function () {
             var newDeck;
             var selectedRaid = $("#raid").val();
-            var raidlevel = $('#raid_level');
+            var raidLevel = $('#raid_level');
             if (selectedRaid) {
-                newDeck = loadDeck.raid(selectedRaid, raidlevel.val());
+                newDeck = loadDeck.raid(selectedRaid, raidLevel.val());
                 if (RAIDS[selectedRaid].type === "Dungeon") {
-                    raidlevel.attr("max", 150);
+                    raidLevel.attr("max", 150);
                 } else {
-                    raidlevel.attr("max", 40);
+                    raidLevel.attr("max", 40);
                 }
             } else {
                 newDeck = base64.decodeHash('');
-                raidlevel.attr("max", 40);
+                raidLevel.attr("max", 40);
             }
 
             deckChanged("defend_deck", newDeck, 'cpu');

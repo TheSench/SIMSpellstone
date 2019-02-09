@@ -1650,7 +1650,7 @@ var SIMULATOR = {};
 		}
 	}
 
-	function initializeBattle() {
+	function initializeBattle(config) {
 
 		SIMULATOR.simulation_turns = 0;
 
@@ -1683,11 +1683,11 @@ var SIMULATOR = {};
 		}
 
 		// Load enemy deck
-		if (getmission && missionlevel > 1 && missionlevel < 7) {
-			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
+		if (config.selectedMission && config.missionLevel > 1 && config.missionLevel < 7) {
+			cpuDeckCached = loadDeck.mission(config.selectedMission, config.missionLevel);
 			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
-		} else if (getraid) {
-			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
+		} else if (config.selectedRaid) {
+			cpuDeckCached = loadDeck.raid(config.selectedRaid, config.raidLevel);
 			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 		}
 		if (cpuCardsCached) {
@@ -1722,10 +1722,10 @@ var SIMULATOR = {};
 	}
 
 	// Simulate one game
-	function simulate() {
+	function simulate(config) {
 		simulating = true;
 
-		initializeBattle();
+		initializeBattle(config);
 
 		// Shuffle decks
 		if (getexactorder) {
@@ -1745,9 +1745,9 @@ var SIMULATOR = {};
 
 		setupField(field);
 
-		if (getsiege) {
-			var towerBGE = BATTLEGROUNDS[tower_type];
-			var tower = towerBGE.effect[tower_level];
+		if (config.siegeMode) {
+			var towerBGE = BATTLEGROUNDS[config.towerType];
+			var tower = towerBGE.effect[config.towerLevel];
 			if (tower) {
 				tower = unitInfo.create(tower.id, tower.level);
 				var towerCard = cardApi.byIdWithBgeApplied(tower);
@@ -1761,7 +1761,7 @@ var SIMULATOR = {};
 		return performTurns(0);
 	}
 
-	function setupDecks() {
+	function setupDecks(config) {
 		// Cache decks where possible
 		// Load player deck
 		if (getdeck) {
@@ -1775,12 +1775,12 @@ var SIMULATOR = {};
 		config.pvpAI = true;
 		if (getdeck2) {
 			cpuDeckCached = base64.decodeHash(getdeck2);
-			if (getmission) config.pvpAI = false;
-		} else if (getmission) {
-			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
+			if (config.selectedMission) config.pvpAI = false;
+		} else if (config.selectedMission) {
+			cpuDeckCached = loadDeck.mission(config.selectedMission, config.missionLevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
-		} else if (getraid) {
-			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
+		} else if (config.selectedRaid) {
+			cpuDeckCached = loadDeck.raid(config.selectedRaid, config.raidLevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
 			cpuDeckCached = loadDeck.defaultDeck();
@@ -1876,7 +1876,7 @@ var SIMULATOR = {};
 				return true;
 			}
 
-			var setup = setup_turn(turn, first_player, second_player, field);
+			setupTurn(turn, first_player, second_player, field);
 
 			if (!performTurn(turn, field, first_player, second_player, true)) {
 				// Try this turn again
@@ -1918,7 +1918,7 @@ var SIMULATOR = {};
 		}
 	}
 
-	function setup_turn(turn, first_player, second_player, field) {
+	function setupTurn(turn, first_player, second_player, field) {
 		simulation_turns = turn;
 
 		choice = undefined;
@@ -2937,18 +2937,11 @@ var SIMULATOR = {};
 
 	// public functions
 	SIMULATOR.simulate = simulate;
+	SIMULATOR.setupDecks = setupDecks;
 	SIMULATOR.onPlaySkills = onPlaySkills;
 	SIMULATOR.calculatePoints = calculatePoints;
 	// public variables
 	Object.defineProperties(SIMULATOR, {
-		setupDecks: {
-			get: function () {
-				return setupDecks;
-			},
-			set: function (value) {
-				setupDecks = value;
-			}
-		},
 		setupField: {
 			get: function () {
 				return setupField;

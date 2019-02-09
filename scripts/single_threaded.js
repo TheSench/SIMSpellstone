@@ -18,13 +18,11 @@
         run_sims_batch = 0;
 
         var config = simController.getConfiguration();
-
-        // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.selectedBges, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
 
         ui.hide();
 
-        SIMULATOR.setupDecks();
+        SIMULATOR.setupDecks(config);
 
         matchStats.matchesWon = 0;
         matchStats.matchesLost = 0;
@@ -40,7 +38,7 @@
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', sims_left);
-        current_timeout = setTimeout(run_sims);
+        current_timeout = setTimeout(runSims, 0, config);
 
         return false;
     };
@@ -64,13 +62,13 @@
         if (simController.stop_sims_callback) simController.stop_sims_callback();
     };
 
-    function run_sims() {
+    function runSims(config) {
         if (SIMULATOR.user_controlled) {
-            if (run_sim(true)) {
+            if (runSim(config, true)) {
                 simController.debug_end();
             }
         } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
-            run_sim(true);
+            runSim(config, true);
             simController.debug_end();
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations
@@ -78,13 +76,10 @@
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = matchStats.matchesPlayed / (matchStats.matchesPlayed + sims_left) * 100;
-                    temp = temp.toFixed(2);
-
                     var elapse = matchTimer.elapsed();
 
                     var batch_elapse = matchTimer.batchElapsed();
-                    if (batch_elapse == 0) {
+                    if (batch_elapse === 0) {
                         simpersecbatch = 0;
                     } else {
                         simpersecbatch = run_sims_batch / batch_elapse;
@@ -103,9 +98,9 @@
                 if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(run_sims, 1);
+                current_timeout = setTimeout(runSims, 1, config);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
-                    run_sim();
+                    runSim(config);
                 }
             }
         } else {
@@ -130,11 +125,11 @@
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
     var seedtest = (urlHelpers.paramValue("seedtest") || 0);
-    function run_sim(skipResults) {
+    function runSim(config, skipResults) {
         if (seedtest) {
             Math.seedrandom(seedtest++);
         }
-        if (!SIMULATOR.simulate()) return false;
+        if (!SIMULATOR.simulate(config)) return false;
         if (!skipResults) simController.processSimResult();
     }
 

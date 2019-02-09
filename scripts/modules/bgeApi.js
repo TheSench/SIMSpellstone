@@ -225,7 +225,7 @@ define('bgeApi', [
         }
     }
 
-    function getBattlegrounds(matchBges, selfBges, enemyBges, mapBges, campaignID, missionlevel, raidID, raidlevel) {
+    function getBattlegrounds(matchBges, selfBges, enemyBges, mapBges, campaignID, missionLevel, raidID, raidLevel) {
 
         // Set up battleground effects, if any
         var battlegrounds = {
@@ -240,9 +240,9 @@ define('bgeApi', [
         addMapBGEs(battlegrounds, mapBges, 'player');
 
         if (campaignID) {
-            addMissionBGE(battlegrounds, campaignID, missionlevel);
+            addMissionBGE(battlegrounds, campaignID, missionLevel);
         } else if (raidID) {
-            addRaidBGE(battlegrounds, raidID, raidlevel);
+            addRaidBGE(battlegrounds, raidID, raidLevel);
         }
         return battlegrounds;
     }

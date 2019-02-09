@@ -26,17 +26,17 @@ define('simController', [
 
         getdeck2 = $('#deck2').val();
         var selectedCampaign = $('#campaign').val();
-        getmission = $('#mission').val();
-        missionlevel = $('#mission_level').val();
-        getraid = $('#raid').val();
-        raidlevel = $('#raid_level').val();
+        var selectedMission = $('#mission').val();
+        var missionLevel = $('#mission_level').val();
+        var selectedRaid = $('#raid').val();
+        var raidLevel = $('#raid_level').val();
         getordered2 = $('#ordered2').is(':checked');
         getexactorder2 = $('#exactorder2').is(':checked');
         surge = $('#surge').is(':checked');
 
-        getsiege = $('#siege').is(':checked');
-        tower_level = $('#tower_level').val();
-        tower_type = $('#tower_type').val();
+        var siegeMode = $('#siege').is(':checked');
+        var towerLevel = $('#tower_level').val();
+        var towerType = $('#tower_type').val();
 
         var selectedBges = '';
         var selfbges = '';
@@ -46,7 +46,7 @@ define('simController', [
             selectedBges = ui.getSelectedBattlegrounds();
             selfbges = ui.getSelectedBattlegrounds("self-");
             enemybges = ui.getSelectedBattlegrounds("enemy-");
-            mapbges = (getmission ? ui.getSelectedMapBattlegrounds() : "");
+            mapbges = (selectedMission ? ui.getSelectedMapBattlegrounds() : "");
         }
 
         sims_left = $('#sims').val() || 1;
@@ -73,16 +73,16 @@ define('simController', [
             getexactorder: getexactorder,
             getdeck2: getdeck2,
             selectedCampaign: selectedCampaign,
-            getmission: getmission,
-            missionlevel: missionlevel,
-            getraid: getraid,
-            raidlevel: raidlevel,
+            selectedMission: selectedMission,
+            missionLevel: missionLevel,
+            selectedRaid: selectedRaid,
+            raidLevel: raidLevel,
             getordered2: getordered2,
             getexactorder2: getexactorder2,
             surge: surge,
-            getsiege: getsiege,
-            tower_level: tower_level,
-            tower_type: tower_type,
+            siegeMode: siegeMode,
+            towerLevel: towerLevel,
+            towerType: towerType,
             selectedBges: selectedBges,
             selfbges: selfbges,
             enemybges: enemybges,

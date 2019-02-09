@@ -393,34 +393,36 @@ define('ui', [
 
 	var deckBuilders = {};
 	function loadDeckBuilder(player) {
+		var deckHash;
+		var selectedMission;
+		var missionLevel;
+		var selectedRaid;
+		var raidLevel;
+
 		if (player === 'player') {
-			var getdeck = $('#deck1').val();
-			var getmission;
-			var missionlevel;
-			var getraid;
-			var raidlevel;
+			deckHash = $('#deck1').val();
 		} else {
-			var getdeck = $('#deck2').val();
-			var getmission = $('#mission').val();
-			var missionlevel = $('#mission_level').val();
-			var getraid = $('#raid').val();
-			var raidlevel = $('#raid_level').val();
+			deckHash = $('#deck2').val();
+			selectedMission = $('#mission').val();
+			missionLevel = $('#mission_level').val();
+			selectedRaid = $('#raid').val();
+			raidLevel = $('#raid_level').val();
 		}
 
 		// Load player deck
-		if (getdeck) {
-			deck = base64.decodeHash(getdeck);
-		} else if (getmission) {
-			deck = loadDeck.mission(getmission, missionlevel);
-		} else if (getraid) {
-			deck = loadDeck.raid(getraid, raidlevel);
+		if (deckHash) {
+			deck = base64.decodeHash(deckHash);
+		} else if (selectedMission) {
+			deck = loadDeck.mission(selectedMission, missionLevel);
+		} else if (selectedRaid) {
+			deck = loadDeck.raid(selectedRaid, raidLevel);
 		} else {
 			deck = loadDeck.defaultDeck();
 		}
 		var hash = base64.encodeHash(deck);
 
-		var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
-		var deckHashField = (player ? $("#" + (player == 'player' ? 'deck1' : 'deck2')) : null);
+		var name = (player === 'player' ? 'Player Deck' : 'Enemy Deck');
+		var deckHashField = (player ? $("#" + (player === 'player' ? 'deck1' : 'deck2')) : null);
 
 		var currentDeckBuilder = deckBuilders[player];
 		if (currentDeckBuilder == null || currentDeckBuilder.closed) {

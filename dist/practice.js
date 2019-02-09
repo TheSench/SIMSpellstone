@@ -27,13 +27,6 @@ var getordered = false;
 var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
-var getmission = 0;
-var missionlevel = 0;
-var getraid = false;
-var raidlevel = 0;
-var getsiege = 0;
-var tower_level = 0;
-var tower_type = 0;
 var closeDiv = false;
 var sims_left = 0;
 var current_timeout;
@@ -380,7 +373,7 @@ function(
         }
     }
 
-    function getBattlegrounds(matchBges, selfBges, enemyBges, mapBges, campaignID, missionlevel, raidID, raidlevel) {
+    function getBattlegrounds(matchBges, selfBges, enemyBges, mapBges, campaignID, missionLevel, raidID, raidLevel) {
 
         // Set up battleground effects, if any
         var battlegrounds = {
@@ -395,9 +388,9 @@ function(
         addMapBGEs(battlegrounds, mapBges, 'player');
 
         if (campaignID) {
-            addMissionBGE(battlegrounds, campaignID, missionlevel);
+            addMissionBGE(battlegrounds, campaignID, missionLevel);
         } else if (raidID) {
-            addRaidBGE(battlegrounds, raidID, raidlevel);
+            addRaidBGE(battlegrounds, raidID, raidLevel);
         }
         return battlegrounds;
     }
@@ -1145,34 +1138,36 @@ define('ui', [
 
 	var deckBuilders = {};
 	function loadDeckBuilder(player) {
+		var deckHash;
+		var selectedMission;
+		var missionLevel;
+		var selectedRaid;
+		var raidLevel;
+
 		if (player === 'player') {
-			var getdeck = $('#deck1').val();
-			var getmission;
-			var missionlevel;
-			var getraid;
-			var raidlevel;
+			deckHash = $('#deck1').val();
 		} else {
-			var getdeck = $('#deck2').val();
-			var getmission = $('#mission').val();
-			var missionlevel = $('#mission_level').val();
-			var getraid = $('#raid').val();
-			var raidlevel = $('#raid_level').val();
+			deckHash = $('#deck2').val();
+			selectedMission = $('#mission').val();
+			missionLevel = $('#mission_level').val();
+			selectedRaid = $('#raid').val();
+			raidLevel = $('#raid_level').val();
 		}
 
 		// Load player deck
-		if (getdeck) {
-			deck = base64.decodeHash(getdeck);
-		} else if (getmission) {
-			deck = loadDeck.mission(getmission, missionlevel);
-		} else if (getraid) {
-			deck = loadDeck.raid(getraid, raidlevel);
+		if (deckHash) {
+			deck = base64.decodeHash(deckHash);
+		} else if (selectedMission) {
+			deck = loadDeck.mission(selectedMission, missionLevel);
+		} else if (selectedRaid) {
+			deck = loadDeck.raid(selectedRaid, raidLevel);
 		} else {
 			deck = loadDeck.defaultDeck();
 		}
 		var hash = base64.encodeHash(deck);
 
-		var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
-		var deckHashField = (player ? $("#" + (player == 'player' ? 'deck1' : 'deck2')) : null);
+		var name = (player === 'player' ? 'Player Deck' : 'Enemy Deck');
+		var deckHashField = (player ? $("#" + (player === 'player' ? 'deck1' : 'deck2')) : null);
 
 		var currentDeckBuilder = deckBuilders[player];
 		if (currentDeckBuilder == null || currentDeckBuilder.closed) {
@@ -1320,17 +1315,17 @@ define('ui', [
 
         getdeck2 = $('#deck2').val();
         var selectedCampaign = $('#campaign').val();
-        getmission = $('#mission').val();
-        missionlevel = $('#mission_level').val();
-        getraid = $('#raid').val();
-        raidlevel = $('#raid_level').val();
+        var selectedMission = $('#mission').val();
+        var missionLevel = $('#mission_level').val();
+        var selectedRaid = $('#raid').val();
+        var raidLevel = $('#raid_level').val();
         getordered2 = $('#ordered2').is(':checked');
         getexactorder2 = $('#exactorder2').is(':checked');
         surge = $('#surge').is(':checked');
 
-        getsiege = $('#siege').is(':checked');
-        tower_level = $('#tower_level').val();
-        tower_type = $('#tower_type').val();
+        var siegeMode = $('#siege').is(':checked');
+        var towerLevel = $('#tower_level').val();
+        var towerType = $('#tower_type').val();
 
         var selectedBges = '';
         var selfbges = '';
@@ -1340,7 +1335,7 @@ define('ui', [
             selectedBges = ui.getSelectedBattlegrounds();
             selfbges = ui.getSelectedBattlegrounds("self-");
             enemybges = ui.getSelectedBattlegrounds("enemy-");
-            mapbges = (getmission ? ui.getSelectedMapBattlegrounds() : "");
+            mapbges = (selectedMission ? ui.getSelectedMapBattlegrounds() : "");
         }
 
         sims_left = $('#sims').val() || 1;
@@ -1367,16 +1362,16 @@ define('ui', [
             getexactorder: getexactorder,
             getdeck2: getdeck2,
             selectedCampaign: selectedCampaign,
-            getmission: getmission,
-            missionlevel: missionlevel,
-            getraid: getraid,
-            raidlevel: raidlevel,
+            selectedMission: selectedMission,
+            missionLevel: missionLevel,
+            selectedRaid: selectedRaid,
+            raidLevel: raidLevel,
             getordered2: getordered2,
             getexactorder2: getexactorder2,
             surge: surge,
-            getsiege: getsiege,
-            tower_level: tower_level,
-            tower_type: tower_type,
+            siegeMode: siegeMode,
+            towerLevel: towerLevel,
+            towerType: towerType,
             selectedBges: selectedBges,
             selfbges: selfbges,
             enemybges: enemybges,
@@ -1512,7 +1507,7 @@ define('ui', [
         $deck.children().remove();
         if (!urlHelpers.paramDefined("seedtest")) {
             var config = simController.getConfiguration();
-            var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+            var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -1597,11 +1592,11 @@ define('ui', [
 
 		$('#surge').prop("checked", urlHelpers.paramDefined("surge"));
 		$('#siege').prop("checked", urlHelpers.paramDefined("siege"));
-		var tower_level = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
-		$('#tower_level').val(tower_level);
+		var towerLevel = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
+		$('#tower_level').val(towerLevel);
 
-		var tower_type = (urlHelpers.paramValue('tower_type') || 501);
-		$("#tower_type").val(tower_type);
+		var towerType = (urlHelpers.paramValue('tower_type') || 501);
+		$("#tower_type").val(towerType);
 
 		$('#auto_mode').prop("checked", urlHelpers.paramDefined("auto_mode"));
 		$('#tournament').prop("checked", urlHelpers.paramDefined("tournament"));
@@ -1752,17 +1747,17 @@ define('ui', [
         $("#raid, #raid_level").change(function () {
             var newDeck;
             var selectedRaid = $("#raid").val();
-            var raidlevel = $('#raid_level');
+            var raidLevel = $('#raid_level');
             if (selectedRaid) {
-                newDeck = loadDeck.raid(selectedRaid, raidlevel.val());
+                newDeck = loadDeck.raid(selectedRaid, raidLevel.val());
                 if (RAIDS[selectedRaid].type === "Dungeon") {
-                    raidlevel.attr("max", 150);
+                    raidLevel.attr("max", 150);
                 } else {
-                    raidlevel.attr("max", 40);
+                    raidLevel.attr("max", 40);
                 }
             } else {
                 newDeck = base64.decodeHash('');
-                raidlevel.attr("max", 40);
+                raidLevel.attr("max", 40);
             }
 
             deckChanged("defend_deck", newDeck, 'cpu');
@@ -1855,13 +1850,11 @@ for(var id in FUSIONS) {
         run_sims_batch = 0;
 
         var config = simController.getConfiguration();
-
-        // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.selectedBges, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
 
         ui.hide();
 
-        SIMULATOR.setupDecks();
+        SIMULATOR.setupDecks(config);
 
         matchStats.matchesWon = 0;
         matchStats.matchesLost = 0;
@@ -1877,7 +1870,7 @@ for(var id in FUSIONS) {
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', sims_left);
-        current_timeout = setTimeout(run_sims);
+        current_timeout = setTimeout(runSims, 0, config);
 
         return false;
     };
@@ -1901,13 +1894,13 @@ for(var id in FUSIONS) {
         if (simController.stop_sims_callback) simController.stop_sims_callback();
     };
 
-    function run_sims() {
+    function runSims(config) {
         if (SIMULATOR.user_controlled) {
-            if (run_sim(true)) {
+            if (runSim(config, true)) {
                 simController.debug_end();
             }
         } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
-            run_sim(true);
+            runSim(config, true);
             simController.debug_end();
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations
@@ -1915,13 +1908,10 @@ for(var id in FUSIONS) {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = matchStats.matchesPlayed / (matchStats.matchesPlayed + sims_left) * 100;
-                    temp = temp.toFixed(2);
-
                     var elapse = matchTimer.elapsed();
 
                     var batch_elapse = matchTimer.batchElapsed();
-                    if (batch_elapse == 0) {
+                    if (batch_elapse === 0) {
                         simpersecbatch = 0;
                     } else {
                         simpersecbatch = run_sims_batch / batch_elapse;
@@ -1940,9 +1930,9 @@ for(var id in FUSIONS) {
                 if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(run_sims, 1);
+                current_timeout = setTimeout(runSims, 1, config);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
-                    run_sim();
+                    runSim(config);
                 }
             }
         } else {
@@ -1967,11 +1957,11 @@ for(var id in FUSIONS) {
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
     var seedtest = (urlHelpers.paramValue("seedtest") || 0);
-    function run_sim(skipResults) {
+    function runSim(config, skipResults) {
         if (seedtest) {
             Math.seedrandom(seedtest++);
         }
-        if (!SIMULATOR.simulate()) return false;
+        if (!SIMULATOR.simulate(config)) return false;
         if (!skipResults) simController.processSimResult();
     }
 
@@ -3708,7 +3698,7 @@ for(var id in FUSIONS) {
 		}
 	}
 
-	function initializeBattle() {
+	function initializeBattle(config) {
 
 		SIMULATOR.simulation_turns = 0;
 
@@ -3741,11 +3731,11 @@ for(var id in FUSIONS) {
 		}
 
 		// Load enemy deck
-		if (getmission && missionlevel > 1 && missionlevel < 7) {
-			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
+		if (config.selectedMission && config.missionLevel > 1 && config.missionLevel < 7) {
+			cpuDeckCached = loadDeck.mission(config.selectedMission, config.missionLevel);
 			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
-		} else if (getraid) {
-			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
+		} else if (config.selectedRaid) {
+			cpuDeckCached = loadDeck.raid(config.selectedRaid, config.raidLevel);
 			cpuCardsCached = loadDeck.getDeckCards(cpuDeckCached, 'cpu');
 		}
 		if (cpuCardsCached) {
@@ -3780,10 +3770,10 @@ for(var id in FUSIONS) {
 	}
 
 	// Simulate one game
-	function simulate() {
+	function simulate(config) {
 		simulating = true;
 
-		initializeBattle();
+		initializeBattle(config);
 
 		// Shuffle decks
 		if (getexactorder) {
@@ -3803,9 +3793,9 @@ for(var id in FUSIONS) {
 
 		setupField(field);
 
-		if (getsiege) {
-			var towerBGE = BATTLEGROUNDS[tower_type];
-			var tower = towerBGE.effect[tower_level];
+		if (config.siegeMode) {
+			var towerBGE = BATTLEGROUNDS[config.towerType];
+			var tower = towerBGE.effect[config.towerLevel];
 			if (tower) {
 				tower = unitInfo.create(tower.id, tower.level);
 				var towerCard = cardApi.byIdWithBgeApplied(tower);
@@ -3819,7 +3809,7 @@ for(var id in FUSIONS) {
 		return performTurns(0);
 	}
 
-	function setupDecks() {
+	function setupDecks(config) {
 		// Cache decks where possible
 		// Load player deck
 		if (getdeck) {
@@ -3833,12 +3823,12 @@ for(var id in FUSIONS) {
 		config.pvpAI = true;
 		if (getdeck2) {
 			cpuDeckCached = base64.decodeHash(getdeck2);
-			if (getmission) config.pvpAI = false;
-		} else if (getmission) {
-			cpuDeckCached = loadDeck.mission(getmission, missionlevel);
+			if (config.selectedMission) config.pvpAI = false;
+		} else if (config.selectedMission) {
+			cpuDeckCached = loadDeck.mission(config.selectedMission, config.missionLevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
-		} else if (getraid) {
-			cpuDeckCached = loadDeck.raid(getraid, raidlevel);
+		} else if (config.selectedRaid) {
+			cpuDeckCached = loadDeck.raid(config.selectedRaid, config.raidLevel);
 			config.pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
 			cpuDeckCached = loadDeck.defaultDeck();
@@ -3934,7 +3924,7 @@ for(var id in FUSIONS) {
 				return true;
 			}
 
-			var setup = setup_turn(turn, first_player, second_player, field);
+			setupTurn(turn, first_player, second_player, field);
 
 			if (!performTurn(turn, field, first_player, second_player, true)) {
 				// Try this turn again
@@ -3976,7 +3966,7 @@ for(var id in FUSIONS) {
 		}
 	}
 
-	function setup_turn(turn, first_player, second_player, field) {
+	function setupTurn(turn, first_player, second_player, field) {
 		simulation_turns = turn;
 
 		choice = undefined;
@@ -4995,18 +4985,11 @@ for(var id in FUSIONS) {
 
 	// public functions
 	SIMULATOR.simulate = simulate;
+	SIMULATOR.setupDecks = setupDecks;
 	SIMULATOR.onPlaySkills = onPlaySkills;
 	SIMULATOR.calculatePoints = calculatePoints;
 	// public variables
 	Object.defineProperties(SIMULATOR, {
-		setupDecks: {
-			get: function () {
-				return setupDecks;
-			},
-			set: function (value) {
-				setupDecks = value;
-			}
-		},
 		setupField: {
 			get: function () {
 				return setupField;
