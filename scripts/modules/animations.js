@@ -1,6 +1,9 @@
-define('animations', function () {
-    
-    var cardUI = require('cardUI');
+define('animations', [
+    'cardUI'
+], function (
+    cardUI
+) {
+    "use strict";
 
     var api = {
         areShown: false,

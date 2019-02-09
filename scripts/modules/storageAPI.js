@@ -1,4 +1,8 @@
-define('storageAPI', function () {
+define('storageAPI', [
+    'urlHelpers'
+], function (
+    urlHelpers
+) {
     "use strict";
 
     var storageAPI = {};
@@ -21,8 +25,6 @@ define('storageAPI', function () {
     }
 
     function fullAPI() {
-        var urlHelpers = require('urlHelpers');
-
         var SaveFields = {
             decks: "SavedDecks",
             tutorial: "Tutorial"

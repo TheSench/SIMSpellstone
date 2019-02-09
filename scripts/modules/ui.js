@@ -1,6 +1,20 @@
 "use strict";
 
-define('ui', function () {
+define('ui', [
+	'base64',
+	'urlHelpers',
+	'loadDeck',
+	'debugLog',
+	'storageAPI',
+	'dataUpdater'
+], function (
+	base64,
+	urlHelpers,
+	loadDeck,
+	debugLog,
+	storageAPI,
+	dataUpdater
+) {
 	var api = {
 		show: showUI,
 		hide: hideUI,
@@ -17,13 +31,6 @@ define('ui', function () {
 		loadDeck: loadDeck,
 		toggleTheme: toggleTheme
 	};
-
-	var base64 = require('base64');
-	var urlHelpers = require('urlHelpers');
-	var loadDeck = require('loadDeck');
-	var debugLog = require('debugLog');
-	var storageAPI = require('storageAPI');
-	var dataUpdater = require('dataUpdater');
 
 	var loadDeckDialog;
 

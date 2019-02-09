@@ -1,4 +1,4 @@
-define('debugLog', function() {
+define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,

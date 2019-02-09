@@ -1,4 +1,4 @@
-define('runeApi', function () {
+define('runeApi', [], function () {
     var api = {
         addRunes: addRunes,
         canUseRune: canUseRune,

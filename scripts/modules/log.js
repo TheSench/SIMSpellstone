@@ -1,12 +1,18 @@
-define('log', function() {
+define('log', [
+    'factions',
+    'skillApi'
+],
+function(
+    factions,
+    skillApi
+) {
+    "use strict";
+
     var api = {
         skill: logSkill,
         name: logCardName
     };
     
-    var factions = require('factions');
-    var skillApi = require('skillApi');
-
     function truncate(value) {
         if (value > Math.floor(value)) {
             value = value.toFixed(1);

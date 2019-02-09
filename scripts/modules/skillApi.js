@@ -1,4 +1,4 @@
-define('skillApi', function () {
+define('skillApi', [], function () {
 
     var api = {
         setSkill: setSkill,

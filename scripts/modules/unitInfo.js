@@ -1,4 +1,10 @@
-define('unitInfo', function () {
+define('unitInfo', [
+    'cardApi'
+], function (
+    cardApi
+) {
+    "use strict";
+    
     var api = {
         areEqual: areEqual,
         getEnhancement: getEnhancement,
@@ -7,8 +13,6 @@ define('unitInfo', function () {
         create: makeUnitInfo,
         defaultCommander: makeUnitInfo(202, 1) // Elaria Captain
     };
-
-    var cardApi = require('cardApi');
 
     function makeUnitInfo(id, level, runes) {
         var unit = {

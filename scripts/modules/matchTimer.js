@@ -1,4 +1,4 @@
-define('matchTimer', function() {
+define('matchTimer', [], function() {
     var api = {
         elapsed: elapsed,
         batchElapsed: batchElapsed,

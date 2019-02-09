@@ -1,11 +1,15 @@
-define('bgeApi', function () {
+define('bgeApi', [
+    'log',
+    'cardApi',
+    'debugLog'
+], function (
+    log,
+    cardApi,
+    debugLog
+) {
     var api = {
         getBattlegrounds: getBattlegrounds
     };
-
-    var log = require('log');
-    var cardApi = require('cardApi');
-    var debugLog = require('debugLog');
 
     function MakeSkillModifier(name, effect) {
         return {

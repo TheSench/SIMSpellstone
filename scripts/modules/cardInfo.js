@@ -1,4 +1,4 @@
-define('cardInfo', function() {
+define('cardInfo', [], function() {
     var api = {
         loadCard: loadCard,
         isCommander: isCommander,

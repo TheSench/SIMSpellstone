@@ -1,13 +1,25 @@
-define('startup', function () {
-    var base64 = require('base64');
-    var urlHelpers = require('urlHelpers');
-    var simController = require('simController');
-    var bgeApi = require('bgeApi');
-    var cardUI = require('cardUI');
-    var loadDeck = require('loadDeck');
-    var loadCardCache = require('loadCardCache');
-    var ui = require('ui');
-    var config = require('config');
+define('startup', [
+	'base64',
+	'urlHelpers',
+	'simController',
+	'bgeApi',
+	'cardUI',
+	'loadDeck',
+	'loadCardCache',
+	'ui',
+	'config'
+], function (
+	base64,
+	urlHelpers,
+	simController,
+	bgeApi,
+	cardUI,
+	loadDeck,
+	loadCardCache,
+	ui,
+	config
+) {
+	"use strict";
 
     var mapBGEDialog;
 	var deckPopupDialog;

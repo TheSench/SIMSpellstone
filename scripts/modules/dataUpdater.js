@@ -1,11 +1,14 @@
-"use strict";
 
-define('dataUpdater', function () {
+define('dataUpdater', [
+    'storageAPI'
+], function (
+    storageAPI
+) {
+    "use strict";
+
     var api = {
         updateData: updateData
     };
-
-    var storageAPI = require('storageAPI');
 
     var baseUrl = "https://spellstone.synapse-games.com";
 

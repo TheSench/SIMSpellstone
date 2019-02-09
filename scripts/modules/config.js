@@ -1,3 +1,5 @@
-define('config', {
-   pvpAI: false
+define('config', [], function() {
+   return {
+      pvpAI: false
+   };
 });

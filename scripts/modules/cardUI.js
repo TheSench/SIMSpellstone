@@ -1,11 +1,17 @@
-﻿define('cardUI', function () {
+﻿define('cardUI', [
+	'cardApi',
+	'cardInfo',
+	'runeApi',
+	'factions',
+	'unitInfo'
+], function (
+	cardApi,
+	cardInfo,
+	runeApi,
+	factions,
+	unitInfo
+) {
 	"use strict";
-
-	var cardApi = require('cardApi');
-	var cardInfo = require('cardInfo');
-	var runeApi = require('runeApi');
-	var factions = require('factions');
-	var unitInfo = require('unitInfo');
 
 	var assetsRoot = '';
 

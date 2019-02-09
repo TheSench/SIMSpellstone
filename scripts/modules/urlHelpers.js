@@ -1,4 +1,6 @@
-define('urlHelpers', function () {
+define('urlHelpers', [], function () {
+    "use strict";
+
     var api = {
         paramDefined: paramDefined,
         paramValue: paramValue,

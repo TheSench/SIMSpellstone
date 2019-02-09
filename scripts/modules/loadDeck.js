@@ -1,7 +1,13 @@
-define('loadDeck', function () {
-	var cardInfo = require('cardInfo');
-    var cardApi = require('cardApi');
-    var unitInfo = require('unitInfo');
+define('loadDeck', [
+    'cardInfo',
+    'cardApi',
+    'unitInfo'
+], function (
+    cardInfo,
+    cardApi,
+    unitInfo
+) {
+    "use strict";
     
     var api = {
         mission: loadMissionDeck,

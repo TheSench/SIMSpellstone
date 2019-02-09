@@ -1,7 +1,9 @@
-define('loadCardCache', function () {
+define('loadCardCache', [
+    'storageAPI'
+], function (
+    storageAPI
+) {
     "use strict";
-
-    var storageAPI = require('storageAPI');
 
     return function loadCardCache() {
         var cardData = storageAPI.getField("GameData", "CardCache");

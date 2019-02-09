@@ -1,28 +1,12 @@
 (function () {
     var modules = {};
-    
-    function defineWithoutDependencies(name, moduleDefinition) {
-        if (typeof moduleDefinition === "function") {
-            modules[name] = moduleDefinition();
-        } else {
-            modules[name] = moduleDefinition;
-        }
-    }
-    
-    function defineWithDependencies(name, dependencies, moduleDefinition) {
+        
+    window.define = function define(name, dependencies, moduleDefinition) {
         var injectables = dependencies.map(function loadDependency(name) {
             return modules[name];
         });
 
         modules[name] = moduleDefinition.apply(this, injectables);
-    }
-
-    window.define = function whichDefine() {
-        if(arguments.length === 2) {
-            defineWithoutDependencies.apply(this, arguments);
-        } else {
-            defineWithDependencies.apply(this, arguments);
-        }
     };
 
     window.require = function require(name) {
@@ -91,52 +75,54 @@ Function.prototype.throttle = function throttle(wait) {
             timeout = setTimeout(later, wait);
         }
     };
-};;define('factions', {
-    names: {
-        0: 'Factionless',
-        1: 'Aether',
-        2: 'Chaos',
-        3: 'Wyld',
-        4: 'Frog',
-        5: 'Elemental',
-        6: 'Angel',
-        7: 'Undead',
-        8: 'Void',
-        9: 'Dragon',
-        10: 'Avian',
-        11: 'Goblin',
-        12: 'Seafolk',
-        13: 'Insect',
-        14: 'Bear',
-        15: 'Token',
-        16: 'Mecha',
-        17: 'Knight',
+};;define('factions', [], function () {
+    return {
+        names: {
+            0: 'Factionless',
+            1: 'Aether',
+            2: 'Chaos',
+            3: 'Wyld',
+            4: 'Frog',
+            5: 'Elemental',
+            6: 'Angel',
+            7: 'Undead',
+            8: 'Void',
+            9: 'Dragon',
+            10: 'Avian',
+            11: 'Goblin',
+            12: 'Seafolk',
+            13: 'Insect',
+            14: 'Bear',
+            15: 'Token',
+            16: 'Mecha',
+            17: 'Knight',
 
-        999: 'Tower'
-    },
-    IDs: {
-        Factionless: 0,
-        Aether: 1,
-        Chaos: 2,
-        Wyld: 3,
-        Frog: 4,
-        Elemental: 5,
-        Angel: 6,
-        Undead: 7,
-        Void: 8,
-        Dragon: 9,
-        Avian: 10,
-        Goblin: 11,
-        Seafolk: 12,
-        Insect: 13,
-        Bear: 14,
-        Token: 15,
-        Mecha: 16,
-        Knight: 17,
+            999: 'Tower'
+        },
+        IDs: {
+            Factionless: 0,
+            Aether: 1,
+            Chaos: 2,
+            Wyld: 3,
+            Frog: 4,
+            Elemental: 5,
+            Angel: 6,
+            Undead: 7,
+            Void: 8,
+            Dragon: 9,
+            Avian: 10,
+            Goblin: 11,
+            Seafolk: 12,
+            Insect: 13,
+            Bear: 14,
+            Token: 15,
+            Mecha: 16,
+            Knight: 17,
 
-        Tower: 999
-    }
-});;define('skillApi', function () {
+            Tower: 999
+        }
+    };
+});;define('skillApi', [], function () {
 
     var api = {
         setSkill: setSkill,
@@ -223,7 +209,7 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
-});;define('runeApi', function () {
+});;define('runeApi', [], function () {
     var api = {
         addRunes: addRunes,
         canUseRune: canUseRune,
@@ -278,7 +264,7 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
-});;define('cardInfo', function() {
+});;define('cardInfo', [], function() {
     var api = {
         loadCard: loadCard,
         isCommander: isCommander,
@@ -307,7 +293,7 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
-});;define('matchTimer', function() {
+});;define('matchTimer', [], function() {
     var api = {
         elapsed: elapsed,
         batchElapsed: batchElapsed,
@@ -347,7 +333,9 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
-});;define('urlHelpers', function () {
+});;define('urlHelpers', [], function () {
+    "use strict";
+
     var api = {
         paramDefined: paramDefined,
         paramValue: paramValue,
@@ -389,7 +377,11 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
-});;define('storageAPI', function () {
+});;define('storageAPI', [
+    'urlHelpers'
+], function (
+    urlHelpers
+) {
     "use strict";
 
     var storageAPI = {};
@@ -412,8 +404,6 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     function fullAPI() {
-        var urlHelpers = require('urlHelpers');
-
         var SaveFields = {
             decks: "SavedDecks",
             tutorial: "Tutorial"
@@ -563,10 +553,12 @@ Function.prototype.throttle = function throttle(wait) {
     storageAPI.initialize();
 
     return storageAPI;
-});;define('loadCardCache', function () {
+});;define('loadCardCache', [
+    'storageAPI'
+], function (
+    storageAPI
+) {
     "use strict";
-
-    var storageAPI = require('storageAPI');
 
     return function loadCardCache() {
         var cardData = storageAPI.getField("GameData", "CardCache");
@@ -586,14 +578,17 @@ Function.prototype.throttle = function throttle(wait) {
             storageAPI.setField("GameData", "CardCache", CARDS_cache);
         }
     };
-});;"use strict";
+});;
+define('dataUpdater', [
+    'storageAPI'
+], function (
+    storageAPI
+) {
+    "use strict";
 
-define('dataUpdater', function () {
     var api = {
         updateData: updateData
     };
-
-    var storageAPI = require('storageAPI');
 
     var baseUrl = "https://spellstone.synapse-games.com";
 
@@ -848,7 +843,15 @@ define('dataUpdater', function () {
     }
 
     return api;
-});;define('cardApi', function () {
+});;define('cardApi', [
+    'cardInfo',
+    'skillApi',
+    'runeApi'
+], function (
+    cardInfo,
+    skillApi,
+    runeApi
+) {
     var api = {
         byId: getCardByID,
         byIdSlim: getSlimCardByID,
@@ -856,10 +859,6 @@ define('dataUpdater', function () {
         makeBattleground: makeBattleground,
         applyDefaultStatuses: applyDefaultStatuses
     };
-
-	var cardInfo = require('cardInfo');
-    var skillApi = require('skillApi');
-	var runeApi = require('runeApi');
 
     var defaultStatusValues = {
         // Attack Modifiers
@@ -1489,7 +1488,13 @@ define('dataUpdater', function () {
     }());
 
     return api;
-});;define('unitInfo', function () {
+});;define('unitInfo', [
+    'cardApi'
+], function (
+    cardApi
+) {
+    "use strict";
+    
     var api = {
         areEqual: areEqual,
         getEnhancement: getEnhancement,
@@ -1498,8 +1503,6 @@ define('dataUpdater', function () {
         create: makeUnitInfo,
         defaultCommander: makeUnitInfo(202, 1) // Elaria Captain
     };
-
-    var cardApi = require('cardApi');
 
     function makeUnitInfo(id, level, runes) {
         var unit = {
@@ -1576,14 +1579,20 @@ define('dataUpdater', function () {
     }
 
     return api;
-});;define('cardUI', function () {
+});;define('cardUI', [
+	'cardApi',
+	'cardInfo',
+	'runeApi',
+	'factions',
+	'unitInfo'
+], function (
+	cardApi,
+	cardInfo,
+	runeApi,
+	factions,
+	unitInfo
+) {
 	"use strict";
-
-	var cardApi = require('cardApi');
-	var cardInfo = require('cardInfo');
-	var runeApi = require('runeApi');
-	var factions = require('factions');
-	var unitInfo = require('unitInfo');
 
 	var assetsRoot = '';
 

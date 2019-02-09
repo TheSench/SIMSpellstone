@@ -1,4 +1,12 @@
-define('cardApi', function () {
+define('cardApi', [
+    'cardInfo',
+    'skillApi',
+    'runeApi'
+], function (
+    cardInfo,
+    skillApi,
+    runeApi
+) {
     var api = {
         byId: getCardByID,
         byIdSlim: getSlimCardByID,
@@ -6,10 +14,6 @@ define('cardApi', function () {
         makeBattleground: makeBattleground,
         applyDefaultStatuses: applyDefaultStatuses
     };
-
-	var cardInfo = require('cardInfo');
-    var skillApi = require('skillApi');
-	var runeApi = require('runeApi');
 
     var defaultStatusValues = {
         // Attack Modifiers

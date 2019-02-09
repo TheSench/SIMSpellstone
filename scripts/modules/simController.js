@@ -1,10 +1,15 @@
-define('simController', function () {
+define('simController', [
+    'matchTimer',
+    'debugLog',
+    'animations',
+    'ui'
+], function (
+    matchTimer,
+    debugLog,
+    animations,
+    ui
+) {
     "use strict";
-
-    var matchTimer = require('matchTimer');
-    var debugLog = require('debugLog');
-    var animations = require('animations');
-    var ui = require('ui');
 
     var SIM_CONTROLLER = {
         getConfiguration: getConfiguration,

@@ -1,6 +1,8 @@
-define('config', {
-   pvpAI: false
-});;define('debugLog', function() {
+define('config', [], function() {
+   return {
+      pvpAI: false
+   };
+});;define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,
@@ -42,15 +44,21 @@ define('config', {
     }
 
     return api;
-});;define('log', function() {
+});;define('log', [
+    'factions',
+    'skillApi'
+],
+function(
+    factions,
+    skillApi
+) {
+    "use strict";
+
     var api = {
         skill: logSkill,
         name: logCardName
     };
     
-    var factions = require('factions');
-    var skillApi = require('skillApi');
-
     function truncate(value) {
         if (value > Math.floor(value)) {
             value = value.toFixed(1);
@@ -107,14 +115,18 @@ define('config', {
     }
 
     return api;
-});;define('bgeApi', function () {
+});;define('bgeApi', [
+    'log',
+    'cardApi',
+    'debugLog'
+], function (
+    log,
+    cardApi,
+    debugLog
+) {
     var api = {
         getBattlegrounds: getBattlegrounds
     };
-
-    var log = require('log');
-    var cardApi = require('cardApi');
-    var debugLog = require('debugLog');
 
     function MakeSkillModifier(name, effect) {
         return {
@@ -353,10 +365,16 @@ define('config', {
     }
 
     return api;
-});;define('loadDeck', function () {
-	var cardInfo = require('cardInfo');
-    var cardApi = require('cardApi');
-    var unitInfo = require('unitInfo');
+});;define('loadDeck', [
+    'cardInfo',
+    'cardApi',
+    'unitInfo'
+], function (
+    cardInfo,
+    cardApi,
+    unitInfo
+) {
+    "use strict";
     
     var api = {
         mission: loadMissionDeck,
@@ -646,9 +664,12 @@ define('config', {
     }
 
     return api;
-});;define('animations', function () {
-    
-    var cardUI = require('cardUI');
+});;define('animations', [
+    'cardUI'
+], function (
+    cardUI
+) {
+    "use strict";
 
     var api = {
         areShown: false,
@@ -693,7 +714,21 @@ define('config', {
     return api;
 });;"use strict";
 
-define('ui', function () {
+define('ui', [
+	'base64',
+	'urlHelpers',
+	'loadDeck',
+	'debugLog',
+	'storageAPI',
+	'dataUpdater'
+], function (
+	base64,
+	urlHelpers,
+	loadDeck,
+	debugLog,
+	storageAPI,
+	dataUpdater
+) {
 	var api = {
 		show: showUI,
 		hide: hideUI,
@@ -710,13 +745,6 @@ define('ui', function () {
 		loadDeck: loadDeck,
 		toggleTheme: toggleTheme
 	};
-
-	var base64 = require('base64');
-	var urlHelpers = require('urlHelpers');
-	var loadDeck = require('loadDeck');
-	var debugLog = require('debugLog');
-	var storageAPI = require('storageAPI');
-	var dataUpdater = require('dataUpdater');
 
 	var loadDeckDialog;
 
@@ -1275,13 +1303,18 @@ var choice = undefined;
 var tournament = false;
 var suppressOutput = false;
 var orders = {};
-var cardStats = {};;define('simController', function () {
+var cardStats = {};;define('simController', [
+    'matchTimer',
+    'debugLog',
+    'animations',
+    'ui'
+], function (
+    matchTimer,
+    debugLog,
+    animations,
+    ui
+) {
     "use strict";
-
-    var matchTimer = require('matchTimer');
-    var debugLog = require('debugLog');
-    var animations = require('animations');
-    var ui = require('ui');
 
     var SIM_CONTROLLER = {
         getConfiguration: getConfiguration,
@@ -1401,16 +1434,28 @@ var cardStats = {};;define('simController', function () {
     window.SIM_CONTROLLER = SIM_CONTROLLER;
 
     return SIM_CONTROLLER;
-});;define('startup', function () {
-    var base64 = require('base64');
-    var urlHelpers = require('urlHelpers');
-    var simController = require('simController');
-    var bgeApi = require('bgeApi');
-    var cardUI = require('cardUI');
-    var loadDeck = require('loadDeck');
-    var loadCardCache = require('loadCardCache');
-    var ui = require('ui');
-    var config = require('config');
+});;define('startup', [
+	'base64',
+	'urlHelpers',
+	'simController',
+	'bgeApi',
+	'cardUI',
+	'loadDeck',
+	'loadCardCache',
+	'ui',
+	'config'
+], function (
+	base64,
+	urlHelpers,
+	simController,
+	bgeApi,
+	cardUI,
+	loadDeck,
+	loadCardCache,
+	ui,
+	config
+) {
+	"use strict";
 
     var mapBGEDialog;
 	var deckPopupDialog;
