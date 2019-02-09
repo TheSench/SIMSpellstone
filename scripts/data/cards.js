@@ -79008,6 +79008,95 @@ var CARDS = {
 			}
 		}
 	},
+	"6221": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1549904400000",
+		"id": "6221",
+		"maxLevel": 6,
+		"name": "Desert Rider",
+		"picture": "Goblin_Desert_Bandit_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 14,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 15,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -164596,6 +164685,83 @@ var CARDS = {
 			}
 		}
 	},
+	"16221": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1549904400000",
+		"id": "16221",
+		"maxLevel": 6,
+		"name": "Desert Roamer",
+		"picture": "Goblin_Desert_Bandit_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "strike",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 5,
+				"skill": []
+			},
+			"3": {
+				"health": 16,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "strike",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "strike",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"health": 17,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -237669,6 +237835,96 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"26221": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1549904400000",
+		"id": "26221",
+		"maxLevel": 6,
+		"name": "Desert Blastabond",
+		"picture": "Goblin_Desert_Bandit_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"id": "strike",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"attack": 6,
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "strike",
 						"x": 8
 					}
 				]
