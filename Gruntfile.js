@@ -51,12 +51,12 @@ module.exports = function (grunt) {
                     'scripts/modules/debugLog.js',
 
                     'scripts/modules/log.js',
-                    
+
                     'scripts/modules/bgeApi.js',
 
                     'scripts/modules/loadDeck.js',
                     'scripts/modules/animations.js',
-                    
+
                     'scripts/modules/ui.js',
 
                     'scripts/modules/simController.js',
@@ -82,6 +82,7 @@ module.exports = function (grunt) {
                 ],
                 dest: 'dist/practice.js'
             },
+            /*
             data: {
                 src: [
                     'scripts/data/skills.js',
@@ -97,6 +98,7 @@ module.exports = function (grunt) {
                 ],
                 dest: 'dist/data.js'
             },
+            */
             vendor: {
                 src: [
                     'lib/jquery-3.3.1.min.js',
@@ -120,16 +122,18 @@ module.exports = function (grunt) {
             options: {
                 // the banner is inserted at the top of the output
             },
+            /*
             data: {
                 options: {
                     mangle: false,
-                    sourceMap: true
+                    sourceMap: false
                 },
                 files: {
                     'dist/data.min.js': ['<%= concat.data.dest %>']
                 }
             },
-            shared:{
+            */
+            shared: {
                 options: {
                     mangle: true,
                     sourceMap: true
@@ -291,7 +295,9 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        clean: ['dist'],
+        clean: {
+            files: ['dist/*', '!dist/data.min.js'],
+        },
         imagemin: {
             sprites: {
                 options: {
