@@ -1821,22 +1821,22 @@ var SIMULATOR = {};
 
 	function onCardChosen(turn, chosenCard) {
 		animations.clearFrames();
-		performTurns(turn, chosenCard);
+		performTurns(turn, makePlayChosenCard(chosenCard));
 	}
 
-	function performTurns(turn, chosenCard) {
+	function performTurns(turn, resumeTurn) {
 		if (SIMULATOR.pause) {
 			SIMULATOR.pause = false;
 			return false;
 		}
-		var done = performTurnsInner(turn, chosenCard);
+		var done = performTurnsInner(turn, resumeTurn);
 		if (done && user_controlled) {
 			simController.debug_end();
 		}
 		return done;
 	}
 
-	function performTurnsInner(turn, chosenCard) {
+	function performTurnsInner(turn, resumeTurn) {
 		// Set up players
 		var first_player, second_player;
 		var surge = SIMULATOR.config.surgeMode;
@@ -1850,7 +1850,7 @@ var SIMULATOR = {};
 
 		if (turn > 0) {
 			// Retry this turn - don't bother doing setup all over again
-			if (!performTurn(turn, field, first_player, second_player, false, chosenCard)) {
+			if (!resumeTurn(turn, field, first_player, second_player, false)) {
 				// Try this turn again
 				return false;
 			}
@@ -2020,6 +2020,24 @@ var SIMULATOR = {};
 		return true;
 	}
 
+	function makePlayChosenCard(chosenCard) {
+		return function playChosenCard(turn, field, first_player, second_player) {
+			if (turn % 2) {
+				var p = first_player;
+				var o = second_player;
+			} else {
+				var p = second_player;
+				var o = first_player;
+			}
+			var deck_p_deck = deck[p].deck;
+			playCard(deck_p_deck[chosenCard], p, turn);
+			removeFromDeck(deck_p_deck, chosenCard);
+			closeDiv = false;
+			play_turn(p, o, field, turn);
+			return true;
+		};
+	}
+
 	function removeFromDeck(deck, index) {
 		var key = index;
 		var len = deck.length - 1;
@@ -2031,6 +2049,9 @@ var SIMULATOR = {};
 	}
 
 	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards, chosenCard) {
+		if(chosenCard >= 0) {
+			return chosenCard;
+		}
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 		closeDiv = true;
@@ -2049,7 +2070,7 @@ var SIMULATOR = {};
 			animations.drawField(field, drawableHand, onCardChosen, turn);
 		}
 
-		return chosenCard || 0;
+		return -1;
 	}
 
 	function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn, drawCards) {
