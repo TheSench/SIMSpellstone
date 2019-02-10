@@ -49,6 +49,7 @@ var SIMULATOR = {};
 				var battleground = battlegrounds.onCardPlayed[i];
 				var o = (p === 'player' ? 'cpu' : 'player');
 
+				var surge = SIMULATOR.config.surgeMode;
 				if (battleground.defender) {
 					if (!surge && p !== 'cpu') continue;
 					if (surge && p !== 'player') continue;
@@ -1652,6 +1653,7 @@ var SIMULATOR = {};
 
 	function initializeBattle(config) {
 
+		SIMULATOR.config = config;
 		SIMULATOR.simulation_turns = 0;
 
 		// Set up empty decks
@@ -1695,23 +1697,22 @@ var SIMULATOR = {};
 		}
 
 		// Set up deck order priority reference
-		if (getordered && !getexactorder) deck.player.ordered = loadDeck.copyCardList(deck.player.deck);
-		if (getordered2 && !getexactorder2) deck.cpu.ordered = loadDeck.copyCardList(deck.cpu.deck);
+		if (config.playerOrdered && !config.playerExactOrder) deck.player.ordered = loadDeck.copyCardList(deck.player.deck);
+		if (config.cpuOrdered && !config.cpuExactOrder) deck.cpu.ordered = loadDeck.copyCardList(deck.cpu.deck);
 
 		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
-			: getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-				: chooseCardRandomly);                     // Player AI falls back on picking a random card
+			: config.playerOrdered ? chooseCardOrdered           			// Ordered mode tries to pick the card closest to the specified ordering
+				: chooseCardRandomly);                     					// Player AI falls back on picking a random card
 
-		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
-								: */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-				: config.pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
-					: getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
-						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
+		deck.cpu.chooseCard = (config.cpuOrdered ? chooseCardOrdered    	// Ordered mode tries to pick the card closest to the specified ordering
+				: config.pvpAI ? chooseCardByPoints                			// PvP defenders have a special algorithm for determining which card to play
+					: config.cpuExactOrder ? chooseCardRandomly       		// If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
+						: chooseFirstCard);                         		// If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
 
 	function shuffle(list) {
 		var i = list.length, j, tempi, tempj;
-		if (i == 0) return false;
+		if (i === 0) return false;
 		while (--i) {
 			j = ~~(Math.random() * (i + 1));
 			tempi = list[i];
@@ -1728,15 +1729,15 @@ var SIMULATOR = {};
 		initializeBattle(config);
 
 		// Shuffle decks
-		if (getexactorder) {
-			if (!getordered) {
+		if (config.playerExactOrder) {
+			if (!config.playerOrdered) {
 				deck.player.shuffleHand = true;
 			}
 		} else {
 			shuffle(deck.player.deck);
 		}
-		if (getexactorder2) {
-			if (!getordered2) {
+		if (config.cpuExactOrder) {
+			if (!config.cpuOrdered) {
 				deck.cpu.shuffleHand = true;
 			}
 		} else {
@@ -1764,8 +1765,8 @@ var SIMULATOR = {};
 	function setupDecks(config) {
 		// Cache decks where possible
 		// Load player deck
-		if (getdeck) {
-			playerDeckCached = base64.decodeHash(getdeck);
+		if (config.playerHash) {
+			playerDeckCached = base64.decodeHash(config.playerHash);
 		} else {
 			playerDeckCached = loadDeck.defaultDeck();
 		}
@@ -1773,8 +1774,8 @@ var SIMULATOR = {};
 
 		// Load enemy deck
 		config.pvpAI = true;
-		if (getdeck2) {
-			cpuDeckCached = base64.decodeHash(getdeck2);
+		if (config.cpuHash) {
+			cpuDeckCached = base64.decodeHash(config.cpuHash);
 			if (config.selectedMission) config.pvpAI = false;
 		} else if (config.selectedMission) {
 			cpuDeckCached = loadDeck.mission(config.selectedMission, config.missionLevel);
@@ -1818,27 +1819,27 @@ var SIMULATOR = {};
 
 	SIMULATOR.pause = false;
 
-	function onCardChosen(turn, drawCards) {
+	function onCardChosen(turn, chosenCard) {
 		animations.clearFrames();
-		performTurns(turn, drawCards);
+		performTurns(turn, chosenCard);
 	}
 
-	function performTurns(turn, drawCards) {
+	function performTurns(turn, chosenCard) {
 		if (SIMULATOR.pause) {
 			SIMULATOR.pause = false;
 			return false;
 		}
-		var done = performTurnsInner(turn, drawCards);
+		var done = performTurnsInner(turn, chosenCard);
 		if (done && user_controlled) {
 			simController.debug_end();
 		}
 		return done;
 	}
-	SIMULATOR.performTurns = performTurns;
 
-	function performTurnsInner(turn, drawCards) {
+	function performTurnsInner(turn, chosenCard) {
 		// Set up players
 		var first_player, second_player;
+		var surge = SIMULATOR.config.surgeMode;
 		if (surge) {
 			first_player = 'cpu';
 			second_player = 'player';
@@ -1848,14 +1849,8 @@ var SIMULATOR = {};
 		}
 
 		if (turn > 0) {
-			if (livePvP) {
-				if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
-					simulating = false;
-					return true;
-				}
-			}
 			// Retry this turn - don't bother doing setup all over again
-			if (!performTurn(turn, field, first_player, second_player, drawCards)) {
+			if (!performTurn(turn, field, first_player, second_player, false, chosenCard)) {
 				// Try this turn again
 				return false;
 			}
@@ -1878,7 +1873,7 @@ var SIMULATOR = {};
 
 			setupTurn(turn, first_player, second_player, field);
 
-			if (!performTurn(turn, field, first_player, second_player, true)) {
+			if (!performTurn(turn, field, first_player, second_player, true, -1)) {
 				// Try this turn again
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
@@ -1891,7 +1886,7 @@ var SIMULATOR = {};
 		return true;
 	}
 
-	function performTurn(turn, field, first_player, second_player, drawCards) {
+	function performTurn(turn, field, first_player, second_player, drawCards, chosenCard) {
 		if (turn % 2) {
 			var p = first_player;
 			var o = second_player;
@@ -1901,7 +1896,7 @@ var SIMULATOR = {};
 		}
 
 		closeDiv = false;
-		if (!choose_card(p, turn, drawCards)) {
+		if (!chooseCard(p, turn, drawCards, chosenCard)) {
 			return false;
 		} else {
 			play_turn(p, o, field, turn);
@@ -1920,8 +1915,6 @@ var SIMULATOR = {};
 
 	function setupTurn(turn, first_player, second_player, field) {
 		simulation_turns = turn;
-
-		choice = undefined;
 
 		if (turn % 2) {
 			var p = first_player;
@@ -1993,22 +1986,18 @@ var SIMULATOR = {};
 		}
 	}
 
-	function choose_card(p, turn, drawCards) {
+	function chooseCard(p, turn, drawCards, chosenCard) {
 
 		var deck_p = deck[p];
 		var deck_p_deck = deck_p.deck;
-		var deck_p_ordered = deck_p['ordered'];
-		var isOrdered = (p == 'player' ? getordered : getordered2);
+		var deck_p_ordered = deck_p.ordered;
 
-		if (livePvP && p === 'cpu' && drawCards) {
-			waitForOpponent(p, deck_p_deck, deck_p_ordered, turn, drawCards);
-			return false;
-		} else if (deck_p_deck[0]) {
+		if (deck_p_deck[0]) {
 			// Deck not empty yet
 			SIMULATOR.waiting = false;
 			var card_picked = 0;
 
-			if (deck_p_deck.length == 1) {
+			if (deck_p_deck.length === 1) {
 				card_picked = chooseFirstCard(p, deck_p_deck, deck_p_ordered, turn, drawCards);
 			} else {
 				for (var i = 0; i < deck_p_deck.length; i++) {
@@ -2019,7 +2008,7 @@ var SIMULATOR = {};
 					}
 					if (i === 2) break;
 				}
-				card_picked = deck_p.chooseCard(p, deck_p_deck, deck_p_ordered, turn, drawCards);
+				card_picked = deck_p.chooseCard(p, deck_p_deck, deck_p_ordered, turn, drawCards, chosenCard);
 			}
 
 			if (card_picked < 0) return false;
@@ -2041,23 +2030,7 @@ var SIMULATOR = {};
 
 	}
 
-	function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
-
-		SIMULATOR.waiting = true;
-		closeDiv = true;
-
-		if (drawCards) {
-			ui.hideTable();
-			ui.displayTurns();
-			animations.drawField(field, null, performTurns, turn);
-			SIMULATOR.sendBattleUpdate(turn);
-		}
-
-		return -1;
-	}
-	SIMULATOR.waitForOpponent = waitForOpponent;
-
-	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
+	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards, chosenCard) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 		closeDiv = true;
@@ -2075,14 +2048,8 @@ var SIMULATOR = {};
 			ui.displayTurns();
 			animations.drawField(field, drawableHand, onCardChosen, turn);
 		}
-		if (choice === undefined) {
-			return -1;
 
-		} else {
-			var card_picked = choice;
-			if (!card_picked) card_picked = 0;
-			return card_picked;
-		}
+		return chosenCard || 0;
 	}
 
 	function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn, drawCards) {
@@ -2905,7 +2872,7 @@ var SIMULATOR = {};
 
 		var commander_o = field.cpu.commander;
 		var matchPoints;
-		if (getdeck2) {
+		if (SIMULATOR.config.cpuHash) {
 			if (commander_o.isAlive() && !forceWin) {
 				// 0-25 points, based on percentage of damage dealt to enemy
 				matchPoints = Math.floor(healthStats.cpu.percent * 25);
@@ -2930,7 +2897,6 @@ var SIMULATOR = {};
 	var simulation_turns = 0;
 	var simulating = false;
 	var user_controlled = false;
-	var livePvP = false;
 	var turn = 0;
 	var totalDeckHealth = 0;
 	var totalCpuDeckHealth = 0;
@@ -2942,14 +2908,6 @@ var SIMULATOR = {};
 	SIMULATOR.calculatePoints = calculatePoints;
 	// public variables
 	Object.defineProperties(SIMULATOR, {
-		setupField: {
-			get: function () {
-				return setupField;
-			},
-			set: function (value) {
-				setupField = value;
-			}
-		},
 		deck: {
 			get: function () {
 				return deck;
@@ -3012,14 +2970,6 @@ var SIMULATOR = {};
 			},
 			set: function (value) {
 				user_controlled = value;
-			}
-		},
-		livePvP: {
-			get: function () {
-				return livePvP;
-			},
-			set: function (value) {
-				livePvP = value;
 			}
 		}
 	});

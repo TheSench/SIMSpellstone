@@ -1674,7 +1674,7 @@ define('dataUpdater', [
 				if ((uniqueCard >= skip)) {
 					addMult(htmlCard, multiplier);
 					multiplier = 1;
-					htmlCard = cardToHtml(unit, showCompactSkills, false, i);
+					htmlCard = cardToHtml(unit, showCompactSkills, false);
 					htmlCard.setAttribute("data-i", i);
 					if (listEntry.index !== undefined) {
 						htmlCard.setAttribute("data-index", listEntry.index);
@@ -1718,8 +1718,8 @@ define('dataUpdater', [
 		return fieldHTML;
 	}
 
-	function displayCards(field, drawableHand, callback, turn) {
-		var fieldHTML = doDisplayField(field, drawableHand, callback, turn);
+	function displayCards(field) {
+		var fieldHTML = doDisplayField(field);
 		$("#cardSpace").children().remove().end().append(fieldHTML);
 	}
 
@@ -1746,21 +1746,20 @@ define('dataUpdater', [
 
 	function displayHand(hand, callback, state) {
 		var cards = createDiv("float-left hand");
-		for (var i = 0, len = hand.length; i < len; i++) {
-			var unit = hand[i];
+		for (var cardIndex = 0, len = hand.length; cardIndex < len; cardIndex++) {
+			var unit = hand[cardIndex];
 			if (!unit) continue;
 			var htmlCard = cardToHtml(unit, false);
-			if (i === 0) htmlCard.classList.add("left");
-			else if (i === 2) htmlCard.classList.add("right");
-			else if (i > 2) htmlCard.classList.add("inactive");
+			if (cardIndex === 0) htmlCard.classList.add("left");
+			else if (cardIndex === 2) htmlCard.classList.add("right");
+			else if (cardIndex > 2) htmlCard.classList.add("inactive");
 			
 			if (callback) {
-				htmlCard.addEventListener("click", (function (inner) {
+				htmlCard.addEventListener("click", (function (cardIndex) {
 					return function () {
-						choice = inner;
-						callback(state);
+						callback(state, cardIndex);
 					};
-				})(i));
+				})(cardIndex));
 			}
 			cards.appendChild(htmlCard);
 		}
@@ -1781,7 +1780,7 @@ define('dataUpdater', [
 		}
 	}
 
-	function cardToHtml(card, showCompactSkills, onField, state) {
+	function cardToHtml(card, showCompactSkills, onField) {
 		var htmlCard = createDiv("card");
 		// Add ID to card
 		htmlCard.setAttribute("data-id", card.id);
@@ -1796,7 +1795,7 @@ define('dataUpdater', [
 			runeIDs.push(runes[i].id);
 			var rune = runeApi.getRune(runeID);
 			for (var key in rune.stat_boost) {
-				if (key == "skill") {
+				if (key === "skill") {
 					key = rune.stat_boost.skill.id;
 				}
 				boosts[key] = true;

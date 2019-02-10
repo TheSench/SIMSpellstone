@@ -20,19 +20,19 @@ define('simController', [
     };
 
     function getConfiguration() {
-        getdeck = $('#deck1').val();
-        getordered = $('#ordered').is(':checked');
-        getexactorder = $('#exactorder').is(':checked');
+        var playerHash = $('#deck1').val();
+        var playerOrdered = $('#ordered').is(':checked');
+        var playerExactOrder = $('#exactorder').is(':checked');
 
-        getdeck2 = $('#deck2').val();
+        var cpuHash = $('#deck2').val();
         var selectedCampaign = $('#campaign').val();
         var selectedMission = $('#mission').val();
         var missionLevel = $('#mission_level').val();
         var selectedRaid = $('#raid').val();
         var raidLevel = $('#raid_level').val();
-        getordered2 = $('#ordered2').is(':checked');
-        getexactorder2 = $('#exactorder2').is(':checked');
-        surge = $('#surge').is(':checked');
+        var cpuOrdered = $('#ordered2').is(':checked');
+        var cpuExactOrder = $('#exactorder2').is(':checked');
+        var surgeMode = $('#surge').is(':checked');
 
         var siegeMode = $('#siege').is(':checked');
         var towerLevel = $('#tower_level').val();
@@ -68,18 +68,18 @@ define('simController', [
         tournament = $("#tournament").is(":checked");
 
         return {
-            getdeck: getdeck,
-            getordered: getordered,
-            getexactorder: getexactorder,
-            getdeck2: getdeck2,
+            playerHash: playerHash,
+            playerOrdered: playerOrdered,
+            playerExactOrder: playerExactOrder,
+            cpuHash: cpuHash,
             selectedCampaign: selectedCampaign,
             selectedMission: selectedMission,
             missionLevel: missionLevel,
             selectedRaid: selectedRaid,
             raidLevel: raidLevel,
-            getordered2: getordered2,
-            getexactorder2: getexactorder2,
-            surge: surge,
+            cpuOrdered: cpuOrdered,
+            cpuExactOrder: cpuExactOrder,
+            surgeMode: surgeMode,
             siegeMode: siegeMode,
             towerLevel: towerLevel,
             towerType: towerType,
@@ -108,7 +108,7 @@ define('simController', [
 
         var msg;
         var matchPoints = "";
-        if (getdeck2) {
+        if (SIMULATOR.config.cpuHash) {
             matchPoints = " (" + SIMULATOR.calculatePoints() + " points)";
         }
         if (result == 'draw') {
