@@ -48,6 +48,7 @@ module.exports = function (grunt) {
             simulator: {
                 src: [
                     'scripts/modules/config.js',
+                    'scripts/modules/matchStats.js',
                     'scripts/modules/debugLog.js',
 
                     'scripts/modules/log.js',

@@ -2,7 +2,6 @@
   'use strict';
   
 	var cardInfo = require('cardInfo');
-  var skillApi = require('skillApi');
 	var factions = require('factions');
 
   // Global arrays

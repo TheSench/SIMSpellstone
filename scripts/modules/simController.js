@@ -93,7 +93,8 @@ define('simController', [
             win_debug: win_debug,
             loss_debug: loss_debug,
             auto_mode: auto_mode,
-            tournamentMode: tournamentMode
+            tournamentMode: tournamentMode,
+            pvpAI: false // TODO: Define this
         };
     }
 

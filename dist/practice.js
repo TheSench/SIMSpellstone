@@ -4,17 +4,6 @@ define('config', [], function() {
    };
 });
 
-define('matchStats', [], function() {
-   return {
-      matchesPlayed: 0,
-      matchesWon: 0,
-      matchesLost: 0,
-      matchesDrawn: 0,
-      totalTurns: 0,
-      totalPoints: 0
-   };
-});
-
 // Initialize global variables
 var battle_history = '';
 var mass_debug = false;
@@ -23,7 +12,16 @@ var win_debug = false;
 var play_debug = false;
 var closeDiv = false;
 var current_timeout;
-var battleground = [];;define('debugLog', [], function() {
+var battleground = [];;define('matchStats', [], function() {
+    return {
+       matchesPlayed: 0,
+       matchesWon: 0,
+       matchesLost: 0,
+       matchesDrawn: 0,
+       totalTurns: 0,
+       totalPoints: 0
+    };
+ });;define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,
@@ -1372,7 +1370,8 @@ define('ui', [
             win_debug: win_debug,
             loss_debug: loss_debug,
             auto_mode: auto_mode,
-            tournamentMode: tournamentMode
+            tournamentMode: tournamentMode,
+            pvpAI: false // TODO: Define this
         };
     }
 
