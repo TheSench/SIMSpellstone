@@ -22,10 +22,8 @@ var loss_debug = false;
 var win_debug = false;
 var play_debug = false;
 var closeDiv = false;
-var sims_left = 0;
 var current_timeout;
-var battleground = [];
-var tournament = false;;define('debugLog', [], function() {
+var battleground = [];;define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,
@@ -911,7 +909,7 @@ define('ui', [
 	// Return table of simulation results
 	function showWinrate() {
 
-		if (debugLog.enabled || sims_left == 0) {
+		if (debugLog.enabled || SIMULATOR.remainingSims === 0) {
 			// Generate links
 			var links = '';
 			links += '<br>' +
@@ -949,7 +947,7 @@ define('ui', [
 		mErr = mErr.toFixed(2) + "%";
 		$("#marginPercent").html(mErr);
 
-		var totalSims = matchStats.matchesPlayed + sims_left;
+		var totalSims = matchStats.matchesPlayed + SIMULATOR.remainingSims;
 		var percentComplete = (matchStats.matchesPlayed * 100 / totalSims).toFixed("2") + "%";
 		$(".battleCount").html(matchStats.matchesPlayed);
 		$("#percentComplete").html(percentComplete);
@@ -962,7 +960,7 @@ define('ui', [
 		$("#winrateTable").show();
 		// Final output
 		var full_table = "";
-		if (sims_left == 0) {
+		if (SIMULATOR.remainingSims === 0) {
 			// Add generated links to final output
 			full_table += links;
 
@@ -994,7 +992,7 @@ define('ui', [
 	function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 		$("#simStatusMsg").html(simStatusMsg);
 		if (elapse && simsPerSec) {
-			var totalSims = matchStats.matchesPlayed + sims_left;
+			var totalSims = matchStats.matchesPlayed + SIMULATOR.remainingSims;
 			var percentComplete = (matchStats.matchesPlayed * 100 / totalSims).toFixed("2") + "%";
 			var progress = ('(' + matchStats.matchesPlayed + '/' + totalSims + ') ' + percentComplete);
 			$("#progress").html(progress);
@@ -1330,7 +1328,7 @@ define('ui', [
             mapbges = (selectedMission ? ui.getSelectedMapBattlegrounds() : "");
         }
 
-        sims_left = $('#sims').val() || 1;
+        var simsToRun = $('#sims').val() || 1;
 
         debugLog.enabled = $('#debug').is(':checked');
         play_debug = debugLog.enabled && $('#play_debug').is(':checked');
@@ -1346,7 +1344,7 @@ define('ui', [
         }
 
         // Not currently in UI - attacker's first card has +1 delay
-        tournament = $("#tournament").is(":checked");
+        var tournamentMode = $("#tournament").is(":checked");
 
         return {
             playerHash: playerHash,
@@ -1368,13 +1366,13 @@ define('ui', [
             selfbges: selfbges,
             enemybges: enemybges,
             mapbges: mapbges,
-            sims_left: sims_left,
+            simsToRun: simsToRun,
             play_debug: play_debug,
             mass_debug: mass_debug,
             win_debug: win_debug,
             loss_debug: loss_debug,
             auto_mode: auto_mode,
-            tournament: tournament
+            tournamentMode: tournamentMode
         };
     }
 
@@ -1384,7 +1382,7 @@ define('ui', [
 
         var result = SIM_CONTROLLER.processSimResult();
 
-        sims_left = 0;
+        SIMULATOR.remainingSims = 0;
         matchTimer.stop();
 
         var msg;
@@ -1670,7 +1668,7 @@ define('ui', [
 		document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
 		if (urlHelpers.paramDefined('autostart') && !urlHelpers.paramDefined("latestCards")) {
-			simController.startsim(1);
+			simController.startsim();
 		} else if (urlHelpers.paramDefined('unit_tests')) {
 			var body = document.getElementsByTagName("body")[0];
 			var script = document.createElement("script");
@@ -1798,7 +1796,7 @@ define('ui', [
             var callback = null;
             if (urlHelpers.paramDefined("autostart")) {
                 callback = function () {
-                    simController.startsim(1);
+                    simController.startsim();
                 };
             }
             updateGameData(callback);
@@ -1846,6 +1844,7 @@ for(var id in FUSIONS) {
 
         ui.hide();
 
+        SIMULATOR.remainingSims = config.simsToRun;
         SIMULATOR.setupDecks(config);
 
         matchStats.matchesWon = 0;
@@ -1861,7 +1860,7 @@ for(var id in FUSIONS) {
             ui.setSimStatus("");
         }
 
-        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', sims_left);
+        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
         current_timeout = setTimeout(runSims, 0, config);
 
         return false;
@@ -1894,7 +1893,7 @@ for(var id in FUSIONS) {
         } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
             runSim(config, true);
             simController.debug_end();
-        } else if (sims_left > 0) {
+        } else if (SIMULATOR.remainingSims > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
                 var simpersecbatch = 0;
@@ -1915,8 +1914,8 @@ for(var id in FUSIONS) {
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > sims_left) // Also limit by how many sims are left
-                    run_sims_batch = sims_left;
+                if (run_sims_batch > SIMULATOR.remainingSims) // Also limit by how many sims are left
+                    run_sims_batch = SIMULATOR.remainingSims;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
                 if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
@@ -1971,12 +1970,12 @@ for(var id in FUSIONS) {
         }
 
         if (run_sims_batch > 0) {
-            if (sims_left > 0) sims_left--;
+            if (SIMULATOR.remainingSims > 0) SIMULATOR.remainingSims--;
             run_sims_count++;
         }
 
         // Increment wins/losses/games
-        if (result == 'draw') {
+        if (result === 'draw') {
             matchStats.matchesDrawn++;
         } else if (result) {
             matchStats.matchesWon++;
@@ -1994,25 +1993,25 @@ for(var id in FUSIONS) {
                 if (result === 'draw') {
                     debugLog.prependLines('Draw found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>DRAW</h1>');
-                    sims_left = 0;
+                    SIMULATOR.remainingSims = 0;
                 } else if (result) {
                     debugLog.clear();
-                    if (!sims_left) {
+                    if (!SIMULATOR.remainingSims) {
                         debugLog.appendLines('No losses found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 } else {
                     debugLog.prependLines('Loss found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>LOSS</h1>');
-                    sims_left = 0;
+                    SIMULATOR.remainingSims = 0;
                 }
             } else if (win_debug) {
                 if (result && result !== 'draw') {
                     debugLog.prependLines('Win found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>WIN</h1>');
-                    sims_left = 0;
+                    SIMULATOR.remainingSims = 0;
                 } else {
                     debugLog.clear();
-                    if (!sims_left) {
+                    if (!SIMULATOR.remainingSims) {
                         debugLog.appendLines('No wins found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 }
@@ -2027,7 +2026,7 @@ for(var id in FUSIONS) {
                 }
             }
 
-            if (mass_debug && sims_left) {
+            if (mass_debug && SIMULATOR.remainingSims) {
                 debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
             }
         }
@@ -3990,7 +3989,7 @@ for(var id in FUSIONS) {
 			var current_assault = field_p_assaults[i];
 
 			if (current_assault.timer > 0) {
-				if (turn !== 3 || !tournament) {
+				if (turn !== 3 || !SIMULATOR.config.tournamentMode) {
 					current_assault.timer--;
 					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' reduces its timer');
 				}

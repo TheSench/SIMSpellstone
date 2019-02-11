@@ -49,7 +49,7 @@ define('simController', [
             mapbges = (selectedMission ? ui.getSelectedMapBattlegrounds() : "");
         }
 
-        sims_left = $('#sims').val() || 1;
+        var simsToRun = $('#sims').val() || 1;
 
         debugLog.enabled = $('#debug').is(':checked');
         play_debug = debugLog.enabled && $('#play_debug').is(':checked');
@@ -65,7 +65,7 @@ define('simController', [
         }
 
         // Not currently in UI - attacker's first card has +1 delay
-        tournament = $("#tournament").is(":checked");
+        var tournamentMode = $("#tournament").is(":checked");
 
         return {
             playerHash: playerHash,
@@ -87,13 +87,13 @@ define('simController', [
             selfbges: selfbges,
             enemybges: enemybges,
             mapbges: mapbges,
-            sims_left: sims_left,
+            simsToRun: simsToRun,
             play_debug: play_debug,
             mass_debug: mass_debug,
             win_debug: win_debug,
             loss_debug: loss_debug,
             auto_mode: auto_mode,
-            tournament: tournament
+            tournamentMode: tournamentMode
         };
     }
 
@@ -103,7 +103,7 @@ define('simController', [
 
         var result = SIM_CONTROLLER.processSimResult();
 
-        sims_left = 0;
+        SIMULATOR.remainingSims = 0;
         matchTimer.stop();
 
         var msg;

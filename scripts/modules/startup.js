@@ -254,7 +254,7 @@ define('startup', [
 		document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
 		if (urlHelpers.paramDefined('autostart') && !urlHelpers.paramDefined("latestCards")) {
-			simController.startsim(1);
+			simController.startsim();
 		} else if (urlHelpers.paramDefined('unit_tests')) {
 			var body = document.getElementsByTagName("body")[0];
 			var script = document.createElement("script");
@@ -382,7 +382,7 @@ define('startup', [
             var callback = null;
             if (urlHelpers.paramDefined("autostart")) {
                 callback = function () {
-                    simController.startsim(1);
+                    simController.startsim();
                 };
             }
             updateGameData(callback);

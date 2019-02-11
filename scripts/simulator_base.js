@@ -1950,7 +1950,7 @@ var SIMULATOR = {};
 			var current_assault = field_p_assaults[i];
 
 			if (current_assault.timer > 0) {
-				if (turn !== 3 || !tournament) {
+				if (turn !== 3 || !SIMULATOR.config.tournamentMode) {
 					current_assault.timer--;
 					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' reduces its timer');
 				}

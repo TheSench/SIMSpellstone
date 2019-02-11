@@ -22,6 +22,7 @@
 
         ui.hide();
 
+        SIMULATOR.remainingSims = config.simsToRun;
         SIMULATOR.setupDecks(config);
 
         matchStats.matchesWon = 0;
@@ -37,7 +38,7 @@
             ui.setSimStatus("");
         }
 
-        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', sims_left);
+        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
         current_timeout = setTimeout(runSims, 0, config);
 
         return false;
@@ -70,7 +71,7 @@
         } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
             runSim(config, true);
             simController.debug_end();
-        } else if (sims_left > 0) {
+        } else if (SIMULATOR.remainingSims > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
                 var simpersecbatch = 0;
@@ -91,8 +92,8 @@
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > sims_left) // Also limit by how many sims are left
-                    run_sims_batch = sims_left;
+                if (run_sims_batch > SIMULATOR.remainingSims) // Also limit by how many sims are left
+                    run_sims_batch = SIMULATOR.remainingSims;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
                 if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
@@ -147,12 +148,12 @@
         }
 
         if (run_sims_batch > 0) {
-            if (sims_left > 0) sims_left--;
+            if (SIMULATOR.remainingSims > 0) SIMULATOR.remainingSims--;
             run_sims_count++;
         }
 
         // Increment wins/losses/games
-        if (result == 'draw') {
+        if (result === 'draw') {
             matchStats.matchesDrawn++;
         } else if (result) {
             matchStats.matchesWon++;
@@ -170,25 +171,25 @@
                 if (result === 'draw') {
                     debugLog.prependLines('Draw found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>DRAW</h1>');
-                    sims_left = 0;
+                    SIMULATOR.remainingSims = 0;
                 } else if (result) {
                     debugLog.clear();
-                    if (!sims_left) {
+                    if (!SIMULATOR.remainingSims) {
                         debugLog.appendLines('No losses found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 } else {
                     debugLog.prependLines('Loss found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>LOSS</h1>');
-                    sims_left = 0;
+                    SIMULATOR.remainingSims = 0;
                 }
             } else if (win_debug) {
                 if (result && result !== 'draw') {
                     debugLog.prependLines('Win found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>WIN</h1>');
-                    sims_left = 0;
+                    SIMULATOR.remainingSims = 0;
                 } else {
                     debugLog.clear();
-                    if (!sims_left) {
+                    if (!SIMULATOR.remainingSims) {
                         debugLog.appendLines('No wins found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 }
@@ -203,7 +204,7 @@
                 }
             }
 
-            if (mass_debug && sims_left) {
+            if (mass_debug && SIMULATOR.remainingSims) {
                 debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
             }
         }

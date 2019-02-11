@@ -22,7 +22,5 @@ var loss_debug = false;
 var win_debug = false;
 var play_debug = false;
 var closeDiv = false;
-var sims_left = 0;
 var current_timeout;
 var battleground = [];
-var tournament = false;
