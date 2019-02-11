@@ -45,6 +45,32 @@ module.exports = function (grunt) {
                 ],
                 dest: 'dist/deckbuilder.js'
             },
+            engineTest: {
+                src: [
+                    'scripts/modules/config.js',
+                    'scripts/modules/matchStats.js',
+
+                    'scripts/mocks.js',
+                    //'scripts/modules/debugLog.js',
+
+                    //'scripts/modules/log.js',
+
+                    'scripts/modules/bgeApi.js',
+
+                    'scripts/modules/loadDeck.js',
+                    //'scripts/modules/animations.js',
+
+                    //'scripts/modules/ui.js',
+
+                    'scripts/modules/simController.js',
+
+                    //'scripts/modules/startup.js',
+                    'scripts/single_threaded.js',
+                    'scripts/simulator_base.js',
+                    'scripts/testSimEngine.js'
+                ],
+                dest: 'dist/engineTest.js'
+            },
             simulator: {
                 src: [
                     'scripts/modules/config.js',
@@ -150,6 +176,15 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'dist/deckbuilder.min.js': ['<%= concat.deckbuilder.dest %>']
+                }
+            },
+            engineTest: {
+                options: {
+                    mangle: true,
+                    sourceMap: true
+                },
+                files: {
+                    'dist/engineTest.min.js': ['<%= concat.engineTest.dest %>']
                 }
             },
             simulator: {
@@ -363,8 +398,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-newer');
 
-    grunt.registerTask('concat-main', ['newer:concat:shared', 'newer:concat:deckbuilder', 'newer:concat:simulator', 'newer:concat:practice']);
-    grunt.registerTask('uglify-main', ['newer:uglify:shared', 'newer:uglify:deckbuilder', 'newer:uglify:simulator', 'newer:uglify:practice']);
+    grunt.registerTask('concat-main', ['newer:concat:shared', 'newer:concat:deckbuilder', 'newer:concat:simulator', 'newer:concat:practice', 'newer:concat:engineTest']);
+    grunt.registerTask('uglify-main', ['newer:uglify:shared', 'newer:uglify:deckbuilder', 'newer:uglify:simulator', 'newer:uglify:practice', 'newer:uglify:engineTest']);
 
     grunt.registerTask('full-build', ['clean', /*'jshint',*/ 'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy:html', 'cacheBust']);
     grunt.registerTask('build-main', ['concat-main', 'uglify-main', 'newer:copy:html', 'copy:html', 'cacheBust']);

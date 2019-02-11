@@ -112,7 +112,7 @@ define('simController', [
         if (SIMULATOR.config.cpuHash) {
             matchPoints = " (" + SIMULATOR.calculatePoints() + " points)";
         }
-        if (result == 'draw') {
+        if (result === 'draw') {
             msg = '<br><h1>DRAW' + matchPoints + '</h1><br>';
         } else if (result) {
             msg = '<br><h1>WIN' + matchPoints + '</h1><br>';

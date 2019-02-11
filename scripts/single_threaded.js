@@ -1,6 +1,6 @@
-"use strict";
-
 (function () {
+    "use strict";
+
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
     var urlHelpers = require('urlHelpers');

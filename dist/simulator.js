@@ -1389,7 +1389,7 @@ define('ui', [
         if (SIMULATOR.config.cpuHash) {
             matchPoints = " (" + SIMULATOR.calculatePoints() + " points)";
         }
-        if (result == 'draw') {
+        if (result === 'draw') {
             msg = '<br><h1>DRAW' + matchPoints + '</h1><br>';
         } else if (result) {
             msg = '<br><h1>WIN' + matchPoints + '</h1><br>';
@@ -1819,9 +1819,9 @@ var REVERSE_FUSIONS = {};
 for(var id in FUSIONS) {
 	var fusion = FUSIONS[id];
 	REVERSE_FUSIONS[fusion] = id;
-};"use strict";
+};(function () {
+    "use strict";
 
-(function () {
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
     var urlHelpers = require('urlHelpers');
