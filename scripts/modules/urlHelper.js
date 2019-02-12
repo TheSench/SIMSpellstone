@@ -1,4 +1,4 @@
-define('urlHelpers', [], function () {
+define('urlHelper', [], function () {
     "use strict";
 
     var api = {

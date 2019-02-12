@@ -1,7 +1,7 @@
 ﻿define('tutorialScript', [
-    'urlHelpers'
+    'urlHelper'
 ], function getTutorialScript(
-    urlHelpers
+    urlHelper
 ) {
     'use strict';
 
@@ -196,7 +196,7 @@
        }
     ];
 
-    var currentPage = urlHelpers.getCurrentPage();
+    var currentPage = urlHelper.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {

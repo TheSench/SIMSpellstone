@@ -1,11 +1,11 @@
 define('loadDeck', [
     'cardInfo',
     'cardApi',
-    'unitInfo'
+    'unitInfoHelper'
 ], function (
     cardInfo,
     cardApi,
-    unitInfo
+    unitInfoHelper
 ) {
     "use strict";
     
@@ -113,7 +113,7 @@ define('loadDeck', [
             unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
         }
 
-        var unit = unitInfo.create(cardID, unitLevel);
+        var unit = unitInfoHelper.create(cardID, unitLevel);
 
         if (random) {
             unit.randomInfo = { unitInfo: unitInfo, level: level, maxedAt: maxedAt };
@@ -262,7 +262,7 @@ define('loadDeck', [
 
     function getDefaultDeck() {
         return {
-            commander: unitInfo.defaultCommander,
+            commander: unitInfoHelper.defaultCommander,
             deck: []
         };
     }

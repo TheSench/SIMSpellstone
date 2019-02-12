@@ -20,14 +20,14 @@ module.exports = function (grunt) {
                     'scripts/modules/runeApi.js',
                     'scripts/modules/cardInfo.js',
                     'scripts/modules/matchTimer.js',
-                    'scripts/modules/urlHelpers.js',
+                    'scripts/modules/urlHelper.js',
                     'scripts/modules/storageAPI.js',
 
                     'scripts/modules/loadCardCache.js',
                     'scripts/modules/dataUpdater.js',
                     'scripts/modules/cardApi.js',
 
-                    'scripts/modules/unitInfo.js',
+                    'scripts/modules/unitInfoHelper.js',
                     'scripts/modules/cardUI.js',
 
                     'scripts/modules/base64.js'

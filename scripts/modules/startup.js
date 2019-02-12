@@ -1,6 +1,6 @@
 define('startup', [
 	'base64',
-	'urlHelpers',
+	'urlHelper',
 	'simController',
 	'bgeApi',
 	'cardUI',
@@ -9,7 +9,7 @@ define('startup', [
 	'ui'
 ], function (
 	base64,
-	urlHelpers,
+	urlHelper,
 	simController,
 	bgeApi,
 	cardUI,
@@ -79,7 +79,7 @@ define('startup', [
     function deckChanged(deckID, newDeck, owner) {
         var $deck = $("#" + deckID);
         $deck.children().remove();
-        if (!urlHelpers.paramDefined("seedtest")) {
+        if (!urlHelper.paramDefined("seedtest")) {
             var config = ui.getConfiguration();
             var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
@@ -161,29 +161,29 @@ define('startup', [
 
 		$("#display_history").on("click", displayHistory);
 
-		$('#deck1').val(urlHelpers.paramValue('deck1')).change();
-		$('#deck2').val(urlHelpers.paramValue('deck2')).change();
+		$('#deck1').val(urlHelper.paramValue('deck1')).change();
+		$('#deck2').val(urlHelper.paramValue('deck2')).change();
 
-		$('#surge').prop("checked", urlHelpers.paramDefined("surge"));
-		$('#siege').prop("checked", urlHelpers.paramDefined("siege"));
-		var towerLevel = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
+		$('#surge').prop("checked", urlHelper.paramDefined("surge"));
+		$('#siege').prop("checked", urlHelper.paramDefined("siege"));
+		var towerLevel = Math.min(Math.max(urlHelper.paramValue('tower_level') || 18, 0), 18);
 		$('#tower_level').val(towerLevel);
 
-		var towerType = (urlHelpers.paramValue('tower_type') || 501);
+		var towerType = (urlHelper.paramValue('tower_type') || 501);
 		$("#tower_type").val(towerType);
 
-		$('#auto_mode').prop("checked", urlHelpers.paramDefined("auto_mode"));
-		$('#tournament').prop("checked", urlHelpers.paramDefined("tournament"));
-		$('#ordered').prop("checked", urlHelpers.paramDefined("ordered"));
-		$('#exactorder').prop("checked", urlHelpers.paramDefined("exactorder"));
+		$('#auto_mode').prop("checked", urlHelper.paramDefined("auto_mode"));
+		$('#tournament').prop("checked", urlHelper.paramDefined("tournament"));
+		$('#ordered').prop("checked", urlHelper.paramDefined("ordered"));
+		$('#exactorder').prop("checked", urlHelper.paramDefined("exactorder"));
 
-		$('#ordered2').prop("checked", urlHelpers.paramDefined("ordered2"));
-		$('#exactorder2').prop("checked", urlHelpers.paramDefined("exactorder2"));
+		$('#ordered2').prop("checked", urlHelper.paramDefined("ordered2"));
+		$('#exactorder2').prop("checked", urlHelper.paramDefined("exactorder2"));
 
-		var locationID = urlHelpers.paramValue('location');
-		var campaignID = urlHelpers.paramValue('campaign');
-		var missionID = urlHelpers.paramValue('mission');
-		var raidID = urlHelpers.paramValue('raid');
+		var locationID = urlHelper.paramValue('location');
+		var campaignID = urlHelper.paramValue('campaign');
+		var missionID = urlHelper.paramValue('mission');
+		var raidID = urlHelper.paramValue('raid');
 		if (locationID) $('#location').val(locationID).change();
 		if (campaignID) {
 			if (!locationID) {
@@ -193,16 +193,16 @@ define('startup', [
 			$('#campaign').val(campaignID).change();
 		}
 		if (missionID) {
-			$('#mission_level').val(urlHelpers.paramValue('mission_level') || 7);
+			$('#mission_level').val(urlHelper.paramValue('mission_level') || 7);
 			$('#mission').val(missionID).change();
 		}
 		if (raidID) {
-			$('#raid_level').val(urlHelpers.paramValue('raid_level') || 25);
+			$('#raid_level').val(urlHelper.paramValue('raid_level') || 25);
 			$('#raid').val(raidID).change();
 		}
 
-		if (urlHelpers.paramDefined("bges")) {
-			var bges = urlHelpers.paramValue('bges');
+		if (urlHelper.paramDefined("bges")) {
+			var bges = urlHelper.paramValue('bges');
 			// Each BGE is a 2-character ID in Base64
 			for (var i = 0; i < bges.length; i += 2) {
 				var bge = base64.toDecimal(bges.substring(i, i + 2));
@@ -214,7 +214,7 @@ define('startup', [
 				$("#battleground_" + current_bges[i]).prop('checked', true);
 			}
 		}
-		var bges = urlHelpers.paramValue('selfbges');
+		var bges = urlHelper.paramValue('selfbges');
 		if (bges) {
 			// Each BGE is a 2-character ID in Base64
 			for (var i = 0; i < bges.length; i += 2) {
@@ -222,7 +222,7 @@ define('startup', [
 				$("#self-battleground_" + bge).prop('checked', true);
 			}
 		}
-		var bges = urlHelpers.paramValue('enemybges');
+		var bges = urlHelper.paramValue('enemybges');
 		if (bges) {
 			// Each BGE is a 2-character ID in Base64
 			for (var i = 0; i < bges.length; i += 2) {
@@ -231,26 +231,26 @@ define('startup', [
 			}
 		}
 
-		var mapBges = urlHelpers.paramValue("mapBges");
+		var mapBges = urlHelper.paramValue("mapBges");
 		if (mapBges) {
 			setSelectedMapBattlegrounds(mapBges);
 		}
 
 		$("#battleground").change();
 
-		$('#sims').val(urlHelpers.paramValue('sims') || 10000);
+		$('#sims').val(urlHelper.paramValue('sims') || 10000);
 
-		if (urlHelpers.paramDefined("debug")) $('#debug').click();
-		if (urlHelpers.paramDefined("mass_debug")) $('#mass_debug').click();
-		if (urlHelpers.paramDefined("loss_debug")) $('#loss_debug').click();
-		if (urlHelpers.paramDefined("win_debug")) $('#win_debug').click();
-		if (urlHelpers.paramDefined("play_debug")) $('#play_debug').click();
+		if (urlHelper.paramDefined("debug")) $('#debug').click();
+		if (urlHelper.paramDefined("mass_debug")) $('#mass_debug').click();
+		if (urlHelper.paramDefined("loss_debug")) $('#loss_debug').click();
+		if (urlHelper.paramDefined("win_debug")) $('#win_debug').click();
+		if (urlHelper.paramDefined("play_debug")) $('#play_debug').click();
 
 		document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
-		if (urlHelpers.paramDefined('autostart') && !urlHelpers.paramDefined("latestCards")) {
+		if (urlHelper.paramDefined('autostart') && !urlHelper.paramDefined("latestCards")) {
 			simController.startsim();
-		} else if (urlHelpers.paramDefined('unit_tests')) {
+		} else if (urlHelper.paramDefined('unit_tests')) {
 			var body = document.getElementsByTagName("body")[0];
 			var script = document.createElement("script");
 			script.src = "scripts/unit_tests.js";
@@ -373,9 +373,9 @@ define('startup', [
         setDeckSortable("#attack_deck", '#deck1');
         setDeckSortable("#defend_deck", '#deck2');
 
-        if (urlHelpers.paramDefined("latestCards")) {
+        if (urlHelper.paramDefined("latestCards")) {
             var callback = null;
-            if (urlHelpers.paramDefined("autostart")) {
+            if (urlHelper.paramDefined("autostart")) {
                 callback = function () {
                     simController.startsim();
                 };

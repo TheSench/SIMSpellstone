@@ -1,21 +1,25 @@
 (function () {
     var modules = {};
-        
-    window.define = function define(name, dependencies, moduleDefinition) {
-        var injectables = dependencies.map(function loadDependency(name) {
-            return modules[name];
-        });
 
-        modules[name] = moduleDefinition.apply(this, injectables);
-    };
-
-    window.require = function require(name) {
+    function getModule(name) {
         var module = modules[name];
         if (module) {
             return module;
         } else {
             throw "Module '" + name + "' is not defined yet.";
         }
+    }
+        
+    window.define = function define(name, dependencies, moduleDefinition) {
+        var injectables = dependencies.map(function loadDependency(name) {
+            return getModule(name);
+        });
+
+        modules[name] = moduleDefinition.apply(this, injectables);
+    };
+
+    window.require = function require(name) {
+        return getModule(name);
     };
 })();;if (typeof Object.assign !== 'function') {
     Object.assign = function (target) {
@@ -333,7 +337,7 @@ Function.prototype.throttle = function throttle(wait) {
     }
 
     return api;
-});;define('urlHelpers', [], function () {
+});;define('urlHelper', [], function () {
     "use strict";
 
     var api = {
@@ -378,9 +382,9 @@ Function.prototype.throttle = function throttle(wait) {
 
     return api;
 });;define('storageAPI', [
-    'urlHelpers'
+    'urlHelper'
 ], function (
-    urlHelpers
+    urlHelper
 ) {
     "use strict";
 
@@ -410,7 +414,7 @@ Function.prototype.throttle = function throttle(wait) {
         };
 
         storageAPI.initialize = function () {
-            var currentPage = urlHelpers.getCurrentPage();
+            var currentPage = urlHelper.getCurrentPage();
 
             convertSavedDecks();
 
@@ -1488,7 +1492,7 @@ define('dataUpdater', [
     }());
 
     return api;
-});;define('unitInfo', [
+});;define('unitInfoHelper', [
     'cardApi'
 ], function (
     cardApi
@@ -1584,13 +1588,13 @@ define('dataUpdater', [
 	'cardInfo',
 	'runeApi',
 	'factions',
-	'unitInfo'
+	'unitInfoHelper'
 ], function (
 	cardApi,
 	cardInfo,
 	runeApi,
 	factions,
-	unitInfo
+	unitInfoHelper
 ) {
 	"use strict";
 
@@ -1668,7 +1672,7 @@ define('dataUpdater', [
 		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
 			var listEntry = list[i];
 			var unit = cardApi.byId(listEntry);
-			if (unitInfo.areEqual(unit, lastUnit)) {
+			if (unitInfoHelper.areEqual(unit, lastUnit)) {
 				multiplier++;
 			} else {
 				if ((uniqueCard >= skip)) {
@@ -1975,8 +1979,8 @@ define('dataUpdater', [
 		var htmlSkill = document.createElement("span");
 		htmlSkill.className = "skill";
 		htmlSkill.appendChild(getSkillIcon(skill.id));
-		var imbued = unitInfo.isImbued(card, skill.id, i);
-		var enhancement = unitInfo.getEnhancement(card, skill.id, skill.x);
+		var imbued = unitInfoHelper.isImbued(card, skill.id, i);
+		var enhancement = unitInfoHelper.getEnhancement(card, skill.id, skill.x);
 		if (imbued) {
 			htmlSkill.classList.add("imbued");
 		} else if (skill.boosted || enhancement) {
@@ -2137,10 +2141,10 @@ define('dataUpdater', [
 	return api;
 });;define('base64', [
     'cardInfo',
-    'unitInfo'
+    'unitInfoHelper'
 ], function (
     cardInfo,
-    unitInfo
+    unitInfoHelper
 ) {
     "use strict";
 
@@ -2212,7 +2216,7 @@ define('dataUpdater', [
             unitID = Number(fusion + '' + unitID);
         }
     
-        var unit = unitInfo.create(unitID, level);
+        var unit = unitInfoHelper.create(unitID, level);
         if (runeID > 0) {
             unit.runes.push({
                 id: runeID + 5000
@@ -2280,7 +2284,7 @@ define('dataUpdater', [
 
         // Default commander to Elaria Captain if none found
         if (!current_deck.commander) {
-            current_deck.commander = unitInfo.defaultCommander;
+            current_deck.commander = unitInfoHelper.defaultCommander;
         }
 
         return current_deck;

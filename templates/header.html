@@ -12,8 +12,8 @@
 </nav>
 <script>
     (function () {
-        var urlHelpers = require('urlHelpers');
-        var currentPage = urlHelpers.getCurrentPage();
+        var urlHelper = require('urlHelper');
+        var currentPage = urlHelper.getCurrentPage();
         $("#" + currentPage).addClass("current-page");
     }());
 </script>

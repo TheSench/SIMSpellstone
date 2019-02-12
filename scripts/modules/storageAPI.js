@@ -1,7 +1,7 @@
 define('storageAPI', [
-    'urlHelpers'
+    'urlHelper'
 ], function (
-    urlHelpers
+    urlHelper
 ) {
     "use strict";
 
@@ -31,7 +31,7 @@ define('storageAPI', [
         };
 
         storageAPI.initialize = function () {
-            var currentPage = urlHelpers.getCurrentPage();
+            var currentPage = urlHelper.getCurrentPage();
 
             convertSavedDecks();
 

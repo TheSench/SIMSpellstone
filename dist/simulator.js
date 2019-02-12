@@ -208,7 +208,7 @@ function(
                     if (targets.length) {
                         // Create a trap card
                         var trapLevel = Math.ceil(card[this.base] * this.mult);
-                        var trapInfo = unitInfo.create(this.id, trapLevel);
+                        var trapInfo = unitInfoHelper.create(this.id, trapLevel);
                         var trap = cardApi.byId(trapInfo);
     
                         // Shuffle the trap into opponent's deck
@@ -376,11 +376,11 @@ function(
 });;define('loadDeck', [
     'cardInfo',
     'cardApi',
-    'unitInfo'
+    'unitInfoHelper'
 ], function (
     cardInfo,
     cardApi,
-    unitInfo
+    unitInfoHelper
 ) {
     "use strict";
     
@@ -488,7 +488,7 @@ function(
             unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
         }
 
-        var unit = unitInfo.create(cardID, unitLevel);
+        var unit = unitInfoHelper.create(cardID, unitLevel);
 
         if (random) {
             unit.randomInfo = { unitInfo: unitInfo, level: level, maxedAt: maxedAt };
@@ -637,7 +637,7 @@ function(
 
     function getDefaultDeck() {
         return {
-            commander: unitInfo.defaultCommander,
+            commander: unitInfoHelper.defaultCommander,
             deck: []
         };
     }
@@ -724,7 +724,7 @@ function(
 
 define('ui', [
 	'base64',
-	'urlHelpers',
+	'urlHelper',
 	'loadDeck',
 	'debugLog',
 	'storageAPI',
@@ -733,7 +733,7 @@ define('ui', [
 	'animations'
 ], function (
 	base64,
-	urlHelpers,
+	urlHelper,
 	loadDeck,
 	debugLog,
 	storageAPI,
@@ -1174,7 +1174,7 @@ define('ui', [
 		if (name) {
 			parameters.push("name=" + name);
 		}
-		if (urlHelpers.paramDefined("ajax")) {
+		if (urlHelper.paramDefined("ajax")) {
 			parameters.push("ajax");
 		}
 		parameters.push("fromSim");
@@ -1404,7 +1404,7 @@ define('ui', [
     return SIM_CONTROLLER;
 });;define('startup', [
 	'base64',
-	'urlHelpers',
+	'urlHelper',
 	'simController',
 	'bgeApi',
 	'cardUI',
@@ -1413,7 +1413,7 @@ define('ui', [
 	'ui'
 ], function (
 	base64,
-	urlHelpers,
+	urlHelper,
 	simController,
 	bgeApi,
 	cardUI,
@@ -1483,7 +1483,7 @@ define('ui', [
     function deckChanged(deckID, newDeck, owner) {
         var $deck = $("#" + deckID);
         $deck.children().remove();
-        if (!urlHelpers.paramDefined("seedtest")) {
+        if (!urlHelper.paramDefined("seedtest")) {
             var config = ui.getConfiguration();
             var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
@@ -1565,29 +1565,29 @@ define('ui', [
 
 		$("#display_history").on("click", displayHistory);
 
-		$('#deck1').val(urlHelpers.paramValue('deck1')).change();
-		$('#deck2').val(urlHelpers.paramValue('deck2')).change();
+		$('#deck1').val(urlHelper.paramValue('deck1')).change();
+		$('#deck2').val(urlHelper.paramValue('deck2')).change();
 
-		$('#surge').prop("checked", urlHelpers.paramDefined("surge"));
-		$('#siege').prop("checked", urlHelpers.paramDefined("siege"));
-		var towerLevel = Math.min(Math.max(urlHelpers.paramValue('tower_level') || 18, 0), 18);
+		$('#surge').prop("checked", urlHelper.paramDefined("surge"));
+		$('#siege').prop("checked", urlHelper.paramDefined("siege"));
+		var towerLevel = Math.min(Math.max(urlHelper.paramValue('tower_level') || 18, 0), 18);
 		$('#tower_level').val(towerLevel);
 
-		var towerType = (urlHelpers.paramValue('tower_type') || 501);
+		var towerType = (urlHelper.paramValue('tower_type') || 501);
 		$("#tower_type").val(towerType);
 
-		$('#auto_mode').prop("checked", urlHelpers.paramDefined("auto_mode"));
-		$('#tournament').prop("checked", urlHelpers.paramDefined("tournament"));
-		$('#ordered').prop("checked", urlHelpers.paramDefined("ordered"));
-		$('#exactorder').prop("checked", urlHelpers.paramDefined("exactorder"));
+		$('#auto_mode').prop("checked", urlHelper.paramDefined("auto_mode"));
+		$('#tournament').prop("checked", urlHelper.paramDefined("tournament"));
+		$('#ordered').prop("checked", urlHelper.paramDefined("ordered"));
+		$('#exactorder').prop("checked", urlHelper.paramDefined("exactorder"));
 
-		$('#ordered2').prop("checked", urlHelpers.paramDefined("ordered2"));
-		$('#exactorder2').prop("checked", urlHelpers.paramDefined("exactorder2"));
+		$('#ordered2').prop("checked", urlHelper.paramDefined("ordered2"));
+		$('#exactorder2').prop("checked", urlHelper.paramDefined("exactorder2"));
 
-		var locationID = urlHelpers.paramValue('location');
-		var campaignID = urlHelpers.paramValue('campaign');
-		var missionID = urlHelpers.paramValue('mission');
-		var raidID = urlHelpers.paramValue('raid');
+		var locationID = urlHelper.paramValue('location');
+		var campaignID = urlHelper.paramValue('campaign');
+		var missionID = urlHelper.paramValue('mission');
+		var raidID = urlHelper.paramValue('raid');
 		if (locationID) $('#location').val(locationID).change();
 		if (campaignID) {
 			if (!locationID) {
@@ -1597,16 +1597,16 @@ define('ui', [
 			$('#campaign').val(campaignID).change();
 		}
 		if (missionID) {
-			$('#mission_level').val(urlHelpers.paramValue('mission_level') || 7);
+			$('#mission_level').val(urlHelper.paramValue('mission_level') || 7);
 			$('#mission').val(missionID).change();
 		}
 		if (raidID) {
-			$('#raid_level').val(urlHelpers.paramValue('raid_level') || 25);
+			$('#raid_level').val(urlHelper.paramValue('raid_level') || 25);
 			$('#raid').val(raidID).change();
 		}
 
-		if (urlHelpers.paramDefined("bges")) {
-			var bges = urlHelpers.paramValue('bges');
+		if (urlHelper.paramDefined("bges")) {
+			var bges = urlHelper.paramValue('bges');
 			// Each BGE is a 2-character ID in Base64
 			for (var i = 0; i < bges.length; i += 2) {
 				var bge = base64.toDecimal(bges.substring(i, i + 2));
@@ -1618,7 +1618,7 @@ define('ui', [
 				$("#battleground_" + current_bges[i]).prop('checked', true);
 			}
 		}
-		var bges = urlHelpers.paramValue('selfbges');
+		var bges = urlHelper.paramValue('selfbges');
 		if (bges) {
 			// Each BGE is a 2-character ID in Base64
 			for (var i = 0; i < bges.length; i += 2) {
@@ -1626,7 +1626,7 @@ define('ui', [
 				$("#self-battleground_" + bge).prop('checked', true);
 			}
 		}
-		var bges = urlHelpers.paramValue('enemybges');
+		var bges = urlHelper.paramValue('enemybges');
 		if (bges) {
 			// Each BGE is a 2-character ID in Base64
 			for (var i = 0; i < bges.length; i += 2) {
@@ -1635,26 +1635,26 @@ define('ui', [
 			}
 		}
 
-		var mapBges = urlHelpers.paramValue("mapBges");
+		var mapBges = urlHelper.paramValue("mapBges");
 		if (mapBges) {
 			setSelectedMapBattlegrounds(mapBges);
 		}
 
 		$("#battleground").change();
 
-		$('#sims').val(urlHelpers.paramValue('sims') || 10000);
+		$('#sims').val(urlHelper.paramValue('sims') || 10000);
 
-		if (urlHelpers.paramDefined("debug")) $('#debug').click();
-		if (urlHelpers.paramDefined("mass_debug")) $('#mass_debug').click();
-		if (urlHelpers.paramDefined("loss_debug")) $('#loss_debug').click();
-		if (urlHelpers.paramDefined("win_debug")) $('#win_debug').click();
-		if (urlHelpers.paramDefined("play_debug")) $('#play_debug').click();
+		if (urlHelper.paramDefined("debug")) $('#debug').click();
+		if (urlHelper.paramDefined("mass_debug")) $('#mass_debug').click();
+		if (urlHelper.paramDefined("loss_debug")) $('#loss_debug').click();
+		if (urlHelper.paramDefined("win_debug")) $('#win_debug').click();
+		if (urlHelper.paramDefined("play_debug")) $('#play_debug').click();
 
 		document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
-		if (urlHelpers.paramDefined('autostart') && !urlHelpers.paramDefined("latestCards")) {
+		if (urlHelper.paramDefined('autostart') && !urlHelper.paramDefined("latestCards")) {
 			simController.startsim();
-		} else if (urlHelpers.paramDefined('unit_tests')) {
+		} else if (urlHelper.paramDefined('unit_tests')) {
 			var body = document.getElementsByTagName("body")[0];
 			var script = document.createElement("script");
 			script.src = "scripts/unit_tests.js";
@@ -1777,9 +1777,9 @@ define('ui', [
         setDeckSortable("#attack_deck", '#deck1');
         setDeckSortable("#defend_deck", '#deck2');
 
-        if (urlHelpers.paramDefined("latestCards")) {
+        if (urlHelper.paramDefined("latestCards")) {
             var callback = null;
-            if (urlHelpers.paramDefined("autostart")) {
+            if (urlHelper.paramDefined("autostart")) {
                 callback = function () {
                     simController.startsim();
                 };
@@ -1810,7 +1810,7 @@ for(var id in FUSIONS) {
 
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
-    var urlHelpers = require('urlHelpers');
+    var urlHelper = require('urlHelper');
     var debugLog = require('debugLog');
     var simController = require('simController');
     var ui = require('ui');
@@ -1932,7 +1932,7 @@ for(var id in FUSIONS) {
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
-    var seedtest = (urlHelpers.paramValue("seedtest") || 0);
+    var seedtest = (urlHelper.paramValue("seedtest") || 0);
     function runSim(config, skipResults) {
         if (seedtest) {
             Math.seedrandom(seedtest++);
@@ -2029,7 +2029,7 @@ for(var id in FUSIONS) {
 	var cardApi = require('cardApi');
     var skillApi = require('skillApi');
 	var base64 = require('base64');
-	var unitInfo = require('unitInfo');
+	var unitInfoHelper = require('unitInfoHelper');
 	var loadDeck = require('loadDeck');
 	var debugLog = require('debugLog');
 	var animations = require('animations');
@@ -2052,7 +2052,7 @@ for(var id in FUSIONS) {
 		if (!card.id) return 0;
 
 		var newKey = field_p_assaults.length;
-		unitInfo.initializeUnit(card, p, newKey);
+		unitInfoHelper.initializeUnit(card, p, newKey);
 		card.played = true;
 
 		if (card.isAssault()) {
@@ -2309,7 +2309,7 @@ for(var id in FUSIONS) {
 	function backlash(attacker, defender) {
 		if (attacker.isAssault() && defender.isAlive()) {
 			var baseDamage = defender.backlash;
-			var enhancement = unitInfo.getEnhancement(defender, 'backlash', baseDamage);
+			var enhancement = unitInfoHelper.getEnhancement(defender, 'backlash', baseDamage);
 			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement);
 		}
 	}
@@ -2372,7 +2372,7 @@ for(var id in FUSIONS) {
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, 'burn', scorch);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, 'burn', scorch);
 			scorch += enhanced;
 
 			var affected = 0;
@@ -2440,7 +2440,7 @@ for(var id in FUSIONS) {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, protect);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, protect);
 			protect += enhanced;
 
 			var affected = 0;
@@ -2517,7 +2517,7 @@ for(var id in FUSIONS) {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, heal);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, heal);
 			heal += enhanced;
 
 			var affected = 0;
@@ -2586,7 +2586,7 @@ for(var id in FUSIONS) {
 				targets = chooseRandomTarget(targets);
 			}
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, strike);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, strike);
 			strike += enhanced;
 
 			var affected = 0;
@@ -2672,7 +2672,7 @@ for(var id in FUSIONS) {
 				targets = chooseRandomTarget(targets);
 			}
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, intensify);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, intensify);
 			intensify += enhanced;
 
 			var affected = 0;
@@ -2817,7 +2817,7 @@ for(var id in FUSIONS) {
 			var o = getOpponent(sourceUnit);
 
 			var frost = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, frost);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, frost);
 			frost += enhanced;
 
 			var all = skill.all;
@@ -2888,7 +2888,7 @@ for(var id in FUSIONS) {
 			// No Targets
 			if (!target) return 0;
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, heartseeker);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, heartseeker);
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
@@ -2978,7 +2978,7 @@ for(var id in FUSIONS) {
 		// No Targets
 		if (!targetKeys.length) return 0;
 
-		var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, skill.x);
+		var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, skill.x);
 		var skillValue = skill.x + enhanced;
 
 		// Check All
@@ -3025,7 +3025,7 @@ for(var id in FUSIONS) {
 			var p = getOwner(sourceUnit);
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 			var all = skill.all;
 
@@ -3103,7 +3103,7 @@ for(var id in FUSIONS) {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var affected = 0;
@@ -3147,7 +3147,7 @@ for(var id in FUSIONS) {
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -3190,7 +3190,7 @@ for(var id in FUSIONS) {
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -3237,7 +3237,7 @@ for(var id in FUSIONS) {
 
 			var field_x_assaults = field[o].assaults;
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, barrages);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, barrages);
 			barrages += enhanced;
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
@@ -3389,7 +3389,7 @@ for(var id in FUSIONS) {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, enrage);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, enrage);
 			enrage += enhanced;
 
 			var affected = 0;
@@ -3527,7 +3527,7 @@ for(var id in FUSIONS) {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, mark);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, mark);
 			mark += enhanced;
 
 			var affected = 0;
@@ -3603,7 +3603,7 @@ for(var id in FUSIONS) {
 			}
 
 			// Get base card
-			var unearthedUnit = unitInfo.create((skill.card || dying.id), (skill.level || skill.x));
+			var unearthedUnit = unitInfoHelper.create((skill.card || dying.id), (skill.level || skill.x));
 			var unearthedCard = cardApi.byIdWithBgeApplied(unearthedUnit, null, true);
 			unearthedCard.isToken = true;
 
@@ -3773,7 +3773,7 @@ for(var id in FUSIONS) {
 			var towerBGE = BATTLEGROUNDS[config.towerType];
 			var tower = towerBGE.effect[config.towerLevel];
 			if (tower) {
-				tower = unitInfo.create(tower.id, tower.level);
+				tower = unitInfoHelper.create(tower.id, tower.level);
 				var towerCard = cardApi.byIdWithBgeApplied(tower);
 				var uid = 150;
 				towerCard.uid = uid;
@@ -4120,7 +4120,7 @@ for(var id in FUSIONS) {
 				var b_priority = cardInHand.priority;
 
 				// If this is the exact card at this spot
-				if (unitInfo.areEqual(desiredCard, cardInHand)) {
+				if (unitInfoHelper.areEqual(desiredCard, cardInHand)) {
 					played = true;
 					break;
 				}
@@ -4307,7 +4307,7 @@ for(var id in FUSIONS) {
 
 		if (assault[skillName]) {
 			statusValue = assault[skillName];
-			var enhanced = unitInfo.getEnhancement(assault, skillName, statusValue);
+			var enhanced = unitInfoHelper.getEnhancement(assault, skillName, statusValue);
 			statusValue += enhanced;
 		}
 
@@ -4422,7 +4422,7 @@ for(var id in FUSIONS) {
 			if (current_assault.regenerate && current_assault.isDamaged()) {
 
 				var regen_health = current_assault.regenerate;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'regenerate', regen_health);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'regenerate', regen_health);
 				regen_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (regen_health >= healthMissing) {
@@ -4561,7 +4561,7 @@ for(var id in FUSIONS) {
 		// var pierce = current_assault['skill']['pierce'];
 		var pierce = current_assault.pierce;
 		if (pierce) {
-			var enhanced = unitInfo.getEnhancement(current_assault, 'pierce', pierce);
+			var enhanced = unitInfoHelper.getEnhancement(current_assault, 'pierce', pierce);
 			pierce += enhanced;
 		} else {
 			pierce = 0;
@@ -4605,7 +4605,7 @@ for(var id in FUSIONS) {
 			}
 		}
 		if (shrouded) {
-			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
+			shrouded += unitInfoHelper.getEnhancement(target, 'stasis', shrouded);
 			if (debugLog.enabled) {
 				debugLog.append(' Shroud: -' + shrouded);
 			}
@@ -4622,7 +4622,7 @@ for(var id in FUSIONS) {
 			damage -= shrouded;
 		}
 		if (armor) {
-			armor += unitInfo.getEnhancement(target, 'armored', armor);
+			armor += unitInfoHelper.getEnhancement(target, 'armored', armor);
 			if (debugLog.enabled) {
 				debugLog.append(' Armor: -' + armor);
 			}
@@ -4668,7 +4668,7 @@ for(var id in FUSIONS) {
 			// - Target must not be already poisoned of that level
 			if (current_assault.poison) {
 				var poison = current_assault.poison;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'poison', poison);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'poison', poison);
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
@@ -4683,7 +4683,7 @@ for(var id in FUSIONS) {
 			// - Sets envenomed to greater of target's current envenomed or new venom
 			if (current_assault.venom) {
 				var venom = current_assault.venom;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'venom', venom);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'venom', venom);
 				venom += enhanced;
 
 				if (venom > target.envenomed) {
@@ -4699,7 +4699,7 @@ for(var id in FUSIONS) {
 			// - Target must be an assault
 			if (current_assault.nullify) {
 				var nullify = current_assault.nullify;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'nullify', nullify);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
 				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target));
@@ -4719,7 +4719,7 @@ for(var id in FUSIONS) {
 			if (current_assault.daze) {
 
 				var dazed = current_assault.daze;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'daze', dazed);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'daze', dazed);
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
@@ -4742,7 +4742,7 @@ for(var id in FUSIONS) {
 			if (current_assault.leech && current_assault.isDamaged()) {
 
 				var leech_health = current_assault.leech;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'leech', leech_health);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'leech', leech_health);
 				leech_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (leech_health >= healthMissing) {
@@ -4755,7 +4755,7 @@ for(var id in FUSIONS) {
 
 			if (current_assault.reinforce) {
 				var reinforce = current_assault.reinforce;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'reinforce', reinforce);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'reinforce', reinforce);
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
@@ -4768,7 +4768,7 @@ for(var id in FUSIONS) {
 			if (target.counter) {
 
 				var counterBase = 0 + target.counter;
-				var counterEnhancement = unitInfo.getEnhancement(target, 'counter', counterBase);
+				var counterEnhancement = unitInfoHelper.getEnhancement(target, 'counter', counterBase);
 
 				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
 			}
@@ -4777,7 +4777,7 @@ for(var id in FUSIONS) {
 			// - Target must have received some amount of damage
 			if (target.counterburn) {
 				var scorch = target.counterburn || 0;
-				var enhanced = unitInfo.getEnhancement(target, 'counterburn', scorch);
+				var enhanced = unitInfoHelper.getEnhancement(target, 'counterburn', scorch);
 				scorch += enhanced;
 				if (!current_assault.scorched) {
 					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
@@ -4792,7 +4792,7 @@ for(var id in FUSIONS) {
 			// - Target must have received some amount of damage
 			if (target.counterpoison) {
 				var poison = target.counterpoison || 0;
-				var enhanced = unitInfo.getEnhancement(target, 'counterpoison', poison);
+				var enhanced = unitInfoHelper.getEnhancement(target, 'counterpoison', poison);
 				poison += enhanced;
 
 				if (poison > current_assault.poisoned) {
@@ -4805,7 +4805,7 @@ for(var id in FUSIONS) {
 			// - Target must have received some amount of damage
 			if (target.fury) {
 				var furyBase = target.fury;
-				var furyEnhancement = unitInfo.getEnhancement(target, 'counter', furyBase);
+				var furyEnhancement = unitInfoHelper.getEnhancement(target, 'counter', furyBase);
 
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
@@ -4828,7 +4828,7 @@ for(var id in FUSIONS) {
 			if (current_assault.berserk) {
 
 				var berserk = current_assault.berserk;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'berserk', berserk);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'berserk', berserk);
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
@@ -4842,7 +4842,7 @@ for(var id in FUSIONS) {
 		// - Target must have received some amount of damage
 		if (target.corrosive) {
 			var corrosion = target.corrosive || 0;
-			var enhanced = unitInfo.getEnhancement(target, 'corrosive', corrosion);
+			var enhanced = unitInfoHelper.getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
 			if (current_assault.corroded) {
 				current_assault.corroded.amount += corrosion;
@@ -5259,9 +5259,9 @@ for(var id in FUSIONS) {
     module.controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
 
 }(angular));;define('tutorialScript', [
-    'urlHelpers'
+    'urlHelper'
 ], function getTutorialScript(
-    urlHelpers
+    urlHelper
 ) {
     'user strict';
     
@@ -5415,7 +5415,7 @@ for(var id in FUSIONS) {
        }
     ];
 
-    var currentPage = urlHelpers.getCurrentPage();
+    var currentPage = urlHelper.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {

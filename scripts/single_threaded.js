@@ -3,7 +3,7 @@
 
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
-    var urlHelpers = require('urlHelpers');
+    var urlHelper = require('urlHelper');
     var debugLog = require('debugLog');
     var simController = require('simController');
     var ui = require('ui');
@@ -125,7 +125,7 @@
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
-    var seedtest = (urlHelpers.paramValue("seedtest") || 0);
+    var seedtest = (urlHelper.paramValue("seedtest") || 0);
     function runSim(config, skipResults) {
         if (seedtest) {
             Math.seedrandom(seedtest++);

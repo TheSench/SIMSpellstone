@@ -138,7 +138,7 @@ var current_timeout;;define('matchStats', [], function() {
                     if (targets.length) {
                         // Create a trap card
                         var trapLevel = Math.ceil(card[this.base] * this.mult);
-                        var trapInfo = unitInfo.create(this.id, trapLevel);
+                        var trapInfo = unitInfoHelper.create(this.id, trapLevel);
                         var trap = cardApi.byId(trapInfo);
     
                         // Shuffle the trap into opponent's deck
@@ -306,11 +306,11 @@ var current_timeout;;define('matchStats', [], function() {
 });;define('loadDeck', [
     'cardInfo',
     'cardApi',
-    'unitInfo'
+    'unitInfoHelper'
 ], function (
     cardInfo,
     cardApi,
-    unitInfo
+    unitInfoHelper
 ) {
     "use strict";
     
@@ -418,7 +418,7 @@ var current_timeout;;define('matchStats', [], function() {
             unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
         }
 
-        var unit = unitInfo.create(cardID, unitLevel);
+        var unit = unitInfoHelper.create(cardID, unitLevel);
 
         if (random) {
             unit.randomInfo = { unitInfo: unitInfo, level: level, maxedAt: maxedAt };
@@ -567,7 +567,7 @@ var current_timeout;;define('matchStats', [], function() {
 
     function getDefaultDeck() {
         return {
-            commander: unitInfo.defaultCommander,
+            commander: unitInfoHelper.defaultCommander,
             deck: []
         };
     }
@@ -659,7 +659,7 @@ var current_timeout;;define('matchStats', [], function() {
 
     var bgeApi = require('bgeApi');
     var matchTimer = require('matchTimer');
-    var urlHelpers = require('urlHelpers');
+    var urlHelper = require('urlHelper');
     var debugLog = require('debugLog');
     var simController = require('simController');
     var ui = require('ui');
@@ -781,7 +781,7 @@ var current_timeout;;define('matchStats', [], function() {
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
-    var seedtest = (urlHelpers.paramValue("seedtest") || 0);
+    var seedtest = (urlHelper.paramValue("seedtest") || 0);
     function runSim(config, skipResults) {
         if (seedtest) {
             Math.seedrandom(seedtest++);
@@ -878,7 +878,7 @@ var current_timeout;;define('matchStats', [], function() {
 	var cardApi = require('cardApi');
     var skillApi = require('skillApi');
 	var base64 = require('base64');
-	var unitInfo = require('unitInfo');
+	var unitInfoHelper = require('unitInfoHelper');
 	var loadDeck = require('loadDeck');
 	var debugLog = require('debugLog');
 	var animations = require('animations');
@@ -901,7 +901,7 @@ var current_timeout;;define('matchStats', [], function() {
 		if (!card.id) return 0;
 
 		var newKey = field_p_assaults.length;
-		unitInfo.initializeUnit(card, p, newKey);
+		unitInfoHelper.initializeUnit(card, p, newKey);
 		card.played = true;
 
 		if (card.isAssault()) {
@@ -1158,7 +1158,7 @@ var current_timeout;;define('matchStats', [], function() {
 	function backlash(attacker, defender) {
 		if (attacker.isAssault() && defender.isAlive()) {
 			var baseDamage = defender.backlash;
-			var enhancement = unitInfo.getEnhancement(defender, 'backlash', baseDamage);
+			var enhancement = unitInfoHelper.getEnhancement(defender, 'backlash', baseDamage);
 			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement);
 		}
 	}
@@ -1221,7 +1221,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, 'burn', scorch);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, 'burn', scorch);
 			scorch += enhanced;
 
 			var affected = 0;
@@ -1289,7 +1289,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, protect);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, protect);
 			protect += enhanced;
 
 			var affected = 0;
@@ -1366,7 +1366,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, heal);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, heal);
 			heal += enhanced;
 
 			var affected = 0;
@@ -1435,7 +1435,7 @@ var current_timeout;;define('matchStats', [], function() {
 				targets = chooseRandomTarget(targets);
 			}
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, strike);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, strike);
 			strike += enhanced;
 
 			var affected = 0;
@@ -1521,7 +1521,7 @@ var current_timeout;;define('matchStats', [], function() {
 				targets = chooseRandomTarget(targets);
 			}
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, intensify);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, intensify);
 			intensify += enhanced;
 
 			var affected = 0;
@@ -1666,7 +1666,7 @@ var current_timeout;;define('matchStats', [], function() {
 			var o = getOpponent(sourceUnit);
 
 			var frost = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, frost);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, frost);
 			frost += enhanced;
 
 			var all = skill.all;
@@ -1737,7 +1737,7 @@ var current_timeout;;define('matchStats', [], function() {
 			// No Targets
 			if (!target) return 0;
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, heartseeker);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, heartseeker);
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
@@ -1827,7 +1827,7 @@ var current_timeout;;define('matchStats', [], function() {
 		// No Targets
 		if (!targetKeys.length) return 0;
 
-		var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, skill.x);
+		var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, skill.x);
 		var skillValue = skill.x + enhanced;
 
 		// Check All
@@ -1874,7 +1874,7 @@ var current_timeout;;define('matchStats', [], function() {
 			var p = getOwner(sourceUnit);
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 			var all = skill.all;
 
@@ -1952,7 +1952,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var affected = 0;
@@ -1996,7 +1996,7 @@ var current_timeout;;define('matchStats', [], function() {
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -2039,7 +2039,7 @@ var current_timeout;;define('matchStats', [], function() {
 			var field_p_assaults = field[p]['assaults'];
 
 			var rally = skill.x;
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, rally);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill['y'];
@@ -2086,7 +2086,7 @@ var current_timeout;;define('matchStats', [], function() {
 
 			var field_x_assaults = field[o].assaults;
 
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, barrages);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, barrages);
 			barrages += enhanced;
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
@@ -2238,7 +2238,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, enrage);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, enrage);
 			enrage += enhanced;
 
 			var affected = 0;
@@ -2376,7 +2376,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (!all) {
 				targets = chooseRandomTarget(targets);
 			}
-			var enhanced = unitInfo.getEnhancement(sourceUnit, skill.id, mark);
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, mark);
 			mark += enhanced;
 
 			var affected = 0;
@@ -2452,7 +2452,7 @@ var current_timeout;;define('matchStats', [], function() {
 			}
 
 			// Get base card
-			var unearthedUnit = unitInfo.create((skill.card || dying.id), (skill.level || skill.x));
+			var unearthedUnit = unitInfoHelper.create((skill.card || dying.id), (skill.level || skill.x));
 			var unearthedCard = cardApi.byIdWithBgeApplied(unearthedUnit, null, true);
 			unearthedCard.isToken = true;
 
@@ -2622,7 +2622,7 @@ var current_timeout;;define('matchStats', [], function() {
 			var towerBGE = BATTLEGROUNDS[config.towerType];
 			var tower = towerBGE.effect[config.towerLevel];
 			if (tower) {
-				tower = unitInfo.create(tower.id, tower.level);
+				tower = unitInfoHelper.create(tower.id, tower.level);
 				var towerCard = cardApi.byIdWithBgeApplied(tower);
 				var uid = 150;
 				towerCard.uid = uid;
@@ -2969,7 +2969,7 @@ var current_timeout;;define('matchStats', [], function() {
 				var b_priority = cardInHand.priority;
 
 				// If this is the exact card at this spot
-				if (unitInfo.areEqual(desiredCard, cardInHand)) {
+				if (unitInfoHelper.areEqual(desiredCard, cardInHand)) {
 					played = true;
 					break;
 				}
@@ -3156,7 +3156,7 @@ var current_timeout;;define('matchStats', [], function() {
 
 		if (assault[skillName]) {
 			statusValue = assault[skillName];
-			var enhanced = unitInfo.getEnhancement(assault, skillName, statusValue);
+			var enhanced = unitInfoHelper.getEnhancement(assault, skillName, statusValue);
 			statusValue += enhanced;
 		}
 
@@ -3271,7 +3271,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (current_assault.regenerate && current_assault.isDamaged()) {
 
 				var regen_health = current_assault.regenerate;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'regenerate', regen_health);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'regenerate', regen_health);
 				regen_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (regen_health >= healthMissing) {
@@ -3410,7 +3410,7 @@ var current_timeout;;define('matchStats', [], function() {
 		// var pierce = current_assault['skill']['pierce'];
 		var pierce = current_assault.pierce;
 		if (pierce) {
-			var enhanced = unitInfo.getEnhancement(current_assault, 'pierce', pierce);
+			var enhanced = unitInfoHelper.getEnhancement(current_assault, 'pierce', pierce);
 			pierce += enhanced;
 		} else {
 			pierce = 0;
@@ -3454,7 +3454,7 @@ var current_timeout;;define('matchStats', [], function() {
 			}
 		}
 		if (shrouded) {
-			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
+			shrouded += unitInfoHelper.getEnhancement(target, 'stasis', shrouded);
 			if (debugLog.enabled) {
 				debugLog.append(' Shroud: -' + shrouded);
 			}
@@ -3471,7 +3471,7 @@ var current_timeout;;define('matchStats', [], function() {
 			damage -= shrouded;
 		}
 		if (armor) {
-			armor += unitInfo.getEnhancement(target, 'armored', armor);
+			armor += unitInfoHelper.getEnhancement(target, 'armored', armor);
 			if (debugLog.enabled) {
 				debugLog.append(' Armor: -' + armor);
 			}
@@ -3517,7 +3517,7 @@ var current_timeout;;define('matchStats', [], function() {
 			// - Target must not be already poisoned of that level
 			if (current_assault.poison) {
 				var poison = current_assault.poison;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'poison', poison);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'poison', poison);
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
@@ -3532,7 +3532,7 @@ var current_timeout;;define('matchStats', [], function() {
 			// - Sets envenomed to greater of target's current envenomed or new venom
 			if (current_assault.venom) {
 				var venom = current_assault.venom;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'venom', venom);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'venom', venom);
 				venom += enhanced;
 
 				if (venom > target.envenomed) {
@@ -3548,7 +3548,7 @@ var current_timeout;;define('matchStats', [], function() {
 			// - Target must be an assault
 			if (current_assault.nullify) {
 				var nullify = current_assault.nullify;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'nullify', nullify);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
 				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target));
@@ -3568,7 +3568,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (current_assault.daze) {
 
 				var dazed = current_assault.daze;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'daze', dazed);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'daze', dazed);
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
@@ -3591,7 +3591,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (current_assault.leech && current_assault.isDamaged()) {
 
 				var leech_health = current_assault.leech;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'leech', leech_health);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'leech', leech_health);
 				leech_health += enhanced;
 				var healthMissing = current_assault.health - current_assault.health_left;
 				if (leech_health >= healthMissing) {
@@ -3604,7 +3604,7 @@ var current_timeout;;define('matchStats', [], function() {
 
 			if (current_assault.reinforce) {
 				var reinforce = current_assault.reinforce;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'reinforce', reinforce);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'reinforce', reinforce);
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
@@ -3617,7 +3617,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (target.counter) {
 
 				var counterBase = 0 + target.counter;
-				var counterEnhancement = unitInfo.getEnhancement(target, 'counter', counterBase);
+				var counterEnhancement = unitInfoHelper.getEnhancement(target, 'counter', counterBase);
 
 				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
 			}
@@ -3626,7 +3626,7 @@ var current_timeout;;define('matchStats', [], function() {
 			// - Target must have received some amount of damage
 			if (target.counterburn) {
 				var scorch = target.counterburn || 0;
-				var enhanced = unitInfo.getEnhancement(target, 'counterburn', scorch);
+				var enhanced = unitInfoHelper.getEnhancement(target, 'counterburn', scorch);
 				scorch += enhanced;
 				if (!current_assault.scorched) {
 					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
@@ -3641,7 +3641,7 @@ var current_timeout;;define('matchStats', [], function() {
 			// - Target must have received some amount of damage
 			if (target.counterpoison) {
 				var poison = target.counterpoison || 0;
-				var enhanced = unitInfo.getEnhancement(target, 'counterpoison', poison);
+				var enhanced = unitInfoHelper.getEnhancement(target, 'counterpoison', poison);
 				poison += enhanced;
 
 				if (poison > current_assault.poisoned) {
@@ -3654,7 +3654,7 @@ var current_timeout;;define('matchStats', [], function() {
 			// - Target must have received some amount of damage
 			if (target.fury) {
 				var furyBase = target.fury;
-				var furyEnhancement = unitInfo.getEnhancement(target, 'counter', furyBase);
+				var furyEnhancement = unitInfoHelper.getEnhancement(target, 'counter', furyBase);
 
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
@@ -3677,7 +3677,7 @@ var current_timeout;;define('matchStats', [], function() {
 			if (current_assault.berserk) {
 
 				var berserk = current_assault.berserk;
-				var enhanced = unitInfo.getEnhancement(current_assault, 'berserk', berserk);
+				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'berserk', berserk);
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
@@ -3691,7 +3691,7 @@ var current_timeout;;define('matchStats', [], function() {
 		// - Target must have received some amount of damage
 		if (target.corrosive) {
 			var corrosion = target.corrosive || 0;
-			var enhanced = unitInfo.getEnhancement(target, 'corrosive', corrosion);
+			var enhanced = unitInfoHelper.getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
 			if (current_assault.corroded) {
 				current_assault.corroded.amount += corrosion;

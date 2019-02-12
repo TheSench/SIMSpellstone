@@ -3,13 +3,13 @@
 	'cardInfo',
 	'runeApi',
 	'factions',
-	'unitInfo'
+	'unitInfoHelper'
 ], function (
 	cardApi,
 	cardInfo,
 	runeApi,
 	factions,
-	unitInfo
+	unitInfoHelper
 ) {
 	"use strict";
 
@@ -87,7 +87,7 @@
 		for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
 			var listEntry = list[i];
 			var unit = cardApi.byId(listEntry);
-			if (unitInfo.areEqual(unit, lastUnit)) {
+			if (unitInfoHelper.areEqual(unit, lastUnit)) {
 				multiplier++;
 			} else {
 				if ((uniqueCard >= skip)) {
@@ -394,8 +394,8 @@
 		var htmlSkill = document.createElement("span");
 		htmlSkill.className = "skill";
 		htmlSkill.appendChild(getSkillIcon(skill.id));
-		var imbued = unitInfo.isImbued(card, skill.id, i);
-		var enhancement = unitInfo.getEnhancement(card, skill.id, skill.x);
+		var imbued = unitInfoHelper.isImbued(card, skill.id, i);
+		var enhancement = unitInfoHelper.getEnhancement(card, skill.id, skill.x);
 		if (imbued) {
 			htmlSkill.classList.add("imbued");
 		} else if (skill.boosted || enhancement) {

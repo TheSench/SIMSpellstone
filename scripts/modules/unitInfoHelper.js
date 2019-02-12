@@ -1,4 +1,4 @@
-define('unitInfo', [
+define('unitInfoHelper', [
     'cardApi'
 ], function (
     cardApi

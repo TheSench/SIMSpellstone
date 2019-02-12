@@ -2,7 +2,7 @@
 
 define('ui', [
 	'base64',
-	'urlHelpers',
+	'urlHelper',
 	'loadDeck',
 	'debugLog',
 	'storageAPI',
@@ -11,7 +11,7 @@ define('ui', [
 	'animations'
 ], function (
 	base64,
-	urlHelpers,
+	urlHelper,
 	loadDeck,
 	debugLog,
 	storageAPI,
@@ -452,7 +452,7 @@ define('ui', [
 		if (name) {
 			parameters.push("name=" + name);
 		}
-		if (urlHelpers.paramDefined("ajax")) {
+		if (urlHelper.paramDefined("ajax")) {
 			parameters.push("ajax");
 		}
 		parameters.push("fromSim");

@@ -83,7 +83,7 @@ define('bgeApi', [
                     if (targets.length) {
                         // Create a trap card
                         var trapLevel = Math.ceil(card[this.base] * this.mult);
-                        var trapInfo = unitInfo.create(this.id, trapLevel);
+                        var trapInfo = unitInfoHelper.create(this.id, trapLevel);
                         var trap = cardApi.byId(trapInfo);
     
                         // Shuffle the trap into opponent's deck

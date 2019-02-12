@@ -19,8 +19,8 @@ var cardApi = require('cardApi');
 var runeApi = require('runeApi');
 var cardInfo = require('cardInfo');
 var factions = require('factions');
-var unitInfo = require('unitInfo');
-var urlHelpers = require('urlHelpers');
+var unitInfoHelper = require('unitInfoHelper');
+var urlHelper = require('urlHelper');
 var cardUI = require('cardUI');
 var storageAPI = require('storageAPI');
 var dataUpdater = require('dataUpdater');
@@ -31,7 +31,7 @@ var delayTutorial = true;
 
 var fromInventory = false;
 var deck = [];
-deck.commander = unitInfo.defaultCommander;
+deck.commander = unitInfoHelper.defaultCommander;
 deck.deck = [];
 var inventory;
 var inventoryMode = false;
@@ -82,7 +82,7 @@ var $deck;
 var $cardSpace;
 
 var initDeckBuilder = function () {
-	if (!urlHelpers.paramDefined("fromSim")) {
+	if (!urlHelper.paramDefined("fromSim")) {
 		$("#header").load("templates/header.html", function () {
 			$("#header").show();
 			if (typeof showTutorial !== "undefined") {
@@ -153,7 +153,7 @@ var initDeckBuilder = function () {
 		}
 	});
 
-	inventory = (urlHelpers.paramValue('inventory') || inventory);
+	inventory = (urlHelper.paramValue('inventory') || inventory);
 
 	$("[name=rarity]").click(function (event) {
 		onClickFilter(event, filterRarity, event.altKey);
@@ -174,7 +174,7 @@ var initDeckBuilder = function () {
 		onClickFilter(event, filterDualFaction, event.altKey);
 	});
 
-	if (urlHelpers.paramDefined("spoilers") || urlHelpers.paramDefined("latestCards")) {
+	if (urlHelper.paramDefined("spoilers") || urlHelper.paramDefined("latestCards")) {
 		$("#loadingSplash").html("Checking for New Cards...");
 		updateGameData();
 	} else {
@@ -182,7 +182,7 @@ var initDeckBuilder = function () {
 		setTimeout(loadCards, 1);
 	}
 
-	if (urlHelpers.paramDefined("unlimited")) {
+	if (urlHelper.paramDefined("unlimited")) {
 		$deck = $("#deck");
 		toggleInventoryMode();
 	}
@@ -222,7 +222,7 @@ var setupPopups = function () {
 
 	$(".start-closed").accordion('option', 'active', false).show();
 
-	if (urlHelpers.paramDefined("spoilers")) {
+	if (urlHelper.paramDefined("spoilers")) {
 		$("#deck-container, #filter-container").accordion('option', 'active', false).show();
 	}
 
@@ -361,12 +361,12 @@ var drawAllCards = function () {
 
 var drawDeck = function () {
 
-	var hash = urlHelpers.paramValue('hash') || $("#hash").val();
+	var hash = urlHelper.paramValue('hash') || $("#hash").val();
 	if (hash) {
 		hash_changed(hash);
 	}
 
-	var name = urlHelpers.paramValue('name');
+	var name = urlHelper.paramValue('name');
 	if (name) {
 		setDeckName(name);
 	}
@@ -435,7 +435,7 @@ function duplicate(event, htmlCard) {
 		var unit = deck.deck[index - 1];
 		var clone = $htmlCard.clone();
 		clone.insertBefore($htmlCard.parent().children()[index]);
-		deck.deck.splice(index, 0, unitInfo.create(unit.id, unit.level, unit.runes || []));
+		deck.deck.splice(index, 0, unitInfoHelper.create(unit.id, unit.level, unit.runes || []));
 		updateHash();
 	}
 }
@@ -454,7 +454,7 @@ var drawCardList = function () {
 		inventory = base64.decodeHash(inventory);
 		var commander = inventory.commander;
 		inventory = inventory.deck;
-		if (commander && !unitInfo.areEqual(commander, unitInfo.defaultCommander)) {
+		if (commander && !unitInfoHelper.areEqual(commander, unitInfoHelper.defaultCommander)) {
 			inventory.push(commander);
 		}
 
@@ -467,7 +467,7 @@ var drawCardList = function () {
 			deck.deck[i] = removeFromInventory(unit);
 		}
 	} else {
-		if (urlHelpers.paramDefined('spoilers')) {
+		if (urlHelper.paramDefined('spoilers')) {
 			for (var id in spoilers) {
 				addUnitLevels(id);
 			}
@@ -504,7 +504,7 @@ function doDrawCardList(cardList, resetPage) {
 	var unique = 0;
 	for (var i = 0, len = cardList.length; i < len; i++) {
 		var unit = cardList[i];
-		if (!unitInfo.areEqual(unit, lastUnit)) unique++;
+		if (!unitInfoHelper.areEqual(unit, lastUnit)) unique++;
 		lastUnit = unit;
 	}
 	pages = Math.max(Math.ceil(unique / cards), 1);
@@ -633,7 +633,7 @@ var addUnitLevels = function (id) {
 	var card = allCards[id];
 	if (card) {
 		for (var level = 1; level <= card.maxLevel; level++) {
-			var unit = unitInfo.create(id, level);
+			var unit = unitInfoHelper.create(id, level);
 			units.push(unit);
 			if (showUpgrades || level == card.maxLevel) unitsShown.push(unit);
 		}
@@ -651,7 +651,7 @@ var resetDeck = function () {
 var disableTracking = false;
 var hash_changed = function (hash) {
 	if (fromInventory) {
-		if (!unitInfo.areEqual(deck.commander, unitInfo.defaultCommander)) unitsShown.push(deck.commander);
+		if (!unitInfoHelper.areEqual(deck.commander, unitInfoHelper.defaultCommander)) unitsShown.push(deck.commander);
 		unitsShown.push.apply(unitsShown, deck.deck);
 		redrawCardList(true);
 	}
@@ -665,7 +665,7 @@ var hash_changed = function (hash) {
 	if (!hash) deck.commander = null;
 
 	if (fromInventory) {
-		if (!unitInfo.areEqual(deck.commander, unitInfo.defaultCommander)) removeFromInventory(deck.commander);
+		if (!unitInfoHelper.areEqual(deck.commander, unitInfoHelper.defaultCommander)) removeFromInventory(deck.commander);
 		for (var i = 0; i < deck.deck.length; i++) {
 			removeFromInventory(deck.deck[i]);
 		}
@@ -721,7 +721,7 @@ var addUnitToDeck = function (unit, htmlCard) {
 		doDrawDeck();
 	} else*/ if (cardInfo.isCommander(unit.id)) {
 
-		if (unitInfo.areEqual(deck.commander, unit)) return;
+		if (unitInfoHelper.areEqual(deck.commander, unit)) return;
 		deck.commander = unit;
 		replaceCard($deck.find(".card").first(), $htmlCard);
 	} else {
@@ -766,7 +766,7 @@ function replaceCard(oldCard, newCard) {
 function removeFromInventory(unit) {
 	for (var i = 0; i < unitsShown.length; i++) {
 		var unit_i = unitsShown[i];
-		if (unitInfo.areEqual(unit, unit_i)) {
+		if (unitInfoHelper.areEqual(unit, unit_i)) {
 			var removed = unitsShown.splice(i, 1);
 			return removed[0];
 		}
@@ -781,9 +781,9 @@ var removeFromDeck = function (htmlCard) {
 	
 	if (index == 0) {
 		unit = deck.commander;
-		if (unitInfo.areEqual(unit, unitInfo.defaultCommander)) return;
-		deck.commander = unitInfo.defaultCommander;
-		var card = cardApi.byId(unitInfo.defaultCommander);
+		if (unitInfoHelper.areEqual(unit, unitInfoHelper.defaultCommander)) return;
+		deck.commander = unitInfoHelper.defaultCommander;
+		var card = cardApi.byId(unitInfoHelper.defaultCommander);
 		var captain = $(cardUI.cardToHtml(card));
 		replaceCard($htmlCard, captain);
 	} else {
@@ -2319,7 +2319,7 @@ function toggleInventoryMode() {
 
 function generateLink() {
 	var params = [];
-	var name = urlHelpers.paramValue('name');
+	var name = urlHelper.paramValue('name');
 	var hash = $("#hash").val();
 	if (name) {
 		params.push("name=" + name);
@@ -2328,12 +2328,12 @@ function generateLink() {
 		params.push("hash=" + hash);
 	}
 	if (inventory) {
-		params.push("inventory=" + base64.encodeHash({ commander: unitInfo.defaultCommander, deck: inventory }));
+		params.push("inventory=" + base64.encodeHash({ commander: unitInfoHelper.defaultCommander, deck: inventory }));
 	}
 	if (inventoryMode) {
 		params.push("unlimited");
 	}
-	if (urlHelpers.paramDefined("spoilers")) {
+	if (urlHelper.paramDefined("spoilers")) {
 		params.push("spoilers");
 	}
 	var link = "http://thesench.github.io/SIMSpellstone/DeckBuilder.html";
@@ -2412,14 +2412,14 @@ function externalData(hash, inventoryHash) {
   var CardDetailsCtrl = function ($scope, $window) {
     $window.cardDetailScope = $scope;
     if ($scope.id && $scope.level) {
-      $scope.unit = $window.unitInfo.create($scope.id, $scope.level),
+      $scope.unit = $window.unitInfoHelper.create($scope.id, $scope.level),
         $scope.card = getCardInfo($scope.unit);
     }
 
     $scope.setUnit = function (unit) {
       $scope.id = unit.id;
       $scope.level = unit.level;
-      $scope.unit = $window.unitInfo.create($scope.id, $scope.level),
+      $scope.unit = $window.unitInfoHelper.create($scope.id, $scope.level),
         $scope.card = getCardInfo($scope.unit);
       $scope.releaseDate = (function () {
         var hiddenUntil = $scope.card.hidden_until;
@@ -2799,9 +2799,9 @@ function externalData(hash, inventoryHash) {
 
 }(angular));
 ;define('tutorialScript', [
-    'urlHelpers'
+    'urlHelper'
 ], function getTutorialScript(
-    urlHelpers
+    urlHelper
 ) {
     'use strict';
 
@@ -2996,7 +2996,7 @@ function externalData(hash, inventoryHash) {
        }
     ];
 
-    var currentPage = urlHelpers.getCurrentPage();
+    var currentPage = urlHelper.getCurrentPage();
     for (var i = 0; i < tutorialParts.length; i++) {
         var part = tutorialParts[i];
         if (part.showFor && part.showFor !== currentPage) {

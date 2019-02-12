@@ -1,9 +1,9 @@
 define('base64', [
     'cardInfo',
-    'unitInfo'
+    'unitInfoHelper'
 ], function (
     cardInfo,
-    unitInfo
+    unitInfoHelper
 ) {
     "use strict";
 
@@ -75,7 +75,7 @@ define('base64', [
             unitID = Number(fusion + '' + unitID);
         }
     
-        var unit = unitInfo.create(unitID, level);
+        var unit = unitInfoHelper.create(unitID, level);
         if (runeID > 0) {
             unit.runes.push({
                 id: runeID + 5000
@@ -143,7 +143,7 @@ define('base64', [
 
         // Default commander to Elaria Captain if none found
         if (!current_deck.commander) {
-            current_deck.commander = unitInfo.defaultCommander;
+            current_deck.commander = unitInfoHelper.defaultCommander;
         }
 
         return current_deck;
