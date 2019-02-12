@@ -4,6 +4,7 @@
     var simController = require('simController');
     var matchStats = require('matchStats');
     var ui = require('ui');
+    var matchTimer = require('matchTimer');
 
     ui.getConfiguration = function getConfiguration() {
         return {
@@ -35,6 +36,12 @@
     simController.startsim();
 
     simController.endSimsCallback = function() {
-        console.log(matchStats.matchesWon / matchStats.matchesPlayed);
+        
+        var elapse = matchTimer.elapsed();
+        var simpersec = (matchStats.matchesPlayed / elapse).toFixed(2);
+        console.log("Sims per second:", simpersec);
+
+        var winrate = (matchStats.matchesWon / matchStats.matchesPlayed * 100).toFixed(2);
+        console.log("Winrate:", winrate);
     };
 })();

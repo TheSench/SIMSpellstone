@@ -50,6 +50,8 @@ var current_timeout;;define('matchStats', [], function() {
 
     return SIM_CONTROLLER;
 });;(function () {
+    var matchStats = require('matchStats');
+
     var noop = function () { };
 
     window.ga = noop;
@@ -72,6 +74,25 @@ var current_timeout;;define('matchStats', [], function() {
 
     define('log', [], function () {
         return {};
+    });
+
+    define('ui', [], function () {
+        return {
+            show: noop,
+            hide: noop,
+            getSelectedBattlegrounds: noop,
+            getSelectedMapBattlegrounds: noop,
+            generateLink: noop,
+            displayText: noop,
+            displayTurns: noop,
+            showWinrate: noop,
+            hideTable: noop,
+            setSimStatus: noop,
+            loadDeckBuilder: noop,
+            updateGameData: noop,
+            loadSavedDeck: noop,
+            toggleTheme: noop
+        };
     });
 })();;define('bgeApi', [
     'log',
@@ -3838,6 +3859,7 @@ var current_timeout;;define('matchStats', [], function() {
     var simController = require('simController');
     var matchStats = require('matchStats');
     var ui = require('ui');
+    var matchTimer = require('matchTimer');
 
     ui.getConfiguration = function getConfiguration() {
         return {
@@ -3869,6 +3891,12 @@ var current_timeout;;define('matchStats', [], function() {
     simController.startsim();
 
     simController.endSimsCallback = function() {
-        console.log(matchStats.matchesWon / matchStats.matchesPlayed);
+        
+        var elapse = matchTimer.elapsed();
+        var simpersec = (matchStats.matchesPlayed / elapse).toFixed(2);
+        console.log("Sims per second:", simpersec);
+
+        var winrate = (matchStats.matchesWon / matchStats.matchesPlayed * 100).toFixed(2);
+        console.log("Winrate:", winrate);
     };
 })();
