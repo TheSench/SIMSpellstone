@@ -17,7 +17,7 @@
         matchStats.matchesPlayed = 0;
         run_sims_batch = 0;
 
-        var config = simController.getConfiguration();
+        var config = ui.getConfiguration();
         SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
 
         ui.hide();
@@ -31,7 +31,7 @@
         matchStats.totalPoints = 0;
 
         ui.displayText(""); // Clear display
-        if (!SIMULATOR.user_controlled) {
+        if (!config.userControlled) {
             ui.hideTable();
             ui.setSimStatus("Initializing simulations...");
         } else {
@@ -68,7 +68,7 @@
             if (runSim(config, true)) {
                 simController.debug_end();
             }
-        } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
             runSim(config, true);
             simController.debug_end();
         } else if (SIMULATOR.remainingSims > 0) {
@@ -96,7 +96,7 @@
                     run_sims_batch = SIMULATOR.remainingSims;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(runSims, 1, config);
@@ -166,8 +166,8 @@
         // Increment total turn count
         matchStats.totalTurns += SIMULATOR.simulation_turns;
 
-        if (debugLog.enabled || play_debug) {
-            if (loss_debug) {
+        if (debugLog.enabled || debugLog.cardsPlayedOnly) {
+            if (debugLog.firstLoss) {
                 if (result === 'draw') {
                     debugLog.prependLines('Draw found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>DRAW</h1>');
@@ -182,7 +182,7 @@
                     debugLog.appendLines('', '<h1>LOSS</h1>');
                     SIMULATOR.remainingSims = 0;
                 }
-            } else if (win_debug) {
+            } else if (debugLog.firstWin) {
                 if (result && result !== 'draw') {
                     debugLog.prependLines('Win found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>WIN</h1>');
@@ -193,7 +193,7 @@
                         debugLog.appendLines('No wins found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 }
-            } else if (mass_debug) {
+            } else if (debugLog.massDebug) {
                 debugLog.appendLines('');
                 if (result === 'draw') {
                     debugLog.appendLines('<h1>DRAW</h1>');
@@ -204,7 +204,7 @@
                 }
             }
 
-            if (mass_debug && SIMULATOR.remainingSims) {
+            if (debugLog.massDebug && SIMULATOR.remainingSims) {
                 debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
             }
         }

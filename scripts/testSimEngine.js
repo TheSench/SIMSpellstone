@@ -3,19 +3,17 @@
 
     var simController = require('simController');
     var matchStats = require('matchStats');
+    var ui = require('ui');
 
-    simController.getConfiguration = function getConfiguration() {
+    ui.getConfiguration = function getConfiguration() {
         return {
-            auto_mode: undefined,
+            userControlled: false,
             cpuExactOrder: false,
             cpuHash: "QpLQAQcHQBA3KQBAiYQBgsRQBQHVQBIC!wAoJJQB",
             cpuOrdered: false,
             enemybges: "",
-            loss_debug: false,
             mapbges: "",
-            mass_debug: false,
             missionLevel: "7",
-            play_debug: false,
             playerExactOrder: false,
             playerHash: "QpLQAQcHQBA3KQBAiYQBgsRQBQHVQBIC!wAoJJQB",
             playerOrdered: false,
@@ -30,8 +28,7 @@
             surgeMode: false,
             tournamentMode: false,
             towerLevel: "18",
-            towerType: "501",
-            win_debug: false
+            towerType: "501"
         };
     };
 

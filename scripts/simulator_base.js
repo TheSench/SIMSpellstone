@@ -11,7 +11,6 @@ var SIMULATOR = {};
 	var animations = require('animations');
     var simController = require('simController');
     var ui = require('ui');
-    var config = require('config');
 
 	var max_turns = 100;
 	var playerDeckCached;
@@ -36,7 +35,7 @@ var SIMULATOR = {};
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((debugLog.enabled || play_debug) && !quiet) {
+		if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !quiet) {
 			debugLog.appendLines(log.name(field[p].commander) + ' plays ' + log.name(card));
 		}
 
@@ -1700,7 +1699,7 @@ var SIMULATOR = {};
 		if (config.playerOrdered && !config.playerExactOrder) deck.player.ordered = loadDeck.copyCardList(deck.player.deck);
 		if (config.cpuOrdered && !config.cpuExactOrder) deck.cpu.ordered = loadDeck.copyCardList(deck.cpu.deck);
 
-		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
+		deck.player.chooseCard = (config.userControlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
 			: config.playerOrdered ? chooseCardOrdered           			// Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     					// Player AI falls back on picking a random card
 
@@ -1878,7 +1877,7 @@ var SIMULATOR = {};
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				if (debugLog.enabled) debugLog.appendLines('<u>Turn ' + turn + ' ends</u><br><br></div>');
+				if (debugLog.enabled) debugLog.append('<u>Turn ' + turn + ' ends</u></br></br></div>');
 				return true;
 			}
 		}
@@ -1907,7 +1906,7 @@ var SIMULATOR = {};
 	function debugDraw(commander, deck, i) {
 		var card = deck[i];
 		if (card) {
-			return commander + ' draws ' + log.name(card, true) + '<br/>';
+			return commander + ' draws ' + log.name(card, true) + '';
 		} else {
 			return '';
 		}
@@ -1927,7 +1926,7 @@ var SIMULATOR = {};
 		if (debugLog.enabled) {
 			var commander_p = log.name(field[p]['commander']);
 			var deck_p = deck[p].deck;
-			debugLog.appendLines('<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u>');
+			debugLog.appendLines('<div id="turn_' + turn + '" class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u>');
 
 			if (turn <= 2) {
 				debugLog.appendLines(debugDraw(commander_p, deck_p, 0));
@@ -2276,7 +2275,7 @@ var SIMULATOR = {};
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		removeDead();
 
-		if (debugLog.enabled) debugLog.appendLines('<u>Turn ' + turn + ' ends</u><br><br></div>');
+		if (debugLog.enabled) debugLog.append('<u>Turn ' + turn + ' ends</u></br></br></div>');
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -2524,13 +2523,14 @@ var SIMULATOR = {};
 		damage += enfeeble;
 
 		if (debugLog.enabled) {
-			debugLog.appendLines('<u>(Attack: +' + current_assault.attack);
-			if (current_assault.attack_berserk) debugLog.appendLines(' Berserk: +' + current_assault.attack_berserk);
-			if (current_assault.attack_valor) debugLog.appendLines(' Valor: +' + current_assault.attack_valor);
-			if (current_assault.attack_rally) debugLog.appendLines(' Rally: +' + current_assault.attack_rally);
-			if (current_assault.attack_weaken) debugLog.appendLines(' Weaken: -' + current_assault.attack_weaken);
-			if (current_assault.attack_corroded) debugLog.appendLines(' Corrosion: -' + current_assault.attack_corroded);
-			if (enfeeble) debugLog.appendLines(' Enfeeble: +' + enfeeble);
+			debugLog.append('<u>(Attack: +' + current_assault.attack);
+			if (current_assault.attack_berserk) debugLog.append(' Berserk: +' + current_assault.attack_berserk);
+			if (current_assault.attack_valor) debugLog.append(' Valor: +' + current_assault.attack_valor);
+			if (current_assault.attack_rally) debugLog.append(' Rally: +' + current_assault.attack_rally);
+			if (current_assault.attack_weaken) debugLog.append(' Weaken: -' + current_assault.attack_weaken);
+			if (current_assault.attack_corroded) debugLog.append(' Corrosion: -' + current_assault.attack_corroded);
+			if (enfeeble) debugLog.append(' Enfeeble: +' + enfeeble);
+			debugLog.append('');
 		}
 
 		// Pierce
@@ -2551,17 +2551,17 @@ var SIMULATOR = {};
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debugLog.enabled) {
-				debugLog.appendLines(' Barrier: -' + protect);
+				debugLog.append(' Barrier: -' + protect);
 			}
 			// Remove pierce from Barrier
 			if (pierce) {
 				if (pierce >= protect) {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + protect);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + protect);
 					pierce -= protect;
 					protect = 0;
 					target.protected = 0;
 				} else {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
 					protect -= pierce;
 					target.protected -= pierce;
 					// Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
@@ -2583,15 +2583,15 @@ var SIMULATOR = {};
 		if (shrouded) {
 			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
 			if (debugLog.enabled) {
-				debugLog.appendLines(' Shroud: -' + shrouded);
+				debugLog.append(' Shroud: -' + shrouded);
 			}
 			// Remove pierce from Shroud
 			if (pierce) {
 				if (pierce > shrouded) {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + shrouded);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + shrouded);
 					shrouded = 0;
 				} else {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
 					shrouded -= pierce;
 				}
 			}
@@ -2600,15 +2600,15 @@ var SIMULATOR = {};
 		if (armor) {
 			armor += unitInfo.getEnhancement(target, 'armored', armor);
 			if (debugLog.enabled) {
-				debugLog.appendLines(' Armor: -' + armor);
+				debugLog.append(' Armor: -' + armor);
 			}
 			// Remove pierce from Armor
 			if (pierce) {
 				if (pierce > armor) {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + armor);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + armor);
 					armor = 0;
 				} else {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
 					armor -= pierce;
 				}
 			}
@@ -2623,7 +2623,7 @@ var SIMULATOR = {};
 
 		// Deal damage to target
 		doDamage(current_assault, target, damage, null, function (source, target, amount) {
-			debugLog.appendLines(log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage');
+			debugLog.append(log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage');
 			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 		});
 

@@ -7,7 +7,8 @@ define('ui', [
 	'debugLog',
 	'storageAPI',
 	'dataUpdater',
-	'matchStats'
+	'matchStats',
+	'animations'
 ], function (
 	base64,
 	urlHelpers,
@@ -15,7 +16,8 @@ define('ui', [
 	debugLog,
 	storageAPI,
 	dataUpdater,
-	matchStats
+	matchStats,
+	animations
 ) {
 	var api = {
 		show: showUI,
@@ -31,7 +33,8 @@ define('ui', [
 		loadDeckBuilder: loadDeckBuilder,
 		updateGameData: updateGameData,
 		loadSavedDeck: loadSavedDeck,
-		toggleTheme: toggleTheme
+		toggleTheme: toggleTheme,
+		getConfiguration: getConfiguration
 	};
 
 	var loadDeckDialog;
@@ -72,7 +75,11 @@ define('ui', [
 		displayText("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + errorDescription + "</blockquote></textarea>");
 
 		// Stop the recursion if any
-		if (current_timeout) clearTimeout(current_timeout);
+		try {
+			simController.stopsim();
+		} catch (err) {
+			// Swallow
+		}
 	});
 
 	function _toggleUI(display) {
@@ -510,6 +517,85 @@ define('ui', [
 		}
 		dark = !dark;
 	}
+
+	function getConfiguration() {
+        var playerHash = $('#deck1').val();
+        var playerOrdered = $('#ordered').is(':checked');
+        var playerExactOrder = $('#exactorder').is(':checked');
+
+        var cpuHash = $('#deck2').val();
+        var selectedCampaign = $('#campaign').val();
+        var selectedMission = $('#mission').val();
+        var missionLevel = $('#mission_level').val();
+        var selectedRaid = $('#raid').val();
+        var raidLevel = $('#raid_level').val();
+        var cpuOrdered = $('#ordered2').is(':checked');
+        var cpuExactOrder = $('#exactorder2').is(':checked');
+        var surgeMode = $('#surge').is(':checked');
+        var pvpAI = (!cpuHash && (selectedMission || selectedRaid)); // PvE decks do not use "Smart AI"
+
+        var siegeMode = $('#siege').is(':checked');
+        var towerLevel = $('#tower_level').val();
+        var towerType = $('#tower_type').val();
+
+        var selectedBges = '';
+        var selfbges = '';
+        var enemybges = '';
+        var mapbges = '';
+        if (BATTLEGROUNDS) {
+            selectedBges = getSelectedBattlegrounds();
+            selfbges = getSelectedBattlegrounds("self-");
+            enemybges = getSelectedBattlegrounds("enemy-");
+            mapbges = (selectedMission ? getSelectedMapBattlegrounds() : "");
+        }
+
+        var simsToRun = $('#sims').val() || 1;
+
+        debugLog.enabled = $('#debug').is(':checked');
+        if(debugLog.enabled) {
+            debugLog.cardsPlayedOnly = $('#play_debug').is(':checked');
+            if (debugLog.cardsPlayedOnly) debugLog.enabled = false;
+            debugLog.massDebug = $('#mass_debug').is(':checked');
+            debugLog.firstWin = $('#win_debug').is(':checked');
+            debugLog.firstLoss = $('#loss_debug').is(':checked');
+        }
+        animations.areShown = $('#animations').is(':checked');
+
+        var userControlled = false;
+        if ($('#auto_mode').length) {
+            userControlled = !$('#auto_mode').is(':checked');
+            SIMULATOR.user_controlled = userControlled;
+        }
+
+        // Not currently in UI - attacker's first card has +1 delay
+        var tournamentMode = $("#tournament").is(":checked");
+
+        return {
+            playerHash: playerHash,
+            playerOrdered: playerOrdered,
+            playerExactOrder: playerExactOrder,
+            cpuHash: cpuHash,
+            selectedCampaign: selectedCampaign,
+            selectedMission: selectedMission,
+            missionLevel: missionLevel,
+            selectedRaid: selectedRaid,
+            raidLevel: raidLevel,
+            cpuOrdered: cpuOrdered,
+            cpuExactOrder: cpuExactOrder,
+            surgeMode: surgeMode,
+            siegeMode: siegeMode,
+            towerLevel: towerLevel,
+            towerType: towerType,
+            selectedBges: selectedBges,
+            selfbges: selfbges,
+            enemybges: enemybges,
+            mapbges: mapbges,
+            simsToRun: simsToRun,
+            userControlled: userControlled,
+            tournamentMode: tournamentMode,
+            pvpAI: pvpAI
+        };
+    }
 
 	$(function () {
 		loadDeckDialog = $("#loadDeckDialog").dialog({

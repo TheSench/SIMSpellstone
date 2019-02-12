@@ -6,8 +6,7 @@ define('startup', [
 	'cardUI',
 	'loadDeck',
 	'loadCardCache',
-	'ui',
-	'config'
+	'ui'
 ], function (
 	base64,
 	urlHelpers,
@@ -16,8 +15,7 @@ define('startup', [
 	cardUI,
 	loadDeck,
 	loadCardCache,
-	ui,
-	config
+	ui
 ) {
 	"use strict";
 
@@ -82,7 +80,7 @@ define('startup', [
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!urlHelpers.paramDefined("seedtest")) {
-            var config = simController.getConfiguration();
+            var config = ui.getConfiguration();
             var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
@@ -181,9 +179,6 @@ define('startup', [
 
 		$('#ordered2').prop("checked", urlHelpers.paramDefined("ordered2"));
 		$('#exactorder2').prop("checked", urlHelpers.paramDefined("exactorder2"));
-		if (urlHelpers.paramDefined("randomAI")) {
-			config.pvpAI = false;
-		}
 
 		var locationID = urlHelpers.paramValue('location');
 		var campaignID = urlHelpers.paramValue('campaign');

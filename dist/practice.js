@@ -1,18 +1,7 @@
-define('config', [], function() {
-   return {
-      pvpAI: false
-   };
-});
-
 // Initialize global variables
 var battle_history = '';
-var mass_debug = false;
-var loss_debug = false;
-var win_debug = false;
-var play_debug = false;
 var closeDiv = false;
-var current_timeout;
-var battleground = [];;define('matchStats', [], function() {
+var current_timeout;;define('matchStats', [], function() {
     return {
        matchesPlayed: 0,
        matchesWon: 0,
@@ -740,7 +729,8 @@ define('ui', [
 	'debugLog',
 	'storageAPI',
 	'dataUpdater',
-	'matchStats'
+	'matchStats',
+	'animations'
 ], function (
 	base64,
 	urlHelpers,
@@ -748,7 +738,8 @@ define('ui', [
 	debugLog,
 	storageAPI,
 	dataUpdater,
-	matchStats
+	matchStats,
+	animations
 ) {
 	var api = {
 		show: showUI,
@@ -764,7 +755,8 @@ define('ui', [
 		loadDeckBuilder: loadDeckBuilder,
 		updateGameData: updateGameData,
 		loadSavedDeck: loadSavedDeck,
-		toggleTheme: toggleTheme
+		toggleTheme: toggleTheme,
+		getConfiguration: getConfiguration
 	};
 
 	var loadDeckDialog;
@@ -805,7 +797,11 @@ define('ui', [
 		displayText("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + errorDescription + "</blockquote></textarea>");
 
 		// Stop the recursion if any
-		if (current_timeout) clearTimeout(current_timeout);
+		try {
+			simController.stopsim();
+		} catch (err) {
+			// Swallow
+		}
 	});
 
 	function _toggleUI(display) {
@@ -1244,6 +1240,85 @@ define('ui', [
 		dark = !dark;
 	}
 
+	function getConfiguration() {
+        var playerHash = $('#deck1').val();
+        var playerOrdered = $('#ordered').is(':checked');
+        var playerExactOrder = $('#exactorder').is(':checked');
+
+        var cpuHash = $('#deck2').val();
+        var selectedCampaign = $('#campaign').val();
+        var selectedMission = $('#mission').val();
+        var missionLevel = $('#mission_level').val();
+        var selectedRaid = $('#raid').val();
+        var raidLevel = $('#raid_level').val();
+        var cpuOrdered = $('#ordered2').is(':checked');
+        var cpuExactOrder = $('#exactorder2').is(':checked');
+        var surgeMode = $('#surge').is(':checked');
+        var pvpAI = (!cpuHash && (selectedMission || selectedRaid)); // PvE decks do not use "Smart AI"
+
+        var siegeMode = $('#siege').is(':checked');
+        var towerLevel = $('#tower_level').val();
+        var towerType = $('#tower_type').val();
+
+        var selectedBges = '';
+        var selfbges = '';
+        var enemybges = '';
+        var mapbges = '';
+        if (BATTLEGROUNDS) {
+            selectedBges = getSelectedBattlegrounds();
+            selfbges = getSelectedBattlegrounds("self-");
+            enemybges = getSelectedBattlegrounds("enemy-");
+            mapbges = (selectedMission ? getSelectedMapBattlegrounds() : "");
+        }
+
+        var simsToRun = $('#sims').val() || 1;
+
+        debugLog.enabled = $('#debug').is(':checked');
+        if(debugLog.enabled) {
+            debugLog.cardsPlayedOnly = $('#play_debug').is(':checked');
+            if (debugLog.cardsPlayedOnly) debugLog.enabled = false;
+            debugLog.massDebug = $('#mass_debug').is(':checked');
+            debugLog.firstWin = $('#win_debug').is(':checked');
+            debugLog.firstLoss = $('#loss_debug').is(':checked');
+        }
+        animations.areShown = $('#animations').is(':checked');
+
+        var userControlled = false;
+        if ($('#auto_mode').length) {
+            userControlled = !$('#auto_mode').is(':checked');
+            SIMULATOR.user_controlled = userControlled;
+        }
+
+        // Not currently in UI - attacker's first card has +1 delay
+        var tournamentMode = $("#tournament").is(":checked");
+
+        return {
+            playerHash: playerHash,
+            playerOrdered: playerOrdered,
+            playerExactOrder: playerExactOrder,
+            cpuHash: cpuHash,
+            selectedCampaign: selectedCampaign,
+            selectedMission: selectedMission,
+            missionLevel: missionLevel,
+            selectedRaid: selectedRaid,
+            raidLevel: raidLevel,
+            cpuOrdered: cpuOrdered,
+            cpuExactOrder: cpuExactOrder,
+            surgeMode: surgeMode,
+            siegeMode: siegeMode,
+            towerLevel: towerLevel,
+            towerType: towerType,
+            selectedBges: selectedBges,
+            selfbges: selfbges,
+            enemybges: enemybges,
+            mapbges: mapbges,
+            simsToRun: simsToRun,
+            userControlled: userControlled,
+            tournamentMode: tournamentMode,
+            pvpAI: pvpAI
+        };
+    }
+
 	$(function () {
 		loadDeckDialog = $("#loadDeckDialog").dialog({
 			autoOpen: false,
@@ -1277,103 +1352,19 @@ define('ui', [
 	return api;
 });;define('simController', [
     'matchTimer',
-    'debugLog',
-    'animations',
     'ui'
 ], function (
     matchTimer,
-    debugLog,
-    animations,
     ui
 ) {
     "use strict";
 
     var SIM_CONTROLLER = {
-        getConfiguration: getConfiguration,
         debug_end: debug_end,
 
         endSimsCallback: null,
         stop_sims_callback: null
     };
-
-    function getConfiguration() {
-        var playerHash = $('#deck1').val();
-        var playerOrdered = $('#ordered').is(':checked');
-        var playerExactOrder = $('#exactorder').is(':checked');
-
-        var cpuHash = $('#deck2').val();
-        var selectedCampaign = $('#campaign').val();
-        var selectedMission = $('#mission').val();
-        var missionLevel = $('#mission_level').val();
-        var selectedRaid = $('#raid').val();
-        var raidLevel = $('#raid_level').val();
-        var cpuOrdered = $('#ordered2').is(':checked');
-        var cpuExactOrder = $('#exactorder2').is(':checked');
-        var surgeMode = $('#surge').is(':checked');
-
-        var siegeMode = $('#siege').is(':checked');
-        var towerLevel = $('#tower_level').val();
-        var towerType = $('#tower_type').val();
-
-        var selectedBges = '';
-        var selfbges = '';
-        var enemybges = '';
-        var mapbges = '';
-        if (BATTLEGROUNDS) {
-            selectedBges = ui.getSelectedBattlegrounds();
-            selfbges = ui.getSelectedBattlegrounds("self-");
-            enemybges = ui.getSelectedBattlegrounds("enemy-");
-            mapbges = (selectedMission ? ui.getSelectedMapBattlegrounds() : "");
-        }
-
-        var simsToRun = $('#sims').val() || 1;
-
-        debugLog.enabled = $('#debug').is(':checked');
-        play_debug = debugLog.enabled && $('#play_debug').is(':checked');
-        if (play_debug) debugLog.enabled = false;
-        mass_debug = $('#mass_debug').is(':checked');
-        win_debug = $('#win_debug').is(':checked');
-        loss_debug = $('#loss_debug').is(':checked');
-        animations.areShown = $('#animations').is(':checked');
-
-        if ($('#auto_mode').length) {
-            var auto_mode = $('#auto_mode').is(':checked');
-            SIMULATOR.user_controlled = !auto_mode;
-        }
-
-        // Not currently in UI - attacker's first card has +1 delay
-        var tournamentMode = $("#tournament").is(":checked");
-
-        return {
-            playerHash: playerHash,
-            playerOrdered: playerOrdered,
-            playerExactOrder: playerExactOrder,
-            cpuHash: cpuHash,
-            selectedCampaign: selectedCampaign,
-            selectedMission: selectedMission,
-            missionLevel: missionLevel,
-            selectedRaid: selectedRaid,
-            raidLevel: raidLevel,
-            cpuOrdered: cpuOrdered,
-            cpuExactOrder: cpuExactOrder,
-            surgeMode: surgeMode,
-            siegeMode: siegeMode,
-            towerLevel: towerLevel,
-            towerType: towerType,
-            selectedBges: selectedBges,
-            selfbges: selfbges,
-            enemybges: enemybges,
-            mapbges: mapbges,
-            simsToRun: simsToRun,
-            play_debug: play_debug,
-            mass_debug: mass_debug,
-            win_debug: win_debug,
-            loss_debug: loss_debug,
-            auto_mode: auto_mode,
-            tournamentMode: tournamentMode,
-            pvpAI: false // TODO: Define this
-        };
-    }
 
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
@@ -1419,8 +1410,7 @@ define('ui', [
 	'cardUI',
 	'loadDeck',
 	'loadCardCache',
-	'ui',
-	'config'
+	'ui'
 ], function (
 	base64,
 	urlHelpers,
@@ -1429,8 +1419,7 @@ define('ui', [
 	cardUI,
 	loadDeck,
 	loadCardCache,
-	ui,
-	config
+	ui
 ) {
 	"use strict";
 
@@ -1495,7 +1484,7 @@ define('ui', [
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!urlHelpers.paramDefined("seedtest")) {
-            var config = simController.getConfiguration();
+            var config = ui.getConfiguration();
             var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
@@ -1594,9 +1583,6 @@ define('ui', [
 
 		$('#ordered2').prop("checked", urlHelpers.paramDefined("ordered2"));
 		$('#exactorder2').prop("checked", urlHelpers.paramDefined("exactorder2"));
-		if (urlHelpers.paramDefined("randomAI")) {
-			config.pvpAI = false;
-		}
 
 		var locationID = urlHelpers.paramValue('location');
 		var campaignID = urlHelpers.paramValue('campaign');
@@ -1838,7 +1824,7 @@ for(var id in FUSIONS) {
         matchStats.matchesPlayed = 0;
         run_sims_batch = 0;
 
-        var config = simController.getConfiguration();
+        var config = ui.getConfiguration();
         SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
 
         ui.hide();
@@ -1852,7 +1838,7 @@ for(var id in FUSIONS) {
         matchStats.totalPoints = 0;
 
         ui.displayText(""); // Clear display
-        if (!SIMULATOR.user_controlled) {
+        if (!config.userControlled) {
             ui.hideTable();
             ui.setSimStatus("Initializing simulations...");
         } else {
@@ -1889,7 +1875,7 @@ for(var id in FUSIONS) {
             if (runSim(config, true)) {
                 simController.debug_end();
             }
-        } else if ((debugLog.enabled || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
             runSim(config, true);
             simController.debug_end();
         } else if (SIMULATOR.remainingSims > 0) {
@@ -1917,7 +1903,7 @@ for(var id in FUSIONS) {
                     run_sims_batch = SIMULATOR.remainingSims;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debugLog.enabled || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(runSims, 1, config);
@@ -1987,8 +1973,8 @@ for(var id in FUSIONS) {
         // Increment total turn count
         matchStats.totalTurns += SIMULATOR.simulation_turns;
 
-        if (debugLog.enabled || play_debug) {
-            if (loss_debug) {
+        if (debugLog.enabled || debugLog.cardsPlayedOnly) {
+            if (debugLog.firstLoss) {
                 if (result === 'draw') {
                     debugLog.prependLines('Draw found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>DRAW</h1>');
@@ -2003,7 +1989,7 @@ for(var id in FUSIONS) {
                     debugLog.appendLines('', '<h1>LOSS</h1>');
                     SIMULATOR.remainingSims = 0;
                 }
-            } else if (win_debug) {
+            } else if (debugLog.firstWin) {
                 if (result && result !== 'draw') {
                     debugLog.prependLines('Win found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
                     debugLog.appendLines('', '<h1>WIN</h1>');
@@ -2014,7 +2000,7 @@ for(var id in FUSIONS) {
                         debugLog.appendLines('No wins found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
                     }
                 }
-            } else if (mass_debug) {
+            } else if (debugLog.massDebug) {
                 debugLog.appendLines('');
                 if (result === 'draw') {
                     debugLog.appendLines('<h1>DRAW</h1>');
@@ -2025,7 +2011,7 @@ for(var id in FUSIONS) {
                 }
             }
 
-            if (mass_debug && SIMULATOR.remainingSims) {
+            if (debugLog.massDebug && SIMULATOR.remainingSims) {
                 debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
             }
         }
@@ -2049,7 +2035,6 @@ for(var id in FUSIONS) {
 	var animations = require('animations');
     var simController = require('simController');
     var ui = require('ui');
-    var config = require('config');
 
 	var max_turns = 100;
 	var playerDeckCached;
@@ -2074,7 +2059,7 @@ for(var id in FUSIONS) {
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((debugLog.enabled || play_debug) && !quiet) {
+		if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !quiet) {
 			debugLog.appendLines(log.name(field[p].commander) + ' plays ' + log.name(card));
 		}
 
@@ -3738,7 +3723,7 @@ for(var id in FUSIONS) {
 		if (config.playerOrdered && !config.playerExactOrder) deck.player.ordered = loadDeck.copyCardList(deck.player.deck);
 		if (config.cpuOrdered && !config.cpuExactOrder) deck.cpu.ordered = loadDeck.copyCardList(deck.cpu.deck);
 
-		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
+		deck.player.chooseCard = (config.userControlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
 			: config.playerOrdered ? chooseCardOrdered           			// Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     					// Player AI falls back on picking a random card
 
@@ -3916,7 +3901,7 @@ for(var id in FUSIONS) {
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				if (debugLog.enabled) debugLog.appendLines('<u>Turn ' + turn + ' ends</u><br><br></div>');
+				if (debugLog.enabled) debugLog.append('<u>Turn ' + turn + ' ends</u></br></br></div>');
 				return true;
 			}
 		}
@@ -3945,7 +3930,7 @@ for(var id in FUSIONS) {
 	function debugDraw(commander, deck, i) {
 		var card = deck[i];
 		if (card) {
-			return commander + ' draws ' + log.name(card, true) + '<br/>';
+			return commander + ' draws ' + log.name(card, true) + '';
 		} else {
 			return '';
 		}
@@ -3965,7 +3950,7 @@ for(var id in FUSIONS) {
 		if (debugLog.enabled) {
 			var commander_p = log.name(field[p]['commander']);
 			var deck_p = deck[p].deck;
-			debugLog.appendLines('<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u>');
+			debugLog.appendLines('<div id="turn_' + turn + '" class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u>');
 
 			if (turn <= 2) {
 				debugLog.appendLines(debugDraw(commander_p, deck_p, 0));
@@ -4314,7 +4299,7 @@ for(var id in FUSIONS) {
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		removeDead();
 
-		if (debugLog.enabled) debugLog.appendLines('<u>Turn ' + turn + ' ends</u><br><br></div>');
+		if (debugLog.enabled) debugLog.append('<u>Turn ' + turn + ' ends</u></br></br></div>');
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -4562,13 +4547,14 @@ for(var id in FUSIONS) {
 		damage += enfeeble;
 
 		if (debugLog.enabled) {
-			debugLog.appendLines('<u>(Attack: +' + current_assault.attack);
-			if (current_assault.attack_berserk) debugLog.appendLines(' Berserk: +' + current_assault.attack_berserk);
-			if (current_assault.attack_valor) debugLog.appendLines(' Valor: +' + current_assault.attack_valor);
-			if (current_assault.attack_rally) debugLog.appendLines(' Rally: +' + current_assault.attack_rally);
-			if (current_assault.attack_weaken) debugLog.appendLines(' Weaken: -' + current_assault.attack_weaken);
-			if (current_assault.attack_corroded) debugLog.appendLines(' Corrosion: -' + current_assault.attack_corroded);
-			if (enfeeble) debugLog.appendLines(' Enfeeble: +' + enfeeble);
+			debugLog.append('<u>(Attack: +' + current_assault.attack);
+			if (current_assault.attack_berserk) debugLog.append(' Berserk: +' + current_assault.attack_berserk);
+			if (current_assault.attack_valor) debugLog.append(' Valor: +' + current_assault.attack_valor);
+			if (current_assault.attack_rally) debugLog.append(' Rally: +' + current_assault.attack_rally);
+			if (current_assault.attack_weaken) debugLog.append(' Weaken: -' + current_assault.attack_weaken);
+			if (current_assault.attack_corroded) debugLog.append(' Corrosion: -' + current_assault.attack_corroded);
+			if (enfeeble) debugLog.append(' Enfeeble: +' + enfeeble);
+			debugLog.append('');
 		}
 
 		// Pierce
@@ -4589,17 +4575,17 @@ for(var id in FUSIONS) {
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debugLog.enabled) {
-				debugLog.appendLines(' Barrier: -' + protect);
+				debugLog.append(' Barrier: -' + protect);
 			}
 			// Remove pierce from Barrier
 			if (pierce) {
 				if (pierce >= protect) {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + protect);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + protect);
 					pierce -= protect;
 					protect = 0;
 					target.protected = 0;
 				} else {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
 					protect -= pierce;
 					target.protected -= pierce;
 					// Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
@@ -4621,15 +4607,15 @@ for(var id in FUSIONS) {
 		if (shrouded) {
 			shrouded += unitInfo.getEnhancement(target, 'stasis', shrouded);
 			if (debugLog.enabled) {
-				debugLog.appendLines(' Shroud: -' + shrouded);
+				debugLog.append(' Shroud: -' + shrouded);
 			}
 			// Remove pierce from Shroud
 			if (pierce) {
 				if (pierce > shrouded) {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + shrouded);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + shrouded);
 					shrouded = 0;
 				} else {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
 					shrouded -= pierce;
 				}
 			}
@@ -4638,15 +4624,15 @@ for(var id in FUSIONS) {
 		if (armor) {
 			armor += unitInfo.getEnhancement(target, 'armored', armor);
 			if (debugLog.enabled) {
-				debugLog.appendLines(' Armor: -' + armor);
+				debugLog.append(' Armor: -' + armor);
 			}
 			// Remove pierce from Armor
 			if (pierce) {
 				if (pierce > armor) {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + armor);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + armor);
 					armor = 0;
 				} else {
-					if (debugLog.enabled) debugLog.appendLines(' Pierce: +' + pierce);
+					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
 					armor -= pierce;
 				}
 			}
@@ -4661,7 +4647,7 @@ for(var id in FUSIONS) {
 
 		// Deal damage to target
 		doDamage(current_assault, target, damage, null, function (source, target, amount) {
-			debugLog.appendLines(log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage');
+			debugLog.append(log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage');
 			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 		});
 

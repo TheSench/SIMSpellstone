@@ -146,62 +146,16 @@ module.exports = function (grunt) {
             }
         },
         uglify: {
-            options: {
-                // the banner is inserted at the top of the output
-            },
-            /*
-            data: {
+            main: {
                 options: {
                     mangle: false,
-                    sourceMap: false
-                },
-                files: {
-                    'dist/data.min.js': ['<%= concat.data.dest %>']
-                }
-            },
-            */
-            shared: {
-                options: {
-                    mangle: true,
                     sourceMap: true
                 },
                 files: {
-                    'dist/shared.min.js': ['<%= concat.shared.dest %>']
-                }
-            },
-            deckbuilder: {
-                options: {
-                    mangle: true,
-                    sourceMap: true
-                },
-                files: {
-                    'dist/deckbuilder.min.js': ['<%= concat.deckbuilder.dest %>']
-                }
-            },
-            engineTest: {
-                options: {
-                    mangle: true,
-                    sourceMap: true
-                },
-                files: {
-                    'dist/engineTest.min.js': ['<%= concat.engineTest.dest %>']
-                }
-            },
-            simulator: {
-                options: {
-                    mangle: true,
-                    sourceMap: true
-                },
-                files: {
-                    'dist/simulator.min.js': ['<%= concat.simulator.dest %>']
-                }
-            },
-            practice: {
-                options: {
-                    mangle: true,
-                    sourceMap: true
-                },
-                files: {
+                    'dist/shared.min.js': ['<%= concat.shared.dest %>'],
+                    'dist/deckbuilder.min.js': ['<%= concat.deckbuilder.dest %>'],
+                    'dist/engineTest.min.js': ['<%= concat.engineTest.dest %>'],
+                    'dist/simulator.min.js': ['<%= concat.simulator.dest %>'],
                     'dist/practice.min.js': ['<%= concat.practice.dest %>']
                 }
             }
@@ -399,7 +353,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-newer');
 
     grunt.registerTask('concat-main', ['newer:concat:shared', 'newer:concat:deckbuilder', 'newer:concat:simulator', 'newer:concat:practice', 'newer:concat:engineTest']);
-    grunt.registerTask('uglify-main', ['newer:uglify:shared', 'newer:uglify:deckbuilder', 'newer:uglify:simulator', 'newer:uglify:practice', 'newer:uglify:engineTest']);
+    grunt.registerTask('uglify-main', ['newer:uglify:main']);
 
     grunt.registerTask('full-build', ['clean', /*'jshint',*/ 'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy:html', 'cacheBust']);
     grunt.registerTask('build-main', ['concat-main', 'uglify-main', 'newer:copy:html', 'copy:html', 'cacheBust']);
