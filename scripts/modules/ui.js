@@ -8,7 +8,8 @@ define('ui', [
 	'storageAPI',
 	'dataUpdater',
 	'matchStats',
-	'animations'
+	'animations',
+	'simController'
 ], function (
 	base64,
 	urlHelper,
@@ -17,7 +18,8 @@ define('ui', [
 	storageAPI,
 	dataUpdater,
 	matchStats,
-	animations
+	animations,
+	simController
 ) {
 	var api = {
 		show: showUI,
@@ -36,6 +38,8 @@ define('ui', [
 		toggleTheme: toggleTheme,
 		getConfiguration: getConfiguration
 	};
+
+	simController.onDebugEnd = displayDebugEnd;
 
 	var loadDeckDialog;
 
@@ -133,9 +137,28 @@ define('ui', [
 		return selectedBattlegrounds;
 	}
 
+	function displayDebugEnd(result, matchPoints) {
+		var msg = '';
+        if (matchPoints !== undefined) {
+            msg = ' (' + SIMULATOR.calculatePoints() + ' points)';
+        }
+        if (result === 'draw') {
+            msg = '<br><h1>DRAW' + msg + '</h1><br>';
+        } else if (result) {
+            msg = '<br><h1>WIN' + msg + '</h1><br>';
+        } else {
+            msg = '<br><h1>LOSS' + msg + '</h1><br>';
+        }
+
+        displayTurns();
+        setSimStatus(msg);
+
+        showUI();
+	}
+
 	// Modify HTML to output simulation results
 	function displayText(text) {
-		$("#content").html(text);
+		$('#content').html(text);
 	}
 
 	function displayTurns() {
@@ -560,6 +583,7 @@ define('ui', [
             debugLog.firstLoss = $('#loss_debug').is(':checked');
         }
         animations.areShown = $('#animations').is(':checked');
+		setSimulatorEventHandlers(animations.areShown);
 
         var userControlled = false;
         if ($('#auto_mode').length) {
@@ -595,7 +619,45 @@ define('ui', [
             tournamentMode: tournamentMode,
             pvpAI: pvpAI
         };
-    }
+	}
+	
+	function setSimulatorEventHandlers(showAnimations) {
+		if (showAnimations) {
+			SIMULATOR.events.onCardPlayed = function onCardPlayed(field, turn) {
+				animations.drawField(field, null, null, turn);
+			};
+			SIMULATOR.events.onEarlyActivationSkills = function onEarlyActivationSkills(field, turn, sourceCard) {
+				animations.drawField(field, null, null, turn, sourceCard);
+			};
+			SIMULATOR.events.onActivationSkills = function (field, turn, sourceUnit) {
+				animations.drawField(field, null, null, turn, sourceUnit);
+			};
+			SIMULATOR.events.onOnDeathSkills = function onOnDeathSkills(field, turn, dying) {
+				animations.drawField(field, null, null, turn, dying);
+			};
+			SIMULATOR.events.onUnitAttacked = function onUnitAttacked(field, turn, current_assault) {
+				animations.drawField(field, null, null, turn, current_assault);
+			};
+			SIMULATOR.events.onUnitDone = function onUnitDone(field, turn, current_assault) {
+				animations.drawField(field, null, null, turn, current_assault);
+			};
+		} else {
+			var noop = function noop() {};
+			SIMULATOR.events.onCardPlayed = noop;
+			SIMULATOR.events.onEarlyActivationSkills = noop;
+			SIMULATOR.events.onActivationSkills = noop;
+			SIMULATOR.events.onOnDeathSkills = noop;
+			SIMULATOR.events.onUnitAttacked = noop;
+			SIMULATOR.events.onUnitDone = noop;
+		}
+
+		SIMULATOR.events.onPresentCardChoice = function onPresentCardChoice(field, drawableHand, onCardChosen, turn) {
+			hideTable();
+			displayTurns();
+			animations.drawField(field, drawableHand, onCardChosen, turn);
+		};
+		SIMULATOR.events.onCardChosen = animations.clearFrames;
+	}
 
 	$(function () {
 		loadDeckDialog = $("#loadDeckDialog").dialog({

@@ -52,6 +52,45 @@ var current_timeout;;define('matchStats', [], function() {
     }
 
     return api;
+});;define('simController', [
+    'matchTimer'
+], function (
+    matchTimer
+) {
+    "use strict";
+
+    var SIM_CONTROLLER = {
+        debugEnd: debugEnd,
+        onDebugEnd: noop,
+
+        endSimsCallback: null,
+        stop_sims_callback: null
+    };
+
+    function noop() {}
+
+    // Loops through all simulations
+    // - keeps track of number of simulations and outputs status
+    function debugEnd() {
+
+        SIMULATOR.remainingSims = 0;
+        matchTimer.stop();
+
+        var result = SIM_CONTROLLER.processSimResult();
+        var matchPoints;
+        if (SIMULATOR.config.cpuHash) {
+            matchPoints = SIMULATOR.calculatePoints();
+        }
+
+        SIM_CONTROLLER.onDebugEnd(result, matchPoints);
+
+        if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
+    }
+
+    // temporary stop-gap so HTML files can reference this module
+    window.SIM_CONTROLLER = SIM_CONTROLLER;
+
+    return SIM_CONTROLLER;
 });;define('log', [
     'factions',
     'skillApi'
@@ -730,7 +769,8 @@ define('ui', [
 	'storageAPI',
 	'dataUpdater',
 	'matchStats',
-	'animations'
+	'animations',
+	'simController'
 ], function (
 	base64,
 	urlHelper,
@@ -739,7 +779,8 @@ define('ui', [
 	storageAPI,
 	dataUpdater,
 	matchStats,
-	animations
+	animations,
+	simController
 ) {
 	var api = {
 		show: showUI,
@@ -758,6 +799,8 @@ define('ui', [
 		toggleTheme: toggleTheme,
 		getConfiguration: getConfiguration
 	};
+
+	simController.onDebugEnd = displayDebugEnd;
 
 	var loadDeckDialog;
 
@@ -855,9 +898,28 @@ define('ui', [
 		return selectedBattlegrounds;
 	}
 
+	function displayDebugEnd(result, matchPoints) {
+		var msg = '';
+        if (matchPoints !== undefined) {
+            msg = ' (' + SIMULATOR.calculatePoints() + ' points)';
+        }
+        if (result === 'draw') {
+            msg = '<br><h1>DRAW' + msg + '</h1><br>';
+        } else if (result) {
+            msg = '<br><h1>WIN' + msg + '</h1><br>';
+        } else {
+            msg = '<br><h1>LOSS' + msg + '</h1><br>';
+        }
+
+        displayTurns();
+        setSimStatus(msg);
+
+        showUI();
+	}
+
 	// Modify HTML to output simulation results
 	function displayText(text) {
-		$("#content").html(text);
+		$('#content').html(text);
 	}
 
 	function displayTurns() {
@@ -1282,6 +1344,7 @@ define('ui', [
             debugLog.firstLoss = $('#loss_debug').is(':checked');
         }
         animations.areShown = $('#animations').is(':checked');
+		setSimulatorEventHandlers(animations.areShown);
 
         var userControlled = false;
         if ($('#auto_mode').length) {
@@ -1317,7 +1380,45 @@ define('ui', [
             tournamentMode: tournamentMode,
             pvpAI: pvpAI
         };
-    }
+	}
+	
+	function setSimulatorEventHandlers(showAnimations) {
+		if (showAnimations) {
+			SIMULATOR.events.onCardPlayed = function onCardPlayed(field, turn) {
+				animations.drawField(field, null, null, turn);
+			};
+			SIMULATOR.events.onEarlyActivationSkills = function onEarlyActivationSkills(field, turn, sourceCard) {
+				animations.drawField(field, null, null, turn, sourceCard);
+			};
+			SIMULATOR.events.onActivationSkills = function (field, turn, sourceUnit) {
+				animations.drawField(field, null, null, turn, sourceUnit);
+			};
+			SIMULATOR.events.onOnDeathSkills = function onOnDeathSkills(field, turn, dying) {
+				animations.drawField(field, null, null, turn, dying);
+			};
+			SIMULATOR.events.onUnitAttacked = function onUnitAttacked(field, turn, current_assault) {
+				animations.drawField(field, null, null, turn, current_assault);
+			};
+			SIMULATOR.events.onUnitDone = function onUnitDone(field, turn, current_assault) {
+				animations.drawField(field, null, null, turn, current_assault);
+			};
+		} else {
+			var noop = function noop() {};
+			SIMULATOR.events.onCardPlayed = noop;
+			SIMULATOR.events.onEarlyActivationSkills = noop;
+			SIMULATOR.events.onActivationSkills = noop;
+			SIMULATOR.events.onOnDeathSkills = noop;
+			SIMULATOR.events.onUnitAttacked = noop;
+			SIMULATOR.events.onUnitDone = noop;
+		}
+
+		SIMULATOR.events.onPresentCardChoice = function onPresentCardChoice(field, drawableHand, onCardChosen, turn) {
+			hideTable();
+			displayTurns();
+			animations.drawField(field, drawableHand, onCardChosen, turn);
+		};
+		SIMULATOR.events.onCardChosen = animations.clearFrames;
+	}
 
 	$(function () {
 		loadDeckDialog = $("#loadDeckDialog").dialog({
@@ -1350,58 +1451,6 @@ define('ui', [
 	window.ui = api;
 
 	return api;
-});;define('simController', [
-    'matchTimer',
-    'ui'
-], function (
-    matchTimer,
-    ui
-) {
-    "use strict";
-
-    var SIM_CONTROLLER = {
-        debug_end: debug_end,
-
-        endSimsCallback: null,
-        stop_sims_callback: null
-    };
-
-    // Loops through all simulations
-    // - keeps track of number of simulations and outputs status
-    function debug_end(result) {
-
-        var result = SIM_CONTROLLER.processSimResult();
-
-        SIMULATOR.remainingSims = 0;
-        matchTimer.stop();
-
-        var msg;
-        var matchPoints = "";
-        if (SIMULATOR.config.cpuHash) {
-            matchPoints = " (" + SIMULATOR.calculatePoints() + " points)";
-        }
-        if (result === 'draw') {
-            msg = '<br><h1>DRAW' + matchPoints + '</h1><br>';
-        } else if (result) {
-            msg = '<br><h1>WIN' + matchPoints + '</h1><br>';
-        } else {
-            msg = '<br><h1>LOSS' + matchPoints + '</h1><br>';
-        }
-
-        ui.displayTurns();
-        ui.setSimStatus(msg);
-
-        ui.show();
-
-        if (SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
-
-        if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
-    }
-
-    // temporary stop-gap so HTML files can reference this module
-    window.SIM_CONTROLLER = SIM_CONTROLLER;
-
-    return SIM_CONTROLLER;
 });;define('startup', [
 	'base64',
 	'urlHelper',
@@ -1873,11 +1922,11 @@ for(var id in FUSIONS) {
     function runSims(config) {
         if (SIMULATOR.user_controlled) {
             if (runSim(config, true)) {
-                simController.debug_end();
+                simController.debugEnd();
             }
         } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
             runSim(config, true);
-            simController.debug_end();
+            simController.debugEnd();
         } else if (SIMULATOR.remainingSims > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
@@ -2024,17 +2073,15 @@ for(var id in FUSIONS) {
     var run_sims_batch = 0;
 })();;var SIMULATOR = {};
 (function () {
-	
-    var log = require('log');
+
+	var log = require('log');
 	var cardApi = require('cardApi');
-    var skillApi = require('skillApi');
+	var skillApi = require('skillApi');
 	var base64 = require('base64');
 	var unitInfoHelper = require('unitInfoHelper');
 	var loadDeck = require('loadDeck');
 	var debugLog = require('debugLog');
-	var animations = require('animations');
-    var simController = require('simController');
-    var ui = require('ui');
+	var simController = require('simController');
 
 	var max_turns = 100;
 	var playerDeckCached;
@@ -2043,6 +2090,17 @@ for(var id in FUSIONS) {
 	var playerCardsCached;
 
 	"use strict";
+	var noop = function noop() {};
+	var events = {
+		onCardPlayed: noop,
+		onEarlyActivationSkills: noop,
+		onActivationSkills: noop,
+		onOnDeathSkills: noop,
+		onPresentCardChoice: noop,
+		onCardChosen: noop,
+		onUnitAttacked: noop,
+		onUnitDone: noop
+	};
 
 	// Play card
 	function playCard(card, p, turn, quiet) {
@@ -2065,7 +2123,7 @@ for(var id in FUSIONS) {
 
 		if (card.isTrap()) {
 			doEarlyActivationSkills(card);
-			activation_skills(card);
+			doActivationSkills(card);
 		} else {
 			// Activate trap/onPlay battlegrounds
 			for (var i = 0; i < battlegrounds.onCardPlayed.length; i++) {
@@ -2094,9 +2152,7 @@ for(var id in FUSIONS) {
 				battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
 			}
 		}
-		if (animations.areShown) {
-			animations.drawField(field, null, null, turn);
-		}
+		events.onCardPlayed(field, turn);
 	}
 
 	// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
@@ -2121,7 +2177,7 @@ for(var id in FUSIONS) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						if (debugLog.enabled){
+						if (debugLog.enabled) {
 							debugLog.appendLines(log.name(current_assault) + ' <strong>is removed from field</strong>');
 						}
 					}
@@ -2262,9 +2318,7 @@ for(var id in FUSIONS) {
 						skill.countdown = skill.c;
 					}
 
-					if (animations.areShown) {
-						animations.drawField(field, null, null, turn, sourceCard);
-					}
+					events.onEarlyActivationSkills(field, turn, sourceCard);
 				}
 			}
 		}
@@ -2273,7 +2327,7 @@ for(var id in FUSIONS) {
 	function alwaysTrue() {
 		return true;
 	}
-	
+
 	function makeLivenessCheck(maybeUnit) {
 		if (maybeUnit.isAlive) {
 			return maybeUnit.isAlive.bind(maybeUnit);
@@ -2293,9 +2347,7 @@ for(var id in FUSIONS) {
 			var skill = skills[i];
 			onDeathSkills[skill.id](dying, killer, skill);
 
-			if (animations.areShown) {
-				animations.drawField(field, null, null, turn, dying);
-			}
+			events.onOnDeathSkills(field, turn, dying);
 		}
 
 		dying.ondeath_triggered = true;
@@ -2918,7 +2970,7 @@ for(var id in FUSIONS) {
 				}
 			}
 
-			var doApplyDebuff = function(target, skillValue) {
+			var doApplyDebuff = function (target, skillValue) {
 				target.enfeebled += skillValue;
 			};
 			return applyDebuff(sourceUnit, skill, 'hexes', targets, field_x_assaults, doApplyDebuff);
@@ -2966,7 +3018,7 @@ for(var id in FUSIONS) {
 				getTargets(true);
 			}
 
-			var doApplyDebuff = function(target, skillValue) {
+			var doApplyDebuff = function (target, skillValue) {
 				target.attack_weaken += skillValue;
 			};
 			return applyDebuff(sourceUnit, skill, 'weakens', targets, field_x_assaults, doApplyDebuff);
@@ -3643,7 +3695,7 @@ for(var id in FUSIONS) {
 
 	// Activation Skills
 	// - Must traverse through skills from top to bottom
-	function activation_skills(sourceUnit) {
+	function doActivationSkills(sourceUnit) {
 
 		if (sourceUnit.silenced) {
 			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + " is silenced and cannot use skills</br>");
@@ -3668,9 +3720,7 @@ for(var id in FUSIONS) {
 				skill.countdown = skill.c;
 			}
 
-			if (animations.areShown) {
-				animations.drawField(field, null, null, turn, sourceUnit);
-			}
+			events.onActivationSkills(field, turn, sourceUnit);
 		}
 	}
 
@@ -3728,9 +3778,9 @@ for(var id in FUSIONS) {
 				: chooseCardRandomly);                     					// Player AI falls back on picking a random card
 
 		deck.cpu.chooseCard = (config.cpuOrdered ? chooseCardOrdered    	// Ordered mode tries to pick the card closest to the specified ordering
-				: config.pvpAI ? chooseCardByPoints                			// PvP defenders have a special algorithm for determining which card to play
-					: config.cpuExactOrder ? chooseCardRandomly       		// If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
-						: chooseFirstCard);                         		// If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
+			: config.pvpAI ? chooseCardByPoints                			// PvP defenders have a special algorithm for determining which card to play
+				: config.cpuExactOrder ? chooseCardRandomly       		// If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
+					: chooseFirstCard);                         		// If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
 
 	function shuffle(list) {
@@ -3843,7 +3893,7 @@ for(var id in FUSIONS) {
 	SIMULATOR.pause = false;
 
 	function onCardChosen(turn, chosenCard) {
-		animations.clearFrames();
+		events.onCardChosen();
 		performTurns(turn, makePlayChosenCard(chosenCard));
 	}
 
@@ -3854,7 +3904,7 @@ for(var id in FUSIONS) {
 		}
 		var done = performTurnsInner(turn, resumeTurn);
 		if (done && user_controlled) {
-			simController.debug_end();
+			simController.debugEnd();
 		}
 		return done;
 	}
@@ -3881,8 +3931,6 @@ for(var id in FUSIONS) {
 				simulating = false;
 				return true;
 			}
-		} else if (!surge && SIMULATOR.sendBattleUpdate) {
-			SIMULATOR.sendBattleUpdate(turn);
 		}
 
 		turn++;
@@ -3896,7 +3944,7 @@ for(var id in FUSIONS) {
 
 			setupTurn(turn, first_player, second_player, field);
 
-			if (!performTurn(turn, field, first_player, second_player, true, -1)) {
+			if (!performTurn(turn, field, first_player, second_player)) {
 				// Try this turn again
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
@@ -3909,7 +3957,7 @@ for(var id in FUSIONS) {
 		return true;
 	}
 
-	function performTurn(turn, field, first_player, second_player, drawCards, chosenCard) {
+	function performTurn(turn, field, first_player, second_player) {
 		if (turn % 2) {
 			var p = first_player;
 			var o = second_player;
@@ -3919,7 +3967,7 @@ for(var id in FUSIONS) {
 		}
 
 		closeDiv = false;
-		if (!chooseCard(p, turn, drawCards, chosenCard)) {
+		if (!chooseCard(p, turn)) {
 			return false;
 		} else {
 			play_turn(p, o, field, turn);
@@ -4009,7 +4057,7 @@ for(var id in FUSIONS) {
 		}
 	}
 
-	function chooseCard(p, turn, drawCards, chosenCard) {
+	function chooseCard(p, turn) {
 
 		var deck_p = deck[p];
 		var deck_p_deck = deck_p.deck;
@@ -4021,7 +4069,7 @@ for(var id in FUSIONS) {
 			var card_picked = 0;
 
 			if (deck_p_deck.length === 1) {
-				card_picked = chooseFirstCard(p, deck_p_deck, deck_p_ordered, turn, drawCards);
+				card_picked = chooseFirstCard(p, deck_p_deck, deck_p_ordered, turn);
 			} else {
 				for (var i = 0; i < deck_p_deck.length; i++) {
 					var card = deck_p_deck[i];
@@ -4031,7 +4079,7 @@ for(var id in FUSIONS) {
 					}
 					if (i === 2) break;
 				}
-				card_picked = deck_p.chooseCard(p, deck_p_deck, deck_p_ordered, turn, drawCards, chosenCard);
+				card_picked = deck_p.chooseCard(p, deck_p_deck, deck_p_ordered, turn);
 			}
 
 			if (card_picked < 0) return false;
@@ -4071,10 +4119,7 @@ for(var id in FUSIONS) {
 
 	}
 
-	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards, chosenCard) {
-		if(chosenCard >= 0) {
-			return chosenCard;
-		}
+	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 		closeDiv = true;
@@ -4087,16 +4132,13 @@ for(var id in FUSIONS) {
 			cardsInHand.push(text);
 			drawableHand.push(card);
 		}
-		if (drawCards) {
-			ui.hideTable();
-			ui.displayTurns();
-			animations.drawField(field, drawableHand, onCardChosen, turn);
-		}
+		
+		events.onPresentCardChoice(field, drawableHand, onCardChosen, turn);
 
 		return -1;
 	}
 
-	function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn, drawCards) {
+	function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn) {
 		// If deck isn't shuffled, just play the first card
 		if (typeof orderedDeck === "undefined") {
 			return 0;
@@ -4149,7 +4191,7 @@ for(var id in FUSIONS) {
 		return -1;
 	}
 
-	function chooseCardRandomly(p, shuffledDeck, orderedDeck, turn, drawCards) {
+	function chooseCardRandomly(p, shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 
@@ -4157,7 +4199,7 @@ for(var id in FUSIONS) {
 		return card_picked;
 	}
 
-	function chooseCardByPoints(p, shuffledDeck, orderedDeck, turn, drawCards) {
+	function chooseCardByPoints(p, shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 
@@ -4175,7 +4217,7 @@ for(var id in FUSIONS) {
 		return card_picked;
 	}
 
-	function chooseFirstCard(p, shuffledDeck, orderedDeck, turn, drawCards) {
+	function chooseFirstCard(p, shuffledDeck, orderedDeck, turn) {
 		return 0;
 	}
 
@@ -4210,7 +4252,7 @@ for(var id in FUSIONS) {
 			if (battleground.ally_only && p !== 'player') continue;
 			battleground.owner = p;
 			doEarlyActivationSkills(battleground);
-			activation_skills(battleground);
+			doActivationSkills(battleground);
 		}
 
 		// Do Commander Early Activation Skills
@@ -4228,7 +4270,7 @@ for(var id in FUSIONS) {
 
 		// Commander
 		// - activation skills after units do early activation skills
-		activation_skills(field_p_commander);
+		doActivationSkills(field_p_commander);
 
 		// Assaults
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -4259,7 +4301,7 @@ for(var id in FUSIONS) {
 			for (; activations > 0; activations--) {
 
 				// Activation skills
-				activation_skills(current_assault);
+				doActivationSkills(current_assault);
 
 				// See if unit died from Backlash/Iceshatter
 				if (!current_assault.isAlive()) {
@@ -4651,9 +4693,7 @@ for(var id in FUSIONS) {
 			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
 		});
 
-		if (animations.areShown) {
-			animations.drawField(field, null, null, turn, current_assault);
-		}
+		events.onUnitAttacked(field, turn, current_assault);
 
 		// WINNING CONDITION
 		if (!field_o_commander.isAlive()) {
@@ -4861,9 +4901,7 @@ for(var id in FUSIONS) {
 			doOnDeathSkills(current_assault, target);
 		}
 
-		if (animations.areShown) {
-			animations.drawField(field, null, null, turn, current_assault);
-		}
+		events.onUnitDone(field, turn, current_assault);
 		// -- END OF STATUS INFLICTION --
 	}
 
@@ -5015,6 +5053,14 @@ for(var id in FUSIONS) {
 			},
 			set: function (value) {
 				user_controlled = value;
+			}
+		},
+		events: {
+			get: function () {
+				return events;
+			},
+			set: function (value) {
+				events = value;
 			}
 		}
 	});

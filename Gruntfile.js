@@ -50,6 +50,8 @@ module.exports = function (grunt) {
                     'scripts/modules/config.js',
                     'scripts/modules/matchStats.js',
 
+                    'scripts/modules/simController.js',
+
                     'scripts/mocks.js',
                     //'scripts/modules/debugLog.js',
 
@@ -58,11 +60,6 @@ module.exports = function (grunt) {
                     'scripts/modules/bgeApi.js',
 
                     'scripts/modules/loadDeck.js',
-                    //'scripts/modules/animations.js',
-
-                    //'scripts/modules/ui.js',
-
-                    'scripts/modules/simController.js',
 
                     //'scripts/modules/startup.js',
                     'scripts/single_threaded.js',
@@ -77,6 +74,8 @@ module.exports = function (grunt) {
                     'scripts/modules/matchStats.js',
                     'scripts/modules/debugLog.js',
 
+                    'scripts/modules/simController.js',
+
                     'scripts/modules/log.js',
 
                     'scripts/modules/bgeApi.js',
@@ -85,8 +84,6 @@ module.exports = function (grunt) {
                     'scripts/modules/animations.js',
 
                     'scripts/modules/ui.js',
-
-                    'scripts/modules/simController.js',
 
                     'scripts/modules/startup.js',
 

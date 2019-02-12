@@ -1,47 +1,34 @@
 define('simController', [
-    'matchTimer',
-    'ui'
+    'matchTimer'
 ], function (
-    matchTimer,
-    ui
+    matchTimer
 ) {
     "use strict";
 
     var SIM_CONTROLLER = {
-        debug_end: debug_end,
+        debugEnd: debugEnd,
+        onDebugEnd: noop,
 
         endSimsCallback: null,
         stop_sims_callback: null
     };
 
+    function noop() {}
+
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
-    function debug_end(result) {
-
-        var result = SIM_CONTROLLER.processSimResult();
+    function debugEnd() {
 
         SIMULATOR.remainingSims = 0;
         matchTimer.stop();
 
-        var msg;
-        var matchPoints = "";
+        var result = SIM_CONTROLLER.processSimResult();
+        var matchPoints;
         if (SIMULATOR.config.cpuHash) {
-            matchPoints = " (" + SIMULATOR.calculatePoints() + " points)";
-        }
-        if (result === 'draw') {
-            msg = '<br><h1>DRAW' + matchPoints + '</h1><br>';
-        } else if (result) {
-            msg = '<br><h1>WIN' + matchPoints + '</h1><br>';
-        } else {
-            msg = '<br><h1>LOSS' + matchPoints + '</h1><br>';
+            matchPoints = SIMULATOR.calculatePoints();
         }
 
-        ui.displayTurns();
-        ui.setSimStatus(msg);
-
-        ui.show();
-
-        if (SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
+        SIM_CONTROLLER.onDebugEnd(result, matchPoints);
 
         if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
     }

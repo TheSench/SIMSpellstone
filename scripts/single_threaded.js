@@ -66,11 +66,11 @@
     function runSims(config) {
         if (SIMULATOR.user_controlled) {
             if (runSim(config, true)) {
-                simController.debug_end();
+                simController.debugEnd();
             }
         } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
             runSim(config, true);
-            simController.debug_end();
+            simController.debugEnd();
         } else if (SIMULATOR.remainingSims > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
