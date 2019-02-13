@@ -162,6 +162,100 @@ function(
     }
 
     return api;
+});;define('debugMessages', [
+    'debugLog',
+    'log'
+], function(
+    debugLog,
+    log
+) {
+    'use strict';
+
+    var api = {
+        logDead: logDead,
+        logCardPlayed: logCardPlayed,
+        logDamage: logDamage,
+        logNotImplemented: logNotImplemented,
+        logDualstrike: logDualstrike,
+        logSilenced: logSilenced,
+        logScorch: logScorch,
+        logNullified: logNullified,
+        logInvisibile: logInvisibile,
+        logBuff: logBuff
+    };
+
+    function logDead(unit) {
+        if(debugLog.enabled) {
+            debugLog.appendLines(log.name(unit) + ' <strong>is removed from field</strong>');
+        }
+    }
+
+    function logCardPlayed(commander, card) {
+        if ((debugLog.enabled || debugLog.cardsPlayedOnly)) {
+            debugLog.appendLines(log.name(commander) + ' plays ' + log.name(card));
+        }
+    }
+
+    function logDamage(sourceUnit, targetUnit, damage, logFn) {
+        if (debugLog.enabled) {
+            logFn(sourceUnit, targetUnit, damage);
+        }
+    }
+
+    function logNotImplemented(skillID, unit) {
+		if (debugLog.enabled) {
+			var skillName = (SKILL_DATA[skillID] ? SKILL_DATA[skillID].name : skillID);
+			debugLog.appendLines(log.name(unit) + ' attempts to use ' + skillName + ', but it is not implemented.');
+		}
+    }
+
+    function logSilenced(unit) {
+        if (debugLog.enabled) {
+            debugLog.appendLines(log.name(unit) + " is silenced and cannot use skills");
+        }
+    }
+    
+    function logDualstrike(unit) {
+        if (debugLog.enabled) {
+            debugLog.appendLines(log.name(unit) + ' activates dualstrike');
+        }
+    }
+
+    function logScorch(sourceUnit, amount, targetUnit) {
+        if (debugLog.enabled) {
+            var targetName = (targetUnit ? log.name(targetUnit) : 'itself');
+            debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + amount + ') on ' + targetName);
+        }
+    }
+
+    function logNullified(sourceUnit, skillVerb, target) {
+        if (debugLog.enabled) {
+            debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target) + ' but it is nullified!');
+        }
+    }
+
+    function logInvisibile(sourceUnit, skillVerb, target) {
+        if (debugLog.enabled) {
+            debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target) + ' but it is invisible!');
+        }
+    }
+
+    function logBuff(sourceUnit, skillVerb, target, enhanced, amount, additionalDebug) {
+        if (debugLog.enabled) {
+            if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+            var line = log.name(sourceUnit) + ' ' + skillVerb + ' ' + log.name(target) + ' by ' + amount;
+            if (additionalDebug) {
+                line += additionalDebug(target, amount);
+            }
+            debugLog.appendLines(line);
+        }
+    }
+
+    function getTargetName(source, target) {
+        return (source === target ? 'itself' : log.name(target));
+    }
+
+    return api;
 });;define('bgeApi', [
     'log',
     'cardApi',
@@ -2058,14 +2152,16 @@ for(var id in FUSIONS) {
 (function () {
 	"use strict";
 
-	var log = require('log');
 	var cardApi = require('cardApi');
 	var skillApi = require('skillApi');
 	var base64 = require('base64');
 	var unitInfoHelper = require('unitInfoHelper');
 	var loadDeck = require('loadDeck');
-	var debugLog = require('debugLog');
 	var simController = require('simController');
+
+	var debugLog = require('debugLog');
+	var log = require('log');
+	var debugMessages = require('debugMessages');
 
 	var max_turns = 100;
 	var playerDeckCached;
@@ -2088,8 +2184,8 @@ for(var id in FUSIONS) {
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !quiet) {
-			debugLog.appendLines(log.name(field[p].commander) + ' plays ' + log.name(card));
+		if (!quiet) {
+			debugMessages.logCardPlayed(field[p].commander, card);
 		}
 
 		if (card.isTrap()) {
@@ -2140,17 +2236,13 @@ for(var id in FUSIONS) {
 			var current_assault = units[key];
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
-				if (debugLog.enabled) {
-					debugLog.appendLines(log.name(current_assault) + ' <strong>is removed from field</strong>');
-				}
+				debugMessages.logDead(current_assault);
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						if (debugLog.enabled) {
-							debugLog.appendLines(log.name(current_assault) + ' <strong>is removed from field</strong>');
-						}
+						debugMessages.logDead(current_assault);
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
@@ -2199,7 +2291,7 @@ for(var id in FUSIONS) {
 			targetUnit.health_left -= damage;
 		}
 
-		if (debugLog.enabled) logFn(sourceUnit, targetUnit, damage);
+		debugMessages.logDamage(sourceUnit, targetUnit, damage, logFn);
 
 		if (shatter) {
 			iceshatter(targetUnit);
@@ -2228,11 +2320,7 @@ for(var id in FUSIONS) {
 	}
 
 	function notImplemented(sourceUnit, skill) {
-		if (debugLog.enabled) {
-			var skillName = (SKILL_DATA[skill.id] ? SKILL_DATA[skill.id].name : skill.id);
-			debugLog.appendLines(log.name(sourceUnit) + ' attempts to use ' + skillName + ', but it is not implemented.');
-		}
-
+		debugMessages.logNotImplemented(sourceUnit, skill);
 		return 0;
 	}
 
@@ -2265,16 +2353,14 @@ for(var id in FUSIONS) {
 		if (!len) return;
 
 		if (sourceCard.silenced) {
-			if (debugLog.enabled) {
-				debugLog.appendLines(log.name(sourceCard) + " is silenced and cannot use skills");
-			}
+			debugMessages.logSilenced(sourceCard);
 			return;
 		}
 
 		var dualstrike = sourceCard.dualstrike_triggered;
 		if (debugLog.enabled && dualstrike) {
 			// var main attack loop deal with resetting timer
-			debugLog.appendLines(log.name(sourceCard) + ' activates dualstrike');
+			debugMessages.logDualstrike(sourceCard);
 		}
 
 		var activations = (dualstrike ? 2 : 1);
@@ -2359,9 +2445,7 @@ for(var id in FUSIONS) {
 				sourceUnit.scorched.amount += scorch;
 				sourceUnit.scorched.timer = 2;
 			}
-			if (debugLog.enabled) {
-				debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on itself');
-			}
+			debugMessages.logScorch(sourceUnit, scorch);
 
 			return 1;
 		},
@@ -2411,9 +2495,7 @@ for(var id in FUSIONS) {
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				if (debugLog.enabled) {
-					debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + scorch + ') on ' + log.name(target));
-				}
+				debugMessages.logScorch(sourceUnit, scorch, target);
 
 				affected++;
 			}
@@ -2436,7 +2518,7 @@ for(var id in FUSIONS) {
 				return ' and imbues it with invisible ' + amount;
 			});
 		},
-		protect: function (sourceUnit, skill, additional, additionalDebug, onlyOnDelay) {
+		protect: function (sourceUnit, skill, additionalStatus, additionalDebug, onlyOnDelay) {
 
 			var faction = skill['y'];
 
@@ -2474,37 +2556,26 @@ for(var id in FUSIONS) {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) {
-						debugLog.appendLines(log.name(sourceUnit) + ' protects ' + log.name(target) + ' but it is nullified!');
-					}
+					debugMessages.logNullified(sourceUnit, 'protects', target);
 					continue;
 				}
 
 				affected++;
 
-				var protect_amt = protect;
-				if (!protect_amt) {
+				var amount = protect;
+				if (!amount) {
 					var mult = skill.mult;
 					if (!target.isActive()) {
 						mult += (skill.on_delay_mult || 0);
 					}
-					protect_amt = Math.ceil(target.health * mult);
+					amount = Math.ceil(target.health * mult);
 				}
 
-				target.protected += protect_amt;
-				if (additional) {
-					target[additional] = (target[additional] || 0) + protect_amt;
+				target.protected += amount;
+				if (additionalStatus) {
+					target[additionalStatus] = (target[additionalStatus] || 0) + amount;
 				}
-				if (debugLog.enabled) {
-					if (enhanced) {
-						debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-					}
-					var line = log.name(sourceUnit) + ' barriers ' + log.name(target) + ' by ' + protect_amt;
-					if (typeof additionalDebug === "function") {
-						line += additionalDebug(target, protect_amt);
-					}
-					debugLog.appendLines(line);
-				}
+				debugMessages.logBuff(sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
 			}
 
 			return affected;
@@ -2551,24 +2622,21 @@ for(var id in FUSIONS) {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' heals ' + log.name(target) + ' but it is nullified!');
+					debugMessages.logNullified(sourceUnit, 'heals', target);
 					continue;
 				}
 
 				affected++;
 
-				var heal_amt = heal;
-				if (!heal_amt) {
+				var amount = heal;
+				if (!amount) {
 					var mult = skill.mult;
-					heal_amt = Math.ceil(target.health * mult);
+					amount = Math.ceil(target.health * mult);
 				}
 
-				if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
-				target['health_left'] += heal_amt;
-				if (debugLog.enabled) {
-					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-					debugLog.appendLines(log.name(sourceUnit) + ' heals ' + log.name(target) + ' by ' + heal_amt);
-				}
+				if (amount > target['health'] - target['health_left']) amount = target['health'] - target['health_left'];
+				target['health_left'] += amount;
+				debugMessages.logBuff(sourceUnit, 'heals', target, enhanced, amount);
 			}
 
 			return affected;
@@ -2620,7 +2688,7 @@ for(var id in FUSIONS) {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' bolts ' + log.name(target) + ' but it is invisible!');
+					debugMessages.logInvisibile(sourceUnit, 'bolts', target);
 					continue;
 				}
 
@@ -2709,7 +2777,7 @@ for(var id in FUSIONS) {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' but it is invisible!');
+					debugMessages.logInvisibile(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target);
 					continue;
 				}
 
@@ -2809,7 +2877,7 @@ for(var id in FUSIONS) {
 					target.invisible--;
 					// Missed - retry next turn
 					skill.countdown = 0;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' freezes ' + log.name(target) + ' but it is invisible!');
+					debugMessages.logInvisibile(sourceUnit, 'freezes', target);
 					continue;
 				}
 
@@ -2863,7 +2931,7 @@ for(var id in FUSIONS) {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' breathes frost at ' + log.name(target) + ' but it is invisible!');
+					debugMessages.logInvisibile(sourceUnit, 'breathes frost at', target);
 					continue;
 				}
 
@@ -2996,7 +3064,7 @@ for(var id in FUSIONS) {
 		if (!targetKeys.length) return 0;
 
 		var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, skill.x);
-		var skillValue = skill.x + enhanced;
+		var amount = skill.x + enhanced;
 
 		// Check All
 		if (!skill.all) {
@@ -3010,17 +3078,14 @@ for(var id in FUSIONS) {
 			// Check Evade
 			if (target.invisible) {
 				target.invisible--;
-				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + log.name(target) + ' but it is invisible!');
+				debugMessages.logInvisibile(sourceUnit, skillVerb, target);
 				continue;
 			}
 
 			affected++;
 
-			doApplyDebuff(target, skillValue);
-			if (debugLog.enabled) {
-				if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-				debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + log.name(target) + ' by ' + skillValue);
-			}
+			doApplyDebuff(target, amount);
+			debugMessages.logBuff(sourceUnit, skillVerb, target, enhanced, amount);
 
 			if (target.backlash) {
 				backlash(sourceUnit, target);
@@ -3070,17 +3135,14 @@ for(var id in FUSIONS) {
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = field_p_assaults[targets[key]];
 
-				var rally_amt = rally;
-				if (!rally_amt) {
+				var amount = rally;
+				if (!amount) {
 					var mult = skill.mult;
-					rally_amt = Math.ceil(target.attack * mult);
+					amount = Math.ceil(target.attack * mult);
 				}
 
-				target.attack_rally += rally_amt;
-				if (debugLog.enabled) {
-					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-					debugLog.appendLines(log.name(sourceUnit) + ' enlarges ' + log.name(target) + ' by ' + rally_amt);
-				}
+				target.attack_rally += amount;
+				debugMessages.logBuff(sourceUnit, 'enlarges', target, enhanced, amount);
 
 				affected++;
 			}
@@ -3132,23 +3194,20 @@ for(var id in FUSIONS) {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' empowers ' + log.name(target) + ' but it is nullified!');
+					debugMessages.logNullified(sourceUnit, 'empowers', target);
 					continue;
 				}
 
 				affected++;
 
-				var rally_amt = rally;
-				if (!rally_amt) {
+				var amount = rally;
+				if (!amount) {
 					var mult = skill.mult;
-					rally_amt = Math.ceil(target.attack * mult);
+					amount = Math.ceil(target.attack * mult);
 				}
 
-				target.attack_rally += rally_amt;
-				if (debugLog.enabled) {
-					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-					debugLog.appendLines(log.name(sourceUnit) + ' empowers ' + log.name(target) + ' by ' + rally_amt);
-				}
+				target.attack_rally += amount;
+				debugMessages.logBuff(sourceUnit, 'empowers', target, enhanced, amount);
 			}
 
 			return affected;
@@ -3163,9 +3222,9 @@ for(var id in FUSIONS) {
 			var p = getOwner(sourceUnit);
 			var field_p_assaults = field[p]['assaults'];
 
-			var rally = skill.x;
-			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, rally);
-			rally += enhanced;
+			var amount = skill.x;
+			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, amount);
+			amount += enhanced;
 
 			var faction = skill['y'];
 
@@ -3182,14 +3241,11 @@ for(var id in FUSIONS) {
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
-						if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' but it is nullified!');
+						debugMessages.logNullified(sourceUnit, 'activates legion and empowers', target);
 					} else {
 						affected++;
-						target.attack_rally += rally;
-						if (debugLog.enabled) {
-							if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-							debugLog.appendLines(log.name(sourceUnit) + ' activates legion and empowers ' + log.name(target) + ' by ' + rally);
-						}
+						target.attack_rally += amount;
+						debugMessages.logBuff(sourceUnit, 'activates legion and empowers', target, enhanced, amount);
 					}
 				}
 				target_key += 2;
@@ -3282,7 +3338,7 @@ for(var id in FUSIONS) {
 					// Check Evade
 					if (target.invisible) {
 						target.invisible--;
-						if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' throws a bomb at ' + log.name(target) + ' but it is invisible!');
+						debugMessages.logInvisibile(sourceUnit, 'throws a bomb at', target);
 						continue;
 					}
 
@@ -3356,7 +3412,7 @@ for(var id in FUSIONS) {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!');
+					debugMessages.logNullified(sourceUnit, 'enhances', target);
 					continue;
 				}
 
@@ -3417,7 +3473,7 @@ for(var id in FUSIONS) {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enrages ' + log.name(target) + ' but it is nullified!');
+					debugMessages.logNullified(sourceUnit, 'enrages', target);
 					continue;
 				}
 
@@ -3428,10 +3484,7 @@ for(var id in FUSIONS) {
 				}
 
 				target['enraged'] += amount;
-				if (debugLog.enabled) {
-					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-					debugLog.appendLines(log.name(sourceUnit) + ' enrages ' + log.name(target) + ' by ' + amount);
-				}
+				debugMessages.logBuff(sourceUnit, 'enrages', target, enhanced, amount);
 			}
 
 			return affected;
@@ -3487,12 +3540,11 @@ for(var id in FUSIONS) {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + log.name(target) + ' but it is nullified!');
+					debugMessages.logNullified(sourceUnit, 'enhances', target);
 					continue;
 				}
 
 				affected++;
-
 
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;

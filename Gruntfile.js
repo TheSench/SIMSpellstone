@@ -57,6 +57,8 @@ module.exports = function (grunt) {
 
                     //'scripts/modules/log.js',
 
+                    'scripts/modules/debugMessages.js',
+
                     'scripts/modules/bgeApi.js',
 
                     'scripts/modules/loadDeck.js',
@@ -77,6 +79,8 @@ module.exports = function (grunt) {
                     'scripts/modules/simController.js',
 
                     'scripts/modules/log.js',
+
+                    'scripts/modules/debugMessages.js',
 
                     'scripts/modules/bgeApi.js',
 
