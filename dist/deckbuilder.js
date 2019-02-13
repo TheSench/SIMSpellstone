@@ -1371,69 +1371,51 @@ var filterDualFaction = function (button, faction, exclude) {
 	applyFilters();
 };
 
-var filterAttack = function (button, min, max) {
+var filterAttack = rangeFilter('attack', attackRanges, attackHidden, function () {
 	attackHidden = {};
-	if (button.classList.contains("selected")) {
-		button.classList.remove("selected");
-		button.checked = false;
-		for (var i = 0; i < attackRanges.length; i++) {
-			if (attackRanges[i][0] === min) {
-				attackRanges.splice(i, 1);
-				break;
-			}
-		}
-	} else {
-		button.classList.add("selected");
-		attackRanges.push([min, max]);
-	}
-	if (attackRanges.length > 0) {
-		for (var i = 0, len = units.length; i < len; i++) {
-			var unit = units[i];
-			var hide = true;
-			for (var j = 0; j < attackRanges.length; j++) {
-				var range = attackRanges[j];
-				if (isInRange(unit, "attack", range[0], range[1])) {
-					hide = false;
-					break;
-				}
-			}
-			if (hide) attackHidden[makeUnitKey(unit)] = true;
-		}
-	}
-	applyFilters();
-};
+}, function(unit) {
+	attackHidden[makeUnitKey(unit)] = true;
+});
 
-var filterHealth = function (button, min, max) {
+var filterHealth = rangeFilter('health', healthRanges, healthHidden, function () {
 	healthHidden = {};
-	if (button.classList.contains("selected")) {
-		button.classList.remove("selected");
-		button.checked = false;
-		for (var i = 0; i < healthRanges.length; i++) {
-			if (healthRanges[i][0] === min) {
-				healthRanges.splice(i, 1);
-				break;
-			}
-		}
-	} else {
-		button.classList.add("selected");
-		healthRanges.push([min, max]);
-	}
-	if (healthRanges.length > 0) {
-		for (var i = 0, len = units.length; i < len; i++) {
-			var unit = units[i];
-			var hide = true;
-			for (var j = 0; j < healthRanges.length; j++) {
-				var range = healthRanges[j];
-				if (isInRange(unit, "health", range[0], range[1])) {
-					hide = false;
+}, function(unit) {
+	healthHidden[makeUnitKey(unit)] = true;
+});
+
+function rangeFilter(statName, statRanges, hiddenField, clearHidden, setHidden) {
+	return function (button, min, max) {
+		clearHidden();
+		if (button.classList.contains("selected")) {
+			button.classList.remove("selected");
+			button.checked = false;
+			for (var i = 0; i < statRanges.length; i++) {
+				if (statRanges[i][0] === min) {
+					statRanges.splice(i, 1);
 					break;
 				}
 			}
-			if (hide) healthHidden[makeUnitKey(unit)] = true;
+		} else {
+			button.classList.add("selected");
+			statRanges.push([min, max]);
 		}
-	}
-	applyFilters();
-};
+		if (statRanges.length > 0) {
+			for (var i = 0, len = units.length; i < len; i++) {
+				var unit = units[i];
+				var hide = true;
+				for (var j = 0; j < statRanges.length; j++) {
+					var range = statRanges[j];
+					if (isInRange(unit, statName, range[0], range[1])) {
+						hide = false;
+						break;
+					}
+				}
+				if (hide) setHidden(unit);
+			}
+		}
+		applyFilters();
+	};
+}
 
 var filterDelay = function (button, delay, exclude) {
 	delayHidden = {};
