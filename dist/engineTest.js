@@ -991,8 +991,8 @@ var current_timeout;;define('matchStats', [], function() {
 	}
 
 	function getOpponent(card) {
-		if (card.owner == 'cpu') return 'player';
-		if (card.owner == 'player') return 'cpu';
+		if (card.owner === 'cpu') return 'player';
+		if (card.owner === 'player') return 'cpu';
 	}
 
 	function getOpposingField(card) {
@@ -1121,7 +1121,7 @@ var current_timeout;;define('matchStats', [], function() {
 		if (dying.ondeath_triggered) return; // Check to make sure we don't trigger this twice
 		var skills = dying.onDeathSkills;
 		var len = skills.length;
-		if (len == 0) return;
+		if (len === 0) return;
 
 		for (var i = 0; i < len; i++) {
 			var skill = skills[i];
@@ -1389,7 +1389,7 @@ var current_timeout;;define('matchStats', [], function() {
 		// - Can be evaded
 		// - Must calculate enfeeble/protect
 		// - Can be enhanced
-		poisonstrike: function (sourceUnit, skill, poison) {
+		poisonstrike: function (sourceUnit, skill) {
 			return activationSkills.strike(sourceUnit, skill, true);
 		},
 		strike: function (sourceUnit, skill, poison) {
@@ -1477,7 +1477,7 @@ var current_timeout;;define('matchStats', [], function() {
 		// - Targets poisoned/scorched enemy assaults
 		// - Can be evaded
 		// - Can be enhanced
-		intensify: function (sourceUnit, skill, poison) {
+		intensify: function (sourceUnit, skill) {
 
 			var o = getOpponent(sourceUnit);
 
@@ -1546,13 +1546,11 @@ var current_timeout;;define('matchStats', [], function() {
 		// - Targets enemy assaults
 		// - Can be evaded
 		// - Can be enhanced
-		ignite: function (sourceUnit, skill, poison) {
+		ignite: function (sourceUnit, skill) {
 
 			var o = getOpponent(sourceUnit);
 
-			var ignite = skill.x;
 			var faction = skill.y;
-			var all = skill.all;
 
 			var field_x_assaults = field[o].assaults;
 
@@ -1576,7 +1574,7 @@ var current_timeout;;define('matchStats', [], function() {
 		// - Targets active_next_turn, unjammed enemy assaults
 		// - Can be evaded
 		// - If evaded, cooldown timer is not reset (tries again next turn)
-		jamself: function jamself(sourceUnit, skill) {
+		jamself: function jamself(sourceUnit) {
 
 			sourceUnit.jammed = true;
 			sourceUnit.jammedSelf = true;
@@ -1586,7 +1584,6 @@ var current_timeout;;define('matchStats', [], function() {
 		},
 		jam: function jam(sourceUnit, skill) {
 
-			var p = getOwner(sourceUnit);
 			var o = getOpponent(sourceUnit);
 
 			var all = skill.all;
@@ -1645,14 +1642,11 @@ var current_timeout;;define('matchStats', [], function() {
 		// - Can be enhanced
 		frost: function (sourceUnit, skill) {
 
-			var p = getOwner(sourceUnit);
 			var o = getOpponent(sourceUnit);
 
 			var frost = skill.x;
 			var enhanced = unitInfoHelper.getEnhancement(sourceUnit, skill.id, frost);
 			frost += enhanced;
-
-			var all = skill.all;
 
 			var field_x_assaults = field[o]['assaults'];
 
@@ -2134,7 +2128,6 @@ var current_timeout;;define('matchStats', [], function() {
 			var faction = skill['y'];
 
 			var p = getOwner(sourceUnit);
-			var o = getOpponent(sourceUnit);
 
 			var x = skill.x;
 			var faction = skill.y;
@@ -2261,17 +2254,15 @@ var current_timeout;;define('matchStats', [], function() {
 		// - Target must have specific "enhanceable skill" ("all" versions aren't counted)
 		imbue: function (sourceUnit, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = getOwner(sourceUnit);
-			var o = getOpponent(sourceUnit);
 
 			var x = skill.x;
-			var c = skill['c'];
-			var s = skill['s'];
+			var s = skill.s;
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 			var require_active_turn = requiresActiveTurn(s);
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -2329,7 +2320,6 @@ var current_timeout;;define('matchStats', [], function() {
 
 			var faction = skill['y'];
 
-			var p = getOwner(sourceUnit);
 			var o = getOpponent(sourceUnit);
 
 			var mark = skill.x;
@@ -3151,7 +3141,7 @@ var current_timeout;;define('matchStats', [], function() {
 		}
 		if (protect) {
 			damage -= applyDamageReduction(target, 'protected', damage);
-			if (target.protected == 0) {
+			if (!target.protected) {
 				shatter = target.barrier_ice;
 			}
 		}

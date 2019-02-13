@@ -28,7 +28,7 @@
     "LOCATIONS": true,
     "CAMPAIGNS": true,
     "MISSIONS": true,
-    "RAIDS": true,
+    "RAIDS": true
   },
   "rules": {
     "eqeqeq": 1,
