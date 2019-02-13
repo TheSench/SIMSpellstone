@@ -17,17 +17,6 @@ var SIMULATOR = {};
 	var playerCardsCached;
 
 	"use strict";
-	var noop = function noop() {};
-	var events = {
-		onCardPlayed: noop,
-		onEarlyActivationSkills: noop,
-		onActivationSkills: noop,
-		onOnDeathSkills: noop,
-		onPresentCardChoice: noop,
-		onCardChosen: noop,
-		onUnitAttacked: noop,
-		onUnitDone: noop
-	};
 
 	// Play card
 	function playCard(card, p, turn, quiet) {
@@ -2900,6 +2889,18 @@ var SIMULATOR = {};
 		}
 		return matchPoints;
 	}
+
+	var noop = function noop() {};
+	var events = {
+		onCardPlayed: noop,
+		onEarlyActivationSkills: noop,
+		onActivationSkills: noop,
+		onOnDeathSkills: noop,
+		onPresentCardChoice: noop,
+		onCardChosen: noop,
+		onUnitAttacked: noop,
+		onUnitDone: noop
+	};
 
 	var deck = {};
 	var field = {};

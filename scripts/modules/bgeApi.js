@@ -1,11 +1,13 @@
 define('bgeApi', [
     'log',
     'cardApi',
-    'debugLog'
+    'debugLog',
+    'unitInfoHelper'
 ], function (
     log,
     cardApi,
-    debugLog
+    debugLog,
+    unitInfoHelper
 ) {
     var api = {
         getBattlegrounds: getBattlegrounds

@@ -97,11 +97,13 @@ var current_timeout;;define('matchStats', [], function() {
 })();;define('bgeApi', [
     'log',
     'cardApi',
-    'debugLog'
+    'debugLog',
+    'unitInfoHelper'
 ], function (
     log,
     cardApi,
-    debugLog
+    debugLog,
+    unitInfoHelper
 ) {
     var api = {
         getBattlegrounds: getBattlegrounds
@@ -879,17 +881,6 @@ var current_timeout;;define('matchStats', [], function() {
 	var playerCardsCached;
 
 	"use strict";
-	var noop = function noop() {};
-	var events = {
-		onCardPlayed: noop,
-		onEarlyActivationSkills: noop,
-		onActivationSkills: noop,
-		onOnDeathSkills: noop,
-		onPresentCardChoice: noop,
-		onCardChosen: noop,
-		onUnitAttacked: noop,
-		onUnitDone: noop
-	};
 
 	// Play card
 	function playCard(card, p, turn, quiet) {
@@ -3762,6 +3753,18 @@ var current_timeout;;define('matchStats', [], function() {
 		}
 		return matchPoints;
 	}
+
+	var noop = function noop() {};
+	var events = {
+		onCardPlayed: noop,
+		onEarlyActivationSkills: noop,
+		onActivationSkills: noop,
+		onOnDeathSkills: noop,
+		onPresentCardChoice: noop,
+		onCardChosen: noop,
+		onUnitAttacked: noop,
+		onUnitDone: noop
+	};
 
 	var deck = {};
 	var field = {};
