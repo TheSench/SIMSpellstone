@@ -1,5 +1,6 @@
 var SIMULATOR = {};
 (function () {
+	"use strict";
 
 	var log = require('log');
 	var cardApi = require('cardApi');
@@ -15,8 +16,6 @@ var SIMULATOR = {};
 	var cpuDeckCached;
 	var cpuCardsCached;
 	var playerCardsCached;
-
-	"use strict";
 
 	// Play card
 	function playCard(card, p, turn, quiet) {

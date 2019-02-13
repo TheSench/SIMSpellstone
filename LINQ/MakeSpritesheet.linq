@@ -34,24 +34,6 @@ void Main()
 	var cssFile = new FileInfo(Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\styles\spritesheet.css"));
 	using (var writer = cssFile.CreateText())
 	{
-		writer.Write(
-@".sprite {
-    position: absolute;
-    background-repeat: no-repeat;
-    display: block;
-    width: 84px;
-    height: 120px;
-}
-.portrait {
-    position: absolute;
-    background-repeat: no-repeat;
-	background-color: white;
-    display: block;
-    width: 84px;
-    height: 100px;
-}
-");
-
 		// Create Spritesheets for Card Images
 		var offset = 0;
 		var sheetIndex = 1;

@@ -864,6 +864,7 @@ var current_timeout;;define('matchStats', [], function() {
     var run_sims_batch = 0;
 })();;var SIMULATOR = {};
 (function () {
+	"use strict";
 
 	var log = require('log');
 	var cardApi = require('cardApi');
@@ -879,8 +880,6 @@ var current_timeout;;define('matchStats', [], function() {
 	var cpuDeckCached;
 	var cpuCardsCached;
 	var playerCardsCached;
-
-	"use strict";
 
 	// Play card
 	function playCard(card, p, turn, quiet) {

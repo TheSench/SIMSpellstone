@@ -1077,10 +1077,6 @@ define('ui', [
 
 	// Generate a link from current settings and input
 	function generateLink(autostart) {
-
-		var d = 0;
-		var deck = [];
-
 		var url_base = document.URL;
 		var index_of_query = url_base.indexOf('?');
 		if (index_of_query > 0) {
@@ -1116,34 +1112,9 @@ define('ui', [
 		_addBoolParam(parameters, "ordered2");
 		_addBoolParam(parameters, "exactorder2");
 
-		var bges = '';
-		var bgCheckBoxes = document.getElementsByName("battleground");
-		for (var i = 0; i < bgCheckBoxes.length; i++) {
-			d = bgCheckBoxes[i];
-			if (d.checked) bges += base64.fromDecimal(d.value, 2);
-		}
-		parameters.push('bges=' + bges);
-
-		var bges = '';
-		var bgCheckBoxes = document.getElementsByName("self-battleground");
-		for (var i = 0; i < bgCheckBoxes.length; i++) {
-			d = bgCheckBoxes[i];
-			if (d.checked) bges += base64.fromDecimal(d.value - 10000, 2);
-		}
-		if (bges) {
-			parameters.push('selfbges=' + bges);
-		}
-
-		var bges = '';
-		var bgCheckBoxes = document.getElementsByName("enemy-battleground");
-		for (var i = 0; i < bgCheckBoxes.length; i++) {
-			d = bgCheckBoxes[i];
-			if (d.checked) bges += base64.fromDecimal(d.value - 10000, 2);
-		}
-		if (bges) {
-			parameters.push('enemybges=' + bges);
-		}
-
+		_addBgeParam(parameters, 'battleground', 'bges', 0);
+		_addBgeParam(parameters, 'self-battleground', 'selfbges', 10000);
+		_addBgeParam(parameters, 'enemy-battleground', 'enemybges', 10000);
 
 		_addValueParam(parameters, "sims");
 
@@ -1181,6 +1152,16 @@ define('ui', [
 			return true;
 		} else {
 			return false;
+		}
+	}
+
+	function _addBgeParam(params, elementName, paramName, offset) {
+		var bges = [].slice.call(document.getElementsByName(elementName))
+			.filter(function (bgeEl) { return bgeEl.checked; })
+			.map(function (bgeEl) { return base64.fromDecimal(bgeEl.value - offset, 2); })
+			.join('');
+		if (bges) {
+			params.push(paramName + '=' + bges);
 		}
 	}
 
@@ -1434,7 +1415,7 @@ define('ui', [
 			buttons: {
 				Delete: function () {
 					var name = $("#loadDeckName").val();
-					var newHash = storageAPI.deleteDeck(name);
+					storageAPI.deleteDeck(name);
 				},
 				Load: function () {
 					var name = $("#loadDeckName").val();
@@ -2075,6 +2056,7 @@ for(var id in FUSIONS) {
     var run_sims_batch = 0;
 })();;var SIMULATOR = {};
 (function () {
+	"use strict";
 
 	var log = require('log');
 	var cardApi = require('cardApi');
@@ -2090,8 +2072,6 @@ for(var id in FUSIONS) {
 	var cpuDeckCached;
 	var cpuCardsCached;
 	var playerCardsCached;
-
-	"use strict";
 
 	// Play card
 	function playCard(card, p, turn, quiet) {
