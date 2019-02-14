@@ -79008,6 +79008,101 @@ var CARDS = {
 			}
 		}
 	},
+	"6220": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1550250000000",
+		"id": "6220",
+		"maxLevel": 6,
+		"name": "Gobtoh the Risen",
+		"picture": "Angel_Goblin_Demon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 2
+			},
+			{
+				"id": "rally",
+				"x": 2,
+				"y": "5"
+			},
+			{
+				"id": "leech",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6",
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 2
+					},
+					{
+						"id": "rally",
+						"x": 2,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 2,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"attack": 7,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 14,
+				"skill": []
+			}
+		}
+	},
 	"6221": {
 		"attack": 4,
 		"card_type": "2",
@@ -164685,6 +164780,115 @@ var CARDS = {
 			}
 		}
 	},
+	"16220": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 14,
+		"hidden_until": "1550250000000",
+		"id": "16220",
+		"maxLevel": 6,
+		"name": "Gobtoh Rising",
+		"picture": "Angel_Goblin_Demon_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "rally",
+				"x": 3,
+				"y": "5"
+			},
+			{
+				"id": "leech",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6",
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 15,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 16,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"16221": {
 		"attack": 4,
 		"card_type": "2",
@@ -237835,6 +238039,101 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"26220": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1550250000000",
+		"id": "26220",
+		"maxLevel": 6,
+		"name": "Gobtoh Ascended",
+		"picture": "Angel_Goblin_Demon_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "rally",
+				"x": 5,
+				"y": "5"
+			},
+			{
+				"id": "leech",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"6",
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"health": 17,
+				"skill": []
+			},
+			"4": {
+				"health": 18,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "5"
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "5"
+					},
+					{
+						"id": "leech",
 						"x": 8
 					}
 				]
