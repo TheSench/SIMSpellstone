@@ -27,7 +27,6 @@ define('cardApi', [
         mark_target: 0,
         // Other Statuses
         // Numeric-Statuses
-        barrier_ice: 0,
         corroded: 0,
         enfeebled: 0,
         enraged: 0,

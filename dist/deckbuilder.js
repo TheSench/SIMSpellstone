@@ -12,7 +12,10 @@ var REVERSE_FUSIONS = {};
 for(var id in FUSIONS) {
 	var fusion = FUSIONS[id];
 	REVERSE_FUSIONS[fusion] = id;
-};"use strict";
+}
+
+// Remove Iceshatter Barrier
+delete BATTLEGROUNDS[104];;"use strict";
 
 var base64 = require('base64');
 var cardApi = require('cardApi');

@@ -134,35 +134,18 @@ var SIMULATOR = {};
 
 	// Deal damage to card
 	// and keep track of cards that have died this turn
-	function doDamage(sourceUnit, targetUnit, damage, shatter, logFn) {
+	function doDamage(sourceUnit, targetUnit, damage, logFn) {
 		if (damage >= targetUnit.health_left) {
 			targetUnit.health_left = 0;
 		} else {
 			targetUnit.health_left -= damage;
 		}
 
-		debugMessages.logDamage(sourceUnit, targetUnit, damage, logFn);
+		logFn();
 
-		if (shatter) {
-			iceshatter(targetUnit);
-		}
 		if (!targetUnit.isAlive() && sourceUnit) {
 			doOnDeathSkills(targetUnit, sourceUnit);
 		}
-	}
-
-	function iceshatter(sourceUnit) {
-		// Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
-		var amount = sourceUnit.barrier_ice;
-		//if (amount > sourceUnit.barrier_ice) amount = sourceUnit.barrier_ice;
-		var opposingField = getOpposingField(sourceUnit);
-		var targetUnit = opposingField.assaults[sourceUnit.key];
-		if (!targetUnit || !targetUnit.isAlive()) targetUnit = opposingField.commander;
-
-		doDamage(sourceUnit, targetUnit, amount, null, function (source, target, amount) {
-			debugLog.append(log.name(source) + "'s barrier shatters and hits " + log.name(target) + ' for ' + amount + ' damage');
-			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
-		});
 	}
 
 	function getActivatedSkill(skillMap, skillId) {
@@ -357,9 +340,6 @@ var SIMULATOR = {};
 		// - Can target specific faction
 		// - Targets allied assaults
 		// - Can be enhanced
-		protect_ice: function (sourceUnit, skill) {
-			return activationSkills.protect(sourceUnit, skill, "barrier_ice");
-		},
 		protect_seafolk: function (sourceUnit, skill) {
 			return activationSkills.protect(sourceUnit, skill, null, null, true);
 		},
@@ -425,7 +405,7 @@ var SIMULATOR = {};
 				if (additionalStatus) {
 					target[additionalStatus] = (target[additionalStatus] || 0) + amount;
 				}
-				debugMessages.logBuff(sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
+				debugMessages.logStatusEffect(sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
 			}
 
 			return affected;
@@ -486,7 +466,7 @@ var SIMULATOR = {};
 
 				if (amount > target['health'] - target['health_left']) amount = target['health'] - target['health_left'];
 				target['health_left'] += amount;
-				debugMessages.logBuff(sourceUnit, 'heals', target, enhanced, amount);
+				debugMessages.logStatusEffect(sourceUnit, 'heals', target, enhanced, amount);
 			}
 
 			return affected;
@@ -513,8 +493,8 @@ var SIMULATOR = {};
 
 			var targets = [];
 			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)) {
+				var targetUnit = field_x_assaults[key];
+				if (targetUnit.isAlive() && targetUnit.isInFaction(faction)) {
 					targets.push(key);
 				}
 			}
@@ -533,12 +513,12 @@ var SIMULATOR = {};
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var targetUnit = field_x_assaults[targets[key]];
 
 				// Check Evade
-				if (target.invisible) {
-					target.invisible--;
-					debugMessages.logInvisibile(sourceUnit, 'bolts', target);
+				if (targetUnit.invisible) {
+					targetUnit.invisible--;
+					debugMessages.logInvisibile(sourceUnit, 'bolts', targetUnit);
 					continue;
 				}
 
@@ -547,34 +527,27 @@ var SIMULATOR = {};
 				var strike_damage = strike;
 
 				// Check Protect/Enfeeble
-				var damageInfo = modifySkillDamage(target, strike_damage);
+				var damageInfo = modifySkillDamage(targetUnit, strike_damage, enhanced);
 				strike_damage = damageInfo.damage;
-				var shatter = damageInfo.shatter;
 
 				var poisonDamage = 0;
-				if (strike_damage > 0 && poison && target.isAlive()) {
-					if (strike > target['poisoned']) {
+				if (strike_damage > 0 && poison && targetUnit.isAlive()) {
+					if (strike > targetUnit['poisoned']) {
 						poisonDamage = strike;
-						target['poisoned'] = poisonDamage;
+						targetUnit['poisoned'] = poisonDamage;
 					}
 				}
 
-				doDamage(sourceUnit, target, strike_damage, shatter, function (source, target, amount) {
-					debugLog.appendLines('<u>(Strike: +' + skill.x);
-					if (enhanced) debugLog.appendLines(' Enhance: +' + enhanced);
-					debugLog.appendLines(damageInfo.echo);
-					debugLog.appendLines(') = ' + amount + ' damage</u>');
-					debugLog.appendLines(log.name(source) + ' bolts ' + log.name(target) + ' for ' + amount + ' damage');
-					if (!target.isAlive()) {
-						debugLog.appendLines(' and it dies');
-					} else if (poisonDamage) {
-						debugLog.appendLines(' and inflicts poison(' + poisonDamage + ') on it');
-					}
-					debugLog.appendLines('');
+				doDamage(sourceUnit, targetUnit, strike_damage, function () {
+					debugMessages.logDamage(sourceUnit, targetUnit, 'Strike', 'bolts', damageInfo, function() {
+						if (poisonDamage && !targetUnit.isAlive()) {
+							return ' and inflicts poison(' + poisonDamage + ') on it';
+						}
+					});
 				});
 
-				if (target.backlash) {
-					backlash(sourceUnit, target);
+				if (targetUnit.backlash) {
+					backlash(sourceUnit, targetUnit);
 				}
 			}
 
@@ -640,7 +613,7 @@ var SIMULATOR = {};
 					target.poisoned += intensify;
 				}
 
-				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' intensifies ' + intensifiedFields + ' on ' + log.name(target) + ' by ' + intensify);
+				debugMessages.logStatusEffect(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target, enhanced, intensify);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -687,7 +660,7 @@ var SIMULATOR = {};
 
 			sourceUnit.jammed = true;
 			sourceUnit.jammedSelf = true;
-			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' freezes itself');
+			debugMessages.logStatusEffect(sourceUnit, 'freezes', sourceUnit);
 
 			return 1;
 		},
@@ -734,7 +707,7 @@ var SIMULATOR = {};
 				affected++;
 
 				target.jammed = true;
-				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' freezes ' + log.name(target));
+				debugMessages.logStatusEffect(sourceUnit, 'freezes', target);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -764,8 +737,8 @@ var SIMULATOR = {};
 			var i = sourceUnit['key'] - 1;
 			var end = i + 2;
 			for (; i <= end; i++) {
-				var target = field_x_assaults[i];
-				if (target && target.isAlive()) {
+				var targetUnit = field_x_assaults[i];
+				if (targetUnit && targetUnit.isAlive()) {
 					targets.push(i);
 				}
 			}
@@ -776,12 +749,12 @@ var SIMULATOR = {};
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var targetUnit = field_x_assaults[targets[key]];
 
 				// Check Evade
-				if (target.invisible) {
-					target.invisible--;
-					debugMessages.logInvisibile(sourceUnit, 'breathes frost at', target);
+				if (targetUnit.invisible) {
+					targetUnit.invisible--;
+					debugMessages.logInvisibile(sourceUnit, 'breathes frost at', targetUnit);
 					continue;
 				}
 
@@ -791,21 +764,15 @@ var SIMULATOR = {};
 
 				// Check Protect/Enfeeble
 				// Check Protect/Enfeeble
-				var damageInfo = modifySkillDamage(target, frost_damage);
+				var damageInfo = modifySkillDamage(targetUnit, frost_damage, enhanced);
 				frost_damage = damageInfo.damage;
-				var shatter = damageInfo.shatter;
 
-				doDamage(sourceUnit, target, frost_damage, shatter, function (source, target, amount) {
-					debugLog.appendLines('<u>(Frostbreath: +' + skill.x);
-					if (enhanced) debugLog.appendLines(' Enhance: +' + enhanced);
-					debugLog.appendLines(damageInfo.echo);
-					debugLog.appendLines(') = ' + amount + ' damage</u>');
-					debugLog.appendLines(log.name(source) + ' breathes frost at ' + log.name(target) + ' for ' + amount + ' damage');
-					debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
+				doDamage(sourceUnit, targetUnit, frost_damage, function () {
+					debugMessages.logDamage(sourceUnit, targetUnit, 'Frostbreath', 'breathes frost at', damageInfo);
 				});
 
-				if (target.backlash) {
-					backlash(sourceUnit, target);
+				if (targetUnit.backlash) {
+					backlash(sourceUnit, targetUnit);
 				}
 			}
 
@@ -828,7 +795,7 @@ var SIMULATOR = {};
 
 			target.heartseeker += heartseeker;
 			target.enfeebled += heartseeker;
-			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' inflicts heartseeker ' + heartseeker + ' on ' + log.name(target));
+			debugMessages.logInflicts(sourceUnit, 'heartseeker', heartseeker, target);
 
 			return 1;
 		},
@@ -935,7 +902,7 @@ var SIMULATOR = {};
 			affected++;
 
 			doApplyDebuff(target, amount);
-			debugMessages.logBuff(sourceUnit, skillVerb, target, enhanced, amount);
+			debugMessages.logStatusEffect(sourceUnit, skillVerb, target, enhanced, amount);
 
 			if (target.backlash) {
 				backlash(sourceUnit, target);
@@ -992,7 +959,7 @@ var SIMULATOR = {};
 				}
 
 				target.attack_rally += amount;
-				debugMessages.logBuff(sourceUnit, 'enlarges', target, enhanced, amount);
+				debugMessages.logStatusEffect(sourceUnit, 'enlarges', target, enhanced, amount);
 
 				affected++;
 			}
@@ -1057,7 +1024,7 @@ var SIMULATOR = {};
 				}
 
 				target.attack_rally += amount;
-				debugMessages.logBuff(sourceUnit, 'empowers', target, enhanced, amount);
+				debugMessages.logStatusEffect(sourceUnit, 'empowers', target, enhanced, amount);
 			}
 
 			return affected;
@@ -1095,7 +1062,7 @@ var SIMULATOR = {};
 					} else {
 						affected++;
 						target.attack_rally += amount;
-						debugMessages.logBuff(sourceUnit, 'activates legion and empowers', target, enhanced, amount);
+						debugMessages.logStatusEffect(sourceUnit, 'activates legion and empowers', target, enhanced, amount);
 					}
 				}
 				target_key += 2;
@@ -1134,10 +1101,7 @@ var SIMULATOR = {};
 
 			if (fervorAmount) {
 				sourceUnit['attack_rally'] += fervorAmount;
-				if (debugLog.enabled) {
-					if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-					debugLog.appendLines(log.name(sourceUnit) + ' activates fervor for ' + fervorAmount);
-				}
+				debugMessages.logStatusEffect(sourceUnit, 'fervors', target, enhanced, fervorAmount);
 				return 1;
 			} else {
 				return 0;
@@ -1165,8 +1129,8 @@ var SIMULATOR = {};
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
 				for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-					var target = field_x_assaults[key];
-					if (target.isAlive() && target.isInFaction(faction)) {
+					var targetUnit = field_x_assaults[key];
+					if (targetUnit.isAlive() && targetUnit.isInFaction(faction)) {
 						targets.push(key);
 					}
 				}
@@ -1183,12 +1147,12 @@ var SIMULATOR = {};
 
 				var strike = 1;
 				for (var key = 0, len = targets.length; key < len; key++) {
-					var target = field_x_assaults[targets[key]];
+					var targetUnit = field_x_assaults[targets[key]];
 
 					// Check Evade
-					if (target.invisible) {
-						target.invisible--;
-						debugMessages.logInvisibile(sourceUnit, 'throws a bomb at', target);
+					if (targetUnit.invisible) {
+						targetUnit.invisible--;
+						debugMessages.logInvisibile(sourceUnit, 'throws a bomb at', targetUnit);
 						continue;
 					}
 
@@ -1197,16 +1161,11 @@ var SIMULATOR = {};
 					var strike_damage = strike;
 
 					// Check Protect/Enfeeble
-					var damageInfo = modifySkillDamage(target, strike_damage, { enfeeble: true });
+					var damageInfo = modifySkillDamage(targetUnit, strike_damage, enhanced, { enfeeble: true });
 					strike_damage = damageInfo.damage;
-					var shatter = damageInfo.shatter;
 
-					doDamage(sourceUnit, target, strike_damage, shatter, function (source, target, amount) {
-						debugLog.appendLines('<u>(Barrage: +1');
-						debugLog.appendLines(damageInfo.echo);
-						debugLog.appendLines(') = ' + amount + ' damage</u>');
-						debugLog.appendLines(log.name(source) + ' throws a bomb at ' + log.name(target) + ' for ' + amount + ' damage');
-						debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
+					doDamage(sourceUnit, targetUnit, strike_damage, function () {
+						debugMessages.logDamage(sourceUnit, targetUnit, 'Barrage', 'throws a bomb at', damageInfo);
 					});
 				}
 			}
@@ -1269,14 +1228,15 @@ var SIMULATOR = {};
 				affected++;
 
 				var enhancements = target.enhanced;
+				var amountEnhanced = x;
 				if (x > 0) {
 					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + x);
 				} else if (mult > 0) {
 					// temporarily use negatives for multiplier
 					enhancements[s] = -mult;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' enhances ' + s + ' of ' + log.name(target, false) + ' by ' + (mult * 100) + '%');
+					var amountEnhanced = (mult * 100) + '%';
 				}
+				debugMessages.logStatusEffect(sourceUnit, 'enhances ' + s + ' of ', target, 0, amountEnhanced);
 			}
 
 			return affected;
@@ -1334,7 +1294,7 @@ var SIMULATOR = {};
 				}
 
 				target['enraged'] += amount;
-				debugMessages.logBuff(sourceUnit, 'enrages', target, enhanced, amount);
+				debugMessages.logStatusEffect(sourceUnit, 'enrages', target, enhanced, amount);
 			}
 
 			return affected;
@@ -1455,7 +1415,7 @@ var SIMULATOR = {};
 				target.enfeebled += mark;
 				sourceUnit.mark_target = target.uid;
 
-				if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' marks ' + log.name(target) + ' by ' + mark);
+				debugMessages.logStatusEffect(sourceUnit, 'marks', target, enhanced, mark);
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -1467,7 +1427,7 @@ var SIMULATOR = {};
 
 	var onPlaySkills = {
 
-		ambush: function (sourceUnit, target, skill) {
+		ambush: function (sourceUnit, targetUnit, skill) {
 
 			var x = skill.x;
 			var base = skill.base;
@@ -1476,12 +1436,14 @@ var SIMULATOR = {};
 			var damage = x;
 			if (!damage) {
 				var mult = skill.mult;
-				damage = Math.ceil(target[base] * mult);
+				damage = Math.ceil(targetUnit[base] * mult);
 			}
 
-			doDamage(sourceUnit, target, damage, null, function (source, target, amount) {
-				debugLog.appendLines(log.name(source) + ' ambushes ' + log.name(target) + ' for ' + amount + ' damage');
-				debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
+			doDamage(sourceUnit, targetUnit, damage, function () {
+				debugMessages.logDamage(sourceUnit, targetUnit, 'Ambush', 'ambushes', {
+					originalDamage: damage,
+					damage: damage
+				});
 			});
 
 			return 1;
@@ -1500,10 +1462,7 @@ var SIMULATOR = {};
 			}
 
 			target.timer += slow;
-
-			if (debugLog.enabled) {
-				debugLog.appendLines(log.name(sourceUnit) + ' slows ' + log.name(target) + ' by ' + slow);
-			}
+			debugMessages.logStatusEffect(sourceUnit, 'slows', target, 0, slow);
 
 			return 1;
 		}
@@ -1561,7 +1520,7 @@ var SIMULATOR = {};
 	function doActivationSkills(sourceUnit) {
 
 		if (sourceUnit.silenced) {
-			if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + " is silenced and cannot use skills</br>");
+			debugMessages.logSilenced(sourceUnit);
 			return;
 		}
 
@@ -1910,7 +1869,6 @@ var SIMULATOR = {};
 			current_assault.enraged = 0;
 			current_assault.invisible = 0;
 			current_assault.protected = 0;
-			current_assault.barrier_ice = 0;
 			current_assault.warded = 0;
 			current_assault.enhanced = {};
 			current_assault.removeImbue();
@@ -2166,7 +2124,7 @@ var SIMULATOR = {};
 				// Activation skills
 				doActivationSkills(current_assault);
 
-				// See if unit died from Backlash/Iceshatter
+				// See if unit died from Backlash
 				if (!current_assault.isAlive()) {
 					continue;
 				}
@@ -2219,7 +2177,7 @@ var SIMULATOR = {};
 		assault[statusName] = statusValue;
 	}
 
-	function modifySkillDamage(target, damage, exclusions) {
+	function modifySkillDamage(target, originalDamage, enhanced, exclusions) {
 		// Check Protect/Enfeeble
 		exclusions = (exclusions || {});
 		var enfeeble = (exclusions.enfeeble ? 0 : (target.enfeebled || 0));
@@ -2227,27 +2185,15 @@ var SIMULATOR = {};
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
-		damage += enfeeble - shrouded;
-		var shatter = false;
+		var damage = damage + enfeeble - shrouded;
 		if (warded) {
 			damage -= applyDamageReduction(target, 'warded', damage);
 		}
 		if (protect) {
 			damage -= applyDamageReduction(target, 'protected', damage);
-			if (!target.protected) {
-				shatter = target.barrier_ice;
-			}
 		}
 		if (shrouded) {
 			damage -= shrouded;
-		}
-
-		var echo = '';
-		if (debugLog.enabled) {
-			if (enfeeble) debugLog.appendLines(' Enfeeble: +' + enfeeble);
-			if (shrouded) debugLog.appendLines(' Stasis: -' + shrouded);
-			if (protect) debugLog.appendLines(' Barrier: -' + protect);
-			if (warded) debugLog.appendLines(' Ward: -' + warded);
 		}
 
 		if (damage < 0) {
@@ -2255,9 +2201,15 @@ var SIMULATOR = {};
 		}
 
 		return {
+			originalDamage: originalDamage,
 			damage: damage,
-			shatter: shatter,
-			echo: echo
+			modifiers: {
+				Enhance: enhanced,
+				Enfeeble: enfeeble,
+				Stasis: -shrouded,
+				Barrier: -protect,
+				Ward: -warded
+			}
 		};
 	}
 
@@ -2342,14 +2294,16 @@ var SIMULATOR = {};
 			var amount = current_assault.poisoned;
 			if (amount) {
 				var warded = current_assault.warded;
+				var damageInfo = {
+					originalDamage: amount
+				};
 				if (warded) {
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
+					damageInfo.damage = amount;
+					damageInfo.modifiers = { Ward: warded };
 				}
-				doDamage(null, current_assault, amount, null, function (source, target, amount) {
-					debugLog.appendLines(log.name(target) + ' takes ' + amount);
-					if (warded) debugLog.appendLines(' (Poison: +' + current_assault.poisoned + ' Ward: -' + warded + ')');
-					debugLog.appendLines(' poison damage');
-					debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
+				doDamage(null, current_assault, amount, function () {
+					debugMessages.logDamage(null, current_assault, 'Poison', 'poison damage', damageInfo);
 				});
 			}
 
@@ -2357,14 +2311,16 @@ var SIMULATOR = {};
 			var amount = current_assault.envenomed;
 			if (amount) {
 				var warded = current_assault.warded;
+				var damageInfo = {
+					originalDamage: amount
+				};
 				if (warded) {
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
+					damageInfo.damage = amount;
+					damageInfo.modifiers = { Ward: warded };
 				}
-				doDamage(null, current_assault, amount, null, function (source, target, amount) {
-					debugLog.appendLines(log.name(target) + ' takes ' + amount);
-					if (warded) debugLog.appendLines(' (Venom: +' + current_assault.envenomed + ' Ward: -' + warded + ')');
-					debugLog.appendLines(' venom damage');
-					debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
+				doDamage(null, current_assault, amount, function () {
+					debugMessages.logDamage(null, current_assault, 'Venom', 'venom damage', damageInfo);
 				});
 			}
 
@@ -2372,17 +2328,20 @@ var SIMULATOR = {};
 			var scorch = current_assault.scorched;
 			if (scorch) {
 				amount = scorch.amount;
-				var warded = current_assault.warded;
+				var damageInfo = {
+					originalDamage: amount
+				};
 				if (warded) {
 					amount -= applyDamageReduction(current_assault, 'warded', amount);
+					damageInfo.damage = amount;
+					damageInfo.modifiers = { Ward: warded };
 				}
-				doDamage(null, current_assault, amount, null, function (source, target, amount) {
-					debugLog.appendLines(log.name(target) + ' takes ' + amount);
-					if (warded) debugLog.appendLines(' (Scorch: +' + scorch.amount + ' Ward: -' + warded + ')');
-					debugLog.appendLines(' scorch damage');
-					if (!target.isAlive()) debugLog.appendLines(' and it dies');
-					else if (!target.scorched) debugLog.appendLines(' and scorch wears off');
-					debugLog.appendLines('');
+				doDamage(null, current_assault, amount, function () {
+					debugMessages.logDamage(null, current_assault, 'Scorch', 'scorch damage', damageInfo, function() {
+						if (current_assault.isAlive() && !current_assault.scorched) {
+							return ' and scorch wears off';
+						}
+					});
 				});
 
 				if (scorch['timer'] > 1) {
@@ -2441,30 +2400,33 @@ var SIMULATOR = {};
 					}
 				}
 			}
-			if (taunted && debugLog.enabled) debugLog.appendLines(log.name(target) + ' taunts ' + log.name(current_assault));
+			if (taunted) {
+				debugMessages.logSkillVerb(target, 'taunts', current_assault);
+			}
 		}
 
 		// -- CALCULATE DAMAGE --
 		var damage = current_assault.adjustedAttack(); // Get base damage + rally/weaken
 
-		// Enfeeble
 		var enfeeble = target.enfeebled;
+		var pierce = current_assault.pierce;
+
+		var damageInfo = {
+			originalDamage: current_assault.attack,
+			modifiers: {
+				Berserk: current_assault.attack_berserk,
+				Valor: current_assault.attack_valor,
+				Rally: current_assault.attack_rally,
+				Weaken: -current_assault.attack_weaken,
+				Corrosion: -current_assault.attack_corroded,
+				Enfeeble: enfeeble
+			}
+		};
+		var damageModifiers = damageInfo.modifiers;
+
 		damage += enfeeble;
 
-		if (debugLog.enabled) {
-			debugLog.append('<u>(Attack: +' + current_assault.attack);
-			if (current_assault.attack_berserk) debugLog.append(' Berserk: +' + current_assault.attack_berserk);
-			if (current_assault.attack_valor) debugLog.append(' Valor: +' + current_assault.attack_valor);
-			if (current_assault.attack_rally) debugLog.append(' Rally: +' + current_assault.attack_rally);
-			if (current_assault.attack_weaken) debugLog.append(' Weaken: -' + current_assault.attack_weaken);
-			if (current_assault.attack_corroded) debugLog.append(' Corrosion: -' + current_assault.attack_corroded);
-			if (enfeeble) debugLog.append(' Enfeeble: +' + enfeeble);
-			debugLog.append('');
-		}
-
 		// Pierce
-		// var pierce = current_assault['skill']['pierce'];
-		var pierce = current_assault.pierce;
 		if (pierce) {
 			var enhanced = unitInfoHelper.getEnhancement(current_assault, 'pierce', pierce);
 			pierce += enhanced;
@@ -2474,33 +2436,27 @@ var SIMULATOR = {};
 
 		// Damage reduction
 		var protect = target.protected;
-		var shatter = false;
 		var armor = target.armored;
 		var shrouded = checkShroud(target);
-		// Barrier is applied BEFORE Armor
+		var remainingPierce = pierce;
+		// Barrier is applied BEFORE Armor/Shroud
 		if (protect) {
-			if (debugLog.enabled) {
-				debugLog.append(' Barrier: -' + protect);
-			}
+			damageModifiers.Barrier = -protect;
 			// Remove pierce from Barrier
-			if (pierce) {
-				if (pierce >= protect) {
-					if (debugLog.enabled) debugLog.append(' Pierce: +' + protect);
-					pierce -= protect;
+			if (remainingPierce) {
+				damageModifiers.Pierce = pierce;
+				if (remainingPierce >= protect) {
+					remainingPierce -= protect;
 					protect = 0;
 					target.protected = 0;
 				} else {
-					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
-					protect -= pierce;
+					protect -= remainingPierce;
 					target.protected -= pierce;
-					// Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
-					//target.barrier_ice -= pierce;
-					pierce = 0;
+					remainingPierce = 0;
 				}
 			}
 			if (protect) {
 				if (damage >= protect) {
-					shatter = target.barrier_ice;
 					damage -= protect;
 					target.protected = 0;
 				} else {
@@ -2509,51 +2465,35 @@ var SIMULATOR = {};
 				}
 			}
 		}
-		if (shrouded) {
-			shrouded += unitInfoHelper.getEnhancement(target, 'stasis', shrouded);
-			if (debugLog.enabled) {
-				debugLog.append(' Shroud: -' + shrouded);
-			}
-			// Remove pierce from Shroud
-			if (pierce) {
-				if (pierce > shrouded) {
-					if (debugLog.enabled) debugLog.append(' Pierce: +' + shrouded);
-					shrouded = 0;
-				} else {
-					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
-					shrouded -= pierce;
+
+		[
+			{ logName: 'Shroud', status: 'stasis', value: shrouded },
+			{ logName: 'Armor', status: 'armored', value: armor }
+		].forEach(function(modifierInfo) {
+			var value = modifierInfo.value;
+			if (value) {
+				value += unitInfoHelper.getEnhancement(target, modifierInfo.status, value);
+				damageModifiers[modifierInfo.logName] = -value;
+				// Remove pierce from Shroud
+				if (remainingPierce) {
+					damageModifiers.Pierce = pierce;
+					if (remainingPierce > value) {
+						value = 0;
+					} else {
+						value -= remainingPierce;
+					}
 				}
+				damage -= value;
 			}
-			damage -= shrouded;
-		}
-		if (armor) {
-			armor += unitInfoHelper.getEnhancement(target, 'armored', armor);
-			if (debugLog.enabled) {
-				debugLog.append(' Armor: -' + armor);
-			}
-			// Remove pierce from Armor
-			if (pierce) {
-				if (pierce > armor) {
-					if (debugLog.enabled) debugLog.append(' Pierce: +' + armor);
-					armor = 0;
-				} else {
-					if (debugLog.enabled) debugLog.append(' Pierce: +' + pierce);
-					armor -= pierce;
-				}
-			}
-			damage -= armor;
-		}
+		});
 
 		if (damage < 0) damage = 0;
-
-		if (debugLog.enabled) debugLog.appendLines(') = ' + damage + ' damage</u>');
 
 		// -- END OF CALCULATE DAMAGE --
 
 		// Deal damage to target
-		doDamage(current_assault, target, damage, null, function (source, target, amount) {
-			debugLog.append(log.name(source) + ' attacks ' + log.name(target) + ' for ' + amount + ' damage');
-			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
+		doDamage(current_assault, target, damage, function () {
+			debugMessages.logDamage(current_assault, target, 'Attack', 'attacks', damageInfo);
 		});
 
 		events.onUnitAttacked(field, turn, current_assault);
@@ -2575,7 +2515,7 @@ var SIMULATOR = {};
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts poison(' + poison + ') on ' + log.name(target));
+					debugMessages.logInflicts(sourceUnit, 'poison', poison, target);
 				}
 			}
 
@@ -2593,7 +2533,7 @@ var SIMULATOR = {};
 					var hexIncrease = venom - target.envenomed;
 					target.envenomed = venom;
 					target.enfeebled += hexIncrease;
-					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts venom(' + venom + ') on ' + log.name(target));
+					debugMessages.logInflicts(current_assault, 'venom', venom, target);
 				}
 			}
 
@@ -2605,7 +2545,7 @@ var SIMULATOR = {};
 				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + log.name(target));
+				debugMessages.logInflicts(current_assault, 'nullify', nullify, target);
 			}
 
 			// Silence
@@ -2613,7 +2553,7 @@ var SIMULATOR = {};
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' inflicts silence on ' + log.name(target));
+				debugMessages.logInflicts(current_assault, 'silence', null, target);
 			}
 
 			// Daze
@@ -2626,12 +2566,8 @@ var SIMULATOR = {};
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' dazed ' + log.name(target) + ' for ' + dazed);
+				debugMessages.logInflicts(current_assault, 'dazed', dazed, target);
 			}
-		}
-
-		if (shatter) {
-			iceshatter(target);
 		}
 
 		if (damage > 0 && current_assault.isAlive()) {
@@ -2688,7 +2624,7 @@ var SIMULATOR = {};
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				if (debugLog.enabled) debugLog.appendLines(log.name(target) + ' inflicts counterburn(' + scorch + ') on ' + log.name(current_assault));
+				debugMessages.logInflicts(target, 'counterburn', scorch, current_assault);
 			}
 
 			// Counterpoison
@@ -2700,7 +2636,7 @@ var SIMULATOR = {};
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					if (debugLog.enabled) debugLog.appendLines(log.name(target) + ' inflicts counterpoison(' + poison + ') on ' + log.name(current_assault));
+					debugMessages.logInflicts(target, 'counterpoison', poison, current_assault);
 				}
 			}
 
@@ -2713,9 +2649,7 @@ var SIMULATOR = {};
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
 					target.attack_berserk += fury;
-					if (debugLog.enabled) {
-						debugLog.appendLines(log.name(target) + ' activates fury and gains ' + fury + ' attack');
-					}
+					debugMessages.logGainAttack(target, 'activates fury', fury);
 				}
 
 				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
@@ -2723,7 +2657,7 @@ var SIMULATOR = {};
 
 			if (target.enraged > 0) {
 				target.attack_berserk += target.enraged;
-				if (debugLog.enabled) debugLog.appendLines(log.name(target) + " is enraged and gains " + target.enraged + " attack!</br>");
+				debugMessages.logGainAttack(target, 'is enraged', target.enraged);
 			}
 
 			// Berserk
@@ -2735,7 +2669,7 @@ var SIMULATOR = {};
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' activates berserk and gains ' + berserk + ' attack');
+				debugMessages.logGainAttack(target, 'activates berserk', berserk);
 			}
 		}
 
@@ -2753,7 +2687,7 @@ var SIMULATOR = {};
 			} else {
 				current_assault.corroded = { amount: corrosion, timer: 2 };
 			}
-			if (debugLog.enabled) debugLog.appendLines(log.name(target) + ' inflicts corrosion(' + corrosion + ') on ' + log.name(current_assault));
+			debugMessages.logInflicts(target, 'corrosion', corrosion, current_assault);
 			current_assault.attack_corroded = corrosion;
 			if (debugLog.enabled) {
 				debugLog.appendLines(log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion');
@@ -2769,24 +2703,11 @@ var SIMULATOR = {};
 	}
 
 	function doCounterDamage(attacker, defender, counterType, counterBase, counterEnhancement) {
-
 		var counterDamage = counterBase + counterEnhancement;
+		var damageInfo = modifySkillDamage(attacker, counterDamage, counterEnhancement, { enfeeble: true });
 
-		// Protect
-		var damageInfo = modifySkillDamage(attacker, counterDamage, { enfeeble: true });
-		counterDamage = damageInfo.damage;
-		var shatter = damageInfo.shatter;
-
-		if (debugLog.enabled) {
-			debugLog.appendLines('<u>(' + counterType + ': +' + counterBase);
-			if (counterEnhancement) debugLog.appendLines(' Enhance: +' + counterEnhancement);
-			debugLog.appendLines(damageInfo.echo);
-			debugLog.appendLines(') = ' + counterDamage + ' damage</u>');
-		}
-
-		doDamage(defender, attacker, counterDamage, null, function (source, target, amount) {
-			debugLog.appendLines(log.name(target) + ' takes ' + amount + ' ' + counterType.toLowerCase() + ' damage');
-			debugLog.appendLines(!target.isAlive() ? ' and it dies' : '');
+		doDamage(defender, attacker, damageInfo.damage, function () {
+			debugMessages.logDamage(null, attacker, counterType, counterType.toLowerCase() + ' damage', damageInfo);
 		});
 	}
 

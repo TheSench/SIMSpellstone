@@ -13,3 +13,6 @@ for(var id in FUSIONS) {
 	var fusion = FUSIONS[id];
 	REVERSE_FUSIONS[fusion] = id;
 }
+
+// Remove Iceshatter Barrier
+delete BATTLEGROUNDS[104];

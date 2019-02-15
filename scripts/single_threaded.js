@@ -5,6 +5,7 @@
     var matchTimer = require('matchTimer');
     var urlHelper = require('urlHelper');
     var debugLog = require('debugLog');
+    var debugMessages = require('debugMessages');
     var simController = require('simController');
     var ui = require('ui');
     var matchStats = require('matchStats');
@@ -96,7 +97,9 @@
                     run_sims_batch = SIMULATOR.remainingSims;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) run_sims_batch = 1;
+                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) {
+                    run_sims_batch = 1;
+                }
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(runSims, 1, config);
@@ -169,44 +172,32 @@
         if (debugLog.enabled || debugLog.cardsPlayedOnly) {
             if (debugLog.firstLoss) {
                 if (result === 'draw') {
-                    debugLog.prependLines('Draw found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
-                    debugLog.appendLines('', '<h1>DRAW</h1>');
+                    debugMessages.logOutcomeFound('Draw', matchStats.matchesPlayed);
                     SIMULATOR.remainingSims = 0;
                 } else if (result) {
                     debugLog.clear();
                     if (!SIMULATOR.remainingSims) {
-                        debugLog.appendLines('No losses found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
+                        debugMessages.logOutcomeNotFound('losses', matchStats.matchesPlayed);
                     }
                 } else {
-                    debugLog.prependLines('Loss found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
-                    debugLog.appendLines('', '<h1>LOSS</h1>');
+                    debugMessages.logOutcomeFound('Loss', matchStats.matchesPlayed);
                     SIMULATOR.remainingSims = 0;
                 }
             } else if (debugLog.firstWin) {
                 if (result && result !== 'draw') {
-                    debugLog.prependLines('Win found after ' + matchStats.matchesPlayed + ' games. Displaying debug output...', '');
-                    debugLog.appendLines('', '<h1>WIN</h1>');
+                    debugMessages.logOutcomeFound('Win', matchStats.matchesPlayed);
                     SIMULATOR.remainingSims = 0;
                 } else {
                     debugLog.clear();
                     if (!SIMULATOR.remainingSims) {
-                        debugLog.appendLines('No wins found after ' + matchStats.matchesPlayed + ' games. No debug output to display.');
+                        debugMessages.logOutcomeNotFound('wins', matchStats.matchesPlayed);
                     }
                 }
             } else if (debugLog.massDebug) {
-                debugLog.appendLines('');
-                if (result === 'draw') {
-                    debugLog.appendLines('<h1>DRAW</h1>');
-                } else if (result) {
-                    debugLog.appendLines('<h1>WIN</h1>');
-                } else {
-                    debugLog.appendLines('<h1>LOSS</h1>');
-                }
+                debugMessages.logOutcome(result);
             }
 
-            if (debugLog.massDebug && SIMULATOR.remainingSims) {
-                debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
-            }
+            debugMessages.logStartBattle(SIMULATOR.remainingSims);
         }
 
         return result;

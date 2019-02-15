@@ -17,7 +17,14 @@ define('debugMessages', [
         logScorch: logScorch,
         logNullified: logNullified,
         logInvisibile: logInvisibile,
-        logBuff: logBuff
+        logStatusEffect: logStatusEffect,
+        logInflicts: logInflicts,
+        logGainAttack: logGainAttack,
+        logSkillVerb: logSkillVerb,
+        logOutcome: logOutcome,
+        logStartBattle: logStartBattle,
+        logOutcomeFound: logOutcomeFound,
+        logOutcomeNotFound: logOutcomeNotFound
     };
 
     function logDead(unit) {
@@ -28,13 +35,37 @@ define('debugMessages', [
 
     function logCardPlayed(commander, card) {
         if ((debugLog.enabled || debugLog.cardsPlayedOnly)) {
-            debugLog.appendLines(log.name(commander) + ' plays ' + log.name(card));
+            debugLog.appendLines(log.name(commander) + ' plays ' + getTargetName(card));
         }
     }
 
-    function logDamage(sourceUnit, targetUnit, damage, logFn) {
+    function logDamage(sourceUnit, targetUnit, skillName, skillVerb, damageInfo, logFn) {
         if (debugLog.enabled) {
-            logFn(sourceUnit, targetUnit, damage);
+            debugLog.append('<u>(' + skillName + ': +' + damageInfo.originalDamage);
+            if(damageInfo.modifiers) {
+                Object.keys(damageInfo.modifiers).forEach(function (name) {
+                    var value = damageInfo.modifiers[name];
+                    if(value) {
+                        debugLog.append(' ' + name + ': ' + (value > 0 ? '+' : '') + value);
+                    }
+                });
+            }
+            debugLog.appendLines(') = ' + (damageInfo.damage || damageInfo.originalDamage) + ' damage</u>');
+
+            if(sourceUnit) {
+                debugLog.append(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(targetUnit, sourceUnit) + ' for ' + damageInfo.damage + ' damage');
+            } else {
+                debugLog.append(log.name(targetUnit) + ' takes ' + skillVerb + ' damage');
+            }
+           
+            debugLog.append(!targetUnit.isAlive() ? ' and it dies' : '');
+
+            var additionalDebug = logFn && logFn();
+            if (additionalDebug) {
+                debugLog.append(additionalDebug);
+            }
+
+            debugLog.appendLines();
         }
     }
 
@@ -59,27 +90,30 @@ define('debugMessages', [
 
     function logScorch(sourceUnit, amount, targetUnit) {
         if (debugLog.enabled) {
-            var targetName = (targetUnit ? log.name(targetUnit) : 'itself');
-            debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + amount + ') on ' + targetName);
+            debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + amount + ') on ' + getTargetName(targetUnit, sourceUnit));
         }
     }
 
     function logNullified(sourceUnit, skillVerb, target) {
         if (debugLog.enabled) {
-            debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target) + ' but it is nullified!');
+            logSkillStopped(sourceUnit, skillVerb, target, 'nullified');
         }
     }
 
     function logInvisibile(sourceUnit, skillVerb, target) {
         if (debugLog.enabled) {
-            debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target) + ' but it is invisible!');
+            logSkillStopped(sourceUnit, skillVerb, target, 'invisible');
         }
     }
 
-    function logBuff(sourceUnit, skillVerb, target, enhanced, amount, additionalDebug) {
+    function logSkillStopped(sourceUnit, skillVerb, target, reason) {
+        debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target, sourceUnit) + ' but it is ' + reason + '!');
+    }
+
+    function logStatusEffect(sourceUnit, skillVerb, target, enhanced, amount, additionalDebug) {
         if (debugLog.enabled) {
             if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-            var line = log.name(sourceUnit) + ' ' + skillVerb + ' ' + log.name(target) + ' by ' + amount;
+            var line = log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target, sourceUnit) + (amount ? ' by ' + amount : '');
             if (additionalDebug) {
                 line += additionalDebug(target, amount);
             }
@@ -87,8 +121,52 @@ define('debugMessages', [
         }
     }
 
-    function getTargetName(source, target) {
-        return (source === target ? 'itself' : log.name(target));
+    function logGainAttack(unit, skillVerb, amount) {
+        if (debugLog.enabled) {
+            debugLog.appendLines(log.name(unit) + ' ' + skillVerb + ' and gains ' + amount + " attack!</br>");
+        }
+    }
+
+    function logInflicts(sourceUnit, statusName, statusValue, target) {
+        if (debugLog.enabled) {
+            debugLog.appendLines(log.name(sourceUnit) + ' inflicts ' + statusName + (statusValue ? '(' + statusValue + ')' : '') + ' on ' + getTargetName(target, sourceUnit));
+        }
+    }
+
+    function logSkillVerb(sourceUnit, skillVerb, target) {
+        if (debugLog.enabled) {
+            debugLog.appendLines(log.name(sourceUnit) + '  ' + skillVerb + ' ' + getTargetName(target, sourceUnit));
+        }
+    }
+
+    function logStartBattle(remainingSims) {
+        if(debugLog.massDebug && remainingSims) {
+        debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
+        }
+    }
+
+    function logOutcomeFound(desiredOutcome, matchesPlayed) {
+        debugLog.prependLines(desiredOutcome + ' found after ' + matchesPlayed + ' games. Displaying debug output...', '');
+        debugLog.appendLines('', '<h1>' + desiredOutcome.toUpperCase() + '</h1>');
+    }
+
+    function logOutcomeNotFound(desiredOutcome, matchesPlayed) {
+        debugLog.appendLines('No ' + desiredOutcome + ' found after ' + matchesPlayed + ' games. No debug output to display.');
+    }
+
+    function logOutcome(result) {
+        debugLog.appendLines('');
+        if (result === 'draw') {
+            debugLog.appendLines('<h1>DRAW</h1>');
+        } else if (result) {
+            debugLog.appendLines('<h1>WIN</h1>');
+        } else {
+            debugLog.appendLines('<h1>LOSS</h1>');
+        }
+    }
+
+    function getTargetName(target, source) {
+        return (target === source ? 'itself' : log.name(target));
     }
 
     return api;
