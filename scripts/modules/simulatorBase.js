@@ -2145,7 +2145,7 @@ define('simulatorBase', [
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
-		var damage = damage + enfeeble - shrouded;
+		var damage = originalDamage + enfeeble - shrouded;
 		if (warded) {
 			damage -= applyDamageReduction(target, 'warded', damage);
 		}
