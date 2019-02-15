@@ -50,22 +50,24 @@ module.exports = function (grunt) {
                     'scripts/modules/config.js',
                     'scripts/modules/matchStats.js',
 
-                    'scripts/modules/simController.js',
-
                     'scripts/mocks.js',
+
                     //'scripts/modules/debugLog.js',
 
                     //'scripts/modules/log.js',
 
                     'scripts/modules/debugMessages.js',
+                    'scripts/modules/debugDisabled.js',
+
+                    'scripts/modules/simController.js',
 
                     'scripts/modules/bgeApi.js',
 
                     'scripts/modules/loadDeck.js',
 
                     //'scripts/modules/startup.js',
-                    'scripts/single_threaded.js',
-                    'scripts/simulator_base.js',
+                    'scripts/modules/simulatorBase.js',
+                    'scripts/modules/singleThreaded.js',
                     'scripts/testSimEngine.js'
                 ],
                 dest: 'dist/engineTest.js'
@@ -76,11 +78,12 @@ module.exports = function (grunt) {
                     'scripts/modules/matchStats.js',
                     'scripts/modules/debugLog.js',
 
-                    'scripts/modules/simController.js',
-
                     'scripts/modules/log.js',
 
                     'scripts/modules/debugMessages.js',
+                    'scripts/modules/debugDisabled.js',
+
+                    'scripts/modules/simController.js',
 
                     'scripts/modules/bgeApi.js',
 
@@ -92,9 +95,8 @@ module.exports = function (grunt) {
                     'scripts/modules/startup.js',
 
                     'scripts/data/fixGlobals.js',
-                    'scripts/sim_controller.js',
-                    'scripts/single_threaded.js',
-                    'scripts/simulator_base.js',
+                    'scripts/modules/simulatorBase.js',
+                    'scripts/modules/singleThreaded.js',
                     'scripts/ng-simulator-controller.js',
                     'scripts/localstorage-controller.js',
                     'scripts/gui_script.js',

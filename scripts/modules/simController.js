@@ -1,7 +1,13 @@
 define('simController', [
-    'matchTimer'
+    'matchTimer',
+    'debugLog',
+    'debugMessages',
+    'debugDisabled'
 ], function (
-    matchTimer
+    matchTimer,
+    debugLog,
+    debugMessages,
+    debugDisabled
 ) {
     "use strict";
 
@@ -10,7 +16,8 @@ define('simController', [
         onDebugEnd: noop,
 
         endSimsCallback: null,
-        stop_sims_callback: null
+        stop_sims_callback: null,
+        setDebugLogger: setDebugLogger
     };
 
     function noop() {}
@@ -31,6 +38,10 @@ define('simController', [
         SIM_CONTROLLER.onDebugEnd(result, matchPoints);
 
         if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
+    }
+
+    function setDebugLogger() {
+        this.logger = (debugLog.enabled ? debugMessages : debugDisabled);
     }
 
     // temporary stop-gap so HTML files can reference this module

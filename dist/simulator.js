@@ -52,45 +52,6 @@ var current_timeout;;define('matchStats', [], function() {
     }
 
     return api;
-});;define('simController', [
-    'matchTimer'
-], function (
-    matchTimer
-) {
-    "use strict";
-
-    var SIM_CONTROLLER = {
-        debugEnd: debugEnd,
-        onDebugEnd: noop,
-
-        endSimsCallback: null,
-        stop_sims_callback: null
-    };
-
-    function noop() {}
-
-    // Loops through all simulations
-    // - keeps track of number of simulations and outputs status
-    function debugEnd() {
-
-        SIMULATOR.remainingSims = 0;
-        matchTimer.stop();
-
-        var result = SIM_CONTROLLER.processSimResult();
-        var matchPoints;
-        if (SIMULATOR.config.cpuHash) {
-            matchPoints = SIMULATOR.calculatePoints();
-        }
-
-        SIM_CONTROLLER.onDebugEnd(result, matchPoints);
-
-        if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
-    }
-
-    // temporary stop-gap so HTML files can reference this module
-    window.SIM_CONTROLLER = SIM_CONTROLLER;
-
-    return SIM_CONTROLLER;
 });;define('log', [
     'factions',
     'skillApi'
@@ -164,9 +125,11 @@ function(
     return api;
 });;define('debugMessages', [
     'debugLog',
+    'skillApi',
     'log'
-], function(
+], function (
     debugLog,
+    skillApi,
     log
 ) {
     'use strict';
@@ -177,148 +140,193 @@ function(
         logDamage: logDamage,
         logNotImplemented: logNotImplemented,
         logDualstrike: logDualstrike,
-        logSilenced: logSilenced,
+        logCannotValor: logCannotValor,
+        logSilenced: _logCannotUseSkills('silenced'),
+        logFrozen: _logCannotAttack('frozen'),
+        logWeakened: _logCannotAttack('weakened'),
+        logImbuesNew: logImbuesNew,
+        logImbuesExisting: logImbuesExisting,
         logScorch: logScorch,
         logNullified: logNullified,
         logInvisibile: logInvisibile,
         logStatusEffect: logStatusEffect,
         logInflicts: logInflicts,
         logGainAttack: logGainAttack,
-        logSkillVerb: logSkillVerb,
+        logGainHealth: logGainHealth,
+        logChargeSkill: logChargeSkill,
+        logReanimate: logReanimate,
+        logAction: logAction,
         logOutcome: logOutcome,
         logStartBattle: logStartBattle,
-        logOutcomeFound: logOutcomeFound,
-        logOutcomeNotFound: logOutcomeNotFound
+        logTurnStart: logTurnStart,
+        logTurnEnd: logTurnEnd
     };
 
     function logDead(unit) {
-        if(debugLog.enabled) {
-            debugLog.appendLines(log.name(unit) + ' <strong>is removed from field</strong>');
-        }
+        debugLog.appendLines(log.name(unit) + ' <strong>is removed from field</strong>');
     }
 
     function logCardPlayed(commander, card) {
         if ((debugLog.enabled || debugLog.cardsPlayedOnly)) {
-            debugLog.appendLines(log.name(commander) + ' plays ' + getTargetName(card));
+            debugLog.appendLines(log.name(commander) + ' plays ' + _getTargetName(card));
         }
     }
 
     function logDamage(sourceUnit, targetUnit, skillName, skillVerb, damageInfo, logFn) {
-        if (debugLog.enabled) {
-            debugLog.append('<u>(' + skillName + ': +' + damageInfo.originalDamage);
-            if(damageInfo.modifiers) {
-                Object.keys(damageInfo.modifiers).forEach(function (name) {
-                    var value = damageInfo.modifiers[name];
-                    if(value) {
-                        debugLog.append(' ' + name + ': ' + (value > 0 ? '+' : '') + value);
-                    }
-                });
-            }
-            debugLog.appendLines(') = ' + (damageInfo.damage || damageInfo.originalDamage) + ' damage</u>');
-
-            if(sourceUnit) {
-                debugLog.append(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(targetUnit, sourceUnit) + ' for ' + damageInfo.damage + ' damage');
-            } else {
-                debugLog.append(log.name(targetUnit) + ' takes ' + skillVerb + ' damage');
-            }
-           
-            debugLog.append(!targetUnit.isAlive() ? ' and it dies' : '');
-
-            var additionalDebug = logFn && logFn();
-            if (additionalDebug) {
-                debugLog.append(additionalDebug);
-            }
-
-            debugLog.appendLines();
+        debugLog.append('<u>(' + skillName + ': +' + damageInfo.originalDamage);
+        if (damageInfo.modifiers) {
+            Object.keys(damageInfo.modifiers).forEach(function (name) {
+                var value = damageInfo.modifiers[name];
+                if (value) {
+                    debugLog.append(' ' + name + ': ' + (value > 0 ? '+' : '') + value);
+                }
+            });
         }
+        debugLog.appendLines(') = ' + (damageInfo.damage || damageInfo.originalDamage) + ' damage</u>');
+
+        if (sourceUnit) {
+            debugLog.append(log.name(sourceUnit) + ' ' + skillVerb + ' ' + _getTargetName(targetUnit, sourceUnit) + ' for ' + damageInfo.damage + ' damage');
+        } else {
+            debugLog.append(log.name(targetUnit) + ' takes ' + skillVerb + ' damage');
+        }
+
+        debugLog.append(!targetUnit.isAlive() ? ' and it dies' : '');
+
+        var additionalDebug = logFn && logFn();
+        if (additionalDebug) {
+            debugLog.append(additionalDebug);
+        }
+
+        debugLog.appendLines();
     }
 
     function logNotImplemented(skillID, unit) {
-		if (debugLog.enabled) {
-			var skillName = (SKILL_DATA[skillID] ? SKILL_DATA[skillID].name : skillID);
-			debugLog.appendLines(log.name(unit) + ' attempts to use ' + skillName + ', but it is not implemented.');
-		}
+        var skillName = (SKILL_DATA[skillID] ? SKILL_DATA[skillID].name : skillID);
+        debugLog.appendLines(log.name(unit) + ' attempts to use ' + skillName + ', but it is not implemented.');
     }
 
-    function logSilenced(unit) {
-        if (debugLog.enabled) {
-            debugLog.appendLines(log.name(unit) + " is silenced and cannot use skills");
+    function _logCannotUseSkills(reason) {
+        return _logCannotDo(reason, 'use skills');
+    }
+
+    function logReanimate(unit) {
+        debugLog.appendLines(log.name(unit) + ' is reanimated</br>');
+    }
+
+    function logImbuesNew(sourceUnit, targetUnit, imbuedSkill, amount) {
+        debugLog.appendLines(log.name(sourceUnit) + ' imbues ' + log.name(targetUnit, false) + ' existing ' + log.skill(imbuedSkill) + ' by ' + amount);
+    }
+
+    function logImbuesExisting(sourceUnit, targetUnit, imbuedSkill, amount) {
+        debugLog.appendLines(log.name(sourceUnit) + ' imbues ' + log.name(targetUnit, false) + ' with ' + log.skill(imbuedSkill) + '(' + amount + ')');
+    }
+
+    function logCannotValor(unit, enemy) {
+        debugLog.appendLines(log.name(unit) + ' activates valor but ');
+        if (!enemy) {
+            debugLog.appendLines('there is no opposing enemy.');
+        } else {
+            debugLog.appendLines('enemy is not strong enough.');
         }
     }
-    
+
+    function _logCannotAttack(reason) {
+        return _logCannotDo(reason, 'attack');
+    }
+
+    function _logCannotDo(reason, action) {
+        return function logCannotDoAction(unit) {
+            debugLog.appendLines(log.name(unit) + ' is ' + reason + ' and cannot ' + action);
+        };
+    }
+
     function logDualstrike(unit) {
-        if (debugLog.enabled) {
-            debugLog.appendLines(log.name(unit) + ' activates dualstrike');
-        }
+        debugLog.appendLines(log.name(unit) + ' activates dualstrike');
     }
 
     function logScorch(sourceUnit, amount, targetUnit) {
-        if (debugLog.enabled) {
-            debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + amount + ') on ' + getTargetName(targetUnit, sourceUnit));
-        }
+        debugLog.appendLines(log.name(sourceUnit) + ' inflicts scorch(' + amount + ') on ' + _getTargetName(targetUnit, sourceUnit));
     }
 
     function logNullified(sourceUnit, skillVerb, target) {
-        if (debugLog.enabled) {
-            logSkillStopped(sourceUnit, skillVerb, target, 'nullified');
-        }
+        logSkillStopped(sourceUnit, skillVerb, target, 'nullified');
     }
 
     function logInvisibile(sourceUnit, skillVerb, target) {
-        if (debugLog.enabled) {
-            logSkillStopped(sourceUnit, skillVerb, target, 'invisible');
-        }
+        logSkillStopped(sourceUnit, skillVerb, target, 'invisible');
     }
 
     function logSkillStopped(sourceUnit, skillVerb, target, reason) {
-        debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target, sourceUnit) + ' but it is ' + reason + '!');
+        debugLog.appendLines(log.name(sourceUnit) + ' ' + skillVerb + ' ' + _getTargetName(target, sourceUnit) + ' but it is ' + reason + '!');
     }
 
     function logStatusEffect(sourceUnit, skillVerb, target, enhanced, amount, additionalDebug) {
-        if (debugLog.enabled) {
-            if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
-            var line = log.name(sourceUnit) + ' ' + skillVerb + ' ' + getTargetName(target, sourceUnit) + (amount ? ' by ' + amount : '');
-            if (additionalDebug) {
-                line += additionalDebug(target, amount);
-            }
-            debugLog.appendLines(line);
+        if (enhanced) debugLog.appendLines('<u>(Enhance: +' + enhanced + ')</u>');
+        var line = log.name(sourceUnit) + ' ' + skillVerb + ' ' + _getTargetName(target, sourceUnit) + (amount ? ' by ' + amount : '');
+        if (additionalDebug) {
+            line += additionalDebug(target, amount);
         }
+        debugLog.appendLines(line);
     }
 
     function logGainAttack(unit, skillVerb, amount) {
-        if (debugLog.enabled) {
-            debugLog.appendLines(log.name(unit) + ' ' + skillVerb + ' and gains ' + amount + " attack!</br>");
+        debugLog.appendLines(log.name(unit) + ' ' + skillVerb + ' and gains ' + amount + " attack!</br>");
+    }
+
+    function logGainHealth(unit, verb, amount) {
+        debugLog.appendLines(log.name(unit) + ' ' + verb + ' ' + amount + ' health');
+    }
+
+    function logChargeSkill(unit, skill) {
+        if (skill.countdown) {
+            debugLog.appendLines(log.name(unit) + ' charges ' + skillApi.nameFromId(skill.id) + ' (ready in ' + skill.countdown + ' turns)');
+        } else {
+            debugLog.appendLines(log.name(unit) + ' readies ' + skillApi.nameFromId(skill.id));
         }
     }
 
     function logInflicts(sourceUnit, statusName, statusValue, target) {
-        if (debugLog.enabled) {
-            debugLog.appendLines(log.name(sourceUnit) + ' inflicts ' + statusName + (statusValue ? '(' + statusValue + ')' : '') + ' on ' + getTargetName(target, sourceUnit));
-        }
+        debugLog.appendLines(log.name(sourceUnit) + ' inflicts ' + statusName + (statusValue ? '(' + statusValue + ')' : '') + ' on ' + _getTargetName(target, sourceUnit));
     }
 
-    function logSkillVerb(sourceUnit, skillVerb, target) {
-        if (debugLog.enabled) {
-            debugLog.appendLines(log.name(sourceUnit) + '  ' + skillVerb + ' ' + getTargetName(target, sourceUnit));
-        }
+    function logAction(sourceUnit, skillVerb, target) {
+        debugLog.appendLines(log.name(sourceUnit) + '  ' + skillVerb + (target ? ' ' + _getTargetName(target, sourceUnit) : ''));
     }
 
     function logStartBattle(remainingSims) {
-        if(debugLog.massDebug && remainingSims) {
-        debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
+        if (debugLog.massDebug && remainingSims) {
+            debugLog.appendLines('', '<hr>NEW BATTLE BEGINS<hr>');
         }
     }
 
-    function logOutcomeFound(desiredOutcome, matchesPlayed) {
+    function logTurnStart(turn, activePlayer, field, deck) {
+        var commander = log.name(field[activePlayer]['commander']);
+        var deck = deck[activePlayer].deck;
+        debugLog.appendLines('<div id="turn_' + turn + '" class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander + '</u>');
+
+        if (turn <= 2) {
+            debugLog.appendLines(_logDrawCard(commander, deck, 0));
+            debugLog.appendLines(_logDrawCard(commander, deck, 1));
+        }
+        debugLog.appendLines(_logDrawCard(commander, deck, 2));
+    }
+
+    function logTurnEnd(turn) {
+        if (debugLog.massDebug) {
+            debugLog.append('<u>Turn ' + turn + ' ends</u></br></br></div>');
+        }
+    }
+
+    function _logOutcomeFound(desiredOutcome, matchesPlayed) {
         debugLog.prependLines(desiredOutcome + ' found after ' + matchesPlayed + ' games. Displaying debug output...', '');
         debugLog.appendLines('', '<h1>' + desiredOutcome.toUpperCase() + '</h1>');
     }
 
-    function logOutcomeNotFound(desiredOutcome, matchesPlayed) {
+    function _logOutcomeNotFound(desiredOutcome, matchesPlayed) {
         debugLog.appendLines('No ' + desiredOutcome + ' found after ' + matchesPlayed + ' games. No debug output to display.');
     }
 
-    function logOutcome(result) {
+    function _logOutcome(result) {
         debugLog.appendLines('');
         if (result === 'draw') {
             debugLog.appendLines('<h1>DRAW</h1>');
@@ -329,11 +337,113 @@ function(
         }
     }
 
-    function getTargetName(target, source) {
+    function logOutcome(result, matchesPlayed, remainingSims) {
+        if (debugLog.firstLoss) {
+            if (result === 'draw') {
+                _logOutcomeFound('Draw', matchesPlayed);
+            } else if (result) {
+                debugLog.clear();
+                if (!remainingSims) {
+                    _logOutcomeNotFound('losses', matchesPlayed);
+                }
+            } else {
+                _logOutcomeFound('Loss', matchesPlayed);
+            }
+        } else if (debugLog.firstWin) {
+            if (result && result !== 'draw') {
+                _logOutcomeFound('Win', matchesPlayed);
+            } else {
+                debugLog.clear();
+                if (!remainingSims) {
+                    _logOutcomeNotFound('wins', matchesPlayed);
+                }
+            }
+        } else if (debugLog.massDebug) {
+            _logOutcome(result);
+        }
+    }
+    
+
+    function _getTargetName(target, source) {
         return (target === source ? 'itself' : log.name(target));
     }
 
+    function _logDrawCard(commander, deck, i) {
+        var card = deck[i];
+        if (card) {
+            return commander + ' draws ' + log.name(card, true) + '';
+        } else {
+            return '';
+        }
+    }
+
     return api;
+});;define('debugDisabled', [
+    'debugMessages'
+], function (
+    debugMessages
+) {
+    'use strict';
+
+    var api = {};
+
+    Object.keys(debugMessages).forEach(function makeFake(methodName) {
+        api[methodName] = function () { };
+    });
+
+    api.logCardPlayed = debugMessages.logCardPlayed;
+
+    return api;
+});;define('simController', [
+    'matchTimer',
+    'debugLog',
+    'debugMessages',
+    'debugDisabled'
+], function (
+    matchTimer,
+    debugLog,
+    debugMessages,
+    debugDisabled
+) {
+    "use strict";
+
+    var SIM_CONTROLLER = {
+        debugEnd: debugEnd,
+        onDebugEnd: noop,
+
+        endSimsCallback: null,
+        stop_sims_callback: null,
+        setDebugLogger: setDebugLogger
+    };
+
+    function noop() {}
+
+    // Loops through all simulations
+    // - keeps track of number of simulations and outputs status
+    function debugEnd() {
+
+        SIMULATOR.remainingSims = 0;
+        matchTimer.stop();
+
+        var result = SIM_CONTROLLER.processSimResult();
+        var matchPoints;
+        if (SIMULATOR.config.cpuHash) {
+            matchPoints = SIMULATOR.calculatePoints();
+        }
+
+        SIM_CONTROLLER.onDebugEnd(result, matchPoints);
+
+        if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
+    }
+
+    function setDebugLogger() {
+        this.logger = (debugLog.enabled ? debugMessages : debugDisabled);
+    }
+
+    // temporary stop-gap so HTML files can reference this module
+    window.SIM_CONTROLLER = SIM_CONTROLLER;
+
+    return SIM_CONTROLLER;
 });;define('bgeApi', [
     'log',
     'cardApi',
@@ -1688,7 +1798,8 @@ define('ui', [
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!urlHelper.paramDefined("seedtest")) {
-            var config = ui.getConfiguration();
+			var config = ui.getConfiguration();
+			simController.setDebugLogger();
             var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
@@ -2012,229 +2123,24 @@ for(var id in FUSIONS) {
 }
 
 // Remove Iceshatter Barrier
-delete BATTLEGROUNDS[104];;(function () {
-    "use strict";
-
-    var bgeApi = require('bgeApi');
-    var matchTimer = require('matchTimer');
-    var urlHelper = require('urlHelper');
-    var debugLog = require('debugLog');
-    var debugMessages = require('debugMessages');
-    var simController = require('simController');
-    var ui = require('ui');
-    var matchStats = require('matchStats');
-
-    // Initialize simulation loop - runs once per simulation session
-    simController.startsim = function () {
-        matchStats.totalTurns = 0;
-        matchTimer.reset();
-        debugLog.clear();
-        matchStats.matchesPlayed = 0;
-        run_sims_batch = 0;
-
-        var config = ui.getConfiguration();
-        SIMULATOR.battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
-
-        ui.hide();
-
-        SIMULATOR.remainingSims = config.simsToRun;
-        SIMULATOR.setupDecks(config);
-
-        matchStats.matchesWon = 0;
-        matchStats.matchesLost = 0;
-        matchStats.matchesDrawn = 0;
-        matchStats.totalPoints = 0;
-
-        ui.displayText(""); // Clear display
-        if (!config.userControlled) {
-            ui.hideTable();
-            ui.setSimStatus("Initializing simulations...");
-        } else {
-            ui.setSimStatus("");
-        }
-
-        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
-        current_timeout = setTimeout(runSims, 0, config);
-
-        return false;
-    };
-
-    // Interrupt simulations
-    simController.stopsim = function () {
-        matchTimer.stop();
-        var elapse = matchTimer.elapsed();
-        var simpersec = matchStats.matchesPlayed / elapse;
-        simpersec = simpersec.toFixed(2);
-        SIMULATOR.simulating = false;
-
-        // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
-        if (!SIMULATOR.user_controlled) {
-            ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
-            ui.showWinrate();
-        }
-        ui.show();
-
-        if (simController.stop_sims_callback) simController.stop_sims_callback();
-    };
-
-    function runSims(config) {
-        if (SIMULATOR.user_controlled) {
-            if (runSim(config, true)) {
-                simController.debugEnd();
-            }
-        } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
-            runSim(config, true);
-            simController.debugEnd();
-        } else if (SIMULATOR.remainingSims > 0) {
-            // Interval output - speeds up simulations
-            if (run_sims_count >= run_sims_batch) {
-                var simpersecbatch = 0;
-                if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
-                    run_sims_count = 0;
-                    var elapse = matchTimer.elapsed();
-
-                    var batch_elapse = matchTimer.batchElapsed();
-                    if (batch_elapse === 0) {
-                        simpersecbatch = 0;
-                    } else {
-                        simpersecbatch = run_sims_batch / batch_elapse;
-                    }
-
-                    ui.setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
-                    ui.showWinrate();
-                }
-                run_sims_batch = 1;
-                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
-                    run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > SIMULATOR.remainingSims) // Also limit by how many sims are left
-                    run_sims_batch = SIMULATOR.remainingSims;
-
-                // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) {
-                    run_sims_batch = 1;
-                }
-
-                matchTimer.startBatch();
-                current_timeout = setTimeout(runSims, 1, config);
-                for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
-                    runSim(config);
-                }
-            }
-        } else {
-            run_sims_count = 0;
-            run_sims_batch = 0;
-            matchTimer.stop();
-
-            var elapse = matchTimer.elapsed();
-            var simpersec = matchStats.matchesPlayed / elapse;
-            simpersec = simpersec.toFixed(2);
-
-            ui.displayText(debugLog.getLog());
-            ui.setSimStatus("Simulations complete.", elapse, simpersec);
-            ui.showWinrate();
-
-            ui.show();
-
-            if (simController.endSimsCallback) simController.endSimsCallback();
-        }
-    }
-
-    // Initializes a single simulation - runs once before each individual simulation
-    // - needs to reset the decks and fields before each simulation
-    var seedtest = (urlHelper.paramValue("seedtest") || 0);
-    function runSim(config, skipResults) {
-        if (seedtest) {
-            Math.seedrandom(seedtest++);
-        }
-        if (!SIMULATOR.simulate(config)) return false;
-        if (!skipResults) simController.processSimResult();
-    }
-
-    simController.processSimResult = function () {
-
-        var result;
-        if (!SIMULATOR.field.player.commander.isAlive()) {
-            result = false;
-        }
-        else if (!SIMULATOR.field.cpu.commander.isAlive()) {
-            result = true;
-        }
-        else {
-            result = 'draw';
-        }
-
-        if (run_sims_batch > 0) {
-            if (SIMULATOR.remainingSims > 0) SIMULATOR.remainingSims--;
-            run_sims_count++;
-        }
-
-        // Increment wins/losses/games
-        if (result === 'draw') {
-            matchStats.matchesDrawn++;
-        } else if (result) {
-            matchStats.matchesWon++;
-        } else {
-            matchStats.matchesLost++;
-        }
-        matchStats.totalPoints += SIMULATOR.calculatePoints();
-        matchStats.matchesPlayed++;
-
-        // Increment total turn count
-        matchStats.totalTurns += SIMULATOR.simulation_turns;
-
-        if (debugLog.enabled || debugLog.cardsPlayedOnly) {
-            if (debugLog.firstLoss) {
-                if (result === 'draw') {
-                    debugMessages.logOutcomeFound('Draw', matchStats.matchesPlayed);
-                    SIMULATOR.remainingSims = 0;
-                } else if (result) {
-                    debugLog.clear();
-                    if (!SIMULATOR.remainingSims) {
-                        debugMessages.logOutcomeNotFound('losses', matchStats.matchesPlayed);
-                    }
-                } else {
-                    debugMessages.logOutcomeFound('Loss', matchStats.matchesPlayed);
-                    SIMULATOR.remainingSims = 0;
-                }
-            } else if (debugLog.firstWin) {
-                if (result && result !== 'draw') {
-                    debugMessages.logOutcomeFound('Win', matchStats.matchesPlayed);
-                    SIMULATOR.remainingSims = 0;
-                } else {
-                    debugLog.clear();
-                    if (!SIMULATOR.remainingSims) {
-                        debugMessages.logOutcomeNotFound('wins', matchStats.matchesPlayed);
-                    }
-                }
-            } else if (debugLog.massDebug) {
-                debugMessages.logOutcome(result);
-            }
-
-            debugMessages.logStartBattle(SIMULATOR.remainingSims);
-        }
-
-        return result;
-    };
-
-    // Global variables used by single-threaded simulator
-    var run_sims_count = 0;
-    var run_sims_batch = 0;
-})();;var SIMULATOR = {};
-(function () {
+delete BATTLEGROUNDS[104];;define('simulatorBase', [
+	'cardApi',
+	'base64',
+	'unitInfoHelper',
+	'loadDeck',
+	'simController'
+], function (
+	cardApi,
+	base64,
+	unitInfoHelper,
+	loadDeck,
+	simController
+) {
 	"use strict";
 
-	var cardApi = require('cardApi');
-	var skillApi = require('skillApi');
-	var base64 = require('base64');
-	var unitInfoHelper = require('unitInfoHelper');
-	var loadDeck = require('loadDeck');
-	var simController = require('simController');
-
-	var debugLog = require('debugLog');
-	var log = require('log');
-	var debugMessages = require('debugMessages');
-
+	var SIMULATOR = {};
+	window.SIMULATOR = SIMULATOR;
+	
 	var max_turns = 100;
 	var playerDeckCached;
 	var cpuDeckCached;
@@ -2257,7 +2163,7 @@ delete BATTLEGROUNDS[104];;(function () {
 		}
 
 		if (!quiet) {
-			debugMessages.logCardPlayed(field[p].commander, card);
+			simController.logger.logCardPlayed(field[p].commander, card);
 		}
 
 		if (card.isTrap()) {
@@ -2308,13 +2214,13 @@ delete BATTLEGROUNDS[104];;(function () {
 			var current_assault = units[key];
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
-				debugMessages.logDead(current_assault);
+				simController.logger.logDead(current_assault);
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						debugMessages.logDead(current_assault);
+						simController.logger.logDead(current_assault);
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
@@ -2375,7 +2281,7 @@ delete BATTLEGROUNDS[104];;(function () {
 	}
 
 	function notImplemented(sourceUnit, skill) {
-		debugMessages.logNotImplemented(sourceUnit, skill);
+		simController.logger.logNotImplemented(sourceUnit, skill);
 		return 0;
 	}
 
@@ -2408,15 +2314,12 @@ delete BATTLEGROUNDS[104];;(function () {
 		if (!len) return;
 
 		if (sourceCard.silenced) {
-			debugMessages.logSilenced(sourceCard);
+			simController.logger.logSilenced(sourceCard);
 			return;
 		}
 
 		var dualstrike = sourceCard.dualstrike_triggered;
-		if (debugLog.enabled && dualstrike) {
-			// var main attack loop deal with resetting timer
-			debugMessages.logDualstrike(sourceCard);
-		}
+		simController.logger.logDualstrike(sourceCard);
 
 		var activations = (dualstrike ? 2 : 1);
 		var isAlive = makeLivenessCheck(sourceCard);
@@ -2500,7 +2403,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				sourceUnit.scorched.amount += scorch;
 				sourceUnit.scorched.timer = 2;
 			}
-			debugMessages.logScorch(sourceUnit, scorch);
+			simController.logger.logScorch(sourceUnit, scorch);
 
 			return 1;
 		},
@@ -2550,7 +2453,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				debugMessages.logScorch(sourceUnit, scorch, target);
+				simController.logger.logScorch(sourceUnit, scorch, target);
 
 				affected++;
 			}
@@ -2608,7 +2511,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					debugMessages.logNullified(sourceUnit, 'protects', target);
+					simController.logger.logNullified(sourceUnit, 'protects', target);
 					continue;
 				}
 
@@ -2627,7 +2530,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				if (additionalStatus) {
 					target[additionalStatus] = (target[additionalStatus] || 0) + amount;
 				}
-				debugMessages.logStatusEffect(sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
+				simController.logger.logStatusEffect(sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
 			}
 
 			return affected;
@@ -2674,7 +2577,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					debugMessages.logNullified(sourceUnit, 'heals', target);
+					simController.logger.logNullified(sourceUnit, 'heals', target);
 					continue;
 				}
 
@@ -2688,7 +2591,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 				if (amount > target['health'] - target['health_left']) amount = target['health'] - target['health_left'];
 				target['health_left'] += amount;
-				debugMessages.logStatusEffect(sourceUnit, 'heals', target, enhanced, amount);
+				simController.logger.logStatusEffect(sourceUnit, 'heals', target, enhanced, amount);
 			}
 
 			return affected;
@@ -2740,7 +2643,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Evade
 				if (targetUnit.invisible) {
 					targetUnit.invisible--;
-					debugMessages.logInvisibile(sourceUnit, 'bolts', targetUnit);
+					simController.logger.logInvisibile(sourceUnit, 'bolts', targetUnit);
 					continue;
 				}
 
@@ -2761,7 +2664,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 
 				doDamage(sourceUnit, targetUnit, strike_damage, function () {
-					debugMessages.logDamage(sourceUnit, targetUnit, 'Strike', 'bolts', damageInfo, function() {
+					simController.logger.logDamage(sourceUnit, targetUnit, 'Strike', 'bolts', damageInfo, function() {
 						if (poisonDamage && !targetUnit.isAlive()) {
 							return ' and inflicts poison(' + poisonDamage + ') on it';
 						}
@@ -2822,7 +2725,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					debugMessages.logInvisibile(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target);
+					simController.logger.logInvisibile(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target);
 					continue;
 				}
 
@@ -2835,7 +2738,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					target.poisoned += intensify;
 				}
 
-				debugMessages.logStatusEffect(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target, enhanced, intensify);
+				simController.logger.logStatusEffect(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target, enhanced, intensify);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -2882,7 +2785,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 			sourceUnit.jammed = true;
 			sourceUnit.jammedSelf = true;
-			debugMessages.logStatusEffect(sourceUnit, 'freezes', sourceUnit);
+			simController.logger.logStatusEffect(sourceUnit, 'freezes', sourceUnit);
 
 			return 1;
 		},
@@ -2922,14 +2825,14 @@ delete BATTLEGROUNDS[104];;(function () {
 					target.invisible--;
 					// Missed - retry next turn
 					skill.countdown = 0;
-					debugMessages.logInvisibile(sourceUnit, 'freezes', target);
+					simController.logger.logInvisibile(sourceUnit, 'freezes', target);
 					continue;
 				}
 
 				affected++;
 
 				target.jammed = true;
-				debugMessages.logStatusEffect(sourceUnit, 'freezes', target);
+				simController.logger.logStatusEffect(sourceUnit, 'freezes', target);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -2976,7 +2879,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Evade
 				if (targetUnit.invisible) {
 					targetUnit.invisible--;
-					debugMessages.logInvisibile(sourceUnit, 'breathes frost at', targetUnit);
+					simController.logger.logInvisibile(sourceUnit, 'breathes frost at', targetUnit);
 					continue;
 				}
 
@@ -2990,7 +2893,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				frost_damage = damageInfo.damage;
 
 				doDamage(sourceUnit, targetUnit, frost_damage, function () {
-					debugMessages.logDamage(sourceUnit, targetUnit, 'Frostbreath', 'breathes frost at', damageInfo);
+					simController.logger.logDamage(sourceUnit, targetUnit, 'Frostbreath', 'breathes frost at', damageInfo);
 				});
 
 				if (targetUnit.backlash) {
@@ -3017,7 +2920,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 			target.heartseeker += heartseeker;
 			target.enfeebled += heartseeker;
-			debugMessages.logInflicts(sourceUnit, 'heartseeker', heartseeker, target);
+			simController.logger.logInflicts(sourceUnit, 'heartseeker', heartseeker, target);
 
 			return 1;
 		},
@@ -3117,14 +3020,14 @@ delete BATTLEGROUNDS[104];;(function () {
 			// Check Evade
 			if (target.invisible) {
 				target.invisible--;
-				debugMessages.logInvisibile(sourceUnit, skillVerb, target);
+				simController.logger.logInvisibile(sourceUnit, skillVerb, target);
 				continue;
 			}
 
 			affected++;
 
 			doApplyDebuff(target, amount);
-			debugMessages.logStatusEffect(sourceUnit, skillVerb, target, enhanced, amount);
+			simController.logger.logStatusEffect(sourceUnit, skillVerb, target, enhanced, amount);
 
 			if (target.backlash) {
 				backlash(sourceUnit, target);
@@ -3181,7 +3084,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 
 				target.attack_rally += amount;
-				debugMessages.logStatusEffect(sourceUnit, 'enlarges', target, enhanced, amount);
+				simController.logger.logStatusEffect(sourceUnit, 'enlarges', target, enhanced, amount);
 
 				affected++;
 			}
@@ -3233,7 +3136,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					debugMessages.logNullified(sourceUnit, 'empowers', target);
+					simController.logger.logNullified(sourceUnit, 'empowers', target);
 					continue;
 				}
 
@@ -3246,7 +3149,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 
 				target.attack_rally += amount;
-				debugMessages.logStatusEffect(sourceUnit, 'empowers', target, enhanced, amount);
+				simController.logger.logStatusEffect(sourceUnit, 'empowers', target, enhanced, amount);
 			}
 
 			return affected;
@@ -3280,11 +3183,11 @@ delete BATTLEGROUNDS[104];;(function () {
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
-						debugMessages.logNullified(sourceUnit, 'activates legion and empowers', target);
+						simController.logger.logNullified(sourceUnit, 'activates legion and empowers', target);
 					} else {
 						affected++;
 						target.attack_rally += amount;
-						debugMessages.logStatusEffect(sourceUnit, 'activates legion and empowers', target, enhanced, amount);
+						simController.logger.logStatusEffect(sourceUnit, 'activates legion and empowers', target, enhanced, amount);
 					}
 				}
 				target_key += 2;
@@ -3323,7 +3226,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 			if (fervorAmount) {
 				sourceUnit['attack_rally'] += fervorAmount;
-				debugMessages.logStatusEffect(sourceUnit, 'fervors', target, enhanced, fervorAmount);
+				simController.logger.logStatusEffect(sourceUnit, 'fervors', target, enhanced, fervorAmount);
 				return 1;
 			} else {
 				return 0;
@@ -3374,7 +3277,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					// Check Evade
 					if (targetUnit.invisible) {
 						targetUnit.invisible--;
-						debugMessages.logInvisibile(sourceUnit, 'throws a bomb at', targetUnit);
+						simController.logger.logInvisibile(sourceUnit, 'throws a bomb at', targetUnit);
 						continue;
 					}
 
@@ -3387,7 +3290,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					strike_damage = damageInfo.damage;
 
 					doDamage(sourceUnit, targetUnit, strike_damage, function () {
-						debugMessages.logDamage(sourceUnit, targetUnit, 'Barrage', 'throws a bomb at', damageInfo);
+						simController.logger.logDamage(sourceUnit, targetUnit, 'Barrage', 'throws a bomb at', damageInfo);
 					});
 				}
 			}
@@ -3443,7 +3346,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					debugMessages.logNullified(sourceUnit, 'enhances', target);
+					simController.logger.logNullified(sourceUnit, 'enhances', target);
 					continue;
 				}
 
@@ -3458,7 +3361,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					enhancements[s] = -mult;
 					var amountEnhanced = (mult * 100) + '%';
 				}
-				debugMessages.logStatusEffect(sourceUnit, 'enhances ' + s + ' of ', target, 0, amountEnhanced);
+				simController.logger.logStatusEffect(sourceUnit, 'enhances ' + s + ' of ', target, 0, amountEnhanced);
 			}
 
 			return affected;
@@ -3505,7 +3408,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					debugMessages.logNullified(sourceUnit, 'enrages', target);
+					simController.logger.logNullified(sourceUnit, 'enrages', target);
 					continue;
 				}
 
@@ -3516,7 +3419,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 
 				target['enraged'] += amount;
-				debugMessages.logStatusEffect(sourceUnit, 'enrages', target, enhanced, amount);
+				simController.logger.logStatusEffect(sourceUnit, 'enrages', target, enhanced, amount);
 			}
 
 			return affected;
@@ -3572,7 +3475,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					debugMessages.logNullified(sourceUnit, 'enhances', target);
+					simController.logger.logNullified(sourceUnit, 'enhances', target);
 					continue;
 				}
 
@@ -3581,10 +3484,10 @@ delete BATTLEGROUNDS[104];;(function () {
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' existing ' + log.skill(skill) + ' by ' + x);
+					simController.logger.logImbuesNew(sourceUnit, target, s, x);
 				} else {
 					target.imbue(skill);
-					if (debugLog.enabled) debugLog.appendLines(log.name(sourceUnit) + ' imbues ' + log.name(target, false) + ' with ' + log.skill(skill));
+					simController.logger.logImbuesExisting(sourceUnit, target, s, x);
 				}
 			}
 
@@ -3637,7 +3540,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				target.enfeebled += mark;
 				sourceUnit.mark_target = target.uid;
 
-				debugMessages.logStatusEffect(sourceUnit, 'marks', target, enhanced, mark);
+				simController.logger.logStatusEffect(sourceUnit, 'marks', target, enhanced, mark);
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -3662,7 +3565,7 @@ delete BATTLEGROUNDS[104];;(function () {
 			}
 
 			doDamage(sourceUnit, targetUnit, damage, function () {
-				debugMessages.logDamage(sourceUnit, targetUnit, 'Ambush', 'ambushes', {
+				simController.logger.logDamage(sourceUnit, targetUnit, 'Ambush', 'ambushes', {
 					originalDamage: damage,
 					damage: damage
 				});
@@ -3684,7 +3587,7 @@ delete BATTLEGROUNDS[104];;(function () {
 			}
 
 			target.timer += slow;
-			debugMessages.logStatusEffect(sourceUnit, 'slows', target, 0, slow);
+			simController.logger.logStatusEffect(sourceUnit, 'slows', target, 0, slow);
 
 			return 1;
 		}
@@ -3712,9 +3615,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 			playCard(unearthedCard, dying.owner, true);
 
-			if (debugLog.enabled) {
-				debugLog.appendLines(log.name(unearthedCard) + ' is unearthed</br>');
-			}
+			simController.logger.logAction(unearthedCard, 'is unearthed');
 
 			return 1;
 		},
@@ -3729,9 +3630,7 @@ delete BATTLEGROUNDS[104];;(function () {
 			dying.health_left = skill.x;
 			dying.reanimated = true;
 
-			if (debugLog.enabled) {
-				debugLog.appendLines(' and is reanimated</br>');
-			}
+			simController.logger.logReanimate(dying);
 
 			return 1;
 		}
@@ -3742,7 +3641,7 @@ delete BATTLEGROUNDS[104];;(function () {
 	function doActivationSkills(sourceUnit) {
 
 		if (sourceUnit.silenced) {
-			debugMessages.logSilenced(sourceUnit);
+			simController.logger.logSilenced(sourceUnit);
 			return;
 		}
 
@@ -3993,7 +3892,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				if (debugLog.enabled) debugLog.append('<u>Turn ' + turn + ' ends</u></br></br></div>');
+				simController.logger.logTurnEnd(turn);
 				return true;
 			}
 		}
@@ -4014,17 +3913,8 @@ delete BATTLEGROUNDS[104];;(function () {
 		if (!chooseCard(p, turn)) {
 			return false;
 		} else {
-			play_turn(p, o, field, turn);
+			performTurnActions(p, o, field, turn);
 			return true;
-		}
-	}
-
-	function debugDraw(commander, deck, i) {
-		var card = deck[i];
-		if (card) {
-			return commander + ' draws ' + log.name(card, true) + '';
-		} else {
-			return '';
 		}
 	}
 
@@ -4039,17 +3929,7 @@ delete BATTLEGROUNDS[104];;(function () {
 			var o = first_player;
 		}
 
-		if (debugLog.enabled) {
-			var commander_p = log.name(field[p]['commander']);
-			var deck_p = deck[p].deck;
-			debugLog.appendLines('<div id="turn_' + turn + '" class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u>');
-
-			if (turn <= 2) {
-				debugLog.appendLines(debugDraw(commander_p, deck_p, 0));
-				debugLog.appendLines(debugDraw(commander_p, deck_p, 1));
-			}
-			debugLog.appendLines(debugDraw(commander_p, deck_p, 2));
-		}
+		simController.logger.logTurnStart(turn, p, field, deck);
 
 		var field_p = field[p];
 		var field_o = field[o];
@@ -4067,23 +3947,19 @@ delete BATTLEGROUNDS[104];;(function () {
 			if (current_assault.timer > 0) {
 				if (turn !== 3 || !SIMULATOR.config.tournamentMode) {
 					current_assault.timer--;
-					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' reduces its timer');
+					simController.logger.logAction(current_assault, 'reduces its timer');
 				}
 			}
 
 			// Check valor
-			if (current_assault.valor) {
+			var valor = current_assault.valor;
+			if (valor) {
 				var enemy = field_o_assaults[i];
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
-					current_assault.attack_valor += current_assault.valor;
-					if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor);
-				} else if (debugLog.enabled) {
-					debugLog.appendLines(log.name(current_assault) + ' activates valor but ');
-					if (!enemy) {
-						debugLog.appendLines('there is no opposing enemy.');
-					} else {
-						debugLog.appendLines('enemy is not strong enough.');
-					}
+					current_assault.attack_valor += valor;
+					simController.logger.logGainAttack(current_assault, 'activates valor', valor);
+				} else {
+					simController.logger.logCannotValor(current_assault, enemy);
 				}
 			}
 
@@ -4122,7 +3998,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					}
 					if (i === 2) break;
 				}
-				card_picked = deck_p.chooseCard(p, deck_p_deck, deck_p_ordered, turn);
+				card_picked = deck_p.chooseCard(deck_p_deck, deck_p_ordered, turn);
 			}
 
 			if (card_picked < 0) return false;
@@ -4147,7 +4023,7 @@ delete BATTLEGROUNDS[104];;(function () {
 			playCard(deck_p_deck[chosenCard], p, turn);
 			removeFromDeck(deck_p_deck, chosenCard);
 			closeDiv = false;
-			play_turn(p, o, field, turn);
+			performTurnActions(p, o, field, turn);
 			return true;
 		};
 	}
@@ -4162,7 +4038,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 	}
 
-	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn) {
+	function chooseCardUserManually(shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 		closeDiv = true;
@@ -4181,7 +4057,8 @@ delete BATTLEGROUNDS[104];;(function () {
 		return -1;
 	}
 
-	function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn) {
+	// eslint-disable-next-line no-unused-vars
+	function chooseCardOrdered(shuffledDeck, orderedDeck, turn) {
 		// If deck isn't shuffled, just play the first card
 		if (typeof orderedDeck === "undefined") {
 			return 0;
@@ -4195,32 +4072,15 @@ delete BATTLEGROUNDS[104];;(function () {
 		for (var orderIdx = 0, deck_len = orderedDeck.length; orderIdx < deck_len; orderIdx++) {
 			var desiredCard = orderedDeck[orderIdx];
 
-			// Get advanced priority
-			var priority_id = desiredCard.priority;
-
-			var samePriority = -1;
 			var cardInHand;
 			for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
 				cardInHand = hand[handIdx];
-				var b_priority = cardInHand.priority;
 
 				// If this is the exact card at this spot
 				if (unitInfoHelper.areEqual(desiredCard, cardInHand)) {
 					played = true;
 					break;
 				}
-				// Compare advanced priority field
-				else if (priority_id > 0) {
-					if (priority_id == b_priority) {
-						samePriority = handIdx;
-					}
-				}
-			}
-			// If we didnt' find exact card, but found one of the same priority, pick that one
-			if (!played && samePriority >= 0) {
-				played = true;
-				handIdx = samePriority;
-				cardInHand = hand[handIdx];
 			}
 			// If we found the desired card, play it, otherwise move on to the next desired card
 			if (played) {
@@ -4234,7 +4094,8 @@ delete BATTLEGROUNDS[104];;(function () {
 		return -1;
 	}
 
-	function chooseCardRandomly(p, shuffledDeck, orderedDeck, turn) {
+	// eslint-disable-next-line no-unused-vars
+	function chooseCardRandomly(shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 
@@ -4242,7 +4103,8 @@ delete BATTLEGROUNDS[104];;(function () {
 		return card_picked;
 	}
 
-	function chooseCardByPoints(p, shuffledDeck, orderedDeck, turn) {
+	// eslint-disable-next-line no-unused-vars
+	function chooseCardByPoints(shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
 
@@ -4260,7 +4122,8 @@ delete BATTLEGROUNDS[104];;(function () {
 		return card_picked;
 	}
 
-	function chooseFirstCard(p, shuffledDeck, orderedDeck, turn) {
+	// eslint-disable-next-line no-unused-vars
+	function chooseFirstCard(shuffledDeck, orderedDeck, turn) {
 		return 0;
 	}
 
@@ -4278,7 +4141,7 @@ delete BATTLEGROUNDS[104];;(function () {
 		return ranking;
 	}
 
-	function play_turn(p, o, field, turn) {
+	function performTurnActions(p, o, field, turn) {
 
 		var field_p = field[p];
 		var field_p_commander = field_p['commander'];
@@ -4303,9 +4166,9 @@ delete BATTLEGROUNDS[104];;(function () {
 
 		// Set invisibile/ward/shrouded after enhance has had a chance to fire
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-			var current_assault = field_p_assaults[key];
-			setPassiveStatus(current_assault, 'evade', 'invisible');
-			setPassiveStatus(current_assault, 'absorb', 'warded');
+			var currentUnit = field_p_assaults[key];
+			setPassiveStatus(currentUnit, 'evade', 'invisible');
+			setPassiveStatus(currentUnit, 'absorb', 'warded');
 		}
 
 		// Do Unit Early Activation Skills
@@ -4318,47 +4181,47 @@ delete BATTLEGROUNDS[104];;(function () {
 		// Assaults
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 
-			var current_assault = field_p_assaults[key];
+			var currentUnit = field_p_assaults[key];
 
-			if (!current_assault.isAlive()) {
+			if (!currentUnit.isAlive()) {
 				continue;
 			}
 
 			// Check Timer
-			if (!current_assault.isActive()) {
+			if (!currentUnit.isActive()) {
 				continue;
 			}
 
 			// Check jammed ("frozen")
-			if (current_assault['jammed']) {
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' is frozen and cannot attack');
+			if (currentUnit['jammed']) {
+				simController.logger.logFrozen(currentUnit);
 				continue;
 			}
 
 			var activations = 1;
-			if (current_assault.dualstrike_triggered) {
+			if (currentUnit.dualstrike_triggered) {
 				activations++;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' activates dualstrike');
+				simController.logger.logDualstrike(currentUnit);
 			}
 
 			for (; activations > 0; activations--) {
 
 				// Activation skills
-				doActivationSkills(current_assault);
+				doActivationSkills(currentUnit);
 
 				// See if unit died from Backlash
-				if (!current_assault.isAlive()) {
+				if (!currentUnit.isAlive()) {
 					continue;
 				}
 
 				// Check attack
 				// - check rally and weaken
-				if (!current_assault.hasAttack()) {
-					if (debugLog.enabled && current_assault.permanentAttack() > 0) debugLog.appendLines(log.name(current_assault) + ' is weakened and cannot attack');
+				if (!currentUnit.hasAttack()) {
+					if (currentUnit.permanentAttack() > 0) simController.logger.logWeakened(currentUnit);
 					continue;
 				}
 
-				doAttack(current_assault, field_o_assaults, field_o_commander);
+				doAttack(currentUnit, field_o_assaults, field_o_commander);
 
 				// WINNING CONDITION
 				if (!field_o_commander.isAlive() || !field_p_commander.isAlive()) {
@@ -4366,7 +4229,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 
 				// If died from counter, make sure dualstrike doesn't do make it swing again!
-				if (!current_assault.isAlive()) {
+				if (!currentUnit.isAlive()) {
 					// This assault is already dead and can't do anything!
 					break;
 				}
@@ -4384,7 +4247,7 @@ delete BATTLEGROUNDS[104];;(function () {
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		removeDead();
 
-		if (debugLog.enabled) debugLog.append('<u>Turn ' + turn + ' ends</u></br></br></div>');
+		simController.logger.logTurnEnd(turn);
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -4453,14 +4316,7 @@ delete BATTLEGROUNDS[104];;(function () {
 		var dualStrike = unit.flurry;
 		if (dualStrike && dualStrike.countdown) {
 			dualStrike.countdown--;
-
-			if (debugLog.enabled) {
-				if (dualStrike.countdown) {
-					debugLog.appendLines(log.name(unit) + ' charges  dualstrike (ready in ' + dualStrike.countdown + ' turns)');
-				} else {
-					debugLog.appendLines(log.name(unit) + ' readies dualstrike');
-				}
-			}
+			simController.logger.logChargeSkill(unit, dualStrike);
 		}
 	}
 
@@ -4469,13 +4325,7 @@ delete BATTLEGROUNDS[104];;(function () {
 			var skill = skills[i];
 			if (skill.countdown) {
 				skill.countdown--;
-				if (debugLog.enabled) {
-					if (skill.countdown) {
-						debugLog.appendLines(log.name(unit) + ' charges ' + skillApi.nameFromId(skill.id) + ' (ready in ' + skill.countdown + ' turns)');
-					} else {
-						debugLog.appendLines(log.name(unit) + ' readies ' + skillApi.nameFromId(skill.id));
-					}
-				}
+				simController.logger.logChargeSkill(unit, skill);
 			}
 		}
 	}
@@ -4509,7 +4359,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 
 				current_assault.health_left += regen_health;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' regenerates ' + regen_health + ' health');
+				simController.logger.logGainHealth(current_assault, 'regenerates', regen_health);
 			}
 
 			// Poison
@@ -4525,7 +4375,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					debugMessages.logDamage(null, current_assault, 'Poison', 'poison damage', damageInfo);
+					simController.logger.logDamage(null, current_assault, 'Poison', 'poison damage', damageInfo);
 				});
 			}
 
@@ -4542,7 +4392,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					debugMessages.logDamage(null, current_assault, 'Venom', 'venom damage', damageInfo);
+					simController.logger.logDamage(null, current_assault, 'Venom', 'venom damage', damageInfo);
 				});
 			}
 
@@ -4559,7 +4409,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					debugMessages.logDamage(null, current_assault, 'Scorch', 'scorch damage', damageInfo, function() {
+					simController.logger.logDamage(null, current_assault, 'Scorch', 'scorch damage', damageInfo, function() {
 						if (current_assault.isAlive() && !current_assault.scorched) {
 							return ' and scorch wears off';
 						}
@@ -4581,15 +4431,11 @@ delete BATTLEGROUNDS[104];;(function () {
 				if (corroded.timer < 0) {
 					current_assault.corroded = false;
 					current_assault.attack_corroded = 0;
-					if (debugLog.enabled) {
-						debugLog.appendLines(log.name(current_assault) + ' recovers from corrosion');
-					}
+					simController.logger.logAction(current_assault, 'recovers from corrosion');
 				} else {
 					var corrosion = corroded.amount;
 					current_assault.attack_corroded = corrosion;
-					if (debugLog.enabled) {
-						debugLog.appendLines(log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion');
-					}
+					simController.logger.logAction(current_assault, 'loses ' + corrosion + ' attack to corrosion');
 				}
 			}
 
@@ -4623,7 +4469,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 			}
 			if (taunted) {
-				debugMessages.logSkillVerb(target, 'taunts', current_assault);
+				simController.logger.logAction(target, 'taunts', current_assault);
 			}
 		}
 
@@ -4715,7 +4561,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 		// Deal damage to target
 		doDamage(current_assault, target, damage, function () {
-			debugMessages.logDamage(current_assault, target, 'Attack', 'attacks', damageInfo);
+			simController.logger.logDamage(current_assault, target, 'Attack', 'attacks', damageInfo);
 		});
 
 		events.onUnitAttacked(field, turn, current_assault);
@@ -4737,7 +4583,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					debugMessages.logInflicts(sourceUnit, 'poison', poison, target);
+					simController.logger.logInflicts(current_assault, 'poison', poison, target);
 				}
 			}
 
@@ -4755,7 +4601,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					var hexIncrease = venom - target.envenomed;
 					target.envenomed = venom;
 					target.enfeebled += hexIncrease;
-					debugMessages.logInflicts(current_assault, 'venom', venom, target);
+					simController.logger.logInflicts(current_assault, 'venom', venom, target);
 				}
 			}
 
@@ -4767,7 +4613,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				debugMessages.logInflicts(current_assault, 'nullify', nullify, target);
+				simController.logger.logInflicts(current_assault, 'nullify', nullify, target);
 			}
 
 			// Silence
@@ -4775,7 +4621,7 @@ delete BATTLEGROUNDS[104];;(function () {
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
-				debugMessages.logInflicts(current_assault, 'silence', null, target);
+				simController.logger.logInflicts(current_assault, 'silence', null, target);
 			}
 
 			// Daze
@@ -4788,7 +4634,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				debugMessages.logInflicts(current_assault, 'dazed', dazed, target);
+				simController.logger.logInflicts(current_assault, 'dazed', dazed, target);
 			}
 		}
 
@@ -4811,7 +4657,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				}
 
 				current_assault.health_left += leech_health;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' siphons ' + leech_health + ' health');
+				simController.logger.logSiphon(current_assault, 'siphons', leech_health);
 			}
 
 			if (current_assault.reinforce) {
@@ -4820,7 +4666,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
-				if (debugLog.enabled) debugLog.appendLines(log.name(current_assault) + ' reinforces itself with barrier ' + reinforce);
+				simController.logger.logStatusEffect(current_assault, 'reinforces', current_assault, enhanced, reinforce);
 			}
 
 			// Counter
@@ -4846,7 +4692,7 @@ delete BATTLEGROUNDS[104];;(function () {
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				debugMessages.logInflicts(target, 'counterburn', scorch, current_assault);
+				simController.logger.logInflicts(target, 'counterburn', scorch, current_assault);
 			}
 
 			// Counterpoison
@@ -4858,7 +4704,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					debugMessages.logInflicts(target, 'counterpoison', poison, current_assault);
+					simController.logger.logInflicts(target, 'counterpoison', poison, current_assault);
 				}
 			}
 
@@ -4871,7 +4717,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
 					target.attack_berserk += fury;
-					debugMessages.logGainAttack(target, 'activates fury', fury);
+					simController.logger.logGainAttack(target, 'activates fury', fury);
 				}
 
 				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
@@ -4879,7 +4725,7 @@ delete BATTLEGROUNDS[104];;(function () {
 
 			if (target.enraged > 0) {
 				target.attack_berserk += target.enraged;
-				debugMessages.logGainAttack(target, 'is enraged', target.enraged);
+				simController.logger.logGainAttack(target, 'is enraged', target.enraged);
 			}
 
 			// Berserk
@@ -4891,7 +4737,7 @@ delete BATTLEGROUNDS[104];;(function () {
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
-				debugMessages.logGainAttack(target, 'activates berserk', berserk);
+				simController.logger.logGainAttack(target, 'activates berserk', berserk);
 			}
 		}
 
@@ -4909,11 +4755,9 @@ delete BATTLEGROUNDS[104];;(function () {
 			} else {
 				current_assault.corroded = { amount: corrosion, timer: 2 };
 			}
-			debugMessages.logInflicts(target, 'corrosion', corrosion, current_assault);
+			simController.logger.logInflicts(target, 'corrosion', corrosion, current_assault);
 			current_assault.attack_corroded = corrosion;
-			if (debugLog.enabled) {
-				debugLog.appendLines(log.name(current_assault) + ' loses ' + corrosion + ' attack to corrosion');
-			}
+			simController.logger.logAction(current_assault, 'loses ' + corrosion + ' attack to corrosion');
 		}
 
 		if (!current_assault.isAlive()) {
@@ -4929,7 +4773,7 @@ delete BATTLEGROUNDS[104];;(function () {
 		var damageInfo = modifySkillDamage(attacker, counterDamage, counterEnhancement, { enfeeble: true });
 
 		doDamage(defender, attacker, damageInfo.damage, function () {
-			debugMessages.logDamage(null, attacker, counterType, counterType.toLowerCase() + ' damage', damageInfo);
+			simController.logger.logDamage(null, attacker, counterType, counterType.toLowerCase() + ' damage', damageInfo);
 		});
 	}
 
@@ -5082,7 +4926,210 @@ delete BATTLEGROUNDS[104];;(function () {
 			}
 		}
 	});
-})();;(function (angular) {
+
+	return SIMULATOR;
+});;define('singleThreaded', [
+    'bgeApi',
+    'matchTimer',
+    'urlHelper',
+    'debugLog',
+    'simController',
+    'simulatorBase',
+    'ui',
+    'matchStats'
+], function (
+    bgeApi,
+    matchTimer,
+    urlHelper,
+    debugLog,
+    simController,
+    simulator,
+    ui,
+    matchStats
+) {
+    "use strict";
+
+    // Initialize simulation loop - runs once per simulation session
+    simController.startsim = function () {
+        matchStats.totalTurns = 0;
+        matchTimer.reset();
+        debugLog.clear();
+        matchStats.matchesPlayed = 0;
+        run_sims_batch = 0;
+
+        var config = ui.getConfiguration();
+        simController.setDebugLogger();
+        simulator.battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
+
+        ui.hide();
+
+        simulator.remainingSims = config.simsToRun;
+        simulator.setupDecks(config);
+
+        matchStats.matchesWon = 0;
+        matchStats.matchesLost = 0;
+        matchStats.matchesDrawn = 0;
+        matchStats.totalPoints = 0;
+
+        ui.displayText(""); // Clear display
+        if (!config.userControlled) {
+            ui.hideTable();
+            ui.setSimStatus("Initializing simulations...");
+        } else {
+            ui.setSimStatus("");
+        }
+
+        window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
+        current_timeout = setTimeout(runSims, 0, config);
+
+        return false;
+    };
+
+    // Interrupt simulations
+    simController.stopsim = function () {
+        matchTimer.stop();
+        var elapse = matchTimer.elapsed();
+        var simpersec = matchStats.matchesPlayed / elapse;
+        simpersec = simpersec.toFixed(2);
+        simulator.simulating = false;
+
+        // Stop the recursion
+        if (current_timeout) clearTimeout(current_timeout);
+        if (!simulator.user_controlled) {
+            ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
+            ui.showWinrate();
+        }
+        ui.show();
+
+        if (simController.stop_sims_callback) simController.stop_sims_callback();
+    };
+
+    function runSims(config) {
+        if (simulator.user_controlled) {
+            if (runSim(config, true)) {
+                simController.debugEnd();
+            }
+        } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
+            runSim(config, true);
+            simController.debugEnd();
+        } else if (simulator.remainingSims > 0) {
+            // Interval output - speeds up simulations
+            if (run_sims_count >= run_sims_batch) {
+                var simpersecbatch = 0;
+                if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
+                    run_sims_count = 0;
+                    var elapse = matchTimer.elapsed();
+
+                    var batch_elapse = matchTimer.batchElapsed();
+                    if (batch_elapse === 0) {
+                        simpersecbatch = 0;
+                    } else {
+                        simpersecbatch = run_sims_batch / batch_elapse;
+                    }
+
+                    ui.setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
+                    ui.showWinrate();
+                }
+                run_sims_batch = 1;
+                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
+                    run_sims_batch = Math.ceil(simpersecbatch / 8);
+                if (run_sims_batch > simulator.remainingSims) // Also limit by how many sims are left
+                    run_sims_batch = simulator.remainingSims;
+
+                // Batch messes up mass debug and loss debug! var's disable batch!
+                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) {
+                    run_sims_batch = 1;
+                }
+
+                matchTimer.startBatch();
+                current_timeout = setTimeout(runSims, 1, config);
+                for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
+                    runSim(config);
+                }
+            }
+        } else {
+            run_sims_count = 0;
+            run_sims_batch = 0;
+            matchTimer.stop();
+
+            var elapse = matchTimer.elapsed();
+            var simpersec = matchStats.matchesPlayed / elapse;
+            simpersec = simpersec.toFixed(2);
+
+            ui.displayText(debugLog.getLog());
+            ui.setSimStatus("Simulations complete.", elapse, simpersec);
+            ui.showWinrate();
+
+            ui.show();
+
+            if (simController.endSimsCallback) simController.endSimsCallback();
+        }
+    }
+
+    // Initializes a single simulation - runs once before each individual simulation
+    // - needs to reset the decks and fields before each simulation
+    var seedtest = (urlHelper.paramValue("seedtest") || 0);
+    function runSim(config, skipResults) {
+        if (seedtest) {
+            Math.seedrandom(seedtest++);
+        }
+        if (!simulator.simulate(config)) return false;
+        if (!skipResults) simController.processSimResult();
+    }
+
+    simController.processSimResult = function () {
+
+        var result;
+        if (!simulator.field.player.commander.isAlive()) {
+            result = false;
+        }
+        else if (!simulator.field.cpu.commander.isAlive()) {
+            result = true;
+        }
+        else {
+            result = 'draw';
+        }
+
+        if (run_sims_batch > 0) {
+            if (simulator.remainingSims > 0) simulator.remainingSims--;
+            run_sims_count++;
+        }
+
+        // Increment wins/losses/games
+        if (result === 'draw') {
+            matchStats.matchesDrawn++;
+        } else if (result) {
+            matchStats.matchesWon++;
+        } else {
+            matchStats.matchesLost++;
+        }
+        matchStats.totalPoints += simulator.calculatePoints();
+        matchStats.matchesPlayed++;
+
+        // Increment total turn count
+        matchStats.totalTurns += simulator.simulation_turns;
+
+        if (debugLog.enabled || debugLog.cardsPlayedOnly) {
+            if (debugLog.firstLoss) {
+                if (result === 'draw' || !result) {
+                    simulator.remainingSims = 0;
+                }
+            } else if (debugLog.firstWin) {
+                if (result && result !== 'draw') {
+                    simulator.remainingSims = 0;
+                }
+            }
+            simController.logger.logOutcome(result, matchStats.matchesPlayed, SIMULATOR.remainingSims);
+            simController.logger.logStartBattle(simulator.remainingSims);
+        }
+
+        return result;
+    };
+
+    // Global variables used by single-threaded simulator
+    var run_sims_count = 0;
+    var run_sims_batch = 0;
+});;(function (angular) {
     'use strict';
 
     var filterByParent = function (unfiltered, parentID, parentIDField) {

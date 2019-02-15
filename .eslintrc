@@ -31,7 +31,7 @@
     "RAIDS": true
   },
   "rules": {
-    "eqeqeq": 1,
+    "eqeqeq": ["error", "always", {"null": "ignore"}],
     "comma-dangle": 2,
     "no-cond-assign": 0,
     "no-console": 0,

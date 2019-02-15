@@ -80,7 +80,8 @@ define('startup', [
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!urlHelper.paramDefined("seedtest")) {
-            var config = ui.getConfiguration();
+			var config = ui.getConfiguration();
+			simController.setDebugLogger();
             var battlegrounds = bgeApi.getBattlegrounds(config.getbattleground, config.selfbges, config.enemybges, config.mapbges, config.selectedCampaign, config.missionLevel, config.selectedRaid, config.raidLevel);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
