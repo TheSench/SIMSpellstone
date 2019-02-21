@@ -15,7 +15,6 @@ module.exports = function (grunt) {
                 src: [
                     'scripts/require.sync.js',
                     'scripts/polyfills.js',
-                    //'scripts/require.config.js',
                     'scripts/modules/factions.js',
                     'scripts/modules/skillApi.js',
                     'scripts/modules/runeApi.js',
@@ -48,7 +47,6 @@ module.exports = function (grunt) {
             },
             engineTest: {
                 src: [
-                    'scripts/modules/config.js',
                     'scripts/modules/matchStats.js',
 
                     'scripts/mocks.js',
@@ -75,7 +73,6 @@ module.exports = function (grunt) {
             },
             simulator: {
                 src: [
-                    'scripts/modules/config.js',
                     'scripts/modules/matchStats.js',
                     'scripts/modules/debugLog.js',
 
