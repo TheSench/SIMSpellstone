@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+    require('jit-grunt')(grunt);
     require('time-grunt')(grunt);
     const mozjpeg = require('imagemin-mozjpeg');
 

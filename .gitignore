@@ -12,8 +12,4 @@ cypress/screenshots/
 saved_decks.js
 /res/items/unnamed
 /res/skills/extracted
-/packages
 /tests
-
-# Intermediary build files
-/dist/data.js
