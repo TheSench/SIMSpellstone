@@ -1784,7 +1784,6 @@ define('simulatorBase', [
 			var o = first_player;
 		}
 
-		closeDiv = false;
 		if (!chooseCard(p, turn)) {
 			return false;
 		} else {
@@ -1897,7 +1896,6 @@ define('simulatorBase', [
 			var deck_p_deck = deck[p].deck;
 			playCard(deck_p_deck[chosenCard], p, turn);
 			removeFromDeck(deck_p_deck, chosenCard);
-			closeDiv = false;
 			performTurnActions(p, o, field, turn);
 			return true;
 		};
@@ -1916,7 +1914,6 @@ define('simulatorBase', [
 	function chooseCardUserManually(shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
-		closeDiv = true;
 		var cardsInHand = [];
 		var drawableHand = [];
 		for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {

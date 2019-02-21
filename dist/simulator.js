@@ -1,7 +1,4 @@
-// Initialize global variables
-var battle_history = '';
-var closeDiv = false;
-var current_timeout;;define('matchStats', [], function() {
+;define('matchStats', [], function() {
     return {
        matchesPlayed: 0,
        matchesWon: 0,
@@ -1086,7 +1083,8 @@ define('ui', [
 
 	simController.onDebugEnd = displayDebugEnd;
 
-	var loadDeckDialog;
+	var loadDeckDialog,
+		battleHistory;
 
 	window.addEventListener('error', function onUncaughtException(message, url, lineNumber) {
 		var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -1125,7 +1123,7 @@ define('ui', [
 
 		// Stop the recursion if any
 		try {
-			simController.stopsim();
+			simController.clearStatusTimeout();
 		} catch (err) {
 			// Swallow
 		}
@@ -1206,7 +1204,7 @@ define('ui', [
 		$('#content').html(text);
 	}
 
-	function displayTurns() {
+	function displayTurns(closeDiv) {
 		var turnData = debugLog.getLog();
 		if (!turnData) {
 			return;
@@ -1214,7 +1212,6 @@ define('ui', [
 
 		if (closeDiv) {
 			turnData += "</div>";
-			closeDiv = false;
 		}
 		turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
 		displayText(turnData);
@@ -1318,8 +1315,7 @@ define('ui', [
 				current_deck = base64.encodeHash(deck.player);
 			}
 
-			//battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
-			battle_history += winrate + ' (+/- ' + mErr + ') &nbsp; &nbsp; ' + current_deck + '<br>';
+			battleHistory += winrate + ' (+/- ' + mErr + ') &nbsp; &nbsp; ' + current_deck + '<br>';
 		}
 
 		return full_table;
@@ -1679,10 +1675,31 @@ define('ui', [
 
 		SIMULATOR.events.onPresentCardChoice = function onPresentCardChoice(field, drawableHand, onCardChosen, turn) {
 			hideTable();
-			displayTurns();
+			displayTurns(true);
 			animations.drawField(field, drawableHand, onCardChosen, turn);
 		};
 		SIMULATOR.events.onCardChosen = animations.clearFrames;
+	}
+
+
+	function clearHistory() {
+		battleHistory = '';
+		displayHistory();
+	}
+
+	function displayHistory() {
+		displayText('' +
+			'<br>' +
+			'<hr>' +
+			(battleHistory || 'No history available.') +
+			'<hr>' +
+			'<br>' +
+			'<br>' +
+			'<input id="clear-history" type="button" value="Clear History" style="text-align: center; font-weight: normal;">' +
+			'<br>' +
+			'<br>' +
+			'');
+		$('#clear-history').click(clearHistory);
 	}
 
 	$(function () {
@@ -1710,6 +1727,8 @@ define('ui', [
 				}
 			}
 		});
+
+		$("#display_history").on("click", displayHistory);
 	});
 
 	// Temporary fix for HTML access
@@ -1830,26 +1849,6 @@ define('ui', [
 			'');
 	}
 
-	function clearHistory() {
-		battle_history = '';
-		displayHistory();
-	}
-
-	function displayHistory() {
-		ui.displayText('' +
-			'<br>' +
-			'<hr>' +
-			(battle_history || 'No history available.') +
-			'<hr>' +
-			'<br>' +
-			'<br>' +
-			'<input id="clear-history" type="button" value="Clear History" style="text-align: center; font-weight: normal;">' +
-			'<br>' +
-			'<br>' +
-			'');
-		$('#clear-history').click(clearHistory);
-	}
-
 	function setSelectedMapBattlegrounds(mapBgeString) {
 		var selects = document.getElementsByName("map-battleground");
 		for (var i = 0; i < mapBgeString.length && i < selects.length; i++) {
@@ -1877,8 +1876,6 @@ define('ui', [
 
 		$("#btn_simulate").on("click", simController.startsim);
 		$("#btnStop").on("click", simController.stopsim);
-
-		$("#display_history").on("click", displayHistory);
 
 		$('#deck1').val(urlHelper.paramValue('deck1')).change();
 		$('#deck2').val(urlHelper.paramValue('deck2')).change();
@@ -3909,7 +3906,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			var o = first_player;
 		}
 
-		closeDiv = false;
 		if (!chooseCard(p, turn)) {
 			return false;
 		} else {
@@ -4022,7 +4018,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			var deck_p_deck = deck[p].deck;
 			playCard(deck_p_deck[chosenCard], p, turn);
 			removeFromDeck(deck_p_deck, chosenCard);
-			closeDiv = false;
 			performTurnActions(p, o, field, turn);
 			return true;
 		};
@@ -4041,7 +4036,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 	function chooseCardUserManually(shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
-		closeDiv = true;
 		var cardsInHand = [];
 		var drawableHand = [];
 		for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
@@ -4980,7 +4974,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
-        current_timeout = setTimeout(runSims, 0, config);
+        simController.statusTimeout = setTimeout(runSims, 0, config);
 
         return false;
     };
@@ -4994,7 +4988,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         simulator.simulating = false;
 
         // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
         if (!simulator.user_controlled) {
             ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
             ui.showWinrate();
@@ -5002,6 +4995,13 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         ui.show();
 
         if (simController.stop_sims_callback) simController.stop_sims_callback();
+    };
+
+    simController.clearStatusTimeout = function clearStatusTimeout() {
+        if (simController.statusTimeout) {
+            clearTimeout(simController.statusTimeout);
+        }
+        simController.statusTimeout = null;
     };
 
     function runSims(config) {
@@ -5042,7 +5042,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
                 }
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(runSims, 1, config);
+                simController.statusTimeout = setTimeout(runSims, 1, config);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     runSim(config);
                 }

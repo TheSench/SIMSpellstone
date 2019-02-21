@@ -1,7 +1,4 @@
-// Initialize global variables
-var battle_history = '';
-var closeDiv = false;
-var current_timeout;;define('matchStats', [], function() {
+;define('matchStats', [], function() {
     return {
        matchesPlayed: 0,
        matchesWon: 0,
@@ -2713,7 +2710,6 @@ var current_timeout;;define('matchStats', [], function() {
 			var o = first_player;
 		}
 
-		closeDiv = false;
 		if (!chooseCard(p, turn)) {
 			return false;
 		} else {
@@ -2826,7 +2822,6 @@ var current_timeout;;define('matchStats', [], function() {
 			var deck_p_deck = deck[p].deck;
 			playCard(deck_p_deck[chosenCard], p, turn);
 			removeFromDeck(deck_p_deck, chosenCard);
-			closeDiv = false;
 			performTurnActions(p, o, field, turn);
 			return true;
 		};
@@ -2845,7 +2840,6 @@ var current_timeout;;define('matchStats', [], function() {
 	function chooseCardUserManually(shuffledDeck, orderedDeck, turn) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
-		closeDiv = true;
 		var cardsInHand = [];
 		var drawableHand = [];
 		for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
@@ -3784,7 +3778,7 @@ var current_timeout;;define('matchStats', [], function() {
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
-        current_timeout = setTimeout(runSims, 0, config);
+        simController.statusTimeout = setTimeout(runSims, 0, config);
 
         return false;
     };
@@ -3798,7 +3792,6 @@ var current_timeout;;define('matchStats', [], function() {
         simulator.simulating = false;
 
         // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
         if (!simulator.user_controlled) {
             ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
             ui.showWinrate();
@@ -3806,6 +3799,13 @@ var current_timeout;;define('matchStats', [], function() {
         ui.show();
 
         if (simController.stop_sims_callback) simController.stop_sims_callback();
+    };
+
+    simController.clearStatusTimeout = function clearStatusTimeout() {
+        if (simController.statusTimeout) {
+            clearTimeout(simController.statusTimeout);
+        }
+        simController.statusTimeout = null;
     };
 
     function runSims(config) {
@@ -3846,7 +3846,7 @@ var current_timeout;;define('matchStats', [], function() {
                 }
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(runSims, 1, config);
+                simController.statusTimeout = setTimeout(runSims, 1, config);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     runSim(config);
                 }

@@ -112,26 +112,6 @@ define('startup', [
 			'');
 	}
 
-	function clearHistory() {
-		battle_history = '';
-		displayHistory();
-	}
-
-	function displayHistory() {
-		ui.displayText('' +
-			'<br>' +
-			'<hr>' +
-			(battle_history || 'No history available.') +
-			'<hr>' +
-			'<br>' +
-			'<br>' +
-			'<input id="clear-history" type="button" value="Clear History" style="text-align: center; font-weight: normal;">' +
-			'<br>' +
-			'<br>' +
-			'');
-		$('#clear-history').click(clearHistory);
-	}
-
 	function setSelectedMapBattlegrounds(mapBgeString) {
 		var selects = document.getElementsByName("map-battleground");
 		for (var i = 0; i < mapBgeString.length && i < selects.length; i++) {
@@ -159,8 +139,6 @@ define('startup', [
 
 		$("#btn_simulate").on("click", simController.startsim);
 		$("#btnStop").on("click", simController.stopsim);
-
-		$("#display_history").on("click", displayHistory);
 
 		$('#deck1').val(urlHelper.paramValue('deck1')).change();
 		$('#deck2').val(urlHelper.paramValue('deck2')).change();

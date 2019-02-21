@@ -41,7 +41,8 @@ define('ui', [
 
 	simController.onDebugEnd = displayDebugEnd;
 
-	var loadDeckDialog;
+	var loadDeckDialog,
+		battleHistory;
 
 	window.addEventListener('error', function onUncaughtException(message, url, lineNumber) {
 		var errorDescription = "JavaScript error:\n " + message + "\n on line " + lineNumber + "\n for " + url;
@@ -80,7 +81,7 @@ define('ui', [
 
 		// Stop the recursion if any
 		try {
-			simController.stopsim();
+			simController.clearStatusTimeout();
 		} catch (err) {
 			// Swallow
 		}
@@ -161,7 +162,7 @@ define('ui', [
 		$('#content').html(text);
 	}
 
-	function displayTurns() {
+	function displayTurns(closeDiv) {
 		var turnData = debugLog.getLog();
 		if (!turnData) {
 			return;
@@ -169,7 +170,6 @@ define('ui', [
 
 		if (closeDiv) {
 			turnData += "</div>";
-			closeDiv = false;
 		}
 		turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
 		displayText(turnData);
@@ -273,8 +273,7 @@ define('ui', [
 				current_deck = base64.encodeHash(deck.player);
 			}
 
-			//battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
-			battle_history += winrate + ' (+/- ' + mErr + ') &nbsp; &nbsp; ' + current_deck + '<br>';
+			battleHistory += winrate + ' (+/- ' + mErr + ') &nbsp; &nbsp; ' + current_deck + '<br>';
 		}
 
 		return full_table;
@@ -634,10 +633,31 @@ define('ui', [
 
 		SIMULATOR.events.onPresentCardChoice = function onPresentCardChoice(field, drawableHand, onCardChosen, turn) {
 			hideTable();
-			displayTurns();
+			displayTurns(true);
 			animations.drawField(field, drawableHand, onCardChosen, turn);
 		};
 		SIMULATOR.events.onCardChosen = animations.clearFrames;
+	}
+
+
+	function clearHistory() {
+		battleHistory = '';
+		displayHistory();
+	}
+
+	function displayHistory() {
+		displayText('' +
+			'<br>' +
+			'<hr>' +
+			(battleHistory || 'No history available.') +
+			'<hr>' +
+			'<br>' +
+			'<br>' +
+			'<input id="clear-history" type="button" value="Clear History" style="text-align: center; font-weight: normal;">' +
+			'<br>' +
+			'<br>' +
+			'');
+		$('#clear-history').click(clearHistory);
 	}
 
 	$(function () {
@@ -665,6 +685,8 @@ define('ui', [
 				}
 			}
 		});
+
+		$("#display_history").on("click", displayHistory);
 	});
 
 	// Temporary fix for HTML access

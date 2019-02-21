@@ -50,7 +50,7 @@ define('singleThreaded', [
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
-        current_timeout = setTimeout(runSims, 0, config);
+        simController.statusTimeout = setTimeout(runSims, 0, config);
 
         return false;
     };
@@ -64,7 +64,6 @@ define('singleThreaded', [
         simulator.simulating = false;
 
         // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
         if (!simulator.user_controlled) {
             ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
             ui.showWinrate();
@@ -72,6 +71,13 @@ define('singleThreaded', [
         ui.show();
 
         if (simController.stop_sims_callback) simController.stop_sims_callback();
+    };
+
+    simController.clearStatusTimeout = function clearStatusTimeout() {
+        if (simController.statusTimeout) {
+            clearTimeout(simController.statusTimeout);
+        }
+        simController.statusTimeout = null;
     };
 
     function runSims(config) {
@@ -112,7 +118,7 @@ define('singleThreaded', [
                 }
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(runSims, 1, config);
+                simController.statusTimeout = setTimeout(runSims, 1, config);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     runSim(config);
                 }
