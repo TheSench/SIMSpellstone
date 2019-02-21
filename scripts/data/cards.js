@@ -61944,6 +61944,153 @@ var CARDS = {
 			}
 		}
 	},
+	"5225": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 29,
+		"hidden_until": "1550768400000",
+		"id": "5225",
+		"maxLevel": 6,
+		"name": "Centurion Steelarm",
+		"picture": "Goblin_Spiked_Shell_Armor_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "counter",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 30,
+				"skill": []
+			},
+			"3": {
+				"health": 31,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"5226": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 18,
+		"hidden_until": "1550768400000",
+		"id": "5226",
+		"maxLevel": 6,
+		"name": "Magitech Raider",
+		"picture": "Goblin_War_Toad_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"cost": 2,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"health": 20,
+				"skill": []
+			},
+			"6": {
+				"health": 21,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -79002,6 +79149,88 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"6218": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1550768400000",
+		"id": "6218",
+		"maxLevel": 6,
+		"name": "Gliding Firemage",
+		"picture": "Goblin_Mecha_Glider_Goblin_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			},
+			{
+				"id": "leech",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 21,
+				"skill": []
+			},
+			"5": {
+				"attack": 7,
+				"skill": []
+			},
+			"6": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "leech",
 						"x": 5
 					}
 				]
@@ -147153,6 +147382,169 @@ var CARDS = {
 			}
 		}
 	},
+	"15225": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1550768400000",
+		"id": "15225",
+		"maxLevel": 6,
+		"name": "Centurion Steelguard",
+		"picture": "Goblin_Spiked_Shell_Armor_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "counter",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": []
+			},
+			"6": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"15226": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1550768400000",
+		"id": "15226",
+		"maxLevel": 6,
+		"name": "Magitech Plunderer",
+		"picture": "Goblin_War_Toad_A",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"attack": 6,
+				"skill": []
+			},
+			"4": {
+				"health": 23,
+				"skill": []
+			},
+			"5": {
+				"health": 24,
+				"skill": []
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -164775,6 +165167,101 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"16218": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1550768400000",
+		"id": "16218",
+		"maxLevel": 6,
+		"name": "Gliding Firecrafter",
+		"picture": "Goblin_Mecha_Glider_Goblin_A",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 7
 					}
 				]
 			}
@@ -220537,6 +221024,167 @@ var CARDS = {
 			}
 		}
 	},
+	"25225": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1550768400000",
+		"id": "25225",
+		"maxLevel": 6,
+		"name": "Centurion Spikesteel",
+		"picture": "Goblin_Spiked_Shell_Armor_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 39,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"25226": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1550768400000",
+		"id": "25226",
+		"maxLevel": 6,
+		"name": "Magitech Marauder",
+		"picture": "Goblin_War_Toad_B",
+		"rarity": "4",
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "burn",
+				"x": 4
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -238040,6 +238688,101 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"26218": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1550768400000",
+		"id": "26218",
+		"maxLevel": 6,
+		"name": "Gliding Firemaster",
+		"picture": "Goblin_Mecha_Glider_Goblin_B",
+		"rarity": "4",
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"skill": []
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
 					}
 				]
 			}
