@@ -15236,9 +15236,10 @@ var CARDS = {
 		"set": "9999",
 		"skill": [
 			{
+				"all": "1",
 				"id": "imbue",
 				"s": "frost",
-				"x": 2,
+				"x": 1,
 				"y": "9"
 			},
 			{
@@ -15248,7 +15249,7 @@ var CARDS = {
 				"y": "9"
 			},
 			{
-				"c": 3,
+				"c": 4,
 				"id": "jam"
 			}
 		],
@@ -15263,9 +15264,10 @@ var CARDS = {
 				"health": 83,
 				"skill": [
 					{
+						"all": "1",
 						"id": "imbue",
 						"s": "frost",
-						"x": 3,
+						"x": 1,
 						"y": "9"
 					},
 					{
@@ -15288,9 +15290,10 @@ var CARDS = {
 				"health": 89,
 				"skill": [
 					{
+						"all": "1",
 						"id": "imbue",
 						"s": "frost",
-						"x": 3,
+						"x": 2,
 						"y": "9"
 					},
 					{
@@ -15307,21 +15310,40 @@ var CARDS = {
 			},
 			"6": {
 				"health": 92,
-				"skill": []
-			},
-			"7": {
-				"health": 95,
 				"skill": [
 					{
+						"all": "1",
 						"id": "imbue",
 						"s": "frost",
-						"x": 4,
+						"x": 2,
 						"y": "9"
 					},
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 4,
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"7": {
+				"health": 95,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "frost",
+						"x": 3,
+						"y": "9"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6,
 						"y": "9"
 					},
 					{
@@ -15401,7 +15423,7 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "berserk",
-						"x": 4,
+						"x": 6,
 						"y": "9"
 					},
 					{
@@ -15414,7 +15436,7 @@ var CARDS = {
 						"all": "1",
 						"c": 2,
 						"id": "enfeeble",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
@@ -15428,20 +15450,20 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "berserk",
-						"x": 5,
+						"x": 7,
 						"y": "9"
 					},
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 3,
+						"x": 4,
 						"y": "9"
 					},
 					{
 						"all": "1",
 						"c": 2,
 						"id": "enfeeble",
-						"x": 3
+						"x": 5
 					}
 				]
 			}
@@ -102690,8 +102712,8 @@ var CARDS = {
 		"set": "9999",
 		"skill": [
 			{
-				"id": "armored",
-				"x": 2
+				"id": "absorb",
+				"x": 3
 			},
 			{
 				"id": "frost",
@@ -102711,8 +102733,8 @@ var CARDS = {
 				"health": 19,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 2
+						"id": "absorb",
+						"x": 4
 					},
 					{
 						"id": "frost",
@@ -102725,11 +102747,12 @@ var CARDS = {
 				]
 			},
 			"3": {
+				"attack": 5,
 				"health": 20,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 3
+						"id": "absorb",
+						"x": 5
 					},
 					{
 						"id": "frost",
@@ -102742,11 +102765,12 @@ var CARDS = {
 				]
 			},
 			"4": {
+				"attack": 6,
 				"health": 21,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 3
+						"id": "absorb",
+						"x": 6
 					},
 					{
 						"id": "frost",
@@ -102759,16 +102783,29 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 5,
+				"attack": 7,
 				"health": 22,
-				"skill": []
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
 			},
 			"6": {
 				"health": 24,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 4
+						"id": "absorb",
+						"x": 8
 					},
 					{
 						"id": "frost",
@@ -102786,7 +102823,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 22,
+		"health": 24,
 		"id": "8039",
 		"maxLevel": 6,
 		"name": "Winter's Wings",
@@ -102815,7 +102852,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 24,
+				"health": 26,
 				"skill": [
 					{
 						"id": "rally",
@@ -102834,7 +102871,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 26,
+				"health": 28,
 				"skill": [
 					{
 						"id": "rally",
@@ -102853,7 +102890,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 28,
+				"health": 30,
 				"skill": [
 					{
 						"id": "rally",
@@ -102873,25 +102910,6 @@ var CARDS = {
 			},
 			"5": {
 				"attack": 6,
-				"health": 30,
-				"skill": [
-					{
-						"id": "rally",
-						"x": 6,
-						"y": "9"
-					},
-					{
-						"id": "rally",
-						"x": 5,
-						"y": "9"
-					},
-					{
-						"id": "nullify",
-						"x": 5
-					}
-				]
-			},
-			"6": {
 				"health": 32,
 				"skill": [
 					{
@@ -102902,6 +102920,26 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"health": 34,
+				"skill": [
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "9"
+					},
+					{
+						"id": "rally",
+						"x": 7,
 						"y": "9"
 					},
 					{
@@ -112445,6 +112483,140 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"8125": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"id": "8125",
+		"maxLevel": 6,
+		"name": "Unfounded Revenge",
+		"picture": "Moss_Dragon_B",
+		"rarity": "4",
+		"set": "9999",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3,
+				"y": "9"
+			},
+			{
+				"id": "leech",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"health": 35,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 37,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"attack": 13,
+				"health": 40,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 14,
+				"health": 43,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 46,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 10
 					}
 				]
 			}
