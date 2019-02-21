@@ -162,11 +162,11 @@
             }
         };
 
-        $scope.$watch("selections.location", function (newValue, oldValue) {
+        $scope.$watch("selections.location", function resetCampaign() {
             $scope.selections.campaign = '';
         });
 
-        $scope.$watch("selections.campaign", function (newValue, oldValue) {
+        $scope.$watch("selections.campaign", function resetMission() {
             $scope.selections.mission = '';
         });
 
@@ -210,9 +210,6 @@
             towerTypes.sort(function (a, b) { return a.id - b.id; });
             return towerTypes;
         };
-
-        $scope.$watch("debugMode", function (newValue, oldValue) {
-        });
     }
 
 }(angular));

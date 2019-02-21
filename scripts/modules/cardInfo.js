@@ -13,17 +13,17 @@ define('cardInfo', [], function() {
 
     function isCommander(id) {
         var card = loadCard(id);
-        return (card && card.card_type == '1');
+        return (card && card.card_type === '1');
     }
     
     function isAssault(id) {
         var card = loadCard(id);
-        return (card && card.card_type == '2');
+        return (card && card.card_type === '2');
     }
     
     function isTrap(id) {
         var card = loadCard(id);
-        return (card && card.card_type == '3');
+        return (card && card.card_type === '3');
     }
 
     return api;

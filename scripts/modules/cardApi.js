@@ -111,7 +111,7 @@ define('cardApi', [
 
         var current_card = cardInfo.loadCard(unit.id);
         var new_card = {};
-        if (current_card.card_type == "1") {
+        if (current_card.card_type === "1") {
             new_card.isCommander = function () { return true; };
             new_card.isAssault = function () { return false; };
         } else {
@@ -212,7 +212,7 @@ define('cardApi', [
             new_card.highlighted = [];
             for (var i = 0; i < skillModifiers.length; i++) {
                 var skillModifier = skillModifiers[i];
-                if (skillModifier.modifierType == "statChange" && !isToken) {
+                if (skillModifier.modifierType === "statChange" && !isToken) {
                     for (var j = 0; j < skillModifier.effects.length; j++) {
                         var statChange = skillModifier.effects[j];
                         if (new_card.isInFaction(statChange.y)) {
@@ -266,7 +266,7 @@ define('cardApi', [
                             if (addedSkill.card) new_skill.card = addedSkill.card;
                             if (addedSkill.level) new_skill.level = addedSkill.level;
                             new_skill.boosted = true;
-                            if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
+                            if (addedSkill.mult && addedSkill.base &&  new_skill.x === 0) continue;
                             original_skills.push(new_skill);
                             new_card.highlighted.push(new_skill.id);
                         }
@@ -319,15 +319,15 @@ define('cardApi', [
 
             //Card ID is ...
             isCommander: function () {
-                return (this.card_type == "1");
+                return (this.card_type === "1");
             },
 
             isAssault: function () {
-                return (this.card_type == "2");
+                return (this.card_type === "2");
             },
 
             isTrap: function () {
-                return (this.card_type == "3");
+                return (this.card_type === "3");
             },
 
             // Alive
@@ -345,7 +345,7 @@ define('cardApi', [
             // Active
             // - timer = 0
             isActive: function () {
-                return (this.timer == 0);
+                return (this.timer === 0);
             },
 
             // Active Next Turn
@@ -476,7 +476,7 @@ define('cardApi', [
                 for (var key in target_skills) {
                     var skill = target_skills[key];
                     if (skill.id !== s) continue;
-                    if (typeof all !== "undefined" && (skill.all || 0) != all) continue;
+                    if (typeof all !== "undefined" && skill.all !== all) continue;
                     return true;
                 }
                 return false;
@@ -505,8 +505,8 @@ define('cardApi', [
                 if (faction === undefined) return 1;
                 var factions = faction.split(',');
                 if (factions.length <= 1) {
-                    if (this.type == faction) return 1;
-                    if (this.sub_type.indexOf(faction.toString()) >= 0) return 1;
+                    if (this.type === faction) return 1;
+                    if (this.sub_type.indexOf(faction) >= 0) return 1;
                     return 0;
                 } else {
                     for (var i = 0; i < factions.length; i++) {
@@ -556,9 +556,8 @@ define('cardApi', [
             card.set = original_card.set;
             var original_skills = original_card.skill;
             if (card.level > 1) {
-                var upgrade;
                 for (var key in original_card.upgrades) {
-                    upgrade = original_card.upgrades[key];
+                    var upgrade = original_card.upgrades[key];
                     // Upgrade levels only contain attack/health/delay if they changed at that level.
                     if (upgrade.cost !== undefined) card.cost = upgrade.cost;
                     if (upgrade.health !== undefined) card.health = upgrade.health;
@@ -580,7 +579,7 @@ define('cardApi', [
                 var runeMult = 1;
                 if (skillModifiers) {
                     skillModifiers.forEach(function (skillModifier) {
-                        if (skillModifier.modifierType == "runeMultiplier") {
+                        if (skillModifier.modifierType === "runeMultiplier") {
                             skillModifier.effects.forEach(function (effect) {
                                 if (card.isInFaction(effect.y)) {
                                     runeMult = parseInt(effect.mult);

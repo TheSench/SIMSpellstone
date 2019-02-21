@@ -3,7 +3,7 @@
 
     var storageAPI = require('storageAPI');
 
-    var DeckStorageCtrl = function ($scope, $window) {
+    var DeckStorageCtrl = function ($scope) {
         $scope.getSavedDecks = storageAPI.getSavedDecks;
 
         $scope.keys = function (obj) {
@@ -18,6 +18,6 @@
         module = angular.module('simulatorApp', []);
     }
 
-    module.controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
+    module.controller('DeckStorageCtrl', ['$scope', DeckStorageCtrl]);
 
 }(angular));

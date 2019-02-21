@@ -1,4 +1,4 @@
-;define('matchStats', [], function() {
+define('matchStats', [], function() {
     return {
        matchesPlayed: 0,
        matchesWon: 0,
@@ -760,15 +760,15 @@ function(
         var possibilities = [];
         for (var id in CARDS) {
             if (REVERSE_FUSIONS[id]) continue;
-            var card = CARDS[id];
-            if (card.card_type == '1') {
+            var card = cardInfo.loadCard(id);
+            if (card.card_type === '1') {
                 continue;
             }
             if (unitInfo.max_rarity && Number(unitInfo.max_rarity) < Number(card.rarity) ||
                 unitInfo.min_rarity && Number(unitInfo.min_rarity) > Number(card.rarity)) {
                 continue;
             }
-            if (unitInfo.type && !(unitInfo.type == card.type || card.sub_type.indexOf(unitInfo.type.toString()) >= 0)) {
+            if (unitInfo.type && !(unitInfo.type === card.type || card.sub_type.indexOf(unitInfo.type) >= 0)) {
                 continue;
             }
             if (unitInfo.set) {
@@ -890,7 +890,7 @@ function(
     }
 
     var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
-    function load_preset_deck(deckInfo, level, upgradeLevels) {
+    function loadPresetDeck(deckInfo, level, upgradeLevels) {
 
         var maxedAt = upgradeLevels + 1;
         if (!level) level = maxedAt;
@@ -935,7 +935,7 @@ function(
     function loadMissionDeck(id, level) {
         var missionInfo = MISSIONS[id];
         if (missionInfo) {
-            return load_preset_deck(missionInfo, level, 6);
+            return loadPresetDeck(missionInfo, level, 6);
         } else {
             return 0;
         }
@@ -949,7 +949,7 @@ function(
                 commander: raidInfo.commander,
                 deck: raidInfo.deck.card
             };
-            return load_preset_deck(newRaidInfo, level, Number(raidInfo.upgradeLevels));
+            return loadPresetDeck(newRaidInfo, level, Number(raidInfo.upgradeLevels));
         } else {
             return 0;
         }
@@ -5293,11 +5293,11 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
             }
         };
 
-        $scope.$watch("selections.location", function (newValue, oldValue) {
+        $scope.$watch("selections.location", function resetCampaign() {
             $scope.selections.campaign = '';
         });
 
-        $scope.$watch("selections.campaign", function (newValue, oldValue) {
+        $scope.$watch("selections.campaign", function resetMission() {
             $scope.selections.mission = '';
         });
 
@@ -5341,9 +5341,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
             towerTypes.sort(function (a, b) { return a.id - b.id; });
             return towerTypes;
         };
-
-        $scope.$watch("debugMode", function (newValue, oldValue) {
-        });
     }
 
 }(angular));
@@ -5352,7 +5349,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
     var storageAPI = require('storageAPI');
 
-    var DeckStorageCtrl = function ($scope, $window) {
+    var DeckStorageCtrl = function ($scope) {
         $scope.getSavedDecks = storageAPI.getSavedDecks;
 
         $scope.keys = function (obj) {
@@ -5367,7 +5364,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         module = angular.module('simulatorApp', []);
     }
 
-    module.controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
+    module.controller('DeckStorageCtrl', ['$scope', DeckStorageCtrl]);
 
 }(angular));;define('tutorialScript', [
     'urlHelper'

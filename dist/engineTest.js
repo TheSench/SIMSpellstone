@@ -1,4 +1,4 @@
-;define('matchStats', [], function() {
+define('matchStats', [], function() {
     return {
        matchesPlayed: 0,
        matchesWon: 0,
@@ -692,15 +692,15 @@
         var possibilities = [];
         for (var id in CARDS) {
             if (REVERSE_FUSIONS[id]) continue;
-            var card = CARDS[id];
-            if (card.card_type == '1') {
+            var card = cardInfo.loadCard(id);
+            if (card.card_type === '1') {
                 continue;
             }
             if (unitInfo.max_rarity && Number(unitInfo.max_rarity) < Number(card.rarity) ||
                 unitInfo.min_rarity && Number(unitInfo.min_rarity) > Number(card.rarity)) {
                 continue;
             }
-            if (unitInfo.type && !(unitInfo.type == card.type || card.sub_type.indexOf(unitInfo.type.toString()) >= 0)) {
+            if (unitInfo.type && !(unitInfo.type === card.type || card.sub_type.indexOf(unitInfo.type) >= 0)) {
                 continue;
             }
             if (unitInfo.set) {
@@ -822,7 +822,7 @@
     }
 
     var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
-    function load_preset_deck(deckInfo, level, upgradeLevels) {
+    function loadPresetDeck(deckInfo, level, upgradeLevels) {
 
         var maxedAt = upgradeLevels + 1;
         if (!level) level = maxedAt;
@@ -867,7 +867,7 @@
     function loadMissionDeck(id, level) {
         var missionInfo = MISSIONS[id];
         if (missionInfo) {
-            return load_preset_deck(missionInfo, level, 6);
+            return loadPresetDeck(missionInfo, level, 6);
         } else {
             return 0;
         }
@@ -881,7 +881,7 @@
                 commander: raidInfo.commander,
                 deck: raidInfo.deck.card
             };
-            return load_preset_deck(newRaidInfo, level, Number(raidInfo.upgradeLevels));
+            return loadPresetDeck(newRaidInfo, level, Number(raidInfo.upgradeLevels));
         } else {
             return 0;
         }

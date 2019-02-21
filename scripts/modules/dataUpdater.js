@@ -147,7 +147,7 @@ define('dataUpdater', [
         unit.set = getValue(node, "set");
         unit.card_type = getValue(node, "card_type");
         addNumericField(unit, node, "shard_card");
-        unit.type = getValue(node, "type") || 0;
+        unit.type = getValue(node, "type") || '0';
         unit.sub_type = (getValues(node, "sub_type") || []);
 
         addNumericField(unit, node, "health");

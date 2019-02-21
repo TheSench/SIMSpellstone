@@ -20,9 +20,9 @@ define('runeApi', [], function () {
         }
         for (var key in statBoost) {
             if (key === "skill") {
-                var skill = statBoost[key];
-                var all = (skill.all ? 1 : 0);
-                if (!card.hasSkill(skill.id, all)) return false;
+                var skillBoost = statBoost[key];
+                var all = (skillBoost.all || '0');
+                if (!card.hasSkill(skillBoost.id, all)) return false;
             }
         }
         return true;

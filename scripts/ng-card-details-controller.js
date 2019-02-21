@@ -2,7 +2,8 @@
   'use strict';
   
 	var cardInfo = require('cardInfo');
-	var factions = require('factions');
+  var factions = require('factions');
+  var unitInfoHelper = require('unitInfoHelper');
 
   // Global arrays
   var rarityStrings = [
@@ -18,7 +19,7 @@
     var id = unit.id;
     var level = unit.level;
 
-    var original = CARDS[id];
+    var original = cardInfo.loadCard(id);
 
     var card = Object.assign({}, original);
     if (level > 1) {
@@ -42,14 +43,14 @@
   var CardDetailsCtrl = function ($scope, $window) {
     $window.cardDetailScope = $scope;
     if ($scope.id && $scope.level) {
-      $scope.unit = $window.unitInfoHelper.create($scope.id, $scope.level),
+      $scope.unit = unitInfoHelper.create($scope.id, $scope.level),
         $scope.card = getCardInfo($scope.unit);
     }
 
     $scope.setUnit = function (unit) {
       $scope.id = unit.id;
       $scope.level = unit.level;
-      $scope.unit = $window.unitInfoHelper.create($scope.id, $scope.level),
+      $scope.unit = unitInfoHelper.create($scope.id, $scope.level),
         $scope.card = getCardInfo($scope.unit);
       $scope.releaseDate = (function () {
         var hiddenUntil = $scope.card.hidden_until;
@@ -65,21 +66,6 @@
     };
 
     $scope.visible = false;
-
-    $scope.getCardImage = function () {
-      var image = new Image();
-      image.src = "res/cardImagesLarge/" + cardInfo.loadCard($scope.card.id).picture + ".jpg";
-
-      image.onerror = function () {
-        if (this.naturalHeight !== 330) {
-          this.src = th.replace('ImagesLarge', 'Images');
-          this.onload = null;
-        }
-        $modal.find('img').attr('src', this.src);
-      };
-
-      return "res/cardImagesLarge/" + cardInfo.loadCard($scope.card.id).picture + ".jpg";
-    };
 
     var image;
     $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg";
@@ -110,12 +96,8 @@
       }
     });
 
-    $scope.isCommander = function () {
-      return $window.cardInfo.isCommander($scope.id);
-    };
-
     $scope.commanderClass = function () {
-      if ($scope.isCommander()) {
+      if (cardInfo.isCommander($scope.id)) {
         return "commander " + $scope.getFaction($scope.card.type).toLowerCase();
       } else {
         return '';
