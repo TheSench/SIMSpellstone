@@ -224,9 +224,7 @@ Function.prototype.throttle = function throttle(wait) {
         return RUNES[rune_id];
     }
 
-    function canUseRune(card, runeID) {
-        var rune = getRune(runeID);
-    
+    function canUseRune(card, rune) {    
         var statBoost = rune.stat_boost;
         if (rune.faction_req) {
             if (!card.isInFaction(rune.faction_req)) {
@@ -919,12 +917,12 @@ define('dataUpdater', [
             for (var key in statBoost) {
                 var boost = statBoost[key];
                 if (key === "skill") {
-                    // Will be handled later
+                    // Handled by addRunesToSkills()
                 } else {
                     if (isNaN(boost)) {
                         boost = Math.max(Math.ceil(card[key] * boost.mult), (boost.min_bonus || 1));
                     }
-                    card[key] += parseInt(boost);
+                    card[key] += boost;
                 }
             }
         }
@@ -983,10 +981,7 @@ define('dataUpdater', [
             new_card.name = current_card.name;
             new_card.rarity = current_card.rarity;
             new_card.maxLevel = current_card.maxLevel;
-            if (unit.level) {
-                new_card.level = unit.level;
-                if (new_card.level > new_card.maxLevel) new_card.level = new_card.maxLevel;
-            } else new_card.level = 1;
+            new_card.level = Math.min((unit.level || 1), new_card.maxLevel);
             if (getDetails) {
                 new_card.attack = current_card.attack;
                 new_card.health = current_card.health;
@@ -998,13 +993,14 @@ define('dataUpdater', [
                 new_card.skill = current_card.skill;
                 if (new_card.level > 1) {
                     for (var key in current_card.upgrades) {
+                        var upgradeLevel = parseInt(key);
                         var upgrade = current_card.upgrades[key];
                         if (upgrade.cost !== undefined) new_card.cost = upgrade.cost;
                         if (upgrade.health !== undefined) new_card.health = upgrade.health;
                         if (upgrade.attack !== undefined) new_card.attack = upgrade.attack;
                         if (upgrade.desc !== undefined) new_card.desc = upgrade.desc;
                         if (upgrade.skill.length > 0) new_card.skill = upgrade.skill;
-                        if (key == new_card.level) break;
+                        if (upgradeLevel === new_card.level) break;
                     }
                 }
 
@@ -1029,7 +1025,7 @@ define('dataUpdater', [
         if (!runes) return;
         for (var i = 0, len = runes.length; i < len; i++) {
             var runeID = runes[i].id;
-            var statBoost = RUNES[runeID].stat_boost;
+            var statBoost = runeApi.getRune(runeID).stat_boost;
             for (var key in statBoost) {
                 var boost = statBoost[key];
                 if (key === "skill") {
@@ -1038,12 +1034,12 @@ define('dataUpdater', [
                     var mult = boost.mult;
                     for (var s = 0; s < skills.length; s++) {
                         var skill = skills[s];
-                        if (skill.id === skillID && (skill.all || 0) == (boost.all || 0)) {
+                        if (skill.id === skillID && ((skill.all || '0') === (boost.all || '0'))) {
                             skill = skillApi.copySkill(skill);
                             if (!amount && mult) amount = Math.ceil(skill.x * mult);
                             if (boost.min_bonus) amount = Math.max(amount, boost.min_bonus);
-                            if (amount) skill.x += (parseInt(amount) * runeMult);
-                            if (boost.c) skill.c -= Math.min(skill.c, (parseInt(boost.c) * runeMult));
+                            if (amount) skill.x += (amount * runeMult);
+                            if (boost.c) skill.c -= Math.min(skill.c, (boost.c * runeMult));
                             skill.boosted = true;
                             skills[s] = skill;
                             break;
@@ -1082,7 +1078,7 @@ define('dataUpdater', [
                         var evolution = skillModifier.effects[j];
                         for (var key in original_skills) {
                             var skill = original_skills[key];
-                            if (skill.id == evolution.id && skill.all == evolution.all) {
+                            if (skill.id === evolution.id && skill.all === evolution.all) {
                                 skill = skillApi.copySkill(skill);
                                 skill.id = evolution.s;
                                 skill.boosted = true;
@@ -1095,7 +1091,7 @@ define('dataUpdater', [
                     for (var j = 0; j < skillModifier.effects.length; j++) {
                         var addedSkill = skillModifier.effects[j];
                         if (new_card.isInFaction(addedSkill.y)) {
-                            if (addedSkill.rarity && new_card.rarity != addedSkill.rarity) continue;
+                            if (addedSkill.rarity && new_card.rarity !== addedSkill.rarity) continue;
 
                             var new_skill = {};
                             new_skill.id = addedSkill.id;
@@ -1396,7 +1392,7 @@ define('dataUpdater', [
             card.attack = original_card.attack;
             card.health = original_card.health;
             card.maxLevel = original_card.maxLevel;
-            card.level = ((unit_level > card.maxLevel) ? card.maxLevel : unit_level);
+            card.level = Math.min(unit_level, card.maxLevel);
             card.cost = original_card.cost;
             card.rarity = original_card.rarity;
             card.card_type = original_card.card_type;
@@ -1413,7 +1409,7 @@ define('dataUpdater', [
                     if (upgrade.attack !== undefined) card.attack = upgrade.attack;
                     if (upgrade.desc !== undefined) card.desc = upgrade.desc;
                     if (upgrade.skill.length > 0) original_skills = upgrade.skill;
-                    if (key == card.level) break;
+                    if (parseInt(key) === card.level) break;
                 }
             }
 

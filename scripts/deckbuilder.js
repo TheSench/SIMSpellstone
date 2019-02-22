@@ -1734,21 +1734,13 @@ var showRunePicker = function (card) {
 
 	$("#runeChoicesDiv").hide();
 	if (card.rarity >= 3 && !card.isCommander()) {
-		for (var key in RUNES) {
-			var rune = RUNES[key];
-			if (runeApi.canUseRune(card, rune.id)) {
+		for (var runeID in RUNES) {
+			var rune = runeApi.getRune(runeID);
+			if (runeApi.canUseRune(card, rune)) {
 				var option = document.createElement('option');
 				option.appendChild(document.createTextNode(rune.desc));
 				option.value = rune.id;
 				select.appendChild(option);
-				/*
-				if (rune.rarity > 3)
-				{
-					optionsDialog.hiddenOptions.push(option);
-					option.hidden = !showUnreleased;
-					option.disabled = !showUnreleased;
-				}
-				*/
 			}
 		}
 
@@ -1789,7 +1781,7 @@ var modifyCard = function (optionsDialog) {
 		var unit = deck.commander;
 	}
 
-	unit.level = document.getElementById("upgrade").value;
+	unit.level = parseInt(document.getElementById("upgrade").value);
 	var fusion = document.getElementById("fusion").value;
 	if (fusion) {
 		fusion = (fusion - 1).toString();

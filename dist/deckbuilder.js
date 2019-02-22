@@ -1751,21 +1751,13 @@ var showRunePicker = function (card) {
 
 	$("#runeChoicesDiv").hide();
 	if (card.rarity >= 3 && !card.isCommander()) {
-		for (var key in RUNES) {
-			var rune = RUNES[key];
-			if (runeApi.canUseRune(card, rune.id)) {
+		for (var runeID in RUNES) {
+			var rune = runeApi.getRune(runeID);
+			if (runeApi.canUseRune(card, rune)) {
 				var option = document.createElement('option');
 				option.appendChild(document.createTextNode(rune.desc));
 				option.value = rune.id;
 				select.appendChild(option);
-				/*
-				if (rune.rarity > 3)
-				{
-					optionsDialog.hiddenOptions.push(option);
-					option.hidden = !showUnreleased;
-					option.disabled = !showUnreleased;
-				}
-				*/
 			}
 		}
 
@@ -1806,7 +1798,7 @@ var modifyCard = function (optionsDialog) {
 		var unit = deck.commander;
 	}
 
-	unit.level = document.getElementById("upgrade").value;
+	unit.level = parseInt(document.getElementById("upgrade").value);
 	var fusion = document.getElementById("fusion").value;
 	if (fusion) {
 		fusion = (fusion - 1).toString();
@@ -2324,25 +2316,26 @@ function externalData(hash, inventoryHash) {
 
   function getCardInfo(unit) {
     var id = unit.id;
-    var level = unit.level;
+    var unitLevel = unit.level;
 
     var original = cardInfo.loadCard(id);
 
     var card = Object.assign({}, original);
-    if (level > 1) {
-      if (level > 1) {
+    if (unitLevel > 1) {
+      if (unitLevel > 1) {
         for (var key in original.upgrades) {
+          var upgradeLevel = parseInt(key);
           var upgrade = original.upgrades[key];
           if (upgrade.cost !== undefined) card.cost = upgrade.cost;
           if (upgrade.health !== undefined) card.health = upgrade.health;
           if (upgrade.attack !== undefined) card.attack = upgrade.attack;
           if (upgrade.desc !== undefined) card.desc = upgrade.desc;
           if (upgrade.skill.length > 0) card.skill = upgrade.skill;
-          if (key == level) break;
+          if (upgradeLevel === unitLevel) break;
         }
       }
     }
-    card.level = level;
+    card.level = unitLevel;
     card.maxLevel = original.maxLevel;
     return card;
   }
@@ -2376,7 +2369,7 @@ function externalData(hash, inventoryHash) {
 
     var image;
     $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg";
-    $scope.$watch('card.id', function (newValue, oldValue) {
+    $scope.$watch('card.id', function (newValue) {
       if (newValue) {
         var extension = ".jpg";
         if (cardInfo.isCommander(newValue)) {
@@ -2561,7 +2554,7 @@ function externalData(hash, inventoryHash) {
     $scope.incrementFusion = function () {
       var fused = nextFusion(Number($scope.id));
       if (fused) {
-        var max = ($scope.level == $scope.card.maxLevel);
+        var max = ($scope.level === $scope.card.maxLevel);
         $scope.id = fused;
         $scope.unit.id = $scope.id;
         $scope.card = getCardInfo($scope.unit);
@@ -2574,7 +2567,7 @@ function externalData(hash, inventoryHash) {
     };
 
     $scope.decrementLevel = function () {
-      $scope.level = Number($scope.level);
+      $scope.level = $scope.level;
       if ($scope.level > 1) {
         $scope.level--;
       }
@@ -2583,7 +2576,7 @@ function externalData(hash, inventoryHash) {
     };
 
     $scope.incrementLevel = function () {
-      $scope.level = Number($scope.level);
+      $scope.level = $scope.level;
       if ($scope.level < $scope.card.maxLevel) {
         $scope.level++;
       }
@@ -2691,7 +2684,7 @@ function externalData(hash, inventoryHash) {
     })
     .directive('sssAutofocus', function () {
       return {
-        link: function (scope, elem, attr) {
+        link: function (scope, elem) {
           elem.focus();
         }
       };

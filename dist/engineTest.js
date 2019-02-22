@@ -647,7 +647,7 @@ define('matchStats', [], function() {
 
     function getUpgradePoints(level, maxedAt, maxUpgradePoints) {
         var percentCompvare;
-        if (maxedAt == 7) {
+        if (maxedAt === 7) {
             percentCompvare = (level - 1) / (maxedAt - 1);
         } else {
             percentCompvare = (level / maxedAt);
@@ -750,7 +750,7 @@ define('matchStats', [], function() {
 
     function upgradeCard(unitInfo) {
         var maxLevel = (parseInt(cardInfo.loadCard(unitInfo.id).rarity) + 2);
-        if (unitInfo.level == maxLevel) {
+        if (unitInfo.level === maxLevel) {
             if (canFuse(unitInfo.id)) {
                 unitInfo.id = fuseCard(unitInfo.id, 1);
                 unitInfo.level = 1;
@@ -775,7 +775,7 @@ define('matchStats', [], function() {
     }
 
     function fuseCard(cardID, fusion) {
-        if (DoNotFuse.indexOf(cardID) == -1) {
+        if (DoNotFuse.indexOf(cardID) === -1) {
             // Fuse X number of times
             if (fusion) {
                 for (var i = 0; i < fusion; i++) {

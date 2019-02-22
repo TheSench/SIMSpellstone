@@ -9,9 +9,7 @@ define('runeApi', [], function () {
         return RUNES[rune_id];
     }
 
-    function canUseRune(card, runeID) {
-        var rune = getRune(runeID);
-    
+    function canUseRune(card, rune) {    
         var statBoost = rune.stat_boost;
         if (rune.faction_req) {
             if (!card.isInFaction(rune.faction_req)) {
