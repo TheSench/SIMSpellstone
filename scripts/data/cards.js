@@ -9,7 +9,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Oda the Guardian",
 		"picture": "portrait_templeguardian",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "7000",
 		"skill": [
 			{
@@ -51,7 +51,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Yuriel the Owl Mystic",
 		"picture": "portrait_owlmystic",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "7000",
 		"skill": [
 			{
@@ -118,7 +118,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Samael",
 		"picture": "portrait_seraph",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -223,7 +223,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Aria the Necromancer",
 		"picture": "portrait_necromancer",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "7000",
 		"skill": [
 			{
@@ -265,7 +265,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Decim the Firebringer",
 		"picture": "portrait_flamebender",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "7000",
 		"skill": [
 			{
@@ -343,7 +343,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tarian the Lich Lord",
 		"picture": "portrait_lichking",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -439,7 +439,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Elyse the Ranger",
 		"picture": "portrait_elyse",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "7000",
 		"skill": [
 			{
@@ -477,7 +477,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Commander Ursurio",
 		"picture": "portrait_bearcommander",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "7000",
 		"skill": [
 			{
@@ -550,7 +550,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Groc the Hammer",
 		"picture": "portrait_groc",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -635,7 +635,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rayne the Wavecrasher",
 		"picture": "portrait_elementalhero",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -729,7 +729,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Orgoth the Hex Fist",
 		"picture": "portrait_orchero",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -832,7 +832,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ol' Cedric",
 		"picture": "portrait_froghero",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -942,7 +942,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oda the Aegis",
 		"picture": "portrait_odaupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -1049,7 +1049,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Yuriel the Manashifter",
 		"picture": "portrait_yurielupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -1149,7 +1149,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aria the Nightwielder",
 		"picture": "portrait_ariaupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -1232,7 +1232,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Decim the Pyrokinetic",
 		"picture": "portrait_decimupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -1307,7 +1307,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Elyse the Truestriker",
 		"picture": "portrait_elyseupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -1420,7 +1420,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "General Ursurio",
 		"picture": "portrait_ursurioupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -1515,7 +1515,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scyer the Fury Mecha",
 		"picture": "portrait_chaos_mecha_hero",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "7000",
 		"skill": [
 			{
@@ -1625,7 +1625,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Undead Horde",
 		"picture": "portrait_skeletonwarrior",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -1663,7 +1663,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Wyld Wolf",
 		"picture": "portrait_wolf",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -1704,7 +1704,7 @@ var CARDS = {
 		"maxLevel": 1,
 		"name": "Elaria Captain",
 		"picture": "portrait_ranger",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -1719,7 +1719,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Luminis Angel",
 		"picture": "portrait_angelknight",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -1787,7 +1787,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Will O' Wisp",
 		"picture": "portrait_lightwisp",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -1848,7 +1848,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Mermaid Augurer",
 		"picture": "portrait_mermaid",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -1899,7 +1899,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grim Titan",
 		"picture": "portrait_firetitan",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -1960,7 +1960,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Void Assassin",
 		"picture": "portrait_invisibleassassin",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -2004,7 +2004,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Void Minions",
 		"picture": "portrait_voidminions",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -2064,7 +2064,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Orobas of the Void",
 		"picture": "portrait_balrog",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -2141,7 +2141,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lava Crab Gang",
 		"picture": "portrait_lavacrab",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -2214,7 +2214,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wraith Den",
 		"picture": "portrait_wraithden",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -2281,7 +2281,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Caverns of Crossing",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -2342,7 +2342,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grand Hermit Malchior",
 		"picture": "portrait_grandexcavator",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -2441,7 +2441,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tremor Wurm",
 		"picture": "portrait_tremorwurm",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -2512,7 +2512,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Void Abomination",
 		"picture": "portrait_void",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -2610,7 +2610,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Trainee Elyse",
 		"picture": "portrait_elyse",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -2638,7 +2638,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Trainee Oda",
 		"picture": "portrait_templeguardian",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -2666,7 +2666,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Tainted Wolf",
 		"picture": "portrait_wolf",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -2724,7 +2724,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Maniac General",
 		"picture": "portrait_maniacgeneral",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -2803,7 +2803,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cursed Voidlings",
 		"picture": "portrait_voidminions",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -2883,7 +2883,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Alpha Wisp",
 		"picture": "portrait_lightwisp",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -2964,7 +2964,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Titan Twins",
 		"picture": "portrait_firetitan",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -3027,7 +3027,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Escaped Angel",
 		"picture": "portrait_angelknight",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -3061,7 +3061,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Consumed Undead",
 		"picture": "portrait_skeletonwarrior",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -3095,7 +3095,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Wasteland Wolf Pack",
 		"picture": "portrait_wolf",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -3159,7 +3159,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lost Lava Crab",
 		"picture": "portrait_lavacrab",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -3202,7 +3202,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wasteland Wraiths",
 		"picture": "portrait_wraithden",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3285,7 +3285,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Voidlings",
 		"picture": "portrait_voidminions",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3348,7 +3348,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skeleton Familiar",
 		"picture": "portrait_skeletonwarrior",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3413,7 +3413,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aria, Void Consumed",
 		"picture": "portrait_necromancer",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3481,7 +3481,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skeletal Army",
 		"picture": "portrait_skeletonwarrior",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3546,7 +3546,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frenzied Dragon",
 		"picture": "portrait_moltendragon",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3618,7 +3618,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Orobas, Raging Beast",
 		"picture": "portrait_balrog",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -3695,7 +3695,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Decim, Flame Incarnate",
 		"picture": "portrait_flamebender",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3762,7 +3762,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Obsidian Claw",
 		"picture": "portrait_lavacrab",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3823,7 +3823,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aerie Guardian",
 		"picture": "portrait_angelknight",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -3887,7 +3887,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kerlor, Ice Dragon",
 		"picture": "portrait_icedragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -3969,7 +3969,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lantern Guardian",
 		"picture": "portrait_lanternguardian",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -4052,7 +4052,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Groc, Vault Ancient",
 		"picture": "portrait_groc",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -4131,7 +4131,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Molten Crab",
 		"picture": "portrait_lavacrab",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -4186,7 +4186,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gold Monstrosity",
 		"picture": "portrait_goldelemental",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -4285,7 +4285,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Coral Hunter",
 		"picture": "portrait_carl",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -4385,7 +4385,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Windstorm Avatar",
 		"picture": "portrait_windstormelemental",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -4475,7 +4475,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Celestial Grotto",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -4567,7 +4567,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vault Titan",
 		"picture": "portrait_firetitan",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -4693,7 +4693,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Darkwater Mermaid",
 		"picture": "portrait_mermaid",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -4775,7 +4775,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Canopy Hunter",
 		"picture": "portrait_canopyhunter",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -4855,7 +4855,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swamp Swarm",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -4932,7 +4932,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lone Frog Scout",
 		"picture": "portrait_frogscout",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -4994,7 +4994,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tainted Coral Elemental",
 		"picture": "portrait_carl",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5064,7 +5064,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Guardian  Wurm",
 		"picture": "portrait_tremorwurm",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5130,7 +5130,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Berserk Emperor",
 		"picture": "portrait_frogemperor",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5216,7 +5216,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostbite",
 		"picture": "portrait_frostbite",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5329,7 +5329,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas",
 		"picture": "portrait_wyldguardian",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5472,7 +5472,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron",
 		"picture": "portrait_aetherguardian",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5609,7 +5609,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos",
 		"picture": "portrait_chaosguardian",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5732,7 +5732,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Golden Lava Lord",
 		"picture": "portrait_goldelemental",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5826,7 +5826,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winterback Ape",
 		"picture": "portrait_wintercreature",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -5897,7 +5897,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Iceback Dragon",
 		"picture": "portrait_icedragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -5980,7 +5980,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ice Abomination",
 		"picture": "portrait_winterbigbad",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -6085,7 +6085,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Coldspirit Wisp",
 		"picture": "portrait_lightwisp",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -6147,7 +6147,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frostwhip Storm",
 		"picture": "portrait_windstormelemental",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -6223,7 +6223,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Snow Assassin",
 		"picture": "portrait_invisibleassassin",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -6298,7 +6298,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vapor Hunters",
 		"picture": "portrait_winteradventurers",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -6373,7 +6373,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Void Warrior",
 		"picture": "portrait_skeletonwarrior",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -6457,7 +6457,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shade Gang",
 		"picture": "portrait_voidminions",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -6533,7 +6533,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wandering Wraith",
 		"picture": "portrait_wraithden",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -6611,7 +6611,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spine Coil",
 		"picture": "portrait_undeadsnake",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -6695,7 +6695,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Arcane Turret",
 		"picture": "portrait_arcaneturret",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -6775,7 +6775,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Feral Scientists",
 		"picture": "portrait_undeadscientists",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -6855,7 +6855,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dr. Oppenhinder",
 		"picture": "portrait_madscientist",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -6943,7 +6943,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Highfire Dragon",
 		"picture": "portrait_moltendragon",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -7023,7 +7023,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swooning Angel",
 		"picture": "portrait_angelknight",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -7107,7 +7107,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sleepy Mail Man",
 		"picture": "portrait_sleepymailman",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -7185,7 +7185,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icewind Dragon",
 		"picture": "portrait_icedragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -7286,7 +7286,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sky Beast",
 		"picture": "portrait_skybeast",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -7379,7 +7379,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Royal Engineer",
 		"picture": "portrait_royalengineer",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -7461,7 +7461,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skyhaven Queen",
 		"picture": "portrait_angelqueen",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -7572,7 +7572,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Nethergore",
 		"picture": "portrait_nethergore",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -7700,7 +7700,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Void Infected Mermaid",
 		"picture": "portrait_mermaid",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -7785,7 +7785,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dark Coral",
 		"picture": "portrait_carl",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -7887,7 +7887,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swamp Wurm",
 		"picture": "portrait_tremorwurm",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -7975,7 +7975,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Void Viper",
 		"picture": "portrait_undeadsnake",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -8082,7 +8082,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Creepy Crawlies",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -8178,7 +8178,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Corruptlings",
 		"picture": "portrait_dawnglowbabies",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -8275,7 +8275,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Corruptrex",
 		"picture": "portrait_dawnglowmonster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -8397,7 +8397,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crab Striker",
 		"picture": "portrait_lavacrab",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -8499,7 +8499,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Targetback Hill",
 		"picture": "portrait_groundelemental",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -8611,7 +8611,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Treetop Stalker",
 		"picture": "portrait_skybeast",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -8712,7 +8712,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rebellious Frog Scout",
 		"picture": "portrait_frogscout",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -8823,7 +8823,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Feral Bird",
 		"picture": "portrait_feralbird",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -8943,7 +8943,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goldtop Hunter",
 		"picture": "portrait_canopyhunter",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -9044,7 +9044,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fireback Dragon",
 		"picture": "portrait_moltendragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -9163,7 +9163,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avian Soldiers",
 		"picture": "portrait_aviansoldier2",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -9284,7 +9284,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thing In The Lake",
 		"picture": "portrait_aprilmonser",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -9320,7 +9320,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "The Maddest Bomber",
 		"picture": "portrait_aprilbomber",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -9404,7 +9404,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chicken Enthusiast",
 		"picture": "portrait_aprilchicken",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -9466,7 +9466,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Seaside Windstorm",
 		"picture": "portrait_windstormelemental",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -9556,7 +9556,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Beachscamp",
 		"picture": "portrait_skybeast",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -9636,7 +9636,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Waterbomber Avian",
 		"picture": "portrait_feralbird",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -9712,7 +9712,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Salty Fire Titan",
 		"picture": "portrait_firetitan",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -9796,7 +9796,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "First Order Monk",
 		"picture": "portrait_oldmonk",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -9906,7 +9906,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sealed First Order Demon",
 		"picture": "portrait_octopusmonster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -10010,7 +10010,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skyward Bird",
 		"picture": "portrait_feralbird",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -10085,7 +10085,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Red Feather Hippogriff",
 		"picture": "portrait_avianlion",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -10160,7 +10160,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lost Angel",
 		"picture": "portrait_angelknight",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -10246,7 +10246,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Red Feather Soldier",
 		"picture": "portrait_aviansoldier2",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -10338,7 +10338,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Red Feather Magistrate",
 		"picture": "portrait_avianmagistrate",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -10427,7 +10427,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Fortune's Favor",
 		"picture": "portrait_raid_003_portrait",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -10565,7 +10565,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ivytail Dragon",
 		"picture": "portrait_greenbackdragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -10650,7 +10650,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goblin Footgang",
 		"picture": "portrait_goblinfootmen",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -10721,7 +10721,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Ringleader",
 		"picture": "portrait_goblinringleader",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -10818,7 +10818,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "High Flying Hippogriff",
 		"picture": "portrait_avianlion",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -10901,7 +10901,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fireproof Snipper",
 		"picture": "portrait_lavacrab",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -10972,7 +10972,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ravaging Canine",
 		"picture": "portrait_wolf",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -11051,7 +11051,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Greenleaf Sky Beast",
 		"picture": "portrait_skybeast",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -11140,7 +11140,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Raging Hippogrif",
 		"picture": "portrait_avianlion",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -11237,7 +11237,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tamed Fire Dragon",
 		"picture": "portrait_moltendragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -11348,7 +11348,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rabid Jumper",
 		"picture": "portrait_feralbug",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -11439,7 +11439,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cackling Henchmen",
 		"picture": "portrait_goblinfootmen",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -11533,7 +11533,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Looting Footmen",
 		"picture": "portrait_goblinraider",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -11637,7 +11637,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dragon Master",
 		"picture": "portrait_dragonridingringleader",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -11749,7 +11749,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Captain",
 		"picture": "portrait_goblin_captain",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -11845,7 +11845,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thunderstrike Beast",
 		"picture": "portrait_skybeast",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -11956,7 +11956,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avian Explorer",
 		"picture": "portrait_aviansoldier2",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -12049,7 +12049,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dirt Digger",
 		"picture": "portrait_feralbug",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -12140,7 +12140,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Highwind Stalker",
 		"picture": "portrait_avianlion",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -12237,7 +12237,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Plateau Monster",
 		"picture": "portrait_oasismonster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -12330,7 +12330,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reks",
 		"picture": "portrait_king_goblin",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -12434,7 +12434,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Undead Brute Boss",
 		"picture": "portrait_undeadbrute",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -12548,7 +12548,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Void Infected General",
 		"picture": "portrait_maniacgeneral",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -12643,7 +12643,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cavern Wisp",
 		"picture": "portrait_lightwisp",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -12730,7 +12730,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Risen Warrior",
 		"picture": "portrait_skeletonwarrior",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -12808,7 +12808,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Underhill Caverns",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -12892,7 +12892,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ascetic Scientists",
 		"picture": "portrait_undeadscientists",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -13011,7 +13011,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hornslice Fiend",
 		"picture": "portrait_balrog",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -13143,7 +13143,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dark Dweller",
 		"picture": "portrait_octopusmonster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -13275,7 +13275,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Ruler of the Depths",
 		"picture": "portrait_undeadsnake",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -13383,7 +13383,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Marrowsworn the Tyrant",
 		"picture": "portrait_nethergore",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -13497,7 +13497,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wind-Up Dragons",
 		"picture": "portrait_windupdragons",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -13621,7 +13621,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goblin Mechanic",
 		"picture": "portrait_mechanicgoblin",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -13726,7 +13726,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Treat Trickmaster",
 		"picture": "portrait_pumpkingportrait",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -13847,7 +13847,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Whirling Devil",
 		"picture": "portrait_windstormelemental",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -13931,7 +13931,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magma Clipper",
 		"picture": "portrait_lavacrab",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -14015,7 +14015,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Coral Stinger",
 		"picture": "portrait_carl",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -14103,7 +14103,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Null Darkness",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -14214,7 +14214,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deep Titan",
 		"picture": "portrait_firetitan",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -14334,7 +14334,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Earthen Guardian",
 		"picture": "portrait_oasismonster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -14456,7 +14456,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "World Light",
 		"picture": "portrait_lightwisp",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -14581,7 +14581,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Gorvo, Mountain King",
 		"picture": "portrait_groundelemental2",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -14705,7 +14705,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wind Drake",
 		"picture": "portrait_sailing_drake",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -14797,7 +14797,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brine Bringer",
 		"picture": "portrait_kraken_portrait",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -14897,7 +14897,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mechanical Drakes",
 		"picture": "portrait_windupdragons",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -14969,7 +14969,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skyward Beast",
 		"picture": "portrait_skybeast",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -15058,7 +15058,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ice Dragon",
 		"picture": "portrait_icedragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -15149,7 +15149,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Molten Dragon",
 		"picture": "portrait_moltendragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -15232,13 +15232,14 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Frostbite, Winter's End",
 		"picture": "portrait_frostbite",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
+				"all": "1",
 				"id": "imbue",
 				"s": "frost",
-				"x": 2,
+				"x": 1,
 				"y": "9"
 			},
 			{
@@ -15248,7 +15249,7 @@ var CARDS = {
 				"y": "9"
 			},
 			{
-				"c": 3,
+				"c": 4,
 				"id": "jam"
 			}
 		],
@@ -15263,9 +15264,10 @@ var CARDS = {
 				"health": 83,
 				"skill": [
 					{
+						"all": "1",
 						"id": "imbue",
 						"s": "frost",
-						"x": 3,
+						"x": 1,
 						"y": "9"
 					},
 					{
@@ -15288,9 +15290,10 @@ var CARDS = {
 				"health": 89,
 				"skill": [
 					{
+						"all": "1",
 						"id": "imbue",
 						"s": "frost",
-						"x": 3,
+						"x": 2,
 						"y": "9"
 					},
 					{
@@ -15307,21 +15310,40 @@ var CARDS = {
 			},
 			"6": {
 				"health": 92,
-				"skill": []
-			},
-			"7": {
-				"health": 95,
 				"skill": [
 					{
+						"all": "1",
 						"id": "imbue",
 						"s": "frost",
-						"x": 4,
+						"x": 2,
 						"y": "9"
 					},
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 4,
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"7": {
+				"health": 95,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "frost",
+						"x": 3,
+						"y": "9"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6,
 						"y": "9"
 					},
 					{
@@ -15339,7 +15361,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Nojuma, the Mountainbane",
 		"picture": "portrait_greenbackdragon",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -15401,7 +15423,7 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "berserk",
-						"x": 4,
+						"x": 6,
 						"y": "9"
 					},
 					{
@@ -15414,7 +15436,7 @@ var CARDS = {
 						"all": "1",
 						"c": 2,
 						"id": "enfeeble",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
@@ -15428,20 +15450,20 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "berserk",
-						"x": 5,
+						"x": 7,
 						"y": "9"
 					},
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 3,
+						"x": 4,
 						"y": "9"
 					},
 					{
 						"all": "1",
 						"c": 2,
 						"id": "enfeeble",
-						"x": 3
+						"x": 5
 					}
 				]
 			}
@@ -15454,7 +15476,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oracle of Lady Scylla",
 		"picture": "portrait_earthquake_hammer",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -15591,7 +15613,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scylla",
 		"picture": "portrait_mythic_seafolk",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -15702,7 +15724,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "The Assassin",
 		"picture": "portrait_invisibleassassin",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -15834,7 +15856,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skyhaven Agent",
 		"picture": "portrait_spy_angel",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -15954,7 +15976,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Samael of White-Hilt",
 		"picture": "portrait_samaelwithfiresword",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -16069,7 +16091,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Spirit",
 		"picture": "portrait_samaelwithfiresword",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -16189,7 +16211,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Valkyrie Guardian",
 		"picture": "portrait_angelknight",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -16285,7 +16307,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tomb Tunneler",
 		"picture": "portrait_feralbug",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -16372,7 +16394,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tomb Raiders",
 		"picture": "portrait_winteradventurers",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -16459,7 +16481,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Soul of the Brave",
 		"picture": "portrait_lightwisp",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -16574,7 +16596,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Guardian Constructs",
 		"picture": "portrait_windupdragons",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -16691,7 +16713,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spirit of the Beast",
 		"picture": "portrait_winterbigbad",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -16822,7 +16844,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Spirit of the Lost",
 		"picture": "portrait_lanternguardian",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -16980,7 +17002,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Catacomb Sentinel",
 		"picture": "portrait_undeadbrute",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -17127,7 +17149,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shadow Garrick",
 		"picture": "portrait_maniacgeneral",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -17247,7 +17269,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mermod",
 		"picture": "portrait_mermod",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -17342,7 +17364,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Obyto14",
 		"picture": "portrait_obyto14",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -17418,7 +17440,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "TyrantShiva",
 		"picture": "portrait_tyrantshiva",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -17524,7 +17546,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Well-Dressed Skeleton",
 		"picture": "portrait_baronskeleton",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -17655,7 +17677,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bluefire, Void Master",
 		"picture": "portrait_bluefirevoiddragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -17775,7 +17797,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Elyse's Shadow",
 		"picture": "portrait_elyseupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -17882,7 +17904,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oda's Shadow",
 		"picture": "portrait_odaupgrade",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -17988,7 +18010,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bluefire, Heartless",
 		"picture": "portrait_bluefirevoiddragon",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -18108,7 +18130,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bluefire, Mythic Master",
 		"picture": "portrait_mythicconglomerate",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -18233,7 +18255,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Vengeful Bones",
 		"picture": "portrait_skeletonwarrior",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -18307,7 +18329,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadowdusk Minions",
 		"picture": "portrait_voidminions",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -18378,7 +18400,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Glowtooth Pack",
 		"picture": "portrait_dawnglowbabies",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -18455,7 +18477,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stompglow Beast",
 		"picture": "portrait_dawnglowmonster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -18578,7 +18600,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deep Tremors",
 		"picture": "portrait_tremorwurm",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -18686,7 +18708,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Strangle Beak",
 		"picture": "portrait_octopusmonster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -18793,7 +18815,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Void's Shadow",
 		"picture": "portrait_void2",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -18937,7 +18959,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Bluefire Enraged",
 		"picture": "portrait_bluefirevoiddragon",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -19051,7 +19073,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scarab Scrapper",
 		"picture": "portrait_steampunk_scarab",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -19161,7 +19183,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "The Enraged Assassin",
 		"picture": "portrait_invisibleassassin",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -19293,7 +19315,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Gobatron",
 		"picture": "portrait_raid_004",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -19425,7 +19447,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xerkahn, the Vengeant",
 		"picture": "portrait_skypirateladygoblin",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -19556,7 +19578,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goblin Diver",
 		"picture": "portrait_portraits_goblin_diver",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -19662,7 +19684,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "King Proteus",
 		"picture": "portrait_portraits_seafolk_king",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -19748,7 +19770,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brine Singer",
 		"picture": "portrait_kraken_portrait",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -19852,7 +19874,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xerkahn, the Avenger",
 		"picture": "portrait_skypirateladygoblin",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -19977,7 +19999,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Viracocha, Titan Aspirer",
 		"picture": "portrait_portraits_ancient_titan_mecha",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20108,7 +20130,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnglow Hunter",
 		"picture": "portrait_portraits_tribal_frog",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20239,7 +20261,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mining Cydroid",
 		"picture": "portrait_portraits_miner_droid",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20371,7 +20393,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scyer of Fire",
 		"picture": "portrait_chaos_mecha_hero",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20491,7 +20513,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fireshard's Giant",
 		"picture": "portrait_giantmechaboss",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20606,7 +20628,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fireshard's Slumbering Giant",
 		"picture": "portrait_giantmechaboss",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20721,7 +20743,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crimsonwing Apostle",
 		"picture": "portrait_avian_cultist",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20837,7 +20859,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hero's Blessed, Yakov",
 		"picture": "portrait_avian_cultist",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -20962,7 +20984,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Unsung Guardian Angel",
 		"picture": "portrait_royalengineer",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -21094,7 +21116,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Razi, Whisper Worshipper",
 		"picture": "portrait_portraits_crimson_winged_angel",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -21232,7 +21254,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toknight",
 		"picture": "portrait_knight_001",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -21268,7 +21290,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Representation",
 		"picture": "portrait_knight_002",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -21304,7 +21326,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Vengeance",
 		"picture": "portrait_knight_003",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -21347,7 +21369,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boldur, the Bravest",
 		"picture": "portrait_portraits_boldur",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -21478,7 +21500,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mechanical Giant",
 		"picture": "portrait_giantmechaboss",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -21588,7 +21610,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boldur, the Unbreakable",
 		"picture": "portrait_portraits_boldur",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -21671,7 +21693,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Typhoeus, Ship Devourer",
 		"picture": "portrait_sky_sea_monster",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -21808,7 +21830,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cave Writings",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -21923,7 +21945,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cave Writings",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -22038,7 +22060,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cave Writings",
 		"picture": "portrait_cavernsofcrossings",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -22153,7 +22175,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kachina, Transcended",
 		"picture": "portrait_dream_catcher_wings",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -22291,7 +22313,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tanit, First Dreamer",
 		"picture": "portrait_avian_priest",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -22421,7 +22443,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Agonized Amarok",
 		"picture": "portrait_emeraldwolf",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -22536,7 +22558,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ancient Dragon",
 		"picture": "portrait_dragon_sage",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -22620,7 +22642,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Teroxis the Steadfast",
 		"picture": "portrait_dragon_sage",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -22736,7 +22758,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Batara, Blood Sword",
 		"picture": "portrait_angel_demon_samurai",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -22878,7 +22900,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fallen Gladiator",
 		"picture": "portrait_blind_monk_angel",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -23012,7 +23034,7 @@ var CARDS = {
 		"maxLevel": 1,
 		"name": "Arcane Dustling",
 		"picture": "Dust_Mite",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23029,7 +23051,7 @@ var CARDS = {
 		"maxLevel": 1,
 		"name": "Arcane Ore",
 		"picture": "Arcane_Ore",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23046,7 +23068,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Arcane Pumpkin",
 		"picture": "Arcane_Pumpkin_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23076,7 +23098,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Large Arcane Pumpkin",
 		"picture": "Arcane_Pumpkin_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23110,7 +23132,7 @@ var CARDS = {
 		"maxLevel": 1,
 		"name": "Arcane Chunk",
 		"picture": "Arcane_Ore",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23127,7 +23149,7 @@ var CARDS = {
 		"maxLevel": 1,
 		"name": "Arcane Ore",
 		"picture": "Arcane_Ore",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23144,7 +23166,7 @@ var CARDS = {
 		"maxLevel": 1,
 		"name": "Arcane Deposit",
 		"picture": "Arcane_Ore",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23161,7 +23183,7 @@ var CARDS = {
 		"maxLevel": 18,
 		"name": "Castle Tower",
 		"picture": "Enemy_Tower_A",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -23247,7 +23269,7 @@ var CARDS = {
 		"maxLevel": 18,
 		"name": "Cannon Tower",
 		"picture": "Enemy_Tower_A",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [
 			{
@@ -23361,7 +23383,7 @@ var CARDS = {
 		"maxLevel": 18,
 		"name": "Tree of Life",
 		"picture": "Tree_of_Life_A",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [
 			{
@@ -23505,7 +23527,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Elemental Storm",
 		"picture": "BGE_Storm_A",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [
 			{
@@ -23612,7 +23634,7 @@ var CARDS = {
 		"maxLevel": 13,
 		"name": "Fortified Tower",
 		"picture": "Fortified_Tower_A",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [
 			{
@@ -23696,7 +23718,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Fortified Horror",
 		"picture": "Fortified_Tower_B",
-		"rarity": "0",
+		"rarity": 0,
 		"set": "9999",
 		"skill": [
 			{
@@ -23742,7 +23764,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Unearthed Skeleton",
 		"picture": "Unearth_Skeleton_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [
@@ -23771,7 +23793,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Unearthed Skeleton",
 		"picture": "Unearth_Skeleton_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -23809,7 +23831,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Unearthed Skeleton",
 		"picture": "Unearth_Skeleton_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -23855,7 +23877,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Unearthed Skeleton",
 		"picture": "Unearth_Skeleton_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -23905,7 +23927,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Unearthed Skeleton",
 		"picture": "Unearth_Skeleton_C",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -23959,7 +23981,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Pegasus",
 		"picture": "Pegasus_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -23985,7 +24007,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angelic Knight",
 		"picture": "Angel_Knight_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -24018,7 +24040,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Windstorm Elemental",
 		"picture": "Cloud_Elemental_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -24050,7 +24072,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Kestrel",
 		"picture": "Kestral_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -24084,7 +24106,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Wind Sprite",
 		"picture": "Wind_Spirit_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -24121,7 +24143,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angelic Brawler",
 		"picture": "Warrior_Angel_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -24159,7 +24181,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Soul Wisp",
 		"picture": "Light_Wisp_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -24194,7 +24216,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Fox Trickster",
 		"picture": "Fox_Trickster_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -24232,7 +24254,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lightning Elemental",
 		"picture": "Lightning_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24277,7 +24299,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Archive Keeper",
 		"picture": "Living_Heiroglyphic_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24336,7 +24358,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Cloud Sylph",
 		"picture": "Sylph_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24389,7 +24411,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Cherub",
 		"picture": "Cherub_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24431,7 +24453,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Windfrog",
 		"picture": "Wind_Frog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24483,7 +24505,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Judgment",
 		"picture": "Judgement_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24556,7 +24578,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Armored Eagle",
 		"picture": "Armored_Eagle_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24607,7 +24629,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Oracle",
 		"picture": "Devote_Oracle_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -24664,7 +24686,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightbound Archer",
 		"picture": "Young_Angel_Archer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -24725,7 +24747,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Glass Colossus",
 		"picture": "Glass_Colossuss_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -24797,7 +24819,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Griffin Knight",
 		"picture": "Griffin_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -24872,7 +24894,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heroic Frog",
 		"picture": "Frog_Hero_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -24935,7 +24957,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Elementalist",
 		"picture": "Master_Of_Elements_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -25037,7 +25059,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Paladin",
 		"picture": "Paladin_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -25129,7 +25151,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Noble Champion",
 		"picture": "Angel_Champion_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -25196,7 +25218,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lunar Elemental",
 		"picture": "Lunar_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -25263,7 +25285,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Valiant Charger",
 		"picture": "Mecha_Unicorn_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -25354,7 +25376,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winged Warrior",
 		"picture": "Eagle_Weaponmaster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -25454,7 +25476,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Storm Dragon",
 		"picture": "Storm_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -25543,7 +25565,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avenging Angel",
 		"picture": "Avenging_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -25625,7 +25647,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Archgeneral",
 		"picture": "Grand_Archgeneral_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -25709,7 +25731,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lilypad Bard",
 		"picture": "Frog_Bard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -25810,7 +25832,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blackhawk Cavalier",
 		"picture": "Blackhawk_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -25896,7 +25918,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudwhale Rider",
 		"picture": "Goblin_Whale_Rider_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -25979,7 +26001,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Skeleton Warrior",
 		"picture": "Skeleton_Warrior_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -26007,7 +26029,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Flame Spirit",
 		"picture": "Flame_Spirit_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -26040,7 +26062,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Phase Imp",
 		"picture": "Phase_Imp_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -26071,7 +26093,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Undead Brute",
 		"picture": "Undead_Brute_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -26103,7 +26125,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Goblin Rogue",
 		"picture": "Goblin_Rogue_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -26140,7 +26162,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Smoldering Elemental",
 		"picture": "Molten_Flame_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -26177,7 +26199,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Lava Crab",
 		"picture": "Lava_Crab_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -26214,7 +26236,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Horned Rakken",
 		"picture": "Horned_Lizard_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -26244,7 +26266,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Molten Skeleton",
 		"picture": "Flaming_Skeleton_Warrior_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -26279,7 +26301,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Scythe Demon",
 		"picture": "Scythe_Demon_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -26357,7 +26379,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lavafrog",
 		"picture": "Hellfrog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -26411,7 +26433,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Skeletal Hound",
 		"picture": "Skeleton_Hound_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -26459,7 +26481,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Nix Elemental",
 		"picture": "Void_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -26521,7 +26543,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Fire Imp",
 		"picture": "Fire_Imp_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -26555,7 +26577,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Smelted Lava Slug",
 		"picture": "Lava_Slug_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -26608,7 +26630,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Wraith",
 		"picture": "Wraith_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -26656,7 +26678,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chaos Storm",
 		"picture": "Storm_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -26726,7 +26748,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Titan of Fire",
 		"picture": "Fire_Titan_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -26799,7 +26821,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fallen Angel",
 		"picture": "Fallen_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -26863,7 +26885,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Poison Bullfrog",
 		"picture": "Poison_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -26925,7 +26947,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow Assassin",
 		"picture": "Invisible_Assassin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -27002,7 +27024,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Devouring Locusts",
 		"picture": "Plague_of_Fire_Locusts_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -27071,7 +27093,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fallen Soldiers",
 		"picture": "Undead_Soldiers_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -27134,7 +27156,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Vampiric Emira",
 		"picture": "Vampire_Lord_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -27210,7 +27232,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Steelcat Mechanist",
 		"picture": "Goblin_Sabertooth_Mech_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -27280,7 +27302,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cinder Drake",
 		"picture": "Firebreathing_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -27365,7 +27387,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazekin Dragon",
 		"picture": "Fire_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -27485,7 +27507,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blood Demon",
 		"picture": "Blood_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -27547,7 +27569,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ronin",
 		"picture": "Undead_Samurai_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -27611,7 +27633,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Firehorn",
 		"picture": "Fire_Elemental_Bull_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -27689,7 +27711,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boomsting Duo",
 		"picture": "Goblin_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -27755,7 +27777,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owltron",
 		"picture": "Corrosive_Fire_Mecha_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -27848,7 +27870,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Woodland Fairy",
 		"picture": "Fairy_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -27874,7 +27896,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Moss Golem",
 		"picture": "Moss_Golem_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -27906,7 +27928,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Dire Wolf",
 		"picture": "Dire_Wolf_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -27942,7 +27964,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Mermaid Mage",
 		"picture": "Mermaid_Mage_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -27979,7 +28001,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Toad Warrior",
 		"picture": "Frog_Warrior_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -28012,7 +28034,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Flying Squirrel",
 		"picture": "Air_Nymph_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -28044,7 +28066,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angler Fish",
 		"picture": "Angler_Fish_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -28081,7 +28103,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Turtle Tamer",
 		"picture": "Turtle_Tamer_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -28111,7 +28133,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Ranger",
 		"picture": "Ranger_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28155,7 +28177,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Acidic Spider",
 		"picture": "Giant_Spider_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28213,7 +28235,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Druid",
 		"picture": "Druid_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28271,7 +28293,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Rune Panther",
 		"picture": "Rune_Panther_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28327,7 +28349,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Werewarg",
 		"picture": "Werewarg_Alpha_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28412,7 +28434,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Water Elemental",
 		"picture": "Water_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28496,7 +28518,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Frog Scout",
 		"picture": "Frog_Scout_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28534,7 +28556,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Earth Elemental",
 		"picture": "Earth_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -28580,7 +28602,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ferocious Clawkin",
 		"picture": "Bear_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -28664,7 +28686,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tusker",
 		"picture": "Oliphant_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -28744,7 +28766,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sage of Croaks",
 		"picture": "Frog_Sage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -28828,7 +28850,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Garganotos",
 		"picture": "Forest_Beast_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -28929,7 +28951,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rock Titan",
 		"picture": "Rock_Titan_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -29020,7 +29042,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Giant Squid",
 		"picture": "Giant_Squid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -29119,7 +29141,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Venom Dragon",
 		"picture": "Poison_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -29173,7 +29195,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow Rider",
 		"picture": "Undead_Rider_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -29237,7 +29259,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Leafback",
 		"picture": "Invisible_Crawler_Insect_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -29300,7 +29322,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brightshoal Warrior",
 		"picture": "Merfolk_Monster_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -29374,7 +29396,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mergoat",
 		"picture": "Mergoat_Capricorn_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -29451,7 +29473,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Life Dragon",
 		"picture": "Dragon_Of_Life_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -29552,7 +29574,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhythm of the Wyld",
 		"picture": "Heart_Of_The_Woods_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -29627,7 +29649,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icestone Beast",
 		"picture": "Ice_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -29703,7 +29725,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nimble Leaper",
 		"picture": "Swift_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -29772,7 +29794,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blackfin",
 		"picture": "Undead_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -29847,7 +29869,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sundermarr",
 		"picture": "Insect_Mecha_Cyborg_Champion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -29943,7 +29965,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wasteland Nomad",
 		"picture": "Wasteland_Nomad_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30001,7 +30023,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dunetooth Demon",
 		"picture": "Desert_Lizard_Demon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30084,7 +30106,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lantern Guardian",
 		"picture": "Lantern_Guardian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30181,7 +30203,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragon Tamer",
 		"picture": "Dragon_Tamer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30257,7 +30279,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lavatail Dragon",
 		"picture": "Molten_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30322,7 +30344,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sailing Drake",
 		"picture": "Windsear_Drake_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30389,7 +30411,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zhulong",
 		"picture": "Henry_Zhao_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -30453,7 +30475,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Platinum Golem",
 		"picture": "Platinum_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -30541,7 +30563,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow of Ash",
 		"picture": "Ash_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30595,7 +30617,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sapling",
 		"picture": "Sap_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30671,7 +30693,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Silver Wind",
 		"picture": "Silver_Wind_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30732,7 +30754,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Poliworg",
 		"picture": "Poliworg_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30847,7 +30869,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frogling Swarm",
 		"picture": "Frogling_Swarm_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -30921,7 +30943,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stoneclad Toad",
 		"picture": "Armored_Rock_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -30986,7 +31008,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tadpole Warmage",
 		"picture": "Tadpole_Warmage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -31036,7 +31058,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pumpking",
 		"picture": "Arcane_Pumpkin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -31125,7 +31147,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Atlas, the Ancient",
 		"picture": "prefab_wyldBoss_A",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "2100",
 		"skill": [
 			{
@@ -31226,7 +31248,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Solaron, the Origin",
 		"picture": "prefab_aetherBoss_A",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "2100",
 		"skill": [
 			{
@@ -31338,7 +31360,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Vulcanos, the Forge",
 		"picture": "prefab_chaosBoss_A",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "2100",
 		"skill": [
 			{
@@ -31450,7 +31472,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chalistomper",
 		"picture": "Chalicotherium_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -31531,7 +31553,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tidetaken Fighter",
 		"picture": "Frozen_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -31592,7 +31614,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Snowstep Ranger",
 		"picture": "Snowstep_Ranger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -31644,7 +31666,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avalanche Equine",
 		"picture": "Avalanche_Spirit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -31728,7 +31750,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grizzly Terror",
 		"picture": "Undead_Bear_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -31802,7 +31824,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dusk Noble",
 		"picture": "Vampire_Noble_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -31859,7 +31881,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blight Knight",
 		"picture": "Void_Infected_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -31910,7 +31932,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lazarus",
 		"picture": "Undead_King_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -32016,7 +32038,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Halo Mage",
 		"picture": "Angel_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32074,7 +32096,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Infinity",
 		"picture": "Infinity_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -32150,7 +32172,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sly Critters",
 		"picture": "Cute_Angel_Critter_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32229,7 +32251,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ebon Duelist",
 		"picture": "Fencing_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32289,7 +32311,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dryad",
 		"picture": "Shrine_Wood_Nymph_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32388,7 +32410,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brimstone",
 		"picture": "Brimestone_Monster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32463,7 +32485,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arcblaze Dragon",
 		"picture": "Promo_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32548,7 +32570,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Leap Frog Duo",
 		"picture": "Leap_Frog_Duo_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32606,7 +32628,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Mysterious Egg",
 		"picture": "Common_Dragon_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "2100",
 		"skill": [],
 		"sub_type": [
@@ -32634,7 +32656,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Narix, Dragon Whelp",
 		"picture": "Rare_Dragon_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2100",
 		"skill": [
 			{
@@ -32677,7 +32699,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Narix, the Defiant",
 		"picture": "Epic_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2100",
 		"skill": [
 			{
@@ -32729,7 +32751,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Narix, the Tyrant",
 		"picture": "Legendary_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2100",
 		"skill": [
 			{
@@ -32819,7 +32841,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Narix, Dragonlord",
 		"picture": "prefab_mythicDragon_A",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "2100",
 		"skill": [
 			{
@@ -32915,7 +32937,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Owlmancer",
 		"picture": "Avian_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -32992,7 +33014,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sharpwing",
 		"picture": "Sharp_Wing_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33053,7 +33075,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Carrion Hunter",
 		"picture": "Vulture_Pack_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33108,7 +33130,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Eos",
 		"picture": "Crystal_Light_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -33184,7 +33206,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Quillhide Dragon",
 		"picture": "Spike_Tail_Basher_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33277,7 +33299,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chillbeard Giant",
 		"picture": "Hairy_Chest_Ice_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33341,7 +33363,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Leaping Dragon",
 		"picture": "Floppy_Ear_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33403,7 +33425,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Conjured Dragon",
 		"picture": "Spirit_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -33489,7 +33511,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sandmite",
 		"picture": "Desert_Sprinter_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33563,7 +33585,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Contrapede",
 		"picture": "Bug_Of_Fire_and_Ice_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33612,7 +33634,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Slithering Pincer",
 		"picture": "Monkey_Bug_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33682,7 +33704,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dune Hopper",
 		"picture": "Legendary_Savanna_Crusher_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -33761,7 +33783,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Protector of Skyhaven",
 		"picture": "Protective_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33866,7 +33888,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rocket Rider",
 		"picture": "Bomb_Rider_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33926,7 +33948,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pack Runner",
 		"picture": "Pack_Leader_Angel_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -33993,7 +34015,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wrath",
 		"picture": "Angel_Muscle_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -34095,7 +34117,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Drainor",
 		"picture": "Whirl_Pool_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34168,7 +34190,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Twister",
 		"picture": "Sand_Warrior_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34228,7 +34250,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bismuth Bully",
 		"picture": "Bismuth_Beast_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34296,7 +34318,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Matriarch's Call",
 		"picture": "Moonlight_Banshee_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34390,7 +34412,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Patchwork Experiment",
 		"picture": "Patchwork_Monster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34472,7 +34494,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reks, the Forlorn",
 		"picture": "Undead_Reks_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -34552,7 +34574,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deadeye Apprentice",
 		"picture": "Mad_Scientist_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34606,7 +34628,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hob Fletcher",
 		"picture": "Ranger_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34676,7 +34698,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tome Sneak",
 		"picture": "Bookmaster_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34757,7 +34779,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pinpin, Dragon Handler",
 		"picture": "Goblin_Riding_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -34836,7 +34858,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Basalt Dragon",
 		"picture": "Lava_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34900,7 +34922,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Symbol of Elaria",
 		"picture": "Aztec_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -34979,7 +35001,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Whitesail Wyvern",
 		"picture": "White_Sky_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -35061,7 +35083,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Webfoot Surfer",
 		"picture": "Frog_Surfer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -35140,7 +35162,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Redclaw Tamer",
 		"picture": "Frog_Riding_Lobster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -35209,7 +35231,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sproutfrog Rainwisher",
 		"picture": "Rainbringer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -35309,7 +35331,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Scylla, Deep Queen",
 		"picture": "Epic_Seafolk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2100",
 		"skill": [
 			{
@@ -35401,7 +35423,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scylla, Smuggler's End",
 		"picture": "Legendary_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2100",
 		"skill": [
 			{
@@ -35496,7 +35518,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Scylla, Sea's Torment",
 		"picture": "prefab_Kraken_A",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "2100",
 		"skill": [
 			{
@@ -35597,7 +35619,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arcane Snowman",
 		"picture": "Arcane_Dust_Snowman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [],
 		"sub_type": [
@@ -35643,7 +35665,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Adorabilis",
 		"picture": "Floating_Thing_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -35713,7 +35735,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Drowner Beetle",
 		"picture": "Spiked_Shellfish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -35781,7 +35803,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Septuamaid",
 		"picture": "Sea_Goddess_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -35834,7 +35856,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Koi Guardian",
 		"picture": "Seafolk_Koi_Merfolk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -35916,7 +35938,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hunter Zind",
 		"picture": "Merfolk_Huntmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -35992,7 +36014,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Starstriker",
 		"picture": "Avian_Starstriker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -36060,7 +36082,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ecru Spear",
 		"picture": "Avian_Egg_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -36126,7 +36148,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Habrok, the Lance",
 		"picture": "Angel_Avian_Hawk_Lancer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -36196,7 +36218,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Apocalypse Rider",
 		"picture": "Apocalypse_Rider_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -36272,7 +36294,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Faithstay Supplier",
 		"picture": "Angel_Armory_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -36338,7 +36360,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rimelight Crusader",
 		"picture": "Angel_Ice_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -36416,7 +36438,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cranial Hazard",
 		"picture": "Flamehead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -36466,7 +36488,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bog Witch",
 		"picture": "Skull_Witch_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -36530,7 +36552,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Slagspirit",
 		"picture": "Undead_Flame_Tiger_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -36607,7 +36629,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Terra Dweller",
 		"picture": "Mud_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -36674,7 +36696,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ignus",
 		"picture": "Summoned_Ember_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -36751,7 +36773,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Verus, Arena Champion",
 		"picture": "Mythic_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2100",
 		"skill": [
 			{
@@ -36837,7 +36859,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Verus, the Wind Dancer",
 		"picture": "Mythic_Avian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2100",
 		"skill": [
 			{
@@ -36913,7 +36935,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Verus, the Galeheart",
 		"picture": "prefab_Avian_Mythic_A",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "2100",
 		"skill": [
 			{
@@ -37007,7 +37029,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spoutal Nemesis",
 		"picture": "Ocean_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37074,7 +37096,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magma Rider",
 		"picture": "Goblin_Elemental_Surfer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37149,7 +37171,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gem Harvester",
 		"picture": "Gem_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -37230,7 +37252,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cocoon Crawler",
 		"picture": "Cocoon_Monster_Insect_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37303,7 +37325,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "White Regemage",
 		"picture": "White_Lady_Insect_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37392,7 +37414,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kheptronos",
 		"picture": "Bug_Goliath_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -37472,7 +37494,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rot Goblin",
 		"picture": "Goblin_Zombie_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37546,7 +37568,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lowbog Shaman",
 		"picture": "Goblin_Monk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37620,7 +37642,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Siren",
 		"picture": "Goblin_Seafolk_Mermaid_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -37698,7 +37720,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sharkcrusher",
 		"picture": "Chain_Shark_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37761,7 +37783,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shockscale Eel",
 		"picture": "Electric_Eel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37839,7 +37861,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pharite Snapjaw",
 		"picture": "Mecha_Piranha_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -37918,7 +37940,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Battleborn Toad",
 		"picture": "Cyborg_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -37992,7 +38014,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Koi Jockey",
 		"picture": "Frog_Fish_Racers_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -38077,7 +38099,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Scorchfist Avenger",
 		"picture": "Fire_Warrior_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38138,7 +38160,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Weathered Widgit",
 		"picture": "Avatar_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38215,7 +38237,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Drillbot",
 		"picture": "Drill_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38281,7 +38303,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Warrior Karna",
 		"picture": "Insect_Champion_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -38347,7 +38369,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vali, the Thunderer",
 		"picture": "Underwater_Temple_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -38414,7 +38436,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ironbound Bonewalker",
 		"picture": "Undead_Mecha_Iron_Spiked_Zombie_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38488,7 +38510,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Druid of Rot",
 		"picture": "Undead_Druid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38543,7 +38565,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Messina's Choice",
 		"picture": "Monster_Beneath_Hood_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -38624,7 +38646,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aero Enforcer",
 		"picture": "Mecha_Avian_Walker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38712,7 +38734,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Luminescent Heron",
 		"picture": "Elemental_Rainbow_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38789,7 +38811,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flaming Hailwing",
 		"picture": "Fire_Ice_Phoenix_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38851,7 +38873,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Emerald Carbuncle",
 		"picture": "Emerald_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38926,7 +38948,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chrysalis Angel",
 		"picture": "Angel_Insect_Cocoon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -38995,7 +39017,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Voidlight Tainted",
 		"picture": "Corrupted_Elemental_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39041,7 +39063,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Firestoke Clawsmith",
 		"picture": "Flare_Lizard_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39107,7 +39129,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bulbscale Construct",
 		"picture": "Armored_Light_Bulb_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39171,7 +39193,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fowl Page Bezoar",
 		"picture": "Goblin_Ostrich_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39250,7 +39272,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "One Punch Flare",
 		"picture": "Flame_Fist_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39297,7 +39319,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "RT-87 Rescinder",
 		"picture": "Flying_Disc_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39371,7 +39393,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stilt-walker Sentinel",
 		"picture": "Mecha_StiltWalker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39458,7 +39480,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pharos Guardian",
 		"picture": "Underwater_Mecha_Protector_Seafolk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39523,7 +39545,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sea's Saw",
 		"picture": "Seamonster_Maw_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39611,7 +39633,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spear Terror",
 		"picture": "GiantGnat_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39677,7 +39699,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Seaweevil",
 		"picture": "BugShrimp_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39763,7 +39785,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dawnglow Smasher",
 		"picture": "BruteFrog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39841,7 +39863,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Golden Rise Adventurers",
 		"picture": "Frog_Warrior_Goblin_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39920,7 +39942,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Primitive Crustavian",
 		"picture": "Avian_Seafolk_Lobster_Bird_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -39996,7 +40018,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grazna, Beetle Tamer",
 		"picture": "AvianBeetleDriver_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40071,7 +40093,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Eolian Elemental",
 		"picture": "Gusty_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40134,7 +40156,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magma Cougar",
 		"picture": "Elemental_Mecha_Tiger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40212,7 +40234,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skeletal Dragonkin",
 		"picture": "Undead_Dragon_Skeletal_Pack_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40286,7 +40308,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sleetbones",
 		"picture": "Frozen_Undead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40361,7 +40383,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stormbreak Beast",
 		"picture": "Angel_Dragon_Sky_Angel_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40435,7 +40457,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spearbreak Dragon",
 		"picture": "Undead_Dragon_Spear_Eater_Zombie_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40509,7 +40531,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightning Stomper",
 		"picture": "Mecha_Electric_Battery_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40575,7 +40597,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Death Fist",
 		"picture": "Undead_Mecha_Brawler_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40662,7 +40684,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Astaroth",
 		"picture": "Chaos_Mecha_Bit_Heroes_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -40753,7 +40775,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Noble Truestrike",
 		"picture": "Angel_Blind_Monk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40839,7 +40861,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Leafguard Angel",
 		"picture": "Angel_Beastman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -40935,7 +40957,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goctopus",
 		"picture": "Goblin_Seafolk_Octopus_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -41013,7 +41035,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Secutor Combatant",
 		"picture": "Goblin_Gladiator_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -41087,7 +41109,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Noctrus Flintclaw",
 		"picture": "Avian_Stag_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -41285,7 +41307,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Foxfire",
 		"picture": "Fire_Fox_Ghost_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -41445,7 +41467,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Razi the Fallen Light",
 		"picture": "Crimson_Winged_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -41613,7 +41635,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Lev, Forgotten Hero",
 		"picture": "mythicWyld_A",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "5200",
 		"shard_card": 1,
 		"skill": [
@@ -41788,7 +41810,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Lok'thor, the Reborn",
 		"picture": "Reborn_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -41988,7 +42010,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Boldur, Bridge Builder",
 		"picture": "Spellstone_Hammer_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -42174,7 +42196,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "LOCO-5000",
 		"picture": "Train_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -42366,7 +42388,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Typhoeus, Storm Father",
 		"picture": "Sky_Sea_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -42566,7 +42588,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Rhynio Sun Warrior",
 		"picture": "Sun_Warrior_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -42754,7 +42776,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Kachina, the Dreamer",
 		"picture": "Dream_Catcher_Angel_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -42951,7 +42973,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Columba, Firewing Monk",
 		"picture": "Corrupted_Monk_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -43139,7 +43161,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Emerald Amarok",
 		"picture": "Elemental_Emerald_Wolf_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -43345,7 +43367,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Cordelia the Twinblade",
 		"picture": "Undead_Vampire_Blood_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -43531,7 +43553,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Teroxis, King of Stones",
 		"picture": "Dragon_Sage_Ancient_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -43721,7 +43743,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Ralgan Ironpaw",
 		"picture": "Mecha_Mecha_Bear_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -43927,7 +43949,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Vindicator Batara",
 		"picture": "Angel_Demon_Samurai_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -44087,7 +44109,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Daknak Darkblade",
 		"picture": "Goblin_Dark_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
 		"skill": [
@@ -44279,7 +44301,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Azure Sphinx",
 		"picture": "Marble_Sphinx_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -44367,7 +44389,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aven Skypiercer",
 		"picture": "Eagle_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -44469,7 +44491,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twilight Mirror",
 		"picture": "Twilight_Mirror_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -44548,7 +44570,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "White Knight",
 		"picture": "White_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -44655,7 +44677,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightning Lord",
 		"picture": "Lighting_Lord_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -44741,7 +44763,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Storm Giant",
 		"picture": "Storm_Giant_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -44844,7 +44866,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Arms Enforcer",
 		"picture": "Chariot_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [],
 		"sub_type": [],
@@ -44895,7 +44917,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Arcane Scroll",
 		"picture": "Floating_Word_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [],
 		"sub_type": [],
@@ -44938,7 +44960,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ice Dragon",
 		"picture": "Ice_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -45031,7 +45053,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Royal Guardian",
 		"picture": "Royal_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -45106,7 +45128,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Concealed Dragon",
 		"picture": "Concealed_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -45170,7 +45192,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sky Whale",
 		"picture": "Sky_Whale_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -45259,7 +45281,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Static Drake",
 		"picture": "Static_Drake_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -45308,7 +45330,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Radiance",
 		"picture": "Light_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -45402,7 +45424,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winged Raptor",
 		"picture": "Raptor_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -45486,7 +45508,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gravity Swell",
 		"picture": "Gravity_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -45566,7 +45588,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fowl Swarm",
 		"picture": "Flock_of_Birds_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -45648,7 +45670,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Steam Tempest",
 		"picture": "Steam_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -45693,7 +45715,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grand Knight Frog",
 		"picture": "High_Knight_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -45752,7 +45774,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vivid Aurora",
 		"picture": "Great_Aurora_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -45841,7 +45863,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frost Frog",
 		"picture": "Frozen_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -45923,7 +45945,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tower Spirit",
 		"picture": "Tower_Spirit_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -46012,7 +46034,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Webfoot Raider",
 		"picture": "Bombardier_Frog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -46065,7 +46087,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nightfall Dragon",
 		"picture": "Night_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -46154,7 +46176,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cloudtop Dragon",
 		"picture": "Sky_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -46251,7 +46273,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Steelskin Dragon",
 		"picture": "Steel_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -46341,7 +46363,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostfire Wyrm",
 		"picture": "Frost_Wyrm_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -46429,7 +46451,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Northern War-kin",
 		"picture": "Polar_Bear_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -46511,7 +46533,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winter Blacksmith",
 		"picture": "Winter_Blacksmith_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -46569,7 +46591,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snowback Dragon",
 		"picture": "Snowhidden_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -46648,7 +46670,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Loxphas Mage",
 		"picture": "Mastodon_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -46708,7 +46730,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostlance Valkyrie",
 		"picture": "Winter_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -46774,7 +46796,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hail Hurler",
 		"picture": "Hail_Hurler_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -46851,7 +46873,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lost Soul",
 		"picture": "Lost_Soul_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -46920,7 +46942,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skyward Guardian",
 		"picture": "Skyward_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -46991,7 +47013,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Vapor Guard",
 		"picture": "Vapor_Ghost_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -47057,7 +47079,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter Tail",
 		"picture": "Fox_Spirit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -47128,7 +47150,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dauntless Baneblade",
 		"picture": "Phantom_Swordsman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -47209,7 +47231,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celestial Monarch",
 		"picture": "Angel_Queen_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -47302,7 +47324,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ethereal Knight",
 		"picture": "Ethereal_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -47385,7 +47407,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winged Trumpeter",
 		"picture": "Angel_Trumpetier_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -47447,7 +47469,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skylance Raiders",
 		"picture": "Swiftlance_Raiders_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -47535,7 +47557,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tinkerer",
 		"picture": "The_Tinkerer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -47625,7 +47647,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Empyrean",
 		"picture": "Firewing_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -47701,7 +47723,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Telepathic Magi",
 		"picture": "Telepathic_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -47776,7 +47798,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Echo Elemental",
 		"picture": "Sound_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -47877,7 +47899,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dawn",
 		"picture": "Dawn_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -47956,7 +47978,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sky Fisher",
 		"picture": "Sky_Picker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -48036,7 +48058,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Highborn Rose",
 		"picture": "Rose_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -48131,7 +48153,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Joryl",
 		"picture": "Marble_Golem_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -48199,7 +48221,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cloud Spear",
 		"picture": "Cloud_Pike_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -48256,7 +48278,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Amphibious Digger",
 		"picture": "Shinning_Explorer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -48336,7 +48358,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Paradise Avian",
 		"picture": "Paradise_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -48419,7 +48441,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Anura Witch",
 		"picture": "Frog_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -48483,7 +48505,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reckless Ballista",
 		"picture": "Reckless_Ballista_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -48564,7 +48586,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Galewing",
 		"picture": "Wind_Puffer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -48653,7 +48675,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kaliri the Foremost",
 		"picture": "Avian_Highborn_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -48727,7 +48749,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skystriker",
 		"picture": "Avian_General_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -48821,7 +48843,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crescent Moon Owl",
 		"picture": "Owl_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -48913,7 +48935,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bemola",
 		"picture": "Ice_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -48987,7 +49009,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Quack Apprentice",
 		"picture": "Avian_Scientist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -49057,7 +49079,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thunderfist Rex",
 		"picture": "Legendary_Lightning_Fist_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -49123,7 +49145,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cliffhanger Wyrm",
 		"picture": "Spike_Blade_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -49198,7 +49220,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Runic Dragon",
 		"picture": "Rune_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -49266,7 +49288,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Anshar",
 		"picture": "Airship_Stalker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -49363,7 +49385,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hive Guard",
 		"picture": "Hive_Guard_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -49453,7 +49475,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scarab Beast",
 		"picture": "MultiWeapon_Fat_Stack_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -49559,7 +49581,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Squito Roamer",
 		"picture": "Stinger_Fist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -49633,7 +49655,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aht-Aht Carrier",
 		"picture": "Longleg_Mountain_Nomad_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -49705,7 +49727,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heralidae",
 		"picture": "Mysterious_Wing_Cloak_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -49789,7 +49811,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hornslicer",
 		"picture": "Horn_Head_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -49872,7 +49894,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stoic Watcher",
 		"picture": "Void_Conqueror_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -49951,7 +49973,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blind Seer",
 		"picture": "Feather_Eyes_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -50014,7 +50036,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shell Invader",
 		"picture": "Crustacean_Hell_Bringer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -50091,7 +50113,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Godfried the Hunter",
 		"picture": "Beast_Slayer_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -50168,7 +50190,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Arith",
 		"picture": "Blind_Justice_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -50238,7 +50260,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sorath, the Valkyrie",
 		"picture": "Ice_Head_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -50330,7 +50352,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Everspark Ace",
 		"picture": "Lightning_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -50411,7 +50433,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Asariel",
 		"picture": "Cannon_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -50516,7 +50538,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cyclopnid",
 		"picture": "Steel_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -50602,7 +50624,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Djinnflame Brawler",
 		"picture": "Blue_Flame_Fighter_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -50683,7 +50705,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brahzee",
 		"picture": "Giant_Cloud_Sheep_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -50744,7 +50766,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Memory",
 		"picture": "Mist_Stalker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -50807,7 +50829,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Honor Risen",
 		"picture": "Winter_Wretch_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -50861,7 +50883,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dotora Spirit",
 		"picture": "Torsoless_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -50932,7 +50954,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Haunting Heir",
 		"picture": "Kimono_Ghost_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -51009,7 +51031,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spirit Blades",
 		"picture": "Haunted_Arsenal_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -51085,7 +51107,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Apollyon",
 		"picture": "Undead_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -51180,7 +51202,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Betrayal",
 		"picture": "Demon_Skull_Goblin_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -51271,7 +51293,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gomblit",
 		"picture": "Astrological_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -51341,7 +51363,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reks' Faithful",
 		"picture": "Cleric_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -51426,7 +51448,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Armor Thief",
 		"picture": "Knight_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -51503,7 +51525,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tundra Reaver",
 		"picture": "Tundra_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -51598,7 +51620,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Scaly Newborn",
 		"picture": "Wind_Dragonling_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -51648,7 +51670,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Luminesce Dragon",
 		"picture": "Prism_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -51742,7 +51764,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Silurigon",
 		"picture": "Catfish_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -51827,7 +51849,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Enclave Dragon",
 		"picture": "Enclave_Guard_Dragon-01",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -51888,7 +51910,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sierra Dweller",
 		"picture": "Hydra_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -51970,7 +51992,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skybound United",
 		"picture": "Angel_and_Drakes_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -52056,7 +52078,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Croak Dropper",
 		"picture": "Hot_Air_Balloon_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -52127,7 +52149,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lifegiver Augur",
 		"picture": "Frog_Wizard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -52223,7 +52245,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sycophant",
 		"picture": "Frog_Casanova_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -52292,7 +52314,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tribe Tracker",
 		"picture": "Double_Bola_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -52366,7 +52388,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mother of Solars",
 		"picture": "Frog_Space_Mom_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -52470,7 +52492,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pisces",
 		"picture": "Flying_Fish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -52539,7 +52561,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sea Whisperer",
 		"picture": "Goldfish_Tamer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -52604,7 +52626,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Acuro, Sea Captain",
 		"picture": "Seafolk_Merfolk_Warlord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -52678,7 +52700,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Thrumming Beacon",
 		"picture": "Guardian_Dolphin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -52758,7 +52780,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aurora Skimmer",
 		"picture": "Sky_Manta_Rays_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -52850,7 +52872,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cyclospout",
 		"picture": "Sky_Jellyfish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -52950,7 +52972,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alectryon",
 		"picture": "Stormcloud_Rooster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -53019,7 +53041,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bennu",
 		"picture": "Guardian_Angel_Dove_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -53088,7 +53110,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudwing Chaser",
 		"picture": "Bird_Cloud_Chaser_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -53155,7 +53177,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bishop Rook",
 		"picture": "Crow_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -53218,7 +53240,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wingward",
 		"picture": "Wing_Shield_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -53285,7 +53307,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Papyrus Crane",
 		"picture": "Paper_Crane_Flock_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -53356,7 +53378,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Justice",
 		"picture": "Justice_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -53433,7 +53455,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spark Chronicler",
 		"picture": "Fortune_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -53508,7 +53530,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chalice Courier",
 		"picture": "Chalice_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -53582,7 +53604,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Chosen",
 		"picture": "Sword_Spirit_Angel_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -53663,7 +53685,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Seraph of Stone Rise",
 		"picture": "Angel_Mountain_Cleaver_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -53766,7 +53788,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cauterizing Psalm",
 		"picture": "Fire_Book_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -53855,7 +53877,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crow King",
 		"picture": "Undead_Crow_Lord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -53940,7 +53962,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow Stalker",
 		"picture": "Shadow_Ghost_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -54015,7 +54037,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sylph Drifter",
 		"picture": "Wind_Ghost_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -54077,7 +54099,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Banshee",
 		"picture": "Banshee_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -54142,7 +54164,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ominous Canvas",
 		"picture": "Picture_Frame_Ghost_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -54209,7 +54231,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dynamo Drake",
 		"picture": "Lightning_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -54287,7 +54309,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torchrime Terrorizer",
 		"picture": "Double_Headed_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -54379,7 +54401,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shackled Gatekeeper",
 		"picture": "Chained_Gatekeeper_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -54462,7 +54484,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Drakeling Fosterer",
 		"picture": "Bird_Adopted_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -54541,7 +54563,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelscale, Sky's Domain",
 		"picture": "Portable_City_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -54627,7 +54649,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Whirlwinder",
 		"picture": "Gusty_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -54708,7 +54730,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magnetic Elemental",
 		"picture": "Magnet_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -54771,7 +54793,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ocotillo",
 		"picture": "Cactus_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -54854,7 +54876,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shatterwind",
 		"picture": "Glass_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -54930,7 +54952,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lapis",
 		"picture": "Water_Wing_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -54998,7 +55020,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forgesoul Construct",
 		"picture": "Metal_Golem_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -55064,7 +55086,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Geyser Rocva",
 		"picture": "Armored_Larva_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -55156,7 +55178,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Loyal Guard",
 		"picture": "Ladybug_Guard_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -55233,7 +55255,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Copperhorn Beetle",
 		"picture": "Rhino_Beetle_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -55313,7 +55335,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Nimbocaster",
 		"picture": "Cloud_Insect_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -55379,7 +55401,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Buzzblade",
 		"picture": "Steampunk_Scarab_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -55457,7 +55479,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cedric's Battlesnail",
 		"picture": "Snail_Tank_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -55522,7 +55544,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wee Sparkcaster",
 		"picture": "Goblin_Lightning_Master_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -55613,7 +55635,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gobsnout Piercer",
 		"picture": "Goblin_Heavenly_Crusader_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -55688,7 +55710,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lullmage Whisperer",
 		"picture": "Goblin_Frog_Dark_Magic_Team_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -55752,7 +55774,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bard of Gobsburg",
 		"picture": "Goblin_Bard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -55823,7 +55845,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gribmalda of Wings",
 		"picture": "Goblin_Bird_Tamer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -55907,7 +55929,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flatfish Ward",
 		"picture": "Sky_Fish_Shield_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -55986,7 +56008,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepspear Warfarer",
 		"picture": "Mecha_Mermaid_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -56070,7 +56092,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brinebelly",
 		"picture": "Bubble_Belly_Fish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -56165,7 +56187,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mermaid Merchant",
 		"picture": "Gypsy_Mermaid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -56218,7 +56240,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Octopulse",
 		"picture": "Armored_Lightning_Kraken_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -56300,7 +56322,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Glaucus",
 		"picture": "Angel_Merman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -56379,7 +56401,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Silvertongue Fencer",
 		"picture": "Fencing_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -56452,7 +56474,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tiltyard Ribbot",
 		"picture": "Mech_Frog_Weaponmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -56538,7 +56560,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spellbind Magus",
 		"picture": "Bookworm_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -56607,7 +56629,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chilltide Stormtender",
 		"picture": "Frog_Frost_Phoenix_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -56671,7 +56693,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vortex Palm",
 		"picture": "Vortex_Feather_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -56754,7 +56776,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tetsudo's Shield",
 		"picture": "Tower_Shield_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -56849,7 +56871,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bolster Bot",
 		"picture": "Spiked_Barrier_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -56940,7 +56962,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aloier, Dragon Sentinel",
 		"picture": "Mecha_Energy_Shield_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -57030,7 +57052,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bark Hound",
 		"picture": "Watchdog_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -57103,7 +57125,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chromium Centaur",
 		"picture": "Mecha_Centaur_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -57183,7 +57205,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Electrumus",
 		"picture": "Mecha_Angel_Starwarrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -57281,7 +57303,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hoarfrost Buzzard",
 		"picture": "Zombie_Ice_Flock_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -57343,7 +57365,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hierophant of Evening",
 		"picture": "Undead_Bookmaster_Lich_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -57433,7 +57455,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lamia's Shield",
 		"picture": "Zombie_Lamia_Shield_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -57513,7 +57535,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vengeful Spirit",
 		"picture": "Vengeful_Ghost_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -57594,7 +57616,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dullahan Destrier",
 		"picture": "Headless_Horseman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -57661,7 +57683,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dross Collector",
 		"picture": "Undead_Collector_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -57741,7 +57763,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostcrier",
 		"picture": "Harpy_Shrieker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -57795,7 +57817,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudbreak Elites",
 		"picture": "Avian_Angel_Sky_Assault_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -57876,7 +57898,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spirit of Cygnus",
 		"picture": "Cygnus_Swan_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -57965,7 +57987,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Raywing",
 		"picture": "Avian_Ruins_Protector_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -58055,7 +58077,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thunderbird",
 		"picture": "Tornado_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -58135,7 +58157,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skadi, Snow Princess",
 		"picture": "Elemental_Snow_Umbrella_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -58235,7 +58257,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grimacing Bolt",
 		"picture": "Starstorm_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -58294,7 +58316,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Magmaroot",
 		"picture": "Fire_Tree_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -58359,7 +58381,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Himamanav",
 		"picture": "Elemental_Angel_Demon_Wind_Monkey_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -58440,7 +58462,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lun Seles",
 		"picture": "Elemental_Moon_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -58531,7 +58553,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swordslayer Giant",
 		"picture": "Angel_Sword_In_Stone_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -58611,7 +58633,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icy Grimkite",
 		"picture": "Guardian_Angel_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -58689,7 +58711,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Priestess of Mending",
 		"picture": "Priestess_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -58772,7 +58794,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Star Chaser",
 		"picture": "Star_Chaser_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -58862,7 +58884,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Movra, Dragon Ruler",
 		"picture": "Dragon_Ruler_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -58964,7 +58986,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Armorscald Dragon",
 		"picture": "War_Armor_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -59054,7 +59076,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Rise Cadet",
 		"picture": "Goblin_Plane_Engineer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -59140,7 +59162,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bubble Gumm",
 		"picture": "Goblin_Sage_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -59220,7 +59242,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dancer Hula",
 		"picture": "Dancer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -59301,7 +59323,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhynio Battlecharger",
 		"picture": "Flying_Rhino_Beetle_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -59387,7 +59409,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gelidbeam Spatha",
 		"picture": "Beam_Blade_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -59464,7 +59486,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owlnaut Z-3",
 		"picture": "Mecha_Cyborg_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -59558,7 +59580,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deca-mecha",
 		"picture": "MechaMillipede_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -59649,7 +59671,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepcharge Caller",
 		"picture": "Seafolk_Jellyfish_Mermaid_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -59729,7 +59751,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sea's Sky Forces",
 		"picture": "Seafolk_Flying_Whale_Soldiers_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -59813,7 +59835,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shellscale Entangler",
 		"picture": "Seafolk_Shellfish_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -59890,7 +59912,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Clyx, Advance Guard",
 		"picture": "Winged_Armor_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -59967,7 +59989,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cricket Caller",
 		"picture": "Griffin_Insect_Mage_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -60066,7 +60088,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alchebian",
 		"picture": "Alchemist_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -60144,7 +60166,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skymar Cavalier",
 		"picture": "Frog_Avian_Rider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -60244,7 +60266,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fra'mu, the Wise",
 		"picture": "Frog_Monk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -60334,7 +60356,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnfire Knight",
 		"picture": "Frog_Arcane_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -60399,7 +60421,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scarhawk Avienda",
 		"picture": "War_Hawk_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -60494,7 +60516,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hazrat Suma",
 		"picture": "AvianSongstress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -60556,7 +60578,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noya of Slicing Ice",
 		"picture": "Avian_Snow_Sphinx_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -60646,7 +60668,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fowlmaster",
 		"picture": "Avian_Goblin_Birdmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -60724,7 +60746,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fading Light",
 		"picture": "Lantern_Undead_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -60802,7 +60824,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Peakchill Giant",
 		"picture": "IceElemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -60893,7 +60915,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sparktail Cirrus",
 		"picture": "Cloud_Fox_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -60983,7 +61005,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mountking Warder",
 		"picture": "Undead_Skeleton_Armor_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -61061,7 +61083,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bonebite Freebooter",
 		"picture": "Undead_Mecha_Skeleton_Dog_Mecha_Master_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -61159,7 +61181,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goldshield Enchanter",
 		"picture": "Undead_Lichlord_Scroll_Enchanter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -61240,7 +61262,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Drakon",
 		"picture": "Undead_Dragon_Ghost_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -61306,7 +61328,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Azazreal, Herald",
 		"picture": "Dragon_Angel_Fire_Feathered_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -61384,7 +61406,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jyrn of Slicing Snow",
 		"picture": "Dragon_Wild_Snow_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -61449,7 +61471,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Null Archer",
 		"picture": "Mecha_Archer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -61538,7 +61560,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wallbot",
 		"picture": "Mecha_Shielding_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -61631,7 +61653,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Coreheart",
 		"picture": "Mecha_Frosty_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -61697,7 +61719,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Automaburner",
 		"picture": "Mecha_Undead_Skeleton_Mecha_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -61775,7 +61797,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Syl, Warrior Angel",
 		"picture": "Angel_of_Battle_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -61865,7 +61887,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Baaht, Fire Forger",
 		"picture": "Elemental_Angel_Blackmith_Living_Flame_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -61944,6 +61966,153 @@ var CARDS = {
 			}
 		}
 	},
+	"5225": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 29,
+		"hidden_until": "1550768400000",
+		"id": "5225",
+		"maxLevel": 6,
+		"name": "Centurion Steelarm",
+		"picture": "Goblin_Spiked_Shell_Armor_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "counter",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 30,
+				"skill": []
+			},
+			"3": {
+				"health": 31,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"5226": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 18,
+		"hidden_until": "1550768400000",
+		"id": "5226",
+		"maxLevel": 6,
+		"name": "Magitech Raider",
+		"picture": "Goblin_War_Toad_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"cost": 2,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"health": 20,
+				"skill": []
+			},
+			"6": {
+				"health": 21,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -61953,7 +62122,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Tanit, Divinity's Focus",
 		"picture": "Avian_Priest_Champion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -62145,7 +62314,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Volsung Icewind",
 		"picture": "Iciclle_Dragon_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -62335,7 +62504,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "TZ-530 the Impassable",
 		"picture": "Mecha_Defender_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -62519,7 +62688,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Dina the Iridescent",
 		"picture": "Angel_Stained_Glass_Wings_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -62700,7 +62869,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Furnace Mech",
 		"picture": "Fire_Furnace_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -62764,7 +62933,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Orobas",
 		"picture": "Balrog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -62863,7 +63032,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spirit of Madness",
 		"picture": "Chaos_Spirit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -62939,7 +63108,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Black Knight",
 		"picture": "Black_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -63031,7 +63200,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Branding Construct",
 		"picture": "Branding_Metal_Construct_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -63122,7 +63291,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gloomkin",
 		"picture": "Burning_Golem_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -63221,7 +63390,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Chaos Golem",
 		"picture": "Chaos_Golem_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -63281,7 +63450,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Goblin Crew",
 		"picture": "Goblin_Gang_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -63331,7 +63500,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thousand Arm Demon",
 		"picture": "Thousand_Arm_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -63419,7 +63588,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Siphon Dragon",
 		"picture": "Siphon_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -63523,7 +63692,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cliffpass Defender",
 		"picture": "Mountainpass_Defender_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -63618,7 +63787,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bomb Spirit",
 		"picture": "Bomb_Spirit_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -63686,7 +63855,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Ember Drake",
 		"picture": "Ember_Drake_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -63744,7 +63913,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rust Goliath",
 		"picture": "Rust_Elemental_Ac",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -63828,7 +63997,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Armored Siegefist",
 		"picture": "Armored_Ogre_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -63907,7 +64076,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Acidic Sludge",
 		"picture": "Acid_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -63967,7 +64136,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skeletal Giant",
 		"picture": "Skeleton_Giant_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -64043,7 +64212,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Tar Pit Stalker",
 		"picture": "Tar_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -64094,7 +64263,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Underwater Lasher",
 		"picture": "Legendary_Chaos_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -64177,7 +64346,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Canopy Horror",
 		"picture": "Canopy_Horror_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -64264,7 +64433,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Croak Piercer",
 		"picture": "Spike_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -64337,7 +64506,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Marsh Ogre",
 		"picture": "Marsh_Ogre_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -64416,7 +64585,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Illusion Caster",
 		"picture": "Hypnofrog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -64473,7 +64642,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Broodmother",
 		"picture": "Broodmother_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -64565,7 +64734,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bane Dragon",
 		"picture": "Ruination_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -64647,7 +64816,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragon Keeper",
 		"picture": "Dragon_Warlord_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -64722,7 +64891,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Smokefang",
 		"picture": "Smoke_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -64802,7 +64971,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frigela, the Dread",
 		"picture": "Ice_Witch_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -64866,7 +65035,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brahmet",
 		"picture": "Multi_Armed_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -64946,7 +65115,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spinehead Stalker",
 		"picture": "Spinehead_Undead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -65021,7 +65190,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noveria Yeti",
 		"picture": "Ice_Yeti_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -65085,7 +65254,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Iceblood Assassin",
 		"picture": "Snow_Assassin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -65146,7 +65315,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mumohotep",
 		"picture": "Giant_Mummy_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -65240,7 +65409,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Firebeard",
 		"picture": "Lost_Captain_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -65307,7 +65476,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bone Viper",
 		"picture": "Snake_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -65381,7 +65550,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Demos",
 		"picture": "Devil_Vanguard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -65461,7 +65630,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cursed Ogre",
 		"picture": "Void_Ogre_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -65541,7 +65710,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Keeper of Souls",
 		"picture": "Keeper_Of_The_Dead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -65636,7 +65805,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hemlock",
 		"picture": "Fat_Belly_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -65696,7 +65865,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Auroch",
 		"picture": "Flying_Behemoth_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -65761,7 +65930,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scorching Cutlass",
 		"picture": "Fire_Sword_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -65825,7 +65994,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reaper",
 		"picture": "Angel_Of_Death_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -65904,7 +66073,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow of Thunder",
 		"picture": "Storm_Shadow_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -65980,7 +66149,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandstorm",
 		"picture": "Sandstorm_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -66078,7 +66247,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Firewalker",
 		"picture": "Fire_Walker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -66141,7 +66310,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Darkflame",
 		"picture": "Dark_Fire_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -66242,7 +66411,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Celerity",
 		"picture": "Swiftness_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -66305,7 +66474,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wither",
 		"picture": "Death_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -66382,7 +66551,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bulwraag",
 		"picture": "Dino_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -66463,7 +66632,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Explosioneer",
 		"picture": "Goblin_Explosioneer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -66540,7 +66709,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wortwog",
 		"picture": "Frog_Executioner_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -66593,7 +66762,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Treeblade Thief",
 		"picture": "Camouflaged_Assassin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -66654,7 +66823,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fuming Beast",
 		"picture": "Fuming_Horror_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -66715,7 +66884,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Squire Gorger",
 		"picture": "Avian_Devourer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -66805,7 +66974,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadowcrafter",
 		"picture": "Magpie_Rogue_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -66872,7 +67041,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Phoenix",
 		"picture": "Pheonix_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -66950,7 +67119,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Potoo",
 		"picture": "Potoo_Hypnotist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -67025,7 +67194,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Beammite",
 		"picture": "Laser_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -67125,7 +67294,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tarragon Cuttail",
 		"picture": "Scythe_Tail_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -67206,7 +67375,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Violetfire Igniter",
 		"picture": "Purple_Fire_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -67285,7 +67454,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pudgytusk",
 		"picture": "Spear_Face_Pug_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -67362,7 +67531,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Decagon",
 		"picture": "Centipede_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -67427,7 +67596,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Abzu",
 		"picture": "Ship_Destroyer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -67518,7 +67687,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Firetail Dragon",
 		"picture": "Fire_Tip_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -67600,7 +67769,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dreaded Shock",
 		"picture": "Fat_Fist_Brute_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -67694,7 +67863,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torchsnout",
 		"picture": "Fire_Face_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -67771,7 +67940,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Psychic Beetle",
 		"picture": "Telekinetic_Bug_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -67845,7 +68014,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gurgitater",
 		"picture": "Legendary_Acid_Spitter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -67926,7 +68095,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Night Larva",
 		"picture": "Face_Eatter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -68008,7 +68177,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arachnolite",
 		"picture": "Protective_Spider_Hybrid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -68082,7 +68251,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Petrifier",
 		"picture": "Claw_Hand_Demon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -68146,7 +68315,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Masked Heraid",
 		"picture": "Masked_Seductress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -68214,7 +68383,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bone Wielder",
 		"picture": "Boomerang_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -68278,7 +68447,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Obsidian",
 		"picture": "Legendary_Midnight_Demon_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -68357,7 +68526,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deific Channeler",
 		"picture": "Uncanny_Valley_Woman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -68432,7 +68601,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Consuming Mireling",
 		"picture": "Mud_Slinger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -68507,7 +68676,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Magmatic Bang",
 		"picture": "Eruption_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -68610,7 +68779,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Enigma",
 		"picture": "Enigma_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -68684,7 +68853,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Radiation Golem",
 		"picture": "Radium_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -68782,7 +68951,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Heinous Smoggler",
 		"picture": "Volcanic_Ash_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -68850,7 +69019,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Titanirous",
 		"picture": "Titanium_Snake_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -68932,7 +69101,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Apparition",
 		"picture": "Wall_Creeper_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -69008,7 +69177,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rugarth, Fallen Bones",
 		"picture": "Defeated_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -69079,7 +69248,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lockejaw",
 		"picture": "Iron_Jaw_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -69168,7 +69337,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crypt Sentry",
 		"picture": "Skeleton_Dreadlord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -69242,7 +69411,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Released Captives",
 		"picture": "Tomb_Of_The_Damned_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -69321,7 +69490,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dread Obliterator",
 		"picture": "Chain_Fiend_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -69392,7 +69561,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Doxum's Construct",
 		"picture": "Mechanical_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -69453,7 +69622,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fire Belcher",
 		"picture": "Fire_Eating_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -69527,7 +69696,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crackshot",
 		"picture": "Wild_West_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -69601,7 +69770,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bone Sculptor",
 		"picture": "Necromancer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -69699,7 +69868,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Smog Charger",
 		"picture": "Hooded_Flame_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -69776,7 +69945,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noz Onehand",
 		"picture": "Bionic_Arm_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -69847,7 +70016,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gob Launcher",
 		"picture": "Catapult_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -69921,7 +70090,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gearplate Dragon",
 		"picture": "Steampunk_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -70005,7 +70174,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Desert Slitherer",
 		"picture": "Cobra_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -70079,7 +70248,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hoard Dragon",
 		"picture": "Treasure_Trove_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -70141,7 +70310,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sheltering Wing",
 		"picture": "Dragon_Tamer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -70207,7 +70376,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Opposing Forces",
 		"picture": "Yin_and_Yang_Dragons_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -70286,7 +70455,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tiamat",
 		"picture": "Demon_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -70350,7 +70519,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chasm Dowager",
 		"picture": "Sewer_Frog_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -70444,7 +70613,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ribbithold Guards",
 		"picture": "Grinning_Weapon_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -70523,7 +70692,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ribbitaksu",
 		"picture": "Ninja_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -70588,7 +70757,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Night Lurker",
 		"picture": "Shadow_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -70652,7 +70821,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wasteland Crusher",
 		"picture": "Four_Armed_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -70724,7 +70893,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bailong",
 		"picture": "Seafolk_Chinese_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -70802,7 +70971,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Great Lava Crab",
 		"picture": "Big_Lava_Crab_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -70856,7 +71025,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Redwater Angler",
 		"picture": "Seafolk_Merfolk_Fish_Hook_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -70909,7 +71078,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Captain Gnaw",
 		"picture": "Shark_Pirate_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -71001,7 +71170,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sea Mantis",
 		"picture": "Crab_Person_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -71055,7 +71224,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aspects of the Ashes",
 		"picture": "Goblin_Avian_Phoenix_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -71123,7 +71292,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fire Hawk",
 		"picture": "Hawk_Fire_Sage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -71199,7 +71368,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Trojan Crow",
 		"picture": "Avian_Scarecrow_Crows_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -71282,7 +71451,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazing Emissary",
 		"picture": "Horus_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -71360,7 +71529,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spelltalon",
 		"picture": "Bird_Of_Death_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -71423,7 +71592,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Otherworldly Archer",
 		"picture": "Demon_Archer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -71486,7 +71655,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Whispering Ophanim",
 		"picture": "Nightmare_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -71551,7 +71720,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kindlecrack Demon",
 		"picture": "Demon_Tornado_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -71616,7 +71785,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadowy Muse",
 		"picture": "Angel_Artist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -71691,7 +71860,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oni Blade",
 		"picture": "Samurai_Soul_Eater_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -71785,7 +71954,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Charon",
 		"picture": "Underworld_Ferryman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -71862,7 +72031,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Relentless Dead",
 		"picture": "Lantern_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -71924,7 +72093,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Battleborn Destrier",
 		"picture": "Vampire_War_Horse_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -72007,7 +72176,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Enfeebling Vizier",
 		"picture": "Lichlord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -72087,7 +72256,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deadly Shot",
 		"picture": "Gunslinger_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -72161,7 +72330,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Terrordactyl",
 		"picture": "Ghost_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -72242,7 +72411,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hexapus",
 		"picture": "Katana_Crawler_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -72323,7 +72492,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grimhunt Wings",
 		"picture": "Brimstone_Hunting_Dragons_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -72403,7 +72572,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Scorgon Trapper",
 		"picture": "Poison_Tail_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -72477,7 +72646,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shadowed Wyvern",
 		"picture": "Spire_Devourer_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -72558,7 +72727,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winged Abducter",
 		"picture": "Claw_Wing_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -72632,7 +72801,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deception Scalelord",
 		"picture": "Dual_Personality_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -72711,7 +72880,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cress, Flamespeaker",
 		"picture": "Choas_Frog_Guardian_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -72762,7 +72931,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Primitive Hearth",
 		"picture": "Forest_Fire_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -72840,7 +73009,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Burnshell",
 		"picture": "Turtle_Volcano_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -72929,7 +73098,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cosmic Elemental",
 		"picture": "Cosmic_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -73009,7 +73178,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deluging Bile",
 		"picture": "Acid_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -73087,7 +73256,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bitter Therix",
 		"picture": "Poison_Tail_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -73154,7 +73323,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sand Wurm",
 		"picture": "Sand_Wurm_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -73228,7 +73397,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Maskcraft Scarab",
 		"picture": "Face_Stealer_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -73296,7 +73465,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swarmrider Zabzod",
 		"picture": "Goblin_Bug_Overlord_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -73366,7 +73535,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ba Dim Boom",
 		"picture": "Goblin_War_Drummer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -73435,7 +73604,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dynamic Entry",
 		"picture": "Firecracker_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -73499,7 +73668,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crossbomb Gremlin",
 		"picture": "Crossbow_Bomb_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -73560,7 +73729,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Butcher",
 		"picture": "Goblin_Butcherer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -73627,7 +73796,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dragonfly Runner",
 		"picture": "Dragonfly_Goblin_Bomber_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -73718,7 +73887,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandspirit Whisperer",
 		"picture": "Goblin_Sand_Witch_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -73776,7 +73945,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Narwhal Spiker",
 		"picture": "Goblin_Fish_Ferry_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -73868,7 +74037,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pufferspine",
 		"picture": "Porcupine_Fish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -73959,7 +74128,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deep Dino",
 		"picture": "Dinosaur_Fish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -74045,7 +74214,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cetus",
 		"picture": "Orca_Planet_Eater_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -74144,7 +74313,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bladesear Infuser",
 		"picture": "Frog_Enchanter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -74209,7 +74378,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ribbit Roaster",
 		"picture": "Mechanical_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -74274,7 +74443,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Egg Thief",
 		"picture": "Frog_Egg_Stealer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -74336,7 +74505,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jorang, Frog Chemist",
 		"picture": "Fire_Breather_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -74416,7 +74585,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnblade Huntress",
 		"picture": "Mecha_Huntress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -74498,7 +74667,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Orbos",
 		"picture": "Drone_Orb_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -74559,7 +74728,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Solder Charger",
 		"picture": "Mecha_Bull_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -74634,7 +74803,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steamrager",
 		"picture": "Ancient_Goblin_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -74719,7 +74888,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torero",
 		"picture": "Skull_Mecha_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -74798,7 +74967,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Coven Knight",
 		"picture": "Blood_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -74857,7 +75026,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Abomination",
 		"picture": "Undead_Stitched_Undead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -74920,7 +75089,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skelepede",
 		"picture": "Skeleton_Millipede_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -74996,7 +75165,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Corpsedancer",
 		"picture": "Goblin_Undead_Skeleton_Puppetmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75069,7 +75238,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Macabre Machine",
 		"picture": "Skeleton_Mecha_Pilot_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -75137,7 +75306,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chainwhip Spirit",
 		"picture": "Chain_Wraith_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -75198,7 +75367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deatheater",
 		"picture": "Frog_Wraith_Beastmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -75280,7 +75449,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ostromech Stepclaw",
 		"picture": "Avian_Mecha_Desert_Ostrich_Robo_Rider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75374,7 +75543,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kiki",
 		"picture": "Avian_Claw_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75460,7 +75629,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Steel Plover",
 		"picture": "Spiked_Orb_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -75538,7 +75707,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxophilite Watcher",
 		"picture": "Avian_Spellcasting_Archer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75619,7 +75788,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deatheye Owl",
 		"picture": "Undead_Owl_Mystic_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -75670,7 +75839,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxic Steam",
 		"picture": "Elemental_Smoke_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75751,7 +75920,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Searsteel Soldier",
 		"picture": "Fire_Elemental_Goblin_Team_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75832,7 +76001,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Diabolic Summoner",
 		"picture": "Angel_Demon_Summoner_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75888,7 +76057,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bitumen Elemental",
 		"picture": "Fire_Elemental_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -75966,7 +76135,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sol Doumu",
 		"picture": "Sun_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -76034,7 +76203,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloaked Revenapod",
 		"picture": "Angel_Demon_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -76112,7 +76281,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fearlord Xerthis",
 		"picture": "Mecha_Angel_Arm_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -76197,7 +76366,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ezuth the Expelled",
 		"picture": "Angel_Demon_Cube_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -76265,7 +76434,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knowledge Hoarder",
 		"picture": "Library_Sand_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -76332,7 +76501,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thundering Hellwing",
 		"picture": "Hell_Dragon_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -76432,7 +76601,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Heilong",
 		"picture": "Tower_Eater_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -76513,7 +76682,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Millidrake Regent",
 		"picture": "Centipede_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -76594,7 +76763,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xerkahn's Warship",
 		"picture": "Punk_Lady_Goblin_Pirate_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -76687,7 +76856,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dune Thief",
 		"picture": "Goblin_Dune_Runner_Bandit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -76764,7 +76933,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twinblast",
 		"picture": "Ballista_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -76855,7 +77024,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Buzzing Elytrite",
 		"picture": "Guardian_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -76933,7 +77102,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scorpio Stinger",
 		"picture": "Scorpion_Tail_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77014,7 +77183,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Caldera Explorer",
 		"picture": "Lava_Skating_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77091,7 +77260,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Magmurchin",
 		"picture": "Seafolk_Sea_Urchin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -77186,7 +77355,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Raptrys",
 		"picture": "FacelessAvian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -77236,7 +77405,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Monarch Scorcher",
 		"picture": "Insect_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77302,7 +77471,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rattleclank Courtesan",
 		"picture": "Seafolk_Mecha_Mermaid_Mistress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77380,7 +77549,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solblade",
 		"picture": "Dark_Knight_Sword_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -77470,7 +77639,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Embered Demise",
 		"picture": "Darkflame_Avian_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77560,7 +77729,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blasteye Sentry",
 		"picture": "Flaming_Frog_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77641,7 +77810,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wildfire",
 		"picture": "Wildfire_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -77720,7 +77889,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Night",
 		"picture": "Darkness_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77804,7 +77973,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chi-Hand Anubi",
 		"picture": "Fist_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -77899,7 +78068,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rattleroar Chimera",
 		"picture": "Undead_Zombie_Chimera_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -77989,7 +78158,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bloodboil Mage",
 		"picture": "Undead_Insect_Cauldron_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -78085,7 +78254,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandlair Dragon",
 		"picture": "LChaosLochnessDragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -78184,7 +78353,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Iron Hammer",
 		"picture": "Darksteel_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -78247,7 +78416,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wyribbit",
 		"picture": "Frog_Dragon_Frog_Dragonling_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -78325,7 +78494,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Burning Blade",
 		"picture": "Burning_DarkFlame_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -78417,7 +78586,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hanabi Crawler",
 		"picture": "Fireworks_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -78512,7 +78681,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Iron Ninjutsu",
 		"picture": "Mecha_Ninja_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -78589,7 +78758,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stonespeak Devil",
 		"picture": "Goblin_Angel_Gargoyle_Goblin_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -78688,7 +78857,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Trampling Demon",
 		"picture": "Mecha_Angel_Demonic_Horse_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -78784,7 +78953,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sabriel",
 		"picture": "Fire_Wing_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -78862,7 +79031,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gilgamesh",
 		"picture": "Corrupt_Arm_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -78927,7 +79096,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dark Mage Tagati",
 		"picture": "Goblin_Dark_Wizard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -79008,6 +79177,88 @@ var CARDS = {
 			}
 		}
 	},
+	"6218": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1550768400000",
+		"id": "6218",
+		"maxLevel": 6,
+		"name": "Gliding Firemage",
+		"picture": "Goblin_Mecha_Glider_Goblin_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			},
+			{
+				"id": "leech",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 21,
+				"skill": []
+			},
+			"5": {
+				"attack": 7,
+				"skill": []
+			},
+			"6": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"6220": {
 		"attack": 6,
 		"card_type": "2",
@@ -79018,7 +79269,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobtoh the Risen",
 		"picture": "Angel_Goblin_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -79113,7 +79364,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Desert Rider",
 		"picture": "Goblin_Desert_Bandit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -79201,7 +79452,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Sigix the Charcannon",
 		"picture": "Goblin_Battery_Cyborg_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -79363,7 +79614,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Elytragor, Beacon's Call",
 		"picture": "Monster_Guardian_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -79563,7 +79814,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Apex Land Shark",
 		"picture": "Seafolk_Land_Shark_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -79706,7 +79957,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Kabuto, Samurai Myth",
 		"picture": "Samurai_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -79892,7 +80143,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Treant King",
 		"picture": "Treant_King_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -79997,7 +80248,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hekaton",
 		"picture": "Colossal_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -80095,7 +80346,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cerberus",
 		"picture": "Cerberus_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -80214,7 +80465,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kraken",
 		"picture": "Kraken_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -80321,7 +80572,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ice Golem",
 		"picture": "Ice_Golem_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -80404,7 +80655,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tsunamari",
 		"picture": "Water_Manipulator_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -80481,7 +80732,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Treant Sapling",
 		"picture": "Treant_Sapling_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -80538,7 +80789,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Water Serpent",
 		"picture": "Water_Serpent_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -80591,7 +80842,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rock Dragon",
 		"picture": "Rock_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -80701,7 +80952,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhino Beast",
 		"picture": "Rhino_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -80814,7 +81065,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Honeycomb Dragon",
 		"picture": "Honeycomb_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -80895,7 +81146,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wolf Girl",
 		"picture": "Wolf_Girl_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -80958,7 +81209,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Life Drake",
 		"picture": "Life_Drake_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -81020,7 +81271,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gold Elemental",
 		"picture": "Gold_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -81105,7 +81356,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Genbu",
 		"picture": "Turtle_Island_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -81173,7 +81424,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bog Aberration",
 		"picture": "Swamp_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -81249,7 +81500,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Webfist Shaman",
 		"picture": "Frog_Shaman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -81328,7 +81579,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Coral Elemental",
 		"picture": "Coral_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -81370,7 +81621,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frog Emperor",
 		"picture": "Emperor_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -81471,7 +81722,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lady of the Swamp",
 		"picture": "Lady_of_the_Swamp_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -81542,7 +81793,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Trapper Frog",
 		"picture": "Huntress_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -81637,7 +81888,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow Elemental",
 		"picture": "Shadow_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -81713,7 +81964,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Beetle Tamer",
 		"picture": "Beetle_Frog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -81751,7 +82002,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zolmosh the Fist",
 		"picture": "Earthquake_Hammer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -81848,7 +82099,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Woolmane Dragon",
 		"picture": "Wooly_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -81941,7 +82192,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Webclaw Dragon",
 		"picture": "Water_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -82031,7 +82282,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostjaw",
 		"picture": "Ice_Giant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -82109,7 +82360,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kitsune",
 		"picture": "Mystical_Fox_Spirit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -82199,7 +82450,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frozen Tide",
 		"picture": "Frozen_Tide_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -82259,7 +82510,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Owl Griffin",
 		"picture": "Owl_Leopard_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -82334,7 +82585,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arctic Ambusher",
 		"picture": "Penguin_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -82390,7 +82641,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Saberjaw Elite",
 		"picture": "Saber_Tooth_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -82444,7 +82695,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nidhogg",
 		"picture": "Elk_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -82515,7 +82766,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Treebond Skull",
 		"picture": "Treebound_Skeleton_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -82612,7 +82863,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spore Elk",
 		"picture": "Spore_Infected_Elk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -82689,7 +82940,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Carrion Tiger",
 		"picture": "Undead_Tiger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -82748,7 +82999,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepwood Corpse",
 		"picture": "Woodland_Ranger_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -82829,7 +83080,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bane",
 		"picture": "Undead_Hornedbeast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -82917,7 +83168,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sol King",
 		"picture": "Lion_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -82980,7 +83231,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winged Giant",
 		"picture": "Gentle_Giant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -83048,7 +83299,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Warden of the Leaf",
 		"picture": "Forest_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -83113,7 +83364,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Feral Angel",
 		"picture": "Feral_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -83190,7 +83441,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scurvy Hopper",
 		"picture": "Frog_Pirates_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -83252,7 +83503,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Anima",
 		"picture": "Life_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -83350,7 +83601,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "River Elemental",
 		"picture": "River_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -83432,7 +83683,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sakura",
 		"picture": "Sakura_Petal_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -83499,7 +83750,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brambleblight",
 		"picture": "Root_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -83576,7 +83827,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shaman of the Wild",
 		"picture": "Spirit_Shaman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -83664,7 +83915,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bogskull Widow",
 		"picture": "Spooky_Spider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -83767,7 +84018,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boundtoad",
 		"picture": "Steam_Roller_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -83856,7 +84107,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Krieg, Northern Sword",
 		"picture": "Giant_Sword_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -83926,7 +84177,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stinglash Rider",
 		"picture": "Big_And_Little_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -83987,7 +84238,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toad the Ravenous",
 		"picture": "Frog_Devourer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -84066,7 +84317,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bee Eater",
 		"picture": "Insect_Death_Bringer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -84130,7 +84381,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "The Thing Below",
 		"picture": "Sea_Leviathan_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -84212,7 +84463,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Valley Strider",
 		"picture": "Grass_Feather_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -84303,7 +84554,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Trailblazer",
 		"picture": "Speed_Runner_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -84371,7 +84622,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bill Crasher",
 		"picture": "Big_Bill_Bird_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -84446,7 +84697,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steppe Stalker",
 		"picture": "Avian_Monstrosity_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -84516,7 +84767,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knotborn Dragon",
 		"picture": "Wood_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -84605,7 +84856,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shenami",
 		"picture": "Shenami_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -84674,7 +84925,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Thickskin Dragon",
 		"picture": "Frenzied_Rock_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -84756,7 +85007,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brine Bellower",
 		"picture": "Epic_Water_Steed_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -84831,7 +85082,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Poisac Crawler",
 		"picture": "Poison_Sac_Back_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -84912,7 +85163,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Willowfly",
 		"picture": "Heal_Wing_Butterfly_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -84981,7 +85232,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Disturbed Swarm",
 		"picture": "Angry_Hive_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -85047,7 +85298,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aquine",
 		"picture": "Sea_Horse_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -85123,7 +85374,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mantis",
 		"picture": "Snake_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -85208,7 +85459,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Eve Allurephid",
 		"picture": "Leaf_Scorpion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -85283,7 +85534,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stoneblade Seraphim",
 		"picture": "Stone_Forger_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -85367,7 +85618,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Laughing Menace",
 		"picture": "Flying_Hyena_Pack_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -85430,7 +85681,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gorilleus",
 		"picture": "Guardian_Angel_Gorilla_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -85500,7 +85751,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Murabi",
 		"picture": "King_Lion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -85574,7 +85825,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heralded Slugger",
 		"picture": "Skyhaven_Traitor_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -85636,7 +85887,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sijou",
 		"picture": "Leaf_Skin_Fox_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -85720,7 +85971,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Diamode",
 		"picture": "Geode_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -85798,7 +86049,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avalanche Fiend",
 		"picture": "Snow_Tiger_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -85888,7 +86139,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crystallum",
 		"picture": "Crystal_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -85969,7 +86220,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Saprolite",
 		"picture": "Seedling_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -86045,7 +86296,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Carina",
 		"picture": "Star_Elemental_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -86122,7 +86373,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spornacle",
 		"picture": "Fungus_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -86199,7 +86450,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Llinella",
 		"picture": "Water_Archer_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -86295,7 +86546,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Forest Umbras",
 		"picture": "Moss_Spirits_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -86351,7 +86602,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sludge Spine",
 		"picture": "Bone_Eel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -86436,7 +86687,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Witchwood",
 		"picture": "Haunted_Forest_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -86521,7 +86772,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Moonlit Scavenger",
 		"picture": "Undead_Rat_Dog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -86598,7 +86849,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scavenger of Elaria",
 		"picture": "Infested_Giant_Ant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -86679,7 +86930,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goblites",
 		"picture": "Mini_Goblin_The_Giant_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -86738,7 +86989,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jubjub",
 		"picture": "Monster_Tamer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -86813,7 +87064,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Elder Shaman",
 		"picture": "Shaman_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -86876,7 +87127,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Prospector",
 		"picture": "Miner_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -86956,7 +87207,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wave Plunderer",
 		"picture": "Seafolk_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -87049,7 +87300,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lord Froggy",
 		"picture": "Frog_Riding_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -87150,7 +87401,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Larva Drakes",
 		"picture": "Butterfly_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -87212,7 +87463,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Basilisk",
 		"picture": "Basilisk_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -87295,7 +87546,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Talonsaur",
 		"picture": "Forest_Spring_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -87365,7 +87616,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vala, Sleeping Earth",
 		"picture": "Mountain_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -87442,7 +87693,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Caustic Toadbog",
 		"picture": "Corrosive_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -87526,7 +87777,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Survivalist",
 		"picture": "Tribal_Spear_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -87583,7 +87834,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Toadplay",
 		"picture": "Totem_Frogs_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -87662,7 +87913,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snow Caller",
 		"picture": "Ice_Caster_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -87739,7 +87990,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shriekers",
 		"picture": "Frog_Avian_Sonic_Attackers_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -87837,7 +88088,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Croaker's Disciple",
 		"picture": "Egyptian_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -87912,7 +88163,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wavomancer",
 		"picture": "Water_Bender_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -87965,7 +88216,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Croaker of the Deep",
 		"picture": "Frog_With_Fins_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -88060,7 +88311,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Charybdis",
 		"picture": "Whirlpool_Monster_Charybdis_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -88138,7 +88389,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Octhos, Ruin Baron",
 		"picture": "Octopus_Legend_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -88236,7 +88487,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hammer Krab",
 		"picture": "Yeti_Crab_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -88285,7 +88536,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Quetee",
 		"picture": "Adorable_Jellyfish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -88362,7 +88613,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clownder",
 		"picture": "Clown_Fish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -88436,7 +88687,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxin Glider",
 		"picture": "Avian_Elemental_Avian_Specter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -88514,7 +88765,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aurai",
 		"picture": "Eagle_Shipeater_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -88594,7 +88845,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fountain Guardian",
 		"picture": "Peacock_Youth_Fountain_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -88687,7 +88938,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Revenge from Above",
 		"picture": "Fuzzball_Birds_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -88761,7 +89012,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Worshipped Statue",
 		"picture": "Garuda_Statue_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -88816,7 +89067,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Airborne Battalion",
 		"picture": "Birds_And_The_Bees_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -88898,7 +89149,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Watchful Hexhound",
 		"picture": "Wolf_Demon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -88975,7 +89226,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rael, Skyhaven Giant",
 		"picture": "Angel_Titan_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -89077,7 +89328,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fleetfoot Wolper",
 		"picture": "Rabbit_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -89141,7 +89392,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bunnpaa",
 		"picture": "Boar_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -89227,7 +89478,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Liliane's Blessing",
 		"picture": "Angelic_Frog_Pollen_Collector_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -89278,7 +89529,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Varachnis",
 		"picture": "Vampire_Spider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -89357,7 +89608,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Satyr Runebearer",
 		"picture": "Satyr_Zombie_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -89412,7 +89663,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Soul Caller",
 		"picture": "Undead_Tribal_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -89497,7 +89748,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Enduring Appetite",
 		"picture": "Zombie_Giant_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -89564,7 +89815,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spectral Presence",
 		"picture": "Totem_Spirit_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -89644,7 +89895,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wyldheart Hunter",
 		"picture": "Zombie_In_Sheeps_Clothing_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -89742,7 +89993,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Basilclaw Clutch",
 		"picture": "Egg_Protector_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -89830,7 +90081,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Denizen of the Trees",
 		"picture": "Moss_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -89908,7 +90159,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Zealous Snapjaw",
 		"picture": "Candyland_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -89976,7 +90227,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fluttering Stinger",
 		"picture": "Dragonfly_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -90044,7 +90295,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xovrus, Death's End",
 		"picture": "Undead_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -90130,7 +90381,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bastion Percher",
 		"picture": "Stone_City_Dragon_Guard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -90212,7 +90463,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Light of the Grove",
 		"picture": "Forest_Light_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -90283,7 +90534,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Prismadew",
 		"picture": "Rainbow_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -90377,7 +90628,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grim Pollination",
 		"picture": "Moth_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -90452,7 +90703,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Darkmites",
 		"picture": "Dust_Mite_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -90522,7 +90773,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gaseous Spores",
 		"picture": "Mushroom_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -90600,7 +90851,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icesyte",
 		"picture": "Water_Skimmer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -90684,7 +90935,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clawgro",
 		"picture": "Claw_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -90757,7 +91008,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sleetshield",
 		"picture": "Icicle_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -90846,7 +91097,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hog Bronco",
 		"picture": "Goblin_Pack_Hunters_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -90920,7 +91171,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kazamo",
 		"picture": "Goblin_Hypnotist_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -90988,7 +91239,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Metalsmith",
 		"picture": "Goblin_Blacksmith_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -91077,7 +91328,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goblin Brigand",
 		"picture": "Goblin_Brigand_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -91172,7 +91423,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kraag",
 		"picture": "Goblin_Mutant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -91229,7 +91480,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pointystick Pezack",
 		"picture": "Goblin_Boomerang_Master_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -91318,7 +91569,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Trident Merman",
 		"picture": "Fish_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -91400,7 +91651,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ika-Roa",
 		"picture": "Pisces_Pisces_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -91487,7 +91738,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sawtooth",
 		"picture": "Seaweed_Shark_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -91551,7 +91802,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shellter",
 		"picture": "Hermit_Crab_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -91643,7 +91894,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kelpcatcher",
 		"picture": "Kelp_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -91743,7 +91994,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mollusk Snarecaster",
 		"picture": "Clam_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -91824,7 +92075,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Seashell Footpad",
 		"picture": "Seasshell_Club_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -91900,7 +92151,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnglow Sharpshot",
 		"picture": "Dawnglow_Tribal_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -91981,7 +92232,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Webtoe Quickfirst",
 		"picture": "Frog_Boxer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -92032,7 +92283,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toadfly",
 		"picture": "Winged_Insect_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -92103,7 +92354,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lucky Frog",
 		"picture": "Lucky_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -92176,7 +92427,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Perilous Stonesteps",
 		"picture": "Elemental_Frog_Rocks_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -92255,7 +92506,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Alphamecha",
 		"picture": "Mecha_Wolf_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -92331,7 +92582,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Timberhead Diver",
 		"picture": "Finned_Lizardman_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -92422,7 +92673,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alloy of the Trees",
 		"picture": "Mecha_Tribal_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -92516,7 +92767,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pinegrove Primate",
 		"picture": "Tree_Harvester_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -92597,7 +92848,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Raging Irontusk",
 		"picture": "Aztec_Mecha_Frog_War_Elephant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -92680,7 +92931,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rejuvenation Acolyte",
 		"picture": "Psychic_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -92760,7 +93011,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Salty Scallywag",
 		"picture": "Undead_Tentacle_Barrier_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -92853,7 +93104,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Werefang the Howler",
 		"picture": "Undead_Zombie_Werewolf_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -92934,7 +93185,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mortalum, Axe Crusher",
 		"picture": "Zombie_Berserker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -93018,7 +93269,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gallows Hand",
 		"picture": "Undead_Executioner_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -93092,7 +93343,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Warpwood Warlock",
 		"picture": "Avian_Dark_Druid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -93165,7 +93416,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rivertorch Renegade",
 		"picture": "Fencer_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -93233,7 +93484,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wyris Shaman",
 		"picture": "Tribal_Avian_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -93322,7 +93573,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mugen and Young Hawk",
 		"picture": "Sage_Insect_and_Avian_Son_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -93417,7 +93668,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Leafsurge Warrior",
 		"picture": "Elemental_Leaf_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -93494,7 +93745,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Streambender",
 		"picture": "Elemental_Water_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -93584,7 +93835,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flowstone, Ancient One",
 		"picture": "Walking_Waterfall_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -93662,7 +93913,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oxylus, Might Warden",
 		"picture": "Massive_Forest_Elemental_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -93758,7 +94009,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battlefield Berserker",
 		"picture": "Battlefield_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -93852,7 +94103,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bottlenose Forerunner",
 		"picture": "Angel_Seafolk_Dolphin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -93950,7 +94201,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Underspine Stinger",
 		"picture": "Hedgehog_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -94031,7 +94282,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Axion, the Valiant",
 		"picture": "Champion_Frog_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -94109,7 +94360,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Monastery Angel",
 		"picture": "Martial_Artist_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -94195,7 +94446,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Marshwing Rider",
 		"picture": "Tropical_Dragon_Tamer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -94284,7 +94535,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crashing Tidalsaur",
 		"picture": "Elemental_Water_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -94366,7 +94617,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owlscar Dragon",
 		"picture": "Owl_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -94456,7 +94707,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forest Hydra",
 		"picture": "Dragon_Forest_Hyrda_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -94533,7 +94784,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Honeycomb Thrower",
 		"picture": "Beehive_Thrower_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -94627,7 +94878,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tidal Enchanter",
 		"picture": "Elemental_Goblin_Water_Sage_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -94706,7 +94957,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Drix and Acidfire",
 		"picture": "Goblin_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -94791,7 +95042,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rustcast Witch",
 		"picture": "Wylde_Mecha_Witch_Doctor_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -94872,7 +95123,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Morja, Poisoncrafter",
 		"picture": "Poison_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -94953,7 +95204,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rocketspear Recruit",
 		"picture": "Lancer_Mecha_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -95047,7 +95298,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Coralscape Grappler",
 		"picture": "Seafolk_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -95125,7 +95376,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Undine Sprite",
 		"picture": "Undine_Sea_Sprite_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -95221,7 +95472,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vodnik, Sea's Shield",
 		"picture": "Seafolk_Turtleshell_Merman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -95315,7 +95566,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Surgebend Merman",
 		"picture": "MermanMagician_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -95412,7 +95663,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Graveclay Digger",
 		"picture": "Grave_Hunter_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -95489,7 +95740,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celesti Monstrosity",
 		"picture": "Angel_Divine_Insect_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -95568,7 +95819,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sewer Slipper",
 		"picture": "Insect_Sewer_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -95645,7 +95896,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Queen Bee",
 		"picture": "Insect_Queen_Bee_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -95737,7 +95988,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bitoad Marsher",
 		"picture": "Frog_Swamp_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -95816,7 +96067,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tuloom, Spirit Shaman",
 		"picture": "ShamanGhostFrog01",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -95898,7 +96149,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gold Crown Mayor",
 		"picture": "GoldenMayorFrog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -95988,7 +96239,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snapping Griffin",
 		"picture": "Avian_Crane_Griffin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -96069,7 +96320,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twigform Mystic",
 		"picture": "Forest_Keeper_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -96170,7 +96421,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Batrachia Spear",
 		"picture": "Avian_Frog_Rider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -96261,7 +96512,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Keropologo",
 		"picture": "Swamp_Frog_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -96357,7 +96608,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blossom Mare",
 		"picture": "Cherry_Blossom_Horse_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -96456,7 +96707,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battlefield Swindler",
 		"picture": "Undead_Frog_Corpse_Raider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -96534,7 +96785,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twistvine",
 		"picture": "Tree_Skeleton_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -96634,7 +96885,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skelosaurus",
 		"picture": "Undead_Zombie_Stegosaurus_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -96742,7 +96993,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Siren of the Bog",
 		"picture": "Undead_Sea_Ghost_Lady_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -96820,7 +97071,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Furystorm Drake",
 		"picture": "LAetherSeaElectricDragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -96909,7 +97160,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forgewing Whelp",
 		"picture": "Mecha_Dragon_Wood_Constructed_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -97005,7 +97256,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shalefang",
 		"picture": "Dragon_Flying-Mountain_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -97087,7 +97338,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Amrita, Drake Healer",
 		"picture": "Goblin_Dragon_Nature_Goblin_Dragonmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -97169,7 +97420,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zuphlas",
 		"picture": "Mecha_Angel_Droid_Controller_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -97262,7 +97513,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hoggernaut MK I",
 		"picture": "Mecha_Pig_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -97356,7 +97607,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gadgit",
 		"picture": "Wylde_Mecha_Gadget_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -97418,7 +97669,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icejaw Turtle",
 		"picture": "Ice_Turtle_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -97497,7 +97748,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Soldier of Retribution",
 		"picture": "Dual_Blade_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -97578,7 +97829,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vombomber Recruit",
 		"picture": "Frog_Angel_Bomber_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -97661,7 +97912,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Floral Sprite",
 		"picture": "Angel_Nature_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -97745,7 +97996,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lishara Lifeweaver",
 		"picture": "Goblin_Priestess_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -97838,7 +98089,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Glory Seeker Arran",
 		"picture": "Hiker_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -98038,7 +98289,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Nemea, the Lost Regent",
 		"picture": "Seafolk_Sea_Lion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -98236,7 +98487,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Leafsinger",
 		"picture": "Treemaster_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -98445,7 +98696,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Formyr the Desecrated",
 		"picture": "Undead_Flesh_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -98643,7 +98894,7 @@ var CARDS = {
 		"maxLevel": 10,
 		"name": "Tropicano Rex",
 		"picture": "Dragon_Tropical_Poison_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "5100",
 		"shard_card": 1,
 		"skill": [
@@ -98829,7 +99080,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostbite Giant",
 		"picture": "Ice_Giant_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -98933,7 +99184,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostbite Wyrm",
 		"picture": "Frost_Wyrm_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99015,7 +99266,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostbite Skeleton",
 		"picture": "Skeleton_Giant_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99108,7 +99359,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostbite Dragon",
 		"picture": "Frost_Bite_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99196,7 +99447,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostbite Serpent",
 		"picture": "Water_Serpent_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99292,7 +99543,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas' Shaman",
 		"picture": "Frog_Shaman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99393,7 +99644,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas' Dragon",
 		"picture": "Dragon_Of_Life_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99488,7 +99739,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron's Cyclone",
 		"picture": "Cloud_Elemental_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99555,7 +99806,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron's Sentinel",
 		"picture": "Seraph_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99639,7 +99890,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos' Obsidian",
 		"picture": "Molten_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99771,7 +100022,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos' Skeleton",
 		"picture": "Flaming_Skeleton_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99893,7 +100144,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nether Soldiers",
 		"picture": "Undead_Soldiers_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -99998,7 +100249,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nether Warrior",
 		"picture": "Skeleton_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100082,7 +100333,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nether Brute",
 		"picture": "Undead_Brute_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100191,7 +100442,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nether Hound",
 		"picture": "Skeleton_Hound_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100268,7 +100519,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nether Wraith",
 		"picture": "Wraith_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100348,7 +100599,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Bomblet",
 		"picture": "Bomblet_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -100399,7 +100650,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Doomsday",
 		"picture": "Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
@@ -100441,7 +100692,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Doom Tentacle",
 		"picture": "Tentacle_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -100483,7 +100734,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angry Chicken",
 		"picture": "Chicken_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -100521,7 +100772,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fortune's Scallywag",
 		"picture": "Magpie_Rogue_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100613,7 +100864,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fortune's Captain",
 		"picture": "Lost_Captain_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100718,7 +100969,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fortune's Mateys",
 		"picture": "Swiftlance_Raiders_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100804,7 +101055,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fortune's Swabbies",
 		"picture": "Frog_Pirates_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -100901,7 +101152,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fortune's Boatswain",
 		"picture": "Goblin_Explosioneer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101018,7 +101269,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Explosive Crab",
 		"picture": "Lava_Crab_A",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -101048,7 +101299,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Putrid Zombie",
 		"picture": "Undead_Rider_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101167,7 +101418,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Underhill Beast",
 		"picture": "Undead_Hornedbeast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101286,7 +101537,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grizzly Bones",
 		"picture": "Undead_Bear_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101428,7 +101679,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ahnkmotep",
 		"picture": "Giant_Mummy_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101558,7 +101809,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Marrowsworn's Cohort",
 		"picture": "Angel_Of_Death_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101702,7 +101953,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boneslither Maw",
 		"picture": "Snake_Skeleton_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101824,7 +102075,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelsword Raider",
 		"picture": "Steel_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -101947,7 +102198,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bismuth Guardian",
 		"picture": "Bismuth_Beast_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102055,7 +102306,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swiftness Feeder",
 		"picture": "Swiftness_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102165,7 +102416,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Radium Corrupter",
 		"picture": "Radium_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102265,7 +102516,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crystal Blockade",
 		"picture": "Crystal_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102357,7 +102608,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sludge River",
 		"picture": "River_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102457,12 +102708,12 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter's Heart",
 		"picture": "Snowhidden_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
-				"id": "armored",
-				"x": 2
+				"id": "absorb",
+				"x": 3
 			},
 			{
 				"id": "frost",
@@ -102482,8 +102733,8 @@ var CARDS = {
 				"health": 19,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 2
+						"id": "absorb",
+						"x": 4
 					},
 					{
 						"id": "frost",
@@ -102496,11 +102747,12 @@ var CARDS = {
 				]
 			},
 			"3": {
+				"attack": 5,
 				"health": 20,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 3
+						"id": "absorb",
+						"x": 5
 					},
 					{
 						"id": "frost",
@@ -102513,11 +102765,12 @@ var CARDS = {
 				]
 			},
 			"4": {
+				"attack": 6,
 				"health": 21,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 3
+						"id": "absorb",
+						"x": 6
 					},
 					{
 						"id": "frost",
@@ -102530,16 +102783,29 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 5,
+				"attack": 7,
 				"health": 22,
-				"skill": []
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
 			},
 			"6": {
 				"health": 24,
 				"skill": [
 					{
-						"id": "armored",
-						"x": 4
+						"id": "absorb",
+						"x": 8
 					},
 					{
 						"id": "frost",
@@ -102557,12 +102823,12 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 22,
+		"health": 24,
 		"id": "8039",
 		"maxLevel": 6,
 		"name": "Winter's Wings",
 		"picture": "Night_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102586,7 +102852,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 24,
+				"health": 26,
 				"skill": [
 					{
 						"id": "rally",
@@ -102605,7 +102871,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 26,
+				"health": 28,
 				"skill": [
 					{
 						"id": "rally",
@@ -102624,7 +102890,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 28,
+				"health": 30,
 				"skill": [
 					{
 						"id": "rally",
@@ -102644,25 +102910,6 @@ var CARDS = {
 			},
 			"5": {
 				"attack": 6,
-				"health": 30,
-				"skill": [
-					{
-						"id": "rally",
-						"x": 6,
-						"y": "9"
-					},
-					{
-						"id": "rally",
-						"x": 5,
-						"y": "9"
-					},
-					{
-						"id": "nullify",
-						"x": 5
-					}
-				]
-			},
-			"6": {
 				"health": 32,
 				"skill": [
 					{
@@ -102673,6 +102920,26 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"health": 34,
+				"skill": [
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "9"
+					},
+					{
+						"id": "rally",
+						"x": 7,
 						"y": "9"
 					},
 					{
@@ -102692,7 +102959,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter's Bite",
 		"picture": "Fire_Tip_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102810,7 +103077,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter's Thunder",
 		"picture": "Legendary_Lightning_Fist_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -102921,7 +103188,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter's Crusher",
 		"picture": "Epic_Water_Steed_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103069,7 +103336,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter's Spirit",
 		"picture": "Spirit_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103194,7 +103461,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aegis of the Sea",
 		"picture": "Twilight_Mirror_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103305,7 +103572,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Summoned Abomination",
 		"picture": "Ice_Yeti_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103393,7 +103660,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter's Sting",
 		"picture": "Angry_Hive_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103487,7 +103754,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Void's Thrall",
 		"picture": "Wasteland_Nomad_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103610,7 +103877,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deadeye Sentinel",
 		"picture": "Cherub_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103729,7 +103996,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spirit of the Free",
 		"picture": "The_Tinkerer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103848,7 +104115,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Heart of Valhalla",
 		"picture": "Angel_Muscle_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -103968,7 +104235,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wings of Valhalla",
 		"picture": "Legendary_Midnight_Demon_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104089,7 +104356,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shield of the Fallen",
 		"picture": "Protective_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104185,7 +104452,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pious Acolyte",
 		"picture": "Angel_Mage_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104323,7 +104590,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Wisdom",
 		"picture": "Turtle_Island_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104457,7 +104724,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Justice",
 		"picture": "Pheonix_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104591,7 +104858,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Temperance",
 		"picture": "Henry_Zhao_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104713,7 +104980,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Courage",
 		"picture": "Saber_Tooth_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104841,7 +105108,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Extremely Okay Ice Cube",
 		"picture": "Icecube_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -104936,7 +105203,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sleepy Bear",
 		"picture": "SleepyBear_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -105005,7 +105272,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dinged Waptor",
 		"picture": "Ugly_Raptor_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -105107,7 +105374,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Prophecy of Ruin",
 		"picture": "Floating_Word_C",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -105246,7 +105513,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Abyss Curse",
 		"picture": "Burning_Golem_C",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -105368,7 +105635,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bluefire's Memory",
 		"picture": "Twilight_Mirror_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -105479,7 +105746,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bluefire's Slave",
 		"picture": "Wasteland_Nomad_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -105602,7 +105869,7 @@ var CARDS = {
 		"maxLevel": 7,
 		"name": "Bluefire's Harmony",
 		"picture": "Rune_Dragon_B",
-		"rarity": "5",
+		"rarity": 5,
 		"set": "9999",
 		"skill": [
 			{
@@ -105746,7 +106013,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winter's Crasher",
 		"picture": "Lightning_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -105876,7 +106143,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bluefire's Will",
 		"picture": "Moss_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -105988,7 +106255,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Void Champion",
 		"picture": "Wasteland_Nomad_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106096,7 +106363,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Void-Touched",
 		"picture": "Chariot_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106171,7 +106438,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scylla's Fool",
 		"picture": "Invisible_Assassin_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106246,7 +106513,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos' Breath",
 		"picture": "Flaming_Skeleton_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106314,7 +106581,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas' Sage",
 		"picture": "Frog_Shaman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106368,7 +106635,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Shock Troop",
 		"picture": "Void_Infected_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106487,7 +106754,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Frostscale",
 		"picture": "Spike_Blade_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106617,7 +106884,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Magnate",
 		"picture": "Undead_Crow_Lord_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106728,7 +106995,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Knight",
 		"picture": "Skeleton_Dreadlord_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106844,7 +107111,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Berserker",
 		"picture": "Shadow_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -106962,7 +107229,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Essencer",
 		"picture": "Void_Elemental_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107077,7 +107344,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Warpbeast",
 		"picture": "Void_Elemental_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107187,7 +107454,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron's Gust",
 		"picture": "Cloud_Elemental_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107270,7 +107537,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Feral Bees",
 		"picture": "Angry_Hive_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107394,7 +107661,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobatron's Ranger",
 		"picture": "Ranger_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107513,7 +107780,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobatron's Firebrand",
 		"picture": "Goblin_Elemental_Surfer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107639,7 +107906,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobatron's Bomber",
 		"picture": "Bomb_Rider_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107756,7 +108023,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobatron's Right Hand",
 		"picture": "Bionic_Arm_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -107876,7 +108143,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobatron's Brutalizer",
 		"picture": "Monster_Tamer_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108008,7 +108275,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Gobatron's Crew",
 		"picture": "Goblin_Gang_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "9999",
 		"skill": [
 			{
@@ -108066,7 +108333,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vorpal Necroblaster",
 		"picture": "Necromancer_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108187,7 +108454,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Temple Automaton",
 		"picture": "Fortified_Tower_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108305,7 +108572,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xerkahn's Crew",
 		"picture": "Goblin_War_Drummer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108431,7 +108698,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cannon Bomber",
 		"picture": "Crossbow_Bomb_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108549,7 +108816,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelshell Devotee",
 		"picture": "Hermit_Crab_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108669,7 +108936,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Prototype Titan",
 		"picture": "Royal_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108795,7 +109062,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Viracocha's Familiar",
 		"picture": "Kestral_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108853,7 +109120,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Transcended Forestlord",
 		"picture": "Boar_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -108981,7 +109248,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nature's Rebirth",
 		"picture": "Mystical_Fox_Spirit_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109106,7 +109373,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostwing Dragon",
 		"picture": "Ghost_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109228,7 +109495,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Prototype Cybot Alpha",
 		"picture": "Royal_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109350,7 +109617,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Prototype Cybot Beta",
 		"picture": "Royal_Guardian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109467,7 +109734,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhino Cyborg",
 		"picture": "Rhino_Beast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109574,7 +109841,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Former Void-Touched",
 		"picture": "Spirit_Shaman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109690,7 +109957,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crimsonwing's Reach",
 		"picture": "Kestral_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109813,7 +110080,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blightwind Whisper",
 		"picture": "Wind_Ghost_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -109894,7 +110161,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celestial Statue",
 		"picture": "Warrior_Angel_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110019,7 +110286,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Divine Statue",
 		"picture": "Angel_Knight_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110132,7 +110399,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mecha Hammer Creation",
 		"picture": "Fortified_Tower_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110253,7 +110520,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Firework Explosive",
 		"picture": "Floating_Word_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110368,7 +110635,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight on Fire",
 		"picture": "Solo_Fire_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110491,7 +110758,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Nerves",
 		"picture": "Solo_Running_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110569,7 +110836,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Dissolvents",
 		"picture": "Acid_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110663,7 +110930,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Dragonfire",
 		"picture": "Lava_Dragon_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110760,7 +111027,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Late Knight",
 		"picture": "Solo_Devour_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110853,7 +111120,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Brittlestone",
 		"picture": "Stone_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -110972,7 +111239,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Drakebane",
 		"picture": "Tower_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111048,7 +111315,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Madness",
 		"picture": "Sierra_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111146,7 +111413,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knights of OW HOT HOT",
 		"picture": "Solo_Triple_Knights_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111251,7 +111518,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Sacrifice",
 		"picture": "Solo_Lava_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111388,7 +111655,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of ",
 		"picture": "Avian_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111504,7 +111771,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brittle Ragescale",
 		"picture": "Mecha_Energy_Shield_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111638,7 +111905,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Carnivorous Gorillaroar",
 		"picture": "Chalicotherium_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111758,7 +112025,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Canopy Monster",
 		"picture": "Swamp_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111858,7 +112125,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Promised Victory",
 		"picture": "Promo_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -111977,7 +112244,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fear of the Vanquished",
 		"picture": "Flying_Rhino_Beetle_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -112102,7 +112369,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Unfounded Revenge",
 		"picture": "Warrior_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -112221,6 +112488,140 @@ var CARDS = {
 			}
 		}
 	},
+	"8125": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"id": "8125",
+		"maxLevel": 6,
+		"name": "Unfounded Revenge",
+		"picture": "Moss_Dragon_B",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3,
+				"y": "9"
+			},
+			{
+				"id": "leech",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"health": 35,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 37,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"attack": 13,
+				"health": 40,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 14,
+				"health": 43,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 46,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "leech",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
 	"11000": {
 		"attack": 1,
 		"card_type": "2",
@@ -112231,7 +112632,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Stormcloud Pegasus",
 		"picture": "Pegasus_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -112257,7 +112658,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Sky Knight",
 		"picture": "Angel_Knight_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -112293,7 +112694,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Tornado Elemental",
 		"picture": "Cloud_Elemental_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -112338,7 +112739,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Purified Kestrel",
 		"picture": "Kestral_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -112377,7 +112778,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Wind Spirit",
 		"picture": "Wind_Spirit_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -112409,7 +112810,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angelic Bruiser",
 		"picture": "Warrior_Angel_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -112446,7 +112847,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Irate Soul Wisp",
 		"picture": "Light_Wisp_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -112481,7 +112882,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Fox Charmer",
 		"picture": "Fox_Trickster_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -112522,7 +112923,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Thunder Elemental",
 		"picture": "Lightning_Elemental_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112558,7 +112959,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Archive Guardian",
 		"picture": "Living_Heiroglyphic_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112607,7 +113008,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Form of Clouds",
 		"picture": "Sylph_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112658,7 +113059,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Veteran Cherub",
 		"picture": "Cherub_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112698,7 +113099,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Windfrog Gale",
 		"picture": "Wind_Frog_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112739,7 +113140,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "High Judgment",
 		"picture": "Judgement_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112795,7 +113196,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Iron Eagle",
 		"picture": "Armored_Eagle_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112843,7 +113244,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Devote Oracle",
 		"picture": "Devote_Oracle_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -112893,7 +113294,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightsworn Archer",
 		"picture": "Young_Angel_Archer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -112965,7 +113366,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Glass Goliath",
 		"picture": "Glass_Colossuss_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -113028,7 +113429,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spearhunter Griffin",
 		"picture": "Griffin_Knight_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -113088,7 +113489,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lilypad Leaper",
 		"picture": "Frog_Hero_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -113140,7 +113541,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Elemental Seer",
 		"picture": "Master_Of_Elements_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -113204,7 +113605,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ardent Paladin",
 		"picture": "Paladin_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -113283,7 +113684,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Righteous Champion",
 		"picture": "Angel_Champion_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -113358,7 +113759,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crescent Elemental",
 		"picture": "Lunar_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -113443,7 +113844,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Noble Charger",
 		"picture": "Mecha_Unicorn_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -113548,7 +113949,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winged Weaponmaster",
 		"picture": "Eagle_Weaponmaster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -113648,7 +114049,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stormspawn Dragon",
 		"picture": "Storm_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -113716,7 +114117,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Retribution Angel",
 		"picture": "Avenging_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -113784,7 +114185,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "High Archgeneral",
 		"picture": "Grand_Archgeneral_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -113869,7 +114270,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lilypad Minstrel",
 		"picture": "Frog_Bard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -113973,7 +114374,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blackhawk Charger",
 		"picture": "Blackhawk_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -114076,7 +114477,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudwhale Wizard",
 		"picture": "Goblin_Whale_Rider_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -114171,7 +114572,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Skeleton Swordsman",
 		"picture": "Skeleton_Warrior_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -114198,7 +114599,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Fire Spirit",
 		"picture": "Flame_Spirit_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -114234,7 +114635,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Flicker Imp",
 		"picture": "Phase_Imp_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -114268,7 +114669,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Unearthed Brute",
 		"picture": "Undead_Brute_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -114300,7 +114701,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Goblin Scoundrel",
 		"picture": "Goblin_Rogue_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -114336,7 +114737,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Lavamolten Elemental",
 		"picture": "Molten_Flame_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -114380,7 +114781,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Lava Pincer",
 		"picture": "Lava_Crab_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -114424,7 +114825,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Spiked Rakken",
 		"picture": "Horned_Lizard_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -114458,7 +114859,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Hotiron Skeleton",
 		"picture": "Flaming_Skeleton_Warrior_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114502,7 +114903,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Edge Demon",
 		"picture": "Scythe_Demon_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114568,7 +114969,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Ashfrog",
 		"picture": "Hellfrog_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114608,7 +115009,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Demon Hound",
 		"picture": "Skeleton_Hound_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114656,7 +115057,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Nixfire Elemental",
 		"picture": "Void_Elemental_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114712,7 +115113,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Fire Fiend",
 		"picture": "Fire_Imp_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114750,7 +115151,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Anvil Lava Slug",
 		"picture": "Lava_Slug_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114798,7 +115199,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Redclaw Wraith",
 		"picture": "Wraith_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -114846,7 +115247,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chaos Swell",
 		"picture": "Storm_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -114925,7 +115326,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Titan of Scorch",
 		"picture": "Fire_Titan_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -115003,7 +115404,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Discordant Angel",
 		"picture": "Fallen_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -115055,7 +115456,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Toxin Bullfrog",
 		"picture": "Poison_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -115122,7 +115523,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shade Assassin",
 		"picture": "Invisible_Assassin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -115200,7 +115601,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Purging Locusts",
 		"picture": "Plague_of_Fire_Locusts_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -115273,7 +115674,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Haunted Soldiers",
 		"picture": "Undead_Soldiers_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -115336,7 +115737,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cloaked Emira",
 		"picture": "Vampire_Lord_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -115426,7 +115827,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Steamcat Mechanist",
 		"picture": "Goblin_Sabertooth_Mech_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -115512,7 +115913,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Char Drake",
 		"picture": "Firebreathing_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -115584,7 +115985,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazen Dragon",
 		"picture": "Fire_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -115663,7 +116064,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hemorrhage Demon",
 		"picture": "Blood_Demon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -115737,7 +116138,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Risen Ronin",
 		"picture": "Undead_Samurai_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -115805,7 +116206,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Burnhorn",
 		"picture": "Fire_Elemental_Bull_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -115900,7 +116301,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boomsting Shot",
 		"picture": "Goblin_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -115966,7 +116367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owltron Defiler",
 		"picture": "Corrosive_Fire_Mecha_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -116058,7 +116459,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Leavefall Fairy",
 		"picture": "Fairy_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -116083,7 +116484,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Forest Golem",
 		"picture": "Moss_Golem_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -116119,7 +116520,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Frost Wolf",
 		"picture": "Dire_Wolf_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -116153,7 +116554,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Mermaid Sorceress",
 		"picture": "Mermaid_Mage_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -116189,7 +116590,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Toad Metalwarrior",
 		"picture": "Frog_Warrior_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -116225,7 +116626,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Flightmage Squirrel",
 		"picture": "Air_Nymph_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -116271,7 +116672,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angler Fiend",
 		"picture": "Angler_Fish_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -116303,7 +116704,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Mounted Turtle",
 		"picture": "Turtle_Tamer_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -116334,7 +116735,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Swiftfoot Ranger",
 		"picture": "Ranger_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116391,7 +116792,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Corrosive Spider",
 		"picture": "Giant_Spider_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116447,7 +116848,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Shieldstone Druid",
 		"picture": "Druid_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116499,7 +116900,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Runeplate Panther",
 		"picture": "Rune_Panther_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116545,7 +116946,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Werewarg Hunter",
 		"picture": "Werewarg_Alpha_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116603,7 +117004,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Wave Elemental",
 		"picture": "Water_Elemental_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116663,7 +117064,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Frog Patrol",
 		"picture": "Frog_Scout_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116713,7 +117114,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Hill Elemental",
 		"picture": "Earth_Elemental_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -116757,7 +117158,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mighty Clawkin",
 		"picture": "Bear_Warrior_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -116825,7 +117226,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Olitusker",
 		"picture": "Oliphant_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -116897,7 +117298,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wizen Sage of Croaks",
 		"picture": "Frog_Sage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -116963,7 +117364,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mega Garganotos",
 		"picture": "Forest_Beast_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -117047,7 +117448,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stone Titan",
 		"picture": "Rock_Titan_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -117111,7 +117512,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hulking Squid",
 		"picture": "Giant_Squid_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -117184,7 +117585,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Toxic Dragon",
 		"picture": "Poison_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -117247,7 +117648,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dark Rider",
 		"picture": "Undead_Rider_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -117326,7 +117727,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Predator Leafback",
 		"picture": "Invisible_Crawler_Insect_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -117388,7 +117789,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brightshoal Soldier",
 		"picture": "Merfolk_Monster_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -117474,7 +117875,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clever Mergoat",
 		"picture": "Mergoat_Capricorn_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -117565,7 +117966,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Entity Dragon",
 		"picture": "Dragon_Of_Life_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -117633,7 +118034,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Beat of the Wyld",
 		"picture": "Heart_Of_The_Woods_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -117709,7 +118110,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icestone Brute",
 		"picture": "Ice_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -117787,7 +118188,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swift Leaper",
 		"picture": "Swift_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -117868,7 +118269,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grave Blackfin",
 		"picture": "Undead_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -117966,7 +118367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Titanic Sundermarr",
 		"picture": "Insect_Mecha_Cyborg_Champion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -118061,7 +118462,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wasteland Wanderer",
 		"picture": "Wasteland_Nomad_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118111,7 +118512,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dunetooth Devil",
 		"picture": "Desert_Lizard_Demon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118187,7 +118588,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Beacon Guardian",
 		"picture": "Lantern_Guardian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118264,7 +118665,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragon Breeder",
 		"picture": "Dragon_Tamer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118331,7 +118732,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magmatail Dragon",
 		"picture": "Molten_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118403,7 +118804,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Windsear Drake",
 		"picture": "Windsear_Drake_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118457,7 +118858,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zhulong the Cunning",
 		"picture": "Henry_Zhao_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -118535,7 +118936,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Platinum Armorer",
 		"picture": "Platinum_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -118633,7 +119034,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Soul of Ash",
 		"picture": "Ash_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118709,7 +119110,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spirit of Sap",
 		"picture": "Sap_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118812,7 +119213,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Silver Wind Spirit",
 		"picture": "Silver_Wind_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -118906,7 +119307,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Poliworg Blitz",
 		"picture": "Poliworg_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119021,7 +119422,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frogling Mob",
 		"picture": "Frogling_Swarm_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119085,7 +119486,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ironclad Toad",
 		"picture": "Armored_Rock_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -119188,7 +119589,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Froglet Warmage",
 		"picture": "Tadpole_Warmage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119264,7 +119665,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pumpkhan",
 		"picture": "Arcane_Pumpkin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -119355,7 +119756,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chalistamper",
 		"picture": "Chalicotherium_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119437,7 +119838,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tidetaken Warrior",
 		"picture": "Frozen_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119510,7 +119911,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Snowstep Scout",
 		"picture": "Snowstep_Ranger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119575,7 +119976,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snowslide Equine",
 		"picture": "Avalanche_Spirit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -119659,7 +120060,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grizzly Tear",
 		"picture": "Undead_Bear_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119745,7 +120146,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dusk Aristocrat",
 		"picture": "Vampire_Noble_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119819,7 +120220,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Infected Knight",
 		"picture": "Void_Infected_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -119882,7 +120283,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lazarus, Harbinger",
 		"picture": "Undead_King_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -119974,7 +120375,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Halo Wizard",
 		"picture": "Angel_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120049,7 +120450,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shifting Infinity",
 		"picture": "Infinity_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -120129,7 +120530,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cunning Critters",
 		"picture": "Cute_Angel_Critter_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120208,7 +120609,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ebonox Duelist",
 		"picture": "Fencing_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120281,7 +120682,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Forest Dryad",
 		"picture": "Shrine_Wood_Nymph_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120355,7 +120756,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brimstone Gorger",
 		"picture": "Brimestone_Monster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120428,7 +120829,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "High Jump Duo",
 		"picture": "Leap_Frog_Duo_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120509,7 +120910,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ardent Owlmancer",
 		"picture": "Avian_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120585,7 +120986,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bladewing",
 		"picture": "Sharp_Wing_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120646,7 +121047,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Carrion Feeder",
 		"picture": "Vulture_Pack_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120718,7 +121119,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Eos Raybringer",
 		"picture": "Crystal_Light_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -120800,7 +121201,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spikehide Dragon",
 		"picture": "Spike_Tail_Basher_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120906,7 +121307,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chillbeard Monster",
 		"picture": "Hairy_Chest_Ice_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -120966,7 +121367,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bounding Dragon",
 		"picture": "Floppy_Ear_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121040,7 +121441,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mystical Dragon",
 		"picture": "Spirit_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -121139,7 +121540,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sandspeck",
 		"picture": "Desert_Sprinter_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121214,7 +121615,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dualipede",
 		"picture": "Bug_Of_Fire_and_Ice_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121280,7 +121681,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swaying Pincer",
 		"picture": "Monkey_Bug_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121344,7 +121745,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dune Leaper",
 		"picture": "Legendary_Savanna_Crusher_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -121423,7 +121824,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shield of Skyhaven",
 		"picture": "Protective_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121515,7 +121916,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rocket Racer",
 		"picture": "Bomb_Rider_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121583,7 +121984,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pack Leader",
 		"picture": "Pack_Leader_Angel_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121658,7 +122059,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wrath, Fury Incarnate",
 		"picture": "Angel_Muscle_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -121738,7 +122139,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Drainor Whirlpool",
 		"picture": "Whirl_Pool_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121814,7 +122215,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rising Twister",
 		"picture": "Sand_Warrior_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121891,7 +122292,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bismuth Brute",
 		"picture": "Bismuth_Beast_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -121955,7 +122356,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Matriarch's Intent",
 		"picture": "Moonlight_Banshee_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122021,7 +122422,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Patchwork Fiend",
 		"picture": "Patchwork_Monster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122115,7 +122516,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reks, the Fallen",
 		"picture": "Undead_Reks_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -122204,7 +122605,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deadeye Journeyman",
 		"picture": "Mad_Scientist_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122266,7 +122667,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Feral Fletcher",
 		"picture": "Ranger_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122339,7 +122740,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tome Bandit",
 		"picture": "Bookmaster_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122435,7 +122836,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pinpin, Dragon Confident",
 		"picture": "Goblin_Riding_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -122527,7 +122928,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Basalt Thrasher",
 		"picture": "Lava_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122605,7 +123006,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Soul of Elaria",
 		"picture": "Aztec_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122698,7 +123099,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Whitewing Wyvern",
 		"picture": "White_Sky_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -122780,7 +123181,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Treetrunk Surfer",
 		"picture": "Frog_Surfer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122858,7 +123259,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Redclaw Traveler",
 		"picture": "Frog_Riding_Lobster_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -122934,7 +123335,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sproutfrog Rainbringer",
 		"picture": "Rainbringer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -123035,7 +123436,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arcane Snowmonster",
 		"picture": "Arcane_Dust_Snowman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123099,7 +123500,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Adorablub",
 		"picture": "Floating_Thing_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123172,7 +123573,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flood Beetle",
 		"picture": "Spiked_Shellfish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123253,7 +123654,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Honored Septuamaid",
 		"picture": "Sea_Goddess_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123315,7 +123716,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Koi Safeguard",
 		"picture": "Seafolk_Koi_Merfolk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123404,7 +123805,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tracker Zind",
 		"picture": "Merfolk_Huntmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -123484,7 +123885,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Starstrike Knight",
 		"picture": "Avian_Starstriker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123560,7 +123961,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ecru Pike",
 		"picture": "Avian_Egg_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123633,7 +124034,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Habrok, the Noble",
 		"picture": "Angel_Avian_Hawk_Lancer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -123717,7 +124118,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cataclysm Rider",
 		"picture": "Apocalypse_Rider_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123793,7 +124194,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Faithstay Commisioner",
 		"picture": "Angel_Armory_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -123874,7 +124275,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rimelight Raider",
 		"picture": "Angel_Ice_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -123953,7 +124354,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cranial Peril",
 		"picture": "Flamehead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124057,7 +124458,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Quag Witch",
 		"picture": "Skull_Witch_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124120,7 +124521,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Slagspirit Ripper",
 		"picture": "Undead_Flame_Tiger_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -124197,7 +124598,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Terra Slider",
 		"picture": "Mud_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124286,7 +124687,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ignus, Harbinger",
 		"picture": "Summoned_Ember_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -124377,7 +124778,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spoutal Tideturner",
 		"picture": "Ocean_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124473,7 +124874,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magma Sledder",
 		"picture": "Goblin_Elemental_Surfer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124560,7 +124961,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bauble Harvester",
 		"picture": "Gem_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -124655,7 +125056,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cocoon Dragger",
 		"picture": "Cocoon_Monster_Insect_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124728,7 +125129,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Opal Regemage",
 		"picture": "White_Lady_Insect_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124817,7 +125218,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kheptronos the Great",
 		"picture": "Bug_Goliath_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -124884,7 +125285,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rotclaw Goblin",
 		"picture": "Goblin_Zombie_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -124958,7 +125359,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lowbog Speaker",
 		"picture": "Goblin_Monk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -125034,7 +125435,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Poisonous Siren",
 		"picture": "Goblin_Seafolk_Mermaid_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -125124,7 +125525,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sharktrooper",
 		"picture": "Chain_Shark_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -125200,7 +125601,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Electrified Eel",
 		"picture": "Electric_Eel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -125305,7 +125706,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pharite Ironjaw",
 		"picture": "Mecha_Piranha_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -125397,7 +125798,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clashborn Toad",
 		"picture": "Cyborg_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -125484,7 +125885,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Koi Racer",
 		"picture": "Frog_Fish_Racers_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -125569,7 +125970,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Burnfist Avenger",
 		"picture": "Fire_Warrior_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -125654,7 +126055,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Weathered Druid",
 		"picture": "Avatar_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -125717,7 +126118,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Piercing Drillbot",
 		"picture": "Drill_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -125812,7 +126213,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Champion Karna",
 		"picture": "Insect_Champion_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -125902,7 +126303,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vali, the Destroyer",
 		"picture": "Underwater_Temple_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -125995,7 +126396,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ironbent Bonewalker",
 		"picture": "Undead_Mecha_Iron_Spiked_Zombie_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126081,7 +126482,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Druid of Putrescence",
 		"picture": "Undead_Druid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126158,7 +126559,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Messina's Offer",
 		"picture": "Monster_Beneath_Hood_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -126239,7 +126640,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aero Torcher",
 		"picture": "Mecha_Avian_Walker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126316,7 +126717,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Opalescent Heron",
 		"picture": "Elemental_Rainbow_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126393,7 +126794,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blazing Hailwing",
 		"picture": "Fire_Ice_Phoenix_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126468,7 +126869,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Jaded Carbuncle",
 		"picture": "Emerald_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126557,7 +126958,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chrysalis Protectorate",
 		"picture": "Angel_Insect_Cocoon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126640,7 +127041,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Voidlight Exploited",
 		"picture": "Corrupted_Elemental_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126704,7 +127105,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flamestoke Clawsmith",
 		"picture": "Flare_Lizard_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126783,7 +127184,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bulbscale Glider",
 		"picture": "Armored_Light_Bulb_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126847,7 +127248,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fowl Squire Bezoar",
 		"picture": "Goblin_Ostrich_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126926,7 +127327,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Two Punch Flare",
 		"picture": "Flame_Fist_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -126991,7 +127392,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "RT-87 Abrogator",
 		"picture": "Flying_Disc_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127077,7 +127478,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stilt-walker Relic",
 		"picture": "Mecha_StiltWalker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127177,7 +127578,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pharos Protector",
 		"picture": "Underwater_Mecha_Protector_Seafolk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127255,7 +127656,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sea's Jaw",
 		"picture": "Seamonster_Maw_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127318,7 +127719,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spear Horror",
 		"picture": "GiantGnat_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127398,7 +127799,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Venweevil",
 		"picture": "BugShrimp_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127484,7 +127885,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dawnglow Crusher",
 		"picture": "BruteFrog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127561,7 +127962,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Golden Rise Mercenaries",
 		"picture": "Frog_Warrior_Goblin_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127639,7 +128040,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wild Crustavian",
 		"picture": "Avian_Seafolk_Lobster_Bird_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127714,7 +128115,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grazna, Beetle Trainer",
 		"picture": "AvianBeetleDriver_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127789,7 +128190,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Eolian Primeval",
 		"picture": "Gusty_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127863,7 +128264,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magmara Cougar",
 		"picture": "Elemental_Mecha_Tiger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -127941,7 +128342,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Revived Dragonkin",
 		"picture": "Undead_Dragon_Skeletal_Pack_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128027,7 +128428,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragging Sleetbones",
 		"picture": "Frozen_Undead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128115,7 +128516,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stormbreak Hellion",
 		"picture": "Angel_Dragon_Sky_Angel_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128201,7 +128602,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spearbreak Risen",
 		"picture": "Undead_Dragon_Spear_Eater_Zombie_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128275,7 +128676,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightning Goliath",
 		"picture": "Mecha_Electric_Battery_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128354,7 +128755,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fatal Fist",
 		"picture": "Undead_Mecha_Brawler_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128442,7 +128843,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Astaroth, the Destroyer",
 		"picture": "Chaos_Mecha_Bit_Heroes_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -128534,7 +128935,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Virtuous Truestrike",
 		"picture": "Angel_Blind_Monk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128619,7 +129020,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Leafward Angel",
 		"picture": "Angel_Beastman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128715,7 +129116,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Goboctopus",
 		"picture": "Goblin_Seafolk_Octopus_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128807,7 +129208,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Secutor Battler",
 		"picture": "Goblin_Gladiator_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -128894,7 +129295,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Marble Sphinx",
 		"picture": "Marble_Sphinx_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -128970,7 +129371,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Feather Skypiercer",
 		"picture": "Eagle_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -129034,7 +129435,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twilight Reflector",
 		"picture": "Twilight_Mirror_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -129110,7 +129511,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ivory Knight",
 		"picture": "White_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -129193,7 +129594,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightning Baron",
 		"picture": "Lighting_Lord_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -129253,7 +129654,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Thunderhead Giant",
 		"picture": "Storm_Giant_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -129327,7 +129728,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Arms Gladiator",
 		"picture": "Chariot_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -129373,7 +129774,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Ancient Scroll",
 		"picture": "Floating_Word_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -129421,7 +129822,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blizzard Dragon",
 		"picture": "Ice_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -129501,7 +129902,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Majestic Guardian",
 		"picture": "Royal_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -129589,7 +129990,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lurking Dragon",
 		"picture": "Concealed_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -129643,7 +130044,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Soaring Whale",
 		"picture": "Sky_Whale_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -129706,7 +130107,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lightning Drake",
 		"picture": "Static_Drake_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -129754,7 +130155,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shining Radiance",
 		"picture": "Light_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -129850,7 +130251,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Charging Raptor",
 		"picture": "Raptor_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -129928,7 +130329,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gravity Tide",
 		"picture": "Gravity_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -130003,7 +130404,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fowl Drove",
 		"picture": "Flock_of_Birds_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -130078,7 +130479,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Piping Tempest",
 		"picture": "Steam_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -130136,7 +130537,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "High Knight Frog",
 		"picture": "High_Knight_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -130204,7 +130605,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brilliant Aurora",
 		"picture": "Great_Aurora_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -130281,7 +130682,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frozen Frog",
 		"picture": "Frozen_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -130349,7 +130750,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spire Spirit",
 		"picture": "Tower_Spirit_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -130425,7 +130826,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Webfoot Bombardier",
 		"picture": "Bombardier_Frog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -130474,7 +130875,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nighttide Dragon",
 		"picture": "Night_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -130551,7 +130952,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Billowtop Dragon",
 		"picture": "Sky_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -130617,7 +131018,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Plateskin Dragon",
 		"picture": "Steel_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -130693,7 +131094,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostflame Wyrm",
 		"picture": "Frost_Wyrm_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -130769,7 +131170,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Northern Clash-kin",
 		"picture": "Polar_Bear_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -130851,7 +131252,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winter Armorer",
 		"picture": "Winter_Blacksmith_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -130913,7 +131314,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snowmasked Dragon",
 		"picture": "Snowhidden_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -130994,7 +131395,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Loxphas Sorcerer",
 		"picture": "Mastodon_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -131068,7 +131469,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snowlance Valkyrie",
 		"picture": "Winter_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -131147,7 +131548,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Iceblock Hurler",
 		"picture": "Hail_Hurler_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -131224,7 +131625,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wandering Soul",
 		"picture": "Lost_Soul_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -131303,7 +131704,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skyward Defender",
 		"picture": "Skyward_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -131374,7 +131775,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Vapor Defender",
 		"picture": "Vapor_Ghost_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -131457,7 +131858,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spring Tail",
 		"picture": "Fox_Spirit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -131528,7 +131929,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dauntless Claymore",
 		"picture": "Phantom_Swordsman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -131609,7 +132010,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celestial Empress",
 		"picture": "Angel_Queen_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -131703,7 +132104,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ethereal Paladin",
 		"picture": "Ethereal_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -131800,7 +132201,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Celestial Trumpeter",
 		"picture": "Angel_Trumpetier_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -131877,7 +132278,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Divelance Raiders",
 		"picture": "Swiftlance_Raiders_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -131952,7 +132353,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wingspan Tinkerer",
 		"picture": "The_Tinkerer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -132035,7 +132436,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Empyrean Flame",
 		"picture": "Firewing_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -132111,7 +132512,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clairvoyant Magi",
 		"picture": "Telepathic_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -132186,7 +132587,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Echo Essence",
 		"picture": "Sound_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -132293,7 +132694,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dawnset",
 		"picture": "Dawn_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -132372,7 +132773,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sky Picker",
 		"picture": "Sky_Picker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -132451,7 +132852,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noble Rose",
 		"picture": "Rose_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -132532,7 +132933,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Joryl of Marble",
 		"picture": "Marble_Golem_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -132600,7 +133001,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Soaring Spear",
 		"picture": "Cloud_Pike_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -132662,7 +133063,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Amphibious Explorer",
 		"picture": "Shinning_Explorer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -132754,7 +133155,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wonder Avian",
 		"picture": "Paradise_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -132822,7 +133223,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Anura Sorceress",
 		"picture": "Frog_Mage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -132883,7 +133284,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Intrepid Ballista",
 		"picture": "Reckless_Ballista_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -132966,7 +133367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Galewing Blast",
 		"picture": "Wind_Puffer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -133056,7 +133457,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kaliri the Champion",
 		"picture": "Avian_Highborn_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -133139,7 +133540,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Great Skystriker",
 		"picture": "Avian_General_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -133226,7 +133627,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crescent Moon Guard",
 		"picture": "Owl_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -133306,7 +133707,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bemola the Wind",
 		"picture": "Ice_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -133396,7 +133797,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Quack Researcher",
 		"picture": "Avian_Scientist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -133457,7 +133858,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flashfist Rex",
 		"picture": "Legendary_Lightning_Fist_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -133522,7 +133923,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cliffrider Wyrm",
 		"picture": "Spike_Blade_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -133584,7 +133985,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Runeworn Dragon",
 		"picture": "Rune_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -133668,7 +134069,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Anshar, the Airbane",
 		"picture": "Airship_Stalker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -133748,7 +134149,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hive Defender",
 		"picture": "Hive_Guard_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -133814,7 +134215,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scarab Brute",
 		"picture": "MultiWeapon_Fat_Stack_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -133906,7 +134307,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Squito Bandit",
 		"picture": "Stinger_Fist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -133992,7 +134393,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aht-Aht Transporter",
 		"picture": "Longleg_Mountain_Nomad_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -134073,7 +134474,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heralidae Aegis",
 		"picture": "Mysterious_Wing_Cloak_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -134157,7 +134558,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Horncutter",
 		"picture": "Horn_Head_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -134253,7 +134654,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stoic Onlooker",
 		"picture": "Void_Conqueror_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -134320,7 +134721,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blind Sage",
 		"picture": "Feather_Eyes_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -134411,7 +134812,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shell Emerger",
 		"picture": "Crustacean_Hell_Bringer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -134488,7 +134889,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Godfried the Slayer",
 		"picture": "Beast_Slayer_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -134565,7 +134966,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Arith the Justicar",
 		"picture": "Blind_Justice_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -134654,7 +135055,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sorath, the Champion",
 		"picture": "Ice_Head_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -134735,7 +135136,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Everbolt Ace",
 		"picture": "Lightning_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -134813,7 +135214,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Asariel the Arbalest",
 		"picture": "Cannon_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -134908,7 +135309,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cyclopnid Alloyborn",
 		"picture": "Steel_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -134993,7 +135394,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Djinnflame Fighter",
 		"picture": "Blue_Flame_Fighter_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -135085,7 +135486,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cumulus Brahzee",
 		"picture": "Giant_Cloud_Sheep_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -135146,7 +135547,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wistful Memory",
 		"picture": "Mist_Stalker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -135233,7 +135634,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Honor Fulfiller",
 		"picture": "Winter_Wretch_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -135306,7 +135707,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dotora Specter",
 		"picture": "Torsoless_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -135380,7 +135781,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vindictive Heir",
 		"picture": "Kimono_Ghost_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -135459,7 +135860,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Possessed Blades",
 		"picture": "Haunted_Arsenal_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -135534,7 +135935,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Apollyon the Sinful",
 		"picture": "Undead_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -135634,7 +136035,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Harsh Betrayal",
 		"picture": "Demon_Skull_Goblin_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -135712,7 +136113,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gomblit Soothsayer",
 		"picture": "Astrological_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -135785,7 +136186,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reks' Devoted",
 		"picture": "Cleric_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -135871,7 +136272,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Armor Bandit",
 		"picture": "Knight_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -135934,7 +136335,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tundra Berserker",
 		"picture": "Tundra_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -136002,7 +136403,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Breezy Newborn",
 		"picture": "Wind_Dragonling_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -136055,7 +136456,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Luminesce Serpentine",
 		"picture": "Prism_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -136122,7 +136523,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shepherd Silurigon",
 		"picture": "Catfish_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -136206,7 +136607,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Enclave Guardian",
 		"picture": "Enclave_Guard_Dragon-01",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -136280,7 +136681,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sierra Stomper",
 		"picture": "Hydra_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -136362,7 +136763,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skybound Concord",
 		"picture": "Angel_and_Drakes_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -136463,7 +136864,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Croak Ace",
 		"picture": "Hot_Air_Balloon_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -136550,7 +136951,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bestower Augur",
 		"picture": "Frog_Wizard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -136632,7 +137033,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alluring Sycophant",
 		"picture": "Frog_Casanova_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -136715,7 +137116,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tribe Sleuth",
 		"picture": "Double_Bola_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -136790,7 +137191,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mother of Galaxies",
 		"picture": "Frog_Space_Mom_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -136894,7 +137295,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pisces in Flight",
 		"picture": "Flying_Fish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -136962,7 +137363,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sea Caller",
 		"picture": "Goldfish_Tamer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -137033,7 +137434,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Acuro, Sea Lord",
 		"picture": "Seafolk_Merfolk_Warlord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -137135,7 +137536,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Reverberating Beacon",
 		"picture": "Guardian_Dolphin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -137216,7 +137617,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aurora Grazer",
 		"picture": "Sky_Manta_Rays_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -137322,7 +137723,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Whirlospout",
 		"picture": "Sky_Jellyfish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -137423,7 +137824,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alectryon, Sky Regent",
 		"picture": "Stormcloud_Rooster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -137520,7 +137921,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shining Bennu",
 		"picture": "Guardian_Angel_Dove_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -137597,7 +137998,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudwing Seeker",
 		"picture": "Bird_Cloud_Chaser_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -137664,7 +138065,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Knight Rook",
 		"picture": "Crow_Knight_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -137727,7 +138128,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stout Wingward",
 		"picture": "Wing_Shield_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -137808,7 +138209,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Parchment Crane",
 		"picture": "Paper_Crane_Flock_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -137891,7 +138292,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Resolute Justice",
 		"picture": "Justice_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -137982,7 +138383,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bolt Chronicler",
 		"picture": "Fortune_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -138057,7 +138458,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chalice Bearer",
 		"picture": "Chalice_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -138131,7 +138532,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Promise",
 		"picture": "Sword_Spirit_Angel_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -138226,7 +138627,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Seraph of Stone Summit",
 		"picture": "Angel_Mountain_Cleaver_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -138329,7 +138730,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cauterizing Hymn",
 		"picture": "Fire_Book_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -138419,7 +138820,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flock King",
 		"picture": "Undead_Crow_Lord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -138519,7 +138920,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow Chaser",
 		"picture": "Shadow_Ghost_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -138582,7 +138983,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sylph Runner",
 		"picture": "Wind_Ghost_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -138665,7 +139066,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Banshee Vengeant",
 		"picture": "Banshee_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -138744,7 +139145,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Haunted Canvas",
 		"picture": "Picture_Frame_Ghost_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -138811,7 +139212,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dynamo Dragon",
 		"picture": "Lightning_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -138903,7 +139304,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torchrime Demolisher",
 		"picture": "Double_Headed_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -139008,7 +139409,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chained Gatekeeper",
 		"picture": "Chained_Gatekeeper_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -139106,7 +139507,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Drake Fosterer",
 		"picture": "Bird_Adopted_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -139185,7 +139586,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelscale, Sky's Home",
 		"picture": "Portable_City_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -139286,7 +139687,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gusty Whirlwinder",
 		"picture": "Gusty_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -139368,7 +139769,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magnetic Controller",
 		"picture": "Magnet_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -139444,7 +139845,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ocotillo Shredder",
 		"picture": "Cactus_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -139542,7 +139943,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shatterblades",
 		"picture": "Glass_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -139606,7 +140007,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lapis, Wavewaker",
 		"picture": "Water_Wing_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -139702,7 +140103,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forgesoul Steelslayer",
 		"picture": "Metal_Golem_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -139780,7 +140181,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gush Rocva",
 		"picture": "Armored_Larva_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -139889,7 +140290,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Devoted Guard",
 		"picture": "Ladybug_Guard_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -139966,7 +140367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bronzehorn Beetle",
 		"picture": "Rhino_Beetle_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -140059,7 +140460,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Nimboreader",
 		"picture": "Cloud_Insect_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -140125,7 +140526,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Buzzblade Mk II",
 		"picture": "Steampunk_Scarab_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -140203,7 +140604,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cedric's Warsnail",
 		"picture": "Snail_Tank_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -140287,7 +140688,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lil' Sparkcaster",
 		"picture": "Goblin_Lightning_Master_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -140366,7 +140767,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gobsnout Dullblade",
 		"picture": "Goblin_Heavenly_Crusader_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -140428,7 +140829,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lullmage Divulger",
 		"picture": "Goblin_Frog_Dark_Magic_Team_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -140519,7 +140920,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Minstrel of Gobsburg",
 		"picture": "Goblin_Bard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -140605,7 +141006,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gribmalda of Soaring",
 		"picture": "Goblin_Bird_Tamer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -140676,7 +141077,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flatfish Guard",
 		"picture": "Sky_Fish_Shield_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -140755,7 +141156,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aquaspear Warfarer",
 		"picture": "Mecha_Mermaid_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -140854,7 +141255,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brinebelly Bulwark",
 		"picture": "Bubble_Belly_Fish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -140963,7 +141364,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mermaid Trader",
 		"picture": "Gypsy_Mermaid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -141016,7 +141417,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Octozap",
 		"picture": "Armored_Lightning_Kraken_Seafolk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -141112,7 +141513,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Glaucus, Frosthand",
 		"picture": "Angel_Merman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -141191,7 +141592,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Silverdash Fencer",
 		"picture": "Fencing_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -141276,7 +141677,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tiltyard Ribbotron",
 		"picture": "Mech_Frog_Weaponmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -141376,7 +141777,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spellcast Magus",
 		"picture": "Bookworm_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -141453,7 +141854,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frostide Stormtender",
 		"picture": "Frog_Frost_Phoenix_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -141530,7 +141931,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vortex Pad",
 		"picture": "Vortex_Feather_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -141613,7 +142014,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tetsudo's Blockade",
 		"picture": "Tower_Shield_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -141709,7 +142110,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Buffer Bot",
 		"picture": "Spiked_Barrier_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -141801,7 +142202,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aloier, Matter Bender",
 		"picture": "Mecha_Energy_Shield_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -141889,7 +142290,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bark Patroller",
 		"picture": "Watchdog_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -141966,7 +142367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chromium Raider",
 		"picture": "Mecha_Centaur_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -142046,7 +142447,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Electrumus, Night's Ward",
 		"picture": "Mecha_Angel_Starwarrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -142144,7 +142545,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hoarfrost Vulture",
 		"picture": "Zombie_Ice_Flock_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -142206,7 +142607,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hieorphant of Dusk",
 		"picture": "Undead_Bookmaster_Lich_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -142312,7 +142713,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lamia's Legionnaire",
 		"picture": "Zombie_Lamia_Shield_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -142408,7 +142809,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vengeful Shade",
 		"picture": "Vengeful_Ghost_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -142489,7 +142890,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dullahan Desecrator",
 		"picture": "Headless_Horseman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -142556,7 +142957,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dross Scraper",
 		"picture": "Undead_Collector_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -142650,7 +143051,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frosthowler",
 		"picture": "Harpy_Shrieker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -142730,7 +143131,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudshatter Elites",
 		"picture": "Avian_Angel_Sky_Assault_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -142811,7 +143212,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Soul of Cygnus",
 		"picture": "Cygnus_Swan_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -142900,7 +143301,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Raywing Duskcaller",
 		"picture": "Avian_Ruins_Protector_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -143003,7 +143404,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Arc Thunderbird",
 		"picture": "Tornado_Bird_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -143083,7 +143484,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skadi, Snow Heir",
 		"picture": "Elemental_Snow_Umbrella_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -143183,7 +143584,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grimacing Meteor",
 		"picture": "Starstorm_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -143263,7 +143664,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lavaroot",
 		"picture": "Fire_Tree_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -143353,7 +143754,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Himamanav's Breath",
 		"picture": "Elemental_Angel_Demon_Wind_Monkey_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -143434,7 +143835,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Luna Seles",
 		"picture": "Elemental_Moon_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -143513,7 +143914,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swordslayer Juggernaut",
 		"picture": "Angel_Sword_In_Stone_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -143608,7 +144009,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Glacial Grimkite",
 		"picture": "Guardian_Angel_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -143698,7 +144099,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Priestess of Radiance",
 		"picture": "Priestess_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -143795,7 +144196,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Star Hoarder",
 		"picture": "Star_Chaser_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -143873,7 +144274,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Movra, Dragon Royal",
 		"picture": "Dragon_Ruler_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -143975,7 +144376,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Armorscald Basher",
 		"picture": "War_Armor_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -144053,7 +144454,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Rise Pilot",
 		"picture": "Goblin_Plane_Engineer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -144170,7 +144571,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dubel Bubble",
 		"picture": "Goblin_Sage_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -144264,7 +144665,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Performer Hula",
 		"picture": "Dancer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -144346,7 +144747,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhynio Battlecrasher",
 		"picture": "Flying_Rhino_Beetle_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -144448,7 +144849,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gelidbeam Soldier",
 		"picture": "Beam_Blade_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -144525,7 +144926,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owlnaut Z-30",
 		"picture": "Mecha_Cyborg_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -144606,7 +145007,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Centi-mecha",
 		"picture": "MechaMillipede_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -144698,7 +145099,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepcharge Trainer",
 		"picture": "Seafolk_Jellyfish_Mermaid_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -144778,7 +145179,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sea's Sky Assembly",
 		"picture": "Seafolk_Flying_Whale_Soldiers_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -144877,7 +145278,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shellscale Entrapper",
 		"picture": "Seafolk_Shellfish_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -144966,7 +145367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Clyx, Forerunner",
 		"picture": "Winged_Armor_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -145043,7 +145444,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cricket Crier",
 		"picture": "Griffin_Insect_Mage_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -145142,7 +145543,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alchebian Converter",
 		"picture": "Alchemist_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -145232,7 +145633,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skymar Squad",
 		"picture": "Frog_Avian_Rider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -145331,7 +145732,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fra'mu, the Negator",
 		"picture": "Frog_Monk_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -145408,7 +145809,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnfire Champion",
 		"picture": "Frog_Arcane_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -145497,7 +145898,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battlehawk Avienda",
 		"picture": "War_Hawk_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -145578,7 +145979,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hazrat Sumaya",
 		"picture": "AvianSongstress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -145645,7 +146046,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noya of Biting Cold",
 		"picture": "Avian_Snow_Sphinx_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -145735,7 +146136,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flying Fowlmaster",
 		"picture": "Avian_Goblin_Birdmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -145813,7 +146214,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Passing Light",
 		"picture": "Lantern_Undead_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -145891,7 +146292,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Peakchill Elemental",
 		"picture": "IceElemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -145994,7 +146395,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crackletail Cirrus",
 		"picture": "Cloud_Fox_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -146085,7 +146486,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mountking Crusher",
 		"picture": "Undead_Skeleton_Armor_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -146175,7 +146576,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bonebite Pirate",
 		"picture": "Undead_Mecha_Skeleton_Dog_Mecha_Master_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -146287,7 +146688,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goldshield Scrollmaster",
 		"picture": "Undead_Lichlord_Scroll_Enchanter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -146368,7 +146769,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Venerated Drakon",
 		"picture": "Undead_Dragon_Ghost_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -146459,7 +146860,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Azazreal, Prophet",
 		"picture": "Dragon_Angel_Fire_Feathered_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -146537,7 +146938,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jyrn of Bitter Snow",
 		"picture": "Dragon_Wild_Snow_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -146614,7 +147015,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Null Bowmech",
 		"picture": "Mecha_Archer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -146717,7 +147118,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rapid Wallbot",
 		"picture": "Mecha_Shielding_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -146823,7 +147224,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frigid Coreheart",
 		"picture": "Mecha_Frosty_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -146889,7 +147290,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bold Automaburner",
 		"picture": "Mecha_Undead_Skeleton_Mecha_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -146979,7 +147380,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Syl, Warrior Queen",
 		"picture": "Angel_of_Battle_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -147057,7 +147458,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Baaht, Flame Forger",
 		"picture": "Elemental_Angel_Blackmith_Living_Flame_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -147153,6 +147554,169 @@ var CARDS = {
 			}
 		}
 	},
+	"15225": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1550768400000",
+		"id": "15225",
+		"maxLevel": 6,
+		"name": "Centurion Steelguard",
+		"picture": "Goblin_Spiked_Shell_Armor_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "counter",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": []
+			},
+			"6": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"15226": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1550768400000",
+		"id": "15226",
+		"maxLevel": 6,
+		"name": "Magitech Plunderer",
+		"picture": "Goblin_War_Toad_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"attack": 6,
+				"skill": []
+			},
+			"4": {
+				"health": 23,
+				"skill": []
+			},
+			"5": {
+				"health": 24,
+				"skill": []
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -147162,7 +147726,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Furnace Smasher",
 		"picture": "Fire_Furnace_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -147226,7 +147790,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Orobas Ignited",
 		"picture": "Balrog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -147300,7 +147864,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spirit of Dementia",
 		"picture": "Chaos_Spirit_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -147376,7 +147940,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Onyx Knight",
 		"picture": "Black_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -147455,7 +148019,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Branding Automaton",
 		"picture": "Branding_Metal_Construct_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -147530,7 +148094,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Candle Gloomkin",
 		"picture": "Burning_Golem_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -147629,7 +148193,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Discord Golem",
 		"picture": "Chaos_Golem_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -147670,7 +148234,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Goblin Band",
 		"picture": "Goblin_Gang_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -147726,7 +148290,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thousand Arm Fiend",
 		"picture": "Thousand_Arm_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -147802,7 +148366,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Devouring Dragon",
 		"picture": "Siphon_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -147903,7 +148467,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cliffpass Apostle",
 		"picture": "Mountainpass_Defender_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -147987,7 +148551,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flashbomb Spirit",
 		"picture": "Bomb_Spirit_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -148059,7 +148623,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Burning Drake",
 		"picture": "Ember_Drake_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -148115,7 +148679,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rust Colossus",
 		"picture": "Rust_Elemental_Ac",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -148184,7 +148748,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hired Siegefist",
 		"picture": "Armored_Ogre_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -148277,7 +148841,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Acidic Ooze",
 		"picture": "Acid_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -148337,7 +148901,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tormented Giant",
 		"picture": "Skeleton_Giant_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -148415,7 +148979,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Tar Pit Shambler",
 		"picture": "Tar_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -148466,7 +149030,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Underwater Wallop",
 		"picture": "Legendary_Chaos_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -148549,7 +149113,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Canopy Chiller",
 		"picture": "Canopy_Horror_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -148636,7 +149200,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Croak Lancer",
 		"picture": "Spike_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -148710,7 +149274,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mire Ogre",
 		"picture": "Marsh_Ogre_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -148803,7 +149367,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Delusion Caster",
 		"picture": "Hypnofrog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -148859,7 +149423,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fierce Broodmother",
 		"picture": "Broodmother_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -148925,7 +149489,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blight Dragon",
 		"picture": "Ruination_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -149007,7 +149571,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragon Commander",
 		"picture": "Dragon_Warlord_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -149068,7 +149632,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sootfang",
 		"picture": "Smoke_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -149157,7 +149721,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frigela, the Terror",
 		"picture": "Ice_Witch_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -149234,7 +149798,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Great Brahmet",
 		"picture": "Multi_Armed_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -149314,7 +149878,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spinehead Trapper",
 		"picture": "Spinehead_Undead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -149389,7 +149953,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noveria Hulk",
 		"picture": "Ice_Yeti_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -149467,7 +150031,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Iceblood Cutthroat",
 		"picture": "Snow_Assassin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -149541,7 +150105,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lord Mumohotep",
 		"picture": "Giant_Mummy_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -149622,7 +150186,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pirate Firebeard",
 		"picture": "Lost_Captain_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -149702,7 +150266,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grave Rattle Viper",
 		"picture": "Snake_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -149787,7 +150351,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Demos, Vanguard",
 		"picture": "Devil_Vanguard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -149867,7 +150431,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Plaguecursed Ogre",
 		"picture": "Void_Ogre_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -149947,7 +150511,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Keeper of the Lost",
 		"picture": "Keeper_Of_The_Dead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -150043,7 +150607,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hemlock Striker",
 		"picture": "Fat_Belly_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -150107,7 +150671,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Auroch the Infernal",
 		"picture": "Flying_Behemoth_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -150185,7 +150749,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazing Cutlass",
 		"picture": "Fire_Sword_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -150249,7 +150813,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grim Reaper",
 		"picture": "Angel_Of_Death_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -150341,7 +150905,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow of Lightning",
 		"picture": "Storm_Shadow_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -150430,7 +150994,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandsurge",
 		"picture": "Sandstorm_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -150512,7 +151076,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Firetreader",
 		"picture": "Fire_Walker_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -150579,7 +151143,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Duskflame",
 		"picture": "Dark_Fire_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -150658,7 +151222,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Celerity Force",
 		"picture": "Swiftness_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -150725,7 +151289,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Withering Touch",
 		"picture": "Death_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -150807,7 +151371,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bulwraag Angered",
 		"picture": "Dino_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -150902,7 +151466,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crazed Explosioneer",
 		"picture": "Goblin_Explosioneer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -150978,7 +151542,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wortwog Grinder",
 		"picture": "Frog_Executioner_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -151051,7 +151615,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Treeblade Rogue",
 		"picture": "Camouflaged_Assassin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -151124,7 +151688,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fuming Ghoul",
 		"picture": "Fuming_Horror_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -151193,7 +151757,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Guard Gorger",
 		"picture": "Avian_Devourer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -151269,7 +151833,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadowslicer",
 		"picture": "Magpie_Rogue_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -151330,7 +151894,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Phoenix Departed",
 		"picture": "Pheonix_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -151399,7 +151963,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Potoo Hypnotist",
 		"picture": "Potoo_Hypnotist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -151474,7 +152038,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Beambug",
 		"picture": "Laser_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -151552,7 +152116,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tarragon Carvetail",
 		"picture": "Scythe_Tail_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -151621,7 +152185,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Violetfire Erupter",
 		"picture": "Purple_Fire_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -151701,7 +152265,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Slobbering Pudgytusk",
 		"picture": "Spear_Face_Pug_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -151778,7 +152342,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Centigon",
 		"picture": "Centipede_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -151856,7 +152420,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Abzu, the Wavebane",
 		"picture": "Ship_Destroyer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -151923,7 +152487,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flametail Dragon",
 		"picture": "Fire_Tip_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -151996,7 +152560,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dreaded Tremor",
 		"picture": "Fat_Fist_Brute_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -152090,7 +152654,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flameface",
 		"picture": "Fire_Face_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -152170,7 +152734,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Psycho Beetle",
 		"picture": "Telekinetic_Bug_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -152256,7 +152820,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gurgitater Grub",
 		"picture": "Legendary_Acid_Spitter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -152351,7 +152915,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cradle Larva",
 		"picture": "Face_Eatter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -152448,7 +153012,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arachnoss",
 		"picture": "Protective_Spider_Hybrid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -152509,7 +153073,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Graceful Petrifier",
 		"picture": "Claw_Hand_Demon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -152573,7 +153137,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Veiled Heraid",
 		"picture": "Masked_Seductress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -152640,7 +153204,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bone Thrower",
 		"picture": "Boomerang_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -152703,7 +153267,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Obsidian Awakened",
 		"picture": "Legendary_Midnight_Demon_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -152793,7 +153357,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Divinity Channeler",
 		"picture": "Uncanny_Valley_Woman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -152876,7 +153440,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Engrossing Mireling",
 		"picture": "Mud_Slinger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -152951,7 +153515,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Magmatic Burst",
 		"picture": "Eruption_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -153030,7 +153594,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Enigma Scribe",
 		"picture": "Enigma_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -153108,7 +153672,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Radiation Juggernaut",
 		"picture": "Radium_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -153219,7 +153783,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nefarious Smoggler",
 		"picture": "Volcanic_Ash_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -153313,7 +153877,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forged Titanirous",
 		"picture": "Titanium_Snake_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -153422,7 +153986,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hidden Apparition",
 		"picture": "Wall_Creeper_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -153485,7 +154049,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rugarth, Pierced Heart",
 		"picture": "Defeated_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -153564,7 +154128,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lockejaw Snapper",
 		"picture": "Iron_Jaw_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -153651,7 +154215,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crypt Watcher",
 		"picture": "Skeleton_Dreadlord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -153728,7 +154292,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Released Persecuted",
 		"picture": "Tomb_Of_The_Damned_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -153812,7 +154376,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dire Obliterator",
 		"picture": "Chain_Fiend_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -153895,7 +154459,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Doxum's Dredger",
 		"picture": "Mechanical_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -153987,7 +154551,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flame Belcher",
 		"picture": "Fire_Eating_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -154073,7 +154637,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crackshot Slinger",
 		"picture": "Wild_West_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -154134,7 +154698,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bone Crafter",
 		"picture": "Necromancer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -154235,7 +154799,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Haze Charger",
 		"picture": "Hooded_Flame_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -154312,7 +154876,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noz Hookhand",
 		"picture": "Bionic_Arm_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -154393,7 +154957,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gob Chucker",
 		"picture": "Catapult_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -154470,7 +155034,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gearshined Dragon",
 		"picture": "Steampunk_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -154581,7 +155145,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Desert Striker",
 		"picture": "Cobra_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -154655,7 +155219,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Prize Dragon",
 		"picture": "Treasure_Trove_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -154741,7 +155305,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sheltering Scale",
 		"picture": "Dragon_Tamer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -154819,7 +155383,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Colliding Forces",
 		"picture": "Yin_and_Yang_Dragons_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -154897,7 +155461,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tiamat, Despoiler",
 		"picture": "Demon_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -154978,7 +155542,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Subterrestrial Dowager",
 		"picture": "Sewer_Frog_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -155072,7 +155636,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ribbithold Sentries",
 		"picture": "Grinning_Weapon_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -155150,7 +155714,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ribbitaksu the Swift",
 		"picture": "Ninja_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -155227,7 +155791,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow Lurker",
 		"picture": "Shadow_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -155302,7 +155866,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wasteland Smasher",
 		"picture": "Four_Armed_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -155410,7 +155974,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bailong the Deceitful",
 		"picture": "Seafolk_Chinese_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -155500,7 +156064,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bull Lava Crab",
 		"picture": "Big_Lava_Crab_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -155591,7 +156155,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crimson Angler",
 		"picture": "Seafolk_Merfolk_Fish_Hook_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -155652,7 +156216,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Captain Jaws",
 		"picture": "Shark_Pirate_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -155744,7 +156308,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Surf Mantis",
 		"picture": "Crab_Person_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -155815,7 +156379,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aspects of the Cinders",
 		"picture": "Goblin_Avian_Phoenix_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -155908,7 +156472,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Volcanic Hawk",
 		"picture": "Hawk_Fire_Sage_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -155985,7 +156549,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Trojan Corvus",
 		"picture": "Avian_Scarecrow_Crows_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -156068,7 +156632,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazing Sentry",
 		"picture": "Horus_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -156145,7 +156709,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Phasing Spelltalon",
 		"picture": "Bird_Of_Death_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -156207,7 +156771,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Uncanny Archer",
 		"picture": "Demon_Archer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -156282,7 +156846,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Beguiling Ophanim",
 		"picture": "Nightmare_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -156372,7 +156936,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Searsnap Demon",
 		"picture": "Demon_Tornado_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -156449,7 +157013,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Corrupted Muse",
 		"picture": "Angel_Artist_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -156537,7 +157101,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oni Samurai",
 		"picture": "Samurai_Soul_Eater_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -156617,7 +157181,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Charon of Frost",
 		"picture": "Underworld_Ferryman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -156697,7 +157261,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Relentless Corpse",
 		"picture": "Lantern_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -156774,7 +157338,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Warborn Destrier",
 		"picture": "Vampire_War_Horse_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -156848,7 +157412,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Incantation Vizier",
 		"picture": "Lichlord_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -156928,7 +157492,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deadly Aim",
 		"picture": "Gunslinger_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -157002,7 +157566,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostsnap Terrordactyl",
 		"picture": "Ghost_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -157083,7 +157647,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hexapus Crawler",
 		"picture": "Katana_Crawler_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -157164,7 +157728,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grimhunt Herd",
 		"picture": "Brimstone_Hunting_Dragons_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -157231,7 +157795,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Scorgon Bushwhacker",
 		"picture": "Poison_Tail_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -157317,7 +157881,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ignited Wyvern",
 		"picture": "Spire_Devourer_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -157411,7 +157975,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winged Snatcher",
 		"picture": "Claw_Wing_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -157485,7 +158049,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Conflicted Scalelord",
 		"picture": "Dual_Personality_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -157563,7 +158127,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cress, Sparkspeaker",
 		"picture": "Choas_Frog_Guardian_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -157647,7 +158211,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Madcap Hearth",
 		"picture": "Forest_Fire_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -157739,7 +158303,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blistershell",
 		"picture": "Turtle_Volcano_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -157841,7 +158405,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cosmic Forces",
 		"picture": "Cosmic_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -157921,7 +158485,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cascading Bile",
 		"picture": "Acid_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -158012,7 +158576,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxin Therix",
 		"picture": "Poison_Tail_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -158106,7 +158670,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Waste Wurm",
 		"picture": "Sand_Wurm_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -158206,7 +158770,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Veilcraft Scarab",
 		"picture": "Face_Stealer_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -158300,7 +158864,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swarmlord Zabzod",
 		"picture": "Goblin_Bug_Overlord_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -158384,7 +158948,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ba Dom Boom",
 		"picture": "Goblin_War_Drummer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -158467,7 +159031,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Violent Entry",
 		"picture": "Firecracker_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -158558,7 +159122,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crossbomb Rebel",
 		"picture": "Crossbow_Bomb_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -158619,7 +159183,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Slaughterer",
 		"picture": "Goblin_Butcherer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -158712,7 +159276,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dragonfly Duster",
 		"picture": "Dragonfly_Goblin_Bomber_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -158802,7 +159366,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandspirit Shaman",
 		"picture": "Goblin_Sand_Witch_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -158896,7 +159460,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Narwhal Impaler",
 		"picture": "Goblin_Fish_Ferry_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -158976,7 +159540,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pufferspine Inflater",
 		"picture": "Porcupine_Fish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -159068,7 +159632,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Depth Dino",
 		"picture": "Dinosaur_Fish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -159155,7 +159719,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Star-eater Cetus",
 		"picture": "Orca_Planet_Eater_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -159255,7 +159819,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bladesear Invigorator",
 		"picture": "Frog_Enchanter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -159344,7 +159908,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ribbit Broaster",
 		"picture": "Mechanical_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -159421,7 +159985,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brazen Egg Thief",
 		"picture": "Frog_Egg_Stealer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -159496,7 +160060,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jorang Drinkfire",
 		"picture": "Fire_Breather_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -159590,7 +160154,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Duskblade Huntress",
 		"picture": "Mecha_Huntress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -159685,7 +160249,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Targeting Orbos",
 		"picture": "Drone_Orb_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -159747,7 +160311,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Solder Crasher",
 		"picture": "Mecha_Bull_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -159847,7 +160411,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Archaic Steamrager",
 		"picture": "Ancient_Goblin_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -159948,7 +160512,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torero Terminator",
 		"picture": "Skull_Mecha_Undead_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -160026,7 +160590,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vampiric Knight",
 		"picture": "Blood_Knight_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -160119,7 +160683,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Abomination Stitcher",
 		"picture": "Undead_Stitched_Undead_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -160210,7 +160774,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skelepede Crawler",
 		"picture": "Skeleton_Millipede_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -160297,7 +160861,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battle Corpsedancer",
 		"picture": "Goblin_Undead_Skeleton_Puppetmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -160379,7 +160943,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Macabre Construct",
 		"picture": "Skeleton_Mecha_Pilot_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -160460,7 +161024,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chainlash Spirit",
 		"picture": "Chain_Wraith_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -160549,7 +161113,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deathbringer",
 		"picture": "Frog_Wraith_Beastmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -160657,7 +161221,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ostromech Glideclaw",
 		"picture": "Avian_Mecha_Desert_Ostrich_Robo_Rider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -160751,7 +161315,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kiki Tori",
 		"picture": "Avian_Claw_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -160832,7 +161396,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bladesteel Plover",
 		"picture": "Spiked_Orb_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -160910,7 +161474,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxophilite Guard",
 		"picture": "Avian_Spellcasting_Archer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -161003,7 +161567,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Endeye Owl",
 		"picture": "Undead_Owl_Mystic_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -161084,7 +161648,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxic Exhaust",
 		"picture": "Elemental_Smoke_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -161177,7 +161741,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Searsteel Charger",
 		"picture": "Fire_Elemental_Goblin_Team_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -161264,7 +161828,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Diabolic Arcsummoner",
 		"picture": "Angel_Demon_Summoner_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -161366,7 +161930,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bitumen Firespreader",
 		"picture": "Fire_Elemental_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -161457,7 +162021,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solis Doumu",
 		"picture": "Sun_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -161539,7 +162103,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Veiled Revenapod",
 		"picture": "Angel_Demon_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -161629,7 +162193,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Horrorlord Xerthis",
 		"picture": "Mecha_Angel_Arm_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -161743,7 +162307,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ezuth the Banished",
 		"picture": "Angel_Demon_Cube_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -161837,7 +162401,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knowledge Devourer",
 		"picture": "Library_Sand_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -161917,7 +162481,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bellowing Hellwing",
 		"picture": "Hell_Dragon_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -162017,7 +162581,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Heilong the Angered",
 		"picture": "Tower_Eater_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -162113,7 +162677,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Millidrake Lord",
 		"picture": "Centipede_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -162194,7 +162758,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xerkahn's Battleship",
 		"picture": "Punk_Lady_Goblin_Pirate_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -162287,7 +162851,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dune Runner",
 		"picture": "Goblin_Dune_Runner_Bandit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -162377,7 +162941,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twinblast XL",
 		"picture": "Ballista_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -162455,7 +163019,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Beeping Elytrite",
 		"picture": "Guardian_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -162546,7 +163110,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scorpio Stunner",
 		"picture": "Scorpion_Tail_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -162655,7 +163219,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Caldera Pioneer",
 		"picture": "Lava_Skating_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -162732,7 +163296,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steaming Magmurchin",
 		"picture": "Seafolk_Sea_Urchin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -162826,7 +163390,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hunting Raptrys",
 		"picture": "FacelessAvian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -162893,7 +163457,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Monarch Igniter",
 		"picture": "Insect_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -162983,7 +163547,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rattleclank Lady",
 		"picture": "Seafolk_Mecha_Mermaid_Mistress_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -163074,7 +163638,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solblade Knight",
 		"picture": "Dark_Knight_Sword_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -163139,7 +163703,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Embered End",
 		"picture": "Darkflame_Avian_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -163242,7 +163806,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blasteye Watchtower",
 		"picture": "Flaming_Frog_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -163323,7 +163887,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wildflare",
 		"picture": "Wildfire_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -163390,7 +163954,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Nocturne",
 		"picture": "Darkness_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -163488,7 +164052,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chi-Fist Anubi",
 		"picture": "Fist_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -163584,7 +164148,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rattleroar Horror",
 		"picture": "Undead_Zombie_Chimera_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -163674,7 +164238,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bloodboil Banemage",
 		"picture": "Undead_Insect_Cauldron_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -163756,7 +164320,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandlair Slayer",
 		"picture": "LChaosLochnessDragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -163855,7 +164419,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Steel Hammer",
 		"picture": "Darksteel_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -163945,7 +164509,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wyribbit Flametongue",
 		"picture": "Frog_Dragon_Frog_Dragonling_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -164047,7 +164611,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Binding Blade",
 		"picture": "Burning_DarkFlame_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -164140,7 +164704,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hanabi Burrower",
 		"picture": "Fireworks_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -164221,7 +164785,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Carbon Ninjutsu",
 		"picture": "Mecha_Ninja_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -164310,7 +164874,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stonelife Devil",
 		"picture": "Goblin_Angel_Gargoyle_Goblin_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -164395,7 +164959,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Trampling Blade",
 		"picture": "Mecha_Angel_Demonic_Horse_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -164492,7 +165056,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sabriel the Avenger",
 		"picture": "Fire_Wing_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -164596,7 +165160,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Corrupt Gilgamesh",
 		"picture": "Corrupt_Arm_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -164686,7 +165250,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dark Whisper Tagati",
 		"picture": "Goblin_Dark_Wizard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -164780,6 +165344,101 @@ var CARDS = {
 			}
 		}
 	},
+	"16218": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1550768400000",
+		"id": "16218",
+		"maxLevel": 6,
+		"name": "Gliding Firecrafter",
+		"picture": "Goblin_Mecha_Glider_Goblin_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
 	"16220": {
 		"attack": 7,
 		"card_type": "2",
@@ -164790,7 +165449,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobtoh Rising",
 		"picture": "Angel_Goblin_Demon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -164899,7 +165558,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Desert Roamer",
 		"picture": "Goblin_Desert_Bandit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -164975,7 +165634,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Treant Edict",
 		"picture": "Treant_King_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -165039,7 +165698,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hekaton, Son of Earth",
 		"picture": "Colossal_Beast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -165121,7 +165780,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cerberus, the Sentry",
 		"picture": "Cerberus_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -165207,7 +165866,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kraken of Depths",
 		"picture": "Kraken_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -165300,7 +165959,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frost Golem",
 		"picture": "Ice_Golem_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -165362,7 +166021,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mentor Tsunamari",
 		"picture": "Water_Manipulator_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -165434,7 +166093,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Treepalm Sapling",
 		"picture": "Treant_Sapling_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -165480,7 +166139,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lake Serpent",
 		"picture": "Water_Serpent_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -165528,7 +166187,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bedrock Dragon",
 		"picture": "Rock_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -165624,7 +166283,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhino Brute",
 		"picture": "Rhino_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -165686,7 +166345,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Toxichive Dragon",
 		"picture": "Honeycomb_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -165774,7 +166433,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wolf Matriarch",
 		"picture": "Wolf_Girl_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -165836,7 +166495,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lifelink Drake",
 		"picture": "Life_Drake_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -165895,7 +166554,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gold Incarnate",
 		"picture": "Gold_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -165980,7 +166639,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Genbu, the Garrison",
 		"picture": "Turtle_Island_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -166077,7 +166736,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Marsh Aberration",
 		"picture": "Swamp_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -166165,7 +166824,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Glowfist Shaman",
 		"picture": "Frog_Shaman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -166257,7 +166916,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Coral Ambusher",
 		"picture": "Coral_Elemental_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -166317,7 +166976,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grand Frog Emperor",
 		"picture": "Emperor_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -166388,7 +167047,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Duchess of the Swamp",
 		"picture": "Lady_of_the_Swamp_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -166483,7 +167142,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stalker Frog",
 		"picture": "Huntress_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -166566,7 +167225,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gloom Elemental",
 		"picture": "Shadow_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -166630,7 +167289,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Beetle Breaker",
 		"picture": "Beetle_Frog_A",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -166686,7 +167345,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zolmosh the Mace",
 		"picture": "Earthquake_Hammer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -166769,7 +167428,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Finemane Dragon",
 		"picture": "Wooly_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -166848,7 +167507,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Webfang Dragon",
 		"picture": "Water_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -166931,7 +167590,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostjaw Giant",
 		"picture": "Ice_Giant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -167007,7 +167666,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kitsune Yosei",
 		"picture": "Mystical_Fox_Spirit_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -167073,7 +167732,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frozen Wave",
 		"picture": "Frozen_Tide_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -167156,7 +167815,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Night Griffin",
 		"picture": "Owl_Leopard_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -167245,7 +167904,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arctic Trooper",
 		"picture": "Penguin_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -167311,7 +167970,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Saberjaw Veteran",
 		"picture": "Saber_Tooth_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -167373,7 +168032,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Timber Nidhogg",
 		"picture": "Elk_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -167478,7 +168137,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Woodbond Skull",
 		"picture": "Treebound_Skeleton_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -167561,7 +168220,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Infected Elk",
 		"picture": "Spore_Infected_Elk_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -167637,7 +168296,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Carrion Slasher",
 		"picture": "Undead_Tiger_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -167712,7 +168371,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepwood Dead",
 		"picture": "Woodland_Ranger_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -167792,7 +168451,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vicious Bane",
 		"picture": "Undead_Hornedbeast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -167868,7 +168527,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ray King",
 		"picture": "Lion_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -167945,7 +168604,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winged Brute",
 		"picture": "Gentle_Giant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -168042,7 +168701,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Warden of the Grove",
 		"picture": "Forest_Guardian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -168142,7 +168801,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wilderness Angel",
 		"picture": "Feral_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -168218,7 +168877,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scurvy Jumper",
 		"picture": "Frog_Pirates_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -168298,7 +168957,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Anima, the Seeker",
 		"picture": "Life_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -168384,7 +169043,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "River Monstrosity",
 		"picture": "River_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -168482,7 +169141,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sakura Bloom",
 		"picture": "Sakura_Petal_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -168558,7 +169217,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nettleblight",
 		"picture": "Root_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -168635,7 +169294,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shaman of the Paw",
 		"picture": "Spirit_Shaman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -168708,7 +169367,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Marshskull Widow",
 		"picture": "Spooky_Spider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -168798,7 +169457,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Unboundtoad",
 		"picture": "Steam_Roller_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -168875,7 +169534,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Krieg, the Redeemed",
 		"picture": "Giant_Sword_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -168973,7 +169632,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stingtail Rider",
 		"picture": "Big_And_Little_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -169046,7 +169705,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toad the Voracious",
 		"picture": "Frog_Devourer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -169136,7 +169795,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hive Eater",
 		"picture": "Insect_Death_Bringer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -169214,7 +169873,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "The Thing Beneath",
 		"picture": "Sea_Leviathan_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -169292,7 +169951,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lowland Strider",
 		"picture": "Grass_Feather_Avian_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -169368,7 +170027,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rapid Trailblazer",
 		"picture": "Speed_Runner_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -169454,7 +170113,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bill Smasher",
 		"picture": "Big_Bill_Bird_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -169529,7 +170188,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steppe Hunter",
 		"picture": "Avian_Monstrosity_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -169614,7 +170273,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knotheir Dragon",
 		"picture": "Wood_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -169719,7 +170378,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shenami the Divine",
 		"picture": "Shenami_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -169799,7 +170458,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stoneskin Dragon",
 		"picture": "Frenzied_Rock_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -169896,7 +170555,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brine Crasher",
 		"picture": "Epic_Water_Steed_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -169970,7 +170629,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Poisac Lurker",
 		"picture": "Poison_Sac_Back_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -170065,7 +170724,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Golden Willowfly",
 		"picture": "Heal_Wing_Butterfly_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -170134,7 +170793,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Agitated Swarm",
 		"picture": "Angry_Hive_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -170195,7 +170854,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Understeed",
 		"picture": "Sea_Horse_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -170258,7 +170917,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Creeping Mantis",
 		"picture": "Snake_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -170335,7 +170994,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Evening Allurephid",
 		"picture": "Leaf_Scorpion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -170428,7 +171087,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stoneblade Defender",
 		"picture": "Stone_Forger_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -170514,7 +171173,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cackling Menace",
 		"picture": "Flying_Hyena_Pack_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -170591,7 +171250,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "King Gorilleus",
 		"picture": "Guardian_Angel_Gorilla_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -170691,7 +171350,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reign of Murabi",
 		"picture": "King_Lion_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -170780,7 +171439,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heralded Slicer",
 		"picture": "Skyhaven_Traitor_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -170855,7 +171514,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sijou, Earth's Spirit",
 		"picture": "Leaf_Skin_Fox_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -170936,7 +171595,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Diamode Crystalizer",
 		"picture": "Geode_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -171015,7 +171674,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avalanche Monster",
 		"picture": "Snow_Tiger_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -171110,7 +171769,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crystallum Awoken",
 		"picture": "Crystal_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -171204,7 +171863,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Saprolite Germ",
 		"picture": "Seedling_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -171280,7 +171939,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nebula Carina",
 		"picture": "Star_Elemental_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -171374,7 +172033,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spornacle Latcher",
 		"picture": "Fungus_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -171463,7 +172122,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Llinella, Wave's Huntress",
 		"picture": "Water_Archer_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -171546,7 +172205,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wood Umbras",
 		"picture": "Moss_Spirits_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -171617,7 +172276,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sludge Snapper",
 		"picture": "Bone_Eel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -171698,7 +172357,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Endless Witchwood",
 		"picture": "Haunted_Forest_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -171783,7 +172442,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Moonlit Hunter",
 		"picture": "Undead_Rat_Dog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -171872,7 +172531,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Terror of Elaria",
 		"picture": "Infested_Giant_Ant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -171967,7 +172626,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Agitated Goblites",
 		"picture": "Mini_Goblin_The_Giant_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -172034,7 +172693,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jubjub, Beast Master",
 		"picture": "Monster_Tamer_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -172115,7 +172774,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Elder Apothecary",
 		"picture": "Shaman_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -172183,7 +172842,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Unrelenting Prospector",
 		"picture": "Miner_Goblin_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -172263,7 +172922,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shore Plunderer",
 		"picture": "Seafolk_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -172357,7 +173016,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Baron von Frog",
 		"picture": "Frog_Riding_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -172444,7 +173103,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lepid Drakes",
 		"picture": "Butterfly_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -172519,7 +173178,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Combative Basilisk",
 		"picture": "Basilisk_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -172601,7 +173260,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Canopy Talonsaur",
 		"picture": "Forest_Spring_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -172693,7 +173352,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vala, Rising Mountain",
 		"picture": "Mountain_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -172771,7 +173430,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Erosive Toadbog",
 		"picture": "Corrosive_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -172841,7 +173500,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swamp Survivalist",
 		"picture": "Tribal_Spear_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -172902,7 +173561,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Roughswamping",
 		"picture": "Totem_Frogs_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -172995,7 +173654,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blizzard Caller",
 		"picture": "Ice_Caster_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -173072,7 +173731,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shrieker Bros",
 		"picture": "Frog_Avian_Sonic_Attackers_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -173170,7 +173829,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Croaker's Apostle",
 		"picture": "Egyptian_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -173261,7 +173920,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Floodomancer",
 		"picture": "Water_Bender_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -173318,7 +173977,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Salient of the Deep",
 		"picture": "Frog_With_Fins_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -173413,7 +174072,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swirling Charybdis",
 		"picture": "Whirlpool_Monster_Charybdis_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -173491,7 +174150,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Octhos, Relic Crusher",
 		"picture": "Octopus_Legend_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -173560,7 +174219,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mallet Krab",
 		"picture": "Yeti_Crab_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -173633,7 +174292,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Quetee Pi",
 		"picture": "Adorable_Jellyfish_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -173713,7 +174372,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Jittery Clownder",
 		"picture": "Clown_Fish_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -173775,7 +174434,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Venom Glider",
 		"picture": "Avian_Elemental_Avian_Specter_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -173878,7 +174537,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aurai of the Gales",
 		"picture": "Eagle_Shipeater_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -173958,7 +174617,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fountain Protector",
 		"picture": "Peacock_Youth_Fountain_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -174065,7 +174724,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Vengeance from Above",
 		"picture": "Fuzzball_Birds_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -174127,7 +174786,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Worshipped Sculpture",
 		"picture": "Garuda_Statue_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -174224,7 +174883,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Airwing Battalion",
 		"picture": "Birds_And_The_Bees_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -174305,7 +174964,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wary Hexhound",
 		"picture": "Wolf_Demon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -174383,7 +175042,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rael, Skyhaven Colossus",
 		"picture": "Angel_Titan_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -174485,7 +175144,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swiftfoot Wolper",
 		"picture": "Rabbit_Angel_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -174561,7 +175220,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bunnpaa Worshipped",
 		"picture": "Boar_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -174661,7 +175320,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Liliane's Grace",
 		"picture": "Angelic_Frog_Pollen_Collector_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -174730,7 +175389,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Varachnis Beguiler",
 		"picture": "Vampire_Spider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -174808,7 +175467,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Satyr Runecarrier",
 		"picture": "Satyr_Zombie_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -174884,7 +175543,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Soul Harbinger",
 		"picture": "Undead_Tribal_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -174969,7 +175628,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Imperishable Appetite",
 		"picture": "Zombie_Giant_Beast_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -175061,7 +175720,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spectral Sentinel",
 		"picture": "Totem_Spirit_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -175140,7 +175799,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rageblaze Hunter",
 		"picture": "Zombie_In_Sheeps_Clothing_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -175238,7 +175897,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Basilclaw Nest",
 		"picture": "Egg_Protector_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -175325,7 +175984,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Denizen of the Timber",
 		"picture": "Moss_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -175417,7 +176076,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hunting Snapjaw",
 		"picture": "Candyland_Dragon_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -175480,7 +176139,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fluttering Pest",
 		"picture": "Dragonfly_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -175561,7 +176220,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xovrus, Desecrator",
 		"picture": "Undead_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -175648,7 +176307,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bastion Loamer",
 		"picture": "Stone_City_Dragon_Guard_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -175731,7 +176390,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Light of the Woods",
 		"picture": "Forest_Light_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -175848,7 +176507,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Prismamist",
 		"picture": "Rainbow_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -175943,7 +176602,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bleak Pollination",
 		"picture": "Moth_Elemental_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -176017,7 +176676,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aggresive Darkmites",
 		"picture": "Dust_Mite_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -176107,7 +176766,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Plague Spores",
 		"picture": "Mushroom_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -176185,7 +176844,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icesyte Walker",
 		"picture": "Water_Skimmer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -176269,7 +176928,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clawgro Beheader",
 		"picture": "Claw_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -176343,7 +177002,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sleetshield Crasher",
 		"picture": "Icicle_Insect_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -176420,7 +177079,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hog Rumbler",
 		"picture": "Goblin_Pack_Hunters_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -176494,7 +177153,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kazamo the Grand",
 		"picture": "Goblin_Hypnotist_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -176592,7 +177251,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Metalcrafter",
 		"picture": "Goblin_Blacksmith_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -176681,7 +177340,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Reks' Brigand",
 		"picture": "Goblin_Brigand_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -176760,7 +177419,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jolt Kraag",
 		"picture": "Goblin_Mutant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -176826,7 +177485,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Poisonstick Pezack",
 		"picture": "Goblin_Boomerang_Master_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -176928,7 +177587,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Trident Crasher",
 		"picture": "Fish_Warrior_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -177010,7 +177669,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ika-Roa, Worldbenders",
 		"picture": "Pisces_Pisces_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -177097,7 +177756,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Prowling Sawtooth",
 		"picture": "Seaweed_Shark_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -177161,7 +177820,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Venite Shellter",
 		"picture": "Hermit_Crab_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -177253,7 +177912,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kelpsnapper",
 		"picture": "Kelp_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -177353,7 +178012,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mollusk Ambushcaster",
 		"picture": "Clam_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -177435,7 +178094,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Seashell Brigand",
 		"picture": "Seasshell_Club_Frog_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -177511,7 +178170,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnglow Bowshot",
 		"picture": "Dawnglow_Tribal_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -177604,7 +178263,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Webtoe Jabshot",
 		"picture": "Frog_Boxer_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -177697,7 +178356,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Marsh Toadfly",
 		"picture": "Winged_Insect_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -177796,7 +178455,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dumb Luck Frog",
 		"picture": "Lucky_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -177878,7 +178537,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Treacherous Stonesteps",
 		"picture": "Elemental_Frog_Rocks_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -177945,7 +178604,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Alphamech Trapper ",
 		"picture": "Mecha_Wolf_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -178022,7 +178681,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Timberhead Angler",
 		"picture": "Finned_Lizardman_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -178113,7 +178772,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alloy of the Grove",
 		"picture": "Mecha_Tribal_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -178221,7 +178880,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pinegrove Pummeler",
 		"picture": "Tree_Harvester_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -178317,7 +178976,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thundering Irontusk",
 		"picture": "Aztec_Mecha_Frog_War_Elephant_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -178413,7 +179072,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rejuvenation Automaton",
 		"picture": "Psychic_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -178493,7 +179152,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Salty Skeleton",
 		"picture": "Undead_Tentacle_Barrier_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -178572,7 +179231,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Werefang of Night's Hill",
 		"picture": "Undead_Zombie_Werewolf_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -178667,7 +179326,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mortalum, Axe Champion",
 		"picture": "Zombie_Berserker_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -178737,7 +179396,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gallows Hew",
 		"picture": "Undead_Executioner_Skeleton_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -178823,7 +179482,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Warpwing Warlock",
 		"picture": "Avian_Dark_Druid_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -178912,7 +179571,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rivertorch Rebel",
 		"picture": "Fencer_Avian_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -179013,7 +179672,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wyris Spellmaster",
 		"picture": "Tribal_Avian_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -179118,7 +179777,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mugen and Son Hawk",
 		"picture": "Sage_Insect_and_Avian_Son_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -179214,7 +179873,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Leafsurge Soldier",
 		"picture": "Elemental_Leaf_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -179291,7 +179950,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Riverbender",
 		"picture": "Elemental_Water_Frog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -179381,7 +180040,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flowstone, the Timeworn",
 		"picture": "Walking_Waterfall_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -179471,7 +180130,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oxylus, Nature Warden",
 		"picture": "Massive_Forest_Elemental_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -179567,7 +180226,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battlefield Cleaver",
 		"picture": "Battlefield_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -179661,7 +180320,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bottlenose Forefront",
 		"picture": "Angel_Seafolk_Dolphin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -179759,7 +180418,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Underspine Slicer",
 		"picture": "Hedgehog_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -179854,7 +180513,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Axion, the Stalwart",
 		"picture": "Champion_Frog_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -179944,7 +180603,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Monastery Keeper",
 		"picture": "Martial_Artist_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -180060,7 +180719,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Marshwing Shaman",
 		"picture": "Tropical_Dragon_Tamer_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -180150,7 +180809,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swelling Tidalsaur",
 		"picture": "Elemental_Water_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -180245,7 +180904,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owlscar Blight",
 		"picture": "Owl_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -180348,7 +181007,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepwood Hydra",
 		"picture": "Dragon_Forest_Hyrda_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -180449,7 +181108,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Honeycomb Chucker",
 		"picture": "Beehive_Thrower_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -180543,7 +181202,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tidal Witch",
 		"picture": "Elemental_Goblin_Water_Sage_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -180635,7 +181294,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Drix and Acidflare",
 		"picture": "Goblin_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -180750,7 +181409,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rustcast Hag",
 		"picture": "Wylde_Mecha_Witch_Doctor_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -180831,7 +181490,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Morja, Poisonsplicer",
 		"picture": "Poison_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -180938,7 +181597,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rocketspear Ranger",
 		"picture": "Lancer_Mecha_Goblin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -181032,7 +181691,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Coralscape Gripper",
 		"picture": "Seafolk_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -181110,7 +181769,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Undine Guide",
 		"picture": "Undine_Sea_Sprite_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -181205,7 +181864,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vodnik, Sea's Light",
 		"picture": "Seafolk_Turtleshell_Merman_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -181299,7 +181958,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Surgebend Pilgrim",
 		"picture": "MermanMagician_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -181396,7 +182055,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Graveclay Thief",
 		"picture": "Grave_Hunter_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -181485,7 +182144,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celesti Beast",
 		"picture": "Angel_Divine_Insect_Warrior_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -181590,7 +182249,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Drainage Slipper",
 		"picture": "Insect_Sewer_Bug_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -181667,7 +182326,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sovereign Bee",
 		"picture": "Insect_Queen_Bee_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -181776,7 +182435,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bitoad Entangler",
 		"picture": "Frog_Swamp_Monster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -181881,7 +182540,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tuloom, Ghost Shaman",
 		"picture": "ShamanGhostFrog01",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -181976,7 +182635,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gold Crown Leader",
 		"picture": "GoldenMayorFrog_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -182083,7 +182742,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Clawing Griffin",
 		"picture": "Avian_Crane_Griffin_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -182192,7 +182851,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Leaform Mystic",
 		"picture": "Forest_Keeper_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -182293,7 +182952,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Batrachia Polearm",
 		"picture": "Avian_Frog_Rider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -182397,7 +183056,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scarred Keropologo",
 		"picture": "Swamp_Frog_Elemental_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -182507,7 +183166,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blossom Charger",
 		"picture": "Cherry_Blossom_Horse_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -182607,7 +183266,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battlefield Lifter",
 		"picture": "Undead_Frog_Corpse_Raider_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -182697,7 +183356,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twistbranch",
 		"picture": "Tree_Skeleton_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -182782,7 +183441,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stomping Skelosaurus",
 		"picture": "Undead_Zombie_Stegosaurus_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -182877,7 +183536,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Siren of the Swamp",
 		"picture": "Undead_Sea_Ghost_Lady_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -182968,7 +183627,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Furystorm Dragon",
 		"picture": "LAetherSeaElectricDragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -183058,7 +183717,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forgewing Wyvern",
 		"picture": "Mecha_Dragon_Wood_Constructed_Dragon_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -183140,7 +183799,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shalefang, the Archaic",
 		"picture": "Dragon_Flying-Mountain_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -183222,7 +183881,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Amrita, Drake Shaman",
 		"picture": "Goblin_Dragon_Nature_Goblin_Dragonmaster_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -183318,7 +183977,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zuphlas the Monitor",
 		"picture": "Mecha_Angel_Droid_Controller_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -183386,7 +184045,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hoggernaut MK II",
 		"picture": "Mecha_Pig_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -183481,7 +184140,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rolling Gadgit",
 		"picture": "Wylde_Mecha_Gadget_Mecha_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -183567,7 +184226,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icejaw Snapper",
 		"picture": "Ice_Turtle_Mecha_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -183633,7 +184292,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Warrior of Retribution",
 		"picture": "Dual_Blade_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -183728,7 +184387,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vombomber Cadet",
 		"picture": "Frog_Angel_Bomber_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -183810,7 +184469,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hallowed Sprite",
 		"picture": "Angel_Nature_Angel_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -183908,7 +184567,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lishara Bloomweaver",
 		"picture": "Goblin_Priestess_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -184000,7 +184659,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas' Shaman",
 		"picture": "Frog_Shaman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -184141,7 +184800,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas' Dragon",
 		"picture": "Dragon_Of_Life_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -184271,7 +184930,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron's Cyclone",
 		"picture": "Cloud_Elemental_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -184398,7 +185057,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron's Sentinel",
 		"picture": "Seraph_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -184503,7 +185162,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos' Obsidian",
 		"picture": "Molten_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -184585,7 +185244,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos' Skeleton",
 		"picture": "Flaming_Skeleton_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -184667,7 +185326,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Kind of a Big Bomb",
 		"picture": "Bomblet_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -184718,7 +185377,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "No Really, Doomsday",
 		"picture": "Monster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -184774,7 +185433,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Doom Tentacler",
 		"picture": "Tentacle_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -184816,7 +185475,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Berserking Chicken",
 		"picture": "Chicken_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -184863,7 +185522,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Explosion Crab",
 		"picture": "Lava_Crab_B",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -184894,7 +185553,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Astral Pegasus",
 		"picture": "Pegasus_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -184925,7 +185584,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Luminous Knight",
 		"picture": "Angel_Knight_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -184957,7 +185616,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Cyclone Elemental",
 		"picture": "Cloud_Elemental_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -185002,7 +185661,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Spirit Kestrel",
 		"picture": "Kestral_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -185045,7 +185704,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Wind Soul",
 		"picture": "Wind_Spirit_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -185081,7 +185740,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angelic Warrior",
 		"picture": "Warrior_Angel_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -185126,7 +185785,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Enraged Soul Wisp",
 		"picture": "Light_Wisp_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -185156,7 +185815,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Fox Conjurer",
 		"picture": "Fox_Trickster_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -185201,7 +185860,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Bolt Elemental",
 		"picture": "Lightning_Elemental_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185241,7 +185900,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Archive Curator",
 		"picture": "Living_Heiroglyphic_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185289,7 +185948,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Avatar of Clouds",
 		"picture": "Sylph_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185349,7 +186008,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Wartorn Cherub",
 		"picture": "Cherub_C_02",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185389,7 +186048,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Windfrog Aloft",
 		"picture": "Wind_Frog_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185439,7 +186098,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Final Judgment",
 		"picture": "Judgement_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185495,7 +186154,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Steel Eagle",
 		"picture": "Armored_Eagle_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185543,7 +186202,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Ascended Oracle",
 		"picture": "Devote_Oracle_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -185593,7 +186252,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightguard Archer",
 		"picture": "Young_Angel_Archer_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -185681,7 +186340,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Glass Titan",
 		"picture": "Glass_Colossuss_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -185758,7 +186417,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Castlerock Griffin",
 		"picture": "Griffin_Knight_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -185820,7 +186479,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ribbit Wayfarer",
 		"picture": "Frog_Hero_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -185880,7 +186539,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Master of Elements",
 		"picture": "Master_Of_Elements_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -185959,7 +186618,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Radiant Paladin",
 		"picture": "Paladin_Angel_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -186040,7 +186699,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Light's Champion",
 		"picture": "Angel_Champion_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -186116,7 +186775,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Moonlight Elemental",
 		"picture": "Lunar_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -186218,7 +186877,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Thundersong Charger",
 		"picture": "Mecha_Unicorn_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -186309,7 +186968,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winged Warlord",
 		"picture": "Eagle_Weaponmaster_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -186409,7 +187068,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stormcleaver Dragon",
 		"picture": "Storm_Dragon_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -186492,7 +187151,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vindication Angel",
 		"picture": "Avenging_Angel_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -186570,7 +187229,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grand Archgeneral",
 		"picture": "Grand_Archgeneral_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -186642,7 +187301,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lilypad Muse",
 		"picture": "Frog_Bard_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -186730,7 +187389,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blackhawk Knight",
 		"picture": "Blackhawk_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -186821,7 +187480,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudwhale Magus",
 		"picture": "Goblin_Whale_Rider_Seafolk_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -186916,7 +187575,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Skeleton Warlord",
 		"picture": "Skeleton_Warrior_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [
@@ -186947,7 +187606,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Blazen Spirit",
 		"picture": "Flame_Spirit_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -186979,7 +187638,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Dimension Imp",
 		"picture": "Phase_Imp_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -187013,7 +187672,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Risen Brute",
 		"picture": "Undead_Brute_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -187049,7 +187708,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Goblin Charlatan",
 		"picture": "Goblin_Rogue_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -187081,7 +187740,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Igneous Elemental",
 		"picture": "Molten_Flame_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -187125,7 +187784,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Lava Gripper",
 		"picture": "Lava_Crab_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -187169,7 +187828,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Thorned Rakken",
 		"picture": "Horned_Lizard_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -187211,7 +187870,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Smelted Skeleton",
 		"picture": "Flaming_Skeleton_Warrior_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187259,7 +187918,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Cleaver Demon",
 		"picture": "Scythe_Demon_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187314,7 +187973,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Hellfrog",
 		"picture": "Hellfrog_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187362,7 +188021,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Executioner Hound",
 		"picture": "Skeleton_Hound_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187410,7 +188069,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Nixflame Elemental",
 		"picture": "Void_Elemental_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187478,7 +188137,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Fire Devil",
 		"picture": "Fire_Imp_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187516,7 +188175,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Forged Lava Slug",
 		"picture": "Lava_Slug_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187556,7 +188215,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Bloodclaw Wraith",
 		"picture": "Wraith_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -187596,7 +188255,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chaos Tempest",
 		"picture": "Storm_Elemental_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -187681,7 +188340,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Titan of Inferno",
 		"picture": "Fire_Titan_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -187760,7 +188419,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bedlam Angel",
 		"picture": "Fallen_Angel_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -187834,7 +188493,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Noxious Bullfrog",
 		"picture": "Poison_Frog_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -187897,7 +188556,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Invisible Assassin",
 		"picture": "Invisible_Assassin_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -187967,7 +188626,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Plague Locusts",
 		"picture": "Plague_of_Fire_Locusts_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -188040,7 +188699,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cursed Soldiers",
 		"picture": "Undead_Soldiers_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -188119,7 +188778,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Nocturn Emira",
 		"picture": "Vampire_Lord_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -188210,7 +188869,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sabercat Mechanist",
 		"picture": "Goblin_Sabertooth_Mech_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -188288,7 +188947,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ash Drake",
 		"picture": "Firebreathing_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -188373,7 +189032,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazerage Dragon",
 		"picture": "Fire_Dragon_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -188482,7 +189141,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sanguine Demon",
 		"picture": "Blood_Demon_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -188556,7 +189215,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dai Ronin",
 		"picture": "Undead_Samurai_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -188636,7 +189295,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazehorn",
 		"picture": "Fire_Elemental_Bull_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -188733,7 +189392,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boomsting Ace",
 		"picture": "Goblin_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -188827,7 +189486,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owltron Belcher",
 		"picture": "Corrosive_Fire_Mecha_Avian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -188919,7 +189578,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Canopyrise Fairy",
 		"picture": "Fairy_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [],
 		"sub_type": [],
@@ -188949,7 +189608,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Ancient Golem",
 		"picture": "Moss_Golem_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -188981,7 +189640,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Winter Wolf",
 		"picture": "Dire_Wolf_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -189015,7 +189674,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Mermaid Battlemage",
 		"picture": "Mermaid_Mage_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -189051,7 +189710,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Toad Steelwarrior",
 		"picture": "Frog_Warrior_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -189091,7 +189750,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Flightwizard Squirrel",
 		"picture": "Air_Nymph_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -189137,7 +189796,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Angler Tyrant",
 		"picture": "Angler_Fish_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -189173,7 +189832,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Battle Turtle",
 		"picture": "Turtle_Tamer_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "1000",
 		"skill": [
 			{
@@ -189217,7 +189876,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Duoshot Ranger",
 		"picture": "Ranger_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189256,7 +189915,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Caustic Spider",
 		"picture": "Giant_Spider_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189312,7 +189971,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Aegistone Druid",
 		"picture": "Druid_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189364,7 +190023,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Runelock Panther",
 		"picture": "Rune_Panther_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189418,7 +190077,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Werewarg Alpha",
 		"picture": "Werewarg_Alpha_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189491,7 +190150,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Tide Elemental",
 		"picture": "Water_Elemental_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189566,7 +190225,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Frog Outrunner",
 		"picture": "Frog_Scout_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189616,7 +190275,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Crag Elemental",
 		"picture": "Earth_Elemental_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "1000",
 		"skill": [
 			{
@@ -189656,7 +190315,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clawkin Elite",
 		"picture": "Bear_Warrior_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -189733,7 +190392,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wartusker",
 		"picture": "Oliphant_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -189817,7 +190476,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Great Sage of Croaks",
 		"picture": "Frog_Sage_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -189903,7 +190562,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "King Garganotos",
 		"picture": "Forest_Beast_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -189977,7 +190636,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mountain Titan",
 		"picture": "Rock_Titan_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -190056,7 +190715,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Monstrous Squid",
 		"picture": "Giant_Squid_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1100",
 		"skill": [
 			{
@@ -190133,7 +190792,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tainted Dragon",
 		"picture": "Poison_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -190212,7 +190871,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shade Rider",
 		"picture": "Undead_Rider_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -190295,7 +190954,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Primal Leafback",
 		"picture": "Invisible_Crawler_Insect_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -190374,7 +191033,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brightshoal Legionnaire",
 		"picture": "Merfolk_Monster_Warrior_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -190447,7 +191106,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cunning Mergoat",
 		"picture": "Mergoat_Capricorn_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "1000",
 		"skill": [
 			{
@@ -190524,7 +191183,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Essence Dragon",
 		"picture": "Dragon_Of_Life_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1100",
 		"skill": [
 			{
@@ -190606,7 +191265,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Heart of the Wyld",
 		"picture": "Heart_Of_The_Woods_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -190696,7 +191355,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icestone Demon",
 		"picture": "Ice_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -190787,7 +191446,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lightning Leaper",
 		"picture": "Swift_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -190909,7 +191568,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nether Blackfin",
 		"picture": "Undead_Seafolk_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -191006,7 +191665,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Colossal Sundermarr",
 		"picture": "Insect_Mecha_Cyborg_Champion_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "1000",
 		"skill": [
 			{
@@ -191115,7 +191774,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wasteland Warrior",
 		"picture": "Wasteland_Nomad_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191165,7 +191824,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dunetooth Rex",
 		"picture": "Desert_Lizard_Demon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191256,7 +191915,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lumin Guardian",
 		"picture": "Lantern_Guardian_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191333,7 +191992,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragon Master",
 		"picture": "Dragon_Tamer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191400,7 +192059,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Obsidiantail Dragon",
 		"picture": "Molten_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191472,7 +192131,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blazing Drake",
 		"picture": "Windsear_Drake_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191552,7 +192211,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zhulong the Wise",
 		"picture": "Henry_Zhao_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -191643,7 +192302,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Platinum Champion",
 		"picture": "Platinum_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -191725,7 +192384,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ash Bringer",
 		"picture": "Ash_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191804,7 +192463,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Specter of Sap",
 		"picture": "Sap_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191894,7 +192553,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Silver Wind Soul",
 		"picture": "Silver_Wind_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -191991,7 +192650,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Poliworg Barrage",
 		"picture": "Poliworg_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192106,7 +192765,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frogling Army",
 		"picture": "Frogling_Swarm_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192189,7 +192848,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelplated Toad",
 		"picture": "Armored_Rock_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -192282,7 +192941,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frog Warmage",
 		"picture": "Tadpole_Warmage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192360,7 +193019,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pumpking Kong",
 		"picture": "Arcane_Pumpkin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -192452,7 +193111,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chalirazer",
 		"picture": "Chalicotherium_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192518,7 +193177,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tidetaken Destroyer",
 		"picture": "Frozen_Skeleton_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192591,7 +193250,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Snowstep Strider",
 		"picture": "Snowstep_Ranger_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192651,7 +193310,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snowcrush Equine",
 		"picture": "Avalanche_Spirit_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -192748,7 +193407,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grizzly Despair",
 		"picture": "Undead_Bear_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192821,7 +193480,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dusk Highborn",
 		"picture": "Vampire_Noble_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192882,7 +193541,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Void Knight",
 		"picture": "Void_Infected_Knight_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -192946,7 +193605,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lazarus, Betrayer",
 		"picture": "Undead_King_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -193025,7 +193684,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Halomancer",
 		"picture": "Angel_Mage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193115,7 +193774,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Diverging Infinity",
 		"picture": "Infinity_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -193213,7 +193872,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Devilish Critters",
 		"picture": "Cute_Angel_Critter_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193292,7 +193951,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ebonfire Duelist",
 		"picture": "Fencing_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193378,7 +194037,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Anima Dryad",
 		"picture": "Shrine_Wood_Nymph_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193465,7 +194124,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brimstone Spewer",
 		"picture": "Brimestone_Monster_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193551,7 +194210,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bash Fist Duo",
 		"picture": "Leap_Frog_Duo_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193632,7 +194291,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Devout Owlmancer",
 		"picture": "Avian_Mage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193710,7 +194369,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Razorwing",
 		"picture": "Sharp_Wing_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193796,7 +194455,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Carrion Pack",
 		"picture": "Vulture_Pack_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -193858,7 +194517,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Eos Dawnbringer",
 		"picture": "Crystal_Light_Bird_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -193926,7 +194585,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spearhide Dragon",
 		"picture": "Spike_Tail_Basher_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194019,7 +194678,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chillbeard Beast",
 		"picture": "Hairy_Chest_Ice_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194080,7 +194739,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pouncing Dragon",
 		"picture": "Floppy_Ear_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194152,7 +194811,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lustrous Dragon",
 		"picture": "Spirit_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -194254,7 +194913,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sandroach",
 		"picture": "Desert_Sprinter_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194330,7 +194989,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Duplicipede",
 		"picture": "Bug_Of_Fire_and_Ice_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194403,7 +195062,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pendulum Pincer",
 		"picture": "Monkey_Bug_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194481,7 +195140,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dune Slammer",
 		"picture": "Legendary_Savanna_Crusher_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -194549,7 +195208,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aegis of Skyhaven",
 		"picture": "Protective_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194626,7 +195285,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rocket Jockey",
 		"picture": "Bomb_Rider_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194703,7 +195362,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pack Alpha",
 		"picture": "Pack_Leader_Angel_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194779,7 +195438,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wrath, Worldrender",
 		"picture": "Angel_Muscle_Monster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -194872,7 +195531,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Drainor Monsoon",
 		"picture": "Whirl_Pool_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -194961,7 +195620,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ascending Twister",
 		"picture": "Sand_Warrior_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195053,7 +195712,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bismuth Beast",
 		"picture": "Bismuth_Beast_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195123,7 +195782,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Matriarch's Bidding",
 		"picture": "Moonlight_Banshee_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195208,7 +195867,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Patchwork Monstrosity",
 		"picture": "Patchwork_Monster_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195301,7 +195960,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reks, the Dragonslain",
 		"picture": "Undead_Reks_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -195390,7 +196049,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deadeye Alchemist",
 		"picture": "Mad_Scientist_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195451,7 +196110,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Savage Fletcher",
 		"picture": "Ranger_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195538,7 +196197,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tome Thief",
 		"picture": "Bookmaster_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195620,7 +196279,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pinpin and Broodus",
 		"picture": "Goblin_Riding_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -195712,7 +196371,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Basalt Geyser",
 		"picture": "Lava_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195792,7 +196451,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deity of Elaria",
 		"picture": "Aztec_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -195871,7 +196530,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Whitesky Wyvern",
 		"picture": "White_Sky_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -195955,7 +196614,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sharktooth Surfer",
 		"picture": "Frog_Surfer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196049,7 +196708,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Redclaw Rider",
 		"picture": "Frog_Riding_Lobster_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196125,7 +196784,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sproutfrog Stormchaser",
 		"picture": "Rainbringer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -196242,7 +196901,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arcane Snowmenace",
 		"picture": "Arcane_Dust_Snowman_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196306,7 +196965,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Adorabubble",
 		"picture": "Floating_Thing_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196380,7 +197039,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Engulfer Beetle",
 		"picture": "Spiked_Shellfish_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196478,7 +197137,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Revered Septuamaid",
 		"picture": "Sea_Goddess_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196553,7 +197212,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Koi Preserver",
 		"picture": "Seafolk_Koi_Merfolk_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196631,7 +197290,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zind, Apex Hunter",
 		"picture": "Merfolk_Huntmaster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -196711,7 +197370,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Starstrike Hero",
 		"picture": "Avian_Starstriker_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196789,7 +197448,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ecru Defender",
 		"picture": "Avian_Egg_Warrior_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -196862,7 +197521,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Habrok, the Warhawk",
 		"picture": "Angel_Avian_Hawk_Lancer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -196946,7 +197605,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Damnation Rider",
 		"picture": "Apocalypse_Rider_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197035,7 +197694,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Faithstay Armorer",
 		"picture": "Angel_Armory_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197116,7 +197775,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rimelight Corsair",
 		"picture": "Angel_Ice_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -197182,7 +197841,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cranial Menace",
 		"picture": "Flamehead_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197260,7 +197919,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mire Witch",
 		"picture": "Skull_Witch_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197323,7 +197982,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Slagspirit Slayer",
 		"picture": "Undead_Flame_Tiger_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -197400,7 +198059,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Terra Conductor",
 		"picture": "Mud_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197491,7 +198150,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ignus, Hellbringer",
 		"picture": "Summoned_Ember_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -197570,7 +198229,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spoutal Wavesmasher",
 		"picture": "Ocean_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197669,7 +198328,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magma Tsunami",
 		"picture": "Goblin_Elemental_Surfer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197746,7 +198405,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jewel Harvester",
 		"picture": "Gem_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -197840,7 +198499,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cocoon Monster",
 		"picture": "Cocoon_Monster_Insect_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197913,7 +198572,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Alabaster Regemage",
 		"picture": "White_Lady_Insect_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -197989,7 +198648,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kheptronos the Shatterer",
 		"picture": "Bug_Goliath_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -198057,7 +198716,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Rotstrike Goblin",
 		"picture": "Goblin_Zombie_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198119,7 +198778,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lowbog Soulcaster",
 		"picture": "Goblin_Monk_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198194,7 +198853,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Venomtouch Siren",
 		"picture": "Goblin_Seafolk_Mermaid_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -198272,7 +198931,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sharkstormer",
 		"picture": "Chain_Shark_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198349,7 +199008,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Thundering Eel",
 		"picture": "Electric_Eel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198430,7 +199089,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pharite Steeljaw",
 		"picture": "Mecha_Piranha_Seafolk_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -198524,7 +199183,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Warborn Toad",
 		"picture": "Cyborg_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198599,7 +199258,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Koi Speedster",
 		"picture": "Frog_Fish_Racers_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -198699,7 +199358,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Moltenfist Avenger",
 		"picture": "Fire_Warrior_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198774,7 +199433,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Weathered Archdruid",
 		"picture": "Avatar_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198867,7 +199526,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spiral Drillbot",
 		"picture": "Drill_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -198949,7 +199608,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vindicator Karna",
 		"picture": "Insect_Champion_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -199027,7 +199686,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vali, the Vanquisher",
 		"picture": "Underwater_Temple_Guardian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -199120,7 +199779,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ironspike Bonewalker",
 		"picture": "Undead_Mecha_Iron_Spiked_Zombie_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199193,7 +199852,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Druid of Corruption",
 		"picture": "Undead_Druid_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199271,7 +199930,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Messina's Ultimatum",
 		"picture": "Monster_Beneath_Hood_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -199339,7 +199998,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aero Scorcher",
 		"picture": "Mecha_Avian_Walker_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199430,7 +200089,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Iridescent Heron",
 		"picture": "Elemental_Rainbow_Avian_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199509,7 +200168,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Searing Hailwing",
 		"picture": "Fire_Ice_Phoenix_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199583,7 +200242,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bewitched Carbuncle",
 		"picture": "Emerald_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199671,7 +200330,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chrysalis Archangel",
 		"picture": "Angel_Insect_Cocoon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199755,7 +200414,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Voidlight Corrupted",
 		"picture": "Corrupted_Elemental_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199832,7 +200491,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Emberstoke Clawsmith",
 		"picture": "Flare_Lizard_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199911,7 +200570,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bulbscale Illuminator",
 		"picture": "Armored_Light_Bulb_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -199991,7 +200650,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fowl Knight Bezoar",
 		"picture": "Goblin_Ostrich_Knight_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200083,7 +200742,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Infinite Punch Flare",
 		"picture": "Flame_Fist_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200177,7 +200836,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "RT-87 Neutralizer",
 		"picture": "Flying_Disc_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200251,7 +200910,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stilt-walker Ancient",
 		"picture": "Mecha_StiltWalker_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200351,7 +201010,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pharos Keeper",
 		"picture": "Underwater_Mecha_Protector_Seafolk_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200429,7 +201088,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sea's Maw",
 		"picture": "Seamonster_Maw_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200517,7 +201176,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spear Nightmare",
 		"picture": "GiantGnat_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200597,7 +201256,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Toxweevil",
 		"picture": "BugShrimp_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200671,7 +201330,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dawnglow Walloper",
 		"picture": "BruteFrog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200749,7 +201408,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Golden Rise Conquerors",
 		"picture": "Frog_Warrior_Goblin_Mage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200827,7 +201486,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Savage Crustavian",
 		"picture": "Avian_Seafolk_Lobster_Bird_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200902,7 +201561,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grazna, Beetle Master",
 		"picture": "AvianBeetleDriver_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -200977,7 +201636,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Eolian Djinn",
 		"picture": "Gusty_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201051,7 +201710,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magmarch Cougar",
 		"picture": "Elemental_Mecha_Tiger_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201129,7 +201788,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Returned Dragonkin",
 		"picture": "Undead_Dragon_Skeletal_Pack_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201203,7 +201862,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Absorbing Sleetbones",
 		"picture": "Frozen_Undead_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201291,7 +201950,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stormbreak Archellion",
 		"picture": "Angel_Dragon_Sky_Angel_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201366,7 +202025,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spearbreak Monster",
 		"picture": "Undead_Dragon_Spear_Eater_Zombie_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201428,7 +202087,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightning Juggernaut",
 		"picture": "Mecha_Electric_Battery_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201508,7 +202167,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cauterizing Fist",
 		"picture": "Undead_Mecha_Brawler_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201595,7 +202254,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Astaroth, the Dark Lord",
 		"picture": "Chaos_Mecha_Bit_Heroes_A",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "2000",
 		"skill": [
 			{
@@ -201686,7 +202345,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Holy Truestrike",
 		"picture": "Angel_Blind_Monk_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201772,7 +202431,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Leafshield Angel",
 		"picture": "Angel_Beastman_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201868,7 +202527,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gobloctopus",
 		"picture": "Goblin_Seafolk_Octopus_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -201960,7 +202619,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Secutor Axmaster",
 		"picture": "Goblin_Gladiator_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "2000",
 		"skill": [
 			{
@@ -202046,7 +202705,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alabaster Sphinx",
 		"picture": "Marble_Sphinx_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -202123,7 +202782,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fierce Skypiercer",
 		"picture": "Eagle_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -202212,7 +202871,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twilight Specular",
 		"picture": "Twilight_Mirror_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -202306,7 +202965,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Opal Knight",
 		"picture": "White_Knight_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -202403,7 +203062,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightning Demigod",
 		"picture": "Lighting_Lord_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -202463,7 +203122,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Windtempest Giant",
 		"picture": "Storm_Giant_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -202538,7 +203197,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Arms Champion",
 		"picture": "Chariot_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -202584,7 +203243,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Ancient Manuscript",
 		"picture": "Floating_Word_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -202632,7 +203291,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hailstone Dragon",
 		"picture": "Ice_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -202712,7 +203371,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "High Guardian",
 		"picture": "Royal_Guardian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -202787,7 +203446,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Veiled Dragon",
 		"picture": "Concealed_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -202856,7 +203515,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Celestial Whale",
 		"picture": "Sky_Whale_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -202918,7 +203577,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Thunder Drake",
 		"picture": "Static_Drake_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -202966,7 +203625,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brilliant Radiance",
 		"picture": "Light_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -203048,7 +203707,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swift Raptor",
 		"picture": "Raptor_Bird_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -203138,7 +203797,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gravity Bender",
 		"picture": "Gravity_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -203214,7 +203873,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fowl Horde",
 		"picture": "Flock_of_Birds_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -203289,7 +203948,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Scalding Tempest",
 		"picture": "Steam_Elemental_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -203356,7 +204015,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Supreme Knight Frog",
 		"picture": "High_Knight_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -203452,7 +204111,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazing Aurora",
 		"picture": "Great_Aurora_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -203541,7 +204200,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arctic Frog",
 		"picture": "Frozen_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -203641,7 +204300,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Citadel Spirit",
 		"picture": "Tower_Spirit_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -203717,7 +204376,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Webfoot Marauder",
 		"picture": "Bombardier_Frog_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -203774,7 +204433,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twilight Dragon",
 		"picture": "Night_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -203853,7 +204512,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skytop Dragon",
 		"picture": "Sky_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -203936,7 +204595,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Silverskin Dragon",
 		"picture": "Steel_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -204013,7 +204672,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostscour Wyrm",
 		"picture": "Frost_Wyrm_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -204090,7 +204749,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Northern Strife-kin",
 		"picture": "Polar_Bear_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -204170,7 +204829,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winter Bladesmith",
 		"picture": "Winter_Blacksmith_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -204246,7 +204905,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snowcloaked Dragon",
 		"picture": "Snowhidden_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -204327,7 +204986,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Loxphas Wizard",
 		"picture": "Mastodon_Mage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -204401,7 +205060,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icelance Valkyrie",
 		"picture": "Winter_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -204482,7 +205141,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostshard Hurler",
 		"picture": "Hail_Hurler_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -204571,7 +205230,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dread Soul",
 		"picture": "Lost_Soul_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -204650,7 +205309,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skyward Sentinel",
 		"picture": "Skyward_Guardian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -204734,7 +205393,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Vapor Warden",
 		"picture": "Vapor_Ghost_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -204816,7 +205475,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Summer Tail",
 		"picture": "Fox_Spirit_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -204902,7 +205561,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dauntless Deathknell",
 		"picture": "Phantom_Swordsman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -204982,7 +205641,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celestial Queen",
 		"picture": "Angel_Queen_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -205062,7 +205721,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ethereal Champion",
 		"picture": "Ethereal_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -205160,7 +205819,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Divine Trumpeter",
 		"picture": "Angel_Trumpetier_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -205250,7 +205909,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swiftlance Raiders",
 		"picture": "Swiftlance_Raiders_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -205325,7 +205984,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelfeather Tinkerer",
 		"picture": "The_Tinkerer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -205408,7 +206067,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Empyrean Fire",
 		"picture": "Firewing_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -205484,7 +206143,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ascended Magi",
 		"picture": "Telepathic_Mage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -205547,7 +206206,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Echo Incarnate",
 		"picture": "Sound_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -205636,7 +206295,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dawnrise",
 		"picture": "Dawn_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -205715,7 +206374,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sky Angler",
 		"picture": "Sky_Picker_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -205797,7 +206456,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Royal Rose",
 		"picture": "Rose_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -205879,7 +206538,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Joryl of Onyx Marble",
 		"picture": "Marble_Golem_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -205948,7 +206607,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lightning Spear",
 		"picture": "Cloud_Pike_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -206054,7 +206713,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Amphibious Spelunker",
 		"picture": "Shinning_Explorer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -206150,7 +206809,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Utopia Avian",
 		"picture": "Paradise_Bird_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -206232,7 +206891,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Anuramancer",
 		"picture": "Frog_Mage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -206305,7 +206964,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fearless Ballista",
 		"picture": "Reckless_Ballista_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -206389,7 +207048,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Galewing Tempest",
 		"picture": "Wind_Puffer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -206468,7 +207127,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kaliri the Paramount",
 		"picture": "Avian_Highborn_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -206551,7 +207210,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Imperial Skystriker",
 		"picture": "Avian_General_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -206638,7 +207297,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crescent Moon Sentry",
 		"picture": "Owl_Knight_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -206717,7 +207376,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bemola the Frost",
 		"picture": "Ice_Bird_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -206796,7 +207455,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Quack Arcanist",
 		"picture": "Avian_Scientist_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -206858,7 +207517,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boltfist Rex",
 		"picture": "Legendary_Lightning_Fist_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -206924,7 +207583,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cliffgazer Wyrm",
 		"picture": "Spike_Blade_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -206986,7 +207645,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Runeglow Dragon",
 		"picture": "Rune_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -207069,7 +207728,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Anshar, the Skybane",
 		"picture": "Airship_Stalker_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -207150,7 +207809,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hive Sentry",
 		"picture": "Hive_Guard_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -207216,7 +207875,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scarab Barbarian",
 		"picture": "MultiWeapon_Fat_Stack_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -207320,7 +207979,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bansquito",
 		"picture": "Stinger_Fist_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -207394,7 +208053,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aht-Aht Trekker",
 		"picture": "Longleg_Mountain_Nomad_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -207461,7 +208120,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heralidae Bastion",
 		"picture": "Mysterious_Wing_Cloak_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -207544,7 +208203,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hornsaber",
 		"picture": "Horn_Head_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -207640,7 +208299,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fray the Stoic",
 		"picture": "Void_Conqueror_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -207732,7 +208391,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blind Enlightened",
 		"picture": "Feather_Eyes_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -207830,7 +208489,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shell Buckler",
 		"picture": "Crustacean_Hell_Bringer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -207909,7 +208568,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Godfried Goldfyre",
 		"picture": "Beast_Slayer_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -207987,7 +208646,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Arith, Grand Justicar",
 		"picture": "Blind_Justice_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -208078,7 +208737,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sorath, the Frostedge",
 		"picture": "Ice_Head_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -208158,7 +208817,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Everstorm Ace",
 		"picture": "Lightning_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -208238,7 +208897,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Asariel the Wrath Engine",
 		"picture": "Cannon_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -208319,7 +208978,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cyclopnid Oreborn",
 		"picture": "Steel_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -208436,7 +209095,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Djinnflame Master",
 		"picture": "Blue_Flame_Fighter_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -208542,7 +209201,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Nimbus Brahzee",
 		"picture": "Giant_Cloud_Sheep_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -208604,7 +209263,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vindictive Memory",
 		"picture": "Mist_Stalker_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -208689,7 +209348,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Honor Bound",
 		"picture": "Winter_Wretch_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -208780,7 +209439,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dotora Shadow",
 		"picture": "Torsoless_Warrior_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -208854,7 +209513,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avenging Heir",
 		"picture": "Kimono_Ghost_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -208935,7 +209594,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Jester's Blades",
 		"picture": "Haunted_Arsenal_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -209009,7 +209668,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Apollyon the Ruin",
 		"picture": "Undead_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -209096,7 +209755,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fatal Betrayal",
 		"picture": "Demon_Skull_Goblin_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -209163,7 +209822,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gomblit Soothslayer",
 		"picture": "Astrological_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -209249,7 +209908,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reks' Diviner",
 		"picture": "Cleric_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -209350,7 +210009,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Armor Swindler",
 		"picture": "Knight_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -209416,7 +210075,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tundra Battlemaster",
 		"picture": "Tundra_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -209497,7 +210156,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gusty Newborn",
 		"picture": "Wind_Dragonling_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -209560,7 +210219,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Luminesce Scalelord",
 		"picture": "Prism_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -209668,7 +210327,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Overseer Silurigon",
 		"picture": "Catfish_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -209752,7 +210411,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Enclave Scalelord",
 		"picture": "Enclave_Guard_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -209813,7 +210472,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sierra Crusher",
 		"picture": "Hydra_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -209896,7 +210555,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skybound Alliance",
 		"picture": "Angel_and_Drakes_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -209985,7 +210644,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Croak Bomber",
 		"picture": "Hot_Air_Balloon_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -210059,7 +210718,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Genesis Augur",
 		"picture": "Frog_Wizard_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -210155,7 +210814,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Adored Sycophant",
 		"picture": "Frog_Casanova_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -210252,7 +210911,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Tribe Upriser",
 		"picture": "Double_Bola_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -210314,7 +210973,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mother of the Universe",
 		"picture": "Frog_Space_Mom_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -210434,7 +211093,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pisces Ascending",
 		"picture": "Flying_Fish_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -210515,7 +211174,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sea Summoner",
 		"picture": "Goldfish_Tamer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -210602,7 +211261,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Acuro, Sea King",
 		"picture": "Seafolk_Merfolk_Warlord_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -210691,7 +211350,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aided Beacon",
 		"picture": "Guardian_Dolphin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -210757,7 +211416,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aurora Shaver",
 		"picture": "Sky_Manta_Rays_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -210863,7 +211522,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tetraspout",
 		"picture": "Sky_Jellyfish_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -210961,7 +211620,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alectryon, Arc Regent",
 		"picture": "Stormcloud_Rooster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -211044,7 +211703,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brilliant Bennu",
 		"picture": "Guardian_Angel_Dove_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -211127,7 +211786,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cloudwing Deadeye",
 		"picture": "Bird_Cloud_Chaser_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -211207,7 +211866,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "King Rook",
 		"picture": "Crow_Knight_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -211283,7 +211942,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gallant Wingward",
 		"picture": "Wing_Shield_Avian_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -211363,7 +212022,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Origami Crane",
 		"picture": "Paper_Crane_Flock_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -211446,7 +212105,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Indomitable Justice",
 		"picture": "Justice_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -211524,7 +212183,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fulmination Chronicler",
 		"picture": "Fortune_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -211599,7 +212258,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Chalice Evangelist",
 		"picture": "Chalice_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -211673,7 +212332,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dyrnwyn's Burden",
 		"picture": "Sword_Spirit_Angel_Undead_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -211768,7 +212427,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Seraph of Stone Fall",
 		"picture": "Angel_Mountain_Cleaver_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -211871,7 +212530,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cauterizing Palm",
 		"picture": "Fire_Book_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -211948,7 +212607,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Murder King",
 		"picture": "Undead_Crow_Lord_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -212033,7 +212692,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow Trapper",
 		"picture": "Shadow_Ghost_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -212109,7 +212768,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sylph Slider",
 		"picture": "Wind_Ghost_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -212183,7 +212842,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Banshee Enflamed",
 		"picture": "Banshee_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -212260,7 +212919,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pernicious Canvas",
 		"picture": "Picture_Frame_Ghost_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -212340,7 +212999,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dynamo Elder",
 		"picture": "Lightning_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -212419,7 +213078,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torchrime Menace",
 		"picture": "Double_Headed_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -212524,7 +213183,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bound Gatekeeper",
 		"picture": "Chained_Gatekeeper_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -212608,7 +213267,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragon Fosterer",
 		"picture": "Bird_Adopted_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -212687,7 +213346,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelscale, Sky's Realm",
 		"picture": "Portable_City_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -212788,7 +213447,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gale Whirlwinder",
 		"picture": "Gusty_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -212856,7 +213515,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Magnetic Master",
 		"picture": "Magnet_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -212946,7 +213605,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ocotillo Ravager",
 		"picture": "Cactus_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -213030,7 +213689,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shatterstorm",
 		"picture": "Glass_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -213093,7 +213752,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lapis, Wavebreaker",
 		"picture": "Water_Wing_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -213161,7 +213820,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forgesoul Titanslayer",
 		"picture": "Metal_Golem_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -213253,7 +213912,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Abyss Rocva",
 		"picture": "Armored_Larva_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -213361,7 +214020,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Decorated Guard",
 		"picture": "Ladybug_Guard_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -213426,7 +214085,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steelhorn Beetle",
 		"picture": "Rhino_Beetle_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -213520,7 +214179,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Nimbochanneler",
 		"picture": "Cloud_Insect_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -213616,7 +214275,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Buzzblade Mk III",
 		"picture": "Steampunk_Scarab_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -213696,7 +214355,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cedric's Rocketsnail",
 		"picture": "Snail_Tank_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -213780,7 +214439,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sparkcaster",
 		"picture": "Goblin_Lightning_Master_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -213871,7 +214530,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gobsnout Ascender",
 		"picture": "Goblin_Heavenly_Crusader_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -213947,7 +214606,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lullmage Evoker",
 		"picture": "Goblin_Frog_Dark_Magic_Team_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -214025,7 +214684,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Piper of Gobsburg",
 		"picture": "Goblin_Bard_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -214126,7 +214785,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gribmalda of the Sky",
 		"picture": "Goblin_Bird_Tamer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -214214,7 +214873,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Flatfish Bulwark",
 		"picture": "Sky_Fish_Shield_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -214293,7 +214952,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brinespear Warfarer",
 		"picture": "Mecha_Mermaid_Seafolk_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -214406,7 +215065,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Brinebelly Bastion",
 		"picture": "Bubble_Belly_Fish_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -214515,7 +215174,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Mermaid Smuggler",
 		"picture": "Gypsy_Mermaid_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -214619,7 +215278,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Octothunder",
 		"picture": "Armored_Lightning_Kraken_Seafolk_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -214701,7 +215360,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Glaucus, Frozen Baron",
 		"picture": "Angel_Merman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -214780,7 +215439,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Silverslash Fencer",
 		"picture": "Fencing_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -214841,7 +215500,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tiltyard Ribboteer",
 		"picture": "Mech_Frog_Weaponmaster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -214941,7 +215600,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spellweaver Magus",
 		"picture": "Bookworm_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -215018,7 +215677,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wintertide Stormtender",
 		"picture": "Frog_Frost_Phoenix_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -215095,7 +215754,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vortex Fist",
 		"picture": "Vortex_Feather_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -215164,7 +215823,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tetsudo's Aegis",
 		"picture": "Tower_Shield_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -215259,7 +215918,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bulwark Bot",
 		"picture": "Spiked_Barrier_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -215354,7 +216013,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aloier, Reality Shaper",
 		"picture": "Mecha_Energy_Shield_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -215458,7 +216117,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bark Watchers",
 		"picture": "Watchdog_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -215522,7 +216181,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chromium Crusader",
 		"picture": "Mecha_Centaur_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -215603,7 +216262,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Electrumus, Night's Spear",
 		"picture": "Mecha_Angel_Starwarrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -215687,7 +216346,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hoarfrost Predator",
 		"picture": "Zombie_Ice_Flock_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -215750,7 +216409,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hierophant of Night",
 		"picture": "Undead_Bookmaster_Lich_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -215841,7 +216500,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lamia's Honor Guard",
 		"picture": "Zombie_Lamia_Shield_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -215936,7 +216595,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vengeful Specter",
 		"picture": "Vengeful_Ghost_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -216032,7 +216691,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dullahan Deathsearer",
 		"picture": "Headless_Horseman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -216099,7 +216758,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dross Reaver",
 		"picture": "Undead_Collector_Undead_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -216180,7 +216839,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frostshrieker",
 		"picture": "Harpy_Shrieker_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -216273,7 +216932,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnsword Elites",
 		"picture": "Avian_Angel_Sky_Assault_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -216354,7 +217013,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avatar of Cygnus",
 		"picture": "Cygnus_Swan_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -216432,7 +217091,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Raywing Eclipser",
 		"picture": "Avian_Ruins_Protector_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -216522,7 +217181,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Regal Thunderbird",
 		"picture": "Tornado_Bird_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -216602,7 +217261,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skadi, Snow Queen",
 		"picture": "Elemental_Snow_Umbrella_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -216702,7 +217361,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grimacing Comet",
 		"picture": "Starstorm_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -216795,7 +217454,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Volcanoroot",
 		"picture": "Fire_Tree_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -216872,7 +217531,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Himamanav's Essence",
 		"picture": "Elemental_Angel_Demon_Wind_Monkey_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -216953,7 +217612,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lunar Seles",
 		"picture": "Elemental_Moon_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -217032,7 +217691,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swordslayer Colossus",
 		"picture": "Angel_Sword_In_Stone_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -217126,7 +217785,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frosted Grimkite",
 		"picture": "Guardian_Angel_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -217204,7 +217863,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Priestess of Light",
 		"picture": "Priestess_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -217301,7 +217960,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Star Shooter",
 		"picture": "Star_Chaser_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -217379,7 +218038,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Movra, Dragon King",
 		"picture": "Dragon_Ruler_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -217481,7 +218140,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Armorscald Sieger",
 		"picture": "War_Armor_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -217559,7 +218218,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Rise Ace",
 		"picture": "Goblin_Plane_Engineer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -217648,7 +218307,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dubel-Flint Gumm",
 		"picture": "Goblin_Sage_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -217728,7 +218387,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Prima Donna Hula",
 		"picture": "Dancer_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -217809,7 +218468,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhynio Battlecrusher",
 		"picture": "Flying_Rhino_Beetle_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -217895,7 +218554,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gelidbeam Dualist",
 		"picture": "Beam_Blade_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -217960,7 +218619,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owlnaut Z-300",
 		"picture": "Mecha_Cyborg_Avian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -218042,7 +218701,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Milli-mecha",
 		"picture": "MechaMillipede_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -218133,7 +218792,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepcharge Herald",
 		"picture": "Seafolk_Jellyfish_Mermaid_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -218213,7 +218872,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sea's Sky Horde",
 		"picture": "Seafolk_Flying_Whale_Soldiers_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -218297,7 +218956,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shellscale Grappler",
 		"picture": "Seafolk_Shellfish_Monster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -218374,7 +219033,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Clyx, Army Breaker",
 		"picture": "Winged_Armor_Bug_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -218451,7 +219110,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cricket Griffin",
 		"picture": "Griffin_Insect_Mage_Avian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -218564,7 +219223,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alchebian Transmuter",
 		"picture": "Alchemist_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -218654,7 +219313,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Skymar Ace",
 		"picture": "Frog_Avian_Rider_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -218768,7 +219427,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fra'mu, the Warder",
 		"picture": "Frog_Monk_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -218846,7 +219505,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnfire Paladin",
 		"picture": "Frog_Arcane_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -218923,7 +219582,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Warhawk Avienda",
 		"picture": "War_Hawk_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -219004,7 +219663,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hazrat Sumayaka",
 		"picture": "AvianSongstress_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -219097,7 +219756,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noya of Bitter Winds",
 		"picture": "Avian_Snow_Sphinx_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -219200,7 +219859,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flocking Fowlmaster",
 		"picture": "Avian_Goblin_Birdmaster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -219266,7 +219925,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dying Light",
 		"picture": "Lantern_Undead_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -219344,7 +220003,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Peakchill Vanquisher",
 		"picture": "IceElemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -219422,7 +220081,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thundertail Cirrus",
 		"picture": "Cloud_Fox_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -219512,7 +220171,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mountking Defender",
 		"picture": "Undead_Skeleton_Armor_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -219602,7 +220261,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bonebite Highjacker",
 		"picture": "Undead_Mecha_Skeleton_Dog_Mecha_Master_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -219700,7 +220359,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goldshield Firereader",
 		"picture": "Undead_Lichlord_Scroll_Enchanter_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -219781,7 +220440,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hallowed Drakon",
 		"picture": "Undead_Dragon_Ghost_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -219872,7 +220531,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Azazreal, Harbinger",
 		"picture": "Dragon_Angel_Fire_Feathered_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -219950,7 +220609,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jyrn of Shattering Snow",
 		"picture": "Dragon_Wild_Snow_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -220039,7 +220698,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Null Marksmech",
 		"picture": "Mecha_Archer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -220129,7 +220788,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Agile Wallbot",
 		"picture": "Mecha_Shielding_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -220209,7 +220868,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frozen Coreheart",
 		"picture": "Mecha_Frosty_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -220289,7 +220948,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Valiant Automaburner",
 		"picture": "Mecha_Undead_Skeleton_Mecha_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -220379,7 +221038,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Syl, Battle Incarnate",
 		"picture": "Angel_of_Battle_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -220457,7 +221116,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Baaht, Inferno Forger",
 		"picture": "Elemental_Angel_Blackmith_Living_Flame_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -220537,6 +221196,167 @@ var CARDS = {
 			}
 		}
 	},
+	"25225": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1550768400000",
+		"id": "25225",
+		"maxLevel": 6,
+		"name": "Centurion Spikesteel",
+		"picture": "Goblin_Spiked_Shell_Armor_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 39,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"25226": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1550768400000",
+		"id": "25226",
+		"maxLevel": 6,
+		"name": "Magitech Marauder",
+		"picture": "Goblin_War_Toad_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "burn",
+				"x": 4
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -220546,7 +221366,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Furnace Breaker",
 		"picture": "Fire_Furnace_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -220648,7 +221468,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Orobas Unleashed",
 		"picture": "Balrog_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -220734,7 +221554,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spirit of Insanity",
 		"picture": "Chaos_Spirit_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -220822,7 +221642,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Obsidian Knight",
 		"picture": "Black_Knight_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -220901,7 +221721,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Branding Engine",
 		"picture": "Branding_Metal_Construct_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -220979,7 +221799,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lantern Gloomkin",
 		"picture": "Burning_Golem_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -221079,7 +221899,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Anarchy Golem",
 		"picture": "Chaos_Golem_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -221138,7 +221958,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Goblin Gang",
 		"picture": "Goblin_Gang_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -221186,7 +222006,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Thousand Arm Hellion",
 		"picture": "Thousand_Arm_Demon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -221262,7 +222082,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ravaging Dragon",
 		"picture": "Siphon_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -221338,7 +222158,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cliffpass Champion",
 		"picture": "Mountainpass_Defender_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -221399,7 +222219,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Firebomb Spirit",
 		"picture": "Bomb_Spirit_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -221471,7 +222291,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Scorching Drake",
 		"picture": "Ember_Drake_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -221527,7 +222347,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rust Titan",
 		"picture": "Rust_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -221624,7 +222444,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mercenary Siegefist",
 		"picture": "Armored_Ogre_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -221717,7 +222537,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Acid Reaver",
 		"picture": "Acid_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -221801,7 +222621,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Boneclaw Giant",
 		"picture": "Skeleton_Giant_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -221891,7 +222711,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Tar Pit Swallower",
 		"picture": "Tar_Elemental_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -221942,7 +222762,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Underwater Clobberer",
 		"picture": "Legendary_Chaos_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -222031,7 +222851,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Canopy Terror",
 		"picture": "Canopy_Horror_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -222106,7 +222926,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Croak Impaler",
 		"picture": "Spike_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -222193,7 +223013,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swamp Ogre",
 		"picture": "Marsh_Ogre_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -222286,7 +223106,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Hypno Caster",
 		"picture": "Hypnofrog_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -222334,7 +223154,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vicious Broodmother",
 		"picture": "Broodmother_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -222413,7 +223233,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ruination Dragon",
 		"picture": "Ruination_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -222495,7 +223315,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dragon Warlord",
 		"picture": "Dragon_Warlord_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -222582,7 +223402,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crimsonfang",
 		"picture": "Smoke_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -222671,7 +223491,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frigela, the Absolute",
 		"picture": "Ice_Witch_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -222747,7 +223567,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vast Brahmet",
 		"picture": "Multi_Armed_Beast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -222827,7 +223647,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spinehead Huntress",
 		"picture": "Spinehead_Undead_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -222902,7 +223722,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noveria Abomination",
 		"picture": "Ice_Yeti_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -222980,7 +223800,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Iceblood Rogue",
 		"picture": "Snow_Assassin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -223053,7 +223873,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "King Mumohotep",
 		"picture": "Giant_Mummy_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -223134,7 +223954,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Captain Firebeard",
 		"picture": "Lost_Captain_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -223214,7 +224034,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Death Rattle Viper",
 		"picture": "Snake_Skeleton_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -223288,7 +224108,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Demos, Wrathhammer",
 		"picture": "Devil_Vanguard_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -223368,7 +224188,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deathcursed Ogre",
 		"picture": "Void_Ogre_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -223448,7 +224268,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Keeper of the Dead",
 		"picture": "Keeper_Of_The_Dead_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -223544,7 +224364,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hemlock Fade",
 		"picture": "Fat_Belly_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -223617,7 +224437,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Auroch the Wicked",
 		"picture": "Flying_Behemoth_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -223694,7 +224514,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Devouring Cutlass",
 		"picture": "Fire_Sword_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -223770,7 +224590,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Death Reaper",
 		"picture": "Angel_Of_Death_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -223849,7 +224669,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadow of Storms",
 		"picture": "Storm_Shadow_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -223939,7 +224759,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandsunder",
 		"picture": "Sandstorm_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -224024,7 +224844,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Firestomper",
 		"picture": "Fire_Walker_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -224099,7 +224919,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shadowflame",
 		"picture": "Dark_Fire_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -224178,7 +224998,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Celerity Burst",
 		"picture": "Swiftness_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -224240,7 +225060,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Withering Grip",
 		"picture": "Death_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -224322,7 +225142,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bulwraag the Hungry",
 		"picture": "Dino_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -224403,7 +225223,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Unhinged Explosioneer",
 		"picture": "Goblin_Explosioneer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -224470,7 +225290,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wortwog Torturer",
 		"picture": "Frog_Executioner_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -224572,7 +225392,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Treeblade Assassin",
 		"picture": "Camouflaged_Assassin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -224658,7 +225478,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fuming Horror",
 		"picture": "Fuming_Horror_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -224738,7 +225558,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight Gorger",
 		"picture": "Avian_Devourer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -224815,7 +225635,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shadowdagger",
 		"picture": "Magpie_Rogue_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -224876,7 +225696,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Phoenix Reborn",
 		"picture": "Pheonix_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -224972,7 +225792,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Potoo Mindwarper",
 		"picture": "Potoo_Hypnotist_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -225048,7 +225868,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Beambeetle",
 		"picture": "Laser_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -225139,7 +225959,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tarragon Cleavetail",
 		"picture": "Scythe_Tail_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -225222,7 +226042,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Violetfire Besieger",
 		"picture": "Purple_Fire_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -225303,7 +226123,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Incensed Pudgytusk",
 		"picture": "Spear_Face_Pug_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -225380,7 +226200,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Milligon",
 		"picture": "Centipede_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -225457,7 +226277,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Abzu, the Seabane",
 		"picture": "Ship_Destroyer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -225538,7 +226358,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blazetail Dragon",
 		"picture": "Fire_Tip_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -225611,7 +226431,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dreaded Quake",
 		"picture": "Fat_Fist_Brute_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -225692,7 +226512,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Infernose",
 		"picture": "Fire_Face_Bug_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -225772,7 +226592,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Psychosis Beetle",
 		"picture": "Telekinetic_Bug_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -225847,7 +226667,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gurgitater Grublord",
 		"picture": "Legendary_Acid_Spitter_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -225928,7 +226748,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Swaddler Larva",
 		"picture": "Face_Eatter_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -226024,7 +226844,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arachnolos",
 		"picture": "Protective_Spider_Hybrid_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -226099,7 +226919,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Enraged Petrifier",
 		"picture": "Claw_Hand_Demon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -226176,7 +226996,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Revealed Heraid",
 		"picture": "Masked_Seductress_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -226257,7 +227077,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bone Specialist",
 		"picture": "Boomerang_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -226321,7 +227141,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Obsidian, Death's Wing",
 		"picture": "Legendary_Midnight_Demon_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -226411,7 +227231,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celestial Channeler",
 		"picture": "Uncanny_Valley_Woman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -226494,7 +227314,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heaving Mire",
 		"picture": "Mud_Slinger_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -226570,7 +227390,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Magmatic Blast",
 		"picture": "Eruption_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -226661,7 +227481,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Enigma Solutionist",
 		"picture": "Enigma_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -226739,7 +227559,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Radiation Monstrosity",
 		"picture": "Radium_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -226851,7 +227671,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Erupting Smoggler",
 		"picture": "Volcanic_Ash_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -226932,7 +227752,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Refined Titanirous",
 		"picture": "Titanium_Snake_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -227016,7 +227836,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Dormant Apparition",
 		"picture": "Wall_Creeper_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -227078,7 +227898,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rugarth, the Indomitable",
 		"picture": "Defeated_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -227156,7 +227976,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Lockejaw Trapper",
 		"picture": "Iron_Jaw_Skeleton_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -227245,7 +228065,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crypt Nemesis",
 		"picture": "Skeleton_Dreadlord_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -227322,7 +228142,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Released Tortured",
 		"picture": "Tomb_Of_The_Damned_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -227406,7 +228226,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reaping Obliterator",
 		"picture": "Chain_Fiend_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -227503,7 +228323,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Doxum's Mechslaver",
 		"picture": "Mechanical_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -227586,7 +228406,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hotheaded Belcher",
 		"picture": "Fire_Eating_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -227660,7 +228480,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crackshot Marauder",
 		"picture": "Wild_West_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -227734,7 +228554,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bone Contortionist",
 		"picture": "Necromancer_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -227834,7 +228654,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Miasma Charger",
 		"picture": "Hooded_Flame_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -227912,7 +228732,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noz Steelhand",
 		"picture": "Bionic_Arm_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -227993,7 +228813,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goballista",
 		"picture": "Catapult_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -228070,7 +228890,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gearchromed Dragon",
 		"picture": "Steampunk_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -228169,7 +228989,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Desert King",
 		"picture": "Cobra_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -228256,7 +229076,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Trove Dragon",
 		"picture": "Treasure_Trove_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -228332,7 +229152,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sheltering Fire",
 		"picture": "Dragon_Tamer_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -228410,7 +229230,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Clashing Forces",
 		"picture": "Yin_and_Yang_Dragons_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -228477,7 +229297,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tiamat, Endbringer",
 		"picture": "Demon_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -228571,7 +229391,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Subterranean Dowager",
 		"picture": "Sewer_Frog_Monster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -228665,7 +229485,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ribbithold Sentinels",
 		"picture": "Grinning_Weapon_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -228744,7 +229564,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ribbitaksu the Shadow",
 		"picture": "Ninja_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -228821,7 +229641,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gloom Lurker",
 		"picture": "Shadow_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -228896,7 +229716,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wasteland Pulverizer",
 		"picture": "Four_Armed_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -228976,7 +229796,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bailong the Treacherous",
 		"picture": "Seafolk_Chinese_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -229057,7 +229877,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "King Lava Crab",
 		"picture": "Big_Lava_Crab_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -229140,7 +229960,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bloodhook Angler",
 		"picture": "Seafolk_Merfolk_Fish_Hook_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -229216,7 +230036,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Captain Chomp",
 		"picture": "Shark_Pirate_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -229308,7 +230128,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aqua Mantis",
 		"picture": "Crab_Person_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -229384,7 +230204,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aspects of the Embers",
 		"picture": "Goblin_Avian_Phoenix_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -229476,7 +230296,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Embersage Hawk",
 		"picture": "Hawk_Fire_Sage_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -229553,7 +230373,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Trojan Raven",
 		"picture": "Avian_Scarecrow_Crows_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -229636,7 +230456,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazing Sentinel",
 		"picture": "Horus_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -229713,7 +230533,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shifting Spelltalon",
 		"picture": "Bird_Of_Death_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -229776,7 +230596,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Archer of Two Worlds",
 		"picture": "Demon_Archer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -229851,7 +230671,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Evoking Ophanim",
 		"picture": "Nightmare_Demon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -229928,7 +230748,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pyropop Demon",
 		"picture": "Demon_Tornado_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -230006,7 +230826,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Nefarious Muse",
 		"picture": "Angel_Artist_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -230081,7 +230901,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oni Shogun",
 		"picture": "Samurai_Soul_Eater_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -230148,7 +230968,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Charon of Abyss",
 		"picture": "Underworld_Ferryman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -230228,7 +231048,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Relentless Captain",
 		"picture": "Lantern_Undead_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -230317,7 +231137,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deathborn Destrier",
 		"picture": "Vampire_War_Horse_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -230391,7 +231211,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Condemnation Vizier",
 		"picture": "Lichlord_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -230484,7 +231304,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deadly Fire",
 		"picture": "Gunslinger_Skeleton_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -230558,7 +231378,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Coldsnap Terrordactyl",
 		"picture": "Ghost_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -230640,7 +231460,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hexapus Punisher",
 		"picture": "Katana_Crawler_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -230723,7 +231543,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Grimhunt Brood",
 		"picture": "Brimstone_Hunting_Dragons_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -230790,7 +231610,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Scorgon Ambusher",
 		"picture": "Poison_Tail_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -230876,7 +231696,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Immolation Wyvern",
 		"picture": "Spire_Devourer_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -230957,7 +231777,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Winged Skewerer",
 		"picture": "Claw_Wing_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -231031,7 +231851,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deceitful Scalelord",
 		"picture": "Dual_Personality_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -231110,7 +231930,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cress and Cindertooth",
 		"picture": "Choas_Frog_Guardian_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -231194,7 +232014,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Savage Hearth",
 		"picture": "Forest_Fire_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -231285,7 +232105,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ballisticshell",
 		"picture": "Turtle_Volcano_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -231362,7 +232182,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cosmic Anomaly",
 		"picture": "Cosmic_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -231442,7 +232262,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torrential Bile",
 		"picture": "Acid_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -231520,7 +232340,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Banebite Therix",
 		"picture": "Poison_Tail_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -231614,7 +232434,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Desert Wurm",
 		"picture": "Sand_Wurm_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -231689,7 +232509,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aspectcraft Scarab",
 		"picture": "Face_Stealer_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -231770,7 +232590,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Overlord Zabzod",
 		"picture": "Goblin_Bug_Overlord_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -231858,7 +232678,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ba Dum Boom",
 		"picture": "Goblin_War_Drummer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -231955,7 +232775,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Explosive Entry",
 		"picture": "Firecracker_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -232031,7 +232851,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Crossbomb Raider",
 		"picture": "Crossbow_Bomb_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -232107,7 +232927,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Goblin Cleaver",
 		"picture": "Goblin_Butcherer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -232200,7 +233020,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dragonfly Bomber",
 		"picture": "Dragonfly_Goblin_Bomber_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -232278,7 +233098,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandspirit Breaker",
 		"picture": "Goblin_Sand_Witch_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -232359,7 +233179,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Admiral Narwhal",
 		"picture": "Goblin_Fish_Ferry_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -232440,7 +233260,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pufferspine Exploder",
 		"picture": "Porcupine_Fish_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -232531,7 +233351,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fathom Dino",
 		"picture": "Dinosaur_Fish_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -232605,7 +233425,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Star-swallow Cetus",
 		"picture": "Orca_Planet_Eater_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -232704,7 +233524,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bladesear Firebrand",
 		"picture": "Frog_Enchanter_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -232781,7 +233601,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ribbit Toaster",
 		"picture": "Mechanical_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -232861,7 +233681,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clever Egg Thief",
 		"picture": "Frog_Egg_Stealer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -232947,7 +233767,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jorang Spitfire",
 		"picture": "Fire_Breather_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -233028,7 +233848,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Nightblade Huntress",
 		"picture": "Mecha_Huntress_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -233124,7 +233944,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Firebeam Orbos",
 		"picture": "Drone_Orb_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -233188,7 +234008,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Solder Sunderer",
 		"picture": "Mecha_Bull_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -233265,7 +234085,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ancient Steamrager",
 		"picture": "Ancient_Goblin_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -233366,7 +234186,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Torero Terror",
 		"picture": "Skull_Mecha_Undead_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -233432,7 +234252,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sanguine Knight",
 		"picture": "Blood_Knight_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -233525,7 +234345,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Abomination Suturer",
 		"picture": "Undead_Stitched_Undead_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -233603,7 +234423,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Skelepede Slitherer",
 		"picture": "Skeleton_Millipede_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -233678,7 +234498,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Warfield Corpsedancer",
 		"picture": "Goblin_Undead_Skeleton_Puppetmaster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -233773,7 +234593,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Macabre Mechanation",
 		"picture": "Skeleton_Mecha_Pilot_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -233854,7 +234674,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chainwrath Spirit",
 		"picture": "Chain_Wraith_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -233943,7 +234763,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deathrider",
 		"picture": "Frog_Wraith_Beastmaster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -234025,7 +234845,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ostromech Shredclaw",
 		"picture": "Avian_Mecha_Desert_Ostrich_Robo_Rider_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234118,7 +234938,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kiki Kyutoryu",
 		"picture": "Avian_Claw_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234199,7 +235019,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spikesteel Plover",
 		"picture": "Spiked_Orb_Avian_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -234277,7 +235097,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxophilite Warder",
 		"picture": "Avian_Spellcasting_Archer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234357,7 +235177,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flareye Owl",
 		"picture": "Undead_Owl_Mystic_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -234451,7 +235271,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxic Miasma",
 		"picture": "Elemental_Smoke_Demon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234531,7 +235351,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Searsteel Commander",
 		"picture": "Fire_Elemental_Goblin_Team_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234633,7 +235453,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Diabolic Portalmaster",
 		"picture": "Angel_Demon_Summoner_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234719,7 +235539,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bitumen Scorcher",
 		"picture": "Fire_Elemental_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234800,7 +235620,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solstice Doumu",
 		"picture": "Sun_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -234881,7 +235701,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shrouded Revenapod",
 		"picture": "Angel_Demon_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -234959,7 +235779,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Terrorlord Xerthis",
 		"picture": "Mecha_Angel_Arm_Demon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -235044,7 +235864,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ezuth the Exiled",
 		"picture": "Angel_Demon_Cube_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -235125,7 +235945,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knowledge Scorcher",
 		"picture": "Library_Sand_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -235205,7 +236025,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dominating Hellwing",
 		"picture": "Hell_Dragon_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -235305,7 +236125,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Heilong the Enraged",
 		"picture": "Tower_Eater_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -235400,7 +236220,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Millidrake Magus",
 		"picture": "Centipede_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -235494,7 +236314,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xerkahn's Flagship",
 		"picture": "Punk_Lady_Goblin_Pirate_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -235574,7 +236394,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dune Bandit",
 		"picture": "Goblin_Dune_Runner_Bandit_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -235651,7 +236471,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twinblast XXL",
 		"picture": "Ballista_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -235754,7 +236574,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Beacon Elytrite",
 		"picture": "Guardian_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -235833,7 +236653,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scorpio Striker",
 		"picture": "Scorpion_Tail_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -235931,7 +236751,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Caldera Pathfinder",
 		"picture": "Lava_Skating_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -235997,7 +236817,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Boiling Magmurchin",
 		"picture": "Seafolk_Sea_Urchin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -236091,7 +236911,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stalking Raptrys",
 		"picture": "FacelessAvian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -236171,7 +236991,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Monarch Incinerator",
 		"picture": "Insect_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -236261,7 +237081,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rattleclank Empress",
 		"picture": "Seafolk_Mecha_Mermaid_Mistress_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -236339,7 +237159,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solblade Darknight",
 		"picture": "Dark_Knight_Sword_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -236417,7 +237237,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Embered Death",
 		"picture": "Darkflame_Avian_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -236520,7 +237340,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blasteye Rampart",
 		"picture": "Flaming_Frog_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -236601,7 +237421,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wildblaze",
 		"picture": "Wildfire_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -236680,7 +237500,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knight of Nox",
 		"picture": "Darkness_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -236764,7 +237584,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Chi-Strike Anubi",
 		"picture": "Fist_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -236873,7 +237693,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rattleroar Monstrosity",
 		"picture": "Undead_Zombie_Chimera_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -236963,7 +237783,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bloodboil Cursemage",
 		"picture": "Undead_Insect_Cauldron_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -237058,7 +237878,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sandlair Betrayer",
 		"picture": "LChaosLochnessDragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -237171,7 +237991,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Obsidian Hammer",
 		"picture": "Darksteel_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -237247,7 +238067,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wyribbit Ashtongue",
 		"picture": "Frog_Dragon_Frog_Dragonling_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -237337,7 +238157,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blazing Blade",
 		"picture": "Burning_DarkFlame_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -237429,7 +238249,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hanabi Ravager",
 		"picture": "Fireworks_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -237525,7 +238345,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steel Ninjutsu",
 		"picture": "Mecha_Ninja_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -237602,7 +238422,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stonesoul Devil",
 		"picture": "Goblin_Angel_Gargoyle_Goblin_Demon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -237687,7 +238507,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Trampling Deathblade",
 		"picture": "Mecha_Angel_Demonic_Horse_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -237783,7 +238603,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sabriel the Punisher",
 		"picture": "Fire_Wing_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -237874,7 +238694,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dark Gilgamesh",
 		"picture": "Corrupt_Arm_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -237964,7 +238784,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dark Sage Tagati",
 		"picture": "Goblin_Dark_Wizard_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -238045,6 +238865,101 @@ var CARDS = {
 			}
 		}
 	},
+	"26218": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1550768400000",
+		"id": "26218",
+		"maxLevel": 6,
+		"name": "Gliding Firemaster",
+		"picture": "Goblin_Mecha_Glider_Goblin_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"skill": []
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"26220": {
 		"attack": 8,
 		"card_type": "2",
@@ -238055,7 +238970,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gobtoh Ascended",
 		"picture": "Angel_Goblin_Demon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -238150,7 +239065,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Desert Blastabond",
 		"picture": "Goblin_Desert_Bandit_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -238239,7 +239154,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Treant Dictate",
 		"picture": "Treant_King_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -238317,7 +239232,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hekaton, Sky Scraper",
 		"picture": "Colossal_Beast_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -238414,7 +239329,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cerberus, the Gate",
 		"picture": "Cerberus_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -238516,7 +239431,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kraken of Fears",
 		"picture": "Kraken_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -238595,7 +239510,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Coldbite Golem",
 		"picture": "Ice_Golem_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -238684,7 +239599,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sage Tsunamari",
 		"picture": "Water_Manipulator_C",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -238744,7 +239659,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Treefist Sapling",
 		"picture": "Treant_Sapling_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -238790,7 +239705,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Sea Serpent",
 		"picture": "Water_Serpent_C",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -238838,7 +239753,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mountain Dragon",
 		"picture": "Rock_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -238951,7 +239866,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rhino Savage",
 		"picture": "Rhino_Beast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -239037,7 +239952,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Deadlyhive Dragon",
 		"picture": "Honeycomb_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -239125,7 +240040,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Wolf Queen",
 		"picture": "Wolf_Girl_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -239183,7 +240098,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Lifeblood Drake",
 		"picture": "Life_Drake_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -239242,7 +240157,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avatar of Gold",
 		"picture": "Gold_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -239343,7 +240258,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Genbu, the Stronghold",
 		"picture": "Turtle_Island_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -239443,7 +240358,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Swamp Aberration",
 		"picture": "Swamp_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -239533,7 +240448,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pondfist Shaman",
 		"picture": "Frog_Shaman_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -239643,7 +240558,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Coral Lurker",
 		"picture": "Coral_Elemental_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -239713,7 +240628,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Supreme Frog Emperor",
 		"picture": "Emperor_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -239833,7 +240748,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Queen of the Swamp",
 		"picture": "Lady_of_the_Swamp_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -239914,7 +240829,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Huntress Frog",
 		"picture": "Huntress_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -239998,7 +240913,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Darkness Elemental",
 		"picture": "Shadow_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -240090,7 +241005,7 @@ var CARDS = {
 		"maxLevel": 4,
 		"name": "Beetle Enchanter",
 		"picture": "Beetle_Frog_B",
-		"rarity": "2",
+		"rarity": 2,
 		"set": "2000",
 		"skill": [
 			{
@@ -240141,7 +241056,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zolmosh the Sledge",
 		"picture": "Earthquake_Hammer_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -240238,7 +241153,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Grandmane Dragon",
 		"picture": "Wooly_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -240317,7 +241232,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Webtalon Dragon",
 		"picture": "Water_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -240402,7 +241317,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hulking Frostjaw",
 		"picture": "Ice_Giant_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -240492,7 +241407,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kitsune Seishin",
 		"picture": "Mystical_Fox_Spirit_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -240586,7 +241501,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Frozen Torrent",
 		"picture": "Frozen_Tide_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -240669,7 +241584,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Blutorch Griffin",
 		"picture": "Owl_Leopard_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -240759,7 +241674,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Arctic Warrior",
 		"picture": "Penguin_Warrior_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -240815,7 +241730,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Saberjaw Magus",
 		"picture": "Saber_Tooth_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -240901,7 +241816,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sylvan Nidhogg",
 		"picture": "Elk_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -240989,7 +241904,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Copsebond Skull",
 		"picture": "Treebound_Skeleton_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -241088,7 +242003,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Contagion Elk",
 		"picture": "Spore_Infected_Elk_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -241166,7 +242081,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Carrion King",
 		"picture": "Undead_Tiger_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -241228,7 +242143,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deepwood Zombie",
 		"picture": "Woodland_Ranger_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -241309,7 +242224,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Noxious Bane",
 		"picture": "Undead_Hornedbeast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -241385,7 +242300,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sun King",
 		"picture": "Lion_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -241476,7 +242391,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Winged Colossus",
 		"picture": "Gentle_Giant_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -241572,7 +242487,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Warden of the Forest",
 		"picture": "Forest_Guardian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -241642,7 +242557,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Savage Angel",
 		"picture": "Feral_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -241719,7 +242634,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scurvy Leaper",
 		"picture": "Frog_Pirates_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -241833,7 +242748,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Anima, the Last",
 		"picture": "Life_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -241919,7 +242834,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lord of the River",
 		"picture": "River_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -242018,7 +242933,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Sakura Blossom",
 		"picture": "Sakura_Petal_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -242097,7 +243012,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Briarblight",
 		"picture": "Root_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -242176,7 +243091,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Shaman of the Claw",
 		"picture": "Spirit_Shaman_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -242249,7 +243164,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mireskull Widow",
 		"picture": "Spooky_Spider_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -242342,7 +243257,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Reboundtoad",
 		"picture": "Steam_Roller_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -242422,7 +243337,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Krieg, Umberwulve Slayer",
 		"picture": "Giant_Sword_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -242536,7 +243451,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stingblade Rider",
 		"picture": "Big_And_Little_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -242625,7 +243540,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toad the Devourer",
 		"picture": "Frog_Devourer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -242715,7 +243630,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Stungtongue Eater",
 		"picture": "Insect_Death_Bringer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -242795,7 +243710,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "The Maelstrom",
 		"picture": "Sea_Leviathan_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -242875,7 +243790,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Frenzied Strider",
 		"picture": "Grass_Feather_Avian_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -242954,7 +243869,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hasty Trailblazer",
 		"picture": "Speed_Runner_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -243038,7 +243953,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bill Basher",
 		"picture": "Big_Bill_Bird_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -243113,7 +244028,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Steppe Predator",
 		"picture": "Avian_Monstrosity_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -243198,7 +244113,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Knotsage Dragon",
 		"picture": "Wood_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -243304,7 +244219,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shenami the Eternal",
 		"picture": "Shenami_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -243374,7 +244289,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cragskin Dragon",
 		"picture": "Frenzied_Rock_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -243471,7 +244386,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Brine Devourer",
 		"picture": "Epic_Water_Steed_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -243546,7 +244461,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Poisac Prime",
 		"picture": "Poison_Sac_Back_Bug_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -243641,7 +244556,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Opalescent Willowfly",
 		"picture": "Heal_Wing_Butterfly_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -243724,7 +244639,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Furious Swarm",
 		"picture": "Angry_Hive_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -243798,7 +244713,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Unicoral",
 		"picture": "Sea_Horse_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -243861,7 +244776,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shadow Mantis",
 		"picture": "Snake_Bug_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -243941,7 +244856,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Evenfall Allurephid",
 		"picture": "Leaf_Scorpion_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -244022,7 +244937,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Stoneblade Archangel",
 		"picture": "Stone_Forger_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -244109,7 +245024,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Howling Menace",
 		"picture": "Flying_Hyena_Pack_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -244186,7 +245101,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Emperor Gorilleus",
 		"picture": "Guardian_Angel_Gorilla_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -244272,7 +245187,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Pride of Murabi",
 		"picture": "King_Lion_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -244381,7 +245296,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Heralded Ripper",
 		"picture": "Skyhaven_Traitor_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -244458,7 +245373,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sijou, Sun Embraced",
 		"picture": "Leaf_Skin_Fox_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -244552,7 +245467,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Diamode Illuminated",
 		"picture": "Geode_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -244630,7 +245545,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Avalanche Behemoth",
 		"picture": "Snow_Tiger_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -244726,7 +245641,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Crystallum Roused",
 		"picture": "Crystal_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -244820,7 +245735,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Saprolite Parasite",
 		"picture": "Seedling_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -244896,7 +245811,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Supernova Carina",
 		"picture": "Star_Elemental_Beast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -244990,7 +245905,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Spornacle Fumer",
 		"picture": "Fungus_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -245069,7 +245984,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Llinella, Wave's Caller",
 		"picture": "Water_Archer_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -245153,7 +246068,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Thicket Umbras",
 		"picture": "Moss_Spirits_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -245235,7 +246150,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sludge Despoiler",
 		"picture": "Bone_Eel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -245318,7 +246233,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Inescapable Witchwood",
 		"picture": "Haunted_Forest_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -245403,7 +246318,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Moonlit Pack",
 		"picture": "Undead_Rat_Dog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -245480,7 +246395,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Scourge of Elaria",
 		"picture": "Infested_Giant_Ant_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -245561,7 +246476,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Fanatic Goblites",
 		"picture": "Mini_Goblin_The_Giant_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -245628,7 +246543,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Jubjub, Pack Alpha",
 		"picture": "Monster_Tamer_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -245709,7 +246624,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Elder Witch Doctor",
 		"picture": "Shaman_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -245810,7 +246725,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Insistent Prospector",
 		"picture": "Miner_Goblin_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -245891,7 +246806,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Coast Plunderer",
 		"picture": "Seafolk_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -245985,7 +246900,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sir Frogelot",
 		"picture": "Frog_Riding_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -246086,7 +247001,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pollen Drakes",
 		"picture": "Butterfly_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -246160,7 +247075,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Petrifying Basilisk",
 		"picture": "Basilisk_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -246257,7 +247172,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Springdew Talonsaur",
 		"picture": "Forest_Spring_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -246335,7 +247250,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vala, World Serpent",
 		"picture": "Mountain_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -246412,7 +247327,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sulfuric Toadbog",
 		"picture": "Corrosive_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -246496,7 +247411,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Quagmire Survivalist",
 		"picture": "Tribal_Spear_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -246569,7 +247484,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Toadal Hijinks",
 		"picture": "Totem_Frogs_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -246661,7 +247576,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tempest Caller",
 		"picture": "Ice_Caster_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -246738,7 +247653,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shrieker Rivals",
 		"picture": "Frog_Avian_Sonic_Attackers_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -246835,7 +247750,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Croaker's Prophet",
 		"picture": "Egyptian_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -246925,7 +247840,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hydromancer",
 		"picture": "Water_Bender_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -247002,7 +247917,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ribbitor of the Deep",
 		"picture": "Frog_With_Fins_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -247098,7 +248013,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Charybdis of Whirlpools",
 		"picture": "Whirlpool_Monster_Charybdis_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -247188,7 +248103,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Octhos, City Swallower",
 		"picture": "Octopus_Legend_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -247273,7 +248188,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Klubber Krab",
 		"picture": "Yeti_Crab_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -247348,7 +248263,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Quetee Que",
 		"picture": "Adorable_Jellyfish_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -247428,7 +248343,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Kindled Clownder",
 		"picture": "Clown_Fish_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -247515,7 +248430,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Contagion Glider",
 		"picture": "Avian_Elemental_Avian_Specter_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -247593,7 +248508,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Aurai, the Tempest",
 		"picture": "Eagle_Shipeater_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -247673,7 +248588,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fountain Mesmerizer",
 		"picture": "Peacock_Youth_Fountain_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -247753,7 +248668,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Aerial Vengeance",
 		"picture": "Fuzzball_Birds_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -247827,7 +248742,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Worshipped Simulacrum",
 		"picture": "Garuda_Statue_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -247910,7 +248825,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Airshield Battalion",
 		"picture": "Birds_And_The_Bees_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -247992,7 +248907,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Hostile Hexhound",
 		"picture": "Wolf_Demon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -248069,7 +248984,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rael, Skyhaven Titan",
 		"picture": "Angel_Titan_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -248185,7 +249100,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Slashfoot Wolper",
 		"picture": "Rabbit_Angel_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -248261,7 +249176,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bunnpaa Overwatch",
 		"picture": "Boar_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -248362,7 +249277,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Liliane's Benediction",
 		"picture": "Angelic_Frog_Pollen_Collector_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -248431,7 +249346,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Varachnis Charmer",
 		"picture": "Vampire_Spider_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -248511,7 +249426,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Satyr Runerunner",
 		"picture": "Satyr_Zombie_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -248600,7 +249515,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Soul Croaker",
 		"picture": "Undead_Tribal_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -248685,7 +249600,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Immortal Appetite",
 		"picture": "Zombie_Giant_Beast_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -248764,7 +249679,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Spectral Guardian",
 		"picture": "Totem_Spirit_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -248843,7 +249758,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cleaverstorm Hunter",
 		"picture": "Zombie_In_Sheeps_Clothing_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -248941,7 +249856,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Basilclaw Swarm",
 		"picture": "Egg_Protector_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -249044,7 +249959,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Denizen of the World",
 		"picture": "Moss_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -249135,7 +250050,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Ardent Snapjaw",
 		"picture": "Candyland_Dragon_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -249213,7 +250128,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fluttering Scourge",
 		"picture": "Dragonfly_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -249308,7 +250223,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Xovrus, Obliterator",
 		"picture": "Undead_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -249395,7 +250310,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bastion Preserver",
 		"picture": "Stone_City_Dragon_Guard_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -249477,7 +250392,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Light of the Forest",
 		"picture": "Forest_Light_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -249563,7 +250478,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Prismarain",
 		"picture": "Rainbow_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -249657,7 +250572,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Cruel Pollination",
 		"picture": "Moth_Elemental_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -249731,7 +250646,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Berserking Darkmites",
 		"picture": "Dust_Mite_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -249810,7 +250725,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Deadly Spores",
 		"picture": "Mushroom_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -249888,7 +250803,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icesyte Harvester",
 		"picture": "Water_Skimmer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -249972,7 +250887,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Clawgro Executioner",
 		"picture": "Claw_Warrior_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -250046,7 +250961,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Sleetshield Crusher",
 		"picture": "Icicle_Insect_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -250111,7 +251026,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hog Wild",
 		"picture": "Goblin_Pack_Hunters_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -250186,7 +251101,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "The Great Kazamo",
 		"picture": "Goblin_Hypnotist_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -250280,7 +251195,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Metalmaster",
 		"picture": "Goblin_Blacksmith_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -250359,7 +251274,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Xerkahn's Brigand",
 		"picture": "Goblin_Brigand_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -250454,7 +251369,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Volt Kraag",
 		"picture": "Goblin_Mutant_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -250532,7 +251447,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Venomstick Pezack",
 		"picture": "Goblin_Boomerang_Master_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -250621,7 +251536,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Trident Honor Guard",
 		"picture": "Fish_Warrior_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -250704,7 +251619,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Ika-Roa, Worldshapers",
 		"picture": "Pisces_Pisces_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -250791,7 +251706,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Assailing Sawtooth",
 		"picture": "Seaweed_Shark_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -250868,7 +251783,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Toxite Shellter",
 		"picture": "Hermit_Crab_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -250959,7 +251874,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Kelpthrasher",
 		"picture": "Kelp_Monster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -251073,7 +251988,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mollusk Icecaster",
 		"picture": "Clam_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -251141,7 +252056,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Seashell Pirate",
 		"picture": "Seasshell_Club_Frog_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -251217,7 +252132,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Dawnglow Volleyshot",
 		"picture": "Dawnglow_Tribal_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -251297,7 +252212,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Webtoe Firefoot",
 		"picture": "Frog_Boxer_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -251376,7 +252291,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bog Toadfly",
 		"picture": "Winged_Insect_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -251460,7 +252375,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blind Luck Frog",
 		"picture": "Lucky_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -251541,7 +252456,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Fatal Stonesteps",
 		"picture": "Elemental_Frog_Rocks_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -251620,7 +252535,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Alphamech Stalker",
 		"picture": "Mecha_Wolf_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -251697,7 +252612,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Timberhead Fuscina",
 		"picture": "Finned_Lizardman_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -251789,7 +252704,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Alloy of the Woods",
 		"picture": "Mecha_Tribal_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -251897,7 +252812,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Pinegrove Punisher",
 		"picture": "Tree_Harvester_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -251992,7 +252907,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wrathstomp Irontusk",
 		"picture": "Aztec_Mecha_Frog_War_Elephant_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -252088,7 +253003,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rejuvenation Simulacrum",
 		"picture": "Psychic_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -252168,7 +253083,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Salty Brineskull",
 		"picture": "Undead_Tentacle_Barrier_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -252261,7 +253176,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Werefang of Chill Terror",
 		"picture": "Undead_Zombie_Werewolf_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -252342,7 +253257,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mortalum, Axelord",
 		"picture": "Zombie_Berserker_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -252426,7 +253341,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Gallows Humerus",
 		"picture": "Undead_Executioner_Skeleton_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -252499,7 +253414,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Warpsoul Warlock",
 		"picture": "Avian_Dark_Druid_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -252577,7 +253492,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rivertorch Revolter",
 		"picture": "Fencer_Avian_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -252678,7 +253593,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wyris Lightmaster",
 		"picture": "Tribal_Avian_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -252767,7 +253682,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Mugen and True Hawk",
 		"picture": "Sage_Insect_and_Avian_Son_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -252849,7 +253764,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Leafsurge Gazer",
 		"picture": "Elemental_Leaf_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -252926,7 +253841,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Floodbender",
 		"picture": "Elemental_Water_Frog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -253016,7 +253931,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Flowstone, the Last Falls",
 		"picture": "Walking_Waterfall_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -253094,7 +254009,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Oxylus, Earth Warden",
 		"picture": "Massive_Forest_Elemental_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -253190,7 +254105,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battlefield Templar",
 		"picture": "Battlefield_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -253271,7 +254186,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bottlenose Forecharger",
 		"picture": "Angel_Seafolk_Dolphin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -253355,7 +254270,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Underspine Impaler",
 		"picture": "Hedgehog_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -253450,7 +254365,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Axion, the Unyielding",
 		"picture": "Champion_Frog_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -253540,7 +254455,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Monastery Monk",
 		"picture": "Martial_Artist_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -253641,7 +254556,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Marshwing Torcher",
 		"picture": "Tropical_Dragon_Tamer_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -253718,7 +254633,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Raging Tidalsaur",
 		"picture": "Elemental_Water_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -253814,7 +254729,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Owlscar Scourge",
 		"picture": "Owl_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -253905,7 +254820,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Darkwood Hydra",
 		"picture": "Dragon_Forest_Hyrda_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -253995,7 +254910,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Honeycomb Lobber",
 		"picture": "Beehive_Thrower_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -254089,7 +255004,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tidal Hexmaster",
 		"picture": "Elemental_Goblin_Water_Sage_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -254181,7 +255096,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Drix and Acidflames",
 		"picture": "Goblin_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -254281,7 +255196,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rustcast Brewmage",
 		"picture": "Wylde_Mecha_Witch_Doctor_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -254349,7 +255264,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Morja, Malchemist",
 		"picture": "Poison_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -254430,7 +255345,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Rocketspear Raider",
 		"picture": "Lancer_Mecha_Goblin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -254511,7 +255426,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Coralscape Strangler",
 		"picture": "Seafolk_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -254577,7 +255492,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Undine Goddess",
 		"picture": "Undine_Sea_Sprite_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -254673,7 +255588,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vodnik, Sea's Wrath",
 		"picture": "Seafolk_Turtleshell_Merman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -254754,7 +255669,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Surgebend Arcanist",
 		"picture": "MermanMagician_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -254837,7 +255752,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Graveclay Conquerer",
 		"picture": "Grave_Hunter_Bug_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -254914,7 +255829,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Celesti Aberration",
 		"picture": "Angel_Divine_Insect_Warrior_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -255006,7 +255921,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Cesspool Slipper",
 		"picture": "Insect_Sewer_Bug_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -255083,7 +255998,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Monarch Bee",
 		"picture": "Insect_Queen_Bee_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -255192,7 +256107,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Bitoad Bogfiend",
 		"picture": "Frog_Swamp_Monster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -255283,7 +256198,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Tuloom, Soul Shaman",
 		"picture": "ShamanGhostFrog02",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -255378,7 +256293,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Gold Crown Matriarch",
 		"picture": "GoldenMayorFrog_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -255468,7 +256383,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Snatching Griffin",
 		"picture": "Avian_Crane_Griffin_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -255563,7 +256478,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Treeform Mystic",
 		"picture": "Forest_Keeper_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -255649,7 +256564,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Batrachia Lance",
 		"picture": "Avian_Frog_Rider_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -255752,7 +256667,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vile Keropologo",
 		"picture": "Swamp_Frog_Elemental_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -255861,7 +256776,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Blossom Steed",
 		"picture": "Cherry_Blossom_Horse_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -255960,7 +256875,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Battlefield Bandit",
 		"picture": "Undead_Frog_Corpse_Raider_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -256038,7 +256953,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Twistwood",
 		"picture": "Tree_Skeleton_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -256137,7 +257052,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Territorial Skelosaurus",
 		"picture": "Undead_Zombie_Stegosaurus_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -256232,7 +257147,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Siren of the Drowned",
 		"picture": "Undead_Sea_Ghost_Lady_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -256310,7 +257225,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Furystorm Reckoner",
 		"picture": "LAetherSeaElectricDragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -256387,7 +257302,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Forgewing Terror",
 		"picture": "Mecha_Dragon_Wood_Constructed_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -256483,7 +257398,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Shalefang, the Ancient",
 		"picture": "Dragon_Flying-Mountain_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -256552,7 +257467,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Amrita, Drake Oracle",
 		"picture": "Goblin_Dragon_Nature_Goblin_Dragonmaster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -256648,7 +257563,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Zuphlas the Director",
 		"picture": "Mecha_Angel_Droid_Controller_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -256716,7 +257631,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Hoggernaut MK III",
 		"picture": "Mecha_Pig_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -256811,7 +257726,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Bashing Gadgit",
 		"picture": "Wylde_Mecha_Gadget_Mecha_B",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "3000",
 		"skill": [
 			{
@@ -256885,7 +257800,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Icejaw Devastator",
 		"picture": "Ice_Turtle_Mecha_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -256964,7 +257879,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Veteran of Retribution",
 		"picture": "Dual_Blade_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -257059,7 +257974,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vombomber",
 		"picture": "Frog_Angel_Bomber_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -257155,7 +258070,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Wispfight Sprite",
 		"picture": "Angel_Nature_Angel_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "4000",
 		"skill": [
 			{
@@ -257253,7 +258168,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Lishara Springweaver",
 		"picture": "Goblin_Priestess_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "3000",
 		"skill": [
 			{
@@ -257332,7 +258247,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas' Shaman",
 		"picture": "Frog_Shaman_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -257453,7 +258368,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Atlas' Dragon",
 		"picture": "Dragon_Of_Life_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -257581,7 +258496,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron's Cyclone",
 		"picture": "Cloud_Elemental_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -257715,7 +258630,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Solaron's Sentinel",
 		"picture": "Seraph_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -257834,7 +258749,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos' Obsidian",
 		"picture": "Molten_Dragon_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -257944,7 +258859,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "Vulcanos' Skeleton",
 		"picture": "Flaming_Skeleton_Warrior_C",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -258054,7 +258969,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "The Bomb",
 		"picture": "Bomblet_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -258105,7 +259020,7 @@ var CARDS = {
 		"maxLevel": 6,
 		"name": "I Mean It, Doomsday!",
 		"picture": "Monster_B",
-		"rarity": "4",
+		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
@@ -258160,7 +259075,7 @@ var CARDS = {
 		"maxLevel": 5,
 		"name": "Doom Tentaclest",
 		"picture": "Tentacle_A",
-		"rarity": "3",
+		"rarity": 3,
 		"set": "9999",
 		"skill": [
 			{
@@ -258202,7 +259117,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Divebomb Chicken",
 		"picture": "Chicken_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
@@ -258259,7 +259174,7 @@ var CARDS = {
 		"maxLevel": 3,
 		"name": "Exploding Crab",
 		"picture": "Lava_Crab_C",
-		"rarity": "1",
+		"rarity": 1,
 		"set": "9999",
 		"skill": [
 			{
