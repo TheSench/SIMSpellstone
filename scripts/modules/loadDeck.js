@@ -7,7 +7,7 @@ define('loadDeck', [
     cardApi,
     unitInfoHelper
 ) {
-    "use strict";
+    'use strict';
     
     var api = {
         mission: loadMissionDeck,

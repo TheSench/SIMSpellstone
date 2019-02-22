@@ -1,5 +1,5 @@
 define('urlHelper', [], function () {
-    "use strict";
+    'use strict';
 
     var api = {
         paramDefined: paramDefined,
@@ -8,28 +8,25 @@ define('urlHelper', [], function () {
     };
 
     // GET variables
-    function paramValue(variable) {
-        var query = window.location.search.substring(1);
-        var vars = query.split('&');
-        for (var i = 0; i < vars.length; i++) {
-            var pair = vars[i].split('=');
-            if (decodeURIComponent(pair[0]) == variable) {
-                return decodeURIComponent(pair[1] ? pair[1] : '');
-            }
-        }
-        return undefined;
+    function paramValue(paramName) {
+        var value = getRawParamValue(paramName);
+        return decodeURIComponent(value || '');
     }
 
-    function paramDefined(variable) {
+    function paramDefined(paramName) {
+        return getRawParamValue(paramName) !== null;
+    }
+
+    function getRawParamValue(paramName) {
         var query = window.location.search.substring(1);
         var vars = query.split('&');
         for (var i = 0; i < vars.length; i++) {
             var pair = vars[i].split('=');
-            if (decodeURIComponent(pair[0]) == variable) {
-                return true;
+            if (decodeURIComponent(pair[0]) === paramName) {
+                return pair[1];
             }
         }
-        return false;
+        return null;
     }
 
     function getCurrentPage() {

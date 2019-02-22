@@ -1,4 +1,4 @@
-﻿"use strict";
+﻿'use strict';
 
 var base64 = require('base64');
 var cardApi = require('cardApi');

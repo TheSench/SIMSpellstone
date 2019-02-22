@@ -3,7 +3,7 @@ define('unitInfoHelper', [
 ], function (
     cardApi
 ) {
-    "use strict";
+    'use strict';
     
     var api = {
         areEqual: areEqual,

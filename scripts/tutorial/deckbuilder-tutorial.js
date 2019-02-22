@@ -1,11 +1,11 @@
 ﻿define('tutorialScript', [
-    'urlHelper'
+    'simTutorial'
 ], function getTutorialScript(
-    urlHelper
+    simTutorial
 ) {
     'use strict';
 
-    var tutorialParts = [
+    simTutorial.registerTutorial([
        {
            msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Deck Builder."
        },
@@ -194,15 +194,8 @@
        {
            msg: 'To view this tutorial again at any time, you can click the "Help" button.  (Note: this will reset the DeckBuilder.)'
        }
-    ];
-
-    var currentPage = urlHelper.getCurrentPage();
-    for (var i = 0; i < tutorialParts.length; i++) {
-        var part = tutorialParts[i];
-        if (part.showFor && part.showFor !== currentPage) {
-            tutorialParts.splice(i--, 1);
-        }
-    }
+    ]);
+    
 
     function showDeck() {
         $("#deck-container").accordion('option', 'active', 0);
@@ -333,6 +326,4 @@
     function updateHash(hash) {
         $("#hash").val(hash).change();
     }
-
-    return tutorialParts;
 });

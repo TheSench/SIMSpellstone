@@ -3,7 +3,7 @@ define('loadCardCache', [
 ], function (
     storageAPI
 ) {
-    "use strict";
+    'use strict';
 
     return function loadCardCache() {
         var cardData = storageAPI.getField("GameData", "CardCache");

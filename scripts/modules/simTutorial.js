@@ -1,24 +1,47 @@
-﻿$(document).ready(function () {
-    var storageAPI = require('storageAPI');
-    var tutorialParts = require('tutorialScript');
+﻿define('simTutorial', [
+    'storageAPI',
+    'urlHelper'
+], function (
+    storageAPI,
+    urlHelper
+) {
+    "use strict";
+
+    var api = {
+        showTutorial: showTutorial,
+        checkTutorial: checkTutorial,
+        registerTutorial: registerTutorial
+    };
+    
+    var tutorialParts = [];
 
     var overlayHtml = $("<div></div>");
-    $(document.body).append(overlayHtml);
-    overlayHtml.load("templates/tutorial-overlay.html", null, function () {
-        overlayHtml.replaceWith(function () {
-            return $(this).contents();
+    $(function showTutorialUI() {
+        $(document.body).append(overlayHtml);
+        overlayHtml.load("templates/tutorial-overlay.html", null, function () {
+            overlayHtml.replaceWith(function () {
+                return $(this).contents();
+            });
+            $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function () {
+                storageAPI.setShowTutorial(this.checked);
+            });
+            $("#help").click(showTutorial);
+            $("#tutorial-close, #tutorial-skip").click(closeTutorial);
+            $("#tutorial-next").click(nextTutorial);
+            $("#tutorial-prev").click(previousTutorial);
+            if (typeof delayTutorial === "undefined") {
+                checkTutorial();
+            }
         });
-        $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function () {
-            storageAPI.setShowTutorial(this.checked);
-        });
-        $("#help").click(showTutorial);
-        $("#tutorial-close, #tutorial-skip").click(closeTutorial);
-        $("#tutorial-next").click(nextTutorial);
-        $("#tutorial-prev").click(previousTutorial);
-        if (typeof delayTutorial === "undefined") {
-            checkTutorial();
-        }
     });
+
+    function registerTutorial(newTutorial) {
+        var currentPage = urlHelper.getCurrentPage();
+
+        tutorialParts = newTutorial.filter(function availableOnCurrentPage(tutorialPart) {
+            return (!tutorialPart.showFor || tutorialPart.showFor === currentPage);
+        });
+    }
 
     function checkTutorial() {
         if (storageAPI.shouldShowTutorial) {
@@ -112,4 +135,6 @@
 
     window.showTutorial = showTutorial;
     window.checkTutorial = checkTutorial;
+
+    return api;
 });

@@ -3,7 +3,7 @@ define('animations', [
 ], function (
     cardUI
 ) {
-    "use strict";
+    'use strict';
 
     var api = {
         areShown: false,

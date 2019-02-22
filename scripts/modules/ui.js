@@ -1,5 +1,3 @@
-"use strict";
-
 define('ui', [
 	'base64',
 	'urlHelper',
@@ -21,6 +19,8 @@ define('ui', [
 	animations,
 	simController
 ) {
+	'use strict';
+
 	var api = {
 		show: showUI,
 		hide: hideUI,
@@ -56,11 +56,7 @@ define('ui', [
 			var msg = "<br><br><i>Error Message:</i><br><br>" +
 				"<i>It appears you're having trouble loading SimSpellstone. " +
 				"Thanks.</i><br><br>";
-			if (displayText) {
-				displayText(msg);
-			} else {
-				document.write(msg);
-			}
+			displayText(msg);
 			return 1;
 		}
 

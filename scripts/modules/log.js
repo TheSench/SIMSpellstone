@@ -6,7 +6,7 @@ function(
     factions,
     skillApi
 ) {
-    "use strict";
+    'use strict';
 
     var api = {
         skill: logSkill,
@@ -46,20 +46,15 @@ function(
             output += '<u>';
             if (card.isCommander()) {
                 output += ' [';
-                if (card.health_left !== undefined) output += truncate(card.health_left);
-                else output += card.health;
+                output += truncate(card.health_left);
                 output += ' HP]';
             } else if (card.isAssault()) {
                 output += ' [';
-                var atk = card.adjustedAttack();
-                if (isNaN(atk) || atk == undefined) atk = card.attack;
-                output += atk;
+                output += card.adjustedAttack();
                 output += '/';
-                if (card.health_left !== undefined) output += truncate(card.health_left);
-                else output += card.health;
+                output += truncate(card.health_left);
                 output += '/';
-                if (card.timer !== undefined) output += card.timer;
-                else output += card.cost;
+                output += card.timer;
                 output += ']';
             }
             output += '</u>';

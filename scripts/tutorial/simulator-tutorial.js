@@ -1,11 +1,11 @@
 ﻿define('tutorialScript', [
-    'urlHelper'
+    'simTutorial'
 ], function getTutorialScript(
-    urlHelper
+    simTutorial
 ) {
     'user strict';
     
-    var tutorialParts = [
+    simTutorial.registerTutorial([
        {
            msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Simulator."
        },
@@ -153,15 +153,7 @@
        {
            msg: 'To view this tutorial again at any time, you can click the "Help" button.  (Note: this will reset the Simulator.)'
        }
-    ];
-
-    var currentPage = urlHelper.getCurrentPage();
-    for (var i = 0; i < tutorialParts.length; i++) {
-        var part = tutorialParts[i];
-        if (part.showFor && part.showFor !== currentPage) {
-            tutorialParts.splice(i--, 1);
-        }
-    }
+    ]);
 
     function hideSetup() {
         $("#setup-container").accordion('option', 'active', null);
@@ -198,6 +190,4 @@
     function clearRaid() {
         $('#raid').val('').change();
     }
-
-    return tutorialParts;
 });

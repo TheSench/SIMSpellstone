@@ -9,7 +9,7 @@ define('simController', [
     debugMessages,
     debugDisabled
 ) {
-    "use strict";
+    'use strict';
 
     var SIM_CONTROLLER = {
         debugEnd: debugEnd,

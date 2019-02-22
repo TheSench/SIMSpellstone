@@ -17,7 +17,7 @@ define('startup', [
 	loadCardCache,
 	ui
 ) {
-	"use strict";
+	'use strict';
 
     var mapBGEDialog;
 	var deckPopupDialog;

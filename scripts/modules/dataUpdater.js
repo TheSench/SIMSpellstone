@@ -4,7 +4,7 @@ define('dataUpdater', [
 ], function (
     storageAPI
 ) {
-    "use strict";
+    'use strict';
 
     var api = {
         updateData: updateData

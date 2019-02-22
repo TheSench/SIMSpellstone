@@ -5,7 +5,7 @@ define('base64', [
     cardInfo,
     unitInfoHelper
 ) {
-    "use strict";
+    'use strict';
 
     var api = {
         encodeHash: encode,

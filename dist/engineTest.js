@@ -334,7 +334,7 @@ define('matchStats', [], function() {
     debugMessages,
     debugDisabled
 ) {
-    "use strict";
+    'use strict';
 
     var SIM_CONTROLLER = {
         debugEnd: debugEnd,
@@ -594,7 +594,7 @@ define('matchStats', [], function() {
             var index = parts[1];
             var value = parts[2];
             var mapBGE = Object.keys(MAP_BATTLEGROUNDS).filter(function (id) {
-                return MAP_BATTLEGROUNDS[id].location_id == location;
+                return MAP_BATTLEGROUNDS[id].location_id === location;
             })[0];
             mapBGE = MAP_BATTLEGROUNDS[mapBGE];
             var battleground = mapBGE.effects[index].upgrades[value];
@@ -634,7 +634,7 @@ define('matchStats', [], function() {
     cardApi,
     unitInfoHelper
 ) {
-    "use strict";
+    'use strict';
     
     var api = {
         mission: loadMissionDeck,
@@ -937,7 +937,7 @@ define('matchStats', [], function() {
 	loadDeck,
 	simController
 ) {
-	"use strict";
+	'use strict';
 
 	var SIMULATOR = {};
 	window.SIMULATOR = SIMULATOR;
@@ -3745,7 +3745,7 @@ define('matchStats', [], function() {
     ui,
     matchStats
 ) {
-    "use strict";
+    'use strict';
 
     // Initialize simulation loop - runs once per simulation session
     simController.startsim = function () {
@@ -3934,7 +3934,7 @@ define('matchStats', [], function() {
     var run_sims_count = 0;
     var run_sims_batch = 0;
 });;(function () {
-    "use strict";
+    'use strict';
 
     var simController = require('simController');
     var matchStats = require('matchStats');

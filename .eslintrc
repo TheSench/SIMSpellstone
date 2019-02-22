@@ -17,6 +17,7 @@
     "$": true,
     "jQuery": true,
     "Chartist": true,
+    "spoilers": true,
     "BATTLEGROUNDS": true,
     "MAP_BATTLEGROUNDS": true,
     "SIMULATOR": true,

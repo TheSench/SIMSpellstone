@@ -336,7 +336,7 @@ Function.prototype.throttle = function throttle(wait) {
 
     return api;
 });;define('urlHelper', [], function () {
-    "use strict";
+    'use strict';
 
     var api = {
         paramDefined: paramDefined,
@@ -345,28 +345,25 @@ Function.prototype.throttle = function throttle(wait) {
     };
 
     // GET variables
-    function paramValue(variable) {
-        var query = window.location.search.substring(1);
-        var vars = query.split('&');
-        for (var i = 0; i < vars.length; i++) {
-            var pair = vars[i].split('=');
-            if (decodeURIComponent(pair[0]) == variable) {
-                return decodeURIComponent(pair[1] ? pair[1] : '');
-            }
-        }
-        return undefined;
+    function paramValue(paramName) {
+        var value = getRawParamValue(paramName);
+        return decodeURIComponent(value || '');
     }
 
-    function paramDefined(variable) {
+    function paramDefined(paramName) {
+        return getRawParamValue(paramName) !== null;
+    }
+
+    function getRawParamValue(paramName) {
         var query = window.location.search.substring(1);
         var vars = query.split('&');
         for (var i = 0; i < vars.length; i++) {
             var pair = vars[i].split('=');
-            if (decodeURIComponent(pair[0]) == variable) {
-                return true;
+            if (decodeURIComponent(pair[0]) === paramName) {
+                return pair[1];
             }
         }
-        return false;
+        return null;
     }
 
     function getCurrentPage() {
@@ -384,7 +381,7 @@ Function.prototype.throttle = function throttle(wait) {
 ], function (
     urlHelper
 ) {
-    "use strict";
+    'use strict';
 
     var storageAPI = {};
     var SaveFields = {
@@ -555,12 +552,151 @@ Function.prototype.throttle = function throttle(wait) {
     storageAPI.initialize();
 
     return storageAPI;
+});;define('simTutorial', [
+    'storageAPI',
+    'urlHelper'
+], function (
+    storageAPI,
+    urlHelper
+) {
+    "use strict";
+
+    var api = {
+        showTutorial: showTutorial,
+        checkTutorial: checkTutorial,
+        registerTutorial: registerTutorial
+    };
+    
+    var tutorialParts = [];
+
+    var overlayHtml = $("<div></div>");
+    $(function showTutorialUI() {
+        $(document.body).append(overlayHtml);
+        overlayHtml.load("templates/tutorial-overlay.html", null, function () {
+            overlayHtml.replaceWith(function () {
+                return $(this).contents();
+            });
+            $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function () {
+                storageAPI.setShowTutorial(this.checked);
+            });
+            $("#help").click(showTutorial);
+            $("#tutorial-close, #tutorial-skip").click(closeTutorial);
+            $("#tutorial-next").click(nextTutorial);
+            $("#tutorial-prev").click(previousTutorial);
+            if (typeof delayTutorial === "undefined") {
+                checkTutorial();
+            }
+        });
+    });
+
+    function registerTutorial(newTutorial) {
+        var currentPage = urlHelper.getCurrentPage();
+
+        tutorialParts = newTutorial.filter(function availableOnCurrentPage(tutorialPart) {
+            return (!tutorialPart.showFor || tutorialPart.showFor === currentPage);
+        });
+    }
+
+    function checkTutorial() {
+        if (storageAPI.shouldShowTutorial) {
+            showTutorial();
+        } else {
+            closeTutorial();
+        }
+    }
+
+    function showTutorial() {
+        tutorialIndex = 0;
+        setTutorial();
+        $("#tutorial").show();
+    }
+
+    var tutorialIndex = 0;
+    function nextTutorial() {
+        tutorialIndex++;
+        setTutorial();
+    }
+
+    function previousTutorial() {
+        tutorialIndex--;
+        setTutorial();
+    }
+
+    function closeTutorial() {
+        $("#tutorial").hide();
+        if ($("#tutorial-permahide").is(":checked")) {
+            storageAPI.hideTutorial();
+        }
+    }
+
+    var uiTimer;
+    function setTutorial() {
+        clearTimeout(uiTimer);
+        var tutorialPart = tutorialParts[tutorialIndex];
+
+        var actions = tutorialPart.actions;
+        if(actions) {
+            actions.forEach(function triggerAction(action) {action(); });
+        }
+
+        var msg = tutorialPart.msg;
+
+        var uiFocus = tutorialPart.ui;
+        if (uiFocus) {
+            var target = $(uiFocus);
+            if (tutorialPart.dialog) {
+                target = target.parent();
+            }
+            showUI(target);
+            if (actions) {
+                uiTimer = setTimeout(showUI, 500, target);
+            }
+            if (msg.indexOf("{0}" >= 0)) {
+                msg = msg.replace(/\{0\}/g, target.text());
+            }
+        } else {
+            $(".overlay-fog").width(0).height(0);
+        }
+
+        $("#tutorialMessage").text(msg);
+
+        if (tutorialIndex < tutorialParts.length - 1) {
+            $("#tutorial-next").show();
+            $("#tutorial-close").hide();
+        } else {
+            $("#tutorial-next").hide();
+            $("#tutorial-close").show();
+        }
+
+        if (tutorialIndex > 0) {
+            $("#tutorial-prev").removeClass("disabled");
+        } else {
+            $("#tutorial-prev").addClass("disabled");
+        }
+    }
+
+    function showUI(target) {
+        var position = target.offset();
+
+        $(".overlay-fog")
+            .css({ 
+                top: (position.top - 2) + 'px', 
+                left: (position.left - 2) + 'px' 
+            })
+            .width((target.outerWidth() + 4) + 'px')
+            .height((target.outerHeight() + 4) + 'px');
+    }
+
+    window.showTutorial = showTutorial;
+    window.checkTutorial = checkTutorial;
+
+    return api;
 });;define('loadCardCache', [
     'storageAPI'
 ], function (
     storageAPI
 ) {
-    "use strict";
+    'use strict';
 
     return function loadCardCache() {
         var cardData = storageAPI.getField("GameData", "CardCache");
@@ -586,7 +722,7 @@ define('dataUpdater', [
 ], function (
     storageAPI
 ) {
-    "use strict";
+    'use strict';
 
     var api = {
         updateData: updateData
@@ -1491,7 +1627,7 @@ define('dataUpdater', [
 ], function (
     cardApi
 ) {
-    "use strict";
+    'use strict';
     
     var api = {
         areEqual: areEqual,
@@ -1590,7 +1726,7 @@ define('dataUpdater', [
 	factions,
 	unitInfoHelper
 ) {
-	"use strict";
+	'use strict';
 
 	var assetsRoot = '';
 
@@ -1809,7 +1945,7 @@ define('dataUpdater', [
 		var picture = cardInfo.loadCard(card.id).picture;
 		if (picture) {
 			var icon = document.createElement("i");
-			if (picture.indexOf("portrait_") == 0) {
+			if (picture.indexOf("portrait_") === 0) {
 				icon.className = 'portrait portrait-' + picture;
 			} else {
 				icon.className = 'sprite sprite-' + picture;
@@ -2140,7 +2276,7 @@ define('dataUpdater', [
     cardInfo,
     unitInfoHelper
 ) {
-    "use strict";
+    'use strict';
 
     var api = {
         encodeHash: encode,

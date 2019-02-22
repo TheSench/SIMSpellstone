@@ -23,6 +23,7 @@ module.exports = function (grunt) {
                     'scripts/modules/urlHelper.js',
                     'scripts/modules/storageAPI.js',
 
+                    'scripts/modules/simTutorial.js',
                     'scripts/modules/loadCardCache.js',
                     'scripts/modules/dataUpdater.js',
                     'scripts/modules/cardApi.js',
@@ -40,8 +41,7 @@ module.exports = function (grunt) {
                     'scripts/deckbuilder.js',
                     'scripts/localstorage-controller.js',
                     'scripts/ng-card-details-controller.js',
-                    'scripts/tutorial/deckbuilder-tutorial.js',
-                    'scripts/sim-tutorial.js'
+                    'scripts/tutorial/deckbuilder-tutorial.js'
                 ],
                 dest: 'dist/deckbuilder.js'
             },
@@ -98,8 +98,7 @@ module.exports = function (grunt) {
                     'scripts/ng-simulator-controller.js',
                     'scripts/localstorage-controller.js',
                     'scripts/gui_script.js',
-                    'scripts/tutorial/simulator-tutorial.js',
-                    'scripts/sim-tutorial.js'
+                    'scripts/tutorial/simulator-tutorial.js'
                 ],
                 dest: 'dist/simulator.js'
             },

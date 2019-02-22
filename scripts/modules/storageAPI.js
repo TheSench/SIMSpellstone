@@ -3,7 +3,7 @@ define('storageAPI', [
 ], function (
     urlHelper
 ) {
-    "use strict";
+    'use strict';
 
     var storageAPI = {};
     var SaveFields = {

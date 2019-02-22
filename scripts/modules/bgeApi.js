@@ -219,7 +219,7 @@ define('bgeApi', [
             var index = parts[1];
             var value = parts[2];
             var mapBGE = Object.keys(MAP_BATTLEGROUNDS).filter(function (id) {
-                return MAP_BATTLEGROUNDS[id].location_id == location;
+                return MAP_BATTLEGROUNDS[id].location_id === location;
             })[0];
             mapBGE = MAP_BATTLEGROUNDS[mapBGE];
             var battleground = mapBGE.effects[index].upgrades[value];

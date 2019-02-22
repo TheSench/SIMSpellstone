@@ -11,7 +11,7 @@ define('simulatorBase', [
 	loadDeck,
 	simController
 ) {
-	"use strict";
+	'use strict';
 
 	var SIMULATOR = {};
 	window.SIMULATOR = SIMULATOR;

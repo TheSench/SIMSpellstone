@@ -11,7 +11,7 @@
 	factions,
 	unitInfoHelper
 ) {
-	"use strict";
+	'use strict';
 
 	var assetsRoot = '';
 
@@ -230,7 +230,7 @@
 		var picture = cardInfo.loadCard(card.id).picture;
 		if (picture) {
 			var icon = document.createElement("i");
-			if (picture.indexOf("portrait_") == 0) {
+			if (picture.indexOf("portrait_") === 0) {
 				icon.className = 'portrait portrait-' + picture;
 			} else {
 				icon.className = 'sprite sprite-' + picture;

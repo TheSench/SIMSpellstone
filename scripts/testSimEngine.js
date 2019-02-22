@@ -1,5 +1,5 @@
 (function () {
-    "use strict";
+    'use strict';
 
     var simController = require('simController');
     var matchStats = require('matchStats');

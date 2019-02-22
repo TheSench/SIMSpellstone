@@ -17,7 +17,7 @@ define('singleThreaded', [
     ui,
     matchStats
 ) {
-    "use strict";
+    'use strict';
 
     // Initialize simulation loop - runs once per simulation session
     simController.startsim = function () {
