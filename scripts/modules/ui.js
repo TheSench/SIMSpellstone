@@ -404,6 +404,7 @@ define('ui', [
 		var missionLevel;
 		var selectedRaid;
 		var raidLevel;
+		var deck;
 
 		if (player === 'player') {
 			deckHash = $('#deck1').val();
@@ -431,7 +432,7 @@ define('ui', [
 		var deckHashField = (player ? $("#" + (player === 'player' ? 'deck1' : 'deck2')) : null);
 
 		var currentDeckBuilder = deckBuilders[player];
-		if (currentDeckBuilder == null || currentDeckBuilder.closed) {
+		if (!currentDeckBuilder || currentDeckBuilder.closed) {
 			deckBuilders[player] = _openDeckBuilder(name, hash, null, deckHashField);
 		}
 		else {
@@ -467,8 +468,9 @@ define('ui', [
 		var win = window.open(url, '', windowFeatures);
 
 		// Push values to window once it has loaded
-		$(win).load((function (deckHashField) {
-			return function () {
+		//$(win).load((function (deckHashField) {
+		win.addEventListener('load', (function createOnLoad(deckHashField) {
+			return function linkToDeckHashField() {
 				// Tie deck-builder back to the hash field in the simulator.
 				if (deckHashField) win.updateSimulator = function (hash) { deckHashField.val(hash).change(); };
 			};

@@ -334,7 +334,7 @@ module.exports = function (grunt) {
                     'DeckBuilder.html',
                     'Battle.html',
                     'Titans.html',
-                    'LivePvP.html'
+                    'Engine.html'
                 ]
             },
         }
