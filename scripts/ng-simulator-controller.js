@@ -61,21 +61,18 @@
         initialize();
 
         function initialize() {
-            $scope.locations = ToArray(LOCATIONS).sort(function (locationA, locationB) {
-                return Number(locationA.id) - Number(locationB.id);
-            });
-            $scope.campaigns = ToArray(CAMPAIGNS);
-            $scope.missions = ToArray(MISSIONS);
+            $scope.locations = toArray(LOCATIONS)
+                .sort(function (locationA, locationB) {
+                    return Number(locationA.id) - Number(locationB.id);
+                });
+            $scope.campaigns = toArray(CAMPAIGNS);
+            $scope.missions = toArray(MISSIONS);
 
-            $scope.raids = RAIDS;
-
-            $scope.battlegrounds = BATTLEGROUNDS;
             $scope.mapBattlegrounds = toArray(MAP_BATTLEGROUNDS);
 
             $scope.campaignBGEs = [];
 
             $scope.tower = false;
-            $scope.towerTypes = ["Castle Tower", "Cannon Tower", "Tree of Life"];
             $scope.auto = false;
 
             $scope.debugMode = false;
@@ -87,12 +84,12 @@
                 raid: ''
             };
 
-            $scope.filteredRaids = getFilteredRaids;
+            $scope.filteredRaids = getFilteredRaids();
             $scope.getLocationClass = getLocationClass;
             $scope.getCampaignClass = getCampaignClass;
-            $scope.selectableBattlegrounds = getSelectableBattlegrounds;
-            $scope.personalBattlegrounds = getPersonalBattlegrounds;
-            $scope.towerTypes = getTowerTypes;
+            $scope.selectableBattlegrounds = getSelectableBattlegrounds();
+            $scope.personalBattlegrounds = getPersonalBattlegrounds();
+            $scope.towerTypes = getTowerTypes();
 
             $scope.$watch("selections.location", resetCampaign);
 
@@ -107,74 +104,63 @@
             $scope.selections.mission = '';
         }
 
-        function ToArray(table) {
-            var IDs = Object.keys(table);
-            IDs.sort(function (a, b) {
-                return Number(a) - Number(b);
-            });
-            var list = [];
-            for (var i = 0; i < IDs.length; i++) {
-                var key = IDs[i];
-                var entry = table[key];
-                list.push(entry);
-            }
-            return list;
-        }
-
         function toArray(object) {
-            var ary = [];
-            for (var key in object) {
-                ary.push(object[key]);
-            }
-            return ary;
+            return Object.keys(object)
+                .sort(function (a, b) {
+                    return Number(a) - Number(b);
+                })
+                .map(function(key) {
+                    return object[key];
+                });
         }
 
         function getSelectableBattlegrounds() {
-            var selectable = [];
-            for (var id in $scope.battlegrounds) {
-                var BGE = $scope.battlegrounds[id];
-                if (!(BGE.hidden || BGE.isTower)) selectable.push(BGE);
-            }
-            selectable.sort(function (a, b) { return a.id - b.id; });
-            return selectable;
+            return Object.keys(BATTLEGROUNDS)
+                .map(Number)
+                .sort()
+                .map(getBgeById)
+                .filter(function shouldBeShown(BGE) {
+                    return !(BGE.hidden || BGE.isTower);
+                });
         }
 
         function getPersonalBattlegrounds() {
-            var selectable = [];
-            for (var id in $scope.battlegrounds) {
-                var BGE = $scope.battlegrounds[id];
-                var bgeID = Number(BGE.id);
-                if (bgeID > 1000 && bgeID < 2000) selectable.push(BGE);
-            }
-            selectable.sort(function (a, b) { return a.id - b.id; });
-            return selectable;
+            return Object.keys(BATTLEGROUNDS)
+                .map(Number)
+                .filter(function normalBge(bgeID) {
+                    return(bgeID > 1000 && bgeID < 2000);
+                })
+                .sort()
+                .map(getBgeById);
+        }
+        
+        function getBgeById(bgeID) {
+            return BATTLEGROUNDS[bgeID];
         }
 
         function getFilteredRaids() {
-            var filtered = {};
-
-            toArray($scope.raids)
-                .sort(function (raidA, raidB) {
-                    return Number(raidB.id) - Number(raidA.id);
-                })
-                .forEach(function (raid) {
-                    if (!filtered[raid.name]) {
-                        filtered[raid.name] = raid;
+            var filtered = Object.keys(RAIDS)
+                .reduce(function mostRecentByName(mostRecent, nextRaidId) {
+                    var nextRaid = RAIDS[nextRaidId];
+                    var currentRaid = mostRecent[nextRaid.name];
+                    if(!currentRaid || Number(currentRaid.id) < Number(nextRaid.id)) {
+                        mostRecent[nextRaid.name] = nextRaid;
                     }
-                });
+                    return mostRecent;
+                }, {});
 
             return toArray(filtered)
-                .sort(function (raidA, raidB) {
-                    return Number(raidA.id) - Number(raidB.id);
+                .sort(function sortByName(raidA, raidB) {
+                    return raidA.name.toLowerCase().localeCompare(raidB.name.toLowerCase());
                 });
         }
 
         function getLocationClass(location) {
             if (!location) {
                 var selected = $scope.selections.location;
-                location = $scope.locations.filter(function (location) {
+                location = $scope.locations.find(function (location) {
                     return location.id === selected;
-                })[0];
+                });
             }
             if (!location) {
                 return "grey";
@@ -193,14 +179,14 @@
         function getCampaignClass(campaign) {
             if (!campaign) {
                 var selected = $scope.selections.campaign;
-                campaign = $scope.campaigns.filter(function (campaign) {
-                    return campaign.id == selected;
-                })[0];
+                campaign = $scope.campaigns.find(function (campaign) {
+                    return campaign.id === selected;
+                });
             }
             if (!campaign) {
                 return "grey";
             } else if (campaign.side_mission) {
-                return (campaign.location_id == 0 ? "heroUpgrade" : "mythic");
+                return (campaign.location_id === '0' ? "heroUpgrade" : "mythic");
             } else if (campaign.isLocation) {
                 return "location";
             } else {
@@ -210,8 +196,8 @@
 
         function getTowerTypes() {
             var towerTypes = [];
-            for (var id in $scope.battlegrounds) {
-                var BGE = $scope.battlegrounds[id];
+            for (var id in BATTLEGROUNDS) {
+                var BGE = BATTLEGROUNDS[id];
                 if (BGE.isTower) towerTypes.push(BGE);
             }
             towerTypes.sort(function (a, b) { return a.id - b.id; });
