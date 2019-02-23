@@ -133,8 +133,5 @@
             .height((target.outerHeight() + 4) + 'px');
     }
 
-    window.showTutorial = showTutorial;
-    window.checkTutorial = checkTutorial;
-
     return api;
 });

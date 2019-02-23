@@ -11,6 +11,7 @@ var cardUI = require('cardUI');
 var storageAPI = require('storageAPI');
 var dataUpdater = require('dataUpdater');
 var loadCardCache = require('loadCardCache');
+var simTutorial = require('simTutorial');
 
 // TODO: Add function for re-checking filters
 var delayTutorial = true;
@@ -70,9 +71,7 @@ $(function initDeckBuilder() {
 	if (!urlHelper.paramDefined("fromSim")) {
 		$("#header").load("templates/header.html", function () {
 			$("#header").show();
-			if (typeof showTutorial !== "undefined") {
-				$("#help").click(showTutorial);
-			}
+			$("#help").click(simTutorial.showTutorial);
 		});
 		$.holdReady(true);
 		$("#footer").load("templates/footer.html", function () {
@@ -203,7 +202,7 @@ function loadCards() {
 	$("#loadingSplash").html("Loading...");
 	drawAllCards();
 	$("body").removeClass("loading");
-	checkTutorial();
+	simTutorial.checkTutorial();
 }
 
 function setupPopups() {

@@ -687,9 +687,6 @@ Function.prototype.throttle = function throttle(wait) {
             .height((target.outerHeight() + 4) + 'px');
     }
 
-    window.showTutorial = showTutorial;
-    window.checkTutorial = checkTutorial;
-
     return api;
 });;define('loadCardCache', [
     'storageAPI'

@@ -7,7 +7,8 @@ define('ui', [
 	'dataUpdater',
 	'matchStats',
 	'animations',
-	'simController'
+	'simController',
+	'simTutorial'
 ], function (
 	base64,
 	urlHelper,
@@ -17,7 +18,8 @@ define('ui', [
 	dataUpdater,
 	matchStats,
 	animations,
-	simController
+	simController,
+	simTutorial
 ) {
 	'use strict';
 
@@ -481,7 +483,7 @@ define('ui', [
 
 	function _doneLoading() {
 		$("body").removeClass("loading");
-		checkTutorial();
+		simTutorial.checkTutorial();
 	}
 
 	function updateGameData(callback) {

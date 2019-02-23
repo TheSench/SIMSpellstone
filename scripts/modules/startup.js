@@ -6,6 +6,7 @@ define('startup', [
 	'cardUI',
 	'loadDeck',
 	'loadCardCache',
+	'simTutorial',
 	'ui'
 ], function (
 	base64,
@@ -15,6 +16,7 @@ define('startup', [
 	cardUI,
 	loadDeck,
 	loadCardCache,
+	simTutorial,
 	ui
 ) {
 	'use strict';
@@ -123,9 +125,7 @@ define('startup', [
 	function processQueryString() {
 
 		$("#header").load("templates/header.html", function () {
-			if (typeof showTutorial !== "undefined") {
-				$("#help").click(showTutorial);
-			}
+			$("#help").click(simTutorial.showTutorial);
 		});
 		$.holdReady(true);
 		$("#footer").load("templates/footer.html", function () {
