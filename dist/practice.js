@@ -2082,17 +2082,7 @@ function(
         setDeckSortable("#attack_deck", '#deck1');
         setDeckSortable("#defend_deck", '#deck2');
 
-        if (urlHelper.paramDefined("latestCards")) {
-            var callback = null;
-            if (urlHelper.paramDefined("autostart")) {
-                callback = function () {
-                    simController.startsim();
-                };
-            }
-            updateGameData(callback);
-        } else {
-            loadCardCache();
-        }
+		loadCardCache();
 
         processQueryString();
     });

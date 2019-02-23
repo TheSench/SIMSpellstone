@@ -23,7 +23,7 @@
     <script src="dist/shared.min.js"></script>
     <script src="dist/deckbuilder.min.js"></script>
 </head>
-<body onload="initDeckBuilder()" ng-controller="DeckBuilderCtrl">
+<body ng-controller="DeckBuilderCtrl">
     <header style="display:none" id="header"></header>
     <div style="margin:auto">
         <div id="deckBuilderContainer">
@@ -37,16 +37,16 @@
                         <div><b>Deck Hash:</b></div>
                         <div>
                             <div class="highlighter" id="hash_highlighter"></div>
-                            <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
+                            <input class="highlighted" id="hash" type="text" value="" size="100" />
                         </div>
                     </div>
                     <div style="margin:10px 0 10px 0"><a id="link" href="#"></a>&nbsp;</div>
-                    <input id="resetDeck" type="button" value="Reset" onclick="resetDeck()" />
-                    <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
-                    <input id="saveDeck" type="button" value="Save" onclick="saveDeck()" />
-                    <input id="loadDeck" type="button" value="Load" onclick="loadDeck()" />
-                    <input id="updateGameData" type="button" value="Update Data" onclick="updateGameData()" />
-                    <input id="inventoryMode" type="button" value="Switch to Inventory Builder" onclick="toggleInventoryMode()" />
+                    <input id="resetDeck" type="button" value="Reset" />
+                    <input id="sortDeck" type="button" value="Sort" />
+                    <input id="saveDeck" type="button" value="Save" />
+                    <input id="loadDeck" type="button" value="Load" />
+                    <input id="updateGameData" type="button" value="Update Data" />
+                    <input id="inventoryMode" type="button" value="Switch to Inventory Builder" />
                 </div>
             </div>
             <div id="graph-accordion" class="accordion start-closed" style="display:none;">
@@ -83,15 +83,15 @@
                 <div id="filters">
                     <fieldset>
                         <span>Card Type:</span>
-                        <input type="button" value="Commander" onclick="filterType(this, '1')" />
-                        <input type="button" value="Unit" onclick="filterType(this, '2')" />
-                        <input type="button" value="Trap" onclick="filterType(this, '3')" />
+                        <input name="CardType" type="button" value="Commander" data-filter="1" />
+                        <input name="CardType" type="button" value="Unit" data-filter="2" />
+                        <input name="CardType" type="button" value="Trap" data-filter="3" />
                     </fieldset>
                     <fieldset>
                         <span>Fusion:</span>
-                        <input type="image" title="Single Fused" name="fusion" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
-                        <input type="image" title="Dual Fused" name="fusion" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
-                        <input type="image" title="Quad Fused" name="fusion" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
+                        <input type="image" title="Single Fused" name="fusion" src="res/cardAssets/Singlefuse.png" data-filter="" />
+                        <input type="image" title="Dual Fused" name="fusion" src="res/cardAssets/Dualfuse.png" data-filter="1" />
+                        <input type="image" title="Quad Fused" name="fusion" src="res/cardAssets/Quadfuse.png" data-filter="2" />
                     </fieldset>
                     <fieldset>
                         <span>Set:</span>
@@ -174,10 +174,10 @@
                     <div id="name-container" style="white-space:nowrap; margin: 5px 0;">
                         <div class="ui-widget">
                             <label for="nameFilter"><strong>Name Filter:</strong></label><br />
-                            <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+                            <input id="nameFilter" type="text" value="" size="100" >
                         </div>
                     </div>
-                    <input type="button" id="clear-filters" value="Clear All" onclick="clearFilters()" />
+                    <input type="button" id="clear-filters" value="Clear All" />
                     <br />
                 </div>
             </div>
@@ -192,35 +192,35 @@
                             </td>
                             <td style="min-width:5px;"></td>
                             <td>
-                                <img style="width:12px" src="res/misc/Arrow.png" onclick="pageUp();">
+                                <img id="pageUp" style="width:12px" src="res/misc/Arrow.png" >
                             </td>
                             <td style="min-width:45px; text-align:center;">
                                 <div id="pageNumber"></div>
                             </td>
                             <td>
-                                <img class="flip" style="width:12px" src="res/misc/Arrow.png" onclick="pageDown();">
+                                <img id="pageDown" class="flip" style="width:12px" src="res/misc/Arrow.png" >
                             </td>
                             <td style="width:100%;"></td>
                             <td>
                                 <div id="advancedMenu" class="dropdown">
                                     <div><u>Advanced Options</u></div>
                                     <div id="dropdown" class="dropdown-content">
-                                        <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
+                                        <input id="toggleUpgrades" type="checkbox" class="ui-widget-content ui-corner-all" />
                                         <span>All Upgrade Levels</span>
                                         <br />
 
-                                        <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
+                                        <input id="skillDetails" type="checkbox" class="ui-widget-content ui-corner-all" />
                                         <span>Compact Skills</span>
                                         <br />
 
-                                        <label class="button" onclick="loadInventory();"><b>Set Inventory</b></label>
+                                        <label id="loadInventory" class="button"><b>Set Inventory</b></label>
                                     </div>
                                 </div>
                             </td>
                             <td style="min-width:10px;"></td>
                             <td>
                                 Sort By:
-                                <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortAndDraw(this);">
+                                <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all">
                                     <option value="id">ID</option>
                                     <option value="type">Faction</option>
                                     <option value="sub_type">Sub-Faction</option>
@@ -329,12 +329,6 @@
                         <select name="runeChoices" id="runeChoices" class="ui-widget-content ui-corner-all">
                             <option value=""></option>
                         </select>
-                        <!--
-                    <label style="float:left;">
-                        <input type="checkbox" id="showUnreleased" onclick="toggleUnreleasedRunes(this);" />
-                        Show Unreleased
-                    </label>
-                        -->
                     </div>
                 </fieldset>
             </form>
