@@ -14,8 +14,8 @@
 
     <script src="dist/vendor.js"></script>
     <script src="dist/data.min.js"></script>
-    <script src="dist/shared.min.js?839732c678fdc1a1"></script>
-    <script src="dist/practice.min.js?ca7e4dc11ce4171c"></script>
+    <script src="dist/shared.min.js?7602131d43b79892"></script>
+    <script src="dist/practice.min.js?a48476f303b8b19a"></script>
 </head>
 <body ng-controller="SimulatorCtrl">
     <header id="header"></header>
@@ -104,7 +104,7 @@
                                             <div><span class="label">Raid/Dungeon:</span></div>
                                             <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
                                                 <option default value="" class="grey">Select a Raid/Dungeon...</option>
-                                                <option ng-repeat="raid in filteredRaids()" value="{{raid.id}}" class="black">{{raid.name}}</option>
+                                                <option ng-repeat="raid in filteredRaids" value="{{raid.id}}" class="black">{{raid.name}}</option>
                                             </select>
                                             <input type="NUMBER" id="raid_level" min="1" max="40" step="1" value="25" size="6">
                                         </div>
@@ -131,14 +131,14 @@
                                 </div>
                                 <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
                                 <select id="tower_type" ng-disabled="!tower">
-                                    <option ng-repeat="type in towerTypes()" value="{{type.id}}">{{type.name}}</option>
+                                    <option ng-repeat="type in towerTypes" value="{{type.id}}">{{type.name}}</option>
                                 </select>
                             </div>
                             <div id="bge-container">
                                 <h6>Battleground Effects</h6>
                                 <div style="position: relative; width: 200px; height: 103px; overflow-y: scroll;">
                                     <div id="battleground" style="position: absolute; width: 100%;">
-                                        <div ng-repeat="BGE in selectableBattlegrounds()" class="tooltip-container">
+                                        <div ng-repeat="BGE in selectableBattlegrounds" class="tooltip-container">
                                             <input type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>
                                         </div>
@@ -149,7 +149,7 @@
                                 <h6>Personal Battlegrounds</h6>
                                 <div style="position: relative; width: 200px; height: 40px; overflow-y: scroll;">
                                     <div id="self-battleground" style="position: absolute; width: 100%;">
-                                        <div ng-repeat="BGE in personalBattlegrounds()" class="tooltip-container">
+                                        <div ng-repeat="BGE in personalBattlegrounds" class="tooltip-container">
                                             <input type="checkbox" name="self-battleground" id="self-battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="self-battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>
                                         </div>
@@ -160,7 +160,7 @@
                                 <h6>Enemy Battlegrounds</h6>
                                 <div style="position: relative; width: 200px; height: 40px; overflow-y: scroll;">
                                     <div id="enemy-battleground" style="position: absolute; width: 100%;">
-                                        <div ng-repeat="BGE in personalBattlegrounds()" class="tooltip-container">
+                                        <div ng-repeat="BGE in personalBattlegrounds" class="tooltip-container">
                                             <input type="checkbox" name="enemy-battleground" id="enemy-battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="enemy-battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>
                                         </div>
