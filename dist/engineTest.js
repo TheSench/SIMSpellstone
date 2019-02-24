@@ -3332,14 +3332,10 @@ define('matchStats', [], function() {
 			}
 		}
 
-		[
-			{ logName: 'Shroud', status: 'stasis', value: shrouded },
-			{ logName: 'Armor', status: 'armored', value: armor }
-		].forEach(function(modifierInfo) {
-			var value = modifierInfo.value;
+		function applyModifier(logName, status, value) {
 			if (value) {
-				value += unitInfoHelper.getEnhancement(target, modifierInfo.status, value);
-				damageModifiers[modifierInfo.logName] = -value;
+				value += unitInfoHelper.getEnhancement(target, status, value);
+				damageModifiers[logName] = -value;
 				// Remove pierce from Shroud
 				if (remainingPierce) {
 					damageModifiers.Pierce = pierce;
@@ -3351,7 +3347,9 @@ define('matchStats', [], function() {
 				}
 				damage -= value;
 			}
-		});
+		}
+		applyModifier('Shroud', 'stasis', shrouded);
+		applyModifier('Armor', 'armored', armor);
 
 		if (damage < 0) damage = 0;
 

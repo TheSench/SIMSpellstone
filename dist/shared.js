@@ -1021,6 +1021,7 @@ define('dataUpdater', [
     };
 
     var defaultStatusValues = {
+        enhanced: {},
         // Attack Modifiers
         attack_berserk: 0,
         attack_valor: 0,
@@ -1057,9 +1058,37 @@ define('dataUpdater', [
     function applyDefaultStatuses(card) {
         card.removeImbue();
         card.enhanced = {};
-        for (var status in defaultStatusValues) {
-            card[status] = defaultStatusValues[status];
-        }
+        // Attack Modifiers
+        card.attack_berserk = 0;
+        card.attack_valor = 0;
+        card.attack_rally = 0;
+        card.attack_weaken = 0;
+        card.attack_corroded = 0;
+        card.corrosion_timer = 0;
+        // Mark
+        card.mark_target = 0;
+        // Other Statuses
+        // Numeric-Statuses
+        card.corroded = 0;
+        card.enfeebled = 0;
+        card.enraged = 0;
+        card.envenomed = 0;
+        card.heartseeker = 0;
+        card.imbued = 0;
+        card.invisible = 0;
+        card.nullified = 0;
+        card.poisoned = 0;
+        card.protected = 0;
+        card.scorched = 0;
+        card.warded = 0;
+        // Boolean-Status
+        card.jammed = false;
+        card.jammedSelf = false;
+        card.silenced = false;
+        card.valor_triggered = false;
+        card.dualstrike_triggered = false;
+        card.ondeath_triggered = false;
+        card.reanimated = false;
     }
 
     function addRunes(card, runes) {
