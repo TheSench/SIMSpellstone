@@ -54,7 +54,7 @@
 
     simController.startsim();
 
-    simController.endSimsCallback = function() {
+    simController.onEndSims = function() {
         
         var elapse = matchTimer.elapsed();
         var simpersec = (matchStats.matchesPlayed / elapse).toFixed(2);

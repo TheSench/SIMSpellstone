@@ -336,12 +336,12 @@ define('matchStats', [], function() {
 ) {
     'use strict';
 
-    var SIM_CONTROLLER = {
+    var api = {
         debugEnd: debugEnd,
         onDebugEnd: noop,
 
-        endSimsCallback: null,
-        stop_sims_callback: null,
+        onEndSims: noop,
+        onStopSims: noop,
         setDebugLogger: setDebugLogger
     };
 
@@ -354,25 +354,22 @@ define('matchStats', [], function() {
         SIMULATOR.remainingSims = 0;
         matchTimer.stop();
 
-        var result = SIM_CONTROLLER.processSimResult();
+        var result = api.processSimResult();
         var matchPoints;
         if (SIMULATOR.config.cpuHash) {
             matchPoints = SIMULATOR.calculatePoints();
         }
 
-        SIM_CONTROLLER.onDebugEnd(result, matchPoints);
+        api.onDebugEnd(result, matchPoints);
 
-        if (SIM_CONTROLLER.endSimsCallback) SIM_CONTROLLER.endSimsCallback();
+        api.onEndSims();
     }
 
     function setDebugLogger() {
         this.logger = (debugLog.enabled ? debugMessages : debugDisabled);
     }
 
-    // temporary stop-gap so HTML files can reference this module
-    window.SIM_CONTROLLER = SIM_CONTROLLER;
-
-    return SIM_CONTROLLER;
+    return api;
 });;define('bgeApi', [
     'log',
     'cardApi',
@@ -3796,7 +3793,7 @@ define('matchStats', [], function() {
         }
         ui.show();
 
-        if (simController.stop_sims_callback) simController.stop_sims_callback();
+        simController.onStopSims();
     };
 
     simController.clearStatusTimeout = function clearStatusTimeout() {
@@ -3864,7 +3861,7 @@ define('matchStats', [], function() {
 
             ui.show();
 
-            if (simController.endSimsCallback) simController.endSimsCallback();
+            simController.onEndSims();
         }
     }
 
@@ -3987,7 +3984,7 @@ define('matchStats', [], function() {
 
     simController.startsim();
 
-    simController.endSimsCallback = function() {
+    simController.onEndSims = function() {
         
         var elapse = matchTimer.elapsed();
         var simpersec = (matchStats.matchesPlayed / elapse).toFixed(2);

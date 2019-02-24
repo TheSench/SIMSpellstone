@@ -1020,41 +1020,6 @@ define('dataUpdater', [
         applyDefaultStatuses: applyDefaultStatuses
     };
 
-    var defaultStatusValues = {
-        enhanced: {},
-        // Attack Modifiers
-        attack_berserk: 0,
-        attack_valor: 0,
-        attack_rally: 0,
-        attack_weaken: 0,
-        attack_corroded: 0,
-        corrosion_timer: 0,
-        // Mark
-        mark_target: 0,
-        // Other Statuses
-        // Numeric-Statuses
-        corroded: 0,
-        enfeebled: 0,
-        enraged: 0,
-        envenomed: 0,
-        heartseeker: 0,
-        imbued: 0,
-        invisible: 0,
-        nullified: 0,
-        poisoned: 0,
-        protected: 0,
-        scorched: 0,
-        warded: 0,
-        // Boolean-Status
-        jammed: false,
-        jammedSelf: false,
-        silenced: false,
-        valor_triggered: false,
-        dualstrike_triggered: false,
-        ondeath_triggered: false,
-        reanimated: false
-    };
-
     function applyDefaultStatuses(card) {
         card.removeImbue();
         card.enhanced = {};

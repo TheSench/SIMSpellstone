@@ -70,7 +70,7 @@ define('singleThreaded', [
         }
         ui.show();
 
-        if (simController.stop_sims_callback) simController.stop_sims_callback();
+        simController.onStopSims();
     };
 
     simController.clearStatusTimeout = function clearStatusTimeout() {
@@ -138,7 +138,7 @@ define('singleThreaded', [
 
             ui.show();
 
-            if (simController.endSimsCallback) simController.endSimsCallback();
+            simController.onEndSims();
         }
     }
 
