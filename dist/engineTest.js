@@ -3455,7 +3455,7 @@ define('matchStats', [], function() {
 				}
 
 				current_assault.health_left += leech_health;
-				simController.logger.logSiphon(current_assault, 'siphons', leech_health);
+				simController.logger.logGainHealth(current_assault, 'siphons', leech_health);
 			}
 
 			if (current_assault.reinforce) {
