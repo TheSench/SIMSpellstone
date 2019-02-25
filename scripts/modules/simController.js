@@ -17,7 +17,8 @@ define('simController', [
 
         onEndSims: noop,
         onStopSims: noop,
-        setDebugLogger: setDebugLogger
+        setDebugLogger: setDebugLogger,
+        getLogFunction: getLogFunction
     };
 
     function noop() {}
@@ -42,6 +43,18 @@ define('simController', [
 
     function setDebugLogger() {
         this.logger = (debugLog.enabled ? debugMessages : debugDisabled);
+    }
+
+    function getLogFunction() {
+        if(debugLog.enabled) {
+            var logger = this.logger;
+            return function logMessage(messageType) {
+                var logArgs = [].slice.call(arguments, 1);
+                logger[messageType].apply(logger, logArgs);
+            };
+        } else {
+            return noop;
+        }
     }
 
     return api;

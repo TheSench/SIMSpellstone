@@ -1,13 +1,28 @@
-define('matchStats', [], function() {
-    return {
-       matchesPlayed: 0,
-       matchesWon: 0,
-       matchesLost: 0,
-       matchesDrawn: 0,
-       totalTurns: 0,
-       totalPoints: 0
-    };
- });;define('debugLog', [], function() {
+define('matchStats', [], function () {
+   return {
+      matchesPlayed: 0,
+      matchesWon: 0,
+      matchesLost: 0,
+      matchesDrawn: 0,
+      totalTurns: 0,
+      totalPoints: 0,
+      processMatch: function processMatch(simulator, result) {
+         // Increment wins/losses/games
+         if (result === 'draw') {
+            this.matchesDrawn++;
+         } else if (result) {
+            this.matchesWon++;
+         } else {
+            this.matchesLost++;
+         }
+         this.totalPoints += simulator.calculatePoints();
+         this.matchesPlayed++;
+
+         // Increment total turn count
+         this.totalTurns += simulator.simulation_turns;
+      }
+   };
+});;define('debugLog', [], function() {
     var api = {
         enabled: false,
         getLog: getLog,
@@ -399,13 +414,14 @@ function(
 ) {
     'use strict';
 
-    var SIM_CONTROLLER = {
+    var api = {
         debugEnd: debugEnd,
         onDebugEnd: noop,
 
         onEndSims: noop,
         onStopSims: noop,
-        setDebugLogger: setDebugLogger
+        setDebugLogger: setDebugLogger,
+        getLogFunction: getLogFunction
     };
 
     function noop() {}
@@ -417,22 +433,34 @@ function(
         SIMULATOR.remainingSims = 0;
         matchTimer.stop();
 
-        var result = SIM_CONTROLLER.processSimResult();
+        var result = api.processSimResult();
         var matchPoints;
         if (SIMULATOR.config.cpuHash) {
             matchPoints = SIMULATOR.calculatePoints();
         }
 
-        SIM_CONTROLLER.onDebugEnd(result, matchPoints);
+        api.onDebugEnd(result, matchPoints);
 
-        SIM_CONTROLLER.onEndSims();
+        api.onEndSims();
     }
 
     function setDebugLogger() {
         this.logger = (debugLog.enabled ? debugMessages : debugDisabled);
     }
 
-    return SIM_CONTROLLER;
+    function getLogFunction() {
+        if(debugLog.enabled) {
+            var logger = this.logger;
+            return function logMessage(messageType) {
+                var logArgs = [].slice.call(arguments, 1);
+                logger[messageType].apply(logger, logArgs);
+            };
+        } else {
+            return noop;
+        }
+    }
+
+    return api;
 });;define('bgeApi', [
     'log',
     'cardApi',
@@ -2127,6 +2155,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 	var cpuDeckCached;
 	var cpuCardsCached;
 	var playerCardsCached;
+	var logMessage;
 
 	// Play card
 	function playCard(card, p, turn, quiet) {
@@ -2144,7 +2173,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 		}
 
 		if (!quiet) {
-			simController.logger.logCardPlayed(field[p].commander, card);
+			logMessage('logCardPlayed', field[p].commander, card);
 		}
 
 		if (card.isTrap()) {
@@ -2195,13 +2224,13 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			var current_assault = units[key];
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
-				simController.logger.logDead(current_assault);
+				logMessage('logDead', current_assault);
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						simController.logger.logDead(current_assault);
+						logMessage('logDead', current_assault);
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
@@ -2262,7 +2291,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 	}
 
 	function notImplemented(sourceUnit, skill) {
-		simController.logger.logNotImplemented(sourceUnit, skill);
+		logMessage('logNotImplemented', sourceUnit, skill);
 		return 0;
 	}
 
@@ -2295,12 +2324,12 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 		if (!len) return;
 
 		if (sourceCard.silenced) {
-			simController.logger.logSilenced(sourceCard);
+			logMessage('logSilenced', sourceCard);
 			return;
 		}
 
 		var dualstrike = sourceCard.dualstrike_triggered;
-		simController.logger.logDualstrike(sourceCard);
+		logMessage('logDualstrike', sourceCard);
 
 		var activations = (dualstrike ? 2 : 1);
 		var isAlive = makeLivenessCheck(sourceCard);
@@ -2384,7 +2413,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				sourceUnit.scorched.amount += scorch;
 				sourceUnit.scorched.timer = 2;
 			}
-			simController.logger.logScorch(sourceUnit, scorch);
+			logMessage('logScorch', sourceUnit, scorch);
 
 			return 1;
 		},
@@ -2434,7 +2463,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				simController.logger.logScorch(sourceUnit, scorch, target);
+				logMessage('logScorch', sourceUnit, scorch, target);
 
 				affected++;
 			}
@@ -2492,7 +2521,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'protects', target);
+					logMessage('logNullified', sourceUnit, 'protects', target);
 					continue;
 				}
 
@@ -2511,7 +2540,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				if (additionalStatus) {
 					target[additionalStatus] = (target[additionalStatus] || 0) + amount;
 				}
-				simController.logger.logStatusEffect(sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
+				logMessage('logStatusEffect', sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
 			}
 
 			return affected;
@@ -2558,7 +2587,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'heals', target);
+					logMessage('logNullified', sourceUnit, 'heals', target);
 					continue;
 				}
 
@@ -2572,7 +2601,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 				if (amount > target['health'] - target['health_left']) amount = target['health'] - target['health_left'];
 				target['health_left'] += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'heals', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'heals', target, enhanced, amount);
 			}
 
 			return affected;
@@ -2624,7 +2653,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Evade
 				if (targetUnit.invisible) {
 					targetUnit.invisible--;
-					simController.logger.logInvisibile(sourceUnit, 'bolts', targetUnit);
+					logMessage('logInvisibile', sourceUnit, 'bolts', targetUnit);
 					continue;
 				}
 
@@ -2645,7 +2674,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				}
 
 				doDamage(sourceUnit, targetUnit, strike_damage, function () {
-					simController.logger.logDamage(sourceUnit, targetUnit, 'Strike', 'bolts', damageInfo, function() {
+					logMessage('logDamage', sourceUnit, targetUnit, 'Strike', 'bolts', damageInfo, function() {
 						if (poisonDamage && !targetUnit.isAlive()) {
 							return ' and inflicts poison(' + poisonDamage + ') on it';
 						}
@@ -2706,7 +2735,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					simController.logger.logInvisibile(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target);
+					logMessage('logInvisibile', sourceUnit, 'intensifies ' + intensifiedFields + ' on', target);
 					continue;
 				}
 
@@ -2719,7 +2748,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					target.poisoned += intensify;
 				}
 
-				simController.logger.logStatusEffect(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target, enhanced, intensify);
+				logMessage('logStatusEffect', sourceUnit, 'intensifies ' + intensifiedFields + ' on', target, enhanced, intensify);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -2766,7 +2795,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 			sourceUnit.jammed = true;
 			sourceUnit.jammedSelf = true;
-			simController.logger.logStatusEffect(sourceUnit, 'freezes', sourceUnit);
+			logMessage('logStatusEffect', sourceUnit, 'freezes', sourceUnit);
 
 			return 1;
 		},
@@ -2806,14 +2835,14 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					target.invisible--;
 					// Missed - retry next turn
 					skill.countdown = 0;
-					simController.logger.logInvisibile(sourceUnit, 'freezes', target);
+					logMessage('logInvisibile', sourceUnit, 'freezes', target);
 					continue;
 				}
 
 				affected++;
 
 				target.jammed = true;
-				simController.logger.logStatusEffect(sourceUnit, 'freezes', target);
+				logMessage('logStatusEffect', sourceUnit, 'freezes', target);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -2860,7 +2889,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Evade
 				if (targetUnit.invisible) {
 					targetUnit.invisible--;
-					simController.logger.logInvisibile(sourceUnit, 'breathes frost at', targetUnit);
+					logMessage('logInvisibile', sourceUnit, 'breathes frost at', targetUnit);
 					continue;
 				}
 
@@ -2874,7 +2903,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				frost_damage = damageInfo.damage;
 
 				doDamage(sourceUnit, targetUnit, frost_damage, function () {
-					simController.logger.logDamage(sourceUnit, targetUnit, 'Frostbreath', 'breathes frost at', damageInfo);
+					logMessage('logDamage', sourceUnit, targetUnit, 'Frostbreath', 'breathes frost at', damageInfo);
 				});
 
 				if (targetUnit.backlash) {
@@ -2901,7 +2930,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 			target.heartseeker += heartseeker;
 			target.enfeebled += heartseeker;
-			simController.logger.logInflicts(sourceUnit, 'heartseeker', heartseeker, target);
+			logMessage('logInflicts', sourceUnit, 'heartseeker', heartseeker, target);
 
 			return 1;
 		},
@@ -3001,14 +3030,14 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			// Check Evade
 			if (target.invisible) {
 				target.invisible--;
-				simController.logger.logInvisibile(sourceUnit, skillVerb, target);
+				logMessage('logInvisibile', sourceUnit, skillVerb, target);
 				continue;
 			}
 
 			affected++;
 
 			doApplyDebuff(target, amount);
-			simController.logger.logStatusEffect(sourceUnit, skillVerb, target, enhanced, amount);
+			logMessage('logStatusEffect', sourceUnit, skillVerb, target, enhanced, amount);
 
 			if (target.backlash) {
 				backlash(sourceUnit, target);
@@ -3065,7 +3094,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				}
 
 				target.attack_rally += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'enlarges', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'enlarges', target, enhanced, amount);
 
 				affected++;
 			}
@@ -3117,7 +3146,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'empowers', target);
+					logMessage('logNullified', sourceUnit, 'empowers', target);
 					continue;
 				}
 
@@ -3130,7 +3159,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				}
 
 				target.attack_rally += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'empowers', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'empowers', target, enhanced, amount);
 			}
 
 			return affected;
@@ -3164,11 +3193,11 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
-						simController.logger.logNullified(sourceUnit, 'activates legion and empowers', target);
+						logMessage('logNullified', sourceUnit, 'activates legion and empowers', target);
 					} else {
 						affected++;
 						target.attack_rally += amount;
-						simController.logger.logStatusEffect(sourceUnit, 'activates legion and empowers', target, enhanced, amount);
+						logMessage('logStatusEffect', sourceUnit, 'activates legion and empowers', target, enhanced, amount);
 					}
 				}
 				target_key += 2;
@@ -3207,7 +3236,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 			if (fervorAmount) {
 				sourceUnit['attack_rally'] += fervorAmount;
-				simController.logger.logStatusEffect(sourceUnit, 'fervors', target, enhanced, fervorAmount);
+				logMessage('logStatusEffect', sourceUnit, 'fervors', target, enhanced, fervorAmount);
 				return 1;
 			} else {
 				return 0;
@@ -3258,7 +3287,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					// Check Evade
 					if (targetUnit.invisible) {
 						targetUnit.invisible--;
-						simController.logger.logInvisibile(sourceUnit, 'throws a bomb at', targetUnit);
+						logMessage('logInvisibile', sourceUnit, 'throws a bomb at', targetUnit);
 						continue;
 					}
 
@@ -3271,7 +3300,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					strike_damage = damageInfo.damage;
 
 					doDamage(sourceUnit, targetUnit, strike_damage, function () {
-						simController.logger.logDamage(sourceUnit, targetUnit, 'Barrage', 'throws a bomb at', damageInfo);
+						logMessage('logDamage', sourceUnit, targetUnit, 'Barrage', 'throws a bomb at', damageInfo);
 					});
 				}
 			}
@@ -3327,7 +3356,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'enhances', target);
+					logMessage('logNullified', sourceUnit, 'enhances', target);
 					continue;
 				}
 
@@ -3342,7 +3371,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					enhancements[s] = -mult;
 					var amountEnhanced = (mult * 100) + '%';
 				}
-				simController.logger.logStatusEffect(sourceUnit, 'enhances ' + s + ' of ', target, 0, amountEnhanced);
+				logMessage('logStatusEffect', sourceUnit, 'enhances ' + s + ' of ', target, 0, amountEnhanced);
 			}
 
 			return affected;
@@ -3389,7 +3418,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'enrages', target);
+					logMessage('logNullified', sourceUnit, 'enrages', target);
 					continue;
 				}
 
@@ -3400,7 +3429,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				}
 
 				target['enraged'] += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'enrages', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'enrages', target, enhanced, amount);
 			}
 
 			return affected;
@@ -3456,7 +3485,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'enhances', target);
+					logMessage('logNullified', sourceUnit, 'enhances', target);
 					continue;
 				}
 
@@ -3465,10 +3494,10 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = (enhancements[s] || 0) + x;
-					simController.logger.logImbuesNew(sourceUnit, target, s, x);
+					logMessage('logImbuesNew', sourceUnit, target, s, x);
 				} else {
 					target.imbue(skill);
-					simController.logger.logImbuesExisting(sourceUnit, target, s, x);
+					logMessage('logImbuesExisting', sourceUnit, target, s, x);
 				}
 			}
 
@@ -3521,7 +3550,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				target.enfeebled += mark;
 				sourceUnit.mark_target = target.uid;
 
-				simController.logger.logStatusEffect(sourceUnit, 'marks', target, enhanced, mark);
+				logMessage('logStatusEffect', sourceUnit, 'marks', target, enhanced, mark);
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -3546,7 +3575,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			}
 
 			doDamage(sourceUnit, targetUnit, damage, function () {
-				simController.logger.logDamage(sourceUnit, targetUnit, 'Ambush', 'ambushes', {
+				logMessage('logDamage', sourceUnit, targetUnit, 'Ambush', 'ambushes', {
 					originalDamage: damage,
 					damage: damage
 				});
@@ -3568,7 +3597,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			}
 
 			target.timer += slow;
-			simController.logger.logStatusEffect(sourceUnit, 'slows', target, 0, slow);
+			logMessage('logStatusEffect', sourceUnit, 'slows', target, 0, slow);
 
 			return 1;
 		}
@@ -3596,7 +3625,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 			playCard(unearthedCard, dying.owner, true);
 
-			simController.logger.logAction(unearthedCard, 'is unearthed');
+			logMessage('logAction', unearthedCard, 'is unearthed');
 
 			return 1;
 		},
@@ -3611,7 +3640,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			dying.health_left = skill.x;
 			dying.reanimated = true;
 
-			simController.logger.logReanimate(dying);
+			logMessage('logReanimate', dying);
 
 			return 1;
 		}
@@ -3622,7 +3651,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 	function doActivationSkills(sourceUnit) {
 
 		if (sourceUnit.silenced) {
-			simController.logger.logSilenced(sourceUnit);
+			logMessage('logSilenced', sourceUnit);
 			return;
 		}
 
@@ -3666,7 +3695,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 		SIMULATOR.deck = deck;
 
 		// Set up empty field
-		var field = {
+		SIMULATOR.field = {
 			cpu: {
 				assaults: []
 			},
@@ -3674,7 +3703,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				assaults: []
 			}
 		};
-		SIMULATOR.field = field;
 
 		// Load player deck
 		if (playerCardsCached) {
@@ -3721,6 +3749,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 	// Simulate one game
 	function simulate(config) {
+		logMessage = simController.getLogFunction();
 		simulating = true;
 
 		initializeBattle(config);
@@ -3873,7 +3902,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				simController.logger.logTurnEnd(turn);
+				logMessage('logTurnEnd', turn);
 				return true;
 			}
 		}
@@ -3909,7 +3938,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			var o = first_player;
 		}
 
-		simController.logger.logTurnStart(turn, p, field, deck);
+		logMessage('logTurnStart', turn, p, field, deck);
 
 		var field_p = field[p];
 		var field_o = field[o];
@@ -3927,7 +3956,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			if (current_assault.timer > 0) {
 				if (turn !== 3 || !SIMULATOR.config.tournamentMode) {
 					current_assault.timer--;
-					simController.logger.logAction(current_assault, 'reduces its timer');
+					logMessage('logAction', current_assault, 'reduces its timer');
 				}
 			}
 
@@ -3937,9 +3966,9 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				var enemy = field_o_assaults[i];
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
 					current_assault.attack_valor += valor;
-					simController.logger.logGainAttack(current_assault, 'activates valor', valor);
+					logMessage('logGainAttack', current_assault, 'activates valor', valor);
 				} else {
-					simController.logger.logCannotValor(current_assault, enemy);
+					logMessage('logCannotValor', current_assault, enemy);
 				}
 			}
 
@@ -4172,14 +4201,14 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 			// Check jammed ("frozen")
 			if (currentUnit['jammed']) {
-				simController.logger.logFrozen(currentUnit);
+				logMessage('logFrozen', currentUnit);
 				continue;
 			}
 
 			var activations = 1;
 			if (currentUnit.dualstrike_triggered) {
 				activations++;
-				simController.logger.logDualstrike(currentUnit);
+				logMessage('logDualstrike', currentUnit);
 			}
 
 			for (; activations > 0; activations--) {
@@ -4195,7 +4224,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				// Check attack
 				// - check rally and weaken
 				if (!currentUnit.hasAttack()) {
-					if (currentUnit.permanentAttack() > 0) simController.logger.logWeakened(currentUnit);
+					if (currentUnit.permanentAttack() > 0) logMessage('logWeakened', currentUnit);
 					continue;
 				}
 
@@ -4225,7 +4254,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		removeDead();
 
-		simController.logger.logTurnEnd(turn);
+		logMessage('logTurnEnd', turn);
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -4294,7 +4323,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 		var dualStrike = unit.flurry;
 		if (dualStrike && dualStrike.countdown) {
 			dualStrike.countdown--;
-			simController.logger.logChargeSkill(unit, dualStrike);
+			logMessage('logChargeSkill', unit, dualStrike);
 		}
 	}
 
@@ -4303,7 +4332,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			var skill = skills[i];
 			if (skill.countdown) {
 				skill.countdown--;
-				simController.logger.logChargeSkill(unit, skill);
+				logMessage('logChargeSkill', unit, skill);
 			}
 		}
 	}
@@ -4337,7 +4366,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				}
 
 				current_assault.health_left += regen_health;
-				simController.logger.logGainHealth(current_assault, 'regenerates', regen_health);
+				logMessage('logGainHealth', current_assault, 'regenerates', regen_health);
 			}
 
 			// Poison
@@ -4353,7 +4382,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					simController.logger.logDamage(null, current_assault, 'Poison', 'poison damage', damageInfo);
+					logMessage('logDamage', null, current_assault, 'Poison', 'poison damage', damageInfo);
 				});
 			}
 
@@ -4370,7 +4399,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					simController.logger.logDamage(null, current_assault, 'Venom', 'venom damage', damageInfo);
+					logMessage('logDamage', null, current_assault, 'Venom', 'venom damage', damageInfo);
 				});
 			}
 
@@ -4387,7 +4416,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					simController.logger.logDamage(null, current_assault, 'Scorch', 'scorch damage', damageInfo, function() {
+					logMessage('logDamage', null, current_assault, 'Scorch', 'scorch damage', damageInfo, function() {
 						if (current_assault.isAlive() && !current_assault.scorched) {
 							return ' and scorch wears off';
 						}
@@ -4409,11 +4438,11 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				if (corroded.timer < 0) {
 					current_assault.corroded = false;
 					current_assault.attack_corroded = 0;
-					simController.logger.logAction(current_assault, 'recovers from corrosion');
+					logMessage('logAction', current_assault, 'recovers from corrosion');
 				} else {
 					var corrosion = corroded.amount;
 					current_assault.attack_corroded = corrosion;
-					simController.logger.logAction(current_assault, 'loses ' + corrosion + ' attack to corrosion');
+					logMessage('logAction', current_assault, 'loses ' + corrosion + ' attack to corrosion');
 				}
 			}
 
@@ -4435,19 +4464,19 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			if (!target.taunt) {
 				// Check left first, then right
 				var adjacent = field_o_assaults[current_assault.key - 1];
-				if (adjacent && adjacent.taunt) {
+				if (adjacent && adjacent.taunt && adjacent.isalive()) {
 					target = adjacent;
 					taunted = true;
 				} else {
 					var adjacent = field_o_assaults[current_assault.key + 1];
-					if (adjacent && adjacent.taunt) {
+					if (adjacent && adjacent.taunt && adjacent.isalive()) {
 						target = adjacent;
 						taunted = true;
 					}
 				}
 			}
 			if (taunted) {
-				simController.logger.logAction(target, 'taunts', current_assault);
+				logMessage('logAction', target, 'taunts', current_assault);
 			}
 		}
 
@@ -4494,22 +4523,21 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				if (remainingPierce >= protect) {
 					remainingPierce -= protect;
 					protect = 0;
-					target.protected = 0;
 				} else {
 					protect -= remainingPierce;
-					target.protected -= pierce;
 					remainingPierce = 0;
 				}
 			}
 			if (protect) {
 				if (damage >= protect) {
 					damage -= protect;
-					target.protected = 0;
+					protect = 0;
 				} else {
-					target.protected -= damage;
+					protect -= damage;
 					damage = 0;
 				}
 			}
+			target.protected = protect;
 		}
 
 		function applyModifier(logName, status, value) {
@@ -4537,7 +4565,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 		// Deal damage to target
 		doDamage(current_assault, target, damage, function () {
-			simController.logger.logDamage(current_assault, target, 'Attack', 'attacks', damageInfo);
+			logMessage('logDamage', current_assault, target, 'Attack', 'attacks', damageInfo);
 		});
 
 		events.onUnitAttacked(field, turn, current_assault);
@@ -4559,7 +4587,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					simController.logger.logInflicts(current_assault, 'poison', poison, target);
+					logMessage('logInflicts', current_assault, 'poison', poison, target);
 				}
 			}
 
@@ -4577,7 +4605,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					var hexIncrease = venom - target.envenomed;
 					target.envenomed = venom;
 					target.enfeebled += hexIncrease;
-					simController.logger.logInflicts(current_assault, 'venom', venom, target);
+					logMessage('logInflicts', current_assault, 'venom', venom, target);
 				}
 			}
 
@@ -4589,7 +4617,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				simController.logger.logInflicts(current_assault, 'nullify', nullify, target);
+				logMessage('logInflicts', current_assault, 'nullify', nullify, target);
 			}
 
 			// Silence
@@ -4597,7 +4625,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
-				simController.logger.logInflicts(current_assault, 'silence', null, target);
+				logMessage('logInflicts', current_assault, 'silence', null, target);
 			}
 
 			// Daze
@@ -4610,7 +4638,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				simController.logger.logInflicts(current_assault, 'dazed', dazed, target);
+				logMessage('logInflicts', current_assault, 'dazed', dazed, target);
 			}
 		}
 
@@ -4633,7 +4661,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				}
 
 				current_assault.health_left += leech_health;
-				simController.logger.logGainHealth(current_assault, 'siphons', leech_health);
+				logMessage('logGainHealth', current_assault, 'siphons', leech_health);
 			}
 
 			if (current_assault.reinforce) {
@@ -4642,7 +4670,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
-				simController.logger.logStatusEffect(current_assault, 'reinforces', current_assault, enhanced, reinforce);
+				logMessage('logStatusEffect', current_assault, 'reinforces', current_assault, enhanced, reinforce);
 			}
 
 			// Counter
@@ -4668,7 +4696,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				simController.logger.logInflicts(target, 'counterburn', scorch, current_assault);
+				logMessage('logInflicts', target, 'counterburn', scorch, current_assault);
 			}
 
 			// Counterpoison
@@ -4680,7 +4708,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					simController.logger.logInflicts(target, 'counterpoison', poison, current_assault);
+					logMessage('logInflicts', target, 'counterpoison', poison, current_assault);
 				}
 			}
 
@@ -4693,7 +4721,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
 					target.attack_berserk += fury;
-					simController.logger.logGainAttack(target, 'activates fury', fury);
+					logMessage('logGainAttack', target, 'activates fury', fury);
 				}
 
 				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
@@ -4701,7 +4729,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
 			if (target.enraged > 0) {
 				target.attack_berserk += target.enraged;
-				simController.logger.logGainAttack(target, 'is enraged', target.enraged);
+				logMessage('logGainAttack', target, 'is enraged', target.enraged);
 			}
 
 			// Berserk
@@ -4713,28 +4741,28 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
-				simController.logger.logGainAttack(target, 'activates berserk', berserk);
+				logMessage('logGainAttack', target, 'activates berserk', berserk);
+			}
+			
+			// Corrosion
+			// - Target must have received some amount of damage
+			if (target.corrosive) {
+				var corrosion = target.corrosive || 0;
+				var enhanced = unitInfoHelper.getEnhancement(target, 'corrosive', corrosion);
+				corrosion += enhanced;
+				if (current_assault.corroded) {
+					current_assault.corroded.amount += corrosion;
+					current_assault.corroded.timer = 2;
+				} else {
+					current_assault.corroded = { amount: corrosion, timer: 2 };
+				}
+				logMessage('logInflicts', target, 'corrosion', corrosion, current_assault);
+				current_assault.attack_corroded = corrosion;
+				logMessage('logAction', current_assault, 'loses ' + corrosion + ' attack to corrosion');
 			}
 		}
 
 		// -- CHECK STATUS INFLICTION --
-
-		// Corrosion
-		// - Target must have received some amount of damage
-		if (target.corrosive) {
-			var corrosion = target.corrosive || 0;
-			var enhanced = unitInfoHelper.getEnhancement(target, 'corrosive', corrosion);
-			corrosion += enhanced;
-			if (current_assault.corroded) {
-				current_assault.corroded.amount += corrosion;
-				current_assault.corroded.timer = 2;
-			} else {
-				current_assault.corroded = { amount: corrosion, timer: 2 };
-			}
-			simController.logger.logInflicts(target, 'corrosion', corrosion, current_assault);
-			current_assault.attack_corroded = corrosion;
-			simController.logger.logAction(current_assault, 'loses ' + corrosion + ' attack to corrosion');
-		}
 
 		if (!current_assault.isAlive()) {
 			doOnDeathSkills(current_assault, target);
@@ -4749,7 +4777,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 		var damageInfo = modifySkillDamage(attacker, counterDamage, counterEnhancement, { enfeeble: true });
 
 		doDamage(defender, attacker, damageInfo.damage, function () {
-			simController.logger.logDamage(null, attacker, counterType, counterType.toLowerCase() + ' damage', damageInfo);
+			logMessage('logDamage', null, attacker, counterType, counterType.toLowerCase() + ' damage', damageInfo);
 		});
 	}
 
@@ -4904,7 +4932,8 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 	});
 
 	return SIMULATOR;
-});;define('singleThreaded', [
+});;
+define('singleThreaded', [
     'bgeApi',
     'matchTimer',
     'urlHelper',
@@ -4931,7 +4960,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         matchTimer.reset();
         debugLog.clear();
         matchStats.matchesPlayed = 0;
-        run_sims_batch = 0;
 
         var config = ui.getConfiguration();
         simController.setDebugLogger();
@@ -4956,7 +4984,7 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
-        simController.statusTimeout = setTimeout(runSims, 0, config);
+        simController.statusTimeout = setTimeout(runSims, 0, config, 0);
 
         return false;
     };
@@ -4969,7 +4997,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         simpersec = simpersec.toFixed(2);
         simulator.simulating = false;
 
-        // Stop the recursion
         if (!simulator.user_controlled) {
             ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
             ui.showWinrate();
@@ -4986,66 +5013,70 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         simController.statusTimeout = null;
     };
 
-    function runSims(config) {
+    function runSims(config, simsPerBatch) {
         if (simulator.user_controlled) {
-            if (runSim(config, true)) {
-                simController.debugEnd();
-            }
+            runUserControlledSim(config);
         } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
             runSim(config, true);
             simController.debugEnd();
         } else if (simulator.remainingSims > 0) {
-            // Interval output - speeds up simulations
-            if (run_sims_count >= run_sims_batch) {
-                var simpersecbatch = 0;
-                if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
-                    run_sims_count = 0;
-                    var elapse = matchTimer.elapsed();
-
-                    var batch_elapse = matchTimer.batchElapsed();
-                    if (batch_elapse === 0) {
-                        simpersecbatch = 0;
-                    } else {
-                        simpersecbatch = run_sims_batch / batch_elapse;
-                    }
-
-                    ui.setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
-                    ui.showWinrate();
-                }
-                run_sims_batch = 1;
-                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
-                    run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > simulator.remainingSims) // Also limit by how many sims are left
-                    run_sims_batch = simulator.remainingSims;
-
-                // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) {
-                    run_sims_batch = 1;
-                }
-
-                matchTimer.startBatch();
-                simController.statusTimeout = setTimeout(runSims, 1, config);
-                for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
-                    runSim(config);
-                }
-            }
+            runSimBatch(config, simsPerBatch);
         } else {
-            run_sims_count = 0;
-            run_sims_batch = 0;
-            matchTimer.stop();
-
-            var elapse = matchTimer.elapsed();
-            var simpersec = matchStats.matchesPlayed / elapse;
-            simpersec = simpersec.toFixed(2);
-
-            ui.displayText(debugLog.getLog());
-            ui.setSimStatus("Simulations complete.", elapse, simpersec);
-            ui.showWinrate();
-
-            ui.show();
-
-            simController.onEndSims();
+            finishedSims();
         }
+    }
+
+    function runUserControlledSim(config) {
+        if (runSim(config, true)) {
+            simController.debugEnd();
+        }
+    }
+
+    function runSimBatch(config, simsPerBatch) {
+        // Interval output - speeds up simulations
+        var simsPerSecondLastBatch = 0;
+        if (simsPerBatch > 0) { // Use simsPerBatch == 0 to imply a fresh set of simulations
+            simsPerSecondLastBatch = simsPerBatch / matchTimer.batchElapsed();
+
+            ui.setSimStatus("Running simulations...", matchTimer.elapsed(), simsPerSecondLastBatch.toFixed(1));
+            ui.showWinrate();
+        }
+
+        simsPerBatch = 1;
+        if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) {
+            // Batch messes up mass debug and loss debug! let's disable batch!
+        } else {
+            // If we can run more at one time, then let's try to
+            if (simsPerSecondLastBatch > simsPerBatch)  {
+                simsPerBatch = Math.ceil(simsPerSecondLastBatch / 8);
+            }
+            // Also limit by how many sims are left
+            if (simsPerBatch > simulator.remainingSims) {   
+                simsPerBatch = simulator.remainingSims;
+            }
+        }
+
+        matchTimer.startBatch();
+        simController.statusTimeout = setTimeout(runSims, 1, config, simsPerBatch);
+        for (var i = 0; i < simsPerBatch; i++) {  // Start a new batch
+            runSim(config);
+        }
+    }
+
+    function finishedSims() {
+        matchTimer.stop();
+
+        var elapse = matchTimer.elapsed();
+        var simpersec = matchStats.matchesPlayed / elapse;
+        simpersec = simpersec.toFixed(2);
+
+        ui.displayText(debugLog.getLog());
+        ui.setSimStatus("Simulations complete.", elapse, simpersec);
+        ui.showWinrate();
+
+        ui.show();
+
+        simController.onEndSims();
     }
 
     // Initializes a single simulation - runs once before each individual simulation
@@ -5064,32 +5095,15 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
         var result;
         if (!simulator.field.player.commander.isAlive()) {
             result = false;
-        }
-        else if (!simulator.field.cpu.commander.isAlive()) {
+        } else if (!simulator.field.cpu.commander.isAlive()) {
             result = true;
-        }
-        else {
+        } else {
             result = 'draw';
         }
 
-        if (run_sims_batch > 0) {
-            if (simulator.remainingSims > 0) simulator.remainingSims--;
-            run_sims_count++;
-        }
+        simulator.remainingSims--;
 
-        // Increment wins/losses/games
-        if (result === 'draw') {
-            matchStats.matchesDrawn++;
-        } else if (result) {
-            matchStats.matchesWon++;
-        } else {
-            matchStats.matchesLost++;
-        }
-        matchStats.totalPoints += simulator.calculatePoints();
-        matchStats.matchesPlayed++;
-
-        // Increment total turn count
-        matchStats.totalTurns += simulator.simulation_turns;
+        matchStats.processMatch(simulator, result);
 
         if (debugLog.enabled || debugLog.cardsPlayedOnly) {
             if (debugLog.firstLoss) {
@@ -5107,10 +5121,6 @@ delete BATTLEGROUNDS[104];;define('simulatorBase', [
 
         return result;
     };
-
-    // Global variables used by single-threaded simulator
-    var run_sims_count = 0;
-    var run_sims_batch = 0;
 });;(function (angular, LOCATIONS, CAMPAIGNS, MISSIONS, RAIDS, BATTLEGROUNDS, MAP_BATTLEGROUNDS) {
     'use strict';
 

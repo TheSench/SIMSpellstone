@@ -21,6 +21,7 @@ define('simulatorBase', [
 	var cpuDeckCached;
 	var cpuCardsCached;
 	var playerCardsCached;
+	var logMessage;
 
 	// Play card
 	function playCard(card, p, turn, quiet) {
@@ -38,7 +39,7 @@ define('simulatorBase', [
 		}
 
 		if (!quiet) {
-			simController.logger.logCardPlayed(field[p].commander, card);
+			logMessage('logCardPlayed', field[p].commander, card);
 		}
 
 		if (card.isTrap()) {
@@ -89,13 +90,13 @@ define('simulatorBase', [
 			var current_assault = units[key];
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
-				simController.logger.logDead(current_assault);
+				logMessage('logDead', current_assault);
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						simController.logger.logDead(current_assault);
+						logMessage('logDead', current_assault);
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
@@ -156,7 +157,7 @@ define('simulatorBase', [
 	}
 
 	function notImplemented(sourceUnit, skill) {
-		simController.logger.logNotImplemented(sourceUnit, skill);
+		logMessage('logNotImplemented', sourceUnit, skill);
 		return 0;
 	}
 
@@ -189,12 +190,12 @@ define('simulatorBase', [
 		if (!len) return;
 
 		if (sourceCard.silenced) {
-			simController.logger.logSilenced(sourceCard);
+			logMessage('logSilenced', sourceCard);
 			return;
 		}
 
 		var dualstrike = sourceCard.dualstrike_triggered;
-		simController.logger.logDualstrike(sourceCard);
+		logMessage('logDualstrike', sourceCard);
 
 		var activations = (dualstrike ? 2 : 1);
 		var isAlive = makeLivenessCheck(sourceCard);
@@ -278,7 +279,7 @@ define('simulatorBase', [
 				sourceUnit.scorched.amount += scorch;
 				sourceUnit.scorched.timer = 2;
 			}
-			simController.logger.logScorch(sourceUnit, scorch);
+			logMessage('logScorch', sourceUnit, scorch);
 
 			return 1;
 		},
@@ -328,7 +329,7 @@ define('simulatorBase', [
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				simController.logger.logScorch(sourceUnit, scorch, target);
+				logMessage('logScorch', sourceUnit, scorch, target);
 
 				affected++;
 			}
@@ -386,7 +387,7 @@ define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'protects', target);
+					logMessage('logNullified', sourceUnit, 'protects', target);
 					continue;
 				}
 
@@ -405,7 +406,7 @@ define('simulatorBase', [
 				if (additionalStatus) {
 					target[additionalStatus] = (target[additionalStatus] || 0) + amount;
 				}
-				simController.logger.logStatusEffect(sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
+				logMessage('logStatusEffect', sourceUnit, 'barriers', target, enhanced, amount, additionalDebug);
 			}
 
 			return affected;
@@ -452,7 +453,7 @@ define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'heals', target);
+					logMessage('logNullified', sourceUnit, 'heals', target);
 					continue;
 				}
 
@@ -466,7 +467,7 @@ define('simulatorBase', [
 
 				if (amount > target['health'] - target['health_left']) amount = target['health'] - target['health_left'];
 				target['health_left'] += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'heals', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'heals', target, enhanced, amount);
 			}
 
 			return affected;
@@ -518,7 +519,7 @@ define('simulatorBase', [
 				// Check Evade
 				if (targetUnit.invisible) {
 					targetUnit.invisible--;
-					simController.logger.logInvisibile(sourceUnit, 'bolts', targetUnit);
+					logMessage('logInvisibile', sourceUnit, 'bolts', targetUnit);
 					continue;
 				}
 
@@ -539,7 +540,7 @@ define('simulatorBase', [
 				}
 
 				doDamage(sourceUnit, targetUnit, strike_damage, function () {
-					simController.logger.logDamage(sourceUnit, targetUnit, 'Strike', 'bolts', damageInfo, function() {
+					logMessage('logDamage', sourceUnit, targetUnit, 'Strike', 'bolts', damageInfo, function() {
 						if (poisonDamage && !targetUnit.isAlive()) {
 							return ' and inflicts poison(' + poisonDamage + ') on it';
 						}
@@ -600,7 +601,7 @@ define('simulatorBase', [
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					simController.logger.logInvisibile(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target);
+					logMessage('logInvisibile', sourceUnit, 'intensifies ' + intensifiedFields + ' on', target);
 					continue;
 				}
 
@@ -613,7 +614,7 @@ define('simulatorBase', [
 					target.poisoned += intensify;
 				}
 
-				simController.logger.logStatusEffect(sourceUnit, 'intensifies ' + intensifiedFields + ' on', target, enhanced, intensify);
+				logMessage('logStatusEffect', sourceUnit, 'intensifies ' + intensifiedFields + ' on', target, enhanced, intensify);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -660,7 +661,7 @@ define('simulatorBase', [
 
 			sourceUnit.jammed = true;
 			sourceUnit.jammedSelf = true;
-			simController.logger.logStatusEffect(sourceUnit, 'freezes', sourceUnit);
+			logMessage('logStatusEffect', sourceUnit, 'freezes', sourceUnit);
 
 			return 1;
 		},
@@ -700,14 +701,14 @@ define('simulatorBase', [
 					target.invisible--;
 					// Missed - retry next turn
 					skill.countdown = 0;
-					simController.logger.logInvisibile(sourceUnit, 'freezes', target);
+					logMessage('logInvisibile', sourceUnit, 'freezes', target);
 					continue;
 				}
 
 				affected++;
 
 				target.jammed = true;
-				simController.logger.logStatusEffect(sourceUnit, 'freezes', target);
+				logMessage('logStatusEffect', sourceUnit, 'freezes', target);
 
 				if (target.backlash) {
 					backlash(sourceUnit, target);
@@ -754,7 +755,7 @@ define('simulatorBase', [
 				// Check Evade
 				if (targetUnit.invisible) {
 					targetUnit.invisible--;
-					simController.logger.logInvisibile(sourceUnit, 'breathes frost at', targetUnit);
+					logMessage('logInvisibile', sourceUnit, 'breathes frost at', targetUnit);
 					continue;
 				}
 
@@ -768,7 +769,7 @@ define('simulatorBase', [
 				frost_damage = damageInfo.damage;
 
 				doDamage(sourceUnit, targetUnit, frost_damage, function () {
-					simController.logger.logDamage(sourceUnit, targetUnit, 'Frostbreath', 'breathes frost at', damageInfo);
+					logMessage('logDamage', sourceUnit, targetUnit, 'Frostbreath', 'breathes frost at', damageInfo);
 				});
 
 				if (targetUnit.backlash) {
@@ -795,7 +796,7 @@ define('simulatorBase', [
 
 			target.heartseeker += heartseeker;
 			target.enfeebled += heartseeker;
-			simController.logger.logInflicts(sourceUnit, 'heartseeker', heartseeker, target);
+			logMessage('logInflicts', sourceUnit, 'heartseeker', heartseeker, target);
 
 			return 1;
 		},
@@ -895,14 +896,14 @@ define('simulatorBase', [
 			// Check Evade
 			if (target.invisible) {
 				target.invisible--;
-				simController.logger.logInvisibile(sourceUnit, skillVerb, target);
+				logMessage('logInvisibile', sourceUnit, skillVerb, target);
 				continue;
 			}
 
 			affected++;
 
 			doApplyDebuff(target, amount);
-			simController.logger.logStatusEffect(sourceUnit, skillVerb, target, enhanced, amount);
+			logMessage('logStatusEffect', sourceUnit, skillVerb, target, enhanced, amount);
 
 			if (target.backlash) {
 				backlash(sourceUnit, target);
@@ -959,7 +960,7 @@ define('simulatorBase', [
 				}
 
 				target.attack_rally += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'enlarges', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'enlarges', target, enhanced, amount);
 
 				affected++;
 			}
@@ -1011,7 +1012,7 @@ define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'empowers', target);
+					logMessage('logNullified', sourceUnit, 'empowers', target);
 					continue;
 				}
 
@@ -1024,7 +1025,7 @@ define('simulatorBase', [
 				}
 
 				target.attack_rally += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'empowers', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'empowers', target, enhanced, amount);
 			}
 
 			return affected;
@@ -1058,11 +1059,11 @@ define('simulatorBase', [
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
-						simController.logger.logNullified(sourceUnit, 'activates legion and empowers', target);
+						logMessage('logNullified', sourceUnit, 'activates legion and empowers', target);
 					} else {
 						affected++;
 						target.attack_rally += amount;
-						simController.logger.logStatusEffect(sourceUnit, 'activates legion and empowers', target, enhanced, amount);
+						logMessage('logStatusEffect', sourceUnit, 'activates legion and empowers', target, enhanced, amount);
 					}
 				}
 				target_key += 2;
@@ -1101,7 +1102,7 @@ define('simulatorBase', [
 
 			if (fervorAmount) {
 				sourceUnit['attack_rally'] += fervorAmount;
-				simController.logger.logStatusEffect(sourceUnit, 'fervors', target, enhanced, fervorAmount);
+				logMessage('logStatusEffect', sourceUnit, 'fervors', target, enhanced, fervorAmount);
 				return 1;
 			} else {
 				return 0;
@@ -1152,7 +1153,7 @@ define('simulatorBase', [
 					// Check Evade
 					if (targetUnit.invisible) {
 						targetUnit.invisible--;
-						simController.logger.logInvisibile(sourceUnit, 'throws a bomb at', targetUnit);
+						logMessage('logInvisibile', sourceUnit, 'throws a bomb at', targetUnit);
 						continue;
 					}
 
@@ -1165,7 +1166,7 @@ define('simulatorBase', [
 					strike_damage = damageInfo.damage;
 
 					doDamage(sourceUnit, targetUnit, strike_damage, function () {
-						simController.logger.logDamage(sourceUnit, targetUnit, 'Barrage', 'throws a bomb at', damageInfo);
+						logMessage('logDamage', sourceUnit, targetUnit, 'Barrage', 'throws a bomb at', damageInfo);
 					});
 				}
 			}
@@ -1221,7 +1222,7 @@ define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'enhances', target);
+					logMessage('logNullified', sourceUnit, 'enhances', target);
 					continue;
 				}
 
@@ -1236,7 +1237,7 @@ define('simulatorBase', [
 					enhancements[s] = -mult;
 					var amountEnhanced = (mult * 100) + '%';
 				}
-				simController.logger.logStatusEffect(sourceUnit, 'enhances ' + s + ' of ', target, 0, amountEnhanced);
+				logMessage('logStatusEffect', sourceUnit, 'enhances ' + s + ' of ', target, 0, amountEnhanced);
 			}
 
 			return affected;
@@ -1283,7 +1284,7 @@ define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'enrages', target);
+					logMessage('logNullified', sourceUnit, 'enrages', target);
 					continue;
 				}
 
@@ -1294,7 +1295,7 @@ define('simulatorBase', [
 				}
 
 				target['enraged'] += amount;
-				simController.logger.logStatusEffect(sourceUnit, 'enrages', target, enhanced, amount);
+				logMessage('logStatusEffect', sourceUnit, 'enrages', target, enhanced, amount);
 			}
 
 			return affected;
@@ -1350,7 +1351,7 @@ define('simulatorBase', [
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					simController.logger.logNullified(sourceUnit, 'enhances', target);
+					logMessage('logNullified', sourceUnit, 'enhances', target);
 					continue;
 				}
 
@@ -1359,10 +1360,10 @@ define('simulatorBase', [
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = (enhancements[s] || 0) + x;
-					simController.logger.logImbuesNew(sourceUnit, target, s, x);
+					logMessage('logImbuesNew', sourceUnit, target, s, x);
 				} else {
 					target.imbue(skill);
-					simController.logger.logImbuesExisting(sourceUnit, target, s, x);
+					logMessage('logImbuesExisting', sourceUnit, target, s, x);
 				}
 			}
 
@@ -1415,7 +1416,7 @@ define('simulatorBase', [
 				target.enfeebled += mark;
 				sourceUnit.mark_target = target.uid;
 
-				simController.logger.logStatusEffect(sourceUnit, 'marks', target, enhanced, mark);
+				logMessage('logStatusEffect', sourceUnit, 'marks', target, enhanced, mark);
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -1440,7 +1441,7 @@ define('simulatorBase', [
 			}
 
 			doDamage(sourceUnit, targetUnit, damage, function () {
-				simController.logger.logDamage(sourceUnit, targetUnit, 'Ambush', 'ambushes', {
+				logMessage('logDamage', sourceUnit, targetUnit, 'Ambush', 'ambushes', {
 					originalDamage: damage,
 					damage: damage
 				});
@@ -1462,7 +1463,7 @@ define('simulatorBase', [
 			}
 
 			target.timer += slow;
-			simController.logger.logStatusEffect(sourceUnit, 'slows', target, 0, slow);
+			logMessage('logStatusEffect', sourceUnit, 'slows', target, 0, slow);
 
 			return 1;
 		}
@@ -1490,7 +1491,7 @@ define('simulatorBase', [
 
 			playCard(unearthedCard, dying.owner, true);
 
-			simController.logger.logAction(unearthedCard, 'is unearthed');
+			logMessage('logAction', unearthedCard, 'is unearthed');
 
 			return 1;
 		},
@@ -1505,7 +1506,7 @@ define('simulatorBase', [
 			dying.health_left = skill.x;
 			dying.reanimated = true;
 
-			simController.logger.logReanimate(dying);
+			logMessage('logReanimate', dying);
 
 			return 1;
 		}
@@ -1516,7 +1517,7 @@ define('simulatorBase', [
 	function doActivationSkills(sourceUnit) {
 
 		if (sourceUnit.silenced) {
-			simController.logger.logSilenced(sourceUnit);
+			logMessage('logSilenced', sourceUnit);
 			return;
 		}
 
@@ -1560,7 +1561,7 @@ define('simulatorBase', [
 		SIMULATOR.deck = deck;
 
 		// Set up empty field
-		var field = {
+		SIMULATOR.field = {
 			cpu: {
 				assaults: []
 			},
@@ -1568,7 +1569,6 @@ define('simulatorBase', [
 				assaults: []
 			}
 		};
-		SIMULATOR.field = field;
 
 		// Load player deck
 		if (playerCardsCached) {
@@ -1615,6 +1615,7 @@ define('simulatorBase', [
 
 	// Simulate one game
 	function simulate(config) {
+		logMessage = simController.getLogFunction();
 		simulating = true;
 
 		initializeBattle(config);
@@ -1767,7 +1768,7 @@ define('simulatorBase', [
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				simController.logger.logTurnEnd(turn);
+				logMessage('logTurnEnd', turn);
 				return true;
 			}
 		}
@@ -1803,7 +1804,7 @@ define('simulatorBase', [
 			var o = first_player;
 		}
 
-		simController.logger.logTurnStart(turn, p, field, deck);
+		logMessage('logTurnStart', turn, p, field, deck);
 
 		var field_p = field[p];
 		var field_o = field[o];
@@ -1821,7 +1822,7 @@ define('simulatorBase', [
 			if (current_assault.timer > 0) {
 				if (turn !== 3 || !SIMULATOR.config.tournamentMode) {
 					current_assault.timer--;
-					simController.logger.logAction(current_assault, 'reduces its timer');
+					logMessage('logAction', current_assault, 'reduces its timer');
 				}
 			}
 
@@ -1831,9 +1832,9 @@ define('simulatorBase', [
 				var enemy = field_o_assaults[i];
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
 					current_assault.attack_valor += valor;
-					simController.logger.logGainAttack(current_assault, 'activates valor', valor);
+					logMessage('logGainAttack', current_assault, 'activates valor', valor);
 				} else {
-					simController.logger.logCannotValor(current_assault, enemy);
+					logMessage('logCannotValor', current_assault, enemy);
 				}
 			}
 
@@ -2066,14 +2067,14 @@ define('simulatorBase', [
 
 			// Check jammed ("frozen")
 			if (currentUnit['jammed']) {
-				simController.logger.logFrozen(currentUnit);
+				logMessage('logFrozen', currentUnit);
 				continue;
 			}
 
 			var activations = 1;
 			if (currentUnit.dualstrike_triggered) {
 				activations++;
-				simController.logger.logDualstrike(currentUnit);
+				logMessage('logDualstrike', currentUnit);
 			}
 
 			for (; activations > 0; activations--) {
@@ -2089,7 +2090,7 @@ define('simulatorBase', [
 				// Check attack
 				// - check rally and weaken
 				if (!currentUnit.hasAttack()) {
-					if (currentUnit.permanentAttack() > 0) simController.logger.logWeakened(currentUnit);
+					if (currentUnit.permanentAttack() > 0) logMessage('logWeakened', currentUnit);
 					continue;
 				}
 
@@ -2119,7 +2120,7 @@ define('simulatorBase', [
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		removeDead();
 
-		simController.logger.logTurnEnd(turn);
+		logMessage('logTurnEnd', turn);
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -2188,7 +2189,7 @@ define('simulatorBase', [
 		var dualStrike = unit.flurry;
 		if (dualStrike && dualStrike.countdown) {
 			dualStrike.countdown--;
-			simController.logger.logChargeSkill(unit, dualStrike);
+			logMessage('logChargeSkill', unit, dualStrike);
 		}
 	}
 
@@ -2197,7 +2198,7 @@ define('simulatorBase', [
 			var skill = skills[i];
 			if (skill.countdown) {
 				skill.countdown--;
-				simController.logger.logChargeSkill(unit, skill);
+				logMessage('logChargeSkill', unit, skill);
 			}
 		}
 	}
@@ -2231,7 +2232,7 @@ define('simulatorBase', [
 				}
 
 				current_assault.health_left += regen_health;
-				simController.logger.logGainHealth(current_assault, 'regenerates', regen_health);
+				logMessage('logGainHealth', current_assault, 'regenerates', regen_health);
 			}
 
 			// Poison
@@ -2247,7 +2248,7 @@ define('simulatorBase', [
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					simController.logger.logDamage(null, current_assault, 'Poison', 'poison damage', damageInfo);
+					logMessage('logDamage', null, current_assault, 'Poison', 'poison damage', damageInfo);
 				});
 			}
 
@@ -2264,7 +2265,7 @@ define('simulatorBase', [
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					simController.logger.logDamage(null, current_assault, 'Venom', 'venom damage', damageInfo);
+					logMessage('logDamage', null, current_assault, 'Venom', 'venom damage', damageInfo);
 				});
 			}
 
@@ -2281,7 +2282,7 @@ define('simulatorBase', [
 					damageInfo.modifiers = { Ward: warded };
 				}
 				doDamage(null, current_assault, amount, function () {
-					simController.logger.logDamage(null, current_assault, 'Scorch', 'scorch damage', damageInfo, function() {
+					logMessage('logDamage', null, current_assault, 'Scorch', 'scorch damage', damageInfo, function() {
 						if (current_assault.isAlive() && !current_assault.scorched) {
 							return ' and scorch wears off';
 						}
@@ -2303,11 +2304,11 @@ define('simulatorBase', [
 				if (corroded.timer < 0) {
 					current_assault.corroded = false;
 					current_assault.attack_corroded = 0;
-					simController.logger.logAction(current_assault, 'recovers from corrosion');
+					logMessage('logAction', current_assault, 'recovers from corrosion');
 				} else {
 					var corrosion = corroded.amount;
 					current_assault.attack_corroded = corrosion;
-					simController.logger.logAction(current_assault, 'loses ' + corrosion + ' attack to corrosion');
+					logMessage('logAction', current_assault, 'loses ' + corrosion + ' attack to corrosion');
 				}
 			}
 
@@ -2329,19 +2330,19 @@ define('simulatorBase', [
 			if (!target.taunt) {
 				// Check left first, then right
 				var adjacent = field_o_assaults[current_assault.key - 1];
-				if (adjacent && adjacent.taunt) {
+				if (adjacent && adjacent.taunt && adjacent.isalive()) {
 					target = adjacent;
 					taunted = true;
 				} else {
 					var adjacent = field_o_assaults[current_assault.key + 1];
-					if (adjacent && adjacent.taunt) {
+					if (adjacent && adjacent.taunt && adjacent.isalive()) {
 						target = adjacent;
 						taunted = true;
 					}
 				}
 			}
 			if (taunted) {
-				simController.logger.logAction(target, 'taunts', current_assault);
+				logMessage('logAction', target, 'taunts', current_assault);
 			}
 		}
 
@@ -2388,22 +2389,21 @@ define('simulatorBase', [
 				if (remainingPierce >= protect) {
 					remainingPierce -= protect;
 					protect = 0;
-					target.protected = 0;
 				} else {
 					protect -= remainingPierce;
-					target.protected -= pierce;
 					remainingPierce = 0;
 				}
 			}
 			if (protect) {
 				if (damage >= protect) {
 					damage -= protect;
-					target.protected = 0;
+					protect = 0;
 				} else {
-					target.protected -= damage;
+					protect -= damage;
 					damage = 0;
 				}
 			}
+			target.protected = protect;
 		}
 
 		function applyModifier(logName, status, value) {
@@ -2431,7 +2431,7 @@ define('simulatorBase', [
 
 		// Deal damage to target
 		doDamage(current_assault, target, damage, function () {
-			simController.logger.logDamage(current_assault, target, 'Attack', 'attacks', damageInfo);
+			logMessage('logDamage', current_assault, target, 'Attack', 'attacks', damageInfo);
 		});
 
 		events.onUnitAttacked(field, turn, current_assault);
@@ -2453,7 +2453,7 @@ define('simulatorBase', [
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					simController.logger.logInflicts(current_assault, 'poison', poison, target);
+					logMessage('logInflicts', current_assault, 'poison', poison, target);
 				}
 			}
 
@@ -2471,7 +2471,7 @@ define('simulatorBase', [
 					var hexIncrease = venom - target.envenomed;
 					target.envenomed = venom;
 					target.enfeebled += hexIncrease;
-					simController.logger.logInflicts(current_assault, 'venom', venom, target);
+					logMessage('logInflicts', current_assault, 'venom', venom, target);
 				}
 			}
 
@@ -2483,7 +2483,7 @@ define('simulatorBase', [
 				var enhanced = unitInfoHelper.getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				simController.logger.logInflicts(current_assault, 'nullify', nullify, target);
+				logMessage('logInflicts', current_assault, 'nullify', nullify, target);
 			}
 
 			// Silence
@@ -2491,7 +2491,7 @@ define('simulatorBase', [
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
-				simController.logger.logInflicts(current_assault, 'silence', null, target);
+				logMessage('logInflicts', current_assault, 'silence', null, target);
 			}
 
 			// Daze
@@ -2504,7 +2504,7 @@ define('simulatorBase', [
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				simController.logger.logInflicts(current_assault, 'dazed', dazed, target);
+				logMessage('logInflicts', current_assault, 'dazed', dazed, target);
 			}
 		}
 
@@ -2527,7 +2527,7 @@ define('simulatorBase', [
 				}
 
 				current_assault.health_left += leech_health;
-				simController.logger.logGainHealth(current_assault, 'siphons', leech_health);
+				logMessage('logGainHealth', current_assault, 'siphons', leech_health);
 			}
 
 			if (current_assault.reinforce) {
@@ -2536,7 +2536,7 @@ define('simulatorBase', [
 				reinforce += enhanced;
 
 				current_assault.protected += reinforce;
-				simController.logger.logStatusEffect(current_assault, 'reinforces', current_assault, enhanced, reinforce);
+				logMessage('logStatusEffect', current_assault, 'reinforces', current_assault, enhanced, reinforce);
 			}
 
 			// Counter
@@ -2562,7 +2562,7 @@ define('simulatorBase', [
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				simController.logger.logInflicts(target, 'counterburn', scorch, current_assault);
+				logMessage('logInflicts', target, 'counterburn', scorch, current_assault);
 			}
 
 			// Counterpoison
@@ -2574,7 +2574,7 @@ define('simulatorBase', [
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					simController.logger.logInflicts(target, 'counterpoison', poison, current_assault);
+					logMessage('logInflicts', target, 'counterpoison', poison, current_assault);
 				}
 			}
 
@@ -2587,7 +2587,7 @@ define('simulatorBase', [
 				if (target.isAlive()) {
 					var fury = furyBase + furyEnhancement;
 					target.attack_berserk += fury;
-					simController.logger.logGainAttack(target, 'activates fury', fury);
+					logMessage('logGainAttack', target, 'activates fury', fury);
 				}
 
 				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
@@ -2595,7 +2595,7 @@ define('simulatorBase', [
 
 			if (target.enraged > 0) {
 				target.attack_berserk += target.enraged;
-				simController.logger.logGainAttack(target, 'is enraged', target.enraged);
+				logMessage('logGainAttack', target, 'is enraged', target.enraged);
 			}
 
 			// Berserk
@@ -2607,28 +2607,28 @@ define('simulatorBase', [
 				berserk += enhanced;
 
 				current_assault.attack_berserk += berserk;
-				simController.logger.logGainAttack(target, 'activates berserk', berserk);
+				logMessage('logGainAttack', target, 'activates berserk', berserk);
+			}
+			
+			// Corrosion
+			// - Target must have received some amount of damage
+			if (target.corrosive) {
+				var corrosion = target.corrosive || 0;
+				var enhanced = unitInfoHelper.getEnhancement(target, 'corrosive', corrosion);
+				corrosion += enhanced;
+				if (current_assault.corroded) {
+					current_assault.corroded.amount += corrosion;
+					current_assault.corroded.timer = 2;
+				} else {
+					current_assault.corroded = { amount: corrosion, timer: 2 };
+				}
+				logMessage('logInflicts', target, 'corrosion', corrosion, current_assault);
+				current_assault.attack_corroded = corrosion;
+				logMessage('logAction', current_assault, 'loses ' + corrosion + ' attack to corrosion');
 			}
 		}
 
 		// -- CHECK STATUS INFLICTION --
-
-		// Corrosion
-		// - Target must have received some amount of damage
-		if (target.corrosive) {
-			var corrosion = target.corrosive || 0;
-			var enhanced = unitInfoHelper.getEnhancement(target, 'corrosive', corrosion);
-			corrosion += enhanced;
-			if (current_assault.corroded) {
-				current_assault.corroded.amount += corrosion;
-				current_assault.corroded.timer = 2;
-			} else {
-				current_assault.corroded = { amount: corrosion, timer: 2 };
-			}
-			simController.logger.logInflicts(target, 'corrosion', corrosion, current_assault);
-			current_assault.attack_corroded = corrosion;
-			simController.logger.logAction(current_assault, 'loses ' + corrosion + ' attack to corrosion');
-		}
 
 		if (!current_assault.isAlive()) {
 			doOnDeathSkills(current_assault, target);
@@ -2643,7 +2643,7 @@ define('simulatorBase', [
 		var damageInfo = modifySkillDamage(attacker, counterDamage, counterEnhancement, { enfeeble: true });
 
 		doDamage(defender, attacker, damageInfo.damage, function () {
-			simController.logger.logDamage(null, attacker, counterType, counterType.toLowerCase() + ' damage', damageInfo);
+			logMessage('logDamage', null, attacker, counterType, counterType.toLowerCase() + ' damage', damageInfo);
 		});
 	}
 

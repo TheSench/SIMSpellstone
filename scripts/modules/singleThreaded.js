@@ -1,3 +1,4 @@
+
 define('singleThreaded', [
     'bgeApi',
     'matchTimer',
@@ -25,7 +26,6 @@ define('singleThreaded', [
         matchTimer.reset();
         debugLog.clear();
         matchStats.matchesPlayed = 0;
-        run_sims_batch = 0;
 
         var config = ui.getConfiguration();
         simController.setDebugLogger();
@@ -50,7 +50,7 @@ define('singleThreaded', [
         }
 
         window.ga('send', 'event', 'simulation', 'start', 'single-threaded', config.simsToRun);
-        simController.statusTimeout = setTimeout(runSims, 0, config);
+        simController.statusTimeout = setTimeout(runSims, 0, config, 0);
 
         return false;
     };
@@ -63,7 +63,6 @@ define('singleThreaded', [
         simpersec = simpersec.toFixed(2);
         simulator.simulating = false;
 
-        // Stop the recursion
         if (!simulator.user_controlled) {
             ui.setSimStatus("Simulations interrupted.", elapse, simpersec);
             ui.showWinrate();
@@ -80,66 +79,70 @@ define('singleThreaded', [
         simController.statusTimeout = null;
     };
 
-    function runSims(config) {
+    function runSims(config, simsPerBatch) {
         if (simulator.user_controlled) {
-            if (runSim(config, true)) {
-                simController.debugEnd();
-            }
+            runUserControlledSim(config);
         } else if ((debugLog.enabled || debugLog.cardsPlayedOnly) && !debugLog.massDebug && !debugLog.firstLoss && !debugLog.firstWin) {
             runSim(config, true);
             simController.debugEnd();
         } else if (simulator.remainingSims > 0) {
-            // Interval output - speeds up simulations
-            if (run_sims_count >= run_sims_batch) {
-                var simpersecbatch = 0;
-                if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
-                    run_sims_count = 0;
-                    var elapse = matchTimer.elapsed();
-
-                    var batch_elapse = matchTimer.batchElapsed();
-                    if (batch_elapse === 0) {
-                        simpersecbatch = 0;
-                    } else {
-                        simpersecbatch = run_sims_batch / batch_elapse;
-                    }
-
-                    ui.setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
-                    ui.showWinrate();
-                }
-                run_sims_batch = 1;
-                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
-                    run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > simulator.remainingSims) // Also limit by how many sims are left
-                    run_sims_batch = simulator.remainingSims;
-
-                // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) {
-                    run_sims_batch = 1;
-                }
-
-                matchTimer.startBatch();
-                simController.statusTimeout = setTimeout(runSims, 1, config);
-                for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
-                    runSim(config);
-                }
-            }
+            runSimBatch(config, simsPerBatch);
         } else {
-            run_sims_count = 0;
-            run_sims_batch = 0;
-            matchTimer.stop();
-
-            var elapse = matchTimer.elapsed();
-            var simpersec = matchStats.matchesPlayed / elapse;
-            simpersec = simpersec.toFixed(2);
-
-            ui.displayText(debugLog.getLog());
-            ui.setSimStatus("Simulations complete.", elapse, simpersec);
-            ui.showWinrate();
-
-            ui.show();
-
-            simController.onEndSims();
+            finishedSims();
         }
+    }
+
+    function runUserControlledSim(config) {
+        if (runSim(config, true)) {
+            simController.debugEnd();
+        }
+    }
+
+    function runSimBatch(config, simsPerBatch) {
+        // Interval output - speeds up simulations
+        var simsPerSecondLastBatch = 0;
+        if (simsPerBatch > 0) { // Use simsPerBatch == 0 to imply a fresh set of simulations
+            simsPerSecondLastBatch = simsPerBatch / matchTimer.batchElapsed();
+
+            ui.setSimStatus("Running simulations...", matchTimer.elapsed(), simsPerSecondLastBatch.toFixed(1));
+            ui.showWinrate();
+        }
+
+        simsPerBatch = 1;
+        if ((debugLog.enabled || debugLog.cardsPlayedOnly) && (debugLog.massDebug || debugLog.firstLoss || debugLog.firstWin)) {
+            // Batch messes up mass debug and loss debug! let's disable batch!
+        } else {
+            // If we can run more at one time, then let's try to
+            if (simsPerSecondLastBatch > simsPerBatch)  {
+                simsPerBatch = Math.ceil(simsPerSecondLastBatch / 8);
+            }
+            // Also limit by how many sims are left
+            if (simsPerBatch > simulator.remainingSims) {   
+                simsPerBatch = simulator.remainingSims;
+            }
+        }
+
+        matchTimer.startBatch();
+        simController.statusTimeout = setTimeout(runSims, 1, config, simsPerBatch);
+        for (var i = 0; i < simsPerBatch; i++) {  // Start a new batch
+            runSim(config);
+        }
+    }
+
+    function finishedSims() {
+        matchTimer.stop();
+
+        var elapse = matchTimer.elapsed();
+        var simpersec = matchStats.matchesPlayed / elapse;
+        simpersec = simpersec.toFixed(2);
+
+        ui.displayText(debugLog.getLog());
+        ui.setSimStatus("Simulations complete.", elapse, simpersec);
+        ui.showWinrate();
+
+        ui.show();
+
+        simController.onEndSims();
     }
 
     // Initializes a single simulation - runs once before each individual simulation
@@ -158,32 +161,15 @@ define('singleThreaded', [
         var result;
         if (!simulator.field.player.commander.isAlive()) {
             result = false;
-        }
-        else if (!simulator.field.cpu.commander.isAlive()) {
+        } else if (!simulator.field.cpu.commander.isAlive()) {
             result = true;
-        }
-        else {
+        } else {
             result = 'draw';
         }
 
-        if (run_sims_batch > 0) {
-            if (simulator.remainingSims > 0) simulator.remainingSims--;
-            run_sims_count++;
-        }
+        simulator.remainingSims--;
 
-        // Increment wins/losses/games
-        if (result === 'draw') {
-            matchStats.matchesDrawn++;
-        } else if (result) {
-            matchStats.matchesWon++;
-        } else {
-            matchStats.matchesLost++;
-        }
-        matchStats.totalPoints += simulator.calculatePoints();
-        matchStats.matchesPlayed++;
-
-        // Increment total turn count
-        matchStats.totalTurns += simulator.simulation_turns;
+        matchStats.processMatch(simulator, result);
 
         if (debugLog.enabled || debugLog.cardsPlayedOnly) {
             if (debugLog.firstLoss) {
@@ -201,8 +187,4 @@ define('singleThreaded', [
 
         return result;
     };
-
-    // Global variables used by single-threaded simulator
-    var run_sims_count = 0;
-    var run_sims_batch = 0;
 });
