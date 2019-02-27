@@ -62050,7 +62050,7 @@ var CARDS = {
 	"5226": {
 		"attack": 5,
 		"card_type": "2",
-		"cost": 3,
+		"cost": 2,
 		"health": 18,
 		"hidden_until": "1550768400000",
 		"id": "5226",
@@ -62080,8 +62080,20 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"cost": 2,
-				"skill": []
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
 			},
 			"3": {
 				"skill": [
@@ -62091,7 +62103,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 2
+						"x": 3
 					},
 					{
 						"c": 3,
@@ -79256,6 +79268,83 @@ var CARDS = {
 						"x": 5
 					}
 				]
+			}
+		}
+	},
+	"6219": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1551373200000",
+		"id": "6219",
+		"maxLevel": 6,
+		"name": "Cinderclaw",
+		"picture": "Claw_Goblin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"id": "pierce",
+				"x": 4
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"health": 21,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"health": 22,
+				"skill": []
 			}
 		}
 	},
@@ -98076,6 +98165,88 @@ var CARDS = {
 						"x": 3
 					}
 				]
+			}
+		}
+	},
+	"7226": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 30,
+		"hidden_until": "1551373200000",
+		"id": "7226",
+		"maxLevel": 6,
+		"name": "Froglin",
+		"picture": "_Goblin_Frog_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"c": 5,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 31,
+				"skill": []
+			},
+			"4": {
+				"health": 32,
+				"skill": []
+			},
+			"5": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 33,
+				"skill": []
 			}
 		}
 	},
@@ -165439,6 +165610,84 @@ var CARDS = {
 			}
 		}
 	},
+	"16219": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1551373200000",
+		"id": "16219",
+		"maxLevel": 6,
+		"name": "Cinderclaw Soldier",
+		"picture": "Claw_Goblin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"id": "pierce",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"attack": 6,
+				"skill": []
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 25,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"16220": {
 		"attack": 7,
 		"card_type": "2",
@@ -184647,6 +184896,89 @@ var CARDS = {
 						"x": 4
 					}
 				]
+			}
+		}
+	},
+	"17226": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1551373200000",
+		"id": "17226",
+		"maxLevel": 6,
+		"name": "Froblin",
+		"picture": "_Goblin_Frog_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 35,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 36,
+				"skill": []
+			},
+			"6": {
+				"attack": 10,
+				"health": 37,
+				"skill": []
 			}
 		}
 	},
@@ -238960,6 +239292,71 @@ var CARDS = {
 			}
 		}
 	},
+	"26219": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1551373200000",
+		"id": "26219",
+		"maxLevel": 6,
+		"name": "Cinderclaw Berserker",
+		"picture": "Claw_Goblin_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "burn",
+				"x": 4
+			},
+			{
+				"id": "pierce",
+				"x": 7
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"26220": {
 		"attack": 8,
 		"card_type": "2",
@@ -258233,6 +258630,88 @@ var CARDS = {
 					{
 						"id": "heal",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"27226": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1551373200000",
+		"id": "27226",
+		"maxLevel": 6,
+		"name": "Frogblin",
+		"picture": "_Goblin_Frog_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 11,
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"health": 39,
+				"skill": []
+			},
+			"5": {
+				"health": 40,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
 					}
 				]
 			}
