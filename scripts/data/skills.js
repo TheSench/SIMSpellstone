@@ -79,6 +79,12 @@ var SKILL_DATA = {
 		"name": "Daze",
 		"type": "onAttack"
 	},
+	"devour": {
+		"desc": "Berserk and heal.",
+		"icon": "berserk",
+		"name": "devour",
+		"type": "activation"
+	},
 	"enfeeble": {
 		"desc": "Inflicts Hex on a random enemy creature, causing it to take extra damage each time it is damaged.",
 		"icon": "hex",
@@ -173,6 +179,12 @@ var SKILL_DATA = {
 		"desc": "Increases the value of Scorch or Poison on an enemy creature",
 		"icon": "intensify",
 		"name": "Intensify",
+		"type": "activation"
+	},
+	"invigorate": {
+		"desc": "Increase max hp or heal.",
+		"icon": "heal",
+		"name": "invigorate",
 		"type": "activation"
 	},
 	"jam": {

@@ -4327,5 +4327,295 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3015",
 		"location_id": "20",
 		"name": "Fighting Spirits"
+	},
+	"3016": {
+		"desc": "Fiona's dragonlings are back and as hungry as ever! Feed them Corroded Mist Pearls to increase their power!",
+		"effects": [
+			{
+				"id": "29",
+				"name": "Overprotective Dragonling",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Ward 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 1
+							}
+						],
+						"name": "Overprotective Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Ward 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 2
+							}
+						],
+						"name": "Overprotective Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Ward 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 3
+							}
+						],
+						"name": "Overprotective Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Ward 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 4
+							}
+						],
+						"name": "Overprotective Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Ward 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 6
+							}
+						],
+						"name": "Overprotective Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Ward 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 8
+							}
+						],
+						"name": "Overprotective Dragonling"
+					}
+				]
+			},
+			{
+				"id": "30",
+				"name": "Hotblooded Dragonling",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Emberhide 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counterburn",
+								"x": 1
+							}
+						],
+						"name": "Hotblooded Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Emberhide 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counterburn",
+								"x": 2
+							}
+						],
+						"name": "Hotblooded Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Emberhide 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counterburn",
+								"x": 3
+							}
+						],
+						"name": "Hotblooded Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Emberhide 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counterburn",
+								"x": 4
+							}
+						],
+						"name": "Hotblooded Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Emberhide 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counterburn",
+								"x": 6
+							}
+						],
+						"name": "Hotblooded Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Emberhide 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counterburn",
+								"x": 8
+							}
+						],
+						"name": "Hotblooded Dragonling"
+					}
+				]
+			},
+			{
+				"id": "31",
+				"name": "Gusty Dragonling",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Siphon 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 1
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 2
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 3
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 4
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 5
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 6
+							}
+						],
+						"name": "Gusty Dragonling"
+					}
+				]
+			}
+		],
+		"id": "3016",
+		"location_id": "21",
+		"name": "Fiona's Dragonlings"
 	}
 };
