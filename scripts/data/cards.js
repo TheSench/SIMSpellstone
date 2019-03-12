@@ -62483,10 +62483,10 @@ var CARDS = {
 		}
 	},
 	"5228": {
-		"attack": 7,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 42,
+		"health": 17,
 		"hidden_until": "1552323600000",
 		"id": "5228",
 		"maxLevel": 6,
@@ -62516,16 +62516,16 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 43,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
-				"health": 44,
+				"health": 19,
 				"skill": []
 			},
 			"4": {
-				"attack": 8,
-				"health": 45,
+				"attack": 7,
+				"health": 20,
 				"skill": []
 			},
 			"5": {
@@ -62546,7 +62546,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 46,
+				"health": 21,
 				"skill": [
 					{
 						"id": "absorb",
@@ -101881,7 +101881,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 24,
+				"health": 25,
 				"skill": [
 					{
 						"id": "legion",
@@ -101899,16 +101899,16 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 26,
+				"health": 27,
 				"skill": []
 			},
 			"4": {
 				"attack": 7,
-				"health": 28,
+				"health": 29,
 				"skill": []
 			},
 			"5": {
-				"health": 29,
+				"health": 31,
 				"skill": [
 					{
 						"id": "legion",
@@ -101927,7 +101927,7 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 8,
-				"health": 30,
+				"health": 33,
 				"skill": [
 					{
 						"id": "legion",
@@ -148685,10 +148685,10 @@ var CARDS = {
 		}
 	},
 	"15228": {
-		"attack": 8,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 47,
+		"health": 22,
 		"hidden_until": "1552323600000",
 		"id": "15228",
 		"maxLevel": 6,
@@ -148718,8 +148718,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"attack": 9,
-				"health": 48,
+				"health": 23,
 				"skill": []
 			},
 			"3": {
@@ -148740,7 +148739,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 49,
+				"health": 24,
 				"skill": [
 					{
 						"id": "absorb",
@@ -148758,11 +148757,11 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 50,
+				"health": 25,
 				"skill": []
 			},
 			"6": {
-				"attack": 10,
+				"attack": 8,
 				"skill": [
 					{
 						"id": "absorb",
@@ -222934,10 +222933,10 @@ var CARDS = {
 		}
 	},
 	"25228": {
-		"attack": 10,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 2,
-		"health": 51,
+		"health": 26,
 		"hidden_until": "1552323600000",
 		"id": "25228",
 		"maxLevel": 6,
@@ -222967,7 +222966,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 52,
+				"health": 27,
 				"skill": [
 					{
 						"id": "absorb",
@@ -222985,12 +222984,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 53,
+				"health": 28,
 				"skill": []
 			},
 			"4": {
-				"attack": 11,
-				"health": 54,
+				"attack": 9,
 				"skill": []
 			},
 			"5": {
@@ -223011,10 +223009,11 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"health": 29,
 				"skill": [
 					{
 						"id": "absorb",
-						"x": 7
+						"x": 8
 					},
 					{
 						"id": "frost",
