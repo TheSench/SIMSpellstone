@@ -23024,6 +23024,126 @@ var CARDS = {
 			}
 		}
 	},
+	"426": {
+		"card_type": "1",
+		"health": 76,
+		"id": "426",
+		"maxLevel": 6,
+		"name": "Corrupted Merman",
+		"picture": "portrait_corrupted_merman",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "poison",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "pierce",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 80,
+				"skill": []
+			},
+			"3": {
+				"health": 85,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "pierce",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 89,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "pierce",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 94,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "pierce",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "pierce",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -63312,6 +63432,193 @@ var CARDS = {
 			}
 		}
 	},
+	"5604": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"id": "5604",
+		"maxLevel": 10,
+		"name": "Mirrormage Ghessela",
+		"picture": "Seafolk_Mirror_Mermaid_B",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "legion",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "legion",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 10,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 11,
+				"health": 40,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 41,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 8
+					}
+				]
+			},
+			"7": {
+				"health": 42,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 8
+					}
+				]
+			},
+			"8": {
+				"attack": 12,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 8
+					}
+				]
+			},
+			"9": {
+				"health": 43,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"6000": {
 		"attack": 4,
 		"card_type": "2",
@@ -98878,6 +99185,96 @@ var CARDS = {
 			},
 			"6": {
 				"health": 46,
+				"skill": []
+			}
+		}
+	},
+	"7229": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 31,
+		"hidden_until": "1552928400000",
+		"id": "7229",
+		"maxLevel": 6,
+		"name": "Crushclaw Waterguard",
+		"picture": "Seafolk_Lobster_Warrior_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 32,
+				"skill": []
+			},
+			"4": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
 				"skill": []
 			}
 		}
@@ -186066,6 +186463,71 @@ var CARDS = {
 			}
 		}
 	},
+	"17229": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 34,
+		"hidden_until": "1552928400000",
+		"id": "17229",
+		"maxLevel": 6,
+		"name": "Crushclaw Waterwaker",
+		"picture": "Seafolk_Lobster_Warrior_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 35,
+				"skill": []
+			},
+			"3": {
+				"health": 36,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 37,
+				"skill": []
+			},
+			"6": {
+				"attack": 10,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -260255,6 +260717,84 @@ var CARDS = {
 					},
 					{
 						"id": "frost",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"27229": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1552928400000",
+		"id": "27229",
+		"maxLevel": 6,
+		"name": "Crushclaw Waterbinder",
+		"picture": "Seafolk_Lobster_Warrior_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"attack": 11,
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"health": 41,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					},
+					{
+						"id": "berserk",
 						"x": 7
 					}
 				]
