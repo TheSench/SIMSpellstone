@@ -331,10 +331,10 @@ module.exports = function (grunt) {
                     queryString: true
                 },
                 src: [
-                    'DeckBuilder.html',
-                    'Battle.html',
-                    'Titans.html',
-                    'Engine.html'
+                    './DeckBuilder.html',
+                    './Battle.html',
+                    './Titans.html',
+                    './Engine.html'
                 ]
             },
         }
