@@ -22773,9 +22773,7 @@ var CARDS = {
 				"y": "6"
 			},
 			{
-				"all": "1",
-				"c": 4,
-				"id": "weaken",
+				"id": "mark",
 				"x": 5
 			}
 		],
@@ -22796,10 +22794,8 @@ var CARDS = {
 						"y": "6"
 					},
 					{
-						"all": "1",
-						"c": 4,
-						"id": "weaken",
-						"x": 6
+						"id": "mark",
+						"x": 5
 					}
 				]
 			},
@@ -22818,10 +22814,8 @@ var CARDS = {
 						"y": "6"
 					},
 					{
-						"all": "1",
-						"c": 3,
-						"id": "weaken",
-						"x": 7
+						"id": "mark",
+						"x": 6
 					}
 				]
 			},
@@ -22840,10 +22834,8 @@ var CARDS = {
 						"y": "6"
 					},
 					{
-						"all": "1",
-						"c": 3,
-						"id": "weaken",
-						"x": 8
+						"id": "mark",
+						"x": 6
 					}
 				]
 			},
@@ -22862,10 +22854,8 @@ var CARDS = {
 						"y": "6"
 					},
 					{
-						"all": "1",
-						"c": 2,
-						"id": "weaken",
-						"x": 9
+						"id": "mark",
+						"x": 7
 					}
 				]
 			},
@@ -22884,10 +22874,8 @@ var CARDS = {
 						"y": "6"
 					},
 					{
-						"all": "1",
-						"c": 2,
-						"id": "weaken",
-						"x": 10
+						"id": "mark",
+						"x": 7
 					}
 				]
 			}
@@ -23037,18 +23025,18 @@ var CARDS = {
 			{
 				"id": "imbue",
 				"s": "poison",
-				"x": 3
+				"x": 4
 			},
 			{
 				"all": "1",
 				"id": "imbue",
 				"s": "pierce",
-				"x": 4
+				"x": 5
 			},
 			{
 				"all": "1",
 				"id": "heal",
-				"x": 4
+				"x": 5
 			}
 		],
 		"sub_type": [],
@@ -23070,12 +23058,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "pierce",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 4
+						"x": 6
 					}
 				]
 			},
@@ -23091,12 +23079,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "pierce",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 4
+						"x": 6
 					}
 				]
 			},
@@ -23112,12 +23100,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "pierce",
-						"x": 6
+						"x": 7
 					},
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 5
+						"x": 6
 					}
 				]
 			},
@@ -23133,12 +23121,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "pierce",
-						"x": 6
+						"x": 7
 					},
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 5
+						"x": 6
 					}
 				]
 			}
@@ -62602,6 +62590,86 @@ var CARDS = {
 			}
 		}
 	},
+	"5227": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 10,
+		"hidden_until": "1553187600000",
+		"id": "5227",
+		"maxLevel": 6,
+		"name": "Mermancer",
+		"picture": "Seafolk_Orb_Enchanter_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1,
+				"y": "12"
+			},
+			{
+				"id": "frost"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 12,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1,
+						"y": "12"
+					},
+					{
+						"id": "frost"
+					}
+				]
+			},
+			"5": {
+				"health": 13,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1,
+						"y": "12"
+					},
+					{
+						"id": "frost"
+					}
+				]
+			}
+		}
+	},
 	"5228": {
 		"attack": 6,
 		"card_type": "2",
@@ -80369,6 +80437,162 @@ var CARDS = {
 						"all": "1",
 						"id": "enrage",
 						"x": 2
+					}
+				]
+			}
+		}
+	},
+	"6223": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1553187600000",
+		"id": "6223",
+		"maxLevel": 6,
+		"name": "Gorgeel",
+		"picture": "Seafolk_Medusa_Head_Seafolk_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"health": 21,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 22,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"6224": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1553187600000",
+		"id": "6224",
+		"maxLevel": 6,
+		"name": "Azurtitan Sorcerer",
+		"picture": "Seafolk_Corrupted_Crystal_Merman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "corrosive",
+				"x": 3
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5",
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": []
+			},
+			"4": {
+				"attack": 12,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 35,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 3
 					}
 				]
 			}
@@ -113695,7 +113919,7 @@ var CARDS = {
 		"health": 33,
 		"id": "8125",
 		"maxLevel": 6,
-		"name": "Unfounded Revenge",
+		"name": "Unfounded Revenge 2",
 		"picture": "Moss_Dragon_B",
 		"rarity": 4,
 		"set": "9999",
@@ -113816,6 +114040,245 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"8126": {
+		"attack": 1,
+		"card_type": "2",
+		"cost": 4,
+		"health": 45,
+		"id": "8126",
+		"maxLevel": 6,
+		"name": "Eye of the Divine",
+		"picture": "Lightning_Elemental_B",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 7
+			},
+			{
+				"id": "poisonstrike",
+				"x": 50
+			},
+			{
+				"id": "mark",
+				"x": 40
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 49,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "poisonstrike",
+						"x": 51
+					},
+					{
+						"id": "mark",
+						"x": 40
+					}
+				]
+			},
+			"3": {
+				"health": 54,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "poisonstrike",
+						"x": 52
+					},
+					{
+						"id": "mark",
+						"x": 40
+					}
+				]
+			},
+			"4": {
+				"health": 58,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"id": "poisonstrike",
+						"x": 53
+					},
+					{
+						"id": "mark",
+						"x": 40
+					}
+				]
+			},
+			"5": {
+				"health": 63,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"id": "poisonstrike",
+						"x": 54
+					},
+					{
+						"id": "mark",
+						"x": 40
+					}
+				]
+			},
+			"6": {
+				"health": 68,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 9
+					},
+					{
+						"id": "poisonstrike",
+						"x": 55
+					},
+					{
+						"id": "mark",
+						"x": 40
+					}
+				]
+			}
+		}
+	},
+	"8127": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 30,
+		"id": "8127",
+		"maxLevel": 6,
+		"name": "Fallen Gladiator Truestrike",
+		"picture": "Angel_Blind_Monk_A",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 7
+			},
+			{
+				"id": "daze",
+				"x": 50
+			},
+			{
+				"id": "berserk",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"health": 31,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 51
+					},
+					{
+						"id": "berserk",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 32,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 52
+					},
+					{
+						"id": "berserk",
+						"x": 9
+					}
+				]
+			},
+			"4": {
+				"attack": 13,
+				"health": 33,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 53
+					},
+					{
+						"id": "berserk",
+						"x": 9
+					}
+				]
+			},
+			"5": {
+				"attack": 14,
+				"health": 34,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 54
+					},
+					{
+						"id": "berserk",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 36,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 55
+					},
+					{
+						"id": "berserk",
 						"x": 10
 					}
 				]
@@ -149081,6 +149544,101 @@ var CARDS = {
 			}
 		}
 	},
+	"15227": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 14,
+		"hidden_until": "1553187600000",
+		"id": "15227",
+		"maxLevel": 6,
+		"name": "Brinehold Mermancer",
+		"picture": "Seafolk_Orb_Enchanter_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1,
+				"y": "12"
+			},
+			{
+				"id": "frost"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "12"
+					},
+					{
+						"id": "frost"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "12"
+					},
+					{
+						"id": "frost",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 15,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "12"
+					},
+					{
+						"id": "frost",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"health": 16,
+				"skill": []
+			}
+		}
+	},
 	"15228": {
 		"attack": 7,
 		"card_type": "2",
@@ -167266,6 +167824,187 @@ var CARDS = {
 						"all": "1",
 						"id": "enrage",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"16223": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1553187600000",
+		"id": "16223",
+		"maxLevel": 6,
+		"name": "Gorgeel Stonecaster",
+		"picture": "Seafolk_Medusa_Head_Seafolk_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
+	"16224": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1553187600000",
+		"id": "16224",
+		"maxLevel": 6,
+		"name": "Azurtitan Geomage",
+		"picture": "Seafolk_Corrupted_Crystal_Merman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "corrosive",
+				"x": 4
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5",
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 39,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 4
 					}
 				]
 			}
@@ -223394,6 +224133,103 @@ var CARDS = {
 			}
 		}
 	},
+	"25227": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1553187600000",
+		"id": "25227",
+		"maxLevel": 6,
+		"name": "Frosthold Mermancer",
+		"picture": "Seafolk_Orb_Enchanter_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2,
+				"y": "12"
+			},
+			{
+				"id": "frost",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "12"
+					},
+					{
+						"id": "frost",
+						"x": 1
+					}
+				]
+			},
+			"3": {
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "12"
+					},
+					{
+						"id": "frost",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "12"
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"25228": {
 		"attack": 8,
 		"card_type": "2",
@@ -241432,6 +242268,175 @@ var CARDS = {
 						"all": "1",
 						"id": "enrage",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"26223": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1553187600000",
+		"id": "26223",
+		"maxLevel": 6,
+		"name": "Gorgeel Stonebiter",
+		"picture": "Seafolk_Medusa_Head_Seafolk_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 8
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
+	"26224": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1553187600000",
+		"id": "26224",
+		"maxLevel": 6,
+		"name": "Azurtitan Geomancer",
+		"picture": "Seafolk_Corrupted_Crystal_Merman_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "corrosive",
+				"x": 6
+			},
+			{
+				"id": "nullify",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5",
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": []
+			},
+			"3": {
+				"health": 41,
+				"skill": []
+			},
+			"4": {
+				"attack": 15,
+				"health": 42,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			}
