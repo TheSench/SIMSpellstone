@@ -1464,6 +1464,122 @@ var BATTLEGROUNDS = {
 		"id": "545",
 		"name": "Draining Soul"
 	},
+	"546": {
+		"desc": "All Common cards have their Attack, Health, and all Skills multiplied by 5!",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 4,
+				"z": "1"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 4,
+				"rarity": 1
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "armored",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "counter",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "evade",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "leech",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "pierce",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "burn",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "poison",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "heal",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "strike",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "weaken",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "protect",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "rally",
+				"z": "1"
+			}
+		],
+		"id": "546",
+		"name": "Revenge of the Commons"
+	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
 		"effect": [
@@ -2482,6 +2598,38 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2062",
 		"name": "Sea's Serenade",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2063": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2063",
+		"name": "Melancholy Melody",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2064": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.2,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2064",
+		"name": "Melancholy Melody",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},

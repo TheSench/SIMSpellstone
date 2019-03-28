@@ -22769,8 +22769,7 @@ var CARDS = {
 			{
 				"c": 6,
 				"id": "rally",
-				"x": 20,
-				"y": "6"
+				"x": 20
 			},
 			{
 				"id": "mark",
@@ -22790,8 +22789,7 @@ var CARDS = {
 					{
 						"c": 6,
 						"id": "rally",
-						"x": 26,
-						"y": "6"
+						"x": 26
 					},
 					{
 						"id": "mark",
@@ -22810,8 +22808,7 @@ var CARDS = {
 					{
 						"c": 5,
 						"id": "rally",
-						"x": 32,
-						"y": "6"
+						"x": 32
 					},
 					{
 						"id": "mark",
@@ -22830,8 +22827,7 @@ var CARDS = {
 					{
 						"c": 4,
 						"id": "rally",
-						"x": 38,
-						"y": "6"
+						"x": 38
 					},
 					{
 						"id": "mark",
@@ -22850,8 +22846,7 @@ var CARDS = {
 					{
 						"c": 4,
 						"id": "rally",
-						"x": 44,
-						"y": "6"
+						"x": 44
 					},
 					{
 						"id": "mark",
@@ -22870,8 +22865,7 @@ var CARDS = {
 					{
 						"c": 4,
 						"id": "rally",
-						"x": 50,
-						"y": "6"
+						"x": 50
 					},
 					{
 						"id": "mark",
@@ -23127,6 +23121,86 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"427": {
+		"card_type": "1",
+		"health": 54,
+		"id": "427",
+		"maxLevel": 6,
+		"name": "Crystal Merman",
+		"picture": "Portrait_Corrupted_Merman",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "counterburn",
+				"x": 1
+			},
+			{
+				"id": "enhance",
+				"s": "counter",
+				"x": 3
+			},
+			{
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 56,
+				"skill": []
+			},
+			"3": {
+				"health": 59,
+				"skill": []
+			},
+			"4": {
+				"health": 62,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "counterburn",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "counter",
+						"x": 4
+					},
+					{
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 65,
+				"skill": []
+			},
+			"6": {
+				"health": 68,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "counter",
+						"x": 5
+					},
+					{
+						"id": "enfeeble",
+						"x": 4
 					}
 				]
 			}
@@ -99413,6 +99487,102 @@ var CARDS = {
 			}
 		}
 	},
+	"7228": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"hidden_until": "1553792400000",
+		"id": "7228",
+		"maxLevel": 6,
+		"name": "Shellcran Catcher",
+		"picture": "Insect_Seafolk_Insect_Mermaid_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 6,
+				"y": "12"
+			},
+			{
+				"id": "daze",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"12",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 22,
+				"skill": []
+			}
+		}
+	},
 	"7229": {
 		"attack": 8,
 		"card_type": "2",
@@ -114280,6 +114450,646 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"8128": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 35,
+		"hidden_until": "1554138000000",
+		"id": "8128",
+		"maxLevel": 6,
+		"name": "Big Leaf Frog",
+		"picture": "Lucky_Frog_B",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 36,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 10,
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"health": 39,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"attack": 11,
+				"health": 40,
+				"skill": []
+			},
+			"6": {
+				"attack": 12,
+				"health": 42,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"8129": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 34,
+		"hidden_until": "1554138000000",
+		"id": "8129",
+		"maxLevel": 6,
+		"name": "Heaven Breaker Asariel",
+		"picture": "Cannon_Angel_B",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "strike",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"health": 37,
+				"skill": [
+					{
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"attack": 10,
+				"health": 41,
+				"skill": [
+					{
+						"id": "strike",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 43,
+				"skill": [
+					{
+						"id": "strike",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"8130": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 4,
+		"health": 66,
+		"hidden_until": "1554138000000",
+		"id": "8130",
+		"maxLevel": 6,
+		"name": "Lack'thor",
+		"picture": "Reborn_Dragon_A",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"7",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 15,
+				"health": 68,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 10
+					}
+				]
+			},
+			"3": {
+				"health": 71,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 11
+					}
+				]
+			},
+			"4": {
+				"attack": 16,
+				"health": 74,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 12
+					}
+				]
+			},
+			"5": {
+				"attack": 17,
+				"health": 77,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 13
+					}
+				]
+			},
+			"6": {
+				"attack": 18,
+				"health": 80,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 14
+					}
+				]
+			}
+		}
+	},
+	"8131": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 36,
+		"hidden_until": "1554138000000",
+		"id": "8131",
+		"maxLevel": 6,
+		"name": "The C-Team",
+		"picture": "Frog_Guardian_Dragon_B",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 5,
+				"health": 39,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 41,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 6,
+				"health": 43,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 45,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"8132": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1554138000000",
+		"id": "8132",
+		"maxLevel": 6,
+		"name": "Vindi-caterer Karna",
+		"picture": "Insect_Champion_Mecha_B",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "burn",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"health": 21,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "burn",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"health": 24,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"health": 26,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "burn",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"health": 28,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"id": "burn",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"8133": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 22,
+		"id": "8133",
+		"maxLevel": 6,
+		"name": "Dinged Waptor",
+		"picture": "Ugly_Raptor_A",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 1
+			},
+			{
+				"id": "weakenself",
+				"x": 1
+			},
+			{
+				"c": 5,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"health": 23,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "weakenself",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"health": 24,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "weakenself",
+						"x": 3
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"health": 25,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "weakenself",
+						"x": 4
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"attack": 10,
+				"health": 26,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "weakenself",
+						"x": 5
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"health": 27,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "weakenself",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			}
@@ -187199,6 +188009,116 @@ var CARDS = {
 				"attack": 10,
 				"health": 50,
 				"skill": []
+			}
+		}
+	},
+	"17228": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1553792400000",
+		"id": "17228",
+		"maxLevel": 6,
+		"name": "Shellcran Trapper",
+		"picture": "Insect_Seafolk_Insect_Mermaid_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "rally",
+				"x": 7,
+				"y": "12"
+			},
+			{
+				"id": "daze",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"12",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"health": 23,
+				"skill": []
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
 			}
 		}
 	},
@@ -261723,6 +262643,115 @@ var CARDS = {
 					{
 						"id": "frost",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"27228": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1553792400000",
+		"id": "27228",
+		"maxLevel": 6,
+		"name": "Shellcran Ensnarer",
+		"picture": "Insect_Seafolk_Insect_Mermaid_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 8
+			},
+			{
+				"id": "rally",
+				"x": 9,
+				"y": "12"
+			},
+			{
+				"id": "daze",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"12",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "rally",
+						"x": 11,
+						"y": "12"
+					},
+					{
+						"id": "daze",
+						"x": 9
 					}
 				]
 			}
