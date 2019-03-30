@@ -22327,9 +22327,9 @@ var CARDS = {
 				"x": 70
 			},
 			{
-				"c": 6,
+				"c": 4,
 				"id": "strike",
-				"x": 35
+				"x": 74
 			}
 		],
 		"sub_type": [],
@@ -22348,9 +22348,9 @@ var CARDS = {
 						"x": 80
 					},
 					{
-						"c": 5,
+						"c": 4,
 						"id": "strike",
-						"x": 35
+						"x": 75
 					}
 				]
 			},
@@ -22368,9 +22368,9 @@ var CARDS = {
 						"x": 80
 					},
 					{
-						"c": 4,
+						"c": 3,
 						"id": "strike",
-						"x": 36
+						"x": 75
 					}
 				]
 			},
@@ -22388,9 +22388,9 @@ var CARDS = {
 						"x": 95
 					},
 					{
-						"c": 4,
+						"c": 3,
 						"id": "strike",
-						"x": 37
+						"x": 76
 					}
 				]
 			},
@@ -22408,9 +22408,9 @@ var CARDS = {
 						"x": 99
 					},
 					{
-						"c": 4,
+						"c": 2,
 						"id": "strike",
-						"x": 38
+						"x": 78
 					}
 				]
 			},
@@ -22428,9 +22428,9 @@ var CARDS = {
 						"x": 99
 					},
 					{
-						"c": 4,
+						"c": 2,
 						"id": "strike",
-						"x": 40
+						"x": 80
 					}
 				]
 			}
@@ -22762,14 +22762,14 @@ var CARDS = {
 		"set": "9999",
 		"skill": [
 			{
-				"c": 6,
+				"c": 5,
 				"id": "imbue",
 				"s": "flurry"
 			},
 			{
-				"c": 6,
+				"c": 5,
 				"id": "rally",
-				"x": 20
+				"x": 28
 			},
 			{
 				"id": "mark",
@@ -22787,9 +22787,9 @@ var CARDS = {
 						"s": "flurry"
 					},
 					{
-						"c": 6,
+						"c": 5,
 						"id": "rally",
-						"x": 26
+						"x": 30
 					},
 					{
 						"id": "mark",
@@ -22801,12 +22801,12 @@ var CARDS = {
 				"health": 96,
 				"skill": [
 					{
-						"c": 5,
+						"c": 4,
 						"id": "imbue",
 						"s": "flurry"
 					},
 					{
-						"c": 5,
+						"c": 4,
 						"id": "rally",
 						"x": 32
 					},
@@ -23132,7 +23132,7 @@ var CARDS = {
 		"id": "427",
 		"maxLevel": 6,
 		"name": "Crystal Merman",
-		"picture": "Portrait_Corrupted_Merman",
+		"picture": "portrait_corrupted_merman",
 		"rarity": 4,
 		"set": "9999",
 		"skill": [
@@ -23201,6 +23201,254 @@ var CARDS = {
 					{
 						"id": "enfeeble",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"428": {
+		"card_type": "1",
+		"health": 40,
+		"id": "428",
+		"maxLevel": 6,
+		"name": "Luck Based Frog",
+		"picture": "portrait_lucky_frog_portrait",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "evade",
+				"x": 1
+			},
+			{
+				"id": "rally",
+				"x": 2
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 45,
+				"skill": []
+			},
+			"3": {
+				"health": 50,
+				"skill": []
+			},
+			"4": {
+				"health": 55,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 1
+					},
+					{
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 60,
+				"skill": []
+			},
+			"6": {
+				"health": 65,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 1
+					},
+					{
+						"id": "rally",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"429": {
+		"card_type": "1",
+		"health": 50,
+		"id": "429",
+		"maxLevel": 6,
+		"name": "Lucker Based Frog",
+		"picture": "portrait_lucky_frog_2",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "evade",
+				"x": 2
+			},
+			{
+				"id": "rally",
+				"x": 3
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 55,
+				"skill": []
+			},
+			"3": {
+				"health": 60,
+				"skill": []
+			},
+			"4": {
+				"health": 65,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 2
+					},
+					{
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 70,
+				"skill": []
+			},
+			"6": {
+				"health": 75,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"430": {
+		"card_type": "1",
+		"health": 40,
+		"id": "430",
+		"maxLevel": 6,
+		"name": "Piercing Cannon",
+		"picture": "portrait_cannon_angel_portrait",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 45,
+				"skill": []
+			},
+			"3": {
+				"health": 50,
+				"skill": []
+			},
+			"4": {
+				"health": 55,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 60,
+				"skill": []
+			},
+			"6": {
+				"health": 65,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"431": {
+		"card_type": "1",
+		"health": 40,
+		"id": "431",
+		"maxLevel": 6,
+		"name": "Just Cress",
+		"picture": "portrait_cress_portrait",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 45,
+				"skill": []
+			},
+			"3": {
+				"health": 50,
+				"skill": []
+			},
+			"4": {
+				"health": 55,
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 60,
+				"skill": []
+			},
+			"6": {
+				"health": 65,
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
 					}
 				]
 			}
@@ -41427,6 +41675,91 @@ var CARDS = {
 			},
 			"5": {
 				"health": 19,
+				"skill": []
+			}
+		}
+	},
+	"2152": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 4,
+		"desc": "Don't get sad...",
+		"health": 12,
+		"id": "2152",
+		"maxLevel": 3,
+		"name": "Bomblet",
+		"picture": "Bomblet_A",
+		"rarity": 1,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 1
+			},
+			{
+				"id": "counterburn",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 1
+					},
+					{
+						"id": "counterburn",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 13,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 1
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"2153": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"desc": "BWAKBWAKbwakBWAKbwak... BWAKBWAKBWAK",
+		"health": 4,
+		"id": "2153",
+		"maxLevel": 3,
+		"name": "Angry Chicken",
+		"picture": "Chicken_A",
+		"rarity": 1,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "berserk",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 5,
+				"skill": []
+			},
+			"3": {
+				"attack": 3,
 				"skill": []
 			}
 		}
@@ -80672,6 +81005,84 @@ var CARDS = {
 			}
 		}
 	},
+	"6225": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 4,
+		"health": 45,
+		"hidden_until": "1554138000000",
+		"id": "6225",
+		"maxLevel": 6,
+		"name": "Boilfin Merman",
+		"picture": "Seafolk_Fish_Mermaid_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 46,
+				"skill": []
+			},
+			"3": {
+				"health": 47,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"health": 48,
+				"skill": []
+			},
+			"6": {
+				"health": 49,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -114233,7 +114644,7 @@ var CARDS = {
 				"x": 7
 			},
 			{
-				"id": "poisonstrike",
+				"id": "strike",
 				"x": 50
 			},
 			{
@@ -114254,7 +114665,7 @@ var CARDS = {
 						"x": 7
 					},
 					{
-						"id": "poisonstrike",
+						"id": "strike",
 						"x": 51
 					},
 					{
@@ -114271,7 +114682,7 @@ var CARDS = {
 						"x": 7
 					},
 					{
-						"id": "poisonstrike",
+						"id": "strike",
 						"x": 52
 					},
 					{
@@ -114288,7 +114699,7 @@ var CARDS = {
 						"x": 8
 					},
 					{
-						"id": "poisonstrike",
+						"id": "strike",
 						"x": 53
 					},
 					{
@@ -114305,7 +114716,7 @@ var CARDS = {
 						"x": 8
 					},
 					{
-						"id": "poisonstrike",
+						"id": "strike",
 						"x": 54
 					},
 					{
@@ -114322,7 +114733,7 @@ var CARDS = {
 						"x": 9
 					},
 					{
-						"id": "poisonstrike",
+						"id": "strike",
 						"x": 55
 					},
 					{
@@ -114754,7 +115165,7 @@ var CARDS = {
 		"id": "8131",
 		"maxLevel": 6,
 		"name": "The C-Team",
-		"picture": "Frog_Guardian_Dragon_B",
+		"picture": "Guardian_Dragon_B",
 		"rarity": 4,
 		"set": "9999",
 		"skill": [
@@ -114887,7 +115298,7 @@ var CARDS = {
 		"id": "8132",
 		"maxLevel": 6,
 		"name": "Vindi-caterer Karna",
-		"picture": "Insect_Champion_Mecha_B",
+		"picture": "Insect_Champion_B",
 		"rarity": 4,
 		"set": "9999",
 		"skill": [
@@ -131920,6 +132331,95 @@ var CARDS = {
 						"id": "flurry"
 					}
 				]
+			}
+		}
+	},
+	"12152": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 4,
+		"desc": "... get MAD!",
+		"health": 14,
+		"id": "12152",
+		"maxLevel": 3,
+		"name": "Kind of a Big Bomb",
+		"picture": "Bomblet_B",
+		"rarity": 1,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 1
+			},
+			{
+				"id": "counterburn",
+				"x": 3
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 15,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"12153": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"desc": "\"How is it flying?!\" - Tellum, Novice Adventurer",
+		"health": 6,
+		"id": "12153",
+		"maxLevel": 3,
+		"name": "Berserking Chicken",
+		"picture": "Chicken_B",
+		"rarity": 1,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "berserk",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 7,
+				"skill": []
 			}
 		}
 	},
@@ -168815,6 +169315,97 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"16225": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 4,
+		"health": 49,
+		"hidden_until": "1554138000000",
+		"id": "16225",
+		"maxLevel": 6,
+		"name": "Boilfin Warrior",
+		"picture": "Seafolk_Fish_Mermaid_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 50,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			},
+			"4": {
+				"health": 51,
+				"skill": []
+			},
+			"5": {
+				"health": 52,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 10
 					}
 				]
 			}
@@ -206391,6 +206982,95 @@ var CARDS = {
 			}
 		}
 	},
+	"22152": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 4,
+		"desc": "... or just get bigger, that works too.",
+		"health": 16,
+		"id": "22152",
+		"maxLevel": 3,
+		"name": "The Bomb",
+		"picture": "Bomblet_C",
+		"rarity": 1,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "counterburn",
+				"x": 3
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"22153": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"desc": "\"Oh... well maybe it isn't.\" - Tellum, Novice Adventurer",
+		"health": 8,
+		"id": "22153",
+		"maxLevel": 3,
+		"name": "Divebomb Chicken",
+		"picture": "Chicken_C",
+		"rarity": 1,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 9,
+				"skill": [
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"25000": {
 		"attack": 7,
 		"card_type": "2",
@@ -243357,6 +244037,97 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"26225": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 4,
+		"health": 52,
+		"hidden_until": "1554138000000",
+		"id": "26225",
+		"maxLevel": 6,
+		"name": "Boilfin Punisher",
+		"picture": "Seafolk_Fish_Mermaid_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"id": "leech",
+				"x": 10
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 53,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 11
+					}
+				]
+			},
+			"3": {
+				"health": 54,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 55,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 11
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 12
 					}
 				]
 			}

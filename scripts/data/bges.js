@@ -1575,10 +1575,34 @@ var BATTLEGROUNDS = {
 				"mult": 4,
 				"s": "rally",
 				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "berserk",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "absorb",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "counterburn",
+				"z": "1"
 			}
 		],
 		"id": "546",
-		"name": "Revenge of the Commons"
+		"name": "Common Revenge"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
