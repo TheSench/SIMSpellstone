@@ -3885,6 +3885,40 @@ var CAMPAIGNS = {
 		],
 		"name": "The Legends Come To Take Their Place!"
 	},
+	"1205": {
+		"battleground_id": "2063",
+		"id": "1205",
+		"items": {
+			"3089": 0.6
+		},
+		"location_id": "21",
+		"missions": [
+			"6179",
+			"6180",
+			"6181",
+			"6182",
+			"6183",
+			"6184"
+		],
+		"name": "Old Alliances Die Hard"
+	},
+	"1206": {
+		"battleground_id": "2064",
+		"id": "1206",
+		"items": {
+			"3089": 0.8
+		},
+		"location_id": "21",
+		"missions": [
+			"6185",
+			"6186",
+			"6187",
+			"6188",
+			"6189",
+			"6190"
+		],
+		"name": "Goblins' Future"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
