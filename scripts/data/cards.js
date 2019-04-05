@@ -81490,6 +81490,101 @@ var CARDS = {
 			}
 		}
 	},
+	"6228": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 4,
+		"desc": "\"It's you that he's cooking.\"",
+		"health": 44,
+		"hidden_until": "1554742800000",
+		"id": "6228",
+		"maxLevel": 6,
+		"name": "Mag \"The Pebble\" Ma",
+		"picture": "Elemental_Lava_Warrior_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 45,
+				"skill": []
+			},
+			"3": {
+				"health": 46,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"attack": 13,
+				"skill": []
+			},
+			"5": {
+				"health": 47,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -170136,6 +170231,105 @@ var CARDS = {
 			}
 		}
 	},
+	"16228": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 4,
+		"health": 48,
+		"hidden_until": "1554742800000",
+		"id": "16228",
+		"maxLevel": 6,
+		"name": "Mag \"The Stone\" Ma",
+		"picture": "Elemental_Lava_Warrior_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 14,
+				"skill": []
+			},
+			"3": {
+				"health": 49,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 50,
+				"skill": []
+			},
+			"5": {
+				"health": 51,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -245210,6 +245404,105 @@ var CARDS = {
 					{
 						"id": "burn",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"26228": {
+		"attack": 15,
+		"card_type": "2",
+		"cost": 4,
+		"health": 51,
+		"hidden_until": "1554742800000",
+		"id": "26228",
+		"maxLevel": 6,
+		"name": "Mag \"The Crag\" Ma",
+		"picture": "Elemental_Lava_Warrior_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 52,
+				"skill": []
+			},
+			"3": {
+				"health": 53,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"attack": 16,
+				"skill": []
+			},
+			"5": {
+				"health": 54,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
 					}
 				]
 			}
