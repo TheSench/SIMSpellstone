@@ -421,11 +421,14 @@ var SIMULATOR = {};
 			return affected;
 		},
 
+		invigorate: function (src_card, skill) {
+			activationSkills.heal(src_card, skill, true);
+		},
 		// Heal
 		// - Can target specific faction
 		// - Targets allied damaged assaults
 		// - Can be enhanced
-		heal: function (src_card, skill) {
+		heal: function (src_card, skill, ignoreMax) {
 
 			var p = get_p(src_card);
 
@@ -439,7 +442,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-					&& (all || target.isDamaged())) {
+					&& (all || target.isDamaged() || ignoreMax)) {
 					targets.push(key);
 				}
 			}
@@ -462,7 +465,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' but it is nullified!<br>';
+					if (debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -474,7 +477,10 @@ var SIMULATOR = {};
 					heal_amt = Math.ceil(target.health * mult);
 				}
 
-				if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
+				var missingHealth = target.health - target.health_left;
+				if (heal_amt > missingHealth && !ignoreMax) {
+					heal_amt = missingHealth;
+				}
 				target['health_left'] += heal_amt;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
@@ -1135,6 +1141,9 @@ var SIMULATOR = {};
 		// - Targets specific faction
 		// - Targets allied adjacent unjammed, active assaults
 		// - Can be enhanced?
+		radiance: function (src_card, skill) {
+			return earlyActivationSkills.legion(src_card, skill);
+		},
 		legion: function (src_card, skill) {
 
 			var p = get_p(src_card);
@@ -2904,6 +2913,28 @@ var SIMULATOR = {};
 
 				current_assault.attack_berserk += berserk;
 				if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
+			}
+
+			// Devour
+			// - Must have done some damage to an assault unit
+			if (current_assault.devour) {
+
+				var devour = current_assault.devour;
+				var enhanced = getEnhancement(current_assault, 'berserk', devour);
+				devour += enhanced;
+
+				current_assault.attack_berserk += devour;
+
+				var healing = Math.min(devour, current_assault.health - current_assault.health_left);
+				if(healing) {
+					current_assault.health_left += healing;
+				}
+
+				if (debug) {
+					echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
+					if(healing) echo += ' and healing ' + healing + ' health';
+					echo += '<br>';
+				}
 			}
 		}
 
