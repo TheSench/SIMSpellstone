@@ -81,7 +81,7 @@ var SKILL_DATA = {
 	},
 	"devour": {
 		"desc": "Berserk and heal.",
-		"icon": "berserk",
+		"icon": "devour",
 		"name": "devour",
 		"type": "activation"
 	},
@@ -183,7 +183,7 @@ var SKILL_DATA = {
 	},
 	"invigorate": {
 		"desc": "Increase max hp or heal.",
-		"icon": "heal",
+		"icon": "invigorate",
 		"name": "invigorate",
 		"type": "activation"
 	},
@@ -261,7 +261,7 @@ var SKILL_DATA = {
 	},
 	"radiance": {
 		"desc": "At start of turn, grants adjacent allies Radiance, increasing Attack.",
-		"icon": "legion",
+		"icon": "radiance",
 		"name": "radiance",
 		"type": "earlyActivation"
 	},

@@ -64422,6 +64422,176 @@ var CARDS = {
 			}
 		}
 	},
+	"5605": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"id": "5605",
+		"maxLevel": 10,
+		"name": "Medusozoa, the Immortal",
+		"picture": "Elemental_Seafolk_Thunder_Cloud_Jellyfish_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"attack": 14,
+				"health": 41,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 42,
+				"skill": []
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					}
+				]
+			},
+			"8": {
+				"attack": 16,
+				"health": 43,
+				"skill": []
+			},
+			"9": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 6
+					}
+				]
+			},
+			"10": {
+				"health": 44,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"6000": {
 		"attack": 4,
 		"card_type": "2",
