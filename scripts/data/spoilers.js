@@ -1,5 +1,7 @@
 "use strict"
 
 var spoilers = {
-	"5605": true
+	"7232": true,
+	"17232": true,
+	"27232": true
 };

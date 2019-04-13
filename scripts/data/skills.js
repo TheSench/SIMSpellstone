@@ -325,6 +325,12 @@ var SKILL_DATA = {
 		"name": "Bolt",
 		"type": "activation"
 	},
+	"swarm": {
+		"desc": "After dealing Attack damage, permanently increases the Attack of the active ally card with the lowest Attack by X.",
+		"icon": "berserk",
+		"name": "Swarm",
+		"type": "activation"
+	},
 	"taunt": {
 		"desc": "Attack damage dealt to adjacent creatures is dealt to this creature instead.",
 		"icon": "taunt",

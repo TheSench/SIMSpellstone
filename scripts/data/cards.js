@@ -100834,6 +100834,100 @@ var CARDS = {
 			}
 		}
 	},
+	"7232": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 29,
+		"hidden_until": "1555347600000",
+		"id": "7232",
+		"maxLevel": 6,
+		"name": "Revitalea",
+		"picture": "Wylde_Elemental_Flower_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 30,
+				"skill": []
+			},
+			"3": {
+				"health": 31,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -189958,6 +190052,87 @@ var CARDS = {
 			}
 		}
 	},
+	"17232": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1555347600000",
+		"id": "17232",
+		"maxLevel": 6,
+		"name": "Revitalea Bloom",
+		"picture": "Wylde_Elemental_Flower_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"health": 34,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 35,
+				"skill": []
+			},
+			"5": {
+				"health": 36,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -265224,6 +265399,87 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27232": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1555347600000",
+		"id": "27232",
+		"maxLevel": 6,
+		"name": "Revitalea Blossom",
+		"picture": "Wylde_Elemental_Flower_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4
+			},
+			{
+				"id": "frost",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"attack": 11,
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"health": 39,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"id": "frost",
 						"x": 5
 					}
 				]
