@@ -827,7 +827,7 @@ var CARDS = {
 	"12": {
 		"card_type": "1",
 		"desc": "Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.",
-		"health": 20,
+		"health": 29,
 		"id": "12",
 		"maxLevel": 6,
 		"name": "Ol' Cedric",
@@ -839,95 +839,59 @@ var CARDS = {
 				"id": "rally",
 				"x": 1,
 				"y": "4"
-			},
-			{
-				"id": "heal",
-				"x": 1,
-				"y": "4"
 			}
 		],
 		"sub_type": [],
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 25,
+				"health": 34,
 				"skill": []
 			},
 			"3": {
-				"health": 30,
-				"skill": [
-					{
-						"id": "rally",
-						"x": 2,
-						"y": "4"
-					},
-					{
-						"id": "heal",
-						"x": 1,
-						"y": "4"
-					}
-				]
+				"health": 39,
+				"skill": []
 			},
 			"4": {
-				"health": 35,
+				"health": 44,
 				"skill": [
 					{
+						"all": "1",
 						"id": "rally",
-						"x": 2,
-						"y": "4"
-					},
-					{
-						"id": "heal",
 						"x": 1,
 						"y": "4"
 					},
 					{
-						"id": "protect",
+						"all": "1",
+						"id": "heal",
 						"x": 1,
 						"y": "4"
 					}
 				]
 			},
 			"5": {
-				"health": 41,
-				"skill": [
-					{
-						"id": "rally",
-						"x": 2,
-						"y": "4"
-					},
-					{
-						"all": "1",
-						"id": "heal",
-						"x": 2,
-						"y": "4"
-					},
-					{
-						"id": "protect",
-						"x": 2,
-						"y": "4"
-					}
-				]
+				"health": 49,
+				"skill": []
 			},
 			"6": {
-				"health": 47,
+				"health": 54,
 				"skill": [
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 2,
+						"x": 1,
 						"y": "4"
 					},
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 2,
+						"x": 1,
 						"y": "4"
 					},
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 2,
+						"x": 1,
 						"y": "4"
 					}
 				]
