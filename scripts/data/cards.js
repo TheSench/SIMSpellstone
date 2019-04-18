@@ -63455,7 +63455,7 @@ var CARDS = {
 	"5229": {
 		"attack": 8,
 		"card_type": "2",
-		"cost": 2,
+		"cost": 3,
 		"health": 31,
 		"hidden_until": "1555606800000",
 		"id": "5229",
@@ -152185,7 +152185,7 @@ var CARDS = {
 	"15229": {
 		"attack": 9,
 		"card_type": "2",
-		"cost": 2,
+		"cost": 3,
 		"health": 35,
 		"hidden_until": "1555606800000",
 		"id": "15229",
@@ -227769,7 +227769,7 @@ var CARDS = {
 	"25229": {
 		"attack": 11,
 		"card_type": "2",
-		"cost": 2,
+		"cost": 3,
 		"health": 38,
 		"hidden_until": "1555606800000",
 		"id": "25229",
