@@ -63452,6 +63452,97 @@ var CARDS = {
 			}
 		}
 	},
+	"5229": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 31,
+		"hidden_until": "1555606800000",
+		"id": "5229",
+		"maxLevel": 6,
+		"name": "Nasim Drifter",
+		"picture": "Leegendary_Elemental_Cloud_Blast_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 32,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 33,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -81620,6 +81711,83 @@ var CARDS = {
 			},
 			"6": {
 				"health": 33,
+				"skill": []
+			}
+		}
+	},
+	"6227": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1555606800000",
+		"id": "6227",
+		"maxLevel": 6,
+		"name": "Hestia, Fire Bringer",
+		"picture": "Elemental_Fire_War_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"health": 21,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
 				"skill": []
 			}
 		}
@@ -152014,6 +152182,97 @@ var CARDS = {
 			}
 		}
 	},
+	"15229": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 35,
+		"hidden_until": "1555606800000",
+		"id": "15229",
+		"maxLevel": 6,
+		"name": "Nasim Galeblast",
+		"picture": "Leegendary_Elemental_Cloud_Blast_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 38,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -170455,6 +170714,97 @@ var CARDS = {
 			},
 			"6": {
 				"health": 37,
+				"skill": []
+			}
+		}
+	},
+	"16227": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1555606800000",
+		"id": "16227",
+		"maxLevel": 6,
+		"name": "Hestia, Flame Thrower",
+		"picture": "Elemental_Fire_War_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"health": 25,
 				"skill": []
 			}
 		}
@@ -227416,6 +227766,84 @@ var CARDS = {
 			}
 		}
 	},
+	"25229": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 2,
+		"health": 38,
+		"hidden_until": "1555606800000",
+		"id": "25229",
+		"maxLevel": 6,
+		"name": "Nasim Galemaster",
+		"picture": "Leegendary_Elemental_Cloud_Blast_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "frost",
+				"x": 4
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 5
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"attack": 12,
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"health": 41,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -245713,6 +246141,84 @@ var CARDS = {
 					{
 						"id": "burn",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"26227": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1555606800000",
+		"id": "26227",
+		"maxLevel": 6,
+		"name": "Hestia, Incinerator",
+		"picture": "Elemental_Fire_War_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "burn",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			}
