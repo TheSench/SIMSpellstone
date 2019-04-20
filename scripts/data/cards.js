@@ -23418,6 +23418,236 @@ var CARDS = {
 			}
 		}
 	},
+	"432": {
+		"card_type": "1",
+		"health": 65,
+		"id": "432",
+		"maxLevel": 6,
+		"name": "Crazed Insect",
+		"picture": "portrait_architectbug",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "nullify",
+				"x": 1
+			},
+			{
+				"id": "enhance",
+				"s": "poison",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 66,
+				"skill": []
+			},
+			"3": {
+				"health": 67,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "nullify",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "poison",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 69,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "nullify",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "poison",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 70,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "nullify",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "poison",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 72,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "nullify",
+						"x": 4
+					},
+					{
+						"id": "enhance",
+						"s": "poison",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"433": {
+		"card_type": "1",
+		"health": 65,
+		"id": "433",
+		"maxLevel": 6,
+		"name": "Riftbreaker Amarok",
+		"picture": "portrait_emeraldwolf",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "poison",
+				"x": 1
+			},
+			{
+				"id": "enhance",
+				"s": "regenerate",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 67,
+				"skill": []
+			},
+			"3": {
+				"health": 69,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 1
+					},
+					{
+						"id": "enhance",
+						"s": "regenerate",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 71,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "regenerate",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 73,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "regenerate",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 75,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "poison",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "regenerate",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -63538,6 +63768,84 @@ var CARDS = {
 					{
 						"c": 3,
 						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"5230": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1555952400000",
+		"id": "5230",
+		"maxLevel": 6,
+		"name": "Gustblood Djinn",
+		"picture": "Frog_Elemental_Frog_Dijinni_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "nullify",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					},
+					{
+						"id": "berserk",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 14,
+				"skill": []
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
 					}
 				]
 			}
@@ -115618,7 +115926,7 @@ var CARDS = {
 				"x": 50
 			},
 			{
-				"id": "mark",
+				"id": "enfeeble",
 				"x": 40
 			}
 		],
@@ -115639,7 +115947,7 @@ var CARDS = {
 						"x": 51
 					},
 					{
-						"id": "mark",
+						"id": "enfeeble",
 						"x": 40
 					}
 				]
@@ -115656,7 +115964,7 @@ var CARDS = {
 						"x": 52
 					},
 					{
-						"id": "mark",
+						"id": "enfeeble",
 						"x": 40
 					}
 				]
@@ -115673,7 +115981,7 @@ var CARDS = {
 						"x": 53
 					},
 					{
-						"id": "mark",
+						"id": "enfeeble",
 						"x": 40
 					}
 				]
@@ -115690,7 +115998,7 @@ var CARDS = {
 						"x": 54
 					},
 					{
-						"id": "mark",
+						"id": "enfeeble",
 						"x": 40
 					}
 				]
@@ -115707,7 +116015,7 @@ var CARDS = {
 						"x": 55
 					},
 					{
-						"id": "mark",
+						"id": "enfeeble",
 						"x": 40
 					}
 				]
@@ -152270,6 +152578,97 @@ var CARDS = {
 			"6": {
 				"health": 38,
 				"skill": []
+			}
+		}
+	},
+	"15230": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 14,
+		"hidden_until": "1555952400000",
+		"id": "15230",
+		"maxLevel": 6,
+		"name": "Airblood Djinn",
+		"picture": "Frog_Elemental_Frog_Dijinni_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 15,
+				"skill": []
+			},
+			"3": {
+				"health": 16,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
 			}
 		}
 	},
@@ -227839,6 +228238,97 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"25230": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1555952400000",
+		"id": "25230",
+		"maxLevel": 6,
+		"name": "Rageblood Djinn",
+		"picture": "Frog_Elemental_Frog_Dijinni_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"attack": 10,
+				"skill": []
+			},
+			"4": {
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 4
 					}
 				]
 			}

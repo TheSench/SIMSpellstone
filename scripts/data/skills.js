@@ -366,5 +366,11 @@ var SKILL_DATA = {
 		"icon": "hinder",
 		"name": "Weaken Ally",
 		"type": "activation"
+	},
+	"wingguard": {
+		"desc": "Grants Barrier and Invisibility to self and ally creature on left.",
+		"icon": "avian_barrier",
+		"name": "Wing Guard",
+		"type": "activation"
 	}
 };

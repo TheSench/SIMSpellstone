@@ -89,6 +89,10 @@ var LOCATIONS = {
 		"id": "21",
 		"name": "Duskwillow Rebuilt"
 	},
+	"22": {
+		"id": "22",
+		"name": "Distorted Beetleton"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -3918,6 +3922,39 @@ var CAMPAIGNS = {
 			"6190"
 		],
 		"name": "Goblins' Future"
+	},
+	"1207": {
+		"id": "1207",
+		"items": {
+			"3092": 0.2
+		},
+		"location_id": "22",
+		"missions": [
+			"6203",
+			"6204",
+			"6205",
+			"6206",
+			"6207",
+			"6208"
+		],
+		"name": "Return to Beetleton"
+	},
+	"1208": {
+		"battleground_id": "2065",
+		"id": "1208",
+		"items": {
+			"3092": 0.4
+		},
+		"location_id": "22",
+		"missions": [
+			"6209",
+			"6210",
+			"6211",
+			"6212",
+			"6213",
+			"6214"
+		],
+		"name": "The Sage's Path"
 	},
 	"3000": {
 		"id": "3000",
@@ -86280,5 +86317,725 @@ var MISSIONS = {
 		],
 		"id": "6202",
 		"name": "Common Trashing Troupe"
+	},
+	"6203": {
+		"commander": {
+			"id": "319"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "5017"
+			},
+			{
+				"id": "5046"
+			},
+			{
+				"id": "5046"
+			},
+			{
+				"id": "5015"
+			},
+			{
+				"id": "7075"
+			},
+			{
+				"id": "5080"
+			},
+			{
+				"id": "2131",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6005",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7045",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5067",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5019",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7064",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6203",
+		"name": "Beetleton Distortion"
+	},
+	"6204": {
+		"commander": {
+			"id": "385"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "6006"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "5133"
+			},
+			{
+				"id": "6077"
+			},
+			{
+				"id": "2008"
+			},
+			{
+				"id": "1325"
+			},
+			{
+				"id": "1330",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6066",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5032",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7067",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6204",
+		"name": "Missing Town"
+	},
+	"6205": {
+		"commander": {
+			"id": "343"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "5135"
+			},
+			{
+				"id": "7021"
+			},
+			{
+				"id": "1026"
+			},
+			{
+				"id": "2137"
+			},
+			{
+				"id": "1629"
+			},
+			{
+				"id": "2049",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2057",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6046",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6044",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5048",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6140",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6205",
+		"name": "The Rift's Grasp"
+	},
+	"6206": {
+		"commander": {
+			"id": "432"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "7017"
+			},
+			{
+				"id": "6075"
+			},
+			{
+				"id": "7078"
+			},
+			{
+				"id": "2155"
+			},
+			{
+				"id": "2120"
+			},
+			{
+				"id": "1326"
+			},
+			{
+				"id": "1330",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2032",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2050",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5049",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7139",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6206",
+		"name": "Nightmare Insects"
+	},
+	"6207": {
+		"commander": {
+			"id": "433"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1010"
+			},
+			{
+				"id": "7004"
+			},
+			{
+				"id": "7021"
+			},
+			{
+				"id": "2154"
+			},
+			{
+				"id": "2095"
+			},
+			{
+				"id": "2058"
+			},
+			{
+				"id": "1633",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2154",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2137",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7065",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5082",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7068",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6207",
+		"name": "Rift Monsters"
+	},
+	"6208": {
+		"commander": {
+			"id": "432"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1012"
+			},
+			{
+				"id": "7015"
+			},
+			{
+				"id": "2008"
+			},
+			{
+				"id": "2058"
+			},
+			{
+				"id": "2010"
+			},
+			{
+				"id": "2155"
+			},
+			{
+				"id": "7140",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2008",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2137",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6069",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6076",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7048",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6208",
+		"name": "Sign of Civilization"
+	},
+	"6209": {
+		"commander": {
+			"id": "433"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "7078"
+			},
+			{
+				"id": "1026"
+			},
+			{
+				"id": "7045"
+			},
+			{
+				"id": "6005"
+			},
+			{
+				"id": "2009"
+			},
+			{
+				"id": "1325"
+			},
+			{
+				"id": "2048",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2120",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2049",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6202",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6068",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6209",
+		"name": "Unhappy Reunion"
+	},
+	"6210": {
+		"commander": {
+			"id": "391"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2154"
+			},
+			{
+				"id": "2120"
+			},
+			{
+				"id": "7045"
+			},
+			{
+				"id": "6075"
+			},
+			{
+				"id": "2075"
+			},
+			{
+				"id": "2057"
+			},
+			{
+				"id": "2131",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2032",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1633",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6175",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6057",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6210",
+		"name": "Memories Best Left Forgotten"
+	},
+	"6211": {
+		"commander": {
+			"id": "319"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "2057"
+			},
+			{
+				"id": "7004"
+			},
+			{
+				"id": "6005"
+			},
+			{
+				"id": "2095"
+			},
+			{
+				"id": "2057"
+			},
+			{
+				"id": "5139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2010",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7021",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6069",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6136",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6037",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6211",
+		"name": "The Lights' Source"
+	},
+	"6212": {
+		"commander": {
+			"id": "432"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "7075"
+			},
+			{
+				"id": "6015"
+			},
+			{
+				"id": "5133"
+			},
+			{
+				"id": "7045"
+			},
+			{
+				"id": "2056"
+			},
+			{
+				"id": "2057"
+			},
+			{
+				"id": "2099",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6046",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2008",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6134",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6008",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6212",
+		"name": "Betrayal"
+	},
+	"6213": {
+		"commander": {
+			"id": "433"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "7004"
+			},
+			{
+				"id": "6075"
+			},
+			{
+				"id": "6077"
+			},
+			{
+				"id": "2031"
+			},
+			{
+				"id": "5067"
+			},
+			{
+				"id": "1325"
+			},
+			{
+				"id": "2098",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7015",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5067",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2098",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6078",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5070",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6213",
+		"name": "Family Ties"
+	},
+	"6214": {
+		"commander": {
+			"id": "432"
+		},
+		"deck": [
+			{
+				"id": "5006"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "6042"
+			},
+			{
+				"id": "5080"
+			},
+			{
+				"id": "5135"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "5069"
+			},
+			{
+				"id": "1325"
+			},
+			{
+				"id": "2131",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6069",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6047",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5068",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6214",
+		"name": "Proxy Rebellion"
 	}
 };
