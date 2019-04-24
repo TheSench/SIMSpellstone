@@ -228,6 +228,7 @@ var defaultStatusValues = {
     envenomed: 0,
     heartseeker: 0,
     imbued: 0,
+    invigorated: 0,
     invisible: 0,
     nullified: 0,
     poisoned: 0,

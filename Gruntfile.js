@@ -98,6 +98,8 @@ module.exports = function (grunt) {
         uglify: {
             options: {
                 // the banner is inserted at the top of the output
+                mangle: false,
+                sourceMap: true
             },
             data: {
                 mangle: false,

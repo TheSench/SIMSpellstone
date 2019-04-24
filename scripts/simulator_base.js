@@ -421,6 +421,57 @@ var SIMULATOR = {};
 			return affected;
 		},
 
+		// Wing Guard
+		// - Targets self and leftmost ally
+		wingguard: function (src_card, skill) {
+			var p = get_p(src_card);
+
+			var wingward = skill.x;
+
+			var field_p_assaults = field[p]['assaults'];
+
+			// Targets self and leftmost ally
+			var targets = [];
+			for (var key = 0; key < src_card.key; key++) {
+				var target = field_p_assaults[key];
+				if (target.isAlive()) {
+					targets.push(key);
+					break;
+				}
+			}
+			targets.push(src_card.key);
+
+			var enhanced = getEnhancement(src_card, skill.id, wingward);
+			wingward += enhanced;
+
+			var affected = 0;
+
+			for (var key = 0, len = targets.length; key < len; key++) {
+				var target = field_p_assaults[targets[key]];
+
+				// Check Nullify
+				if (target.nullified) {
+					target.nullified--;
+					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
+					continue;
+				}
+
+				affected++;
+
+				target.protected += wingward;
+				target.invisible += wingward;
+				if (debug) {
+					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+					echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + 
+						', protecting it by ' + wingward + 
+						' and imbuing it with invisible ' + wingward;
+					echo += '<br>';
+				}
+			}
+
+			return affected;
+		},
+
 		invigorate: function (src_card, skill) {
 			activationSkills.heal(src_card, skill, true);
 		},
@@ -428,7 +479,7 @@ var SIMULATOR = {};
 		// - Can target specific faction
 		// - Targets allied damaged assaults
 		// - Can be enhanced
-		heal: function (src_card, skill, ignoreMax) {
+		heal: function (src_card, skill, invigorate) {
 
 			var p = get_p(src_card);
 
@@ -442,7 +493,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-					&& (all || target.isDamaged() || ignoreMax)) {
+					&& (all || target.isDamaged() || invigorate)) {
 					targets.push(key);
 				}
 			}
@@ -471,6 +522,15 @@ var SIMULATOR = {};
 
 				affected++;
 
+				var additionalMaxHealth = 0;
+				if(invigorate) {
+					additionalMaxHealth = Math.max(0, heal_amt - target.invigorated);
+					if(additionalMaxHealth) {
+						target.invigorated = heal_amt;
+						target.health += additionalMaxHealth;
+					}
+				}
+
 				var heal_amt = heal;
 				if (!heal_amt) {
 					var mult = skill.mult;
@@ -478,13 +538,15 @@ var SIMULATOR = {};
 				}
 
 				var missingHealth = target.health - target.health_left;
-				if (heal_amt > missingHealth && !ignoreMax) {
+				if (heal_amt > missingHealth && !invigorate) {
 					heal_amt = missingHealth;
 				}
 				target['health_left'] += heal_amt;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
+					echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt;
+					if (additionalMaxHealth) echo += ' and increases its max health by ' + additionalMaxHealth;
+					echo += '<br>';
 				}
 			}
 
@@ -1142,9 +1204,15 @@ var SIMULATOR = {};
 		// - Targets allied adjacent unjammed, active assaults
 		// - Can be enhanced?
 		radiance: function (src_card, skill) {
-			return earlyActivationSkills.legion(src_card, skill);
+			return earlyActivationSkills.legion(src_card, skill, function applyBarrier(target, amount) {
+				var protectAmount = Math.ceil(amount * 0.5);
+				target.protected += protectAmount;
+				if (debug) {
+					echo += ' and protecting it by ' + protectAmount;
+				}
+			});
 		},
-		legion: function (src_card, skill) {
+		legion: function (src_card, skill, additionalEffect) {
 
 			var p = get_p(src_card);
 			var field_p_assaults = field[p]['assaults'];
@@ -1168,13 +1236,17 @@ var SIMULATOR = {};
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
-						if (debug) echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' but it is nullified!<br>';
+						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
 						affected++;
 						target.attack_rally += rally;
 						if (debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-							echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+							echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' by ' + rally;
+						}
+						additionalEffect && additionalEffect(target, rally);
+						if (debug) {
+							echo += '<br>';
 						}
 					}
 				}
@@ -1710,6 +1782,34 @@ var SIMULATOR = {};
 
 			if (debug) {
 				echo += ' and is reanimated</br>';
+			}
+
+			return 1;
+		}
+	};
+
+	var onAttackSkills = {
+		swarm: function (attacker, defender) {
+			var p = get_p(attacker);
+			var field_p_assaults = field[p]['assaults'];
+
+			var weakest = null;
+			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+				var target = field_p_assaults[key];
+				if (target.isAlive()
+					&& (!weakest || (target.adjustedAttack() < weakest.adjustedAttack()))) {
+						weakest = target;
+				}
+			}
+
+			var swarm = attacker.swarm;
+			var enhanced = getEnhancement(attacker, 'swarm', swarm);
+			swarm += enhanced;
+
+			weakest.attack_berserk += swarm;
+
+			if (debug) {
+				echo += debug_name(current_assault) + ' activates swarm, boosting the attack of ' + debug_name(current_assault) + ' by ' + swarm + '</br>';
 			}
 
 			return 1;
@@ -2920,7 +3020,7 @@ var SIMULATOR = {};
 			if (current_assault.devour) {
 
 				var devour = current_assault.devour;
-				var enhanced = getEnhancement(current_assault, 'berserk', devour);
+				var enhanced = getEnhancement(current_assault, 'devour', devour);
 				devour += enhanced;
 
 				current_assault.attack_berserk += devour;
@@ -2935,6 +3035,12 @@ var SIMULATOR = {};
 					if(healing) echo += ' and healing ' + healing + ' health';
 					echo += '<br>';
 				}
+			}
+
+			// Swarm
+			// - Must have done some damage to an assault unit
+			if (current_assault.swarm) {
+				onAttackSkills.swarm(current_assault, target);
 			}
 		}
 
