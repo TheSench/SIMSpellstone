@@ -1,0 +1,62 @@
+{
+    // Toggles
+    "silence": "toggle",
+    "taunt": "toggle",
+
+    // Passives
+    "absorb": "turnStart",
+    "armored": "passive",
+    "backlash": "passive",
+    "berserk": "onAttack",
+    "corrosive": "onDamaged",
+    "counter": "onDamaged",
+    "counterburn": "onDamaged",
+    "counterpoison": "onDamaged",
+    "daze": "onAttack",
+    "devour": "onAttack",
+    "evade": "turnStart",
+    "flurry": "turnStart",
+    "fury": "onDamaged",
+    "leech": "onAttack",
+    "nullify": "onAttack",
+    "pierce": "passive",
+    "poison": "onAttack",
+    "regenerate": "turnEnd",
+    "reinforce": "onAttack",
+    "stasis": "passive",
+    "swarm": "onAttack",
+    "valor": "turnStart",
+    "venom": "onAttack",
+
+    // On Death
+    "unearth": "onDeath",
+    "reanimate": "onDeath",
+
+    // Early Activation
+    "barrage": "earlyActivation",
+    "enhance": "earlyActivation",
+    "enlarge": "earlyActivation",
+    "enrage": "earlyActivation",
+    "fervor": "earlyActivation",
+    "imbue": "earlyActivation",
+    "mark": "earlyActivation",
+    "legion": "earlyActivation",
+    "radiance": "earlyActivation",
+    "rally": "earlyActivation",
+    
+    // Activation
+    "burn": "activation",
+    "enfeeble": "activation",
+    "evadebarrier": "activation",
+    "frost": "activation",
+    "heal": "activation",
+    "intensify": "activation",
+    "invigorate": "activation",
+    "ignite": "activation",
+    "jam": "activation",
+    "protect": "activation",
+    "protect_ice": "activation",
+    "scorchbreath": "activation",
+    "strike": "activation",
+    "weaken": "activation"
+}
