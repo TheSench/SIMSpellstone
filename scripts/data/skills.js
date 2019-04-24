@@ -5,19 +5,19 @@ var SKILL_DATA = {
 		"desc": "Prevents this much damage taken from Skills or Statuses each round.",
 		"icon": "absorb",
 		"name": "Ward",
-		"type": "turnStart"
+		"type": "activation"
 	},
 	"armored": {
 		"desc": "Reduces damage taken from each Attack.",
 		"icon": "shield",
 		"name": "Armor",
-		"type": "passive"
+		"type": "activation"
 	},
 	"backlash": {
 		"desc": "After being targeted by an enemy creature's Skill, deals damage back.",
 		"icon": "payback",
 		"name": "Backlash",
-		"type": "passive"
+		"type": "activation"
 	},
 	"barrage": {
 		"desc": "Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.",
@@ -29,7 +29,7 @@ var SKILL_DATA = {
 		"desc": "After dealing Attack damage, permanently increases Attack.",
 		"icon": "berserk",
 		"name": "Berserk",
-		"type": "onAttack"
+		"type": "activation"
 	},
 	"burn": {
 		"desc": "Inflicts Scorch on the opposing creature. Scorch deals damage at end of turn until Scorch is not inflicted for a turn.",
@@ -53,31 +53,31 @@ var SKILL_DATA = {
 		"desc": "After taking Attack damage, inflicts Corrosive back, reducing Attack until Corrosive is not inflicted for two turns.",
 		"icon": "corrosive",
 		"name": "Corrosive",
-		"type": "onDamaged"
+		"type": "activation"
 	},
 	"counter": {
 		"desc": "After taking Attack damage, deals damage back.",
 		"icon": "vengeance",
 		"name": "Vengeance",
-		"type": "onDamaged"
+		"type": "activation"
 	},
 	"counterburn": {
 		"desc": "After taking Attack damage, inflicts Scorch back.",
 		"icon": "counterburn",
 		"name": "Emberhide",
-		"type": "onDamaged"
+		"type": "activation"
 	},
 	"counterpoison": {
 		"desc": "When damaged by an attack, Poison the attacker",
 		"icon": "counterburn",
 		"name": "Poisonhide",
-		"type": "onDamaged"
+		"type": "activation"
 	},
 	"daze": {
 		"desc": "After dealing Attack damage, inflicts Daze, reducing Attack.",
 		"icon": "daze",
 		"name": "Daze",
-		"type": "onAttack"
+		"type": "activation"
 	},
 	"devour": {
 		"desc": "Berserk and heal.",
@@ -101,19 +101,19 @@ var SKILL_DATA = {
 		"desc": "Permanently increases the Attack of a creature when played, while this creature is active",
 		"icon": "empower",
 		"name": "Enlarge",
-		"type": "earlyActivation"
+		"type": "activation"
 	},
 	"enrage": {
 		"desc": "Grants Enrage to a random ally creature, causing it to permanently increase Attack after taking Attack damage.",
 		"icon": "enrage",
 		"name": "Enrage",
-		"type": "earlyActivation"
+		"type": "activation"
 	},
 	"evade": {
 		"desc": "Avoids this many targeted enemy Skills each round.",
 		"icon": "invisibility",
 		"name": "Invisibility",
-		"type": "turnStart"
+		"type": "activation"
 	},
 	"evadebarrier": {
 		"desc": "Grants Barrier and Invisibility to a random ally creature.",
@@ -131,7 +131,7 @@ var SKILL_DATA = {
 		"desc": "Every {c} turns, Attacks twice and uses other Skills twice.",
 		"icon": "swiftness",
 		"name": "Dualstrike",
-		"type": "turnStart"
+		"type": "activation"
 	},
 	"frost": {
 		"desc": "Deals damage to the opposing creature and its adjacent creatures.",
@@ -143,7 +143,7 @@ var SKILL_DATA = {
 		"desc": "After taking Attack damage, deals damage back and permanently increases Attack.",
 		"icon": "fury",
 		"name": "Maelstrom's Fury",
-		"type": "onDamaged"
+		"type": "activation"
 	},
 	"haste": {
 		"desc": "Decreases the creature's delay.",
@@ -203,7 +203,7 @@ var SKILL_DATA = {
 		"desc": "After dealing Attack damage, heals self.",
 		"icon": "siphon",
 		"name": "Siphon",
-		"type": "onAttack"
+		"type": "activation"
 	},
 	"legion": {
 		"desc": "At start of turn, grants adjacent allies Legion, increasing Attack.",
@@ -221,19 +221,19 @@ var SKILL_DATA = {
 		"desc": "After dealing Attack damage, inflicts Nullify, causing the creature to avoid this many targeted ally Skills.",
 		"icon": "nullify",
 		"name": "Nullify",
-		"type": "onAttack"
+		"type": "activation"
 	},
 	"pierce": {
 		"desc": "Reduces the effect of damage reduction and prevention on Attack damage.",
 		"icon": "puncture",
 		"name": "Pierce",
-		"type": "passive"
+		"type": "activation"
 	},
 	"poison": {
 		"desc": "After dealing Attack damage, permanently inflicts Poison, dealing damage at end of turn. Poison does not stack.",
 		"icon": "corrupt",
 		"name": "Poison",
-		"type": "onAttack"
+		"type": "activation"
 	},
 	"poisonstrike": {
 		"desc": "Deals bolt damage to a random enemy creature and leaves poison",
@@ -275,19 +275,19 @@ var SKILL_DATA = {
 		"desc": "On death, is subject to a cruel fate.",
 		"icon": "reanimate",
 		"name": "A Knight's Fate",
-		"type": "onDeath"
+		"type": "activation"
 	},
 	"regenerate": {
 		"desc": "At end of turn, heals self, even while on delay.",
 		"icon": "regenerate",
 		"name": "Regenerate",
-		"type": "turnEnd"
+		"type": "activation"
 	},
 	"reinforce": {
 		"desc": "When this creature deals Attack damage they gain a Barrier",
 		"icon": "reinforce",
 		"name": "Energy Shield",
-		"type": "onAttack"
+		"type": "activation"
 	},
 	"resurrect": {
 		"desc": "Resurrects creatures when they die.",
@@ -305,7 +305,7 @@ var SKILL_DATA = {
 		"desc": "After dealing Attack damage, inflicts Silence, disabling all Skills.",
 		"icon": "silence",
 		"name": "Silence",
-		"type": "toggle"
+		"type": "activation"
 	},
 	"slow": {
 		"desc": "Increases the creature's delay.",
@@ -317,7 +317,7 @@ var SKILL_DATA = {
 		"desc": "Reduces damage taken from each Attack and Skill while on delay or Frozen.",
 		"icon": "shroud",
 		"name": "Shroud",
-		"type": "passive"
+		"type": "activation"
 	},
 	"strike": {
 		"desc": "Deals damage to a random enemy creature.",
@@ -335,25 +335,25 @@ var SKILL_DATA = {
 		"desc": "Attack damage dealt to adjacent creatures is dealt to this creature instead.",
 		"icon": "taunt",
 		"name": "Taunt",
-		"type": "toggle"
+		"type": "activation"
 	},
 	"unearth": {
 		"desc": "When a non token creature dies, it spawns a Token creature with stats based on its own stats",
 		"icon": "reanimate",
 		"name": "Unearth",
-		"type": "onDeath"
+		"type": "activation"
 	},
 	"valor": {
 		"desc": "At start of turn, permanently increases Attack if opposing creature has more Attack, even while on delay.",
 		"icon": "valor",
 		"name": "Valor",
-		"type": "turnStart"
+		"type": "activation"
 	},
 	"venom": {
 		"desc": "Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn",
 		"icon": "venom",
 		"name": "Venom",
-		"type": "onAttack"
+		"type": "activation"
 	},
 	"weaken": {
 		"desc": "Inflicts Weaken on a random enemy creature, reducing Attack.",
