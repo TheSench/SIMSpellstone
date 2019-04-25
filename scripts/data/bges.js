@@ -472,6 +472,20 @@ var BATTLEGROUNDS = {
 		"id": "128",
 		"name": "Poisonhide"
 	},
+	"129": {
+		"desc": "After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature by 20% of the Attacker's base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "swarm",
+				"mult": 0.2,
+				"y": "13"
+			}
+		],
+		"id": "129",
+		"name": "Swarm"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

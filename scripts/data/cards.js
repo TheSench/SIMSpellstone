@@ -101274,6 +101274,87 @@ var CARDS = {
 			}
 		}
 	},
+	"7231": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 30,
+		"hidden_until": "1556211600000",
+		"id": "7231",
+		"maxLevel": 6,
+		"name": "Poisoncap Maiden",
+		"picture": "Elemental_Mushroom_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"id": "poison",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 31,
+				"skill": []
+			},
+			"3": {
+				"health": 32,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"health": 33,
+				"skill": []
+			},
+			"6": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
 	"7232": {
 		"attack": 9,
 		"card_type": "2",
@@ -190765,6 +190846,101 @@ var CARDS = {
 			}
 		}
 	},
+	"17231": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 34,
+		"hidden_until": "1556211600000",
+		"id": "17231",
+		"maxLevel": 6,
+		"name": "Venomcap Maiden",
+		"picture": "Elemental_Mushroom_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"health": 36,
+				"skill": []
+			},
+			"5": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"17232": {
 		"attack": 9,
 		"card_type": "2",
@@ -266360,6 +266536,101 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27231": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1556211600000",
+		"id": "27231",
+		"maxLevel": 6,
+		"name": "Hexcap Maiden",
+		"picture": "Elemental_Mushroom_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 4
+			},
+			{
+				"id": "poison",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 11
 					}
 				]
 			}

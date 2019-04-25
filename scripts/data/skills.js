@@ -326,7 +326,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"swarm": {
-		"desc": "After dealing Attack damage, permanently increases the Attack of the active ally card with the lowest Attack by X.",
+		"desc": "After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature",
 		"icon": "berserk",
 		"name": "Swarm",
 		"type": "activation"
@@ -367,8 +367,8 @@ var SKILL_DATA = {
 		"name": "Weaken Ally",
 		"type": "activation"
 	},
-	"wingguard": {
-		"desc": "Grants Barrier and Invisibility to self and ally creature on left.",
+	"wingward": {
+		"desc": "Grants Barrier and half as much Invisibility to self and leftmost ally creature.",
 		"icon": "avian_barrier",
 		"name": "Wing Guard",
 		"type": "activation"

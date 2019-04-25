@@ -4617,5 +4617,295 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3016",
 		"location_id": "21",
 		"name": "Fiona's Dragonlings"
+	},
+	"3017": {
+		"desc": "Rayne's spiritlings have grown since you last saw them, but are still in need of care. Feed them Dark Honeycombs to unlock their powers!",
+		"effects": [
+			{
+				"id": "14",
+				"name": "Earth Spiritling",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Armor 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 1
+							}
+						],
+						"name": "Earth Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Armor 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 2
+							}
+						],
+						"name": "Earth Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Armor 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 3
+							}
+						],
+						"name": "Earth Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Armor 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 4
+							}
+						],
+						"name": "Earth Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Armor 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 6
+							}
+						],
+						"name": "Earth Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Armor 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 8
+							}
+						],
+						"name": "Earth Spiritling"
+					}
+				]
+			},
+			{
+				"id": "15",
+				"name": "Wind Spiritling",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Siphon 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 1
+							}
+						],
+						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 2
+							}
+						],
+						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 3
+							}
+						],
+						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 4
+							}
+						],
+						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 5
+							}
+						],
+						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 6
+							}
+						],
+						"name": "Wind Spiritling"
+					}
+				]
+			},
+			{
+				"id": "16",
+				"name": "Fire Spiritling",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Berserk 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 1
+							}
+						],
+						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 2
+							}
+						],
+						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 3
+							}
+						],
+						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 4
+							}
+						],
+						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 5
+							}
+						],
+						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 6
+							}
+						],
+						"name": "Fire Spiritling"
+					}
+				]
+			}
+		],
+		"id": "3017",
+		"location_id": "22",
+		"name": "Elemental Spiritlings"
 	}
 };
