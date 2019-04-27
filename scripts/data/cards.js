@@ -63851,6 +63851,83 @@ var CARDS = {
 			}
 		}
 	},
+	"5231": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 11,
+		"hidden_until": "1556557200000",
+		"id": "5231",
+		"maxLevel": 6,
+		"name": "Snow Crystal Crawler",
+		"picture": "Icicle_Spider_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "nullify",
+				"x": 1
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 12,
+				"skill": []
+			},
+			"4": {
+				"health": 13,
+				"skill": []
+			},
+			"5": {
+				"attack": 7,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -152753,6 +152830,71 @@ var CARDS = {
 			}
 		}
 	},
+	"15231": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1556557200000",
+		"id": "15231",
+		"maxLevel": 6,
+		"name": "Snow Crystal Creeper",
+		"picture": "Icicle_Spider_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 14,
+				"skill": []
+			},
+			"3": {
+				"health": 15,
+				"skill": []
+			},
+			"4": {
+				"health": 16,
+				"skill": []
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -228505,6 +228647,71 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"25231": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1556557200000",
+		"id": "25231",
+		"maxLevel": 6,
+		"name": "Snow Crystal Crusher",
+		"picture": "Icicle_Spider_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 17,
+				"skill": []
+			},
+			"3": {
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"health": 19,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			}
