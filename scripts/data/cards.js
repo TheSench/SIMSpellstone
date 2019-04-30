@@ -23811,6 +23811,7 @@ var CARDS = {
 		"set": "9999",
 		"skill": [],
 		"sub_type": [],
+		"tower_card": "1",
 		"type": "0",
 		"upgrades": {
 			"2": {
@@ -23902,6 +23903,7 @@ var CARDS = {
 			}
 		],
 		"sub_type": [],
+		"tower_card": "1",
 		"type": "0",
 		"upgrades": {
 			"2": {
@@ -24016,6 +24018,7 @@ var CARDS = {
 			}
 		],
 		"sub_type": [],
+		"tower_card": "1",
 		"type": "3",
 		"upgrades": {
 			"2": {
@@ -24267,6 +24270,7 @@ var CARDS = {
 			}
 		],
 		"sub_type": [],
+		"tower_card": "1",
 		"type": "1",
 		"upgrades": {
 			"2": {
@@ -63878,7 +63882,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"5"
+			"5",
+			"13"
 		],
 		"type": "1",
 		"upgrades": {
@@ -152857,7 +152862,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"5"
+			"5",
+			"13"
 		],
 		"type": "1",
 		"upgrades": {
@@ -228679,7 +228685,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"5"
+			"5",
+			"13"
 		],
 		"type": "1",
 		"upgrades": {
