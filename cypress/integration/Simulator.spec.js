@@ -2,7 +2,7 @@ const baseUrl = 'http://localhost/GHSS/Titans.html';
 
 function testDeck(description, deck1, deck2, expectedWinrate) {
     it(`${description} (${deck1} vs ${deck2}) should result in winrate of ${expectedWinrate}%`, function () {
-        cy.visit(baseUrl + `?deck1=${deck1}&deck2=${deck2}&sims=1000&autostart`);
+        cy.visit(baseUrl + `?deck1=${deck1}&deck2=${deck2}&bges=&sims=1000&autostart`);
         cy.get('#simulationStatus')
             .contains('Simulations complete')
             .then(function() {

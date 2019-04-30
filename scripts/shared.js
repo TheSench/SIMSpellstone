@@ -372,6 +372,10 @@ var makeUnit = (function () {
             return (this.card_type == "2");
         },
 
+        isTower: function() {
+            return false;
+        },
+
         isTrap: function () {
             return (this.card_type == "3");
         },

@@ -1793,14 +1793,21 @@ var SIMULATOR = {};
 			var p = get_p(attacker);
 			var field_p_assaults = field[p]['assaults'];
 
-			var weakest = null;
+			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
-				if (target.isAlive()
-					&& (!weakest || (target.adjustedAttack() < weakest.adjustedAttack()))) {
-						weakest = target;
+				if (target.isAlive() && !target.isTower()) {
+					var adjustedAttack = target.adjustedAttack();
+					if (!weakest || adjustedAttack < weakest) {
+						targets = [target];
+						weakest = adjustedAttack;
+					} else if (adjustedAttack === weakest) {
+						targets.push(target);
+					}
 				}
 			}
+
+			var weakest = choose_random_target(targets)[0];
 
 			var swarm = attacker.swarm;
 			var enhanced = getEnhancement(attacker, 'swarm', swarm);
@@ -1809,7 +1816,7 @@ var SIMULATOR = {};
 			weakest.attack_berserk += swarm;
 
 			if (debug) {
-				echo += debug_name(current_assault) + ' activates swarm, boosting the attack of ' + debug_name(current_assault) + ' by ' + swarm + '</br>';
+				echo += debug_name(attacker) + ' activates swarm, boosting the attack of ' + debug_name(attacker) + ' by ' + swarm + '</br>';
 			}
 
 			return 1;
@@ -1941,6 +1948,7 @@ var SIMULATOR = {};
 				var uid = 150;
 				towerCard.uid = uid;
 				field.uids[uid] = towerCard;
+				towerCard.isTower = function() { return true; };
 				play_card(towerCard, 'cpu', -1, true);
 			}
 		}
