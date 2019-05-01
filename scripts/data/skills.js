@@ -80,7 +80,7 @@ var SKILL_DATA = {
 		"type": "onAttack"
 	},
 	"devour": {
-		"desc": "Berserk and heal.",
+		"desc": "After dealing Attack damage, permanently increases Attack and heals self.",
 		"icon": "devour",
 		"name": "devour",
 		"type": "onAttack"
@@ -117,8 +117,8 @@ var SKILL_DATA = {
 	},
 	"evadebarrier": {
 		"desc": "Grants Barrier and Invisibility to a random ally creature.",
-		"icon": "avian_barrier",
-		"name": "Wing Ward",
+		"icon": "mystic_barrier",
+		"name": "Mystic Barrier",
 		"type": "activation"
 	},
 	"fervor": {
@@ -182,7 +182,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"invigorate": {
-		"desc": "Increase max hp or heal.",
+		"desc": "Heals a random ally creature and grants Invigorate, permanently increasing max health. Invigorate does not stack.",
 		"icon": "invigorate",
 		"name": "invigorate",
 		"type": "activation"
@@ -260,7 +260,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"radiance": {
-		"desc": "At start of turn, grants adjacent allies Radiance, increasing Attack.",
+		"desc": "At start of turn, grant adjacent allies Legion and half as much Barrier.",
 		"icon": "radiance",
 		"name": "radiance",
 		"type": "earlyActivation"

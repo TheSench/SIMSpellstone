@@ -473,7 +473,7 @@ var BATTLEGROUNDS = {
 		"name": "Poisonhide"
 	},
 	"129": {
-		"desc": "After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature by 20% of the Attacker's base Health.",
+		"desc": "After dealing Attack damage, permanently increases Attack of the lowest Attack active non-tower ally creature by 20% of the Attacker's base Health.",
 		"effect": [
 			{
 				"base": "health",

@@ -31765,10 +31765,10 @@ var CARDS = {
 		}
 	},
 	"2016": {
-		"attack": 9,
+		"attack": 10,
 		"card_type": "2",
 		"cost": 3,
-		"health": 33,
+		"health": 36,
 		"id": "2016",
 		"maxLevel": 7,
 		"name": "Atlas, the Ancient",
@@ -31787,7 +31787,7 @@ var CARDS = {
 			},
 			{
 				"all": "1",
-				"id": "heal",
+				"id": "invigorate",
 				"x": 3
 			}
 		],
@@ -31795,7 +31795,8 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 36,
+				"attack": 11,
+				"health": 38,
 				"skill": []
 			},
 			"3": {
@@ -31811,40 +31812,17 @@ var CARDS = {
 					},
 					{
 						"all": "1",
-						"id": "heal",
+						"id": "invigorate",
 						"x": 3
 					}
 				]
 			},
 			"4": {
-				"attack": 10,
-				"skill": []
-			},
-			"5": {
-				"health": 38,
-				"skill": [
-					{
-						"id": "evade",
-						"x": 3
-					},
-					{
-						"all": "1",
-						"id": "rally",
-						"x": 3
-					},
-					{
-						"all": "1",
-						"id": "heal",
-						"x": 4
-					}
-				]
-			},
-			"6": {
-				"attack": 11,
+				"attack": 12,
 				"health": 40,
 				"skill": []
 			},
-			"7": {
+			"5": {
 				"health": 42,
 				"skill": [
 					{
@@ -31854,22 +31832,62 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "invigorate",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 13,
+				"health": 44,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
 						"x": 5
 					},
 					{
 						"all": "1",
-						"id": "heal",
+						"id": "invigorate",
 						"x": 5
+					}
+				]
+			},
+			"7": {
+				"attack": 14,
+				"health": 46,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "invigorate",
+						"x": 6
 					}
 				]
 			}
 		}
 	},
 	"2017": {
-		"attack": 8,
+		"attack": 11,
 		"card_type": "2",
 		"cost": 3,
-		"health": 32,
+		"health": 38,
 		"id": "2017",
 		"maxLevel": 7,
 		"name": "Solaron, the Origin",
@@ -31887,7 +31905,7 @@ var CARDS = {
 				"x": 3
 			},
 			{
-				"id": "legion",
+				"id": "radiance",
 				"x": 5
 			}
 		],
@@ -31906,18 +31924,18 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "legion",
+						"id": "radiance",
 						"x": 6
 					}
 				]
 			},
 			"3": {
-				"attack": 9,
-				"health": 34,
+				"attack": 12,
+				"health": 40,
 				"skill": []
 			},
 			"4": {
-				"health": 36,
+				"health": 42,
 				"skill": [
 					{
 						"id": "armored",
@@ -31929,17 +31947,18 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "legion",
+						"id": "radiance",
 						"x": 6
 					}
 				]
 			},
 			"5": {
-				"health": 38,
+				"attack": 13,
+				"health": 44,
 				"skill": [
 					{
 						"id": "armored",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
@@ -31947,18 +31966,33 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"id": "legion",
+						"id": "radiance",
 						"x": 6
 					}
 				]
 			},
 			"6": {
-				"attack": 10,
-				"health": 40,
-				"skill": []
+				"attack": 14,
+				"health": 46,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"id": "radiance",
+						"x": 7
+					}
+				]
 			},
 			"7": {
-				"health": 42,
+				"attack": 15,
+				"health": 48,
 				"skill": [
 					{
 						"id": "armored",
@@ -31967,21 +32001,21 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 5
+						"x": 6
 					},
 					{
-						"id": "legion",
-						"x": 7
+						"id": "radiance",
+						"x": 8
 					}
 				]
 			}
 		}
 	},
 	"2018": {
-		"attack": 9,
+		"attack": 11,
 		"card_type": "2",
 		"cost": 3,
-		"health": 33,
+		"health": 35,
 		"id": "2018",
 		"maxLevel": 7,
 		"name": "Vulcanos, the Forge",
@@ -32007,7 +32041,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 34,
+				"health": 37,
 				"skill": [
 					{
 						"id": "counter",
@@ -32025,7 +32059,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"attack": 10,
+				"attack": 12,
 				"skill": [
 					{
 						"id": "counter",
@@ -32043,11 +32077,13 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 11,
-				"health": 36,
+				"attack": 13,
+				"health": 39,
 				"skill": []
 			},
 			"5": {
+				"attack": 14,
+				"health": 41,
 				"skill": [
 					{
 						"id": "counter",
@@ -32065,12 +32101,8 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 12,
-				"health": 37,
-				"skill": []
-			},
-			"7": {
-				"health": 38,
+				"attack": 15,
+				"health": 43,
 				"skill": [
 					{
 						"id": "counter",
@@ -32080,6 +32112,25 @@ var CARDS = {
 						"all": "1",
 						"id": "strike",
 						"x": 5
+					},
+					{
+						"id": "scorchbreath",
+						"x": 4
+					}
+				]
+			},
+			"7": {
+				"attack": 16,
+				"health": 45,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 6
 					},
 					{
 						"id": "scorchbreath",
@@ -33475,7 +33526,7 @@ var CARDS = {
 				"x": 2
 			},
 			{
-				"id": "berserk",
+				"id": "devour",
 				"x": 2
 			},
 			{
@@ -33496,7 +33547,7 @@ var CARDS = {
 						"x": 2
 					},
 					{
-						"id": "berserk",
+						"id": "devour",
 						"x": 2
 					},
 					{
@@ -33506,21 +33557,19 @@ var CARDS = {
 				]
 			},
 			"3": {
+				"attack": 8,
 				"health": 28,
 				"skill": []
 			},
 			"4": {
 				"health": 29,
-				"skill": []
-			},
-			"5": {
 				"skill": [
 					{
 						"id": "frost",
 						"x": 3
 					},
 					{
-						"id": "berserk",
+						"id": "devour",
 						"x": 2
 					},
 					{
@@ -33529,22 +33578,39 @@ var CARDS = {
 					}
 				]
 			},
-			"6": {
-				"attack": 8,
-				"health": 30,
-				"skill": []
-			},
-			"7": {
+			"5": {
 				"attack": 9,
-				"health": 32,
 				"skill": [
 					{
 						"id": "frost",
 						"x": 3
 					},
 					{
-						"id": "berserk",
+						"id": "devour",
 						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"health": 31,
+				"skill": []
+			},
+			"7": {
+				"attack": 11,
+				"health": 33,
+				"skill": [
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "devour",
+						"x": 4
 					},
 					{
 						"c": 3,
@@ -36135,10 +36201,10 @@ var CARDS = {
 		}
 	},
 	"2074": {
-		"attack": 8,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 3,
-		"health": 36,
+		"health": 38,
 		"hidden_until": "1484240400000",
 		"id": "2074",
 		"maxLevel": 7,
@@ -36167,7 +36233,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 38,
+				"health": 40,
 				"skill": []
 			},
 			"3": {
@@ -36188,11 +36254,12 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 9,
-				"health": 40,
+				"attack": 10,
+				"health": 42,
 				"skill": []
 			},
 			"5": {
+				"health": 44,
 				"skill": [
 					{
 						"id": "fury",
@@ -36210,21 +36277,22 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 10,
-				"health": 42,
+				"attack": 11,
+				"health": 46,
 				"skill": []
 			},
 			"7": {
-				"health": 44,
+				"attack": 12,
+				"health": 48,
 				"skill": [
 					{
 						"id": "fury",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
 						"id": "enfeeble",
-						"x": 4
+						"x": 5
 					},
 					{
 						"c": 2,
@@ -37565,7 +37633,7 @@ var CARDS = {
 		"set": "2100",
 		"skill": [
 			{
-				"id": "evadebarrier",
+				"id": "wingward",
 				"x": 4
 			},
 			{
@@ -37585,7 +37653,7 @@ var CARDS = {
 			"2": {
 				"skill": [
 					{
-						"id": "evadebarrier",
+						"id": "wingward",
 						"x": 5
 					},
 					{
@@ -37603,13 +37671,9 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 21,
-				"skill": []
-			},
-			"5": {
 				"skill": [
 					{
-						"id": "evadebarrier",
+						"id": "wingward",
 						"x": 5
 					},
 					{
@@ -37622,15 +37686,33 @@ var CARDS = {
 					}
 				]
 			},
+			"5": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "wingward",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
 			"6": {
+				"attack": 8,
 				"health": 22,
 				"skill": []
 			},
 			"7": {
-				"attack": 8,
+				"attack": 9,
 				"skill": [
 					{
-						"id": "evadebarrier",
+						"id": "wingward",
 						"x": 6
 					},
 					{
@@ -37639,7 +37721,7 @@ var CARDS = {
 					},
 					{
 						"id": "nullify",
-						"x": 3
+						"x": 4
 					}
 				]
 			}
