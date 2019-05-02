@@ -1796,7 +1796,7 @@ var SIMULATOR = {};
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
-				if (target.isAlive() && !target.isTower()) {
+				if (target.isAlive() && !target.isTower() && target !== attacker) {
 					var adjustedAttack = target.adjustedAttack();
 					if (!weakest || adjustedAttack < weakest) {
 						targets = [target];
@@ -1807,12 +1807,15 @@ var SIMULATOR = {};
 				}
 			}
 
-			var weakest = choose_random_target(targets)[0];
+			if(!targets.length) {
+				return 0;
+			}
 
 			var swarm = attacker.swarm;
 			var enhanced = getEnhancement(attacker, 'swarm', swarm);
 			swarm += enhanced;
 
+			var weakest = choose_random_target(targets)[0];
 			weakest.attack_berserk += swarm;
 
 			if (debug) {

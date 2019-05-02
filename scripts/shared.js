@@ -245,6 +245,8 @@ var defaultStatusValues = {
     reanimated: false
 };
 function applyDefaultStatuses(card) {
+    // reset invigorate
+    card.health -= card.invigorated;
     card.removeImbue();
     card.enhanced = {};
     for (var status in defaultStatusValues) {
