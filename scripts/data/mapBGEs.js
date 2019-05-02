@@ -4619,7 +4619,7 @@ var MAP_BATTLEGROUNDS = {
 		"name": "Fiona's Dragonlings"
 	},
 	"3017": {
-		"desc": "Rayne's spiritlings have grown since you last saw them, but are still in need of care. Feed them Dark Honeycombs to unlock their powers!",
+		"desc": "Rayne's spiritlings have grown since you last saw them, but are still in need of care. Feed them Dark Honey to unlock their powers!",
 		"effects": [
 			{
 				"id": "14",
