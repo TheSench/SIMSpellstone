@@ -64402,6 +64402,85 @@ var CARDS = {
 			}
 		}
 	},
+	"5234": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1557162000000",
+		"id": "5234",
+		"maxLevel": 6,
+		"name": "Stratosnail",
+		"picture": "Insect_Elemental_Snow_Insect_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "backlash",
+				"x": 1
+			},
+			{
+				"id": "frost",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": []
+			},
+			"4": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 1
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 35,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -153694,6 +153773,98 @@ var CARDS = {
 			}
 		}
 	},
+	"15234": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1557162000000",
+		"id": "15234",
+		"maxLevel": 6,
+		"name": "Stratogale",
+		"picture": "Insect_Elemental_Snow_Insect_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 38,
+				"skill": []
+			},
+			"5": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -229855,6 +230026,98 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"25234": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1557162000000",
+		"id": "25234",
+		"maxLevel": 6,
+		"name": "Stratosquall",
+		"picture": "Insect_Elemental_Snow_Insect_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"5",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 41,
+				"skill": []
+			},
+			"4": {
+				"attack": 14,
+				"health": 42,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 6
 					}
 				]
 			}
