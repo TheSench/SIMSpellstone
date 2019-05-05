@@ -448,14 +448,14 @@ var SIMULATOR = {};
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = field_p_assaults[targets[key]];
-
+				/*
 				// Check Nullify
 				if (target.nullified) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
-
+				*/
 				affected++;
 
 				target.protected += wingward;
