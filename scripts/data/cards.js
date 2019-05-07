@@ -23648,6 +23648,131 @@ var CARDS = {
 			}
 		}
 	},
+	"434": {
+		"card_type": "1",
+		"health": 75,
+		"id": "434",
+		"maxLevel": 6,
+		"name": "Agatha, Forgettable Elder",
+		"picture": "portrait_insect_sage",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "berserk",
+				"x": 1
+			},
+			{
+				"id": "enhance",
+				"s": "armored",
+				"x": 1
+			},
+			{
+				"id": "protect",
+				"x": 3
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 79,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 1
+					},
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 84,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 89,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"health": 94,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 4
+					},
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 4
+					},
+					{
+						"id": "protect",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",

@@ -86796,7 +86796,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6210",
-		"name": "Memories Best Left Forgotten"
+		"name": "Formerly Forgotten"
 	},
 	"6211": {
 		"commander": {
@@ -87037,5 +87037,245 @@ var MISSIONS = {
 		],
 		"id": "6214",
 		"name": "Proxy Rebellion"
+	},
+	"6215": {
+		"commander": {
+			"id": "434"
+		},
+		"deck": [
+			{
+				"id": "8103"
+			},
+			{
+				"id": "5231"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "7067"
+			},
+			{
+				"id": "7141"
+			},
+			{
+				"id": "6229"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "2051",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5066",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5193",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6215",
+		"name": "To Guard a Guardian"
+	},
+	"6216": {
+		"commander": {
+			"id": "434"
+		},
+		"deck": [
+			{
+				"id": "8103"
+			},
+			{
+				"id": "5231"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "7067"
+			},
+			{
+				"id": "7141"
+			},
+			{
+				"id": "6229"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "2051",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5066",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5193",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6216",
+		"name": "Wavering Resolve"
+	},
+	"6217": {
+		"commander": {
+			"id": "434"
+		},
+		"deck": [
+			{
+				"id": "8103"
+			},
+			{
+				"id": "5231"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "7067"
+			},
+			{
+				"id": "7141"
+			},
+			{
+				"id": "6229"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "2051",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5066",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5193",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6217",
+		"name": "Race Against Time"
+	},
+	"6218": {
+		"commander": {
+			"id": "434"
+		},
+		"deck": [
+			{
+				"id": "8103"
+			},
+			{
+				"id": "5231"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "7067"
+			},
+			{
+				"id": "7141"
+			},
+			{
+				"id": "6229"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "5143"
+			},
+			{
+				"id": "2051",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5066",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5193",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5232",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6218",
+		"name": "Prisoner of Fate"
 	}
 };
