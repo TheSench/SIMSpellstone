@@ -423,7 +423,7 @@ var SIMULATOR = {};
 
 		// Wing Guard
 		// - Targets self and leftmost ally
-		wingguard: function (src_card, skill) {
+		wingward: function (src_card, skill) {
 			var p = get_p(src_card);
 
 			var wingward = skill.x;

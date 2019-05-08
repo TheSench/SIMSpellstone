@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <!--
+	<!--
 		1-100		DO NOT USE, OFF LIMITS!!
 		101-500		Tribal Event BGE
 		501-1000	Specialty BGE
@@ -48,579 +48,586 @@
 				<shake>true</shake>
 			</target_effect>
 		</skill>
- 	-->
-  <!-- =================================== -->
-  <!-- ==== 101-500: Tribal Event BGE ==== -->
-  <!-- =================================== -->
-  <battleground>
-    <id>101</id>
-    <name>Age of Dragons</name>
-    <desc>All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 25%.</desc>
-    <web_picture>filter_dragon_64.png</web_picture>
-    <icon>filter_dragon_64</icon>
-    <effect>
-      <skill id="heal" mult=".25" all="1" y="9" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>102</id>
-    <name>World Awakening</name>
-    <desc>All Elementals are Empowered from the mana rich land, raising their Attack by 2 each turn.</desc>
-    <web_picture>filter_elementals_64.png</web_picture>
-    <icon>filter_elementals_64</icon>
-    <effect>
-      <skill id="rally" x="2" all="1" y="5" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>103</id>
-    <name>Rise of the Frogs</name>
-    <desc>All Frogs gain the Protection of the Guardian Stone, reducing damage taken by 2.</desc>
-    <web_picture>filter_frog_64.png</web_picture>
-    <icon>filter_frog_64</icon>
-    <effect>
-      <skill id="protect" x="2" all="1" y="4" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>104</id>
-    <name>Iceshatter Barrier</name>
-    <desc>When Barrier is broken, deals damage to the creature across from it or the enemy Hero equal to the Barrier value.</desc>
-    <web_picture>filter_iceshatter_64.png</web_picture>
-    <icon>filter_iceshatter_64</icon>
-    <effect>
-      <evolve_skill id="protect" s="protect_ice" />
-      <evolve_skill id="protect" s="protect_ice" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>105</id>
-    <name>Relentless Hunger</name>
-    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 15% of their base Health.</desc>
-    <web_picture>filter_undead_64.png</web_picture>
-    <icon>filter_undead_64</icon>
-    <effect>
-      <add_skill id="berserk" mult=".15" base="health" y="7" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>106</id>
-    <name>Angelic Legion</name>
-    <desc>Angels have risen to fight, gaining Legion equal to 50% of their base Attack.</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <effect>
-      <add_skill id="legion" mult="0.5" base="attack" y="6" />
-      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
-        <projectile_effect>
-          <prefab>Legion_Projectile</prefab>
-          <delay>0</delay>
-          <duration>.5</duration>
-          <translation>.5</translation>
-          <offset>2</offset>
-        </projectile_effect>
-        <target_effect>
-          <prefab>Legion_Angel_Target</prefab>
-          <delay>.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>107</id>
-    <name>Elemental Surge</name>
-    <desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 75% of their base, rounded up!</desc>
-    <web_picture>filter_elementals_64.png</web_picture>
-    <icon>filter_elementals_64</icon>
-    <effect>
-      <card_type>99</card_type>
-      <skill id="enlarge" mult=".75" all="1" y="5" />
-      <!-- mult is based on attack -->
-      <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
-        <target_effect>
-          <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>108</id>
-    <name>Poisonbolt Evolution</name>
-    <desc>Frogs have evolved to have Poisonbolt! They deal bolt damage and leave poison with their tongue, equal to 50% of their base attack!</desc>
-    <web_picture>filter_frog_64.png</web_picture>
-    <icon>filter_frog_64</icon>
-    <effect>
-      <add_skill id="poisonstrike" mult=".5" base="attack" y="4" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>109</id>
-    <name>Airborne Mastery</name>
-    <desc>The first time Avians activate, they permanently double their base Attack if the opposing card has more Attack.</desc>
-    <icon>filter_avian_64.png</icon>
-    <effect>
-      <add_skill id="valor" mult="1" base="attack" y="10" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>110</id>
-    <name>Hardened Carapace</name>
-    <desc>Insects gain a hardened carapace, gaining Armored value equal to 10% of their base Health, rounded up.</desc>
-    <icon>filter_insect_64.png</icon>
-    <effect>
-      <add_skill id="armored" mult="0.1" base="health" y="13" />
-      <skill id="displayEffect" trigger="onSkill" y="13" s="armored">
-        <actor_effect>
-          <prefab>insect_armor</prefab>
-          <bundle_id>64</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>111</id>
-    <name>Searing Essence</name>
-    <!-- <desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 50% of the Elemental's base Attack.</desc> -->
-    <desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 10% of the Elemental's base Health.</desc>
-    <icon>filter_elementals_64</icon>
-    <effect>
-      <add_skill id="counterburn" mult="0.1" base="health" y="5" />
-      <skill id="displayEffect" trigger="onSkill" s="counterburn">
-        <target_effect>
-          <prefab>FireVengence_Reverse</prefab>
-          <prefab_enemy>FireVengence</prefab_enemy>
-          <bundle_id>69</bundle_id>
-          <delay>.5</delay>
-          <duration>1.5</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>112</id>
-    <name>Goblin Barrage</name>
-    <desc>Each active Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage and does not benefit from Hex or Venom.</desc>
-    <icon>filter_goblin_64</icon>
-    <effect>
-      <add_skill id="barrage" mult="1" base="attack" y="11" />
-      <skill id="displayEffect" trigger="onSkill" y="11" s="barrage">
-        <projectile_effect>
-          <prefab>goblinBombProjectile</prefab>
-          <bundle_id>75</bundle_id>
-          <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
-          <offset>0</offset>
-        </projectile_effect>
-        <target_effect>
-          <prefab>goblinBombTarget</prefab>
-          <bundle_id>75</bundle_id>
-          <delay>.75</delay>
-          <duration>1.25</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>113</id>
-    <name>Underwater Shelter</name>
-    <desc>All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 30% of their base Health while on delay.</desc>
-    <icon>filter_seafolk_64</icon>
-    <effect>
-      <skill id="protect_seafolk" mult=".3" base="health" all="1" y="12" />
-      <skill id="displayEffect" trigger="onSkillDelay" s="protect_seafolk">
-        <target_effect>
-          <prefab>submerge_fadecloth_delay</prefab>
-          <bundle_id>82</bundle_id>
-          <duration>1</duration>
-          <loop>true</loop>
-          <sound>shield</sound>
-        </target_effect>
-        <projectile_effect>
-          <prefab>ProtectProjectile</prefab>
-          <delay>.5</delay>
-          <duration>.5</duration>
-        </projectile_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkill" s="protect_seafolk">
-        <target_effect>
-          <prefab>submerge_fadecloth</prefab>
-          <bundle_id>82</bundle_id>
-          <duration>1</duration>
-          <loop>true</loop>
-          <sound>shield</sound>
-        </target_effect>
-        <projectile_effect>
-          <prefab>ProtectProjectile</prefab>
-          <delay>.5</delay>
-          <duration>.5</duration>
-        </projectile_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkillHit" s="protect_seafolk">
-        <actor_effect>
-          <prefab>submerge_barrier</prefab>
-          <bundle_id>82</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkillBreak" s="protect_seafolk">
-        <actor_effect>
-          <prefab>submerge_break</prefab>
-          <bundle_id>82</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>114</id>
-    <name>Eyes in the Sky</name>
-    <desc>Each Avian marks a random target upon first activation, Hexing them for 15% of their base Health. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
-    <icon>filter_avian_64.png</icon>
-    <effect>
-      <!-- <add_skill id='mark' mult='0.3' base='attack' y='10' /> -->
-      <add_skill id="mark" mult="0.15" base="health" y="10" />
-      <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
-        <target_effect>
-          <prefab>EagleEye</prefab>
-          <bundle_id>84</bundle_id>
-          <delay>0</delay>
-          <duration>3</duration>
-          <!-- <shake>true</shake> -->
-        </target_effect>
-        <actor_effect>
-          <prefab>EagleEye</prefab>
-          <bundle_id>84</bundle_id>
-          <delay>0</delay>
-          <duration>3</duration>
-        </actor_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>115</id>
-    <name>Undead Unearthed</name>
-    <desc>When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity.</desc>
-    <icon>filter_undead_64.png</icon>
-    <effect>
-      <add_skill id="unearth" mult="0.5" rarity="1" y="7" card="607" level="3" />
-      <add_skill id="unearth" mult="0.5" rarity="2" y="7" card="608" level="4" />
-      <add_skill id="unearth" mult="0.5" rarity="3" y="7" card="609" level="5" />
-      <add_skill id="unearth" mult="0.5" rarity="4" y="7" card="610" level="6" />
-      <add_skill id="unearth" mult="0.5" rarity="5" y="7" card="611" level="7" />
-      <skill id="displayEffect" trigger="onSkill" y="7" s="unearth">
-        <target_effect>
-          <prefab>unearth_actor</prefab>
-          <bundle_id>87</bundle_id>
-          <delay>0</delay>
-          <duration>3</duration>
-          <!-- <shake>true</shake> -->
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>116</id>
-    <name>Elemental Surge</name>
-    <desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 75% of their base, rounded up!</desc>
-    <web_picture>filter_elementals_64.png</web_picture>
-    <icon>filter_elementals_64</icon>
-    <effect>
-      <card_type>99</card_type>
-      <!-- <on_play>
+ 	-->	
+ 	
+ 	<!-- =================================== -->
+	<!-- ==== 101-500: Tribal Event BGE ==== -->
+	<!-- =================================== -->
+	<battleground>
+		<id>101</id>
+		<name>Age of Dragons</name>
+		<desc>All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 25%.</desc>
+		<web_picture>filter_dragon_64.png</web_picture>
+		<icon>filter_dragon_64</icon>
+		<effect>
+			<skill id='heal' mult='.25' all='1' y='9' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>102</id>
+		<name>World Awakening</name>
+		<desc>All Elementals are Empowered from the mana rich land, raising their Attack by 2 each turn.</desc>
+		<web_picture>filter_elementals_64.png</web_picture>
+		<icon>filter_elementals_64</icon>
+		<effect>
+			<skill id='rally' x='2' all='1' y='5' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>103</id>
+		<name>Rise of the Frogs</name>
+		<desc>All Frogs gain the Protection of the Guardian Stone, reducing damage taken by 2.</desc>
+		<web_picture>filter_frog_64.png</web_picture>
+		<icon>filter_frog_64</icon>
+		<effect>
+			<skill id='protect' x='2' all='1' y='4' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>104</id>
+		<name>Iceshatter Barrier</name>
+		<desc>When Barrier is broken, deals damage to the creature across from it or the enemy Hero equal to the Barrier value.</desc>
+		<web_picture>filter_iceshatter_64.png</web_picture>
+		<icon>filter_iceshatter_64</icon>
+		<effect>
+			<evolve_skill id='protect' s='protect_ice' />
+			<evolve_skill id='protect' s='protect_ice' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>105</id>
+		<name>Relentless Hunger</name>
+		<desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 15% of their base Health.</desc>
+		<web_picture>filter_undead_64.png</web_picture>
+		<icon>filter_undead_64</icon>
+		<effect>
+			<add_skill id='berserk' mult='.15' base='health' y='7' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>106</id>
+		<name>Angelic Legion</name>
+		<desc>Angels have risen to fight, gaining Legion equal to 50% of their base Attack.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<effect>
+			<add_skill id='legion' mult='0.5' base='attack' y='6' />
+			<skill id='displayEffect' trigger='onSkill' y='6' s='legion' >
+				<projectile_effect>
+					<prefab>Legion_Projectile</prefab>
+					<delay>0</delay>
+					<duration>.5</duration>
+					<translation>.5</translation>
+					<offset>2</offset>
+				</projectile_effect>
+				<target_effect>
+					<prefab>Legion_Angel_Target</prefab>
+					<delay>.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>107</id>
+		<name>Elemental Surge</name>
+		<desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 75% of their base, rounded up!</desc>
+		<web_picture>filter_elementals_64.png</web_picture>
+		<icon>filter_elementals_64</icon>
+		<effect>
+			<card_type>99</card_type>
+			<skill id='enlarge' mult='.75' all='1' y='5' />	<!-- mult is based on attack -->
+			<skill id='displayEffect' trigger='onSkill' y='99' s='enlarge' >
+				<target_effect>
+					<prefab>Empower_Target_Elemental</prefab>
+					<delay>.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>108</id>
+		<name>Poisonbolt Evolution</name>
+		<desc>Frogs have evolved to have Poisonbolt! They deal bolt damage and leave poison with their tongue, equal to 50% of their base attack!</desc>
+		<web_picture>filter_frog_64.png</web_picture>
+		<icon>filter_frog_64</icon>
+		<effect>
+			<add_skill id='poisonstrike' mult='.5' base='attack' y='4' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>109</id>
+		<name>Airborne Mastery</name>
+		<desc>The first time Avians activate, they permanently double their base Attack if the opposing card has more Attack.</desc>
+		<icon>filter_avian_64.png</icon>
+		<effect>
+			<add_skill id='valor' mult='1' base='attack' y='10' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>110</id>
+		<name>Hardened Carapace</name>
+		<desc>Insects gain a hardened carapace, gaining Armored value equal to 10% of their base Health, rounded up.</desc>
+		<icon>filter_insect_64.png</icon>
+		<effect>
+			<add_skill id='armored' mult='0.1' base='health' y='13' />
+			<skill id='displayEffect' trigger='onSkill' y='13' s='armored' >
+				<actor_effect>
+					<prefab>insect_armor</prefab>
+					<bundle_id>64</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>111</id>
+		<name>Searing Essence</name>
+		<!-- <desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 50% of the Elemental's base Attack.</desc> -->
+		<desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 10% of the Elemental's base Health.</desc>
+		<icon>filter_elementals_64</icon>
+		<effect>
+			<add_skill id='counterburn' mult='0.1' base='health' y='5' />
+			<skill id='displayEffect' trigger='onSkill' s='counterburn' >
+				<target_effect>
+					<prefab>FireVengence_Reverse</prefab>
+					<prefab_enemy>FireVengence</prefab_enemy>
+					<bundle_id>69</bundle_id>
+					<delay>.5</delay>
+					<duration>1.5</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>112</id>
+		<name>Goblin Barrage</name>
+		<desc>Each active Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage and does not benefit from Hex or Venom.</desc>
+		<icon>filter_goblin_64</icon>
+		<effect>
+			<add_skill id='barrage' mult='1' base='attack' y='11' />
+			<skill id='displayEffect' trigger='onSkill' y='11' s='barrage' >
+				<projectile_effect>
+					<prefab>goblinBombProjectile</prefab>
+					<bundle_id>75</bundle_id>
+					<delay>0</delay>
+					<duration>.75</duration>
+					<translation>.75</translation>
+					<offset>0</offset>
+				</projectile_effect>
+				<target_effect>
+					<prefab>goblinBombTarget</prefab>
+					<bundle_id>75</bundle_id>
+					<delay>.75</delay>
+					<duration>1.25</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>113</id>
+		<name>Underwater Shelter</name>
+		<desc>All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 30% of their base Health while on delay.</desc>
+		<icon>filter_seafolk_64</icon>
+		<effect>
+			<skill id='protect_seafolk' mult='.3' base='health' all='1' y='12' />
+			<skill id='displayEffect' trigger='onSkillDelay' s='protect_seafolk' >
+				<target_effect>
+					<prefab>submerge_fadecloth_delay</prefab>
+					<bundle_id>82</bundle_id>
+					<duration>1</duration>
+					<loop>true</loop>
+					<sound>shield</sound>
+				</target_effect>
+				<projectile_effect>
+					<prefab>ProtectProjectile</prefab>
+					<delay>.5</delay>
+					<duration>.5</duration>
+				</projectile_effect>
+			</skill>
+			<skill id='displayEffect' trigger='onSkill' s='protect_seafolk' >
+				<target_effect>
+					<prefab>submerge_fadecloth</prefab>
+					<bundle_id>82</bundle_id>
+					<duration>1</duration>
+					<loop>true</loop>
+					<sound>shield</sound>
+				</target_effect>
+				<projectile_effect>
+					<prefab>ProtectProjectile</prefab>
+					<delay>.5</delay>
+					<duration>.5</duration>
+				</projectile_effect>
+			</skill>
+			<skill id='displayEffect' trigger='onSkillHit' s='protect_seafolk' >
+				<actor_effect>
+					<prefab>submerge_barrier</prefab>
+					<bundle_id>82</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+			<skill id='displayEffect' trigger='onSkillBreak' s='protect_seafolk' >
+				<actor_effect>
+					<prefab>submerge_break</prefab>
+					<bundle_id>82</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>114</id>
+		<name>Eyes in the Sky</name>
+		<desc>Each Avian marks a random target upon first activation, Hexing them for 15% of their base Health. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
+		<icon>filter_avian_64.png</icon>
+		<effect>
+			<!-- <add_skill id='mark' mult='0.3' base='attack' y='10' /> -->
+			<add_skill id='mark' mult='0.15' base='health' y='10' />
+			<skill id='displayEffect' trigger='onSkill' y='10' s='mark' >
+				<target_effect>
+					<prefab>EagleEye</prefab>
+					<bundle_id>84</bundle_id>
+					<delay>0</delay>
+					<duration>3</duration>
+					<!-- <shake>true</shake> -->
+				</target_effect>
+				<actor_effect>
+					<prefab>EagleEye</prefab>
+					<bundle_id>84</bundle_id>
+					<delay>0</delay>
+					<duration>3</duration>
+				</actor_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>115</id>
+		<name>Undead Unearthed</name>
+		<desc>When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity.</desc>
+		<icon>filter_undead_64.png</icon>
+		<effect>
+		    <add_skill id='unearth' mult='0.5' rarity='1' y='7' card='607' level='3' />
+		    <add_skill id='unearth' mult='0.5' rarity='2' y='7' card='608' level='4' />
+		    <add_skill id='unearth' mult='0.5' rarity='3' y='7' card='609' level='5' />
+		    <add_skill id='unearth' mult='0.5' rarity='4' y='7' card='610' level='6' />
+		    <add_skill id='unearth' mult='0.5' rarity='5' y='7' card='611' level='7' />
+			<skill id='displayEffect' trigger='onSkill' y='7' s='unearth' >
+                <target_effect>
+                    <prefab>unearth_actor</prefab>
+                    <bundle_id>87</bundle_id>
+                    <delay>0</delay>
+                    <duration>3</duration>
+                    <!-- <shake>true</shake> -->
+                </target_effect>
+            </skill>
+         </effect>
+	</battleground>
+	<battleground>
+		<id>116</id>
+		<name>Elemental Surge</name>
+		<desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 75% of their base, rounded up!</desc>
+		<web_picture>filter_elementals_64.png</web_picture>
+		<icon>filter_elementals_64</icon>
+		<effect>
+			<card_type>99</card_type>
+			<!-- <on_play>
 	            <skill id='enlarge' mult='1' y='5' />
 	        </on_play> -->
-      <add_skill id="enlarge" mult="0.75" base="attack" y="5" />
-      <!-- <skill id='displayEffect' trigger='onSkill' y='99' s='enlarge' > -->
-      <skill id="displayEffect" trigger="onSkill" s="enlarge">
-        <target_effect>
-          <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>117</id>
-    <name>Venom</name>
-    <desc>Insects gain Venom equal to 10% of their Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.</desc>
-    <icon>filter_insect_64.png</icon>
-    <effect>
-      <add_skill id="venom" mult="0.1" base="health" y="13" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>118</id>
-    <name>Energy Shield</name>
-    <desc>All Mechas have upgraded their protective protocols, gaining a Barrier equal to their base Attack each time they deal Attack damage.</desc>
-    <icon>filter_mech_64</icon>
-    <effect>
-      <add_skill id="reinforce" mult="1" base="attack" all="1" y="16" />
-      <skill id="displayEffect" trigger="onSkill" s="reinforce">
-        <target_effect>
-          <prefab>ReinforceActive</prefab>
-          <bundle_id>105</bundle_id>
-          <duration>1</duration>
-          <loop>true</loop>
-          <sound>shield</sound>
-        </target_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkillHit" s="reinforce">
-        <actor_effect>
-          <prefab>ReinforceActive</prefab>
-          <bundle_id>105</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkillBreak" s="reinforce">
-        <actor_effect>
-          <prefab>ReinforceBreak</prefab>
-          <bundle_id>105</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>119</id>
-    <name>Elemental Conflux</name>
-    <desc>Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.</desc>
-    <web_picture>filter_elementals_64.png</web_picture>
-    <icon>filter_elementals_64</icon>
-    <effect>
-      <card_type>99</card_type>
-      <skill id="enlarge" mult=".5" all="1" yy="1,5" />
-      <!-- mult is based on attack -->
-      <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
-        <target_effect>
-          <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2,5" />
-      <skill id="displayEffect" trigger="onSkill" yy="2,5" s="counter">
-        <actor_effect>
-          <prefab>elemental_BGE_chaos</prefab>
-          <bundle_id>96</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-      <scale_health base="health" mult="0.25" yy="3,5" />
-      <skill id="displayEffect" trigger="onPlay" yy="3,5">
-        <actor_effect>
-          <prefab>elemental_BGE_wyld</prefab>
-          <bundle_id>96</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>120</id>
-    <name>Dragonfire</name>
-    <desc>Dragons gain Scorch equal to 20% of their base Health.</desc>
-    <icon>filter_dragon_64.png</icon>
-    <effect>
-      <add_skill id="burn" mult="0.2" base="health" y="9" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>121</id>
-    <name>Angelic Assault</name>
-    <desc>Angels have transcended, gaining Legion equal to 15% of their base Health.</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <effect>
-      <add_skill id="legion" mult="0.15" base="health" y="6" />
-      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
-        <projectile_effect>
-          <prefab>Legion_Projectile</prefab>
-          <delay>0</delay>
-          <duration>.5</duration>
-          <translation>.5</translation>
-          <offset>2</offset>
-        </projectile_effect>
-        <target_effect>
-          <prefab>Legion_Angel_Target</prefab>
-          <delay>.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>122</id>
-    <name>Energy Warding</name>
-    <desc>All Mechas have upgraded their protective protocols, gaining Ward equal to 3 plus 10% of their base Health.</desc>
-    <icon>filter_mech_64</icon>
-    <effect>
-      <add_skill id="absorb_mecha" mult=".1" base="health" x="3" all="1" y="16" />
-      <skill id="displayEffect" trigger="onSkill" s="absorb_mecha">
-        <target_effect>
-          <prefab>ReinforceActive</prefab>
-          <bundle_id>107</bundle_id>
-          <duration>1</duration>
-          <loop>true</loop>
-          <sound>shield</sound>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>123</id>
-    <name>Aether Triumph</name>
-    <desc>Aether have their Attack and Health increased by 25% of the base.</desc>
-    <icon>filter_aether_64</icon>
-    <effect>
-      <skill id="enlarge" mult=".25" all="1" y="1" />
-      <!-- mult is based on attack -->
-      <scale_health base="health" mult="0.25" yy="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>124</id>
-    <name>Chaos Triumph</name>
-    <desc>Chaos have their Attack and Health increased by 25% of the base.</desc>
-    <icon>filter_chaos_64</icon>
-    <effect>
-      <skill id="enlarge" mult=".25" all="1" y="2" />
-      <!-- mult is based on attack -->
-      <scale_health base="health" mult="0.25" yy="2" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>125</id>
-    <name>Wyld Triumph</name>
-    <desc>Wyld have their Attack and Health increased by 25% of the base.</desc>
-    <icon>filter_wyld_64</icon>
-    <effect>
-      <skill id="enlarge" mult=".25" all="1" y="3" />
-      <!-- mult is based on attack -->
-      <scale_health base="health" mult="0.25" yy="3" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>126</id>
-    <name>Brine Edge</name>
-    <desc>Seafolk harness the power of the ocean, increasing their Attack by 15% of their base Health!</desc>
-    <web_picture>filter_seafolk_64.png</web_picture>
-    <icon>filter_seafolk_64</icon>
-    <effect>
-      <!-- <skill id='enlarge' mult='.2' base='health' all='1' y='12' /> -->
-      <scale_attack base="health" mult="0.15" yy="12" />
-      <skill id="displayEffect" trigger="onPlay" yy="12">
-        <actor_effect>
-          <prefab>WaterEmpower</prefab>
-          <bundle_id>96</bundle_id>
-          <duration>2</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>127</id>
-    <name>Insectile Venom</name>
-    <desc>Insects gain Venom equal to 1 plus 15% of their base Health. Creatures affected by Venom take damage at the end of the turn, and take additional damage from attacks and skills.</desc>
-    <icon>filter_insect_64.png</icon>
-    <effect>
-      <add_skill id="venom" mult="0.15" base="health" x="1" y="13" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>128</id>
-    <name>Poisonhide</name>
-    <desc>When a Frog is damaged by an attack, it deals Poison damage to the attacker equal to 5 plus 10% of the Frog's base Health.</desc>
-    <icon>filter_frog_64</icon>
-    <effect>
-      <add_skill id="counterpoison" mult="0.1" base="health" x="5" y="4" />
-      <skill id="displayEffect" trigger="onSkill" s="counterpoison">
-        <target_effect>
-          <prefab>PoisonHide</prefab>
-          <bundle_id>96</bundle_id>
-          <delay>0.1</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <!-- ================================= -->
-  <!-- ==== 501-1000: Specialty BGE ==== -->
-  <!-- ================================= -->
-  <battleground>
-    <id>501</id>
-    <name>Castle Siege</name>
-    <desc>All enemies start with a Castle Tower card.</desc>
-    <web_picture>filter_tower_64.png</web_picture>
-    <icon>filter_tower_64</icon>
-    <effect>
-      <starting_card id="601" level="1" pvp_rank="2" />
-      <starting_card id="601" level="2" pvp_rank="3" />
-      <starting_card id="601" level="3" pvp_rank="4" />
-      <starting_card id="601" level="4" pvp_rank="5" />
-      <starting_card id="601" level="5" pvp_rank="6" />
-      <starting_card id="601" level="6" pvp_rank="7" />
-      <starting_card id="601" level="7" pvp_rank="8" />
-      <starting_card id="601" level="8" pvp_rank="9" />
-      <starting_card id="601" level="9" pvp_rank="10" />
-      <starting_card id="601" level="10" pvp_rank="11" />
-      <starting_card id="601" level="11" pvp_rank="12" />
-      <starting_card id="601" level="12" pvp_rank="13" />
-      <starting_card id="601" level="13" pvp_rank="14" />
-      <starting_card id="601" level="14" pvp_rank="15" />
-      <starting_card id="601" level="15" pvp_rank="16" />
-      <starting_card id="601" level="16" pvp_rank="17" />
-      <starting_card id="601" level="17" pvp_rank="18" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>502</id>
-    <name>Cannon Siege</name>
-    <desc>All enemies start with a Cannon Tower card.</desc>
-    <web_picture>filter_tower_64.png</web_picture>
-    <icon>filter_tower_64</icon>
-    <effect>
-      <starting_card id="602" level="1" pvp_rank="2" />
-      <starting_card id="602" level="2" pvp_rank="3" />
-      <starting_card id="602" level="3" pvp_rank="4" />
-      <starting_card id="602" level="4" pvp_rank="5" />
-      <starting_card id="602" level="5" pvp_rank="6" />
-      <starting_card id="602" level="6" pvp_rank="7" />
-      <starting_card id="602" level="7" pvp_rank="8" />
-      <starting_card id="602" level="8" pvp_rank="9" />
-      <starting_card id="602" level="9" pvp_rank="10" />
-      <starting_card id="602" level="10" pvp_rank="11" />
-      <starting_card id="602" level="11" pvp_rank="12" />
-      <starting_card id="602" level="12" pvp_rank="13" />
-      <starting_card id="602" level="13" pvp_rank="14" />
-      <starting_card id="602" level="14" pvp_rank="15" />
-      <starting_card id="602" level="15" pvp_rank="16" />
-      <starting_card id="602" level="16" pvp_rank="17" />
-      <starting_card id="602" level="17" pvp_rank="18" />
-    </effect>
-  </battleground>
-  <!-- <battleground>
+	        <add_skill id='enlarge' mult='0.75' base='attack' y='5' />
+			<!-- <skill id='displayEffect' trigger='onSkill' y='99' s='enlarge' > -->
+			<skill id='displayEffect' trigger='onSkill' s='enlarge' >			
+				<target_effect>
+					<prefab>Empower_Target_Elemental</prefab>
+					<delay>.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>117</id>
+		<name>Venom</name>
+		<desc>Insects gain Venom equal to 10% of their Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.</desc>
+		<icon>filter_insect_64.png</icon>
+		<effect>
+			<add_skill id='venom' mult='0.1' base='health' y='13' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>118</id>
+		<name>Energy Shield</name>
+		<desc>All Mechas have upgraded their protective protocols, gaining a Barrier equal to their base Attack each time they deal Attack damage.</desc>
+		<icon>filter_mech_64</icon>
+		<effect>
+			<add_skill id='reinforce' mult='1' base='attack' all='1' y='16' />
+			<skill id='displayEffect' trigger='onSkill' s='reinforce' >
+				<target_effect>
+					<prefab>ReinforceActive</prefab>
+					<bundle_id>105</bundle_id>
+					<duration>1</duration>
+					<loop>true</loop>
+					<sound>shield</sound>
+				</target_effect>
+			</skill>
+			<skill id='displayEffect' trigger='onSkillHit' s='reinforce' >
+				<actor_effect>
+					<prefab>ReinforceActive</prefab>
+					<bundle_id>105</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+			<skill id='displayEffect' trigger='onSkillBreak' s='reinforce' >
+				<actor_effect>
+					<prefab>ReinforceBreak</prefab>
+					<bundle_id>105</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>119</id>
+		<name>Elemental Conflux</name>
+		<desc>Elementals gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.</desc>
+		<web_picture>filter_elementals_64.png</web_picture>
+		<icon>filter_elementals_64</icon>
+		<effect>
+			<card_type>99</card_type>
+			<skill id='enlarge' mult='.5' all='1' yy='1,5' />	<!-- mult is based on attack -->
+			<skill id='displayEffect' trigger='onSkill' y='99' s='enlarge' >
+				<target_effect>
+					<prefab>Empower_Target_Elemental</prefab>
+					<delay>.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+			<add_skill id='counter' mult='.5' base='attack' all='1' yy='2,5' />
+			<skill id='displayEffect' trigger='onSkill' yy='2,5' s='counter' >
+				<actor_effect>
+					<prefab>elemental_BGE_chaos</prefab>
+					<bundle_id>96</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+			<scale_health base='health' mult='0.25' yy='3,5' />
+			<skill id='displayEffect' trigger='onPlay' yy='3,5' >
+				<actor_effect>
+					<prefab>elemental_BGE_wyld</prefab>
+					<bundle_id>96</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>120</id>
+		<name>Dragonfire</name>
+		<desc>Dragons gain Scorch equal to 20% of their base Health.</desc>
+		<icon>filter_dragon_64.png</icon>
+		<effect>
+			<add_skill id='burn' mult='0.2' base='health' y='9' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>121</id>
+		<name>Angelic Assault</name>
+		<desc>Angels have transcended, gaining Legion equal to 15% of their base Health.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<effect>
+			<add_skill id='legion' mult='0.15' base='health' y='6' />
+			<skill id='displayEffect' trigger='onSkill' y='6' s='legion' >
+				<projectile_effect>
+					<prefab>Legion_Projectile</prefab>
+					<delay>0</delay>
+					<duration>.5</duration>
+					<translation>.5</translation>
+					<offset>2</offset>
+				</projectile_effect>
+				<target_effect>
+					<prefab>Legion_Angel_Target</prefab>
+					<delay>.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>122</id>
+		<name>Energy Warding</name>
+		<desc>All Mechas have upgraded their protective protocols, gaining Ward equal to 3 plus 10% of their base Health.</desc>
+		<icon>filter_mech_64</icon>
+		<effect>
+			<add_skill id='absorb_mecha' mult='.1' base='health' x='3' all='1' y='16' />
+			<skill id='displayEffect' trigger='onSkill' s='absorb_mecha' >
+				<target_effect>
+					<prefab>ReinforceActive</prefab>
+					<bundle_id>107</bundle_id>
+					<duration>1</duration>
+					<loop>true</loop>
+					<sound>shield</sound>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>123</id>
+		<name>Aether Triumph</name>
+		<desc>Aether have their Attack and Health increased by 25% of the base.</desc>
+		<icon>filter_aether_64</icon>
+		<effect>
+			<skill id='enlarge' mult='.25' all='1' y='1' />	<!-- mult is based on attack -->
+			<scale_health base='health' mult='0.25' yy='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>124</id>
+		<name>Chaos Triumph</name>
+		<desc>Chaos have their Attack and Health increased by 25% of the base.</desc>
+		<icon>filter_chaos_64</icon>
+		<effect>
+			<skill id='enlarge' mult='.25' all='1' y='2' />	<!-- mult is based on attack -->
+			<scale_health base='health' mult='0.25' yy='2' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>125</id>
+		<name>Wyld Triumph</name>
+		<desc>Wyld have their Attack and Health increased by 25% of the base.</desc>
+		<icon>filter_wyld_64</icon>
+		<effect>
+			<skill id='enlarge' mult='.25' all='1' y='3' />	<!-- mult is based on attack -->
+			<scale_health base='health' mult='0.25' yy='3' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>126</id>
+		<name>Brine Edge</name>
+		<desc>Seafolk harness the power of the ocean, increasing their Attack by 15% of their base Health!</desc>
+		<web_picture>filter_seafolk_64.png</web_picture>
+		<icon>filter_seafolk_64</icon>
+		<effect>
+			<!-- <skill id='enlarge' mult='.2' base='health' all='1' y='12' /> -->
+			<scale_attack base='health' mult='0.15' yy='12' />
+			<skill id='displayEffect' trigger='onPlay' yy='12' >
+				<actor_effect>
+					<prefab>WaterEmpower</prefab>
+					<bundle_id>96</bundle_id>
+					<duration>2</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>127</id>
+		<name>Insectile Venom</name>
+		<desc>Insects gain Venom equal to 1 plus 15% of their base Health. Creatures affected by Venom take damage at the end of the turn, and take additional damage from attacks and skills.</desc>
+		<icon>filter_insect_64.png</icon>
+		<effect>
+			<add_skill id='venom' mult='0.15' base='health' x='1' y='13' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>128</id>
+		<name>Poisonhide</name>
+		<desc>When a Frog is damaged by an attack, it deals Poison damage to the attacker equal to 5 plus 10% of the Frog's base Health.</desc>
+		<icon>filter_frog_64</icon>
+		<effect>
+			<add_skill id='counterpoison' mult='0.1' base='health' x='5' y='4' />
+			<skill id='displayEffect' trigger='onSkill' s='counterpoison' >
+				<target_effect>
+					<prefab>PoisonHide</prefab>
+					<bundle_id>96</bundle_id>
+					<delay>0.1</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>129</id>
+		<name>Swarm</name>
+		<desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active non-tower ally creature by 20% of the Attacker's base Health.</desc>
+		<icon>filter_insect_64.png</icon>
+		<effect>
+			<add_skill id='swarm' mult='.2' base='health' y='13' />
+		</effect>
+	</battleground>
+	
+	<!-- ================================= -->
+	<!-- ==== 501-1000: Specialty BGE ==== -->
+	<!-- ================================= -->
+	<battleground>
+		<id>501</id>
+		<name>Castle Siege</name>
+		<desc>All enemies start with a Castle Tower card.</desc>
+		<web_picture>filter_tower_64.png</web_picture>
+		<icon>filter_tower_64</icon>
+		<effect>
+			<starting_card id='601' level='1' pvp_rank='2' />
+			<starting_card id='601' level='2' pvp_rank='3' />
+			<starting_card id='601' level='3' pvp_rank='4' />
+			<starting_card id='601' level='4' pvp_rank='5' />
+			<starting_card id='601' level='5' pvp_rank='6' />
+			<starting_card id='601' level='6' pvp_rank='7' />
+			<starting_card id='601' level='7' pvp_rank='8' />
+			<starting_card id='601' level='8' pvp_rank='9' />
+			<starting_card id='601' level='9' pvp_rank='10' />
+			<starting_card id='601' level='10' pvp_rank='11' />
+			<starting_card id='601' level='11' pvp_rank='12' />
+			<starting_card id='601' level='12' pvp_rank='13' />
+			<starting_card id='601' level='13' pvp_rank='14' />
+			<starting_card id='601' level='14' pvp_rank='15' />
+			<starting_card id='601' level='15' pvp_rank='16' />
+			<starting_card id='601' level='16' pvp_rank='17' />
+			<starting_card id='601' level='17' pvp_rank='18' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>502</id>
+		<name>Cannon Siege</name>
+		<desc>All enemies start with a Cannon Tower card.</desc>
+		<web_picture>filter_tower_64.png</web_picture>
+		<icon>filter_tower_64</icon>
+		<effect>
+			<starting_card id='602' level='1' pvp_rank='2' />
+			<starting_card id='602' level='2' pvp_rank='3' />
+			<starting_card id='602' level='3' pvp_rank='4' />
+			<starting_card id='602' level='4' pvp_rank='5' />
+			<starting_card id='602' level='5' pvp_rank='6' />
+			<starting_card id='602' level='6' pvp_rank='7' />
+			<starting_card id='602' level='7' pvp_rank='8' />
+			<starting_card id='602' level='8' pvp_rank='9' />
+			<starting_card id='602' level='9' pvp_rank='10' />
+			<starting_card id='602' level='10' pvp_rank='11' />
+			<starting_card id='602' level='11' pvp_rank='12' />
+			<starting_card id='602' level='12' pvp_rank='13' />
+			<starting_card id='602' level='13' pvp_rank='14' />
+			<starting_card id='602' level='14' pvp_rank='15' />
+			<starting_card id='602' level='15' pvp_rank='16' />
+			<starting_card id='602' level='16' pvp_rank='17' />
+			<starting_card id='602' level='17' pvp_rank='18' />
+		</effect>
+	</battleground>
+	
+	<!-- <battleground>
 		<id>502</id>
 		<name>Scaling</name>
 		<desc>Scale cards.</desc>
@@ -634,1521 +641,1703 @@
 			<enhance level='5' value='0.5' />
 		</effect>
 	</battleground> -->
-  <battleground>
-    <id>503</id>
-    <name>Frostbite's Aura</name>
-    <desc>Frostbite Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <icon>filter_frostbite_64</icon>
-    <icon_bundle>26</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>26</starting_level>
-    <!-- Starting Raid Level -->
-    <effect>
-      <skill id="heal" x="1.1" all="1" />
-      <skill id="rally" x=".6" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>504</id>
-    <name>Nethergore's Reckoning</name>
-    <desc>Nethergore Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <icon>undead_raid_badge_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>26</starting_level>
-    <!-- Starting Raid Level -->
-    <effect>
-      <skill id="heal" x="1.2" all="1" />
-      <skill id="rally" x=".7" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>505</id>
-    <name>Fortune's Favoring</name>
-    <desc>Fortune's Favor Heals and Empowers all of its allies, increasing in strength as it levels up.</desc>
-    <icon>pirate_raid_badge_64</icon>
-    <icon_bundle>61</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>26</starting_level>
-    <!-- Starting Raid Level -->
-    <effect>
-      <skill id="heal" x="1.1" all="1" />
-      <skill id="rally" x=".6" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>506</id>
-    <name>Tree of Life</name>
-    <desc>All enemies start with a Tree of Life card.</desc>
-    <web_picture>filter_tower_64.png</web_picture>
-    <icon>tree_of_life_64</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <starting_card id="603" level="2" pvp_rank="2" />
-      <starting_card id="603" level="3" pvp_rank="3" />
-      <starting_card id="603" level="4" pvp_rank="4" />
-      <starting_card id="603" level="5" pvp_rank="5" />
-      <starting_card id="603" level="6" pvp_rank="6" />
-      <starting_card id="603" level="7" pvp_rank="7" />
-      <starting_card id="603" level="8" pvp_rank="8" />
-      <starting_card id="603" level="9" pvp_rank="9" />
-      <starting_card id="603" level="10" pvp_rank="10" />
-      <starting_card id="603" level="11" pvp_rank="11" />
-      <starting_card id="603" level="12" pvp_rank="12" />
-      <starting_card id="603" level="13" pvp_rank="13" />
-      <starting_card id="603" level="14" pvp_rank="14" />
-      <starting_card id="603" level="15" pvp_rank="15" />
-      <starting_card id="603" level="16" pvp_rank="16" />
-      <starting_card id="603" level="17" pvp_rank="17" />
-      <starting_card id="603" level="18" pvp_rank="18" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>507</id>
-    <name>Flash Storms</name>
-    <desc>When an Elemental card is played, a Storm card is shuffled into the opponent's deck. When a Storm card is drawn, all their creatures are weakened for that turn!</desc>
-    <icon>filter_elementals_64</icon>
-    <effect>
-      <!--
+
+	<battleground>
+		<id>503</id>
+		<name>Frostbite's Aura</name>
+		<desc>Frostbite Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+		<icon>filter_frostbite_64</icon>
+		<icon_bundle>26</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level> <!-- Boolean -->
+		<starting_level>26</starting_level> <!-- Starting Raid Level -->
+		<effect>
+			<skill id='heal' x='1.1' all='1' />
+			<skill id='rally' x='.6' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>504</id>
+		<name>Nethergore's Reckoning</name>
+		<desc>Nethergore Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+		<icon>undead_raid_badge_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level> <!-- Boolean -->
+		<starting_level>26</starting_level> <!-- Starting Raid Level -->
+		<effect>
+			<skill id='heal' x='1.2' all='1' />
+			<skill id='rally' x='.7' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>505</id>
+		<name>Fortune's Favoring</name>
+		<desc>Fortune's Favor Heals and Empowers all of its allies, increasing in strength as it levels up.</desc>
+		<icon>pirate_raid_badge_64</icon>
+		<icon_bundle>61</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level> <!-- Boolean -->
+		<starting_level>26</starting_level> <!-- Starting Raid Level -->
+		<effect>
+			<skill id='heal' x='1.1' all='1' />
+			<skill id='rally' x='.6' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>506</id>
+		<name>Tree of Life</name>
+		<desc>All enemies start with a Tree of Life card.</desc>
+		<web_picture>filter_tower_64.png</web_picture>
+		<icon>tree_of_life_64</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<starting_card id='603' level='2' pvp_rank='2' />
+			<starting_card id='603' level='3' pvp_rank='3' />
+			<starting_card id='603' level='4' pvp_rank='4' />
+			<starting_card id='603' level='5' pvp_rank='5' />
+			<starting_card id='603' level='6' pvp_rank='6' />
+			<starting_card id='603' level='7' pvp_rank='7' />
+			<starting_card id='603' level='8' pvp_rank='8' />
+			<starting_card id='603' level='9' pvp_rank='9' />
+			<starting_card id='603' level='10' pvp_rank='10' />
+			<starting_card id='603' level='11' pvp_rank='11' />
+			<starting_card id='603' level='12' pvp_rank='12' />
+			<starting_card id='603' level='13' pvp_rank='13' />
+			<starting_card id='603' level='14' pvp_rank='14' />
+			<starting_card id='603' level='15' pvp_rank='15' />
+			<starting_card id='603' level='16' pvp_rank='16' />
+			<starting_card id='603' level='17' pvp_rank='17' />
+			<starting_card id='603' level='18' pvp_rank='18' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>507</id>
+		<name>Flash Storms</name>
+		<desc>When an Elemental card is played, a Storm card is shuffled into the opponent's deck. When a Storm card is drawn, all their creatures are weakened for that turn!</desc>
+		<icon>filter_elementals_64</icon>
+		<effect>
+			<!--
 			target_deck: opponent OR self 
 			-->
-      <trap_card id="604" base="attack" mult="0.5" target_deck="opponent" y="5" />
-      <skill id="displayEffect" trigger="onTrap">
-        <actor_effect>
-          <prefab>elementalStorm</prefab>
-          <bundle_id>0</bundle_id>
-          <duration>1</duration>
-          <delay>.1</delay>
-          <sound>card_drop</sound>
-        </actor_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkill" y="999" s="weakenself">
-        <target_effect>
-          <prefab>waveBlast</prefab>
-          <bundle_id>0</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>508</id>
-    <name>The Thunderdome</name>
-    <desc>Bolt and Bolt All skills deal 50% more damage.</desc>
-    <icon>thunderbolt_64</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <skill id="enhance" s="strike" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>509</id>
-    <name>Fortified Tower</name>
-    <desc>All enemies start with a Fortified Tower card. The tower evolves with the strongest opponents!</desc>
-    <web_picture>filter_tower_64.png</web_picture>
-    <icon>filter_tower_64</icon>
-    <effect>
-      <starting_card id="605" level="1" pvp_rank="2" />
-      <starting_card id="605" level="2" pvp_rank="3" />
-      <starting_card id="605" level="3" pvp_rank="4" />
-      <starting_card id="605" level="4" pvp_rank="5" />
-      <starting_card id="605" level="5" pvp_rank="6" />
-      <starting_card id="605" level="6" pvp_rank="7" />
-      <starting_card id="605" level="7" pvp_rank="8" />
-      <starting_card id="605" level="8" pvp_rank="9" />
-      <starting_card id="605" level="9" pvp_rank="10" />
-      <starting_card id="605" level="10" pvp_rank="11" />
-      <starting_card id="605" level="11" pvp_rank="12" />
-      <starting_card id="605" level="12" pvp_rank="13" />
-      <starting_card id="605" level="13" pvp_rank="14" />
-      <starting_card id="606" level="1" pvp_rank="15" />
-      <starting_card id="606" level="2" pvp_rank="16" />
-      <starting_card id="606" level="3" pvp_rank="17" />
-      <starting_card id="606" level="4" pvp_rank="18" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>510</id>
-    <name>Dungeon's Despair</name>
-    <desc>Dungeon's Despair Heals and Empowers all the enemy creatures, increasing in strength as the dungeon level increases.</desc>
-    <icon>dungeon_bge_128</icon>
-    <icon_bundle>71</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>130</starting_level>
-    <!-- Starting Raid Level -->
-    <effect>
-      <skill id="heal" x=".2" all="1" />
-      <skill id="rally" x=".2" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>511</id>
-    <name>Runic Sanctuary</name>
-    <desc>Barrier and Barrier All skills are 50% more effective.</desc>
-    <icon>Barrier_BGE_64</icon>
-    <icon_bundle>69</icon_bundle>
-    <effect>
-      <skill id="enhance" s="protect" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>512</id>
-    <name>Defender's Castle</name>
-    <desc>Players who go second start with a Castle Tower card.</desc>
-    <web_picture>filter_tower_64.png</web_picture>
-    <icon>filter_tower_64</icon>
-    <effect>
-      <starting_card id="601" level="1" pvp_rank="2" />
-      <starting_card id="601" level="2" pvp_rank="3" />
-      <starting_card id="601" level="3" pvp_rank="4" />
-      <starting_card id="601" level="4" pvp_rank="5" />
-      <starting_card id="601" level="5" pvp_rank="6" />
-      <starting_card id="601" level="6" pvp_rank="7" />
-      <starting_card id="601" level="7" pvp_rank="8" />
-      <starting_card id="601" level="8" pvp_rank="9" />
-      <starting_card id="601" level="9" pvp_rank="10" />
-      <starting_card id="601" level="10" pvp_rank="11" />
-      <starting_card id="601" level="11" pvp_rank="12" />
-      <starting_card id="601" level="12" pvp_rank="13" />
-      <starting_card id="601" level="13" pvp_rank="14" />
-      <starting_card id="601" level="14" pvp_rank="15" />
-      <starting_card id="601" level="15" pvp_rank="16" />
-      <starting_card id="601" level="16" pvp_rank="17" />
-      <starting_card id="601" level="17" pvp_rank="18" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>513</id>
-    <name>Firestarter</name>
-    <desc>Scorch skills deal 50% more damage.</desc>
-    <icon>firestarter_64</icon>
-    <icon_bundle>75</icon_bundle>
-    <effect>
-      <skill id="enhance" s="burn" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>514</id>
-    <name>The Arena</name>
-    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <on_play first_play="1" attacker="1">
-        <add_skill id="slow" x="1" />
-      </on_play>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>515</id>
-    <name>Golden Leaf Shelter</name>
-    <desc>All Frogs gain Barrier each turn equal to 20% of their base Health.</desc>
-    <web_picture>filter_frog_64.png</web_picture>
-    <icon>Barrier_BGE_64</icon>
-    <icon_bundle>69</icon_bundle>
-    <effect>
-      <skill id="protect" mult=".20" all="1" y="4" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>516</id>
-    <name>Cursed Land</name>
-    <desc>Hex and Hex All skills are 50% more effective.</desc>
-    <icon>Hex_BGE_64</icon>
-    <icon_bundle>82</icon_bundle>
-    <effect>
-      <skill id="enhance" s="enfeeble" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>517</id>
-    <name>Enchanted Armor</name>
-    <desc>Armor skills are 50% more effective.</desc>
-    <icon>armor_BGE_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <effect>
-      <skill id="enhance" s="armored" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>518</id>
-    <name>Goblin's Treachery</name>
-    <desc>Goblin Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <icon>raid_004_BGE_64</icon>
-    <icon_bundle>26</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>26</starting_level>
-    <!-- Starting Raid Level -->
-    <effect>
-      <skill id="heal" x="1.2" all="1" />
-      <skill id="rally" x=".7" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>519</id>
-    <name>Corrosive Hide</name>
-    <desc>Corrosive skills are 50% more effective.</desc>
-    <icon>corrosive_BGE_64</icon>
-    <icon_bundle>103</icon_bundle>
-    <effect>
-      <skill id="enhance" s="corrosive" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>520</id>
-    <name>Frozen Winds</name>
-    <desc>Frostbreath skills deal 50% more damage.</desc>
-    <icon>frostbreath_BGE_64</icon>
-    <icon_bundle>103</icon_bundle>
-    <effect>
-      <skill id="enhance" s="frost" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>521</id>
-    <name>The Arena</name>
-    <desc>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <on_play first_play="1" attacker="1">
-        <add_skill id="slow" x="2" />
-      </on_play>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>522</id>
-    <name>Empowered Spirits</name>
-    <desc>Empower and Empower All skills are 50% more effective.</desc>
-    <icon>empower_BGE_64</icon>
-    <icon_bundle>96</icon_bundle>
-    <effect>
-      <skill id="enhance" s="rally" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>523</id>
-    <name>Vengeance War</name>
-    <desc>Vengeance skills are 50% more effective.</desc>
-    <icon>Vengence_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="counter" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>524</id>
-    <name>Berserker Rage</name>
-    <desc>Berserk skills are 50% more effective.</desc>
-    <icon>Berserk_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="berserk" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>525</id>
-    <name>Vanishing Enchantment</name>
-    <desc>All cards gain Invisibility 99.</desc>
-    <icon>Vanishing_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <add_skill id="evade" x="99" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>526</id>
-    <name>Dragons are the Worst</name>
-    <desc>Dragons gain Bolt all Knight 5.</desc>
-    <icon>thunderbolt_64</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <add_skill id="strike" x="5" y="9" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>527</id>
-    <name>Invincible Armor</name>
-    <desc>All cards gain Armor 99.</desc>
-    <icon>99Armor_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <add_skill id="armored" x="99" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>528</id>
-    <name>Forgeborn</name>
-    <desc>All cards gain Scorch equal to 10% of their base Health.</desc>
-    <icon>Scorch_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <add_skill id="burn" mult="0.1" base="health" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>529</id>
-    <name>Null Enchantment</name>
-    <desc>All cards gain Nullify 99.</desc>
-    <icon>Nullify_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <add_skill id="nullify" x="99" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>530</id>
-    <name>Corrosive Husk</name>
-    <desc>All cards gain Corrosive 99.</desc>
-    <icon>Corrosive_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <add_skill id="corrosive" x="99" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>531</id>
-    <name>Master Warding Shield</name>
-    <desc>All cards gain Ward 99.</desc>
-    <icon>Ward99_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <add_skill id="absorb" x="99" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>532</id>
-    <name>Furious Soul</name>
-    <desc>All cards get Enraged equal to 20% of their base Health.</desc>
-    <icon>Enraged_BGE_100</icon>
-    <!-- actually _64 -->
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enrage" mult=".2" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>533</id>
-    <name>Powderkeg</name>
-    <desc>All cards gain Barrage equal to their base Attack.</desc>
-    <icon>Barrage_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <add_skill id="barrage" mult="1" base="attack" />
-      <skill id="displayEffect" trigger="onSkill" s="barrage">
-        <projectile_effect>
-          <prefab>goblinBombProjectile</prefab>
-          <bundle_id>75</bundle_id>
-          <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
-          <offset>0</offset>
-        </projectile_effect>
-        <target_effect>
-          <prefab>goblinBombTarget</prefab>
-          <bundle_id>75</bundle_id>
-          <delay>.75</delay>
-          <duration>1.25</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>534</id>
-    <name>Runepocalypse</name>
-    <desc>All bonuses from Runes are doubled.</desc>
-    <icon>Rune_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <rune_mult>2</rune_mult>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>535</id>
-    <name>Celerity Crash</name>
-    <desc>All cards are 1 Delay.</desc>
-    <icon>1Delay_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <stat cost="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>536</id>
-    <name>Conflux</name>
-    <desc>All creatures gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.</desc>
-    <icon>Conflux_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <card_type>99</card_type>
-      <skill id="enlarge" mult=".5" all="1" y="1" />
-      <!-- mult is based on attack -->
-      <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
-        <target_effect>
-          <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2" />
-      <skill id="displayEffect" trigger="onSkill" y="2" s="counter">
-        <actor_effect>
-          <prefab>elemental_BGE_chaos</prefab>
-          <bundle_id>96</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-      <scale_health base="health" mult="0.25" yy="3" />
-      <skill id="displayEffect" trigger="onPlay" y="3">
-        <actor_effect>
-          <prefab>elemental_BGE_wyld</prefab>
-          <bundle_id>96</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>537</id>
-    <name>Molten Scales</name>
-    <desc>Emberhide skills deal 50% more damage.</desc>
-    <icon>Emberhide_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="counterburn" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>538</id>
-    <name>Vulcanos' Favor</name>
-    <desc>Scorchbreath skill deal 50% more damage.</desc>
-    <icon>Scorchbreathe_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="scorchbreath" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>539</id>
-    <name>Legion's Call</name>
-    <desc>Legion skills are 50% more effective.</desc>
-    <icon>Legion_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="legion" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>540</id>
-    <name>Crippling Blows</name>
-    <desc>Weaken and Weaken All skills are 50% more effective.</desc>
-    <icon>Weaken_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="weaken" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>541</id>
-    <name>Tainted Strike</name>
-    <desc>Poison skills deal 50% more damage.</desc>
-    <icon>Poison_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="poison" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>542</id>
-    <name>Sundering Blades</name>
-    <desc>Pierce skills are 50% more effective.</desc>
-    <icon>Pierce_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="pierce" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>543</id>
-    <name>Mending Aura</name>
-    <desc>Heal and Heal All skills are 50% more effective.</desc>
-    <icon>Heal_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="heal" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>544</id>
-    <name>Regrowth Burst</name>
-    <desc>Regenerate skills are 50% more effective.</desc>
-    <icon>Regenerate_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="regenerate" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>545</id>
-    <name>Draining Soul</name>
-    <desc>Siphon skills are 50% more effective.</desc>
-    <icon>Siphon_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
-    <effect>
-      <skill id="enhance" s="leech" mult="0.5" all="1" />
-    </effect>
-  </battleground>
-  <!-- ============================= -->
-  <!-- ==== 1001+: Personal BGE ==== -->
-  <!-- ============================= -->
-  <battleground>
-    <id>1001</id>
-    <name>Primal Mending</name>
-    <desc>Your creatures get healed for 2 every turn in battle.</desc>
-    <icon>healTotem_BGE_64</icon>
-    <icon_bundle>73</icon_bundle>
-    <effect>
-      <skill id="heal" x="2" all="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>1002</id>
-    <name>Personal Frog Buff</name>
-    <desc>All ally Frogs gain the Protection of the Watcher, reducing damage taken by 2.</desc>
-    <web_picture>filter_frog_64.png</web_picture>
-    <effect>
-      <skill id="protect" x="2" all="1" y="4" />
-    </effect>
-  </battleground>
-  <!-- ================================== -->
-  <!-- ==== 2001+: Enemy Scaling BGE ==== -->
-  <!-- ================================== -->
-  <battleground>
-    <id>2001</id>
-    <name>Scylla's Presence</name>
-    <desc>Scylla empowers her minions, increasing their stats with each Mastery level!</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2002</id>
-    <name>Riptide Nightsong</name>
-    <desc>Enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".0025" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2003</id>
-    <name>Riptide Nightsong</name>
-    <desc>Enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".15" mult=".0025" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2004</id>
-    <name>Riptide Nightsong</name>
-    <desc>Enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2005</id>
-    <name>Anthem of the Tenacious</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".0025" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2006</id>
-    <name>Elegy of a Hero</name>
-    <desc>Dyrnwyn's Spirit fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".4" mult=".016" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2007</id>
-    <name>Requiem of the Relentless</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <web_picture>filter_undead_64.png</web_picture>
-    <icon>filter_undead_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".13" mult=".0025" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2008</id>
-    <name>Requiem of the Relentless</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <web_picture>filter_undead_64.png</web_picture>
-    <icon>filter_undead_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".04" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2009</id>
-    <name>Developer Hacks</name>
-    <desc>Gets stronger every level. Yeah it's not fair. Not sorry.</desc>
-    <icon>devtools_128</icon>
-    <icon_bundle>52</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>6</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2010</id>
-    <name>Harmonious Sphere Chorus</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <web_picture>filter_dragon_64.png</web_picture>
-    <icon>filter_dragon_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2011</id>
-    <name>Harmonious World Refrain</name>
-    <desc>Bluefire, Void Master fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <web_picture>filter_dragon_64.png</web_picture>
-    <icon>filter_dragon_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2012</id>
-    <name>Harmonious Sphere Chorus</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <web_picture>filter_dragon_64.png</web_picture>
-    <icon>filter_dragon_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".13" mult=".0025" />
-      <!-- <scale_attributes base_mult='.01' mult='.025' /> -->
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2013</id>
-    <name>Harmonious Sphere Chorus</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <web_picture>filter_dragon_64.png</web_picture>
-    <icon>filter_dragon_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".04" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2014</id>
-    <name>Six-Stanza Sonata</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Mythic Node Scaling -->
-  <battleground>
-    <id>2015</id>
-    <name>Dirge of the World</name>
-    <desc>Bluefire, Mythic Master fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <web_picture>filter_dragon_64.png</web_picture>
-    <icon>filter_dragon_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>7</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 4 Boss -->
-  <battleground>
-    <id>2016</id>
-    <name>Buzzsaw Aphidsong</name>
-    <desc>The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_insect_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 4 weeks 5-8 -->
-  <battleground>
-    <id>2017</id>
-    <name>Six-Stanza Sonata</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2018</id>
-    <name>Firecracker Tango</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_goblin_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 5 -->
-  <battleground>
-    <id>2019</id>
-    <name>Coralflow Ballad</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 5 Boss -->
-  <battleground>
-    <id>2020</id>
-    <name>Blazing Tidal Etude</name>
-    <desc>Xerkahn, the Avenger fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 5 weeks 5-8 -->
-  <battleground>
-    <id>2021</id>
-    <name>Coralflow Ballad</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2022</id>
-    <name>Coralflow Ballad</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 6 -->
-  <battleground>
-    <id>2023</id>
-    <name>Ion-pitched Chiptune</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_mech_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 6 Boss -->
-  <battleground>
-    <id>2024</id>
-    <name>Gearweight Metal</name>
-    <desc>Fireshard's Giant fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_mech_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".25" mult=".03" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 6 weeks 5-8 -->
-  <battleground>
-    <id>2025</id>
-    <name>Ion-pitched Chiptune</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_mech_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2026</id>
-    <name>Ion-pitched Chiptune</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_mech_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".03" />
-    </effect>
-  </battleground>
-  <!-- Mythic Node Scaling Viracocha -->
-  <battleground>
-    <id>2027</id>
-    <name>Rhythm of the Soul</name>
-    <desc>Viracocha, Titan Aspirer fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_mech_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>7</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 7 -->
-  <battleground>
-    <id>2028</id>
-    <name>Crimsonwing Anthem</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 7 Boss -->
-  <battleground>
-    <id>2029</id>
-    <name>Crimsondrip Lullaby</name>
-    <desc>Hero's Blessed, Yakov fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_avian_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 7 -->
-  <battleground>
-    <id>2030</id>
-    <name>Crimsonwing Anthem</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2031</id>
-    <name>Crimsonwing Anthem</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 8 -->
-  <battleground>
-    <id>2032</id>
-    <name>Crystalsky Hymn</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 8 Boss -->
-  <battleground>
-    <id>2033</id>
-    <name>Crimsondrop Lullaby</name>
-    <desc>Razi, Whisper Worshipper fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 8 -->
-  <battleground>
-    <id>2034</id>
-    <name>Crystalsky Hymn</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2035</id>
-    <name>Crystalsky Hymn</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_angel2_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 9 -->
-  <battleground>
-    <id>2036</id>
-    <name>Metalschema Samba</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_goblin_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 9 Boss -->
-  <battleground>
-    <id>2037</id>
-    <name>Arbitrator Sing-Along</name>
-    <desc>Boldur, the Bravest fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_goblin_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2038</id>
-    <name>Metalschema Samba</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_goblin_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2039</id>
-    <name>Metalschema Samba</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_goblin_64</icon>
-    <icon_bundle>87</icon_bundle>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 10 -->
-  <battleground>
-    <id>2040</id>
-    <name>Streaming Amnesic Hula</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 10 Boss Storm Lord Father -->
-  <battleground>
-    <id>2041</id>
-    <name>Tumultuous Rain Dance</name>
-    <desc>Typheous, Ship Devourer fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".25" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2042</id>
-    <name>Streaming Amnesic Hula</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2043</id>
-    <name>Streaming Amnesic Hula</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_seafolk_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 11 -->
-  <battleground>
-    <id>2044</id>
-    <name>Sunrisen Divertimento</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_frog_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 11 Dream Awakened -->
-  <battleground>
-    <id>2045</id>
-    <name>Prelude of Light</name>
-    <desc>Kachina, Transcended fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_frog_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".25" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 11 -->
-  <battleground>
-    <id>2046</id>
-    <name>Sunrisen Divertimento</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_frog_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2047</id>
-    <name>Sunrisen Divertimento</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_frog_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 12 -->
-  <battleground>
-    <id>2048</id>
-    <name>Shattered Rifthowl</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_elementals_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>5</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
-    </effect>
-  </battleground>
-  <!-- Champion Boss Tanit -->
-  <battleground>
-    <id>2049</id>
-    <name>Harmonious Crimson Litany</name>
-    <desc>Tanit, First Dreamer fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_avian_64.png</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>7</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 12 Rifthowl -->
-  <battleground>
-    <id>2050</id>
-    <name>Fracturing Dirge</name>
-    <desc>Agonized Amarok fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_elementals_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- Campaign Event 12 weeks 5-8 -->
-  <battleground>
-    <id>2051</id>
-    <name>Shattered Rifthowl</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_elementals_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>2052</id>
-    <name>Shattered Rifthowl</name>
-    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_elementals_64</icon>
-    <enemy_only>1</enemy_only>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>0</starting_level>
-    <!-- Starting Mastery Level -->
-    <max_level>7</max_level>
-    <!-- Max Mastery Level -->
-    <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
-    </effect>
-  </battleground>
-  <!-- ==================== -->
-  <!-- ==== Arena BGEs ==== -->
-  <!-- ==================== -->
-  <battleground>
-    <id>5001</id>
-    <name>The Arena</name>
-    <desc>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <on_play first_play="1" attacker="1">
-        <add_skill id="slow" x="2" />
-      </on_play>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>5002</id>
-    <name>The Arena</name>
-    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first two cards they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <on_play index="1" attacker="1">
-        <add_skill id="slow" x="1" />
-      </on_play>
-      <on_play index="2" attacker="1">
-        <add_skill id="slow" x="1" />
-      </on_play>
-    </effect>
-  </battleground>
-  <battleground>
-    <id>5003</id>
-    <name>The Arena</name>
-    <desc>In Arena Battles, the player who goes first has one Delay added to the first card they play and the player who goes second has one Delay removed from the first card they play.</desc>
-    <icon>arenaBGE_64.png</icon>
-    <icon_bundle>31</icon_bundle>
-    <effect>
-      <on_play first_play="1" attacker="1">
-        <add_skill id="slow" x="1" />
-      </on_play>
-      <on_play first_play="1" defender="1">
-        <add_skill id="haste" x="1" />
-      </on_play>
-    </effect>
-  </battleground>
-  <!-- ====================== -->
-  <!-- ==== Special BGEs ==== -->
-  <!-- ====================== -->
-  <battleground>
-    <id>6001</id>
-    <name>Global VFX</name>
-    <effect>
-      <skill id="displayEffect" trigger="onSkill" s="counterburn">
-        <target_effect>
-          <prefab>FireVengence_Reverse</prefab>
-          <prefab_enemy>FireVengence</prefab_enemy>
-          <bundle_id>69</bundle_id>
-          <delay>0</delay>
-          <duration>2</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-    </effect>
-  </battleground>
+			<trap_card id='604' base='attack' mult='0.5' target_deck='opponent' y='5' />
+			<skill id='displayEffect' trigger='onTrap' >
+				<actor_effect>
+					<prefab>elementalStorm</prefab>
+					<bundle_id>0</bundle_id>
+					<duration>1</duration>
+					<delay>.1</delay>
+					<sound>card_drop</sound>
+				</actor_effect>
+			</skill>
+			<skill id='displayEffect' trigger='onSkill' y='999' s='weakenself' >
+				<target_effect>
+					<prefab>waveBlast</prefab>
+					<bundle_id>0</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>508</id>
+		<name>The Thunderdome</name>
+		<desc>Bolt and Bolt All skills deal 50% more damage.</desc>
+		<icon>thunderbolt_64</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<skill id='enhance' s='strike' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>509</id>
+		<name>Fortified Tower</name>
+		<desc>All enemies start with a Fortified Tower card. The tower evolves with the strongest opponents!</desc>
+		<web_picture>filter_tower_64.png</web_picture>
+		<icon>filter_tower_64</icon>
+		<effect>
+			<starting_card id='605' level='1' pvp_rank='2' />
+			<starting_card id='605' level='2' pvp_rank='3' />
+			<starting_card id='605' level='3' pvp_rank='4' />
+			<starting_card id='605' level='4' pvp_rank='5' />
+			<starting_card id='605' level='5' pvp_rank='6' />
+			<starting_card id='605' level='6' pvp_rank='7' />
+			<starting_card id='605' level='7' pvp_rank='8' />
+			<starting_card id='605' level='8' pvp_rank='9' />
+			<starting_card id='605' level='9' pvp_rank='10' />
+			<starting_card id='605' level='10' pvp_rank='11' />
+			<starting_card id='605' level='11' pvp_rank='12' />
+			<starting_card id='605' level='12' pvp_rank='13' />
+			<starting_card id='605' level='13' pvp_rank='14' />
+			<starting_card id='606' level='1' pvp_rank='15' />
+			<starting_card id='606' level='2' pvp_rank='16' />
+			<starting_card id='606' level='3' pvp_rank='17' />
+			<starting_card id='606' level='4' pvp_rank='18' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>510</id>
+		<name>Dungeon's Despair</name>
+		<desc>Dungeon's Despair Heals and Empowers all the enemy creatures, increasing in strength as the dungeon level increases.</desc>
+		<icon>dungeon_bge_128</icon>
+		<icon_bundle>71</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level> <!-- Boolean -->
+		<starting_level>130</starting_level> <!-- Starting Raid Level -->
+		<effect>
+			<skill id='heal' x='.2' all='1' />
+			<skill id='rally' x='.2' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>511</id>
+		<name>Runic Sanctuary</name>
+		<desc>Barrier and Barrier All skills are 50% more effective.</desc>
+		<icon>Barrier_BGE_64</icon>
+		<icon_bundle>69</icon_bundle>
+		<effect>
+			<skill id='enhance' s='protect' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>512</id>
+		<name>Defender's Castle</name>
+		<desc>Players who go second start with a Castle Tower card.</desc>
+		<web_picture>filter_tower_64.png</web_picture>
+		<icon>filter_tower_64</icon>
+		<effect>
+			<starting_card id='601' level='1' pvp_rank='2' />
+			<starting_card id='601' level='2' pvp_rank='3' />
+			<starting_card id='601' level='3' pvp_rank='4' />
+			<starting_card id='601' level='4' pvp_rank='5' />
+			<starting_card id='601' level='5' pvp_rank='6' />
+			<starting_card id='601' level='6' pvp_rank='7' />
+			<starting_card id='601' level='7' pvp_rank='8' />
+			<starting_card id='601' level='8' pvp_rank='9' />
+			<starting_card id='601' level='9' pvp_rank='10' />
+			<starting_card id='601' level='10' pvp_rank='11' />
+			<starting_card id='601' level='11' pvp_rank='12' />
+			<starting_card id='601' level='12' pvp_rank='13' />
+			<starting_card id='601' level='13' pvp_rank='14' />
+			<starting_card id='601' level='14' pvp_rank='15' />
+			<starting_card id='601' level='15' pvp_rank='16' />
+			<starting_card id='601' level='16' pvp_rank='17' />
+			<starting_card id='601' level='17' pvp_rank='18' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>513</id>
+		<name>Firestarter</name>
+		<desc>Scorch skills deal 50% more damage.</desc>
+		<icon>firestarter_64</icon>
+		<icon_bundle>75</icon_bundle>
+		<effect>
+			<skill id='enhance' s='burn' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>514</id>
+		<name>The Arena</name>
+		<desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
+		<icon>arenaBGE_64.png</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<on_play first_play='1' attacker='1'>
+				<add_skill id='slow' x='1' />
+			</on_play>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>515</id>
+		<name>Golden Leaf Shelter</name>
+		<desc>All Frogs gain Barrier each turn equal to 20% of their base Health.</desc>
+		<web_picture>filter_frog_64.png</web_picture>
+		<icon>Barrier_BGE_64</icon>
+		<icon_bundle>69</icon_bundle>
+		<effect>
+			<skill id='protect' mult='.20' all='1' y='4' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>516</id>
+		<name>Cursed Land</name>
+		<desc>Hex and Hex All skills are 50% more effective.</desc>
+		<icon>Hex_BGE_64</icon>
+		<icon_bundle>82</icon_bundle>
+		<effect>
+			<skill id='enhance' s='enfeeble' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>517</id>
+		<name>Enchanted Armor</name>
+		<desc>Armor skills are 50% more effective.</desc>
+		<icon>armor_BGE_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<effect>
+			<skill id='enhance' s='armored' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>518</id>
+		<name>Goblin's Treachery</name>
+		<desc>Goblin Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+		<icon>raid_004_BGE_64</icon>
+		<icon_bundle>26</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level> <!-- Boolean -->
+		<starting_level>26</starting_level> <!-- Starting Raid Level -->
+		<effect>
+			<skill id='heal' x='1.2' all='1' />
+			<skill id='rally' x='.7' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>519</id>
+		<name>Corrosive Hide</name>
+		<desc>Corrosive skills are 50% more effective.</desc>
+		<icon>corrosive_BGE_64</icon>
+		<icon_bundle>103</icon_bundle>
+		<effect>
+			<skill id='enhance' s='corrosive' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>520</id>
+		<name>Frozen Winds</name>
+		<desc>Frostbreath skills deal 50% more damage.</desc>
+		<icon>frostbreath_BGE_64</icon>
+		<icon_bundle>103</icon_bundle>
+		<effect>
+			<skill id='enhance' s='frost' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>521</id>
+		<name>The Arena</name>
+		<desc>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</desc>
+		<icon>arenaBGE_64.png</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<on_play first_play='1' attacker='1'>
+				<add_skill id='slow' x='2' />
+			</on_play>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>522</id>
+		<name>Empowered Spirits</name>
+		<desc>Empower and Empower All skills are 50% more effective.</desc>
+		<icon>empower_BGE_64</icon>
+		<icon_bundle>96</icon_bundle>
+		<effect>
+			<skill id='enhance' s='rally' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>523</id>
+		<name>Vengeance War</name>
+		<desc>Vengeance skills are 50% more effective.</desc>
+		<icon>Vengence_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='counter' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>524</id>
+		<name>Berserker Rage</name>
+		<desc>Berserk skills are 50% more effective.</desc>
+		<icon>Berserk_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='berserk' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>525</id>
+		<name>Vanishing Enchantment</name>
+		<desc>All cards gain Invisibility 99.</desc>
+		<icon>Vanishing_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<add_skill id='evade' x='99' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>526</id>
+		<name>Dragons are the Worst</name>
+		<desc>Dragons gain Bolt all Knight 5.</desc>
+		<icon>thunderbolt_64</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<add_skill id='strike' x='5' y='9' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>527</id>
+		<name>Invincible Armor</name>
+		<desc>All cards gain Armor 99.</desc>
+		<icon>99Armor_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<add_skill id='armored' x='99' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>528</id>
+		<name>Forgeborn</name>
+		<desc>All cards gain Scorch equal to 10% of their base Health.</desc>
+		<icon>Scorch_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<add_skill id='burn' mult='0.1' base='health' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>529</id>
+		<name>Null Enchantment</name>
+		<desc>All cards gain Nullify 99.</desc>
+		<icon>Nullify_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<add_skill id='nullify' x='99' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>530</id>
+		<name>Corrosive Husk</name>
+		<desc>All cards gain Corrosive 99.</desc>
+		<icon>Corrosive_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<add_skill id='corrosive' x='99' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>531</id>
+		<name>Master Warding Shield</name>
+		<desc>All cards gain Ward 99.</desc>
+		<icon>Ward99_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<add_skill id='absorb' x='99' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>532</id>
+		<name>Furious Soul</name>
+		<desc>All cards get Enraged equal to 20% of their base Health.</desc>
+		<icon>Enraged_BGE_100</icon>	<!-- actually _64 -->
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enrage' mult='.2' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>533</id>
+		<name>Powderkeg</name>
+		<desc>All cards gain Barrage equal to their base Attack.</desc>
+		<icon>Barrage_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<add_skill id='barrage' mult='1' base='attack' />
+			<skill id='displayEffect' trigger='onSkill' s='barrage' >
+				<projectile_effect>
+					<prefab>goblinBombProjectile</prefab>
+					<bundle_id>75</bundle_id>
+					<delay>0</delay>
+					<duration>.75</duration>
+					<translation>.75</translation>
+					<offset>0</offset>
+				</projectile_effect>
+				<target_effect>
+					<prefab>goblinBombTarget</prefab>
+					<bundle_id>75</bundle_id>
+					<delay>.75</delay>
+					<duration>1.25</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>534</id>
+		<name>Runepocalypse</name>
+		<desc>All bonuses from Runes are doubled.</desc>
+		<icon>Rune_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<rune_mult>2</rune_mult>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>535</id>
+		<name>Celerity Crash</name>
+		<desc>All cards are 1 Delay.</desc>
+		<icon>1Delay_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<stat cost='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>536</id>
+		<name>Conflux</name>
+		<desc>All creatures gain abilities based on faction! Aether have their Attack increased by 50% of the base, Chaos gain Vengeance equal to 50% of base Attack, and Wyld gain an additional 25% base Health.</desc>
+		<icon>Conflux_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<card_type>99</card_type>
+			<skill id='enlarge' mult='.5' all='1' y='1' />	<!-- mult is based on attack -->
+			<skill id='displayEffect' trigger='onSkill' y='99' s='enlarge' >
+				<target_effect>
+					<prefab>Empower_Target_Elemental</prefab>
+					<delay>.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+			<add_skill id='counter' mult='.5' base='attack' all='1' yy='2' />
+			<skill id='displayEffect' trigger='onSkill' y='2' s='counter' >
+				<actor_effect>
+					<prefab>elemental_BGE_chaos</prefab>
+					<bundle_id>96</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+			<scale_health base='health' mult='0.25' yy='3' />
+			<skill id='displayEffect' trigger='onPlay' y='3' >
+				<actor_effect>
+					<prefab>elemental_BGE_wyld</prefab>
+					<bundle_id>96</bundle_id>
+					<duration>1</duration>
+					<delay>0</delay>
+				</actor_effect>
+			</skill>
+		</effect>
+	</battleground>
+	<battleground>
+		<id>537</id>
+		<name>Molten Scales</name>
+		<desc>Emberhide skills deal 50% more damage.</desc>
+		<icon>Emberhide_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='counterburn' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>538</id>
+		<name>Vulcanos' Favor</name>
+		<desc>Scorchbreath skill deal 50% more damage.</desc>
+		<icon>Scorchbreath_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='scorchbreath' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>539</id>
+		<name>Legion's Call</name>
+		<desc>Legion skills are 50% more effective.</desc>
+		<icon>Legion_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='legion' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>540</id>
+		<name>Crippling Blows</name>
+		<desc>Weaken and Weaken All skills are 50% more effective.</desc>
+		<icon>Weaken_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='weaken' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>541</id>
+		<name>Tainted Strike</name>
+		<desc>Poison skills deal 50% more damage.</desc>
+		<icon>Poison_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='poison' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>542</id>
+		<name>Sundering Blades</name>
+		<desc>Pierce skills are 50% more effective.</desc>
+		<icon>Pierce_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='pierce' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>543</id>
+		<name>Mending Aura</name>
+		<desc>Heal and Heal All skills are 50% more effective.</desc>
+		<icon>Heal_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='heal' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>544</id>
+		<name>Regrowth Burst</name>
+		<desc>Regenerate skills are 50% more effective.</desc>
+		<icon>Regenerate_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='regenerate' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>545</id>
+		<name>Draining Soul</name>
+		<desc>Siphon skills are 50% more effective.</desc>
+		<icon>Siphon_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enhance' s='leech' mult='0.5' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>546</id>
+		<name>Common Revenge</name>
+		<desc>All Common cards have their Attack, Health, and all Skills multiplied by 5!</desc>
+		<icon>Common_BGE_64</icon>
+		<icon_bundle>110</icon_bundle>
+		<effect>
+			<skill id='enlarge' mult='4' all='1' z='1' />	<!-- mult is based on attack -->
+			<scale_health base='health' mult='4' rarity='1' />
+
+			<skill id='enhance' s='armored' z='1' mult='4' all='1' />
+			<skill id='enhance' s='counter' z='1' mult='4' all='1' />
+			<skill id='enhance' s='evade' z='1' mult='4' all='1' />
+			<skill id='enhance' s='leech' z='1' mult='4' all='1' />
+			<skill id='enhance' s='pierce' z='1' mult='4' all='1' />
+			<skill id='enhance' s='burn' z='1' mult='4' all='1' />
+			<skill id='enhance' s='poison' z='1' mult='4' all='1' />
+			<skill id='enhance' s='heal' z='1' mult='4' all='1' />
+			<skill id='enhance' s='strike' z='1' mult='4' all='1' />
+			<skill id='enhance' s='weaken' z='1' mult='4' all='1' />
+			<skill id='enhance' s='protect' z='1' mult='4' all='1' />
+			<skill id='enhance' s='rally' z='1' mult='4' all='1' />
+			<skill id='enhance' s='berserk' z='1' mult='4' all='1' />
+			<skill id='enhance' s='absorb' z='1' mult='4' all='1' />
+			<skill id='enhance' s='counterburn' z='1' mult='4' all='1' />
+		</effect>
+	</battleground>
+
+	
+	<!-- ============================= -->
+	<!-- ==== 1001+: Personal BGE ==== -->
+	<!-- ============================= -->
+	<battleground>
+		<id>1001</id>
+		<name>Primal Mending</name>
+		<desc>Your creatures get healed for 2 every turn in battle.</desc>
+    	<icon>healTotem_BGE_64</icon>
+		<icon_bundle>73</icon_bundle>
+		<effect>
+			<skill id='heal' x='2' all='1' />
+		</effect>
+	</battleground>
+	<battleground>
+		<id>1002</id>
+		<name>Personal Frog Buff</name>
+		<desc>All ally Frogs gain the Protection of the Watcher, reducing damage taken by 2.</desc>
+		<web_picture>filter_frog_64.png</web_picture>
+		<effect>
+			<skill id='protect' x='2' all='1' y='4' />
+		</effect>
+	</battleground>
+	
+	
+	<!-- ================================== -->
+	<!-- ==== 2001+: Enemy Scaling BGE ==== -->
+	<!-- ================================== -->
+	<battleground>
+		<id>2001</id>
+		<name>Scylla's Presence</name>
+		<desc>Scylla empowers her minions, increasing their stats with each Mastery level!</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.05' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2002</id>
+		<name>Riptide Nightsong</name>
+		<desc>Enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2003</id>
+		<name>Riptide Nightsong</name>
+		<desc>Enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.15' mult='.0025' /> 
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2004</id>
+		<name>Riptide Nightsong</name>
+		<desc>Enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.05' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2005</id>
+		<name>Anthem of the Tenacious</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2006</id>
+		<name>Elegy of a Hero</name>
+		<desc>Dyrnwyn's Spirit fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.4' mult='.016' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2007</id>
+		<name>Requiem of the Relentless</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<web_picture>filter_undead_64.png</web_picture>
+		<icon>filter_undead_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.13' mult='.0025' /> 
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2008</id>
+		<name>Requiem of the Relentless</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<web_picture>filter_undead_64.png</web_picture>
+		<icon>filter_undead_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.04' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2009</id>
+		<name>Developer Hacks</name>
+		<desc>Gets stronger every level. Yeah it's not fair. Not sorry.</desc>
+		<icon>devtools_128</icon>
+		<icon_bundle>52</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>6</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.05' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2010</id>
+		<name>Harmonious Sphere Chorus</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<web_picture>filter_dragon_64.png</web_picture>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2011</id>
+		<name>Harmonious World Refrain</name>
+		<desc>Bluefire, Void Master fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<web_picture>filter_dragon_64.png</web_picture>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2012</id>
+		<name>Harmonious Sphere Chorus</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<web_picture>filter_dragon_64.png</web_picture>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.13' mult='.0025' /> 
+			<!-- <scale_attributes base_mult='.01' mult='.025' /> -->
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2013</id>
+		<name>Harmonious Sphere Chorus</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<web_picture>filter_dragon_64.png</web_picture>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.04' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2014</id>
+		<name>Six-Stanza Sonata</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_insect_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Mythic Node Scaling -->
+	
+	<battleground>
+		<id>2015</id>
+		<name>Dirge of the World</name>
+		<desc>Bluefire, Mythic Master fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<web_picture>filter_dragon_64.png</web_picture>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>7</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 4 Boss -->
+	
+	<battleground>
+		<id>2016</id>
+		<name>Buzzsaw Aphidsong</name>
+		<desc>The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_insect_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 4 weeks 5-8 -->
+	
+	<battleground>
+		<id>2017</id>
+		<name>Six-Stanza Sonata</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_insect_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' /> 
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2018</id>
+		<name>Firecracker Tango</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_goblin_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.03' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 5 -->
+	
+	<battleground>
+		<id>2019</id>
+		<name>Coralflow Ballad</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+		
+	<!-- Campaign Event 5 Boss -->
+	
+	<battleground>
+		<id>2020</id>
+		<name>Blazing Tidal Etude</name>
+		<desc>Xerkahn, the Avenger fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.3' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 5 weeks 5-8 -->
+	
+	<battleground>
+		<id>2021</id>
+		<name>Coralflow Ballad</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2022</id>
+		<name>Coralflow Ballad</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.03' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 6 -->
+	
+	<battleground>
+		<id>2023</id>
+		<name>Ion-pitched Chiptune</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_mech_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 6 Boss -->
+	
+	<battleground>
+		<id>2024</id>
+		<name>Gearweight Metal</name>
+		<desc>Fireshard's Giant fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_mech_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.25' mult='.03' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 6 weeks 5-8 -->
+	
+	<battleground>
+		<id>2025</id>
+		<name>Ion-pitched Chiptune</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_mech_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2026</id>
+		<name>Ion-pitched Chiptune</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_mech_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.03' />
+		</effect>
+	</battleground>
+	
+	<!-- Mythic Node Scaling Viracocha -->
+	
+	<battleground>
+		<id>2027</id>
+		<name>Rhythm of the Soul</name>
+		<desc>Viracocha, Titan Aspirer fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_mech_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>7</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 7 -->
+	
+	<battleground>
+		<id>2028</id>
+		<name>Crimsonwing Anthem</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_avian_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 7 Boss -->
+	
+	<battleground>
+		<id>2029</id>
+		<name>Crimsondrip Lullaby</name>
+		<desc>Hero's Blessed, Yakov fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_avian_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.03' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 7 -->
+	
+		
+	<battleground>
+		<id>2030</id>
+		<name>Crimsonwing Anthem</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_avian_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+	
+		
+	<battleground>
+		<id>2031</id>
+		<name>Crimsonwing Anthem</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_avian_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.05' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 8 -->
+	
+	<battleground>
+		<id>2032</id>
+		<name>Crystalsky Hymn</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 8 Boss -->
+	
+	<battleground>
+		<id>2033</id>
+		<name>Crimsondrop Lullaby</name>
+		<desc>Razi, Whisper Worshipper fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.03' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 8 -->
+	
+	<battleground>
+		<id>2034</id>
+		<name>Crystalsky Hymn</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2035</id>
+		<name>Crystalsky Hymn</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 9 -->
+	
+	<battleground>
+		<id>2036</id>
+		<name>Metalschema Samba</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_goblin_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 9 Boss -->
+	
+	<battleground>
+		<id>2037</id>
+		<name>Arbitrator Sing-Along</name>
+		<desc>Boldur, the Bravest fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_goblin_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.3' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2038</id>
+		<name>Metalschema Samba</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_goblin_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2039</id>
+		<name>Metalschema Samba</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_goblin_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 10 -->
+	
+	<battleground>
+		<id>2040</id>
+		<name>Streaming Amnesic Hula</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 10 Boss Storm Lord Father -->
+	
+	<battleground>
+		<id>2041</id>
+		<name>Tumultuous Rain Dance</name>
+		<desc>Typheous, Ship Devourer fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.25' mult='.01' />
+		</effect>
+	</battleground>
+		
+	<battleground>
+		<id>2042</id>
+		<name>Streaming Amnesic Hula</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>2043</id>
+		<name>Streaming Amnesic Hula</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 11 -->
+		
+	<battleground>
+		<id>2044</id>
+		<name>Sunrisen Divertimento</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_frog_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 11 Dream Awakened -->
+	
+	<battleground>
+		<id>2045</id>
+		<name>Prelude of Light</name>
+		<desc>Kachina, Transcended fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_frog_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.25' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 11 -->
+	
+	<battleground>
+		<id>2046</id>
+		<name>Sunrisen Divertimento</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_frog_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+		
+	<battleground>
+		<id>2047</id>
+		<name>Sunrisen Divertimento</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_frog_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 12 -->
+	
+	<battleground>
+		<id>2048</id>
+		<name>Shattered Rifthowl</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_elementals_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Champion Boss Tanit -->
+	
+	<battleground>
+		<id>2049</id>
+		<name>Harmonious Crimson Litany</name>
+		<desc>Tanit, First Dreamer fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_avian_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>7</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+		
+	<!-- Campaign Event 12 Rifthowl -->
+	
+	<battleground>
+		<id>2050</id>
+		<name>Fracturing Dirge</name>
+		<desc>Agonized Amarok fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_elementals_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.3' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 12 weeks 5-8 -->
+	
+	<battleground>
+		<id>2051</id>
+		<name>Shattered Rifthowl</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_elementals_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+		
+	<battleground>
+		<id>2052</id>
+		<name>Shattered Rifthowl</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_elementals_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 13 weeks 1-4 -->
+	
+	<battleground>
+		<id>2053</id>
+		<name>Burning Bolero</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 13 Boss A Promise Left Behind -->
+	
+	<battleground>
+		<id>2054</id>
+		<name>Searing Memoria</name>
+		<desc>Teroxis the Steadfast fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.3' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 13 weeks 5-8 -->
+	
+	<battleground>
+		<id>2055</id>
+		<name>Burning Bolero</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+		
+	<battleground>
+		<id>2056</id>
+		<name>Burning Bolero</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_dragon_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 14 -->
+	
+	<battleground>
+		<id>2057</id>
+		<name>Celestial Duet</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 14 Boss Schism -->
+	
+	<battleground>
+		<id>2058</id>
+		<name>Empty Etude</name>
+		<desc>Fallen Gladiator fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.3' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 14 weeks 5-8 -->
+	
+	<battleground>
+		<id>2059</id>
+		<name>Celestial Duet</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+		
+	<battleground>
+		<id>2060</id>
+		<name>Celestial Duet</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_angel2_64</icon>
+		<icon_bundle>87</icon_bundle>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 15 -->
+
+	<battleground>
+		<id>2061</id>
+		<name>Melancholy Melody</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 15 boss A Brighter Future -->
+	
+	<battleground>
+		<id>2062</id>
+		<name>Sea's Serenade</name>
+		<desc>Corrupted Merman fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.3' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 15 weeks 5-8 -->
+	
+	<battleground>
+		<id>2063</id>
+		<name>Melancholy Melody</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.1' mult='.01' />
+		</effect>
+	</battleground>
+		
+	<battleground>
+		<id>2064</id>
+		<name>Melancholy Melody</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_seafolk_64</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.2' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 16 -->
+
+	<battleground>
+		<id>2065</id>
+		<name>Rift's Chorus</name>
+		<desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+		<icon>filter_insect_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>5</starting_level>		<!-- Starting Mastery Level -->
+		<max_level>7</max_level>        <!-- Max Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.008' mult='.0025' />
+		</effect>
+	</battleground>
+	
+	<!-- Campaign Event 16 Boss Node-->
+	
+	<battleground>
+		<id>2066</id>
+		<name>Rift's Choir</name>
+		<desc>Agatha, Forgettable Elder fights harder with each passing Mastery level, increasing cards' stats!</desc>
+		<icon>filter_insect_64.png</icon>
+		<enemy_only>1</enemy_only>
+		<scale_with_level>1</scale_with_level>	<!-- Boolean -->
+		<starting_level>0</starting_level>		<!-- Starting Mastery Level -->
+		<effect>
+			<scale_attributes base_mult='.3' mult='.01' />
+		</effect>
+	</battleground>
+	
+	<!-- ==================== -->
+	<!-- ==== Arena BGEs ==== -->
+	<!-- ==================== -->
+	<battleground>
+		<id>5001</id>
+		<name>The Arena</name>
+		<desc>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</desc>
+		<icon>arenaBGE_64.png</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<on_play first_play='1' attacker='1'>
+				<add_skill id='slow' x='2' />
+			</on_play>
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>5002</id>
+		<name>The Arena</name>
+		<desc>In Arena Battles, the player who goes first has one additional Delay added to the first two cards they play in a battle.</desc>
+		<icon>arenaBGE_64.png</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<on_play index='1' attacker='1'>
+				<add_skill id='slow' x='1' />
+			</on_play>
+			<on_play index='2' attacker='1'>
+				<add_skill id='slow' x='1' />
+			</on_play>
+		</effect>
+	</battleground>
+	
+	<battleground>
+		<id>5003</id>
+		<name>The Arena</name>
+		<desc>In Arena Battles, the player who goes first has one Delay added to the first card they play and the player who goes second has one Delay removed from the first card they play.</desc>
+		<icon>arenaBGE_64.png</icon>
+		<icon_bundle>31</icon_bundle>
+		<effect>
+			<on_play first_play='1' attacker='1'>
+				<add_skill id='slow' x='1' />
+			</on_play>
+			<on_play first_play='1' defender='1'>
+				<add_skill id='haste' x='1' />
+			</on_play>
+		</effect>
+	</battleground>
+	
+	<!-- ====================== -->
+	<!-- ==== Special BGEs ==== -->
+	<!-- ====================== -->
+	
+	<battleground>
+		<id>6001</id>
+		<name>Global VFX</name>
+		<effect>
+			<skill id='displayEffect' trigger='onSkill' s='counterburn' >
+				<target_effect>
+					<prefab>FireVengence_Reverse</prefab>
+					<prefab_enemy>FireVengence</prefab_enemy>
+					<bundle_id>69</bundle_id>
+					<delay>0</delay>
+					<duration>2</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill>
+		</effect>
+	</battleground>
 </root>
