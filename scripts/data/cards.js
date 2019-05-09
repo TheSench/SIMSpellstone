@@ -33624,7 +33624,7 @@ var CARDS = {
 				"x": 2
 			},
 			{
-				"id": "berserk",
+				"id": "devour",
 				"x": 1
 			}
 		],
@@ -33652,7 +33652,7 @@ var CARDS = {
 						"x": 2
 					},
 					{
-						"id": "berserk",
+						"id": "devour",
 						"x": 2
 					}
 				]
@@ -33676,7 +33676,7 @@ var CARDS = {
 				"x": 2
 			},
 			{
-				"id": "berserk",
+				"id": "devour",
 				"x": 2
 			},
 			{
@@ -33701,7 +33701,7 @@ var CARDS = {
 						"x": 2
 					},
 					{
-						"id": "berserk",
+						"id": "devour",
 						"x": 2
 					},
 					{
@@ -33721,7 +33721,7 @@ var CARDS = {
 						"x": 2
 					},
 					{
-						"id": "berserk",
+						"id": "devour",
 						"x": 2
 					},
 					{
@@ -33738,7 +33738,7 @@ var CARDS = {
 						"x": 2
 					},
 					{
-						"id": "berserk",
+						"id": "devour",
 						"x": 2
 					},
 					{
@@ -65828,7 +65828,7 @@ var CARDS = {
 	"5606": {
 		"attack": 7,
 		"card_type": "2",
-		"cost": 31,
+		"cost": 1,
 		"health": 18,
 		"id": "5606",
 		"maxLevel": 10,
