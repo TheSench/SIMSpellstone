@@ -22716,105 +22716,94 @@ var CARDS = {
 	},
 	"424": {
 		"card_type": "1",
-		"desc": "I was not the one to start the war, but I will be the one to end it.",
-		"health": 95,
+		"health": 90,
 		"id": "424",
 		"maxLevel": 6,
-		"name": "Batara, Blood Sword",
+		"name": "Batara, Blood Reprisal",
 		"picture": "portrait_angel_demon_samurai",
 		"rarity": 4,
 		"set": "9999",
 		"skill": [
 			{
-				"c": 5,
+				"all": "1",
 				"id": "imbue",
-				"s": "flurry"
+				"s": "absorb",
+				"x": 10
 			},
 			{
-				"c": 5,
-				"id": "rally",
-				"x": 28
+				"id": "enhance",
+				"s": "backlash",
+				"x": 35
 			},
 			{
-				"id": "mark",
-				"x": 5
+				"id": "enfeeble",
+				"x": 8
 			}
 		],
 		"sub_type": [],
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"skill": [
-					{
-						"c": 5,
-						"id": "imbue",
-						"s": "flurry"
-					},
-					{
-						"c": 5,
-						"id": "rally",
-						"x": 30
-					},
-					{
-						"id": "mark",
-						"x": 5
-					}
-				]
+				"health": 91,
+				"skill": []
 			},
 			"3": {
-				"health": 96,
+				"health": 93,
 				"skill": [
 					{
-						"c": 4,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "absorb",
+						"x": 10
 					},
 					{
-						"c": 4,
-						"id": "rally",
-						"x": 32
+						"id": "enhance",
+						"s": "backlash",
+						"x": 36
 					},
 					{
-						"id": "mark",
-						"x": 6
+						"id": "enfeeble",
+						"x": 8
 					}
 				]
 			},
 			"4": {
-				"health": 97,
+				"health": 95,
 				"skill": [
 					{
-						"c": 4,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "absorb",
+						"x": 11
 					},
 					{
-						"c": 4,
-						"id": "rally",
+						"id": "enhance",
+						"s": "backlash",
 						"x": 38
 					},
 					{
-						"id": "mark",
-						"x": 6
+						"id": "enfeeble",
+						"x": 9
 					}
 				]
 			},
 			"5": {
-				"health": 98,
+				"health": 97,
 				"skill": [
 					{
-						"c": 4,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "absorb",
+						"x": 11
 					},
 					{
-						"c": 4,
-						"id": "rally",
-						"x": 44
+						"id": "enhance",
+						"s": "backlash",
+						"x": 39
 					},
 					{
-						"id": "mark",
-						"x": 7
+						"id": "enfeeble",
+						"x": 9
 					}
 				]
 			},
@@ -22822,18 +22811,19 @@ var CARDS = {
 				"health": 99,
 				"skill": [
 					{
-						"c": 4,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "absorb",
+						"x": 12
 					},
 					{
-						"c": 4,
-						"id": "rally",
-						"x": 50
+						"id": "enhance",
+						"s": "backlash",
+						"x": 40
 					},
 					{
-						"id": "mark",
-						"x": 7
+						"id": "enfeeble",
+						"x": 10
 					}
 				]
 			}
@@ -23653,7 +23643,7 @@ var CARDS = {
 		"health": 75,
 		"id": "434",
 		"maxLevel": 6,
-		"name": "Agatha, Forgettable Elder",
+		"name": "Forgettable Elder Agatha",
 		"picture": "portrait_insect_sage",
 		"rarity": 4,
 		"set": "9999",
@@ -23661,16 +23651,16 @@ var CARDS = {
 			{
 				"id": "imbue",
 				"s": "berserk",
-				"x": 1
+				"x": 3
 			},
 			{
 				"id": "enhance",
 				"s": "armored",
-				"x": 1
+				"x": 2
 			},
 			{
 				"id": "protect",
-				"x": 3
+				"x": 5
 			}
 		],
 		"sub_type": [],
@@ -23682,16 +23672,16 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "berserk",
-						"x": 1
+						"x": 3
 					},
 					{
 						"id": "enhance",
 						"s": "armored",
-						"x": 1
+						"x": 3
 					},
 					{
 						"id": "protect",
-						"x": 4
+						"x": 6
 					}
 				]
 			},
@@ -23701,45 +23691,7 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "berserk",
-						"x": 2
-					},
-					{
-						"id": "enhance",
-						"s": "armored",
-						"x": 2
-					},
-					{
-						"id": "protect",
-						"x": 5
-					}
-				]
-			},
-			"4": {
-				"health": 89,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "berserk",
-						"x": 2
-					},
-					{
-						"id": "enhance",
-						"s": "armored",
-						"x": 2
-					},
-					{
-						"id": "protect",
-						"x": 6
-					}
-				]
-			},
-			"5": {
-				"health": 94,
-				"skill": [
-					{
-						"id": "imbue",
-						"s": "berserk",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "enhance",
@@ -23749,6 +23701,44 @@ var CARDS = {
 					{
 						"id": "protect",
 						"x": 7
+					}
+				]
+			},
+			"4": {
+				"health": 89,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 4
+					},
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"health": 94,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 4
+					},
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 4
+					},
+					{
+						"id": "protect",
+						"x": 8
 					}
 				]
 			},
@@ -23768,6 +23758,131 @@ var CARDS = {
 					{
 						"id": "protect",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"435": {
+		"card_type": "1",
+		"desc": "The Ebonclaw are sworn both to silence and in silencing.",
+		"health": 95,
+		"id": "435",
+		"maxLevel": 6,
+		"name": "Ebonclaw, Silencer",
+		"picture": "portrait_darksword",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"c": 5,
+				"id": "imbue",
+				"s": "flurry"
+			},
+			{
+				"c": 5,
+				"id": "rally",
+				"x": 28
+			},
+			{
+				"id": "mark",
+				"x": 5
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"c": 5,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"c": 5,
+						"id": "rally",
+						"x": 30
+					},
+					{
+						"id": "mark",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 96,
+				"skill": [
+					{
+						"c": 4,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"c": 4,
+						"id": "rally",
+						"x": 32
+					},
+					{
+						"id": "mark",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 97,
+				"skill": [
+					{
+						"c": 4,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"c": 4,
+						"id": "rally",
+						"x": 38
+					},
+					{
+						"id": "mark",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"health": 98,
+				"skill": [
+					{
+						"c": 4,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"c": 4,
+						"id": "rally",
+						"x": 44
+					},
+					{
+						"id": "mark",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"c": 4,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"c": 4,
+						"id": "rally",
+						"x": 50
+					},
+					{
+						"id": "mark",
+						"x": 7
 					}
 				]
 			}
@@ -65710,6 +65825,187 @@ var CARDS = {
 			}
 		}
 	},
+	"5606": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 31,
+		"health": 18,
+		"id": "5606",
+		"maxLevel": 10,
+		"name": "Volvel, Golden Pride",
+		"picture": "Insect_Angel_Scythe_Judgement_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2
+			},
+			{
+				"id": "daze",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"health": 19,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"7": {
+				"attack": 8,
+				"health": 21,
+				"skill": []
+			},
+			"8": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"9": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"10": {
+				"attack": 9,
+				"health": 23,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"6000": {
 		"attack": 4,
 		"card_type": "2",
@@ -83026,6 +83322,87 @@ var CARDS = {
 						"id": "enrage",
 						"x": 3,
 						"y": "13"
+					}
+				]
+			}
+		}
+	},
+	"6230": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1557766800000",
+		"id": "6230",
+		"maxLevel": 6,
+		"name": "Emberdeath Beetle",
+		"picture": "Beetle_Stampede_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 10,
+				"skill": []
+			},
+			"6": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
 					}
 				]
 			}
@@ -117696,6 +118073,224 @@ var CARDS = {
 					{
 						"c": 3,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"8134": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 33,
+		"id": "8134",
+		"maxLevel": 6,
+		"name": "Servant in Silenced Death",
+		"picture": "Skeleton_Millipede_A",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"13",
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"health": 36,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 40,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			},
+			"4": {
+				"attack": 14,
+				"health": 44,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 11
+					}
+				]
+			},
+			"5": {
+				"attack": 15,
+				"health": 48,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 12
+					}
+				]
+			},
+			"6": {
+				"attack": 17,
+				"health": 52,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 14
+					}
+				]
+			}
+		}
+	},
+	"8135": {
+		"attack": 1,
+		"card_type": "2",
+		"cost": 4,
+		"health": 48,
+		"id": "8135",
+		"maxLevel": 6,
+		"name": "Champion of Prisoners",
+		"picture": "Chariot_C",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 13
+			},
+			{
+				"id": "counter",
+				"x": 12
+			},
+			{
+				"id": "leech",
+				"x": 10
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 2,
+				"health": 50,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 14
+					},
+					{
+						"id": "counter",
+						"x": 12
+					},
+					{
+						"id": "leech",
+						"x": 10
+					}
+				]
+			},
+			"3": {
+				"attack": 3,
+				"health": 52,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 14
+					},
+					{
+						"id": "counter",
+						"x": 13
+					},
+					{
+						"id": "leech",
+						"x": 10
+					}
+				]
+			},
+			"4": {
+				"attack": 4,
+				"health": 55,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 14
+					},
+					{
+						"id": "counter",
+						"x": 13
+					},
+					{
+						"id": "leech",
+						"x": 11
+					}
+				]
+			},
+			"5": {
+				"attack": 5,
+				"health": 57,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 15
+					},
+					{
+						"id": "counter",
+						"x": 14
+					},
+					{
+						"id": "leech",
+						"x": 11
+					}
+				]
+			},
+			"6": {
+				"health": 60,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 15
+					},
+					{
+						"id": "counter",
+						"x": 14
+					},
+					{
+						"id": "leech",
+						"x": 12
 					}
 				]
 			}
@@ -172714,6 +173309,87 @@ var CARDS = {
 						"id": "enrage",
 						"x": 4,
 						"y": "13"
+					}
+				]
+			}
+		}
+	},
+	"16230": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1557766800000",
+		"id": "16230",
+		"maxLevel": 6,
+		"name": "Emberdeath Tank",
+		"picture": "Beetle_Stampede_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 38,
+				"skill": []
+			},
+			"5": {
+				"attack": 11,
+				"health": 39,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 4
 					}
 				]
 			}
@@ -248818,6 +249494,101 @@ var CARDS = {
 						"id": "enrage",
 						"x": 5,
 						"y": "13"
+					}
+				]
+			}
+		}
+	},
+	"26230": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1557766800000",
+		"id": "26230",
+		"maxLevel": 6,
+		"name": "Emberdeath King",
+		"picture": "Beetle_Stampede_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 4
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 41,
+				"skill": []
+			},
+			"4": {
+				"attack": 12,
+				"health": 42,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 6
 					}
 				]
 			}

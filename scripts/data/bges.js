@@ -2429,7 +2429,7 @@ var BATTLEGROUNDS = {
 		"id": "2049",
 		"name": "Harmonious Crimson Litany",
 		"scale_with_level": "1",
-		"starting_level": "7"
+		"starting_level": "0"
 	},
 	"2050": {
 		"desc": "Agonized Amarok fights harder with each passing Mastery level, increasing cards' stats!",
@@ -2702,6 +2702,38 @@ var BATTLEGROUNDS = {
 		"name": "Rift's Choir",
 		"scale_with_level": "1",
 		"starting_level": "0"
+	},
+	"2067": {
+		"desc": "Batara, Blood Reprisal fights harder with each passing Mastery level, increasing cards' stats!",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2067",
+		"name": "Harmonious Crimson Litany",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2068": {
+		"desc": "Ebonclaw, Silencer fights harder with each passing Mastery level, increasing cards' stats!",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2068",
+		"name": "Harmonious Crimson Litany",
+		"scale_with_level": "1",
+		"starting_level": "7"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
