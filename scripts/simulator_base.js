@@ -4,7 +4,7 @@ var SIMULATOR = {};
 
 	// Play card
 	function play_card(card, p, turn, quiet) {
-		var field_p_assaults = field[p]['assaults'];
+		var field_p_assaults = field[p].assaults;
 
 		// Not a valid card
 		if (!card.id) return 0;
@@ -353,14 +353,14 @@ var SIMULATOR = {};
 		},
 		protect: function (src_card, skill, additional, additionalDebug, onlyOnDelay) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 
 			var protect = skill.x;
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -428,7 +428,7 @@ var SIMULATOR = {};
 
 			var wingward = skill.x;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			// Targets self and leftmost ally
 			var targets = [];
@@ -487,7 +487,7 @@ var SIMULATOR = {};
 			var heal = skill.x;
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -538,7 +538,7 @@ var SIMULATOR = {};
 				}
 
 				var missingHealth = target.health - target.health_left;
-				if (heal_amt > missingHealth && !invigorate) {
+				if (heal_amt > missingHealth) {
 					heal_amt = missingHealth;
 				}
 				target['health_left'] += heal_amt;
@@ -858,7 +858,7 @@ var SIMULATOR = {};
 
 			var targets = [];
 
-			var i = src_card['key'] - 1;
+			var i = src_card.key - 1;
 			var end = i + 2;
 			for (; i <= end; i++) {
 				var target = field_x_assaults[i];
@@ -911,7 +911,7 @@ var SIMULATOR = {};
 
 		heartseeker: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var o = get_o(src_card);
 
@@ -938,7 +938,7 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		enfeeble: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 			var o = get_o(src_card);
@@ -1002,7 +1002,7 @@ var SIMULATOR = {};
 		},
 		weaken: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var o;
 			switch (skill.id) {
@@ -1082,7 +1082,7 @@ var SIMULATOR = {};
 		// - Cannot be nullified
 		enlarge: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 
@@ -1091,7 +1091,7 @@ var SIMULATOR = {};
 			rally += enhanced;
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1139,14 +1139,14 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		rally: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 
 			var rally = skill.x;
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1204,26 +1204,60 @@ var SIMULATOR = {};
 		// - Targets allied adjacent unjammed, active assaults
 		// - Can be enhanced?
 		radiance: function (src_card, skill) {
-			return earlyActivationSkills.legion(src_card, skill, function applyBarrier(target, amount) {
-				var protectAmount = Math.ceil(amount * 0.5);
-				target.protected += protectAmount;
-				if (debug) {
-					echo += ' and protecting it by ' + protectAmount;
-				}
-			});
-		},
-		legion: function (src_card, skill, additionalEffect) {
 
 			var p = get_p(src_card);
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
-			var target_key = src_card['key'] - 1;
+			var target_key = src_card.key - 1;
+			var len = target_key + 2;
+			if (target_key < 0) target_key += 2;
+
+			var affected = 0;
+
+			while (target_key <= len) {
+				// Check left
+				var target = field_p_assaults[target_key];
+				if (target && target.isInFaction(faction)) {
+					// Check Nullify
+					if (target.nullified) {
+						target.nullified--;
+						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
+					} else {
+						affected++;
+						target.attack_rally += rally;
+						var protectAmount = Math.ceil(rally * 0.5);
+						target.protected += protectAmount;
+						if (debug) {
+							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+							echo += debug_name(src_card) + ' activates ' + skill.id +
+								', empowering ' + debug_name(target) + ' by ' + rally +
+								' and protecting it by ' + protectAmount + '<br>';
+						}
+					}
+				}
+				target_key += 2;
+			}
+
+			return affected;
+		},
+		legion: function (src_card, skill) {
+
+			var p = get_p(src_card);
+			var field_p_assaults = field[p].assaults;
+
+			var rally = skill.x;
+			var enhanced = getEnhancement(src_card, skill.id, rally);
+			rally += enhanced;
+
+			var faction = skill.y;
+
+			var target_key = src_card.key - 1;
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
@@ -1242,11 +1276,7 @@ var SIMULATOR = {};
 						target.attack_rally += rally;
 						if (debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-							echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' by ' + rally;
-						}
-						additionalEffect && additionalEffect(target, rally);
-						if (debug) {
-							echo += '<br>';
+							echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' by ' + rally + '<br>';
 						}
 					}
 				}
@@ -1262,17 +1292,17 @@ var SIMULATOR = {};
 		fervor: function (src_card, skill) {
 
 			var p = get_p(src_card);
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var fervorAmount = 0;
 
-			var target_key = src_card['key'] - 1;
+			var target_key = src_card.key - 1;
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
@@ -1374,7 +1404,7 @@ var SIMULATOR = {};
 		// - Target must have specific "enhanceable skill"
 		enhance: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 			var o = get_o(src_card);
@@ -1385,7 +1415,7 @@ var SIMULATOR = {};
 			var mult = skill.mult;
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 			var require_active_turn = requiresActiveTurn(s);
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1447,7 +1477,7 @@ var SIMULATOR = {};
 			var enrage = skill.x;
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1504,7 +1534,7 @@ var SIMULATOR = {};
 		// - Target must have specific "enhanceable skill" ("all" versions aren't counted)
 		imbue: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 			var o = get_o(src_card);
@@ -1514,7 +1544,7 @@ var SIMULATOR = {};
 			var s = skill['s'];
 			var all = skill.all;
 
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 			var require_active_turn = requiresActiveTurn(s);
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1570,7 +1600,7 @@ var SIMULATOR = {};
 
 		mark: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 			var o = get_o(src_card);
@@ -1626,7 +1656,7 @@ var SIMULATOR = {};
 
 		snaretongue: function (src_card, skill) {
 
-			var faction = skill['y'];
+			var faction = skill.y;
 
 			var p = get_p(src_card);
 			var o = get_o(src_card);
@@ -1791,12 +1821,12 @@ var SIMULATOR = {};
 	var onAttackSkills = {
 		swarm: function (attacker, defender) {
 			var p = get_p(attacker);
-			var field_p_assaults = field[p]['assaults'];
+			var field_p_assaults = field[p].assaults;
 
 			var targets = [];
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
-				if (target.isAlive() && !target.isTower() && target !== attacker) {
+				if (target.isAlive() && target.isActive() && !target.isTower() && target !== attacker) {
 					var adjustedAttack = target.adjustedAttack();
 					if (!weakest || adjustedAttack < weakest) {
 						targets = [target];
