@@ -2402,13 +2402,19 @@ var SIMULATOR = {};
 
 	function getCardRanking(card) {
 		var cardID = card.id.toString();
-		// Each rarity level is worth 6 points
-		var rarity = parseInt(card.rarity) * 6;
-		// Each fusion is worth half of a rarity
-		var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0) * 3;
-		// Subtract a point for every missing upgrade level
-		var level = parseInt(card.level) - parseInt(card.maxLevel);
-
+		if(card.maxLevel < 10) {
+			// Each rarity level is worth 6 points
+			var rarity = parseInt(card.rarity) * 6;
+			// Each fusion is worth half of a rarity
+			var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0) * 3;
+			// Subtract a point for every missing upgrade level
+			var level = parseInt(card.level) - parseInt(card.maxLevel);
+		} else {
+			// Treat Champions as Rarity 7 w/ 2 fusions at 5 levels each
+			var rarity = parseInt(card.rarity) * 6;
+			var fusion = Math.ceil(card.level / 5) * 3;
+			var level = parseInt(card.level) % 5 - 5;
+		}
 		var ranking = rarity + fusion + level;
 
 		return ranking;
