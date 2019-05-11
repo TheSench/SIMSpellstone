@@ -228,7 +228,7 @@ var SIMULATOR = {};
 
 		if (dying.ondeath_triggered) return; // Check to make sure we don't trigger this twice
 
-		if(!dying.silected) {
+		if(!dying.silenced) {
 			var skills = dying.onDeathSkills;
 			var len = skills.length;
 			if (len === 0) return;
@@ -2649,7 +2649,7 @@ var SIMULATOR = {};
 			current_assault.silenced = false;
 
 			// Regenerate
-			if (current_assault.regenerate && current_assault.isDamaged() && !current_assault.silected) {
+			if (current_assault.regenerate && current_assault.isDamaged() && !current_assault.silenced) {
 
 				var regen_health = current_assault.regenerate;
 				var enhanced = getEnhancement(current_assault, 'regenerate', regen_health);
@@ -2799,8 +2799,8 @@ var SIMULATOR = {};
 		// Damage reduction
 		var protect = target.protected;
 		var shatter = false;
-		var armor = (target.silected ? 0 : target.armored);
-		var shrouded = (target.silected ? 0 : checkShroud(target));
+		var armor = (target.silenced ? 0 : target.armored);
+		var shrouded = (target.silenced ? 0 : checkShroud(target));
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debug) {
@@ -2890,7 +2890,7 @@ var SIMULATOR = {};
 		}
 
 		// Damage-dependent Status Inflictions
-		if (damage > 0 && target.isAssault() && target.isAlive() && !current_assault.silected) {
+		if (damage > 0 && target.isAssault() && target.isAlive() && !current_assault.silenced) {
 			// Poison
 			// - Target must have taken damage
 			// - Target must be an assault
@@ -2971,7 +2971,7 @@ var SIMULATOR = {};
 			// - Leecher must not be already dead
 			// - Leecher must not be at full health
 			// - Increases attack too during Invigorate battleground effect
-			if(!current_assault.silected) {
+			if(!current_assault.silenced) {
 				if (current_assault.leech && current_assault.isDamaged()) {
 
 					var leech_health = current_assault.leech;
@@ -2996,7 +2996,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			if(!target.silected) {
+			if(!target.silenced) {
 				// Counter
 				// - Target must have received some amount of damage
 				// - Attacker must not be already dead
@@ -3059,7 +3059,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			if(!current_assault.silected) {
+			if(!current_assault.silenced) {
 				// Berserk
 				// - Must have done some damage to an assault unit
 				if (current_assault.berserk) {
@@ -3106,7 +3106,7 @@ var SIMULATOR = {};
 
 		// Corrosion
 		// - Target must have received some amount of damage
-		if (target.corrosive) {
+		if (target.corrosive && !target.silenced) {
 			var corrosion = target.corrosive || 0;
 			var enhanced = getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
