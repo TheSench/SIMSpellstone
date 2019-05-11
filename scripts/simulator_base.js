@@ -2939,6 +2939,9 @@ var SIMULATOR = {};
 			// - Target must be an assault
 			if (current_assault.silence) {
 				target.silenced = true;
+				// Remove passive statuses for this turn
+				target.invisible = 0;
+				target.warded = 0;
 				if (debug) echo += debug_name(current_assault) + ' inflicts silence on ' + debug_name(target) + '<br>';
 			}
 
