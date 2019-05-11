@@ -4143,6 +4143,20 @@ var CAMPAIGNS = {
 			"1553"
 		],
 		"name": "Tinman's Change of Heart"
+	},
+	"3012": {
+		"battleground_id": "2049",
+		"id": "3012",
+		"items": {},
+		"location_id": "17",
+		"missions": [
+			"6075",
+			"6076",
+			"6077",
+			"6078"
+		],
+		"name": "A Miracle Awakens",
+		"side_mission": "1"
 	}
 };
 var MISSIONS = {
@@ -78754,7 +78768,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6075",
-		"name": "Mission 1"
+		"name": "Dream Advent"
 	},
 	"6076": {
 		"commander": {
@@ -78808,7 +78822,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6076",
-		"name": "Mission 2"
+		"name": "Idealist"
 	},
 	"6077": {
 		"commander": {
@@ -78862,7 +78876,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6077",
-		"name": "Mission 3"
+		"name": "Empty Words"
 	},
 	"6078": {
 		"commander": {
@@ -78916,7 +78930,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6078",
-		"name": "Mission 4"
+		"name": "Miracle"
 	},
 	"6079": {
 		"commander": {

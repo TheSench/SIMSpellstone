@@ -22728,12 +22728,12 @@ var CARDS = {
 				"all": "1",
 				"id": "imbue",
 				"s": "absorb",
-				"x": 10
+				"x": 23
 			},
 			{
 				"id": "enhance",
 				"s": "backlash",
-				"x": 35
+				"x": 42
 			},
 			{
 				"id": "enfeeble",
@@ -22754,12 +22754,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "absorb",
-						"x": 10
+						"x": 24
 					},
 					{
 						"id": "enhance",
 						"s": "backlash",
-						"x": 36
+						"x": 43
 					},
 					{
 						"id": "enfeeble",
@@ -22774,12 +22774,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "absorb",
-						"x": 11
+						"x": 24
 					},
 					{
 						"id": "enhance",
 						"s": "backlash",
-						"x": 38
+						"x": 43
 					},
 					{
 						"id": "enfeeble",
@@ -22794,12 +22794,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "absorb",
-						"x": 11
+						"x": 25
 					},
 					{
 						"id": "enhance",
 						"s": "backlash",
-						"x": 39
+						"x": 44
 					},
 					{
 						"id": "enfeeble",
@@ -22814,12 +22814,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "absorb",
-						"x": 12
+						"x": 25
 					},
 					{
 						"id": "enhance",
 						"s": "backlash",
-						"x": 40
+						"x": 44
 					},
 					{
 						"id": "enfeeble",
@@ -117227,7 +117227,7 @@ var CARDS = {
 		"sub_type": [
 			"5"
 		],
-		"type": "8",
+		"type": "1",
 		"upgrades": {
 			"2": {
 				"health": 49,
