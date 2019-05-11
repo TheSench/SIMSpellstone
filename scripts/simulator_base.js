@@ -227,16 +227,19 @@ var SIMULATOR = {};
 	function doOnDeathSkills(dying, killer) {
 
 		if (dying.ondeath_triggered) return; // Check to make sure we don't trigger this twice
-		var skills = dying.onDeathSkills;
-		var len = skills.length;
-		if (len == 0) return;
 
-		for (var i = 0; i < len; i++) {
-			var skill = skills[i];
-			onDeathSkills[skill.id](dying, killer, skill);
+		if(!dying.silected) {
+			var skills = dying.onDeathSkills;
+			var len = skills.length;
+			if (len === 0) return;
 
-			if (showAnimations) {
-				drawField(field, null, null, turn, dying);
+			for (var i = 0; i < len; i++) {
+				var skill = skills[i];
+				onDeathSkills[skill.id](dying, killer, skill);
+
+				if (showAnimations) {
+					drawField(field, null, null, turn, dying);
+				}
 			}
 		}
 
@@ -2410,10 +2413,9 @@ var SIMULATOR = {};
 			// Subtract a point for every missing upgrade level
 			var level = parseInt(card.level) - parseInt(card.maxLevel);
 		} else {
-			// Treat Champions as Rarity 7 w/ 2 fusions at 5 levels each
 			var rarity = parseInt(card.rarity) * 6;
-			var fusion = Math.ceil(card.level / 5) * 3;
-			var level = parseInt(card.level) % 5 - 5;
+			var fusion = 1;
+			var level = card.level;
 		}
 		var ranking = rarity + fusion + level;
 
@@ -2446,8 +2448,10 @@ var SIMULATOR = {};
 		// Set invisibile/ward/shrouded after enhance has had a chance to fire
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 			var current_assault = field_p_assaults[key];
-			setPassiveStatus(current_assault, 'evade', 'invisible');
-			setPassiveStatus(current_assault, 'absorb', 'warded');
+			if(!current_assault.silenced) {
+				setPassiveStatus(current_assault, 'evade', 'invisible');
+				setPassiveStatus(current_assault, 'absorb', 'warded');
+			}
 		}
 
 		// Do Unit Early Activation Skills
@@ -2647,7 +2651,7 @@ var SIMULATOR = {};
 			current_assault.silenced = false;
 
 			// Regenerate
-			if (current_assault.regenerate && current_assault.isDamaged()) {
+			if (current_assault.regenerate && current_assault.isDamaged() && !current_assault.silected) {
 
 				var regen_health = current_assault.regenerate;
 				var enhanced = getEnhancement(current_assault, 'regenerate', regen_health);
@@ -2797,8 +2801,8 @@ var SIMULATOR = {};
 		// Damage reduction
 		var protect = target.protected;
 		var shatter = false;
-		var armor = target.armored;
-		var shrouded = checkShroud(target);
+		var armor = (target.silected ? 0 : target.armored);
+		var shrouded = (target.silected ? 0 : checkShroud(target));
 		// Barrier is applied BEFORE Armor
 		if (protect) {
 			if (debug) {
@@ -2888,7 +2892,7 @@ var SIMULATOR = {};
 		}
 
 		// Damage-dependent Status Inflictions
-		if (damage > 0 && target.isAssault() && target.isAlive()) {
+		if (damage > 0 && target.isAssault() && target.isAlive() && !current_assault.silected) {
 			// Poison
 			// - Target must have taken damage
 			// - Target must be an assault
@@ -2966,128 +2970,134 @@ var SIMULATOR = {};
 			// - Leecher must not be already dead
 			// - Leecher must not be at full health
 			// - Increases attack too during Invigorate battleground effect
-			if (current_assault.leech && current_assault.isDamaged()) {
+			if(!current_assault.silected) {
+				if (current_assault.leech && current_assault.isDamaged()) {
 
-				var leech_health = current_assault.leech;
-				var enhanced = getEnhancement(current_assault, 'leech', leech_health);
-				leech_health += enhanced;
-				var healthMissing = current_assault.health - current_assault.health_left;
-				if (leech_health >= healthMissing) {
-					leech_health = healthMissing;
+					var leech_health = current_assault.leech;
+					var enhanced = getEnhancement(current_assault, 'leech', leech_health);
+					leech_health += enhanced;
+					var healthMissing = current_assault.health - current_assault.health_left;
+					if (leech_health >= healthMissing) {
+						leech_health = healthMissing;
+					}
+
+					current_assault.health_left += leech_health;
+					if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
 				}
 
-				current_assault.health_left += leech_health;
-				if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
-			}
+				if (current_assault.reinforce) {
+					var reinforce = current_assault.reinforce;
+					var enhanced = getEnhancement(current_assault, 'reinforce', reinforce);
+					reinforce += enhanced;
 
-			if (current_assault.reinforce) {
-				var reinforce = current_assault.reinforce;
-				var enhanced = getEnhancement(current_assault, 'reinforce', reinforce);
-				reinforce += enhanced;
-
-				current_assault.protected += reinforce;
-				if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
-			}
-
-			// Counter
-			// - Target must have received some amount of damage
-			// - Attacker must not be already dead
-			if (target.counter) {
-
-				var counterBase = 0 + target.counter;
-				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
-
-				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
-			}
-
-			// Counterburn
-			// - Target must have received some amount of damage
-			if (target.counterburn) {
-				var scorch = target.counterburn || 0;
-				var enhanced = getEnhancement(target, 'counterburn', scorch);
-				scorch += enhanced;
-				if (!current_assault.scorched) {
-					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
-				} else {
-					current_assault.scorched.amount += scorch;
-					current_assault.scorched.timer = 2;
-				}
-				if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
-			}
-
-			// Counterpoison
-			// - Target must have received some amount of damage
-			if (target.counterpoison) {
-				var poison = target.counterpoison || 0;
-				var enhanced = getEnhancement(target, 'counterpoison', poison);
-				poison += enhanced;
-
-				if (poison > current_assault.poisoned) {
-					current_assault.poisoned = poison;
-					if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+					current_assault.protected += reinforce;
+					if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
 				}
 			}
 
-			// Fury
-			// - Target must have received some amount of damage
-			if (target.fury) {
-				var furyBase = target.fury;
-				var furyEnhancement = getEnhancement(target, 'counter', furyBase);
+			if(!target.silected) {
+				// Counter
+				// - Target must have received some amount of damage
+				// - Attacker must not be already dead
+				if (target.counter) {
 
-				if (target.isAlive()) {
-					var fury = furyBase + furyEnhancement;
-					target.attack_berserk += fury;
-					if (debug) {
-						echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
+					var counterBase = 0 + target.counter;
+					var counterEnhancement = getEnhancement(target, 'counter', counterBase);
+
+					doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
+				}
+
+				// Counterburn
+				// - Target must have received some amount of damage
+				if (target.counterburn) {
+					var scorch = target.counterburn || 0;
+					var enhanced = getEnhancement(target, 'counterburn', scorch);
+					scorch += enhanced;
+					if (!current_assault.scorched) {
+						current_assault.scorched = { 'amount': scorch, 'timer': 2 };
+					} else {
+						current_assault.scorched.amount += scorch;
+						current_assault.scorched.timer = 2;
+					}
+					if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+				}
+
+				// Counterpoison
+				// - Target must have received some amount of damage
+				if (target.counterpoison) {
+					var poison = target.counterpoison || 0;
+					var enhanced = getEnhancement(target, 'counterpoison', poison);
+					poison += enhanced;
+
+					if (poison > current_assault.poisoned) {
+						current_assault.poisoned = poison;
+						if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
 					}
 				}
 
-				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
-			}
+				// Fury
+				// - Target must have received some amount of damage
+				if (target.fury) {
+					var furyBase = target.fury;
+					var furyEnhancement = getEnhancement(target, 'counter', furyBase);
 
-			if (target.enraged > 0) {
-				target.attack_berserk += target.enraged;
-				if (debug) echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
-			}
+					if (target.isAlive()) {
+						var fury = furyBase + furyEnhancement;
+						target.attack_berserk += fury;
+						if (debug) {
+							echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
+						}
+					}
 
-			// Berserk
-			// - Must have done some damage to an assault unit
-			if (current_assault.berserk) {
-
-				var berserk = current_assault.berserk;
-				var enhanced = getEnhancement(current_assault, 'berserk', berserk);
-				berserk += enhanced;
-
-				current_assault.attack_berserk += berserk;
-				if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
-			}
-
-			// Devour
-			// - Must have done some damage to an assault unit
-			if (current_assault.devour) {
-
-				var devour = current_assault.devour;
-				var enhanced = getEnhancement(current_assault, 'devour', devour);
-				devour += enhanced;
-
-				current_assault.attack_berserk += devour;
-
-				var healing = Math.min(devour, current_assault.health - current_assault.health_left);
-				if(healing) {
-					current_assault.health_left += healing;
+					doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
 				}
 
-				if (debug) {
-					echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
-					if(healing) echo += ' and healing ' + healing + ' health';
-					echo += '<br>';
+				if (target.enraged > 0) {
+					target.attack_berserk += target.enraged;
+					if (debug) echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
 				}
 			}
 
-			// Swarm
-			// - Must have done some damage to an assault unit
-			if (current_assault.swarm) {
-				onAttackSkills.swarm(current_assault, target);
+			if(!current_assault.silected) {
+				// Berserk
+				// - Must have done some damage to an assault unit
+				if (current_assault.berserk) {
+
+					var berserk = current_assault.berserk;
+					var enhanced = getEnhancement(current_assault, 'berserk', berserk);
+					berserk += enhanced;
+
+					current_assault.attack_berserk += berserk;
+					if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
+				}
+
+				// Devour
+				// - Must have done some damage to an assault unit
+				if (current_assault.devour) {
+
+					var devour = current_assault.devour;
+					var enhanced = getEnhancement(current_assault, 'devour', devour);
+					devour += enhanced;
+
+					current_assault.attack_berserk += devour;
+
+					var healing = Math.min(devour, current_assault.health - current_assault.health_left);
+					if(healing) {
+						current_assault.health_left += healing;
+					}
+
+					if (debug) {
+						echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
+						if(healing) echo += ' and healing ' + healing + ' health';
+						echo += '<br>';
+					}
+				}
+
+				// Swarm
+				// - Must have done some damage to an assault unit
+				if (current_assault.swarm) {
+					onAttackSkills.swarm(current_assault, target);
+				}
 			}
 		}
 
