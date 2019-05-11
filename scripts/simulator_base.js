@@ -2412,14 +2412,12 @@ var SIMULATOR = {};
 			var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0) * 3;
 			// Subtract a point for every missing upgrade level
 			var level = parseInt(card.level) - parseInt(card.maxLevel);
+			return rarity + fusion + level;
 		} else {
-			var rarity = parseInt(card.rarity) * 6;
-			var fusion = 1;
+			var rarity = parseInt(card.rarity) * 5;
 			var level = card.level;
+			return rarity + 5 + level;
 		}
-		var ranking = rarity + fusion + level;
-
-		return ranking;
 	}
 
 	function play_turn(p, o, field, turn) {
