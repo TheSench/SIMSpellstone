@@ -19283,8 +19283,7 @@ var CARDS = {
 		"set": "9999",
 		"skill": [
 			{
-				"id": "imbue",
-				"s": "strike",
+				"id": "strike",
 				"x": 1
 			},
 			{
@@ -19310,8 +19309,7 @@ var CARDS = {
 				"health": 52,
 				"skill": [
 					{
-						"id": "imbue",
-						"s": "strike",
+						"id": "strike",
 						"x": 2
 					},
 					{
@@ -19329,9 +19327,9 @@ var CARDS = {
 				"health": 62,
 				"skill": [
 					{
-						"id": "imbue",
-						"s": "strike",
-						"x": 3
+						"all": "1",
+						"id": "strike",
+						"x": 2
 					},
 					{
 						"id": "barrage",
@@ -19348,9 +19346,9 @@ var CARDS = {
 				"health": 72,
 				"skill": [
 					{
-						"id": "imbue",
-						"s": "strike",
-						"x": 4
+						"all": "1",
+						"id": "strike",
+						"x": 2
 					},
 					{
 						"id": "barrage",
@@ -19367,9 +19365,9 @@ var CARDS = {
 				"health": 82,
 				"skill": [
 					{
-						"id": "imbue",
-						"s": "strike",
-						"x": 5
+						"all": "1",
+						"id": "strike",
+						"x": 3
 					},
 					{
 						"id": "barrage",
@@ -19386,9 +19384,9 @@ var CARDS = {
 				"health": 92,
 				"skill": [
 					{
-						"id": "imbue",
-						"s": "strike",
-						"x": 6
+						"all": "1",
+						"id": "strike",
+						"x": 3
 					},
 					{
 						"id": "barrage",
@@ -22716,6 +22714,7 @@ var CARDS = {
 	},
 	"424": {
 		"card_type": "1",
+		"desc": "I was not the one who started the war, but I will be the one to end it.",
 		"health": 90,
 		"id": "424",
 		"maxLevel": 6,
@@ -22731,13 +22730,15 @@ var CARDS = {
 				"x": 23
 			},
 			{
+				"all": "1",
+				"id": "imbue",
+				"s": "poison",
+				"x": 10
+			},
+			{
 				"id": "enhance",
 				"s": "backlash",
 				"x": 42
-			},
-			{
-				"id": "enfeeble",
-				"x": 8
 			}
 		],
 		"sub_type": [],
@@ -22757,13 +22758,15 @@ var CARDS = {
 						"x": 24
 					},
 					{
+						"all": "1",
+						"id": "imbue",
+						"s": "poison",
+						"x": 10
+					},
+					{
 						"id": "enhance",
 						"s": "backlash",
 						"x": 43
-					},
-					{
-						"id": "enfeeble",
-						"x": 8
 					}
 				]
 			},
@@ -22777,13 +22780,15 @@ var CARDS = {
 						"x": 24
 					},
 					{
+						"all": "1",
+						"id": "imbue",
+						"s": "poison",
+						"x": 10
+					},
+					{
 						"id": "enhance",
 						"s": "backlash",
 						"x": 43
-					},
-					{
-						"id": "enfeeble",
-						"x": 9
 					}
 				]
 			},
@@ -22797,13 +22802,15 @@ var CARDS = {
 						"x": 25
 					},
 					{
+						"all": "1",
+						"id": "imbue",
+						"s": "poison",
+						"x": 10
+					},
+					{
 						"id": "enhance",
 						"s": "backlash",
 						"x": 44
-					},
-					{
-						"id": "enfeeble",
-						"x": 9
 					}
 				]
 			},
@@ -22817,13 +22824,15 @@ var CARDS = {
 						"x": 25
 					},
 					{
+						"all": "1",
+						"id": "imbue",
+						"s": "poison",
+						"x": 10
+					},
+					{
 						"id": "enhance",
 						"s": "backlash",
 						"x": 44
-					},
-					{
-						"id": "enfeeble",
-						"x": 10
 					}
 				]
 			}
@@ -64642,6 +64651,87 @@ var CARDS = {
 			}
 		}
 	},
+	"5233": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 30,
+		"hidden_until": "1558026000000",
+		"id": "5233",
+		"maxLevel": 6,
+		"name": "Buzzbolt",
+		"picture": "Insect_Lightning_Wasp_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "counter",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 31,
+				"skill": []
+			},
+			"3": {
+				"health": 32,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 33,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"5234": {
 		"attack": 10,
 		"card_type": "2",
@@ -102662,6 +102752,109 @@ var CARDS = {
 			}
 		}
 	},
+	"7233": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 11,
+		"hidden_until": "1558026000000",
+		"id": "7233",
+		"maxLevel": 6,
+		"name": "Arsenite Pest",
+		"picture": "Insect_Fish_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"id": "valor",
+				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"12",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 12,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 13,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -118096,7 +118289,7 @@ var CARDS = {
 			},
 			{
 				"id": "leech",
-				"x": 7
+				"x": 17
 			}
 		],
 		"sub_type": [
@@ -118115,7 +118308,7 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
-						"x": 8
+						"x": 18
 					}
 				]
 			},
@@ -118129,7 +118322,7 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
-						"x": 9
+						"x": 18
 					}
 				]
 			},
@@ -118143,7 +118336,7 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
-						"x": 11
+						"x": 19
 					}
 				]
 			},
@@ -118157,7 +118350,7 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
-						"x": 12
+						"x": 19
 					}
 				]
 			},
@@ -118171,14 +118364,14 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
-						"x": 14
+						"x": 20
 					}
 				]
 			}
 		}
 	},
 	"8135": {
-		"attack": 1,
+		"attack": 17,
 		"card_type": "2",
 		"cost": 4,
 		"health": 48,
@@ -118206,7 +118399,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"attack": 2,
+				"attack": 17,
 				"health": 50,
 				"skill": [
 					{
@@ -118224,7 +118417,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"attack": 3,
+				"attack": 18,
 				"health": 52,
 				"skill": [
 					{
@@ -118242,7 +118435,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 4,
+				"attack": 19,
 				"health": 55,
 				"skill": [
 					{
@@ -118260,7 +118453,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 5,
+				"attack": 20,
 				"health": 57,
 				"skill": [
 					{
@@ -154490,6 +154683,100 @@ var CARDS = {
 			"6": {
 				"attack": 8,
 				"skill": []
+			}
+		}
+	},
+	"15233": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 34,
+		"hidden_until": "1558026000000",
+		"id": "15233",
+		"maxLevel": 6,
+		"name": "Buzzbolt Blaster",
+		"picture": "Insect_Lightning_Wasp_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "counter",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 35,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 37,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
 			}
 		}
 	},
@@ -193029,6 +193316,109 @@ var CARDS = {
 			}
 		}
 	},
+	"17233": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 14,
+		"hidden_until": "1558026000000",
+		"id": "17233",
+		"maxLevel": 6,
+		"name": "Arsenite Insect",
+		"picture": "Insect_Fish_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "valor",
+				"x": 4
+			},
+			{
+				"id": "poison",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"12",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 15,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 16,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -230827,6 +231217,87 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"25233": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1558026000000",
+		"id": "25233",
+		"maxLevel": 6,
+		"name": "Buzzbolt Obliterator",
+		"picture": "Insect_Lightning_Wasp_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"attack": 13,
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
 					}
 				]
 			}
@@ -269318,6 +269789,109 @@ var CARDS = {
 					{
 						"id": "frost",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27233": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1558026000000",
+		"id": "27233",
+		"maxLevel": 6,
+		"name": "Arsenite Invader",
+		"picture": "Insect_Fish_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"id": "poison",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"12",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"health": 19,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 8
 					}
 				]
 			}

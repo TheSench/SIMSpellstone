@@ -4157,6 +4157,20 @@ var CAMPAIGNS = {
 		],
 		"name": "A Miracle Awakens",
 		"side_mission": "1"
+	},
+	"3013": {
+		"battleground_id": "2067",
+		"id": "3013",
+		"items": {},
+		"location_id": "20",
+		"missions": [
+			"6175",
+			"6176",
+			"6177",
+			"6178"
+		],
+		"name": "A Dream Fades",
+		"side_mission": "1"
 	}
 };
 var MISSIONS = {
@@ -84743,7 +84757,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6175",
-		"name": "Mission 1"
+		"name": "Aftermath"
 	},
 	"6176": {
 		"commander": {
@@ -84797,7 +84811,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6176",
-		"name": "Mission 2"
+		"name": "Unending Fight"
 	},
 	"6177": {
 		"commander": {
@@ -84851,7 +84865,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6177",
-		"name": "Mission 3"
+		"name": "The Godless"
 	},
 	"6178": {
 		"commander": {
@@ -84905,7 +84919,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6178",
-		"name": "Mission 4"
+		"name": "Eternal War"
 	},
 	"6179": {
 		"commander": {
