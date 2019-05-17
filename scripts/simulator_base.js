@@ -1810,8 +1810,10 @@ var SIMULATOR = {};
 				return 0;
 			}
 
+			applyDefaultStatuses(dying);
 			dying.health_left = skill.x;
 			dying.reanimated = true;
+			// TODO: Change art
 
 			if (debug) {
 				echo += ' and is reanimated</br>';
