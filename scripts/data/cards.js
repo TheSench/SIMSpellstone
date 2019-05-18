@@ -23791,11 +23791,12 @@ var CARDS = {
 			{
 				"c": 5,
 				"id": "rally",
-				"x": 28
+				"x": 44
 			},
 			{
-				"id": "mark",
-				"x": 5
+				"id": "enhance",
+				"s": "berserk",
+				"x": 18
 			}
 		],
 		"sub_type": [],
@@ -23811,11 +23812,12 @@ var CARDS = {
 					{
 						"c": 5,
 						"id": "rally",
-						"x": 30
+						"x": 44
 					},
 					{
-						"id": "mark",
-						"x": 5
+						"id": "enhance",
+						"s": "berserk",
+						"x": 18
 					}
 				]
 			},
@@ -23830,11 +23832,12 @@ var CARDS = {
 					{
 						"c": 4,
 						"id": "rally",
-						"x": 32
+						"x": 48
 					},
 					{
-						"id": "mark",
-						"x": 6
+						"id": "enhance",
+						"s": "berserk",
+						"x": 19
 					}
 				]
 			},
@@ -23849,11 +23852,12 @@ var CARDS = {
 					{
 						"c": 4,
 						"id": "rally",
-						"x": 38
+						"x": 48
 					},
 					{
-						"id": "mark",
-						"x": 6
+						"id": "enhance",
+						"s": "berserk",
+						"x": 19
 					}
 				]
 			},
@@ -23868,11 +23872,12 @@ var CARDS = {
 					{
 						"c": 4,
 						"id": "rally",
-						"x": 44
+						"x": 50
 					},
 					{
-						"id": "mark",
-						"x": 7
+						"id": "enhance",
+						"s": "berserk",
+						"x": 20
 					}
 				]
 			},
@@ -23890,8 +23895,140 @@ var CARDS = {
 						"x": 50
 					},
 					{
-						"id": "mark",
-						"x": 7
+						"id": "enhance",
+						"s": "berserk",
+						"x": 20
+					}
+				]
+			}
+		}
+	},
+	"436": {
+		"card_type": "1",
+		"desc": "The Ebonclaw are sworn both to silence and in silencing.",
+		"health": 95,
+		"id": "436",
+		"maxLevel": 6,
+		"name": "Ebonclaw, Silencer 2",
+		"picture": "portrait_darksword",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"c": 5,
+				"id": "imbue",
+				"s": "flurry"
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 10
+			},
+			{
+				"id": "enhance",
+				"s": "rally",
+				"x": 18
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"c": 5,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 10
+					},
+					{
+						"id": "enhance",
+						"s": "rally",
+						"x": 18
+					}
+				]
+			},
+			"3": {
+				"health": 96,
+				"skill": [
+					{
+						"c": 4,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 10
+					},
+					{
+						"id": "enhance",
+						"s": "rally",
+						"x": 19
+					}
+				]
+			},
+			"4": {
+				"health": 97,
+				"skill": [
+					{
+						"c": 4,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 10
+					},
+					{
+						"id": "enhance",
+						"s": "rally",
+						"x": 19
+					}
+				]
+			},
+			"5": {
+				"health": 98,
+				"skill": [
+					{
+						"c": 4,
+						"id": "imbue",
+						"s": "flurry"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 10
+					},
+					{
+						"id": "enhance",
+						"s": "rally",
+						"x": 20
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "berserk",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 10
+					},
+					{
+						"id": "enhance",
+						"s": "rally",
+						"x": 20
 					}
 				]
 			}
@@ -102849,6 +102986,97 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"7235": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 4,
+		"health": 45,
+		"hidden_until": "1558371600000",
+		"id": "7235",
+		"maxLevel": 6,
+		"name": "Shell Shaman",
+		"picture": "Snail_Shaman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"id": "protect",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 46,
+				"skill": []
+			},
+			"3": {
+				"attack": 13,
+				"health": 47,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "protect",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 48,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "protect",
 						"x": 4
 					}
 				]
@@ -193419,6 +193647,117 @@ var CARDS = {
 			}
 		}
 	},
+	"17235": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 4,
+		"health": 49,
+		"hidden_until": "1558371600000",
+		"id": "17235",
+		"maxLevel": 6,
+		"name": "Seashell Shaman",
+		"picture": "Snail_Shaman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4
+			},
+			{
+				"id": "protect",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 14,
+				"health": 50,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 51,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 52,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -269892,6 +270231,105 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"27235": {
+		"attack": 15,
+		"card_type": "2",
+		"cost": 4,
+		"health": 52,
+		"hidden_until": "1558371600000",
+		"id": "27235",
+		"maxLevel": 6,
+		"name": "Seashore Shaman",
+		"picture": "Snail_Shaman_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 16,
+				"health": 53,
+				"skill": []
+			},
+			"4": {
+				"health": 54,
+				"skill": []
+			},
+			"5": {
+				"health": 55,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
 					}
 				]
 			}
