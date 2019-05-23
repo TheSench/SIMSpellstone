@@ -2733,7 +2733,7 @@ var BATTLEGROUNDS = {
 		"id": "2068",
 		"name": "Harmonious Crimson Litany",
 		"scale_with_level": "1",
-		"starting_level": "7"
+		"starting_level": "0"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",

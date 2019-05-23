@@ -272,9 +272,9 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"reanimate": {
-		"desc": "On death, is subject to a cruel fate.",
+		"desc": "After dying the first time, revives self, healing and removing all effects.",
 		"icon": "reanimate",
-		"name": "A Knight's Fate",
+		"name": "Reanimate",
 		"type": "onDeath"
 	},
 	"regenerate": {

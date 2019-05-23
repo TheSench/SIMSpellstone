@@ -23915,19 +23915,20 @@ var CARDS = {
 		"set": "9999",
 		"skill": [
 			{
-				"c": 5,
+				"all": "1",
 				"id": "imbue",
-				"s": "flurry"
+				"s": "burn",
+				"x": 2
 			},
 			{
 				"all": "1",
-				"id": "enrage",
-				"x": 10
+				"id": "enfeeble",
+				"x": 2
 			},
 			{
-				"id": "enhance",
-				"s": "rally",
-				"x": 18
+				"all": "1",
+				"id": "invigorate",
+				"x": 14
 			}
 		],
 		"sub_type": [],
@@ -23936,19 +23937,20 @@ var CARDS = {
 			"2": {
 				"skill": [
 					{
-						"c": 5,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "burn",
+						"x": 2
 					},
 					{
 						"all": "1",
-						"id": "enrage",
-						"x": 10
+						"id": "enfeeble",
+						"x": 2
 					},
 					{
-						"id": "enhance",
-						"s": "rally",
-						"x": 18
+						"all": "1",
+						"id": "invigorate",
+						"x": 14
 					}
 				]
 			},
@@ -23956,19 +23958,20 @@ var CARDS = {
 				"health": 96,
 				"skill": [
 					{
-						"c": 4,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "burn",
+						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "enrage",
-						"x": 10
+						"id": "enfeeble",
+						"x": 3
 					},
 					{
-						"id": "enhance",
-						"s": "rally",
-						"x": 19
+						"all": "1",
+						"id": "invigorate",
+						"x": 15
 					}
 				]
 			},
@@ -23976,19 +23979,20 @@ var CARDS = {
 				"health": 97,
 				"skill": [
 					{
-						"c": 4,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "burn",
+						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "enrage",
-						"x": 10
+						"id": "enfeeble",
+						"x": 3
 					},
 					{
-						"id": "enhance",
-						"s": "rally",
-						"x": 19
+						"all": "1",
+						"id": "invigorate",
+						"x": 15
 					}
 				]
 			},
@@ -23996,19 +24000,20 @@ var CARDS = {
 				"health": 98,
 				"skill": [
 					{
-						"c": 4,
+						"all": "1",
 						"id": "imbue",
-						"s": "flurry"
+						"s": "burn",
+						"x": 4
 					},
 					{
 						"all": "1",
-						"id": "enrage",
-						"x": 10
+						"id": "enfeeble",
+						"x": 4
 					},
 					{
-						"id": "enhance",
-						"s": "rally",
-						"x": 20
+						"all": "1",
+						"id": "invigorate",
+						"x": 16
 					}
 				]
 			},
@@ -24016,19 +24021,20 @@ var CARDS = {
 				"health": 99,
 				"skill": [
 					{
+						"all": "1",
 						"id": "imbue",
-						"s": "berserk",
-						"x": 10
+						"s": "burn",
+						"x": 4
 					},
 					{
 						"all": "1",
-						"id": "enrage",
-						"x": 10
+						"id": "enfeeble",
+						"x": 4
 					},
 					{
-						"id": "enhance",
-						"s": "rally",
-						"x": 20
+						"all": "1",
+						"id": "invigorate",
+						"x": 16
 					}
 				]
 			}
@@ -38605,8 +38611,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"11",
-			"7"
+			"7",
+			"11"
 		],
 		"type": "2",
 		"upgrades": {
@@ -41568,8 +41574,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"9",
-			"7"
+			"7",
+			"9"
 		],
 		"type": "2",
 		"upgrades": {
@@ -42723,6 +42729,147 @@ var CARDS = {
 						"all": "1",
 						"id": "strike",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"2158": {
+		"asset_prefab_alt": "mythicUndead_B",
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"id": "2158",
+		"maxLevel": 7,
+		"name": "Mortagan, Grave General",
+		"picture": "Mythic_Undead_A",
+		"rarity": 5,
+		"set": "2100",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 8
+			},
+			{
+				"id": "reanimate",
+				"x": 15
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"health": 24,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
+					},
+					{
+						"id": "reanimate",
+						"x": 15
+					}
+				]
+			},
+			"3": {
+				"attack": 11,
+				"health": 26,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 9
+					},
+					{
+						"id": "reanimate",
+						"x": 16
+					}
+				]
+			},
+			"4": {
+				"attack": 12,
+				"health": 28,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 10
+					},
+					{
+						"id": "reanimate",
+						"x": 17
+					}
+				]
+			},
+			"5": {
+				"attack": 13,
+				"health": 30,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 10
+					},
+					{
+						"id": "reanimate",
+						"x": 18
+					}
+				]
+			},
+			"6": {
+				"attack": 14,
+				"health": 32,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 11
+					},
+					{
+						"id": "reanimate",
+						"x": 19
+					}
+				]
+			},
+			"7": {
+				"attack": 15,
+				"health": 34,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 12
+					},
+					{
+						"id": "reanimate",
+						"x": 20
 					}
 				]
 			}
@@ -83635,6 +83782,98 @@ var CARDS = {
 			}
 		}
 	},
+	"6231": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"hidden_until": "1558630800000",
+		"id": "6231",
+		"maxLevel": 6,
+		"name": "Firemouth Moth",
+		"picture": "Insect_Avian_Dark_Monster_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"id": "leech",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"10",
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 21,
+				"skill": []
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -93874,8 +94113,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"7",
-			"4"
+			"4",
+			"7"
 		],
 		"type": "3",
 		"upgrades": {
@@ -102987,6 +103226,101 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"7234": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1558630800000",
+		"id": "7234",
+		"maxLevel": 6,
+		"name": "Oxidation Slug",
+		"picture": "Insect_Armored_Slug_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "corrosive",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"attack": 11,
+				"health": 34,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
 					}
 				]
 			}
@@ -118717,6 +119051,105 @@ var CARDS = {
 			}
 		}
 	},
+	"8136": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 0,
+		"health": 4,
+		"id": "8136",
+		"maxLevel": 6,
+		"name": "Shore Scourer",
+		"picture": "Crab_Person_B",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"13",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 5,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 6,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"health": 7,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"health": 8,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"11000": {
 		"attack": 1,
 		"card_type": "2",
@@ -131394,8 +131827,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"11",
-			"7"
+			"7",
+			"11"
 		],
 		"type": "2",
 		"upgrades": {
@@ -134713,8 +135146,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"9",
-			"7"
+			"7",
+			"9"
 		],
 		"type": "2",
 		"upgrades": {
@@ -173910,6 +174343,111 @@ var CARDS = {
 			}
 		}
 	},
+	"16231": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1558630800000",
+		"id": "16231",
+		"maxLevel": 6,
+		"name": "Flaremouth Moth",
+		"picture": "Insect_Avian_Dark_Monster_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"10",
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -183847,8 +184385,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"7",
-			"4"
+			"4",
+			"7"
 		],
 		"type": "3",
 		"upgrades": {
@@ -193644,6 +194182,87 @@ var CARDS = {
 						"x": 6
 					}
 				]
+			}
+		}
+	},
+	"17234": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1558630800000",
+		"id": "17234",
+		"maxLevel": 6,
+		"name": "Oxidation Armorslug",
+		"picture": "Insect_Armored_Slug_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "corrosive",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 13,
+				"skill": []
+			},
+			"5": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 39,
+				"skill": []
 			}
 		}
 	},
@@ -207850,8 +208469,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"11",
-			"7"
+			"7",
+			"11"
 		],
 		"type": "2",
 		"upgrades": {
@@ -211164,8 +211783,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"9",
-			"7"
+			"7",
+			"9"
 		],
 		"type": "2",
 		"upgrades": {
@@ -250404,6 +251023,110 @@ var CARDS = {
 			}
 		}
 	},
+	"26231": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1558630800000",
+		"id": "26231",
+		"maxLevel": 6,
+		"name": "Ashmouth Moth",
+		"picture": "Insect_Avian_Dark_Monster_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "burn",
+				"x": 5
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"10",
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"attack": 11,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -260794,8 +261517,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"7",
-			"4"
+			"4",
+			"7"
 		],
 		"type": "3",
 		"upgrades": {
@@ -270231,6 +270954,88 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"27234": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1558630800000",
+		"id": "27234",
+		"maxLevel": 6,
+		"name": "Oxidation Plateslug",
+		"picture": "Insect_Armored_Slug_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "corrosive",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 14,
+				"skill": []
+			},
+			"3": {
+				"attack": 15,
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"health": 41,
+				"skill": []
+			},
+			"5": {
+				"health": 42,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
 					}
 				]
 			}
