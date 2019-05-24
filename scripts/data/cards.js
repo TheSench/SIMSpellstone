@@ -23784,141 +23784,10 @@ var CARDS = {
 		"set": "9999",
 		"skill": [
 			{
-				"c": 5,
-				"id": "imbue",
-				"s": "flurry"
-			},
-			{
-				"c": 5,
-				"id": "rally",
-				"x": 44
-			},
-			{
-				"id": "enhance",
-				"s": "berserk",
-				"x": 18
-			}
-		],
-		"sub_type": [],
-		"type": "2",
-		"upgrades": {
-			"2": {
-				"skill": [
-					{
-						"c": 5,
-						"id": "imbue",
-						"s": "flurry"
-					},
-					{
-						"c": 5,
-						"id": "rally",
-						"x": 44
-					},
-					{
-						"id": "enhance",
-						"s": "berserk",
-						"x": 18
-					}
-				]
-			},
-			"3": {
-				"health": 96,
-				"skill": [
-					{
-						"c": 4,
-						"id": "imbue",
-						"s": "flurry"
-					},
-					{
-						"c": 4,
-						"id": "rally",
-						"x": 48
-					},
-					{
-						"id": "enhance",
-						"s": "berserk",
-						"x": 19
-					}
-				]
-			},
-			"4": {
-				"health": 97,
-				"skill": [
-					{
-						"c": 4,
-						"id": "imbue",
-						"s": "flurry"
-					},
-					{
-						"c": 4,
-						"id": "rally",
-						"x": 48
-					},
-					{
-						"id": "enhance",
-						"s": "berserk",
-						"x": 19
-					}
-				]
-			},
-			"5": {
-				"health": 98,
-				"skill": [
-					{
-						"c": 4,
-						"id": "imbue",
-						"s": "flurry"
-					},
-					{
-						"c": 4,
-						"id": "rally",
-						"x": 50
-					},
-					{
-						"id": "enhance",
-						"s": "berserk",
-						"x": 20
-					}
-				]
-			},
-			"6": {
-				"health": 99,
-				"skill": [
-					{
-						"c": 4,
-						"id": "imbue",
-						"s": "flurry"
-					},
-					{
-						"c": 4,
-						"id": "rally",
-						"x": 50
-					},
-					{
-						"id": "enhance",
-						"s": "berserk",
-						"x": 20
-					}
-				]
-			}
-		}
-	},
-	"436": {
-		"card_type": "1",
-		"desc": "The Ebonclaw are sworn both to silence and in silencing.",
-		"health": 95,
-		"id": "436",
-		"maxLevel": 6,
-		"name": "Ebonclaw, Silencer 2",
-		"picture": "portrait_darksword",
-		"rarity": 4,
-		"set": "9999",
-		"skill": [
-			{
 				"all": "1",
 				"id": "imbue",
 				"s": "burn",
-				"x": 2
+				"x": 1
 			},
 			{
 				"all": "1",
@@ -23940,7 +23809,7 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "burn",
-						"x": 2
+						"x": 1
 					},
 					{
 						"all": "1",
@@ -23961,7 +23830,7 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "burn",
-						"x": 3
+						"x": 2
 					},
 					{
 						"all": "1",
@@ -23982,7 +23851,7 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "burn",
-						"x": 3
+						"x": 2
 					},
 					{
 						"all": "1",
@@ -24003,7 +23872,7 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "burn",
-						"x": 4
+						"x": 2
 					},
 					{
 						"all": "1",
@@ -24024,7 +23893,7 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "burn",
-						"x": 4
+						"x": 2
 					},
 					{
 						"all": "1",

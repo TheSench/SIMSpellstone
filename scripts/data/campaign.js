@@ -4171,6 +4171,20 @@ var CAMPAIGNS = {
 		],
 		"name": "A Dream Fades",
 		"side_mission": "1"
+	},
+	"3014": {
+		"battleground_id": "2068",
+		"id": "3014",
+		"items": {},
+		"location_id": "22",
+		"missions": [
+			"6219",
+			"6220",
+			"6221",
+			"6222"
+		],
+		"name": "A Bond Strengthens",
+		"side_mission": "1"
 	}
 };
 var MISSIONS = {
@@ -87323,7 +87337,7 @@ var MISSIONS = {
 	},
 	"6219": {
 		"commander": {
-			"id": "436"
+			"id": "435"
 		},
 		"deck": [
 			{
@@ -87377,7 +87391,7 @@ var MISSIONS = {
 	},
 	"6220": {
 		"commander": {
-			"id": "436"
+			"id": "435"
 		},
 		"deck": [
 			{
@@ -87431,7 +87445,7 @@ var MISSIONS = {
 	},
 	"6221": {
 		"commander": {
-			"id": "436"
+			"id": "435"
 		},
 		"deck": [
 			{
@@ -87485,7 +87499,7 @@ var MISSIONS = {
 	},
 	"6222": {
 		"commander": {
-			"id": "436"
+			"id": "435"
 		},
 		"deck": [
 			{
