@@ -349,6 +349,12 @@ var SKILL_DATA = {
 		"name": "Valor",
 		"type": "turnStart"
 	},
+	"vampirism": {
+		"desc": "Deals damage to opposing creature, even while on delay. This damage cannot be increased. After dealing damage, heals self.",
+		"icon": "siphon",
+		"name": "Vampirism",
+		"type": "activation"
+	},
 	"venom": {
 		"desc": "Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn",
 		"icon": "venom",

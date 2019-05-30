@@ -484,7 +484,22 @@ var BATTLEGROUNDS = {
 			}
 		],
 		"id": "129",
-		"name": "Swarm"
+		"name": "Insect Swarm"
+	},
+	"130": {
+		"desc": "Deals damage to opposing creature and then heals self, even while on delay. Damage and heal are equal to 5% plus 3 of the card’s base Health. This damage cannot be increased.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"mult": 0.05,
+				"x": 3,
+				"y": "7"
+			}
+		],
+		"id": "130",
+		"name": "Undead Vampirism"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
@@ -2732,6 +2747,38 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2068",
 		"name": "Harmonious Crimson Litany",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2069": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2069",
+		"name": "Rift's Chorus",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2070": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.2,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2070",
+		"name": "Rift's Chorus",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},
