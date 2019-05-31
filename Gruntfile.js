@@ -238,7 +238,12 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        clean: ['dist'],
+        clean: {
+            files: [
+                'dist/*',
+                '!dist/data.min.js*'
+            ]
+        },
         imagemin: {
             sprites: {
                 options: {
@@ -300,7 +305,14 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-cache-bust');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy', 'cacheBust']);
+    
+    grunt.registerTask('build', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy', 'cacheBust']);
+
+    grunt.registerTask('default', function() {
+        delete grunt.config.data.concat.data;
+        delete grunt.config.data.uglify.data;
+        grunt.task.run('build');
+    });
 
     // On watch events configure jshint:all to only run on changed file
     // on watch events configure jshint:all to only run on changed file
