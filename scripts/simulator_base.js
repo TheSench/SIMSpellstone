@@ -180,7 +180,7 @@ var SIMULATOR = {};
 
 		var skills = source_card.earlyActivationSkills;
 		var len = skills.length;
-		if (len == 0) return;
+		if (len === 0) return;
 
 		if (source_card.silenced) {
 			if (debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>";
@@ -1075,6 +1075,41 @@ var SIMULATOR = {};
 			}
 
 			return affected;
+		},
+
+		// Vampirism
+		// - Reduced by Barrier, Ward, and Shroud
+		// - Not blocked by Invisibility 
+		// - Does not trigger Backlash
+		// This is a pseudo-activation-skill: it is not triggered
+		// in the same loop as the rest, and activates even
+		// when the unit is frozen or on cooldown
+		vampirism: function vampirism(sourceCard, enemyAssaults) {
+			var target = enemyAssaults[sourceCard.key];
+			
+			if (target && target.isAlive()) {
+				var vampirism = sourceCard.vampirism;
+				var damageInfo = modifySkillDamage(target, vampirism);
+				var damageDealt = damageInfo.damage;
+
+				do_damage(sourceCard, target, damageDealt, damageInfo.shatter, function (source, target, amount) {
+					echo += '<u>(Vampirism: +' + vampirism;
+					echo += damageInfo.echo;
+					echo += ') = ' + amount + ' damage</u><br>';
+					echo += debug_name(source) + ' activates vampirism, draining ' + amount + ' health from ' + debug_name(target);
+					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+				});
+
+				if (damageDealt > 0) {
+					var healthMissing = sourceCard.health - sourceCard.health_left;
+					var healing = Math.min(sourceCard.vampirism, healthMissing);
+					sourceCard.health += healing;
+				}
+
+				if (showAnimations) {
+					drawField(field, null, null, turn, sourceCard);
+				}
+			}
 		}
 	};
 
@@ -2472,11 +2507,19 @@ var SIMULATOR = {};
 
 			// Check Timer
 			if (!current_assault.isActive()) {
+				// Activate vampirism if on cooldown
+				if (current_assault.vampirism) {
+					activationSkills.vampirism(current_assault, field_o_assaults);
+				}
 				continue;
 			}
 
 			// Check jammed ("frozen")
 			if (current_assault['jammed']) {
+				// Activate vampirism if frozen
+				if (current_assault.vampirism) {
+					activationSkills.vampirism(current_assault, field_o_assaults);
+				}
 				if (debug) echo += debug_name(current_assault) + ' is frozen and cannot attack<br>';
 				continue;
 			}
@@ -2488,6 +2531,9 @@ var SIMULATOR = {};
 			}
 
 			for (; activations > 0; activations--) {
+				if (current_assault.vampirism) {
+					activationSkills.vampirism(current_assault, field_o_assaults);
+				}
 
 				// Activation skills
 				activation_skills(current_assault);
