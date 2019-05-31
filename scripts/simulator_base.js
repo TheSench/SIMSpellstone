@@ -2511,6 +2511,7 @@ var SIMULATOR = {};
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
 				}
+				if (debug) echo += debug_name(current_assault) + ' is not active yet<br>';
 				continue;
 			}
 
