@@ -26,6 +26,7 @@
     "stasis": "passive",
     "swarm": "onAttack",
     "valor": "turnStart",
+    "vampirism": "passive",
     "venom": "onAttack",
 
     // On Death
