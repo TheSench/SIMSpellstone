@@ -2025,12 +2025,12 @@ function getPresetUnit(unitInfo, level, maxedAt) {
     var unitLevel = (unitInfo.level || 1);
 
     if (level >= maxedAt) {
-        unitLevel = 7;
+        unitLevel = CARDS[unitInfo.id].maxLevel;
         if (canFuse(cardID)) {
             cardID = fuseCard(cardID);
         }
     } else if (level > 1 && is_commander(cardID)) {
-        var maxUpgrades = (Number(loadCard(cardID).rarity) + 1);
+        var maxUpgrades = CARDS[cardID].maxLevel - 1;
         var upgradesPerLevel = maxUpgrades / (maxedAt - 1);
         var levelsFromBase = level - 1;
         unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
@@ -2072,8 +2072,8 @@ function getRandomCard(unitInfo) {
 }
 
 function upgradeCard(unitInfo) {
-    var maxLevel = (parseInt(loadCard(unitInfo.id).rarity) + 2);
-    if (unitInfo.level == maxLevel) {
+    var maxLevel = CARDS[unitInfo.id].maxLevel;
+    if (unitInfo.level === maxLevel) {
         if (canFuse(unitInfo.id)) {
             unitInfo.id = fuseCard(unitInfo.id, 1);
             unitInfo.level = 1;
