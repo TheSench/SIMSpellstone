@@ -1089,21 +1089,22 @@ var SIMULATOR = {};
 			
 			if (target && target.isAlive()) {
 				var vampirism = sourceCard.vampirism;
-				var damageInfo = modifySkillDamage(target, vampirism);
+				var damageInfo = modifySkillDamage(target, vampirism, { enfeeble: true });
 				var damageDealt = damageInfo.damage;
 
 				do_damage(sourceCard, target, damageDealt, damageInfo.shatter, function (source, target, amount) {
 					echo += '<u>(Vampirism: +' + vampirism;
 					echo += damageInfo.echo;
 					echo += ') = ' + amount + ' damage</u><br>';
-					echo += debug_name(source) + ' activates vampirism, draining ' + amount + ' health from ' + debug_name(target);
+					echo += debug_name(source) + ' activates vampirism, dealing ' + amount + ' damage to ' + debug_name(target);
 					echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 				});
 
 				if (damageDealt > 0) {
 					var healthMissing = sourceCard.health - sourceCard.health_left;
 					var healing = Math.min(sourceCard.vampirism, healthMissing);
-					sourceCard.health += healing;
+					if (echo && healing) echo += debug_name(sourceCard) + ' recovers ' + healing + ' health from vampirism<br />';
+					sourceCard.health_left += healing;
 				}
 
 				if (showAnimations) {
