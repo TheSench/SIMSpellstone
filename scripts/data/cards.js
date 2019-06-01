@@ -84244,6 +84244,96 @@ var CARDS = {
 			}
 		}
 	},
+	"6234": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1559581200000",
+		"id": "6234",
+		"maxLevel": 6,
+		"name": "Hellhorn Hunter",
+		"picture": "Undead_Flaming_Whip_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"health": 21,
+				"skill": []
+			},
+			"4": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -175162,6 +175252,84 @@ var CARDS = {
 			}
 		}
 	},
+	"16234": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1559581200000",
+		"id": "16234",
+		"maxLevel": 6,
+		"name": "Hellhorn Tracker",
+		"picture": "Undead_Flaming_Whip_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 26,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -252158,6 +252326,96 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"26234": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1559581200000",
+		"id": "26234",
+		"maxLevel": 6,
+		"name": "Hellhorn Judge",
+		"picture": "Undead_Flaming_Whip_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "burn",
+				"x": 4
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"health": 29,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "berserk",
 						"x": 5
 					}
 				]
