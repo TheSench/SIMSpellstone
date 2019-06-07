@@ -104062,6 +104062,109 @@ var CARDS = {
 			}
 		}
 	},
+	"7238": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 31,
+		"hidden_until": "1560186000000",
+		"id": "7238",
+		"maxLevel": 6,
+		"name": "Bogwater Horde",
+		"picture": "Undead_Swamp_Undead_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3,
+				"y": "7"
+			},
+			{
+				"id": "rally",
+				"x": 4,
+				"y": "7"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 32,
+				"skill": []
+			},
+			"3": {
+				"health": 33,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					}
+				]
+			},
+			"6": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					}
+				]
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -195445,6 +195548,110 @@ var CARDS = {
 			}
 		}
 	},
+	"17238": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1560186000000",
+		"id": "17238",
+		"maxLevel": 6,
+		"name": "Quagmire Horde",
+		"picture": "Undead_Swamp_Undead_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4,
+				"y": "7"
+			},
+			{
+				"id": "rally",
+				"x": 5,
+				"y": "7"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"health": 36,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					}
+				]
+			},
+			"4": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "7"
+					}
+				]
+			},
+			"5": {
+				"health": 38,
+				"skill": []
+			},
+			"6": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "7"
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -272617,6 +272824,109 @@ var CARDS = {
 						"all": "1",
 						"id": "protect",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"27238": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1560186000000",
+		"id": "27238",
+		"maxLevel": 6,
+		"name": "Deluged Horde",
+		"picture": "Undead_Swamp_Undead_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 5,
+				"y": "7"
+			},
+			{
+				"id": "rally",
+				"x": 6,
+				"y": "7"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "7"
+					}
+				]
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"attack": 12,
+				"health": 41,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "7"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "7"
 					}
 				]
 			}
