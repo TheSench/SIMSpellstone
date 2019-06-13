@@ -65383,6 +65383,188 @@ var CARDS = {
 			}
 		}
 	},
+	"5236": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1560445200000",
+		"id": "5236",
+		"maxLevel": 6,
+		"name": "Wisp Warrior",
+		"picture": "Undead_Elemental_Will_O_Wisp_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 3,
+				"y": "7"
+			},
+			{
+				"id": "rally",
+				"x": 2,
+				"y": "7"
+			},
+			{
+				"id": "daze",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"health": 14,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 2,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 2,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"5237": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 4,
+		"health": 44,
+		"hidden_until": "1561395600000",
+		"id": "5237",
+		"maxLevel": 6,
+		"name": "Lanternbulb Hunter",
+		"picture": "Undead_Seafolk_Zombie_Fish_Lantern_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3,
+				"y": "7"
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 45,
+				"skill": []
+			},
+			"4": {
+				"health": 46,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"attack": 15,
+				"skill": []
+			},
+			"6": {
+				"health": 47,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -84426,6 +84608,83 @@ var CARDS = {
 						"x": 3
 					}
 				]
+			}
+		}
+	},
+	"6233": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1560790800000",
+		"id": "6233",
+		"maxLevel": 6,
+		"name": "Sandbone Watcher",
+		"picture": "Undead_Tomb_Warrior_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "poison",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 14,
+				"skill": []
+			},
+			"3": {
+				"health": 15,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"attack": 6,
+				"skill": []
 			}
 		}
 	},
@@ -104059,6 +104318,155 @@ var CARDS = {
 						"x": 4
 					}
 				]
+			}
+		}
+	},
+	"7236": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 31,
+		"hidden_until": "1560445200000",
+		"id": "7236",
+		"maxLevel": 6,
+		"name": "Unicorn Phantom",
+		"picture": "Undead_Ghost_Unicorn_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 32,
+				"skill": []
+			},
+			"4": {
+				"health": 33,
+				"skill": []
+			},
+			"5": {
+				"attack": 10,
+				"skill": []
+			},
+			"6": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"7237": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"hidden_until": "1561050000000",
+		"id": "7237",
+		"maxLevel": 6,
+		"name": "Bogbringer",
+		"picture": "Undead_Goblin_Zombie_Hag_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"id": "enfeeble",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"7",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 21,
+				"skill": []
 			}
 		}
 	},
@@ -156540,6 +156948,189 @@ var CARDS = {
 			}
 		}
 	},
+	"15236": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1560445200000",
+		"id": "15236",
+		"maxLevel": 6,
+		"name": "Wisp Swordmaster",
+		"picture": "Undead_Elemental_Will_O_Wisp_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 4,
+				"y": "7"
+			},
+			{
+				"id": "rally",
+				"x": 3,
+				"y": "7"
+			},
+			{
+				"id": "daze",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 16,
+				"skill": [
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 17,
+				"skill": []
+			}
+		}
+	},
+	"15237": {
+		"attack": 15,
+		"card_type": "2",
+		"cost": 4,
+		"health": 48,
+		"hidden_until": "1561395600000",
+		"id": "15237",
+		"maxLevel": 6,
+		"name": "Lanternbulb Fisher",
+		"picture": "Undead_Seafolk_Zombie_Fish_Lantern_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 4,
+				"y": "7"
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "7"
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 16,
+				"skill": []
+			},
+			"4": {
+				"health": 49,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6,
+						"y": "7"
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 50,
+				"skill": []
+			},
+			"6": {
+				"health": 51,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -175537,6 +176128,83 @@ var CARDS = {
 						"x": 4
 					}
 				]
+			}
+		}
+	},
+	"16233": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1560790800000",
+		"id": "16233",
+		"maxLevel": 6,
+		"name": "Sandbone Soldier",
+		"picture": "Undead_Tomb_Warrior_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "poison",
+				"x": 4
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 17,
+				"skill": []
+			},
+			"5": {
+				"attack": 7,
+				"skill": []
+			},
+			"6": {
+				"health": 18,
+				"skill": []
 			}
 		}
 	},
@@ -195545,6 +196213,155 @@ var CARDS = {
 						"x": 5
 					}
 				]
+			}
+		}
+	},
+	"17236": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1560445200000",
+		"id": "17236",
+		"maxLevel": 6,
+		"name": "Unicorn Ghost",
+		"picture": "Undead_Ghost_Unicorn_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 36,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 37,
+				"skill": []
+			},
+			"6": {
+				"health": 38,
+				"skill": []
+			}
+		}
+	},
+	"17237": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1561050000000",
+		"id": "17237",
+		"maxLevel": 6,
+		"name": "Fogbringer",
+		"picture": "Undead_Goblin_Zombie_Hag_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "enfeeble",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"7",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": []
+			},
+			"6": {
+				"health": 25,
+				"skill": []
 			}
 		}
 	},
@@ -233868,6 +234685,174 @@ var CARDS = {
 			}
 		}
 	},
+	"25236": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1560445200000",
+		"id": "25236",
+		"maxLevel": 6,
+		"name": "Wisp Avenger",
+		"picture": "Undead_Elemental_Will_O_Wisp_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 5,
+				"y": "7"
+			},
+			{
+				"id": "rally",
+				"x": 4,
+				"y": "7"
+			},
+			{
+				"id": "daze",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": []
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "7"
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "7"
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"25237": {
+		"attack": 17,
+		"card_type": "2",
+		"cost": 4,
+		"health": 51,
+		"hidden_until": "1561395600000",
+		"id": "25237",
+		"maxLevel": 6,
+		"name": "Lanternbulb Lurer",
+		"picture": "Undead_Seafolk_Zombie_Fish_Lantern_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 6,
+				"y": "7"
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 52,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7,
+						"y": "7"
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"attack": 18,
+				"health": 53,
+				"skill": []
+			},
+			"5": {
+				"health": 54,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 8,
+						"y": "7"
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -252719,6 +253704,83 @@ var CARDS = {
 						"all": "1",
 						"id": "enfeeble",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"26233": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1560790800000",
+		"id": "26233",
+		"maxLevel": 6,
+		"name": "Sandbone Warlord",
+		"picture": "Undead_Tomb_Warrior_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "poison",
+				"x": 6
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 20,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "poison",
+						"x": 6
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "poison",
+						"x": 7
+					},
+					{
+						"id": "berserk",
+						"x": 4
 					}
 				]
 			}
@@ -272824,6 +273886,169 @@ var CARDS = {
 						"all": "1",
 						"id": "protect",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"27236": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1560445200000",
+		"id": "27236",
+		"maxLevel": 6,
+		"name": "Unicorn Specter",
+		"picture": "Undead_Ghost_Unicorn_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"attack": 13,
+				"skill": []
+			},
+			"5": {
+				"health": 41,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"27237": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1561050000000",
+		"id": "27237",
+		"maxLevel": 6,
+		"name": "Smogbringer",
+		"picture": "Undead_Goblin_Zombie_Hag_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "enfeeble",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "enfeeble",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "enfeeble",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
 					}
 				]
 			}
