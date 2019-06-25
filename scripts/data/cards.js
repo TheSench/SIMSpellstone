@@ -224626,6 +224626,8 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
+				"attack": 10,
+				"health": 26,
 				"skill": [
 					{
 						"id": "weaken",
@@ -229153,6 +229155,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
+				"health": 26,
 				"skill": [
 					{
 						"id": "armored",
@@ -229570,6 +229573,8 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 15,
+				"health": 55,
 				"skill": [
 					{
 						"id": "armored",
@@ -233150,6 +233155,8 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
+				"attack": 9,
+				"health": 55,
 				"skill": [
 					{
 						"id": "absorb",
@@ -239805,6 +239812,8 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 10,
+				"health": 58,
 				"skill": [
 					{
 						"id": "legion",
@@ -244296,6 +244305,8 @@ var CARDS = {
 				]
 			},
 			"5": {
+				"attack": 8,
+				"health": 18,
 				"skill": [
 					{
 						"id": "evade",
@@ -263462,6 +263473,8 @@ var CARDS = {
 				]
 			},
 			"5": {
+				"attack": 9,
+				"health": 18,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -263553,6 +263566,7 @@ var CARDS = {
 				]
 			},
 			"5": {
+				"health": 41,
 				"skill": [
 					{
 						"id": "valor",
@@ -268112,6 +268126,8 @@ var CARDS = {
 				]
 			},
 			"5": {
+				"attack": 8,
+				"health": 18,
 				"skill": [
 					{
 						"id": "enrage",
@@ -268984,6 +269000,8 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 13,
+				"health": 54,
 				"skill": [
 					{
 						"id": "corrosive",
