@@ -1117,6 +1117,24 @@ var SIMULATOR = {};
 					drawField(field, null, null, turn, sourceCard);
 				}
 			}
+		},
+
+		// Rally
+		// - Targets self
+		// - only applies to first attack
+		enlarge_first: function(src_card, activations) {
+			var rally_amt = src_card.enlarge_first;
+			if (activations === 2 || (!src_card.dualstrike_triggered)) {
+				src_card.attack_rally += rally_amt;
+				if (debug) {
+					echo += debug_name(src_card) + ' is enlarged ' + rally_amt + ' on first attack.' + '<br>';
+				}
+			} else {
+				src_card.attack_rally -= rally_amt;
+				if (debug) {
+					echo += debug_name(src_card) + ' is not enlarged on second attack.' + '<br>';
+				}
+			}
 		}
 	};
 
@@ -2542,13 +2560,17 @@ var SIMULATOR = {};
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
 				}
-
+			
 				// Activation skills
 				activation_skills(current_assault);
 
 				// See if unit died from Backlash/Iceshatter
 				if (!current_assault.isAlive()) {
 					continue;
+				}
+
+				if (current_assault.enlarge_first) {
+					activationSkills.enlarge_first(current_assault, activations);
 				}
 
 				// Check attack

@@ -507,7 +507,7 @@ var BATTLEGROUNDS = {
 			{
 				"base": "health",
 				"effect_type": "add_skill",
-				"id": "bash",
+				"id": "enlarge_first",
 				"mult": 0.25,
 				"y": "4"
 			},

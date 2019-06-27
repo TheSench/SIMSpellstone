@@ -1080,6 +1080,8 @@ function copy_skills_2(new_card, original_skills, mult) {
 function setSkill_2(new_card, skill) {
     // These skills could have multiple instances
     var skillID = skill.id;
+    console.log(new_card);
+    console.log(skill);
     var skillType = SKILL_DATA[skillID].type;
     switch (skillType) {
         case 'toggle':
