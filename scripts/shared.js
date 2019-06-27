@@ -2025,7 +2025,7 @@ function getPresetUnit(unitInfo, level, maxedAt) {
     var unitLevel = (unitInfo.level || 1);
 
     if (level >= maxedAt) {
-        unitLevel = CARDS[unitInfo.id].maxLevel;
+        unitLevel = CARDS[cardID].maxLevel;
         if (canFuse(cardID)) {
             cardID = fuseCard(cardID);
         }

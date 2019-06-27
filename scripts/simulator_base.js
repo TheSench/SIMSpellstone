@@ -462,7 +462,7 @@ var SIMULATOR = {};
 				affected++;
 
 				target.protected += wingward;
-				target.invisible += wingward;
+				target.invisible += Math.ceil(wingward/2);
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + 
