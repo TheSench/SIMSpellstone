@@ -201319,6 +201319,8 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
+				"attack": 9,
+				"health": 27,
 				"skill": [
 					{
 						"id": "evade",
@@ -224563,6 +224565,8 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 8,
+				"health": 19,
 				"skill": [
 					{
 						"id": "armored",
@@ -263910,6 +263914,8 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 7,
+				"health": 19,
 				"skill": [
 					{
 						"id": "evade",
@@ -265342,6 +265348,8 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 12,
+				"health": 20,
 				"skill": [
 					{
 						"id": "evade",
