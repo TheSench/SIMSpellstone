@@ -25,6 +25,12 @@ var SKILL_DATA = {
 		"name": "barrage",
 		"type": "earlyActivation"
 	},
+	"bash": {
+		"desc": "Increases damage dealt by the first attack each turn.",
+		"icon": "empower",
+		"name": "Bash",
+		"type": "activation"
+	},
 	"berserk": {
 		"desc": "After dealing Attack damage, permanently increases Attack.",
 		"icon": "berserk",

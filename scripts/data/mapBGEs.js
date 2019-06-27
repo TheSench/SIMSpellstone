@@ -4907,5 +4907,289 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3017",
 		"location_id": "22",
 		"name": "Elemental Spiritlings"
+	},
+	"3018": {
+		"desc": "Ancient rocks with symbols of runes carved upon them serve as defenses in the Salt Wastes. Power them up with Enchanted Iron!",
+		"effects": [
+			{
+				"id": "38",
+				"name": "Healing Glyph",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures are Healed for 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 1
+							}
+						],
+						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 2
+							}
+						],
+						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 3
+							}
+						],
+						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 4
+							}
+						],
+						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 5
+							}
+						],
+						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 6
+							}
+						],
+						"name": "Healing Glyph"
+					}
+				]
+			},
+			{
+				"id": "39",
+				"name": "Shielding Glyph",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Armor 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 1
+							}
+						],
+						"name": "Shielding Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Armor 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 2
+							}
+						],
+						"name": "Shielding Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Armor 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 3
+							}
+						],
+						"name": "Shielding Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Armor 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 4
+							}
+						],
+						"name": "Shielding Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Armor 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 6
+							}
+						],
+						"name": "Shielding Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Armor 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 8
+							}
+						],
+						"name": "Shielding Glyph"
+					}
+				]
+			},
+			{
+				"id": "40",
+				"name": "Scorching Glyph",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Scorch 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 1
+							}
+						],
+						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 2
+							}
+						],
+						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 3
+							}
+						],
+						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 4
+							}
+						],
+						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 6
+							}
+						],
+						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 8
+							}
+						],
+						"name": "Scorching Glyph"
+					}
+				]
+			}
+		],
+		"id": "3018",
+		"location_id": "23",
+		"name": "Temple Glyphs"
 	}
 };

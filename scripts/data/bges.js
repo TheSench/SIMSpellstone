@@ -501,6 +501,27 @@ var BATTLEGROUNDS = {
 		"id": "130",
 		"name": "Undead Vampirism"
 	},
+	"131": {
+		"desc": "Frogs deal extra damage on their first attack each turn equal to 25% of their base Health and gain Pierce equal to their base Attack.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 1,
+				"y": "4"
+			}
+		],
+		"id": "131",
+		"name": "Lily & Spear Formation"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -2781,6 +2802,22 @@ var BATTLEGROUNDS = {
 		"name": "Rift's Chorus",
 		"scale_with_level": "1",
 		"starting_level": "0"
+	},
+	"2071": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.008,
+				"effect_type": "scale_attributes",
+				"mult": 0.0025
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2071",
+		"name": "Dawntouched Divertimento",
+		"scale_with_level": "1",
+		"starting_level": "5"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
