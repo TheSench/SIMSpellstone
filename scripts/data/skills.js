@@ -29,7 +29,7 @@ var SKILL_DATA = {
 		"desc": "Increases damage dealt by the first attack each turn.",
 		"icon": "empower",
 		"name": "Bash",
-		"type": "activation"
+		"type": "passive"
 	},
 	"berserk": {
 		"desc": "After dealing Attack damage, permanently increases Attack.",
@@ -108,12 +108,6 @@ var SKILL_DATA = {
 		"icon": "empower",
 		"name": "Enlarge",
 		"type": "earlyActivation"
-	},
-	"enlarge_first": {
-		"desc": "Deals extra damage on first attack each turn.",
-		"icon": "empower",
-		"name": "Enlarge First",
-		"type": "passive"
 	},
 	"enrage": {
 		"desc": "Grants Enrage to a random ally creature, causing it to permanently increase Attack after taking Attack damage.",

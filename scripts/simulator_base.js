@@ -1122,8 +1122,8 @@ var SIMULATOR = {};
 		// Rally
 		// - Targets self
 		// - only applies to first attack
-		enlarge_first: function(src_card, activations) {
-			var rally_amt = src_card.enlarge_first;
+		bash: function(src_card, activations) {
+			var rally_amt = src_card.bash;
 			if (activations === 2 || (!src_card.dualstrike_triggered)) {
 				src_card.attack_rally += rally_amt;
 				if (debug) {
@@ -2569,8 +2569,8 @@ var SIMULATOR = {};
 					continue;
 				}
 
-				if (current_assault.enlarge_first) {
-					activationSkills.enlarge_first(current_assault, activations);
+				if (current_assault.bash) {
+					activationSkills.bash(current_assault, activations);
 				}
 
 				// Check attack
