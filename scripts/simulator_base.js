@@ -496,9 +496,11 @@ var SIMULATOR = {};
 			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 				var target = field_p_assaults[key];
 				if (target.isAlive() && target.isInFaction(faction)
-					&& (all || target.isDamaged() || invigorate)) {
+					&& (all || target.isDamaged() 
+						|| (invigorate && (!target.invigorated)))) {
 					targets.push(key);
 				}
+
 			}
 
 			// No Targets
@@ -525,19 +527,23 @@ var SIMULATOR = {};
 
 				affected++;
 
-				var additionalMaxHealth = 0;
-				if(invigorate) {
-					additionalMaxHealth = Math.max(0, heal_amt - target.invigorated);
-					if(additionalMaxHealth) {
-						target.invigorated = heal_amt;
-						target.health += additionalMaxHealth;
-					}
-				}
-
 				var heal_amt = heal;
 				if (!heal_amt) {
 					var mult = skill.mult;
 					heal_amt = Math.ceil(target.health * mult);
+				}
+
+				var additionalMaxHealth = 0;
+				if (invigorate) {
+					// add invigorated if necessary
+					if (!target.invigorated) {
+						target.invigorated = 0;
+					}
+
+					// invigorate does not stack
+					additionalMaxHealth = Math.max(0, heal_amt - target.invigorated);
+					target.health += additionalMaxHealth;
+					target.invigorated += additionalMaxHealth;
 				}
 
 				var missingHealth = target.health - target.health_left;
