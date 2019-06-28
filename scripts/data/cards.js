@@ -85149,6 +85149,95 @@ var CARDS = {
 			}
 		}
 	},
+	"6238": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 0,
+		"health": 10,
+		"hidden_until": "1562000400000",
+		"id": "6238",
+		"maxLevel": 6,
+		"name": "Venomdart Scout",
+		"picture": "Frog_Blowdart_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 1
+			},
+			{
+				"id": "poison",
+				"x": 2
+			},
+			{
+				"id": "daze",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 11,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 2
+					},
+					{
+						"id": "daze",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 12,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -176981,6 +177070,95 @@ var CARDS = {
 			}
 		}
 	},
+	"16238": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 0,
+		"health": 12,
+		"hidden_until": "1562000400000",
+		"id": "16238",
+		"maxLevel": 6,
+		"name": "Venomdart Spy",
+		"picture": "Frog_Blowdart_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 2
+			},
+			{
+				"id": "poison",
+				"x": 4
+			},
+			{
+				"id": "daze",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 14,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -254887,6 +255065,83 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"26238": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 0,
+		"health": 14,
+		"hidden_until": "1562000400000",
+		"id": "26238",
+		"maxLevel": 6,
+		"name": "Venomdart Ambusher",
+		"picture": "Frog_Blowdart_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 6
+			},
+			{
+				"id": "daze",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 15,
+				"skill": []
+			},
+			"3": {
+				"attack": 4,
+				"skill": []
+			},
+			"4": {
+				"health": 16,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 6
 					}
 				]
 			}
