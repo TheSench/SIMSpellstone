@@ -21,9 +21,8 @@ install:
   - npm ci
 script:
     #   ## print all Travis environment variables for debugging
-    - $(npm bin)/print-env TRAVIS
     - npm run start &
-    - npm run cy:run:ci -- -key ${CYPRESS_KEY}
+    - npm run cy:run:ci -- --key ${CYPRESS_KEY}
     # after all tests finish running we need
     # to kill all background jobs (like "npm start &")
     - kill $(jobs -p) || true
