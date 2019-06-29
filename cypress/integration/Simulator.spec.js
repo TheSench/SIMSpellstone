@@ -1,10 +1,10 @@
 const baseUrl = 'http://localhost:8080/Titans.html';
 
-function testDeck(description, deck1, deck2, expectedWinrate) {
+function testDeck(description, deck1, deck2, expectedWinrate, bges) {
     var sims = (expectedWinrate == 100 || expectedWinrate == 0) ? 50 : 1000;
 
     it(`${description} (${deck1} vs ${deck2}) should result in winrate of ${expectedWinrate}%`, function () {
-        cy.visit(baseUrl + `?deck1=${deck1}&deck2=${deck2}&sims=${sims}&autostart`);
+        cy.visit(baseUrl + `?deck1=${deck1}&deck2=${deck2}&sims=${sims}&autostart&bges=${bges}`);
         cy.get('#simulationStatus')
             .contains('Simulations complete')
             .then(function() {
