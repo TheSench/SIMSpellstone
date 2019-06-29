@@ -26,9 +26,10 @@
     "time-grunt": "^2.0.0"
   },
   "scripts": {
-    "test": "cypress run",
-    "start": "http-server -o --cors",
-    "open": "cypress open"
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test": "cy:run",
+    "start": "http-server -o --cors -p 8080"
   },
   "repository": {
     "type": "git",
