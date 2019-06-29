@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost/GHSS/Titans.html';
+const baseUrl = 'http://localhost:8080/Titans.html';
 
 function testDeck(description, deck1, deck2, expectedWinrate) {
     it(`${description} (${deck1} vs ${deck2}) should result in winrate of ${expectedWinrate}%`, function () {
