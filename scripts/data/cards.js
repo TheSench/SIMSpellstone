@@ -65869,6 +65869,88 @@ var CARDS = {
 			}
 		}
 	},
+	"5239": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 4,
+		"health": 45,
+		"hidden_until": "1562605200000",
+		"id": "5239",
+		"maxLevel": 6,
+		"name": "Knightly Grumplo",
+		"picture": "Frog_Goblin_Toad_Tamer_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "counter",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 46,
+				"skill": []
+			},
+			"3": {
+				"health": 47,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 11,
+				"skill": []
+			},
+			"6": {
+				"health": 48,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -67334,6 +67416,207 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"5608": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"id": "5608",
+		"maxLevel": 10,
+		"name": "Windsage Gama",
+		"picture": "Frog_Elemental_Wind_Spirit_Monk_B",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 11,
+				"health": 28,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"attack": 12,
+				"health": 29,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"7": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"8": {
+				"attack": 14,
+				"health": 32,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"9": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"10": {
+				"attack": 15,
+				"health": 34,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "jam"
 					}
 				]
 			}
@@ -157820,6 +158103,88 @@ var CARDS = {
 			}
 		}
 	},
+	"15239": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 4,
+		"health": 49,
+		"hidden_until": "1562605200000",
+		"id": "15239",
+		"maxLevel": 6,
+		"name": "Brave Grumplo",
+		"picture": "Frog_Goblin_Toad_Tamer_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "counter",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 50,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 51,
+				"skill": []
+			},
+			"5": {
+				"attack": 12,
+				"skill": []
+			},
+			"6": {
+				"health": 52,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -235961,6 +236326,88 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"25239": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 4,
+		"health": 52,
+		"hidden_until": "1562605200000",
+		"id": "25239",
+		"maxLevel": 6,
+		"name": "Gallant Grumplo",
+		"picture": "Frog_Goblin_Toad_Tamer_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "counter",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"4",
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 53,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"health": 54,
+				"skill": []
+			},
+			"4": {
+				"attack": 13,
+				"skill": []
+			},
+			"5": {
+				"health": 55,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 7
 					}
 				]
 			}

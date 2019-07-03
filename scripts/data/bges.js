@@ -1654,6 +1654,147 @@ var BATTLEGROUNDS = {
 		"id": "546",
 		"name": "Common Revenge"
 	},
+	"547": {
+		"desc": "All Common cards have their Health and all Skills multiplied by 5! In addition, they gain Barrage equal to 5 times their base Attack!",
+		"effect": [
+			{
+				"all": "1",
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 4,
+				"rarity": 1
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 4,
+				"rarity": 1
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "armored",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "counter",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "evade",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "leech",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "pierce",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "burn",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "poison",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "heal",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "strike",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "weaken",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "protect",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "rally",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "berserk",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "absorb",
+				"z": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 4,
+				"s": "counterburn",
+				"z": "1"
+			}
+		],
+		"id": "547",
+		"name": "Common Fireworks"
+	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
 		"effect": [
