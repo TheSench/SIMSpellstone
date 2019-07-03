@@ -316,6 +316,13 @@ module.exports = function (grunt) {
 
     grunt.registerTask('html', ['copy:html', 'cacheBust']);
     grunt.registerTask('data', ['concat:data', 'uglify:data']);
+    grunt.registerTask('scripts',  function() {
+        delete grunt.config.data.concat.data;
+        delete grunt.config.data.uglify.data;
+        grunt.task.run('concat');
+        grunt.task.run('uglify');
+        grunt.task.run('html');
+    });
 
     // On watch events configure jshint:all to only run on changed file
     // on watch events configure jshint:all to only run on changed file

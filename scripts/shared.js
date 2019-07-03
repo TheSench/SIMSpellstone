@@ -260,10 +260,10 @@ var makeUnit = (function () {
         new_card.highlighted = [];
         for (var i = 0; i < skillModifiers.length; i++) {
             var skillModifier = skillModifiers[i];
-            if (skillModifier.modifierType == "statChange" && !isToken) {
+            if (skillModifier.modifierType === "statChange" && !isToken) {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var statChange = skillModifier.effects[j];
-                    if (new_card.isInFaction(statChange.y)) {
+                    if (new_card.isInFaction(statChange.y) && new_card.isTargetRarity(statChange.rarity)) {
                         Object.keys(statChange).forEach(function (stat) {
                             new_card[stat] = statChange[stat];
                         });
@@ -281,7 +281,7 @@ var makeUnit = (function () {
                     var evolution = skillModifier.effects[j];
                     for (var key in original_skills) {
                         var skill = original_skills[key];
-                        if (skill.id == evolution.id && skill.all == evolution.all) {
+                        if (skill.id === evolution.id && skill.all == evolution.all && new_card.isTargetRarity(evolution.rarity)) {
                             skill = copy_skill(skill);
                             skill.id = evolution.s;
                             skill.boosted = true;
@@ -293,9 +293,7 @@ var makeUnit = (function () {
             } else if (skillModifier.modifierType === "add_skill") {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var addedSkill = skillModifier.effects[j];
-                    if (new_card.isInFaction(addedSkill.y)) {
-                        if (addedSkill.rarity && new_card.rarity != addedSkill.rarity) continue;
-
+                    if (new_card.isInFaction(addedSkill.y) && new_card.isTargetRarity(addedSkill.rarity)) {
                         var new_skill = {};
                         new_skill.id = addedSkill.id;
                         new_skill.x = addedSkill.x || 0;
@@ -322,7 +320,7 @@ var makeUnit = (function () {
             } else if (skillModifier.modifierType === "scale_attributes" && !isToken) {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var scaling = skillModifier.effects[j];
-                    if (new_card.isInFaction(scaling.y)) {
+                    if (new_card.isInFaction(scaling.y) && new_card.isTargetRarity(scaling.rarity)) {
                         var mult = scaling.mult;
                         var plusAttack = Math.ceil(new_card.attack * mult);
                         new_card.attack += plusAttack;
@@ -334,7 +332,7 @@ var makeUnit = (function () {
             } else if (skillModifier.modifierType === "scale_stat" && !isToken) {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var scaling = skillModifier.effects[j];
-                    if (new_card.isInFaction(scaling.y)) {
+                    if (new_card.isInFaction(scaling.y) && new_card.isTargetRarity(scaling.rarity)) {
                         new_card[skillModifier.scaledStat] += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
                     }
                 }
@@ -569,6 +567,10 @@ var makeUnit = (function () {
                 }
                 return 1;
             }
+        },
+
+        isTargetRarity: function(rarity) {
+            return (rarity === undefined ? true : this.rarity === rarity);
         },
 
         resetTimers: function () {
