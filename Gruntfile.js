@@ -314,6 +314,7 @@ module.exports = function (grunt) {
         grunt.task.run('build');
     });
 
+    grunt.registerTask('html', ['copy:html', 'cacheBust']);
     grunt.registerTask('data', ['concat:data', 'uglify:data']);
 
     // On watch events configure jshint:all to only run on changed file
