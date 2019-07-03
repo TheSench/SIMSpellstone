@@ -51,6 +51,7 @@ describe('Deck Tests', function() {
 
     describe('Bash', function() {
         testDeck('Increases attack', 'QpLQAQDjAC', 'QpLQAQtroB', 100, 'DC');
-        testDeck('Bash only triggers each turn', 'QpLQA4SjAC', 'QpLQA4UcoB', 100, 'DC');
+        testDeck('Bash triggers each turn', 'QpLQA4SjAC', 'QpLQA4UcoB', 100, 'DC');
+        // TODO: Dualstrike test
     });
 });
