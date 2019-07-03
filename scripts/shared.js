@@ -239,7 +239,7 @@ var defaultStatusValues = {
     jammed: false,
     jammedSelf: false,
     silenced: false,
-    valor_triggered: false,
+    bash_triggered: false,
     dualstrike_triggered: false,
     ondeath_triggered: false,
     reanimated: false

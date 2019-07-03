@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 var SKILL_DATA = {
 	"absorb": {
@@ -29,7 +29,7 @@ var SKILL_DATA = {
 		"desc": "Increases damage dealt by the first attack each turn.",
 		"icon": "empower",
 		"name": "Bash",
-		"type": "activation"
+		"type": "passive"
 	},
 	"berserk": {
 		"desc": "After dealing Attack damage, permanently increases Attack.",

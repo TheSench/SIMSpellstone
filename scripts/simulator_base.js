@@ -2828,6 +2828,14 @@ var SIMULATOR = {};
 		// -- CALCULATE DAMAGE --
 		var damage = current_assault.adjustedAttack(); // Get base damage + rally/weaken
 
+		// Bash
+		var bash = 0;
+		if (!current_assault.bash_triggered) {
+			bash = current_assault.bash;
+			current_assault.bash_triggered = true;
+		}
+		damage += bash;
+
 		// Enfeeble
 		var enfeeble = target.enfeebled;
 		damage += enfeeble;
@@ -2837,6 +2845,7 @@ var SIMULATOR = {};
 			if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
 			if (current_assault.attack_valor) echo += ' Valor: +' + current_assault.attack_valor;
 			if (current_assault.attack_rally) echo += ' Rally: +' + current_assault.attack_rally;
+			if (bash) echo += ' Bash: +' + bash;
 			if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
 			if (current_assault.attack_corroded) echo += ' Corrosion: -' + current_assault.attack_corroded;
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;

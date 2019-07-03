@@ -314,6 +314,8 @@ module.exports = function (grunt) {
         grunt.task.run('build');
     });
 
+    grunt.registerTask('data', ['concat:data', 'uglify:data']);
+
     // On watch events configure jshint:all to only run on changed file
     // on watch events configure jshint:all to only run on changed file
     grunt.event.on('watch', function (action, filepath) {
