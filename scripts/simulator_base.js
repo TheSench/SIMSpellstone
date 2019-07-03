@@ -2702,6 +2702,7 @@ var SIMULATOR = {};
 			current_assault.attack_weaken = 0;
 			current_assault.nullified = 0;
 			current_assault.dualstrike_triggered = false;
+			current_assault.bash_triggered = false;
 			current_assault.silenced = false;
 
 			// Regenerate
