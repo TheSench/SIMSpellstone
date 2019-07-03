@@ -71,7 +71,7 @@ var SIM_CONTROLLER = (function () {
         }
 
         if (echo) {
-            outputTurns(echo);
+            outputTurns(echo, true);
         }
         setSimStatus(msg);
 

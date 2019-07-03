@@ -293,7 +293,7 @@ function outp(text) {
 	$("#content").html(text);
 }
 
-function outputTurns(turnData) {
+function outputTurns(turnData, showAll) {
 	if (closeDiv) {
 		turnData += "</div>";
 		closeDiv = false;
@@ -313,7 +313,7 @@ function outputTurns(turnData) {
 		$(".turn-info").hide().eq(turn).show();
 	}).val(lastTurn).change();
 	var hidden = true;
-	$("#show-turns").click(function () {
+	var showTurnsBtn = $("#show-turns").click(function () {
 		hidden = !hidden;
 		if (hidden) {
 			var turn = $("#turn-picker").val();
@@ -326,6 +326,7 @@ function outputTurns(turnData) {
 			this.value = "Show One";
 		}
 	});
+	if(showAll) showTurnsBtn.click();
 }
 
 // Return table of simulation results
