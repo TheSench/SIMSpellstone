@@ -103,7 +103,7 @@ var SIMULATOR = {};
 	}
 
 	function getAlliedUnits(card, field) {
-		field[card.owner].assaults;
+		return field[card.owner].assaults;
 	}
 
 	function getEnemyUnits(card, field) {
