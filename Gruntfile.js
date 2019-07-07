@@ -308,12 +308,6 @@ module.exports = function (grunt) {
     
     grunt.registerTask('build', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy', 'cacheBust']);
 
-    grunt.registerTask('default', function() {
-        delete grunt.config.data.concat.data;
-        delete grunt.config.data.uglify.data;
-        grunt.task.run('build');
-    });
-
     grunt.registerTask('html', ['copy:html', 'cacheBust']);
     grunt.registerTask('data', ['concat:data', 'uglify:data']);
     grunt.registerTask('scripts',  function() {
@@ -323,6 +317,8 @@ module.exports = function (grunt) {
         grunt.task.run('uglify');
         grunt.task.run('html');
     });
+
+    grunt.registerTask('default', ['scripts']);
 
     // On watch events configure jshint:all to only run on changed file
     // on watch events configure jshint:all to only run on changed file

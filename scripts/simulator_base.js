@@ -97,13 +97,18 @@ var SIMULATOR = {};
 		return [targets[targetIndex]];
 	}
 
-	function get_p(card) {
-		return card.owner;
+	function get_o(card) {
+		if (card.owner === 'cpu') return 'player';
+		if (card.owner === 'player') return 'cpu';
 	}
 
-	function get_o(card) {
-		if (card.owner == 'cpu') return 'player';
-		if (card.owner == 'player') return 'cpu';
+	function getAlliedUnits(card, field) {
+		field[card.owner].assaults;
+	}
+
+	function getEnemyUnits(card, field) {
+		if (card.owner === 'cpu') return field['player'].assaults;
+		if (card.owner === 'player') return field['cpu'].assaults;
 	}
 
 	// Deal damage to card
@@ -294,22 +299,20 @@ var SIMULATOR = {};
 		// - Target must be an assault
 		burn: function burn(src_card, skill) {
 
-			var o = get_o(src_card);
-
-			var field_o_assaults = field[o].assaults;
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var targets;
 			switch (skill.id) {
 				case 'scorchbreath':
 					var startKey = Math.max(0, src_card.key - 1);
-					var endKey = Math.min(field_o_assaults.length, src_card.key + 2);
-					targets = field_o_assaults.slice(startKey, endKey);
+					var endKey = Math.min(enemyUnits.length, src_card.key + 2);
+					targets = enemyUnits.slice(startKey, endKey);
 					break;
 				case 'burnself':
 					targets = [src_card];
 					break;
 				default:
-					targets = field_o_assaults.slice(src_card.key, src_card.key + 1);
+					targets = enemyUnits.slice(src_card.key, src_card.key + 1);
 					break;
 			}
 			if (!targets.length) return 0;
@@ -357,18 +360,14 @@ var SIMULATOR = {};
 		protect: function (src_card, skill, additional, additionalDebug, onlyOnDelay) {
 
 			var faction = skill.y;
+			var rarity = skill.z;
 
-			var p = get_p(src_card);
-
-			var protect = skill.x;
-			var all = skill.all;
-
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (!onlyOnDelay || !target.isActive())) {
 					targets.push(key);
 				}
@@ -377,17 +376,20 @@ var SIMULATOR = {};
 			// No Targets
 			if (!targets.length) return 0;
 
+			var all = skill.all;
 			// Check All
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
+
+			var protect = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_p_assaults[targets[key]];
+				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
 				if (target.nullified) {
@@ -427,16 +429,13 @@ var SIMULATOR = {};
 		// Wing Guard
 		// - Targets self and leftmost ally
 		wingward: function (src_card, skill) {
-			var p = get_p(src_card);
 
-			var wingward = skill.x;
-
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			// Targets self and leftmost ally
 			var targets = [];
 			for (var key = 0; key < src_card.key; key++) {
-				var target = field_p_assaults[key];
+				var target = alliedUnits[key];
 				if (target.isAlive()) {
 					targets.push(key);
 					break;
@@ -444,21 +443,14 @@ var SIMULATOR = {};
 			}
 			targets.push(src_card.key);
 
+			var wingward = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, wingward);
 			wingward += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_p_assaults[targets[key]];
-				/*
-				// Check Nullify
-				if (target.nullified) {
-					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
-					continue;
-				}
-				*/
+				var target = alliedUnits[targets[key]];
 				affected++;
 
 				target.protected += wingward;
@@ -484,18 +476,16 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		heal: function (src_card, skill, invigorate) {
 
-			var p = get_p(src_card);
-
 			var faction = skill.y;
-			var heal = skill.x;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)
 					&& (all || target.isDamaged() 
 						|| (invigorate && (!target.invigorated)))) {
 					targets.push(key);
@@ -516,7 +506,7 @@ var SIMULATOR = {};
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_p_assaults[targets[key]];
+				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
 				if (target.nullified) {
@@ -573,18 +563,16 @@ var SIMULATOR = {};
 		},
 		strike: function (src_card, skill, poison) {
 
-			var o = get_o(src_card);
-
-			var strike = skill.x;
 			var faction = skill.y;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_x_assaults = field[o].assaults;
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)) {
+			for (var key = 0, len = enemyUnits.length; key < len; key++) {
+				var target = enemyUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)) {
 					targets.push(key);
 				}
 			}
@@ -597,13 +585,14 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
+			var strike = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, strike);
 			strike += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = enemyUnits[targets[key]];
 
 				// Check Evade
 				if (target.invisible) {
@@ -658,18 +647,16 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		intensify: function (src_card, skill, poison) {
 
-			var o = get_o(src_card);
-
-			var intensify = skill.x;
 			var faction = skill.y;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_x_assaults = field[o].assaults;
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)
+			for (var key = 0, len = enemyUnits.length; key < len; key++) {
+				var target = enemyUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)
 					&& (target.scorched || target.poisoned)) {
 					targets.push(key);
 				}
@@ -683,13 +670,14 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
+			var intensify = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, intensify);
 			intensify += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = enemyUnits[targets[key]];
 
 				var intensifiedFields = (target.scorched ? "scorch" : "");
 				intensifiedFields += (target.poisoned ? (intensifiedFields ? " and poison" : "poison") : "");
@@ -727,18 +715,16 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		ignite: function (src_card, skill, poison) {
 
-			var o = get_o(src_card);
-
-			var ignite = skill.x;
 			var faction = skill.y;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_x_assaults = field[o].assaults;
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)) {
+			for (var key = 0, len = enemyUnits.length; key < len; key++) {
+				var target = enemyUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)) {
 					targets.push(key);
 				}
 			}
@@ -751,13 +737,14 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
+			var ignite = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, ignite);
 			ignite += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = enemyUnits[targets[key]];
 
 				// Check Evade
 				if (target.invisible) {
@@ -795,17 +782,14 @@ var SIMULATOR = {};
 		},
 		jam: function jam(src_card, skill) {
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
-
 			var all = skill.all;
 
-			var field_x_assaults = field[o].assaults;
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var targets = [];
 
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
+			for (var key = 0, len = enemyUnits.length; key < len; key++) {
+				var target = enemyUnits[key];
 				if (target.isAlive()
 					&& (all || (target.isActiveNextTurn() && target.isUnjammed()))) {
 					targets.push(key);
@@ -823,7 +807,7 @@ var SIMULATOR = {};
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = enemyUnits[targets[key]];
 
 				// Check Evade
 				if (target.invisible) {
@@ -854,23 +838,14 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		frost: function (src_card, skill) {
 
-			var p = get_p(src_card);
-			var o = get_o(src_card);
-
-			var frost = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, frost);
-			frost += enhanced;
-
-			var all = skill.all;
-
-			var field_x_assaults = field[o]['assaults'];
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var targets = [];
 
 			var i = src_card.key - 1;
 			var end = i + 2;
 			for (; i <= end; i++) {
-				var target = field_x_assaults[i];
+				var target = enemyUnits[i];
 				if (target && target.isAlive()) {
 					targets.push(i);
 				}
@@ -880,9 +855,12 @@ var SIMULATOR = {};
 			if (!targets.length) return 0;
 
 			var affected = 0;
+			var frost = skill.x;
+			var enhanced = getEnhancement(src_card, skill.id, frost);
+			frost += enhanced;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = enemyUnits[targets[key]];
 
 				// Check Evade
 				if (target.invisible) {
@@ -920,13 +898,9 @@ var SIMULATOR = {};
 
 		heartseeker: function (src_card, skill) {
 
-			var faction = skill.y;
-
-			var o = get_o(src_card);
-
 			var heartseeker = skill.x;
 
-			var target = field[o].assaults[src_card.key];
+			var target = getEnemyUnits(src_card, field)[src_card.key];
 
 			// No Targets
 			if (!target) return 0;
@@ -948,20 +922,15 @@ var SIMULATOR = {};
 		enfeeble: function (src_card, skill) {
 
 			var faction = skill.y;
-
-			var p = get_p(src_card);
-			var o = get_o(src_card);
-
-			var enfeeble = skill.x;
-
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_x_assaults = field[o]['assaults'];
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)) {
+			for (var key = 0, len = enemyUnits.length; key < len; key++) {
+				var target = enemyUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					targets.push(key);
 				}
 			}
@@ -973,13 +942,15 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
+
+			var enfeeble = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, enfeeble);
 			enfeeble += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = enemyUnits[targets[key]];
 
 				// Check Evade
 				if (target.invisible) {
@@ -1012,28 +983,25 @@ var SIMULATOR = {};
 		weaken: function (src_card, skill) {
 
 			var faction = skill.y;
+			var rarity = skill.z;
 
-			var o;
+			var potentialTargets;
 			switch (skill.id) {
 				case 'weakenself':
-					o = get_p(src_card);
+					potentialTargets = getAlliedUnits(src_card, field);
 					break;
 				default:
-					o = get_o(src_card);
+					potentialTargets = getEnemyUnits(src_card, field);
 					break;
 			}
 
-			var weaken = skill.x;
-
 			var all = skill.all;
-
-			var field_x_assaults = field[o]['assaults'];
 
 			var targets = [];
 			var getTargets = function (include0Strength) {
-				for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-					var target = field_x_assaults[key];
-					if (target.isAlive() && target.isInFaction(faction)
+				for (var key = 0, len = potentialTargets.length; key < len; key++) {
+					var target = potentialTargets[key];
+					if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 						&& (all || (target.isActiveNextTurn() && target.isUnjammed() && (include0Strength || target.hasAttack())))) {
 						targets.push(key);
 					}
@@ -1052,13 +1020,15 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
+
+			var weaken = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, weaken);
 			weaken += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = potentialTargets[targets[key]];
 
 				// Check Evade
 				if (target.invisible) {
@@ -1128,20 +1098,15 @@ var SIMULATOR = {};
 		enlarge: function (src_card, skill) {
 
 			var faction = skill.y;
-
-			var p = get_p(src_card);
-
-			var rally = skill.x;
-			var enhanced = getEnhancement(src_card, skill.id, rally);
-			rally += enhanced;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (all || (target.isUnjammed() && target.isActive()))) {
 					targets.push(key);
 				}
@@ -1155,10 +1120,13 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
+			var rally = skill.x;
+			var enhanced = getEnhancement(src_card, skill.id, rally);
+			rally += enhanced;
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_p_assaults[targets[key]];
+				var target = alliedUnits[targets[key]];
 
 				var rally_amt = rally;
 				if (!rally_amt) {
@@ -1185,19 +1153,16 @@ var SIMULATOR = {};
 		rally: function (src_card, skill) {
 
 			var faction = skill.y;
-
-			var p = get_p(src_card);
-
-			var rally = skill.x;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
 
-				if (target.isAlive() && target.isInFaction(faction)
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (all || (target.isActive() && target.isUnjammed()))) {
 					targets.push(key);
 				}
@@ -1210,6 +1175,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
+
+			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
@@ -1217,7 +1184,7 @@ var SIMULATOR = {};
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 
-				var target = field_p_assaults[targets[key]];
+				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
 				if (target.nullified) {
@@ -1250,14 +1217,14 @@ var SIMULATOR = {};
 		// - Can be enhanced?
 		radiance: function (src_card, skill) {
 
-			var p = get_p(src_card);
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill.y;
+			var rarity = skill.z;
 
 			var target_key = src_card.key - 1;
 			var len = target_key + 2;
@@ -1267,8 +1234,8 @@ var SIMULATOR = {};
 
 			while (target_key <= len) {
 				// Check left
-				var target = field_p_assaults[target_key];
-				if (target && target.isInFaction(faction)) {
+				var target = alliedUnits[target_key];
+				if (target && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
@@ -1293,14 +1260,14 @@ var SIMULATOR = {};
 		},
 		legion: function (src_card, skill) {
 
-			var p = get_p(src_card);
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill.y;
+			var rarity = skill.z;
 
 			var target_key = src_card.key - 1;
 			var len = target_key + 2;
@@ -1310,8 +1277,8 @@ var SIMULATOR = {};
 
 			while (target_key <= len) {
 				// Check left
-				var target = field_p_assaults[target_key];
-				if (target && target.isActive() && target.isInFaction(faction)) {
+				var target = alliedUnits[target_key];
+				if (target && target.isActive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					// Check Nullify
 					if (target.nullified) {
 						target.nullified--;
@@ -1336,14 +1303,14 @@ var SIMULATOR = {};
 		// - Can be enhanced?
 		fervor: function (src_card, skill) {
 
-			var p = get_p(src_card);
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var rally = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
 			var faction = skill.y;
+			var rarity = skill.z;
 
 			var fervorAmount = 0;
 
@@ -1352,8 +1319,8 @@ var SIMULATOR = {};
 			if (target_key < 0) target_key += 2;
 
 			while (target_key <= len) {
-				var target = field_p_assaults[target_key];
-				if (target && target.isInFaction(faction)) {
+				var target = alliedUnits[target_key];
+				if (target && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					fervorAmount += rally;
 				}
 				target_key += 2;
@@ -1379,21 +1346,20 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		barrage: function (src_card, skill) {
 
-			var o = get_o(src_card);
-
 			var barrages = skill.x;
 			var faction = skill.y;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_x_assaults = field[o].assaults;
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var enhanced = getEnhancement(src_card, skill.id, barrages);
 			barrages += enhanced;
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
-				for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-					var target = field_x_assaults[key];
-					if (target.isAlive() && target.isInFaction(faction)) {
+				for (var key = 0, len = enemyUnits.length; key < len; key++) {
+					var target = enemyUnits[key];
+					if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 						targets.push(key);
 					}
 				}
@@ -1410,7 +1376,7 @@ var SIMULATOR = {};
 
 				var strike = 1;
 				for (var key = 0, len = targets.length; key < len; key++) {
-					var target = field_x_assaults[targets[key]];
+					var target = enemyUnits[targets[key]];
 
 					// Check Evade
 					if (target.invisible) {
@@ -1450,22 +1416,16 @@ var SIMULATOR = {};
 		enhance: function (src_card, skill) {
 
 			var faction = skill.y;
-
-			var p = get_p(src_card);
-			var o = get_o(src_card);
-
-			var x = skill.x;
-			var faction = skill.y;
+			var rarity = skill.z;
 			var s = skill.s;
-			var mult = skill.mult;
 			var all = skill.all;
 
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 			var require_active_turn = requiresActiveTurn(s);
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))
 					&& target.hasSkill(s)) {
 					targets.push(key);
@@ -1482,10 +1442,12 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
+			var x = skill.x;
+			var mult = skill.mult;
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_p_assaults[targets[key]];
+				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
 				if (target.nullified) {
@@ -1516,18 +1478,16 @@ var SIMULATOR = {};
 		// - Can be enhanced
 		enrage: function (src_card, skill) {
 
-			var p = get_p(src_card);
-
 			var faction = skill.y;
-			var enrage = skill.x;
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)) {
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					targets.push(key);
 				}
 			}
@@ -1539,13 +1499,15 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
+			
+			var enrage = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_p_assaults[targets[key]];
+				var target = alliedUnits[targets[key]];
 				var amount = enrage;
 
 				// Check Nullify
@@ -1580,21 +1542,16 @@ var SIMULATOR = {};
 		imbue: function (src_card, skill) {
 
 			var faction = skill.y;
-
-			var p = get_p(src_card);
-			var o = get_o(src_card);
-
-			var x = skill.x;
-			var c = skill['c'];
+			var rarity = skill.z;
 			var s = skill['s'];
 			var all = skill.all;
 
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(src_card, field);
 			var require_active_turn = requiresActiveTurn(s);
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))) {
 					targets.push(key);
 				}
@@ -1605,20 +1562,19 @@ var SIMULATOR = {};
 				return 0;
 			}
 
-			var skill = {
-				id: s,
-				x: x
-			};
-
 			// Check All
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
 
+			var skill = {
+				id: s,
+				x: skill.x
+			};
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_p_assaults[targets[key]];
+				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
 				if (target.nullified) {
@@ -1646,21 +1602,16 @@ var SIMULATOR = {};
 		mark: function (src_card, skill) {
 
 			var faction = skill.y;
-
-			var p = get_p(src_card);
-			var o = get_o(src_card);
-
-			var mark = skill.x;
-
+			var rarity = skill.z;
 			var all = skill.all;
 
-			var field_x_assaults = field[o]['assaults'];
+			var enemyUnits = getEnemyUnits(src_card, field);
 
 			var markTarget = src_card.mark_target;
 			var targets = [];
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive() && target.isInFaction(faction)) {
+			for (var key = 0, len = enemyUnits.length; key < len; key++) {
+				var target = enemyUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					// Can only mark one target
 					if (target.uid === markTarget) {
 						targets = [key];
@@ -1677,13 +1628,15 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
+			
+			var mark = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, mark);
 			mark += enhanced;
 
 			var affected = 0;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = field_x_assaults[targets[key]];
+				var target = enemyUnits[targets[key]];
 
 				affected++;
 
@@ -1697,78 +1650,6 @@ var SIMULATOR = {};
 			}
 
 			return affected;
-		},
-
-		snaretongue: function (src_card, skill) {
-
-			var faction = skill.y;
-
-			var p = get_p(src_card);
-			var o = get_o(src_card);
-
-			var field_x_assaults = field[o]['assaults'];
-
-			var markTarget = src_card.mark_target;
-			var targets = [];
-			for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-				var target = field_x_assaults[key];
-				if (target.isAlive()
-					&& target.isInFaction(faction)) {
-					targets.push(key);
-				}
-			}
-
-			// No Targets
-			if (!targets.length) return 0;
-
-			// Find weakest
-			var target = field_x_assaults[targets.reduce(function (weakest, target) {
-				return ((field_x_assaults[target].health_left < field_x_assaults[weakest].health_left) ? target : weakest);
-			}, targets[0])];
-
-			var toKey = src_card.key;
-			var fromKey = target.key;
-			if (toKey === toKey) {
-				// No change in position
-				if (debug) echo += debug_name(src_card) + ' activates snaretongue and keeps ' + debug_name(target) + ' in front of it<br>';
-				return false;
-			}
-
-			field_x_assaults.splice(target.key, 1);
-			if (field_x_assaults.length < toKey) {
-				CARDS[0] = CARDS[0] || {
-					"id": "0",
-					"name": "Filler",
-					"picture": "",
-					"rarity": "0",
-					"set": "9999",
-					"card_type": "0",
-					"type": "0",
-					"sub_type": [],
-					"health": 1,
-					"attack": 0,
-					"cost": 0,
-					"maxLevel": 1,
-					"skill": []
-				};
-				var filler = getCardByID({ id: 0, level: 1 });
-				filler.name = "filler";
-				filler.health_left = 0;
-				for (var i = field_x_assaults.length; i < toKey; i++) {
-					field_x_assaults.push(filler);
-				}
-			}
-			field_x_assaults.splice(toKey, 0, target);
-			for (var i = Math.min(toKey, fromKey), end = Math.max(toKey, fromKey); i <= end; i++) {
-				field_x_assaults[i].key = i;
-			}
-
-			if (debug) echo += debug_name(src_card) + ' activates snaretongue and pulls ' + debug_name(target) + ' in front of it<br>';
-
-			// Set countdown so skill can't trigger twice on dual-strike turn
-			skill.countdown = 1;
-
-			return 1;
 		}
 	};
 
@@ -1867,12 +1748,11 @@ var SIMULATOR = {};
 
 	var onAttackSkills = {
 		swarm: function (attacker, defender) {
-			var p = get_p(attacker);
-			var field_p_assaults = field[p].assaults;
+			var alliedUnits = getAlliedUnits(attacker, field);
 
 			var targets = [];
-			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-				var target = field_p_assaults[key];
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
 				if (target.isAlive() && target.isActive() && !target.isTower()) {
 					var adjustedAttack = target.adjustedAttack();
 					if (!weakest || adjustedAttack < weakest) {
