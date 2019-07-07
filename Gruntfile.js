@@ -305,9 +305,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-cache-bust');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    
-    grunt.registerTask('build', ['clean', /*'jshint', */'concat', 'sass', 'cssmin', 'imagemin', 'uglify', 'copy', 'cacheBust']);
-
     grunt.registerTask('html', ['copy:html', 'cacheBust']);
     grunt.registerTask('data', ['concat:data', 'uglify:data']);
     grunt.registerTask('scripts',  function() {
@@ -317,6 +314,7 @@ module.exports = function (grunt) {
         grunt.task.run('uglify');
         grunt.task.run('html');
     });
+    grunt.registerTask('build', ['clean', /*'jshint', */'sass', 'cssmin', 'imagemin', 'scripts']);
 
     grunt.registerTask('default', ['scripts']);
 
