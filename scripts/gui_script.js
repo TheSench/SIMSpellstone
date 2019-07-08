@@ -40,6 +40,9 @@ window.addEventListener('error', function (message, url, linenumber) {
 	if (getraid) err_msg += "Raid ID: " + getraid + "\n";
 	if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
 	if (games) err_msg += "Sims run so far: " + games + "\n";
+	try {
+		err_msg += "Link to reproduce: " + generate_link() + "\n";
+	} catch (_) {}
 
 	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
 
@@ -98,14 +101,21 @@ function processQueryString() {
 	var campaignID = _GET('campaign');
 	var missionID = _GET('mission');
 	var raidID = _GET('raid');
-	if (locationID) $('#location').val(locationID).change();
+	if (missionID) {
+		if (!campaignID) {
+			campaignID = Object.keys(CAMPAIGNS).filter(function isCampaign(campaignID) {
+				return CAMPAIGNS[campaignID].missions.indexOf(missionID) >= 0;
+			})[0];
+		}
+	}
 	if (campaignID) {
 		if (!locationID) {
 			locationID = CAMPAIGNS[campaignID].location_id;
 			$('#location').val(locationID).change();
 		}
-		$('#campaign').val(campaignID).change();
 	}
+	if (locationID) $('#location').val(locationID).change();
+	if (campaignID) $('#campaign').val(campaignID).change();
 	if (missionID) {
 		$('#mission_level').val(_GET('mission_level') || 7);
 		$('#mission').val(missionID).change();

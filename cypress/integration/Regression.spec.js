@@ -27,5 +27,35 @@ describe("Regression Tests", function() {
       "gn5AAQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqCQjiqC",
       "4B5B"
     );
+    crashTest(
+      "QpLQA4pOoB",
+      "QpLQA4pOoB",
+      "yB3B"
+    );
+    crashTest(
+      "QXvAAAqQSBgq7kCWmxmCYlxmCAvSqBgopjCqSvpCQi5pCgBfyIAsZZGY0wgCwLhAFQvouHQTcAFYarhC",
+      "&mission=5803",
+      "yB3B"
+    );
+    crashTest(
+      "gmQAAw5aSBw5aSBIWQnCYLtTBApvDCoTxgCYosoCAM5lCAVpCC4D0lCQBYkCQOsDCIGnDCANimCo3NoC",
+      "&mission=1509",
+      "wBxB"
+    );
+    crashTest(
+      "ov!AA9ZhhCAqrhCxMvRGwMvRG8b!oH6w8oHKozkHJozkHxhnUGxhnUGm52oCAM5lCAM5lCuG0lC36aSB",
+      "&mission=1507",
+      "sB2B"
+    );
+    crashTest(
+      "QXvAAwkoSB4qdjCYhLSBw5aSBAKlSBw8XmCYlxmCoZqiCofgmCgt2mCw9AnCAzijCoFcTBQTjrBYborB",
+      "&mission=5468",
+      "qByB"
+    );
+    crashTest(
+      "",
+      "&mission=5803",
+      ""
+    );
   });
 });
