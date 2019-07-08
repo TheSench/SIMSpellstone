@@ -33,7 +33,6 @@ describe('Debug Tests', function() {
 });
 
 describe('Deck Tests', function() {
-
     testDeck('(1/1/1) vs (1/1/1) ', 'QpLQA4DowA', 'QpLQA4DowA', 100);
 
     // wins if 1/1/1 is dropped first
