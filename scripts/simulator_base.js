@@ -1569,9 +1569,10 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
+			var x = skill.x;
 			var skill = {
 				id: s,
-				x: skill.x
+				x: x
 			};
 			var affected = 0;
 
