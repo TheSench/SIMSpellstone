@@ -500,6 +500,8 @@ var SIMULATOR = {};
 			if (!all) {
 				targets = choose_random_target(targets);
 			}
+
+			var heal = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, heal);
 			heal += enhanced;
 
