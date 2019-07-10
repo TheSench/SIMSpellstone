@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
   <!-- Commanders       - 1-899 -->
@@ -90,8 +90,10 @@
     <desc>Increases the effect of this Skill for a random ally creature.</desc>
     <desc_all>Increases the effect of this Skill for all ally creatures.</desc_all>
     <desc_faction>Increases the effect of this Skill for a random {y} ally.</desc_faction>
-    <desc_all_faction>Increases the effect of this Skill for all {y} allies.</desc_all_faction>=
-		<hidden>1</hidden></skillType>
+    <desc_all_faction>Increases the effect of this Skill for all {y} allies.</desc_all_faction>
+    =
+    <hidden>1</hidden>
+  </skillType>
   <!-- Defensive -->
   <skillType>
     <id>evade</id>
@@ -453,8 +455,8 @@
   <skillType>
     <id>evadebarrier</id>
     <order>1</order>
-    <icon>avian_barrier</icon>
-    <name>Wing Ward</name>
+    <icon>mystic_barrier</icon>
+    <name>Mystic Barrier</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Grants Barrier and Invisibility to a random ally creature.</desc>
     <hidden>1</hidden>
@@ -477,6 +479,53 @@
     <name>Heartseeker</name>
     <desc>Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>radiance</id>
+    <order>145</order>
+    <icon>radiance</icon>
+    <name>radiance</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <desc>At start of turn, grant adjacent allies Legion and half as much Barrier.</desc>
+    <desc_faction>At start of turn, grant adjacent {y} allies Legion and half as much Barrier.</desc_faction>
+    <status_flag>attack_boost</status_flag>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>5</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>devour</id>
+    <order>285</order>
+    <icon>devour</icon>
+    <name>devour</name>
+    <desc>After dealing Attack damage, permanently increases Attack and heals self.</desc>
+    <desc_faction>Berserk and heal.</desc_faction>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>5</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>invigorate</id>
+    <order>125</order>
+    <icon>invigorate</icon>
+    <name>invigorate</name>
+    <desc>Heals a random ally creature and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc>
+    <desc_faction>Heals a random {y} ally and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_faction>
+    <desc_all>Heals all ally creatures and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_all>
+    <desc_all_faction>Heals all {y} allies and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_all_faction>
+    <attributes x="1" y="1" all="1" c="0" s="0" />
+    <balance_points>5</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>wingward</id>
+    <order>1</order>
+    <icon>avian_barrier</icon>
+    <name>Wing Guard</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
     <hidden>1</hidden>
   </skillType>
   <!-- Special -->
@@ -587,6 +636,36 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
+    <id>swarm</id>
+    <order>1</order>
+    <icon>berserk</icon>
+    <name>Swarm</name>
+    <desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>6</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>vampirism</id>
+    <order>1</order>
+    <icon>siphon</icon>
+    <name>Vampirism</name>
+    <desc>Deals damage to opposing creature, even while on delay. This damage cannot be increased. After dealing damage, heals self.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>6</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>bash</id>
+    <order>1</order>
+    <icon>empower</icon>
+    <name>Bash</name>
+    <desc>Increases damage dealt by the first attack each turn.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>3</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
     <id>displayEffect</id>
     <order>0</order>
     <upkeep>1</upkeep>
@@ -654,8 +733,8 @@
     <id>reanimate</id>
     <order>500</order>
     <icon>reanimate</icon>
-    <name>A Knight's Fate</name>
-    <desc>On death, is subject to a cruel fate.</desc>
+    <name>Reanimate</name>
+    <desc>After dying the first time, revives self, healing and removing all effects.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <status_flag>reanimated</status_flag>
     <hidden>1</hidden>
@@ -685,8 +764,8 @@
   <!-- <icon_bundle>	bundle tag -->
   <unitType>
     <id>0</id>
-    <name></name>
-    <icon></icon>
+    <name />
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <unitType>
@@ -758,13 +837,13 @@
   <unitType>
     <id>14</id>
     <name>Bear</name>
-    <icon></icon>
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <unitType>
     <id>15</id>
     <name>Token</name>
-    <icon></icon>
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <unitType>
@@ -775,7 +854,7 @@
   <unitType>
     <id>17</id>
     <name>Knight</name>
-    <icon></icon>
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <!-- =================== -->
@@ -866,3 +945,4 @@
     <visible>0</visible>
   </cardSet>
 </root>
+

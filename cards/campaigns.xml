@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- 
 	<find_item id='X' drop_per_energy='Y' />
@@ -6324,7 +6324,7 @@
     </rewards>
     <find_item id="3077" drop_per_energy=".8" />
   </campaign>
-  <!-- Campaign Event 12 -->
+  <!-- Campaign Event 12 Elemental -->
   <campaign>
     <id>1183</id>
     <name>Mysterious Light</name>
@@ -6477,6 +6477,801 @@
       <item level="7" id="3081" />
     </rewards>
     <find_item id="3080" drop_per_energy=".8" />
+  </campaign>
+  <!-- Halloween Undead 2018 -->
+  <campaign>
+    <id>1188</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Legend of Pumpking</name>
+    <icon id="pumpkin" bundle="75" />
+    <!-- <locked_start_time>1509210000</locked_start_time>	 Sat, 28 Oct 2017 17:00:00 GMT -->
+    <location_id>18</location_id>
+    <x>500</x>
+    <y>160</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6095</mission_id>
+      <mission_id>6096</mission_id>
+      <mission_id>6097</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12060" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="12060" />
+    </rewards>
+    <find_item id="3080" drop_per_energy=".4" />
+  </campaign>
+  <!-- Campaign Event 13 dragons -->
+  <campaign>
+    <id>1189</id>
+    <name>Home of Dragons</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1542301200</locked_start_time>
+    <!-- Thu, Nov 15 2018 17:00:00 -->
+    <location_id>19</location_id>
+    <x>110</x>
+    <y>325</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6098</mission_id>
+      <mission_id>6099</mission_id>
+      <mission_id>6100</mission_id>
+      <mission_id>6101</mission_id>
+      <mission_id>6102</mission_id>
+      <mission_id>6103</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2142" />
+      <card level="5" id="512" />
+      <card level="6" id="2046" />
+      <item level="7" id="3084" />
+    </rewards>
+    <find_item id="3083" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1190</id>
+    <name>Dragon Fossils</name>
+    <campaign_req id="1189" level="1" />
+    <locked_start_time>1543510800</locked_start_time>
+    <!-- Thu, Nov 29 2018 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>19</location_id>
+    <x>420</x>
+    <y>273</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6104</mission_id>
+      <mission_id>6105</mission_id>
+      <mission_id>6106</mission_id>
+      <mission_id>6107</mission_id>
+      <mission_id>6108</mission_id>
+      <mission_id>6109</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2141" />
+      <card level="5" id="512" />
+      <card level="6" id="2004" />
+      <item level="7" id="3084" />
+    </rewards>
+    <find_item id="3083" drop_per_energy=".4" />
+  </campaign>
+  <!-- Boss Node A Promise Left Behind -->
+  <campaign>
+    <id>1191</id>
+    <name>A Promise Left Behind</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1189" level="1" />
+    <locked_start_time>1543510800</locked_start_time>
+    <!-- Thu, Nov 29 2018 17:00:00 -->
+    <battleground_id>2054</battleground_id>
+    <location_id>19</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>570</x>
+    <y>180</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6110</mission_id>
+      <mission_id>6111</mission_id>
+      <mission_id>6112</mission_id>
+      <mission_id>6113</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3085" />
+      <item level="5" id="3085" />
+      <item level="6" id="3085" />
+      <item level="7" id="3085" />
+    </rewards>
+    <find_item id="3083" drop_per_energy=".4" />
+  </campaign>
+  <!-- Campaign Event 13 dragons weeks 5-8 -->
+  <campaign>
+    <id>1192</id>
+    <name>Living Fossil</name>
+    <campaign_req id="1190" level="1" />
+    <locked_start_time>1544720400</locked_start_time>
+    <!-- Thu, Dec 13 2018 17:00:00 -->
+    <battleground_id>2055</battleground_id>
+    <location_id>19</location_id>
+    <x>438</x>
+    <y>513</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6114</mission_id>
+      <mission_id>6115</mission_id>
+      <mission_id>6116</mission_id>
+      <mission_id>6117</mission_id>
+      <mission_id>6118</mission_id>
+      <mission_id>6119</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2143" />
+      <card level="5" id="512" />
+      <card level="6" id="2124" />
+      <item level="7" id="3084" />
+    </rewards>
+    <find_item id="3083" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1193</id>
+    <name>Unknown Tribe</name>
+    <campaign_req id="1192" level="1" />
+    <locked_start_time>1545930000</locked_start_time>
+    <!-- Thu, Dec 27 2018 17:00:00 -->
+    <battleground_id>2056</battleground_id>
+    <location_id>19</location_id>
+    <x>620</x>
+    <y>460</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6120</mission_id>
+      <mission_id>6121</mission_id>
+      <mission_id>6122</mission_id>
+      <mission_id>6123</mission_id>
+      <mission_id>6124</mission_id>
+      <mission_id>6125</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2144" />
+      <card level="5" id="512" />
+      <card level="6" id="2107" />
+      <item level="7" id="3084" />
+    </rewards>
+    <find_item id="3083" drop_per_energy=".8" />
+  </campaign>
+  <!-- Christmas Event 2018 -->
+  <campaign>
+    <id>1194</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Winter Star's Eve</name>
+    <icon id="santaHat" bundle="41" />
+    <location_id>19</location_id>
+    <x>857</x>
+    <y>242</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6126</mission_id>
+      <mission_id>6127</mission_id>
+      <mission_id>6128</mission_id>
+      <mission_id>6129</mission_id>
+      <mission_id>6130</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1004" />
+      <item level="2" id="2527" />
+      <item level="3" id="2527" />
+      <card level="4" id="512" />
+      <item level="5" id="104013" number="5" />
+      <item level="6" id="104013" number="5" />
+      <item level="7" id="104013" number="10" />
+    </rewards>
+    <find_item id="3083" drop_per_energy=".2" />
+  </campaign>
+  <!-- Campaign Event 14 angels -->
+  <campaign>
+    <id>1195</id>
+    <name>Purity and Corruption</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1547139600</locked_start_time>
+    <!-- Thu, Jan 10 2019 17:00:00 -->
+    <location_id>20</location_id>
+    <x>90</x>
+    <y>365</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6131</mission_id>
+      <mission_id>6132</mission_id>
+      <mission_id>6133</mission_id>
+      <mission_id>6134</mission_id>
+      <mission_id>6135</mission_id>
+      <mission_id>6136</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2146" />
+      <card level="5" id="512" />
+      <card level="6" id="2085" />
+      <item level="7" id="3087" />
+    </rewards>
+    <find_item id="3086" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1196</id>
+    <name>Warrior's Path</name>
+    <campaign_req id="1195" level="1" />
+    <locked_start_time>1548349200</locked_start_time>
+    <!--  Thu, Jan 24 2019 17:00:00 -->
+    <battleground_id>2057</battleground_id>
+    <location_id>20</location_id>
+    <x>300</x>
+    <y>290</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6137</mission_id>
+      <mission_id>6138</mission_id>
+      <mission_id>6139</mission_id>
+      <mission_id>6140</mission_id>
+      <mission_id>6141</mission_id>
+      <mission_id>6142</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2147" />
+      <card level="5" id="512" />
+      <card level="6" id="2084" />
+      <item level="7" id="3087" />
+    </rewards>
+    <find_item id="3086" drop_per_energy=".4" />
+  </campaign>
+  <!-- Boss Node Schism -->
+  <campaign>
+    <id>1197</id>
+    <name>Schism</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1189" level="1" />
+    <locked_start_time>1548349200</locked_start_time>
+    <!-- Thu, Jan 24 2019 17:00:00  -->
+    <battleground_id>2058</battleground_id>
+    <location_id>20</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>460</x>
+    <y>160</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6143</mission_id>
+      <mission_id>6144</mission_id>
+      <mission_id>6145</mission_id>
+      <mission_id>6146</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3088" />
+      <item level="5" id="3088" />
+      <item level="6" id="3088" />
+      <item level="7" id="3088" />
+    </rewards>
+    <find_item id="3086" drop_per_energy=".4" />
+  </campaign>
+  <!-- Campaign event 14 weeks 5-8 -->
+  <campaign>
+    <id>1198</id>
+    <name>Shades of the Past</name>
+    <campaign_req id="1196" level="1" />
+    <locked_start_time>1549558800</locked_start_time>
+    <!-- Thu, Feb 07 2019 17:00:00 -->
+    <battleground_id>2059</battleground_id>
+    <location_id>20</location_id>
+    <x>630</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6147</mission_id>
+      <mission_id>6148</mission_id>
+      <mission_id>6149</mission_id>
+      <mission_id>6150</mission_id>
+      <mission_id>6151</mission_id>
+      <mission_id>6152</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2148" />
+      <card level="5" id="512" />
+      <card level="6" id="2125" />
+      <item level="7" id="3087" />
+    </rewards>
+    <find_item id="3086" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1199</id>
+    <name>Crimsonwing Foundation</name>
+    <campaign_req id="1198" level="1" />
+    <locked_start_time>1550768400</locked_start_time>
+    <!-- Thursday, February 21, 2019  -->
+    <battleground_id>2060</battleground_id>
+    <location_id>20</location_id>
+    <x>810</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6153</mission_id>
+      <mission_id>6154</mission_id>
+      <mission_id>6155</mission_id>
+      <mission_id>6156</mission_id>
+      <mission_id>6157</mission_id>
+      <mission_id>6158</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2149" />
+      <card level="5" id="512" />
+      <card level="6" id="2063" />
+      <item level="7" id="3087" />
+    </rewards>
+    <find_item id="3086" drop_per_energy=".8" />
+  </campaign>
+  <!-- Campaign Event 15 weeks 1-4 -->
+  <campaign>
+    <id>1200</id>
+    <name>Notorious Reputation</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1551978000</locked_start_time>
+    <!-- Thu, 07 March 2019 17:00:00 GMT -->
+    <location_id>21</location_id>
+    <x>100</x>
+    <y>305</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6159</mission_id>
+      <mission_id>6160</mission_id>
+      <mission_id>6161</mission_id>
+      <mission_id>6162</mission_id>
+      <mission_id>6163</mission_id>
+      <mission_id>6164</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2150" />
+      <card level="5" id="512" />
+      <card level="6" id="2130" />
+      <item level="7" id="3090" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1201</id>
+    <name>Bridge Builder</name>
+    <campaign_req id="1200" level="1" />
+    <locked_start_time>1553187600</locked_start_time>
+    <!--  Thu, March 21 2019 17:00:00 -->
+    <battleground_id>2061</battleground_id>
+    <location_id>21</location_id>
+    <x>280</x>
+    <y>410</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6165</mission_id>
+      <mission_id>6166</mission_id>
+      <mission_id>6167</mission_id>
+      <mission_id>6168</mission_id>
+      <mission_id>6169</mission_id>
+      <mission_id>6170</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2151" />
+      <card level="5" id="512" />
+      <card level="6" id="2076" />
+      <item level="7" id="3090" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".4" />
+  </campaign>
+  <!-- Boss Node A Brighter Future -->
+  <campaign>
+    <id>1202</id>
+    <name>A Brighter Future</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1200" level="1" />
+    <locked_start_time>1553187600</locked_start_time>
+    <!-- Thu, March 21 2019 17:00:00 -->
+    <battleground_id>2062</battleground_id>
+    <location_id>21</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>760</x>
+    <y>160</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6171</mission_id>
+      <mission_id>6172</mission_id>
+      <mission_id>6173</mission_id>
+      <mission_id>6174</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3091" />
+      <item level="5" id="3091" />
+      <item level="6" id="3091" />
+      <item level="7" id="3091" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".4" />
+  </campaign>
+  <!-- Revenge of the Commons April Fool's Campaigns -->
+  <campaign>
+    <id>1203</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Revenge of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>21</location_id>
+    <x>520</x>
+    <y>430</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6191</mission_id>
+      <mission_id>6192</mission_id>
+      <mission_id>6193</mission_id>
+      <mission_id>6194</mission_id>
+      <mission_id>6195</mission_id>
+      <mission_id>6196</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <card level="2" id="2153" />
+      <card level="3" id="2153" />
+      <card level="4" id="2153" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".4" />
+  </campaign>
+  <campaign>
+    <id>1204</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Legends Come To Take Their Place!</name>
+    <campaign_req id="1203" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>21</location_id>
+    <x>815</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6197</mission_id>
+      <mission_id>6198</mission_id>
+      <mission_id>6199</mission_id>
+      <mission_id>6200</mission_id>
+      <mission_id>6201</mission_id>
+      <mission_id>6202</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2152" />
+      <card level="2" id="2152" />
+      <card level="3" id="2152" />
+      <card level="4" id="2152" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".4" />
+  </campaign>
+  <!-- Campaign event 15 weeks 5-8 -->
+  <campaign>
+    <id>1205</id>
+    <name>Old Alliances Die Hard</name>
+    <campaign_req id="1201" level="1" />
+    <locked_start_time>1554397200</locked_start_time>
+    <!-- Thu, April 04 2019 17:00:00 -->
+    <battleground_id>2063</battleground_id>
+    <location_id>21</location_id>
+    <x>420</x>
+    <y>475</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6179</mission_id>
+      <mission_id>6180</mission_id>
+      <mission_id>6181</mission_id>
+      <mission_id>6182</mission_id>
+      <mission_id>6183</mission_id>
+      <mission_id>6184</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2154" />
+      <card level="5" id="512" />
+      <card level="6" id="2032" />
+      <item level="7" id="3090" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1206</id>
+    <name>Goblins' Future</name>
+    <campaign_req id="1205" level="1" />
+    <locked_start_time>1555606800</locked_start_time>
+    <!-- Thursday, February 21, 2019  -->
+    <battleground_id>2064</battleground_id>
+    <location_id>21</location_id>
+    <x>810</x>
+    <y>450</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6185</mission_id>
+      <mission_id>6186</mission_id>
+      <mission_id>6187</mission_id>
+      <mission_id>6188</mission_id>
+      <mission_id>6189</mission_id>
+      <mission_id>6190</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2155" />
+      <card level="5" id="512" />
+      <card level="6" id="2120" />
+      <item level="7" id="3090" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".8" />
+  </campaign>
+  <!-- Campaign Event 16 weeks 1-4 -->
+  <campaign>
+    <id>1207</id>
+    <name>Return to Beetleton</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1556816400</locked_start_time>
+    <!-- Thu, 02 May 2019 17:00:00 GMT -->
+    <location_id>22</location_id>
+    <x>265</x>
+    <y>210</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6203</mission_id>
+      <mission_id>6204</mission_id>
+      <mission_id>6205</mission_id>
+      <mission_id>6206</mission_id>
+      <mission_id>6207</mission_id>
+      <mission_id>6208</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2156" />
+      <card level="5" id="512" />
+      <card level="6" id="2099" />
+      <item level="7" id="3093" />
+    </rewards>
+    <find_item id="3092" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1208</id>
+    <name>The Sage's Path</name>
+    <campaign_req id="1207" level="1" />
+    <locked_start_time>1558026000</locked_start_time>
+    <!--  Thu, May 16 2019 17:00:00 -->
+    <battleground_id>2065</battleground_id>
+    <location_id>22</location_id>
+    <x>475</x>
+    <y>180</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6209</mission_id>
+      <mission_id>6210</mission_id>
+      <mission_id>6211</mission_id>
+      <mission_id>6212</mission_id>
+      <mission_id>6213</mission_id>
+      <mission_id>6214</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2157" />
+      <card level="5" id="512" />
+      <card level="6" id="2098" />
+      <item level="7" id="3093" />
+    </rewards>
+    <find_item id="3092" drop_per_energy=".4" />
+  </campaign>
+  <!-- Boss Node Memories Best Left Forgotten  -->
+  <campaign>
+    <id>1209</id>
+    <name>Memories Best Left Forgotten</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1207" level="1" />
+    <locked_start_time>1558026000</locked_start_time>
+    <!-- Thu, May 16 2019 17:00:00 -->
+    <battleground_id>2066</battleground_id>
+    <location_id>22</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>525</x>
+    <y>445</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6215</mission_id>
+      <mission_id>6216</mission_id>
+      <mission_id>6217</mission_id>
+      <mission_id>6218</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3094" />
+      <item level="5" id="3094" />
+      <item level="6" id="3094" />
+      <item level="7" id="3094" />
+    </rewards>
+    <find_item id="3092" drop_per_energy=".4" />
+  </campaign>
+  <!-- Campaign Event 16 weeks 4-8 -->
+  <campaign>
+    <id>1210</id>
+    <name>Priority Differences</name>
+    <campaign_req id="1208" level="1" />
+    <locked_start_time>1559235600</locked_start_time>
+    <!-- Thursday, May 30, 2019  -->
+    <battleground_id>2069</battleground_id>
+    <location_id>22</location_id>
+    <x>625</x>
+    <y>355</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6223</mission_id>
+      <mission_id>6224</mission_id>
+      <mission_id>6225</mission_id>
+      <mission_id>6226</mission_id>
+      <mission_id>6227</mission_id>
+      <mission_id>6228</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2160" />
+      <card level="5" id="512" />
+      <card level="6" id="2060" />
+      <item level="7" id="3093" />
+    </rewards>
+    <find_item id="3092" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1211</id>
+    <name>A Dream's Rebirth</name>
+    <campaign_req id="1210" level="1" />
+    <locked_start_time>1560445200</locked_start_time>
+    <!-- Thursday, June 13, 2019  -->
+    <battleground_id>2070</battleground_id>
+    <location_id>22</location_id>
+    <x>780</x>
+    <y>315</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6229</mission_id>
+      <mission_id>6230</mission_id>
+      <mission_id>6231</mission_id>
+      <mission_id>6232</mission_id>
+      <mission_id>6233</mission_id>
+      <mission_id>6234</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2159" />
+      <card level="5" id="512" />
+      <card level="6" id="2024" />
+      <item level="7" id="3093" />
+    </rewards>
+    <find_item id="3092" drop_per_energy=".8" />
+  </campaign>
+  <!-- Campaign Event 17 weeks 1-4 -->
+  <campaign>
+    <id>1212</id>
+    <name>Welcome to the Salt Wastes</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1561654800</locked_start_time>
+    <!-- Thu, 27 June 2019 17:00:00 -->
+    <location_id>23</location_id>
+    <x>205</x>
+    <y>245</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6235</mission_id>
+      <mission_id>6236</mission_id>
+      <mission_id>6237</mission_id>
+      <mission_id>6238</mission_id>
+      <mission_id>6239</mission_id>
+      <mission_id>6240</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2161" />
+      <card level="5" id="512" />
+      <card level="6" id="2012" />
+      <item level="7" id="3096" />
+    </rewards>
+    <find_item id="3095" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1213</id>
+    <name>Temple of Origin</name>
+    <campaign_req id="1212" level="1" />
+    <locked_start_time>1562864400</locked_start_time>
+    <!--  Thu, July 11 2019 17:00:00 -->
+    <battleground_id>2071</battleground_id>
+    <location_id>23</location_id>
+    <x>465</x>
+    <y>180</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6241</mission_id>
+      <mission_id>6242</mission_id>
+      <mission_id>6243</mission_id>
+      <mission_id>6244</mission_id>
+      <mission_id>6245</mission_id>
+      <mission_id>6246</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2162" />
+      <card level="5" id="512" />
+      <card level="6" id="2070" />
+      <item level="7" id="3096" />
+    </rewards>
+    <find_item id="3095" drop_per_energy=".4" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
@@ -6859,38 +7654,116 @@
     <find_item id="3062" drop_per_energy=".2" />
   </campaign>
   <!-- Champion Bosses -->
-  <!--
-	<campaign> 
-		<id>3012</id>
-		<name>Campaign Title</name>
-		<type>2</type>
-		<icon id='white_boss_gem' bundle='15' />
-		<campaign_req id='1180' level='7' />
-		<locked_start_time>1511370000</locked_start_time>	 |  Wed, 22 Nov 2017 17:00:00 |
-		<side_mission>1</side_mission>
-		<battleground_id>2049</battleground_id>
-		<exclude_map_bges>1</exclude_map_bges>
-		<location_id>17</location_id>
-		<show_level>1</show_level>
-		<show_ranking>1</show_ranking>
-		<x>485</x>
-		<y>512</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>6075</mission_id>
-			<mission_id>6076</mission_id>
-			<mission_id>6077</mission_id>
-			<mission_id>6078</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='510' />
-			<card level='2' id='510' />
-			<item level='3' id='2506' number='3' />
-			<card level='4' id='511' />
-			<item level='5' id='2506' number='3' />
-			<card level='6' id='512' />
-			<item level='7' id='2506' number='3' />
-		</rewards>
-	</campaign>
-	-->
+  <!-- Tanit -->
+  <campaign>
+    <id>3012</id>
+    <name>A Miracle Awakens</name>
+    <type>2</type>
+    <icon id="undead_boss_gem" bundle="30" />
+    <campaign_req id="3000" level="7" />
+    <campaign_req id="3001" level="7" />
+    <campaign_req id="3002" level="7" />
+    <campaign_req id="1180" level="1" />
+    <locked_start_time>1557766800</locked_start_time>
+    <!-- Monday, May 13, 2019 17:00:00 -->
+    <side_mission>1</side_mission>
+    <battleground_id>2049</battleground_id>
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>17</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>485</x>
+    <y>512</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6075</mission_id>
+      <mission_id>6076</mission_id>
+      <mission_id>6077</mission_id>
+      <mission_id>6078</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="511" />
+      <card level="4" id="511" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="8017" />
+    </rewards>
+  </campaign>
+  <!--  Batara -->
+  <campaign>
+    <id>3013</id>
+    <name>A Dream Fades</name>
+    <type>2</type>
+    <icon id="undead_boss_gem" bundle="30" />
+    <campaign_req id="3000" level="7" />
+    <campaign_req id="3001" level="7" />
+    <campaign_req id="3002" level="7" />
+    <campaign_req id="1197" level="1" />
+    <locked_start_time>1558371600</locked_start_time>
+    <!--  Thu, May 20th 2019 17:00:00  -->
+    <side_mission>1</side_mission>
+    <battleground_id>2067</battleground_id>
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>20</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>825</x>
+    <y>500</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6175</mission_id>
+      <mission_id>6176</mission_id>
+      <mission_id>6177</mission_id>
+      <mission_id>6178</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="511" />
+      <card level="4" id="511" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="2532" />
+    </rewards>
+  </campaign>
+  <!--   Ebonclaw -->
+  <campaign>
+    <id>3014</id>
+    <name>A Bond Strengthens</name>
+    <type>2</type>
+    <icon id="undead_boss_gem" bundle="30" />
+    <campaign_req id="3000" level="7" />
+    <campaign_req id="3001" level="7" />
+    <campaign_req id="3002" level="7" />
+    <campaign_req id="1209" level="1" />
+    <locked_start_time>1558976400</locked_start_time>
+    <!-- Thu, May 27 2019 17:00:00  -->
+    <side_mission>1</side_mission>
+    <battleground_id>2068</battleground_id>
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>22</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>715</x>
+    <y>182</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6219</mission_id>
+      <mission_id>6220</mission_id>
+      <mission_id>6221</mission_id>
+      <mission_id>6222</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="511" />
+      <card level="4" id="511" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="2533" />
+    </rewards>
+  </campaign>
 </root>
+

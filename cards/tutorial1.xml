@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ============================== -->
   <!-- ====== TUTORIALS START ======= -->
@@ -1164,7 +1164,7 @@
         <line>
           <skill>silence</skill>
           <commander>raven</commander>
-          <text>This creature has Silence; enemy creatures dealt damage by it have all of their skills removed temporarily. </text>
+          <text>This creature has Silence; enemy creatures dealt damage by it have all of their skills removed temporarily.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1308,6 +1308,25 @@
       <confirm>1</confirm>
     </step>
   </guide>
+  <guide>
+    <id>1039</id>
+    <name>Skill Guide: Reanimate</name>
+    <trigger>
+      <flagreq id="usingSkill" value="reanimate" />
+    </trigger>
+    <step>
+      <step_id>10</step_id>
+      <highlight id="targetCard" />
+      <message>
+        <line>
+          <skill>reanimate</skill>
+          <commander>raven</commander>
+          <text>This creature has Reanimate; after dying the first time, it revives itself, healing and removing all effects.</text>
+        </line>
+      </message>
+      <confirm>1</confirm>
+    </step>
+  </guide>
   <!-- ============================== -->
   <!-- === ADDITIONAL MISC GUIDES === -->
   <!-- ============================== -->
@@ -1358,3 +1377,4 @@
     </step>
   </guide>
 </root>
+

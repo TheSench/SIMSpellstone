@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
   <!-- Commanders       - 1-899 -->
@@ -160,6 +160,7 @@
     <name>Castle Tower</name>
     <picture>Enemy_Tower_A</picture>
     <asset_bundle>1</asset_bundle>
+    <tower_card>1</tower_card>
     <attack>0</attack>
     <health>1</health>
     <cost>0</cost>
@@ -242,6 +243,7 @@
     <name>Cannon Tower</name>
     <picture>Enemy_Tower_A</picture>
     <asset_bundle>1</asset_bundle>
+    <tower_card>1</tower_card>
     <attack>0</attack>
     <health>1</health>
     <cost>4</cost>
@@ -332,6 +334,7 @@
     <name>Tree of Life</name>
     <picture>Tree_of_Life_A</picture>
     <asset_bundle>1</asset_bundle>
+    <tower_card>1</tower_card>
     <attack>0</attack>
     <health>1</health>
     <cost>4</cost>
@@ -479,6 +482,7 @@
     <name>Fortified Tower</name>
     <picture>Fortified_Tower_A</picture>
     <asset_bundle>1</asset_bundle>
+    <tower_card>1</tower_card>
     <attack>0</attack>
     <health>1</health>
     <cost>4</cost>
@@ -740,3 +744,4 @@
     <desc>"The most admirable part of the dead is their unwillingness to stay down." - Aria</desc>
   </unit>
 </root>
+

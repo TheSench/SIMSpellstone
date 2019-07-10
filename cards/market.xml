@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!--   1-100  for Market
 		 101-1000 for Bundle Packages
@@ -885,6 +885,8 @@
     <hc_cost>200</hc_cost>
     <asset_prefab>rune_chest</asset_prefab>
     <bundle>15</bundle>
+    <icon>rune_component_chest_icon</icon>
+    <icon_bundle>17</icon_bundle>
     <desc_list name="Runecrafter Pouch" icon="rune_component_bag_item" bundle="17" quantity="10" />
     <desc_list name="Random Rare Rune" icon="rune_empty_rare" bundle="34" quantity="1" />
     <drop_key>
@@ -1026,6 +1028,8 @@
     <hc_cost>5000</hc_cost>
     <asset_prefab>MassiveRunecrafterChest</asset_prefab>
     <bundle>35</bundle>
+    <icon>massiverunechest_100</icon>
+    <icon_bundle>133</icon_bundle>
     <desc_list name="Runecrafter Pouch" icon="rune_component_bag_item" bundle="17" quantity="20" />
     <desc_list name="Random Epic Rune" icon="rune_empty_epic" bundle="34" quantity="1" />
     <drop_key>
@@ -2745,6 +2749,34 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" fusion_level="2" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3097</id>
+    <name>Dual Dragon Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Dragon card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3098</id>
+    <name>Legendary Dual Mecha Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed ^cE7FFLegendary^cFFFF+ Mecha card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -2771,6 +2803,14 @@
       <item id="104004" />
       <item id="104005" />
       <item id="104006" />
+      <item id="104007" />
+      <item id="104008" />
+      <item id="104009" />
+      <item id="104010" />
+      <item id="104011" />
+      <item id="104012" />
+      <item id="104013" />
+      <item id="104014" />
     </costed_items>
   </store_item>
   <store_item>
@@ -3370,7 +3410,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives four cards with one guaranteed ^cE7FFLegendary ^cFFFFfrom Standard Set. May be purchased twice.</desc>
+    <desc>Gives four cards with one guaranteed ^cE7FFLegendary ^cFFFFfrom Standard Set. May be purchased an unlimited number of times!</desc>
     <asset_prefab>legendary_crystal</asset_prefab>
     <bundle>30</bundle>
     <icon>icon_purple_crystal</icon>
@@ -3865,7 +3905,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes one ^cE7FFLegendary ^cFFFFGoblin card and three additional ^c0DFFEpic^cFFFF+ Goblin cards from Premium set! May be purchased three times!</desc>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFGoblin card and three additional ^c0DFFEpic^cFFFF+ Goblin cards from Premium set! May be purchased 10 times!</desc>
     <asset_prefab>event_017_crystal_legendary</asset_prefab>
     <background_prefab>event_017_banner_legendary_pack</background_prefab>
     <bundle>75</bundle>
@@ -4305,7 +4345,7 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <show_desc>1</show_desc>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Undead cards from Premium set. May be purchased 5 times!</desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Undead cards from Premium set. May be purchased an unlimited number of times!</desc>
     <asset_prefab>event_023_two_epics</asset_prefab>
     <bundle>90</bundle>
     <icon>icon_purple_crystal</icon>
@@ -5412,4 +5452,396 @@
       <card min_level="1" max_level="1" unit_id="5167" display_card_id="5167" />
     </cards>
   </store_item>
+  <store_item>
+    <id>5127</id>
+    <name>Legendary Rune Boost Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>210</priority>
+    <desc>Includes two ^cE7FFLegendary Rune Slivers^cFFFF, 25 Arcane Fragments and 20 Inscription Powder! May be purchased 3 times!</desc>
+    <asset_prefab>rune_bundle</asset_prefab>
+    <bundle>15</bundle>
+    <hc_cost>200</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4013" quantity="2" />
+    <item id="4001" quantity="20" />
+    <item id="2001" quantity="25" />
+  </store_item>
+  <store_item>
+    <id>5128</id>
+    <name>Dragon Ruler Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMovra, Dragon Ruler^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5188" display_card_id="5188" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5129</id>
+    <name>Double Mecha Epic Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Mecha cards from Premium set. May be purchased an unlimited number of times!</desc>
+    <asset_prefab>event_030_two_epics</asset_prefab>
+    <bundle>107</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3072</pack>
+  </store_item>
+  <store_item>
+    <id>5130</id>
+    <name>Coreheart Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFCoreheart^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5221" display_card_id="5221" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5131</id>
+    <name>Sundermarr Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFSundermarr^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="1645" display_card_id="1645" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5132</id>
+    <name>Rejuvenation Acolyte Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFRejuvenation Acolyte^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7166" display_card_id="7166" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5133</id>
+    <name>Monastery Angel Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMonastery Angel^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7183" display_card_id="7183" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5134</id>
+    <name>Azazreal Herald Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFAzazreal, Herald^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5217" display_card_id="5217" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5135</id>
+    <name>Ba Dim Boom Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBa Dim Boom^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6142" display_card_id="6142" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5136</id>
+    <name>Charybdis Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFCharybdis^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7105" display_card_id="7105" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5137</id>
+    <name>Lucky Frog Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFLucky Frog^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7159" display_card_id="7159" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5138</id>
+    <name>Grand Dust Satchel</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 100 Arcane Dust! May be purchased an unlimited number of times!</desc>
+    <asset_prefab>dust_package_3</asset_prefab>
+    <background_prefab>banner_epic</background_prefab>
+    <bundle>15</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>65</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4" quantity="100" />
+  </store_item>
+  <store_item>
+    <id>5139</id>
+    <name>Forgesoul Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFForgesoul Construct^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5137" display_card_id="5137" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5140</id>
+    <name>Monarch Scorcher Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMonarch Scorcher^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6197" display_card_id="6197" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5141</id>
+    <name>Torchsnout Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFTorchsnout^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6065" display_card_id="6065" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5142</id>
+    <name>Mugen Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMugen and Young Hawk^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7174" display_card_id="7174" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5143</id>
+    <name>Otherworldly Archer Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFOtherworldly Archer^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6116" display_card_id="6116" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5144</id>
+    <name>Xovrus Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFXovrus Death's End^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7131" display_card_id="7131" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5145</id>
+    <name>Mountking Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMountking Warder^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5213" display_card_id="5213" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5146</id>
+    <name>Snarecaster Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMollusk Snarecaster^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7154" display_card_id="7154" />
+    </cards>
+  </store_item>
 </root>
+

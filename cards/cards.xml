@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <starter_pack>
     <id>1</id>
@@ -9436,7 +9436,7 @@
     <name>Rocket Rider</name>
     <picture>Bomb_Rider_Goblin_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>3</attack>
     <health>8</health>
     <cost>2</cost>
@@ -9474,7 +9474,7 @@
     <name>Rocket Racer</name>
     <picture>Bomb_Rider_Goblin_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>12</health>
     <cost>2</cost>
@@ -9512,7 +9512,7 @@
     <name>Rocket Jockey</name>
     <picture>Bomb_Rider_Goblin_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>16</health>
     <cost>2</cost>
@@ -9551,7 +9551,7 @@
     <name>Pack Runner</name>
     <picture>Pack_Leader_Angel_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>10</health>
     <cost>2</cost>
@@ -9588,7 +9588,7 @@
     <name>Pack Leader</name>
     <picture>Pack_Leader_Angel_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>13</health>
     <cost>2</cost>
@@ -9627,7 +9627,7 @@
     <name>Pack Alpha</name>
     <picture>Pack_Leader_Angel_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>16</health>
     <cost>2</cost>
@@ -9666,7 +9666,7 @@
     <name>Wrath</name>
     <picture>Angel_Muscle_Monster_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>9</health>
     <cost>1</cost>
@@ -9713,7 +9713,7 @@
     <name>Wrath, Fury Incarnate</name>
     <picture>Angel_Muscle_Monster_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>11</health>
     <cost>1</cost>
@@ -9756,7 +9756,7 @@
     <name>Wrath, Worldrender</name>
     <picture>Angel_Muscle_Monster_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>15</health>
     <cost>1</cost>
@@ -10153,8 +10153,9 @@
       <level>2</level>
       <skill id="rally" x="1" y="7" />
       <skill id="heal" x="2" y="7" />
-      <skill id="leech" x="2" />F
-		</upgrade>
+      <skill id="leech" x="2" />
+      F
+    </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="rally" x="1" y="7" />
@@ -37308,7 +37309,7 @@
     <name>Gob Launcher</name>
     <picture>Catapult_Dragon_A</picture>
     <asset_bundle>74</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>15</health>
     <cost>2</cost>
@@ -37352,7 +37353,7 @@
     <name>Gob Chucker</name>
     <picture>Catapult_Dragon_A</picture>
     <asset_bundle>74</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>6</attack>
     <health>19</health>
     <cost>2</cost>
@@ -37395,7 +37396,7 @@
     <name>Goballista</name>
     <picture>Catapult_Dragon_B</picture>
     <asset_bundle>74</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>7</attack>
     <health>22</health>
     <cost>2</cost>
@@ -55892,7 +55893,7 @@
     <name>Putrid Zombie</name>
     <picture>Undead_Rider_B</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>6</attack>
     <health>10</health>
     <cost>1</cost>
@@ -55947,7 +55948,7 @@
     <name>Underhill Beast</name>
     <picture>Undead_Hornedbeast_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>7</attack>
     <health>34</health>
     <cost>3</cost>
@@ -56002,7 +56003,7 @@
     <name>Grizzly Bones</name>
     <picture>Undead_Bear_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>18</health>
     <cost>2</cost>
@@ -56056,7 +56057,7 @@
     <name>Ahnkmotep</name>
     <picture>Giant_Mummy_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>3</attack>
     <health>20</health>
     <cost>2</cost>
@@ -56110,7 +56111,7 @@
     <name>Marrowsworn's Cohort</name>
     <picture>Angel_Of_Death_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>19</health>
     <cost>2</cost>
@@ -56166,7 +56167,7 @@
     <name>Boneslither Maw</name>
     <picture>Snake_Skeleton_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>6</attack>
     <health>11</health>
     <cost>1</cost>
@@ -56224,7 +56225,7 @@
     <name>Steelsword Raider</name>
     <picture>Steel_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>15</health>
     <cost>1</cost>
@@ -56277,7 +56278,7 @@
     <name>Bismuth Guardian</name>
     <picture>Bismuth_Beast_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>6</attack>
     <health>22</health>
     <cost>2</cost>
@@ -56325,7 +56326,7 @@
     <name>Swiftness Feeder</name>
     <picture>Swiftness_Elemental_B</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>1</attack>
     <health>15</health>
     <cost>0</cost>
@@ -56376,7 +56377,7 @@
     <name>Radium Corrupter</name>
     <picture>Radium_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>9</attack>
     <health>33</health>
     <cost>3</cost>
@@ -56424,7 +56425,7 @@
     <name>Crystal Blockade</name>
     <picture>Crystal_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>33</health>
     <cost>3</cost>
@@ -56472,7 +56473,7 @@
     <name>Sludge River</name>
     <picture>River_Elemental_B</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>24</health>
     <cost>2</cost>
@@ -56521,7 +56522,7 @@
     <name>Winter's Heart</name>
     <picture>Snowhidden_Dragon_B</picture>
     <asset_bundle>40</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>18</health>
     <cost>1</cost>
@@ -56572,7 +56573,7 @@
     <name>Winter's Wings</name>
     <picture>Night_Dragon_B</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>22</health>
     <cost>2</cost>
@@ -56626,7 +56627,7 @@
     <name>Winter's Bite</name>
     <picture>Fire_Tip_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>13</health>
     <cost>0</cost>
@@ -56680,7 +56681,7 @@
     <name>Winter's Thunder</name>
     <picture>Legendary_Lightning_Fist_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>36</health>
     <cost>3</cost>
@@ -56732,7 +56733,7 @@
     <name>Winter's Crusher</name>
     <picture>Epic_Water_Steed_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>4</attack>
     <health>30</health>
     <cost>3</cost>
@@ -56786,7 +56787,7 @@
     <name>Winter's Spirit</name>
     <picture>Spirit_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>3</attack>
     <health>26</health>
     <cost>2</cost>
@@ -56884,7 +56885,7 @@
     <name>Summoned Abomination</name>
     <picture>Ice_Yeti_A</picture>
     <asset_bundle>40</asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <hidden_until_time />
     <attack>5</attack>
     <health>18</health>
     <cost>4</cost>
@@ -63049,7 +63050,7 @@
     <card_type>1</card_type>
     <name>Decim, Flame Incarnate</name>
     <portrait>flamebender</portrait>
-    <desc></desc>
+    <desc />
     <attack>0</attack>
     <health>18</health>
     <rarity>3</rarity>
@@ -69323,8 +69324,8 @@
   <!-- CARD FACTIONS -->
   <unitType>
     <id>0</id>
-    <name></name>
-    <icon></icon>
+    <name />
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <unitType>
@@ -69360,7 +69361,7 @@
   <unitType>
     <id>7</id>
     <name>Undead</name>
-    <image></image>
+    <image />
     <icon>filter_undead_32</icon>
   </unitType>
   <unitType>
@@ -69372,31 +69373,31 @@
   <unitType>
     <id>9</id>
     <name>Dragon</name>
-    <image></image>
+    <image />
     <icon>filter_dragon_32</icon>
   </unitType>
   <unitType>
     <id>10</id>
     <name>Avian</name>
-    <image></image>
+    <image />
     <icon>filter_avian_32</icon>
   </unitType>
   <unitType>
     <id>11</id>
     <name>Goblin</name>
-    <image></image>
+    <image />
     <icon>filter_goblin_32</icon>
   </unitType>
   <unitType>
     <id>12</id>
     <name>Seafolk</name>
-    <image></image>
+    <image />
     <icon>filter_seafolk_32</icon>
   </unitType>
   <unitType>
     <id>13</id>
     <name>Insect</name>
-    <image></image>
+    <image />
     <icon>filter_insect_32</icon>
   </unitType>
   <!-- CARD SETS -->
@@ -69455,3 +69456,4 @@
     <visible>0</visible>
   </cardSet>
 </root>
+

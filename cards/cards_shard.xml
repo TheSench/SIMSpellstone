@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- SHARD CARDS -->
   <!-- Fragment items will be auto generated with the same id as the card -->
@@ -188,69 +188,69 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>1</type>
     <sub_type>6</sub_type>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>15</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="armored" x="3" />
-    <skill id="rally" x="4" y="6" />
-    <skill id="legion" x="2" />
+    <skill id="rally" x="5" y="6" />
+    <skill id="legion" x="3" />
     <upgrade>
       <level>2</level>
-      <attack>5</attack>
       <health>16</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <skill id="armored" x="3" />
-      <skill id="rally" x="5" y="6" />
-      <skill id="legion" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="5" y="6" />
-      <skill id="legion" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <health>17</health>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="5" y="6" />
-      <skill id="legion" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <attack>6</attack>
-      <skill id="armored" x="4" />
       <skill id="rally" x="6" y="6" />
       <skill id="legion" x="3" />
     </upgrade>
     <upgrade>
-      <level>7</level>
+      <level>3</level>
+      <health>17</health>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="6" y="6" />
+      <skill id="legion" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="6" y="6" />
+      <skill id="legion" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
       <skill id="armored" x="4" />
       <skill id="rally" x="7" y="6" />
-      <skill id="legion" x="3" />
+      <skill id="legion" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="7" y="6" />
+      <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <attack>7</attack>
-      <health>18</health>
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>19</health>
-      <skill id="armored" x="4" />
+      <health>20</health>
+      <skill id="armored" x="5" />
       <skill id="rally" x="7" y="6" />
-      <skill id="legion" x="4" />
+      <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <attack>8</attack>
-      <health>20</health>
+      <health>21</health>
       <skill id="armored" x="5" />
-      <skill id="rally" x="7" y="6" />
-      <skill id="legion" x="4" />
+      <skill id="rally" x="8" y="6" />
+      <skill id="legion" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -261,6 +261,7 @@
     <asset_prefab>mythicWyld_A</asset_prefab>
     <picture>mythicWyld_A</picture>
     <asset_bundle>57</asset_bundle>
+    <cannot_salvage>1</cannot_salvage>
     <item_name>Lev Stone</item_name>
     <item_desc>Collect Lev Stones to upgrade the Mythic Lev, Forgotten Hero card!</item_desc>
     <item_icon>championStone_mythic</item_icon>
@@ -1142,6 +1143,781 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4013</id>
+    <card_type>2</card_type>
+    <name>Teroxis, King of Stones</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Dragon_Sage_Ancient_A</picture>
+    <asset_bundle>145</asset_bundle>
+    <item_name>Teroxis Stone</item_name>
+    <item_desc>Collect Teroxis Stones to upgrade the Legendary Teroxis, King of Stones card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <attack>11</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="backlash" x="3" />
+    <skill id="leech" x="6" />
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="armored" x="4" />
+      <skill id="backlash" x="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+      <skill id="armored" x="5" />
+      <skill id="backlash" x="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="armored" x="5" />
+      <skill id="backlash" x="4" />
+      <skill id="leech" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <health>28</health>
+      <skill id="armored" x="5" />
+      <skill id="backlash" x="4" />
+      <skill id="leech" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+      <health>29</health>
+      <skill id="armored" x="5" />
+      <skill id="backlash" x="4" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>30</health>
+      <skill id="armored" x="6" />
+      <skill id="backlash" x="4" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>15</attack>
+      <skill id="armored" x="6" />
+      <skill id="backlash" x="4" />
+      <skill id="leech" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>31</health>
+      <skill id="armored" x="6" />
+      <skill id="backlash" x="5" />
+      <skill id="leech" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>16</attack>
+      <health>33</health>
+      <skill id="armored" x="7" />
+      <skill id="backlash" x="5" />
+      <skill id="leech" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4014</id>
+    <card_type>2</card_type>
+    <name>Ralgan Ironpaw</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Mecha_Bear_A</picture>
+    <asset_bundle>147</asset_bundle>
+    <item_name>Ironpaw Stone</item_name>
+    <item_desc>Collect Ironpaw Stones to upgrade the Legendary Ralgan Ironpaw card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <attack>9</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="rally" all="1" x="3" />
+    <skill id="enrage" all="1" x="3" />
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="enrage" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <skill id="armored" x="5" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="enrage" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" all="1" x="4" />
+      <skill id="enrage" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <health>28</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" all="1" x="5" />
+      <skill id="enrage" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" all="1" x="5" />
+      <skill id="enrage" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>12</attack>
+      <skill id="armored" x="6" />
+      <skill id="rally" all="1" x="5" />
+      <skill id="enrage" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="armored" x="6" />
+      <skill id="rally" all="1" x="5" />
+      <skill id="enrage" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>30</health>
+      <skill id="armored" x="7" />
+      <skill id="rally" all="1" x="5" />
+      <skill id="enrage" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>13</attack>
+      <skill id="armored" x="7" />
+      <skill id="rally" all="1" x="6" />
+      <skill id="enrage" all="1" x="6" />
+    </upgrade>
+    <desc>"They would live to regret revoking his right to bear arms."</desc>
+  </unit>
+  <unit>
+    <id>4015</id>
+    <card_type>2</card_type>
+    <name>Vindicator Batara</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Angel_Demon_Samurai_A</picture>
+    <asset_bundle>149</asset_bundle>
+    <item_name>Batara Stone</item_name>
+    <item_desc>Collect Batara Stones to upgrade the Legendary Vindicator Batara card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <attack>7</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="daze" x="6" />
+    <skill id="flurry" c="3" />
+    <upgrade>
+      <level>2</level>
+      <skill id="regenerate" x="6" />
+      <skill id="daze" x="6" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="regenerate" x="6" />
+      <skill id="daze" x="7" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="regenerate" x="7" />
+      <skill id="daze" x="7" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="7" />
+      <skill id="daze" x="8" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>10</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>30</health>
+      <skill id="regenerate" x="8" />
+      <skill id="daze" x="8" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>31</health>
+      <skill id="regenerate" x="8" />
+      <skill id="daze" x="8" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>32</health>
+      <skill id="regenerate" x="9" />
+      <skill id="daze" x="9" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4016</id>
+    <card_type>2</card_type>
+    <name>Daknak Darkblade</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Goblin_Dark_Knight_B</picture>
+    <asset_bundle>151</asset_bundle>
+    <item_name>Darkblade Stone</item_name>
+    <item_desc>Collect Darkblade Stones to upgrade the Legendary Daknak Darkblade card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="7" />
+    <skill id="heal" y="11" x="6" />
+    <skill id="frost" x="1" />
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" y="11" x="6" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="valor" x="8" />
+      <skill id="heal" y="11" x="7" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="8" />
+      <skill id="heal" y="11" x="8" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <skill id="valor" x="9" />
+      <skill id="heal" y="11" x="8" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="9" />
+      <skill id="heal" y="11" x="9" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>19</health>
+      <skill id="valor" x="9" />
+      <skill id="heal" y="11" x="9" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="valor" x="10" />
+      <skill id="heal" y="11" x="9" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>20</health>
+      <skill id="valor" x="10" />
+      <skill id="heal" y="11" x="10" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>21</health>
+      <skill id="valor" x="11" />
+      <skill id="heal" y="11" x="10" />
+      <skill id="frost" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4017</id>
+    <card_type>2</card_type>
+    <name>King Proteus</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk_Merman_King_Proteus_A</picture>
+    <asset_bundle>154</asset_bundle>
+    <item_name>Proteus Stone</item_name>
+    <item_desc>Collect Proteus Stones to upgrade the Legendary King Proteus card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <attack>14</attack>
+    <health>52</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="9" />
+    <skill id="regenerate" x="6" />
+    <skill id="rally" all="1" y="12" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>53</health>
+      <skill id="corrosive" x="9" />
+      <skill id="regenerate" x="6" />
+      <skill id="rally" all="1" y="12" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>54</health>
+      <skill id="corrosive" x="10" />
+      <skill id="regenerate" x="6" />
+      <skill id="rally" all="1" y="12" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+      <skill id="corrosive" x="10" />
+      <skill id="regenerate" x="7" />
+      <skill id="rally" all="1" y="12" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>15</attack>
+      <health>56</health>
+      <skill id="corrosive" x="10" />
+      <skill id="regenerate" x="7" />
+      <skill id="rally" all="1" y="12" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="corrosive" x="11" />
+      <skill id="regenerate" x="7" />
+      <skill id="rally" all="1" y="12" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>58</health>
+      <skill id="corrosive" x="11" />
+      <skill id="regenerate" x="7" />
+      <skill id="rally" all="1" y="12" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>16</attack>
+      <skill id="corrosive" x="11" />
+      <skill id="regenerate" x="8" />
+      <skill id="rally" all="1" y="12" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>59</health>
+      <skill id="corrosive" x="12" />
+      <skill id="regenerate" x="8" />
+      <skill id="rally" all="1" y="12" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>17</attack>
+      <health>60</health>
+      <skill id="corrosive" x="12" />
+      <skill id="regenerate" x="9" />
+      <skill id="rally" all="1" y="12" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4018</id>
+    <card_type>2</card_type>
+    <name>Kensho, the Aeromaster</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Air_Monk_Sage_A</picture>
+    <asset_bundle>157</asset_bundle>
+    <item_name>Aeromaster Stone</item_name>
+    <item_desc>Collect Aeromaster Stones to upgrade the Legendary Kensho, the Aeromaster card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <attack>9</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="frost" x="2" />
+    <skill id="jam" c="4" />
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="absorb" x="6" />
+      <skill id="frost" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="absorb" x="7" />
+      <skill id="frost" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <skill id="absorb" x="8" />
+      <skill id="frost" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="absorb" x="8" />
+      <skill id="frost" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>12</attack>
+      <skill id="absorb" x="9" />
+      <skill id="frost" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>30</health>
+      <skill id="absorb" x="10" />
+      <skill id="frost" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>13</attack>
+      <health>31</health>
+      <skill id="absorb" x="10" />
+      <skill id="frost" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>14</attack>
+      <health>32</health>
+      <skill id="absorb" x="10" />
+      <skill id="frost" x="5" />
+      <skill id="jam" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4019</id>
+    <card_type>2</card_type>
+    <name>Formos Ebonclaw</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Insect_Dark_Sword_A</picture>
+    <asset_bundle>159</asset_bundle>
+    <item_name>Ebonclaw Stone</item_name>
+    <item_desc>Collect Ebonclaw Stones to upgrade the Legendary Formos Ebonclaw card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <attack>7</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="berserk" x="2" />
+    <skill id="flurry" c="3" />
+    <upgrade>
+      <level>2</level>
+      <skill id="regenerate" x="6" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="regenerate" x="7" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="regenerate" x="7" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <skill id="regenerate" x="8" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="9" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>9</attack>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>20</health>
+      <skill id="regenerate" x="9" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>21</health>
+      <skill id="regenerate" x="10" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attacK>10</attacK>
+      <skill id="regenerate" x="11" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4020</id>
+    <card_type>2</card_type>
+    <name>Sound of Death</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undead_Lightning_Ghost_A</picture>
+    <asset_bundle>162</asset_bundle>
+    <item_name>Death Stone</item_name>
+    <item_desc>Collect Death Stones to upgrade the Legendary Sound of Death card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <sub_type>7</sub_type>
+    <attack>12</attack>
+    <health>51</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="strike" all="1" x="4" />
+    <skill id="jam" c="3" />
+    <upgrade>
+      <level>2</level>
+      <health>52</health>
+      <skill id="stasis" x="5" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+      <health>53</health>
+      <skill id="stasis" x="5" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>14</attack>
+      <health>54</health>
+      <skill id="stasis" x="6" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>55</health>
+      <skill id="stasis" x="6" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>15</attack>
+      <health>56</health>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>16</attack>
+      <health>57</health>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>58</health>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="8" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>17</attack>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="8" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>18</attack>
+      <health>59</health>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="8" />
+      <skill id="jam" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4021</id>
+    <card_type>2</card_type>
+    <name>Plyn Poisontrek</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frog_Poison_Ranger_A</picture>
+    <asset_bundle>164</asset_bundle>
+    <item_name>Plyn Stone</item_name>
+    <item_desc>Collect Plyn Stones to upgrade the Legendary Plyn Poisontrek card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="valor" x="6" />
+    <skill id="poison" x="6" />
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="3" />
+      <skill id="valor" x="6" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <skill id="evade" x="3" />
+      <skill id="valor" x="6" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="evade" x="3" />
+      <skill id="valor" x="7" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+      <skill id="evade" x="3" />
+      <skill id="valor" x="7" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="valor" x="8" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="evade" x="3" />
+      <skill id="valor" x="8" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="evade" x="3" />
+      <skill id="valor" x="9" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>23</health>
+      <skill id="evade" x="4" />
+      <skill id="valor" x="9" />
+      <skill id="poison" x="9" />
+    </upgrade>
+  </unit>
+  <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
   <!-- =============================== -->
@@ -1319,6 +2095,607 @@
       <skill id="armored" x="7" />
       <skill id="frost" x="5" />
       <skill id="berserk" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5602</id>
+    <card_type>2</card_type>
+    <name>TZ-530 the Impassable</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Defender_Mecha_A</picture>
+    <asset_bundle>147</asset_bundle>
+    <item_name>TZ-530 Stone</item_name>
+    <item_desc>Collect TZ-530 Stones to upgrade the Legendary TZ-530 the Impassable card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <attack>10</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="armored" x="4" />
+    <skill id="protect" all="1" x="4" />
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="stasis" x="5" />
+      <skill id="armored" x="4" />
+      <skill id="protect" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="stasis" x="5" />
+      <skill id="armored" x="5" />
+      <skill id="protect" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <skill id="stasis" x="5" />
+      <skill id="armored" x="6" />
+      <skill id="protect" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <health>40</health>
+      <skill id="stasis" x="5" />
+      <skill id="armored" x="6" />
+      <skill id="protect" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="stasis" x="6" />
+      <skill id="armored" x="7" />
+      <skill id="protect" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <skill id="stasis" x="6" />
+      <skill id="armored" x="7" />
+      <skill id="protect" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>42</health>
+      <skill id="stasis" x="7" />
+      <skill id="armored" x="7" />
+      <skill id="protect" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>15</attack>
+      <health>43</health>
+      <skill id="stasis" x="7" />
+      <skill id="armored" x="7" />
+      <skill id="protect" all="1" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5603</id>
+    <card_type>2</card_type>
+    <name>Dina the Iridescent</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Angel_Stained_Glass_Wings_Angel_A</picture>
+    <asset_bundle>149</asset_bundle>
+    <item_name>Iridescent Stone</item_name>
+    <item_desc>Collect Iridescent Stones to upgrade the Legendary Dina the Iridescent card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <attack>7</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="weaken" all="1" x="1" />
+    <skill id="pierce" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="backlash" x="3" />
+      <skill id="weaken" all="1" x="2" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <skill id="backlash" x="3" />
+      <skill id="weaken" all="1" x="2" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="backlash" x="4" />
+      <skill id="weaken" all="1" x="2" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="backlash" x="4" />
+      <skill id="weaken" all="1" x="3" />
+      <skill id="pierce" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="4" />
+      <skill id="weaken" all="1" x="3" />
+      <skill id="pierce" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>10</attack>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="backlash" x="4" />
+      <skill id="weaken" all="1" x="3" />
+      <skill id="pierce" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>11</attack>
+      <skill id="backlash" x="4" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="pierce" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>21</health>
+      <skill id="backlash" x="5" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="pierce" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5604</id>
+    <card_type>2</card_type>
+    <name>Mirrormage Ghessela</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk_Mirror_Mermaid_B</picture>
+    <asset_bundle>154</asset_bundle>
+    <item_name>Mirrormage Stone</item_name>
+    <item_desc>Collect Mirrormage Stones to upgrade the Legendary Mirrormage Ghessela card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <attack>9</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="backlash" x="3" />
+    <skill id="legion" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="3" />
+      <skill id="legion" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="4" />
+      <skill id="legion" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="4" />
+      <skill id="legion" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <health>40</health>
+      <skill id="absorb" x="8" />
+      <skill id="backlash" x="4" />
+      <skill id="legion" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>41</health>
+      <skill id="absorb" x="8" />
+      <skill id="backlash" x="4" />
+      <skill id="legion" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>42</health>
+      <skill id="absorb" x="9" />
+      <skill id="backlash" x="4" />
+      <skill id="legion" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>12</attack>
+      <skill id="absorb" x="9" />
+      <skill id="backlash" x="5" />
+      <skill id="legion" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>43</health>
+      <skill id="absorb" x="9" />
+      <skill id="backlash" x="5" />
+      <skill id="legion" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>13</attack>
+      <skill id="absorb" x="10" />
+      <skill id="backlash" x="5" />
+      <skill id="legion" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5605</id>
+    <card_type>2</card_type>
+    <name>Medusozoa, the Immortal</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Seafolk_Thunder_Cloud_Jellyfish_A</picture>
+    <asset_bundle>157</asset_bundle>
+    <item_name>Medusozoa Stone</item_name>
+    <item_desc>Collect Medusozoa Stones to upgrade the Legendary Medusozoa, the Immortal card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <sub_type>12</sub_type>
+    <attack>12</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="backlash" x="4" />
+    <skill id="strike" all="1" x="4" />
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+      <skill id="stasis" x="4" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+      <skill id="stasis" x="5" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="stasis" x="5" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>14</attack>
+      <health>41</health>
+      <skill id="stasis" x="6" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>15</attack>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="stasis" x="7" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>16</attack>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="stasis" x="7" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>44</health>
+      <skill id="stasis" x="7" />
+      <skill id="backlash" x="5" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5606</id>
+    <card_type>2</card_type>
+    <name>Volvel, Golden Pride</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Insect_Angel_Scythe_Judgement_A</picture>
+    <asset_bundle>159</asset_bundle>
+    <item_name>Volvel Stone</item_name>
+    <item_desc>Collect Volvel Stones to upgrade the Legendary Volvel, Golden Pride card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>13</sub_type>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="rally" all="1" x="2" />
+    <skill id="daze" x="5" />
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" all="1" x="2" />
+      <skill id="daze" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="daze" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+      <skill id="armored" x="6" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>8</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="armored" x="7" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>22</health>
+      <skill id="armored" x="7" />
+      <skill id="rally" all="1" x="4" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>9</attack>
+      <health>23</health>
+      <skill id="armored" x="7" />
+      <skill id="rally" all="1" x="4" />
+      <skill id="daze" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5607</id>
+    <card_type>2</card_type>
+    <name>Tao, Transcended Lich</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undead_Monk_A</picture>
+    <asset_bundle>162</asset_bundle>
+    <item_name>Transcendence Stone</item_name>
+    <item_desc>Collect Transcendence Stones to upgrade the Legendary Tao, Transcended Lich card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <attack>7</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="nullify" x="2" />
+    <skill id="flurry" c="3" />
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="absorb" x="6" />
+      <skill id="nullify" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <skill id="absorb" x="6" />
+      <skill id="nullify" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="absorb" x="7" />
+      <skill id="nullify" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="absorb" x="7" />
+      <skill id="nullify" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="absorb" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="absorb" x="9" />
+      <skill id="nullify" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>21</health>
+      <skill id="absorb" x="9" />
+      <skill id="nullify" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>10</attack>
+      <skill id="absorb" x="9" />
+      <skill id="nullify" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>22</health>
+      <skill id="absorb" x="10" />
+      <skill id="nullify" x="5" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5608</id>
+    <card_type>2</card_type>
+    <name>Windsage Gama</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frog_Elemental_Wind_Spirit_Monk_B</picture>
+    <asset_bundle>164</asset_bundle>
+    <item_name>Windsage Stone</item_name>
+    <item_desc>Collect Windsage Stones to upgrade the Legendary Windsage Gama card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>5</sub_type>
+    <attack>10</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="jam" c="3" />
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+      <skill id="absorb" x="5" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+      <health>28</health>
+      <skill id="absorb" x="6" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>29</health>
+      <skill id="absorb" x="7" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+      <skill id="absorb" x="7" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <skill id="absorb" x="8" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>31</health>
+      <skill id="absorb" x="9" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <health>32</health>
+      <skill id="absorb" x="10" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>33</health>
+      <skill id="absorb" x="10" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>15</attack>
+      <health>34</health>
+      <skill id="absorb" x="11" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="jam" c="2" />
     </upgrade>
   </unit>
   <!-- ============================== -->
@@ -1954,71 +3331,160 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="evade" x="2" />
-    <skill id="poison" x="7" />
     <skill id="enrage" all="1" x="3" />
+    <skill id="poison" x="7" />
     <upgrade>
       <level>2</level>
       <health>24</health>
       <skill id="evade" x="2" />
-      <skill id="poison" x="8" />
       <skill id="enrage" all="1" x="3" />
+      <skill id="poison" x="8" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>7</attack>
       <skill id="evade" x="3" />
-      <skill id="poison" x="8" />
       <skill id="enrage" all="1" x="3" />
+      <skill id="poison" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>25</health>
       <skill id="evade" x="3" />
-      <skill id="poison" x="8" />
       <skill id="enrage" all="1" x="4" />
+      <skill id="poison" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>8</attack>
       <health>26</health>
       <skill id="evade" x="3" />
-      <skill id="poison" x="9" />
       <skill id="enrage" all="1" x="4" />
+      <skill id="poison" x="9" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>27</health>
       <skill id="evade" x="3" />
-      <skill id="poison" x="9" />
       <skill id="enrage" all="1" x="5" />
+      <skill id="poison" x="9" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>28</health>
       <skill id="evade" x="3" />
-      <skill id="poison" x="10" />
       <skill id="enrage" all="1" x="5" />
+      <skill id="poison" x="10" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <health>29</health>
       <skill id="evade" x="3" />
-      <skill id="poison" x="11" />
       <skill id="enrage" all="1" x="5" />
+      <skill id="poison" x="11" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <attack>9</attack>
       <skill id="evade" x="3" />
-      <skill id="poison" x="12" />
       <skill id="enrage" all="1" x="5" />
+      <skill id="poison" x="12" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <health>30</health>
       <skill id="evade" x="4" />
-      <skill id="poison" x="12" />
       <skill id="enrage" all="1" x="6" />
+      <skill id="poison" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7604</id>
+    <card_type>2</card_type>
+    <name>Tropicano Rex</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Dragon_Tropical_Poison_Dragon_A</picture>
+    <asset_bundle>145</asset_bundle>
+    <hidden_until_time>1542906000</hidden_until_time>
+    <item_name>Tropicano Stone</item_name>
+    <item_desc>Collect Tropicano Stones to upgrade the Legendary Tropicano Rex card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <attack>7</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="frost" x="3" />
+    <skill id="poison" x="6" />
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="regenerate" x="6" />
+      <skill id="frost" x="3" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="regenerate" x="6" />
+      <skill id="frost" x="3" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <skill id="regenerate" x="6" />
+      <skill id="frost" x="4" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="regenerate" x="7" />
+      <skill id="frost" x="4" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="regenerate" x="7" />
+      <skill id="frost" x="5" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>30</health>
+      <skill id="regenerate" x="8" />
+      <skill id="frost" x="5" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>31</health>
+      <skill id="regenerate" x="8" />
+      <skill id="frost" x="5" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>9</attack>
+      <skill id="regenerate" x="8" />
+      <skill id="frost" x="6" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>32</health>
+      <skill id="regenerate" x="9" />
+      <skill id="frost" x="6" />
+      <skill id="poison" x="10" />
     </upgrade>
   </unit>
 </root>
+

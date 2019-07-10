@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!--
 	<passive_mission>
@@ -313,7 +313,7 @@
     <max_level>30</max_level>
     <name>Spell Rush</name>
     <portrait>grandexcavator</portrait>
-    <description>Malchior suspects the mountains to the west of Karthos to be rich with Spellstones. Be the first to find them! </description>
+    <description>Malchior suspects the mountains to the west of Karthos to be rich with Spellstones. Be the first to find them!</description>
     <duration>1380</duration>
     <decay>480</decay>
     <difficulty>26</difficulty>
@@ -410,7 +410,7 @@
       <max_level>22</max_level>
       <name>Borrowing</name>
       <portrait>goblinmerchant</portrait>
-      <description>The goblin found some abandoned valuables in a near by home! He needs help gaining entrance to the house. </description>
+      <description>The goblin found some abandoned valuables in a near by home! He needs help gaining entrance to the house.</description>
       <duration>1380</duration>
       <decay>480</decay>
       <difficulty>21</difficulty>
@@ -1027,7 +1027,7 @@
     <max_level>40</max_level>
     <name>Troubled Landings</name>
     <portrait>windstormelemental</portrait>
-    <description>A Windstorm Elemental is traveling under a fleet of airships, trying to land on Arcantica. Lure the elemental away from the airships so they can land safely! </description>
+    <description>A Windstorm Elemental is traveling under a fleet of airships, trying to land on Arcantica. Lure the elemental away from the airships so they can land safely!</description>
     <duration>1380</duration>
     <decay>480</decay>
     <difficulty>36</difficulty>
@@ -1204,3 +1204,4 @@
     </reward>
   </passive_mission>
 </root>
+
