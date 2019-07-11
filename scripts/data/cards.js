@@ -23910,6 +23910,131 @@ var CARDS = {
 			}
 		}
 	},
+	"436": {
+		"card_type": "1",
+		"health": 79,
+		"id": "436",
+		"maxLevel": 6,
+		"name": "Frog Defense",
+		"picture": "portrait_frogemperor",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "enhance",
+				"s": "armored",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 83,
+				"skill": [
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 87,
+				"skill": [
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 91,
+				"skill": [
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 95,
+				"skill": [
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"id": "enhance",
+						"s": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -65869,6 +65994,96 @@ var CARDS = {
 			}
 		}
 	},
+	"5238": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1562864400000",
+		"id": "5238",
+		"maxLevel": 6,
+		"name": "Frostfire Apprentice",
+		"picture": "Frog_Book_Sage_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "frost",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"health": 21,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "frost",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"5239": {
 		"attack": 10,
 		"card_type": "2",
@@ -85429,6 +85644,101 @@ var CARDS = {
 			"6": {
 				"health": 36,
 				"skill": []
+			}
+		}
+	},
+	"6236": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1562864400000",
+		"id": "6236",
+		"maxLevel": 6,
+		"name": "Taffy Frog",
+		"picture": "Frog_Toxic_Frog_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 4
+			},
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": []
+			},
+			"4": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					}
+				]
 			}
 		}
 	},
@@ -105392,6 +105702,99 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 2
+					}
+				]
+			}
+		}
+	},
+	"7241": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1563210000000",
+		"id": "7241",
+		"maxLevel": 6,
+		"name": "Storm Order Monk",
+		"picture": "Frog_Acrobat_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 3
+			},
+			{
+				"id": "heal",
+				"x": 3,
+				"y": "4"
+			},
+			{
+				"id": "daze",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 14,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 3,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 4,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 15,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "heal",
+						"x": 4,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 5
 					}
 				]
 			}
@@ -158103,6 +158506,84 @@ var CARDS = {
 			}
 		}
 	},
+	"15238": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1562864400000",
+		"id": "15238",
+		"maxLevel": 6,
+		"name": "Frostfire Adept",
+		"picture": "Frog_Book_Sage_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "frost",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "frost",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"health": 24,
+				"skill": []
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"15239": {
 		"attack": 11,
 		"card_type": "2",
@@ -177430,6 +177911,102 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"16236": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1562864400000",
+		"id": "16236",
+		"maxLevel": 6,
+		"name": "Taffy Rager",
+		"picture": "Frog_Toxic_Frog_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 5
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 39,
+				"skill": []
+			},
+			"6": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
 					}
 				]
 			}
@@ -197797,6 +198374,113 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"17241": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1563210000000",
+		"id": "17241",
+		"maxLevel": 6,
+		"name": "Storm Order Bender",
+		"picture": "Frog_Acrobat_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"id": "heal",
+				"x": 5,
+				"y": "4"
+			},
+			{
+				"id": "daze",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "heal",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "heal",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"health": 17,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "heal",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "heal",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 7
 					}
 				]
 			}
@@ -236331,6 +237015,72 @@ var CARDS = {
 			}
 		}
 	},
+	"25238": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1562864400000",
+		"id": "25238",
+		"maxLevel": 6,
+		"name": "Frostfire Mage",
+		"picture": "Frog_Book_Sage_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "frost",
+				"x": 5
+			},
+			{
+				"id": "burn",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"4",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 5,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "frost",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"25239": {
 		"attack": 12,
 		"card_type": "2",
@@ -255512,6 +256262,101 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"26236": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1562864400000",
+		"id": "26236",
+		"maxLevel": 6,
+		"name": "Taffy Enrager",
+		"picture": "Frog_Toxic_Frog_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 7
+			},
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 41,
+				"skill": []
+			},
+			"4": {
+				"attack": 14,
+				"health": 42,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
 					}
 				]
 			}
@@ -275955,6 +276800,127 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"27241": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1563210000000",
+		"id": "27241",
+		"maxLevel": 6,
+		"name": "Storm Order Sage",
+		"picture": "Frog_Acrobat_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"id": "heal",
+				"x": 7,
+				"y": "4"
+			},
+			{
+				"id": "daze",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "heal",
+						"x": 7,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "heal",
+						"x": 7,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"health": 19,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "heal",
+						"x": 9,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 9
 					}
 				]
 			}
