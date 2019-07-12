@@ -11088,6 +11088,150 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 17 weeks 5-8 -->
+  <achievement>
+    <id>3487</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Three-Pronged Attack</name>
+    <desc>Complete the 'Three-Pronged Attack' campaign on Mastery Level 1.</desc>
+    <mission_req>6246</mission_req>
+    <locked_start_time>1564074000</locked_start_time>
+    <!-- Thu, 25 July 2019 17:00:00 -->
+    <req>
+      <campaign>1215</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3095" number="50" />
+      <event_points id="7049" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3488</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Three-Pronged Attack</name>
+    <desc>Complete the 'Three-Pronged Attack' campaign on Mastery Level 2.</desc>
+    <mission_req>6246</mission_req>
+    <locked_start_time>1564074000</locked_start_time>
+    <!-- Thu, 25 July 2019 17:00:00 -->
+    <achievement_req>3487</achievement_req>
+    <req>
+      <campaign>1215</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3489</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Three-Pronged Attack</name>
+    <desc>Complete the 'Three-Pronged Attack' campaign on Mastery Level 4.</desc>
+    <mission_req>6246</mission_req>
+    <locked_start_time>1564074000</locked_start_time>
+    <!-- Thu, 25 July 2019 17:00:00 -->
+    <achievement_req>3488</achievement_req>
+    <req>
+      <campaign>1215</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3490</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Three-Pronged Attack</name>
+    <desc>Complete the 'Three-Pronged Attack' campaign on Mastery Level 6.</desc>
+    <mission_req>6246</mission_req>
+    <locked_start_time>1564074000</locked_start_time>
+    <!-- Thu, 25 July 2019 17:00:00 -->
+    <achievement_req>3489</achievement_req>
+    <req>
+      <campaign>1215</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3491</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Door of Reckoning</name>
+    <desc>Complete the 'Door of Reckoning' campaign on Mastery Level 2.</desc>
+    <mission_req>6252</mission_req>
+    <locked_start_time>1565283600</locked_start_time>
+    <!--  Thu, August 8 2019 17:00:00 -->
+    <req>
+      <campaign>1216</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3492</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Door of Reckoning</name>
+    <desc>Complete the 'Door of Reckoning' campaign on Mastery Level 4.</desc>
+    <mission_req>6252</mission_req>
+    <locked_start_time>1565283600</locked_start_time>
+    <!--  Thu, August 8 2019 17:00:00 -->
+    <achievement_req>3491</achievement_req>
+    <req>
+      <campaign>1216</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3493</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Door of Reckoning</name>
+    <desc>Complete the 'Door of Reckoning' campaign on Mastery Level 6.</desc>
+    <mission_req>6252</mission_req>
+    <locked_start_time>1565283600</locked_start_time>
+    <!--  Thu, August 8 2019 17:00:00 -->
+    <achievement_req>3492</achievement_req>
+    <req>
+      <campaign>1216</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <!-- Sproutfrog recipe -->
+  <achievement>
+    <id>3494</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Three Valiant Hearts</name>
+    <desc>Complete the 'Three Valiant Hearts' campaign on Mastery Level 1.</desc>
+    <mission_req>6235</mission_req>
+    <locked_start_time>1562864400</locked_start_time>
+    <!--  Thu, July 11 2019 17:00:00 -->
+    <req>
+      <campaign>1214</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8018" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

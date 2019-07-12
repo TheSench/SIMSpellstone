@@ -7273,6 +7273,39 @@
     </rewards>
     <find_item id="3095" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node Three Valiant Hearts -->
+  <campaign>
+    <id>1214</id>
+    <name>Three Valiant Hearts</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1212" level="1" />
+    <locked_start_time>1562864400</locked_start_time>
+    <!--  Thu, July 11 2019 17:00:00 -->
+    <battleground_id>2072</battleground_id>
+    <location_id>23</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>280</x>
+    <y>450</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6259</mission_id>
+      <mission_id>6260</mission_id>
+      <mission_id>6261</mission_id>
+      <mission_id>6262</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3097" />
+      <item level="5" id="3097" />
+      <item level="6" id="3097" />
+      <item level="7" id="3097" />
+    </rewards>
+    <find_item id="3095" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

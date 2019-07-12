@@ -39213,5 +39213,474 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 17 Weeks 5-8 -->
+  <mission>
+    <id>6247</id>
+    <name>Stealing Technology</name>
+    <energy>18</energy>
+    <desc>Aria attempts to hook up a new power source to the runes. With the Frogs still nearby, any form of defense could prove to be useful.</desc>
+    <commander id="356" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="7053" name="Bee Eater" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5024" mastery_level="3" name="Cloudtop Dragon" />
+      <card id="2004" mastery_level="4" name="Lavatail Dragon" />
+      <card id="5101" mastery_level="5" name="Sycophant" />
+      <card id="5051" mastery_level="6" name="Amphibious Digger" />
+      <card id="5189" mastery_level="7" name="Armorscald Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6248</id>
+    <name>Counter Surge</name>
+    <energy>18</energy>
+    <desc>While Aria is fiddling with the magical runes, the energy around them abruptly jumps back to life! They crackle with electric power...</desc>
+    <commander id="355" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="5053" name="Anura Witch" />
+      <card id="7098" name="Survivalist" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2162" name="Frog Samurai" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="6102" mastery_level="2" name="Ribbithold Guards" />
+      <card id="5093" mastery_level="3" name="Scaly Newborn" />
+      <card id="2001" mastery_level="4" name="Dunetooth Demon" />
+      <card id="5160" mastery_level="5" name="Tetsudo's Shield" />
+      <card id="5054" mastery_level="6" name="Reckless Ballista" />
+      <card id="5129" mastery_level="7" name="Shackled Gatekeeper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Ugh! What... what is this energy?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6249</id>
+    <name>Dark Strike</name>
+    <energy>18</energy>
+    <desc>Shades from the past flicker at each one of the runes. Former nemeses appear at each one of the runes, their form faint and corporeal.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7012" name="Life Drake" />
+      <card id="6061" name="Decagon" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="6102" mastery_level="2" name="Ribbithold Guards" />
+      <card id="5096" mastery_level="3" name="Enclave Dragon" />
+      <card id="7024" mastery_level="4" name="Woolmane Dragon" />
+      <card id="5157" mastery_level="5" name="Spellbind Magus" />
+      <card id="5100" mastery_level="6" name="Lifegiver Augur" />
+      <card id="6059" mastery_level="7" name="Violetfire Igniter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Priest</commander>
+        <enemy>1</enemy>
+        <text>The path towards Harmony stands before us.</text>
+      </line>
+      <line>
+        <commander>Portrait_darksword</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6250</id>
+    <name>Enemy Forces</name>
+    <energy>18</energy>
+    <desc>A dark vortex appears in Aria's hand, as she prepares a magical attack. The temple's energy continues to run haywire, bolting the floor randomly with power.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7099" name="Toadplay" />
+      <card id="7099" name="Toadplay" />
+      <card id="2014" mastery_level="2" name="Tadpole Warmage" />
+      <card id="6096" mastery_level="3" name="Desert Slitherer" />
+      <card id="6131" mastery_level="4" name="Winged Abducter" />
+      <card id="5205" mastery_level="5" name="Dawnfire Knight" />
+      <card id="5159" mastery_level="6" name="Vortex Palm" />
+      <card id="6207" mastery_level="7" name="Sandlair Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Stand back, adventurer, I'm going to unleash a dark attack!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6251</id>
+    <name>Crimson Frogs</name>
+    <energy>18</energy>
+    <desc>Aria's dark bolt harmlessly phases through the apparition of Batara. One of the frogs motions for the group to attack. The Crimsonwings start a new wave of attack, trying desperately to keep you busy while the Heroes' Companions continue their magic.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="5053" name="Anura Witch" />
+      <card id="6154" name="Egg Thief" />
+      <card id="2011" name="Poliworg" />
+      <card id="2161" mastery_level="2" name="Frog Templar" />
+      <card id="7024" mastery_level="3" name="Woolmane Dragon" />
+      <card id="7129" mastery_level="4" name="Zealous Snapjaw" />
+      <card id="6238" mastery_level="5" name="Venomdart Scout" />
+      <card id="6155" mastery_level="6" name="Jorang, Frog Chemist" />
+      <card id="6132" mastery_level="7" name="Deception Scalelord" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Angel_Demon_Samurai</commander>
+        <enemy>1</enemy>
+        <text>Strength is not the sole condition of victory. You fought well, but this is the end.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6252</id>
+    <name>Energy Reaction</name>
+    <energy>18</energy>
+    <desc>The energy that the three companions are generating is incredible. The entire Temple glows with magic, radiating from them. Something appears at the Temple's center...</desc>
+    <commander id="293" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="6131" mastery_level="3" name="Winged Abducter" />
+      <card id="2005" mastery_level="4" name="Sailing Drake" />
+      <card id="6201" mastery_level="5" name="Blasteye Sentry" />
+      <card id="6199" mastery_level="6" name="Solblade" />
+      <card id="6183" mastery_level="7" name="Knowledge Hoarder" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Angel_Demon_Samurai</commander>
+        <enemy>1</enemy>
+        <text>Now come forth!</text>
+      </line>
+      <line>
+        <commander>Portrait_Avian_Priest</commander>
+        <enemy>1</enemy>
+        <text>Leave the prison which trapped you!</text>
+      </line>
+      <line>
+        <commander>Portrait_darksword</commander>
+        <enemy>1</enemy>
+        <text>...!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6253</id>
+    <name>One Way</name>
+    <energy>18</energy>
+    <desc>One final blast of energy, and the three companions have vanished. Before you lies a magical door, shining and wavering with energy. You could reach out and touch it...</desc>
+    <commander id="356" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5020" name="Frost Frog" />
+      <card id="6020" mastery_level="2" name="Croak Piercer" />
+      <card id="7010" mastery_level="3" name="Honeycomb Dragon" />
+      <card id="6052" mastery_level="4" name="Fuming Beast" />
+      <card id="8077" mastery_level="5" name="Vorpal Berserker" />
+      <card id="7103" mastery_level="6" name="Wavomancer" />
+      <card id="2006" mastery_level="7" name="Zhulong" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>This is- some kind of portal. We're going to have to close it from the inside.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6254</id>
+    <name>Stubborn Resolve</name>
+    <energy>18</energy>
+    <desc>Aria stops you before you can touch the door. She looks you fiercely in the eye as she explains her plan.</desc>
+    <commander id="388" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="2162" mastery_level="2" name="Frog Samurai" />
+      <card id="6131" mastery_level="3" name="Winged Abducter" />
+      <card id="6101" mastery_level="4" name="Chasm Dowager" />
+      <card id="7202" mastery_level="5" name="Bitoad Marsher" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="7060" mastery_level="7" name="Shenami" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Adventurer. Let me do this. If it wasn't for me, then The Void wouldn't have grown so strong.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6255</id>
+    <name>Aria's Redemption</name>
+    <energy>18</energy>
+    <desc>Aria has something she wants to prove to you and the others. However, her stubborness could create only further danger...</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="5020" name="Frost Frog" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="6050" name="Wortwog" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="1028" mastery_level="2" name="Heroic Frog" />
+      <card id="6096" mastery_level="3" name="Desert Slitherer" />
+      <card id="7156" mastery_level="4" name="Dawnglow Sharpshot" />
+      <card id="1043" mastery_level="5" name="Lilypad Bard" />
+      <card id="7049" mastery_level="6" name="Boundtoad" />
+      <card id="7032" mastery_level="7" name="Nidhogg" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>That's why I... Don't you dare try to stop me. I'm going to do it!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6256</id>
+    <name>To Purify the Past</name>
+    <energy>18</energy>
+    <desc>Aria pushes you back roughly, causing you to stumble on the ground. Before you can stop her, she runs up to the door that has manifested, opening it...</desc>
+    <commander id="355" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6061" name="Decagon" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="7099" name="Toadplay" />
+      <card id="5053" name="Anura Witch" />
+      <card id="6050" name="Wortwog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2012" mastery_level="2" name="Frogling Swarm" />
+      <card id="2001" mastery_level="3" name="Dunetooth Demon" />
+      <card id="7102" mastery_level="4" name="Croaker's Disciple" />
+      <card id="2071" mastery_level="5" name="Sproutfrog Rainwisher" />
+      <card id="7042" mastery_level="6" name="Scurvy Hopper" />
+      <card id="7008" mastery_level="7" name="Rock Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6257</id>
+    <name>Do Unto Others</name>
+    <energy>18</energy>
+    <desc>Aria stops before the door, turning to you. An unusually soft smile has replaced her normal scowl. The door's light behind her makes her seem to radiate...</desc>
+    <commander id="249" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7155" mastery_level="2" name="Seashell Footpad" />
+      <card id="7128" mastery_level="3" name="Denizen of the Trees" />
+      <card id="7100" mastery_level="4" name="Snow Caller" />
+      <card id="2013" mastery_level="5" name="Stoneclad Toad" />
+      <card id="7202" mastery_level="6" name="Bitoad Marsher" />
+      <card id="6099" mastery_level="7" name="Opposing Forces" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You keep risking your life to save others.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Now it's about time that I do the same for you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6258</id>
+    <name>Gate to Another Realm</name>
+    <energy>18</energy>
+    <desc>Aria opens the door. You leap to your feet, dashing towards her before you can properly think. If Aria enters alone, you feel you might never see her again...</desc>
+    <commander id="310" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="7095" name="Talonsaur" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2014" mastery_level="2" name="Tadpole Warmage" />
+      <card id="6131" mastery_level="3" name="Winged Abducter" />
+      <card id="1643" mastery_level="4" name="Nimble Leaper" />
+      <card id="7097" mastery_level="5" name="Caustic Toadbog" />
+      <card id="7159" mastery_level="6" name="Lucky Frog" />
+      <card id="7214" mastery_level="7" name="Furystorm Drake" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 17 Boss Node Three Valiant Hearts -->
+  <mission>
+    <id>6259</id>
+    <name>First Light</name>
+    <energy>9</energy>
+    <desc>A Frog with a rotund belly blocks your path. The others congregate around him, forming a wall between you and the Companions. Tanit raises her wing towards the center, a brilliant line of light forming.</desc>
+    <commander id="436" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="5156" name="Tiltyard Ribbot" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="6103" name="Ribbitaksu" />
+      <card id="6235" name="Mawcroak" />
+      <card id="6235" name="Mawcroak" />
+      <card id="5160" mastery_level="2" name="Tetsudo's Shield" />
+      <card id="5230" mastery_level="3" name="Gustblood Djinn" />
+      <card id="7049" mastery_level="4" name="Boundtoad" />
+      <card id="7154" mastery_level="5" name="Mollusk Snarecaster" />
+      <card id="7223" mastery_level="6" name="Vombomber Recruit" />
+      <card id="7223" mastery_level="7" name="Vombomber Recruit" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6260</id>
+    <name>Second Light</name>
+    <energy>9</energy>
+    <desc>You crash through the frog troops with all of your might. The rotund Frog laughs deeply, slapping his belly, even as his forces fall like flies. Batara raises his hand, another light connecting him to the room's center.</desc>
+    <commander id="436" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="5156" name="Tiltyard Ribbot" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="6103" name="Ribbitaksu" />
+      <card id="6235" name="Mawcroak" />
+      <card id="6235" name="Mawcroak" />
+      <card id="5160" mastery_level="2" name="Tetsudo's Shield" />
+      <card id="5230" mastery_level="3" name="Gustblood Djinn" />
+      <card id="7049" mastery_level="4" name="Boundtoad" />
+      <card id="7154" mastery_level="5" name="Mollusk Snarecaster" />
+      <card id="7223" mastery_level="6" name="Vombomber Recruit" />
+      <card id="7223" mastery_level="7" name="Vombomber Recruit" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6261</id>
+    <name>Third Light</name>
+    <energy>9</energy>
+    <desc>Aria shrieks as her magic does nothing to the light. It must be stopped with physical force. You're almost at the center, when another Frog tackles you to the ground. Formos raises his claw, a third light joining with the others.</desc>
+    <commander id="436" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="5156" name="Tiltyard Ribbot" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="6103" name="Ribbitaksu" />
+      <card id="6235" name="Mawcroak" />
+      <card id="6235" name="Mawcroak" />
+      <card id="5160" mastery_level="2" name="Tetsudo's Shield" />
+      <card id="5230" mastery_level="3" name="Gustblood Djinn" />
+      <card id="7049" mastery_level="4" name="Boundtoad" />
+      <card id="7154" mastery_level="5" name="Mollusk Snarecaster" />
+      <card id="7223" mastery_level="6" name="Vombomber Recruit" />
+      <card id="7223" mastery_level="7" name="Vombomber Recruit" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6262</id>
+    <name>Final Fight</name>
+    <energy>9</energy>
+    <desc>You push the Frog off you. The light has combined, before shutting off all at once. A brilliant door stands in its place, the Companions snapping out of existence, as the last of the Frogs fall to your might.</desc>
+    <commander id="436" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="5156" name="Tiltyard Ribbot" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="5143" name="Cedric's Battlesnail" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="6103" name="Ribbitaksu" />
+      <card id="6235" name="Mawcroak" />
+      <card id="6235" name="Mawcroak" />
+      <card id="5160" mastery_level="2" name="Tetsudo's Shield" />
+      <card id="5230" mastery_level="3" name="Gustblood Djinn" />
+      <card id="7049" mastery_level="4" name="Boundtoad" />
+      <card id="7154" mastery_level="5" name="Mollusk Snarecaster" />
+      <card id="7223" mastery_level="6" name="Vombomber Recruit" />
+      <card id="7223" mastery_level="7" name="Vombomber Recruit" />
+    </deck>
+  </mission>
 </root>
 
