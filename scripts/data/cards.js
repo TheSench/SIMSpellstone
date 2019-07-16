@@ -43141,6 +43141,69 @@ var CARDS = {
 			}
 		}
 	},
+	"2164": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 15,
+		"hidden_until": "1564074000000",
+		"id": "2164",
+		"maxLevel": 5,
+		"name": "Mirefang Stalker",
+		"picture": "Marsh_Dragon_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "regenerate",
+				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"attack": 5,
+				"health": 17,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"attack": 6,
+				"health": 18,
+				"skill": []
+			}
+		}
+	},
 	"4000": {
 		"attack": 9,
 		"card_type": "2",
@@ -85742,6 +85805,73 @@ var CARDS = {
 			}
 		}
 	},
+	"6237": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 10,
+		"hidden_until": "1563814800000",
+		"id": "6237",
+		"maxLevel": 6,
+		"name": "Pernicious Rascal",
+		"picture": "Frog_Void_Caller_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 11,
+				"skill": []
+			},
+			"3": {
+				"attack": 4,
+				"skill": []
+			},
+			"4": {
+				"health": 12,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"health": 13,
+				"skill": []
+			}
+		}
+	},
 	"6238": {
 		"attack": 3,
 		"card_type": "2",
@@ -105702,6 +105832,105 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 2
+					}
+				]
+			}
+		}
+	},
+	"7240": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1563469200000",
+		"id": "7240",
+		"maxLevel": 6,
+		"name": "Tranquil Monk",
+		"picture": "Frog_Oracle_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "protect",
+				"x": 6,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"attack": 3,
+				"health": 21,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "3"
 					}
 				]
 			}
@@ -139101,6 +139330,94 @@ var CARDS = {
 					{
 						"id": "burn",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"12164": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 19,
+		"hidden_until": "1564074000000",
+		"id": "12164",
+		"maxLevel": 5,
+		"name": "Mirefang Hunter",
+		"picture": "Marsh_Dragon_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"id": "poison",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"attack": 7,
+				"health": 21,
+				"skill": []
+			},
+			"5": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 6
 					}
 				]
 			}
@@ -178012,6 +178329,73 @@ var CARDS = {
 			}
 		}
 	},
+	"16237": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1563814800000",
+		"id": "16237",
+		"maxLevel": 6,
+		"name": "Pernicious Prankster",
+		"picture": "Frog_Void_Caller_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "enfeeble",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 14,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 15,
+				"skill": []
+			},
+			"5": {
+				"attack": 6,
+				"skill": []
+			},
+			"6": {
+				"health": 16,
+				"skill": []
+			}
+		}
+	},
 	"16238": {
 		"attack": 3,
 		"card_type": "2",
@@ -198379,6 +198763,105 @@ var CARDS = {
 			}
 		}
 	},
+	"17240": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1563469200000",
+		"id": "17240",
+		"maxLevel": 6,
+		"name": "Tranquil Rambler",
+		"picture": "Frog_Oracle_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"id": "protect",
+				"x": 7,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			},
+			"3": {
+				"attack": 5,
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"health": 25,
+				"skill": []
+			},
+			"5": {
+				"health": 26,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			}
+		}
+	},
 	"17241": {
 		"attack": 5,
 		"card_type": "2",
@@ -217432,6 +217915,82 @@ var CARDS = {
 					{
 						"id": "burn",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"22164": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1564074000000",
+		"id": "22164",
+		"maxLevel": 5,
+		"name": "Mirefang Predator",
+		"picture": "Marsh_Dragon_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "poison",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"attack": 9,
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 8
 					}
 				]
 			}
@@ -256362,6 +256921,86 @@ var CARDS = {
 			}
 		}
 	},
+	"26237": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1563814800000",
+		"id": "26237",
+		"maxLevel": 6,
+		"name": "Pernicious Warlock",
+		"picture": "Frog_Void_Caller_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "enfeeble",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 17,
+				"skill": []
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"health": 18,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"26238": {
 		"attack": 3,
 		"card_type": "2",
@@ -276800,6 +277439,105 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"27240": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1563469200000",
+		"id": "27240",
+		"maxLevel": 6,
+		"name": "Tranquil Hierophant",
+		"picture": "Frog_Oracle_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"id": "protect",
+				"x": 8,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			},
+			"4": {
+				"attack": 7,
+				"skill": []
+			},
+			"5": {
+				"health": 29,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "protect",
+						"x": 9,
+						"y": "3"
 					}
 				]
 			}
