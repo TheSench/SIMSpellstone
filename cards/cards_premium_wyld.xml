@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
-  <!-- Commanders       - 1-899 -->
-  <!-- Player       - 1-199 -->
-  <!-- Story        - 200-499 -->
-  <!-- Special Cards    - 500-999 -->
-  <!-- Misc         - 500-599 -->
-  <!-- Battleground - 600-699 -->
-  <!-- Standard Set     - 1000-1999 -->
-  <!-- Aether       - 1000-1299 -->
-  <!-- Chaos        - 1300-1599 -->
-  <!-- Wyld         - 1600-1899 -->
-  <!-- Reward Set       - 2000-4999 -->
-  <!-- Premium Set      - 5000-7999 -->
-  <!-- Aether       - 5000-5999 -->
-  <!-- Chaos        - 6000-6999 -->
-  <!-- Wyld         - 7000-7999 -->
-  <!-- Enemy Set        - 8000-8999 -->
-  <!-- Fusion 1         - 1xxxx -->
-  <!-- Fusion 2         - 2xxxx -->
   <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
   <!-- ====================== -->
   <!-- ==== WYLD PREMIUM ==== -->
@@ -30826,6 +30808,146 @@
       <skill id="regenerate" x="7" />
       <skill id="heal" x="3" all="1" />
       <skill id="nullify" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7240</id>
+    <card_type>2</card_type>
+    <name>Tranquil Monk</name>
+    <picture>Frog_Oracle_A</picture>
+    <asset_bundle>164</asset_bundle>
+    <hidden_until_time>1563469200</hidden_until_time>
+    <attack>2</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="protect" x="6" y="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="4" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="protect" x="6" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <skill id="absorb" x="4" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="protect" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="4" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="7" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17240</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tranquil Rambler</name>
+    <picture>Frog_Oracle_A</picture>
+    <asset_bundle>164</asset_bundle>
+    <hidden_until_time>1563469200</hidden_until_time>
+    <attack>4</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="protect" x="7" y="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="5" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+      <skill id="absorb" x="6" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="6" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="8" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27240</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tranquil Hierophant</name>
+    <picture>Frog_Oracle_B</picture>
+    <asset_bundle>164</asset_bundle>
+    <hidden_until_time>1563469200</hidden_until_time>
+    <attack>6</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="protect" x="8" y="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+      <skill id="absorb" x="7" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="8" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+      <skill id="absorb" x="8" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="8" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="8" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="9" y="3" />
     </upgrade>
   </unit>
   <unit>

@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
-  <!-- Commanders       - 1-899 -->
-  <!-- Player       - 1-199 -->
-  <!-- Story        - 200-499 -->
-  <!-- Special Cards    - 500-999 -->
-  <!-- Misc         - 500-599 -->
-  <!-- Battleground - 600-699 -->
-  <!-- Standard Set     - 1000-1999 -->
-  <!-- Aether       - 1000-1299 -->
-  <!-- Chaos        - 1300-1599 -->
-  <!-- Wyld         - 1600-1899 -->
-  <!-- Reward Set       - 2000-4999 -->
-  <!-- Premium Set      - 5000-7999 -->
-  <!-- Aether       - 5000-5999 -->
-  <!-- Chaos        - 6000-6999 -->
-  <!-- Wyld         - 7000-7999 -->
-  <!-- Enemy Set        - 8000-8999 -->
-  <!-- Fusion 1         - 1xxxx -->
-  <!-- Fusion 2         - 2xxxx -->
   <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
   <!-- ==================== -->
   <!-- === REWARD CARDS === -->
@@ -18771,6 +18753,130 @@
       <skill id="absorb" x="6" />
       <skill id="regenerate" x="6" />
       <skill id="burn" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2164</id>
+    <card_type>2</card_type>
+    <name>Mirefang Stalker</name>
+    <picture>Marsh_Dragon_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="3" />
+    <skill id="poison" x="4" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="4" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12164</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Mirefang Hunter</name>
+    <picture>Marsh_Dragon_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>6</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="4" />
+    <skill id="poison" x="5" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="4" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="5" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="6" />
+      <skill id="poison" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22164</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Mirefang Predator</name>
+    <picture>Marsh_Dragon_B</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>7</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="2" />
+    <skill id="regenerate" x="6" />
+    <skill id="poison" x="7" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+      <skill id="evade" x="3" />
+      <skill id="regenerate" x="6" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="regenerate" x="7" />
+      <skill id="poison" x="8" />
     </upgrade>
   </unit>
 </root>

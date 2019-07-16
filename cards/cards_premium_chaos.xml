@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
-  <!-- Commanders       - 1-899 -->
-  <!-- Player       - 1-199 -->
-  <!-- Story        - 200-499 -->
-  <!-- Special Cards    - 500-999 -->
-  <!-- Misc         - 500-599 -->
-  <!-- Battleground - 600-699 -->
-  <!-- Standard Set     - 1000-1999 -->
-  <!-- Aether       - 1000-1299 -->
-  <!-- Chaos        - 1300-1599 -->
-  <!-- Wyld         - 1600-1899 -->
-  <!-- Reward Set       - 2000-4999 -->
-  <!-- Premium Set      - 5000-7999 -->
-  <!-- Aether       - 5000-5999 -->
-  <!-- Chaos        - 6000-6999 -->
-  <!-- Wyld         - 7000-7999 -->
-  <!-- Enemy Set        - 8000-8999 -->
-  <!-- Fusion 1         - 1xxxx -->
-  <!-- Fusion 2         - 2xxxx -->
   <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
   <!-- ===================== -->
   <!-- === CHAOS PREMIUM === -->
@@ -29944,6 +29926,130 @@
       <skill id="corrosive" x="8" />
       <skill id="regenerate" x="7" />
       <skill id="enrage" x="5" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6237</id>
+    <card_type>2</card_type>
+    <name>Pernicious Rascal</name>
+    <picture>Frog_Void_Caller_A</picture>
+    <asset_bundle>164</asset_bundle>
+    <hidden_until_time>1563814800</hidden_until_time>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="2" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16237</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Pernicious Prankster</name>
+    <picture>Frog_Void_Caller_A</picture>
+    <asset_bundle>164</asset_bundle>
+    <hidden_until_time>1563814800</hidden_until_time>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="3" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26237</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pernicious Warlock</name>
+    <picture>Frog_Void_Caller_B</picture>
+    <asset_bundle>164</asset_bundle>
+    <hidden_until_time>1563814800</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="5" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="5" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="6" />
+      <skill id="enfeeble" x="2" all="1" />
     </upgrade>
   </unit>
   <unit>

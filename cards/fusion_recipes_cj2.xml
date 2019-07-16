@@ -2011,6 +2011,14 @@
     <card_id>22162</card_id>
     <resource card_id="12162" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12164</card_id>
+    <resource card_id="2164" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22164</card_id>
+    <resource card_id="12164" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->
@@ -5776,6 +5784,14 @@
     <resource card_id="16236" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>16237</card_id>
+    <resource card_id="6237" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26237</card_id>
+    <resource card_id="16237" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>16238</card_id>
     <resource card_id="6238" number="2" />
   </fusion_recipe>
@@ -7687,6 +7703,14 @@
   <fusion_recipe>
     <card_id>27239</card_id>
     <resource card_id="17239" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17240</card_id>
+    <resource card_id="7240" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27240</card_id>
+    <resource card_id="17240" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>17241</card_id>

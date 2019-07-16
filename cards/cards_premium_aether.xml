@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
-  <!-- Commanders       - 1-899 -->
-  <!-- Player       - 1-199 -->
-  <!-- Story        - 200-499 -->
-  <!-- Special Cards    - 500-999 -->
-  <!-- Misc         - 500-599 -->
-  <!-- Battleground - 600-699 -->
-  <!-- Standard Set     - 1000-1999 -->
-  <!-- Aether       - 1000-1299 -->
-  <!-- Chaos        - 1300-1599 -->
-  <!-- Wyld         - 1600-1899 -->
-  <!-- Reward Set       - 2000-4999 -->
-  <!-- Premium Set      - 5000-7999 -->
-  <!-- Aether       - 5000-5999 -->
-  <!-- Chaos        - 6000-6999 -->
-  <!-- Wyld         - 7000-7999 -->
-  <!-- Enemy Set        - 8000-8999 -->
-  <!-- Fusion 1         - 1xxxx -->
-  <!-- Fusion 2         - 2xxxx -->
   <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
   <!-- ====================== -->
   <!-- === AETHER PREMIUM === -->
