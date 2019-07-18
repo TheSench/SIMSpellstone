@@ -43141,6 +43141,82 @@ var CARDS = {
 			}
 		}
 	},
+	"2163": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 28,
+		"hidden_until": "1564074000000",
+		"id": "2163",
+		"maxLevel": 5,
+		"name": "Ringwing Fulminator",
+		"picture": "Dragon_Armored_Wind_Lightning_Dragon_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 1
+			},
+			{
+				"id": "strike",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"9",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 29,
+				"skill": []
+			},
+			"3": {
+				"attack": 9,
+				"health": 30,
+				"skill": []
+			},
+			"4": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
 	"2164": {
 		"attack": 4,
 		"card_type": "2",
@@ -139335,6 +139411,96 @@ var CARDS = {
 			}
 		}
 	},
+	"12163": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1564074000000",
+		"id": "12163",
+		"maxLevel": 5,
+		"name": "Ironwing Fulminator",
+		"picture": "Dragon_Armored_Wind_Lightning_Dragon_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "strike",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"9",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"health": 33,
+				"skill": []
+			},
+			"3": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
 	"12164": {
 		"attack": 6,
 		"card_type": "2",
@@ -217915,6 +218081,95 @@ var CARDS = {
 					{
 						"id": "burn",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"22163": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1564074000000",
+		"id": "22163",
+		"maxLevel": 5,
+		"name": "Steelwing Fulminator",
+		"picture": "Dragon_Armored_Wind_Lightning_Dragon_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "strike",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"9",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 9
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 9
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 10
 					}
 				]
 			}

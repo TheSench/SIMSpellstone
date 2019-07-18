@@ -2976,6 +2976,38 @@ var BATTLEGROUNDS = {
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},
+	"2073": {
+		"desc": "Frog Defense fights harder with each passing Mastery level, increasing cards' stats!",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2073",
+		"name": "Dawntouched Divertimento",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2074": {
+		"desc": "Frog Defense fights harder with each passing Mastery level, increasing cards' stats!",
+		"effect": [
+			{
+				"base_mult": 0.2,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2074",
+		"name": "Dawntouched Divertimento",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
 		"effect": [
