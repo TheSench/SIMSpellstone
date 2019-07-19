@@ -7306,6 +7306,68 @@
     </rewards>
     <find_item id="3095" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event 17 weeks 5-8 
+	
+	<campaign> 
+		<id>1215</id>
+		<name>Three-Pronged Attack</name>
+		<campaign_req id='1213' level='1' />
+		<locked_start_time>1564074000</locked_start_time>  | Thu, 25 July 2019 17:00:00 |
+		<battleground_id>2073</battleground_id>
+		<location_id>23</location_id>
+		<x>615</x>
+		<y>330</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>6247</mission_id>
+			<mission_id>6248</mission_id>
+			<mission_id>6249</mission_id>
+			<mission_id>6250</mission_id>
+			<mission_id>6251</mission_id>
+			<mission_id>6252</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2162' />
+			<card level='5' id='512' />
+			<card level='6' id='2070' />
+			<item level='7' id='3096' />
+		</rewards>
+		<find_item id='3095' drop_per_energy='.6' />
+	</campaign>
+		
+	<campaign> 
+		<id>1216</id>
+		<name>Door of Reckoning</name>
+		<campaign_req id='1215' level='1' />
+		<locked_start_time>1565283600</locked_start_time> |  Thu, August 8 2019 17:00:00 |
+		<battleground_id>2074</battleground_id>
+		<location_id>23</location_id>
+		<x>795</x>
+		<y>280</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>6253</mission_id>
+			<mission_id>6254</mission_id>
+			<mission_id>6255</mission_id>
+			<mission_id>6256</mission_id>
+			<mission_id>6257</mission_id>
+			<mission_id>6258</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2162' />
+			<card level='5' id='512' />
+			<card level='6' id='2070' />
+			<item level='7' id='3096' />
+		</rewards>
+		<find_item id='3095' drop_per_energy='.8' />
+	</campaign>
+-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

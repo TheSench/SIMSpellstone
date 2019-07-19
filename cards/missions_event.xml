@@ -32805,7 +32805,7 @@
     <id>6041</id>
     <name>Fighting on the Fringe</name>
     <energy>9</energy>
-    <desc>The Avians descend upon you. They fight with with a fierce fury, targeting you before Kachina or Cedric. They clearly remember your fight against them...</desc>
+    <desc>The Avians descend upon you. They fight with a fierce fury, targeting you before Kachina or Cedric. They clearly remember your fight against them...</desc>
     <commander id="307" />
     <deck>
       <card id="8121" name="Canopy Monster" />
@@ -39221,7 +39221,7 @@
     <desc>Aria attempts to hook up a new power source to the runes. With the Frogs still nearby, any form of defense could prove to be useful.</desc>
     <commander id="356" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8063" name="Bluefire's Memory" />
       <card id="5012" name="Static Drake" />
       <card id="5010" name="Concealed Dragon" />
       <card id="6131" name="Winged Abducter" />
@@ -39245,7 +39245,7 @@
     <desc>While Aria is fiddling with the magical runes, the energy around them abruptly jumps back to life! They crackle with electric power...</desc>
     <commander id="355" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6012" name="Ember Drake" />
       <card id="6010" name="Cliffpass Defender" />
       <card id="7128" name="Denizen of the Trees" />
@@ -39276,7 +39276,7 @@
     <desc>Shades from the past flicker at each one of the runes. Former nemeses appear at each one of the runes, their form faint and corporeal.</desc>
     <commander id="252" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8063" name="Bluefire's Memory" />
       <card id="7012" name="Life Drake" />
       <card id="6061" name="Decagon" />
       <card id="5127" name="Dynamo Drake" />
@@ -39312,7 +39312,7 @@
     <desc>A dark vortex appears in Aria's hand, as she prepares a magical attack. The temple's energy continues to run haywire, bolting the floor randomly with power.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6012" name="Ember Drake" />
       <card id="6097" name="Hoard Dragon" />
       <card id="7128" name="Denizen of the Trees" />
@@ -39343,7 +39343,7 @@
     <desc>Aria's dark bolt harmlessly phases through the apparition of Batara. One of the frogs motions for the group to attack. The Crimsonwings start a new wave of attack, trying desperately to keep you busy while the Heroes' Companions continue their magic.</desc>
     <commander id="290" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8063" name="Bluefire's Memory" />
       <card id="5012" name="Static Drake" />
       <card id="6063" name="Firetail Dragon" />
       <card id="7093" name="Larva Drakes" />
@@ -39374,7 +39374,7 @@
     <desc>The energy that the three companions are generating is incredible. The entire Temple glows with magic, radiating from them. Something appears at the Temple's center...</desc>
     <commander id="293" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6012" name="Ember Drake" />
       <card id="6097" name="Hoard Dragon" />
       <card id="5096" name="Enclave Dragon" />
@@ -39415,7 +39415,7 @@
     <desc>One final blast of energy, and the three companions have vanished. Before you lies a magical door, shining and wavering with energy. You could reach out and touch it...</desc>
     <commander id="356" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8063" name="Bluefire's Memory" />
       <card id="5010" name="Concealed Dragon" />
       <card id="2044" name="Quillhide Dragon" />
       <card id="5024" name="Cloudtop Dragon" />
@@ -39446,7 +39446,7 @@
     <desc>Aria stops you before you can touch the door. She looks you fiercely in the eye as she explains her plan.</desc>
     <commander id="388" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6131" name="Winged Abducter" />
       <card id="2045" name="Chillbeard Giant" />
       <card id="2004" name="Lavatail Dragon" />
@@ -39477,7 +39477,7 @@
     <desc>Aria has something she wants to prove to you and the others. However, her stubborness could create only further danger...</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8063" name="Bluefire's Memory" />
       <card id="5024" name="Cloudtop Dragon" />
       <card id="2046" name="Leaping Dragon" />
       <card id="2004" name="Lavatail Dragon" />
@@ -39508,7 +39508,7 @@
     <desc>Aria pushes you back roughly, causing you to stumble on the ground. Before you can stop her, she runs up to the door that has manifested, opening it...</desc>
     <commander id="355" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6061" name="Decagon" />
       <card id="2045" name="Chillbeard Giant" />
       <card id="7093" name="Larva Drakes" />
@@ -39532,7 +39532,7 @@
     <desc>Aria stops before the door, turning to you. An unusually soft smile has replaced her normal scowl. The door's light behind her makes her seem to radiate...</desc>
     <commander id="249" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8063" name="Bluefire's Memory" />
       <card id="6063" name="Firetail Dragon" />
       <card id="7062" name="Brine Bellower" />
       <card id="7095" name="Talonsaur" />
@@ -39568,7 +39568,7 @@
     <desc>Aria opens the door. You leap to your feet, dashing towards her before you can properly think. If Aria enters alone, you feel you might never see her again...</desc>
     <commander id="310" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7061" name="Thickskin Dragon" />
       <card id="6063" name="Firetail Dragon" />
       <card id="7095" name="Talonsaur" />

@@ -2012,6 +2012,14 @@
     <resource card_id="12162" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>12163</card_id>
+    <resource card_id="2163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22163</card_id>
+    <resource card_id="12163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>12164</card_id>
     <resource card_id="2164" number="2" />
   </fusion_recipe>

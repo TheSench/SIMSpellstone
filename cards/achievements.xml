@@ -11568,13 +11568,34 @@
     <name>Vanquisher of Distorted Beetleton</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Distorted Beetleton.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6190</mission_req>
+    <mission_req>6234</mission_req>
     <req>
       <campaign>1207</campaign>
       <campaign>1208</campaign>
       <campaign>1209</campaign>
       <campaign>1210</campaign>
       <campaign>1211</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Salt Wastes -->
+    <id>4017</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of The Salt Wastes</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Salt Wastes.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6258</mission_req>
+    <req>
+      <campaign>1212</campaign>
+      <campaign>1213</campaign>
+      <campaign>1214</campaign>
+      <campaign>1215</campaign>
+      <campaign>1216</campaign>
       <level>7</level>
     </req>
     <reward>
