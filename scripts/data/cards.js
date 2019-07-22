@@ -86037,6 +86037,86 @@ var CARDS = {
 			}
 		}
 	},
+	"6239": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 9,
+		"hidden_until": "1564074000000",
+		"id": "6239",
+		"maxLevel": 6,
+		"name": "Draffin Newborn",
+		"picture": "Dragon_Avian_Egg_Breaker_Griffin_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "pierce",
+				"x": 4
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"9",
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 11,
+				"skill": []
+			},
+			"4": {
+				"attack": 7,
+				"health": 12,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 13,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -106102,6 +106182,75 @@ var CARDS = {
 						"x": 5
 					}
 				]
+			}
+		}
+	},
+	"7242": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 16,
+		"hidden_until": "1564074000000",
+		"id": "7242",
+		"maxLevel": 6,
+		"name": "Littlepond Twins",
+		"picture": "Dragon_Frog_Magician_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "protect",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 17,
+				"skill": []
+			},
+			"3": {
+				"attack": 5,
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"health": 19,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 20,
+				"skill": []
 			}
 		}
 	},
@@ -178651,6 +178800,85 @@ var CARDS = {
 			}
 		}
 	},
+	"16239": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 14,
+		"hidden_until": "1564074000000",
+		"id": "16239",
+		"maxLevel": 6,
+		"name": "Draffin Angryborn",
+		"picture": "Dragon_Avian_Egg_Breaker_Griffin_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "pierce",
+				"x": 5
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"9",
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 15,
+				"skill": []
+			},
+			"5": {
+				"health": 16,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -199130,6 +199358,103 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"17242": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1564074000000",
+		"id": "17242",
+		"maxLevel": 6,
+		"name": "Bubblewalk Twins",
+		"picture": "Dragon_Frog_Magician_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"id": "protect",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"health": 24,
+				"skill": []
+			},
+			"6": {
+				"attack": 7,
+				"skill": [
+					{
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 6
 					}
 				]
 			}
@@ -257333,6 +257658,98 @@ var CARDS = {
 			}
 		}
 	},
+	"26239": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1564074000000",
+		"id": "26239",
+		"maxLevel": 6,
+		"name": "Draffin Furyborn",
+		"picture": "Dragon_Avian_Egg_Breaker_Griffin_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "pierce",
+				"x": 6
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"9",
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"attack": 10,
+				"health": 20,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -277914,6 +278331,102 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 9
+					}
+				]
+			}
+		}
+	},
+	"27242": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1564074000000",
+		"id": "27242",
+		"maxLevel": 6,
+		"name": "Bubblecraft Twins",
+		"picture": "Dragon_Frog_Magician_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"id": "protect",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "rally",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "protect",
+						"x": 8
 					}
 				]
 			}

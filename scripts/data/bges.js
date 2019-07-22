@@ -522,6 +522,20 @@ var BATTLEGROUNDS = {
 		"id": "131",
 		"name": "Lily & Spear Formation"
 	},
+	"132": {
+		"desc": "Dragons with 0, 1, and 2 Delay gain Scorch equal to 20% of their base Health. Dragons with 3 and 4 Delay gain Heal equal to 20% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.2,
+				"y": "9"
+			}
+		],
+		"id": "132",
+		"name": "Day of Dragons"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
