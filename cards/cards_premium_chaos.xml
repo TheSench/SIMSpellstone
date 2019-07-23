@@ -30184,5 +30184,143 @@
       <skill id="daze" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6239</id>
+    <card_type>2</card_type>
+    <name>Draffin Newborn</name>
+    <picture>Dragon_Avian_Egg_Breaker_Griffin_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>6</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="pierce" x="4" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+      <skill id="stasis" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16239</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Draffin Angryborn</name>
+    <picture>Dragon_Avian_Egg_Breaker_Griffin_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>7</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="pierce" x="5" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="5" />
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+      <skill id="stasis" x="5" />
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>9</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26239</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Draffin Furyborn</name>
+    <picture>Dragon_Avian_Egg_Breaker_Griffin_B</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>9</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="5" />
+    <skill id="pierce" x="6" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="stasis" x="5" />
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="6" />
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="6" />
+      <skill id="pierce" x="8" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
 </root>
 

@@ -31093,5 +31093,144 @@
       <skill id="daze" x="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7242</id>
+    <card_type>2</card_type>
+    <name>Littlepond Twins</name>
+    <picture>Dragon_Frog_Magician_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="protect" x="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="5" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="protect" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17242</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bubblewalk Twins</name>
+    <picture>Dragon_Frog_Magician_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="5" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="protect" x="5" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="6" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="rally" x="6" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+      <skill id="rally" x="6" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27242</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bubblecraft Twins</name>
+    <picture>Dragon_Frog_Magician_B</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1564074000</hidden_until_time>
+    <attack>7</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="7" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="protect" x="6" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="7" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="rally" x="8" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="8" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="8" />
+    </upgrade>
+  </unit>
 </root>
 
