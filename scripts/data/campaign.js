@@ -4057,6 +4057,40 @@ var CAMPAIGNS = {
 		],
 		"name": "Three Valiant Hearts"
 	},
+	"1215": {
+		"battleground_id": "2073",
+		"id": "1215",
+		"items": {
+			"3095": 0.6
+		},
+		"location_id": "23",
+		"missions": [
+			"6247",
+			"6248",
+			"6249",
+			"6250",
+			"6251",
+			"6252"
+		],
+		"name": "Three-Pronged Attack"
+	},
+	"1216": {
+		"battleground_id": "2074",
+		"id": "1216",
+		"items": {
+			"3095": 0.8
+		},
+		"location_id": "23",
+		"missions": [
+			"6253",
+			"6254",
+			"6255",
+			"6256",
+			"6257",
+			"6258"
+		],
+		"name": "Door of Reckoning"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
