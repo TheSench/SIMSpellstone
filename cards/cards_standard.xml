@@ -2665,7 +2665,7 @@
     <picture>Storm_Dragon_C</picture>
     <asset_bundle>2</asset_bundle>
     <attack>7</attack>
-    <health>44</health>
+    <health>45</health>
     <cost>4</cost>
     <skill id="armored" x="4" />
     <skill id="protect" x="3" all="1" />
@@ -2677,11 +2677,11 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>45</health>
+      <health>47</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>46</health>
+      <health>48</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -2690,7 +2690,7 @@
     <upgrade>
       <level>5</level>
       <attack>9</attack>
-      <health>47</health>
+      <health>50</health>
       <skill id="armored" x="5" />
       <skill id="protect" x="3" all="1" />
       <skill id="flurry" c="3" />
@@ -2698,7 +2698,7 @@
     <upgrade>
       <level>6</level>
       <attack>10</attack>
-      <health>49</health>
+      <health>52</health>
       <skill id="armored" x="6" />
       <skill id="protect" x="3" all="1" />
       <skill id="flurry" c="2" />

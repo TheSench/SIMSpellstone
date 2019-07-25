@@ -605,11 +605,11 @@
   <battleground>
     <id>132</id>
     <name>Day of Dragons</name>
-    <desc>Dragons with 0, 1, and 2 Delay gain Scorch equal to 20% of their base Health. Dragons with 3 and 4 Delay gain Heal equal to 20% of their base Health.</desc>
+    <desc>Dragons of 0-2 Delay gain Scorch equal to 20% of their base Health. Dragons of 3-4 Delay gain Regenerate equal to 10% of their base Health plus 4.</desc>
     <icon>filter_dragon_64.png</icon>
     <effect>
-      <!-- <add_skill id='burn' mult='0.2' base='health' y='9' /> -->
-      <add_skill id="regenerate" mult="0.2" base="health" y="9" />
+      <add_skill id="burn" mult="0.2" base="health" y="9" delay="0,1,2" />
+      <add_skill id="regenerate" mult="0.1" x="4" base="health" y="9" delay="3,4" />
     </effect>
   </battleground>
   <!-- ================================= -->

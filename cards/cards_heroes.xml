@@ -6430,7 +6430,7 @@
     <portrait>windstormelemental</portrait>
     <attack>0</attack>
     <health>14</health>
-    <skill id="rally" x="1" />
+    <skill id="rally" x="2" />
     <skill id="rally" y="5" x="1" />
     <rarity>3</rarity>
     <type>1</type>
@@ -6438,21 +6438,21 @@
     <upgrade>
       <level>2</level>
       <health>19</health>
-      <skill id="rally" x="1" />
+      <skill id="rally" x="2" />
       <skill id="rally" y="5" x="1" />
       <skill id="weaken" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>24</health>
-      <skill id="rally" x="1" />
+      <skill id="rally" x="2" />
       <skill id="rally" y="5" x="2" />
       <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>27</health>
-      <skill id="rally" x="2" />
+      <skill id="rally" x="3" />
       <skill id="rally" y="5" x="3" />
       <skill id="weaken" x="3" />
     </upgrade>
@@ -6470,7 +6470,7 @@
     <attack>0</attack>
     <health>16</health>
     <skill id="strike" x="1" />
-    <skill id="imbue" s="pierce" x="1" />
+    <skill id="imbue" s="pierce" x="3" />
     <rarity>3</rarity>
     <type>2</type>
     <set>9999</set>
@@ -6479,21 +6479,21 @@
       <health>19</health>
       <skill id="strike" x="1" />
       <skill id="strike" x="1" />
-      <skill id="imbue" s="pierce" x="2" />
+      <skill id="imbue" s="pierce" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>22</health>
       <skill id="strike" x="1" />
       <skill id="strike" x="2" />
-      <skill id="imbue" s="pierce" x="3" />
+      <skill id="imbue" s="pierce" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>26</health>
       <skill id="strike" x="2" />
       <skill id="strike" x="2" />
-      <skill id="imbue" s="pierce" x="4" />
+      <skill id="imbue" s="pierce" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -6653,36 +6653,36 @@
       <level>2</level>
       <health>40</health>
       <skill id="protect" all="1" x="3" c="4" />
-      <skill id="protect" x="2" />
+      <skill id="protect" x="3" />
       <skill id="enfeeble" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>45</health>
       <skill id="protect" all="1" x="4" c="4" />
-      <skill id="protect" x="2" />
-      <skill id="enfeeble" x="2" />
+      <skill id="protect" x="3" />
+      <skill id="enfeeble" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>50</health>
       <skill id="protect" all="1" x="4" c="3" />
-      <skill id="protect" x="2" />
-      <skill id="enfeeble" x="2" />
+      <skill id="protect" x="3" />
+      <skill id="enfeeble" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>55</health>
       <skill id="protect" all="1" x="4" c="3" />
-      <skill id="protect" x="2" />
-      <skill id="enfeeble" x="3" />
+      <skill id="protect" x="3" />
+      <skill id="enfeeble" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>60</health>
       <skill id="protect" all="1" x="5" c="3" />
-      <skill id="protect" x="3" />
-      <skill id="enfeeble" x="3" />
+      <skill id="protect" x="4" />
+      <skill id="enfeeble" x="4" />
     </upgrade>
     <desc>A manufactured construct that turned upon its own creator, the Earthen Guardian wanders the dungeon without purpose.</desc>
   </unit>
@@ -6693,7 +6693,7 @@
     <portrait>lightwisp</portrait>
     <attack>0</attack>
     <health>70</health>
-    <skill id="imbue" x="2" y="5" s="frost" />
+    <skill id="imbue" x="3" y="5" s="frost" />
     <skill id="rally" x="2" all="1" y="5" />
     <skill id="jam" c="3" />
     <rarity>5</rarity>
@@ -6706,21 +6706,21 @@
     <upgrade>
       <level>3</level>
       <health>78</health>
-      <skill id="imbue" x="2" y="5" s="frost" />
+      <skill id="imbue" x="3" y="5" s="frost" />
       <skill id="rally" x="2" all="1" y="5" />
       <skill id="jam" c="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>82</health>
-      <skill id="imbue" x="2" y="5" s="frost" />
+      <skill id="imbue" x="3" y="5" s="frost" />
       <skill id="rally" x="3" all="1" y="5" />
       <skill id="jam" c="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>86</health>
-      <skill id="imbue" x="3" y="5" s="frost" />
+      <skill id="imbue" x="4" y="5" s="frost" />
       <skill id="rally" x="4" all="1" y="5" />
       <skill id="jam" c="2" />
     </upgrade>
@@ -6731,7 +6731,7 @@
     <upgrade>
       <level>7</level>
       <health>95</health>
-      <skill id="imbue" x="4" y="5" s="frost" />
+      <skill id="imbue" x="5" y="5" s="frost" />
       <skill id="rally" x="4" all="1" y="5" />
       <skill id="jam" c="2" />
     </upgrade>

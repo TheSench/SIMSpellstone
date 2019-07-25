@@ -2362,14 +2362,14 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>23</health>
+      <health>24</health>
       <skill id="armored" x="3" />
       <skill id="rally" x="8" y="5" />
       <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>25</health>
+      <health>27</health>
       <skill id="armored" x="4" />
       <skill id="rally" x="8" y="5" />
       <skill id="burn" x="4" />
@@ -2410,14 +2410,14 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>28</health>
+      <health>30</health>
       <skill id="heal" x="4" all="1" y="5" />
       <skill id="protect" x="3" all="1" y="5" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>30</health>
+      <health>34</health>
       <skill id="heal" x="4" all="1" y="5" />
       <skill id="protect" x="4" all="1" y="5" />
       <skill id="frost" x="3" />
@@ -2497,26 +2497,26 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>35</health>
+      <health>37</health>
       <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>37</health>
+      <health>39</health>
       <skill id="corrosive" x="5" />
       <skill id="enfeeble" x="4" all="1" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>38</health>
+      <health>42</health>
       <skill id="corrosive" x="5" />
       <skill id="enfeeble" x="5" all="1" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>40</health>
+      <health>46</health>
       <skill id="corrosive" x="5" />
       <skill id="enfeeble" x="5" all="1" />
       <skill id="weaken" x="4" all="1" />
@@ -2545,26 +2545,26 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>36</health>
+      <health>37</health>
       <skill id="corrosive" x="5" />
       <skill id="armored" x="4" />
       <skill id="counter" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>38</health>
+      <health>41</health>
       <attack>5</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>40</health>
+      <health>45</health>
       <skill id="corrosive" x="5" />
       <skill id="armored" x="5" />
       <skill id="counter" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>43</health>
+      <health>49</health>
       <skill id="corrosive" x="6" />
       <skill id="armored" x="5" />
       <skill id="counter" x="8" />

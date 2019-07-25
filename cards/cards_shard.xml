@@ -1917,6 +1917,99 @@
       <skill id="poison" x="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4022</id>
+    <card_type>2</card_type>
+    <name>Bluefire, Void Incarnate</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Void_Dragon_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <item_name>Bluefire Stone</item_name>
+    <item_desc>Collect Bluefire Stones to upgrade the Legendary Bluefire, Void Incarnate card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>8</type>
+    <sub_type>9</sub_type>
+    <attack>10</attack>
+    <health>46</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="5" />
+    <skill id="backlash" x="3" />
+    <skill id="rally" all="1" x="4" />
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+      <skill id="stasis" x="5" />
+      <skill id="backlash" x="4" />
+      <skill id="rally" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+      <health>48</health>
+      <skill id="stasis" x="5" />
+      <skill id="backlash" x="4" />
+      <skill id="rally" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>49</health>
+      <skill id="stasis" x="6" />
+      <skill id="backlash" x="4" />
+      <skill id="rally" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <health>50</health>
+      <skill id="stasis" x="6" />
+      <skill id="backlash" x="4" />
+      <skill id="rally" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+      <health>51</health>
+      <skill id="stasis" x="7" />
+      <skill id="backlash" x="4" />
+      <skill id="rally" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>52</health>
+      <skill id="stasis" x="7" />
+      <skill id="backlash" x="4" />
+      <skill id="rally" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>15</attack>
+      <health>54</health>
+      <skill id="stasis" x="7" />
+      <skill id="backlash" x="5" />
+      <skill id="rally" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>56</health>
+      <skill id="stasis" x="8" />
+      <skill id="backlash" x="5" />
+      <skill id="rally" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>16</attack>
+      <health>58</health>
+      <skill id="stasis" x="8" />
+      <skill id="backlash" x="5" />
+      <skill id="rally" all="1" x="8" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -2696,6 +2789,102 @@
       <skill id="absorb" x="11" />
       <skill id="heal" x="6" all="1" />
       <skill id="jam" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5609</id>
+    <card_type>2</card_type>
+    <name>Phorus of the Sunsphere</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Dragon_Fire_Orb_B</picture>
+    <asset_bundle>166</asset_bundle>
+    <item_name>Phorus Stone</item_name>
+    <item_desc>Collect Phorus Stones to upgrade the Legendary Phorus of the Sunsphere card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <attack>4</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="5" />
+    <skill id="legion" x="6" />
+    <skill id="strike" x="1" all="1" />
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+      <health>37</health>
+      <skill id="counterburn" x="5" />
+      <skill id="legion" x="6" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <health>38</health>
+      <skill id="counterburn" x="6" />
+      <skill id="legion" x="7" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>39</health>
+      <skill id="counterburn" x="6" />
+      <skill id="legion" x="7" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <health>40</health>
+      <skill id="counterburn" x="7" />
+      <skill id="legion" x="8" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>41</health>
+      <skill id="counterburn" x="7" />
+      <skill id="legion" x="8" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>9</attack>
+      <health>42</health>
+      <skill id="counterburn" x="8" />
+      <skill id="legion" x="9" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>9</attack>
+      <health>43</health>
+      <skill id="counterburn" x="8" />
+      <skill id="legion" x="9" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>10</attack>
+      <health>43</health>
+      <skill id="counterburn" x="9" />
+      <skill id="legion" x="9" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>11</attack>
+      <health>44</health>
+      <skill id="counterburn" x="10" />
+      <skill id="legion" x="10" />
+      <skill id="strike" x="4" all="1" />
     </upgrade>
   </unit>
   <!-- ============================== -->
