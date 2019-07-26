@@ -527,16 +527,22 @@ var BATTLEGROUNDS = {
 		"effect": [
 			{
 				"base": "health",
-				"delay": "0,1,2",
+				"delay": [
+					0,
+					1,
+					2
+				],
 				"effect_type": "add_skill",
 				"id": "burn",
-				"mult": 0.1,
-				"x": 4,
+				"mult": 0.2,
 				"y": "9"
 			},
 			{
 				"base": "health",
-				"delay": "3,4",
+				"delay": [
+					3,
+					4
+				],
 				"effect_type": "add_skill",
 				"id": "regenerate",
 				"mult": 0.1,
