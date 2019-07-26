@@ -263,7 +263,7 @@ var makeUnit = (function () {
             if (skillModifier.modifierType === "statChange" && !isToken) {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var statChange = skillModifier.effects[j];
-                    if (new_card.isInFaction(statChange.y) && new_card.isTargetRarity(statChange.rarity)) {
+                    if (new_card.isInFaction(statChange.y) && new_card.isTargetRarity(statChange.rarity) && new_card.isTargetDelay(statChange.delay)) {
                         Object.keys(statChange).forEach(function (stat) {
                             new_card[stat] = statChange[stat];
                         });
@@ -281,7 +281,7 @@ var makeUnit = (function () {
                     var evolution = skillModifier.effects[j];
                     for (var key in original_skills) {
                         var skill = original_skills[key];
-                        if (skill.id === evolution.id && skill.all == evolution.all && new_card.isTargetRarity(evolution.rarity)) {
+                        if (skill.id === evolution.id && skill.all == evolution.all && new_card.isTargetRarity(evolution.rarity) && new_card.isTargetDelay(evolution.delay)) {
                             skill = copy_skill(skill);
                             skill.id = evolution.s;
                             skill.boosted = true;
@@ -293,7 +293,7 @@ var makeUnit = (function () {
             } else if (skillModifier.modifierType === "add_skill") {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var addedSkill = skillModifier.effects[j];
-                    if (new_card.isInFaction(addedSkill.y) && new_card.isTargetRarity(addedSkill.rarity)) {
+                    if (new_card.isInFaction(addedSkill.y) && new_card.isTargetRarity(addedSkill.rarity) && new_card.isTargetDelay(addedSkill.delay)) {
                         var new_skill = {};
                         new_skill.id = addedSkill.id;
                         new_skill.x = addedSkill.x || 0;
@@ -320,7 +320,7 @@ var makeUnit = (function () {
             } else if (skillModifier.modifierType === "scale_attributes" && !isToken) {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var scaling = skillModifier.effects[j];
-                    if (new_card.isInFaction(scaling.y) && new_card.isTargetRarity(scaling.rarity)) {
+                    if (new_card.isInFaction(scaling.y) && new_card.isTargetRarity(scaling.rarity) && new_card.isTargetDelay(scaling.delay)) {
                         var mult = scaling.mult;
                         var plusAttack = Math.ceil(new_card.attack * mult);
                         new_card.attack += plusAttack;
@@ -332,7 +332,7 @@ var makeUnit = (function () {
             } else if (skillModifier.modifierType === "scale_stat" && !isToken) {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var scaling = skillModifier.effects[j];
-                    if (new_card.isInFaction(scaling.y) && new_card.isTargetRarity(scaling.rarity)) {
+                    if (new_card.isInFaction(scaling.y) && new_card.isTargetRarity(scaling.rarity && new_card.isTargetDelay(scaling.delay))) {
                         new_card[skillModifier.scaledStat] += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
                     }
                 }
@@ -573,6 +573,10 @@ var makeUnit = (function () {
             return (rarity === undefined ? true : this.rarity === rarity);
         },
 
+        isTargetDelay: function(delay) {
+            return (delay === undefined ? true : delay.indexOf(this.cost) >= 0);
+        },
+
         resetTimers: function () {
             for (var i = 0, len = this.skillTimers.length; i < len; i++) {
                 this.skillTimers[i].countdown = 0;
@@ -635,7 +639,7 @@ var makeUnit = (function () {
             var runeMult = 1;
             if (skillModifiers) {
                 skillModifiers.forEach(function (skillModifier) {
-                    if (skillModifier.modifierType == "runeMultiplier") {
+                    if (skillModifier.modifierType === "runeMultiplier") {
                         skillModifier.effects.forEach(function (effect) {
                             if (card.isInFaction(effect.y)) {
                                 runeMult = parseInt(effect.mult);
