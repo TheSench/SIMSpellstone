@@ -27,9 +27,10 @@
   },
   "scripts": {
     "cy:run": "cypress run",
-    "cy:run:ci": "cypress run --record",
+    "cy:run:ci": "npm run cy:run || npm run cy:record:failures",
+    "cy:record:failures": "cypress run --record",
     "cy:open": "cypress open",
-    "test": "cy:run",
+    "test": "npm run cy:run",
     "start": "http-server -o --cors -p 8080"
   },
   "repository": {
