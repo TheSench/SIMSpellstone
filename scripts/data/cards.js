@@ -106958,6 +106958,97 @@ var CARDS = {
 			}
 		}
 	},
+	"7244": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1565024400000",
+		"id": "7244",
+		"maxLevel": 6,
+		"name": "Glitternox Drake",
+		"picture": "Dragon_Prism_Poison_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 4
+			},
+			{
+				"id": "poison",
+				"x": 9
+			},
+			{
+				"id": "daze",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 10
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 10
+					},
+					{
+						"id": "daze",
+						"x": 10
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"health": 37,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 10
+					},
+					{
+						"id": "daze",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -200506,6 +200597,97 @@ var CARDS = {
 			}
 		}
 	},
+	"17244": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1565024400000",
+		"id": "17244",
+		"maxLevel": 6,
+		"name": "Glitternox Dragon",
+		"picture": "Dragon_Prism_Poison_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 5
+			},
+			{
+				"id": "poison",
+				"x": 11
+			},
+			{
+				"id": "daze",
+				"x": 11
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"attack": 11,
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 11
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
+			},
+			"5": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 12
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 12
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -279804,6 +279986,97 @@ var CARDS = {
 						"id": "protect",
 						"x": 8,
 						"y": "4"
+					}
+				]
+			}
+		}
+	},
+	"27244": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1565024400000",
+		"id": "27244",
+		"maxLevel": 6,
+		"name": "Glitternox Scalelord",
+		"picture": "Dragon_Prism_Poison_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 6
+			},
+			{
+				"id": "poison",
+				"x": 12
+			},
+			{
+				"id": "daze",
+				"x": 13
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 13
+					},
+					{
+						"id": "daze",
+						"x": 13
+					}
+				]
+			},
+			"3": {
+				"attack": 13,
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"attack": 14,
+				"skill": []
+			},
+			"5": {
+				"health": 41,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 13
+					},
+					{
+						"id": "daze",
+						"x": 13
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 14
+					},
+					{
+						"id": "daze",
+						"x": 14
 					}
 				]
 			}
