@@ -31238,5 +31238,145 @@
       <skill id="protect" x="8" y="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7244</id>
+    <card_type>2</card_type>
+    <name>Glitternox Drake</name>
+    <picture>Dragon_Prism_Poison_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1565024400</hidden_until_time>
+    <attack>7</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="poison" x="9" />
+    <skill id="daze" x="9" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+      <skill id="corrosive" x="4" />
+      <skill id="poison" x="9" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="4" />
+      <skill id="poison" x="10" />
+      <skill id="daze" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="5" />
+      <skill id="poison" x="10" />
+      <skill id="daze" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17244</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Glitternox Dragon</name>
+    <picture>Dragon_Prism_Poison_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1565024400</hidden_until_time>
+    <attack>9</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="poison" x="11" />
+    <skill id="daze" x="11" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="5" />
+      <skill id="poison" x="11" />
+      <skill id="daze" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+      <skill id="corrosive" x="5" />
+      <skill id="poison" x="12" />
+      <skill id="daze" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="6" />
+      <skill id="poison" x="12" />
+      <skill id="daze" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27244</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Glitternox Scalelord</name>
+    <picture>Dragon_Prism_Poison_B</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1565024400</hidden_until_time>
+    <attack>12</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="poison" x="12" />
+    <skill id="daze" x="13" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="6" />
+      <skill id="poison" x="13" />
+      <skill id="daze" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <skill id="corrosive" x="7" />
+      <skill id="poison" x="13" />
+      <skill id="daze" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="7" />
+      <skill id="poison" x="14" />
+      <skill id="daze" x="14" />
+    </upgrade>
+  </unit>
 </root>
 
