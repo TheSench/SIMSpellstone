@@ -5191,5 +5191,283 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3018",
 		"location_id": "23",
 		"name": "Temple Glyphs"
+	},
+	"3019": {
+		"desc": "The true power of Wyld, Chaos, and Aether. Return Pillar Souls to them so they can remember their true strength.",
+		"effects": [
+			{
+				"id": "47",
+				"name": "Memory of Wyld",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures are Healed for 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 1
+							}
+						],
+						"name": "Memory of Wyld"
+					},
+					{
+						"desc": "All of your creatures are Healed for 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 2
+							}
+						],
+						"name": "Memory of Wyld"
+					},
+					{
+						"desc": "All of your creatures are Healed for 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 3
+							}
+						],
+						"name": "Memory of Wyld"
+					},
+					{
+						"desc": "All of your creatures are Healed for 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 4
+							}
+						],
+						"name": "Memory of Wyld"
+					},
+					{
+						"desc": "All of your creatures are Healed for 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 5
+							}
+						],
+						"name": "Memory of Wyld"
+					},
+					{
+						"desc": "All of your creatures are Healed for 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 6
+							}
+						],
+						"name": "Memory of Wyld"
+					}
+				]
+			},
+			{
+				"id": "48",
+				"name": "Memory of Chaos",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Enrage 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "enrage",
+								"x": 1
+							}
+						],
+						"name": "Memory of Chaos"
+					},
+					{
+						"desc": "All of your creatures gain Enrage 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "enrage",
+								"x": 2
+							}
+						],
+						"name": "Memory of Chaos"
+					},
+					{
+						"desc": "All of your creatures gain Enrage 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "enrage",
+								"x": 3
+							}
+						],
+						"name": "Memory of Chaos"
+					},
+					{
+						"desc": "All of your creatures gain Enrage 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "enrage",
+								"x": 4
+							}
+						],
+						"name": "Memory of Chaos"
+					},
+					{
+						"desc": "All of your creatures gain Enrage 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "enrage",
+								"x": 6
+							}
+						],
+						"name": "Memory of Chaos"
+					},
+					{
+						"desc": "All of your creatures gain Enrage 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "enrage",
+								"x": 8
+							}
+						],
+						"name": "Memory of Chaos"
+					}
+				]
+			},
+			{
+				"id": "49",
+				"name": "Memory of Aether",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Ward 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 1
+							}
+						],
+						"name": "Memory of Aether"
+					},
+					{
+						"desc": "All of your creatures gain Ward 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 2
+							}
+						],
+						"name": "Memory of Aether"
+					},
+					{
+						"desc": "All of your creatures gain Ward 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 3
+							}
+						],
+						"name": "Memory of Aether"
+					},
+					{
+						"desc": "All of your creatures gain Ward 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 4
+							}
+						],
+						"name": "Memory of Aether"
+					},
+					{
+						"desc": "All of your creatures gain Ward 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 6
+							}
+						],
+						"name": "Memory of Aether"
+					},
+					{
+						"desc": "All of your creatures gain Ward 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 8
+							}
+						],
+						"name": "Memory of Aether"
+					}
+				]
+			}
+		],
+		"id": "3019",
+		"location_id": "24",
+		"name": "Three Titans"
 	}
 };

@@ -15838,7 +15838,7 @@ var CARDS = {
 			}
 		],
 		"sub_type": [],
-		"type": "1",
+		"type": "2",
 		"upgrades": {
 			"2": {
 				"health": 59,
@@ -15960,7 +15960,7 @@ var CARDS = {
 			}
 		],
 		"sub_type": [],
-		"type": "1",
+		"type": "2",
 		"upgrades": {
 			"2": {
 				"health": 53,
@@ -24030,6 +24030,121 @@ var CARDS = {
 						"all": "1",
 						"id": "protect",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"437": {
+		"card_type": "1",
+		"health": 65,
+		"id": "437",
+		"maxLevel": 6,
+		"name": "Heroe's Shadow",
+		"picture": "portrait_mythic_wyld",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "imbue",
+				"s": "evade",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "daze",
+				"x": 2
+			},
+			{
+				"id": "enfeeble",
+				"x": 3
+			}
+		],
+		"sub_type": [],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 68,
+				"skill": []
+			},
+			"3": {
+				"health": 71,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "daze",
+						"x": 2
+					},
+					{
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 74,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "daze",
+						"x": 3
+					},
+					{
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 77,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "daze",
+						"x": 3
+					},
+					{
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 80,
+				"skill": [
+					{
+						"id": "imbue",
+						"s": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "daze",
+						"x": 4
+					},
+					{
+						"id": "enfeeble",
+						"x": 6
 					}
 				]
 			}
@@ -34951,6 +35066,7 @@ var CARDS = {
 		"cost": 2,
 		"desc": "\"This seemed like such a good idea before I got on the rocket...\"",
 		"health": 8,
+		"hidden_until": "1469725200000",
 		"id": "2053",
 		"maxLevel": 5,
 		"name": "Rocket Rider",
@@ -35011,6 +35127,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"health": 12,
+		"hidden_until": "1469725200000",
 		"id": "2054",
 		"maxLevel": 5,
 		"name": "Pack Runner",
@@ -35078,6 +35195,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 1,
 		"health": 11,
+		"hidden_until": "1469725200000",
 		"id": "2055",
 		"maxLevel": 6,
 		"name": "Wrath",
@@ -66502,7 +66620,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 13,
+		"health": 20,
 		"hidden_until": "1565283600000",
 		"id": "5240",
 		"maxLevel": 6,
@@ -66532,7 +66650,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"health": 21,
 				"skill": []
 			},
 			"3": {
@@ -66540,7 +66658,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 15,
+				"health": 22,
 				"skill": []
 			},
 			"5": {
@@ -66564,6 +66682,97 @@ var CARDS = {
 			"6": {
 				"attack": 8,
 				"skill": []
+			}
+		}
+	},
+	"5241": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 11,
+		"hidden_until": "1566234000000",
+		"id": "5241",
+		"maxLevel": 6,
+		"name": "Odd Rider",
+		"picture": "Dragon_Insect_Thunder_Rider_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "valor",
+				"x": 4
+			},
+			{
+				"id": "daze",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"9",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 12,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 13,
+				"skill": []
+			},
+			"5": {
+				"health": 14,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
 			}
 		}
 	},
@@ -75592,6 +75801,7 @@ var CARDS = {
 		"cost": 2,
 		"desc": "\"One... two... FIVE!\"",
 		"health": 15,
+		"hidden_until": "1478797200000",
 		"id": "6094",
 		"maxLevel": 6,
 		"name": "Gob Launcher",
@@ -86588,7 +86798,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 21,
 		"hidden_until": "1565283600000",
 		"id": "6240",
 		"maxLevel": 6,
@@ -86620,7 +86830,7 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
-				"health": 20,
+				"health": 22,
 				"skill": []
 			},
 			"4": {
@@ -86644,7 +86854,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 21,
+				"health": 23,
 				"skill": []
 			}
 		}
@@ -132062,6 +132272,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"health": 17,
+		"hidden_until": "1469725200000",
 		"id": "12053",
 		"maxLevel": 5,
 		"name": "Rocket Racer",
@@ -132130,6 +132341,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"health": 19,
+		"hidden_until": "1469725200000",
 		"id": "12054",
 		"maxLevel": 5,
 		"name": "Pack Leader",
@@ -132205,6 +132417,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 1,
 		"health": 13,
+		"hidden_until": "1469725200000",
 		"id": "12055",
 		"maxLevel": 6,
 		"name": "Wrath, Fury Incarnate",
@@ -160091,7 +160304,7 @@ var CARDS = {
 		"attack": 8,
 		"card_type": "2",
 		"cost": 2,
-		"health": 16,
+		"health": 23,
 		"hidden_until": "1565283600000",
 		"id": "15240",
 		"maxLevel": 6,
@@ -160157,7 +160370,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 17,
+				"health": 24,
 				"skill": []
 			},
 			"5": {
@@ -160165,8 +160378,99 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 18,
+				"health": 25,
 				"skill": []
+			}
+		}
+	},
+	"15241": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1566234000000",
+		"id": "15241",
+		"maxLevel": 6,
+		"name": "Oddgon Rider",
+		"picture": "Dragon_Insect_Thunder_Rider_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"id": "daze",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"9",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 16,
+				"skill": []
+			},
+			"5": {
+				"health": 17,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
 			}
 		}
 	},
@@ -167401,6 +167705,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"health": 19,
+		"hidden_until": "1478797200000",
 		"id": "16094",
 		"maxLevel": 6,
 		"name": "Gob Chucker",
@@ -179755,7 +180060,7 @@ var CARDS = {
 		"attack": 9,
 		"card_type": "2",
 		"cost": 2,
-		"health": 22,
+		"health": 24,
 		"hidden_until": "1565283600000",
 		"id": "16240",
 		"maxLevel": 6,
@@ -179835,7 +180140,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 23,
+				"health": 25,
 				"skill": []
 			}
 		}
@@ -211323,6 +211628,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"health": 22,
+		"hidden_until": "1469725200000",
 		"id": "22053",
 		"maxLevel": 5,
 		"name": "Rocket Jockey",
@@ -211400,6 +211706,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"health": 22,
+		"hidden_until": "1469725200000",
 		"id": "22054",
 		"maxLevel": 5,
 		"name": "Pack Alpha",
@@ -211476,6 +211783,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 1,
 		"health": 17,
+		"hidden_until": "1469725200000",
 		"id": "22055",
 		"maxLevel": 6,
 		"name": "Wrath, Worldrender",
@@ -239532,7 +239840,7 @@ var CARDS = {
 		"attack": 10,
 		"card_type": "2",
 		"cost": 2,
-		"health": 18,
+		"health": 26,
 		"hidden_until": "1565283600000",
 		"id": "25240",
 		"maxLevel": 6,
@@ -239562,7 +239870,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 19,
+				"health": 27,
 				"skill": []
 			},
 			"3": {
@@ -239570,7 +239878,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 20,
+				"health": 28,
 				"skill": []
 			},
 			"5": {
@@ -239606,6 +239914,97 @@ var CARDS = {
 						"all": "1",
 						"id": "weaken",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"25241": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1566234000000",
+		"id": "25241",
+		"maxLevel": 6,
+		"name": "Oddorbgon Rider",
+		"picture": "Dragon_Insect_Thunder_Rider_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "valor",
+				"x": 8
+			},
+			{
+				"id": "daze",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"9",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"health": 20,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"id": "daze",
+						"x": 8
 					}
 				]
 			}
@@ -247063,6 +247462,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"health": 22,
+		"hidden_until": "1478797200000",
 		"id": "26094",
 		"maxLevel": 6,
 		"name": "Goballista",
@@ -259065,7 +259465,7 @@ var CARDS = {
 		"attack": 11,
 		"card_type": "2",
 		"cost": 2,
-		"health": 23,
+		"health": 26,
 		"hidden_until": "1565283600000",
 		"id": "26240",
 		"maxLevel": 6,
@@ -259093,7 +259493,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 24,
+				"health": 27,
 				"skill": []
 			},
 			"3": {
@@ -259101,7 +259501,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 25,
+				"health": 28,
 				"skill": []
 			},
 			"5": {
@@ -259121,6 +259521,7 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"health": 29,
 				"skill": [
 					{
 						"id": "absorb",
