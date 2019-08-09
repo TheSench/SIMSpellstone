@@ -14474,7 +14474,7 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "frost",
-						"x": 3,
+						"x": 4,
 						"y": "5"
 					},
 					{
@@ -14495,7 +14495,7 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "frost",
-						"x": 4,
+						"x": 5,
 						"y": "5"
 					},
 					{
@@ -14520,7 +14520,7 @@ var CARDS = {
 					{
 						"id": "imbue",
 						"s": "frost",
-						"x": 5,
+						"x": 6,
 						"y": "5"
 					},
 					{
@@ -14621,7 +14621,7 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "berserk",
-						"x": 2
+						"x": 3
 					},
 					{
 						"all": "1",
@@ -14646,12 +14646,12 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "berserk",
-						"x": 3
+						"x": 4
 					},
 					{
 						"all": "1",
 						"id": "enfeeble",
-						"x": 3
+						"x": 4
 					},
 					{
 						"all": "1",
@@ -111350,20 +111350,21 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 6,
 				"health": 27,
 				"skill": [
 					{
 						"id": "armored",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "rally",
-						"x": 8,
+						"x": 10,
 						"y": "5"
 					},
 					{
 						"id": "burn",
-						"x": 4
+						"x": 5
 					}
 				]
 			}
@@ -111413,6 +111414,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
+				"attack": 8,
 				"health": 26,
 				"skill": [
 					{
@@ -111434,6 +111436,7 @@ var CARDS = {
 				]
 			},
 			"5": {
+				"attack": 9,
 				"health": 30,
 				"skill": [
 					{
@@ -111455,23 +111458,24 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 10,
 				"health": 34,
 				"skill": [
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 4,
+						"x": 5,
 						"y": "5"
 					},
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 4,
+						"x": 5,
 						"y": "5"
 					},
 					{
 						"id": "frost",
-						"x": 3
+						"x": 4
 					}
 				]
 			}
@@ -111490,9 +111494,8 @@ var CARDS = {
 		"set": "9999",
 		"skill": [
 			{
-				"id": "fervor",
-				"x": 3,
-				"y": "5"
+				"id": "absorb",
+				"x": 5
 			},
 			{
 				"id": "pierce",
@@ -111512,9 +111515,8 @@ var CARDS = {
 				"health": 16,
 				"skill": [
 					{
-						"id": "fervor",
-						"x": 3,
-						"y": "5"
+						"id": "absorb",
+						"x": 5
 					},
 					{
 						"id": "pierce",
@@ -111522,7 +111524,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 2
+						"x": 3
 					}
 				]
 			},
@@ -111535,9 +111537,8 @@ var CARDS = {
 				"health": 18,
 				"skill": [
 					{
-						"id": "fervor",
-						"x": 3,
-						"y": "5"
+						"id": "absorb",
+						"x": 6
 					},
 					{
 						"id": "pierce",
@@ -111545,7 +111546,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
@@ -111553,9 +111554,8 @@ var CARDS = {
 				"health": 19,
 				"skill": [
 					{
-						"id": "fervor",
-						"x": 3,
-						"y": "5"
+						"id": "absorb",
+						"x": 6
 					},
 					{
 						"id": "pierce",
@@ -111563,7 +111563,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 3
+						"x": 5
 					}
 				]
 			},
@@ -111571,24 +111571,23 @@ var CARDS = {
 				"health": 20,
 				"skill": [
 					{
-						"id": "fervor",
-						"x": 3,
-						"y": "5"
+						"id": "absorb",
+						"x": 7
 					},
 					{
 						"id": "pierce",
-						"x": 6
+						"x": 7
 					},
 					{
 						"id": "berserk",
-						"x": 4
+						"x": 6
 					}
 				]
 			}
 		}
 	},
 	"8035": {
-		"attack": 9,
+		"attack": 12,
 		"card_type": "2",
 		"cost": 3,
 		"health": 33,
@@ -111624,11 +111623,12 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
-				"attack": 10,
+				"attack": 13,
 				"health": 37,
 				"skill": []
 			},
 			"4": {
+				"attack": 14,
 				"health": 39,
 				"skill": [
 					{
@@ -111648,30 +111648,12 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 42,
+				"attack": 15,
+				"health": 44,
 				"skill": [
 					{
 						"id": "corrosive",
-						"x": 5
-					},
-					{
-						"all": "1",
-						"id": "enfeeble",
-						"x": 5
-					},
-					{
-						"all": "1",
-						"id": "weaken",
-						"x": 3
-					}
-				]
-			},
-			"6": {
-				"health": 46,
-				"skill": [
-					{
-						"id": "corrosive",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
@@ -111682,6 +111664,26 @@ var CARDS = {
 						"all": "1",
 						"id": "weaken",
 						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 16,
+				"health": 48,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
 					}
 				]
 			}
@@ -111709,7 +111711,7 @@ var CARDS = {
 			},
 			{
 				"id": "counter",
-				"x": 6
+				"x": 8
 			}
 		],
 		"sub_type": [
@@ -111734,34 +111736,13 @@ var CARDS = {
 					},
 					{
 						"id": "counter",
-						"x": 7
+						"x": 9
 					}
 				]
 			},
 			"4": {
 				"attack": 5,
 				"health": 41,
-				"skill": []
-			},
-			"5": {
-				"health": 45,
-				"skill": [
-					{
-						"id": "corrosive",
-						"x": 5
-					},
-					{
-						"id": "armored",
-						"x": 5
-					},
-					{
-						"id": "counter",
-						"x": 7
-					}
-				]
-			},
-			"6": {
-				"health": 49,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -111769,11 +111750,45 @@ var CARDS = {
 					},
 					{
 						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 10
+					}
+				]
+			},
+			"5": {
+				"health": 45,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "armored",
 						"x": 5
 					},
 					{
 						"id": "counter",
+						"x": 11
+					}
+				]
+			},
+			"6": {
+				"health": 50,
+				"skill": [
+					{
+						"id": "corrosive",
 						"x": 8
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 12
 					}
 				]
 			}
@@ -111793,7 +111808,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "rally",
-				"x": 2,
+				"x": 3,
 				"y": "5"
 			},
 			{
@@ -111816,7 +111831,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 2,
+						"x": 4,
 						"y": "5"
 					},
 					{
@@ -111840,7 +111855,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 3,
+						"x": 5,
 						"y": "5"
 					},
 					{
@@ -111856,15 +111871,11 @@ var CARDS = {
 			"5": {
 				"attack": 7,
 				"health": 34,
-				"skill": []
-			},
-			"6": {
-				"health": 36,
 				"skill": [
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 4,
+						"x": 6,
 						"y": "5"
 					},
 					{
@@ -111874,6 +111885,26 @@ var CARDS = {
 					{
 						"id": "leech",
 						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"health": 36,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 7,
+						"y": "5"
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "leech",
+						"x": 8
 					}
 				]
 			}
