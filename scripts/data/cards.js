@@ -107168,6 +107168,89 @@ var CARDS = {
 			}
 		}
 	},
+	"7243": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 4,
+		"health": 46,
+		"hidden_until": "1565629200000",
+		"id": "7243",
+		"maxLevel": 6,
+		"name": "Moonscale Drake",
+		"picture": "Dragon_Wolf_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 47,
+				"skill": []
+			},
+			"3": {
+				"attack": 11,
+				"skill": []
+			},
+			"4": {
+				"health": 48,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"7244": {
 		"attack": 7,
 		"card_type": "2",
@@ -200933,6 +201016,105 @@ var CARDS = {
 			}
 		}
 	},
+	"17243": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 4,
+		"health": 48,
+		"hidden_until": "1565629200000",
+		"id": "17243",
+		"maxLevel": 6,
+		"name": "Moonscale Beast",
+		"picture": "Dragon_Wolf_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 49,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 50,
+				"skill": []
+			},
+			"4": {
+				"attack": 13,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 51,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"17244": {
 		"attack": 9,
 		"card_type": "2",
@@ -259654,7 +259836,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 3,
 		"health": 40,
-		"hidden_until": "1565629200000",
+		"hidden_until": "1565888400000",
 		"id": "26242",
 		"maxLevel": 6,
 		"name": "Blazesting Wyvern",
@@ -280418,6 +280600,90 @@ var CARDS = {
 						"id": "protect",
 						"x": 8,
 						"y": "4"
+					}
+				]
+			}
+		}
+	},
+	"27243": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 4,
+		"health": 51,
+		"hidden_until": "1565629200000",
+		"id": "27243",
+		"maxLevel": 6,
+		"name": "Moonscale Howler",
+		"picture": "Dragon_Wolf_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 14,
+				"skill": []
+			},
+			"3": {
+				"attack": 15,
+				"health": 52,
+				"skill": []
+			},
+			"4": {
+				"health": 53,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
 					}
 				]
 			}
