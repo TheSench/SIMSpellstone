@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <!-- 
+  <!--
 	<find_item id='X' drop_per_energy='Y' />
 		Allows the campaign to have a chance to drop an item -->
   <!-- Elaria Campaigns BEGIN -->
@@ -7367,6 +7367,66 @@
     </rewards>
     <find_item id="3095" drop_per_energy=".8" />
   </campaign>
+  <!-- Campaign Event 18 weeks 1-4 -->
+  <campaign>
+    <id>1217</id>
+    <name>Return to the Abyss</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1566493200</locked_start_time>
+    <!-- Thu, 22 August 2019 17:00:00 -->
+    <location_id>24</location_id>
+    <x>205</x>
+    <y>475</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6263</mission_id>
+      <mission_id>6264</mission_id>
+      <mission_id>6265</mission_id>
+      <mission_id>6266</mission_id>
+      <mission_id>6267</mission_id>
+      <mission_id>6268</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2163" />
+      <card level="5" id="512" />
+      <card level="6" id="2046" />
+      <item level="7" id="3100" />
+    </rewards>
+    <find_item id="3098" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1218</id>
+    <name>The Forgotten Hero</name>
+    <campaign_req id="1217" level="1" />
+    <locked_start_time>1567702800</locked_start_time>
+    <!--  Thu, September 5 2019 17:00:00 -->
+    <battleground_id>2071</battleground_id>
+    <location_id>24</location_id>
+    <x>285</x>
+    <y>290</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6269</mission_id>
+      <mission_id>6270</mission_id>
+      <mission_id>6271</mission_id>
+      <mission_id>6272</mission_id>
+      <mission_id>6273</mission_id>
+      <mission_id>6274</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2164" />
+      <card level="5" id="512" />
+      <card level="6" id="2067" />
+      <item level="7" id="3100" />
+    </rewards>
+    <find_item id="3098" drop_per_energy=".4" />
+  </campaign>
   --&gt;
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
@@ -7453,7 +7513,7 @@
   <!-- Hero Upgrade Campaigns -->
   <campaign>
     <id>3003</id>
-    <!-- 
+    <!--
 		<hidden>0</hidden>
 		<event_only>0</event_only>
 		 -->
@@ -7486,7 +7546,7 @@
   </campaign>
   <campaign>
     <id>3004</id>
-    <!-- 
+    <!--
 		<hidden>0</hidden>
 		<event_only>0</event_only>
 		 -->
@@ -7519,7 +7579,7 @@
   </campaign>
   <campaign>
     <id>3005</id>
-    <!-- 
+    <!--
 		<hidden>0</hidden>
 		<event_only>0</event_only>
 		 -->
@@ -7552,7 +7612,7 @@
   </campaign>
   <campaign>
     <id>3006</id>
-    <!-- 
+    <!--
 		<hidden>0</hidden>
 		<event_only>0</event_only>
 		 -->
@@ -7585,7 +7645,7 @@
   </campaign>
   <campaign>
     <id>3007</id>
-    <!-- 
+    <!--
 		<hidden>0</hidden>
 		<event_only>0</event_only>
 		 -->
@@ -7618,7 +7678,7 @@
   </campaign>
   <campaign>
     <id>3008</id>
-    <!-- 
+    <!--
 		<hidden>0</hidden>
 		<event_only>0</event_only>
 		 -->

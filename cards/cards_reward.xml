@@ -5744,7 +5744,7 @@
     <name>Rocket Rider</name>
     <picture>Bomb_Rider_Goblin_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>2</cost>
@@ -5782,7 +5782,7 @@
     <name>Rocket Racer</name>
     <picture>Bomb_Rider_Goblin_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>2</cost>
@@ -5820,7 +5820,7 @@
     <name>Rocket Jockey</name>
     <picture>Bomb_Rider_Goblin_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>22</health>
     <cost>2</cost>
@@ -5860,7 +5860,7 @@
     <name>Pack Runner</name>
     <picture>Pack_Leader_Angel_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>12</health>
     <cost>2</cost>
@@ -5897,7 +5897,7 @@
     <name>Pack Leader</name>
     <picture>Pack_Leader_Angel_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>5</attack>
     <health>19</health>
     <cost>2</cost>
@@ -5936,7 +5936,7 @@
     <name>Pack Alpha</name>
     <picture>Pack_Leader_Angel_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>2</cost>
@@ -5975,7 +5975,7 @@
     <name>Wrath</name>
     <picture>Angel_Muscle_Monster_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>11</health>
     <cost>1</cost>
@@ -6021,7 +6021,7 @@
     <name>Wrath, Fury Incarnate</name>
     <picture>Angel_Muscle_Monster_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>1</cost>
@@ -6064,7 +6064,7 @@
     <name>Wrath, Worldrender</name>
     <picture>Angel_Muscle_Monster_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1469725200</hidden_until_time>
     <attack>6</attack>
     <health>17</health>
     <cost>1</cost>

@@ -9,7 +9,7 @@
 		3001-4000	Map Expansion BGE
 		5001-6000	Arena BGE
 		6001+		Special
-		
+
 		<add_skill>
 			id='absorb' 	skill name
 			mult='.1' 		multiplier
@@ -26,8 +26,8 @@
 			all='1' 		if this is left out will be 1 random target
 			y='16'			targeting restriction
 
-		displayEffect example setup 
-		
+		displayEffect example setup
+
 		<skill id='displayEffect' trigger='onSkill' s='strike' >
 			<actor_effect>
 				<prefab>void_aura</prefab>
@@ -762,7 +762,7 @@
     <icon>filter_elementals_64</icon>
     <effect>
       <!--
-			target_deck: opponent OR self 
+			target_deck: opponent OR self
 			-->
       <trap_card id="604" base="attack" mult="0.5" target_deck="opponent" y="5" />
       <skill id="displayEffect" trigger="onTrap">
@@ -2552,7 +2552,7 @@
   <battleground>
     <id>2074</id>
     <name>Dawntouched Divertimento</name>
-    <desc>Frog Defense fights harder with each passing Mastery level, increasing cards' stats!</desc>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_frog_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
@@ -2563,6 +2563,23 @@
     <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult=".2" mult=".01" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 18 weeks 1-4 -->
+  <battleground>
+    <id>2075</id>
+    <name>Abyssal Headbaging</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_dragon_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>5</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
   <!-- ==================== -->

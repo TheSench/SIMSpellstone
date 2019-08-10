@@ -35,28 +35,28 @@
 		13: Runes
 			req: <sub_achievement>1</sub_achievement>
 		14: Crafting
-			req: 
+			req:
 		15: Arena
 			req: <tier>1</tier>
-		
+
 		VALID ACHIEVEMENT REQS:
 			<achievement_req>		(-1 is hidden)
 			<achievement_collected_req>
 			<mission_req>
-			<level_req> 
+			<level_req>
 			<pvp_rank_req>
-			
+
 		NAVIGATE:
 			1 = Main Screen
 			2 = Quests
 			3 = Store
 			4 = PvP
-			
+
 		REWARDS:
 			<reward>
 				<item id='2001' number='333' />
 			</reward>
-			
+
 		ORDER:
 			  1-89 	= FTUE + System Introductions. Highest priority
 			 90-99	= Main Campaign
@@ -68,11 +68,11 @@
 			601-699 = Campaign & Map Mastery
 			701-799 = Vaporizer
 			801-899 = Runes
-			
+
 		ID's
 			101-200 = Store
-			201-250 = Core Map 
-			251-300 = Mastery Star 
+			201-250 = Core Map
+			251-300 = Mastery Star
 			301-400 = Card Upgrades
 			401-500 = Bounties
 			501-600 = Guild
@@ -128,7 +128,7 @@
         <wait>1</wait>
       </line>
     </speech>
-    <!-- 
+    <!--
 		<speech_complete>
 			<line>
 				<commander>raven</commander>
@@ -1182,8 +1182,8 @@
     </reward>
   </achievement>
   <!-- Daily Quests -->
-  <!-- 
-	<achievement> 
+  <!--
+	<achievement>
 		<id>xxx</id>
 		<type>2</type>
 		<name>Guardian of Elaria</name>
@@ -1197,7 +1197,7 @@
 			<gold>50</gold>
 		</reward>
 	</achievement>
-	
+
 	<achievement>
 		<id>xxx</id>
 		<type>2</type>
@@ -1213,7 +1213,7 @@
 			<gold>50</gold>
 		</reward>
 	</achievement>
-	
+
 	<achievement>
 		<id>xxx</id>
 		<type>2</type>
@@ -1229,7 +1229,7 @@
 			<gold>50</gold>
 		</reward>
 	</achievement>
-	
+
 	<achievement>
 		<id>xxx</id>
 		<type>2</type>
@@ -2106,7 +2106,7 @@
 			<gold>50</gold>
 		</reward>
 	</achievement>
-	
+
 	<achievement>
 		<id>410</id>
 		<type>4</type>
@@ -2362,7 +2362,7 @@
 			<sp>20</sp>
 		</reward>
 	</achievement>
-	
+
 	<achievement>
 		<id>902</id>
 		<type>9</type>
@@ -2377,7 +2377,7 @@
 			<sp>40</sp>
 		</reward>
 	</achievement>
-	
+
 	<achievement>
 		<id>903</id>
 		<type>9</type>
@@ -2392,7 +2392,7 @@
 			<sp>60</sp>
 		</reward>
 	</achievement>
-	
+
 	<achievement>
 		<id>904</id>
 		<type>9</type>
@@ -6983,7 +6983,7 @@
     </reward>
   </achievement>
   <!-- Mythic Titan Campaign Bluefire (unused)
-	
+
 	<achievement>
 		<id>3255</id>
 		<type>2</type>
@@ -11232,6 +11232,133 @@
       <item id="8018" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 18 weeks 1-4 -->
+  <achievement>
+    <id>3495</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Welcome to the Abyss</name>
+    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 1.</desc>
+    <mission_req>6263</mission_req>
+    <locked_start_time>1566493200</locked_start_time>
+    <!-- Thu, 22 August 2019 17:00:00 -->
+    <req>
+      <campaign>1217</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3098" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7050" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3496</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Welcome to the Abyss</name>
+    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 2.</desc>
+    <mission_req>6263</mission_req>
+    <locked_start_time>1566493200</locked_start_time>
+    <!-- Thu, 22 August 2019 17:00:00 -->
+    <achievement_req>3495</achievement_req>
+    <req>
+      <campaign>1217</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3497</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Welcome to the Abyss</name>
+    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 4.</desc>
+    <mission_req>6263</mission_req>
+    <locked_start_time>1566493200</locked_start_time>
+    <!-- Thu, 22 August 2019 17:00:00 -->
+    <achievement_req>3496</achievement_req>
+    <req>
+      <campaign>1217</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3498</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Welcome to the Abyss</name>
+    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 6.</desc>
+    <mission_req>6263</mission_req>
+    <locked_start_time>1566493200</locked_start_time>
+    <!-- Thu, 22 August 2019 17:00:00 -->
+    <achievement_req>3497</achievement_req>
+    <req>
+      <campaign>1217</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3499</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Forgotten Hero</name>
+    <desc>Complete the 'The Forgotten Hero' campaign on Mastery Level 2.</desc>
+    <mission_req>6269</mission_req>
+    <locked_start_time>1567702800</locked_start_time>
+    <!--  Thu, September 5 2019 17:00:00 -->
+    <req>
+      <campaign>1218</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3500</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Forgotten Hero</name>
+    <desc>Complete the 'The Forgotten Hero' campaign on Mastery Level 4.</desc>
+    <mission_req>6269</mission_req>
+    <locked_start_time>1567702800</locked_start_time>
+    <!--  Thu, September 5 2019 17:00:00 -->
+    <achievement_req>3499</achievement_req>
+    <req>
+      <campaign>1218</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3501</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Forgotten Hero</name>
+    <desc>Complete the 'The Forgotten Hero' campaign on Mastery Level 6.</desc>
+    <mission_req>6269</mission_req>
+    <locked_start_time>1567702800</locked_start_time>
+    <!--  Thu, September 5 2019 17:00:00 -->
+    <achievement_req>3500</achievement_req>
+    <req>
+      <campaign>1218</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -11596,6 +11723,29 @@
       <campaign>1214</campaign>
       <campaign>1215</campaign>
       <campaign>1216</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Abyss -->
+    <id>4018</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of The Abyss</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Abyss.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6263</mission_req>
+    <req>
+      <campaign>1217</campaign>
+      <!-- 1st node -->
+      <campaign>1218</campaign>
+      <!-- 2nd node -->
+      <campaign>1219</campaign>
+      <campaign>1220</campaign>
+      <campaign>1221</campaign>
       <level>7</level>
     </req>
     <reward>

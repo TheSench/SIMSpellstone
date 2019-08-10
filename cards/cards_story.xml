@@ -1996,7 +1996,6 @@
     <name>Putrid Zombie</name>
     <picture>Undead_Rider_B</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time />
     <attack>6</attack>
     <health>10</health>
     <cost>1</cost>
@@ -2051,7 +2050,6 @@
     <name>Underhill Beast</name>
     <picture>Undead_Hornedbeast_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time />
     <attack>7</attack>
     <health>34</health>
     <cost>3</cost>
@@ -2106,7 +2104,6 @@
     <name>Grizzly Bones</name>
     <picture>Undead_Bear_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time />
     <attack>4</attack>
     <health>18</health>
     <cost>2</cost>
@@ -2160,7 +2157,6 @@
     <name>Ahnkmotep</name>
     <picture>Giant_Mummy_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time />
     <attack>3</attack>
     <health>20</health>
     <cost>2</cost>
@@ -2214,7 +2210,6 @@
     <name>Marrowsworn's Cohort</name>
     <picture>Angel_Of_Death_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time />
     <attack>5</attack>
     <health>19</health>
     <cost>2</cost>
@@ -2270,7 +2265,6 @@
     <name>Boneslither Maw</name>
     <picture>Snake_Skeleton_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time />
     <attack>6</attack>
     <health>11</health>
     <cost>1</cost>
@@ -2328,7 +2322,6 @@
     <name>Steelsword Raider</name>
     <picture>Steel_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time />
     <attack>4</attack>
     <health>15</health>
     <cost>1</cost>
@@ -2369,10 +2362,11 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>6</attack>
       <health>27</health>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="8" y="5" />
-      <skill id="burn" x="4" />
+      <skill id="armored" x="5" />
+      <skill id="rally" x="10" y="5" />
+      <skill id="burn" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -2381,7 +2375,6 @@
     <name>Bismuth Guardian</name>
     <picture>Bismuth_Beast_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time />
     <attack>6</attack>
     <health>22</health>
     <cost>2</cost>
@@ -2398,11 +2391,12 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>24</health>
       <attack>7</attack>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>8</attack>
       <health>26</health>
       <skill id="heal" x="3" all="1" y="5" />
       <skill id="protect" x="3" all="1" y="5" />
@@ -2410,6 +2404,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>9</attack>
       <health>30</health>
       <skill id="heal" x="4" all="1" y="5" />
       <skill id="protect" x="3" all="1" y="5" />
@@ -2417,10 +2412,11 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>10</attack>
       <health>34</health>
-      <skill id="heal" x="4" all="1" y="5" />
-      <skill id="protect" x="4" all="1" y="5" />
-      <skill id="frost" x="3" />
+      <skill id="heal" x="5" all="1" y="5" />
+      <skill id="protect" x="5" all="1" y="5" />
+      <skill id="frost" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -2429,12 +2425,11 @@
     <name>Swiftness Feeder</name>
     <picture>Swiftness_Elemental_B</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time />
     <attack>1</attack>
     <health>15</health>
     <cost>0</cost>
     <rarity>4</rarity>
-    <skill id="fervor" x="3" y="5" />
+    <skill id="absorb" x="5" />
     <skill id="pierce" x="4" />
     <skill id="berserk" x="2" />
     <type>2</type>
@@ -2443,9 +2438,9 @@
     <upgrade>
       <level>2</level>
       <health>16</health>
-      <skill id="fervor" x="3" y="5" />
+      <skill id="absorb" x="5" />
       <skill id="pierce" x="5" />
-      <skill id="berserk" x="2" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -2455,23 +2450,23 @@
     <upgrade>
       <level>4</level>
       <health>18</health>
-      <skill id="fervor" x="3" y="5" />
+      <skill id="absorb" x="6" />
       <skill id="pierce" x="5" />
-      <skill id="berserk" x="3" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>19</health>
-      <skill id="fervor" x="3" y="5" />
+      <skill id="absorb" x="6" />
       <skill id="pierce" x="6" />
-      <skill id="berserk" x="3" />
+      <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>20</health>
-      <skill id="fervor" x="3" y="5" />
-      <skill id="pierce" x="6" />
-      <skill id="berserk" x="4" />
+      <skill id="absorb" x="7" />
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -2480,8 +2475,7 @@
     <name>Radium Corrupter</name>
     <picture>Radium_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time />
-    <attack>9</attack>
+    <attack>12</attack>
     <health>33</health>
     <cost>3</cost>
     <rarity>4</rarity>
@@ -2497,11 +2491,12 @@
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>13</attack>
       <health>37</health>
-      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>14</attack>
       <health>39</health>
       <skill id="corrosive" x="5" />
       <skill id="enfeeble" x="4" all="1" />
@@ -2509,17 +2504,19 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>42</health>
-      <skill id="corrosive" x="5" />
+      <attack>15</attack>
+      <health>44</health>
+      <skill id="corrosive" x="6" />
       <skill id="enfeeble" x="5" all="1" />
-      <skill id="weaken" x="3" all="1" />
+      <skill id="weaken" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>46</health>
-      <skill id="corrosive" x="5" />
+      <attack>16</attack>
+      <health>48</health>
+      <skill id="corrosive" x="7" />
       <skill id="enfeeble" x="5" all="1" />
-      <skill id="weaken" x="4" all="1" />
+      <skill id="weaken" x="5" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -2528,14 +2525,13 @@
     <name>Crystal Blockade</name>
     <picture>Crystal_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time />
     <attack>4</attack>
     <health>33</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="4" />
     <skill id="armored" x="4" />
-    <skill id="counter" x="6" />
+    <skill id="counter" x="8" />
     <type>3</type>
     <sub_type>5</sub_type>
     <set>9999</set>
@@ -2548,26 +2544,29 @@
       <health>37</health>
       <skill id="corrosive" x="5" />
       <skill id="armored" x="4" />
-      <skill id="counter" x="7" />
+      <skill id="counter" x="9" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>41</health>
       <attack>5</attack>
+      <health>41</health>
+      <skill id="corrosive" x="6" />
+      <skill id="armored" x="4" />
+      <skill id="counter" x="10" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>45</health>
-      <skill id="corrosive" x="5" />
+      <skill id="corrosive" x="7" />
       <skill id="armored" x="5" />
-      <skill id="counter" x="7" />
+      <skill id="counter" x="11" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>49</health>
-      <skill id="corrosive" x="6" />
-      <skill id="armored" x="5" />
-      <skill id="counter" x="8" />
+      <health>50</health>
+      <skill id="corrosive" x="8" />
+      <skill id="armored" x="6" />
+      <skill id="counter" x="12" />
     </upgrade>
   </unit>
   <unit>
@@ -2576,12 +2575,11 @@
     <name>Sludge River</name>
     <picture>River_Elemental_B</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time />
     <attack>5</attack>
     <health>24</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="rally" x="2" y="5" />
+    <skill id="rally" x="3" y="5" />
     <skill id="jam" c="3" />
     <skill id="leech" x="5" />
     <type>3</type>
@@ -2590,7 +2588,7 @@
     <upgrade>
       <level>2</level>
       <health>26</health>
-      <skill id="rally" x="2" all="1" y="5" />
+      <skill id="rally" x="4" all="1" y="5" />
       <skill id="jam" c="3" />
       <skill id="leech" x="5" />
     </upgrade>
@@ -2602,21 +2600,25 @@
     <upgrade>
       <level>4</level>
       <health>31</health>
-      <skill id="rally" x="3" all="1" y="5" />
+      <skill id="rally" x="5" all="1" y="5" />
       <skill id="jam" c="3" />
       <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>34</health>
       <attack>7</attack>
+      <health>34</health>
+      <skill id="rally" x="6" all="1" y="5" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>8</attack>
       <health>36</health>
-      <skill id="rally" x="4" all="1" y="5" />
+      <skill id="rally" x="7" all="1" y="5" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -2625,7 +2627,6 @@
     <name>Winter's Heart</name>
     <picture>Snowhidden_Dragon_B</picture>
     <asset_bundle>40</asset_bundle>
-    <hidden_until_time />
     <attack>4</attack>
     <health>18</health>
     <cost>1</cost>
@@ -2681,7 +2682,6 @@
     <name>Winter's Wings</name>
     <picture>Night_Dragon_B</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time />
     <attack>5</attack>
     <health>24</health>
     <cost>2</cost>
@@ -2736,7 +2736,6 @@
     <name>Winter's Bite</name>
     <picture>Fire_Tip_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time />
     <attack>5</attack>
     <health>13</health>
     <cost>0</cost>
@@ -2790,7 +2789,6 @@
     <name>Winter's Thunder</name>
     <picture>Legendary_Lightning_Fist_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time />
     <attack>5</attack>
     <health>36</health>
     <cost>3</cost>
@@ -2842,7 +2840,6 @@
     <name>Winter's Crusher</name>
     <picture>Epic_Water_Steed_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time />
     <attack>4</attack>
     <health>30</health>
     <cost>3</cost>
@@ -2896,7 +2893,6 @@
     <name>Winter's Spirit</name>
     <picture>Spirit_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time />
     <attack>3</attack>
     <health>26</health>
     <cost>2</cost>
@@ -2994,7 +2990,6 @@
     <name>Summoned Abomination</name>
     <picture>Ice_Yeti_A</picture>
     <asset_bundle>40</asset_bundle>
-    <hidden_until_time />
     <attack>5</attack>
     <health>18</health>
     <cost>4</cost>
@@ -4100,7 +4095,6 @@
     <name>Winter's Crasher</name>
     <picture>Lightning_Dragon_A</picture>
     <asset_bundle>93</asset_bundle>
-    <hidden_until_time />
     <attack>6</attack>
     <health>30</health>
     <cost>3</cost>
@@ -6290,7 +6284,6 @@
     <name>Knight of Nerves</name>
     <picture>Solo_Running_Knight_A</picture>
     <asset_bundle>123</asset_bundle>
-    <hidden_until_time />
     <attack>7</attack>
     <health>15</health>
     <cost>1</cost>
@@ -6339,7 +6332,6 @@
     <asset_bundle>123</asset_bundle>
     <picture_alt>Acid_Knight_B</picture_alt>
     <asset_bundle_alt>123</asset_bundle_alt>
-    <hidden_until_time />
     <attack>1</attack>
     <health>12</health>
     <cost>1</cost>
@@ -7060,8 +7052,6 @@
     <card_type>2</card_type>
     <name>Unfounded Revenge</name>
     <picture>Warrior_Angel_A</picture>
-    <asset_bundle />
-    <hidden_until_time />
     <attack>15</attack>
     <health>58</health>
     <cost>4</cost>
@@ -7701,7 +7691,6 @@
     <name>Shore Scourer</name>
     <picture>Crab_Person_B</picture>
     <asset_bundle>83</asset_bundle>
-    <hidden_until_time />
     <attack>0</attack>
     <health>4</health>
     <cost>0</cost>

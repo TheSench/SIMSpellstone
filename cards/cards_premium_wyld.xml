@@ -31239,6 +31239,139 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7243</id>
+    <card_type>2</card_type>
+    <name>Moonscale Drake</name>
+    <picture>Dragon_Wolf_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1565629200</hidden_until_time>
+    <attack>10</attack>
+    <health>46</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="4" />
+    <skill id="rally" x="3" all="1" />
+    <skill id="enfeeble" x="3" all="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="5" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="5" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17243</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Moonscale Beast</name>
+    <picture>Dragon_Wolf_A</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1565629200</hidden_until_time>
+    <attack>12</attack>
+    <health>48</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="rally" x="4" all="1" />
+    <skill id="enfeeble" x="4" all="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>49</health>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>50</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>51</health>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="enfeeble" x="5" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27243</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Moonscale Howler</name>
+    <picture>Dragon_Wolf_B</picture>
+    <asset_bundle>166</asset_bundle>
+    <hidden_until_time>1565629200</hidden_until_time>
+    <attack>13</attack>
+    <health>51</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="rally" x="5" all="1" />
+    <skill id="enfeeble" x="5" all="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>52</health>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>53</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="6" all="1" />
+      <skill id="enfeeble" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="6" all="1" />
+      <skill id="enfeeble" x="6" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7244</id>
     <card_type>2</card_type>
     <name>Glitternox Drake</name>

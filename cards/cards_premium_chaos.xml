@@ -11636,7 +11636,7 @@
     <name>Gob Launcher</name>
     <picture>Catapult_Dragon_A</picture>
     <asset_bundle>74</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1478797200</hidden_until_time>
     <attack>5</attack>
     <health>15</health>
     <cost>2</cost>
@@ -11680,7 +11680,7 @@
     <name>Gob Chucker</name>
     <picture>Catapult_Dragon_A</picture>
     <asset_bundle>74</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1478797200</hidden_until_time>
     <attack>6</attack>
     <health>19</health>
     <cost>2</cost>
@@ -11723,7 +11723,7 @@
     <name>Goballista</name>
     <picture>Catapult_Dragon_B</picture>
     <asset_bundle>74</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1478797200</hidden_until_time>
     <attack>7</attack>
     <health>22</health>
     <cost>2</cost>
@@ -30332,7 +30332,7 @@
     <asset_bundle>166</asset_bundle>
     <hidden_until_time>1565283600</hidden_until_time>
     <attack>6</attack>
-    <health>19</health>
+    <health>21</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="4" />
@@ -30347,7 +30347,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>20</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -30361,7 +30361,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>21</health>
+      <health>23</health>
     </upgrade>
   </unit>
   <unit>
@@ -30373,7 +30373,7 @@
     <asset_bundle>166</asset_bundle>
     <hidden_until_time>1565283600</hidden_until_time>
     <attack>9</attack>
-    <health>22</health>
+    <health>24</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="5" />
@@ -30406,7 +30406,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>23</health>
+      <health>25</health>
     </upgrade>
   </unit>
   <unit>
@@ -30418,7 +30418,7 @@
     <asset_bundle>166</asset_bundle>
     <hidden_until_time>1565283600</hidden_until_time>
     <attack>11</attack>
-    <health>23</health>
+    <health>26</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="7" />
@@ -30429,7 +30429,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>24</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -30437,7 +30437,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>25</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -30447,6 +30447,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>29</health>
       <skill id="absorb" x="8" />
       <skill id="corrosive" x="6" />
       <skill id="nullify" x="3" />
@@ -30682,7 +30683,7 @@
     <name>Blazesting Wyvern</name>
     <picture>Desert_Dragon_B</picture>
     <asset_bundle>166</asset_bundle>
-    <hidden_until_time>1565629200</hidden_until_time>
+    <hidden_until_time>1565888400</hidden_until_time>
     <attack>11</attack>
     <health>40</health>
     <cost>3</cost>

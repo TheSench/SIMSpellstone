@@ -39682,5 +39682,425 @@
       <card id="7223" mastery_level="7" name="Vombomber Recruit" />
     </deck>
   </mission>
+  <!-- Campaign Event 18 weeks 1-4 -->
+  <mission>
+    <id>6263</id>
+    <name>True Darkness</name>
+    <energy>18</energy>
+    <desc>The brilliant light of the door disappears as it closes behind you. In stark contrast darkness lies before you, so thick that you cannot tell the difference between having your eyes shut or open.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5062" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="5093" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" mastery_level="2" name="Winged Warrior" />
+      <card id="5016" mastery_level="3" name="Fowl Swarm" />
+      <card id="5016" mastery_level="4" name="Fowl Swarm" />
+      <card id="5016" mastery_level="5" name="Fowl Swarm" />
+      <card id="5063" mastery_level="6" name="Runic Dragon" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6264</id>
+    <name>Hint of Familiarity</name>
+    <energy>18</energy>
+    <desc>There is no scent or discernment of your surroundings, the featurelessness reminding you of a dream. Then, a faint light glows some distance away. It grows closer, the shape and voice of someone familiar...</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8009" name="Vulcanos' Obsidian" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="6012" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="6056" name="Potoo" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2066" mastery_level="2" name="Basalt Dragon" />
+      <card id="1334" mastery_level="3" name="Cinder Drake" />
+      <card id="2033" mastery_level="4" name="Arcblaze Dragon" />
+      <card id="6056" mastery_level="5" name="Potoo" />
+      <card id="6130" mastery_level="6" name="Shadowed Wyvern" />
+      <card id="6174" mastery_level="7" name="Deatheye Owl" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Adventurer? I told you not to follow me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6265</id>
+    <name>Faithful Friend</name>
+    <energy>18</energy>
+    <desc>Aria is trying her best to sound annoyed, but her face belies her true relief. Energy radiates from her hand, providing the small amount of illumination, at least enough to light up your surrounding area.</desc>
+    <commander id="354" />
+    <deck>
+      <card id="8006" name="Atlas' Dragon" />
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="7012" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7029" />
+      <card id="2041" name="Sharpwing" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2041" mastery_level="2" name="Sharpwing" />
+      <card id="7029" mastery_level="3" name="Owl Griffin" />
+      <card id="1631" mastery_level="4" name="Venom Dragon" />
+      <card id="2041" mastery_level="5" name="Sharpwing" />
+      <card id="7132" mastery_level="6" name="Bastion Percher" />
+      <card id="4000" mastery_level="7" name="Noctrus Flintclaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Since you're here now, we'll have to make the best of it.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6266</id>
+    <name>Condemned</name>
+    <energy>18</energy>
+    <desc>Taking a look around, you realize... you know this place. Although a few features are different, you are certain that this is the same Abyss where Bluefire condemned you before the final fight with him. You rely the info to Aria...</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8007" name="Solaron's Cyclone" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="5012" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5062" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2117" name="Aero Enforcer" />
+      <card id="1034" mastery_level="2" name="Winged Warrior" />
+      <card id="5062" mastery_level="3" name="Cliffhanger Wyrm" />
+      <card id="5010" mastery_level="4" name="Concealed Dragon" />
+      <card id="5010" mastery_level="5" name="Concealed Dragon" />
+      <card id="5023" mastery_level="6" name="Nightfall Dragon" />
+      <card id="5059" mastery_level="7" name="Bemola" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>This is the place where Bluefire trapped you, Oda, and Elyse? That can only mean one thing...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>This must be The Abyss. The resting place of anything taken by The Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6267</id>
+    <name>Lingering Void</name>
+    <energy>18</energy>
+    <desc>You and Aria attempt to traverse the foreign land. Strange monster creatures, and dragons that faintly resemble Bluefire, are drawn by Aria's light and attack you.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5062" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" mastery_level="2" name="Winged Warrior" />
+      <card id="5016" mastery_level="3" name="Fowl Swarm" />
+      <card id="5062" mastery_level="4" name="Cliffhanger Wyrm" />
+      <card id="1034" mastery_level="5" name="Winged Warrior" />
+      <card id="5240" mastery_level="6" name="Direfog Shrieker" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>We might have closed the door by using it, but now we're trapped inside.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>We'll have to defeat the Crimsonwing Champion before we even think about leaving.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6268</id>
+    <name>Enemy Soul</name>
+    <energy>18</energy>
+    <desc>A powerful dark energy radiates further within. Aria leads you closer to it. You find another person.</desc>
+    <commander id="346" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5130" name="Drakeling Fosterer" />
+      <card id="6056" name="Potoo" />
+      <card id="5166" mastery_level="2" name="Hoarfrost Buzzard" />
+      <card id="1334" mastery_level="3" name="Cinder Drake" />
+      <card id="5166" mastery_level="4" name="Hoarfrost Buzzard" />
+      <card id="5127" mastery_level="5" name="Dynamo Drake" />
+      <card id="6239" mastery_level="6" name="Draffin Newborn" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Is that... her?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Prepare well, and we'll approach...</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Node 2 -->
+  <mission>
+    <id>6269</id>
+    <name>Crimson Hero</name>
+    <energy>18</energy>
+    <desc>A human stands before you. Her eyes are closed, hands resting upon a golden spear. As you and Aria approach, she opens her eyes.</desc>
+    <commander id="437" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5016" mastery_level="2" name="Fowl Swarm" />
+      <card id="5166" mastery_level="3" name="Hoarfrost Buzzard" />
+      <card id="5093" mastery_level="4" name="Scaly Newborn" />
+      <card id="5062" mastery_level="5" name="Cliffhanger Wyrm" />
+      <card id="5063" mastery_level="6" name="Runic Dragon" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Are you the leader of the Crimsonwings?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You've caused a lot of trouble!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6270</id>
+    <name>Mistrust</name>
+    <energy>18</energy>
+    <desc>Dark energy emanates from the human before you. The strange monsters rise in the shadows behind her, coming towards you with great vengeance.</desc>
+    <commander id="437" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6056" name="Potoo" />
+      <card id="6056" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="6115" mastery_level="2" name="Spelltalon" />
+      <card id="6056" mastery_level="3" name="Potoo" />
+      <card id="2033" mastery_level="4" name="Arcblaze Dragon" />
+      <card id="2004" mastery_level="5" name="Lavatail Dragon" />
+      <card id="6130" mastery_level="6" name="Shadowed Wyvern" />
+      <card id="6174" mastery_level="7" name="Deatheye Owl" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>People...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>... cannot be trusted.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6271</id>
+    <name>Source of Conflict</name>
+    <energy>18</energy>
+    <desc>The monsters are responding to the human's aura. Her eyes are half glazed, seeming to look through you without properly registering your presence.</desc>
+    <commander id="437" />
+    <deck>
+      <card id="8042" name="Winter's Crusher" />
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="2041" name="Sharpwing" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="7029" mastery_level="2" name="Owl Griffin" />
+      <card id="2041" mastery_level="3" name="Sharpwing" />
+      <card id="1631" mastery_level="4" name="Venom Dragon" />
+      <card id="7062" mastery_level="5" name="Brine Bellower" />
+      <card id="7214" mastery_level="6" name="Furystorm Drake" />
+      <card id="4000" mastery_level="7" name="Noctrus Flintclaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>When given great power, they misuse what they have to take selfishly.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>Their differences divide them; the source of all our conflict.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6272</id>
+    <name>Remembered Hero</name>
+    <energy>18</energy>
+    <desc>After clearing out the monsters surrounding the human, her eyes clear. She looks around as if seeing her surroundings for the first time.</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8009" name="Vulcanos' Obsidian" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="6056" name="Potoo" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6115" name="Spelltalon" />
+      <card id="2066" mastery_level="2" name="Basalt Dragon" />
+      <card id="2033" mastery_level="3" name="Arcblaze Dragon" />
+      <card id="6056" mastery_level="4" name="Potoo" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="6130" mastery_level="6" name="Shadowed Wyvern" />
+      <card id="6174" mastery_level="7" name="Deatheye Owl" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>I... what happened? There were strange thoughts in my head, but now...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>Right, I remember now.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>My name is Vel. And the reason why people are so beautiful is because of their differences.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6273</id>
+    <name>Hero's Truth</name>
+    <energy>18</energy>
+    <desc>Aria harbors doubts over the human's sudden change in personality. However, the monsters seem to have calmed.</desc>
+    <commander id="259" />
+    <deck>
+      <card id="8001" name="Frostbite Wyrm" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="2117" name="Aero Enforcer" />
+      <card id="5062" mastery_level="2" name="Cliffhanger Wyrm" />
+      <card id="5096" mastery_level="3" name="Enclave Dragon" />
+      <card id="5166" mastery_level="4" name="Hoarfrost Buzzard" />
+      <card id="1034" mastery_level="5" name="Winged Warrior" />
+      <card id="8001" mastery_level="6" name="Frostbite Wyrm" />
+      <card id="5059" mastery_level="7" name="Bemola" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>What nonsense are you saying?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>I've caused you all a great amount of trouble, and I'm sorry for that.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6274</id>
+    <name>Cursed Memories</name>
+    <energy>18</energy>
+    <desc>Vel explains her past and how she ended up in The Abyss. Although you've heard the story in fragmented pieces before, she is able to fill in the gaps for her disappearance.</desc>
+    <commander id="387" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6115" name="Spelltalon" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5166" mastery_level="2" name="Hoarfrost Buzzard" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="5166" mastery_level="4" name="Hoarfrost Buzzard" />
+      <card id="6115" mastery_level="5" name="Spelltalon" />
+      <card id="6059" mastery_level="6" name="Violetfire Igniter" />
+      <card id="4000" mastery_level="7" name="Noctrus Flintclaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>When I fought against Bluefire, he cursed me, and sent me to the Abyss.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>I knew I would lose my mind here, but I had to go. It's the only way to truly defeat The Void.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

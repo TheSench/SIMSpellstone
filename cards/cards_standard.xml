@@ -6465,7 +6465,6 @@
     <name>Boomsting Duo</name>
     <picture>Goblin_Insect_A</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time />
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -6506,7 +6505,6 @@
     <name>Boomsting Shot</name>
     <picture>Goblin_Insect_A</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time />
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -6548,7 +6546,6 @@
     <name>Boomsting Ace</name>
     <picture>Goblin_Insect_B</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time />
     <attack>5</attack>
     <health>14</health>
     <cost>1</cost>
@@ -9960,7 +9957,6 @@
     <name>Blackfin</name>
     <picture>Undead_Seafolk_A</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time />
     <attack>6</attack>
     <health>26</health>
     <cost>4</cost>
@@ -10004,7 +10000,6 @@
     <name>Grave Blackfin</name>
     <picture>Undead_Seafolk_A</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time />
     <attack>7</attack>
     <health>38</health>
     <cost>4</cost>
@@ -10054,7 +10049,6 @@
     <name>Nether Blackfin</name>
     <picture>Undead_Seafolk_B</picture>
     <asset_bundle>38</asset_bundle>
-    <hidden_until_time />
     <attack>9</attack>
     <health>44</health>
     <cost>4</cost>

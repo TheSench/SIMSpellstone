@@ -20,7 +20,7 @@
 			^G	takes two double hex back to back to make gradient [RRGGBBAARRGGBBAA]
 
 		<card_limit>1</card_limit>		Prevents this from being opened if it would exceed card cap.
-	 	<drop_item_id>					ID for 
+	 	<drop_item_id>					ID for
 
 	 	Market Items get NO BONUS to <priority>
 	 -->
@@ -2780,9 +2780,9 @@
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
-  <!-- 
+  <!--
 		<cycle_length>86400</cycle_length> 	cycle length in seconds. Keep same per pack or may f*** everything
-		<start_offset>0</start_offset> 		offset from UTC in seconds 
+		<start_offset>0</start_offset> 		offset from UTC in seconds
 	-->
   <!-- 4001 is used for Mystery Crate, DO NOT USE -->
   <store_item>
@@ -5861,6 +5861,26 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="7129" display_card_id="7129" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5148</id>
+    <name>Thundering Hellwing Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFThundering Hellwing^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6184" display_card_id="6184" />
     </cards>
   </store_item>
 </root>
