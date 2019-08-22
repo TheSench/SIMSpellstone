@@ -4112,7 +4112,7 @@ var CAMPAIGNS = {
 		"name": "Return to the Abyss"
 	},
 	"1218": {
-		"battleground_id": "2071",
+		"battleground_id": "2075",
 		"id": "1218",
 		"items": {
 			"3098": 0.4

@@ -3051,7 +3051,7 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2075",
-		"name": "Abyssal Headbaging",
+		"name": "Enemy Anthem",
 		"scale_with_level": "1",
 		"starting_level": "5"
 	},
