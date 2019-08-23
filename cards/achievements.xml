@@ -11237,8 +11237,8 @@
     <id>3495</id>
     <type>2</type>
     <order>101</order>
-    <name>Welcome to the Abyss</name>
-    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 1.</desc>
+    <name>Return to the Abyss</name>
+    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 1.</desc>
     <mission_req>6263</mission_req>
     <locked_start_time>1566493200</locked_start_time>
     <!-- Thu, 22 August 2019 17:00:00 -->
@@ -11256,8 +11256,8 @@
     <id>3496</id>
     <type>2</type>
     <order>101</order>
-    <name>Welcome to the Abyss</name>
-    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 2.</desc>
+    <name>Return to the Abyss</name>
+    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 2.</desc>
     <mission_req>6263</mission_req>
     <locked_start_time>1566493200</locked_start_time>
     <!-- Thu, 22 August 2019 17:00:00 -->
@@ -11274,8 +11274,8 @@
     <id>3497</id>
     <type>2</type>
     <order>101</order>
-    <name>Welcome to the Abyss</name>
-    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 4.</desc>
+    <name>Return to the Abyss</name>
+    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 4.</desc>
     <mission_req>6263</mission_req>
     <locked_start_time>1566493200</locked_start_time>
     <!-- Thu, 22 August 2019 17:00:00 -->
@@ -11292,8 +11292,8 @@
     <id>3498</id>
     <type>2</type>
     <order>101</order>
-    <name>Welcome to the Abyss</name>
-    <desc>Complete the 'Welcome to the Abyss' campaign on Mastery Level 6.</desc>
+    <name>Return to the Abyss</name>
+    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 6.</desc>
     <mission_req>6263</mission_req>
     <locked_start_time>1566493200</locked_start_time>
     <!-- Thu, 22 August 2019 17:00:00 -->

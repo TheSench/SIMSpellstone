@@ -2568,7 +2568,7 @@
   <!-- Campaign Event 18 weeks 1-4 -->
   <battleground>
     <id>2075</id>
-    <name>Abyssal Headbaging</name>
+    <name>Enemy Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_dragon_64</icon>
     <enemy_only>1</enemy_only>

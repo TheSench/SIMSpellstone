@@ -3599,21 +3599,23 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="rally" x="4" y="3" />
+      <health>24</health>
+      <skill id="rally" x="5" y="3" />
       <skill id="protect" x="6" />
       <skill id="pierce" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>24</health>
-      <skill id="rally" x="5" y="3" />
+      <health>26</health>
+      <skill id="rally" x="6" y="3" />
       <skill id="protect" x="7" />
       <skill id="pierce" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>27</health>
       <attack>7</attack>
-      <skill id="rally" x="6" y="3" />
+      <skill id="rally" x="7" y="3" />
       <skill id="protect" x="8" />
       <skill id="pierce" x="10" />
     </upgrade>
@@ -7134,22 +7136,33 @@
     <upgrade>
       <level>2</level>
       <attack>5</attack>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>15</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
       <skill id="armored" x="2" />
       <skill id="fervor" x="2" y="10" />
       <skill id="pierce" x="4" />
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <health>15</health>
+      <skill id="armored" x="2" />
+      <skill id="fervor" x="2" y="10" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <health>17</health>
+      <skill id="armored" x="2" />
+      <skill id="fervor" x="2" y="10" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+    <upgrade>
       <level>5</level>
+      <attack>7</attack>
+      <health>18</health>
       <skill id="armored" x="2" />
       <skill id="fervor" x="3" y="10" />
-      <skill id="pierce" x="4" />
+      <skill id="pierce" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -7159,7 +7172,7 @@
     <picture>Avian_Monstrosity_A</picture>
     <asset_bundle>56</asset_bundle>
     <attack>4</attack>
-    <health>16</health>
+    <health>26</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
@@ -7170,20 +7183,20 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>18</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>19</health>
+      <health>29</health>
       <attack>5</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>20</health>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -7200,7 +7213,7 @@
     <picture>Avian_Monstrosity_A</picture>
     <asset_bundle>56</asset_bundle>
     <attack>5</attack>
-    <health>21</health>
+    <health>31</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
@@ -7211,18 +7224,18 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>22</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>23</health>
+      <health>33</health>
       <skill id="evade" x="2" />
       <skill id="rally" x="2" all="1" y="10" />
       <skill id="leech" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>26</health>
+      <health>36</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -7244,7 +7257,7 @@
     <picture>Avian_Monstrosity_B</picture>
     <asset_bundle>56</asset_bundle>
     <attack>8</attack>
-    <health>27</health>
+    <health>37</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="evade" x="2" />
@@ -7255,23 +7268,25 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>28</health>
+      <health>38</health>
       <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>30</health>
+      <health>40</health>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>32</health>
+      <attack>11</attack>
       <skill id="evade" x="3" />
       <skill id="rally" x="3" all="1" y="10" />
       <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>34</health>
+      <health>41</health>
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -14405,7 +14420,7 @@
     <health>19</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="2" />
+    <skill id="armored" x="3" />
     <skill id="rally" x="1" all="1" y="10" />
     <skill id="berserk" x="1" />
     <type>3</type>
@@ -14413,19 +14428,19 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="4" />
       <skill id="rally" x="1" all="1" y="10" />
       <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="4" />
       <skill id="rally" x="2" all="1" y="10" />
       <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="4" />
       <skill id="rally" x="2" all="1" y="10" />
       <skill id="berserk" x="2" />
     </upgrade>
@@ -14450,7 +14465,7 @@
     <health>22</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="3" />
+    <skill id="armored" x="4" />
     <skill id="rally" x="2" all="1" y="10" />
     <skill id="berserk" x="2" />
     <type>3</type>
@@ -14467,16 +14482,21 @@
     <upgrade>
       <level>4</level>
       <health>26</health>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="4" />
+      <health>27</health>
+      <attack>8</attack>
+      <skill id="armored" x="5" />
       <skill id="rally" x="3" all="1" y="10" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
+      <health>28</health>
+      <attack>10</attack>
+      <skill id="armored" x="6" />
       <skill id="rally" x="4" all="1" y="10" />
       <skill id="berserk" x="4" />
     </upgrade>

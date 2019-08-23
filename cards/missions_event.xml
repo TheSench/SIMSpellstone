@@ -39734,7 +39734,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Adventurer? I told you not to follow me.</text>
+        <text>Who's there?! Show yourself!</text>
       </line>
     </speech>
   </mission>
@@ -39801,7 +39801,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>This must be The Abyss. The resting place of anything taken by The Void.</text>
+        <text>This must be The Abyss. The resting place of anything taken by The Void, and home of darkness and monsters.</text>
       </line>
     </speech>
   </mission>
@@ -39868,12 +39868,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Is that... her?</text>
-      </line>
-      <line>
-        <commander>necromancer</commander>
-        <enemy>0</enemy>
-        <text>Prepare well, and we'll approach...</text>
+        <text>Is that... her? Prepare well, and we'll approach...</text>
       </line>
     </speech>
   </mission>
@@ -39901,19 +39896,14 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
-        <enemy>0</enemy>
-        <text>You!</text>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>...</text>
       </line>
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Are you the leader of the Crimsonwings?</text>
-      </line>
-      <line>
-        <commander>necromancer</commander>
-        <enemy>0</enemy>
-        <text>You've caused a lot of trouble!</text>
+        <text>You! Are you the leader of the Crimsonwings? You've caused a lot of trouble!</text>
       </line>
     </speech>
   </mission>
@@ -39944,12 +39934,7 @@
       <line>
         <commander>Portrait_mythic_wyld</commander>
         <enemy>1</enemy>
-        <text>People...</text>
-      </line>
-      <line>
-        <commander>Portrait_mythic_wyld</commander>
-        <enemy>1</enemy>
-        <text>... cannot be trusted.</text>
+        <text>People... cannot be trusted.</text>
       </line>
     </speech>
   </mission>
@@ -39980,12 +39965,12 @@
       <line>
         <commander>Portrait_mythic_wyld</commander>
         <enemy>1</enemy>
-        <text>When given great power, they misuse what they have to take selfishly.</text>
+        <text>When given great power, they misuse what they have to take selfishly. Their differences divide them; the source of all our conflict.</text>
       </line>
       <line>
-        <commander>Portrait_mythic_wyld</commander>
-        <enemy>1</enemy>
-        <text>Their differences divide them; the source of all our conflict.</text>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Is she possessed by The Void's power? Just like what happened to Oda and Elyse... Let's give her a chance to explain once we beat her.</text>
       </line>
     </speech>
   </mission>
@@ -40021,12 +40006,7 @@
       <line>
         <commander>Portrait_mythic_wyld</commander>
         <enemy>1</enemy>
-        <text>Right, I remember now.</text>
-      </line>
-      <line>
-        <commander>Portrait_mythic_wyld</commander>
-        <enemy>1</enemy>
-        <text>My name is Vel. And the reason why people are so beautiful is because of their differences.</text>
+        <text>Right, I remember now. My name is Vel. And the reason why people are so beautiful is because of their differences.</text>
       </line>
     </speech>
   </mission>
