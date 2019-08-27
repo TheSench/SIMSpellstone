@@ -87531,6 +87531,84 @@ var CARDS = {
 			}
 		}
 	},
+	"6244": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1566838800000",
+		"id": "6244",
+		"maxLevel": 6,
+		"name": "Disgraced Disciple",
+		"picture": "Avian_Jagged_Claw_Avenger_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"id": "poison",
+				"x": 4
+			},
+			{
+				"id": "daze",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -181331,6 +181409,96 @@ var CARDS = {
 			}
 		}
 	},
+	"16244": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1566838800000",
+		"id": "16244",
+		"maxLevel": 6,
+		"name": "Disgraced Master",
+		"picture": "Avian_Jagged_Claw_Avenger_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"id": "poison",
+				"x": 6
+			},
+			{
+				"id": "daze",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"attack": 10,
+				"health": 25,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"health": 26,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -261456,6 +261624,96 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"26244": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1566838800000",
+		"id": "26244",
+		"maxLevel": 6,
+		"name": "Disgraced Baneclaw",
+		"picture": "Avian_Jagged_Claw_Avenger_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "nullify",
+				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 7
+			},
+			{
+				"id": "daze",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 12,
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 9
+					},
+					{
+						"id": "daze",
 						"x": 8
 					}
 				]
