@@ -107924,6 +107924,84 @@ var CARDS = {
 			}
 		}
 	},
+	"7247": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1567443600000",
+		"id": "7247",
+		"maxLevel": 6,
+		"name": "Timberglide Striker",
+		"picture": "Avian_Mecha_Cyborg_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "fervor",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"10",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"attack": 6,
+				"skill": []
+			},
+			"4": {
+				"health": 23,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -108911,6 +108989,235 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"7605": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1567098000000",
+		"id": "7605",
+		"maxLevel": 10,
+		"name": "Rago, Crimson Vicar",
+		"picture": "Avian_Avian_Priest_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 5,
+				"y": "10"
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3,
+				"y": "10"
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3,
+						"y": "10"
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 39,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3,
+						"y": "10"
+					}
+				]
+			},
+			"4": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3,
+						"y": "10"
+					}
+				]
+			},
+			"5": {
+				"attack": 13,
+				"health": 41,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "10"
+					}
+				]
+			},
+			"6": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "10"
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "10"
+					}
+				]
+			},
+			"8": {
+				"health": 42,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5,
+						"y": "10"
+					}
+				]
+			},
+			"9": {
+				"health": 43,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 8,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5,
+						"y": "10"
+					}
+				]
+			},
+			"10": {
+				"attack": 15,
+				"health": 44,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 8,
+						"y": "10"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5,
+						"y": "10"
 					}
 				]
 			}
@@ -202278,6 +202585,96 @@ var CARDS = {
 			}
 		}
 	},
+	"17247": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1567443600000",
+		"id": "17247",
+		"maxLevel": 6,
+		"name": "Timberglide Ace",
+		"picture": "Avian_Mecha_Cyborg_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "fervor",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"10",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -282628,6 +283025,84 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 14
+					}
+				]
+			}
+		}
+	},
+	"27247": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1567443600000",
+		"id": "27247",
+		"maxLevel": 6,
+		"name": "Timberglide Captain",
+		"picture": "Avian_Mecha_Cyborg_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "fervor",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"10",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": []
+			},
+			"3": {
+				"attack": 10,
+				"skill": []
+			},
+			"4": {
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 7
 					}
 				]
 			}

@@ -7840,6 +7840,16 @@
     <card_id>27244</card_id>
     <resource card_id="17244" number="2" />
   </fusion_recipe>
+  <!-- Recipe for 7245 -->
+  <!-- Recipe for 7246 -->
+  <fusion_recipe>
+    <card_id>17247</card_id>
+    <resource card_id="7247" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27247</card_id>
+    <resource card_id="17247" number="2" />
+  </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
   <fusion_recipe>

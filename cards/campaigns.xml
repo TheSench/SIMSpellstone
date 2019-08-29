@@ -7441,6 +7441,40 @@
     </rewards>
     <find_item id="3098" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node Releasing the Elements 
+
+	<campaign>
+		<id>1219</id>
+		<name>Releasing the Elements</name>
+		<type>2</type>
+		<icon id='gem_Boss_LG' bundle='0' />
+		<campaign_req id='1218' level='1' />
+		<locked_start_time>1567702800</locked_start_time>  |  Thursday, 5 September 2019 17:00:00 |
+		<battleground_id>2075</battleground_id>
+		<location_id>24</location_id>
+		<show_level>1</show_level>
+		<show_ranking>1</show_ranking>
+		<x>760</x>
+		<y>200</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>6287</mission_id>
+			<mission_id>6288</mission_id>
+			<mission_id>6289</mission_id>
+			<mission_id>6290</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='512' />
+			<card level='3' id='512' />
+			<item level='4' id='3100' /> | Dragon Breath Crystal |
+			<item level='5' id='3100' /> | Dragon Breath Crystal |
+			<item level='6' id='3100' /> | Dragon Breath Crystal |
+			<item level='7' id='3100' /> | Dragon Breath Crystal |
+		</rewards>
+		<find_item id='3098' drop_per_energy='.4' /> | Pillar Soul |
+	</campaign>
+-->
   <!-- ================================== Campaign Event 18 End ================================== -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

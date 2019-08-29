@@ -40082,5 +40082,106 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 18 Boss Node Releasing the Elements -->
+  <mission>
+    <id>6287</id>
+    <name>Wyld</name>
+    <energy>9</energy>
+    <desc>Atlas's form stands twisted before you, when a memory comes unbidden into your mind: A mighty tree rises from the earth, green plants and vibrant flowers blossoming around it. The earth heaves a sigh, the land cracking as Atlas's might claims the path against fire, nearly reaching the sky.</desc>
+    <commander id="254" />
+    <deck>
+      <card id="8072" name="Atlas' Sage" />
+      <!-- Titan distinct card -->
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" />
+      <card id="6171" name="Kiki" />
+      <card id="6171" />
+      <card id="5059" name="Bemola" />
+      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="5023" mastery_level="3" name="Nightfall Dragon" />
+      <card id="7166" mastery_level="4" name="Rejuvenation Acolyte" />
+      <card id="4000" mastery_level="5" name="Noctrus Flintclaw" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="7110" mastery_level="7" name="Toxin Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6288</id>
+    <name>Aether</name>
+    <energy>9</energy>
+    <desc>Solaron's form stands twisted before you, when a memory comes unbidden into your mind: Fierce winds wearing down the tallest of mountains, grinding it down through the passage of time until nothing but dust remains. Clouds swell until they burst with rain, claiming the sky as home.</desc>
+    <commander id="255" />
+    <deck>
+      <card id="8080" name="Solaron's Gust" />
+      <!-- Titan distinct card -->
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" />
+      <card id="6171" name="Kiki" />
+      <card id="6171" />
+      <card id="5059" name="Bemola" />
+      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="5023" mastery_level="3" name="Nightfall Dragon" />
+      <card id="7166" mastery_level="4" name="Rejuvenation Acolyte" />
+      <card id="4000" mastery_level="5" name="Noctrus Flintclaw" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="7110" mastery_level="7" name="Toxin Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6289</id>
+    <name>Chaos</name>
+    <energy>9</energy>
+    <desc>Vulcanos's form stands twisted before you, when a memory comes unbidden into your mind: Raging fire consumes the forests, dark smoke overtaking the white clouds. The flames claim all that they touch, burning those considered unworthy.</desc>
+    <commander id="256" />
+    <deck>
+      <card id="8010" name="Vulcanos' Skeleton" />
+      <!-- Titan distinct card -->
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" />
+      <card id="6171" name="Kiki" />
+      <card id="6171" />
+      <card id="5059" name="Bemola" />
+      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="5023" mastery_level="3" name="Nightfall Dragon" />
+      <card id="7166" mastery_level="4" name="Rejuvenation Acolyte" />
+      <card id="4000" mastery_level="5" name="Noctrus Flintclaw" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="7110" mastery_level="7" name="Toxin Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6290</id>
+    <name>Void</name>
+    <energy>9</energy>
+    <desc>An unclear shadow stands before you, when a memory comes unbidden into your mind: the people caught in this maelstrom of elements cry out for peace. The dream grows in their hearts, larger and larger, until the dream realizes itself. It will take away the elements. It will bring harmony...</desc>
+    <commander id="215" />
+    <deck>
+      <card id="8074" name="Vorpal Frostscale" />
+      <!-- Titan distinct card -->
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" />
+      <card id="6171" name="Kiki" />
+      <card id="6171" />
+      <card id="5059" name="Bemola" />
+      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="5023" mastery_level="3" name="Nightfall Dragon" />
+      <card id="7166" mastery_level="4" name="Rejuvenation Acolyte" />
+      <card id="4000" mastery_level="5" name="Noctrus Flintclaw" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="7110" mastery_level="7" name="Toxin Glider" />
+    </deck>
+  </mission>
 </root>
 

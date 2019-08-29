@@ -31531,5 +31531,140 @@
       <skill id="daze" x="14" />
     </upgrade>
   </unit>
+  <!-- 7245 "Tropical Avian & Goblin Tamer" Replace here -->
+  <!-- 7246 "Avian Snow Shaman" Replace here -->
+  <unit>
+    <id>7247</id>
+    <card_type>2</card_type>
+    <name>Timberglide Striker</name>
+    <picture>Avian_Mecha_Cyborg_A</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1567443600</hidden_until_time>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="armored" x="3" />
+    <skill id="fervor" x="4" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17247</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Timberglide Ace</name>
+    <picture>Avian_Mecha_Cyborg_A</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1567443600</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="armored" x="4" />
+    <skill id="fervor" x="5" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="5" />
+      <skill id="fervor" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="5" />
+      <skill id="fervor" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27247</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Timberglide Captain</name>
+    <picture>Avian_Mecha_Cyborg_B</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1567443600</hidden_until_time>
+    <attack>9</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="armored" x="5" />
+    <skill id="fervor" x="6" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="armored" x="5" />
+      <skill id="fervor" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="armored" x="6" />
+      <skill id="fervor" x="7" />
+    </upgrade>
+  </unit>
 </root>
 
