@@ -24150,6 +24150,137 @@ var CARDS = {
 			}
 		}
 	},
+	"438": {
+		"card_type": "1",
+		"health": 91,
+		"id": "438",
+		"maxLevel": 6,
+		"name": "Memory",
+		"picture": "portrait_emeraldwolf",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -107947,7 +108078,8 @@ var CARDS = {
 			},
 			{
 				"id": "fervor",
-				"x": 4
+				"x": 4,
+				"y": "3"
 			}
 		],
 		"sub_type": [
@@ -107980,7 +108112,8 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 4
+						"x": 4,
+						"y": "3"
 					}
 				]
 			},
@@ -107996,7 +108129,8 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 5
+						"x": 5,
+						"y": "3"
 					}
 				]
 			}
@@ -202608,7 +202742,8 @@ var CARDS = {
 			},
 			{
 				"id": "fervor",
-				"x": 5
+				"x": 5,
+				"y": "3"
 			}
 		],
 		"sub_type": [
@@ -202629,7 +202764,8 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 5
+						"x": 5,
+						"y": "3"
 					}
 				]
 			},
@@ -202653,7 +202789,8 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 5
+						"x": 5,
+						"y": "3"
 					}
 				]
 			},
@@ -202669,7 +202806,8 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 6
+						"x": 6,
+						"y": "3"
 					}
 				]
 			}
@@ -283053,7 +283191,8 @@ var CARDS = {
 			},
 			{
 				"id": "fervor",
-				"x": 6
+				"x": 6,
+				"y": "3"
 			}
 		],
 		"sub_type": [
@@ -283086,7 +283225,8 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 6
+						"x": 6,
+						"y": "3"
 					}
 				]
 			},
@@ -283102,7 +283242,8 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 7
+						"x": 7,
+						"y": "3"
 					}
 				]
 			}

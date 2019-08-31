@@ -7449,8 +7449,8 @@
 		<type>2</type>
 		<icon id='gem_Boss_LG' bundle='0' />
 		<campaign_req id='1218' level='1' />
-		<locked_start_time>1567702800</locked_start_time>  |  Thursday, 5 September 2019 17:00:00 |
-		<battleground_id>2075</battleground_id>
+		<locked_start_time>1567702800</locked_start_time>  |  Thursday, 5 September 2019 17:00:00  |
+		<battleground_id>2076</battleground_id>
 		<location_id>24</location_id>
 		<show_level>1</show_level>
 		<show_ranking>1</show_ranking>
@@ -7467,12 +7467,12 @@
 			<card level='1' id='511' />
 			<card level='2' id='512' />
 			<card level='3' id='512' />
-			<item level='4' id='3100' /> | Dragon Breath Crystal |
-			<item level='5' id='3100' /> | Dragon Breath Crystal |
-			<item level='6' id='3100' /> | Dragon Breath Crystal |
-			<item level='7' id='3100' /> | Dragon Breath Crystal |
+			<item level='4' id='3099' /> | Whitesail's Spellstone  | 
+			<item level='5' id='3099' /> |  Whitesail's Spellstone  | 
+			<item level='6' id='3099' /> |  Whitesail's Spellstone  | 
+			<item level='7' id='3099' /> |  Whitesail's Spellstone  | 
 		</rewards>
-		<find_item id='3098' drop_per_energy='.4' /> | Pillar Soul |
+		<find_item id='3098' drop_per_energy='.4' /> |  Pillar Soul  | 
 	</campaign>
 -->
   <!-- ================================== Campaign Event 18 End ================================== -->

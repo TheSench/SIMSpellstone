@@ -40087,8 +40087,8 @@
     <id>6287</id>
     <name>Wyld</name>
     <energy>9</energy>
-    <desc>Atlas's form stands twisted before you, when a memory comes unbidden into your mind: A mighty tree rises from the earth, green plants and vibrant flowers blossoming around it. The earth heaves a sigh, the land cracking as Atlas's might claims the path against fire, nearly reaching the sky.</desc>
-    <commander id="254" />
+    <desc>Atlas stands twisted before you as it's memories breach your mind: A great tree rises from the earth, vibrant plants and flowers blossoming around it. The land heaves a sigh, as Atlas claims the path against fire, nearly reaching the sky.</desc>
+    <commander id="438" />
     <deck>
       <card id="8072" name="Atlas' Sage" />
       <!-- Titan distinct card -->
@@ -40113,7 +40113,7 @@
     <name>Aether</name>
     <energy>9</energy>
     <desc>Solaron's form stands twisted before you, when a memory comes unbidden into your mind: Fierce winds wearing down the tallest of mountains, grinding it down through the passage of time until nothing but dust remains. Clouds swell until they burst with rain, claiming the sky as home.</desc>
-    <commander id="255" />
+    <commander id="438" />
     <deck>
       <card id="8080" name="Solaron's Gust" />
       <!-- Titan distinct card -->
@@ -40138,7 +40138,7 @@
     <name>Chaos</name>
     <energy>9</energy>
     <desc>Vulcanos's form stands twisted before you, when a memory comes unbidden into your mind: Raging fire consumes the forests, dark smoke overtaking the white clouds. The flames claim all that they touch, burning those considered unworthy.</desc>
-    <commander id="256" />
+    <commander id="438" />
     <deck>
       <card id="8010" name="Vulcanos' Skeleton" />
       <!-- Titan distinct card -->
@@ -40163,7 +40163,7 @@
     <name>Void</name>
     <energy>9</energy>
     <desc>An unclear shadow stands before you, when a memory comes unbidden into your mind: the people caught in this maelstrom of elements cry out for peace. The dream grows in their hearts, larger and larger, until the dream realizes itself. It will take away the elements. It will bring harmony...</desc>
-    <commander id="215" />
+    <commander id="438" />
     <deck>
       <card id="8074" name="Vorpal Frostscale" />
       <!-- Titan distinct card -->

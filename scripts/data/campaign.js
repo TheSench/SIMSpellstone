@@ -90824,7 +90824,7 @@ var MISSIONS = {
 	},
 	"6287": {
 		"commander": {
-			"id": "254"
+			"id": "438"
 		},
 		"deck": [
 			{
@@ -90884,7 +90884,7 @@ var MISSIONS = {
 	},
 	"6288": {
 		"commander": {
-			"id": "255"
+			"id": "438"
 		},
 		"deck": [
 			{
@@ -90944,7 +90944,7 @@ var MISSIONS = {
 	},
 	"6289": {
 		"commander": {
-			"id": "256"
+			"id": "438"
 		},
 		"deck": [
 			{
@@ -91004,7 +91004,7 @@ var MISSIONS = {
 	},
 	"6290": {
 		"commander": {
-			"id": "215"
+			"id": "438"
 		},
 		"deck": [
 			{

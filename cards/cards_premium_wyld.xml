@@ -31546,7 +31546,7 @@
     <rarity>4</rarity>
     <skill id="evade" x="1" />
     <skill id="armored" x="3" />
-    <skill id="fervor" x="4" />
+    <skill id="fervor" x="4" y="3" />
     <type>3</type>
     <sub_type>10</sub_type>
     <sub_type>16</sub_type>
@@ -31567,13 +31567,13 @@
       <level>5</level>
       <skill id="evade" x="1" />
       <skill id="armored" x="4" />
-      <skill id="fervor" x="4" />
+      <skill id="fervor" x="4" y="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="evade" x="1" />
       <skill id="armored" x="4" />
-      <skill id="fervor" x="5" />
+      <skill id="fervor" x="5" y="3" />
     </upgrade>
   </unit>
   <unit>
@@ -31590,7 +31590,7 @@
     <rarity>4</rarity>
     <skill id="evade" x="1" />
     <skill id="armored" x="4" />
-    <skill id="fervor" x="5" />
+    <skill id="fervor" x="5" y="3" />
     <type>3</type>
     <sub_type>10</sub_type>
     <sub_type>16</sub_type>
@@ -31599,7 +31599,7 @@
       <level>2</level>
       <skill id="evade" x="2" />
       <skill id="armored" x="4" />
-      <skill id="fervor" x="5" />
+      <skill id="fervor" x="5" y="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -31613,13 +31613,13 @@
       <level>5</level>
       <skill id="evade" x="2" />
       <skill id="armored" x="5" />
-      <skill id="fervor" x="5" />
+      <skill id="fervor" x="5" y="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="evade" x="2" />
       <skill id="armored" x="5" />
-      <skill id="fervor" x="6" />
+      <skill id="fervor" x="6" y="3" />
     </upgrade>
   </unit>
   <unit>
@@ -31636,7 +31636,7 @@
     <rarity>4</rarity>
     <skill id="evade" x="2" />
     <skill id="armored" x="5" />
-    <skill id="fervor" x="6" />
+    <skill id="fervor" x="6" y="3" />
     <type>3</type>
     <sub_type>10</sub_type>
     <sub_type>16</sub_type>
@@ -31657,13 +31657,13 @@
       <level>5</level>
       <skill id="evade" x="3" />
       <skill id="armored" x="5" />
-      <skill id="fervor" x="6" />
+      <skill id="fervor" x="6" y="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="evade" x="3" />
       <skill id="armored" x="6" />
-      <skill id="fervor" x="7" />
+      <skill id="fervor" x="7" y="3" />
     </upgrade>
   </unit>
 </root>
