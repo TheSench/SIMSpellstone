@@ -5903,5 +5903,22 @@
       <card min_level="1" max_level="1" unit_id="6098" display_card_id="6098" />
     </cards>
   </store_item>
+  <store_item>
+    <id>5150</id>
+    <name>Limitless Windsoul Stockpile!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>210</priority>
+    <desc>Gives 200 ^cCC1FWindsouls^cFFFF! May be purchased an unlimited amount of times!</desc>
+    <asset_prefab>windsoul_box</asset_prefab>
+    <!-- <background_prefab>event_016_banner_epic4x</background_prefab> -->
+    <bundle>35</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <item id="2524" quantity="200" />
+  </store_item>
 </root>
 

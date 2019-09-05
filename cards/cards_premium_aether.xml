@@ -31009,5 +31009,134 @@
       <skill id="weaken" x="7" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5243</id>
+    <card_type>2</card_type>
+    <name>Condor Ally</name>
+    <picture>Avian_Runic_Familiar_A</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1567702800</hidden_until_time>
+    <attack>0</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="backlash" x="2" />
+    <skill id="rally" x="8" y="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="6" />
+      <skill id="backlash" x="2" />
+      <skill id="rally" x="9" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>12</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15243</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Condor Companion</name>
+    <picture>Avian_Runic_Familiar_A</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1567702800</hidden_until_time>
+    <attack>0</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="backlash" x="2" />
+    <skill id="rally" x="9" y="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="6" />
+      <skill id="backlash" x="2" />
+      <skill id="rally" x="10" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="2" />
+      <skill id="rally" x="10" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="3" />
+      <skill id="rally" x="10" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25243</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Condor Familiar</name>
+    <picture>Avian_Runic_Familiar_B</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1567702800</hidden_until_time>
+    <attack>0</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="backlash" x="3" />
+    <skill id="rally" x="11" y="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="3" />
+      <skill id="rally" x="12" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="8" />
+      <skill id="backlash" x="4" />
+      <skill id="rally" x="12" y="1" />
+    </upgrade>
+  </unit>
+  <!-- END AETHER PREMIUM SET -->
 </root>
 

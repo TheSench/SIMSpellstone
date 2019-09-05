@@ -40087,17 +40087,17 @@
     <id>6287</id>
     <name>Wyld</name>
     <energy>9</energy>
-    <desc>Atlas stands twisted before you as it's memories breach your mind: A great tree rises from the earth, vibrant plants and flowers blossoming around it. The land heaves a sigh, as Atlas claims the path against fire, nearly reaching the sky.</desc>
+    <desc>Atlas's form stands twisted before you, when a memory comes unbidden into your mind: A mighty tree rises from the earth, green plants and vibrant flowers blossoming around it. The earth heaves a sigh, the land cracking as Atlas's might claims the path against fire and the sky.</desc>
     <commander id="438" />
     <deck>
       <card id="8072" name="Atlas' Sage" />
       <!-- Titan distinct card -->
       <card id="6174" name="Deatheye Owl" />
       <card id="6174" />
-      <card id="6171" name="Kiki" />
-      <card id="6171" />
+      <card id="5177" name="Thunderbird" />
+      <card id="6244" name="Disgraced Disciple" />
       <card id="5059" name="Bemola" />
-      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="5110" name="Alectryon" />
       <card id="6095" name="Gearplate Dragon" />
       <card id="6241" name="Grimkite Model" />
       <card id="7110" mastery_level="2" name="Toxin Glider" />
@@ -40112,17 +40112,17 @@
     <id>6288</id>
     <name>Aether</name>
     <energy>9</energy>
-    <desc>Solaron's form stands twisted before you, when a memory comes unbidden into your mind: Fierce winds wearing down the tallest of mountains, grinding it down through the passage of time until nothing but dust remains. Clouds swell until they burst with rain, claiming the sky as home.</desc>
-    <commander id="438" />
+    <desc>Solaron's form stands twisted before you, when a memory comes unbidden into your mind: Fierce winds wearing down the tallest mountains, grinding it down through the passage of time until nothing but dust remains. Clouds swell until they burst with rain, claiming earth and fire.</desc>
+    <commander id="439" />
     <deck>
       <card id="8080" name="Solaron's Gust" />
       <!-- Titan distinct card -->
       <card id="6174" name="Deatheye Owl" />
       <card id="6174" />
-      <card id="6171" name="Kiki" />
-      <card id="6171" />
+      <card id="5177" name="Thunderbird" />
+      <card id="6244" name="Disgraced Disciple" />
       <card id="5059" name="Bemola" />
-      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="5110" name="Alectryon" />
       <card id="6095" name="Gearplate Dragon" />
       <card id="6241" name="Grimkite Model" />
       <card id="7110" mastery_level="2" name="Toxin Glider" />
@@ -40137,17 +40137,17 @@
     <id>6289</id>
     <name>Chaos</name>
     <energy>9</energy>
-    <desc>Vulcanos's form stands twisted before you, when a memory comes unbidden into your mind: Raging fire consumes the forests, dark smoke overtaking the white clouds. The flames claim all that they touch, burning those considered unworthy.</desc>
-    <commander id="438" />
+    <desc>Vulcanos's form stands twisted before you, when a memory comes unbidden into your mind: Raging fire consumes the forests, dark smoke overtaking the white clouds. The flames claim all that they touch, scorching the earth and smoke claiming the sky.</desc>
+    <commander id="440" />
     <deck>
-      <card id="8010" name="Vulcanos' Skeleton" />
+      <card id="8009" name="Vulcanos' Obsidian" />
       <!-- Titan distinct card -->
       <card id="6174" name="Deatheye Owl" />
       <card id="6174" />
-      <card id="6171" name="Kiki" />
-      <card id="6171" />
+      <card id="5177" name="Thunderbird" />
+      <card id="6244" name="Disgraced Disciple" />
       <card id="5059" name="Bemola" />
-      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="5110" name="Alectryon" />
       <card id="6095" name="Gearplate Dragon" />
       <card id="6241" name="Grimkite Model" />
       <card id="7110" mastery_level="2" name="Toxin Glider" />
@@ -40162,17 +40162,17 @@
     <id>6290</id>
     <name>Void</name>
     <energy>9</energy>
-    <desc>An unclear shadow stands before you, when a memory comes unbidden into your mind: the people caught in this maelstrom of elements cry out for peace. The dream grows in their hearts, larger and larger, until the dream realizes itself. It will take away the elements. It will bring harmony...</desc>
-    <commander id="438" />
+    <desc>An unclear shadow stands before you, when a memory comes unbidden into your mind: the people caught in this maelstrom of elements cry for peace. The dream grows in their hearts, larger and larger, until the dream realizes itself. It will take away the elements. It will bring harmony...</desc>
+    <commander id="441" />
     <deck>
       <card id="8074" name="Vorpal Frostscale" />
       <!-- Titan distinct card -->
       <card id="6174" name="Deatheye Owl" />
       <card id="6174" />
-      <card id="6171" name="Kiki" />
-      <card id="6171" />
+      <card id="5177" name="Thunderbird" />
+      <card id="6244" name="Disgraced Disciple" />
       <card id="5059" name="Bemola" />
-      <card id="4000" name="Noctrus Flintclaw" />
+      <card id="5110" name="Alectryon" />
       <card id="6095" name="Gearplate Dragon" />
       <card id="6241" name="Grimkite Model" />
       <card id="7110" mastery_level="2" name="Toxin Glider" />

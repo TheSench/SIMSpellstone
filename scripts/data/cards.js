@@ -24155,8 +24155,401 @@ var CARDS = {
 		"health": 91,
 		"id": "438",
 		"maxLevel": 6,
-		"name": "Memory",
-		"picture": "portrait_emeraldwolf",
+		"name": "Memory of Wyld",
+		"picture": "portrait_wyldguardian",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"439": {
+		"card_type": "1",
+		"health": 91,
+		"id": "439",
+		"maxLevel": 6,
+		"name": "Memory of Aether",
+		"picture": "portrait_aetherguardian",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"440": {
+		"card_type": "1",
+		"health": 91,
+		"id": "440",
+		"maxLevel": 6,
+		"name": "Memory of Chaos",
+		"picture": "portrait_chaosguardian",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"441": {
+		"card_type": "1",
+		"health": 91,
+		"id": "441",
+		"maxLevel": 6,
+		"name": "Memory of Void",
+		"picture": "portrait_void",
 		"rarity": 4,
 		"set": "9999",
 		"skill": [
@@ -67329,6 +67722,73 @@ var CARDS = {
 			}
 		}
 	},
+	"5243": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 1,
+		"health": 8,
+		"hidden_until": "1567702800000",
+		"id": "5243",
+		"maxLevel": 6,
+		"name": "Condor Ally",
+		"picture": "Avian_Runic_Familiar_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "rally",
+				"x": 8,
+				"y": "1"
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 10,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "1"
+					}
+				]
+			},
+			"5": {
+				"health": 11,
+				"skill": []
+			},
+			"6": {
+				"health": 12,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -87740,6 +88200,89 @@ var CARDS = {
 			}
 		}
 	},
+	"6245": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1568048400000",
+		"id": "6245",
+		"maxLevel": 6,
+		"name": "Crimsonwing Initiate",
+		"picture": "Avian_Voodoo_Bird_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"id": "enrage",
+				"x": 5,
+				"y": "10"
+			},
+			{
+				"id": "poison",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "enrage",
+						"x": 6,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 24,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "enrage",
+						"x": 6,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"skill": []
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -108052,6 +108595,76 @@ var CARDS = {
 						"x": 10
 					}
 				]
+			}
+		}
+	},
+	"7245": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 20,
+		"hidden_until": "1567702800000",
+		"id": "7245",
+		"maxLevel": 6,
+		"name": "Ogrot Tamer",
+		"picture": "Avain_Goblin_Tropical_Tamer_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 5,
+				"y": "11"
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"10",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 21,
+				"skill": []
+			},
+			"3": {
+				"health": 22,
+				"skill": []
+			},
+			"4": {
+				"health": 23,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "11"
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 24,
+				"skill": []
 			}
 		}
 	},
@@ -161930,6 +162543,99 @@ var CARDS = {
 			}
 		}
 	},
+	"15243": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1567702800000",
+		"id": "15243",
+		"maxLevel": 6,
+		"name": "Condor Companion",
+		"picture": "Avian_Runic_Familiar_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "rally",
+				"x": 9,
+				"y": "1"
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "1"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "1"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "1"
+					}
+				]
+			},
+			"5": {
+				"health": 14,
+				"skill": []
+			},
+			"6": {
+				"health": 15,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -181937,6 +182643,117 @@ var CARDS = {
 			"6": {
 				"health": 26,
 				"skill": []
+			}
+		}
+	},
+	"16245": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1568048400000",
+		"id": "16245",
+		"maxLevel": 6,
+		"name": "Crimsonwing Adept",
+		"picture": "Avian_Voodoo_Bird_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"id": "enrage",
+				"x": 6,
+				"y": "10"
+			},
+			{
+				"id": "poison",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "enrage",
+						"x": 6,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "enrage",
+						"x": 7,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"health": 26,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "enrage",
+						"x": 7,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "enrage",
+						"x": 8,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
 			}
 		}
 	},
@@ -202714,6 +203531,104 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 12
+					}
+				]
+			}
+		}
+	},
+	"17245": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1567702800000",
+		"id": "17245",
+		"maxLevel": 6,
+		"name": "Ogrot Raider",
+		"picture": "Avain_Goblin_Tropical_Tamer_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 6,
+				"y": "11"
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"10",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "11"
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "11"
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 25,
+				"skill": []
+			},
+			"5": {
+				"health": 26,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "11"
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 5
 					}
 				]
 			}
@@ -242370,6 +243285,86 @@ var CARDS = {
 			}
 		}
 	},
+	"25243": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1567702800000",
+		"id": "25243",
+		"maxLevel": 6,
+		"name": "Condor Familiar",
+		"picture": "Avian_Runic_Familiar_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "rally",
+				"x": 11,
+				"y": "1"
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"health": 17,
+				"skill": []
+			},
+			"4": {
+				"health": 18,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 12,
+						"y": "1"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 12,
+						"y": "1"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -262250,6 +263245,103 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"26245": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1568048400000",
+		"id": "26245",
+		"maxLevel": 6,
+		"name": "Crimsonwing Fanatic",
+		"picture": "Avian_Voodoo_Bird_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			},
+			{
+				"id": "enrage",
+				"x": 8,
+				"y": "10"
+			},
+			{
+				"id": "poison",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "enrage",
+						"x": 8,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "enrage",
+						"x": 8,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "enrage",
+						"x": 9,
+						"y": "10"
+					},
+					{
+						"id": "poison",
+						"x": 9
 					}
 				]
 			}
@@ -283163,6 +284255,90 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 14
+					}
+				]
+			}
+		}
+	},
+	"27245": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1567702800000",
+		"id": "27245",
+		"maxLevel": 6,
+		"name": "Ogrot Amazon",
+		"picture": "Avain_Goblin_Tropical_Tamer_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 7,
+				"y": "11"
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"10",
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 28,
+				"skill": []
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"health": 29,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "11"
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 8,
+						"y": "11"
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 6
 					}
 				]
 			}

@@ -2566,6 +2566,7 @@
     </effect>
   </battleground>
   <!-- Campaign Event 18 weeks 1-4 -->
+  <!-- Universal EBGE weejs 1-4 Setup -->
   <battleground>
     <id>2075</id>
     <name>Enemy Anthem</name>
@@ -2587,7 +2588,7 @@
     <id>2076</id>
     <name>Powerful Foe Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_dragon_64</icon>
+    <icon>filter_avian_64.png</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -2595,6 +2596,39 @@
     <!-- Starting Mastery Level -->
     <effect>
       <scale_attributes base_mult=".3" mult=".01" />
+    </effect>
+  </battleground>
+  <!-- Universal EBGE weeks 5-8 -->
+  <battleground>
+    <id>2077</id>
+    <name>Enemy Anthem</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_avian_64.png</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2078</id>
+    <name>Enemy Anthem</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_avian_64.png</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".05" />
     </effect>
   </battleground>
   <!-- ==================== -->

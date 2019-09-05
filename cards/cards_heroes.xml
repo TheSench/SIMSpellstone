@@ -10691,8 +10691,152 @@
   <unit>
     <id>438</id>
     <card_type>1</card_type>
-    <name>Memory</name>
-    <portrait>Portrait_emeraldwolf</portrait>
+    <name>Memory of Wyld</name>
+    <portrait>wyldguardian</portrait>
+    <health>91</health>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" all="1" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>92</health>
+      <skill id="rally" x="4" all="1" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="rally" x="4" all="1" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>96</health>
+      <skill id="rally" x="5" all="1" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="rally" x="5" all="1" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="rally" x="6" all="1" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>439</id>
+    <card_type>1</card_type>
+    <name>Memory of Aether</name>
+    <portrait>aetherguardian</portrait>
+    <health>91</health>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" all="1" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>92</health>
+      <skill id="rally" x="4" all="1" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="rally" x="4" all="1" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>96</health>
+      <skill id="rally" x="5" all="1" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="rally" x="5" all="1" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="rally" x="6" all="1" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>440</id>
+    <card_type>1</card_type>
+    <name>Memory of Chaos</name>
+    <portrait>chaosguardian</portrait>
+    <health>91</health>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" all="1" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>92</health>
+      <skill id="rally" x="4" all="1" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="rally" x="4" all="1" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>96</health>
+      <skill id="rally" x="5" all="1" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="rally" x="5" all="1" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="rally" x="6" all="1" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>441</id>
+    <card_type>1</card_type>
+    <name>Memory of Void</name>
+    <portrait>void</portrait>
     <health>91</health>
     <rarity>4</rarity>
     <skill id="rally" x="3" all="1" />
