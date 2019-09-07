@@ -40183,5 +40183,429 @@
       <card id="7110" mastery_level="7" name="Toxin Glider" />
     </deck>
   </mission>
+  <!-- Event 18 Node 3 -->
+  <mission>
+    <id>6275</id>
+    <name>The Void's Entity</name>
+    <energy>18</energy>
+    <desc>Aria is not about to let a stranger claim victory over Bluefire when you've already received that honor. However if Vel is to believed, then The Void is something greater than one figurehead...</desc>
+    <commander id="304" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6054" />
+      <card id="6056" name="Potoo" />
+      <card id="6056" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="6158" name="Orbos" />
+      <card id="6208" name="Iron Hammer" />
+      <card id="6158" mastery_level="2" name="Orbos" />
+      <card id="6208" mastery_level="3" name="Iron Hammer" />
+      <card id="2042" mastery_level="4" name="Carrion Hunter" />
+      <card id="1345" mastery_level="5" name="Owltron" />
+      <card id="6231" mastery_level="6" name="Firemouth Moth" />
+      <card id="6167" mastery_level="7" name="Macabre Machine" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Sorry to break it to you, but we've already defeated Bluefire.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>The Void has been sealed.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Bluefire might be defeated, but The Void is much greater than a single dragon.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6276</id>
+    <name>Greatest Foe</name>
+    <energy>18</energy>
+    <desc>Vel explains the source of The Void. Although The Void hadn't always existed in the world, it had come from somewhere... it had leaked in to the normal plane of reality.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="2124" mastery_level="2" name="Bulbscale Construct" />
+      <card id="2163" mastery_level="3" name="Ringwing Fulminator" />
+      <card id="1034" mastery_level="4" name="Winged Warrior" />
+      <card id="5195" mastery_level="5" name="Owlnaut Z-3" />
+      <card id="5177" mastery_level="6" name="Thunderbird" />
+      <card id="5196" mastery_level="7" name="Deca-mecha" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>What do you mean?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>This place's existence is proof enough.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>The Void isn't an entity, but a concept. It still exists here...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Its source is our dreams.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6277</id>
+    <name>Another Void Prisoner</name>
+    <energy>18</energy>
+    <desc>A proper full explanation would take too much time. Vel tries to explain it in a way that you and Aria would be able to grasp quickly.</desc>
+    <commander id="387" />
+    <deck>
+      <card id="8074" name="Vorpal Frostscale" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7029" />
+      <card id="5114" name="Wingward" />
+      <card id="6158" name="Orbos" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="6158" mastery_level="2" name="Orbos" />
+      <card id="2128" mastery_level="3" name="Stilt-walker Sentinel" />
+      <card id="5114" mastery_level="4" name="Wingward" />
+      <card id="5195" mastery_level="5" name="Owlnaut Z-3" />
+      <card id="6171" mastery_level="6" name="Kiki" />
+      <card id="6241" mastery_level="7" name="Grimkite Model" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You are making my head hurt.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Haha...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>In short, there is still a remnant left to free from The Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6278</id>
+    <name>Abyss Cursed</name>
+    <energy>18</energy>
+    <desc>The Void has touched more than just individuals. Vel explains her reason for coming into The Abyss...</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1317" name="Fire Imp" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2109" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="2042" mastery_level="4" name="Carrion Hunter" />
+      <card id="6174" mastery_level="5" name="Deatheye Owl" />
+      <card id="6173" mastery_level="6" name="Toxophilite Watcher" />
+      <card id="6190" mastery_level="7" name="Twinblast" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Anything touched by The Abyss is cursed. Not just me, but the founding pillars of our world.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6279</id>
+    <name>World's Foundation</name>
+    <energy>18</energy>
+    <desc>When it comes to magic, Aria can at least follow along. The three of you begin traveling through The Abyss, fending off stray monsters.</desc>
+    <commander id="384" />
+    <deck>
+      <card id="8093" name="Prototype Titan" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2109" />
+      <card id="6172" name="Steel Plover" />
+      <card id="6172" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6159" name="Solder Charger" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="6159" mastery_level="3" name="Solder Charger" />
+      <card id="2125" mastery_level="4" name="Fowl Page Bezoar" />
+      <card id="5034" mastery_level="5" name="Skyward Guardian" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="5196" mastery_level="7" name="Deca-mecha" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>The founding pillars of our world would be the three factions: Aether, Chaos, and Wyld.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6280</id>
+    <name>Titan Embodiment</name>
+    <energy>18</energy>
+    <desc>The Void has claimed more than you feared. Even since before you arrived in Arcantica, The Void had claimed that which founded the world itself - the three factions.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5044" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="5114" name="Wingward" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="2127" mastery_level="2" name="RT-87 Rescinder" />
+      <card id="2163" mastery_level="3" name="Ringwing Fulminator" />
+      <card id="5114" mastery_level="4" name="Wingward" />
+      <card id="5195" mastery_level="5" name="Owlnaut Z-3" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5131" mastery_level="7" name="Steelscale, Sky's Domain" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Yes. The spirits of Solaron, Vulcanos, and Atlas reside here...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>The embodiments of the three factions.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 18 Node 4 -->
+  <mission>
+    <id>6281</id>
+    <name>Unleashing the Elements' Aftermath</name>
+    <energy>18</energy>
+    <desc>After finding and defeating the three Faction leaders, they all seem to have come to their senses. The three of them surround you, Aria and Vel, casting some kind of power.</desc>
+    <commander id="346" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5044" />
+      <card id="2081" name="Starstriker" />
+      <card id="2081" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2040" />
+      <card id="5163" name="Bark Hound" />
+      <card id="2117" name="Aero Enforcer" />
+      <card id="5163" mastery_level="2" name="Bark Hound" />
+      <card id="2117" mastery_level="3" name="Aero Enforcer" />
+      <card id="2083" mastery_level="4" name="Habrok, the Lance" />
+      <card id="5104" mastery_level="5" name="Pisces" />
+      <card id="5014" mastery_level="6" name="Winged Raptor" />
+      <card id="5079" mastery_level="7" name="Cyclopnid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>It's done. The Factions are finally, truly free.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6282</id>
+    <name>Titans' Parting Gift</name>
+    <energy>18</energy>
+    <desc>Each of the three titans radiate their own aura - Vulcanos's fire, Atlas's earth, and Solaron's wind. The three magical energies combine, surrounding the three of you.</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="6158" name="Orbos" />
+      <card id="6158" />
+      <card id="6056" name="Potoo" />
+      <card id="6056" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2042" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="6173" mastery_level="4" name="Toxophilite Watcher" />
+      <card id="6170" mastery_level="5" name="Ostromech Stepclaw" />
+      <card id="6174" mastery_level="6" name="Deatheye Owl" />
+      <card id="6193" mastery_level="7" name="Scorpio Stinger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Look at that power. What are they doing?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>They're sending us home.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6283</id>
+    <name>Another Void Prisoner</name>
+    <energy>18</energy>
+    <desc>When the energy finally goes away, you find yourself back in the Salt Wastes. Alongside you are Aria and Vel.</desc>
+    <commander id="355" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" />
+      <card id="2081" name="Starstriker" />
+      <card id="2081" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2127" mastery_level="2" name="RT-87 Rescinder" />
+      <card id="5161" mastery_level="3" name="Bolster Bot" />
+      <card id="5047" mastery_level="4" name="Sky Fisher" />
+      <card id="2068" mastery_level="5" name="Whitesail Wyvern" />
+      <card id="5175" mastery_level="6" name="Spirit of Cygnus" />
+      <card id="5142" mastery_level="7" name="Buzzblade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>It seems we've succeeded but failed. The Void has been resealed, but we've come back with the Hero we were trying to stop!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6284</id>
+    <name>Abyss Cursed</name>
+    <energy>18</energy>
+    <desc>Thankfully Vel seems to have kept her mind after the travel. No longer cursed by The Abyss, it seems like change is on the horizon for Arcantica.</desc>
+    <commander id="384" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="2165" name="Twinclaw Rogue" />
+      <card id="2165" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="2125" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2143" name="Lightning Stomper" />
+      <card id="2129" mastery_level="2" name="Pharos Guardian" />
+      <card id="2143" mastery_level="3" name="Lightning Stomper" />
+      <card id="1345" mastery_level="4" name="Owltron" />
+      <card id="2068" mastery_level="5" name="Whitesail Wyvern" />
+      <card id="5014" mastery_level="6" name="Winged Raptor" />
+      <card id="8099" mastery_level="7" name="Prototype Cybot Beta" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Have no fear. My mind has been cleared, and my followers will have forgotten everything they did while under The Void's influence.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6285</id>
+    <name>World's Foundation</name>
+    <energy>18</energy>
+    <desc>Vel is no longer leader of the Crimsonwings. With The Void and The Abyss fully being sealed, she has become just another adventurer, like you.</desc>
+    <commander id="387" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="7161" name="Alphamecha" />
+      <card id="7161" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2042" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2117" name="Aero Enforcer" />
+      <card id="2127" mastery_level="2" name="RT-87 Rescinder" />
+      <card id="2117" mastery_level="3" name="Aero Enforcer" />
+      <card id="5034" mastery_level="4" name="Skyward Guardian" />
+      <card id="6170" mastery_level="5" name="Ostromech Stepclaw" />
+      <card id="5014" mastery_level="6" name="Winged Raptor" />
+      <card id="5164" mastery_level="7" name="Chromium Centaur" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I doubt they'd even remember who I am. But that's fine.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6286</id>
+    <name>Titan Embodiment</name>
+    <energy>18</energy>
+    <desc>With her newfound freedom, Vel has plans to travel the world. She bids you and Aria farewell, wishing the best for the world.</desc>
+    <commander id="437" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="7161" name="Alphamecha" />
+      <card id="7161" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="5060" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2042" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="1033" mastery_level="3" name="Valiant Charger" />
+      <card id="6170" mastery_level="4" name="Ostromech Stepclaw" />
+      <card id="5110" mastery_level="5" name="Alectryon" />
+      <card id="5014" mastery_level="6" name="Winged Raptor" />
+      <card id="5079" mastery_level="7" name="Cyclopnid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>The world will no doubt change after today, but I believe you're more than capable of handling it.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>As for me, I have a promise I still need to fulfill. I'm sure we'll meet again in the future.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

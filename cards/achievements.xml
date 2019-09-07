@@ -11377,6 +11377,77 @@
       <item id="8019" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 18 weeks 5-8 -->
+  <achievement>
+    <id>3503</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Hero's Goal</name>
+    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 1.</desc>
+    <mission_req>6275</mission_req>
+    <locked_start_time>1568912400</locked_start_time>
+    <!--  Thursday, 19 September 2019 17:00:00 -->
+    <req>
+      <campaign>1220</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3098" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7050" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3504</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Hero's Goal</name>
+    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 2.</desc>
+    <mission_req>6275</mission_req>
+    <locked_start_time>1568912400</locked_start_time>
+    <!--  Thursday, 19 September 2019 17:00:00 -->
+    <req>
+      <campaign>1220</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3505</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Hero's Goal</name>
+    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 4.</desc>
+    <mission_req>6275</mission_req>
+    <locked_start_time>1568912400</locked_start_time>
+    <!--  Thursday, 19 September 2019 17:00:00 -->
+    <req>
+      <campaign>1220</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3506</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Hero's Goal</name>
+    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 6.</desc>
+    <mission_req>6275</mission_req>
+    <locked_start_time>1568912400</locked_start_time>
+    <!--  Thursday, 19 September 2019 17:00:00 -->
+    <req>
+      <campaign>1220</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -11762,8 +11833,11 @@
       <campaign>1218</campaign>
       <!-- 2nd node -->
       <campaign>1219</campaign>
+      <!-- Boss node -->
       <campaign>1220</campaign>
+      <!-- 3rd node -->
       <campaign>1221</campaign>
+      <!-- 4th node -->
       <level>7</level>
     </req>
     <reward>
