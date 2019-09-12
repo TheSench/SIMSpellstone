@@ -67789,6 +67789,84 @@ var CARDS = {
 			}
 		}
 	},
+	"5244": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1568653200000",
+		"id": "5244",
+		"maxLevel": 6,
+		"name": "Mutant Scaupus",
+		"picture": "Avian_Seafolk_Octo_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "counter",
+				"x": 6
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"10",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 33,
+				"skill": []
+			},
+			"4": {
+				"attack": 13,
+				"skill": []
+			},
+			"5": {
+				"health": 34,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -108664,6 +108742,59 @@ var CARDS = {
 			},
 			"6": {
 				"health": 24,
+				"skill": []
+			}
+		}
+	},
+	"7246": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 6,
+		"hidden_until": "1568307600000",
+		"id": "7246",
+		"maxLevel": 6,
+		"name": "Snowfall Dancer",
+		"picture": "Avian_Snow_Shaman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "frost",
+				"x": 1
+			},
+			{
+				"id": "frost",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 9,
+				"skill": []
+			},
+			"5": {
+				"health": 10,
+				"skill": []
+			},
+			"6": {
+				"attack": 3,
 				"skill": []
 			}
 		}
@@ -162636,6 +162767,96 @@ var CARDS = {
 			}
 		}
 	},
+	"15244": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1568653200000",
+		"id": "15244",
+		"maxLevel": 6,
+		"name": "Menacing Scaupus",
+		"picture": "Avian_Seafolk_Octo_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"10",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 14,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 36,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -203634,6 +203855,71 @@ var CARDS = {
 			}
 		}
 	},
+	"17246": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 10,
+		"hidden_until": "1568307600000",
+		"id": "17246",
+		"maxLevel": 6,
+		"name": "Snowfall Shaman",
+		"picture": "Avian_Snow_Shaman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 1
+			},
+			{
+				"id": "frost",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 12,
+				"skill": []
+			},
+			"4": {
+				"health": 13,
+				"skill": []
+			},
+			"5": {
+				"health": 14,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 1
+					}
+				]
+			}
+		}
+	},
 	"17247": {
 		"attack": 7,
 		"card_type": "2",
@@ -243360,6 +243646,84 @@ var CARDS = {
 						"id": "rally",
 						"x": 12,
 						"y": "1"
+					}
+				]
+			}
+		}
+	},
+	"25244": {
+		"attack": 15,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1568653200000",
+		"id": "25244",
+		"maxLevel": 6,
+		"name": "Scaupus Sea God",
+		"picture": "Avian_Seafolk_Octo_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "counter",
+				"x": 8
+			},
+			{
+				"c": 2,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"10",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"attack": 16,
+				"skill": []
+			},
+			"5": {
+				"health": 39,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "counter",
+						"x": 10
+					},
+					{
+						"c": 2,
+						"id": "flurry"
 					}
 				]
 			}
@@ -284339,6 +284703,71 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"27246": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 14,
+		"hidden_until": "1568307600000",
+		"id": "27246",
+		"maxLevel": 6,
+		"name": "Snowfall Vision",
+		"picture": "Avian_Snow_Shaman_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 15,
+				"skill": []
+			},
+			"4": {
+				"health": 16,
+				"skill": []
+			},
+			"5": {
+				"health": 17,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 2
 					}
 				]
 			}

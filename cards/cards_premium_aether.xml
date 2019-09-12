@@ -31137,6 +31137,139 @@
       <skill id="rally" x="12" y="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5244</id>
+    <card_type>2</card_type>
+    <name>Mutant Scaupus</name>
+    <picture>Avian_Seafolk_Octo_A</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1568653200</hidden_until_time>
+    <attack>12</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="counter" x="6" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="4" />
+      <skill id="counter" x="6" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="4" />
+      <skill id="counter" x="7" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15244</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Menacing Scaupus</name>
+    <picture>Avian_Seafolk_Octo_A</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1568653200</hidden_until_time>
+    <attack>13</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="counter" x="7" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="5" />
+      <skill id="counter" x="7" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="5" />
+      <skill id="counter" x="8" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="6" />
+      <skill id="counter" x="8" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25244</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Scaupus Sea God</name>
+    <picture>Avian_Seafolk_Octo_B</picture>
+    <asset_bundle>168</asset_bundle>
+    <hidden_until_time>1568653200</hidden_until_time>
+    <attack>15</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="counter" x="8" />
+    <skill id="flurry" c="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="6" />
+      <skill id="counter" x="9" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>16</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="7" />
+      <skill id="counter" x="10" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 
