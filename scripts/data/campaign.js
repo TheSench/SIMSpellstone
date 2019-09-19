@@ -4143,6 +4143,40 @@ var CAMPAIGNS = {
 		],
 		"name": "Releasing the Elements"
 	},
+	"1220": {
+		"battleground_id": "2077",
+		"id": "1220",
+		"items": {
+			"3098": 0.6
+		},
+		"location_id": "24",
+		"missions": [
+			"6275",
+			"6276",
+			"6277",
+			"6278",
+			"6279",
+			"6280"
+		],
+		"name": "Hero's Goal"
+	},
+	"1221": {
+		"battleground_id": "2078",
+		"id": "1221",
+		"items": {
+			"3098": 0.8
+		},
+		"location_id": "24",
+		"missions": [
+			"6281",
+			"6282",
+			"6283",
+			"6284",
+			"6285",
+			"6286"
+		],
+		"name": "The End of an Era"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -91075,7 +91109,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6278",
-		"name": "Abyss Cursed\t"
+		"name": "Abyss Cursed"
 	},
 	"6279": {
 		"commander": {
@@ -91435,7 +91469,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6284",
-		"name": "Abyss Cursed"
+		"name": "Vel's Promise"
 	},
 	"6285": {
 		"commander": {
@@ -91495,7 +91529,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6285",
-		"name": "World's Foundation"
+		"name": "Adventure's End"
 	},
 	"6286": {
 		"commander": {
@@ -91555,7 +91589,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6286",
-		"name": "Titan Embodiment"
+		"name": "A Promise Redelivered"
 	},
 	"6287": {
 		"commander": {

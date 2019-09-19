@@ -11384,17 +11384,19 @@
     <order>101</order>
     <name>Hero's Goal</name>
     <desc>Complete the 'Hero's Goal' campaign on Mastery Level 1.</desc>
-    <mission_req>6275</mission_req>
+    <mission_req>6274</mission_req>
+    <!-- Invisible until this Mission is completed -->
     <locked_start_time>1568912400</locked_start_time>
     <!--  Thursday, 19 September 2019 17:00:00 -->
     <req>
       <campaign>1220</campaign>
+      <!-- Campaign to be completed in order to get this achievement -->
       <level>1</level>
     </req>
     <reward>
       <item id="3098" number="50" />
       <!-- Expediton Item -->
-      <event_points id="7050" number="50" />
+      <event_points id="7051" number="50" />
     </reward>
   </achievement>
   <achievement>
@@ -11403,11 +11405,15 @@
     <order>101</order>
     <name>Hero's Goal</name>
     <desc>Complete the 'Hero's Goal' campaign on Mastery Level 2.</desc>
-    <mission_req>6275</mission_req>
+    <mission_req>6274</mission_req>
+    <!-- Invisible until this Mission is completed -->
     <locked_start_time>1568912400</locked_start_time>
     <!--  Thursday, 19 September 2019 17:00:00 -->
+    <achievement_req>3503</achievement_req>
+    <!-- Achievement required to be obtained in order to see this achievement -->
     <req>
       <campaign>1220</campaign>
+      <!-- Campaign to be completed in order to get this achievement -->
       <level>2</level>
     </req>
     <reward>
@@ -11420,11 +11426,14 @@
     <order>101</order>
     <name>Hero's Goal</name>
     <desc>Complete the 'Hero's Goal' campaign on Mastery Level 4.</desc>
-    <mission_req>6275</mission_req>
+    <mission_req>6274</mission_req>
     <locked_start_time>1568912400</locked_start_time>
     <!--  Thursday, 19 September 2019 17:00:00 -->
+    <achievement_req>3504</achievement_req>
+    <!-- Achievement required to be obtained in order to see this achievement -->
     <req>
       <campaign>1220</campaign>
+      <!-- Campaign to be completed in order to get this achievement -->
       <level>4</level>
     </req>
     <reward>
@@ -11437,11 +11446,73 @@
     <order>101</order>
     <name>Hero's Goal</name>
     <desc>Complete the 'Hero's Goal' campaign on Mastery Level 6.</desc>
-    <mission_req>6275</mission_req>
+    <mission_req>6274</mission_req>
     <locked_start_time>1568912400</locked_start_time>
     <!--  Thursday, 19 September 2019 17:00:00 -->
+    <achievement_req>3505</achievement_req>
+    <!-- Achievement required to be obtained in order to see this achievement -->
     <req>
       <campaign>1220</campaign>
+      <!-- Campaign to be completed in order to get this achievement -->
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3507</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The End of an Era</name>
+    <desc>Complete the 'The End of an Era' campaign on Mastery Level 2.</desc>
+    <mission_req>6280</mission_req>
+    <!-- Invisible until this Mission is completed -->
+    <locked_start_time>1570122000</locked_start_time>
+    <!--  Thursday, 3 October 2019 17:00:00 -->
+    <req>
+      <campaign>1221</campaign>
+      <!-- Campaign to be completed in order to get this achievement -->
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3508</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The End of an Era</name>
+    <desc>Complete the 'The End of an Era' campaign on Mastery Level 4.</desc>
+    <mission_req>6280</mission_req>
+    <locked_start_time>1570122000</locked_start_time>
+    <!--  Thursday, 3 October 2019 17:00:00 -->
+    <achievement_req>3507</achievement_req>
+    <!-- Achievement required to be obtained in order to see this achievement -->
+    <req>
+      <campaign>1221</campaign>
+      <!-- Campaign to be completed in order to get this achievement -->
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3509</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The End of an Era</name>
+    <desc>Complete the 'The End of an Era' campaign on Mastery Level 6.</desc>
+    <mission_req>6280</mission_req>
+    <locked_start_time>1570122000</locked_start_time>
+    <!--  Thursday, 3 October 2019 17:00:00 -->
+    <achievement_req>3508</achievement_req>
+    <!-- Achievement required to be obtained in order to see this achievement -->
+    <req>
+      <campaign>1221</campaign>
+      <!-- Campaign to be completed in order to get this achievement -->
       <level>6</level>
     </req>
     <reward>

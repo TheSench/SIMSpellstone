@@ -6595,8 +6595,8 @@
     <picture>Corrosive_Fire_Mecha_Avian_A</picture>
     <asset_bundle>138</asset_bundle>
     <hidden_until_time>1535648400</hidden_until_time>
-    <attack>7</attack>
-    <health>26</health>
+    <attack>8</attack>
+    <health>27</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="counterburn" x="2" />
@@ -6608,16 +6608,16 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
-      <attack>8</attack>
+      <health>29</health>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>29</health>
+      <health>30</health>
       <skill id="counterburn" x="2" />
       <skill id="corrosive" x="3" />
       <skill id="nullify" x="1" />
@@ -6630,7 +6630,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>30</health>
+      <health>31</health>
       <skill id="counterburn" x="3" />
       <skill id="corrosive" x="3" />
       <skill id="nullify" x="2" />
@@ -6644,8 +6644,8 @@
     <picture>Corrosive_Fire_Mecha_Avian_A</picture>
     <asset_bundle>138</asset_bundle>
     <hidden_until_time>1535648400</hidden_until_time>
-    <attack>9</attack>
-    <health>30</health>
+    <attack>10</attack>
+    <health>31</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="counterburn" x="3" />
@@ -6657,23 +6657,23 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>31</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>33</health>
       <skill id="counterburn" x="4" />
       <skill id="corrosive" x="4" />
       <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>33</health>
-      <attack>10</attack>
+      <health>34</health>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>34</health>
+      <health>35</health>
       <skill id="counterburn" x="4" />
       <skill id="corrosive" x="5" />
       <skill id="nullify" x="2" />
@@ -6693,8 +6693,8 @@
     <picture>Corrosive_Fire_Mecha_Avian_B</picture>
     <asset_bundle>138</asset_bundle>
     <hidden_until_time>1535648400</hidden_until_time>
-    <attack>10</attack>
-    <health>35</health>
+    <attack>12</attack>
+    <health>36</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="counterburn" x="5" />
@@ -6706,23 +6706,23 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <attack>11</attack>
+      <attack>13</attack>
       <skill id="counterburn" x="5" />
       <skill id="corrosive" x="6" />
       <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>36</health>
+      <health>37</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>37</health>
-      <attack>12</attack>
+      <health>38</health>
+      <attack>14</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>38</health>
+      <health>39</health>
       <skill id="counterburn" x="5" />
       <skill id="corrosive" x="7" />
       <skill id="nullify" x="3" />

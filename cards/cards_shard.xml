@@ -2099,6 +2099,85 @@
       <skill id="berserk" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4024</id>
+    <card_type>2</card_type>
+    <name>The Coalheart Widow</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Black_Fire_Armor_A</picture>
+    <asset_bundle>172</asset_bundle>
+    <item_name>Coalheart Stone</item_name>
+    <item_desc>Collect Coalheart Stones to upgrade the Legendary The Coalheart Widow card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>16</sub_type>
+    <attack>7</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="5" />
+    <skill id="regenerate" x="7" />
+    <skill id="enrage" x="4" all="1" />
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="5" />
+      <skill id="regenerate" x="8" />
+      <skill id="enrage" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="counterburn" x="6" />
+      <skill id="regenerate" x="9" />
+      <skill id="enrage" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>29</health>
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="9" />
+      <skill id="enrage" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>11</attack>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>31</health>
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="9" />
+      <skill id="enrage" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>12</attack>
+      <health>32</health>
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="10" />
+      <skill id="enrage" x="6" all="1" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->

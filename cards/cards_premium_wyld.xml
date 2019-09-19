@@ -20229,7 +20229,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>14</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -20252,7 +20252,7 @@
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1508432400</hidden_until_time>
     <attack>4</attack>
-    <health>16</health>
+    <health>17</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="enrage" x="3" y="16" />
@@ -20267,7 +20267,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>17</health>
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -20634,11 +20634,12 @@
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>8</attack>
       <health>42</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>8</attack>
+      <attack>9</attack>
       <skill id="corrosive" x="5" />
       <skill id="heal" x="8" y="16" />
       <skill id="fervor" x="4" y="3" />
@@ -20659,7 +20660,7 @@
     <picture>Tree_Harvester_Mecha_B</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1510246800</hidden_until_time>
-    <attack>8</attack>
+    <attack>10</attack>
     <health>45</health>
     <cost>4</cost>
     <rarity>3</rarity>
@@ -20678,11 +20679,11 @@
     <upgrade>
       <level>3</level>
       <health>46</health>
-      <attack>10</attack>
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>47</health>
+      <health>48</health>
       <skill id="corrosive" x="7" />
       <skill id="heal" x="11" y="16" />
       <skill id="fervor" x="7" y="3" />
@@ -20847,9 +20848,9 @@
     <health>18</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="2" />
+    <skill id="armored" x="3" />
     <skill id="heal" x="2" all="1" />
-    <skill id="heal" x="3" />
+    <skill id="heal" x="4" />
     <type>3</type>
     <sub_type>16</sub_type>
     <set>4000</set>
@@ -20863,9 +20864,9 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="2" />
+      <skill id="armored" x="3" />
       <skill id="heal" x="2" all="1" />
-      <skill id="heal" x="4" />
+      <skill id="heal" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -20873,9 +20874,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="4" />
       <skill id="heal" x="2" all="1" />
-      <skill id="heal" x="4" />
+      <skill id="heal" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -20890,9 +20891,9 @@
     <health>22</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="3" />
+    <skill id="armored" x="4" />
     <skill id="heal" x="2" all="1" />
-    <skill id="heal" x="4" />
+    <skill id="heal" x="5" />
     <type>3</type>
     <sub_type>16</sub_type>
     <set>4000</set>
@@ -20902,9 +20903,9 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="4" />
       <skill id="heal" x="2" all="1" />
-      <skill id="heal" x="5" />
+      <skill id="heal" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -20916,9 +20917,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="5" />
       <skill id="heal" x="2" all="1" />
-      <skill id="heal" x="5" />
+      <skill id="heal" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -20933,9 +20934,9 @@
     <health>26</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="4" />
+    <skill id="armored" x="5" />
     <skill id="heal" x="2" all="1" />
-    <skill id="heal" x="6" />
+    <skill id="heal" x="7" />
     <type>3</type>
     <sub_type>16</sub_type>
     <set>4000</set>
@@ -20953,15 +20954,15 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="6" />
       <skill id="heal" x="2" all="1" />
-      <skill id="heal" x="6" />
+      <skill id="heal" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="6" />
       <skill id="heal" x="3" all="1" />
-      <skill id="heal" x="7" />
+      <skill id="heal" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -24412,7 +24413,7 @@
     <upgrade>
       <level>2</level>
       <health>25</health>
-      <attack>7</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -24430,7 +24431,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="corrosive" x="7" />
+      <skill id="corrosive" x="8" />
       <skill id="enfeeble" x="3" all="1" />
       <skill id="poison" x="8" />
     </upgrade>
@@ -28083,8 +28084,8 @@
     <picture>Mecha_Pig_B</picture>
     <asset_bundle>147</asset_bundle>
     <hidden_until_time>1546534800</hidden_until_time>
-    <attack>9</attack>
-    <health>49</health>
+    <attack>10</attack>
+    <health>50</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="stasis" x="5" />
@@ -28095,19 +28096,19 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>50</health>
+      <health>51</health>
       <skill id="stasis" x="5" />
       <skill id="rally" x="14" />
       <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>51</health>
+      <health>52</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>10</attack>
-      <health>52</health>
+      <attack>12</attack>
+      <health>54</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -28262,7 +28263,7 @@
     <upgrade>
       <level>2</level>
       <skill id="stasis" x="2" />
-      <skill id="frost" x="1" />
+      <skill id="frost" x="2" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
@@ -28277,7 +28278,7 @@
     <upgrade>
       <level>5</level>
       <skill id="stasis" x="3" />
-      <skill id="frost" x="1" />
+      <skill id="frost" x="2" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
@@ -28298,7 +28299,7 @@
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="stasis" x="3" />
-    <skill id="frost" x="2" />
+    <skill id="frost" x="3" />
     <skill id="jam" c="3" />
     <type>3</type>
     <sub_type>12</sub_type>
@@ -28315,7 +28316,7 @@
     <upgrade>
       <level>4</level>
       <skill id="stasis" x="4" />
-      <skill id="frost" x="2" />
+      <skill id="frost" x="3" />
       <skill id="jam" c="2" />
     </upgrade>
     <upgrade>
@@ -28340,7 +28341,7 @@
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="stasis" x="4" />
-    <skill id="frost" x="3" />
+    <skill id="frost" x="4" />
     <skill id="jam" c="2" />
     <type>3</type>
     <sub_type>12</sub_type>
@@ -28349,26 +28350,26 @@
     <upgrade>
       <level>2</level>
       <skill id="stasis" x="5" />
-      <skill id="frost" x="3" />
+      <skill id="frost" x="4" />
       <skill id="jam" c="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>37</health>
+      <health>38</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>38</health>
+      <health>39</health>
       <attack>14</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>39</health>
+      <health>41</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="stasis" x="6" />
-      <skill id="frost" x="4" />
+      <skill id="frost" x="5" />
       <skill id="jam" c="2" />
     </upgrade>
   </unit>

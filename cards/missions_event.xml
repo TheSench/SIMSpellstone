@@ -40211,12 +40211,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Sorry to break it to you, but we've already defeated Bluefire.</text>
-      </line>
-      <line>
-        <commander>necromancer</commander>
-        <enemy>0</enemy>
-        <text>The Void has been sealed.</text>
+        <text>Sorry to break it to you, but we've already defeated Bluefire. The Void has been sealed.</text>
       </line>
       <line>
         <commander>Portrait_mythic_wyld</commander>
@@ -40257,17 +40252,7 @@
       <line>
         <commander>Portrait_mythic_wyld</commander>
         <enemy>0</enemy>
-        <text>This place's existence is proof enough.</text>
-      </line>
-      <line>
-        <commander>Portrait_mythic_wyld</commander>
-        <enemy>0</enemy>
-        <text>The Void isn't an entity, but a concept. It still exists here...</text>
-      </line>
-      <line>
-        <commander>Portrait_mythic_wyld</commander>
-        <enemy>0</enemy>
-        <text>Its source is our dreams.</text>
+        <text>This place's existence is proof enough. The Void isn't an entity, but a concept. It still exists here... its source is our dreams.</text>
       </line>
     </speech>
   </mission>
@@ -40303,12 +40288,7 @@
       <line>
         <commander>Portrait_mythic_wyld</commander>
         <enemy>0</enemy>
-        <text>Haha...</text>
-      </line>
-      <line>
-        <commander>Portrait_mythic_wyld</commander>
-        <enemy>0</enemy>
-        <text>In short, there is still a remnant left to free from The Void.</text>
+        <text>Haha... In short, there is still a remnant left to free from The Void.</text>
       </line>
     </speech>
   </mission>
@@ -40511,7 +40491,7 @@
   </mission>
   <mission>
     <id>6284</id>
-    <name>Abyss Cursed</name>
+    <name>Vel's Promise</name>
     <energy>18</energy>
     <desc>Thankfully Vel seems to have kept her mind after the travel. No longer cursed by The Abyss, it seems like change is on the horizon for Arcantica.</desc>
     <commander id="384" />
@@ -40542,9 +40522,9 @@
   </mission>
   <mission>
     <id>6285</id>
-    <name>World's Foundation</name>
+    <name>Adventure's End</name>
     <energy>18</energy>
-    <desc>Vel is no longer leader of the Crimsonwings. With The Void and The Abyss fully being sealed, she has become just another adventurer, like you.</desc>
+    <desc>Vel is no longer the leader of the Crimsonwings. With The Void and The Abyss fully being sealed, she has become just another adventurer, like you.</desc>
     <commander id="387" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -40573,7 +40553,7 @@
   </mission>
   <mission>
     <id>6286</id>
-    <name>Titan Embodiment</name>
+    <name>A Promise Redelivered</name>
     <energy>18</energy>
     <desc>With her newfound freedom, Vel has plans to travel the world. She bids you and Aria farewell, wishing the best for the world.</desc>
     <commander id="437" />
