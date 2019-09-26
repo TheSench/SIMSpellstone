@@ -109403,6 +109403,154 @@ var CARDS = {
 			}
 		}
 	},
+	"7248": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 0,
+		"health": 10,
+		"hidden_until": "1570122000000",
+		"id": "7248",
+		"maxLevel": 6,
+		"name": "Amanita Carrier",
+		"picture": "Mecha_Mushroom_Robot_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 2,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "poison",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 11,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 12,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 3,
+				"skill": []
+			}
+		}
+	},
+	"7250": {
+		"attack": 17,
+		"card_type": "2",
+		"cost": 4,
+		"health": 47,
+		"hidden_until": "1569862800000",
+		"id": "7250",
+		"maxLevel": 6,
+		"name": "Lumberbuck Ranger",
+		"picture": "Antler_Mecha_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "pierce",
+				"x": 10
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 48,
+				"skill": []
+			},
+			"3": {
+				"attack": 18,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 49,
+				"skill": []
+			},
+			"6": {
+				"attack": 19,
+				"skill": []
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -110619,6 +110767,197 @@ var CARDS = {
 						"id": "enrage",
 						"x": 5,
 						"y": "10"
+					}
+				]
+			}
+		}
+	},
+	"7606": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1569517200000",
+		"id": "7606",
+		"maxLevel": 10,
+		"name": "Puzzlemud's Body",
+		"picture": "Tina_Mecha_Golem",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "corrosive",
+				"x": 5
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 6,
+				"health": 17,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"health": 18,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"attack": 7,
+				"health": 19,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"7": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"8": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"9": {
+				"attack": 9,
+				"health": 22,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"10": {
+				"attack": 10,
+				"health": 23,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"c": 3,
+						"id": "jam"
 					}
 				]
 			}
@@ -204963,6 +205302,192 @@ var CARDS = {
 			}
 		}
 	},
+	"17248": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 0,
+		"health": 13,
+		"hidden_until": "1570122000000",
+		"id": "17248",
+		"maxLevel": 6,
+		"name": "Amanita Grower",
+		"picture": "Mecha_Mushroom_Robot_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 2,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "poison",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 14,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"health": 15,
+				"skill": []
+			}
+		}
+	},
+	"17250": {
+		"attack": 19,
+		"card_type": "2",
+		"cost": 4,
+		"health": 49,
+		"hidden_until": "1569862800000",
+		"id": "17250",
+		"maxLevel": 6,
+		"name": "Lumberbuck Scythe",
+		"picture": "Antler_Mecha_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "pierce",
+				"x": 11
+			},
+			{
+				"id": "berserk",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 50,
+				"skill": []
+			},
+			"5": {
+				"attack": 20,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 13
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -286250,6 +286775,192 @@ var CARDS = {
 						"id": "fervor",
 						"x": 7,
 						"y": "3"
+					}
+				]
+			}
+		}
+	},
+	"27248": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 0,
+		"health": 15,
+		"hidden_until": "1570122000000",
+		"id": "27248",
+		"maxLevel": 6,
+		"name": "Amanita Generator",
+		"picture": "Mecha_Mushroom_Robot_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "rally",
+				"x": 3,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "poison",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 16,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "poison",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"27250": {
+		"attack": 20,
+		"card_type": "2",
+		"cost": 4,
+		"health": 51,
+		"hidden_until": "1569862800000",
+		"id": "27250",
+		"maxLevel": 6,
+		"name": "Lumberbuck Ultra",
+		"picture": "Antler_Mecha_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 6
+			},
+			{
+				"id": "pierce",
+				"x": 13
+			},
+			{
+				"id": "berserk",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 21,
+				"skill": []
+			},
+			"3": {
+				"health": 52,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 13
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 13
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 14
+					},
+					{
+						"id": "berserk",
+						"x": 7
 					}
 				]
 			}
