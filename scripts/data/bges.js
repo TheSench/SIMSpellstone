@@ -1826,6 +1826,237 @@ var BATTLEGROUNDS = {
 		"id": "547",
 		"name": "Common Fireworks"
 	},
+	"548": {
+		"desc": "All cards have their base Attack and base Health doubled.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "attack",
+				"effect_type": "scale_attack",
+				"mult": 1
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1
+			}
+		],
+		"id": "548",
+		"name": "Gigantic Clash"
+	},
+	"549": {
+		"desc": "When a card dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the unit that died. The token has Invisibility and Berserk values based on its rarity.",
+		"effect": [
+			{
+				"card": 607,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 3,
+				"mult": 0.5,
+				"rarity": 1
+			},
+			{
+				"card": 608,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 4,
+				"mult": 0.5,
+				"rarity": 2
+			},
+			{
+				"card": 609,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 5,
+				"mult": 0.5,
+				"rarity": 3
+			},
+			{
+				"card": 610,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 6,
+				"mult": 0.5,
+				"rarity": 4
+			},
+			{
+				"card": 611,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 7,
+				"mult": 0.5,
+				"rarity": 5
+			}
+		],
+		"id": "549",
+		"name": "Unlife Clash"
+	},
+	"550": {
+		"desc": "All cards gain Shroud 99.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"x": 99
+			}
+		],
+		"id": "550",
+		"name": "Sanctuary Clash"
+	},
+	"551": {
+		"desc": "Vengeance, Emberhide and Backlash skills are 50% more effective.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 0.5,
+				"s": "backlash"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 0.5,
+				"s": "counterburn"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 0.5,
+				"s": "counter"
+			}
+		],
+		"id": "551",
+		"name": "Revenge Clash"
+	},
+	"552": {
+		"desc": "Frogs and Seafolk deal extra damage on their first attack each turn equal to 25% of their base Health.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "12"
+			}
+		],
+		"id": "552",
+		"name": "Crushing Wave Clash"
+	},
+	"553": {
+		"desc": "All cards gain Dualstrike every 1.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "flurry",
+				"x": 1
+			}
+		],
+		"id": "553",
+		"name": "Doubling Clash"
+	},
+	"554": {
+		"desc": "Bolt, Frostbreath and Hex skills are doubled. Health is also doubled.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "strike"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "frost"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "enfeeble"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.5
+			}
+		],
+		"id": "554",
+		"name": "Firepower Clash"
+	},
+	"555": {
+		"desc": "Scorch, Poison, Emberhide and Scorchbreath skills are doubled. Health is also doubled.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "burn"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "scorchbreath"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "poison"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "counterburn"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1
+			}
+		],
+		"id": "555",
+		"name": "Decay Clash"
+	},
+	"556": {
+		"desc": "When a card dies, it throws a number of bombs equal to 50% of its base Health. Each bomb deals 1 damage and does not benefit from Hex or Poison.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.5
+			}
+		],
+		"id": "556",
+		"name": "Detonation Clash"
+	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
 		"effect": [

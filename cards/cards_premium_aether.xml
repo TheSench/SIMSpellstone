@@ -31407,6 +31407,262 @@
       <skill id="berserk" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5246</id>
+    <card_type>2</card_type>
+    <name>Brightcore Defender</name>
+    <picture>Mecha_Hulking_Automaton01</picture>
+    <asset_bundle>172</asset_bundle>
+    <hidden_until_time>1570122000</hidden_until_time>
+    <attack>10</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="armored" x="4" />
+    <skill id="backlash" x="2" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15246</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Brightcore Automaton</name>
+    <picture>Mecha_Hulking_Automaton01</picture>
+    <asset_bundle>172</asset_bundle>
+    <hidden_until_time>1570122000</hidden_until_time>
+    <attack>13</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="armored" x="5" />
+    <skill id="backlash" x="2" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="5" />
+      <skill id="armored" x="5" />
+      <skill id="backlash" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="5" />
+      <skill id="armored" x="5" />
+      <skill id="backlash" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>39</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25246</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Brightcore Engine</name>
+    <picture>Mecha_Hulking_Automaton02</picture>
+    <asset_bundle>172</asset_bundle>
+    <hidden_until_time>1570122000</hidden_until_time>
+    <attack>15</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="armored" x="5" />
+    <skill id="backlash" x="3" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>16</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="5" />
+      <skill id="armored" x="6" />
+      <skill id="backlash" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="6" />
+      <skill id="armored" x="6" />
+      <skill id="backlash" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="6" />
+      <skill id="armored" x="6" />
+      <skill id="backlash" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5247</id>
+    <card_type>2</card_type>
+    <name>Arrow of the Twofold</name>
+    <picture>Mecha_Divinity_Archer_A</picture>
+    <asset_bundle>172</asset_bundle>
+    <hidden_until_time>1570467600</hidden_until_time>
+    <attack>4</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="4" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="flurry" c="7" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15247</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Effigy of the Twofold</name>
+    <picture>Mecha_Divinity_Archer_A</picture>
+    <asset_bundle>172</asset_bundle>
+    <hidden_until_time>1570467600</hidden_until_time>
+    <attack>4</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="4" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="strike" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>26</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25247</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Icon of the Twofold</name>
+    <picture>Mecha_Divinity_Archer_B</picture>
+    <asset_bundle>172</asset_bundle>
+    <hidden_until_time>1570467600</hidden_until_time>
+    <attack>5</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="5" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="flurry" c="2" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="6" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

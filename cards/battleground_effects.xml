@@ -1330,6 +1330,153 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>548</id>
+    <name>Gigantic Clash</name>
+    <desc>All cards have their base Attack and base Health doubled.</desc>
+    <icon>Enraged_BGE_100</icon>
+    <!-- actually _64 -->
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <scale_attack base="attack" mult="1" all="1" />
+      <scale_health base="health" mult="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <!--REVISAR  TODOO -->
+    <id>549</id>
+    <name>Unlife Clash</name>
+    <desc>When a card dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the unit that died. The token has Invisibility and Berserk values based on its rarity.</desc>
+    <icon>filter_undead_64.png</icon>
+    <effect>
+      <add_skill id="unearth" mult="0.5" rarity="1" card="607" level="3" />
+      <add_skill id="unearth" mult="0.5" rarity="2" card="608" level="4" />
+      <add_skill id="unearth" mult="0.5" rarity="3" card="609" level="5" />
+      <add_skill id="unearth" mult="0.5" rarity="4" card="610" level="6" />
+      <add_skill id="unearth" mult="0.5" rarity="5" card="611" level="7" />
+      <skill id="displayEffect" trigger="onSkill" s="unearth">
+        <target_effect>
+          <prefab>unearth_actor</prefab>
+          <bundle_id>87</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+          <!-- <shake>true</shake> -->
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>550</id>
+    <name>Sanctuary Clash</name>
+    <desc>All cards gain Shroud 99.</desc>
+    <icon>Stasis_BGE_64</icon>
+    <!-- REVISAR -->
+    <icon_bundle>110</icon_bundle>
+    <!-- REVISAR -->
+    <effect>
+      <add_skill id="stasis" x="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>551</id>
+    <name>Revenge Clash</name>
+    <desc>Vengeance, Emberhide and Backlash skills are 50% more effective.</desc>
+    <icon>Vengence_BGE_64</icon>
+    <!-- REVISAR -->
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="backlash" mult=".5" all="1" />
+      <skill id="enhance" s="counterburn" mult=".5" all="1" />
+      <skill id="enhance" s="counter" mult=".5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>552</id>
+    <name>Crushing Wave Clash</name>
+    <desc>Frogs and Seafolk deal extra damage on their first attack each turn equal to 25% of their base Health.</desc>
+    <icon>filter_frog_64.png</icon>
+    <!-- REVISAR -->
+    <effect>
+      <add_skill id="bash" mult=".25" base="health" y="4" all="1" />
+      <add_skill id="bash" mult=".25" base="health" y="12" all="1" />
+      <skill id="displayEffect" trigger="onSkill" s="bash">
+        <target_effect>
+          <!-- REVISAR -->
+          <prefab>frogbge_Target</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>553</id>
+    <name>Doubling Clash</name>
+    <desc>All cards gain Dualstrike every 1.</desc>
+    <icon>Flurry_BGE_64</icon>
+    <!-- REVISAR -->
+    <icon_bundle>110</icon_bundle>
+    <!-- REVISAR -->
+    <effect>
+      <add_skill id="flurry" x="1" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>554</id>
+    <name>Firepower Clash</name>
+    <desc>Bolt, Frostbreath and Hex skills are doubled. Health is also doubled.</desc>
+    <icon>thunderbolt_64</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <skill id="enhance" s="strike" mult="1" all="1" />
+      <skill id="enhance" s="frost" mult="1" all="1" />
+      <skill id="enhance" s="enfeeble" mult="1" all="1" />
+      <scale_health base="health" mult=".5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>555</id>
+    <name>Decay Clash</name>
+    <desc>Scorch, Poison, Emberhide and Scorchbreath skills are doubled. Health is also doubled.</desc>
+    <icon>Poison_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="burn" mult="1" all="1" />
+      <skill id="enhance" s="scorchbreath" mult="1" all="1" />
+      <skill id="enhance" s="poison" mult="1" all="1" />
+      <skill id="enhance" s="counterburn" mult="1" all="1" />
+      <scale_health base="health" mult="1" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>556</id>
+    <name>Detonation Clash</name>
+    <desc>When a card dies, it throws a number of bombs equal to 50% of its base Health. Each bomb deals 1 damage and does not benefit from Hex or Poison.</desc>
+    <icon>Barrage_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="barrage" mult=".5" base="health" all="1" />
+      <skill id="displayEffect" trigger="onSkill" s="barrage">
+        <projectile_effect>
+          <prefab>goblinBombProjectile</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0</delay>
+          <duration>.75</duration>
+          <translation>.75</translation>
+          <offset>0</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>goblinBombTarget</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>.75</delay>
+          <duration>1.25</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ============================= -->
   <!-- ==== 1001+: Personal BGE ==== -->
   <!-- ============================= -->
