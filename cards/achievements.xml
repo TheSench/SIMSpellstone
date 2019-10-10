@@ -11519,6 +11519,151 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 19 weeks 1-4 -->
+  <achievement>
+    <id>3510</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Seastone Citadel</name>
+    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 1.</desc>
+    <mission_req>6292</mission_req>
+    <locked_start_time>1571331600</locked_start_time>
+    <!--  Thursday, 17 October 2019 17:00:00 -->
+    <req>
+      <campaign>1222</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3101" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7052" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3511</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Seastone Citadel</name>
+    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 2.</desc>
+    <mission_req>6292</mission_req>
+    <locked_start_time>1571331600</locked_start_time>
+    <!--  Thursday, 17 October 2019 17:00:00 -->
+    <achievement_req>3510</achievement_req>
+    <req>
+      <campaign>1222</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3512</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Seastone Citadel</name>
+    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 4.</desc>
+    <mission_req>6292</mission_req>
+    <locked_start_time>1571331600</locked_start_time>
+    <!--  Thursday, 17 October 2019 17:00:00 -->
+    <achievement_req>3511</achievement_req>
+    <req>
+      <campaign>1222</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3513</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Seastone Citadel</name>
+    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 6.</desc>
+    <mission_req>6292</mission_req>
+    <locked_start_time>1571331600</locked_start_time>
+    <!--  Thursday, 17 October 2019 17:00:00 -->
+    <achievement_req>3512</achievement_req>
+    <req>
+      <campaign>1222</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3514</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Seastone Staff's Fate</name>
+    <desc>Complete the 'Seastone Staff's Fate' campaign on Mastery Level 2.</desc>
+    <mission_req>6298</mission_req>
+    <locked_start_time>1572541200</locked_start_time>
+    <!--  Thursday, 31 October 2019 17:00:00 -->
+    <req>
+      <campaign>1223</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3515</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Seastone Staff's Fate</name>
+    <desc>Complete the 'Seastone Staff's Fate' campaign on Mastery Level 4.</desc>
+    <mission_req>6298</mission_req>
+    <locked_start_time>1572541200</locked_start_time>
+    <!--  Thursday, 31 October 2019 17:00:00 -->
+    <achievement_req>3514</achievement_req>
+    <req>
+      <campaign>1223</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3516</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Seastone Staff's Fate</name>
+    <desc>Complete the 'Seastone Staff's Fate' campaign on Mastery Level 6.</desc>
+    <mission_req>6298</mission_req>
+    <locked_start_time>1572541200</locked_start_time>
+    <!--  Thursday, 31 October 2019 17:00:00 -->
+    <achievement_req>3515</achievement_req>
+    <req>
+      <campaign>1223</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <!-- Avalanche Equine recipe -->
+  <achievement>
+    <id>3517</id>
+    <type>2</type>
+    <order>101</order>
+    <name>TBD</name>
+    <desc>Complete the 'TBD' campaign on Mastery Level 1.</desc>
+    <mission_req>6292</mission_req>
+    <locked_start_time>1572541200</locked_start_time>
+    <!--  Thursday, 31 October 2019 17:00:00 -->
+    <req>
+      <campaign>1224</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8020" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

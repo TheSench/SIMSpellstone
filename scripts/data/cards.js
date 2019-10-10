@@ -89030,6 +89030,92 @@ var CARDS = {
 			}
 		}
 	},
+	"6248": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1571072400000",
+		"id": "6248",
+		"maxLevel": 6,
+		"name": "Cybot Centurion",
+		"picture": "Mecha_Skull_Servant_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1,
+				"y": "16"
+			},
+			{
+				"id": "legion",
+				"x": 2
+			},
+			{
+				"id": "fervor",
+				"x": 2,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 2
+					},
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"attack": 5,
+				"skill": []
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -109628,6 +109714,84 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 3,
+				"skill": []
+			}
+		}
+	},
+	"7249": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1570726800000",
+		"id": "7249",
+		"maxLevel": 6,
+		"name": "Nullhammer",
+		"picture": "Frog_Mecha_Frog_Hammer_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
 				"skill": []
 			}
 		}
@@ -184568,6 +184732,107 @@ var CARDS = {
 			}
 		}
 	},
+	"16248": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1571072400000",
+		"id": "16248",
+		"maxLevel": 6,
+		"name": "Cybot Pilus",
+		"picture": "Mecha_Skull_Servant_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1,
+				"y": "16"
+			},
+			{
+				"id": "legion",
+				"x": 3
+			},
+			{
+				"id": "fervor",
+				"x": 4,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "2"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "2"
+					}
+				]
+			},
+			"4": {
+				"attack": 6,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "2"
+					}
+				]
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -205698,6 +205963,96 @@ var CARDS = {
 			},
 			"6": {
 				"health": 15,
+				"skill": []
+			}
+		}
+	},
+	"17249": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1570726800000",
+		"id": "17249",
+		"maxLevel": 6,
+		"name": "Rulehammer",
+		"picture": "Frog_Mecha_Frog_Hammer_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 26,
 				"skill": []
 			}
 		}
@@ -266109,6 +266464,107 @@ var CARDS = {
 			}
 		}
 	},
+	"26248": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1571072400000",
+		"id": "26248",
+		"maxLevel": 6,
+		"name": "Cybot Primus",
+		"picture": "Mecha_Skull_Servant_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2,
+				"y": "16"
+			},
+			{
+				"id": "legion",
+				"x": 5
+			},
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "2"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "16"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "2"
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -287344,6 +287800,96 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"27249": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1570726800000",
+		"id": "27249",
+		"maxLevel": 6,
+		"name": "Banhammer",
+		"picture": "Frog_Mecha_Frog_Hammer_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
 					}
 				]
 			}

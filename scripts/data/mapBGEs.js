@@ -5469,5 +5469,289 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3019",
 		"location_id": "24",
 		"name": "Three Titans"
+	},
+	"3020": {
+		"desc": "Defenses set up by the First Order monks, they are powered by small Elemental creatures.",
+		"effects": [
+			{
+				"id": "50",
+				"name": "Sea Guardian Bones",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures are Healed for 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 1
+							}
+						],
+						"name": "Sea Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures are Healed for 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 2
+							}
+						],
+						"name": "Sea Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures are Healed for 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 3
+							}
+						],
+						"name": "Sea Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures are Healed for 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 4
+							}
+						],
+						"name": "Sea Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures are Healed for 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 5
+							}
+						],
+						"name": "Sea Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures are Healed for 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 6
+							}
+						],
+						"name": "Sea Guardian Bones"
+					}
+				]
+			},
+			{
+				"id": "51",
+				"name": "Land Guardian Bones",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Armor 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 1
+							}
+						],
+						"name": "Land Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures gain Armor 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 2
+							}
+						],
+						"name": "Land Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures gain Armor 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 3
+							}
+						],
+						"name": "Land Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures gain Armor 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 4
+							}
+						],
+						"name": "Land Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures gain Armor 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 6
+							}
+						],
+						"name": "Land Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures gain Armor 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 8
+							}
+						],
+						"name": "Land Guardian Bones"
+					}
+				]
+			},
+			{
+				"id": "52",
+				"name": "Sky Guardian Bones",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 1
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 2
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 3
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 4
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 5
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 6
+							}
+						],
+						"name": "Sky Guardian Bones"
+					}
+				]
+			}
+		],
+		"id": "3020",
+		"location_id": "25",
+		"name": "First Order Defense"
 	}
 };
