@@ -411,4 +411,8 @@ label:hover + .tooltip {
   transform: rotateY(180deg);
 }
 
+.small-font {
+  font-size: small;
+}
+
 /*# sourceMappingURL=dark.css.map */

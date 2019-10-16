@@ -3,7 +3,7 @@
 <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
-    <link id="theme" rel="stylesheet" type="text/css" href="dist/light.min.css?45c374d5757a16fe">
+    <link id="theme" rel="stylesheet" type="text/css" href="dist/light.min.css?21db49fe5b3303b5">
     <link rel="stylesheet" type="text/css" href="dist/main.min.css?533868e363be0168">
     <link rel="stylesheet" type="text/css" href="dist/spritesheet.min.css?f4005c9ade414807">
     <link rel="icon" type="image/png" href="res/favicon-16x16.png">
@@ -91,6 +91,7 @@
                                                 <option default value="" class="grey">Select a Mission...</option>
                                                 <option ng-repeat="mission in missions | filterChildren:selections.campaign:campaigns:'missions':'id'" value="{{mission.id}}" class="black">{{mission.name}}</option>
                                             </select>
+                                            <label for="mission_level" class="small-font">Level: </label>
                                             <input type="NUMBER" id="mission_level" min="1" max="8" step="1" value="7" size="6">
                                         </div>
                                         <input id="config-map-bge" type="button" onclick="showMapBGEs();" value="Map BGEs" ng-disabled="(mapBattlegrounds | filterByParent:selections.location:'location_id').length === 0" />
@@ -101,6 +102,7 @@
                                                 <option default value="" class="grey">Select a Raid/Dungeon...</option>
                                                 <option ng-repeat="raid in filteredRaids()" value="{{raid.id}}" class="black">{{raid.name}}</option>
                                             </select>
+                                            <label for="raid_level" class="small-font">Level: </label>
                                             <input type="NUMBER" id="raid_level" min="1" max="40" step="1" value="25" size="6">
                                         </div>
                                     </div>
