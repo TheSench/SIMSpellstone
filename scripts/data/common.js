@@ -2,5 +2,5 @@
 
 var text_version = 'v2.0';
 var battle_sim = false;
-var current_bges = [114,122];
-var DataUpdated = 1571329846162;
+var current_bges = [122,133];
+var DataUpdated = 1571334307221;
