@@ -7554,7 +7554,80 @@
     </rewards>
     <find_item id="3098" drop_per_energy=".8" />
   </campaign>
-  <!-- ================================== Campaign Event 19 weeks 1-4 / Return to Seastone Citadel ================================== -->
+  <!-- ================================== Campaign Event 19 weeks 1-4 / Stormy Seastone Citadel ================================== -->
+  <campaign>
+    <id>1222</id>
+    <name>Return to Seastone Citadel</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1571331600</locked_start_time>
+    <!--  Thursday, 17 October 2019 17:00:00 -->
+    <location_id>25</location_id>
+    <x>170</x>
+    <y>280</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6292</mission_id>
+      <mission_id>6293</mission_id>
+      <mission_id>6294</mission_id>
+      <mission_id>6295</mission_id>
+      <mission_id>6296</mission_id>
+      <mission_id>6297</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2169" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2138" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3103" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1223</id>
+    <name>Seastone Staff's Fate</name>
+    <campaign_req id="1222" level="1" />
+    <locked_start_time>1572541200</locked_start_time>
+    <!--  Thursday, 31 October 2019 17:00:00 -->
+    <battleground_id>2079</battleground_id>
+    <location_id>25</location_id>
+    <x>475</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6298</mission_id>
+      <mission_id>6299</mission_id>
+      <mission_id>6300</mission_id>
+      <mission_id>6301</mission_id>
+      <mission_id>6302</mission_id>
+      <mission_id>6303</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2170" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2119" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3103" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

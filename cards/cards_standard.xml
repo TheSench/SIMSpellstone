@@ -4728,7 +4728,7 @@
     <name>Chaos Storm</name>
     <picture>Storm_Elemental_A</picture>
     <asset_bundle>10</asset_bundle>
-    <attack>1</attack>
+    <attack>3</attack>
     <health>10</health>
     <cost>1</cost>
     <rarity>3</rarity>
@@ -4749,7 +4749,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>2</attack>
+      <attack>4</attack>
       <skill id="strike" x="2" />
       <skill id="leech" x="2" />
     </upgrade>
@@ -4767,7 +4767,7 @@
     <name>Chaos Swell</name>
     <picture>Storm_Elemental_B</picture>
     <asset_bundle>10</asset_bundle>
-    <attack>2</attack>
+    <attack>4</attack>
     <health>13</health>
     <cost>1</cost>
     <rarity>3</rarity>
@@ -4790,7 +4790,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>3</attack>
+      <attack>5</attack>
       <skill id="strike" x="4" />
       <skill id="leech" x="5" />
     </upgrade>
@@ -4808,7 +4808,7 @@
     <name>Chaos Tempest</name>
     <picture>Storm_Elemental_C</picture>
     <asset_bundle>10</asset_bundle>
-    <attack>3</attack>
+    <attack>5</attack>
     <health>16</health>
     <cost>1</cost>
     <rarity>3</rarity>
@@ -4827,7 +4827,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>4</attack>
+      <attack>6</attack>
       <health>17</health>
     </upgrade>
     <upgrade>

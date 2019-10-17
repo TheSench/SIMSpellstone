@@ -12060,6 +12060,33 @@
       <item id="2531" number="1" />
     </reward>
   </achievement>
+  <achievement>
+    <!-- Stormy Seastone Citadel -->
+    <id>4019</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Stormy Seastone Citadel</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Stormy Seastone Citadel.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6292</mission_req>
+    <req>
+      <campaign>1222</campaign>
+      <!-- 1st node -->
+      <campaign>1223</campaign>
+      <!-- 2nd node -->
+      <campaign>1224</campaign>
+      <!-- Boss node -->
+      <campaign>1225</campaign>
+      <!-- 3rd node -->
+      <campaign>1226</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion +5 -->
+    </reward>
+  </achievement>
   <!-- Non-Core Maps Meta END -->
 </root>
 

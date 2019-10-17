@@ -10647,7 +10647,7 @@
     <card_type>1</card_type>
     <name>Hero's Shadow</name>
     <portrait>Portrait_mythic_wyld</portrait>
-    <asset_bundle>170</asset_bundle>
+    <asset_bundle>160</asset_bundle>
     <health>65</health>
     <rarity>4</rarity>
     <skill id="imbue" x="1" s="evade" />

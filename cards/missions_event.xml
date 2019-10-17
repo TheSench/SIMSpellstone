@@ -40587,5 +40587,387 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 19 Node 1 -->
+  <mission>
+    <id>6292</id>
+    <name>Adventure's Dawn</name>
+    <energy>18</energy>
+    <desc>Peace has returned to the world. The troublesome Crimsonwings have disbanded, all the tribes returning to their respective homes. Soon after, Oda approached you for a favor...</desc>
+    <commander id="243" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2137" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2117" name="Aero Enforcer" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="5161" mastery_level="2" name="Bolster Bot" />
+      <card id="2117" mastery_level="3" name="Aero Enforcer" />
+      <card id="5133" mastery_level="4" name="Magnetic Elemental" />
+      <card id="5161" mastery_level="5" name="Bolster Bot" />
+      <card id="5220" mastery_level="6" name="Wallbot" />
+      <card id="5048" mastery_level="7" name="Highborn Rose" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, will you return with me to Seastone Citadel? I received a missive from my fellow First Order monks, requesting aid.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6293</id>
+    <name>First Order Request</name>
+    <energy>18</energy>
+    <desc>The missive Oda mentioned contains little details. The previous Keeper of the Order, the monk Kensho, had mentioned a threat that could harm their continent.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2010" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5221" name="Coreheart" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="2002" mastery_level="2" name="Lantern Guardian" />
+      <card id="5221" mastery_level="3" name="Coreheart" />
+      <card id="2058" mastery_level="4" name="Bismuth Bully" />
+      <card id="2002" mastery_level="5" name="Lantern Guardian" />
+      <card id="5164" mastery_level="6" name="Chromium Centaur" />
+      <card id="5132" mastery_level="7" name="Whirlwinder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6294</id>
+    <name>Water Guardians</name>
+    <energy>18</energy>
+    <desc>You travel with Oda to the Seastone Citadel. As you approach the bridge in the midst of the waves, water elementals surround you!</desc>
+    <commander id="298" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1033" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="5221" name="Coreheart" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2124" mastery_level="2" name="Bulbscale Construct" />
+      <card id="5221" mastery_level="3" name="Coreheart" />
+      <card id="2119" mastery_level="4" name="Flaming Hailwing" />
+      <card id="2124" mastery_level="5" name="Bulbscale Construct" />
+      <card id="5245" mastery_level="6" name="Gemcore Brawler" />
+      <card id="5019" mastery_level="7" name="Vivid Aurora" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>The elementals here are restless. Could this be the threat that my Master warned us about?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Let's take care of them.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6295</id>
+    <name>Elemental Infestation</name>
+    <energy>18</energy>
+    <desc>After clearing out the Elementals near the stone bridge, you procceed into the Seastone Citadel. However, you find that the interior has been overrun by even more Elementals!</desc>
+    <commander id="433" />
+    <deck>
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1617" name="Water Elemental" />
+      <card id="7045" name="Sakura" />
+      <card id="7045" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="2031" name="Dryad" />
+      <card id="2128" mastery_level="2" name="Stilt-walker Sentinel" />
+      <card id="7181" mastery_level="3" name="Underspine Stinger" />
+      <card id="2031" mastery_level="4" name="Dryad" />
+      <card id="2128" mastery_level="5" name="Stilt-walker Sentinel" />
+      <card id="7163" mastery_level="6" name="Alloy of the Trees" />
+      <card id="7206" mastery_level="7" name="Twigform Mystic" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>The elementals are everywhere!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6296</id>
+    <name>Elemental Citadel</name>
+    <energy>18</energy>
+    <desc>Seastone Citadel is crawling with wind and water elements. They violently attack you on sight, although they seem oddly at peace with Oda... until he helps repel them back.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2127" />
+      <card id="5163" name="Bark Hound" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="5163" mastery_level="2" name="Bark Hound" />
+      <card id="1033" mastery_level="3" name="Valiant Charger" />
+      <card id="2119" mastery_level="4" name="Flaming Hailwing" />
+      <card id="5163" mastery_level="5" name="Bark Hound" />
+      <card id="5194" mastery_level="6" name="Gelidbeam Spatha" />
+      <card id="5182" mastery_level="7" name="Lun Seles" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I only pray that my fellow Keeper is safe.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6297</id>
+    <name>Keeper Kensho</name>
+    <energy>18</energy>
+    <desc>The fight continues, the Elementals having dominion over the entire Seastone Citadel. Eventually you hear the solid patter of footsteps, and the slow clank of a staff. An old wizened monk descends the stairs.</desc>
+    <commander id="242" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1617" name="Water Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="2031" name="Dryad" />
+      <card id="2031" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="2129" mastery_level="2" name="Pharos Guardian" />
+      <card id="7181" mastery_level="3" name="Underspine Stinger" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="2129" mastery_level="5" name="Pharos Guardian" />
+      <card id="7163" mastery_level="6" name="Alloy of the Trees" />
+      <card id="7178" mastery_level="7" name="Oxylus, Might Warden" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Master Kensho! Are you unharmed?</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Of course, Keeper Oda. No need for that 'Master' title anymore. We're equal rank, after all.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 19 Node 2 -->
+  <mission>
+    <id>6298</id>
+    <name>Old Ally</name>
+    <energy>18</energy>
+    <desc>The wizened monk waves a hand, the Elementals retreating from your presence. Kensho has a big smile across his face, now that Oda has finally returned.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8093" name="Prototype Titan" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" />
+      <card id="2111" name="Drillbot" />
+      <card id="2111" />
+      <card id="6004" name="Branding Construct" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="6004" mastery_level="2" name="Branding Construct" />
+      <card id="1325" mastery_level="3" name="Chaos Storm" />
+      <card id="2111" mastery_level="4" name="Drillbot" />
+      <card id="6115" mastery_level="5" name="Spelltalon" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>It's been too long, Keeper Oda. Thank you for heeding my message. Tell me, was the Seastone Staff useful in your endeavors?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6299</id>
+    <name>The Staff's Power</name>
+    <energy>18</energy>
+    <desc>Oda's initial excitement fades away. Although it pains him to do so, he must inform Keeper Kensho the fate of the Seastone Staff.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="8093" name="Prototype Titan" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6158" name="Orbos" />
+      <card id="6158" />
+      <card id="2144" name="Death Fist" />
+      <card id="2144" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="2138" mastery_level="2" name="Magma Cougar" />
+      <card id="6015" mastery_level="3" name="Acidic Sludge" />
+      <card id="2144" mastery_level="4" name="Death Fist" />
+      <card id="6158" mastery_level="5" name="Orbos" />
+      <card id="6190" mastery_level="6" name="Twinblast" />
+      <card id="6136" mastery_level="7" name="Cosmic Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Yes, Keeper Kensho. We used the Seastone Staff to seal away The Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6300</id>
+    <name>Missing Seastone Staff</name>
+    <energy>18</energy>
+    <desc>The Seastone Staff had passed hands multiple times after its initial theft in Beetleton Bunker. However, the Staff had been stolen from the thieves too, and from there Oda lost the staff in the next scuffle.</desc>
+    <commander id="245" />
+    <deck>
+      <card id="8093" name="Prototype Titan" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6005" name="Gloomkin" />
+      <card id="6005" />
+      <card id="6208" name="Iron Hammer" />
+      <card id="6208" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="6004" mastery_level="2" name="Branding Construct" />
+      <card id="2008" mastery_level="3" name="Shadow of Ash" />
+      <card id="6208" mastery_level="4" name="Iron Hammer" />
+      <card id="6005" mastery_level="5" name="Gloomkin" />
+      <card id="6161" mastery_level="6" name="Torero" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>However, I have failed in my duty. The Staff was stolen away by the goblins and Dawnglow frogs. Even now, I am still looking for it.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6301</id>
+    <name>First Order Trust</name>
+    <energy>18</energy>
+    <desc>Kensho takes the news surprisingly well. Although he had been loathe to part with the artifact initially, he trusts that Oda will be able to retrieve the stolen artifact.</desc>
+    <commander id="281" />
+    <deck>
+      <card id="8106" name="Mecha Hammer Creation" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1617" name="Water Elemental" />
+      <card id="2031" name="Dryad" />
+      <card id="2031" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2129" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7164" mastery_level="2" name="Pinegrove Primate" />
+      <card id="7015" mastery_level="3" name="Bog Aberration" />
+      <card id="2129" mastery_level="4" name="Pharos Guardian" />
+      <card id="2031" mastery_level="5" name="Dryad" />
+      <card id="7166" mastery_level="6" name="Rejuvenation Acolyte" />
+      <card id="7189" mastery_level="7" name="Tidal Enchanter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Regrettable, but I trust you'll find it again. What's important is that you're here now.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6302</id>
+    <name>Kensho's Concern</name>
+    <energy>18</energy>
+    <desc>The conversation turns to the current dilemma that Kensho had written about. Something big is brewing in the world... a new threat...</desc>
+    <commander id="243" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2127" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="5161" mastery_level="2" name="Bolster Bot" />
+      <card id="5133" mastery_level="3" name="Magnetic Elemental" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="2127" mastery_level="5" name="RT-87 Rescinder" />
+      <card id="5220" mastery_level="6" name="Wallbot" />
+      <card id="5045" mastery_level="7" name="Echo Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Why did you call us out here?</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Oda... steel yourself. There is something you must see.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6303</id>
+    <name>Unbelievable Sight</name>
+    <energy>18</energy>
+    <desc>Kensho waves his hand. The forms of the lurking elementals shimmer, before transforming into humans! They are garbed in similar attire to Oda and Kensho, each having the signature beads of the First Order around their necks.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keep" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="5135" name="Shatterwind" />
+      <card id="5135" />
+      <card id="5163" name="Bark Hound" />
+      <card id="5163" />
+      <card id="2143" name="Lightning Stomper" />
+      <card id="5135" name="Shatterwind" />
+      <card id="2143" mastery_level="2" name="Lightning Stomper" />
+      <card id="5135" mastery_level="3" name="Shatterwind" />
+      <card id="5163" mastery_level="4" name="Bark Hound" />
+      <card id="5135" mastery_level="5" name="Shatterwind" />
+      <card id="5194" mastery_level="6" name="Gelidbeam Spatha" />
+      <card id="5059" mastery_level="7" name="Bemola" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>The other monks of the First Order... you're alive!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

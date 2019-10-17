@@ -553,6 +553,39 @@ var BATTLEGROUNDS = {
 		"id": "132",
 		"name": "Day of Dragons"
 	},
+	"133": {
+		"desc": "Aether Elementals gain Barrier 4 + 10% of their Health. Chaos gain Scorch equal to 75% of their Attack. Wyld deal more damage on their first attack each turn equal to 25% of their Health.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"x": 4,
+				"y": "1,5"
+			},
+			{
+				"all": "1",
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.75,
+				"y": "2,5"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "3,5"
+			}
+		],
+		"id": "133",
+		"name": "Elemental Discordance"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -3346,9 +3379,57 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2079",
-		"name": "Chorus of Foes",
+		"name": "Chorus of Thunder",
 		"scale_with_level": "1",
 		"starting_level": "5"
+	},
+	"2080": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.3,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2080",
+		"name": "Thunderstorm March",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2081": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2081",
+		"name": "Chorus of Thunder",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2082": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.05
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2082",
+		"name": "Chorus of Thunder",
+		"scale_with_level": "1",
+		"starting_level": "0"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
