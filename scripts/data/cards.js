@@ -110298,10 +110298,10 @@ var CARDS = {
 		}
 	},
 	"7251": {
-		"attack": 5,
+		"attack": 6,
 		"card_type": "2",
-		"cost": 5,
-		"health": 24,
+		"cost": 2,
+		"health": 21,
 		"hidden_until": "1571331600000",
 		"id": "7251",
 		"maxLevel": 6,
@@ -110312,7 +110312,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "regenerate",
-				"x": 4
+				"x": 5
 			},
 			{
 				"id": "nullify",
@@ -110320,7 +110320,7 @@ var CARDS = {
 			},
 			{
 				"id": "berserk",
-				"x": 3
+				"x": 4
 			}
 		],
 		"sub_type": [
@@ -110330,22 +110330,22 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"cost": 4,
+				"health": 22,
 				"skill": []
 			},
 			"3": {
-				"attack": 6,
+				"health": 23,
 				"skill": []
 			},
 			"4": {
-				"health": 25,
+				"attack": 7,
 				"skill": []
 			},
 			"5": {
 				"skill": [
 					{
 						"id": "regenerate",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "nullify",
@@ -110353,12 +110353,12 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
 			"6": {
-				"cost": 3,
+				"health": 24,
 				"skill": []
 			}
 		}
@@ -206979,8 +206979,8 @@ var CARDS = {
 	"17251": {
 		"attack": 7,
 		"card_type": "2",
-		"cost": 3,
-		"health": 25,
+		"cost": 2,
+		"health": 24,
 		"hidden_until": "1571331600000",
 		"id": "17251",
 		"maxLevel": 6,
@@ -206991,7 +206991,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "regenerate",
-				"x": 5
+				"x": 6
 			},
 			{
 				"id": "nullify",
@@ -206999,7 +206999,7 @@ var CARDS = {
 			},
 			{
 				"id": "berserk",
-				"x": 4
+				"x": 5
 			}
 		],
 		"sub_type": [
@@ -207009,46 +207009,6 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 26,
-				"skill": []
-			},
-			"3": {
-				"skill": [
-					{
-						"id": "regenerate",
-						"x": 6
-					},
-					{
-						"id": "nullify",
-						"x": 2
-					},
-					{
-						"id": "berserk",
-						"x": 4
-					}
-				]
-			},
-			"4": {
-				"skill": [
-					{
-						"id": "regenerate",
-						"x": 6
-					},
-					{
-						"id": "nullify",
-						"x": 3
-					},
-					{
-						"id": "berserk",
-						"x": 4
-					}
-				]
-			},
-			"5": {
-				"cost": 2,
-				"skill": []
-			},
-			"6": {
 				"skill": [
 					{
 						"id": "regenerate",
@@ -207063,6 +207023,34 @@ var CARDS = {
 						"x": 5
 					}
 				]
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 26,
+				"skill": []
 			}
 		}
 	},
@@ -289247,7 +289235,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "regenerate",
-				"x": 6
+				"x": 7
 			},
 			{
 				"id": "nullify",
@@ -289265,10 +289253,18 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
 				"skill": [
 					{
 						"id": "regenerate",
-						"x": 7
+						"x": 8
 					},
 					{
 						"id": "nullify",
@@ -289279,14 +289275,6 @@ var CARDS = {
 						"x": 5
 					}
 				]
-			},
-			"3": {
-				"attack": 9,
-				"skill": []
-			},
-			"4": {
-				"health": 28,
-				"skill": []
 			},
 			"5": {
 				"skill": [
@@ -289300,7 +289288,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 5
+						"x": 6
 					}
 				]
 			},
