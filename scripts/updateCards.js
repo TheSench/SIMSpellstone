@@ -160,7 +160,7 @@ var DATA_UPDATER = (function () {
         if (hidden_until) unit.hidden_until = hidden_until + "000";
         unit.rarity = getValue(node, "rarity");
         unit.set = getValue(node, "set");
-        unit.card_type = getValue(node, "card_type");
+        unit.card_type = getValue(node, "card_type") || "2";
         addNumericField(unit, node, "shard_card");
         unit.type = getValue(node, "type") || 0;
         unit.sub_type = (getValues(node, "sub_type") || []);
