@@ -401,12 +401,12 @@ var SIMULATOR = {};
 				affected++;
 
 				var protect_amt = protect;
-				if (!protect_amt) {
-					var mult = skill.mult;
+				var mult = skill.mult;
+				if (mult) {
 					if (!target.isActive()) {
 						mult += (skill.on_delay_mult || 0);
 					}
-					protect_amt = Math.ceil(target.health * mult);
+					protect_amt += Math.ceil(target.health * mult);
 				}
 
 				target.protected += protect_amt;
@@ -519,11 +519,7 @@ var SIMULATOR = {};
 
 				affected++;
 
-				var heal_amt = heal;
-				if (!heal_amt) {
-					var mult = skill.mult;
-					heal_amt = Math.ceil(target.health * mult);
-				}
+				var heal_amt = heal + getSkillMult(skill, target);
 
 				var additionalMaxHealth = 0;
 				if (invigorate) {
@@ -1130,11 +1126,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 
-				var rally_amt = rally;
-				if (!rally_amt) {
-					var mult = skill.mult;
-					rally_amt = Math.ceil(target.attack * mult);
-				}
+				var rally_amt = rally + getSkillMult(skill, target, 'attack');
 
 				target.attack_rally += rally_amt;
 				if (debug) {
@@ -1197,11 +1189,7 @@ var SIMULATOR = {};
 
 				affected++;
 
-				var rally_amt = rally;
-				if (!rally_amt) {
-					var mult = skill.mult;
-					rally_amt = Math.ceil(target.attack * mult);
-				}
+				var rally_amt = rally + getSkillMult(skill, target, 'attack');
 
 				target.attack_rally += rally_amt;
 				if (debug) {
@@ -1660,15 +1648,7 @@ var SIMULATOR = {};
 
 		ambush: function (src_card, target, skill) {
 
-			var x = skill.x;
-			var base = skill.base;
-			var mult = skill.mult;
-
-			var damage = x;
-			if (!damage) {
-				var mult = skill.mult;
-				damage = Math.ceil(target[base] * mult);
-			}
+			var damage = skill.x + getSkillMult(skill, target);
 
 			do_damage(src_card, target, damage, null, function (source, target, amount) {
 				echo += debug_name(source) + ' ambushes ' + debug_name(target) + ' for ' + amount + ' damage';
@@ -1680,15 +1660,7 @@ var SIMULATOR = {};
 
 		slow: function (src_card, target, skill) {
 
-			var x = skill.x;
-			var base = skill.base;
-			var mult = skill.mult;
-
-			var slow = x;
-			if (!slow) {
-				var mult = skill.mult;
-				slow = Math.ceil(target[base] * mult);
-			}
+			var slow = skill.x + getSkillMult(skill, target);
 
 			target.timer += slow;
 

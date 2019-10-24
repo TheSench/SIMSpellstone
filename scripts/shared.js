@@ -678,6 +678,16 @@ var getEnhancement = function (card, s, base) {
     return enhanced;
 };
 
+var getSkillMult = function(skill, target, defaultBase) {
+    var mult = skill.mult;
+    if(mult) {
+        var base = skill.base || defaultBase || 'health';
+        return Math.ceil(mult * target[base]);
+    } else {
+        return 0;
+    }
+}
+
 var isImbued = function (card, skillID, i) {
     var activation = false;
     var imbueSkillsKey;
