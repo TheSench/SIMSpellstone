@@ -40969,5 +40969,102 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 19 Boss Node Solaron's Chosen -->
+  <mission>
+    <id>6304</id>
+    <name>Brewing Storm</name>
+    <energy>9</energy>
+    <desc>Dark clouds gather in the sky, a chilled wind sweeping through the stone walls. Rain begin to fall, lightly pattering against the citadel. The monks' forms waver between human and Elemental.</desc>
+    <commander id="442" />
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1641" name="Rhythm of the Wyld" />
+      <card id="7176" name="Streambender" />
+      <card id="5013" name="Radiance" />
+      <card id="5045" name="Echo Elemental" />
+      <card id="7028" name="Frozen Tide" />
+      <card id="5082" name="Memory" />
+      <card id="5048" mastery_level="2" name="Highborn Rose" />
+      <card id="2022" mastery_level="3" name="Avalanche Equine" />
+      <card id="5136" mastery_level="4" name="Lapis" />
+      <card id="4020" mastery_level="5" name="Sound of Death" />
+      <card id="7134" mastery_level="6" name="Prismadew" />
+      <card id="8037" mastery_level="7" name="Sludge River" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6305</id>
+    <name>Forbidden Pact</name>
+    <energy>9</energy>
+    <desc>Kensho reaches out his hand, meeting the wispy tendril of a wind Elemental. Its energy seeps further, soaking into Kensho's body. The air becomes more and more frigid with each passing second.</desc>
+    <commander id="442" />
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1641" name="Rhythm of the Wyld" />
+      <card id="7176" name="Streambender" />
+      <card id="5013" name="Radiance" />
+      <card id="5045" name="Echo Elemental" />
+      <card id="7028" name="Frozen Tide" />
+      <card id="5082" name="Memory" />
+      <card id="5048" mastery_level="2" name="Highborn Rose" />
+      <card id="2022" mastery_level="3" name="Avalanche Equine" />
+      <card id="5136" mastery_level="4" name="Lapis" />
+      <card id="4020" mastery_level="5" name="Sound of Death" />
+      <card id="7134" mastery_level="6" name="Prismadew" />
+      <card id="8037" mastery_level="7" name="Sludge River" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6306</id>
+    <name>Nirvana</name>
+    <energy>9</energy>
+    <desc>The rain falls faster, the wind's whisper beginning to crescendo. The Elemental has completely fused with Kensho. His form is barely human, the shape vaguely familiar, but comprised of air and swirling water.</desc>
+    <commander id="442" />
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1641" name="Rhythm of the Wyld" />
+      <card id="7176" name="Streambender" />
+      <card id="5013" name="Radiance" />
+      <card id="5045" name="Echo Elemental" />
+      <card id="7028" name="Frozen Tide" />
+      <card id="5082" name="Memory" />
+      <card id="5048" mastery_level="2" name="Highborn Rose" />
+      <card id="2022" mastery_level="3" name="Avalanche Equine" />
+      <card id="5136" mastery_level="4" name="Lapis" />
+      <card id="4020" mastery_level="5" name="Sound of Death" />
+      <card id="7134" mastery_level="6" name="Prismadew" />
+      <card id="8037" mastery_level="7" name="Sludge River" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6307</id>
+    <name>Battle of Keepers</name>
+    <energy>9</energy>
+    <desc>You and Oda flee. Desperately you run through the halls, the Elementals right on your heels. When at last you reach the entrance, you are too late. Kensho blocks the gate, the hoard of Elementals promising a fierce fight.</desc>
+    <commander id="442" />
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1641" name="Rhythm of the Wyld" />
+      <card id="7176" name="Streambender" />
+      <card id="5013" name="Radiance" />
+      <card id="5045" name="Echo Elemental" />
+      <card id="7028" name="Frozen Tide" />
+      <card id="5082" name="Memory" />
+      <card id="5048" mastery_level="2" name="Highborn Rose" />
+      <card id="2022" mastery_level="3" name="Avalanche Equine" />
+      <card id="5136" mastery_level="4" name="Lapis" />
+      <card id="4020" mastery_level="5" name="Sound of Death" />
+      <card id="7134" mastery_level="6" name="Prismadew" />
+      <card id="8037" mastery_level="7" name="Sludge River" />
+    </deck>
+  </mission>
 </root>
 

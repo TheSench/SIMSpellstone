@@ -4038,6 +4038,14 @@
     <card_id>25247</card_id>
     <resource card_id="15247" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15249</card_id>
+    <resource card_id="5249" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25249</card_id>
+    <resource card_id="15249" number="2" />
+  </fusion_recipe>
   <!-- END AETHER PREMIUM SET -->
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>

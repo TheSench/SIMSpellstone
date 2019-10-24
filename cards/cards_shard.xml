@@ -4102,5 +4102,95 @@
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7607</id>
+    <card_type>2</card_type>
+    <name>Malik, Hollow Djinn</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Void_Elemental</picture>
+    <asset_bundle>174</asset_bundle>
+    <hidden_until_time>1571936400</hidden_until_time>
+    <!-- Thursday, 24 October 2019 17:00:00 -->
+    <item_name>Malik Stone</item_name>
+    <item_desc>Collect Malik Stones to upgrade the Legendary Malik, Hollow Djinn card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <attack>11</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="pierce" x="11" />
+    <skill id="nullify" x="3" />
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+      <skill id="regenerate" x="6" />
+      <skill id="pierce" x="12" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="regenerate" x="7" />
+      <skill id="pierce" x="12" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
+      <skill id="regenerate" x="7" />
+      <skill id="pierce" x="13" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="regenerate" x="7" />
+      <skill id="pierce" x="13" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="regenerate" x="8" />
+      <skill id="pierce" x="13" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>14</attack>
+      <skill id="regenerate" x="8" />
+      <skill id="pierce" x="14" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>30</health>
+      <skill id="regenerate" x="8" />
+      <skill id="pierce" x="14" />
+      <skill id="nullify" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>31</health>
+      <skill id="regenerate" x="9" />
+      <skill id="pierce" x="14" />
+      <skill id="nullify" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>15</attack>
+      <health>32</health>
+      <skill id="regenerate" x="9" />
+      <skill id="pierce" x="15" />
+      <skill id="nullify" x="5" />
+    </upgrade>
+  </unit>
 </root>
 

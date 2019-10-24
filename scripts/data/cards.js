@@ -24674,6 +24674,137 @@ var CARDS = {
 			}
 		}
 	},
+	"442": {
+		"card_type": "1",
+		"health": 91,
+		"id": "442",
+		"maxLevel": 6,
+		"name": "Kensho, the Aeromaster",
+		"picture": "portrait_elemental_air_monk_ sage",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3
+			}
+		],
+		"sub_type": [],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -68667,6 +68798,87 @@ var CARDS = {
 			}
 		}
 	},
+	"5249": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1572109200000",
+		"id": "5249",
+		"maxLevel": 6,
+		"name": "Seraph of Singularities",
+		"picture": "Elemental_Angel_Black_Energy_Angel_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"c": 6,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5",
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"attack": 6,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -74162,8 +74374,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "legion",
-				"x": 3,
-				"y": "5"
+				"x": 3
 			},
 			{
 				"id": "enfeeble",
@@ -74195,8 +74406,7 @@ var CARDS = {
 					},
 					{
 						"id": "legion",
-						"x": 3,
-						"y": "5"
+						"x": 3
 					},
 					{
 						"id": "enfeeble",
@@ -74213,8 +74423,7 @@ var CARDS = {
 					},
 					{
 						"id": "legion",
-						"x": 3,
-						"y": "5"
+						"x": 3
 					},
 					{
 						"all": "1",
@@ -111770,6 +111979,194 @@ var CARDS = {
 					{
 						"c": 3,
 						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"7607": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1571936400000",
+		"id": "7607",
+		"maxLevel": 10,
+		"name": "Malik, Hollow Djinn",
+		"picture": "Elemental_Void_Elemental",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "pierce",
+				"x": 11
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 13
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 13
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 29,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "pierce",
+						"x": 13
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"7": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "pierce",
+						"x": 14
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"8": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "pierce",
+						"x": 14
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					}
+				]
+			},
+			"9": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "pierce",
+						"x": 14
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					}
+				]
+			},
+			"10": {
+				"attack": 15,
+				"health": 32,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "pierce",
+						"x": 15
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			}
@@ -165085,6 +165482,87 @@ var CARDS = {
 			}
 		}
 	},
+	"15249": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1572109200000",
+		"id": "15249",
+		"maxLevel": 6,
+		"name": "Seraph of Horizons",
+		"picture": "Elemental_Angel_Black_Energy_Angel_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5",
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 27,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -168666,8 +169144,7 @@ var CARDS = {
 			},
 			{
 				"id": "legion",
-				"x": 3,
-				"y": "5"
+				"x": 3
 			},
 			{
 				"all": "1",
@@ -168688,8 +169165,7 @@ var CARDS = {
 					},
 					{
 						"id": "legion",
-						"x": 4,
-						"y": "5"
+						"x": 4
 					},
 					{
 						"all": "1",
@@ -168718,8 +169194,7 @@ var CARDS = {
 					},
 					{
 						"id": "legion",
-						"x": 5,
-						"y": "5"
+						"x": 5
 					},
 					{
 						"all": "1",
@@ -228190,7 +228665,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 26,
+				"health": 28,
 				"skill": []
 			},
 			"3": {
@@ -247340,6 +247815,87 @@ var CARDS = {
 			}
 		}
 	},
+	"25249": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1572109200000",
+		"id": "25249",
+		"maxLevel": 6,
+		"name": "Seraph of the Paradox",
+		"picture": "Elemental_Angel_Black_Energy_Angel_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5",
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"health": 29,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -251055,8 +251611,7 @@ var CARDS = {
 			},
 			{
 				"id": "legion",
-				"x": 5,
-				"y": "5"
+				"x": 5
 			},
 			{
 				"all": "1",
@@ -251085,8 +251640,7 @@ var CARDS = {
 					},
 					{
 						"id": "legion",
-						"x": 5,
-						"y": "5"
+						"x": 5
 					},
 					{
 						"all": "1",
@@ -251107,8 +251661,7 @@ var CARDS = {
 					},
 					{
 						"id": "legion",
-						"x": 6,
-						"y": "5"
+						"x": 6
 					},
 					{
 						"all": "1",

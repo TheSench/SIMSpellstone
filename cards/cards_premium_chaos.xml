@@ -5750,7 +5750,7 @@
     <health>19</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="legion" x="3" y="5" />
+    <skill id="legion" x="3" />
     <skill id="enfeeble" x="1" />
     <type>2</type>
     <sub_type>5</sub_type>
@@ -5770,14 +5770,14 @@
     <upgrade>
       <level>5</level>
       <skill id="evade" x="1" />
-      <skill id="legion" x="3" y="5" />
+      <skill id="legion" x="3" />
       <skill id="enfeeble" x="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>22</health>
       <skill id="evade" x="1" />
-      <skill id="legion" x="3" y="5" />
+      <skill id="legion" x="3" />
       <skill id="enfeeble" x="1" all="1" />
     </upgrade>
   </unit>
@@ -5793,7 +5793,7 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
-    <skill id="legion" x="3" y="5" />
+    <skill id="legion" x="3" />
     <skill id="enfeeble" x="2" all="1" />
     <type>2</type>
     <sub_type>5</sub_type>
@@ -5801,7 +5801,7 @@
     <upgrade>
       <level>2</level>
       <skill id="evade" x="1" />
-      <skill id="legion" x="4" y="5" />
+      <skill id="legion" x="4" />
       <skill id="enfeeble" x="2" all="1" />
     </upgrade>
     <upgrade>
@@ -5819,7 +5819,7 @@
     <upgrade>
       <level>6</level>
       <skill id="evade" x="1" />
-      <skill id="legion" x="5" y="5" />
+      <skill id="legion" x="5" />
       <skill id="enfeeble" x="2" all="1" />
     </upgrade>
   </unit>
@@ -5835,7 +5835,7 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
-    <skill id="legion" x="5" y="5" />
+    <skill id="legion" x="5" />
     <skill id="enfeeble" x="2" all="1" />
     <type>2</type>
     <sub_type>5</sub_type>
@@ -5851,7 +5851,7 @@
     <upgrade>
       <level>4</level>
       <skill id="evade" x="2" />
-      <skill id="legion" x="5" y="5" />
+      <skill id="legion" x="5" />
       <skill id="enfeeble" x="2" all="1" />
     </upgrade>
     <upgrade>
@@ -5861,7 +5861,7 @@
     <upgrade>
       <level>6</level>
       <skill id="evade" x="2" />
-      <skill id="legion" x="6" y="5" />
+      <skill id="legion" x="6" />
       <skill id="enfeeble" x="3" all="1" />
     </upgrade>
   </unit>
@@ -31678,7 +31678,7 @@
     <card_type>2</card_type>
     <name>Witchflare Drake</name>
     <picture>Elemental_Dragon_Green_Fire_A</picture>
-    <asset_bundle>172</asset_bundle>
+    <asset_bundle>174</asset_bundle>
     <hidden_until_time>1571677200</hidden_until_time>
     <attack>6</attack>
     <health>35</health>
@@ -31722,7 +31722,7 @@
     <fusion_level>1</fusion_level>
     <name>Witchfire Drake</name>
     <picture>Elemental_Dragon_Green_Fire_A</picture>
-    <asset_bundle>172</asset_bundle>
+    <asset_bundle>174</asset_bundle>
     <hidden_until_time>1571677200</hidden_until_time>
     <attack>7</attack>
     <health>38</health>
@@ -31766,7 +31766,7 @@
     <fusion_level>2</fusion_level>
     <name>Witchflame Drake</name>
     <picture>Elemental_Dragon_Green_Fire_B</picture>
-    <asset_bundle>172</asset_bundle>
+    <asset_bundle>174</asset_bundle>
     <hidden_until_time>1571677200</hidden_until_time>
     <attack>9</attack>
     <health>40</health>
