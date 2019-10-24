@@ -4118,8 +4118,8 @@
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
-    <type>3</type>
-    <sub_type>16</sub_type>
+    <type>2</type>
+    <sub_type>5</sub_type>
     <attack>11</attack>
     <health>26</health>
     <cost>2</cost>

@@ -112012,9 +112012,9 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"16"
+			"5"
 		],
-		"type": "3",
+		"type": "2",
 		"upgrades": {
 			"2": {
 				"attack": 12,
