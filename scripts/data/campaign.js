@@ -4210,6 +4210,19 @@ var CAMPAIGNS = {
 		],
 		"name": "Seastone Staff's Fate"
 	},
+	"1225": {
+		"id": "1225",
+		"items": {
+			"3080": 0.4
+		},
+		"location_id": "25",
+		"missions": [
+			"6095",
+			"6096",
+			"6097"
+		],
+		"name": "Legend of Pumpking"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
