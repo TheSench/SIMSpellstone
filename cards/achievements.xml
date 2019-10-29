@@ -11651,8 +11651,8 @@
     <id>3517</id>
     <type>2</type>
     <order>101</order>
-    <name>TBD</name>
-    <desc>Complete the 'TBD' campaign on Mastery Level 1.</desc>
+    <name>Return to Seastone Citadel</name>
+    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 1.</desc>
     <mission_req>6292</mission_req>
     <locked_start_time>1572541200</locked_start_time>
     <!--  Thursday, 31 October 2019 17:00:00 -->
@@ -11662,6 +11662,70 @@
     </req>
     <reward>
       <item id="8020" number="1" />
+    </reward>
+  </achievement>
+  <!-- Halloween Elemental 2019 -->
+  <achievement>
+    <id>3518</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Myth of Pumpking</name>
+    <desc>Complete the 'Myth of Pumpking' campaign on Mastery Level 1.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1225</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3519</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Myth of Pumpking</name>
+    <desc>Complete the 'Myth of Pumpking' campaign on Mastery Level 2.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3518</achievement_req>
+    <req>
+      <campaign>1225</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3520</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Myth of Pumpking</name>
+    <desc>Complete the 'Myth of Pumpking' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3519</achievement_req>
+    <req>
+      <campaign>1225</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3521</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Myth of Pumpking</name>
+    <desc>Complete the 'Myth of Pumpking' campaign on Mastery Level 6.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3520</achievement_req>
+    <req>
+      <campaign>1225</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <pack>12</pack>
     </reward>
   </achievement>
   <!-- END Event Quests  -->

@@ -10884,7 +10884,7 @@
     <id>442</id>
     <card_type>1</card_type>
     <name>Kensho, the Aeromaster</name>
-    <portrait>Elemental_Air_Monk_ Sage</portrait>
+    <portrait>Portrait_Elemental_Air_Monk_Sage</portrait>
     <asset_bundle>160</asset_bundle>
     <health>91</health>
     <rarity>4</rarity>

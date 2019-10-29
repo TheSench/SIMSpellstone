@@ -4210,16 +4210,31 @@ var CAMPAIGNS = {
 		],
 		"name": "Seastone Staff's Fate"
 	},
-	"1225": {
-		"id": "1225",
+	"1224": {
+		"battleground_id": "2080",
+		"id": "1224",
 		"items": {
-			"3080": 0.4
+			"3101": 0.4
 		},
 		"location_id": "25",
 		"missions": [
-			"6095",
-			"6096",
-			"6097"
+			"6304",
+			"6305",
+			"6306",
+			"6307"
+		],
+		"name": "Solaron's Chosen"
+	},
+	"1225": {
+		"id": "1225",
+		"items": {
+			"3101": 0.2
+		},
+		"location_id": "25",
+		"missions": [
+			"6308",
+			"6309",
+			"6310"
 		],
 		"name": "Legend of Pumpking"
 	},
@@ -92836,5 +92851,185 @@ var MISSIONS = {
 		],
 		"id": "6307",
 		"name": "Battle of Keepers"
+	},
+	"6308": {
+		"commander": {
+			"id": "240"
+		},
+		"deck": [
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1329"
+			},
+			{
+				"id": "1330"
+			},
+			{
+				"id": "1330"
+			},
+			{
+				"id": "11331"
+			},
+			{
+				"id": "1328",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2024",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1626",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5082",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6035",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6308",
+		"name": "Ghostly Legend"
+	},
+	"6309": {
+		"commander": {
+			"id": "342"
+		},
+		"deck": [
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "1332"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6309",
+		"name": "Pumpking's Curse"
+	},
+	"6310": {
+		"commander": {
+			"id": "342"
+		},
+		"deck": [
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1315"
+			},
+			{
+				"id": "1315"
+			},
+			{
+				"id": "1632"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5035",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2062",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6310",
+		"name": "Pumpking's Appearance"
 	}
 };

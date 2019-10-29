@@ -24680,7 +24680,7 @@ var CARDS = {
 		"id": "442",
 		"maxLevel": 6,
 		"name": "Kensho, the Aeromaster",
-		"picture": "portrait_elemental_air_monk_ sage",
+		"picture": "portrait_elemental_air_monk_sage",
 		"rarity": 4,
 		"set": "9999",
 		"skill": [

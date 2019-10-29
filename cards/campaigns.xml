@@ -7628,6 +7628,44 @@
     </rewards>
     <find_item id="3101" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node Solaron's Chosen -->
+  <campaign>
+    <id>1224</id>
+    <name>Solaron's Chosen</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1223" level="1" />
+    <locked_start_time>1572541200</locked_start_time>
+    <!--  Thursday, 31 October 2019 17:00:00 -->
+    <battleground_id>2080</battleground_id>
+    <location_id>25</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>550</x>
+    <y>500</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6304</mission_id>
+      <mission_id>6305</mission_id>
+      <mission_id>6306</mission_id>
+      <mission_id>6307</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3102" />
+      <!-- Avalanche Spellstone  -->
+      <item level="5" id="3102" />
+      <!--  Avalanche Spellstone  -->
+      <item level="6" id="3102" />
+      <!--  Avalanche Spellstone  -->
+      <item level="7" id="3102" />
+      <!--  Avalanche Spellstone  -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".4" />
+    <!-- Soul of Silver  -->
+  </campaign>
   <!-- Halloween Elemental 2019 -->
   <campaign>
     <id>1225</id>
@@ -7635,26 +7673,27 @@
     <event_only>1</event_only>
     <name>Legend of Pumpking</name>
     <icon id="pumpkin" bundle="75" />
-    <!-- <locked_start_time>1509210000</locked_start_time>	 Sat, 28 Oct 2017 17:00:00 GMT -->
+    <locked_start_time>1572368400</locked_start_time>
+    <!-- Tuesday, 29 October 2019 17:00:00 -->
     <location_id>25</location_id>
-    <x>500</x>
-    <y>160</y>
+    <x>320</x>
+    <y>495</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
-      <mission_id>6095</mission_id>
-      <mission_id>6096</mission_id>
-      <mission_id>6097</mission_id>
+      <mission_id>6308</mission_id>
+      <mission_id>6309</mission_id>
+      <mission_id>6310</mission_id>
     </missions>
     <rewards>
-      <card level="1" id="12060" />
+      <card level="1" id="12170" />
       <card level="2" id="502" />
       <card level="3" id="502" />
       <card level="4" id="503" />
-      <card level="5" id="502" />
-      <card level="6" id="502" />
-      <card level="7" id="12060" />
+      <item level="5" id="104025" number="50" />
+      <card level="6" id="12170" />
+      <item level="7" id="104025" number="150" />
     </rewards>
-    <find_item id="3080" drop_per_energy=".4" />
+    <find_item id="3101" drop_per_energy=".2" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
