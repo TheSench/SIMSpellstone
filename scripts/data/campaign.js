@@ -92618,7 +92618,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "8033"
+				"id": "2058"
 			},
 			{
 				"id": "1642"
@@ -92657,7 +92657,7 @@ var MISSIONS = {
 				"mastery_level": "4"
 			},
 			{
-				"id": "4020",
+				"id": "5013",
 				"mastery_level": "5"
 			},
 			{
@@ -92678,7 +92678,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "8033"
+				"id": "2058"
 			},
 			{
 				"id": "1642"
@@ -92717,7 +92717,7 @@ var MISSIONS = {
 				"mastery_level": "4"
 			},
 			{
-				"id": "4020",
+				"id": "5013",
 				"mastery_level": "5"
 			},
 			{
@@ -92738,7 +92738,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "8033"
+				"id": "2058"
 			},
 			{
 				"id": "1642"
@@ -92777,7 +92777,7 @@ var MISSIONS = {
 				"mastery_level": "4"
 			},
 			{
-				"id": "4020",
+				"id": "5013",
 				"mastery_level": "5"
 			},
 			{
@@ -92798,7 +92798,7 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "8033"
+				"id": "2058"
 			},
 			{
 				"id": "1642"
@@ -92837,7 +92837,7 @@ var MISSIONS = {
 				"mastery_level": "4"
 			},
 			{
-				"id": "4020",
+				"id": "5013",
 				"mastery_level": "5"
 			},
 			{

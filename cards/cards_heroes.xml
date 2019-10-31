@@ -10891,7 +10891,7 @@
     <skill id="protect" x="4" all="1" />
     <skill id="heal" x="3" all="1" />
     <skill id="enrage" all="1" x="3" />
-    <type>8</type>
+    <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -10910,21 +10910,21 @@
     <upgrade>
       <level>4</level>
       <health>96</health>
-      <skill id="protect" x="6" all="1" />
+      <skill id="protect" x="5" all="1" />
       <skill id="heal" x="4" all="1" />
       <skill id="enrage" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>97</health>
-      <skill id="protect" x="6" all="1" />
+      <skill id="protect" x="5" all="1" />
       <skill id="heal" x="5" all="1" />
       <skill id="enrage" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="protect" x="7" all="1" />
+      <skill id="protect" x="5" all="1" />
       <skill id="heal" x="5" all="1" />
       <skill id="enrage" all="1" x="5" />
     </upgrade>

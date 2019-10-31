@@ -2793,7 +2793,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult=".2" mult=".01" />
     </effect>
   </battleground>
   <!-- Universal EBGE weeks 5-8 -->

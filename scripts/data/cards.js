@@ -24701,7 +24701,7 @@ var CARDS = {
 			}
 		],
 		"sub_type": [],
-		"type": "8",
+		"type": "1",
 		"upgrades": {
 			"2": {
 				"health": 92,
@@ -24749,7 +24749,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 6
+						"x": 5
 					},
 					{
 						"all": "1",
@@ -24769,7 +24769,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 6
+						"x": 5
 					},
 					{
 						"all": "1",
@@ -24789,7 +24789,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "protect",
-						"x": 7
+						"x": 5
 					},
 					{
 						"all": "1",
@@ -68798,6 +68798,100 @@ var CARDS = {
 			}
 		}
 	},
+	"5248": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1572541200000",
+		"id": "5248",
+		"maxLevel": 6,
+		"name": "Noble Ophanim",
+		"picture": "Elemental_Angel_Celestial_Orb_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"5249": {
 		"attack": 5,
 		"card_type": "2",
@@ -68876,6 +68970,99 @@ var CARDS = {
 			"6": {
 				"health": 25,
 				"skill": []
+			}
+		}
+	},
+	"5250": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"hidden_until": "1572886800000",
+		"id": "5250",
+		"maxLevel": 6,
+		"name": "Kunohana Nymph",
+		"picture": "Elemental_Sakura_Petal_Fey_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 3,
+				"y": "5"
+			},
+			{
+				"id": "pierce",
+				"x": 8
+			},
+			{
+				"c": 5,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 3,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 14,
+				"skill": []
+			},
+			"4": {
+				"attack": 5,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
 			}
 		}
 	},
@@ -110568,6 +110755,73 @@ var CARDS = {
 			},
 			"6": {
 				"health": 24,
+				"skill": []
+			}
+		}
+	},
+	"7252": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1572541200000",
+		"id": "7252",
+		"maxLevel": 6,
+		"name": "Glaistig Warden",
+		"picture": "Elemental_Woodland_Watcher_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"attack": 6,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"health": 24,
+				"skill": []
+			},
+			"6": {
+				"attack": 7,
 				"skill": []
 			}
 		}
@@ -165482,6 +165736,100 @@ var CARDS = {
 			}
 		}
 	},
+	"15248": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1572541200000",
+		"id": "15248",
+		"maxLevel": 6,
+		"name": "Regal Ophanim",
+		"picture": "Elemental_Angel_Celestial_Orb_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "counterburn",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
+			}
+		}
+	},
 	"15249": {
 		"attack": 6,
 		"card_type": "2",
@@ -165557,6 +165905,99 @@ var CARDS = {
 					},
 					{
 						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"15250": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1572886800000",
+		"id": "15250",
+		"maxLevel": 6,
+		"name": "Kunohana Maiden",
+		"picture": "Elemental_Sakura_Petal_Fey_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 4,
+				"y": "5"
+			},
+			{
+				"id": "pierce",
+				"x": 9
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 5,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 5,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 16,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 5,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"c": 2,
 						"id": "flurry"
 					}
 				]
@@ -207529,6 +207970,99 @@ var CARDS = {
 			}
 		}
 	},
+	"17252": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1572541200000",
+		"id": "17252",
+		"maxLevel": 6,
+		"name": "Glaistig Witch",
+		"picture": "Elemental_Woodland_Watcher_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 25,
+				"skill": []
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -247815,6 +248349,100 @@ var CARDS = {
 			}
 		}
 	},
+	"25248": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1572541200000",
+		"id": "25248",
+		"maxLevel": 6,
+		"name": "Exalted Ophanim",
+		"picture": "Elemental_Angel_Celestial_Orb_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"25249": {
 		"attack": 8,
 		"card_type": "2",
@@ -247890,6 +248518,86 @@ var CARDS = {
 					},
 					{
 						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"25250": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1572886800000",
+		"id": "25250",
+		"maxLevel": 6,
+		"name": "Kunohana Priestess",
+		"picture": "Elemental_Sakura_Petal_Fey_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 6,
+				"y": "5"
+			},
+			{
+				"id": "pierce",
+				"x": 10
+			},
+			{
+				"c": 2,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 17,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"health": 18,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "5"
+					},
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"c": 2,
 						"id": "flurry"
 					}
 				]
@@ -289858,6 +290566,99 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"27252": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1572541200000",
+		"id": "27252",
+		"maxLevel": 6,
+		"name": "Glaistig Enchantress",
+		"picture": "Elemental_Woodland_Watcher_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
 					}
 				]
 			}

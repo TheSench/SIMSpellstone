@@ -3323,7 +3323,7 @@ var BATTLEGROUNDS = {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
 		"effect": [
 			{
-				"base_mult": 0.3,
+				"base_mult": 0.2,
 				"effect_type": "scale_attributes",
 				"mult": 0.01
 			}
