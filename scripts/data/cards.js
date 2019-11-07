@@ -89948,6 +89948,95 @@ var CARDS = {
 			}
 		}
 	},
+	"6251": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1573146000000",
+		"id": "6251",
+		"maxLevel": 6,
+		"name": "Lavahorn Rhino",
+		"picture": "Elemental_Magma_Rhino_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"id": "pierce",
+				"x": 9
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -110822,6 +110911,89 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 7,
+				"skill": []
+			}
+		}
+	},
+	"7253": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1573491600000",
+		"id": "7253",
+		"maxLevel": 6,
+		"name": "Rockheart Pebble",
+		"picture": "Elemental_Cute_Elemental_Buddy_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"attack": 4,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"health": 24,
 				"skill": []
 			}
 		}
@@ -186579,6 +186751,95 @@ var CARDS = {
 			}
 		}
 	},
+	"16251": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 40,
+		"hidden_until": "1573146000000",
+		"id": "16251",
+		"maxLevel": 6,
+		"name": "Lavahorn Beast",
+		"picture": "Elemental_Magma_Rhino_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 4
+			},
+			{
+				"id": "pierce",
+				"x": 10
+			},
+			{
+				"id": "berserk",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 41,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -208057,6 +208318,103 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
+	"17253": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1573491600000",
+		"id": "17253",
+		"maxLevel": 6,
+		"name": "Rockheart Elemental",
+		"picture": "Elemental_Cute_Elemental_Buddy_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"attack": 5,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
 						"x": 2
 					}
 				]
@@ -269062,6 +269420,95 @@ var CARDS = {
 			}
 		}
 	},
+	"26251": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 42,
+		"hidden_until": "1573146000000",
+		"id": "26251",
+		"maxLevel": 6,
+		"name": "Lavahorn Monster",
+		"picture": "Elemental_Magma_Rhino_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"id": "pierce",
+				"x": 11
+			},
+			{
+				"id": "berserk",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 43,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"id": "berserk",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -290658,6 +291105,103 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"27253": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1573491600000",
+		"id": "27253",
+		"maxLevel": 6,
+		"name": "Rockheart Giant",
+		"picture": "Elemental_Cute_Elemental_Buddy_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
 						"x": 3
 					}
 				]

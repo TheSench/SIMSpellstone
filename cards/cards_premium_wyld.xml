@@ -32576,5 +32576,137 @@
       <skill id="enfeeble" x="3" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7253</id>
+    <card_type>2</card_type>
+    <name>Rockheart Pebble</name>
+    <picture>Elemental_Cute_Elemental_Buddy_A</picture>
+    <asset_bundle>174</asset_bundle>
+    <hidden_until_time>1573491600</hidden_until_time>
+    <attack>3</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="protect" x="1" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17253</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Rockheart Elemental</name>
+    <picture>Elemental_Cute_Elemental_Buddy_A</picture>
+    <asset_bundle>174</asset_bundle>
+    <hidden_until_time>1573491600</hidden_until_time>
+    <attack>4</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="7" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="protect" x="1" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27253</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Rockheart Giant</name>
+    <picture>Elemental_Cute_Elemental_Buddy_B</picture>
+    <asset_bundle>174</asset_bundle>
+    <hidden_until_time>1573491600</hidden_until_time>
+    <attack>5</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="8" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="protect" x="2" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="3" all="1" />
+    </upgrade>
+  </unit>
 </root>
 

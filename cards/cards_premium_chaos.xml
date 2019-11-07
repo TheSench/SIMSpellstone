@@ -31804,5 +31804,139 @@
       <skill id="berserk" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6251</id>
+    <card_type>2</card_type>
+    <name>Lavahorn Rhino</name>
+    <picture>Elemental_Magma_Rhino_A</picture>
+    <asset_bundle>174</asset_bundle>
+    <hidden_until_time>1573146000</hidden_until_time>
+    <attack>8</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="pierce" x="9" />
+    <skill id="berserk" x="5" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="4" />
+      <skill id="pierce" x="9" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="4" />
+      <skill id="pierce" x="10" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="4" />
+      <skill id="pierce" x="10" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16251</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Lavahorn Beast</name>
+    <picture>Elemental_Magma_Rhino_A</picture>
+    <asset_bundle>174</asset_bundle>
+    <hidden_until_time>1573146000</hidden_until_time>
+    <attack>10</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="pierce" x="10" />
+    <skill id="berserk" x="6" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="5" />
+      <skill id="pierce" x="10" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="5" />
+      <skill id="pierce" x="11" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="5" />
+      <skill id="pierce" x="11" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26251</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Lavahorn Monster</name>
+    <picture>Elemental_Magma_Rhino_B</picture>
+    <asset_bundle>174</asset_bundle>
+    <hidden_until_time>1573146000</hidden_until_time>
+    <attack>11</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="5" />
+    <skill id="pierce" x="11" />
+    <skill id="berserk" x="7" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="6" />
+      <skill id="pierce" x="11" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="6" />
+      <skill id="pierce" x="12" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="6" />
+      <skill id="pierce" x="12" />
+      <skill id="berserk" x="8" />
+    </upgrade>
+  </unit>
 </root>
 

@@ -41185,5 +41185,392 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 19 Node 3 -->
+  <mission>
+    <id>6311</id>
+    <name>Phantom Monks</name>
+    <energy>18</energy>
+    <desc>A choked sob escapes Oda. His friends and family, previously thought dead, now stand alive before him. As he reaches out to touch one, his hand dispells the illusion, revealing an Elemental.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="5133" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2010" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="5145" name="Gobsnout Piercer" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5145" mastery_level="2" name="Gobsnout Piercer" />
+      <card id="5146" mastery_level="3" name="Lullmage Whisperer" />
+      <card id="2058" mastery_level="4" name="Bismuth Bully" />
+      <card id="5079" mastery_level="5" name="Cyclopnid" />
+      <card id="5136" mastery_level="6" name="Lapis" />
+      <card id="5209" mastery_level="7" name="Fowlmaster" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>What... is this? They're not real?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6312</id>
+    <name>Aether's Will</name>
+    <energy>18</energy>
+    <desc>The Elementals have disguised their forms to look like the monks from the First Order. However, getting close to them dispells it quickly. Oda's joy quickly breaks into sorrow.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="8035" name="Radium Corrupter" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="6015" />
+      <card id="6135" name="Burnshell" />
+      <card id="6135" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="2053" mastery_level="2" name="Rocket Rider" />
+      <card id="2126" mastery_level="3" name="One Punch Flare" />
+      <card id="2138" mastery_level="4" name="Magma Cougar" />
+      <card id="6147" mastery_level="5" name="Sandspirit Whisperer" />
+      <card id="6136" mastery_level="6" name="Cosmic Elemental" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>It's a vision of what could come to pass if we were successful, Oda. Lord Solaron has been freed, and we must resume his will to conquer the Wyld and Chaos.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6313</id>
+    <name>New Aether Leader</name>
+    <energy>18</energy>
+    <desc>Kensho is working together with the Elementals. Somehow he is able to control them, not only to act as guardians for Seastone Citadel, but also to have them masquerade as other monks.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8034" name="Swiftness Feeder" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6005" name="Gloomkin" />
+      <card id="6005" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="2008" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2096" name="Magma Rider" />
+      <card id="6090" name="Crackshot" />
+      <card id="2096" mastery_level="2" name="Magma Rider" />
+      <card id="6090" mastery_level="3" name="Crackshot" />
+      <card id="1326" mastery_level="4" name="Titan of Fire" />
+      <card id="6178" mastery_level="5" name="Bitumen Elemental" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="6187" mastery_level="7" name="Xerkahn's Warship" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Samael has fallen, corrupted by The Void. He is impure. We need a new leader of Aether.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6314</id>
+    <name>Oda, Void Vanquisher</name>
+    <energy>18</energy>
+    <desc>Kensho heaps praise upon Oda. However, Kensho's own dreams do not align with Oda's desires...</desc>
+    <commander id="247" />
+    <deck>
+      <card id="8037" name="Sludge River" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="2031" name="Dryad" />
+      <card id="2031" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7015" />
+      <card id="1629" name="Rock Titan" />
+      <card id="7090" name="Prospector" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7090" mastery_level="2" name="Prospector" />
+      <card id="7146" mastery_level="3" name="Goblin Brigand" />
+      <card id="1629" mastery_level="4" name="Rock Titan" />
+      <card id="7189" mastery_level="5" name="Tidal Enchanter" />
+      <card id="7001" mastery_level="6" name="Hekaton" />
+      <card id="7188" mastery_level="7" name="Honeycomb Thrower" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Oda, you have stood against the might of The Void, and triumphed. None could be better suited to lead the Aether and revive our order!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6315</id>
+    <name>Oda's Vision</name>
+    <energy>18</energy>
+    <desc>Oda is heartbroken to hear of Kensho's plan. Everything Oda has done has been to restore balance to the world wrecked by The Void. Yet Kensho wants to conquor the Chaos and Wyld...</desc>
+    <commander id="298" />
+    <deck>
+      <card id="8032" name="Steelsword Raider" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="5133" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1026" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="5089" name="Gomblit" />
+      <card id="2148" name="Goctopus" />
+      <card id="5089" mastery_level="2" name="Gomblit" />
+      <card id="2148" mastery_level="3" name="Goctopus" />
+      <card id="1032" mastery_level="4" name="Lunar Elemental" />
+      <card id="5045" mastery_level="5" name="Echo Elemental" />
+      <card id="5048" mastery_level="6" name="Highborn Rose" />
+      <card id="5148" mastery_level="7" name="Gribmalda of Wings" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>What are you saying? I've been working for everyone to live together peacefully. We don't need to divide ourselves as Aether anymore.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6316</id>
+    <name>Kensho's Ambitions</name>
+    <energy>18</energy>
+    <desc>The Elementals move in closer as Oda and Kensho disagree on the next course of action. Kensho has built up a small elemental army in the Seastone Citadel.</desc>
+    <commander id="302" />
+    <deck>
+      <card id="8080" name="Solaron's Gust" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="5135" name="Shatterwind" />
+      <card id="5135" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5080" />
+      <card id="2154" name="Soul Wisp Gathering" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5091" mastery_level="2" name="Armor Thief" />
+      <card id="2064" mastery_level="3" name="Tome Sneak" />
+      <card id="2154" mastery_level="4" name="Soul Wisp Gathering" />
+      <card id="5049" mastery_level="5" name="Joryl" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5088" mastery_level="7" name="Betrayal" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>And besides, that, I... I am not as pure as you think. It it wasn't for the adventurer, I would have lost myself while confronting The Void.</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Lord Solaron has spoken, Oda. It is not a choice.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 19 Node 4 -->
+  <mission>
+    <id>6317</id>
+    <name>Elemental Fusion</name>
+    <energy>18</energy>
+    <desc>Kensho holds up his staff. A strange blue energy concentrates around him, the Elemental spirits being drawn to him... drawn INTO him. Kensho is absorbing all of their powers!</desc>
+    <commander id="281" />
+    <deck>
+      <card id="8036" name="Crystal Blockade" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="7021" />
+      <card id="2118" name="Luminescent Heron" />
+      <card id="2118" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="2120" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7145" mastery_level="2" name="Metalsmith" />
+      <card id="2102" mastery_level="3" name="Lowbog Shaman" />
+      <card id="7019" mastery_level="4" name="Lady of the Swamp" />
+      <card id="7013" mastery_level="5" name="Gold Elemental" />
+      <card id="1642" mastery_level="6" name="Icestone Beast" />
+      <card id="7226" mastery_level="7" name="Froglin" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>0</enemy>
+        <text>The Elementals will correct your mind.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>No! Joining your life force with the Elementals has warped your reason! That technique is forbidden.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6318</id>
+    <name>Pursuit</name>
+    <energy>18</energy>
+    <desc>Kensho has fused with the Elementals. More than just commanding them, his energy belongs to them as well. His form has gained great power from this transformation, but Oda would rather not fight him at all.</desc>
+    <commander id="247" />
+    <deck>
+      <card id="8037" name="Sludge River" />
+      <card id="7045" name="Sakura" />
+      <card id="7045" />
+      <card id="7075" name="Diamode" />
+      <card id="7075" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7015" />
+      <card id="7087" name="Goblites" />
+      <card id="1628" name="Garganotos" />
+      <card id="7087" mastery_level="2" name="Goblites" />
+      <card id="1628" mastery_level="3" name="Garganotos" />
+      <card id="7189" mastery_level="4" name="Tidal Enchanter" />
+      <card id="7028" mastery_level="5" name="Frozen Tide" />
+      <card id="1641" mastery_level="6" name="Rhythm of the Wyld" />
+      <card id="7026" mastery_level="7" name="Frostjaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, run! We have to get out of here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6319</id>
+    <name>Citadel Escape</name>
+    <energy>18</energy>
+    <desc>The gathering of Elementals is fearsome. You agree to Oda's quest and join him, running through the stone halls of Seastone Citadel, searching for the exit.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="5124" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5015" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="2095" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2148" name="Goctopus" />
+      <card id="5091" mastery_level="2" name="Armor Thief" />
+      <card id="2148" mastery_level="3" name="Goctopus" />
+      <card id="5136" mastery_level="4" name="Lapis" />
+      <card id="2007" mastery_level="5" name="Platinum Golem" />
+      <card id="5229" mastery_level="6" name="Nasim Drifter" />
+      <card id="5144" mastery_level="7" name="Wee Sparkcaster" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6320</id>
+    <name>Solaron's Will Aftermath</name>
+    <energy>18</energy>
+    <desc>Your fight against Kensho was fierce. In the end, he vanished in a flash of light. The elements disappear with him. Oda looks back at Seastone Citadel.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="2008" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="2101" mastery_level="2" name="Rot Goblin" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="6147" mastery_level="4" name="Sandspirit Whisperer" />
+      <card id="1343" mastery_level="5" name="Firehorn" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Master Kensho... I can't believe he's fallen so far.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6321</id>
+    <name>Missive's End</name>
+    <energy>18</energy>
+    <desc>You give Oda time to mourn what happened. He takes a few seconds to collect himself, before approaching you. He motions to the airship.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="8080" name="Solaron's Gust" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5080" />
+      <card id="5135" name="Shatterwind" />
+      <card id="5135" />
+      <card id="5089" name="Gomblit" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5089" mastery_level="2" name="Gomblit" />
+      <card id="5146" mastery_level="3" name="Lullmage Whisperer" />
+      <card id="5048" mastery_level="4" name="Highborn Rose" />
+      <card id="5248" mastery_level="5" name="Noble Ophanim" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5209" mastery_level="7" name="Fowlmaster" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I'm sorry. I'll be okay, I'm just... surprised. We should tell the others what happened here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6322</id>
+    <name>Unknown Titan Forces</name>
+    <energy>18</energy>
+    <desc>Kensho's missive was eerily accurate. The events at Seastone Citadel were just one part of the coming storm....</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="6005" name="Gloomkin" />
+      <card id="6005" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="6042" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2101" mastery_level="2" name="Rot Goblin" />
+      <card id="2053" mastery_level="3" name="Rocket Rider" />
+      <card id="6147" mastery_level="4" name="Sandspirit Whisperer" />
+      <card id="1343" mastery_level="5" name="Firehorn" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Solaron is just one of the three titans. If he was orchestrating Keeper Kensho's movements, we should assume the worst for Atlas and Vulcanos, too.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Hopefully we can stop them before this grows out of control.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

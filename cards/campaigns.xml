@@ -7599,7 +7599,7 @@
     <!--  Thursday, 31 October 2019 17:00:00 -->
     <battleground_id>2079</battleground_id>
     <location_id>25</location_id>
-    <x>475</x>
+    <x>425</x>
     <y>200</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>

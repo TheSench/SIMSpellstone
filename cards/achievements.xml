@@ -11728,6 +11728,133 @@
       <pack>12</pack>
     </reward>
   </achievement>
+  <!-- Campaign Event 19 weeks 5-8 -->
+  <achievement>
+    <id>3522</id>
+    <type>2</type>
+    <order>101</order>
+    <name>False Ideals</name>
+    <desc>Complete the 'False Ideals' campaign on Mastery Level 1.</desc>
+    <mission_req>6311</mission_req>
+    <locked_start_time>1573750800</locked_start_time>
+    <!--  Thursday, 14 November 2019 17:00:00 -->
+    <req>
+      <campaign>1226</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3101" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7052" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3523</id>
+    <type>2</type>
+    <order>101</order>
+    <name>False Ideals</name>
+    <desc>Complete the 'False Ideals' campaign on Mastery Level 2.</desc>
+    <mission_req>6311</mission_req>
+    <locked_start_time>1573750800</locked_start_time>
+    <!--  Thursday, 14 November 2019 17:00:00 -->
+    <achievement_req>3522</achievement_req>
+    <req>
+      <campaign>1226</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3524</id>
+    <type>2</type>
+    <order>101</order>
+    <name>False Ideals</name>
+    <desc>Complete the 'False Ideals' campaign on Mastery Level 4.</desc>
+    <mission_req>6311</mission_req>
+    <locked_start_time>1573750800</locked_start_time>
+    <!--  Thursday, 14 November 2019 17:00:00 -->
+    <achievement_req>3523</achievement_req>
+    <req>
+      <campaign>1226</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3525</id>
+    <type>2</type>
+    <order>101</order>
+    <name>False Ideals</name>
+    <desc>Complete the 'False Ideals' campaign on Mastery Level 6.</desc>
+    <mission_req>6311</mission_req>
+    <locked_start_time>1573750800</locked_start_time>
+    <!--  Thursday, 14 November 2019 17:00:00 -->
+    <achievement_req>3524</achievement_req>
+    <req>
+      <campaign>1226</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3526</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Descent of Madness</name>
+    <desc>Complete the 'Descent of Madness' campaign on Mastery Level 2.</desc>
+    <mission_req>6317</mission_req>
+    <locked_start_time>1574960400</locked_start_time>
+    <!--  Thursday, 28 November 2019 17:00:00 -->
+    <req>
+      <campaign>1227</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3527</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Descent of Madness</name>
+    <desc>Complete the 'Descent of Madness' campaign on Mastery Level 4.</desc>
+    <mission_req>6317</mission_req>
+    <locked_start_time>1574960400</locked_start_time>
+    <!--  Thursday, 28 November 2019 17:00:00 -->
+    <achievement_req>3526</achievement_req>
+    <req>
+      <campaign>1227</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3528</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Descent of Madness</name>
+    <desc>Complete the 'Descent of Madness' campaign on Mastery Level 6.</desc>
+    <mission_req>6317</mission_req>
+    <locked_start_time>1574960400</locked_start_time>
+    <!--  Thursday, 28 November 2019 17:00:00 -->
+    <achievement_req>3527</achievement_req>
+    <req>
+      <campaign>1227</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -12125,6 +12252,32 @@
     </reward>
   </achievement>
   <!-- ID 4019 was Removed doe to an Error. DO NOT USE -->
+  <achievement>
+    <!-- Stormy Seastone -->
+    <id>4020</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Stormy Seastone Citadel</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Stormy Seastone Citadel.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6292</mission_req>
+    <req>
+      <campaign>1222</campaign>
+      <!-- 1st node -->
+      <campaign>1223</campaign>
+      <!-- 2nd node -->
+      <campaign>1224</campaign>
+      <!-- Boss node -->
+      <campaign>1226</campaign>
+      <!-- 3rd node -->
+      <campaign>1227</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
   <!-- Non-Core Maps Meta END -->
 </root>
 
