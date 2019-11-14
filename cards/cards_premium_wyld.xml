@@ -11014,27 +11014,27 @@
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1477587600</hidden_until_time>
     <attack>6</attack>
-    <health>15</health>
+    <health>16</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="1" />
-    <skill id="pierce" x="2" />
+    <skill id="armored" x="3" />
+    <skill id="pierce" x="8" />
     <type>3</type>
     <sub_type>11</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <health>17</health>
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
       <level>4</level>
-      <skill id="armored" x="1" />
-      <skill id="rally" x="1" all="1" />
-      <skill id="pierce" x="3" />
+      <skill id="armored" x="3" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="pierce" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -11042,9 +11042,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="2" />
-      <skill id="rally" x="1" all="1" />
-      <skill id="pierce" x="3" />
+      <skill id="armored" x="4" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="pierce" x="9" />
     </upgrade>
     <desc>"Jubjub was strongest big leader in forest. No one bigger than Jubjub." - Jubjub</desc>
   </unit>
@@ -11057,28 +11057,28 @@
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1477587600</hidden_until_time>
     <attack>7</attack>
-    <health>18</health>
+    <health>19</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="2" />
-    <skill id="rally" x="1" all="1" />
-    <skill id="pierce" x="3" />
+    <skill id="armored" x="4" />
+    <skill id="rally" x="2" all="1" />
+    <skill id="pierce" x="9" />
     <type>3</type>
     <sub_type>11</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="2" />
-      <skill id="rally" x="1" all="1" />
-      <skill id="pierce" x="4" />
+      <skill id="armored" x="4" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="pierce" x="10" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>20</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -11086,10 +11086,10 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>22</health>
-      <skill id="armored" x="3" />
-      <skill id="rally" x="2" all="1" />
-      <skill id="pierce" x="4" />
+      <health>23</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="pierce" x="10" />
     </upgrade>
   </unit>
   <unit>
@@ -11101,18 +11101,18 @@
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1477587600</hidden_until_time>
     <attack>8</attack>
-    <health>24</health>
+    <health>25</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="3" />
-    <skill id="rally" x="2" all="1" />
-    <skill id="pierce" x="5" />
+    <skill id="armored" x="5" />
+    <skill id="rally" x="3" all="1" />
+    <skill id="pierce" x="11" />
     <type>3</type>
     <sub_type>11</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -11120,20 +11120,20 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>27</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="2" all="1" />
-      <skill id="pierce" x="5" />
+      <skill id="armored" x="6" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="pierce" x="11" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>10</attack>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="3" all="1" />
-      <skill id="pierce" x="8" />
+      <skill id="armored" x="6" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="pierce" x="14" />
     </upgrade>
   </unit>
   <unit>
@@ -32706,6 +32706,143 @@
       <skill id="valor" x="9" />
       <skill id="heal" x="4" all="1" />
       <skill id="protect" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7254</id>
+    <card_type>2</card_type>
+    <name>Halo Frenzier</name>
+    <picture>Goblin_Angel_Goblin_Beastman_Angel_A</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1573750800</hidden_until_time>
+    <attack>10</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="2" />
+    <skill id="protect" x="2" all="1" y="11" />
+    <skill id="enrage" x="9" y="6" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="3" />
+      <skill id="protect" x="2" all="1" y="11" />
+      <skill id="enrage" x="9" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="3" />
+      <skill id="protect" x="2" all="1" y="11" />
+      <skill id="enrage" x="10" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="3" />
+      <skill id="protect" x="3" all="1" y="11" />
+      <skill id="enrage" x="10" y="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17254</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Halo Binder</name>
+    <picture>Goblin_Angel_Goblin_Beastman_Angel_A</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1573750800</hidden_until_time>
+    <attack>12</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="protect" x="3" all="1" y="11" />
+    <skill id="enrage" x="10" y="6" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="stasis" x="4" />
+      <skill id="protect" x="3" all="1" y="11" />
+      <skill id="enrage" x="10" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="4" />
+      <skill id="protect" x="3" all="1" y="11" />
+      <skill id="enrage" x="11" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="4" />
+      <skill id="protect" x="4" all="1" y="11" />
+      <skill id="enrage" x="11" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27254</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Halo Betrayer</name>
+    <picture>Goblin_Angel_Goblin_Beastman_Angel_B</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1573750800</hidden_until_time>
+    <attack>13</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="5" />
+    <skill id="protect" x="4" all="1" y="11" />
+    <skill id="enrage" x="11" y="6" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="6" />
+      <skill id="protect" x="4" all="1" y="11" />
+      <skill id="enrage" x="11" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="6" />
+      <skill id="protect" x="4" all="1" y="11" />
+      <skill id="enrage" x="12" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="6" />
+      <skill id="protect" x="5" all="1" y="11" />
+      <skill id="enrage" x="12" y="6" />
     </upgrade>
   </unit>
 </root>

@@ -7695,6 +7695,81 @@
     </rewards>
     <find_item id="3101" drop_per_energy=".2" />
   </campaign>
+  <!-- ================================== Campaign Event 19 weeks 5-8 / Stormy Seastone Citadel ================================== -->
+  <campaign>
+    <id>1226</id>
+    <name>False Ideals</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1573750800</locked_start_time>
+    <!--  Thursday, 14 November 2019 17:00:00 -->
+    <battleground_id>2081</battleground_id>
+    <location_id>25</location_id>
+    <x>780</x>
+    <y>185</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6311</mission_id>
+      <mission_id>6312</mission_id>
+      <mission_id>6313</mission_id>
+      <mission_id>6314</mission_id>
+      <mission_id>6315</mission_id>
+      <mission_id>6316</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2171" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2101" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3103" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1227</id>
+    <name>Descent of Madness</name>
+    <campaign_req id="1226" level="1" />
+    <locked_start_time>1574960400</locked_start_time>
+    <!--  Thursday, 28 November 2019 17:00:00 -->
+    <battleground_id>2082</battleground_id>
+    <location_id>25</location_id>
+    <x>720</x>
+    <y>350</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6317</mission_id>
+      <mission_id>6318</mission_id>
+      <mission_id>6319</mission_id>
+      <mission_id>6320</mission_id>
+      <mission_id>6321</mission_id>
+      <mission_id>6322</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2172" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2102" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3103" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".8" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

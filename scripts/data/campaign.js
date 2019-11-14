@@ -4190,6 +4190,40 @@ var CAMPAIGNS = {
 		],
 		"name": "Legend of Pumpking"
 	},
+	"1226": {
+		"battleground_id": "2081",
+		"id": "1226",
+		"items": {
+			"3101": 0.6
+		},
+		"location_id": "25",
+		"missions": [
+			"6311",
+			"6312",
+			"6313",
+			"6314",
+			"6315",
+			"6316"
+		],
+		"name": "False Ideals"
+	},
+	"1227": {
+		"battleground_id": "2082",
+		"id": "1227",
+		"items": {
+			"3101": 0.8
+		},
+		"location_id": "25",
+		"missions": [
+			"6317",
+			"6318",
+			"6319",
+			"6320",
+			"6321",
+			"6322"
+		],
+		"name": "Descent of Madness"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
