@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 var LOCATIONS = {
 	"1": {
@@ -96,6 +96,10 @@ var LOCATIONS = {
 	"24": {
 		"id": "24",
 		"name": "The Abyss"
+	},
+	"25": {
+		"id": "25",
+		"name": "Stormy Seastone Citadel"
 	}
 };
 var CAMPAIGNS = {
