@@ -1,6 +1,10 @@
 "use strict"
 
 var LOCATIONS = {
+	"0": {
+		"id": "0",
+		"name": "Hero Upgrades"
+	},
 	"1": {
 		"id": "1",
 		"name": "Elaria"
@@ -100,6 +104,54 @@ var LOCATIONS = {
 	"25": {
 		"id": "25",
 		"name": "Stormy Seastone Citadel"
+	},
+	"100": {
+		"id": "100",
+		"name": "Salt Wastes"
+	},
+	"101": {
+		"id": "101",
+		"name": "Tarragon Peak"
+	},
+	"102": {
+		"id": "102",
+		"name": "The Celestial Vault"
+	},
+	"103": {
+		"id": "103",
+		"name": "Dawnglow Swamp"
+	},
+	"104": {
+		"id": "104",
+		"name": "Frigore"
+	},
+	"105": {
+		"id": "105",
+		"name": "Center of The Void"
+	},
+	"106": {
+		"id": "106",
+		"name": "Skyhaven"
+	},
+	"107": {
+		"id": "107",
+		"name": "Golden Crown Village"
+	},
+	"108": {
+		"id": "108",
+		"name": "Gloomy Land"
+	},
+	"109": {
+		"id": "109",
+		"name": "Red Feather Valley"
+	},
+	"110": {
+		"id": "110",
+		"name": "Beetleton Bunker"
+	},
+	"111": {
+		"id": "111",
+		"name": "Goblin Rise Stronghold"
 	}
 };
 var CAMPAIGNS = {
