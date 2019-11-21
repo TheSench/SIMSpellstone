@@ -69467,6 +69467,90 @@ var CARDS = {
 			}
 		}
 	},
+	"5252": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1574701200000",
+		"id": "5252",
+		"maxLevel": 6,
+		"name": "Twainblood Outcast",
+		"picture": "Goblin_Seafolk_Halfling_Goblin_Octopus_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1,
+				"y": "11"
+			},
+			{
+				"id": "weaken",
+				"x": 2
+			},
+			{
+				"c": 5,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1,
+						"y": "11"
+					},
+					{
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1,
+						"y": "11"
+					},
+					{
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"attack": 5,
+				"skill": []
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -71338,6 +71422,176 @@ var CARDS = {
 						"all": "1",
 						"id": "strike",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"5610": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"id": "5610",
+		"maxLevel": 10,
+		"name": "Ystlin, the Market Boss",
+		"picture": "Goblin_Cunning_Goblin_Leader_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2,
+				"y": "11"
+			},
+			{
+				"id": "legion",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "11"
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"health": 28,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "11"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "11"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "11"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"7": {
+				"attack": 9,
+				"health": 29,
+				"skill": []
+			},
+			"8": {
+				"health": 30,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "11"
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"9": {
+				"attack": 10,
+				"health": 31,
+				"skill": []
+			},
+			"10": {
+				"health": 32,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "11"
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
 					}
 				]
 			}
@@ -167021,6 +167275,90 @@ var CARDS = {
 			}
 		}
 	},
+	"15252": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1574701200000",
+		"id": "15252",
+		"maxLevel": 6,
+		"name": "Twainblood Apprentice",
+		"picture": "Goblin_Seafolk_Halfling_Goblin_Octopus_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1,
+				"y": "11"
+			},
+			{
+				"id": "weaken",
+				"x": 4
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "11"
+					},
+					{
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "11"
+					},
+					{
+						"id": "weaken",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -229121,7 +229459,7 @@ var CARDS = {
 		"hidden_until": "1573750800000",
 		"id": "22171",
 		"maxLevel": 5,
-		"name": "Gobllin Rise Infiltrator",
+		"name": "Goblin Rise Infiltrator",
 		"picture": "Goblin_Goblin_Disguised_as_Frog_B",
 		"rarity": 3,
 		"set": "2000",
@@ -250232,6 +250570,90 @@ var CARDS = {
 						"all": "1",
 						"id": "weaken",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"25252": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1574701200000",
+		"id": "25252",
+		"maxLevel": 6,
+		"name": "Twainblood Conjurer",
+		"picture": "Goblin_Seafolk_Halfling_Goblin_Octopus_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2,
+				"y": "11"
+			},
+			{
+				"id": "weaken",
+				"x": 5
+			},
+			{
+				"c": 2,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "11"
+					},
+					{
+						"id": "weaken",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"health": 29,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "11"
+					},
+					{
+						"id": "weaken",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "flurry"
 					}
 				]
 			}

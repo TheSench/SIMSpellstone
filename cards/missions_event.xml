@@ -41572,5 +41572,390 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 20 Node 1 -->
+  <mission>
+    <id>6323</id>
+    <name>Colorful Companions</name>
+    <energy>18</energy>
+    <desc>After journeying to Karthos, the residents there informed you that the Chaos leader, Tarian, had traveled back to the origin point of The Void. Aria goes with you to explain the potential dangers of Vulcanos.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7035" />
+      <card id="7090" name="Prospector" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7090" mastery_level="2" name="Prospector" />
+      <card id="7146" mastery_level="3" name="Goblin Brigand" />
+      <card id="7082" mastery_level="4" name="Forest Umbras" />
+      <card id="7090" mastery_level="5" name="Prospector" />
+      <card id="7001" mastery_level="6" name="Hekaton" />
+      <card id="7121" mastery_level="7" name="Varachnis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>I don't mind you sticking around, but did you really need to bring this guy with us?</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Yo! It's been a long time! Now it's my time to shine!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6324</id>
+    <name>Chaos Mission</name>
+    <energy>18</energy>
+    <desc>You and Aria travel the lonely path up the hill, crows cawing in the distance. Scyer runs up the hill, then back down, then back up again.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8084" name="Gobatron's Bomber" />
+      <card id="1319" name="Wraith" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="5124" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2102" mastery_level="2" name="Lowbog Shaman" />
+      <card id="2064" mastery_level="3" name="Tome Sneak" />
+      <card id="1331" mastery_level="4" name="Fallen Soldiers" />
+      <card id="2102" mastery_level="5" name="Lowbog Shaman" />
+      <card id="7026" mastery_level="6" name="Frostjaw" />
+      <card id="5171" mastery_level="7" name="Dross Collector" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>A search for a skeleton, on a spooky ol' hill, really gets me goin' on adrenaline.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Any mood that might have been set here is already gone thanks to you, Scyer.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6325</id>
+    <name>Undead Assault</name>
+    <energy>18</energy>
+    <desc>Spirits and Undead rise from the ground. With a snarl, they pounce upon you and your group! Scyer opens the hatch to his fire reserves, while Aria casts a spell.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1319" name="Wraith" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5084" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5146" mastery_level="2" name="Lullmage Whisperer" />
+      <card id="2064" mastery_level="3" name="Tome Sneak" />
+      <card id="5033" mastery_level="4" name="Lost Soul" />
+      <card id="5146" mastery_level="5" name="Lullmage Whisperer" />
+      <card id="5148" mastery_level="6" name="Gribmalda of Wings" />
+      <card id="5125" mastery_level="7" name="Banshee" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6326</id>
+    <name>Void's Center</name>
+    <energy>18</energy>
+    <desc>Scyer stays closer to you and Aria after the last attack. Monsters still roam the area, ones who were touched by The Void in the past, and other strange spirits.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1319" name="Wraith" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5168" name="Lamia's Shield" />
+      <card id="5168" />
+      <card id="2148" name="Goctopus" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="2148" mastery_level="2" name="Goctopus" />
+      <card id="2125" mastery_level="3" name="Fowl Page Bezoar" />
+      <card id="5124" mastery_level="4" name="Sylph Drifter" />
+      <card id="2148" mastery_level="5" name="Goctopus" />
+      <card id="5092" mastery_level="6" name="Tundra Reaver" />
+      <card id="5119" mastery_level="7" name="Dyrnwyn's Chosen" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>We're not far from where Samael tried to free The Void. The Undead here never recovered from its effects.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6327</id>
+    <name>Reunion with a General</name>
+    <energy>18</energy>
+    <desc>You spy a human in the distance, fighting against the Undead! You quickly rush to his aid, Scyer right along with you, Aria reluctantly following. When you get closer, you realize the human is a familiar face.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1319" name="Wraith" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="5021" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="5146" mastery_level="2" name="Lullmage Whisperer" />
+      <card id="2064" mastery_level="3" name="Tome Sneak" />
+      <card id="5123" mastery_level="4" name="Shadow Stalker" />
+      <card id="5146" mastery_level="5" name="Lullmage Whisperer" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5170" mastery_level="7" name="Dullahan Destrier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>You're a sight for sore eyes, adventurer. Help me clear out these Undead!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6328</id>
+    <name>Soldiers on a Mission</name>
+    <energy>18</energy>
+    <desc>Garrick finishes cleaving a large Undead in half, then turns his attention to you. Aria wastes no time in following their objective.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8085" name="Gobatron's Right Hand" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="2101" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6089" mastery_level="2" name="Fire Belcher" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="6029" mastery_level="4" name="Spinehead Stalker" />
+      <card id="6089" mastery_level="5" name="Fire Belcher" />
+      <card id="6147" mastery_level="6" name="Sandspirit Whisperer" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Garrick. Where is Tarian?</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Blunt as always, Aria. Tarian is in the shack ahead, trying to find ancient technology.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 20 Node 2 -->
+  <mission>
+    <id>6329</id>
+    <name>Caring Machine</name>
+    <energy>18</energy>
+    <desc>Aria starts moving off towards the shack with a decisive purpose. However, Garrick remains in place, staring blankly ahead. Scyer waves a metallic hand in front of his face.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="8082" name="Gobatron's Ranger" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1319" name="Wraith" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6029" />
+      <card id="6090" name="Crackshot" />
+      <card id="6090" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="6021" mastery_level="2" name="Marsh Ogre" />
+      <card id="2060" mastery_level="3" name="Patchwork Experiment" />
+      <card id="6090" mastery_level="4" name="Crackshot" />
+      <card id="6029" mastery_level="5" name="Spinehead Stalker" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="6174" mastery_level="7" name="Deatheye Owl" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Why are you waitin' out here? Is there something you fear?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6330</id>
+    <name>Past Mistakes</name>
+    <energy>18</energy>
+    <desc>Garrick doesn't answer immediately. He looks up at to the hill with the small shack. Charcoaled wood and dilapidated planks are visible, the place abandoned years ago.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6116" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="6143" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="2114" name="Ironbound Bonewalker" />
+      <card id="6089" mastery_level="2" name="Fire Belcher" />
+      <card id="2114" mastery_level="3" name="Ironbound Bonewalker" />
+      <card id="6143" mastery_level="4" name="Dynamic Entry" />
+      <card id="6116" mastery_level="5" name="Otherworldly Archer" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="6161" mastery_level="7" name="Torero" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>I just got a lot of bad memories up there.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Lord Tarian has been inside for a long time. You should check up on him.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6331</id>
+    <name>Blockade</name>
+    <energy>18</energy>
+    <desc>You catch up to Aria, who has stopped before the door. The wood creaks loudly as she shakes the handle, the door refusing to budge.</desc>
+    <commander id="270" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="1319" name="Wraith" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="5124" />
+      <card id="2148" name="Goctopus" />
+      <card id="2148" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="2064" mastery_level="2" name="Tome Sneak" />
+      <card id="5123" mastery_level="3" name="Shadow Stalker" />
+      <card id="2148" mastery_level="4" name="Goctopus" />
+      <card id="5124" mastery_level="5" name="Sylph Drifter" />
+      <card id="5209" mastery_level="6" name="Fowlmaster" />
+      <card id="5087" mastery_level="7" name="Apollyon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>It's locked.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6332</id>
+    <name>Rickety Shack</name>
+    <energy>18</energy>
+    <desc>The rest of the shack is barely held together. Scyer analyzes the surrounding openings, taking note of each hole. Even with the door locked, the shack is hardly secure.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="5091" name="Armor Thief" />
+      <card id="5091" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="2125" mastery_level="2" name="Fowl Page Bezoar" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="5091" mastery_level="4" name="Armor Thief" />
+      <card id="5166" mastery_level="5" name="Hoarfrost Buzzard" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5036" mastery_level="7" name="Winter Tail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Why let a door be a roadblock? All it needs is one good sock.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6333</id>
+    <name>Open Sesame</name>
+    <energy>18</energy>
+    <desc>Aria beats Scyer to the punch. She slams her fist against the wood, punching a hole through the decaying material. She flips the lock open from the inside, before pulling it open easily.</desc>
+    <commander id="208" />
+    <deck>
+      <card id="8084" name="Gobatron's Bomber" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="2101" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="2126" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="6081" name="Apparition" />
+      <card id="6072" mastery_level="2" name="Bone Wielder" />
+      <card id="6081" mastery_level="3" name="Apparition" />
+      <card id="2126" mastery_level="4" name="One Punch Flare" />
+      <card id="2101" mastery_level="5" name="Rot Goblin" />
+      <card id="2065" mastery_level="6" name="Pinpin, Dragon Handler" />
+      <card id="6003" mastery_level="7" name="Black Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Nice.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Okay it's open. Let's go, rhyme-bot.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6334</id>
+    <name>Ghostly Abode</name>
+    <energy>18</energy>
+    <desc>The inside is eerily cold. Ghosts and wandering spirits roam restlessly about, unhappy with the unwelcome visitors. Your group carefully navigates through them, taking out any that get too close.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5035" />
+      <card id="5145" name="Gobsnout Piercer" />
+      <card id="5145" />
+      <card id="2148" name="Goctopus" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="2148" mastery_level="2" name="Goctopus" />
+      <card id="5021" mastery_level="3" name="Tower Spirit" />
+      <card id="5145" mastery_level="4" name="Gobsnout Piercer" />
+      <card id="5035" mastery_level="5" name="Vapor Guard" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+  </mission>
 </root>
 

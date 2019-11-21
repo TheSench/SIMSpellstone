@@ -5753,5 +5753,289 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3020",
 		"location_id": "25",
 		"name": "First Order Defense"
+	},
+	"3021": {
+		"desc": "Use Malchior's expertise against the Undead! Trade him Void Essence to unlock new powers!",
+		"effects": [
+			{
+				"id": "53",
+				"name": "Flame Maker",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Scorch 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 1
+							}
+						],
+						"name": "Flame Maker"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 2
+							}
+						],
+						"name": "Flame Maker"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 3
+							}
+						],
+						"name": "Flame Maker"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 4
+							}
+						],
+						"name": "Flame Maker"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 6
+							}
+						],
+						"name": "Flame Maker"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 8
+							}
+						],
+						"name": "Flame Maker"
+					}
+				]
+			},
+			{
+				"id": "54",
+				"name": "Holy Water",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures are Healed for 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 1
+							}
+						],
+						"name": "Holy Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 2
+							}
+						],
+						"name": "Holy Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 3
+							}
+						],
+						"name": "Holy Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 4
+							}
+						],
+						"name": "Holy Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 5
+							}
+						],
+						"name": "Holy Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 6
+							}
+						],
+						"name": "Holy Water"
+					}
+				]
+			},
+			{
+				"id": "55",
+				"name": "Treebark Shield",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Ward 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 1
+							}
+						],
+						"name": "Treebark Shield"
+					},
+					{
+						"desc": "All of your creatures gain Ward 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 2
+							}
+						],
+						"name": "Treebark Shield"
+					},
+					{
+						"desc": "All of your creatures gain Ward 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 3
+							}
+						],
+						"name": "Treebark Shield"
+					},
+					{
+						"desc": "All of your creatures gain Ward 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 4
+							}
+						],
+						"name": "Treebark Shield"
+					},
+					{
+						"desc": "All of your creatures gain Ward 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 6
+							}
+						],
+						"name": "Treebark Shield"
+					},
+					{
+						"desc": "All of your creatures gain Ward 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 8
+							}
+						],
+						"name": "Treebark Shield"
+					}
+				]
+			}
+		],
+		"id": "3021",
+		"location_id": "26",
+		"name": "Malchior's Defense"
 	}
 };

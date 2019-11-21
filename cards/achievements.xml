@@ -11855,6 +11855,133 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 20 weeks 1-4 -->
+  <achievement>
+    <id>3529</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World's Center</name>
+    <desc>Complete the 'World's Center' campaign on Mastery Level 1.</desc>
+    <mission_req>6323</mission_req>
+    <locked_start_time>1576170000</locked_start_time>
+    <!--  Thursday, 12 December 2019 17:00:00 -->
+    <req>
+      <campaign>1228</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3104" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7054" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3530</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World's Center</name>
+    <desc>Complete the 'World's Center' campaign on Mastery Level 2.</desc>
+    <mission_req>6323</mission_req>
+    <locked_start_time>1576170000</locked_start_time>
+    <!--  Thursday, 12 December 2019 17:00:00 -->
+    <achievement_req>3529</achievement_req>
+    <req>
+      <campaign>1228</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3531</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World's Center</name>
+    <desc>Complete the 'World's Center' campaign on Mastery Level 4.</desc>
+    <mission_req>6323</mission_req>
+    <locked_start_time>1576170000</locked_start_time>
+    <!--  Thursday, 12 December 2019 17:00:00 -->
+    <achievement_req>3530</achievement_req>
+    <req>
+      <campaign>1228</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3532</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World's Center</name>
+    <desc>Complete the 'World's Center' campaign on Mastery Level 6.</desc>
+    <mission_req>6323</mission_req>
+    <locked_start_time>1576170000</locked_start_time>
+    <!--  Thursday, 12 December 2019 17:00:00 -->
+    <achievement_req>3531</achievement_req>
+    <req>
+      <campaign>1228</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3533</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Shack of Mysteries</name>
+    <desc>Complete the 'Shack of Mysteries' campaign on Mastery Level 2.</desc>
+    <mission_req>6329</mission_req>
+    <locked_start_time>1577379600</locked_start_time>
+    <!--  Thursday, 26 December 2019 17:00:00 -->
+    <req>
+      <campaign>1229</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3534</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Shack of Mysteries</name>
+    <desc>Complete the 'Shack of Mysteries' campaign on Mastery Level 4.</desc>
+    <mission_req>6329</mission_req>
+    <locked_start_time>1577379600</locked_start_time>
+    <!--  Thursday, 26 December 2019 17:00:00 -->
+    <achievement_req>3533</achievement_req>
+    <req>
+      <campaign>1229</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3535</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Shack of Mysteries</name>
+    <desc>Complete the 'Shack of Mysteries' campaign on Mastery Level 6.</desc>
+    <mission_req>6329</mission_req>
+    <locked_start_time>1577379600</locked_start_time>
+    <!--  Thursday, 26 December 2019 17:00:00 -->
+    <achievement_req>3534</achievement_req>
+    <req>
+      <campaign>1229</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

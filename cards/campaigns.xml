@@ -7770,6 +7770,81 @@
     </rewards>
     <find_item id="3101" drop_per_energy=".8" />
   </campaign>
+  <!-- ================================== Campaign Event 20 weeks 1-4 / World's Center ================================== -->
+  <campaign>
+    <id>1228</id>
+    <name>World's Center</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1576170000</locked_start_time>
+    <!--  Thursday, 12 December 2019 17:00:00 -->
+    <location_id>26</location_id>
+    <x>170</x>
+    <y>280</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6323</mission_id>
+      <mission_id>6324</mission_id>
+      <mission_id>6325</mission_id>
+      <mission_id>6326</mission_id>
+      <mission_id>6327</mission_id>
+      <mission_id>6328</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2169" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2138" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3103" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3104" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1229</id>
+    <name>Shack of Mysteries</name>
+    <campaign_req id="1228" level="1" />
+    <locked_start_time>1577379600</locked_start_time>
+    <!--  Thursday, 26 December 2019 17:00:00 -->
+    <battleground_id>2083</battleground_id>
+    <location_id>26</location_id>
+    <x>425</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6329</mission_id>
+      <mission_id>6330</mission_id>
+      <mission_id>6331</mission_id>
+      <mission_id>6332</mission_id>
+      <mission_id>6333</mission_id>
+      <mission_id>6334</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2170" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2119" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3103" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3104" drop_per_energy=".4" />
+  </campaign>
+  <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
