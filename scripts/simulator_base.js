@@ -1648,7 +1648,7 @@ var SIMULATOR = {};
 
 		ambush: function (src_card, target, skill) {
 
-			var damage = skill.x + getSkillMult(skill, target);
+			var damage = (skill.x || 0) + getSkillMult(skill, target);
 
 			do_damage(src_card, target, damage, null, function (source, target, amount) {
 				echo += debug_name(source) + ' ambushes ' + debug_name(target) + ' for ' + amount + ' damage';
