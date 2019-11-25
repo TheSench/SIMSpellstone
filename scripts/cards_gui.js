@@ -603,6 +603,7 @@ var CARD_GUI = {};
 		4000: "BoxOnly",
 		5000: "Champion",
 		5100: "Champion",
+		5200: "Champion",
 		9999: "StoryElements"
 	};
 
@@ -620,6 +621,7 @@ var CARD_GUI = {};
 	CARD_GUI.createItemHTML = createItemHTML;
 	CARD_GUI.addMult = addMult;
 	CARD_GUI.addWeight = addWeight;
+	CARD_GUI.setNames = setNames;
 
 	Object.defineProperties(CARD_GUI, {
 		assetsRoot: {
