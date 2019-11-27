@@ -90779,6 +90779,176 @@ var CARDS = {
 			}
 		}
 	},
+	"6253": {
+		"attack": 1,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1574960400000",
+		"id": "6253",
+		"maxLevel": 6,
+		"name": "Tricky Boomsquad",
+		"picture": "Goblin_Canoneer_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "legion",
+				"x": 1
+			},
+			{
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"c": 6,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 19,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"6254": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1575306000000",
+		"id": "6254",
+		"maxLevel": 6,
+		"name": "Newfeet Grenadier",
+		"picture": "Mecha_Goblin_Goblin_Mecha_Bomber_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			},
+			{
+				"c": 6,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 23,
+				"skill": []
+			},
+			"4": {
+				"attack": 5,
+				"skill": []
+			},
+			"5": {
+				"health": 24,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -111837,6 +112007,107 @@ var CARDS = {
 						"id": "enrage",
 						"x": 10,
 						"y": "6"
+					}
+				]
+			}
+		}
+	},
+	"7255": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1574960400000",
+		"id": "7255",
+		"maxLevel": 6,
+		"name": "Hooflin Ranger",
+		"picture": "Goblin_Goblin_Centaur_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2,
+				"y": "3"
+			},
+			{
+				"id": "fervor",
+				"x": 3,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "3"
 					}
 				]
 			}
@@ -188109,6 +188380,189 @@ var CARDS = {
 			}
 		}
 	},
+	"16253": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1574960400000",
+		"id": "16253",
+		"maxLevel": 6,
+		"name": "Elusive Boomsquad",
+		"picture": "Goblin_Canoneer_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "legion",
+				"x": 1
+			},
+			{
+				"id": "strike",
+				"x": 3
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 21,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"16254": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1575306000000",
+		"id": "16254",
+		"maxLevel": 6,
+		"name": "Ironfeet Grenadier",
+		"picture": "Mecha_Goblin_Goblin_Mecha_Bomber_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 26,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -209788,6 +210242,107 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 13,
+				"skill": []
+			}
+		}
+	},
+	"17255": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1574960400000",
+		"id": "17255",
+		"maxLevel": 6,
+		"name": "Hooflin Tracker",
+		"picture": "Goblin_Goblin_Centaur_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3,
+				"y": "3"
+			},
+			{
+				"id": "fervor",
+				"x": 4,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "3"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
 				"skill": []
 			}
 		}
@@ -271291,6 +271846,164 @@ var CARDS = {
 			}
 		}
 	},
+	"26253": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 21,
+		"hidden_until": "1574960400000",
+		"id": "26253",
+		"maxLevel": 6,
+		"name": "Tactical Boomsquad",
+		"picture": "Goblin_Canoneer_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "legion",
+				"x": 2
+			},
+			{
+				"id": "strike",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"attack": 3,
+				"skill": []
+			},
+			"4": {
+				"health": 23,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"26254": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1575306000000",
+		"id": "26254",
+		"maxLevel": 6,
+		"name": "Steelfeet Grenadier",
+		"picture": "Mecha_Goblin_Goblin_Mecha_Bomber_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"health": 29,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -293087,6 +293800,107 @@ var CARDS = {
 						"id": "enrage",
 						"x": 12,
 						"y": "6"
+					}
+				]
+			}
+		}
+	},
+	"27255": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1574960400000",
+		"id": "27255",
+		"maxLevel": 6,
+		"name": "Hooflin Warden",
+		"picture": "Goblin_Goblin_Centaur_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4,
+				"y": "3"
+			},
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "3"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "3"
 					}
 				]
 			}

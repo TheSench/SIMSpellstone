@@ -32845,5 +32845,139 @@
       <skill id="enrage" x="12" y="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7255</id>
+    <card_type>2</card_type>
+    <name>Hooflin Ranger</name>
+    <picture>Goblin_Goblin_Centaur_A</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1574960400</hidden_until_time>
+    <attack>8</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="2" />
+    <skill id="rally" x="2" all="1" y="3" />
+    <skill id="fervor" x="3" y="3" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="3" />
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="fervor" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="3" />
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="fervor" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="3" />
+      <skill id="rally" x="3" all="1" y="3" />
+      <skill id="fervor" x="4" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17255</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hooflin Tracker</name>
+    <picture>Goblin_Goblin_Centaur_A</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1574960400</hidden_until_time>
+    <attack>10</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="rally" x="3" all="1" y="3" />
+    <skill id="fervor" x="4" y="3" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="4" />
+      <skill id="rally" x="3" all="1" y="3" />
+      <skill id="fervor" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="4" />
+      <skill id="rally" x="3" all="1" y="3" />
+      <skill id="fervor" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="4" />
+      <skill id="rally" x="4" all="1" y="3" />
+      <skill id="fervor" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27255</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Hooflin Warden</name>
+    <picture>Goblin_Goblin_Centaur_B</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1574960400</hidden_until_time>
+    <attack>11</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="rally" x="4" all="1" y="3" />
+    <skill id="fervor" x="5" y="3" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="4" all="1" y="3" />
+      <skill id="fervor" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="4" all="1" y="3" />
+      <skill id="fervor" x="6" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="5" all="1" y="3" />
+      <skill id="fervor" x="6" y="3" />
+    </upgrade>
+  </unit>
 </root>
 
