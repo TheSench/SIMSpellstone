@@ -382,7 +382,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var protect = skill.x;
+			var protect = (skill.x || 0);
 			var enhanced = getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
 
@@ -1118,7 +1118,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var rally = skill.x;
+			var rally = (skill.x || 0);
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 			var affected = 0;
@@ -1170,7 +1170,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var rally = skill.x;
+			var rally = (skill.x || 0);
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
@@ -1432,7 +1432,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var x = skill.x;
+			var x = (skill.x || 0);
 			var mult = skill.mult;
 			var affected = 0;
 
@@ -1490,7 +1490,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 			
-			var enrage = skill.x;
+			var enrage = (skill.x || 0);
 			var enhanced = getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
 
@@ -1557,7 +1557,7 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
-			var x = skill.x;
+			var x = (skill.x || 0);
 			var skill = {
 				id: s,
 				x: x
@@ -1575,7 +1575,6 @@ var SIMULATOR = {};
 				}
 
 				affected++;
-
 
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
