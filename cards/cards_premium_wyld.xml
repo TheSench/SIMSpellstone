@@ -32979,5 +32979,139 @@
       <skill id="fervor" x="6" y="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7256</id>
+    <card_type>2</card_type>
+    <name>Soldier of Fortune</name>
+    <picture>Goblin_Muscle_Goblin_A</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1575910800</hidden_until_time>
+    <attack>10</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="regenerate" x="6" />
+    <skill id="daze" x="10" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="regenerate" x="6" />
+      <skill id="daze" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="regenerate" x="6" />
+      <skill id="daze" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="regenerate" x="7" />
+      <skill id="daze" x="11" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17256</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Seeker of Fortune</name>
+    <picture>Goblin_Muscle_Goblin_A</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1575910800</hidden_until_time>
+    <attack>12</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="regenerate" x="7" />
+    <skill id="daze" x="11" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="4" />
+      <skill id="regenerate" x="7" />
+      <skill id="daze" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="5" />
+      <skill id="regenerate" x="7" />
+      <skill id="daze" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="regenerate" x="8" />
+      <skill id="daze" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27256</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Breaker of Fortune</name>
+    <picture>Goblin_Muscle_Goblin_B</picture>
+    <asset_bundle>176</asset_bundle>
+    <hidden_until_time>1575910800</hidden_until_time>
+    <attack>13</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="regenerate" x="8" />
+    <skill id="daze" x="13" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="6" />
+      <skill id="regenerate" x="8" />
+      <skill id="daze" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="6" />
+      <skill id="regenerate" x="8" />
+      <skill id="daze" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="regenerate" x="9" />
+      <skill id="daze" x="14" />
+    </upgrade>
+  </unit>
 </root>
 

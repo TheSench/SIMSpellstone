@@ -7778,8 +7778,8 @@
     <locked_start_time>1576170000</locked_start_time>
     <!--  Thursday, 12 December 2019 17:00:00 -->
     <location_id>26</location_id>
-    <x>170</x>
-    <y>280</y>
+    <x>105</x>
+    <y>210</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6323</mission_id>
@@ -7796,13 +7796,13 @@
       <!-- Arcane Ore -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2169" />
+      <card level="4" id="2173" />
       <!-- New BGE Epic A -->
       <card level="5" id="512" />
       <!-- Arcane Deposit -->
-      <card level="6" id="2138" />
+      <card level="6" id="2159" />
       <!-- Repeat Epic A -->
-      <item level="7" id="3103" />
+      <item level="7" id="3105" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
     <find_item id="3104" drop_per_energy=".2" />
@@ -7815,8 +7815,8 @@
     <!--  Thursday, 26 December 2019 17:00:00 -->
     <battleground_id>2083</battleground_id>
     <location_id>26</location_id>
-    <x>425</x>
-    <y>200</y>
+    <x>380</x>
+    <y>185</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6329</mission_id>
@@ -7833,13 +7833,13 @@
       <!-- Arcane Ore -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2170" />
+      <card level="4" id="2174" />
       <!-- New BGE Epic B -->
       <card level="5" id="512" />
       <!-- Arcane Deposit -->
-      <card level="6" id="2119" />
+      <card level="6" id="2020" />
       <!-- Repeat Epic B -->
-      <item level="7" id="3103" />
+      <item level="7" id="3105" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
     <find_item id="3104" drop_per_energy=".4" />

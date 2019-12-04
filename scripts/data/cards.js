@@ -69551,6 +69551,99 @@ var CARDS = {
 			}
 		}
 	},
+	"5253": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1575565200000",
+		"id": "5253",
+		"maxLevel": 6,
+		"name": "Bullywhack Brave",
+		"picture": "Goblin_Goblin_Paladin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 17,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"attack": 3,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -112108,6 +112201,95 @@ var CARDS = {
 						"id": "fervor",
 						"x": 4,
 						"y": "3"
+					}
+				]
+			}
+		}
+	},
+	"7256": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1575910800000",
+		"id": "7256",
+		"maxLevel": 6,
+		"name": "Soldier of Fortune",
+		"picture": "Goblin_Muscle_Goblin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "daze",
+				"x": 10
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 11
+					}
+				]
+			},
+			"4": {
+				"health": 38,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 11
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 11
 					}
 				]
 			}
@@ -167630,6 +167812,112 @@ var CARDS = {
 			}
 		}
 	},
+	"15253": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1575565200000",
+		"id": "15253",
+		"maxLevel": 6,
+		"name": "Bullywhack Hero",
+		"picture": "Goblin_Goblin_Paladin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 19,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -210347,6 +210635,95 @@ var CARDS = {
 			}
 		}
 	},
+	"17256": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1575910800000",
+		"id": "17256",
+		"maxLevel": 6,
+		"name": "Seeker of Fortune",
+		"picture": "Goblin_Muscle_Goblin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"id": "daze",
+				"x": 11
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
+			},
+			"6": {
+				"attack": 13,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -251209,6 +251586,99 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"25253": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1575565200000",
+		"id": "25253",
+		"maxLevel": 6,
+		"name": "Bullywhack Paladin",
+		"picture": "Goblin_Goblin_Paladin_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "valor",
+				"x": 9
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
 					}
 				]
 			}
@@ -293901,6 +294371,95 @@ var CARDS = {
 						"id": "fervor",
 						"x": 6,
 						"y": "3"
+					}
+				]
+			}
+		}
+	},
+	"27256": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1575910800000",
+		"id": "27256",
+		"maxLevel": 6,
+		"name": "Breaker of Fortune",
+		"picture": "Goblin_Muscle_Goblin_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"id": "daze",
+				"x": 13
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 14,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 13
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 14
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 14
 					}
 				]
 			}
