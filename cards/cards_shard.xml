@@ -2336,6 +2336,100 @@
       <health>21</health>
     </upgrade>
   </unit>
+  <unit>
+    <id>4027</id>
+    <card_type>2</card_type>
+    <name>Umbu, Life Releaser</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undead_Demon_Barrier_Invader_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <item_name>Umbu Stone</item_name>
+    <item_desc>Collect Umbu Stones to upgrade the Legendary Umbu card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <attack>10</attack>
+    <health>48</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="enfeeble" x="3" all="1" />
+    <skill id="enrage" x="2" all="1" />
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <health>49</health>
+      <skill id="stasis" x="5" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>50</health>
+      <skill id="stasis" x="6" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>51</health>
+      <skill id="stasis" x="6" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="enrage" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <health>52</health>
+      <skill id="stasis" x="6" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="enrage" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+      <health>53</health>
+      <skill id="stasis" x="6" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="enrage" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>54</health>
+      <skill id="stasis" x="7" />
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="enrage" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>15</attack>
+      <health>55</health>
+      <skill id="stasis" x="7" />
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="enrage" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>15</attack>
+      <health>56</health>
+      <skill id="stasis" x="8" />
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="enrage" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>16</attack>
+      <health>57</health>
+      <skill id="stasis" x="8" />
+      <skill id="enfeeble" x="7" all="1" />
+      <skill id="enrage" x="6" all="1" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->

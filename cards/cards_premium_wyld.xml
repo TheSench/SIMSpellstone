@@ -15278,13 +15278,13 @@
     <picture>Vampire_Spider_A</picture>
     <asset_bundle>91</asset_bundle>
     <hidden_until_time>1492448400</hidden_until_time>
-    <attack>2</attack>
-    <health>10</health>
+    <attack>5</attack>
+    <health>12</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="enfeeble" x="1" />
     <skill id="jam" c="6" />
-    <skill id="leech" x="2" />
+    <skill id="leech" x="5" />
     <type>3</type>
     <sub_type>7</sub_type>
     <sub_type>13</sub_type>
@@ -15293,25 +15293,25 @@
       <level>2</level>
       <skill id="enfeeble" x="1" />
       <skill id="jam" c="5" />
-      <skill id="leech" x="2" />
+      <skill id="leech" x="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>11</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>12</health>
+      <health>14</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>3</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="enfeeble" x="1" />
       <skill id="jam" c="4" />
-      <skill id="leech" x="2" />
+      <skill id="leech" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -15322,57 +15322,13 @@
     <picture>Vampire_Spider_A</picture>
     <asset_bundle>91</asset_bundle>
     <hidden_until_time>1492448400</hidden_until_time>
-    <attack>3</attack>
-    <health>12</health>
-    <cost>1</cost>
-    <rarity>4</rarity>
-    <skill id="enfeeble" x="1" />
-    <skill id="jam" c="4" />
-    <skill id="leech" x="3" />
-    <type>3</type>
-    <sub_type>7</sub_type>
-    <sub_type>13</sub_type>
-    <set>4000</set>
-    <upgrade>
-      <level>2</level>
-      <health>13</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>14</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <attack>4</attack>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="enfeeble" x="1" />
-      <skill id="jam" c="3" />
-      <skill id="leech" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="enfeeble" x="1" />
-      <skill id="jam" c="3" />
-      <skill id="leech" x="4" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>27121</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Varachnis Charmer</name>
-    <picture>Vampire_Spider_B</picture>
-    <asset_bundle>91</asset_bundle>
-    <hidden_until_time>1492448400</hidden_until_time>
-    <attack>4</attack>
+    <attack>6</attack>
     <health>15</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="enfeeble" x="1" />
-    <skill id="jam" c="3" />
-    <skill id="leech" x="4" />
+    <skill id="jam" c="4" />
+    <skill id="leech" x="6" />
     <type>3</type>
     <sub_type>7</sub_type>
     <sub_type>13</sub_type>
@@ -15383,23 +15339,67 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="enfeeble" x="1" all="1" />
-      <skill id="jam" c="3" />
-      <skill id="leech" x="4" />
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>17</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27121</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Varachnis Charmer</name>
+    <picture>Vampire_Spider_B</picture>
+    <asset_bundle>91</asset_bundle>
+    <hidden_until_time>1492448400</hidden_until_time>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="jam" c="3" />
+    <skill id="leech" x="7" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="enfeeble" x="2" all="1" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="5" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -33111,6 +33111,140 @@
       <skill id="armored" x="6" />
       <skill id="regenerate" x="9" />
       <skill id="daze" x="14" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7257</id>
+    <card_type>2</card_type>
+    <name>Skeleton of Erosion</name>
+    <picture>Undead_Dissolving_Undead_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1576170000</hidden_until_time>
+    <attack>6</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="regenerate" x="4" />
+    <skill id="daze" x="6" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="5" />
+      <skill id="regenerate" x="4" />
+      <skill id="daze" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="5" />
+      <skill id="regenerate" x="4" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="5" />
+      <skill id="regenerate" x="5" />
+      <skill id="daze" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17257</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Walker of Erosion</name>
+    <picture>Undead_Dissolving_Undead_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1576170000</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="regenerate" x="5" />
+    <skill id="daze" x="7" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="6" />
+      <skill id="regenerate" x="5" />
+      <skill id="daze" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="6" />
+      <skill id="regenerate" x="5" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="6" />
+      <skill id="regenerate" x="6" />
+      <skill id="daze" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27257</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Spectre of Erosion</name>
+    <picture>Undead_Dissolving_Undead_B</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1576170000</hidden_until_time>
+    <attack>8</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="regenerate" x="6" />
+    <skill id="daze" x="8" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="7" />
+      <skill id="regenerate" x="6" />
+      <skill id="daze" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="7" />
+      <skill id="regenerate" x="6" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="7" />
+      <skill id="regenerate" x="7" />
+      <skill id="daze" x="9" />
     </upgrade>
   </unit>
 </root>

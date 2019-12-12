@@ -7844,6 +7844,38 @@
     </rewards>
     <find_item id="3104" drop_per_energy=".4" />
   </campaign>
+  <!-- Christmas Event 2019 -->
+  <campaign>
+    <id>1230</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1576774800</locked_start_time>
+    <!-- Thursday, 19 December 2019 17:00:00 -->
+    <location_id>26</location_id>
+    <x>140</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6335</mission_id>
+      <mission_id>6336</mission_id>
+      <mission_id>6337</mission_id>
+      <mission_id>6338</mission_id>
+      <mission_id>6339</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2173" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="512" />
+      <item level="5" id="104027" number="25" />
+      <card level="6" id="2174" />
+      <item level="7" id="104027" number="50" />
+    </rewards>
+    <find_item id="3104" drop_per_energy=".2" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

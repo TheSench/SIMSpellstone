@@ -4313,6 +4313,21 @@ var CAMPAIGNS = {
 		],
 		"name": "Shack of Mysteries"
 	},
+	"1230": {
+		"id": "1230",
+		"items": {
+			"3104": 0.2
+		},
+		"location_id": "26",
+		"missions": [
+			"6335",
+			"6336",
+			"6337",
+			"6338",
+			"6339"
+		],
+		"name": "Tree Champion"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -94546,5 +94561,305 @@ var MISSIONS = {
 		],
 		"id": "6334",
 		"name": "Ghostly Abode"
+	},
+	"6335": {
+		"commander": {
+			"id": "235"
+		},
+		"deck": [
+			{
+				"id": "5007"
+			},
+			{
+				"id": "6006"
+			},
+			{
+				"id": "7006"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "5050"
+			},
+			{
+				"id": "5067"
+			},
+			{
+				"id": "5035"
+			},
+			{
+				"id": "5028"
+			},
+			{
+				"id": "5004",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5161",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5025",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5141",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5027",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5026",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6335",
+		"name": "Two Old Men Reunited"
+	},
+	"6336": {
+		"commander": {
+			"id": "351"
+		},
+		"deck": [
+			{
+				"id": "6017"
+			},
+			{
+				"id": "7022"
+			},
+			{
+				"id": "6022"
+			},
+			{
+				"id": "7017"
+			},
+			{
+				"id": "5041"
+			},
+			{
+				"id": "5021"
+			},
+			{
+				"id": "5152"
+			},
+			{
+				"id": "5113"
+			},
+			{
+				"id": "5011"
+			},
+			{
+				"id": "5005",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5155",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5139",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5127",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5032",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5029",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6336",
+		"name": "World's Center Dangers"
+	},
+	"6337": {
+		"commander": {
+			"id": "272"
+		},
+		"deck": [
+			{
+				"id": "6012"
+			},
+			{
+				"id": "6007"
+			},
+			{
+				"id": "7017"
+			},
+			{
+				"id": "7017"
+			},
+			{
+				"id": "5024"
+			},
+			{
+				"id": "5089"
+			},
+			{
+				"id": "5146"
+			},
+			{
+				"id": "6042"
+			},
+			{
+				"id": "5015"
+			},
+			{
+				"id": "5108",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5158",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6016",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5127",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5075",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5151",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6337",
+		"name": "The Biggest Tree"
+	},
+	"6338": {
+		"commander": {
+			"id": "353"
+		},
+		"deck": [
+			{
+				"id": "7006"
+			},
+			{
+				"id": "1312"
+			},
+			{
+				"id": "1618"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "5024"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "5114"
+			},
+			{
+				"id": "6066"
+			},
+			{
+				"id": "5015"
+			},
+			{
+				"id": "6025",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5130",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6005",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6010",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5074",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6045",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6338",
+		"name": "Ax of the Lich Lord"
+	},
+	"6339": {
+		"commander": {
+			"id": "19"
+		},
+		"deck": [
+			{
+				"id": "5022"
+			},
+			{
+				"id": "1019"
+			},
+			{
+				"id": "1615"
+			},
+			{
+				"id": "1616"
+			},
+			{
+				"id": "5016"
+			},
+			{
+				"id": "5080"
+			},
+			{
+				"id": "5139"
+			},
+			{
+				"id": "6089"
+			},
+			{
+				"id": "6069"
+			},
+			{
+				"id": "6025",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6077",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5163",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5149",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5068",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6339",
+		"name": "Holiday Presents"
 	}
 };
