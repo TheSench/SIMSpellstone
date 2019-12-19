@@ -92251,6 +92251,213 @@ var CARDS = {
 			}
 		}
 	},
+	"6604": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1576774800000",
+		"id": "6604",
+		"maxLevel": 10,
+		"name": "Styxia, the Headless",
+		"picture": "Undead_Elemental_Headless_Titaness_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 4
+			},
+			{
+				"id": "strike",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"5",
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"health": 38,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"health": 39,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"health": 39,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 10,
+				"health": 40,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"health": 41,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			},
+			"7": {
+				"attack": 11,
+				"health": 42,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			},
+			"8": {
+				"attack": 11,
+				"health": 43,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			},
+			"9": {
+				"attack": 12,
+				"health": 44,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"id": "strike",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 12,
+				"health": 45,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"id": "strike",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
 	"7000": {
 		"attack": 2,
 		"card_type": "2",
@@ -112899,6 +113106,90 @@ var CARDS = {
 						"x": 7
 					}
 				]
+			}
+		}
+	},
+	"7259": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1577120400000",
+		"id": "7259",
+		"maxLevel": 6,
+		"name": "Ranamuerta Bard",
+		"picture": "Undead_Frog_Frog_Skeleton_Bard_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"health": 14,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"health": 15,
+				"skill": []
 			}
 		}
 	},
@@ -211778,6 +212069,90 @@ var CARDS = {
 			}
 		}
 	},
+	"17259": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1577120400000",
+		"id": "17259",
+		"maxLevel": 6,
+		"name": "Ranamuerta Musician",
+		"picture": "Undead_Frog_Frog_Skeleton_Bard_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"health": 17,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"health": 18,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -295936,6 +296311,104 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 9
+					}
+				]
+			}
+		}
+	},
+	"27259": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1577120400000",
+		"id": "27259",
+		"maxLevel": 6,
+		"name": "Ranamuerta Mariachi",
+		"picture": "Undead_Frog_Frog_Skeleton_Bard_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"4",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
 					}
 				]
 			}

@@ -7866,12 +7866,12 @@
       <mission_id>6339</mission_id>
     </missions>
     <rewards>
-      <card level="1" id="2173" />
+      <card level="1" id="12060" />
       <card level="2" id="510" />
       <card level="3" id="510" />
       <card level="4" id="512" />
       <item level="5" id="104027" number="25" />
-      <card level="6" id="2174" />
+      <card level="6" id="12060" />
       <item level="7" id="104027" number="50" />
     </rewards>
     <find_item id="3104" drop_per_energy=".2" />
@@ -7905,6 +7905,7 @@
       <card level="6" id="512" />
       <item level="7" id="2506" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <campaign>
     <id>3001</id>
@@ -7931,6 +7932,7 @@
       <card level="6" id="512" />
       <item level="7" id="2506" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <campaign>
     <id>3002</id>
@@ -7957,6 +7959,7 @@
       <card level="6" id="512" />
       <item level="7" id="2506" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <!-- END Mythic Campaigns -->
   <!-- Hero Upgrade Campaigns -->
@@ -7992,6 +7995,7 @@
       <card level="6" id="512" />
       <item level="7" id="2509" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <campaign>
     <id>3004</id>
@@ -8025,6 +8029,7 @@
       <card level="6" id="512" />
       <item level="7" id="2510" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <campaign>
     <id>3005</id>
@@ -8058,6 +8063,7 @@
       <card level="6" id="512" />
       <item level="7" id="2511" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <campaign>
     <id>3006</id>
@@ -8091,6 +8097,7 @@
       <card level="6" id="512" />
       <item level="7" id="2512" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <campaign>
     <id>3007</id>
@@ -8124,6 +8131,7 @@
       <card level="6" id="512" />
       <item level="7" id="2513" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <campaign>
     <id>3008</id>
@@ -8157,6 +8165,7 @@
       <card level="6" id="512" />
       <item level="7" id="2514" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <!-- END Hero Upgrade Campaigns -->
   <!-- Mythic Bluefire Titan Campaign  -->
@@ -8192,6 +8201,7 @@
       <card level="6" id="512" />
       <item level="7" id="2506" number="3" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <!-- Mythic Viracocha -->
   <campaign>
@@ -8225,6 +8235,7 @@
       <card level="6" id="512" />
       <item level="7" id="2506" number="3" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <!-- Legend Heroes Unlock -->
   <campaign>
@@ -8294,6 +8305,7 @@
       <card level="6" id="512" />
       <item level="7" id="8017" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <!--  Batara -->
   <campaign>
@@ -8331,6 +8343,7 @@
       <card level="6" id="512" />
       <item level="7" id="2532" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <!--   Ebonclaw -->
   <campaign>
@@ -8368,6 +8381,7 @@
       <card level="6" id="512" />
       <item level="7" id="2533" />
     </rewards>
+    <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
 </root>
 

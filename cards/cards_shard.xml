@@ -3725,6 +3725,105 @@
       <skill id="regenerate" x="11" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6604</id>
+    <card_type>2</card_type>
+    <name>Styxia, the Headless</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undead_Elemental_Headless_Titaness_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1576774800</hidden_until_time>
+    <!-- Thursday, 19 December 2019 17:00:00 -->
+    <item_name>Headless Stone</item_name>
+    <item_desc>Collect Headless Stones to upgrade the Legendary Styxia, the Headless card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>7</sub_type>
+    <attack>9</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="enfeeble" x="4" all="1" />
+    <skill id="strike" x="6" />
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+      <health>38</health>
+      <skill id="counter" x="7" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>39</health>
+      <skill id="counter" x="7" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="strike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>39</health>
+      <skill id="counter" x="8" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="strike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+      <health>40</health>
+      <skill id="counter" x="8" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="strike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <health>41</health>
+      <skill id="counter" x="8" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="strike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>11</attack>
+      <health>42</health>
+      <skill id="counter" x="8" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="strike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>11</attack>
+      <health>43</health>
+      <skill id="counter" x="9" />
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="strike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>12</attack>
+      <health>44</health>
+      <skill id="counter" x="9" />
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="strike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>12</attack>
+      <health>45</health>
+      <skill id="counter" x="10" />
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="strike" x="10" />
+    </upgrade>
+  </unit>
   <!-- ============================= -->
   <!-- === WYLD PREMIUM CHAMPION === -->
   <!-- ============================= -->
