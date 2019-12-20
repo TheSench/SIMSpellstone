@@ -3447,6 +3447,22 @@ var BATTLEGROUNDS = {
 		"scale_with_level": "1",
 		"starting_level": "5"
 	},
+	"2084": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.3,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2084",
+		"name": "March of the Relentless",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
 		"effect": [

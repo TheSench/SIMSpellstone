@@ -12014,6 +12014,24 @@
       <pack>11</pack>
     </reward>
   </achievement>
+  <!-- Reks recipe -->
+  <achievement>
+    <id>3538</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Scyer the Haywire</name>
+    <desc>Complete the 'Scyer the Haywire' campaign on Mastery Level 1.</desc>
+    <mission_req>6340</mission_req>
+    <locked_start_time>1577379600</locked_start_time>
+    <!--  Thursday, 26 December 2019 17:00:00 -->
+    <req>
+      <campaign>1231</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8021" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

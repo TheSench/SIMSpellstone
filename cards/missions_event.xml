@@ -42133,5 +42133,484 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 20 Boss Node -->
+  <mission>
+    <id>6340</id>
+    <name>Mechanical Undead</name>
+    <energy>9</energy>
+    <desc>Remnant shards crack beneath Scyer's metal feet. He shuffles forward, arms held up like a zombie, the Undead behind him mimicking the same motions. Light has shifted in Scyer's electronic eyes, lacking their normal brightness.</desc>
+    <commander id="402" />
+    <deck>
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="6027" name="Frigela, the Dread" />
+      <card id="6027" />
+      <card id="5036" name="Winter Tail" />
+      <card id="7121" name="Varachnis" />
+      <card id="5237" name="Lanternbulb Hunter" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7033" name="Treebond Skull" />
+      <card id="5087" name="Apollyon" />
+      <card id="7124" mastery_level="2" name="Enduring Appetite" />
+      <card id="2061" mastery_level="3" name="Reks, the Forlorn" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="5237" mastery_level="5" name="Lanternbulb Hunter" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="5215" mastery_level="7" name="Goldshield Enchanter" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6341</id>
+    <name>Remnant Energy</name>
+    <energy>9</energy>
+    <desc>A powerful aura radiates from Scyer and the Undead. The Spellstone shards vibrate with pitched intensity at each Undead's step. The air itself thrums with the power.</desc>
+    <commander id="402" />
+    <deck>
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="6027" name="Frigela, the Dread" />
+      <card id="6027" />
+      <card id="5036" name="Winter Tail" />
+      <card id="7121" name="Varachnis" />
+      <card id="5237" name="Lanternbulb Hunter" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7033" name="Treebond Skull" />
+      <card id="5087" name="Apollyon" />
+      <card id="7124" mastery_level="2" name="Enduring Appetite" />
+      <card id="2061" mastery_level="3" name="Reks, the Forlorn" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="5237" mastery_level="5" name="Lanternbulb Hunter" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="5215" mastery_level="7" name="Goldshield Enchanter" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6342</id>
+    <name>Team Support</name>
+    <energy>9</energy>
+    <desc>Tarian evaluates the other Undead cooly. Once they pass a certain threshold, Tarian charges forward. His ax cleanly cuts through one of the zombies, but a horde remains behind them.</desc>
+    <commander id="402" />
+    <deck>
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="6027" name="Frigela, the Dread" />
+      <card id="6027" />
+      <card id="5036" name="Winter Tail" />
+      <card id="7121" name="Varachnis" />
+      <card id="5237" name="Lanternbulb Hunter" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7033" name="Treebond Skull" />
+      <card id="5087" name="Apollyon" />
+      <card id="7124" mastery_level="2" name="Enduring Appetite" />
+      <card id="2061" mastery_level="3" name="Reks, the Forlorn" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="5237" mastery_level="5" name="Lanternbulb Hunter" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="5215" mastery_level="7" name="Goldshield Enchanter" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6343</id>
+    <name>Rescue Mission</name>
+    <energy>9</energy>
+    <desc>You and Aria focus on saving Scyer. Aria slams dark blasts of energy against him. The strange, powerful aura has taken ahold of the Mecha, yet you and Aria are immune to its effect.</desc>
+    <commander id="402" />
+    <deck>
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="6027" name="Frigela, the Dread" />
+      <card id="6027" />
+      <card id="5036" name="Winter Tail" />
+      <card id="7121" name="Varachnis" />
+      <card id="5237" name="Lanternbulb Hunter" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7033" name="Treebond Skull" />
+      <card id="5087" name="Apollyon" />
+      <card id="7124" mastery_level="2" name="Enduring Appetite" />
+      <card id="2061" mastery_level="3" name="Reks, the Forlorn" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="5237" mastery_level="5" name="Lanternbulb Hunter" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="5215" mastery_level="7" name="Goldshield Enchanter" />
+    </deck>
+  </mission>
+  <!-- Event 20 Node 3 -->
+  <mission>
+    <id>6344</id>
+    <name>Eerie Shack</name>
+    <energy>18</energy>
+    <desc>Light filters in through the broken stained glass. A the center of the room is a pedestal, blue shards scattered on the floor. Remnant glass shards can also be seen at its base.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="1319" name="Wraith" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5033" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5035" />
+      <card id="2140" name="Sleetbones" />
+      <card id="2151" name="Armorca" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2151" mastery_level="2" name="Armorca" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="2140" mastery_level="4" name="Sleetbones" />
+      <card id="5034" mastery_level="5" name="Skyward Guardian" />
+      <card id="5170" mastery_level="6" name="Dullahan Destrier" />
+      <card id="5197" mastery_level="7" name="Deepcharge Caller" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Annnd not a soul in sight. Breaking in was loud enough to wake the dead.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6345</id>
+    <name>Shattered Spellstone</name>
+    <energy>18</energy>
+    <desc>Aria pokes around the glass, careful not to step on it as she takes a closer look at the emptied pedestal. A gigantic monster must have been contained within...</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8021" name="Fortune's Captain" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="2070" name="Redclaw Tamer" />
+      <card id="2070" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6116" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="2078" name="Septuamaid" />
+      <card id="6135" name="Burnshell" />
+      <card id="2078" mastery_level="2" name="Septuamaid" />
+      <card id="6135" mastery_level="3" name="Burnshell" />
+      <card id="2060" mastery_level="4" name="Patchwork Experiment" />
+      <card id="6174" mastery_level="5" name="Deatheye Owl" />
+      <card id="2061" mastery_level="6" name="Reks, the Forlorn" />
+      <card id="2116" mastery_level="7" name="Messina's Choice" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>All these shards are from a shattered Spellstone. The creature inside must be long gone by now.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6346</id>
+    <name>Lich Lord</name>
+    <energy>18</energy>
+    <desc>Aria jumps upon realizing another soul is at the edge of the room. Tarian stands silently near the stained glass, half hidden in a bookshelf's shadow, peering intently through it. Aria hesitates to approach him.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="8027" name="Underhill Beast" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="6110" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1332" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="6150" name="Deep Dino" />
+      <card id="6149" name="Pufferspine" />
+      <card id="6150" mastery_level="2" name="Deep Dino" />
+      <card id="6149" mastery_level="3" name="Pufferspine" />
+      <card id="2060" mastery_level="4" name="Patchwork Experiment" />
+      <card id="6027" mastery_level="5" name="Frigela, the Dread" />
+      <card id="6124" mastery_level="6" name="Enfeebling Vizier" />
+      <card id="6151" mastery_level="7" name="Cetus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>...Tarian?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6347</id>
+    <name>Chaos Leader</name>
+    <energy>18</energy>
+    <desc>Tarian snaps out of whatever reverie he was in. At the sound of Aria's voice, he turns to greet you and your group.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8030" name="Marrowsworn's Cohort" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="5124" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="5123" />
+      <card id="2140" name="Sleetbones" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5107" mastery_level="2" name="Thrumming Beacon" />
+      <card id="5149" mastery_level="3" name="Flatfish Ward" />
+      <card id="2140" mastery_level="4" name="Sleetbones" />
+      <card id="5237" mastery_level="5" name="Lanternbulb Hunter" />
+      <card id="5036" mastery_level="6" name="Winter Tail" />
+      <card id="5154" mastery_level="7" name="Glaucus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>Ah, Aria. You've traveled a long way to find me. I've been researching methods to protect Karthos.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6348</id>
+    <name>Vulcanos's Plan</name>
+    <energy>18</energy>
+    <desc>Aria wastes no time in explaining the meaning of your adventure. After Kensho's betrayal, it's important that the other Faction leaders be made aware of the Titans' movements.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8075" name="Vorpal Magnate" />
+      <card id="1319" name="Wraith" />
+      <card id="2078" name="Septuamaid" />
+      <card id="2078" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="2101" />
+      <card id="6083" name="Lockejaw" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5107" mastery_level="2" name="Thrumming Beacon" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="6083" mastery_level="4" name="Lockejaw" />
+      <card id="5085" mastery_level="5" name="Haunting Heir" />
+      <card id="6161" mastery_level="6" name="Torero" />
+      <card id="7108" mastery_level="7" name="Quetee" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Then I suppose our worry was for nothing. We wanted to warn you that Vulcanos may be up to something with the Chaos.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6349</id>
+    <name>Looming Threat</name>
+    <energy>18</energy>
+    <desc>Tarian stares intently at Aria, as if he can see inside her soul. She squirms uncomfortably at his gaze, unused to the lich paying her special heed.</desc>
+    <commander id="270" />
+    <deck>
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5152" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="5086" />
+      <card id="2160" name="Frigore Scientist" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="2105" mastery_level="3" name="Shockscale Eel" />
+      <card id="2160" mastery_level="4" name="Frigore Scientist" />
+      <card id="5171" mastery_level="5" name="Dross Collector" />
+      <card id="5109" mastery_level="6" name="Cyclospout" />
+      <card id="5122" mastery_level="7" name="Crow King" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>What is it, Tarian? You're giving me a funny look.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 20 Node 4 -->
+  <mission>
+    <id>6350</id>
+    <name>Mecha Machination</name>
+    <energy>18</energy>
+    <desc>However, Tarian's gaze is not directed at Aria. He stares right past her, to another figure lurking behind her...</desc>
+    <commander id="344" />
+    <deck>
+      <card id="8029" name="Ahnkmotep" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="6110" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2020" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="2060" />
+      <card id="6150" name="Deep Dino" />
+      <card id="6149" name="Pufferspine" />
+      <card id="6150" mastery_level="2" name="Deep Dino" />
+      <card id="6149" mastery_level="3" name="Pufferspine" />
+      <card id="2116" mastery_level="4" name="Messina's Choice" />
+      <card id="6126" mastery_level="5" name="Terrordactyl" />
+      <card id="6122" mastery_level="6" name="Relentless Dead" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>Don't worry about me. Worry about that Mecha behind you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6351</id>
+    <name>Silent Scyer</name>
+    <energy>18</energy>
+    <desc>Steam emits from Scyer's arms and furnace. His robotic eyes stare unflinchingly forward, his mouth a grim line.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5107" />
+      <card id="5168" name="Lamia's Shield" />
+      <card id="5168" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="5123" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5041" mastery_level="2" name="Skylance Raiders" />
+      <card id="5011" mastery_level="3" name="Sky Whale" />
+      <card id="5122" mastery_level="4" name="Crow King" />
+      <card id="5237" mastery_level="5" name="Lanternbulb Hunter" />
+      <card id="5167" mastery_level="6" name="Hierophant of Evening" />
+      <card id="5106" mastery_level="7" name="Acuro, Sea Captain" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Scyer? You've never been quiet a day in your life. You're scaring me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6352</id>
+    <name>Scyer's Meltdown</name>
+    <energy>18</energy>
+    <desc>Scyer raises his arms, bringing them down upon Aria! She nimbly dodges from his crushing metal grasp. Stray Undead gather behind Scyer, the Mecha mindlessly shuffling forward like one of the Undead.</desc>
+    <commander id="208" />
+    <deck>
+      <card id="8021" name="Fortune's Captain" />
+      <card id="2070" name="Redclaw Tamer" />
+      <card id="2070" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6116" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="6036" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="6110" mastery_level="2" name="Sea Mantis" />
+      <card id="6108" mastery_level="3" name="Redwater Angler" />
+      <card id="6127" mastery_level="4" name="Hexapus" />
+      <card id="6087" mastery_level="5" name="Dread Obliterator" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6151" mastery_level="7" name="Cetus" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6353</id>
+    <name>Chaos Influence</name>
+    <energy>18</energy>
+    <desc>Tarian shakes his head. Scyer seems to have completely lost his mind, trying desperately to attack you and Aria, along with the other monsters.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="8011" name="Nether Soldiers" />
+      <card id="2078" name="Septuamaid" />
+      <card id="2078" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1332" />
+      <card id="6125" name="Deadly Shot" />
+      <card id="6125" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="6135" name="Burnshell" />
+      <card id="6110" mastery_level="2" name="Sea Mantis" />
+      <card id="6135" mastery_level="3" name="Burnshell" />
+      <card id="2089" mastery_level="4" name="Slagspirit" />
+      <card id="6126" mastery_level="5" name="Terrordactyl" />
+      <card id="6084" mastery_level="6" name="Crypt Sentry" />
+      <card id="2116" mastery_level="7" name="Messina's Choice" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>We are close to The Void's origin. Remnants of its power still affect those sensitive to it, causing them to attack allies.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>Or perhaps this is Vulcanos's doing...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6354</id>
+    <name>Dismantling Protocol</name>
+    <energy>18</energy>
+    <desc>Tarian helps you defend against the monsters. He brings his ax down against the Undead who refuse to obey him, clearing a path to the mad Mecha.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5152" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="5168" name="Lamia's Shield" />
+      <card id="5168" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="2151" name="Armorca" />
+      <card id="5149" mastery_level="2" name="Flatfish Ward" />
+      <card id="2151" mastery_level="3" name="Armorca" />
+      <card id="5167" mastery_level="4" name="Hierophant of Evening" />
+      <card id="5170" mastery_level="5" name="Dullahan Destrier" />
+      <card id="5213" mastery_level="6" name="Mountking Warder" />
+      <card id="5197" mastery_level="7" name="Deepcharge Caller" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>Dismantle him, if you must. He can't be allowed to continue.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6355</id>
+    <name>Machine Repairs</name>
+    <energy>18</energy>
+    <desc>Disabling Scyer seems to be the only way to save your friend. Aria readies her own dark spells, the group fighting through the Undead to reach him.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8026" name="Putrid Zombie" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="6110" />
+      <card id="6081" name="Apparition" />
+      <card id="6081" />
+      <card id="6083" name="Lockejaw" />
+      <card id="6083" />
+      <card id="6150" name="Deep Dino" />
+      <card id="6135" name="Burnshell" />
+      <card id="6150" mastery_level="2" name="Deep Dino" />
+      <card id="6135" mastery_level="3" name="Burnshell" />
+      <card id="6033" mastery_level="4" name="Firebeard" />
+      <card id="6087" mastery_level="5" name="Dread Obliterator" />
+      <card id="6163" mastery_level="6" name="Coven Knight" />
+      <card id="6195" mastery_level="7" name="Magmurchin" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>I knew bringing him along was trouble. Once we get him out of here, he should go back to his normal idiotic self.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

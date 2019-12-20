@@ -32463,6 +32463,138 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5254</id>
+    <card_type>2</card_type>
+    <name>Scarab Mummy</name>
+    <picture>Undead_Mummy_Sorceress_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1577379600</hidden_until_time>
+    <attack>1</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="6" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="6" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="6" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="7" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15254</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Scarab Ancestress</name>
+    <picture>Undead_Mummy_Sorceress_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1577379600</hidden_until_time>
+    <attack>1</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="protect" x="2" all="1" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="7" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="8" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="8" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25254</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Scarab Matriarch</name>
+    <picture>Undead_Mummy_Sorceress_B</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1577379600</hidden_until_time>
+    <attack>2</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="8" />
+    <skill id="protect" x="4" all="1" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="9" />
+      <skill id="protect" x="4" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="10" />
+      <skill id="protect" x="5" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5255</id>
     <card_type>2</card_type>
     <name>Cockaboo Fallen</name>
@@ -32597,6 +32729,134 @@
       <skill id="armored" x="6" />
       <skill id="frost" x="6" />
       <skill id="pierce" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5256</id>
+    <card_type>2</card_type>
+    <name>Heartbeat Seeker</name>
+    <picture>Undead_Undead_Seer_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1577984400</hidden_until_time>
+    <attack>4</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="2" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="backlash" x="2" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="2" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15256</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Heartbeat Watcher</name>
+    <picture>Undead_Undead_Seer_A</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1577984400</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="backlash" x="3" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="4" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25256</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Heartbeat Swayer</name>
+    <picture>Undead_Undead_Seer_B</picture>
+    <asset_bundle>178</asset_bundle>
+    <hidden_until_time>1577984400</hidden_until_time>
+    <attack>7</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="4" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="backlash" x="4" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="5" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
   <!-- END AETHER PREMIUM SET -->
