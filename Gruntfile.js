@@ -314,6 +314,11 @@ module.exports = function (grunt) {
         grunt.task.run('uglify');
         grunt.task.run('html');
     });
+    grunt.registerTask('css',  function() {
+        grunt.task.run('sass');
+        grunt.task.run('cssmin');
+        grunt.task.run('html');
+    });
     grunt.registerTask('build', ['clean', /*'jshint', */'sass', 'cssmin', 'imagemin', 'scripts']);
 
     grunt.registerTask('default', ['scripts']);
