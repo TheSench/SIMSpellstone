@@ -154,13 +154,17 @@ tr.alternating:nth-child(odd) {
 
 button,
 input[type=button] {
-    color: $secondary-neutral;
+    color: $secondary-black;
     border-color: $secondary-tint;
     background-color: $secondary-white;
     border-radius: 5px;
     border-width: 3px;
     padding: 5px 10px;
     margin: 5px 0;
+}
+
+label[for]:not(.grey) {
+    color: $secondary-black;
 }
 
 /* states and images */

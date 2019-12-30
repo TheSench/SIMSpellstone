@@ -153,13 +153,17 @@ tr.alternating:nth-child(odd) {
 
 button,
 input[type=button] {
-  color: #cbcbcb;
+  color: #e2e2e2;
   border-color: gray;
   background-color: #1d1d1d;
   border-radius: 5px;
   border-width: 3px;
   padding: 5px 10px;
   margin: 5px 0;
+}
+
+label[for]:not(.grey) {
+  color: #e2e2e2;
 }
 
 /* states and images */
