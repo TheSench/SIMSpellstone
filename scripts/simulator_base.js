@@ -386,7 +386,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
@@ -447,7 +447,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, wingward);
 			wingward += enhanced;
 
-			var affected = 0;
+			var affected = 1;
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
@@ -505,7 +505,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, heal);
 			heal += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
@@ -587,7 +587,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, strike);
 			strike += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
@@ -672,7 +672,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, intensify);
 			intensify += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
@@ -739,7 +739,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, ignite);
 			ignite += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
@@ -852,7 +852,7 @@ var SIMULATOR = {};
 			// No Targets
 			if (!targets.length) return 0;
 
-			var affected = 0;
+			var affected = 1;
 			var frost = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, frost);
 			frost += enhanced;
@@ -945,7 +945,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, enfeeble);
 			enfeeble += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
@@ -1023,7 +1023,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, weaken);
 			weaken += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = potentialTargets[targets[key]];
@@ -1121,7 +1121,7 @@ var SIMULATOR = {};
 			var rally = (skill.x || 0);
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
@@ -1174,7 +1174,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 
@@ -1220,7 +1220,7 @@ var SIMULATOR = {};
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
-			var affected = 0;
+			var affected = 1;
 
 			while (target_key <= len) {
 				// Check left
@@ -1263,7 +1263,7 @@ var SIMULATOR = {};
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
-			var affected = 0;
+			var affected = 1;
 
 			while (target_key <= len) {
 				// Check left
@@ -1362,7 +1362,7 @@ var SIMULATOR = {};
 					targets = choose_random_target(targets);
 				}
 
-				var affected = 0;
+				var affected = (all ? 1 : 0);
 
 				var strike = 1;
 				for (var key = 0, len = targets.length; key < len; key++) {
@@ -1494,7 +1494,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
@@ -1623,7 +1623,7 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, mark);
 			mark += enhanced;
 
-			var affected = 0;
+			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
