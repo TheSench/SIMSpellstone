@@ -339,7 +339,7 @@ var SIMULATOR = {};
 				affected++;
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Protect (Barrier)
@@ -423,7 +423,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Wing Guard
@@ -464,7 +464,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		invigorate: function (src_card, skill) {
@@ -547,7 +547,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Strike (Bolt)
@@ -635,7 +635,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Intensify
@@ -703,7 +703,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Ignite
@@ -761,7 +761,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Jam (Freeze)
@@ -891,7 +891,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		heartseeker: function (src_card, skill) {
@@ -967,7 +967,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Weaken
@@ -1048,7 +1048,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Vampirism
@@ -1137,7 +1137,7 @@ var SIMULATOR = {};
 				affected++;
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Rally
@@ -1198,7 +1198,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Legion
@@ -1246,7 +1246,7 @@ var SIMULATOR = {};
 				target_key += 2;
 			}
 
-			return affected;
+			return true;
 		},
 		legion: function (src_card, skill) {
 
@@ -1263,7 +1263,7 @@ var SIMULATOR = {};
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
-			var affected = 1;
+			var affected = 0;
 
 			while (target_key <= len) {
 				// Check left
@@ -1394,7 +1394,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Enhance
@@ -1520,7 +1520,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			return true;
 		},
 
 		// Enhance
@@ -1639,7 +1639,7 @@ var SIMULATOR = {};
 				skill.countdown = 1;
 			}
 
-			return affected;
+			return true;
 		}
 	};
 
