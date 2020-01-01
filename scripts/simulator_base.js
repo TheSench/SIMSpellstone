@@ -321,7 +321,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, 'burn', scorch);
 			scorch += enhanced;
 
-			var affected = 0;
 			for (var i = 0; i < targets.length; i++) {
 				var target = targets[i];
 
@@ -335,8 +334,6 @@ var SIMULATOR = {};
 					target.scorched.timer = 2;
 				}
 				if (debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
-
-				affected++;
 			}
 
 			return true;
@@ -386,8 +383,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 
@@ -397,8 +392,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
-
-				affected++;
 
 				var protect_amt = protect;
 				var mult = skill.mult;
@@ -447,12 +440,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, wingward);
 			wingward += enhanced;
 
-			var affected = 1;
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
-				affected++;
-
 				target.protected += wingward;
 				target.invisible += Math.ceil(wingward/2);
 				if (debug) {
@@ -505,8 +494,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, heal);
 			heal += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 
@@ -516,8 +503,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
-
-				affected++;
 
 				var heal_amt = heal + getSkillMult(skill, target);
 
@@ -587,8 +572,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, strike);
 			strike += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -598,8 +581,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
-
-				affected++;
 
 				var strike_damage = strike;
 
@@ -672,8 +653,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, intensify);
 			intensify += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -686,8 +665,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
-
-				affected++;
 
 				if (target.scorched) {
 					target.scorched.amount += intensify;
@@ -739,8 +716,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, ignite);
 			ignite += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -750,8 +725,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' ignites ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
-
-				affected++;
 
 				target.scorch(ignite);
 				if (debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
@@ -852,7 +825,6 @@ var SIMULATOR = {};
 			// No Targets
 			if (!targets.length) return 0;
 
-			var affected = 1;
 			var frost = skill.x;
 			var enhanced = getEnhancement(src_card, skill.id, frost);
 			frost += enhanced;
@@ -866,8 +838,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
-
-				affected++;
 
 				var frost_damage = frost;
 
@@ -945,8 +915,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, enfeeble);
 			enfeeble += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -956,8 +924,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
-
-				affected++;
 
 				target['enfeebled'] += enfeeble;
 				if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
@@ -1023,8 +989,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, weaken);
 			weaken += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = potentialTargets[targets[key]];
 
@@ -1034,8 +998,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
-
-				affected++;
 
 				target.attack_weaken += weaken;
 				if (debug) {
@@ -1121,7 +1083,6 @@ var SIMULATOR = {};
 			var rally = (skill.x || 0);
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
-			var affected = (all ? 1 : 0);
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
@@ -1133,8 +1094,6 @@ var SIMULATOR = {};
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' enlarges ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 				}
-
-				affected++;
 			}
 
 			return true;
@@ -1174,8 +1133,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 
 				var target = alliedUnits[targets[key]];
@@ -1186,8 +1143,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
-
-				affected++;
 
 				var rally_amt = rally + getSkillMult(skill, target, 'attack');
 
@@ -1220,8 +1175,6 @@ var SIMULATOR = {};
 			var len = target_key + 2;
 			if (target_key < 0) target_key += 2;
 
-			var affected = 1;
-
 			while (target_key <= len) {
 				// Check left
 				var target = alliedUnits[target_key];
@@ -1231,7 +1184,6 @@ var SIMULATOR = {};
 						target.nullified--;
 						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
-						affected++;
 						target.attack_rally += rally;
 						var protectAmount = Math.ceil(rally * 0.5);
 						target.protected += protectAmount;
@@ -1362,8 +1314,6 @@ var SIMULATOR = {};
 					targets = choose_random_target(targets);
 				}
 
-				var affected = (all ? 1 : 0);
-
 				var strike = 1;
 				for (var key = 0, len = targets.length; key < len; key++) {
 					var target = enemyUnits[targets[key]];
@@ -1374,8 +1324,6 @@ var SIMULATOR = {};
 						if (debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
 						continue;
 					}
-
-					affected++;
 
 					var strike_damage = strike;
 
@@ -1494,8 +1442,6 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 				var amount = enrage;
@@ -1506,8 +1452,6 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
-
-				affected++;
 
 				if (skill.mult) {
 					amount = Math.ceil(skill.mult * target.health);
@@ -1623,12 +1567,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, mark);
 			mark += enhanced;
 
-			var affected = (all ? 1 : 0);
-
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
-
-				affected++;
 
 				target.enfeebled += mark;
 				src_card.mark_target = target.uid;
@@ -1780,7 +1720,7 @@ var SIMULATOR = {};
 			var skillFn = getActivatedSkill(activationSkills, skill.id);
 			var affected = skillFn(src_card, skill);
 
-			if (skill.c && affected > 0) {
+			if (skill.c && affected) {
 				skill.countdown = skill.c;
 			}
 
