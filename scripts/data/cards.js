@@ -44790,6 +44790,159 @@ var CARDS = {
 			}
 		}
 	},
+	"2175": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 0,
+		"health": 7,
+		"hidden_until": "1578589200000",
+		"id": "2175",
+		"maxLevel": 5,
+		"name": "Ninja of the Red Sea",
+		"picture": "Seafolk_Ninja_Starfish_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 8,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "strike",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"attack": 3,
+				"skill": []
+			}
+		}
+	},
+	"2176": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 3,
+		"health": 31,
+		"hidden_until": "1578589200000",
+		"id": "2176",
+		"maxLevel": 5,
+		"name": "Sinksight Mermaid",
+		"picture": "Seafolk_Eel_Medusa_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"c": 6,
+				"id": "jam"
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 1,
+				"y": "12"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1,
+						"y": "12"
+					}
+				]
+			},
+			"3": {
+				"health": 32,
+				"skill": []
+			},
+			"4": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2,
+						"y": "12"
+					}
+				]
+			},
+			"5": {
+				"attack": 3,
+				"skill": []
+			}
+		}
+	},
 	"4000": {
 		"attack": 9,
 		"card_type": "2",
@@ -49957,6 +50110,202 @@ var CARDS = {
 						"all": "1",
 						"id": "enrage",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"4028": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"id": "4028",
+		"maxLevel": 10,
+		"name": "Pirate Hunter Eichiro",
+		"picture": "Seafolk_Corsair_Fish_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"id": "heal",
+				"x": 6,
+				"y": "12"
+			},
+			{
+				"id": "legion",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "heal",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "heal",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 29,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					}
+				]
+			},
+			"7": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					}
+				]
+			},
+			"8": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"id": "heal",
+						"x": 9,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					}
+				]
+			},
+			"9": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 12
+					},
+					{
+						"id": "heal",
+						"x": 9,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 7
+					}
+				]
+			},
+			"10": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 13
+					},
+					{
+						"id": "heal",
+						"x": 10,
+						"y": "12"
+					},
+					{
+						"id": "legion",
+						"x": 7
 					}
 				]
 			}
@@ -148586,6 +148935,145 @@ var CARDS = {
 			}
 		}
 	},
+	"12175": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 0,
+		"health": 9,
+		"hidden_until": "1578589200000",
+		"id": "12175",
+		"maxLevel": 5,
+		"name": "Star of the Red Sea",
+		"picture": "Seafolk_Ninja_Starfish_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "regenerate",
+				"x": 10
+			},
+			{
+				"id": "strike",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 10,
+				"skill": []
+			},
+			"4": {
+				"attack": 4,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"id": "strike",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"12176": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 3,
+		"health": 33,
+		"hidden_until": "1578589200000",
+		"id": "12176",
+		"maxLevel": 5,
+		"name": "Sinksight Witch",
+		"picture": "Seafolk_Eel_Medusa_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2,
+				"y": "12"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 34,
+				"skill": []
+			},
+			"3": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3,
+						"y": "12"
+					}
+				]
+			},
+			"4": {
+				"attack": 4,
+				"skill": []
+			},
+			"5": {
+				"health": 36,
+				"skill": []
+			}
+		}
+	},
 	"15000": {
 		"attack": 6,
 		"card_type": "2",
@@ -232978,6 +233466,159 @@ var CARDS = {
 					{
 						"id": "frost",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"22175": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 0,
+		"health": 11,
+		"hidden_until": "1578589200000",
+		"id": "22175",
+		"maxLevel": 5,
+		"name": "Shuriken of the Red Sea",
+		"picture": "Seafolk_Ninja_Starfish_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "regenerate",
+				"x": 11
+			},
+			{
+				"id": "strike",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 5,
+				"skill": []
+			},
+			"3": {
+				"health": 12,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"id": "strike",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"22176": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1578589200000",
+		"id": "22176",
+		"maxLevel": 5,
+		"name": "Sinksight Gorgon",
+		"picture": "Seafolk_Eel_Medusa_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3,
+				"y": "12"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "12"
+					}
+				]
+			},
+			"3": {
+				"attack": 5,
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"health": 38,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5,
+						"y": "12"
 					}
 				]
 			}

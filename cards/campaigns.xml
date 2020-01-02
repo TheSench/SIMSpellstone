@@ -7889,8 +7889,8 @@
     <location_id>26</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
-    <x>600</x>
-    <y>400</y>
+    <x>485</x>
+    <y>490</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6340</mission_id>
@@ -7913,6 +7913,7 @@
     </rewards>
     <find_item id="3104" drop_per_energy=".4" />
   </campaign>
+  <!-- ================================== Campaign Event 20 weeks 5-8 / World's Center ================================== -->
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

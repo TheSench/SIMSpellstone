@@ -20229,5 +20229,238 @@
       <skill id="frost" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2175</id>
+    <card_type>2</card_type>
+    <name>Ninja of the Red Sea</name>
+    <picture>Seafolk_Ninja_Starfish_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1578589200</hidden_until_time>
+    <attack>2</attack>
+    <health>7</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="8" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="9" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="9" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12175</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Star of the Red Sea</name>
+    <picture>Seafolk_Ninja_Starfish_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1578589200</hidden_until_time>
+    <attack>3</attack>
+    <health>9</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="10" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="10" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="11" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22175</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Shuriken of the Red Sea</name>
+    <picture>Seafolk_Ninja_Starfish_B</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1578589200</hidden_until_time>
+    <attack>4</attack>
+    <health>11</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="11" />
+    <skill id="strike" x="4" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="11" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="12" />
+      <skill id="strike" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2176</id>
+    <card_type>2</card_type>
+    <name>Sinksight Mermaid</name>
+    <picture>Seafolk_Eel_Medusa_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1578589200</hidden_until_time>
+    <attack>2</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="backlash" x="2" />
+    <skill id="jam" c="6" />
+    <skill id="enrage" x="1" all="1" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="backlash" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="enrage" x="1" all="1" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+      <skill id="backlash" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="enrage" x="2" all="1" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12176</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Sinksight Witch</name>
+    <picture>Seafolk_Eel_Medusa_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1578589200</hidden_until_time>
+    <attack>3</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="jam" c="4" />
+    <skill id="enrage" x="2" all="1" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="backlash" x="3" />
+      <skill id="jam" c="4" />
+      <skill id="enrage" x="3" all="1" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22176</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sinksight Gorgon</name>
+    <picture>Seafolk_Eel_Medusa_B</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1578589200</hidden_until_time>
+    <attack>4</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="backlash" x="4" />
+    <skill id="jam" c="3" />
+    <skill id="enrage" x="3" all="1" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="backlash" x="4" />
+      <skill id="jam" c="3" />
+      <skill id="enrage" x="4" all="1" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="5" />
+      <skill id="jam" c="3" />
+      <skill id="enrage" x="5" all="1" y="12" />
+    </upgrade>
+  </unit>
 </root>
 

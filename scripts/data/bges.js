@@ -3463,6 +3463,38 @@ var BATTLEGROUNDS = {
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},
+	"2085": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2085",
+		"name": "Chorus of the Deep",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2086": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.05
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2086",
+		"name": "Chorus of the Deep",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
 		"effect": [

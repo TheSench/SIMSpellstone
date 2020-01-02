@@ -12032,6 +12032,133 @@
       <item id="8021" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 20 weeks 5-8 -->
+  <achievement>
+    <id>3539</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Silent Night</name>
+    <desc>Complete the 'Silent Night' campaign on Mastery Level 1.</desc>
+    <mission_req>6344</mission_req>
+    <locked_start_time>1578589200</locked_start_time>
+    <!--  Thursday, 9 January 2020 17:00:00 -->
+    <req>
+      <campaign>1232</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3104" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7054" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3540</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Silent Night</name>
+    <desc>Complete the 'FSilent Night' campaign on Mastery Level 2.</desc>
+    <mission_req>6344</mission_req>
+    <locked_start_time>1578589200</locked_start_time>
+    <!--  Thursday, 9 January 2020 17:00:00 -->
+    <achievement_req>3539</achievement_req>
+    <req>
+      <campaign>1232</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3541</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Silent Night</name>
+    <desc>Complete the 'Silent Night' campaign on Mastery Level 4.</desc>
+    <mission_req>6344</mission_req>
+    <locked_start_time>1578589200</locked_start_time>
+    <!--  Thursday, 9 January 2020 17:00:00 -->
+    <achievement_req>3540</achievement_req>
+    <req>
+      <campaign>1232</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3542</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Silent Night</name>
+    <desc>Complete the 'Silent Night' campaign on Mastery Level 6.</desc>
+    <mission_req>6344</mission_req>
+    <locked_start_time>1578589200</locked_start_time>
+    <!--  Thursday, 9 January 2020 17:00:00 -->
+    <achievement_req>3541</achievement_req>
+    <req>
+      <campaign>1232</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3543</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vulcanos's Warning</name>
+    <desc>Complete the 'Vulcanos's Warning' campaign on Mastery Level 2.</desc>
+    <mission_req>6350</mission_req>
+    <locked_start_time>1579798800</locked_start_time>
+    <!--  Thursday, 23 January 2020 17:00:00 -->
+    <req>
+      <campaign>1233</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3544</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vulcanos's Warning</name>
+    <desc>Complete the 'Vulcanos's Warning' campaign on Mastery Level 4.</desc>
+    <mission_req>6350</mission_req>
+    <locked_start_time>1579798800</locked_start_time>
+    <!--  Thursday, 23 January 2020 17:00:00 -->
+    <achievement_req>3543</achievement_req>
+    <req>
+      <campaign>1233</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3545</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vulcanos's Warning</name>
+    <desc>Complete the 'Vulcanos's Warning' campaign on Mastery Level 6.</desc>
+    <mission_req>6350</mission_req>
+    <locked_start_time>1579798800</locked_start_time>
+    <!--  Thursday, 23 January 2020 17:00:00 -->
+    <achievement_req>3544</achievement_req>
+    <req>
+      <campaign>1233</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
