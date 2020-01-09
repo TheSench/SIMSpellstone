@@ -2932,7 +2932,7 @@
   <!-- Campaign Event 20 weeks 5-8 -->
   <battleground>
     <id>2085</id>
-    <name>Chorus of the Deep</name>
+    <name>Requiem of the Relentless</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_undead_64</icon>
     <enemy_only>1</enemy_only>
@@ -2948,7 +2948,7 @@
   </battleground>
   <battleground>
     <id>2086</id>
-    <name>Chorus of the Deep</name>
+    <name>Requiem of the Relentless</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_undead_64</icon>
     <enemy_only>1</enemy_only>

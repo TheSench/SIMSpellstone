@@ -42416,7 +42416,7 @@
         <text>...</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>necromancer</commander>
         <enemy>0</enemy>
         <text>What is it, Tarian? You're giving me a funny look.</text>
       </line>
@@ -42480,7 +42480,7 @@
     <speech>
       <line>
         <commander>Portrait_Chaos_Mecha_Hero</commander>
-        <enemy>0</enemy>
+        <enemy>1</enemy>
         <text>...</text>
       </line>
       <line>
@@ -42544,8 +42544,8 @@
         <text>We are close to The Void's origin. Remnants of its power still affect those sensitive to it, causing them to attack allies.</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
-        <enemy>1</enemy>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
         <text>Or perhaps this is Vulcanos's doing...</text>
       </line>
     </speech>

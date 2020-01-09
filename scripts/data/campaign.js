@@ -4343,6 +4343,40 @@ var CAMPAIGNS = {
 		],
 		"name": "Scyer the Haywire"
 	},
+	"1232": {
+		"battleground_id": "2084",
+		"id": "1232",
+		"items": {
+			"3104": 0.6
+		},
+		"location_id": "26",
+		"missions": [
+			"6344",
+			"6345",
+			"6346",
+			"6347",
+			"6348",
+			"6349"
+		],
+		"name": "Silent Night"
+	},
+	"1233": {
+		"battleground_id": "2085",
+		"id": "1233",
+		"items": {
+			"3104": 0.8
+		},
+		"location_id": "26",
+		"missions": [
+			"6350",
+			"6351",
+			"6352",
+			"6353",
+			"6354",
+			"6355"
+		],
+		"name": "Vulcanos's Warning"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},

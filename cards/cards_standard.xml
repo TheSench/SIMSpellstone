@@ -9183,35 +9183,35 @@
     <picture>Merfolk_Monster_Warrior_A</picture>
     <asset_bundle>38</asset_bundle>
     <attack>4</attack>
-    <health>9</health>
+    <health>10</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="armored" x="1" />
-    <skill id="valor" x="2" />
-    <skill id="leech" x="2" />
+    <skill id="valor" x="3" />
+    <skill id="leech" x="3" />
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>10</health>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>11</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="armored" x="1" />
-      <skill id="valor" x="3" />
-      <skill id="leech" x="2" />
+      <skill id="valor" x="4" />
+      <skill id="leech" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>12</health>
+      <health>13</health>
       <skill id="armored" x="2" />
-      <skill id="valor" x="3" />
-      <skill id="leech" x="3" />
+      <skill id="valor" x="4" />
+      <skill id="leech" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -9222,37 +9222,37 @@
     <picture>Merfolk_Monster_Warrior_A</picture>
     <asset_bundle>38</asset_bundle>
     <attack>5</attack>
-    <health>12</health>
+    <health>13</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="armored" x="2" />
-    <skill id="valor" x="3" />
-    <skill id="leech" x="3" />
+    <skill id="valor" x="4" />
+    <skill id="leech" x="4" />
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
       <skill id="armored" x="2" />
-      <skill id="valor" x="4" />
-      <skill id="leech" x="3" />
+      <skill id="valor" x="5" />
+      <skill id="leech" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>13</health>
+      <health>14</health>
       <skill id="armored" x="3" />
-      <skill id="valor" x="4" />
-      <skill id="leech" x="3" />
+      <skill id="valor" x="5" />
+      <skill id="leech" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>14</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="3" />
-      <skill id="valor" x="4" />
-      <skill id="leech" x="4" />
+      <skill id="valor" x="5" />
+      <skill id="leech" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -9263,35 +9263,35 @@
     <picture>Merfolk_Monster_Warrior_B</picture>
     <asset_bundle>38</asset_bundle>
     <attack>5</attack>
-    <health>14</health>
+    <health>15</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="armored" x="3" />
-    <skill id="valor" x="5" />
-    <skill id="leech" x="5" />
+    <skill id="valor" x="6" />
+    <skill id="leech" x="6" />
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <health>16</health>
     </upgrade>
     <upgrade>
-      <level>4</level>
+      <level>3</level>
       <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
       <skill id="armored" x="4" />
-      <skill id="valor" x="6" />
-      <skill id="leech" x="6" />
+      <skill id="valor" x="7" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="5" />
-      <skill id="valor" x="7" />
-      <skill id="leech" x="7" />
+      <skill id="valor" x="8" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
   <unit>

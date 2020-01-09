@@ -2437,8 +2437,8 @@
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
-    <picture>Seafolk_Corsair_Fish_A</picture>
-    <asset_bundle>178</asset_bundle>
+    <picture>Seafolk_Corsair_Fish</picture>
+    <asset_bundle>180</asset_bundle>
     <item_name>Eichiro Stone</item_name>
     <item_desc>Collect Eichiro Stones to upgrade the Legendary Eichiro card!</item_desc>
     <item_icon>championStone_epic</item_icon>

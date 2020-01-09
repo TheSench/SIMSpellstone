@@ -2791,6 +2791,21 @@
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3100</id>
+    <name>Double Legendary Undead Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two random ^cE7FFLegendary^cFFFF Undead card!</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000,4000" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -6209,6 +6224,106 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="7033" display_card_id="7033" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5165</id>
+    <name>Narwhal Spiker Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFNarwhal Spiker^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6148" display_card_id="6148" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5166</id>
+    <name>Sea Mantis Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFSea Mantis^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6110" display_card_id="6110" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5167</id>
+    <name>Acuro, Sea Captain Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFAcuro, Sea Captain^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5106" display_card_id="5106" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5168</id>
+    <name>Clownder Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFClownder^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7109" display_card_id="7109" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5169</id>
+    <name>Quetee Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFQuetee^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7108" display_card_id="7108" />
     </cards>
   </store_item>
 </root>

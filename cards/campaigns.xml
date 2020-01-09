@@ -7851,7 +7851,7 @@
     <event_only>1</event_only>
     <name>Tree Champion</name>
     <icon id="santaHat" bundle="41" />
-    <campaign_req id="6" level="1" />
+    <!-- <campaign_req id='6' level='1' /> -->
     <locked_start_time>1576774800</locked_start_time>
     <!-- Thursday, 19 December 2019 17:00:00 -->
     <location_id>26</location_id>
@@ -7914,6 +7914,80 @@
     <find_item id="3104" drop_per_energy=".4" />
   </campaign>
   <!-- ================================== Campaign Event 20 weeks 5-8 / World's Center ================================== -->
+  <campaign>
+    <id>1232</id>
+    <name>Silent Night</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1578589200</locked_start_time>
+    <!--  Thursday, 9 January 2020 17:00:00 -->
+    <battleground_id>2084</battleground_id>
+    <location_id>26</location_id>
+    <x>580</x>
+    <y>185</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6344</mission_id>
+      <mission_id>6345</mission_id>
+      <mission_id>6346</mission_id>
+      <mission_id>6347</mission_id>
+      <mission_id>6348</mission_id>
+      <mission_id>6349</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2175" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2105" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3105" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3104" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1233</id>
+    <name>Vulcanos's Warning</name>
+    <campaign_req id="1232" level="1" />
+    <locked_start_time>1579798800</locked_start_time>
+    <!--  Thursday, 23 January 2020 17:00:00 -->
+    <battleground_id>2085</battleground_id>
+    <location_id>26</location_id>
+    <x>750</x>
+    <y>380</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6350</mission_id>
+      <mission_id>6351</mission_id>
+      <mission_id>6352</mission_id>
+      <mission_id>6353</mission_id>
+      <mission_id>6354</mission_id>
+      <mission_id>6355</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2176" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2135" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3105" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3104" drop_per_energy=".8" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

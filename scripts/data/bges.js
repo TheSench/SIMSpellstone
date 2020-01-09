@@ -3475,7 +3475,7 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2085",
-		"name": "Chorus of the Deep",
+		"name": "Requiem of the Relentless",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},
@@ -3491,7 +3491,7 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2086",
-		"name": "Chorus of the Deep",
+		"name": "Requiem of the Relentless",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},
