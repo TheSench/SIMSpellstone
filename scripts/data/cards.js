@@ -72724,6 +72724,192 @@ var CARDS = {
 			}
 		}
 	},
+	"5611": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"id": "5611",
+		"maxLevel": 10,
+		"name": "Zhu-Lath, the Hermit",
+		"picture": "Seafolk_Insect_Hermit_Crab",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"12",
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"health": 26,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"health": 29,
+				"skill": []
+			},
+			"7": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"8": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"9": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					}
+				]
+			},
+			"10": {
+				"attack": 12,
+				"health": 32,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"6000": {
 		"attack": 4,
 		"card_type": "2",
@@ -114207,6 +114393,104 @@ var CARDS = {
 						"x": 9
 					}
 				]
+			}
+		}
+	},
+	"7262": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 4,
+		"health": 52,
+		"hidden_until": "1579539600000",
+		"id": "7262",
+		"maxLevel": 6,
+		"name": "Gala-Gala Retreat",
+		"picture": "Seafolk_Dragon_Turtle_Island_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 5,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"9",
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 53,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "3"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
 			}
 		}
 	},
@@ -214030,6 +214314,118 @@ var CARDS = {
 			}
 		}
 	},
+	"17262": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 4,
+		"health": 54,
+		"hidden_until": "1579539600000",
+		"id": "17262",
+		"maxLevel": 6,
+		"name": "Gala-Gala Shelter",
+		"picture": "Seafolk_Dragon_Turtle_Island_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 6,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"9",
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"health": 55,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -299135,6 +299531,104 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 12
+					}
+				]
+			}
+		}
+	},
+	"27262": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 4,
+		"health": 55,
+		"hidden_until": "1579539600000",
+		"id": "27262",
+		"maxLevel": 6,
+		"name": "Gala-Gala Paradise",
+		"picture": "Seafolk_Dragon_Turtle_Island_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "armored",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 8,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"9",
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 56,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 9,
+						"y": "3"
 					}
 				]
 			}

@@ -3474,6 +3474,94 @@
       <skill id="strike" x="5" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5611</id>
+    <card_type>2</card_type>
+    <name>Zhu-Lath, the Hermit</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk_Insect_Hermit_Crab</picture>
+    <asset_bundle>180</asset_bundle>
+    <item_name>Hermit Stone</item_name>
+    <item_desc>Collect Hermit Stones to upgrade the Legendary Zhu-Lath, the Hermit card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <sub_type>13</sub_type>
+    <attack>8</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="armored" x="4" />
+    <skill id="weaken" x="3" all="1" />
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="absorb" x="6" />
+      <skill id="armored" x="5" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>26</health>
+      <skill id="absorb" x="6" />
+      <skill id="armored" x="5" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="absorb" x="7" />
+      <skill id="armored" x="5" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="absorb" x="8" />
+      <skill id="armored" x="6" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>11</attack>
+      <skill id="absorb" x="8" />
+      <skill id="armored" x="7" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>30</health>
+      <skill id="absorb" x="9" />
+      <skill id="armored" x="7" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>31</health>
+      <skill id="absorb" x="10" />
+      <skill id="armored" x="7" />
+      <skill id="weaken" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>12</attack>
+      <health>32</health>
+      <skill id="absorb" x="10" />
+      <skill id="armored" x="8" />
+      <skill id="weaken" x="5" all="1" />
+    </upgrade>
+  </unit>
   <!-- ============================== -->
   <!-- === CHAOS PREMIUM CHAMPION === -->
   <!-- ============================== -->

@@ -42612,5 +42612,393 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 21 Node 1 -->
+  <mission>
+    <id>6356</id>
+    <name>Overgrown Welcome</name>
+    <energy>18</energy>
+    <desc>You and your companions fly the airship to Elaria, so that you can warn the Elarian excavators about the danger from Atlas. However as your ship gets closer, you see that the entire area has been overgrown by plant life!</desc>
+    <commander id="365" />
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2076" />
+      <card id="2151" name="Armorca" />
+      <card id="5073" name="Shell Invader" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="2151" mastery_level="2" name="Armorca" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="1025" mastery_level="4" name="Lightbound Archer" />
+      <card id="2151" mastery_level="5" name="Armorca" />
+      <card id="5153" mastery_level="6" name="Octopulse" />
+      <card id="5038" mastery_level="7" name="Celestial Monarch" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6357</id>
+    <name>Brave New World</name>
+    <energy>18</energy>
+    <desc>Scraggly vines have strangled the old camp site. It looks like the place has been overrun with wildlife for years, but it was only a few months ago that you started your adventure here. You find a small clearing to land your airship.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="8092" name="Steelshell Devotee" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1014" name="Cherub" />
+      <card id="7109" name="Clownder" />
+      <card id="7109" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7167" name="Salty Scallywag" />
+      <card id="2029" name="Sly Critters" />
+      <card id="7149" mastery_level="2" name="Trident Merman" />
+      <card id="7167" mastery_level="3" name="Salty Scallywag" />
+      <card id="2029" mastery_level="4" name="Sly Critters" />
+      <card id="7149" mastery_level="5" name="Trident Merman" />
+      <card id="1644" mastery_level="6" name="Blackfin" />
+      <card id="7040" mastery_level="7" name="Warden of the Leaf" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Adventurer! General Ursurio! Good timing.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>What happened here? Did someone spill fertilizer all over camp?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6358</id>
+    <name>Wyld Angels</name>
+    <energy>18</energy>
+    <desc>You and Ursurio are immediately greeted by a familiar face after landing. The Ranger gives you a quick update on what has happened in Elaria in your absence.</desc>
+    <commander id="354" />
+    <deck>
+      <card id="8022" name="Fortune's Mateys" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="7118" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2176" name="Sinksight Mermaid" />
+      <card id="7041" name="Feral Angel" />
+      <card id="2129" mastery_level="2" name="Pharos Guardian" />
+      <card id="2176" mastery_level="3" name="Sinksight Mermaid" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="2129" mastery_level="5" name="Pharos Guardian" />
+      <card id="7023" mastery_level="6" name="Zolmosh the Fist" />
+      <card id="7074" mastery_level="7" name="Sijou" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>These plants sprung from the ground and kept growing and growing.</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Next thing we knew, me and the other excavators got attacked by angels!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6359</id>
+    <name>Attack From Above</name>
+    <energy>18</energy>
+    <desc>As the Ranger tries to fill you in on more details, you spot winged invaders in the sky. They fly between the tall trees, but there can be no mistake: they're heading straight towards you!</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8092" name="Steelshell Devotee" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1014" name="Cherub" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="7070" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="2054" name="Pack Runner" />
+      <card id="7107" mastery_level="2" name="Hammer Krab" />
+      <card id="2104" mastery_level="3" name="Sharkcrusher" />
+      <card id="2054" mastery_level="4" name="Pack Runner" />
+      <card id="7107" mastery_level="5" name="Hammer Krab" />
+      <card id="7108" mastery_level="6" name="Quetee" />
+      <card id="8105" mastery_level="7" name="Divine Statue" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Angels? Is Samael causing trouble again?</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Nope. Look out, 'ere they come!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6360</id>
+    <name>Beasts and Men</name>
+    <energy>18</energy>
+    <desc>You fight off the Angel army. Most are beasts with halos or have unique clothes and paintings on their faces. They look very different than the Angels from Skyhaven.</desc>
+    <commander id="327" />
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="1634" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2072" name="Scylla, Deep Queen" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2077" mastery_level="2" name="Drowner Beetle" />
+      <card id="2072" mastery_level="3" name="Scylla, Deep Queen" />
+      <card id="2029" mastery_level="4" name="Sly Critters" />
+      <card id="2077" mastery_level="5" name="Drowner Beetle" />
+      <card id="7150" mastery_level="6" name="Ika-Roa" />
+      <card id="8053" mastery_level="7" name="Pious Acolyte" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6361</id>
+    <name>Missing Excavators</name>
+    <energy>18</energy>
+    <desc>With the Ranger's arrows and Ursurio's raw strength, you manage to push back the invading Angels. However, you recall seeing more people in Elaria than just the Ranger, who are no longer accounted for...</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8022" name="Fortune's Mateys" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1014" name="Cherub" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7116" />
+      <card id="7066" name="Aquine" />
+      <card id="2150" name="Glacialhunt Herd" />
+      <card id="7041" name="Feral Angel" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="2150" mastery_level="3" name="Glacialhunt Herd" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="7066" mastery_level="5" name="Aquine" />
+      <card id="7221" mastery_level="6" name="Icejaw Turtle" />
+      <card id="7218" mastery_level="7" name="Zuphlas" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Phew... Close one. A bunch of 'em came earlier and kidnapped the other excavators!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Then we have to go save them. Come on, lead the way.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 21 Node 2 -->
+  <mission>
+    <id>6362</id>
+    <name>Atlas's Danger</name>
+    <energy>18</energy>
+    <desc>You explain your original purpose for coming to Elaria. This land is known to be home of Atlas, the Titan of Wyld. However, his influence has already touched Elaria.</desc>
+    <commander id="244" />
+    <deck>
+      <card id="8092" name="Steelshell Devotee" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7066" name="Aquine" />
+      <card id="7066" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7149" />
+      <card id="2072" name="Scylla, Deep Queen" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="2072" mastery_level="2" name="Scylla, Deep Queen" />
+      <card id="7118" mastery_level="3" name="Fleetfoot Wolper" />
+      <card id="7149" mastery_level="4" name="Trident Merman" />
+      <card id="7066" mastery_level="5" name="Aquine" />
+      <card id="7105" mastery_level="6" name="Charybdis" />
+      <card id="7180" mastery_level="7" name="Bottlenose Forerunner" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Aye, well, don't look so down. I doubt there's much you could have done initially against this magical undergrowth.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6363</id>
+    <name>Wyld Invitation</name>
+    <energy>18</energy>
+    <desc>Another wave of Angels arrives from the sky! As you prepare for another attack, a vaguely familiar Angel steps forward to talk to you. Although her appearance has changed, you recall her working with Samael.</desc>
+    <commander id="244" />
+    <!-- UPDATE COMMANDER -->
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7005" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7107" />
+      <card id="7167" name="Salty Scallywag" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="7167" mastery_level="2" name="Salty Scallywag" />
+      <card id="7073" mastery_level="3" name="Heralded Slugger" />
+      <card id="7107" mastery_level="4" name="Hammer Krab" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7106" mastery_level="6" name="Octhos, Ruin Baron" />
+      <card id="8095" mastery_level="7" name="Transcended Forestlord" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <!-- UPDATE PORTRAIT -->
+        <enemy>1</enemy>
+        <text>Hold! Lord Atlas wishes to speak to you. Will you accept his invitation?</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>And how do we know this talk will be peaceful? You took away the Elarian researchers!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6364</id>
+    <name>Released Captives</name>
+    <energy>18</energy>
+    <desc>The Angel's allegiance has changed to the Wyld. However, she gives a promise of aid if you and the others will negotiate...</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8022" name="Fortune's Mateys" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="7038" name="Sol King" />
+      <card id="7038" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2129" />
+      <card id="7151" name="Sawtooth" />
+      <card id="2054" name="Pack Runner" />
+      <card id="7151" mastery_level="2" name="Sawtooth" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="2129" mastery_level="4" name="Pharos Guardian" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="7154" mastery_level="6" name="Mollusk Snarecaster" />
+      <card id="7072" mastery_level="7" name="Murabi" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <!-- UPDATE PORTRAIT -->
+        <enemy>1</enemy>
+        <text>As a sign of goodwill, Lord Atlas will release your captured friends.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6365</id>
+    <name>Forward to Negotiation</name>
+    <energy>18</energy>
+    <desc>With the promise of potential peace, your allies are more willing to listen to the Angel. She leads you further into the trees, through a winding green path.</desc>
+    <commander id="244" />
+    <!-- UPDATE COMMANDER -->
+    <deck>
+      <card id="8092" name="Steelshell Devotee" />
+      <card id="1014" name="Cherub" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7041" name="Feral Angel" />
+      <card id="7041" />
+      <card id="7066" name="Aquine" />
+      <card id="7066" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2121" name="Chrysalis Angel" />
+      <card id="2077" mastery_level="2" name="Drowner Beetle" />
+      <card id="2121" mastery_level="3" name="Chrysalis Angel" />
+      <card id="7066" mastery_level="4" name="Aquine" />
+      <card id="7041" mastery_level="5" name="Feral Angel" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="7069" mastery_level="7" name="Stoneblade Seraphim" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>If he just wants to talk, we should be okay. Now, take us to your leader!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Hehe, I've always wanted to say that.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6366</id>
+    <name>Dangers of the Wyld</name>
+    <energy>18</energy>
+    <desc>Stray monsters and other fiends continue to prowl the area. The Angel allows you to defend yourself, but offers no help in keeping the monsters at bay.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="8022" name="Fortune's Mateys" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2132" name="Seaweevil" />
+      <card id="2132" />
+      <card id="1635" name="Mergoat" />
+      <card id="1635" />
+      <card id="2176" name="Sinksight Mermaid" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2176" mastery_level="2" name="Sinksight Mermaid" />
+      <card id="7073" mastery_level="3" name="Heralded Slugger" />
+      <card id="1635" mastery_level="4" name="Mergoat" />
+      <card id="2132" mastery_level="5" name="Seaweevil" />
+      <card id="7023" mastery_level="6" name="Zolmosh the Fist" />
+      <card id="7039" mastery_level="7" name="Winged Giant" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6367</id>
+    <name>The Bark Throne</name>
+    <energy>18</energy>
+    <desc>Eventually you come to an area surrounded by the trees, their canopies obstructing your view of the sky. A giant sits on a throne made of vines and trees; Atlas has grown bigger, and stronger, than you last saw him...</desc>
+    <commander id="354" />
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2029" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7107" />
+      <card id="7151" name="Sawtooth" />
+      <card id="2054" name="Pack Runner" />
+      <card id="7151" mastery_level="2" name="Sawtooth" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="7107" mastery_level="4" name="Hammer Krab" />
+      <card id="2029" mastery_level="5" name="Sly Critters" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="7178" mastery_level="7" name="Oxylus, Might Warden" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <!-- UPDATE PORTRAIT -->
+        <enemy>1</enemy>
+        <text>Here we are.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

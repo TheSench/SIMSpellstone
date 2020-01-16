@@ -8290,6 +8290,14 @@
     <card_id>27260</card_id>
     <resource card_id="17260" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17262</card_id>
+    <resource card_id="7262" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27262</card_id>
+    <resource card_id="17262" number="2" />
+  </fusion_recipe>
   <!-- END WYLD PREMIUM SET -->
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
