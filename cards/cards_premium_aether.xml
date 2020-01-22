@@ -32992,6 +32992,142 @@
       <skill id="legion" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5258</id>
+    <card_type>2</card_type>
+    <name>Hammerhead Smithy</name>
+    <picture>Seafolk_Shark_Smith_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1580144400</hidden_until_time>
+    <attack>4</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="5" y="12" />
+    <skill id="rally" x="5" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="6" y="12" />
+      <skill id="rally" x="5" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="6" y="12" />
+      <skill id="rally" x="6" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="6" y="12" />
+      <skill id="rally" x="6" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15258</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hammerhead Forger</name>
+    <picture>Seafolk_Shark_Smith_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1580144400</hidden_until_time>
+    <attack>5</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="rally" x="6" y="12" />
+    <skill id="rally" x="6" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="7" y="12" />
+      <skill id="rally" x="6" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="7" y="12" />
+      <skill id="rally" x="7" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="7" y="12" />
+      <skill id="rally" x="7" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="8" y="12" />
+      <skill id="rally" x="7" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25258</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Hammerhead Master</name>
+    <picture>Seafolk_Shark_Smith_B</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1580144400</hidden_until_time>
+    <attack>5</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="rally" x="8" y="12" />
+    <skill id="rally" x="8" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="6" />
+      <skill id="rally" x="8" y="12" />
+      <skill id="rally" x="8" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="6" />
+      <skill id="rally" x="9" y="12" />
+      <skill id="rally" x="8" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="rally" x="9" y="12" />
+      <skill id="rally" x="9" y="12" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

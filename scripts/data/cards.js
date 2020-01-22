@@ -70678,6 +70678,103 @@ var CARDS = {
 			}
 		}
 	},
+	"5258": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1580144400000",
+		"id": "5258",
+		"maxLevel": 6,
+		"name": "Hammerhead Smithy",
+		"picture": "Seafolk_Shark_Smith_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "rally",
+				"x": 5,
+				"y": "12"
+			},
+			{
+				"id": "rally",
+				"x": 5,
+				"y": "12"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 36,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "12"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					}
+				]
+			},
+			"6": {
+				"attack": 5,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -92593,6 +92690,99 @@ var CARDS = {
 			}
 		}
 	},
+	"6259": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1579798800000",
+		"id": "6259",
+		"maxLevel": 6,
+		"name": "Summoned Umibozu",
+		"picture": "Seafolk_Land_Shark_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"6260": {
 		"attack": 5,
 		"card_type": "2",
@@ -114393,6 +114583,83 @@ var CARDS = {
 						"x": 9
 					}
 				]
+			}
+		}
+	},
+	"7261": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1579798800000",
+		"id": "7261",
+		"maxLevel": 6,
+		"name": "Rayren Harpooneer",
+		"picture": "Seafolk_Amazon_Manta_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"id": "pierce",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 3,
+				"skill": []
+			},
+			"3": {
+				"health": 17,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"attack": 4,
+				"skill": []
 			}
 		}
 	},
@@ -170795,6 +171062,117 @@ var CARDS = {
 			}
 		}
 	},
+	"15258": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1580144400000",
+		"id": "15258",
+		"maxLevel": 6,
+		"name": "Hammerhead Forger",
+		"picture": "Seafolk_Shark_Smith_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 6,
+				"y": "12"
+			},
+			{
+				"id": "rally",
+				"x": 6,
+				"y": "12"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					}
+				]
+			},
+			"5": {
+				"health": 38,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -192083,6 +192461,99 @@ var CARDS = {
 						"id": "flurry"
 					}
 				]
+			}
+		}
+	},
+	"16259": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1579798800000",
+		"id": "16259",
+		"maxLevel": 6,
+		"name": "Untamed Umibozu",
+		"picture": "Seafolk_Land_Shark_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
 			}
 		}
 	},
@@ -214310,6 +214781,95 @@ var CARDS = {
 			"6": {
 				"attack": 21,
 				"health": 54,
+				"skill": []
+			}
+		}
+	},
+	"17261": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1579798800000",
+		"id": "17261",
+		"maxLevel": 6,
+		"name": "Rayren Warrior",
+		"picture": "Seafolk_Amazon_Manta_A",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"id": "pierce",
+				"x": 10
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					}
+				]
+			},
+			"5": {
+				"attack": 5,
+				"skill": []
+			},
+			"6": {
+				"health": 19,
 				"skill": []
 			}
 		}
@@ -256039,6 +256599,103 @@ var CARDS = {
 			}
 		}
 	},
+	"25258": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1580144400000",
+		"id": "25258",
+		"maxLevel": 6,
+		"name": "Hammerhead Master",
+		"picture": "Seafolk_Shark_Smith_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "rally",
+				"x": 8,
+				"y": "12"
+			},
+			{
+				"id": "rally",
+				"x": 8,
+				"y": "12"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "12"
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "12"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -277172,6 +277829,99 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"26259": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1579798800000",
+		"id": "26259",
+		"maxLevel": 6,
+		"name": "Apocalyptic Umibozu",
+		"picture": "Seafolk_Land_Shark_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 6
 					}
 				]
 			}
@@ -299530,6 +300280,95 @@ var CARDS = {
 					},
 					{
 						"id": "daze",
+						"x": 12
+					}
+				]
+			}
+		}
+	},
+	"27261": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1579798800000",
+		"id": "27261",
+		"maxLevel": 6,
+		"name": "Rayren Amazon",
+		"picture": "Seafolk_Amazon_Manta_B",
+		"rarity": 4,
+		"set": "3000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "valor",
+				"x": 9
+			},
+			{
+				"id": "pierce",
+				"x": 11
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"id": "pierce",
+						"x": 11
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"id": "pierce",
 						"x": 12
 					}
 				]

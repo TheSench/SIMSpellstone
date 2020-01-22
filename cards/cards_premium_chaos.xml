@@ -32864,6 +32864,140 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6259</id>
+    <card_type>2</card_type>
+    <name>Summoned Umibozu</name>
+    <picture>Seafolk_Land_Shark_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1579798800</hidden_until_time>
+    <attack>8</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="6" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="6" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="6" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16259</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Untamed Umibozu</name>
+    <picture>Seafolk_Land_Shark_A</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1579798800</hidden_until_time>
+    <attack>10</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26259</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Apocalyptic Umibozu</name>
+    <picture>Seafolk_Land_Shark_B</picture>
+    <asset_bundle>180</asset_bundle>
+    <hidden_until_time>1579798800</hidden_until_time>
+    <attack>11</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="enfeeble" x="3" all="1" />
+    <skill id="berserk" x="5" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="8" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="8" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="8" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6260</id>
     <card_type>2</card_type>
     <name>Steamscale Invader</name>
