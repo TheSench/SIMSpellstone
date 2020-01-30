@@ -96413,7 +96413,7 @@ var MISSIONS = {
 	},
 	"6365": {
 		"commander": {
-			"id": "244"
+			"id": "442"
 		},
 		"deck": [
 			{

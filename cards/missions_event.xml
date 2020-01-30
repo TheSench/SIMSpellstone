@@ -42863,7 +42863,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
         <!-- UPDATE PORTRAIT -->
         <enemy>1</enemy>
         <text>Hold! Lord Atlas wishes to speak to you. Will you accept his invitation?</text>
@@ -42900,7 +42900,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
         <!-- UPDATE PORTRAIT -->
         <enemy>1</enemy>
         <text>As a sign of goodwill, Lord Atlas will release your captured friends.</text>
@@ -42912,7 +42912,7 @@
     <name>Forward to Negotiation</name>
     <energy>18</energy>
     <desc>With the promise of potential peace, your allies are more willing to listen to the Angel. She leads you further into the trees, through a winding green path.</desc>
-    <commander id="244" />
+    <commander id="442" />
     <!-- UPDATE COMMANDER -->
     <deck>
       <card id="8092" name="Steelshell Devotee" />
@@ -42993,7 +42993,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
         <!-- UPDATE PORTRAIT -->
         <enemy>1</enemy>
         <text>Here we are.</text>

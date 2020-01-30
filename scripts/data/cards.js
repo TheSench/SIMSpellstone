@@ -70775,6 +70775,104 @@ var CARDS = {
 			}
 		}
 	},
+	"5259": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1580403600000",
+		"id": "5259",
+		"maxLevel": 6,
+		"name": "Brave Soul Sisters",
+		"picture": "Seafolk_Angel_Mermaid_AngelSisters_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 4,
+				"y": "12"
+			},
+			{
+				"id": "protect",
+				"x": 4,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 4,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "6"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "6"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 5,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 5,
+						"y": "6"
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -92845,6 +92943,96 @@ var CARDS = {
 			"6": {
 				"health": 15,
 				"skill": []
+			}
+		}
+	},
+	"6261": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1580749200000",
+		"id": "6261",
+		"maxLevel": 6,
+		"name": "Darkwater Beguiler",
+		"picture": "Seafolk_Undead_Cursed_Merman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 3
+			},
+			{
+				"id": "weaken",
+				"x": 6
+			},
+			{
+				"id": "leech",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"7",
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "weaken",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "weaken",
+						"x": 7
+					},
+					{
+						"id": "leech",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "weaken",
+						"x": 7
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
 			}
 		}
 	},
@@ -171173,6 +171361,118 @@ var CARDS = {
 			}
 		}
 	},
+	"15259": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1580403600000",
+		"id": "15259",
+		"maxLevel": 6,
+		"name": "Intrepid Soul Sisters",
+		"picture": "Seafolk_Angel_Mermaid_AngelSisters_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "rally",
+				"x": 5,
+				"y": "12"
+			},
+			{
+				"id": "protect",
+				"x": 5,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 5,
+						"y": "6"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "6"
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "6"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 6,
+						"y": "6"
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -192643,6 +192943,96 @@ var CARDS = {
 			},
 			"6": {
 				"health": 18,
+				"skill": []
+			}
+		}
+	},
+	"16261": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1580749200000",
+		"id": "16261",
+		"maxLevel": 6,
+		"name": "Darkwater Allurer",
+		"picture": "Seafolk_Undead_Cursed_Merman_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 4
+			},
+			{
+				"id": "weaken",
+				"x": 7
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"7",
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "weaken",
+						"x": 7
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "weaken",
+						"x": 8
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "weaken",
+						"x": 8
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
 				"skill": []
 			}
 		}
@@ -256696,6 +257086,104 @@ var CARDS = {
 			}
 		}
 	},
+	"25259": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1580403600000",
+		"id": "25259",
+		"maxLevel": 6,
+		"name": "Daring Soul Sisters",
+		"picture": "Seafolk_Angel_Mermaid_AngelSisters_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "rally",
+				"x": 7,
+				"y": "12"
+			},
+			{
+				"id": "protect",
+				"x": 7,
+				"y": "6"
+			}
+		],
+		"sub_type": [
+			"6",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "6"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "6"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "12"
+					},
+					{
+						"id": "protect",
+						"x": 8,
+						"y": "6"
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -277999,6 +278487,96 @@ var CARDS = {
 					{
 						"id": "strike",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"26261": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1580749200000",
+		"id": "26261",
+		"maxLevel": 6,
+		"name": "Darkwater Adonis",
+		"picture": "Seafolk_Undead_Cursed_Merman_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 5
+			},
+			{
+				"id": "weaken",
+				"x": 8
+			},
+			{
+				"id": "leech",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"7",
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "weaken",
+						"x": 8
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "weaken",
+						"x": 9
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "weaken",
+						"x": 9
+					},
+					{
+						"id": "leech",
+						"x": 9
 					}
 				]
 			}
