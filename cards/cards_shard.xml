@@ -2517,6 +2517,99 @@
       <skill id="legion" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4029</id>
+    <card_type>2</card_type>
+    <name>Cyno, Arbiter of Souls</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Angel_Jackal_God_A</picture>
+    <asset_bundle>182</asset_bundle>
+    <item_name>Cyno Stone</item_name>
+    <item_desc>Collect Cyno Stones to upgrade the Legendary Arbiter of Souls card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <attack>8</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="rally" x="4" y="1" all="1" />
+    <skill id="weaken" x="3" all="1" />
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+      <health>38</health>
+      <skill id="counter" x="8" />
+      <skill id="rally" x="4" y="1" all="1" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>40</health>
+      <skill id="counter" x="8" />
+      <skill id="rally" x="5" y="1" all="1" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+      <health>42</health>
+      <skill id="counter" x="8" />
+      <skill id="rally" x="5" y="1" all="1" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <health>44</health>
+      <skill id="counter" x="8" />
+      <skill id="rally" x="5" y="1" all="1" />
+      <skill id="weaken" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>10</attack>
+      <health>45</health>
+      <skill id="counter" x="9" />
+      <skill id="rally" x="6" y="1" all="1" />
+      <skill id="weaken" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>11</attack>
+      <health>46</health>
+      <skill id="counter" x="9" />
+      <skill id="rally" x="6" y="1" all="1" />
+      <skill id="weaken" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>11</attack>
+      <health>47</health>
+      <skill id="counter" x="10" />
+      <skill id="rally" x="6" y="1" all="1" />
+      <skill id="weaken" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>12</attack>
+      <health>48</health>
+      <skill id="counter" x="10" />
+      <skill id="rally" x="7" y="1" all="1" />
+      <skill id="weaken" x="6" all="1" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->

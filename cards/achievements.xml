@@ -12159,6 +12159,133 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 21 weeks 1-4 -->
+  <achievement>
+    <id>3546</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the 'Return to Elaria' campaign on Mastery Level 1.</desc>
+    <mission_req>6356</mission_req>
+    <locked_start_time>1581008400</locked_start_time>
+    <!--  Thursday, 6 February 2020 17:00:00 -->
+    <req>
+      <campaign>1234</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3107" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7056" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3547</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the 'Return to Elaria' campaign on Mastery Level 2.</desc>
+    <mission_req>6356</mission_req>
+    <locked_start_time>1581008400</locked_start_time>
+    <!--  Thursday, 6 February 2020 17:00:00 -->
+    <achievement_req>3546</achievement_req>
+    <req>
+      <campaign>1234</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3548</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the 'Return to Elaria' campaign on Mastery Level 4.</desc>
+    <mission_req>6356</mission_req>
+    <locked_start_time>1581008400</locked_start_time>
+    <!--  Thursday, 6 February 2020 17:00:00 -->
+    <achievement_req>3547</achievement_req>
+    <req>
+      <campaign>1234</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3549</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the 'Return to Elaria' campaign on Mastery Level 6.</desc>
+    <mission_req>6356</mission_req>
+    <locked_start_time>1581008400</locked_start_time>
+    <!--  Thursday, 6 February 2020 17:00:00 -->
+    <achievement_req>3548</achievement_req>
+    <req>
+      <campaign>1234</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3550</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Lands</name>
+    <desc>Complete the 'Wyld Lands' campaign on Mastery Level 2.</desc>
+    <mission_req>6362</mission_req>
+    <locked_start_time>1582218000</locked_start_time>
+    <!--  Thursday, 20 February 2020 17:00:00 -->
+    <req>
+      <campaign>1235</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3551</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Lands</name>
+    <desc>Complete the 'Wyld Lands' campaign on Mastery Level 4.</desc>
+    <mission_req>6362</mission_req>
+    <locked_start_time>1582218000</locked_start_time>
+    <!--  Thursday, 20 February 2020 17:00:00 -->
+    <achievement_req>3550</achievement_req>
+    <req>
+      <campaign>1235</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3552</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Lands</name>
+    <desc>Complete the 'Wyld Lands' campaign on Mastery Level 6.</desc>
+    <mission_req>6362</mission_req>
+    <locked_start_time>1582218000</locked_start_time>
+    <!--  Thursday, 20 February 2020 17:00:00 -->
+    <achievement_req>3551</achievement_req>
+    <req>
+      <campaign>1235</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

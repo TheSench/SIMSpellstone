@@ -42842,7 +42842,7 @@
     <name>Wyld Invitation</name>
     <energy>18</energy>
     <desc>Another wave of Angels arrives from the sky! As you prepare for another attack, a vaguely familiar Angel steps forward to talk to you. Although her appearance has changed, you recall her working with Samael.</desc>
-    <commander id="244" />
+    <commander id="443" />
     <!-- UPDATE COMMANDER -->
     <deck>
       <card id="8136" name="Shore Scourer" />
@@ -42912,7 +42912,7 @@
     <name>Forward to Negotiation</name>
     <energy>18</energy>
     <desc>With the promise of potential peace, your allies are more willing to listen to the Angel. She leads you further into the trees, through a winding green path.</desc>
-    <commander id="442" />
+    <commander id="443" />
     <!-- UPDATE COMMANDER -->
     <deck>
       <card id="8092" name="Steelshell Devotee" />

@@ -109,6 +109,10 @@ var LOCATIONS = {
 		"id": "26",
 		"name": "World's Center"
 	},
+	"27": {
+		"id": "27",
+		"name": "Return to Elaria"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -4376,6 +4380,39 @@ var CAMPAIGNS = {
 			"6355"
 		],
 		"name": "Vulcanos's Warning"
+	},
+	"1234": {
+		"id": "1234",
+		"items": {
+			"3107": 0.2
+		},
+		"location_id": "27",
+		"missions": [
+			"6356",
+			"6357",
+			"6358",
+			"6359",
+			"6360",
+			"6361"
+		],
+		"name": "Return to Elaria"
+	},
+	"1235": {
+		"battleground_id": "2087",
+		"id": "1235",
+		"items": {
+			"3107": 0.4
+		},
+		"location_id": "27",
+		"missions": [
+			"6362",
+			"6363",
+			"6364",
+			"6365",
+			"6366",
+			"6367"
+		],
+		"name": "Wyld Lands"
 	},
 	"3000": {
 		"id": "3000",
@@ -96293,7 +96330,7 @@ var MISSIONS = {
 	},
 	"6363": {
 		"commander": {
-			"id": "244"
+			"id": "443"
 		},
 		"deck": [
 			{
@@ -96413,7 +96450,7 @@ var MISSIONS = {
 	},
 	"6365": {
 		"commander": {
-			"id": "442"
+			"id": "443"
 		},
 		"deck": [
 			{

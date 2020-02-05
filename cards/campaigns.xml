@@ -7989,6 +7989,79 @@
     <find_item id="3104" drop_per_energy=".8" />
   </campaign>
   <!-- ================================== Campaign Event 21 weeks 1-4 / Return to Elaria ================================== -->
+  <campaign>
+    <id>1234</id>
+    <name>Return to Elaria</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1581008400</locked_start_time>
+    <!--  Thursday, 6 February 2020 17:00:00 -->
+    <location_id>27</location_id>
+    <x>740</x>
+    <y>565</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6356</mission_id>
+      <mission_id>6357</mission_id>
+      <mission_id>6358</mission_id>
+      <mission_id>6359</mission_id>
+      <mission_id>6360</mission_id>
+      <mission_id>6361</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2177" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2030" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3108" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3107" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1235</id>
+    <name>Wyld Lands</name>
+    <campaign_req id="1234" level="1" />
+    <locked_start_time>1582218000</locked_start_time>
+    <!--  Thursday, 20 February 2020 17:00:00 -->
+    <battleground_id>2087</battleground_id>
+    <location_id>27</location_id>
+    <x>520</x>
+    <y>490</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6362</mission_id>
+      <mission_id>6363</mission_id>
+      <mission_id>6364</mission_id>
+      <mission_id>6365</mission_id>
+      <mission_id>6366</mission_id>
+      <mission_id>6367</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2178" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2141" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3108" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3107" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

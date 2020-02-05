@@ -6037,5 +6037,289 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3021",
 		"location_id": "26",
 		"name": "Malchior's Defense"
+	},
+	"3022": {
+		"desc": "Use Wyld Leaves as fuel to power your Airship defenses!",
+		"effects": [
+			{
+				"id": "35",
+				"name": "Airship Support",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures are Healed for 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 1
+							}
+						],
+						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 2
+							}
+						],
+						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 3
+							}
+						],
+						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 4
+							}
+						],
+						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 5
+							}
+						],
+						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 6
+							}
+						],
+						"name": "Airship Support"
+					}
+				]
+			},
+			{
+				"id": "36",
+				"name": "Airship Countermeasures",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 1
+							}
+						],
+						"name": "Airship Countermeasures"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 2
+							}
+						],
+						"name": "Airship Countermeasures"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 4
+							}
+						],
+						"name": "Airship Countermeasures"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 6
+							}
+						],
+						"name": "Airship Countermeasures"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 8
+							}
+						],
+						"name": "Airship Countermeasures"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 10
+							}
+						],
+						"name": "Airship Countermeasures"
+					}
+				]
+			},
+			{
+				"id": "37",
+				"name": "Airship Cannon",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 1
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 2
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 3
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 4
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 5
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 6
+							}
+						],
+						"name": "Airship Cannon"
+					}
+				]
+			}
+		],
+		"id": "3022",
+		"location_id": "27",
+		"name": "Airship Defenses"
 	}
 };
