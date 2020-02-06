@@ -1004,10 +1004,6 @@ var SIMULATOR = {};
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
 				}
-
-				if (target.backlash) {
-					backlash(src_card, target);
-				}
 			}
 
 			return true;
