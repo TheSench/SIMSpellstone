@@ -71354,6 +71354,96 @@ var CARDS = {
 			}
 		}
 	},
+	"5261": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1581958800000",
+		"id": "5261",
+		"maxLevel": 6,
+		"name": "Absolute Monk",
+		"picture": "Angel_Seafolk_Holy_Crab_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"c": 6,
+				"id": "jam"
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"6",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 24,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -117268,6 +117358,173 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"7608": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 29,
+		"hidden_until": "1581613200000",
+		"id": "7608",
+		"maxLevel": 10,
+		"name": "The Triad of Fortunes",
+		"picture": "Angel_Norns_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"health": 30,
+				"skill": []
+			},
+			"4": {
+				"health": 31,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"skill": []
+			},
+			"7": {
+				"health": 32,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 6
+					}
+				]
+			},
+			"8": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 6
+					}
+				]
+			},
+			"9": {
+				"health": 33,
+				"skill": []
+			},
+			"10": {
+				"attack": 9,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 6
 					}
 				]
 			}
@@ -172358,6 +172615,84 @@ var CARDS = {
 						"id": "protect",
 						"x": 6,
 						"y": "6"
+					}
+				]
+			}
+		}
+	},
+	"15261": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1581958800000",
+		"id": "15261",
+		"maxLevel": 6,
+		"name": "Absolute One",
+		"picture": "Angel_Seafolk_Holy_Crab_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 25,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 10,
+				"skill": []
+			},
+			"5": {
+				"health": 26,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 4
 					}
 				]
 			}
@@ -258493,6 +258828,72 @@ var CARDS = {
 						"id": "protect",
 						"x": 8,
 						"y": "6"
+					}
+				]
+			}
+		}
+	},
+	"25261": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1581958800000",
+		"id": "25261",
+		"maxLevel": 6,
+		"name": "Absolute Zero",
+		"picture": "Angel_Seafolk_Holy_Crab_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			},
+			{
+				"id": "nullify",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"6",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"attack": 12,
+				"skill": []
+			},
+			"5": {
+				"health": 28,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			}
