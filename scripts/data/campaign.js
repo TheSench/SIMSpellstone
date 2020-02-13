@@ -4414,6 +4414,21 @@ var CAMPAIGNS = {
 		],
 		"name": "Wyld Lands"
 	},
+	"1236": {
+		"battleground_id": "2088",
+		"id": "1236",
+		"items": {
+			"3107": 0.4
+		},
+		"location_id": "27",
+		"missions": [
+			"6368",
+			"6369",
+			"6370",
+			"6371"
+		],
+		"name": "Wyld Uprising"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -96627,5 +96642,245 @@ var MISSIONS = {
 		],
 		"id": "6367",
 		"name": "The Bark Throne"
+	},
+	"6368": {
+		"commander": {
+			"id": "444"
+		},
+		"deck": [
+			{
+				"id": "2028"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "1042"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5120"
+			},
+			{
+				"id": "7117"
+			},
+			{
+				"id": "5076"
+			},
+			{
+				"id": "7039"
+			},
+			{
+				"id": "5038",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6263",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5031",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5120",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7069",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6368",
+		"name": "Recent History"
+	},
+	"6369": {
+		"commander": {
+			"id": "444"
+		},
+		"deck": [
+			{
+				"id": "2028"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "1042"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5120"
+			},
+			{
+				"id": "7117"
+			},
+			{
+				"id": "5076"
+			},
+			{
+				"id": "7039"
+			},
+			{
+				"id": "5038",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6263",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5031",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5120",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7069",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6369",
+		"name": "Tyrant's Reach"
+	},
+	"6370": {
+		"commander": {
+			"id": "444"
+		},
+		"deck": [
+			{
+				"id": "2028"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "1042"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5120"
+			},
+			{
+				"id": "7117"
+			},
+			{
+				"id": "5076"
+			},
+			{
+				"id": "7039"
+			},
+			{
+				"id": "5038",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6263",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5031",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5120",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7069",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6370",
+		"name": "Heroes of the People"
+	},
+	"6371": {
+		"commander": {
+			"id": "444"
+		},
+		"deck": [
+			{
+				"id": "2028"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "1042"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5120"
+			},
+			{
+				"id": "7117"
+			},
+			{
+				"id": "5076"
+			},
+			{
+				"id": "7039"
+			},
+			{
+				"id": "5038",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6263",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5031",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5120",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7069",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6371",
+		"name": "Defender of Atlas"
 	}
 };

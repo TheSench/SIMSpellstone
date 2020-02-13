@@ -24936,6 +24936,137 @@ var CARDS = {
 			}
 		}
 	},
+	"444": {
+		"card_type": "1",
+		"health": 91,
+		"id": "444",
+		"maxLevel": 6,
+		"name": "Freya, Atlas' Hero",
+		"picture": "portrait_angel_spy_wyld",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",

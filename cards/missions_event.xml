@@ -43000,5 +43000,102 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 21 Boss Node -->
+  <mission>
+    <id>6368</id>
+    <name>Recent History</name>
+    <energy>9</energy>
+    <desc>The continent has been threatened by those who would conquer everything, time and time again. But such tales also give rise to heroes who stand against the tyranny. The goblins, in their zeal to expand, united the other tribes as their enemies.</desc>
+    <commander id="444" />
+    <deck>
+      <card id="2028" name="Infinity" />
+      <card id="5136" name="Lapis" />
+      <card id="5136" />
+      <card id="1042" name="Archgeneral" />
+      <card id="5088" name="Betrayal" />
+      <card id="5120" name="Seraph of Stone Rise" />
+      <card id="7117" name="Rael, Skyhaven Giant" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5038" mastery_level="2" name="Celestial Monarch" />
+      <card id="6263" mastery_level="3" name="Erinye of Justice" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5120" mastery_level="5" name="Seraph of Stone Rise" />
+      <card id="7069" mastery_level="6" name="Stoneblade Seraphim" />
+      <card id="5224" mastery_level="7" name="Baaht, Fire Forger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6369</id>
+    <name>Tyrant's Reach</name>
+    <energy>9</energy>
+    <desc>The feared, bloodthirsty leader Reks self-proclaimed himself the Goblin King. His crusade banished the Avians and Frogs from their homes, threatening the Angels and Dragons next. But a Skyhaven spy infiltrated his ranks...</desc>
+    <commander id="444" />
+    <deck>
+      <card id="2028" name="Infinity" />
+      <card id="5136" name="Lapis" />
+      <card id="5136" />
+      <card id="1042" name="Archgeneral" />
+      <card id="5088" name="Betrayal" />
+      <card id="5120" name="Seraph of Stone Rise" />
+      <card id="7117" name="Rael, Skyhaven Giant" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5038" mastery_level="2" name="Celestial Monarch" />
+      <card id="6263" mastery_level="3" name="Erinye of Justice" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5120" mastery_level="5" name="Seraph of Stone Rise" />
+      <card id="7069" mastery_level="6" name="Stoneblade Seraphim" />
+      <card id="5224" mastery_level="7" name="Baaht, Fire Forger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6370</id>
+    <name>Heroes of the People</name>
+    <energy>9</energy>
+    <desc>Whispered tales unite Freya, the Skyhaven Agent with Fiona, the dragontamer. The two combined their skills to lead Goblin King Reks into a trap, which inevitably lead to his demise. They were both celebrated for their cunning and strength, but now...</desc>
+    <commander id="444" />
+    <deck>
+      <card id="2028" name="Infinity" />
+      <card id="5136" name="Lapis" />
+      <card id="5136" />
+      <card id="1042" name="Archgeneral" />
+      <card id="5088" name="Betrayal" />
+      <card id="5120" name="Seraph of Stone Rise" />
+      <card id="7117" name="Rael, Skyhaven Giant" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5038" mastery_level="2" name="Celestial Monarch" />
+      <card id="6263" mastery_level="3" name="Erinye of Justice" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5120" mastery_level="5" name="Seraph of Stone Rise" />
+      <card id="7069" mastery_level="6" name="Stoneblade Seraphim" />
+      <card id="5224" mastery_level="7" name="Baaht, Fire Forger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6371</id>
+    <name>Defender of Atlas</name>
+    <energy>9</energy>
+    <desc>A mighty hero stands in your way. That same key leader who defeated Reks has now turned against you and your friends. Freya and the angels that have sworn allegiance to Atlas fight with all their might, while the Wyld titan watches from above.</desc>
+    <commander id="444" />
+    <deck>
+      <card id="2028" name="Infinity" />
+      <card id="5136" name="Lapis" />
+      <card id="5136" />
+      <card id="1042" name="Archgeneral" />
+      <card id="5088" name="Betrayal" />
+      <card id="5120" name="Seraph of Stone Rise" />
+      <card id="7117" name="Rael, Skyhaven Giant" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5038" mastery_level="2" name="Celestial Monarch" />
+      <card id="6263" mastery_level="3" name="Erinye of Justice" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="5120" mastery_level="5" name="Seraph of Stone Rise" />
+      <card id="7069" mastery_level="6" name="Stoneblade Seraphim" />
+      <card id="5224" mastery_level="7" name="Baaht, Fire Forger" />
+    </deck>
+  </mission>
 </root>
 
