@@ -11,6 +11,8 @@ var SIMULATOR = {};
 
 		var newKey = field_p_assaults.length;
 		initializeCard(card, p, newKey);
+                if (turn == 1) card.timer += 2;     // arena
+
 		card.played = true;
 
 		if (card.isAssault()) {
