@@ -2250,7 +2250,8 @@ var SIMULATOR = {};
 		} else {
 			var rarity = parseInt(card.rarity) * 5;
 			var level = card.level;
-			return rarity + 5 + level;
+			// Was 5 - may need to reconfirm
+			return rarity + 4 + level;
 		}
 	}
 
