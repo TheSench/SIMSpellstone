@@ -11,7 +11,10 @@ var SIMULATOR = {};
 
 		var newKey = field_p_assaults.length;
 		initializeCard(card, p, newKey);
-                if (turn == 1) card.timer += 2;     // arena
+                if (turn == 1) { // arena
+		  if ((debug || play_debug) && !quiet) echo += 'ARENA MECHANICS: ' + debug_name(card) + ' delayed by 2<br>';
+                  card.timer += 2;
+                }
 
 		card.played = true;
 
@@ -2030,7 +2033,7 @@ var SIMULATOR = {};
 			if (current_assault.timer > 0) {
 				if (turn !== 3 || !tournament) {
 					current_assault.timer--;
-					if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+					if (debug) echo += debug_name(current_assault) + ' reduces its timer to ' + current_assault.timer + '<br>';
 				}
 			}
 
