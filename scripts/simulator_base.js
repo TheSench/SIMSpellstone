@@ -2251,7 +2251,7 @@ var SIMULATOR = {};
 			var rarity = parseInt(card.rarity) * 5;
 			var level = card.level;
 			// Was 5 - may need to reconfirm
-			return rarity + 4 + level;
+			return rarity + 6 + level;
 		}
 	}
 
