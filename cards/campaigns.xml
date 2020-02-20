@@ -8089,13 +8089,13 @@
       <card level="2" id="512" />
       <card level="3" id="512" />
       <item level="4" id="3109" />
-      <!-- Reks Spellstone  -->
+      <!-- Wrath's Spellstone  -->
       <item level="5" id="3109" />
-      <!--  Reks Spellstone  -->
+      <!--  Wrath's Spellstone  -->
       <item level="6" id="3109" />
-      <!--  Reks Spellstone  -->
+      <!--  Wrath's Spellstone  -->
       <item level="7" id="3109" />
-      <!--  Reks Spellstone  -->
+      <!--  Wrath's Spellstone  -->
     </rewards>
     <find_item id="3107" drop_per_energy=".4" />
   </campaign>

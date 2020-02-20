@@ -24959,7 +24959,7 @@ var CARDS = {
 			{
 				"all": "1",
 				"id": "weaken",
-				"x": 1
+				"x": 2
 			}
 		],
 		"sub_type": [],
@@ -24976,7 +24976,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 1
+						"x": 2
 					},
 					{
 						"all": "1",
@@ -25001,7 +25001,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "weaken",
-						"x": 2
+						"x": 3
 					}
 				]
 			},
@@ -25021,7 +25021,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "weaken",
-						"x": 2
+						"x": 3
 					}
 				]
 			},
@@ -25036,7 +25036,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 2
+						"x": 3
 					},
 					{
 						"all": "1",
@@ -25056,12 +25056,12 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 3
+						"x": 4
 					},
 					{
 						"all": "1",
 						"id": "weaken",
-						"x": 3
+						"x": 4
 					}
 				]
 			}
@@ -71485,6 +71485,95 @@ var CARDS = {
 			}
 		}
 	},
+	"5260": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1582218000000",
+		"id": "5260",
+		"maxLevel": 6,
+		"name": "Monkey Style Tenshi",
+		"picture": "Angel_Angel_Martial_Artist_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"id": "daze",
+				"x": 5
+			},
+			{
+				"c": 5,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 5
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 5
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "daze",
+						"x": 6
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 4,
+				"skill": []
+			}
+		}
+	},
 	"5261": {
 		"attack": 7,
 		"card_type": "2",
@@ -93925,6 +94014,90 @@ var CARDS = {
 			}
 		}
 	},
+	"6264": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1582563600000",
+		"id": "6264",
+		"maxLevel": 6,
+		"name": "Flame Tongue Frog",
+		"picture": "Angel_Frog_Devil_Frog_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "burn",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 1,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"4",
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 16,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2,
+						"y": "2"
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"skill": []
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -115835,6 +116008,96 @@ var CARDS = {
 			"6": {
 				"attack": 11,
 				"skill": []
+			}
+		}
+	},
+	"7263": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1582218000000",
+		"id": "7263",
+		"maxLevel": 6,
+		"name": "Cheggrub",
+		"picture": "Angel_Avian_Angel_Egg_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "heal",
+				"x": 8
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"6",
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "heal",
+						"x": 8
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 4,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 8
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 9
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
 			}
 		}
 	},
@@ -172751,6 +173014,83 @@ var CARDS = {
 			}
 		}
 	},
+	"15260": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1582218000000",
+		"id": "15260",
+		"maxLevel": 6,
+		"name": "Master Style Tenshi",
+		"picture": "Angel_Angel_Martial_Artist_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"id": "daze",
+				"x": 6
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "daze",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"attack": 5,
+				"skill": []
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"15261": {
 		"attack": 9,
 		"card_type": "2",
@@ -194576,6 +194916,104 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 10,
+				"skill": []
+			}
+		}
+	},
+	"16264": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1582563600000",
+		"id": "16264",
+		"maxLevel": 6,
+		"name": "Flame Tongue Fiend",
+		"picture": "Angel_Frog_Devil_Frog_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"4",
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2,
+						"y": "2"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2,
+						"y": "2"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": []
+			},
+			"6": {
+				"health": 18,
 				"skill": []
 			}
 		}
@@ -216916,6 +217354,96 @@ var CARDS = {
 						"y": "3"
 					}
 				]
+			}
+		}
+	},
+	"17263": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1582218000000",
+		"id": "17263",
+		"maxLevel": 6,
+		"name": "Cloistered Cheggrub",
+		"picture": "Angel_Avian_Angel_Egg_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "heal",
+				"x": 9
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6",
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 9
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 5,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "heal",
+						"x": 9
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "heal",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 18,
+				"skill": []
 			}
 		}
 	},
@@ -258964,6 +259492,83 @@ var CARDS = {
 			}
 		}
 	},
+	"25260": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1582218000000",
+		"id": "25260",
+		"maxLevel": 6,
+		"name": "God Style Tenshi",
+		"picture": "Angel_Angel_Martial_Artist_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 8
+			},
+			{
+				"id": "daze",
+				"x": 7
+			},
+			{
+				"c": 2,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"attack": 6,
+				"skill": []
+			},
+			"5": {
+				"health": 29,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 9
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"25261": {
 		"attack": 10,
 		"card_type": "2",
@@ -280610,6 +281215,104 @@ var CARDS = {
 					{
 						"id": "leech",
 						"x": 11
+					}
+				]
+			}
+		}
+	},
+	"26264": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1582563600000",
+		"id": "26264",
+		"maxLevel": 6,
+		"name": "Flame Tongue Devil",
+		"picture": "Angel_Frog_Devil_Frog_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"4",
+			"6"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "2"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "2"
 					}
 				]
 			}
@@ -303079,6 +303782,96 @@ var CARDS = {
 						"id": "heal",
 						"x": 9,
 						"y": "3"
+					}
+				]
+			}
+		}
+	},
+	"27263": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1582218000000",
+		"id": "27263",
+		"maxLevel": 6,
+		"name": "Benedict Cheggrub",
+		"picture": "Angel_Avian_Angel_Egg_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "heal",
+				"x": 10
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6",
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "heal",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "heal",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "heal",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 6
 					}
 				]
 			}

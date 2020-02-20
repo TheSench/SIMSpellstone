@@ -10988,14 +10988,14 @@
     <rarity>4</rarity>
     <skill id="heal" x="2" all="1" />
     <skill id="rally" x="1" all="1" />
-    <skill id="weaken" x="1" all="1" />
+    <skill id="weaken" x="2" all="1" />
     <type>3</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>92</health>
       <skill id="heal" x="2" all="1" />
-      <skill id="rally" x="1" all="1" />
+      <skill id="rally" x="2" all="1" />
       <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
@@ -11003,28 +11003,28 @@
       <health>93</health>
       <skill id="heal" x="2" all="1" />
       <skill id="rally" x="2" all="1" />
-      <skill id="weaken" x="2" all="1" />
+      <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>96</health>
       <skill id="heal" x="3" all="1" />
       <skill id="rally" x="2" all="1" />
-      <skill id="weaken" x="2" all="1" />
+      <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>97</health>
       <skill id="heal" x="4" all="1" />
-      <skill id="rally" x="2" all="1" />
+      <skill id="rally" x="3" all="1" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
       <skill id="heal" x="4" all="1" />
-      <skill id="rally" x="3" all="1" />
-      <skill id="weaken" x="3" all="1" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="weaken" x="4" all="1" />
     </upgrade>
   </unit>
 </root>

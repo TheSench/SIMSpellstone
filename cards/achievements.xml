@@ -12286,6 +12286,24 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Wrath recipe -->
+  <achievement>
+    <id>3553</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Uprising</name>
+    <desc>Complete the 'Wyld Uprising' campaign on Mastery Level 1.</desc>
+    <mission_req>6368</mission_req>
+    <locked_start_time>1582218000</locked_start_time>
+    <!--  Thursday, 20 February 2020 17:00:00 -->
+    <req>
+      <campaign>1236</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8022" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
