@@ -71664,6 +71664,86 @@ var CARDS = {
 			}
 		}
 	},
+	"5262": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 2,
+		"health": 22,
+		"hidden_until": "1582822800000",
+		"id": "5262",
+		"maxLevel": 6,
+		"name": "Earthbound Martyr",
+		"picture": "Angel_Martyr_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 23,
+				"skill": []
+			},
+			"3": {
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 25,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -116154,6 +116234,96 @@ var CARDS = {
 			"6": {
 				"attack": 6,
 				"skill": []
+			}
+		}
+	},
+	"7265": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1583168400000",
+		"id": "7265",
+		"maxLevel": 6,
+		"name": "Halo-Weaver Huntress",
+		"picture": "Angel_Insect_Angel_Spider_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 4
+			},
+			{
+				"id": "enfeeble",
+				"x": 3
+			},
+			{
+				"id": "nullify",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"6",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 38,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 4
+					},
+					{
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					}
+				]
 			}
 		}
 	},
@@ -173169,6 +173339,99 @@ var CARDS = {
 			}
 		}
 	},
+	"15262": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1582822800000",
+		"id": "15262",
+		"maxLevel": 6,
+		"name": "Earthbound Altruist",
+		"picture": "Angel_Martyr_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -217533,6 +217796,96 @@ var CARDS = {
 			}
 		}
 	},
+	"17265": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1583168400000",
+		"id": "17265",
+		"maxLevel": 6,
+		"name": "Halo-Weaver Eremite",
+		"picture": "Angel_Insect_Angel_Spider_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 5
+			},
+			{
+				"id": "enfeeble",
+				"x": 4
+			},
+			{
+				"id": "nullify",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 5
+					},
+					{
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "nullify",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -259630,6 +259983,99 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"25262": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1582822800000",
+		"id": "25262",
+		"maxLevel": 6,
+		"name": "Earthbound Saint",
+		"picture": "Angel_Martyr_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 8
+			},
+			{
+				"id": "valor",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
 					}
 				]
 			}
@@ -303973,6 +304419,99 @@ var CARDS = {
 						"id": "protect",
 						"x": 3,
 						"y": "6"
+					}
+				]
+			}
+		}
+	},
+	"27265": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 40,
+		"hidden_until": "1583168400000",
+		"id": "27265",
+		"maxLevel": 6,
+		"name": "Halo-Weaver Recluse",
+		"picture": "Angel_Insect_Angel_Spider_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 6
+			},
+			{
+				"id": "enfeeble",
+				"x": 5
+			},
+			{
+				"id": "nullify",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"6",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 41,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"id": "nullify",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"id": "nullify",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"id": "nullify",
+						"x": 7
 					}
 				]
 			}

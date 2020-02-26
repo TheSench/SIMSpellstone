@@ -1021,7 +1021,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XIV</name>
-    <desc>Collect a total of 1000 Mastery Stars</desc>
+    <desc>Collect a total of 1,000 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>263</achievement_req>
     <req>
@@ -1036,7 +1036,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XV</name>
-    <desc>Collect a total of 1100 Mastery Stars</desc>
+    <desc>Collect a total of 1,100 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>264</achievement_req>
     <req>
@@ -1051,7 +1051,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XVI</name>
-    <desc>Collect a total of 1200 Mastery Stars</desc>
+    <desc>Collect a total of 1,200 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>265</achievement_req>
     <req>
@@ -1066,7 +1066,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XVII</name>
-    <desc>Collect a total of 1300 Mastery Stars</desc>
+    <desc>Collect a total of 1,300 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>266</achievement_req>
     <req>
@@ -1081,7 +1081,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XVIII</name>
-    <desc>Collect a total of 1400 Mastery Stars</desc>
+    <desc>Collect a total of 1,400 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>267</achievement_req>
     <req>
@@ -1096,7 +1096,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XIX</name>
-    <desc>Collect a total of 1500 Mastery Stars</desc>
+    <desc>Collect a total of 1,500 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>268</achievement_req>
     <req>
@@ -1111,7 +1111,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XX</name>
-    <desc>Collect a total of 1600 Mastery Stars</desc>
+    <desc>Collect a total of 1,600 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>269</achievement_req>
     <req>
@@ -1126,7 +1126,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XXI</name>
-    <desc>Collect a total of 1700 Mastery Stars</desc>
+    <desc>Collect a total of 1,700 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>270</achievement_req>
     <req>
@@ -1141,7 +1141,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XXII</name>
-    <desc>Collect a total of 1800 Mastery Stars</desc>
+    <desc>Collect a total of 1,800 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>271</achievement_req>
     <req>
@@ -1156,7 +1156,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XXIII</name>
-    <desc>Collect a total of 1900 Mastery Stars</desc>
+    <desc>Collect a total of 1,900 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>272</achievement_req>
     <req>
@@ -1171,7 +1171,7 @@
     <type>2</type>
     <icon>star_LG</icon>
     <name>Star Collector XXIV</name>
-    <desc>Collect a total of 2000 Mastery Stars</desc>
+    <desc>Collect a total of 2,000 Mastery Stars</desc>
     <order>520</order>
     <achievement_req>273</achievement_req>
     <req>
@@ -1179,6 +1179,156 @@
     </req>
     <reward>
       <item id="4013" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>275</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXV</name>
+    <desc>Collect a total of 2,100 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>274</achievement_req>
+    <req>
+      <mastery_stars>2100</mastery_stars>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>276</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXVI</name>
+    <desc>Collect a total of 2,200 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>275</achievement_req>
+    <req>
+      <mastery_stars>2200</mastery_stars>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>277</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXVII</name>
+    <desc>Collect a total of 2,300 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>276</achievement_req>
+    <req>
+      <mastery_stars>2300</mastery_stars>
+    </req>
+    <reward>
+      <item id="4013" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>278</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXVIII</name>
+    <desc>Collect a total of 2,400 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>277</achievement_req>
+    <req>
+      <mastery_stars>2400</mastery_stars>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>279</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXIX</name>
+    <desc>Collect a total of 2,500 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>278</achievement_req>
+    <req>
+      <mastery_stars>2500</mastery_stars>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>280</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXX</name>
+    <desc>Collect a total of 2,600 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>279</achievement_req>
+    <req>
+      <mastery_stars>2600</mastery_stars>
+    </req>
+    <reward>
+      <item id="4013" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>281</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXXI</name>
+    <desc>Collect a total of 2,700 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>280</achievement_req>
+    <req>
+      <mastery_stars>2700</mastery_stars>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>282</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXXII</name>
+    <desc>Collect a total of 2,800 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>281</achievement_req>
+    <req>
+      <mastery_stars>2800</mastery_stars>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>283</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXXIII</name>
+    <desc>Collect a total of 2,900 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>282</achievement_req>
+    <req>
+      <mastery_stars>2900</mastery_stars>
+    </req>
+    <reward>
+      <item id="4013" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>284</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XXXIV</name>
+    <desc>Collect a total of 3,000 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>283</achievement_req>
+    <req>
+      <mastery_stars>3000</mastery_stars>
+    </req>
+    <reward>
+      <wb>100</wb>
     </reward>
   </achievement>
   <!-- Daily Quests -->
@@ -2091,6 +2241,357 @@
       <gold>300</gold>
     </reward>
   </achievement>
+  <!-- New Achievements Bounty Hunter -->
+  <achievement>
+    <id>452</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LI</name>
+    <desc>Collect 22,500 Bounties.</desc>
+    <achievement_req>450</achievement_req>
+    <req>
+      <pvp_wins>22500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>453</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LII</name>
+    <desc>Collect 23,000 Bounties.</desc>
+    <achievement_req>452</achievement_req>
+    <req>
+      <pvp_wins>23000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>454</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LIII</name>
+    <desc>Collect 23,500 Bounties.</desc>
+    <achievement_req>453</achievement_req>
+    <req>
+      <pvp_wins>23500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>455</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LIV</name>
+    <desc>Collect 24,000 Bounties.</desc>
+    <achievement_req>454</achievement_req>
+    <req>
+      <pvp_wins>24000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>456</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LV</name>
+    <desc>Collect 24,500 Bounties.</desc>
+    <achievement_req>455</achievement_req>
+    <req>
+      <pvp_wins>24500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>457</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LVI</name>
+    <desc>Collect 25,000 Bounties.</desc>
+    <achievement_req>456</achievement_req>
+    <req>
+      <pvp_wins>25000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>458</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LVII</name>
+    <desc>Collect 25,500 Bounties.</desc>
+    <achievement_req>457</achievement_req>
+    <req>
+      <pvp_wins>25500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>459</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LVIII</name>
+    <desc>Collect 26,000 Bounties.</desc>
+    <achievement_req>458</achievement_req>
+    <req>
+      <pvp_wins>26000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>460</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LIX</name>
+    <desc>Collect 26,500 Bounties.</desc>
+    <achievement_req>459</achievement_req>
+    <req>
+      <pvp_wins>26500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>461</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LX</name>
+    <desc>Collect 27,000 Bounties.</desc>
+    <achievement_req>460</achievement_req>
+    <req>
+      <pvp_wins>27000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>462</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXI</name>
+    <desc>Collect 27,500 Bounties.</desc>
+    <achievement_req>461</achievement_req>
+    <req>
+      <pvp_wins>27500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>463</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXII</name>
+    <desc>Collect 28,000 Bounties.</desc>
+    <achievement_req>462</achievement_req>
+    <req>
+      <pvp_wins>28000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>464</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXIII</name>
+    <desc>Collect 28,500 Bounties.</desc>
+    <achievement_req>463</achievement_req>
+    <req>
+      <pvp_wins>28500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>465</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXIV</name>
+    <desc>Collect 29,000 Bounties.</desc>
+    <achievement_req>464</achievement_req>
+    <req>
+      <pvp_wins>29000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>466</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXV</name>
+    <desc>Collect 29,500 Bounties.</desc>
+    <achievement_req>465</achievement_req>
+    <req>
+      <pvp_wins>29500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>467</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXVI</name>
+    <desc>Collect 30,000 Bounties.</desc>
+    <achievement_req>466</achievement_req>
+    <req>
+      <pvp_wins>30000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>468</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXVII</name>
+    <desc>Collect 30,500 Bounties.</desc>
+    <achievement_req>467</achievement_req>
+    <req>
+      <pvp_wins>30500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>469</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXVIII</name>
+    <desc>Collect 31,000 Bounties.</desc>
+    <achievement_req>468</achievement_req>
+    <req>
+      <pvp_wins>31000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>470</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXIX</name>
+    <desc>Collect 31,500 Bounties.</desc>
+    <achievement_req>469</achievement_req>
+    <req>
+      <pvp_wins>31500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>471</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXX</name>
+    <desc>Collect 32,000 Bounties.</desc>
+    <achievement_req>470</achievement_req>
+    <req>
+      <pvp_wins>32000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>472</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXXI</name>
+    <desc>Collect 32,500 Bounties.</desc>
+    <achievement_req>471</achievement_req>
+    <req>
+      <pvp_wins>32500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>473</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXXII</name>
+    <desc>Collect 33,000 Bounties.</desc>
+    <achievement_req>472</achievement_req>
+    <req>
+      <pvp_wins>33000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>474</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXXIII</name>
+    <desc>Collect 33,500 Bounties.</desc>
+    <achievement_req>473</achievement_req>
+    <req>
+      <pvp_wins>33500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>475</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXXIV</name>
+    <desc>Collect 34,000 Bounties.</desc>
+    <achievement_req>474</achievement_req>
+    <req>
+      <pvp_wins>34000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>476</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter LXXV</name>
+    <desc>Collect 34,500 Bounties.</desc>
+    <achievement_req>475</achievement_req>
+    <req>
+      <pvp_wins>34500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
   <!-- Daily Quests -->
   <!-- <achievement>
 		<id>409</id>
@@ -2557,6 +3058,7 @@
       <pack>12</pack>
     </reward>
   </achievement>
+  <!-- RARE RUNES UPDATES ID 1349 -->
   <achievement>
     <id>1321</id>
     <type>13</type>
@@ -2685,6 +3187,7 @@
       <pack>13</pack>
     </reward>
   </achievement>
+  <!-- EPIC RUNE UPDATE ID 1359 -->
   <achievement>
     <id>1341</id>
     <type>13</type>
@@ -2808,6 +3311,504 @@
     <achievement_req>1347</achievement_req>
     <req>
       <craft_rune rarity="4" num="80" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <!-- LEGENDARY RUNES UPDATE ID 1369 -->
+  <!-- RARE RUNES UPDATE BEGIN -->
+  <achievement>
+    <id>1349</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes IX</name>
+    <desc>Successfully craft 120 Rare Runes.</desc>
+    <achievement_req>1308</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="120" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1350</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes X</name>
+    <desc>Successfully craft 140 Rare Runes.</desc>
+    <achievement_req>1349</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="140" />
+    </req>
+    <reward>
+      <sp>100</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1351</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XI</name>
+    <desc>Successfully craft 160 Rare Runes.</desc>
+    <achievement_req>1350</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="160" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1352</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XII</name>
+    <desc>Successfully craft 180 Rare Runes.</desc>
+    <achievement_req>1351</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="180" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1353</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XIII</name>
+    <desc>Successfully craft 200 Rare Runes.</desc>
+    <achievement_req>1352</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="200" />
+    </req>
+    <reward>
+      <sp>150</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1354</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XIV</name>
+    <desc>Successfully craft 220 Rare Runes.</desc>
+    <achievement_req>1353</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="220" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1355</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XV</name>
+    <desc>Successfully craft 240 Rare Runes.</desc>
+    <achievement_req>1354</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="240" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1356</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XVI</name>
+    <desc>Successfully craft 260 Rare Runes.</desc>
+    <achievement_req>1355</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="260" />
+    </req>
+    <reward>
+      <sp>200</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1357</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XVII</name>
+    <desc>Successfully craft 280 Rare Runes.</desc>
+    <achievement_req>1356</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="280" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1358</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XVIII</name>
+    <desc>Successfully craft 300 Rare Runes.</desc>
+    <achievement_req>1357</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="300" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  --&gt;
+  <!-- EPIC RUNES UPDATE BEGIN -->
+  <achievement>
+    <id>1359</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes IX</name>
+    <desc>Successfully craft 120 Epic Runes.</desc>
+    <achievement_req>1328</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="120" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1360</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes X</name>
+    <desc>Successfully craft 140 Epic Runes.</desc>
+    <achievement_req>1359</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="140" />
+    </req>
+    <reward>
+      <sp>300</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1361</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XI</name>
+    <desc>Successfully craft 160 Epic Runes.</desc>
+    <achievement_req>1360</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="160" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1362</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XII</name>
+    <desc>Successfully craft 180 Epic Runes.</desc>
+    <achievement_req>1361</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="180" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1363</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XIII</name>
+    <desc>Successfully craft 200 Epic Runes.</desc>
+    <achievement_req>1362</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="200" />
+    </req>
+    <reward>
+      <sp>400</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1364</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XIV</name>
+    <desc>Successfully craft 220 Epic Runes.</desc>
+    <achievement_req>1363</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="220" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1365</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XV</name>
+    <desc>Successfully craft 240 Epic Runes.</desc>
+    <achievement_req>1364</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="240" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1366</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XVI</name>
+    <desc>Successfully craft 260 Epic Runes.</desc>
+    <achievement_req>1365</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="260" />
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1367</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XVII</name>
+    <desc>Successfully craft 280 Epic Runes.</desc>
+    <achievement_req>1366</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="280" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1368</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XVIII</name>
+    <desc>Successfully craft 300 Epic Runes.</desc>
+    <achievement_req>1367</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="300" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  --&gt;
+  <!-- BEGIN LEGENDARY RUNE UPDATE -->
+  <achievement>
+    <id>1369</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes IX</name>
+    <desc>Successfully craft 100 Legendary Runes.</desc>
+    <achievement_req>1348</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="100" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1370</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes X</name>
+    <desc>Successfully craft 120 Legendary Runes.</desc>
+    <achievement_req>1369</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="120" />
+    </req>
+    <reward>
+      <sp>400</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1371</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XI</name>
+    <desc>Successfully craft 140 Legendary Runes.</desc>
+    <achievement_req>1370</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="140" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1372</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XII</name>
+    <desc>Successfully craft 160 Legendary Runes.</desc>
+    <achievement_req>1371</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="160" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1373</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XIII</name>
+    <desc>Successfully craft 180 Legendary Runes.</desc>
+    <achievement_req>1372</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="180" />
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1374</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XIV</name>
+    <desc>Successfully craft 200 Legendary Runes.</desc>
+    <achievement_req>1373</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="200" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1375</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XV</name>
+    <desc>Successfully craft 220 Legendary Runes.</desc>
+    <achievement_req>1374</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="220" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1376</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XVI</name>
+    <desc>Successfully craft 240 Legendary Runes.</desc>
+    <achievement_req>1375</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="240" />
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1377</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XVII</name>
+    <desc>Successfully craft 260 Legendary Runes.</desc>
+    <achievement_req>1376</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="260" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1378</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XVIII</name>
+    <desc>Successfully craft 280 Legendary Runes.</desc>
+    <achievement_req>1377</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="280" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1379</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XIX</name>
+    <desc>Successfully craft 300 Legendary Runes.</desc>
+    <achievement_req>1378</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="300" />
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1380</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XX</name>
+    <desc>Successfully craft 320 Legendary Runes.</desc>
+    <achievement_req>1379</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="320" />
     </req>
     <reward>
       <pack>13</pack>
