@@ -586,6 +586,27 @@ var BATTLEGROUNDS = {
 		"id": "133",
 		"name": "Elemental Discordance"
 	},
+	"134": {
+		"desc": "Insects gain Armor equal to 10% of their base Health, and Regenerate equal to 10% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.1,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "13"
+			}
+		],
+		"id": "134",
+		"name": "Regenerating Carapace"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -3524,6 +3545,38 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2088",
 		"name": "Harmonious Hymn",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2089": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2089",
+		"name": "Enemy Requiem",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2090": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.05
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2090",
+		"name": "Enemy Requiem",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},

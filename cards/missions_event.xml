@@ -43097,5 +43097,385 @@
       <card id="5224" mastery_level="7" name="Baaht, Fire Forger" />
     </deck>
   </mission>
+  <!-- Event 21 Node 3 -->
+  <mission>
+    <id>6372</id>
+    <name>Earth</name>
+    <energy>18</energy>
+    <desc>Atlas's voice resonates in the trees and grass, the wildlife speaking into your mind. When you last faced him, he was but a shell of his former self. He has changed completely.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="8050" name="Heart of Valhalla" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="2178" name="Hellcay Draftee" />
+      <card id="2178" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6116" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2131" name="Spear Terror" />
+      <card id="6110" mastery_level="2" name="Sea Mantis" />
+      <card id="2131" mastery_level="3" name="Spear Terror" />
+      <card id="2084" mastery_level="4" name="Apocalypse Rider" />
+      <card id="6035" mastery_level="5" name="Demos" />
+      <card id="2055" mastery_level="6" name="Wrath" />
+      <card id="6068" mastery_level="7" name="Night Larva" />
+    </deck>
+    <speech>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Fire. Wind. Earth. When thou first arrived in this continent, it was in this place: Elaria.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>That was no coincidence.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6373</id>
+    <name>Eternal Devotion</name>
+    <energy>18</energy>
+    <desc>Atlas outlines his plan. Unlike Solaron or Vulcanos, who are mainly concerned with fighting each other, Atlas has a very specific plan for the Wyld.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2029" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="7070" />
+      <card id="7038" name="Sol King" />
+      <card id="7135" name="Grim Pollination" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7135" mastery_level="2" name="Grim Pollination" />
+      <card id="7115" mastery_level="3" name="Airborne Battalion" />
+      <card id="7038" mastery_level="4" name="Sol King" />
+      <card id="7072" mastery_level="5" name="Murabi" />
+      <card id="7074" mastery_level="6" name="Sijou" />
+      <card id="7121" mastery_level="7" name="Varachnis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>We will defend ourselves here in the forest. We will weather the storm between Chaos and Aether until they destroy themselves.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6374</id>
+    <name>Wyld's Sway</name>
+    <energy>18</energy>
+    <desc>You have greater plans than hiding away in the forest. However, a strange gleam has entered your friends' eyes. Ursurio and the Ranger speak almost simultaneously about their agreement...</desc>
+    <commander id="282" />
+    <deck>
+      <card id="8049" name="Spirit of the Free" />
+      <card id="1014" name="Cherub" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="2085" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="2099" name="White Regemage" />
+      <card id="5069" name="Heralidae" />
+      <card id="2099" mastery_level="2" name="White Regemage" />
+      <card id="5069" mastery_level="3" name="Heralidae" />
+      <card id="2052" mastery_level="4" name="Protector of Skyhaven" />
+      <card id="2028" mastery_level="5" name="Infinity" />
+      <card id="1041" mastery_level="6" name="Avenging Angel" />
+      <card id="5138" mastery_level="7" name="Geyser Rocva" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Ya know, that makes more sense than I expected.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Mm. Good. Yes, we should stay here and help the Wyld.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6375</id>
+    <name>Immunity</name>
+    <energy>18</energy>
+    <desc>Atlas ponders how you alone are able to resist his influence. Light tremors rock the earth, the Angels and your friends' attention turning straight to you.</desc>
+    <commander id="208" />
+    <deck>
+      <card id="8051" name="Wings of Valhalla" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2030" />
+      <card id="6119" name="Shadowy Muse" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6069" name="Arachnolite" />
+      <card id="1330" mastery_level="2" name="Devouring Locusts" />
+      <card id="6069" mastery_level="3" name="Arachnolite" />
+      <card id="6119" mastery_level="4" name="Shadowy Muse" />
+      <card id="6100" mastery_level="5" name="Tiamat" />
+      <card id="6177" mastery_level="6" name="Diabolic Summoner" />
+      <card id="6146" mastery_level="7" name="Dragonfly Runner" />
+    </deck>
+    <speech>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Thou art immune to my dominion? How?</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>I see your soul... black, and empty; corrupted. Now perish.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6376</id>
+    <name>Impunity</name>
+    <energy>18</energy>
+    <desc>The Wyld Angels, and your friends attack you! The strange light persists in Ursurio's and the Ranger's eyes. Something has turned them against you.</desc>
+    <commander id="365" />
+    <deck>
+      <card id="8129" name="Heaven Breaker Asariel" />
+      <card id="1014" name="Cherub" />
+      <card id="5141" name="Nimbocaster" />
+      <card id="5141" />
+      <card id="2177" name="Featherlight Initiate" />
+      <card id="2177" />
+      <card id="1030" name="Paladin" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2157" name="Steelward Defender" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="2157" mastery_level="3" name="Steelward Defender" />
+      <card id="1030" mastery_level="4" name="Paladin" />
+      <card id="1042" mastery_level="5" name="Archgeneral" />
+      <card id="5136" mastery_level="6" name="Lapis" />
+      <card id="5143" mastery_level="7" name="Cedric's Battlesnail" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6377</id>
+    <name>Atlas's Influence</name>
+    <energy>18</energy>
+    <desc>You struggle to defend yourself against the Angels and your friends. You fear that going all-out would damage your friends, who are clearly not in their right minds...</desc>
+    <commander id="443" />
+    <deck>
+      <card id="8053" name="Pious Acolyte" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="2132" name="Seaweevil" />
+      <card id="2132" />
+      <card id="7041" name="Feral Angel" />
+      <card id="7041" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="2077" mastery_level="3" name="Drowner Beetle" />
+      <card id="7116" mastery_level="4" name="Watchful Hexhound" />
+      <card id="7178" mastery_level="5" name="Oxylus, Might Warden" />
+      <card id="7069" mastery_level="6" name="Stoneblade Seraphim" />
+      <card id="7174" mastery_level="7" name="Mugen and Young Hawk" />
+    </deck>
+  </mission>
+  <!-- Event 21 Node 4 -->
+  <mission>
+    <id>6378</id>
+    <name>Lurking Ally</name>
+    <energy>18</energy>
+    <desc>The battle continues. An Angel has snuck up behind you! You turn around, ready to defend, surprised to see that this other is raising his sword against the other Angels. A familiar face has come to your aid...</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="7041" name="Feral Angel" />
+      <card id="7041" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="7070" />
+      <card id="7038" name="Sol King" />
+      <card id="7038" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="7115" mastery_level="3" name="Airborne Battalion" />
+      <card id="7069" mastery_level="4" name="Stoneblade Seraphim" />
+      <card id="7071" mastery_level="5" name="Gorilleus" />
+      <card id="7074" mastery_level="6" name="Sijou" />
+      <card id="7067" mastery_level="7" name="Mantis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I was going to stay out of the way and let you handle Atlas, but it looks like you could use some help.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Another soul unclaimed, yet my power cannot reach. Ugly, corrupt souls... destroy them, my children!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6379</id>
+    <name>Samael and Dyrnwyn's Return</name>
+    <energy>18</energy>
+    <desc>Samael and his familiar sword Dyrnwyn have come to help you. They fight against the Wyld Angels, as Samael assesses the largest threats. Atlas watches the fight from afar, allowing his minions to do his work.</desc>
+    <commander id="432" />
+    <deck>
+      <card id="8050" name="Heart of Valhalla" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2030" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6116" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1327" />
+      <card id="2048" name="Sandmite" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2048" mastery_level="2" name="Sandmite" />
+      <card id="6069" mastery_level="3" name="Arachnolite" />
+      <card id="6216" mastery_level="4" name="Gilgamesh" />
+      <card id="6181" mastery_level="5" name="Fearlord Xerthis" />
+      <card id="6117" mastery_level="6" name="Whispering Ophanim" />
+      <card id="6141" mastery_level="7" name="Swarmrider Zabzod" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Atlas is a spirit. Even if we defeat him, he would just return again.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6380</id>
+    <name>Familiar Plan</name>
+    <energy>18</energy>
+    <desc>Samael and you work together. He explains a plan that could be used to save Ursurio and the Ranger. It sounds not unlike how you rescued Scyer...</desc>
+    <commander id="282" />
+    <deck>
+      <card id="8049" name="Spirit of the Free" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" />
+      <card id="1030" name="Paladin" />
+      <card id="1030" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2027" />
+      <card id="2099" name="White Regemage" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="2099" mastery_level="2" name="White Regemage" />
+      <card id="5139" mastery_level="3" name="Loyal Guard" />
+      <card id="5136" mastery_level="4" name="Lapis" />
+      <card id="5154" mastery_level="5" name="Glaucus" />
+      <card id="5078" mastery_level="6" name="Asariel" />
+      <card id="5070" mastery_level="7" name="Hornslicer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I will take on your friends. If we get them away from Atlas, they should regain their minds.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6381</id>
+    <name>Friendship Revoked</name>
+    <energy>18</energy>
+    <desc>The Wyld Angel who took you to Atlas is targetting Samael. She pushes aside the other Angels to reach him, standing threateningly before you.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8129" name="Heaven Breaker Asariel" />
+      <card id="5141" name="Nimbocaster" />
+      <card id="5141" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="2052" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="2085" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="5065" mastery_level="3" name="Hive Guard" />
+      <card id="1042" mastery_level="4" name="Archgeneral" />
+      <card id="2086" mastery_level="5" name="Rimelight Crusader" />
+      <card id="5087" mastery_level="6" name="Apollyon" />
+      <card id="5143" mastery_level="7" name="Cedric's Battlesnail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>It will be up to you to hold off Atlas and Freya, and the rest of their drones.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6382</id>
+    <name>Freya's Threat</name>
+    <energy>18</energy>
+    <desc>Samael is trying to reach your friends, but the Wyld Angel Freya is stopping him from even reaching them. She sends the Angels in to attack you, slowing down your progress.</desc>
+    <commander id="443" />
+    <deck>
+      <card id="8053" name="Pious Acolyte" />
+      <card id="2132" name="Seaweevil" />
+      <card id="2132" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="7073" />
+      <card id="2054" name="Pack Runner" />
+      <card id="2054" />
+      <card id="1633" name="Leafback" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="1633" mastery_level="2" name="Leafback" />
+      <card id="2077" mastery_level="3" name="Drowner Beetle" />
+      <card id="7180" mastery_level="4" name="Bottlenose Forerunner" />
+      <card id="7178" mastery_level="5" name="Oxylus, Might Warden" />
+      <card id="7263" mastery_level="6" name="Cheggrub" />
+      <card id="7174" mastery_level="7" name="Mugen and Young Hawk" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
+        <enemy>1</enemy>
+        <text>I'm not being controlled, Samael. And now you will pay the price for looking down on me!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6383</id>
+    <name>Angel Showdown</name>
+    <energy>18</energy>
+    <desc>The Angels gather around you and Samael, blocking off your path to your friends. In order to make your plan work, you're going to have to help Samael first.</desc>
+    <commander id="443" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2029" />
+      <card id="2121" name="Chrysalis Angel" />
+      <card id="2121" />
+      <card id="2147" name="Leafguard Angel" />
+      <card id="2147" />
+      <card id="7135" name="Grim Pollination" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="7135" mastery_level="2" name="Grim Pollination" />
+      <card id="2050" mastery_level="3" name="Slithering Pincer" />
+      <card id="7072" mastery_level="4" name="Murabi" />
+      <card id="7218" mastery_level="5" name="Zuphlas" />
+      <card id="7119" mastery_level="6" name="Bunnpaa" />
+      <card id="7201" mastery_level="7" name="Queen Bee" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
+        <enemy>1</enemy>
+        <text>Lord Atlas, please allow me to fight. It will be my honor to crush them!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

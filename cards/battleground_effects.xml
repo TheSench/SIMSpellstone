@@ -663,6 +663,16 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>134</id>
+    <name>Regenerating Carapace</name>
+    <desc>Insects gain Armor equal to 10% of their base Health, and Regenerate equal to 10% of their base Health.</desc>
+    <icon>filter_insect_64.png</icon>
+    <effect>
+      <add_skill id="regenerate" mult="0.1" base="health" y="13" />
+      <add_skill id="armored" mult="0.1" base="health" y="13" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2995,6 +3005,39 @@
     <!-- Starting Mastery Level -->
     <effect>
       <scale_attributes base_mult=".3" mult=".01" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 21 weeks 5-8 -->
+  <battleground>
+    <id>2089</id>
+    <name>Enemy Requiem</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_insect_64.png</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2090</id>
+    <name>Enemy Requiem</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_insect_64.png</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".05" />
     </effect>
   </battleground>
   <!-- ==================== -->

@@ -13305,6 +13305,133 @@
       <item id="8022" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 21 weeks 5-8 -->
+  <achievement>
+    <id>3554</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Atlas, the Enduring</name>
+    <desc>Complete the 'Atlas, the Enduring' campaign on Mastery Level 1.</desc>
+    <mission_req>6372</mission_req>
+    <locked_start_time>1583427600</locked_start_time>
+    <!--  Thursday, 5 March 2020 17:00:00 -->
+    <req>
+      <campaign>1237</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3107" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7056" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3555</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Atlas, the Enduring</name>
+    <desc>Complete the 'Atlas, the Enduring' campaign on Mastery Level 2.</desc>
+    <mission_req>6372</mission_req>
+    <locked_start_time>1583427600</locked_start_time>
+    <!--  Thursday, 5 March 2020 17:00:00 -->
+    <achievement_req>3539</achievement_req>
+    <req>
+      <campaign>1237</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3556</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Atlas, the Enduring</name>
+    <desc>Complete the 'Atlas, the Enduring' campaign on Mastery Level 4.</desc>
+    <mission_req>6372</mission_req>
+    <locked_start_time>1583427600</locked_start_time>
+    <!--  Thursday, 5 March 2020 17:00:00 -->
+    <achievement_req>3540</achievement_req>
+    <req>
+      <campaign>1237</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3557</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Atlas, the Enduring</name>
+    <desc>Complete the 'Atlas, the Enduring' campaign on Mastery Level 6.</desc>
+    <mission_req>6372</mission_req>
+    <locked_start_time>1583427600</locked_start_time>
+    <!--  Thursday, 5 March 2020 17:00:00 -->
+    <achievement_req>3541</achievement_req>
+    <req>
+      <campaign>1237</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3558</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Angelic Catastrophe</name>
+    <desc>Complete the 'Angelic Catastrophe' campaign on Mastery Level 2.</desc>
+    <mission_req>6378</mission_req>
+    <locked_start_time>1584637200</locked_start_time>
+    <!--  Thursday, 19 March 2020 17:00:00 -->
+    <req>
+      <campaign>1238</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3559</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Angelic Catastrophe</name>
+    <desc>Complete the 'Angelic Catastrophe' campaign on Mastery Level 4.</desc>
+    <mission_req>6378</mission_req>
+    <locked_start_time>1584637200</locked_start_time>
+    <!--  Thursday, 19 March 2020 17:00:00 -->
+    <achievement_req>3543</achievement_req>
+    <req>
+      <campaign>1238</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3560</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Angelic Catastrophe</name>
+    <desc>Complete the 'Angelic Catastrophe' campaign on Mastery Level 6.</desc>
+    <mission_req>6378</mission_req>
+    <locked_start_time>1584637200</locked_start_time>
+    <!--  Thursday, 19 March 2020 17:00:00 -->
+    <achievement_req>3544</achievement_req>
+    <req>
+      <campaign>1238</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -13747,6 +13874,32 @@
       <campaign>1232</campaign>
       <!-- 3rd node -->
       <campaign>1233</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Return to Elaria -->
+    <id>4022</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Return to Elaria</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Elaria.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6356</mission_req>
+    <req>
+      <campaign>1234</campaign>
+      <!-- 1st node -->
+      <campaign>1235</campaign>
+      <!-- 2nd node -->
+      <campaign>1236</campaign>
+      <!-- Boss node -->
+      <campaign>1237</campaign>
+      <!-- 3rd node -->
+      <campaign>1238</campaign>
       <!-- 4th node -->
       <level>7</level>
     </req>
