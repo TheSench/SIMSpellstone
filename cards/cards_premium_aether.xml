@@ -33794,6 +33794,132 @@
       <skill id="nullify" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5266</id>
+    <card_type>2</card_type>
+    <name>Formiant Squad</name>
+    <picture>Insect_Ant_Troopers_A</picture>
+    <asset_bundle>185</asset_bundle>
+    <hidden_until_time>1584378000</hidden_until_time>
+    <attack>8</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="legion" x="4" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+      <skill id="legion" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="legion" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15266</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Formiant Militia</name>
+    <picture>Insect_Ant_Troopers_A</picture>
+    <asset_bundle>185</asset_bundle>
+    <hidden_until_time>1584378000</hidden_until_time>
+    <attack>9</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="legion" x="5" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="legion" x="5" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="legion" x="6" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25266</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Formiant Guard</name>
+    <picture>Insect_Ant_Troopers_B</picture>
+    <asset_bundle>185</asset_bundle>
+    <hidden_until_time>1584378000</hidden_until_time>
+    <attack>10</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="legion" x="6" />
+    <skill id="flurry" c="2" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="legion" x="7" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

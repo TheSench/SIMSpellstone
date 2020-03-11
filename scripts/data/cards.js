@@ -72153,6 +72153,83 @@ var CARDS = {
 			}
 		}
 	},
+	"5266": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 34,
+		"hidden_until": "1584378000000",
+		"id": "5266",
+		"maxLevel": 6,
+		"name": "Formiant Squad",
+		"picture": "Insect_Ant_Troopers_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "legion",
+				"x": 4
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 35,
+				"skill": []
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"health": 36,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -118591,6 +118668,206 @@ var CARDS = {
 						"all": "1",
 						"id": "enrage",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"7609": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1584032400000",
+		"id": "7609",
+		"maxLevel": 10,
+		"name": "Wrom, the Entomancer",
+		"picture": "Goblin_Insect_Grasshopper_Legs_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3,
+				"y": "13"
+			},
+			{
+				"id": "fervor",
+				"x": 3,
+				"y": "13"
+			}
+		],
+		"sub_type": [
+			"11",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 25,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "13"
+					}
+				]
+			},
+			"4": {
+				"health": 26,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"5": {
+				"health": 27,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "13"
+					}
+				]
+			},
+			"7": {
+				"health": 28,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "13"
+					}
+				]
+			},
+			"8": {
+				"health": 29,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "13"
+					}
+				]
+			},
+			"9": {
+				"health": 30,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "13"
+					}
+				]
+			},
+			"10": {
+				"health": 31,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "13"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "13"
 					}
 				]
 			}
@@ -174195,6 +174472,83 @@ var CARDS = {
 			"6": {
 				"attack": 9,
 				"skill": []
+			}
+		}
+	},
+	"15266": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1584378000000",
+		"id": "15266",
+		"maxLevel": 6,
+		"name": "Formiant Militia",
+		"picture": "Insect_Ant_Troopers_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "legion",
+				"x": 5
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 38,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
 			}
 		}
 	},
@@ -261178,6 +261532,71 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"25266": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1584378000000",
+		"id": "25266",
+		"maxLevel": 6,
+		"name": "Formiant Guard",
+		"picture": "Insect_Ant_Troopers_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "legion",
+				"x": 6
+			},
+			{
+				"c": 2,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"attack": 12,
+				"skill": []
+			},
+			"5": {
+				"health": 40,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "flurry"
 					}
 				]
 			}
