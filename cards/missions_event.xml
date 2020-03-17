@@ -43477,5 +43477,390 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 22 Node 1 -->
+  <mission>
+    <id>6384</id>
+    <name>Titan Countermeasures</name>
+    <energy>18</energy>
+    <desc>You have returned to Dawnglow Swamp at Cedric's recommendation. The threat of the three titans - Solaron, Atlas, and Vulcanos - still looms large. Cedric thinks he knows of a countermeasure to stop their growing power.</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8081" name="Feral Bees" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="2048" name="Sandmite" />
+      <card id="2048" />
+      <card id="2156" name="Bladed Wayfarer" />
+      <card id="2131" name="Spear Terror" />
+      <card id="2142" name="Spearbreak Dragon" />
+      <card id="2156" mastery_level="2" name="Bladed Wayfarer" />
+      <card id="2131" mastery_level="3" name="Spear Terror" />
+      <card id="2142" mastery_level="4" name="Spearbreak Dragon" />
+      <card id="2156" mastery_level="5" name="Bladed Wayfarer" />
+      <card id="1344" mastery_level="6" name="Boomsting Duo" />
+      <card id="2091" mastery_level="7" name="Ignus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Curious that Ursurio and The Ranger fell prey to Atlas's influence, yet you and Samael did not.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>The same could be said about Scyer. If Scyer was influenced by Vulcanos, then you, Aria, and Tarian were immune.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6385</id>
+    <name>Previous War</name>
+    <energy>18</energy>
+    <desc>The previously infected Dawnglow has now been cleansed from The Void's taint. Moss grows green and mushrooms are a bright orange, now free from the decay.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="6096" />
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="2180" mastery_level="2" name="Hidden Monstrosity" />
+      <card id="6139" mastery_level="3" name="Sand Wurm" />
+      <card id="6097" mastery_level="4" name="Hoard Dragon" />
+      <card id="2180" mastery_level="5" name="Hidden Monstrosity" />
+      <card id="6067" mastery_level="6" name="Gurgitater" />
+      <card id="6026" mastery_level="7" name="Smokefang" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>This isn't the first time that the Titans meddled with our world.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Long ago, the Dawnglow frogs tried to resist their power by reviving a mechanical titan of their own.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6386</id>
+    <name>Revitalized Dawnglow</name>
+    <energy>18</energy>
+    <desc>Although The Void's grip on the wildlife has faded, it has only spurred its natural monsters to grow even more ferocious. You fend off the feral Insects and other creatures.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="8132" name="Vindi-caterer Karna" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="6069" mastery_level="2" name="Arachnolite" />
+      <card id="6066" mastery_level="3" name="Psychic Beetle" />
+      <card id="2004" mastery_level="4" name="Lavatail Dragon" />
+      <card id="6069" mastery_level="5" name="Arachnolite" />
+      <card id="6068" mastery_level="6" name="Night Larva" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6387</id>
+    <name>Hidden Secrets</name>
+    <energy>18</energy>
+    <desc>You and Cedric are trying to keep a low profile to avoid the Dawnglow Emperor. He has never liked you much, and you're certain a fight would be inevitable if you met. Instead, you set about finding ancient relics...</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8134" name="Servant in Silenced Death" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="1334" />
+      <card id="6044" name="Firewalker" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="6139" mastery_level="3" name="Sand Wurm" />
+      <card id="2033" mastery_level="4" name="Arcblaze Dragon" />
+      <card id="6044" mastery_level="5" name="Firewalker" />
+      <card id="6141" mastery_level="6" name="Swarmrider Zabzod" />
+      <card id="6197" mastery_level="7" name="Monarch Scorcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>There are mechanisms, hidden in parts of the swamp. If we release them, we should find the Mecha Titan.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6388</id>
+    <name>Prior Inhabitants</name>
+    <energy>18</energy>
+    <desc>Originally from Dawnglow, Cedric knows the swampland very well. Hidden in the moss, through the tangled vines, are steel contraptions and ruins of an ancient civilization.</desc>
+    <commander id="432" />
+    <deck>
+      <card id="8081" name="Feral Bees" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="2139" name="Skeletal Dragonkin" />
+      <card id="2139" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="2131" name="Spear Terror" />
+      <card id="2123" name="Firestoke Clawsmith" />
+      <card id="6139" mastery_level="2" name="Sand Wurm" />
+      <card id="2131" mastery_level="3" name="Spear Terror" />
+      <card id="2123" mastery_level="4" name="Firestoke Clawsmith" />
+      <card id="6139" mastery_level="5" name="Sand Wurm" />
+      <card id="6193" mastery_level="6" name="Scorpio Stinger" />
+      <card id="6133" mastery_level="7" name="Cress, Flamespeaker" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>I have always wondered who came before us. And why would they abandon everything they built?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6389</id>
+    <name>Final Binding</name>
+    <energy>18</energy>
+    <desc>The ancient remains hint of a long lost civilization, now buried beneath the swamp. Remnants steel and silver can still be found in the murky waters. Cedric brushes away the dirt and grime from a large, mechanical button.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7012" name="Life Drake" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2046" />
+      <card id="7135" name="Grim Pollination" />
+      <card id="2121" name="Chrysalis Angel" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="7135" mastery_level="2" name="Grim Pollination" />
+      <card id="2121" mastery_level="3" name="Chrysalis Angel" />
+      <card id="7129" mastery_level="4" name="Zealous Snapjaw" />
+      <card id="7135" mastery_level="5" name="Grim Pollination" />
+      <card id="7130" mastery_level="6" name="Fluttering Stinger" />
+      <card id="1640" mastery_level="7" name="Life Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Are you ready? I'm going to release the last binding for the Mecha Titan.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 22 Node 2 -->
+  <mission>
+    <id>6390</id>
+    <name>Secrets Plundered</name>
+    <energy>18</energy>
+    <desc>The button compresses smoothly. Too smoothly. You don't hear a click or indication that anything has activated. Cedric frowns, pushing it down a few more times.</desc>
+    <commander id="282" />
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5065" />
+      <card id="5069" name="Heralidae" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="5010" mastery_level="3" name="Concealed Dragon" />
+      <card id="5065" mastery_level="4" name="Hive Guard" />
+      <card id="5025" mastery_level="5" name="Steelskin Dragon" />
+      <card id="5241" mastery_level="6" name="Odd Rider" />
+      <card id="5008" mastery_level="7" name="Ice Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>That's odd, it's either defective or someone already opened it.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6391</id>
+    <name>Titan's Footsteps</name>
+    <energy>18</energy>
+    <desc>You hear the pounding of something in the distance. The ground tremors beneath each impact. The sound grows closer, the vibration even stronger. You and Cedric look up past the trees and vines...</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7012" name="Life Drake" />
+      <card id="7129" name="Zealous Snapjaw" />
+      <card id="7129" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="2098" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2050" mastery_level="2" name="Slithering Pincer" />
+      <card id="2046" mastery_level="3" name="Leaping Dragon" />
+      <card id="2098" mastery_level="4" name="Cocoon Crawler" />
+      <card id="7129" mastery_level="5" name="Zealous Snapjaw" />
+      <card id="7130" mastery_level="6" name="Fluttering Stinger" />
+      <card id="7131" mastery_level="7" name="Xovrus, Death's End" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6392</id>
+    <name>The Mecha Titan</name>
+    <energy>18</energy>
+    <desc>Far above the treetops, you see a mechanical giant! His once golden tincture has been smeared with mud and a crown of plants.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="8134" name="Servant in Silenced Death" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" />
+      <card id="6044" name="Firewalker" />
+      <card id="6044" />
+      <card id="2131" name="Spear Terror" />
+      <card id="2123" name="Firestoke Clawsmith" />
+      <card id="2131" mastery_level="2" name="Spear Terror" />
+      <card id="2123" mastery_level="3" name="Firestoke Clawsmith" />
+      <card id="6044" mastery_level="4" name="Firewalker" />
+      <card id="6129" mastery_level="5" name="Scorgon Trapper" />
+      <card id="6231" mastery_level="6" name="Firemouth Moth" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Ah, small Spellstone master. You have returned to my home.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6393</id>
+    <name>Viracocha Returns</name>
+    <energy>18</energy>
+    <desc>You have fought the mighty Viracocha before. Although his power differed from a normal titan, he was a powerful foe himself. He kneels down to get a better view of you and Cedric.</desc>
+    <commander id="432" />
+    <deck>
+      <card id="8132" name="Vindi-caterer Karna" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="2142" name="Spearbreak Dragon" />
+      <card id="2142" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6066" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6139" mastery_level="2" name="Sand Wurm" />
+      <card id="6063" mastery_level="3" name="Firetail Dragon" />
+      <card id="6066" mastery_level="4" name="Psychic Beetle" />
+      <card id="2142" mastery_level="5" name="Spearbreak Dragon" />
+      <card id="6067" mastery_level="6" name="Gurgitater" />
+      <card id="6059" mastery_level="7" name="Violetfire Igniter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Ah! Um... hm. It appears you two already know each other.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Indeed. I am Viracocha. One day, I will be powerful enough to become a titan.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6394</id>
+    <name>Warring Factions</name>
+    <energy>18</energy>
+    <desc>Cedric hobbles closer to Viracocha, beseeching his aid. The mechanical giant, although large in form, has always tried to remain an impartial judge when listening to the problems of mortals.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="8123" name="Fear of the Vanquished" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="6097" />
+      <card id="2131" name="Spear Terror" />
+      <card id="2131" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6139" mastery_level="2" name="Sand Wurm" />
+      <card id="6129" mastery_level="3" name="Scorgon Trapper" />
+      <card id="2131" mastery_level="4" name="Spear Terror" />
+      <card id="6097" mastery_level="5" name="Hoard Dragon" />
+      <card id="6065" mastery_level="6" name="Torchsnout" />
+      <card id="6062" mastery_level="7" name="Abzu" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>We might need that day to come sooner rather than later.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Without the power of The Void to keep them in check, the titans have returned to their former warmongering ways.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6395</id>
+    <name>Cedric's Plea</name>
+    <energy>18</energy>
+    <desc>Cedric has already seen multiple wars in his lifetime. First, the Emperor of Dawnglow waged war on his neighbors. Then, the war against The Void created battles even against friends. He would do anything to prevent a repeat of that fate.</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8081" name="Feral Bees" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6165" name="Skelepede" />
+      <card id="6165" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6066" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="6139" mastery_level="2" name="Sand Wurm" />
+      <card id="6131" mastery_level="3" name="Winged Abducter" />
+      <card id="6066" mastery_level="4" name="Psychic Beetle" />
+      <card id="6165" mastery_level="5" name="Skelepede" />
+      <card id="6186" mastery_level="6" name="Millidrake Regent" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Their presence alone is enough to even turn the steadfast against us.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Please help us, Viracocha. We need to stop their influence, or we'll all be consumed by their war.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

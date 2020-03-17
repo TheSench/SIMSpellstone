@@ -72153,6 +72153,92 @@ var CARDS = {
 			}
 		}
 	},
+	"5264": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1584637200000",
+		"id": "5264",
+		"maxLevel": 6,
+		"name": "Queensguard Drones",
+		"picture": "Insect_Bee_Hero_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1,
+				"y": "1"
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"skill": []
+			}
+		}
+	},
 	"5266": {
 		"attack": 8,
 		"card_type": "2",
@@ -94661,6 +94747,99 @@ var CARDS = {
 			"6": {
 				"attack": 8,
 				"skill": []
+			}
+		}
+	},
+	"6266": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1584982800000",
+		"id": "6266",
+		"maxLevel": 6,
+		"name": "Sparkhurler Gaucho",
+		"picture": "Insect_Bug_Gaucho_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			},
+			{
+				"id": "burn",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"attack": 3,
+				"skill": []
+			},
+			"5": {
+				"health": 27,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
 			}
 		}
 	},
@@ -174475,6 +174654,107 @@ var CARDS = {
 			}
 		}
 	},
+	"15264": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1584637200000",
+		"id": "15264",
+		"maxLevel": 6,
+		"name": "Queensguard Knights",
+		"picture": "Insect_Bee_Hero_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2,
+				"y": "1"
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 1
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"attack": 11,
+				"skill": []
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"15266": {
 		"attack": 9,
 		"card_type": "2",
@@ -196398,6 +196678,99 @@ var CARDS = {
 			"6": {
 				"health": 18,
 				"skill": []
+			}
+		}
+	},
+	"16266": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1584982800000",
+		"id": "16266",
+		"maxLevel": 6,
+		"name": "Firehurler Gaucho",
+		"picture": "Insect_Bug_Gaucho_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"attack": 4,
+				"skill": []
+			},
+			"4": {
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 6
+					}
+				]
 			}
 		}
 	},
@@ -261537,6 +261910,107 @@ var CARDS = {
 			}
 		}
 	},
+	"25264": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1584637200000",
+		"id": "25264",
+		"maxLevel": 6,
+		"name": "Queensguard Sentries",
+		"picture": "Insect_Bee_Hero_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3,
+				"y": "1"
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"25266": {
 		"attack": 10,
 		"card_type": "2",
@@ -283280,6 +283754,99 @@ var CARDS = {
 						"id": "enrage",
 						"x": 4,
 						"y": "2"
+					}
+				]
+			}
+		}
+	},
+	"26266": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1584982800000",
+		"id": "26266",
+		"maxLevel": 6,
+		"name": "Flamehurler Gaucho",
+		"picture": "Insect_Bug_Gaucho_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 5,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 7
 					}
 				]
 			}
