@@ -72239,6 +72239,107 @@ var CARDS = {
 			}
 		}
 	},
+	"5265": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1585242000000",
+		"id": "5265",
+		"maxLevel": 6,
+		"name": "Mantis Style Gryllipod",
+		"picture": "Insect_Bug_Martial_Artist_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1,
+				"y": "1"
+			},
+			{
+				"id": "fervor",
+				"x": 3,
+				"y": "13"
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "13"
+					}
+				]
+			},
+			"5": {
+				"health": 26,
+				"skill": []
+			},
+			"6": {
+				"attack": 3,
+				"skill": []
+			}
+		}
+	},
 	"5266": {
 		"attack": 8,
 		"card_type": "2",
@@ -117080,6 +117181,96 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"7268": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1585587600000",
+		"id": "7268",
+		"maxLevel": 6,
+		"name": "Feral Griffinmoth",
+		"picture": "Insect_Avian_Moth_Griffin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "pierce",
+				"x": 9
+			},
+			{
+				"id": "daze",
+				"x": 9
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"10",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 9
+					},
+					{
+						"id": "daze",
+						"x": 9
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"id": "daze",
+						"x": 9
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"id": "daze",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 6
 					}
 				]
 			}
@@ -174755,6 +174946,122 @@ var CARDS = {
 			}
 		}
 	},
+	"15265": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1585242000000",
+		"id": "15265",
+		"maxLevel": 6,
+		"name": "Master Style Gryllipod",
+		"picture": "Insect_Bug_Martial_Artist_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2,
+				"y": "1"
+			},
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "13"
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "13"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "13"
+					}
+				]
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "13"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "13"
+					}
+				]
+			}
+		}
+	},
 	"15266": {
 		"attack": 9,
 		"card_type": "2",
@@ -219472,6 +219779,96 @@ var CARDS = {
 			}
 		}
 	},
+	"17268": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 40,
+		"hidden_until": "1585587600000",
+		"id": "17268",
+		"maxLevel": 6,
+		"name": "Vicius Griffinmoth",
+		"picture": "Insect_Avian_Moth_Griffin_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "pierce",
+				"x": 10
+			},
+			{
+				"id": "daze",
+				"x": 10
+			},
+			{
+				"id": "berserk",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"10",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 41,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"id": "daze",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "daze",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "daze",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -262006,6 +262403,107 @@ var CARDS = {
 						"all": "1",
 						"id": "protect",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"25265": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1585242000000",
+		"id": "25265",
+		"maxLevel": 6,
+		"name": "Sage Style Gryllipod",
+		"picture": "Insect_Bug_Martial_Artist_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 9
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4,
+				"y": "1"
+			},
+			{
+				"id": "fervor",
+				"x": 6,
+				"y": "13"
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "13"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "13"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "13"
 					}
 				]
 			}
@@ -306696,6 +307194,96 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"27268": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 42,
+		"hidden_until": "1585587600000",
+		"id": "27268",
+		"maxLevel": 6,
+		"name": "Carnage Griffinmoth",
+		"picture": "Insect_Avian_Moth_Griffin_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "pierce",
+				"x": 11
+			},
+			{
+				"id": "daze",
+				"x": 11
+			},
+			{
+				"id": "berserk",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"10",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 43,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 11
+					},
+					{
+						"id": "daze",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"id": "daze",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "pierce",
+						"x": 12
+					},
+					{
+						"id": "daze",
+						"x": 12
+					},
+					{
+						"id": "berserk",
+						"x": 8
 					}
 				]
 			}

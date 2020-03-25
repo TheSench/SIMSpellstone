@@ -33927,6 +33927,142 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5265</id>
+    <card_type>2</card_type>
+    <name>Mantis Style Gryllipod</name>
+    <picture>Insect_Bug_Martial_Artist_A</picture>
+    <asset_bundle>185</asset_bundle>
+    <hidden_until_time>1585242000</hidden_until_time>
+    <attack>2</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="6" />
+    <skill id="heal" x="1" all="1" y="1" />
+    <skill id="fervor" x="3" y="13" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="1" all="1" y="1" />
+      <skill id="fervor" x="4" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="1" all="1" y="1" />
+      <skill id="fervor" x="4" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="2" all="1" y="1" />
+      <skill id="fervor" x="4" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15265</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Master Style Gryllipod</name>
+    <picture>Insect_Bug_Martial_Artist_A</picture>
+    <asset_bundle>185</asset_bundle>
+    <hidden_until_time>1585242000</hidden_until_time>
+    <attack>3</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="7" />
+    <skill id="heal" x="2" all="1" y="1" />
+    <skill id="fervor" x="5" y="13" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="2" all="1" y="1" />
+      <skill id="fervor" x="5" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="3" all="1" y="1" />
+      <skill id="fervor" x="5" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="3" all="1" y="1" />
+      <skill id="fervor" x="6" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="3" all="1" y="1" />
+      <skill id="fervor" x="6" y="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25265</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sage Style Gryllipod</name>
+    <picture>Insect_Bug_Martial_Artist_B</picture>
+    <asset_bundle>185</asset_bundle>
+    <hidden_until_time>1585242000</hidden_until_time>
+    <attack>3</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="9" />
+    <skill id="heal" x="4" all="1" y="1" />
+    <skill id="fervor" x="6" y="13" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="4" all="1" y="1" />
+      <skill id="fervor" x="7" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="10" />
+      <skill id="heal" x="4" all="1" y="1" />
+      <skill id="fervor" x="7" y="13" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="10" />
+      <skill id="heal" x="5" all="1" y="1" />
+      <skill id="fervor" x="7" y="13" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5266</id>
     <card_type>2</card_type>
     <name>Formiant Squad</name>
