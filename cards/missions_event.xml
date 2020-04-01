@@ -43862,5 +43862,798 @@
       </line>
     </speech>
   </mission>
+  <!-- April Fools 2020 -->
+  <mission>
+    <id>6396</id>
+    <name>BGE wants to fight?!</name>
+    <energy>2</energy>
+    <desc>Just when you were enjoying a well deserved rest from the expedition grinding, a new weirdo appears to challenge you into a Spellstone game!</desc>
+    <commander id="445" />
+    <deck>
+      <card id="8139" />
+      <card id="8143" />
+      <card id="8137" />
+      <card id="8139" />
+      <card id="8140" />
+      <card id="8143" />
+      <card id="8143" />
+      <card id="8138" />
+      <card id="8140" />
+      <card id="8141" mastery_level="2" />
+      <card id="8140" mastery_level="3" />
+      <card id="8142" mastery_level="4" />
+      <card id="8142" mastery_level="5" />
+      <card id="8143" mastery_level="6" />
+      <card id="8137" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I'm finally here! Nothing can contain my untested power!</text>
+      </line>
+      <line>
+        <commander>tyrantshiva</commander>
+        <enemy>0</enemy>
+        <text>Oh no! Some evil developer (probably a new guy) merged too many BGEs into one!</text>
+      </line>
+      <line>
+        <commander>tyrantshiva</commander>
+        <enemy>0</enemy>
+        <text>Well... I'm sure the players can handle this.</text>
+      </line>
+      <line>
+        <commander>tyrantshiva</commander>
+        <enemy>0</enemy>
+        <text>Bye!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I'll merge every tribe into a new, balanced tribe! Muahahaha!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>... Unless you stop me, of course.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6397</id>
+    <name>Mission: Impossible</name>
+    <energy>2</energy>
+    <desc>The BGE Conflux wrote this: “Don't play this mission! It is impossible to beat! Just retreat and play a normal node. Don't you need to beat Atlas or something?”</desc>
+    <commander id="210" />
+    <deck>
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1301" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="1301" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="1306" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="1301" mastery_level="6" />
+      <card id="1306" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I recognize you're powerful, player. And good looking. But you won't stop my minions!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I gathered the most powerful enemies an April's Fools monster can afford (and turns out that's not much). Anyway... Behold...</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>THE CRAB!</text>
+      </line>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>1</enemy>
+        <text>*Snip snip*</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>This crab's deck has many, many common cards. But they are enhanced with the Common Revenge BGE!  Muahahahaha!</text>
+      </line>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>1</enemy>
+        <text>*Snip snip snip*</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Hmmm... I see. It says the Devs didn't add Common Revenge to my powers.</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Well... sucks to be you, little buddy.</text>
+      </line>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>1</enemy>
+        <text>*very afraid snip*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6398</id>
+    <name>The Cannon</name>
+    <energy>2</energy>
+    <desc>Not all BGE Conflux's allies are crabs. Some are actually powerful enemies with stacked decks full of unfair cards. BGE Conflux hopes the next enemy is actually one of those.</desc>
+    <commander id="430" />
+    <deck>
+      <card id="8129" />
+      <card id="8138" />
+      <card id="8137" />
+      <card id="8143" />
+      <card id="8139" />
+      <card id="8143" />
+      <card id="8131" />
+      <card id="8140" />
+      <card id="8139" />
+      <card id="8141" mastery_level="2" />
+      <card id="8140" mastery_level="3" />
+      <card id="8142" mastery_level="4" />
+      <card id="8132" mastery_level="5" />
+      <card id="8143" mastery_level="6" />
+      <card id="8137" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>You beat the crab (no surprise there)... But you won't defeat your next enemy!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Piercing Cannon, I choose you!</text>
+      </line>
+      <line>
+        <commander>Cannon_Angel_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Hey Mr. BGE! What's up?</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Piercing Cannon, it's your turn! Finish this foolish player so I can achieve my dream of merging all tribes!</text>
+      </line>
+      <line>
+        <commander>Cannon_Angel_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Ok, boss.</text>
+      </line>
+      <line>
+        <commander>Cannon_Angel_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Hey, player! I guess... prepare to fight or something?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6399</id>
+    <name>The Cress</name>
+    <energy>2</energy>
+    <desc>As this is the fourth mission, I thought it will be good for the players to be reminded of what your current situation is: the BGE Conflux was let free and it's trying to merge all tribes into one, for some reason. Defeat it and you will become Emperor of Spellstone!</desc>
+    <commander id="431" />
+    <deck>
+      <card id="8143" />
+      <card id="8130" />
+      <card id="8138" />
+      <card id="8139" />
+      <card id="8137" />
+      <card id="8128" />
+      <card id="8139" />
+      <card id="8140" />
+      <card id="8130" />
+      <card id="8141" mastery_level="2" />
+      <card id="8140" mastery_level="3" />
+      <card id="8142" mastery_level="4" />
+      <card id="8142" mastery_level="5" />
+      <card id="8143" mastery_level="6" />
+      <card id="8137" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Don't get so full of yourself! You just defeated one of my... my... let me check..</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>one, two… three.</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>One of my THREE ALLIES!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Cress! It's your turn! Destroy this fool!</text>
+      </line>
+      <line>
+        <commander>Cress_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Hey, just a small suggestion. Why don't we just... attack the player all at once?</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Because, Just Cress, multiplayer is not allowed in Spellstone.</text>
+      </line>
+      <line>
+        <commander>Cress_Portrait</commander>
+        <enemy>1</enemy>
+        <text>I see. Well... at least I have an overpowered deck, right?</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I assure you. Your's is certainly more powerful than the crab's.</text>
+      </line>
+      <line>
+        <commander>Cress_Portrait</commander>
+        <enemy>1</enemy>
+        <text>That's not reassuring at all!</text>
+      </line>
+      <line>
+        <commander>Cress_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Fine! Let's get this over with!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6400</id>
+    <name>The Frog</name>
+    <energy>2</energy>
+    <desc>It seems I skimmed over the description of this event and there is no such thing as an Emperor of Spellstone. Maybe I dreamt about it? Too bad! It sounded awesome! Well... just defeat the bad guys and claim your rewards! For... reasons!</desc>
+    <commander id="428" />
+    <deck>
+      <card id="8140" />
+      <card id="8143" />
+      <card id="8129" />
+      <card id="8143" />
+      <card id="8137" />
+      <card id="8143" />
+      <card id="8139" />
+      <card id="8139" />
+      <card id="8140" />
+      <card id="8141" mastery_level="2" />
+      <card id="8129" mastery_level="3" />
+      <card id="8142" mastery_level="4" />
+      <card id="8142" mastery_level="5" />
+      <card id="8129" mastery_level="6" />
+      <card id="8137" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>You defeated Just Cress?! Now I really wish there was a multiplayer Spellstone mode...</text>
+      </line>
+      <line>
+        <commander>tyrantshiva</commander>
+        <enemy>0</enemy>
+        <text>Not gonna happen.</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>So, player! You defeated almost all my minions, but as a boss just a couple days old... I'm sure that's no indication that you will defeat the next one.</text>
+      </line>
+      <line>
+        <commander>Lucky_Frog_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Hi! I'm your next opponent.</text>
+      </line>
+      <line>
+        <commander>Lucky_Frog_Portrait</commander>
+        <enemy>1</enemy>
+        <text>People think I'm the worst. But actually, I'm a really nice frog!</text>
+      </line>
+      <line>
+        <commander>Lucky_Frog_Portrait</commander>
+        <enemy>1</enemy>
+        <text>So, have fun and good luck! *wink wink*</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Less talking and more spellstoning!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6401</id>
+    <name>A BGE for All</name>
+    <energy>2</energy>
+    <desc>This is it! The final battle against the evil BGE Conflux that threatens to balance Spellstone! How dares it?!</desc>
+    <commander id="445" />
+    <deck>
+      <card id="8137" />
+      <card id="8143" />
+      <card id="8143" />
+      <card id="8138" />
+      <card id="8140" />
+      <card id="8140" />
+      <card id="8139" />
+      <card id="8143" />
+      <card id="8139" />
+      <card id="8141" mastery_level="2" />
+      <card id="8140" mastery_level="3" />
+      <card id="8142" mastery_level="4" />
+      <card id="8142" mastery_level="5" />
+      <card id="8143" mastery_level="6" />
+      <card id="8137" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I see you obliterated the frog. And the cannon. And everyone else. Did you know you were this strong? Anyway...</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I'm done. It was fun, though! Byeee!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>*tries to run away but you catch it*</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Nooo! Please! Don’t hurt me!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Crab! Help me! Attack the player!</text>
+      </line>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>1</enemy>
+        <text>*snip snip*</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Fine! I'll fight!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>... Stupid crab...</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>As I know how this goes, I'll use this last chance to say something interesting.</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>To give this event a conclusion of some sort, if you will.</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>I was wrong to try to merge all the tribes into one. I suck. But I sincerely hope this was fun for you...</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>Wait. That can't be right. Who wrote this dialogue?</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>1</enemy>
+        <text>No! Wait! I'm not ready! Don't attack me!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6402</id>
+    <name>Revenge of the Storm</name>
+    <energy>1</energy>
+    <desc>The commons are rising up! Their power is overwhelming! Stop them before they destroy the world! Or join them. I'm a mission description, not a cop.</desc>
+    <commander id="243" />
+    <deck>
+      <card id="1002" />
+      <card id="1002" />
+      <card id="1002" />
+      <card id="1002" />
+      <card id="1002" />
+      <card id="1002" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="1002" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="1002" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="1002" mastery_level="6" />
+      <card id="8016" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>*Whoosh* We come! *Whoosh* Revenge of the Commons! *Woosh*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6403</id>
+    <name>Revenge of the Dead, Part XXIV</name>
+    <energy>1</energy>
+    <desc>I feel like we've been here before...</desc>
+    <commander id="200" />
+    <deck>
+      <card id="1300" />
+      <card id="1300" />
+      <card id="1300" />
+      <card id="1300" />
+      <card id="1300" />
+      <card id="1300" />
+      <card id="1303" />
+      <card id="1303" />
+      <card id="8016" />
+      <card id="1300" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="1303" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="1300" mastery_level="6" />
+      <card id="8016" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>skeletonwarrior</commander>
+        <enemy>1</enemy>
+        <text>NYAAAA! We come for your bones! You know, to like... replace the ones you broke...</text>
+      </line>
+      <line>
+        <commander>skeletonwarrior</commander>
+        <enemy>1</enemy>
+        <text>HAND EM' OVER!!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6404</id>
+    <name>Revenge of the Snip Snip</name>
+    <energy>1</energy>
+    <desc>I don't know what they are saying, but these crabs seem really upset.</desc>
+    <commander id="210" />
+    <deck>
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1301" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="1301" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="1306" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="1301" mastery_level="6" />
+      <card id="1306" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>1</enemy>
+        <text>*Snip*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6405</id>
+    <name>Revenge of the Woods</name>
+    <energy>1</energy>
+    <desc>The common cards of the woods have gathered to defeat you!</desc>
+    <commander id="205" />
+    <deck>
+      <card id="1603" />
+      <card id="1603" />
+      <card id="1604" />
+      <card id="1604" />
+      <card id="1605" />
+      <card id="1605" />
+      <card id="1601" />
+      <card id="1602" />
+      <card id="1602" />
+      <card id="1603" mastery_level="2" />
+      <card id="1604" mastery_level="3" />
+      <card id="1605" mastery_level="4" />
+      <card id="1600" mastery_level="5" />
+      <card id="1600" mastery_level="6" />
+      <card id="1607" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>mermaid</commander>
+        <enemy>1</enemy>
+        <text>We come, the denizens of the forest, to take our vengeance...</text>
+      </line>
+      <line>
+        <commander>wolf</commander>
+        <enemy>1</enemy>
+        <text>WOOF! :D</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6406</id>
+    <name>Revenge of the Souls</name>
+    <energy>1</energy>
+    <desc>The soul wisps have gathered, looking for vengeance for all their brothers who you've put into lanterns, and torches, or whatever ya'll do with little light spirits.</desc>
+    <commander id="204" />
+    <deck>
+      <card id="1006" />
+      <card id="1006" />
+      <card id="1006" />
+      <card id="1006" />
+      <card id="1006" />
+      <card id="1006" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="1007" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="1007" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="1006" mastery_level="6" />
+      <card id="1007" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lightwisp</commander>
+        <enemy>1</enemy>
+        <text>WooooOOOooooOOOOO... jerk!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6407</id>
+    <name>Revenge of the Revengest!</name>
+    <energy>1</energy>
+    <desc>Some weirdo with a bunch of bombs has showed up. They seem like they know you but you can't place their face.</desc>
+    <commander id="296" />
+    <deck>
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="8016" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="8016" mastery_level="6" />
+      <card id="8016" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aprilbomber</commander>
+        <enemy>1</enemy>
+        <text>I HAVE RETURNED, PREPARE FOR OUR FATEFUL DUEL!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6408</id>
+    <name>Common Crusher Crew</name>
+    <energy>1</energy>
+    <desc>The Legendary cards have arrived to put things back in their rightful place! Can they defeat the Common menace?!</desc>
+    <commander id="430" />
+    <deck>
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8128" mastery_level="2" />
+      <card id="8130" mastery_level="3" />
+      <card id="8128" mastery_level="4" />
+      <card id="8130" mastery_level="5" />
+      <card id="8128" mastery_level="6" />
+      <card id="8130" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Cannon_Angel_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Never fear! The Legend League has arrived!</text>
+      </line>
+      <line>
+        <commander>Cannon_Angel_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Let's put these Commons back in their place!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6409</id>
+    <name>Common Squashing Squad</name>
+    <energy>1</energy>
+    <desc>The Legendary cards have arrived to put things back in their rightful place! Can they defeat the common menace?!</desc>
+    <commander id="430" />
+    <deck>
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8128" mastery_level="2" />
+      <card id="8130" mastery_level="3" />
+      <card id="8128" mastery_level="4" />
+      <card id="8130" mastery_level="5" />
+      <card id="8128" mastery_level="6" />
+      <card id="8130" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Cannon_Angel_Portrait</commander>
+        <enemy>1</enemy>
+        <text>YEEEEEEE HAWWWWWWW!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6410</id>
+    <name>Common Terror Team</name>
+    <energy>1</energy>
+    <desc>The Legendary cards have arrived to put things back in their rightful place! Can they defeat the common menace?!</desc>
+    <commander id="431" />
+    <deck>
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8128" mastery_level="2" />
+      <card id="8130" mastery_level="3" />
+      <card id="8128" mastery_level="4" />
+      <card id="8130" mastery_level="5" />
+      <card id="8128" mastery_level="6" />
+      <card id="8130" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Cress_Portrait</commander>
+        <enemy>1</enemy>
+        <text>I don't feel so good. Can I go home? I miss Cindertooth.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6411</id>
+    <name>Common Conquering Club</name>
+    <energy>1</energy>
+    <desc>The Legendary cards have arrived to put things back in their rightful place! Can they defeat the common menace?!</desc>
+    <commander id="431" />
+    <deck>
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8128" mastery_level="2" />
+      <card id="8130" mastery_level="3" />
+      <card id="8128" mastery_level="4" />
+      <card id="8130" mastery_level="5" />
+      <card id="8128" mastery_level="6" />
+      <card id="8130" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6412</id>
+    <name>Common Bashing Bunch</name>
+    <energy>1</energy>
+    <desc>The Legendary cards have arrived to put things back in their rightful place! Can they defeat the common menace?!</desc>
+    <commander id="428" />
+    <deck>
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8128" mastery_level="2" />
+      <card id="8130" mastery_level="3" />
+      <card id="8128" mastery_level="4" />
+      <card id="8130" mastery_level="5" />
+      <card id="8128" mastery_level="6" />
+      <card id="8130" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Lucky_Frog_Portrait</commander>
+        <enemy>1</enemy>
+        <text>What do we have here? This looks fun!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6413</id>
+    <name>Common Trashing Troupe</name>
+    <energy>1</energy>
+    <desc>The Legendary cards have arrived to put things back in their rightful place! Can they defeat the common menace?!</desc>
+    <commander id="429" />
+    <deck>
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8129" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8131" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8132" />
+      <card id="8128" mastery_level="2" />
+      <card id="8130" mastery_level="3" />
+      <card id="8128" mastery_level="4" />
+      <card id="8130" mastery_level="5" />
+      <card id="8128" mastery_level="6" />
+      <card id="8130" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Lucky_Frog_Portrait_2</commander>
+        <enemy>1</enemy>
+        <text>Hello there.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- End April Fools Missions -->
 </root>
 

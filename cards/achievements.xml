@@ -13432,6 +13432,133 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 22 weeks 1-4 -->
+  <achievement>
+    <id>3561</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Healed Dawnglow</name>
+    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 1.</desc>
+    <mission_req>6384</mission_req>
+    <locked_start_time>1585846800</locked_start_time>
+    <!--  Thursday, 2 April 2020 17:00:00 -->
+    <req>
+      <campaign>1239</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3110" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7058" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3562</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Healed Dawnglow</name>
+    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 2.</desc>
+    <mission_req>6384</mission_req>
+    <locked_start_time>1585846800</locked_start_time>
+    <!--  Thursday, 2 April 2020 17:00:00 -->
+    <achievement_req>3546</achievement_req>
+    <req>
+      <campaign>1239</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3563</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Healed Dawnglow</name>
+    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 4.</desc>
+    <mission_req>6384</mission_req>
+    <locked_start_time>1585846800</locked_start_time>
+    <!--  Thursday, 2 April 2020 17:00:00 -->
+    <achievement_req>3547</achievement_req>
+    <req>
+      <campaign>1239</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3564</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Healed Dawnglow</name>
+    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 6.</desc>
+    <mission_req>6384</mission_req>
+    <locked_start_time>1585846800</locked_start_time>
+    <!--  Thursday, 2 April 2020 17:00:00 -->
+    <achievement_req>3548</achievement_req>
+    <req>
+      <campaign>1239</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3565</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mechanical Titan</name>
+    <desc>Complete the 'Mechanical Titan' campaign on Mastery Level 2.</desc>
+    <mission_req>6390</mission_req>
+    <locked_start_time>1587056400</locked_start_time>
+    <!--  Thursday, 16 April 2020 17:00:00 -->
+    <req>
+      <campaign>1240</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3566</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mechanical Titan</name>
+    <desc>Complete the 'Mechanical Titan' campaign on Mastery Level 4.</desc>
+    <mission_req>6390</mission_req>
+    <locked_start_time>1587056400</locked_start_time>
+    <!--  Thursday, 16 April 2020 17:00:00 -->
+    <achievement_req>3550</achievement_req>
+    <req>
+      <campaign>1240</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3567</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mechanical Titan</name>
+    <desc>Complete the 'Mechanical Titan' campaign on Mastery Level 6.</desc>
+    <mission_req>6390</mission_req>
+    <locked_start_time>1587056400</locked_start_time>
+    <!--  Thursday, 16 April 2020 17:00:00 -->
+    <achievement_req>3551</achievement_req>
+    <req>
+      <campaign>1240</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

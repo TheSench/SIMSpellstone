@@ -34473,5 +34473,139 @@
       <skill id="berserk" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7270</id>
+    <card_type>2</card_type>
+    <name>Elarian Beast</name>
+    <picture>Dragon_Hexa_Hydra_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1586192400</hidden_until_time>
+    <attack>8</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="rally" x="3" all="1" />
+    <skill id="poison" x="8" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17270</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Elarian Monster</name>
+    <picture>Dragon_Hexa_Hydra_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1586192400</hidden_until_time>
+    <attack>10</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="rally" x="4" all="1" />
+    <skill id="poison" x="9" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27270</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Elarian Hydra</name>
+    <picture>Dragon_Hexa_Hydra_B</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1586192400</hidden_until_time>
+    <attack>11</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="8" />
+    <skill id="rally" x="5" all="1" />
+    <skill id="poison" x="10" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="9" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="9" />
+      <skill id="rally" x="6" all="1" />
+      <skill id="poison" x="12" />
+    </upgrade>
+  </unit>
 </root>
 

@@ -33800,5 +33800,133 @@
       <skill id="burn" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6267</id>
+    <card_type>2</card_type>
+    <name>Searscale Wyrmling</name>
+    <picture>Dragon_Lava_Scale_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1585846800</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="2" />
+    <skill id="enfeeble" x="1" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16267</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Searscale Dragon</name>
+    <picture>Dragon_Lava_Scale_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1585846800</hidden_until_time>
+    <attack>3</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="enfeeble" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="4" />
+      <skill id="enfeeble" x="1" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26267</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Searscale Wyrm</name>
+    <picture>Dragon_Lava_Scale_B</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1585846800</hidden_until_time>
+    <attack>4</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+  </unit>
 </root>
 

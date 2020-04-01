@@ -113,6 +113,10 @@ var LOCATIONS = {
 		"id": "27",
 		"name": "Return to Elaria"
 	},
+	"28": {
+		"id": "28",
+		"name": "Healed Dawnglow"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -4462,6 +4466,90 @@ var CAMPAIGNS = {
 			"6383"
 		],
 		"name": "Angelic Catastrophe"
+	},
+	"1239": {
+		"id": "1239",
+		"items": {
+			"3110": 0.2
+		},
+		"location_id": "28",
+		"missions": [
+			"6384",
+			"6385",
+			"6386",
+			"6387",
+			"6388",
+			"6389"
+		],
+		"name": "Healed Dawnglow"
+	},
+	"1240": {
+		"battleground_id": "2091",
+		"id": "1240",
+		"items": {
+			"3110": 0.4
+		},
+		"location_id": "28",
+		"missions": [
+			"6390",
+			"6391",
+			"6392",
+			"6393",
+			"6394",
+			"6395"
+		],
+		"name": "Mechanical Titan"
+	},
+	"1244": {
+		"battleground_id": "546",
+		"id": "1244",
+		"items": {
+			"3107": 0.4
+		},
+		"location_id": "27",
+		"missions": [
+			"6402",
+			"6403",
+			"6404",
+			"6405",
+			"6406",
+			"6407"
+		],
+		"name": "Revenge of the Commons!"
+	},
+	"1245": {
+		"battleground_id": "546",
+		"id": "1245",
+		"items": {
+			"3107": 0.4
+		},
+		"location_id": "27",
+		"missions": [
+			"6408",
+			"6409",
+			"6410",
+			"6411",
+			"6412",
+			"6413"
+		],
+		"name": "The Legends Come To Take Their Place!"
+	},
+	"1246": {
+		"battleground_id": "135",
+		"id": "1246",
+		"items": {
+			"3107": 0.4
+		},
+		"location_id": "27",
+		"missions": [
+			"6396",
+			"6397",
+			"6398",
+			"6399",
+			"6400",
+			"6401"
+		],
+		"name": "A new FOE has appeared!?"
 	},
 	"3000": {
 		"id": "3000",
@@ -98356,5 +98444,1085 @@ var MISSIONS = {
 		],
 		"id": "6395",
 		"name": "Cedric's Plea"
+	},
+	"6396": {
+		"commander": {
+			"id": "445"
+		},
+		"deck": [
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8137"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8138"
+			},
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8141",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8140",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8143",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6396",
+		"name": "BGE wants to fight?!"
+	},
+	"6397": {
+		"commander": {
+			"id": "210"
+		},
+		"deck": [
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1301"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "1301",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1306",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1301",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1306",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6397",
+		"name": "Mission: Impossible"
+	},
+	"6398": {
+		"commander": {
+			"id": "430"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8138"
+			},
+			{
+				"id": "8137"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8141",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8140",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8132",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8143",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6398",
+		"name": "The Cannon"
+	},
+	"6399": {
+		"commander": {
+			"id": "431"
+		},
+		"deck": [
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8130"
+			},
+			{
+				"id": "8138"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8137"
+			},
+			{
+				"id": "8128"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8130"
+			},
+			{
+				"id": "8141",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8140",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8143",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6399",
+		"name": "The Cress"
+	},
+	"6400": {
+		"commander": {
+			"id": "428"
+		},
+		"deck": [
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8137"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8141",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8129",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8129",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6400",
+		"name": "The Frog"
+	},
+	"6401": {
+		"commander": {
+			"id": "445"
+		},
+		"deck": [
+			{
+				"id": "8137"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8138"
+			},
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8140"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8143"
+			},
+			{
+				"id": "8139"
+			},
+			{
+				"id": "8141",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8140",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8143",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6401",
+		"name": "A BGE for All"
+	},
+	"6402": {
+		"commander": {
+			"id": "243"
+		},
+		"deck": [
+			{
+				"id": "1002"
+			},
+			{
+				"id": "1002"
+			},
+			{
+				"id": "1002"
+			},
+			{
+				"id": "1002"
+			},
+			{
+				"id": "1002"
+			},
+			{
+				"id": "1002"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "1002",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1002",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1002",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6402",
+		"name": "Revenge of the Storm"
+	},
+	"6403": {
+		"commander": {
+			"id": "200"
+		},
+		"deck": [
+			{
+				"id": "1300"
+			},
+			{
+				"id": "1300"
+			},
+			{
+				"id": "1300"
+			},
+			{
+				"id": "1300"
+			},
+			{
+				"id": "1300"
+			},
+			{
+				"id": "1300"
+			},
+			{
+				"id": "1303"
+			},
+			{
+				"id": "1303"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "1300",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1303",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1300",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6403",
+		"name": "Revenge of the Dead, Part XXIV"
+	},
+	"6404": {
+		"commander": {
+			"id": "210"
+		},
+		"deck": [
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1306"
+			},
+			{
+				"id": "1301"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "1301",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1306",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1301",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1306",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6404",
+		"name": "Revenge of the Snip Snip"
+	},
+	"6405": {
+		"commander": {
+			"id": "205"
+		},
+		"deck": [
+			{
+				"id": "1603"
+			},
+			{
+				"id": "1603"
+			},
+			{
+				"id": "1604"
+			},
+			{
+				"id": "1604"
+			},
+			{
+				"id": "1605"
+			},
+			{
+				"id": "1605"
+			},
+			{
+				"id": "1601"
+			},
+			{
+				"id": "1602"
+			},
+			{
+				"id": "1602"
+			},
+			{
+				"id": "1603",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1604",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1605",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1600",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1600",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1607",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6405",
+		"name": "Revenge of the Woods"
+	},
+	"6406": {
+		"commander": {
+			"id": "204"
+		},
+		"deck": [
+			{
+				"id": "1006"
+			},
+			{
+				"id": "1006"
+			},
+			{
+				"id": "1006"
+			},
+			{
+				"id": "1006"
+			},
+			{
+				"id": "1006"
+			},
+			{
+				"id": "1006"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "1007",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1007",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1006",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1007",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6406",
+		"name": "Revenge of the Souls"
+	},
+	"6407": {
+		"commander": {
+			"id": "296"
+		},
+		"deck": [
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8016",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6407",
+		"name": "Revenge of the Revengest!"
+	},
+	"6408": {
+		"commander": {
+			"id": "430"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6408",
+		"name": "Common Crusher Crew"
+	},
+	"6409": {
+		"commander": {
+			"id": "430"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6409",
+		"name": "Common Squashing Squad"
+	},
+	"6410": {
+		"commander": {
+			"id": "431"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6410",
+		"name": "Common Terror Team"
+	},
+	"6411": {
+		"commander": {
+			"id": "431"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6411",
+		"name": "Common Conquering Club"
+	},
+	"6412": {
+		"commander": {
+			"id": "428"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6412",
+		"name": "Common Bashing Bunch"
+	},
+	"6413": {
+		"commander": {
+			"id": "429"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8129"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8131"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8132"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8128",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8130",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6413",
+		"name": "Common Trashing Troupe"
 	}
 };

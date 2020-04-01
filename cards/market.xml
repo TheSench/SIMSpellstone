@@ -2834,6 +2834,20 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" number="2" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3103</id>
+    <name>Legendary Dragon Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^cE7FFLegendary^cFFFF Dragon card!</desc>
+    <priority>1</priority>
+    <asset_prefab>legendary_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000,4000" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -6532,6 +6546,86 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="5138" display_card_id="5138" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5179</id>
+    <name>Scaly Newborn Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFScaly Newborn^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5093" display_card_id="5093" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5180</id>
+    <name>Shadowed Wyvern Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFShadowed Wyvern^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6130" display_card_id="6130" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5181</id>
+    <name>Concealed Dragon Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFConcealed Dragon^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5010" display_card_id="5010" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5182</id>
+    <name>Torchrime Terrorizer Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFTorchrime Terrorizer^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5128" display_card_id="5128" />
     </cards>
   </store_item>
 </root>

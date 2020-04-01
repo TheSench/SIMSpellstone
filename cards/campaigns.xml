@@ -8174,6 +8174,173 @@
     </rewards>
     <find_item id="3107" drop_per_energy=".8" />
   </campaign>
+  <!-- ================================== Campaign Event 22 weeks 1-4 / Healed Dawnglow ================================== -->
+  <campaign>
+    <id>1239</id>
+    <name>Healed Dawnglow</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1585846800</locked_start_time>
+    <!--  Thursday, 2 April 2020 17:00:00 -->
+    <location_id>28</location_id>
+    <x>150</x>
+    <y>330</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6384</mission_id>
+      <mission_id>6385</mission_id>
+      <mission_id>6386</mission_id>
+      <mission_id>6387</mission_id>
+      <mission_id>6388</mission_id>
+      <mission_id>6389</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2181" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2124" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3111" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3110" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1240</id>
+    <name>Mechanical Titan</name>
+    <campaign_req id="1239" level="1" />
+    <locked_start_time>1587056400</locked_start_time>
+    <!--  Thursday, 16 April 2020 17:00:00 -->
+    <battleground_id>2091</battleground_id>
+    <location_id>28</location_id>
+    <x>260</x>
+    <y>190</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6390</mission_id>
+      <mission_id>6391</mission_id>
+      <mission_id>6392</mission_id>
+      <mission_id>6393</mission_id>
+      <mission_id>6394</mission_id>
+      <mission_id>6395</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2182" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2141" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3111" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3110" drop_per_energy=".4" />
+  </campaign>
+  <!-- New April Fool's Campaigns -->
+  <campaign>
+    <id>1244</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Revenge of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>27</location_id>
+    <x>140</x>
+    <y>230</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6402</mission_id>
+      <mission_id>6403</mission_id>
+      <mission_id>6404</mission_id>
+      <mission_id>6405</mission_id>
+      <mission_id>6406</mission_id>
+      <mission_id>6407</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <card level="2" id="2153" />
+      <card level="3" id="2153" />
+      <card level="4" id="2153" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3107" drop_per_energy=".4" />
+  </campaign>
+  <campaign>
+    <id>1245</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Legends Come To Take Their Place!</name>
+    <campaign_req id="1244" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>27</location_id>
+    <x>400</x>
+    <y>400</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6408</mission_id>
+      <mission_id>6409</mission_id>
+      <mission_id>6410</mission_id>
+      <mission_id>6411</mission_id>
+      <mission_id>6412</mission_id>
+      <mission_id>6413</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2152" />
+      <card level="2" id="2152" />
+      <card level="3" id="2152" />
+      <card level="4" id="2152" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3107" drop_per_energy=".4" />
+  </campaign>
+  <campaign>
+    <id>1246</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>A new FOE has appeared!?</name>
+    <campaign_req id="1244" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>135</battleground_id>
+    <location_id>27</location_id>
+    <x>850</x>
+    <y>400</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6396</mission_id>
+      <mission_id>6397</mission_id>
+      <mission_id>6398</mission_id>
+      <mission_id>6399</mission_id>
+      <mission_id>6400</mission_id>
+      <mission_id>6401</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12179" />
+      <item level="2" id="514" />
+      <item level="3" id="514" />
+      <item level="4" id="514" />
+      <item level="5" id="104031" number="50" />
+      <card level="6" id="12180" />
+      <item level="7" id="104031" number="150" />
+    </rewards>
+    <find_item id="3107" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

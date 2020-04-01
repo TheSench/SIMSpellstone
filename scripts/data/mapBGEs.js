@@ -6321,5 +6321,289 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3022",
 		"location_id": "27",
 		"name": "Airship Defenses"
+	},
+	"3023": {
+		"desc": "Purify Void Remnants to revitalize the Dawnglow security!",
+		"effects": [
+			{
+				"id": "56",
+				"name": "Healing Turret",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures are Healed for 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 1
+							}
+						],
+						"name": "Healing Turret"
+					},
+					{
+						"desc": "All of your creatures are Healed for 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 2
+							}
+						],
+						"name": "Healing Turret"
+					},
+					{
+						"desc": "All of your creatures are Healed for 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 3
+							}
+						],
+						"name": "Healing Turret"
+					},
+					{
+						"desc": "All of your creatures are Healed for 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 4
+							}
+						],
+						"name": "Healing Turret"
+					},
+					{
+						"desc": "All of your creatures are Healed for 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 5
+							}
+						],
+						"name": "Healing Turret"
+					},
+					{
+						"desc": "All of your creatures are Healed for 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 6
+							}
+						],
+						"name": "Healing Turret"
+					}
+				]
+			},
+			{
+				"id": "57",
+				"name": "Automaton Driller",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Pierce 2.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "pierce",
+								"x": 2
+							}
+						],
+						"name": "Automaton Driller"
+					},
+					{
+						"desc": "All of your creatures gain Pierce 4.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "pierce",
+								"x": 4
+							}
+						],
+						"name": "Automaton Driller"
+					},
+					{
+						"desc": "All of your creatures gain Pierce 6.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "pierce",
+								"x": 6
+							}
+						],
+						"name": "Automaton Driller"
+					},
+					{
+						"desc": "All of your creatures gain Pierce 8.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "pierce",
+								"x": 8
+							}
+						],
+						"name": "Automaton Driller"
+					},
+					{
+						"desc": "All of your creatures gain Pierce 10.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "pierce",
+								"x": 10
+							}
+						],
+						"name": "Automaton Driller"
+					},
+					{
+						"desc": "All of your creatures gain Pierce 15.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "pierce",
+								"x": 15
+							}
+						],
+						"name": "Automaton Driller"
+					}
+				]
+			},
+			{
+				"id": "58",
+				"name": "Dawnglow Guardian",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Berserk 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 1
+							}
+						],
+						"name": "Dawnglow Guardian"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 2
+							}
+						],
+						"name": "Dawnglow Guardian"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 3
+							}
+						],
+						"name": "Dawnglow Guardian"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 4
+							}
+						],
+						"name": "Dawnglow Guardian"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 5
+							}
+						],
+						"name": "Dawnglow Guardian"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 6
+							}
+						],
+						"name": "Dawnglow Guardian"
+					}
+				]
+			}
+		],
+		"id": "3023",
+		"location_id": "28",
+		"name": "Dawnglow Defenses"
 	}
 };

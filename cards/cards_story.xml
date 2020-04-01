@@ -7731,5 +7731,357 @@
       <skill id="weaken" x="9" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8137</id>
+    <card_type>2</card_type>
+    <name>He Who Must Not Be Named</name>
+    <picture>Two_Headed_Undead_Brute</picture>
+    <asset_bundle>188</asset_bundle>
+    <attack>1</attack>
+    <health>92</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="jam" c="6" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>93</health>
+      <skill id="jam" c="6" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>94</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>96</health>
+      <skill id="jam" c="5" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>98</health>
+      <skill id="jam" c="5" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>100</health>
+      <skill id="silence" x="1" />
+      <skill id="jam" c="4" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8138</id>
+    <card_type>2</card_type>
+    <name>Zhu-Lath fhtagn!</name>
+    <picture>Insect_Hermit_Crab</picture>
+    <asset_bundle>188</asset_bundle>
+    <attack>4</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="1" />
+    <skill id="counter" x="1" />
+    <skill id="counterburn" x="1" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <sub_type>12</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <skill id="backlash" x="2" />
+      <skill id="counter" x="2" />
+      <skill id="counterburn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+      <skill id="backlash" x="3" />
+      <skill id="counter" x="3" />
+      <skill id="counterburn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <attack>7</attack>
+      <skill id="backlash" x="4" />
+      <skill id="counter" x="4" />
+      <skill id="counterburn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8139</id>
+    <card_type>2</card_type>
+    <name>The Hero Previously Known as Lev</name>
+    <picture>Mythic_Champion</picture>
+    <asset_bundle>188</asset_bundle>
+    <attack>2</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="strike" x="6" />
+    <skill id="daze" x="2" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <sub_type>16</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="8" />
+      <skill id="daze" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+      <skill id="armored" x="4" />
+      <skill id="strike" x="10" />
+      <skill id="daze" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="armored" x="5" />
+      <skill id="strike" x="12" />
+      <skill id="daze" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="strike" x="15" />
+      <skill id="daze" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="armored" x="6" />
+      <skill id="strike" x="20" />
+      <skill id="daze" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8140</id>
+    <card_type>2</card_type>
+    <name>Six Wings Under</name>
+    <picture>Fire_Ice_Phoenix</picture>
+    <asset_bundle>188</asset_bundle>
+    <attack>0</attack>
+    <health>5</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="reanimate" x="5" />
+    <skill id="counter" x="1" />
+    <skill id="counterburn" x="1" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <sub_type>10</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+      <skill id="reanimate" x="8" />
+      <skill id="counter" x="2" />
+      <skill id="counterburn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+      <skill id="reanimate" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+      <skill id="reanimate" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+      <skill id="reanimate" x="16" />
+      <skill id="counter" x="3" />
+      <skill id="counterburn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="reanimate" x="20" />
+      <skill id="counter" x="4" />
+      <skill id="counterburn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8141</id>
+    <card_type>2</card_type>
+    <name>Patchwork Adams</name>
+    <picture>Patchwork_Monster</picture>
+    <asset_bundle>188</asset_bundle>
+    <attack>5</attack>
+    <health>5</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="protect" x="5" />
+    <skill id="pierce" x="5" />
+    <skill id="strike" x="5" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>13</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+      <health>6</health>
+      <skill id="protect" x="6" />
+      <skill id="pierce" x="6" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <health>7</health>
+      <skill id="protect" x="7" />
+      <skill id="pierce" x="7" />
+      <skill id="strike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>8</health>
+      <skill id="protect" x="8" />
+      <skill id="pierce" x="8" />
+      <skill id="strike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <health>9</health>
+      <skill id="protect" x="9" />
+      <skill id="pierce" x="9" />
+      <skill id="strike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <health>10</health>
+      <skill id="protect" x="10" />
+      <skill id="pierce" x="10" />
+      <skill id="strike" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8142</id>
+    <card_type>2</card_type>
+    <name>Tanky Chicken</name>
+    <picture>Avian_Necha_Chicken</picture>
+    <asset_bundle>188</asset_bundle>
+    <attack>0</attack>
+    <health>50</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="strike" x="3" all="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <sub_type>16</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>55</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>60</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>65</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>70</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>80</health>
+      <skill id="strike" x="4" all="1" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="strike" x="6" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8143</id>
+    <card_type>2</card_type>
+    <name>The Six Million Dollar Bear</name>
+    <picture>ralgan</picture>
+    <asset_bundle>188</asset_bundle>
+    <attack>4</attack>
+    <health>50</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="protect" x="4" />
+    <skill id="weakenself" x="6" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <sub_type>4</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>52</health>
+      <skill id="armored" x="6" />
+      <skill id="protect" x="5" />
+      <skill id="weakenself" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <health>54</health>
+      <skill id="armored" x="7" />
+      <skill id="protect" x="6" />
+      <skill id="weakenself" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>56</health>
+      <skill id="armored" x="7" />
+      <skill id="protect" x="7" />
+      <skill id="weakenself" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <health>58</health>
+      <skill id="armored" x="8" />
+      <skill id="protect" x="8" />
+      <skill id="weakenself" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="armored" x="9" />
+      <skill id="protect" x="10" />
+      <skill id="weakenself" x="30" />
+    </upgrade>
+  </unit>
 </root>
 

@@ -25067,6 +25067,92 @@ var CARDS = {
 			}
 		}
 	},
+	"445": {
+		"card_type": "1",
+		"health": 50,
+		"id": "445",
+		"maxLevel": 6,
+		"name": "BGE Conflux",
+		"picture": "portrait_bgeboss",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "armored",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1
+			},
+			{
+				"id": "imbue",
+				"s": "pierce",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 55,
+				"skill": []
+			},
+			"3": {
+				"health": 60,
+				"skill": []
+			},
+			"4": {
+				"health": 65,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "imbue",
+						"s": "pierce",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 70,
+				"skill": []
+			},
+			"6": {
+				"health": 75,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"id": "imbue",
+						"s": "pierce",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -45497,6 +45583,124 @@ var CARDS = {
 			}
 		}
 	},
+	"2181": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 1,
+		"health": 8,
+		"hidden_until": "1585846800000",
+		"id": "2181",
+		"maxLevel": 5,
+		"name": "Bonepicker Wyvern",
+		"picture": "Dragon_Bone_Helmet_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 10,
+				"skill": []
+			},
+			"4": {
+				"attack": 5,
+				"skill": []
+			},
+			"5": {
+				"health": 11,
+				"skill": []
+			}
+		}
+	},
+	"2182": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 21,
+		"hidden_until": "1585846800000",
+		"id": "2182",
+		"maxLevel": 5,
+		"name": "Axolotl Sentinels",
+		"picture": "Dragon_Frog_Axolotl_Warriors_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"id": "pierce",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 22,
+				"skill": []
+			},
+			"3": {
+				"attack": 5,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"health": 23,
+				"skill": []
+			}
+		}
+	},
 	"4000": {
 		"attack": 9,
 		"card_type": "2",
@@ -51240,6 +51444,184 @@ var CARDS = {
 				"attack": 12,
 				"health": 32,
 				"skill": []
+			}
+		}
+	},
+	"4031": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"id": "4031",
+		"maxLevel": 10,
+		"name": "Sparky, the Royal Pet",
+		"picture": "Dragon_Sparky_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 28,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 9,
+				"skill": []
+			},
+			"4": {
+				"health": 29,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"attack": 10,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 30,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"7": {
+				"attack": 11,
+				"health": 31,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"8": {
+				"health": 32,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"9": {
+				"attack": 12,
+				"health": 33,
+				"skill": []
+			},
+			"10": {
+				"health": 34,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
 			}
 		}
 	},
@@ -94944,6 +95326,84 @@ var CARDS = {
 			}
 		}
 	},
+	"6267": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 11,
+		"hidden_until": "1585846800000",
+		"id": "6267",
+		"maxLevel": 6,
+		"name": "Searscale Wyrmling",
+		"picture": "Dragon_Lava_Scale_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 13,
+				"skill": []
+			},
+			"4": {
+				"health": 14,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"id": "strike",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 3
+					},
+					{
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -117276,6 +117736,99 @@ var CARDS = {
 			}
 		}
 	},
+	"7270": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1586192400000",
+		"id": "7270",
+		"maxLevel": 6,
+		"name": "Elarian Beast",
+		"picture": "Dragon_Hexa_Hydra_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"id": "poison",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -134010,6 +134563,738 @@ var CARDS = {
 						"all": "1",
 						"id": "weaken",
 						"x": 9
+					}
+				]
+			}
+		}
+	},
+	"8137": {
+		"attack": 1,
+		"card_type": "2",
+		"cost": 4,
+		"health": 92,
+		"id": "8137",
+		"maxLevel": 6,
+		"name": "He Who Must Not Be Named",
+		"picture": "Two_Headed_Undead_Brute",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"c": 6,
+				"id": "jam"
+			},
+			{
+				"c": 6,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"7",
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 93,
+				"skill": [
+					{
+						"c": 6,
+						"id": "jam"
+					},
+					{
+						"c": 6,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 94,
+				"skill": []
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"c": 5,
+						"id": "jam"
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 98,
+				"skill": [
+					{
+						"c": 5,
+						"id": "jam"
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"health": 100,
+				"skill": [
+					{
+						"id": "silence",
+						"x": 1
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"8138": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 18,
+		"id": "8138",
+		"maxLevel": 6,
+		"name": "Zhu-Lath fhtagn!",
+		"picture": "Insect_Hermit_Crab",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 1
+			},
+			{
+				"id": "counter",
+				"x": 1
+			},
+			{
+				"id": "counterburn",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"13",
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"attack": 5,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "counter",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 6,
+				"health": 21,
+				"skill": []
+			},
+			"6": {
+				"attack": 7,
+				"health": 22,
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"8139": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 13,
+		"id": "8139",
+		"maxLevel": 6,
+		"name": "The Hero Previously Known as Lev",
+		"picture": "Mythic_Champion",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "strike",
+				"x": 6
+			},
+			{
+				"id": "daze",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"6",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 8
+					},
+					{
+						"id": "daze",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 14,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 10
+					},
+					{
+						"id": "daze",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 15,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 12
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "strike",
+						"x": 15
+					},
+					{
+						"id": "daze",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "strike",
+						"x": 20
+					},
+					{
+						"id": "daze",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"8140": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 0,
+		"health": 5,
+		"id": "8140",
+		"maxLevel": 6,
+		"name": "Six Wings Under",
+		"picture": "Fire_Ice_Phoenix",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "reanimate",
+				"x": 5
+			},
+			{
+				"id": "counter",
+				"x": 1
+			},
+			{
+				"id": "counterburn",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9",
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 8,
+				"skill": [
+					{
+						"id": "reanimate",
+						"x": 8
+					},
+					{
+						"id": "counter",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 10,
+				"skill": [
+					{
+						"id": "reanimate",
+						"x": 10
+					}
+				]
+			},
+			"4": {
+				"health": 12,
+				"skill": [
+					{
+						"id": "reanimate",
+						"x": 12
+					}
+				]
+			},
+			"5": {
+				"health": 16,
+				"skill": [
+					{
+						"id": "reanimate",
+						"x": 16
+					},
+					{
+						"id": "counter",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "reanimate",
+						"x": 20
+					},
+					{
+						"id": "counter",
+						"x": 4
+					},
+					{
+						"id": "counterburn",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"8141": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 5,
+		"id": "8141",
+		"maxLevel": 6,
+		"name": "Patchwork Adams",
+		"picture": "Patchwork_Monster",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "protect",
+				"x": 5
+			},
+			{
+				"id": "pierce",
+				"x": 5
+			},
+			{
+				"id": "strike",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"health": 6,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"id": "pierce",
+						"x": 6
+					},
+					{
+						"id": "strike",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"health": 7,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 7
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					},
+					{
+						"id": "strike",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"attack": 8,
+				"health": 8,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 8
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"health": 9,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 9
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					},
+					{
+						"id": "strike",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"health": 10,
+				"skill": [
+					{
+						"id": "protect",
+						"x": 10
+					},
+					{
+						"id": "pierce",
+						"x": 10
+					},
+					{
+						"id": "strike",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"8142": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 4,
+		"health": 50,
+		"id": "8142",
+		"maxLevel": 6,
+		"name": "Tanky Chicken",
+		"picture": "Avian_Necha_Chicken",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"11",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 55,
+				"skill": []
+			},
+			"3": {
+				"health": 60,
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 65,
+				"skill": []
+			},
+			"5": {
+				"health": 70,
+				"skill": []
+			},
+			"6": {
+				"health": 80,
+				"skill": [
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"8143": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 3,
+		"health": 50,
+		"id": "8143",
+		"maxLevel": 6,
+		"name": "The Six Million Dollar Bear",
+		"picture": "ralgan",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "protect",
+				"x": 4
+			},
+			{
+				"id": "weakenself",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"16",
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 52,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"id": "weakenself",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"attack": 5,
+				"health": 54,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"id": "weakenself",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"health": 56,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "protect",
+						"x": 7
+					},
+					{
+						"id": "weakenself",
+						"x": 10
+					}
+				]
+			},
+			"5": {
+				"attack": 6,
+				"health": 58,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "protect",
+						"x": 8
+					},
+					{
+						"id": "weakenself",
+						"x": 20
+					}
+				]
+			},
+			"6": {
+				"health": 60,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "protect",
+						"x": 10
+					},
+					{
+						"id": "weakenself",
+						"x": 30
 					}
 				]
 			}
@@ -153093,6 +154378,152 @@ var CARDS = {
 						"x": 5
 					}
 				]
+			}
+		}
+	},
+	"12181": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1585846800000",
+		"id": "12181",
+		"maxLevel": 5,
+		"name": "Spinepicker Wyvern",
+		"picture": "Dragon_Bone_Helmet_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 13,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 14,
+				"skill": []
+			},
+			"5": {
+				"health": 15,
+				"skill": []
+			}
+		}
+	},
+	"12182": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1585846800000",
+		"id": "12182",
+		"maxLevel": 5,
+		"name": "Axolotl Warriors",
+		"picture": "Dragon_Frog_Axolotl_Warriors_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"id": "pierce",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"id": "pierce",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"id": "pierce",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"health": 25,
+				"skill": []
+			},
+			"5": {
+				"attack": 7,
+				"skill": []
 			}
 		}
 	},
@@ -197081,6 +198512,87 @@ var CARDS = {
 			}
 		}
 	},
+	"16267": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1585846800000",
+		"id": "16267",
+		"maxLevel": 6,
+		"name": "Searscale Dragon",
+		"picture": "Dragon_Lava_Scale_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 16,
+				"skill": []
+			},
+			"4": {
+				"health": 17,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					}
+				]
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -219869,6 +221381,99 @@ var CARDS = {
 			}
 		}
 	},
+	"17270": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1586192400000",
+		"id": "17270",
+		"maxLevel": 6,
+		"name": "Elarian Monster",
+		"picture": "Dragon_Hexa_Hydra_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4
+			},
+			{
+				"id": "poison",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -240299,6 +241904,153 @@ var CARDS = {
 					{
 						"id": "leech",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"22181": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 16,
+		"hidden_until": "1585846800000",
+		"id": "22181",
+		"maxLevel": 5,
+		"name": "Skullpicker Wyvern",
+		"picture": "Dragon_Bone_Helmet_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 17,
+				"skill": []
+			},
+			"3": {
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"health": 19,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"22182": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1585846800000",
+		"id": "22182",
+		"maxLevel": 5,
+		"name": "Axolotl Riverguards",
+		"picture": "Dragon_Frog_Axolotl_Warriors_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"id": "pierce",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"4",
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"id": "pierce",
+						"x": 9
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "pierce",
+						"x": 10
 					}
 				]
 			}
@@ -284350,6 +286102,89 @@ var CARDS = {
 			}
 		}
 	},
+	"26267": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1585846800000",
+		"id": "26267",
+		"maxLevel": 6,
+		"name": "Searscale Wyrm",
+		"picture": "Dragon_Lava_Scale_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"attack": 5,
+				"skill": []
+			},
+			"4": {
+				"health": 20,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -307284,6 +309119,99 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"27270": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 41,
+		"hidden_until": "1586192400000",
+		"id": "27270",
+		"maxLevel": 6,
+		"name": "Elarian Hydra",
+		"picture": "Dragon_Hexa_Hydra_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 5
+			},
+			{
+				"id": "poison",
+				"x": 10
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 11
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"skill": []
+			},
+			"4": {
+				"health": 42,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 11
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 12
 					}
 				]
 			}

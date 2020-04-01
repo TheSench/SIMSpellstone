@@ -673,6 +673,148 @@
       <add_skill id="armored" mult="0.1" base="health" y="13" />
     </effect>
   </battleground>
+  <battleground>
+    <id>135</id>
+    <name>All For One</name>
+    <desc>A bunch of BGEs are active.</desc>
+    <icon>bucket_128</icon>
+    <effect>
+      <!-- Angelic Assault-->
+      <add_skill id="legion" mult="0.15" base="health" y="6" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
+        <projectile_effect>
+          <prefab>Legion_Projectile</prefab>
+          <delay>0</delay>
+          <duration>.5</duration>
+          <translation>.5</translation>
+          <offset>2</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>Legion_Angel_Target</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <!-- Eyes in the Sky -->
+      <add_skill id="mark" mult="0.15" base="health" y="10" />
+      <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
+        <target_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+          <!-- <shake>true</shake> -->
+        </target_effect>
+        <actor_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </actor_effect>
+      </skill>
+      <!-- Day of Dragons -->
+      <add_skill id="burn" mult="0.2" base="health" y="9" delay="0,1,2" />
+      <add_skill id="regenerate" mult="0.1" x="4" base="health" y="9" delay="3,4" />
+      <!-- Elemental Discordance -->
+      <skill id="protect" ignore_nullify="1" mult=".1" x="4" all="1" base="health" yy="1,5" />
+      <skill id="displayEffect" trigger="onSkill" s="protect">
+        <target_effect>
+          <prefab>submerge_fadecloth</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>.5</delay>
+          <duration>.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillHit" s="protect">
+        <actor_effect>
+          <prefab>submerge_barrier</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillBreak" s="protect">
+        <actor_effect>
+          <prefab>submerge_break</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <add_skill id="burn" mult="0.75" all="1" base="attack" yy="2,5" />
+      <add_skill id="bash" mult=".25" all="1" base="health" yy="3,5" />
+      <skill id="displayEffect" trigger="onSkill" s="bash">
+        <target_effect>
+          <prefab>frogbge_Target</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+      <!-- Poisonbolt Evolution -->
+      <add_skill id="poisonstrike" mult=".5" base="attack" y="4" />
+      <!-- Undead Vampirism -->
+      <add_skill id="vampirism" mult=".05" base="health" x="3" y="7" />
+      <!-- Goblin Barrage -->
+      <add_skill id="barrage" mult="1" base="attack" y="11" />
+      <skill id="displayEffect" trigger="onSkill" y="11" s="barrage">
+        <projectile_effect>
+          <prefab>goblinBombProjectile</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0</delay>
+          <duration>.75</duration>
+          <translation>.75</translation>
+          <offset>0</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>goblinBombTarget</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>.75</delay>
+          <duration>1.25</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <!-- Brine Edge -->
+      <scale_attack base="health" mult="0.15" yy="12" />
+      <skill id="displayEffect" trigger="onPlay" yy="12">
+        <actor_effect>
+          <prefab>WaterEmpower</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>2</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <!-- Hardened Carapace -->
+      <add_skill id="armored" mult="0.1" base="health" y="13" />
+      <skill id="displayEffect" trigger="onSkill" y="13" s="armored">
+        <actor_effect>
+          <prefab>insect_armor</prefab>
+          <bundle_id>64</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <!-- Energy Warding -->
+      <add_skill id="absorb_mecha" mult=".1" base="health" x="3" all="1" y="16" />
+      <skill id="displayEffect" trigger="onSkill" s="absorb_mecha">
+        <target_effect>
+          <prefab>ReinforceActive</prefab>
+          <bundle_id>107</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -3038,6 +3180,24 @@
     <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult=".1" mult=".05" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 22 weeks 1-4 -->
+  <!-- Universal EBGE weeks 1-4 Setup -->
+  <battleground>
+    <id>2091</id>
+    <name>Chorus of Fire</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_dragon_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>5</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
   <!-- ==================== -->

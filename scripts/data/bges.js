@@ -607,6 +607,121 @@ var BATTLEGROUNDS = {
 		"id": "134",
 		"name": "Regenerating Carapace"
 	},
+	"135": {
+		"desc": "A bunch of BGEs are active.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "legion",
+				"mult": 0.15,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "mark",
+				"mult": 0.15,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.2,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.1,
+				"x": 4,
+				"y": "9"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"x": 4,
+				"y": "1,5"
+			},
+			{
+				"all": "1",
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.75,
+				"y": "2,5"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "3,5"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "poisonstrike",
+				"mult": 0.5,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"mult": 0.05,
+				"x": 3,
+				"y": "7"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 1,
+				"y": "11"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_attack",
+				"mult": 0.15,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "13"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.1,
+				"x": 3,
+				"y": "16"
+			}
+		],
+		"id": "135",
+		"name": "All For One"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -3579,6 +3694,22 @@ var BATTLEGROUNDS = {
 		"name": "Enemy Requiem",
 		"scale_with_level": "1",
 		"starting_level": "0"
+	},
+	"2091": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.008,
+				"effect_type": "scale_attributes",
+				"mult": 0.0025
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2091",
+		"name": "Chorus of Fire",
+		"scale_with_level": "1",
+		"starting_level": "5"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
