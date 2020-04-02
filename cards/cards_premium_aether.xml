@@ -2846,7 +2846,7 @@
     <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
     <asset_bundle>33</asset_bundle>
     <attack>5</attack>
-    <health>14</health>
+    <health>30</health>
     <cost>3</cost>
     <skill id="rally" all="1" x="1" y="9" />
     <skill id="heal" all="1" x="1" />
@@ -2857,7 +2857,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -2873,7 +2873,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>17</health>
+      <health>32</health>
       <skill id="rally" all="1" x="2" y="9" />
       <skill id="heal" all="1" x="2" />
       <skill id="protect" x="2" />
@@ -2889,7 +2889,7 @@
     <picture>Sky_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
     <attack>5</attack>
-    <health>18</health>
+    <health>33</health>
     <cost>3</cost>
     <skill id="rally" all="1" x="2" y="9" />
     <skill id="heal" all="1" x="2" />
@@ -2900,7 +2900,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
+      <health>34</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -2910,7 +2910,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>21</health>
+      <health>35</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -2927,7 +2927,7 @@
     <picture>Sky_Dragon_B</picture>
     <asset_bundle>33</asset_bundle>
     <attack>7</attack>
-    <health>29</health>
+    <health>36</health>
     <cost>3</cost>
     <skill id="rally" all="1" x="2" y="9" />
     <skill id="heal" all="1" x="2" />
@@ -2938,7 +2938,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>30</health>
+      <health>37</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -2948,12 +2948,12 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>31</health>
+      <health>38</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>10</attack>
-      <health>34</health>
+      <health>39</health>
       <skill id="rally" all="1" x="4" y="9" />
       <skill id="heal" all="1" x="3" />
       <skill id="protect" x="6" />
@@ -3085,8 +3085,8 @@
     <name>Frostfire Wyrm</name>
     <picture>Frost_Wyrm_A</picture>
     <asset_bundle>33</asset_bundle>
-    <attack>5</attack>
-    <health>7</health>
+    <attack>6</attack>
+    <health>10</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="burn" x="1" />
@@ -3097,7 +3097,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>9</health>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -3119,7 +3119,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>6</attack>
+      <attack>7</attack>
     </upgrade>
   </unit>
   <unit>
@@ -3129,8 +3129,8 @@
     <name>Frostflame Wyrm</name>
     <picture>Frost_Wyrm_A</picture>
     <asset_bundle>33</asset_bundle>
-    <attack>6</attack>
-    <health>10</health>
+    <attack>8</attack>
+    <health>12</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="burn" x="1" />
@@ -3141,11 +3141,11 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>11</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>12</health>
+      <health>14</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -3155,7 +3155,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>14</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -3171,8 +3171,8 @@
     <name>Frostscour Wyrm</name>
     <picture>Frost_Wyrm_B</picture>
     <asset_bundle>33</asset_bundle>
-    <attack>6</attack>
-    <health>15</health>
+    <attack>9</attack>
+    <health>16</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="burn" x="2" />
@@ -3183,16 +3183,16 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <health>17</health>
     </upgrade>
     <upgrade>
-      <level>4</level>
-      <attack>7</attack>
+      <level>3</level>
       <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -3203,7 +3203,7 @@
     <upgrade>
       <level>6</level>
       <skill id="burn" x="4" />
-      <skill id="jam" c="4" />
+      <skill id="jam" c="3" />
       <skill id="weaken" x="6" />
     </upgrade>
   </unit>
@@ -3444,8 +3444,8 @@
     <name>Snowback Dragon</name>
     <picture>Snowhidden_Dragon_A</picture>
     <asset_bundle>40</asset_bundle>
-    <attack>2</attack>
-    <health>16</health>
+    <attack>5</attack>
+    <health>29</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="protect" x="2" all="1" />
@@ -3456,15 +3456,15 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>18</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>3</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -3486,8 +3486,8 @@
     <name>Snowmasked Dragon</name>
     <picture>Snowhidden_Dragon_A</picture>
     <asset_bundle>40</asset_bundle>
-    <attack>3</attack>
-    <health>19</health>
+    <attack>7</attack>
+    <health>32</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="protect" x="2" all="1" />
@@ -3498,26 +3498,26 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>20</health>
+      <health>33</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>21</health>
+      <health>34</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>4</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>22</health>
+      <health>35</health>
       <skill id="protect" x="2" all="1" />
       <skill id="frost" x="3" />
       <skill id="burn" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>23</health>
+      <health>36</health>
       <skill id="protect" x="3" all="1" />
       <skill id="frost" x="3" />
       <skill id="burn" x="2" />
@@ -3530,8 +3530,8 @@
     <name>Snowcloaked Dragon</name>
     <picture>Snowhidden_Dragon_B</picture>
     <asset_bundle>40</asset_bundle>
-    <attack>6</attack>
-    <health>29</health>
+    <attack>9</attack>
+    <health>37</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="protect" x="3" all="1" />
@@ -3542,11 +3542,11 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>30</health>
+      <health>38</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>39</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -3556,12 +3556,12 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>34</health>
+      <health>40</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>36</health>
-      <attack>7</attack>
+      <health>41</health>
+      <attack>10</attack>
       <skill id="protect" x="5" all="1" />
       <skill id="frost" x="4" />
       <skill id="burn" x="5" />
