@@ -72799,6 +72799,107 @@ var CARDS = {
 			}
 		}
 	},
+	"5267": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1586797200000",
+		"id": "5267",
+		"maxLevel": 6,
+		"name": "Dungeon Dragon",
+		"picture": "Dragon_Dungeon_Master_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2,
+				"y": "1"
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"health": 37,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -119796,6 +119897,221 @@ var CARDS = {
 						"id": "fervor",
 						"x": 6,
 						"y": "13"
+					}
+				]
+			}
+		}
+	},
+	"7610": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1586451600000",
+		"id": "7610",
+		"maxLevel": 10,
+		"name": "Trafyr, the Rose Warden",
+		"picture": "Dragon_Rose_Wyrm_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 13,
+				"health": 40,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 14,
+				"health": 41,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 15,
+				"health": 42,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 16,
+				"health": 43,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"7": {
+				"attack": 17,
+				"health": 44,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			},
+			"8": {
+				"attack": 17,
+				"health": 45,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			},
+			"9": {
+				"attack": 18,
+				"health": 46,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			},
+			"10": {
+				"attack": 18,
+				"health": 47,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
 					}
 				]
 			}
@@ -176572,6 +176888,107 @@ var CARDS = {
 						"id": "flurry"
 					}
 				]
+			}
+		}
+	},
+	"15267": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1586797200000",
+		"id": "15267",
+		"maxLevel": 6,
+		"name": "Dungeon Wyrm",
+		"picture": "Dragon_Dungeon_Master_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3,
+				"y": "1"
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"attack": 14,
+				"skill": []
 			}
 		}
 	},
@@ -264331,6 +264748,107 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"25267": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1586797200000",
+		"id": "25267",
+		"maxLevel": 6,
+		"name": "Dungeon Master",
+		"picture": "Dragon_Dungeon_Master_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 4,
+				"y": "1"
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 15,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
 					}
 				]
 			}
