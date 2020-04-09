@@ -570,7 +570,7 @@ var makeUnit = (function () {
         },
 
         isTargetRarity: function(rarity) {
-            return (rarity === undefined ? true : this.rarity === rarity);
+            return (rarity === undefined ? true : this.rarity === Number(rarity));
         },
 
         isTargetDelay: function(delay) {
@@ -686,7 +686,7 @@ var getSkillMult = function(skill, target, defaultBase) {
     } else {
         return 0;
     }
-}
+};
 
 var isImbued = function (card, skillID, i) {
     var activation = false;

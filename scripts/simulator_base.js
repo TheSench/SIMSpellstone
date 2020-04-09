@@ -474,7 +474,7 @@ var SIMULATOR = {};
 			var targets = [];
 			for (var key = 0, len = alliedUnits.length; key < len; key++) {
 				var target = alliedUnits[key];
-				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (all || target.isDamaged() 
 						|| (invigorate && (!target.invigorated)))) {
 					targets.push(key);
@@ -555,7 +555,7 @@ var SIMULATOR = {};
 			var targets = [];
 			for (var key = 0, len = enemyUnits.length; key < len; key++) {
 				var target = enemyUnits[key];
-				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)) {
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					targets.push(key);
 				}
 			}
@@ -635,7 +635,7 @@ var SIMULATOR = {};
 			var targets = [];
 			for (var key = 0, len = enemyUnits.length; key < len; key++) {
 				var target = enemyUnits[key];
-				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (target.scorched || target.poisoned)) {
 					targets.push(key);
 				}
@@ -699,7 +699,7 @@ var SIMULATOR = {};
 			var targets = [];
 			for (var key = 0, len = enemyUnits.length; key < len; key++) {
 				var target = enemyUnits[key];
-				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity) && target.isTargetRarity(rarity)) {
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					targets.push(key);
 				}
 			}
