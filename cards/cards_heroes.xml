@@ -11066,5 +11066,54 @@
       <skill id="imbue" s="pierce" x="10" />
     </upgrade>
   </unit>
+  <unit>
+    <id>446</id>
+    <card_type>1</card_type>
+    <name>Viracocha, the Gentle</name>
+    <portrait>Portraits_Ancient_Titan_Mecha</portrait>
+    <asset_bundle>109</asset_bundle>
+    <health>91</health>
+    <rarity>4</rarity>
+    <skill id="protect" x="1" all="1" />
+    <skill id="enrage" x="2" all="1" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>92</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="enrage" x="2" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>96</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+  </unit>
 </root>
 

@@ -13559,6 +13559,24 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Conjured Dragon's recipe -->
+  <achievement>
+    <id>3568</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Empty Titan</name>
+    <desc>Complete the 'Empty Titan' campaign on Mastery Level 1.</desc>
+    <mission_req>6414</mission_req>
+    <locked_start_time>1587056400</locked_start_time>
+    <!--  Thursday, 16 April 2020 17:00:00 -->
+    <req>
+      <campaign>1247</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8023" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

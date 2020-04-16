@@ -3200,6 +3200,21 @@
       <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
+  <!-- Campaign Event 22 Boss Node-->
+  <battleground>
+    <id>2092</id>
+    <name>Firestorm Hymn</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_dragon_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".3" mult=".01" />
+    </effect>
+  </battleground>
   <!-- ==================== -->
   <!-- ==== Arena BGEs ==== -->
   <!-- ==================== -->

@@ -25153,6 +25153,137 @@ var CARDS = {
 			}
 		}
 	},
+	"446": {
+		"card_type": "1",
+		"health": 91,
+		"id": "446",
+		"maxLevel": 6,
+		"name": "Viracocha, the Gentle",
+		"picture": "portrait_portraits_ancient_titan_mecha",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -72900,6 +73031,95 @@ var CARDS = {
 			}
 		}
 	},
+	"5268": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1587402000000",
+		"id": "5268",
+		"maxLevel": 6,
+		"name": "Mirrorwing Dragon",
+		"picture": "Dragon_Mirror_Wing_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "counter",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"attack": 13,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -95510,6 +95730,99 @@ var CARDS = {
 			}
 		}
 	},
+	"6268": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1587056400000",
+		"id": "6268",
+		"maxLevel": 6,
+		"name": "Wyrmdance Head",
+		"picture": "Dragon_Dancer_Head_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "fervor",
+				"x": 4,
+				"y": "9"
+			},
+			{
+				"id": "burn",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"attack": 6,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -117837,6 +118150,107 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"7269": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1587056400000",
+		"id": "7269",
+		"maxLevel": 6,
+		"name": "Wyrmdance Tail",
+		"picture": "Dragon_Dancer_Tail_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4,
+				"y": "9"
+			},
+			{
+				"id": "fervor",
+				"x": 4,
+				"y": "9"
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "9"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
 					}
 				]
 			}
@@ -176992,6 +177406,95 @@ var CARDS = {
 			}
 		}
 	},
+	"15268": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1587402000000",
+		"id": "15268",
+		"maxLevel": 6,
+		"name": "Mirrorwing Wyrm",
+		"picture": "Dragon_Mirror_Wing_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "counter",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": []
+			},
+			"3": {
+				"attack": 14,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -199017,6 +199520,99 @@ var CARDS = {
 						"x": 1
 					}
 				]
+			}
+		}
+	},
+	"16268": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1587056400000",
+		"id": "16268",
+		"maxLevel": 6,
+		"name": "Wyrmdance Leaders",
+		"picture": "Dragon_Dancer_Head_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "9"
+			},
+			{
+				"id": "burn",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 28,
+				"skill": []
 			}
 		}
 	},
@@ -221804,6 +222400,108 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 11,
+				"skill": []
+			}
+		}
+	},
+	"17269": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1587056400000",
+		"id": "17269",
+		"maxLevel": 6,
+		"name": "Wyrmdance Followers",
+		"picture": "Dragon_Dancer_Tail_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 5,
+				"y": "9"
+			},
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "9"
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "9"
+					}
+				]
+			},
+			"4": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "9"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "9"
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
 				"skill": []
 			}
 		}
@@ -264854,6 +265552,95 @@ var CARDS = {
 			}
 		}
 	},
+	"25268": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 3,
+		"health": 41,
+		"hidden_until": "1587402000000",
+		"id": "25268",
+		"maxLevel": 6,
+		"name": "Mirrorwing Avenger",
+		"picture": "Dragon_Mirror_Wing_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "counter",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 15,
+				"skill": []
+			},
+			"3": {
+				"health": 42,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 9
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -286713,6 +287500,99 @@ var CARDS = {
 						"all": "1",
 						"id": "strike",
 						"x": 2
+					}
+				]
+			}
+		}
+	},
+	"26268": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1587056400000",
+		"id": "26268",
+		"maxLevel": 6,
+		"name": "Wyrmdance Dragon",
+		"picture": "Dragon_Dancer_Head_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "fervor",
+				"x": 6,
+				"y": "9"
+			},
+			{
+				"id": "burn",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "9"
+					},
+					{
+						"id": "burn",
+						"x": 6
 					}
 				]
 			}
@@ -309652,6 +310532,92 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"27269": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 40,
+		"hidden_until": "1587056400000",
+		"id": "27269",
+		"maxLevel": 6,
+		"name": "Wyrmdance Revelers",
+		"picture": "Dragon_Dancer_Tail_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 9
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 6,
+				"y": "9"
+			},
+			{
+				"id": "fervor",
+				"x": 6,
+				"y": "9"
+			}
+		],
+		"sub_type": [
+			"9"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 41,
+				"skill": []
+			},
+			"3": {
+				"attack": 10,
+				"skill": []
+			},
+			"4": {
+				"health": 42,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "9"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7,
+						"y": "9"
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "9"
 					}
 				]
 			}

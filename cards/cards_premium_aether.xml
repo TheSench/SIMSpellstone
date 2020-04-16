@@ -34322,6 +34322,140 @@
       <skill id="strike" x="4" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5268</id>
+    <card_type>2</card_type>
+    <name>Mirrorwing Dragon</name>
+    <picture>Dragon_Mirror_Wing_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587402000</hidden_until_time>
+    <attack>12</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="backlash" x="2" />
+    <skill id="counter" x="7" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="backlash" x="3" />
+      <skill id="counter" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="backlash" x="3" />
+      <skill id="counter" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="backlash" x="3" />
+      <skill id="counter" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15268</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Mirrorwing Wyrm</name>
+    <picture>Dragon_Mirror_Wing_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587402000</hidden_until_time>
+    <attack>13</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="backlash" x="3" />
+    <skill id="counter" x="8" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="backlash" x="4" />
+      <skill id="counter" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="backlash" x="4" />
+      <skill id="counter" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="backlash" x="4" />
+      <skill id="counter" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25268</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Mirrorwing Avenger</name>
+    <picture>Dragon_Mirror_Wing_B</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587402000</hidden_until_time>
+    <attack>14</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="backlash" x="4" />
+    <skill id="counter" x="9" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="10" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

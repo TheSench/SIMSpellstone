@@ -4551,6 +4551,21 @@ var CAMPAIGNS = {
 		],
 		"name": "A new FOE has appeared!?"
 	},
+	"1247": {
+		"battleground_id": "2092",
+		"id": "1247",
+		"items": {
+			"3110": 0.4
+		},
+		"location_id": "28",
+		"missions": [
+			"6414",
+			"6415",
+			"6416",
+			"6417"
+		],
+		"name": "Empty Titan"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -99524,5 +99539,245 @@ var MISSIONS = {
 		],
 		"id": "6413",
 		"name": "Common Trashing Troupe"
+	},
+	"6414": {
+		"commander": {
+			"id": "446"
+		},
+		"deck": [
+			{
+				"id": "7092"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "7094"
+			},
+			{
+				"id": "7203"
+			},
+			{
+				"id": "6130"
+			},
+			{
+				"id": "6184"
+			},
+			{
+				"id": "6133"
+			},
+			{
+				"id": "7159"
+			},
+			{
+				"id": "6186",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6414",
+		"name": "Living Relic"
+	},
+	"6415": {
+		"commander": {
+			"id": "446"
+		},
+		"deck": [
+			{
+				"id": "7092"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "7094"
+			},
+			{
+				"id": "7203"
+			},
+			{
+				"id": "6130"
+			},
+			{
+				"id": "6184"
+			},
+			{
+				"id": "6133"
+			},
+			{
+				"id": "7159"
+			},
+			{
+				"id": "6186",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6415",
+		"name": "Emperor's Rage"
+	},
+	"6416": {
+		"commander": {
+			"id": "446"
+		},
+		"deck": [
+			{
+				"id": "7092"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "7094"
+			},
+			{
+				"id": "7203"
+			},
+			{
+				"id": "6130"
+			},
+			{
+				"id": "6184"
+			},
+			{
+				"id": "6133"
+			},
+			{
+				"id": "7159"
+			},
+			{
+				"id": "6186",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6416",
+		"name": "Dawnglow Protectors"
+	},
+	"6417": {
+		"commander": {
+			"id": "446"
+		},
+		"deck": [
+			{
+				"id": "7092"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "7094"
+			},
+			{
+				"id": "7203"
+			},
+			{
+				"id": "6130"
+			},
+			{
+				"id": "6184"
+			},
+			{
+				"id": "6133"
+			},
+			{
+				"id": "7159"
+			},
+			{
+				"id": "6186",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6417",
+		"name": "Swamp Escape"
 	}
 };

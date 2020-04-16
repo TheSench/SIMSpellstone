@@ -44655,5 +44655,102 @@
     </speech>
   </mission>
   <!-- End April Fools Missions -->
+  <!-- Event 22 Boss Node -->
+  <mission>
+    <id>6414</id>
+    <name>Living Relic</name>
+    <energy>9</energy>
+    <desc>A giant was built to house a mighty soul, instilled with a dream to fulfill an impossible purpose. Once golden, now tarnished through the passing ages, Viracocha is a living relic of a time now forgotten.</desc>
+    <commander id="446" />
+    <deck>
+      <card id="7092" name="Lord Froggy" />
+      <card id="6100" name="Tiamat" />
+      <card id="6100" />
+      <card id="7094" name="Basilisk" />
+      <card id="7203" name="Tuloom, Spirit Shaman" />
+      <card id="6130" name="Shadowed Wyvern" />
+      <card id="6184" name="Thundering Hellwing" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7159" name="Lucky Frog" />
+      <card id="6186" mastery_level="2" name="Millidrake Regent" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="7217" mastery_level="4" name="Amrita, Drake Healer" />
+      <card id="6130" mastery_level="5" name="Shadowed Wyvern" />
+      <card id="7242" mastery_level="6" name="Littlepond Twins" />
+      <card id="6241" mastery_level="7" name="Grimkite Model" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6415</id>
+    <name>Emperor's Rage</name>
+    <energy>9</energy>
+    <desc>Viracocha lumber towards you with painful slowness. Trees snap beneath his feet. Marshwater splashes and makes a sucking noise he pulls through the mud. Behind him, the Frog Emperor shrieks shrilly.</desc>
+    <commander id="446" />
+    <deck>
+      <card id="7092" name="Lord Froggy" />
+      <card id="6100" name="Tiamat" />
+      <card id="6100" />
+      <card id="7094" name="Basilisk" />
+      <card id="7203" name="Tuloom, Spirit Shaman" />
+      <card id="6130" name="Shadowed Wyvern" />
+      <card id="6184" name="Thundering Hellwing" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7159" name="Lucky Frog" />
+      <card id="6186" mastery_level="2" name="Millidrake Regent" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="7217" mastery_level="4" name="Amrita, Drake Healer" />
+      <card id="6130" mastery_level="5" name="Shadowed Wyvern" />
+      <card id="7242" mastery_level="6" name="Littlepond Twins" />
+      <card id="6241" mastery_level="7" name="Grimkite Model" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6416</id>
+    <name>Dawnglow Protectors</name>
+    <energy>9</energy>
+    <desc>Frogs riding Dragons and feral Insects run past Viracocha, cutting off your escape. They yell battle cries, swarming you and slowing down your escape from Dawnglow Swamp.</desc>
+    <commander id="446" />
+    <deck>
+      <card id="7092" name="Lord Froggy" />
+      <card id="6100" name="Tiamat" />
+      <card id="6100" />
+      <card id="7094" name="Basilisk" />
+      <card id="7203" name="Tuloom, Spirit Shaman" />
+      <card id="6130" name="Shadowed Wyvern" />
+      <card id="6184" name="Thundering Hellwing" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7159" name="Lucky Frog" />
+      <card id="6186" mastery_level="2" name="Millidrake Regent" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="7217" mastery_level="4" name="Amrita, Drake Healer" />
+      <card id="6130" mastery_level="5" name="Shadowed Wyvern" />
+      <card id="7242" mastery_level="6" name="Littlepond Twins" />
+      <card id="6241" mastery_level="7" name="Grimkite Model" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6417</id>
+    <name>Swamp Escape</name>
+    <energy>9</energy>
+    <desc>You and Cedric cut down those who stand in your way. The older Frog is having difficulty in moving fast, huffing loudly as he runs. Viracocha's thunderous footsteps follow you slowly, as you escape from the Emperor's forces.</desc>
+    <commander id="446" />
+    <deck>
+      <card id="7092" name="Lord Froggy" />
+      <card id="6100" name="Tiamat" />
+      <card id="6100" />
+      <card id="7094" name="Basilisk" />
+      <card id="7203" name="Tuloom, Spirit Shaman" />
+      <card id="6130" name="Shadowed Wyvern" />
+      <card id="6184" name="Thundering Hellwing" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7159" name="Lucky Frog" />
+      <card id="6186" mastery_level="2" name="Millidrake Regent" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="7217" mastery_level="4" name="Amrita, Drake Healer" />
+      <card id="6130" mastery_level="5" name="Shadowed Wyvern" />
+      <card id="7242" mastery_level="6" name="Littlepond Twins" />
+      <card id="6241" mastery_level="7" name="Grimkite Model" />
+    </deck>
+  </mission>
 </root>
 

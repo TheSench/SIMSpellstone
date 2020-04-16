@@ -33930,5 +33930,139 @@
       <skill id="strike" x="2" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6268</id>
+    <card_type>2</card_type>
+    <name>Wyrmdance Head</name>
+    <picture>Dragon_Dancer_Head_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587056400</hidden_until_time>
+    <attack>5</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="fervor" x="4" y="9" />
+    <skill id="burn" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="4" />
+      <skill id="fervor" x="4" y="9" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="4" />
+      <skill id="fervor" x="5" y="9" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="4" />
+      <skill id="fervor" x="5" y="9" />
+      <skill id="burn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16268</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wyrmdance Leaders</name>
+    <picture>Dragon_Dancer_Head_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587056400</hidden_until_time>
+    <attack>6</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="fervor" x="5" y="9" />
+    <skill id="burn" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="5" />
+      <skill id="fervor" x="5" y="9" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="5" />
+      <skill id="fervor" x="6" y="9" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="5" />
+      <skill id="fervor" x="6" y="9" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>28</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26268</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wyrmdance Dragon</name>
+    <picture>Dragon_Dancer_Head_B</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587056400</hidden_until_time>
+    <attack>7</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="fervor" x="6" y="9" />
+    <skill id="burn" x="5" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="6" />
+      <skill id="fervor" x="7" y="9" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="6" />
+      <skill id="fervor" x="7" y="9" />
+      <skill id="burn" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="7" />
+      <skill id="fervor" x="7" y="9" />
+      <skill id="burn" x="6" />
+    </upgrade>
+  </unit>
 </root>
 
