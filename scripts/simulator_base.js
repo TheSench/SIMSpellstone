@@ -3035,8 +3035,8 @@ var SIMULATOR = {};
 				}
 			}
 		}
-		healthStats.player.percent = stats.taken / stats.total;
-		healthStats.cpu.percent = stats.taken / stats.total;
+		healthStats.player.percent = healthStats.player.taken / healthStats.player.total;
+		healthStats.cpu.percent = healthStats.cpu.taken / healthStats.cpu.total;
 
 		var commander_o = field.cpu.commander;
 		if (getdeck2) {
