@@ -95823,6 +95823,190 @@ var CARDS = {
 			}
 		}
 	},
+	"6269": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1587661200000",
+		"id": "6269",
+		"maxLevel": 6,
+		"name": "Drogoblin Warrior",
+		"picture": "Dragon_Goblin_Half_Dragon_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"9",
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 38,
+				"skill": []
+			},
+			"3": {
+				"attack": 9,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"6270": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 14,
+		"hidden_until": "1588006800000",
+		"id": "6270",
+		"maxLevel": 6,
+		"name": "Malbrand Tattoo",
+		"picture": "Dragon_Angel_Cursed_Tattoo_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "enrage",
+				"x": 3,
+				"y": "6"
+			},
+			{
+				"id": "poison",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"6",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 15,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "enrage",
+						"x": 4,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "enrage",
+						"x": 4,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "enrage",
+						"x": 4,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -199616,6 +199800,190 @@ var CARDS = {
 			}
 		}
 	},
+	"16269": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1587661200000",
+		"id": "16269",
+		"maxLevel": 6,
+		"name": "Drogoblin Barbarian",
+		"picture": "Dragon_Goblin_Half_Dragon_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "burn",
+				"x": 4
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"9",
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": []
+			},
+			"3": {
+				"attack": 10,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"16270": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1588006800000",
+		"id": "16270",
+		"maxLevel": 6,
+		"name": "Malbrand Whisperer",
+		"picture": "Dragon_Angel_Cursed_Tattoo_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"id": "enrage",
+				"x": 4,
+				"y": "6"
+			},
+			{
+				"id": "poison",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"6",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "enrage",
+						"x": 5,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "enrage",
+						"x": 5,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "enrage",
+						"x": 5,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -287592,6 +287960,190 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"26269": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 41,
+		"hidden_until": "1587661200000",
+		"id": "26269",
+		"maxLevel": 6,
+		"name": "Drogoblin Berserker",
+		"picture": "Dragon_Goblin_Half_Dragon_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "burn",
+				"x": 5
+			},
+			{
+				"id": "berserk",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"9",
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 42,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"26270": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"hidden_until": "1588006800000",
+		"id": "26270",
+		"maxLevel": 6,
+		"name": "Malbrand Ruiner",
+		"picture": "Dragon_Angel_Cursed_Tattoo_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"id": "enrage",
+				"x": 5,
+				"y": "6"
+			},
+			{
+				"id": "poison",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6",
+			"9"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 18,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "enrage",
+						"x": 6,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "enrage",
+						"x": 6,
+						"y": "6"
+					},
+					{
+						"id": "poison",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "enrage",
+						"x": 6,
+						"y": "6"
+					},
+					{
+						"id": "poison",
 						"x": 6
 					}
 				]

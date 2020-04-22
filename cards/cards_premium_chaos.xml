@@ -34064,5 +34064,279 @@
       <skill id="burn" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6269</id>
+    <card_type>2</card_type>
+    <name>Drogoblin Warrior</name>
+    <picture>Dragon_Goblin_Half_Dragon_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587661200</hidden_until_time>
+    <attack>8</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="2" />
+    <skill id="burn" x="3" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16269</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Drogoblin Barbarian</name>
+    <picture>Dragon_Goblin_Half_Dragon_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587661200</hidden_until_time>
+    <attack>9</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="burn" x="4" />
+    <skill id="berserk" x="5" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="4" />
+      <skill id="burn" x="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="4" />
+      <skill id="burn" x="5" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="4" />
+      <skill id="burn" x="5" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26269</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Drogoblin Berserker</name>
+    <picture>Dragon_Goblin_Half_Dragon_B</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1587661200</hidden_until_time>
+    <attack>10</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="burn" x="5" />
+    <skill id="berserk" x="6" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="5" />
+      <skill id="burn" x="5" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="5" />
+      <skill id="burn" x="6" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="5" />
+      <skill id="burn" x="6" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6270</id>
+    <card_type>2</card_type>
+    <name>Malbrand Tattoo</name>
+    <picture>Dragon_Angel_Cursed_Tattoo_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1588006800</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="enrage" x="3" y="6" />
+    <skill id="poison" x="3" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="6" />
+      <skill id="enrage" x="4" y="6" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="6" />
+      <skill id="enrage" x="4" y="6" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enrage" x="4" y="6" />
+      <skill id="poison" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16270</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Malbrand Whisperer</name>
+    <picture>Dragon_Angel_Cursed_Tattoo_A</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1588006800</hidden_until_time>
+    <attack>7</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="enrage" x="4" y="6" />
+    <skill id="poison" x="4" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enrage" x="5" y="6" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="7" />
+      <skill id="enrage" x="5" y="6" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="8" />
+      <skill id="enrage" x="5" y="6" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26270</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Malbrand Ruiner</name>
+    <picture>Dragon_Angel_Cursed_Tattoo_B</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1588006800</hidden_until_time>
+    <attack>8</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="8" />
+    <skill id="enrage" x="5" y="6" />
+    <skill id="poison" x="5" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="8" />
+      <skill id="enrage" x="6" y="6" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="8" />
+      <skill id="enrage" x="6" y="6" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="9" />
+      <skill id="enrage" x="6" y="6" />
+      <skill id="poison" x="6" />
+    </upgrade>
+  </unit>
 </root>
 
