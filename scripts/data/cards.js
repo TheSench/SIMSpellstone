@@ -27153,7 +27153,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 1,
 		"desc": "\"He's not the frog we deserve, but he is the frog we need.\" - Samael, Leader of Aether",
-		"health": 6,
+		"health": 8,
 		"id": "1028",
 		"maxLevel": 5,
 		"name": "Heroic Frog",
@@ -27172,7 +27172,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 7,
+				"health": 9,
 				"skill": []
 			},
 			"3": {
@@ -27184,7 +27184,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 8,
+				"health": 10,
 				"skill": [
 					{
 						"id": "rally",
@@ -27197,7 +27197,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 9,
+				"health": 11,
 				"skill": [
 					{
 						"id": "rally",
@@ -34861,10 +34861,10 @@ var CARDS = {
 		}
 	},
 	"2034": {
-		"attack": 4,
+		"attack": 5,
 		"card_type": "2",
 		"cost": 3,
-		"health": 15,
+		"health": 20,
 		"id": "2034",
 		"maxLevel": 5,
 		"name": "Leap Frog Duo",
@@ -34889,19 +34889,19 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 16,
+				"health": 25,
 				"skill": []
 			},
 			"3": {
-				"attack": 5,
+				"attack": 6,
 				"skill": []
 			},
 			"4": {
-				"health": 18,
+				"health": 28,
 				"skill": []
 			},
 			"5": {
-				"health": 19,
+				"health": 29,
 				"skill": [
 					{
 						"id": "rally",
@@ -37461,10 +37461,10 @@ var CARDS = {
 		}
 	},
 	"2070": {
-		"attack": 3,
+		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 5,
+		"health": 6,
 		"hidden_until": "1481821200000",
 		"id": "2070",
 		"maxLevel": 5,
@@ -37489,16 +37489,16 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 6,
-				"skill": []
-			},
-			"3": {
-				"attack": 4,
 				"health": 7,
 				"skill": []
 			},
-			"4": {
+			"3": {
+				"attack": 5,
 				"health": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 9,
 				"skill": [
 					{
 						"id": "burn",
@@ -37511,7 +37511,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 9,
+				"health": 10,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -37558,7 +37558,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"4"
+			"4",
+			"5"
 		],
 		"type": "1",
 		"upgrades": {
@@ -37571,7 +37572,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 1
+						"x": 2
 					},
 					{
 						"all": "1",
@@ -37594,7 +37595,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 2
+						"x": 3
 					},
 					{
 						"all": "1",
@@ -37613,7 +37614,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 2
+						"x": 3
 					},
 					{
 						"all": "1",
@@ -40294,7 +40295,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 1
+						"x": 2
 					},
 					{
 						"id": "valor",
@@ -40314,11 +40315,11 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "valor",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "strike",
@@ -45829,6 +45830,155 @@ var CARDS = {
 			"5": {
 				"health": 23,
 				"skill": []
+			}
+		}
+	},
+	"2183": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1588266000000",
+		"id": "2183",
+		"maxLevel": 5,
+		"name": "Storm Disciple",
+		"picture": "Frog_Zap_Mage_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 3
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "strike",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 24,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"2184": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 3,
+		"health": 32,
+		"hidden_until": "1588266000000",
+		"id": "2184",
+		"maxLevel": 5,
+		"name": "Frohemot Monster",
+		"picture": "Frog_Croco_Bull_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 2
+			},
+			{
+				"id": "rally",
+				"x": 6,
+				"y": "4"
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 33,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 2
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "4"
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "4"
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
 			}
 		}
 	},
@@ -51756,6 +51906,180 @@ var CARDS = {
 			}
 		}
 	},
+	"4032": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 17,
+		"id": "4032",
+		"maxLevel": 10,
+		"name": "Froggit, the Puppeteer",
+		"picture": "Frog_Puppeteer_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "enfeeble",
+				"x": 4
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"id": "leech",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"health": 19,
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 7
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"health": 22,
+				"skill": []
+			},
+			"7": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"id": "leech",
+						"x": 9
+					}
+				]
+			},
+			"8": {
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"id": "leech",
+						"x": 10
+					}
+				]
+			},
+			"9": {
+				"attack": 9,
+				"health": 24,
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 8
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 10
+					}
+				]
+			},
+			"10": {
+				"skill": [
+					{
+						"id": "enfeeble",
+						"x": 9
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"id": "leech",
+						"x": 11
+					}
+				]
+			}
+		}
+	},
 	"5000": {
 		"attack": 5,
 		"card_type": "2",
@@ -55717,7 +56041,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 10,
+		"health": 15,
 		"id": "5051",
 		"maxLevel": 6,
 		"name": "Amphibious Digger",
@@ -55745,15 +56069,15 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 11,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
-				"health": 12,
+				"health": 19,
 				"skill": []
 			},
 			"4": {
-				"health": 13,
+				"health": 20,
 				"skill": [
 					{
 						"id": "rally",
@@ -59520,11 +59844,11 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "strike",
-				"x": 1
+				"x": 3
 			},
 			{
 				"id": "strike",
-				"x": 1
+				"x": 3
 			}
 		],
 		"sub_type": [
@@ -59541,15 +59865,15 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "strike",
-						"x": 1
+						"x": 3
 					},
 					{
 						"id": "strike",
-						"x": 1
+						"x": 3
 					},
 					{
 						"id": "strike",
-						"x": 1
+						"x": 3
 					}
 				]
 			},
@@ -59562,15 +59886,15 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					},
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					},
 					{
 						"id": "strike",
-						"x": 1
+						"x": 3
 					}
 				]
 			}
@@ -59817,7 +60141,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 3,
-		"health": 14,
+		"health": 24,
 		"hidden_until": "1481821200000",
 		"id": "5103",
 		"maxLevel": 6,
@@ -59848,11 +60172,11 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 15,
+				"health": 25,
 				"skill": []
 			},
 			"3": {
-				"health": 16,
+				"health": 26,
 				"skill": [
 					{
 						"id": "counter",
@@ -59872,7 +60196,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 17,
+				"health": 27,
 				"skill": [
 					{
 						"id": "counter",
@@ -59892,11 +60216,11 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 18,
+				"health": 28,
 				"skill": []
 			},
 			"6": {
-				"health": 19,
+				"health": 29,
 				"skill": [
 					{
 						"id": "counter",
@@ -64046,7 +64370,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 2,
-		"health": 15,
+		"health": 19,
 		"hidden_until": "1507827600000",
 		"id": "5158",
 		"maxLevel": 5,
@@ -64076,11 +64400,11 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 16,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 17,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
@@ -64101,7 +64425,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 18,
+				"health": 22,
 				"skill": []
 			}
 		}
@@ -67493,7 +67817,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 18,
+		"health": 20,
 		"hidden_until": "1532624400000",
 		"id": "5202",
 		"maxLevel": 6,
@@ -67521,7 +67845,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 19,
+				"health": 21,
 				"skill": []
 			},
 			"3": {
@@ -67541,7 +67865,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 20,
+				"health": 22,
 				"skill": []
 			},
 			"5": {
@@ -67549,7 +67873,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 21,
+				"health": 23,
 				"skill": [
 					{
 						"id": "absorb",
@@ -73120,6 +73444,175 @@ var CARDS = {
 			}
 		}
 	},
+	"5269": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 12,
+		"hidden_until": "1588266000000",
+		"id": "5269",
+		"maxLevel": 6,
+		"name": "Jolty Jouster",
+		"picture": "Frog_Psychic_Fighter_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 4
+			},
+			{
+				"id": "protect",
+				"x": 4,
+				"y": "1"
+			},
+			{
+				"c": 6,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 4
+					},
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 13,
+				"skill": []
+			},
+			"4": {
+				"health": 14,
+				"skill": []
+			},
+			"5": {
+				"health": 15,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 5
+					},
+					{
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"5270": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1588611600000",
+		"id": "5270",
+		"maxLevel": 6,
+		"name": "Exalted Crusader",
+		"picture": "Frog_Praying_Knight_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "armored",
+				"x": 2
+			},
+			{
+				"id": "daze",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 25,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"attack": 9,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 2
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -76754,7 +77247,7 @@ var CARDS = {
 		"attack": 3,
 		"card_type": "2",
 		"cost": 3,
-		"health": 12,
+		"health": 30,
 		"hidden_until": "1445529600000",
 		"id": "6018",
 		"maxLevel": 6,
@@ -76784,7 +77277,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"health": 31,
 				"skill": []
 			},
 			"3": {
@@ -76806,7 +77299,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 16,
+				"health": 32,
 				"skill": []
 			},
 			"5": {
@@ -76924,7 +77417,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 9,
+		"health": 20,
 		"hidden_until": "1445529600000",
 		"id": "6020",
 		"maxLevel": 5,
@@ -76968,7 +77461,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 10,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
@@ -76983,7 +77476,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 2
+						"x": 3
 					}
 				]
 			},
@@ -79251,7 +79744,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 1,
 		"desc": "\"In the shade or in the glade, there is always a blade.\" - Treeblade Saying",
-		"health": 7,
+		"health": 9,
 		"id": "6051",
 		"maxLevel": 5,
 		"name": "Treeblade Thief",
@@ -79286,11 +79779,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 8,
+				"health": 10,
 				"skill": []
 			},
 			"4": {
-				"health": 9,
+				"health": 11,
 				"skill": [
 					{
 						"id": "pierce",
@@ -79312,7 +79805,7 @@ var CARDS = {
 		"attack": 3,
 		"card_type": "2",
 		"cost": 1,
-		"health": 8,
+		"health": 11,
 		"id": "6052",
 		"maxLevel": 6,
 		"name": "Fuming Beast",
@@ -79331,7 +79824,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 9,
+				"health": 12,
 				"skill": []
 			},
 			"3": {
@@ -79351,7 +79844,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
-				"health": 10,
+				"health": 13,
 				"skill": []
 			},
 			"6": {
@@ -82998,7 +83491,7 @@ var CARDS = {
 		"attack": 9,
 		"card_type": "2",
 		"cost": 4,
-		"health": 36,
+		"health": 40,
 		"hidden_until": "1483030800000",
 		"id": "6101",
 		"maxLevel": 6,
@@ -83027,11 +83520,11 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 10,
-				"health": 37,
+				"health": 41,
 				"skill": []
 			},
 			"3": {
-				"health": 38,
+				"health": 42,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -83048,7 +83541,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 40,
+				"health": 43,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -83066,11 +83559,11 @@ var CARDS = {
 			},
 			"5": {
 				"attack": 11,
-				"health": 41,
+				"health": 44,
 				"skill": []
 			},
 			"6": {
-				"health": 42,
+				"health": 45,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -83170,7 +83663,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 1,
 		"desc": "\"Mushi no ken wo kurae!\"",
-		"health": 11,
+		"health": 13,
 		"hidden_until": "1481821200000",
 		"id": "6103",
 		"maxLevel": 6,
@@ -83206,7 +83699,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 12,
+				"health": 14,
 				"skill": []
 			},
 			"4": {
@@ -83226,7 +83719,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 13,
+				"health": 15,
 				"skill": []
 			}
 		}
@@ -83299,7 +83792,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"desc": "\"You don't want to bug the frogs in the wastes. Trust me. They take their rocks very seriously.\" - Ol' Cedric",
-		"health": 16,
+		"health": 18,
 		"hidden_until": "1483376400000",
 		"id": "6105",
 		"maxLevel": 6,
@@ -83324,15 +83817,15 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 19,
 				"skill": []
 			},
 			"3": {
-				"health": 18,
+				"health": 20,
 				"skill": []
 			},
 			"4": {
-				"health": 19,
+				"health": 21,
 				"skill": []
 			},
 			"5": {
@@ -85358,7 +85851,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 2,
 		"desc": "Legends told of an ancient frog that could speak the tongue of dragons.",
-		"health": 16,
+		"health": 19,
 		"hidden_until": "1495818000000",
 		"id": "6133",
 		"maxLevel": 6,
@@ -85384,11 +85877,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 18,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
@@ -85396,11 +85889,11 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
-				"health": 19,
+				"health": 22,
 				"skill": []
 			},
 			"6": {
-				"health": 20,
+				"health": 23,
 				"skill": []
 			}
 		}
@@ -87843,7 +88336,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 17,
+		"health": 18,
 		"hidden_until": "1512406800000",
 		"id": "6169",
 		"maxLevel": 6,
@@ -87873,11 +88366,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 18,
+				"health": 19,
 				"skill": []
 			},
 			"3": {
-				"health": 19,
+				"health": 20,
 				"skill": []
 			},
 			"4": {
@@ -87916,7 +88409,7 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 6,
-				"health": 20,
+				"health": 21,
 				"skill": []
 			}
 		}
@@ -90023,10 +90516,10 @@ var CARDS = {
 		}
 	},
 	"6199": {
-		"attack": 5,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 3,
-		"health": 28,
+		"health": 30,
 		"hidden_until": "1533834000000",
 		"id": "6199",
 		"maxLevel": 6,
@@ -90070,11 +90563,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 29,
+				"health": 31,
 				"skill": []
 			},
 			"4": {
-				"health": 30,
+				"health": 32,
 				"skill": [
 					{
 						"id": "regenerate",
@@ -90107,7 +90600,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 6,
+				"attack": 8,
 				"skill": []
 			}
 		}
@@ -98266,7 +98759,7 @@ var CARDS = {
 		"attack": 2,
 		"card_type": "2",
 		"cost": 1,
-		"health": 9,
+		"health": 13,
 		"id": "7016",
 		"maxLevel": 5,
 		"name": "Webfist Shaman",
@@ -98295,12 +98788,12 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 10,
+				"health": 14,
 				"skill": []
 			},
 			"3": {
 				"attack": 3,
-				"health": 11,
+				"health": 15,
 				"skill": []
 			},
 			"4": {
@@ -98555,10 +99048,10 @@ var CARDS = {
 		}
 	},
 	"7020": {
-		"attack": 4,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 3,
-		"health": 11,
+		"health": 24,
 		"hidden_until": "1445529600000",
 		"id": "7020",
 		"maxLevel": 5,
@@ -98588,7 +99081,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 13,
+				"health": 25,
 				"skill": []
 			},
 			"3": {
@@ -98628,7 +99121,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 5,
+				"attack": 7,
 				"skill": [
 					{
 						"all": "1",
@@ -101083,7 +101576,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 3,
 		"desc": "Originally classified by its distinctive swollen tongue, it was soon discovered the the swollen tongue was actually a result of its diet.",
-		"health": 16,
+		"health": 26,
 		"id": "7053",
 		"maxLevel": 5,
 		"name": "Bee Eater",
@@ -101106,11 +101599,11 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 18,
+				"health": 28,
 				"skill": []
 			},
 			"3": {
-				"health": 19,
+				"health": 29,
 				"skill": [
 					{
 						"id": "enfeeble",
@@ -101127,7 +101620,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
-				"health": 20,
+				"health": 30,
 				"skill": [
 					{
 						"all": "1",
@@ -104455,7 +104948,7 @@ var CARDS = {
 		}
 	},
 	"7097": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 3,
 		"health": 22,
@@ -104496,7 +104989,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"attack": 7,
+				"attack": 8,
 				"skill": []
 			},
 			"5": {
@@ -108997,7 +109490,7 @@ var CARDS = {
 		"card_type": "2",
 		"cost": 0,
 		"desc": "Float like a butterfly, eat all the bees.",
-		"health": 7,
+		"health": 8,
 		"hidden_until": "1507222800000",
 		"id": "7157",
 		"maxLevel": 5,
@@ -109018,7 +109511,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 8,
+				"health": 9,
 				"skill": []
 			},
 			"3": {
@@ -109035,11 +109528,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 9,
+				"health": 10,
 				"skill": []
 			},
 			"5": {
-				"health": 10,
+				"health": 11,
 				"skill": []
 			}
 		}
@@ -109613,7 +110106,7 @@ var CARDS = {
 		"attack": 8,
 		"card_type": "2",
 		"cost": 4,
-		"health": 41,
+		"health": 46,
 		"hidden_until": "1509382800000",
 		"id": "7165",
 		"maxLevel": 6,
@@ -109643,20 +110136,20 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 42,
+				"health": 47,
 				"skill": []
 			},
 			"3": {
 				"attack": 9,
-				"health": 43,
+				"health": 48,
 				"skill": []
 			},
 			"4": {
-				"health": 44,
+				"health": 49,
 				"skill": []
 			},
 			"5": {
-				"health": 45,
+				"health": 50,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -112750,10 +113243,10 @@ var CARDS = {
 		}
 	},
 	"7202": {
-		"attack": 7,
+		"attack": 12,
 		"card_type": "2",
 		"cost": 4,
-		"health": 38,
+		"health": 42,
 		"hidden_until": "1532624400000",
 		"id": "7202",
 		"maxLevel": 6,
@@ -112781,11 +113274,11 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 39,
+				"health": 43,
 				"skill": []
 			},
 			"3": {
-				"health": 40,
+				"health": 44,
 				"skill": [
 					{
 						"id": "regenerate",
@@ -112802,7 +113295,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 41,
+				"health": 45,
 				"skill": []
 			},
 			"5": {
@@ -112822,8 +113315,8 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 8,
-				"health": 42,
+				"attack": 13,
+				"health": 46,
 				"skill": []
 			}
 		}
@@ -137081,7 +137574,7 @@ var CARDS = {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
-		"health": 10,
+		"health": 12,
 		"id": "11028",
 		"maxLevel": 5,
 		"name": "Lilypad Leaper",
@@ -137104,7 +137597,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 11,
+				"health": 13,
 				"skill": []
 			},
 			"3": {
@@ -137112,7 +137605,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 12,
+				"health": 14,
 				"skill": []
 			},
 			"5": {
@@ -139063,7 +139556,7 @@ var CARDS = {
 			},
 			{
 				"id": "poison",
-				"x": 3
+				"x": 4
 			}
 		],
 		"sub_type": [
@@ -139085,7 +139578,7 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
-						"x": 4
+						"x": 5
 					}
 				]
 			},
@@ -139102,7 +139595,7 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
-						"x": 5
+						"x": 6
 					}
 				]
 			},
@@ -144420,10 +144913,10 @@ var CARDS = {
 		}
 	},
 	"12034": {
-		"attack": 5,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 3,
-		"health": 25,
+		"health": 30,
 		"id": "12034",
 		"maxLevel": 5,
 		"name": "High Jump Duo",
@@ -144452,7 +144945,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 26,
+				"health": 31,
 				"skill": [
 					{
 						"id": "rally",
@@ -144471,11 +144964,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 28,
+				"health": 32,
 				"skill": []
 			},
 			"4": {
-				"health": 29,
+				"health": 33,
 				"skill": [
 					{
 						"id": "rally",
@@ -144494,8 +144987,8 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 6,
-				"health": 30,
+				"attack": 8,
+				"health": 34,
 				"skill": []
 			}
 		}
@@ -146842,10 +147335,10 @@ var CARDS = {
 		}
 	},
 	"12070": {
-		"attack": 4,
+		"attack": 5,
 		"card_type": "2",
 		"cost": 1,
-		"health": 10,
+		"health": 11,
 		"hidden_until": "1481821200000",
 		"id": "12070",
 		"maxLevel": 5,
@@ -146874,8 +147367,8 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"attack": 5,
-				"health": 11,
+				"attack": 6,
+				"health": 12,
 				"skill": []
 			},
 			"3": {
@@ -146895,8 +147388,8 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 6,
-				"health": 12,
+				"attack": 7,
+				"health": 13,
 				"skill": []
 			},
 			"5": {
@@ -146932,7 +147425,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "valor",
-				"x": 2
+				"x": 3
 			},
 			{
 				"all": "1",
@@ -146946,7 +147439,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"4"
+			"4",
+			"5"
 		],
 		"type": "1",
 		"upgrades": {
@@ -146955,7 +147449,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 2
+						"x": 3
 					},
 					{
 						"all": "1",
@@ -146983,7 +147477,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 2
+						"x": 3
 					},
 					{
 						"all": "1",
@@ -147001,7 +147495,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 3
+						"x": 4
 					},
 					{
 						"all": "1",
@@ -149395,11 +149889,11 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "armored",
-				"x": 2
+				"x": 3
 			},
 			{
 				"id": "valor",
-				"x": 2
+				"x": 3
 			},
 			{
 				"id": "strike",
@@ -149421,11 +149915,11 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "valor",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "strike",
@@ -149437,11 +149931,11 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "valor",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "strike",
@@ -149453,11 +149947,11 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "valor",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "strike",
@@ -155446,6 +155940,180 @@ var CARDS = {
 			}
 		}
 	},
+	"12183": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1588266000000",
+		"id": "12183",
+		"maxLevel": 5,
+		"name": "Lightning Disciple",
+		"picture": "Frog_Zap_Mage_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "strike",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "strike",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			}
+		}
+	},
+	"12184": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 3,
+		"health": 34,
+		"hidden_until": "1588266000000",
+		"id": "12184",
+		"maxLevel": 5,
+		"name": "Frohemot Giant",
+		"picture": "Frog_Croco_Bull_A",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "rally",
+				"x": 7,
+				"y": "4"
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "4"
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "4"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "4"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"15000": {
 		"attack": 6,
 		"card_type": "2",
@@ -159195,7 +159863,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 15,
+		"health": 21,
 		"id": "15051",
 		"maxLevel": 6,
 		"name": "Amphibious Explorer",
@@ -159223,7 +159891,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 22,
 				"skill": []
 			},
 			"3": {
@@ -162997,15 +163665,15 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "strike",
-				"x": 2
+				"x": 4
 			},
 			{
 				"id": "strike",
-				"x": 2
+				"x": 4
 			},
 			{
 				"id": "strike",
-				"x": 1
+				"x": 3
 			}
 		],
 		"sub_type": [
@@ -163018,15 +163686,15 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					},
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					},
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					}
 				]
 			},
@@ -163039,15 +163707,15 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "strike",
-						"x": 3
+						"x": 5
 					},
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					},
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					}
 				]
 			},
@@ -163055,15 +163723,15 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "strike",
-						"x": 3
+						"x": 5
 					},
 					{
 						"id": "strike",
-						"x": 3
+						"x": 5
 					},
 					{
 						"id": "strike",
-						"x": 2
+						"x": 4
 					}
 				]
 			}
@@ -163310,7 +163978,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 3,
-		"health": 25,
+		"health": 30,
 		"hidden_until": "1481821200000",
 		"id": "15103",
 		"maxLevel": 6,
@@ -163341,11 +164009,11 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 26,
+				"health": 31,
 				"skill": []
 			},
 			"3": {
-				"health": 27,
+				"health": 32,
 				"skill": [
 					{
 						"id": "counter",
@@ -163365,7 +164033,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 28,
+				"health": 33,
 				"skill": [
 					{
 						"id": "counter",
@@ -163385,7 +164053,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 29,
+				"health": 34,
 				"skill": [
 					{
 						"id": "counter",
@@ -163405,7 +164073,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 30,
+				"health": 35,
 				"skill": []
 			}
 		}
@@ -167974,7 +168642,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 23,
 		"hidden_until": "1507827600000",
 		"id": "15158",
 		"maxLevel": 5,
@@ -168038,11 +168706,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 20,
+				"health": 24,
 				"skill": []
 			},
 			"5": {
-				"health": 21,
+				"health": 25,
 				"skill": []
 			}
 		}
@@ -171654,7 +172322,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 21,
+		"health": 24,
 		"hidden_until": "1532624400000",
 		"id": "15202",
 		"maxLevel": 6,
@@ -171682,7 +172350,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 22,
+				"health": 25,
 				"skill": []
 			},
 			"3": {
@@ -171702,7 +172370,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 23,
+				"health": 26,
 				"skill": [
 					{
 						"id": "absorb",
@@ -177679,6 +178347,162 @@ var CARDS = {
 			}
 		}
 	},
+	"15269": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 1,
+		"health": 15,
+		"hidden_until": "1588266000000",
+		"id": "15269",
+		"maxLevel": 6,
+		"name": "Phantom Jouster",
+		"picture": "Frog_Psychic_Fighter_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"id": "protect",
+				"x": 5,
+				"y": "1"
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 16,
+				"skill": []
+			},
+			"3": {
+				"attack": 3,
+				"skill": []
+			},
+			"4": {
+				"health": 17,
+				"skill": []
+			},
+			"5": {
+				"health": 18,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"id": "protect",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"15270": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1588611600000",
+		"id": "15270",
+		"maxLevel": 6,
+		"name": "Exalted Knight",
+		"picture": "Frog_Praying_Knight_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"id": "daze",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"attack": 10,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -178988,10 +179812,10 @@ var CARDS = {
 		}
 	},
 	"16018": {
-		"attack": 4,
+		"attack": 5,
 		"card_type": "2",
 		"cost": 3,
-		"health": 17,
+		"health": 33,
 		"hidden_until": "1445529600000",
 		"id": "16018",
 		"maxLevel": 6,
@@ -179021,7 +179845,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 18,
+				"health": 34,
 				"skill": []
 			},
 			"3": {
@@ -179043,11 +179867,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 20,
+				"health": 35,
 				"skill": []
 			},
 			"5": {
-				"attack": 5,
+				"attack": 6,
 				"skill": []
 			},
 			"6": {
@@ -179161,7 +179985,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 11,
+		"health": 22,
 		"hidden_until": "1445529600000",
 		"id": "16020",
 		"maxLevel": 5,
@@ -179180,7 +180004,7 @@ var CARDS = {
 			},
 			{
 				"id": "pierce",
-				"x": 2
+				"x": 4
 			}
 		],
 		"sub_type": [
@@ -179189,7 +180013,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 12,
+				"health": 23,
 				"skill": []
 			},
 			"3": {
@@ -179204,7 +180028,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 3
+						"x": 5
 					}
 				]
 			},
@@ -179213,7 +180037,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
-				"health": 16,
+				"health": 24,
 				"skill": [
 					{
 						"id": "counter",
@@ -179225,7 +180049,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 4
+						"x": 6
 					}
 				]
 			}
@@ -181571,10 +182395,10 @@ var CARDS = {
 		}
 	},
 	"16051": {
-		"attack": 5,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 1,
-		"health": 9,
+		"health": 12,
 		"id": "16051",
 		"maxLevel": 5,
 		"name": "Treeblade Rogue",
@@ -181617,7 +182441,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 10,
+				"health": 13,
 				"skill": []
 			},
 			"4": {
@@ -181637,8 +182461,8 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 6,
-				"health": 11,
+				"attack": 7,
+				"health": 14,
 				"skill": []
 			}
 		}
@@ -181647,7 +182471,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 13,
+		"health": 14,
 		"id": "16052",
 		"maxLevel": 6,
 		"name": "Fuming Ghoul",
@@ -181670,14 +182494,14 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"health": 15,
 				"skill": []
 			},
 			"3": {
 				"skill": [
 					{
 						"id": "burn",
-						"x": 1
+						"x": 2
 					},
 					{
 						"id": "poison",
@@ -181686,7 +182510,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 15,
+				"health": 16,
 				"skill": []
 			},
 			"5": {
@@ -181701,7 +182525,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "poison",
@@ -185500,7 +186324,7 @@ var CARDS = {
 		"attack": 12,
 		"card_type": "2",
 		"cost": 4,
-		"health": 44,
+		"health": 46,
 		"hidden_until": "1483030800000",
 		"id": "16101",
 		"maxLevel": 6,
@@ -185528,7 +186352,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 45,
+				"health": 47,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -185546,11 +186370,11 @@ var CARDS = {
 			},
 			"3": {
 				"attack": 13,
-				"health": 46,
+				"health": 48,
 				"skill": []
 			},
 			"4": {
-				"health": 47,
+				"health": 49,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -185571,7 +186395,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 48,
+				"health": 50,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -185668,10 +186492,10 @@ var CARDS = {
 		}
 	},
 	"16103": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 1,
-		"health": 13,
+		"health": 16,
 		"hidden_until": "1481821200000",
 		"id": "16103",
 		"maxLevel": 6,
@@ -185699,7 +186523,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"health": 17,
 				"skill": []
 			},
 			"3": {
@@ -185735,11 +186559,11 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 7,
+				"attack": 8,
 				"skill": []
 			},
 			"6": {
-				"health": 15,
+				"health": 18,
 				"skill": []
 			}
 		}
@@ -185824,7 +186648,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 22,
 		"hidden_until": "1483376400000",
 		"id": "16105",
 		"maxLevel": 6,
@@ -185853,7 +186677,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 20,
+				"health": 23,
 				"skill": []
 			},
 			"3": {
@@ -185874,7 +186698,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 21,
+				"health": 24,
 				"skill": [
 					{
 						"id": "fervor",
@@ -185909,7 +186733,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 22,
+				"health": 25,
 				"skill": [
 					{
 						"id": "fervor",
@@ -188098,7 +188922,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 2,
-		"health": 21,
+		"health": 24,
 		"hidden_until": "1495818000000",
 		"id": "16133",
 		"maxLevel": 6,
@@ -188165,7 +188989,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 22,
+				"health": 25,
 				"skill": []
 			},
 			"5": {
@@ -188173,7 +188997,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 23,
+				"health": 26,
 				"skill": []
 			}
 		}
@@ -191084,7 +191908,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 21,
+		"health": 22,
 		"hidden_until": "1512406800000",
 		"id": "16169",
 		"maxLevel": 6,
@@ -191148,7 +191972,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 22,
+				"health": 23,
 				"skill": [
 					{
 						"id": "evade",
@@ -191166,7 +191990,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 23,
+				"health": 24,
 				"skill": []
 			},
 			"6": {
@@ -191182,7 +192006,7 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
-						"x": 5
+						"x": 6
 					}
 				]
 			}
@@ -193607,10 +194431,10 @@ var CARDS = {
 		}
 	},
 	"16199": {
-		"attack": 6,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 3,
-		"health": 31,
+		"health": 33,
 		"hidden_until": "1533834000000",
 		"id": "16199",
 		"maxLevel": 6,
@@ -193638,11 +194462,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 32,
+				"health": 34,
 				"skill": []
 			},
 			"3": {
-				"health": 33,
+				"health": 35,
 				"skill": []
 			},
 			"4": {
@@ -193662,11 +194486,11 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 34,
+				"health": 36,
 				"skill": []
 			},
 			"6": {
-				"attack": 7,
+				"attack": 10,
 				"skill": []
 			}
 		}
@@ -194478,7 +195302,7 @@ var CARDS = {
 		}
 	},
 	"16209": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 1,
 		"health": 16,
@@ -201175,10 +201999,10 @@ var CARDS = {
 		}
 	},
 	"17016": {
-		"attack": 3,
+		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 13,
+		"health": 16,
 		"id": "17016",
 		"maxLevel": 5,
 		"name": "Glowfist Shaman",
@@ -201207,7 +202031,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"health": 17,
 				"skill": []
 			},
 			"3": {
@@ -201492,10 +202316,10 @@ var CARDS = {
 		}
 	},
 	"17020": {
-		"attack": 5,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 3,
-		"health": 26,
+		"health": 35,
 		"hidden_until": "1445529600000",
 		"id": "17020",
 		"maxLevel": 5,
@@ -201526,7 +202350,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 28,
+				"health": 36,
 				"skill": []
 			},
 			"3": {
@@ -201549,11 +202373,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 6,
+				"attack": 9,
 				"skill": []
 			},
 			"5": {
-				"health": 30,
+				"health": 37,
 				"skill": [
 					{
 						"all": "1",
@@ -204150,7 +204974,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 3,
-		"health": 21,
+		"health": 31,
 		"id": "17053",
 		"maxLevel": 5,
 		"name": "Hive Eater",
@@ -204196,15 +205020,15 @@ var CARDS = {
 			},
 			"3": {
 				"attack": 5,
-				"health": 22,
+				"health": 32,
 				"skill": []
 			},
 			"4": {
-				"health": 27,
+				"health": 33,
 				"skill": []
 			},
 			"5": {
-				"health": 28,
+				"health": 34,
 				"skill": [
 					{
 						"id": "evade",
@@ -207780,7 +208604,7 @@ var CARDS = {
 		}
 	},
 	"17097": {
-		"attack": 7,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 3,
 		"health": 30,
@@ -207813,7 +208637,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"attack": 8,
+				"attack": 10,
 				"health": 32,
 				"skill": []
 			},
@@ -208232,7 +209056,7 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 1,
+						"x": 2,
 						"y": "4"
 					}
 				]
@@ -208253,7 +209077,7 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 2,
+						"x": 3,
 						"y": "4"
 					}
 				]
@@ -212617,7 +213441,7 @@ var CARDS = {
 		"attack": 2,
 		"card_type": "2",
 		"cost": 0,
-		"health": 10,
+		"health": 12,
 		"hidden_until": "1507222800000",
 		"id": "17157",
 		"maxLevel": 5,
@@ -212683,7 +213507,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 11,
+				"health": 13,
 				"skill": []
 			},
 			"5": {
@@ -213331,7 +214155,7 @@ var CARDS = {
 		"attack": 9,
 		"card_type": "2",
 		"cost": 4,
-		"health": 46,
+		"health": 51,
 		"hidden_until": "1509382800000",
 		"id": "17165",
 		"maxLevel": 6,
@@ -213365,7 +214189,7 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
-				"health": 47,
+				"health": 52,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -213383,11 +214207,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 48,
+				"health": 53,
 				"skill": []
 			},
 			"5": {
-				"health": 50,
+				"health": 54,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -216787,10 +217611,10 @@ var CARDS = {
 		}
 	},
 	"17202": {
-		"attack": 8,
+		"attack": 14,
 		"card_type": "2",
 		"cost": 4,
-		"health": 42,
+		"health": 47,
 		"hidden_until": "1532624400000",
 		"id": "17202",
 		"maxLevel": 6,
@@ -216818,7 +217642,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 43,
+				"health": 48,
 				"skill": [
 					{
 						"id": "regenerate",
@@ -216835,7 +217659,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 44,
+				"health": 49,
 				"skill": [
 					{
 						"id": "regenerate",
@@ -216852,11 +217676,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 45,
+				"health": 50,
 				"skill": []
 			},
 			"5": {
-				"attack": 9,
+				"attack": 15,
 				"skill": [
 					{
 						"id": "regenerate",
@@ -216873,7 +217697,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 46,
+				"health": 51,
 				"skill": [
 					{
 						"id": "regenerate",
@@ -224793,7 +225617,7 @@ var CARDS = {
 		"attack": 2,
 		"card_type": "2",
 		"cost": 1,
-		"health": 13,
+		"health": 15,
 		"id": "21028",
 		"maxLevel": 5,
 		"name": "Ribbit Wayfarer",
@@ -224816,14 +225640,15 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"attack": 3,
+				"health": 16,
 				"skill": []
 			},
 			"3": {
 				"skill": [
 					{
 						"id": "rally",
-						"x": 5
+						"x": 6
 					},
 					{
 						"c": 4,
@@ -224832,14 +225657,15 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 15,
+				"health": 17,
 				"skill": []
 			},
 			"5": {
+				"attack": 4,
 				"skill": [
 					{
 						"id": "rally",
-						"x": 6
+						"x": 7
 					},
 					{
 						"c": 4,
@@ -226827,7 +227653,7 @@ var CARDS = {
 			},
 			{
 				"id": "poison",
-				"x": 6
+				"x": 7
 			}
 		],
 		"sub_type": [
@@ -226849,6 +227675,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
+				"health": 26,
 				"skill": [
 					{
 						"id": "evade",
@@ -226861,7 +227688,7 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
-						"x": 7
+						"x": 8
 					}
 				]
 			}
@@ -229836,7 +230663,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 7
+						"x": 8
 					},
 					{
 						"id": "leech",
@@ -229845,24 +230672,6 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"skill": [
-					{
-						"id": "fervor",
-						"x": 2,
-						"y": "3"
-					},
-					{
-						"id": "pierce",
-						"x": 7
-					},
-					{
-						"id": "leech",
-						"x": 7
-					}
-				]
-			},
-			"6": {
-				"attack": 8,
 				"health": 18,
 				"skill": [
 					{
@@ -229872,7 +230681,26 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 8
+						"x": 9
+					},
+					{
+						"id": "leech",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"health": 19,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "3"
+					},
+					{
+						"id": "pierce",
+						"x": 10
 					},
 					{
 						"id": "leech",
@@ -232520,10 +233348,10 @@ var CARDS = {
 		}
 	},
 	"22034": {
-		"attack": 7,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 3,
-		"health": 32,
+		"health": 35,
 		"id": "22034",
 		"maxLevel": 5,
 		"name": "Bash Fist Duo",
@@ -232552,7 +233380,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 33,
+				"health": 36,
 				"skill": []
 			},
 			"3": {
@@ -232574,13 +233402,13 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 8,
-				"health": 34,
+				"attack": 10,
+				"health": 37,
 				"skill": []
 			},
 			"5": {
-				"attack": 9,
-				"health": 35,
+				"attack": 11,
+				"health": 38,
 				"skill": [
 					{
 						"id": "rally",
@@ -232594,7 +233422,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 4
+						"x": 5
 					}
 				]
 			}
@@ -235066,10 +235894,10 @@ var CARDS = {
 		}
 	},
 	"22070": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 1,
-		"health": 14,
+		"health": 15,
 		"hidden_until": "1481821200000",
 		"id": "22070",
 		"maxLevel": 5,
@@ -235084,7 +235912,7 @@ var CARDS = {
 			},
 			{
 				"id": "burn",
-				"x": 2
+				"x": 3
 			},
 			{
 				"id": "nullify",
@@ -235098,11 +235926,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 15,
+				"health": 16,
 				"skill": []
 			},
 			"3": {
-				"health": 17,
+				"health": 18,
 				"skill": []
 			},
 			"4": {
@@ -235113,7 +235941,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "nullify",
@@ -235122,8 +235950,8 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 7,
-				"health": 18,
+				"attack": 8,
+				"health": 19,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -235131,7 +235959,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "nullify",
@@ -235156,7 +235984,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "valor",
-				"x": 4
+				"x": 5
 			},
 			{
 				"all": "1",
@@ -235166,11 +235994,12 @@ var CARDS = {
 			},
 			{
 				"id": "strike",
-				"x": 4
+				"x": 5
 			}
 		],
 		"sub_type": [
-			"4"
+			"4",
+			"5"
 		],
 		"type": "1",
 		"upgrades": {
@@ -235179,7 +236008,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
@@ -235189,7 +236018,7 @@ var CARDS = {
 					},
 					{
 						"id": "strike",
-						"x": 5
+						"x": 6
 					}
 				]
 			},
@@ -235200,25 +236029,6 @@ var CARDS = {
 			},
 			"4": {
 				"health": 27,
-				"skill": [
-					{
-						"id": "valor",
-						"x": 6
-					},
-					{
-						"all": "1",
-						"id": "heal",
-						"x": 3,
-						"y": "4"
-					},
-					{
-						"id": "strike",
-						"x": 6
-					}
-				]
-			},
-			"5": {
-				"health": 28,
 				"skill": [
 					{
 						"id": "valor",
@@ -235236,8 +236046,8 @@ var CARDS = {
 					}
 				]
 			},
-			"6": {
-				"health": 29,
+			"5": {
+				"health": 28,
 				"skill": [
 					{
 						"id": "valor",
@@ -235252,6 +236062,25 @@ var CARDS = {
 					{
 						"id": "strike",
 						"x": 8
+					}
+				]
+			},
+			"6": {
+				"health": 29,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "strike",
+						"x": 9
 					}
 				]
 			}
@@ -237580,15 +238409,15 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "armored",
-				"x": 3
-			},
-			{
-				"id": "valor",
 				"x": 4
 			},
 			{
+				"id": "valor",
+				"x": 5
+			},
+			{
 				"id": "strike",
-				"x": 3
+				"x": 4
 			}
 		],
 		"sub_type": [
@@ -237610,22 +238439,6 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 4
-					},
-					{
-						"id": "valor",
-						"x": 4
-					},
-					{
-						"id": "strike",
-						"x": 3
-					}
-				]
-			},
-			"5": {
-				"skill": [
-					{
-						"id": "armored",
 						"x": 5
 					},
 					{
@@ -237635,6 +238448,23 @@ var CARDS = {
 					{
 						"id": "strike",
 						"x": 5
+					}
+				]
+			},
+			"5": {
+				"health": 19,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "strike",
+						"x": 6
 					}
 				]
 			}
@@ -243549,6 +244379,155 @@ var CARDS = {
 			}
 		}
 	},
+	"22183": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1588266000000",
+		"id": "22183",
+		"maxLevel": 5,
+		"name": "Skywrath Disciple",
+		"picture": "Frog_Zap_Mage_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "strike",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "strike",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"22184": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"hidden_until": "1588266000000",
+		"id": "22184",
+		"maxLevel": 5,
+		"name": "Frohemot Titan",
+		"picture": "Frog_Croco_Bull_B",
+		"rarity": 3,
+		"set": "2000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 9,
+				"y": "4"
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 36,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "4"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "4"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"25000": {
 		"attack": 7,
 		"card_type": "2",
@@ -247597,7 +248576,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 21,
+		"health": 23,
 		"id": "25051",
 		"maxLevel": 6,
 		"name": "Amphibious Spelunker",
@@ -247625,15 +248604,16 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 22,
+				"health": 24,
 				"skill": []
 			},
 			"3": {
-				"health": 23,
+				"health": 25,
 				"skill": []
 			},
 			"4": {
-				"health": 24,
+				"attack": 8,
+				"health": 26,
 				"skill": [
 					{
 						"id": "rally",
@@ -247651,26 +248631,8 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 25,
-				"skill": [
-					{
-						"id": "rally",
-						"x": 6,
-						"y": "4"
-					},
-					{
-						"id": "nullify",
-						"x": 2
-					},
-					{
-						"id": "leech",
-						"x": 8
-					}
-				]
-			},
-			"6": {
-				"attack": 8,
-				"health": 25,
+				"attack": 9,
+				"health": 27,
 				"skill": [
 					{
 						"id": "rally",
@@ -247680,6 +248642,25 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 3
+					},
+					{
+						"id": "leech",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"health": 28,
+				"skill": [
+					{
+						"id": "rally",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "nullify",
+						"x": 4
 					},
 					{
 						"id": "leech",
@@ -247806,6 +248787,7 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
+				"attack": 7,
 				"skill": [
 					{
 						"id": "strike",
@@ -247826,6 +248808,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
+				"attack": 8,
 				"health": 26,
 				"skill": [
 					{
@@ -247837,7 +248820,7 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"c": 4,
+						"c": 3,
 						"id": "jam"
 					}
 				]
@@ -247903,11 +248886,12 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 1
+						"x": 2
 					}
 				]
 			},
 			"6": {
+				"health": 19,
 				"skill": [
 					{
 						"id": "heal",
@@ -247921,7 +248905,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 1
+						"x": 3
 					}
 				]
 			}
@@ -251571,15 +252555,15 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "strike",
-				"x": 3
+				"x": 5
 			},
 			{
 				"id": "strike",
-				"x": 3
+				"x": 5
 			},
 			{
 				"id": "strike",
-				"x": 3
+				"x": 5
 			}
 		],
 		"sub_type": [
@@ -251597,34 +252581,36 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
+				"health": 24,
 				"skill": [
 					{
 						"id": "strike",
-						"x": 4
+						"x": 6
 					},
 					{
 						"id": "strike",
-						"x": 3
+						"x": 5
 					},
 					{
 						"id": "strike",
-						"x": 3
+						"x": 5
 					}
 				]
 			},
 			"5": {
+				"health": 25,
 				"skill": [
 					{
 						"id": "strike",
-						"x": 4
+						"x": 6
 					},
 					{
 						"id": "strike",
-						"x": 4
+						"x": 6
 					},
 					{
 						"id": "strike",
-						"x": 4
+						"x": 6
 					}
 				]
 			}
@@ -251886,7 +252872,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 3,
-		"health": 32,
+		"health": 36,
 		"hidden_until": "1481821200000",
 		"id": "25103",
 		"maxLevel": 6,
@@ -251917,7 +252903,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 33,
+				"health": 37,
 				"skill": [
 					{
 						"id": "counter",
@@ -251937,11 +252923,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 34,
+				"health": 38,
 				"skill": []
 			},
 			"4": {
-				"health": 35,
+				"health": 39,
 				"skill": [
 					{
 						"id": "counter",
@@ -251961,7 +252947,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 36,
+				"health": 40,
 				"skill": [
 					{
 						"id": "counter",
@@ -251981,7 +252967,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 38,
+				"health": 41,
 				"skill": [
 					{
 						"id": "counter",
@@ -256637,7 +257623,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 23,
+		"health": 26,
 		"hidden_until": "1507827600000",
 		"id": "25158",
 		"maxLevel": 5,
@@ -256671,7 +257657,7 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
-				"health": 24,
+				"health": 27,
 				"skill": []
 			},
 			"4": {
@@ -256692,6 +257678,7 @@ var CARDS = {
 				]
 			},
 			"5": {
+				"attack": 8,
 				"skill": [
 					{
 						"all": "1",
@@ -256700,7 +257687,7 @@ var CARDS = {
 					},
 					{
 						"id": "frost",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "weaken",
@@ -260220,7 +261207,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 24,
+		"health": 27,
 		"hidden_until": "1532624400000",
 		"id": "25202",
 		"maxLevel": 6,
@@ -260248,7 +261235,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 25,
+				"health": 28,
 				"skill": [
 					{
 						"id": "absorb",
@@ -260260,7 +261247,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
@@ -260269,7 +261256,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 26,
+				"health": 29,
 				"skill": []
 			},
 			"5": {
@@ -260284,11 +261271,12 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 3
+						"x": 5
 					}
 				]
 			},
 			"6": {
+				"attack": 9,
 				"skill": [
 					{
 						"id": "absorb",
@@ -260300,7 +261288,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 4
+						"x": 6
 					}
 				]
 			}
@@ -266009,6 +266997,162 @@ var CARDS = {
 			}
 		}
 	},
+	"25269": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1588266000000",
+		"id": "25269",
+		"maxLevel": 6,
+		"name": "Unbreakable Jouster",
+		"picture": "Frog_Psychic_Fighter_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "valor",
+				"x": 6
+			},
+			{
+				"id": "protect",
+				"x": 6,
+				"y": "1"
+			},
+			{
+				"c": 3,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 19,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"attack": 4,
+				"skill": []
+			},
+			"5": {
+				"health": 21,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"id": "protect",
+						"x": 7,
+						"y": "1"
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"25270": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1588611600000",
+		"id": "25270",
+		"maxLevel": 6,
+		"name": "Exalted Vanquisher",
+		"picture": "Frog_Praying_Knight_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"id": "daze",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -267411,10 +268555,10 @@ var CARDS = {
 		}
 	},
 	"26018": {
-		"attack": 5,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 3,
-		"health": 26,
+		"health": 36,
 		"hidden_until": "1445529600000",
 		"id": "26018",
 		"maxLevel": 6,
@@ -267444,18 +268588,18 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"attack": 6,
-				"health": 27,
+				"attack": 8,
+				"health": 37,
 				"skill": []
 			},
 			"3": {
-				"attack": 7,
-				"health": 28,
+				"attack": 9,
+				"health": 38,
 				"skill": []
 			},
 			"4": {
-				"attack": 8,
-				"health": 30,
+				"attack": 10,
+				"health": 39,
 				"skill": [
 					{
 						"id": "evade",
@@ -267474,12 +268618,12 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 31,
+				"health": 40,
 				"skill": []
 			},
 			"6": {
-				"attack": 9,
-				"health": 34,
+				"attack": 11,
+				"health": 41,
 				"skill": [
 					{
 						"id": "evade",
@@ -267578,7 +268722,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 25,
 		"hidden_until": "1445529600000",
 		"id": "26020",
 		"maxLevel": 5,
@@ -267597,7 +268741,7 @@ var CARDS = {
 			},
 			{
 				"id": "pierce",
-				"x": 5
+				"x": 7
 			}
 		],
 		"sub_type": [
@@ -267617,12 +268761,12 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 6
+						"x": 8
 					}
 				]
 			},
 			"3": {
-				"health": 20,
+				"health": 26,
 				"skill": []
 			},
 			"4": {
@@ -267637,13 +268781,13 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 7
+						"x": 9
 					}
 				]
 			},
 			"5": {
 				"attack": 8,
-				"health": 22,
+				"health": 27,
 				"skill": [
 					{
 						"id": "counter",
@@ -267655,7 +268799,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 8
+						"x": 10
 					}
 				]
 			}
@@ -270041,10 +271185,10 @@ var CARDS = {
 		}
 	},
 	"26051": {
-		"attack": 6,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 1,
-		"health": 12,
+		"health": 15,
 		"id": "26051",
 		"maxLevel": 5,
 		"name": "Treeblade Assassin",
@@ -270087,11 +271231,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 13,
+				"health": 16,
 				"skill": []
 			},
 			"4": {
-				"health": 14,
+				"health": 17,
 				"skill": [
 					{
 						"id": "evade",
@@ -270102,13 +271246,13 @@ var CARDS = {
 						"x": 5
 					},
 					{
-						"c": 5,
+						"c": 4,
 						"id": "flurry"
 					}
 				]
 			},
 			"5": {
-				"attack": 7,
+				"attack": 9,
 				"skill": [
 					{
 						"id": "evade",
@@ -270116,10 +271260,10 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 5
+						"x": 7
 					},
 					{
-						"c": 4,
+						"c": 3,
 						"id": "flurry"
 					}
 				]
@@ -270130,7 +271274,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 1,
-		"health": 16,
+		"health": 17,
 		"id": "26052",
 		"maxLevel": 6,
 		"name": "Fuming Horror",
@@ -270144,7 +271288,7 @@ var CARDS = {
 			},
 			{
 				"id": "burn",
-				"x": 3
+				"x": 4
 			},
 			{
 				"id": "poison",
@@ -270157,7 +271301,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
@@ -270165,11 +271309,11 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 18,
+				"health": 19,
 				"skill": []
 			},
 			"5": {
-				"health": 19,
+				"health": 20,
 				"skill": [
 					{
 						"id": "evade",
@@ -270177,7 +271321,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "poison",
@@ -270186,7 +271330,8 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 20,
+				"attack": 7,
+				"health": 21,
 				"skill": [
 					{
 						"id": "evade",
@@ -270194,7 +271339,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "poison",
@@ -274051,7 +275196,7 @@ var CARDS = {
 		"attack": 15,
 		"card_type": "2",
 		"cost": 4,
-		"health": 49,
+		"health": 51,
 		"hidden_until": "1483030800000",
 		"id": "26101",
 		"maxLevel": 6,
@@ -274079,7 +275224,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 50,
+				"health": 52,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -274097,20 +275242,21 @@ var CARDS = {
 			},
 			"3": {
 				"attack": 16,
-				"health": 51,
+				"health": 53,
 				"skill": []
 			},
 			"4": {
 				"attack": 17,
-				"health": 52,
+				"health": 54,
 				"skill": []
 			},
 			"5": {
-				"health": 53,
+				"attack": 18,
+				"health": 55,
 				"skill": [
 					{
 						"id": "corrosive",
-						"x": 8
+						"x": 9
 					},
 					{
 						"id": "nullify",
@@ -274123,11 +275269,12 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 54,
+				"attack": 19,
+				"health": 56,
 				"skill": [
 					{
 						"id": "corrosive",
-						"x": 9
+						"x": 10
 					},
 					{
 						"id": "nullify",
@@ -274221,10 +275368,10 @@ var CARDS = {
 		}
 	},
 	"26103": {
-		"attack": 7,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 1,
-		"health": 15,
+		"health": 19,
 		"hidden_until": "1481821200000",
 		"id": "26103",
 		"maxLevel": 6,
@@ -274255,7 +275402,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "evade",
-						"x": 1
+						"x": 2
 					},
 					{
 						"id": "pierce",
@@ -274268,26 +275415,26 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 16,
+				"health": 20,
 				"skill": []
 			},
 			"4": {
-				"attack": 8,
+				"attack": 10,
 				"skill": []
 			},
 			"5": {
-				"health": 17,
+				"health": 21,
 				"skill": []
 			},
 			"6": {
 				"skill": [
 					{
 						"id": "evade",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "pierce",
-						"x": 7
+						"x": 9
 					},
 					{
 						"c": 3,
@@ -274376,7 +275523,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 23,
+		"health": 26,
 		"hidden_until": "1483376400000",
 		"id": "26105",
 		"maxLevel": 6,
@@ -274405,7 +275552,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 24,
+				"health": 27,
 				"skill": []
 			},
 			"3": {
@@ -274413,27 +275560,11 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 25,
+				"attack": 9,
+				"health": 28,
 				"skill": []
 			},
 			"5": {
-				"skill": [
-					{
-						"id": "fervor",
-						"x": 5,
-						"y": "4"
-					},
-					{
-						"id": "nullify",
-						"x": 2
-					},
-					{
-						"id": "berserk",
-						"x": 3
-					}
-				]
-			},
-			"6": {
 				"skill": [
 					{
 						"id": "fervor",
@@ -274447,6 +275578,24 @@ var CARDS = {
 					{
 						"id": "berserk",
 						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
 					}
 				]
 			}
@@ -276590,7 +277739,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 24,
+		"health": 27,
 		"hidden_until": "1495818000000",
 		"id": "26133",
 		"maxLevel": 6,
@@ -276621,7 +277770,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 25,
+				"health": 28,
 				"skill": []
 			},
 			"3": {
@@ -276629,7 +277778,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 26,
+				"health": 29,
 				"skill": []
 			},
 			"5": {
@@ -276646,7 +277795,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 2
+						"x": 3
 					}
 				]
 			},
@@ -276664,7 +277813,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 3
+						"x": 4
 					}
 				]
 			}
@@ -279419,7 +280568,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 23,
+		"health": 25,
 		"hidden_until": "1512406800000",
 		"id": "26169",
 		"maxLevel": 6,
@@ -279439,7 +280588,7 @@ var CARDS = {
 			},
 			{
 				"id": "poison",
-				"x": 6
+				"x": 7
 			}
 		],
 		"sub_type": [
@@ -279450,15 +280599,16 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 7,
-				"health": 24,
+				"health": 26,
 				"skill": []
 			},
 			"3": {
-				"health": 25,
+				"health": 27,
 				"skill": []
 			},
 			"4": {
-				"health": 26,
+				"attack": 8,
+				"health": 28,
 				"skill": []
 			},
 			"5": {
@@ -279474,7 +280624,7 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
-						"x": 6
+						"x": 8
 					}
 				]
 			},
@@ -279491,7 +280641,7 @@ var CARDS = {
 					},
 					{
 						"id": "poison",
-						"x": 7
+						"x": 9
 					}
 				]
 			}
@@ -281815,10 +282965,10 @@ var CARDS = {
 		}
 	},
 	"26199": {
-		"attack": 7,
+		"attack": 11,
 		"card_type": "2",
 		"cost": 3,
-		"health": 35,
+		"health": 37,
 		"hidden_until": "1533834000000",
 		"id": "26199",
 		"maxLevel": 6,
@@ -281862,16 +283012,16 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 36,
+				"health": 38,
 				"skill": []
 			},
 			"4": {
-				"attack": 8,
-				"health": 37,
+				"attack": 12,
+				"health": 39,
 				"skill": []
 			},
 			"5": {
-				"health": 38,
+				"health": 40,
 				"skill": []
 			},
 			"6": {
@@ -282723,7 +283873,7 @@ var CARDS = {
 		}
 	},
 	"26209": {
-		"attack": 6,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 1,
 		"health": 18,
@@ -282755,7 +283905,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"attack": 7,
+				"attack": 9,
 				"skill": []
 			},
 			"3": {
@@ -282802,7 +283952,7 @@ var CARDS = {
 					},
 					{
 						"id": "burn",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "nullify",
@@ -289445,10 +290595,10 @@ var CARDS = {
 		}
 	},
 	"27016": {
-		"attack": 3,
+		"attack": 5,
 		"card_type": "2",
 		"cost": 1,
-		"health": 16,
+		"health": 18,
 		"id": "27016",
 		"maxLevel": 5,
 		"name": "Pondfist Shaman",
@@ -289495,7 +290645,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"attack": 4,
+				"attack": 6,
 				"skill": [
 					{
 						"id": "heal",
@@ -289514,7 +290664,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 5,
+				"attack": 7,
 				"skill": [
 					{
 						"id": "heal",
@@ -289533,8 +290683,8 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 6,
-				"health": 17,
+				"attack": 8,
+				"health": 19,
 				"skill": [
 					{
 						"id": "heal",
@@ -289826,10 +290976,10 @@ var CARDS = {
 		}
 	},
 	"27020": {
-		"attack": 8,
+		"attack": 10,
 		"card_type": "2",
 		"cost": 3,
-		"health": 31,
+		"health": 38,
 		"hidden_until": "1445529600000",
 		"id": "27020",
 		"maxLevel": 5,
@@ -289860,7 +291010,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 34,
+				"health": 39,
 				"skill": []
 			},
 			"3": {
@@ -289883,12 +291033,12 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 9,
+				"attack": 11,
 				"skill": []
 			},
 			"5": {
-				"attack": 10,
-				"health": 35,
+				"attack": 12,
+				"health": 40,
 				"skill": [
 					{
 						"all": "1",
@@ -292634,7 +293784,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 3,
-		"health": 29,
+		"health": 35,
 		"id": "27053",
 		"maxLevel": 5,
 		"name": "Stungtongue Eater",
@@ -292663,15 +293813,17 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 6,
-				"health": 30,
+				"health": 36,
 				"skill": []
 			},
 			"3": {
-				"health": 31,
+				"attack": 8,
+				"health": 37,
 				"skill": []
 			},
 			"4": {
-				"health": 32,
+				"attack": 10,
+				"health": 38,
 				"skill": [
 					{
 						"id": "evade",
@@ -292689,8 +293841,8 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 9,
-				"health": 33,
+				"attack": 11,
+				"health": 39,
 				"skill": [
 					{
 						"id": "evade",
@@ -296367,7 +297519,7 @@ var CARDS = {
 		}
 	},
 	"27097": {
-		"attack": 9,
+		"attack": 11,
 		"card_type": "2",
 		"cost": 3,
 		"health": 37,
@@ -296381,7 +297533,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "armored",
-				"x": 3
+				"x": 4
 			},
 			{
 				"id": "corrosive",
@@ -296404,7 +297556,7 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
-				"attack": 10,
+				"attack": 12,
 				"health": 39,
 				"skill": []
 			},
@@ -296416,7 +297568,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "corrosive",
@@ -296425,16 +297577,17 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 3,
+						"x": 4,
 						"y": "3"
 					}
 				]
 			},
 			"6": {
+				"health": 41,
 				"skill": [
 					{
 						"id": "armored",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "corrosive",
@@ -296443,7 +297596,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 4,
+						"x": 5,
 						"y": "3"
 					}
 				]
@@ -296815,7 +297968,7 @@ var CARDS = {
 			},
 			{
 				"id": "fervor",
-				"x": 2,
+				"x": 4,
 				"y": "4"
 			}
 		],
@@ -296825,6 +297978,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
+				"attack": 3,
 				"health": 25,
 				"skill": []
 			},
@@ -296848,12 +298002,13 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 2,
+						"x": 5,
 						"y": "4"
 					}
 				]
 			},
 			"5": {
+				"attack": 4,
 				"health": 28,
 				"skill": []
 			},
@@ -296872,7 +298027,7 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 3,
+						"x": 6,
 						"y": "4"
 					}
 				]
@@ -297034,6 +298189,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
+				"attack": 4,
 				"health": 29,
 				"skill": [
 					{
@@ -298608,6 +299764,8 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
+				"attack": 10,
+				"health": 28,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -298626,10 +299784,11 @@ var CARDS = {
 				]
 			},
 			"6": {
+				"attack": 11,
 				"skill": [
 					{
 						"id": "corrosive",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
@@ -301265,7 +302424,7 @@ var CARDS = {
 		"attack": 2,
 		"card_type": "2",
 		"cost": 0,
-		"health": 12,
+		"health": 14,
 		"hidden_until": "1507222800000",
 		"id": "27157",
 		"maxLevel": 5,
@@ -301299,7 +302458,7 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
-				"health": 13,
+				"health": 15,
 				"skill": []
 			},
 			"4": {
@@ -301321,6 +302480,7 @@ var CARDS = {
 				]
 			},
 			"5": {
+				"attack": 4,
 				"skill": [
 					{
 						"id": "rally",
@@ -301334,7 +302494,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 6
+						"x": 8
 					}
 				]
 			}
@@ -301960,7 +303120,7 @@ var CARDS = {
 		"attack": 11,
 		"card_type": "2",
 		"cost": 4,
-		"health": 51,
+		"health": 55,
 		"hidden_until": "1509382800000",
 		"id": "27165",
 		"maxLevel": 6,
@@ -302002,22 +303162,23 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 4
+						"x": 5
 					}
 				]
 			},
 			"3": {
 				"attack": 12,
-				"health": 52,
+				"health": 56,
 				"skill": []
 			},
 			"4": {
 				"attack": 13,
-				"health": 53,
+				"health": 57,
 				"skill": []
 			},
 			"5": {
-				"health": 54,
+				"attack": 14,
+				"health": 58,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -302030,15 +303191,16 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 4
+						"x": 6
 					}
 				]
 			},
 			"6": {
+				"attack": 15,
 				"skill": [
 					{
 						"id": "corrosive",
-						"x": 7
+						"x": 8
 					},
 					{
 						"all": "1",
@@ -302047,7 +303209,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 6
+						"x": 7
 					}
 				]
 			}
@@ -305161,10 +306323,10 @@ var CARDS = {
 		}
 	},
 	"27202": {
-		"attack": 9,
+		"attack": 16,
 		"card_type": "2",
 		"cost": 4,
-		"health": 47,
+		"health": 52,
 		"hidden_until": "1532624400000",
 		"id": "27202",
 		"maxLevel": 6,
@@ -305208,16 +306370,16 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"attack": 10,
-				"health": 48,
+				"attack": 17,
+				"health": 53,
 				"skill": []
 			},
 			"4": {
-				"health": 49,
+				"health": 54,
 				"skill": []
 			},
 			"5": {
-				"health": 50,
+				"health": 55,
 				"skill": [
 					{
 						"id": "regenerate",

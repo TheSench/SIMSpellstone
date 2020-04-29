@@ -2155,6 +2155,22 @@
     <card_id>22182</card_id>
     <resource card_id="12182" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12183</card_id>
+    <resource card_id="2183" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22183</card_id>
+    <resource card_id="12183" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12184</card_id>
+    <resource card_id="2184" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22184</card_id>
+    <resource card_id="12184" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->
@@ -4293,6 +4309,22 @@
   <fusion_recipe>
     <card_id>25268</card_id>
     <resource card_id="15268" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15269</card_id>
+    <resource card_id="5269" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25269</card_id>
+    <resource card_id="15269" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15270</card_id>
+    <resource card_id="5270" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25270</card_id>
+    <resource card_id="15270" number="2" />
   </fusion_recipe>
   <!-- END AETHER PREMIUM SET -->
   <!-- CHAOS PREMIUM SET BEGIN -->

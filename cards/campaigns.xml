@@ -8378,6 +8378,81 @@
     </rewards>
     <find_item id="3110" drop_per_energy=".4" />
   </campaign>
+  <!-- ================================== Campaign Event 22 weeks 5-8 / Healed Dawnglow ================================== -->
+  <campaign>
+    <id>1248</id>
+    <name>Manufactured Freedom</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1588266000</locked_start_time>
+    <!--  Thursday, 30 April 2020 17:00:00 -->
+    <battleground_id>2093</battleground_id>
+    <location_id>28</location_id>
+    <x>620</x>
+    <y>210</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6418</mission_id>
+      <mission_id>6419</mission_id>
+      <mission_id>6420</mission_id>
+      <mission_id>6421</mission_id>
+      <mission_id>6422</mission_id>
+      <mission_id>6423</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2183" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2107" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3111" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3110" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1249</id>
+    <name>Royal Interruption</name>
+    <campaign_req id="1248" level="1" />
+    <locked_start_time>1589475600</locked_start_time>
+    <!--  Thursday, 14 May 2020 17:00:00 -->
+    <battleground_id>2094</battleground_id>
+    <location_id>28</location_id>
+    <x>690</x>
+    <y>460</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6424</mission_id>
+      <mission_id>6425</mission_id>
+      <mission_id>6426</mission_id>
+      <mission_id>6427</mission_id>
+      <mission_id>6428</mission_id>
+      <mission_id>6429</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2184" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2034" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3111" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3110" drop_per_energy=".8" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

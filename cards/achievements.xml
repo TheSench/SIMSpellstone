@@ -13577,6 +13577,133 @@
       <item id="8023" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 22 weeks 5-8 -->
+  <achievement>
+    <id>3569</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Manufactured Freedom</name>
+    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 1.</desc>
+    <mission_req>6418</mission_req>
+    <locked_start_time>1588266000</locked_start_time>
+    <!--  Thursday, 30 April 2020 17:00:00 -->
+    <req>
+      <campaign>1248</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3110" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7058" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3570</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Manufactured Freedom</name>
+    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 2.</desc>
+    <mission_req>6418</mission_req>
+    <locked_start_time>1588266000</locked_start_time>
+    <!--  Thursday, 30 April 2020 17:00:00 -->
+    <achievement_req>3569</achievement_req>
+    <req>
+      <campaign>1248</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3571</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Manufactured Freedom</name>
+    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 4.</desc>
+    <mission_req>6418</mission_req>
+    <locked_start_time>1588266000</locked_start_time>
+    <!--  Thursday, 30 April 2020 17:00:00 -->
+    <achievement_req>3570</achievement_req>
+    <req>
+      <campaign>1248</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3572</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Manufactured Freedom</name>
+    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 6.</desc>
+    <mission_req>6418</mission_req>
+    <locked_start_time>1588266000</locked_start_time>
+    <!--  Thursday, 30 April 2020 17:00:00 -->
+    <achievement_req>3571</achievement_req>
+    <req>
+      <campaign>1248</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3573</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Royal Interruption</name>
+    <desc>Complete the 'Royal Interruption' campaign on Mastery Level 2.</desc>
+    <mission_req>6424</mission_req>
+    <locked_start_time>1589475600</locked_start_time>
+    <!--  Thursday, 14 May 2020 17:00:00 -->
+    <req>
+      <campaign>1249</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3574</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Royal Interruption</name>
+    <desc>Complete the 'Royal Interruption' campaign on Mastery Level 4.</desc>
+    <mission_req>6424</mission_req>
+    <locked_start_time>1589475600</locked_start_time>
+    <!--  Thursday, 14 May 2020 17:00:00 -->
+    <achievement_req>3573</achievement_req>
+    <req>
+      <campaign>1249</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3575</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Royal Interruption</name>
+    <desc>Complete the 'Royal Interruption' campaign on Mastery Level 6.</desc>
+    <mission_req>6424</mission_req>
+    <locked_start_time>1589475600</locked_start_time>
+    <!--  Thursday, 14 May 2020 17:00:00 -->
+    <achievement_req>3574</achievement_req>
+    <req>
+      <campaign>1249</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -14045,6 +14172,32 @@
       <campaign>1237</campaign>
       <!-- 3rd node -->
       <campaign>1238</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Healed Dawnglow -->
+    <id>4023</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Healed Dawnglow</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Healed Dawnglow.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6384</mission_req>
+    <req>
+      <campaign>1239</campaign>
+      <!-- 1st node -->
+      <campaign>1240</campaign>
+      <!-- 2nd node -->
+      <campaign>1247</campaign>
+      <!-- Boss node -->
+      <campaign>1248</campaign>
+      <!-- 3rd node -->
+      <campaign>1249</campaign>
       <!-- 4th node -->
       <level>7</level>
     </req>

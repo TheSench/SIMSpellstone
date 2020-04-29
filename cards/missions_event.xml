@@ -44752,5 +44752,397 @@
       <card id="6241" mastery_level="7" name="Grimkite Model" />
     </deck>
   </mission>
+  <!-- Event 22 Node 3 -->
+  <mission>
+    <id>6418</id>
+    <name>Strength of Mind</name>
+    <energy>18</energy>
+    <desc>The mechanical giant is able to answer even without thinking. He explains how the Titans are able to twist even the minds of your friends. The method is eerily similar to that of The Void.</desc>
+    <commander id="282" />
+    <deck>
+      <card id="8003" name="Frostbite Dragon" />
+      <card id="5012" name="Static Drake" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5050" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="5020" name="Frost Frog" />
+      <card id="2107" mastery_level="2" name="Battleborn Toad" />
+      <card id="5020" mastery_level="3" name="Frost Frog" />
+      <card id="5062" mastery_level="4" name="Cliffhanger Wyrm" />
+      <card id="1040" mastery_level="5" name="Storm Dragon" />
+      <card id="5008" mastery_level="6" name="Ice Dragon" />
+      <card id="5054" mastery_level="7" name="Reckless Ballista" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Mortals are fractured creatures, possessing splinters of the Titans' spirits.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Only those whose spirits are touched with the negating Void can resist the Titans' dominion.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6419</id>
+    <name>The Void's Protection</name>
+    <energy>18</energy>
+    <desc>Viracocha is able to provide even more insight into how the Titans revived their powers. You are reminded eerily of Vel's words, and how she believed you could overcome the challenge of defeating The Void...</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8004" name="Frostbite Serpent" />
+      <card id="7012" name="Life Drake" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="7128" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7010" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7098" name="Survivalist" />
+      <card id="7053" name="Bee Eater" />
+      <card id="7098" mastery_level="2" name="Survivalist" />
+      <card id="7053" mastery_level="3" name="Bee Eater" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="7092" mastery_level="5" name="Lord Froggy" />
+      <card id="7032" mastery_level="6" name="Nidhogg" />
+      <card id="7159" mastery_level="7" name="Lucky Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>With The Void gone, so too did the mortals' protector leave them.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>So, in a rather obtrusive way, The Void was actually protecting us...?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6420</id>
+    <name>Containing the Titans</name>
+    <energy>18</energy>
+    <desc>With the Titans' rise in power now known, all the remains is a way of defeating them. Although Viracocha was created to combat the Titans, he could not be considered even one of their equals.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8040" name="Winter's Bite" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="6010" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="2070" name="Redclaw Tamer" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="2070" mastery_level="2" name="Redclaw Tamer" />
+      <card id="6102" mastery_level="3" name="Ribbithold Guards" />
+      <card id="2066" mastery_level="4" name="Basalt Dragon" />
+      <card id="6133" mastery_level="5" name="Cress, Flamespeaker" />
+      <card id="6130" mastery_level="6" name="Shadowed Wyvern" />
+      <card id="6264" mastery_level="7" name="Flame Tongue Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>The Titans just need a container to restrain them.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I was created to be one, but I lack the necessary power to transcend to the spirit realm.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6421</id>
+    <name>Ascending Titan</name>
+    <energy>18</energy>
+    <desc>Cedric considers the gravity of Viracocha's words. The titans have been mythical creatures for a long time. One doesn't simply become their equal by willpower alone.</desc>
+    <commander id="356" />
+    <deck>
+      <card id="8041" name="Winter's Thunder" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2004" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="6154" name="Egg Thief" />
+      <card id="2162" name="Frog Samurai" />
+      <card id="6154" mastery_level="2" name="Egg Thief" />
+      <card id="2162" mastery_level="3" name="Frog Samurai" />
+      <card id="2033" mastery_level="4" name="Arcblaze Dragon" />
+      <card id="6209" mastery_level="5" name="Wyribbit" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="6238" mastery_level="7" name="Venomdart Scout" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Is it possible? For a construct to become part spirit?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6422</id>
+    <name>The Power Coils</name>
+    <energy>18</energy>
+    <desc>Viracocha knows that the way forward is difficult. His dream is more than just something he came up with himself. It was the reason why he was created.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="8122" name="Promised Victory" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="2181" name="Bonepicker Wyvern" />
+      <card id="2181" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="6131" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="6051" mastery_level="2" name="Treeblade Thief" />
+      <card id="6020" mastery_level="3" name="Croak Piercer" />
+      <card id="2044" mastery_level="4" name="Quillhide Dragon" />
+      <card id="6267" mastery_level="5" name="Searscale Wyrmling" />
+      <card id="6184" mastery_level="6" name="Thundering Hellwing" />
+      <card id="6018" mastery_level="7" name="Underwater Lasher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Yes... you will need to activate the Power Coils across the continent. Take this map.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6423</id>
+    <name>Emperor's Intrusion</name>
+    <energy>18</energy>
+    <desc>Webbed claws squish through the swamp. A familiar Emperor, escorted by a legion of Dawnglow frogs, stomps into the clearing where you've been talking with Viracocha.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8066" name="Winter's Crasher" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="2182" name="Axolotl Sentinels" />
+      <card id="2182" />
+      <card id="7095" name="Talonsaur" />
+      <card id="7095" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7016" mastery_level="2" name="Webfist Shaman" />
+      <card id="7020" mastery_level="3" name="Trapper Frog" />
+      <card id="7024" mastery_level="4" name="Woolmane Dragon" />
+      <card id="7242" mastery_level="5" name="Littlepond Twins" />
+      <card id="7094" mastery_level="6" name="Basilisk" />
+      <card id="7203" mastery_level="7" name="Tuloom, Spirit Shaman" />
+    </deck>
+  </mission>
+  <!-- Event 22 Node 4 -->
+  <mission>
+    <id>6424</id>
+    <name>Hopping Mad</name>
+    <energy>18</energy>
+    <desc>The Frog Emperor is hopping mad, both figuratively and literally. He jumps over and over again, like a child throwing a tantrum. Despite his demands, Viracocha has yet to follow them.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="8006" name="Atlas' Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7093" />
+      <card id="7095" name="Talonsaur" />
+      <card id="7095" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="7062" />
+      <card id="2159" name="Toad Scourge" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2159" mastery_level="2" name="Toad Scourge" />
+      <card id="2014" mastery_level="3" name="Tadpole Warmage" />
+      <card id="7092" mastery_level="4" name="Lord Froggy" />
+      <card id="7127" mastery_level="5" name="Basilclaw Clutch" />
+      <card id="7186" mastery_level="6" name="Owlscar Dragon" />
+      <card id="7159" mastery_level="7" name="Lucky Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>Viracocha! Intruders! Take care of them!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6425</id>
+    <name>Cedric's Old Ally</name>
+    <energy>18</energy>
+    <desc>Cedric pushes you behind him. A former member of the Dawnglow Frogs, he knows many of them quite well. Some of the frogs bow down in respect as the old frog approaches.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="8043" name="Winter's Spirit" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2046" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2067" />
+      <card id="2182" name="Axolotl Sentinels" />
+      <card id="2182" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="7053" name="Bee Eater" />
+      <card id="7051" mastery_level="2" name="Stinglash Rider" />
+      <card id="7053" mastery_level="3" name="Bee Eater" />
+      <card id="7243" mastery_level="4" name="Moonscale Drake" />
+      <card id="7131" mastery_level="5" name="Xovrus, Death's End" />
+      <card id="7130" mastery_level="6" name="Fluttering Stinger" />
+      <card id="7259" mastery_level="7" name="Ranamuerta Bard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Ah, I've been gone so long, that I'm unknown to you now, Emperor?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6426</id>
+    <name>Emperor's Hesitation</name>
+    <energy>18</energy>
+    <desc>Uncomfortable silence hangs in the air, Cedric's greeting remaining unanswered. The frogs look hesitant to attack with the former First Sword standing before them. The Emperor's eyes water.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8004" name="Frostbite Serpent" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7016" />
+      <card id="2164" name="Mirefang Stalker" />
+      <card id="2164" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7061" />
+      <card id="2182" name="Axolotl Sentinels" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="2182" mastery_level="2" name="Axolotl Sentinels" />
+      <card id="2133" mastery_level="3" name="Dawnglow Smasher" />
+      <card id="7242" mastery_level="4" name="Littlepond Twins" />
+      <card id="7132" mastery_level="5" name="Bastion Percher" />
+      <card id="7185" mastery_level="6" name="Crashing Tidalsaur" />
+      <card id="7203" mastery_level="7" name="Tuloom, Spirit Shaman" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>Cedric...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6427</id>
+    <name>Forgiveness Not Granted</name>
+    <energy>18</energy>
+    <desc>The Frog Emperor's wails spur the frogs back into actions. Their spears and bows are pointed at both of you again, and it would seem that Cedric's influence can't let you out completely free.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="8066" name="Winter's Crasher" />
+      <card id="7155" name="Seashell Footpad" />
+      <card id="7155" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7024" />
+      <card id="2090" name="Terra Dweller" />
+      <card id="2090" />
+      <card id="7157" name="Webtoe Quickfirst" />
+      <card id="7099" name="Toadplay" />
+      <card id="7157" mastery_level="2" name="Webtoe Quickfirst" />
+      <card id="7099" mastery_level="3" name="Toadplay" />
+      <card id="7094" mastery_level="4" name="Basilisk" />
+      <card id="7216" mastery_level="5" name="Shalefang" />
+      <card id="7187" mastery_level="6" name="Forest Hydra" />
+      <card id="7102" mastery_level="7" name="Croaker's Disciple" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>Cedric! You left me for some old Golden Leaf hag?! What was wrong with Dawnglow?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6428</id>
+    <name>Captive Ally</name>
+    <energy>18</energy>
+    <desc>Cedric backs away from the fuming Frog Emperor. The Dawnglow Frogs have resumed their attacks with renewed vigor. The Emperor shrilly shrieks his commands to any that obey him.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="2107" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="5096" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" />
+      <card id="5158" name="Chilltide Stormtender" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="5158" mastery_level="2" name="Chilltide Stormtender" />
+      <card id="5102" mastery_level="3" name="Tribe Tracker" />
+      <card id="5162" mastery_level="4" name="Aloier, Dragon Sentinel" />
+      <card id="5097" mastery_level="5" name="Sierra Dweller" />
+      <card id="5267" mastery_level="6" name="Dungeon Dragon" />
+      <card id="5204" mastery_level="7" name="Fra'mu, the Wise" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>You're coming back, even if I have to drag you back!</text>
+      </line>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>Viracocha, get them!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6429</id>
+    <name>False Chase</name>
+    <energy>18</energy>
+    <desc>The ground shakes as Viracocha takes a step forward. Frogs run between his gigantic legs as they prepare to obstruct your way. You grab Cedric and begin pushing past their ranks; it's time to get out of the swamp!</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8042" name="Winter's Crusher" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="2069" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="7128" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7010" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="7020" mastery_level="2" name="Trapper Frog" />
+      <card id="2034" mastery_level="3" name="Leap Frog Duo" />
+      <card id="7217" mastery_level="4" name="Amrita, Drake Healer" />
+      <card id="7008" mastery_level="5" name="Rock Dragon" />
+      <card id="7215" mastery_level="6" name="Forgewing Whelp" />
+      <card id="7154" mastery_level="7" name="Mollusk Snarecaster" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Refusing would only injure his pride further, and increase his incessant cries.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I will make a showing of chase, but you must escape and activate the Power Coils!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 
