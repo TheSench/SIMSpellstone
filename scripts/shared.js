@@ -1075,18 +1075,16 @@ function copy_skills_2(new_card, original_skills, mult) {
     var reusable = true;
     for (var key in original_skills) {
         var newSkill = original_skills[key];
-        if (newSkill.c) {   // If skill has a timer, we need to clone it
-            var copySkill = copy_skill(newSkill);
+        var copySkill = copy_skill(newSkill);
+        if (newSkill.c) { 
             setSkill_2(new_card, copySkill);
             skillTimers.push(copySkill);
             reusable = false;
         } else if (mult) {
-            var copySkill = copy_skill(newSkill);
-            //copySkill.x = ~~(copySkill.x * mult);   // Floor the results
             copySkill.x = Math.ceil(copySkill.x * mult);
             setSkill_2(new_card, copySkill);
         } else {            // If skill has no timer, we can use the same instance
-            setSkill_2(new_card, newSkill);
+            setSkill_2(new_card, copySkill);
         }
     }
     new_card.reusableSkills = reusable;
@@ -1152,7 +1150,7 @@ function copy_Skill_lists(new_card, new_skills, original_skills) {
 function copy_skill(original_skill) {
     var new_skill = {};
     new_skill.id = original_skill.id;
-    new_skill.x = original_skill.x;
+    new_skill.x = original_skill.x || 0;
     new_skill.mult = original_skill.mult;
     new_skill.on_delay_mult = original_skill.on_delay_mult;
     new_skill.all = original_skill.all;
