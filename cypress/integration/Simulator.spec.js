@@ -54,3 +54,8 @@ describe('Deck Tests', function() {
         // TODO: Dualstrike test
     });
 });
+
+describe('BGE Regression', function() {
+    // Was healing by NaN, killing all units played
+    testDeck('Age of Dragons (Doesn\'t heal by NaN)', 'QpLQAYCrCC', 'QpLQA', 100);
+});
