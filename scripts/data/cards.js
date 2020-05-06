@@ -75845,6 +75845,215 @@ var CARDS = {
 			}
 		}
 	},
+	"5612": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"id": "5612",
+		"maxLevel": 10,
+		"name": "Genen, the Icebreaker",
+		"picture": "Frog_Icetificer_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3,
+				"y": "1"
+			},
+			{
+				"id": "legion",
+				"x": 4
+			},
+			{
+				"id": "frost",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 28,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"attack": 10,
+				"health": 29,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"health": 30,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 5
+					}
+				]
+			},
+			"7": {
+				"health": 31,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 5
+					}
+				]
+			},
+			"8": {
+				"health": 32,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 6
+					}
+				]
+			},
+			"9": {
+				"attack": 12,
+				"health": 33,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 6
+					}
+				]
+			},
+			"10": {
+				"attack": 13,
+				"health": 34,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6,
+						"y": "1"
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"id": "frost",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
 	"6000": {
 		"attack": 4,
 		"card_type": "2",
@@ -96495,6 +96704,104 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"6271": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 4,
+		"health": 55,
+		"hidden_until": "1589216400000",
+		"id": "6271",
+		"maxLevel": 6,
+		"name": "Walker Frototype",
+		"picture": "Frog_Mecha_Giant_Robot_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3,
+				"y": "2"
+			},
+			{
+				"id": "burn",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 56,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 5
 					}
 				]
 			}
@@ -200808,6 +201115,104 @@ var CARDS = {
 			}
 		}
 	},
+	"16271": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 4,
+		"health": 56,
+		"hidden_until": "1589216400000",
+		"id": "16271",
+		"maxLevel": 6,
+		"name": "Stomper Frototype",
+		"picture": "Frog_Mecha_Giant_Robot_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 4,
+				"y": "2"
+			},
+			{
+				"id": "burn",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"4",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 57,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"attack": 14,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -289295,6 +289700,104 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"26271": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 4,
+		"health": 57,
+		"hidden_until": "1589216400000",
+		"id": "26271",
+		"maxLevel": 6,
+		"name": "Megaborg Frototype",
+		"picture": "Frog_Mecha_Giant_Robot_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 6,
+				"y": "2"
+			},
+			{
+				"id": "burn",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"4",
+			"16"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 15,
+				"skill": []
+			},
+			"3": {
+				"health": 58,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 7,
+						"y": "2"
+					},
+					{
+						"id": "burn",
+						"x": 7
 					}
 				]
 			}

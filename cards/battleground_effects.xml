@@ -3215,7 +3215,7 @@
       <scale_attributes base_mult=".3" mult=".01" />
     </effect>
   </battleground>
-  <!-- Campaign Event 21 weeks 5-8 -->
+  <!-- Campaign Event 22 weeks 5-8 -->
   <battleground>
     <id>2093</id>
     <name>Requiem of the Poisonous</name>
