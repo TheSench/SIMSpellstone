@@ -119333,6 +119333,166 @@ var CARDS = {
 			}
 		}
 	},
+	"7271": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1589475600000",
+		"id": "7271",
+		"maxLevel": 6,
+		"name": "Croakstack Rookies",
+		"picture": "Frog_Cute_Stack_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "armored",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 25,
+				"skill": []
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 26,
+				"skill": []
+			}
+		}
+	},
+	"7273": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1589821200000",
+		"id": "7273",
+		"maxLevel": 6,
+		"name": "Saposanto Fighters",
+		"picture": "Frog_Ring_Stars_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"id": "rally",
+				"x": 7,
+				"y": "4"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "4"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "4"
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"7600": {
 		"attack": 6,
 		"card_type": "2",
@@ -224196,6 +224356,192 @@ var CARDS = {
 			}
 		}
 	},
+	"17271": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1589475600000",
+		"id": "17271",
+		"maxLevel": 6,
+		"name": "Croakstack Squad",
+		"picture": "Frog_Cute_Stack_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "armored",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "armored",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
+	"17273": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1589821200000",
+		"id": "17273",
+		"maxLevel": 6,
+		"name": "Saposanto Stars",
+		"picture": "Frog_Ring_Stars_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 7
+			},
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "rally",
+				"x": 8,
+				"y": "4"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "4"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "4"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "4"
+					}
+				]
+			},
+			"5": {
+				"attack": 10,
+				"skill": []
+			},
+			"6": {
+				"health": 27,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -312928,6 +313274,192 @@ var CARDS = {
 					{
 						"id": "poison",
 						"x": 12
+					}
+				]
+			}
+		}
+	},
+	"27271": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1589475600000",
+		"id": "27271",
+		"maxLevel": 6,
+		"name": "Croakstack Knights",
+		"picture": "Frog_Cute_Stack_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27273": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1589821200000",
+		"id": "27273",
+		"maxLevel": 6,
+		"name": "Saposanto Luchadores",
+		"picture": "Frog_Ring_Stars_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "counter",
+				"x": 8
+			},
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "rally",
+				"x": 10,
+				"y": "4"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "4"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "4"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 11,
+						"y": "4"
 					}
 				]
 			}
