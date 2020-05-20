@@ -73613,6 +73613,86 @@ var CARDS = {
 			}
 		}
 	},
+	"5271": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 34,
+		"hidden_until": "1590426000000",
+		"id": "5271",
+		"maxLevel": 6,
+		"name": "Bubblebind Frog",
+		"picture": "Frog_Bubble_Sage_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 35,
+				"skill": []
+			},
+			"4": {
+				"attack": 11,
+				"skill": []
+			},
+			"5": {
+				"health": 36,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -119409,6 +119489,86 @@ var CARDS = {
 			},
 			"6": {
 				"health": 26,
+				"skill": []
+			}
+		}
+	},
+	"7272": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 23,
+		"hidden_until": "1590080400000",
+		"id": "7272",
+		"maxLevel": 6,
+		"name": "Mirage Nomad",
+		"picture": "Frog_Mirage_Nomad_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "fervor",
+				"x": 4,
+				"y": "4"
+			},
+			{
+				"id": "daze",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 24,
+				"skill": []
+			},
+			"3": {
+				"attack": 6,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 25,
 				"skill": []
 			}
 		}
@@ -178970,6 +179130,100 @@ var CARDS = {
 			}
 		}
 	},
+	"15271": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 36,
+		"hidden_until": "1590426000000",
+		"id": "15271",
+		"maxLevel": 6,
+		"name": "Bubblebind Mage",
+		"picture": "Frog_Bubble_Sage_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": []
+			},
+			"3": {
+				"attack": 12,
+				"skill": []
+			},
+			"4": {
+				"health": 38,
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -224449,6 +224703,99 @@ var CARDS = {
 			}
 		}
 	},
+	"17272": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1590080400000",
+		"id": "17272",
+		"maxLevel": 6,
+		"name": "Mirage Warrior",
+		"picture": "Frog_Mirage_Nomad_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "4"
+			},
+			{
+				"id": "daze",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"skill": []
+			}
+		}
+	},
 	"17273": {
 		"attack": 9,
 		"card_type": "2",
@@ -267899,6 +268246,73 @@ var CARDS = {
 					{
 						"id": "daze",
 						"x": 9
+					}
+				]
+			}
+		}
+	},
+	"25271": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1590426000000",
+		"id": "25271",
+		"maxLevel": 6,
+		"name": "Bubblebind Sage",
+		"picture": "Frog_Bubble_Sage_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 4
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			},
+			{
+				"id": "nullify",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"attack": 14,
+				"skill": []
+			},
+			"5": {
+				"health": 41,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			}
@@ -313367,6 +313781,99 @@ var CARDS = {
 						"all": "1",
 						"id": "heal",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"27272": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1590080400000",
+		"id": "27272",
+		"maxLevel": 6,
+		"name": "Mirage Beduin",
+		"picture": "Frog_Mirage_Nomad_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "fervor",
+				"x": 6,
+				"y": "4"
+			},
+			{
+				"id": "daze",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "4"
+					},
+					{
+						"id": "daze",
+						"x": 9
 					}
 				]
 			}
