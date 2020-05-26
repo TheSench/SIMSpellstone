@@ -2417,7 +2417,7 @@ var SIMULATOR = {};
 		var echo = '';
 		if (debug) {
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-			if (shrouded) echo += ' Stasis: -' + shrouded;
+			if (shrouded) echo += ' Shroud: -' + shrouded;
 			if (protect) echo += ' Barrier: -' + protect;
 			if (warded) echo += ' Ward: -' + warded;
 		}
