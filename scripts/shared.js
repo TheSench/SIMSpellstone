@@ -751,7 +751,7 @@ function addRunesToSkills(skills, runes, runeMult) {
     if (!runes) return;
     for (var i = 0, len = runes.length; i < len; i++) {
         var runeID = runes[i].id;
-        var statBoost = RUNES[runeID].stat_boost;
+        var statBoost = getRune(runeID).stat_boost;
         for (var key in statBoost) {
             var boost = statBoost[key];
             if (key == "skill") {
@@ -777,7 +777,7 @@ function addRunesToSkills(skills, runes, runeMult) {
 }
 
 var getRune = function (rune_id) {
-    return RUNES[rune_id];
+    return RUNES[rune_id] || { stat_boost: {} };
 };
 
 var canUseRune = function (card, runeID) {

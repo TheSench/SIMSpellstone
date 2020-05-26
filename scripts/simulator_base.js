@@ -2399,7 +2399,7 @@ var SIMULATOR = {};
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
-		damage += enfeeble - shrouded;
+		damage += enfeeble;
 		var shatter = false;
 		if (warded) {
 			damage -= applyDamageReduction(target, 'warded', damage);
