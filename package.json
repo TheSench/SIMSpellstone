@@ -21,7 +21,7 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
-    "http-server": "^0.11.1",
+    "http-server": "^0.12.3",
     "imagemin-mozjpeg": "^8.0.0",
     "time-grunt": "^2.0.0"
   },
