@@ -2860,6 +2860,91 @@
       <skill id="leech" x="11" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4033</id>
+    <card_type>2</card_type>
+    <name>Balt, Raptor's Captain</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Avian_Duck_Captain_A</picture>
+    <asset_bundle>192</asset_bundle>
+    <item_name>Balt Stone</item_name>
+    <item_desc>Collect Balt Stones to upgrade the Legendary Balt, Raptor's Captain card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <attack>10</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="legion" x="4" />
+    <skill id="berserk" x="3" />
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="evade" x="2" />
+      <skill id="legion" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="evade" x="2" />
+      <skill id="legion" x="5" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <health>29</health>
+      <skill id="evade" x="3" />
+      <skill id="legion" x="5" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="evade" x="3" />
+      <skill id="legion" x="6" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>13</attack>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>32</health>
+      <skill id="evade" x="4" />
+      <skill id="legion" x="6" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>33</health>
+      <skill id="evade" x="4" />
+      <skill id="legion" x="7" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>14</attack>
+      <health>34</health>
+      <skill id="evade" x="4" />
+      <skill id="legion" x="7" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->

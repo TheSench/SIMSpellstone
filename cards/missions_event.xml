@@ -45144,5 +45144,368 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 23 Node 1 -->
+  <mission>
+    <id>6430</id>
+    <name>Past Escape</name>
+    <energy>18</energy>
+    <desc>You have finished narrowly escaping from the Dawnglow frogs, although some of the more adventerous ones even chased your airship. Even when you land in Luminis, you have to fight off a patrol of Frogs.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8005" name="Atlas' Shaman" />
+      <card id="1618" name="Frog Scout" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="1618" name="Frog Scout" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="2069" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2133" mastery_level="2" name="Dawnglow Smasher" />
+      <card id="2034" mastery_level="3" name="Leap Frog Duo" />
+      <card id="2041" mastery_level="4" name="Sharpwing" />
+      <card id="2133" mastery_level="5" name="Dawnglow Smasher" />
+      <card id="7154" mastery_level="6" name="Mollusk Snarecaster" />
+      <card id="7110" mastery_level="7" name="Toxin Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6431</id>
+    <name>Yuriel's Welcome</name>
+    <energy>18</energy>
+    <desc>Smoke rises from Luminis's castle. Stray fires light the plains. Everything is drenched in a strange magical light. A familiar face runs to meet you.</desc>
+    <commander id="305" />
+    <deck>
+      <card id="8023" name="Fortune's Swabbies" />
+      <card id="1313" name="Lavafrog" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" />
+      <card id="6153" name="Ribbit Roaster" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6153" mastery_level="2" name="Ribbit Roaster" />
+      <card id="6102" mastery_level="3" name="Ribbithold Guards" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="6153" mastery_level="5" name="Ribbit Roaster" />
+      <card id="6133" mastery_level="6" name="Cress, Flamespeaker" />
+      <card id="6171" mastery_level="7" name="Kiki" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Ah, adventurer. To what do we owe this unexpected pleasure?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6432</id>
+    <name>Luminis Disorder</name>
+    <energy>18</energy>
+    <desc>Elyse leaves the airship with you. She looks at the smoking castle in the distance, then to the owl. Luminis has changed since the last time you three met here.</desc>
+    <commander id="307" />
+    <deck>
+      <card id="8077" name="Vorpal Berserker" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1313" name="Lavafrog" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" />
+      <card id="2162" name="Frog Samurai" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="2162" mastery_level="2" name="Frog Samurai" />
+      <card id="6020" mastery_level="3" name="Croak Piercer" />
+      <card id="6112" mastery_level="4" name="Fire Hawk" />
+      <card id="2162" mastery_level="5" name="Frog Samurai" />
+      <card id="6169" mastery_level="6" name="Deatheater" />
+      <card id="6173" mastery_level="7" name="Toxophilite Watcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Err... everything okay here in Luminis? It looks like your castle is... on fire...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6433</id>
+    <name>Aether Civil War</name>
+    <energy>18</energy>
+    <desc>Luminis is at war with itself. Avians are fighting other Avians. Even one of the frog patrols sent to chase you is caught in a skirmish.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8072" name="Atlas' Sage" />
+      <card id="1015" name="Windfrog" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1028" />
+      <card id="2161" name="Frog Templar" />
+      <card id="2011" name="Poliworg" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2161" mastery_level="2" name="Frog Templar" />
+      <card id="2011" mastery_level="3" name="Poliworg" />
+      <card id="2119" mastery_level="4" name="Flaming Hailwing" />
+      <card id="2161" mastery_level="5" name="Frog Templar" />
+      <card id="1044" mastery_level="6" name="Blackhawk Cavalier" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Without Lord Samael, Luminis's inhabitants have fallen into disorder.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>They are torn between following their old ways, or the new Aether leader, Kensho.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6434</id>
+    <name>Power Coil Search</name>
+    <energy>18</energy>
+    <desc>The map Viracocha gave you has a Power Coil listed in Luminis. Although he told you what to look for, he failed to mention what exactly a Power Coil looks like.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="8005" name="Atlas' Shaman" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1015" name="Windfrog" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" />
+      <card id="2183" name="Storm Disciple" />
+      <card id="5053" name="Anura Witch" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="2183" mastery_level="2" name="Storm Disciple" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="5044" mastery_level="4" name="Telepathic Magi" />
+      <card id="2183" mastery_level="5" name="Storm Disciple" />
+      <card id="5051" mastery_level="6" name="Amphibious Digger" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>We came here looking for something called a Power Coil. But there must be something we can do to help here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6435</id>
+    <name>Ancient Knowledge</name>
+    <energy>18</energy>
+    <desc>Yuriel has vast knowledge of ancient machines and devices, having spent a good deal of time in Skyhaven's Archives. If anyone can point you on the right path to find the Power Coils, it's him.</desc>
+    <commander id="267" />
+    <deck>
+      <card id="8077" name="Vorpal Berserker" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1015" name="Windfrog" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="5102" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="5099" mastery_level="2" name="Croak Dropper" />
+      <card id="5020" mastery_level="3" name="Frost Frog" />
+      <card id="5113" mastery_level="4" name="Bishop Rook" />
+      <card id="5099" mastery_level="5" name="Croak Dropper" />
+      <card id="5203" mastery_level="6" name="Skymar Cavalier" />
+      <card id="5059" mastery_level="7" name="Bemola" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hoo, don't worry, most people have left Luminis already.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Perhaps what you're looking for is that tower generating magical electricity?</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 23 Node 2 -->
+  <mission>
+    <id>6436</id>
+    <name>Aether Avians</name>
+    <energy>18</energy>
+    <desc>Luminis residents are fighting each other. A group of Avians notices you on the path, and bar your way.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8072" name="Atlas' Sage" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="2107" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5146" />
+      <card id="5020" name="Frost Frog" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5020" mastery_level="2" name="Frost Frog" />
+      <card id="1027" mastery_level="3" name="Griffin Knight" />
+      <card id="5146" mastery_level="4" name="Lullmage Whisperer" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="5202" mastery_level="6" name="Alchebian" />
+      <card id="5198" mastery_level="7" name="Sea's Sky Forces" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Cultist</commander>
+        <enemy>0</enemy>
+        <text>Stop, in the name of Lord Kensho!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6437</id>
+    <name>Fighting Further</name>
+    <energy>18</energy>
+    <desc>You continue down the path towards the tower of electricity. Yuriel and Elyse help you fend off the unhappy Luminis residents.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8005" name="Atlas' Shaman" />
+      <card id="1015" name="Windfrog" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5050" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="2081" name="Starstriker" />
+      <card id="5155" mastery_level="2" name="Silvertongue Fencer" />
+      <card id="2081" mastery_level="3" name="Starstriker" />
+      <card id="5050" mastery_level="4" name="Cloud Spear" />
+      <card id="5166" mastery_level="5" name="Hoarfrost Buzzard" />
+      <card id="5269" mastery_level="6" name="Jolty Jouster" />
+      <card id="5110" mastery_level="7" name="Alectryon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6438</id>
+    <name>Chaotic Aether</name>
+    <energy>18</energy>
+    <desc>Chaos has enveloped the once peaceful land of Luminis. Remnants of older battles are clearly visible, with scorch marks on brick road and charred grass.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8023" name="Fortune's Swabbies" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1015" name="Windfrog" />
+      <card id="5130" name="Drakeling Fosterer" />
+      <card id="5130" />
+      <card id="5158" name="Chilltide Stormtender" />
+      <card id="5158" />
+      <card id="2161" name="Frog Templar" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2161" mastery_level="2" name="Frog Templar" />
+      <card id="2040" mastery_level="3" name="Owlmancer" />
+      <card id="5158" mastery_level="4" name="Chilltide Stormtender" />
+      <card id="5130" mastery_level="5" name="Drakeling Fosterer" />
+      <card id="5230" mastery_level="6" name="Gustblood Djinn" />
+      <card id="2068" mastery_level="7" name="Whitesail Wyvern" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I can't believe I'm saying this, but I miss when Samael lead the Aether!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6439</id>
+    <name>Samael's Leadership</name>
+    <energy>18</energy>
+    <desc>Yuriel reminisces over the old days. Luminis was once considered a central hub on the continent, before becoming too exclusive, to eventually crumbling in power.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8072" name="Atlas' Sage" />
+      <card id="1618" name="Frog Scout" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7020" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="2034" mastery_level="2" name="Leap Frog Duo" />
+      <card id="7057" mastery_level="3" name="Bill Crasher" />
+      <card id="7020" mastery_level="4" name="Trapper Frog" />
+      <card id="7030" mastery_level="5" name="Arctic Ambusher" />
+      <card id="7101" mastery_level="6" name="Shriekers" />
+      <card id="7186" mastery_level="7" name="Owlscar Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hoo, he may have had a poor reputation among the other tribes, but he was a fair leader to us Aether.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6440</id>
+    <name>Wisp Roadblock</name>
+    <energy>18</energy>
+    <desc>You remember going down this path a long time ago with Ursurio and Elyse. The wisps remember too, and refuse to let you pass without a rematch.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8005" name="Atlas' Shaman" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5020" />
+      <card id="2011" name="Poliworg" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5060" mastery_level="3" name="Quack Apprentice" />
+      <card id="5020" mastery_level="4" name="Frost Frog" />
+      <card id="2119" mastery_level="5" name="Flaming Hailwing" />
+      <card id="5204" mastery_level="6" name="Fra'mu, the Wise" />
+      <card id="5014" mastery_level="7" name="Winged Raptor" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6441</id>
+    <name>Electric Tower</name>
+    <energy>18</energy>
+    <desc>The three of you approach the tower. It rises to the sky, crackling with electricity. A strange aparatus is at its base, beaming with magic.</desc>
+    <commander id="305" />
+    <deck>
+      <card id="8077" name="Vorpal Berserker" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1313" name="Lavafrog" />
+      <card id="2165" name="Twinclaw Rogue" />
+      <card id="2165" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="6102" />
+      <card id="6154" name="Egg Thief" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6154" mastery_level="2" name="Egg Thief" />
+      <card id="6054" mastery_level="3" name="Shadowcrafter" />
+      <card id="6102" mastery_level="4" name="Ribbithold Guards" />
+      <card id="2165" mastery_level="5" name="Twinclaw Rogue" />
+      <card id="6271" mastery_level="6" name="Walker Frototype" />
+      <card id="6174" mastery_level="7" name="Deatheye Owl" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>There it is! If that isn't a Power Coil, I don't know what is.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

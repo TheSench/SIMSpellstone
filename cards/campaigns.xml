@@ -8453,6 +8453,80 @@
     </rewards>
     <find_item id="3110" drop_per_energy=".8" />
   </campaign>
+  <!-- ================================== Campaign Event 23 weeks 1-4 / Return to Luminis ================================== -->
+  <campaign>
+    <id>1250</id>
+    <name>Return to Luminis</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1590685200</locked_start_time>
+    <!--  Thursday, 28 May 2020 17:00:00 -->
+    <location_id>29</location_id>
+    <x>725</x>
+    <y>565</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6430</mission_id>
+      <mission_id>6431</mission_id>
+      <mission_id>6432</mission_id>
+      <mission_id>6433</mission_id>
+      <mission_id>6434</mission_id>
+      <mission_id>6435</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2185" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2081" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3114" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3113" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1251</id>
+    <name>Civil War</name>
+    <campaign_req id="1250" level="1" />
+    <locked_start_time>1591894800</locked_start_time>
+    <!--  Thursday, 11 June 2020 17:00:00 -->
+    <battleground_id>2095</battleground_id>
+    <location_id>29</location_id>
+    <x>560</x>
+    <y>490</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6436</mission_id>
+      <mission_id>6437</mission_id>
+      <mission_id>6438</mission_id>
+      <mission_id>6439</mission_id>
+      <mission_id>6440</mission_id>
+      <mission_id>6441</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2186" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2117" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3114" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3113" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

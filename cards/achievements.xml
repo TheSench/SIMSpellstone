@@ -13704,6 +13704,133 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 23 weeks 1-4 -->
+  <achievement>
+    <id>3576</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Luminis</name>
+    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 1.</desc>
+    <mission_req>6430</mission_req>
+    <locked_start_time>1590685200</locked_start_time>
+    <!--  Thursday, 28 May 2020 17:00:00 -->
+    <req>
+      <campaign>1250</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3113" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7060" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3577</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Luminis</name>
+    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 2.</desc>
+    <mission_req>6430</mission_req>
+    <locked_start_time>1590685200</locked_start_time>
+    <!--  Thursday, 28 May 2020 17:00:00 -->
+    <achievement_req>3576</achievement_req>
+    <req>
+      <campaign>1250</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3578</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Luminis</name>
+    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 4.</desc>
+    <mission_req>6430</mission_req>
+    <locked_start_time>1590685200</locked_start_time>
+    <!--  Thursday, 28 May 2020 17:00:00 -->
+    <achievement_req>3577</achievement_req>
+    <req>
+      <campaign>1250</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3579</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Luminis</name>
+    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 6.</desc>
+    <mission_req>6430</mission_req>
+    <locked_start_time>1590685200</locked_start_time>
+    <!--  Thursday, 28 May 2020 17:00:00 -->
+    <achievement_req>3578</achievement_req>
+    <req>
+      <campaign>1250</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3580</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Civil War</name>
+    <desc>Complete the 'Civil War' campaign on Mastery Level 2.</desc>
+    <mission_req>6436</mission_req>
+    <locked_start_time>1591894800</locked_start_time>
+    <!--  Thursday, 11 June 2020 17:00:00 -->
+    <req>
+      <campaign>1251</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3581</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Civil War</name>
+    <desc>Complete the 'Civil War' campaign on Mastery Level 4.</desc>
+    <mission_req>6436</mission_req>
+    <locked_start_time>1591894800</locked_start_time>
+    <!--  Thursday, 11 June 2020 17:00:00 -->
+    <achievement_req>3580</achievement_req>
+    <req>
+      <campaign>1251</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3582</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Civil War</name>
+    <desc>Complete the 'Civil War' campaign on Mastery Level 6.</desc>
+    <mission_req>6436</mission_req>
+    <locked_start_time>1591894800</locked_start_time>
+    <!--  Thursday, 11 June 2020 17:00:00 -->
+    <achievement_req>3581</achievement_req>
+    <req>
+      <campaign>1251</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
