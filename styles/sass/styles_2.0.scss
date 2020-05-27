@@ -166,29 +166,11 @@ label[for]:not(.grey) {
 .ui-icon {
     width: 16px;
     height: 16px;
-    background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
-}
-
-.ui-state-default .ui-icon {
-    background-image: url("../../../Content/themes/base/images/ui-icons_888888_256x240.png");
-}
-
-.ui-state-hover .ui-icon,
-.ui-state-focus .ui-icon {
-    background-image: url("../../../Content/themes/base/images/ui-icons_454545_256x240.png");
+    background-image: url("images/ui-icons_454545_256x240.png");
 }
 
 .ui-state-active .ui-icon {
-    background-image: url("../../../Content/themes/base/images/ui-icons_454545_256x240.png");
-}
-
-.ui-state-highlight .ui-icon {
-    background-image: url("../../../Content/themes/base/images/ui-icons_2e83ff_256x240.png");
-}
-
-.ui-state-error .ui-icon,
-.ui-state-error-text .ui-icon {
-    background-image: url("../../../Content/themes/base/images/ui-icons_cd0a0a_256x240.png");
+    background-image: url("images/ui-icons_454545_256x240.png");
 }
 
 .ui-accordion {
@@ -276,22 +258,22 @@ h2 .ui-icon {
 
     .ui-dialog-header {
         border: 1px solid $primary-neutral;
-        background: $primary-neutral url("../../../Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+        background: $primary-neutral url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
         color: #222222;
         font-weight: bold;
 
         .ui-icon {
-            background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+            background-image: url("images/ui-icons_222222_256x240.png");
         }
     }
 
     .ui-dialog-content {
-        //background: $secondary-white url("../../../Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+        //background: $secondary-white url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
         background-color: $secondary-white;
         color: $secondary-black;
 
         .ui-icon {
-            background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+            background-image: url("images/ui-icons_222222_256x240.png");
         }
     }
 

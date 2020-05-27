@@ -270,6 +270,16 @@ module.exports = function (grunt) {
                     },
                 ],
             },
+            images: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'Content/themes/base/images',
+                        src: ['**'],
+                        dest: './dist/images'
+                    },
+                ],
+            },
         },
         cacheBust: {
             deckbuilder: {
@@ -319,7 +329,7 @@ module.exports = function (grunt) {
         grunt.task.run('cssmin');
         grunt.task.run('html');
     });
-    grunt.registerTask('build', ['clean', /*'jshint', */'sass', 'cssmin', 'imagemin', 'scripts']);
+    grunt.registerTask('build', ['clean', /*'jshint', */'sass', 'cssmin', 'copy:images', 'imagemin', 'scripts']);
 
     grunt.registerTask('default', ['scripts']);
 
