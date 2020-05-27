@@ -36,8 +36,8 @@
             <div id="setup-container" class="section accordion start-open">
                 <h2>Setup</h2>
                 <div>
-                    <div class="tableRow">
-                        <div id="attacker-container" class="pane">
+                    <div class="grid-row">
+                        <div id="attacker-container" class="grid-pane">
                             <h3>Attacker</h3>
                             <div>
                                 <div id="attacker-hash-container">
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="defender-container" class="pane">
+                        <div id="defender-container" class="grid-pane">
                             <h3>Defender</h3>
                             <div>
                                 <div id="defender-hash-container">
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pane">
+                        <div class="grid-pane">
                             <div>
                                 <h3>Battlefield</h3>
                             </div>
@@ -127,15 +127,15 @@
                                 <div id="siege-container">
                                     <input type="checkbox" id="siege" ng-model="tower"><label for="siege">Use Tower</label>
                                 </div>
-                                <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
+                                <input type="number" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
                                 <select id="tower_type" ng-disabled="!tower">
                                     <option ng-repeat="type in towerTypes()" value="{{type.id}}">{{type.name}}</option>
                                 </select>
                             </div>
                             <div id="bge-container">
                                 <h6>Battleground Effects</h6>
-                                <div style="position: relative; width: 200px; height: 103px; overflow-y: scroll;">
-                                    <div id="battleground" style="position: absolute; width: 100%;">
+                                <div style="height: 103px;" class="bge-container">
+                                    <div id="battleground" class="bge-list">
                                         <div ng-repeat="BGE in selectableBattlegrounds()" class="tooltip-container">
                                             <input type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>
@@ -145,8 +145,8 @@
                             </div>
                             <div id="attacker-bges">
                                 <h6>Personal Battlegrounds</h6>
-                                <div style="position: relative; width: 200px; height: 40px; overflow-y: scroll;">
-                                    <div id="self-battleground" style="position: absolute; width: 100%;">
+                                <div style="height: 40px;" class="bge-container">
+                                    <div id="self-battleground" class="bge-list">
                                         <div ng-repeat="BGE in personalBattlegrounds()" class="tooltip-container">
                                             <input type="checkbox" name="self-battleground" id="self-battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="self-battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>
@@ -156,8 +156,8 @@
                             </div>
                             <div id="defender-bges">
                                 <h6>Enemy Battlegrounds</h6>
-                                <div style="position: relative; width: 200px; height: 40px; overflow-y: scroll;">
-                                    <div id="enemy-battleground" style="position: absolute; width: 100%;">
+                                <div style="height: 40px;" class="bge-container">
+                                    <div id="enemy-battleground" class="bge-list">
                                         <div ng-repeat="BGE in personalBattlegrounds()" class="tooltip-container">
                                             <input type="checkbox" name="enemy-battleground" id="enemy-battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="enemy-battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>

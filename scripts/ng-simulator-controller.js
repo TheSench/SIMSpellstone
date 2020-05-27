@@ -182,11 +182,18 @@
 
         $scope.selectableBattlegrounds = function () {
             var selectable = [];
-            for (var id in $scope.battlegrounds) {
-                var BGE = $scope.battlegrounds[id];
-                if (!(BGE.hidden || BGE.isTower)) selectable.push(BGE);
-            }
-            selectable.sort(function (a, b) { return a.id - b.id; });
+            var names = {};
+            Object.keys($scope.battlegrounds)
+                .sort(function (a,b) { return Number(b) - Number(a); })
+                .forEach(function (id) {
+                    var BGE = $scope.battlegrounds[id];
+                    if (!(BGE.hidden || BGE.isTower) && !names[BGE.name]) {
+                        selectable.push(BGE);
+                        names[BGE.name] = BGE.id;
+                    }
+                });
+            // selectable.sort(function (a, b) { return a.id - b.id; });
+            selectable.sort(function (a, b) { return a.name.localeCompare(b.name); });
             return selectable;
         };
 

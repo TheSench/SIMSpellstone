@@ -53,11 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 div.section {
-    border: 2px solid $primary-black;
-    border-radius: 10px 10px 0 0;
-    padding-bottom: 2px;
-    max-width: 555px;
-
     h1, h2, h3, h4, h5, h6 {
         color: $primary-black;
         background-color: $primary-neutral;
@@ -331,6 +326,11 @@ h2 .ui-icon {
     display: table-row;
 }
 
+.grid-row {
+    display: grid;
+    grid-template-columns: 200px 200px auto;
+}
+
 .cell {
     display: table-cell;
     vertical-align: top;
@@ -441,4 +441,13 @@ label:hover + .tooltip {
 
 .small-font {
     font-size: small;
+}
+
+.bge-container {
+    overflow-y: auto;
+}
+
+.bge-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
