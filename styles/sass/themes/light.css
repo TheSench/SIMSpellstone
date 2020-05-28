@@ -150,6 +150,9 @@ input[type=button] {
 label[for]:not(.grey) {
   color: #1d1d1d;
 }
+.obsolete label[for]:not(.grey) {
+  color: gray;
+}
 
 /* states and images */
 .ui-icon {
@@ -398,6 +401,10 @@ label:hover + .tooltip {
 .bge-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.current-bge {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=light.css.map */

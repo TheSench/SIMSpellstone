@@ -3,7 +3,7 @@
 <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
-    <link id="theme" rel="stylesheet" type="text/css" href="dist/light.min.css?72c5e2f86e827a2e">
+    <link id="theme" rel="stylesheet" type="text/css" href="dist/light.min.css?ae091847c9d2a4ce">
     <link rel="stylesheet" type="text/css" href="dist/main.min.css?533868e363be0168">
     <link rel="stylesheet" type="text/css" href="dist/spritesheet.min.css?f4005c9ade414807">
     <link rel="icon" type="image/png" href="res/favicon-16x16.png">
@@ -11,7 +11,7 @@
 
     <script src="dist/vendor.js"></script>
     <script src="dist/data.min.js"></script>
-    <script src="dist/simulator.min.js?319e73c474a59f2d"></script>
+    <script src="dist/simulator.min.js?56ac0041dbe39dc5"></script>
 </head>
 <body ng-controller="SimulatorCtrl" ng-init="campaignSections()">
     <header id="header"></header>
@@ -135,7 +135,7 @@
                                 <h6>Battleground Effects</h6>
                                 <div style="height: 103px;" class="bge-container">
                                     <div id="battleground" class="bge-list">
-                                        <div ng-repeat="BGE in selectableBattlegrounds()" class="tooltip-container">
+                                        <div ng-repeat="BGE in selectableBattlegrounds()" class="tooltip-container" ng-class="BGE.classes">
                                             <input type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>
                                         </div>

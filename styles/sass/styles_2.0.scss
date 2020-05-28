@@ -160,6 +160,10 @@ input[type=button] {
 
 label[for]:not(.grey) {
     color: $secondary-black;
+
+    .obsolete & {
+        color: $secondary-color;
+    }
 }
 
 /* states and images */
@@ -432,4 +436,8 @@ label:hover + .tooltip {
 .bge-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.current-bge {
+    font-weight: bold;
 }

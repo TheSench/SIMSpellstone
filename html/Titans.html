@@ -135,7 +135,7 @@
                                 <h6>Battleground Effects</h6>
                                 <div style="height: 103px;" class="bge-container">
                                     <div id="battleground" class="bge-list">
-                                        <div ng-repeat="BGE in selectableBattlegrounds()" class="tooltip-container">
+                                        <div ng-repeat="BGE in selectableBattlegrounds()" class="tooltip-container" ng-class="BGE.classes">
                                             <input type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
                                             <label for="battleground_{{BGE.id}}" bge-desc="{{BGE.desc}}" ng-bind="BGE.name"></label>
                                         </div>

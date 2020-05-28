@@ -187,13 +187,29 @@
                 .sort(function (a,b) { return Number(b) - Number(a); })
                 .forEach(function (id) {
                     var BGE = $scope.battlegrounds[id];
-                    if (!(BGE.hidden || BGE.isTower) && !names[BGE.name]) {
+                    var bgeId = Number(BGE.id);
+                    if (!(BGE.hidden || BGE.isTower)) {
                         selectable.push(BGE);
-                        names[BGE.name] = BGE.id;
+                        BGE.classes = []
+                        if (!names[BGE.name]) {
+                            names[BGE.name] = BGE;
+                        } else if (current_bges.indexOf(bgeId) >= 0) {
+                            var prevBGE = names[BGE.name]
+                            prevBGE.obsolete = true
+                            prevBGE.classes.push('obsolete');
+                            names[BGE.name] = BGE;
+                        } else {
+                            BGE.obsolete = true
+                            BGE.classes.push('obsolete');
+                        }
+
+                        if (current_bges.indexOf(bgeId) >= 0) {
+                            BGE.classes.push('current-bge');
+                        }
                     }
                 });
             // selectable.sort(function (a, b) { return a.id - b.id; });
-            selectable.sort(function (a, b) { return a.name.localeCompare(b.name); });
+            selectable.sort(function (a, b) { return a.name.localeCompare(b.name) || a.id - b.id; });
             return selectable;
         };
 
