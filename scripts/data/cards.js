@@ -76518,6 +76518,169 @@ var CARDS = {
 			}
 		}
 	},
+	"5613": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 35,
+		"id": "5613",
+		"maxLevel": 10,
+		"name": "Caraca, the Redeemed",
+		"picture": "Avian_Ex_Crimsonwing_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"health": 36,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"attack": 11,
+				"health": 37,
+				"skill": []
+			},
+			"5": {
+				"attack": 12,
+				"health": 38,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"7": {
+				"attack": 13,
+				"health": 41,
+				"skill": []
+			},
+			"8": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"9": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"10": {
+				"attack": 14,
+				"health": 42,
+				"skill": []
+			}
+		}
+	},
 	"6000": {
 		"attack": 4,
 		"card_type": "2",
@@ -120189,6 +120352,73 @@ var CARDS = {
 			},
 			"6": {
 				"health": 36,
+				"skill": []
+			}
+		}
+	},
+	"7275": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1591635600000",
+		"id": "7275",
+		"maxLevel": 6,
+		"name": "Winterheart Ballerina",
+		"picture": "Avian_Ballerina_Swan_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "heal",
+				"x": 5,
+				"y": "3"
+			},
+			{
+				"id": "frost",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "heal",
+						"x": 6,
+						"y": "3"
+					},
+					{
+						"id": "frost",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"attack": 7,
+				"skill": []
+			},
+			"6": {
+				"health": 20,
 				"skill": []
 			}
 		}
@@ -225846,6 +226076,99 @@ var CARDS = {
 			}
 		}
 	},
+	"17275": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1591635600000",
+		"id": "17275",
+		"maxLevel": 6,
+		"name": "Winterheart Dancer",
+		"picture": "Avian_Ballerina_Swan_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "heal",
+				"x": 6,
+				"y": "3"
+			},
+			{
+				"id": "frost",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "heal",
+						"x": 6,
+						"y": "3"
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "heal",
+						"x": 7,
+						"y": "3"
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"attack": 8,
+				"skill": []
+			},
+			"5": {
+				"health": 21,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "3"
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -315309,6 +315632,99 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"27275": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 1,
+		"health": 21,
+		"hidden_until": "1591635600000",
+		"id": "27275",
+		"maxLevel": 6,
+		"name": "Winterheart Princess",
+		"picture": "Avian_Ballerina_Swan_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "heal",
+				"x": 8,
+				"y": "3"
+			},
+			{
+				"id": "frost",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 22,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "3"
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "3"
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "heal",
+						"x": 9,
+						"y": "3"
+					},
+					{
+						"id": "frost",
+						"x": 3
 					}
 				]
 			}

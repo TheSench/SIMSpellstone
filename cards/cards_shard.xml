@@ -4080,6 +4080,86 @@
       <skill id="frost" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5613</id>
+    <card_type>2</card_type>
+    <name>Caraca, the Redeemed</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Avian_Ex_Crimsonwing_A</picture>
+    <asset_bundle>192</asset_bundle>
+    <item_name>Caraca Stone</item_name>
+    <item_desc>Collect Caraca Stones to upgrade the Legendary Caraca, the Redeemed card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <attack>9</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="rally" x="3" all="1" />
+    <skill id="protect" x="3" all="1" />
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <health>36</health>
+      <skill id="stasis" x="4" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="protect" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="protect" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <health>38</health>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="protect" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>40</health>
+      <skill id="stasis" x="6" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="protect" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>13</attack>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="stasis" x="6" />
+      <skill id="rally" x="6" all="1" />
+      <skill id="protect" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="stasis" x="7" />
+      <skill id="rally" x="6" all="1" />
+      <skill id="protect" x="7" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>14</attack>
+      <health>42</health>
+    </upgrade>
+  </unit>
   <!-- ============================== -->
   <!-- === CHAOS PREMIUM CHAMPION === -->
   <!-- ============================== -->
