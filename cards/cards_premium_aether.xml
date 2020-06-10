@@ -34855,6 +34855,140 @@
       <skill id="nullify" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5272</id>
+    <card_type>2</card_type>
+    <name>Balam Sphinx</name>
+    <picture>Avian_Jaguar_Sphinx_A</picture>
+    <asset_bundle>192</asset_bundle>
+    <hidden_until_time>1591894800</hidden_until_time>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="protect" x="1" all="1" />
+    <skill id="nullify" x="2" />
+    <skill id="berserk" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="2" all="1" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="2" all="1" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="protect" x="2" all="1" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15272</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Balam Protector</name>
+    <picture>Avian_Jaguar_Sphinx_A</picture>
+    <asset_bundle>192</asset_bundle>
+    <hidden_until_time>1591894800</hidden_until_time>
+    <attack>8</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="protect" x="2" all="1" />
+    <skill id="nullify" x="3" />
+    <skill id="berserk" x="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="protect" x="3" all="1" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="3" all="1" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="3" all="1" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>9</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25272</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Balam Deity</name>
+    <picture>Avian_Jaguar_Sphinx_B</picture>
+    <asset_bundle>192</asset_bundle>
+    <hidden_until_time>1591894800</hidden_until_time>
+    <attack>9</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="protect" x="3" all="1" />
+    <skill id="nullify" x="4" />
+    <skill id="berserk" x="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="4" all="1" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="4" all="1" />
+      <skill id="nullify" x="5" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="protect" x="4" all="1" />
+      <skill id="nullify" x="5" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

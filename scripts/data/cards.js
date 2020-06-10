@@ -25284,6 +25284,137 @@ var CARDS = {
 			}
 		}
 	},
+	"447": {
+		"card_type": "1",
+		"health": 91,
+		"id": "447",
+		"maxLevel": 6,
+		"name": "Aether Construct",
+		"picture": "portrait_lightwisp",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1
+			},
+			{
+				"id": "enhance",
+				"s": "evade",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"id": "enhance",
+						"s": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"id": "enhance",
+						"s": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"id": "enhance",
+						"s": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 5
+					},
+					{
+						"id": "enhance",
+						"s": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -74077,6 +74208,99 @@ var CARDS = {
 			}
 		}
 	},
+	"5272": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1591894800000",
+		"id": "5272",
+		"maxLevel": 6,
+		"name": "Balam Sphinx",
+		"picture": "Avian_Jaguar_Sphinx_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 1
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -120419,6 +120643,77 @@ var CARDS = {
 			},
 			"6": {
 				"health": 20,
+				"skill": []
+			}
+		}
+	},
+	"7276": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1592240400000",
+		"id": "7276",
+		"maxLevel": 6,
+		"name": "Terror Bird Mount",
+		"picture": "Avian_Terror_Mount_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "fervor",
+				"x": 4,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"attack": 7,
+				"skill": []
+			},
+			"6": {
+				"health": 26,
 				"skill": []
 			}
 		}
@@ -180242,6 +180537,99 @@ var CARDS = {
 			}
 		}
 	},
+	"15272": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1591894800000",
+		"id": "15272",
+		"maxLevel": 6,
+		"name": "Balam Protector",
+		"picture": "Avian_Jaguar_Sphinx_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -226169,6 +226557,92 @@ var CARDS = {
 			}
 		}
 	},
+	"17276": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1592240400000",
+		"id": "17276",
+		"maxLevel": 6,
+		"name": "Terror Bird Pet",
+		"picture": "Avian_Terror_Mount_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "fervor",
+				"x": 5,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"18005": {
 		"attack": 7,
 		"card_type": "2",
@@ -269830,6 +270304,99 @@ var CARDS = {
 					},
 					{
 						"id": "nullify",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"25272": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1591894800000",
+		"id": "25272",
+		"maxLevel": 6,
+		"name": "Balam Deity",
+		"picture": "Avian_Jaguar_Sphinx_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3
+			},
+			{
+				"id": "nullify",
+				"x": 4
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					},
+					{
+						"id": "berserk",
 						"x": 5
 					}
 				]
@@ -315724,6 +316291,107 @@ var CARDS = {
 					},
 					{
 						"id": "frost",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"27276": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1592240400000",
+		"id": "27276",
+		"maxLevel": 6,
+		"name": "Terror Bird Ally",
+		"picture": "Avian_Terror_Mount_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "fervor",
+				"x": 6,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "3"
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
 						"x": 3
 					}
 				]

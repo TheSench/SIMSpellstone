@@ -8527,6 +8527,43 @@
     </rewards>
     <find_item id="3113" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node -->
+  <campaign>
+    <id>1252</id>
+    <name>Constructing Aether</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1250" level="1" />
+    <locked_start_time>1591894800</locked_start_time>
+    <!--  Thursday, 11 June 2020 17:00:00 -->
+    <battleground_id>2096</battleground_id>
+    <location_id>29</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>340</x>
+    <y>390</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6442</mission_id>
+      <mission_id>6443</mission_id>
+      <mission_id>6444</mission_id>
+      <mission_id>6445</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3115" />
+      <!--  Bloodmist Harpy's Spellstone  -->
+      <item level="5" id="3115" />
+      <!--  Bloodmist Harpy's Spellstone  -->
+      <item level="6" id="3115" />
+      <!--  Bloodmist Harpy's Spellstone  -->
+      <item level="7" id="3115" />
+      <!--  Bloodmist Harpy's Spellstone  -->
+    </rewards>
+    <find_item id="3113" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

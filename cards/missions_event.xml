@@ -45507,5 +45507,102 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 23 Boss Node -->
+  <mission>
+    <id>6442</id>
+    <name>Order</name>
+    <energy>9</energy>
+    <desc>Through the vortex of Chaos that created life, to mantain that life some structure was needed. So Aether was formed, to rule and govern fairly, and bring order for sustainability.</desc>
+    <commander id="447" />
+    <deck>
+      <card id="5014" name="Winged Raptor" />
+      <card id="1044" name="Blackhawk Cavalier" />
+      <card id="1044" />
+      <card id="5198" name="Sea's Sky Forces" />
+      <card id="1343" name="Firehorn" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="6055" name="Phoenix" />
+      <card id="6251" name="Lavahorn Rhino" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="6113" mastery_level="3" name="Trojan Crow" />
+      <card id="6171" mastery_level="4" name="Kiki" />
+      <card id="5110" mastery_level="5" name="Alectryon" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="6200" mastery_level="7" name="Embered Demise" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6443</id>
+    <name>Bless</name>
+    <energy>9</energy>
+    <desc>Clouds were formed to obscure the harsh gaze of the sun, and to nourish and protect that below it. Water, in turn, gave life to more creatures, and that is the essence of Aether.</desc>
+    <commander id="447" />
+    <deck>
+      <card id="5014" name="Winged Raptor" />
+      <card id="1044" name="Blackhawk Cavalier" />
+      <card id="1044" />
+      <card id="5198" name="Sea's Sky Forces" />
+      <card id="1343" name="Firehorn" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="6055" name="Phoenix" />
+      <card id="6251" name="Lavahorn Rhino" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="6113" mastery_level="3" name="Trojan Crow" />
+      <card id="6171" mastery_level="4" name="Kiki" />
+      <card id="5110" mastery_level="5" name="Alectryon" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="6200" mastery_level="7" name="Embered Demise" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6444</id>
+    <name>Sustain</name>
+    <energy>9</energy>
+    <desc>While the heart may compell those to act rashly, the mind governs reason and lays forth the foundation of civilization. The flow of time and creation cannot be so easily reversed, continuing ever onward.</desc>
+    <commander id="447" />
+    <deck>
+      <card id="5014" name="Winged Raptor" />
+      <card id="1044" name="Blackhawk Cavalier" />
+      <card id="1044" />
+      <card id="5198" name="Sea's Sky Forces" />
+      <card id="1343" name="Firehorn" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="6055" name="Phoenix" />
+      <card id="6251" name="Lavahorn Rhino" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="6113" mastery_level="3" name="Trojan Crow" />
+      <card id="6171" mastery_level="4" name="Kiki" />
+      <card id="5110" mastery_level="5" name="Alectryon" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="6200" mastery_level="7" name="Embered Demise" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6445</id>
+    <name>Aether Realized</name>
+    <energy>9</energy>
+    <desc>That is Aether. That is the manifestation that you have created. And this memory, this data, will be sent to the Titan Aspirer, Viracocha.</desc>
+    <commander id="447" />
+    <deck>
+      <card id="5014" name="Winged Raptor" />
+      <card id="1044" name="Blackhawk Cavalier" />
+      <card id="1044" />
+      <card id="5198" name="Sea's Sky Forces" />
+      <card id="1343" name="Firehorn" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="6055" name="Phoenix" />
+      <card id="6251" name="Lavahorn Rhino" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="6113" mastery_level="3" name="Trojan Crow" />
+      <card id="6171" mastery_level="4" name="Kiki" />
+      <card id="5110" mastery_level="5" name="Alectryon" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="6200" mastery_level="7" name="Embered Demise" />
+    </deck>
+  </mission>
 </root>
 

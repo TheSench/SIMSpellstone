@@ -11115,5 +11115,53 @@
       <skill id="enfeeble" x="3" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>447</id>
+    <card_type>1</card_type>
+    <name>Aether Construct</name>
+    <portrait>lightwisp</portrait>
+    <health>91</health>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" />
+    <skill id="enhance" x="1" s="evade" />
+    <skill id="strike" x="1" all="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>92</health>
+      <skill id="rally" x="2" all="1" />
+      <skill id="enhance" x="2" s="evade" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="rally" x="3" all="1" />
+      <skill id="enhance" x="2" s="evade" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>96</health>
+      <skill id="rally" x="3" all="1" />
+      <skill id="enhance" x="3" s="evade" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="rally" x="4" all="1" />
+      <skill id="enhance" x="3" s="evade" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="rally" x="5" all="1" />
+      <skill id="enhance" x="3" s="evade" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+  </unit>
 </root>
 
