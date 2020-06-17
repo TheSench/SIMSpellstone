@@ -34989,6 +34989,142 @@
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5273</id>
+    <card_type>2</card_type>
+    <name>Ondori Clan Samurai</name>
+    <picture>Avian_Samurai_Rooster_A</picture>
+    <asset_bundle>192</asset_bundle>
+    <hidden_until_time>1592499600</hidden_until_time>
+    <attack>2</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="2" />
+    <skill id="counter" x="5" />
+    <skill id="valor" x="7" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="backlash" x="2" />
+      <skill id="counter" x="6" />
+      <skill id="valor" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="backlash" x="3" />
+      <skill id="counter" x="6" />
+      <skill id="valor" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="3" />
+      <skill id="counter" x="6" />
+      <skill id="valor" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>26</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15273</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ondori Clan Duelist</name>
+    <picture>Avian_Samurai_Rooster_A</picture>
+    <asset_bundle>192</asset_bundle>
+    <hidden_until_time>1592499600</hidden_until_time>
+    <attack>3</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="counter" x="6" />
+    <skill id="valor" x="8" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="backlash" x="3" />
+      <skill id="counter" x="7" />
+      <skill id="valor" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="backlash" x="4" />
+      <skill id="counter" x="7" />
+      <skill id="valor" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="4" />
+      <skill id="counter" x="7" />
+      <skill id="valor" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="4" />
+      <skill id="counter" x="8" />
+      <skill id="valor" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25273</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ondori Clan Daimyo</name>
+    <picture>Avian_Samurai_Rooster_B</picture>
+    <asset_bundle>192</asset_bundle>
+    <hidden_until_time>1592499600</hidden_until_time>
+    <attack>3</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="4" />
+    <skill id="counter" x="8" />
+    <skill id="valor" x="9" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="8" />
+      <skill id="valor" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="9" />
+      <skill id="valor" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="9" />
+      <skill id="valor" x="10" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

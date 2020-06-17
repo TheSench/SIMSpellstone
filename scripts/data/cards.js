@@ -74301,6 +74301,95 @@ var CARDS = {
 			}
 		}
 	},
+	"5273": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1592499600000",
+		"id": "5273",
+		"maxLevel": 6,
+		"name": "Ondori Clan Samurai",
+		"picture": "Avian_Samurai_Rooster_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"id": "counter",
+				"x": 5
+			},
+			{
+				"id": "valor",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 25,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 8
+					}
+				]
+			},
+			"6": {
+				"health": 26,
+				"skill": []
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -97731,6 +97820,95 @@ var CARDS = {
 					{
 						"c": 3,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"6273": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1592845200000",
+		"id": "6273",
+		"maxLevel": 6,
+		"name": "Triple Threat",
+		"picture": "Avian_Vulture_Trio_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "poison",
+				"x": 10
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 39,
+				"skill": []
+			},
+			"3": {
+				"attack": 10,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 10
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 4
 					}
 				]
 			}
@@ -180630,6 +180808,107 @@ var CARDS = {
 			}
 		}
 	},
+	"15273": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1592499600000",
+		"id": "15273",
+		"maxLevel": 6,
+		"name": "Ondori Clan Duelist",
+		"picture": "Avian_Samurai_Rooster_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "counter",
+				"x": 6
+			},
+			{
+				"id": "valor",
+				"x": 8
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"health": 27,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "valor",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -203121,6 +203400,96 @@ var CARDS = {
 						"id": "flurry"
 					}
 				]
+			}
+		}
+	},
+	"16273": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 40,
+		"hidden_until": "1592845200000",
+		"id": "16273",
+		"maxLevel": 6,
+		"name": "Triple Menace",
+		"picture": "Avian_Vulture_Trio_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "poison",
+				"x": 11
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 11
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 41,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 12
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 12
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 12,
+				"skill": []
 			}
 		}
 	},
@@ -270403,6 +270772,95 @@ var CARDS = {
 			}
 		}
 	},
+	"25273": {
+		"attack": 3,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1592499600000",
+		"id": "25273",
+		"maxLevel": 6,
+		"name": "Ondori Clan Daimyo",
+		"picture": "Avian_Samurai_Rooster_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "counter",
+				"x": 8
+			},
+			{
+				"id": "valor",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 4,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "valor",
+						"x": 9
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"id": "valor",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"id": "valor",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -292709,6 +293167,83 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"26273": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 41,
+		"hidden_until": "1592845200000",
+		"id": "26273",
+		"maxLevel": 6,
+		"name": "Triple Death",
+		"picture": "Avian_Vulture_Trio_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"id": "poison",
+				"x": 12
+			},
+			{
+				"id": "berserk",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 42,
+				"skill": []
+			},
+			"3": {
+				"attack": 13,
+				"skill": []
+			},
+			"4": {
+				"health": 43,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "poison",
+						"x": 13
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "poison",
+						"x": 13
+					},
+					{
+						"id": "berserk",
+						"x": 6
 					}
 				]
 			}
