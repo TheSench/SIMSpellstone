@@ -8564,6 +8564,81 @@
     </rewards>
     <find_item id="3113" drop_per_energy=".4" />
   </campaign>
+  <!-- ================================== Campaign Event 23 weeks 5-8 / Return to Luminis ================================== -->
+  <campaign>
+    <id>1253</id>
+    <name>The Power Coil</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 25 June 2020 17:00:00 -->
+    <battleground_id>2097</battleground_id>
+    <location_id>29</location_id>
+    <x>630</x>
+    <y>270</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6446</mission_id>
+      <mission_id>6447</mission_id>
+      <mission_id>6448</mission_id>
+      <mission_id>6449</mission_id>
+      <mission_id>6450</mission_id>
+      <mission_id>6451</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2188" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2154" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3114" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3113" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1254</id>
+    <name>Aether Attunement</name>
+    <campaign_req id="1253" level="1" />
+    <locked_start_time>1594314000</locked_start_time>
+    <!--  Thursday, 9 July 2020 17:00:00 -->
+    <battleground_id>2098</battleground_id>
+    <location_id>29</location_id>
+    <x>390</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6452</mission_id>
+      <mission_id>6453</mission_id>
+      <mission_id>6454</mission_id>
+      <mission_id>6455</mission_id>
+      <mission_id>6456</mission_id>
+      <mission_id>6457</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2189" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2122" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3114" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3113" drop_per_energy=".8" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

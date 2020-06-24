@@ -13849,6 +13849,133 @@
       <item id="8024" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 23 weeks 5-8 -->
+  <achievement>
+    <id>3584</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Power Coil</name>
+    <desc>Complete the 'The Power Coil' campaign on Mastery Level 1.</desc>
+    <mission_req>6446</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 25 June 2020 17:00:00 -->
+    <req>
+      <campaign>1253</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3113" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7061" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3585</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Power Coil</name>
+    <desc>Complete the 'The Power Coil' campaign on Mastery Level 2.</desc>
+    <mission_req>6446</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 25 June 2020 17:00:00 -->
+    <achievement_req>3584</achievement_req>
+    <req>
+      <campaign>1253</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3586</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Power Coil</name>
+    <desc>Complete the 'The Power Coil' campaign on Mastery Level 4.</desc>
+    <mission_req>6446</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 25 June 2020 17:00:00 -->
+    <achievement_req>3585</achievement_req>
+    <req>
+      <campaign>1253</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3587</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Power Coil</name>
+    <desc>Complete the 'The Power Coil' campaign on Mastery Level 6.</desc>
+    <mission_req>6446</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 25 June 2020 17:00:00 -->
+    <achievement_req>3586</achievement_req>
+    <req>
+      <campaign>1253</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3588</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Aether Attunement</name>
+    <desc>Complete the 'Aether Attunement' campaign on Mastery Level 2.</desc>
+    <mission_req>6452</mission_req>
+    <locked_start_time>1594314000</locked_start_time>
+    <!--  Thursday, 9 July 2020 17:00:00 -->
+    <req>
+      <campaign>1254</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3589</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Aether Attunement</name>
+    <desc>Complete the 'Aether Attunement' campaign on Mastery Level 4.</desc>
+    <mission_req>6452</mission_req>
+    <locked_start_time>1594314000</locked_start_time>
+    <!--  Thursday, 9 July 2020 17:00:00 -->
+    <achievement_req>3588</achievement_req>
+    <req>
+      <campaign>1254</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3590</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Aether Attunement</name>
+    <desc>Complete the 'Aether Attunement' campaign on Mastery Level 6.</desc>
+    <mission_req>6452</mission_req>
+    <locked_start_time>1594314000</locked_start_time>
+    <!--  Thursday, 9 July 2020 17:00:00 -->
+    <achievement_req>3589</achievement_req>
+    <req>
+      <campaign>1254</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -14343,6 +14470,32 @@
       <campaign>1248</campaign>
       <!-- 3rd node -->
       <campaign>1249</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Return to Luminis -->
+    <id>4024</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Return to Luminis</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Luminis.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6430</mission_req>
+    <req>
+      <campaign>1250</campaign>
+      <!-- 1st node -->
+      <campaign>1251</campaign>
+      <!-- 2nd node -->
+      <campaign>1252</campaign>
+      <!-- Boss node -->
+      <campaign>1253</campaign>
+      <!-- 3rd node -->
+      <campaign>1254</campaign>
       <!-- 4th node -->
       <level>7</level>
     </req>

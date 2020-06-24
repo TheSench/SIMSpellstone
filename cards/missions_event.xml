@@ -45604,5 +45604,412 @@
       <card id="6200" mastery_level="7" name="Embered Demise" />
     </deck>
   </mission>
+  <!-- Event 23 Node 3 -->
+  <mission>
+    <id>6446</id>
+    <name>Power Coil Elemental</name>
+    <energy>18</energy>
+    <desc>When you get near, the aparatus makes a strange whirring noise. The base opens, an image of a wind Elemental blinking into existence in front of you.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8125" name="Life Vessel" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="7057" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" />
+      <card id="2166" name="Minstrel of Owls" />
+      <card id="7078" name="Saprolite" />
+      <card id="1629" name="Rock Titan" />
+      <card id="7078" mastery_level="2" name="Saprolite" />
+      <card id="1629" mastery_level="3" name="Rock Titan" />
+      <card id="2166" mastery_level="4" name="Minstrel of Owls" />
+      <card id="7186" mastery_level="5" name="Owlscar Dragon" />
+      <card id="7101" mastery_level="6" name="Shriekers" />
+      <card id="1642" mastery_level="7" name="Icestone Beast" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6447</id>
+    <name>Elemental Summoning</name>
+    <energy>18</energy>
+    <desc>More Elementals materialize around the tower, springing from the grass and nearby river. As your group prepares to fight, the wind Elemental speaks...</desc>
+    <commander id="343" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" />
+      <card id="2186" name="Skylight Sparrow" />
+      <card id="2186" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2058" mastery_level="2" name="Bismuth Bully" />
+      <card id="1026" mastery_level="3" name="Glass Colossus" />
+      <card id="5058" mastery_level="4" name="Crescent Moon Owl" />
+      <card id="5175" mastery_level="5" name="Spirit of Cygnus" />
+      <card id="5198" mastery_level="6" name="Sea's Sky Forces" />
+      <card id="5045" mastery_level="7" name="Echo Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>Commencing initialization welcome sequence. Greetings, sentients.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6448</id>
+    <name>Secrets Uncovered</name>
+    <energy>18</energy>
+    <desc>Yuriel gets extremely excited. Studying ancient ruins and books of lost technology, Yuriel dreams of finding these kind of encounters.</desc>
+    <commander id="244" />
+    <deck>
+      <card id="8037" name="Sludge River" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="7135" name="Grim Pollination" />
+      <card id="7135" />
+      <card id="2118" name="Luminescent Heron" />
+      <card id="2118" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="7015" mastery_level="2" name="Bog Aberration" />
+      <card id="2120" mastery_level="3" name="Emerald Carbuncle" />
+      <card id="7115" mastery_level="4" name="Airborne Battalion" />
+      <card id="7110" mastery_level="5" name="Toxin Glider" />
+      <card id="7111" mastery_level="6" name="Aurai" />
+      <card id="7028" mastery_level="7" name="Frozen Tide" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hoo, what?! It's never done this when I visited!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Um, what do we do? What - or who - are you?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6449</id>
+    <name>Mecha Elemental</name>
+    <energy>18</energy>
+    <desc>The wind Elemental continues to speak. It is more than just an Elemental. Its pattern of speech is mechanical and hollow.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8094" name="Viracocha's Familiar" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5130" name="Drakeling Fosterer" />
+      <card id="5130" />
+      <card id="5158" name="Chilltide Stormtender" />
+      <card id="5158" />
+      <card id="2117" name="Aero Enforcer" />
+      <card id="5081" name="Brahzee" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5081" mastery_level="2" name="Brahzee" />
+      <card id="5080" mastery_level="3" name="Djinnflame Brawler" />
+      <card id="2117" mastery_level="4" name="Aero Enforcer" />
+      <card id="5047" mastery_level="5" name="Sky Fisher" />
+      <card id="5115" mastery_level="6" name="Papyrus Crane" />
+      <card id="5019" mastery_level="7" name="Vivid Aurora" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>I am an AI designed to simulate Aether. I was offline until the Master initiated the boot sequence.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6450</id>
+    <name>Restoring Power</name>
+    <energy>18</energy>
+    <desc>With the strange wind Elemental and Yuriel's information on its activation, it seems like you've found the Power Coil. You must complete the task here of activating it, to unlock more power for the mechanical Titan.</desc>
+    <commander id="343" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5046" name="Dawn" />
+      <card id="2168" name="Cryonic Guard" />
+      <card id="5046" mastery_level="2" name="Dawn" />
+      <card id="2168" mastery_level="3" name="Cryonic Guard" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="5148" mastery_level="5" name="Gribmalda of Wings" />
+      <card id="5187" mastery_level="6" name="Star Chaser" />
+      <card id="5079" mastery_level="7" name="Cyclopnid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>To fully reboot, you must help me attune to Aether.</text>
+      </line>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>Provide the necessary answers to automate Aether attunement process.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6451</id>
+    <name>Aether Test</name>
+    <energy>18</energy>
+    <desc>The manufactured Elemental desires to test you. Elyse is eager to give the answers it desires, even if Aether isn't her specialty.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="6112" />
+      <card id="6172" name="Steel Plover" />
+      <card id="6046" name="Celerity" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="6046" mastery_level="2" name="Celerity" />
+      <card id="2138" mastery_level="3" name="Magma Cougar" />
+      <card id="6172" mastery_level="4" name="Steel Plover" />
+      <card id="6055" mastery_level="5" name="Phoenix" />
+      <card id="6200" mastery_level="6" name="Embered Demise" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>Question: What two elements embody Aether?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Oh, I know this! It's wind and water.</text>
+      </line>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>*Whirs*</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 23 Node 4 -->
+  <mission>
+    <id>6452</id>
+    <name>Tricky Question</name>
+    <energy>18</energy>
+    <desc>As part of the test, some of the Elementals have begun fighting you. The wind Elemental continues to grill you on your Aether knowledge.</desc>
+    <commander id="343" />
+    <deck>
+      <card id="8094" name="Viracocha's Familiar" />
+      <card id="2081" name="Starstriker" />
+      <card id="2081" />
+      <card id="5114" name="Wingward" />
+      <card id="5114" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="5060" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2154" name="Soul Wisp Gathering" />
+      <card id="2010" mastery_level="2" name="Silver Wind" />
+      <card id="2154" mastery_level="3" name="Soul Wisp Gathering" />
+      <card id="5056" mastery_level="4" name="Kaliri the Foremost" />
+      <card id="5110" mastery_level="5" name="Alectryon" />
+      <card id="5111" mastery_level="6" name="Bennu" />
+      <card id="2007" mastery_level="7" name="Platinum Golem" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>Question: When it comes to making judgement, which is the most important? Mind, heart, or soul.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Um...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6453</id>
+    <name>Yuriel's Knowledge</name>
+    <energy>18</energy>
+    <desc>Thankfully, you have an Aether expert with you. With Elyse stumped on the next question, Yuriel takes over in teaching the machination the basics of Aether.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5015" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="1032" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="5135" name="Shatterwind" />
+      <card id="5124" mastery_level="2" name="Sylph Drifter" />
+      <card id="5135" mastery_level="3" name="Shatterwind" />
+      <card id="5255" mastery_level="4" name="Cockaboo Fallen" />
+      <card id="5244" mastery_level="5" name="Mutant Scaupus" />
+      <card id="5195" mastery_level="6" name="Owlnaut Z-3" />
+      <card id="5136" mastery_level="7" name="Lapis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hoo, allow me to help. The answer is Mind.</text>
+      </line>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>*Whirs*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6454</id>
+    <name>Yuriel's Expertise</name>
+    <energy>18</energy>
+    <desc>After a small bump from earlier, the rest of the questions seem to be going smoothly. However, without the wind Elemental giving any feedback, there's no way to tell if the answers are correct.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8094" name="Viracocha's Familiar" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5058" />
+      <card id="5158" name="Chilltide Stormtender" />
+      <card id="5158" />
+      <card id="5141" name="Nimbocaster" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="5141" mastery_level="2" name="Nimbocaster" />
+      <card id="2095" mastery_level="3" name="Spoutal Nemesis" />
+      <card id="5173" mastery_level="4" name="Frostcrier" />
+      <card id="5059" mastery_level="5" name="Bemola" />
+      <card id="5104" mastery_level="6" name="Pisces" />
+      <card id="5178" mastery_level="7" name="Skadi, Snow Princess" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>Question: Which of these govern life: destruction, creation, or order.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Order.</text>
+      </line>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>*Whirs*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6455</id>
+    <name>Questions Complete</name>
+    <energy>18</energy>
+    <desc>You are relying on your friends' knowledge of Aether to pass this test and activate the Power Coil. Meanwhile you fend off the army of Elementals and disgruntled Luminis residents.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2169" name="Skyline Fairy" />
+      <card id="2169" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5044" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="2125" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1032" mastery_level="2" name="Lunar Elemental" />
+      <card id="1026" mastery_level="3" name="Glass Colossus" />
+      <card id="5052" mastery_level="4" name="Paradise Avian" />
+      <card id="5055" mastery_level="5" name="Galewing" />
+      <card id="5272" mastery_level="6" name="Balam Sphinx" />
+      <card id="5179" mastery_level="7" name="Grimacing Bolt" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>Attunement complete.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6456</id>
+    <name>Aether Manifestation</name>
+    <energy>18</energy>
+    <desc>The whirring noise that the wind Elemental was making finally stops. You hear scraping metal coming from inside the tower.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="8094" name="Viracocha's Familiar" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="5113" />
+      <card id="5130" name="Drakeling Fosterer" />
+      <card id="5130" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5135" name="Shatterwind" />
+      <card id="5080" mastery_level="2" name="Djinnflame Brawler" />
+      <card id="5135" mastery_level="3" name="Shatterwind" />
+      <card id="5176" mastery_level="4" name="Raywing" />
+      <card id="5112" mastery_level="5" name="Cloudwing Chaser" />
+      <card id="5242" mastery_level="6" name="Gigantadactyl" />
+      <card id="5249" mastery_level="7" name="Seraph of Singularities" />
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>Fight the manifestation you created and I will send its memory bank to the Master.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6457</id>
+    <name>Incoming Threat</name>
+    <energy>18</energy>
+    <desc>Heavy footsteps come from inside the tower. The door scrapes open to reveal a terrible monster!</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2137" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="1032" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2119" mastery_level="2" name="Flaming Hailwing" />
+      <card id="1026" mastery_level="3" name="Glass Colossus" />
+      <card id="5177" mastery_level="4" name="Thunderbird" />
+      <card id="1044" mastery_level="5" name="Blackhawk Cavalier" />
+      <card id="2043" mastery_level="6" name="Eos" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Something's coming! Look out!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 
