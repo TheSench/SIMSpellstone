@@ -74686,6 +74686,95 @@ var CARDS = {
 			}
 		}
 	},
+	"5275": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 24,
+		"hidden_until": "1594054800000",
+		"id": "5275",
+		"maxLevel": 6,
+		"name": "Bulgae Dogs",
+		"picture": "Elemental_Flying_Dogs_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"id": "legion",
+				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 5,
+				"skill": []
+			},
+			"3": {
+				"health": 25,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 2
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -123551,6 +123640,155 @@ var CARDS = {
 						"all": "1",
 						"id": "enfeeble",
 						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"7611": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 37,
+		"hidden_until": "1593709200000",
+		"id": "7611",
+		"maxLevel": 10,
+		"name": "Vsov, Blizzard Djinn",
+		"picture": "Elemental_Snow_Djinn_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"id": "frost",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"health": 38,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "frost",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "frost",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "frost",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"attack": 14,
+				"health": 42,
+				"skill": []
+			},
+			"7": {
+				"attack": 15,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "frost",
+						"x": 7
+					}
+				]
+			},
+			"8": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"id": "frost",
+						"x": 7
+					}
+				]
+			},
+			"9": {
+				"health": 44,
+				"skill": []
+			},
+			"10": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"id": "frost",
+						"x": 8
 					}
 				]
 			}
@@ -181547,6 +181785,95 @@ var CARDS = {
 						"x": 9
 					}
 				]
+			}
+		}
+	},
+	"15275": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1594054800000",
+		"id": "15275",
+		"maxLevel": 6,
+		"name": "Bulgae Pack",
+		"picture": "Elemental_Flying_Dogs_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "legion",
+				"x": 3
+			},
+			{
+				"id": "frost",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 26,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "legion",
+						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"skill": []
 			}
 		}
 	},
@@ -271841,6 +272168,95 @@ var CARDS = {
 					{
 						"id": "valor",
 						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"25275": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1594054800000",
+		"id": "25275",
+		"maxLevel": 6,
+		"name": "Bulgae Hounds",
+		"picture": "Elemental_Flying_Dogs_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "legion",
+				"x": 4
+			},
+			{
+				"id": "frost",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 5
 					}
 				]
 			}

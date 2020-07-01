@@ -5658,5 +5658,86 @@
       <skill id="enfeeble" x="6" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7611</id>
+    <card_type>2</card_type>
+    <name>Vsov, Blizzard Djinn</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Snow_Djinn_A</picture>
+    <asset_bundle>194</asset_bundle>
+    <hidden_until_time>1593709200</hidden_until_time>
+    <!-- Thursday, 2 July 2020 17:00:00 -->
+    <item_name>Vsov Stone</item_name>
+    <item_desc>Collect Vsov Stones to upgrade the Legendary Vsov, Blizzard Djinn card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <attack>10</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="regenerate" x="7" />
+    <skill id="frost" x="5" />
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <health>38</health>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="8" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="9" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <skill id="evade" x="3" />
+      <skill id="regenerate" x="9" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>15</attack>
+      <skill id="evade" x="3" />
+      <skill id="regenerate" x="9" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>16</attack>
+      <skill id="evade" x="3" />
+      <skill id="regenerate" x="10" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="evade" x="4" />
+      <skill id="regenerate" x="10" />
+      <skill id="frost" x="8" />
+    </upgrade>
+  </unit>
 </root>
 
