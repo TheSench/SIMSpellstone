@@ -74686,6 +74686,104 @@ var CARDS = {
 			}
 		}
 	},
+	"5274": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 25,
+		"hidden_until": "1594314000000",
+		"id": "5274",
+		"maxLevel": 6,
+		"name": "Voltwing Angel",
+		"picture": "Elemental_Angel_Static_Wings_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 2,
+				"y": "1"
+			},
+			{
+				"id": "berserk",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"5",
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 26,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 2,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"5275": {
 		"attack": 4,
 		"card_type": "2",
@@ -74770,6 +74868,95 @@ var CARDS = {
 					{
 						"id": "frost",
 						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"5276": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 4,
+		"health": 53,
+		"hidden_until": "1594659600000",
+		"id": "5276",
+		"maxLevel": 6,
+		"name": "Snowback Coldossus",
+		"picture": "Elemental_Ice_Colossus_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 5
+			},
+			{
+				"id": "backlash",
+				"x": 2
+			},
+			{
+				"c": 5,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 5
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 54,
+				"skill": []
+			},
+			"4": {
+				"attack": 15,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 6
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "jam"
 					}
 				]
 			}
@@ -181788,6 +181975,104 @@ var CARDS = {
 			}
 		}
 	},
+	"15274": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1594314000000",
+		"id": "15274",
+		"maxLevel": 6,
+		"name": "Voltwing Protectorate",
+		"picture": "Elemental_Angel_Static_Wings_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3,
+				"y": "1"
+			},
+			{
+				"id": "berserk",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"5",
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 27,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 3,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"15275": {
 		"attack": 6,
 		"card_type": "2",
@@ -181874,6 +182159,83 @@ var CARDS = {
 			"6": {
 				"attack": 7,
 				"skill": []
+			}
+		}
+	},
+	"15276": {
+		"attack": 15,
+		"card_type": "2",
+		"cost": 4,
+		"health": 54,
+		"hidden_until": "1594659600000",
+		"id": "15276",
+		"maxLevel": 6,
+		"name": "Iceback Coldossus",
+		"picture": "Elemental_Ice_Colossus_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 6
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 55,
+				"skill": []
+			},
+			"3": {
+				"attack": 16,
+				"skill": []
+			},
+			"4": {
+				"health": 56,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
 			}
 		}
 	},
@@ -272173,6 +272535,104 @@ var CARDS = {
 			}
 		}
 	},
+	"25274": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1594314000000",
+		"id": "25274",
+		"maxLevel": 6,
+		"name": "Voltwing Archangel",
+		"picture": "Elemental_Angel_Static_Wings_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 4,
+				"y": "1"
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5",
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			}
+		}
+	},
 	"25275": {
 		"attack": 7,
 		"card_type": "2",
@@ -272257,6 +272717,71 @@ var CARDS = {
 					{
 						"id": "frost",
 						"x": 5
+					}
+				]
+			}
+		}
+	},
+	"25276": {
+		"attack": 16,
+		"card_type": "2",
+		"cost": 4,
+		"health": 56,
+		"hidden_until": "1594659600000",
+		"id": "25276",
+		"maxLevel": 6,
+		"name": "Winterback Coldossus",
+		"picture": "Elemental_Ice_Colossus_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "armored",
+				"x": 7
+			},
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 17,
+				"skill": []
+			},
+			"3": {
+				"health": 57,
+				"skill": []
+			},
+			"4": {
+				"attack": 18,
+				"skill": []
+			},
+			"5": {
+				"health": 58,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"c": 2,
+						"id": "jam"
 					}
 				]
 			}

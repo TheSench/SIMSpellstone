@@ -4511,12 +4511,28 @@
     <resource card_id="15273" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15274</card_id>
+    <resource card_id="5274" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25274</card_id>
+    <resource card_id="15274" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15275</card_id>
     <resource card_id="5275" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>25275</card_id>
     <resource card_id="15275" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15276</card_id>
+    <resource card_id="5276" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25276</card_id>
+    <resource card_id="15276" number="2" />
   </fusion_recipe>
   <!-- END AETHER PREMIUM SET -->
   <!-- CHAOS PREMIUM SET BEGIN -->
