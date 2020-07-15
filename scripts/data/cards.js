@@ -81742,7 +81742,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"desc": "Born once in a thousand years, the Phoenix can never truely die.",
+		"desc": "Born once in a thousand years, the Phoenix can never truly die.",
 		"health": 16,
 		"hidden_until": "1463072400000",
 		"id": "6055",
@@ -98572,6 +98572,89 @@ var CARDS = {
 						"id": "flurry"
 					}
 				]
+			}
+		}
+	},
+	"6275": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 18,
+		"hidden_until": "1594918800000",
+		"id": "6275",
+		"maxLevel": 6,
+		"name": "Charmite Culler",
+		"picture": "Elemental_Coal_Mite_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 19,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 1,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 1
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "2"
+					}
+				]
+			},
+			"6": {
+				"attack": 7,
+				"skill": []
 			}
 		}
 	},
@@ -121645,6 +121728,100 @@ var CARDS = {
 					{
 						"c": 4,
 						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"7278": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 38,
+		"hidden_until": "1595264400000",
+		"id": "7278",
+		"maxLevel": 6,
+		"name": "Petroleum Elemental",
+		"picture": "Elemental_Undead_Petroleum_Dino_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 6
+			},
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "fervor",
+				"x": 6,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"5",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 39,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "3"
 					}
 				]
 			}
@@ -204912,6 +205089,103 @@ var CARDS = {
 			}
 		}
 	},
+	"16275": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1594918800000",
+		"id": "16275",
+		"maxLevel": 6,
+		"name": "Charmite Coal-Seeker",
+		"picture": "Elemental_Coal_Mite_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "counterburn",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 2,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "2"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2,
+						"y": "2"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "counterburn",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"attack": 8,
+				"skill": []
+			},
+			"6": {
+				"health": 21,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -228521,6 +228795,100 @@ var CARDS = {
 						"id": "jam"
 					}
 				]
+			}
+		}
+	},
+	"17278": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1595264400000",
+		"id": "17278",
+		"maxLevel": 6,
+		"name": "Petroleum Monstrosity",
+		"picture": "Elemental_Undead_Petroleum_Dino_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 7
+			},
+			{
+				"id": "regenerate",
+				"x": 7
+			},
+			{
+				"id": "fervor",
+				"x": 7,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"5",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 40,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "fervor",
+						"x": 7,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "fervor",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"skill": []
 			}
 		}
 	},
@@ -295253,6 +295621,103 @@ var CARDS = {
 			}
 		}
 	},
+	"26275": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 21,
+		"hidden_until": "1594918800000",
+		"id": "26275",
+		"maxLevel": 6,
+		"name": "Charmite Coallector",
+		"picture": "Elemental_Coal_Mite_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "counterburn",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 3,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 22,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "counterburn",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4,
+						"y": "2"
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -319012,6 +319477,100 @@ var CARDS = {
 					{
 						"c": 2,
 						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"27278": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 41,
+		"hidden_until": "1595264400000",
+		"id": "27278",
+		"maxLevel": 6,
+		"name": "Petroleum Ravager",
+		"picture": "Elemental_Undead_Petroleum_Dino_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 8
+			},
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"id": "fervor",
+				"x": 8,
+				"y": "3"
+			}
+		],
+		"sub_type": [
+			"5",
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"skill": []
+			},
+			"3": {
+				"health": 42,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "fervor",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "fervor",
+						"x": 8,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "fervor",
+						"x": 9,
+						"y": "3"
 					}
 				]
 			}
