@@ -3022,6 +3022,88 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4035</id>
+    <card_type>2</card_type>
+    <name>Vasile, the Night Duke</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frog_Undead_Vampire_Toad_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <item_name>Vasile Stone</item_name>
+    <item_desc>Collect Vasile Stones to upgrade the Legendary Vasile, the Night Duke card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>7</sub_type>
+    <attack>8</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="4" />
+    <skill id="pierce" x="8" />
+    <skill id="leech" x="8" />
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+      <health>27</health>
+      <skill id="legion" x="5" />
+      <skill id="pierce" x="9" />
+      <skill id="leech" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <skill id="legion" x="5" />
+      <skill id="pierce" x="10" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="legion" x="6" />
+      <skill id="pierce" x="10" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <skill id="legion" x="6" />
+      <skill id="pierce" x="11" />
+      <skill id="leech" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="legion" x="7" />
+      <skill id="pierce" x="11" />
+      <skill id="leech" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>12</attack>
+      <skill id="legion" x="7" />
+      <skill id="pierce" x="12" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>13</attack>
+      <health>33</health>
+      <skill id="legion" x="7" />
+      <skill id="pierce" x="13" />
+      <skill id="leech" x="13" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->

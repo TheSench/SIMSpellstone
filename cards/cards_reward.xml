@@ -22013,5 +22013,241 @@
       <skill id="burn" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2190</id>
+    <card_type>2</card_type>
+    <name>Poltergeist Wall</name>
+    <picture>Undead_Poltergeist_Maw_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1595523600</hidden_until_time>
+    <attack>8</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="corrosive" x="2" />
+    <skill id="weaken" x="6" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="corrosive" x="3" />
+      <skill id="weaken" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="corrosive" x="3" />
+      <skill id="weaken" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12190</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Poltergeist Hole</name>
+    <picture>Undead_Poltergeist_Maw_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1595523600</hidden_until_time>
+    <attack>10</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="corrosive" x="3" />
+    <skill id="weaken" x="7" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="corrosive" x="3" />
+      <skill id="weaken" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="corrosive" x="4" />
+      <skill id="weaken" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="corrosive" x="4" />
+      <skill id="weaken" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22190</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Poltergeist Maw</name>
+    <picture>Undead_Poltergeist_Maw_B</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1595523600</hidden_until_time>
+    <attack>11</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="2" />
+    <skill id="corrosive" x="5" />
+    <skill id="weaken" x="8" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="3" />
+      <skill id="corrosive" x="5" />
+      <skill id="weaken" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="corrosive" x="6" />
+      <skill id="weaken" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2191</id>
+    <card_type>2</card_type>
+    <name>Predatory Crocbones</name>
+    <picture>Undead_Skeletal_Croc_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1595523600</hidden_until_time>
+    <attack>8</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="stasis" x="2" />
+    <skill id="leech" x="9" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="2" />
+      <skill id="leech" x="10" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="3" />
+      <skill id="leech" x="10" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12191</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hunting Crocbones</name>
+    <picture>Undead_Skeletal_Croc_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1595523600</hidden_until_time>
+    <attack>10</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="leech" x="10" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="3" />
+      <skill id="leech" x="11" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="4" />
+      <skill id="leech" x="11" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="4" />
+      <skill id="leech" x="11" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22191</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Killer Crocbones</name>
+    <picture>Undead_Skeletal_Croc_B</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1595523600</hidden_until_time>
+    <attack>11</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="leech" x="11" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="4" />
+      <skill id="leech" x="12" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="5" />
+      <skill id="leech" x="12" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
 </root>
 

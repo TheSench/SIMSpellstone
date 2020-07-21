@@ -46011,5 +46011,390 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 24 Node 1 -->
+  <mission>
+    <id>6458</id>
+    <name>Robot on a Mission</name>
+    <energy>18</energy>
+    <desc>You return to Karthos, a designated spot on your map for one of the power coils. Fascinated by the land of lava, Scyer insists on accompanying you.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="8125" name="Life Vessel" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1617" name="Water Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7135" name="Grim Pollination" />
+      <card id="7135" />
+      <card id="7045" name="Sakura" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="2088" name="Bog Witch" />
+      <card id="7045" mastery_level="2" name="Sakura" />
+      <card id="2120" mastery_level="3" name="Emerald Carbuncle" />
+      <card id="2088" mastery_level="4" name="Bog Witch" />
+      <card id="7045" mastery_level="5" name="Sakura" />
+      <card id="7043" mastery_level="6" name="Anima" />
+      <card id="7131" mastery_level="7" name="Xovrus, Death's End" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Land of fire, more like land of Scyer!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>I ain't never been here before. We got time to explore?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6459</id>
+    <name>Land of Scyer</name>
+    <energy>18</energy>
+    <desc>Scyer is very excited to find a place where more Chaos live than just the mechas in Fireshard Mine. You take a more scenic route than the one to the castle, mainly to find the power coil.</desc>
+    <commander id="227" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="2122" name="Voidlight Tainted" />
+      <card id="2122" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="2138" mastery_level="2" name="Magma Cougar" />
+      <card id="1326" mastery_level="3" name="Titan of Fire" />
+      <card id="2060" mastery_level="4" name="Patchwork Experiment" />
+      <card id="2138" mastery_level="5" name="Magma Cougar" />
+      <card id="1343" mastery_level="6" name="Firehorn" />
+      <card id="6174" mastery_level="7" name="Deatheye Owl" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6460</id>
+    <name>Chaos Coil</name>
+    <energy>18</energy>
+    <desc>However, the Chaos creatures seem more on edge than normal. You see them moving supplies back and forth, and more forts and checkpoints have been set up than your initial visit.</desc>
+    <commander id="333" />
+    <deck>
+      <card id="8035" name="Radium Corrupter" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="2101" />
+      <card id="2032" name="Brimstone" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2032" mastery_level="2" name="Brimstone" />
+      <card id="6075" mastery_level="3" name="Consuming Mireling" />
+      <card id="6011" mastery_level="4" name="Bomb Spirit" />
+      <card id="2032" mastery_level="5" name="Brimstone" />
+      <card id="2091" mastery_level="6" name="Ignus" />
+      <card id="6124" mastery_level="7" name="Enfeebling Vizier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Is that the power coil in the distance? Time to confirm its existence!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6461</id>
+    <name>Red Roadblock</name>
+    <energy>18</energy>
+    <desc>You hurry on to the strange structure, much like the one you found in Luminis, but this one with a red glow. Near it, you find a familiar red head...</desc>
+    <commander id="333" />
+    <deck>
+      <card id="8034" name="Swiftness Feeder" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="6077" name="Enigma" />
+      <card id="6165" name="Skelepede" />
+      <card id="2008" mastery_level="2" name="Shadow of Ash" />
+      <card id="6077" mastery_level="3" name="Enigma" />
+      <card id="6165" mastery_level="4" name="Skelepede" />
+      <card id="2008" mastery_level="5" name="Shadow of Ash" />
+      <card id="6200" mastery_level="6" name="Embered Demise" />
+      <card id="6256" mastery_level="7" name="Nosferatu Aristocrat" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>Aw man, it's you guys. Come to shut off my super fun machine? Finders keepers!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6462</id>
+    <name>The Fun Machine</name>
+    <energy>18</energy>
+    <desc>Decim has been poking around the machine, and doesn't want you to turn it off. Luckily that's not the reason why you're here, so Decim reluctantly lets you closer to the power coil.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="1325" />
+      <card id="6135" name="Burnshell" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="6164" name="Abomination" />
+      <card id="6135" mastery_level="2" name="Burnshell" />
+      <card id="6042" mastery_level="3" name="Shadow of Thunder" />
+      <card id="6164" mastery_level="4" name="Abomination" />
+      <card id="6135" mastery_level="5" name="Burnshell" />
+      <card id="6147" mastery_level="6" name="Sandspirit Whisperer" />
+      <card id="6163" mastery_level="7" name="Coven Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Sit tight, and we'll activate the machine. It won't be like nothin' you ever seen!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6463</id>
+    <name>Mechanical Chaos</name>
+    <energy>18</energy>
+    <desc>A creature appears from the machine. It has a very mechanical-sounding voice, identical to the one you encountered in Luminis.</desc>
+    <commander id="245" />
+    <deck>
+      <card id="8035" name="Radium Corrupter" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="6123" name="Battleborn Destrier" />
+      <card id="6123" />
+      <card id="2096" name="Magma Rider" />
+      <card id="2155" name="Saguaro Stance" />
+      <card id="6125" name="Deadly Shot" />
+      <card id="2096" mastery_level="2" name="Magma Rider" />
+      <card id="2155" mastery_level="3" name="Saguaro Stance" />
+      <card id="6125" mastery_level="4" name="Deadly Shot" />
+      <card id="2096" mastery_level="5" name="Magma Rider" />
+      <card id="6179" mastery_level="6" name="Sol Doumu" />
+      <card id="6003" mastery_level="7" name="Black Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>firetitan</commander>
+        <enemy>1</enemy>
+        <text>Commencing initialization welcome sequence. Greetings, sentients.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 24 Node 2 -->
+  <mission>
+    <id>6464</id>
+    <name>Decim's Fascination</name>
+    <energy>18</energy>
+    <desc>Decim is extremely entertained by the changing structure and the appearance of the new creature. He lets you and Scyer continue to work his magic.</desc>
+    <commander id="270" />
+    <deck>
+      <card id="8032" name="Steelsword Raider" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2010" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="2058" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="5015" mastery_level="2" name="Gravity Swell" />
+      <card id="5124" mastery_level="3" name="Sylph Drifter" />
+      <card id="2058" mastery_level="4" name="Bismuth Bully" />
+      <card id="2010" mastery_level="5" name="Silver Wind" />
+      <card id="5045" mastery_level="6" name="Echo Elemental" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Whoa, what?! You weren't kidding! This is amazing!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6465</id>
+    <name>Revitalizing the Power Coil</name>
+    <energy>18</energy>
+    <desc>The power coil guardian needs help, just like the Luminis one. As a mechanical creation, it lacks the knowledge of the Chaos.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="2154" name="Soul Wisp Gathering" />
+      <card id="2154" />
+      <card id="5046" name="Dawn" />
+      <card id="2025" name="Blight Knight" />
+      <card id="5046" mastery_level="2" name="Dawn" />
+      <card id="2025" mastery_level="3" name="Blight Knight" />
+      <card id="2154" mastery_level="4" name="Soul Wisp Gathering" />
+      <card id="5166" mastery_level="5" name="Hoarfrost Buzzard" />
+      <card id="5175" mastery_level="6" name="Spirit of Cygnus" />
+      <card id="5216" mastery_level="7" name="Drakon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>firetitan</commander>
+        <enemy>1</enemy>
+        <text>I am an AI designed to simulate Chaos.</text>
+      </line>
+      <line>
+        <commander>firetitan</commander>
+        <enemy>1</enemy>
+        <text>Provide the necessary answers to automate Chaos attunement process.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6466</id>
+    <name>Chaos Experts</name>
+    <energy>18</energy>
+    <desc>Luckily, you have two Chaos experts with you. The free roaming spirit Mecha Scyer, and the freedom lover Decim. Although they have their differences, their answers are surprisingly in sync with each other.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="8037" name="Sludge River" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="2059" />
+      <card id="2170" name="Amberguard Elemental" />
+      <card id="2170" />
+      <card id="2056" name="Drainor" />
+      <card id="7170" name="Gallows Hand" />
+      <card id="2056" mastery_level="2" name="Drainor" />
+      <card id="7170" mastery_level="3" name="Gallows Hand" />
+      <card id="2170" mastery_level="4" name="Amberguard Elemental" />
+      <card id="2059" mastery_level="5" name="Matriarch's Call" />
+      <card id="1642" mastery_level="6" name="Icestone Beast" />
+      <card id="7033" mastery_level="7" name="Treebond Skull" />
+    </deck>
+    <speech>
+      <line>
+        <commander>firetitan</commander>
+        <enemy>1</enemy>
+        <text>What element embodies Chaos?</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Everyone knows what the Chaos admire, and that's great balls of fire!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6467</id>
+    <name>Chaos Value</name>
+    <energy>18</energy>
+    <desc>Decim can't help but help you. The answers are too easy for him. Between him and Scyer, the Chaos attunement is proceeding smoothly.</desc>
+    <commander id="267" />
+    <deck>
+      <card id="8080" name="Solaron's Gust" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="5141" name="Nimbocaster" />
+      <card id="5141" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="1032" />
+      <card id="2168" name="Cryonic Guard" />
+      <card id="5033" name="Lost Soul" />
+      <card id="2168" mastery_level="2" name="Cryonic Guard" />
+      <card id="5033" mastery_level="3" name="Lost Soul" />
+      <card id="1032" mastery_level="4" name="Lunar Elemental" />
+      <card id="5141" mastery_level="5" name="Nimbocaster" />
+      <card id="5136" mastery_level="6" name="Lapis" />
+      <card id="5122" mastery_level="7" name="Crow King" />
+    </deck>
+    <speech>
+      <line>
+        <commander>firetitan</commander>
+        <enemy>1</enemy>
+        <text>What is the most important of these three: freedom, spiritual strength, or power?</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Freedom, duh!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6468</id>
+    <name>Attunement</name>
+    <energy>18</energy>
+    <desc>Monsters from the surrounding Karthos area frequently interrupt you. On top of that, after every question the power coil sends its own creations to test your will.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5084" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="2095" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="1026" mastery_level="2" name="Glass Colossus" />
+      <card id="5021" mastery_level="3" name="Tower Spirit" />
+      <card id="2095" mastery_level="4" name="Spoutal Nemesis" />
+      <card id="5084" mastery_level="5" name="Dotora Spirit" />
+      <card id="5137" mastery_level="6" name="Forgesoul Construct" />
+      <card id="5167" mastery_level="7" name="Hierophant of Evening" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6469</id>
+    <name>Manifestation Completion</name>
+    <energy>18</energy>
+    <desc>The final question has been answered. All that remains is to fight the creation you helped bring into fruition, so that its memory can be sent back to Viracocha!</desc>
+    <commander id="245" />
+    <deck>
+      <card id="8034" name="Swiftness Feeder" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6034" name="Bone Viper" />
+      <card id="6034" />
+      <card id="2189" name="Firetorch Spirit" />
+      <card id="2189" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6015" mastery_level="2" name="Acidic Sludge" />
+      <card id="6116" mastery_level="3" name="Otherworldly Archer" />
+      <card id="2189" mastery_level="4" name="Firetorch Spirit" />
+      <card id="6034" mastery_level="5" name="Bone Viper" />
+      <card id="6178" mastery_level="6" name="Bitumen Elemental" />
+      <card id="6084" mastery_level="7" name="Crypt Sentry" />
+    </deck>
+    <speech>
+      <line>
+        <commander>firetitan</commander>
+        <enemy>1</enemy>
+        <text>Attunement complete.</text>
+      </line>
+      <line>
+        <commander>firetitan</commander>
+        <enemy>1</enemy>
+        <text>Fight the manifestation you created and I will send its memory bank to the Master.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

@@ -2331,6 +2331,22 @@
     <card_id>22189</card_id>
     <resource card_id="12189" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12190</card_id>
+    <resource card_id="2190" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22190</card_id>
+    <resource card_id="12190" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12191</card_id>
+    <resource card_id="2191" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22191</card_id>
+    <resource card_id="12191" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->

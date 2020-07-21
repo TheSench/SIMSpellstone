@@ -13976,6 +13976,133 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 24 weeks 1-4 -->
+  <achievement>
+    <id>3591</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Karthos</name>
+    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 1.</desc>
+    <mission_req>6458</mission_req>
+    <locked_start_time>1595523600</locked_start_time>
+    <!--  Thursday, 23 July 2020 17:00:00 -->
+    <req>
+      <campaign>1255</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3116" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7062" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3592</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Karthos</name>
+    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 2.</desc>
+    <mission_req>6458</mission_req>
+    <locked_start_time>1595523600</locked_start_time>
+    <!--  Thursday, 23 July 2020 17:00:00 -->
+    <achievement_req>3591</achievement_req>
+    <req>
+      <campaign>1255</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3593</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Karthos</name>
+    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 4.</desc>
+    <mission_req>6458</mission_req>
+    <locked_start_time>1595523600</locked_start_time>
+    <!--  Thursday, 23 July 2020 17:00:00 -->
+    <achievement_req>3592</achievement_req>
+    <req>
+      <campaign>1255</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3594</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Karthos</name>
+    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 6.</desc>
+    <mission_req>6458</mission_req>
+    <locked_start_time>1595523600</locked_start_time>
+    <!--  Thursday, 23 July 2020 17:00:00 -->
+    <achievement_req>3593</achievement_req>
+    <req>
+      <campaign>1255</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3595</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Chaos Power Coil</name>
+    <desc>Complete the 'Chaos Power Coil' campaign on Mastery Level 2.</desc>
+    <mission_req>6464</mission_req>
+    <locked_start_time>1596733200</locked_start_time>
+    <!--  Thursday, 6 August 2020 17:00:00 -->
+    <req>
+      <campaign>1256</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3596</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Chaos Power Coil</name>
+    <desc>Complete the 'Chaos Power Coil' campaign on Mastery Level 4.</desc>
+    <mission_req>6464</mission_req>
+    <locked_start_time>1596733200</locked_start_time>
+    <!--  Thursday, 6 August 2020 17:00:00 -->
+    <achievement_req>3595</achievement_req>
+    <req>
+      <campaign>1256</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3597</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Chaos Power Coil</name>
+    <desc>Complete the 'Chaos Power Coil' campaign on Mastery Level 6.</desc>
+    <mission_req>6464</mission_req>
+    <locked_start_time>1596733200</locked_start_time>
+    <!--  Thursday, 6 August 2020 17:00:00 -->
+    <achievement_req>3596</achievement_req>
+    <req>
+      <campaign>1256</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
