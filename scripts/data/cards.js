@@ -28033,7 +28033,7 @@ var CARDS = {
 				"x": 2
 			},
 			{
-				"id": "counter",
+				"id": "counterburn",
 				"x": 2
 			},
 			{
@@ -28063,7 +28063,7 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "counter",
+						"id": "counterburn",
 						"x": 2
 					},
 					{
@@ -28081,7 +28081,7 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "counter",
+						"id": "counterburn",
 						"x": 3
 					},
 					{
@@ -28638,7 +28638,7 @@ var CARDS = {
 			{
 				"id": "rally",
 				"x": 6,
-				"y": "7"
+				"y": "10"
 			},
 			{
 				"id": "daze",
@@ -28667,7 +28667,7 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 7,
-						"y": "7"
+						"y": "10"
 					},
 					{
 						"id": "daze",
@@ -28684,7 +28684,7 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 7,
-						"y": "7"
+						"y": "10"
 					},
 					{
 						"id": "daze",
@@ -142569,7 +142569,7 @@ var CARDS = {
 				"x": 3
 			},
 			{
-				"id": "counter",
+				"id": "counterburn",
 				"x": 3
 			},
 			{
@@ -142595,7 +142595,7 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"id": "counter",
+						"id": "counterburn",
 						"x": 3
 					},
 					{
@@ -142613,7 +142613,7 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"id": "counter",
+						"id": "counterburn",
 						"x": 4
 					},
 					{
@@ -142631,7 +142631,7 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"id": "counter",
+						"id": "counterburn",
 						"x": 4
 					},
 					{
@@ -143187,7 +143187,7 @@ var CARDS = {
 			{
 				"id": "rally",
 				"x": 7,
-				"y": "7"
+				"y": "10"
 			},
 			{
 				"id": "daze",
@@ -143208,7 +143208,7 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 7,
-						"y": "7"
+						"y": "10"
 					},
 					{
 						"id": "daze",
@@ -143230,7 +143230,7 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 8,
-						"y": "7"
+						"y": "10"
 					},
 					{
 						"id": "daze",
@@ -143247,7 +143247,7 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 8,
-						"y": "7"
+						"y": "10"
 					},
 					{
 						"id": "daze",
@@ -234089,7 +234089,7 @@ var CARDS = {
 				"x": 4
 			},
 			{
-				"id": "counter",
+				"id": "counterburn",
 				"x": 4
 			},
 			{
@@ -234119,7 +234119,7 @@ var CARDS = {
 						"x": 5
 					},
 					{
-						"id": "counter",
+						"id": "counterburn",
 						"x": 4
 					},
 					{
@@ -234137,7 +234137,7 @@ var CARDS = {
 						"x": 5
 					},
 					{
-						"id": "counter",
+						"id": "counterburn",
 						"x": 5
 					},
 					{
@@ -234677,7 +234677,7 @@ var CARDS = {
 			{
 				"id": "rally",
 				"x": 8,
-				"y": "7"
+				"y": "10"
 			},
 			{
 				"id": "daze",
@@ -234706,7 +234706,7 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 8,
-						"y": "7"
+						"y": "10"
 					},
 					{
 						"id": "daze",
@@ -234723,7 +234723,7 @@ var CARDS = {
 					{
 						"id": "rally",
 						"x": 9,
-						"y": "7"
+						"y": "10"
 					},
 					{
 						"id": "daze",

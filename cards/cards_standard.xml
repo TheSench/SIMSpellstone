@@ -2819,7 +2819,7 @@
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="2" />
-    <skill id="counter" x="2" />
+    <skill id="counterburn" x="2" />
     <skill id="rally" x="1" all="1" y="16" />
     <type>1</type>
     <sub_type>16</sub_type>
@@ -2835,13 +2835,13 @@
     <upgrade>
       <level>4</level>
       <skill id="stasis" x="3" />
-      <skill id="counter" x="2" />
+      <skill id="counterburn" x="2" />
       <skill id="rally" x="1" all="1" y="16" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="stasis" x="3" />
-      <skill id="counter" x="3" />
+      <skill id="counterburn" x="3" />
       <skill id="rally" x="1" all="1" y="16" />
     </upgrade>
   </unit>
@@ -2858,7 +2858,7 @@
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="3" />
-    <skill id="counter" x="3" />
+    <skill id="counterburn" x="3" />
     <skill id="rally" x="2" all="1" y="16" />
     <type>1</type>
     <sub_type>16</sub_type>
@@ -2870,19 +2870,19 @@
     <upgrade>
       <level>3</level>
       <skill id="stasis" x="4" />
-      <skill id="counter" x="3" />
+      <skill id="counterburn" x="3" />
       <skill id="rally" x="2" all="1" y="16" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="stasis" x="4" />
-      <skill id="counter" x="4" />
+      <skill id="counterburn" x="4" />
       <skill id="rally" x="2" all="1" y="16" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="stasis" x="4" />
-      <skill id="counter" x="4" />
+      <skill id="counterburn" x="4" />
       <skill id="rally" x="3" all="1" y="16" />
     </upgrade>
   </unit>
@@ -2899,7 +2899,7 @@
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="4" />
-    <skill id="counter" x="4" />
+    <skill id="counterburn" x="4" />
     <skill id="rally" x="3" all="1" y="16" />
     <type>1</type>
     <sub_type>16</sub_type>
@@ -2915,13 +2915,13 @@
     <upgrade>
       <level>4</level>
       <skill id="stasis" x="5" />
-      <skill id="counter" x="4" />
+      <skill id="counterburn" x="4" />
       <skill id="rally" x="3" all="1" y="16" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="stasis" x="5" />
-      <skill id="counter" x="5" />
+      <skill id="counterburn" x="5" />
       <skill id="rally" x="4" all="1" y="16" />
     </upgrade>
   </unit>
@@ -3745,7 +3745,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="backlash" x="2" />
-    <skill id="rally" x="6" y="7" />
+    <skill id="rally" x="6" y="10" />
     <skill id="daze" x="6" />
     <type>1</type>
     <sub_type>10</sub_type>
@@ -3761,13 +3761,13 @@
     <upgrade>
       <level>4</level>
       <skill id="backlash" x="2" />
-      <skill id="rally" x="7" y="7" />
+      <skill id="rally" x="7" y="10" />
       <skill id="daze" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="backlash" x="2" />
-      <skill id="rally" x="7" y="7" />
+      <skill id="rally" x="7" y="10" />
       <skill id="daze" x="7" />
     </upgrade>
   </unit>
@@ -3784,7 +3784,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="backlash" x="2" />
-    <skill id="rally" x="7" y="7" />
+    <skill id="rally" x="7" y="10" />
     <skill id="daze" x="7" />
     <type>1</type>
     <sub_type>10</sub_type>
@@ -3792,7 +3792,7 @@
     <upgrade>
       <level>2</level>
       <skill id="backlash" x="3" />
-      <skill id="rally" x="7" y="7" />
+      <skill id="rally" x="7" y="10" />
       <skill id="daze" x="7" />
     </upgrade>
     <upgrade>
@@ -3803,13 +3803,13 @@
       <level>4</level>
       <attack>8</attack>
       <skill id="backlash" x="3" />
-      <skill id="rally" x="8" y="7" />
+      <skill id="rally" x="8" y="10" />
       <skill id="daze" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="backlash" x="3" />
-      <skill id="rally" x="8" y="7" />
+      <skill id="rally" x="8" y="10" />
       <skill id="daze" x="8" />
     </upgrade>
   </unit>
@@ -3826,7 +3826,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="backlash" x="3" />
-    <skill id="rally" x="8" y="7" />
+    <skill id="rally" x="8" y="10" />
     <skill id="daze" x="8" />
     <type>1</type>
     <sub_type>10</sub_type>
@@ -3842,13 +3842,13 @@
     <upgrade>
       <level>4</level>
       <skill id="backlash" x="4" />
-      <skill id="rally" x="8" y="7" />
+      <skill id="rally" x="8" y="10" />
       <skill id="daze" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="backlash" x="4" />
-      <skill id="rally" x="9" y="7" />
+      <skill id="rally" x="9" y="10" />
       <skill id="daze" x="9" />
     </upgrade>
   </unit>
