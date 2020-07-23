@@ -35262,7 +35262,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 2,
-		"health": 13,
+		"health": 19,
 		"hidden_until": "1453395600000",
 		"id": "2024",
 		"maxLevel": 5,
@@ -35286,11 +35286,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 15,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
@@ -39884,7 +39884,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 3,
-		"health": 21,
+		"health": 29,
 		"hidden_until": "1491498000000",
 		"id": "2087",
 		"maxLevel": 5,
@@ -39913,15 +39913,15 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 22,
+				"health": 30,
 				"skill": []
 			},
 			"3": {
-				"health": 23,
+				"health": 31,
 				"skill": []
 			},
 			"4": {
-				"health": 24,
+				"health": 32,
 				"skill": []
 			},
 			"5": {
@@ -39934,7 +39934,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 9,
+		"health": 11,
 		"hidden_until": "1491498000000",
 		"id": "2088",
 		"maxLevel": 5,
@@ -39959,7 +39959,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 10,
+				"health": 12,
 				"skill": []
 			},
 			"3": {
@@ -39989,7 +39989,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 11,
+				"health": 13,
 				"skill": []
 			}
 		}
@@ -40954,7 +40954,7 @@ var CARDS = {
 		"attack": 3,
 		"card_type": "2",
 		"cost": 1,
-		"health": 11,
+		"health": 13,
 		"hidden_until": "1500310800000",
 		"id": "2101",
 		"maxLevel": 5,
@@ -40999,7 +40999,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 12,
+				"health": 14,
 				"skill": []
 			},
 			"4": {
@@ -46256,7 +46256,7 @@ var CARDS = {
 		}
 	},
 	"2173": {
-		"attack": 3,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 3,
 		"health": 35,
@@ -46314,7 +46314,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 4,
+				"attack": 7,
 				"skill": []
 			},
 			"5": {
@@ -63916,7 +63916,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 10,
+		"health": 11,
 		"hidden_until": "1492707600000",
 		"id": "5124",
 		"maxLevel": 5,
@@ -63941,7 +63941,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 11,
+				"health": 12,
 				"skill": []
 			},
 			"3": {
@@ -63957,7 +63957,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 12,
+				"health": 13,
 				"skill": []
 			},
 			"5": {
@@ -64043,7 +64043,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 2,
-		"health": 15,
+		"health": 19,
 		"hidden_until": "1493053200000",
 		"id": "5126",
 		"maxLevel": 6,
@@ -64072,11 +64072,11 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 16,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 17,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
@@ -64084,7 +64084,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
-				"health": 18,
+				"health": 22,
 				"skill": []
 			},
 			"6": {
@@ -67484,7 +67484,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 2,
-		"health": 15,
+		"health": 18,
 		"hidden_until": "1511802000000",
 		"id": "5170",
 		"maxLevel": 6,
@@ -67530,11 +67530,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 16,
+				"health": 19,
 				"skill": []
 			},
 			"4": {
-				"health": 17,
+				"health": 20,
 				"skill": []
 			},
 			"5": {
@@ -67542,7 +67542,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 18,
+				"health": 21,
 				"skill": []
 			}
 		}
@@ -76281,6 +76281,103 @@ var CARDS = {
 			}
 		}
 	},
+	"5277": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1595869200000",
+		"id": "5277",
+		"maxLevel": 6,
+		"name": "Vision of Eternity",
+		"picture": "Undead_Light_Spectre_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1,
+				"y": "7"
+			},
+			{
+				"id": "nullify",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 6,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -79049,16 +79146,16 @@ var CARDS = {
 		}
 	},
 	"6002": {
-		"attack": 4,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 1,
-		"health": 11,
+		"health": 14,
 		"id": "6002",
 		"maxLevel": 6,
 		"name": "Spirit of Madness",
 		"picture": "Chaos_Spirit_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -79079,7 +79176,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 12,
+				"health": 15,
 				"skill": []
 			},
 			"3": {
@@ -79099,7 +79196,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 13,
+				"health": 16,
 				"skill": []
 			},
 			"5": {
@@ -79119,13 +79216,13 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 5,
+				"attack": 7,
 				"skill": []
 			}
 		}
 	},
 	"6003": {
-		"attack": 8,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 3,
 		"health": 34,
@@ -79134,7 +79231,7 @@ var CARDS = {
 		"name": "Black Knight",
 		"picture": "Black_Knight_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"all": "1",
@@ -79177,7 +79274,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"attack": 9,
+				"attack": 10,
 				"skill": []
 			},
 			"5": {
@@ -80161,7 +80258,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 3,
-		"health": 19,
+		"health": 32,
 		"id": "6016",
 		"maxLevel": 5,
 		"name": "Skeletal Giant",
@@ -80189,7 +80286,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 20,
+				"health": 33,
 				"skill": [
 					{
 						"id": "counter",
@@ -80207,7 +80304,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 22,
+				"health": 34,
 				"skill": []
 			},
 			"4": {
@@ -80993,16 +81090,16 @@ var CARDS = {
 		}
 	},
 	"6027": {
-		"attack": 4,
+		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 9,
+		"health": 19,
 		"id": "6027",
 		"maxLevel": 6,
 		"name": "Frigela, the Dread",
 		"picture": "Ice_Witch_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -81023,19 +81120,19 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 14,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 15,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
-				"attack": 5,
+				"attack": 6,
 				"skill": []
 			},
 			"5": {
-				"health": 16,
+				"health": 22,
 				"skill": []
 			},
 			"6": {
@@ -81140,7 +81237,7 @@ var CARDS = {
 		"attack": 2,
 		"card_type": "2",
 		"cost": 1,
-		"health": 8,
+		"health": 13,
 		"id": "6029",
 		"maxLevel": 5,
 		"name": "Spinehead Stalker",
@@ -81168,7 +81265,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 9,
+				"health": 14,
 				"skill": []
 			},
 			"3": {
@@ -81430,17 +81527,17 @@ var CARDS = {
 		}
 	},
 	"6033": {
-		"attack": 4,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 14,
+		"health": 18,
 		"hidden_until": "1452790800000",
 		"id": "6033",
 		"maxLevel": 6,
 		"name": "Firebeard",
 		"picture": "Lost_Captain_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"all": "1",
@@ -81462,11 +81559,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 15,
+				"health": 19,
 				"skill": []
 			},
 			"3": {
-				"health": 16,
+				"health": 20,
 				"skill": []
 			},
 			"4": {
@@ -81487,20 +81584,20 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 17,
+				"health": 21,
 				"skill": []
 			},
 			"6": {
-				"health": 18,
+				"health": 22,
 				"skill": []
 			}
 		}
 	},
 	"6034": {
-		"attack": 4,
+		"attack": 5,
 		"card_type": "2",
 		"cost": 1,
-		"health": 9,
+		"health": 12,
 		"hidden_until": "1453395600000",
 		"id": "6034",
 		"maxLevel": 5,
@@ -81528,7 +81625,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 10,
+				"health": 13,
 				"skill": []
 			},
 			"3": {
@@ -81548,11 +81645,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 11,
+				"health": 14,
 				"skill": []
 			},
 			"5": {
-				"attack": 5,
+				"attack": 6,
 				"skill": [
 					{
 						"id": "pierce",
@@ -85199,7 +85296,7 @@ var CARDS = {
 		"name": "Rugarth, Fallen Bones",
 		"picture": "Defeated_Dragon_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "pierce",
@@ -91035,7 +91132,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 16,
+		"health": 17,
 		"hidden_until": "1511456400000",
 		"id": "6164",
 		"maxLevel": 5,
@@ -91064,11 +91161,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
-				"health": 18,
+				"health": 19,
 				"skill": []
 			},
 			"4": {
@@ -91089,7 +91186,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 19,
+				"health": 20,
 				"skill": []
 			}
 		}
@@ -103498,17 +103595,17 @@ var CARDS = {
 		}
 	},
 	"7033": {
-		"attack": 5,
+		"attack": 11,
 		"card_type": "2",
 		"cost": 4,
-		"health": 29,
+		"health": 50,
 		"hidden_until": "1452790800000",
 		"id": "7033",
 		"maxLevel": 6,
 		"name": "Treebond Skull",
 		"picture": "Treebound_Skeleton_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "armored",
@@ -103531,7 +103628,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 31,
+				"health": 51,
 				"skill": []
 			},
 			"3": {
@@ -103553,7 +103650,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 33,
+				"health": 52,
 				"skill": []
 			},
 			"5": {
@@ -103735,13 +103832,13 @@ var CARDS = {
 		"attack": 3,
 		"card_type": "2",
 		"cost": 1,
-		"health": 6,
+		"health": 12,
 		"id": "7036",
 		"maxLevel": 6,
 		"name": "Deepwood Corpse",
 		"picture": "Woodland_Ranger_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "fervor",
@@ -103763,11 +103860,11 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 7,
+				"health": 13,
 				"skill": []
 			},
 			"3": {
-				"health": 8,
+				"health": 14,
 				"skill": []
 			},
 			"4": {
@@ -103792,7 +103889,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 9,
+				"health": 15,
 				"skill": [
 					{
 						"id": "fervor",
@@ -107422,7 +107519,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 3,
-		"health": 19,
+		"health": 26,
 		"hidden_until": "1475773200000",
 		"id": "7084",
 		"maxLevel": 5,
@@ -107453,11 +107550,11 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 20,
+				"health": 27,
 				"skill": []
 			},
 			"3": {
-				"health": 21,
+				"health": 28,
 				"skill": [
 					{
 						"all": "1",
@@ -107478,11 +107575,11 @@ var CARDS = {
 			},
 			"4": {
 				"attack": 6,
-				"health": 22,
+				"health": 29,
 				"skill": []
 			},
 			"5": {
-				"health": 23,
+				"health": 30,
 				"skill": [
 					{
 						"all": "1",
@@ -107584,7 +107681,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 8,
+		"health": 11,
 		"hidden_until": "1474909200000",
 		"id": "7086",
 		"maxLevel": 6,
@@ -107614,11 +107711,11 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 9,
+				"health": 12,
 				"skill": []
 			},
 			"3": {
-				"health": 10,
+				"health": 13,
 				"skill": []
 			},
 			"4": {
@@ -107656,7 +107753,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 11,
+				"health": 14,
 				"skill": []
 			}
 		}
@@ -110405,7 +110502,7 @@ var CARDS = {
 		"name": "Soul Caller",
 		"picture": "Undead_Tribal_Frog_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "corrosive",
@@ -110550,7 +110647,7 @@ var CARDS = {
 		"attack": 3,
 		"card_type": "2",
 		"cost": 3,
-		"health": 14,
+		"health": 27,
 		"hidden_until": "1493312400000",
 		"id": "7125",
 		"maxLevel": 5,
@@ -110580,11 +110677,11 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 4,
-				"health": 15,
+				"health": 28,
 				"skill": []
 			},
 			"3": {
-				"health": 16,
+				"health": 29,
 				"skill": [
 					{
 						"id": "evade",
@@ -110603,11 +110700,11 @@ var CARDS = {
 			},
 			"4": {
 				"attack": 5,
-				"health": 17,
+				"health": 30,
 				"skill": []
 			},
 			"5": {
-				"health": 18,
+				"health": 31,
 				"skill": [
 					{
 						"id": "evade",
@@ -114004,7 +114101,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 16,
+		"health": 20,
 		"hidden_until": "1512666000000",
 		"id": "7170",
 		"maxLevel": 5,
@@ -114032,11 +114129,11 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 21,
 				"skill": []
 			},
 			"3": {
-				"health": 18,
+				"health": 22,
 				"skill": []
 			},
 			"4": {
@@ -125472,6 +125569,174 @@ var CARDS = {
 					{
 						"id": "frost",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"7612": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1595523600000",
+		"id": "7612",
+		"maxLevel": 10,
+		"name": "Tzopilotl, the Beyonder",
+		"picture": "Avian_Undead_Mummy_Condor_B",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3
+			},
+			{
+				"id": "berserk",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"7",
+			"10"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"attack": 10,
+				"health": 30,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 6
+					}
+				]
+			},
+			"8": {
+				"attack": 12,
+				"health": 32,
+				"skill": []
+			},
+			"9": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"id": "berserk",
+						"x": 7
+					}
+				]
+			},
+			"10": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"id": "berserk",
+						"x": 7
 					}
 				]
 			}
@@ -149612,7 +149877,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 20,
+		"health": 22,
 		"hidden_until": "1453395600000",
 		"id": "12024",
 		"maxLevel": 5,
@@ -149640,11 +149905,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 21,
+				"health": 23,
 				"skill": []
 			},
 			"3": {
-				"health": 22,
+				"health": 24,
 				"skill": [
 					{
 						"id": "evade",
@@ -153809,7 +154074,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 3,
-		"health": 25,
+		"health": 33,
 		"hidden_until": "1491498000000",
 		"id": "12087",
 		"maxLevel": 5,
@@ -153872,7 +154137,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 26,
+				"health": 34,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -153890,7 +154155,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 27,
+				"health": 35,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -153913,7 +154178,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 11,
+		"health": 14,
 		"hidden_until": "1491498000000",
 		"id": "12088",
 		"maxLevel": 5,
@@ -153942,7 +154207,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 12,
+				"health": 15,
 				"skill": []
 			},
 			"3": {
@@ -153950,7 +154215,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 13,
+				"health": 16,
 				"skill": []
 			},
 			"5": {
@@ -153966,7 +154231,7 @@ var CARDS = {
 					},
 					{
 						"id": "nullify",
-						"x": 1
+						"x": 2
 					}
 				]
 			}
@@ -154740,7 +155005,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 13,
+		"health": 15,
 		"hidden_until": "1500310800000",
 		"id": "12101",
 		"maxLevel": 5,
@@ -154788,7 +155053,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "counter",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "weaken",
@@ -154801,7 +155066,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 14,
+				"health": 16,
 				"skill": []
 			},
 			"5": {
@@ -155938,7 +156203,7 @@ var CARDS = {
 		"attack": 8,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 20,
 		"hidden_until": "1510851600000",
 		"id": "12115",
 		"maxLevel": 5,
@@ -155967,7 +156232,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 20,
+				"health": 21,
 				"skill": []
 			},
 			"3": {
@@ -155988,11 +156253,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 21,
+				"health": 22,
 				"skill": []
 			},
 			"5": {
-				"health": 22,
+				"health": 23,
 				"skill": [
 					{
 						"id": "evade",
@@ -160491,7 +160756,7 @@ var CARDS = {
 		}
 	},
 	"12173": {
-		"attack": 4,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 3,
 		"health": 37,
@@ -160545,7 +160810,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"attack": 5,
+				"attack": 9,
 				"skill": []
 			},
 			"4": {
@@ -171724,7 +171989,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 12,
+		"health": 14,
 		"hidden_until": "1492707600000",
 		"id": "15124",
 		"maxLevel": 5,
@@ -171765,7 +172030,7 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 13,
+				"health": 15,
 				"skill": []
 			},
 			"4": {
@@ -171785,7 +172050,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 14,
+				"health": 16,
 				"skill": [
 					{
 						"id": "armored",
@@ -171886,7 +172151,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 23,
 		"hidden_until": "1493053200000",
 		"id": "15126",
 		"maxLevel": 6,
@@ -171915,7 +172180,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 20,
+				"health": 24,
 				"skill": []
 			},
 			"3": {
@@ -171936,7 +172201,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 21,
+				"health": 25,
 				"skill": []
 			},
 			"5": {
@@ -171944,7 +172209,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 22,
+				"health": 26,
 				"skill": []
 			}
 		}
@@ -175635,7 +175900,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 2,
-		"health": 18,
+		"health": 22,
 		"hidden_until": "1511802000000",
 		"id": "15170",
 		"maxLevel": 6,
@@ -175664,7 +175929,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 19,
+				"health": 23,
 				"skill": []
 			},
 			"3": {
@@ -175685,7 +175950,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 20,
+				"health": 24,
 				"skill": []
 			},
 			"5": {
@@ -175693,7 +175958,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"health": 21,
+				"health": 25,
 				"skill": []
 			}
 		}
@@ -185014,6 +185279,103 @@ var CARDS = {
 			}
 		}
 	},
+	"15277": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1595869200000",
+		"id": "15277",
+		"maxLevel": 6,
+		"name": "Visage of Eternity",
+		"picture": "Undead_Light_Spectre_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 2,
+				"y": "7"
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 21,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -185153,16 +185515,16 @@ var CARDS = {
 		}
 	},
 	"16002": {
-		"attack": 6,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 1,
-		"health": 14,
+		"health": 17,
 		"id": "16002",
 		"maxLevel": 6,
 		"name": "Spirit of Dementia",
 		"picture": "Chaos_Spirit_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -185183,7 +185545,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 15,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
@@ -185203,7 +185565,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 16,
+				"health": 19,
 				"skill": []
 			},
 			"5": {
@@ -185223,13 +185585,13 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 7,
+				"attack": 9,
 				"skill": []
 			}
 		}
 	},
 	"16003": {
-		"attack": 9,
+		"attack": 11,
 		"card_type": "2",
 		"cost": 3,
 		"health": 36,
@@ -185238,7 +185600,7 @@ var CARDS = {
 		"name": "Onyx Knight",
 		"picture": "Black_Knight_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"all": "1",
@@ -186198,7 +186560,7 @@ var CARDS = {
 		"attack": 8,
 		"card_type": "2",
 		"cost": 3,
-		"health": 23,
+		"health": 35,
 		"id": "16016",
 		"maxLevel": 5,
 		"name": "Tormented Giant",
@@ -186227,7 +186589,7 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 9,
-				"health": 24,
+				"health": 36,
 				"skill": []
 			},
 			"3": {
@@ -186249,11 +186611,11 @@ var CARDS = {
 			},
 			"4": {
 				"attack": 10,
-				"health": 25,
+				"health": 37,
 				"skill": []
 			},
 			"5": {
-				"health": 26,
+				"health": 38,
 				"skill": [
 					{
 						"id": "counter",
@@ -187015,16 +187377,16 @@ var CARDS = {
 		}
 	},
 	"16027": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 17,
+		"health": 23,
 		"id": "16027",
 		"maxLevel": 6,
 		"name": "Frigela, the Terror",
 		"picture": "Ice_Witch_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -187036,7 +187398,7 @@ var CARDS = {
 			},
 			{
 				"id": "strike",
-				"x": 4
+				"x": 5
 			}
 		],
 		"sub_type": [
@@ -187045,7 +187407,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 18,
+				"health": 24,
 				"skill": []
 			},
 			"3": {
@@ -187060,12 +187422,12 @@ var CARDS = {
 					},
 					{
 						"id": "strike",
-						"x": 5
+						"x": 6
 					}
 				]
 			},
 			"4": {
-				"health": 19,
+				"health": 25,
 				"skill": []
 			},
 			"5": {
@@ -187073,7 +187435,7 @@ var CARDS = {
 				"skill": []
 			},
 			"6": {
-				"attack": 7,
+				"attack": 8,
 				"skill": [
 					{
 						"id": "evade",
@@ -187085,7 +187447,7 @@ var CARDS = {
 					},
 					{
 						"id": "strike",
-						"x": 6
+						"x": 7
 					}
 				]
 			}
@@ -187175,7 +187537,7 @@ var CARDS = {
 		"attack": 3,
 		"card_type": "2",
 		"cost": 1,
-		"health": 10,
+		"health": 15,
 		"id": "16029",
 		"maxLevel": 5,
 		"name": "Spinehead Trapper",
@@ -187185,7 +187547,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "rally",
-				"x": 2,
+				"x": 3,
 				"y": "7"
 			},
 			{
@@ -187203,18 +187565,18 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 11,
+				"health": 16,
 				"skill": []
 			},
 			"3": {
-				"health": 12,
+				"health": 17,
 				"skill": []
 			},
 			"4": {
 				"skill": [
 					{
 						"id": "rally",
-						"x": 2,
+						"x": 4,
 						"y": "7"
 					},
 					{
@@ -187231,7 +187593,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "rally",
-						"x": 3,
+						"x": 5,
 						"y": "7"
 					},
 					{
@@ -187479,17 +187841,17 @@ var CARDS = {
 		}
 	},
 	"16033": {
-		"attack": 6,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 23,
 		"hidden_until": "1452790800000",
 		"id": "16033",
 		"maxLevel": 6,
 		"name": "Pirate Firebeard",
 		"picture": "Lost_Captain_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"all": "1",
@@ -187511,7 +187873,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 20,
+				"health": 24,
 				"skill": []
 			},
 			"3": {
@@ -187532,11 +187894,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 23,
+				"health": 25,
 				"skill": []
 			},
 			"5": {
-				"health": 25,
+				"health": 26,
 				"skill": []
 			},
 			"6": {
@@ -187559,10 +187921,10 @@ var CARDS = {
 		}
 	},
 	"16034": {
-		"attack": 5,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 1,
-		"health": 12,
+		"health": 15,
 		"hidden_until": "1453395600000",
 		"id": "16034",
 		"maxLevel": 5,
@@ -187573,7 +187935,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "pierce",
-				"x": 3
+				"x": 4
 			},
 			{
 				"id": "poison",
@@ -187593,7 +187955,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "pierce",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "poison",
@@ -187609,7 +187971,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "pierce",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "poison",
@@ -187622,14 +187984,14 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 13,
+				"health": 16,
 				"skill": []
 			},
 			"5": {
 				"skill": [
 					{
 						"id": "pierce",
-						"x": 5
+						"x": 7
 					},
 					{
 						"id": "poison",
@@ -191341,7 +191703,7 @@ var CARDS = {
 		"name": "Rugarth, Pierced Heart",
 		"picture": "Defeated_Dragon_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -197989,7 +198351,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 19,
+		"health": 21,
 		"hidden_until": "1511456400000",
 		"id": "16164",
 		"maxLevel": 5,
@@ -198018,7 +198380,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 20,
+				"health": 22,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -198053,11 +198415,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 21,
+				"health": 23,
 				"skill": []
 			},
 			"5": {
-				"health": 22,
+				"health": 24,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -210287,17 +210649,17 @@ var CARDS = {
 		}
 	},
 	"17033": {
-		"attack": 9,
+		"attack": 12,
 		"card_type": "2",
 		"cost": 4,
-		"health": 44,
+		"health": 53,
 		"hidden_until": "1452790800000",
 		"id": "17033",
 		"maxLevel": 6,
 		"name": "Woodbond Skull",
 		"picture": "Treebound_Skeleton_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "armored",
@@ -210338,15 +210700,15 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 45,
+				"health": 54,
 				"skill": []
 			},
 			"4": {
-				"health": 46,
+				"health": 55,
 				"skill": []
 			},
 			"5": {
-				"attack": 10,
+				"attack": 13,
 				"skill": []
 			},
 			"6": {
@@ -210525,13 +210887,13 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 11,
+		"health": 16,
 		"id": "17036",
 		"maxLevel": 6,
 		"name": "Deepwood Dead",
 		"picture": "Woodland_Ranger_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "fervor",
@@ -210553,14 +210915,14 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 12,
+				"health": 17,
 				"skill": []
 			},
 			"3": {
 				"skill": [
 					{
 						"id": "fervor",
-						"x": 1,
+						"x": 2,
 						"y": "7"
 					},
 					{
@@ -210578,14 +210940,14 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
-				"health": 13,
+				"health": 18,
 				"skill": []
 			},
 			"6": {
 				"skill": [
 					{
 						"id": "fervor",
-						"x": 2,
+						"x": 3,
 						"y": "7"
 					},
 					{
@@ -210594,7 +210956,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 4
+						"x": 5
 					}
 				]
 			}
@@ -214507,10 +214869,10 @@ var CARDS = {
 		}
 	},
 	"17084": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 3,
-		"health": 24,
+		"health": 31,
 		"hidden_until": "1475773200000",
 		"id": "17084",
 		"maxLevel": 5,
@@ -214541,11 +214903,11 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 25,
+				"health": 32,
 				"skill": []
 			},
 			"3": {
-				"health": 26,
+				"health": 33,
 				"skill": [
 					{
 						"all": "1",
@@ -214565,7 +214927,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 27,
+				"health": 34,
 				"skill": [
 					{
 						"all": "1",
@@ -214585,8 +214947,8 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"attack": 7,
-				"health": 28,
+				"attack": 8,
+				"health": 35,
 				"skill": []
 			}
 		}
@@ -214684,7 +215046,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 12,
+		"health": 15,
 		"hidden_until": "1474909200000",
 		"id": "17086",
 		"maxLevel": 6,
@@ -214695,7 +215057,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "valor",
-				"x": 2
+				"x": 3
 			},
 			{
 				"id": "fervor",
@@ -214714,14 +215076,14 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 13,
+				"health": 16,
 				"skill": []
 			},
 			"3": {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "fervor",
@@ -214735,11 +215097,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 14,
+				"health": 17,
 				"skill": [
 					{
 						"id": "valor",
-						"x": 3
+						"x": 5
 					},
 					{
 						"id": "fervor",
@@ -214753,14 +215115,14 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 15,
+				"health": 18,
 				"skill": []
 			},
 			"6": {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 4
+						"x": 6
 					},
 					{
 						"id": "fervor",
@@ -217693,7 +218055,7 @@ var CARDS = {
 		}
 	},
 	"17123": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
 		"health": 21,
@@ -217703,7 +218065,7 @@ var CARDS = {
 		"name": "Soul Harbinger",
 		"picture": "Undead_Tribal_Frog_A",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "corrosive",
@@ -217727,7 +218089,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"attack": 7,
+				"attack": 8,
 				"health": 22,
 				"skill": []
 			},
@@ -217873,7 +218235,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 3,
-		"health": 19,
+		"health": 32,
 		"hidden_until": "1493312400000",
 		"id": "17125",
 		"maxLevel": 5,
@@ -217903,7 +218265,7 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 7,
-				"health": 20,
+				"health": 33,
 				"skill": []
 			},
 			"3": {
@@ -217925,11 +218287,11 @@ var CARDS = {
 			},
 			"4": {
 				"attack": 8,
-				"health": 21,
+				"health": 34,
 				"skill": []
 			},
 			"5": {
-				"health": 22,
+				"health": 35,
 				"skill": [
 					{
 						"id": "evade",
@@ -221551,7 +221913,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 18,
+		"health": 23,
 		"hidden_until": "1512666000000",
 		"id": "17170",
 		"maxLevel": 5,
@@ -221579,7 +221941,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 19,
+				"health": 24,
 				"skill": []
 			},
 			"3": {
@@ -221599,7 +221961,7 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 20,
+				"health": 25,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -241396,7 +241758,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 23,
+		"health": 25,
 		"hidden_until": "1453395600000",
 		"id": "22024",
 		"maxLevel": 5,
@@ -241424,12 +241786,12 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 24,
+				"health": 26,
 				"skill": []
 			},
 			"3": {
 				"attack": 8,
-				"health": 25,
+				"health": 27,
 				"skill": []
 			},
 			"4": {
@@ -245824,10 +246186,10 @@ var CARDS = {
 		}
 	},
 	"22087": {
-		"attack": 5,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 3,
-		"health": 33,
+		"health": 36,
 		"hidden_until": "1491498000000",
 		"id": "22087",
 		"maxLevel": 5,
@@ -245856,15 +246218,15 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"attack": 6,
+				"attack": 7,
 				"skill": []
 			},
 			"3": {
-				"health": 34,
+				"health": 37,
 				"skill": []
 			},
 			"4": {
-				"attack": 7,
+				"attack": 8,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -245882,7 +246244,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 35,
+				"health": 38,
 				"skill": [
 					{
 						"id": "corrosive",
@@ -245902,10 +246264,10 @@ var CARDS = {
 		}
 	},
 	"22088": {
-		"attack": 5,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 1,
-		"health": 16,
+		"health": 17,
 		"hidden_until": "1491498000000",
 		"id": "22088",
 		"maxLevel": 5,
@@ -245925,7 +246287,7 @@ var CARDS = {
 			},
 			{
 				"id": "nullify",
-				"x": 2
+				"x": 3
 			}
 		],
 		"sub_type": [
@@ -245934,16 +246296,16 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
-				"attack": 6,
+				"attack": 7,
 				"skill": []
 			},
 			"4": {
-				"attack": 7,
-				"health": 18,
+				"attack": 8,
+				"health": 19,
 				"skill": []
 			},
 			"5": {
@@ -245959,7 +246321,7 @@ var CARDS = {
 					},
 					{
 						"id": "nullify",
-						"x": 3
+						"x": 4
 					}
 				]
 			}
@@ -246701,10 +247063,10 @@ var CARDS = {
 		}
 	},
 	"22101": {
-		"attack": 5,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 1,
-		"health": 16,
+		"health": 17,
 		"hidden_until": "1500310800000",
 		"id": "22101",
 		"maxLevel": 5,
@@ -246715,7 +247077,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "counter",
-				"x": 4
+				"x": 5
 			},
 			{
 				"id": "weaken",
@@ -246733,22 +247095,22 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
-				"attack": 6,
+				"attack": 7,
 				"skill": []
 			},
 			"4": {
-				"health": 18,
+				"health": 19,
 				"skill": []
 			},
 			"5": {
 				"skill": [
 					{
 						"id": "counter",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "weaken",
@@ -247841,10 +248203,10 @@ var CARDS = {
 		}
 	},
 	"22115": {
-		"attack": 8,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 2,
-		"health": 22,
+		"health": 24,
 		"hidden_until": "1510851600000",
 		"id": "22115",
 		"maxLevel": 5,
@@ -247873,16 +248235,16 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 23,
+				"health": 25,
 				"skill": []
 			},
 			"3": {
-				"attack": 9,
-				"health": 24,
+				"attack": 10,
+				"health": 26,
 				"skill": []
 			},
 			"4": {
-				"health": 25,
+				"health": 27,
 				"skill": [
 					{
 						"id": "evade",
@@ -252379,7 +252741,7 @@ var CARDS = {
 		}
 	},
 	"22173": {
-		"attack": 5,
+		"attack": 10,
 		"card_type": "2",
 		"cost": 3,
 		"health": 38,
@@ -252414,7 +252776,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"attack": 6,
+				"attack": 11,
 				"skill": []
 			},
 			"3": {
@@ -264029,7 +264391,7 @@ var CARDS = {
 		"attack": 5,
 		"card_type": "2",
 		"cost": 1,
-		"health": 15,
+		"health": 17,
 		"hidden_until": "1492707600000",
 		"id": "25124",
 		"maxLevel": 5,
@@ -264058,18 +264420,18 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 16,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
-				"health": 17,
+				"health": 19,
 				"skill": []
 			},
 			"4": {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "valor",
@@ -264085,7 +264447,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "armored",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "valor",
@@ -264180,7 +264542,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 23,
+		"health": 27,
 		"hidden_until": "1493053200000",
 		"id": "25126",
 		"maxLevel": 6,
@@ -264209,7 +264571,7 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 24,
+				"health": 28,
 				"skill": []
 			},
 			"3": {
@@ -264217,7 +264579,7 @@ var CARDS = {
 				"skill": []
 			},
 			"4": {
-				"health": 25,
+				"health": 29,
 				"skill": []
 			},
 			"5": {
@@ -267957,10 +268319,10 @@ var CARDS = {
 		}
 	},
 	"25170": {
-		"attack": 6,
+		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 21,
+		"health": 26,
 		"hidden_until": "1511802000000",
 		"id": "25170",
 		"maxLevel": 6,
@@ -267972,11 +268334,11 @@ var CARDS = {
 			{
 				"all": "1",
 				"id": "strike",
-				"x": 1
+				"x": 2
 			},
 			{
 				"id": "burn",
-				"x": 2
+				"x": 3
 			},
 			{
 				"c": 3,
@@ -267989,19 +268351,19 @@ var CARDS = {
 		"type": "1",
 		"upgrades": {
 			"2": {
-				"health": 22,
+				"health": 27,
 				"skill": []
 			},
 			"3": {
-				"health": 23,
+				"health": 28,
 				"skill": []
 			},
 			"4": {
-				"attack": 7,
+				"attack": 8,
 				"skill": []
 			},
 			"5": {
-				"health": 24,
+				"health": 29,
 				"skill": []
 			},
 			"6": {
@@ -268009,11 +268371,11 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "burn",
-						"x": 3
+						"x": 4
 					},
 					{
 						"c": 3,
@@ -276977,6 +277339,103 @@ var CARDS = {
 			}
 		}
 	},
+	"25277": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 22,
+		"hidden_until": "1595869200000",
+		"id": "25277",
+		"maxLevel": 6,
+		"name": "Visitor of Eternity",
+		"picture": "Undead_Light_Spectre_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 3,
+				"y": "7"
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 9,
+				"skill": []
+			},
+			"3": {
+				"health": 23,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"26000": {
 		"attack": 6,
 		"card_type": "2",
@@ -277169,16 +277628,16 @@ var CARDS = {
 		}
 	},
 	"26002": {
-		"attack": 7,
+		"attack": 10,
 		"card_type": "2",
 		"cost": 1,
-		"health": 17,
+		"health": 20,
 		"id": "26002",
 		"maxLevel": 6,
 		"name": "Spirit of Insanity",
 		"picture": "Chaos_Spirit_C",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -277215,11 +277674,11 @@ var CARDS = {
 				]
 			},
 			"3": {
-				"health": 18,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
-				"health": 19,
+				"health": 22,
 				"skill": []
 			},
 			"5": {
@@ -277234,7 +277693,7 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
-						"x": 6
+						"x": 7
 					}
 				]
 			},
@@ -277242,7 +277701,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "evade",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "enfeeble",
@@ -277250,14 +277709,14 @@ var CARDS = {
 					},
 					{
 						"id": "leech",
-						"x": 7
+						"x": 8
 					}
 				]
 			}
 		}
 	},
 	"26003": {
-		"attack": 9,
+		"attack": 12,
 		"card_type": "2",
 		"cost": 3,
 		"health": 40,
@@ -277266,7 +277725,7 @@ var CARDS = {
 		"name": "Obsidian Knight",
 		"picture": "Black_Knight_C",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"all": "1",
@@ -277313,7 +277772,7 @@ var CARDS = {
 				"skill": []
 			},
 			"5": {
-				"attack": 10,
+				"attack": 13,
 				"skill": []
 			},
 			"6": {
@@ -278243,7 +278702,7 @@ var CARDS = {
 		"attack": 11,
 		"card_type": "2",
 		"cost": 3,
-		"health": 34,
+		"health": 39,
 		"id": "26016",
 		"maxLevel": 5,
 		"name": "Boneclaw Giant",
@@ -278271,7 +278730,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 35,
+				"health": 40,
 				"skill": []
 			},
 			"3": {
@@ -278310,7 +278769,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 36,
+				"health": 41,
 				"skill": [
 					{
 						"id": "counter",
@@ -279112,16 +279571,16 @@ var CARDS = {
 		}
 	},
 	"26027": {
-		"attack": 7,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 2,
-		"health": 26,
+		"health": 27,
 		"id": "26027",
 		"maxLevel": 6,
 		"name": "Frigela, the Absolute",
 		"picture": "Ice_Witch_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -279133,7 +279592,7 @@ var CARDS = {
 			},
 			{
 				"id": "strike",
-				"x": 6
+				"x": 8
 			}
 		],
 		"sub_type": [
@@ -279142,15 +279601,15 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 27,
-				"skill": []
-			},
-			"3": {
 				"health": 28,
 				"skill": []
 			},
+			"3": {
+				"health": 29,
+				"skill": []
+			},
 			"4": {
-				"attack": 8,
+				"attack": 10,
 				"skill": []
 			},
 			"5": {
@@ -279165,7 +279624,7 @@ var CARDS = {
 					},
 					{
 						"id": "strike",
-						"x": 7
+						"x": 9
 					}
 				]
 			},
@@ -279173,7 +279632,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "evade",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "enfeeble",
@@ -279181,7 +279640,7 @@ var CARDS = {
 					},
 					{
 						"id": "strike",
-						"x": 8
+						"x": 10
 					}
 				]
 			}
@@ -279271,7 +279730,7 @@ var CARDS = {
 		"attack": 3,
 		"card_type": "2",
 		"cost": 1,
-		"health": 16,
+		"health": 18,
 		"id": "26029",
 		"maxLevel": 5,
 		"name": "Spinehead Huntress",
@@ -279281,16 +279740,16 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "rally",
-				"x": 4,
+				"x": 6,
 				"y": "7"
 			},
 			{
 				"id": "enfeeble",
-				"x": 2
+				"x": 3
 			},
 			{
 				"id": "poison",
-				"x": 2
+				"x": 3
 			}
 		],
 		"sub_type": [
@@ -279299,7 +279758,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 17,
+				"health": 19,
 				"skill": []
 			},
 			"3": {
@@ -279310,16 +279769,16 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "rally",
-						"x": 5,
+						"x": 7,
 						"y": "7"
 					},
 					{
 						"id": "enfeeble",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "poison",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
@@ -279327,16 +279786,16 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "rally",
-						"x": 6,
+						"x": 8,
 						"y": "7"
 					},
 					{
 						"id": "enfeeble",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "poison",
-						"x": 4
+						"x": 5
 					}
 				]
 			}
@@ -279574,17 +280033,17 @@ var CARDS = {
 		}
 	},
 	"26033": {
-		"attack": 8,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 2,
-		"health": 26,
+		"health": 27,
 		"hidden_until": "1452790800000",
 		"id": "26033",
 		"maxLevel": 6,
 		"name": "Captain Firebeard",
 		"picture": "Lost_Captain_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"all": "1",
@@ -279597,7 +280056,7 @@ var CARDS = {
 			},
 			{
 				"id": "berserk",
-				"x": 2
+				"x": 3
 			}
 		],
 		"sub_type": [
@@ -279606,15 +280065,15 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 27,
+				"health": 28,
 				"skill": []
 			},
 			"3": {
-				"attack": 9,
+				"attack": 10,
 				"skill": []
 			},
 			"4": {
-				"health": 28,
+				"health": 29,
 				"skill": []
 			},
 			"5": {
@@ -279630,7 +280089,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
@@ -279639,7 +280098,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "enfeeble",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "leech",
@@ -279647,17 +280106,17 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 4
+						"x": 5
 					}
 				]
 			}
 		}
 	},
 	"26034": {
-		"attack": 5,
+		"attack": 8,
 		"card_type": "2",
 		"cost": 1,
-		"health": 14,
+		"health": 17,
 		"hidden_until": "1453395600000",
 		"id": "26034",
 		"maxLevel": 5,
@@ -279668,7 +280127,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "pierce",
-				"x": 6
+				"x": 8
 			},
 			{
 				"id": "poison",
@@ -279685,23 +280144,23 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 15,
+				"health": 18,
 				"skill": []
 			},
 			"3": {
-				"attack": 6,
-				"health": 16,
+				"attack": 9,
+				"health": 19,
 				"skill": []
 			},
 			"4": {
 				"skill": [
 					{
 						"id": "pierce",
-						"x": 7
+						"x": 9
 					},
 					{
 						"id": "poison",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "berserk",
@@ -279713,11 +280172,11 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "pierce",
-						"x": 8
+						"x": 10
 					},
 					{
 						"id": "poison",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "berserk",
@@ -283537,7 +283996,7 @@ var CARDS = {
 		"name": "Rugarth, the Indomitable",
 		"picture": "Defeated_Dragon_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "evade",
@@ -289975,7 +290434,7 @@ var CARDS = {
 		"attack": 6,
 		"card_type": "2",
 		"cost": 2,
-		"health": 22,
+		"health": 25,
 		"hidden_until": "1511456400000",
 		"id": "26164",
 		"maxLevel": 5,
@@ -290004,12 +290463,12 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 23,
+				"health": 26,
 				"skill": []
 			},
 			"3": {
 				"attack": 7,
-				"health": 24,
+				"health": 27,
 				"skill": []
 			},
 			"4": {
@@ -290025,7 +290484,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 2
+						"x": 3
 					}
 				]
 			},
@@ -290043,7 +290502,7 @@ var CARDS = {
 					},
 					{
 						"id": "berserk",
-						"x": 3
+						"x": 4
 					}
 				]
 			}
@@ -302293,17 +302752,17 @@ var CARDS = {
 		}
 	},
 	"27033": {
-		"attack": 11,
+		"attack": 14,
 		"card_type": "2",
 		"cost": 4,
-		"health": 49,
+		"health": 56,
 		"hidden_until": "1452790800000",
 		"id": "27033",
 		"maxLevel": 6,
 		"name": "Copsebond Skull",
 		"picture": "Treebound_Skeleton_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "armored",
@@ -302326,12 +302785,12 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"attack": 12,
-				"health": 50,
+				"attack": 15,
+				"health": 57,
 				"skill": []
 			},
 			"3": {
-				"health": 51,
+				"health": 58,
 				"skill": []
 			},
 			"4": {
@@ -302343,7 +302802,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 4,
+						"x": 5,
 						"y": "7"
 					},
 					{
@@ -302361,7 +302820,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 5,
+						"x": 6,
 						"y": "7"
 					},
 					{
@@ -302371,7 +302830,7 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"health": 52,
+				"health": 59,
 				"skill": [
 					{
 						"id": "armored",
@@ -302380,7 +302839,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "rally",
-						"x": 6,
+						"x": 7,
 						"y": "7"
 					},
 					{
@@ -302534,29 +302993,29 @@ var CARDS = {
 		}
 	},
 	"27036": {
-		"attack": 5,
+		"attack": 6,
 		"card_type": "2",
 		"cost": 1,
-		"health": 14,
+		"health": 19,
 		"id": "27036",
 		"maxLevel": 6,
 		"name": "Deepwood Zombie",
 		"picture": "Woodland_Ranger_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "fervor",
-				"x": 2,
+				"x": 4,
 				"y": "7"
 			},
 			{
 				"id": "enfeeble",
-				"x": 2
+				"x": 3
 			},
 			{
 				"id": "pierce",
-				"x": 4
+				"x": 6
 			}
 		],
 		"sub_type": [
@@ -302565,32 +303024,32 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 15,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 16,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
-				"attack": 6,
-				"health": 17,
+				"attack": 7,
+				"health": 22,
 				"skill": []
 			},
 			"5": {
 				"skill": [
 					{
 						"id": "fervor",
-						"x": 2,
+						"x": 5,
 						"y": "7"
 					},
 					{
 						"id": "enfeeble",
-						"x": 3
+						"x": 4
 					},
 					{
 						"id": "pierce",
-						"x": 4
+						"x": 7
 					}
 				]
 			},
@@ -302598,16 +303057,16 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "fervor",
-						"x": 4,
+						"x": 6,
 						"y": "7"
 					},
 					{
 						"id": "enfeeble",
-						"x": 3
+						"x": 5
 					},
 					{
 						"id": "pierce",
-						"x": 6
+						"x": 8
 					}
 				]
 			}
@@ -306661,10 +307120,10 @@ var CARDS = {
 		}
 	},
 	"27084": {
-		"attack": 7,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 3,
-		"health": 29,
+		"health": 36,
 		"hidden_until": "1475773200000",
 		"id": "27084",
 		"maxLevel": 5,
@@ -306695,16 +307154,16 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"attack": 8,
-				"health": 30,
+				"attack": 10,
+				"health": 37,
 				"skill": []
 			},
 			"3": {
-				"health": 31,
+				"health": 38,
 				"skill": []
 			},
 			"4": {
-				"health": 32,
+				"health": 39,
 				"skill": [
 					{
 						"all": "1",
@@ -306724,7 +307183,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 33,
+				"health": 40,
 				"skill": [
 					{
 						"all": "1",
@@ -306826,7 +307285,7 @@ var CARDS = {
 		"attack": 4,
 		"card_type": "2",
 		"cost": 1,
-		"health": 15,
+		"health": 19,
 		"hidden_until": "1474909200000",
 		"id": "27086",
 		"maxLevel": 6,
@@ -306837,7 +307296,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "valor",
-				"x": 4
+				"x": 7
 			},
 			{
 				"id": "fervor",
@@ -306856,22 +307315,22 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 16,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 17,
+				"health": 21,
 				"skill": []
 			},
 			"4": {
-				"health": 18,
+				"health": 22,
 				"skill": []
 			},
 			"5": {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 5
+						"x": 8
 					},
 					{
 						"id": "fervor",
@@ -306888,7 +307347,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
-						"x": 5
+						"x": 9
 					},
 					{
 						"id": "fervor",
@@ -309957,21 +310416,21 @@ var CARDS = {
 		}
 	},
 	"27123": {
-		"attack": 8,
+		"attack": 9,
 		"card_type": "2",
 		"cost": 2,
-		"health": 24,
+		"health": 25,
 		"hidden_until": "1492102800000",
 		"id": "27123",
 		"maxLevel": 6,
 		"name": "Soul Croaker",
 		"picture": "Undead_Tribal_Frog_B",
 		"rarity": 4,
-		"set": "3000",
+		"set": "4000",
 		"skill": [
 			{
 				"id": "corrosive",
-				"x": 4
+				"x": 5
 			},
 			{
 				"all": "1",
@@ -309991,25 +310450,25 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 25,
-				"skill": []
-			},
-			"3": {
-				"attack": 9,
 				"health": 26,
 				"skill": []
 			},
-			"4": {
+			"3": {
+				"attack": 10,
 				"health": 27,
 				"skill": []
 			},
-			"5": {
-				"attack": 10,
+			"4": {
 				"health": 28,
+				"skill": []
+			},
+			"5": {
+				"attack": 11,
+				"health": 29,
 				"skill": [
 					{
 						"id": "corrosive",
-						"x": 5
+						"x": 6
 					},
 					{
 						"all": "1",
@@ -310024,11 +310483,11 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 11,
+				"attack": 12,
 				"skill": [
 					{
 						"id": "corrosive",
-						"x": 6
+						"x": 7
 					},
 					{
 						"all": "1",
@@ -310128,7 +310587,7 @@ var CARDS = {
 		"attack": 10,
 		"card_type": "2",
 		"cost": 3,
-		"health": 30,
+		"health": 36,
 		"hidden_until": "1493312400000",
 		"id": "27125",
 		"maxLevel": 5,
@@ -310157,7 +310616,7 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 32,
+				"health": 37,
 				"skill": [
 					{
 						"id": "evade",
@@ -310176,12 +310635,12 @@ var CARDS = {
 			},
 			"3": {
 				"attack": 11,
-				"health": 33,
+				"health": 38,
 				"skill": []
 			},
 			"4": {
 				"attack": 12,
-				"health": 34,
+				"health": 39,
 				"skill": []
 			},
 			"5": {
@@ -313797,7 +314256,7 @@ var CARDS = {
 		"attack": 7,
 		"card_type": "2",
 		"cost": 2,
-		"health": 21,
+		"health": 26,
 		"hidden_until": "1512666000000",
 		"id": "27170",
 		"maxLevel": 5,
@@ -313829,7 +314288,7 @@ var CARDS = {
 				"skill": []
 			},
 			"3": {
-				"health": 24,
+				"health": 27,
 				"skill": []
 			},
 			"4": {
