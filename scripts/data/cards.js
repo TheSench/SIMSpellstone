@@ -100074,6 +100074,99 @@ var CARDS = {
 			}
 		}
 	},
+	"6276": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 2,
+		"health": 26,
+		"hidden_until": "1596474000000",
+		"id": "6276",
+		"maxLevel": 6,
+		"name": "Weirdflesh Thing",
+		"picture": "Undead_Evil_Eye_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "heal",
+				"x": 7,
+				"y": "2"
+			},
+			{
+				"id": "enfeeble",
+				"x": 6
+			},
+			{
+				"c": 6,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 7,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"skill": []
+			},
+			"4": {
+				"health": 27,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 7,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 7
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 7
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -208146,6 +208239,99 @@ var CARDS = {
 			}
 		}
 	},
+	"16276": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 2,
+		"health": 27,
+		"hidden_until": "1596474000000",
+		"id": "16276",
+		"maxLevel": 6,
+		"name": "Weirdflesh Eye",
+		"picture": "Undead_Evil_Eye_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "heal",
+				"x": 8,
+				"y": "2"
+			},
+			{
+				"id": "enfeeble",
+				"x": 7
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 8,
+				"skill": []
+			},
+			"3": {
+				"health": 28,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 8,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 8
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 9,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 8
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 9,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 8
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -299994,6 +300180,86 @@ var CARDS = {
 						"id": "rally",
 						"x": 4,
 						"y": "2"
+					}
+				]
+			}
+		}
+	},
+	"26276": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 2,
+		"health": 28,
+		"hidden_until": "1596474000000",
+		"id": "26276",
+		"maxLevel": 6,
+		"name": "Weirdflesh Beholder",
+		"picture": "Undead_Evil_Eye_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "heal",
+				"x": 9,
+				"y": "2"
+			},
+			{
+				"id": "enfeeble",
+				"x": 8
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 29,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 9,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 9
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"attack": 10,
+				"skill": []
+			},
+			"5": {
+				"health": 30,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "heal",
+						"x": 10,
+						"y": "2"
+					},
+					{
+						"id": "enfeeble",
+						"x": 10
+					},
+					{
+						"c": 3,
+						"id": "jam"
 					}
 				]
 			}
