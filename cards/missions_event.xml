@@ -46396,5 +46396,162 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 24 Boss Node -->
+  <mission>
+    <id>6470</id>
+    <name>Disorder</name>
+    <energy>9</energy>
+    <desc>In the beginning, there was nothing but The Void, an endless abyss stretching across the world. A spark flickered in the darkness; the first life. Chaos was born.</desc>
+    <commander id="448" />
+    <deck>
+      <card id="6174" name="Deatheye Owl" />
+      <!-- OLD -->
+      <card id="6033" name="Firebeard" />
+      <!-- OLD -->
+      <card id="6033" />
+      <!-- OLD -->
+      <card id="6002" name="Spirit of Madness" />
+      <!-- OLD -->
+      <card id="2113" name="Vali, the Thunderer" />
+      <!-- NEW -->
+      <card id="7033" name="Treebond Skull" />
+      <!-- OLD -->
+      <card id="7131" name="Xovrus, Death's End" />
+      <!-- OLD -->
+      <card id="6167" name="Macabre Machine" />
+      <!-- NEW -->
+      <card id="6248" name="Cybot Centurion" />
+      <!-- NEW -->
+      <card id="6161" mastery_level="2" name="Torero" />
+      <!-- NEW -->
+      <card id="7121" mastery_level="3" name="Varachnis" />
+      <!-- OLD -->
+      <card id="7203" mastery_level="4" name="Tuloom, Spirit Shaman" />
+      <!-- OLD -->
+      <card id="6082" mastery_level="5" name="Rugarth, Fallen Bones" />
+      <!-- OLD -->
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <!-- NEW -->
+      <card id="5162" mastery_level="7" name="Aloier, Dragon Sentinel" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6471</id>
+    <name>Creation</name>
+    <energy>9</energy>
+    <desc>The darkness parted for this spark. What started as a small flame quickly grew, encompassing the abyss until it ceased to be. Every living creature has a part of Chaos within them.</desc>
+    <commander id="448" />
+    <deck>
+      <card id="6174" name="Deatheye Owl" />
+      <!-- OLD -->
+      <card id="6033" name="Firebeard" />
+      <!-- OLD -->
+      <card id="6033" />
+      <!-- OLD -->
+      <card id="6002" name="Spirit of Madness" />
+      <!-- OLD -->
+      <card id="2113" name="Vali, the Thunderer" />
+      <!-- NEW -->
+      <card id="7033" name="Treebond Skull" />
+      <!-- OLD -->
+      <card id="7131" name="Xovrus, Death's End" />
+      <!-- OLD -->
+      <card id="6167" name="Macabre Machine" />
+      <!-- NEW -->
+      <card id="6248" name="Cybot Centurion" />
+      <!-- NEW -->
+      <card id="6161" mastery_level="2" name="Torero" />
+      <!-- NEW -->
+      <card id="7121" mastery_level="3" name="Varachnis" />
+      <!-- OLD -->
+      <card id="7203" mastery_level="4" name="Tuloom, Spirit Shaman" />
+      <!-- OLD -->
+      <card id="6082" mastery_level="5" name="Rugarth, Fallen Bones" />
+      <!-- OLD -->
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <!-- NEW -->
+      <card id="5162" mastery_level="7" name="Aloier, Dragon Sentinel" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6472</id>
+    <name>Growth</name>
+    <energy>9</energy>
+    <desc>There were no rules, just the glory of life. There was no deeper meaning, just the freedom to exist. That was what made the Chaos beautiful; the simplicity and dedication, to thrive and grow without knowing bounds.</desc>
+    <commander id="448" />
+    <deck>
+      <card id="6174" name="Deatheye Owl" />
+      <!-- OLD -->
+      <card id="6033" name="Firebeard" />
+      <!-- OLD -->
+      <card id="6033" />
+      <!-- OLD -->
+      <card id="6002" name="Spirit of Madness" />
+      <!-- OLD -->
+      <card id="2113" name="Vali, the Thunderer" />
+      <!-- NEW -->
+      <card id="7033" name="Treebond Skull" />
+      <!-- OLD -->
+      <card id="7131" name="Xovrus, Death's End" />
+      <!-- OLD -->
+      <card id="6167" name="Macabre Machine" />
+      <!-- NEW -->
+      <card id="6248" name="Cybot Centurion" />
+      <!-- NEW -->
+      <card id="6161" mastery_level="2" name="Torero" />
+      <!-- NEW -->
+      <card id="7121" mastery_level="3" name="Varachnis" />
+      <!-- OLD -->
+      <card id="7203" mastery_level="4" name="Tuloom, Spirit Shaman" />
+      <!-- OLD -->
+      <card id="6082" mastery_level="5" name="Rugarth, Fallen Bones" />
+      <!-- OLD -->
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <!-- NEW -->
+      <card id="5162" mastery_level="7" name="Aloier, Dragon Sentinel" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6473</id>
+    <name>Chaos Realized</name>
+    <energy>9</energy>
+    <desc>That is Chaos. That is the manifestation that you have created. And this memory, this data, will be sent to the Titan Aspirer, Viracocha.</desc>
+    <commander id="448" />
+    <deck>
+      <card id="6174" name="Deatheye Owl" />
+      <!-- OLD -->
+      <card id="6033" name="Firebeard" />
+      <!-- OLD -->
+      <card id="6033" />
+      <!-- OLD -->
+      <card id="6002" name="Spirit of Madness" />
+      <!-- OLD -->
+      <card id="2113" name="Vali, the Thunderer" />
+      <!-- NEW -->
+      <card id="7033" name="Treebond Skull" />
+      <!-- OLD -->
+      <card id="7131" name="Xovrus, Death's End" />
+      <!-- OLD -->
+      <card id="6167" name="Macabre Machine" />
+      <!-- NEW -->
+      <card id="6248" name="Cybot Centurion" />
+      <!-- NEW -->
+      <card id="6161" mastery_level="2" name="Torero" />
+      <!-- NEW -->
+      <card id="7121" mastery_level="3" name="Varachnis" />
+      <!-- OLD -->
+      <card id="7203" mastery_level="4" name="Tuloom, Spirit Shaman" />
+      <!-- OLD -->
+      <card id="6082" mastery_level="5" name="Rugarth, Fallen Bones" />
+      <!-- OLD -->
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <!-- NEW -->
+      <card id="5162" mastery_level="7" name="Aloier, Dragon Sentinel" />
+      <!-- NEW -->
+    </deck>
+  </mission>
 </root>
 

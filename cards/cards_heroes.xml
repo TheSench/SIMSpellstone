@@ -11163,5 +11163,53 @@
       <skill id="strike" x="4" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>448</id>
+    <card_type>1</card_type>
+    <name>Chaos Construct</name>
+    <portrait>firetitan</portrait>
+    <health>91</health>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" all="1" />
+    <skill id="imbue" s="burn" x="1" all="1" />
+    <skill id="imbue" s="counter" x="1" all="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>92</health>
+      <skill id="heal" x="2" all="1" />
+      <skill id="imbue" s="burn" x="2" all="1" />
+      <skill id="imbue" s="counter" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="heal" x="3" all="1" />
+      <skill id="imbue" s="burn" x="3" all="1" />
+      <skill id="imbue" s="counter" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>96</health>
+      <skill id="heal" x="3" all="1" />
+      <skill id="imbue" s="burn" x="3" all="1" />
+      <skill id="imbue" s="counter" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="heal" x="3" all="1" />
+      <skill id="imbue" s="burn" x="4" all="1" />
+      <skill id="imbue" s="counter" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="heal" x="4" all="1" />
+      <skill id="imbue" s="burn" x="5" all="1" />
+      <skill id="imbue" s="counter" x="3" all="1" />
+    </upgrade>
+  </unit>
 </root>
 

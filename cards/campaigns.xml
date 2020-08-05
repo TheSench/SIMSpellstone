@@ -8713,6 +8713,43 @@
     </rewards>
     <find_item id="3116" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node -->
+  <campaign>
+    <id>1257</id>
+    <name>Constructing Chaos</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1255" level="1" />
+    <locked_start_time>1596733200</locked_start_time>
+    <!--  Thursday, 6 August 2020 17:00:00 -->
+    <battleground_id>2100</battleground_id>
+    <location_id>30</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>340</x>
+    <y>360</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6470</mission_id>
+      <mission_id>6471</mission_id>
+      <mission_id>6472</mission_id>
+      <mission_id>6473</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3118" />
+      <!--  Slagspirit's Spellstone  -->
+      <item level="5" id="3118" />
+      <!--  Slagspirit's Spellstone  -->
+      <item level="6" id="3118" />
+      <!--  Slagspirit's Spellstone  -->
+      <item level="7" id="3118" />
+      <!--  Slagspirit's Spellstone  -->
+    </rewards>
+    <find_item id="3116" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

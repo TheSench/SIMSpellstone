@@ -35143,5 +35143,139 @@
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6277</id>
+    <card_type>2</card_type>
+    <name>Ironblood Ghoul</name>
+    <picture>Undead_Iron_Ghoul_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1596906000</hidden_until_time>
+    <attack>6</attack>
+    <health>19</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="rally" x="6" y="7" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="5" />
+      <skill id="rally" x="7" y="7" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="6" />
+      <skill id="rally" x="7" y="7" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="6" />
+      <skill id="rally" x="7" y="7" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16277</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ironblood Regulator</name>
+    <picture>Undead_Iron_Ghoul_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1596906000</hidden_until_time>
+    <attack>8</attack>
+    <health>20</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="rally" x="7" y="7" />
+    <skill id="nullify" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="6" />
+      <skill id="rally" x="8" y="7" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="7" />
+      <skill id="rally" x="8" y="7" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="7" />
+      <skill id="rally" x="8" y="7" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>9</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26277</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ironblood Manipulator</name>
+    <picture>Undead_Iron_Ghoul_B</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1596906000</hidden_until_time>
+    <attack>9</attack>
+    <health>22</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="rally" x="8" y="7" />
+    <skill id="nullify" x="3" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="7" />
+      <skill id="rally" x="9" y="7" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="8" />
+      <skill id="rally" x="9" y="7" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="8" />
+      <skill id="rally" x="10" y="7" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+  </unit>
 </root>
 

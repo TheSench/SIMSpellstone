@@ -4723,6 +4723,21 @@ var CAMPAIGNS = {
 		],
 		"name": "Chaos Power Coil"
 	},
+	"1257": {
+		"battleground_id": "2100",
+		"id": "1257",
+		"items": {
+			"3116": 0.4
+		},
+		"location_id": "30",
+		"missions": [
+			"6470",
+			"6471",
+			"6472",
+			"6473"
+		],
+		"name": "Constructing Chaos"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -103056,5 +103071,245 @@ var MISSIONS = {
 		],
 		"id": "6469",
 		"name": "Manifestation Completion"
+	},
+	"6470": {
+		"commander": {
+			"id": "448"
+		},
+		"deck": [
+			{
+				"id": "6174"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6002"
+			},
+			{
+				"id": "2113"
+			},
+			{
+				"id": "7033"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "6167"
+			},
+			{
+				"id": "6248"
+			},
+			{
+				"id": "6161",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7121",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7203",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6470",
+		"name": "Disorder"
+	},
+	"6471": {
+		"commander": {
+			"id": "448"
+		},
+		"deck": [
+			{
+				"id": "6174"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6002"
+			},
+			{
+				"id": "2113"
+			},
+			{
+				"id": "7033"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "6167"
+			},
+			{
+				"id": "6248"
+			},
+			{
+				"id": "6161",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7121",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7203",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6471",
+		"name": "Creation"
+	},
+	"6472": {
+		"commander": {
+			"id": "448"
+		},
+		"deck": [
+			{
+				"id": "6174"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6002"
+			},
+			{
+				"id": "2113"
+			},
+			{
+				"id": "7033"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "6167"
+			},
+			{
+				"id": "6248"
+			},
+			{
+				"id": "6161",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7121",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7203",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6472",
+		"name": "Growth"
+	},
+	"6473": {
+		"commander": {
+			"id": "448"
+		},
+		"deck": [
+			{
+				"id": "6174"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6002"
+			},
+			{
+				"id": "2113"
+			},
+			{
+				"id": "7033"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "6167"
+			},
+			{
+				"id": "6248"
+			},
+			{
+				"id": "6161",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7121",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7203",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6082",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6473",
+		"name": "Chaos Realized"
 	}
 };

@@ -25415,6 +25415,149 @@ var CARDS = {
 			}
 		}
 	},
+	"448": {
+		"card_type": "1",
+		"health": 91,
+		"id": "448",
+		"maxLevel": 6,
+		"name": "Chaos Construct",
+		"picture": "portrait_firetitan",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "burn",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "counter",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 92,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "burn",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "counter",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"health": 93,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "counter",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "burn",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "counter",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 97,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "burn",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "counter",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "burn",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "counter",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
 	"500": {
 		"attack": 1,
 		"card_type": "2",
@@ -100167,6 +100310,99 @@ var CARDS = {
 			}
 		}
 	},
+	"6277": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1596906000000",
+		"id": "6277",
+		"maxLevel": 6,
+		"name": "Ironblood Ghoul",
+		"picture": "Undead_Iron_Ghoul_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "rally",
+				"x": 6,
+				"y": "7"
+			},
+			{
+				"id": "nullify",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 7,
+				"skill": []
+			},
+			"3": {
+				"health": 20,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 7,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"6600": {
 		"attack": 6,
 		"card_type": "2",
@@ -101060,6 +101296,186 @@ var CARDS = {
 					{
 						"id": "strike",
 						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"6605": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1596733200000",
+		"id": "6605",
+		"maxLevel": 10,
+		"name": "Xerkahn, the Rancor",
+		"picture": "Goblin_Undead_Xerkahn_A",
+		"rarity": 4,
+		"set": "5100",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "valor",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 3,
+				"y": "2"
+			}
+		],
+		"sub_type": [
+			"11",
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 3,
+						"y": "2"
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "2"
+					}
+				]
+			},
+			"4": {
+				"health": 22,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 4,
+						"y": "2"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5,
+						"y": "2"
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5,
+						"y": "2"
+					}
+				]
+			},
+			"8": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 6,
+						"y": "2"
+					}
+				]
+			},
+			"9": {
+				"health": 25,
+				"skill": []
+			},
+			"10": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 6,
+						"y": "2"
 					}
 				]
 			}
@@ -123331,6 +123747,96 @@ var CARDS = {
 						"id": "fervor",
 						"x": 7,
 						"y": "3"
+					}
+				]
+			}
+		}
+	},
+	"7279": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1597078800000",
+		"id": "7279",
+		"maxLevel": 6,
+		"name": "Brainweb Recluse",
+		"picture": "Insect_Undead_Corpse_Puppet_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 3
+			},
+			{
+				"id": "regenerate",
+				"x": 4
+			},
+			{
+				"id": "poison",
+				"x": 9
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 10,
+				"skill": []
+			},
+			"3": {
+				"health": 40,
+				"skill": []
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 3
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 4
+					},
+					{
+						"id": "poison",
+						"x": 10
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 10
 					}
 				]
 			}
@@ -208332,6 +208838,99 @@ var CARDS = {
 			}
 		}
 	},
+	"16277": {
+		"attack": 8,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1596906000000",
+		"id": "16277",
+		"maxLevel": 6,
+		"name": "Ironblood Regulator",
+		"picture": "Undead_Iron_Ghoul_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "rally",
+				"x": 7,
+				"y": "7"
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 21,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 8,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"attack": 9,
+				"skill": []
+			}
+		}
+	},
 	"17000": {
 		"attack": 4,
 		"card_type": "2",
@@ -232034,6 +232633,96 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 10,
+				"skill": []
+			}
+		}
+	},
+	"17279": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 3,
+		"health": 40,
+		"hidden_until": "1597078800000",
+		"id": "17279",
+		"maxLevel": 6,
+		"name": "Brainweb Infecter",
+		"picture": "Insect_Undead_Corpse_Puppet_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 4
+			},
+			{
+				"id": "regenerate",
+				"x": 5
+			},
+			{
+				"id": "poison",
+				"x": 10
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 41,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 4
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 11
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 5
+					},
+					{
+						"id": "poison",
+						"x": 11
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 11
+					}
+				]
+			},
+			"6": {
+				"attack": 12,
 				"skill": []
 			}
 		}
@@ -300265,6 +300954,99 @@ var CARDS = {
 			}
 		}
 	},
+	"26277": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 1,
+		"health": 22,
+		"hidden_until": "1596906000000",
+		"id": "26277",
+		"maxLevel": 6,
+		"name": "Ironblood Manipulator",
+		"picture": "Undead_Iron_Ghoul_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "rally",
+				"x": 8,
+				"y": "7"
+			},
+			{
+				"id": "nullify",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"attack": 10,
+				"skill": []
+			},
+			"4": {
+				"health": 23,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "rally",
+						"x": 9,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "rally",
+						"x": 10,
+						"y": "7"
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
 	"27000": {
 		"attack": 5,
 		"card_type": "2",
@@ -324118,6 +324900,96 @@ var CARDS = {
 						"id": "fervor",
 						"x": 9,
 						"y": "3"
+					}
+				]
+			}
+		}
+	},
+	"27279": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 42,
+		"hidden_until": "1597078800000",
+		"id": "27279",
+		"maxLevel": 6,
+		"name": "Brainweb Reanimator",
+		"picture": "Insect_Undead_Corpse_Puppet_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "regenerate",
+				"x": 6
+			},
+			{
+				"id": "poison",
+				"x": 11
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 12
+					}
+				]
+			},
+			"3": {
+				"attack": 13,
+				"skill": []
+			},
+			"4": {
+				"health": 43,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 6
+					},
+					{
+						"id": "poison",
+						"x": 12
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "regenerate",
+						"x": 7
+					},
+					{
+						"id": "poison",
+						"x": 13
 					}
 				]
 			}

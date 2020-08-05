@@ -458,7 +458,7 @@
     <icon>mystic_barrier</icon>
     <name>Mystic Barrier</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Grants Barrier and Invisibility to a random ally creature.</desc>
+    <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>

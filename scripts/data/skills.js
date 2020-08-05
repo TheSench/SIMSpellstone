@@ -122,7 +122,7 @@ var SKILL_DATA = {
 		"type": "turnStart"
 	},
 	"evadebarrier": {
-		"desc": "Grants Barrier and Invisibility to a random ally creature.",
+		"desc": "Grants Barrier and half as much Invisibility to self and leftmost ally creature.",
 		"icon": "mystic_barrier",
 		"name": "Mystic Barrier",
 		"type": "activation"

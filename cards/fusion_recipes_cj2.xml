@@ -6744,6 +6744,14 @@
     <card_id>26276</card_id>
     <resource card_id="16276" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16277</card_id>
+    <resource card_id="6277" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26277</card_id>
+    <resource card_id="16277" number="2" />
+  </fusion_recipe>
   <!-- END CHAOS PREMIUM SET -->
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -8945,6 +8953,14 @@
   <fusion_recipe>
     <card_id>27278</card_id>
     <resource card_id="17278" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17279</card_id>
+    <resource card_id="7279" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27279</card_id>
+    <resource card_id="17279" number="2" />
   </fusion_recipe>
   <!-- END WYLD PREMIUM SET -->
   <!-- END SET 3000 - Premium -->

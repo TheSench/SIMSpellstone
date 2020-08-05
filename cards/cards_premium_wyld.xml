@@ -35809,5 +35809,142 @@
       <skill id="fervor" x="9" y="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7279</id>
+    <card_type>2</card_type>
+    <name>Brainweb Recluse</name>
+    <picture>Insect_Undead_Corpse_Puppet_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1597078800</hidden_until_time>
+    <attack>9</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="regenerate" x="4" />
+    <skill id="poison" x="9" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="3" />
+      <skill id="regenerate" x="4" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="4" />
+      <skill id="regenerate" x="4" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="4" />
+      <skill id="regenerate" x="5" />
+      <skill id="poison" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17279</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Brainweb Infecter</name>
+    <picture>Insect_Undead_Corpse_Puppet_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1597078800</hidden_until_time>
+    <attack>11</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="regenerate" x="5" />
+    <skill id="poison" x="10" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="4" />
+      <skill id="regenerate" x="5" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="5" />
+      <skill id="regenerate" x="5" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="5" />
+      <skill id="regenerate" x="6" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>12</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27279</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Brainweb Reanimator</name>
+    <picture>Insect_Undead_Corpse_Puppet_B</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1597078800</hidden_until_time>
+    <attack>12</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="5" />
+    <skill id="regenerate" x="6" />
+    <skill id="poison" x="11" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="stasis" x="5" />
+      <skill id="regenerate" x="6" />
+      <skill id="poison" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="6" />
+      <skill id="regenerate" x="6" />
+      <skill id="poison" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="6" />
+      <skill id="regenerate" x="7" />
+      <skill id="poison" x="13" />
+    </upgrade>
+  </unit>
 </root>
 
