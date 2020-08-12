@@ -76521,6 +76521,96 @@ var CARDS = {
 			}
 		}
 	},
+	"5278": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 3,
+		"health": 39,
+		"hidden_until": "1597683600000",
+		"id": "5278",
+		"maxLevel": 6,
+		"name": "Glasslock Skeleton",
+		"picture": "Mecha_Undead_Bottle_Head_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 5
+			},
+			{
+				"id": "legion",
+				"x": 5
+			},
+			{
+				"c": 4,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 5
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"skill": []
+			},
+			"4": {
+				"health": 40,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 6
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
 	"5600": {
 		"attack": 10,
 		"card_type": "2",
@@ -185975,6 +186065,96 @@ var CARDS = {
 			}
 		}
 	},
+	"15278": {
+		"attack": 9,
+		"card_type": "2",
+		"cost": 3,
+		"health": 40,
+		"hidden_until": "1597683600000",
+		"id": "15278",
+		"maxLevel": 6,
+		"name": "Glasslock Corpse",
+		"picture": "Mecha_Undead_Bottle_Head_A",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 6
+			},
+			{
+				"id": "legion",
+				"x": 6
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 41,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"attack": 10,
+				"skill": []
+			}
+		}
+	},
 	"16000": {
 		"attack": 5,
 		"card_type": "2",
@@ -278306,6 +278486,96 @@ var CARDS = {
 					{
 						"id": "nullify",
 						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"25278": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 3,
+		"health": 42,
+		"hidden_until": "1597683600000",
+		"id": "25278",
+		"maxLevel": 6,
+		"name": "Glasslock Lich",
+		"picture": "Mecha_Undead_Bottle_Head_B",
+		"rarity": 4,
+		"set": "4000",
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "legion",
+				"x": 7
+			},
+			{
+				"c": 2,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"7",
+			"16"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 11,
+				"skill": []
+			},
+			"4": {
+				"health": 43,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "legion",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "jam"
 					}
 				]
 			}
