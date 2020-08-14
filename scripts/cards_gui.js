@@ -300,6 +300,7 @@ var CARD_GUI = {};
                     else if (boosts.attack) htmlAttack.classList.add("increased");
                 } else {
                     var htmlAttack = createDiv("card-attack", card.attack.toString());
+                    if (boosts.attack) htmlAttack.classList.add("increased");
                 }
                 htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Attack.png", "attack"));
                 htmlCard.appendChild(htmlAttack);

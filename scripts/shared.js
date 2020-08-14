@@ -328,8 +328,10 @@ var makeUnit = (function() {
                         var mult = scaling.mult;
                         var plusAttack = Math.ceil(new_card.attack * mult);
                         new_card.attack += plusAttack;
+                        new_card.highlighted.push('attack');
                         var plusHealth = Math.ceil(new_card.health * mult);
                         new_card.health += plusHealth;
+                        new_card.highlighted.push('health');
                         scaleSkills(new_card, original_skills, mult);
                     }
                 }
@@ -338,6 +340,7 @@ var makeUnit = (function() {
                     var scaling = skillModifier.effects[j];
                     if (new_card.isInFaction(scaling.y) && new_card.isTargetRarity(scaling.rarity && new_card.isTargetDelay(scaling.delay))) {
                         new_card[skillModifier.scaledStat] += Math.ceil(getStatBeforeRunes(new_card, scaling.base) * scaling.mult);
+                        new_card.highlighted.push(skillModifier.scaledStat);
                     }
                 }
             }
