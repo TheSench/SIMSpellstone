@@ -3104,6 +3104,83 @@
       <skill id="leech" x="13" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4036</id>
+    <card_type>2</card_type>
+    <name>Leroux, the Macabre</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Phantom_Android_A</picture>
+    <asset_bundle>200</asset_bundle>
+    <item_name>Leroux Stone</item_name>
+    <item_desc>Collect Leroux Stones to upgrade the Legendary Leroux, the Macabre card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <attack>4</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="8" />
+    <skill id="leech" x="8" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+      <skill id="valor" x="9" />
+      <skill id="leech" x="9" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="9" />
+      <skill id="leech" x="9" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="10" />
+      <skill id="leech" x="10" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="11" />
+      <skill id="leech" x="11" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>32</health>
+      <skill id="valor" x="11" />
+      <skill id="leech" x="11" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="valor" x="12" />
+      <skill id="leech" x="12" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>36</health>
+      <skill id="valor" x="13" />
+      <skill id="leech" x="13" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -4317,6 +4394,83 @@
       <level>10</level>
       <attack>14</attack>
       <health>42</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5614</id>
+    <card_type>2</card_type>
+    <name>Zahira, the Bladedance</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Chakram_Dancer_B</picture>
+    <asset_bundle>200</asset_bundle>
+    <item_name>Bladedance Stone</item_name>
+    <item_desc>Collect Bladedance Stones to upgrade the Legendary Zahira, the Bladedance card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <attack>12</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="counter" x="7" />
+    <skill id="rally" x="4" all="1" y="16" />
+    <upgrade>
+      <level>2</level>
+      <attack>13</attack>
+      <skill id="evade" x="2" />
+      <skill id="counter" x="8" />
+      <skill id="rally" x="4" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="evade" x="2" />
+      <skill id="counter" x="8" />
+      <skill id="rally" x="5" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>14</attack>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="counter" x="9" />
+      <skill id="rally" x="5" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="counter" x="9" />
+      <skill id="rally" x="6" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>16</attack>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="evade" x="3" />
+      <skill id="counter" x="10" />
+      <skill id="rally" x="7" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>17</attack>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="evade" x="4" />
+      <skill id="counter" x="10" />
+      <skill id="rally" x="8" all="1" y="16" />
     </upgrade>
   </unit>
   <!-- ============================== -->

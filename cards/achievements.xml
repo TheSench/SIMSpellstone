@@ -14121,6 +14121,133 @@
       <item id="8025" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 24 weeks 5-8 -->
+  <achievement>
+    <id>3599</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Chaos Allegiance</name>
+    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 1.</desc>
+    <mission_req>6474</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 20 August 2020 17:00:00 -->
+    <req>
+      <campaign>1258</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3116" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7063" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3600</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Chaos Allegiance</name>
+    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 2.</desc>
+    <mission_req>6474</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 20 August 2020 17:00:00 -->
+    <achievement_req>3599</achievement_req>
+    <req>
+      <campaign>1258</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3601</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Chaos Allegiance</name>
+    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 4.</desc>
+    <mission_req>6474</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 20 August 2020 17:00:00 -->
+    <achievement_req>3600</achievement_req>
+    <req>
+      <campaign>1258</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3602</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Chaos Allegiance</name>
+    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 6.</desc>
+    <mission_req>6474</mission_req>
+    <locked_start_time>1593104400</locked_start_time>
+    <!--  Thursday, 20 August 2020 17:00:00 -->
+    <achievement_req>3601</achievement_req>
+    <req>
+      <campaign>1258</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3603</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Past Trickery Reveal</name>
+    <desc>Complete the 'Past Trickery Reveal' campaign on Mastery Level 2.</desc>
+    <mission_req>6480</mission_req>
+    <locked_start_time>1599152400</locked_start_time>
+    <!--  Thursday, 3 September 2020 17:00:00 -->
+    <req>
+      <campaign>1259</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3604</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Past Trickery Reveal</name>
+    <desc>Complete the 'Past Trickery Reveal' campaign on Mastery Level 4.</desc>
+    <mission_req>6480</mission_req>
+    <locked_start_time>1599152400</locked_start_time>
+    <!--  Thursday, 3 September 2020 17:00:00 -->
+    <achievement_req>3603</achievement_req>
+    <req>
+      <campaign>1259</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3605</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Past Trickery Reveal</name>
+    <desc>Complete the 'Past Trickery Reveal' campaign on Mastery Level 6.</desc>
+    <mission_req>6480</mission_req>
+    <locked_start_time>1599152400</locked_start_time>
+    <!--  Thursday, 3 September 2020 17:00:00 -->
+    <achievement_req>3604</achievement_req>
+    <req>
+      <campaign>1259</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -14641,6 +14768,32 @@
       <campaign>1253</campaign>
       <!-- 3rd node -->
       <campaign>1254</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Return to Karthos -->
+    <id>4025</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Return to Karthos</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Karthos.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6458</mission_req>
+    <req>
+      <campaign>1255</campaign>
+      <!-- 1st node -->
+      <campaign>1256</campaign>
+      <!-- 2nd node -->
+      <campaign>1257</campaign>
+      <!-- Boss node -->
+      <campaign>1258</campaign>
+      <!-- 3rd node -->
+      <campaign>1259</campaign>
       <!-- 4th node -->
       <level>7</level>
     </req>

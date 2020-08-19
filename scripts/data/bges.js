@@ -753,6 +753,19 @@ var BATTLEGROUNDS = {
 		"id": "136",
 		"name": "Skydiving Assault"
 	},
+	"137": {
+		"desc": "All Mechas have modified their weaponry, increasing their Attack by 15% of their base Health!",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "scale_attack",
+				"mult": 0.15,
+				"y": "16"
+			}
+		],
+		"id": "137",
+		"name": "Steel's Edge"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -3883,6 +3896,38 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2100",
 		"name": "March of the Relentless",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2101": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2101",
+		"name": "Chorus of Metal",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2102": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.05
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2102",
+		"name": "Chorus of Metal",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},

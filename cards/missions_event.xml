@@ -46553,5 +46553,389 @@
       <!-- NEW -->
     </deck>
   </mission>
+  <!-- Event 24 Node 3 -->
+  <mission>
+    <id>6474</id>
+    <name>Karthos Critters</name>
+    <energy>18</energy>
+    <desc>Even after defeating the power coil's Chaos manifestation, an unusual amount of Chaos have congregated on the path leading out. They seem to be waiting for something...</desc>
+    <commander id="314" />
+    <deck>
+      <card id="8002" name="Frostbite Skeleton" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7035" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="2059" />
+      <card id="7084" name="Witchwood" />
+      <card id="7161" name="Alphamecha" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="7161" mastery_level="2" name="Alphamecha" />
+      <card id="7181" mastery_level="3" name="Underspine Stinger" />
+      <card id="7084" mastery_level="4" name="Witchwood" />
+      <card id="7126" mastery_level="5" name="Wyldheart Hunter" />
+      <card id="7259" mastery_level="6" name="Ranamuerta Bard" />
+      <card id="7193" mastery_level="7" name="Rocketspear Recruit" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Is it just me, or are there more critters waiting to fight us three?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6475</id>
+    <name>Poor History</name>
+    <energy>18</energy>
+    <desc>Decim hates any kind of structure and organization, including those of Karthos. He and Tarian have never gotten along, but recent events have made them even more tense.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8013" name="Nether Brute" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="2101" />
+      <card id="1337" name="Vampire Childe" />
+      <card id="1337" />
+      <card id="6083" name="Lockejaw" />
+      <card id="2167" name="Mechalon" />
+      <card id="6159" name="Solder Charger" />
+      <card id="2167" mastery_level="2" name="Mechalon" />
+      <card id="6159" mastery_level="3" name="Solder Charger" />
+      <card id="6083" mastery_level="4" name="Lockejaw" />
+      <card id="6033" mastery_level="5" name="Firebeard" />
+      <card id="6226" mastery_level="6" name="Ember Hound" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Tarian's gone absolutely nuts, getting everyone ready for war!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6476</id>
+    <name>Former Friend</name>
+    <energy>18</energy>
+    <desc>Another familiar face comes to greet you. Unfortunately, this seems to be more than just a social call...</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8014" name="Nether Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="2174" name="Wight Watcher" />
+      <card id="2174" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6116" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="1338" name="Trashling Seeker" />
+      <card id="2117" name="Aero Enforcer" />
+      <card id="1338" mastery_level="2" name="Trashling Seeker" />
+      <card id="2117" mastery_level="3" name="Aero Enforcer" />
+      <card id="6029" mastery_level="4" name="Spinehead Stalker" />
+      <card id="6003" mastery_level="5" name="Black Knight" />
+      <card id="7036" mastery_level="6" name="Deepwood Corpse" />
+      <card id="5214" mastery_level="7" name="Bonebite Freebooter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>1</enemy>
+        <text>Absolutely nuts, huh? Is that how you show your allegiance to your fellow Chaos?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6477</id>
+    <name>Insanity's Source</name>
+    <energy>18</energy>
+    <desc>Scyer has been out of sorts ever since your mission at The Void's Center. He confronts General Garrick with his theory on what happened there.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5033" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5035" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="2127" mastery_level="2" name="RT-87 Rescinder" />
+      <card id="2124" mastery_level="3" name="Bulbscale Construct" />
+      <card id="5086" mastery_level="4" name="Spirit Blades" />
+      <card id="5214" mastery_level="5" name="Bonebite Freebooter" />
+      <card id="5036" mastery_level="6" name="Winter Tail" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>I figured it out, why my wires got crossed. You're workin' for Vulcanos, and your soul was your cost!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6478</id>
+    <name>Call of Chaos</name>
+    <energy>18</energy>
+    <desc>General Garrick reveals the truth! Although you saved him from The Void, he was never able to return to his normal self. Perhaps he never knew what it was...</desc>
+    <commander id="373" />
+    <deck>
+      <card id="8021" name="Fortune's Captain" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="2144" name="Death Fist" />
+      <card id="2144" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="2060" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6158" name="Orbos" />
+      <card id="6208" name="Iron Hammer" />
+      <card id="6158" mastery_level="2" name="Orbos" />
+      <card id="6208" mastery_level="3" name="Iron Hammer" />
+      <card id="6016" mastery_level="4" name="Skeletal Giant" />
+      <card id="6091" mastery_level="5" name="Bone Sculptor" />
+      <card id="6126" mastery_level="6" name="Terrordactyl" />
+      <card id="6190" mastery_level="7" name="Twinblast" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>HA! I could've said no, but The Void stole my fire.</text>
+      </line>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>Vulcanos returned it, and now there's nothing holding me back!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6479</id>
+    <name>Fighting Friend</name>
+    <energy>18</energy>
+    <desc>Your old friend has embraced his wild side. All that's left is to fight and get past him!</desc>
+    <commander id="373" />
+    <deck>
+      <card id="8029" name="Ahnkmotep" />
+      <card id="1319" name="Wraith" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6116" />
+      <card id="6164" name="Abomination" />
+      <card id="6164" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2111" name="Drillbot" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="2111" mastery_level="3" name="Drillbot" />
+      <card id="6036" mastery_level="4" name="Cursed Ogre" />
+      <card id="6161" mastery_level="5" name="Torero" />
+      <card id="6163" mastery_level="6" name="Coven Knight" />
+      <card id="6247" mastery_level="7" name="Sentrypod Scout" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>What a sad man. Let's put him in the can!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 24 Node 4 -->
+  <mission>
+    <id>6480</id>
+    <name>Chaos Leader</name>
+    <energy>18</energy>
+    <desc>A familiar skeleton pushes past the mob of enemies that has swarmed you. He rushes over to General Garrick's side, glaring at you harshly.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="5235" name="Marrowguard" />
+      <card id="2144" name="Death Fist" />
+      <card id="2144" />
+      <card id="2087" name="Cranial Hazard" />
+      <card id="2087" />
+      <card id="5168" name="Lamia's Shield" />
+      <card id="5168" />
+      <card id="7220" name="Gadgit" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="7220" mastery_level="2" name="Gadgit" />
+      <card id="7164" mastery_level="3" name="Pinegrove Primate" />
+      <card id="6027" mastery_level="4" name="Frigela, the Dread" />
+      <card id="6033" mastery_level="5" name="Firebeard" />
+      <card id="7083" mastery_level="6" name="Sludge Spine" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>What's going on here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6481</id>
+    <name>Visit's Reason</name>
+    <energy>18</energy>
+    <desc>General Garrick has been injured after initially attacking you. You let Tarian step between you two, trying not to initiate another fight.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="8027" name="Underhill Beast" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="2024" />
+      <card id="2087" name="Cranial Hazard" />
+      <card id="2087" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6011" mastery_level="2" name="Bomb Spirit" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="6167" mastery_level="4" name="Macabre Machine" />
+      <card id="6035" mastery_level="5" name="Demos" />
+      <card id="6124" mastery_level="6" name="Enfeebling Vizier" />
+      <card id="6187" mastery_level="7" name="Xerkahn's Warship" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>Sir, that giant energy spike we detected came from here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6482</id>
+    <name>Tarian's Wrath</name>
+    <energy>18</energy>
+    <desc>Tarian is upset that you've come to Karthos unannounced and without his knowledge. He eyes the power coil behind you.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8012" name="Nether Warrior" />
+      <card id="6125" name="Deadly Shot" />
+      <card id="6125" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2020" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1332" />
+      <card id="6208" name="Iron Hammer" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="6208" mastery_level="2" name="Iron Hammer" />
+      <card id="2138" mastery_level="3" name="Magma Cougar" />
+      <card id="2145" mastery_level="4" name="Astaroth" />
+      <card id="6087" mastery_level="5" name="Dread Obliterator" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="1348" mastery_level="7" name="Flailpod" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>You trespass without my permission, take over our land's secrets, and attack my general?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6483</id>
+    <name>Questionable Motives</name>
+    <energy>18</energy>
+    <desc>Scyer is unwilling to take Tarian's judgement, especially after he abandoned you to Vulcanos's influence at The Void's Center. By withholding his allegiance, he placed you in great danger.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1033" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5084" />
+      <card id="2140" name="Sleetbones" />
+      <card id="2140" />
+      <card id="5163" name="Bark Hound" />
+      <card id="2168" name="Cryonic Guard" />
+      <card id="5163" mastery_level="2" name="Bark Hound" />
+      <card id="2168" mastery_level="3" name="Cryonic Guard" />
+      <card id="5222" mastery_level="4" name="Automaburner" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="5085" mastery_level="6" name="Haunting Heir" />
+      <card id="5195" mastery_level="7" name="Owlnaut Z-3" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>You want a secret, try this... You been workin' against us; leadin' us amiss!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6484</id>
+    <name>Appeal to Skeleton's Humanity</name>
+    <energy>18</energy>
+    <desc>Even in anger, Scyer knows that Tarian has been a valuable ally in the past. He beseeches the Chaos Lord to rethink his plans, wondering what Vulcanos could possibly offer that would be worth it.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="8028" name="Grizzly Bones" />
+      <card id="2088" name="Bog Witch" />
+      <card id="2088" />
+      <card id="7170" name="Gallows Hand" />
+      <card id="7170" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="2129" mastery_level="2" name="Pharos Guardian" />
+      <card id="2128" mastery_level="3" name="Stilt-walker Sentinel" />
+      <card id="7237" mastery_level="4" name="Bogbringer" />
+      <card id="7211" mastery_level="5" name="Twistvine" />
+      <card id="7213" mastery_level="6" name="Siren of the Bog" />
+      <card id="7163" mastery_level="7" name="Alloy of the Trees" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Why you think teamin' with Vulcanos is the way? In the end he'll throw you away!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6485</id>
+    <name>Tarian's Forgiveness</name>
+    <energy>18</energy>
+    <desc>For the sake of your friendship, Tarian gives you one favor. However, his mind is not swayed from his current course of action.</desc>
+    <commander id="267" />
+    <deck>
+      <card id="8103" name="Blightwind Whisper" />
+      <card id="5124" name="Sylph Drifter" />
+      <card id="5124" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" />
+      <card id="5168" name="Lamia's Shield" />
+      <card id="5168" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5221" name="Coreheart" />
+      <card id="2002" mastery_level="2" name="Lantern Guardian" />
+      <card id="5221" mastery_level="3" name="Coreheart" />
+      <card id="5254" mastery_level="4" name="Scarab Mummy" />
+      <card id="5169" mastery_level="5" name="Vengeful Spirit" />
+      <card id="5087" mastery_level="6" name="Apollyon" />
+      <card id="5214" mastery_level="7" name="Bonebite Freebooter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>I didn't expect you to understand. We need Vulcanos's strength to keep out the Aether.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>1</enemy>
+        <text>Now get out of here, before I change my mind!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 
