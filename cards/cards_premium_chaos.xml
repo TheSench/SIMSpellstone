@@ -35414,5 +35414,137 @@
       <skill id="pierce" x="11" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6279</id>
+    <card_type>2</card_type>
+    <name>Autobattler Sword</name>
+    <picture>Mecha_Striding_Sword_A</picture>
+    <asset_bundle>200</asset_bundle>
+    <hidden_until_time>1599498000</hidden_until_time>
+    <attack>8</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="1" />
+    <skill id="fervor" x="5" y="16" />
+    <skill id="pierce" x="15" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="backlash" x="1" />
+      <skill id="fervor" x="5" y="16" />
+      <skill id="pierce" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="2" />
+      <skill id="fervor" x="5" y="16" />
+      <skill id="pierce" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="2" />
+      <skill id="fervor" x="6" y="16" />
+      <skill id="pierce" x="16" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16279</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Autobattler Gladius</name>
+    <picture>Mecha_Striding_Sword_A</picture>
+    <asset_bundle>200</asset_bundle>
+    <hidden_until_time>1599498000</hidden_until_time>
+    <attack>9</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="2" />
+    <skill id="fervor" x="6" y="16" />
+    <skill id="pierce" x="17" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="backlash" x="3" />
+      <skill id="fervor" x="6" y="16" />
+      <skill id="pierce" x="18" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="3" />
+      <skill id="fervor" x="7" y="16" />
+      <skill id="pierce" x="18" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26279</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Autobattler Claymore</name>
+    <picture>Mecha_Striding_Sword_B</picture>
+    <asset_bundle>200</asset_bundle>
+    <hidden_until_time>1599498000</hidden_until_time>
+    <attack>11</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="fervor" x="7" y="16" />
+    <skill id="pierce" x="18" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="backlash" x="3" />
+      <skill id="fervor" x="7" y="16" />
+      <skill id="pierce" x="19" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="4" />
+      <skill id="fervor" x="7" y="16" />
+      <skill id="pierce" x="19" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="4" />
+      <skill id="fervor" x="8" y="16" />
+      <skill id="pierce" x="20" />
+    </upgrade>
+  </unit>
 </root>
 

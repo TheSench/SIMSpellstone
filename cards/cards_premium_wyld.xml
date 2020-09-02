@@ -36083,5 +36083,139 @@
       <skill id="fervor" x="5" y="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7281</id>
+    <card_type>2</card_type>
+    <name>Leadtrap Catcher</name>
+    <picture>Mecha_Catcher_A</picture>
+    <asset_bundle>200</asset_bundle>
+    <hidden_until_time>1599325200</hidden_until_time>
+    <attack>8</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="nullify" x="2" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17281</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Leadtrap Poacher</name>
+    <picture>Mecha_Catcher_A</picture>
+    <asset_bundle>200</asset_bundle>
+    <hidden_until_time>1599325200</hidden_until_time>
+    <attack>10</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="3" all="1" />
+    <skill id="nullify" x="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27281</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Leadtrap Snatcher</name>
+    <picture>Mecha_Catcher_B</picture>
+    <asset_bundle>200</asset_bundle>
+    <hidden_until_time>1599325200</hidden_until_time>
+    <attack>11</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="enfeeble" x="4" all="1" />
+    <skill id="nullify" x="4" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="nullify" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="nullify" x="5" />
+    </upgrade>
+  </unit>
 </root>
 
