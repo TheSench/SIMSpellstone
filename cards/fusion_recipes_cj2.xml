@@ -6800,6 +6800,14 @@
     <card_id>26279</card_id>
     <resource card_id="16279" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16280</card_id>
+    <resource card_id="6280" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26280</card_id>
+    <resource card_id="16280" number="2" />
+  </fusion_recipe>
   <!-- END CHAOS PREMIUM SET -->
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
