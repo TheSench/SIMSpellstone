@@ -14248,6 +14248,197 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 25 weeks 1-4 -->
+  <achievement>
+    <id>3606</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Tarragon Peak</name>
+    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 1.</desc>
+    <mission_req>6486</mission_req>
+    <locked_start_time>1600362000</locked_start_time>
+    <!-- Thursday, 17 September 2020 17:00:00 -->
+    <req>
+      <campaign>1260</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3119" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7064" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3607</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Tarragon Peak</name>
+    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 2.</desc>
+    <mission_req>6486</mission_req>
+    <locked_start_time>1600362000</locked_start_time>
+    <!-- Thursday, 17 September 2020 17:00:00 -->
+    <achievement_req>3606</achievement_req>
+    <req>
+      <campaign>1260</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3608</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Tarragon Peak</name>
+    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 4.</desc>
+    <mission_req>6486</mission_req>
+    <locked_start_time>1600362000</locked_start_time>
+    <!-- Thursday, 17 September 2020 17:00:00 -->
+    <achievement_req>3607</achievement_req>
+    <req>
+      <campaign>1260</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3609</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Return to Tarragon Peak</name>
+    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 6.</desc>
+    <mission_req>6486</mission_req>
+    <locked_start_time>1600362000</locked_start_time>
+    <!-- Thursday, 17 September 2020 17:00:00 -->
+    <achievement_req>3608</achievement_req>
+    <req>
+      <campaign>1260</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3610</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Order Remnants</name>
+    <desc>Complete the 'First Order Remnants' campaign on Mastery Level 2.</desc>
+    <mission_req>6492</mission_req>
+    <locked_start_time>1601571600</locked_start_time>
+    <!-- Thursday, 1 October 2020 17:00:00 -->
+    <req>
+      <campaign>1261</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3611</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Order Remnants</name>
+    <desc>Complete the 'First Order Remnants' campaign on Mastery Level 4.</desc>
+    <mission_req>6492</mission_req>
+    <locked_start_time>1601571600</locked_start_time>
+    <!-- Thursday, 1 October 2020 17:00:00 -->
+    <achievement_req>3610</achievement_req>
+    <req>
+      <campaign>1261</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3612</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Order Remnants</name>
+    <desc>Complete the 'First Order Remnants' campaign on Mastery Level 6.</desc>
+    <mission_req>6492</mission_req>
+    <locked_start_time>1601571600</locked_start_time>
+    <!-- Thursday, 1 October 2020 17:00:00 -->
+    <achievement_req>3611</achievement_req>
+    <req>
+      <campaign>1261</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <!-- 5th Anniversary -->
+  <achievement>
+    <id>3613</id>
+    <type>2</type>
+    <order>101</order>
+    <name>5th Anniversary</name>
+    <desc>Complete the 'Spellstone's 5th Anniversary' campaign on Mastery Level 1.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1262</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3614</id>
+    <type>2</type>
+    <order>101</order>
+    <name>5th Anniversary</name>
+    <desc>Complete the 'Spellstone's 5th Anniversary' campaign on Mastery Level 2.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3613</achievement_req>
+    <req>
+      <campaign>1262</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3615</id>
+    <type>2</type>
+    <order>101</order>
+    <name>5th Anniversary</name>
+    <desc>Complete the 'Spellstone's 5th Anniversary' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3614</achievement_req>
+    <req>
+      <campaign>1262</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3616</id>
+    <type>2</type>
+    <order>101</order>
+    <name>5th Anniversary</name>
+    <desc>Complete the 'Spellstone's 5th Anniversary' campaign on Mastery Level 6.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3615</achievement_req>
+    <req>
+      <campaign>1262</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

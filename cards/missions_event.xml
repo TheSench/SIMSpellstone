@@ -46937,5 +46937,620 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 25 Node 1 -->
+  <mission>
+    <id>6486</id>
+    <name>Know Your Enemy</name>
+    <energy>18</energy>
+    <desc>Oda has asked you to accompany him to Tarragon Peak, where he thinks there might be clues to where and how Kensho became Solaron's pawn.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8106" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="6007" />
+      <card id="2129" />
+      <card id="2129" />
+      <card id="7181" />
+      <card id="7164" />
+      <card id="2063" />
+      <card id="7181" mastery_level="2" />
+      <card id="7164" mastery_level="3" />
+      <card id="2063" mastery_level="4" />
+      <card id="7181" mastery_level="5" />
+      <card id="7192" mastery_level="6" />
+      <card id="7001" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Thank you for coming with me, Adventurer. The last time we were here, we found signs of my First Order.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>We may yet learn more about Kensho's transformation, and perhaps a strategy against Solaron.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6487</id>
+    <name>First Order Defenses</name>
+    <energy>18</energy>
+    <desc>However, Tarragon Peak is alight with a different glow. Magical ley lines radiate the volcano, the place alight with a magical glow.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8099" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="6007" />
+      <card id="1033" />
+      <card id="1033" />
+      <card id="2124" />
+      <card id="2117" />
+      <card id="5145" />
+      <card id="2124" mastery_level="2" />
+      <card id="2117" mastery_level="3" />
+      <card id="5145" mastery_level="4" />
+      <card id="2124" mastery_level="5" />
+      <card id="2113" mastery_level="6" />
+      <card id="5253" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Someone's activated the First Order defenses. We should be careful - Kensho could be here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6488</id>
+    <name>A Goblin and His Mecha</name>
+    <energy>18</energy>
+    <desc>The volcano's base is oddly devoid of its normal dragon inhabitants. Instead, you see a group of goblins with their favorite weapons of choice, mechanical creations.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8098" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="6007" />
+      <card id="5091" />
+      <card id="5091" />
+      <card id="2002" />
+      <card id="1037" />
+      <card id="5089" />
+      <card id="2002" mastery_level="2" />
+      <card id="1037" mastery_level="3" />
+      <card id="5089" mastery_level="4" />
+      <card id="2002" mastery_level="5" />
+      <card id="5079" mastery_level="6" />
+      <card id="5225" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6489</id>
+    <name>Tribal Differences</name>
+    <energy>18</energy>
+    <desc>Unfortunately, you spy a familiar goblin amongst them, with his magical rune sword. Daknak swaggers up to you, with a small group of goblins and a greater group of mechas.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8093" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="6007" />
+      <card id="2109" />
+      <card id="2109" />
+      <card id="2111" />
+      <card id="2138" />
+      <card id="2096" />
+      <card id="2111" mastery_level="2" />
+      <card id="2138" mastery_level="3" />
+      <card id="2096" mastery_level="4" />
+      <card id="2111" mastery_level="5" />
+      <card id="6000" mastery_level="6" />
+      <card id="2061" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Oy, it's the blokes that support that weakling, Boldur!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak prove to you... Daknak strong! Daknak much, MUCH stronger than puny Boldur!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6490</id>
+    <name>Daknak's Plan</name>
+    <energy>18</energy>
+    <desc>After the split between Boldur and Daknak, most goblins have chosen Boldur as their true leader. Just a small group of goblins support Daknak - and the difference in strength is showing.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8093" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="6007" />
+      <card id="2096" />
+      <card id="2096" />
+      <card id="2144" />
+      <card id="6004" />
+      <card id="6015" />
+      <card id="2144" mastery_level="2" />
+      <card id="6004" mastery_level="3" />
+      <card id="6015" mastery_level="4" />
+      <card id="2144" mastery_level="5" />
+      <card id="6095" mastery_level="6" />
+      <card id="6111" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Keep 'em busy, Daknak have better plan!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6491</id>
+    <name>Goblin Flight</name>
+    <energy>18</energy>
+    <desc>Daknak flees from the strength of you and Oda, leaving a few of the mechanical beasts to keep you busy. Oda is displeased by this distraction.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8098" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="6007" />
+      <card id="5146" />
+      <card id="5146" />
+      <card id="2163" />
+      <card id="2168" />
+      <card id="2125" />
+      <card id="2163" mastery_level="2" />
+      <card id="2168" mastery_level="3" />
+      <card id="2125" mastery_level="4" />
+      <card id="2163" mastery_level="5" />
+      <card id="5137" mastery_level="6" />
+      <card id="5088" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I was expecting angry dragons, not Daknak and his minions. Hopefully that's the last of them.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 25 Node 2 -->
+  <mission>
+    <id>6492</id>
+    <name>Up the Peak</name>
+    <energy>18</energy>
+    <desc>Finally you continue your journey through Tarragon Peak. Although there's still some lingering problems, Daknak and his goblins are mainly leaving you alone.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8093" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="6158" />
+      <card id="6158" />
+      <card id="6159" />
+      <card id="6159" />
+      <card id="6208" />
+      <card id="2101" />
+      <card id="6208" mastery_level="2" />
+      <card id="2101" mastery_level="3" />
+      <card id="6159" mastery_level="4" />
+      <card id="6158" mastery_level="5" />
+      <card id="6212" mastery_level="6" />
+      <card id="6187" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6493</id>
+    <name>Within the Cave</name>
+    <energy>18</energy>
+    <desc>You arrive at the same cave you visited previously. It's alight with the runes, the magical energy most intense in this spot.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8099" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="5161" />
+      <card id="5161" />
+      <card id="2163" />
+      <card id="2163" />
+      <card id="5221" />
+      <card id="2148" />
+      <card id="5221" mastery_level="2" />
+      <card id="2148" mastery_level="3" />
+      <card id="2163" mastery_level="4" />
+      <card id="5161" mastery_level="5" />
+      <card id="5195" mastery_level="6" />
+      <card id="5239" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Here we are. These are the markings I noticed our first time through.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6494</id>
+    <name>Dead End Lead</name>
+    <energy>18</energy>
+    <desc>Try as he might, Oda still can't find anything new about his Order. Even a more thorough look at the ancient writings has revealed nothing new.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8098" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="2148" />
+      <card id="2148" />
+      <card id="2192" />
+      <card id="2192" />
+      <card id="2124" />
+      <card id="2125" />
+      <card id="2124" mastery_level="2" />
+      <card id="2125" mastery_level="3" />
+      <card id="2192" mastery_level="4" />
+      <card id="2148" mastery_level="5" />
+      <card id="5162" mastery_level="6" />
+      <card id="5092" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>The First Order... what were you up to so long ago? Ugh, there's nothing new in these depictions. We'll have to look for other clues.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6495</id>
+    <name>Tarragon Dangers</name>
+    <energy>18</energy>
+    <desc>You search farther up the volcano path. Daknak's remaining loyal goblins, with their mecha beasts, continue to harass you. Although you can take care of them, it's making progress slow.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="8100" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="7161" />
+      <card id="7161" />
+      <card id="2129" />
+      <card id="2129" />
+      <card id="2110" />
+      <card id="7090" />
+      <card id="2110" mastery_level="2" />
+      <card id="7090" mastery_level="3" />
+      <card id="2129" mastery_level="4" />
+      <card id="7161" mastery_level="5" />
+      <card id="7163" mastery_level="6" />
+      <card id="7217" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6496</id>
+    <name>Daknak's Back</name>
+    <energy>18</energy>
+    <desc>Daknak jumps out in front of you, again. However this time, he has a little trick up his sleeve...</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8083" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="2134" />
+      <card id="2134" />
+      <card id="2167" />
+      <card id="2167" />
+      <card id="2111" />
+      <card id="2053" />
+      <card id="2111" mastery_level="2" />
+      <card id="2053" mastery_level="3" />
+      <card id="2167" mastery_level="4" />
+      <card id="2134" mastery_level="5" />
+      <card id="6161" mastery_level="6" />
+      <card id="6254" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Bahaha, so you think you can take on the mighty Daknak, do ya?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6497</id>
+    <name>Daknak's Strike</name>
+    <energy>18</energy>
+    <desc>Somehow, Daknak has figured out how to use the First Order defense system. And he's keen to turn it against you!</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8106" />
+      <card id="6007" />
+      <card id="1011" />
+      <card id="2063" />
+      <card id="2063" />
+      <card id="2128" />
+      <card id="2128" />
+      <card id="2193" />
+      <card id="7145" />
+      <card id="2193" mastery_level="2" />
+      <card id="7145" mastery_level="3" />
+      <card id="2128" mastery_level="4" />
+      <card id="2063" mastery_level="5" />
+      <card id="1645" mastery_level="6" />
+      <card id="7225" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak have revenge now!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- 5th Anniversary -->
+  <mission>
+    <id>6498</id>
+    <name>Year 2016</name>
+    <energy>1</energy>
+    <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's villains and get amazing rewards!</desc>
+    <commander id="254" />
+    <deck>
+      <card id="8006" />
+      <card id="2121" />
+      <card id="2182" />
+      <card id="2188" />
+      <card id="2118" />
+      <card id="2149" />
+      <card id="2150" />
+      <card id="2098" />
+      <card id="2191" />
+      <card id="2051" mastery_level="2" />
+      <card id="2080" mastery_level="3" />
+      <card id="4021" mastery_level="4" />
+      <card id="4014" mastery_level="5" />
+      <card id="4025" mastery_level="6" />
+      <card id="2016" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>You gotta fight.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>For your right.</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>To parrrrrty!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6499</id>
+    <name>Year 2017</name>
+    <energy>1</energy>
+    <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's party titans and get amazing rewards!</desc>
+    <commander id="255" />
+    <deck>
+      <card id="8080" />
+      <card id="2173" />
+      <card id="2168" />
+      <card id="2169" />
+      <card id="2119" />
+      <card id="2163" />
+      <card id="2179" />
+      <card id="2081" />
+      <card id="2124" />
+      <card id="2100" mastery_level="2" />
+      <card id="2113" mastery_level="3" />
+      <card id="4031" mastery_level="4" />
+      <card id="4020" mastery_level="5" />
+      <card id="4016" mastery_level="6" />
+      <card id="2017" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Hi! My name is Solaron.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>And I like to party!</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>No. You don't.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Well... you are right. But today I'll make an exception.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Let's party!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6500</id>
+    <name>Year 2018</name>
+    <energy>1</energy>
+    <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's party titans and get amazing rewards!</desc>
+    <commander id="256" />
+    <deck>
+      <card id="8080" />
+      <card id="2173" />
+      <card id="2168" />
+      <card id="2169" />
+      <card id="2119" />
+      <card id="2163" />
+      <card id="2179" />
+      <card id="2081" />
+      <card id="2124" />
+      <card id="2100" mastery_level="2" />
+      <card id="2113" mastery_level="3" />
+      <card id="4031" mastery_level="4" />
+      <card id="4020" mastery_level="5" />
+      <card id="4016" mastery_level="6" />
+      <card id="2017" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>C'mon! A little party never hurt anyone!</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>But then again... those parties didn't invite us titans!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6501</id>
+    <name>Year 2019</name>
+    <energy>1</energy>
+    <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's... (not very sober) entity of evil and get amazing rewards!</desc>
+    <commander id="390" />
+    <deck>
+      <card id="8063" />
+      <card id="2194" />
+      <card id="2188" />
+      <card id="2033" />
+      <card id="2179" />
+      <card id="2111" />
+      <card id="2098" />
+      <card id="2024" />
+      <card id="2167" />
+      <card id="8077" mastery_level="2" />
+      <card id="8078" mastery_level="3" />
+      <card id="8074" mastery_level="4" />
+      <card id="8079" mastery_level="5" />
+      <card id="8088" mastery_level="6" />
+      <card id="4022" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>I'm blue da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Such a catchy song! Do you know I'm also kinda blue?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>I think Bluefire here is drunk...</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6502</id>
+    <name>Year 2020</name>
+    <energy>1</energy>
+    <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's party titan and get amazing rewards!</desc>
+    <commander id="446" />
+    <deck>
+      <card id="8094" />
+      <card id="2125" />
+      <card id="2011" />
+      <card id="2121" />
+      <card id="2110" />
+      <card id="2118" />
+      <card id="2012" />
+      <card id="2060" />
+      <card id="2172" />
+      <card id="2116" mastery_level="2" />
+      <card id="2112" mastery_level="3" />
+      <card id="4020" mastery_level="4" />
+      <card id="4027" mastery_level="5" />
+      <card id="4014" mastery_level="6" />
+      <card id="2158" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Hi! Are you having a good time?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>Come on, Fire, let's go party!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>... Don't mind them.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I just wanted to say something before this party gets wilder...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Yeah! WYLDER!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Ahem!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Happy 5th Anniversary, Spellstone!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Now... Let's get this party started!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- END 5th Anniversary  -->
 </root>
 

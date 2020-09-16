@@ -7173,5 +7173,295 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3025",
 		"location_id": "30",
 		"name": "Karthos Crystals"
+	},
+	"3026": {
+		"desc": "The spirits of dragon legends who died protecting Tarragon Peak. Receive their blessing by offering Dragon Talons!",
+		"effects": [
+			{
+				"id": "41",
+				"name": "Ward Fossil",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Ward 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 1
+							}
+						],
+						"name": "Ward Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Ward 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 2
+							}
+						],
+						"name": "Ward Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Ward 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 3
+							}
+						],
+						"name": "Ward Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Ward 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 4
+							}
+						],
+						"name": "Ward Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Ward 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 6
+							}
+						],
+						"name": "Ward Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Ward 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 8
+							}
+						],
+						"name": "Ward Fossil"
+					}
+				]
+			},
+			{
+				"id": "42",
+				"name": "Vengeful Fossil",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 1
+							}
+						],
+						"name": "Vengeful Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 2
+							}
+						],
+						"name": "Vengeful Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 4
+							}
+						],
+						"name": "Vengeful Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 6
+							}
+						],
+						"name": "Vengeful Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 8
+							}
+						],
+						"name": "Vengeful Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 10
+							}
+						],
+						"name": "Vengeful Fossil"
+					}
+				]
+			},
+			{
+				"id": "43",
+				"name": "Spitfire Fossil",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 1
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 2
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 3
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 4
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 5
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 6
+							}
+						],
+						"name": "Spitfire Fossil"
+					}
+				]
+			}
+		],
+		"id": "3026",
+		"location_id": "31",
+		"name": "Dragon Spirits"
 	}
 };
