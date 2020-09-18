@@ -47306,9 +47306,9 @@
     <name>Year 2016</name>
     <energy>1</energy>
     <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's villains and get amazing rewards!</desc>
-    <commander id="254" />
+    <commander id="449" />
     <deck>
-      <card id="8006" />
+      <card id="2121" />
       <card id="2121" />
       <card id="2182" />
       <card id="2188" />
@@ -47347,9 +47347,9 @@
     <name>Year 2017</name>
     <energy>1</energy>
     <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's party titans and get amazing rewards!</desc>
-    <commander id="255" />
+    <commander id="450" />
     <deck>
-      <card id="8080" />
+      <card id="2173" />
       <card id="2173" />
       <card id="2168" />
       <card id="2169" />
@@ -47398,9 +47398,9 @@
     <name>Year 2018</name>
     <energy>1</energy>
     <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's party titans and get amazing rewards!</desc>
-    <commander id="256" />
+    <commander id="451" />
     <deck>
-      <card id="8080" />
+      <card id="2173" />
       <card id="2173" />
       <card id="2168" />
       <card id="2169" />
@@ -47434,9 +47434,9 @@
     <name>Year 2019</name>
     <energy>1</energy>
     <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's... (not very sober) entity of evil and get amazing rewards!</desc>
-    <commander id="390" />
+    <commander id="452" />
     <deck>
-      <card id="8063" />
+      <card id="2194" />
       <card id="2194" />
       <card id="2188" />
       <card id="2033" />
@@ -47485,9 +47485,9 @@
     <name>Year 2020</name>
     <energy>1</energy>
     <desc>Spellstone's 5th Anniversary celebration has begun! Defeat this node's party titan and get amazing rewards!</desc>
-    <commander id="446" />
+    <commander id="453" />
     <deck>
-      <card id="8094" />
+      <card id="2125" />
       <card id="2125" />
       <card id="2011" />
       <card id="2121" />

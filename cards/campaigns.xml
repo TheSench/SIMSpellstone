@@ -8909,6 +8909,7 @@
     <!--	<campaign_req id='6' level='1'/> -->
     <locked_start_time>1600362000</locked_start_time>
     <!-- Thursday, September 17, 2020 17:00:00 -->
+    <!--	<battleground_id>547</battleground_id> -->
     <location_id>31</location_id>
     <x>640</x>
     <y>450</y>
