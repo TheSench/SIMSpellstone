@@ -35825,5 +35825,139 @@
       <skill id="leech" x="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6282</id>
+    <card_type>2</card_type>
+    <name>Cauldron Troop</name>
+    <picture>Goblin_Cauldron_Squad_A</picture>
+    <asset_bundle>202</asset_bundle>
+    <hidden_until_time>1601917200</hidden_until_time>
+    <attack>8</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="3" />
+    <skill id="burn" x="4" />
+    <skill id="enrage" x="2" all="1" y="11" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="4" />
+      <skill id="burn" x="4" />
+      <skill id="enrage" x="2" all="1" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="4" />
+      <skill id="burn" x="5" />
+      <skill id="enrage" x="2" all="1" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="4" />
+      <skill id="burn" x="5" />
+      <skill id="enrage" x="3" all="1" y="11" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16282</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Cauldron Platoon</name>
+    <picture>Goblin_Cauldron_Squad_A</picture>
+    <asset_bundle>202</asset_bundle>
+    <hidden_until_time>1601917200</hidden_until_time>
+    <attack>10</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="4" />
+    <skill id="burn" x="5" />
+    <skill id="enrage" x="3" all="1" y="11" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="5" />
+      <skill id="burn" x="5" />
+      <skill id="enrage" x="3" all="1" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="5" />
+      <skill id="burn" x="6" />
+      <skill id="enrage" x="3" all="1" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="5" />
+      <skill id="burn" x="6" />
+      <skill id="enrage" x="4" all="1" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26282</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Cauldron Squad</name>
+    <picture>Goblin_Cauldron_Squad_B</picture>
+    <asset_bundle>202</asset_bundle>
+    <hidden_until_time>1601917200</hidden_until_time>
+    <attack>11</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="5" />
+    <skill id="burn" x="6" />
+    <skill id="enrage" x="4" all="1" y="11" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="6" />
+      <skill id="burn" x="6" />
+      <skill id="enrage" x="4" all="1" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="6" />
+      <skill id="burn" x="7" />
+      <skill id="enrage" x="4" all="1" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="6" />
+      <skill id="burn" x="7" />
+      <skill id="enrage" x="5" all="1" y="11" />
+    </upgrade>
+  </unit>
 </root>
 

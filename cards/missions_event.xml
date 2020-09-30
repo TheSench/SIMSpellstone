@@ -47552,5 +47552,162 @@
     </speech>
   </mission>
   <!-- END 5th Anniversary  -->
+  <!-- Event 25 Boss Node -->
+  <mission>
+    <id>6503</id>
+    <name>Daknak Laugh!</name>
+    <energy>9</energy>
+    <desc>Daknak laughs as you chase after him, stopped by his small army of Goblins and Mechas. He runs to one of the glowing ley lines, slamming his sword into the dirt.</desc>
+    <commander id="454" />
+    <deck>
+      <card id="6187" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6176" />
+      <!-- OLD -->
+      <card id="6106" />
+      <!-- NEW -->
+      <card id="6088" />
+      <!-- OLD -->
+      <card id="6280" />
+      <!-- OLD -->
+      <card id="6133" />
+      <!-- NEW -->
+      <card id="6184" />
+      <!-- NEW -->
+      <card id="7243" />
+      <!-- NEW -->
+      <card id="7217" />
+      <!-- OLD -->
+      <card id="6098" />
+      <!-- OLD -->
+      <card id="6281" />
+      <!-- OLD -->
+      <card id="6059" />
+      <!-- NEW -->
+      <card id="6241" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6504</id>
+    <name>Daknak Earthquake!</name>
+    <energy>9</energy>
+    <desc>The ground rumbles. Higher above, the volcano gurgles lava. The magical energy condenses to where Daknak thrust his sword, causing the sword's runes to light up.</desc>
+    <commander id="454" />
+    <deck>
+      <card id="6187" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6176" />
+      <!-- OLD -->
+      <card id="6106" />
+      <!-- NEW -->
+      <card id="6088" />
+      <!-- OLD -->
+      <card id="6280" />
+      <!-- OLD -->
+      <card id="6133" />
+      <!-- NEW -->
+      <card id="6184" />
+      <!-- NEW -->
+      <card id="7243" />
+      <!-- NEW -->
+      <card id="7217" />
+      <!-- OLD -->
+      <card id="6098" />
+      <!-- OLD -->
+      <card id="6281" />
+      <!-- OLD -->
+      <card id="6059" />
+      <!-- NEW -->
+      <card id="6241" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6505</id>
+    <name>Daknak Magic!</name>
+    <energy>9</energy>
+    <desc>The goblins whoop and jump up and down in time to the earthquake. Daknak struggles to pull his sword out of the rocky mountainside, eventually managing but with too much force. After falling, but quickly rising, he brandishes the sword.</desc>
+    <commander id="454" />
+    <deck>
+      <card id="6187" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6176" />
+      <!-- OLD -->
+      <card id="6106" />
+      <!-- NEW -->
+      <card id="6088" />
+      <!-- OLD -->
+      <card id="6280" />
+      <!-- OLD -->
+      <card id="6133" />
+      <!-- NEW -->
+      <card id="6184" />
+      <!-- NEW -->
+      <card id="7243" />
+      <!-- NEW -->
+      <card id="7217" />
+      <!-- OLD -->
+      <card id="6098" />
+      <!-- OLD -->
+      <card id="6281" />
+      <!-- OLD -->
+      <card id="6059" />
+      <!-- NEW -->
+      <card id="6241" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6506</id>
+    <name>Daknak Power!</name>
+    <energy>9</energy>
+    <desc>The goblins cheer and applaude Daknak's strength. Daknak is using the ley lines to power his sword. The other goblins and mechas join him, trying to cut you down!</desc>
+    <commander id="454" />
+    <deck>
+      <card id="6187" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6147" />
+      <!-- OLD -->
+      <card id="6176" />
+      <!-- OLD -->
+      <card id="6106" />
+      <!-- NEW -->
+      <card id="6088" />
+      <!-- OLD -->
+      <card id="6280" />
+      <!-- OLD -->
+      <card id="6133" />
+      <!-- NEW -->
+      <card id="6184" />
+      <!-- NEW -->
+      <card id="7243" />
+      <!-- NEW -->
+      <card id="7217" />
+      <!-- OLD -->
+      <card id="6098" />
+      <!-- OLD -->
+      <card id="6281" />
+      <!-- OLD -->
+      <card id="6059" />
+      <!-- NEW -->
+      <card id="6241" />
+      <!-- NEW -->
+    </deck>
+  </mission>
 </root>
 

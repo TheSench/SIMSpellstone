@@ -14439,6 +14439,24 @@
       <pack>12</pack>
     </reward>
   </achievement>
+  <!-- Siren's recipe -->
+  <achievement>
+    <id>3617</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Daknak Fight!</name>
+    <desc>Complete the 'Daknak Fight!' campaign on Mastery Level 1.</desc>
+    <mission_req>6503</mission_req>
+    <locked_start_time>1601571600</locked_start_time>
+    <!--  Thursday, 1 October 2020 17:00:00 -->
+    <req>
+      <campaign>1263</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8026" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

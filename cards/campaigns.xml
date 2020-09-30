@@ -8871,7 +8871,7 @@
     <battleground_id>2103</battleground_id>
     <location_id>31</location_id>
     <x>340</x>
-    <y>250</y>
+    <y>220</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6492</mission_id>
@@ -8939,6 +8939,43 @@
     </rewards>
   </campaign>
   <!-- END 5th Anniversary -->
+  <!-- Boss Node -->
+  <campaign>
+    <id>1263</id>
+    <name>Daknak Fight!</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1260" level="1" />
+    <locked_start_time>1601571600</locked_start_time>
+    <!--  Thursday, 1 October 2020 17:00:00 -->
+    <battleground_id>2104</battleground_id>
+    <location_id>31</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>500</x>
+    <y>360</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6503</mission_id>
+      <mission_id>6504</mission_id>
+      <mission_id>6505</mission_id>
+      <mission_id>6506</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3121" />
+      <!--  Siren's Spellstone  -->
+      <item level="5" id="3121" />
+      <!--  Siren's Spellstone  -->
+      <item level="6" id="3121" />
+      <!--  Siren's Spellstone  -->
+      <item level="7" id="3121" />
+      <!--  Siren's Spellstone  -->
+    </rewards>
+    <find_item id="3119" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

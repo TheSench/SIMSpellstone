@@ -4614,6 +4614,14 @@
     <card_id>25280</card_id>
     <resource card_id="15280" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15281</card_id>
+    <resource card_id="5281" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25281</card_id>
+    <resource card_id="15281" number="2" />
+  </fusion_recipe>
   <!-- END AETHER PREMIUM SET -->
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -6839,6 +6847,14 @@
   <fusion_recipe>
     <card_id>26281</card_id>
     <resource card_id="16281" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16282</card_id>
+    <resource card_id="6282" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26282</card_id>
+    <resource card_id="16282" number="2" />
   </fusion_recipe>
   <!-- END CHAOS PREMIUM SET -->
   <!-- WYLD PREMIUM SET BEGIN -->
