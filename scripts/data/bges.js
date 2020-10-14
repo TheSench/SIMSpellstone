@@ -766,6 +766,46 @@ var BATTLEGROUNDS = {
 		"id": "137",
 		"name": "Steel's Edge"
 	},
+	"138": {
+		"desc": "Dragons of 0-2 delay gain Hex equal to 20% of their base Health. Dragons of 3-4 delay gain Weaken equal to 30% of their base Health, and gain Vengeance 8.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "enfeeble",
+				"mult": 0.2,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "weaken",
+				"mult": 0.3,
+				"y": "9"
+			},
+			{
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 8,
+				"y": "9"
+			}
+		],
+		"id": "138",
+		"name": "Fear Aura"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -3960,6 +4000,38 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2104",
 		"name": "Firecracker Shuffle",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2105": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2105",
+		"name": "Chorus of Fire",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2106": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.05
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2106",
+		"name": "Chorus of Fire",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},

@@ -8976,6 +8976,81 @@
     </rewards>
     <find_item id="3119" drop_per_energy=".4" />
   </campaign>
+  <!-- ================================== Campaign Event 25 weeks 5-8 / Return to Tarragon Peak ================================== -->
+  <campaign>
+    <id>1264</id>
+    <name>Seastone Staff Secrets</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1602781200</locked_start_time>
+    <!--  Thursday, 15 October 2020 17:00:00 -->
+    <battleground_id>2105</battleground_id>
+    <location_id>31</location_id>
+    <x>300</x>
+    <y>420</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6507</mission_id>
+      <mission_id>6508</mission_id>
+      <mission_id>6509</mission_id>
+      <mission_id>6510</mission_id>
+      <mission_id>6511</mission_id>
+      <mission_id>6512</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2196" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2003" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3120" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3119" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1265</id>
+    <name>Missing Spiritual Strength</name>
+    <campaign_req id="1264" level="1" />
+    <locked_start_time>1603990800</locked_start_time>
+    <!--  Thursday, 29 October 2020 17:00:00 -->
+    <battleground_id>2106</battleground_id>
+    <location_id>31</location_id>
+    <x>615</x>
+    <y>500</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6513</mission_id>
+      <mission_id>6514</mission_id>
+      <mission_id>6515</mission_id>
+      <mission_id>6516</mission_id>
+      <mission_id>6517</mission_id>
+      <mission_id>6518</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2197" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2164" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3120" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3119" drop_per_energy=".8" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

@@ -14457,6 +14457,133 @@
       <item id="8026" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 25 weeks 5-8 -->
+  <achievement>
+    <id>3618</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Seastone Staff Secrets</name>
+    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 1.</desc>
+    <mission_req>6507</mission_req>
+    <locked_start_time>1602781200</locked_start_time>
+    <!--  Thursday, 15 October 2020 17:00:00 -->
+    <req>
+      <campaign>1264</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3119" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7065" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3619</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Seastone Staff Secrets</name>
+    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 2.</desc>
+    <mission_req>6507</mission_req>
+    <locked_start_time>1602781200</locked_start_time>
+    <!--  Thursday, 15 October 2020 17:00:00 -->
+    <achievement_req>3618</achievement_req>
+    <req>
+      <campaign>1264</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3620</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Seastone Staff Secrets</name>
+    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 4.</desc>
+    <mission_req>6507</mission_req>
+    <locked_start_time>1602781200</locked_start_time>
+    <!--  Thursday, 15 October 2020 17:00:00 -->
+    <achievement_req>3619</achievement_req>
+    <req>
+      <campaign>1264</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3621</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Seastone Staff Secrets</name>
+    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 6.</desc>
+    <mission_req>6507</mission_req>
+    <locked_start_time>1602781200</locked_start_time>
+    <!--  Thursday, 15 October 2020 17:00:00 -->
+    <achievement_req>3620</achievement_req>
+    <req>
+      <campaign>1264</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3622</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Missing Spiritual Strength</name>
+    <desc>Complete the 'Missing Spiritual Strength' campaign on Mastery Level 2.</desc>
+    <mission_req>6513</mission_req>
+    <locked_start_time>1603990800</locked_start_time>
+    <!--  Thursday, 29 October 2020 17:00:00 -->
+    <req>
+      <campaign>1265</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3623</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Missing Spiritual Strength</name>
+    <desc>Complete the 'Missing Spiritual Strength' campaign on Mastery Level 4.</desc>
+    <mission_req>6513</mission_req>
+    <locked_start_time>1603990800</locked_start_time>
+    <!--  Thursday, 29 October 2020 17:00:00 -->
+    <achievement_req>3622</achievement_req>
+    <req>
+      <campaign>1265</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3624</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Missing Spiritual Strength</name>
+    <desc>Complete the 'Missing Spiritual Strength' campaign on Mastery Level 6.</desc>
+    <mission_req>6513</mission_req>
+    <locked_start_time>1603990800</locked_start_time>
+    <!--  Thursday, 29 October 2020 17:00:00 -->
+    <achievement_req>3623</achievement_req>
+    <req>
+      <campaign>1265</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -15003,6 +15130,32 @@
       <campaign>1258</campaign>
       <!-- 3rd node -->
       <campaign>1259</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Return to Tarragon Peak -->
+    <id>4026</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Return to Tarragon Peak</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Tarragon Peak.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6486</mission_req>
+    <req>
+      <campaign>1260</campaign>
+      <!-- 1st node -->
+      <campaign>1261</campaign>
+      <!-- 2nd node -->
+      <campaign>1263</campaign>
+      <!-- Boss node -->
+      <campaign>1264</campaign>
+      <!-- 3rd node -->
+      <campaign>1265</campaign>
       <!-- 4th node -->
       <level>7</level>
     </req>

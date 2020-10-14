@@ -6380,7 +6380,7 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <skill id="absorb" x="4" />
+      <skill id="absorb" x="5" />
       <skill id="burn" x="3" />
       <skill id="daze" x="6" />
     </upgrade>
@@ -6391,15 +6391,17 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="5" />
+      <attack>8</attack>
+      <health>18</health>
+      <skill id="absorb" x="6" />
       <skill id="burn" x="4" />
-      <skill id="daze" x="6" />
+      <skill id="daze" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="absorb" x="6" />
+      <skill id="absorb" x="7" />
       <skill id="burn" x="5" />
-      <skill id="daze" x="7" />
+      <skill id="daze" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -6634,15 +6636,16 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>38</health>
       <skill id="backlash" x="4" />
-      <skill id="corrosive" x="5" />
-      <skill id="burn" x="5" />
+      <skill id="corrosive" x="6" />
+      <skill id="burn" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="backlash" x="4" />
-      <skill id="corrosive" x="6" />
-      <skill id="burn" x="6" />
+      <skill id="corrosive" x="7" />
+      <skill id="burn" x="7" />
     </upgrade>
   </unit>
   <unit>

@@ -40188,7 +40188,7 @@
     <id>6275</id>
     <name>The Void's Entity</name>
     <energy>18</energy>
-    <desc>Aria is not about to let a stranger claim victory over Bluefire when you've already received that honor. However if Vel is to believed, then The Void is something greater than one figurehead...</desc>
+    <desc>Aria is not about to let a stranger claim victory over Bluefire when you've already received that honor. However if Vel is to be believed, then The Void is something greater than one figurehead...</desc>
     <commander id="304" />
     <deck>
       <card id="8020" name="Fortune's Scallywag" />
@@ -47708,6 +47708,398 @@
       <card id="6241" />
       <!-- NEW -->
     </deck>
+  </mission>
+  <!-- Event 25 Node 3 -->
+  <mission>
+    <id>6507</id>
+    <name>Volcano Journey</name>
+    <energy>18</energy>
+    <desc>After dealing with Daknak, you continue your journey up the volcano peak. You spy a small group of dragons.</desc>
+    <commander id="272" />
+    <deck>
+      <card id="8024" />
+      <card id="6007" />
+      <card id="1333" />
+      <card id="1333" />
+      <card id="2126" />
+      <card id="2126" />
+      <card id="6021" />
+      <card id="1334" />
+      <card id="1336" />
+      <card id="1334" mastery_level="2" />
+      <card id="1336" mastery_level="3" />
+      <card id="6021" mastery_level="4" />
+      <card id="2065" mastery_level="5" />
+      <card id="6014" mastery_level="6" />
+      <card id="2091" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6508</id>
+    <name>Return of Teroxis</name>
+    <energy>18</energy>
+    <desc>You pass the dragons without much incident. Although a few are trying to play with you and becoming nippy, they don't seem incredibly concerned by your appearance.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8082" />
+      <card id="6012" />
+      <card id="2123" />
+      <card id="2123" />
+      <card id="6089" />
+      <card id="6089" />
+      <card id="2062" />
+      <card id="2139" />
+      <card id="6010" />
+      <card id="2139" mastery_level="2" />
+      <card id="6010" mastery_level="3" />
+      <card id="2062" mastery_level="4" />
+      <card id="6166" mastery_level="5" />
+      <card id="6187" mastery_level="6" />
+      <card id="6184" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Look, ahead... isn't that the talking dragon?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6509</id>
+    <name>Familiar Faces</name>
+    <energy>18</energy>
+    <desc>More than just Teroxis, you see another human amongst them. The familiar girl is hanging close to the dragon, one hand upon its side. You've found Vel, in the midst of her adventures.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8086" />
+      <card id="7012" />
+      <card id="2063" />
+      <card id="2063" />
+      <card id="2102" />
+      <card id="2102" />
+      <card id="2172" />
+      <card id="2046" />
+      <card id="2003" />
+      <card id="2046" mastery_level="2" />
+      <card id="2003" mastery_level="3" />
+      <card id="2172" mastery_level="4" />
+      <card id="7001" mastery_level="5" />
+      <card id="7019" mastery_level="6" />
+      <card id="7243" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>1</enemy>
+        <text>Friends...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>Hello again!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6510</id>
+    <name>First Order Past</name>
+    <energy>18</energy>
+    <desc>You and Oda tell Vel about your reason for coming to Tarragon Peak. Since she was around in the ancient past, Vel might have more information to share.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8090" />
+      <card id="5012" />
+      <card id="5089" />
+      <card id="5089" />
+      <card id="5146" />
+      <card id="5146" />
+      <card id="2148" />
+      <card id="2005" />
+      <card id="2141" />
+      <card id="2005" mastery_level="2" />
+      <card id="2141" mastery_level="3" />
+      <card id="2148" mastery_level="4" />
+      <card id="5090" mastery_level="5" />
+      <card id="5144" mastery_level="6" />
+      <card id="5267" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>The First Order Monks... yes, they once ruled the dragons here, long ago.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6511</id>
+    <name>Seastone Staff's Power</name>
+    <energy>18</energy>
+    <desc>Vel reflects on the First Order Monks. The Monks have mainly been a quiet group, coming to the continent originaly to eke out their days in peace.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="8086" />
+      <card id="7012" />
+      <card id="7129" />
+      <card id="7129" />
+      <card id="7146" />
+      <card id="7146" />
+      <card id="7090" />
+      <card id="7093" />
+      <card id="7095" />
+      <card id="7093" mastery_level="2" />
+      <card id="7095" mastery_level="3" />
+      <card id="7090" mastery_level="4" />
+      <card id="7217" mastery_level="5" />
+      <card id="7147" mastery_level="6" />
+      <card id="7131" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>Their Seastone Staff was able to combine and sever the monks' ties to the Elementals.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6512</id>
+    <name>Missing Staff</name>
+    <energy>18</energy>
+    <desc>The Seastone Staff was one of the treasures used to defeat Bluefire of The Void. However, it's passed hands multiple times, and in the process Oda lost its location.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8083" />
+      <card id="6012" />
+      <card id="2134" />
+      <card id="2134" />
+      <card id="2053" />
+      <card id="2053" />
+      <card id="1335" />
+      <card id="6063" />
+      <card id="6096" />
+      <card id="6063" mastery_level="2" />
+      <card id="6096" mastery_level="3" />
+      <card id="1335" mastery_level="4" />
+      <card id="6092" mastery_level="5" />
+      <card id="6142" mastery_level="6" />
+      <card id="6133" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Then if we find the Seastone Staff again, we might be able to save Master Kensho!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 25 Node 4 -->
+  <mission>
+    <id>6513</id>
+    <name>Kensho's Deception</name>
+    <energy>18</energy>
+    <desc>Kensho knew more than what he was letting on at your initial meeting. Forbidden techniques can't be done with a simple snap of the fingers. He must have had some power...</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8086" />
+      <card id="7087" />
+      <card id="7087" />
+      <card id="7146" />
+      <card id="7146" />
+      <card id="1628" />
+      <card id="1628" />
+      <card id="7010" />
+      <card id="2164" />
+      <card id="7010" mastery_level="2" />
+      <card id="2164" mastery_level="3" />
+      <card id="7188" mastery_level="4" />
+      <card id="7190" mastery_level="5" />
+      <card id="7255" mastery_level="6" />
+      <card id="7269" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>If he's already combined with an Elemental, that means he's the one who has the staff, Oda.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Oh... oh no... He completely played me then, asking about the Staff when he already had it!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6514</id>
+    <name>Power Coil Surges</name>
+    <energy>18</energy>
+    <desc>You and Oda are prepared to leave with your newfound information. However, Vel stops you before you get far.</desc>
+    <commander id="272" />
+    <deck>
+      <card id="8084" />
+      <card id="6144" />
+      <card id="6144" />
+      <card id="6143" />
+      <card id="6143" />
+      <card id="2194" />
+      <card id="2194" />
+      <card id="6131" />
+      <card id="2044" />
+      <card id="6131" mastery_level="2" />
+      <card id="2044" mastery_level="3" />
+      <card id="6088" mastery_level="4" />
+      <card id="6148" mastery_level="5" />
+      <card id="6146" mastery_level="6" />
+      <card id="6100" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>One more thing... I've been sensing great power surges lately. Is that your doing?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6515</id>
+    <name>Titan of Titans</name>
+    <energy>18</energy>
+    <desc>You explain to Vel your plan to master the three Titans. Viracocha should be able to house all the powers, and hopefully stand against the might of the other Titans.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8024" />
+      <card id="6129" />
+      <card id="6129" />
+      <card id="2101" />
+      <card id="2101" />
+      <card id="2062" />
+      <card id="2062" />
+      <card id="2181" />
+      <card id="2004" />
+      <card id="2181" mastery_level="2" />
+      <card id="2004" mastery_level="3" />
+      <card id="6218" mastery_level="4" />
+      <card id="6219" mastery_level="5" />
+      <card id="6221" mastery_level="6" />
+      <card id="6126" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>Wow, a mechanical Titan... it might work.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>But remember, just slamming a bunch of powers together won't suddenly make them controllable.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6516</id>
+    <name>Titan of Titans</name>
+    <energy>18</energy>
+    <desc>Despite the problems it created, The Void was the controlling force of the three Titans. Without The Void, there needs to be something else that binds them together.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8091" />
+      <card id="2124" />
+      <card id="2124" />
+      <card id="2064" />
+      <card id="2064" />
+      <card id="2125" />
+      <card id="2125" />
+      <card id="5010" />
+      <card id="5025" />
+      <card id="5010" mastery_level="2" />
+      <card id="5025" mastery_level="3" />
+      <card id="5190" mastery_level="4" />
+      <card id="5192" mastery_level="5" />
+      <card id="5209" mastery_level="6" />
+      <card id="5131" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>You'll need something else to bind them all together. Like how The Void did, just... The Void isn't an option, obviously.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6517</id>
+    <name>Spiritual Binding</name>
+    <energy>18</energy>
+    <desc>The ancient dragon of Tarragon Peak has weathered hundreds of seasons. Although his speech is ineloquent, he is undoubtedly one of the wisest creatures on the continent.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8082" />
+      <card id="6097" />
+      <card id="6097" />
+      <card id="6021" />
+      <card id="6021" />
+      <card id="2194" />
+      <card id="2194" />
+      <card id="6131" />
+      <card id="6010" />
+      <card id="6131" mastery_level="2" />
+      <card id="6010" mastery_level="3" />
+      <card id="6282" mastery_level="4" />
+      <card id="6281" mastery_level="5" />
+      <card id="6280" mastery_level="6" />
+      <card id="6207" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>1</enemy>
+        <text>Need... spirit!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>1</enemy>
+        <text>Not a bad idea, friend. A tie to the spirit world would be able to control your physical mecha Titan.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6518</id>
+    <name>Friendly Spirit</name>
+    <energy>18</energy>
+    <desc>Oda reflects on their advice. Spirits, especially friendly spirits, are rare creatures to come by. But there was one who helped in the past...</desc>
+    <commander id="272" />
+    <deck>
+      <card id="8083" />
+      <card id="6129" />
+      <card id="6129" />
+      <card id="6089" />
+      <card id="6089" />
+      <card id="6090" />
+      <card id="6090" />
+      <card id="2001" />
+      <card id="2066" />
+      <card id="2001" mastery_level="2" />
+      <card id="2066" mastery_level="3" />
+      <card id="6220" mastery_level="4" />
+      <card id="6098" mastery_level="5" />
+      <card id="6111" mastery_level="6" />
+      <card id="6130" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>When we were lost in The Void, there was a friendly spirit who helped us, wasn't there?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Thanks for everything, Vel. We'll see what we can do.</text>
+      </line>
+    </speech>
   </mission>
 </root>
 
