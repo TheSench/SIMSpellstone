@@ -777,7 +777,7 @@ var BATTLEGROUNDS = {
 					2
 				],
 				"effect_type": "add_skill",
-				"id": "enfeeble",
+				"id": "enfeeblebge",
 				"mult": 0.2,
 				"y": "9"
 			},
@@ -788,7 +788,7 @@ var BATTLEGROUNDS = {
 					4
 				],
 				"effect_type": "add_skill",
-				"id": "weaken",
+				"id": "weakenbge",
 				"mult": 0.3,
 				"y": "9"
 			},

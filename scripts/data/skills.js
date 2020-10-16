@@ -97,6 +97,12 @@ var SKILL_DATA = {
 		"name": "Hex",
 		"type": "activation"
 	},
+	"enfeeblebge": {
+		"desc": "Inflicts Hex on a random enemy creature, causing it to take extra damage each time it is damaged.",
+		"icon": "hex",
+		"name": "Hex",
+		"type": "activation"
+	},
 	"enhance": {
 		"desc": "Increases the effect of this Skill for a random ally creature.",
 		"icon": "enhance",
@@ -368,6 +374,12 @@ var SKILL_DATA = {
 		"type": "onAttack"
 	},
 	"weaken": {
+		"desc": "Inflicts Weaken on a random enemy creature, reducing Attack.",
+		"icon": "hinder",
+		"name": "Weaken",
+		"type": "activation"
+	},
+	"weakenbge": {
 		"desc": "Inflicts Weaken on a random enemy creature, reducing Attack.",
 		"icon": "hinder",
 		"name": "Weaken",

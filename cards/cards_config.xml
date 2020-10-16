@@ -666,6 +666,30 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
+    <id>enfeeblebge</id>
+    <order>1</order>
+    <icon>hex</icon>
+    <name>Hex</name>
+    <desc>Inflicts Hex on a random enemy creature, causing it to take extra damage each time it is damaged.</desc>
+    <desc_all>Inflicts Hex on all enemy creatures, causing them to take extra damage each time they are damaged.</desc_all>
+    <status_flag>enfeeble</status_flag>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <vfx_location>center</vfx_location>
+    <balance_points>3</balance_points>
+  </skillType>
+  <skillType>
+    <id>weakenbge</id>
+    <order>1</order>
+    <icon>hinder</icon>
+    <name>Weaken</name>
+    <desc>Inflicts Weaken on a random enemy creature, reducing Attack.</desc>
+    <desc_all>Inflicts Weaken on all enemy creatures, reducing Attack.</desc_all>
+    <desc_faction>Inflicts Weaken on a random {y} enemy, reducing Attack.</desc_faction>
+    <desc_all_faction>Inflicts Weaken on all {y} enemies, reducing Attack.</desc_all_faction>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>1.5</balance_points>
+  </skillType>
+  <skillType>
     <id>displayEffect</id>
     <order>0</order>
     <upkeep>1</upkeep>
@@ -937,6 +961,26 @@
   <cardSet>
     <id>8000</id>
     <name>Fortress</name>
+    <visible>0</visible>
+  </cardSet>
+  <cardSet>
+    <id>9900</id>
+    <name>Enemy Commanders</name>
+    <visible>0</visible>
+  </cardSet>
+  <cardSet>
+    <id>9901</id>
+    <name>Event Commanders</name>
+    <visible>0</visible>
+  </cardSet>
+  <cardSet>
+    <id>9902</id>
+    <name>Boss Commanders</name>
+    <visible>0</visible>
+  </cardSet>
+  <cardSet>
+    <id>9903</id>
+    <name>Special Commanders</name>
     <visible>0</visible>
   </cardSet>
   <cardSet>
