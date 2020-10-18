@@ -152,7 +152,7 @@ var SIMULATOR = {};
 	function notImplemented(src_card, skill) {
 		if (debug) {
 			var skillName = (SKILL_DATA[skill.id] ? SKILL_DATA[skill.id].name : skill.id);
-			echo += debug_name(src_card) + ' attempts to use ' + skillName + ', but it is not implemented.<br>';
+			echo += debug_name(src_card) + ' attempts to use ' + skillName + ' (' + skill.id + '), but it is not implemented.<br>';
 		}
 
 		return 0;
@@ -887,6 +887,10 @@ var SIMULATOR = {};
 		// - Targets enemy assaults
 		// - Can be evaded
 		// - Can be enhanced
+		enfeeblebge: function (src_card, skill) {
+			// Alias for enfeeble
+			return activationSkills.enfeeble(src_card, skill, true);
+		},
 		enfeeble: function (src_card, skill) {
 
 			var faction = skill.y;
@@ -942,6 +946,10 @@ var SIMULATOR = {};
 		// - Can be evaded
 		// - Can be enhanced
 		weakenself: function (src_card, skill) {
+			return activationSkills.weaken(src_card, skill);
+		},
+		weakenbge: function (src_card, skill) {
+			// Alias for weaken
 			return activationSkills.weaken(src_card, skill);
 		},
 		weaken: function (src_card, skill) {
