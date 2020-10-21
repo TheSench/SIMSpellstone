@@ -36208,6 +36208,138 @@
       <skill id="fervor" x="5" y="11" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5282</id>
+    <card_type>2</card_type>
+    <name>Protector of the Weak</name>
+    <picture>Dragon_Tamed_Drake_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1603731600</hidden_until_time>
+    <attack>2</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="valor" x="7" />
+    <skill id="protect" x="3" all="1" y="9" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="5" />
+      <skill id="valor" x="8" />
+      <skill id="protect" x="3" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="6" />
+      <skill id="valor" x="8" />
+      <skill id="protect" x="3" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="6" />
+      <skill id="valor" x="8" />
+      <skill id="protect" x="4" all="1" y="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15282</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Custodian of the Weak</name>
+    <picture>Dragon_Tamed_Drake_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1603731600</hidden_until_time>
+    <attack>3</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="valor" x="8" />
+    <skill id="protect" x="4" all="1" y="9" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="6" />
+      <skill id="valor" x="9" />
+      <skill id="protect" x="4" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="7" />
+      <skill id="valor" x="9" />
+      <skill id="protect" x="4" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="7" />
+      <skill id="valor" x="9" />
+      <skill id="protect" x="5" all="1" y="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25282</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Guardian of the Weak</name>
+    <picture>Dragon_Tamed_Drake_B</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1603731600</hidden_until_time>
+    <attack>3</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="valor" x="10" />
+    <skill id="protect" x="5" all="1" y="9" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="7" />
+      <skill id="valor" x="11" />
+      <skill id="protect" x="5" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="8" />
+      <skill id="valor" x="11" />
+      <skill id="protect" x="6" all="1" y="9" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

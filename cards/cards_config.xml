@@ -380,7 +380,6 @@
     <desc>After dealing Attack damage, inflicts Silence, disabling all Skills.</desc>
     <attributes x="1" y="1" all="0" c="1" s="0" />
     <balance_points>1</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>nullify</id>
@@ -676,6 +675,7 @@
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <vfx_location>center</vfx_location>
     <balance_points>3</balance_points>
+    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>weakenbge</id>
@@ -688,6 +688,7 @@
     <desc_all_faction>Inflicts Weaken on all {y} enemies, reducing Attack.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <balance_points>1.5</balance_points>
+    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>displayEffect</id>
