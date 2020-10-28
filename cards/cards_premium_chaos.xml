@@ -35961,5 +35961,276 @@
       <skill id="enrage" x="5" all="1" y="11" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6283</id>
+    <card_type>2</card_type>
+    <name>Tail Twiner</name>
+    <picture>Dragon_Tail_Choker_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604163600</hidden_until_time>
+    <attack>11</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="6" />
+    <skill id="nullify" x="2" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="7" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="7" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="7" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16283</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tail Coiler</name>
+    <picture>Dragon_Tail_Choker_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604163600</hidden_until_time>
+    <attack>13</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="nullify" x="3" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="8" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26283</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tail Choker</name>
+    <picture>Dragon_Tail_Choker_B</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604163600</hidden_until_time>
+    <attack>14</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="8" />
+    <skill id="nullify" x="4" />
+    <skill id="berserk" x="5" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="9" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="9" />
+      <skill id="nullify" x="5" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="10" />
+      <skill id="nullify" x="5" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6284</id>
+    <card_type>2</card_type>
+    <name>Wealthy Creature</name>
+    <picture>Undead_Dragon_Hoard_Geist_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604336400</hidden_until_time>
+    <attack>12</attack>
+    <health>56</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="5" />
+    <skill id="rally" x="7" y="2" />
+    <skill id="enrage" x="5" all="1" y="9" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>57</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="5" />
+      <skill id="rally" x="8" y="2" />
+      <skill id="enrage" x="5" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="5" />
+      <skill id="rally" x="8" y="2" />
+      <skill id="enrage" x="6" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="8" y="2" />
+      <skill id="enrage" x="6" all="1" y="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16284</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wealthy Monster</name>
+    <picture>Undead_Dragon_Hoard_Geist_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604336400</hidden_until_time>
+    <attack>14</attack>
+    <health>57</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="rally" x="8" y="2" />
+    <skill id="enrage" x="6" all="1" y="9" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>58</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="9" y="2" />
+      <skill id="enrage" x="6" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="9" y="2" />
+      <skill id="enrage" x="7" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="9" y="2" />
+      <skill id="enrage" x="7" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>15</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26284</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wealthy Dragon</name>
+    <picture>Undead_Dragon_Hoard_Geist_B</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604336400</hidden_until_time>
+    <attack>15</attack>
+    <health>59</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="rally" x="9" y="2" />
+    <skill id="enrage" x="7" all="1" y="9" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="10" y="2" />
+      <skill id="enrage" x="7" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>16</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>60</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="10" y="2" />
+      <skill id="enrage" x="8" all="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="11" y="2" />
+      <skill id="enrage" x="8" all="1" y="9" />
+    </upgrade>
+  </unit>
 </root>
 
