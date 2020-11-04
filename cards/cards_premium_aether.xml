@@ -36340,6 +36340,143 @@
       <skill id="protect" x="6" all="1" y="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5283</id>
+    <card_type>2</card_type>
+    <name>Ice Wreckers</name>
+    <picture>Dragon_Seafolk_Ice_Breakers_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604941200</hidden_until_time>
+    <attack>12</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="jam" c="4" />
+    <skill id="pierce" x="12" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="jam" c="3" />
+      <skill id="pierce" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="jam" c="3" />
+      <skill id="pierce" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="3" />
+      <skill id="pierce" x="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15283</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ice Hitters</name>
+    <picture>Dragon_Seafolk_Ice_Breakers_A</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604941200</hidden_until_time>
+    <attack>14</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="jam" c="3" />
+    <skill id="pierce" x="13" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="2" />
+      <skill id="pierce" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="2" />
+      <skill id="pierce" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="jam" c="2" />
+      <skill id="pierce" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>15</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25283</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ice Destroyers</name>
+    <picture>Dragon_Seafolk_Ice_Breakers_B</picture>
+    <asset_bundle>204</asset_bundle>
+    <hidden_until_time>1604941200</hidden_until_time>
+    <attack>15</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="jam" c="2" />
+    <skill id="pierce" x="14" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="3" />
+      <skill id="jam" c="2" />
+      <skill id="pierce" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>16</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="jam" c="2" />
+      <skill id="pierce" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="4" />
+      <skill id="jam" c="2" />
+      <skill id="pierce" x="16" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 
