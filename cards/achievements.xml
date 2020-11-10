@@ -14648,6 +14648,133 @@
       <pack>12</pack>
     </reward>
   </achievement>
+  <!-- Campaign Event 26 weeks 1-4 -->
+  <achievement>
+    <id>3629</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath Skyhaven</name>
+    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 1.</desc>
+    <mission_req>6522</mission_req>
+    <locked_start_time>1605200400</locked_start_time>
+    <!-- Thursday, 12 November 2020 17:00:00 -->
+    <req>
+      <campaign>1267</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3122" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7066" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3630</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath Skyhaven</name>
+    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 2.</desc>
+    <mission_req>6522</mission_req>
+    <locked_start_time>1605200400</locked_start_time>
+    <!-- Thursday, 12 November 2020 17:00:00 -->
+    <achievement_req>3629</achievement_req>
+    <req>
+      <campaign>1267</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3631</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath Skyhaven</name>
+    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 4.</desc>
+    <mission_req>6522</mission_req>
+    <locked_start_time>1605200400</locked_start_time>
+    <!-- Thursday, 12 November 2020 17:00:00 -->
+    <achievement_req>3630</achievement_req>
+    <req>
+      <campaign>1267</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3632</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath Skyhaven</name>
+    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 6.</desc>
+    <mission_req>6522</mission_req>
+    <locked_start_time>1605200400</locked_start_time>
+    <!-- Thursday, 12 November 2020 17:00:00 -->
+    <achievement_req>3631</achievement_req>
+    <req>
+      <campaign>1267</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3633</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Search for Dyrnwyn</name>
+    <desc>Complete the 'Search for Dyrnwyn' campaign on Mastery Level 2.</desc>
+    <mission_req>6528</mission_req>
+    <locked_start_time>1606410000</locked_start_time>
+    <!-- Thursday, 26 November 2020 17:00:00 -->
+    <req>
+      <campaign>1268</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3634</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Search for Dyrnwyn</name>
+    <desc>Complete the 'Search for Dyrnwyn' campaign on Mastery Level 4.</desc>
+    <mission_req>6528</mission_req>
+    <locked_start_time>1606410000</locked_start_time>
+    <!-- Thursday, 26 November 2020 17:00:00 -->
+    <achievement_req>3633</achievement_req>
+    <req>
+      <campaign>1268</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3635</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Search for Dyrnwyn</name>
+    <desc>Complete the 'Search for Dyrnwyn' campaign on Mastery Level 6.</desc>
+    <mission_req>6528</mission_req>
+    <locked_start_time>1606410000</locked_start_time>
+    <!-- Thursday, 26 November 2020 17:00:00 -->
+    <achievement_req>3634</achievement_req>
+    <req>
+      <campaign>1268</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

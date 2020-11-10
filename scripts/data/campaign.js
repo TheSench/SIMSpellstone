@@ -129,6 +129,10 @@ var LOCATIONS = {
 		"id": "31",
 		"name": "Return to Tarragon Peak"
 	},
+	"32": {
+		"id": "32",
+		"name": "Gladius Scriptorium"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -4883,6 +4887,39 @@ var CAMPAIGNS = {
 			"6521"
 		],
 		"name": "Trick or Treat"
+	},
+	"1267": {
+		"id": "1267",
+		"items": {
+			"3122": 0.2
+		},
+		"location_id": "32",
+		"missions": [
+			"6522",
+			"6523",
+			"6524",
+			"6525",
+			"6526",
+			"6527"
+		],
+		"name": "Beneath Skyhaven"
+	},
+	"1268": {
+		"battleground_id": "2107",
+		"id": "1268",
+		"items": {
+			"3122": 0.4
+		},
+		"location_id": "32",
+		"missions": [
+			"6528",
+			"6529",
+			"6530",
+			"6531",
+			"6532",
+			"6533"
+		],
+		"name": "Search for Dyrnwyn"
 	},
 	"3000": {
 		"id": "3000",
@@ -106313,5 +106350,725 @@ var MISSIONS = {
 		],
 		"id": "6521",
 		"name": "More Trick Than Treat"
+	},
+	"6522": {
+		"commander": {
+			"id": "246"
+		},
+		"deck": [
+			{
+				"id": "8001"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "2005"
+			},
+			{
+				"id": "2005"
+			},
+			{
+				"id": "2141"
+			},
+			{
+				"id": "5024"
+			},
+			{
+				"id": "2076"
+			},
+			{
+				"id": "2141",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5024",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2076",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2141",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1040",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5095",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6522",
+		"name": "Revisiting the Angel Queen"
+	},
+	"6523": {
+		"commander": {
+			"id": "269"
+		},
+		"deck": [
+			{
+				"id": "8003"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5107"
+			},
+			{
+				"id": "5107"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "5062"
+			},
+			{
+				"id": "5149"
+			},
+			{
+				"id": "5025",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5149",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5025",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5026",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5109",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6523",
+		"name": "Whispers of Solaron"
+	},
+	"6524": {
+		"commander": {
+			"id": "340"
+		},
+		"deck": [
+			{
+				"id": "8040"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "2175"
+			},
+			{
+				"id": "2175"
+			},
+			{
+				"id": "2004"
+			},
+			{
+				"id": "6061"
+			},
+			{
+				"id": "2178"
+			},
+			{
+				"id": "2004",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6061",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2178",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2004",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6126",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6106",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6524",
+		"name": "Secret Scriptorium"
+	},
+	"6525": {
+		"commander": {
+			"id": "343"
+		},
+		"deck": [
+			{
+				"id": "8038"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2045"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "5152"
+			},
+			{
+				"id": "2045",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2163",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5152",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2045",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5061",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5258",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6525",
+		"name": "Monster Dominance"
+	},
+	"6526": {
+		"commander": {
+			"id": "397"
+		},
+		"deck": [
+			{
+				"id": "8039"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5041"
+			},
+			{
+				"id": "5041"
+			},
+			{
+				"id": "5130"
+			},
+			{
+				"id": "5096"
+			},
+			{
+				"id": "2151"
+			},
+			{
+				"id": "5130",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5096",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2151",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5130",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5063",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5257",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6526",
+		"name": "Master Protection"
+	},
+	"6527": {
+		"commander": {
+			"id": "355"
+		},
+		"deck": [
+			{
+				"id": "8097"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5010"
+			},
+			{
+				"id": "5010"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "5062"
+			},
+			{
+				"id": "2076"
+			},
+			{
+				"id": "2163",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2076",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2163",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5097",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5244",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6527",
+		"name": "Samael's Assistance"
+	},
+	"6528": {
+		"commander": {
+			"id": "313"
+		},
+		"deck": [
+			{
+				"id": "8001"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2141"
+			},
+			{
+				"id": "2141"
+			},
+			{
+				"id": "5062"
+			},
+			{
+				"id": "2079"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2079",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2141",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2124",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5187",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5106",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6528",
+		"name": "Request for Dyrnwyn"
+	},
+	"6529": {
+		"commander": {
+			"id": "303"
+		},
+		"deck": [
+			{
+				"id": "8003"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "2148"
+			},
+			{
+				"id": "2148"
+			},
+			{
+				"id": "5096"
+			},
+			{
+				"id": "5096"
+			},
+			{
+				"id": "5127"
+			},
+			{
+				"id": "5011"
+			},
+			{
+				"id": "5127",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5011",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5096",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2148",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5189",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5154",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6529",
+		"name": "Samael's Purpose"
+	},
+	"6530": {
+		"commander": {
+			"id": "261"
+		},
+		"deck": [
+			{
+				"id": "8038"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "2105"
+			},
+			{
+				"id": "2105"
+			},
+			{
+				"id": "2045"
+			},
+			{
+				"id": "2045"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "1035"
+			},
+			{
+				"id": "2163",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1035",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2045",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2105",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5267",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5198",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6530",
+		"name": "Saving Skyhaven"
+	},
+	"6531": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "8039"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "5073"
+			},
+			{
+				"id": "5073"
+			},
+			{
+				"id": "5024"
+			},
+			{
+				"id": "5024"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "2151"
+			},
+			{
+				"id": "2163",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2151",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5024",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5073",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5268",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5199",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6531",
+		"name": "Aether Fight"
+	},
+	"6532": {
+		"commander": {
+			"id": "243"
+		},
+		"deck": [
+			{
+				"id": "8097"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "5107"
+			},
+			{
+				"id": "5107"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "5149"
+			},
+			{
+				"id": "2124",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5149",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5025",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5107",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5105",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6532",
+		"name": "Samael's Choice"
+	},
+	"6533": {
+		"commander": {
+			"id": "263"
+		},
+		"deck": [
+			{
+				"id": "8001"
+			},
+			{
+				"id": "7007"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "5152"
+			},
+			{
+				"id": "5152"
+			},
+			{
+				"id": "5010"
+			},
+			{
+				"id": "5010"
+			},
+			{
+				"id": "5096"
+			},
+			{
+				"id": "2076"
+			},
+			{
+				"id": "5096",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2076",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5010",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5152",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5242",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5104",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6533",
+		"name": "Samael's Heart"
 	}
 };

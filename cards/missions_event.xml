@@ -48225,5 +48225,388 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 26 Node 1 -->
+  <mission>
+    <id>6522</id>
+    <name>Revisiting the Angel Queen</name>
+    <energy>18</energy>
+    <desc>You and Elyse travel to Skyhaven, seeking an audience with the Angel Queen Leyla. If you are to finish the missing piece of Viracocha's transformation, you must find Samael - or more specifically, his sword Dyrnwyn, which houses a friendly spirit.</desc>
+    <commander id="246" />
+    <deck>
+      <card id="8001" />
+      <card id="5012" />
+      <card id="6012" />
+      <card id="7007" />
+      <card id="2005" />
+      <card id="2005" />
+      <card id="2141" />
+      <card id="5024" />
+      <card id="2076" />
+      <card id="2141" mastery_level="2" />
+      <card id="5024" mastery_level="3" />
+      <card id="2076" mastery_level="4" />
+      <card id="2141" mastery_level="5" />
+      <card id="1040" mastery_level="6" />
+      <card id="5095" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Samael? Yes, he returned here recently.</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>A surge of Aether energy came from beneath Skyhaven. Samael is investigating.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6523</id>
+    <name>Whispers of Solaron</name>
+    <energy>18</energy>
+    <desc>Following the Angel Queen's advice, you head beneath Skyhaven's library. You recall being here earlier, when you were investigating information on the Divine and Fallen Crest Angels.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8003" />
+      <card id="5012" />
+      <card id="6012" />
+      <card id="7007" />
+      <card id="5107" />
+      <card id="5107" />
+      <card id="5025" />
+      <card id="5062" />
+      <card id="5149" />
+      <card id="5025" mastery_level="2" />
+      <card id="5062" mastery_level="3" />
+      <card id="5149" mastery_level="4" />
+      <card id="5025" mastery_level="5" />
+      <card id="5026" mastery_level="6" />
+      <card id="5109" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Aether energy... Solaron wasn't in Luminis, was he? He might be in Skyhaven instead.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6524</id>
+    <name>Secret Scriptorium</name>
+    <energy>18</energy>
+    <desc>You find the secret passage in the scriptorium that leads deeper, into the true heart of Skyhaven. What was once Gladius Arena in the distant past has now been converted into an archive of history.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8040" />
+      <card id="5012" />
+      <card id="6012" />
+      <card id="7007" />
+      <card id="2175" />
+      <card id="2175" />
+      <card id="2004" />
+      <card id="6061" />
+      <card id="2178" />
+      <card id="2004" mastery_level="2" />
+      <card id="6061" mastery_level="3" />
+      <card id="2178" mastery_level="4" />
+      <card id="2004" mastery_level="5" />
+      <card id="6126" mastery_level="6" />
+      <card id="6106" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6525</id>
+    <name>Monster Dominance</name>
+    <energy>18</energy>
+    <desc>Creatures crawl out from behind the bookshelves and statues. Unhappy that you disturbed their rest, they attack!</desc>
+    <commander id="343" />
+    <deck>
+      <card id="8038" />
+      <card id="5012" />
+      <card id="6012" />
+      <card id="7007" />
+      <card id="2124" />
+      <card id="2124" />
+      <card id="2045" />
+      <card id="2163" />
+      <card id="5152" />
+      <card id="2045" mastery_level="2" />
+      <card id="2163" mastery_level="3" />
+      <card id="5152" mastery_level="4" />
+      <card id="2045" mastery_level="5" />
+      <card id="5061" mastery_level="6" />
+      <card id="5258" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>The whole place is overrun with monsters! I hope Samael is okay.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6526</id>
+    <name>Master Protection</name>
+    <energy>18</energy>
+    <desc>Aether creatures block your path at every turn. Tribes you didn't even expect to be in Skyhaven are locked in Gladius Scriptorium.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8039" />
+      <card id="5012" />
+      <card id="6012" />
+      <card id="7007" />
+      <card id="5041" />
+      <card id="5041" />
+      <card id="5130" />
+      <card id="5096" />
+      <card id="2151" />
+      <card id="5130" mastery_level="2" />
+      <card id="5096" mastery_level="3" />
+      <card id="2151" mastery_level="4" />
+      <card id="5130" mastery_level="5" />
+      <card id="5063" mastery_level="6" />
+      <card id="5257" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>kraken_portrait</commander>
+        <enemy>1</enemy>
+        <text>Skishhhhh... protect Master Kensho!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6527</id>
+    <name>Samael's Assistance</name>
+    <energy>18</energy>
+    <desc>An enemy is about to sneak attack Elyse. Right when you're about to warn her, a winged ally comes to her rescue.</desc>
+    <commander id="355" />
+    <deck>
+      <card id="8097" />
+      <card id="5012" />
+      <card id="6012" />
+      <card id="7007" />
+      <card id="5010" />
+      <card id="5010" />
+      <card id="2163" />
+      <card id="5062" />
+      <card id="2076" />
+      <card id="2163" mastery_level="2" />
+      <card id="5062" mastery_level="3" />
+      <card id="2076" mastery_level="4" />
+      <card id="2163" mastery_level="5" />
+      <card id="5097" mastery_level="6" />
+      <card id="5244" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, and Elyse? I did not expect to see you here again.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 26 Node 2 -->
+  <mission>
+    <id>6528</id>
+    <name>Request for Dyrnwyn</name>
+    <energy>18</energy>
+    <desc>Elyse wastes no time in explaining your purpose in being here. Although the request is a large one, time is limited with the Titans gaining power.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8001" />
+      <card id="7007" />
+      <card id="5012" />
+      <card id="2124" />
+      <card id="2124" />
+      <card id="2141" />
+      <card id="2141" />
+      <card id="5062" />
+      <card id="2079" />
+      <card id="5062" mastery_level="2" />
+      <card id="2079" mastery_level="3" />
+      <card id="2141" mastery_level="4" />
+      <card id="2124" mastery_level="5" />
+      <card id="5187" mastery_level="6" />
+      <card id="5106" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Samael, I know this is a big request, but... we need to borrow your sword, Dyrnwyn.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>The adventurer is the one who returned it to me, so I will not refuse. However...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6529</id>
+    <name>Samael's Purpose</name>
+    <energy>18</energy>
+    <desc>Taking away Dyrnwyn would reduce Samael's own strength. He has come to Gladius Scriptorium with a very specific purpose.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8003" />
+      <card id="7007" />
+      <card id="5012" />
+      <card id="2148" />
+      <card id="2148" />
+      <card id="5096" />
+      <card id="5096" />
+      <card id="5127" />
+      <card id="5011" />
+      <card id="5127" mastery_level="2" />
+      <card id="5011" mastery_level="3" />
+      <card id="5096" mastery_level="4" />
+      <card id="2148" mastery_level="5" />
+      <card id="5189" mastery_level="6" />
+      <card id="5154" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I am here to stop Kensho. He and his Aether minions plan to take over Skyhaven.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I must deal with this first before I hand over my sword.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6530</id>
+    <name>Saving Skyhaven</name>
+    <energy>18</energy>
+    <desc>Elyse is surprised at Samael's reasoning, but hardly adverse. Teaming up to get rid of the Aether monsters beneath Skyhaven could only benefit everyone.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8038" />
+      <card id="7007" />
+      <card id="5012" />
+      <card id="2105" />
+      <card id="2105" />
+      <card id="2045" />
+      <card id="2045" />
+      <card id="2163" />
+      <card id="1035" />
+      <card id="2163" mastery_level="2" />
+      <card id="1035" mastery_level="3" />
+      <card id="2045" mastery_level="4" />
+      <card id="2105" mastery_level="5" />
+      <card id="5267" mastery_level="6" />
+      <card id="5198" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Then we're here to help you, too. It would be a disaster if Kensho succeeds.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6531</id>
+    <name>Aether Fight</name>
+    <energy>18</energy>
+    <desc>The group presses on. More Aether creatures block your path. Despite once calling himself proud to be Aether, Samael doesn't hesitate to cut them down.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="8039" />
+      <card id="7007" />
+      <card id="5012" />
+      <card id="5073" />
+      <card id="5073" />
+      <card id="5024" />
+      <card id="5024" />
+      <card id="2163" />
+      <card id="2151" />
+      <card id="2163" mastery_level="2" />
+      <card id="2151" mastery_level="3" />
+      <card id="5024" mastery_level="4" />
+      <card id="5073" mastery_level="5" />
+      <card id="5268" mastery_level="6" />
+      <card id="5199" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6532</id>
+    <name>Samael's Choice</name>
+    <energy>18</energy>
+    <desc>Elyse notices Samael's change. The Samael with you now is very different than the one who pursued power at The Void.</desc>
+    <commander id="243" />
+    <deck>
+      <card id="8097" />
+      <card id="7007" />
+      <card id="5012" />
+      <card id="5107" />
+      <card id="5107" />
+      <card id="5025" />
+      <card id="5025" />
+      <card id="2124" />
+      <card id="5149" />
+      <card id="2124" mastery_level="2" />
+      <card id="5149" mastery_level="3" />
+      <card id="5025" mastery_level="4" />
+      <card id="5107" mastery_level="5" />
+      <card id="5162" mastery_level="6" />
+      <card id="5105" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Not that I'm complaining, but why don't you support Solaron, Samael?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6533</id>
+    <name>Samael's Heart</name>
+    <energy>18</energy>
+    <desc>Samael has very high standards for others, but also for himself. After nearly being taken over by The Void, he has since re-evaluated his ideals.</desc>
+    <commander id="263" />
+    <deck>
+      <card id="8001" />
+      <card id="7007" />
+      <card id="5012" />
+      <card id="5152" />
+      <card id="5152" />
+      <card id="5010" />
+      <card id="5010" />
+      <card id="5096" />
+      <card id="2076" />
+      <card id="5096" mastery_level="2" />
+      <card id="2076" mastery_level="3" />
+      <card id="5010" mastery_level="4" />
+      <card id="5152" mastery_level="5" />
+      <card id="5242" mastery_level="6" />
+      <card id="5104" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I've already seen where that path leads... I will not accept his methods.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>There are better ways to show Aether's strength than mind control.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 26 Boss Node -->
+  <!-- Event 26 Node 3 -->
+  <!-- Event 26 Node 4 -->
 </root>
 
