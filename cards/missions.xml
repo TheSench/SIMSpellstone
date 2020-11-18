@@ -735,7 +735,7 @@
       <card mastery_level="3" id="1302" />
       <card mastery_level="3" id="1303" />
       <card mastery_level="3" id="1305" />
-      <card mastery_level="3" id="1313" />
+      <card mastery_level="3" id="8216" />
     </deck>
   </mission>
   <mission>
@@ -764,7 +764,7 @@
       <card mastery_level="3" id="1302" />
       <card mastery_level="3" id="1303" />
       <card mastery_level="3" id="1305" />
-      <card mastery_level="3" id="1313" />
+      <card mastery_level="3" id="8216" />
     </deck>
   </mission>
   <mission>
@@ -792,9 +792,9 @@
       <card mastery_level="2" id="1001" level="2" />
       <card mastery_level="2" id="1601" />
       <card mastery_level="3" id="1006" />
-      <card mastery_level="3" id="1615" />
-      <card mastery_level="3" id="1014" />
-      <card mastery_level="3" id="1011" />
+      <card mastery_level="3" id="8230" />
+      <card mastery_level="3" id="8204" />
+      <card mastery_level="3" id="8202" />
     </deck>
   </mission>
   <mission>
@@ -826,9 +826,9 @@
       <card mastery_level="2" id="1600" level="3" />
       <card mastery_level="2" id="1001" level="2" />
       <card mastery_level="3" id="1006" />
-      <card mastery_level="3" id="1014" />
+      <card mastery_level="3" id="8204" />
       <card mastery_level="3" id="1619" />
-      <card mastery_level="3" id="1011" />
+      <card mastery_level="3" id="8202" />
     </deck>
   </mission>
   <mission>
@@ -915,8 +915,8 @@
       <card mastery_level="2" id="1302" />
       <card mastery_level="2" id="1303" />
       <card mastery_level="2" id="1305" />
-      <card mastery_level="3" id="1314" />
-      <card mastery_level="3" id="1314" />
+      <card mastery_level="3" id="8217" />
+      <card mastery_level="3" id="8217" />
     </deck>
   </mission>
   <mission>
@@ -948,8 +948,8 @@
       <card mastery_level="2" id="1302" />
       <card mastery_level="2" id="1303" />
       <card mastery_level="2" id="1305" />
-      <card mastery_level="3" id="1319" />
-      <card mastery_level="3" id="1319" />
+      <card mastery_level="3" id="8221" />
+      <card mastery_level="3" id="8221" />
     </deck>
   </mission>
   <mission>
@@ -978,8 +978,8 @@
       <card mastery_level="2" id="1003" />
       <card mastery_level="2" id="1004" />
       <card mastery_level="2" id="1305" />
-      <card mastery_level="3" id="1313" />
-      <card mastery_level="3" id="1313" />
+      <card mastery_level="3" id="8216" />
+      <card mastery_level="3" id="8216" />
     </deck>
   </mission>
   <mission>
@@ -1008,8 +1008,8 @@
       <card mastery_level="2" id="1302" />
       <card mastery_level="2" id="1303" />
       <card mastery_level="2" id="1005" />
-      <card mastery_level="3" id="1015" />
-      <card mastery_level="3" id="1015" />
+      <card mastery_level="3" id="8205" />
+      <card mastery_level="3" id="8205" />
     </deck>
   </mission>
   <mission>
@@ -1033,8 +1033,8 @@
       <card id="1305" />
       <card mastery_level="2" id="1305" />
       <card mastery_level="2" id="1303" />
-      <card mastery_level="2" id="1314" />
-      <card mastery_level="3" id="1318" />
+      <card mastery_level="2" id="8217" />
+      <card mastery_level="3" id="8220" />
     </deck>
   </mission>
   <mission>
@@ -1053,8 +1053,8 @@
       <card id="1305" />
       <card mastery_level="2" id="1305" />
       <card mastery_level="2" id="1303" />
-      <card mastery_level="2" id="1314" />
-      <card mastery_level="3" id="1318" />
+      <card mastery_level="2" id="8217" />
+      <card mastery_level="3" id="8220" />
     </deck>
   </mission>
   <mission>
@@ -1079,8 +1079,8 @@
       <card id="1305" />
       <card mastery_level="2" id="1305" />
       <card mastery_level="2" id="1303" />
-      <card mastery_level="2" id="1317" />
-      <card mastery_level="3" id="1318" />
+      <card mastery_level="2" id="8219" />
+      <card mastery_level="3" id="8220" />
     </deck>
   </mission>
   <mission>
@@ -1106,9 +1106,9 @@
       <card id="1302" level="2" />
       <card id="1305" />
       <card id="1303" />
-      <card mastery_level="2" id="1317" />
-      <card mastery_level="2" id="1311" />
-      <card mastery_level="3" id="1311" />
+      <card mastery_level="2" id="8219" />
+      <card mastery_level="2" id="8214" />
+      <card mastery_level="3" id="8214" />
     </deck>
   </mission>
   <mission>
@@ -1133,9 +1133,9 @@
       <card id="1603" level="2" />
       <card id="1606" />
       <card id="1606" />
-      <card mastery_level="2" id="1615" />
-      <!-- <card mastery_level='2' id='1014' />
-			<card mastery_level='3' id='1012' /> -->
+      <card mastery_level="2" id="8230" />
+      <!-- <card mastery_level='2' id='8204' />
+			<card mastery_level='3' id='8203' /> -->
     </deck>
   </mission>
   <mission>
@@ -1164,9 +1164,9 @@
       <card id="1606" />
       <card id="1607" />
       <card id="1607" />
-      <card mastery_level="2" id="1012" />
+      <card mastery_level="2" id="8203" />
       <!-- <card mastery_level='2' id='1619' />
-			<card mastery_level='3' id='1019' />-->
+			<card mastery_level='3' id='8208' />-->
     </deck>
   </mission>
   <mission>
@@ -1191,7 +1191,7 @@
       <card id="1607" />
       <card id="1002" />
       <!-- <card mastery_level='2' id='1606' level='2' />
-			<card mastery_level='3' id='1011' />-->
+			<card mastery_level='3' id='8202' />-->
     </deck>
   </mission>
   <mission>
@@ -1229,8 +1229,8 @@
       <card id="1607" />
       <card id="1607" />
       <card id="1607" />
-      <!-- <card mastery_level='2' id='1015' />
-			<card mastery_level='3' id='1616' /> -->
+      <!-- <card mastery_level='2' id='8205' />
+			<card mastery_level='3' id='8231' /> -->
     </deck>
   </mission>
   <mission>
@@ -1255,7 +1255,7 @@
       <card id="1002" level="2" />
       <card id="1002" level="2" />
       <card id="1302" />
-      <card id="1311" />
+      <card id="8214" />
     </deck>
   </mission>
   <mission>
@@ -1274,7 +1274,7 @@
       <card id="1002" level="2" />
       <card id="1002" level="2" />
       <card id="1302" />
-      <card id="1311" />
+      <card id="8214" />
     </deck>
   </mission>
   <mission>
@@ -1312,8 +1312,8 @@
       <card id="1307" level="2" />
       <card id="1303" />
       <card id="1303" level="2" />
-      <card id="1615" />
-      <card id="1615" />
+      <card id="8230" />
+      <card id="8230" />
     </deck>
   </mission>
   <mission>
@@ -1349,8 +1349,8 @@
       <card id="1303" level="2" />
       <card id="1305" />
       <card id="1305" />
-      <card id="1311" />
-      <card id="1314" />
+      <card id="8214" />
+      <card id="8217" />
     </deck>
   </mission>
   <!-- END Elaria Missions -->
@@ -1384,8 +1384,8 @@
       <card id="1602" />
       <card id="1602" />
       <card id="1000" level="2" />
-      <card id="1015" />
-      <card id="1615" />
+      <card id="8205" />
+      <card id="8230" />
     </deck>
   </mission>
   <mission>
@@ -1417,8 +1417,8 @@
       <card id="1601" level="2" />
       <card id="1601" level="2" />
       <card id="1604" level="3" />
-      <card id="1618" />
-      <card id="1613" />
+      <card id="8233" />
+      <card id="8228" />
     </deck>
   </mission>
   <mission>
@@ -1436,8 +1436,8 @@
       <card id="1601" level="2" />
       <card id="1601" level="2" />
       <card id="1604" level="3" />
-      <card id="1618" />
-      <card id="1613" />
+      <card id="8233" />
+      <card id="8228" />
     </deck>
   </mission>
   <mission>
@@ -1465,8 +1465,8 @@
       <card id="1602" level="2" />
       <card id="1001" level="2" />
       <card id="1601" level="2" />
-      <card id="1615" />
-      <card id="1615" />
+      <card id="8230" />
+      <card id="8230" />
     </deck>
   </mission>
   <mission>
@@ -1501,7 +1501,7 @@
       <card id="1006" />
       <card id="1006" />
       <card id="1006" />
-      <card id="1018" />
+      <card id="8207" />
     </deck>
   </mission>
   <mission>
@@ -1520,7 +1520,7 @@
       <card id="1006" />
       <card id="11006" />
       <card id="11006" />
-      <card id="1018" />
+      <card id="8207" />
     </deck>
   </mission>
   <mission>
@@ -1553,8 +1553,8 @@
       <card id="1006" />
       <card id="1006" />
       <card id="11006" />
-      <card id="1012" level="2" />
-      <card id="1012" />
+      <card id="8203" level="2" />
+      <card id="8203" />
     </deck>
   </mission>
   <mission>
@@ -1583,9 +1583,9 @@
       <card id="1003" level="2" />
       <card id="1006" />
       <card id="1006" />
-      <card id="1011" />
-      <card id="1018" />
-      <card id="1014" />
+      <card id="8202" />
+      <card id="8207" />
+      <card id="8204" />
     </deck>
   </mission>
   <mission>
@@ -1613,8 +1613,8 @@
       <card id="1605" />
       <card id="1607" />
       <card id="1607" />
-      <card id="1613" />
-      <card id="1613" />
+      <card id="8228" />
+      <card id="8228" />
     </deck>
   </mission>
   <mission>
@@ -1648,8 +1648,8 @@
       <card id="1605" />
       <card id="1606" />
       <card id="1606" />
-      <card id="1618" />
-      <card id="1618" />
+      <card id="8233" />
+      <card id="8233" />
     </deck>
   </mission>
   <mission>
@@ -1667,8 +1667,8 @@
       <card id="1606" />
       <card id="1606" />
       <card id="1606" />
-      <card id="1617" />
-      <card id="1617" />
+      <card id="8232" />
+      <card id="8232" />
     </deck>
   </mission>
   <mission>
@@ -1693,8 +1693,8 @@
       <card id="1606" />
       <card id="1607" />
       <card id="1607" />
-      <card id="1619" />
-      <card id="1617" />
+      <card id="8234" />
+      <card id="8232" />
     </deck>
   </mission>
   <mission>
@@ -1718,9 +1718,9 @@
       <card id="1006" />
       <card id="1007" level="2" />
       <card id="1007" level="2" />
-      <card id="1011" />
-      <card id="1011" />
-      <card id="1019" />
+      <card id="8202" />
+      <card id="8202" />
+      <card id="8208" />
     </deck>
   </mission>
   <mission>
@@ -1749,9 +1749,9 @@
       <card id="1006" />
       <card id="1007" level="2" />
       <card id="1007" level="2" />
-      <card id="1018" />
-      <card id="1017" />
-      <card id="1017" />
+      <card id="8207" />
+      <card id="8206" />
+      <card id="8206" />
     </deck>
   </mission>
   <mission>
@@ -1784,9 +1784,9 @@
       <card id="1005" />
       <card id="1006" />
       <card id="11006" />
-      <card id="1018" />
-      <card id="1017" />
-      <card id="1017" />
+      <card id="8207" />
+      <card id="8206" />
+      <card id="8206" />
     </deck>
   </mission>
   <mission>
@@ -1818,9 +1818,9 @@
       <card id="1003" level="2" />
       <card id="1005" />
       <card id="11006" />
-      <card id="1011" />
-      <card id="1017" />
-      <card id="1018" />
+      <card id="8202" />
+      <card id="8206" />
+      <card id="8207" />
       <card id="1027" />
     </deck>
   </mission>
@@ -1847,11 +1847,11 @@
       <card id="1006" />
       <card id="1004" />
       <card id="1005" />
-      <card id="1017" />
-      <card id="1018" />
-      <card id="1018" />
-      <card id="1019" />
-      <card id="1019" />
+      <card id="8206" />
+      <card id="8207" />
+      <card id="8207" />
+      <card id="8208" />
+      <card id="8208" />
     </deck>
   </mission>
   <mission>
@@ -1881,11 +1881,11 @@
       <card id="1605" />
       <card id="1003" />
       <card id="1004" level="2" />
-      <card id="1613" />
-      <card id="1015" />
-      <card id="1613" />
-      <card id="1010" />
-      <card id="1018" />
+      <card id="8228" />
+      <card id="8205" />
+      <card id="8228" />
+      <card id="8201" />
+      <card id="8207" />
     </deck>
   </mission>
   <mission>
@@ -1901,11 +1901,11 @@
       <card id="1605" level="2" />
       <card id="1003" level="2" />
       <card id="1004" />
-      <card id="1015" />
-      <card id="1613" />
-      <card id="1613" />
-      <card id="1010" />
-      <card id="1018" />
+      <card id="8205" />
+      <card id="8228" />
+      <card id="8228" />
+      <card id="8201" />
+      <card id="8207" />
     </deck>
   </mission>
   <mission>
@@ -1926,11 +1926,11 @@
       <card id="1605" />
       <card id="1003" />
       <card id="1004" />
-      <card id="1010" />
-      <card id="1015" />
-      <card id="1017" />
-      <card id="1017" />
-      <card id="1613" />
+      <card id="8201" />
+      <card id="8205" />
+      <card id="8206" />
+      <card id="8206" />
+      <card id="8228" />
       <card id="1625" />
     </deck>
   </mission>
@@ -1959,12 +1959,12 @@
       <card id="1602" />
       <card id="1605" />
       <card id="1004" />
-      <card id="1619" />
-      <card id="1015" />
-      <card id="1613" />
-      <card id="1010" />
-      <card id="1018" />
-      <card id="1018" />
+      <card id="8234" />
+      <card id="8205" />
+      <card id="8228" />
+      <card id="8201" />
+      <card id="8207" />
+      <card id="8207" />
     </deck>
   </mission>
   <mission>
@@ -1978,12 +1978,12 @@
       <card id="1602" />
       <card id="1304" />
       <card id="1004" />
-      <card id="1313" />
-      <card id="1314" level="2" />
-      <card id="1314" level="2" />
-      <card id="1613" />
-      <card id="1010" />
-      <card id="1018" />
+      <card id="8216" />
+      <card id="8217" level="2" />
+      <card id="8217" level="2" />
+      <card id="8228" />
+      <card id="8201" />
+      <card id="8207" />
     </deck>
   </mission>
   <mission>
@@ -2012,11 +2012,11 @@
       <card id="1602" />
       <card id="1304" />
       <card id="1304" />
-      <card id="1313" />
-      <card id="1314" />
-      <card id="1613" />
-      <card id="1010" />
-      <card id="1018" />
+      <card id="8216" />
+      <card id="8217" />
+      <card id="8228" />
+      <card id="8201" />
+      <card id="8207" />
       <card id="1629" />
     </deck>
   </mission>
@@ -2043,10 +2043,10 @@
       <card id="1303" level="2" />
       <card id="1304" level="2" />
       <card id="1306" level="2" />
-      <card id="1311" level="2" />
-      <card id="1311" level="2" />
-      <card id="1317" level="2" />
-      <card id="1314" />
+      <card id="8214" level="2" />
+      <card id="8214" level="2" />
+      <card id="8219" level="2" />
+      <card id="8217" />
       <card id="1329" />
       <card id="1326" />
     </deck>
@@ -2084,10 +2084,10 @@
       <card id="1306" />
       <card id="1306" />
       <card id="1306" />
-      <card id="1311" />
-      <card id="1313" />
-      <card id="1314" />
-      <card id="1314" />
+      <card id="8214" />
+      <card id="8216" />
+      <card id="8217" />
+      <card id="8217" />
       <card id="1330" />
     </deck>
   </mission>
@@ -2103,10 +2103,10 @@
       <card id="1306" />
       <card id="1306" />
       <card id="1306" />
-      <card id="1311" />
-      <card id="1311" />
-      <card id="1313" />
-      <card id="1314" />
+      <card id="8214" />
+      <card id="8214" />
+      <card id="8216" />
+      <card id="8217" />
       <card id="1328" />
     </deck>
   </mission>
@@ -2132,10 +2132,10 @@
       <card id="1306" />
       <card id="1306" />
       <card id="1306" />
-      <card id="1311" />
-      <card id="1311" />
-      <card id="1314" />
-      <card id="1317" level="2" />
+      <card id="8214" />
+      <card id="8214" />
+      <card id="8217" />
+      <card id="8219" level="2" />
       <card id="1330" />
     </deck>
   </mission>
@@ -2165,10 +2165,10 @@
       <card id="1301" />
       <card id="1305" />
       <card id="1305" />
-      <card id="1317" level="2" />
-      <card id="1317" level="2" />
-      <card id="1318" />
-      <card id="1318" />
+      <card id="8219" level="2" />
+      <card id="8219" level="2" />
+      <card id="8220" />
+      <card id="8220" />
       <card id="1326" />
       <card id="1330" />
     </deck>
@@ -2194,10 +2194,10 @@
       <card id="1303" />
       <card id="1306" />
       <card id="1305" />
-      <card id="1317" />
-      <card id="1318" />
-      <card id="1319" />
-      <card id="1319" />
+      <card id="8219" />
+      <card id="8220" />
+      <card id="8221" />
+      <card id="8221" />
       <card id="1327" />
       <card id="1328" />
     </deck>
@@ -2227,11 +2227,11 @@
       <card id="1306" />
       <card id="1306" />
       <card id="1304" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="1315" />
-      <card id="1317" />
-      <card id="1318" />
+      <card id="8217" />
+      <card id="8217" />
+      <card id="8218" />
+      <card id="8219" />
+      <card id="8220" />
       <card id="1325" />
       <card id="1328" />
     </deck>
@@ -2246,11 +2246,11 @@
       <card id="1306" />
       <card id="1306" />
       <card id="1304" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="1315" />
-      <card id="1317" />
-      <card id="1318" />
+      <card id="8217" />
+      <card id="8217" />
+      <card id="8218" />
+      <card id="8219" />
+      <card id="8220" />
       <card id="1325" />
       <card id="1328" />
     </deck>
@@ -2280,10 +2280,10 @@
       <card id="1302" />
       <card id="1301" />
       <card id="1303" />
-      <card id="1313" />
-      <card id="1313" />
-      <card id="1315" />
-      <card id="1318" />
+      <card id="8216" />
+      <card id="8216" />
+      <card id="8218" />
+      <card id="8220" />
       <card id="1330" />
       <card id="1325" />
       <card id="1326" />
@@ -2310,11 +2310,11 @@
       <card id="1302" />
       <card id="1306" />
       <card id="1305" />
-      <card id="1315" />
-      <card id="1315" />
-      <card id="1318" />
-      <card id="1319" />
-      <card id="1319" />
+      <card id="8218" />
+      <card id="8218" />
+      <card id="8220" />
+      <card id="8221" />
+      <card id="8221" />
       <card id="1325" />
       <card id="1328" />
     </deck>
@@ -2345,11 +2345,11 @@
       <card id="1302" />
       <card id="1306" />
       <card id="1305" />
-      <card id="1315" />
-      <card id="1315" />
-      <card id="1318" />
-      <card id="1319" />
-      <card id="1319" />
+      <card id="8218" />
+      <card id="8218" />
+      <card id="8220" />
+      <card id="8221" />
+      <card id="8221" />
       <card id="1325" />
       <card id="1328" />
     </deck>
@@ -2374,11 +2374,11 @@
       <card id="1306" />
       <card id="1303" />
       <card id="1304" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="1318" />
-      <card id="1319" />
-      <card id="1315" />
+      <card id="8217" />
+      <card id="8217" />
+      <card id="8220" />
+      <card id="8221" />
+      <card id="8218" />
       <card id="1328" />
       <card id="1326" />
     </deck>
@@ -2442,12 +2442,12 @@
     <deck>
       <card id="1302" />
       <card id="1303" />
-      <card id="1315" />
-      <card id="1317" />
-      <card id="1317" />
-      <card id="1318" />
-      <card id="1319" />
-      <card id="1319" />
+      <card id="8218" />
+      <card id="8219" />
+      <card id="8219" />
+      <card id="8220" />
+      <card id="8221" />
+      <card id="8221" />
       <card id="1327" />
       <card id="1326" />
     </deck>
@@ -2471,12 +2471,12 @@
     <deck>
       <card id="1307" />
       <card id="1307" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="1318" />
-      <card id="1318" />
-      <card id="1314" />
-      <card id="1314" />
+      <card id="8217" />
+      <card id="8217" />
+      <card id="8220" />
+      <card id="8220" />
+      <card id="8217" />
+      <card id="8217" />
       <card id="1325" />
       <card id="1327" />
     </deck>
@@ -2490,12 +2490,12 @@
     <deck>
       <card id="1305" />
       <card id="1307" />
-      <card id="1312" />
-      <card id="1312" />
-      <card id="1314" />
-      <card id="1315" />
-      <card id="1319" />
-      <card id="1319" />
+      <card id="8215" />
+      <card id="8215" />
+      <card id="8217" />
+      <card id="8218" />
+      <card id="8221" />
+      <card id="8221" />
       <card id="1325" />
       <card id="1328" />
     </deck>
@@ -2527,12 +2527,12 @@
     </speech>
     <deck>
       <card id="1302" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="1315" />
-      <card id="1318" />
-      <card id="1318" />
-      <card id="1319" />
+      <card id="8217" />
+      <card id="8217" />
+      <card id="8218" />
+      <card id="8220" />
+      <card id="8220" />
+      <card id="8221" />
       <card id="1327" />
       <card id="1326" />
       <card id="1326" />
@@ -2563,13 +2563,13 @@
       </line>
     </speech>
     <deck>
-      <card id="1311" />
-      <card id="1312" />
-      <card id="1312" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="1315" />
-      <card id="1315" />
+      <card id="8214" />
+      <card id="8215" />
+      <card id="8215" />
+      <card id="8217" />
+      <card id="8217" />
+      <card id="8218" />
+      <card id="8218" />
       <card id="1325" />
       <card id="1330" />
       <card id="1330" />
@@ -2596,13 +2596,13 @@
       </line>
     </speech>
     <deck>
-      <card id="1313" />
-      <card id="1313" />
-      <card id="1314" />
-      <card id="1315" />
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
+      <card id="8216" />
+      <card id="8216" />
+      <card id="8217" />
+      <card id="8218" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
       <card id="1326" />
       <card id="1327" />
       <card id="1329" />
@@ -2615,13 +2615,13 @@
     <commander id="211" />
     <desc>As the Chaos swarm, you cut through their ranks and follow Aria as she seeks out her goal.</desc>
     <deck>
-      <card id="1311" />
-      <card id="1311" />
-      <card id="1313" />
-      <card id="1313" />
-      <card id="1317" />
-      <card id="1319" />
-      <card id="1319" />
+      <card id="8214" />
+      <card id="8214" />
+      <card id="8216" />
+      <card id="8216" />
+      <card id="8219" />
+      <card id="8221" />
+      <card id="8221" />
       <card id="1326" />
       <card id="1325" />
       <card id="1326" />
@@ -2648,16 +2648,16 @@
       </line>
     </speech>
     <deck>
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1319" />
-      <card mastery_level="2" id="1319" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8221" />
+      <card mastery_level="2" id="8221" />
     </deck>
   </mission>
   <mission>
@@ -2678,12 +2678,12 @@
       </line>
     </speech>
     <deck>
-      <card id="1319" />
-      <card id="1319" />
-      <card id="1011" />
-      <card id="1018" />
-      <card id="1616" />
-      <card id="1613" />
+      <card id="8221" />
+      <card id="8221" />
+      <card id="8202" />
+      <card id="8207" />
+      <card id="8231" />
+      <card id="8228" />
       <card id="1329" level="5" />
       <card id="1329" level="5" />
       <card id="1628" />
@@ -2709,12 +2709,12 @@
     </speech>
     <deck>
       <card id="1306" />
-      <card id="1314" />
-      <card id="1017" />
-      <card id="1010" />
-      <card id="1615" />
-      <card id="1618" />
-      <card id="6007" />
+      <card id="8217" />
+      <card id="8206" />
+      <card id="8201" />
+      <card id="8230" />
+      <card id="8233" />
+      <card id="8223" />
       <card id="1328" />
       <card id="1026" />
       <card id="1628" />
@@ -2728,11 +2728,11 @@
     <veffect>1</veffect>
     <desc>The second wave crashes down around you. You've survived the initial clash, but they just keep coming.</desc>
     <deck>
-      <card id="1010" />
-      <card id="1314" />
-      <card id="1318" />
-      <card id="6006" />
-      <card id="6006" />
+      <card id="8201" />
+      <card id="8217" />
+      <card id="8220" />
+      <card id="8222" />
+      <card id="8222" />
       <card id="1327" />
       <card id="1629" />
       <card id="1628" />
@@ -2768,12 +2768,12 @@
       </line>
     </speech>
     <deck>
-      <card id="1312" />
-      <card id="1311" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="1312" />
-      <card id="1312" />
+      <card id="8215" />
+      <card id="8214" />
+      <card id="8217" />
+      <card id="8217" />
+      <card id="8215" />
+      <card id="8215" />
       <card id="1326" />
       <card id="1327" />
       <card id="1327" />
@@ -2803,11 +2803,11 @@
       </line>
     </speech>
     <deck>
-      <card id="1011" />
-      <card id="1011" />
-      <card id="1313" />
-      <card id="1314" />
-      <card id="1314" />
+      <card id="8202" />
+      <card id="8202" />
+      <card id="8216" />
+      <card id="8217" />
+      <card id="8217" />
       <card id="1329" level="3" />
       <card id="1628" />
       <card id="1330" />
@@ -2822,11 +2822,11 @@
     <commander id="212" />
     <desc>The caverns present many enemies that try to bar your way. As the tunnels twist and turn you find yourself crossing an underground chasm.</desc>
     <deck>
-      <card id="1311" />
-      <card id="1011" />
-      <card id="1613" />
-      <card id="1613" />
-      <card id="1017" />
+      <card id="8214" />
+      <card id="8202" />
+      <card id="8228" />
+      <card id="8228" />
+      <card id="8206" />
       <card id="1026" />
       <card id="1328" />
       <card id="1328" />
@@ -2855,11 +2855,11 @@
       </line>
     </speech>
     <deck>
-      <card id="1613" />
-      <card id="1613" />
-      <card id="1613" />
-      <card id="1613" />
-      <card id="1017" />
+      <card id="8228" />
+      <card id="8228" />
+      <card id="8228" />
+      <card id="8228" />
+      <card id="8206" />
       <card id="1026" />
       <card id="1328" />
       <card id="1628" />
@@ -2892,10 +2892,10 @@
       </line>
     </speech>
     <deck>
-      <card id="1313" />
-      <card id="1015" />
-      <card id="1015" />
-      <card id="1619" />
+      <card id="8216" />
+      <card id="8205" />
+      <card id="8205" />
+      <card id="8234" />
       <card id="6004" />
       <card id="6005" />
       <card id="6005" />
@@ -2921,10 +2921,10 @@
       </line>
     </speech>
     <deck>
-      <card id="1012" />
-      <card id="1018" />
-      <card id="1317" level="3" />
-      <card id="1615" />
+      <card id="8203" />
+      <card id="8207" />
+      <card id="8219" level="3" />
+      <card id="8230" />
       <card id="1026" />
       <card id="1027" />
       <card id="1027" />
@@ -2950,10 +2950,10 @@
       </line>
     </speech>
     <deck>
-      <card id="1610" />
-      <card id="1610" />
-      <card id="1616" />
-      <card id="1614" />
+      <card id="8227" />
+      <card id="8227" />
+      <card id="8231" />
+      <card id="8229" />
       <card id="1625" />
       <card id="1625" />
       <card id="1626" />
@@ -2983,10 +2983,10 @@
       </line>
     </speech>
     <deck>
-      <card id="1610" />
-      <card id="1610" />
-      <card id="1617" />
-      <card id="1617" />
+      <card id="8227" />
+      <card id="8227" />
+      <card id="8232" />
+      <card id="8232" />
       <card id="1327" />
       <card id="1629" />
       <card id="1628" />
@@ -3022,11 +3022,11 @@
       </line>
     </speech>
     <deck>
-      <card id="1010" />
-      <card id="1012" />
-      <card id="1617" />
-      <card id="1619" />
-      <card id="1619" />
+      <card id="8201" />
+      <card id="8203" />
+      <card id="8232" />
+      <card id="8234" />
+      <card id="8234" />
       <card id="1029" />
       <card id="1029" />
       <card id="1629" />
@@ -3057,8 +3057,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1010" />
-      <card id="1312" />
+      <card id="8201" />
+      <card id="8215" />
       <card id="1030" />
       <card id="1030" />
       <card id="1327" />
@@ -3094,8 +3094,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1311" />
-      <card id="1315" />
+      <card id="8214" />
+      <card id="8218" />
       <card id="1326" />
       <card id="1326" />
       <card id="1629" />
@@ -3113,8 +3113,8 @@
     <commander id="220" />
     <desc>As you descend down the ridge, the tremors from earlier grow stronger. You seem to be nearing their source.</desc>
     <deck>
-      <card id="1311" />
-      <card id="1010" />
+      <card id="8214" />
+      <card id="8201" />
       <card id="1326" />
       <card id="1326" />
       <card id="1629" />
@@ -3154,8 +3154,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1311" />
-      <card id="1619" />
+      <card id="8214" />
+      <card id="8234" />
       <card id="1326" />
       <card id="1026" />
       <card id="1330" />
@@ -3191,8 +3191,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1318" />
-      <card id="1613" />
+      <card id="8220" />
+      <card id="8228" />
       <card id="1030" />
       <card id="1326" />
       <card id="1326" />
@@ -3224,8 +3224,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1311" />
-      <card id="1615" />
+      <card id="8214" />
+      <card id="8230" />
       <card id="1028" />
       <card id="1028" />
       <card id="1328" />
@@ -3261,8 +3261,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1018" />
-      <card id="1018" />
+      <card id="8207" />
+      <card id="8207" />
       <card id="1326" />
       <card id="1326" />
       <card id="1626" />
@@ -3286,8 +3286,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1311" />
-      <card id="1311" />
+      <card id="8214" />
+      <card id="8214" />
       <card id="1327" />
       <card id="1326" />
       <card id="1326" />
@@ -3324,8 +3324,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1014" />
-      <card id="1019" />
+      <card id="8204" />
+      <card id="8208" />
       <card id="1026" />
       <card id="1026" />
       <card id="1027" />
@@ -3343,8 +3343,8 @@
     <commander id="221" />
     <desc>The Aether pull back only to collapse upon you a second time, pushing their attack harder.</desc>
     <deck>
-      <card id="1010" />
-      <card id="1011" />
+      <card id="8201" />
+      <card id="8202" />
       <card id="1026" />
       <card id="1027" />
       <card id="1027" />
@@ -3372,8 +3372,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1017" />
-      <card id="1017" />
+      <card id="8206" />
+      <card id="8206" />
       <card id="1025" />
       <card id="1025" />
       <card id="1025" />
@@ -3413,8 +3413,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1019" />
-      <card id="1019" />
+      <card id="8208" />
+      <card id="8208" />
       <card id="1030" />
       <card id="1025" />
       <card id="1025" />
@@ -3438,8 +3438,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1011" />
-      <card id="1017" />
+      <card id="8202" />
+      <card id="8206" />
       <card id="1025" />
       <card id="1025" />
       <card id="1025" />
@@ -3468,8 +3468,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1017" />
-      <card id="1017" />
+      <card id="8206" />
+      <card id="8206" />
       <card id="1025" />
       <card id="1027" />
       <card id="1027" />
@@ -3506,8 +3506,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1011" />
-      <card id="1019" />
+      <card id="8202" />
+      <card id="8208" />
       <card id="1025" />
       <card id="1026" />
       <card id="1026" />
@@ -3549,8 +3549,8 @@
       </line>
     </speech>
     <deck>
-      <card id="1315" level="2" />
-      <card id="1012" level="2" />
+      <card id="8218" level="2" />
+      <card id="8203" level="2" />
       <card id="5005" />
       <card id="1628" />
       <card id="1629" />
@@ -3570,10 +3570,10 @@
     <desc>Groc has received a distress letter from the Emperor of Dawnglow Swamp. He is worried about the health of his citizens. Groc and Ursurio head out to the swamps to investigate the issue.</desc>
     <commander id="280" />
     <deck>
-      <card id="1616" name="Werewarg" />
-      <card id="6006" name="Chaos Golem" />
-      <card id="1617" name="Water Elemental" />
-      <card id="1617" />
+      <card id="8231" name="Werewarg" />
+      <card id="8222" name="Chaos Golem" />
+      <card id="8232" name="Water Conjuration" />
+      <card id="8232" />
       <card id="7038" name="Sol King" />
       <card id="6029" name="Spinehead Stalker" />
       <card id="7034" name="Spore Elk" />
@@ -3610,10 +3610,10 @@
     <desc>Groc and Ursurio start their journey to Dawnglow. Groc notices a sickness in the area as soon as they arrive.</desc>
     <commander id="281" />
     <deck>
-      <card id="7006" name="Treant Sapling" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1619" name="Earth Elemental" />
-      <card id="1015" name="Windfrog" />
+      <card id="8235" name="Treant Sapling" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8234" name="Earth Elemental" />
+      <card id="8205" name="Windfrog" />
       <card id="5030" name="Loxphas Mage" />
       <card id="2002" name="Lantern Guardian" />
       <card id="7015" name="Bog Aberration" />
@@ -3633,10 +3633,10 @@
     <desc>Dawnglow is in sight. As Groc and Ursurio travel, they notice how much harder it is to progress through the swamp water.</desc>
     <commander id="247" />
     <deck>
-      <card id="5012" name="Static Drake" />
-      <card id="5012" />
-      <card id="1010" name="Lightning Elemental" />
-      <card id="1010" />
+      <card id="8211" name="Static Drake" />
+      <card id="8211" />
+      <card id="8201" name="Lightning Elemental" />
+      <card id="8201" />
       <card id="6004" name="Branding Construct" />
       <card id="2008" name="Shadow of Ash" />
       <card id="7016" name="Webfist Shaman" />
@@ -3657,8 +3657,8 @@
     <commander id="282" />
     <deck>
       <card id="7012" name="Life Drake" />
-      <card id="7017" name="Coral Elemental" />
-      <card id="6006" name="Chaos Golem" />
+      <card id="8238" name="Coral Elemental" />
+      <card id="8222" name="Chaos Golem" />
       <card id="6029" name="Spinehead Stalker" />
       <card id="7020" name="Trapper Frog" />
       <card id="7020" name="Trapper Frog" />
@@ -3696,10 +3696,10 @@
     <desc>The Emperor has given Groc and Ursurio their mission. They head out from Dawnglow to investigate the surrounding swamps.</desc>
     <commander id="280" />
     <deck>
-      <card id="1618" name="Frog Scout" />
-      <card id="1617" name="Water Elemental" />
-      <card id="5017" name="Steam Tempest" />
-      <card id="5017" />
+      <card id="8233" name="Frog Scout" />
+      <card id="8232" name="Water Conjuration" />
+      <card id="8212" name="Steam Tempest" />
+      <card id="8212" />
       <card id="6010" name="Cliffpass Defender" />
       <card id="5035" name="Vapor Guard" />
       <card id="5035" />
@@ -3719,10 +3719,10 @@
     <desc>The air is thicker than usual and the smell is noticeably more pungent. Even Ursurio is having a hard time traveling through the swamp.</desc>
     <commander id="281" />
     <deck>
-      <card id="6017" name="Tar Pit Stalker" />
-      <card id="1010" name="Lightning Elemental" />
-      <card id="1010" />
-      <card id="1619" name="Earth Elemental" />
+      <card id="8225" name="Tar Pit Stalker" />
+      <card id="8201" name="Lightning Elemental" />
+      <card id="8201" />
+      <card id="8234" name="Earth Elemental" />
       <card id="7015" name="Bog Aberration" />
       <card id="2021" name="Snowstep Ranger" />
       <card id="1630" name="Giant Squid" />
@@ -3742,9 +3742,9 @@
     <desc>The waters are getting darker and more pungent as they travel. The smell is reminiscent of The Void.</desc>
     <commander id="283" />
     <deck>
-      <card id="6017" name="Tar Pit Stalker" />
-      <card id="1011" name="Archive Keeper" />
-      <card id="1018" name="Armored Eagle" />
+      <card id="8225" name="Tar Pit Stalker" />
+      <card id="8202" name="Archive Keeper" />
+      <card id="8207" name="Armored Eagle" />
       <card id="2004" name="Lavatail Dragon" />
       <card id="5025" name="Steelskin Dragon" />
       <card id="5010" name="Concealed Dragon" />
@@ -3782,9 +3782,9 @@
     <desc>Ursurio's fur is starting to get matted with the slime that has developed in the swamp. For the first time, Groc notices a disgusted look on his face.</desc>
     <commander id="284" />
     <deck>
-      <card id="1613" name="Acidic Spider" />
-      <card id="1313" name="Lavafrog" />
-      <card id="1313" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8216" name="Lavafrog" />
+      <card id="8216" />
       <card id="6034" name="Bone Viper" />
       <card id="6034" />
       <card id="7011" name="Wolf Girl" />
@@ -3805,10 +3805,10 @@
     <desc>Groc is starting to slow down as they travel. Whatever is infecting the swamp appears to be strong enough to affect the massive stone leader.</desc>
     <commander id="247" />
     <deck>
-      <card id="6007" name="Goblin Crew" />
-      <card id="1615" name="Rune Panther" />
-      <card id="5022" name="Webfoot Raider" />
-      <card id="5022" />
+      <card id="8223" name="Goblin Crew" />
+      <card id="8230" name="Rune Panther" />
+      <card id="8213" name="Webfoot Raider" />
+      <card id="8213" />
       <card id="2012" name="Frogling Swarm" />
       <card id="1331" name="Fallen Soldiers" />
       <card id="6011" name="Bomb Spirit" />
@@ -3828,9 +3828,9 @@
     <desc>The creatures of the swamp are acting strange. They seem more rabid than usual. Whatever is infecting the swamp seems to be spreading fast.</desc>
     <commander id="282" />
     <deck>
-      <card id="7007" name="Water Serpent" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1615" name="Rune Panther" />
+      <card id="8236" name="Water Serpent" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8230" name="Rune Panther" />
       <card id="1028" name="Heroic Frog" />
       <card id="5015" name="Gravity Swell" />
       <card id="6015" name="Acidic Sludge" />
@@ -3853,7 +3853,7 @@
     <deck>
       <card id="7022" name="Beetle Tamer" />
       <card id="7022" />
-      <card id="1618" name="Frog Scout" />
+      <card id="8233" name="Frog Scout" />
       <card id="7016" name="Webfist Shaman" />
       <card id="2014" name="Tadpole Warmage" />
       <card id="1027" name="Griffin Knight" />
@@ -3886,8 +3886,8 @@
     <desc>Groc and Ursurio pick up their pace. With the toxins from the swamp wearing them down, they know they need to find its source quickly.</desc>
     <commander id="284" />
     <deck>
-      <card id="1613" name="Acidic Spider" />
-      <card id="7006" name="Treant Sapling" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8235" name="Treant Sapling" />
       <card id="2024" name="Dusk Noble" />
       <card id="2023" name="Grizzly Terror" />
       <card id="2019" name="Chalistomper" />
@@ -3909,9 +3909,9 @@
     <desc>Groc and Ursurio reach a pond with animal tracks around it. They don't appear to be from any known creatures in the area.</desc>
     <commander id="280" />
     <deck>
-      <card id="7006" name="Treant Sapling" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1617" name="Water Elemental" />
+      <card id="8235" name="Treant Sapling" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8232" name="Water Conjuration" />
       <card id="1027" name="Griffin Knight" />
       <card id="1027" />
       <card id="6015" name="Acidic Sludge" />
@@ -3944,9 +3944,9 @@
     <desc>Groc and Ursurio are able to find a trail of the unusual tracks. The trail is not fresh, but it may be getting them closer to the source of the infection.</desc>
     <commander id="281" />
     <deck>
-      <card id="6006" name="Chaos Golem" />
-      <card id="1313" name="Lavafrog" />
-      <card id="1613" name="Acidic Spider" />
+      <card id="8222" name="Chaos Golem" />
+      <card id="8216" name="Lavafrog" />
+      <card id="8228" name="Acidic Spider" />
       <card id="1631" name="Venom Dragon" />
       <card id="1629" name="Rock Titan" />
       <card id="1026" name="Glass Colossus" />
@@ -3967,8 +3967,8 @@
     <desc>The tracks are growing in number and have been made recently. The fresh tracks have a slight glow to them as they continue through the swamp.</desc>
     <commander id="247" />
     <deck>
-      <card id="1615" name="Rune Panther" />
-      <card id="6007" name="Goblin Crew" />
+      <card id="8230" name="Rune Panther" />
+      <card id="8223" name="Goblin Crew" />
       <card id="6004" name="Branding Construct" />
       <card id="2002" name="Lantern Guardian" />
       <card id="6011" name="Bomb Spirit" />
@@ -3990,8 +3990,8 @@
     <desc>Ursurio notices two sizes of prints. A set of large prints and many sets of small ones. Whatever this creature is, it may have a family with it.</desc>
     <commander id="284" />
     <deck>
-      <card id="1315" name="Nix Elemental" />
-      <card id="1613" name="Acidic Spider" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8228" name="Acidic Spider" />
       <card id="2020" name="Tidetaken Fighter" />
       <card id="2025" name="Blight Knight" />
       <card id="7034" name="Spore Elk" />
@@ -4021,8 +4021,8 @@
     <commander id="280" />
     <deck>
       <card id="6022" name="Illusion Caster" />
-      <card id="1318" name="Smelted Lava Slug" />
-      <card id="5017" name="Steam Tempest" />
+      <card id="8220" name="Smelted Lava Slug" />
+      <card id="8212" name="Steam Tempest" />
       <card id="1325" name="Chaos Storm" />
       <card id="1630" name="Giant Squid" />
       <card id="5020" name="Frost Frog" />
@@ -4043,8 +4043,8 @@
     <desc>Large purple fissures in the ground, similar to those found in The Void, now surround the area. The creatures appear to be linked to the infection in the swamp.</desc>
     <commander id="281" />
     <deck>
-      <card id="1015" name="Windfrog" />
-      <card id="5012" name="Static Drake" />
+      <card id="8205" name="Windfrog" />
+      <card id="8211" name="Static Drake" />
       <card id="1026" name="Glass Colossus" />
       <card id="5025" name="Steelskin Dragon" />
       <card id="1631" name="Venom Dragon" />
@@ -4066,8 +4066,8 @@
     <desc>Groc and Ursurio peer through the bushes to find a nest of tiny beasts up ahead. They appear to be creatures that have escaped from The Void. Before they can investigate, a creature lunges from the water!</desc>
     <commander id="282" />
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1312" name="Scythe Demon" />
+      <card id="8207" name="Armored Eagle" />
+      <card id="8215" name="Scythe Demon" />
       <card id="1332" name="Vampiric Emira" />
       <card id="5033" name="Lost Soul" />
       <card id="2020" name="Tidetaken Fighter" />
@@ -4089,7 +4089,7 @@
     <desc>Groc and Ursurio creep closer to the nest. Perhaps they can lure these creatures away peacefully?</desc>
     <commander id="285" />
     <deck>
-      <card id="1616" name="Werewarg" />
+      <card id="8231" name="Werewarg" />
       <card id="1032" name="Lunar Elemental" />
       <card id="2010" name="Silver Wind" />
       <card id="2025" name="Blight Knight" />
@@ -4124,8 +4124,8 @@
     <desc>The Void babies are startled and begin to screech! They are drawing a lot of attention to the nest...</desc>
     <commander id="247" />
     <deck>
-      <card id="5012" name="Static Drake" />
-      <card id="1615" name="Rune Panther" />
+      <card id="8211" name="Static Drake" />
+      <card id="8230" name="Rune Panther" />
       <card id="6025" name="Dragon Keeper" />
       <card id="2005" name="Sailing Drake" />
       <card id="2005" />
@@ -4147,7 +4147,7 @@
     <desc>Groc and Ursurio continue to hear rustling in the woods around them. Hungry creatures are coming after the sound of the young.</desc>
     <commander id="283" />
     <deck>
-      <card id="1614" name="Druid" />
+      <card id="8229" name="Druid" />
       <card id="2019" name="Chalistomper" />
       <card id="7004" name="Ice Golem" />
       <card id="1631" name="Venom Dragon" />
@@ -4170,8 +4170,8 @@
     <desc>The Void babies are now in a full panic with all the attention they have drawn. They are clawing at anything that comes near them!</desc>
     <commander id="285" />
     <deck>
-      <card id="1313" name="Lavafrog" />
-      <card id="1313" name="Lavafrog" />
+      <card id="8216" name="Lavafrog" />
+      <card id="8216" name="Lavafrog" />
       <card id="2012" name="Frogling Swarm" />
       <card id="1331" name="Fallen Soldiers" />
       <card id="2012" name="Frogling Swarm" />
@@ -4234,10 +4234,10 @@
     <desc>Groc and Ursurio come back to the airship covered in muck. Both look exhausted from their time in Dawnglow Swamp. Groc musters up the strength to report their findings.</desc>
     <commander id="298" />
     <deck>
-      <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8218" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8228" />
       <card id="2019" name="Chalistomper" />
       <card id="7020" name="Trapper Frog" />
       <card id="7034" name="Spore Elk" />
@@ -4273,10 +4273,10 @@
     <desc>Elyse can't stop thinking about the symptoms Groc reported earlier. She can't quite place why, but they seem familiar to her. Elyse grabs a book and begins to research.</desc>
     <commander id="299" />
     <deck>
-      <card id="1014" name="Cherub" />
-      <card id="1014" />
-      <card id="1014" />
-      <card id="1311" name="Molten Skeleton" />
+      <card id="8204" name="Cherub" />
+      <card id="8204" />
+      <card id="8204" />
+      <card id="8214" name="Molten Skeleton" />
       <card id="2025" name="Blight Knight" />
       <card id="2027" name="Halo Mage" />
       <card id="6004" name="Branding Construct" />
@@ -4295,10 +4295,10 @@
     <desc>Elyse has been in her room for days. As she steps out for food, Oda peers inside her room. He is taken aback with the amount of research hung on the walls and scattered around the floor. His eye catches something familiar...</desc>
     <commander id="300" />
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
-      <card id="5006" name="Arms Enforcer" />
-      <card id="5006" />
+      <card id="8207" name="Armored Eagle" />
+      <card id="8207" />
+      <card id="8209" name="Arms Enforcer" />
+      <card id="8209" />
       <card id="2032" name="Brimstone" />
       <card id="6021" name="Marsh Ogre" />
       <card id="6016" name="Skeletal Giant" />
@@ -4334,9 +4334,9 @@
     <desc>Oda tells Elyse what he knows about the Citadel. He is in disbelief that his Order may have already made its way to Arcantica.</desc>
     <commander id="298" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
-      <card id="5006" />
-      <card id="1318" name="Smelted Lava Slug" />
+      <card id="8209" name="Arms Enforcer" />
+      <card id="8209" />
+      <card id="8220" name="Smelted Lava Slug" />
       <card id="5035" name="Vapor Guard" />
       <card id="6044" name="Firewalker" />
       <card id="7005" name="Tsunamari" />
@@ -4356,10 +4356,10 @@
     <desc>Now that Oda has been able to provide more information about the nature of the Citadel, Elyse thinks she may be able to find its location. She is soon back to the books, and this time Oda is joining her.</desc>
     <commander id="299" />
     <deck>
-      <card id="6017" name="Tar Pit Stalker" />
-      <card id="6017" />
-      <card id="1012" name="Cloud Sylph" />
-      <card id="1615" name="Rune Panther" />
+      <card id="8225" name="Tar Pit Stalker" />
+      <card id="8225" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8230" name="Rune Panther" />
       <card id="2009" name="Sapling" />
       <card id="6046" name="Celerity" />
       <card id="2019" name="Chalistomper" />
@@ -4380,7 +4380,7 @@
     <deck>
       <card id="7012" name="Life Drake" />
       <card id="7012" />
-      <card id="6006" name="Chaos Golem" />
+      <card id="8222" name="Chaos Golem" />
       <card id="2003" name="Dragon Tamer" />
       <card id="5024" name="Cloudtop Dragon" />
       <card id="1325" name="Chaos Storm" />
@@ -4417,9 +4417,9 @@
     <desc>Elyse turns the ship towards the east coast. It's a few days untill they reach the other side of Arcantica. Oda spends his time in meditation. He ponders how his Order could have made it to Arcantica without him knowing.</desc>
     <commander id="300" />
     <deck>
-      <card id="1315" name="Nix Elemental" />
-      <card id="7006" name="Treant Sapling" />
-      <card id="7006" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8235" name="Treant Sapling" />
+      <card id="8235" />
       <card id="5033" name="Lost Soul" />
       <card id="1331" name="Fallen Soldiers" />
       <card id="1331" name="Fallen Soldiers" />
@@ -4439,9 +4439,9 @@
     <desc>Oda and Elyse make it to the coast. The rocky terrain stretches for miles. They spend hours sweeping the coast, until Oda spots something familiar.</desc>
     <commander id="301" />
     <deck>
-      <card id="1313" name="Lavafrog" />
-      <card id="1017" name="Judgment" />
-      <card id="1017" />
+      <card id="8216" name="Lavafrog" />
+      <card id="8206" name="Judgment" />
+      <card id="8206" />
       <card id="1028" name="Heroic Frog" />
       <card id="7011" name="Wolf Girl" />
       <card id="1627" name="Sage of Croaks" />
@@ -4478,8 +4478,8 @@
     <desc>Elyse sets the airship down by a safe spot right outside the Citadel. The path forward is rocky and dangerous. They will have to be careful as they traverse.</desc>
     <commander id="299" />
     <deck>
-      <card id="1010" name="Lightning Elemental" />
-      <card id="1313" name="Lavafrog" />
+      <card id="8201" name="Lightning Elemental" />
+      <card id="8216" name="Lavafrog" />
       <card id="6029" name="Spinehead Stalker" />
       <card id="2024" name="Dusk Noble" />
       <card id="1330" name="Devouring Locusts" />
@@ -4500,9 +4500,9 @@
     <desc>The area around the Citadel is wild. Outside of the Citadel the environment looks completely untouched. It's clear that whatever this Citadel holds, it is not meant to be found by others.</desc>
     <commander id="298" />
     <deck>
-      <card id="1012" name="Cloud Sylph" />
-      <card id="1012" />
-      <card id="1615" name="Rune Panther" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" />
+      <card id="8230" name="Rune Panther" />
       <card id="1030" name="Paladin" />
       <card id="7034" name="Spore Elk" />
       <card id="2031" name="Dryad" />
@@ -4522,8 +4522,8 @@
     <desc>Elyse and Oda make their way to the Citadel's front door. Elyse tries to open it, but it's locked. The door doesn't seem to have an obvious lock on it...</desc>
     <commander id="300" />
     <deck>
-      <card id="1015" name="Windfrog" />
-      <card id="1017" name="Judgment" />
+      <card id="8205" name="Windfrog" />
+      <card id="8206" name="Judgment" />
       <card id="1328" name="Poison Bullfrog" />
       <card id="1328" name="Poison Bullfrog" />
       <card id="1627" name="Sage of Croaks" />
@@ -4561,8 +4561,8 @@
     <desc>Oda stands directly in front of the door. He begins to perform a quick ritual, waving his hand and muttering words under his breath. The door makes a clicking noise and begins to slide open, with the heavy sound of rock against rock.</desc>
     <commander id="301" />
     <deck>
-      <card id="1019" name="Oracle" />
-      <card id="7007" name="Water Serpent" />
+      <card id="8208" name="Oracle" />
+      <card id="8236" name="Water Serpent" />
       <card id="7021" name="Shadow Elemental" />
       <card id="7045" name="Sakura" />
       <card id="5044" name="Telepathic Magi" />
@@ -4583,9 +4583,9 @@
     <desc>Oda and Elyse enter the Citadel. It's dark, only lit by natural light. There is a main entrance hall and giant doors in the back. A single monk can be seen sleeping in the center of the hall.</desc>
     <commander id="299" />
     <deck>
-      <card id="1617" name="Water Elemental" />
+      <card id="8232" name="Water Conjuration" />
       <card id="7012" name="Life Drake" />
-      <card id="1014" name="Cherub" />
+      <card id="8204" name="Cherub" />
       <card id="7024" name="Woolmane Dragon " />
       <card id="2001" name="Dunetooth Demon" />
       <card id="5016" name="Fowl Swarm" />
@@ -4605,8 +4605,8 @@
     <desc>The monk is awakened by their arrival. Startled, he sits up quickly and grabs his staff. Magic swirls around him...</desc>
     <commander id="302" />
     <deck>
-      <card id="1314" name="Skeletal Hound" />
-      <card id="1313" name="Lavafrog" />
+      <card id="8217" name="Skeletal Hound" />
+      <card id="8216" name="Lavafrog" />
       <card id="7038" name="Sol King" />
       <card id="7047" name="Shaman of the Wild" />
       <card id="2014" name="Tadpole Warmage" />
@@ -4634,8 +4634,8 @@
     <desc>The monk recognizes the beads around Oda's neck. They are common in their Order. His face turns red as he quickly lays down his staff, bowing in apology. Elyse can start to see a resemblence between the two.</desc>
     <commander id="298" />
     <deck>
-      <card id="5012" name="Static Drake" />
-      <card id="1019" name="Oracle" />
+      <card id="8211" name="Static Drake" />
+      <card id="8208" name="Oracle" />
       <card id="6034" name="Bone Viper" />
       <card id="7041" name="Feral Angel" />
       <card id="1327" name="Fallen Angel" />
@@ -4673,7 +4673,7 @@
     <desc>The monk looks surprised they know of the artifact. Even within the Order, it was a secret item.</desc>
     <commander id="301" />
     <deck>
-      <card id="1014" name="Cherub" />
+      <card id="8204" name="Cherub" />
       <card id="2027" name="Halo Mage" />
       <card id="2027" name="Halo Mage" />
       <card id="2025" name="Blight Knight" />
@@ -4695,8 +4695,8 @@
     <desc>The monk looks nervous. He is becoming suspicious as to the nature of the questions being asked. He keeps his staff firmly in hand.</desc>
     <commander id="301" />
     <deck>
-      <card id="1312" name="Scythe Demon" />
-      <card id="6007" name="Goblin Crew" />
+      <card id="8215" name="Scythe Demon" />
+      <card id="8223" name="Goblin Crew" />
       <card id="6034" name="Bone Viper" />
       <card id="2023" name="Grizzly Terror" />
       <card id="1628" name="Garganotos" />
@@ -4729,8 +4729,8 @@
     <desc>The monk is taken aback. He had no idea The Void has gotten so bad. The Order will not allow him to give the artifact to anyone who is not a Keeper... he looks at Oda and smiles.</desc>
     <commander id="299" />
     <deck>
-      <card id="6007" name="Goblin Crew" />
-      <card id="6007" />
+      <card id="8223" name="Goblin Crew" />
+      <card id="8223" />
       <card id="5046" name="Dawn" />
       <card id="1032" name="Lunar Elemental" />
       <card id="1331" name="Fallen Soldiers" />
@@ -4790,7 +4790,7 @@
     <desc>Oda agrees to become a Keeper for the artifact. The monk nods and begins to draw a circle around him. The circle begins to glow...</desc>
     <commander id="301" />
     <deck>
-      <card id="1613" name="Acidic Spider" />
+      <card id="8228" name="Acidic Spider" />
       <card id="1628" name="Garganotos" />
       <card id="6016" name="Skeletal Giant" />
       <card id="2001" name="Dunetooth Demon" />
@@ -4812,8 +4812,8 @@
     <desc>Oda stands in the center of the circle, ready for whatever beasts are about to appear. The edges of the circle begin to widen. Hands rise from the edges.</desc>
     <commander id="261" />
     <deck>
-      <card id="5022" name="Webfoot Raider" />
-      <card id="5022" />
+      <card id="8213" name="Webfoot Raider" />
+      <card id="8213" />
       <card id="6011" name="Bomb Spirit" />
       <card id="1326" name="Titan of Fire" />
       <card id="1629" name="Rock Titan" />
@@ -4841,7 +4841,7 @@
     <desc>Oda easily deals with the first wave of enemies. More creatures begin to emerge from the circle.</desc>
     <commander id="266" />
     <deck>
-      <card id="1616" name="Werewarg" />
+      <card id="8231" name="Werewarg" />
       <card id="5046" name="Dawn" />
       <card id="2010" name="Silver Wind" />
       <card id="7034" name="Spore Elk" />
@@ -4863,7 +4863,7 @@
     <desc>Another wave rises from the circle. Elyse starts to look worried that Oda must defeat these creatures alone. She glances at the monk who gives a reassuring glance.</desc>
     <commander id="214" />
     <deck>
-      <card id="6012" name="Ember Drake" />
+      <card id="8224" name="Ember Drake" />
       <card id="1031" name="Noble Champion" />
       <card id="1025" name="Lightbound Archer" />
       <card id="6005" name="Gloomkin" />
@@ -4885,7 +4885,7 @@
     <desc>Oda is starting to sweat as he defeats another wave of enemies. As he wipes his brow, the ground begins to shake...</desc>
     <commander id="303" />
     <deck>
-      <card id="1613" name="Acidic Spider" />
+      <card id="8228" name="Acidic Spider" />
       <card id="2020" name="Tidetaken Fighter" />
       <card id="6042" name="Shadow of Thunder" />
       <card id="2020" name="Tidetaken Fighter" />
@@ -5212,17 +5212,17 @@
     <commander id="224" />
     <!-- Consumed Undead-->
     <deck>
-      <card id="5022" name="Webfoot Raider" />
-      <card id="5022" />
-      <card id="5022" />
-      <card id="7007" name="Water Serpent" />
-      <card id="7007" />
-      <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
+      <card id="8213" name="Webfoot Raider" />
+      <card id="8213" />
+      <card id="8213" />
+      <card id="8236" name="Water Serpent" />
+      <card id="8236" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8218" />
       <card id="7045" name="Sakura" />
-      <card id="1010" mastery_level="2" name="Lightning Elemental" />
+      <card id="8201" mastery_level="2" name="Lightning Elemental" />
       <card id="7021" mastery_level="2" name="Shadow Elemental" />
-      <card id="1317" mastery_level="3" name="Fire Imp" />
+      <card id="8219" mastery_level="3" name="Fire Imp" />
       <card id="6015" mastery_level="4" name="Acidic Sludge" />
       <card id="2005" mastery_level="5" name="Sailing Drake" />
       <card id="6002" mastery_level="6" name="Spirit of Madness" />
@@ -5256,17 +5256,17 @@
     <commander id="203" />
     <!-- Luminis Angel-->
     <deck>
-      <card id="7017" name="Coral Elemental" />
-      <card id="7017" />
-      <card id="1312" name="Scythe Demon" />
-      <card id="1312" />
-      <card id="6017" name="Tar Pit Stalker" />
-      <card id="6017" />
+      <card id="8238" name="Coral Elemental" />
+      <card id="8238" />
+      <card id="8215" name="Scythe Demon" />
+      <card id="8215" />
+      <card id="8225" name="Tar Pit Stalker" />
+      <card id="8225" />
       <card id="5015" name="Gravity Swell" />
       <card id="1026" name="Glass Colossus" />
-      <card id="1318" mastery_level="2" name="Smelted Lava Slug" />
+      <card id="8220" mastery_level="2" name="Smelted Lava Slug" />
       <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
-      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="8218" mastery_level="3" name="Nix Elemental" />
       <card id="2009" mastery_level="4" name="Sapling" />
       <card id="2012" mastery_level="5" name="Frogling Swarm" />
       <card id="6013" mastery_level="6" name="Rust Goliath" />
@@ -5283,16 +5283,16 @@
     <commander id="210" />
     <!-- Lava Crab Gang-->
     <deck>
-      <card id="1616" name="Werewarg" />
-      <card id="1616" />
-      <card id="1012" name="Cloud Sylph" />
-      <card id="1012" />
-      <card id="1012" />
+      <card id="8231" name="Werewarg" />
+      <card id="8231" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" />
+      <card id="8203" />
       <card id="1610" name="Ranger" />
       <card id="2000" name="Wasteland Nomad" />
       <card id="6020" name="Croak Piercer" />
       <card id="7011" mastery_level="2" name="Wolf Girl" />
-      <card id="1617" mastery_level="3" name="Water Elemental" />
+      <card id="8232" mastery_level="3" name="Water Conjuration" />
       <card id="1628" mastery_level="4" name="Garganotos" />
       <card id="1625" mastery_level="5" name="Ferocious Clawkin" />
       <card id="7009" mastery_level="6" name="Rhino Beast" />
@@ -5326,17 +5326,17 @@
     <commander id="226" />
     <!-- Lost Lava Crab-->
     <deck>
-      <card id="1314" name="Skeletal Hound" />
-      <card id="1314" />
-      <card id="1319" name="Wraith" />
-      <card id="1319" />
-      <card id="6006" name="Chaos Golem" />
+      <card id="8217" name="Skeletal Hound" />
+      <card id="8217" />
+      <card id="8221" name="Wraith" />
+      <card id="8221" />
+      <card id="8222" name="Chaos Golem" />
       <card id="1630" name="Giant Squid" />
       <card id="7004" name="Ice Golem" />
       <card id="6029" name="Spinehead Stalker" />
-      <card id="1313" mastery_level="2" name="Lavafrog" />
+      <card id="8216" mastery_level="2" name="Lavafrog" />
       <card id="7020" mastery_level="2" name="Trapper Frog" />
-      <card id="1319" mastery_level="3" name="Wraith" />
+      <card id="8221" mastery_level="3" name="Wraith" />
       <card id="2020" mastery_level="4" name="Tidetaken Fighter" />
       <card id="1629" mastery_level="5" name="Rock Titan" />
       <card id="1342" mastery_level="6" name="Ronin" />
@@ -5353,16 +5353,16 @@
     <commander id="238" />
     <!-- Lantern Guardian -->
     <deck>
-      <card id="5006" name="Arms Enforcer" />
-      <card id="5006" />
-      <card id="1011" name="Archive Keeper" />
-      <card id="1011" />
-      <card id="1018" name="Armored Eagle" />
+      <card id="8209" name="Arms Enforcer" />
+      <card id="8209" />
+      <card id="8202" name="Archive Keeper" />
+      <card id="8202" />
+      <card id="8207" name="Armored Eagle" />
       <card id="1030" name="Paladin" />
       <card id="5021" name="Tower Spirit" />
       <card id="5004" name="Lightning Lord" />
       <card id="1025" mastery_level="2" name="Lightbound Archer" />
-      <card id="1018" mastery_level="3" name="Armored Eagle" />
+      <card id="8207" mastery_level="3" name="Armored Eagle" />
       <card id="1026" mastery_level="4" name="Glass Colossus" />
       <card id="2002" mastery_level="5" name="Lantern Guardian" />
       <card id="5001" mastery_level="6" name="Aven Skypiercer" />
@@ -5396,16 +5396,16 @@
     <commander id="243" />
     <!-- Windstorm Avatar  -->
     <deck>
-      <card id="1312" name="Scythe Demon" />
-      <card id="1312" />
-      <card id="1017" name="Judgment" />
-      <card id="1017" />
+      <card id="8215" name="Scythe Demon" />
+      <card id="8215" />
+      <card id="8206" name="Judgment" />
+      <card id="8206" />
       <card id="5005" name="Storm Giant" />
       <card id="5044" name="Telepathic Magi" />
       <card id="6005" name="Gloomkin" />
       <card id="2001" name="Dunetooth Demon" />
       <card id="6016" mastery_level="2" name="Skeletal Giant" />
-      <card id="5006" mastery_level="3" name="Arms Enforcer" />
+      <card id="8209" mastery_level="3" name="Arms Enforcer" />
       <card id="2012" mastery_level="4" name="Frogling Swarm" />
       <card id="6035" mastery_level="5" name="Demos" />
       <card id="1343" mastery_level="6" name="Firehorn" />
@@ -5423,17 +5423,17 @@
     <commander id="224" />
     <!-- Consumed Undead -->
     <deck>
-      <card id="1317" name="Fire Imp" />
-      <card id="1317" />
+      <card id="8219" name="Fire Imp" />
+      <card id="8219" />
       <card id="6022" name="Illusion Caster" />
       <card id="6022" />
-      <card id="1014" name="Cherub" />
-      <card id="1014" />
-      <card id="1014" />
+      <card id="8204" name="Cherub" />
+      <card id="8204" />
+      <card id="8204" />
       <card id="1325" name="Chaos Storm" />
-      <card id="1317" mastery_level="2" name="Fire Imp" />
+      <card id="8219" mastery_level="2" name="Fire Imp" />
       <card id="6038" mastery_level="2" name="Hemlock" />
-      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="8204" mastery_level="3" name="Cherub" />
       <card id="1031" mastery_level="4" name="Noble Champion" />
       <card id="5005" mastery_level="5" name="Storm Giant" />
       <card id="5043" mastery_level="6" name="Empyrean" />
@@ -5466,17 +5466,17 @@
     <desc>Oda reveals to Rayne how he was shipwrecked as a young boy. She listens to him as he speaks, taking note of how he looks at the ocean as if it might suddenly swallow him whole. (Oda will automatically be appointed)</desc>
     <commander id="223" />
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
-      <card id="5006" name="Arms Enforcer" />
-      <card id="5006" />
-      <card id="6006" name="Chaos Golem" />
-      <card id="6006" />
+      <card id="8207" name="Armored Eagle" />
+      <card id="8207" />
+      <card id="8209" name="Arms Enforcer" />
+      <card id="8209" />
+      <card id="8222" name="Chaos Golem" />
+      <card id="8222" />
       <card id="2021" name="Snowstep Ranger" />
       <card id="6010" name="Cliffpass Defender" />
-      <card id="7006" mastery_level="2" name="Treant Sapling" />
+      <card id="8235" mastery_level="2" name="Treant Sapling" />
       <card id="5025" mastery_level="2" name="Steelskin Dragon" />
-      <card id="1314" mastery_level="3" name="Skeletal Hound" />
+      <card id="8217" mastery_level="3" name="Skeletal Hound" />
       <card id="5028" mastery_level="4" name="Winter Blacksmith" />
       <card id="2004" mastery_level="5" name="Lavatail Dragon" />
       <card id="5009" mastery_level="6" name="Royal Guardian" />
@@ -5492,16 +5492,16 @@
     <desc>Rayne takes Oda closer to the shore, water swelling up to greet her as she approaches. Tiny fish swim up to her feet. She encourages Oda to come and dip his feet in the shallow water. (Oda will automatically be appointed)</desc>
     <commander id="200" />
     <deck>
-      <card id="1615" name="Rune Panther" />
-      <card id="1615" />
-      <card id="1312" name="Scythe Demon" />
-      <card id="1312" />
-      <card id="1617" name="Water Elemental" />
-      <card id="1617" />
+      <card id="8230" name="Rune Panther" />
+      <card id="8230" />
+      <card id="8215" name="Scythe Demon" />
+      <card id="8215" />
+      <card id="8232" name="Water Conjuration" />
+      <card id="8232" />
       <card id="2031" name="Dryad" />
       <card id="7015" name="Bog Aberration" />
       <card id="5015" mastery_level="2" name="Gravity Swell" />
-      <card id="7017" mastery_level="3" name="Coral Elemental" />
+      <card id="8238" mastery_level="3" name="Coral Elemental" />
       <card id="2009" mastery_level="4" name="Sapling" />
       <card id="2023" mastery_level="5" name="Grizzly Terror" />
       <card id="7046" mastery_level="6" name="Brambleblight" />
@@ -5517,17 +5517,17 @@
     <desc>Oda inches closer to the water. Now drenched in sweat, he looks back at Rayne. This is very unlike the stoic man; large bodies of water really put him on edge. Rayne smiles reassuringly. (Oda will automatically be appointed)</desc>
     <commander id="225" />
     <deck>
-      <card id="6007" name="Goblin Crew" />
-      <card id="6007" />
-      <card id="6007" />
-      <card id="1618" name="Frog Scout" />
-      <card id="1618" />
+      <card id="8223" name="Goblin Crew" />
+      <card id="8223" />
+      <card id="8223" />
+      <card id="8233" name="Frog Scout" />
+      <card id="8233" />
       <card id="1329" name="Shadow Assassin" />
       <card id="2030" name="Ebon Duelist" />
       <card id="1028" name="Heroic Frog" />
-      <card id="1012" mastery_level="2" name="Cloud Sylph" />
+      <card id="8203" mastery_level="2" name="Cloud Conjuration" />
       <card id="1628" mastery_level="2" name="Garganotos" />
-      <card id="1616" mastery_level="3" name="Werewarg" />
+      <card id="8231" mastery_level="3" name="Werewarg" />
       <card id="2032" mastery_level="4" name="Brimstone" />
       <card id="6020" mastery_level="5" name="Croak Piercer" />
       <card id="7018" mastery_level="6" name="Frog Emperor" />
@@ -5560,16 +5560,16 @@
     <desc>Oda sits waist deep in the ocean, where he starts to panic. Rayne reminds him to focus on his surroundings as a school of fish come and swim around the two of them. (Oda will automatically be appointed)</desc>
     <commander id="265" />
     <deck>
-      <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
-      <card id="1315" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8218" />
+      <card id="8218" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8228" />
       <card id="1329" name="Shadow Assassin" />
       <card id="1329" name="Shadow Assassin" />
       <card id="6029" name="Spinehead Stalker" />
       <card id="2024" mastery_level="2" name="Dusk Noble" />
-      <card id="1613" mastery_level="3" name="Acidic Spider" />
+      <card id="8228" mastery_level="3" name="Acidic Spider" />
       <card id="6034" mastery_level="4" name="Bone Viper" />
       <card id="2012" mastery_level="5" name="Frogling Swarm" />
       <card id="6039" mastery_level="6" name="Auroch" />
@@ -5592,16 +5592,16 @@
     <desc>Oda stands up quickly, suddenly alert. He looks angrily at Rayne and then quickly begins to check his surroundings. A dark shape approaches in the water... (Oda will automatically be appointed)</desc>
     <commander id="268" />
     <deck>
-      <card id="1019" name="Oracle" />
-      <card id="1019" />
-      <card id="1017" name="Judgment" />
-      <card id="1017" />
+      <card id="8208" name="Oracle" />
+      <card id="8208" />
+      <card id="8206" name="Judgment" />
+      <card id="8206" />
       <card id="5035" name="Vapor Guard" />
       <card id="1326" name="Titan of Fire" />
       <card id="6044" name="Firewalker" />
       <card id="6042" name="Shadow of Thunder" />
       <card id="5021" name="Tower Spirit" />
-      <card id="5012" name="Static Drake" />
+      <card id="8211" name="Static Drake" />
       <card id="2032" name="Brimstone" />
       <card id="6035" name="Demos" />
       <card id="2015" mastery_level="6" name="Pumpking" />
@@ -5640,17 +5640,17 @@
     <desc>Aria stands in front of a mirror. The veins on her arms have begun to glow a faint purple. She worries that the infection she suffered from The Void has resurfaced. (Aria will automatically be appointed)</desc>
     <commander id="223" />
     <deck>
-      <card id="1015" name="Windfrog" />
-      <card id="1015" />
-      <card id="1015" />
-      <card id="1616" name="Werewarg" />
-      <card id="1616" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
+      <card id="8205" name="Windfrog" />
+      <card id="8205" />
+      <card id="8205" />
+      <card id="8231" name="Werewarg" />
+      <card id="8231" />
+      <card id="8207" name="Armored Eagle" />
+      <card id="8207" />
       <card id="7016" name="Webfist Shaman" />
-      <card id="1015" mastery_level="2" name="Windfrog" />
+      <card id="8205" mastery_level="2" name="Windfrog" />
       <card id="2011" mastery_level="2" name="Poliworg" />
-      <card id="1619" mastery_level="3" name="Earth Elemental" />
+      <card id="8234" mastery_level="3" name="Earth Elemental" />
       <card id="7020" mastery_level="4" name="Trapper Frog" />
       <card id="7038" mastery_level="5" name="Sol King" />
       <card id="7027" mastery_level="6" name="Kitsune" />
@@ -5666,17 +5666,17 @@
     <desc>Tarian notices the marks on her arms as she passes by him on the air ship. He is concerned about her health, although it might not be related to Aria's own welfare. (Aria will automatically be appointed)</desc>
     <commander id="200" />
     <deck>
-      <card id="5017" name="Steam Tempest" />
-      <card id="5017" />
-      <card id="5017" />
-      <card id="1011" name="Archive Keeper" />
-      <card id="1011" />
-      <card id="7007" name="Water Serpent" />
+      <card id="8212" name="Steam Tempest" />
+      <card id="8212" />
+      <card id="8212" />
+      <card id="8202" name="Archive Keeper" />
+      <card id="8202" />
+      <card id="8236" name="Water Serpent" />
       <card id="6015" name="Acidic Sludge" />
       <card id="7021" name="Shadow Elemental" />
-      <card id="5017" mastery_level="2" name="Steam Tempest" />
+      <card id="8212" mastery_level="2" name="Steam Tempest" />
       <card id="7005" mastery_level="2" name="Tsunamari" />
-      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="8204" mastery_level="3" name="Cherub" />
       <card id="7045" mastery_level="4" name="Sakura" />
       <card id="7021" mastery_level="5" name="Shadow Elemental" />
       <card id="6043" mastery_level="6" name="Sandstorm" />
@@ -5709,16 +5709,16 @@
     <desc>Tarian informs Aria of a small building on the outskirts of The Salt Wastes. It's filled to the brim with lab equipment. It seems to be one of Malchior's abandoned laboratories. (Aria will automatically be appointed)</desc>
     <commander id="210" />
     <deck>
-      <card id="6012" name="Ember Drake" />
-      <card id="6012" />
-      <card id="6012" />
-      <card id="6007" name="Goblin Crew" />
-      <card id="1017" name="Judgment" />
-      <card id="1017" />
+      <card id="8224" name="Ember Drake" />
+      <card id="8224" />
+      <card id="8224" />
+      <card id="8223" name="Goblin Crew" />
+      <card id="8206" name="Judgment" />
+      <card id="8206" />
       <card id="2003" name="Dragon Tamer" />
       <card id="5025" name="Steelskin Dragon" />
       <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
-      <card id="1615" mastery_level="3" name="Rune Panther" />
+      <card id="8230" mastery_level="3" name="Rune Panther" />
       <card id="1628" mastery_level="4" name="Garganotos" />
       <card id="6025" mastery_level="5" name="Dragon Keeper" />
       <card id="6024" mastery_level="6" name="Bane Dragon" />
@@ -5746,17 +5746,17 @@
     <desc>Aria finds one of the Black Flowers in the back of the lab. She begins to grind and distill the herb into a potion that might cure The Void infection for good. (Aria will automatically be appointed)</desc>
     <commander id="205" />
     <deck>
-      <card id="1311" name="Molten Skeleton" />
-      <card id="1311" />
-      <card id="1311" />
-      <card id="1019" name="Oracle" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8214" name="Molten Skeleton" />
+      <card id="8214" />
+      <card id="8214" />
+      <card id="8208" name="Oracle" />
+      <card id="8209" name="Arms Enforcer" />
       <card id="1632" name="Shadow Rider" />
       <card id="2025" name="Blight Knight" />
       <card id="5015" name="Gravity Swell" />
-      <card id="1012" mastery_level="2" name="Cloud Sylph" />
+      <card id="8203" mastery_level="2" name="Cloud Conjuration" />
       <card id="1028" mastery_level="2" name="Heroic Frog" />
-      <card id="1314" mastery_level="3" name="Skeletal Hound" />
+      <card id="8217" mastery_level="3" name="Skeletal Hound" />
       <card id="6029" mastery_level="4" name="Spinehead Stalker" />
       <card id="7005" mastery_level="5" name="Tsunamari" />
       <card id="7033" mastery_level="6" name="Treebond Skull" />
@@ -5772,16 +5772,16 @@
     <desc>The potion needs a few hours to settle. Ronaldo looks at Aria who is beginning to look nervous. He offers what comfort he can as they wait. (Aria will automatically be appointed)</desc>
     <commander id="299" />
     <deck>
-      <card id="1318" name="Smelted Lava Slug" />
-      <card id="1318" />
-      <card id="7006" name="Treant Sapling" />
-      <card id="7006" />
-      <card id="5017" name="Steam Tempest" />
+      <card id="8220" name="Smelted Lava Slug" />
+      <card id="8220" />
+      <card id="8235" name="Treant Sapling" />
+      <card id="8235" />
+      <card id="8212" name="Steam Tempest" />
       <card id="2027" name="Halo Mage" />
       <card id="2029" name="Sly Critters" />
       <card id="5040" name="Winged Trumpeter" />
       <card id="7041" mastery_level="2" name="Feral Angel" />
-      <card id="5007" mastery_level="3" name="Arcane Scroll" />
+      <card id="8210" mastery_level="3" name="Arcane Scroll" />
       <card id="2032" mastery_level="4" name="Brimstone" />
       <card id="6038" mastery_level="5" name="Hemlock" />
       <card id="2028" mastery_level="6" name="Infinity" />
@@ -5821,8 +5821,8 @@
     <deck>
       <card id="7022" name="Beetle Tamer" />
       <card id="7022" />
-      <card id="6017" name="Tar Pit Stalker" />
-      <card id="6017" />
+      <card id="8225" name="Tar Pit Stalker" />
+      <card id="8225" />
       <card id="2012" name="Frogling Swarm" />
       <card id="7020" name="Trapper Frog" />
       <card id="6046" name="Celerity" />
@@ -5862,17 +5862,17 @@
     <desc>Deep in the woods, Decim carries a bundle of sticks to a small fire. He carefully feeds them in, making sure the flames do not get too high. Something unusual rests on top... (Decim will automatically be appointed)</desc>
     <commander id="208" />
     <deck>
-      <card id="7006" name="Treant Sapling" />
-      <card id="7006" />
-      <card id="6006" name="Chaos Golem" />
-      <card id="6006" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
-      <card id="1613" />
+      <card id="8235" name="Treant Sapling" />
+      <card id="8235" />
+      <card id="8222" name="Chaos Golem" />
+      <card id="8222" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8228" />
+      <card id="8228" />
       <card id="2019" name="Chalistomper" />
-      <card id="1314" mastery_level="2" name="Skeletal Hound" />
+      <card id="8217" mastery_level="2" name="Skeletal Hound" />
       <card id="7034" mastery_level="2" name="Spore Elk" />
-      <card id="7006" mastery_level="3" name="Treant Sapling" />
+      <card id="8235" mastery_level="3" name="Treant Sapling" />
       <card id="2031" mastery_level="4" name="Dryad" />
       <card id="7011" mastery_level="5" name="Wolf Girl" />
       <card id="7027" mastery_level="6" name="Kitsune" />
@@ -5900,17 +5900,17 @@
     <desc>Decim spends days keeping the fire going. He carefully turns the egg, making sure the young dragon is warmed properly. (Decim will automatically be appointed)</desc>
     <commander id="290" />
     <deck>
-      <card id="1312" name="Scythe Demon" />
-      <card id="1312" />
-      <card id="1312" />
-      <card id="5007" name="Arcane Scroll" />
-      <card id="5007" />
-      <card id="5007" />
+      <card id="8215" name="Scythe Demon" />
+      <card id="8215" />
+      <card id="8215" />
+      <card id="8210" name="Arcane Scroll" />
+      <card id="8210" />
+      <card id="8210" />
       <card id="6021" name="Marsh Ogre" />
       <card id="5041" name="Skylance Raiders" />
-      <card id="6007" mastery_level="2" name="Goblin Crew" />
+      <card id="8223" mastery_level="2" name="Goblin Crew" />
       <card id="5044" mastery_level="2" name="Telepathic Magi" />
-      <card id="1019" mastery_level="3" name="Oracle" />
+      <card id="8208" mastery_level="3" name="Oracle" />
       <card id="6021" mastery_level="4" name="Marsh Ogre" />
       <card id="1329" mastery_level="5" name="Shadow Assassin" />
       <card id="6030" mastery_level="6" name="Noveria Yeti" />
@@ -5926,16 +5926,16 @@
     <desc>Decim's ears perk up as he hears the egg cracking. Finally, his dragon egg is hatching! (Decim will automatically be appointed)</desc>
     <commander id="227" />
     <deck>
-      <card id="1619" name="Earth Elemental" />
-      <card id="1619" />
-      <card id="1015" name="Windfrog" />
-      <card id="1015" />
-      <card id="5006" name="Arms Enforcer" />
-      <card id="5006" />
+      <card id="8234" name="Earth Elemental" />
+      <card id="8234" />
+      <card id="8205" name="Windfrog" />
+      <card id="8205" />
+      <card id="8209" name="Arms Enforcer" />
+      <card id="8209" />
       <card id="2009" name="Sapling" />
       <card id="7016" name="Webfist Shaman" />
       <card id="2023" mastery_level="2" name="Grizzly Terror" />
-      <card id="1015" mastery_level="3" name="Windfrog" />
+      <card id="8205" mastery_level="3" name="Windfrog" />
       <card id="2014" mastery_level="4" name="Tadpole Warmage" />
       <card id="6046" mastery_level="5" name="Celerity" />
       <card id="5018" mastery_level="6" name="Grand Knight Frog" />
@@ -5963,17 +5963,17 @@
     <desc>Duhast is learning to walk and spit fire faster than Decim can keep up with it. He takes the young dragon around the forest, watching it discover the nuances of the world. (Decim will automatically be appointed)</desc>
     <commander id="267" />
     <deck>
-      <card id="5012" name="Static Drake" />
-      <card id="5012" />
-      <card id="5012" />
-      <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
+      <card id="8211" name="Static Drake" />
+      <card id="8211" />
+      <card id="8211" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8218" />
       <card id="2005" name="Sailing Drake" />
       <card id="2005" name="Sailing Drake" />
       <card id="5024" name="Cloudtop Dragon" />
-      <card id="1017" mastery_level="2" name="Judgment" />
+      <card id="8206" mastery_level="2" name="Judgment" />
       <card id="6015" mastery_level="2" name="Acidic Sludge" />
-      <card id="1019" mastery_level="3" name="Oracle" />
+      <card id="8208" mastery_level="3" name="Oracle" />
       <card id="7045" mastery_level="4" name="Sakura" />
       <card id="5025" mastery_level="5" name="Steelskin Dragon" />
       <card id="7008" mastery_level="6" name="Rock Dragon" />
@@ -6001,17 +6001,17 @@
     <desc>Decim races through the forest, frantically looking for Duhast. Somewhere in the back of his head, he realizes he's never cared about anything aside himself like this. (Decim will automatically be appointed)</desc>
     <commander id="250" />
     <deck>
-      <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
-      <card id="1315" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
-      <card id="1613" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8218" />
+      <card id="8218" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8228" />
+      <card id="8228" />
       <card id="2027" name="Halo Mage" />
       <card id="2025" name="Blight Knight" />
       <card id="6042" name="Shadow of Thunder" />
       <card id="2024" mastery_level="2" name="Dusk Noble" />
-      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="8204" mastery_level="3" name="Cherub" />
       <card id="5040" mastery_level="4" name="Winged Trumpeter" />
       <card id="2020" mastery_level="5" name="Tidetaken Fighter" />
       <card id="6019" mastery_level="6" name="Canopy Horror" />
@@ -6029,8 +6029,8 @@
     <deck>
       <card id="6022" name="Illusion Caster" />
       <card id="6022" />
-      <card id="5017" name="Steam Tempest" />
-      <card id="5017" />
+      <card id="8212" name="Steam Tempest" />
+      <card id="8212" />
       <card id="6036" name="Cursed Ogre" />
       <card id="6034" name="Bone Viper" />
       <card id="2032" name="Brimstone" />
@@ -6069,17 +6069,17 @@
     <desc>Yuriel wanders the markets of Luminis. He makes his way to his favorite vender, a rare book seller. (Yuriel will automatically be appointed)</desc>
     <commander id="246" />
     <deck>
-      <card id="1014" name="Cherub" />
-      <card id="1014" />
-      <card id="1014" />
-      <card id="5017" name="Steam Tempest" />
-      <card id="5017" />
-      <card id="5017" />
-      <card id="1011" name="Archive Keeper" />
+      <card id="8204" name="Cherub" />
+      <card id="8204" />
+      <card id="8204" />
+      <card id="8212" name="Steam Tempest" />
+      <card id="8212" />
+      <card id="8212" />
+      <card id="8202" name="Archive Keeper" />
       <card id="2023" name="Grizzly Terror" />
-      <card id="5017" mastery_level="2" name="Steam Tempest" />
+      <card id="8212" mastery_level="2" name="Steam Tempest" />
       <card id="6046" mastery_level="2" name="Celerity" />
-      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="8204" mastery_level="3" name="Cherub" />
       <card id="2029" mastery_level="4" name="Sly Critters" />
       <card id="2009" mastery_level="5" name="Sapling" />
       <card id="6035" mastery_level="6" name="Demos" />
@@ -6095,18 +6095,18 @@
     <desc>As Yuriel browses the vendor's wares he notices an unusual patron in the shop:  a large orc with a glowing fist. He suspects he is a follower of Chaos magic... (Yuriel will automatically be appointed)</desc>
     <commander id="238" />
     <deck>
-      <card id="1017" name="Judgment" />
-      <card id="1017" />
-      <card id="1015" name="Windfrog" />
-      <card id="1015" />
-      <card id="1015" />
-      <card id="1019" name="Oracle" />
-      <card id="1019" />
+      <card id="8206" name="Judgment" />
+      <card id="8206" />
+      <card id="8205" name="Windfrog" />
+      <card id="8205" />
+      <card id="8205" />
+      <card id="8208" name="Oracle" />
+      <card id="8208" />
       <card id="5020" name="Frost Frog" />
       <card id="7020" name="Trapper Frog" />
-      <card id="1017" mastery_level="2" name="Judgment" />
+      <card id="8206" mastery_level="2" name="Judgment" />
       <card id="1028" mastery_level="2" name="Heroic Frog" />
-      <card id="5012" mastery_level="3" name="Static Drake" />
+      <card id="8211" mastery_level="3" name="Static Drake" />
       <card id="7004" mastery_level="4" name="Ice Golem" />
       <card id="7029" mastery_level="5" name="Owl Griffin" />
       <card id="7028" mastery_level="6" name="Frozen Tide" />
@@ -6134,16 +6134,16 @@
     <desc>Yuriel turns to find a city guard, but before he can reach the door, the large orc blocks his path. He has a menacing aura about him. (Yuriel will automatically be appointed)</desc>
     <commander id="227" />
     <deck>
-      <card id="7017" name="Coral Elemental" />
-      <card id="7017" />
-      <card id="1617" name="Water Elemental" />
-      <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
-      <card id="1315" />
+      <card id="8238" name="Coral Elemental" />
+      <card id="8238" />
+      <card id="8232" name="Water Conjuration" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8218" />
+      <card id="8218" />
       <card id="5046" name="Dawn" />
       <card id="6021" name="Marsh Ogre" />
       <card id="5033" mastery_level="2" name="Lost Soul" />
-      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="8218" mastery_level="3" name="Nix Elemental" />
       <card id="7021" mastery_level="4" name="Shadow Elemental" />
       <card id="2032" mastery_level="5" name="Brimstone" />
       <card id="5048" mastery_level="6" name="Highborn Rose" />
@@ -6178,15 +6178,15 @@
     <deck>
       <card id="7012" name="Life Drake" />
       <card id="7012" />
-      <card id="1614" name="Druid" />
-      <card id="7017" name="Coral Elemental" />
-      <card id="7017" />
+      <card id="8229" name="Druid" />
+      <card id="8238" name="Coral Elemental" />
+      <card id="8238" />
       <card id="7045" name="Sakura" />
       <card id="7021" name="Shadow Elemental" />
       <card id="7034" name="Spore Elk" />
-      <card id="1617" mastery_level="2" name="Water Elemental" />
+      <card id="8232" mastery_level="2" name="Water Conjuration" />
       <card id="7005" mastery_level="2" name="Tsunamari" />
-      <card id="5007" mastery_level="3" name="Arcane Scroll" />
+      <card id="8210" mastery_level="3" name="Arcane Scroll" />
       <card id="7035" mastery_level="4" name="Carrion Tiger" />
       <card id="1329" mastery_level="5" name="Shadow Assassin" />
       <card id="1641" mastery_level="6" name="Rhythm of the Wyld" />
@@ -6202,16 +6202,16 @@
     <desc>As Yuriel opens the book, a bright light shines from it. He feels a rush of magical energy overcome him, and the orc's barrier shatters. Yuriel feels stronger than ever before. (Yuriel will automatically be appointed)</desc>
     <commander id="243" />
     <deck>
-      <card id="1012" name="Cloud Sylph" />
-      <card id="1012" />
-      <card id="1012" />
-      <card id="1618" name="Frog Scout" />
-      <card id="1618" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" />
+      <card id="8203" />
+      <card id="8233" name="Frog Scout" />
+      <card id="8233" />
       <card id="1028" name="Heroic Frog" />
       <card id="5015" name="Gravity Swell" />
       <card id="7024" name="Woolmane Dragon " />
       <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
-      <card id="1616" mastery_level="3" name="Werewarg" />
+      <card id="8231" mastery_level="3" name="Werewarg" />
       <card id="5035" mastery_level="4" name="Vapor Guard" />
       <card id="5020" mastery_level="5" name="Frost Frog" />
       <card id="5034" mastery_level="6" name="Skyward Guardian" />
@@ -6235,16 +6235,16 @@
     <commander id="209" />
     <!-- Orobas of the Void -->
     <deck>
-      <card id="1618" name="Frog Scout" />
-      <card id="1618" />
-      <card id="1311" name="Molten Skeleton" />
-      <card id="1311" />
+      <card id="8233" name="Frog Scout" />
+      <card id="8233" />
+      <card id="8214" name="Molten Skeleton" />
+      <card id="8214" />
       <card id="2019" name="Chalistomper" />
       <card id="2020" name="Tidetaken Fighter" />
       <card id="1332" name="Vampiric Emira" />
       <card id="7035" name="Carrion Tiger" />
       <card id="1331" mastery_level="2" name="Fallen Soldiers" />
-      <card id="5022" mastery_level="3" name="Webfoot Raider" />
+      <card id="8213" mastery_level="3" name="Webfoot Raider" />
       <card id="7020" mastery_level="4" name="Trapper Frog" />
       <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
       <card id="6028" mastery_level="6" name="Brahmet" />
@@ -6261,17 +6261,17 @@
     <desc>Ursurio sits at his command post on the outskirts of The Void. He watches the horizon for any sign of danger. His stomach rumbles. (Ursurio will automatically be appointed)</desc>
     <commander id="211" />
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
-      <card id="6007" name="Goblin Crew" />
-      <card id="6007" />
-      <card id="1017" name="Judgment" />
-      <card id="1017" />
-      <card id="1017" />
+      <card id="8207" name="Armored Eagle" />
+      <card id="8207" />
+      <card id="8223" name="Goblin Crew" />
+      <card id="8223" />
+      <card id="8206" name="Judgment" />
+      <card id="8206" />
+      <card id="8206" />
       <card id="5011" name="Sky Whale" />
-      <card id="5012" mastery_level="2" name="Static Drake" />
+      <card id="8211" mastery_level="2" name="Static Drake" />
       <card id="1025" mastery_level="2" name="Lightbound Archer" />
-      <card id="1018" mastery_level="3" name="Armored Eagle" />
+      <card id="8207" mastery_level="3" name="Armored Eagle" />
       <card id="6005" mastery_level="4" name="Gloomkin" />
       <card id="6016" mastery_level="5" name="Skeletal Giant" />
       <card id="6032" mastery_level="6" name="Mumohotep" />
@@ -6287,17 +6287,17 @@
     <desc>A retired soldier enters his post. Ursurio is happy to see a familiar face. He invites Ol'Cedric in for a drink. (Ursurio will automatically be appointed)</desc>
     <commander id="206" />
     <deck>
-      <card id="1313" name="Lavafrog" />
-      <card id="1313" />
-      <card id="1010" name="Lightning Elemental" />
-      <card id="1010" />
-      <card id="1010" />
-      <card id="1312" name="Scythe Demon" />
+      <card id="8216" name="Lavafrog" />
+      <card id="8216" />
+      <card id="8201" name="Lightning Elemental" />
+      <card id="8201" />
+      <card id="8201" />
+      <card id="8215" name="Scythe Demon" />
       <card id="5030" name="Loxphas Mage" />
       <card id="5046" name="Dawn" />
-      <card id="5022" mastery_level="2" name="Webfoot Raider" />
+      <card id="8213" mastery_level="2" name="Webfoot Raider" />
       <card id="2032" mastery_level="2" name="Brimstone" />
-      <card id="1317" mastery_level="3" name="Fire Imp" />
+      <card id="8219" mastery_level="3" name="Fire Imp" />
       <card id="5005" mastery_level="4" name="Storm Giant" />
       <card id="5030" mastery_level="5" name="Loxphas Mage" />
       <card id="2028" mastery_level="6" name="Infinity" />
@@ -6330,16 +6330,16 @@
     <desc>Ursurio and Cedric head to the location of the ghouls. They spot them and are able to sneak up behind them. They quickly launch into battle! (Ursurio will automatically be appointed)</desc>
     <commander id="208" />
     <deck>
-      <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
-      <card id="1315" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
-      <card id="1613" />
+      <card id="8218" name="Nix Elemental" />
+      <card id="8218" />
+      <card id="8218" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8228" />
+      <card id="8228" />
       <card id="1631" name="Venom Dragon" />
       <card id="7038" name="Sol King" />
       <card id="7047" mastery_level="2" name="Shaman of the Wild" />
-      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="8218" mastery_level="3" name="Nix Elemental" />
       <card id="7004" mastery_level="4" name="Ice Golem" />
       <card id="1629" mastery_level="5" name="Rock Titan" />
       <card id="7039" mastery_level="6" name="Winged Giant" />
@@ -6355,17 +6355,17 @@
     <desc>As the final wave of ghouls are dealt with, the two champions get a moment of rest. Ol'Cedric takes a breather, when he hears a loud grumbling sound. (Ursurio will automatically be appointed)</desc>
     <commander id="289" />
     <deck>
-      <card id="6012" name="Ember Drake" />
-      <card id="6012" />
-      <card id="1317" name="Fire Imp" />
-      <card id="1317" />
-      <card id="1313" name="Lavafrog" />
+      <card id="8224" name="Ember Drake" />
+      <card id="8224" />
+      <card id="8219" name="Fire Imp" />
+      <card id="8219" />
+      <card id="8216" name="Lavafrog" />
       <card id="1330" name="Devouring Locusts" />
       <card id="1325" name="Chaos Storm" />
       <card id="6031" name="Iceblood Assassin" />
       <card id="2000" mastery_level="2" name="Wasteland Nomad" />
       <card id="6011" mastery_level="2" name="Bomb Spirit" />
-      <card id="7006" mastery_level="3" name="Treant Sapling" />
+      <card id="8235" mastery_level="3" name="Treant Sapling" />
       <card id="6042" mastery_level="4" name="Shadow of Thunder" />
       <card id="6038" mastery_level="5" name="Hemlock" />
       <card id="6041" mastery_level="6" name="Reaper" />
@@ -6398,17 +6398,17 @@
     <desc>Cedric takes Ursurio back to his post. Cedric's troops have set up camp and are just finishing the night's preparations. They are right in time for dinner! (Ursurio will automatically be appointed)</desc>
     <commander id="275" />
     <deck>
-      <card id="7007" name="Water Serpent" />
-      <card id="7007" />
-      <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
-      <card id="1614" name="Druid" />
+      <card id="8236" name="Water Serpent" />
+      <card id="8236" />
+      <card id="8228" name="Acidic Spider" />
+      <card id="8228" />
+      <card id="8229" name="Druid" />
       <card id="1626" name="Tusker" />
       <card id="7030" name="Arctic Ambusher" />
       <card id="7035" name="Carrion Tiger" />
-      <card id="1015" mastery_level="2" name="Windfrog" />
+      <card id="8205" mastery_level="2" name="Windfrog" />
       <card id="1629" mastery_level="2" name="Rock Titan" />
-      <card id="5012" mastery_level="3" name="Static Drake" />
+      <card id="8211" mastery_level="3" name="Static Drake" />
       <card id="1329" mastery_level="4" name="Shadow Assassin" />
       <card id="7005" mastery_level="5" name="Tsunamari" />
       <card id="7040" mastery_level="6" name="Warden of the Leaf" />
@@ -6436,16 +6436,16 @@
     <desc>As the two feast, Cedric spots a piece of mail on the counter, underneath a pile of armor. (Ursurio will automatically be appointed)</desc>
     <commander id="264" />
     <deck>
-      <card id="1012" name="Cloud Sylph" />
-      <card id="1012" />
-      <card id="1617" name="Water Elemental" />
-      <card id="1617" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" />
+      <card id="8232" name="Water Conjuration" />
+      <card id="8232" />
       <card id="1032" name="Lunar Elemental" />
       <card id="5041" name="Skylance Raiders" />
       <card id="5046" name="Dawn" />
       <card id="5016" name="Fowl Swarm" />
       <card id="2010" mastery_level="2" name="Silver Wind" />
-      <card id="1012" mastery_level="3" name="Cloud Sylph" />
+      <card id="8203" mastery_level="3" name="Cloud Conjuration" />
       <card id="5028" mastery_level="4" name="Winter Blacksmith" />
       <card id="2007" mastery_level="5" name="Platinum Golem" />
       <card id="5018" mastery_level="5" name="Grand Knight Frog" />

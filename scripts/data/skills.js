@@ -374,15 +374,9 @@ var SKILL_DATA = {
 		"type": "onAttack"
 	},
 	"weaken": {
-		"desc": "Inflicts Weaken on a random enemy creature, reducing Attack.",
+		"desc": "Inflicts Weaken on a random enemy creature, reducing Attack and preventing Attack increases.",
 		"icon": "hinder",
 		"name": "Weaken",
-		"type": "activation"
-	},
-	"weaken2": {
-		"desc": "Inflicts Weaken on a random enemy creature, reducing Attack.",
-		"icon": "hinder",
-		"name": "Weaken2",
 		"type": "activation"
 	},
 	"weakenbge": {

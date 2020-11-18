@@ -8083,5 +8083,1216 @@
       <skill id="weakenself" x="30" />
     </upgrade>
   </unit>
+  <!-- Enemy Rares IDs 8200 -->
+  <!-- ======================== -->
+  <!-- ===== AETHER RARES ===== -->
+  <!-- ======================== -->
+  <unit>
+    <id>8201</id>
+    <card_type>2</card_type>
+    <name>Lightning Conjuration</name>
+    <picture>Lightning_Elemental_A</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>1</attack>
+    <health>6</health>
+    <cost>2</cost>
+    <rarity>2</rarity>
+    <skill id="strike" x="2" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="4" />
+    </upgrade>
+    <desc>Lightning strikes where it pleases.</desc>
+  </unit>
+  <unit>
+    <id>8202</id>
+    <card_type>2</card_type>
+    <name>Archive Golem</name>
+    <picture>Living_Heiroglyphic_A</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>2</attack>
+    <health>9</health>
+    <cost>4</cost>
+    <rarity>2</rarity>
+    <skill id="armored" x="1" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+      <skill id="armored" x="2" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+      <skill id="armored" x="3" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <desc>Those looking for their secrets can find them under archive "P" for pain.</desc>
+  </unit>
+  <unit>
+    <id>8203</id>
+    <card_type>2</card_type>
+    <name>Cloud Conjuration</name>
+    <picture>Sylph_A</picture>
+    <asset_bundle>2</asset_bundle>
+    <attack>1</attack>
+    <health>7</health>
+    <cost>2</cost>
+    <rarity>2</rarity>
+    <skill id="rally" x="1" y="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+      <skill id="rally" x="2" y="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <desc>"Ooooh! Fluffy!" - Last Words of Bilmior the Adventurer</desc>
+  </unit>
+  <unit>
+    <id>8204</id>
+    <card_type>2</card_type>
+    <name>Luminis Cherub</name>
+    <picture>Cherub_A</picture>
+    <attack>1</attack>
+    <health>8</health>
+    <cost>2</cost>
+    <rarity>2</rarity>
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <desc>Shot through the heart, and you're to blame.</desc>
+  </unit>
+  <unit>
+    <id>8205</id>
+    <card_type>2</card_type>
+    <name>Dawnglow Windfrog</name>
+    <picture>Wind_Frog_A</picture>
+    <asset_bundle>7</asset_bundle>
+    <attack>1</attack>
+    <health>4</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="protect" x="1" y="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="protect" x="2" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+      <skill id="armored" x="1" />
+      <skill id="protect" x="2" y="4" />
+    </upgrade>
+    <desc>"It's impossible to attack them when they keep knocking us off our feet!" - Frustrated Soldier</desc>
+  </unit>
+  <unit>
+    <id>8206</id>
+    <card_type>2</card_type>
+    <name>Samael's Judgment</name>
+    <picture>Judgement_A</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>3</attack>
+    <health>7</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="counter" x="1" />
+    <skill id="protect" x="1" y="1" />
+    <type>1</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+      <skill id="counter" x="1" />
+      <skill id="protect" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <skill id="counter" x="2" />
+      <skill id="protect" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="2" />
+      <skill id="protect" x="2" y="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8207</id>
+    <card_type>2</card_type>
+    <name>Luminis Eagle</name>
+    <picture>Armored_Eagle_A</picture>
+    <attack>3</attack>
+    <health>5</health>
+    <cost>2</cost>
+    <rarity>2</rarity>
+    <skill id="armored" x="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>7</health>
+      <skill id="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>8</health>
+      <skill id="armored" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <desc>"Jarad, is that bird wearing a suit of armor?" - Unsuspecting Castle Guard</desc>
+  </unit>
+  <unit>
+    <id>8208</id>
+    <card_type>2</card_type>
+    <name>Oracle of Luminis</name>
+    <picture>Devote_Oracle_A</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>1</attack>
+    <health>5</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="protect" x="1" y="1" />
+    <type>1</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>7</health>
+      <skill id="heal" x="1" y="1" />
+      <skill id="protect" x="1" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+      <skill id="heal" x="2" y="1" />
+      <skill id="protect" x="1" y="1" />
+    </upgrade>
+    <desc>Aether Oracles channel the strength of storms to protect their allies.</desc>
+  </unit>
+  <unit>
+    <id>8209</id>
+    <card_type>2</card_type>
+    <name>Gladius Enforcer</name>
+    <picture>Chariot_A</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>4</cost>
+    <rarity>2</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <skill id="armored" x="1" />
+      <skill id="counter" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="counter" x="2" />
+    </upgrade>
+    <desc>Champion of the people, master of all armaments.</desc>
+  </unit>
+  <unit>
+    <id>8210</id>
+    <card_type>2</card_type>
+    <name>Magic Scroll</name>
+    <picture>Floating_Word_A</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>4</attack>
+    <health>2</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+      <skill id="heal" x="1" y="1" />
+      <skill id="burn" x="1" />
+    </upgrade>
+    <desc>"Brushing your finger along the wrong rune can unleash its stored magic to disastrous effects." - Last Lesson of Magi Neyaroi</desc>
+  </unit>
+  <unit>
+    <id>8211</id>
+    <card_type>2</card_type>
+    <name>Luminis Drake</name>
+    <picture>Static_Drake_A</picture>
+    <asset_bundle>19</asset_bundle>
+    <cost>2</cost>
+    <attack>2</attack>
+    <health>7</health>
+    <skill id="protect" x="2" />
+    <rarity>2</rarity>
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="protect" x="3" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+      <health>9</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8212</id>
+    <card_type>2</card_type>
+    <name>Steam Conjuration</name>
+    <picture>Steam_Elemental_A</picture>
+    <asset_bundle>18</asset_bundle>
+    <cost>2</cost>
+    <attack>1</attack>
+    <health>4</health>
+    <skill id="weaken" x="1" />
+    <rarity>2</rarity>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8213</id>
+    <card_type>2</card_type>
+    <name>Dawnglow Raider</name>
+    <picture>Bombardier_Frog_A</picture>
+    <asset_bundle>28</asset_bundle>
+    <attack>1</attack>
+    <health>6</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="strike" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="1" />
+    </upgrade>
+  </unit>
+  <!-- ======================= -->
+  <!-- ===== CHAOS RARES ===== -->
+  <!-- ======================= -->
+  <unit>
+    <id>8214</id>
+    <card_type>2</card_type>
+    <name>Karthos Skeleton</name>
+    <picture>Flaming_Skeleton_Warrior_A</picture>
+    <asset_bundle>10</asset_bundle>
+    <attack>2</attack>
+    <health>4</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <skill id="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8215</id>
+    <card_type>2</card_type>
+    <name>Binded Demon</name>
+    <picture>Scythe_Demon_A</picture>
+    <asset_bundle>10</asset_bundle>
+    <attack>3</attack>
+    <health>6</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="counter" x="1" />
+    <skill id="pierce" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>7</health>
+      <skill id="counter" x="1" />
+      <skill id="pierce" x="2" />
+      <skill id="leech" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+      <skill id="counter" x="2" />
+      <skill id="pierce" x="2" />
+      <skill id="leech" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+      <skill id="counter" x="2" />
+      <skill id="pierce" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8216</id>
+    <card_type>2</card_type>
+    <name>Karthos Lavafrog</name>
+    <picture>Hellfrog_A</picture>
+    <attack>1</attack>
+    <health>5</health>
+    <cost>2</cost>
+    <rarity>2</rarity>
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>7</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <desc>"I once stepped on one, dang near melted my entire boot!" - Valjhor, Traveling Merchant</desc>
+  </unit>
+  <unit>
+    <id>8217</id>
+    <card_type>2</card_type>
+    <name>Karthos Hound</name>
+    <picture>Skeleton_Hound_A</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>2</attack>
+    <health>5</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="pierce" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>6</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8218</id>
+    <card_type>2</card_type>
+    <name>Nix Conjuration</name>
+    <picture>Void_Elemental_A</picture>
+    <attack>3</attack>
+    <health>7</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="poison" x="1" />
+    <skill id="leech" x="1" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <skill id="poison" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8219</id>
+    <card_type>2</card_type>
+    <name>Binded Imp</name>
+    <picture>Fire_Imp_A</picture>
+    <attack>2</attack>
+    <health>1</health>
+    <cost>2</cost>
+    <rarity>2</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>2</health>
+    </upgrade>
+    <desc>Fire Imp tongue is considered by many to be the spiciest food ingredient in the known world. Some days even they cannot handle it.</desc>
+  </unit>
+  <unit>
+    <id>8220</id>
+    <card_type>2</card_type>
+    <name>Lava Slug</name>
+    <picture>Lava_Slug_A</picture>
+    <attack>2</attack>
+    <health>11</health>
+    <cost>4</cost>
+    <rarity>2</rarity>
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <skill id="burn" x="1" />
+      <skill id="leech" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <desc>"Move! Get out of the way! It's going to trample you! ...Eventually." - Wyld Ranger</desc>
+  </unit>
+  <unit>
+    <id>8221</id>
+    <card_type>2</card_type>
+    <name>Feral Wraith</name>
+    <picture>Wraith_A</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>2</attack>
+    <health>4</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8222</id>
+    <card_type>2</card_type>
+    <name>Unruly Golem</name>
+    <picture>Chaos_Golem_A</picture>
+    <asset_bundle>7</asset_bundle>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>4</cost>
+    <rarity>2</rarity>
+    <skill id="counter" x="2" />
+    <skill id="enfeeble" x="1" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+      <skill id="counter" x="3" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+      <skill id="counter" x="3" />
+      <skill id="enfeeble" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8223</id>
+    <card_type>2</card_type>
+    <name>Goblin Mercenaries</name>
+    <picture>Goblin_Gang_A</picture>
+    <asset_bundle>10</asset_bundle>
+    <attack>3</attack>
+    <health>3</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="pierce" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <skill id="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>5</health>
+      <skill id="pierce" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <desc>"What they lack in intelligence, they make up for in numbers." - Decim, the Firebringer</desc>
+  </unit>
+  <unit>
+    <id>8224</id>
+    <card_type>2</card_type>
+    <name>Tarragon Drake</name>
+    <picture>Ember_Drake_A</picture>
+    <asset_bundle>19</asset_bundle>
+    <cost>2</cost>
+    <attack>3</attack>
+    <health>7</health>
+    <skill id="strike" x="1" />
+    <skill id="pierce" x="2" />
+    <rarity>2</rarity>
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+      <skill id="strike" x="2" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8225</id>
+    <card_type>2</card_type>
+    <name>Tar Pit Conjuration</name>
+    <picture>Tar_Elemental_A</picture>
+    <asset_bundle>18</asset_bundle>
+    <cost>1</cost>
+    <attack>1</attack>
+    <health>4</health>
+    <skill id="fervor" x="1" y="5" />
+    <skill id="leech" x="1" />
+    <rarity>2</rarity>
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="1" y="5" />
+      <skill id="leech" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8226</id>
+    <card_type>2</card_type>
+    <name>Dawnglow Illusionist</name>
+    <picture>Hypnofrog_A</picture>
+    <asset_bundle>28</asset_bundle>
+    <attack>1</attack>
+    <health>7</health>
+    <cost>2</cost>
+    <rarity>2</rarity>
+    <skill id="weaken" x="1" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="weaken" x="2" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+      <skill id="weaken" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+  </unit>
+  <!-- ====================== -->
+  <!-- ===== WYLD RARES ===== -->
+  <!-- ====================== -->
+  <unit>
+    <id>8227</id>
+    <card_type>2</card_type>
+    <name>Wyldwood Ranger</name>
+    <picture>Ranger_A</picture>
+    <asset_bundle>3</asset_bundle>
+    <attack>2</attack>
+    <health>4</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="pierce" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="1" y="3" />
+      <skill id="pierce" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+    <desc>Protectors of Elaria, they tread the woodland as their second home.</desc>
+  </unit>
+  <unit>
+    <id>8228</id>
+    <card_type>2</card_type>
+    <name>Wyldwood Spider</name>
+    <picture>Giant_Spider_A</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>2</attack>
+    <health>7</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="poison" x="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="1" />
+    </upgrade>
+    <desc>"Their poison can bring a full grown Tusker to its knees" - Elyse, Ranger</desc>
+  </unit>
+  <unit>
+    <id>8229</id>
+    <card_type>2</card_type>
+    <name>Wyldwood Druid</name>
+    <picture>Druid_A</picture>
+    <attack>2</attack>
+    <health>8</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="heal" x="1" y="3" />
+    <type>3</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="1" y="3" />
+      <skill id="protect" x="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+      <skill id="heal" x="1" all="1" y="3" />
+      <skill id="protect" x="2" y="3" />
+    </upgrade>
+    <desc>"No one is allowed to touch these bunnies."</desc>
+  </unit>
+  <unit>
+    <id>8230</id>
+    <card_type>2</card_type>
+    <name>Wyldwood Panther</name>
+    <picture>Rune_Panther_A</picture>
+    <asset_bundle>3</asset_bundle>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="pierce" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="jam" c="5" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+      <skill id="jam" c="5" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <desc>When angered, they pull the energy of the earth around them to glow with awesome power.</desc>
+  </unit>
+  <unit>
+    <id>8231</id>
+    <card_type>2</card_type>
+    <name>Feral Werewarg</name>
+    <picture>Werewarg_Alpha_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>4</attack>
+    <health>9</health>
+    <cost>4</cost>
+    <rarity>2</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="1" y="3" />
+    <skill id="pierce" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" y="3" />
+      <skill id="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" y="3" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" all="1" y="3" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8232</id>
+    <card_type>2</card_type>
+    <name>Water Conjuration</name>
+    <picture>Water_Elemental_A</picture>
+    <asset_bundle>3</asset_bundle>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>4</cost>
+    <rarity>2</rarity>
+    <skill id="rally" x="2" y="3" />
+    <skill id="heal" x="2" y="3" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+      <skill id="rally" x="2" y="3" />
+      <skill id="heal" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <skill id="rally" x="2" y="3" />
+      <skill id="heal" x="3" y="3" />
+      <skill id="leech" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+      <skill id="rally" x="2" y="3" />
+      <skill id="heal" x="3" y="3" />
+      <skill id="leech" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8233</id>
+    <card_type>2</card_type>
+    <name>Dawnglow Scout</name>
+    <picture>Frog_Scout_A</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>1</attack>
+    <health>5</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="rally" x="1" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+    </upgrade>
+    <desc>"Their scouts are invaluable, but we need to stop letting them name the new settlements. I can't take another Flytopia." - Expedition Researcher</desc>
+  </unit>
+  <unit>
+    <id>8234</id>
+    <card_type>2</card_type>
+    <name>Earth Conjuration</name>
+    <picture>Earth_Elemental_A</picture>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>4</cost>
+    <rarity>2</rarity>
+    <skill id="armored" x="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <release_set>1</release_set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+      <skill id="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+      <skill id="armored" x="3" />
+    </upgrade>
+    <desc>"Sticks and stones can break my bones... No, that's the end of the rhyme." - Frans, Elaria Bartender</desc>
+  </unit>
+  <unit>
+    <id>8235</id>
+    <card_type>2</card_type>
+    <name>Wyldwood Sapling</name>
+    <picture>Treant_Sapling_A</picture>
+    <asset_bundle>3</asset_bundle>
+    <attack>1</attack>
+    <health>7</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="leech" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+      <skill id="enfeeble" x="1" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <desc>One touch can pull the life force right out of you.</desc>
+  </unit>
+  <unit>
+    <id>8236</id>
+    <card_type>2</card_type>
+    <name>Seastone Serpent</name>
+    <picture>Water_Serpent_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>1</attack>
+    <health>5</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="evade" x="1" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>7</health>
+      <skill id="evade" x="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <desc>"He looks so happy!" "Of course he does. He just found lunch!" - Boloros Sailors</desc>
+  </unit>
+  <unit>
+    <id>8237</id>
+    <card_type>2</card_type>
+    <name>Elaria Drake</name>
+    <picture>Life_Drake_A</picture>
+    <asset_bundle>19</asset_bundle>
+    <cost>3</cost>
+    <attack>2</attack>
+    <health>9</health>
+    <skill id="heal" x="2" y="3" />
+    <skill id="leech" x="2" />
+    <rarity>2</rarity>
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+      <skill id="heal" x="3" y="3" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+      <health>11</health>
+      <skill id="heal" x="3" y="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8238</id>
+    <card_type>2</card_type>
+    <name>Coral Conjuration</name>
+    <picture>Coral_Elemental_A</picture>
+    <asset_bundle>18</asset_bundle>
+    <cost>2</cost>
+    <attack>2</attack>
+    <health>9</health>
+    <skill id="heal" x="1" y="5" />
+    <skill id="leech" x="2" />
+    <rarity>2</rarity>
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8239</id>
+    <card_type>2</card_type>
+    <name>Dawnglow Tamer</name>
+    <picture>Beetle_Frog_A</picture>
+    <asset_bundle>28</asset_bundle>
+    <attack>2</attack>
+    <health>8</health>
+    <cost>3</cost>
+    <rarity>2</rarity>
+    <skill id="fervor" y="4" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>13</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
 </root>
 

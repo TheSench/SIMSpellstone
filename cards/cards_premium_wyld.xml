@@ -766,28 +766,27 @@
     <name>Treant Sapling</name>
     <picture>Treant_Sapling_A</picture>
     <asset_bundle>3</asset_bundle>
-    <attack>1</attack>
-    <health>7</health>
+    <attack>5</attack>
+    <health>20</health>
     <cost>3</cost>
     <rarity>2</rarity>
-    <skill id="leech" x="1" />
+    <skill id="leech" x="5" />
     <type>3</type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>9</health>
-      <skill id="leech" x="2" />
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="enfeeble" x="1" />
-      <skill id="leech" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>2</attack>
-      <skill id="enfeeble" x="1" />
-      <skill id="leech" x="3" />
+      <attack>6</attack>
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="6" />
     </upgrade>
     <desc>One touch can pull the life force right out of you.</desc>
   </unit>
@@ -798,26 +797,26 @@
     <name>Treepalm Sapling</name>
     <picture>Treant_Sapling_B</picture>
     <asset_bundle>3</asset_bundle>
-    <attack>2</attack>
-    <health>10</health>
+    <attack>7</attack>
+    <health>24</health>
     <cost>3</cost>
     <rarity>2</rarity>
-    <skill id="enfeeble" x="1" />
-    <skill id="leech" x="3" />
+    <skill id="enfeeble" x="5" />
+    <skill id="leech" x="7" />
     <type>3</type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="enfeeble" x="2" />
-      <skill id="leech" x="3" />
+      <skill id="enfeeble" x="6" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>11</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>3</attack>
+      <attack>8</attack>
     </upgrade>
   </unit>
   <unit>
@@ -827,26 +826,26 @@
     <name>Treefist Sapling</name>
     <picture>Treant_Sapling_C</picture>
     <asset_bundle>3</asset_bundle>
-    <attack>3</attack>
-    <health>12</health>
+    <attack>8</attack>
+    <health>27</health>
     <cost>3</cost>
     <rarity>2</rarity>
-    <skill id="enfeeble" x="2" />
-    <skill id="leech" x="3" />
+    <skill id="enfeeble" x="7" />
+    <skill id="leech" x="8" />
     <type>3</type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>4</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="enfeeble" x="2" />
-      <skill id="leech" x="4" />
+      <skill id="enfeeble" x="8" />
+      <skill id="leech" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -855,8 +854,8 @@
     <name>Water Serpent</name>
     <picture>Water_Serpent_A</picture>
     <asset_bundle>1</asset_bundle>
-    <attack>1</attack>
-    <health>5</health>
+    <attack>3</attack>
+    <health>7</health>
     <cost>1</cost>
     <rarity>2</rarity>
     <skill id="evade" x="1" />
@@ -865,7 +864,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>6</health>
+      <health>8</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -874,7 +873,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>7</health>
+      <health>9</health>
       <skill id="evade" x="1" />
       <skill id="jam" c="5" />
     </upgrade>
@@ -887,8 +886,8 @@
     <name>Lake Serpent</name>
     <picture>Water_Serpent_B</picture>
     <asset_bundle>1</asset_bundle>
-    <attack>2</attack>
-    <health>7</health>
+    <attack>4</attack>
+    <health>9</health>
     <cost>1</cost>
     <rarity>2</rarity>
     <skill id="evade" x="1" />
@@ -898,7 +897,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>8</health>
+      <health>10</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -907,7 +906,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>9</health>
+      <health>11</health>
     </upgrade>
   </unit>
   <unit>
@@ -917,8 +916,8 @@
     <name>Sea Serpent</name>
     <picture>Water_Serpent_C</picture>
     <asset_bundle>1</asset_bundle>
-    <attack>2</attack>
-    <health>10</health>
+    <attack>5</attack>
+    <health>11</health>
     <cost>1</cost>
     <rarity>2</rarity>
     <skill id="evade" x="2" />
@@ -928,11 +927,11 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>11</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>3</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -1438,30 +1437,30 @@
     <picture>Life_Drake_A</picture>
     <asset_bundle>19</asset_bundle>
     <cost>3</cost>
-    <attack>2</attack>
-    <health>9</health>
-    <skill id="heal" x="2" y="3" />
-    <skill id="leech" x="2" />
+    <attack>5</attack>
+    <health>16</health>
+    <skill id="heal" x="5" y="3" />
+    <skill id="leech" x="5" />
     <rarity>2</rarity>
     <type>3</type>
     <sub_type>9</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>10</health>
-      <skill id="heal" x="3" y="3" />
-      <skill id="leech" x="2" />
+      <health>18</health>
+      <skill id="heal" x="6" y="3" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>3</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>4</attack>
-      <health>11</health>
-      <skill id="heal" x="3" y="3" />
-      <skill id="leech" x="3" />
+      <attack>7</attack>
+      <health>19</health>
+      <skill id="heal" x="6" y="3" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -1472,27 +1471,27 @@
     <picture>Life_Drake_A</picture>
     <asset_bundle>19</asset_bundle>
     <cost>3</cost>
-    <attack>4</attack>
-    <health>13</health>
-    <skill id="heal" x="3" y="3" />
-    <skill id="leech" x="3" />
+    <attack>8</attack>
+    <health>20</health>
+    <skill id="heal" x="6" y="3" />
+    <skill id="leech" x="8" />
     <rarity>2</rarity>
     <type>3</type>
     <sub_type>9</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>14</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="heal" x="4" y="3" />
-      <skill id="leech" x="3" />
+      <skill id="heal" x="7" y="3" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="heal" x="4" y="3" />
-      <skill id="leech" x="4" />
+      <skill id="heal" x="8" y="3" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -1503,27 +1502,27 @@
     <picture>Life_Drake_B</picture>
     <asset_bundle>19</asset_bundle>
     <cost>3</cost>
-    <attack>5</attack>
-    <health>15</health>
-    <skill id="heal" x="4" y="3" />
-    <skill id="leech" x="4" />
+    <attack>9</attack>
+    <health>24</health>
+    <skill id="heal" x="8" y="3" />
+    <skill id="leech" x="9" />
     <rarity>2</rarity>
     <type>3</type>
     <sub_type>9</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="heal" x="5" y="3" />
-      <skill id="leech" x="4" />
+      <skill id="heal" x="9" y="3" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="heal" x="5" y="3" />
-      <skill id="leech" x="5" />
+      <skill id="heal" x="10" y="3" />
+      <skill id="leech" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -2036,25 +2035,27 @@
     <picture>Coral_Elemental_A</picture>
     <asset_bundle>18</asset_bundle>
     <cost>2</cost>
-    <attack>2</attack>
-    <health>9</health>
-    <skill id="heal" x="1" y="5" />
-    <skill id="leech" x="2" />
+    <attack>4</attack>
+    <health>10</health>
+    <skill id="heal" x="3" y="5" />
+    <skill id="leech" x="4" />
     <rarity>2</rarity>
     <type>3</type>
     <sub_type>5</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>10</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>3</attack>
+      <attack>5</attack>
+      <skill id="heal" x="3" y="5" />
+      <skill id="leech" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>11</health>
+      <health>14</health>
     </upgrade>
   </unit>
   <unit>
@@ -2065,27 +2066,26 @@
     <picture>Coral_Elemental_A</picture>
     <asset_bundle>18</asset_bundle>
     <cost>2</cost>
-    <attack>3</attack>
-    <health>12</health>
-    <skill id="heal" x="1" y="5" />
-    <skill id="leech" x="2" />
+    <attack>5</attack>
+    <health>15</health>
+    <skill id="heal" x="4" y="5" />
+    <skill id="leech" x="5" />
     <rarity>2</rarity>
     <type>3</type>
     <sub_type>5</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="heal" x="2" y="5" />
-      <skill id="leech" x="2" />
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="heal" x="2" y="5" />
-      <skill id="leech" x="3" />
+      <skill id="heal" x="5" y="5" />
+      <skill id="leech" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -2096,29 +2096,28 @@
     <picture>Coral_Elemental_B</picture>
     <asset_bundle>18</asset_bundle>
     <cost>2</cost>
-    <attack>4</attack>
-    <health>14</health>
-    <skill id="heal" x="2" y="5" />
-    <skill id="leech" x="3" />
+    <attack>6</attack>
+    <health>20</health>
+    <skill id="heal" x="6" y="5" />
+    <skill id="leech" x="6" />
     <rarity>2</rarity>
     <type>3</type>
     <sub_type>5</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="heal" x="3" y="5" />
-      <skill id="leech" x="3" />
+      <skill id="heal" x="7" y="5" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="heal" x="3" y="5" />
-      <skill id="leech" x="4" />
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>15</health>
-      <skill id="heal" x="4" y="5" />
-      <skill id="leech" x="4" />
+      <attack>7</attack>
+      <skill id="heal" x="7" y="5" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -2654,26 +2653,26 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
-    <attack>2</attack>
-    <health>8</health>
+    <attack>5</attack>
+    <health>14</health>
     <cost>3</cost>
     <rarity>2</rarity>
-    <skill id="fervor" y="4" x="1" />
+    <skill id="fervor" y="4" x="2" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>13</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>9</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>10</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>3</attack>
+      <attack>6</attack>
     </upgrade>
   </unit>
   <unit>
@@ -2685,28 +2684,29 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
-    <attack>3</attack>
-    <health>11</health>
+    <attack>6</attack>
+    <health>20</health>
     <cost>3</cost>
     <rarity>2</rarity>
-    <skill id="fervor" y="4" x="1" />
+    <skill id="fervor" y="4" x="3" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>13</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="fervor" y="4" x="1" />
-      <skill id="leech" x="1" />
+      <skill id="fervor" y="4" x="3" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>12</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="fervor" y="4" x="2" />
-      <skill id="leech" x="1" />
+      <attack>7</attack>
+      <skill id="fervor" y="4" x="3" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -2718,28 +2718,29 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
-    <attack>3</attack>
-    <health>13</health>
+    <attack>7</attack>
+    <health>24</health>
     <cost>3</cost>
     <rarity>2</rarity>
-    <skill id="fervor" y="4" x="2" />
-    <skill id="leech" x="1" />
+    <skill id="fervor" y="4" x="3" />
+    <skill id="leech" x="7" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>13</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>14</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>4</attack>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="fervor" y="4" x="3" />
-      <skill id="leech" x="1" />
+      <attack>8</attack>
+      <skill id="fervor" y="4" x="4" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
   <unit>

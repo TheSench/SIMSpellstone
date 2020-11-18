@@ -53,8 +53,8 @@
     <rarity>2</rarity>
     <level>1</level>
     <salvage0>8</salvage0>
-    <salvage1>55</salvage1>
-    <salvage2>120</salvage2>
+    <salvage1>100</salvage1>
+    <salvage2>300</salvage2>
     <sp_cost>5</sp_cost>
     <buyback_cost0>25</buyback_cost0>
     <buyback_cost1>110</buyback_cost1>
@@ -63,25 +63,25 @@
   <card_level>
     <rarity>2</rarity>
     <level>2</level>
-    <salvage0>10</salvage0>
-    <salvage1>60</salvage1>
-    <salvage2>125</salvage2>
+    <salvage0>5</salvage0>
+    <salvage1>105</salvage1>
+    <salvage2>305</salvage2>
     <sp_cost>15</sp_cost>
   </card_level>
   <card_level>
     <rarity>2</rarity>
     <level>3</level>
-    <salvage0>15</salvage0>
-    <salvage1>65</salvage1>
-    <salvage2>135</salvage2>
+    <salvage0>20</salvage0>
+    <salvage1>120</salvage1>
+    <salvage2>320</salvage2>
     <sp_cost>30</sp_cost>
   </card_level>
   <card_level>
     <rarity>2</rarity>
     <level>4</level>
-    <salvage0>30</salvage0>
-    <salvage1>70</salvage1>
-    <salvage2>145</salvage2>
+    <salvage0>50</salvage0>
+    <salvage1>150</salvage1>
+    <salvage2>350</salvage2>
   </card_level>
   <!-- Epic -->
   <card_level>
