@@ -990,7 +990,7 @@
     <picture>Wind_Frog_A</picture>
     <asset_bundle>7</asset_bundle>
     <attack>3</attack>
-    <health>9</health>
+    <health>6</health>
     <cost>1</cost>
     <rarity>2</rarity>
     <skill id="protect" x="2" y="4" />
@@ -1000,7 +1000,7 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>11</health>
+      <health>7</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -1022,7 +1022,7 @@
     <picture>Wind_Frog_B</picture>
     <asset_bundle>7</asset_bundle>
     <attack>4</attack>
-    <health>12</health>
+    <health>7</health>
     <cost>1</cost>
     <rarity>2</rarity>
     <skill id="armored" x="2" />
@@ -1033,11 +1033,11 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>14</health>
+      <health>8</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>16</health>
+      <health>9</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -1052,7 +1052,7 @@
     <picture>Wind_Frog_C</picture>
     <asset_bundle>7</asset_bundle>
     <attack>5</attack>
-    <health>18</health>
+    <health>10</health>
     <cost>1</cost>
     <rarity>2</rarity>
     <skill id="armored" x="2" />
@@ -1063,11 +1063,11 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>20</health>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>22</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>4</level>

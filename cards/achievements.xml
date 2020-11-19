@@ -14775,6 +14775,24 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Noble Swordfish Spellstone -->
+  <achievement>
+    <id>3636</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Arena Rematch</name>
+    <desc>Complete the 'Arena Rematch' campaign on Mastery Level 1.</desc>
+    <mission_req>6534</mission_req>
+    <locked_start_time>1606410000</locked_start_time>
+    <!--  Thursday, 26 November 2020 17:00:00 -->
+    <req>
+      <campaign>1269</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8027" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

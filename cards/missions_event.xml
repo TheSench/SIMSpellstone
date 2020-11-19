@@ -48606,6 +48606,162 @@
     </speech>
   </mission>
   <!-- Event 26 Boss Node -->
+  <mission>
+    <id>6534</id>
+    <name>Seastone Staff Power</name>
+    <energy>9</energy>
+    <desc>Kensho wields the legendary Seastone Staff. Once used to separate The Void from corrupted souls, he instead uses it now to siphon Elementals into his being.</desc>
+    <commander id="442" />
+    <deck>
+      <card id="5198" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="5244" />
+      <!-- OLD -->
+      <card id="5110" />
+      <!-- NEW -->
+      <card id="5227" />
+      <!-- OLD -->
+      <card id="7108" />
+      <!-- OLD -->
+      <card id="1044" />
+      <!-- NEW -->
+      <card id="6174" />
+      <!-- NEW -->
+      <card id="6246" />
+      <!-- NEW -->
+      <card id="7083" />
+      <!-- OLD -->
+      <card id="7227" />
+      <!-- OLD -->
+      <card id="6198" />
+      <!-- OLD -->
+      <card id="5034" />
+      <!-- NEW -->
+      <card id="6055" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6535</id>
+    <name>Kensho's Aether</name>
+    <energy>9</energy>
+    <desc>Solaron's presence looms heavily through the air. The weight of Aether eyes bore into you and Kensho, judging your being. Monsters gather at Kensho's bidding, throwing themselves against your might.</desc>
+    <commander id="442" />
+    <deck>
+      <card id="5198" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="5244" />
+      <!-- OLD -->
+      <card id="5110" />
+      <!-- NEW -->
+      <card id="5227" />
+      <!-- OLD -->
+      <card id="7108" />
+      <!-- OLD -->
+      <card id="1044" />
+      <!-- NEW -->
+      <card id="6174" />
+      <!-- NEW -->
+      <card id="6246" />
+      <!-- NEW -->
+      <card id="7083" />
+      <!-- OLD -->
+      <card id="7227" />
+      <!-- OLD -->
+      <card id="6198" />
+      <!-- OLD -->
+      <card id="5034" />
+      <!-- NEW -->
+      <card id="6055" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6536</id>
+    <name>Arena Fighting</name>
+    <energy>9</energy>
+    <desc>Gladius may have been repurposed as a Scriptorium, but you still remember the last time you saw it as the Arena. You can feel the spirits of the past alongside you, the image of Batara helping you fight against the Aether creatures.</desc>
+    <commander id="442" />
+    <deck>
+      <card id="5198" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="5244" />
+      <!-- OLD -->
+      <card id="5110" />
+      <!-- NEW -->
+      <card id="5227" />
+      <!-- OLD -->
+      <card id="7108" />
+      <!-- OLD -->
+      <card id="1044" />
+      <!-- NEW -->
+      <card id="6174" />
+      <!-- NEW -->
+      <card id="6246" />
+      <!-- NEW -->
+      <card id="7083" />
+      <!-- OLD -->
+      <card id="7227" />
+      <!-- OLD -->
+      <card id="6198" />
+      <!-- OLD -->
+      <card id="5034" />
+      <!-- NEW -->
+      <card id="6055" />
+      <!-- NEW -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6537</id>
+    <name>Continued Conclusion</name>
+    <energy>9</energy>
+    <desc>With a mighty blow you defeat Kensho. The magic keeping together his Elemental form vanishes, and you grab the Seastone Staff. Solaron unleashes a mighty roar, the ceiling rumbling ominously...</desc>
+    <commander id="442" />
+    <deck>
+      <card id="5198" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="2116" />
+      <!-- OLD -->
+      <card id="5244" />
+      <!-- OLD -->
+      <card id="5110" />
+      <!-- NEW -->
+      <card id="5227" />
+      <!-- OLD -->
+      <card id="7108" />
+      <!-- OLD -->
+      <card id="1044" />
+      <!-- NEW -->
+      <card id="6174" />
+      <!-- NEW -->
+      <card id="6246" />
+      <!-- NEW -->
+      <card id="7083" />
+      <!-- OLD -->
+      <card id="7227" />
+      <!-- OLD -->
+      <card id="6198" />
+      <!-- OLD -->
+      <card id="5034" />
+      <!-- NEW -->
+      <card id="6055" />
+      <!-- NEW -->
+    </deck>
+  </mission>
   <!-- Event 26 Node 3 -->
   <!-- Event 26 Node 4 -->
 </root>
