@@ -1008,6 +1008,7 @@ var SIMULATOR = {};
 				}
 
 				target.attack_weaken += weaken;
+				target.attackIncreasePrevention += weaken;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
@@ -1092,6 +1093,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[targets[key]];
 
 				var rally_amt = rally + getSkillMult(skill, target, 'attack');
+				rally_amt = adjustAttackIncrease(target, rally_amt);
 
 				target.attack_rally += rally_amt;
 				if (debug) {
@@ -1149,6 +1151,7 @@ var SIMULATOR = {};
 				}
 
 				var rally_amt = rally + getSkillMult(skill, target, 'attack');
+				rally_amt = adjustAttackIncrease(target, rally_amt);
 
 				target.attack_rally += rally_amt;
 				if (debug) {
@@ -1188,13 +1191,14 @@ var SIMULATOR = {};
 						target.nullified--;
 						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
-						target.attack_rally += rally;
 						var protectAmount = Math.ceil(rally * 0.5);
+						var rally_amt = adjustAttackIncrease(target, rally);
+						target.attack_rally += rally_amt;
 						target.protected += protectAmount;
 						if (debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 							echo += debug_name(src_card) + ' activates ' + skill.id +
-								', empowering ' + debug_name(target) + ' by ' + rally +
+								', empowering ' + debug_name(target) + ' by ' + rally_amt +
 								' and protecting it by ' + protectAmount + '<br>';
 						}
 					}
@@ -1231,10 +1235,11 @@ var SIMULATOR = {};
 						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
 						affected++;
-						target.attack_rally += rally;
+						var rally_amt = adjustAttackIncrease(target, rally);
+						target.attack_rally += rally_amt;
 						if (debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-							echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' by ' + rally + '<br>';
+							echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 						}
 					}
 				}
@@ -1273,7 +1278,8 @@ var SIMULATOR = {};
 			}
 
 			if (fervorAmount) {
-				src_card['attack_rally'] += fervorAmount;
+				fervorAmount = adjustAttackIncrease(target, fervorAmount);
+				src_card.attack_rally += fervorAmount;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
@@ -1691,6 +1697,7 @@ var SIMULATOR = {};
 			swarm += enhanced;
 
 			var weakest = choose_random_target(targets)[0];
+			swarm = adjustAttackIncrease(weakest, swarm);
 			weakest.attack_berserk += swarm;
 
 			if (debug) {
@@ -2044,8 +2051,9 @@ var SIMULATOR = {};
 			if (current_assault.valor) {
 				var enemy = field_o_assaults[i];
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
-					current_assault.attack_valor += current_assault.valor;
-					if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
+					var valor = adjustAttackIncrease(current_assault, current_assault.valor);
+					current_assault.attack_valor += valor;
+					if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
 				} else if (debug) {
 					echo += debug_name(current_assault) + ' activates valor but ';
 					if (!enemy) {
@@ -2909,6 +2917,7 @@ var SIMULATOR = {};
 
 					if (target.isAlive()) {
 						var fury = furyBase + furyEnhancement;
+						fury = adjustAttackIncrease(target, fury);
 						target.attack_berserk += fury;
 						if (debug) {
 							echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
@@ -2918,9 +2927,11 @@ var SIMULATOR = {};
 					doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
 				}
 
-				if (target.enraged > 0) {
-					target.attack_berserk += target.enraged;
-					if (debug) echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
+				var enraged = target.enraged;
+				if (enraged > 0) {
+					enraged = adjustAttackIncrease(target, enraged);
+					target.attack_berserk += enraged;
+					if (debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
 				}
 			}
 
@@ -2932,6 +2943,7 @@ var SIMULATOR = {};
 					var berserk = current_assault.berserk;
 					var enhanced = getEnhancement(current_assault, 'berserk', berserk);
 					berserk += enhanced;
+					berserk = adjustAttackIncrease(current_assault, berserk);
 
 					current_assault.attack_berserk += berserk;
 					if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
@@ -2944,6 +2956,7 @@ var SIMULATOR = {};
 					var devour = current_assault.devour;
 					var enhanced = getEnhancement(current_assault, 'devour', devour);
 					devour += enhanced;
+					devour = adjustAttackIncrease(current_assault, devour);
 
 					current_assault.attack_berserk += devour;
 

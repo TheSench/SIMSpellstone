@@ -223,6 +223,7 @@ var defaultStatusValues = {
     mark_target: 0,
     // Other Statuses
     // Numeric-Statuses
+    attackIncreasePrevention: 0,
     barrier_ice: 0,
     corroded: 0,
     enfeebled: 0,
@@ -685,6 +686,16 @@ var getEnhancement = function(card, s, base) {
     return enhanced;
 };
 
+var adjustAttackIncrease = function(card, originalIncrease) {
+    if (card.attackIncreasePrevention) {
+        var adjustment = Math.min(card.attackIncreasePrevention, originalIncrease);
+        card.attackIncreasePrevention - adjustment;
+        return originalIncrease - adjustment;
+    } else {
+        return originalIncrease;
+    }
+}
+
 var getSkillMult = function(skill, target, defaultBase) {
     var mult = skill.mult;
     if (mult) {
@@ -696,7 +707,6 @@ var getSkillMult = function(skill, target, defaultBase) {
 };
 
 var isImbued = function(card, skillID, i) {
-    var activation = false;
     var imbueSkillsKey;
     var skillType = SKILL_DATA[skillID].type;
     switch (skillType) {
