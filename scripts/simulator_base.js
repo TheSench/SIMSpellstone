@@ -1278,7 +1278,7 @@ var SIMULATOR = {};
 			}
 
 			if (fervorAmount) {
-				fervorAmount = adjustAttackIncrease(target, fervorAmount);
+				fervorAmount = adjustAttackIncrease(src_card, fervorAmount);
 				src_card.attack_rally += fervorAmount;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
