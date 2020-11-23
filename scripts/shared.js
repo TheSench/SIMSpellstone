@@ -237,11 +237,11 @@ var defaultStatusValues = {
     poisoned: 0,
     protected: 0,
     scorched: 0,
+    silenced: 0,
     warded: 0,
     // Boolean-Status
     jammed: false,
     jammedSelf: false,
-    silenced: false,
     bash_triggered: false,
     dualstrike_triggered: false,
     ondeath_triggered: false,

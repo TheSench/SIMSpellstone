@@ -2511,7 +2511,9 @@ var SIMULATOR = {};
 			current_assault.nullified = 0;
 			current_assault.dualstrike_triggered = false;
 			current_assault.bash_triggered = false;
-			current_assault.silenced = false;
+			if (current_assault.silenced) {
+				current_assault.silenced--;
+			}
 
 			// Regenerate
 			if (current_assault.regenerate && current_assault.isDamaged() && !current_assault.silenced) {
@@ -2808,17 +2810,6 @@ var SIMULATOR = {};
 				if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
 			}
 
-			// Silence
-			// - Attacker must have taken damage
-			// - Target must be an assault
-			if (current_assault.silence) {
-				target.silenced = true;
-				// Remove passive statuses for this turn
-				target.invisible = 0;
-				target.warded = 0;
-				if (debug) echo += debug_name(current_assault) + ' inflicts silence on ' + debug_name(target) + '<br>';
-			}
-
 			// Daze
 			// - Target must have taken damage
 			// - Target must be an assault
@@ -2978,6 +2969,7 @@ var SIMULATOR = {};
 				if (current_assault.swarm) {
 					onAttackSkills.swarm(current_assault, target);
 				}
+				
 			}
 		}
 
@@ -3000,6 +2992,17 @@ var SIMULATOR = {};
 			if (debug) {
 				echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 			}
+		}
+
+		// Silence
+		// - Attacker must have taken damage
+		// - Target must be an assault
+		if (current_assault.silence && damage > 0 && current_assault.isAlive() && target.isAssault() && target.isAlive()) {
+			target.silenced = current_assault.silence;
+			// Remove passive statuses for this turn
+			target.invisible = 0;
+			target.warded = 0;
+			if (debug) echo += debug_name(current_assault) + ' inflicts silence on ' + debug_name(target) + '<br>';
 		}
 
 		if (!current_assault.isAlive()) {
