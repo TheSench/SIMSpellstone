@@ -9154,6 +9154,43 @@
     </rewards>
     <find_item id="3122" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node -->
+  <campaign>
+    <id>1269</id>
+    <name>Arena Rematch</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1267" level="1" />
+    <locked_start_time>1606410000</locked_start_time>
+    <!--  Thursday, 26 November 2020 17:00:00 -->
+    <battleground_id>2108</battleground_id>
+    <location_id>32</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>480</x>
+    <y>500</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6534</mission_id>
+      <mission_id>6535</mission_id>
+      <mission_id>6536</mission_id>
+      <mission_id>6537</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3124" />
+      <!--  Noble Swordfish Spellstone  -->
+      <item level="5" id="3124" />
+      <!--  Noble Swordfish Spellstone  -->
+      <item level="6" id="3124" />
+      <!--  Noble Swordfish Spellstone  -->
+      <item level="7" id="3124" />
+      <!--  Noble Swordfish Spellstone  -->
+    </rewards>
+    <find_item id="3122" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

@@ -135,9 +135,9 @@
   <store_item>
     <id>7</id>
     <name>Legacy Basic Pack x10</name>
-    <category>1</category>
-    <desc>A pack intended for collectors! Gives one random card from Standard or Legacy Set. Ten times!</desc>
-    <priority>-3</priority>
+    <category>2</category>
+    <desc>A pack intended for collectors! This pack gives ten random cards from both the Standard Set and retired cards from the Legacy Set.</desc>
+    <priority>1</priority>
     <asset_prefab>legacy_pack_crystal</asset_prefab>
     <bundle>35</bundle>
     <icon>icon_basic_crystal</icon>
@@ -2963,17 +2963,24 @@
     <start_offset>61200</start_offset>
     <costed_items>
       <item id="11" number="1" purchase1="800" purchase2="1000" purchase3="1400" purchase4="2000" purchase5="3000" scalar="1500" />
+      <!-- Rare Pack -->
       <!-- <item id='12' number='1' purchase1='8000' purchase2='16000' purchase3='32000' purchase4='64000' purchase5='96000' scalar='48000' />
 			<item id='1002' number='1' purchase1='100' purchase2='200' purchase3='400' purchase4='800' purchase5='1200' scalar='600' />
 			<item id='1003' number='1' purchase1='200' purchase2='400' purchase3='800' purchase4='1600' purchase5='2400' scalar='1200' />
 			<item id='1004' number='1' purchase1='400' purchase2='800' purchase3='1600' purchase4='2400' purchase5='3600' scalar='1800' /> -->
       <item id="4001" number="1" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
+      <!-- Inscription Powder -->
       <item id="2001" number="1" purchase1="150" purchase2="300" purchase3="600" purchase4="1000" purchase5="1500" scalar="800" />
+      <!-- Arcane Fragment -->
       <item id="2501" number="10" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" />
+      <!-- Blue Fire Soul -->
       <!-- <item id='1021' number='1' purchase1='300' purchase2='600' purchase3='1200' purchase4='1900' purchase5='2900' scalar='1500' /> -->
       <item id="4011" number="1" purchase1="4000" purchase2="6000" purchase3="10000" purchase4="14000" purchase5="18000" scalar="4000" />
+      <!-- Rare Runeshell -->
       <item id="2515" number="1" purchase1="1000" purchase2="2000" purchase3="4000" purchase4="8000" purchase5="12000" scalar="6000" />
+      <!-- Embersoul -->
       <item id="2522" number="1" purchase1="1000" purchase2="2000" purchase3="4000" purchase4="8000" purchase5="12000" scalar="6000" />
+      <!-- Brinesoul -->
     </costed_items>
   </store_item>
   <store_item>

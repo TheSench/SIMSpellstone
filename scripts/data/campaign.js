@@ -4921,6 +4921,21 @@ var CAMPAIGNS = {
 		],
 		"name": "Search for Dyrnwyn"
 	},
+	"1269": {
+		"battleground_id": "2108",
+		"id": "1269",
+		"items": {
+			"3122": 0.4
+		},
+		"location_id": "32",
+		"missions": [
+			"6534",
+			"6535",
+			"6536",
+			"6537"
+		],
+		"name": "Arena Rematch"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
