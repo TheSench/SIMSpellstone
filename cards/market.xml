@@ -137,7 +137,7 @@
     <name>Legacy Basic Pack x10</name>
     <category>2</category>
     <desc>A pack intended for collectors! This pack gives ten random cards from both the Standard Set and retired cards from the Legacy Set.</desc>
-    <priority>1</priority>
+    <priority>51</priority>
     <asset_prefab>legacy_pack_crystal</asset_prefab>
     <bundle>35</bundle>
     <icon>icon_basic_crystal</icon>
