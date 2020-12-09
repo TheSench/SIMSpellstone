@@ -14793,6 +14793,133 @@
       <item id="8027" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 26 weeks 5-8 -->
+  <achievement>
+    <id>3637</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Solaron's Domain</name>
+    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 1.</desc>
+    <mission_req>6538</mission_req>
+    <locked_start_time>1607619600</locked_start_time>
+    <!--  Thursday, 10 December 2020 17:00:00 -->
+    <req>
+      <campaign>1270</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3122" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7067" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3638</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Solaron's Domain</name>
+    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 2.</desc>
+    <mission_req>6538</mission_req>
+    <locked_start_time>1607619600</locked_start_time>
+    <!--  Thursday, 10 December 2020 17:00:00 -->
+    <achievement_req>3637</achievement_req>
+    <req>
+      <campaign>1270</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3639</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Solaron's Domain</name>
+    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 4.</desc>
+    <mission_req>6538</mission_req>
+    <locked_start_time>1607619600</locked_start_time>
+    <!--  Thursday, 10 December 2020 17:00:00 -->
+    <achievement_req>3638</achievement_req>
+    <req>
+      <campaign>1270</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3640</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Solaron's Domain</name>
+    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 6.</desc>
+    <mission_req>6538</mission_req>
+    <locked_start_time>1607619600</locked_start_time>
+    <!--  Thursday, 10 December 2020 17:00:00 -->
+    <achievement_req>3639</achievement_req>
+    <req>
+      <campaign>1270</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3641</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Aether Imbalance</name>
+    <desc>Complete the 'Aether Imbalance' campaign on Mastery Level 2.</desc>
+    <mission_req>6544</mission_req>
+    <locked_start_time>1608829200</locked_start_time>
+    <!--  Thursday, 24 December 2020 17:00:00 -->
+    <req>
+      <campaign>1271</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3642</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Aether Imbalance</name>
+    <desc>Complete the 'Aether Imbalance' campaign on Mastery Level 4.</desc>
+    <mission_req>6544</mission_req>
+    <locked_start_time>1608829200</locked_start_time>
+    <!--  Thursday, 24 December 2020 17:00:00 -->
+    <achievement_req>3641</achievement_req>
+    <req>
+      <campaign>1271</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3643</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Aether Imbalance</name>
+    <desc>Complete the 'Aether Imbalance' campaign on Mastery Level 6.</desc>
+    <mission_req>6544</mission_req>
+    <locked_start_time>1608829200</locked_start_time>
+    <!--  Thursday, 24 December 2020 17:00:00 -->
+    <achievement_req>3642</achievement_req>
+    <req>
+      <campaign>1271</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -15365,6 +15492,32 @@
       <campaign>1264</campaign>
       <!-- 3rd node -->
       <campaign>1265</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Gladius Scriptorium -->
+    <id>4027</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Gladius Scriptorium</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Gladius Scriptorium.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6522</mission_req>
+    <req>
+      <campaign>1267</campaign>
+      <!-- 1st node -->
+      <campaign>1268</campaign>
+      <!-- 2nd node -->
+      <campaign>1269</campaign>
+      <!-- Boss node -->
+      <campaign>1270</campaign>
+      <!-- 3rd node -->
+      <campaign>1271</campaign>
       <!-- 4th node -->
       <level>7</level>
     </req>

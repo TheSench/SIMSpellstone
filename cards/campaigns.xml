@@ -9191,6 +9191,81 @@
     </rewards>
     <find_item id="3122" drop_per_energy=".4" />
   </campaign>
+  <!-- ================================== Campaign Event 26 weeks 5-8 / Gladius Scriptorium ================================== -->
+  <campaign>
+    <id>1270</id>
+    <name>Solaron's Domain</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1607619600</locked_start_time>
+    <!--  Thursday, 10 December 2020 17:00:00 -->
+    <battleground_id>2109</battleground_id>
+    <location_id>32</location_id>
+    <x>615</x>
+    <y>350</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6538</mission_id>
+      <mission_id>6539</mission_id>
+      <mission_id>6540</mission_id>
+      <mission_id>6541</mission_id>
+      <mission_id>6542</mission_id>
+      <mission_id>6543</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2201" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2042" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3123" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3122" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1271</id>
+    <name>Aether Imbalance</name>
+    <campaign_req id="1270" level="1" />
+    <locked_start_time>1608829200</locked_start_time>
+    <!--  Thursday, 24 December 2020 17:00:00 -->
+    <battleground_id>2110</battleground_id>
+    <location_id>32</location_id>
+    <x>840</x>
+    <y>290</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6544</mission_id>
+      <mission_id>6545</mission_id>
+      <mission_id>6546</mission_id>
+      <mission_id>6547</mission_id>
+      <mission_id>6548</mission_id>
+      <mission_id>6549</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2202" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2040" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3123" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3122" drop_per_energy=".8" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

@@ -48763,6 +48763,374 @@
     </deck>
   </mission>
   <!-- Event 26 Node 3 -->
+  <mission>
+    <id>6538</id>
+    <name>Aether Home</name>
+    <energy>18</energy>
+    <desc>Aether creatures seem to be expecting your every turn. Fighting comes and goes in waves. From one fierce fight you go to eerie peace...</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8092" />
+      <card id="7007" />
+      <card id="2076" />
+      <card id="2076" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5011" />
+      <card id="1027" />
+      <card id="1023" />
+      <card id="1027" mastery_level="2" />
+      <card id="1032" mastery_level="3" />
+      <card id="5011" mastery_level="4" />
+      <card id="5104" mastery_level="5" />
+      <card id="5105" mastery_level="6" />
+      <card id="1044" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>I didn't expect this many enemies beneath Skyhaven.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I pursued Kensho down here, however... this might be a trap.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6539</id>
+    <name>Fighting Further Monsters</name>
+    <energy>18</energy>
+    <desc>Aether monsters spring out to attack! They have you and the group surrounded. And you sense a dense presence nearby...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8136" />
+      <card id="7007" />
+      <card id="5107" />
+      <card id="5107" />
+      <card id="2079" />
+      <card id="2079" />
+      <card id="2105" />
+      <card id="1047" />
+      <card id="1034" />
+      <card id="1047" mastery_level="2" />
+      <card id="1034" mastery_level="3" />
+      <card id="2105" mastery_level="4" />
+      <card id="5151" mastery_level="5" />
+      <card id="5153" mastery_level="6" />
+      <card id="2043" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6540</id>
+    <name>Powerful Aether</name>
+    <energy>18</energy>
+    <desc>After fighting off a portion of the creatures, a loud voice rings throughout Gladius Scriptorium. Your group freezes, a powerful presence drawing near.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8092" />
+      <card id="7007" />
+      <card id="1035" />
+      <card id="1035" />
+      <card id="2148" />
+      <card id="2148" />
+      <card id="5073" />
+      <card id="2119" />
+      <card id="2125" />
+      <card id="2119" mastery_level="2" />
+      <card id="2125" mastery_level="3" />
+      <card id="5073" mastery_level="4" />
+      <card id="5198" mastery_level="5" />
+      <card id="5227" mastery_level="6" />
+      <card id="5148" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Who dare trespass upon my domain?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6541</id>
+    <name>Aether Leader Showdown</name>
+    <energy>18</energy>
+    <desc>Even worse, with Solaron is another powerful enemy. It seems the three of you have stumbled onto Solaron's main domain.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8136" />
+      <card id="7007" />
+      <card id="5016" />
+      <card id="5016" />
+      <card id="5108" />
+      <card id="5108" />
+      <card id="5149" />
+      <card id="5044" />
+      <card id="5114" />
+      <card id="5044" mastery_level="2" />
+      <card id="5114" mastery_level="3" />
+      <card id="5149" mastery_level="4" />
+      <card id="5258" mastery_level="5" />
+      <card id="5257" mastery_level="6" />
+      <card id="5034" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>1</enemy>
+        <text>Ho ho... so the fallen Aether leader seeks an audience with Lord Solaron.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6542</id>
+    <name>Samael's Quarrel</name>
+    <energy>18</energy>
+    <desc>Despite the poor odds, Samael shows no fear. He cuts straight to the reason why he's come to Gladius Scriptorium.</desc>
+    <commander id="243" />
+    <deck>
+      <card id="8092" />
+      <card id="7007" />
+      <card id="5166" />
+      <card id="5166" />
+      <card id="5152" />
+      <card id="5152" />
+      <card id="5073" />
+      <card id="5158" />
+      <card id="2117" />
+      <card id="5158" mastery_level="2" />
+      <card id="2117" mastery_level="3" />
+      <card id="5073" mastery_level="4" />
+      <card id="5284" mastery_level="5" />
+      <card id="5244" mastery_level="6" />
+      <card id="5047" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>My quarrel isn't with Solaron. My fight is with YOU, Kensho.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6543</id>
+    <name>For Oda</name>
+    <energy>18</energy>
+    <desc>Elyse backs up Samael's bold claim. Although Oda isn't present, Elyse knows her friend and history very well.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8136" />
+      <card id="7007" />
+      <card id="2081" />
+      <card id="2081" />
+      <card id="2074" />
+      <card id="2074" />
+      <card id="2148" />
+      <card id="5113" />
+      <card id="5114" />
+      <card id="5113" mastery_level="2" />
+      <card id="5114" mastery_level="3" />
+      <card id="2148" mastery_level="4" />
+      <card id="5106" mastery_level="5" />
+      <card id="5105" mastery_level="6" />
+      <card id="5056" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Hand over the Seastone Staff. It rightfully belongs to Oda.</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 26 Node 4 -->
+  <mission>
+    <id>6544</id>
+    <name>Solaron's Disapproval</name>
+    <energy>18</energy>
+    <desc>The Aether have strict standards which define them. Solaron is apalled to hear the accusation against Kensho.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8092" />
+      <card id="2076" />
+      <card id="2076" />
+      <card id="2079" />
+      <card id="2079" />
+      <card id="2105" />
+      <card id="2105" />
+      <card id="1027" />
+      <card id="1032" />
+      <card id="1027" mastery_level="2" />
+      <card id="1032" mastery_level="3" />
+      <card id="1045" mastery_level="4" />
+      <card id="2200" mastery_level="5" />
+      <card id="5257" mastery_level="6" />
+      <card id="5243" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>You claim that the Hand of Solaron is a thief? Kensho... what have you done?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6545</id>
+    <name>Kensho Keepsake</name>
+    <energy>18</energy>
+    <desc>Although you aren't strong enough yet to face Solaron, Kensho is a different matter. Kensho pleads to Solaron to reconsider his initial anger.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8136" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5041" />
+      <card id="5041" />
+      <card id="5073" />
+      <card id="5073" />
+      <card id="2119" />
+      <card id="2186" />
+      <card id="2119" mastery_level="2" />
+      <card id="2186" mastery_level="3" />
+      <card id="5154" mastery_level="4" />
+      <card id="5197" mastery_level="5" />
+      <card id="5199" mastery_level="6" />
+      <card id="5122" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>1</enemy>
+        <text>They slander me, Lord Solaron. As a Keeper, the Seastone Staff is rightfully mine!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6546</id>
+    <name>Keeper Keepsake</name>
+    <energy>18</energy>
+    <desc>Elyse won't have any of Kensho's word tricks. If ownership is decided by the First Order Keepers, then Oda has just as much a right as Kensho.</desc>
+    <commander id="263" />
+    <deck>
+      <card id="8092" />
+      <card id="5060" />
+      <card id="5060" />
+      <card id="1035" />
+      <card id="1035" />
+      <card id="2105" />
+      <card id="2105" />
+      <card id="5016" />
+      <card id="2186" />
+      <card id="5016" mastery_level="2" />
+      <card id="2186" mastery_level="3" />
+      <card id="5228" mastery_level="4" />
+      <card id="5237" mastery_level="5" />
+      <card id="5261" mastery_level="6" />
+      <card id="5187" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Oda is a Keeper too, and you took it from him!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6547</id>
+    <name>Aether Honor</name>
+    <energy>18</energy>
+    <desc>Solaron weighs the words of your group against Kensho's. As an embodiment of Aether, pride and honor run deep within Solaron.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="8136" />
+      <card id="2081" />
+      <card id="2081" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5011" />
+      <card id="5011" />
+      <card id="2119" />
+      <card id="2125" />
+      <card id="2119" mastery_level="2" />
+      <card id="2125" mastery_level="3" />
+      <card id="5258" mastery_level="4" />
+      <card id="5095" mastery_level="5" />
+      <card id="5109" mastery_level="6" />
+      <card id="5198" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>This displeases me. Fight for your right, Kensho.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>The victor shall walk with the Staff in their possession.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6548</id>
+    <name>Ghosts of the Past</name>
+    <energy>18</energy>
+    <desc>Kensho gathers the Aether creatures to him. Ghosts of the Crimsonwings appear and gather to help him.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8092" />
+      <card id="5041" />
+      <card id="5041" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5011" />
+      <card id="5011" />
+      <card id="2186" />
+      <card id="5060" />
+      <card id="2186" mastery_level="2" />
+      <card id="5060" mastery_level="3" />
+      <card id="5150" mastery_level="4" />
+      <card id="5151" mastery_level="5" />
+      <card id="5227" mastery_level="6" />
+      <card id="5110" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6549</id>
+    <name>Against Kensho</name>
+    <energy>18</energy>
+    <desc>Kensho is still a normal human, albeit one fused with the Elementals. For Oda's sake you prepare to fight, win back the Seastone Staff, and get Samael's sword Dyrnwyn!</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8136" />
+      <card id="5044" />
+      <card id="5044" />
+      <card id="5149" />
+      <card id="5149" />
+      <card id="5152" />
+      <card id="5152" />
+      <card id="5158" />
+      <card id="1034" />
+      <card id="5158" mastery_level="2" />
+      <card id="1034" mastery_level="3" />
+      <card id="5198" mastery_level="4" />
+      <card id="5197" mastery_level="5" />
+      <card id="5154" mastery_level="6" />
+      <card id="5057" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>1</enemy>
+        <text>Very well. I don't need Solaron to defeat you!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 
