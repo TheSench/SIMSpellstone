@@ -36788,7 +36788,7 @@
   <unit>
     <id>7286</id>
     <card_type>2</card_type>
-    <name>Bird Pillar</name>
+    <name>Featherwood Idol</name>
     <picture>Avian_Mecha_Bird_Totem_A</picture>
     <asset_bundle>209</asset_bundle>
     <hidden_until_time>1607965200</hidden_until_time>
@@ -36834,7 +36834,7 @@
     <id>17286</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Bird Monolith</name>
+    <name>Featherwood Pole</name>
     <picture>Avian_Mecha_Bird_Totem_A</picture>
     <asset_bundle>209</asset_bundle>
     <hidden_until_time>1607965200</hidden_until_time>
@@ -36878,7 +36878,7 @@
     <id>27286</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Bird Totem</name>
+    <name>Featherwood Totem</name>
     <picture>Avian_Mecha_Bird_Totem_B</picture>
     <asset_bundle>209</asset_bundle>
     <hidden_until_time>1607965200</hidden_until_time>
