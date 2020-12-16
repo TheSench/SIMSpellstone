@@ -49132,5 +49132,620 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 27 Node 1 -->
+  <mission>
+    <id>6550</id>
+    <name>Continue from Gladius</name>
+    <energy>18</energy>
+    <desc>After defeating Kensho, you take the Seastone Staff and flee Gladius Scriptorium. Samael grabs the unconscious Kensho, and Elyse follows closely behind. Although you encounter some resistance, Solaron seems to be allowing you to leave.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>That was easier than I expected. Solaron held up the bargain.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>But what do we do with... -him-?</text>
+      </line>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6551</id>
+    <name>Oda's Rightful Staff</name>
+    <energy>18</energy>
+    <desc>Oda has been waiting for you anxiously, keeping watch over Skyhaven. As he notices you emerging from the underground tunnel, he runs up to greet you.</desc>
+    <commander id="262" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="2040" name="Owlmancer" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="6081" mastery_level="2" name="Apparition" />
+      <card id="5113" mastery_level="3" name="Bishop Rook" />
+      <card id="2052" mastery_level="4" name="Protector of Skyhaven" />
+      <card id="2082" mastery_level="5" name="Ecru Spear" />
+      <card id="5000" mastery_level="6" name="Azure Sphinx" />
+      <card id="5043" mastery_level="7" name="Empyrean" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, and Elyse! You made it back!</text>
+      </line>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Here, Oda. This Seastone Staff belongs to you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6552</id>
+    <name>Seastone Staff Severance</name>
+    <energy>18</energy>
+    <desc>Oda now has the Seastone Staff. He runs his hand over it, before turning to Kensho. He points it towards the First Order Monk.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2029" name="Sly Critters" />
+      <card id="6056" name="Potoo" />
+      <card id="7034" name="Spore Elk" />
+      <card id="5016" mastery_level="2" name="Fowl Swarm" />
+      <card id="5058" mastery_level="3" name="Crescent Moon Owl" />
+      <card id="2054" mastery_level="4" name="Pack Runner" />
+      <card id="7055" mastery_level="5" name="Valley Strider" />
+      <card id="5057" mastery_level="6" name="Skystriker" />
+      <card id="5039" mastery_level="7" name="Ethereal Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Then the first thing I'll do as Keeper...</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Is separate the Elementals controlling Kensho's mind!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6553</id>
+    <name>Elemental Exorcism</name>
+    <energy>18</energy>
+    <desc>The Seastone Staff glows as Oda activates its power. Kensho's body begins to glow in Aether fire. After a moment, wind and water Elementals fly out of his body, leaving behind the monk.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="6070" name="Petrifier" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="5005" name="Storm Giant" />
+      <card id="7070" mastery_level="2" name="Laughing Menace" />
+      <card id="5072" mastery_level="3" name="Blind Seer" />
+      <card id="7073" mastery_level="4" name="Heralded Slugger" />
+      <card id="2030" mastery_level="5" name="Ebon Duelist" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="7072" mastery_level="7" name="Murabi" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>The exorcised Elementals have left his body.</text>
+      </line>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>But now they're after us! Look out!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6554</id>
+    <name>Purified Monk</name>
+    <energy>18</energy>
+    <desc>You fight off the creatures that emerged from Kensho's body. Eventually they dissipate, and the First Order Monk awakens. Oda looks to him hopefully.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="5072" name="Blind Seer" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="1025" mastery_level="2" name="Lightbound Archer" />
+      <card id="1031" mastery_level="3" name="Noble Champion" />
+      <card id="7073" mastery_level="4" name="Heralded Slugger" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="6074" mastery_level="7" name="Deific Channeler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Ehh... Wha? Oda?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Master Kensho! Thank goodness, you're back to your normal self.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6555</id>
+    <name>Right Mind</name>
+    <energy>18</energy>
+    <desc>Kensho rises shakily to his feet. He looks around bewildered, but doesn't show the earlier hostility he displayed just moments before. Oda cries and hugs him.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7041" name="Feral Angel" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5114" mastery_level="2" name="Wingward" />
+      <card id="1030" mastery_level="3" name="Paladin" />
+      <card id="7030" mastery_level="4" name="Arctic Ambusher" />
+      <card id="6038" mastery_level="5" name="Hemlock" />
+      <card id="7112" mastery_level="6" name="Fountain Guardian" />
+      <card id="7074" mastery_level="7" name="Sijou" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Is it that simple? Can we really trust him?</text>
+      </line>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>You're one to talk...</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 27 Node 2 -->
+  <mission>
+    <id>6556</id>
+    <name>Mind Restored</name>
+    <energy>18</energy>
+    <desc>Kensho hesitantly returns the hug, patting Oda on the back. But then he gasps, pulling away and looking up frantically to the rest of the group.</desc>
+    <commander id="259" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2081" name="Starstriker" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="2041" mastery_level="2" name="Sharpwing" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="7030" mastery_level="4" name="Arctic Ambusher" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="2043" mastery_level="6" name="Eos" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Thank you, Oda. I meant to master the Elementals, but they mastered me!</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Hold on.... this isn't time for celebration. We're in danger!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6557</id>
+    <name>Solaron's Assault</name>
+    <energy>18</energy>
+    <desc>Kensho looks behind you towards the underground tunnel. As if in response, the earth starts to rumble. Aether creatures fly out, soaring into the heights of Skyhaven!</desc>
+    <commander id="261" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="6070" name="Petrifier" />
+      <card id="5081" name="Brahzee" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="7073" mastery_level="3" name="Heralded Slugger" />
+      <card id="5114" mastery_level="4" name="Wingward" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="5112" mastery_level="7" name="Cloudwing Chaser" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Solaron... He's been planning to take over Skyhaven.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>We thought you were the one plotting, but Solaron is a bigger problem than what Skyhaven can handle.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6558</id>
+    <name>Samael's Concern</name>
+    <energy>18</energy>
+    <desc>For the first time you can remember, Samael looks visibly worried at the stream of creatures emerging from the underground tunnel. He and Oda run off to help the rest of Skyhaven.</desc>
+    <commander id="263" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2081" name="Starstriker" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="7057" mastery_level="2" name="Bill Crasher" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="5110" mastery_level="7" name="Alectryon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I must go evacuate the Angel Queen!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Wait, it's not safe. I'll come with you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6559</id>
+    <name>Stopping Solaron</name>
+    <energy>18</energy>
+    <desc>Elyse is about to follow them, but Kensho places a hand on her shoulder. The group has to split up to handle two different responsibilities...</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1014" name="Cherub" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2027" name="Halo Mage" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="7029" mastery_level="2" name="Owl Griffin" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="7113" mastery_level="4" name="Revenge from Above" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="5074" mastery_level="7" name="Godfried the Hunter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>Then we should-</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>We must stop Solaron.</text>
+      </line>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>But how?! Viracocha isn't ready yet!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6560</id>
+    <name>Wyld Power Coil Location</name>
+    <energy>18</energy>
+    <desc>Kensho watches the creatures begin to cause havoc across Skyhaven. You and Elyse prepare to fight off the ones approaching, but there's far too many to properly protect the entire town.</desc>
+    <commander id="306" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2029" name="Sly Critters" />
+      <card id="7038" name="Sol King" />
+      <card id="2081" name="Starstriker" />
+      <card id="5114" mastery_level="2" name="Wingward" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="5040" mastery_level="4" name="Winged Trumpeter" />
+      <card id="1327" mastery_level="5" name="Fallen Angel" />
+      <card id="6071" mastery_level="6" name="Masked Heraid" />
+      <card id="7040" mastery_level="7" name="Warden of the Leaf" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Solaron will feed on all the Aether energy here. If we activate the Wyld Power Coil, it will tip the energies away from his preference.</text>
+      </line>
+      <line>
+        <commander>Elyse</commander>
+        <enemy>0</enemy>
+        <text>The Wyld Power Coil is here? How?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6561</id>
+    <name>Power Coil Mystery</name>
+    <energy>18</energy>
+    <desc>Even though Skyhaven has been a haven for Aether, which no doubt has attracted Solaron's attention, Kensho claims a Wyld Power Coil exists here. Perhaps the answer lies with the Fallen and Divine Crests, but there's no time to investigate.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="6070" name="Petrifier" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2029" name="Sly Critters" />
+      <card id="5072" name="Blind Seer" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7004" mastery_level="2" name="Ice Golem" />
+      <card id="7073" mastery_level="3" name="Heralded Slugger" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="2030" mastery_level="5" name="Ebon Duelist" />
+      <card id="6040" mastery_level="6" name="Scorching Cutlass" />
+      <card id="5076" mastery_level="7" name="Sorath, the Valkyrie" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Hoho... another question for another time. What matters is activating it.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Christmas Event 2019 -->
+  <mission>
+    <id>6562</id>
+    <name>Two Old Men Reunited</name>
+    <energy>1</energy>
+    <desc>Malchior has dragged Tarian out of the small shack. The two friends catch up on what they've missed over the last few months, as Malchior has been traveling on the airship.</desc>
+    <commander id="235" />
+    <deck>
+      <card id="5007" name="Arcane Scroll" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="5004" mastery_level="2" name="Lightning Lord" />
+      <card id="5161" mastery_level="3" name="Bolster Bot" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="5141" mastery_level="5" name="Nimbocaster" />
+      <card id="5027" mastery_level="6" name="Northern War-kin" />
+      <card id="5026" mastery_level="7" name="Frostfire Wyrm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Malchior, why did you call me out here?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>It's simple, my friend... I require your skills!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6563</id>
+    <name>World's Center Dangers</name>
+    <energy>1</energy>
+    <desc>Malchior takes Tarian past the rocky path, into the snowy forest. They pass many diseased, rotted trees; monsters and undead lurking in their shadows.</desc>
+    <commander id="351" />
+    <deck>
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5005" mastery_level="2" name="Storm Giant" />
+      <card id="5155" mastery_level="3" name="Silvertongue Fencer" />
+      <card id="5139" mastery_level="4" name="Loyal Guard" />
+      <card id="5127" mastery_level="5" name="Dynamo Drake" />
+      <card id="5032" mastery_level="6" name="Hail Hurler" />
+      <card id="5029" mastery_level="7" name="Snowback Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>There is an enemy that only you can fell...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Then this must be serious, if you're asking me over your adventurer friend.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6564</id>
+    <name>The Biggest Tree</name>
+    <energy>1</energy>
+    <desc>Malchior stops at a large tree, one of the few that hasn't been tainted by the disease. It grows strong and tall, evergreen pine needles sticking out from its branches.</desc>
+    <commander id="272" />
+    <deck>
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5089" name="Gomblit" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="5158" mastery_level="3" name="Chilltide Stormtender" />
+      <card id="6016" mastery_level="4" name="Skeletal Giant" />
+      <card id="5127" mastery_level="5" name="Dynamo Drake" />
+      <card id="5075" mastery_level="6" name="Arith" />
+      <card id="5151" mastery_level="7" name="Brinebelly" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>1</enemy>
+        <text>Right here! This gigantic pine tree!-</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6565</id>
+    <name>Ax of the Lich Lord</name>
+    <energy>1</energy>
+    <desc>Tarian stops cold. He has humored many of Malchior's outlandish requests in the past, but he cannot figure out his motivation behind this one.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="7006" name="Treant Sapling" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1617" name="Water Elemental" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5081" name="Brahzee" />
+      <card id="5114" name="Wingward" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6025" mastery_level="2" name="Dragon Keeper" />
+      <card id="5130" mastery_level="3" name="Drakeling Fosterer" />
+      <card id="6005" mastery_level="4" name="Gloomkin" />
+      <card id="6010" mastery_level="5" name="Cliffpass Defender" />
+      <card id="5074" mastery_level="6" name="Godfried the Hunter" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Malchior, my ax is meant for cleaving bone, not chopping firewood!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6566</id>
+    <name>Holiday Presents</name>
+    <energy>1</energy>
+    <desc>Malchior begs Tarian to reconsider his earlier choice. The tree is meant for others who have never seen such things, not for one of Malchior's experiments.</desc>
+    <commander id="19" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1019" name="Oracle" />
+      <card id="1615" name="Rune Panther" />
+      <card id="1616" name="Werewarg" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6025" mastery_level="2" name="Dragon Keeper" />
+      <card id="6077" mastery_level="3" name="Enigma" />
+      <card id="5163" mastery_level="4" name="Bark Hound" />
+      <card id="5149" mastery_level="5" name="Flatfish Ward" />
+      <card id="5068" mastery_level="6" name="Aht-Aht Carrier" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>But think of the Chaos children back in Karthos, and how they'd decorate this big tree!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Fine, I'll do it, but don't you dare tell anyone about this. I have a reputation to uphold.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

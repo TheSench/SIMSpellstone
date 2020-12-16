@@ -14920,6 +14920,165 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 27 weeks 1-4 -->
+  <achievement>
+    <id>3644</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Monk's Sanity</name>
+    <desc>Complete the 'A Monk's Sanity' campaign on Mastery Level 1.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1610038800</locked_start_time>
+    <!-- Thursday, 7 January 2021 17:00:00 -->
+    <req>
+      <campaign>1272</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3125" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7068" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3645</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Monk's Sanity</name>
+    <desc>Complete the 'A Monk's Sanity' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1610038800</locked_start_time>
+    <!-- Thursday, 7 January 2021 17:00:00 -->
+    <achievement_req>3644</achievement_req>
+    <req>
+      <campaign>1272</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3646</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Monk's Sanity</name>
+    <desc>Complete the 'A Monk's Sanity' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1610038800</locked_start_time>
+    <!-- Thursday, 7 January 2021 17:00:00 -->
+    <achievement_req>3645</achievement_req>
+    <req>
+      <campaign>1272</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3647</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Monk's Sanity</name>
+    <desc>Complete the 'A Monk's Sanity' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1610038800</locked_start_time>
+    <!-- Thursday, 7 January 2021 17:00:00 -->
+    <achievement_req>3646</achievement_req>
+    <req>
+      <campaign>1272</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3648</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Battle for Skyhaven</name>
+    <desc>Complete the 'Battle for Skyhaven' campaign on Mastery Level 2.</desc>
+    <mission_req>6556</mission_req>
+    <locked_start_time>1611248400</locked_start_time>
+    <!-- Thursday, 21 January 2021 17:00:00 -->
+    <req>
+      <campaign>1273</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3649</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Battle for Skyhaven</name>
+    <desc>Complete the 'Battle for Skyhaven' campaign on Mastery Level 4.</desc>
+    <mission_req>6556</mission_req>
+    <locked_start_time>1611248400</locked_start_time>
+    <!-- Thursday, 21 January 2021 17:00:00 -->
+    <achievement_req>3648</achievement_req>
+    <req>
+      <campaign>1273</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3650</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Battle for Skyhaven</name>
+    <desc>Complete the 'Battle for Skyhaven' campaign on Mastery Level 6.</desc>
+    <mission_req>6556</mission_req>
+    <locked_start_time>1611248400</locked_start_time>
+    <!-- Thursday, 21 January 2021 17:00:00 -->
+    <achievement_req>3649</achievement_req>
+    <req>
+      <campaign>1273</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <!-- Christmas 2020 Achievements -->
+  <achievement>
+    <id>3651</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tree Champion</name>
+    <desc>Complete the 'Tree Champion' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1274</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3652</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tree Champion</name>
+    <desc>Complete the 'Tree Champion' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3651</achievement_req>
+    <req>
+      <campaign>1274</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

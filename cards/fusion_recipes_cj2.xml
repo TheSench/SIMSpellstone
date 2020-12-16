@@ -2435,6 +2435,30 @@
     <card_id>22202</card_id>
     <resource card_id="12202" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12203</card_id>
+    <resource card_id="2203" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22203</card_id>
+    <resource card_id="12203" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12204</card_id>
+    <resource card_id="2204" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22204</card_id>
+    <resource card_id="12204" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12205</card_id>
+    <resource card_id="2205" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22205</card_id>
+    <resource card_id="12205" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->
@@ -4710,6 +4734,22 @@
     <card_id>25285</card_id>
     <resource card_id="15285" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15286</card_id>
+    <resource card_id="5286" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25286</card_id>
+    <resource card_id="15286" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15287</card_id>
+    <resource card_id="5287" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25287</card_id>
+    <resource card_id="15287" number="2" />
+  </fusion_recipe>
   <!-- END AETHER PREMIUM SET -->
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -6967,6 +7007,14 @@
   <fusion_recipe>
     <card_id>26285</card_id>
     <resource card_id="16285" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16286</card_id>
+    <resource card_id="6286" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26286</card_id>
+    <resource card_id="16286" number="2" />
   </fusion_recipe>
   <!-- END CHAOS PREMIUM SET -->
   <!-- WYLD PREMIUM SET BEGIN -->
@@ -9233,6 +9281,14 @@
   <fusion_recipe>
     <card_id>27286</card_id>
     <resource card_id="17286" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17287</card_id>
+    <resource card_id="7287" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27287</card_id>
+    <resource card_id="17287" number="2" />
   </fusion_recipe>
   <!-- END WYLD PREMIUM SET -->
   <!-- END SET 3000 - Premium -->

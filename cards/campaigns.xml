@@ -9168,7 +9168,9 @@
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
     <x>480</x>
+    <!-- left right -->
     <y>500</y>
+    <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6534</mission_id>
@@ -9201,7 +9203,9 @@
     <battleground_id>2109</battleground_id>
     <location_id>32</location_id>
     <x>615</x>
+    <!-- left right -->
     <y>350</y>
+    <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6538</mission_id>
@@ -9222,7 +9226,7 @@
       <!-- New BGE Epic A -->
       <card level="5" id="512" />
       <!-- Arcane Deposit -->
-      <card level="6" id="2042" />
+      <card level="6" id="2041" />
       <!-- Repeat Epic A -->
       <item level="7" id="3123" />
       <!-- Crafting Item for Legendary Card -->
@@ -9238,7 +9242,9 @@
     <battleground_id>2110</battleground_id>
     <location_id>32</location_id>
     <x>840</x>
+    <!-- left right -->
     <y>290</y>
+    <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6544</mission_id>
@@ -9265,6 +9271,118 @@
       <!-- Crafting Item for Legendary Card -->
     </rewards>
     <find_item id="3122" drop_per_energy=".8" />
+  </campaign>
+  <!-- ================================== Campaign Event 27 weeks 1-4 / Skyhaven Assault ================================== -->
+  <campaign>
+    <id>1272</id>
+    <name>A Monk's Sanity</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1610038800</locked_start_time>
+    <!-- Thursday, 7 January 2021 17:00:00 -->
+    <location_id>33</location_id>
+    <x>250</x>
+    <!-- left right -->
+    <y>240</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6550</mission_id>
+      <mission_id>6551</mission_id>
+      <mission_id>6552</mission_id>
+      <mission_id>6553</mission_id>
+      <mission_id>6554</mission_id>
+      <mission_id>6555</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2203" />
+      <!-- New BGE Epic A -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2084" />
+      <!-- Repeat Epic A -->
+      <item level="7" id="3126" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3125" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1273</id>
+    <name>Battle for Skyhaven</name>
+    <campaign_req id="1272" level="1" />
+    <locked_start_time>1611248400</locked_start_time>
+    <!-- Thursday, 21 January 2021 17:00:00 -->
+    <battleground_id>2111</battleground_id>
+    <location_id>33</location_id>
+    <x>580</x>
+    <!-- left right -->
+    <y>220</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6556</mission_id>
+      <mission_id>6557</mission_id>
+      <mission_id>6558</mission_id>
+      <mission_id>6559</mission_id>
+      <mission_id>6560</mission_id>
+      <mission_id>6561</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2204" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2085" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3126" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3125" drop_per_energy=".4" />
+  </campaign>
+  <!-- Christmas Event 2020 -->
+  <campaign>
+    <id>1274</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <!-- <campaign_req id='6' level='1' /> -->
+    <locked_start_time>1608224400</locked_start_time>
+    <!-- Thursday, December 17, 2020 17:00:00 -->
+    <location_id>32</location_id>
+    <x>300</x>
+    <!-- left right -->
+    <y>500</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6562</mission_id>
+      <mission_id>6563</mission_id>
+      <mission_id>6564</mission_id>
+      <mission_id>6565</mission_id>
+      <mission_id>6566</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12041" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="512" />
+      <item level="5" id="104040" number="25" />
+      <card level="6" id="12041" />
+      <item level="7" id="104040" number="50" />
+    </rewards>
+    <find_item id="3122" drop_per_energy=".2" />
   </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->

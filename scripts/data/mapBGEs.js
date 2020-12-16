@@ -7747,5 +7747,295 @@ var MAP_BATTLEGROUNDS = {
 		"id": "3027",
 		"location_id": "32",
 		"name": "Crimsonwing Spirits"
+	},
+	"3028": {
+		"desc": "Yuriel has left behind his magical tomes to help Skyhaven. Power them up with Angel Plume!",
+		"effects": [
+			{
+				"id": "26",
+				"name": "Tome of Firebolt",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 1
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 2
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 3
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 4
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 5
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 6
+							}
+						],
+						"name": "Tome of Firebolt"
+					}
+				]
+			},
+			{
+				"id": "27",
+				"name": "Tome of Shielding",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Armor 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 1
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 2
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 3
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 4
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 6
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 8
+							}
+						],
+						"name": "Tome of Shielding"
+					}
+				]
+			},
+			{
+				"id": "28",
+				"name": "Tome of Darkness",
+				"upgrades": [
+					{
+						"desc": "",
+						"effect": []
+					},
+					{
+						"desc": "All of your creatures gain Nullify 1 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "nullify",
+								"x": 1
+							}
+						],
+						"name": "Tome of Darkness"
+					},
+					{
+						"desc": "All of your creatures gain Nullify 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "nullify",
+								"x": 2
+							}
+						],
+						"name": "Tome of Darkness"
+					},
+					{
+						"desc": "All of your creatures gain Nullify 3 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "nullify",
+								"x": 3
+							}
+						],
+						"name": "Tome of Darkness"
+					},
+					{
+						"desc": "All of your creatures gain Nullify 4 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "nullify",
+								"x": 4
+							}
+						],
+						"name": "Tome of Darkness"
+					},
+					{
+						"desc": "All of your creatures gain Nullify 6 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "nullify",
+								"x": 6
+							}
+						],
+						"name": "Tome of Darkness"
+					},
+					{
+						"desc": "All of your creatures gain Nullify 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "nullify",
+								"x": 8
+							}
+						],
+						"name": "Tome of Darkness"
+					}
+				]
+			}
+		],
+		"id": "3028",
+		"location_id": "33",
+		"name": "Tome Defense System"
 	}
 };

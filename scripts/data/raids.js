@@ -4008,6 +4008,190 @@ var RAIDS = {
 		"type": "Raid",
 		"upgradeLevels": "22"
 	},
+	"24025": {
+		"bge": "504",
+		"commander": {
+			"id": "279"
+		},
+		"deck": {
+			"card": [
+				{
+					"id": "8013"
+				},
+				{
+					"id": "1332",
+					"remove_mastery_level": "5"
+				},
+				{
+					"id": "1311",
+					"remove_mastery_level": "8"
+				},
+				{
+					"id": "2020",
+					"remove_mastery_level": "9"
+				},
+				{
+					"id": "1314",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "1314",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "2025",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "6007",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "6012",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "2088",
+					"remove_mastery_level": "23"
+				},
+				{
+					"id": "6016",
+					"mastery_level": "3",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "5166",
+					"mastery_level": "4",
+					"remove_mastery_level": "12"
+				},
+				{
+					"id": "6029",
+					"mastery_level": "5",
+					"remove_mastery_level": "13"
+				},
+				{
+					"id": "6034",
+					"mastery_level": "6",
+					"remove_mastery_level": "17"
+				},
+				{
+					"id": "6036",
+					"mastery_level": "7",
+					"remove_mastery_level": "19"
+				},
+				{
+					"id": "2087",
+					"mastery_level": "8",
+					"remove_mastery_level": "20"
+				},
+				{
+					"id": "6011",
+					"mastery_level": "9",
+					"remove_mastery_level": "21"
+				},
+				{
+					"id": "6034",
+					"mastery_level": "9",
+					"remove_mastery_level": "22"
+				},
+				{
+					"id": "8012",
+					"mastery_level": "10"
+				},
+				{
+					"id": "6036",
+					"mastery_level": "10",
+					"remove_mastery_level": "14"
+				},
+				{
+					"id": "1342",
+					"mastery_level": "10",
+					"remove_mastery_level": "15"
+				},
+				{
+					"id": "6082",
+					"mastery_level": "11",
+					"remove_mastery_level": "16"
+				},
+				{
+					"id": "8012",
+					"mastery_level": "11"
+				},
+				{
+					"id": "8014",
+					"mastery_level": "11"
+				},
+				{
+					"id": "1342",
+					"mastery_level": "12",
+					"remove_mastery_level": "18"
+				},
+				{
+					"id": "2026",
+					"mastery_level": "13",
+					"remove_mastery_level": "19"
+				},
+				{
+					"id": "6033",
+					"mastery_level": "14",
+					"remove_mastery_level": "24"
+				},
+				{
+					"id": "7169",
+					"mastery_level": "15",
+					"remove_mastery_level": "25"
+				},
+				{
+					"id": "8015",
+					"mastery_level": "16"
+				},
+				{
+					"id": "8013",
+					"mastery_level": "17"
+				},
+				{
+					"id": "8011",
+					"mastery_level": "18"
+				},
+				{
+					"id": "8012",
+					"mastery_level": "19"
+				},
+				{
+					"id": "8013",
+					"mastery_level": "19"
+				},
+				{
+					"id": "8014",
+					"mastery_level": "20"
+				},
+				{
+					"id": "8012",
+					"mastery_level": "21"
+				},
+				{
+					"id": "8014",
+					"mastery_level": "22"
+				},
+				{
+					"id": "8015",
+					"mastery_level": "23"
+				},
+				{
+					"id": "8015",
+					"mastery_level": "24"
+				},
+				{
+					"id": "8011",
+					"mastery_level": "25"
+				}
+			]
+		},
+		"id": "24025",
+		"name": "Nethergore Raid",
+		"type": "Raid",
+		"upgradeLevels": "24"
+	},
 	"28001": {
 		"bge": "510",
 		"commander": {

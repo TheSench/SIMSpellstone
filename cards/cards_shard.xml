@@ -3491,6 +3491,66 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4041</id>
+    <card_type>2</card_type>
+    <name>Leyla, Queen of Skyhaven</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Angel_Queen_Leyla_A</picture>
+    <asset_bundle>211</asset_bundle>
+    <item_name>Leyla Stone</item_name>
+    <item_desc>Collect Leyla Stones to upgrade the Legendary Leyla, Queen of Skyhaven card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <!--<skill id="enfeeble" x="1" all="1" />
+		<skill id="weaken" x="1" all="1" />
+		<skill id="flurry" c="4" />-->
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>10</health>
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -7123,6 +7183,92 @@
       <level>10</level>
       <health>47</health>
       <attack>17</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7616</id>
+    <card_type>2</card_type>
+    <name>Lechuza, the Skybinder</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Avian_Gravity_Wizard_A</picture>
+    <asset_bundle>209</asset_bundle>
+    <hidden_until_time>1611248400</hidden_until_time>
+    <!-- Thursday, 21 January 2021 17:00:00 -->
+    <item_name>Lechuza Stone</item_name>
+    <item_desc>Collect Lechuza Stones to upgrade the Legendary Lechuza, the Skybinder card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <attack>10</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="jam" c="4" />
+    <skill id="weaken" x="3" all="1" />
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="stasis" x="4" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+      <skill id="stasis" x="5" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="stasis" x="5" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <skill id="stasis" x="5" />
+      <skill id="jam" c="3" />
+      <skill id="weaken" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="6" />
+      <skill id="jam" c="3" />
+      <skill id="weaken" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>42</health>
+      <skill id="stasis" x="6" />
+      <skill id="jam" c="2" />
+      <skill id="weaken" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>13</attack>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="stasis" x="7" />
+      <skill id="jam" c="2" />
+      <skill id="weaken" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>44</health>
+      <attack>14</attack>
+      <skill id="stasis" x="7" />
+      <skill id="jam" c="2" />
+      <skill id="weaken" x="7" all="1" />
     </upgrade>
   </unit>
 </root>
