@@ -22553,38 +22553,39 @@
     <rarity>4</rarity>
     <skill id="armored" x="5" />
     <skill id="heal" x="5" all="1" />
-    <skill id="leech" x="8" />
+    <skill id="leech" x="15" />
     <type>3</type>
     <sub_type>5</sub_type>
     <sub_type>6</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>48</health>
+      <health>49</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>49</health>
+      <health>51</health>
       <skill id="armored" x="5" />
-      <skill id="heal" x="5" all="1" />
-      <skill id="leech" x="9" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="leech" x="15" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>16</attack>
+      <attack>18</attack>
+      <skill id="armored" x="6" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="leech" x="18" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>50</health>
-      <skill id="armored" x="6" />
-      <skill id="heal" x="5" all="1" />
-      <skill id="leech" x="9" />
+      <health>55</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="6" />
-      <skill id="heal" x="6" all="1" />
-      <skill id="leech" x="10" />
+      <attack>20</attack>
+      <skill id="armored" x="7" />
+      <skill id="heal" x="7" all="1" />
+      <skill id="leech" x="20" />
     </upgrade>
   </unit>
   <unit>
