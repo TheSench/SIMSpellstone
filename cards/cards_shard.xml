@@ -7338,7 +7338,7 @@
     <sub_type>6</sub_type>
     <attack>9</attack>
     <health>28</health>
-    <cost>3</cost>
+    <cost>2</cost>
     <rarity>4</rarity>
     <skill id="heal" x="2" y="2" all="1" />
     <skill id="enrage" x="2" all="1" />
