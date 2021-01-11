@@ -49571,7 +49571,7 @@
       </line>
     </speech>
   </mission>
-  <!-- Christmas Event 2019 -->
+  <!-- Christmas Event 2020 -->
   <mission>
     <id>6562</id>
     <name>Two Old Men Reunited</name>
@@ -49746,6 +49746,163 @@
         <text>Fine, I'll do it, but don't you dare tell anyone about this. I have a reputation to uphold.</text>
       </line>
     </speech>
+  </mission>
+  <!-- Event 27 Boss Node -->
+  <mission>
+    <id>6567</id>
+    <name>Seed</name>
+    <energy>9</energy>
+    <desc>When the world was nothing but a barren wastleand, seed was scattered across the lands. Some fell on dry soil, others drowned in the ocean, but some fell on fertile soil.</desc>
+    <commander id="455" />
+    <deck>
+      <card id="8053" />
+      <!-- Pious Acolyte -->
+      <card id="7115" />
+      <!-- Airborne Battalion -->
+      <card id="2121" />
+      <!-- Chrysalis Angel -->
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7116" />
+      <!-- Watchful Hexhound -->
+      <card id="7263" />
+      <!-- Cheggrub -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="7183" />
+      <!-- Monastery Angel -->
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="7178" />
+      <!-- Oxylus, Might Warden -->
+      <card id="7246" />
+      <!-- Snowfall Dancer -->
+      <card id="7275" />
+      <!-- Winterheart Ballerina -->
+      <card id="7247" />
+      <!-- Timberglide Striker -->
+      <card id="7111" />
+      <!-- Aurai -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6568</id>
+    <name>Sprout</name>
+    <energy>9</energy>
+    <desc>The promise of life budded from the seeds that fell on fertile soil. Green life blossomed from the barren earth; the promise of a greater future, stretching towards the sunlight.</desc>
+    <commander id="455" />
+    <deck>
+      <card id="8053" />
+      <!-- Pious Acolyte -->
+      <card id="7115" />
+      <!-- Airborne Battalion -->
+      <card id="2121" />
+      <!-- Chrysalis Angel -->
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7116" />
+      <!-- Watchful Hexhound -->
+      <card id="7263" />
+      <!-- Cheggrub -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="7183" />
+      <!-- Monastery Angel -->
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="7178" />
+      <!-- Oxylus, Might Warden -->
+      <card id="7246" />
+      <!-- Snowfall Dancer -->
+      <card id="7275" />
+      <!-- Winterheart Ballerina -->
+      <card id="7247" />
+      <!-- Timberglide Striker -->
+      <card id="7111" />
+      <!-- Aurai -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6569</id>
+    <name>Shrub</name>
+    <energy>9</energy>
+    <desc>The bud matured to a young sapling. Surviving the hardships of the torrential rain and the scorching sunlight, between the two elements did the shrub take form.</desc>
+    <commander id="455" />
+    <deck>
+      <card id="8053" />
+      <!-- Pious Acolyte -->
+      <card id="7115" />
+      <!-- Airborne Battalion -->
+      <card id="2121" />
+      <!-- Chrysalis Angel -->
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7116" />
+      <!-- Watchful Hexhound -->
+      <card id="7263" />
+      <!-- Cheggrub -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="7183" />
+      <!-- Monastery Angel -->
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="7178" />
+      <!-- Oxylus, Might Warden -->
+      <card id="7246" />
+      <!-- Snowfall Dancer -->
+      <card id="7275" />
+      <!-- Winterheart Ballerina -->
+      <card id="7247" />
+      <!-- Timberglide Striker -->
+      <card id="7111" />
+      <!-- Aurai -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6570</id>
+    <name>Tree</name>
+    <energy>9</energy>
+    <desc>That is Wyld. The ability to adapt and change, yet remain true to one's roots. Between the extremes of the other elements and factions, the Wyld persevere; a stable force in an unstable world. And this memory, this data, will be sent to the Titan Aspirer, Viracocha.</desc>
+    <commander id="455" />
+    <deck>
+      <card id="8053" />
+      <!-- Pious Acolyte -->
+      <card id="7115" />
+      <!-- Airborne Battalion -->
+      <card id="2121" />
+      <!-- Chrysalis Angel -->
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7116" />
+      <!-- Watchful Hexhound -->
+      <card id="7263" />
+      <!-- Cheggrub -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="7183" />
+      <!-- Monastery Angel -->
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="7178" />
+      <!-- Oxylus, Might Warden -->
+      <card id="7246" />
+      <!-- Snowfall Dancer -->
+      <card id="7275" />
+      <!-- Winterheart Ballerina -->
+      <card id="7247" />
+      <!-- Timberglide Striker -->
+      <card id="7111" />
+      <!-- Aurai -->
+    </deck>
   </mission>
 </root>
 

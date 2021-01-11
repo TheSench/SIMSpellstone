@@ -15079,6 +15079,25 @@
       <pack>11</pack>
     </reward>
   </achievement>
+  <!-- Herald of Judgment's Spellstone -->
+  <achievement>
+    <id>3653</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Constructing Wyld</name>
+    <desc>Complete the 'Constructing Wyld' campaign on Mastery Level 1.</desc>
+    <mission_req>6567</mission_req>
+    <locked_start_time>1611248400</locked_start_time>
+    <!--  Thursday, January 21, 2021 17:00:00 -->
+    <req>
+      <campaign>1275</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8028" number="1" />
+      <!--  Crafting recipe -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -15677,6 +15696,32 @@
       <campaign>1270</campaign>
       <!-- 3rd node -->
       <campaign>1271</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Skyhaven Assault -->
+    <id>4028</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Skyhaven Assault</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Skyhaven Assault.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6550</mission_req>
+    <req>
+      <campaign>1272</campaign>
+      <!-- 1st node -->
+      <campaign>1273</campaign>
+      <!-- 2nd node -->
+      <campaign>1275</campaign>
+      <!-- Boss node -->
+      <campaign>1276</campaign>
+      <!-- 3rd node -->
+      <campaign>1277</campaign>
       <!-- 4th node -->
       <level>7</level>
     </req>
