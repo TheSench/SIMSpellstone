@@ -36765,7 +36765,8 @@
     <name>Eyespot Noble</name>
     <picture>Avian_Peacock_Poisoner_A</picture>
     <asset_bundle>209</asset_bundle>
-    <hidden_until_time>1611594000</hidden_until_time>
+    <hidden_until_time>1610038800</hidden_until_time>
+    <!-- Thursday, January 7, 2021 17:00:00 -->
     <attack>5</attack>
     <health>18</health>
     <cost>1</cost>
@@ -36808,7 +36809,8 @@
     <name>Eyespot Aristocrat</name>
     <picture>Avian_Peacock_Poisoner_A</picture>
     <asset_bundle>209</asset_bundle>
-    <hidden_until_time>1611594000</hidden_until_time>
+    <hidden_until_time>1610038800</hidden_until_time>
+    <!-- Thursday, January 7, 2021 17:00:00 -->
     <attack>7</attack>
     <health>20</health>
     <cost>1</cost>
@@ -36853,7 +36855,8 @@
     <name>Eyespot Confabulator</name>
     <picture>Avian_Peacock_Poisoner_B</picture>
     <asset_bundle>209</asset_bundle>
-    <hidden_until_time>1611594000</hidden_until_time>
+    <hidden_until_time>1610038800</hidden_until_time>
+    <!-- Thursday, January 7, 2021 17:00:00 -->
     <attack>8</attack>
     <health>21</health>
     <cost>1</cost>

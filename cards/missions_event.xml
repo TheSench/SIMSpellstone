@@ -49904,5 +49904,407 @@
       <!-- Aurai -->
     </deck>
   </mission>
+  <!-- Event 27 Node 3 IDs 6571 -->
+  <mission>
+    <id>6571</id>
+    <name>Wyld Apperance</name>
+    <energy>18</energy>
+    <desc>Hoping to avert an inevitable disaster with Solaron's attack, you have little choice but to accept Kensho's proposition. He rushes you towards the Wyld Power Coil, a great statue atop a pillar.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="8105" />
+      <card id="8233" />
+      <card id="7157" />
+      <card id="1616" />
+      <card id="5016" />
+      <card id="7157" />
+      <card id="7118" />
+      <card id="7118" />
+      <card id="7070" />
+      <card id="7157" mastery_level="2" />
+      <card id="7118" mastery_level="3" />
+      <card id="2182" mastery_level="4" />
+      <card id="7223" mastery_level="5" />
+      <card id="7263" mastery_level="6" />
+      <card id="7154" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>This is the last Power Coil we need to activate for Viracocha!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Um... maybe you should try touching it.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6572</id>
+    <name>Third Power Coil</name>
+    <energy>18</energy>
+    <desc>You clear out the Aether creatures that have tried attacking the tower. Once they're gone, the tower opens up, a light taking form...</desc>
+    <commander id="249" />
+    <deck>
+      <card id="8057" />
+      <card id="8204" />
+      <card id="2029" />
+      <card id="2029" />
+      <card id="2029" />
+      <card id="5158" />
+      <card id="5158" />
+      <card id="7118" />
+      <card id="7041" />
+      <card id="2029" mastery_level="2" />
+      <card id="5158" mastery_level="3" />
+      <card id="7041" mastery_level="4" />
+      <card id="7183" mastery_level="5" />
+      <card id="7183" mastery_level="6" />
+      <card id="7242" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>canopyhunter</commander>
+        <enemy>1</enemy>
+        <text>Commencing initialization welcome sequence. Greetings, sentients.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6573</id>
+    <name>Wyld Simulation</name>
+    <energy>18</energy>
+    <desc>It's the same as the other Power Coils. Kensho was right; there really is a Wyld Power Coil in Skyhaven. All that's left is to simulate Wyld.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="8128" />
+      <card id="8233" />
+      <card id="7020" />
+      <card id="7020" />
+      <card id="2121" />
+      <card id="2182" />
+      <card id="2182" />
+      <card id="7070" />
+      <card id="7070" />
+      <card id="7020" mastery_level="2" />
+      <card id="2121" mastery_level="3" />
+      <card id="7070" mastery_level="4" />
+      <card id="7120" mastery_level="5" />
+      <card id="7072" mastery_level="6" />
+      <card id="7240" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>canopyhunter</commander>
+        <enemy>1</enemy>
+        <text>I am an AI designed to simulate Wyld.</text>
+      </line>
+      <line>
+        <commander>canopyhunter</commander>
+        <enemy>1</enemy>
+        <text>Provide the necessary answers to automate Wyld attunement process.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6574</id>
+    <name>Wyld Essence</name>
+    <energy>18</energy>
+    <desc>The construct begins with a similar question as the others. To become and awaken Wyld, it must first understand its true nature.</desc>
+    <commander id="250" />
+    <deck>
+      <card id="8104" />
+      <card id="8204" />
+      <card id="2012" />
+      <card id="2012" />
+      <card id="2011" />
+      <card id="5072" />
+      <card id="5072" />
+      <card id="1327" />
+      <card id="1327" />
+      <card id="1327" mastery_level="2" />
+      <card id="2011" mastery_level="3" />
+      <card id="5072" mastery_level="4" />
+      <card id="6035" mastery_level="5" />
+      <card id="6035" mastery_level="6" />
+      <card id="1044" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>canopyhunter</commander>
+        <enemy>1</enemy>
+        <text>What element embodies Wyld?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Wyld is... nature. The trees, earth, grass - all of Mother Nature's Bounty.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6575</id>
+    <name>Wyld Value</name>
+    <energy>18</energy>
+    <desc>Elyse has spent most of her time in Elaria, learning from the Ranger's camp along with the researchers. When it comes to Wyld attunement, she's one of the best allies to answer the Power Coil's questions.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="8129" />
+      <card id="8233" />
+      <card id="7070" />
+      <card id="7070" />
+      <card id="6102" />
+      <card id="7116" />
+      <card id="6116" />
+      <card id="6116" />
+      <card id="6116" />
+      <card id="7070" mastery_level="2" />
+      <card id="7116" mastery_level="3" />
+      <card id="6102" mastery_level="4" />
+      <card id="7259" mastery_level="5" />
+      <card id="5078" mastery_level="6" />
+      <card id="5054" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>canopyhunter</commander>
+        <enemy>1</enemy>
+        <text>What is the most important of these three: growth, power, or peace?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>It's growth. The Wyld... learn and adapt. In the harshest of deserts, to the lushest of forests, they can survive anywhere.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6576</id>
+    <name>Wyld Manifestation</name>
+    <energy>18</energy>
+    <desc>The Wyld Power Coil lets out a whirring noise. Like the others, it has prepared a final test. Wyld creatures awaken at its call, preparing to fight you.</desc>
+    <commander id="274" />
+    <deck>
+      <card id="8095" />
+      <card id="8204" />
+      <card id="5145" />
+      <card id="5145" />
+      <card id="5050" />
+      <card id="5050" />
+      <card id="5102" />
+      <card id="1031" />
+      <card id="1031" />
+      <card id="5145" mastery_level="2" />
+      <card id="5050" mastery_level="3" />
+      <card id="5102" mastery_level="4" />
+      <card id="2086" mastery_level="5" />
+      <card id="5088" mastery_level="6" />
+      <card id="6199" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>canopyhunter</commander>
+        <enemy>1</enemy>
+        <text>Attunement complete.</text>
+      </line>
+      <line>
+        <commander>canopyhunter</commander>
+        <enemy>1</enemy>
+        <text>Fight the manifestation you created and I will send its memory bank to the Master.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 27 Node 4 -->
+  <mission>
+    <id>6577</id>
+    <name>Solaron's Recognition</name>
+    <energy>18</energy>
+    <desc>With the fight complete, the Wyld manifestation disappears. A green light appears from it like a becaon, racing up to the sky. You feel Solaron's voice rumble in response...</desc>
+    <commander id="282" />
+    <deck>
+      <card id="8104" />
+      <card id="1031" />
+      <card id="1031" />
+      <card id="1031" />
+      <card id="5102" />
+      <card id="5102" />
+      <card id="5102" />
+      <card id="1028" />
+      <card id="1028" />
+      <card id="5102" mastery_level="2" />
+      <card id="2173" mastery_level="3" />
+      <card id="2173" mastery_level="4" />
+      <card id="5136" mastery_level="5" />
+      <card id="5136" mastery_level="6" />
+      <card id="5018" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>What is this... energy coming from the tower?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6578</id>
+    <name>Solaron's Rejection</name>
+    <energy>18</energy>
+    <desc>The skies tint green with the power of the Wyld energy. Solaron's voice shakes the skies like thunder, booming out for everyone to hear.</desc>
+    <commander id="275" />
+    <deck>
+      <card id="8128" />
+      <card id="5117" />
+      <card id="5117" />
+      <card id="5117" />
+      <card id="1028" />
+      <card id="1028" />
+      <card id="1028" />
+      <card id="2052" />
+      <card id="2052" />
+      <card id="5040" mastery_level="2" />
+      <card id="5040" mastery_level="3" />
+      <card id="1028" mastery_level="4" />
+      <card id="5031" mastery_level="5" />
+      <card id="5031" mastery_level="6" />
+      <card id="7100" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Disgusting Angels... rejecting not only me, but the very core of your soul!</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>You are worthless to me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6579</id>
+    <name>Saving Skyhaven</name>
+    <energy>18</energy>
+    <desc>The creatures that were attacking Skyhaven stop at the sound of Solaron's voice. Abruptly they cease their attacks, fleeing back to the underground tunnel.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="8104" />
+      <card id="2107" />
+      <card id="2107" />
+      <card id="5145" />
+      <card id="5145" />
+      <card id="1030" />
+      <card id="1030" />
+      <card id="5155" />
+      <card id="5155" />
+      <card id="5155" mastery_level="2" />
+      <card id="1030" mastery_level="3" />
+      <card id="2107" mastery_level="4" />
+      <card id="1044" mastery_level="5" />
+      <card id="5043" mastery_level="6" />
+      <card id="1044" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6580</id>
+    <name>Temporary Peace</name>
+    <energy>18</energy>
+    <desc>Elyse sighs as the creatures continue to flee. Kensho, who has been watching you and Elyse fiddle with the Wyld Power Coil, offers you some encouragement.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8104" />
+      <card id="2177" />
+      <card id="2177" />
+      <card id="2177" />
+      <card id="2012" />
+      <card id="2012" />
+      <card id="5072" />
+      <card id="5072" />
+      <card id="5050" />
+      <card id="5050" mastery_level="2" />
+      <card id="5040" mastery_level="3" />
+      <card id="5040" mastery_level="4" />
+      <card id="6035" mastery_level="5" />
+      <card id="6035" mastery_level="6" />
+      <card id="1044" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Phew.... that was a close one.</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Good job, young one. Solaron has lost interest in Skyhaven for now, but he might try to expand in the future.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6581</id>
+    <name>Truce</name>
+    <energy>18</energy>
+    <desc>Although the danger has passed from Skyhaven for the time being, Solaron has simply returned to Gladius Scriptorium. It's just a matter of time before he decides to take over more land and expand his domain, regardless of the Power Coil's influence.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8023" />
+      <card id="2027" />
+      <card id="2027" />
+      <card id="5158" />
+      <card id="5158" />
+      <card id="7073" />
+      <card id="7073" />
+      <card id="7073" />
+      <card id="1328" />
+      <card id="1328" mastery_level="2" />
+      <card id="2027" mastery_level="3" />
+      <card id="5158" mastery_level="4" />
+      <card id="5184" mastery_level="5" />
+      <card id="5076" mastery_level="6" />
+      <card id="5157" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Then we have to act quickly.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6582</id>
+    <name>Return to Viracocha</name>
+    <energy>18</energy>
+    <desc>Finally, you have activated all the Power Coils. However, the largest unknown factor of Viracocha still remains. You must prepare for the worst and head out to meet him, so you can defeat the Titans!</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8095" />
+      <card id="8204" />
+      <card id="5145" />
+      <card id="5145" />
+      <card id="5050" />
+      <card id="5050" />
+      <card id="5102" />
+      <card id="1031" />
+      <card id="1031" />
+      <card id="5145" mastery_level="2" />
+      <card id="5050" mastery_level="3" />
+      <card id="5102" mastery_level="4" />
+      <card id="2086" mastery_level="5" />
+      <card id="5088" mastery_level="6" />
+      <card id="6199" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Now that we have the sword Dyrnwyn, and activated the last Power Coil, let's go see Viracocha!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

@@ -342,7 +342,7 @@
     <icon>hinder</icon>
     <name>Weaken</name>
     <desc>Inflicts Weaken on a random enemy creature, reducing Attack and preventing Attack increases.</desc>
-    <desc_all>Inflicts Weaken on a random enemy creature, reducing Attack and preventing Attack increases.</desc_all>
+    <desc_all>Inflicts Weaken on all enemy creatures, reducing Attack and preventing Attack increases.</desc_all>
     <desc_faction>Inflicts Weaken on a random {y} enemy, reducing Attack and preventing Attack increases.</desc_faction>
     <desc_all_faction>Inflicts Weaken on all {y} enemies, reducing Attack and preventing Attack increases.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />

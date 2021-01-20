@@ -7241,8 +7241,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Avian_Gravity_Wizard_A</picture>
     <asset_bundle>209</asset_bundle>
-    <hidden_until_time>1611248400</hidden_until_time>
-    <!-- Thursday, 21 January 2021 17:00:00 -->
+    <hidden_until_time>1610038800</hidden_until_time>
+    <!-- Thursday, January 7, 2021 17:00:00 -->
     <item_name>Lechuza Stone</item_name>
     <item_desc>Collect Lechuza Stones to upgrade the Legendary Lechuza, the Skybinder card!</item_desc>
     <item_icon>championStone_epic</item_icon>
@@ -7397,6 +7397,92 @@
       <skill id="heal" x="6" y="2" all="1" />
       <skill id="enrage" x="6" all="1" />
       <skill id="leech" x="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7618</id>
+    <card_type>2</card_type>
+    <name>Caccia, the Lunatic</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Angel_Moon_Mask_A</picture>
+    <asset_bundle>211</asset_bundle>
+    <hidden_until_time>1611248400</hidden_until_time>
+    <!-- Thursday, January 21, 2021 17:00:00 -->
+    <item_name>Caccia Stone</item_name>
+    <item_desc>Collect Caccia Stones to upgrade the Legendary Caccia, the Lunatic card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <attack>11</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="jam" c="5" />
+    <skill id="enrage" all="1" x="3" y="3" />
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="enrage" all="1" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="4" />
+      <skill id="enrage" all="1" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="4" />
+      <skill id="enrage" all="1" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <skill id="evade" x="3" />
+      <skill id="jam" c="3" />
+      <skill id="enrage" all="1" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>32</health>
+      <skill id="evade" x="3" />
+      <skill id="jam" c="3" />
+      <skill id="enrage" all="1" x="6" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="evade" x="4" />
+      <skill id="jam" c="3" />
+      <skill id="enrage" all="1" x="6" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <skill id="evade" x="4" />
+      <skill id="jam" c="3" />
+      <skill id="enrage" all="1" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="evade" x="4" />
+      <skill id="jam" c="2" />
+      <skill id="enrage" all="1" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>34</health>
+      <skill id="evade" x="4" />
+      <skill id="jam" c="2" />
+      <skill id="enrage" all="1" x="8" y="3" />
     </upgrade>
   </unit>
 </root>
