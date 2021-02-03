@@ -9390,7 +9390,7 @@
     <name>Constructing Wyld</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <campaign_req id="1267" level="1" />
+    <campaign_req id="1272" level="1" />
     <locked_start_time>1611248400</locked_start_time>
     <!--  Thursday, January 21, 2021 17:00:00 -->
     <battleground_id>2112</battleground_id>
@@ -9430,7 +9430,7 @@
     <campaign_req id="6" level="1" />
     <locked_start_time>1612458000</locked_start_time>
     <!--  Thursday, February 4, 2021 17:00:00 -->
-    <battleground_id>2109</battleground_id>
+    <battleground_id>2113</battleground_id>
     <location_id>33</location_id>
     <x>515</x>
     <!-- left right -->
@@ -9452,11 +9452,11 @@
       <!-- Arcane Ore -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2201" />
+      <card level="4" id="2206" />
       <!-- New BGE Epic A -->
       <card level="5" id="512" />
       <!-- Arcane Deposit -->
-      <card level="6" id="2041" />
+      <card level="6" id="2162" />
       <!-- Repeat Epic A -->
       <item level="7" id="3123" />
       <!-- Crafting Item for Legendary Card -->
@@ -9466,10 +9466,10 @@
   <campaign>
     <id>1277</id>
     <name>New Hope</name>
-    <campaign_req id="1270" level="1" />
+    <campaign_req id="1276" level="1" />
     <locked_start_time>1613667600</locked_start_time>
     <!--  Thursday, February 18, 2021 17:00:00 -->
-    <battleground_id>2110</battleground_id>
+    <battleground_id>2114</battleground_id>
     <location_id>33</location_id>
     <x>250</x>
     <!-- left right -->
@@ -9491,12 +9491,12 @@
       <!-- Arcane Ore -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2202" />
-      <!-- New BGE Epic B -->
+      <card level="4" id="2014" />
+      <!-- Repeat Epic B -->
       <card level="5" id="512" />
       <!-- Arcane Deposit -->
-      <card level="6" id="2040" />
-      <!-- Repeat Epic B -->
+      <card level="6" id="2012" />
+      <!-- Repeat Epic C -->
       <item level="7" id="3123" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>

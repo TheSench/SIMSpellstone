@@ -15098,6 +15098,136 @@
       <!--  Crafting recipe -->
     </reward>
   </achievement>
+  <!-- Campaign Event 27 weeks 5-8 -->
+  <achievement>
+    <id>3654</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Power Coil</name>
+    <desc>Complete the 'Wyld Power Coil' campaign on Mastery Level 1.</desc>
+    <mission_req>6571</mission_req>
+    <locked_start_time>1612458000</locked_start_time>
+    <!--  Thursday, February 4, 2021 17:00:00 -->
+    <req>
+      <campaign>1276</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3125" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7069" number="50" />
+      <!-- Expediton Revisited -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3655</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Power Coil</name>
+    <desc>Complete the 'Wyld Power Coil' campaign on Mastery Level 2.</desc>
+    <mission_req>6571</mission_req>
+    <locked_start_time>1612458000</locked_start_time>
+    <!--  Thursday, February 4, 2021 17:00:00 -->
+    <achievement_req>3654</achievement_req>
+    <req>
+      <campaign>1276</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3656</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Power Coil</name>
+    <desc>Complete the 'Wyld Power Coil' campaign on Mastery Level 4.</desc>
+    <mission_req>6571</mission_req>
+    <locked_start_time>1612458000</locked_start_time>
+    <!--  Thursday, February 4, 2021 17:00:00 -->
+    <achievement_req>3655</achievement_req>
+    <req>
+      <campaign>1276</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3657</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wyld Power Coil</name>
+    <desc>Complete the 'Wyld Power Coil' campaign on Mastery Level 6.</desc>
+    <mission_req>6571</mission_req>
+    <locked_start_time>1612458000</locked_start_time>
+    <!--  Thursday, February 4, 2021 17:00:00 -->
+    <achievement_req>3656</achievement_req>
+    <req>
+      <campaign>1276</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3658</id>
+    <type>2</type>
+    <order>101</order>
+    <name>New Hope</name>
+    <desc>Complete the 'New Hope' campaign on Mastery Level 2.</desc>
+    <mission_req>6577</mission_req>
+    <locked_start_time>1613667600</locked_start_time>
+    <!--  Thursday, February 18, 2021 17:00:00 -->
+    <req>
+      <campaign>1277</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3659</id>
+    <type>2</type>
+    <order>101</order>
+    <name>New Hope</name>
+    <desc>Complete the 'New Hope' campaign on Mastery Level 4.</desc>
+    <mission_req>6577</mission_req>
+    <locked_start_time>1613667600</locked_start_time>
+    <!--  Thursday, February 18, 2021 17:00:00 -->
+    <achievement_req>3658</achievement_req>
+    <!--  Previous Achievement ID -->
+    <req>
+      <campaign>1277</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3660</id>
+    <type>2</type>
+    <order>101</order>
+    <name>New Hope</name>
+    <desc>Complete the 'New Hope' campaign on Mastery Level 6.</desc>
+    <mission_req>6577</mission_req>
+    <locked_start_time>1613667600</locked_start_time>
+    <!--  Thursday, February 18, 2021 17:00:00 -->
+    <achievement_req>3659</achievement_req>
+    <!--  Previous Achievement ID -->
+    <req>
+      <campaign>1277</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

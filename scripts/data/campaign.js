@@ -5038,7 +5038,7 @@ var CAMPAIGNS = {
 		"name": "Constructing Wyld"
 	},
 	"1276": {
-		"battleground_id": "2109",
+		"battleground_id": "2113",
 		"id": "1276",
 		"items": {
 			"3125": 0.6
@@ -5055,7 +5055,7 @@ var CAMPAIGNS = {
 		"name": "Wyld Power Coil"
 	},
 	"1277": {
-		"battleground_id": "2110",
+		"battleground_id": "2114",
 		"id": "1277",
 		"items": {
 			"3125": 0.8

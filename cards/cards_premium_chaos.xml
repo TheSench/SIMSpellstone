@@ -6377,22 +6377,22 @@
     <health>11</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="poison" x="1" />
+    <skill id="poison" x="2" />
     <type>2</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>12</health>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="burn" x="1" />
-      <skill id="poison" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="poison" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>4</attack>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -6400,8 +6400,8 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="burn" x="1" />
-      <skill id="poison" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="poison" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -6411,37 +6411,37 @@
     <name>Fuming Ghoul</name>
     <picture>Fuming_Horror_A</picture>
     <asset_bundle>53</asset_bundle>
-    <attack>4</attack>
+    <attack>7</attack>
     <health>14</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="burn" x="1" />
-    <skill id="poison" x="2" />
+    <skill id="burn" x="3" />
+    <skill id="poison" x="4" />
     <type>2</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <skill id="burn" x="2" />
-      <skill id="poison" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
       <health>16</health>
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <skill id="burn" x="4" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
       <level>5</level>
-      <attack>5</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="evade" x="1" />
-      <skill id="burn" x="3" />
-      <skill id="poison" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="poison" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -6451,42 +6451,39 @@
     <name>Fuming Horror</name>
     <picture>Fuming_Horror_B</picture>
     <asset_bundle>53</asset_bundle>
-    <attack>5</attack>
-    <health>17</health>
+    <attack>8</attack>
+    <health>19</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
     <skill id="burn" x="4" />
-    <skill id="poison" x="5" />
+    <skill id="poison" x="6" />
     <type>2</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>18</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>6</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>19</health>
+      <health>23</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>20</health>
       <skill id="evade" x="1" />
       <skill id="burn" x="5" />
-      <skill id="poison" x="6" />
+      <skill id="poison" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>21</health>
-      <attack>7</attack>
       <skill id="evade" x="2" />
       <skill id="burn" x="6" />
-      <skill id="poison" x="7" />
+      <skill id="poison" x="8" />
     </upgrade>
   </unit>
   <unit>
