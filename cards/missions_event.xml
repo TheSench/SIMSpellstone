@@ -50306,5 +50306,403 @@
       </line>
     </speech>
   </mission>
+  <!-- ====== Event 28 - Conflux Convergence ======= -->
+  <!-- Event 28 Node 1 -->
+  <mission>
+    <id>6583</id>
+    <name>Welcome to Dawnglow?</name>
+    <energy>18</energy>
+    <desc>You, Oda, and Elyse fly the airship back to Dawnglow Swamp. Or at least... where you last remember it being. When you arrive, you find that different lands have somehow smashed together.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Are we lost? I thought these were the coordinates for Dawnglow Swamp.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>No, look at those three beacons... the Power Coils must have changed the land.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6584</id>
+    <name>Power Coil Intersection</name>
+    <energy>18</energy>
+    <desc>The three beacons have a line of energy pouring towards a specific point. Yet where they converge, the ground has died completely. Spying Viracocha and Cedric on the ground there, you land the airship.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Ah, you've returned at last.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Chaos, Aether, Wyld... I feel their essence flowing in me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6585</id>
+    <name>Viracocha's Power</name>
+    <energy>18</energy>
+    <desc>The energy from the power coils has coalesced into Viracocha. The Mecha giant reels as the last of the energy enters, holding his head.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Can you win against the three Titans?</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>I... I... ARGH!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6586</id>
+    <name>Lost Control</name>
+    <energy>18</energy>
+    <desc>Cedric dances around Viracocha's stumbling feet, narrowly avoiding getting trampled. Eventually, the giant stills. A red light flickers across his mechanical eye sockets.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Viracocha, speak to us! What's wrong?</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Insignificant beings... I shall destroy you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6587</id>
+    <name>Prophecy Fulfilled</name>
+    <energy>18</energy>
+    <desc>The group watches as Viracocha's mannerisms switch. The once gentle giant stomps forward towards the group. Minions rise from the ground.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Just like what Vel predicted... he's losing control.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6588</id>
+    <name>Impossible Strength</name>
+    <energy>18</energy>
+    <desc>You prepare to fight against Viracocha. Although last time he was testing your power, he's lost control of himself and no longer has the ability to hold back.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>This is too much! He's as strong as a Titan... no, stronger!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 28 Node 2 -->
+  <mission>
+    <id>6589</id>
+    <name>Melancholy of Viracocha</name>
+    <energy>18</energy>
+    <desc>Viracocha stops. Some part of him recognizes that he's losing control, and he tries to stop himself from fighting you. His hesitation allows your group to slip past his forces, and hide for a moment in one of the crags.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Aargh! My dream... of becoming a Titan... and I cannot even pass this trial?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6590</id>
+    <name>Plea to Dyrnwyn</name>
+    <energy>18</energy>
+    <desc>The moment of respite gives you time to take out Dyrnwyn. Holding the sword, you call its name. Time slows, the pieces of the world fading away as an image burns itself into your mind.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6591</id>
+    <name>Dyrnwyn's Answer</name>
+    <energy>18</energy>
+    <desc>Once again, you face the same spirit who helped you when Bluefire confined you to the Abyss. Half angel with an unusually ghastly glow, Dyrnwyn greets you grimly.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dyrnwynSpirit</commander>
+        <enemy>0</enemy>
+        <text>We meet again, mortal.</text>
+      </line>
+      <line>
+        <commander>dyrnwynSpirit</commander>
+        <enemy>0</enemy>
+        <text>Was freeing you from The Void not a big enough favor?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6592</id>
+    <name>Dyrnwyn's Call</name>
+    <energy>18</energy>
+    <desc>The spirit stares through you. You can feel its gaze appraising you; decisions you've made in the past, of what you've done and not done.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dyrnwynSpirit</commander>
+        <enemy>0</enemy>
+        <text>You've developed a habit of expecting much from me.</text>
+      </line>
+      <line>
+        <commander>dyrnwynSpirit</commander>
+        <enemy>0</enemy>
+        <text>If you desire even more, then you must pass my trial.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6593</id>
+    <name>The Trials</name>
+    <energy>18</energy>
+    <desc>Despite not being present, Dyrnwyn is already aware of the situation. Although powerful spirits aren't supposed to meddle in the affairs of mortals, you have asked for his help in balancing the elements.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dyrnwynSpirit</commander>
+        <enemy>0</enemy>
+        <text>So far you have awakened the strengths of the three factions.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6594</id>
+    <name>Faction Weaknesses</name>
+    <energy>18</energy>
+    <desc>The sword's spirit had once denounced Samael as being unworthy. Favors are something to be earned rather than given. Rather than simply giving you the power, you must pass Dyrnwyn's trial!</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dyrnwynSpirit</commander>
+        <enemy>0</enemy>
+        <text>But you must also awaken their weaknesses in order to control them!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

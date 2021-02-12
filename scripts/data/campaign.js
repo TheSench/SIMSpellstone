@@ -137,6 +137,10 @@ var LOCATIONS = {
 		"id": "33",
 		"name": "Skyhaven Assault"
 	},
+	"34": {
+		"id": "34",
+		"name": "Conflux Convergence"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -5070,6 +5074,39 @@ var CAMPAIGNS = {
 			"6582"
 		],
 		"name": "New Hope"
+	},
+	"1278": {
+		"id": "1278",
+		"items": {
+			"3128": 0.2
+		},
+		"location_id": "34",
+		"missions": [
+			"6583",
+			"6584",
+			"6585",
+			"6586",
+			"6587",
+			"6588"
+		],
+		"name": "World Conflux"
+	},
+	"1279": {
+		"battleground_id": "2115",
+		"id": "1279",
+		"items": {
+			"3128": 0.4
+		},
+		"location_id": "34",
+		"missions": [
+			"6589",
+			"6590",
+			"6591",
+			"6592",
+			"6593",
+			"6594"
+		],
+		"name": "Dyrnwyn's Judgement"
 	},
 	"3000": {
 		"id": "3000",
@@ -110112,5 +110149,725 @@ var MISSIONS = {
 		],
 		"id": "6582",
 		"name": "Return to Viracocha"
+	},
+	"6583": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6583",
+		"name": "Welcome to Dawnglow?"
+	},
+	"6584": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6584",
+		"name": "Power Coil Intersection"
+	},
+	"6585": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6585",
+		"name": "Viracocha's Power"
+	},
+	"6586": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6586",
+		"name": "Lost Control"
+	},
+	"6587": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6587",
+		"name": "Prophecy Fulfilled"
+	},
+	"6588": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6588",
+		"name": "Impossible Strength"
+	},
+	"6589": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6589",
+		"name": "Melancholy of Viracocha"
+	},
+	"6590": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6590",
+		"name": "Plea to Dyrnwyn"
+	},
+	"6591": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6591",
+		"name": "Dyrnwyn's Answer"
+	},
+	"6592": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6592",
+		"name": "Dyrnwyn's Call"
+	},
+	"6593": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6593",
+		"name": "The Trials"
+	},
+	"6594": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "8046"
+			},
+			{
+				"id": "1027"
+			},
+			{
+				"id": "5044"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6594",
+		"name": "Faction Weaknesses"
 	}
 };

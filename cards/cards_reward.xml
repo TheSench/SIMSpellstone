@@ -24064,5 +24064,123 @@
       <skill id="poison" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2207</id>
+    <card_type>2</card_type>
+    <name>Beauty Agglomeration</name>
+    <picture>Angel_Cloud_Break_A</picture>
+    <asset_bundle>211</asset_bundle>
+    <hidden_until_time>1614877200</hidden_until_time>
+    <attack>7</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="6" />
+    <skill id="rally" x="2" all="1" y="3" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="2" all="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="3" all="1" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12207</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Glamour Agglomeration</name>
+    <picture>Angel_Cloud_Break_A</picture>
+    <asset_bundle>211</asset_bundle>
+    <hidden_until_time>1614877200</hidden_until_time>
+    <attack>8</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="7" />
+    <skill id="rally" x="3" all="1" y="3" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="3" all="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="4" all="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22207</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Splendor Agglomeration</name>
+    <picture>Angel_Cloud_Break_B</picture>
+    <asset_bundle>211</asset_bundle>
+    <hidden_until_time>1614877200</hidden_until_time>
+    <attack>10</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="regenerate" x="8" />
+    <skill id="rally" x="4" all="1" y="3" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="4" all="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="9" />
+      <skill id="rally" x="4" all="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="regenerate" x="9" />
+      <skill id="rally" x="5" all="1" y="3" />
+    </upgrade>
+  </unit>
 </root>
 

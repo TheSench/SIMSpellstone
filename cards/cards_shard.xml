@@ -3669,6 +3669,88 @@
       <skill id="berserk" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4043</id>
+    <card_type>2</card_type>
+    <name>Allfather, the Shaper</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Skysea_Titan_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <item_name>Allfather Stone</item_name>
+    <item_desc>Collect Allfather Stones to upgrade the Legendary Allfather, the Shaper card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <attack>18</attack>
+    <health>56</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="protect" all="1" x="5" />
+    <skill id="frost" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>57</health>
+      <skill id="stasis" x="5" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>19</attack>
+      <skill id="stasis" x="5" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>58</health>
+      <skill id="stasis" x="6" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="6" />
+      <skill id="protect" all="1" x="7" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>20</attack>
+      <health>60</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="stasis" x="7" />
+      <skill id="protect" all="1" x="8" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>21</attack>
+      <skill id="stasis" x="7" />
+      <skill id="protect" all="1" x="8" />
+      <skill id="frost" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>60</health>
+      <skill id="stasis" x="8" />
+      <skill id="protect" all="1" x="8" />
+      <skill id="frost" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="stasis" x="8" />
+      <skill id="protect" all="1" x="9" />
+      <skill id="frost" x="9" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -5984,6 +6066,84 @@
       <health>61</health>
       <skill id="evade" x="4" />
       <skill id="stasis" x="8" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6608</id>
+    <card_type>2</card_type>
+    <name>Zyd, the Unhinged</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frog_Psycho_Killer_A</picture>
+    <asset_bundle>213</asset_bundle>
+    <hidden_until_time>1613667600</hidden_until_time>
+    <!-- Thursday, 18 February 2021 0:00:00 -->
+    <item_name>Zyd Stone</item_name>
+    <item_desc>Collect Zyd Stones to upgrade the Legendary Zyd, the Unhinged card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <attack>4</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="3" y="2" />
+    <skill id="rally" x="7" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+      <skill id="fervor" x="4" y="2" />
+      <skill id="rally" x="7" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="4" y="2" />
+      <skill id="rally" x="8" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="5" y="2" />
+      <skill id="rally" x="8" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="fervor" x="5" y="2" />
+      <skill id="rally" x="9" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="fervor" x="6" y="2" />
+      <skill id="rally" x="9" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="fervor" x="6" y="2" />
+      <skill id="rally" x="10" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>33</health>
+      <skill id="fervor" x="6" y="2" />
+      <skill id="rally" x="10" />
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>

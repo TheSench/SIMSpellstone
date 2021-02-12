@@ -806,6 +806,148 @@ var BATTLEGROUNDS = {
 		"id": "138",
 		"name": "Fear Aura"
 	},
+	"139": {
+		"desc": "Elementals gain skills based on faction! Aether gain Regenerate, Chaos gain Emberhide, and Wyld gain Corrosive. Skill values are 5 + the card's delay cost.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 5,
+				"y": "1,5"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 6,
+				"y": "1,5"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 7,
+				"y": "1,5"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 8,
+				"y": "1,5"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 9,
+				"y": "1,5"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 5,
+				"y": "2,5"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 6,
+				"y": "2,5"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 7,
+				"y": "2,5"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 8,
+				"y": "2,5"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 9,
+				"y": "2,5"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"x": 5,
+				"y": "3,5"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"x": 6,
+				"y": "3,5"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"x": 7,
+				"y": "3,5"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"x": 8,
+				"y": "3,5"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"x": 9,
+				"y": "3,5"
+			}
+		],
+		"id": "139",
+		"name": "Elemental Crux"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4162,6 +4304,22 @@ var BATTLEGROUNDS = {
 		"name": "Tongue Tango",
 		"scale_with_level": "1",
 		"starting_level": "0"
+	},
+	"2115": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.008,
+				"effect_type": "scale_attributes",
+				"mult": 0.0025
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2115",
+		"name": "Celestial Duet",
+		"scale_with_level": "1",
+		"starting_level": "5"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",

@@ -15228,6 +15228,136 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 28 weeks 1-4 -->
+  <!-- Node 1 -->
+  <achievement>
+    <id>3661</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World Conflux</name>
+    <desc>Complete the 'World Conflux' campaign on Mastery Level 1.</desc>
+    <mission_req>6583</mission_req>
+    <locked_start_time>1614877200</locked_start_time>
+    <!-- Thursday, March 4, 2021 17:00:00 -->
+    <req>
+      <campaign>1278</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3128" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7069" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3662</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World Conflux</name>
+    <desc>Complete the 'World Conflux' campaign on Mastery Level 2.</desc>
+    <mission_req>6583</mission_req>
+    <locked_start_time>1614877200</locked_start_time>
+    <!-- Thursday, March 4, 2021 17:00:00 -->
+    <achievement_req>3661</achievement_req>
+    <req>
+      <campaign>1278</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3663</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World Conflux</name>
+    <desc>Complete the 'World Conflux' campaign on Mastery Level 4.</desc>
+    <mission_req>6583</mission_req>
+    <locked_start_time>1614877200</locked_start_time>
+    <!-- Thursday, March 4, 2021 17:00:00 -->
+    <achievement_req>3662</achievement_req>
+    <req>
+      <campaign>1278</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3664</id>
+    <type>2</type>
+    <order>101</order>
+    <name>World Conflux</name>
+    <desc>Complete the 'World Conflux' campaign on Mastery Level 6.</desc>
+    <mission_req>6583</mission_req>
+    <locked_start_time>1614877200</locked_start_time>
+    <!-- Thursday, March 4, 2021 17:00:00 -->
+    <achievement_req>3663</achievement_req>
+    <req>
+      <campaign>1278</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <!-- Node 2 -->
+  <achievement>
+    <id>3665</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dyrnwyn's Judgement</name>
+    <desc>Complete the 'Dyrnwyn's Judgement' campaign on Mastery Level 2.</desc>
+    <mission_req>6589</mission_req>
+    <locked_start_time>1616086800</locked_start_time>
+    <!-- Thursday, March 18, 2021 17:00:00 -->
+    <req>
+      <campaign>1279</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3666</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dyrnwyn's Judgement</name>
+    <desc>Complete the 'Dyrnwyn's Judgement' campaign on Mastery Level 4.</desc>
+    <mission_req>6589</mission_req>
+    <locked_start_time>1616086800</locked_start_time>
+    <!-- Thursday, March 18, 2021 17:00:00 -->
+    <achievement_req>3665</achievement_req>
+    <req>
+      <campaign>1279</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3667</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dyrnwyn's Judgement</name>
+    <desc>Complete the 'Dyrnwyn's Judgement' campaign on Mastery Level 6.</desc>
+    <mission_req>6589</mission_req>
+    <locked_start_time>1616086800</locked_start_time>
+    <!-- Thursday, March 18, 2021 17:00:00 -->
+    <achievement_req>3666</achievement_req>
+    <req>
+      <campaign>1279</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

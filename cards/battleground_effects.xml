@@ -855,6 +855,30 @@
       <add_skill id="counter" x="8" y="9" delay="3,4" />
     </effect>
   </battleground>
+  <!-- Elemental Crux -->
+  <battleground>
+    <id>139</id>
+    <name>Elemental Crux</name>
+    <desc>Elementals gain skills based on faction! Aether gain Regenerate, Chaos gain Emberhide, and Wyld gain Corrosive. Skill values are 5 + the card's delay cost.</desc>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <add_skill id="regenerate" x="5" yy="1,5" delay="0" />
+      <add_skill id="regenerate" x="6" yy="1,5" delay="1" />
+      <add_skill id="regenerate" x="7" yy="1,5" delay="2" />
+      <add_skill id="regenerate" x="8" yy="1,5" delay="3" />
+      <add_skill id="regenerate" x="9" yy="1,5" delay="4" />
+      <add_skill id="counterburn" x="5" yy="2,5" delay="0" />
+      <add_skill id="counterburn" x="6" yy="2,5" delay="1" />
+      <add_skill id="counterburn" x="7" yy="2,5" delay="2" />
+      <add_skill id="counterburn" x="8" yy="2,5" delay="3" />
+      <add_skill id="counterburn" x="9" yy="2,5" delay="4" />
+      <add_skill id="corrosive" x="5" yy="3,5" delay="0" />
+      <add_skill id="corrosive" x="6" yy="3,5" delay="1" />
+      <add_skill id="corrosive" x="7" yy="3,5" delay="2" />
+      <add_skill id="corrosive" x="8" yy="3,5" delay="3" />
+      <add_skill id="corrosive" x="9" yy="3,5" delay="4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -3624,6 +3648,25 @@
     <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult=".1" mult=".05" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 28 weeks 1-4 -->
+  <!-- Universal EBGE weeks 1-4 Setup -->
+  <battleground>
+    <id>2115</id>
+    <name>Celestial Duet</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_elementals_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>5</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->
