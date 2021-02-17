@@ -6091,20 +6091,20 @@
     <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="fervor" x="3" y="2" />
     <skill id="rally" x="7" />
+    <skill id="fervor" x="3" y="2" />
     <skill id="flurry" c="4" />
     <upgrade>
       <level>2</level>
       <health>29</health>
-      <skill id="fervor" x="4" y="2" />
       <skill id="rally" x="7" />
+      <skill id="fervor" x="4" y="2" />
       <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="fervor" x="4" y="2" />
       <skill id="rally" x="8" />
+      <skill id="fervor" x="4" y="2" />
       <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
@@ -6113,8 +6113,8 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="fervor" x="5" y="2" />
       <skill id="rally" x="8" />
+      <skill id="fervor" x="5" y="2" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
@@ -6123,27 +6123,27 @@
     </upgrade>
     <upgrade>
       <level>7</level>
-      <skill id="fervor" x="5" y="2" />
       <skill id="rally" x="9" />
+      <skill id="fervor" x="5" y="2" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <skill id="fervor" x="6" y="2" />
       <skill id="rally" x="9" />
+      <skill id="fervor" x="6" y="2" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <skill id="fervor" x="6" y="2" />
       <skill id="rally" x="10" />
+      <skill id="fervor" x="6" y="2" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <health>33</health>
-      <skill id="fervor" x="6" y="2" />
       <skill id="rally" x="10" />
+      <skill id="fervor" x="6" y="2" />
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
