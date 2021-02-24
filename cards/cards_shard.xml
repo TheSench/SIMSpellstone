@@ -6147,6 +6147,90 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6609</id>
+    <card_type>2</card_type>
+    <name>Hedron, the Critical Threat</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Gelatinous_Dodecahedron_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1614877200</hidden_until_time>
+    <!-- Thursday, March 4, 2021 17:00:00 -->
+    <item_name>Hedron Stone</item_name>
+    <item_desc>Collect Hedron Stones to upgrade the Legendary Hedron, the Critical Threat card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <attack>12</attack>
+    <health>20</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="rally" x="2" y="2" all="1" />
+    <skill id="leech" x="12" />
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <skill id="corrosive" x="7" />
+      <skill id="rally" x="2" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="7" />
+      <skill id="rally" x="3" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="corrosive" x="8" />
+      <skill id="rally" x="3" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="8" />
+      <skill id="rally" x="4" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+      <skill id="corrosive" x="9" />
+      <skill id="rally" x="4" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="corrosive" x="9" />
+      <skill id="rally" x="5" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>24</health>
+      <skill id="corrosive" x="10" />
+      <skill id="rally" x="5" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="corrosive" x="10" />
+      <skill id="rally" x="6" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="corrosive" x="12" />
+      <skill id="rally" x="6" y="2" all="1" />
+      <skill id="leech" x="12" />
+    </upgrade>
+  </unit>
   <!-- === CHAOS END === -->
   <!-- ============================== -->
   <!-- === WYLD PREMIUM CHAMPIONS === -->

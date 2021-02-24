@@ -24067,9 +24067,9 @@
   <unit>
     <id>2207</id>
     <card_type>2</card_type>
-    <name>Beauty Agglomeration</name>
-    <picture>Angel_Cloud_Break_A</picture>
-    <asset_bundle>211</asset_bundle>
+    <name>Beauty Conglomeration</name>
+    <picture>Elemental_Insect_Beauty_Conclomeration_A</picture>
+    <asset_bundle>215</asset_bundle>
     <hidden_until_time>1614877200</hidden_until_time>
     <attack>7</attack>
     <health>36</health>
@@ -24106,9 +24106,9 @@
     <id>12207</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Glamour Agglomeration</name>
-    <picture>Angel_Cloud_Break_A</picture>
-    <asset_bundle>211</asset_bundle>
+    <name>Glamour Conglomeration</name>
+    <picture>Elemental_Insect_Beauty_Conclomeration_A</picture>
+    <asset_bundle>215</asset_bundle>
     <hidden_until_time>1614877200</hidden_until_time>
     <attack>8</attack>
     <health>38</health>
@@ -24145,9 +24145,9 @@
     <id>22207</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Splendor Agglomeration</name>
-    <picture>Angel_Cloud_Break_B</picture>
-    <asset_bundle>211</asset_bundle>
+    <name>Splendor Conglomeration</name>
+    <picture>Elemental_Insect_Beauty_Conclomeration_B</picture>
+    <asset_bundle>215</asset_bundle>
     <hidden_until_time>1614877200</hidden_until_time>
     <attack>10</attack>
     <health>39</health>
@@ -24180,6 +24180,136 @@
       <skill id="evade" x="2" />
       <skill id="regenerate" x="9" />
       <skill id="rally" x="5" all="1" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2208</id>
+    <card_type>2</card_type>
+    <name>Shatterstone Anomaly</name>
+    <picture>Void_Void_Elemental_Shattered_Stone_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1614877200</hidden_until_time>
+    <attack>3</attack>
+    <health>13</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="5" />
+    <skill id="nullify" x="3" />
+    <skill id="berserk" x="3" />
+    <type>8</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="6" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>17</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12208</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Shatterstone Oddity</name>
+    <picture>Void_Void_Elemental_Shattered_Stone_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1614877200</hidden_until_time>
+    <attack>3</attack>
+    <health>17</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="nullify" x="3" />
+    <skill id="berserk" x="3" />
+    <type>8</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="7" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="7" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22208</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Shatterstone Horror</name>
+    <picture>Void_Void_Elemental_Shattered_Stone_B</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1614877200</hidden_until_time>
+    <attack>3</attack>
+    <health>20</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="8" />
+    <skill id="nullify" x="4" />
+    <skill id="berserk" x="4" />
+    <type>8</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="9" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="9" />
+      <skill id="nullify" x="5" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="9" />
+      <skill id="nullify" x="5" />
+      <skill id="berserk" x="5" />
     </upgrade>
   </unit>
 </root>

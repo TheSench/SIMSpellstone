@@ -37333,5 +37333,137 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7290</id>
+    <card_type>2</card_type>
+    <name>Dandelion Fairy</name>
+    <picture>Elemental_Dandelion_Fairy_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1615827600</hidden_until_time>
+    <attack>3</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17290</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dandelion Fay</name>
+    <picture>Elemental_Dandelion_Fairy_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1615827600</hidden_until_time>
+    <attack>3</attack>
+    <health>19</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="7" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>21</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27290</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dandelion Sylph</name>
+    <picture>Elemental_Dandelion_Fairy_B</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1615827600</hidden_until_time>
+    <attack>3</attack>
+    <health>21</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="9" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="weaken" x="2" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="10" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="10" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="10" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
 </root>
 

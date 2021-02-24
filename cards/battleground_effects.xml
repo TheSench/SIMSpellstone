@@ -3654,7 +3654,7 @@
   <!-- Universal EBGE weeks 1-4 Setup -->
   <battleground>
     <id>2115</id>
-    <name>Celestial Duet</name>
+    <name>Elemental Funk</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_elementals_64</icon>
     <icon_bundle>87</icon_bundle>

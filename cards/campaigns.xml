@@ -9510,7 +9510,7 @@
     <locked_start_time>1614877200</locked_start_time>
     <!-- Thursday, March 4, 2021 17:00:00 -->
     <location_id>34</location_id>
-    <x>250</x>
+    <x>10</x>
     <!-- left right -->
     <y>240</y>
     <!-- up down -->
@@ -9550,9 +9550,9 @@
     <battleground_id>2115</battleground_id>
     <!-- Enemy BGE -->
     <location_id>34</location_id>
-    <x>580</x>
+    <x>280</x>
     <!-- left right -->
-    <y>220</y>
+    <y>150</y>
     <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>

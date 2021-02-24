@@ -4317,7 +4317,7 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2115",
-		"name": "Celestial Duet",
+		"name": "Elemental Funk ",
 		"scale_with_level": "1",
 		"starting_level": "5"
 	},
