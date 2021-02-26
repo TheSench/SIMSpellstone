@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <config max_level="70" />
+  <config max_level="80" />
   <!-- Scrub -->
   <card_level>
     <rarity>0</rarity>

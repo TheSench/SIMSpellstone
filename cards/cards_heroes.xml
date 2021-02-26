@@ -11557,5 +11557,173 @@
       <skill id="imbue" s="legion" x="20" />
     </upgrade>
   </unit>
+  <unit>
+    <id>456</id>
+    <card_type>1</card_type>
+    <name>Rampaging Wind Elemental</name>
+    <portrait>windstormelemental</portrait>
+    <desc>This primal creature was disturbed by the Power Coils!</desc>
+    <health>68</health>
+    <rarity>3</rarity>
+    <skill id="protect" x="3" />
+    <skill id="enrage" x="3" all="1" />
+    <skill id="jam" c="5" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>71</health>
+      <skill id="protect" x="4" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>74</health>
+      <skill id="protect" x="6" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>77</health>
+      <skill id="protect" x="8" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>80</health>
+      <skill id="protect" x="10" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>457</id>
+    <card_type>1</card_type>
+    <name>Rampaging Magma Elemental</name>
+    <portrait>goldelemental</portrait>
+    <desc>This primal creature was disturbed by the Power Coils!</desc>
+    <health>68</health>
+    <rarity>3</rarity>
+    <skill id="imbue" s="burn" x="2" />
+    <skill id="enrage" x="3" all="1" />
+    <skill id="strike" x="4" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>71</health>
+      <skill id="imbue" s="burn" x="3" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>74</health>
+      <skill id="imbue" s="burn" x="4" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>77</health>
+      <skill id="imbue" s="burn" x="5" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="strike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>80</health>
+      <skill id="imbue" s="burn" x="6" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="strike" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>458</id>
+    <card_type>1</card_type>
+    <name>Rampaging Earth Elemental</name>
+    <portrait>oasismonster</portrait>
+    <desc>This primal creature was disturbed by the Power Coils!</desc>
+    <health>68</health>
+    <rarity>3</rarity>
+    <skill id="heal" x="6" />
+    <skill id="enrage" x="3" all="1" />
+    <skill id="weaken" x="10" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>71</health>
+      <skill id="heal" x="7" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="weaken" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>74</health>
+      <skill id="heal" x="8" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="weaken" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>77</health>
+      <skill id="heal" x="9" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="weaken" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>80</health>
+      <skill id="heal" x="10" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="weaken" x="14" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>459</id>
+    <card_type>1</card_type>
+    <name>Rampaging Minions</name>
+    <portrait>voidminions</portrait>
+    <desc>Creatures of pure corruption. They rise from the ground, attracted to the Power Coils.</desc>
+    <health>68</health>
+    <rarity>3</rarity>
+    <skill id="imbue" x="1" s="nullify" />
+    <skill id="enrage" x="3" all="1" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>71</health>
+      <skill id="imbue" x="2" s="nullify" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>74</health>
+      <skill id="imbue" x="3" s="nullify" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>77</health>
+      <skill id="imbue" x="4" s="nullify" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>80</health>
+      <skill id="imbue" x="5" s="nullify" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="enfeeble" x="5" all="1" />
+    </upgrade>
+  </unit>
 </root>
 

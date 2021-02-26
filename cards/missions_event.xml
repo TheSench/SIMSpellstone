@@ -50313,23 +50313,24 @@
     <name>Welcome to Dawnglow?</name>
     <energy>18</energy>
     <desc>You, Oda, and Elyse fly the airship back to Dawnglow Swamp. Or at least... where you last remember it being. When you arrive, you find that different lands have somehow smashed together.</desc>
-    <commander id="258" />
+    <commander id="456" />
+    <!-- Rampaging Wind Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8213" name="Dawnglow Raider" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2011" name="Poliworg" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5099" mastery_level="3" name="Croak Dropper" />
+      <card id="5015" mastery_level="4" name="Gravity Swell" />
+      <card id="1026" mastery_level="5" name="Glass Colossus" />
+      <card id="5238" mastery_level="6" name="Frostfire Apprentice" />
+      <card id="5181" mastery_level="7" name="Himamanav" />
     </deck>
     <speech>
       <line>
@@ -50349,23 +50350,24 @@
     <name>Power Coil Intersection</name>
     <energy>18</energy>
     <desc>The three beacons have a line of energy pouring towards a specific point. Yet where they converge, the ground has died completely. Spying Viracocha and Cedric on the ground there, you land the airship.</desc>
-    <commander id="258" />
+    <commander id="457" />
+    <!-- Rampaging Magma Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8222" name="Unruly Golem" />
+      <card id="8216" name="Karthos Lavafrog" />
+      <card id="8216" name="Karthos Lavafrog" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2096" name="Magma Rider" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2096" mastery_level="3" name="Magma Rider" />
+      <card id="6042" mastery_level="4" name="Shadow of Thunder" />
+      <card id="1326" mastery_level="5" name="Titan of Fire" />
+      <card id="6169" mastery_level="6" name="Deatheater" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
     </deck>
     <speech>
       <line>
@@ -50385,23 +50387,24 @@
     <name>Viracocha's Power</name>
     <energy>18</energy>
     <desc>The energy from the power coils has coalesced into Viracocha. The Mecha giant reels as the last of the energy enters, holding his head.</desc>
-    <commander id="258" />
+    <commander id="458" />
+    <!-- Rampaging Earth Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8234" name="Earth Conjurationm" />
+      <card id="8234" name="Earth Conjuration" />
+      <card id="8233" name="Dawnglow Scout" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2031" name="Dryad" />
+      <card id="2031" name="Dryad" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="7051" mastery_level="3" name="Stinglash Rider" />
+      <card id="7015" mastery_level="4" name="Bog Aberration" />
+      <card id="1629" mastery_level="5" name="Rock Titan" />
+      <card id="7160" mastery_level="6" name="Perilous Stonesteps" />
+      <card id="1641" mastery_level="7" name="Rhythm of the Wyld" />
     </deck>
     <speech>
       <line>
@@ -50421,23 +50424,24 @@
     <name>Lost Control</name>
     <energy>18</energy>
     <desc>Cedric dances around Viracocha's stumbling feet, narrowly avoiding getting trampled. Eventually, the giant stills. A red light flickers across his mechanical eye sockets.</desc>
-    <commander id="258" />
+    <commander id="456" />
+    <!-- Rampaging Wind Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8213" name="Dawnglow Raider" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2011" name="Poliworg" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5099" mastery_level="3" name="Croak Dropper" />
+      <card id="5015" mastery_level="4" name="Gravity Swell" />
+      <card id="1026" mastery_level="5" name="Glass Colossus" />
+      <card id="5238" mastery_level="6" name="Frostfire Apprentice" />
+      <card id="5181" mastery_level="7" name="Himamanav" />
     </deck>
     <speech>
       <line>
@@ -50457,23 +50461,24 @@
     <name>Prophecy Fulfilled</name>
     <energy>18</energy>
     <desc>The group watches as Viracocha's mannerisms switch. The once gentle giant stomps forward towards the group. Minions rise from the ground.</desc>
-    <commander id="258" />
+    <commander id="459" />
+    <!-- Rampaging Minions -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8225" name="Tar Pit Conjuration" />
+      <card id="8212" name="Steam Conjuration" />
+      <card id="8238" name="Coral Conjuration" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="6104" name="Night Lurker" />
+      <card id="6104" mastery_level="2" name="Night Lurker" />
+      <card id="6104" mastery_level="3" name="Night Lurker" />
+      <card id="6050" mastery_level="4" name="Wortwog" />
+      <card id="6050" mastery_level="5" name="Wortwog" />
+      <card id="6052" mastery_level="6" name="Fuming Beast" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
     </deck>
     <speech>
       <line>
@@ -50488,23 +50493,24 @@
     <name>Impossible Strength</name>
     <energy>18</energy>
     <desc>You prepare to fight against Viracocha. Although last time he was testing your power, he's lost control of himself and no longer has the ability to hold back.</desc>
-    <commander id="258" />
+    <commander id="457" />
+    <!-- Rampaging Magma Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8222" name="Unruly Golem" />
+      <card id="8216" name="Karthos Lavafrog" />
+      <card id="8216" name="Karthos Lavafrog" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2096" name="Magma Rider" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2096" mastery_level="3" name="Magma Rider" />
+      <card id="6042" mastery_level="4" name="Shadow of Thunder" />
+      <card id="1326" mastery_level="5" name="Titan of Fire" />
+      <card id="6169" mastery_level="6" name="Deatheater" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
     </deck>
     <speech>
       <line>
@@ -50520,23 +50526,24 @@
     <name>Melancholy of Viracocha</name>
     <energy>18</energy>
     <desc>Viracocha stops. Some part of him recognizes that he's losing control, and he tries to stop himself from fighting you. His hesitation allows your group to slip past his forces, and hide for a moment in one of the crags.</desc>
-    <commander id="258" />
+    <commander id="458" />
+    <!-- Rampaging Earth Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8234" name="Earth Conjurationm" />
+      <card id="8234" name="Earth Conjuration" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2031" name="Dryad" />
+      <card id="2031" name="Dryad" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="7051" mastery_level="3" name="Stinglash Rider" />
+      <card id="7015" mastery_level="4" name="Bog Aberration" />
+      <card id="1629" mastery_level="5" name="Rock Titan" />
+      <card id="7160" mastery_level="6" name="Perilous Stonesteps" />
+      <card id="1641" mastery_level="7" name="Rhythm of the Wyld" />
     </deck>
     <speech>
       <line>
@@ -50551,23 +50558,24 @@
     <name>Plea to Dyrnwyn</name>
     <energy>18</energy>
     <desc>The moment of respite gives you time to take out Dyrnwyn. Holding the sword, you call its name. Time slows, the pieces of the world fading away as an image burns itself into your mind.</desc>
-    <commander id="258" />
+    <commander id="456" />
+    <!-- Rampaging Wind Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2011" name="Poliworg" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5099" mastery_level="3" name="Croak Dropper" />
+      <card id="5015" mastery_level="4" name="Gravity Swell" />
+      <card id="1026" mastery_level="5" name="Glass Colossus" />
+      <card id="5238" mastery_level="6" name="Frostfire Apprentice" />
+      <card id="5181" mastery_level="7" name="Himamanav" />
     </deck>
   </mission>
   <mission>
@@ -50575,23 +50583,24 @@
     <name>Dyrnwyn's Answer</name>
     <energy>18</energy>
     <desc>Once again, you face the same spirit who helped you when Bluefire confined you to the Abyss. Half angel with an unusually ghastly glow, Dyrnwyn greets you grimly.</desc>
-    <commander id="258" />
+    <commander id="457" />
+    <!-- Rampaging Magma Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8222" name="Unruly Golem" />
+      <card id="8216" name="Karthos Lavafrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2096" name="Magma Rider" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2096" mastery_level="3" name="Magma Rider" />
+      <card id="6042" mastery_level="4" name="Shadow of Thunder" />
+      <card id="1326" mastery_level="5" name="Titan of Fire" />
+      <card id="6169" mastery_level="6" name="Deatheater" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
     </deck>
     <speech>
       <line>
@@ -50611,23 +50620,24 @@
     <name>Dyrnwyn's Call</name>
     <energy>18</energy>
     <desc>The spirit stares through you. You can feel its gaze appraising you; decisions you've made in the past, of what you've done and not done.</desc>
-    <commander id="258" />
+    <commander id="458" />
+    <!-- Rampaging Earth Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8234" name="Earth Conjurationm" />
+      <card id="8234" name="Earth Conjuration" />
+      <card id="7051" mastery_level="3" name="Stinglash Rider" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2031" name="Dryad" />
+      <card id="2031" name="Dryad" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="7051" mastery_level="3" name="Stinglash Rider" />
+      <card id="7015" mastery_level="4" name="Bog Aberration" />
+      <card id="1629" mastery_level="5" name="Rock Titan" />
+      <card id="7160" mastery_level="6" name="Perilous Stonesteps" />
+      <card id="1641" mastery_level="7" name="Rhythm of the Wyld" />
     </deck>
     <speech>
       <line>
@@ -50647,23 +50657,24 @@
     <name>The Trials</name>
     <energy>18</energy>
     <desc>Despite not being present, Dyrnwyn is already aware of the situation. Although powerful spirits aren't supposed to meddle in the affairs of mortals, you have asked for his help in balancing the elements.</desc>
-    <commander id="258" />
+    <commander id="456" />
+    <!-- Rampaging Wind Elemental -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="8203" name="Cloud Conjuration" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2011" name="Poliworg" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5099" mastery_level="3" name="Croak Dropper" />
+      <card id="5015" mastery_level="4" name="Gravity Swell" />
+      <card id="1026" mastery_level="5" name="Glass Colossus" />
+      <card id="5238" mastery_level="6" name="Frostfire Apprentice" />
+      <card id="5181" mastery_level="7" name="Himamanav" />
     </deck>
     <speech>
       <line>
@@ -50678,23 +50689,24 @@
     <name>Faction Weaknesses</name>
     <energy>18</energy>
     <desc>The sword's spirit had once denounced Samael as being unworthy. Favors are something to be earned rather than given. Rather than simply giving you the power, you must pass Dyrnwyn's trial!</desc>
-    <commander id="258" />
+    <commander id="459" />
+    <!-- Rampaging Minions -->
     <deck>
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1014" name="Cherub" />
-      <card id="8046" name="Winter's Sting" />
-      <card id="1027" name="Griffin Knight" />
-      <card id="5044" name="Telepathic Magi" />
-      <card id="1030" name="Paladin" />
-      <card id="7030" name="Arctic Ambusher" />
-      <card id="5033" name="Lost Soul" />
-      <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="7113" mastery_level="3" name="Revenge from Above" />
-      <card id="2027" mastery_level="4" name="Halo Mage" />
-      <card id="2042" mastery_level="5" name="Carrion Hunter" />
-      <card id="5055" mastery_level="6" name="Galewing" />
-      <card id="6039" mastery_level="7" name="Auroch" />
+      <card id="8225" name="Tar Pit Conjuration" />
+      <card id="8212" name="Steam Conjuration" />
+      <card id="6104" name="Night Lurker" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="6104" name="Night Lurker" />
+      <card id="6104" mastery_level="2" name="Night Lurker" />
+      <card id="6104" mastery_level="3" name="Night Lurker" />
+      <card id="6050" mastery_level="4" name="Wortwog" />
+      <card id="6050" mastery_level="5" name="Wortwog" />
+      <card id="8077" mastery_level="6" name="Vorpal Berserker" />
+      <card id="8079" mastery_level="7" name="Vorpal Warpbeast" />
     </deck>
     <speech>
       <line>
