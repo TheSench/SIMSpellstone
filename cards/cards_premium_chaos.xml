@@ -2275,40 +2275,41 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
-    <attack>5</attack>
-    <health>8</health>
+    <attack>10</attack>
+    <health>18</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="enfeeble" x="2" />
-    <skill id="enfeeble" x="1" />
-    <skill id="poison" x="1" />
+    <skill id="enfeeble" x="4" />
+    <skill id="enfeeble" x="4" />
+    <skill id="poison" x="3" />
     <type>2</type>
-    <set>3000</set>
+    <sub_type>5</sub_type>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>9</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="enfeeble" x="2" />
-      <skill id="enfeeble" x="1" />
-      <skill id="poison" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="enfeeble" x="4" />
+      <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>11</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="2" />
-      <skill id="enfeeble" x="2" />
-      <skill id="poison" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="enfeeble" x="4" />
+      <skill id="poison" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="enfeeble" x="3" />
-      <skill id="enfeeble" x="2" />
-      <skill id="poison" x="2" />
+      <skill id="enfeeble" x="5" />
+      <skill id="enfeeble" x="5" />
+      <skill id="poison" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -2320,40 +2321,41 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
-    <attack>5</attack>
-    <health>12</health>
+    <attack>11</attack>
+    <health>23</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="enfeeble" x="3" />
-    <skill id="enfeeble" x="2" />
-    <skill id="poison" x="2" />
+    <skill id="enfeeble" x="6" />
+    <skill id="enfeeble" x="6" />
+    <skill id="poison" x="6" />
     <type>2</type>
-    <set>3000</set>
+    <sub_type>5</sub_type>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="enfeeble" x="3" />
-      <skill id="enfeeble" x="3" />
-      <skill id="poison" x="2" />
+      <skill id="enfeeble" x="6" />
+      <skill id="enfeeble" x="6" />
+      <skill id="poison" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>14</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="4" />
-      <skill id="enfeeble" x="3" />
-      <skill id="poison" x="2" />
+      <skill id="enfeeble" x="6" />
+      <skill id="enfeeble" x="6" />
+      <skill id="poison" x="8" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="enfeeble" x="4" />
-      <skill id="enfeeble" x="3" />
-      <skill id="poison" x="3" />
+      <skill id="enfeeble" x="7" />
+      <skill id="enfeeble" x="7" />
+      <skill id="poison" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -2365,38 +2367,39 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
-    <attack>5</attack>
-    <health>15</health>
+    <attack>12</attack>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="enfeeble" x="4" />
-    <skill id="enfeeble" x="3" />
-    <skill id="poison" x="3" />
+    <skill id="enfeeble" x="7" />
+    <skill id="enfeeble" x="7" />
+    <skill id="poison" x="10" />
     <type>2</type>
-    <set>3000</set>
+    <sub_type>5</sub_type>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="enfeeble" x="4" />
-      <skill id="enfeeble" x="4" />
-      <skill id="poison" x="3" />
+      <skill id="enfeeble" x="8" />
+      <skill id="enfeeble" x="8" />
+      <skill id="poison" x="10" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>18</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="5" />
-      <skill id="enfeeble" x="4" />
-      <skill id="poison" x="3" />
+      <skill id="enfeeble" x="9" />
+      <skill id="enfeeble" x="9" />
+      <skill id="poison" x="10" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>6</attack>
+      <attack>14</attack>
     </upgrade>
   </unit>
   <unit>

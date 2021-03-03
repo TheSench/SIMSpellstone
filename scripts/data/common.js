@@ -3,4 +3,4 @@
 var text_version = 'v2.0';
 var battle_sim = false;
 var current_bges = [121,131];
-var DataUpdated = 1614375658475;
+var DataUpdated = 1614807736281;
