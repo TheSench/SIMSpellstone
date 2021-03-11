@@ -11725,5 +11725,204 @@
       <skill id="enfeeble" x="5" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>460</id>
+    <card_type>1</card_type>
+    <name>Unfocused Power</name>
+    <portrait>chaosguardian</portrait>
+    <asset_bundle>27</asset_bundle>
+    <desc>I'm strongest power!</desc>
+    <health>88</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="20" />
+    <skill id="strike" x="10" />
+    <skill id="strike" x="10" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>90</health>
+      <skill id="strike" x="20" />
+      <skill id="strike" x="15" />
+      <skill id="strike" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="strike" x="20" />
+      <skill id="strike" x="20" />
+      <skill id="strike" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>95</health>
+      <skill id="strike" x="25" />
+      <skill id="strike" x="20" />
+      <skill id="strike" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="strike" x="25" />
+      <skill id="strike" x="25" />
+      <skill id="strike" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="strike" x="30" />
+      <skill id="strike" x="25" />
+      <skill id="strike" x="20" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>461</id>
+    <card_type>1</card_type>
+    <name>Meaningless Order</name>
+    <portrait>aetherguardian</portrait>
+    <asset_bundle>27</asset_bundle>
+    <desc>You exist to serve!</desc>
+    <health>86</health>
+    <rarity>4</rarity>
+    <skill id="jam" c="3" />
+    <skill id="jam" c="5" />
+    <skill id="jam" c="7" all="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>89</health>
+      <skill id="jam" c="3" />
+      <skill id="jam" c="3" />
+      <skill id="jam" c="7" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>91</health>
+      <skill id="jam" c="2" />
+      <skill id="jam" c="3" />
+      <skill id="jam" c="7" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>93</health>
+      <skill id="jam" c="1" />
+      <skill id="jam" c="3" />
+      <skill id="jam" c="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>95</health>
+      <skill id="jam" c="1" />
+      <skill id="jam" c="2" />
+      <skill id="jam" c="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>97</health>
+      <skill id="jam" c="1" />
+      <skill id="jam" c="2" />
+      <skill id="jam" c="5" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>462</id>
+    <card_type>1</card_type>
+    <name>Untamed Growth</name>
+    <portrait>wyldguardian</portrait>
+    <asset_bundle>27</asset_bundle>
+    <desc>Nature shall grow over you!</desc>
+    <health>88</health>
+    <rarity>4</rarity>
+    <skill id="heal" x="20" />
+    <skill id="heal" x="10" />
+    <skill id="heal" x="10" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>91</health>
+      <skill id="heal" x="20" />
+      <skill id="heal" x="15" />
+      <skill id="heal" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="heal" x="20" />
+      <skill id="heal" x="20" />
+      <skill id="heal" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>95</health>
+      <skill id="heal" x="25" />
+      <skill id="heal" x="20" />
+      <skill id="heal" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="heal" x="25" />
+      <skill id="heal" x="25" />
+      <skill id="heal" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="heal" x="30" />
+      <skill id="heal" x="25" />
+      <skill id="heal" x="20" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>463</id>
+    <card_type>1</card_type>
+    <name>Desire for Apathy</name>
+    <portrait>void</portrait>
+    <desc>Void controls the elements!</desc>
+    <health>70</health>
+    <rarity>4</rarity>
+    <skill id="weaken" x="5" all="1" />
+    <skill id="weaken" x="5" all="1" c="5" />
+    <skill id="weaken" x="10" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>72</health>
+      <skill id="weaken" x="5" all="1" />
+      <skill id="weaken" x="5" all="1" c="4" />
+      <skill id="weaken" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>74</health>
+      <skill id="weaken" x="5" all="1" />
+      <skill id="weaken" x="5" all="1" c="4" />
+      <skill id="weaken" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>76</health>
+      <skill id="weaken" x="5" all="1" />
+      <skill id="weaken" x="10" all="1" c="4" />
+      <skill id="weaken" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>78</health>
+      <skill id="weaken" x="10" all="1" />
+      <skill id="weaken" x="10" all="1" c="4" />
+      <skill id="weaken" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>80</health>
+      <skill id="weaken" x="10" all="1" />
+      <skill id="weaken" x="10" all="1" c="3" />
+      <skill id="weaken" x="20" />
+    </upgrade>
+  </unit>
 </root>
 

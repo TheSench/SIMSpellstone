@@ -948,6 +948,24 @@ var BATTLEGROUNDS = {
 		"id": "139",
 		"name": "Elemental Crux"
 	},
+	"140": {
+		"desc": "Mechas gain abilities based on faction! Aether gain Legion, Chaos gain Barrage and Wyld gain Venom. Skill values are 3 + the card's delay cost.",
+		"effect": [
+			{
+				"all": "1",
+				"delay": [
+					3
+				],
+				"effect_type": "skill",
+				"id": "imbue",
+				"s": "venom",
+				"x": 6,
+				"y": "3,16"
+			}
+		],
+		"id": "140",
+		"name": "TEST BGE"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4320,6 +4338,22 @@ var BATTLEGROUNDS = {
 		"name": "Elemental Funk ",
 		"scale_with_level": "1",
 		"starting_level": "5"
+	},
+	"2116": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.3,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2116",
+		"name": "Flawed Elemtal Funk",
+		"scale_with_level": "1",
+		"starting_level": "0"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
