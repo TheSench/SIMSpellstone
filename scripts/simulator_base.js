@@ -1495,7 +1495,7 @@ var SIMULATOR = {};
 					amount = Math.ceil(skill.mult * target.health);
 				}
 
-				target['enraged'] += amount;
+				target.enraged += amount;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + amount + '<br>';
@@ -2931,31 +2931,28 @@ var SIMULATOR = {};
 				}
 			}
 
-			if(!target.silenced) {
-				// Fury
-				// - Target must have received some amount of damage
-				if (target.fury) {
-					var furyBase = target.fury;
-					var furyEnhancement = getEnhancement(target, 'counter', furyBase);
+			// Fury
+			// - Target must have received some amount of damage
+			if (target.fury) {
+				var furyBase = target.fury;
+				var furyEnhancement = getEnhancement(target, 'counter', furyBase);
 
-					if (target.isAlive()) {
-						var fury = furyBase + furyEnhancement;
-						fury = adjustAttackIncrease(target, fury);
-						target.attack_berserk += fury;
-						if (debug) {
-							echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
-						}
+				if (target.isAlive()) {
+					var fury = furyBase + furyEnhancement;
+					fury = adjustAttackIncrease(target, fury);
+					target.attack_berserk += fury;
+					if (debug) {
+						echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
 					}
-
-					doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
 				}
 
-				var enraged = target.enraged;
-				if (enraged > 0) {
-					enraged = adjustAttackIncrease(target, enraged);
-					target.attack_berserk += enraged;
-					if (debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
-				}
+				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
+			}
+			var enraged = target.enraged;
+			if (enraged > 0) {
+				enraged = adjustAttackIncrease(target, enraged);
+				target.attack_berserk += enraged;
+				if (debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
 			}
 
 			if(!current_assault.silenced) {
