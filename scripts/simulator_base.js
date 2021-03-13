@@ -551,7 +551,7 @@ var SIMULATOR = {};
 				if (heal_amt > missingHealth) {
 					heal_amt = missingHealth;
 				}
-				target['health_left'] += heal_amt;
+				target.health_left += heal_amt;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt;
