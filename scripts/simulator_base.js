@@ -2985,7 +2985,7 @@ var SIMULATOR = {};
 
 		// Corrosion
 		// - Target must have received some amount of damage
-		if (target.corrosive && !target.silenced) {
+		if (target.corrosive) {
 			var corrosion = target.corrosive || 0;
 			var enhanced = getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
