@@ -551,7 +551,7 @@ var SIMULATOR = {};
 				if (heal_amt > missingHealth) {
 					heal_amt = missingHealth;
 				}
-				target['health_left'] += heal_amt;
+				target.health_left += heal_amt;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt;
@@ -2526,6 +2526,10 @@ var SIMULATOR = {};
 
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 			var current_assault = field_p_assaults[key];
+
+			if (!current_assault.isAlive()) {
+				continue;
+			}
 
 			// Make sure jam-self doesn't wear off at end of turn it was applied
 			if (current_assault.jammedSelf) {
