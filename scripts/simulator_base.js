@@ -130,6 +130,33 @@ var SIMULATOR = {};
 		}
 	}
 
+	// Deal damage to card
+	// and keep track of cards that have died this turn
+	function do_attack_damage(source, target, damage, logFn) {
+		if (damage >= target.health_left) {
+			target.health_left = 0;
+		} else {
+			target.health_left -= damage;
+		}
+
+		if (debug) logFn(source, target, damage);
+
+		// Silence
+		// - Attacker must have taken damage
+		// - Target must be an assault
+		if (source.silence) {
+			target.silenced = true;
+			// Remove passive statuses for this turn
+			target.invisible = 0;
+			target.warded = 0;
+			if (debug) echo += debug_name(source) + ' inflicts silence on ' + debug_name(target) + '<br>';
+		}
+
+		if (!target.isAlive() && source) {
+			doOnDeathSkills(target, source);
+		}
+	}
+
 	function iceshatter(src_card) {
 		// Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
 		var amount = src_card.barrier_ice;
@@ -2511,7 +2538,6 @@ var SIMULATOR = {};
 			current_assault.nullified = 0;
 			current_assault.dualstrike_triggered = false;
 			current_assault.bash_triggered = false;
-			current_assault.silenced = false;
 
 			// Regenerate
 			if (current_assault.regenerate && current_assault.isDamaged() && !current_assault.silenced) {
@@ -2605,6 +2631,8 @@ var SIMULATOR = {};
 			if (!current_assault.isAlive()) {
 				doOnDeathSkills(current_assault, null);
 			}
+
+			current_assault.silenced = false;
 		}
 	}
 
@@ -2749,7 +2777,7 @@ var SIMULATOR = {};
 		// -- END OF CALCULATE DAMAGE --
 
 		// Deal damage to target
-		do_damage(current_assault, target, damage, null, function (source, target, amount) {
+		do_attack_damage(current_assault, target, damage, function (source, target, amount) {
 			echo += debug_name(source) + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
@@ -2808,17 +2836,6 @@ var SIMULATOR = {};
 				if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
 			}
 
-			// Silence
-			// - Attacker must have taken damage
-			// - Target must be an assault
-			if (current_assault.silence) {
-				target.silenced = true;
-				// Remove passive statuses for this turn
-				target.invisible = 0;
-				target.warded = 0;
-				if (debug) echo += debug_name(current_assault) + ' inflicts silence on ' + debug_name(target) + '<br>';
-			}
-
 			// Daze
 			// - Target must have taken damage
 			// - Target must be an assault
@@ -2870,46 +2887,46 @@ var SIMULATOR = {};
 				}
 			}
 
+			// Counter
+			// - Target must have received some amount of damage
+			// - Attacker must not be already dead
+			if (target.counter) {
+
+				var counterBase = 0 + target.counter;
+				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
+
+				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
+			}
+
+			// Counterburn
+			// - Target must have received some amount of damage
+			if (target.counterburn) {
+				var scorch = target.counterburn || 0;
+				var enhanced = getEnhancement(target, 'counterburn', scorch);
+				scorch += enhanced;
+				if (!current_assault.scorched) {
+					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
+				} else {
+					current_assault.scorched.amount += scorch;
+					current_assault.scorched.timer = 2;
+				}
+				if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+			}
+
+			// Counterpoison
+			// - Target must have received some amount of damage
+			if (target.counterpoison) {
+				var poison = target.counterpoison || 0;
+				var enhanced = getEnhancement(target, 'counterpoison', poison);
+				poison += enhanced;
+
+				if (poison > current_assault.poisoned) {
+					current_assault.poisoned = poison;
+					if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+				}
+			}
+
 			if(!target.silenced) {
-				// Counter
-				// - Target must have received some amount of damage
-				// - Attacker must not be already dead
-				if (target.counter) {
-
-					var counterBase = 0 + target.counter;
-					var counterEnhancement = getEnhancement(target, 'counter', counterBase);
-
-					doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
-				}
-
-				// Counterburn
-				// - Target must have received some amount of damage
-				if (target.counterburn) {
-					var scorch = target.counterburn || 0;
-					var enhanced = getEnhancement(target, 'counterburn', scorch);
-					scorch += enhanced;
-					if (!current_assault.scorched) {
-						current_assault.scorched = { 'amount': scorch, 'timer': 2 };
-					} else {
-						current_assault.scorched.amount += scorch;
-						current_assault.scorched.timer = 2;
-					}
-					if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
-				}
-
-				// Counterpoison
-				// - Target must have received some amount of damage
-				if (target.counterpoison) {
-					var poison = target.counterpoison || 0;
-					var enhanced = getEnhancement(target, 'counterpoison', poison);
-					poison += enhanced;
-
-					if (poison > current_assault.poisoned) {
-						current_assault.poisoned = poison;
-						if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
-					}
-				}
-
 				// Fury
 				// - Target must have received some amount of damage
 				if (target.fury) {
@@ -2985,7 +3002,7 @@ var SIMULATOR = {};
 
 		// Corrosion
 		// - Target must have received some amount of damage
-		if (target.corrosive && !target.silenced) {
+		if (target.corrosive) {
 			var corrosion = target.corrosive || 0;
 			var enhanced = getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
