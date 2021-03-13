@@ -470,12 +470,13 @@ var SIMULATOR = {};
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 				target.protected += wingward;
-				target.invisible += Math.ceil(wingward/2);
+				var invisBoost = Math.ceil(wingward/2);
+				target.invisible += invisBoost;
 				if (debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + 
 						', protecting it by ' + wingward + 
-						' and imbuing it with invisible ' + wingward;
+						' and imbuing it with invisible ' + invisBoost;
 					echo += '<br>';
 				}
 			}
