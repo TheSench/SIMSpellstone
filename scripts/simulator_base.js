@@ -2870,46 +2870,46 @@ var SIMULATOR = {};
 				}
 			}
 
+			// Counter
+			// - Target must have received some amount of damage
+			// - Attacker must not be already dead
+			if (target.counter) {
+
+				var counterBase = 0 + target.counter;
+				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
+
+				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
+			}
+
+			// Counterburn
+			// - Target must have received some amount of damage
+			if (target.counterburn) {
+				var scorch = target.counterburn || 0;
+				var enhanced = getEnhancement(target, 'counterburn', scorch);
+				scorch += enhanced;
+				if (!current_assault.scorched) {
+					current_assault.scorched = { 'amount': scorch, 'timer': 2 };
+				} else {
+					current_assault.scorched.amount += scorch;
+					current_assault.scorched.timer = 2;
+				}
+				if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+			}
+
+			// Counterpoison
+			// - Target must have received some amount of damage
+			if (target.counterpoison) {
+				var poison = target.counterpoison || 0;
+				var enhanced = getEnhancement(target, 'counterpoison', poison);
+				poison += enhanced;
+
+				if (poison > current_assault.poisoned) {
+					current_assault.poisoned = poison;
+					if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+				}
+			}
+
 			if(!target.silenced) {
-				// Counter
-				// - Target must have received some amount of damage
-				// - Attacker must not be already dead
-				if (target.counter) {
-
-					var counterBase = 0 + target.counter;
-					var counterEnhancement = getEnhancement(target, 'counter', counterBase);
-
-					doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
-				}
-
-				// Counterburn
-				// - Target must have received some amount of damage
-				if (target.counterburn) {
-					var scorch = target.counterburn || 0;
-					var enhanced = getEnhancement(target, 'counterburn', scorch);
-					scorch += enhanced;
-					if (!current_assault.scorched) {
-						current_assault.scorched = { 'amount': scorch, 'timer': 2 };
-					} else {
-						current_assault.scorched.amount += scorch;
-						current_assault.scorched.timer = 2;
-					}
-					if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
-				}
-
-				// Counterpoison
-				// - Target must have received some amount of damage
-				if (target.counterpoison) {
-					var poison = target.counterpoison || 0;
-					var enhanced = getEnhancement(target, 'counterpoison', poison);
-					poison += enhanced;
-
-					if (poison > current_assault.poisoned) {
-						current_assault.poisoned = poison;
-						if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
-					}
-				}
-
 				// Fury
 				// - Target must have received some amount of damage
 				if (target.fury) {
