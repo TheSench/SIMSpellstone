@@ -130,6 +130,33 @@ var SIMULATOR = {};
 		}
 	}
 
+	// Deal damage to card
+	// and keep track of cards that have died this turn
+	function do_attack_damage(source, target, damage, logFn) {
+		if (damage >= target.health_left) {
+			target.health_left = 0;
+		} else {
+			target.health_left -= damage;
+		}
+
+		if (debug) logFn(source, target, damage);
+
+		// Silence
+		// - Attacker must have taken damage
+		// - Target must be an assault
+		if (source.silence) {
+			target.silenced = true;
+			// Remove passive statuses for this turn
+			target.invisible = 0;
+			target.warded = 0;
+			if (debug) echo += debug_name(source) + ' inflicts silence on ' + debug_name(target) + '<br>';
+		}
+
+		if (!target.isAlive() && source) {
+			doOnDeathSkills(target, source);
+		}
+	}
+
 	function iceshatter(src_card) {
 		// Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
 		var amount = src_card.barrier_ice;
@@ -2604,7 +2631,7 @@ var SIMULATOR = {};
 			if (!current_assault.isAlive()) {
 				doOnDeathSkills(current_assault, null);
 			}
-			
+
 			current_assault.silenced = false;
 		}
 	}
@@ -2750,7 +2777,7 @@ var SIMULATOR = {};
 		// -- END OF CALCULATE DAMAGE --
 
 		// Deal damage to target
-		do_damage(current_assault, target, damage, null, function (source, target, amount) {
+		do_attack_damage(current_assault, target, damage, function (source, target, amount) {
 			echo += debug_name(source) + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
@@ -2807,17 +2834,6 @@ var SIMULATOR = {};
 				nullify += enhanced;
 				target.nullified += nullify;
 				if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
-			}
-
-			// Silence
-			// - Attacker must have taken damage
-			// - Target must be an assault
-			if (current_assault.silence) {
-				target.silenced = true;
-				// Remove passive statuses for this turn
-				target.invisible = 0;
-				target.warded = 0;
-				if (debug) echo += debug_name(current_assault) + ' inflicts silence on ' + debug_name(target) + '<br>';
 			}
 
 			// Daze
