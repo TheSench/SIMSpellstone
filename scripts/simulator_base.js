@@ -452,11 +452,11 @@ var SIMULATOR = {};
 
 			var alliedUnits = getAlliedUnits(src_card, field);
 
-			// Targets self and leftmost ally
+			// Targets self and first ally from the left
 			var targets = [];
-			for (var key = 0; key < src_card.key; key++) {
+			for (var key = 0; key < alliedUnits.length; key++) {
 				var target = alliedUnits[key];
-				if (target.isAlive()) {
+				if (target.isAlive() && target != src_card) {
 					targets.push(key);
 					break;
 				}
