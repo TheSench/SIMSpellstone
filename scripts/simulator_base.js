@@ -2527,6 +2527,10 @@ var SIMULATOR = {};
 		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 			var current_assault = field_p_assaults[key];
 
+			if (!current_assault.isAlive()) {
+				continue;
+			}
+
 			// Make sure jam-self doesn't wear off at end of turn it was applied
 			if (current_assault.jammedSelf) {
 				current_assault.jammedSelf = false;
