@@ -2511,7 +2511,6 @@ var SIMULATOR = {};
 			current_assault.nullified = 0;
 			current_assault.dualstrike_triggered = false;
 			current_assault.bash_triggered = false;
-			current_assault.silenced = false;
 
 			// Regenerate
 			if (current_assault.regenerate && current_assault.isDamaged() && !current_assault.silenced) {
@@ -2605,6 +2604,8 @@ var SIMULATOR = {};
 			if (!current_assault.isAlive()) {
 				doOnDeathSkills(current_assault, null);
 			}
+			
+			current_assault.silenced = false;
 		}
 	}
 
