@@ -3,6 +3,13 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox
 workbox.googleAnalytics.initialize();
 
 if (workbox) {
+    const HTML_FILES = /.*\.html/;
+    const CSS_FILES = /.*\.css/;
+    const DATA_FILE = /\/dist\/data\.min\.js/;
+    const SCRIPT_FILES = /^.*\/((?!(data\.min)).)*\.js/;
+    const IMAGE_FILES = /.*\.png/;
+    const SPRITESHEETS = /\/sprites\/.*\.jpg/;
+
     function baseFilePath(url) {
         return url.split('?')[0];
     }
@@ -25,7 +32,7 @@ if (workbox) {
     };
 
     workbox.routing.registerRoute(
-        /.*\.html/,
+        HTML_FILES,
         new workbox.strategies.StaleWhileRevalidate({
             cacheName: 'html-cache',
             plugins: [
@@ -34,13 +41,13 @@ if (workbox) {
         })
     );
     workbox.routing.registerRoute(
-        /\/dist\/data\.min\.js/,
+        DATA_FILE,
         new workbox.strategies.StaleWhileRevalidate({
             cacheName: 'data-cache'
         })
     );
     workbox.routing.registerRoute(
-        /^.*\/((?!(data\.min)).)*\.js/,
+        SCRIPT_FILES,
         new workbox.strategies.NetworkFirst({
             cacheName: 'js-cache',
             plugins: [
@@ -49,21 +56,21 @@ if (workbox) {
         })
     );
     workbox.routing.registerRoute(
-        /.*\.css/,
+        CSS_FILES,
         new workbox.strategies.CacheFirst({
             cacheName: 'css-cache'
         })
     );
     workbox.routing.registerRoute(
-        /.*\.png/,
-      new workbox.strategies.CacheFirst({
-        cacheName: 'image-cache'
-      })
+        IMAGE_FILES,
+        new workbox.strategies.CacheFirst({
+            cacheName: 'image-cache'
+        })
     );
     workbox.routing.registerRoute(
-        /\/sprites\/.*\.jpg/,
-      new workbox.strategies.CacheFirst({
-        cacheName: 'sprite-cache'
-      })
+        SPRITESHEETS,
+        new workbox.strategies.CacheFirst({
+            cacheName: 'sprite-cache'
+        })
     );
 }
