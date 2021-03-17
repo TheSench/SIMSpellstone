@@ -16,7 +16,6 @@ window.addEventListener('error', function (message, url, linenumber) {
 		return 1;
 	}
 	var err_msg = "JavaScript error:\n " + message + "\n on line " + linenumber + "\n for " + url;
-	var short_msg = err_msg;
 
 	err_msg += "\n";
 	err_msg += "Browser CodeName: " + navigator.appCodeName + "\n";
@@ -28,12 +27,10 @@ window.addEventListener('error', function (message, url, linenumber) {
 	err_msg += "SimSpellstone version: " + text_version + "\n";
 
 	if (getdeck) err_msg += "Deck hash: " + getdeck + "\n";
-	if (getcardlist) err_msg += "Card list: " + getcardlist + "\n";
 	if (getordered) err_msg += "Ordered: Yes\n";
 	if (getexactorder) err_msg += "Exact-order: Yes\n";
 	if (surge) err_msg += "Surge: Yes\n";
 	if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
-	if (getcardlist2) err_msg += "Enemy Card list: " + getcardlist2 + "\n";
 	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
 	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
 	if (getmission) err_msg += "Mission ID: " + getmission + "\n";
@@ -403,14 +400,10 @@ function showWinrate() {
 		var current_deck = '';
 		var deck = [];
 		var deck1Hash = document.getElementById('deck1').value;
-		var deck1List = $('#cardlist').val();
-		if (deck1List) deck1List = deck1List.value;
 
 		// Load player deck
 		if (deck1Hash) {
 			deck.player = hash_decode(deck1Hash);
-		} else if (deck1List) {
-			deck.player = load_deck_from_cardlist(deck1List);
 		}
 		if (deck.player) {
 			current_deck = hash_encode(deck.player);
@@ -444,15 +437,6 @@ function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 	$("#simulationStatus").show();
 }
 
-function winrateDev(wins, games) {
-	if (games <= 1) return 1;
-
-	var p = wins / games;
-	var N = games;
-	var dev = Math.sqrt(N * p * (1 - p));
-	return dev;
-}
-
 // http://onlinestatbook.com/2/estimation/proportion_ci.html
 function marginOfError(wins, games) {
 	if (games <= 1) return 1;
@@ -468,7 +452,6 @@ function marginOfError(wins, games) {
 function generate_link(autostart) {
 
 	var d = 0;
-	var deck = [];
 
 	var url_base = document.URL;
 	var index_of_query = url_base.indexOf('?');
@@ -571,22 +554,6 @@ function addBoolParam(params, paramName) {
 	} else {
 		return false;
 	}
-}
-
-function load_deck_builder_for_field(fieldID) {
-	var field = $("#" + fieldID);
-	var deck = {
-		commander: elariaCaptain,
-		deck: []
-	};
-	var hash = field.val();
-	if (!hash) {
-		hash = hash_encode({
-			commander: elariaCaptain,
-			deck: []
-		});
-	}
-	open_deck_builder("Card Hash", hash, null, field);
 }
 
 var deckBuilders = {};
@@ -707,14 +674,6 @@ function display_history() {
 		'');
 }
 
-function supports_html5_storage() {
-	try {
-		return 'localStorage' in window && window['localStorage'] !== null;
-	} catch (e) {
-		return false;
-	}
-}
-
 // Initialize global variables
 var battle_history = '';
 var max_turns = 100;
@@ -727,8 +686,6 @@ var play_debug = false;
 var showAnimations = false;
 var getdeck = '';
 var getdeck2 = '';
-var getcardlist = '';
-var getcardlist2 = '';
 var getordered = false;
 var getordered2 = false;
 var getexactorder = false;
