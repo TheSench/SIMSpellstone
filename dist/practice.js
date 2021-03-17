@@ -7059,7 +7059,6 @@ function marginOfError(wins, games) {
 function generate_link(autostart) {
 
 	var d = 0;
-	var deck = [];
 
 	var url_base = document.URL;
 	var index_of_query = url_base.indexOf('?');
