@@ -39,20 +39,6 @@ var CARD_GUI = {};
         return cards;
     }
 
-    function makeCardListHTML(deck, onclick, onrightclick) {
-        var listHTML = createDiv("float-left");
-        for (var i = 0, len = deck.deck.length; i < len; i++) {
-            var deckEntry = deck.deck[i];
-            var unit = getCardByID(deckEntry);
-            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, null, i);
-            if (deckEntry.index !== undefined) {
-                htmlCard.setAttribute("data-index", deckEntry.index);
-            }
-            listHTML.appendChild(htmlCard);
-        }
-        return listHTML;
-    }
-
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         var cards = make_card_list(list, compactSkills, null, null, /*onclick, onrightclick,*/ skip, end);
         var $cardSpace = $("#cardSpace");
@@ -627,7 +613,6 @@ var CARD_GUI = {};
     CARD_GUI.draw_deck = draw_deck;
     CARD_GUI.create_card_html = create_card_html;
     CARD_GUI.makeDeckHTML = makeDeckHTML;
-    CARD_GUI.makeCardListHTML = makeCardListHTML;
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
     CARD_GUI.doDrawField = doDrawField;

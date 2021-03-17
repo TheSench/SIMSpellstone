@@ -1874,10 +1874,8 @@ var SIMULATOR = {};
 		// Load player deck
 		if (getdeck) {
 			cache_player_deck = hash_decode(getdeck);
-		} else if (getcardlist) {
-			cache_player_deck = load_deck_from_cardlist(getcardlist);
 		} else {
-			cache_player_deck = load_deck_from_cardlist();
+			cache_player_deck = createEmptyDeck();
 		}
 		cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
@@ -1886,8 +1884,6 @@ var SIMULATOR = {};
 		if (getdeck2) {
 			cache_cpu_deck = hash_decode(getdeck2);
 			if (getmission) pvpAI = false;
-		} else if (getcardlist2) {
-			cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
 		} else if (getmission) {
 			cache_cpu_deck = load_deck_mission(getmission, missionlevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
@@ -1895,7 +1891,7 @@ var SIMULATOR = {};
 			cache_cpu_deck = load_deck_raid(getraid, raidlevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
-			cache_cpu_deck = load_deck_from_cardlist();
+			cache_cpu_deck = createEmptyDeck();
 		}
 		cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 	}
@@ -2419,7 +2415,6 @@ var SIMULATOR = {};
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		remove_dead();
 
-		//debug_dump_field(field);
 		if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 	}
 

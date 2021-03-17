@@ -2245,7 +2245,7 @@ var skillStyle = document.createElement('style');
 
 function setDeckName(name) {
 	var lbl = document.getElementById("version_label");
-	lbl.innerHTML += " " + name;
+	lbl.innerText += " " + name;
 }
 
 function saveDeck() {

@@ -56,15 +56,6 @@ function parseInt(value) {
     return value >> 0;
 }
 
-var curry = function(uncurried) {
-    var parameters = Array.prototype.slice.call(arguments, 1);
-    return function() {
-        return uncurried.apply(this, parameters.concat(
-            Array.prototype.slice.call(arguments, 0)
-        ));
-    };
-};
-
 
 /* Inspired by https://davidwalsh.name/javascript-debounce-function */
 Function.prototype.debounce = function(wait) {
@@ -82,9 +73,6 @@ Function.prototype.debounce = function(wait) {
     };
 };
 Function.prototype.throttle = (function() {
-
-    var _emptyFunc = function() {};
-
     return function(wait) {
         var func = this;
         var timeout;
@@ -101,7 +89,7 @@ Function.prototype.throttle = (function() {
                     timeout = null;
                     func.apply(context, args);
                 };
-                timeout = setTimeout(later, 250);
+                timeout = setTimeout(later, wait);
             }
         };
     };
@@ -670,7 +658,7 @@ var makeUnit = (function() {
             scaleSkills(card, original_skills, skillMult);
         }
 
-        copy_skills_2(card, original_skills);
+        copySkills(card, original_skills);
 
         return card;
     });
@@ -1056,7 +1044,7 @@ function addBgeFromList(battlegrounds, battleground, player) {
 var MakeBattleground = (function() {
     var Battleground = function(name, original_skills, mult) {
         this.name = name;
-        copy_skills_2(this, [original_skills], mult);
+        copySkills(this, [original_skills], mult);
     };
 
     Battleground.prototype = {
@@ -1085,7 +1073,7 @@ var MakeBattleground = (function() {
     });
 }());
 
-function copy_skills_2(new_card, original_skills, mult) {
+function copySkills(new_card, original_skills, mult) {
     new_card.skill = [];
     new_card.earlyActivationSkills = [];
     new_card.onDeathSkills = [];
@@ -1095,21 +1083,21 @@ function copy_skills_2(new_card, original_skills, mult) {
         var newSkill = original_skills[key];
         var copySkill = copy_skill(newSkill);
         if (newSkill.c) {
-            setSkill_2(new_card, copySkill);
+            setSkill(new_card, copySkill);
             skillTimers.push(copySkill);
             reusable = false;
         } else if (mult) {
             copySkill.x = Math.ceil(copySkill.x * mult);
-            setSkill_2(new_card, copySkill);
+            setSkill(new_card, copySkill);
         } else { // If skill has no timer, we can use the same instance
-            setSkill_2(new_card, copySkill);
+            setSkill(new_card, copySkill);
         }
     }
     new_card.reusableSkills = reusable;
     new_card.skillTimers = skillTimers;
 }
 
-function setSkill_2(new_card, skill) {
+function setSkill(new_card, skill) {
     // These skills could have multiple instances
     var skillID = skill.id;
     var skillType = SKILL_DATA[skillID].type;
@@ -1141,30 +1129,6 @@ function setSkill_2(new_card, skill) {
     }
 }
 
-function copy_skills(new_card, original_skills, original_earlyActivation_Skills, original_onDeathSkills) {
-    new_card.skill = [];
-    new_card.earlyActivationSkills = [];
-    new_card.onDeathSkills = [];
-    if (!new_card.skillTimers) new_card.skillTimers = [];
-
-    copy_Skill_lists(new_card, new_card.skill, original_skills);
-    copy_Skill_lists(new_card, new_card.earlyActivationSkills, original_earlyActivation_Skills);
-    copy_Skill_lists(new_card, new_card.onDeathSkills, original_onDeathSkills);
-}
-
-function copy_Skill_lists(new_card, new_skills, original_skills) {
-    for (var i = 0; i < original_skills.length; i++) {
-        var originalSkill = original_skills[i];
-        if (originalSkill.c) { // If skill has a timer, we need to clone it
-            var newSkill = copy_skill(originalSkill);
-            new_skills.push(newSkill);
-            new_card.skillTimers.push(newSkill);
-        } else { // If skill has no timer, we can use the same instance
-            new_skills.push(originalSkill);
-        }
-    }
-}
-
 function copy_skill(original_skill) {
     var new_skill = {};
     new_skill.id = original_skill.id;
@@ -1180,112 +1144,6 @@ function copy_skill(original_skill) {
 }
 
 //Debug functions
-
-// Dump deck contents
-function debug_dump_decks() {
-    //	if (!debug) return;
-    /*
-    echo += '<br><hr><br>';
-    echo += '<b>Deck Hash:</b>';
-    echo += '<br>';
-    echo += '<input type="text" value="';
-    echo += hash_encode(cache_player_deck);
-    echo += '" onclick="this.select()" size="100">';
-    echo += '<br><br>';
-    echo += '<b>Card List:</b>';
-    echo += '<br>';
-    echo += '<input type="text" value="';
-    echo += generate_card_list(cache_player_deck);
-    echo += '" onclick="this.select()" size="100">';
-    echo += '<br><br>';
-    */
-    echo += '<br>';
-    echo += '<h1>Attacker</h1>';
-    var current_card = getCardByID(cache_player_deck.commander);
-    current_card.owner = 'player';
-    current_card.health_left = current_card.health;
-    echo += debug_name(current_card) + debug_skills(current_card) + '<br>';
-
-    debug_dump_cards(cache_player_deck, 'player');
-
-    var debug_cpu_deck;
-    if (cache_cpu_deck) {
-        debug_cpu_deck = cache_cpu_deck;
-    }
-
-    echo += '<br>';
-    echo += '<h1>Defender</h1>';
-    /*
-    echo += '<i>Deck Hash:</i>';
-    echo += '<br>';
-    echo += '<input type="text" value="';
-    echo += hash_encode(debug_cpu_deck);
-    echo += '" onclick="this.select()" size="100">';
-    echo += '<br>';
-    echo += '<i>Card List:</i>';
-    echo += '<br>';
-    echo += '<input type="text" value="';
-    echo += generate_card_list(debug_cpu_deck);
-    echo += '" onclick="this.select()" size="100">';
-    echo += '<br>';
-    echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
-    echo += '<br>';
-    */
-    var current_card = getCardByID(debug_cpu_deck.commander, true);
-    current_card.owner = 'cpu';
-    current_card.health_left = current_card.health;
-    echo += debug_name(current_card) + debug_skills(current_card) + '<br>';
-    debug_dump_cards(debug_cpu_deck, 'cpu');
-    echo += '<br><hr><br>';
-}
-
-function debug_dump_cards(deck, player) {
-    for (var key in deck.deck) {
-        // Get cardID
-        var unit_info = deck.deck[key];
-        // Setup card for printing
-        var current_card = getCardByID(unit_info, true);
-        current_card.owner = player;
-        current_card.key = undefined;
-        current_card.health_left = current_card.health;
-        current_card.timer = current_card.cost;
-        // Echo card info
-        echo += debug_name(current_card) + debug_skills(current_card);
-        if (current_card.type) echo += ' <u>' + factions.names[current_card.type] + '</u>';
-        var subFactions = current_card.sub_type;
-        if (subFactions.length) {
-            for (var i = 0; i < subFactions.length; i++) {
-                echo += ' <u>' + factions.names[subFactions[i]] + '</u>';
-            }
-        }
-        echo += '<br>';
-    }
-}
-
-// Dump field contents
-function debug_dump_field(field) {
-    if (!debug) return;
-
-    echo += '<font color="#666666">';
-
-    var players = ['player', 'cpu'];
-
-    for (var player_key = 0, p_len = players.length; player_key < p_len; player_key++) {
-        var player_val = players[player_key];
-        echo += '<br>';
-        echo += player_val + '\'s assaults:<br>';
-        var field_x_units = field[player_val].assaults;
-        for (var card_key = 0, unit_len = field_x_units.length; card_key < unit_len; card_key++) {
-            var current_card = field_x_units[card_key];
-            echo += debug_name(current_card);
-            echo += '(' + key + ')';
-            echo += '<br>';
-        }
-        if (!field[player_val].assaults.length) echo += 'None<br>';
-    }
-    echo += '</font>';
-    echo += '<br>';
-}
 
 // Output formatted name of card
 function debug_name(card, hideStats) {
@@ -1304,7 +1162,7 @@ function debug_name(card, hideStats) {
         output += '<u>';
         if (card.isCommander()) {
             output += ' [';
-            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
+            if (card.health_left !== undefined) output += card.health_left;
             else output += card.health;
             output += ' HP]';
         } else if (card.isAssault()) {
@@ -1313,7 +1171,7 @@ function debug_name(card, hideStats) {
             if (isNaN(atk) || atk == undefined) atk = card.attack;
             output += atk;
             output += '/';
-            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
+            if (card.health_left !== undefined) output += card.health_left;
             else output += card.health;
             output += '/';
             if (card.timer !== undefined) output += card.timer;
@@ -1326,107 +1184,6 @@ function debug_name(card, hideStats) {
     return output;
 }
 
-function debug_fraction(value) {
-    if (value > Math.floor(value)) {
-        value = value.toFixed(1);
-    }
-    return value;
-}
-
-// Dump whatever card or array
-function dump(card) {
-    echo += '<pre>';
-    print_r(card);
-    echo += '</pre>';
-}
-
-//Returns written card list built from deck array
-function generate_card_list(deck) {
-
-    var cardlist = [];
-    var copies = [];
-    var priorities = [];
-
-    var commander = getCardByID(deck.commander);
-    cardlist.push(commander.name + "(" + commander.level + ")");
-    copies.push(1);
-    priorities.push(0);
-    var lastidx = 0;
-    for (var key in deck.deck) {
-        var unit = deck.deck[key];
-        var card = getCardByID(unit);
-
-        if (!card) continue;
-
-        var card_name = card.name + "(" + card.level + ")";
-        if (card.runes.length) card_name += "*";
-
-        if (cardlist[lastidx] == card_name) {
-            copies[lastidx]++;
-        } else {
-            cardlist.push(card_name);
-            copies.push(1);
-            priorities.push(unit.priority);
-            lastidx++;
-        }
-    }
-
-    for (var i = copies.length - 1; i >= 0; i--) {
-        var numCopies = copies[i];
-        var priority = priorities[i];
-        if (numCopies > 1) {
-            cardlist[i] += "x" + numCopies;
-        }
-        if (priority > 0) {
-            cardlist[i] += "=" + priority;
-        }
-    }
-
-    cardlist = cardlist.join("; ");
-
-    return cardlist;
-}
-
-function generate_play_list(cards) {
-    var cardlist = [];
-    for (var i = 0; i < cards.length; i++) {
-        var unit = cards[i];
-        var card = getCardByID(unit);
-
-        if (!card) continue;
-        var o = (i % 2 == 0 ? 'b' : 'i');
-        var card_name = "<" + o + ">" + card.name + "(" + card.level + ")";
-        if (card.runes.length) card_name += "*";
-        card_name += "</" + o + ">";
-
-        cardlist.push(card_name);
-    }
-
-    return "<td>" + cardlist.join("</td><td>") + "</td>";
-}
-
-//return skills in readable format
-function debug_skills(card) {
-    var skillText = [];
-
-    for (var key in card.earlyActivationSkills) {
-        skillText.push(debug_skill(card.earlyActivationSkills[key]));
-    }
-    for (var key in card.skill) {
-        skillText.push(debug_skill(card.skill[key]));
-    }
-    for (var key in card.onDeathSkills) {
-        skillText.push(debug_skill(card.onDeathSkills[key]));
-    }
-    debug_passive_skills(card, skillText);
-
-    if (skillText.length > 0) {
-        return ' <u>( ' + skillText.join(" | ") + ' )</u>';
-    } else {
-        return '';
-    }
-}
-
 function debug_skill(skill) {
     var output = convertName(skill.id);
     if (skill.all) output += ' all';
@@ -1437,28 +1194,12 @@ function debug_skill(skill) {
     return output;
 }
 
-function debug_passive_skills(card, skillText) {
-    var passiveSkills = Object.getOwnPropertyNames(SKILL_DATA).filter(function(skillID) {
-        return ["passive", "toggle", "flurry"].indexOf(SKILL_DATA[skillID].type) >= 0;
-    }).forEach(function(skill) {
-        debugNonActivatedSkill(card, skill, skillText);
-    });
-}
-
-function debugNonActivatedSkill(card, skillName, skillText) {
-    var value = card[skillName];
-    if (value) {
-        skillText.push(convertName(skillName) + ' ' + value);
-    }
-}
-
 function convertName(skillID) {
     var skillData = SKILL_DATA[skillID];
     return (skillData ? skillData.name : skillID);
 }
 
 var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
-var multiplierChars = "_*.'";
 var runeDelimiter = "/";
 var indexDelimiter = '-';
 var priorityDelimiter = '|';
@@ -1593,27 +1334,6 @@ function base64ToNumber(base64) {
     return dec1 + dec2;
 }
 
-function encode_multiplier(copies) {
-    copies = copies - 2; // Encoded as "2 + value"
-    if (copies > 256) {
-        return "";
-    }
-    var char1 = multiplierChars[Math.floor(copies / 64)];
-    var char2 = base64chars[copies % 64];
-    return char1 + char2;
-}
-
-function decode_multiplier(encoded) {
-    if (encoded.length < 2) {
-        // If this isn't a fully-formed multiplier, return -1 to balance out the +1 this gets added to
-        // (multipliers are actually the number of copies beyond 2)
-        return -1;
-    }
-    var dec1 = multiplierChars.indexOf(encoded[0]) * 64;
-    var dec2 = base64chars.indexOf(encoded[1]);
-    return dec1 + dec2;
-}
-
 //Returns hash built from deck array
 function hash_encode(deck) {
 
@@ -1625,8 +1345,6 @@ function hash_encode(deck) {
     if (deck.commander) {
         current_hash.push(unitInfo_to_base64(deck.commander));
     }
-    var copies = [1];
-    var lastIndex = 0;
     for (var k in deck.deck) {
         var current_card = deck.deck[k];
         if (current_card.priority) {
@@ -1636,15 +1354,7 @@ function hash_encode(deck) {
             indexes.push(numberToBase64(current_card.index));
             has_indexes = true;
         }
-        var tripvar = unitInfo_to_base64(current_card);
-        // Short-circuit encoding of multiples for now
-        if (false && tripvar == current_hash[lastIndex]) {
-            copies[lastIndex]++;
-        } else {
-            current_hash.push(tripvar);
-            copies.push(1);
-            lastIndex++;
-        }
+        current_hash.push(unitInfo_to_base64(current_card));
     }
 
     if (has_priorities) {
@@ -1665,12 +1375,6 @@ function hash_encode(deck) {
         current_hash.push(indexes);
     }
 
-    for (var i = 0; i < copies.length; i++) {
-        var num = copies[i];
-        if (num > 1) {
-            current_hash[i] += encode_multiplier(num);
-        }
-    }
     current_hash = current_hash.join("");
 
     return current_hash;
@@ -1697,38 +1401,25 @@ function hash_decode(hash) {
     }
     var unitidx = 0;
     for (var i = 0; i < hash.length; i += entryLength) {
-        if (multiplierChars.indexOf(hash[i]) == -1) {
-            // Make sure we have valid characters
-            var unitHash = hash.substr(i, entryLength);
-            unitInfo = base64_to_unitInfo(unitHash);
-            if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
+        // Make sure we have valid characters
+        var unitHash = hash.substr(i, entryLength);
+        unitInfo = base64_to_unitInfo(unitHash);
+        if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
 
-            if (unitInfo) {
-                if (loadCard(unitInfo.id)) {
-                    // Repeat previous card multiple times
-                    if (!current_deck.commander && is_commander(unitInfo.id)) {
-                        current_deck.commander = unitInfo;
-                        unitidx++;
-                        // Add to deck
-                    } else {
-                        current_deck.deck.push(unitInfo);
-                        unitidx++;
-                    }
+        if (unitInfo) {
+            if (loadCard(unitInfo.id)) {
+                // Repeat previous card multiple times
+                if (!current_deck.commander && is_commander(unitInfo.id)) {
+                    current_deck.commander = unitInfo;
+                    unitidx++;
+                    // Add to deck
                 } else {
-                    console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
+                    current_deck.deck.push(unitInfo);
+                    unitidx++;
                 }
+            } else {
+                console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
             }
-        } else {
-            var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
-            for (var n = 0; n < multiplier; n++) {
-                var duplicate = makeUnitInfo(unitInfo.id, unitInfo.level, unitInfo.runes);
-                if (indexes) {
-                    duplicate.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
-                }
-                current_deck.deck.push(duplicate);
-                unitidx++;
-            }
-            i -= (entryLength - 2); // Offset i so that the += unitLength in the loop sets it to the correct next index
         }
     }
 
@@ -1740,160 +1431,12 @@ function hash_decode(hash) {
     return current_deck;
 }
 
-// Convert card list into an actual deck
-// - assume that first card is always commander
-// - possible delimiters include ; , :
-// - sometimes name is not compvare
-// - include common abbreviations, such as EMP, BoD, EQG, etc.
-// - case-insensitive
-// - recognize multiple copies of cards
-// - if can't figure out what card it is, ignore it and move on
-// - support raid-only and mission-only cards by using Dracorex[1042] notation
-function load_deck_from_cardlist(list) {
 
-    var current_deck = [];
-    current_deck.deck = [];
-
-    if (list) {
-        //var delimiters = ';,:';
-        var abbreviations = [];
-        // Safety mechanism to prevent long loops
-        if (list.length > 300) list = list.substr(0, 300);
-
-        list = list.toString().toLowerCase();
-        list = list.replace(/[\&\/\.\!\?\'-]/g, ''); // Replace random punctuation characters
-        list = list.replace(/\s/g, ''); // Remove all whitespace
-        list = list.split(/[,;:]/);
-
-        var unit_definitions = CARDS;
-
-        for (var i in list) {
-            var current_card = list[i].toString();
-            var unit = makeUnitInfo(1, 7); // Default all cards to max level if none is specified
-            unit.priority = 0;
-            var card_found = false;
-            var current_card_upgraded = false;
-
-            // Detect advanced prioritization
-            if (current_card.toString().length > 3 && current_card.toString().match(/=[1-9][0-9]*$/)) {
-                unit.priority = parseInt(current_card.substr(current_card.length - 1, 1));
-                current_card = current_card.substr(0, current_card.length - 2);
-            }
-
-            var copies = 1;
-            // Detect multiple copies
-            var match;
-            // Look for Nx at the beginning of the card name
-            if (match = current_card.toString().match(/^[1-9]+x/)) {
-                copies = parseInt(match[0]);
-                current_card = current_card.substr(match[0].length);
-                // Look for Nx at the end of the card name
-            } else if (match = current_card.toString().match(/x[1-9]+$/)) {
-                copies = parseInt(match[0].substr(1));
-                current_card = current_card.substr(0, current_card.length - match[0].length);
-            }
-
-            // Look for (N) at the end to denote level
-            if (match = current_card.toString().match(/\(([1-9]+)\).*/)) {
-                unit.level = match[1];
-                current_card = current_card.substr(0, current_card.length - match[0].length);
-            }
-
-            current_card = current_card.trim();
-
-            // Use unit_id notation if available
-            if (match = current_card.toString().match(/\[[1-9]+\]/)) {
-                unit.id = match[0];
-                if (is_commander(unit.id)) {
-                    current_deck.commander = unit;
-                } else {
-                    while (copies > 0) {
-                        current_deck.deck.push(unit);
-                        copies--;
-                    }
-                }
-                continue;
-            }
-
-            // Use abbreviation if available
-            current_card = clean_name_for_matching(current_card);
-            if (abbreviations[current_card]) current_card = abbreviations[current_card];
-            current_card = clean_name_for_matching(current_card);
-
-            // Match full name if available
-            for (var k in unit_definitions) {
-                var card = unit_definitions[k];
-                unit.id = card.id;
-                var current_name = clean_name_for_matching(card.name);
-
-                if (current_name == current_card) {
-                    if (is_commander(unit.id) && copies == 1) {
-                        current_deck.commander = unit;
-                    } else {
-                        current_deck.deck.push(unit);
-                        while (copies > 1) {
-                            current_deck.deck.push(unit);
-                            copies--;
-                        }
-                    }
-                    card_found = true;
-                    break;
-                }
-            }
-            if (card_found) continue;
-
-            // If no commanders yet, match partial name to commanders if available
-            if (!current_deck.commander && copies == 1) {
-                for (var k in unit_definitions) {
-                    var card = unit_definitions[k];
-                    unit.id = card.id;
-                    if (!is_commander(unit.id)) continue;
-                    var current_name = clean_name_for_matching(card.name);
-                    if (current_name.indexOf(current_card) != -1) {
-                        current_deck.commander = unit;
-                        card_found = true;
-                        break;
-                    }
-                }
-            }
-            if (card_found) continue;
-
-            // Match partial name to non-commanders if available
-            for (var k in unit_definitions) {
-                var card = unit_definitions[k];
-                unit.id = card.id;
-                if (is_commander(unit.id)) continue;
-                var current_name = clean_name_for_matching(card.name);
-                if (current_name.indexOf(current_card) != -1) {
-                    current_deck.deck.push(unit);
-                    while (copies > 1) {
-                        current_deck.deck.push(unit);
-                        copies--;
-                    }
-                    card_found = true;
-                    break;
-                }
-            }
-            if (card_found) continue;
-        }
+function createEmptyDeck() {
+    return {
+        deck: [],
+        commander: elariaCaptain
     }
-
-    // Default commander to Elaria Captain if none found
-    if (!current_deck.commander) {
-        current_deck.commander = elariaCaptain;
-    }
-
-    return current_deck;
-}
-
-function clean_name_for_matching(name) {
-    name = name.toLowerCase();
-    name = name.toString().replace(/[\&]/g, ',');
-    name = name.toString().replace(/[\.\!\?]/g, '');
-    name = name.toString().replace(/\s/g, '');
-    name = name.toString().replace(/-/g, '');
-    name = name.toString().replace(/\'/g, '');
-    return name;
 }
 
 // Load mission deck
