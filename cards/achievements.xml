@@ -15358,6 +15358,155 @@
       <gold>1200</gold>
     </reward>
   </achievement>
+  <!-- Shatterstone Anomaly's Spellstone -->
+  <achievement>
+    <id>3668</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Faction Weakness Awakening</name>
+    <desc>Complete the 'Faction Weakness Awakening' campaign on Mastery Level 1.</desc>
+    <mission_req>6595</mission_req>
+    <locked_start_time>1616086800</locked_start_time>
+    <!--  Thursday, 18 March 2021 0:00:00 -->
+    <req>
+      <campaign>1280</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8029" number="1" />
+      <!--  Crafting recipe -->
+    </reward>
+  </achievement>
+  <!-- Campaign Event 28 weeks 5-8 -->
+  <!-- Node 3 -->
+  <achievement>
+    <id>3669</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Titan Conflux</name>
+    <desc>Complete the 'Titan Conflux' campaign on Mastery Level 1.</desc>
+    <mission_req>6599</mission_req>
+    <locked_start_time>1617296400</locked_start_time>
+    <!-- Thursday, April 1, 2021 17:00:00 -->
+    <req>
+      <campaign>1281</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3128" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7069" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3670</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Titan Conflux</name>
+    <desc>Complete the 'Titan Conflux' campaign on Mastery Level 2.</desc>
+    <mission_req>6599</mission_req>
+    <locked_start_time>1617296400</locked_start_time>
+    <!-- Thursday, April 1, 2021 17:00:00 -->
+    <achievement_req>3669</achievement_req>
+    <req>
+      <campaign>1281</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3671</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Titan Conflux</name>
+    <desc>Complete the 'Titan Conflux' campaign on Mastery Level 4.</desc>
+    <mission_req>6599</mission_req>
+    <locked_start_time>1617296400</locked_start_time>
+    <!-- Thursday, April 1, 2021 17:00:00 -->
+    <achievement_req>3670</achievement_req>
+    <req>
+      <campaign>1281</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3672</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Titan Conflux</name>
+    <desc>Complete the 'Titan Conflux' campaign on Mastery Level 6.</desc>
+    <mission_req>6599</mission_req>
+    <locked_start_time>1617296400</locked_start_time>
+    <!-- Thursday, April 1, 2021 17:00:00 -->
+    <achievement_req>3671</achievement_req>
+    <req>
+      <campaign>1281</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
+  <!-- Node 4 -->
+  <achievement>
+    <id>3673</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's End</name>
+    <desc>Complete the 'Spellstone's End' campaign on Mastery Level 2.</desc>
+    <mission_req>6605</mission_req>
+    <locked_start_time>1618506000</locked_start_time>
+    <!-- Thursday, April 15, 2021 17:00:00 -->
+    <req>
+      <campaign>1282</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3674</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's End</name>
+    <desc>Complete the 'Spellstone's End' campaign on Mastery Level 4.</desc>
+    <mission_req>6605</mission_req>
+    <locked_start_time>1618506000</locked_start_time>
+    <!-- Thursday, April 15, 2021 17:00:00 -->
+    <achievement_req>3673</achievement_req>
+    <req>
+      <campaign>1282</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3675</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's End</name>
+    <desc>Complete the 'Spellstone's End' campaign on Mastery Level 6.</desc>
+    <mission_req>6605</mission_req>
+    <locked_start_time>1618506000</locked_start_time>
+    <!-- Thursday, April 15, 2021 17:00:00 -->
+    <achievement_req>3674</achievement_req>
+    <req>
+      <campaign>1282</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>1200</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

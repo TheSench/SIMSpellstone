@@ -949,22 +949,146 @@ var BATTLEGROUNDS = {
 		"name": "Elemental Crux"
 	},
 	"140": {
-		"desc": "Mechas gain abilities based on faction! Aether gain Legion, Chaos gain Barrage and Wyld gain Venom. Skill values are 3 + the card's delay cost.",
+		"desc": "Mechas gain abilities based on faction! Aether gain Ward 5, Chaos gain Barrage 4, and Wyld gain Venom 3. They add their delay cost to these values.",
 		"effect": [
 			{
-				"all": "1",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 5,
+				"y": "1,16"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 6,
+				"y": "1,16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 7,
+				"y": "1,16"
+			},
+			{
 				"delay": [
 					3
 				],
-				"effect_type": "skill",
-				"id": "imbue",
-				"s": "venom",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 8,
+				"y": "1,16"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 9,
+				"y": "1,16"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"x": 4,
+				"y": "2,16"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"x": 5,
+				"y": "2,16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
 				"x": 6,
+				"y": "2,16"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"x": 7,
+				"y": "2,16"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"x": 8,
+				"y": "2,16"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 3,
+				"y": "3,16"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 4,
+				"y": "3,16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 5,
+				"y": "3,16"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 6,
+				"y": "3,16"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 7,
 				"y": "3,16"
 			}
 		],
 		"id": "140",
-		"name": "TEST BGE"
+		"name": "Adaptive Weaponry"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
@@ -4351,7 +4475,39 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2116",
-		"name": "Flawed Elemtal Funk",
+		"name": "Flawed Elemental Funk",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2117": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2117",
+		"name": "Power Coil Bachata",
+		"scale_with_level": "1",
+		"starting_level": "0"
+	},
+	"2118": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.05
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2118",
+		"name": "Cumbia of Viracocha",
 		"scale_with_level": "1",
 		"starting_level": "0"
 	},

@@ -50716,5 +50716,549 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 28 Boss Node -->
+  <mission>
+    <id>6595</id>
+    <name>Chaos Flaw</name>
+    <energy>9</energy>
+    <desc>Power without focus is weak. Although a bundle of sticks may be impossible to break, each individual one is simple to snap in half. Without proper use, even the strongest power bends beneath order.</desc>
+    <commander id="460" />
+    <!-- Unfocused Power -->
+    <deck>
+      <card id="8010" />
+      <!-- Vulcanos' Skeleton -->
+      <card id="6004" />
+      <!-- Branding Construct -->
+      <card id="6004" />
+      <!-- Branding Construct -->
+      <card id="6045" />
+      <!-- Darkflame -->
+      <card id="6045" />
+      <!-- Darkflame -->
+      <card id="6136" />
+      <!-- Cosmic Elemental -->
+      <card id="6088" />
+      <!-- Doxum's Construct -->
+      <card id="6088" />
+      <!-- Doxum's Construct -->
+      <card id="6047" />
+      <!-- Wither -->
+      <card id="6147" />
+      <!-- Sandspirit Whisperer -->
+      <card id="6147" />
+      <!-- Sandspirit Whisperer -->
+      <card id="6187" />
+      <!-- Xerkahn's Warship -->
+      <card id="6187" />
+      <!-- Xerkahn's Warship -->
+      <card id="6167" />
+      <!-- Macabre Machine -->
+      <card id="6179" />
+      <!-- Sol Doumu -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6596</id>
+    <name>Aether Flaw</name>
+    <energy>9</energy>
+    <desc>Order without purpose is meaningless. Its stifling presence limits creativity to simpler solutions and resolutions. Men who exist to serve rules forget he foundation on why such rules were created.</desc>
+    <commander id="461" />
+    <!-- Meaningless Order -->
+    <deck>
+      <card id="8080" />
+      <!-- Solaron's Gust -->
+      <card id="2168" />
+      <!-- Cryonic Guard -->
+      <card id="2168" />
+      <!-- Cryonic Guard -->
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5164" />
+      <!-- Chromium Centaur -->
+      <card id="5229" />
+      <!-- Nasim Drifter -->
+      <card id="5229" />
+      <!-- Nasim Drifter -->
+      <card id="5276" />
+      <!-- Snowback Coldossus -->
+      <card id="5181" />
+      <!-- Himamanav -->
+      <card id="5181" />
+      <!-- Himamanav -->
+      <card id="5276" />
+      <!-- Snowback Coldossus -->
+      <card id="5237" />
+      <!-- Forgesoul Construct -->
+      <card id="5237" />
+      <!-- Forgesoul Construct -->
+      <card id="5248" />
+      <!-- Noble Ophanim -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6597</id>
+    <name>Wyld Flaw</name>
+    <energy>9</energy>
+    <desc>Untamed growth simply becomes that which is uncontrollable. Untamed growth lacks both discipline and direction; a shadow of what it could be with proper nourishment.</desc>
+    <commander id="462" />
+    <!-- Untamed Growth -->
+    <deck>
+      <card id="8005" />
+      <!-- Atlas' Shaman -->
+      <card id="2188" />
+      <!-- Jungle Baboons -->
+      <card id="2188" />
+      <!-- Jungle Baboons -->
+      <card id="7286" />
+      <!-- Featherwood Idol -->
+      <card id="7286" />
+      <!-- Featherwood Idol -->
+      <card id="7165" />
+      <!-- Raging Irontusk -->
+      <card id="7251" />
+      <!-- Manic Dummy -->
+      <card id="7251" />
+      <!-- Manic Dummy -->
+      <card id="7137" />
+      <!-- Darkmites -->
+      <card id="7250" />
+      <!-- Lumberbuck Ranger -->
+      <card id="7160" />
+      <!-- Perilous Stonesteps -->
+      <card id="7249" />
+      <!-- Nullhammer -->
+      <card id="7249" />
+      <!-- Nullhammer -->
+      <card id="7046" />
+      <!-- Brambleblight -->
+      <card id="7165" />
+      <!-- Raging Irontusk -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6598</id>
+    <name>Void Flaw</name>
+    <energy>9</energy>
+    <desc>Filled with nothing removes desire for more. Without desire for more, nothing grows or has the potential to become greater than what it is. This apathy can control the other elements, but by itself would mean the end of everything.</desc>
+    <commander id="463" />
+    <!-- Desire for Apathy -->
+    <deck>
+      <card id="8079" />
+      <!-- Vorpal Warpbeast -->
+      <card id="6135" />
+      <!-- Burnshell -->
+      <card id="6135" />
+      <!-- Burnshell -->
+      <card id="5153" />
+      <!-- Octopulse -->
+      <card id="5153" />
+      <!-- Octopulse -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="7074" />
+      <!-- Sandstorm -->
+      <card id="1348" />
+      <!-- Flailpod -->
+      <card id="7219" />
+      <!-- Hoggernaut MK I -->
+      <card id="7211" />
+      <!-- Twistvine -->
+      <card id="7211" />
+      <!-- Twistvine -->
+      <card id="1348" />
+      <!-- Flailpod -->
+      <card id="1343" />
+      <!-- Firehorn -->
+      <card id="6179" />
+      <!-- Sol Doumu -->
+      <card id="1343" />
+      <!-- Firehorn -->
+    </deck>
+  </mission>
+  <mission>
+    <id>6599</id>
+    <name>Return to Conflux</name>
+    <energy>18</energy>
+    <desc>You return to the real world. The Power Coils emit their energy beams again, giving Viracocha the new data you received about the Factions.</desc>
+    <commander id="456" />
+    <!-- Rampaging Wind Elemental -->
+    <deck>
+      <card id="8033" name="Bismuth Guardian" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6158" name="Orbos" />
+      <card id="7075" name="Diamode" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="7161" name="Alphamecha" />
+      <card id="7161" name="Alphamecha" />
+      <card id="1629" name="Rock Titan" />
+      <card id="5046" mastery_level="2" name="Dawn" />
+      <card id="2143" mastery_level="3" name="Lightning Stomper" />
+      <card id="2167" mastery_level="4" name="Mechalon" />
+      <card id="2168" mastery_level="5" name="Cryonic Guard" />
+      <card id="1343" mastery_level="6" name="Firehorn" />
+      <card id="5279" mastery_level="7" name="Autobattler Buckler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6600</id>
+    <name>Renewed Viracocha</name>
+    <energy>18</energy>
+    <desc>Viracocha lets out a ferocious roar. New energy is flowing to him, now from the different sectors of the land. The ground and sky light up, sending their energy to him.</desc>
+    <commander id="459" />
+    <!-- Rampaging Minions -->
+    <deck>
+      <card id="8093" name="Prototype Titan" />
+      <card id="1617" name="Water Elemental" />
+      <card id="6158" name="Orbos" />
+      <card id="7075" name="Diamode" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7161" name="Alphamecha" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="6004" mastery_level="2" name="Branding Construct" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="2167" mastery_level="4" name="Mechalon" />
+      <card id="2168" mastery_level="5" name="Cryonic Guard" />
+      <card id="7195" mastery_level="6" name="Undine Sprite" />
+      <card id="7286" mastery_level="7" name="Featherwood Idol" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I feel it!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>This power; this energy... I can control it!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6601</id>
+    <name>Warning Signs</name>
+    <energy>18</energy>
+    <desc>Finally the strange display stops. The earth's rumbling stops. Viracocha looks at his arms, flexing his strength. He appears quite pleased.</desc>
+    <commander id="458" />
+    <deck>
+      <card id="8035" name="Radium Corrupter" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="7075" name="Diamode" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="6208" name="Iron Hammer" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="6004" mastery_level="2" name="Branding Construct" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="2167" mastery_level="4" name="Mechalon" />
+      <card id="2192" mastery_level="5" name="Gear Shepherd" />
+      <card id="7177" mastery_level="6" name="Flowstone, Ancient One" />
+      <card id="7192" mastery_level="7" name="Morja, Poisoncrafter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>And not a moment too soon. Look!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6602</id>
+    <name>Titans' Challenge</name>
+    <energy>18</energy>
+    <desc>In the horizon, from different corners - you see that the power convergence has attracted the other titans' attention. Vulcanos, Solaron, and Atlas are flying your location!</desc>
+    <commander id="457" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="2032" name="Brimstone" />
+      <card id="7220" name="Gadgit" />
+      <card id="7220" name="Gadgit" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="7181" name="Underspine Stinger" />
+      <card id="6004" mastery_level="2" name="Branding Construct" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="2167" mastery_level="4" name="Mechalon" />
+      <card id="2129" mastery_level="5" name="Pharos Guardian" />
+      <card id="5013" mastery_level="6" name="Radiance" />
+      <card id="7166" mastery_level="7" name="Rejuvenation Acolyte" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6603</id>
+    <name>Defending the Land</name>
+    <energy>18</energy>
+    <desc>Elemental creatures rise from the earth! Each has spawned from the different sections of the Conflux land. You, Elyse, Oda, and Cedric split up to tackle the enemies.</desc>
+    <commander id="459" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="7220" name="Gadgit" />
+      <card id="7220" name="Gadgit" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" mastery_level="2" name="Spelltalon" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="2110" mastery_level="4" name="Weathered Widgit" />
+      <card id="2129" mastery_level="5" name="Pharos Guardian" />
+      <card id="5136" mastery_level="6" name="Lapis" />
+      <card id="5153" mastery_level="7" name="Octopulse" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>We'll handle the ground level.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>If we can keep the monsters at bay, then Viracocha can focus on the Titans.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6604</id>
+    <name>One Under Viracocha</name>
+    <energy>18</energy>
+    <desc>The titans hurl themselves against Viracocha. Yet the Mecha Titan is able to repell them easily, flipping them over like a wrestler. He roars again, the three faction titans returning to spiritual essence.</desc>
+    <commander id="456" />
+    <deck>
+      <card id="8119" name="Brittle Ragescale" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="2127" name="RT-87 Rescinder" />
+      <card id="2144" name="Death Fist" />
+      <card id="2144" name="Death Fist" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="6115" mastery_level="2" name="Spelltalon" />
+      <card id="6159" mastery_level="3" name="Solder Charger" />
+      <card id="2110" mastery_level="4" name="Weathered Widgit" />
+      <card id="2129" mastery_level="5" name="Pharos Guardian" />
+      <card id="7251" mastery_level="6" name="Manic Dummy" />
+      <card id="6080" mastery_level="7" name="Titanirous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>It... is... done.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6605</id>
+    <name>Mission Accomplished</name>
+    <energy>18</energy>
+    <desc>Finally, the threat of the titans has been extinguished. They will no longer be able to control the hearts of Wyld, Chaos, and Aether. Viracocha has become an arbitrator of Titans.</desc>
+    <commander id="459" />
+    <deck>
+      <card id="8079" name="Vorpal Warpbeast" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="6077" name="Enigma" />
+      <card id="6077" name="Enigma" />
+      <card id="2168" name="Cryonic Guard" />
+      <card id="2168" name="Cryonic Guard" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="1629" name="Rock Titan" />
+      <card id="7004" mastery_level="1" name="Ice Golem" />
+      <card id="2118" mastery_level="2" name="Luminescent Heron" />
+      <card id="2167" mastery_level="3" name="Mechalon" />
+      <card id="2130" mastery_level="4" name="Sea's Saw" />
+      <card id="6210" mastery_level="5" name="Burning Blade" />
+      <card id="7191" mastery_level="6" name="Rustcast Witch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Wow! You really are amazing, Viracocha.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>But what will you do now with all this power?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6606</id>
+    <name>Power to Rule</name>
+    <energy>18</energy>
+    <desc>With his task now complete, and the Titans judged and safely out of the way, Viracocha is now a being of immeasurable power. He sinks down to the ground, sitting gently.</desc>
+    <commander id="457" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="2207" name="Beauty Conglomeration" />
+      <card id="6153" name="Ribbit Roaster" />
+      <card id="6153" name="Ribbit Roaster" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2163" mastery_level="1" name="Ringwing Fulminator" />
+      <card id="2163" mastery_level="2" name="Ringwing Fulminator" />
+      <card id="6077" mastery_level="3" name="Enigma" />
+      <card id="6077" mastery_level="4" name="Enigma" />
+      <card id="6055" mastery_level="5" name="Phoenix" />
+      <card id="6170" mastery_level="6" name="Ostromech Stepclaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>This power is greater than what the world needs.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6607</id>
+    <name>Power to Serve</name>
+    <energy>18</energy>
+    <desc>Viracocha's eyes close. Steam hisses as it escapes the cogs near his joints, his body growing more and more rigid.</desc>
+    <commander id="458" />
+    <deck>
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="2128" name="Stilt-walker Sentinel" />
+      <card id="6077" name="Enigma" />
+      <card id="6077" name="Enigma" />
+      <card id="2207" name="Beauty Conglomeration" />
+      <card id="2207" name="Beauty Conglomeration" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="6135" name="Burnshell" />
+      <card id="6135" mastery_level="1" name="Burnshell" />
+      <card id="2118" mastery_level="2" name="Luminescent Heron" />
+      <card id="2167" mastery_level="3" name="Mechalon" />
+      <card id="2130" mastery_level="4" name="Sea's Saw" />
+      <card id="7194" mastery_level="5" name="Coralscape Grappler" />
+      <card id="7193" mastery_level="6" name="Rocketspear Recruit" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6608</id>
+    <name>Sleeping Giant</name>
+    <energy>18</energy>
+    <desc>He speaks slowly. With the world now saved, his purpose is now complete. His dream is now complete; he has become a Titan among Titans.</desc>
+    <commander id="456" />
+    <deck>
+      <card id="8125" name="Life Vessel" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2207" name="Beauty Conglomeration" />
+      <card id="7075" name="Diamode" />
+      <card id="7075" name="Diamode" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2163" mastery_level="1" name="Ringwing Fulminator" />
+      <card id="2163" mastery_level="2" name="Ringwing Fulminator" />
+      <card id="6077" mastery_level="3" name="Enigma" />
+      <card id="6077" mastery_level="4" name="Enigma" />
+      <card id="7178" mastery_level="5" name="Oxylus, Might Warden" />
+      <card id="7192" mastery_level="6" name="Morja, Poisoncrafter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Have no fear, little ones...</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I shall sleep.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6609</id>
+    <name>Battle's End</name>
+    <energy>18</energy>
+    <desc>Cedric wipes the dust from his eyes. He takes a look across the charred lands, the aftermath of the battle. The elements have fallen asleep.</desc>
+    <commander id="459" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="7075" name="Diamode" />
+      <card id="2163" name="Ringwing Fulminator" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7021" mastery_level="1" name="Shadow Elemental" />
+      <card id="7021" mastery_level="2" name="Shadow Elemental" />
+      <card id="6042" mastery_level="3" name="Shadow of Thunder" />
+      <card id="2008" mastery_level="4" name="Shadow of Ash" />
+      <card id="2015" mastery_level="5" name="Pumpking" />
+      <card id="6214" mastery_level="6" name="Trampling Demon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>1</enemy>
+        <text>Is it over?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6610</id>
+    <name>True Peace</name>
+    <energy>18</energy>
+    <desc>The adventure has come to an end. With The Void defeated, the three factions had gone out of control. Now, with Aether, Chaos, and Wyld bound to Viracocha, the rest of the continent can remain free.</desc>
+    <commander id="457" />
+    <deck>
+      <card id="8034" name="Swiftness Feeder" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="7164" name="Pinegrove Primate" />
+      <card id="7075" name="Diamode" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7021" mastery_level="1" name="Shadow Elemental" />
+      <card id="7021" mastery_level="2" name="Shadow Elemental" />
+      <card id="6042" mastery_level="3" name="Shadow of Thunder" />
+      <card id="2008" mastery_level="4" name="Shadow of Ash" />
+      <card id="7013" mastery_level="5" name="Gold Elemental" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Finally... we'll have real peace on our continent.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Thank you, adventurer. I couldn't pick a better friend to travel with.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Now let's celebrate!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

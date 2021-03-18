@@ -36519,5 +36519,138 @@
       <skill id="heal" x="10" y="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6287</id>
+    <card_type>2</card_type>
+    <name>Firehop Bunny</name>
+    <picture>Elemental_Fire_Fuffle_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1617037200</hidden_until_time>
+    <attack>6</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="5" />
+    <skill id="heal" x="5" y="2" />
+    <skill id="legion" x="5" />
+    <type>2</type>
+    <sub_type>2</sub_type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="5" />
+      <skill id="heal" x="6" y="2" />
+      <skill id="legion" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16287</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Firehop Rabbit</name>
+    <picture>Elemental_Fire_Fuffle_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1617037200</hidden_until_time>
+    <attack>7</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="6" />
+    <skill id="heal" x="6" y="2" />
+    <skill id="legion" x="5" />
+    <type>2</type>
+    <sub_type>2</sub_type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counterburn" x="6" />
+      <skill id="heal" x="6" y="2" />
+      <skill id="legion" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="6" />
+      <skill id="heal" x="7" y="2" />
+      <skill id="legion" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="6" />
+      <skill id="heal" x="8" y="2" />
+      <skill id="legion" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26287</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Firehop Fluffle</name>
+    <picture>Elemental_Fire_Fuffle_B</picture>
+    <asset_bundle>215</asset_bundle>
+    <hidden_until_time>1617037200</hidden_until_time>
+    <attack>8</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="6" />
+    <skill id="heal" x="8" y="2" />
+    <skill id="legion" x="6" />
+    <type>2</type>
+    <sub_type>2</sub_type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="7" />
+      <skill id="heal" x="8" y="2" />
+      <skill id="legion" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="7" />
+      <skill id="heal" x="8" y="2" />
+      <skill id="legion" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="7" />
+      <skill id="heal" x="9" y="2" />
+      <skill id="legion" x="7" />
+    </upgrade>
+  </unit>
 </root>
 

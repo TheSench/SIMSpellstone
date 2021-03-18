@@ -3744,6 +3744,88 @@
       <skill id="frost" x="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4044</id>
+    <card_type>2</card_type>
+    <name>Viracocha</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Viracocha_A</picture>
+    <asset_bundle>218</asset_bundle>
+    <item_name>Viracocha Stone</item_name>
+    <item_desc>Collect Viracocha Stones to upgrade the Legendary Viracocha!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <attack>18</attack>
+    <health>56</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="protect" all="1" x="5" />
+    <skill id="frost" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>57</health>
+      <skill id="stasis" x="5" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>19</attack>
+      <skill id="stasis" x="5" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>58</health>
+      <skill id="stasis" x="6" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="6" />
+      <skill id="protect" all="1" x="7" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>20</attack>
+      <health>60</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="stasis" x="7" />
+      <skill id="protect" all="1" x="8" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>21</attack>
+      <skill id="stasis" x="7" />
+      <skill id="protect" all="1" x="8" />
+      <skill id="frost" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>60</health>
+      <skill id="stasis" x="8" />
+      <skill id="protect" all="1" x="8" />
+      <skill id="frost" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="stasis" x="8" />
+      <skill id="protect" all="1" x="9" />
+      <skill id="frost" x="9" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -5368,6 +5450,91 @@
       <skill id="armored" x="8" />
       <skill id="counter" x="11" />
       <skill id="weaken" x="7" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5619</id>
+    <card_type>2</card_type>
+    <name>Chlorox Omega</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Mecha_Poison_Juggernaut_A</picture>
+    <asset_bundle>215</asset_bundle>
+    <item_name>Chlorox Stone</item_name>
+    <item_desc>Collect Chlorox Stones to upgrade the Legendary Chlorox Omega card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <attack>11</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="weaken" x="2" all="1" />
+    <skill id="poison" x="8" />
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+      <skill id="armored" x="5" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="armored" x="6" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
+      <skill id="armored" x="6" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+      <skill id="armored" x="7" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="7" />
+      <skill id="weaken" x="4" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>14</attack>
+      <skill id="armored" x="7" />
+      <skill id="weaken" x="4" all="1" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="armored" x="7" />
+      <skill id="weaken" x="5" all="1" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>43</health>
+      <skill id="armored" x="8" />
+      <skill id="weaken" x="5" all="1" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>15</attack>
+      <skill id="armored" x="8" />
+      <skill id="weaken" x="5" all="1" />
+      <skill id="poison" x="12" />
     </upgrade>
   </unit>
   <!-- === AETHER END === -->

@@ -11782,47 +11782,47 @@
     <portrait>aetherguardian</portrait>
     <asset_bundle>27</asset_bundle>
     <desc>You exist to serve!</desc>
-    <health>86</health>
+    <health>88</health>
     <rarity>4</rarity>
     <skill id="jam" c="3" />
-    <skill id="jam" c="5" />
-    <skill id="jam" c="7" all="1" />
+    <skill id="jam" c="4" />
+    <skill id="jam" c="5" all="1" />
     <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>89</health>
+      <health>91</health>
       <skill id="jam" c="3" />
       <skill id="jam" c="3" />
-      <skill id="jam" c="7" all="1" />
+      <skill id="jam" c="4" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>91</health>
+      <health>93</health>
       <skill id="jam" c="2" />
       <skill id="jam" c="3" />
-      <skill id="jam" c="7" all="1" />
+      <skill id="jam" c="4" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>93</health>
+      <health>95</health>
       <skill id="jam" c="1" />
       <skill id="jam" c="3" />
-      <skill id="jam" c="6" all="1" />
+      <skill id="jam" c="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>95</health>
-      <skill id="jam" c="1" />
-      <skill id="jam" c="2" />
-      <skill id="jam" c="6" all="1" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
       <health>97</health>
       <skill id="jam" c="1" />
       <skill id="jam" c="2" />
-      <skill id="jam" c="5" all="1" />
+      <skill id="jam" c="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="jam" c="1" />
+      <skill id="jam" c="1" />
+      <skill id="jam" c="2" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -11834,45 +11834,45 @@
     <desc>Nature shall grow over you!</desc>
     <health>88</health>
     <rarity>4</rarity>
-    <skill id="heal" x="20" />
-    <skill id="heal" x="10" />
-    <skill id="heal" x="10" />
+    <skill id="imbue" s="berserk" x="8" all="1" />
+    <skill id="heal" x="10" all="1" />
+    <skill id="invigorate" x="10" all="1" />
     <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>91</health>
-      <skill id="heal" x="20" />
-      <skill id="heal" x="15" />
-      <skill id="heal" x="15" />
+      <skill id="imbue" s="berserk" x="8" all="1" />
+      <skill id="heal" x="10" all="1" />
+      <skill id="invigorate" x="10" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>93</health>
-      <skill id="heal" x="20" />
-      <skill id="heal" x="20" />
-      <skill id="heal" x="20" />
+      <skill id="imbue" s="berserk" x="10" all="1" />
+      <skill id="heal" x="15" all="1" />
+      <skill id="invigorate" x="10" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>95</health>
-      <skill id="heal" x="25" />
-      <skill id="heal" x="20" />
-      <skill id="heal" x="20" />
+      <skill id="imbue" s="berserk" x="10" all="1" />
+      <skill id="heal" x="20" all="1" />
+      <skill id="invigorate" x="10" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>97</health>
-      <skill id="heal" x="25" />
-      <skill id="heal" x="25" />
-      <skill id="heal" x="20" />
+      <skill id="imbue" s="berserk" x="10" all="1" />
+      <skill id="heal" x="25" all="1" />
+      <skill id="invigorate" x="10" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="heal" x="30" />
-      <skill id="heal" x="25" />
-      <skill id="heal" x="20" />
+      <skill id="imbue" s="berserk" x="12" all="1" />
+      <skill id="heal" x="25" all="1" />
+      <skill id="invigorate" x="15" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -11881,47 +11881,47 @@
     <name>Desire for Apathy</name>
     <portrait>void</portrait>
     <desc>Void controls the elements!</desc>
-    <health>70</health>
+    <health>81</health>
     <rarity>4</rarity>
-    <skill id="weaken" x="5" all="1" />
-    <skill id="weaken" x="5" all="1" c="5" />
-    <skill id="weaken" x="10" />
+    <skill id="imbue" s="daze" x="8" all="1" />
+    <skill id="weaken" x="8" all="1" />
+    <skill id="weaken" x="10" all="1" c="4" />
     <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>72</health>
-      <skill id="weaken" x="5" all="1" />
-      <skill id="weaken" x="5" all="1" c="4" />
-      <skill id="weaken" x="10" />
+      <health>84</health>
+      <skill id="imbue" s="daze" x="10" all="1" />
+      <skill id="weaken" x="8" all="1" />
+      <skill id="weaken" x="15" all="1" c="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>74</health>
-      <skill id="weaken" x="5" all="1" />
-      <skill id="weaken" x="5" all="1" c="4" />
-      <skill id="weaken" x="10" />
+      <health>87</health>
+      <skill id="imbue" s="daze" x="10" all="1" />
+      <skill id="weaken" x="10" all="1" />
+      <skill id="weaken" x="15" all="1" c="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>76</health>
-      <skill id="weaken" x="5" all="1" />
-      <skill id="weaken" x="10" all="1" c="4" />
-      <skill id="weaken" x="15" />
+      <health>90</health>
+      <skill id="imbue" s="daze" x="10" all="1" />
+      <skill id="weaken" x="10" all="1" />
+      <skill id="weaken" x="20" all="1" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>78</health>
+      <health>93</health>
+      <skill id="imbue" s="daze" x="15" all="1" />
       <skill id="weaken" x="10" all="1" />
-      <skill id="weaken" x="10" all="1" c="4" />
-      <skill id="weaken" x="15" />
+      <skill id="weaken" x="20" all="1" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>80</health>
-      <skill id="weaken" x="10" all="1" />
-      <skill id="weaken" x="10" all="1" c="3" />
-      <skill id="weaken" x="20" />
+      <health>96</health>
+      <skill id="imbue" s="daze" x="15" all="1" />
+      <skill id="weaken" x="15" all="1" />
+      <skill id="weaken" x="20" all="1" c="2" />
     </upgrade>
   </unit>
 </root>

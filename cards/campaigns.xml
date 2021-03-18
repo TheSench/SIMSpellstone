@@ -9581,6 +9581,47 @@
     </rewards>
     <find_item id="3128" drop_per_energy=".4" />
   </campaign>
+  <!-- Boss Node -->
+  <campaign>
+    <id>1280</id>
+    <name>Faction Weakness Awakening</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req id="1278" level="1" />
+    <locked_start_time>1616086800</locked_start_time>
+    <!--  Thursday, 18 March 2021 0:00:00 -->
+    <battleground_id>2116</battleground_id>
+    <!-- Enemy BGE -->
+    <location_id>34</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>680</x>
+    <!-- left right -->
+    <y>400</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6595</mission_id>
+      <mission_id>6596</mission_id>
+      <mission_id>6597</mission_id>
+      <mission_id>6598</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3130" />
+      <!--  Shatterstone Anomaly's Spellstone  -->
+      <item level="5" id="3130" />
+      <!--  Shatterstone Anomaly's Spellstone  -->
+      <item level="6" id="3130" />
+      <!--  Shatterstone Anomaly's Spellstone  -->
+      <item level="7" id="3130" />
+      <!--  Shatterstone Anomaly's Spellstone  -->
+    </rewards>
+    <find_item id="3128" drop_per_energy=".4" />
+  </campaign>
+  <!-- ========== Campaign Event 28 weeks 5-8 / Conflux Convergence ============ -->
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

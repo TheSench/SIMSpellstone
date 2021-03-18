@@ -24315,5 +24315,118 @@
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2209</id>
+    <card_type>2</card_type>
+    <name>Golem Hand</name>
+    <picture>Mecha_Golem_Hand_A</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1617296400</hidden_until_time>
+    <attack>7</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="jam" c="6" />
+    <skill id="weaken" x="2" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="jam" c="5" />
+      <skill id="weaken" x="2" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12209</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Rogue Hand</name>
+    <picture>Mecha_Golem_Hand_A</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1617296400</hidden_until_time>
+    <attack>8</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="jam" c="5" />
+    <skill id="weaken" x="2" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="2" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22209</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sinister Hand</name>
+    <picture>Mecha_Golem_Hand_B</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1617296400</hidden_until_time>
+    <attack>9</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="jam" c="4" />
+    <skill id="weaken" x="2" all="1" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+      <cost>1</cost>
+    </upgrade>
+  </unit>
 </root>
 
