@@ -51260,5 +51260,46 @@
       </line>
     </speech>
   </mission>
+  <mission>
+    <id>6611</id>
+    <name>Test BGE Elemental Mecha</name>
+    <energy>18</energy>
+    <desc>Test mission. If you see this, the devs screwed up!</desc>
+    <commander id="464" />
+    <deck>
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" />
+      <card id="99901" mastery_level="1" />
+      <card id="99901" mastery_level="2" />
+      <card id="99901" mastery_level="3" />
+      <card id="99901" mastery_level="4" />
+      <card id="99901" mastery_level="5" />
+      <card id="99901" mastery_level="6" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Finally... we'll have real peace on our continent.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Thank you, adventurer. I couldn't pick a better friend to travel with.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Now let's celebrate!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

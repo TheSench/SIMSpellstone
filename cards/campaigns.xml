@@ -9544,7 +9544,7 @@
   <campaign>
     <id>1279</id>
     <name>Dyrnwyn's Judgement</name>
-    <campaign_req id="1272" level="1" />
+    <campaign_req id="1278" level="1" />
     <locked_start_time>1616086800</locked_start_time>
     <!-- Thursday, March 18, 2021 17:00:00	 -->
     <battleground_id>2115</battleground_id>

@@ -111821,5 +111821,65 @@ var MISSIONS = {
 		],
 		"id": "6610",
 		"name": "True Peace"
+	},
+	"6611": {
+		"commander": {
+			"id": "464"
+		},
+		"deck": [
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901"
+			},
+			{
+				"id": "99901",
+				"mastery_level": "1"
+			},
+			{
+				"id": "99901",
+				"mastery_level": "2"
+			},
+			{
+				"id": "99901",
+				"mastery_level": "3"
+			},
+			{
+				"id": "99901",
+				"mastery_level": "4"
+			},
+			{
+				"id": "99901",
+				"mastery_level": "5"
+			},
+			{
+				"id": "99901",
+				"mastery_level": "6"
+			}
+		],
+		"id": "6611",
+		"name": "Test BGE Elemental Mecha"
 	}
 };

@@ -11786,7 +11786,7 @@
     <rarity>4</rarity>
     <skill id="jam" c="3" />
     <skill id="jam" c="4" />
-    <skill id="jam" c="5" all="1" />
+    <skill id="jam" c="4" />
     <type>1</type>
     <set>9999</set>
     <upgrade>
@@ -11794,35 +11794,35 @@
       <health>91</health>
       <skill id="jam" c="3" />
       <skill id="jam" c="3" />
-      <skill id="jam" c="4" all="1" />
+      <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>93</health>
       <skill id="jam" c="2" />
       <skill id="jam" c="3" />
-      <skill id="jam" c="4" all="1" />
+      <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>95</health>
-      <skill id="jam" c="1" />
+      <skill id="jam" />
       <skill id="jam" c="3" />
-      <skill id="jam" c="3" all="1" />
+      <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>97</health>
-      <skill id="jam" c="1" />
+      <skill id="jam" />
       <skill id="jam" c="2" />
-      <skill id="jam" c="3" all="1" />
+      <skill id="jam" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="jam" c="1" />
-      <skill id="jam" c="1" />
-      <skill id="jam" c="2" all="1" />
+      <skill id="jam" />
+      <skill id="jam" />
+      <skill id="jam" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -11922,6 +11922,37 @@
       <skill id="imbue" s="daze" x="15" all="1" />
       <skill id="weaken" x="15" all="1" />
       <skill id="weaken" x="20" all="1" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>464</id>
+    <card_type>1</card_type>
+    <name>Test Commander</name>
+    <portrait>void</portrait>
+    <desc>Test is the best!</desc>
+    <health>90</health>
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>91</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>92</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>93</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>94</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>95</health>
     </upgrade>
   </unit>
 </root>
