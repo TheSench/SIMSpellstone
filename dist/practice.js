@@ -5344,7 +5344,7 @@ var SIM_CONTROLLER = (function () {
 
 		// Bash
 		var bash = 0;
-		if (!current_assault.bash_triggered) {
+		if (!current_assault.bash_triggered && !current_assault.silenced) {
 			bash = current_assault.bash;
 			current_assault.bash_triggered = true;
 		}
