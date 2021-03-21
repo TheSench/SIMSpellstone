@@ -294,6 +294,8 @@ var SIMULATOR = {};
 	function checkShroud(unit) {
 		if (unit.isActive() && unit.isUnjammed()) {
 			return 0;
+		} else if (unit.silenced) {
+			return 0;
 		} else {
 			return (unit.stasis || 0);
 		}
