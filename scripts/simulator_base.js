@@ -144,7 +144,7 @@ var SIMULATOR = {};
 		// Silence
 		// - Attacker must have taken damage
 		// - Target must be an assault
-		if (source.silence) {
+		if (source.silence && target.isAssault()) {
 			target.silenced = true;
 			// Remove passive statuses for this turn
 			target.invisible = 0;
