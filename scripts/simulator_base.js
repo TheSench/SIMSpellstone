@@ -144,7 +144,7 @@ var SIMULATOR = {};
 		// Silence
 		// - Attacker must have taken damage
 		// - Target must be an assault
-		if (source.silence) {
+		if (source.silence && target.isAssault()) {
 			target.silenced = true;
 			// Remove passive statuses for this turn
 			target.invisible = 0;
@@ -293,6 +293,8 @@ var SIMULATOR = {};
 
 	function checkShroud(unit) {
 		if (unit.isActive() && unit.isUnjammed()) {
+			return 0;
+		} else if (unit.silenced) {
 			return 0;
 		} else {
 			return (unit.stasis || 0);
@@ -2667,7 +2669,7 @@ var SIMULATOR = {};
 
 		// Bash
 		var bash = 0;
-		if (!current_assault.bash_triggered) {
+		if (!current_assault.bash_triggered && !current_assault.silenced) {
 			bash = current_assault.bash;
 			current_assault.bash_triggered = true;
 		}
