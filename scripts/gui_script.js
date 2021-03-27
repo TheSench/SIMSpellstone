@@ -305,7 +305,9 @@ function outputTurns(turnData, showAll) {
 		turnData += "</div>";
 		closeDiv = false;
 	}
-	turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
+	if (debug) {
+		turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
+	}
 	outp(turnData);
 	var numTurns = $(".turn-info").hide().length;
 	var options = [];
