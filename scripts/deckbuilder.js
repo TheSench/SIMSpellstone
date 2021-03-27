@@ -251,10 +251,6 @@ var setupPopups = function () {
 
 	saveDeckDialog = $("#saveDeckDialog").dialog({
 		autoOpen: false,
-		/*
-		width: 250,
-		minHeight: 20,
-		*/
 		modal: true,
 		resizable: false,
 		buttons: {
@@ -274,9 +270,6 @@ var setupPopups = function () {
 	loadDeckDialog = $("#loadDeckDialog").dialog({
 		autoOpen: false,
 		minWidth: 320,
-		/*
-		minHeight: 20,
-		*/
 		modal: true,
 		resizable: false,
 		buttons: {
@@ -346,7 +339,6 @@ function doDrawDeck() {
 
 function addDeckEventHandlers($deck) {
 	addCardEvent($deck, "mousedown", duplicate);
-	//addCardEvent($deck, "mouseup", duplicate);
 	addCardEvent($deck, "mouseover", highlight);
 	addCardEvent($deck, "click", deckOnClick);
 	addCardEvent($deck, "contextmenu", showCardOptions);
@@ -493,7 +485,6 @@ function doDrawCardList(cardList, resetPage) {
 }
 
 var onResize = (function () {
-	//redrawCardList(true);
 	applyFilters(true);
 }).debounce(50);
 
@@ -555,7 +546,6 @@ function pageUp() {
 	if (page < 0) {
 		page = 0;
 	} else {
-		//redrawCardList(true);
 		applyFilters(true);
 	}
 }
@@ -565,7 +555,6 @@ function pageDown() {
 	if (page >= pages) {
 		page--;
 	} else {
-		//redrawCardList(true);
 		applyFilters(true);
 	}
 }
@@ -603,11 +592,7 @@ var addUnitLevels = function (id) {
 }
 
 var resetDeck = function () {
-	/*if (inventoryMode) {
-		hash_changed('');
-	} else */ {
-		hash_changed('oZ0IB');
-	}
+	hash_changed('oZ0IB');
 }
 
 var disableTracking = false;
@@ -676,13 +661,7 @@ var addUnitToDeck = function (unit, htmlCard) {
 	}
 
 	var $deck = $("#deck");
-	/*
-	if (inventoryMode) {
-		deck.deck.push(unit);
-		//$deck.append($htmlCard);
-		doDrawDeck();
-	} else*/ if (is_commander(unit.id)) {
-
+	if (is_commander(unit.id)) {
 		if (areEqual(deck.commander, unit)) return;
 		deck.commander = unit;
 		replaceCard($deck.find(".card").first(), $htmlCard);
@@ -738,34 +717,13 @@ function removeFromInventory(unit) {
 
 var removeFromDeck = function (htmlCard) {
 	var unit;
-	var $htmlCard = $(htmlCard)//$(event.delegateTarget)
+	var $htmlCard = $(htmlCard);
 	var index = $htmlCard.index();
-	/*if (inventoryMode) {
-		var inventory = deck.deck;
-		var invIndex = 0;
-		var i = 0;
-		var lastUnit;
-		for (var len = inventory.length; i < len; i++) {
-			var unit = inventory[i];
-			if (lastUnit) {
-				if (!areEqual(unit, lastUnit)) {
-					invIndex++;
-				}
-			}
-			if (invIndex == index) {
-				break;
-			}
-			lastUnit = unit;
-		}
-		unit = deck.deck.splice(i, 1)[0];
-		//$htmlCard.remove();
-		doDrawDeck();
-	} else*/ if (index == 0) {
+	if (index == 0) {
 		unit = deck.commander;
 		if (areEqual(unit, elariaCaptain)) return;
 		deck.commander = elariaCaptain;
 		var card = getCardByID(elariaCaptain);
-		//$htmlCard.replaceWith(CARD_GUI.create_card_html(card));
 		var captain = $(CARD_GUI.create_card_html(card));
 		replaceCard($htmlCard, captain);
 	} else {
@@ -1725,7 +1683,6 @@ var showCardOptions = function (event, htmlCard) {
 	event.preventDefault();
 
 	var show = false;
-	//var htmlCard = event.delegateTarget;
 	var index = $(htmlCard).index() - 1;
 	if (index < 0) {
 		var unit = deck.commander;
@@ -1790,7 +1747,6 @@ function hideContext(event) {
 var showRunePicker = function (card) {
 	var select = document.getElementById("runeChoices");
 	select.innerHTML = '<option value=""></option>';
-	//var showUnreleased = document.getElementById("showUnreleased").checked;
 
 	optionsDialog.hiddenOptions = [];
 
@@ -1804,14 +1760,6 @@ var showRunePicker = function (card) {
 				option.appendChild(document.createTextNode(rune.desc));
 				option.value = rune.id;
 				select.appendChild(option);
-				/*
-				if (rune.rarity > 3)
-				{
-					optionsDialog.hiddenOptions.push(option);
-					option.hidden = !showUnreleased;
-					option.disabled = !showUnreleased;
-				}
-				*/
 			}
 		}
 
