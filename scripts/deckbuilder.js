@@ -340,11 +340,7 @@ var drawDeck = function () {
 }
 
 function doDrawDeck() {
-	/*if (inventoryMode) {
-		$deck = CARD_GUI.draw_inventory(deck.deck);
-	} else */ {
-		$deck = CARD_GUI.draw_deck(deck, inventoryMode);
-	}
+	$deck = CARD_GUI.draw_deck(deck, inventoryMode);
 	updateHash();
 };
 
