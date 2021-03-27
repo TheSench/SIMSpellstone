@@ -7394,22 +7394,6 @@ var CARD_GUI = {};
             cardSpace, 
             make_card_list(list, compactSkills, null, null, /*onclick, onrightclick,*/ skip, end)
         );
-
-        return $(cardSpace);
-    }
-
-    function draw_inventory(list) {
-        var cards = make_card_list(list);
-        var cardSpace = getAndClearElement("deck");
-        cardSpace.append(cards);
-        return $(cardSpace);
-    }
-
-    function draw_inventory(deck) {
-        var cardSpace = getAndClearElement("deck");
-        appendChildren(cardSpace, make_card_list([deck.commander]));
-        appendChildren(cardSpace, make_card_list(deck.deck));
-        return $(cardSpace);
     }
 
     function make_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
@@ -7952,7 +7936,6 @@ var CARD_GUI = {};
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
     CARD_GUI.doDrawField = doDrawField;
-    CARD_GUI.draw_inventory = draw_inventory;
     CARD_GUI.draw_hand = draw_hand;
     CARD_GUI.createItemHTML = createItemHTML;
     CARD_GUI.addMult = addMult;
