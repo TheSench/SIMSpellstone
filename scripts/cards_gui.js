@@ -3,20 +3,29 @@ var CARD_GUI = {};
 (function() {
     var assetsRoot = '';
 
-    function clearCardSpace() {
-        var cardSpace = $("#cardSpace").empty();
+    /** @param {string} id */
+    function getAndClearElement(id) {
+        var element = document.getElementById(id);
+        while(element.firstChild) {
+            element.removeChild(element.firstChild);
+        }
+        return element;
     }
 
-    function clearDeckSpace() {
-        var cardSpace = document.getElementById("deck");
-        cardSpace.innerHTML = '';
+    /**
+     * @param {HTMLElement} parent
+     * @param {HTMLElement[]} children
+     */
+    function appendChildren(parent, children) {
+        children.forEach(function (child) {
+            parent.append(child);
+        });
     }
 
     function draw_deck(deck, noblanks) {
-        var $deck = $("#deck");
-        $deck.children().remove();
-        $deck.append(makeDeckHTML(deck, noblanks));
-        return $deck;
+        var element = getAndClearElement("deck");
+        appendChildren(element, makeDeckHTML(deck, noblanks));
+        return $(element);
     }
 
     function makeDeckHTML(deck, noblanks, battlegrounds) {
@@ -32,38 +41,36 @@ var CARD_GUI = {};
             }
             cards.push(create_card_html(unit, false, false));
         }
-        if (!noblanks)
+        if (!noblanks) {
             for (; i < 15; i++) {
                 cards.push(createDiv("card blank"));
             }
+        }
         return cards;
     }
 
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
-        var cards = make_card_list(list, compactSkills, null, null, /*onclick, onrightclick,*/ skip, end);
-        var $cardSpace = $("#cardSpace");
-        $cardSpace.empty();
-        $cardSpace.append(cards);
+        var cardSpace = getAndClearElement("cardSpace");
+        appendChildren(
+            cardSpace, 
+            make_card_list(list, compactSkills, null, null, /*onclick, onrightclick,*/ skip, end)
+        );
 
-        return $cardSpace;
+        return $(cardSpace);
     }
 
     function draw_inventory(list) {
         var cards = make_card_list(list);
-        var $cardSpace = $("#deck");
-        $cardSpace.children().remove();
-        $cardSpace.append(cards);
-        return $cardSpace;
+        var cardSpace = getAndClearElement("deck");
+        cardSpace.append(cards);
+        return $(cardSpace);
     }
 
     function draw_inventory(deck) {
-        var cards = make_card_list(deck.deck);
-        var $cardSpace = $("#deck");
-        $cardSpace.children().remove();
-        $cardSpace.append(make_card_list([deck.commander]));
-        //$deck.find(".card").hide();
-        $cardSpace.append(cards);
-        return $cardSpace;
+        var cardSpace = getAndClearElement("deck");
+        appendChildren(cardSpace, make_card_list([deck.commander]));
+        appendChildren(cardSpace, make_card_list(deck.deck));
+        return $(cardSpace);
     }
 
     function make_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
@@ -131,8 +138,10 @@ var CARD_GUI = {};
     }
 
     function draw_cards(field, drawableHand, callback, turn) {
-        var fieldHTML = doDrawField(field, drawableHand, callback, turn);
-        $("#cardSpace").children().remove().end().append(fieldHTML);
+        appendChildren(
+            getAndClearElement("cardSpace"),
+            doDrawField(field, drawableHand, callback, turn)
+        );
     }
 
     function draw_field(field, activeUnit) {
@@ -166,7 +175,6 @@ var CARD_GUI = {};
             if (i === 0) htmlCard.classList.add("left");
             else if (i === 2) htmlCard.classList.add("right");
             else if (i > 2) htmlCard.classList.add("inactive");
-            var cardidx = i;
             if (callback) {
                 htmlCard.addEventListener("click", (function(inner) {
                     return function() {
@@ -318,10 +326,10 @@ var CARD_GUI = {};
         }
         var divSkills = createDiv("card-skills");
         var skillsShort = createDiv("card-skills-short");
-        if (card.earlyActivationSkills) getSkillsHtml(card, divSkills, skillsShort, card.earlyActivationSkills, onField, boosts);
-        getSkillsHtml(card, divSkills, skillsShort, card.skill, onField, boosts);
-        if (card.onDeathSkills) getSkillsHtml(card, divSkills, skillsShort, card.onDeathSkills, onField, boosts);
-        getPassiveSkills(divSkills, skillsShort, card, onField, boosts);
+        if (card.earlyActivationSkills) appendSkillsHtml(card, divSkills, skillsShort, card.earlyActivationSkills, onField, boosts);
+        appendSkillsHtml(card, divSkills, skillsShort, card.skill, onField, boosts);
+        if (card.onDeathSkills) appendSkillsHtml(card, divSkills, skillsShort, card.onDeathSkills, onField, boosts);
+        appendPassiveSkills(divSkills, skillsShort, card, onField, boosts);
         var skillsDetail = divSkills.cloneNode(true);
         skillsDetail.className = "card-skills-detailed";
         if (skillsShort.hasChildNodes()) {
@@ -405,7 +413,7 @@ var CARD_GUI = {};
         return htmlCard;
     }
 
-    function getSkillsHtml(card, divSkills, skillsShort, skills, onField, boosts) {
+    function appendSkillsHtml(card, divSkills, skillsShort, skills, onField, boosts) {
         for (var i = 0; i < skills.length; i++) {
             var origSkill = skills[i];
             var skill = {
@@ -425,11 +433,11 @@ var CARD_GUI = {};
         }
     }
 
-    function getPassiveSkills(divSkills, skillsShort, card, onField, boosts) {
-        var passiveSkills = Object.getOwnPropertyNames(SKILL_DATA).filter(function(skillID) {
+    function appendPassiveSkills(divSkills, skillsShort, card, onField, boosts) {
+        Object.getOwnPropertyNames(SKILL_DATA).filter(function(skillID) {
             return ["passive", "toggle"].indexOf(SKILL_DATA[skillID].type) >= 0;
         }).forEach(function(skill) {
-            getNonActivatedSkill(divSkills, skillsShort, onField, card, skill, boosts);
+            appendNonActivatedSkill(divSkills, skillsShort, onField, card, skill, boosts);
         });
         var flurry = card.flurry;
         if (flurry) {
@@ -439,7 +447,7 @@ var CARD_GUI = {};
         }
     }
 
-    function getNonActivatedSkill(divSkills, skillsShort, onField, card, skillName, boosts) {
+    function appendNonActivatedSkill(divSkills, skillsShort, onField, card, skillName, boosts) {
         var value = card[skillName];
         if (value) {
             var skill = {
@@ -454,7 +462,7 @@ var CARD_GUI = {};
     }
 
     function getSkillHtml(card, skill, onField, i) {
-        var htmlSkill = document.createElement("span");
+        var htmlSkill = createSpan();
         htmlSkill.className = "skill";
         htmlSkill.appendChild(getSkillIcon(skill.id));
         var imbued = isImbued(card, skill.id, i);
@@ -464,24 +472,26 @@ var CARD_GUI = {};
         } else if (skill.boosted || enhancement) {
             htmlSkill.classList.add("increased");
         }
-        if (skill.all) htmlSkill.innerHTML += (" All ");
+        if (skill.all) htmlSkill.append(" All ");
         if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
         if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
         var x = (skill.x | 0) + enhancement;
-        if (x) htmlSkill.innerHTML += (" " + x + " ");
+        if (x) htmlSkill.append(" " + x + " ");
         if (skill.c) {
-            htmlSkill.innerHTML += (skill.c);
-            if (onField) htmlSkill.innerHTML += " (" + (skill.countdown ? skill.countdown : "0") + ")";
+            htmlSkill.append(skill.c);
+            if (onField) htmlSkill.append(" (" + (skill.countdown ? skill.countdown : 0) + ")");
         }
         return htmlSkill;
     }
 
+    /**
+     * @param {string} skillID 
+     */
     function getSkillIcon(skillID) {
-        var src = getAssetPath("skills");
-
         var skillData = SKILL_DATA[skillID];
         var iconName = (skillData ? skillData.icon : skillID) + ".png";
-        src += iconName;
+        var src = getAssetPath("skills") + iconName;
+
         var icon = createImg(src);
         switch (skillID) {
             case 'weakenself':
@@ -497,12 +507,6 @@ var CARD_GUI = {};
 
     function getStatuses(card) {
         var debuffs = [];
-        /*
-        if (card.attack_weaken) {
-        	var status = createStatus("weaken", card.attack_weaken);
-        	debuffs.push(status);
-        }
-        */
         if (card.enfeebled) {
             var status = createStatus("enfeeble", card.enfeebled);
             debuffs.push(status);
@@ -511,12 +515,6 @@ var CARD_GUI = {};
             var status = createStatus("enfeeble", card.marked);
             debuffs.push(status);
         }
-        /*
-        if (card.jammed) {
-        	var status = createStatus("jam");
-        	debuffs.push(status);
-        }
-        */
         if (card.nullified) {
             var status = createStatus("nullify", card.nullified);
             debuffs.push(status);
@@ -531,16 +529,6 @@ var CARD_GUI = {};
         }
 
         var buffs = [];
-        /*
-        if (card.attack_rally) {
-        	var status = createStatus("rally", card.attack_rally);
-        	buffs.push(status);
-        }
-        if (card.attack_berserk) {
-        	var status = createStatus("berserk", card.attack_berserk);
-        	buffs.push(status);
-        }
-        */
         if (card.enraged) {
             var status = createStatus("enrage", card.enraged);
             debuffs.push(status);
@@ -573,23 +561,34 @@ var CARD_GUI = {};
         return statuses;
     }
 
+    /**
+     * @param {string} name
+     * @param {*} value
+     */
     function createStatus(name, value) {
-        var spanStatus = document.createElement("span");
+        var spanStatus = createSpan();
         spanStatus.appendChild(getSkillIcon(name));
-        if (value) spanStatus.innerHTML += (value);
+        if (value) spanStatus.append(value);
         return spanStatus;
     }
 
+    /**
+     * @param {number} set
+     */
     function getSetIcon(set) {
         var setName = setNames[set];
         return createImg(getAssetPath('cardAssets') + setName + '.png');
     }
 
+    /**
+     * @param {number} factionID
+     */
     function getFactionIcon(factionID) {
         var factionName = factions.names[factionID];
         return createImg(getAssetPath('factions') + factionName + '.png');
     }
 
+    /** @param {string} subpath */
     function getAssetPath(subpath) {
         return assetsRoot + 'res/' + subpath + '/';
     }
@@ -608,8 +607,6 @@ var CARD_GUI = {};
         9999: "StoryElements"
     };
 
-    CARD_GUI.clearCardSpace = clearCardSpace;
-    CARD_GUI.clearDeckSpace = clearDeckSpace;
     CARD_GUI.draw_deck = draw_deck;
     CARD_GUI.create_card_html = create_card_html;
     CARD_GUI.makeDeckHTML = makeDeckHTML;
@@ -636,13 +633,38 @@ var CARD_GUI = {};
 })();
 
 function createImg(src, className) {
-    return $("<img>").addClass(className).attr("src", src)[0];
+    var img = createElement('img', className);
+    img.src = src;
+    return img;
 }
 
-function createDiv(className, value) {
-    return $("<div>").addClass(className).html(value)[0];
+/**
+ * @param {string} className
+ * @param {*} value
+ * @returns {HTMLDivElement}
+ */
+function createDiv(className, content) {
+    return createElement('div', className, content);
 }
 
-function createSpan(className, value) {
-    return $("<span>").addClass(className).html(value)[0];
+/**
+ * @param {string} className
+ * @param {*} value
+ */
+function createSpan(className, content) {
+    return createElement('span', className, content);
+}
+
+/**
+ * @template {keyof HTMLElementTagNameMap} T
+ * @param {T} tagName
+ * @param {string} className
+ * @param {*} value
+ * @returns {HTMLElementTagNameMap[T]}
+ */
+function createElement(tagName, className, content) {
+    var el = document.createElement(tagName);
+    if (className != null) el.className = className;
+    if (content != null) el.append(content);
+    return el;
 }
