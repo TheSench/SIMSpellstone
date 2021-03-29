@@ -76,18 +76,20 @@ Function.prototype.throttle = (function() {
     return function(wait) {
         var func = this;
         var timeout;
-        var fired = false;
+        var waitingToFire = false;
         return function() {
             var context = this,
                 args = arguments;
             if (timeout) {
-                fired = false;
+                waitingToFire = true;
             } else {
                 func.apply(context, args);
-                fired = true;
+                waitingToFire = false;
                 var later = function() {
                     timeout = null;
-                    func.apply(context, args);
+                    if (waitingToFire) {
+                        func.apply(context, args);
+                    }
                 };
                 timeout = setTimeout(later, wait);
             }

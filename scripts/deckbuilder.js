@@ -51,9 +51,11 @@ var loadDeckDialog;
 var detailsDialog;
 var form;
 
-var $nameFilter;
 var $deck;
-var $cardSpace;
+/** @type {HTMLDivElement} */
+var cardSpace
+/** @type {HTMLDivElement} */
+var deckSpace;
 
 var initDeckBuilder = function () {
 	if (!_DEFINED("fromSim")) {
@@ -70,14 +72,17 @@ var initDeckBuilder = function () {
 		});
 	}
 
+	cardSpace = document.getElementById('cardSpace');
+	deckSpace = document.getElementById('deck');
+
 	setupPopups();
 
 	stopPropagation("hash");
 
 	$("body").addClass("loading");
 
-	addDeckEventHandlers($("#deck"));
-	addLibraryEventHandlers($("#cardSpace"));
+	addDeckEventHandlers(deckSpace);
+	addLibraryEventHandlers(cardSpace);
 
 	$(window).resize(onResize);
 
@@ -89,16 +94,14 @@ var initDeckBuilder = function () {
 		storageAPI.setField("deckBuilder", "rows", $("#rows").val());
 	});
 
-	$nameFilter = $('#nameFilter').keypress(function (event) {
-		if (event.which == 13) {
+	document.getElementById('nameFilter').onkeydown = function (event) {
+		if (event.key === 'Enter') {
 			if (unitsFiltered.length == 1) {
-				addUnitToDeck(unitsFiltered[0], $cardSpace.children()[0]);
+				addUnitToDeck(unitsFiltered[0], cardSpace.children[0]);
 			}
 			event.preventDefault();
 		}
-	}).autocomplete({
-		source: []
-	});
+	};
 
 	var dhtml = $("#deck").sortable({
 		items: '.card:not(.commander):not(.blank)',
@@ -337,24 +340,30 @@ function doDrawDeck() {
 	updateHash();
 };
 
-function addDeckEventHandlers($deck) {
-	addCardEvent($deck, "mousedown", duplicate);
-	addCardEvent($deck, "mouseover", highlight);
-	addCardEvent($deck, "click", deckOnClick);
-	addCardEvent($deck, "contextmenu", showCardOptions);
+function addDeckEventHandlers(deckSpace) {
+	addCardEvent(deckSpace, "mousedown", duplicate);
+	addCardEvent(deckSpace, "mouseover", highlight);
+	addCardEvent(deckSpace, "click", deckOnClick);
+	addCardEvent(deckSpace, "contextmenu", showCardOptions);
 }
 
-function addLibraryEventHandlers($cardSpace) {
-	addCardEvent($cardSpace, "click", addToDeck);
-	addCardEvent($cardSpace, "contextmenu", showDetails);
+function addLibraryEventHandlers(cardSpace) {
+	addCardEvent(cardSpace, "click", addToDeck);
+	addCardEvent(cardSpace, "contextmenu", showDetails);
 }
 
-function addCardEvent($collection, eventName, callback) {
+/**
+ * @param {HTMLDivElement} collection
+ * @param {string} eventName
+ * @param {function} callback
+ */
+function addCardEvent(collection, eventName, callback) {
 	if (callback) {
-		$collection.on(eventName, function (event) {
+		collection.addEventListener(eventName, function (event) {
+			/** @type {HTMLDivElement} */
 			var htmlCard = event.target.closest('.card');
 			if (htmlCard && !htmlCard.classList.contains('blank')) {
-				var i = $(htmlCard).attr('data-i');
+				var i = htmlCard.attributes['data-i'];
 				return callback(event, htmlCard, i);
 			}
 		});
@@ -444,14 +453,13 @@ var pages = 0;
 function doDrawCardList(cardList, resetPage) {
 
 	var detailedSkills = document.getElementById("skillDetails").checked;
-	var cardspace = document.getElementById("cardSpace");
 
 	if (resetPage) {
 		page = 0;
 	}
 
-	var width = cardspace.offsetWidth;
-	var rows = document.getElementById("rows").value;
+	var width = cardSpace.offsetWidth;
+	var rows = parseInt(document.getElementById("rows").value);
 	var cards = ~~(width / 90); // Each card is 84 pixels wide and has 2 pixels of padding and 1 pixel of border
 	cards *= rows;
 	var lastUnit = null;
@@ -474,13 +482,14 @@ function doDrawCardList(cardList, resetPage) {
 		CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
 	}
 	document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
-	$cardSpace = $("#cardSpace");
-	var $cards = $cardSpace.find(".card");
-	if ($cards.length) {
-		var card = $cards[0];
-		var $card = $(card);
-		var minHeight = (card.offsetHeight + parseInt($card.css('marginTop')) + parseInt($card.css('marginBottom'))) * parseInt(rows);
-		$cardSpace.css('min-height', minHeight + 'px');
+	cardSpace = document.getElementById('cardSpace');
+	var foundCards = cardSpace.querySelectorAll(".card");
+	if (foundCards.length) {
+		var card = foundCards[0];
+		/** @type {CSSStyleDeclaration} */
+		var style = card.currentStyle || window.getComputedStyle(card);
+		var minHeight = (card.offsetHeight + parseInt(style.marginTop) + parseInt(style.marginBottom)) * rows;
+		cardSpace.style.minHeight = minHeight + 'px';
 	}
 }
 
@@ -1295,7 +1304,7 @@ var filterName = (function (field) {
 			}
 		}
 	}
-	applyFilters();
+	applyFilters(false, false, true);
 }).throttle(250);
 
 var filterSubfaction = function (button, faction, exclude) {
@@ -1926,7 +1935,7 @@ var filterRarity = function (button, rarity) {
 	applyFilters();
 }
 
-var applyFilters = function (keepPage, skipDraw) {
+var applyFilters = function (keepPage, skipDraw, skipRebuildList) {
 	unitsFiltered = [];
 	var names = [];
 	var addedNames = {};
@@ -1940,14 +1949,28 @@ var applyFilters = function (keepPage, skipDraw) {
 			|| dualFactionHidden[key]) {
 		} else {
 			unitsFiltered.push(unit);
-			var card = getCardByID(unit);
-			if (!addedNames[card.name]) {
-				names.push(card.name);
-				addedNames[card.name] = true;
+			if (!skipRebuildList) {
+				var card = getCardByID(unit);
+				if (!addedNames[card.name]) {
+					names.push(card.name);
+					addedNames[card.name] = true;
+				}
 			}
 		}
 	}
-	$nameFilter.autocomplete("option", { source: names });
+
+	if (!skipRebuildList) {
+		var dataList = document.getElementById('names');
+		CARD_GUI.removeAllChildren(dataList);
+		CARD_GUI.appendChildren(
+			dataList,
+			names.map(function createOption(name) {
+				var option = document.createElement('option');
+				option.value = name;
+				return option;
+			})
+		);
+	}
 
 	if (!skipDraw) {
 		doDrawCardList(unitsFiltered, !keepPage);

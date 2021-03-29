@@ -170,7 +170,8 @@
                     <div id="name-container" style="white-space:nowrap; margin: 5px 0;">
                         <div class="ui-widget">
                             <label for="nameFilter"><strong>Name Filter:</strong></label><br />
-                            <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+                            <input id="nameFilter" type="text" list="names" value="" size="100" onkeyup="filterName(this);">
+                            <datalist id="names"></datalist>
                         </div>
                     </div>
                     <input type="button" id="clear-filters" value="Clear All" onclick="clearFilters()" />
