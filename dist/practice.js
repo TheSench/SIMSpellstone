@@ -460,18 +460,20 @@ Function.prototype.throttle = (function() {
     return function(wait) {
         var func = this;
         var timeout;
-        var fired = false;
+        var waitingToFire = false;
         return function() {
             var context = this,
                 args = arguments;
             if (timeout) {
-                fired = false;
+                waitingToFire = true;
             } else {
                 func.apply(context, args);
-                fired = true;
+                waitingToFire = false;
                 var later = function() {
                     timeout = null;
-                    func.apply(context, args);
+                    if (waitingToFire) {
+                        func.apply(context, args);
+                    }
                 };
                 timeout = setTimeout(later, wait);
             }
@@ -7342,12 +7344,17 @@ var CARD_GUI = {};
 (function() {
     var assetsRoot = '';
 
-    /** @param {string} id */
-    function getAndClearElement(id) {
-        var element = document.getElementById(id);
+    /** @param {HTMLElement} element */
+    function removeAllChildren(element) {
         while(element.firstChild) {
             element.removeChild(element.firstChild);
         }
+    }
+
+    /** @param {string} id */
+    function getAndClearElement(id) {
+        var element = document.getElementById(id);
+        removeAllChildren(element);
         return element;
     }
 
@@ -7930,6 +7937,8 @@ var CARD_GUI = {};
         9999: "StoryElements"
     };
 
+    CARD_GUI.removeAllChildren = removeAllChildren;
+    CARD_GUI.appendChildren = appendChildren;
     CARD_GUI.draw_deck = draw_deck;
     CARD_GUI.create_card_html = create_card_html;
     CARD_GUI.makeDeckHTML = makeDeckHTML;

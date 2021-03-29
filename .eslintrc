@@ -5,10 +5,10 @@
       "jquery": true
     },
     "globals": {
-        "$": true,
-        "jQuery": true,
+        "$": false,
+        "jQuery": false,
         "console": true,
-        "angular": true,
+        "angular": false,
         "document": true,
         "window": true,
         "BATTLEGROUNDS": true,
@@ -22,7 +22,6 @@
         "Uint16Array": true
     },
     "rules": {
-  
       "eqeqeq": 1,
       "comma-dangle": 2,
       "no-console": 0,
