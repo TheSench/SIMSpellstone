@@ -1047,12 +1047,6 @@ var BATTLEGROUNDS = {
 				"y": "1,16"
 			},
 			{
-				"card": 4044,
-				"effect_type": "add_skill",
-				"id": "legion",
-				"x": 5
-			},
-			{
 				"delay": [
 					0
 				],
@@ -1098,12 +1092,6 @@ var BATTLEGROUNDS = {
 				"y": "2,16"
 			},
 			{
-				"card": 4044,
-				"effect_type": "add_skill",
-				"id": "barrage",
-				"x": 6
-			},
-			{
 				"delay": [
 					0
 				],
@@ -1147,12 +1135,6 @@ var BATTLEGROUNDS = {
 				"id": "venom",
 				"x": 7,
 				"y": "3,16"
-			},
-			{
-				"card": 4044,
-				"effect_type": "add_skill",
-				"id": "venom",
-				"x": 5
 			}
 		],
 		"id": "140",
