@@ -9621,7 +9621,179 @@
     </rewards>
     <find_item id="3128" drop_per_energy=".4" />
   </campaign>
+  <!-- April Fool's Campaign 2021 -->
+  <campaign>
+    <id>1281</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Revenge of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>34</location_id>
+    <x>450</x>
+    <y>320</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6618</mission_id>
+      <mission_id>6619</mission_id>
+      <mission_id>6620</mission_id>
+      <mission_id>6621</mission_id>
+      <mission_id>6622</mission_id>
+      <mission_id>6623</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <card level="2" id="2153" />
+      <card level="3" id="2153" />
+      <card level="4" id="2153" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3128" drop_per_energy=".4" />
+  </campaign>
+  <campaign>
+    <id>1282</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Legends Come To Take Their Place!</name>
+    <campaign_req id="1281" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>34</location_id>
+    <x>570</x>
+    <y>320</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6624</mission_id>
+      <mission_id>6625</mission_id>
+      <mission_id>6626</mission_id>
+      <mission_id>6627</mission_id>
+      <mission_id>6628</mission_id>
+      <mission_id>6629</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2152" />
+      <card level="2" id="2152" />
+      <card level="3" id="2152" />
+      <card level="4" id="2152" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3128" drop_per_energy=".4" />
+  </campaign>
+  <campaign>
+    <id>1283</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Director's Cut</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>135</battleground_id>
+    <location_id>34</location_id>
+    <x>500</x>
+    <y>220</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6612</mission_id>
+      <mission_id>6613</mission_id>
+      <mission_id>6614</mission_id>
+      <mission_id>6615</mission_id>
+      <mission_id>6616</mission_id>
+      <mission_id>6617</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12209" />
+      <item level="2" id="514" />
+      <item level="3" id="514" />
+      <item level="4" id="514" />
+      <item level="5" id="104044" number="50" />
+      <card level="6" id="12209" />
+      <item level="7" id="104044" number="150" />
+    </rewards>
+    <find_item id="3128" drop_per_energy=".4" />
+  </campaign>
   <!-- ========== Campaign Event 28 weeks 5-8 / Conflux Convergence ============ -->
+  <campaign>
+    <id>1284</id>
+    <name>Titan Conflux</name>
+    <campaign_req id="1279" level="1" />
+    <locked_start_time>1617296400</locked_start_time>
+    <!-- Thursday, April 1, 2021 17:00:00	 -->
+    <battleground_id>2117</battleground_id>
+    <!-- Enemy BGE -->
+    <location_id>34</location_id>
+    <x>700</x>
+    <!-- left right -->
+    <y>140</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6599</mission_id>
+      <mission_id>6600</mission_id>
+      <mission_id>6601</mission_id>
+      <mission_id>6602</mission_id>
+      <mission_id>6603</mission_id>
+      <mission_id>6604</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2209" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2143" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3129" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3128" drop_per_energy=".4" />
+  </campaign>
+  <campaign>
+    <id>1285</id>
+    <name>Spellstone's End</name>
+    <campaign_req id="1284" level="1" />
+    <locked_start_time>1618506000</locked_start_time>
+    <!-- Thursday, April 15, 2021 17:00:00	 -->
+    <battleground_id>2118</battleground_id>
+    <!-- Enemy BGE -->
+    <location_id>34</location_id>
+    <x>930</x>
+    <!-- left right -->
+    <y>350</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6605</mission_id>
+      <mission_id>6606</mission_id>
+      <mission_id>6607</mission_id>
+      <mission_id>6608</mission_id>
+      <mission_id>6609</mission_id>
+      <mission_id>6610</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2111" />
+      <!-- New BGE Epic B -->
+      <card level="5" id="512" />
+      <!-- Arcane Deposit -->
+      <card level="6" id="2192" />
+      <!-- Repeat Epic B -->
+      <item level="7" id="3129" />
+      <!-- Crafting Item for Legendary Card -->
+    </rewards>
+    <find_item id="3128" drop_per_energy=".4" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

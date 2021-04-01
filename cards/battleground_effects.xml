@@ -882,24 +882,44 @@
   <battleground>
     <id>140</id>
     <name>Adaptive Weaponry</name>
-    <desc>Mechas gain abilities based on faction! Aether gain Ward 5, Chaos gain Barrage 4, and Wyld gain Venom 3. They add their delay cost to these values.</desc>
+    <desc>Mechas gain base Ward 3 and other abilities based on faction! Aether also gain Legion 3, Chaos gain Barrage 4, and Wyld gain Venom 3. They add their delay cost to all these values.</desc>
     <icon>filter_mech_64</icon>
     <effect>
-      <add_skill id="absorb" x="5" yy="1,16" delay="0" />
-      <add_skill id="absorb" x="6" yy="1,16" delay="1" />
-      <add_skill id="absorb" x="7" yy="1,16" delay="2" />
-      <add_skill id="absorb" x="8" yy="1,16" delay="3" />
-      <add_skill id="absorb" x="9" yy="1,16" delay="4" />
+      <add_skill id="absorb_mecha" x="3" all="1" y="16" delay="0" />
+      <add_skill id="absorb_mecha" x="4" all="1" y="16" delay="1" />
+      <add_skill id="absorb_mecha" x="5" all="1" y="16" delay="2" />
+      <add_skill id="absorb_mecha" x="6" all="1" y="16" delay="3" />
+      <add_skill id="absorb_mecha" x="7" all="1" y="16" delay="4" />
+      <skill id="displayEffect" trigger="onSkill" s="absorb_mecha">
+        <target_effect>
+          <prefab>ReinforceActive</prefab>
+          <bundle_id>107</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+      <add_skill id="legion" x="3" yy="1,16" delay="0" />
+      <add_skill id="legion" x="4" yy="1,16" delay="1" />
+      <add_skill id="legion" x="5" yy="1,16" delay="2" />
+      <add_skill id="legion" x="6" yy="1,16" delay="3" />
+      <add_skill id="legion" x="7" yy="1,16" delay="4" />
+      <add_skill id="legion" x="5" card="4044" />
+      <!-- to include Viracocha in the BGE -->
       <add_skill id="barrage" x="4" yy="2,16" delay="0" />
       <add_skill id="barrage" x="5" yy="2,16" delay="1" />
       <add_skill id="barrage" x="6" yy="2,16" delay="2" />
       <add_skill id="barrage" x="7" yy="2,16" delay="3" />
       <add_skill id="barrage" x="8" yy="2,16" delay="4" />
+      <add_skill id="barrage" x="6" card="4044" />
+      <!-- to include Viracocha in the BGE -->
       <add_skill id="venom" x="3" yy="3,16" delay="0" />
       <add_skill id="venom" x="4" yy="3,16" delay="1" />
       <add_skill id="venom" x="5" yy="3,16" delay="2" />
       <add_skill id="venom" x="6" yy="3,16" delay="3" />
       <add_skill id="venom" x="7" yy="3,16" delay="4" />
+      <add_skill id="venom" x="5" card="4044" />
+      <!-- to include Viracocha in the BGE -->
     </effect>
   </battleground>
   <!-- ================================= -->

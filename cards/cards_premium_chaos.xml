@@ -22340,9 +22340,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="counterburn" x="4" />
+      <skill id="counterburn" x="5" />
       <skill id="burn" x="4" />
-      <skill id="berserk" x="4" />
+      <skill id="berserk" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -22380,16 +22380,16 @@
     <upgrade>
       <level>5</level>
       <health>41</health>
-      <skill id="counterburn" x="5" />
+      <skill id="counterburn" x="6" />
       <skill id="burn" x="6" />
-      <skill id="berserk" x="5" />
+      <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>13</attack>
-      <skill id="counterburn" x="6" />
+      <skill id="counterburn" x="7" />
       <skill id="burn" x="7" />
-      <skill id="berserk" x="5" />
+      <skill id="berserk" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -31501,7 +31501,7 @@
     <asset_bundle>172</asset_bundle>
     <hidden_until_time>1571072400</hidden_until_time>
     <attack>5</attack>
-    <health>27</health>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="rally" x="1" all="1" y="16" />
@@ -31528,7 +31528,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>28</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -31546,7 +31546,7 @@
     <asset_bundle>172</asset_bundle>
     <hidden_until_time>1571072400</hidden_until_time>
     <attack>6</attack>
-    <health>28</health>
+    <health>30</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="rally" x="2" all="1" y="16" />
@@ -31557,29 +31557,30 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <attack>7</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>29</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="rally" x="2" all="1" y="16" />
+      <skill id="rally" x="3" all="1" y="16" />
       <skill id="legion" x="5" />
       <skill id="fervor" x="6" y="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="2" all="1" y="16" />
+      <skill id="rally" x="3" all="1" y="16" />
       <skill id="legion" x="6" />
       <skill id="fervor" x="6" y="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="rally" x="3" all="1" y="16" />
+      <health>32</health>
+      <skill id="rally" x="4" all="1" y="16" />
       <skill id="legion" x="6" />
-      <skill id="fervor" x="6" y="2" />
+      <skill id="fervor" x="7" y="2" />
     </upgrade>
   </unit>
   <unit>
@@ -36534,7 +36535,6 @@
     <skill id="heal" x="5" y="2" />
     <skill id="legion" x="5" />
     <type>2</type>
-    <sub_type>2</sub_type>
     <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
@@ -36576,7 +36576,6 @@
     <skill id="heal" x="6" y="2" />
     <skill id="legion" x="5" />
     <type>2</type>
-    <sub_type>2</sub_type>
     <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
@@ -36622,7 +36621,6 @@
     <skill id="heal" x="8" y="2" />
     <skill id="legion" x="6" />
     <type>2</type>
-    <sub_type>2</sub_type>
     <sub_type>5</sub_type>
     <set>4000</set>
     <upgrade>
@@ -36650,6 +36648,140 @@
       <skill id="counterburn" x="7" />
       <skill id="heal" x="9" y="2" />
       <skill id="legion" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6288</id>
+    <card_type>2</card_type>
+    <name>Ashen Cavalier</name>
+    <picture>Mecha_Flame_Rider_A</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1618246800</hidden_until_time>
+    <attack>10</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="counterburn" x="4" />
+    <skill id="rally" x="2" all="1" y="2" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="counterburn" x="5" />
+      <skill id="rally" x="2" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="counterburn" x="5" />
+      <skill id="rally" x="2" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="counterburn" x="5" />
+      <skill id="rally" x="3" all="1" y="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16288</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Charring Cavalier</name>
+    <picture>Mecha_Flame_Rider_A</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1618246800</hidden_until_time>
+    <attack>11</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="counterburn" x="5" />
+    <skill id="rally" x="3" all="1" y="2" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="5" />
+      <skill id="counterburn" x="6" />
+      <skill id="rally" x="3" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="6" />
+      <skill id="counterburn" x="6" />
+      <skill id="rally" x="3" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="counterburn" x="6" />
+      <skill id="rally" x="4" all="1" y="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26288</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pyre Cavalier</name>
+    <picture>Mecha_Flame_Rider_B</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1618246800</hidden_until_time>
+    <attack>12</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="6" />
+    <skill id="counterburn" x="6" />
+    <skill id="rally" x="4" all="1" y="2" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="6" />
+      <skill id="counterburn" x="7" />
+      <skill id="rally" x="4" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="7" />
+      <skill id="counterburn" x="7" />
+      <skill id="rally" x="4" all="1" y="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="7" />
+      <skill id="counterburn" x="7" />
+      <skill id="rally" x="5" all="1" y="2" />
     </upgrade>
   </unit>
 </root>

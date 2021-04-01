@@ -949,15 +949,65 @@ var BATTLEGROUNDS = {
 		"name": "Elemental Crux"
 	},
 	"140": {
-		"desc": "Mechas gain abilities based on faction! Aether gain Ward 5, Chaos gain Barrage 4, and Wyld gain Venom 3. They add their delay cost to these values.",
+		"desc": "Mechas gain base Ward 3 and other abilities based on faction! Aether also gain Legion 3, Chaos gain Barrage 4, and Wyld gain Venom 3. They add their delay cost to all these values.",
 		"effect": [
 			{
+				"all": "1",
 				"delay": [
 					0
 				],
 				"effect_type": "add_skill",
 				"id": "absorb",
+				"x": 3,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 4,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
 				"x": 5,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 6,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 7,
+				"y": "16"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "legion",
+				"x": 3,
 				"y": "1,16"
 			},
 			{
@@ -965,8 +1015,8 @@ var BATTLEGROUNDS = {
 					1
 				],
 				"effect_type": "add_skill",
-				"id": "absorb",
-				"x": 6,
+				"id": "legion",
+				"x": 4,
 				"y": "1,16"
 			},
 			{
@@ -974,8 +1024,8 @@ var BATTLEGROUNDS = {
 					2
 				],
 				"effect_type": "add_skill",
-				"id": "absorb",
-				"x": 7,
+				"id": "legion",
+				"x": 5,
 				"y": "1,16"
 			},
 			{
@@ -983,8 +1033,8 @@ var BATTLEGROUNDS = {
 					3
 				],
 				"effect_type": "add_skill",
-				"id": "absorb",
-				"x": 8,
+				"id": "legion",
+				"x": 6,
 				"y": "1,16"
 			},
 			{
@@ -992,9 +1042,15 @@ var BATTLEGROUNDS = {
 					4
 				],
 				"effect_type": "add_skill",
-				"id": "absorb",
-				"x": 9,
+				"id": "legion",
+				"x": 7,
 				"y": "1,16"
+			},
+			{
+				"card": 4044,
+				"effect_type": "add_skill",
+				"id": "legion",
+				"x": 5
 			},
 			{
 				"delay": [
@@ -1040,6 +1096,12 @@ var BATTLEGROUNDS = {
 				"id": "barrage",
 				"x": 8,
 				"y": "2,16"
+			},
+			{
+				"card": 4044,
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"x": 6
 			},
 			{
 				"delay": [
@@ -1085,6 +1147,12 @@ var BATTLEGROUNDS = {
 				"id": "venom",
 				"x": 7,
 				"y": "3,16"
+			},
+			{
+				"card": 4044,
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 5
 			}
 		],
 		"id": "140",

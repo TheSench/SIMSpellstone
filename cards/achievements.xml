@@ -16138,6 +16138,32 @@
       <item id="2531" number="1" />
     </reward>
   </achievement>
+  <achievement>
+    <!-- Conflux Convergence -->
+    <id>4029</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Vanquisher of Conflux Convergence</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Conflux Convergence.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6583</mission_req>
+    <req>
+      <campaign>1278</campaign>
+      <!-- 1st node -->
+      <campaign>1279</campaign>
+      <!-- 2nd node -->
+      <campaign>1280</campaign>
+      <!-- Boss node -->
+      <campaign>1284</campaign>
+      <!-- 3rd node -->
+      <campaign>1285</campaign>
+      <!-- 4th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
   <!-- Non-Core Maps Meta END -->
 </root>
 

@@ -11735,7 +11735,7 @@
       <attack>7</attack>
       <skill id="armored" x="2" />
       <skill id="regenerate" x="4" />
-      <skill id="rally" x="1" all="1" />
+      <skill id="rally" x="2" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -11752,7 +11752,7 @@
     <rarity>4</rarity>
     <skill id="armored" x="3" />
     <skill id="regenerate" x="4" />
-    <skill id="rally" x="1" all="1" />
+    <skill id="rally" x="2" all="1" />
     <type>3</type>
     <sub_type>13</sub_type>
     <sub_type>16</sub_type>
@@ -11776,14 +11776,14 @@
       <level>5</level>
       <health>34</health>
       <skill id="armored" x="4" />
-      <skill id="regenerate" x="5" />
+      <skill id="regenerate" x="6" />
       <skill id="rally" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="5" />
       <skill id="regenerate" x="6" />
-      <skill id="rally" x="2" all="1" />
+      <skill id="rally" x="3" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -11795,48 +11795,48 @@
     <asset_bundle>138</asset_bundle>
     <hidden_until_time>1535648400</hidden_until_time>
     <attack>9</attack>
-    <health>35</health>
+    <health>36</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="4" />
+    <skill id="armored" x="5" />
     <skill id="regenerate" x="6" />
-    <skill id="rally" x="2" all="1" />
+    <skill id="rally" x="3" all="1" />
     <type>3</type>
     <sub_type>13</sub_type>
     <sub_type>16</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>36</health>
+      <health>37</health>
       <skill id="armored" x="5" />
       <skill id="regenerate" x="6" />
-      <skill id="rally" x="2" all="1" />
+      <skill id="rally" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>10</attack>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="6" />
       <skill id="regenerate" x="7" />
-      <skill id="rally" x="2" all="1" />
+      <skill id="rally" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>37</health>
+      <health>38</health>
       <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>38</health>
+      <health>39</health>
       <skill id="armored" x="6" />
-      <skill id="regenerate" x="7" />
-      <skill id="rally" x="2" all="1" />
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>12</attack>
-      <skill id="armored" x="6" />
-      <skill id="regenerate" x="8" />
-      <skill id="rally" x="3" all="1" />
+      <skill id="armored" x="7" />
+      <skill id="regenerate" x="9" />
+      <skill id="rally" x="5" all="1" />
     </upgrade>
   </unit>
 </root>

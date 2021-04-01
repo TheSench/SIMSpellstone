@@ -20217,11 +20217,11 @@
     <picture>Mecha_Wolf_A</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1508432400</hidden_until_time>
-    <attack>1</attack>
+    <attack>2</attack>
     <health>10</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="enrage" x="1" y="16" />
+    <skill id="enrage" x="2" y="16" />
     <skill id="leech" x="2" />
     <skill id="berserk" x="1" />
     <type>3</type>
@@ -20237,7 +20237,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="enrage" x="1" y="16" />
+      <skill id="enrage" x="2" y="16" />
       <skill id="leech" x="3" />
       <skill id="berserk" x="1" />
     </upgrade>
@@ -20245,7 +20245,7 @@
       <level>5</level>
       <skill id="enrage" x="2" y="16" />
       <skill id="leech" x="3" />
-      <skill id="berserk" x="1" />
+      <skill id="berserk" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -20256,35 +20256,38 @@
     <picture>Mecha_Wolf_A</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1508432400</hidden_until_time>
-    <attack>2</attack>
+    <attack>3</attack>
     <health>13</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="enrage" x="2" y="16" />
-    <skill id="leech" x="4" />
-    <skill id="berserk" x="1" />
+    <skill id="enrage" x="3" y="16" />
+    <skill id="leech" x="3" />
+    <skill id="berserk" x="2" />
     <type>3</type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <skill id="enrage" x="2" y="16" />
-      <skill id="leech" x="4" />
+      <skill id="enrage" x="4" y="16" />
+      <skill id="leech" x="3" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>15</health>
+      <skill id="enrage" x="5" y="16" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>15</health>
-      <attack>3</attack>
+      <attack>4</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enrage" x="3" y="16" />
-      <skill id="leech" x="4" />
+      <skill id="enrage" x="6" y="16" />
+      <skill id="leech" x="5" />
       <skill id="berserk" x="2" />
     </upgrade>
   </unit>
@@ -20296,36 +20299,39 @@
     <picture>Mecha_Wolf_B</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1508432400</hidden_until_time>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>17</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="enrage" x="3" y="16" />
-    <skill id="leech" x="5" />
-    <skill id="berserk" x="2" />
+    <skill id="enrage" x="7" y="16" />
+    <skill id="leech" x="6" />
+    <skill id="berserk" x="3" />
     <type>3</type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>19</health>
+      <skill id="enrage" x="8" y="16" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="enrage" x="5" y="16" />
-      <skill id="leech" x="5" />
-      <skill id="berserk" x="2" />
+      <skill id="enrage" x="9" y="16" />
+      <skill id="leech" x="8" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
-      <skill id="enrage" x="6" y="16" />
-      <skill id="leech" x="6" />
-      <skill id="berserk" x="3" />
+      <attack>7</attack>
+      <skill id="enrage" x="10" y="16" />
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -22867,8 +22873,8 @@
     <picture>Hedgehog_Mecha_A</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1525366800</hidden_until_time>
-    <attack>6</attack>
-    <health>26</health>
+    <attack>7</attack>
+    <health>27</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="regenerate" x="4" />
@@ -22879,12 +22885,12 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
-      <health>28</health>
+      <attack>8</attack>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -22896,7 +22902,7 @@
       <level>5</level>
       <health>29</health>
       <skill id="regenerate" x="5" />
-      <skill id="enrage" x="1" all="1" y="16" />
+      <skill id="enrage" x="2" all="1" y="16" />
       <skill id="poison" x="5" />
     </upgrade>
   </unit>
@@ -22908,39 +22914,40 @@
     <picture>Hedgehog_Mecha_A</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1525366800</hidden_until_time>
-    <attack>8</attack>
-    <health>29</health>
+    <attack>9</attack>
+    <health>30</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="regenerate" x="5" />
-    <skill id="enrage" x="2" all="1" y="16" />
+    <skill id="enrage" x="3" all="1" y="16" />
     <skill id="poison" x="5" />
     <type>3</type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>30</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>31</health>
-      <skill id="regenerate" x="5" />
-      <skill id="enrage" x="2" all="1" y="16" />
-      <skill id="poison" x="6" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
       <health>32</health>
-      <skill id="regenerate" x="6" />
+      <skill id="regenerate" x="5" />
       <skill id="enrage" x="3" all="1" y="16" />
       <skill id="poison" x="6" />
     </upgrade>
     <upgrade>
-      <level>5</level>
+      <level>4</level>
+      <health>33</health>
       <skill id="regenerate" x="6" />
       <skill id="enrage" x="4" all="1" y="16" />
       <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+      <skill id="regenerate" x="7" />
+      <skill id="enrage" x="4" all="1" y="16" />
+      <skill id="poison" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -22951,39 +22958,41 @@
     <picture>Hedgehog_Mecha_B</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1525366800</hidden_until_time>
-    <attack>9</attack>
+    <attack>11</attack>
     <health>36</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="regenerate" x="6" />
+    <skill id="regenerate" x="7" />
     <skill id="enrage" x="5" all="1" y="16" />
-    <skill id="poison" x="6" />
+    <skill id="poison" x="8" />
     <type>3</type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
       <health>37</health>
-      <skill id="regenerate" x="6" />
+      <skill id="regenerate" x="7" />
       <skill id="enrage" x="5" all="1" y="16" />
-      <skill id="poison" x="7" />
+      <skill id="poison" x="8" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>11</attack>
+      <health>38</health>
+      <attack>13</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>38</health>
+      <health>39</health>
       <skill id="regenerate" x="7" />
-      <skill id="enrage" x="5" all="1" y="16" />
-      <skill id="poison" x="7" />
+      <skill id="enrage" x="6" all="1" y="16" />
+      <skill id="poison" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>40</health>
       <skill id="regenerate" x="8" />
-      <skill id="enrage" x="6" all="1" y="16" />
-      <skill id="poison" x="9" />
+      <skill id="enrage" x="7" all="1" y="16" />
+      <skill id="poison" x="10" />
     </upgrade>
   </unit>
   <unit>
@@ -24277,7 +24286,7 @@
     <asset_bundle>127</asset_bundle>
     <hidden_until_time>1527181200</hidden_until_time>
     <attack>10</attack>
-    <health>33</health>
+    <health>34</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="5" />
@@ -24288,7 +24297,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>34</health>
+      <health>35</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -24298,8 +24307,8 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>35</health>
-      <skill id="corrosive" x="6" />
+      <health>36</health>
+      <skill id="corrosive" x="7" />
       <skill id="rally" x="3" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
@@ -24309,7 +24318,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>36</health>
+      <health>37</health>
     </upgrade>
   </unit>
   <unit>
@@ -24321,11 +24330,11 @@
     <asset_bundle>127</asset_bundle>
     <hidden_until_time>1527181200</hidden_until_time>
     <attack>11</attack>
-    <health>36</health>
+    <health>38</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="7" />
-    <skill id="rally" x="3" all="1" />
+    <skill id="rally" x="4" all="1" />
     <skill id="jam" c="2" />
     <type>3</type>
     <sub_type>16</sub_type>
@@ -24336,21 +24345,22 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>37</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>38</health>
-      <attack>13</attack>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
       <health>39</health>
     </upgrade>
     <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
       <level>6</level>
+      <health>42</health>
       <skill id="corrosive" x="8" />
-      <skill id="rally" x="4" all="1" />
+      <skill id="rally" x="5" all="1" />
       <skill id="jam" c="2" />
     </upgrade>
   </unit>
