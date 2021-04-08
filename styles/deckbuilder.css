@@ -479,10 +479,14 @@ fieldset {
     font-family: 'Verdana';
 }
 
+.highlight-container {
+    position: relative;
+}
+
 .highlighter {
     position: absolute;
-    padding: 1px;
-    margin-left: 1px;
+    left: 4px;
+    top: 3px;
     /*color: white;*/
     color: transparent;
     overflow: hidden;

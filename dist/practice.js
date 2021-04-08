@@ -96,8 +96,8 @@ var DATA_UPDATER = (function () {
                     var units = doc.getElementsByTagName("unit");
                     for (var i = 0; i < units.length; i++) {
                         var unit = units[i];
-                        var id = getValue(units[i], "id");
-                        var cardData = getUnitFromXML(units[i]);
+                        var id = getValue(unit, "id");
+                        var cardData = getUnitFromXML(unit);
                         var newInfo = false;
                         if (!CARDS[id]) {
                             newInfo = true;
@@ -312,71 +312,6 @@ var DATA_UPDATER = (function () {
         } else {
             return -1;
         }
-    }
-
-    function updateCampaignData() {
-        var promises = [];
-        promises.push(updateCampaigns());
-        promises.push(updateMissions("/assets/missions.xml"));
-        promises.push(updateMissions("/assets/missions_event.xml"));
-        return $.when.apply($, promises);
-    }
-
-    function updateCampaigns() {
-        jQuery.ajax({
-            url: baseUrl + "/assets/campaigns.xml",
-            success: function (doc) {
-                var campaigns = doc.getElementsByTagName("campaign");
-                for (var i = 0; i < campaigns.length; i++) {
-                    var campaign = campaigns[i];
-                    var id = getValue(campaign, "id");
-                    if (!CAMPAIGNS[id]) {
-                        CAMPAIGNS[id] = getCampaignFromXML(campaign);
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
-    }
-
-    function getCampaignFromXML(node) {
-        var campaign = {
-            id: getValue(node, "id"),
-            name: getValue(node, "name"),
-            missions: getCampaignMissionsFromXML(node)
-        };
-        return campaign;
-    }
-
-    function getCampaignMissionsFromXML(node) {
-        var nodes = node.getElementsByTagName("mission_id");
-        var missions = [];
-        for (var i = 0; i < nodes.length; i++) {
-            missions.push(nodes[i].innerHTML);
-        }
-        return missions;
-    }
-
-    function updateMissions(fileURL) {
-        jQuery.ajax({
-            url: baseUrl + fileURL,
-            success: function (doc) {
-                var missions = doc.getElementsByTagName("mission");
-                for (var i = 0; i < missions.length; i++) {
-                    var mission = missions[i];
-                    var id = getValue(mission, "id");
-                    if (!MISSIONS[id]) {
-                        MISSIONS[id] = {
-                            id: id,
-                            name: getValue(mission, "name")
-                        };
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
     }
 
     return {
@@ -7432,7 +7367,7 @@ var CARD_GUI = {};
         var fieldHTML = [];
         if (turn) {
             var htmlTurnCounter = document.createElement("h1");
-            htmlTurnCounter.innerHTML = "Turn: " + turn + " (Currently at " + SIMULATOR.calculatePoints(true) + " points)";
+            htmlTurnCounter.innerText = "Turn: " + turn + " (Currently at " + SIMULATOR.calculatePoints(true) + " points)";
             fieldHTML.push(htmlTurnCounter);
         }
 

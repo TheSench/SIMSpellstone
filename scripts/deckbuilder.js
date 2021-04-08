@@ -481,7 +481,7 @@ function doDrawCardList(cardList, resetPage) {
 		page = 0;
 		CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
 	}
-	document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
+	document.getElementById("pageNumber").innerText = "Page " + (page + 1) + "/" + pages;
 	cardSpace = document.getElementById('cardSpace');
 	var foundCards = cardSpace.querySelectorAll(".card");
 	if (foundCards.length) {
@@ -765,11 +765,17 @@ function updateHighlights() {
 
 	var start = highlighted * 5;
 	var end = start + 5;
-	var highlightedHash = deckHash.substring(0, start) + '<span>' + deckHash.substring(start, end) + '</span>' + deckHash.substring(end);
+	var highlightedText = document.createElement('span');
+	highlightedText.innerText = deckHash.substring(start, end);
+	var highlightedHash = [
+		deckHash.substring(0, start),
+		highlightedText,
+		deckHash.substring(end)
+	];
 
 	var hash_highlighter = document.getElementById('hash_highlighter');
-	hash_highlighter.innerHTML = highlightedHash;
-	$(hash_highlighter).width($(hash_highlighted).width())
+	hash_highlighter.replaceChildren.apply(hash_highlighter, highlightedHash);
+	hash_highlighter.style.width = getComputedStyle(hash_highlighted).width;
 }
 
 var updateHash = function () {
@@ -1344,7 +1350,7 @@ var filterSubfaction = function (button, faction, exclude) {
 
 var filterDualFaction = function (button, faction, exclude) {
 
-	var show;
+	var shouldShow;
 	if (button.classList.contains("selected") || button.classList.contains("excluded")) {
 		button.classList.remove("selected");
 		button.classList.remove("excluded");
@@ -1352,18 +1358,18 @@ var filterDualFaction = function (button, faction, exclude) {
 	} else if (exclude) {
 		button.classList.add("excluded");
 		button.classList.remove("selected");
-		show = false;
+		shouldShow = false;
 	} else {
 		button.classList.remove("excluded");
 		button.classList.add("selected");
-		show = true;
+		shouldShow = true;
 	}
 
 	dualFactionHidden = {};
-	if (typeof show !== "undefined") {
+	if (typeof shouldShow !== "undefined") {
 		for (var i = 0, len = units.length; i < len; i++) {
 			var unit = units[i];
-			if (isDualFaction(unit) !== show) {
+			if (isDualFaction(unit) !== shouldShow) {
 				dualFactionHidden[makeUnitKey(unit)] = true;
 			}
 		}
@@ -1705,7 +1711,7 @@ function setValue(selector, newValue) {
 var showCardOptions = function (event, htmlCard) {
 	event.preventDefault();
 
-	var show = false;
+	var shouldShow = false;
 	var index = $(htmlCard).index() - 1;
 	if (index < 0) {
 		var unit = deck.commander;
@@ -1721,7 +1727,7 @@ var showCardOptions = function (event, htmlCard) {
 	upgradeLevel.value = card.level;
 	if (card.maxLevel > 1) {
 		show("#upgradeDiv");
-		show = true;
+		shouldShow = true;
 	}
 
 	var fusionField = document.getElementById("fusion");
@@ -1737,7 +1743,7 @@ var showCardOptions = function (event, htmlCard) {
 		if (FUSIONS[baseID]) {
 			fusionField.value = fusion;
 			show("#fusionDiv");
-			show = true;
+			shouldShow = true;
 		}
 	}
 
@@ -1749,10 +1755,10 @@ var showCardOptions = function (event, htmlCard) {
 	}
 
 	if (showRunePicker(card)) {
-		show = true;
+		shouldShow = true;
 	}
 
-	if (show) {
+	if (shouldShow) {
 		disableTracking = true;
 		optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
 		optionsDialog.dialog("open");
@@ -1770,36 +1776,41 @@ function hideContext(event) {
 
 var showRunePicker = function (card) {
 	var select = document.getElementById("runeChoices");
-	select.innerHTML = '<option value=""></option>';
 
 	optionsDialog.hiddenOptions = [];
 
-
-	$("#runeChoicesDiv").hide();
+	var shouldShow = true;
 	if (card.rarity >= 3 && !card.isCommander()) {
+		var options = [document.createElement('option')];
 		for (var key in RUNES) {
 			var rune = RUNES[key];
 			if (canUseRune(card, rune.id)) {
 				var option = document.createElement('option');
 				option.appendChild(document.createTextNode(rune.desc));
 				option.value = rune.id;
-				select.appendChild(option);
+				options.push(option);
 			}
 		}
 
 		if (card.runes.length) {
-			document.getElementById("runeChoices").value = card.runes[0].id;
+			select.value = card.runes[0].id;
 		} else {
-			document.getElementById("runeChoices").value = '';
+			select.value = '';
 		}
-		if (select.childNodes.length > 0) {
-			$("#runeChoicesDiv").show();
-			return true;
+		if (options.length > 1) {
 		} else {
-			return false;
+			shouldShow = false;
 		}
 	} else {
-		return false;
+		shouldShow = false;
+	}
+
+	if (shouldShow) {
+		select.replaceChildren.apply(select, options);
+		$("#runeChoicesDiv").show();
+	} else {
+		select.replaceChildren();
+		$("#runeChoicesDiv").hide();
 	}
 }
 
@@ -1894,25 +1905,25 @@ var filterSet = function (button, sets, exclude) {
 		for (var i = 0, len = units.length; i < len; i++) {
 			var unit = units[i];
 
-			var show = (setFilters.length === 0);
+			var included = (setFilters.length === 0);
 			for (var j = 0; j < setFilters.length; j++) {
 				var set = setFilters[j];
 				if (isInRange(unit, "set", set, set)) {
-					show = true;
+					included = true;
 					break;
 				}
 			}
-			if (show) {
-				var hide = false;
+			if (included) {
+				var excluded = false;
 				for (var j = 0; j < setExclusions.length; j++) {
 					var set = setExclusions[j];
 					if (isInRange(unit, "set", set, set)) {
-						hide = true;
+						excluded = true;
 						break;
 					}
 				}
 			}
-			if (!show || hide) setHidden[makeUnitKey(unit)] = true;
+			if (!included || excluded) setHidden[makeUnitKey(unit)] = true;
 		}
 	}
 	applyFilters();
