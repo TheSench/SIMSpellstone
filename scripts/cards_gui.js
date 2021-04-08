@@ -3,17 +3,10 @@ var CARD_GUI = {};
 (function() {
     var assetsRoot = '';
 
-    /** @param {HTMLElement} element */
-    function removeAllChildren(element) {
-        while(element.firstChild) {
-            element.removeChild(element.firstChild);
-        }
-    }
-
     /** @param {string} id */
     function getAndClearElement(id) {
         var element = document.getElementById(id);
-        removeAllChildren(element);
+        element.replaceChildren();
         return element;
     }
 
@@ -22,9 +15,9 @@ var CARD_GUI = {};
      * @param {HTMLElement[]} children
      */
     function appendChildren(parent, children) {
-        children.forEach(function (child) {
-            parent.append(child);
-        });
+        var fragment = document.createDocumentFragment();
+        fragment.replaceChildren.apply(fragment, children);
+        parent.appendChild(fragment);
     }
 
     function draw_deck(deck, noblanks) {
@@ -596,7 +589,6 @@ var CARD_GUI = {};
         9999: "StoryElements"
     };
 
-    CARD_GUI.removeAllChildren = removeAllChildren;
     CARD_GUI.appendChildren = appendChildren;
     CARD_GUI.draw_deck = draw_deck;
     CARD_GUI.create_card_html = create_card_html;

@@ -1976,8 +1976,7 @@ var applyFilters = function (keepPage, skipDraw, skipRebuildList) {
 
 	if (!skipRebuildList) {
 		var dataList = document.getElementById('names');
-		CARD_GUI.removeAllChildren(dataList);
-		CARD_GUI.appendChildren(
+		dataList.replaceChildren.apply(
 			dataList,
 			names.map(function createOption(name) {
 				var option = document.createElement('option');
