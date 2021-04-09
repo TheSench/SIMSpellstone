@@ -3015,14 +3015,14 @@ var deckSpace;
 var initDeckBuilder = function () {
 	if (!_DEFINED("fromSim")) {
 		$("#header").load("templates/header.html", function () {
-			$("#header").show();
+			show("#header");
 			if (typeof showTutorial !== "undefined") {
 				$("#help").click(showTutorial);
 			}
 		});
 		$.holdReady(true);
 		$("#footer").load("templates/footer.html", function () {
-			$("#footer").show();
+			show("#footer");
 			$.holdReady(false);
 		});
 	}
@@ -4731,6 +4731,9 @@ function hideContext(event) {
 
 var showRunePicker = function (card) {
 	var select = document.getElementById("runeChoices");
+	var selectedRune = ((card.runes.length && canUseRune(card, card.runes[0].id))
+		? card.runes[0].id
+		: '');
 
 	optionsDialog.hiddenOptions = [];
 
@@ -4746,14 +4749,7 @@ var showRunePicker = function (card) {
 				options.push(option);
 			}
 		}
-
-		if (card.runes.length) {
-			select.value = card.runes[0].id;
-		} else {
-			select.value = '';
-		}
-		if (options.length > 1) {
-		} else {
+		if (options.length <= 1) {
 			shouldShow = false;
 		}
 	} else {
@@ -4762,11 +4758,12 @@ var showRunePicker = function (card) {
 
 	if (shouldShow) {
 		select.replaceChildren.apply(select, options);
-		$("#runeChoicesDiv").show();
+		show("#runeChoicesDiv");
 	} else {
 		select.replaceChildren();
-		$("#runeChoicesDiv").hide();
+		hide("#runeChoicesDiv");
 	}
+	select.value = selectedRune;
 }
 
 var toggleUnreleasedRunes = function (checkbox) {
