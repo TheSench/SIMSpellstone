@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title id="title_tag">DeckBuilder</title>
     <link rel="stylesheet" type="text/css" href="dist/main.min.css?533868e363be0168">
-    <link rel="stylesheet" type="text/css" href="dist/deckbuilder.min.css?8d3b62855e3108f1">
+    <link rel="stylesheet" type="text/css" href="dist/deckbuilder.min.css?a01d0b3a3f6d14d3">
     <link rel="stylesheet" type="text/css" href="dist/spritesheet.min.css?f4005c9ade414807">
     <link rel="stylesheet" href="Content/themes/base/smoothness.css?77adc541adae20cf">
     <link rel="stylesheet" href="lib/chartist/chartist.min.css?b9a91a1e35ddaa5c">
@@ -17,14 +17,14 @@
     <script src="lib/chartist/chartist-plugin-tooltip.min.js?24e510baa29a8430"></script>
     
     <script src="dist/data.min.js"></script>
-    <script src="dist/deckbuilder.min.js?514d0cf281abd54c"></script>
+    <script src="dist/deckbuilder.min.js?beb7a8c44156e836"></script>
 </head>
 <body onload="initDeckBuilder()" ng-controller="DeckBuilderCtrl">
     <header style="display:none" id="header"></header>
     <div style="margin:auto">
         <div id="deckBuilderContainer">
-            <div id="deck-container" class="accordion">
-                <h3 id="version_label">Deck:</h3>
+            <details id="deck-container" open>
+                <summary id="version_label">Deck:</summary>
                 <div id="deckContainer" class="collapsible">
                     <br />
                     <div id="deck" class="float-left"></div>
@@ -44,9 +44,9 @@
                     <input id="updateGameData" type="button" value="Update Data" onclick="updateGameData()" />
                     <input id="inventoryMode" type="button" value="Switch to Inventory Builder" onclick="toggleInventoryMode()" />
                 </div>
-            </div>
-            <div id="graph-accordion" class="accordion start-closed" style="display:none;">
-                <h3>Deck Stats:</h3>
+            </details>
+            <details id="graph-accordion">
+                <summary>Deck Stats:</summary>
                 <div id="deckGraphs">
                     <div class="chartContainer">
                         <!--<header><h4>Attack/Health</h4></header>-->
@@ -73,9 +73,9 @@
                         <div class="ct-chart" id="hpplChart"></div>
                     </div>
                 </div>
-            </div>
-            <div id="filter-container" class="accordion">
-                <h3>Filters:</h3>
+            </details>
+            <details id="filter-container" open>
+                <summary>Filters:</summary>
                 <div id="filters">
                     <fieldset>
                         <span>Card Type:</span>
@@ -177,15 +177,15 @@
                     <input type="button" id="clear-filters" value="Clear All" onclick="clearFilters()" />
                     <br />
                 </div>
-            </div>
-            <div id="collection-container" class="accordion">
-                <h3>Cards:</h3>
+            </details>
+            <details id="collection-container" open>
+                <summary>Cards:</summary>
                 <div>
                     <table>
                         <tr>
                             <td>
                                 Rows:
-                                <input type="number" name="rows" id="rows" min="1" step="1" max="9" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
+                                <input type="number" name="rows" id="rows" min="1" step="1" max="9" class="ui-widget-content ui-corner-all" style="width:25px;">
                             </td>
                             <td style="min-width:5px;"></td>
                             <td>
@@ -233,7 +233,7 @@
                     <hr />
                     <div id="cardSpace" class="collapsible float-left"></div>
                 </div>
-            </div>
+            </details>
         </div>
         <!-- Dialogs -->
         <div id="advancedFilters" class="dialog-form" style="display:none;">

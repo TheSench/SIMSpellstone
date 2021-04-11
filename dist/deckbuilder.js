@@ -3034,20 +3034,22 @@ var initDeckBuilder = function () {
 
 	stopPropagation("hash");
 
-	$("body").addClass("loading");
+	document.body.classList.add('loading');
 
 	addDeckEventHandlers(deckSpace);
 	addLibraryEventHandlers(cardSpace);
 
-	$(window).resize(onResize);
+	window.addEventListener('resize', onResize);
 
 	window.onwheel = changePage;
 	window.oncontextmenu = hideContext;
 
-	$("#rows").val(storageAPI.getField("deckBuilder", "rows", 3));
-	$("#rows").bind("change", function () {
-		storageAPI.setField("deckBuilder", "rows", $("#rows").val());
-	});
+	var rowsField = document.getElementById('rows');
+	rowsField.value = storageAPI.getField("deckBuilder", "rows", 3);
+	rowsField.onchange = function saveRowsPreference() {
+		storageAPI.setField("deckBuilder", "rows", rowsField.value);
+		applyFilters(true, false);
+	};
 
 	document.getElementById('nameFilter').onkeydown = function (event) {
 		if (event.key === 'Enter') {
@@ -3058,7 +3060,7 @@ var initDeckBuilder = function () {
 		}
 	};
 
-	var dhtml = $("#deck").sortable({
+	$("#deck").sortable({
 		items: '.card:not(.commander):not(.blank)',
 		tolerance: "intersect",
 		helper: function (event, ui) {
@@ -3087,23 +3089,22 @@ var initDeckBuilder = function () {
 
 	inventory = (_GET('inventory') || inventory);
 
-	$("[name=rarity]").click(function (event) {
-		onClickFilter(event, filterRarity, event.altKey);
-	});
-	$("[name=faction]").click(function (event) {
-		onClickFilter(event, filterFaction, event.altKey);
-	});
-	$("[name=subfaction]").click(function (event) {
-		onClickFilter(event, filterSubfaction, event.altKey);
-	});
-	$("[name=delay]").click(function (event) {
-		onClickFilter(event, filterDelay, event.altKey);
-	});
-	$("[name=set]").click(function (event) {
-		onClickFilter(event, filterSet, event.altKey);
-	});
-	$("#dualfaction").click(function (event) {
-		onClickFilter(event, filterDualFaction, event.altKey);
+	document.getElementById('filters').addEventListener('click', function modifyFilters(event) {
+		switch (event.target.name) {
+			case 'rarity':
+				return onClickFilter(event, filterRarity, event.altKey);
+			case 'faction':
+				return onClickFilter(event, filterFaction, event.altKey);
+			case 'subfaction':
+				return onClickFilter(event, filterSubfaction, event.altKey);
+			case 'delay':
+				return onClickFilter(event, filterDelay, event.altKey);
+			case 'set':
+				return onClickFilter(event, filterSet, event.altKey);
+		}
+		if (target.id === 'dualfaction') {
+			return onClickFilter(event, filterDualFaction, event.altKey);
+		}
 	});
 
 	if (_DEFINED("spoilers") || _DEFINED("latestCards")) {
@@ -3139,15 +3140,11 @@ var setupPopups = function () {
 	stopPropagation("advancedFilters");
 	stopPropagation("unitOptions");
 
-	$(".accordion").accordion({
-		collapsible: true,
-		heightStyle: "content",
-	});
-
-	$(".start-closed").accordion('option', 'active', false).show();
-
 	if (_DEFINED("spoilers")) {
-		$("#deck-container, #filter-container").accordion('option', 'active', false).show();
+		document.querySelectorAll("#deck-container, #filter-container")
+			.forEach(function close(details) {
+				details.open = false;
+			});
 	}
 
 	var inputs = document.getElementsByTagName("input");
@@ -3213,8 +3210,8 @@ var setupPopups = function () {
 		resizable: false,
 		buttons: {
 			Save: function () {
-				var name = $("#saveDeckName").val();
-				var hash = $("#hash").val();
+				var name = document.getElementById('saveDeckName').value;
+				var hash = document.getElementById('hash').value;
 				storageAPI.saveDeck(name, hash);
 				saveDeckDialog.dialog("close");
 			},
@@ -3232,11 +3229,11 @@ var setupPopups = function () {
 		resizable: false,
 		buttons: {
 			Delete: function () {
-				var name = $("#loadDeckName").val();
-				var newHash = storageAPI.deleteDeck(name);
+				var name = document.getElementById('loadDeckName').value;
+				storageAPI.deleteDeck(name);
 			},
 			Load: function () {
-				var name = $("#loadDeckName").val();
+				var name = document.getElementById('loadDeckName').value;
 				var newHash = storageAPI.loadDeck(name);
 				loadDeckDialog.onloaded(newHash);
 				loadDeckDialog.dialog("close");
@@ -3278,7 +3275,7 @@ var drawAllCards = function () {
 
 var drawDeck = function () {
 
-	var hash = _GET('hash') || $("#hash").val();
+	var hash = _GET('hash') || document.getElementById('hash').value;
 	if (hash) {
 		hash_changed(hash);
 	}
@@ -3589,7 +3586,7 @@ var hash_changed = function (hash) {
 }
 
 var setHash = function (hash) {
-	$("#hash").val(hash);
+	document.getElementById('hash').value = hash;
 	generateLink();
 }
 
@@ -5193,13 +5190,13 @@ function setDeckName(name) {
 }
 
 function saveDeck() {
-	var hash = $("#hash").val();
-	$("#saveDeckName").val("");
+	var hash = document.getElementById('hash').value;
+	document.getElementById('saveDeckName').value = "";
 	var savedDecks = storageAPI.getSavedDecks();
 	for (var name in savedDecks) {
 		var existing = savedDecks[name];
 		if (hash == existing) {
-			$("#saveDeckName").val(name);
+			document.getElementById('saveDeckName').value = name;
 			break;
 		}
 	}
@@ -5232,12 +5229,12 @@ function setInventory(hash) {
 function toggleInventoryMode() {
 	inventoryMode = !inventoryMode;
 	if (inventoryMode) {
-		$("#inventoryMode").val("Switch to Deck Builder");
+		document.getElementById('inventoryMode').value = 'Switch to Deck Builder';
 		$deck.find(".card.blank").remove();
 		$deck.sortable("disable");
 		doDrawDeck();
 	} else {
-		$("#inventoryMode").val("Switch to Inventory Builder");
+		document.getElementById('inventoryMode').value = 'Switch to Inventory Builder';
 		for (var i = $deck.find(".card").length; i < 16; i++) {
 			$deck.append("<div class='card blank'></div>");
 		}
@@ -5250,7 +5247,7 @@ function toggleInventoryMode() {
 function generateLink() {
 	var params = [];
 	var name = _GET('name');
-	var hash = $("#hash").val();
+	var hash = document.getElementById('hash').value;
 	if (name) {
 		params.push("name=" + name);
 	}

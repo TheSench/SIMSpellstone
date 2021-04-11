@@ -9,6 +9,27 @@
     padding: 0;
 }
 
+summary {
+    position: relative;
+    border: 1px solid #d3d3d3;
+    background: #e6e6e6 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+    font-weight: normal;
+    color: #555555;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em 1.2em;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+details > div {
+    border: 1px solid #aaaaaa;
+    border-radius: 0 4px 4px 0;
+    border-top: 0;
+    background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+    color: #222222;
+}
+
 .ui-accordion-header.ui-state-active {
     background: #e6e6e6 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGQCAYAAABvWArbAAAANUlEQVQ4je3LMQoAIBADwb38/6t5wFXaWAiCtUiaYZvF9hBACOFbuntVVe11B0CSjjeE8BwThQIJ8dhEl0YAAAAASUVORK5CYII=') /*../Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png*/ 50% 50% repeat-x;
 }
