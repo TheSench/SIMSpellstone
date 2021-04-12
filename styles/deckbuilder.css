@@ -2,7 +2,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
-    user-select: none; /* IE 10+ */
+    user-select: none;
+    /* IE 10+ */
 }
 
 .accordion div.ui-accordion-content {
@@ -17,12 +18,12 @@ summary {
     color: #555555;
     margin: 2px 0 0 0;
     padding: .5em .5em .5em 1.2em;
-    font-family: Verdana,Arial,sans-serif;
+    font-family: Verdana, Arial, sans-serif;
     font-size: 1.1em;
     font-weight: 700;
 }
 
-details > div {
+details>div {
     border: 1px solid #aaaaaa;
     border-radius: 0 4px 4px 0;
     border-top: 0;
@@ -31,7 +32,8 @@ details > div {
 }
 
 .ui-accordion-header.ui-state-active {
-    background: #e6e6e6 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGQCAYAAABvWArbAAAANUlEQVQ4je3LMQoAIBADwb38/6t5wFXaWAiCtUiaYZvF9hBACOFbuntVVe11B0CSjjeE8BwThQIJ8dhEl0YAAAAASUVORK5CYII=') /*../Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png*/ 50% 50% repeat-x;
+    background: #e6e6e6 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGQCAYAAABvWArbAAAANUlEQVQ4je3LMQoAIBADwb38/6t5wFXaWAiCtUiaYZvF9hBACOFbuntVVe11B0CSjjeE8BwThQIJ8dhEl0YAAAAASUVORK5CYII=')/*../Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png*/
+    50% 50% repeat-x;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -174,87 +176,87 @@ details > div {
     list-style: none;
 }
 
-    .ct-legend.ct-legend-inside {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+.ct-legend.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
-    .ct-legend li {
-        position: relative;
-        padding-left: 23px;
-        margin-bottom: 3px;
-        cursor: pointer;
-    }
+.ct-legend li {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
 
-        .ct-legend li:before {
-            width: 12px;
-            height: 12px;
-            position: absolute;
-            left: 0;
-            content: '';
-            border: 3px solid transparent;
-            border-radius: 2px;
-        }
+.ct-legend li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+}
 
-    .ct-legend .ct-series-Factionless:before {
-        border-color: #86797d;
-        background-color: #86797d;
-    }
+.ct-legend .ct-series-Factionless:before {
+    border-color: #86797d;
+    background-color: #86797d;
+}
 
-    .ct-legend .ct-series-Frog:before {
-        border-color: #59922b;
-        background-color: #59922b;
-    }
+.ct-legend .ct-series-Frog:before {
+    border-color: #59922b;
+    background-color: #59922b;
+}
 
-    .ct-legend .ct-series-Elemental:before {
-        border-color: #8e4718;
-        background-color: #8e4718;
-    }
+.ct-legend .ct-series-Elemental:before {
+    border-color: #8e4718;
+    background-color: #8e4718;
+}
 
-    .ct-legend .ct-series-Angel:before {
-        border-color: #c3bdab;
-        background-color: #c3bdab;
-    }
+.ct-legend .ct-series-Angel:before {
+    border-color: #c3bdab;
+    background-color: #c3bdab;
+}
 
-    .ct-legend .ct-series-Undead:before {
-        border-color: #451717;
-        background-color: #451717;
-    }
+.ct-legend .ct-series-Undead:before {
+    border-color: #451717;
+    background-color: #451717;
+}
 
-    .ct-legend .ct-series-Dragon:before {
-        border-color: #bd1d00;
-        background-color: #bd1d00;
-    }
+.ct-legend .ct-series-Dragon:before {
+    border-color: #bd1d00;
+    background-color: #bd1d00;
+}
 
-    .ct-legend .ct-series-Avian:before {
-        border-color: #6b0392;
-        background-color: #6b0392;
-    }
+.ct-legend .ct-series-Avian:before {
+    border-color: #6b0392;
+    background-color: #6b0392;
+}
 
-    .ct-legend .ct-series-Goblin:before {
-        border-color: #b2c326;
-        background-color: #b2c326;
-    }
+.ct-legend .ct-series-Goblin:before {
+    border-color: #b2c326;
+    background-color: #b2c326;
+}
 
-    .ct-legend .ct-series-Seafolk:before {
-        border-color: #61c2e2;
-        background-color: #61c2e2;
-    }
+.ct-legend .ct-series-Seafolk:before {
+    border-color: #61c2e2;
+    background-color: #61c2e2;
+}
 
-    .ct-legend .ct-series-Insect:before {
-        border-color: #d17905;
-        background-color: #d17905;
-    }
+.ct-legend .ct-series-Insect:before {
+    border-color: #d17905;
+    background-color: #d17905;
+}
 
-    .ct-legend .ct-series-Ant:before {
-        border-color: #d17905;
-        background-color: #d17905;
-    }
+.ct-legend .ct-series-Ant:before {
+    border-color: #d17905;
+    background-color: #d17905;
+}
 
-    .ct-legend li.inactive:before {
-        background: transparent;
-    }
+.ct-legend li.inactive:before {
+    background: transparent;
+}
 
 svg {
     overflow: visible;
@@ -283,22 +285,31 @@ svg {
 }
 
 /* Factionless */
+
 #factionChart .ct-series-a .ct-bar {
     stroke: grey;
 }
+
 /* Aether */
+
 #factionChart .ct-series-b .ct-bar {
     stroke: steelblue;
 }
+
 /* Chaos */
+
 #factionChart .ct-series-c .ct-bar {
     stroke: maroon;
 }
+
 /* Wyld */
+
 #factionChart .ct-series-d .ct-bar {
     stroke: darkolivegreen;
 }
+
 /* Void */
+
 #factionChart .ct-series-e .ct-bar {
     stroke: purple;
 }
@@ -312,9 +323,7 @@ svg {
     display: none;
 }
 
-input[type="button"].attack-filter,
-input[type="button"].health-filter,
-input[type="button"].delay-filter {
+input[type="button"].attack-filter, input[type="button"].health-filter, input[type="button"].delay-filter {
     box-sizing: content-box;
     min-height: 24px;
     min-width: 24px;
@@ -326,7 +335,6 @@ input[type="button"].delay-filter {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 
 input[type="button"].selected {
     background: grey;
@@ -352,7 +360,7 @@ input[type="button"].excluded {
     display: none;
 }
 
-input[type="image"]:hover + .tooltip {
+input[type="image"]:hover+.tooltip {
     display: block;
     position: absolute;
     background-color: white;
@@ -399,45 +407,44 @@ fieldset {
     display: none;
 }
 
-    .dialog-form label {
-        display: block;
-        width: 100%;
-    }
+.dialog-form label {
+    display: block;
+    width: 100%;
+}
 
-    .dialog-form input[type=number] {
-        width: 40%;
-    }
+.dialog-form input[type=number] {
+    width: 40%;
+}
 
-    .dialog-form label {
-        float: left;
-        display: block;
-        text-align: left;
-    }
+.dialog-form label {
+    float: left;
+    display: block;
+    text-align: left;
+}
 
-    .dialog-form select {
-        float: left;
-        display: block;
-        text-align: left;
-    }
+.dialog-form select {
+    float: left;
+    display: block;
+    text-align: left;
+}
 
-    .dialog-form span {
-        float: left;
-        margin: 2px;
-    }
+.dialog-form span {
+    float: left;
+    margin: 2px;
+}
 
-    .dialog-form div.full,
-    .dialog-form select {
-        width: 100%;
-    }
+.dialog-form div.full, .dialog-form select {
+    width: 100%;
+}
 
-    .dialog-form div.split {
-        width: 50%;
-        float: left;
-    }
+.dialog-form div.split {
+    width: 50%;
+    float: left;
+}
 
-    .dialog-form #upgrade {
-        width: initial,;
-    }
+.dialog-form #upgrade {
+    width: initial, ;
+}
 
 #filters span {
     float: left;
@@ -451,21 +458,24 @@ fieldset {
 */
 
 /* The container <div> - needed to position the dropdown content */
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
 .dropdown:hover .dropdown-content {
     display: block;
     z-index: 999;
@@ -480,9 +490,7 @@ fieldset {
     -ms-filter: "FlipH";
 }
 
-#advancedFilters,
-#unitOptions,
-#inventoryOptions {
+#advancedFilters, #unitOptions, #inventoryOptions {
     padding: 0;
 }
 
@@ -513,10 +521,10 @@ fieldset {
     overflow: hidden;
 }
 
-    .highlighter span {
-        background: gold;
-        color: gold;
-    }
+.highlighter span {
+    background: gold;
+    color: gold;
+}
 
 .highlighted {
     position: relative;
@@ -531,4 +539,73 @@ fieldset {
     max-width: 300px;
     max-height: 150px;
     overflow-y: auto;
+}
+
+.fade-in-100 {
+    animation: fadeIn linear 100ms;
+    -webkit-animation: fadeIn linear 100ms;
+    -moz-animation: fadeIn linear 100ms;
+    -o-animation: fadeIn linear 100ms;
+    -ms-animation: fadeIn linear 100ms;
+}
+
+.fade-in-600 {
+    animation: fadeIn linear 600ms;
+    -webkit-animation: fadeIn linear 600ms;
+    -moz-animation: fadeIn linear 600ms;
+    -o-animation: fadeIn linear 600ms;
+    -ms-animation: fadeIn linear 600ms;
+}
+
+.fade-in-1000 {
+    animation: fadeIn linear 1000ms;
+    -webkit-animation: fadeIn linear 1000ms;
+    -moz-animation: fadeIn linear 1000ms;
+    -o-animation: fadeIn linear 1000ms;
+    -ms-animation: fadeIn linear 1000ms;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

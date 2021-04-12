@@ -3067,14 +3067,14 @@ var initDeckBuilder = function () {
 			return ui.clone();
 		},
 		start: function (event, ui) {
-			var lastPos = ui.placeholder.index() - 1;
+			var lastPos = getIndex(ui.placeholder[0]) - 1;
 			ui.item.data('last_pos', lastPos);
 			$(ui.item).hide();
 		},
 		change: function (event, ui) {
-			var origPos = ui.item.index();
+			var origPos = getIndex(ui.item[0]);
 			var lastPos = ui.item.data('last_pos') - 1;
-			var newPos = ui.placeholder.index();
+			var newPos = getIndex(ui.placeholder[0]);
 			if (origPos < newPos) newPos--;
 			highlighted = newPos;
 			ui.item.data('last_pos', newPos);
@@ -3090,7 +3090,8 @@ var initDeckBuilder = function () {
 	inventory = (_GET('inventory') || inventory);
 
 	document.getElementById('filters').addEventListener('click', function modifyFilters(event) {
-		switch (event.target.name) {
+		var target = event.target;
+		switch (target.name) {
 			case 'rarity':
 				return onClickFilter(event, filterRarity, event.altKey);
 			case 'faction':
@@ -3108,7 +3109,7 @@ var initDeckBuilder = function () {
 	});
 
 	if (_DEFINED("spoilers") || _DEFINED("latestCards")) {
-		$("#loadingSplash").html("Checking for New Cards...");
+		document.getElementById('loadingSplash').innerHTML = "Checking for New Cards...";
 		updateGameData();
 	} else {
 		loadCardCache();
@@ -3120,7 +3121,7 @@ var initDeckBuilder = function () {
 		toggleInventoryMode();
 	}
 
-	$("#graph-accordion").click(updateGraphs);
+	document.getElementById('graph-accordion').addEventListener('click', updateGraphs);
 }
 
 function updateGameData() {
@@ -3129,9 +3130,9 @@ function updateGameData() {
 
 var loadCards = function () {
 	allCards = CARDS;
-	$("#loadingSplash").html("Loading...");
+	document.getElementById('loadingSplash').innerHTML = "Loading...";
 	drawAllCards();
-	$("body").removeClass("loading");
+	document.body.classList.remove('loading');
 	checkTutorial();
 }
 
@@ -3194,7 +3195,7 @@ var setupPopups = function () {
 		modifyCard(optionsDialog);
 	});
 
-	var imageButtons = $('input[type="image"]:not(.skill-filter)');
+	var imageButtons = document.querySelectorAll('input[type="image"]:not(.skill-filter)');
 	for (var i = 0; i < imageButtons.length; i++) {
 		var imageButton = imageButtons[i];
 		var toolTip = '<div class="tooltip">' + imageButton.getAttribute("title") + '</div>';
@@ -3336,20 +3337,25 @@ var showDetails = function (event, htmlCard) {
 	detailsDialog.onloaded = setInventory;
 }
 
+/**
+ * 
+ * @param {MouseEvent} event 
+ * @param {HTMLElement} htmlCard 
+ * @returns 
+ */
 function duplicate(event, htmlCard) {
 	if (event.ctrlKey) {
-		var $htmlCard = $(htmlCard);
 		if (!inventoryMode) {
-			var emptySpaces = $htmlCard.parent().find(".blank");
-			if (!emptySpaces.length) {
+			var firstEmptySpace = htmlCard.parentElement.querySelector(".blank");
+			if (!emptySpaces) {
 				return;
 			}
-			emptySpaces.first().remove();
+			firstEmptySpace.remove();
 		}
-		var index = $htmlCard.index();
+		var index = getIndex(htmlCard);
 		var unit = deck.deck[index - 1];
-		var clone = $htmlCard.clone();
-		clone.insertBefore($htmlCard.parent().children()[index]);
+		var clone = htmlCard.cloneNode(true);
+		clone.insertBefore(htmlCard);
 		deck.deck.splice(index, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
 		updateHash();
 	}
@@ -3488,7 +3494,6 @@ function changePage(event) {
 		} else if (event.deltaY > 0) {
 			pageDown();
 		}
-		event.preventDefault();
 	}
 }
 
@@ -3614,56 +3619,103 @@ var addToDeck = function (event, htmlCard) {
 	addUnitToDeck(unit, htmlCard);
 }
 
+/**
+ * @param {*} unit
+ * @param {HTMLElement} htmlCard
+ */
 var addUnitToDeck = function (unit, htmlCard) {
-	var $htmlCard = $(htmlCard).clone().find(".multiplier").remove().end();
+	/** @type {HTMLElement} */
+	var newCard = htmlCard.cloneNode(true);
+	var multiplier = newCard.querySelector('.multiplier');
+	if (multiplier) multiplier.remove();
 
 	if (!inventoryMode) {
 		unit = Object.assign({}, unit);
 	}
 
-	var $deck = $("#deck");
+	var deckElement = document.getElementById('deck');
 	if (is_commander(unit.id)) {
 		if (areEqual(deck.commander, unit)) return;
 		deck.commander = unit;
-		replaceCard($deck.find(".card").first(), $htmlCard);
+		var firstCard = deckElement.querySelector('.card');
+		replaceCard(firstCard, newCard);
 	} else {
 		if (!inventoryMode && deck.deck.length == 15) return;
 		deck.deck.push(unit);
-		var emptySpaces = $deck.find(".blank");
-		if (emptySpaces.length) {
-			replaceCard(emptySpaces.first(), $htmlCard);
+		var firstEmptySpace = deckElement.querySelector('.blank');
+		if (firstEmptySpace) {
+			replaceCard(firstEmptySpace, newCard);
 		} else {
-			$deck.append($htmlCard)
+			deckElement.appendChild(newCard)
 		}
 	}
 
-	$htmlCard = $(htmlCard);
 	if (fromInventory) {
 		removeFromInventory(unit);
-		var $mult = $htmlCard.find("div.multiplier");
-		if ($mult.length > 0) {
-			var count = Number($mult.attr("data-count")) - 1;
+		var mult = htmlCard.querySelector('div.multiplier');
+		if (mult) {
+			var count = Number(mult.attributes['data-count']) - 1;
 			if (count > 1) {
-				$mult.attr("data-count", count);
-				$mult.html("x" + count);
+				mult.attributes['data-count'] = count;
+				mult.innerHTML = 'x' + count;
 			} else {
-				$htmlCard.find(".multiplier").remove();
+				mult.remove();
 			}
 		} else {
-			$htmlCard.remove();
+			htmlCard.remove();
 		}
 	} else {
-		$htmlCard.stop().hide().fadeIn(100);
+		fadeIn(htmlCard, '100');
 	}
 	updateHash();
 };
 
+var speeds = {
+	fast: 100,
+	medium: 600,
+	slow: 1000
+}
+/**
+ * 
+ * @param {HTMLElement} oldCard 
+ * @param {HTMLElement} newCard 
+ */
 function replaceCard(oldCard, newCard) {
-	var speed = (oldCard.hasClass("blank") ? 1000 : 600);
-	$(oldCard).replaceWith(newCard);
-	newCard.children().stop().hide().fadeIn(speed).promise();
+	var speed = (oldCard.classList.contains("blank") ? speeds.slow : speeds.medium);
+	oldCard.replaceWith(newCard);
+	fadeIn(newCard, speed);
 }
 
+/**
+ * 
+ * @param {HTMLElement} htmlElement 
+ * @returns 
+ */
+function getIndex(htmlElement) {
+	var childNodes = htmlElement.parentNode.childNodes;
+	for (var i = 0, len = childNodes.length; i < len; i++) {
+		if (childNodes[i] === htmlElement) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+/**
+ * 
+ * @param {HTMLElement} element 
+ */
+function fadeIn(element, speed) {
+	var animationClass = 'fade-in-' + speed;
+
+	function removeAnimation() {
+		element.removeEventListener('animationend', removeAnimation);
+		element.classList.remove(animationClass);
+	}
+
+	element.addEventListener('animationend', removeAnimation);
+	element.classList.add(animationClass);
+}
 
 function removeFromInventory(unit) {
 	for (var i = 0; i < unitsShown.length; i++) {
@@ -3676,21 +3728,26 @@ function removeFromInventory(unit) {
 	return unit;
 }
 
+/**
+ * 
+ * @param {HTMLElement} htmlCard 
+ * @returns 
+ */
 var removeFromDeck = function (htmlCard) {
+	console.log(htmlCard.attributes['data-id']);
 	var unit;
-	var $htmlCard = $(htmlCard);
-	var index = $htmlCard.index();
+	var index = getIndex(htmlCard);
 	if (index == 0) {
 		unit = deck.commander;
 		if (areEqual(unit, elariaCaptain)) return;
 		deck.commander = elariaCaptain;
 		var card = getCardByID(elariaCaptain);
-		var captain = $(CARD_GUI.create_card_html(card));
-		replaceCard($htmlCard, captain);
+		var captain = CARD_GUI.create_card_html(card);
+		replaceCard(htmlCard, captain);
 	} else {
 		unit = deck.deck.splice(index - 1, 1)[0];
 
-		$htmlCard.remove();
+		htmlCard.remove();
 		if (deck.deck.length < 15) {
 			$deck.append("<div class='card blank'></div>");
 		}
@@ -3706,7 +3763,7 @@ var removeFromDeck = function (htmlCard) {
 };
 
 var highlight = function (event, htmlCard) {
-	highlighted = $(htmlCard).index();
+	highlighted = getIndex(htmlCard);
 	updateHighlights();
 }
 
@@ -3727,7 +3784,9 @@ function updateHighlights() {
 
 	var hash_highlighter = document.getElementById('hash_highlighter');
 	hash_highlighter.replaceChildren.apply(hash_highlighter, highlightedHash);
-	hash_highlighter.style.width = getComputedStyle(hash_highlighted).width;
+	var computedStyles = getComputedStyle(hash_highlighted);
+	hash_highlighter.style.width = computedStyles.width;
+	hash_highlighter.style['font-size'] = computedStyles['font-size'];
 }
 
 var updateHash = function () {
@@ -3748,8 +3807,9 @@ var updateSimulator = function (deckHash) {
 }
 
 var updateGraphs = function () {
-	var graphsContainer = $("#deckGraphs");
-	if (!graphsContainer.is(":visible")) {
+	/** @type {HTMLDetailsElement} */
+	var graphsContainer = document.getElementById('graph-accordion');
+	if (!graphsContainer.open) {
 		return null;
 	}
 	var delays = [0, 0, 0, 0, 0];
@@ -4101,34 +4161,34 @@ var filterAdvanced = function (skill) {
 		}
 	}
 
-	if ($("div#amount")[0].style.display != "none") {
-		var min = parseInt($("#amount-min")[0].value);
-		var max = parseInt($("#amount-max")[0].value);
+	if (document.querySelector('div#amount').style.display != "none") {
+		var min = parseInt(document.querySelector("#amount-min").value);
+		var max = parseInt(document.querySelector("#amount-max").value);
 		if (isNaN(min)) min = 0;
 		if (isNaN(max)) max = 99;
 		info.x = { min: min, max: max };
 	}
-	if ($("div#timer")[0].style.display != "none") {
-		var min = parseInt($("#timer-min")[0].value);
-		var max = parseInt($("#timer-max")[0].value);
+	if (document.querySelector("div#timer").style.display != "none") {
+		var min = parseInt(document.querySelector("#timer-min").value);
+		var max = parseInt(document.querySelector("#timer-max").value);
 		if (isNaN(min)) min = 0;
 		if (isNaN(max)) max = 99;
 		info.c = { min: min, max: max };
 	}
-	if ($("div#faction")[0].style.display != "none") {
-		var faction = $("select#faction")[0].value;
+	if (document.querySelector("div#faction").style.display != "none") {
+		var faction = document.querySelector("select#faction").value;
 		info.y = (faction == "Generic") ? -1 : factions.IDs[faction];
 	}
-	if ($("div#skill")[0].style.display != "none") {
-		if ($("select#skill")[0].value.length > 0) {
-			info.s = $("select#skill")[0].value;
+	if (document.querySelector("div#skill").style.display != "none") {
+		if (document.querySelector("select#skill").value.length > 0) {
+			info.s = document.querySelector("select#skill").value;
 		}
 	}
-	if ($("label[for=all]")[0].style.display != "none") {
-		info.all = $("select#all")[0].value;
+	if (document.querySelector("label[for=all]").style.display != "none") {
+		info.all = document.querySelector("select#all").value;
 	}
 
-	var classList = $("input[name=skill][data-filter=" + skill + "]")[0].classList;
+	var classList = document.querySelector("input[name=skill][data-filter=" + skill + "]").classList;
 
 	classList.add("selected-advanced");
 	skillFiltersAdv.push(info);
@@ -4282,8 +4342,8 @@ var filterSubfaction = function (button, faction, exclude) {
 	}
 
 	subfactionHidden = {};
-	var subfactions = $("[name=subfaction].selected").toArray().map(function (a) { return a.attributes["data-filter"].value; });
-	var exclusions = $("[name=subfaction].excluded").toArray().map(function (a) { return a.attributes["data-filter"].value; });
+	var subfactions = Array.from(document.querySelectorAll("[name=subfaction].selected")).map(function (a) { return a.attributes["data-filter"].value; });
+	var exclusions = Array.from(document.querySelectorAll("[name=subfaction].excluded")).map(function (a) { return a.attributes["data-filter"].value; });
 	for (var i = 0, len = units.length; i < len; i++) {
 		var unit = units[i];
 		for (var s = 0; s < subfactions.length; s++) {
@@ -4652,6 +4712,10 @@ function hide(selector) {
 	document.querySelectorAll(selector).forEach(function hide(element) { element.style.display = "none"; });
 }
 
+function hideElement(element) {
+	element.style.display = "none";
+}
+
 function show(selector) {
 	document.querySelectorAll(selector).forEach(function show(element) { element.style.display = ""; });
 }
@@ -4664,7 +4728,7 @@ var showCardOptions = function (event, htmlCard) {
 	event.preventDefault();
 
 	var shouldShow = false;
-	var index = $(htmlCard).index() - 1;
+	var index = getIndex(htmlCard) - 1;
 	if (index < 0) {
 		var unit = deck.commander;
 	} else {
@@ -5014,10 +5078,10 @@ var clearFilters = function () {
 
 	nameHidden = {};
 
-	$(".selected").removeClass("selected");
-	$(".excluded").removeClass("excluded");
-	$(".selected-advanced").removeClass("selected-advanced");
-	$("#nameFilter").val("");
+	document.querySelectorAll('.selected').forEach(function(el) { el.classList.remove('selected'); });
+	document.querySelectorAll('.excluded').forEach(function(el) { el.classList.remove('excluded'); });
+	document.querySelectorAll('.selected-advanced').forEach(function(el) { el.classList.remove('selected-advanced'); });
+	document.getElementById('nameFilter').value = '';
 
 	applyFilters();
 }
