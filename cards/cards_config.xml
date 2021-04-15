@@ -168,6 +168,17 @@
     <balance_points>4</balance_points>
   </skillType>
   <skillType>
+    <id>counterpoison</id>
+    <order>75</order>
+    <icon>corrupt</icon>
+    <name>Poisonhide</name>
+    <desc>When damaged by an attack, Poison the attacker</desc>
+    <status_flag>poison</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <vfx_location>center</vfx_location>
+    <balance_points>4</balance_points>
+  </skillType>
+  <skillType>
     <id>corrosive</id>
     <order>80</order>
     <icon>corrosive</icon>
@@ -551,17 +562,6 @@
     <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves poison</desc_faction>
     <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves poison</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>counterpoison</id>
-    <order>50</order>
-    <icon>fury_vengeance</icon>
-    <name>Poisonhide</name>
-    <desc>When damaged by an attack, Poison the attacker</desc>
-    <status_flag>poison</status_flag>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <vfx_location>center</vfx_location>
     <hidden>1</hidden>
   </skillType>
   <skillType>

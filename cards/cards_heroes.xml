@@ -11955,5 +11955,55 @@
       <health>95</health>
     </upgrade>
   </unit>
+  <unit>
+    <id>465</id>
+    <card_type>1</card_type>
+    <name>Elaria Captain</name>
+    <portrait>ranger</portrait>
+    <desc>The Elaria Captain is the first line of defense for the researchers of the Elaria encampment. Part of his responsibilities is taking new arrivals and training them. He trained you.</desc>
+    <attack>0</attack>
+    <health>80</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="rally" x="3" />
+    <skill id="heal" x="5" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>90</health>
+      <skill id="strike" x="5" />
+      <skill id="rally" x="7" />
+      <skill id="heal" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>93</health>
+      <skill id="strike" x="6" />
+      <skill id="rally" x="8" />
+      <skill id="heal" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>95</health>
+      <skill id="strike" x="7" />
+      <skill id="rally" x="9" />
+      <skill id="heal" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>97</health>
+      <skill id="strike" x="8" />
+      <skill id="rally" x="10" />
+      <skill id="heal" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="strike" x="10" />
+      <skill id="rally" x="12" />
+      <skill id="heal" x="14" />
+    </upgrade>
+  </unit>
 </root>
 

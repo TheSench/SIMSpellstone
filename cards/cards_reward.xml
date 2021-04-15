@@ -24421,5 +24421,128 @@
       <cost>1</cost>
     </upgrade>
   </unit>
+  <unit>
+    <id>2210</id>
+    <card_type>2</card_type>
+    <name>Wyvermin</name>
+    <picture>Dragon_Insect_Wasp_Wyvern_A</picture>
+    <asset_bundle>220</asset_bundle>
+    <hidden_until_time>1619715600</hidden_until_time>
+    <attack>8</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="3" y="13" />
+    <skill id="pierce" x="12" />
+    <skill id="leech" x="12" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="3" y="13" />
+      <skill id="pierce" x="12" />
+      <skill id="leech" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="3" y="13" />
+      <skill id="pierce" x="13" />
+      <skill id="leech" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12210</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wyverarch</name>
+    <picture>Dragon_Insect_Wasp_Wyvern_A</picture>
+    <asset_bundle>220</asset_bundle>
+    <hidden_until_time>1619715600</hidden_until_time>
+    <attack>9</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="3" y="13" />
+    <skill id="pierce" x="13" />
+    <skill id="leech" x="13" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="fervor" x="4" y="13" />
+      <skill id="pierce" x="13" />
+      <skill id="leech" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="4" y="13" />
+      <skill id="pierce" x="13" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="4" y="13" />
+      <skill id="pierce" x="14" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22210</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wyverasp</name>
+    <picture>Dragon_Insect_Wasp_Wyvern_B</picture>
+    <asset_bundle>220</asset_bundle>
+    <hidden_until_time>1619715600</hidden_until_time>
+    <attack>10</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="4" y="13" />
+    <skill id="pierce" x="14" />
+    <skill id="leech" x="14" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="5" y="13" />
+      <skill id="pierce" x="14" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="5" y="13" />
+      <skill id="pierce" x="14" />
+      <skill id="leech" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="5" y="13" />
+      <skill id="pierce" x="15" />
+      <skill id="leech" x="15" />
+    </upgrade>
+  </unit>
 </root>
 

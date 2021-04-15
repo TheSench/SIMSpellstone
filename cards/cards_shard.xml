@@ -3750,6 +3750,7 @@
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>0</type>
     <sub_type>16</sub_type>
     <attack>14</attack>
     <health>38</health>
@@ -6457,6 +6458,74 @@
       <skill id="corrosive" x="12" />
       <skill id="rally" x="6" y="2" all="1" />
       <skill id="leech" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6610</id>
+    <card_type>2</card_type>
+    <name>Issa, the Wireslayer</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Killer_Scythe_A</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1618506000</hidden_until_time>
+    <!-- Thursday, 15 April 2021 17:00:00 -->
+    <item_name>Issa Stone</item_name>
+    <item_desc>Collect Issa Stones to upgrade the Legendary Issa, the Wireslayer card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <attack>5</attack>
+    <health>19</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="3" y="2" />
+    <skill id="berserk" x="3" />
+    <skill id="flurry" c="3" />
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="3" y="2" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="fervor" x="3" y="2" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="fervor" x="4" y="2" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="2" />
     </upgrade>
   </unit>
   <!-- === CHAOS END === -->

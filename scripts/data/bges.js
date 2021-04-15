@@ -1135,10 +1135,179 @@ var BATTLEGROUNDS = {
 				"id": "venom",
 				"x": 7,
 				"y": "3,16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "legion",
+				"x": 5,
+				"y": "0,16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"x": 6,
+				"y": "0,16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 5,
+				"y": "0,16"
 			}
 		],
 		"id": "140",
 		"name": "Adaptive Weaponry"
+	},
+	"141": {
+		"desc": "Dragons gain abilities based on faction! Aether gain Frostbreath 2, Chaos Scorch 4 and Wyld Poisonbolt 2. They add their delay cost to all these values.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"x": 2,
+				"y": "1,9"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"x": 3,
+				"y": "1,9"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"x": 4,
+				"y": "1,9"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"x": 5,
+				"y": "1,9"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"x": 6,
+				"y": "1,9"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"x": 4,
+				"y": "2,9"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"x": 5,
+				"y": "2,9"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"x": 6,
+				"y": "2,9"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"x": 7,
+				"y": "2,9"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"x": 8,
+				"y": "2,9"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "poisonstrike",
+				"x": 2,
+				"y": "3,9"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "poisonstrike",
+				"x": 3,
+				"y": "3,9"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "poisonstrike",
+				"x": 4,
+				"y": "3,9"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "poisonstrike",
+				"x": 5,
+				"y": "3,9"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "poisonstrike",
+				"x": 6,
+				"y": "3,9"
+			}
+		],
+		"id": "141",
+		"name": "Tarragon Influence"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

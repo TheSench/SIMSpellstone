@@ -9597,7 +9597,7 @@
     <show_ranking>1</show_ranking>
     <x>680</x>
     <!-- left right -->
-    <y>400</y>
+    <y>430</y>
     <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>
@@ -9723,7 +9723,7 @@
     <battleground_id>2117</battleground_id>
     <!-- Enemy BGE -->
     <location_id>34</location_id>
-    <x>700</x>
+    <x>600</x>
     <!-- left right -->
     <y>140</y>
     <!-- up down -->
@@ -9763,9 +9763,9 @@
     <battleground_id>2118</battleground_id>
     <!-- Enemy BGE -->
     <location_id>34</location_id>
-    <x>930</x>
+    <x>650</x>
     <!-- left right -->
-    <y>350</y>
+    <y>300</y>
     <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>
@@ -9794,6 +9794,8 @@
     </rewards>
     <find_item id="3128" drop_per_energy=".4" />
   </campaign>
+  <!-- End new map events -->
+  <!-- Repeated map campaign events start -->
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

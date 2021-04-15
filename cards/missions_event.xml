@@ -48927,8 +48927,8 @@
       <card id="7007" />
       <card id="2081" />
       <card id="2081" />
-      <card id="2074" />
-      <card id="2074" />
+      <card id="1630" />
+      <card id="1630" />
       <card id="2148" />
       <card id="5113" />
       <card id="5114" />
@@ -51190,9 +51190,9 @@
   </mission>
   <mission>
     <id>6609</id>
-    <name>Battle's End</name>
+    <name>True Peace</name>
     <energy>18</energy>
-    <desc>Cedric wipes the dust from his eyes. He takes a look across the charred lands, the aftermath of the battle. The elements have fallen asleep.</desc>
+    <desc>The adventure has come to an end. With The Void defeated, the three factions had gone out of control. Now, with Aether, Chaos, and Wyld bound to Viracocha, the rest of the continent can remain free.</desc>
     <commander id="459" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
@@ -51211,20 +51211,13 @@
       <card id="2015" mastery_level="5" name="Pumpking" />
       <card id="6214" mastery_level="6" name="Trampling Demon" />
     </deck>
-    <speech>
-      <line>
-        <commander>froghero</commander>
-        <enemy>1</enemy>
-        <text>Is it over?</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>6610</id>
-    <name>True Peace</name>
+    <name>Adventure's End</name>
     <energy>18</energy>
-    <desc>The adventure has come to an end. With The Void defeated, the three factions had gone out of control. Now, with Aether, Chaos, and Wyld bound to Viracocha, the rest of the continent can remain free.</desc>
-    <commander id="457" />
+    <desc>Across the charred lands, you see familiar faces approaching you. They all look tired, covered in dust and wounds, but you see joy in their faces. Your friends have come for you!</desc>
+    <commander id="465" />
     <deck>
       <card id="8034" name="Swiftness Feeder" />
       <card id="2129" name="Pharos Guardian" />
@@ -51246,7 +51239,212 @@
       <line>
         <commander>templeguardian</commander>
         <enemy>0</enemy>
-        <text>Finally... we'll have real peace on our continent.</text>
+        <text>Finally... we'll have peace on our continent. Now I can really become a Keeper.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>You've been it for a long time, Oda.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>A state of being is not necessarily a state of mind, my friend.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Now you're speaking nonsense... Right there! That's the proof that you're a Keeper!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Interesting.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Anyway... You did a great job, adventurer. Viracocha was our trump card against the titans, but I think you're the real hero in this story.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>We... I... I couldn't have done it without you!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Don't look at me like that, I can be nice. Sometimes.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>I see Viracocha was victorious! Knowledge, as always, was the key to our victory!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>What are you gonna do now, Yuriel?</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>I will spend a season surrounded by books, and rubble!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>The Mystic Library was destroyed by Razi, but I'll make sure to recover the books and rebuild it!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Hey, adventurer. Even if I couldn't wield it, I'm glad Dyrnwyn was helpful to our cause.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I should keep it and return to Queen Leyla's side. There's much to do in Skyhaven and maybe, some day, I will finally atone for my sins.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I think you're on the right path, Samael!</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>A fine victory, indeed.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>I think I'm getting too old for this, though. Maybe this time I can actually retire and live a peaceful life.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You're fine, Cedric. Retire tomorrow! Today you celebrate with us!</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Well, I guess my 'ol bones can handle a little bit of dancing!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Whoa... look at all these destruction... Oh, man! Did I miss the final battle?</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>I was hoping to burn some titan butt!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Instead, why don't you stay and party with us, Decim?</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Yeah! I'll start a fire! There's no good party without a fire, right?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Is that...?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Hi... I came as quickly as I could.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>I felt Atlas' influence break and suddenly my mind was free! I'm sorry for what happened in Elaria...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>It's fine, Ursurio. It was that rock-brain titan's fault!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>And, for the record, you're not the only one who was mind-controlled. Many of us had been brainwashed in the past... Don't worry, everyone knows you're a good bear!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>I guess you’re right. Thanks, Aria.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Did anyone happen to bring honey? I feel like celebrating!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>I see. Things... have changed. That's good.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>I can get used to the titans not messing with our kingdom. But only time will tell what will happen next.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Well said. And time is always on my side.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Oh! It looks like I'm late to the action. How sad!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>What?!</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Don't get me wrong, I like world peace. But I must admit that I was curious about the world ending.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>One can only hope, righ? HAHAHA!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>I, too, will join the celebration! A toast for Viracocha, who was our salvation!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>And for the adventurer! Hurray! Your valiant deeds saved...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>... the day?</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Yes. That’s what I was going to say. How bad are these times? That anyone can mess with my rhymes!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Ughhh!</text>
       </line>
       <line>
         <commander>elyse</commander>
@@ -51256,7 +51454,107 @@
       <line>
         <commander>elyse</commander>
         <enemy>0</enemy>
-        <text>Now let's celebrate!</text>
+        <text>You want to know what I am going to do from now on?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I... also don't know. I haven't thought much about my future lately. You know... with the world ending and all that.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I think... or maybe I feel... that I like adventuring. Like you and Vel! Arcantica is big and there are many places I'd love to visit!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Whatever I do, I'm sure our paths will cross again!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>Is this a party or what? Stop talking about the future, feelings and stuff! Live in the moment for once!</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>The pyromaniac is right! Let’s shake the ground with our celebration!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>Here comes the fiiireee!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Stop, Decim! That's dangerous! Do something, adventurer!</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Don't worry, I'm also here. He won't get out of control. By the way... Does anyone want refreshments?</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>HAHAHAHA! Try to smother my flames, water-lady! If you can!</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>I guess you will have to stop him, Rayne. Please don't hurt him...</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>... Too much.</text>
+      </line>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>0</enemy>
+        <text>Fight! Fight! Fight!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>Let's get the party started! Wooohhh!</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Hey, adventurer! Were you hoping for a last fight?</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Well, if that's the case. How about a sparring session with me instead?</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Show me what you've learned since you came to Arcantica!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Oh! I want to witness this! Go, adventurer!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Mind if I join? This looks way more interesting than watching Decim get drowned.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Don't worry! We will cheer for you! Always!</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Are you ready, adventurer?</text>
       </line>
     </speech>
   </mission>
@@ -52208,5 +52506,293 @@
     </speech>
   </mission>
   <!-- End April Fools Missions -->
+  <mission>
+    <id>6630</id>
+    <name>Silent Tremors</name>
+    <energy>18</energy>
+    <desc>An uncommonly silent tremor shakes your awareness as you were strolling by Tarragon peak...</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="7012" name="Life Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6096" mastery_level="2" name="Desert Slitherer" />
+      <card id="2045" mastery_level="3" name="Chillbeard Giant" />
+      <card id="2090" mastery_level="4" name="Terra Dweller" />
+      <card id="7129" mastery_level="5" name="Zealous Snapjaw" />
+      <card id="5188" mastery_level="6" name="Movra, Dragon Ruler" />
+      <card id="8119" mastery_level="7" name="Brittle Ragescale" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6631</id>
+    <name>Escalated Quickly</name>
+    <energy>18</energy>
+    <desc>Your healthy exercise in this lovely mountain is interrupted by a sudden heat stroke, hope you have enough water.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="7012" name="Life Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2197" name="Invoker of Darkness" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="6131" mastery_level="2" name="Winged Abducter" />
+      <card id="2066" mastery_level="3" name="Basalt Dragon" />
+      <card id="2067" mastery_level="4" name="Symbol of Elaria" />
+      <card id="2001" mastery_level="5" name="Dunetooth Demon" />
+      <card id="5129" mastery_level="6" name="Shackled Gatekeeper" />
+      <card id="7008" mastery_level="7" name="Rock Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6632</id>
+    <name>Increasing Preassure</name>
+    <energy>18</energy>
+    <desc>When the lava is inside the earth, it is actually called magma.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6633</id>
+    <name>Sinister Intentions</name>
+    <energy>18</energy>
+    <desc>This magma cannot have any kind of good intention, you figure you're in for trouble here. What a drag.</desc>
+    <commander id="284" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6634</id>
+    <name>Conflagration</name>
+    <energy>18</energy>
+    <desc>The magma is released and now the LAVA is setting everything on fire!</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1319" name="Wraith" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="7084" name="Witchwood" />
+      <card id="7095" name="Talonsaur" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="6061" mastery_level="3" name="Decagon" />
+      <card id="6096" mastery_level="4" name="Desert Slitherer" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="5213" mastery_level="6" name="Mountking Warder" />
+      <card id="6183" mastery_level="7" name="Knowledge Hoarder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6635</id>
+    <name>Inertial Containment</name>
+    <energy>18</energy>
+    <desc>Using the ancient techniques of sufficiently advanced technology, you will put this lava back in it's place.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="6081" name="Apparition" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="7129" mastery_level="3" name="Zealous Snapjaw" />
+      <card id="2001" mastery_level="4" name="Dunetooth Demon" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="6003" mastery_level="6" name="Black Knight" />
+      <card id="7060" mastery_level="7" name="Shenami" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6636</id>
+    <name>Paralel Disaster</name>
+    <energy>18</energy>
+    <desc>While your fire mountain stroll was disturbed by hot side effects, a bigger one has definitely brewed at the base of the peak. The lava has not yet returned to it's proper place and a hidden hand is behind it.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="7012" name="Life Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6096" mastery_level="2" name="Desert Slitherer" />
+      <card id="2045" mastery_level="3" name="Chillbeard Giant" />
+      <card id="2090" mastery_level="4" name="Terra Dweller" />
+      <card id="7129" mastery_level="5" name="Zealous Snapjaw" />
+      <card id="5188" mastery_level="6" name="Movra, Dragon Ruler" />
+      <card id="8119" mastery_level="7" name="Brittle Ragescale" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6637</id>
+    <name>The Floor is Lava</name>
+    <energy>18</energy>
+    <desc>Time to put all those play hours to use.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="7012" name="Life Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2197" name="Invoker of Darkness" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="6131" mastery_level="2" name="Winged Abducter" />
+      <card id="2066" mastery_level="3" name="Basalt Dragon" />
+      <card id="2067" mastery_level="4" name="Symbol of Elaria" />
+      <card id="2001" mastery_level="5" name="Dunetooth Demon" />
+      <card id="5129" mastery_level="6" name="Shackled Gatekeeper" />
+      <card id="7008" mastery_level="7" name="Rock Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6638</id>
+    <name>Fire and Brimstone</name>
+    <energy>18</energy>
+    <desc>The lava is clearly cheating, fire rains from the sky in an attempt to ruin your moves.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6639</id>
+    <name>Draconic Plan</name>
+    <energy>18</energy>
+    <desc>Not fire after all, but Dragons, why did it had to be Dragons?</desc>
+    <commander id="284" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6640</id>
+    <name>Might over Dragons</name>
+    <energy>18</energy>
+    <desc>Now that the enemy is showing his leathery scaleface, some smashing is in order.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1319" name="Wraith" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="7084" name="Witchwood" />
+      <card id="7095" name="Talonsaur" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="6061" mastery_level="3" name="Decagon" />
+      <card id="6096" mastery_level="4" name="Desert Slitherer" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="5213" mastery_level="6" name="Mountking Warder" />
+      <card id="6183" mastery_level="7" name="Knowledge Hoarder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6641</id>
+    <name>Tarragon Escape</name>
+    <energy>18</energy>
+    <desc>After a ridiculous amount of unintended combat strain added to your mountain walk, you manage to escape the worst of it. Maybe next time you'll find a quieter place.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="6081" name="Apparition" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="7129" mastery_level="3" name="Zealous Snapjaw" />
+      <card id="2001" mastery_level="4" name="Dunetooth Demon" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="6003" mastery_level="6" name="Black Knight" />
+      <card id="7060" mastery_level="7" name="Shenami" />
+    </deck>
+  </mission>
 </root>
 
