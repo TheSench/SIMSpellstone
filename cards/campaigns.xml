@@ -6544,7 +6544,7 @@
     <!-- Thu, Nov 29 2018 17:00:00 -->
     <battleground_id>2053</battleground_id>
     <location_id>19</location_id>
-    <x>420</x>
+    <x>370</x>
     <y>273</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
@@ -6579,7 +6579,7 @@
     <location_id>19</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
-    <x>570</x>
+    <x>500</x>
     <y>180</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
@@ -6638,8 +6638,8 @@
     <!-- Thu, Dec 27 2018 17:00:00 -->
     <battleground_id>2056</battleground_id>
     <location_id>19</location_id>
-    <x>620</x>
-    <y>460</y>
+    <x>570</x>
+    <y>380</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6120</mission_id>
@@ -9794,7 +9794,92 @@
     </rewards>
     <find_item id="3128" drop_per_energy=".4" />
   </campaign>
-  <!-- End new map events -->
+  <!-- Campaign Event 29 - Tarragon Peak -->
+  <campaign>
+    <id>1286</id>
+    <name>A Trip to Tarragon Peak</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1619715600</locked_start_time>
+    <!-- Thursday, 29 April 2021 17:00:00 -->
+    <location_id>19</location_id>
+    <x>820</x>
+    <!-- left right -->
+    <y>300</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6630</mission_id>
+      <mission_id>6631</mission_id>
+      <mission_id>6632</mission_id>
+      <mission_id>6633</mission_id>
+      <mission_id>6634</mission_id>
+      <mission_id>6635</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2603" number="25" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2210" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2123" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2603" number="75" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="7" id="2211" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3083" drop_per_energy=".2" />
+    <ignore_energy_reduction_until>1620234000</ignore_energy_reduction_until>
+  </campaign>
+  <campaign>
+    <id>1287</id>
+    <name>Relaxation by Incineration</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1286" level="1" />
+    <locked_start_time>1620925200</locked_start_time>
+    <!-- Thursday, 13 May 2021 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>19</location_id>
+    <x>700</x>
+    <!-- left right -->
+    <y>500</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6636</mission_id>
+      <mission_id>6637</mission_id>
+      <mission_id>6638</mission_id>
+      <mission_id>6639</mission_id>
+      <mission_id>6640</mission_id>
+      <mission_id>6641</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2603" number="25" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2164" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2124" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2603" number="75" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="7" id="2211" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3083" drop_per_energy=".4" />
+    <ignore_energy_reduction_until>1620234000</ignore_energy_reduction_until>
+  </campaign>
   <!-- Repeated map campaign events start -->
   <!-- End campaign events -->
   <!-- ============================ -->

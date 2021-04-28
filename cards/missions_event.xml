@@ -52506,11 +52506,12 @@
     </speech>
   </mission>
   <!-- End April Fools Missions -->
+  <!-- Event 76 - Dragons -->
   <mission>
     <id>6630</id>
-    <name>Silent Tremors</name>
+    <name>Hot Spring Episode</name>
     <energy>18</energy>
-    <desc>An uncommonly silent tremor shakes your awareness as you were strolling by Tarragon peak...</desc>
+    <desc>After so much world-saving, you find yourself in need of some rest. You decided the best place to take a break would be Tarragon Peak. Yes, the region is infamous for its tremors, and lava... and dragons. But Decim pointed out: you can relax in its hot springs! If the dragons allow it, of course.</desc>
     <commander id="293" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -52532,9 +52533,9 @@
   </mission>
   <mission>
     <id>6631</id>
-    <name>Escalated Quickly</name>
+    <name>Stay Hydrated</name>
     <energy>18</energy>
-    <desc>Your healthy exercise in this lovely mountain is interrupted by a sudden heat stroke, hope you have enough water.</desc>
+    <desc>Before going to the hot springs, you decide a healthy stroll through the hellscape that is Tarragon Peak will be an excellent exercise. But you're interrupted by a sudden heat stroke. That's what the locals call "dragon breath". Anyway, hope you brought enough water!</desc>
     <commander id="310" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -52556,9 +52557,9 @@
   </mission>
   <mission>
     <id>6632</id>
-    <name>Increasing Preassure</name>
+    <name>Lava Fact</name>
     <energy>18</energy>
-    <desc>When the lava is inside the earth, it is actually called magma.</desc>
+    <desc>"When lava is inside the earth, it is actually called magma." You remember the weirdest facts when your life is in danger of being charred by lava and devoured by dragons.</desc>
     <commander id="340" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -52580,9 +52581,9 @@
   </mission>
   <mission>
     <id>6633</id>
-    <name>Sinister Intentions</name>
+    <name>Sinister Puns</name>
     <energy>18</energy>
-    <desc>This magma cannot have any kind of good intention, you figure you're in for trouble here. What a drag.</desc>
+    <desc>Danger! Danger everywhere! Heat rises from the ground and you can see the magma about to be released. And in the sky, dragons look pissed off for some reason. What a drag! Or should you say... What a drag-on! Get it?</desc>
     <commander id="284" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -52604,9 +52605,9 @@
   </mission>
   <mission>
     <id>6634</id>
-    <name>Conflagration</name>
+    <name>Something Learned</name>
     <energy>18</energy>
-    <desc>The magma is released and now the LAVA is setting everything on fire!</desc>
+    <desc>Released from its rocky prison, the magma is setting everything on fire! Just kidding! It's called lava now. The LAVA is setting everything on fire!</desc>
     <commander id="286" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -52628,9 +52629,9 @@
   </mission>
   <mission>
     <id>6635</id>
-    <name>Inertial Containment</name>
+    <name>In hindsight. . .</name>
     <energy>18</energy>
-    <desc>Using the ancient techniques of sufficiently advanced technology, you will put this lava back in it's place.</desc>
+    <desc>You know what? Maybe you should have listened to everyone but Decim when deciding your vacation destination. Well. . .  At least after dealing with all these third degree burns, you will be able to relax in the hot springs.</desc>
     <commander id="293" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -52652,9 +52653,9 @@
   </mission>
   <mission>
     <id>6636</id>
-    <name>Paralel Disaster</name>
+    <name>Dragons Can't Chill</name>
     <energy>18</energy>
-    <desc>While your fire mountain stroll was disturbed by hot side effects, a bigger one has definitely brewed at the base of the peak. The lava has not yet returned to it's proper place and a hidden hand is behind it.</desc>
+    <desc>The hot springs were incredible. You know what? It was totally worth risking your life -and risking permanently being disfigured by dragonfire burns- just to relax in those waters. Now, back to the fighting.</desc>
     <commander id="293" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -52676,9 +52677,9 @@
   </mission>
   <mission>
     <id>6637</id>
-    <name>The Floor is Lava</name>
+    <name>The Ball is Lava</name>
     <energy>18</energy>
-    <desc>Time to put all those play hours to use.</desc>
+    <desc>After bathing in hot springs people usually play games. So you find yourself playing ping pong against dragons. They play by the local rules. It's the same game, but the ball is on fire. Also, it involves dragons.</desc>
     <commander id="310" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -52700,9 +52701,9 @@
   </mission>
   <mission>
     <id>6638</id>
-    <name>Fire and Brimstone</name>
+    <name>Smartass</name>
     <energy>18</energy>
-    <desc>The lava is clearly cheating, fire rains from the sky in an attempt to ruin your moves.</desc>
+    <desc>Oh no! The ping pong table was utterly incinerated! Just when you were about to win! The dragons are angry and blame you. Calmly, you point out that's how every ping pong game involving dragon breath will probably end. Anyway, you won. But the dragons are sore losers.</desc>
     <commander id="340" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -52724,9 +52725,9 @@
   </mission>
   <mission>
     <id>6639</id>
-    <name>Draconic Plan</name>
+    <name>Hot-el Tarragonia</name>
     <energy>18</energy>
-    <desc>Not fire after all, but Dragons, why did it had to be Dragons?</desc>
+    <desc>You spend the night in a "hot-el" tended by an old dragon couple. It's just a dark cave filled with hot lava and smelly sulfur, but the old dragon couple made it look very cosy. You even find melted chocolate mints over your rocky pillows!</desc>
     <commander id="284" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -52748,9 +52749,9 @@
   </mission>
   <mission>
     <id>6640</id>
-    <name>Might over Dragons</name>
+    <name>Draconic Breakfast</name>
     <energy>18</energy>
-    <desc>Now that the enemy is showing his leathery scaleface, some smashing is in order.</desc>
+    <desc>Next morning you are greeted with an amazing breakfast. Over a stone table you find a 3-foot pile of bacon. Just bacon. And burning hot coffee that could hurt even Vulcanos' tongue. The vegetarian option is a pile of charcoal that used to be croissants.</desc>
     <commander id="286" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -52772,9 +52773,9 @@
   </mission>
   <mission>
     <id>6641</id>
-    <name>Tarragon Escape</name>
+    <name>Trip Advising</name>
     <energy>18</energy>
-    <desc>After a ridiculous amount of unintended combat strain added to your mountain walk, you manage to escape the worst of it. Maybe next time you'll find a quieter place.</desc>
+    <desc>The rest of your vacation is nice and quiet.  After two days of you beating up every Tarragon citizen you encounter, they get accustomed to your presence and leave you alone. You are free to visit tour sites, collect souvenirs, and learn more about the local culture.</desc>
     <commander id="293" />
     <deck>
       <card id="8107" name="Firework Explosive" />

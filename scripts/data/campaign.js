@@ -5208,6 +5208,39 @@ var CAMPAIGNS = {
 		],
 		"name": "Spellstone's End"
 	},
+	"1286": {
+		"id": "1286",
+		"items": {
+			"3083": 0.2
+		},
+		"location_id": "19",
+		"missions": [
+			"6630",
+			"6631",
+			"6632",
+			"6633",
+			"6634",
+			"6635"
+		],
+		"name": "A Trip to Tarragon Peak"
+	},
+	"1287": {
+		"battleground_id": "2053",
+		"id": "1287",
+		"items": {
+			"3083": 0.4
+		},
+		"location_id": "19",
+		"missions": [
+			"6636",
+			"6637",
+			"6638",
+			"6639",
+			"6640",
+			"6641"
+		],
+		"name": "Relaxation by Incineration"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -113105,7 +113138,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6630",
-		"name": "Silent Tremors"
+		"name": "Hot Spring Episode"
 	},
 	"6631": {
 		"commander": {
@@ -113165,7 +113198,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6631",
-		"name": "Escalated Quickly"
+		"name": "Stay Hydrated"
 	},
 	"6632": {
 		"commander": {
@@ -113225,7 +113258,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6632",
-		"name": "Increasing Preassure"
+		"name": "Lava Fact"
 	},
 	"6633": {
 		"commander": {
@@ -113285,7 +113318,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6633",
-		"name": "Sinister Intentions"
+		"name": "Sinister Puns"
 	},
 	"6634": {
 		"commander": {
@@ -113345,7 +113378,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6634",
-		"name": "Conflagration"
+		"name": "Something Learned"
 	},
 	"6635": {
 		"commander": {
@@ -113405,7 +113438,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6635",
-		"name": "Inertial Containment"
+		"name": "In hindsight. . ."
 	},
 	"6636": {
 		"commander": {
@@ -113465,7 +113498,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6636",
-		"name": "Paralel Disaster"
+		"name": "Dragons Can't Chill"
 	},
 	"6637": {
 		"commander": {
@@ -113525,7 +113558,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6637",
-		"name": "The Floor is Lava"
+		"name": "The Ball is Lava"
 	},
 	"6638": {
 		"commander": {
@@ -113585,7 +113618,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6638",
-		"name": "Fire and Brimstone"
+		"name": "Smartass"
 	},
 	"6639": {
 		"commander": {
@@ -113645,7 +113678,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6639",
-		"name": "Draconic Plan"
+		"name": "Hot-el Tarragonia"
 	},
 	"6640": {
 		"commander": {
@@ -113705,7 +113738,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6640",
-		"name": "Might over Dragons"
+		"name": "Draconic Breakfast"
 	},
 	"6641": {
 		"commander": {
@@ -113765,6 +113798,6 @@ var MISSIONS = {
 			}
 		],
 		"id": "6641",
-		"name": "Tarragon Escape"
+		"name": "Trip Advising"
 	}
 };
