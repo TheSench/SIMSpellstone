@@ -2970,7 +2970,7 @@
     <picture>Steel_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
     <attack>6</attack>
-    <health>16</health>
+    <health>18</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="armored" x="1" />
@@ -2982,7 +2982,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -2999,9 +2999,10 @@
     <upgrade>
       <level>5</level>
       <attack>7</attack>
+      <health>20</health>
       <skill id="armored" x="2" />
       <skill id="counter" x="2" />
-      <skill id="rally" y="9" x="3" />
+      <skill id="rally" y="9" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -3015,9 +3016,9 @@
     <health>22</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="armored" x="2" />
+    <skill id="armored" x="3" />
     <skill id="counter" x="2" />
-    <skill id="rally" y="9" x="3" />
+    <skill id="rally" y="9" x="4" />
     <type>1</type>
     <sub_type>9</sub_type>
     <sub_type>16</sub_type>
@@ -3028,15 +3029,15 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="2" />
+      <skill id="armored" x="3" />
       <skill id="counter" x="3" />
-      <skill id="rally" y="9" x="3" />
+      <skill id="rally" y="9" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="3" />
-      <skill id="counter" x="3" />
-      <skill id="rally" y="9" x="4" />
+      <skill id="armored" x="4" />
+      <skill id="counter" x="4" />
+      <skill id="rally" y="9" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -3054,9 +3055,9 @@
     <health>24</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="armored" x="3" />
-    <skill id="counter" x="3" />
-    <skill id="rally" y="9" x="4" />
+    <skill id="armored" x="4" />
+    <skill id="counter" x="5" />
+    <skill id="rally" y="9" x="6" />
     <type>1</type>
     <sub_type>9</sub_type>
     <sub_type>16</sub_type>
@@ -3067,9 +3068,9 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="3" />
-      <skill id="counter" x="4" />
-      <skill id="rally" y="9" x="4" />
+      <skill id="armored" x="5" />
+      <skill id="counter" x="6" />
+      <skill id="rally" y="9" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -3078,9 +3079,10 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="4" />
-      <skill id="counter" x="6" />
-      <skill id="rally" y="9" x="6" />
+      <health>27</health>
+      <skill id="armored" x="6" />
+      <skill id="counter" x="7" />
+      <skill id="rally" y="9" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -37298,6 +37300,7 @@
     <skill id="legion" x="6" />
     <skill id="strike" x="2" all="1" />
     <type>1</type>
+    <sub_type>9</sub_type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
@@ -37341,6 +37344,7 @@
     <skill id="legion" x="6" />
     <skill id="strike" x="3" all="1" />
     <type>1</type>
+    <sub_type>9</sub_type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
@@ -37386,6 +37390,7 @@
     <skill id="legion" x="7" />
     <skill id="strike" x="4" all="1" />
     <type>1</type>
+    <sub_type>9</sub_type>
     <sub_type>16</sub_type>
     <set>3000</set>
     <upgrade>
@@ -37413,6 +37418,136 @@
       <skill id="regenerate" x="10" />
       <skill id="legion" x="8" />
       <skill id="strike" x="5" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5291</id>
+    <card_type>2</card_type>
+    <name>Cunning Spellhoarder</name>
+    <picture>Dragon_Spell_Hoarder_A</picture>
+    <asset_bundle>220</asset_bundle>
+    <hidden_until_time>1621875600</hidden_until_time>
+    <attack>11</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="backlash" x="3" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="backlash" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15291</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Devious Spellhoarder</name>
+    <picture>Dragon_Spell_Hoarder_A</picture>
+    <asset_bundle>220</asset_bundle>
+    <hidden_until_time>1621875600</hidden_until_time>
+    <attack>13</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="backlash" x="4" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="3" />
+      <skill id="backlash" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="3" />
+      <skill id="backlash" x="4" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="backlash" x="5" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25291</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ingenious Spellhoarder</name>
+    <picture>Dragon_Spell_Hoarder_B</picture>
+    <asset_bundle>220</asset_bundle>
+    <hidden_until_time>1621875600</hidden_until_time>
+    <attack>14</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="backlash" x="5" />
+    <skill id="enfeeble" x="3" all="1" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="4" />
+      <skill id="backlash" x="5" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="4" />
+      <skill id="backlash" x="6" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="4" />
+      <skill id="backlash" x="6" />
+      <skill id="enfeeble" x="4" all="1" />
     </upgrade>
   </unit>
   <!-- END AETHER PREMIUM SET -->

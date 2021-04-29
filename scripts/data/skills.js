@@ -74,7 +74,7 @@ var SKILL_DATA = {
 		"type": "onDamaged"
 	},
 	"counterpoison": {
-		"desc": "When damaged by an attack, Poison the attacker",
+		"desc": "When damaged by an attack, Poison the attacker.",
 		"icon": "counterburn",
 		"name": "Poisonhide",
 		"type": "onDamaged"

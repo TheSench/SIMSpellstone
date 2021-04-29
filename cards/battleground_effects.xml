@@ -924,25 +924,15 @@
   </battleground>
   <battleground>
     <id>141</id>
-    <name>Tarragon Influence</name>
-    <desc>Dragons gain abilities based on faction! Aether gain Frostbreath 2, Chaos Scorch 4 and Wyld Poisonbolt 2. They add their delay cost to all these values.</desc>
+    <name>Dawn of Dragons</name>
+    <desc>Dragons gain skills based on their Delay (D)! 0D gain Scorch 4, 1D gain Scorch 5, 2D gain Scorch 6, 3D gain Regenerate 8, and 4D gain Regenerate 9.</desc>
     <icon>filter_dragon_64.png</icon>
     <effect>
-      <add_skill id="frost" x="2" yy="1,9" delay="0" />
-      <add_skill id="frost" x="3" yy="1,9" delay="1" />
-      <add_skill id="frost" x="4" yy="1,9" delay="2" />
-      <add_skill id="frost" x="5" yy="1,9" delay="3" />
-      <add_skill id="frost" x="6" yy="1,9" delay="4" />
-      <add_skill id="burn" x="4" yy="2,9" delay="0" />
-      <add_skill id="burn" x="5" yy="2,9" delay="1" />
-      <add_skill id="burn" x="6" yy="2,9" delay="2" />
-      <add_skill id="burn" x="7" yy="2,9" delay="3" />
-      <add_skill id="burn" x="8" yy="2,9" delay="4" />
-      <add_skill id="poisonstrike" x="2" yy="3,9" delay="0" />
-      <add_skill id="poisonstrike" x="3" yy="3,9" delay="1" />
-      <add_skill id="poisonstrike" x="4" yy="3,9" delay="2" />
-      <add_skill id="poisonstrike" x="5" yy="3,9" delay="3" />
-      <add_skill id="poisonstrike" x="6" yy="3,9" delay="4" />
+      <add_skill id="burn" x="4" y="9" delay="0" />
+      <add_skill id="burn" x="5" y="9" delay="1" />
+      <add_skill id="burn" x="6" y="9" delay="2" />
+      <add_skill id="regenerate" x="8" y="9" delay="3" />
+      <add_skill id="regenerate" x="9" y="9" delay="4" />
     </effect>
   </battleground>
   <!-- ================================= -->

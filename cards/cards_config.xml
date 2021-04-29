@@ -172,7 +172,7 @@
     <order>75</order>
     <icon>corrupt</icon>
     <name>Poisonhide</name>
-    <desc>When damaged by an attack, Poison the attacker</desc>
+    <desc>When damaged by an attack, Poison the attacker.</desc>
     <status_flag>poison</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <vfx_location>center</vfx_location>

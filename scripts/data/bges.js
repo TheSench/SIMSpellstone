@@ -1168,61 +1168,16 @@ var BATTLEGROUNDS = {
 		"name": "Adaptive Weaponry"
 	},
 	"141": {
-		"desc": "Dragons gain abilities based on faction! Aether gain Frostbreath 2, Chaos Scorch 4 and Wyld Poisonbolt 2. They add their delay cost to all these values.",
+		"desc": "Dragons gain skills based on their Delay (D)! 0D gain Scorch 4, 1D gain Scorch 5, 2D gain Scorch 6, 3D gain Regenerate 8, and 4D gain Regenerate 9.",
 		"effect": [
 			{
 				"delay": [
 					0
 				],
 				"effect_type": "add_skill",
-				"id": "frost",
-				"x": 2,
-				"y": "1,9"
-			},
-			{
-				"delay": [
-					1
-				],
-				"effect_type": "add_skill",
-				"id": "frost",
-				"x": 3,
-				"y": "1,9"
-			},
-			{
-				"delay": [
-					2
-				],
-				"effect_type": "add_skill",
-				"id": "frost",
-				"x": 4,
-				"y": "1,9"
-			},
-			{
-				"delay": [
-					3
-				],
-				"effect_type": "add_skill",
-				"id": "frost",
-				"x": 5,
-				"y": "1,9"
-			},
-			{
-				"delay": [
-					4
-				],
-				"effect_type": "add_skill",
-				"id": "frost",
-				"x": 6,
-				"y": "1,9"
-			},
-			{
-				"delay": [
-					0
-				],
-				"effect_type": "add_skill",
 				"id": "burn",
 				"x": 4,
-				"y": "2,9"
+				"y": "9"
 			},
 			{
 				"delay": [
@@ -1231,7 +1186,7 @@ var BATTLEGROUNDS = {
 				"effect_type": "add_skill",
 				"id": "burn",
 				"x": 5,
-				"y": "2,9"
+				"y": "9"
 			},
 			{
 				"delay": [
@@ -1240,74 +1195,29 @@ var BATTLEGROUNDS = {
 				"effect_type": "add_skill",
 				"id": "burn",
 				"x": 6,
-				"y": "2,9"
+				"y": "9"
 			},
 			{
 				"delay": [
 					3
 				],
 				"effect_type": "add_skill",
-				"id": "burn",
-				"x": 7,
-				"y": "2,9"
-			},
-			{
-				"delay": [
-					4
-				],
-				"effect_type": "add_skill",
-				"id": "burn",
+				"id": "regenerate",
 				"x": 8,
-				"y": "2,9"
-			},
-			{
-				"delay": [
-					0
-				],
-				"effect_type": "add_skill",
-				"id": "poisonstrike",
-				"x": 2,
-				"y": "3,9"
-			},
-			{
-				"delay": [
-					1
-				],
-				"effect_type": "add_skill",
-				"id": "poisonstrike",
-				"x": 3,
-				"y": "3,9"
-			},
-			{
-				"delay": [
-					2
-				],
-				"effect_type": "add_skill",
-				"id": "poisonstrike",
-				"x": 4,
-				"y": "3,9"
-			},
-			{
-				"delay": [
-					3
-				],
-				"effect_type": "add_skill",
-				"id": "poisonstrike",
-				"x": 5,
-				"y": "3,9"
+				"y": "9"
 			},
 			{
 				"delay": [
 					4
 				],
 				"effect_type": "add_skill",
-				"id": "poisonstrike",
-				"x": 6,
-				"y": "3,9"
+				"id": "regenerate",
+				"x": 9,
+				"y": "9"
 			}
 		],
 		"id": "141",
-		"name": "Tarragon Influence"
+		"name": "Dawn of Dragons"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
