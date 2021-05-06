@@ -1219,6 +1219,103 @@ var BATTLEGROUNDS = {
 		"id": "141",
 		"name": "Dawn of Dragons"
 	},
+	"142": {
+		"desc": "Insects gain Armor and Regenerate based on their Delay (D)! Values in both skills are 2 plus Delay.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"x": 2,
+				"y": "13"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 2,
+				"y": "13"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"x": 3,
+				"y": "13"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 3,
+				"y": "13"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"x": 4,
+				"y": "13"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 4,
+				"y": "13"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"x": 5,
+				"y": "13"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 5,
+				"y": "13"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"x": 6,
+				"y": "13"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 6,
+				"y": "13"
+			}
+		],
+		"id": "142",
+		"name": "Beetleton Mutations"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

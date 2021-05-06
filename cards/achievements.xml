@@ -15436,13 +15436,13 @@
   </achievement>
   <!-- New map content end -->
   <!-- Revisited map content begins -->
-  <!-- Wizard Event 77 - Dragons -->
+  <!-- Wizard Event 76 - Dragons -->
   <achievement>
     <id>3676</id>
     <type>2</type>
     <order>101</order>
-    <name>Rising Heat</name>
-    <desc>Complete the 'Rising Heat' campaign on Mastery Level 1.</desc>
+    <name>A Trip to Tarragon Peak</name>
+    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 1.</desc>
     <mission_req>6630</mission_req>
     <locked_start_time>1619715600</locked_start_time>
     <!-- Thursday, 29 April 2021 17:00:00 -->
@@ -15461,8 +15461,8 @@
     <id>3677</id>
     <type>2</type>
     <order>101</order>
-    <name>Rising Heat</name>
-    <desc>Complete the 'Rising Heat' campaign on Mastery Level 2.</desc>
+    <name>A Trip to Tarragon Peak</name>
+    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 2.</desc>
     <mission_req>6630</mission_req>
     <locked_start_time>1619715600</locked_start_time>
     <!-- Thursday, 29 April 2021 17:00:00 -->
@@ -15479,8 +15479,8 @@
     <id>3678</id>
     <type>2</type>
     <order>101</order>
-    <name>Rising Heat</name>
-    <desc>Complete the 'Rising Heat' campaign on Mastery Level 4.</desc>
+    <name>A Trip to Tarragon Peak</name>
+    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 4.</desc>
     <mission_req>6630</mission_req>
     <locked_start_time>1619715600</locked_start_time>
     <!-- Thursday, 29 April 2021 17:00:00 -->
@@ -15498,8 +15498,8 @@
     <id>3679</id>
     <type>2</type>
     <order>101</order>
-    <name>Rising Heat</name>
-    <desc>Complete the 'Rising Heat' campaign on Mastery Level 6.</desc>
+    <name>A Trip to Tarragon Peak</name>
+    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 6.</desc>
     <mission_req>6630</mission_req>
     <locked_start_time>1619715600</locked_start_time>
     <!-- Thursday, 29 April 2021 17:00:00 -->
@@ -15517,8 +15517,8 @@
     <id>3680</id>
     <type>2</type>
     <order>101</order>
-    <name>Critical Mass</name>
-    <desc>Complete the 'Critical mass' campaign on Mastery Level 2.</desc>
+    <name>Relaxation by Incineration</name>
+    <desc>Complete the 'Relaxation by Incineration' campaign on Mastery Level 2.</desc>
     <mission_req>6636</mission_req>
     <locked_start_time>1620925200</locked_start_time>
     <!-- Thursday, 13 May 2021 17:00:00 -->
@@ -15534,8 +15534,8 @@
     <id>3681</id>
     <type>2</type>
     <order>101</order>
-    <name>Critical Mass</name>
-    <desc>Complete the 'Critical mass' campaign on Mastery Level 4.</desc>
+    <name>Relaxation by Incineration</name>
+    <desc>Complete the 'Relaxation by Incineration' campaign on Mastery Level 4.</desc>
     <mission_req>6636</mission_req>
     <locked_start_time>1620925200</locked_start_time>
     <!-- Thursday, 13 May 2021 17:00:00 -->
@@ -15553,8 +15553,8 @@
     <id>3682</id>
     <type>2</type>
     <order>101</order>
-    <name>Critical Mass</name>
-    <desc>Complete the 'Critical Mass' campaign on Mastery Level 6.</desc>
+    <name>Relaxation by Incineration</name>
+    <desc>Complete the 'Relaxation by Incineration' campaign on Mastery Level 6.</desc>
     <mission_req>6636</mission_req>
     <locked_start_time>1620925200</locked_start_time>
     <!-- Thursday, 13 May 2021 17:00:00 -->
@@ -15644,6 +15644,140 @@
     </reward>
   </achievement>
   <!-- Titan Conflux achievement FIX END  -->
+  <!-- Wizard Event 77 - Insect - Node 1 -->
+  <achievement>
+    <id>3687</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Deep in Trouble</name>
+    <desc>Complete the 'Deep in Trouble' campaign on Mastery Level 1.</desc>
+    <mission_req>6642</mission_req>
+    <locked_start_time>1622134800</locked_start_time>
+    <!-- Thursday, 27 May 2021 17:00:00 -->
+    <req>
+      <campaign>1288</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3056" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7073" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3688</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Deep in Trouble</name>
+    <desc>Complete the 'Deep in Trouble' campaign on Mastery Level 2.</desc>
+    <mission_req>6642</mission_req>
+    <locked_start_time>1622134800</locked_start_time>
+    <!-- Thursday, 27 May 2021 17:00:00 -->
+    <achievement_req>3687</achievement_req>
+    <req>
+      <campaign>1288</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3689</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Deep in Trouble</name>
+    <desc>Complete the 'Deep in Trouble' campaign on Mastery Level 4.</desc>
+    <mission_req>6642</mission_req>
+    <locked_start_time>1622134800</locked_start_time>
+    <!-- Thursday, 27 May 2021 17:00:00 -->
+    <achievement_req>3688</achievement_req>
+    <req>
+      <campaign>1288</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3690</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Deep in Trouble</name>
+    <desc>Complete the 'Deep in Trouble' campaign on Mastery Level 6.</desc>
+    <mission_req>6642</mission_req>
+    <locked_start_time>1622134800</locked_start_time>
+    <!-- Thursday, 27 May 2021 17:00:00 -->
+    <achievement_req>3689</achievement_req>
+    <req>
+      <campaign>1288</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 77 - Insect - Node 2 -->
+  <achievement>
+    <id>3691</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Swarm Thickens</name>
+    <desc>Complete the 'The Swarm Thickens' campaign on Mastery Level 2.</desc>
+    <mission_req>6648</mission_req>
+    <locked_start_time>1623344400</locked_start_time>
+    <!-- Thursday, 10 June 2021 17:00:00 -->
+    <req>
+      <campaign>1289</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3692</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Swarm Thickens</name>
+    <desc>Complete the 'The Swarm Thickens' campaign on Mastery Level 4.</desc>
+    <mission_req>6648</mission_req>
+    <locked_start_time>1623344400</locked_start_time>
+    <!-- Thursday, 10 June 2021 17:00:00 -->
+    <achievement_req>3691</achievement_req>
+    <req>
+      <campaign>1289</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3693</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Swarm Thickens</name>
+    <desc>Complete the 'The Swarm Thickens' campaign on Mastery Level 6.</desc>
+    <mission_req>6648</mission_req>
+    <locked_start_time>1623344400</locked_start_time>
+    <!-- Thursday, 10 June 2021 17:00:00 -->
+    <achievement_req>3692</achievement_req>
+    <req>
+      <campaign>1289</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 77 - Insect END -->
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -16318,6 +16452,30 @@
       <campaign>1193</campaign>
       <campaign>1286</campaign>
       <campaign>1287</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Beetleton Bunker Revisited -->
+    <id>4031</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Beetleton Bunker</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Beetleton Bunker</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5653</mission_req>
+    <req>
+      <campaign>1130</campaign>
+      <campaign>1131</campaign>
+      <campaign>1132</campaign>
+      <campaign>1133</campaign>
+      <campaign>1134</campaign>
+      <campaign>1135</campaign>
+      <campaign>1288</campaign>
+      <campaign>1289</campaign>
       <level>7</level>
     </req>
     <reward>
