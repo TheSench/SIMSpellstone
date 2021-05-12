@@ -5211,7 +5211,7 @@ var CAMPAIGNS = {
 	"1286": {
 		"id": "1286",
 		"items": {
-			"3083": 0.2
+			"3083": 0.4
 		},
 		"location_id": "19",
 		"missions": [

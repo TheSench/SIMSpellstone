@@ -3896,6 +3896,95 @@
       <skill id="enrage" all="1" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4046</id>
+    <card_type>2</card_type>
+    <name>Agatha, Myth Warden</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Insect_Agatha_A</picture>
+    <asset_bundle>222</asset_bundle>
+    <item_name>Agatha Stone</item_name>
+    <item_desc>Collect Agatha Stones to upgrade the Legendary Agatha, Myth Warden!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <attack>9</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="protect" all="1" y="13" x="2" />
+    <skill id="enfeeble" all="1" x="3" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <skill id="protect" all="1" y="13" x="3" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="protect" all="1" y="13" x="3" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <skill id="protect" all="1" y="13" x="4" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+      <skill id="protect" all="1" y="13" x="4" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>32</health>
+      <skill id="protect" all="1" y="13" x="4" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>12</attack>
+      <skill id="protect" all="1" y="13" x="5" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>13</attack>
+      <health>33</health>
+      <skill id="protect" all="1" y="13" x="5" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>34</health>
+      <skill id="protect" all="1" y="13" x="5" />
+      <skill id="enfeeble" all="1" x="5" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>14</attack>
+      <health>35</health>
+      <skill id="protect" all="1" y="13" x="6" />
+      <skill id="enfeeble" all="1" x="5" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
