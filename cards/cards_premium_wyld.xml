@@ -15306,13 +15306,13 @@
     <picture>Vampire_Spider_A</picture>
     <asset_bundle>91</asset_bundle>
     <hidden_until_time>1492448400</hidden_until_time>
-    <attack>5</attack>
-    <health>12</health>
+    <attack>7</attack>
+    <health>14</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="enfeeble" x="1" />
     <skill id="jam" c="6" />
-    <skill id="leech" x="5" />
+    <skill id="leech" x="7" />
     <type>3</type>
     <sub_type>7</sub_type>
     <sub_type>13</sub_type>
@@ -15321,25 +15321,25 @@
       <level>2</level>
       <skill id="enfeeble" x="1" />
       <skill id="jam" c="5" />
-      <skill id="leech" x="5" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>13</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>14</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="enfeeble" x="1" />
       <skill id="jam" c="4" />
-      <skill id="leech" x="5" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -15350,40 +15350,40 @@
     <picture>Vampire_Spider_A</picture>
     <asset_bundle>91</asset_bundle>
     <hidden_until_time>1492448400</hidden_until_time>
-    <attack>6</attack>
-    <health>15</health>
+    <attack>8</attack>
+    <health>17</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="enfeeble" x="1" />
     <skill id="jam" c="4" />
-    <skill id="leech" x="6" />
+    <skill id="leech" x="8" />
     <type>3</type>
     <sub_type>7</sub_type>
     <sub_type>13</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>17</health>
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>7</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="enfeeble" x="1" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="enfeeble" x="1" />
+      <skill id="enfeeble" x="2" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -15394,40 +15394,43 @@
     <picture>Vampire_Spider_B</picture>
     <asset_bundle>91</asset_bundle>
     <hidden_until_time>1492448400</hidden_until_time>
-    <attack>7</attack>
-    <health>18</health>
+    <attack>9</attack>
+    <health>20</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="enfeeble" x="1" />
+    <skill id="enfeeble" x="2" />
     <skill id="jam" c="3" />
-    <skill id="leech" x="7" />
+    <skill id="leech" x="9" />
     <type>3</type>
     <sub_type>7</sub_type>
     <sub_type>13</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="enfeeble" x="1" all="1" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>8</attack>
+      <attack>10</attack>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>20</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="enfeeble" x="2" all="1" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="8" />
+      <skill id="leech" x="10" />
     </upgrade>
   </unit>
   <unit>
@@ -21927,11 +21930,11 @@
     <picture>Sage_Insect_and_Avian_Son_A</picture>
     <asset_bundle>114</asset_bundle>
     <hidden_until_time>1515258000</hidden_until_time>
-    <attack>4</attack>
-    <health>16</health>
+    <attack>6</attack>
+    <health>20</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="rally" x="3" y="13" />
+    <skill id="rally" x="4" y="13" />
     <skill id="jam" c="6" />
     <skill id="berserk" x="2" />
     <type>3</type>
@@ -21940,28 +21943,28 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <skill id="rally" x="3" y="13" />
+      <skill id="rally" x="4" y="13" />
       <skill id="jam" c="5" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>17</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>18</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>19</health>
-      <skill id="rally" x="4" y="13" />
+      <health>23</health>
+      <skill id="rally" x="5" y="13" />
       <skill id="jam" c="5" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="rally" x="4" y="13" />
+      <skill id="rally" x="5" y="13" />
       <skill id="jam" c="4" />
       <skill id="berserk" x="2" />
     </upgrade>
@@ -21974,11 +21977,11 @@
     <picture>Sage_Insect_and_Avian_Son_A</picture>
     <asset_bundle>114</asset_bundle>
     <hidden_until_time>1515258000</hidden_until_time>
-    <attack>4</attack>
-    <health>20</health>
+    <attack>6</attack>
+    <health>24</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="rally" x="4" y="13" />
+    <skill id="rally" x="6" y="13" />
     <skill id="jam" c="4" />
     <skill id="berserk" x="2" />
     <type>3</type>
@@ -21987,29 +21990,29 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>21</health>
-      <attack>5</attack>
+      <health>25</health>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="rally" x="5" y="13" />
+      <skill id="rally" x="7" y="13" />
       <skill id="jam" c="4" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="rally" x="5" y="13" />
+      <skill id="rally" x="7" y="13" />
       <skill id="jam" c="4" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>22</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>23</health>
-      <skill id="rally" x="5" y="13" />
+      <health>27</health>
+      <skill id="rally" x="8" y="13" />
       <skill id="jam" c="3" />
       <skill id="berserk" x="3" />
     </upgrade>
@@ -22022,11 +22025,11 @@
     <picture>Sage_Insect_and_Avian_Son_B</picture>
     <asset_bundle>114</asset_bundle>
     <hidden_until_time>1515258000</hidden_until_time>
-    <attack>5</attack>
-    <health>24</health>
+    <attack>7</attack>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="rally" x="6" y="13" />
+    <skill id="rally" x="9" y="13" />
     <skill id="jam" c="3" />
     <skill id="berserk" x="3" />
     <type>3</type>
@@ -22035,27 +22038,31 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <skill id="rally" x="7" y="13" />
+      <skill id="rally" x="10" y="13" />
       <skill id="jam" c="3" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>25</health>
-      <attack>6</attack>
+      <health>29</health>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>26</health>
-      <attack>7</attack>
+      <health>30</health>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>28</health>
+      <health>31</health>
+      <skill id="rally" x="10" y="13" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="rally" x="8" y="13" />
+      <health>32</health>
+      <skill id="rally" x="10" y="13" />
       <skill id="jam" c="3" />
       <skill id="berserk" x="5" />
     </upgrade>

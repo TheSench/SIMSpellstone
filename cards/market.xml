@@ -7873,13 +7873,13 @@
   </store_item>
   <store_item>
     <id>5241</id>
-    <name>Monarch Incinerator Sale!</name>
+    <name>Monarch Scorcher Sale!</name>
     <banner>1</banner>
     <category>1</category>
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFMonarch Incinerator^cFFFF! May be purchased four times.</desc>
+    <desc>Gives one copy of a ^cE7FFMonarch Scorcher^cFFFF! May be purchased four times.</desc>
     <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
     <background_prefab>legendary_card_banner</background_prefab>
     <bundle>35</bundle>
@@ -7889,6 +7889,86 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="6197" display_card_id="6197" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5242</id>
+    <name>Millidrake Regent Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMillidrake Regent^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6186" display_card_id="6186" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5243</id>
+    <name>Mugen and Young Hawk Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMugen and Young Hawk^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7174" display_card_id="7174" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5244</id>
+    <name>Bogskull Widow Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBogskull Widow^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7048" display_card_id="7048" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5245</id>
+    <name>Varachnis Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFVarachnis^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7121" display_card_id="7121" />
     </cards>
   </store_item>
 </root>

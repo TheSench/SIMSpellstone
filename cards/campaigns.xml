@@ -9884,6 +9884,93 @@
     <!-- Thursday, 24 June 2021 17:00:00 -->
   </campaign>
   <!-- Campaign Event 30 - Beetleton Bunker -->
+  <campaign>
+    <id>1288</id>
+    <name>Deep in Trouble</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1622134800</locked_start_time>
+    <!-- Thursday, 27 May 2021 17:00:00 -->
+    <location_id>10</location_id>
+    <x>800</x>
+    <!-- left right -->
+    <y>175</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6642</mission_id>
+      <mission_id>6643</mission_id>
+      <mission_id>6644</mission_id>
+      <mission_id>6645</mission_id>
+      <mission_id>6646</mission_id>
+      <mission_id>6647</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2604" number="25" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2212" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2099" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2604" number="75" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="7" id="2211" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3056" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1624554000</ignore_energy_reduction_until>
+    <!-- Thursday, 24 June 2021 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1289</id>
+    <name>The Swarm Thickens</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1288" level="1" />
+    <locked_start_time>1623344400</locked_start_time>
+    <!-- Thursday, 10 June 2021 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>10</location_id>
+    <x>860</x>
+    <!-- left right -->
+    <y>450</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6648</mission_id>
+      <mission_id>6649</mission_id>
+      <mission_id>6650</mission_id>
+      <mission_id>6651</mission_id>
+      <mission_id>6652</mission_id>
+      <mission_id>6653</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2604" number="25" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2131" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2157" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2604" number="75" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="7" id="2211" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3056" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1624554000</ignore_energy_reduction_until>
+    <!-- Thursday, 24 June 2021 17:00:00 -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

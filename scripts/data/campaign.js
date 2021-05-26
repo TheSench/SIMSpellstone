@@ -5241,6 +5241,39 @@ var CAMPAIGNS = {
 		],
 		"name": "Relaxation by Incineration"
 	},
+	"1288": {
+		"id": "1288",
+		"items": {
+			"3056": 0.6
+		},
+		"location_id": "10",
+		"missions": [
+			"6642",
+			"6643",
+			"6644",
+			"6645",
+			"6646",
+			"6647"
+		],
+		"name": "Deep in Trouble"
+	},
+	"1289": {
+		"battleground_id": "2053",
+		"id": "1289",
+		"items": {
+			"3056": 0.8
+		},
+		"location_id": "10",
+		"missions": [
+			"6648",
+			"6649",
+			"6650",
+			"6651",
+			"6652",
+			"6653"
+		],
+		"name": "The Swarm Thickens"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},

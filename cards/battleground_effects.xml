@@ -938,19 +938,14 @@
   <battleground>
     <id>142</id>
     <name>Beetleton Mutations</name>
-    <desc>Insects gain Armor and Regenerate based on their Delay (D)! Values in both skills are 2 plus Delay.</desc>
+    <desc>Insects gain skills based on their Delay (D)! 0D gain Berserk 3, 1D Berserk 4, 2D Berserk 5, 3D Armor 5, 4D Armor 6.</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
-      <add_skill id="armored" x="2" y="13" delay="0" />
-      <add_skill id="regenerate" x="2" y="13" delay="0" />
-      <add_skill id="armored" x="3" y="13" delay="1" />
-      <add_skill id="regenerate" x="3" y="13" delay="1" />
-      <add_skill id="armored" x="4" y="13" delay="2" />
-      <add_skill id="regenerate" x="4" y="13" delay="2" />
+      <add_skill id="berserk" x="3" y="13" delay="0" />
+      <add_skill id="berserk" x="4" y="13" delay="1" />
+      <add_skill id="berserk" x="5" y="13" delay="2" />
       <add_skill id="armored" x="5" y="13" delay="3" />
-      <add_skill id="regenerate" x="5" y="13" delay="3" />
       <add_skill id="armored" x="6" y="13" delay="4" />
-      <add_skill id="regenerate" x="6" y="13" delay="4" />
     </effect>
   </battleground>
   <!-- ================================= -->

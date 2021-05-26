@@ -1220,32 +1220,14 @@ var BATTLEGROUNDS = {
 		"name": "Dawn of Dragons"
 	},
 	"142": {
-		"desc": "Insects gain Armor and Regenerate based on their Delay (D)! Values in both skills are 2 plus Delay.",
+		"desc": "Insects gain skills based on their Delay (D)! 0D gain Berserk 3, 1D Berserk 4, 2D Berserk 5, 3D Armor 5, 4D Armor 6.",
 		"effect": [
 			{
 				"delay": [
 					0
 				],
 				"effect_type": "add_skill",
-				"id": "armored",
-				"x": 2,
-				"y": "13"
-			},
-			{
-				"delay": [
-					0
-				],
-				"effect_type": "add_skill",
-				"id": "regenerate",
-				"x": 2,
-				"y": "13"
-			},
-			{
-				"delay": [
-					1
-				],
-				"effect_type": "add_skill",
-				"id": "armored",
+				"id": "berserk",
 				"x": 3,
 				"y": "13"
 			},
@@ -1254,16 +1236,7 @@ var BATTLEGROUNDS = {
 					1
 				],
 				"effect_type": "add_skill",
-				"id": "regenerate",
-				"x": 3,
-				"y": "13"
-			},
-			{
-				"delay": [
-					2
-				],
-				"effect_type": "add_skill",
-				"id": "armored",
+				"id": "berserk",
 				"x": 4,
 				"y": "13"
 			},
@@ -1272,8 +1245,8 @@ var BATTLEGROUNDS = {
 					2
 				],
 				"effect_type": "add_skill",
-				"id": "regenerate",
-				"x": 4,
+				"id": "berserk",
+				"x": 5,
 				"y": "13"
 			},
 			{
@@ -1287,28 +1260,10 @@ var BATTLEGROUNDS = {
 			},
 			{
 				"delay": [
-					3
-				],
-				"effect_type": "add_skill",
-				"id": "regenerate",
-				"x": 5,
-				"y": "13"
-			},
-			{
-				"delay": [
 					4
 				],
 				"effect_type": "add_skill",
 				"id": "armored",
-				"x": 6,
-				"y": "13"
-			},
-			{
-				"delay": [
-					4
-				],
-				"effect_type": "add_skill",
-				"id": "regenerate",
 				"x": 6,
 				"y": "13"
 			}
