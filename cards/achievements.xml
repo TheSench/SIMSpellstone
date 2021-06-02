@@ -15778,6 +15778,140 @@
     </reward>
   </achievement>
   <!-- Wizard Event 77 - Insect END -->
+  <!-- Wizard Event 78 - Goblin - Node 1 -->
+  <achievement>
+    <id>3694</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Surprise Goblin Plot</name>
+    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 1.</desc>
+    <mission_req>6654</mission_req>
+    <locked_start_time>1624554000</locked_start_time>
+    <!-- Thursday, 24 June 2021 17:00:00 -->
+    <req>
+      <campaign>1290</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3071" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7074" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3695</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Surprise Goblin Plot</name>
+    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 2.</desc>
+    <mission_req>6654</mission_req>
+    <locked_start_time>1624554000</locked_start_time>
+    <!-- Thursday, 24 June 2021 17:00:00 -->
+    <achievement_req>3694</achievement_req>
+    <req>
+      <campaign>1290</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3696</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Surprise Goblin Plot</name>
+    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 4.</desc>
+    <mission_req>6654</mission_req>
+    <locked_start_time>1624554000</locked_start_time>
+    <!-- Thursday, 24 June 2021 17:00:00 -->
+    <achievement_req>3695</achievement_req>
+    <req>
+      <campaign>1290</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3697</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Surprise Goblin Plot</name>
+    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 6.</desc>
+    <mission_req>6654</mission_req>
+    <locked_start_time>1624554000</locked_start_time>
+    <!-- Thursday, 24 June 2021 17:00:00 -->
+    <achievement_req>3696</achievement_req>
+    <req>
+      <campaign>1290</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 78 - Goblin - Node 2 -->
+  <achievement>
+    <id>3698</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nodoby wants to Thwart This</name>
+    <desc>Complete the 'Nodoby wants to Thwart This' campaign on Mastery Level 2.</desc>
+    <mission_req>6660</mission_req>
+    <locked_start_time>1625763600</locked_start_time>
+    <!-- Thursday, 8 July 2021 17:00:00 -->
+    <req>
+      <campaign>1291</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3699</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nodoby wants to Thwart This</name>
+    <desc>Complete the 'Nodoby wants to Thwart This' campaign on Mastery Level 4.</desc>
+    <mission_req>6660</mission_req>
+    <locked_start_time>1625763600</locked_start_time>
+    <!-- Thursday, 8 July 2021 17:00:00 -->
+    <achievement_req>3698</achievement_req>
+    <req>
+      <campaign>1291</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3700</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nodoby wants to Thwart This</name>
+    <desc>Complete the 'Nodoby wants to Thwart This' campaign on Mastery Level 6.</desc>
+    <mission_req>6660</mission_req>
+    <locked_start_time>1625763600</locked_start_time>
+    <!-- Thursday, 8 July 2021 17:00:00 -->
+    <achievement_req>3699</achievement_req>
+    <req>
+      <campaign>1291</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 78 - Goblin END -->
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

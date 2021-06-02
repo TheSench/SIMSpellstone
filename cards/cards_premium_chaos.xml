@@ -23347,7 +23347,7 @@
     <health>15</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="absorb" x="2" />
+    <skill id="absorb" x="3" />
     <skill id="enfeeble" x="1" all="1" />
     <skill id="frost" x="1" />
     <type>2</type>
@@ -23360,7 +23360,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="absorb" x="3" />
+      <skill id="absorb" x="4" />
       <skill id="enfeeble" x="1" all="1" />
       <skill id="frost" x="1" />
     </upgrade>
@@ -23374,7 +23374,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="absorb" x="4" />
+      <skill id="absorb" x="5" />
       <skill id="enfeeble" x="1" all="1" />
       <skill id="frost" x="1" />
     </upgrade>
@@ -23391,7 +23391,7 @@
     <health>18</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="absorb" x="4" />
+    <skill id="absorb" x="5" />
     <skill id="enfeeble" x="1" all="1" />
     <skill id="frost" x="1" />
     <type>2</type>
@@ -23404,7 +23404,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="absorb" x="5" />
+      <skill id="absorb" x="6" />
       <skill id="enfeeble" x="1" all="1" />
       <skill id="frost" x="1" />
     </upgrade>
@@ -23418,7 +23418,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="absorb" x="6" />
+      <skill id="absorb" x="7" />
       <skill id="enfeeble" x="1" all="1" />
       <skill id="frost" x="1" />
     </upgrade>
@@ -23435,7 +23435,7 @@
     <health>20</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="absorb" x="6" />
+    <skill id="absorb" x="7" />
     <skill id="enfeeble" x="1" all="1" />
     <skill id="frost" x="2" />
     <type>2</type>
@@ -23452,20 +23452,20 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="7" />
+      <skill id="absorb" x="8" />
       <skill id="enfeeble" x="1" all="1" />
       <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>22</health>
-      <skill id="absorb" x="7" />
+      <skill id="absorb" x="8" />
       <skill id="enfeeble" x="2" all="1" />
       <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="absorb" x="7" />
+      <skill id="absorb" x="9" />
       <skill id="enfeeble" x="2" all="1" />
       <skill id="frost" x="3" />
     </upgrade>

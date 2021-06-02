@@ -53085,5 +53085,294 @@
       <card id="1645" mastery_level="7" name="Sundermarr" />
     </deck>
   </mission>
+  <mission>
+    <id>6654</id>
+    <name>Little Big Detours</name>
+    <energy>18</energy>
+    <desc>Maybe the warm and humid insectile landscape was not as bad as Tarragon, but it sure gave you some surprises and you've been itching for some sightseeing payback.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="8087" name="Gobatron's Crew" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7090" name="Prospector" />
+      <card id="1628" name="Garganotos" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7087" name="Goblites" />
+      <card id="7090" name="Prospector" />
+      <card id="2212" mastery_level="2" name="Preserved Arthropod" />
+      <card id="6144" mastery_level="3" name="Crossbomb Gremlin" />
+      <card id="7145" mastery_level="4" name="Metalsmith" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="6186" mastery_level="6" name="Millidrake Regent" />
+      <card id="8142" mastery_level="7" name="Tanky Chicken" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6655</id>
+    <name>Bad Reception</name>
+    <energy>18</energy>
+    <desc>Goblins have the distaste of sending mechanical dragons and insects to kick you out. After your failed vacation in Tarragon peak, this is going beyond the pale!</desc>
+    <commander id="341" />
+    <deck>
+      <card id="1344" name="Boomsting Duo" />
+      <card id="2134" name="Golden Rise Adventurers" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="6131" name="Winged Abducter" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="1628" name="Garganotos" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="7090" name="Prospector" />
+      <card id="2123" mastery_level="2" name="Firestoke Clawsmith" />
+      <card id="2064" mastery_level="3" name="Tome Sneak" />
+      <card id="5091" mastery_level="4" name="Armor Thief" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="6146" mastery_level="6" name="Dragonfly Runner" />
+      <card id="5090" mastery_level="7" name="Reks' Faithful" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6656</id>
+    <name>Beast-Something Plot?</name>
+    <energy>18</energy>
+    <desc>You really tried to smooth things over with the Goblins, but it seems they want nothing to do with it. You cannot escape the feeling that they want to hide something.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="6090" name="Crackshot" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1628" name="Garganotos" />
+      <card id="5091" name="Armor Thief" />
+      <card id="7087" name="Goblites" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="7193" mastery_level="5" name="Rocketspear Recruit" />
+      <card id="7282" mastery_level="6" name="Egg Keeper" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6657</id>
+    <name>Diplomatic Disaster</name>
+    <energy>18</energy>
+    <desc>You try to dissuade their aggression by mentioning you are the hero who bound the three factions and they should not mess with you. Sadly that made them more convinced that you want to stop them from...Whatever it is they are actually doing here.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8141" name="Patchwork Adams" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="7090" name="Prospector" />
+      <card id="2048" mastery_level="2" name="Sandmite" />
+      <card id="5091" mastery_level="3" name="Armor Thief" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="6146" mastery_level="6" name="Dragonfly Runner" />
+      <card id="8088" mastery_level="7" name="Vorpal Necroblaster" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6658</id>
+    <name>Goblins in the Right, and the Stars are Left.</name>
+    <energy>18</energy>
+    <desc>You've had enough of necro-insectoid mutant horrors made out of sinister rituals, so you try to talk your way out of them thinking you want to expose their plans, but they just won't listen!</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="1628" name="Garganotos" />
+      <card id="1628" name="Garganotos" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6090" name="Crackshot" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7115" mastery_level="2" name="Airborne Battalionn" />
+      <card id="7115" mastery_level="2" name="Airborne Battalionn" />
+      <card id="2207" mastery_level="4" name="Beauty Conglomeration" />
+      <card id="6144" mastery_level="5" name="Crossbomb Gremlin" />
+      <card id="7225" mastery_level="6" name="Hooflin Ranger" />
+      <card id="7226" mastery_level="7" name="Froglin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6659</id>
+    <name>Stolen Property. Again.</name>
+    <energy>18</energy>
+    <desc>These Goblin Creeps just won't learn. You tried to be civil but accidentally bumped into their plans to use the insect beetleton mutation for their own dark experiments!</desc>
+    <commander id="312" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="1335" name="Firecracker" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="2195" name="Stinky Rogue" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="5089" name="Gomblit" />
+      <card id="5089" name="Gomblit" />
+      <card id="7145" mastery_level="2" name="Metalsmith" />
+      <card id="7145" mastery_level="3" name="Metalsmith" />
+      <card id="6280" mastery_level="4" name="Thief Mechabase" />
+      <card id="6141" mastery_level="5" name="Swarmrider Zabzod" />
+      <card id="6146" mastery_level="6" name="Dragonfly Runner" />
+      <card id="7279" mastery_level="7" name="Brainweb Recluse" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6660</id>
+    <name>Roundabout Entry</name>
+    <energy>18</energy>
+    <desc>You attempt to escape the fortress through the tunnels. Unfortunately, Goblins are either too stupid or too smart and the paths are very confusing. You come out into the other side, surrounded by enemies again!</desc>
+    <commander id="312" />
+    <deck>
+      <card id="8084" name="Gobatron's Bomber" />
+      <card id="8087" name="Gobatron's Crew" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="1628" name="Garganotos" />
+      <card id="1628" name="Garganotos" />
+      &gt;
+      <card id="2172" name="Hob and Gob Duo" />
+      <card id="2172" name="Hob and Gob Duo" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="2212" mastery_level="2" name="Preserved Arthropod" />
+      <card id="2212" mastery_level="2" name="Preserved Arthropod" />
+      <card id="7145" mastery_level="4" name="Metalsmith" />
+      <card id="7145" mastery_level="5" name="Metalsmith" />
+      <card id="2097" mastery_level="6" name="Gem Harvester" />
+      <card id="6217" mastery_level="7" name="Dark Mage Tagati" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6661</id>
+    <name>Masterminds</name>
+    <energy>18</energy>
+    <desc>How can they expect to keep their secret experiments a secret if they don't let you escape after you didn't actually see anything? You attempt a second run into the tunnels and find a nasty surprise.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="2134" name="Golden Rise Adventurers" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6144" name="Crossbomb Gremlin" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="1628" name="Garganotos" />
+      <card id="7090" name="Prospector" />
+      <card id="7090" name="Prospector" />
+      <card id="2125" mastery_level="2" name="Fowl Page Bezoar" />
+      <card id="2149" mastery_level="3" name="Secutor Combatant" />
+      <card id="5091" mastery_level="4" name="Armor Thief" />
+      <card id="5089" mastery_level="5" name="Gomblit" />
+      <card id="6146" mastery_level="6" name="Dragonfly Runner" />
+      <card id="1344" mastery_level="7" name="Boomsting Duo" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6662</id>
+    <name>Deep into the Dungeon for the Rest</name>
+    <energy>18</energy>
+    <desc>Needing a break, you go deeper into the caves, but you accidentally discover the birthing pods of super insects the goblins have been breeding here! The jailors and their superbugs attack you!</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8085" name="Gobatron's Right Hand" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2195" name="Stinky Rogue" />
+      <card id="2195" name="Stinky Rogue" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="7135" name="Grim Pollination" />
+      <card id="1628" name="Garganotos" />
+      <card id="1628" name="Garganotos" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="7193" mastery_level="5" name="Rocketspear Recruit" />
+      <card id="7188" mastery_level="6" name="Honeycomb Thrower" />
+      <card id="7245" mastery_level="7" name="Ogrot Tamer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6663</id>
+    <name>Actions Speak Louder</name>
+    <energy>18</energy>
+    <desc>After all the trouble their are making you go through, they told you more about their plans than if they just let you leave but well, you definitely had much more than you expected from your little sighseeing tour.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8141" name="Patchwork Adams" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2126" name="One Punch Flare" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="7090" name="Prospector" />
+      <card id="2048" mastery_level="2" name="Sandmite" />
+      <card id="5091" mastery_level="3" name="Armor Thief" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="6146" mastery_level="6" name="Dragonfly Runner" />
+      <card id="8088" mastery_level="7" name="Vorpal Necroblaster" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6664</id>
+    <name>No Secrets Left Behind</name>
+    <energy>18</energy>
+    <desc>You manage to take your well deserved insect-free rest inside the tunnels, and now it's time to leave this wierd place and maybe find some place not swarming with insan, unreasonable and bad mannered company.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="1628" name="Garganotos" />
+      <card id="1628" name="Garganotos" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6090" name="Crackshot" />
+      <card id="7146" name="Goblin Brigand" />
+      <card id="7115" mastery_level="2" name="Airborne Battalionn" />
+      <card id="7115" mastery_level="2" name="Airborne Battalionn" />
+      <card id="2207" mastery_level="4" name="Beauty Conglomeration" />
+      <card id="6144" mastery_level="5" name="Crossbomb Gremlin" />
+      <card id="7225" mastery_level="6" name="Hooflin Ranger" />
+      <card id="7226" mastery_level="7" name="Froglin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6665</id>
+    <name>Accidental Spy</name>
+    <energy>18</energy>
+    <desc>You end up leaving the fortress with way, way more information than you really wanted. Maybe next time it would be smart to just take a peek at the landscape from afar, to prevent some megalomaniac plans being accidentally discovered.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="1335" name="Firecracker" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="2195" name="Stinky Rogue" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="5089" name="Gomblit" />
+      <card id="5089" name="Gomblit" />
+      <card id="7145" mastery_level="2" name="Metalsmith" />
+      <card id="7145" mastery_level="3" name="Metalsmith" />
+      <card id="6280" mastery_level="4" name="Thief Mechabase" />
+      <card id="6141" mastery_level="5" name="Swarmrider Zabzod" />
+      <card id="6146" mastery_level="6" name="Dragonfly Runner" />
+      <card id="7279" mastery_level="7" name="Brainweb Recluse" />
+    </deck>
+  </mission>
 </root>
 
