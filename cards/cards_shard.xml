@@ -8604,6 +8604,93 @@
       <skill id="enrage" all="1" x="8" y="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7619</id>
+    <card_type>2</card_type>
+    <name>Rima, The Impaler</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Insec_Icycle_Pick_A</picture>
+    <asset_bundle>222</asset_bundle>
+    <hidden_until_time>1611248400</hidden_until_time>
+    <!-- Thursday, January 21, 2021 17:00:00 -->
+    <item_name>Rima Stone</item_name>
+    <item_desc>Collect Rima Stones to upgrade the Legendary Rima, The Impaler card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="13" />
+    <skill id="frost" x="2" />
+    <skill id="berserk" x="3" />
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <skill id="rally" x="5" y="13" />
+      <skill id="frost" x="2" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <skill id="rally" x="6" y="13" />
+      <skill id="frost" x="2" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="7" y="13" />
+      <skill id="frost" x="2" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="rally" x="7" y="13" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+      <skill id="rally" x="8" y="13" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>25</health>
+      <skill id="rally" x="8" y="13" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>7</attack>
+      <skill id="rally" x="9" y="13" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>26</health>
+      <skill id="rally" x="9" y="13" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="rally" x="10" y="13" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
   <!-- === WYLD END === -->
 </root>
 
