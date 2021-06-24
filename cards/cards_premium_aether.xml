@@ -18443,10 +18443,10 @@
     <asset_bundle>100</asset_bundle>
     <hidden_until_time>1501779600</hidden_until_time>
     <attack>4</attack>
-    <health>19</health>
+    <health>20</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="2" y="11" />
+    <skill id="rally" x="3" y="11" />
     <skill id="frost" x="1" />
     <skill id="nullify" x="1" />
     <type>1</type>
@@ -18455,21 +18455,21 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>20</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <health>21</health>
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
       <level>4</level>
-      <skill id="rally" x="2" y="11" />
+      <skill id="rally" x="4" y="11" />
       <skill id="frost" x="2" />
-      <skill id="nullify" x="1" />
+      <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>22</health>
+      <health>23</health>
     </upgrade>
   </unit>
   <unit>
@@ -18480,39 +18480,39 @@
     <picture>Goblin_Frog_Dark_Magic_Team_A</picture>
     <asset_bundle>100</asset_bundle>
     <hidden_until_time>1501779600</hidden_until_time>
-    <attack>4</attack>
-    <health>23</health>
+    <attack>5</attack>
+    <health>24</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="2" y="11" />
+    <skill id="rally" x="4" y="11" />
     <skill id="frost" x="2" />
-    <skill id="nullify" x="1" />
+    <skill id="nullify" x="2" />
     <type>1</type>
     <sub_type>4</sub_type>
     <sub_type>11</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <skill id="rally" x="3" y="11" />
+      <skill id="rally" x="5" y="11" />
       <skill id="frost" x="2" />
-      <skill id="nullify" x="1" />
+      <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="rally" x="3" y="11" />
+      <skill id="rally" x="5" y="11" />
       <skill id="frost" x="2" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>24</health>
-      <skill id="rally" x="4" y="11" />
+      <health>25</health>
+      <skill id="rally" x="6" y="11" />
       <skill id="frost" x="3" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>25</health>
+      <health>26</health>
     </upgrade>
   </unit>
   <unit>
@@ -18524,12 +18524,12 @@
     <asset_bundle>100</asset_bundle>
     <hidden_until_time>1501779600</hidden_until_time>
     <attack>6</attack>
-    <health>26</health>
+    <health>27</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="5" y="11" />
+    <skill id="rally" x="7" y="11" />
     <skill id="frost" x="3" />
-    <skill id="nullify" x="2" />
+    <skill id="nullify" x="3" />
     <type>1</type>
     <sub_type>4</sub_type>
     <sub_type>11</sub_type>
@@ -18540,20 +18540,20 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>27</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="rally" x="6" y="11" />
+      <skill id="rally" x="8" y="11" />
       <skill id="frost" x="3" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>8</attack>
-      <skill id="rally" x="7" y="11" />
+      <skill id="rally" x="9" y="11" />
       <skill id="frost" x="4" />
-      <skill id="nullify" x="3" />
+      <skill id="nullify" x="4" />
     </upgrade>
   </unit>
   <unit>

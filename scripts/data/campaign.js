@@ -5274,6 +5274,40 @@ var CAMPAIGNS = {
 		],
 		"name": "The Swarm Thickens"
 	},
+	"1290": {
+		"battleground_id": "2053",
+		"id": "1290",
+		"items": {
+			"3071": 0.6
+		},
+		"location_id": "15",
+		"missions": [
+			"6654",
+			"6655",
+			"6656",
+			"6657",
+			"6658",
+			"6659"
+		],
+		"name": "Surprise Goblin Plot"
+	},
+	"1291": {
+		"battleground_id": "2053",
+		"id": "1291",
+		"items": {
+			"3071": 0.8
+		},
+		"location_id": "15",
+		"missions": [
+			"6660",
+			"6661",
+			"6662",
+			"6663",
+			"6664",
+			"6665"
+		],
+		"name": "Ain't Nobody wants to Thwart This"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},

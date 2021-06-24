@@ -6177,8 +6177,8 @@
     <name>Steelcat Mechanist</name>
     <picture>Goblin_Sabertooth_Mech_A</picture>
     <asset_bundle>38</asset_bundle>
-    <attack>1</attack>
-    <health>5</health>
+    <attack>2</attack>
+    <health>7</health>
     <cost>0</cost>
     <rarity>3</rarity>
     <skill id="enfeeble" x="1" />
@@ -6189,7 +6189,7 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>6</health>
+      <health>8</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -6201,11 +6201,11 @@
       <level>4</level>
       <skill id="enfeeble" x="2" />
       <skill id="burn" x="1" />
-      <skill id="weaken" x="1" />
+      <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>7</health>
+      <health>9</health>
     </upgrade>
     <desc>Warm kitty, metal kitty, little ball of burns- Mad kitty! Fierce Kitty?! BURNS BURNS BURNS!!!</desc>
   </unit>
@@ -6216,38 +6216,40 @@
     <name>Steamcat Mechanist</name>
     <picture>Goblin_Sabertooth_Mech_A</picture>
     <asset_bundle>38</asset_bundle>
-    <attack>1</attack>
-    <health>10</health>
+    <attack>2</attack>
+    <health>11</health>
     <cost>0</cost>
     <rarity>3</rarity>
-    <skill id="enfeeble" x="2" />
+    <skill id="enfeeble" x="3" />
     <skill id="burn" x="2" />
-    <skill id="weaken" x="1" />
+    <skill id="weaken" x="2" />
     <type>2</type>
     <sub_type>11</sub_type>
     <sub_type>16</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <skill id="enfeeble" x="2" />
-      <skill id="burn" x="2" />
-      <skill id="weaken" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>11</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <skill id="enfeeble" x="2" />
-      <skill id="burn" x="2" />
-      <skill id="weaken" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
       <skill id="enfeeble" x="3" />
       <skill id="burn" x="2" />
       <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -6257,40 +6259,39 @@
     <name>Sabercat Mechanist</name>
     <picture>Goblin_Sabertooth_Mech_B</picture>
     <asset_bundle>38</asset_bundle>
-    <attack>1</attack>
-    <health>12</health>
+    <attack>3</attack>
+    <health>14</health>
     <cost>0</cost>
     <rarity>3</rarity>
-    <skill id="enfeeble" x="3" />
-    <skill id="burn" x="2" />
-    <skill id="weaken" x="3" />
+    <skill id="enfeeble" x="4" />
+    <skill id="burn" x="3" />
+    <skill id="weaken" x="5" />
     <type>2</type>
     <sub_type>11</sub_type>
     <sub_type>16</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <attack>2</attack>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>13</health>
-      <attack>3</attack>
+      <attack>4</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>14</health>
-      <skill id="enfeeble" x="3" />
-      <skill id="burn" x="2" />
-      <skill id="weaken" x="4" />
+      <health>16</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>15</health>
-      <attack>4</attack>
-      <skill id="enfeeble" x="4" />
-      <skill id="burn" x="3" />
-      <skill id="weaken" x="5" />
+      <health>17</health>
+      <attack>5</attack>
+      <skill id="enfeeble" x="5" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="6" />
     </upgrade>
   </unit>
   <unit>

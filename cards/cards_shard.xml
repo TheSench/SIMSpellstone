@@ -1385,69 +1385,69 @@
     <type>1</type>
     <sub_type>11</sub_type>
     <attack>5</attack>
-    <health>16</health>
+    <health>17</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="valor" x="7" />
-    <skill id="heal" y="11" x="6" />
+    <skill id="heal" y="11" x="8" />
     <skill id="frost" x="1" />
     <upgrade>
       <level>2</level>
       <skill id="valor" x="7" />
-      <skill id="heal" y="11" x="6" />
+      <skill id="heal" y="11" x="8" />
       <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>17</health>
+      <health>18</health>
       <skill id="valor" x="8" />
-      <skill id="heal" y="11" x="7" />
+      <skill id="heal" y="11" x="9" />
       <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="valor" x="8" />
-      <skill id="heal" y="11" x="8" />
+      <skill id="heal" y="11" x="10" />
       <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>18</health>
+      <health>19</health>
       <skill id="valor" x="9" />
-      <skill id="heal" y="11" x="8" />
+      <skill id="heal" y="11" x="10" />
       <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="valor" x="9" />
-      <skill id="heal" y="11" x="9" />
+      <skill id="heal" y="11" x="11" />
       <skill id="frost" x="2" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>19</health>
+      <health>20</health>
       <skill id="valor" x="9" />
-      <skill id="heal" y="11" x="9" />
+      <skill id="heal" y="11" x="11" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <skill id="valor" x="10" />
-      <skill id="heal" y="11" x="9" />
+      <skill id="heal" y="11" x="11" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>20</health>
+      <health>21</health>
       <skill id="valor" x="10" />
-      <skill id="heal" y="11" x="10" />
+      <skill id="heal" y="11" x="12" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <health>21</health>
+      <health>22</health>
       <skill id="valor" x="11" />
-      <skill id="heal" y="11" x="10" />
+      <skill id="heal" y="11" x="12" />
       <skill id="frost" x="3" />
     </upgrade>
   </unit>
@@ -2234,7 +2234,7 @@
     <type>2</type>
     <sub_type>11</sub_type>
     <attack>9</attack>
-    <health>16</health>
+    <health>20</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="6" />
@@ -2248,7 +2248,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>17</health>
+      <health>21</health>
       <skill id="absorb" x="7" />
       <skill id="backlash" x="3" />
       <skill id="counter" x="7" />
@@ -2262,7 +2262,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>18</health>
+      <health>22</health>
       <skill id="absorb" x="8" />
       <skill id="backlash" x="4" />
       <skill id="counter" x="8" />
@@ -2276,7 +2276,7 @@
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>19</health>
+      <health>23</health>
       <skill id="absorb" x="9" />
       <skill id="backlash" x="4" />
       <skill id="counter" x="9" />
@@ -2289,7 +2289,7 @@
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>20</health>
+      <health>24</health>
       <skill id="absorb" x="10" />
       <skill id="backlash" x="5" />
       <skill id="counter" x="10" />
@@ -2297,7 +2297,7 @@
     <upgrade>
       <level>10</level>
       <attack>12</attack>
-      <health>21</health>
+      <health>25</health>
     </upgrade>
   </unit>
   <unit>
@@ -3984,6 +3984,91 @@
       <skill id="protect" all="1" y="13" x="6" />
       <skill id="enfeeble" all="1" x="5" />
       <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4047</id>
+    <card_type>2</card_type>
+    <name>Ark and the Goatapult</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Goblin_Goatapult_A</picture>
+    <asset_bundle>224</asset_bundle>
+    <item_name>Ark Stone</item_name>
+    <item_desc>Collect Ark Stones to upgrade the Legendary Ark and the Stinky Goats!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <attack>9</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="7" />
+    <skill id="strike" x="9" />
+    <skill id="poisonstrike" x="6" />
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="7" />
+      <skill id="strike" x="10" />
+      <skill id="poisonstrike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="11" />
+      <skill id="poisonstrike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>31</health>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="11" />
+      <skill id="poisonstrike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="11" />
+      <skill id="poisonstrike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" x="11" />
+      <skill id="poisonstrike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>11</attack>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" x="12" />
+      <skill id="poisonstrike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>34</health>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" x="12" />
+      <skill id="poisonstrike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>35</health>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" x="13" />
+      <skill id="poisonstrike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="corrosive" x="10" />
+      <skill id="strike" x="14" />
+      <skill id="poisonstrike" x="10" />
     </upgrade>
   </unit>
   <!-- Reward End -->
@@ -5968,71 +6053,71 @@
     <type>2</type>
     <sub_type>11</sub_type>
     <sub_type>16</sub_type>
-    <attack>6</attack>
+    <attack>7</attack>
     <health>18</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="regenerate" x="4" />
-    <skill id="burn" x="2" />
+    <skill id="regenerate" x="6" />
+    <skill id="burn" x="3" />
     <skill id="nullify" x="2" />
     <upgrade>
       <level>2</level>
       <health>19</health>
-      <skill id="regenerate" x="4" />
-      <skill id="burn" x="3" />
+      <skill id="regenerate" x="6" />
+      <skill id="burn" x="4" />
       <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
-      <skill id="regenerate" x="4" />
-      <skill id="burn" x="3" />
+      <attack>8</attack>
+      <skill id="regenerate" x="6" />
+      <skill id="burn" x="4" />
       <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>20</health>
-      <skill id="regenerate" x="5" />
-      <skill id="burn" x="4" />
+      <skill id="regenerate" x="7" />
+      <skill id="burn" x="5" />
       <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>8</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>21</health>
-      <skill id="regenerate" x="6" />
-      <skill id="burn" x="4" />
+      <skill id="regenerate" x="8" />
+      <skill id="burn" x="5" />
       <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <attack>9</attack>
-      <skill id="regenerate" x="6" />
-      <skill id="burn" x="5" />
+      <attack>10</attack>
+      <skill id="regenerate" x="8" />
+      <skill id="burn" x="6" />
       <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <attack>10</attack>
-      <skill id="regenerate" x="6" />
-      <skill id="burn" x="5" />
+      <attack>11</attack>
+      <skill id="regenerate" x="8" />
+      <skill id="burn" x="6" />
       <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <health>22</health>
-      <skill id="regenerate" x="7" />
-      <skill id="burn" x="5" />
+      <skill id="regenerate" x="9" />
+      <skill id="burn" x="6" />
       <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <health>23</health>
-      <skill id="regenerate" x="7" />
-      <skill id="burn" x="6" />
+      <skill id="regenerate" x="9" />
+      <skill id="burn" x="7" />
       <skill id="nullify" x="5" />
     </upgrade>
   </unit>
@@ -8689,6 +8774,92 @@
       <skill id="rally" x="10" y="13" />
       <skill id="frost" x="3" />
       <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7620</id>
+    <card_type>2</card_type>
+    <name>Klevit, the Speedfall</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Goblin_Snowboard_Wizard_A</picture>
+    <asset_bundle>224</asset_bundle>
+    <item_name>Klevit Stone</item_name>
+    <item_desc>Collect Klevit Stones to upgrade the Legendary Klevit, the Speedfall!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <attack>7</attack>
+    <health>19</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="jam" c="4" />
+    <skill id="nullify" x="2" />
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="absorb" x="5" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <skill id="absorb" x="6" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="7" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+      <skill id="absorb" x="8" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>9</attack>
+      <health>22</health>
+      <skill id="absorb" x="8" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="absorb" x="9" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>10</attack>
+      <health>23</health>
+      <skill id="absorb" x="9" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="absorb" x="10" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>11</attack>
+      <skill id="absorb" x="10" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="5" />
     </upgrade>
   </unit>
   <!-- === WYLD END === -->

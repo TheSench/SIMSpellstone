@@ -9972,6 +9972,94 @@
     <!-- Thursday, 24 June 2021 17:00:00 -->
   </campaign>
   <!-- Campaign Event 31 - Goblin Rise Stronghold -->
+  <campaign>
+    <id>1290</id>
+    <name>Surprise Goblin Plot</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1624554000</locked_start_time>
+    <!-- Thursday, 24 June 2021 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>15</location_id>
+    <x>830</x>
+    <!-- left right -->
+    <y>200</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6654</mission_id>
+      <mission_id>6655</mission_id>
+      <mission_id>6656</mission_id>
+      <mission_id>6657</mission_id>
+      <mission_id>6658</mission_id>
+      <mission_id>6659</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2605" number="25" />
+      /&gt;
+      <!-- Goblin Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2213" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2194" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2605" number="75" />
+      /&gt;
+      <!-- Goblin Flasks -->
+      <card level="7" id="2214" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3071" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1629392400</ignore_energy_reduction_until>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1291</id>
+    <name>Ain't Nobody wants to Thwart This</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1290" level="1" />
+    <locked_start_time>1625763600</locked_start_time>
+    <!-- Thursday, 8 July 2021 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>15</location_id>
+    <x>230</x>
+    <!-- left right -->
+    <y>200</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6660</mission_id>
+      <mission_id>6661</mission_id>
+      <mission_id>6662</mission_id>
+      <mission_id>6663</mission_id>
+      <mission_id>6664</mission_id>
+      <mission_id>6665</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2605" number="25" />
+      /&gt;
+      <!-- Goblin Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2171" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2125" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2605" number="75" />
+      /&gt;
+      <!-- Goblin Flasks -->
+      <card level="7" id="2214" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3071" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1629392400</ignore_energy_reduction_until>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
