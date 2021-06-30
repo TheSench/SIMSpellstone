@@ -16616,6 +16616,30 @@
       <item id="2531" number="1" />
     </reward>
   </achievement>
+  <achievement>
+    <!-- Goblin Rise Stronghold Revisited -->
+    <id>4032</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Goblin Rise Stronghold</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Goblin Rise Stronghold</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5927</mission_req>
+    <req>
+      <campaign>1162</campaign>
+      <campaign>1163</campaign>
+      <campaign>1164</campaign>
+      <campaign>1168</campaign>
+      <campaign>1169</campaign>
+      <campaign>1170</campaign>
+      <campaign>1290</campaign>
+      <campaign>1291</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
   <!-- Non-Core Maps Meta END -->
 </root>
 

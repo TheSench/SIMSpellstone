@@ -6747,7 +6747,7 @@
     <picture>Undead_Reks_A</picture>
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1474563600</hidden_until_time>
-    <attack>5</attack>
+    <attack>6</attack>
     <health>16</health>
     <cost>2</cost>
     <rarity>4</rarity>
@@ -6773,7 +6773,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
+      <attack>7</attack>
       <health>20</health>
     </upgrade>
     <upgrade>
@@ -6792,7 +6792,7 @@
     <picture>Undead_Reks_A</picture>
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1474563600</hidden_until_time>
-    <attack>6</attack>
+    <attack>8</attack>
     <health>21</health>
     <cost>2</cost>
     <rarity>4</rarity>
@@ -6820,7 +6820,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>7</attack>
+      <attack>9</attack>
       <health>25</health>
     </upgrade>
     <upgrade>
@@ -6838,7 +6838,7 @@
     <picture>Undead_Reks_B</picture>
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1474563600</hidden_until_time>
-    <attack>7</attack>
+    <attack>10</attack>
     <health>26</health>
     <cost>2</cost>
     <rarity>4</rarity>
@@ -6852,7 +6852,7 @@
     <upgrade>
       <level>2</level>
       <health>27</health>
-      <attack>8</attack>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>3</level>

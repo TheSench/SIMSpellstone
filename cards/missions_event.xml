@@ -53374,5 +53374,293 @@
       <card id="7279" mastery_level="7" name="Brainweb Recluse" />
     </deck>
   </mission>
+  <mission>
+    <id>6666</id>
+    <name>Tour of the Skies</name>
+    <energy>18</energy>
+    <desc>After the wierdness you've experienced in some of the other locations you visited, the freshness of the Celestial Vault catches you and brings a load of fresh air into your lungs.</desc>
+    <commander id="305" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="5114" name="Wingward" />
+      <card id="6115" mastery_level="2" name="Spelltalon" />
+      <card id="2125" mastery_level="3" name="Fowl Page Bezoar" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6111" mastery_level="6" name="Aspects of the Ashes" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6667</id>
+    <name>Conflicting Dates</name>
+    <energy>18</energy>
+    <desc>The attack of the avians was totally unexpected, and after a moment of hestiation you consult your calendar, since you're not supposed to be disturbing anybody here.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="2040" name="Owlmancer" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2088" mastery_level="2" name="Bog Witch" />
+      <card id="2060" mastery_level="3" name="Patchwork Experiment" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6122" mastery_level="6" name="Relentless Dead" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6668</id>
+    <name>Inconvenient Addition Error</name>
+    <energy>18</energy>
+    <desc>Checking the calendar and the stars you realize that you may have miscounted, and that if you had, you're gonna have a rough way home after pissing off the avians who are at their summit of power.</desc>
+    <commander id="308" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5114" name="Wingward" />
+      <card id="6112" mastery_level="2" name="Fire Hawk" />
+      <card id="7205" mastery_level="3" name="Snapping Griffin" />
+      <card id="7174" mastery_level="4" name="Mugen and Young Hawk" />
+      <card id="7275" mastery_level="5" name="Winterheart Ballerina" />
+      <card id="7173" mastery_level="6" name="Wyris Shaman" />
+      <card id="7245" mastery_level="7" name="Ogrot Tamer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6669</id>
+    <name>Challenge Refused</name>
+    <energy>18</energy>
+    <desc>Avians don't even speak the same way as you and while you babble around trying to tell them you made a mistake in coming here, they seem to regard your speech and arm movements as some kind of bizarre challenge.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6172" name="Steel Plover" />
+      <card id="6172" name="Steel Plover" />
+      <card id="7057" mastery_level="2" name="Bill Crasher" />
+      <card id="7057" mastery_level="3" name="Bill Crasher" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6111" mastery_level="6" name="Aspects of the Ashes" />
+      <card id="5148" mastery_level="7" name="Gribmalda of Wings" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6670</id>
+    <name>No Avians Remain in the Water</name>
+    <energy>18</energy>
+    <desc>They just keep coming at you, and in a flood of panic you jump into the vaults lake, reasoning that they shouldn't be able to follow you into that.</desc>
+    <commander id="317" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2135" name="Primitive Crustavian" />
+      <card id="2135" name="Primitive Crustavian" />
+      <card id="5158" name="Chilltide Stormtendern" />
+      <card id="5158" name="Chilltide Stormtendern" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5175" mastery_level="2" name="Spirit of Cygnus" />
+      <card id="5175" mastery_level="3" name="Spirit of Cygnus" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="7101" mastery_level="5" name="Shriekers" />
+      <card id="6122" mastery_level="6" name="Relentless Dead" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6671</id>
+    <name>This is not a Drill</name>
+    <energy>18</energy>
+    <desc>The creativity of waterborne creatures is astounding. Using a powerful mecha arm which Decim said could be used as a drill, you break your way out of the waterfall and into the cave.</desc>
+    <commander id="327" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6083" name="Lockejaw" />
+      <card id="5114" name="Wingward" />
+      <card id="2088" mastery_level="2" name="Bog Witch" />
+      <card id="2060" mastery_level="3" name="Patchwork Experiment" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6122" mastery_level="6" name="Relentless Dead" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6672</id>
+    <name>Improvised Spelunking</name>
+    <energy>18</energy>
+    <desc>Having to drill your way from a lake and into an underground cavern is not fun. At all. Hopefully the darkness will deter your winged pursuers.</desc>
+    <commander id="317" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2125" name="Fowl Page Bezoar" />
+      <card id="5114" name="Wingward" />
+      <card id="2088" mastery_level="2" name="Bog Witch" />
+      <card id="2060" mastery_level="3" name="Patchwork Experiment" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6122" mastery_level="6" name="Relentless Dead" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6673</id>
+    <name>Dangerous Crowd in the Dark</name>
+    <energy>18</energy>
+    <desc>With your feet firmly planted in solid ground you're determined to make the trip worthwhile and at least leave this place with some insightful and interesting views.</desc>
+    <commander id="304 " />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6115" name="Spelltalon" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5034" mastery_level="2" name="Skyward Guardian" />
+      <card id="6054" mastery_level="3" name="Shadowcrafter" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="6164" mastery_level="5" name="Deatheye Owl" />
+      <card id="6164" mastery_level="6" name="Deatheye Owl" />
+      <card id="5155" mastery_level="7" name="Cockaboo Fallen" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6674</id>
+    <name>How many feet under?</name>
+    <energy>18</energy>
+    <desc>After wrongly assuming that no flying annoyance was gonna follow you into the darkness and being unpleasantly surprised, you engage in evasive maneuvers.</desc>
+    <commander id="305" />
+    <deck>
+      <card id="8140" name="Six Wings Under" />
+      <card id="6115" name="Spelltalon" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2040" name="Owlmancer" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6115" mastery_level="2" name="Spelltalon" />
+      <card id="5077" mastery_level="3" name="Thunderbird" />
+      <card id="5077" mastery_level="3" name="Thunderbird" />
+      <card id="5272" mastery_level="5" name="Balam Sphinxl" />
+      <card id="5272" mastery_level="6" name="Balam Sphinx" />
+      <card id="5155" mastery_level="7" name="Cockaboo Fallen" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6675</id>
+    <name>Unintended Passive Aggression</name>
+    <energy>18</energy>
+    <desc>After all that fighting and the amount of, let's face it, different creatures you're constantly forced to fight, not only are you now really hungry, but also have your pick of what to eat.</desc>
+    <commander id="307" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="2040" name="Owlmancer" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6113" mastery_level="2" name="Trojan Crow" />
+      <card id="7276" mastery_level="3" name="Terror Bird Mount" />
+      <card id="7276" mastery_level="4" name="Terror Bird Mount" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="5122" mastery_level="6" name="Crow King" />
+      <card id="7246" mastery_level="7" name="Snowfall Dancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6676</id>
+    <name>With your energy on the rise and the way clear of baddies you decide it's time to move on. You find the strangest pictograms in a cavern wall, little did you think they would summon powerful guardians!</name>
+    <energy>18</energy>
+    <desc />
+    <commander id="369" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="6115" name="Spelltalon" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6115" name="Spelltalon" />
+      <card id="5114" name="Wingward" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="6286" mastery_level="3" name="Carnival Crow" />
+      <card id="6286" mastery_level="4" name="Carnival Crow" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6055" mastery_level="6" name="Phoenix" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6677</id>
+    <name>The spellstones bound into the wall shatter as you defeat their pet guardians, and this is definitely the last time you trust these winged vile creatures, nothing like those also winged quite not vile angels.</name>
+    <energy>18</energy>
+    <desc />
+    <commander id="308" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2166" name="Minstrel of Owls" />
+      <card id="2166" name="Minstrel of Owls" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2088" mastery_level="2" name="Bog Witch" />
+      <card id="2060" mastery_level="3" name="Patchwork Experiment" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6122" mastery_level="6" name="Relentless Dead" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
 </root>
 

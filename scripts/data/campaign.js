@@ -115306,5 +115306,725 @@ var MISSIONS = {
 		],
 		"id": "6665",
 		"name": "Accidental Spy"
+	},
+	"6666": {
+		"commander": {
+			"id": "305"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "5016"
+			},
+			{
+				"id": "5016"
+			},
+			{
+				"id": "7115"
+			},
+			{
+				"id": "7115"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "5114"
+			},
+			{
+				"id": "6115",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2125",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2082",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6111",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6666",
+		"name": "Tour of the Skies"
+	},
+	"6667": {
+		"commander": {
+			"id": "291"
+		},
+		"deck": [
+			{
+				"id": "8020"
+			},
+			{
+				"id": "1034"
+			},
+			{
+				"id": "1034"
+			},
+			{
+				"id": "2040"
+			},
+			{
+				"id": "7113"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "7171"
+			},
+			{
+				"id": "7171"
+			},
+			{
+				"id": "2088",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2060",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2082",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6667",
+		"name": "Conflicting Dates"
+	},
+	"6668": {
+		"commander": {
+			"id": "308"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "7113"
+			},
+			{
+				"id": "7171"
+			},
+			{
+				"id": "7171"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5114"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7205",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7174",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7275",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7173",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7245",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6668",
+		"name": "Inconvenient Addition Error"
+	},
+	"6669": {
+		"commander": {
+			"id": "300"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "7113"
+			},
+			{
+				"id": "7171"
+			},
+			{
+				"id": "7171"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "6172"
+			},
+			{
+				"id": "6172"
+			},
+			{
+				"id": "7057",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7057",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2082",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6111",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5148",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6669",
+		"name": "Challenge Refused"
+	},
+	"6670": {
+		"commander": {
+			"id": "317"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "2135"
+			},
+			{
+				"id": "2135"
+			},
+			{
+				"id": "5158"
+			},
+			{
+				"id": "5158"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5175",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5175",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2082",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7101",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6670",
+		"name": "No Avians Remain in the Water"
+	},
+	"6671": {
+		"commander": {
+			"id": "327"
+		},
+		"deck": [
+			{
+				"id": "8024"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "7113"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "6083"
+			},
+			{
+				"id": "5114"
+			},
+			{
+				"id": "2088",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2060",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2082",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6671",
+		"name": "This is not a Drill"
+	},
+	"6672": {
+		"commander": {
+			"id": "317"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "7113"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "5114"
+			},
+			{
+				"id": "2088",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2060",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2082",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6672",
+		"name": "Improvised Spelunking"
+	},
+	"6673": {
+		"commander": {
+			"id": "304 "
+		},
+		"deck": [
+			{
+				"id": "8020"
+			},
+			{
+				"id": "1018"
+			},
+			{
+				"id": "6115"
+			},
+			{
+				"id": "1032"
+			},
+			{
+				"id": "1032"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5166"
+			},
+			{
+				"id": "5166"
+			},
+			{
+				"id": "5034",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6054",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6054",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6164",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6164",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5155",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6673",
+		"name": "Dangerous Crowd in the Dark"
+	},
+	"6674": {
+		"commander": {
+			"id": "305"
+		},
+		"deck": [
+			{
+				"id": "8140"
+			},
+			{
+				"id": "6115"
+			},
+			{
+				"id": "1032"
+			},
+			{
+				"id": "7057"
+			},
+			{
+				"id": "2040"
+			},
+			{
+				"id": "2040"
+			},
+			{
+				"id": "7057"
+			},
+			{
+				"id": "5166"
+			},
+			{
+				"id": "5166"
+			},
+			{
+				"id": "6115",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5077",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5077",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5272",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5272",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5155",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6674",
+		"name": "How many feet under?"
+	},
+	"6675": {
+		"commander": {
+			"id": "307"
+		},
+		"deck": [
+			{
+				"id": "8020"
+			},
+			{
+				"id": "2040"
+			},
+			{
+				"id": "7057"
+			},
+			{
+				"id": "5166"
+			},
+			{
+				"id": "7113"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "5166"
+			},
+			{
+				"id": "5166"
+			},
+			{
+				"id": "6113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7276",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7276",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7246",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6675",
+		"name": "Unintended Passive Aggression"
+	},
+	"6676": {
+		"commander": {
+			"id": "369"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "6115"
+			},
+			{
+				"id": "7113"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "6115"
+			},
+			{
+				"id": "5114"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6286",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6286",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6055",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6676",
+		"name": "With your energy on the rise and the way clear of baddies you decide it's time to move on. You find the strangest pictograms in a cavern wall, little did you think they would summon powerful guardians!"
+	},
+	"6677": {
+		"commander": {
+			"id": "308"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "2166"
+			},
+			{
+				"id": "2166"
+			},
+			{
+				"id": "1034"
+			},
+			{
+				"id": "1034"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "7030"
+			},
+			{
+				"id": "6054"
+			},
+			{
+				"id": "6054"
+			},
+			{
+				"id": "2088",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2060",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2082",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6677",
+		"name": "The spellstones bound into the wall shatter as you defeat their pet guardians, and this is definitely the last time you trust these winged vile creatures, nothing like those also winged quite not vile angels."
 	}
 };
