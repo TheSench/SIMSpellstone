@@ -115965,7 +115965,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6676",
-		"name": "With your energy on the rise and the way clear of baddies you decide it's time to move on. You find the strangest pictograms in a cavern wall, little did you think they would summon powerful guardians!"
+		"name": "Hi, I'm a Monster-Summoning Trap"
 	},
 	"6677": {
 		"commander": {
@@ -116025,6 +116025,6 @@ var MISSIONS = {
 			}
 		],
 		"id": "6677",
-		"name": "The spellstones bound into the wall shatter as you defeat their pet guardians, and this is definitely the last time you trust these winged vile creatures, nothing like those also winged quite not vile angels."
+		"name": "More Wings, More Questions"
 	}
 };

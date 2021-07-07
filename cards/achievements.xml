@@ -15912,6 +15912,140 @@
     </reward>
   </achievement>
   <!-- Wizard Event 78 - Goblin END -->
+  <!-- Wizard Event 79 - Avian - Node 1 -->
+  <achievement>
+    <id>3701</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Stars are Left</name>
+    <desc>Complete the 'The Stars are Left' campaign on Mastery Level 1.</desc>
+    <mission_req>6666</mission_req>
+    <locked_start_time>1626973200</locked_start_time>
+    <!-- Thursday, 22 July 2021 17:00:00 -->
+    <req>
+      <campaign>1292</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3065" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7075" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3702</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Stars are Left</name>
+    <desc>Complete the 'The Stars are Left' campaign on Mastery Level 2.</desc>
+    <mission_req>6666</mission_req>
+    <locked_start_time>1626973200</locked_start_time>
+    <!-- Thursday, 22 July 2021 17:00:00 -->
+    <achievement_req>3701</achievement_req>
+    <req>
+      <campaign>1292</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3703</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Stars are Left</name>
+    <desc>Complete the 'The Stars are Left' campaign on Mastery Level 4.</desc>
+    <mission_req>6666</mission_req>
+    <locked_start_time>1626973200</locked_start_time>
+    <!-- Thursday, 22 July 2021 17:00:00 -->
+    <achievement_req>3702</achievement_req>
+    <req>
+      <campaign>1292</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3704</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Stars are Left</name>
+    <desc>Complete the 'The Stars are Left' campaign on Mastery Level 6.</desc>
+    <mission_req>6666</mission_req>
+    <locked_start_time>1626973200</locked_start_time>
+    <!-- Thursday, 22 July 2021 17:00:00 -->
+    <achievement_req>3703</achievement_req>
+    <req>
+      <campaign>1292</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 79 - Avian - Node 2 -->
+  <achievement>
+    <id>3705</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A not so Unexpected Journey</name>
+    <desc>Complete the 'A not so Unexpected Journey' campaign on Mastery Level 2.</desc>
+    <mission_req>6672</mission_req>
+    <locked_start_time>1628182800</locked_start_time>
+    <!-- Thursday, 5 August 2021 17:00:00 -->
+    <req>
+      <campaign>1293</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3706</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A not so Unexpected Journey</name>
+    <desc>Complete the 'A not so Unexpected Journey' campaign on Mastery Level 4.</desc>
+    <mission_req>6672</mission_req>
+    <locked_start_time>1628182800</locked_start_time>
+    <!-- Thursday, 5 August 2021 17:00:00 -->
+    <achievement_req>3705</achievement_req>
+    <req>
+      <campaign>1293</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3707</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A not so Unexpected Journey</name>
+    <desc>Complete the 'A not so Unexpected Journey' campaign on Mastery Level 6.</desc>
+    <mission_req>6672</mission_req>
+    <locked_start_time>1628182800</locked_start_time>
+    <!-- Thursday, 5 August 2021 17:00:00 -->
+    <achievement_req>3706</achievement_req>
+    <req>
+      <campaign>1293</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 79 - Avian END -->
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -16634,6 +16768,30 @@
       <campaign>1170</campaign>
       <campaign>1290</campaign>
       <campaign>1291</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Celestial Vault Revisited -->
+    <id>4033</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of The Celestial Vault</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in The Celestial Vault</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5927</mission_req>
+    <req>
+      <campaign>1149</campaign>
+      <campaign>1150</campaign>
+      <campaign>1151</campaign>
+      <campaign>1153</campaign>
+      <campaign>1154</campaign>
+      <campaign>1155</campaign>
+      <campaign>1292</campaign>
+      <campaign>1293</campaign>
       <level>7</level>
     </req>
     <reward>

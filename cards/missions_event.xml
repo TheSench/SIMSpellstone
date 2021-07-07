@@ -53616,9 +53616,9 @@
   </mission>
   <mission>
     <id>6676</id>
-    <name>With your energy on the rise and the way clear of baddies you decide it's time to move on. You find the strangest pictograms in a cavern wall, little did you think they would summon powerful guardians!</name>
+    <name>Hi, I'm a Monster-Summoning Trap</name>
     <energy>18</energy>
-    <desc />
+    <desc>With your energy on the rise and the way clear of baddies you decide it's time to move on. You find the strangest pictograms in a cavern wall, little did you think they would summon powerful guardians!</desc>
     <commander id="369" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -53640,9 +53640,9 @@
   </mission>
   <mission>
     <id>6677</id>
-    <name>The spellstones bound into the wall shatter as you defeat their pet guardians, and this is definitely the last time you trust these winged vile creatures, nothing like those also winged quite not vile angels.</name>
+    <name>More Wings, More Questions</name>
     <energy>18</energy>
-    <desc />
+    <desc>The spellstones bound into the wall shatter as you defeat their pet guardians, and this is definitely the last time you trust these winged vile creatures, nothing like those also winged quite not vile angels.</desc>
     <commander id="308" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />

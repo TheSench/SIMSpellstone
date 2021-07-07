@@ -1553,6 +1553,7 @@
     <icon_bundle>110</icon_bundle>
     <effect>
       <skill id="enhance" s="poison" mult="0.5" all="1" />
+      <skill id="enhance" s="counterpoison" mult="0.5" all="1" />
     </effect>
   </battleground>
   <battleground>
