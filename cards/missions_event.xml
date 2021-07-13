@@ -53306,7 +53306,7 @@
     <id>6663</id>
     <name>Actions Speak Louder</name>
     <energy>18</energy>
-    <desc>After all the trouble their are making you go through, they told you more about their plans than if they just let you leave but well, you definitely had much more than you expected from your little sighseeing tour.</desc>
+    <desc>After all the trouble they are making you go through, they told you more about their plans than if they just let you leave but well, you definitely had much more than you expected from your little sightseeing tour.</desc>
     <commander id="353" />
     <deck>
       <card id="8141" name="Patchwork Adams" />
@@ -53330,7 +53330,7 @@
     <id>6664</id>
     <name>No Secrets Left Behind</name>
     <energy>18</energy>
-    <desc>You manage to take your well deserved insect-free rest inside the tunnels, and now it's time to leave this wierd place and maybe find some place not swarming with insan, unreasonable and bad mannered company.</desc>
+    <desc>You manage to take your well deserved insect-free rest inside the tunnels, and now it's time to leave this weird place and maybe find some place not swarming with insane, unreasonable and bad mannered company.</desc>
     <commander id="341" />
     <deck>
       <card id="8086" name="Gobatron's Brutalizer" />
@@ -53354,7 +53354,7 @@
     <id>6665</id>
     <name>Accidental Spy</name>
     <energy>18</energy>
-    <desc>You end up leaving the fortress with way, way more information than you really wanted. Maybe next time it would be smart to just take a peek at the landscape from afar, to prevent some megalomaniac plans being accidentally discovered.</desc>
+    <desc>You end up leaving the fortress with way, way more information than you really wanted. Maybe next time it would be smart to just take a peek at the landscape from afar, to prevent some megalomaniac’s plans being accidentally discovered.</desc>
     <commander id="348" />
     <deck>
       <card id="8091" name="Cannon Bomber" />

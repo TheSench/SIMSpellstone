@@ -2209,6 +2209,13 @@ var BATTLEGROUNDS = {
 				"id": "enhance",
 				"mult": 0.5,
 				"s": "counterpoison"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 0.5,
+				"s": "poisonstrike"
 			}
 		],
 		"id": "541",
