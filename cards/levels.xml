@@ -614,5 +614,45 @@
     <id>70</id>
     <xp>4370000</xp>
   </level>
+  <level>
+    <id>71</id>
+    <xp>4490000</xp>
+  </level>
+  <level>
+    <id>72</id>
+    <xp>4610000</xp>
+  </level>
+  <level>
+    <id>73</id>
+    <xp>4730000</xp>
+  </level>
+  <level>
+    <id>74</id>
+    <xp>4850000</xp>
+  </level>
+  <level>
+    <id>75</id>
+    <xp>4970000</xp>
+  </level>
+  <level>
+    <id>76</id>
+    <xp>5090000</xp>
+  </level>
+  <level>
+    <id>77</id>
+    <xp>5210000</xp>
+  </level>
+  <level>
+    <id>78</id>
+    <xp>5330000</xp>
+  </level>
+  <level>
+    <id>79</id>
+    <xp>5450000</xp>
+  </level>
+  <level>
+    <id>80</id>
+    <xp>5570000</xp>
+  </level>
 </root>
 

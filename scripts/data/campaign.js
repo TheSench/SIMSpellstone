@@ -5308,6 +5308,40 @@ var CAMPAIGNS = {
 		],
 		"name": "Ain't Nobody wants to Thwart This"
 	},
+	"1292": {
+		"battleground_id": "2053",
+		"id": "1292",
+		"items": {
+			"3065": 0.6
+		},
+		"location_id": "13",
+		"missions": [
+			"6666",
+			"6667",
+			"6668",
+			"6669",
+			"6670",
+			"6671"
+		],
+		"name": "The Stars are Left"
+	},
+	"1293": {
+		"battleground_id": "2053",
+		"id": "1293",
+		"items": {
+			"3065": 0.8
+		},
+		"location_id": "13",
+		"missions": [
+			"6672",
+			"6673",
+			"6674",
+			"6675",
+			"6676",
+			"6677"
+		],
+		"name": "A not so Unexpected Journey"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},

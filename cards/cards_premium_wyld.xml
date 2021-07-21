@@ -3636,8 +3636,9 @@
     <health>10</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="2" y="3" />
+    <skill id="rally" x="5" y="3" />
     <skill id="protect" x="4" y="3" />
+    <skill id="pierce" x="10" />
     <type>3</type>
     <sub_type>10</sub_type>
     <set>3000</set>
@@ -3652,11 +3653,15 @@
     <upgrade>
       <level>4</level>
       <attack>6</attack>
+      <skill id="rally" x="5" y="3" />
+      <skill id="protect" x="4" y="3" />
+      <skill id="pierce" x="11" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="2" y="3" />
+      <skill id="rally" x="5" y="3" />
       <skill id="protect" x="5" y="3" />
+      <skill id="pierce" x="11" />
     </upgrade>
   </unit>
   <unit>
@@ -3670,8 +3675,9 @@
     <health>13</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="2" y="3" />
+    <skill id="rally" x="5" y="3" />
     <skill id="protect" x="5" y="3" />
+    <skill id="pierce" x="11" />
     <type>3</type>
     <sub_type>10</sub_type>
     <set>3000</set>
@@ -3685,13 +3691,15 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="rally" x="2" y="3" />
+      <skill id="rally" x="5" y="3" />
       <skill id="protect" x="6" y="3" />
+      <skill id="pierce" x="11" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="3" y="3" />
+      <skill id="rally" x="6" y="3" />
       <skill id="protect" x="6" y="3" />
+      <skill id="pierce" x="12" />
     </upgrade>
   </unit>
   <unit>
@@ -3705,8 +3713,9 @@
     <health>16</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="3" y="3" />
+    <skill id="rally" x="6" y="3" />
     <skill id="protect" x="6" y="3" />
+    <skill id="pierce" x="12" />
     <type>3</type>
     <sub_type>10</sub_type>
     <set>3000</set>
@@ -3721,11 +3730,15 @@
     <upgrade>
       <level>4</level>
       <attack>7</attack>
+      <skill id="rally" x="6" y="3" />
+      <skill id="protect" x="7" y="3" />
+      <skill id="pierce" x="13" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="4" y="3" />
+      <skill id="rally" x="7" y="3" />
       <skill id="protect" x="7" y="3" />
+      <skill id="pierce" x="14" />
     </upgrade>
   </unit>
   <unit>
@@ -37604,6 +37617,136 @@
       <skill id="corrosive" x="8" />
       <skill id="regenerate" x="9" />
       <skill id="poison" x="11" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7292</id>
+    <card_type>2</card_type>
+    <name>Sunwarden</name>
+    <picture>Avian_Sunfeather_Warden_A</picture>
+    <asset_bundle>226</asset_bundle>
+    <hidden_until_time>1626973200</hidden_until_time>
+    <attack>10</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="backlash" x="3" />
+    <skill id="strike" x="8" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="3" />
+      <skill id="strike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="8" />
+      <skill id="backlash" x="3" />
+      <skill id="strike" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17292</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dazzling Sunwarden</name>
+    <picture>Avian_Sunfeather_Warden_A</picture>
+    <asset_bundle>226</asset_bundle>
+    <hidden_until_time>1626973200</hidden_until_time>
+    <attack>11</attack>
+    <health>33</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="8" />
+    <skill id="backlash" x="3" />
+    <skill id="strike" x="9" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="8" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="8" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="9" />
+      <skill id="backlash" x="4" />
+      <skill id="strike" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27292</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Blinding Sunwarden</name>
+    <picture>Avian_Sunfeather_Warden_B</picture>
+    <asset_bundle>226</asset_bundle>
+    <hidden_until_time>1626973200</hidden_until_time>
+    <attack>12</attack>
+    <health>34</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="9" />
+    <skill id="backlash" x="4" />
+    <skill id="strike" x="11" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="9" />
+      <skill id="backlash" x="5" />
+      <skill id="strike" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="10" />
+      <skill id="backlash" x="5" />
+      <skill id="strike" x="12" />
     </upgrade>
   </unit>
 </root>

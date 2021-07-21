@@ -53378,7 +53378,7 @@
     <id>6666</id>
     <name>Tour of the Skies</name>
     <energy>18</energy>
-    <desc>After the wierdness you've experienced in some of the other locations you visited, the freshness of the Celestial Vault catches you and brings a load of fresh air into your lungs.</desc>
+    <desc>After the weirdness you've experienced in some of the other locations you visited, the freshness of the Celestial Vault catches you and brings a load of fresh air into your lungs.</desc>
     <commander id="305" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -53402,7 +53402,7 @@
     <id>6667</id>
     <name>Conflicting Dates</name>
     <energy>18</energy>
-    <desc>The attack of the avians was totally unexpected, and after a moment of hestiation you consult your calendar, since you're not supposed to be disturbing anybody here.</desc>
+    <desc>The attack of the avians was totally unexpected, and after a moment of hesitation you consult your calendar, since you're not supposed to be disturbing anybody here.</desc>
     <commander id="291" />
     <deck>
       <card id="8020" name="Fortune's Scallywag" />

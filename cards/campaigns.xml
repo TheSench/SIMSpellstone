@@ -10061,6 +10061,94 @@
     <!-- Thursday, 19 August 2021 17:00:00 -->
   </campaign>
   <!-- Campaign Event 32 - The Celestial Vault  -->
+  <campaign>
+    <id>1292</id>
+    <name>The Stars are Left</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1626973200</locked_start_time>
+    <!-- Thursday, 22 July 2021 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>13</location_id>
+    <x>880</x>
+    <!-- left right -->
+    <y>615</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6666</mission_id>
+      <mission_id>6667</mission_id>
+      <mission_id>6668</mission_id>
+      <mission_id>6669</mission_id>
+      <mission_id>6670</mission_id>
+      <mission_id>6671</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2606" number="25" />
+      /&gt;
+      <!-- Celestial Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2215" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2166" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2606" number="75" />
+      /&gt;
+      <!-- Celestial Flasks -->
+      <card level="7" id="2214" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3065" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1632330000</ignore_energy_reduction_until>
+    <!-- Wednesday, 22 September 2021 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1293</id>
+    <name>A not so Unexpected Journey</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1290" level="1" />
+    <locked_start_time>1628182800</locked_start_time>
+    <!-- Thursday, 5 August 2021 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>13</location_id>
+    <x>910</x>
+    <!-- left right -->
+    <y>485</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6672</mission_id>
+      <mission_id>6673</mission_id>
+      <mission_id>6674</mission_id>
+      <mission_id>6675</mission_id>
+      <mission_id>6676</mission_id>
+      <mission_id>6677</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2606" number="25" />
+      /&gt;
+      <!-- Celestial Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2202" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2119" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2606" number="75" />
+      /&gt;
+      <!-- Celestial Flasks -->
+      <card level="7" id="2214" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3065" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1633453200</ignore_energy_reduction_until>
+    <!-- Tuesday, 5 October 2021 17:00:00 -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
