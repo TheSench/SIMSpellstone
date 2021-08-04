@@ -10109,7 +10109,7 @@
     <id>1293</id>
     <name>A not so Unexpected Journey</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1290" level="1" />
+    <campaign_req id="1292" level="1" />
     <locked_start_time>1628182800</locked_start_time>
     <!-- Thursday, 5 August 2021 17:00:00 -->
     <battleground_id>2053</battleground_id>
@@ -10146,9 +10146,10 @@
       <!-- Map Legendary -->
     </rewards>
     <find_item id="3065" drop_per_energy=".8" />
-    <ignore_energy_reduction_until>1633453200</ignore_energy_reduction_until>
-    <!-- Tuesday, 5 October 2021 17:00:00 -->
+    <ignore_energy_reduction_until>1632330000</ignore_energy_reduction_until>
+    <!-- Wednesday, 22 September 2021 17:00:00 -->
   </campaign>
+  <!-- Campaign Event 33 - Desolate Red Valley  -->
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

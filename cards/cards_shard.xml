@@ -4081,7 +4081,7 @@
     <picture>Avian_Mecha_Bomber_Cukoo_A</picture>
     <asset_bundle>226</asset_bundle>
     <item_name>Clockoo Stone</item_name>
-    <item_desc>Collect Construction Stones to upgrade the Legendary Sgt. Clockoo!</item_desc>
+    <item_desc>Collect Clockoo Stones to upgrade the Legendary Sgt. Clockoo!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -7207,6 +7207,86 @@
       <skill id="protect" x="7" y="11" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6613</id>
+    <card_type>2</card_type>
+    <name>Skylo, Lord of the Wings</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Avian_Red_Dawn_Rider_A</picture>
+    <asset_bundle>226</asset_bundle>
+    <hidden_until_time>1625763600</hidden_until_time>
+    <!-- Thursday, 8 July 2021 17:00:00 -->
+    <item_name>Skylo Stone</item_name>
+    <item_desc>Collect Skylo Stones to upgrade the Legendary Skylo, Lord of the Wings card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="protect" x="2" y="10" all="1" />
+    <skill id="legion" x="2" />
+    <skill id="fervor" x="3" y="10" />
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <skill id="protect" x="2" y="10" all="1" />
+      <skill id="legion" x="3" />
+      <skill id="fervor" x="3" y="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+      <skill id="protect" x="3" y="10" all="1" />
+      <skill id="legion" x="3" />
+      <skill id="fervor" x="3" y="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="3" y="10" all="1" />
+      <skill id="legion" x="3" />
+      <skill id="fervor" x="4" y="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>9</attack>
+      <skill id="protect" x="3" y="10" all="1" />
+      <skill id="legion" x="4" />
+      <skill id="fervor" x="4" y="10" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>22</health>
+      <skill id="protect" x="4" y="10" all="1" />
+      <skill id="legion" x="4" />
+      <skill id="fervor" x="4" y="10" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>10</attack>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="protect" x="4" y="10" all="1" />
+      <skill id="legion" x="5" />
+      <skill id="fervor" x="5" y="10" />
+    </upgrade>
+  </unit>
   <!-- === CHAOS END === -->
   <!-- ============================== -->
   <!-- === WYLD PREMIUM CHAMPIONS === -->
@@ -9037,14 +9117,14 @@
   <unit>
     <id>7621</id>
     <card_type>2</card_type>
-    <name>Saucy, Lady of the Pot</name>
+    <name>Saucy, Lady of the Cauldron</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Avian_Turkey_Witch_A</picture>
     <asset_bundle>226</asset_bundle>
     <item_name>Saucy Stone</item_name>
-    <item_desc>Collect Saucy Stones to upgrade the Legendary Saucy, Lady of the Pot!</item_desc>
+    <item_desc>Collect Saucy Stones to upgrade the Legendary Saucy, Lady of the Cauldron!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>

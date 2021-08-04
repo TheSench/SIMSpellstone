@@ -16046,6 +16046,139 @@
     </reward>
   </achievement>
   <!-- Wizard Event 79 - Avian END -->
+  <!-- Wizard Event 80 - Undead - Node 1 -->
+  <achievement>
+    <id>3708</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Questing for Rest and Peace</name>
+    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 1.</desc>
+    <mission_req>6678</mission_req>
+    <locked_start_time>1629392400</locked_start_time>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <req>
+      <campaign>1294</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3080" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7076" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3709</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Questing for Rest and Peace</name>
+    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 2.</desc>
+    <mission_req>6678</mission_req>
+    <locked_start_time>1629392400</locked_start_time>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <achievement_req>3708</achievement_req>
+    <req>
+      <campaign>1294</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3710</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Questing for Rest and Peace</name>
+    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 4.</desc>
+    <mission_req>6678</mission_req>
+    <locked_start_time>1629392400</locked_start_time>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <achievement_req>3709</achievement_req>
+    <req>
+      <campaign>1294</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3711</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Questing for Rest and Peace</name>
+    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 6.</desc>
+    <mission_req>6678</mission_req>
+    <locked_start_time>1629392400</locked_start_time>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <achievement_req>3710</achievement_req>
+    <req>
+      <campaign>1294</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 80 - Undead - Node 2 -->
+  <achievement>
+    <id>3712</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Undying Conflicts</name>
+    <desc>Complete the 'Undying Conflicts' campaign on Mastery Level 2.</desc>
+    <mission_req>6684</mission_req>
+    <locked_start_time>1630602000</locked_start_time>
+    <!-- Thursday, 2 September 2021 17:00:00 -->
+    <req>
+      <campaign>1295</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3713</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Undying Conflicts</name>
+    <desc>Complete the 'Undying Conflicts' campaign on Mastery Level 4.</desc>
+    <mission_req>6684</mission_req>
+    <locked_start_time>1630602000</locked_start_time>
+    <!-- Thursday, 2 September 2021 17:00:00 -->
+    <achievement_req>3712</achievement_req>
+    <req>
+      <campaign>1295</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3714</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Undying Conflicts</name>
+    <desc>Complete the 'Undying Conflicts' campaign on Mastery Level 6.</desc>
+    <mission_req>6684</mission_req>
+    <locked_start_time>1630602000</locked_start_time>
+    <!-- Thursday, 2 September 2021 17:00:00 -->
+    <achievement_req>3713</achievement_req>
+    <req>
+      <campaign>1295</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -16792,6 +16925,29 @@
       <campaign>1155</campaign>
       <campaign>1292</campaign>
       <campaign>1293</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Desolate Red Valley Revisited -->
+    <id>4034</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of The Desolate Red Valley</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in The Desolate Red Valley</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5927</mission_req>
+    <req>
+      <campaign>1183</campaign>
+      <campaign>1184</campaign>
+      <campaign>1185</campaign>
+      <campaign>1186</campaign>
+      <campaign>1187</campaign>
+      <campaign>1294</campaign>
+      <campaign>1295</campaign>
       <level>7</level>
     </req>
     <reward>

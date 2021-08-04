@@ -577,7 +577,7 @@
   <battleground>
     <id>130</id>
     <name>Undead Vampirism</name>
-    <desc>Deals damage to opposing creature and then heals self, even while on delay. Damage and heal are equal to 5% plus 3 of the card’s base Health. This damage cannot be increased.</desc>
+    <desc>Deals damage to opposing creatures and then heals self, even while on delay. Damage and heal are equal to 5% plus 3 of the card’s base Health. This damage cannot be increased.</desc>
     <icon>filter_undead_64.png</icon>
     <effect>
       <add_skill id="vampirism" mult=".05" base="health" x="3" y="7" />

@@ -53662,5 +53662,293 @@
       <card id="6053" mastery_level="7" name="Squire Gorger" />
     </deck>
   </mission>
+  <mission>
+    <id>6678</id>
+    <name>Out Onto Fresh Vanilla Outdoors</name>
+    <energy>18</energy>
+    <desc>Enough with strange places of dark mayhem and powerful magics, after some consideration you decide to visit the sunny side of the red valley for a well-deserved picnic.</desc>
+    <commander id="288" />
+    <deck>
+      <card id="8028" name="Grizzly Bones" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="2159" name="Toad Scourge" />
+      <card id="2159" name="Toad Scourge" />
+      <card id="5016" mastery_level="2" name="Fowl Swarm" />
+      <card id="5114" mastery_level="3" name="Wingward" />
+      <card id="7168" mastery_level="4" name="Werefang the Howler" />
+      <card id="7126" mastery_level="5" name="Wyldheart Hunter" />
+      <card id="5177" mastery_level="6" name="Thunderbird" />
+      <card id="1644" mastery_level="7" name="Blackfin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6679</id>
+    <name>Interruptions. Always the Interruptions...</name>
+    <energy>18</energy>
+    <desc>It would seem that there are some individuals who are not taking kindly to you wanting to have a quiet meal in the outdoors, or maybe they are over enthusiastic about it?</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="2081" name="Starstriker" />
+      <card id="2081" name="Starstriker" />
+      <card id="7029" name="Skeletal Giant" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6016" name="Winged Warrior" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="5086" mastery_level="2" name="Spirit Blades" />
+      <card id="5086" mastery_level="3" name="Spirit Blades" />
+      <card id="6165" mastery_level="4" name="Skelepede" />
+      <card id="7033" mastery_level="5" name="Treebond Skull" />
+      <card id="7086" mastery_level="6" name="Scavenger of Elaria" />
+      <card id="7037" mastery_level="7" name="Bane" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6680</id>
+    <name>The Path Behind</name>
+    <energy>18</energy>
+    <desc>Were those...zombie penguin legionnaires? No matter, in your days you have seen some weird things, and now is not the time to be distracted by a hypothetical undead animal stampede.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="2081" name="Starstriker" />
+      <card id="2081" name="Starstriker" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2119" name="Flaming Hailwing" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="5086" mastery_level="2" name="Spirit Blades" />
+      <card id="7257" mastery_level="3" name="Skeleton of Erosion" />
+      <card id="6165" mastery_level="4" name="Skelepede" />
+      <card id="5034" mastery_level="5" name="Skyward Guardian" />
+      <card id="5034" mastery_level="6" name="Skyward Guardian" />
+      <card id="7037" mastery_level="7" name="Bane" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6681</id>
+    <name>Nightfall</name>
+    <energy>18</energy>
+    <desc>Night falls on the camp, which is starting to resemble a horror story more than a casual picnic. You start wondering if all those avians are still annoyed because of the intrusion in the Celestial Vault.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="8012" name="Nether Warrior" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1617" name="Water Elemental" />
+      <card id="2088" name="Bog Witch" />
+      <card id="2101" name="Rot Goblin" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="6056" name="Potoo" />
+      <card id="7170" name="Gallows Hand" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="7084" mastery_level="2" name="Witchwood" />
+      <card id="7237" mastery_level="3" name="Bogbringer" />
+      <card id="7210" mastery_level="4" name="Battlefield Swindler" />
+      <card id="7213" mastery_level="5" name="Siren of the Bog" />
+      <card id="6277" mastery_level="6" name="Ironblood Ghoul" />
+      <card id="6276" mastery_level="7" name="Weirdflesh Thing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6682</id>
+    <name>Troll in the Dark</name>
+    <energy>18</energy>
+    <desc>You shatter bones and splatter yourself with disgusting ichor which is gonna cost a fortune at the laundry's. Mist veils surround you as some sick weirdo does moaning sounds in some kind of distasteful prank.</desc>
+    <commander id="267" />
+    <deck>
+      <card id="8015" name="Nether Wraith" />
+      <card id="2202" name="Pet Parrrot" />
+      <card id="2202" name="Pet Parrrot" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="2190" name="Poltergeist Wall" />
+      <card id="2190" name="Poltergeist Wall" />
+      <card id="6081" mastery_level="2" name="Apparition" />
+      <card id="6122" mastery_level="3" name="Relentless Dead" />
+      <card id="6168" mastery_level="4" name="Chainwhip Spirit" />
+      <card id="2032" mastery_level="5" name="Brimstone" />
+      <card id="7236" mastery_level="6" name="Unicorn Phantom" />
+      <card id="7131" mastery_level="7" name="Xovrus, Death's End" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6683</id>
+    <name>No Bullying Accepted</name>
+    <energy>18</energy>
+    <desc>After fighting your way clear of the nocturne trap, you drop a hard challenge to the one responsible for this, demanding satisfaction. And new clothes.</desc>
+    <commander id="373" />
+    <deck>
+      <card id="8013" name="Nether Brute" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="5036" mastery_level="2" name="Winter Tail" />
+      <card id="5036" mastery_level="3" name="Winter Tail" />
+      <card id="7121" mastery_level="4" name="Varachnis" />
+      <card id="7121" mastery_level="5" name="Varachnis" />
+      <card id="7169" mastery_level="6" name="Mortalum, Axe Crusher" />
+      <card id="7169" mastery_level="7" name="Mortalum, Axe Crusher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6684</id>
+    <name>Into the Gloom</name>
+    <energy>18</energy>
+    <desc>You managed to settle things with that joker, but unfortunately he ghosted his followers and made a hasty retreat. Be cool and don't leave your followers behind.</desc>
+    <commander id="332" />
+    <deck>
+      <card id="8075" name="Vorpal Magnate" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" name="Wraith" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="7030" mastery_level="3" name="Arctic Ambusher" />
+      <card id="6046" mastery_level="4" name="Celerity" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="5169" mastery_level="6" name="Vengeful Spirit" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6685</id>
+    <name>It's a Trap!</name>
+    <energy>18</energy>
+    <desc>Rushing after that bully so fast and without any backout maybe was not your best plan. You realize this as the undead rise and the ambush closes around you!</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="1034" name="Winged Warrior" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5166" mastery_level="2" name="Hoarfrost Buzzard" />
+      <card id="5166" mastery_level="3" name="Hoarfrost Buzzard" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="6174" mastery_level="5" name="Deatheye Owl" />
+      <card id="5155" mastery_level="6" name="Cockaboo Fallen" />
+      <card id="7076" mastery_level="7" name="Crow King" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6686</id>
+    <name>The Jaws of a bad Trap</name>
+    <energy>18</energy>
+    <desc>For a moment there you thought you were a goner, but despite your bluntness, the trap was actually so bad that you barely noticed it. What's next?</desc>
+    <commander id="367" />
+    <deck>
+      <card id="8075" name="Vorpal Magnate" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" name="Wraith" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="7030" mastery_level="3" name="Arctic Ambusher" />
+      <card id="6046" mastery_level="4" name="Celerity" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="5169" mastery_level="6" name="Vengeful Spirit" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6687</id>
+    <name>Best of Three</name>
+    <energy>18</energy>
+    <desc>Your rival decided to test his mettle against you once again, if only there were at least some clear rules about these kinds of things. How tiresome.</desc>
+    <commander id="373" />
+    <deck>
+      <card id="8030" name="Marrowsworn's Cohort" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="5036" mastery_level="2" name="Winter Tail" />
+      <card id="5036" mastery_level="3" name="Winter Tail" />
+      <card id="7121" mastery_level="4" name="Varachnis" />
+      <card id="7121" mastery_level="5" name="Varachnis" />
+      <card id="7203" mastery_level="6" name="Tuloom, Spirit Shaman" />
+      <card id="7238" mastery_level="7" name="Bogwater Horde" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6688</id>
+    <name>Walking Marathon</name>
+    <energy>18</energy>
+    <desc>After endlessly battling avians, undeads and strange creatures whose corpses mysteriously vanish for reasons unknown, you manage to defeat the bully and extract laundry service from him for the splatters.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8075" name="Vorpal Magnate" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" name="Wraith" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="7030" mastery_level="3" name="Arctic Ambusher" />
+      <card id="6046" mastery_level="4" name="Celerity" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="5169" mastery_level="6" name="Vengeful Spirit" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6689</id>
+    <name>Best of Five?</name>
+    <energy>18</energy>
+    <desc>The rules are not clear, but your opponent is challenging you to a final confrontation. The winner gets double laundry money plus all the fame and glory!</desc>
+    <commander id="373" />
+    <deck>
+      <card id="8031" name="Boneslither Maw" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="6164" name="Abomination" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="5036" mastery_level="2" name="Winter Tail" />
+      <card id="5036" mastery_level="3" name="Winter Tail" />
+      <card id="7121" mastery_level="4" name="Varachnis" />
+      <card id="7121" mastery_level="5" name="Varachnis" />
+      <card id="7203" mastery_level="6" name="Tuloom, Spirit Shaman" />
+      <card id="7238" mastery_level="7" name="Bogwater Horde" />
+    </deck>
+  </mission>
 </root>
 

@@ -487,7 +487,7 @@ var BATTLEGROUNDS = {
 		"name": "Insect Swarm"
 	},
 	"130": {
-		"desc": "Deals damage to opposing creature and then heals self, even while on delay. Damage and heal are equal to 5% plus 3 of the card’s base Health. This damage cannot be increased.",
+		"desc": "Deals damage to opposing creatures and then heals self, even while on delay. Damage and heal are equal to 5% plus 3 of the card’s base Health. This damage cannot be increased.",
 		"effect": [
 			{
 				"base": "health",
