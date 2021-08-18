@@ -5342,6 +5342,40 @@ var CAMPAIGNS = {
 		],
 		"name": "A not so Unexpected Journey"
 	},
+	"1294": {
+		"battleground_id": "2048",
+		"id": "1294",
+		"items": {
+			"3080": 0.6
+		},
+		"location_id": "18",
+		"missions": [
+			"6678",
+			"6679",
+			"6680",
+			"6681",
+			"6682",
+			"6683"
+		],
+		"name": "Questing for Rest and Peace"
+	},
+	"1295": {
+		"battleground_id": "2048",
+		"id": "1295",
+		"items": {
+			"3080": 0.8
+		},
+		"location_id": "18",
+		"missions": [
+			"6684",
+			"6685",
+			"6686",
+			"6687",
+			"6688",
+			"6689"
+		],
+		"name": "Undying Conflicts"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -115763,7 +115797,7 @@ var MISSIONS = {
 	},
 	"6673": {
 		"commander": {
-			"id": "304 "
+			"id": "304"
 		},
 		"deck": [
 			{

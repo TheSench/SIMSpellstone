@@ -53547,7 +53547,7 @@
     <name>Dangerous Crowd in the Dark</name>
     <energy>18</energy>
     <desc>With your feet firmly planted in solid ground you're determined to make the trip worthwhile and at least leave this place with some insightful and interesting views.</desc>
-    <commander id="304 " />
+    <commander id="304" />
     <deck>
       <card id="8020" name="Fortune's Scallywag" />
       <card id="1018" name="Armored Eagle" />

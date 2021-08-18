@@ -6669,19 +6669,19 @@
     <picture>Undead_Vampire_Neonate_A</picture>
     <asset_bundle>195</asset_bundle>
     <hidden_until_time>1595350800</hidden_until_time>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>24</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="enrage" x="1" all="1" y="7" />
-    <skill id="leech" x="6" />
+    <skill id="leech" x="9" />
     <skill id="berserk" x="1" />
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -6690,13 +6690,13 @@
     <upgrade>
       <level>4</level>
       <skill id="enrage" x="1" all="1" y="7" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="10" />
       <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="enrage" x="1" all="1" y="7" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="10" />
       <skill id="berserk" x="2" />
     </upgrade>
   </unit>
@@ -6708,12 +6708,12 @@
     <picture>Undead_Vampire_Neonate_A</picture>
     <asset_bundle>195</asset_bundle>
     <hidden_until_time>1595350800</hidden_until_time>
-    <attack>6</attack>
+    <attack>7</attack>
     <health>26</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="enrage" x="1" all="1" y="7" />
-    <skill id="leech" x="7" />
+    <skill id="leech" x="10" />
     <skill id="berserk" x="2" />
     <type>2</type>
     <sub_type>7</sub_type>
@@ -6721,24 +6721,24 @@
     <upgrade>
       <level>2</level>
       <skill id="enrage" x="2" all="1" y="7" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="10" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="enrage" x="2" all="1" y="7" />
-      <skill id="leech" x="8" />
+      <skill id="leech" x="11" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="enrage" x="2" all="1" y="7" />
-      <skill id="leech" x="8" />
+      <skill id="leech" x="11" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>7</attack>
+      <attack>8</attack>
     </upgrade>
   </unit>
   <unit>
@@ -6749,19 +6749,19 @@
     <picture>Undead_Vampire_Neonate_B</picture>
     <asset_bundle>195</asset_bundle>
     <hidden_until_time>1595350800</hidden_until_time>
-    <attack>7</attack>
+    <attack>8</attack>
     <health>27</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="enrage" x="2" all="1" y="7" />
-    <skill id="leech" x="9" />
+    <skill id="leech" x="12" />
     <skill id="berserk" x="3" />
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <attack>8</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -6770,13 +6770,13 @@
     <upgrade>
       <level>4</level>
       <skill id="enrage" x="3" all="1" y="7" />
-      <skill id="leech" x="9" />
+      <skill id="leech" x="12" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="enrage" x="3" all="1" y="7" />
-      <skill id="leech" x="10" />
+      <skill id="leech" x="13" />
       <skill id="berserk" x="4" />
     </upgrade>
   </unit>
@@ -10205,7 +10205,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="rally" x="2" y="7" />
-    <skill id="leech" x="3" />
+    <skill id="leech" x="11" />
     <type>3</type>
     <sub_type>7</sub_type>
     <set>1000</set>
@@ -10221,12 +10221,12 @@
     <upgrade>
       <level>4</level>
       <skill id="rally" x="3" y="7" />
-      <skill id="leech" x="3" />
+      <skill id="leech" x="11" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="rally" x="4" y="7" />
-      <skill id="leech" x="4" />
+      <skill id="leech" x="12" />
     </upgrade>
     <desc>Every child knows the tale of the Shadow Riders, ghouls who prowl the forests at night.</desc>
   </unit>
@@ -10243,8 +10243,8 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="rally" x="5" y="7" />
-    <skill id="protect" x="1" y="3" />
-    <skill id="leech" x="4" />
+    <skill id="protect" x="2" y="3" />
+    <skill id="leech" x="12" />
     <type>3</type>
     <sub_type>7</sub_type>
     <set>1000</set>
@@ -10260,14 +10260,14 @@
     <upgrade>
       <level>4</level>
       <skill id="rally" x="5" y="7" />
-      <skill id="protect" x="1" y="3" />
-      <skill id="leech" x="5" />
+      <skill id="protect" x="2" y="3" />
+      <skill id="leech" x="13" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="rally" x="6" y="7" />
-      <skill id="protect" x="2" y="3" all="1" />
-      <skill id="leech" x="5" />
+      <skill id="protect" x="3" y="3" all="1" />
+      <skill id="leech" x="13" />
     </upgrade>
   </unit>
   <unit>
@@ -10283,8 +10283,8 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="rally" x="7" y="7" />
-    <skill id="protect" x="2" y="3" all="1" />
-    <skill id="leech" x="7" />
+    <skill id="protect" x="3" y="3" all="1" />
+    <skill id="leech" x="14" />
     <type>3</type>
     <sub_type>7</sub_type>
     <set>1000</set>
@@ -10302,15 +10302,15 @@
       <level>4</level>
       <health>25</health>
       <skill id="rally" x="8" y="7" />
-      <skill id="protect" x="2" y="3" all="1" />
-      <skill id="leech" x="8" />
+      <skill id="protect" x="3" y="3" all="1" />
+      <skill id="leech" x="15" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>26</health>
       <skill id="rally" x="8" y="7" />
-      <skill id="protect" x="3" y="3" all="1" />
-      <skill id="leech" x="9" />
+      <skill id="protect" x="4" y="3" all="1" />
+      <skill id="leech" x="17" />
     </upgrade>
   </unit>
   <unit>

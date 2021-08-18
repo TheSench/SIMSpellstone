@@ -1351,7 +1351,7 @@
     <asset_bundle>19</asset_bundle>
     <cost>1</cost>
     <attack>0</attack>
-    <health>7</health>
+    <health>9</health>
     <skill id="strike" x="2" />
     <rarity>3</rarity>
     <type>2</type>
@@ -1359,7 +1359,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>8</health>
+      <health>10</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -1375,7 +1375,7 @@
       <level>5</level>
       <skill id="strike" x="2" />
       <skill id="strike" x="2" />
-      <skill id="strike" x="1" />
+      <skill id="strike" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -1387,32 +1387,32 @@
     <asset_bundle>19</asset_bundle>
     <cost>1</cost>
     <attack>0</attack>
-    <health>9</health>
+    <health>11</health>
+    <skill id="strike" x="3" />
     <skill id="strike" x="2" />
     <skill id="strike" x="2" />
-    <skill id="strike" x="1" />
     <rarity>3</rarity>
     <type>2</type>
     <sub_type>7</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>10</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>11</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="strike" x="2" />
-      <skill id="strike" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
       <skill id="strike" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <skill id="strike" x="4" />
       <skill id="strike" x="3" />
-      <skill id="strike" x="2" />
       <skill id="strike" x="2" />
     </upgrade>
   </unit>
@@ -1425,8 +1425,8 @@
     <asset_bundle>19</asset_bundle>
     <cost>1</cost>
     <attack>0</attack>
-    <health>12</health>
-    <skill id="strike" x="3" />
+    <health>14</health>
+    <skill id="strike" x="4" />
     <skill id="strike" x="3" />
     <skill id="strike" x="2" />
     <rarity>3</rarity>
@@ -1435,23 +1435,23 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>14</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="strike" x="3" />
-      <skill id="strike" x="3" />
+      <skill id="strike" x="4" />
+      <skill id="strike" x="4" />
       <skill id="strike" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>16</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>5</level>
+      <skill id="strike" x="5" />
       <skill id="strike" x="4" />
       <skill id="strike" x="4" />
-      <skill id="strike" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -37183,6 +37183,140 @@
       <skill id="absorb" x="10" />
       <skill id="protect" x="10" y="2" />
       <skill id="strike" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6292</id>
+    <card_type>2</card_type>
+    <name>Nightbreaker Lady</name>
+    <picture>Undead_Vampiress_Knight_A</picture>
+    <asset_bundle>228</asset_bundle>
+    <hidden_until_time>1629392400</hidden_until_time>
+    <attack>10</attack>
+    <health>39</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="rally" x="5" all="1" y="7" />
+    <skill id="leech" x="15" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="5" all="1" y="7" />
+      <skill id="leech" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="5" all="1" y="7" />
+      <skill id="leech" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="5" all="1" y="7" />
+      <skill id="leech" x="17" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16292</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nightbreaker Dame</name>
+    <picture>Undead_Vampiress_Knight_A</picture>
+    <asset_bundle>228</asset_bundle>
+    <hidden_until_time>1629392400</hidden_until_time>
+    <attack>11</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="rally" x="5" all="1" y="7" />
+    <skill id="leech" x="17" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="6" all="1" y="7" />
+      <skill id="leech" x="17" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="6" all="1" y="7" />
+      <skill id="leech" x="18" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="6" />
+      <skill id="rally" x="6" all="1" y="7" />
+      <skill id="leech" x="18" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26292</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Nightbreaker Baroness</name>
+    <picture>Undead_Vampiress_Knight_B</picture>
+    <asset_bundle>228</asset_bundle>
+    <hidden_until_time>1629392400</hidden_until_time>
+    <attack>12</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="6" />
+    <skill id="rally" x="6" all="1" y="7" />
+    <skill id="leech" x="19" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="7" />
+      <skill id="rally" x="6" all="1" y="7" />
+      <skill id="leech" x="19" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="7" />
+      <skill id="rally" x="6" all="1" y="7" />
+      <skill id="leech" x="20" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="7" />
+      <skill id="rally" x="7" all="1" y="7" />
+      <skill id="leech" x="20" />
     </upgrade>
   </unit>
 </root>

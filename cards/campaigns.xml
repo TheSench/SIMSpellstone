@@ -10070,7 +10070,7 @@
     <!-- Thursday, 22 July 2021 17:00:00 -->
     <battleground_id>2053</battleground_id>
     <location_id>13</location_id>
-    <x>880</x>
+    <x>830</x>
     <!-- left right -->
     <y>615</y>
     <!-- up down -->
@@ -10150,6 +10150,90 @@
     <!-- Wednesday, 22 September 2021 17:00:00 -->
   </campaign>
   <!-- Campaign Event 33 - Desolate Red Valley  -->
+  <campaign>
+    <id>1294</id>
+    <name>Questing for Rest and Peace</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1629392400</locked_start_time>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <battleground_id>2048</battleground_id>
+    <location_id>18</location_id>
+    <x>800</x>
+    <y>320</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6678</mission_id>
+      <mission_id>6679</mission_id>
+      <mission_id>6680</mission_id>
+      <mission_id>6681</mission_id>
+      <mission_id>6682</mission_id>
+      <mission_id>6683</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2613" number="25" />
+      /&gt;
+      <!-- Red Valley Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2216" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2059" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2613" number="75" />
+      /&gt;
+      <!-- Red Valley Flasks -->
+      <card level="7" id="2217" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3080" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1634662800</ignore_energy_reduction_until>
+    <!-- Wednesday, 22 September 2021 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1295</id>
+    <name>Undying Conflicts</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1294" level="1" />
+    <locked_start_time>1630602000</locked_start_time>
+    <!-- Tuesday, 19 October 2021 17:00:00 -->
+    <battleground_id>2048</battleground_id>
+    <location_id>18</location_id>
+    <x>450</x>
+    <y>140</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6684</mission_id>
+      <mission_id>6685</mission_id>
+      <mission_id>6686</mission_id>
+      <mission_id>6687</mission_id>
+      <mission_id>6688</mission_id>
+      <mission_id>6689</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2613" number="25" />
+      /&gt;
+      <!-- Red Valley Flaskss -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2191" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2140" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2613" number="75" />
+      /&gt;
+      <!-- Red Valley Flasks -->
+      <card level="7" id="2217" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3080" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1634662800</ignore_energy_reduction_until>
+    <!-- Tuesday, 19 October 2021 17:00:00 -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

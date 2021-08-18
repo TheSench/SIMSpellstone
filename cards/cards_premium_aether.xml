@@ -10341,20 +10341,20 @@
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1474563600</hidden_until_time>
     <attack>1</attack>
-    <health>4</health>
+    <health>6</health>
     <cost>0</cost>
     <rarity>4</rarity>
-    <skill id="weaken" x="1" />
+    <skill id="weaken" x="2" />
     <type>1</type>
     <sub_type>7</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>5</health>
+      <health>7</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>6</health>
+      <health>8</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -10362,12 +10362,12 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>7</health>
+      <health>9</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="frost" x="1" />
-      <skill id="weaken" x="1" />
+      <skill id="weaken" x="2" />
     </upgrade>
     <desc>In death their soul is consumed by the blade, walking the land as a spirit.</desc>
   </unit>
@@ -10380,11 +10380,11 @@
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1474563600</hidden_until_time>
     <attack>2</attack>
-    <health>8</health>
+    <health>10</health>
     <cost>0</cost>
     <rarity>4</rarity>
     <skill id="frost" x="1" />
-    <skill id="weaken" x="1" />
+    <skill id="weaken" x="2" />
     <type>1</type>
     <sub_type>7</sub_type>
     <set>3000</set>
@@ -10392,11 +10392,11 @@
       <level>2</level>
       <skill id="counter" x="1" />
       <skill id="frost" x="1" />
-      <skill id="weaken" x="1" />
+      <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>9</health>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -10404,13 +10404,13 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>10</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="counter" x="1" />
+      <skill id="counter" x="2" />
       <skill id="frost" x="1" />
-      <skill id="weaken" x="2" />
+      <skill id="weaken" x="3" />
     </upgrade>
     <desc>The blade seeks more souls, carrying the corpse of its last victim in its quest.</desc>
   </unit>
@@ -10423,12 +10423,12 @@
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1474563600</hidden_until_time>
     <attack>3</attack>
-    <health>13</health>
+    <health>15</health>
     <cost>0</cost>
     <rarity>4</rarity>
-    <skill id="counter" x="2" />
+    <skill id="counter" x="3" />
     <skill id="frost" x="1" />
-    <skill id="weaken" x="2" />
+    <skill id="weaken" x="3" />
     <type>1</type>
     <sub_type>7</sub_type>
     <set>3000</set>
@@ -10438,27 +10438,27 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>14</health>
+      <health>16</health>
       <attack>5</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="counter" x="3" />
-      <skill id="frost" x="1" />
-      <skill id="weaken" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
       <skill id="counter" x="4" />
-      <skill id="frost" x="2" />
+      <skill id="frost" x="1" />
       <skill id="weaken" x="4" />
     </upgrade>
     <upgrade>
-      <level>6</level>
-      <health>15</health>
+      <level>5</level>
       <skill id="counter" x="5" />
       <skill id="frost" x="2" />
       <skill id="weaken" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>17</health>
+      <skill id="counter" x="6" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="6" />
     </upgrade>
   </unit>
   <unit>
