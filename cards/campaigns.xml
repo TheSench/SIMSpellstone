@@ -10190,7 +10190,7 @@
     </rewards>
     <find_item id="3080" drop_per_energy=".6" />
     <ignore_energy_reduction_until>1634662800</ignore_energy_reduction_until>
-    <!-- Wednesday, 22 September 2021 17:00:00 -->
+    <!-- Tuesday, 19 October 2021 17:00:00 -->
   </campaign>
   <campaign>
     <id>1295</id>
@@ -10198,11 +10198,13 @@
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1294" level="1" />
     <locked_start_time>1630602000</locked_start_time>
-    <!-- Tuesday, 19 October 2021 17:00:00 -->
+    <!-- Thursday, 2 September 2021 17:00:00 -->
     <battleground_id>2048</battleground_id>
     <location_id>18</location_id>
     <x>450</x>
+    <!-- left right -->
     <y>140</y>
+    <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6684</mission_id>

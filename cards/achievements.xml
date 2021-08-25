@@ -16179,6 +16179,140 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 80 - Undead END -->
+  <!-- Wizard Event 81 - Seafolk - Node 1 -->
+  <achievement>
+    <id>3715</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Bureaucra-Sea</name>
+    <desc>Complete the 'Bureaucra-Sea' campaign on Mastery Level 1.</desc>
+    <mission_req>6690</mission_req>
+    <locked_start_time>1631811600</locked_start_time>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <req>
+      <campaign>1296</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3059" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7077" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3716</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Bureaucra-Sea</name>
+    <desc>Complete the 'Bureaucra-Sea' campaign on Mastery Level 2.</desc>
+    <mission_req>6690</mission_req>
+    <locked_start_time>1631811600</locked_start_time>
+    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <achievement_req>3715</achievement_req>
+    <req>
+      <campaign>1296</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3717</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Bureaucra-Sea</name>
+    <desc>Complete the 'Bureaucra-Sea' campaign on Mastery Level 4.</desc>
+    <mission_req>6690</mission_req>
+    <locked_start_time>1631811600</locked_start_time>
+    <!-- Thursday, 16 September 2021 17:00:00 -->
+    <achievement_req>3716</achievement_req>
+    <req>
+      <campaign>1296</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3718</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Bureaucra-Sea</name>
+    <desc>Complete the 'Bureaucra-Sea' campaign on Mastery Level 6.</desc>
+    <mission_req>6690</mission_req>
+    <locked_start_time>1631811600</locked_start_time>
+    <!-- Thursday, 16 September 2021 17:00:00 -->
+    <achievement_req>3717</achievement_req>
+    <req>
+      <campaign>1296</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 81 - Seafolk - Node 2 -->
+  <achievement>
+    <id>3719</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ranger of the Cute</name>
+    <desc>Complete the 'Ranger of the Cute' campaign on Mastery Level 2.</desc>
+    <mission_req>6696</mission_req>
+    <locked_start_time>1633021200</locked_start_time>
+    <!-- Thursday, 30 September 2021 17:00:00 -->
+    <req>
+      <campaign>1297</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3720</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ranger of the Cute</name>
+    <desc>Complete the 'Ranger of the Cute' campaign on Mastery Level 4.</desc>
+    <mission_req>6696</mission_req>
+    <locked_start_time>1633021200</locked_start_time>
+    <!-- Thursday, 30 September 2021 17:00:00 -->
+    <achievement_req>3719</achievement_req>
+    <req>
+      <campaign>1297</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3721</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ranger of the Cute</name>
+    <desc>Complete the 'Ranger of the Cute' campaign on Mastery Level 6.</desc>
+    <mission_req>6696</mission_req>
+    <locked_start_time>1633021200</locked_start_time>
+    <!-- Thursday, 30 September 2021 17:00:00 -->
+    <achievement_req>3720</achievement_req>
+    <req>
+      <campaign>1297</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -16948,6 +17082,30 @@
       <campaign>1187</campaign>
       <campaign>1294</campaign>
       <campaign>1295</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Pharos Temple Revisited -->
+    <id>4035</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Pharos Temple</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Pharos Temple</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6690</mission_req>
+    <req>
+      <campaign>1136</campaign>
+      <campaign>1137</campaign>
+      <campaign>1138</campaign>
+      <campaign>1139</campaign>
+      <campaign>1140</campaign>
+      <campaign>1141</campaign>
+      <campaign>1296</campaign>
+      <campaign>1297</campaign>
       <level>7</level>
     </req>
     <reward>

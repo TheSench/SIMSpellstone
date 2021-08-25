@@ -53950,5 +53950,296 @@
       <card id="7238" mastery_level="7" name="Bogwater Horde" />
     </deck>
   </mission>
+  <!-- Campaign Event 34 - Pharos Temple  -->
+  <!-- Node 1 -->
+  <mission>
+    <id>6690</id>
+    <name>Deeper Tourism</name>
+    <energy>18</energy>
+    <desc>It has been a really long time since you took a deep bath, and they say some of these salines have serious and real health benefits.</desc>
+    <commander id="395" />
+    <deck>
+      <card id="8092" name="Steelshell Devotee" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7005" name="Tsunamari" />
+      <card id="6135" name="Burnshell" />
+      <card id="6135" name="Burnshell" />
+      <card id="2199" mastery_level="2" name="Love Singer" />
+      <card id="2199" mastery_level="3" name="Love Singer" />
+      <card id="5149" mastery_level="4" name="Flatfish Ward" />
+      <card id="5149" mastery_level="5" name="Flatfish Ward" />
+      <card id="7150" mastery_level="6" name="Ika-Roa" />
+      <card id="7260" mastery_level="7" name="Leviathan Warrior" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6691</id>
+    <name>No Visa</name>
+    <energy>18</energy>
+    <desc>Some Seafolk guys are questioning your right to be here, demanding you to show them some magical credentials that somehow work underwater. You feel bureaucratic bully vibes.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8092" name="Steelshell Devotee" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7149" name="Trident Merman" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2199" mastery_level="2" name="Shockscale Eel" />
+      <card id="2199" mastery_level="3" name="Shockscale Eel" />
+      <card id="5149" mastery_level="4" name="Flatfish Ward" />
+      <card id="5149" mastery_level="5" name="Flatfish Ward" />
+      <card id="7284" mastery_level="6" name="Werething" />
+      <card id="7260" mastery_level="7" name="Leviathan Warrior" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6692</id>
+    <name>Haunted Visit</name>
+    <energy>18</energy>
+    <desc>After a brief misunderstanding with the local seafolk delegation you manage to understand that they are babbling something about you bringing undead pursuers into their domains, but that just seems silly.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7149" name="Trident Merman" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2198" name="Cleaners of the Blue" />
+      <card id="2198" name="Cleaners of the Blue" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="6165" mastery_level="4" name="Skelepede" />
+      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7153" mastery_level="7" name="Kelpcatcher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6693</id>
+    <name>Underwater Unlife</name>
+    <energy>18</energy>
+    <desc>Who would've thought that mess from the Red Valley would catch you here of all places? You feel definitively hexed and someone is having fun at your expense.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="8012" name="Nether Warrior" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="1617" name="Water Elemental" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7170" name="Gallows Hand" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="1635" mastery_level="2" name="Mergoat" />
+      <card id="7237" mastery_level="3" name="Bogbringer" />
+      <card id="7210" mastery_level="4" name="Battlefield Swindler" />
+      <card id="7213" mastery_level="5" name="Siren of the Bog" />
+      <card id="6277" mastery_level="6" name="Ironblood Ghoul" />
+      <card id="6276" mastery_level="7" name="Weirdflesh Thing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6694</id>
+    <name>Muddy Waters</name>
+    <energy>18</energy>
+    <desc>It seems that some of the local Seafolk were in league with these undead outsiders, and some of them were even undead themselves! You find yourself quickly injected into an internal conflict!</desc>
+    <commander id="337" />
+    <deck>
+      <card id="8015" name="Nether Wraith" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="1035" name="Calypsan Heir" />
+      <card id="1035" name="Calypsan Heir" />
+      <card id="6081" mastery_level="2" name="Apparition" />
+      <card id="6122" mastery_level="3" name="Relentless Dead" />
+      <card id="7083" mastery_level="4" name="Sludge Spine" />
+      <card id="2116" mastery_level="5" name="Messina's Choice" />
+      <card id="6127" mastery_level="6" name="Hexapus" />
+      <card id="7131" mastery_level="7" name="Xovrus, Death's End" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6695</id>
+    <name>Unexpected Salt</name>
+    <energy>18</energy>
+    <desc>Both Undead Seafolk and Seafolk Undead fans are annoyed about you walking over their plans for a Horror Underwater Con. You claim ignorance and are challenged to a Duel in the process.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8011" name="Nether Soldiers" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="1644" mastery_level="3" name="Blackfin" />
+      <card id="6161" mastery_level="4" name="Darkwater Beguiler" />
+      <card id="6161" mastery_level="5" name="Darkwater Beguiler" />
+      <card id="7106" mastery_level="6" name="Octhos, Ruin Baron" />
+      <card id="7106" mastery_level="6" name="Octhos, Ruin Baron" />
+    </deck>
+  </mission>
+  <!-- Node 2 -->
+  <mission>
+    <id>6696</id>
+    <name>Slow Safety First</name>
+    <energy>18</energy>
+    <desc>Underwater escapes are always less dramatic and slower than you'd think. Slowly but surely you left the undead-seafolk issue to visit the cute undersea monument.</desc>
+    <commander id="332" />
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7149" name="Trident Merman" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2076" name="Pharos Guardian" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="5150" mastery_level="4" name="Deepspear Warfarer" />
+      <card id="5150" mastery_level="5" name="Deepspear Warfarer" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7153" mastery_level="7" name="Kelpcatcher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6697</id>
+    <name>Mysterious Prohibition</name>
+    <energy>18</energy>
+    <desc>Apparently the monument is off limits, but they won't tell you exactly why. Annoyed, you're gonna schedule a serious talk with Proteus, or someone with executive decision capabilities.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8020" name="Fortune's Scallywag" />
+      <card id="2176" name="Sinksight Mermaid" />
+      <card id="2176" name="Sinksight Mermaid" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="5149" mastery_level="2" name="Flatfish Ward" />
+      <card id="5149" mastery_level="2" name="Flatfish Ward" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="7194" mastery_level="5" name="Coralscape Grappler" />
+      <card id="7025" mastery_level="6" name="Webclaw Dragon" />
+      <card id="7104" mastery_level="7" name="Croaker of the Deep" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6698</id>
+    <name>Not the Quetees!</name>
+    <energy>18</energy>
+    <desc>Apparently there was a nest of Quetees which no one had the heart to take out of there. I mean come on, they are just too cute, and you realize that they even have an automated defense. How Nice!</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8075" name="Vorpal Magnate" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="2129" name="Pharos Guardian" />
+      <card id="2076" name="Pharos Guardian" />
+      <card id="7003" name="Kraken" />
+      <card id="7003" name="Kraken" />
+      <card id="7154" name="Shellter" />
+      <card id="7154" name="Shellter" />
+      <card id="7108" mastery_level="2" name="Quetee" />
+      <card id="7108" mastery_level="3" name="Quetee" />
+      <card id="7108" mastery_level="4" name="Quetee" />
+      <card id="7154" mastery_level="5" name="Mollusk Snarecaster" />
+      <card id="7228" mastery_level="6" name="Shellcran Catcher" />
+      <card id="7233" mastery_level="7" name="Arsenite Pest" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6699</id>
+    <name>Divergent Tides</name>
+    <energy>18</energy>
+    <desc>The Quetees attacked instinctively in defense of their home, but apparently all the fuss caused by the battle before you left them alone attracted some unwanted attention...</desc>
+    <commander id="345" />
+    <deck>
+      <card id="8136" name="Shore Scourer" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7149" name="Trident Merman" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="7017" name="Salty Scallywag" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="5150" mastery_level="4" name="Deepspear Warfarer" />
+      <card id="5150" mastery_level="5" name="Deepspear Warfarer" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7153" mastery_level="7" name="Kelpcatcher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6700</id>
+    <name>The Underwater Treason</name>
+    <energy>18</energy>
+    <desc>These savage seafolk, how dare they hand over those cute, harmless Quetees to the evil designs of the undead?! You valiantly decide to stand in defense of their right to inhabit the Pharos Monument.</desc>
+    <commander id="415" />
+    <deck>
+      <card id="8092" name="Steelshell Devotee" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" name="Wraith" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="7091" name="Wave Plunderer" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="7030" mastery_level="3" name="Arctic Ambusher" />
+      <card id="7106" mastery_level="4" name="Octhos, Ruin Baron" />
+      <card id="7191" mastery_level="5" name="Surgebend Merman" />
+      <card id="7227" mastery_level="6" name="Five Color Flapper" />
+      <card id="7261" mastery_level="7" name="Rayren Harpooneer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6701</id>
+    <name>The Temple Ranger</name>
+    <energy>18</energy>
+    <desc>In defense of the endangered species, you stood your ground against the evil seafolk that wanted to sell out the Quetees, and now their true clients are annoyed at you.</desc>
+    <commander id="332" />
+    <deck>
+      <card id="8021" name="Fortune's Captain" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="7169" name="Salty Scallywag" />
+      <card id="5033" name="Lost Soul" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="7091" name="Wave Plunderer" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="2126" mastery_level="3" name="Messina's Choice" />
+      <card id="7106" mastery_level="4" name="Octhos, Ruin Baron" />
+      <card id="7083" mastery_level="5" name="Sludge Spine" />
+      <card id="6261" mastery_level="6" name="Darkwater Beguiler" />
+      <card id="5237" mastery_level="7" name="Lanternbulb Hunter" />
+    </deck>
+  </mission>
 </root>
 
