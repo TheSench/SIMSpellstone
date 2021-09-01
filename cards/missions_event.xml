@@ -54241,5 +54241,413 @@
       <card id="5237" mastery_level="7" name="Lanternbulb Hunter" />
     </deck>
   </mission>
+  <!-- Spellstone 6th Year Anniversary Missions -->
+  <mission>
+    <id>6702</id>
+    <name>Year 2016</name>
+    <energy>1</energy>
+    <desc>Spellstone's 6th Anniversary celebration has begun! Defeat this node's enemies and get amazing rewards!</desc>
+    <commander id="449" />
+    <deck>
+      <card id="2121" />
+      <card id="2121" />
+      <card id="2182" />
+      <card id="2188" />
+      <card id="2118" />
+      <card id="2149" />
+      <card id="2150" />
+      <card id="2098" />
+      <card id="2191" />
+      <card id="2051" mastery_level="2" />
+      <card id="2080" mastery_level="3" />
+      <card id="4021" mastery_level="4" />
+      <card id="4014" mastery_level="5" />
+      <card id="4025" mastery_level="6" />
+      <card id="2016" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Six Years? That seems so long ago I can't even remember what the game was like back then.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>I think I used to say something like...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>You gotta fight.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>For your right.</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>To parrrrrty!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6703</id>
+    <name>Year 2017</name>
+    <energy>1</energy>
+    <desc>Spellstone's 6th Anniversary celebration has begun! Defeat this node's party titans and get amazing rewards!</desc>
+    <commander id="450" />
+    <deck>
+      <card id="2173" />
+      <card id="2173" />
+      <card id="2168" />
+      <card id="2169" />
+      <card id="2119" />
+      <card id="2163" />
+      <card id="2179" />
+      <card id="2081" />
+      <card id="2124" />
+      <card id="2100" mastery_level="2" />
+      <card id="2113" mastery_level="3" />
+      <card id="4031" mastery_level="4" />
+      <card id="4020" mastery_level="5" />
+      <card id="4016" mastery_level="6" />
+      <card id="2017" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Hi! My name is Solaron.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>And I like to party!</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>No. You don't.</text>
+      </line>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>You definitely don't.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Wait, who invited the void into this anniversary?</text>
+      </line>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>Let's party!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6704</id>
+    <name>Year 2018</name>
+    <energy>1</energy>
+    <desc>Spellstone's 6th Anniversary celebration has begun! Defeat this node's party titans and uninvited guests and get amazing rewards!</desc>
+    <commander id="451" />
+    <deck>
+      <card id="2173" />
+      <card id="2173" />
+      <card id="2168" />
+      <card id="2169" />
+      <card id="2119" />
+      <card id="2163" />
+      <card id="2179" />
+      <card id="2081" />
+      <card id="2124" />
+      <card id="2100" mastery_level="2" />
+      <card id="2113" mastery_level="3" />
+      <card id="4031" mastery_level="4" />
+      <card id="4020" mastery_level="5" />
+      <card id="4016" mastery_level="6" />
+      <card id="2017" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>C'mon! A little party never hurt anyone!</text>
+      </line>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>But then again... those parties didn't invite the void!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Indeed.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Oh come on, seriously?! Who told Bluefire about this? you know how he gets after a drink or two.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6705</id>
+    <name>Year 2019</name>
+    <energy>1</energy>
+    <desc>Spellstone's 6th Anniversary celebration has begun! Defeat this node's... (not very sober and voidish) entity of evil and get amazing rewards!</desc>
+    <commander id="452" />
+    <deck>
+      <card id="2194" />
+      <card id="2194" />
+      <card id="2188" />
+      <card id="2033" />
+      <card id="2179" />
+      <card id="2111" />
+      <card id="2098" />
+      <card id="2024" />
+      <card id="2167" />
+      <card id="8077" mastery_level="2" />
+      <card id="8078" mastery_level="3" />
+      <card id="8074" mastery_level="4" />
+      <card id="8079" mastery_level="5" />
+      <card id="8088" mastery_level="6" />
+      <card id="4022" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>I'm blue da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Such a catchy song! Do you know I'm also kinda blue...ish?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>I think Bluefire here is drunk...</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>We should do something before he starts spitting frozen alcoholic fire.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Solaron, that's no actually possible.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>I'm the master of order, you're not telling me what's possible and what's not.</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>Watch out, here it comes!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6706</id>
+    <name>Year 2020</name>
+    <energy>1</energy>
+    <desc>Spellstone's 6th Anniversary celebration manages to continue despite the booze-drinking void! Defeat this node's party titan and get amazing rewards!</desc>
+    <commander id="453" />
+    <deck>
+      <card id="2125" />
+      <card id="2125" />
+      <card id="2011" />
+      <card id="2121" />
+      <card id="2110" />
+      <card id="2118" />
+      <card id="2012" />
+      <card id="2060" />
+      <card id="2172" />
+      <card id="2116" mastery_level="2" />
+      <card id="2112" mastery_level="3" />
+      <card id="4020" mastery_level="4" />
+      <card id="4027" mastery_level="5" />
+      <card id="4014" mastery_level="6" />
+      <card id="2158" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Hi! Are you having a good time aroud this year? 2021 already? now time flies...</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>Come on, Fire, let's go do some drunken sparring outside!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Just try not to destroy the entire lawn!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>... Don't mind them.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I just wanted to say something before this party gets wilder...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Yeah! WYLDER!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I mean, chaotic</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>Yeah! CHAOTIC!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Ahem!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Happy 6th Anniversary, Spellstone!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Now... Let's get this party start...continued! I mean there's one more round to go, ahem...these lazy devs.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6707</id>
+    <name>Year 2021</name>
+    <energy>1</energy>
+    <desc>Spellstone's 6th Anniversary celebration continues with some minor landscape damage! Defeat this node's party titan and get amazing rewards!</desc>
+    <commander id="453" />
+    <deck>
+      <card id="2125" />
+      <card id="2125" />
+      <card id="2011" />
+      <card id="2121" />
+      <card id="2110" />
+      <card id="2118" />
+      <card id="2012" />
+      <card id="2060" />
+      <card id="2172" />
+      <card id="2116" mastery_level="2" />
+      <card id="2112" mastery_level="3" />
+      <card id="4020" mastery_level="4" />
+      <card id="4027" mastery_level="5" />
+      <card id="4014" mastery_level="6" />
+      <card id="2158" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Another year, another go. Am I getting old for this, Vulcky?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>What's a year, anyway?</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>yeah well, that's going to continue for a while. My insurance primes are definitely going up this time.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Ahem...everyone! Time for the toast.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>What should we drink to?</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>More Bluefire Stones!</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>More runes!</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>I say to health runes buff, for increased vigor and wildness!</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Just nerf Nuvis Already!</text>
+      </line>
+      <line>
+        <commander>obyto14</commander>
+        <enemy>1</enemy>
+        <text>No, not the nerf!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Who said that?</text>
+      </line>
+      <line>
+        <commander>obyto14</commander>
+        <enemy>1</enemy>
+        <text>No one. I'm the voice of Spellstone.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Well I'm not so sure about that, but we can always discuss it in the forums my mate. Let's get this party started!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Spellstone 6th Year Anniversary Missions END -->
 </root>
 

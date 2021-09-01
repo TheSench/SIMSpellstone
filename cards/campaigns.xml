@@ -10236,6 +10236,44 @@
     <ignore_energy_reduction_until>1634662800</ignore_energy_reduction_until>
     <!-- Tuesday, 19 October 2021 17:00:00 -->
   </campaign>
+  <!-- 6th Anniversary -->
+  <campaign>
+    <id>1298</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Spellstone's 6th Anniversary</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <battleground_id>547</battleground_id>
+    <location_id>34</location_id>
+    <x>300</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6702</mission_id>
+      <mission_id>6703</mission_id>
+      <mission_id>6704</mission_id>
+      <mission_id>6705</mission_id>
+      <mission_id>6706</mission_id>
+      <mission_id>6707</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104024" number="50" />
+      <!-- Widow Stones -->
+      <item level="2" id="104048" number="50" />
+      <!-- Clockoo Stones -->
+      <item level="3" id="104047" number="50" />
+      <!-- Ark Stones -->
+      <item level="4" id="104046" number="75" />
+      <!-- Agatha Stones -->
+      <item level="5" id="104038" number="75" />
+      <!-- Kalyt Stones -->
+      <item level="6" id="104044" number="75" />
+      <!-- Viracocha Stones -->
+      <item level="7" id="104022" number="150" />
+      <!-- Bluefire Stones -->
+    </rewards>
+  </campaign>
+  <!-- END 6th Anniversary -->
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

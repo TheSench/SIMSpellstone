@@ -16313,6 +16313,70 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- 6th Anniversary -->
+  <achievement>
+    <id>3722</id>
+    <type>2</type>
+    <order>101</order>
+    <name>6th Anniversary</name>
+    <desc>Complete the 'Spellstone's 6th Anniversary' campaign on Mastery Level 1.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1298</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3723</id>
+    <type>2</type>
+    <order>101</order>
+    <name>6th Anniversary</name>
+    <desc>Complete the 'Spellstone's 6th Anniversary' campaign on Mastery Level 2.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3722</achievement_req>
+    <req>
+      <campaign>1298</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3724</id>
+    <type>2</type>
+    <order>101</order>
+    <name>6th Anniversary</name>
+    <desc>Complete the 'Spellstone's 6th Anniversary' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3723</achievement_req>
+    <req>
+      <campaign>1298</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3725</id>
+    <type>2</type>
+    <order>101</order>
+    <name>6th Anniversary</name>
+    <desc>Complete the 'Spellstone's 6th Anniversary' campaign on Mastery Level 6.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3724</achievement_req>
+    <req>
+      <campaign>1298</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

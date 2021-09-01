@@ -37681,6 +37681,134 @@
       <skill id="weaken" x="4" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5293</id>
+    <card_type>2</card_type>
+    <name>Trusted Usher</name>
+    <picture>Undead_Ghost_Dog_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1631552400</hidden_until_time>
+    <attack>10</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="heal" x="3" all="1" y="7" />
+    <skill id="nullify" x="3" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="heal" x="4" all="1" y="7" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15293</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Faithful Usher</name>
+    <picture>Undead_Ghost_Dog_A</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1631552400</hidden_until_time>
+    <attack>12</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="heal" x="4" all="1" y="7" />
+    <skill id="nullify" x="3" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="3" />
+      <skill id="heal" x="4" all="1" y="7" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="heal" x="5" all="1" y="7" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25293</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Unwavering Usher</name>
+    <picture>Undead_Ghost_Dog_B</picture>
+    <asset_bundle>198</asset_bundle>
+    <hidden_until_time>1631552400</hidden_until_time>
+    <attack>14</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="heal" x="5" all="1" y="7" />
+    <skill id="nullify" x="4" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="4" />
+      <skill id="heal" x="5" all="1" y="7" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="4" />
+      <skill id="heal" x="6" all="1" y="7" />
+      <skill id="nullify" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="4" />
+      <skill id="heal" x="6" all="1" y="7" />
+      <skill id="nullify" x="5" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 
