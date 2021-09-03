@@ -1271,6 +1271,148 @@ var BATTLEGROUNDS = {
 		"id": "142",
 		"name": "Beetleton Mutations"
 	},
+	"143": {
+		"desc": "Oceanic Power Fracture! Seafolk gain Skills based on Delay and Faction: Aether gain Shroud 2, Wyld gain Empower 3, and Chaos gain Backlash 2. They add their delay to these values.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"x": 2,
+				"y": "1,12"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"x": 3,
+				"y": "1,12"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"x": 4,
+				"y": "1,12"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"x": 5,
+				"y": "1,12"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"x": 6,
+				"y": "1,12"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "backlash",
+				"x": 4,
+				"y": "2,12"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "backlash",
+				"x": 5,
+				"y": "2,12"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "backlash",
+				"x": 6,
+				"y": "2,12"
+			},
+			{
+				"delay": [
+					5
+				],
+				"effect_type": "add_skill",
+				"id": "backlash",
+				"x": 7,
+				"y": "2,12"
+			},
+			{
+				"delay": [
+					6
+				],
+				"effect_type": "add_skill",
+				"id": "backlash",
+				"x": 8,
+				"y": "2,12"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "rally",
+				"x": 3,
+				"y": "3,12"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "rally",
+				"x": 4,
+				"y": "3,12"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "rally",
+				"x": 5,
+				"y": "3,12"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "rally",
+				"x": 6,
+				"y": "3,12"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "rally",
+				"x": 7,
+				"y": "3,12"
+			}
+		],
+		"id": "143",
+		"name": "Conflicted Ocean"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
