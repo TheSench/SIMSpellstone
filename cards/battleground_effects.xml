@@ -951,24 +951,51 @@
   <battleground>
     <id>143</id>
     <name>Conflicted Ocean</name>
-    <desc>Oceanic Power Fracture! Seafolk gain Skills based on Delay and Faction: Aether gain Shroud 2, Wyld gain Empower 3, and Chaos gain Backlash 2. They add their delay to these values.</desc>
+    <desc>All Seafolk gain barrier equal to 20% of their base health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base health and pierce equal to their base attack.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
-      <add_skill id="stasis" x="2" yy="1,12" delay="0" />
-      <add_skill id="stasis" x="3" yy="1,12" delay="1" />
-      <add_skill id="stasis" x="4" yy="1,12" delay="2" />
-      <add_skill id="stasis" x="5" yy="1,12" delay="3" />
-      <add_skill id="stasis" x="6" yy="1,12" delay="4" />
-      <add_skill id="backlash" x="4" yy="2,12" delay="2" />
-      <add_skill id="backlash" x="5" yy="2,12" delay="3" />
-      <add_skill id="backlash" x="6" yy="2,12" delay="4" />
-      <add_skill id="backlash" x="7" yy="2,12" delay="5" />
-      <add_skill id="backlash" x="8" yy="2,12" delay="6" />
-      <add_skill id="rally" x="3" yy="3,12" delay="0" />
-      <add_skill id="rally" x="4" yy="3,12" delay="1" />
-      <add_skill id="rally" x="5" yy="3,12" delay="2" />
-      <add_skill id="rally" x="6" yy="3,12" delay="3" />
-      <add_skill id="rally" x="7" yy="3,12" delay="4" />
+      <skill id="protect" ignore_nullify="1" mult=".2" all="1" base="health" y="12" delay="3,4" />
+      <skill id="displayEffect" trigger="onSkill" s="protect">
+        <target_effect>
+          <prefab>submerge_fadecloth</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>.5</delay>
+          <duration>.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillHit" s="protect">
+        <actor_effect>
+          <prefab>submerge_barrier</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillBreak" s="protect">
+        <actor_effect>
+          <prefab>submerge_break</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <add_skill id="bash" mult=".10" all="1" base="health" y="12" delay="0,1,2" />
+      <add_skill id="pierce" mult="1" base="attack" y="12" delay="0,1,2" />
+      <skill id="displayEffect" trigger="onSkill" s="bash">
+        <target_effect>
+          <prefab>frogbge_Target</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
     </effect>
   </battleground>
   <!-- ================================= -->

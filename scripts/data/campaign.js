@@ -5376,6 +5376,39 @@ var CAMPAIGNS = {
 		],
 		"name": "Undying Conflicts"
 	},
+	"1296": {
+		"id": "1296",
+		"items": {
+			"3059": 0.6
+		},
+		"location_id": "11",
+		"missions": [
+			"6690",
+			"6691",
+			"6692",
+			"6693",
+			"6694",
+			"6695"
+		],
+		"name": "Bureaucra-Sea"
+	},
+	"1297": {
+		"battleground_id": "2019",
+		"id": "1297",
+		"items": {
+			"3059": 0.8
+		},
+		"location_id": "11",
+		"missions": [
+			"6696",
+			"6697",
+			"6698",
+			"6699",
+			"6700",
+			"6701"
+		],
+		"name": "Ranger of the Cute"
+	},
 	"1298": {
 		"battleground_id": "547",
 		"id": "1298",

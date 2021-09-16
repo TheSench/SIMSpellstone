@@ -1272,142 +1272,45 @@ var BATTLEGROUNDS = {
 		"name": "Beetleton Mutations"
 	},
 	"143": {
-		"desc": "Oceanic Power Fracture! Seafolk gain Skills based on Delay and Faction: Aether gain Shroud 2, Wyld gain Empower 3, and Chaos gain Backlash 2. They add their delay to these values.",
+		"desc": "All Seafolk gain barrier equal to 20% of their base health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base health and pierce equal to their base attack.",
 		"effect": [
 			{
+				"all": "1",
+				"base": "health",
 				"delay": [
-					0
+					3,
+					4
 				],
-				"effect_type": "add_skill",
-				"id": "stasis",
-				"x": 2,
-				"y": "1,12"
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.2,
+				"y": "12"
 			},
 			{
+				"all": "1",
+				"base": "health",
 				"delay": [
-					1
-				],
-				"effect_type": "add_skill",
-				"id": "stasis",
-				"x": 3,
-				"y": "1,12"
-			},
-			{
-				"delay": [
+					0,
+					1,
 					2
 				],
 				"effect_type": "add_skill",
-				"id": "stasis",
-				"x": 4,
-				"y": "1,12"
+				"id": "bash",
+				"mult": 0.1,
+				"y": "12"
 			},
 			{
+				"base": "attack",
 				"delay": [
-					3
-				],
-				"effect_type": "add_skill",
-				"id": "stasis",
-				"x": 5,
-				"y": "1,12"
-			},
-			{
-				"delay": [
-					4
-				],
-				"effect_type": "add_skill",
-				"id": "stasis",
-				"x": 6,
-				"y": "1,12"
-			},
-			{
-				"delay": [
+					0,
+					1,
 					2
 				],
 				"effect_type": "add_skill",
-				"id": "backlash",
-				"x": 4,
-				"y": "2,12"
-			},
-			{
-				"delay": [
-					3
-				],
-				"effect_type": "add_skill",
-				"id": "backlash",
-				"x": 5,
-				"y": "2,12"
-			},
-			{
-				"delay": [
-					4
-				],
-				"effect_type": "add_skill",
-				"id": "backlash",
-				"x": 6,
-				"y": "2,12"
-			},
-			{
-				"delay": [
-					5
-				],
-				"effect_type": "add_skill",
-				"id": "backlash",
-				"x": 7,
-				"y": "2,12"
-			},
-			{
-				"delay": [
-					6
-				],
-				"effect_type": "add_skill",
-				"id": "backlash",
-				"x": 8,
-				"y": "2,12"
-			},
-			{
-				"delay": [
-					0
-				],
-				"effect_type": "add_skill",
-				"id": "rally",
-				"x": 3,
-				"y": "3,12"
-			},
-			{
-				"delay": [
-					1
-				],
-				"effect_type": "add_skill",
-				"id": "rally",
-				"x": 4,
-				"y": "3,12"
-			},
-			{
-				"delay": [
-					2
-				],
-				"effect_type": "add_skill",
-				"id": "rally",
-				"x": 5,
-				"y": "3,12"
-			},
-			{
-				"delay": [
-					3
-				],
-				"effect_type": "add_skill",
-				"id": "rally",
-				"x": 6,
-				"y": "3,12"
-			},
-			{
-				"delay": [
-					4
-				],
-				"effect_type": "add_skill",
-				"id": "rally",
-				"x": 7,
-				"y": "3,12"
+				"id": "pierce",
+				"mult": 1,
+				"y": "12"
 			}
 		],
 		"id": "143",

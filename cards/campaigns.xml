@@ -10236,6 +10236,94 @@
     <ignore_energy_reduction_until>1634662800</ignore_energy_reduction_until>
     <!-- Tuesday, 19 October 2021 17:00:00 -->
   </campaign>
+  <!-- Campaign Event 34 - The Pharos Temple  -->
+  <campaign>
+    <id>1296</id>
+    <name>Bureaucra-Sea</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1631811600</locked_start_time>
+    <!-- Thursday, 16 September 2021 17:00:00 -->
+    <location_id>11</location_id>
+    <x>700</x>
+    <!-- left right -->
+    <y>350</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6690</mission_id>
+      <mission_id>6691</mission_id>
+      <mission_id>6692</mission_id>
+      <mission_id>6693</mission_id>
+      <mission_id>6694</mission_id>
+      <mission_id>6695</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2614" number="25" />
+      /&gt;
+      <!-- Pharos Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2218" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2148" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2614" number="75" />
+      /&gt;
+      <!-- Pharos Flask -->
+      <card level="7" id="2217" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3059" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1636650000</ignore_energy_reduction_until>
+    <!-- Thursday, 11 November 2021 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1297</id>
+    <name>Ranger of the Cute</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1296" level="1" />
+    <locked_start_time>1633021200</locked_start_time>
+    <!-- Thursday, 30 September 2021 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>11</location_id>
+    <x>400</x>
+    <!-- left right -->
+    <y>180</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6696</mission_id>
+      <mission_id>6697</mission_id>
+      <mission_id>6698</mission_id>
+      <mission_id>6699</mission_id>
+      <mission_id>6700</mission_id>
+      <mission_id>6701</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2614" number="25" />
+      /&gt;
+      <!-- Pharos Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2077" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2078" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2614" number="75" />
+      /&gt;
+      <!-- Pharos Flask -->
+      <card level="7" id="2217" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3059" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1636650000</ignore_energy_reduction_until>
+    <!-- Thursday, 11 November 2021 17:00:00 -->
+  </campaign>
   <!-- 6th Anniversary -->
   <campaign>
     <id>1298</id>

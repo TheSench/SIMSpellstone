@@ -13231,8 +13231,8 @@
     <health>33</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="evade" x="1" />
-    <skill id="burn" x="2" />
+    <skill id="evade" x="2" />
+    <skill id="burn" x="4" />
     <skill id="berserk" x="2" />
     <type>2</type>
     <sub_type>9</sub_type>
@@ -13252,14 +13252,14 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="1" />
-      <skill id="burn" x="3" />
+      <skill id="evade" x="2" />
+      <skill id="burn" x="5" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="evade" x="1" />
-      <skill id="burn" x="3" />
+      <skill id="evade" x="2" />
+      <skill id="burn" x="5" />
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>
@@ -13275,8 +13275,8 @@
     <health>36</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="evade" x="1" />
-    <skill id="burn" x="3" />
+    <skill id="evade" x="2" />
+    <skill id="burn" x="5" />
     <skill id="berserk" x="3" />
     <type>2</type>
     <sub_type>9</sub_type>
@@ -13288,8 +13288,8 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="evade" x="2" />
-      <skill id="burn" x="3" />
+      <skill id="evade" x="3" />
+      <skill id="burn" x="5" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
@@ -13298,14 +13298,14 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="2" />
-      <skill id="burn" x="4" />
+      <skill id="evade" x="3" />
+      <skill id="burn" x="6" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="evade" x="2" />
-      <skill id="burn" x="4" />
+      <skill id="evade" x="3" />
+      <skill id="burn" x="6" />
       <skill id="berserk" x="4" />
     </upgrade>
   </unit>
@@ -13321,8 +13321,8 @@
     <health>39</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="evade" x="2" />
-    <skill id="burn" x="5" />
+    <skill id="evade" x="3" />
+    <skill id="burn" x="7" />
     <skill id="berserk" x="5" />
     <type>2</type>
     <sub_type>9</sub_type>
@@ -13344,15 +13344,15 @@
     <upgrade>
       <level>5</level>
       <health>42</health>
-      <skill id="evade" x="3" />
-      <skill id="burn" x="6" />
+      <skill id="evade" x="4" />
+      <skill id="burn" x="8" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>43</health>
-      <skill id="evade" x="3" />
-      <skill id="burn" x="7" />
+      <skill id="evade" x="4" />
+      <skill id="burn" x="9" />
       <skill id="berserk" x="7" />
     </upgrade>
   </unit>
@@ -37317,6 +37317,140 @@
       <skill id="armored" x="7" />
       <skill id="rally" x="7" all="1" y="7" />
       <skill id="leech" x="20" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6293</id>
+    <card_type>2</card_type>
+    <name>Emberay</name>
+    <picture>Seafolk_Thermal_Mantaray_A</picture>
+    <asset_bundle>230</asset_bundle>
+    <hidden_until_time>1631811600</hidden_until_time>
+    <attack>11</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="5" />
+    <skill id="regenerate" x="8" />
+    <skill id="burn" x="6" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counterburn" x="5" />
+      <skill id="regenerate" x="9" />
+      <skill id="burn" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="6" />
+      <skill id="regenerate" x="9" />
+      <skill id="burn" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="6" />
+      <skill id="regenerate" x="9" />
+      <skill id="burn" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16293</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Blazing Emberay</name>
+    <picture>Seafolk_Thermal_Mantaray_A</picture>
+    <asset_bundle>230</asset_bundle>
+    <hidden_until_time>1631811600</hidden_until_time>
+    <attack>13</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="6" />
+    <skill id="regenerate" x="9" />
+    <skill id="burn" x="7" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counterburn" x="6" />
+      <skill id="regenerate" x="10" />
+      <skill id="burn" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="10" />
+      <skill id="burn" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="10" />
+      <skill id="burn" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26293</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Iridescent Emberay</name>
+    <picture>Seafolk_Thermal_Mantaray_B</picture>
+    <asset_bundle>230</asset_bundle>
+    <hidden_until_time>1631811600</hidden_until_time>
+    <attack>14</attack>
+    <health>43</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counterburn" x="7" />
+    <skill id="regenerate" x="11" />
+    <skill id="burn" x="8" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="8" />
+      <skill id="regenerate" x="11" />
+      <skill id="burn" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counterburn" x="8" />
+      <skill id="regenerate" x="11" />
+      <skill id="burn" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counterburn" x="8" />
+      <skill id="regenerate" x="12" />
+      <skill id="burn" x="9" />
     </upgrade>
   </unit>
 </root>
