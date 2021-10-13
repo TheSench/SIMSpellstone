@@ -5424,6 +5424,39 @@ var CAMPAIGNS = {
 		],
 		"name": "Spellstone's 6th Anniversary"
 	},
+	"1299": {
+		"id": "1299",
+		"items": {
+			"3068": 0.6
+		},
+		"location_id": "14",
+		"missions": [
+			"6708",
+			"6709",
+			"6710",
+			"6711",
+			"6712",
+			"6713"
+		],
+		"name": "The High Journey"
+	},
+	"1300": {
+		"battleground_id": "2019",
+		"id": "1300",
+		"items": {
+			"3068": 0.8
+		},
+		"location_id": "14",
+		"missions": [
+			"6714",
+			"6715",
+			"6716",
+			"6717",
+			"6718",
+			"6719"
+		],
+		"name": "Winged Conspiracy"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -117942,5 +117975,725 @@ var MISSIONS = {
 		],
 		"id": "6707",
 		"name": "Year 2021"
+	},
+	"6708": {
+		"commander": {
+			"id": "221"
+		},
+		"deck": [
+			{
+				"id": "8104"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "7116"
+			},
+			{
+				"id": "7116"
+			},
+			{
+				"id": "5154",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5154",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5261",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5261",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5116",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5136",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6708",
+		"name": "Aerial relief"
+	},
+	"6709": {
+		"commander": {
+			"id": "362"
+		},
+		"deck": [
+			{
+				"id": "8048"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7119",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7119",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6709",
+		"name": "Angelic Script"
+	},
+	"6710": {
+		"commander": {
+			"id": "363"
+		},
+		"deck": [
+			{
+				"id": "8055"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "6040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6040",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6100",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6100",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5072",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6272",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6710",
+		"name": "Menagerie of Opposition"
+	},
+	"6711": {
+		"commander": {
+			"id": "306"
+		},
+		"deck": [
+			{
+				"id": "8105"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5072",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5072",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6711",
+		"name": "The Mystery of the Wings"
+	},
+	"6712": {
+		"commander": {
+			"id": "413"
+		},
+		"deck": [
+			{
+				"id": "8124"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1014"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "7116"
+			},
+			{
+				"id": "7116"
+			},
+			{
+				"id": "5154",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5154",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5261",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5261",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5116",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5136",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6712",
+		"name": "Shocking Truths"
+	},
+	"6713": {
+		"commander": {
+			"id": "408"
+		},
+		"deck": [
+			{
+				"id": "8129"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "7116"
+			},
+			{
+				"id": "7116"
+			},
+			{
+				"id": "5154",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5154",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5116",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5136",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6713",
+		"name": "Dark Wings, Dark Words"
+	},
+	"6714": {
+		"commander": {
+			"id": "407"
+		},
+		"deck": [
+			{
+				"id": "8051"
+			},
+			{
+				"id": "2178"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "2204"
+			},
+			{
+				"id": "2204"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "6116"
+			},
+			{
+				"id": "6040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6118",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6118",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6041",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6041",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6714",
+		"name": "Increasing Strain"
+	},
+	"6715": {
+		"commander": {
+			"id": "443"
+		},
+		"deck": [
+			{
+				"id": "8053"
+			},
+			{
+				"id": "2178"
+			},
+			{
+				"id": "2178"
+			},
+			{
+				"id": "2178"
+			},
+			{
+				"id": "2204"
+			},
+			{
+				"id": "2204"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "6116"
+			},
+			{
+				"id": "6040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6118",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6118",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6041",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6041",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6715",
+		"name": "Battle for irrelevant knowledge"
+	},
+	"6716": {
+		"commander": {
+			"id": "263"
+		},
+		"deck": [
+			{
+				"id": "8048"
+			},
+			{
+				"id": "2141"
+			},
+			{
+				"id": "2141"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7119",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7119",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6716",
+		"name": "Speed Reading"
+	},
+	"6717": {
+		"commander": {
+			"id": "413"
+		},
+		"deck": [
+			{
+				"id": "8057"
+			},
+			{
+				"id": "2204"
+			},
+			{
+				"id": "2204"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "2083",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5174",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5174",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7263",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7263",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6717",
+		"name": "What is Known cannot be Unknown"
+	},
+	"6718": {
+		"commander": {
+			"id": "405"
+		},
+		"deck": [
+			{
+				"id": "8124"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "2086"
+			},
+			{
+				"id": "2086"
+			},
+			{
+				"id": "2083",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5174",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5174",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5206",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5206",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6718",
+		"name": "The Winged Hunt"
+	},
+	"6719": {
+		"commander": {
+			"id": "406"
+		},
+		"deck": [
+			{
+				"id": "8124"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "5186"
+			},
+			{
+				"id": "5186"
+			},
+			{
+				"id": "2083",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5174",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5174",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5206",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5206",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6719",
+		"name": "Those who run further"
 	}
 };

@@ -14506,12 +14506,12 @@
     <picture>Demon_Archer_A</picture>
     <asset_bundle>88</asset_bundle>
     <hidden_until_time>1489078800</hidden_until_time>
-    <attack>4</attack>
+    <attack>7</attack>
     <health>14</health>
     <cost>2</cost>
     <rarity>3</rarity>
+    <skill id="strike" x="3" />
     <skill id="strike" x="2" />
-    <skill id="strike" x="1" />
     <type>2</type>
     <sub_type>6</sub_type>
     <sub_type>7</sub_type>
@@ -14526,14 +14526,14 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="strike" x="2" />
-      <skill id="strike" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>17</health>
+      <skill id="strike" x="4" />
       <skill id="strike" x="3" />
-      <skill id="strike" x="2" />
     </upgrade>
     <desc>The spirits of the past guide the hands of the present.</desc>
   </unit>
@@ -14545,13 +14545,13 @@
     <picture>Demon_Archer_A</picture>
     <asset_bundle>88</asset_bundle>
     <hidden_until_time>1489078800</hidden_until_time>
-    <attack>4</attack>
+    <attack>8</attack>
     <health>17</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="evade" x="1" />
-    <skill id="strike" x="3" />
-    <skill id="strike" x="3" />
+    <skill id="strike" x="4" />
+    <skill id="strike" x="4" />
     <type>2</type>
     <sub_type>6</sub_type>
     <sub_type>7</sub_type>
@@ -14564,14 +14564,14 @@
       <level>3</level>
       <health>19</health>
       <skill id="evade" x="1" />
-      <skill id="strike" x="4" />
-      <skill id="strike" x="4" />
+      <skill id="strike" x="5" />
+      <skill id="strike" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="evade" x="1" />
-      <skill id="strike" x="5" />
-      <skill id="strike" x="5" />
+      <skill id="evade" x="2" />
+      <skill id="strike" x="6" />
+      <skill id="strike" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -14586,13 +14586,13 @@
     <picture>Demon_Archer_B</picture>
     <asset_bundle>88</asset_bundle>
     <hidden_until_time>1489078800</hidden_until_time>
-    <attack>8</attack>
+    <attack>9</attack>
     <health>23</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="evade" x="1" />
-    <skill id="strike" x="7" />
-    <skill id="strike" x="7" />
+    <skill id="evade" x="2" />
+    <skill id="strike" x="8" />
+    <skill id="strike" x="8" />
     <type>2</type>
     <sub_type>6</sub_type>
     <sub_type>7</sub_type>
@@ -14600,7 +14600,7 @@
     <upgrade>
       <level>2</level>
       <health>25</health>
-      <attack>9</attack>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -14609,14 +14609,14 @@
     <upgrade>
       <level>4</level>
       <skill id="evade" x="2" />
-      <skill id="strike" x="8" />
-      <skill id="strike" x="8" />
+      <skill id="strike" x="9" />
+      <skill id="strike" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="2" />
-      <skill id="strike" x="9" />
-      <skill id="strike" x="9" />
+      <skill id="evade" x="3" />
+      <skill id="strike" x="10" />
+      <skill id="strike" x="10" />
     </upgrade>
   </unit>
   <unit>

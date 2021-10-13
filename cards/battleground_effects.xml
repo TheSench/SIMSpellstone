@@ -998,6 +998,35 @@
       </skill>
     </effect>
   </battleground>
+  <!-- Blinding Radiance -->
+  <battleground>
+    <id>144</id>
+    <name>Blinding Radiance</name>
+    <desc>All Angels gain Invisibility 2. D 0-2 Angels gain Legion Equal to 15% of their base health, while D3 and 4 gain Emberhide 4 and 6 respectively.</desc>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <effect>
+      <add_skill id="legion" mult="0.15" base="health" y="6" delay="0,1,2" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
+        <projectile_effect>
+          <prefab>Legion_Projectile</prefab>
+          <delay>0</delay>
+          <duration>.5</duration>
+          <translation>.5</translation>
+          <offset>2</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>Legion_Angel_Target</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <add_skill id="evade" x="2" y="6" />
+      <add_skill id="counterburn" x="4" y="6" delay="3" />
+      <add_skill id="counterburn" x="6" y="6" delay="4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

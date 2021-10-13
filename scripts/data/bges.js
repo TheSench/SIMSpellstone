@@ -1316,6 +1316,49 @@ var BATTLEGROUNDS = {
 		"id": "143",
 		"name": "Conflicted Ocean"
 	},
+	"144": {
+		"desc": "All Angels gain Invisibility 2. D 0-2 Angels gain Legion Equal to 15% of their base health, while D3 and 4 gain Emberhide 4 and 6 respectively.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "legion",
+				"mult": 0.15,
+				"y": "6"
+			},
+			{
+				"effect_type": "add_skill",
+				"id": "evade",
+				"x": 2,
+				"y": "6"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 4,
+				"y": "6"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 6,
+				"y": "6"
+			}
+		],
+		"id": "144",
+		"name": "Blinding Radiance"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

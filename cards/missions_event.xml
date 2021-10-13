@@ -54649,5 +54649,296 @@
     </speech>
   </mission>
   <!-- Spellstone 6th Year Anniversary Missions END -->
+  <!-- Campaign Event 35 - Skyhaven  -->
+  <!-- Node 1 -->
+  <mission>
+    <id>6708</id>
+    <name>Aerial relief</name>
+    <energy>18</energy>
+    <desc>After the deep high pressure environment you had to endure in Pharos Temple, going for the opposite feels almost like taking off weights in your legs and shoulders.</desc>
+    <commander id="221" />
+    <deck>
+      <card id="8104" name="Celestial Statue" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="5154" mastery_level="2" name="Glaucus" />
+      <card id="5154" mastery_level="3" name="Glaucus" />
+      <card id="5261" mastery_level="4" name="Absolute Monk" />
+      <card id="5261" mastery_level="5" name="Absolute Monk" />
+      <card id="5116" mastery_level="6" name="Justice" />
+      <card id="5136" mastery_level="7" name="Lapis" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6709</id>
+    <name>Angelic Script</name>
+    <energy>18</energy>
+    <desc>Despite the not so heavenly reception, clearing the opposition you wander around looking for the mysterious angelic writings, which is a fine name for unknown incantations that can get you killed.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="8048" name="Deadeye Sentinel" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="7072" mastery_level="2" name="Murabi" />
+      <card id="7072" mastery_level="3" name="Murabi" />
+      <card id="7179" mastery_level="4" name="Battlefield Berserker" />
+      <card id="7179" mastery_level="5" name="Battlefield Berserker" />
+      <card id="7119" mastery_level="6" name="Bunnpaa" />
+      <card id="7119" mastery_level="7" name="Bunnpaa" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6710</id>
+    <name>Menagerie of Opposition</name>
+    <energy>18</energy>
+    <desc>The sheer number of guardians randomly deciding to interfere with your quest to take off the veil of the mystical writings in Skyhaven can only mean that you're about to uncover something that should stay hidden.</desc>
+    <commander id="363" />
+    <deck>
+      <card id="8055" name="Dyrnwyn's Justice" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="6040" mastery_level="2" name="Scorching Cutlass" />
+      <card id="6040" mastery_level="3" name="Scorching Cutlass" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6100" mastery_level="5" name="Tiamat" />
+      <card id="5072" mastery_level="6" name="Asariel" />
+      <card id="6272" mastery_level="7" name="Blazemaster Rookie" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6711</id>
+    <name>The Mystery of the Wings</name>
+    <energy>18</energy>
+    <desc>More often than not, you have wondered about the ancient mystery of Angel wings versus Avian wings. It has been a source of academic debate within realms for years and years, and now...</desc>
+    <commander id="306" />
+    <deck>
+      <card id="8105" name="Divine Statue" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1030" name="Paladin" />
+      <card id="1030" name="Paladin" />
+      <card id="7072" mastery_level="2" name="Murabi" />
+      <card id="7072" mastery_level="3" name="Murabi" />
+      <card id="7179" mastery_level="4" name="Battlefield Berserker" />
+      <card id="7179" mastery_level="5" name="Battlefield Berserker" />
+      <card id="5072" mastery_level="6" name="Asariel" />
+      <card id="5072" mastery_level="7" name="Asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6712</id>
+    <name>Shocking Truths</name>
+    <energy>18</energy>
+    <desc>You venture deeper into the floating fortress of Skyhaven, the tension over what you may be about to uncover reaches a critical point, as you stand in front of the ancient script, committed to decipher it.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="5154" mastery_level="2" name="Glaucus" />
+      <card id="5154" mastery_level="3" name="Glaucus" />
+      <card id="5261" mastery_level="4" name="Absolute Monk" />
+      <card id="5261" mastery_level="5" name="Absolute Monk" />
+      <card id="5116" mastery_level="6" name="Justice" />
+      <card id="5136" mastery_level="7" name="Lapis" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6713</id>
+    <name>Dark Wings, Dark Words</name>
+    <energy>18</energy>
+    <desc>The ancient prophets of old told of the common origin of the Avian and Angel tribes, and now that you're here with all your Spellstones ready to go, nothing is going to prevent you from learning the truth!</desc>
+    <commander id="408" />
+    <deck>
+      <card id="8129" name="Heaven Breaker Asariel" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="5154" mastery_level="2" name="Glaucus" />
+      <card id="5154" mastery_level="3" name="Glaucus" />
+      <card id="7179" mastery_level="4" name="Battlefield Berserker" />
+      <card id="7179" mastery_level="5" name="Battlefield Berserker" />
+      <card id="5116" mastery_level="6" name="Justice" />
+      <card id="5136" mastery_level="7" name="Lapis" />
+    </deck>
+  </mission>
+  <!-- Node 2 -->
+  <mission>
+    <id>6714</id>
+    <name>Increasing Strain</name>
+    <energy>18</energy>
+    <desc>The mystical texts gave you the hint to look for the secret vault of Skyhaven, and the battle is raging stronger and louder than ever before.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="8051" name="Wings of Valhalla" />
+      <card id="2178" name="Hellcay Draftee" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="2204" name="Halo Slave" />
+      <card id="2204" name="Halo Slave" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6040" mastery_level="2" name="Scorching Cutlass" />
+      <card id="6040" mastery_level="2" name="Scorching Cutlass" />
+      <card id="6118" mastery_level="4" name="Kindlecrack Demon" />
+      <card id="6118" mastery_level="5" name="Kindlecrack Demon" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="6041" mastery_level="7" name="Reaper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6715</id>
+    <name>Battle for irrelevant knowledge</name>
+    <energy>18</energy>
+    <desc>What is this secret to them anyway? Why are they so hot and bothered to prevent you from discovering something that won't make any real difference?</desc>
+    <commander id="443" />
+    <deck>
+      <card id="8053" name="Pious Acolyte" />
+      <card id="2178" name="Hellcay Draftee" />
+      <card id="2178" name="Hellcay Draftee" />
+      <card id="2178" name="Hellcay Draftee" />
+      <card id="2204" name="Halo Slave" />
+      <card id="2204" name="Halo Slave" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6040" mastery_level="2" name="Scorching Cutlass" />
+      <card id="6040" mastery_level="2" name="Scorching Cutlass" />
+      <card id="6118" mastery_level="4" name="Kindlecrack Demon" />
+      <card id="6118" mastery_level="5" name="Kindlecrack Demon" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="6041" mastery_level="7" name="Reaper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6716</id>
+    <name>Speed Reading</name>
+    <energy>18</energy>
+    <desc>You managed to get into the vault and start to uncover the jealously guarded secret of the Angel Wings, the alarm is all over Skyhaven and they are coming to stop your transgression!</desc>
+    <commander id="263" />
+    <deck>
+      <card id="8048" name="Deadeye Sentinel" />
+      <card id="2141" name="Stormbreak Beast" />
+      <card id="2141" name="Stormbreak Beast" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="7072" mastery_level="2" name="Murabi" />
+      <card id="7072" mastery_level="3" name="Murabi" />
+      <card id="7179" mastery_level="4" name="Battlefield Berserker" />
+      <card id="7179" mastery_level="5" name="Battlefield Berserker" />
+      <card id="7119" mastery_level="6" name="Bunnpaa" />
+      <card id="7119" mastery_level="7" name="Bunnpaa" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6717</id>
+    <name>What is Known cannot be Unknown</name>
+    <energy>18</energy>
+    <desc>You have uncovered a secret that is so terrible you realize your life is immediately in danger from two tribes instead of one.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="8057" name="Dyrnwyn's Courage" />
+      <card id="2204" name="Halo Slave" />
+      <card id="2204" name="Halo Slave" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1030" name="Paladin" />
+      <card id="1030" name="Paladin" />
+      <card id="2083" mastery_level="2" name="Habrok, the Lance" />
+      <card id="7072" mastery_level="3" name="Murabi" />
+      <card id="5174" mastery_level="4" name="Cloudbreak Elites" />
+      <card id="5174" mastery_level="5" name="Cloudbreak Elites" />
+      <card id="7263" mastery_level="6" name="Cheggrub" />
+      <card id="7263" mastery_level="7" name="Cheggrub" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6718</id>
+    <name>The Winged Hunt</name>
+    <energy>18</energy>
+    <desc>You've heard stories about a terrible power that hunts helpless prey, but you definitely never expected it to happen at the hands of angels!</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="1030" name="Paladin" />
+      <card id="1030" name="Paladin" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="2086" name="Rimelight Crusader" />
+      <card id="2086" name="Rimelight Crusader" />
+      <card id="2083" mastery_level="2" name="Habrok, the Lance" />
+      <card id="7072" mastery_level="3" name="Murabi" />
+      <card id="5174" mastery_level="4" name="Cloudbreak Elites" />
+      <card id="5174" mastery_level="5" name="Cloudbreak Elites" />
+      <card id="5206" mastery_level="6" name="Scarhawk Avienda" />
+      <card id="5206" mastery_level="7" name="Scarhawk Aviendar" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6719</id>
+    <name>Those who run further</name>
+    <energy>18</energy>
+    <desc>You're definitely banned from Skyhaven after what happened here but despite your transgressor nature, you now have a secret in your possession that could potentially pour oil into troubled waters.</desc>
+    <commander id="406" />
+    <deck>
+      <card id="8124" name="Unfounded Revenge" />
+      <card id="1030" name="Paladin" />
+      <card id="1030" name="Paladin" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5186" name="Priestess of Mending" />
+      <card id="5186" name="Priestess of Mending" />
+      <card id="2083" mastery_level="2" name="Habrok, the Lance" />
+      <card id="7072" mastery_level="3" name="Murabi" />
+      <card id="5174" mastery_level="4" name="Cloudbreak Elites" />
+      <card id="5174" mastery_level="5" name="Cloudbreak Elites" />
+      <card id="5206" mastery_level="6" name="Scarhawk Avienda" />
+      <card id="5206" mastery_level="7" name="Scarhawk Aviendar" />
+    </deck>
+  </mission>
 </root>
 

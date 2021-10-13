@@ -16189,7 +16189,7 @@
     <desc>Complete the 'Bureaucra-Sea' campaign on Mastery Level 1.</desc>
     <mission_req>6690</mission_req>
     <locked_start_time>1631811600</locked_start_time>
-    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <!-- Thursday, 16 September 2021 17:00:00 -->
     <req>
       <campaign>1296</campaign>
       <level>1</level>
@@ -16209,7 +16209,7 @@
     <desc>Complete the 'Bureaucra-Sea' campaign on Mastery Level 2.</desc>
     <mission_req>6690</mission_req>
     <locked_start_time>1631811600</locked_start_time>
-    <!-- Thursday, 19 August 2021 17:00:00 -->
+    <!-- Thursday, 16 September 2021 17:00:00 -->
     <achievement_req>3715</achievement_req>
     <req>
       <campaign>1296</campaign>
@@ -16375,6 +16375,139 @@
     </req>
     <reward>
       <pack>13</pack>
+    </reward>
+  </achievement>
+  <!-- Wizard Event 82 - Angel - Node 1 -->
+  <achievement>
+    <id>3726</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The High Journey</name>
+    <desc>Complete the 'The High Journey' campaign on Mastery Level 1.</desc>
+    <mission_req>6708</mission_req>
+    <locked_start_time>1634230800</locked_start_time>
+    <!-- Thursday, 14 October 2021 17:00:00 -->
+    <req>
+      <campaign>1299</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3068" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7078" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3727</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The High Journey</name>
+    <desc>Complete the 'The High Journey' campaign on Mastery Level 2.</desc>
+    <mission_req>6708</mission_req>
+    <locked_start_time>1634230800</locked_start_time>
+    <!-- Thursday, 14 October 2021 17:00:00 -->
+    <achievement_req>3726</achievement_req>
+    <req>
+      <campaign>1299</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3728</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The High Journey</name>
+    <desc>Complete the 'The High Journey' campaign on Mastery Level 4.</desc>
+    <mission_req>6708</mission_req>
+    <locked_start_time>1634230800</locked_start_time>
+    <!-- Thursday, 14 October 2021 17:00:00 -->
+    <achievement_req>3727</achievement_req>
+    <req>
+      <campaign>1299</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3729</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The High Journey</name>
+    <desc>Complete the 'The High Journey' campaign on Mastery Level 6.</desc>
+    <mission_req>6708</mission_req>
+    <locked_start_time>1634230800</locked_start_time>
+    <!-- Thursday, 14 October 2021 17:00:00 -->
+    <achievement_req>3728</achievement_req>
+    <req>
+      <campaign>1299</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 82 - Angel - Node 2 -->
+  <achievement>
+    <id>3730</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winged Conspiracy</name>
+    <desc>Complete the 'Winged Conspiracy' campaign on Mastery Level 2.</desc>
+    <mission_req>6714</mission_req>
+    <locked_start_time>1635440400</locked_start_time>
+    <!-- Thursday, 28 October 2021 17:00:00 -->
+    <req>
+      <campaign>1300</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3731</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winged Conspiracy</name>
+    <desc>Complete the 'Winged Conspiracy' campaign on Mastery Level 4.</desc>
+    <mission_req>6714</mission_req>
+    <locked_start_time>1635440400</locked_start_time>
+    <!-- Thursday, 28 October 2021 17:00:00 -->
+    <achievement_req>3730</achievement_req>
+    <req>
+      <campaign>1300</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3732</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winged Conspiracy</name>
+    <desc>Complete the 'Winged Conspiracy' campaign on Mastery Level 6.</desc>
+    <mission_req>6714</mission_req>
+    <locked_start_time>1635440400</locked_start_time>
+    <!-- Thursday, 28 October 2021 17:00:00 -->
+    <achievement_req>3731</achievement_req>
+    <req>
+      <campaign>1300</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
     </reward>
   </achievement>
   <!-- END Event Quests  -->
@@ -17170,6 +17303,30 @@
       <campaign>1141</campaign>
       <campaign>1296</campaign>
       <campaign>1297</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Skyhaven revisited -->
+    <id>4036</id>
+    <type>2</type>
+    <order>638</order>
+    <name>Champion of Skyhaven</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Skyhaven.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5860</mission_req>
+    <req>
+      <campaign>1156</campaign>
+      <campaign>1157</campaign>
+      <campaign>1158</campaign>
+      <campaign>1159</campaign>
+      <campaign>1160</campaign>
+      <campaign>1161</campaign>
+      <campaign>1299</campaign>
+      <campaign>1300</campaign>
       <level>7</level>
     </req>
     <reward>
