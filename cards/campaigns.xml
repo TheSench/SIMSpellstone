@@ -10450,6 +10450,37 @@
     <ignore_energy_reduction_until>1639069200</ignore_energy_reduction_until>
     <!-- Thursday, 9 December 2021 17:00:00 -->
   </campaign>
+  <!-- Campaign Event 36 - Fireshard Mine  -->
+  <!-- Placeholder for angel push Campaign IDs 1301 and 1302  -->
+  <!-- Halloween Campaign 2021 -->
+  <campaign>
+    <id>1303</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Trick or Treat</name>
+    <icon id="pumpkin" bundle="75" />
+    <locked_start_time>1635526800</locked_start_time>
+    <!-- Friday, 29 October 2021 17:00:00 -->
+    <location_id>12</location_id>
+    <x>390</x>
+    <y>520</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6519</mission_id>
+      <mission_id>6520</mission_id>
+      <mission_id>6521</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104004" number="50" />
+      <card level="2" id="502" />
+      <item level="3" id="104009" number="50" />
+      <item level="4" id="104041" number="50" />
+      <card level="5" id="502" />
+      <item level="6" id="104050" number="75" />
+      <item level="7" id="104044" number="150" />
+    </rewards>
+    <find_item id="3062" drop_per_energy=".2" />
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

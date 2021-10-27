@@ -37453,5 +37453,140 @@
       <skill id="burn" x="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6294</id>
+    <card_type>2</card_type>
+    <name>Rogue Seraphim</name>
+    <picture>Angel_Zealous_Brawler_A</picture>
+    <asset_bundle>232</asset_bundle>
+    <hidden_until_time>1636390800</hidden_until_time>
+    <attack>12</attack>
+    <health>50</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="8" />
+    <skill id="counterburn" x="7" />
+    <skill id="regenerate" x="8" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>51</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+      <health>52</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="8" />
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>53</health>
+      <skill id="counter" x="9" />
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="9" />
+      <skill id="counterburn" x="8" />
+      <skill id="regenerate" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16294</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Vindicator Seraphim</name>
+    <picture>Angel_Zealous_Brawler_A</picture>
+    <asset_bundle>232</asset_bundle>
+    <hidden_until_time>1636390800</hidden_until_time>
+    <attack>14</attack>
+    <health>54</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="9" />
+    <skill id="counterburn" x="8" />
+    <skill id="regenerate" x="9" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>55</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="10" />
+      <skill id="counterburn" x="8" />
+      <skill id="regenerate" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+      <skill id="counter" x="10" />
+      <skill id="counterburn" x="9" />
+      <skill id="regenerate" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26294</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Unchained Seraphim</name>
+    <picture>Angel_Zealous_Brawler_B</picture>
+    <asset_bundle>232</asset_bundle>
+    <hidden_until_time>1636390800</hidden_until_time>
+    <attack>15</attack>
+    <health>57</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="11" />
+    <skill id="counterburn" x="9" />
+    <skill id="regenerate" x="11" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>16</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>58</health>
+      <attack>17</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>59</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="counter" x="11" />
+      <skill id="counterburn" x="9" />
+      <skill id="regenerate" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="12" />
+      <skill id="counterburn" x="10" />
+      <skill id="regenerate" x="12" />
+    </upgrade>
+  </unit>
 </root>
 

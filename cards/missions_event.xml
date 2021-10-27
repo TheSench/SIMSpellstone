@@ -54940,5 +54940,296 @@
       <card id="5206" mastery_level="7" name="Scarhawk Aviendar" />
     </deck>
   </mission>
+  <!-- Campaign Event 36 - Fireshard Mine  -->
+  <!-- Node 1 -->
+  <mission>
+    <id>6720</id>
+    <name>Where am I?</name>
+    <energy>18</energy>
+    <desc>You were heading on your vacation towards Celestial Vault but you take a wrong turn and end up at Fireshard mines. You decide to stroll around and ask for directions when you accidentally bump into a mean looking Mecha.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="1014" />
+      <card id="1031" />
+      <card id="1327" />
+      <card id="7116" />
+      <card id="2111" />
+      <card id="6208" />
+      <card id="2193" />
+      <card id="2117" />
+      <card id="5165" />
+      <card id="5078" mastery_level="2" />
+      <card id="5224" mastery_level="3" />
+      <card id="7039" mastery_level="4" />
+      <card id="5247" mastery_level="5" />
+      <card id="6247" mastery_level="6" />
+      <card id="7219" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6721</id>
+    <name>Busted</name>
+    <energy>18</energy>
+    <desc>After beating the mean looking robot, the Mepolice arrives and decide to CHARGE you with BATTERY and assault. You are later taken to Mecha prison.</desc>
+    <commander id="404" />
+    <deck>
+      <card id="1011" />
+      <card id="6038" />
+      <card id="2027" />
+      <card id="2084" />
+      <card id="6158" />
+      <card id="5163" />
+      <card id="7181" />
+      <card id="2117" />
+      <card id="6180" />
+      <card id="7218" mastery_level="2" />
+      <card id="7071" mastery_level="3" />
+      <card id="7039" mastery_level="4" />
+      <card id="5042" mastery_level="5" />
+      <card id="7251" mastery_level="6" />
+      <card id="6190" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6722</id>
+    <name>Prison fight</name>
+    <energy>18</energy>
+    <desc>You arrive at the prison and decide to quickly gang up with the strongest pack of Mech ever to exist, the vacuum robots. Unfortunately, these turn out to not be as strong as you thought they would be.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="1014" />
+      <card id="2219" />
+      <card id="7041" />
+      <card id="2203" />
+      <card id="2127" />
+      <card id="2002" />
+      <card id="2110" />
+      <card id="7164" />
+      <card id="6263" />
+      <card id="5116" mastery_level="2" />
+      <card id="6181" mastery_level="3" />
+      <card id="6121" mastery_level="4" />
+      <card id="6241" mastery_level="5" />
+      <card id="7281" mastery_level="6" />
+      <card id="7191" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6723</id>
+    <name>Food fight</name>
+    <energy>18</energy>
+    <desc>After single handedly beating the robot gang you are called for lunch time. Unfortunately, a mean looking robot decides to steal your lunch before you can take a byte.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="1011" />
+      <card id="7070" />
+      <card id="5117" />
+      <card id="6119" />
+      <card id="2109" />
+      <card id="7220" />
+      <card id="6159" />
+      <card id="2143" />
+      <card id="5288" />
+      <card id="1042" mastery_level="2" />
+      <card id="6214" mastery_level="3" />
+      <card id="2205" mastery_level="4" />
+      <card id="2112" mastery_level="5" />
+      <card id="7192" mastery_level="6" />
+      <card id="6190" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6724</id>
+    <name>Prison Break</name>
+    <energy>18</energy>
+    <desc>After the food fight you are taken to your cell where you encounter a goblin that tattooed the entire prison blueprint on himself, you decide to aid him in his escape. On the way out you encounter a prison guard.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="1014" />
+      <card id="7070" />
+      <card id="5117" />
+      <card id="7116" />
+      <card id="2209" />
+      <card id="6208" />
+      <card id="2138" />
+      <card id="7164" />
+      <card id="6263" />
+      <card id="5116" mastery_level="2" />
+      <card id="6181" mastery_level="3" />
+      <card id="6121" mastery_level="4" />
+      <card id="6241" mastery_level="5" />
+      <card id="7281" mastery_level="6" />
+      <card id="7191" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6725</id>
+    <name>Rematch</name>
+    <energy>18</energy>
+    <desc>Once you are leaving you encounter the Mecha that accused you of assaulting him. Unfortunately, he recognizes you and decides to come at you for a second round.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="1011" />
+      <card id="2219" />
+      <card id="5117" />
+      <card id="7116" />
+      <card id="1338" />
+      <card id="2144" />
+      <card id="1037" />
+      <card id="2143" />
+      <card id="5288" />
+      <card id="5260" mastery_level="2" />
+      <card id="6215" mastery_level="3" />
+      <card id="2205" mastery_level="4" />
+      <card id="2112" mastery_level="5" />
+      <card id="7192" mastery_level="6" />
+      <card id="8106" mastery_level="7" />
+    </deck>
+  </mission>
+  <!-- Node 2 -->
+  <mission>
+    <id>6726</id>
+    <name>Trial by combat</name>
+    <energy>18</energy>
+    <desc>After beating the Mecha again, the police catches you. But this time, since they saw you did not attack first, they decide to declare a trial by combat.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="1014" />
+      <card id="6038" />
+      <card id="2027" />
+      <card id="2084" />
+      <card id="2209" />
+      <card id="6208" />
+      <card id="2193" />
+      <card id="7164" />
+      <card id="6180" />
+      <card id="5078" mastery_level="2" />
+      <card id="7071" mastery_level="3" />
+      <card id="6121" mastery_level="4" />
+      <card id="5042" mastery_level="5" />
+      <card id="7281" mastery_level="6" />
+      <card id="6190" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6727</id>
+    <name>Freedom!</name>
+    <energy>18</energy>
+    <desc>After winning the trial by combat you decide to finally relax and have some fun in with the local community. Unfortunately, in a society that is 20.000 feet underground, the most fun thing to do seems to be continuous not-stop battles.</desc>
+    <commander id="403" />
+    <deck>
+      <card id="1011" />
+      <card id="6038" />
+      <card id="1327" />
+      <card id="2203" />
+      <card id="2111" />
+      <card id="7220" />
+      <card id="1037" />
+      <card id="2117" />
+      <card id="6180" />
+      <card id="5260" mastery_level="2" />
+      <card id="6181" mastery_level="3" />
+      <card id="7218" mastery_level="4" />
+      <card id="5247" mastery_level="5" />
+      <card id="6247" mastery_level="6" />
+      <card id="7191" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6728</id>
+    <name>Win the crowd</name>
+    <energy>18</energy>
+    <desc>Even though you won the fight, the crowd barely cheers you on. Unfortunately, a robot’s love can’t be BOT.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1014" />
+      <card id="2219" />
+      <card id="1327" />
+      <card id="2084" />
+      <card id="1338" />
+      <card id="6208" />
+      <card id="2193" />
+      <card id="7164" />
+      <card id="6263" />
+      <card id="5116" mastery_level="2" />
+      <card id="5224" mastery_level="3" />
+      <card id="7039" mastery_level="4" />
+      <card id="5042" mastery_level="5" />
+      <card id="6247" mastery_level="6" />
+      <card id="7191" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6729</id>
+    <name>Reboot</name>
+    <energy>18</energy>
+    <desc>After winning the last fight the crowd now loves you! Your next opponent shows up and seems to be a bit slow, you suggest turning him off and on again.</desc>
+    <commander id="392" />
+    <deck>
+      <card id="1011" />
+      <card id="1031" />
+      <card id="5117" />
+      <card id="6119" />
+      <card id="2209" />
+      <card id="2144" />
+      <card id="1037" />
+      <card id="2143" />
+      <card id="6263" />
+      <card id="5116" mastery_level="2" />
+      <card id="6181" mastery_level="3" />
+      <card id="7218" mastery_level="4" />
+      <card id="6214" mastery_level="5" />
+      <card id="7251" mastery_level="6" />
+      <card id="7219" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6730</id>
+    <name>One last goodbye</name>
+    <energy>18</energy>
+    <desc>After beating the last opponent the crowd now adores you! The love you so much that the try to chain you so that you can not escape. You are definitely not coming back to this place.</desc>
+    <commander id="430" />
+    <deck>
+      <card id="1014" />
+      <card id="2219" />
+      <card id="5117" />
+      <card id="7116" />
+      <card id="1338" />
+      <card id="2144" />
+      <card id="1037" />
+      <card id="2143" />
+      <card id="5288" />
+      <card id="5260" mastery_level="2" />
+      <card id="6215" mastery_level="3" />
+      <card id="2205" mastery_level="4" />
+      <card id="2112" mastery_level="5" />
+      <card id="7281" mastery_level="6" />
+      <card id="7192" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6731</id>
+    <name>See you never!</name>
+    <energy>18</energy>
+    <desc>After escaping from their oily robot hands, you manage to slip away towards the mines exit when you stumble across an angry robot, time for a factory reset.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="1011" />
+      <card id="7070" />
+      <card id="2219" />
+      <card id="5117" />
+      <card id="7116" />
+      <card id="2111" />
+      <card id="6159" />
+      <card id="6208" />
+      <card id="2086" />
+      <card id="6187" mastery_level="2" />
+      <card id="7192" mastery_level="3" />
+      <card id="7218" mastery_level="4" />
+      <card id="6214" mastery_level="5" />
+      <card id="6181" mastery_level="6" />
+      <card id="8139" mastery_level="7" />
+    </deck>
+  </mission>
 </root>
 

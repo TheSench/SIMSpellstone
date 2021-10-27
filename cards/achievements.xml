@@ -16510,6 +16510,203 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 83 - Mecha - Node 1 -->
+  <achievement>
+    <id>3733</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wrong turn</name>
+    <desc>Complete the 'Wrong turn' campaign on Mastery Level 1.</desc>
+    <mission_req>6720</mission_req>
+    <locked_start_time>1636650000</locked_start_time>
+    <!-- Thursday, 11 November 2021 17:00:00 -->
+    <req>
+      <campaign>1301</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3062" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7079" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3734</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wrong turn</name>
+    <desc>Complete the 'Wrong turn' campaign on Mastery Level 2.</desc>
+    <mission_req>6720</mission_req>
+    <locked_start_time>1636650000</locked_start_time>
+    <!-- Thursday, 11 November 2021 17:00:00 -->
+    <achievement_req>3733</achievement_req>
+    <req>
+      <campaign>1301</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3735</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wrong turn</name>
+    <desc>Complete the 'Wrong turn' campaign on Mastery Level 4.</desc>
+    <mission_req>6720</mission_req>
+    <locked_start_time>1636650000</locked_start_time>
+    <!-- Thursday, 11 November 2021 17:00:00 -->
+    <achievement_req>3734</achievement_req>
+    <req>
+      <campaign>1301</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3736</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Wrong turn</name>
+    <desc>Complete the 'Wrong turn' campaign on Mastery Level 6.</desc>
+    <mission_req>6720</mission_req>
+    <locked_start_time>1636650000</locked_start_time>
+    <!-- Thursday, 11 November 2021 17:00:00 -->
+    <achievement_req>3735</achievement_req>
+    <req>
+      <campaign>1301</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 83 - Mecha - Node 2 -->
+  <achievement>
+    <id>3737</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Fireshards way of fun</name>
+    <desc>Complete the 'Fireshards way of fun' campaign on Mastery Level 2.</desc>
+    <mission_req>6726</mission_req>
+    <locked_start_time>1637859600</locked_start_time>
+    <!-- Thursday, 25 November 2021 17:00:00 -->
+    <req>
+      <campaign>1302</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3738</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Fireshards way of fun</name>
+    <desc>Complete the 'Fireshards way of fun' campaign on Mastery Level 4.</desc>
+    <mission_req>6726</mission_req>
+    <locked_start_time>1637859600</locked_start_time>
+    <!-- Thursday, 25 November 2021 17:00:00 -->
+    <achievement_req>3737</achievement_req>
+    <req>
+      <campaign>1302</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3739</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Fireshards way of fun</name>
+    <desc>Complete the 'Fireshards way of fun' campaign on Mastery Level 6.</desc>
+    <mission_req>6726</mission_req>
+    <locked_start_time>1637859600</locked_start_time>
+    <!-- Thursday, 25 November 2021 17:00:00 -->
+    <achievement_req>3738</achievement_req>
+    <req>
+      <campaign>1302</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Halloween Fireshard Mine 2021 -->
+  <achievement>
+    <id>3740</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 1.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1303</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3741</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 2.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3740</achievement_req>
+    <req>
+      <campaign>1303</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3742</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3741</achievement_req>
+    <req>
+      <campaign>1303</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3743</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 6.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3742</achievement_req>
+    <req>
+      <campaign>1303</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -17327,6 +17524,30 @@
       <campaign>1161</campaign>
       <campaign>1299</campaign>
       <campaign>1300</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Fireshard Mine Revisited -->
+    <id>4037</id>
+    <type>2</type>
+    <order>636</order>
+    <name>Champion of Fireshard Mine</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Fireshard Mine.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5745</mission_req>
+    <req>
+      <campaign>1142</campaign>
+      <campaign>1143</campaign>
+      <campaign>1144</campaign>
+      <campaign>1146</campaign>
+      <campaign>1147</campaign>
+      <campaign>1148</campaign>
+      <campaign>1301</campaign>
+      <campaign>1302</campaign>
       <level>7</level>
     </req>
     <reward>
