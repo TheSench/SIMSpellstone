@@ -54970,7 +54970,7 @@
     <id>6721</id>
     <name>Busted</name>
     <energy>18</energy>
-    <desc>After beating the mean looking robot, the Mepolice arrives and decide to CHARGE you with BATTERY and assault. You are later taken to Mecha prison.</desc>
+    <desc>After beating the mean looking robot, the Mecha police arrives and decides to CHARGE you with BATTERY and assault. You are later taken to prison.</desc>
     <commander id="404" />
     <deck>
       <card id="1011" />
@@ -54994,7 +54994,7 @@
     <id>6722</id>
     <name>Prison fight</name>
     <energy>18</energy>
-    <desc>You arrive at the prison and decide to quickly gang up with the strongest pack of Mech ever to exist, the vacuum robots. Unfortunately, these turn out to not be as strong as you thought they would be.</desc>
+    <desc>You arrive at the prison and decide to quickly gang up with the strongest pack of Mecha to ever exist, the vacuum robots. Unfortunately, these turn out to not be as strong as you thought they would.</desc>
     <commander id="413" />
     <deck>
       <card id="1014" />
@@ -55018,7 +55018,7 @@
     <id>6723</id>
     <name>Food fight</name>
     <energy>18</energy>
-    <desc>After single handedly beating the robot gang you are called for lunch time. Unfortunately, a mean looking robot decides to steal your lunch before you can take a byte.</desc>
+    <desc>After single handedly beating the robot gang you are called for lunch time. Unfortunately, a mean looking robot decides to steal your lunch before you can even take a byte.</desc>
     <commander id="321" />
     <deck>
       <card id="1011" />
@@ -55066,7 +55066,7 @@
     <id>6725</id>
     <name>Rematch</name>
     <energy>18</energy>
-    <desc>Once you are leaving you encounter the Mecha that accused you of assaulting him. Unfortunately, he recognizes you and decides to come at you for a second round.</desc>
+    <desc>Once you are leaving, you encounter the Mecha that accused you of assaulting him. Unfortunately, he recognizes you and decides to come at you for a second round.</desc>
     <commander id="413" />
     <deck>
       <card id="1011" />
@@ -55115,7 +55115,7 @@
     <id>6727</id>
     <name>Freedom!</name>
     <energy>18</energy>
-    <desc>After winning the trial by combat you decide to finally relax and have some fun in with the local community. Unfortunately, in a society that is 20.000 feet underground, the most fun thing to do seems to be continuous not-stop battles.</desc>
+    <desc>After winning the trial by combat, you decide to finally relax and have some fun in with the local community. Unfortunately, in a society that is 20.000 feet underground, the most fun thing to do seems to be continuous not-stop battles.</desc>
     <commander id="403" />
     <deck>
       <card id="1011" />
@@ -55230,6 +55230,130 @@
       <card id="6181" mastery_level="6" />
       <card id="8139" mastery_level="7" />
     </deck>
+  </mission>
+  <!-- Halloween Event 2021 -->
+  <mission>
+    <id>6732</id>
+    <name>The Tale of Pumpking</name>
+    <energy>1</energy>
+    <desc>The goblins from Goblin Rise Stronghold retell to Daknak the tragic tale of Pumpking, a king who only wanted to spread goodwill by giving children candy. However, he met a tragic end when his rivals played an unfair trick upon him, cheating him of his rewards.</desc>
+    <commander id="240" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1319" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1330" />
+      <card id="11331" name="Haunted Soldiers" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2024" mastery_level="3" name="Dusk Noble" />
+      <card id="1626" mastery_level="4" name="Tusker" />
+      <card id="1632" mastery_level="5" name="Shadow Rider" />
+      <card id="5082" mastery_level="6" name="Memory" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Bahaha! Daknak laugh at silly Pumpking story! Might be fooled the first time they promised me rewards, but not this one!</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>Ooh, Boss! Be careful how many times you say that name; something bad happens if you say it three times!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6733</id>
+    <name>Pumpking's Appearance?</name>
+    <energy>1</energy>
+    <desc>Although the goblins warned Daknak about the power of Pumpking's name, Daknak tests his luck. He departs from the other goblins, laughing at their ghost story.</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="6017" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1628" name="Garganotos" />
+      <card id="2015" mastery_level="2" name="Pumpking" />
+      <card id="2015" mastery_level="3" name="Pumpking" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
+      <card id="2015" mastery_level="5" name="Pumpking" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Daknak say Pumpking, Pumpking, Pumpking!</text>
+      </line>
+      <line>
+        <commander>pumpkingPortrait</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>D-Daknak sorry! Please give me candy and the rewards of the node this time!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6734</id>
+    <name>More Trick Than Treat</name>
+    <energy>1</energy>
+    <desc>The strange apparition lays something by Daknak's feet, before turning and fading into the night. The goblins return in time to see Daknak holding the item.</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2032" name="Brimstone" />
+      <card id="2032" />
+      <card id="1628" name="Garganotos" />
+      <card id="1326" mastery_level="2" name="Titan of Fire" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
+      <card id="5021" mastery_level="4" name="Tower Spirit" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Ghost left... a pumpkin full of candy?</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>Thanks for getting us some sweet candy, Boss! Is this time for real or the devs messed it up again?</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Hey, no take! That's Daknak's candy!</text>
+      </line>
+    </speech>
   </mission>
 </root>
 

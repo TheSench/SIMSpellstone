@@ -5457,6 +5457,39 @@ var CAMPAIGNS = {
 		],
 		"name": "Winged Conspiracy"
 	},
+	"1301": {
+		"id": "1301",
+		"items": {
+			"3062": 0.6
+		},
+		"location_id": "12",
+		"missions": [
+			"6720",
+			"6721",
+			"6722",
+			"6723",
+			"6724",
+			"6725"
+		],
+		"name": "Wrong turn"
+	},
+	"1302": {
+		"battleground_id": "2019",
+		"id": "1302",
+		"items": {
+			"3062": 0.8
+		},
+		"location_id": "12",
+		"missions": [
+			"6726",
+			"6727",
+			"6728",
+			"6729",
+			"6730",
+			"6731"
+		],
+		"name": "Fireshards way of fun"
+	},
 	"1303": {
 		"id": "1303",
 		"items": {
@@ -5464,11 +5497,11 @@ var CAMPAIGNS = {
 		},
 		"location_id": "12",
 		"missions": [
-			"6519",
-			"6520",
-			"6521"
+			"6732",
+			"6733",
+			"6734"
 		],
-		"name": "Trick or Treat"
+		"name": "False Halloween?"
 	},
 	"3000": {
 		"id": "3000",
@@ -119428,5 +119461,185 @@ var MISSIONS = {
 		],
 		"id": "6731",
 		"name": "See you never!"
+	},
+	"6732": {
+		"commander": {
+			"id": "240"
+		},
+		"deck": [
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1319"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "1329"
+			},
+			{
+				"id": "1330"
+			},
+			{
+				"id": "1330"
+			},
+			{
+				"id": "11331"
+			},
+			{
+				"id": "1328",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2024",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1626",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5082",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6035",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6732",
+		"name": "The Tale of Pumpking"
+	},
+	"6733": {
+		"commander": {
+			"id": "342"
+		},
+		"deck": [
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "6017"
+			},
+			{
+				"id": "1332"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6733",
+		"name": "Pumpking's Appearance?"
+	},
+	"6734": {
+		"commander": {
+			"id": "342"
+		},
+		"deck": [
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1311"
+			},
+			{
+				"id": "1315"
+			},
+			{
+				"id": "1315"
+			},
+			{
+				"id": "1632"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5035",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5021",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2062",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2015",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6734",
+		"name": "More Trick Than Treat"
 	}
 };

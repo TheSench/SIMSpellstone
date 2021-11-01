@@ -10451,13 +10451,99 @@
     <!-- Thursday, 9 December 2021 17:00:00 -->
   </campaign>
   <!-- Campaign Event 36 - Fireshard Mine  -->
-  <!-- Placeholder for angel push Campaign IDs 1301 and 1302  -->
+  <campaign>
+    <id>1301</id>
+    <name>Wrong turn</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1636650000</locked_start_time>
+    <!-- Thursday, 11 November 2021 17:00:00 -->
+    <location_id>12</location_id>
+    <x>50</x>
+    <!-- left right -->
+    <y>570</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6720</mission_id>
+      <mission_id>6721</mission_id>
+      <mission_id>6722</mission_id>
+      <mission_id>6723</mission_id>
+      <mission_id>6724</mission_id>
+      <mission_id>6725</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2625" number="25" />
+      /&gt;
+      <!-- Fireshard Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2221" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2144" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2625" number="75" />
+      /&gt;
+      <!-- Fireshard Flask -->
+      <card level="7" id="2220" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3062" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
+    <!-- Thursday, 6 January 2022 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1302</id>
+    <name>Fireshards way of fun</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1301" level="1" />
+    <locked_start_time>1637859600</locked_start_time>
+    <!-- Thursday, 25 November 2021 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>12</location_id>
+    <x>820</x>
+    <!-- left right -->
+    <y>300</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6726</mission_id>
+      <mission_id>6727</mission_id>
+      <mission_id>6728</mission_id>
+      <mission_id>6729</mission_id>
+      <mission_id>6730</mission_id>
+      <mission_id>6731</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2625" number="25" />
+      /&gt;
+      <!-- Fireshard Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2192" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2193" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2625" number="75" />
+      /&gt;
+      <!-- Fireshard Flask -->
+      <card level="7" id="2220" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3062" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
+    <!-- Thursday, 6 January 2022 17:00:00 -->
+  </campaign>
   <!-- Halloween Campaign 2021 -->
   <campaign>
     <id>1303</id>
     <hidden>1</hidden>
     <event_only>1</event_only>
-    <name>Trick or Treat</name>
+    <name>False Halloween?</name>
     <icon id="pumpkin" bundle="75" />
     <locked_start_time>1635526800</locked_start_time>
     <!-- Friday, 29 October 2021 17:00:00 -->
@@ -10466,17 +10552,17 @@
     <y>520</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
-      <mission_id>6519</mission_id>
-      <mission_id>6520</mission_id>
-      <mission_id>6521</mission_id>
+      <mission_id>6732</mission_id>
+      <mission_id>6733</mission_id>
+      <mission_id>6734</mission_id>
     </missions>
     <rewards>
       <item level="1" id="104004" number="50" />
-      <card level="2" id="502" />
+      <item level="2" id="1004" number="2" />
       <item level="3" id="104009" number="50" />
-      <item level="4" id="104041" number="50" />
-      <card level="5" id="502" />
-      <item level="6" id="104050" number="75" />
+      <item level="4" id="104031" number="50" />
+      <item level="5" id="1004" number="2" />
+      <item level="6" id="104018" number="75" />
       <item level="7" id="104044" number="150" />
     </rewards>
     <find_item id="3062" drop_per_energy=".2" />
