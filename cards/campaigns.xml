@@ -10410,7 +10410,7 @@
     <id>1300</id>
     <name>Winged Conspiracy</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1296" level="1" />
+    <campaign_req id="1299" level="1" />
     <locked_start_time>1635440400</locked_start_time>
     <!-- Thursday, 28 October 2021 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -10524,7 +10524,7 @@
       <!-- Fireshard Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2192" />
+      <card level="4" id="2168" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2193" />
       <!-- Epic Reward D (Old) -->
