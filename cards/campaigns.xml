@@ -10549,7 +10549,9 @@
     <!-- Friday, 29 October 2021 17:00:00 -->
     <location_id>12</location_id>
     <x>390</x>
+    <!-- left right -->
     <y>520</y>
+    <!-- up down -->
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6732</mission_id>
@@ -10566,6 +10568,40 @@
       <item level="7" id="104044" number="150" />
     </rewards>
     <find_item id="3062" drop_per_energy=".2" />
+  </campaign>
+  <!-- Christmas Event 2021 -->
+  <campaign>
+    <id>1306</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <!-- <campaign_req id='6' level='1' /> -->
+    <locked_start_time>1639760400</locked_start_time>
+    <!-- Friday, 17 December 2021 17:00:00 -->
+    <location_id>26</location_id>
+    <x>570</x>
+    <!-- left right -->
+    <y>370</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6748</mission_id>
+      <mission_id>6749</mission_id>
+      <mission_id>6750</mission_id>
+      <mission_id>6751</mission_id>
+      <mission_id>6752</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104031" number="50" />
+      <item level="2" id="104038" number="50" />
+      <item level="3" id="104007" number="65" />
+      <item level="4" id="104037" number="65" />
+      <item level="5" id="104014" number="75" />
+      <item level="6" id="104004" number="100" />
+      <item level="7" id="104018" number="125" />
+    </rewards>
+    <find_item id="3110" drop_per_energy=".2" />
   </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->

@@ -16707,6 +16707,171 @@
       <pack>13</pack>
     </reward>
   </achievement>
+  <!-- Wizard Event 84 - Frogs - Node 1 -->
+  <achievement>
+    <id>3744</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Frog Society</name>
+    <desc>Complete the 'Frog Society' campaign on Mastery Level 1.</desc>
+    <mission_req>6736</mission_req>
+    <locked_start_time>1639069200</locked_start_time>
+    <!-- Thursday, December 9, 2021 at 17:00:00 -->
+    <req>
+      <campaign>1304</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3110" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7080" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3745</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Frog Society</name>
+    <desc>Complete the 'Frog Society' campaign on Mastery Level 2.</desc>
+    <mission_req>6736</mission_req>
+    <locked_start_time>1639069200</locked_start_time>
+    <!-- Thursday, December 9, 2021 at 17:00:00 -->
+    <achievement_req>3744</achievement_req>
+    <req>
+      <campaign>1304</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3746</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Frog Society</name>
+    <desc>Complete the 'Frog Society' campaign on Mastery Level 4.</desc>
+    <mission_req>6736</mission_req>
+    <locked_start_time>1639069200</locked_start_time>
+    <!-- Thursday, December 9, 2021 at 17:00:00 -->
+    <achievement_req>3745</achievement_req>
+    <req>
+      <campaign>1304</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3747</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Frog Society</name>
+    <desc>Complete the 'Frog Society' campaign on Mastery Level 6.</desc>
+    <mission_req>6736</mission_req>
+    <locked_start_time>1639069200</locked_start_time>
+    <!-- Thursday, December 9, 2021 at 17:00:00 -->
+    <achievement_req>3746</achievement_req>
+    <req>
+      <campaign>1304</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 84 - Frogs - Node 2 -->
+  <achievement>
+    <id>3748</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Froggsters</name>
+    <desc>Complete the 'Froggsters' campaign on Mastery Level 2.</desc>
+    <mission_req>6742</mission_req>
+    <locked_start_time>1640278800</locked_start_time>
+    <!--  Thursday, December 23, 2021 17:00:00 -->
+    <req>
+      <campaign>1305</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3749</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Froggsters</name>
+    <desc>Complete the 'Froggsters' campaign on Mastery Level 4.</desc>
+    <mission_req>6742</mission_req>
+    <locked_start_time>1640278800</locked_start_time>
+    <!-- Thursday, December 23, 2021 17:00:00 -->
+    <achievement_req>3748</achievement_req>
+    <req>
+      <campaign>1305</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3750</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Froggsters</name>
+    <desc>Complete the 'Froggsters' campaign on Mastery Level 6.</desc>
+    <mission_req>6749</mission_req>
+    <locked_start_time>1640278800</locked_start_time>
+    <!-- Thursday, December 23, 2021 17:00:00 -->
+    <achievement_req>3749</achievement_req>
+    <req>
+      <campaign>1305</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Christmas 2021 Achievements -->
+  <achievement>
+    <id>3751</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tree Champion</name>
+    <desc>Complete the 'Tree Champion' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1306</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3752</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tree Champion</name>
+    <desc>Complete the 'Tree Champion' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3751</achievement_req>
+    <req>
+      <campaign>1306</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -17548,6 +17713,29 @@
       <campaign>1148</campaign>
       <campaign>1301</campaign>
       <campaign>1302</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Healed Dawnglow Revisited -->
+    <id>4038</id>
+    <type>2</type>
+    <order>636</order>
+    <name>Champion of Healed Dawnglow</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Healed Dawnglow.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6384</mission_req>
+    <req>
+      <campaign>1239</campaign>
+      <campaign>1240</campaign>
+      <campaign>1247</campaign>
+      <campaign>1248</campaign>
+      <campaign>1249</campaign>
+      <campaign>1304</campaign>
+      <campaign>1305</campaign>
       <level>7</level>
     </req>
     <reward>

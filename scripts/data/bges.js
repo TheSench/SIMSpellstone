@@ -1434,6 +1434,34 @@ var BATTLEGROUNDS = {
 		"id": "145",
 		"name": "Radioactive Biosteel"
 	},
+	"146": {
+		"desc": "Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce and Siphon equal to their base Attack.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 1,
+				"y": "4"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 1,
+				"y": "4"
+			}
+		],
+		"id": "146",
+		"name": "Lily & Vampiric Spear Formation"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
