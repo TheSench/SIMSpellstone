@@ -10576,7 +10576,7 @@
     <event_only>1</event_only>
     <name>Tree Champion</name>
     <icon id="santaHat" bundle="41" />
-    <!-- <campaign_req id='6' level='1' /> -->
+    <campaign_req id="6" level="1" />
     <locked_start_time>1639760400</locked_start_time>
     <!-- Friday, 17 December 2021 17:00:00 -->
     <location_id>26</location_id>
