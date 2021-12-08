@@ -4192,6 +4192,190 @@ var RAIDS = {
 		"type": "Raid",
 		"upgradeLevels": "24"
 	},
+	"24026": {
+		"bge": "503",
+		"commander": {
+			"id": "253"
+		},
+		"deck": {
+			"card": [
+				{
+					"id": "8000"
+				},
+				{
+					"id": "2045",
+					"remove_mastery_level": "5"
+				},
+				{
+					"id": "1617",
+					"remove_mastery_level": "8"
+				},
+				{
+					"id": "2045",
+					"remove_mastery_level": "9"
+				},
+				{
+					"id": "1617",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "7017",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "6031",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "5012",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "5012",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "2021",
+					"remove_mastery_level": "23"
+				},
+				{
+					"id": "2021",
+					"mastery_level": "3",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "2045",
+					"mastery_level": "4",
+					"remove_mastery_level": "12"
+				},
+				{
+					"id": "7029",
+					"mastery_level": "5",
+					"remove_mastery_level": "13"
+				},
+				{
+					"id": "5030",
+					"mastery_level": "6",
+					"remove_mastery_level": "16"
+				},
+				{
+					"id": "6031",
+					"mastery_level": "7",
+					"remove_mastery_level": "19"
+				},
+				{
+					"id": "7024",
+					"mastery_level": "8",
+					"remove_mastery_level": "20"
+				},
+				{
+					"id": "7029",
+					"mastery_level": "9",
+					"remove_mastery_level": "21"
+				},
+				{
+					"id": "6031",
+					"mastery_level": "9",
+					"remove_mastery_level": "22"
+				},
+				{
+					"id": "8002",
+					"mastery_level": "10"
+				},
+				{
+					"id": "5031",
+					"mastery_level": "10",
+					"remove_mastery_level": "14"
+				},
+				{
+					"id": "5026",
+					"mastery_level": "10",
+					"remove_mastery_level": "15"
+				},
+				{
+					"id": "5023",
+					"mastery_level": "11",
+					"remove_mastery_level": "15"
+				},
+				{
+					"id": "8002",
+					"mastery_level": "11"
+				},
+				{
+					"id": "8003",
+					"mastery_level": "11"
+				},
+				{
+					"id": "6027",
+					"mastery_level": "12",
+					"remove_mastery_level": "17"
+				},
+				{
+					"id": "5026",
+					"mastery_level": "13",
+					"remove_mastery_level": "18"
+				},
+				{
+					"id": "5031",
+					"mastery_level": "14",
+					"remove_mastery_level": "24"
+				},
+				{
+					"id": "7031",
+					"mastery_level": "15",
+					"remove_mastery_level": "25"
+				},
+				{
+					"id": "8004",
+					"mastery_level": "15"
+				},
+				{
+					"id": "8000",
+					"mastery_level": "16"
+				},
+				{
+					"id": "8001",
+					"mastery_level": "17"
+				},
+				{
+					"id": "8002",
+					"mastery_level": "18"
+				},
+				{
+					"id": "8000",
+					"mastery_level": "19"
+				},
+				{
+					"id": "8003",
+					"mastery_level": "20"
+				},
+				{
+					"id": "8002",
+					"mastery_level": "21"
+				},
+				{
+					"id": "8003",
+					"mastery_level": "22"
+				},
+				{
+					"id": "8004",
+					"mastery_level": "23"
+				},
+				{
+					"id": "8004",
+					"mastery_level": "24"
+				},
+				{
+					"id": "8001",
+					"mastery_level": "25"
+				}
+			]
+		},
+		"id": "24026",
+		"name": "Frostbite Revenge!",
+		"type": "Raid",
+		"upgradeLevels": "22"
+	},
 	"28001": {
 		"bge": "510",
 		"commander": {

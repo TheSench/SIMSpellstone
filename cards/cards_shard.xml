@@ -2754,7 +2754,7 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>2</type>
     <sub_type>4</sub_type>
-    <attack>6</attack>
+    <attack>8</attack>
     <health>17</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -2770,7 +2770,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
+      <attack>9</attack>
       <health>19</health>
       <skill id="enfeeble" x="5" />
       <skill id="burn" x="3" />
@@ -2787,39 +2787,39 @@
       <level>5</level>
       <health>21</health>
       <skill id="enfeeble" x="7" />
-      <skill id="burn" x="4" />
+      <skill id="burn" x="5" />
       <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>8</attack>
+      <attack>10</attack>
       <health>22</health>
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>23</health>
       <skill id="enfeeble" x="8" />
-      <skill id="burn" x="4" />
+      <skill id="burn" x="5" />
       <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <skill id="enfeeble" x="8" />
-      <skill id="burn" x="5" />
+      <skill id="burn" x="6" />
       <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <attack>9</attack>
+      <attack>11</attack>
       <health>24</health>
-      <skill id="enfeeble" x="8" />
-      <skill id="burn" x="6" />
+      <skill id="enfeeble" x="9" />
+      <skill id="burn" x="7" />
       <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <skill id="enfeeble" x="9" />
-      <skill id="burn" x="6" />
+      <skill id="enfeeble" x="10" />
+      <skill id="burn" x="7" />
       <skill id="leech" x="11" />
     </upgrade>
   </unit>
@@ -3002,69 +3002,65 @@
     <type>2</type>
     <sub_type>4</sub_type>
     <sub_type>7</sub_type>
-    <attack>8</attack>
-    <health>26</health>
+    <attack>12</attack>
+    <health>27</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="legion" x="4" />
-    <skill id="pierce" x="8" />
-    <skill id="leech" x="8" />
+    <skill id="pierce" x="12" />
+    <skill id="leech" x="12" />
     <upgrade>
       <level>2</level>
-      <attack>9</attack>
-      <health>27</health>
+      <health>28</health>
       <skill id="legion" x="5" />
-      <skill id="pierce" x="9" />
-      <skill id="leech" x="9" />
+      <skill id="pierce" x="13" />
+      <skill id="leech" x="13" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>10</attack>
+      <attack>13</attack>
       <skill id="legion" x="5" />
-      <skill id="pierce" x="10" />
-      <skill id="leech" x="10" />
+      <skill id="pierce" x="14" />
+      <skill id="leech" x="14" />
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>30</health>
       <skill id="legion" x="6" />
-      <skill id="pierce" x="10" />
-      <skill id="leech" x="10" />
+      <skill id="pierce" x="14" />
+      <skill id="leech" x="14" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>11</attack>
+      <attack>14</attack>
       <skill id="legion" x="6" />
-      <skill id="pierce" x="11" />
-      <skill id="leech" x="11" />
+      <skill id="pierce" x="15" />
+      <skill id="leech" x="15" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>29</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>7</level>
       <skill id="legion" x="7" />
-      <skill id="pierce" x="11" />
-      <skill id="leech" x="11" />
+      <skill id="pierce" x="16" />
+      <skill id="leech" x="16" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <attack>12</attack>
+      <attack>15</attack>
       <skill id="legion" x="7" />
-      <skill id="pierce" x="12" />
-      <skill id="leech" x="12" />
+      <skill id="pierce" x="17" />
+      <skill id="leech" x="17" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>32</health>
+      <health>34</health>
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>13</attack>
-      <health>33</health>
-      <skill id="legion" x="7" />
-      <skill id="pierce" x="13" />
-      <skill id="leech" x="13" />
+      <attack>17</attack>
     </upgrade>
   </unit>
   <unit>
@@ -4463,6 +4459,92 @@
       <skill id="counterburn" x="10" />
       <skill id="strike" all="1" x="7" />
       <skill id="weaken" all="1" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4053</id>
+    <card_type>2</card_type>
+    <name>Cellia, Heir of War</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frog_Cellia_A</picture>
+    <asset_bundle>236</asset_bundle>
+    <item_name>Cellia Stone</item_name>
+    <item_desc>Collect Cellia Stones to upgrade the Legendary Cellia, Heir of War!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <attack>11</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="8" />
+    <skill id="rally" all="1" y="4" x="3" />
+    <skill id="protect" all="1" y="4" x="3" />
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <skill id="absorb" x="9" />
+      <skill id="rally" all="1" y="4" x="4" />
+      <skill id="protect" all="1" y="4" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+      <skill id="absorb" x="9" />
+      <skill id="rally" all="1" y="4" x="4" />
+      <skill id="protect" all="1" y="4" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+      <skill id="absorb" x="10" />
+      <skill id="rally" all="1" y="4" x="4" />
+      <skill id="protect" all="1" y="4" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <skill id="absorb" x="10" />
+      <skill id="rally" all="1" y="4" x="4" />
+      <skill id="protect" all="1" y="4" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>35</health>
+      <skill id="absorb" x="10" />
+      <skill id="rally" all="1" y="4" x="5" />
+      <skill id="protect" all="1" y="4" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>14</attack>
+      <skill id="absorb" x="11" />
+      <skill id="rally" all="1" y="4" x="5" />
+      <skill id="protect" all="1" y="4" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="absorb" x="11" />
+      <skill id="rally" all="1" y="4" x="6" />
+      <skill id="protect" all="1" y="4" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>15</attack>
+      <skill id="absorb" x="12" />
+      <skill id="rally" all="1" y="4" x="6" />
+      <skill id="protect" all="1" y="4" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>36</health>
+      <skill id="absorb" x="12" />
+      <skill id="rally" all="1" y="4" x="7" />
+      <skill id="protect" all="1" y="4" x="7" />
     </upgrade>
   </unit>
   <!-- Reward End -->
@@ -8095,6 +8177,97 @@
       <skill id="evade" x="4" />
       <skill id="enfeeble" x="6" all="1" />
       <skill id="weaken" x="5" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6617</id>
+    <card_type>2</card_type>
+    <name>Domhain, the Fomorian</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frog_Entropy_Lord_A</picture>
+    <asset_bundle>236</asset_bundle>
+    <!-- This can be found on assetBundles.xml -->
+    <hidden_until_time>1639069200</hidden_until_time>
+    <!-- Thursday, December 9, 2021 at 17:00:00  -->
+    <item_name>Domhain Stone</item_name>
+    <item_desc>Collect Domhain Stones to upgrade the Legendary Domhain, the Fomorian card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
+    <attack>13</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="protect" x="5" all="1" />
+    <skill id="leech" x="13" />
+    <upgrade>
+      <level>2</level>
+      <attack>14</attack>
+      <skill id="corrosive" x="7" />
+      <skill id="protect" x="5" all="1" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="corrosive" x="7" />
+      <skill id="protect" x="6" all="1" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>15</attack>
+      <health>43</health>
+      <skill id="corrosive" x="7" />
+      <skill id="protect" x="6" all="1" />
+      <skill id="leech" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+      <skill id="corrosive" x="8" />
+      <skill id="protect" x="6" all="1" />
+      <skill id="leech" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>16</attack>
+      <skill id="corrosive" x="8" />
+      <skill id="protect" x="6" all="1" />
+      <skill id="leech" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="corrosive" x="9" />
+      <skill id="protect" x="7" all="1" />
+      <skill id="leech" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>17</attack>
+      <skill id="corrosive" x="9" />
+      <skill id="protect" x="7" all="1" />
+      <skill id="leech" x="17" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>46</health>
+      <skill id="corrosive" x="10" />
+      <skill id="protect" x="8" all="1" />
+      <skill id="leech" x="17" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>18</attack>
+      <skill id="corrosive" x="10" />
+      <skill id="protect" x="8" all="1" />
+      <skill id="leech" x="17" />
     </upgrade>
   </unit>
   <!-- === CHAOS END === -->

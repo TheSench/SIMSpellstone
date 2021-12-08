@@ -18734,7 +18734,7 @@
     <upgrade>
       <level>4</level>
       <skill id="absorb" x="3" />
-      <skill id="regenerate" x="3" />
+      <skill id="regenerate" x="4" />
       <skill id="burn" x="2" />
     </upgrade>
     <upgrade>
@@ -18756,7 +18756,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="absorb" x="3" />
-    <skill id="regenerate" x="3" />
+    <skill id="regenerate" x="5" />
     <skill id="burn" x="3" />
     <type>2</type>
     <sub_type>4</sub_type>
@@ -18764,14 +18764,14 @@
     <upgrade>
       <level>2</level>
       <skill id="absorb" x="4" />
-      <skill id="regenerate" x="3" />
+      <skill id="regenerate" x="5" />
       <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>24</health>
       <skill id="absorb" x="4" />
-      <skill id="regenerate" x="4" />
+      <skill id="regenerate" x="6" />
       <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
@@ -18782,7 +18782,7 @@
     <upgrade>
       <level>5</level>
       <skill id="absorb" x="4" />
-      <skill id="regenerate" x="4" />
+      <skill id="regenerate" x="6" />
       <skill id="burn" x="4" />
     </upgrade>
   </unit>
@@ -18799,7 +18799,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="absorb" x="5" />
-    <skill id="regenerate" x="4" />
+    <skill id="regenerate" x="6" />
     <skill id="burn" x="5" />
     <type>2</type>
     <sub_type>4</sub_type>
@@ -18808,7 +18808,7 @@
       <level>2</level>
       <health>27</health>
       <skill id="absorb" x="6" />
-      <skill id="regenerate" x="5" />
+      <skill id="regenerate" x="7" />
       <skill id="burn" x="5" />
     </upgrade>
     <upgrade>
@@ -18818,14 +18818,14 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="6" />
-      <skill id="regenerate" x="6" />
+      <skill id="absorb" x="7" />
+      <skill id="regenerate" x="7" />
       <skill id="burn" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="absorb" x="7" />
-      <skill id="regenerate" x="6" />
+      <skill id="absorb" x="8" />
+      <skill id="regenerate" x="8" />
       <skill id="burn" x="5" />
     </upgrade>
   </unit>
@@ -21153,7 +21153,7 @@
       <level>3</level>
       <skill id="rally" x="2" all="1" y="3" />
       <skill id="weaken" x="1" all="1" />
-      <skill id="pierce" x="8" />
+      <skill id="pierce" x="10" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -21172,20 +21172,20 @@
     <picture>Dragon_Frog_Axolotl_Warriors_B</picture>
     <asset_bundle>187</asset_bundle>
     <hidden_until_time>1585846800</hidden_until_time>
-    <attack>7</attack>
+    <attack>8</attack>
     <health>26</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="rally" x="2" all="1" y="3" />
     <skill id="weaken" x="1" all="1" />
-    <skill id="pierce" x="9" />
+    <skill id="pierce" x="11" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>9</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>8</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -21195,13 +21195,13 @@
       <level>4</level>
       <skill id="rally" x="3" all="1" y="3" />
       <skill id="weaken" x="1" all="1" />
-      <skill id="pierce" x="9" />
+      <skill id="pierce" x="12" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="3" all="1" y="3" />
-      <skill id="weaken" x="2" all="1" />
-      <skill id="pierce" x="10" />
+      <skill id="rally" x="4" all="1" y="3" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="pierce" x="13" />
     </upgrade>
   </unit>
   <unit>
@@ -25915,254 +25915,251 @@
       <skill id="strike" x="4" all="1" />
     </upgrade>
   </unit>
-  <!-- TEMPORARY REMOVAL
-<unit>
-	<id>2222</id>
-	<card_type>2</card_type>
-	<name>Corruption Squad</name>
-	<picture>Frog_Frogling_Banetroops_A</picture>
-	<asset_bundle>236</asset_bundle>
-	<hidden_until_time>1639069200</hidden_until_time>
-	<attack>8</attack>
-	<health>26</health>
-	<cost>2</cost>
-	<rarity>3</rarity>
-	<skill id="regenerate" x="6"/>
-	<skill id="legion" x="3"/>
-	<skill id="poison" x="6"/>
-	<type>3</type>
-	<sub_type>4</sub_type>
-	<set>2000</set>
-	<upgrade>
-		<level>2</level>
-		<health>27</health>
-	</upgrade>
-	<upgrade>
-		<level>3</level>
-		<attack>9</attack>
-	</upgrade>
-	<upgrade>
-		<level>4</level>
-		<skill id="regenerate" x="7"/>
-		<skill id="legion" x="3"/>
-		<skill id="poison" x="6"/>
-	</upgrade>
-	<upgrade>
-		<level>5</level>
-		<skill id="regenerate" x="7"/>
-		<skill id="legion" x="3"/>
-		<skill id="poison" x="7"/>
-	</upgrade>
-</unit>
-<unit>
-	<id>12222</id>
-	<card_type>2</card_type>
-	<fusion_level>1</fusion_level>
-	<name>Corruption Crew</name>
-	<picture>Frog_Frogling_Banetroops_A</picture>
-	<asset_bundle>236</asset_bundle>
-	<hidden_until_time>1639069200</hidden_until_time>
-	<attack>9</attack>
-	<health>28</health>
-	<cost>2</cost>
-	<rarity>3</rarity>
-	<skill id="regenerate" x="7"/>
-	<skill id="legion" x="3"/>
-	<skill id="poison" x="7"/>
-	<type>3</type>
-	<sub_type>4</sub_type>
-	<set>2000</set>
-	<upgrade>
-		<level>2</level>
-		<skill id="regenerate" x="7"/>
-		<skill id="legion" x="4"/>
-		<skill id="poison" x="7"/>
-	</upgrade>
-	<upgrade>
-		<level>3</level>
-		<attack>10</attack>
-	</upgrade>
-	<upgrade>
-		<level>4</level>
-		<skill id="regenerate" x="8"/>
-		<skill id="legion" x="4"/>
-		<skill id="poison" x="7"/>
-	</upgrade>
-	<upgrade>
-		<level>5</level>
-		<skill id="regenerate" x="8"/>
-		<skill id="legion" x="4"/>
-		<skill id="poison" x="8"/>
-	</upgrade>
-</unit>
-<unit>
-	<id>22222</id>
-	<card_type>2</card_type>
-	<fusion_level>2</fusion_level>
-	<name>Corruption Colony</name>
-	<picture>Frog_Frogling_Banetroops_B</picture>
-	<asset_bundle>236</asset_bundle>
-	<hidden_until_time>1639069200</hidden_until_time>
-	<attack>10</attack>
-	<health>29</health>
-	<cost>2</cost>
-	<rarity>3</rarity>
-	<skill id="regenerate" x="8"/>
-	<skill id="legion" x="4"/>
-	<skill id="poison" x="8"/>
-	<type>3</type>
-	<sub_type>4</sub_type>
-	<set>2000</set>
-	<upgrade>
-		<level>2</level>
-		<attack>11</attack>
-	</upgrade>
-	<upgrade>
-		<level>3</level>
-		<health>30</health>
-	</upgrade>
-	<upgrade>
-		<level>4</level>
-		<skill id="regenerate" x="9"/>
-		<skill id="legion" x="4"/>
-		<skill id="poison" x="8"/>
-	</upgrade>
-	<upgrade>
-		<level>5</level>
-		<skill id="regenerate" x="9"/>
-		<skill id="legion" x="5"/>
-		<skill id="poison" x="9"/>
-	</upgrade>
-</unit>
-
-<unit>
-	<id>2223</id>
-	<card_type>2</card_type>
-	<name>Stalker Hextongue</name>
-	<picture>Frog_Shadow_Jumper_A</picture>
-	<asset_bundle>236</asset_bundle>
-	<hidden_until_time>1639069200</hidden_until_time>
-	<attack>5</attack>
-	<health>11</health>
-	<cost>0</cost>
-	<rarity>4</rarity>
-	<skill id="valor" x="3"/>
-	<skill id="enfeeble" x="1" all="1"/>
-	<skill id="flurry" c="6"/>
-	<type>2</type>
-	<sub_type>4</sub_type>
-	<set>2000</set>
-	<upgrade>
-		<level>2</level>
-		<skill id="valor" x="3"/>
-		<skill id="enfeeble" x="1" all="1"/>
-		<skill id="flurry" c="5"/>
-	</upgrade>
-	<upgrade>
-		<level>3</level>
-		<health>12</health>
-	</upgrade>
-	<upgrade>
-		<level>4</level>
-		<health>13</health>
-	</upgrade>
-	<upgrade>
-		<level>5</level>
-		<health>14</health>
-	</upgrade>
-	<upgrade>
-		<level>6</level>
-		<skill id="valor" x="4"/>
-		<skill id="enfeeble" x="1" all="1"/>
-		<skill id="flurry" c="5"/>
-	</upgrade>
-</unit>
-<unit>
-	<id>12223</id>
-	<card_type>2</card_type>
-	<fusion_level>1</fusion_level>
-	<name>Hunter Hextongue</name>
-	<picture>Frog_Shadow_Jumper_A</picture>
-	<asset_bundle>236</asset_bundle>
-	<hidden_until_time>1639069200</hidden_until_time>
-	<attack>5</attack>
-	<health>14</health>
-	<cost>0</cost>
-	<rarity>4</rarity>
-	<skill id="valor" x="4"/>
-	<skill id="enfeeble" x="1" all="1"/>
-	<skill id="flurry" c="4"/>
-	<type>2</type>
-	<sub_type>4</sub_type>
-	<set>2000</set>
-	<upgrade>
-		<level>2</level>
-		<health>15</health>
-	</upgrade>
-	<upgrade>
-		<level>3</level>
-		<skill id="valor" x="4"/>
-		<skill id="enfeeble" x="2" all="1"/>
-		<skill id="flurry" c="4"/>
-	</upgrade>
-	<upgrade>
-		<level>4</level>
-		<health>16</health>
-	</upgrade>
-	<upgrade>
-		<level>5</level>
-		<health>17</health>
-	</upgrade>
-	<upgrade>
-		<level>6</level>
-		<skill id="valor" x="5"/>
-		<skill id="enfeeble" x="2" all="1"/>
-		<skill id="flurry" c="4"/>
-	</upgrade>
-</unit>
-<unit>
-	<id>22223</id>
-	<card_type>2</card_type>
-	<fusion_level>2</fusion_level>
-	<name>Killer Hextongue</name>
-	<picture>Frog_Shadow_Jumper_B</picture>
-	<asset_bundle>236</asset_bundle>
-	<hidden_until_time>1639069200</hidden_until_time>
-	<attack>5</attack>
-	<health>17</health>
-	<cost>0</cost>
-	<rarity>4</rarity>
-	<skill id="valor" x="5"/>
-	<skill id="enfeeble" x="2" all="1"/>
-	<skill id="flurry" c="3"/>
-	<type>2</type>
-	<sub_type>4</sub_type>
-	<set>2000</set>
-	<upgrade>
-		<level>2</level>
-		<health>18</health>
-	</upgrade>
-	<upgrade>
-		<level>3</level>
-		<health>19</health>
-	</upgrade>
-	<upgrade>
-		<level>4</level>
-		<health>20</health>
-	</upgrade>
-	<upgrade>
-		<level>5</level>
-		<skill id="valor" x="6"/>
-		<skill id="enfeeble" x="2" all="1"/>
-		<skill id="flurry" c="3"/>
-	</upgrade>
-	<upgrade>
-		<level>6</level>
-		<skill id="valor" x="6"/>
-		<skill id="enfeeble" x="3" all="1"/>
-		<skill id="flurry" c="3"/>
-	</upgrade>
-</unit>
-REMOVE LINE HERE TO RE ENABLE -->
+  <unit>
+    <id>2222</id>
+    <card_type>2</card_type>
+    <name>Corruption Squad</name>
+    <picture>Frog_Frogling_Banetroops_A</picture>
+    <asset_bundle>236</asset_bundle>
+    <hidden_until_time>1639069200</hidden_until_time>
+    <attack>8</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="legion" x="3" />
+    <skill id="poison" x="6" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="7" />
+      <skill id="legion" x="3" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="legion" x="3" />
+      <skill id="poison" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12222</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Corruption Crew</name>
+    <picture>Frog_Frogling_Banetroops_A</picture>
+    <asset_bundle>236</asset_bundle>
+    <hidden_until_time>1639069200</hidden_until_time>
+    <attack>9</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="legion" x="3" />
+    <skill id="poison" x="7" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="regenerate" x="7" />
+      <skill id="legion" x="4" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="8" />
+      <skill id="legion" x="4" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="8" />
+      <skill id="legion" x="4" />
+      <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22222</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Corruption Colony</name>
+    <picture>Frog_Frogling_Banetroops_B</picture>
+    <asset_bundle>236</asset_bundle>
+    <hidden_until_time>1639069200</hidden_until_time>
+    <attack>10</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="regenerate" x="8" />
+    <skill id="legion" x="4" />
+    <skill id="poison" x="8" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="regenerate" x="9" />
+      <skill id="legion" x="4" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="9" />
+      <skill id="legion" x="5" />
+      <skill id="poison" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2223</id>
+    <card_type>2</card_type>
+    <name>Stalker Hextongue</name>
+    <picture>Frog_Shadow_Jumper_A</picture>
+    <asset_bundle>236</asset_bundle>
+    <hidden_until_time>1639069200</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="3" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="flurry" c="6" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="3" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12223</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hunter Hextongue</name>
+    <picture>Frog_Shadow_Jumper_A</picture>
+    <asset_bundle>236</asset_bundle>
+    <hidden_until_time>1639069200</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="4" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="5" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22223</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Killer Hextongue</name>
+    <picture>Frog_Shadow_Jumper_B</picture>
+    <asset_bundle>236</asset_bundle>
+    <hidden_until_time>1639069200</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="flurry" c="3" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="6" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="6" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
 </root>
 

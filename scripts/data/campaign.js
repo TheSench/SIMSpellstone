@@ -5503,6 +5503,39 @@ var CAMPAIGNS = {
 		],
 		"name": "False Halloween?"
 	},
+	"1304": {
+		"id": "1304",
+		"items": {
+			"3110": 0.6
+		},
+		"location_id": "28",
+		"missions": [
+			"6736",
+			"6737",
+			"6738",
+			"6739",
+			"6740",
+			"6741"
+		],
+		"name": "Frog Society"
+	},
+	"1305": {
+		"battleground_id": "2019",
+		"id": "1305",
+		"items": {
+			"3110": 0.8
+		},
+		"location_id": "28",
+		"missions": [
+			"6742",
+			"6743",
+			"6744",
+			"6745",
+			"6746",
+			"6747"
+		],
+		"name": "Froggsters"
+	},
 	"1306": {
 		"id": "1306",
 		"items": {
