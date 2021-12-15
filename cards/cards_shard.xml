@@ -6756,6 +6756,92 @@
       <skill id="frost" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5626</id>
+    <card_type>2</card_type>
+    <name>Gendra, the Blacksmith</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frog_Embersmith_A</picture>
+    <asset_bundle>236</asset_bundle>
+    <item_name>Gendra Stone</item_name>
+    <item_desc>Collect Aeron Stones to upgrade the Legendary Gendra, the Blacksmith card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <attack>6</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="rally" x="2" all="1" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <skill id="regenerate" x="6" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+      <skill id="regenerate" x="7" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>9</attack>
+      <health>33</health>
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>34</health>
+      <skill id="regenerate" x="9" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>35</health>
+      <skill id="regenerate" x="10" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="regenerate" x="10" />
+      <skill id="rally" x="4" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="regenerate" x="11" />
+      <skill id="rally" x="5" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- === AETHER END === -->
   <!-- =============================== -->
   <!-- === CHAOS PREMIUM CHAMPIONS === -->
