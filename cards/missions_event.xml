@@ -55822,5 +55822,296 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 38 - World's Center  -->
+  <!-- Node 1 -->
+  <mission>
+    <id>6753</id>
+    <name>Long time no see</name>
+    <energy>18</energy>
+    <desc>After leaving the old and dusty Fireshard mine you decide it is time to stop making enemies. You find out about a goblin-hosted basketball tournament at World´s Center and you decide to head there and have one less enemy.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2134" mastery_level="2" name="Golden Rise Adventurers" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="6111" mastery_level="5" name="Aspects of the Ashes" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5088" mastery_level="7" name="Betrayal" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6754</id>
+    <name>Squash the beef</name>
+    <energy>18</energy>
+    <desc>After apologizing to the goblins they decide to invite you to play their version of basketball called “Goblinball”. Not very creative these devs, I mean goblins, yeah let’s blame it on them.</desc>
+    <commander id="312" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="7019" mastery_level="2" name="Lady of the Swamp" />
+      <card id="7019" mastery_level="3" name="Lady of the Swamp" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="7237" mastery_level="5" name="Bogbringer" />
+      <card id="7230" mastery_level="6" name="Fungobble" />
+      <card id="7230" mastery_level="7" name="Fungobble" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6755</id>
+    <name>Slam Dunk</name>
+    <energy>18</energy>
+    <desc>Goblinball is basically regular basketball but way more dangerous and with the hoops being humorously low. This is way easier than you thought, goblins are so short that playing ball was never so easy. You can notice how they start to get mad at you.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6146" mastery_level="2" name="Dragonfly Runner" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="6098" mastery_level="4" name="Sheltering Wing" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6756</id>
+    <name>Fouled out</name>
+    <energy>18</energy>
+    <desc>Goblins realize that they won’t be able to beat you fair and square, to no one's surprise, they start fouling you every time they can.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5148" mastery_level="2" name="Gribmalda of Wings" />
+      <card id="5148" mastery_level="3" name="Gribmalda of Wings" />
+      <card id="5292" mastery_level="4" name="Impudent Poachers" />
+      <card id="5281" mastery_level="5" name="Ramming Unit" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6757</id>
+    <name>It’s only a game, why do you have to be mad?</name>
+    <energy>18</energy>
+    <desc>Goblins drool while you only dribble, the game has ended and you have won. Unfortunately, this seems to only deteriorate your relationship with goblins since they start surrounding you menacingly.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2134" mastery_level="2" name="Golden Rise Adventurers" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="6111" mastery_level="5" name="Aspects of the Ashes" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5088" mastery_level="7" name="Betrayal" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6758</id>
+    <name>Sore losers</name>
+    <energy>18</energy>
+    <desc>Goblins are furious about losing to you even though they cheated for half the game, before you realize it a couple of them are already about to attack you!</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="7019" mastery_level="2" name="Lady of the Swamp" />
+      <card id="7019" mastery_level="3" name="Lady of the Swamp" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="7237" mastery_level="5" name="Bogbringer" />
+      <card id="7230" mastery_level="6" name="Fungobble" />
+      <card id="7230" mastery_level="7" name="Fungobble" />
+    </deck>
+  </mission>
+  <!-- Node 2 -->
+  <mission>
+    <id>6759</id>
+    <name>Damage control</name>
+    <energy>18</energy>
+    <desc>After fighting with the goblins you realize this is going the wrong way again and decide to do some damage control. You ask them to propose a different game where the chances are fair for both sides.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6146" mastery_level="2" name="Dragonfly Runner" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="6098" mastery_level="4" name="Sheltering Wing" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6760</id>
+    <name>And they chose...</name>
+    <energy>18</energy>
+    <desc>Goblins being true to their nature go for limbo, yes, LIMBO.</desc>
+    <commander id="312" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5148" mastery_level="2" name="Gribmalda of Wings" />
+      <card id="5148" mastery_level="3" name="Gribmalda of Wings" />
+      <card id="5292" mastery_level="4" name="Impudent Poachers" />
+      <card id="5281" mastery_level="5" name="Ramming Unit" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6761</id>
+    <name>Back Pain</name>
+    <energy>18</energy>
+    <desc>Goblins don't even have to try to pass under the bar, they literally just walk under it. They all laugh at your misery and start making fun of you.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2134" mastery_level="2" name="Golden Rise Adventurers" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="6111" mastery_level="5" name="Aspects of the Ashes" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5088" mastery_level="7" name="Betrayal" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6762</id>
+    <name>LimbNO</name>
+    <energy>18</energy>
+    <desc>After suffering at their ridiculously unfair game you get so mad that when a goblin is passing under the bar you kick it down. The bar falls onto the goblin’s leg and injures him.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="7019" mastery_level="2" name="Lady of the Swamp" />
+      <card id="7019" mastery_level="3" name="Lady of the Swamp" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="7237" mastery_level="5" name="Bogbringer" />
+      <card id="7230" mastery_level="6" name="Fungobble" />
+      <card id="7230" mastery_level="7" name="Fungobble" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6763</id>
+    <name>Pack a punch</name>
+    <energy>18</energy>
+    <desc>Goblins start attacking you all at the same time, in another situation you would probably run, but you are so furious you decide to fight back.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6146" mastery_level="2" name="Dragonfly Runner" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="6098" mastery_level="4" name="Sheltering Wing" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6764</id>
+    <name>Frenemies</name>
+    <energy>18</energy>
+    <desc>You have had enough and propose the goblins with a truce. You don’t have to be friends but you don’t have to be enemies either. As from now on the goblins are officially your “Frenemies”.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5148" mastery_level="2" name="Gribmalda of Wings" />
+      <card id="5148" mastery_level="3" name="Gribmalda of Wings" />
+      <card id="5292" mastery_level="4" name="Impudent Poachers" />
+      <card id="5281" mastery_level="5" name="Ramming Unit" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
+    </deck>
+  </mission>
 </root>
 

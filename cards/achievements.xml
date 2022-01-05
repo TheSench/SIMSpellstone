@@ -16872,6 +16872,139 @@
       <pack>13</pack>
     </reward>
   </achievement>
+  <!-- Wizard Event 85 - Goblins - Node 1 -->
+  <achievement>
+    <id>3753</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Goblinball</name>
+    <desc>Complete the 'Goblinball' campaign on Mastery Level 1.</desc>
+    <mission_req>6753</mission_req>
+    <locked_start_time>1641488400</locked_start_time>
+    <!-- Thursday, 6 January 2022 17:00:00 -->
+    <req>
+      <campaign>1307</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3104" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7081" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3754</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Goblinball</name>
+    <desc>Complete the 'Goblinball' campaign on Mastery Level 2.</desc>
+    <mission_req>6753</mission_req>
+    <locked_start_time>1641488400</locked_start_time>
+    <!-- Thursday, 6 January 2022 17:00:00 -->
+    <achievement_req>3753</achievement_req>
+    <req>
+      <campaign>1307</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3755</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Goblinball</name>
+    <desc>Complete the 'Goblinball' campaign on Mastery Level 4.</desc>
+    <mission_req>6753</mission_req>
+    <locked_start_time>1641488400</locked_start_time>
+    <!-- Thursday, 6 January 2022 17:00:00 -->
+    <achievement_req>3754</achievement_req>
+    <req>
+      <campaign>1307</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3756</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Goblinball</name>
+    <desc>Complete the 'Goblinball' campaign on Mastery Level 6.</desc>
+    <mission_req>6753</mission_req>
+    <locked_start_time>1641488400</locked_start_time>
+    <!-- Thursday, 6 January 2022 17:00:00 -->
+    <achievement_req>3755</achievement_req>
+    <req>
+      <campaign>1307</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 85 - Goblins - Node 2 -->
+  <achievement>
+    <id>3757</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Why can’t we be friends?</name>
+    <desc>Complete the 'Why can’t we be friends?' campaign on Mastery Level 2.</desc>
+    <mission_req>6759</mission_req>
+    <locked_start_time>1642698000</locked_start_time>
+    <!-- Thursday, 20 January 2022 17:00:00 -->
+    <req>
+      <campaign>1308</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3758</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Why can’t we be friends?</name>
+    <desc>Complete the 'Why can’t we be friends?' campaign on Mastery Level 4.</desc>
+    <mission_req>6759</mission_req>
+    <locked_start_time>1642698000</locked_start_time>
+    <!-- Thursday, 20 January 2022 17:00:00 -->
+    <achievement_req>3757</achievement_req>
+    <req>
+      <campaign>1308</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3759</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Why can’t we be friends?</name>
+    <desc>Complete the 'Why can’t we be friends?' campaign on Mastery Level 6.</desc>
+    <mission_req>6759</mission_req>
+    <locked_start_time>1642698000</locked_start_time>
+    <!-- Thursday, 20 January 2022 17:00:00 -->
+    <achievement_req>3758</achievement_req>
+    <req>
+      <campaign>1308</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -17736,6 +17869,36 @@
       <campaign>1249</campaign>
       <campaign>1304</campaign>
       <campaign>1305</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- World's Center Revisited -->
+    <id>4039</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of World's Center</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss and new nodes in World's Center.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6323</mission_req>
+    <req>
+      <campaign>1228</campaign>
+      <!-- 1st node -->
+      <campaign>1229</campaign>
+      <!-- 2nd node -->
+      <campaign>1231</campaign>
+      <!-- Boss node -->
+      <campaign>1232</campaign>
+      <!-- 3rd node -->
+      <campaign>1233</campaign>
+      <!-- 4th node -->
+      <campaign>1307</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1208</campaign>
+      <!-- Gen2 node 2 -->
       <level>7</level>
     </req>
     <reward>

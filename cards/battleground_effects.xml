@@ -1063,6 +1063,33 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>147</id>
+    <name>Goblin Battle Kit</name>
+    <desc>Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also heal goblins equal to 10% of their health +5</desc>
+    <icon>filter_goblin_64</icon>
+    <effect>
+      <add_skill id="heal" mult="0.1" x="5" base="health" y="11" />
+      <add_skill id="barrage" mult="1" base="attack" y="11" />
+      <skill id="displayEffect" trigger="onSkill" y="11" s="barrage">
+        <projectile_effect>
+          <prefab>goblinBombProjectile</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0</delay>
+          <duration>.75</duration>
+          <translation>.75</translation>
+          <offset>0</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>goblinBombTarget</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>.75</delay>
+          <duration>1.25</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

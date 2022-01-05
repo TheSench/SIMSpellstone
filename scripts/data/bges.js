@@ -1462,6 +1462,28 @@ var BATTLEGROUNDS = {
 		"id": "146",
 		"name": "Lily & Vampiric Spear Formation"
 	},
+	"147": {
+		"desc": "Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also heal goblins equal to 10% of their health +5",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "heal",
+				"mult": 0.1,
+				"x": 5,
+				"y": "11"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 1,
+				"y": "11"
+			}
+		],
+		"id": "147",
+		"name": "Goblin Battle Kit"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
