@@ -1463,14 +1463,13 @@ var BATTLEGROUNDS = {
 		"name": "Lily & Vampiric Spear Formation"
 	},
 	"147": {
-		"desc": "Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also heal goblins equal to 10% of their health +5",
+		"desc": "Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also regenerate 15% of their base health.",
 		"effect": [
 			{
 				"base": "health",
 				"effect_type": "add_skill",
-				"id": "heal",
-				"mult": 0.1,
-				"x": 5,
+				"id": "regenerate",
+				"mult": 0.15,
 				"y": "11"
 			},
 			{
