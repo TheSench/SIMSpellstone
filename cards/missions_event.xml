@@ -56113,5 +56113,293 @@
       <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
     </deck>
   </mission>
+  <mission>
+    <id>6765</id>
+    <name>Down the rabbit hole</name>
+    <energy>18</energy>
+    <desc>Shortly after leaving Worlds Center, you spot a rare fancy looking goblin with a suit and a pocket watch. Curious about it, you decide to follow it. You see it enter a hole on the ground and you decide to quickly go in after him when suddenly you appear in The Abyss.</desc>
+    <commander id="221" />
+    <deck>
+      <card id="1026" name="Glass Colossus" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2122" name="Voidlight tainted" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1343" name="Firehorn" />
+      <card id="5229" name="Nasim Drifter" />
+      <card id="5059" name="Bemola" />
+      <card id="7230" name="Fungobble" />
+      <card id="6147" name="Sandspirit Whisperer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6766</id>
+    <name>How did I even end up here?</name>
+    <energy>18</energy>
+    <desc>Dazed and confused you realize you must have gone through a portal. Waiting for you on the other side of that portal are two Chaos Elemental guards who were alerted about your presence and decide to take action.</desc>
+    <commander id="206" />
+    <deck>
+      <card id="2137" name="Eolian elemental" />
+      <card id="7075" name="Diamonde" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2122" name="Voidlight tainted" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1343" name="Firehorn" />
+      <card id="5275" name="Bulgae Dogs" />
+      <card id="5230" name="Gustblood djnn" />
+      <card id="7230" name="Fungobble" />
+      <card id="6147" name="Sandspirit Whisperer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6767</id>
+    <name>A little help from a friend</name>
+    <energy>18</energy>
+    <desc>When fighting with the guards, dazed because of the portal and in a lot of danger, you suddenly see that one of them is completely frozen and the other one has been turned into ashes.</desc>
+    <commander id="262" />
+    <deck>
+      <card id="2137" name="Eolian elemental" />
+      <card id="7075" name="Diamonde" />
+      <card id="7015" name="Bog aberration" />
+      <card id="2009" name="Sapling" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="5019" name="Vivid aurora" />
+      <card id="5275" name="Bulgae Dogs" />
+      <card id="5230" name="Gustblood djnn" />
+      <card id="7230" name="Fungobble" />
+      <card id="6147" name="Sandspirit Whisperer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6768</id>
+    <name>Running an errand</name>
+    <energy>18</energy>
+    <desc>After being saved, you look directly at your saviour. It is the fancy goblin you were chasing after. It is a tiny looking elemental who seems sad and lonely. He explains to you that he can't get back home alone. Since he saved your life, you offer to cross the portal with him.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="2137" name="Eolian elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="7015" name="Bog aberration" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="5230" name="Gustblood djnn" />
+      <card id="7230" name="Fungobble" />
+      <card id="6147" name="Sandspirit Whisperer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6769</id>
+    <name>Conga</name>
+    <energy>18</energy>
+    <desc>You head towards a portal with the goblin and the first thing you see is a party full of elemental creatures of all factions. Weirdly enough, they seem to be Conga dancing.</desc>
+    <commander id="368" />
+    <deck>
+      <card id="2137" name="Eolian elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="7015" name="Bog aberration" />
+      <card id="2009" name="Sapling" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="7230" name="Fungobble" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="5019" name="Vivid aurora" />
+      <card id="5275" name="Bulgae Dogs" />
+      <card id="5230" name="Gustblood djnn" />
+      <card id="7230" name="Fungobble" />
+      <card id="6147" name="Sandspirit Whisperer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6770</id>
+    <name>The Reveal</name>
+    <energy>18</energy>
+    <desc>Before anybody can notice, the goblin heads straight towards the center of the party where a huge birthday cake is being displayed and immediately trashes it. “My name is Remi the Bipolar!” he shouts out loudly. “This is for not inviting me to the birthday party!”.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="1026" name="Glass Colossus" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2122" name="Voidlight tainted" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="2120" name="Emerald Carbuncle" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2096" name="Magma Rider" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1642" name="Icestone Beast" />
+      <card id="8034" name="Swiftness feeder" />
+      <card id="6176" name="Searsteel soldier" />
+      <card id="8083" name="Golbatrons Firebrand" />
+      <card id="7230" name="Fungobble" />
+      <card id="6147" name="Sandspirit Whisperer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6771</id>
+    <name>Party crashers</name>
+    <energy>18</energy>
+    <desc>Remi starts trashing everything and before the guards can do anything he vanishes. Everybody starts charging towards you.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="1026" name="Glass colossus" />
+      <card id="1326" name="Titan of fire" />
+      <card id="2009" name="Sapling" />
+      <card id="2008" name="Shadow of ash" />
+      <card id="2032" name="Brimestone" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2130" name="Seas saw" />
+      <card id="2198" name="Cleaners of the blue" />
+      <card id="6135" name="Burnshell" />
+      <card id="5048" name="Highborn rose" />
+      <card id="5181" name="Himananav" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6224" name="Azurtitan sorcerer" />
+      <card id="7185" name="Undine spirit" />
+      <card id="7194" name="Coralscape Grappler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6772</id>
+    <name>New found enemies</name>
+    <energy>18</energy>
+    <desc>You start running away when all of a sudden somebody pulls you into a dark corner. It is explained to you that Remi is an enemy of all elementals. He had been banned from the elemental world until you broke the spell by bringing him in.</desc>
+    <commander id="221" />
+    <deck>
+      <card id="7153" name="Kelpcatcher" />
+      <card id="1326" name="Titan of fire" />
+      <card id="2009" name="Sapling" />
+      <card id="2008" name="Shadow of ash" />
+      <card id="2032" name="Brimestone" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2130" name="Seas saw" />
+      <card id="2198" name="Cleaners of the blue" />
+      <card id="6135" name="Burnshell" />
+      <card id="5048" name="Highborn rose" />
+      <card id="5181" name="Himananav" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6224" name="Azurtitan sorcerer" />
+      <card id="7185" name="Undine spirit" />
+      <card id="7194" name="Coralscape Grappler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6773</id>
+    <name>Begging for forgiveness</name>
+    <energy>18</energy>
+    <desc>You decide to come out of your hiding place and ask for forgiveness, elemental guards immediately arrest you.</desc>
+    <commander id="206" />
+    <deck>
+      <card id="7153" name="Kelpcatcher" />
+      <card id="2130" name="Seas saw" />
+      <card id="2009" name="Sapling" />
+      <card id="6135" name="Burnshell" />
+      <card id="2032" name="Brimestone" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2130" name="Seas saw" />
+      <card id="2198" name="Cleaners of the blue" />
+      <card id="6135" name="Burnshell" />
+      <card id="5048" name="Highborn rose" />
+      <card id="5181" name="Himananav" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6224" name="Azurtitan sorcerer" />
+      <card id="7185" name="Undine spirit" />
+      <card id="7194" name="Coralscape Grappler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6774</id>
+    <name>The trial</name>
+    <energy>18</energy>
+    <desc>The elementals make you stand trial. You can either choose to endure trial by combat or to find and capture Remi. If you fail, the elementals would ban you from their land. You decide to choose the easier task and endure trial by combat.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="7153" name="Kelpcatcher" />
+      <card id="2130" name="Seas saw" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6135" name="Burnshell" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="2170" name="Amberguard elemental" />
+      <card id="2130" name="Seas saw" />
+      <card id="2198" name="Cleaners of the blue" />
+      <card id="6135" name="Burnshell" />
+      <card id="5048" name="Highborn rose" />
+      <card id="5181" name="Himananav" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6224" name="Azurtitan sorcerer" />
+      <card id="7185" name="Undine spirit" />
+      <card id="7194" name="Coralscape Grappler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6775</id>
+    <name>The betrayal</name>
+    <energy>18</energy>
+    <desc>You won the combat. Nevertheless, the elemental council decides it was too easy of a challenge so they decide to make a second combat, but with 10 times the number of combatants. Even though you yell that this isn't fair, the elementals start attacking you.</desc>
+    <commander id="388" />
+    <deck>
+      <card id="7153" name="Kelpcatcher" />
+      <card id="2130" name="Seas saw" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6135" name="Burnshell" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7185" name="Undine spirit" />
+      <card id="2130" name="Seas saw" />
+      <card id="2198" name="Cleaners of the blue" />
+      <card id="6135" name="Burnshell" />
+      <card id="5048" name="Highborn rose" />
+      <card id="5181" name="Himananav" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6224" name="Azurtitan sorcerer" />
+      <card id="7185" name="Undine spirit" />
+      <card id="7194" name="Coralscape Grappler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6776</id>
+    <name>Waking up</name>
+    <energy>18</energy>
+    <desc>You can feel them hitting you from all sides when suddenly you awake. You see yourself next to the hole that you found, it seems like your tripped and passed out. Nothing of what happened seems to have been real, or was it?</desc>
+    <commander id="221" />
+    <deck>
+      <card id="7153" name="Kelpcatcher" />
+      <card id="2130" name="Seas saw" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6135" name="Burnshell" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7185" name="Undine spirit" />
+      <card id="2130" name="Seas saw" />
+      <card id="2198" name="Cleaners of the blue" />
+      <card id="6135" name="Burnshell" />
+      <card id="5048" name="Highborn rose" />
+      <card id="5181" name="Himananav" />
+      <card id="1641" name="Rythm of the wyld" />
+      <card id="6224" name="Azurtitan sorcerer" />
+      <card id="7185" name="Undine spirit" />
+      <card id="7194" name="Coralscape Grappler" />
+    </deck>
+  </mission>
 </root>
 

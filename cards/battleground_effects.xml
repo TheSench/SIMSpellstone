@@ -615,11 +615,11 @@
   <battleground>
     <id>133</id>
     <name>Elemental Discordance</name>
-    <desc>Aether Elementals gain Barrier 4 + 10% of their Health. Chaos gain Scorch equal to 75% of their Attack. Wyld deal more damage on their first attack each turn equal to 25% of their Health.</desc>
+    <desc>Aether Elementals gain Barrier 4 + 15% of their Health. Chaos gain Scorch equal to 75% of their Attack. Wyld deal more damage on their first attack each turn equal to 25% of their Health.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
-      <skill id="protect" ignore_nullify="1" mult=".1" x="4" all="1" base="health" yy="1,5" />
+      <skill id="protect" ignore_nullify="1" mult="0.15" x="4" all="1" base="health" yy="1,5" />
       <skill id="displayEffect" trigger="onSkill" s="protect">
         <target_effect>
           <prefab>submerge_fadecloth</prefab>

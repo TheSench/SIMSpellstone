@@ -10601,6 +10601,87 @@
       <skill id="poison" x="12" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7624</id>
+    <card_type>2</card_type>
+    <name>Sigblin, the Trollskin</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Troll_Master_A</picture>
+    <asset_bundle>238</asset_bundle>
+    <item_name>Sigblin Stone</item_name>
+    <item_desc>Collect Sigblin Stones to upgrade the Legendary Sigblin, the Trollskin!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <attack>10</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="regenerate" x="7" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <skill id="stasis" x="4" />
+      <skill id="regenerate" x="8" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="5" />
+      <skill id="regenerate" x="8" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="stasis" x="5" />
+      <skill id="regenerate" x="9" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <skill id="stasis" x="5" />
+      <skill id="regenerate" x="10" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>45</health>
+      <skill id="stasis" x="5" />
+      <skill id="regenerate" x="11" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="stasis" x="6" />
+      <skill id="regenerate" x="11" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>14</attack>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>47</health>
+      <skill id="stasis" x="7" />
+      <skill id="regenerate" x="12" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
   <!-- === WYLD END === -->
 </root>
 

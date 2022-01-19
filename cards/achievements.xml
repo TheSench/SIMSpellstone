@@ -17005,6 +17005,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 86 - Elemental - Node 1 -->
+  <achievement>
+    <id>3760</id>
+    <type>2</type>
+    <order>101</order>
+    <name>I hate portals</name>
+    <desc>Complete the 'I hate portals' campaign on Mastery Level 1.</desc>
+    <mission_req>6765</mission_req>
+    <locked_start_time>1643907600</locked_start_time>
+    <!-- Thursday, 3 February 2022 17:00:00 -->
+    <req>
+      <campaign>1309</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3098" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7082" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3761</id>
+    <type>2</type>
+    <order>101</order>
+    <name>I hate portals</name>
+    <desc>Complete the 'I hate portals' campaign on Mastery Level 2.</desc>
+    <mission_req>6765</mission_req>
+    <locked_start_time>1643907600</locked_start_time>
+    <!-- Thursday, 3 February 2022 17:00:00 -->
+    <achievement_req>3760</achievement_req>
+    <req>
+      <campaign>1309</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3762</id>
+    <type>2</type>
+    <order>101</order>
+    <name>I hate portals</name>
+    <desc>Complete the 'I hate portals' campaign on Mastery Level 4.</desc>
+    <mission_req>6765</mission_req>
+    <locked_start_time>1643907600</locked_start_time>
+    <!-- Thursday, 3 February 2022 17:00:00 -->
+    <achievement_req>3761</achievement_req>
+    <req>
+      <campaign>1309</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3763</id>
+    <type>2</type>
+    <order>101</order>
+    <name>I hate portals</name>
+    <desc>Complete the 'I hate portals' campaign on Mastery Level 6.</desc>
+    <mission_req>6765</mission_req>
+    <locked_start_time>1643907600</locked_start_time>
+    <!-- Thursday, 3 February 2022 17:00:00 -->
+    <achievement_req>3762</achievement_req>
+    <req>
+      <campaign>1309</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 86 - Elemental - Node 2 -->
+  <achievement>
+    <id>3764</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Elemental Enemies</name>
+    <desc>Complete the 'Elemental Enemies' campaign on Mastery Level 2.</desc>
+    <mission_req>6771</mission_req>
+    <locked_start_time>1645117200</locked_start_time>
+    <!-- Thursday, 17 February 2022 17:00:00 -->
+    <req>
+      <campaign>1310</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3765</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Elemental Enemies</name>
+    <desc>Complete the 'Elemental Enemies' campaign on Mastery Level 4.</desc>
+    <mission_req>6771</mission_req>
+    <locked_start_time>1645117200</locked_start_time>
+    <!-- Thursday, 17 February 2022 17:00:00 -->
+    <achievement_req>3764</achievement_req>
+    <req>
+      <campaign>1310</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3766</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Elemental Enemies</name>
+    <desc>Complete the 'Elemental Enemies' campaign on Mastery Level 6.</desc>
+    <mission_req>6771</mission_req>
+    <locked_start_time>1645117200</locked_start_time>
+    <!-- Thursday, 17 February 2022 17:00:00 -->
+    <achievement_req>3765</achievement_req>
+    <req>
+      <campaign>1310</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -17881,7 +18014,7 @@
     <type>2</type>
     <order>639</order>
     <name>Champion of World's Center</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss and new nodes in World's Center.</desc>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in World's Center.</desc>
     <icon>mapNavGlobe</icon>
     <mission_req>6323</mission_req>
     <req>
@@ -17897,7 +18030,37 @@
       <!-- 4th node -->
       <campaign>1307</campaign>
       <!-- Gen2 node 1 -->
-      <campaign>1208</campaign>
+      <campaign>1308</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Abyss Revisited -->
+    <id>4040</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of The Abyss</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in The Abyss.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6771</mission_req>
+    <req>
+      <campaign>1217</campaign>
+      <!-- 1st node -->
+      <campaign>1218</campaign>
+      <!-- 2nd node -->
+      <campaign>1219</campaign>
+      <!-- Boss node -->
+      <campaign>1220</campaign>
+      <!-- 3rd node -->
+      <campaign>1221</campaign>
+      <!-- 4th node -->
+      <campaign>1309</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1310</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>

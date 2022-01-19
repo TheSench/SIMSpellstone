@@ -554,7 +554,7 @@ var BATTLEGROUNDS = {
 		"name": "Day of Dragons"
 	},
 	"133": {
-		"desc": "Aether Elementals gain Barrier 4 + 10% of their Health. Chaos gain Scorch equal to 75% of their Attack. Wyld deal more damage on their first attack each turn equal to 25% of their Health.",
+		"desc": "Aether Elementals gain Barrier 4 + 15% of their Health. Chaos gain Scorch equal to 75% of their Attack. Wyld deal more damage on their first attack each turn equal to 25% of their Health.",
 		"effect": [
 			{
 				"all": "1",
@@ -562,7 +562,7 @@ var BATTLEGROUNDS = {
 				"effect_type": "skill",
 				"id": "protect",
 				"ignore_nullify": "1",
-				"mult": 0.1,
+				"mult": 0.15,
 				"x": 4,
 				"y": "1,5"
 			},
