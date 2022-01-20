@@ -5571,7 +5571,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2019",
 		"id": "1308",
 		"items": {
-			"3098": 0.8
+			"3104": 0.8
 		},
 		"location_id": "26",
 		"missions": [

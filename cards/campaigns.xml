@@ -10775,7 +10775,7 @@
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".8" />
+    <find_item id="3104" drop_per_energy=".8" />
     <ignore_energy_reduction_until>1645722000</ignore_energy_reduction_until>
     <!-- Thursday, 24 February 2022 17:00:00 -->
   </campaign>
