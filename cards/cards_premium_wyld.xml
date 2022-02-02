@@ -19281,7 +19281,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>35</health>
+      <health>37</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -19291,7 +19291,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>36</health>
+      <health>39</health>
       <attack>11</attack>
     </upgrade>
   </unit>
@@ -19303,8 +19303,8 @@
     <picture>Kelp_Monster_B</picture>
     <asset_bundle>104</asset_bundle>
     <hidden_until_time>1504544400</hidden_until_time>
-    <attack>12</attack>
-    <health>37</health>
+    <attack>13</attack>
+    <health>39</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="6" />
@@ -19318,31 +19318,31 @@
       <level>2</level>
       <skill id="corrosive" x="7" />
       <skill id="heal" x="4" y="12" all="1" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>38</health>
+      <health>40</health>
       <skill id="corrosive" x="7" />
       <skill id="heal" x="4" y="12" all="1" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>13</attack>
+      <attack>14</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>39</health>
+      <health>41</health>
       <skill id="corrosive" x="8" />
-      <skill id="heal" x="5" y="12" all="1" />
-      <skill id="leech" x="7" />
+      <skill id="heal" x="6" y="12" all="1" />
+      <skill id="leech" x="11" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="corrosive" x="8" />
-      <skill id="heal" x="6" y="12" all="1" />
-      <skill id="leech" x="8" />
+      <skill id="heal" x="7" y="12" all="1" />
+      <skill id="leech" x="14" />
     </upgrade>
   </unit>
   <unit>
@@ -24732,7 +24732,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>22</health>
+      <health>23</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -24748,7 +24748,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>23</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -24764,11 +24764,11 @@
     <asset_bundle>129</asset_bundle>
     <hidden_until_time>1527786000</hidden_until_time>
     <attack>8</attack>
-    <health>24</health>
+    <health>27</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="evade" x="2" />
-    <skill id="regenerate" x="5" />
+    <skill id="regenerate" x="7" />
     <skill id="jam" c="3" />
     <type>3</type>
     <sub_type>5</sub_type>
@@ -24776,24 +24776,24 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>26</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>27</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="evade" x="3" />
-      <skill id="regenerate" x="6" />
+      <skill id="regenerate" x="9" />
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
@@ -38016,6 +38016,146 @@
       <skill id="stasis" x="7" />
       <skill id="weaken" x="7" all="1" />
       <skill id="daze" x="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7295</id>
+    <card_type>2</card_type>
+    <name>Crystal Spider</name>
+    <picture>Elemental_Insect_Diamond_Spider_A</picture>
+    <asset_bundle>240</asset_bundle>
+    <hidden_until_time>1644858000</hidden_until_time>
+    <attack>9</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="8" />
+    <skill id="armored" x="5" />
+    <skill id="poison" x="9" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="8" />
+      <skill id="armored" x="5" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="absorb" x="8" />
+      <skill id="armored" x="6" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="9" />
+      <skill id="armored" x="6" />
+      <skill id="poison" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17295</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hardened Spider</name>
+    <picture>Elemental_Insect_Diamond_Spider_A</picture>
+    <asset_bundle>240</asset_bundle>
+    <hidden_until_time>1644858000</hidden_until_time>
+    <attack>11</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="9" />
+    <skill id="armored" x="6" />
+    <skill id="poison" x="10" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>43</health>
+      <skill id="absorb" x="9" />
+      <skill id="armored" x="6" />
+      <skill id="poison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="9" />
+      <skill id="armored" x="6" />
+      <skill id="poison" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="10" />
+      <skill id="armored" x="7" />
+      <skill id="poison" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27295</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Diamond Spider</name>
+    <picture>Elemental_Insect_Diamond_Spider_B</picture>
+    <asset_bundle>240</asset_bundle>
+    <hidden_until_time>1644858000</hidden_until_time>
+    <attack>13</attack>
+    <health>44</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="10" />
+    <skill id="armored" x="7" />
+    <skill id="poison" x="12" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="10" />
+      <skill id="armored" x="7" />
+      <skill id="poison" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="10" />
+      <skill id="armored" x="8" />
+      <skill id="poison" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="11" />
+      <skill id="armored" x="8" />
+      <skill id="poison" x="14" />
     </upgrade>
   </unit>
 </root>

@@ -10664,7 +10664,7 @@
     <event_only>1</event_only>
     <name>Tree Champion</name>
     <icon id="santaHat" bundle="41" />
-    <campaign_req id="6" level="1" />
+    <!-- <campaign_req id='6' level='1' /> -->
     <locked_start_time>1639760400</locked_start_time>
     <!-- Friday, 17 December 2021 17:00:00 -->
     <location_id>26</location_id>
@@ -10778,6 +10778,94 @@
     <find_item id="3104" drop_per_energy=".8" />
     <ignore_energy_reduction_until>1645722000</ignore_energy_reduction_until>
     <!-- Thursday, 24 February 2022 17:00:00 -->
+  </campaign>
+  <!-- Campaign Event 39 - The Abyss  -->
+  <campaign>
+    <id>1309</id>
+    <name>I hate portals</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1643907600</locked_start_time>
+    <!-- Thursday, February 3, 2022 17:00:00 -->
+    <location_id>24</location_id>
+    <x>680</x>
+    <!-- left right -->
+    <y>130</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6765</mission_id>
+      <mission_id>6766</mission_id>
+      <mission_id>6767</mission_id>
+      <mission_id>6768</mission_id>
+      <mission_id>6769</mission_id>
+      <mission_id>6770</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2634" number="25" />
+      /&gt;
+      <!-- The Abyss Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2226" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2138" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2634" number="75" />
+      /&gt;
+      <!-- The Abyss Flask -->
+      <card level="7" id="2225" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3098" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1648746000</ignore_energy_reduction_until>
+    <!-- Thursday, 31 March 2022 17:00:00   -->
+  </campaign>
+  <campaign>
+    <id>1310</id>
+    <name>Elemental Enemies</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1309" level="1" />
+    <locked_start_time>1645117200</locked_start_time>
+    <!-- Thursday, 17 February 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>24</location_id>
+    <x>320</x>
+    <!-- left right -->
+    <y>415</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6771</mission_id>
+      <mission_id>6772</mission_id>
+      <mission_id>6773</mission_id>
+      <mission_id>6774</mission_id>
+      <mission_id>6775</mission_id>
+      <mission_id>6776</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2634" number="25" />
+      /&gt;
+      <!-- The Abyss Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2137" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2056" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2634" number="75" />
+      /&gt;
+      <!-- The Abyss Flask -->
+      <card level="7" id="2225" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3098" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1648746000</ignore_energy_reduction_until>
+    <!-- Thursday, 31 March 2022 17:00:00 -->
   </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->

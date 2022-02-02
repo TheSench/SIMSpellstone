@@ -615,7 +615,7 @@
   <battleground>
     <id>133</id>
     <name>Elemental Discordance</name>
-    <desc>Aether Elementals gain Barrier 4 + 15% of their Health. Chaos gain Scorch equal to 75% of their Attack. Wyld deal more damage on their first attack each turn equal to 25% of their Health.</desc>
+    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Additionally, Void gets a fixed 4 of Venom, 9 Siphon.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
@@ -650,8 +650,8 @@
           <delay>0</delay>
         </actor_effect>
       </skill>
-      <add_skill id="burn" mult="0.75" all="1" base="attack" yy="2,5" />
-      <add_skill id="bash" mult=".25" all="1" base="health" yy="3,5" />
+      <add_skill id="burn" mult="0.20" all="1" base="health" yy="2,5" />
+      <add_skill id="bash" mult=".30" all="1" base="health" yy="3,5" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
           <prefab>frogbge_Target</prefab>
@@ -661,6 +661,8 @@
           <sound>shield</sound>
         </target_effect>
       </skill>
+      <add_skill id="venom" x="4" y="8,5" />
+      <add_skill id="leech" x="9" y="8,5" />
     </effect>
   </battleground>
   <battleground>

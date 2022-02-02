@@ -7332,7 +7332,7 @@
     <asset_bundle>56</asset_bundle>
     <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
-    <attack>3</attack>
+    <attack>5</attack>
     <health>29</health>
     <cost>2</cost>
     <rarity>4</rarity>
@@ -7356,12 +7356,12 @@
     <upgrade>
       <level>4</level>
       <health>31</health>
-      <attack>4</attack>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>32</health>
-      <attack>5</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>6</level>

@@ -5584,6 +5584,39 @@ var CAMPAIGNS = {
 		],
 		"name": "Why can’t we be friends?"
 	},
+	"1309": {
+		"id": "1309",
+		"items": {
+			"3098": 0.6
+		},
+		"location_id": "24",
+		"missions": [
+			"6765",
+			"6766",
+			"6767",
+			"6768",
+			"6769",
+			"6770"
+		],
+		"name": "I hate portals"
+	},
+	"1310": {
+		"battleground_id": "2019",
+		"id": "1310",
+		"items": {
+			"3098": 0.8
+		},
+		"location_id": "24",
+		"missions": [
+			"6771",
+			"6772",
+			"6773",
+			"6774",
+			"6775",
+			"6776"
+		],
+		"name": "Elemental Enemies"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},

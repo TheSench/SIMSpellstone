@@ -554,7 +554,7 @@ var BATTLEGROUNDS = {
 		"name": "Day of Dragons"
 	},
 	"133": {
-		"desc": "Aether Elementals gain Barrier 4 + 15% of their Health. Chaos gain Scorch equal to 75% of their Attack. Wyld deal more damage on their first attack each turn equal to 25% of their Health.",
+		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Additionally, Void gets a fixed 4 of Venom, 9 Siphon.",
 		"effect": [
 			{
 				"all": "1",
@@ -568,10 +568,10 @@ var BATTLEGROUNDS = {
 			},
 			{
 				"all": "1",
-				"base": "attack",
+				"base": "health",
 				"effect_type": "add_skill",
 				"id": "burn",
-				"mult": 0.75,
+				"mult": 0.2,
 				"y": "2,5"
 			},
 			{
@@ -579,8 +579,20 @@ var BATTLEGROUNDS = {
 				"base": "health",
 				"effect_type": "add_skill",
 				"id": "bash",
-				"mult": 0.25,
+				"mult": 0.3,
 				"y": "3,5"
+			},
+			{
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 4,
+				"y": "8,5"
+			},
+			{
+				"effect_type": "add_skill",
+				"id": "leech",
+				"x": 9,
+				"y": "8,5"
 			}
 		],
 		"id": "133",
