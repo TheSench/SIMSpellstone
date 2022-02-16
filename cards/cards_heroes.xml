@@ -285,7 +285,7 @@
     <desc>An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.</desc>
     <attack>0</attack>
     <health>51</health>
-    <skill id="enhance" s="evade" x="1" />
+    <skill id="imbue" s="evade" x="1" />
     <rarity>4</rarity>
     <type>3</type>
     <set>7000</set>
@@ -297,7 +297,7 @@
       <level>3</level>
       <health>62</health>
       <skill id="enhance" s="stasis" all="1" x="1" />
-      <skill id="enhance" s="evade" x="1" />
+      <skill id="imbue" s="evade" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -311,7 +311,7 @@
       <level>6</level>
       <health>85</health>
       <skill id="enhance" s="stasis" all="1" x="2" />
-      <skill id="enhance" s="evade" x="1" />
+      <skill id="imbue" s="evade" all="1" x="1" />
     </upgrade>
   </unit>
   <unit>
