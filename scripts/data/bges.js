@@ -554,7 +554,7 @@ var BATTLEGROUNDS = {
 		"name": "Day of Dragons"
 	},
 	"133": {
-		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Additionally, Void gets a fixed 4 of Venom, 9 Siphon.",
+		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health. ",
 		"effect": [
 			{
 				"all": "1",
@@ -1494,6 +1494,43 @@ var BATTLEGROUNDS = {
 		],
 		"id": "147",
 		"name": "Goblin Battle Kit"
+	},
+	"148": {
+		"desc": "Seafolk gain base Ward and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base health! Ward and Armor 10%, while Frostbreath is 15%.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.1,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.15,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "12"
+			}
+		],
+		"id": "148",
+		"name": "Unbreakable Waves"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

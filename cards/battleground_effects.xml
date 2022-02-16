@@ -615,7 +615,7 @@
   <battleground>
     <id>133</id>
     <name>Elemental Discordance</name>
-    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Additionally, Void gets a fixed 4 of Venom, 9 Siphon.</desc>
+    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
@@ -1090,6 +1090,17 @@
           <shake>true</shake>
         </target_effect>
       </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>148</id>
+    <name>Unbreakable Waves</name>
+    <desc>Seafolk gain base Ward and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base health! Ward and Armor 10%, while Frostbreath is 15%.</desc>
+    <icon>filter_seafolk_64</icon>
+    <effect>
+      <add_skill id="absorb" mult="0.10" base="health" y="12" />
+      <add_skill id="frost" mult="0.15" base="health" y="12" delay="0,1,2" />
+      <add_skill id="armored" mult="0.10" base="health" y="12" delay="3,4" />
     </effect>
   </battleground>
   <!-- ================================= -->
