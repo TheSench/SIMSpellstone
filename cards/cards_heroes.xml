@@ -296,8 +296,8 @@
     <upgrade>
       <level>3</level>
       <health>62</health>
-      <skill id="enhance" s="stasis" all="1" x="1" />
       <skill id="imbue" s="evade" all="1" x="1" />
+      <skill id="enhance" s="stasis" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -310,8 +310,8 @@
     <upgrade>
       <level>6</level>
       <health>85</health>
-      <skill id="enhance" s="stasis" all="1" x="2" />
       <skill id="imbue" s="evade" all="1" x="1" />
+      <skill id="enhance" s="stasis" all="1" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -11978,6 +11978,81 @@
       <skill id="rally" x="12" />
       <skill id="heal" x="14" />
     </upgrade>
+  </unit>
+  <!-- April Fools 2022 commanders -->
+  <unit>
+    <id>466</id>
+    <card_type>1</card_type>
+    <name>Evil Dev Forcystus</name>
+    <portrait>aprilbomber</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="counterburn" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="strike" x="4" />
+      <skill id="imbue" s="counterburn" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>55</health>
+      <skill id="strike" x="5" />
+      <skill id="imbue" s="counter" all="1" x="5" />
+      <skill id="imbue" s="counterburn" all="1" x="5" />
+    </upgrade>
+    <desc>Balancing cards is a delicate art, like balancing bombs. Sometimes Sera happens.</desc>
+  </unit>
+  <unit>
+    <id>467</id>
+    <card_type>1</card_type>
+    <name>Not so Evil Dev Kamakiri</name>
+    <portrait>aprilmonser</portrait>
+    <attack>0</attack>
+    <health>33</health>
+    <rarity>3</rarity>
+    <skill id="imbue" s="taunt" />
+    <skill id="jam" c="4" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="imbue" s="taunt" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>59</health>
+      <skill id="imbue" s="taunt" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <desc>Memes make me laugh i think they are splendid, I write some stories now and the puns the are intended.</desc>
   </unit>
 </root>
 

@@ -1755,28 +1755,28 @@
   <battleground>
     <id>546</id>
     <name>Common Revenge</name>
-    <desc>All Common cards have their Attack, Health, and all Skills multiplied by 5!</desc>
+    <desc>All Common cards have their Attack, Health, and all Skills multiplied by 6!</desc>
     <icon>Common_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enlarge" mult="4" all="1" z="1" />
+      <skill id="enlarge" mult="5" all="1" z="1" />
       <!-- mult is based on attack -->
-      <scale_health base="health" mult="4" rarity="1" />
-      <skill id="enhance" s="armored" z="1" mult="4" all="1" />
-      <skill id="enhance" s="counter" z="1" mult="4" all="1" />
-      <skill id="enhance" s="evade" z="1" mult="4" all="1" />
-      <skill id="enhance" s="leech" z="1" mult="4" all="1" />
-      <skill id="enhance" s="pierce" z="1" mult="4" all="1" />
-      <skill id="enhance" s="burn" z="1" mult="4" all="1" />
-      <skill id="enhance" s="poison" z="1" mult="4" all="1" />
-      <skill id="enhance" s="heal" z="1" mult="4" all="1" />
-      <skill id="enhance" s="strike" z="1" mult="4" all="1" />
-      <skill id="enhance" s="weaken" z="1" mult="4" all="1" />
-      <skill id="enhance" s="protect" z="1" mult="4" all="1" />
-      <skill id="enhance" s="rally" z="1" mult="4" all="1" />
-      <skill id="enhance" s="berserk" z="1" mult="4" all="1" />
-      <skill id="enhance" s="absorb" z="1" mult="4" all="1" />
-      <skill id="enhance" s="counterburn" z="1" mult="4" all="1" />
+      <scale_health base="health" mult="5" rarity="1" />
+      <skill id="enhance" s="armored" z="1" mult="5" all="1" />
+      <skill id="enhance" s="counter" z="1" mult="5" all="1" />
+      <skill id="enhance" s="evade" z="1" mult="5" all="1" />
+      <skill id="enhance" s="leech" z="1" mult="5" all="1" />
+      <skill id="enhance" s="pierce" z="1" mult="5" all="1" />
+      <skill id="enhance" s="burn" z="1" mult="5" all="1" />
+      <skill id="enhance" s="poison" z="1" mult="5" all="1" />
+      <skill id="enhance" s="heal" z="1" mult="5" all="1" />
+      <skill id="enhance" s="strike" z="1" mult="5" all="1" />
+      <skill id="enhance" s="weaken" z="1" mult="5" all="1" />
+      <skill id="enhance" s="protect" z="1" mult="5" all="1" />
+      <skill id="enhance" s="rally" z="1" mult="5" all="1" />
+      <skill id="enhance" s="berserk" z="1" mult="5" all="1" />
+      <skill id="enhance" s="absorb" z="1" mult="5" all="1" />
+      <skill id="enhance" s="counterburn" z="1" mult="5" all="1" />
     </effect>
   </battleground>
   <battleground>

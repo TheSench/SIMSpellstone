@@ -10867,7 +10867,127 @@
     <ignore_energy_reduction_until>1648746000</ignore_energy_reduction_until>
     <!-- Thursday, 31 March 2022 17:00:00 -->
   </campaign>
+  <!-- Campaign Event 40 - Stormy Seastone Citadel -->
+  <campaign>
+    <id>1311</id>
+    <name>Shipwreck</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1646326800</locked_start_time>
+    <!-- Thursday, 3 March 2022 17:00:00 -->
+    <location_id>25</location_id>
+    <x>270</x>
+    <!-- left right -->
+    <y>380</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6777</mission_id>
+      <mission_id>6778</mission_id>
+      <mission_id>6779</mission_id>
+      <mission_id>6780</mission_id>
+      <mission_id>6781</mission_id>
+      <mission_id>6782</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2635" number="25" />
+      /&gt;
+      <!-- Stormy Seastone Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2227" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2130" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2635" number="75" />
+      /&gt;
+      <!-- Stormy Seastone Flask -->
+      <card level="7" id="2225" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1651165200</ignore_energy_reduction_until>
+    <!-- Thursday, 28 April 2022 17:00:00  -->
+  </campaign>
+  <campaign>
+    <id>1312</id>
+    <name>One shell of a place</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1311" level="1" />
+    <locked_start_time>1647536400</locked_start_time>
+    <!-- Thursday, 17 March 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>25</location_id>
+    <x>550</x>
+    <!-- left right -->
+    <y>200</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6783</mission_id>
+      <mission_id>6784</mission_id>
+      <mission_id>6785</mission_id>
+      <mission_id>6786</mission_id>
+      <mission_id>6787</mission_id>
+      <mission_id>6788</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2635" number="25" />
+      /&gt;
+      <!-- Stormy Seastone Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2176" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2129" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2635" number="75" />
+      /&gt;
+      <!-- Stormy Seastone Flask -->
+      <card level="7" id="2225" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1651165200</ignore_energy_reduction_until>
+    <!-- Thursday, 28 April 2022 17:00:00  -->
+  </campaign>
   <!-- End campaign events -->
+  <!-- April Fool's Campaign 2022 -->
+  <campaign>
+    <id>2999</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Return of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>26</location_id>
+    <x>210</x>
+    <y>320</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6789</mission_id>
+      <mission_id>6790</mission_id>
+      <mission_id>6791</mission_id>
+      <mission_id>6792</mission_id>
+      <mission_id>6793</mission_id>
+      <mission_id>6794</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <card level="2" id="2153" />
+      <card level="3" id="2153" />
+      <card level="4" id="2153" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3128" drop_per_energy=".4" />
+  </campaign>
+  <!-- April Fools Campaigns END -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

@@ -11968,20 +11968,20 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>18</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>19</health>
+      <health>22</health>
       <skill id="valor" x="8" />
       <skill id="protect" x="8" y="9" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>20</health>
+      <health>23</health>
       <skill id="valor" x="9" />
-      <skill id="protect" x="9" y="9" />
+      <skill id="protect" x="10" y="9" />
       <skill id="legion" x="5" />
     </upgrade>
   </unit>
@@ -13495,35 +13495,35 @@
     <asset_bundle>83</asset_bundle>
     <hidden_until_time>1484845200</hidden_until_time>
     <attack>5</attack>
-    <health>14</health>
+    <health>16</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="rally" x="8" y="12" />
-    <skill id="protect" x="6" y="12" />
+    <skill id="protect" x="8" y="12" />
     <skill id="jam" c="4" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>16</health>
+      <health>18</health>
       <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>17</health>
+      <health>19</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>18</health>
-      <attack>8</attack>
+      <health>20</health>
+      <attack>9</attack>
       <skill id="rally" x="9" y="12" />
-      <skill id="protect" x="7" y="12" />
+      <skill id="protect" x="9" y="12" />
       <skill id="jam" c="4" />
     </upgrade>
   </unit>
@@ -28962,7 +28962,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>16</health>
+      <health>18</health>
     </upgrade>
   </unit>
   <unit>
@@ -28974,7 +28974,7 @@
     <asset_bundle>154</asset_bundle>
     <hidden_until_time>1553187600</hidden_until_time>
     <attack>3</attack>
-    <health>17</health>
+    <health>19</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="valor" x="5" />
@@ -28991,23 +28991,23 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>18</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>19</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="valor" x="7" />
       <skill id="protect" x="2" all="1" y="12" />
-      <skill id="frost" x="1" />
+      <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="valor" x="7" />
+      <skill id="valor" x="9" />
       <skill id="protect" x="3" all="1" y="12" />
-      <skill id="frost" x="2" />
+      <skill id="frost" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -33502,7 +33502,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>26</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -33520,7 +33520,7 @@
     <asset_bundle>182</asset_bundle>
     <hidden_until_time>1581958800</hidden_until_time>
     <attack>10</attack>
-    <health>26</health>
+    <health>29</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="5" />
@@ -33532,19 +33532,19 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <attack>11</attack>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>27</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
       <attack>12</attack>
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
       <level>5</level>
-      <health>28</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>6</level>

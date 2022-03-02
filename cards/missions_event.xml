@@ -56401,5 +56401,437 @@
       <card id="7194" name="Coralscape Grappler" />
     </deck>
   </mission>
+  <mission>
+    <id>6777</id>
+    <name>I'm on a boat</name>
+    <energy>18</energy>
+    <desc>After waking up from such a crazy dream, you decide it is time for a real adventure. You set out on a voyage commanded by a group of goblin pirates to wherever the sea might take you.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="7194" name="Coralscape" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2155" name="Saguaro shot" />
+      <card id="1635" name="Mergoat" />
+      <card id="7149" name="Trident honor guard" />
+      <card id="2130" name="Seas Maw" />
+      <card id="6135" name="Ballisticshell" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="2013" mastery_level="3" name="Venomtouch Siren" />
+      <card id="7284" mastery_level="4" name="Werething" />
+      <card id="7221" mastery_level="5" name="Icejaw Turtle" />
+      <card id="7194" mastery_level="6" name="Coralscape" />
+      <card id="7153" mastery_level="7" name="Kelpthrasher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6778</id>
+    <name>Man overboard!</name>
+    <energy>18</energy>
+    <desc>After a couple of days at sea, all of a sudden on a stormy night, the ship gets attacked. Loud strikes can be heard coming from all directions. Before you know it the ship is going down!</desc>
+    <commander id="309" />
+    <deck>
+      <card id="7194" name="Coralscape" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2155" name="Saguaro shot" />
+      <card id="1635" name="Mergoat" />
+      <card id="7149" name="Trident honor guard" />
+      <card id="2130" name="Seas Maw" />
+      <card id="6135" name="Ballisticshell" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="2013" mastery_level="3" name="Venomtouch Siren" />
+      <card id="7108" mastery_level="4" name="Quetee" />
+      <card id="7193" mastery_level="5" name="Surgebend Merman" />
+      <card id="7194" mastery_level="6" name="Coralscape" />
+      <card id="7153" mastery_level="7" name="Kelpthrasher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6779</id>
+    <name>Cast away</name>
+    <energy>18</energy>
+    <desc>You wake up from the shipwreck only to realize that you have arrived at Seastorm Citadel. A human approaches you with a ball that has a face carved into it. He insists that you call it Wilson for some reason.</desc>
+    <commander id="210" />
+    <deck>
+      <card id="7194" name="Coralscape" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2155" name="Saguaro shot" />
+      <card id="1635" name="Mergoat" />
+      <card id="7149" name="Trident honor guard" />
+      <card id="2130" name="Seas Maw" />
+      <card id="6135" name="Ballisticshell" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="2013" mastery_level="3" name="Venomtouch Siren" />
+      <card id="2013" mastery_level="4" name="Venomtouch Siren" />
+      <card id="6198" mastery_level="5" name="Rattleclank Courtesan" />
+      <card id="7194" mastery_level="6" name="Coralscape" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6780</id>
+    <name>No way out</name>
+    <energy>18</energy>
+    <desc>The human explains to you that his ship was wrecked nearby as well and he remained as the only survivor. He also proceeds to explain that nobody can ever leave or come to the rescue because of a sea colossal that guards the island.</desc>
+    <commander id="287" />
+    <deck>
+      <card id="7194" name="Coralscape" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2155" name="Saguaro shot" />
+      <card id="1635" name="Mergoat" />
+      <card id="7149" name="Trident honor guard" />
+      <card id="2130" name="Seas Maw" />
+      <card id="6135" name="Ballisticshell" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="5258" mastery_level="3" name="Venomtouch Siren" />
+      <card id="5258" mastery_level="4" name="Hammerhead Smithy" />
+      <card id="7221" mastery_level="5" name="Hammerhead Smithy" />
+      <card id="7194" mastery_level="6" name="Coralscape" />
+      <card id="7153" mastery_level="7" name="Kelpthrasher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6781</id>
+    <name>Buckle up</name>
+    <energy>18</energy>
+    <desc>After hearing the castaways story you realize nobody is coming to rescue you. You decide to ask him to lead you towards the colossals lair.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="7194" name="Coralscape" />
+      <card id="2137" name="Eolian Elemental" />
+      <card id="2155" name="Saguaro shot" />
+      <card id="1635" name="Mergoat" />
+      <card id="7149" name="Trident honor guard" />
+      <card id="2130" name="Seas Maw" />
+      <card id="6135" name="Ballisticshell" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="2013" mastery_level="3" name="Venomtouch Siren" />
+      <card id="7108" mastery_level="4" name="Quetee" />
+      <card id="5198" mastery_level="5" name="Sea's Sky Forces" />
+      <card id="5198" mastery_level="6" name="Sea's Sky Forces" />
+      <card id="7150" mastery_level="7" name="Ika-Roa" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6782</id>
+    <name>Enemies at bay</name>
+    <energy>18</energy>
+    <desc>From far away you can already see seafolk enemies patrolling the area. Among some of the enemies you can see what looks like turtles. Really? How hard can it be to beat those?</desc>
+    <commander id="395" />
+    <deck>
+      <card id="7194" name="Coralscape" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2130" name="Seas Maw" />
+      <card id="6135" name="Ballisticshell" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1641" name="Rythm of the Wyld" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="1644" mastery_level="3" name="Blackfin" />
+      <card id="7108" mastery_level="4" name="Quetee" />
+      <card id="5198" mastery_level="5" name="Sea's Sky Forces" />
+      <card id="5198" mastery_level="6" name="Sea's Sky Forces" />
+      <card id="2116" mastery_level="7" name="Messina's Choice" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6783</id>
+    <name>A champion rises</name>
+    <energy>18</energy>
+    <desc>After defeating the horde of enemies you can start seeing how a huge colossal starts rising from the ocean. After seeing its size and power you start having second thoughts about what you have just done.</desc>
+    <commander id="210" />
+    <deck>
+      <card id="7109" name="Kindled Clownder" />
+      <card id="7066" name="Unicoral" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1637" name="Glacial lake monster" />
+      <card id="1630" name="Mounstruous Squid" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="2198" name="Cleaners of the ocean" />
+      <card id="5261" mastery_level="2" name="Absolute zero" />
+      <card id="1644" mastery_level="3" name="Maelstrom" />
+      <card id="6224" mastery_level="4" name="Cetus" />
+      <card id="6106" mastery_level="5" name="Bailong" />
+      <card id="5198" mastery_level="6" name="Sea's Sky Forces" />
+      <card id="2116" mastery_level="7" name="Messina's Choice" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6784</id>
+    <name>Meeting Moklam</name>
+    <energy>18</energy>
+    <desc>The colossal rises the ocean and announces its name, Moklam. Moklam asks why you have decided to disturb his peace. You proceed to explain what happened to your ship and how the castaway pointed at him as the culprit.</desc>
+    <commander id="206" />
+    <deck>
+      <card id="7109" name="Kindled Clownder" />
+      <card id="7066" name="Unicoral" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1637" name="Glacial lake monster" />
+      <card id="1630" name="Mounstruous Squid" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="2198" name="Cleaners of the ocean" />
+      <card id="5261" mastery_level="2" name="Absolute zero" />
+      <card id="1644" mastery_level="3" name="Maelstrom" />
+      <card id="6224" mastery_level="4" name="Cetus" />
+      <card id="6106" mastery_level="5" name="Bailong" />
+      <card id="5198" mastery_level="6" name="Sea's Sky Forces" />
+      <card id="2116" mastery_level="7" name="Messina's Choice" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6785</id>
+    <name>Oops</name>
+    <energy>18</energy>
+    <desc>Moklam proceeds to explain that he had nothing to do with your ship going down. As a matter of fact, he actually wants you to leave as quickly as possible since all you did was destroy his home. Who would have thought that trusting a random crazy guy was a bad idea?</desc>
+    <commander id="395" />
+    <deck>
+      <card id="7109" name="Kindled Clownder" />
+      <card id="7066" name="Unicoral" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1637" name="Glacial lake monster" />
+      <card id="1630" name="Mounstruous Squid" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="2198" name="Cleaners of the ocean" />
+      <card id="5261" mastery_level="2" name="Absolute zero" />
+      <card id="5153" mastery_level="3" name="Octopulse" />
+      <card id="6224" mastery_level="4" name="Cetus" />
+      <card id="2116" mastery_level="5" name="Messina's Choice" />
+      <card id="5153" mastery_level="6" name="Octopulse" />
+      <card id="2116" mastery_level="7" name="Messina's Choice" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6786</id>
+    <name>Seek the truth</name>
+    <energy>18</energy>
+    <desc>You turn back from where you came from and head towards the human. In a menacing manner, you command him to tell you the truth or he will regret ever meeting you. That's when all of a sudden you start hearing hoards of creatures surrounding you. Oh god, it can't be true!!!</desc>
+    <commander id="314" />
+    <deck>
+      <card id="7109" name="Kindled Clownder" />
+      <card id="7066" name="Unicoral" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1637" name="Glacial lake monster" />
+      <card id="1630" name="Mounstruous Squid" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="2198" name="Cleaners of the ocean" />
+      <card id="5261" mastery_level="2" name="Absolute zero" />
+      <card id="1644" mastery_level="3" name="Maelstrom" />
+      <card id="6224" mastery_level="4" name="Cetus" />
+      <card id="6106" mastery_level="5" name="Bailong" />
+      <card id="5198" mastery_level="6" name="Sea's Sky Forces" />
+      <card id="2116" mastery_level="7" name="Messina's Choice" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6787</id>
+    <name>Qutee Qued</name>
+    <energy>18</energy>
+    <desc>You can see Qutee Ques surrounding you as far as the eye can see. Why!!! You yell at them, I helped you in the past and this is how you repay me? The creatures don't seem to care, it looks like you are about to get Qutee Qued.</desc>
+    <commander id="309" />
+    <deck>
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" mastery_level="2" name="Quetee" />
+      <card id="7108" mastery_level="3" name="Quetee" />
+      <card id="7108" mastery_level="4" name="Quetee" />
+      <card id="7108" mastery_level="5" name="Quetee" />
+      <card id="7108" mastery_level="6" name="Quetee" />
+      <card id="7108" mastery_level="7" name="Quetee" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6788</id>
+    <name>Sea you later</name>
+    <energy>18</energy>
+    <desc>After defeating the Qutees you can finally leave the island. The pirates managed to fix their ship and you decide to continue with your journey.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="7109" name="Kindled Clownder" />
+      <card id="7066" name="Unicoral" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2227" name="Mirror Turtle" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="1637" name="Glacial lake monster" />
+      <card id="1630" name="Mounstruous Squid" />
+      <card id="2226" name="Maddening Clams" />
+      <card id="2198" name="Cleaners of the ocean" />
+      <card id="5261" mastery_level="2" name="Absolute zero" />
+      <card id="1644" mastery_level="3" name="Maelstrom" />
+      <card id="6224" mastery_level="4" name="Cetus" />
+      <card id="6106" mastery_level="5" name="Bailong" />
+      <card id="5237" mastery_level="6" name="Lanternbulb Hunter" />
+      <card id="5237" mastery_level="7" name="Lanternbulb Hunter" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6789</id>
+    <name>The commons return</name>
+    <energy>1</energy>
+    <desc>After the commons got destroyed last year, they have now come back empowered. THE COMMONS RISE AGAIN TO RESTORE THEIR FORMER GLORY.</desc>
+    <commander id="297" />
+    <deck>
+      <card id="1006" />
+      <card id="1006" />
+      <card id="1006" />
+      <card id="1601" />
+      <card id="1601" />
+      <card id="1601" />
+      <card id="1303" />
+      <card id="1303" />
+      <card id="1303" />
+      <card id="1305" mastery_level="2" />
+      <card id="1305" mastery_level="3" />
+      <card id="1002" mastery_level="4" />
+      <card id="1002" mastery_level="5" />
+      <card id="1302" mastery_level="6" />
+      <card id="1302" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6790</id>
+    <name>Trolol</name>
+    <energy>1</energy>
+    <desc>Ah, I see you defeated the first set of commons. Let’s see how you do against an actually GOOD common set.</desc>
+    <commander id="466" />
+    <deck>
+      <card id="6294" />
+      <card id="1303" />
+      <card id="6294" />
+      <card id="1303" />
+      <card id="6294" />
+      <card id="1303" />
+      <card id="6294" />
+      <card id="1303" />
+      <card id="6294" />
+      <card id="1302" mastery_level="2" />
+      <card id="1303" mastery_level="3" />
+      <card id="1301" mastery_level="4" />
+      <card id="1601" mastery_level="5" />
+      <card id="1601" mastery_level="6" />
+      <card id="1604" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6791</id>
+    <name>Honest mistake</name>
+    <energy>1</energy>
+    <desc>Oops lol, my bad. Those Seraphims just happened to slip in haha xd. You will actually face commons now.</desc>
+    <commander id="466" />
+    <deck>
+      <card id="1302" />
+      <card id="1302" />
+      <card id="1302" />
+      <card id="1302" />
+      <card id="1606" />
+      <card id="1606" />
+      <card id="1606" />
+      <card id="1604" />
+      <card id="1604" />
+      <card id="1604" mastery_level="2" />
+      <card id="1002" mastery_level="3" />
+      <card id="1002" mastery_level="4" />
+      <card id="1303" mastery_level="5" />
+      <card id="1303" mastery_level="6" />
+      <card id="1305" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6792</id>
+    <name>These puns will get me a promocean</name>
+    <energy>1</energy>
+    <desc>Im shore you guys like the new Seafolk BGE as much as we do. But just in case you don’t, we have made the next deck 15 seafolk copies lol.</desc>
+    <commander id="467" />
+    <deck>
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1306" />
+      <card id="1603" />
+      <card id="1603" />
+      <card id="1603" />
+      <card id="1603" />
+      <card id="1606" />
+      <card id="1606" mastery_level="2" />
+      <card id="1606" mastery_level="3" />
+      <card id="1606" mastery_level="4" />
+      <card id="1607" mastery_level="5" />
+      <card id="1607" mastery_level="6" />
+      <card id="1607" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6793</id>
+    <name>Revenge of the devs</name>
+    <energy>1</energy>
+    <desc>More than revenge of the commons this seems like revenge of the devs am I right?.</desc>
+    <commander id="467" />
+    <deck>
+      <card id="1301" />
+      <card id="1002" />
+      <card id="1301" />
+      <card id="1002" />
+      <card id="1301" />
+      <card id="1002" />
+      <card id="1301" />
+      <card id="1305" />
+      <card id="1305" />
+      <card id="1007" mastery_level="2" />
+      <card id="1606" mastery_level="3" />
+      <card id="1302" mastery_level="4" />
+      <card id="1006" mastery_level="5" />
+      <card id="1006" mastery_level="6" />
+      <card id="1002" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6794</id>
+    <name>Greedy devs</name>
+    <energy>1</energy>
+    <desc>Congratulations, I see you have fought your way to the final mission and that you are almost ready to claim your reward. I hope you understand that in the end we aren’t evil, JUST GREEDY MUAHAHAHAHA..</desc>
+    <commander id="466" />
+    <deck>
+      <card id="1002" />
+      <card id="1002" />
+      <card id="1606" />
+      <card id="1606" />
+      <card id="1301" />
+      <card id="1301" />
+      <card id="1604" />
+      <card id="1604" />
+      <card id="1604" />
+      <card id="1601" mastery_level="2" />
+      <card id="1601" mastery_level="3" />
+      <card id="1601" mastery_level="4" />
+      <card id="1006" mastery_level="5" />
+      <card id="1006" mastery_level="6" />
+      <card id="1006" mastery_level="7" />
+    </deck>
+  </mission>
 </root>
 

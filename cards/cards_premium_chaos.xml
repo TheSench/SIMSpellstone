@@ -13428,11 +13428,11 @@
     <upgrade>
       <level>4</level>
       <attack>9</attack>
-      <health>19</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>20</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -13450,41 +13450,41 @@
     <asset_bundle>83</asset_bundle>
     <hidden_until_time>1484845200</hidden_until_time>
     <attack>10</attack>
-    <health>21</health>
+    <health>23</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="counter" x="5" />
     <skill id="enfeeble" x="1" all="1" />
-    <skill id="burn" x="3" />
+    <skill id="burn" x="4" />
     <type>2</type>
     <sub_type>12</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>22</health>
+      <health>25</health>
       <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>23</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>24</health>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>25</health>
+      <health>31</health>
       <skill id="counter" x="6" />
-      <skill id="enfeeble" x="1" all="1" />
-      <skill id="burn" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>26</health>
-      <skill id="counter" x="7" />
-      <skill id="enfeeble" x="2" all="1" />
-      <skill id="burn" x="5" />
+      <health>32</health>
+      <skill id="counter" x="8" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="burn" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -23273,7 +23273,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>25</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -23283,7 +23283,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>26</health>
+      <health>29</health>
       <skill id="corrosive" x="7" />
       <skill id="frost" x="4" />
       <skill id="enrage" x="8" y="12" />
@@ -23297,8 +23297,8 @@
     <picture>Tower_Eater_Dragon_B</picture>
     <asset_bundle>122</asset_bundle>
     <hidden_until_time>1520874000</hidden_until_time>
-    <attack>7</attack>
-    <health>27</health>
+    <attack>9</attack>
+    <health>30</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="7" />
@@ -23316,12 +23316,13 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
-      <attack>8</attack>
+      <health>31</health>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>30</health>
+      <health>33</health>
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>5</level>

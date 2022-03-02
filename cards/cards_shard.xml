@@ -2410,74 +2410,74 @@
     <type>1</type>
     <sub_type>12</sub_type>
     <attack>7</attack>
-    <health>27</health>
+    <health>29</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="valor" x="7" />
-    <skill id="heal" x="6" y="12" />
+    <skill id="heal" x="9" y="12" />
     <skill id="legion" x="4" />
     <upgrade>
       <level>2</level>
-      <health>27</health>
+      <health>29</health>
       <skill id="valor" x="8" />
-      <skill id="heal" x="7" y="12" />
+      <skill id="heal" x="10" y="12" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>30</health>
       <skill id="valor" x="8" />
-      <skill id="heal" x="7" y="12" />
+      <skill id="heal" x="10" y="12" />
       <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>28</health>
+      <health>30</health>
       <skill id="valor" x="9" />
-      <skill id="heal" x="8" y="12" />
+      <skill id="heal" x="11" y="12" />
       <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>29</health>
+      <health>31</health>
       <skill id="valor" x="10" />
-      <skill id="heal" x="8" y="12" />
+      <skill id="heal" x="11" y="12" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>30</health>
+      <health>32</health>
       <skill id="valor" x="10" />
-      <skill id="heal" x="8" y="12" />
+      <skill id="heal" x="11" y="12" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>30</health>
+      <health>32</health>
       <skill id="valor" x="11" />
-      <skill id="heal" x="8" y="12" />
+      <skill id="heal" x="11" y="12" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>31</health>
+      <health>33</health>
       <skill id="valor" x="11" />
-      <skill id="heal" x="9" y="12" />
+      <skill id="heal" x="12" y="12" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>31</health>
+      <health>33</health>
       <skill id="valor" x="12" />
-      <skill id="heal" x="9" y="12" />
+      <skill id="heal" x="12" y="12" />
       <skill id="legion" x="7" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <health>32</health>
+      <health>34</health>
       <skill id="valor" x="13" />
-      <skill id="heal" x="10" y="12" />
-      <skill id="legion" x="7" />
+      <skill id="heal" x="13" y="12" />
+      <skill id="legion" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -4724,6 +4724,94 @@
       <skill id="burn" x="10" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4056</id>
+    <card_type>2</card_type>
+    <name>Moklam, the Sea Colossus</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk-Sea_Colossus</picture>
+    <asset_bundle>242</asset_bundle>
+    <item_name>Moklam Stone</item_name>
+    <item_desc>Collect Moklam Stones to upgrade the Legendary Moklam, the Sea Colossus!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <attack>13</attack>
+    <health>55</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="leech" x="18" />
+    <skill id="berserk" x="5" />
+    <upgrade>
+      <level>2</level>
+      <skill id="stasis" x="5" />
+      <skill id="leech" x="20" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>14</attack>
+      <skill id="stasis" x="5" />
+      <skill id="leech" x="20" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="6" />
+      <skill id="leech" x="22" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>15</attack>
+      <health>57</health>
+      <skill id="stasis" x="6" />
+      <skill id="leech" x="22" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>59</health>
+      <skill id="stasis" x="7" />
+      <skill id="leech" x="22" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>16</attack>
+      <health>60</health>
+      <skill id="stasis" x="7" />
+      <skill id="leech" x="22" />
+      <skill id="berserk" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>17</attack>
+      <health>62</health>
+      <skill id="stasis" x="7" />
+      <skill id="leech" x="23" />
+      <skill id="berserk" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>18</attack>
+      <skill id="stasis" x="8" />
+      <skill id="leech" x="24" />
+      <skill id="berserk" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>63</health>
+      <skill id="stasis" x="9" />
+      <skill id="leech" x="25" />
+      <skill id="berserk" x="10" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -5092,8 +5180,8 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>1</type>
     <sub_type>12</sub_type>
-    <attack>9</attack>
-    <health>37</health>
+    <attack>12</attack>
+    <health>38</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="7" />
@@ -5101,65 +5189,65 @@
     <skill id="legion" x="5" />
     <upgrade>
       <level>2</level>
-      <health>38</health>
+      <health>39</health>
       <skill id="absorb" x="7" />
       <skill id="backlash" x="3" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>10</attack>
+      <attack>13</attack>
       <skill id="absorb" x="7" />
       <skill id="backlash" x="4" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>39</health>
+      <health>40</health>
       <skill id="absorb" x="7" />
       <skill id="backlash" x="4" />
       <skill id="legion" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>11</attack>
-      <health>40</health>
+      <attack>14</attack>
+      <health>41</health>
       <skill id="absorb" x="8" />
       <skill id="backlash" x="4" />
       <skill id="legion" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>41</health>
+      <health>42</health>
       <skill id="absorb" x="8" />
       <skill id="backlash" x="4" />
       <skill id="legion" x="8" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>42</health>
+      <health>43</health>
       <skill id="absorb" x="9" />
       <skill id="backlash" x="4" />
       <skill id="legion" x="8" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <attack>12</attack>
-      <skill id="absorb" x="9" />
+      <attack>15</attack>
+      <skill id="absorb" x="10" />
       <skill id="backlash" x="5" />
       <skill id="legion" x="8" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>43</health>
-      <skill id="absorb" x="9" />
+      <health>44</health>
+      <skill id="absorb" x="10" />
       <skill id="backlash" x="5" />
       <skill id="legion" x="9" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>13</attack>
-      <skill id="absorb" x="10" />
+      <attack>16</attack>
+      <skill id="absorb" x="11" />
       <skill id="backlash" x="5" />
       <skill id="legion" x="9" />
     </upgrade>
@@ -7187,6 +7275,83 @@
       <skill id="enfeeble" x="5" all="1" />
       <skill id="leech" x="16" />
       <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5629</id>
+    <card_type>2</card_type>
+    <name>Kandrula, the Sly</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk_Naga_Witch_A</picture>
+    <asset_bundle>242</asset_bundle>
+    <item_name>Kandrula Stone</item_name>
+    <item_desc>Collect Kandrula Stones to upgrade the Legendary Kandrula, the Sly card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <attack>11</attack>
+    <health>21</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="jam" c="5" />
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>25</health>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>15</attack>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
   <!-- === AETHER END === -->

@@ -2539,26 +2539,26 @@ var BATTLEGROUNDS = {
 		"name": "Draining Soul"
 	},
 	"546": {
-		"desc": "All Common cards have their Attack, Health, and all Skills multiplied by 5!",
+		"desc": "All Common cards have their Attack, Health, and all Skills multiplied by 6!",
 		"effect": [
 			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enlarge",
-				"mult": 4,
+				"mult": 5,
 				"z": "1"
 			},
 			{
 				"base": "health",
 				"effect_type": "scale_health",
-				"mult": 4,
+				"mult": 5,
 				"rarity": 1
 			},
 			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "armored",
 				"z": "1"
 			},
@@ -2566,7 +2566,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "counter",
 				"z": "1"
 			},
@@ -2574,7 +2574,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "evade",
 				"z": "1"
 			},
@@ -2582,7 +2582,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "leech",
 				"z": "1"
 			},
@@ -2590,7 +2590,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "pierce",
 				"z": "1"
 			},
@@ -2598,7 +2598,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "burn",
 				"z": "1"
 			},
@@ -2606,7 +2606,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "poison",
 				"z": "1"
 			},
@@ -2614,7 +2614,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "heal",
 				"z": "1"
 			},
@@ -2622,7 +2622,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "strike",
 				"z": "1"
 			},
@@ -2630,7 +2630,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "weaken",
 				"z": "1"
 			},
@@ -2638,7 +2638,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "protect",
 				"z": "1"
 			},
@@ -2646,7 +2646,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "rally",
 				"z": "1"
 			},
@@ -2654,7 +2654,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "berserk",
 				"z": "1"
 			},
@@ -2662,7 +2662,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "absorb",
 				"z": "1"
 			},
@@ -2670,7 +2670,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "counterburn",
 				"z": "1"
 			}
