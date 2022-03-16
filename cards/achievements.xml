@@ -17271,6 +17271,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 88 - Dragon - Node 1 -->
+  <achievement>
+    <id>3774</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Taking a break</name>
+    <desc>Complete the 'Taking a break' campaign on Mastery Level 1.</desc>
+    <mission_req>6795</mission_req>
+    <locked_start_time>1648746000</locked_start_time>
+    <!-- Thursday, 31 March 2022 17:00:00 -->
+    <req>
+      <campaign>1313</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3119" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7084" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3775</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Taking a break</name>
+    <desc>Complete the 'Taking a break' campaign on Mastery Level 2.</desc>
+    <mission_req>6795</mission_req>
+    <locked_start_time>1648746000</locked_start_time>
+    <!-- Thursday, 31 March 2022 17:00:00 -->
+    <achievement_req>3774</achievement_req>
+    <req>
+      <campaign>1313</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3776</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Taking a break</name>
+    <desc>Complete the 'Taking a break' campaign on Mastery Level 4.</desc>
+    <mission_req>6795</mission_req>
+    <locked_start_time>1648746000</locked_start_time>
+    <!-- Thursday, 31 March 2022 17:00:00 -->
+    <achievement_req>3775</achievement_req>
+    <req>
+      <campaign>1313</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3777</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Taking a break</name>
+    <desc>Complete the 'Taking a break' campaign on Mastery Level 6.</desc>
+    <mission_req>6795</mission_req>
+    <locked_start_time>1648746000</locked_start_time>
+    <!-- Thursday, 31 March 2022 17:00:00 -->
+    <achievement_req>3776</achievement_req>
+    <req>
+      <campaign>1313</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 88 - Dragon - Node 2 -->
+  <achievement>
+    <id>3778</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Exploring Tarragon peak</name>
+    <desc>Complete the 'Exploring Tarragon peak' campaign on Mastery Level 2.</desc>
+    <mission_req>6801</mission_req>
+    <locked_start_time>1649955600</locked_start_time>
+    <!-- Thursday, 14 April 2022 17:00:00 -->
+    <req>
+      <campaign>1314</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3779</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Exploring Tarragon peak</name>
+    <desc>Complete the 'Exploring Tarragon peak' campaign on Mastery Level 4.</desc>
+    <mission_req>6801</mission_req>
+    <locked_start_time>1649955600</locked_start_time>
+    <!-- Thursday, 14 April 2022 17:00:00 -->
+    <achievement_req>3778</achievement_req>
+    <req>
+      <campaign>1314</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3780</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Exploring Tarragon peak</name>
+    <desc>Complete the 'Exploring Tarragon peak' campaign on Mastery Level 6.</desc>
+    <mission_req>6801</mission_req>
+    <locked_start_time>1649955600</locked_start_time>
+    <!-- Thursday, 14 April 2022 17:00:00 -->
+    <achievement_req>3779</achievement_req>
+    <req>
+      <campaign>1314</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -18224,6 +18357,36 @@
       <campaign>1311</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1312</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Return to Tarragon Peak Revisited -->
+    <id>4042</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Return to Tarragon Peak</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Return to Tarragon Peak.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6486</mission_req>
+    <req>
+      <campaign>1260</campaign>
+      <!-- 1st node -->
+      <campaign>1261</campaign>
+      <!-- 2nd node -->
+      <campaign>1263</campaign>
+      <!-- Boss node -->
+      <campaign>1264</campaign>
+      <!-- 3rd node -->
+      <campaign>1265</campaign>
+      <!-- 4th node -->
+      <campaign>1313</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1314</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>

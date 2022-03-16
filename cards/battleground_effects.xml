@@ -1103,6 +1103,16 @@
       <add_skill id="armored" mult="0.10" base="health" y="12" delay="3,4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>149</id>
+    <name>Zenith of Dragons</name>
+    <desc>Dragons of 0-2 Delay gain Scorch equal to 25% of their base Health. Dragons of 3-4 Delay gain Regenerate equal to 15% of their base Health plus 4.</desc>
+    <icon>filter_dragon_64.png</icon>
+    <effect>
+      <add_skill id="burn" mult="0.25" base="health" y="9" delay="0,1,2" />
+      <add_skill id="regenerate" mult="0.15" x="4" base="health" y="9" delay="3,4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

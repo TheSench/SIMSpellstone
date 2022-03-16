@@ -1532,6 +1532,37 @@ var BATTLEGROUNDS = {
 		"id": "148",
 		"name": "Unbreakable Waves"
 	},
+	"149": {
+		"desc": "Dragons of 0-2 Delay gain Scorch equal to 25% of their base Health. Dragons of 3-4 Delay gain Regenerate equal to 15% of their base Health plus 4.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.25,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"x": 4,
+				"y": "9"
+			}
+		],
+		"id": "149",
+		"name": "Zenith of Dragons"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

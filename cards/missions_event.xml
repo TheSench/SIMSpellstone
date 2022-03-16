@@ -56477,7 +56477,7 @@
     <id>6780</id>
     <name>No way out</name>
     <energy>18</energy>
-    <desc>The human explains to you that his ship was wrecked nearby as well and he remained as the only survivor. He also proceeds to explain that nobody can ever leave or come to the rescue because of a sea colossal that guards the island.</desc>
+    <desc>The human explains to you that his ship was wrecked nearby as well and he remained as the only survivor. He also proceeds to explain that nobody can ever leave or come to the rescue because of a sea colossus that guards the island.</desc>
     <commander id="287" />
     <deck>
       <card id="7194" name="Coralscape" />
@@ -56501,7 +56501,7 @@
     <id>6781</id>
     <name>Buckle up</name>
     <energy>18</energy>
-    <desc>After hearing the castaways story you realize nobody is coming to rescue you. You decide to ask him to lead you towards the colossals lair.</desc>
+    <desc>After hearing the castaways story you realize nobody is coming to rescue you. You decide to ask him to lead you towards the creature's lair.</desc>
     <commander id="314" />
     <deck>
       <card id="7194" name="Coralscape" />
@@ -56549,7 +56549,7 @@
     <id>6783</id>
     <name>A champion rises</name>
     <energy>18</energy>
-    <desc>After defeating the horde of enemies you can start seeing how a huge colossal starts rising from the ocean. After seeing its size and power you start having second thoughts about what you have just done.</desc>
+    <desc>After defeating the horde of enemies you start seeing a Seafolk colossus rising from the ocean. Given its terrible size and power you start having second thoughts about what you have just done.</desc>
     <commander id="210" />
     <deck>
       <card id="7109" name="Kindled Clownder" />
@@ -56573,7 +56573,7 @@
     <id>6784</id>
     <name>Meeting Moklam</name>
     <energy>18</energy>
-    <desc>The colossal rises the ocean and announces its name, Moklam. Moklam asks why you have decided to disturb his peace. You proceed to explain what happened to your ship and how the castaway pointed at him as the culprit.</desc>
+    <desc>The colossus rises from the ocean and announces his name, Moklam. He asks why you have decided to disturb his peace. You proceed to explain what happened to your ship and how the castaway pointed at him as the culprit.</desc>
     <commander id="206" />
     <deck>
       <card id="7109" name="Kindled Clownder" />
@@ -56621,7 +56621,7 @@
     <id>6786</id>
     <name>Seek the truth</name>
     <energy>18</energy>
-    <desc>You turn back from where you came from and head towards the human. In a menacing manner, you command him to tell you the truth or he will regret ever meeting you. That's when all of a sudden you start hearing hoards of creatures surrounding you. Oh god, it can't be true!!!</desc>
+    <desc>You turn back from where you came from and head towards the human. In a menacing manner, you command him to tell you the truth or he will regret ever meeting you. That's when all of a sudden you start hearing hordes of creatures surrounding you. Oh god, it can't be true!</desc>
     <commander id="314" />
     <deck>
       <card id="7109" name="Kindled Clownder" />
@@ -56645,7 +56645,7 @@
     <id>6787</id>
     <name>Qutee Qued</name>
     <energy>18</energy>
-    <desc>You can see Qutee Ques surrounding you as far as the eye can see. Why!!! You yell at them, I helped you in the past and this is how you repay me? The creatures don't seem to care, it looks like you are about to get Qutee Qued.</desc>
+    <desc>You can spot Qutee Ques surrounding you as far as the eye can see. Why?!?! You yell at them, I helped you in the past and this is how you repay me? The creatures don't seem to care, it looks like you are about to get Qutee Qued.</desc>
     <commander id="309" />
     <deck>
       <card id="7108" name="Quetee" />
@@ -56669,7 +56669,7 @@
     <id>6788</id>
     <name>Sea you later</name>
     <energy>18</energy>
-    <desc>After defeating the Qutees you can finally leave the island. The pirates managed to fix their ship and you decide to continue with your journey.</desc>
+    <desc>After defeating the Quetees you can finally leave the island. The pirates managed to fix their ship and you decide to continue with your journey.</desc>
     <commander id="323" />
     <deck>
       <card id="7109" name="Kindled Clownder" />
@@ -56831,6 +56831,436 @@
       <card id="1006" mastery_level="5" />
       <card id="1006" mastery_level="6" />
       <card id="1006" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6795</id>
+    <name>Small detour</name>
+    <energy>18</energy>
+    <desc>When sailing with your buddies you decide to take a break and re-supply at the hotel you once stayed at in Tarragon peak. You make a stop at the hotel and head towards the front desk.</desc>
+    <commander id="16" />
+    <deck>
+      <card id="1334" />
+      <card id="2124" />
+      <card id="2067" />
+      <card id="2066" />
+      <card id="5241" />
+      <card id="5241" />
+      <card id="5268" />
+      <card id="5291" />
+      <card id="7214" />
+      <card id="2047" mastery_level="2" />
+      <card id="7217" mastery_level="3" />
+      <card id="7242" mastery_level="4" />
+      <card id="6289" mastery_level="5" />
+      <card id="5098" mastery_level="6" />
+      <card id="1334" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6796</id>
+    <name>No vacancy</name>
+    <energy>18</energy>
+    <desc>Unfortunately, one of the hotel´s employees informs you that there is no vacancy. You try to have them make room for you but there is no way to convince them. You yell at the employee, FANGS FOR NOTHING! They do not take your joke kindly.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="1631" />
+      <card id="1631" />
+      <card id="5241" />
+      <card id="1334" />
+      <card id="1334" />
+      <card id="2044" />
+      <card id="7214" />
+      <card id="6250" />
+      <card id="1640" />
+      <card id="7242" mastery_level="2" />
+      <card id="7217" mastery_level="4" />
+      <card id="7242" mastery_level="5" />
+      <card id="6289" mastery_level="6" />
+      <card id="5098" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6797</id>
+    <name>In the heat of the moment</name>
+    <energy>18</energy>
+    <desc>The employee calls security and they start ganging up on you. As a response to their aggression you continue to mock them and answer that they have no reason to get all fired up and that you are going to stay at the hotel wyvern whether they like it or not!</desc>
+    <commander id="310" />
+    <deck>
+      <card id="5216" />
+      <card id="5290" />
+      <card id="6241" />
+      <card id="1631" />
+      <card id="5291" />
+      <card id="7214" />
+      <card id="1336" />
+      <card id="1334" />
+      <card id="6242" />
+      <card id="7217" mastery_level="2" />
+      <card id="7217" mastery_level="3" />
+      <card id="6289" mastery_level="4" />
+      <card id="5095" mastery_level="5" />
+      <card id="5283" mastery_level="6" />
+      <card id="6106" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6798</id>
+    <name>Run boy run</name>
+    <energy>18</energy>
+    <desc>Tired of your bad puns, the dragons start chasing you out of the hotel. You have no option but to run into the resort's wilderness and hide until it is all clear.</desc>
+    <commander id="318" />
+    <deck>
+      <card id="1336" />
+      <card id="2044" />
+      <card id="1631" />
+      <card id="2003" />
+      <card id="5291" />
+      <card id="7214" />
+      <card id="1640" />
+      <card id="2047" />
+      <card id="7217" />
+      <card id="7242" mastery_level="2" />
+      <card id="6289" mastery_level="3" />
+      <card id="5098" mastery_level="4" />
+      <card id="5095" mastery_level="5" />
+      <card id="5283" mastery_level="6" />
+      <card id="6106" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6799</id>
+    <name>Jump Scare</name>
+    <energy>18</energy>
+    <desc>Weirdly enough the resort has some sort of swampy area, who would have thought? In Tarragon peak? You start looking around for a hiding spot when all of a sudden a huge green dragon jumps out and scares you while it yells asking what are you doing in his swamp.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="1336" />
+      <card id="5241" />
+      <card id="5291" />
+      <card id="1631" />
+      <card id="2047" />
+      <card id="2001" />
+      <card id="7242" />
+      <card id="6185" />
+      <card id="5098" />
+      <card id="5095" mastery_level="2" />
+      <card id="7025" mastery_level="3" />
+      <card id="5095" mastery_level="4" />
+      <card id="5283" mastery_level="5" />
+      <card id="6106" mastery_level="6" />
+      <card id="6106" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6800</id>
+    <name>Nice to meet you</name>
+    <energy>18</energy>
+    <desc>You look at the huge dragon with its gigantic fangs and horns and can't help being slightly scared for your life. He asks you to stay for a bite, but you decide to politely decline by running away in the opposite direction.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="1336" />
+      <card id="1631" />
+      <card id="6241" />
+      <card id="7242" />
+      <card id="6185" />
+      <card id="7214" />
+      <card id="5241" />
+      <card id="5216" />
+      <card id="5095" />
+      <card id="5095" mastery_level="2" />
+      <card id="5095" mastery_level="3" />
+      <card id="7025" mastery_level="4" />
+      <card id="5283" mastery_level="5" />
+      <card id="6106" mastery_level="6" />
+      <card id="7262" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6801</id>
+    <name>Marco Polo</name>
+    <energy>18</energy>
+    <desc>You continue exploring through Tarragon peak when you suddenly hear a battle going on. You decide to move closer to see what is going on.</desc>
+    <commander id="16" />
+    <deck>
+      <card id="1334" />
+      <card id="1336" />
+      <card id="1631" />
+      <card id="2139" />
+      <card id="7243" />
+      <card id="6283" />
+      <card id="2139" />
+      <card id="2124" />
+      <card id="2066" />
+      <card id="6242" mastery_level="2" />
+      <card id="6241" mastery_level="3" />
+      <card id="6283" mastery_level="4" />
+      <card id="6185" mastery_level="5" />
+      <card id="6239" mastery_level="6" />
+      <card id="6269" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6802</id>
+    <name>Under attack</name>
+    <energy>18</energy>
+    <desc>You can see from your safe spot that a powerful but outnumbered dragon is defending her hatchling from a group of frog raiders. You decide to intervene to help out the dragon.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="1336" />
+      <card id="1336" />
+      <card id="1336" />
+      <card id="1334" />
+      <card id="6062" />
+      <card id="6062" />
+      <card id="6283" />
+      <card id="7243" />
+      <card id="7270" />
+      <card id="7270" mastery_level="2" />
+      <card id="7025" mastery_level="4" />
+      <card id="6185" mastery_level="5" />
+      <card id="6269" mastery_level="6" />
+      <card id="6283" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6803</id>
+    <name>Tipping the scales</name>
+    <energy>18</energy>
+    <desc>After a fierce fight where the dragon is losing, your intervention seems to have tipped the scales and you manage to defeat all of the raiders.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="2139" />
+      <card id="2124" />
+      <card id="2066" />
+      <card id="1336" />
+      <card id="5291" />
+      <card id="7214" />
+      <card id="1640" />
+      <card id="6269" />
+      <card id="6269" />
+      <card id="7217" mastery_level="2" />
+      <card id="5268" mastery_level="3" />
+      <card id="6289" mastery_level="4" />
+      <card id="5216" mastery_level="5" />
+      <card id="5241" mastery_level="6" />
+      <card id="6106" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6804</id>
+    <name>Funny business</name>
+    <energy>18</energy>
+    <desc>You ask the dragon about the raiders and she answers that she overheard one of their conversations and that's why they wanted to silence her for good.</desc>
+    <commander id="318" />
+    <deck>
+      <card id="1334" />
+      <card id="2139" />
+      <card id="1336" />
+      <card id="1631" />
+      <card id="5291" />
+      <card id="2124" />
+      <card id="6283" />
+      <card id="6269" />
+      <card id="6250" />
+      <card id="6239" mastery_level="2" />
+      <card id="6242" mastery_level="3" />
+      <card id="5098" mastery_level="4" />
+      <card id="5283" mastery_level="5" />
+      <card id="6185" mastery_level="6" />
+      <card id="7025" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6805</id>
+    <name>Wrong time wrong place</name>
+    <energy>18</energy>
+    <desc>The Dragon tells you that she could take a glimpse at their leader, she describes him as a small and chaotic frog. You realize that the dragon and hatchlings life could still be in danger and you decide to offer them a ride to someplace safer.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="1334" />
+      <card id="2139" />
+      <card id="2124" />
+      <card id="2066" />
+      <card id="6269" />
+      <card id="6283" />
+      <card id="7243" />
+      <card id="7270" />
+      <card id="7215" />
+      <card id="6062" mastery_level="2" />
+      <card id="6128" mastery_level="3" />
+      <card id="5095" mastery_level="4" />
+      <card id="6185" mastery_level="5" />
+      <card id="7025" mastery_level="6" />
+      <card id="7262" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6806</id>
+    <name>Just winging it</name>
+    <energy>18</energy>
+    <desc>The dragon asks where you will be taking them and you answer that you are honestly just winging it as you go. She obviously does not find this amusing as their lives depend on you, but unfortunately for them you are still the best option they have.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="6133" />
+      <card id="7008" />
+      <card id="2205" />
+      <card id="7244" />
+      <card id="6137" />
+      <card id="7270" />
+      <card id="5291" />
+      <card id="2205" />
+      <card id="6267" />
+      <card id="7270" mastery_level="2" />
+      <card id="7244" mastery_level="3" />
+      <card id="7269" mastery_level="4" />
+      <card id="7187" mastery_level="5" name="Forest Hydra" />
+      <card id="7282" mastery_level="6" />
+      <card id="8043" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6807</id>
+    <name>Vulcanos is back</name>
+    <energy>18</energy>
+    <desc>Vulcanos has surged with hoards of dragons by his side, banish him from these lands in order to reap the rewards.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7187" name="Forest Hydra" />
+      <card id="7269" name="Wyrmdance Tail" />
+      <card id="7244" name="Glitternox Drake" />
+      <card id="6137" name="Deluging Bile" />
+      <card id="7270" name="Elarian Beast" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="6267" name="Searscale Wyrmling" />
+      <card id="7270" mastery_level="2" name="Elarian Beast" />
+      <card id="7244" mastery_level="3" name="Glitternox Drake" />
+      <card id="7269" mastery_level="4" name="Wyrmdance Tail" />
+      <card id="7187" mastery_level="5" name="Forest Hydra" />
+      <card id="7282" mastery_level="6" name="Egg Keeper" />
+      <card id="8043" mastery_level="7" name="Winter's Spirit" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6808</id>
+    <name>First hoard</name>
+    <energy>18</energy>
+    <desc>You stand in front of his first hoard of dragons, they seem fast and deadly. Nothing you haven’t handled in the past though.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="7187" name="Forest Hydra" />
+      <card id="7187" name="Forest Hydra" />
+      <card id="7269" name="Wyrmdance Tail" />
+      <card id="7244" name="Glitternox Drake" />
+      <card id="7270" name="Elarian Beast" />
+      <card id="7270" name="Elarian Beast" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="7282" mastery_level="6" name="Egg Keeper" />
+      <card id="6267" name="Searscale Wyrmling" />
+      <card id="7270" mastery_level="2" name="Elarian Beast" />
+      <card id="7282" mastery_level="6" name="Egg Keeper" />
+      <card id="7269" mastery_level="4" name="Wyrmdance Tail" />
+      <card id="7187" mastery_level="5" name="Forest Hydra" />
+      <card id="7282" mastery_level="6" name="Egg Keeper" />
+      <card id="8043" mastery_level="7" name="Winter's Spirit" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6809</id>
+    <name>Bigger and tougher</name>
+    <energy>18</energy>
+    <desc>After defeating the first hoard, you can see a second set of dragons on the horizon. These seem like slower but much stronger dragons, you might have to change your strategy.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="7243" name="Moonscale Drake" />
+      <card id="7283" name="Deceitful Wybat" />
+      <card id="7216" name="Shalefang" />
+      <card id="7244" name="Glitternox Drake" />
+      <card id="7244" name="Glitternox Drake" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="5282" name="Protector of the Weak" />
+      <card id="5282" mastery_level="2" name="Protector of the Weak" />
+      <card id="7216" mastery_level="3" name="Shalefang" />
+      <card id="7244" mastery_level="4" name="Glitternox Drake" />
+      <card id="7243" mastery_level="5" name="Moonscale Drake" />
+      <card id="7283" mastery_level="6" name="Deceitful Wybat" />
+      <card id="8042" mastery_level="7" name="Winter's Crusher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6810</id>
+    <name>Second wave</name>
+    <energy>18</energy>
+    <desc>The wave of dragons attacks you, these seem to be even stronger than the previous ones. You don’t even want to imagine what Vulcanos could be preparing if you manage to survive.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="7243" name="Moonscale Drake" />
+      <card id="7283" name="Deceitful Wybat" />
+      <card id="7216" name="Shalefang" />
+      <card id="7244" name="Glitternox Drake" />
+      <card id="5216" name="Drakon" />
+      <card id="5216" name="Drakon" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="5291" name="Cunning Spellhoarder" />
+      <card id="5291" mastery_level="2" name="Cunning Spellhoarder" />
+      <card id="7216" mastery_level="3" name="Shalefang" />
+      <card id="7244" mastery_level="4" name="Glitternox Drake" />
+      <card id="7243" mastery_level="5" name="Moonscale Drake" />
+      <card id="7283" mastery_level="6" name="Deceitful Wybat" />
+      <card id="8042" mastery_level="7" name="Winter's Crusher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6811</id>
+    <name>Red skies</name>
+    <energy>18</energy>
+    <desc>You have successfully defeated the second wave, but before you can even claim victory you start seeing how the sky turns red with dragon fire raining on top of you.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7008" name="Rock Dragon" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="7008" name="Rock Dragon" />
+      <card id="6137" name="Deluging Bile" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="5291" name="Cunning Spellhoarder" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="6267" name="Searscale Wyrmling" />
+      <card id="6267" mastery_level="2" name="Searscale Wyrmling" />
+      <card id="5291" mastery_level="3" name="Cunning Spellhoarder" />
+      <card id="5291" mastery_level="4" name="Cunning Spellhoarder" />
+      <card id="6133" mastery_level="5" name="Cress, Flamespeaker" />
+      <card id="7282" mastery_level="6" name="Egg Keeper" />
+      <card id="8131" mastery_level="7" name="The C-Team" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6812</id>
+    <name>Final wave</name>
+    <energy>18</energy>
+    <desc>You finally face the last wave of dragons, if you manage to defeat it Vulcanos will have been banished from these lands, at least for now.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7008" name="Rock Dragon" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="6137" name="Deluging Bile" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="5291" name="Cunning Spellhoarder" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="6267" mastery_level="2" name="Searscale Wyrmling" />
+      <card id="5291" mastery_level="3" name="Cunning Spellhoarder" />
+      <card id="5291" mastery_level="4" name="Cunning Spellhoarder" />
+      <card id="6133" mastery_level="5" name="Cress, Flamespeaker" />
+      <card id="7282" mastery_level="6" name="Egg Keeper" />
+      <card id="8130" mastery_level="7" name="Lack'thor" />
     </deck>
   </mission>
 </root>

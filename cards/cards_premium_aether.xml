@@ -38342,6 +38342,140 @@
       <skill id="frost" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5298</id>
+    <card_type>2</card_type>
+    <name>Blessed Sentinel</name>
+    <picture>Seafolk_Angel-Purity_Watcher_A</picture>
+    <asset_bundle>242</asset_bundle>
+    <hidden_until_time>1648486800</hidden_until_time>
+    <attack>10</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="counterburn" x="4" />
+    <skill id="protect" x="7" y="6" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="backlash" x="3" />
+      <skill id="counterburn" x="4" />
+      <skill id="protect" x="8" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="3" />
+      <skill id="counterburn" x="5" />
+      <skill id="protect" x="8" y="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15298</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Sacred Sentinel</name>
+    <picture>Seafolk_Angel-Purity_Watcher_A</picture>
+    <asset_bundle>242</asset_bundle>
+    <hidden_until_time>1648486800</hidden_until_time>
+    <attack>11</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="counterburn" x="5" />
+    <skill id="protect" x="9" y="6" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="backlash" x="4" />
+      <skill id="counterburn" x="5" />
+      <skill id="protect" x="9" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <skill id="backlash" x="4" />
+      <skill id="counterburn" x="5" />
+      <skill id="protect" x="10" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="4" />
+      <skill id="counterburn" x="6" />
+      <skill id="protect" x="10" y="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25298</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Exalted Sentinel</name>
+    <picture>Seafolk_Angel-Purity_Watcher_B</picture>
+    <asset_bundle>242</asset_bundle>
+    <hidden_until_time>1648486800</hidden_until_time>
+    <attack>12</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="4" />
+    <skill id="counterburn" x="6" />
+    <skill id="protect" x="11" y="6" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="5" />
+      <skill id="counterburn" x="6" />
+      <skill id="protect" x="11" y="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="5" />
+      <skill id="counterburn" x="7" />
+      <skill id="protect" x="12" y="6" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 
