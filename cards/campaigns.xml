@@ -10956,18 +10956,105 @@
     <!-- Thursday, 28 April 2022 17:00:00  -->
   </campaign>
   <!-- Campaign Event 41 - Return to Tarragon Peak -->
-  <!-- End campaign events -->
+  <campaign>
+    <id>1313</id>
+    <name>Taking a break</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1648746000</locked_start_time>
+    <!-- Thursday, 31 March 2022 17:00:00 -->
+    <location_id>31</location_id>
+    <x>225</x>
+    <!-- left right -->
+    <y>250</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6795</mission_id>
+      <mission_id>6796</mission_id>
+      <mission_id>6797</mission_id>
+      <mission_id>6798</mission_id>
+      <mission_id>6799</mission_id>
+      <mission_id>6800</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2639" number="25" />
+      /&gt;
+      <!-- Tarragon Traverse Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2228" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2197" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2639" number="75" />
+      /&gt;
+      <!-- Tarragon Traverse Flask -->
+      <card level="7" id="2229" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3119" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1653584400</ignore_energy_reduction_until>
+    <!-- Thursday, May 26, 2022 at 17:00:00  -->
+  </campaign>
+  <campaign>
+    <id>1314</id>
+    <name>Exploring Tarragon peak</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1313" level="1" />
+    <locked_start_time>1649955600</locked_start_time>
+    <!-- Thursday, 14 April 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>31</location_id>
+    <x>615</x>
+    <!-- left right -->
+    <y>250</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6801</mission_id>
+      <mission_id>6802</mission_id>
+      <mission_id>6803</mission_id>
+      <mission_id>6804</mission_id>
+      <mission_id>6805</mission_id>
+      <mission_id>6806</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2639" number="25" />
+      /&gt;
+      <!-- Tarragon Traverse Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2123" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2141" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2639" number="75" />
+      /&gt;
+      <!-- Tarragon Traverse Flask -->
+      <card level="7" id="2229" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3119" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1653584400</ignore_energy_reduction_until>
+    <!-- Thursday, May 26, 2022 at 17:00:00  -->
+  </campaign>
   <!-- April Fool's Campaign 2022 -->
   <campaign>
-    <id>2999</id>
-    <event_only>1</event_only>
+    <id>1315</id>
     <hidden>1</hidden>
+    <event_only>1</event_only>
     <name>Return of the Commons!</name>
     <icon id="common_icon_110" bundle="155" />
+    <!-- <campaign_req id='6' level='1' /> -->
     <battleground_id>546</battleground_id>
-    <location_id>26</location_id>
-    <x>210</x>
-    <y>320</y>
+    <location_id>31</location_id>
+    <x>730</x>
+    <y>250</y>
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6789</mission_id>
@@ -10978,17 +11065,20 @@
       <mission_id>6794</mission_id>
     </missions>
     <rewards>
-      <card level="1" id="2153" />
-      <card level="2" id="2153" />
-      <card level="3" id="2153" />
-      <card level="4" id="2153" />
+      <card level="1" id="22152" />
+      <card level="2" id="22153" />
+      <item level="3" id="514" />
+      <item level="4" id="514" />
       <item level="5" id="514" />
-      <item level="6" id="514" />
-      <item level="7" id="514" />
+      <item level="6" id="104045" number="50" />
+      <!-- Korg Stones -->
+      <item level="7" id="104022" number="50" />
+      <!-- Bluefire Stones -->
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3119" drop_per_energy=".4" />
   </campaign>
   <!-- April Fools Campaigns END -->
+  <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -11524,7 +11614,7 @@
       <card level="4" id="512" />
       <card level="5" id="2006" />
       <card level="6" id="2006" />
-      <item level="7" id="104055" number="100" />
+      <item level="7" id="104057" number="100" />
     </rewards>
     <find_item id="3119" drop_per_energy=".4" />
   </campaign>

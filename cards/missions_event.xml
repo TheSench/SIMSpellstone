@@ -56643,9 +56643,9 @@
   </mission>
   <mission>
     <id>6787</id>
-    <name>Qutee Qued</name>
+    <name>Quetee Qued</name>
     <energy>18</energy>
-    <desc>You can spot Qutee Ques surrounding you as far as the eye can see. Why?!?! You yell at them, I helped you in the past and this is how you repay me? The creatures don't seem to care, it looks like you are about to get Qutee Qued.</desc>
+    <desc>You can spot Quetee Ques surrounding you as far as the eye can see. Why?!?! You yell at them, I helped you in the past and this is how you repay me? The creatures don't seem to care, it looks like you are about to get Qutee Qued.</desc>
     <commander id="309" />
     <deck>
       <card id="7108" name="Quetee" />
@@ -56789,7 +56789,7 @@
     <id>6793</id>
     <name>Revenge of the devs</name>
     <energy>1</energy>
-    <desc>More than revenge of the commons this seems like revenge of the devs am I right?.</desc>
+    <desc>More than revenge of the commons this seems like revenge of the devs am I right?</desc>
     <commander id="467" />
     <deck>
       <card id="1301" />
@@ -56813,7 +56813,7 @@
     <id>6794</id>
     <name>Greedy devs</name>
     <energy>1</energy>
-    <desc>Congratulations, I see you have fought your way to the final mission and that you are almost ready to claim your reward. I hope you understand that in the end we aren’t evil, JUST GREEDY MUAHAHAHAHA..</desc>
+    <desc>Congratulations, I see you have fought your way to the final mission and that you are almost ready to claim your reward. I hope you understand that in the end we are not evil, JUST GREEDY MUAHAHAHAHA.</desc>
     <commander id="466" />
     <deck>
       <card id="1002" />
@@ -56884,7 +56884,7 @@
     <id>6797</id>
     <name>In the heat of the moment</name>
     <energy>18</energy>
-    <desc>The employee calls security and they start ganging up on you. As a response to their aggression you continue to mock them and answer that they have no reason to get all fired up and that you are going to stay at the hotel wyvern whether they like it or not!</desc>
+    <desc>The employee calls security and they start ganging up on you. As a response to their aggression you continue to mock them and answer that they have no reason to get all fired up and that you are going to stay at the hotel wyvern they like it or not!</desc>
     <commander id="310" />
     <deck>
       <card id="5216" />
@@ -57004,7 +57004,7 @@
     <id>6802</id>
     <name>Under attack</name>
     <energy>18</energy>
-    <desc>You can see from your safe spot that a powerful but outnumbered dragon is defending her hatchling from a group of frog raiders. You decide to intervene to help out the dragon.</desc>
+    <desc>You can see from your safe spot that a powerful but outnumbered dragon is defending her hatchling from a group of frog raiders. You decide to intervene and help out the dragon.</desc>
     <commander id="293" />
     <deck>
       <card id="1336" />
@@ -57075,7 +57075,7 @@
     <id>6805</id>
     <name>Wrong time wrong place</name>
     <energy>18</energy>
-    <desc>The Dragon tells you that she could take a glimpse at their leader, she describes him as a small and chaotic frog. You realize that the dragon and hatchlings life could still be in danger and you decide to offer them a ride to someplace safer.</desc>
+    <desc>The Dragon tells you that she could take a glimpse at their leader, she describes him as a small and chaotic frog. You realize that the dragons lives could still be in danger and you decide to offer them a ride to someplace safer.</desc>
     <commander id="324" />
     <deck>
       <card id="1334" />
@@ -57122,8 +57122,8 @@
   <mission>
     <id>6807</id>
     <name>Vulcanos is back</name>
-    <energy>18</energy>
-    <desc>Vulcanos has surged with hoards of dragons by his side, banish him from these lands in order to reap the rewards.</desc>
+    <energy>7</energy>
+    <desc>Vulcanos has emerged with hoards of dragons by his side, banish him from these lands in order to reap the rewards.</desc>
     <commander id="468" />
     <deck>
       <card id="6133" name="Cress, Flamespeaker" />
@@ -57145,8 +57145,8 @@
   </mission>
   <mission>
     <id>6808</id>
-    <name>First hoard</name>
-    <energy>18</energy>
+    <name>First horde</name>
+    <energy>7</energy>
     <desc>You stand in front of his first hoard of dragons, they seem fast and deadly. Nothing you haven’t handled in the past though.</desc>
     <commander id="468" />
     <deck>
@@ -57169,8 +57169,8 @@
   </mission>
   <mission>
     <id>6809</id>
-    <name>Bigger and tougher</name>
-    <energy>18</energy>
+    <name>Bigger and Stronger</name>
+    <energy>7</energy>
     <desc>After defeating the first hoard, you can see a second set of dragons on the horizon. These seem like slower but much stronger dragons, you might have to change your strategy.</desc>
     <commander id="468" />
     <deck>
@@ -57193,8 +57193,8 @@
   </mission>
   <mission>
     <id>6810</id>
-    <name>Second wave</name>
-    <energy>18</energy>
+    <name>Second Wave</name>
+    <energy>7</energy>
     <desc>The wave of dragons attacks you, these seem to be even stronger than the previous ones. You don’t even want to imagine what Vulcanos could be preparing if you manage to survive.</desc>
     <commander id="468" />
     <deck>
@@ -57217,8 +57217,8 @@
   </mission>
   <mission>
     <id>6811</id>
-    <name>Red skies</name>
-    <energy>18</energy>
+    <name>Red Skies</name>
+    <energy>7</energy>
     <desc>You have successfully defeated the second wave, but before you can even claim victory you start seeing how the sky turns red with dragon fire raining on top of you.</desc>
     <commander id="468" />
     <deck>
@@ -57241,8 +57241,8 @@
   </mission>
   <mission>
     <id>6812</id>
-    <name>Final wave</name>
-    <energy>18</energy>
+    <name>Final Wave</name>
+    <energy>7</energy>
     <desc>You finally face the last wave of dragons, if you manage to defeat it Vulcanos will have been banished from these lands, at least for now.</desc>
     <commander id="468" />
     <deck>

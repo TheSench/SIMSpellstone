@@ -5650,13 +5650,46 @@ var CAMPAIGNS = {
 		],
 		"name": "One shell of a place"
 	},
-	"2999": {
-		"battleground_id": "546",
-		"id": "2999",
+	"1313": {
+		"id": "1313",
 		"items": {
-			"3128": 0.4
+			"3119": 0.6
 		},
-		"location_id": "26",
+		"location_id": "31",
+		"missions": [
+			"6795",
+			"6796",
+			"6797",
+			"6798",
+			"6799",
+			"6800"
+		],
+		"name": "Taking a break"
+	},
+	"1314": {
+		"battleground_id": "2019",
+		"id": "1314",
+		"items": {
+			"3119": 0.8
+		},
+		"location_id": "31",
+		"missions": [
+			"6801",
+			"6802",
+			"6803",
+			"6804",
+			"6805",
+			"6806"
+		],
+		"name": "Exploring Tarragon peak"
+	},
+	"1315": {
+		"battleground_id": "546",
+		"id": "1315",
+		"items": {
+			"3119": 0.4
+		},
+		"location_id": "31",
 		"missions": [
 			"6789",
 			"6790",
@@ -122868,7 +122901,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6787",
-		"name": "Qutee Qued"
+		"name": "Quetee Qued"
 	},
 	"6788": {
 		"commander": {
@@ -124121,7 +124154,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6808",
-		"name": "First hoard"
+		"name": "First horde"
 	},
 	"6809": {
 		"commander": {
@@ -124181,7 +124214,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6809",
-		"name": "Bigger and tougher"
+		"name": "Bigger and Stronger"
 	},
 	"6810": {
 		"commander": {
@@ -124241,7 +124274,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6810",
-		"name": "Second wave"
+		"name": "Second Wave"
 	},
 	"6811": {
 		"commander": {
@@ -124301,7 +124334,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6811",
-		"name": "Red skies"
+		"name": "Red Skies"
 	},
 	"6812": {
 		"commander": {
@@ -124361,6 +124394,6 @@ var MISSIONS = {
 			}
 		],
 		"id": "6812",
-		"name": "Final wave"
+		"name": "Final Wave"
 	}
 };

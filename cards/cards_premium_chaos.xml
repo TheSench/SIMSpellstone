@@ -7236,11 +7236,11 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -7254,7 +7254,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="fervor" x="5" y="9" />
+      <skill id="fervor" x="6" y="9" />
       <skill id="enfeeble" x="4" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
@@ -16775,7 +16775,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>9</attack>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -16790,7 +16790,7 @@
     <upgrade>
       <level>6</level>
       <skill id="evade" x="3" />
-      <skill id="enfeeble" x="2" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
       <skill id="strike" x="4" all="1" />
     </upgrade>
   </unit>
@@ -23127,18 +23127,18 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>33</health>
+      <health>34</health>
       <skill id="counterburn" x="4" />
       <skill id="enrage" x="3" all="1" y="9" />
       <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>34</health>
+      <health>37</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>35</health>
+      <health>38</health>
       <skill id="counterburn" x="4" />
       <skill id="enrage" x="3" all="1" y="9" />
       <skill id="leech" x="7" />
@@ -23159,43 +23159,42 @@
     <asset_bundle>122</asset_bundle>
     <hidden_until_time>1521133200</hidden_until_time>
     <attack>11</attack>
-    <health>35</health>
+    <health>39</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="counterburn" x="5" />
     <skill id="enrage" x="4" all="1" y="9" />
-    <skill id="leech" x="7" />
+    <skill id="leech" x="11" />
     <type>2</type>
     <sub_type>6</sub_type>
     <sub_type>9</sub_type>
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>36</health>
+      <health>41</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>37</health>
+      <health>42</health>
       <skill id="counterburn" x="5" />
       <skill id="enrage" x="4" all="1" y="9" />
-      <skill id="leech" x="8" />
+      <skill id="leech" x="11" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>12</attack>
+      <attack>15</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>38</health>
       <skill id="counterburn" x="6" />
       <skill id="enrage" x="4" all="1" y="9" />
-      <skill id="leech" x="8" />
+      <skill id="leech" x="15" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="counterburn" x="6" />
-      <skill id="enrage" x="5" all="1" y="9" />
-      <skill id="leech" x="9" />
+      <skill id="counterburn" x="7" />
+      <skill id="enrage" x="7" all="1" y="9" />
+      <skill id="leech" x="15" />
     </upgrade>
   </unit>
   <unit>
@@ -26270,11 +26269,11 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <attack>9</attack>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>19</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -38140,6 +38139,135 @@
       <skill id="stasis" x="7" />
       <skill id="fervor" x="9" y="2" />
       <skill id="burn" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6299</id>
+    <card_type>2</card_type>
+    <name>Tormenting Squad</name>
+    <picture>Dragon_Pseudodragons_A</picture>
+    <asset_bundle>244</asset_bundle>
+    <hidden_until_time>1649610000</hidden_until_time>
+    <attack>6</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16299</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tormenting Tyrants</name>
+    <picture>Dragon_Pseudodragons_A</picture>
+    <asset_bundle>244</asset_bundle>
+    <hidden_until_time>1649610000</hidden_until_time>
+    <attack>8</attack>
+    <health>27</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="strike" x="2" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26299</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tormenting Trio</name>
+    <picture>Dragon_Pseudodragons_B</picture>
+    <asset_bundle>244</asset_bundle>
+    <hidden_until_time>1649610000</hidden_until_time>
+    <attack>10</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="strike" x="3" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="4" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="4" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="strike" x="4" all="1" />
     </upgrade>
   </unit>
 </root>
