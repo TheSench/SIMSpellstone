@@ -3012,7 +3012,7 @@
     <rarity4scaling purchase1="150" purchase2="250" purchase3="400" purchase4="600" scalar="200" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
-    <!-- cycle length in seconds. Keep same per pack or may f*** everything -->
+    <!-- cycle length in seconds. Keep same per pack or may break everything -->
     <start_offset>61200</start_offset>
     <!-- offset from UTC in seconds -->
     <cards>

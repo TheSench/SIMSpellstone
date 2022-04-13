@@ -56838,7 +56838,7 @@
     <name>Small detour</name>
     <energy>18</energy>
     <desc>When sailing with your buddies you decide to take a break and re-supply at the hotel you once stayed at in Tarragon peak. You make a stop at the hotel and head towards the front desk.</desc>
-    <commander id="16" />
+    <commander id="468" />
     <deck>
       <card id="1334" />
       <card id="2124" />
@@ -57123,7 +57123,7 @@
     <id>6807</id>
     <name>Vulcanos is back</name>
     <energy>7</energy>
-    <desc>Vulcanos has emerged with hoards of dragons by his side, banish him from these lands in order to reap the rewards.</desc>
+    <desc>Vulcanos has emerged with thunders of dragons by its side, banish him from these lands in order to reap the rewards.</desc>
     <commander id="468" />
     <deck>
       <card id="6133" name="Cress, Flamespeaker" />
@@ -57145,9 +57145,9 @@
   </mission>
   <mission>
     <id>6808</id>
-    <name>First horde</name>
+    <name>First thunder</name>
     <energy>7</energy>
-    <desc>You stand in front of his first hoard of dragons, they seem fast and deadly. Nothing you haven’t handled in the past though.</desc>
+    <desc>You stand in front of the first thunder of dragons, they seem fast and deadly. Nothing you haven’t handled in the past though.</desc>
     <commander id="468" />
     <deck>
       <card id="7187" name="Forest Hydra" />
@@ -57171,7 +57171,7 @@
     <id>6809</id>
     <name>Bigger and Stronger</name>
     <energy>7</energy>
-    <desc>After defeating the first hoard, you can see a second set of dragons on the horizon. These seem like slower but much stronger dragons, you might have to change your strategy.</desc>
+    <desc>After defeating the first thunder, you can see a second set of dragons on the horizon. These seem like slower but much stronger dragons, you might have to change your strategy.</desc>
     <commander id="468" />
     <deck>
       <card id="7243" name="Moonscale Drake" />
@@ -57261,6 +57261,294 @@
       <card id="6133" mastery_level="5" name="Cress, Flamespeaker" />
       <card id="7282" mastery_level="6" name="Egg Keeper" />
       <card id="8130" mastery_level="7" name="Lack'thor" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6813</id>
+    <name>Ambushed at sea</name>
+    <energy>18</energy>
+    <desc>When traveling near the shores of Elaria, all of a sudden you can feel the ship being rammed. Screams are being heard all around. You have been ambushed!</desc>
+    <commander id="203" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="2219" name="Freya scout" />
+      <card id="2204" name="Halo slave" />
+      <card id="2204" name="Halo slave" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="2086" mastery_level="2" name="Rimelight crusader" />
+      <card id="7263" mastery_level="3" name="Cheggrub" />
+      <card id="5121" mastery_level="4" name="Cauterizing psalm" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="2205" mastery_level="6" name="Herald of judgment" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6814</id>
+    <name>All out war</name>
+    <energy>18</energy>
+    <desc>You head towards the deck and you can see fights happening everywhere. They mostly seem like random mercenaries but one of the enemies stands out, an infuriated angel flying while striking down everything in its path.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="2219" name="Freya scout" />
+      <card id="2204" name="Halo slave" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="7263" name="Cheggrub" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="1041" name="Avenging angel" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5121" mastery_level="4" name="Cauterizing psalm" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6815</id>
+    <name>Things just got worse</name>
+    <energy>18</energy>
+    <desc>You and your crew manage to repel the attack. Unfortunately, when you turn around you see Terragon lying down on the ground wounded. The worst part about it, the hatchling has been abducted.</desc>
+    <commander id="306" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="1041" name="Avenging angel" />
+      <card id="2204" name="Halo slave" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="7263" name="Cheggrub" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="1041" name="Avenging angel" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5184" mastery_level="4" name="Icy grimkite" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6816</id>
+    <name>I will find you</name>
+    <energy>18</energy>
+    <desc>Due to Terragon being wounded, you make a promise to her. You will go to Elaria and rescue her hatchling all by yourself.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="7263" name="Cheggrub" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="1041" name="Avenging angel" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5184" mastery_level="4" name="Icy grimkite" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6817</id>
+    <name>Tracker</name>
+    <energy>18</energy>
+    <desc>You disembark in Elaria and you can clearly see footsteps heading up a cliff, you decide to follow them until you find the abducters.</desc>
+    <commander id="365" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="2205" name="Herald of judgment" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="5098" name="Skybound united" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="5184" name="Icy grimkite" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5184" mastery_level="4" name="Icy grimkite" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6818</id>
+    <name>Toe to toe</name>
+    <energy>18</energy>
+    <desc>After heading up the cliff you realize the angel is standing beneath you. There is no backing out now. You fearlessly jump right in front of her and whisper "Halo there".</desc>
+    <commander id="407" />
+    <deck>
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5154" mastery_level="3" name="Glaucus" />
+      <card id="5076" mastery_level="4" name="Sorath, the Valkyrie" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6819</id>
+    <name>Capitulation</name>
+    <energy>18</energy>
+    <desc>A battle breaks out between you and the angel. You look her in the eyes and yell at her about abducting an innocent hatchling. Your words seem to have calmed her down since she stops fighting to lay down her weapons.</desc>
+    <commander id="203" />
+    <deck>
+      <card id="2141" name="Stormbreak beast" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5077" mastery_level="3" name="Evespark ace" />
+      <card id="5076" mastery_level="4" name="Sorath, the Valkyrie" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6820</id>
+    <name>ChampName</name>
+    <energy>18</energy>
+    <desc>The angel introduces herself as ChampName. She explains that she was deceived by the mercenaries, they said that you were raiders and they only had to steal something back.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="2141" name="Stormbreak beast" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5078" mastery_level="3" name="Asariel" />
+      <card id="5076" mastery_level="4" name="Sorath, the Valkyrie" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6821</id>
+    <name>Together we go</name>
+    <energy>18</energy>
+    <desc>ChampName decides to join you in rescuing the hatchling. Fortunately she knows where the mercenaries stay and you head over there together.</desc>
+    <commander id="306" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5078" mastery_level="3" name="Asariel" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6822</id>
+    <name>Payback time</name>
+    <energy>18</energy>
+    <desc>You find the mercenary base and you can see how they locked the hatchling in a cage. NombreDelChamp can barely hold her anger for a split second before she enters in a rage frenzy and starts taking out all of the mercenaries.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5078" name="Asariel" />
+      <card id="5078" name="Asariel" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5078" mastery_level="3" name="Asariel" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6823</id>
+    <name>Back in loving arms</name>
+    <energy>18</energy>
+    <desc>After rescuing the hatchling, you head back towards the ship and reunite with Terragon.</desc>
+    <commander id="365" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5154" name="Glaucus" />
+      <card id="6181" name="Fearlord xerthis" />
+      <card id="5077" mastery_level="2" name="Evespark ace" />
+      <card id="7265" mastery_level="3" name="Halo-Weaver Huntress" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6184" mastery_level="5" name="Thundering hellwing" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6824</id>
+    <name>New Destination</name>
+    <energy>18</energy>
+    <desc>Terragon notices NombreDelChamp is an angel and remembers that the frogs that tried to hurt her back in Tarragons peak mentioned Skyhaven. Realizing they could be headed there next, you decide not to go directly since you could be being followed. But where could you go?</desc>
+    <commander id="407" />
+    <deck>
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="6184" name="Thundering hellwing" />
+      <card id="5078" name="Asariel" />
+      <card id="5078" name="Asariel" />
+      <card id="6100" mastery_level="2" name="Tiamat" />
+      <card id="5217" mastery_level="3" name="Azazreal" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6184" mastery_level="5" name="Thundering hellwing" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
     </deck>
   </mission>
 </root>

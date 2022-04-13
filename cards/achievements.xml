@@ -17286,9 +17286,9 @@
       <level>1</level>
     </req>
     <reward>
-      <item id="3119" number="50" />
+      <item id="3107" number="50" />
       <!-- Expediton Item -->
-      <event_points id="7084" number="50" />
+      <event_points id="7085" number="50" />
       <!-- Expediton ID -->
     </reward>
   </achievement>
@@ -17397,6 +17397,139 @@
     <achievement_req>3779</achievement_req>
     <req>
       <campaign>1314</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 89 - Angel - Node 1 -->
+  <achievement>
+    <id>3781</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abduction</name>
+    <desc>Complete the 'The Abduction' campaign on Mastery Level 1.</desc>
+    <mission_req>6813</mission_req>
+    <locked_start_time>1651165200</locked_start_time>
+    <!-- Thursday, 28 April 2022 17:00:00  -->
+    <req>
+      <campaign>1316</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3119" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7084" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3782</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abduction</name>
+    <desc>Complete the 'The Abduction' campaign on Mastery Level 2.</desc>
+    <mission_req>6813</mission_req>
+    <locked_start_time>1651165200</locked_start_time>
+    <!-- Thursday, 28 April 2022 17:00:00  -->
+    <achievement_req>3781</achievement_req>
+    <req>
+      <campaign>1316</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3783</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abduction</name>
+    <desc>Complete the 'The Abduction' campaign on Mastery Level 4.</desc>
+    <mission_req>6813</mission_req>
+    <locked_start_time>1651165200</locked_start_time>
+    <!-- Thursday, 28 April 2022 17:00:00  -->
+    <achievement_req>3782</achievement_req>
+    <req>
+      <campaign>1316</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3784</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abduction</name>
+    <desc>Complete the 'The Abduction' campaign on Mastery Level 6.</desc>
+    <mission_req>6813</mission_req>
+    <locked_start_time>1651165200</locked_start_time>
+    <!-- Thursday, 28 April 2022 17:00:00  -->
+    <achievement_req>3783</achievement_req>
+    <req>
+      <campaign>1316</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 89 - Angel - Node 2 -->
+  <achievement>
+    <id>3785</id>
+    <type>2</type>
+    <order>101</order>
+    <name>On the hunt</name>
+    <desc>Complete the 'On the hunt' campaign on Mastery Level 2.</desc>
+    <mission_req>6819</mission_req>
+    <locked_start_time>1652374800</locked_start_time>
+    <!-- Thursday, May 12, 2022 17:00:00 -->
+    <req>
+      <campaign>1317</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3786</id>
+    <type>2</type>
+    <order>101</order>
+    <name>On the hunt</name>
+    <desc>Complete the 'On the hunt' campaign on Mastery Level 4.</desc>
+    <mission_req>6819</mission_req>
+    <locked_start_time>1652374800</locked_start_time>
+    <!-- Thursday, May 12, 2022 17:00:00 -->
+    <achievement_req>3785</achievement_req>
+    <req>
+      <campaign>1317</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3787</id>
+    <type>2</type>
+    <order>101</order>
+    <name>On the hunt</name>
+    <desc>Complete the 'On the hunt' campaign on Mastery Level 6.</desc>
+    <mission_req>6819</mission_req>
+    <locked_start_time>1652374800</locked_start_time>
+    <!-- Thursday, May 12, 2022 17:00:00 -->
+    <achievement_req>3786</achievement_req>
+    <req>
+      <campaign>1317</campaign>
       <level>6</level>
     </req>
     <reward>

@@ -1113,6 +1113,32 @@
       <add_skill id="regenerate" mult="0.15" x="4" base="health" y="9" delay="3,4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>150</id>
+    <name>Exalted Warfare</name>
+    <desc>Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base health!</desc>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <effect>
+      <add_skill id="legion" mult="0.10" base="health" y="6" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
+        <projectile_effect>
+          <prefab>Legion_Projectile</prefab>
+          <delay>0</delay>
+          <duration>.5</duration>
+          <translation>.5</translation>
+          <offset>2</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>Legion_Angel_Target</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <add_skill id="fervor" mult="0.10" base="health" y="6" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

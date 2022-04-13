@@ -1563,6 +1563,27 @@ var BATTLEGROUNDS = {
 		"id": "149",
 		"name": "Zenith of Dragons"
 	},
+	"150": {
+		"desc": "Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base health!",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "legion",
+				"mult": 0.1,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "fervor",
+				"mult": 0.1,
+				"y": "6"
+			}
+		],
+		"id": "150",
+		"name": "Exalted Warfare"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
