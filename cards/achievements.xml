@@ -17419,9 +17419,9 @@
       <level>1</level>
     </req>
     <reward>
-      <item id="3119" number="50" />
+      <item id="3107" number="50" />
       <!-- Expediton Item -->
-      <event_points id="7084" number="50" />
+      <event_points id="7085" number="50" />
       <!-- Expediton ID -->
     </reward>
   </achievement>

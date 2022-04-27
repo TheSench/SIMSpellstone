@@ -3102,6 +3102,235 @@ var BATTLEGROUNDS = {
 		"id": "556",
 		"name": "Detonation Clash"
 	},
+	"557": {
+		"desc": "All Epic cards have their Attack, Health, and all Skills multiplied by 2! Freeze and Dualstrike are not affected.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 1,
+				"z": "3"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1,
+				"rarity": 3
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "armored",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "counter",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "evade",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "leech",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "pierce",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "burn",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "poison",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "heal",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "strike",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "weaken",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "protect",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "rally",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "berserk",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "absorb",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "counterburn",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "enrage",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "regenerate",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "valor",
+				"z": "3"
+			}
+		],
+		"id": "557",
+		"name": "Epic Madness"
+	},
+	"558": {
+		"desc": "Armor is increased by 22",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"x": 22
+			}
+		],
+		"id": "558",
+		"name": "Enhanced Armor"
+	},
+	"559": {
+		"desc": "All cards gain Poison 99",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "poison",
+				"x": 99
+			}
+		],
+		"id": "559",
+		"name": "Touch of Death"
+	},
+	"560": {
+		"desc": "All cards gain Ward 22.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 22
+			}
+		],
+		"id": "560",
+		"name": "Improved Sigils"
+	},
+	"561": {
+		"desc": "All cards gain Daze 10",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "daze",
+				"x": 10
+			}
+		],
+		"id": "561",
+		"name": "Stunning Attacks"
+	},
+	"562": {
+		"desc": "All cards gain Valor 15",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "valor",
+				"x": 15
+			}
+		],
+		"id": "562",
+		"name": "Stubborn Ferocity"
+	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
 		"effect": [

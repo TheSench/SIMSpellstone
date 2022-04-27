@@ -1872,7 +1872,7 @@
     </effect>
   </battleground>
   <battleground>
-    <!--REVISAR  TODOO -->
+    <!--CHECK EVERYTHING -->
     <id>549</id>
     <name>Unlife Clash</name>
     <desc>When a card dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the unit that died. The token has Invisibility and Berserk values based on its rarity.</desc>
@@ -2004,6 +2004,86 @@
           <shake>true</shake>
         </target_effect>
       </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>557</id>
+    <name>Epic Madness</name>
+    <desc>All Epic cards have their Attack, Health, and all Skills multiplied by 2! Freeze and Dualstrike are not affected.</desc>
+    <icon>Common_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enlarge" mult="1" all="1" z="3" />
+      <!-- mult is based on attack -->
+      <scale_health base="health" mult="1" rarity="3" />
+      <skill id="enhance" s="armored" z="3" mult="1" all="1" />
+      <skill id="enhance" s="counter" z="3" mult="1" all="1" />
+      <skill id="enhance" s="evade" z="3" mult="1" all="1" />
+      <skill id="enhance" s="leech" z="3" mult="1" all="1" />
+      <skill id="enhance" s="pierce" z="3" mult="1" all="1" />
+      <skill id="enhance" s="burn" z="3" mult="1" all="1" />
+      <skill id="enhance" s="poison" z="3" mult="1" all="1" />
+      <skill id="enhance" s="heal" z="3" mult="1" all="1" />
+      <skill id="enhance" s="strike" z="3" mult="1" all="1" />
+      <skill id="enhance" s="weaken" z="3" mult="1" all="1" />
+      <skill id="enhance" s="protect" z="3" mult="1" all="1" />
+      <skill id="enhance" s="rally" z="3" mult="1" all="1" />
+      <skill id="enhance" s="berserk" z="3" mult="1" all="1" />
+      <skill id="enhance" s="absorb" z="3" mult="1" all="1" />
+      <skill id="enhance" s="counterburn" z="3" mult="1" all="1" />
+      <skill id="enhance" s="enrage" z="3" mult="1" all="1" />
+      <skill id="enhance" s="regenerate" z="3" mult="1" all="1" />
+      <skill id="enhance" s="valor" z="3" mult="1" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>558</id>
+    <name>Enhanced Armor</name>
+    <desc>Armor is increased by 22</desc>
+    <icon>armor_BGE_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <effect>
+      <add_skill id="armored" x="22" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>559</id>
+    <name>Touch of Death</name>
+    <desc>All cards gain Poison 99</desc>
+    <icon>Poison_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="poison" x="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>560</id>
+    <name>Improved Sigils</name>
+    <desc>All cards gain Ward 22.</desc>
+    <icon>Ward99_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="absorb" x="22" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>561</id>
+    <name>Stunning Attacks</name>
+    <desc>All cards gain Daze 10</desc>
+    <icon>Weaken_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="daze" x="10" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>562</id>
+    <name>Stubborn Ferocity</name>
+    <desc>All cards gain Valor 15</desc>
+    <icon>Berserk_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="valor" x="15" all="1" />
     </effect>
   </battleground>
   <!-- ============================= -->

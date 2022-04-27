@@ -57412,7 +57412,7 @@
     <name>Capitulation</name>
     <energy>18</energy>
     <desc>A battle breaks out between you and the angel. You look her in the eyes and yell at her about abducting an innocent hatchling. Your words seem to have calmed her down since she stops fighting to lay down her weapons.</desc>
-    <commander id="203" />
+    <commander id="273" />
     <deck>
       <card id="2141" name="Stormbreak beast" />
       <card id="7265" name="Halo-Weaver Huntress" />
@@ -57433,9 +57433,9 @@
   </mission>
   <mission>
     <id>6820</id>
-    <name>ChampName</name>
+    <name>Alyel</name>
     <energy>18</energy>
-    <desc>The angel introduces herself as ChampName. She explains that she was deceived by the mercenaries, they said that you were raiders and they only had to steal something back.</desc>
+    <desc>The angel introduces herself as Alyel. She explains that she was deceived by the mercenaries, they said that you were raiders and they only had to steal something back.</desc>
     <commander id="273" />
     <deck>
       <card id="2141" name="Stormbreak beast" />
@@ -57459,7 +57459,7 @@
     <id>6821</id>
     <name>Together we go</name>
     <energy>18</energy>
-    <desc>ChampName decides to join you in rescuing the hatchling. Fortunately she knows where the mercenaries stay and you head over there together.</desc>
+    <desc>Alyel decides to join you in rescuing the hatchling. Fortunately she knows where the mercenaries stay and you head over there together.</desc>
     <commander id="306" />
     <deck>
       <card id="5076" name="Sorath, the Valkyrie" />
@@ -57483,7 +57483,7 @@
     <id>6822</id>
     <name>Payback time</name>
     <energy>18</energy>
-    <desc>You find the mercenary base and you can see how they locked the hatchling in a cage. NombreDelChamp can barely hold her anger for a split second before she enters in a rage frenzy and starts taking out all of the mercenaries.</desc>
+    <desc>You find the mercenary base and you can see how they locked the hatchling in a cage. Alyel can barely hold her anger for a split second before she enters in a rage frenzy and starts taking out all of the mercenaries.</desc>
     <commander id="277" />
     <deck>
       <card id="5076" name="Sorath, the Valkyrie" />
@@ -57531,7 +57531,7 @@
     <id>6824</id>
     <name>New Destination</name>
     <energy>18</energy>
-    <desc>Terragon notices NombreDelChamp is an angel and remembers that the frogs that tried to hurt her back in Tarragons peak mentioned Skyhaven. Realizing they could be headed there next, you decide not to go directly since you could be being followed. But where could you go?</desc>
+    <desc>Terragon notices Alyel is an angel and remembers that the frogs that tried to hurt her back in Tarragons peak mentioned Skyhaven. Realizing they could be headed there next, you decide not to go directly since you could be being followed. But where could you go?</desc>
     <commander id="407" />
     <deck>
       <card id="2220" name="Frozenbolt adept" />
@@ -57549,6 +57549,150 @@
       <card id="6184" mastery_level="5" name="Thundering hellwing" />
       <card id="6100" mastery_level="6" name="Tiamat" />
       <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6825</id>
+    <name>A challenger rises</name>
+    <energy>18</energy>
+    <desc>Look who comes around, another filthy adventurer who believes they can defeat me. I would like to see you try.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="1041" name="Vindication angel" />
+      <card id="2028" name="Diverging Infinity" />
+      <card id="5031" name="Icelane Valkyrie" />
+      <card id="1041" name="Vindication angel" />
+      <card id="2205" name="Herald of Apocalypse" />
+      <card id="6181" name="Terrorlord Xerthis" />
+      <card id="7199" name="Celesti Aberration" />
+      <card id="7178" name="Oxylus" />
+      <card id="5038" name="Celestial Queen" />
+      <card id="5217" mastery_level="2" name="Azazreal" />
+      <card id="6181" mastery_level="3" name="Terrorlord Xerthis" />
+      <card id="6181" mastery_level="4" name="Terrorlord Xerthis" />
+      <card id="8124" mastery_level="5" name="Unfounded revenge" />
+      <card id="2205" mastery_level="6" name="Herald of Apocalypse" />
+      <card id="6294" mastery_level="7" name="Unchained Seraphim" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6826</id>
+    <name>Stronger than you look</name>
+    <energy>18</energy>
+    <desc>You survived huh? I see you are not as weak as you look. Although to be fair, I was only just getting started.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="1041" name="Vindication angel" />
+      <card id="2205" name="Herald of Apocalypse" />
+      <card id="2205" name="Herald of Apocalypse" />
+      <card id="6181" name="Terrorlord Xerthis" />
+      <card id="6181" name="Terrorlord Xerthis" />
+      <card id="7199" name="Celesti Aberration" />
+      <card id="7199" name="Celesti Aberration" />
+      <card id="5038" name="Celestial Queen" />
+      <card id="5038" name="Celestial Queen" />
+      <card id="2220" mastery_level="2" name="Frozenbolt chosen" />
+      <card id="2220" mastery_level="3" name="Frozenbolt chosen" />
+      <card id="2220" mastery_level="4" name="Frozenbolt chosen" />
+      <card id="8049" mastery_level="5" name="Spirit of the free" />
+      <card id="7178" mastery_level="6" name="Oxylus" />
+      <card id="7178" mastery_level="7" name="Oxylus" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6827</id>
+    <name>Wall of pain</name>
+    <energy>18</energy>
+    <desc>I have had enough of you already. I have unchained a little surprise.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="6294" name="Unchained Seraphim" />
+      <card id="6294" name="Unchained Seraphim" />
+      <card id="6294" name="Unchained Seraphim" />
+      <card id="6294" name="Unchained Seraphim" />
+      <card id="1041" name="Vindication angel" />
+      <card id="2205" name="Herald of Apocalypse" />
+      <card id="2205" name="Herald of Apocalypse" />
+      <card id="6220" name="Gobtoh Ascended" />
+      <card id="5038" name="Celestial Queen" />
+      <card id="7178" mastery_level="2" name="Oxylus" />
+      <card id="5031" mastery_level="3" name="Icelane Valkyrie" />
+      <card id="2220" mastery_level="4" name="Frozenbolt chosen" />
+      <card id="8124" mastery_level="5" name="Unfounded revenge" />
+      <card id="6294" mastery_level="6" name="Unchained Seraphim" />
+      <card id="6294" mastery_level="7" name="Unchained Seraphim" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6828</id>
+    <name>One day I shall return</name>
+    <energy>18</energy>
+    <desc>Leave while you still can, adventurer, I have been expelled from my home once and I will not let it happen again.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="7297" name="Possesed Casserpent" />
+      <card id="7297" name="Possesed Casserpent" />
+      <card id="6120" name="Oni shogun" />
+      <card id="6120" name="Oni shogun" />
+      <card id="2086" name="Rimelight Corsair" />
+      <card id="2086" name="Rimelight Corsair" />
+      <card id="5136" name="Lapis" />
+      <card id="2220" name="Frozenbolt chosen" />
+      <card id="2220" name="Frozenbolt chosen" />
+      <card id="5136" mastery_level="2" name="8049" />
+      <card id="1041" mastery_level="3" name="Vindication angel" />
+      <card id="7297" mastery_level="4" name="Possesed Casserpent" />
+      <card id="8049" mastery_level="5" name="Spirit of the free" />
+      <card id="6120" mastery_level="6" name="Oni shogun" />
+      <card id="5031" mastery_level="7" name="Icelane Valkyrie" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6829</id>
+    <name>Birthright</name>
+    <energy>18</energy>
+    <desc>It was my chaotic nature together with my sister's betrayal that made me lose my birthright. Yet it is also that same nature makes me stronger than her… and you.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="1041" name="Vindication angel" />
+      <card id="1041" name="Vindication angel" />
+      <card id="2086" name="Rimelight Corsair" />
+      <card id="7297" name="Possesed Casserpent" />
+      <card id="6120" name="Oni shogun" />
+      <card id="5031" name="Icelane Valkyrie" />
+      <card id="6220" name="Gobtoh Ascended" />
+      <card id="6263" name="Erinye" />
+      <card id="2028" name="Diverging Infinity" />
+      <card id="5031" mastery_level="2" name="Icelane Valkyrie" />
+      <card id="7297" mastery_level="3" name="Possesed Casserpent" />
+      <card id="6074" mastery_level="4" name="Celestial Channeler" />
+      <card id="8127" mastery_level="5" name="Fallen gladiator" />
+      <card id="2086" mastery_level="6" name="Rimelight Corsair" />
+      <card id="6294" mastery_level="7" name="Unchained Seraphim" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6830</id>
+    <name>Rush of fury</name>
+    <energy>18</energy>
+    <desc>I know to acknowledge a good warrior when I see one. Although to prove yourself worthy, you must defeat the rush of fury.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="1041" name="Vindication angel" />
+      <card id="1041" name="Vindication angel" />
+      <card id="1041" name="Vindication angel" />
+      <card id="5217" name="Azazreal" />
+      <card id="5217" name="Azazreal" />
+      <card id="6220" name="Gobtoh Ascended" />
+      <card id="6220" name="Gobtoh Ascended" />
+      <card id="5031" name="Icelane Valkyrie" />
+      <card id="6263" name="Erinye" />
+      <card id="1041" mastery_level="2" name="Vindication angel" />
+      <card id="1041" mastery_level="3" name="Vindication angel" />
+      <card id="5031" mastery_level="4" name="Icelane Valkyrie" />
+      <card id="8127" mastery_level="5" name="Fallen gladiator" />
+      <card id="1041" mastery_level="6" name="Vindication angel" />
+      <card id="5031" mastery_level="7" name="Icelane Valkyrie" />
     </deck>
   </mission>
 </root>

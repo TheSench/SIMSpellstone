@@ -12055,7 +12055,7 @@
     <desc>Dad jokes make me laugh i think they are splendid, I hope you like puns they are always intended.</desc>
   </unit>
   <!-- April Fools 2022 commanders END -->
-  <!-- Lightning boss node - Event 1 -->
+  <!-- Lightning boss node - Event 88 Dragons -->
   <unit>
     <id>468</id>
     <card_type>1</card_type>
@@ -12067,7 +12067,7 @@
     <skill id="barrage" x="3" />
     <skill id="enfeeble" all="1" x="2" />
     <skill id="strike" all="1" x="2" />
-    <type>3</type>
+    <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -12098,5 +12098,50 @@
       <skill id="strike" all="1" x="6" />
     </upgrade>
   </unit>
+  <!-- Lightning boss node - Event 89 Angels -->
+  <!-- 
+  <unit>
+    <id>469</id>
+    <card_type>1</card_type>
+    <name>Lightning Boss Alyel</name>
+    <portrait>Portrait_RighteousBerserker</portrait>
+    <attack>0</attack>
+    <health>75</health>
+    <rarity>3</rarity>
+    <skill id='barrage' x='3' />
+    <skill id='enfeeble' all='1' x='2' />
+    <skill id='strike' all='1' x='2' />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>80</health>
+      <skill id='barrage' x='4' />
+      <skill id='enfeeble' all='1' x='3' />
+      <skill id='strike' all='1' x='3' />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>85</health>
+      <skill id='barrage' x='4' />
+      <skill id='enfeeble' all='1' x='4' />
+      <skill id='strike' all='1' x='4' />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>90</health>
+      <skill id='barrage' x='5' />
+      <skill id='enfeeble' all='1' x='5' />
+      <skill id='strike' all='1' x='5' />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>95</health>
+      <skill id='barrage' x='6' />
+      <skill id='enfeeble' all='1' x='6' />
+      <skill id='strike' all='1' x='6' />
+    </upgrade>
+  </unit>
+  -->
 </root>
 

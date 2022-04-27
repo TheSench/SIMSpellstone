@@ -181,75 +181,75 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>1</type>
     <sub_type>6</sub_type>
-    <attack>5</attack>
-    <health>17</health>
+    <attack>6</attack>
+    <health>20</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="armored" x="3" />
-    <skill id="rally" x="5" y="6" />
+    <skill id="rally" x="7" y="6" />
     <skill id="legion" x="3" />
     <upgrade>
       <level>2</level>
-      <attack>6</attack>
-      <health>18</health>
+      <attack>7</attack>
+      <health>21</health>
       <skill id="armored" x="3" />
-      <skill id="rally" x="6" y="6" />
+      <skill id="rally" x="8" y="6" />
       <skill id="legion" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
+      <attack>8</attack>
       <skill id="armored" x="3" />
-      <skill id="rally" x="7" y="6" />
+      <skill id="rally" x="9" y="6" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>19</health>
+      <health>22</health>
       <skill id="armored" x="4" />
-      <skill id="rally" x="7" y="6" />
+      <skill id="rally" x="9" y="6" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>8</attack>
+      <attack>9</attack>
       <skill id="armored" x="4" />
-      <skill id="rally" x="8" y="6" />
+      <skill id="rally" x="10" y="6" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>20</health>
+      <health>23</health>
       <skill id="armored" x="5" />
-      <skill id="rally" x="8" y="6" />
+      <skill id="rally" x="10" y="6" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <attack>9</attack>
+      <attack>10</attack>
       <skill id="armored" x="5" />
-      <skill id="rally" x="9" y="6" />
+      <skill id="rally" x="11" y="6" />
       <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>21</health>
+      <health>24</health>
       <skill id="armored" x="6" />
-      <skill id="rally" x="9" y="6" />
+      <skill id="rally" x="11" y="6" />
       <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>22</health>
+      <health>25</health>
       <skill id="armored" x="6" />
-      <skill id="rally" x="9" y="6" />
+      <skill id="rally" x="11" y="6" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>10</attack>
+      <attack>11</attack>
       <skill id="armored" x="6" />
-      <skill id="rally" x="10" y="6" />
+      <skill id="rally" x="12" y="6" />
       <skill id="legion" x="6" />
     </upgrade>
   </unit>
@@ -4895,6 +4895,80 @@
       <skill id="poison" x="12" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4058</id>
+    <card_type>2</card_type>
+    <name>Alyel, Rush of Fury</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Angel_Righteous_Berserker_A</picture>
+    <asset_bundle>246</asset_bundle>
+    <item_name>Alyel Stone</item_name>
+    <item_desc>Collect Alyel Stones to upgrade the Alyel, Rush of Fury!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <attack>3</attack>
+    <health>17</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="berserk" x="2" />
+    <skill id="flurry" c="5" />
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="3" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <skill id="evade" x="3" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>20</health>
+      <skill id="evade" x="3" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>6</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="evade" x="4" />
+      <skill id="berserk" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -9207,6 +9281,92 @@
       <skill id="stasis" x="7" />
       <skill id="enfeeble" x="7" all="1" />
       <skill id="enrage" x="10" all="1" y="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6620</id>
+    <card_type>2</card_type>
+    <name>Abbadon, the Vicious</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Angel_Dragon_Dragon_Paragon_A</picture>
+    <asset_bundle>246</asset_bundle>
+    <hidden_until_time>1651165200</hidden_until_time>
+    <!--Thursday, 28 April 2022 17:00:00	 -->
+    <item_name>Abbadon Stone</item_name>
+    <item_desc>Collect Abbadon Stones to upgrade the Legendary Abbadon, the Vicious card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>9</sub_type>
+    <attack>3</attack>
+    <health>21</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="7" />
+    <skill id="rally" x="7" y="9" />
+    <skill id="leech" x="10" />
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <skill id="valor" x="8" />
+      <skill id="rally" x="7" y="9" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <skill id="valor" x="8" />
+      <skill id="rally" x="8" y="9" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="9" />
+      <skill id="rally" x="8" y="9" />
+      <skill id="leech" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <level>4</level>
+      <skill id="valor" x="9" />
+      <skill id="rally" x="9" y="9" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+      <skill id="valor" x="10" />
+      <skill id="rally" x="9" y="9" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="valor" x="10" />
+      <skill id="rally" x="10" y="9" />
+      <skill id="leech" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="valor" x="10" />
+      <skill id="rally" x="11" y="9" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>25</health>
+      <skill id="valor" x="11" />
+      <skill id="rally" x="11" y="9" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="valor" x="11" />
+      <skill id="rally" x="12" y="9" />
+      <skill id="leech" x="15" />
     </upgrade>
   </unit>
   <!-- === CHAOS END === -->

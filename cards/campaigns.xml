@@ -11081,12 +11081,10 @@
   <campaign>
     <id>1316</id>
     <name>The Abduction</name>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1317" level="1" />
-    <!-- Remove this its a deadlock -->
     <campaign_req id="6" level="1" />
+    <locked_start_time>1651165200</locked_start_time>
+    <!-- Thursday, 28 April 2022 17:00:00 -->
     <location_id>27</location_id>
     <x>390</x>
     <!-- left right -->
@@ -11109,9 +11107,9 @@
       <!-- Elaria Holy Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2228" />
+      <card level="4" id="2230" />
       <!-- Epic Reward A (New) -->
-      <card level="5" id="2197" />
+      <card level="5" id="2177" />
       <!-- Epic Reward B (Old) -->
       <item level="6" id="2640" number="75" />
       /&gt;
@@ -11126,10 +11124,10 @@
   <campaign>
     <id>1317</id>
     <name>On the hunt</name>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1316" level="1" />
+    <locked_start_time>1652374800</locked_start_time>
+    <!-- Thursday, 12 May 2022 17:00:00 -->
     <battleground_id>2019</battleground_id>
     <location_id>27</location_id>
     <x>835</x>
@@ -11153,9 +11151,9 @@
       <!-- Elaria Holy Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2123" />
+      <card level="4" id="2219" />
       <!-- Epic Reward C (Old) -->
-      <card level="5" id="2141" />
+      <card level="5" id="2052" />
       <!-- Epic Reward D (Old) -->
       <item level="6" id="2640" number="75" />
       /&gt;
