@@ -1118,7 +1118,7 @@ var RUNES = {
 	},
 	"5501": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Angels. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Angels. May not be crafted.",
 		"faction_req": "6",
 		"icon": "rune_health_epic",
 		"id": "5501",
@@ -1126,13 +1126,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5502": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Elementals. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Elementals. May not be crafted.",
 		"faction_req": "5",
 		"icon": "rune_health_epic",
 		"id": "5502",
@@ -1140,13 +1140,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5503": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Undead. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Undead. May not be crafted.",
 		"faction_req": "7",
 		"icon": "rune_health_epic",
 		"id": "5503",
@@ -1154,13 +1154,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5504": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Goblins. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Goblins. May not be crafted.",
 		"faction_req": "11",
 		"icon": "rune_health_epic",
 		"id": "5504",
@@ -1168,13 +1168,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5505": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Dragons. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Dragons. May not be crafted.",
 		"faction_req": "9",
 		"icon": "rune_health_epic",
 		"id": "5505",
@@ -1182,13 +1182,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5506": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Seafolk. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Seafolk. May not be crafted.",
 		"faction_req": "12",
 		"icon": "rune_health_epic",
 		"id": "5506",
@@ -1196,13 +1196,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5507": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Avian. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Avian. May not be crafted.",
 		"faction_req": "10",
 		"icon": "rune_health_epic",
 		"id": "5507",
@@ -1210,13 +1210,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5508": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Frogs. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Frogs. May not be crafted.",
 		"faction_req": "4",
 		"icon": "rune_health_epic",
 		"id": "5508",
@@ -1224,13 +1224,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5509": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Mecha. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Mecha. May not be crafted.",
 		"faction_req": "16",
 		"icon": "rune_health_epic",
 		"id": "5509",
@@ -1238,13 +1238,13 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	},
 	"5510": {
 		"category": "3",
-		"desc": "Health +8. May only be embedded on Insect. May not be crafted.",
+		"desc": "Health +10. May only be embedded on Insect. May not be crafted.",
 		"faction_req": "13",
 		"icon": "rune_health_epic",
 		"id": "5510",
@@ -1252,7 +1252,7 @@ var RUNES = {
 		"rarity": 3,
 		"set": "2",
 		"stat_boost": {
-			"health": 8
+			"health": 10
 		},
 		"type": "3"
 	}

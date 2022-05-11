@@ -665,10 +665,10 @@
     <hc_cost>1000</hc_cost>
     <card_pack>
       <pulls>1</pulls>
-      <card id="2025" level="1" weight=".3" />
-      <card id="2060" level="1" weight=".3" />
-      <card id="2024" level="1" weight=".3" />
-      <card id="2059" level="1" weight=".3" />
+      <card id="2025" level="1" weight="0.3" />
+      <card id="2060" level="1" weight="0.3" />
+      <card id="2024" level="1" weight="0.3" />
+      <card id="2059" level="1" weight="0.3" />
     </card_pack>
   </store_item>
   <!-- Legacy Packs -->
@@ -848,10 +848,10 @@
     <icon_bundle>17</icon_bundle>
     <drop_key>
       <drop_rarity id="1" name="1" color="^cFFFF" weight="1" />
-      <drop_rarity id="2" name="2" color="^c8E5F" weight=".6" />
-      <drop_rarity id="3" name="3" color="^c0DFF" weight=".4" />
-      <drop_rarity id="4" name="4" color="^cE7FF" weight=".2" />
-      <drop_rarity id="5" name="5" color="^cF90F" weight=".1" />
+      <drop_rarity id="2" name="2" color="^c8E5F" weight="0.6" />
+      <drop_rarity id="3" name="3" color="^c0DFF" weight="0.4" />
+      <drop_rarity id="4" name="4" color="^cE7FF" weight="0.2" />
+      <drop_rarity id="5" name="5" color="^cF90F" weight="0.1" />
     </drop_key>
     <item_pack>
       <pulls>1</pulls>
@@ -859,20 +859,20 @@
       <item id="4001" quantity="2" weight="1" drop_rarity="1" />
       <item id="2001" quantity="15" weight="1" drop_rarity="1" />
       <item id="2501" quantity="40" weight="1" drop_rarity="1" />
-      <item id="4012" quantity="1" weight=".5" drop_rarity="2" />
-      <item id="4001" quantity="3" weight=".5" drop_rarity="2" />
-      <item id="2001" quantity="20" weight=".5" drop_rarity="2" />
-      <item id="2501" quantity="50" weight=".5" drop_rarity="2" />
-      <item id="4013" quantity="1" weight=".3" drop_rarity="3" />
-      <item id="4011" quantity="2" weight=".1" drop_rarity="3" />
-      <item id="4001" quantity="4" weight=".4" drop_rarity="3" />
-      <item id="2001" quantity="25" weight=".3" drop_rarity="3" />
-      <item id="4001" quantity="5" weight=".2" drop_rarity="4" />
-      <item id="2501" quantity="60" weight=".3" drop_rarity="4" />
-      <item id="4012" quantity="2" weight=".05" drop_rarity="5" />
-      <item id="4001" quantity="10" weight=".1" drop_rarity="5" />
-      <item id="2001" quantity="50" weight=".1" drop_rarity="5" />
-      <item id="2501" quantity="80" weight=".1" drop_rarity="5" />
+      <item id="4012" quantity="1" weight="0.5" drop_rarity="2" />
+      <item id="4001" quantity="3" weight="0.5" drop_rarity="2" />
+      <item id="2001" quantity="20" weight="0.5" drop_rarity="2" />
+      <item id="2501" quantity="50" weight="0.5" drop_rarity="2" />
+      <item id="4013" quantity="1" weight="0.3" drop_rarity="3" />
+      <item id="4011" quantity="2" weight="0.1" drop_rarity="3" />
+      <item id="4001" quantity="4" weight="0.4" drop_rarity="3" />
+      <item id="2001" quantity="25" weight="0.3" drop_rarity="3" />
+      <item id="4001" quantity="5" weight="0.2" drop_rarity="4" />
+      <item id="2501" quantity="60" weight="0.3" drop_rarity="4" />
+      <item id="4012" quantity="2" weight="0.05" drop_rarity="5" />
+      <item id="4001" quantity="10" weight="0.1" drop_rarity="5" />
+      <item id="2001" quantity="50" weight="0.1" drop_rarity="5" />
+      <item id="2501" quantity="80" weight="0.1" drop_rarity="5" />
     </item_pack>
   </store_item>
   <store_item>
@@ -891,10 +891,10 @@
     <desc_list name="Random Rare Rune" icon="rune_empty_rare" bundle="34" quantity="1" />
     <drop_key>
       <drop_rarity id="1" name="1" color="^cFFFF" weight="1" />
-      <drop_rarity id="2" name="2" color="^c8E5F" weight=".6" />
-      <drop_rarity id="3" name="3" color="^c0DFF" weight=".4" />
-      <drop_rarity id="4" name="4" color="^cE7FF" weight=".2" />
-      <drop_rarity id="5" name="5" color="^cF90F" weight=".1" />
+      <drop_rarity id="2" name="2" color="^c8E5F" weight="0.6" />
+      <drop_rarity id="3" name="3" color="^c0DFF" weight="0.4" />
+      <drop_rarity id="4" name="4" color="^cE7FF" weight="0.2" />
+      <drop_rarity id="5" name="5" color="^cF90F" weight="0.1" />
     </drop_key>
     <item_pack>
       <pulls>10</pulls>
@@ -902,20 +902,20 @@
       <item id="4001" quantity="2" weight="1" drop_rarity="1" />
       <item id="2001" quantity="15" weight="1" drop_rarity="1" />
       <item id="2501" quantity="40" weight="1" drop_rarity="1" />
-      <item id="4012" quantity="1" weight=".5" drop_rarity="2" />
-      <item id="4001" quantity="3" weight=".5" drop_rarity="2" />
-      <item id="2001" quantity="20" weight=".5" drop_rarity="2" />
-      <item id="2501" quantity="50" weight=".5" drop_rarity="2" />
-      <item id="4013" quantity="1" weight=".3" drop_rarity="3" />
-      <item id="4011" quantity="2" weight=".1" drop_rarity="3" />
-      <item id="4001" quantity="4" weight=".4" drop_rarity="3" />
-      <item id="2001" quantity="25" weight=".3" drop_rarity="3" />
-      <item id="4001" quantity="5" weight=".2" drop_rarity="4" />
-      <item id="2501" quantity="60" weight=".3" drop_rarity="4" />
-      <item id="4012" quantity="2" weight=".05" drop_rarity="5" />
-      <item id="4001" quantity="10" weight=".1" drop_rarity="5" />
-      <item id="2001" quantity="50" weight=".1" drop_rarity="5" />
-      <item id="2501" quantity="80" weight=".1" drop_rarity="5" />
+      <item id="4012" quantity="1" weight="0.5" drop_rarity="2" />
+      <item id="4001" quantity="3" weight="0.5" drop_rarity="2" />
+      <item id="2001" quantity="20" weight="0.5" drop_rarity="2" />
+      <item id="2501" quantity="50" weight="0.5" drop_rarity="2" />
+      <item id="4013" quantity="1" weight="0.3" drop_rarity="3" />
+      <item id="4011" quantity="2" weight="0.1" drop_rarity="3" />
+      <item id="4001" quantity="4" weight="0.4" drop_rarity="3" />
+      <item id="2001" quantity="25" weight="0.3" drop_rarity="3" />
+      <item id="4001" quantity="5" weight="0.2" drop_rarity="4" />
+      <item id="2501" quantity="60" weight="0.3" drop_rarity="4" />
+      <item id="4012" quantity="2" weight="0.05" drop_rarity="5" />
+      <item id="4001" quantity="10" weight="0.1" drop_rarity="5" />
+      <item id="2001" quantity="50" weight="0.1" drop_rarity="5" />
+      <item id="2501" quantity="80" weight="0.1" drop_rarity="5" />
     </item_pack>
     <random_rune number="1" min_rarity="2" max_rarity="4" set="1" />
   </store_item>
@@ -962,11 +962,11 @@
     <hc_cost>1000</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4013" quantity="1" weight=".05" />
+      <item id="4013" quantity="1" weight="0.05" />
       <!-- Legendary Rune Sliver -->
-      <item id="4012" quantity="1" weight=".1" />
+      <item id="4012" quantity="1" weight="0.1" />
       <!-- Epic Runeshell -->
-      <item id="4011" quantity="1" weight=".2" />
+      <item id="4011" quantity="1" weight="0.2" />
       <!-- Rare Runeshell -->
       <item id="4001" quantity="2" weight="1" />
       <!-- Inscription Powder -->
@@ -1034,33 +1034,33 @@
     <desc_list name="Random Epic Rune" icon="rune_empty_epic" bundle="34" quantity="1" />
     <drop_key>
       <drop_rarity id="1" name="1" color="^c8E5F" weight="1" />
-      <drop_rarity id="2" name="2" color="^c0DFF" weight=".5" />
-      <drop_rarity id="3" name="3" color="^c0DFF" weight=".4" />
-      <drop_rarity id="4" name="4" color="^cE7FF" weight=".3" />
-      <drop_rarity id="5" name="5" color="^cF90F" weight=".2" />
-      <drop_rarity id="6" name="6" color="^cF90F" weight=".1" />
-      <drop_rarity id="7" name="7" color="^cF90F" weight=".05" />
+      <drop_rarity id="2" name="2" color="^c0DFF" weight="0.5" />
+      <drop_rarity id="3" name="3" color="^c0DFF" weight="0.4" />
+      <drop_rarity id="4" name="4" color="^cE7FF" weight="0.3" />
+      <drop_rarity id="5" name="5" color="^cF90F" weight="0.2" />
+      <drop_rarity id="6" name="6" color="^cF90F" weight="0.1" />
+      <drop_rarity id="7" name="7" color="^cF90F" weight="0.05" />
     </drop_key>
     <item_pack>
       <pulls>10</pulls>
-      <item id="4013" quantity="1" weight=".3" drop_rarity="4" />
-      <item id="4012" quantity="1" weight=".5" drop_rarity="2" />
-      <item id="4012" quantity="2" weight=".05" drop_rarity="7" />
+      <item id="4013" quantity="1" weight="0.3" drop_rarity="4" />
+      <item id="4012" quantity="1" weight="0.5" drop_rarity="2" />
+      <item id="4012" quantity="2" weight="0.05" drop_rarity="7" />
       <item id="4011" quantity="1" weight="1" drop_rarity="1" />
-      <item id="4011" quantity="2" weight=".1" drop_rarity="6" />
+      <item id="4011" quantity="2" weight="0.1" drop_rarity="6" />
       <item id="4001" quantity="2" weight="1" drop_rarity="1" />
-      <item id="4001" quantity="3" weight=".5" drop_rarity="2" />
-      <item id="4001" quantity="4" weight=".4" drop_rarity="3" />
-      <item id="4001" quantity="5" weight=".2" drop_rarity="5" />
-      <item id="4001" quantity="10" weight=".1" drop_rarity="6" />
+      <item id="4001" quantity="3" weight="0.5" drop_rarity="2" />
+      <item id="4001" quantity="4" weight="0.4" drop_rarity="3" />
+      <item id="4001" quantity="5" weight="0.2" drop_rarity="5" />
+      <item id="4001" quantity="10" weight="0.1" drop_rarity="6" />
       <item id="2001" quantity="15" weight="1" drop_rarity="1" />
-      <item id="2001" quantity="20" weight=".5" drop_rarity="2" />
-      <item id="2001" quantity="25" weight=".3" drop_rarity="4" />
-      <item id="2001" quantity="50" weight=".1" drop_rarity="6" />
+      <item id="2001" quantity="20" weight="0.5" drop_rarity="2" />
+      <item id="2001" quantity="25" weight="0.3" drop_rarity="4" />
+      <item id="2001" quantity="50" weight="0.1" drop_rarity="6" />
       <item id="2501" quantity="40" weight="1" drop_rarity="1" />
-      <item id="2501" quantity="50" weight=".5" drop_rarity="2" />
-      <item id="2501" quantity="60" weight=".3" drop_rarity="4" />
-      <item id="2501" quantity="80" weight=".1" drop_rarity="6" />
+      <item id="2501" quantity="50" weight="0.5" drop_rarity="2" />
+      <item id="2501" quantity="60" weight="0.3" drop_rarity="4" />
+      <item id="2501" quantity="80" weight="0.1" drop_rarity="6" />
     </item_pack>
     <random_rune number="1" min_rarity="3" max_rarity="4" set="1" />
   </store_item>
@@ -1123,22 +1123,22 @@
     <no_drop_rate>1</no_drop_rate>
     <item_pack>
       <pulls>1</pulls>
-      <item id="2515" quantity="10" weight=".25" />
-      <item id="2515" quantity="11" weight=".5" />
-      <item id="2515" quantity="12" weight=".75" />
-      <item id="2515" quantity="13" weight=".75" />
-      <item id="2515" quantity="14" weight=".8" />
+      <item id="2515" quantity="10" weight="0.25" />
+      <item id="2515" quantity="11" weight="0.5" />
+      <item id="2515" quantity="12" weight="0.75" />
+      <item id="2515" quantity="13" weight="0.75" />
+      <item id="2515" quantity="14" weight="0.8" />
       <item id="2515" quantity="15" weight="1" />
       <item id="2515" quantity="16" weight="1" />
-      <item id="2515" quantity="17" weight=".8" />
-      <item id="2515" quantity="18" weight=".7" />
-      <item id="2515" quantity="19" weight=".7" />
-      <item id="2515" quantity="20" weight=".4" />
-      <item id="2515" quantity="21" weight=".4" />
-      <item id="2515" quantity="22" weight=".2" />
-      <item id="2515" quantity="23" weight=".2" />
-      <item id="2515" quantity="24" weight=".1" />
-      <item id="2515" quantity="25" weight=".1" />
+      <item id="2515" quantity="17" weight="0.8" />
+      <item id="2515" quantity="18" weight="0.7" />
+      <item id="2515" quantity="19" weight="0.7" />
+      <item id="2515" quantity="20" weight="0.4" />
+      <item id="2515" quantity="21" weight="0.4" />
+      <item id="2515" quantity="22" weight="0.2" />
+      <item id="2515" quantity="23" weight="0.2" />
+      <item id="2515" quantity="24" weight="0.1" />
+      <item id="2515" quantity="25" weight="0.1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1155,22 +1155,22 @@
     <no_drop_rate>1</no_drop_rate>
     <item_pack>
       <pulls>1</pulls>
-      <item id="2522" quantity="10" weight=".25" />
-      <item id="2522" quantity="11" weight=".5" />
-      <item id="2522" quantity="12" weight=".75" />
-      <item id="2522" quantity="13" weight=".75" />
-      <item id="2522" quantity="14" weight=".8" />
+      <item id="2522" quantity="10" weight="0.25" />
+      <item id="2522" quantity="11" weight="0.5" />
+      <item id="2522" quantity="12" weight="0.75" />
+      <item id="2522" quantity="13" weight="0.75" />
+      <item id="2522" quantity="14" weight="0.8" />
       <item id="2522" quantity="15" weight="1" />
       <item id="2522" quantity="16" weight="1" />
-      <item id="2522" quantity="17" weight=".8" />
-      <item id="2522" quantity="18" weight=".7" />
-      <item id="2522" quantity="19" weight=".7" />
-      <item id="2522" quantity="20" weight=".4" />
-      <item id="2522" quantity="21" weight=".4" />
-      <item id="2522" quantity="22" weight=".2" />
-      <item id="2522" quantity="23" weight=".2" />
-      <item id="2522" quantity="24" weight=".1" />
-      <item id="2522" quantity="25" weight=".1" />
+      <item id="2522" quantity="17" weight="0.8" />
+      <item id="2522" quantity="18" weight="0.7" />
+      <item id="2522" quantity="19" weight="0.7" />
+      <item id="2522" quantity="20" weight="0.4" />
+      <item id="2522" quantity="21" weight="0.4" />
+      <item id="2522" quantity="22" weight="0.2" />
+      <item id="2522" quantity="23" weight="0.2" />
+      <item id="2522" quantity="24" weight="0.1" />
+      <item id="2522" quantity="25" weight="0.1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1187,22 +1187,22 @@
     <no_drop_rate>1</no_drop_rate>
     <item_pack>
       <pulls>1</pulls>
-      <item id="2524" quantity="60" weight=".25" />
-      <item id="2524" quantity="66" weight=".5" />
-      <item id="2524" quantity="72" weight=".75" />
-      <item id="2524" quantity="78" weight=".75" />
-      <item id="2524" quantity="84" weight=".8" />
+      <item id="2524" quantity="60" weight="0.25" />
+      <item id="2524" quantity="66" weight="0.5" />
+      <item id="2524" quantity="72" weight="0.75" />
+      <item id="2524" quantity="78" weight="0.75" />
+      <item id="2524" quantity="84" weight="0.8" />
       <item id="2524" quantity="90" weight="1" />
       <item id="2524" quantity="96" weight="1" />
-      <item id="2524" quantity="102" weight=".8" />
-      <item id="2524" quantity="108" weight=".7" />
-      <item id="2524" quantity="114" weight=".7" />
-      <item id="2524" quantity="120" weight=".4" />
-      <item id="2524" quantity="126" weight=".4" />
-      <item id="2524" quantity="132" weight=".2" />
-      <item id="2524" quantity="138" weight=".2" />
-      <item id="2524" quantity="144" weight=".1" />
-      <item id="2524" quantity="150" weight=".1" />
+      <item id="2524" quantity="102" weight="0.8" />
+      <item id="2524" quantity="108" weight="0.7" />
+      <item id="2524" quantity="114" weight="0.7" />
+      <item id="2524" quantity="120" weight="0.4" />
+      <item id="2524" quantity="126" weight="0.4" />
+      <item id="2524" quantity="132" weight="0.2" />
+      <item id="2524" quantity="138" weight="0.2" />
+      <item id="2524" quantity="144" weight="0.1" />
+      <item id="2524" quantity="150" weight="0.1" />
     </item_pack>
   </store_item>
   <!-- =============================== -->
@@ -2250,24 +2250,24 @@
     <bundle>15</bundle>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4013" quantity="1" weight=".3" />
-      <item id="4012" quantity="1" weight=".5" />
-      <item id="4012" quantity="2" weight=".05" />
+      <item id="4013" quantity="1" weight="0.3" />
+      <item id="4012" quantity="1" weight="0.5" />
+      <item id="4012" quantity="2" weight="0.05" />
       <item id="4011" quantity="1" weight="1" />
-      <item id="4011" quantity="2" weight=".1" />
+      <item id="4011" quantity="2" weight="0.1" />
       <item id="4001" quantity="2" weight="1" />
-      <item id="4001" quantity="3" weight=".5" />
-      <item id="4001" quantity="4" weight=".4" />
-      <item id="4001" quantity="5" weight=".2" />
-      <item id="4001" quantity="10" weight=".1" />
+      <item id="4001" quantity="3" weight="0.5" />
+      <item id="4001" quantity="4" weight="0.4" />
+      <item id="4001" quantity="5" weight="0.2" />
+      <item id="4001" quantity="10" weight="0.1" />
       <item id="2001" quantity="15" weight="1" />
-      <item id="2001" quantity="20" weight=".5" />
-      <item id="2001" quantity="25" weight=".3" />
-      <item id="2001" quantity="50" weight=".1" />
+      <item id="2001" quantity="20" weight="0.5" />
+      <item id="2001" quantity="25" weight="0.3" />
+      <item id="2001" quantity="50" weight="0.1" />
       <item id="2501" quantity="40" weight="1" />
-      <item id="2501" quantity="50" weight=".5" />
-      <item id="2501" quantity="60" weight=".3" />
-      <item id="2501" quantity="80" weight=".1" />
+      <item id="2501" quantity="50" weight="0.5" />
+      <item id="2501" quantity="60" weight="0.3" />
+      <item id="2501" quantity="80" weight="0.1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -2286,24 +2286,24 @@
     <desc_list name="Random Rare Rune" icon="rune_empty_rare" bundle="34" quantity="1" />
     <item_pack>
       <pulls>10</pulls>
-      <item id="4013" quantity="1" weight=".3" />
-      <item id="4012" quantity="1" weight=".5" />
-      <item id="4012" quantity="2" weight=".05" />
+      <item id="4013" quantity="1" weight="0.3" />
+      <item id="4012" quantity="1" weight="0.5" />
+      <item id="4012" quantity="2" weight="0.05" />
       <item id="4011" quantity="1" weight="1" />
-      <item id="4011" quantity="2" weight=".1" />
+      <item id="4011" quantity="2" weight="0.1" />
       <item id="4001" quantity="2" weight="1" />
-      <item id="4001" quantity="3" weight=".5" />
-      <item id="4001" quantity="4" weight=".4" />
-      <item id="4001" quantity="5" weight=".2" />
-      <item id="4001" quantity="10" weight=".1" />
+      <item id="4001" quantity="3" weight="0.5" />
+      <item id="4001" quantity="4" weight="0.4" />
+      <item id="4001" quantity="5" weight="0.2" />
+      <item id="4001" quantity="10" weight="0.1" />
       <item id="2001" quantity="15" weight="1" />
-      <item id="2001" quantity="20" weight=".5" />
-      <item id="2001" quantity="25" weight=".3" />
-      <item id="2001" quantity="50" weight=".1" />
+      <item id="2001" quantity="20" weight="0.5" />
+      <item id="2001" quantity="25" weight="0.3" />
+      <item id="2001" quantity="50" weight="0.1" />
       <item id="2501" quantity="40" weight="1" />
-      <item id="2501" quantity="50" weight=".5" />
-      <item id="2501" quantity="60" weight=".3" />
-      <item id="2501" quantity="80" weight=".1" />
+      <item id="2501" quantity="50" weight="0.5" />
+      <item id="2501" quantity="60" weight="0.3" />
+      <item id="2501" quantity="80" weight="0.1" />
     </item_pack>
     <random_rune number="1" min_rarity="2" max_rarity="4" set="1" />
   </store_item>
@@ -3098,13 +3098,13 @@
       <!-- Blue Fire Soul -->
       <item id="1012" quantity="2" weight="1" />
       <!-- Gold Bar -->
-      <item id="1012" quantity="5" weight=".25" />
+      <item id="1012" quantity="5" weight="0.25" />
       <!-- Gold Bar -->
-      <item id="17" quantity="1000" weight=".01" />
+      <item id="17" quantity="1000" weight="0.01" />
       <!-- Epic Pack Fragment -->
-      <item id="5" quantity="60" weight=".03" />
+      <item id="5" quantity="60" weight="0.03" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="10" weight=".05" />
+      <item id="2524" quantity="10" weight="0.05" />
       <!-- Mythic Item -->
     </item_pack>
   </store_item>
@@ -3122,17 +3122,17 @@
       <!-- Arcane Dust -->
       <item id="2501" quantity="6" weight="1" />
       <!-- Blue Fire Soul -->
-      <item id="4012" quantity="1" weight=".1" />
+      <item id="4012" quantity="1" weight="0.1" />
       <!-- Epic Runeshell -->
-      <item id="17" quantity="15" weight=".4" />
+      <item id="17" quantity="15" weight="0.4" />
       <!-- Epic Pack Fragment -->
-      <item id="2501" quantity="15" weight=".5" />
+      <item id="2501" quantity="15" weight="0.5" />
       <!-- Blue Fire Soul -->
-      <item id="5" quantity="90" weight=".05" />
+      <item id="5" quantity="90" weight="0.05" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="20" weight=".05" />
+      <item id="2524" quantity="20" weight="0.05" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight=".01" />
+      <item id="17" quantity="1000" weight="0.01" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3150,17 +3150,17 @@
       <!-- Inscription Powder -->
       <item id="4" quantity="10" weight="1" />
       <!-- Arcane Dust -->
-      <item id="4012" quantity="1" weight=".1" />
+      <item id="4012" quantity="1" weight="0.1" />
       <!-- Epic Runeshell -->
-      <item id="4013" quantity="1" weight=".05" />
+      <item id="4013" quantity="1" weight="0.05" />
       <!-- Legendary Rune Sliver -->
-      <item id="17" quantity="30" weight=".5" />
+      <item id="17" quantity="30" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="5" quantity="150" weight=".05" />
+      <item id="5" quantity="150" weight="0.05" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="30" weight=".05" />
+      <item id="2524" quantity="30" weight="0.05" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight=".02" />
+      <item id="17" quantity="1000" weight="0.02" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3176,19 +3176,19 @@
       <pulls>1</pulls>
       <item id="4001" quantity="2" weight="1" />
       <!-- Inscription Powder -->
-      <item id="5" quantity="200" weight=".1" />
+      <item id="5" quantity="200" weight="0.1" />
       <!-- Arena Coins -->
-      <item id="4012" quantity="1" weight=".1" />
+      <item id="4012" quantity="1" weight="0.1" />
       <!-- Epic Runeshell -->
-      <item id="17" quantity="100" weight=".5" />
+      <item id="17" quantity="100" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="18" quantity="20" weight=".2" />
+      <item id="18" quantity="20" weight="0.2" />
       <!-- Legendary Pack Fragment -->
-      <item id="4013" quantity="1" weight=".07" />
+      <item id="4013" quantity="1" weight="0.07" />
       <!-- Legendary Rune Sliver -->
-      <item id="2524" quantity="80" weight=".05" />
+      <item id="2524" quantity="80" weight="0.05" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight=".05" />
+      <item id="17" quantity="1000" weight="0.05" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3204,19 +3204,19 @@
       <pulls>1</pulls>
       <item id="4001" quantity="30" weight="1" />
       <!-- Inscription Powder -->
-      <item id="4012" quantity="2" weight=".1" />
+      <item id="4012" quantity="2" weight="0.1" />
       <!-- Epic Runeshell -->
-      <item id="4013" quantity="2" weight=".1" />
+      <item id="4013" quantity="2" weight="0.1" />
       <!-- Legendary Rune Sliver -->
-      <item id="17" quantity="1000" weight=".5" />
+      <item id="17" quantity="1000" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="18" quantity="200" weight=".7" />
+      <item id="18" quantity="200" weight="0.7" />
       <!-- Legendary Pack Fragment -->
-      <item id="5" quantity="500" weight=".2" />
+      <item id="5" quantity="500" weight="0.2" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="300" weight=".05" />
+      <item id="2524" quantity="300" weight="0.05" />
       <!-- Mythic Item -->
-      <item id="18" quantity="1000" weight=".05" />
+      <item id="18" quantity="1000" weight="0.05" />
       <!-- Legendary Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3232,19 +3232,19 @@
       <pulls>1</pulls>
       <item id="4001" quantity="3" weight="1" />
       <!-- Inscription Powder -->
-      <item id="4012" quantity="1" weight=".1" />
+      <item id="4012" quantity="1" weight="0.1" />
       <!-- Epic Runeshell -->
-      <item id="4013" quantity="1" weight=".07" />
+      <item id="4013" quantity="1" weight="0.07" />
       <!-- Legendary Rune Sliver -->
-      <item id="17" quantity="200" weight=".5" />
+      <item id="17" quantity="200" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="18" quantity="50" weight=".2" />
+      <item id="18" quantity="50" weight="0.2" />
       <!-- Legendary Pack Fragment -->
-      <item id="5" quantity="300" weight=".1" />
+      <item id="5" quantity="300" weight="0.1" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="120" weight=".05" />
+      <item id="2524" quantity="120" weight="0.05" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight=".05" />
+      <item id="17" quantity="1000" weight="0.05" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>

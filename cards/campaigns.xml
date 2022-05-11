@@ -761,7 +761,7 @@
       <card level="6" id="1617" />
       <card level="7" id="1629" />
     </rewards>
-    <find_item id="2515" drop_per_energy=".04" />
+    <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>32</id>
@@ -786,7 +786,7 @@
       <card level="6" id="1615" />
       <card level="7" id="1628" />
     </rewards>
-    <find_item id="2515" drop_per_energy=".04" />
+    <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>33</id>
@@ -811,7 +811,7 @@
       <card level="6" id="1018" />
       <card level="7" id="1625" />
     </rewards>
-    <find_item id="2515" drop_per_energy=".04" />
+    <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>34</id>
@@ -836,7 +836,7 @@
       <card level="6" id="1012" />
       <card level="7" id="1325" />
     </rewards>
-    <find_item id="2515" drop_per_energy=".04" />
+    <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>35</id>
@@ -861,7 +861,7 @@
       <card level="6" id="1011" />
       <card level="7" id="1029" />
     </rewards>
-    <find_item id="2515" drop_per_energy=".04" />
+    <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>36</id>
@@ -886,7 +886,7 @@
       <card level="6" id="1619" />
       <card level="7" id="1027" />
     </rewards>
-    <find_item id="2515" drop_per_energy=".04" />
+    <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <!-- END Seaside Campaigns -->
   <!-- Event 1 Campaigns START -->
@@ -987,7 +987,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3004" drop_per_energy=".25" />
+    <find_item id="3004" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1004</id>
@@ -1026,7 +1026,7 @@
       <card level="5" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3002" drop_per_energy=".65" />
+    <find_item id="3002" drop_per_energy="0.65" />
   </campaign>
   <campaign>
     <id>1006</id>
@@ -1047,7 +1047,7 @@
       <card level="5" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3003" drop_per_energy=".5" />
+    <find_item id="3003" drop_per_energy="0.5" />
   </campaign>
   <campaign>
     <id>1007</id>
@@ -1115,7 +1115,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3006" drop_per_energy=".5" />
+    <find_item id="3006" drop_per_energy="0.5" />
   </campaign>
   <campaign>
     <id>1010</id>
@@ -1143,7 +1143,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3006" drop_per_energy=".5" />
+    <find_item id="3006" drop_per_energy="0.5" />
   </campaign>
   <campaign>
     <id>1011</id>
@@ -1194,7 +1194,7 @@
       <card level="6" id="510" />
       <card level="7" id="1010" />
     </rewards>
-    <find_item id="3008" drop_per_energy=".9" />
+    <find_item id="3008" drop_per_energy="0.9" />
   </campaign>
   <!-- END Event 3 Campaigns -->
   <!-- START Event 4 Campaigns -->
@@ -1227,7 +1227,7 @@
       <card level="6" id="510" />
       <card level="7" id="2011" />
     </rewards>
-    <find_item id="3011" drop_per_energy=".2" />
+    <find_item id="3011" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1014</id>
@@ -1255,8 +1255,8 @@
       <card level="6" id="1618" />
       <card level="7" id="1618" />
     </rewards>
-    <find_item id="3011" drop_per_energy=".2" />
-    <find_item id="3009" drop_per_energy=".4" />
+    <find_item id="3011" drop_per_energy="0.2" />
+    <find_item id="3009" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1015</id>
@@ -1284,8 +1284,8 @@
       <card level="6" id="1313" />
       <card level="7" id="1313" />
     </rewards>
-    <find_item id="3011" drop_per_energy=".2" />
-    <find_item id="3009" drop_per_energy=".4" />
+    <find_item id="3011" drop_per_energy="0.2" />
+    <find_item id="3009" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1016</id>
@@ -1313,8 +1313,8 @@
       <card level="6" id="1015" />
       <card level="7" id="1015" />
     </rewards>
-    <find_item id="3011" drop_per_energy=".2" />
-    <find_item id="3009" drop_per_energy=".4" />
+    <find_item id="3011" drop_per_energy="0.2" />
+    <find_item id="3009" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1017</id>
@@ -1339,7 +1339,7 @@
       <card level="6" id="510" />
       <card level="7" id="2014" />
     </rewards>
-    <find_item id="3011" drop_per_energy=".25" />
+    <find_item id="3011" drop_per_energy="0.25" />
   </campaign>
   <!-- END Event 4 Campaigns -->
   <!-- Event 5 Campaigns START -->
@@ -1370,8 +1370,8 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3004" drop_per_energy=".25" />
-    <find_item id="3012" drop_per_energy=".05" />
+    <find_item id="3004" drop_per_energy="0.25" />
+    <find_item id="3012" drop_per_energy="0.05" />
   </campaign>
   <campaign>
     <id>1019</id>
@@ -1390,7 +1390,7 @@
       <card level="4" id="2004" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3012" drop_per_energy=".30" />
+    <find_item id="3012" drop_per_energy="0.30" />
   </campaign>
   <campaign>
     <id>1020</id>
@@ -1411,8 +1411,8 @@
       <card level="5" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3002" drop_per_energy=".65" />
-    <find_item id="3012" drop_per_energy=".15" />
+    <find_item id="3002" drop_per_energy="0.65" />
+    <find_item id="3012" drop_per_energy="0.15" />
   </campaign>
   <campaign>
     <id>1021</id>
@@ -1433,8 +1433,8 @@
       <card level="5" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3003" drop_per_energy=".5" />
-    <find_item id="3012" drop_per_energy=".25" />
+    <find_item id="3003" drop_per_energy="0.5" />
+    <find_item id="3012" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1022</id>
@@ -1454,7 +1454,7 @@
       <card level="6" id="510" />
       <card level="7" id="511" />
     </rewards>
-    <find_item id="3012" drop_per_energy=".35" />
+    <find_item id="3012" drop_per_energy="0.35" />
   </campaign>
   <campaign>
     <id>1023</id>
@@ -1482,7 +1482,7 @@
       <card level="6" id="510" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3012" drop_per_energy=".45" />
+    <find_item id="3012" drop_per_energy="0.45" />
   </campaign>
   <!-- END Event 5 Campaigns -->
   <!-- START Event 6 Campaigns -->
@@ -1511,7 +1511,7 @@
       <card level="6" id="510" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3015" drop_per_energy=".2" />
+    <find_item id="3015" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1025</id>
@@ -1539,7 +1539,7 @@
       <card level="6" id="510" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3015" drop_per_energy=".2" />
+    <find_item id="3015" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1026</id>
@@ -1569,7 +1569,7 @@
       <card level="6" id="510" />
       <card level="7" id="2020" />
     </rewards>
-    <find_item id="3015" drop_per_energy=".25" />
+    <find_item id="3015" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1027</id>
@@ -1597,7 +1597,7 @@
       <card level="6" id="510" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3015" drop_per_energy=".2" />
+    <find_item id="3015" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1028</id>
@@ -1623,7 +1623,7 @@
       <card level="6" id="510" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3015" drop_per_energy=".3" />
+    <find_item id="3015" drop_per_energy="0.3" />
   </campaign>
   <campaign>
     <id>1029</id>
@@ -1652,7 +1652,7 @@
       <card level="6" id="510" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3015" drop_per_energy=".4" />
+    <find_item id="3015" drop_per_energy="0.4" />
   </campaign>
   <!-- END Event 6 Campaigns -->
   <!-- START Event 7 Campaigns -->
@@ -1682,7 +1682,7 @@
       <card level="6" id="1314" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3016" drop_per_energy=".22" />
+    <find_item id="3016" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1031</id>
@@ -1709,7 +1709,7 @@
       <card level="6" id="1319" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3016" drop_per_energy=".2" />
+    <find_item id="3016" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1032</id>
@@ -1736,7 +1736,7 @@
       <card level="6" id="1613" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3016" drop_per_energy=".2" />
+    <find_item id="3016" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1033</id>
@@ -1765,7 +1765,7 @@
       <card level="6" id="1017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3016" drop_per_energy=".25" />
+    <find_item id="3016" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1034</id>
@@ -1792,7 +1792,7 @@
       <card level="6" id="1311" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3016" drop_per_energy=".3" />
+    <find_item id="3016" drop_per_energy="0.3" />
   </campaign>
   <campaign>
     <id>1035</id>
@@ -1817,7 +1817,7 @@
       <card level="6" id="1010" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3016" drop_per_energy=".4" />
+    <find_item id="3016" drop_per_energy="0.4" />
   </campaign>
   <!-- END Event 7 Campaigns -->
   <!--  Event 8 Campaigns -->
@@ -1846,7 +1846,7 @@
       <card level="6" id="1018" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3021" drop_per_energy=".2" />
+    <find_item id="3021" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1037</id>
@@ -1873,7 +1873,7 @@
       <card level="6" id="1018" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3021" drop_per_energy=".2" />
+    <find_item id="3021" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1038</id>
@@ -1901,7 +1901,7 @@
       <card level="6" id="1012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3021" drop_per_energy=".22" />
+    <find_item id="3021" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1039</id>
@@ -1930,7 +1930,7 @@
       <card level="6" id="1019" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3021" drop_per_energy=".25" />
+    <find_item id="3021" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1040</id>
@@ -1956,7 +1956,7 @@
       <card level="6" id="1015" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3021" drop_per_energy=".23" />
+    <find_item id="3021" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1041</id>
@@ -1982,7 +1982,7 @@
       <card level="6" id="1015" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3021" drop_per_energy=".26" />
+    <find_item id="3021" drop_per_energy="0.26" />
   </campaign>
   <!-- END Event 8 Campaigns -->
   <!-- Event 9 Campaigns START -->
@@ -2010,7 +2010,7 @@
       <card level="6" id="1012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3026" drop_per_energy=".2" />
+    <find_item id="3026" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1043</id>
@@ -2036,7 +2036,7 @@
       <card level="6" id="1010" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3026" drop_per_energy=".2" />
+    <find_item id="3026" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1044</id>
@@ -2064,7 +2064,7 @@
       <card level="6" id="1617" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3026" drop_per_energy=".22" />
+    <find_item id="3026" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1045</id>
@@ -2093,7 +2093,7 @@
       <card level="6" id="7017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3026" drop_per_energy=".22" />
+    <find_item id="3026" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1046</id>
@@ -2120,7 +2120,7 @@
       <card level="6" id="6017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3026" drop_per_energy=".22" />
+    <find_item id="3026" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1047</id>
@@ -2147,7 +2147,7 @@
       <card level="6" id="5017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3026" drop_per_energy=".25" />
+    <find_item id="3026" drop_per_energy="0.25" />
   </campaign>
   <!-- Event 9 Campaigns END -->
   <!--  START Event 10 -->
@@ -2175,7 +2175,7 @@
       <card level="6" id="1015" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3030" drop_per_energy=".2" />
+    <find_item id="3030" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1049</id>
@@ -2201,7 +2201,7 @@
       <card level="6" id="1012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3030" drop_per_energy=".2" />
+    <find_item id="3030" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1050</id>
@@ -2229,7 +2229,7 @@
       <card level="6" id="1018" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3030" drop_per_energy=".22" />
+    <find_item id="3030" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1051</id>
@@ -2255,7 +2255,7 @@
       <card level="6" id="1313" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3030" drop_per_energy=".21" />
+    <find_item id="3030" drop_per_energy="0.21" />
   </campaign>
   <campaign>
     <id>1052</id>
@@ -2282,7 +2282,7 @@
       <card level="6" id="1010" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3030" drop_per_energy=".22" />
+    <find_item id="3030" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1053</id>
@@ -2311,7 +2311,7 @@
       <card level="6" id="1618" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3030" drop_per_energy=".25" />
+    <find_item id="3030" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1057</id>
@@ -2335,7 +2335,7 @@
       <card level="6" id="1318" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3030" drop_per_energy=".25" />
+    <find_item id="3030" drop_per_energy="0.25" />
   </campaign>
   <!--  END Event 10 -->
   <!-- April Fools Campaigns START -->
@@ -2445,7 +2445,7 @@
       <card level="6" id="1615" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3033" drop_per_energy=".22" />
+    <find_item id="3033" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1059</id>
@@ -2473,7 +2473,7 @@
       <card level="6" id="1018" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3033" drop_per_energy=".23" />
+    <find_item id="3033" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1060</id>
@@ -2501,7 +2501,7 @@
       <card level="6" id="1614" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3033" drop_per_energy=".23" />
+    <find_item id="3033" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1061</id>
@@ -2531,7 +2531,7 @@
       <card level="6" id="1616" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3033" drop_per_energy=".23" />
+    <find_item id="3033" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1062</id>
@@ -2558,7 +2558,7 @@
       <card level="6" id="1318" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3033" drop_per_energy=".24" />
+    <find_item id="3033" drop_per_energy="0.24" />
   </campaign>
   <campaign>
     <id>1063</id>
@@ -2585,7 +2585,7 @@
       <card level="6" id="1619" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3033" drop_per_energy=".24" />
+    <find_item id="3033" drop_per_energy="0.24" />
   </campaign>
   <!-- END Avian campaigns event 11 -->
   <!-- START Dragon campaigns event 12 -->
@@ -2614,7 +2614,7 @@
       <card level="6" id="1314" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3034" drop_per_energy=".20" />
+    <find_item id="3034" drop_per_energy="0.20" />
   </campaign>
   <campaign>
     <id>1065</id>
@@ -2641,7 +2641,7 @@
       <card level="6" id="1313" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3034" drop_per_energy=".21" />
+    <find_item id="3034" drop_per_energy="0.21" />
   </campaign>
   <campaign>
     <id>1066</id>
@@ -2669,7 +2669,7 @@
       <card level="6" id="1315" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3034" drop_per_energy=".22" />
+    <find_item id="3034" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1067</id>
@@ -2695,7 +2695,7 @@
       <card level="6" id="1317" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3034" drop_per_energy=".23" />
+    <find_item id="3034" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1068</id>
@@ -2721,7 +2721,7 @@
       <card level="6" id="1319" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3034" drop_per_energy=".24" />
+    <find_item id="3034" drop_per_energy="0.24" />
   </campaign>
   <campaign>
     <id>1069</id>
@@ -2749,7 +2749,7 @@
       <card level="6" id="1318" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3034" drop_per_energy=".25" />
+    <find_item id="3034" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <!-- stub -->
@@ -2774,7 +2774,7 @@
       <card level="6" id="1017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3034" drop_per_energy=".25" />
+    <find_item id="3034" drop_per_energy="0.25" />
   </campaign>
   <!-- START Event 13 Insects -->
   <campaign>
@@ -2801,7 +2801,7 @@
       <card level="6" id="6017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3041" drop_per_energy=".2" />
+    <find_item id="3041" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1072</id>
@@ -2827,7 +2827,7 @@
       <card level="6" id="1318" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3041" drop_per_energy=".21" />
+    <find_item id="3041" drop_per_energy="0.21" />
   </campaign>
   <campaign>
     <id>1073</id>
@@ -2855,7 +2855,7 @@
       <card level="6" id="6006" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3041" drop_per_energy=".22" />
+    <find_item id="3041" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1074</id>
@@ -2884,7 +2884,7 @@
       <card level="6" id="6022" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3041" drop_per_energy=".24" />
+    <find_item id="3041" drop_per_energy="0.24" />
   </campaign>
   <campaign>
     <id>1075</id>
@@ -2911,7 +2911,7 @@
       <card level="6" id="1610" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3041" drop_per_energy=".23" />
+    <find_item id="3041" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1076</id>
@@ -2937,7 +2937,7 @@
       <card level="6" id="1613" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3041" drop_per_energy=".25" />
+    <find_item id="3041" drop_per_energy="0.25" />
   </campaign>
   <!-- Event 14 Angels -->
   <campaign>
@@ -2964,7 +2964,7 @@
       <card level="6" id="1019" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3042" drop_per_energy=".20" />
+    <find_item id="3042" drop_per_energy="0.20" />
   </campaign>
   <campaign>
     <id>1078</id>
@@ -2990,7 +2990,7 @@
       <card level="6" id="1014" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3042" drop_per_energy=".20" />
+    <find_item id="3042" drop_per_energy="0.20" />
   </campaign>
   <campaign>
     <id>1079</id>
@@ -3018,7 +3018,7 @@
       <card level="6" id="1018" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3042" drop_per_energy=".22" />
+    <find_item id="3042" drop_per_energy="0.22" />
   </campaign>
   <campaign>
     <id>1080</id>
@@ -3044,7 +3044,7 @@
       <card level="6" id="1017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3042" drop_per_energy=".23" />
+    <find_item id="3042" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1081</id>
@@ -3070,7 +3070,7 @@
       <card level="6" id="1012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3042" drop_per_energy=".23" />
+    <find_item id="3042" drop_per_energy="0.23" />
   </campaign>
   <campaign>
     <id>1082</id>
@@ -3099,7 +3099,7 @@
       <card level="6" id="1015" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3042" drop_per_energy=".25" />
+    <find_item id="3042" drop_per_energy="0.25" />
   </campaign>
   <!-- Event 15 Elementals -->
   <campaign>
@@ -3128,7 +3128,7 @@
       <card level="6" id="1012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3043" drop_per_energy=".25" />
+    <find_item id="3043" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1084</id>
@@ -3157,7 +3157,7 @@
       <card level="6" id="6017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3043" drop_per_energy=".25" />
+    <find_item id="3043" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1085</id>
@@ -3185,7 +3185,7 @@
       <card level="6" id="7017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3043" drop_per_energy=".25" />
+    <find_item id="3043" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1086</id>
@@ -3216,7 +3216,7 @@
       <card level="6" id="7017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3043" drop_per_energy=".25" />
+    <find_item id="3043" drop_per_energy="0.25" />
   </campaign>
   <!-- Event 16 Undead -->
   <campaign>
@@ -3245,7 +3245,7 @@
       <card level="6" id="1319" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3044" drop_per_energy=".25" />
+    <find_item id="3044" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1088</id>
@@ -3274,7 +3274,7 @@
       <card level="6" id="1314" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3044" drop_per_energy=".25" />
+    <find_item id="3044" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1089</id>
@@ -3302,7 +3302,7 @@
       <card level="6" id="1315" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3044" drop_per_energy=".25" />
+    <find_item id="3044" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1090</id>
@@ -3333,7 +3333,7 @@
       <card level="6" id="1311" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3044" drop_per_energy=".25" />
+    <find_item id="3044" drop_per_energy="0.25" />
   </campaign>
   <!-- Event 17 Goblins -->
   <campaign>
@@ -3362,7 +3362,7 @@
       <card level="6" id="1011" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3045" drop_per_energy=".25" />
+    <find_item id="3045" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1092</id>
@@ -3390,7 +3390,7 @@
       <card level="6" id="6007" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3045" drop_per_energy=".25" />
+    <find_item id="3045" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1093</id>
@@ -3419,7 +3419,7 @@
       <card level="6" id="1317" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3045" drop_per_energy=".25" />
+    <find_item id="3045" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1094</id>
@@ -3446,7 +3446,7 @@
       <card level="6" id="6007" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3045" drop_per_energy=".25" />
+    <find_item id="3045" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1095</id>
@@ -3473,7 +3473,7 @@
       <card level="6" id="5007" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3045" drop_per_energy=".25" />
+    <find_item id="3045" drop_per_energy="0.25" />
   </campaign>
   <!-- Halloween Event -->
   <campaign>
@@ -3500,7 +3500,7 @@
       <card level="6" id="502" />
       <card level="7" id="503" />
     </rewards>
-    <find_item id="3045" drop_per_energy=".25" />
+    <find_item id="3045" drop_per_energy="0.25" />
   </campaign>
   <!-- Event 18 dragons -->
   <campaign>
@@ -3529,7 +3529,7 @@
       <card level="6" id="7012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3046" drop_per_energy=".25" />
+    <find_item id="3046" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1098</id>
@@ -3558,7 +3558,7 @@
       <card level="6" id="5012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3046" drop_per_energy=".25" />
+    <find_item id="3046" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1099</id>
@@ -3586,7 +3586,7 @@
       <card level="6" id="1313" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3046" drop_per_energy=".25" />
+    <find_item id="3046" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1100</id>
@@ -3613,7 +3613,7 @@
       <card level="6" id="6012" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3046" drop_per_energy=".25" />
+    <find_item id="3046" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1101</id>
@@ -3640,7 +3640,7 @@
       <card level="6" id="5017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3046" drop_per_energy=".25" />
+    <find_item id="3046" drop_per_energy="0.25" />
   </campaign>
   <!-- Event 19 Frogs -->
   <campaign>
@@ -3669,7 +3669,7 @@
       <card level="6" id="6022" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3047" drop_per_energy=".25" />
+    <find_item id="3047" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1103</id>
@@ -3698,7 +3698,7 @@
       <card level="6" id="1618" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3047" drop_per_energy=".25" />
+    <find_item id="3047" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1104</id>
@@ -3726,7 +3726,7 @@
       <card level="6" id="1618" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3047" drop_per_energy=".25" />
+    <find_item id="3047" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1105</id>
@@ -3753,7 +3753,7 @@
       <card level="6" id="5022" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3047" drop_per_energy=".25" />
+    <find_item id="3047" drop_per_energy="0.25" />
   </campaign>
   <campaign>
     <id>1106</id>
@@ -3780,7 +3780,7 @@
       <card level="6" id="7007" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3047" drop_per_energy=".25" />
+    <find_item id="3047" drop_per_energy="0.25" />
   </campaign>
   <!-- Christmas Event -->
   <campaign>
@@ -3809,7 +3809,7 @@
       <card level="6" id="2075" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3047" drop_per_energy=".25" />
+    <find_item id="3047" drop_per_energy="0.25" />
   </campaign>
   <!-- Campaign Event -->
   <campaign>
@@ -3836,8 +3836,8 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3048" drop_per_energy=".1" />
-    <find_item id="2522" drop_per_energy=".04" />
+    <find_item id="3048" drop_per_energy="0.1" />
+    <find_item id="2522" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>1109</id>
@@ -3873,8 +3873,8 @@
       <card level="6" id="512" />
       <card level="7" id="2077" />
     </rewards>
-    <find_item id="3048" drop_per_energy=".2" />
-    <find_item id="2522" drop_per_energy=".04" />
+    <find_item id="3048" drop_per_energy="0.2" />
+    <find_item id="2522" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>1110</id>
@@ -3911,8 +3911,8 @@
       <card level="6" id="512" />
       <card level="7" id="2079" />
     </rewards>
-    <find_item id="3048" drop_per_energy=".4" />
-    <find_item id="2522" drop_per_energy=".04" />
+    <find_item id="3048" drop_per_energy="0.4" />
+    <find_item id="2522" drop_per_energy="0.04" />
   </campaign>
   <!-- Mythic Scylla -->
   <campaign>
@@ -3944,7 +3944,7 @@
       <card level="6" id="512" />
       <item level="7" id="2523" />
     </rewards>
-    <find_item id="2522" drop_per_energy=".04" />
+    <find_item id="2522" drop_per_energy="0.04" />
   </campaign>
   <!-- End Mythic -->
   <campaign>
@@ -3982,8 +3982,8 @@
       <card level="6" id="512" />
       <card level="7" id="2040" />
     </rewards>
-    <find_item id="3048" drop_per_energy=".6" />
-    <find_item id="2522" drop_per_energy=".04" />
+    <find_item id="3048" drop_per_energy="0.6" />
+    <find_item id="2522" drop_per_energy="0.04" />
   </campaign>
   <campaign>
     <id>1113</id>
@@ -4019,8 +4019,8 @@
       <card level="6" id="512" />
       <card level="7" id="2041" />
     </rewards>
-    <find_item id="3048" drop_per_energy=".8" />
-    <find_item id="2522" drop_per_energy=".04" />
+    <find_item id="3048" drop_per_energy="0.8" />
+    <find_item id="2522" drop_per_energy="0.04" />
   </campaign>
   <!-- Campaign Event 2 -->
   <!-- Extra Node -->
@@ -4047,7 +4047,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3049" drop_per_energy=".1" />
+    <find_item id="3049" drop_per_energy="0.1" />
   </campaign>
   <!-- Mission Nodes -->
   <campaign>
@@ -4083,7 +4083,7 @@
       <card level="6" id="512" />
       <item level="7" id="3050" />
     </rewards>
-    <find_item id="3049" drop_per_energy=".2" />
+    <find_item id="3049" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1116</id>
@@ -4119,7 +4119,7 @@
       <card level="6" id="2054" />
       <item level="7" id="3050" />
     </rewards>
-    <find_item id="3049" drop_per_energy=".4" />
+    <find_item id="3049" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -4152,7 +4152,7 @@
       <item level="6" id="3051" />
       <item level="7" id="3051" />
     </rewards>
-    <find_item id="3049" drop_per_energy=".4" />
+    <find_item id="3049" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event Weeks 5-6 -->
   <campaign>
@@ -4190,7 +4190,7 @@
       <card level="6" id="2025" />
       <item level="7" id="3050" />
     </rewards>
-    <find_item id="3049" drop_per_energy=".6" />
+    <find_item id="3049" drop_per_energy="0.6" />
   </campaign>
   <!-- Campaign Event Weeks 7-8 -->
   <campaign>
@@ -4227,7 +4227,7 @@
       <card level="6" id="2059" />
       <item level="7" id="3050" />
     </rewards>
-    <find_item id="3049" drop_per_energy=".8" />
+    <find_item id="3049" drop_per_energy="0.8" />
   </campaign>
   <!-- April Fools Campaigns START -->
   <campaign>
@@ -4365,7 +4365,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".1" />
+    <find_item id="3053" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1125</id>
@@ -4400,7 +4400,7 @@
       <card level="6" id="512" />
       <item level="7" id="3055" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".2" />
+    <find_item id="3053" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1126</id>
@@ -4436,7 +4436,7 @@
       <card level="6" id="2005" />
       <item level="7" id="3055" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".4" />
+    <find_item id="3053" drop_per_energy="0.4" />
   </campaign>
   <!--  Boss Node This is the Final Battle -->
   <campaign>
@@ -4469,7 +4469,7 @@
       <item level="6" id="3054" />
       <item level="7" id="3054" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".4" />
+    <find_item id="3053" drop_per_energy="0.4" />
   </campaign>
   <!-- Event Campaign 3 Weeks 5-6 -->
   <campaign>
@@ -4507,7 +4507,7 @@
       <card level="6" id="2056" />
       <item level="7" id="3055" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".6" />
+    <find_item id="3053" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1129</id>
@@ -4543,7 +4543,7 @@
       <card level="6" id="2008" />
       <item level="7" id="3055" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".8" />
+    <find_item id="3053" drop_per_energy="0.8" />
   </campaign>
   <!-- Event Campaign 4 Insects -->
   <!-- Extra Node -->
@@ -4570,7 +4570,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3056" drop_per_energy=".1" />
+    <find_item id="3056" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1131</id>
@@ -4605,7 +4605,7 @@
       <card level="6" id="512" />
       <item level="7" id="3058" />
     </rewards>
-    <find_item id="3056" drop_per_energy=".2" />
+    <find_item id="3056" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1132</id>
@@ -4641,7 +4641,7 @@
       <card level="6" id="2049" />
       <item level="7" id="3058" />
     </rewards>
-    <find_item id="3056" drop_per_energy=".4" />
+    <find_item id="3056" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 4 Boss Node Insects -->
   <campaign>
@@ -4674,7 +4674,7 @@
       <item level="6" id="3057" />
       <item level="7" id="3057" />
     </rewards>
-    <find_item id="3056" drop_per_energy=".4" />
+    <find_item id="3056" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 4 weeks 5-8 Goblins -->
   <campaign>
@@ -4712,7 +4712,7 @@
       <card level="6" id="2063" />
       <item level="7" id="3058" />
     </rewards>
-    <find_item id="3056" drop_per_energy=".6" />
+    <find_item id="3056" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1135</id>
@@ -4748,7 +4748,7 @@
       <card level="6" id="2062" />
       <item level="7" id="3058" />
     </rewards>
-    <find_item id="3056" drop_per_energy=".8" />
+    <find_item id="3056" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 5 -->
   <!-- Extra Node -->
@@ -4775,7 +4775,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3059" drop_per_energy=".1" />
+    <find_item id="3059" drop_per_energy="0.1" />
   </campaign>
   <!-- Campaign Event 5 weeks 1-4 -->
   <campaign>
@@ -4811,7 +4811,7 @@
       <card level="6" id="512" />
       <item level="7" id="3060" />
     </rewards>
-    <find_item id="3059" drop_per_energy=".2" />
+    <find_item id="3059" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1138</id>
@@ -4847,7 +4847,7 @@
       <card level="6" id="2077" />
       <item level="7" id="3060" />
     </rewards>
-    <find_item id="3059" drop_per_energy=".4" />
+    <find_item id="3059" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 5 Boss -->
   <campaign>
@@ -4880,7 +4880,7 @@
       <item level="6" id="3061" />
       <item level="7" id="3061" />
     </rewards>
-    <find_item id="3059" drop_per_energy=".4" />
+    <find_item id="3059" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 5 weeks 5-8 -->
   <campaign>
@@ -4918,7 +4918,7 @@
       <card level="6" id="2070" />
       <item level="7" id="3060" />
     </rewards>
-    <find_item id="3059" drop_per_energy=".6" />
+    <find_item id="3059" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1141</id>
@@ -4954,7 +4954,7 @@
       <card level="6" id="2011" />
       <item level="7" id="3060" />
     </rewards>
-    <find_item id="3059" drop_per_energy=".8" />
+    <find_item id="3059" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 6 Mecha -->
   <campaign>
@@ -4980,7 +4980,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".1" />
+    <find_item id="3062" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1143</id>
@@ -5015,7 +5015,7 @@
       <card level="6" id="512" />
       <item level="7" id="3063" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".2" />
+    <find_item id="3062" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1144</id>
@@ -5051,7 +5051,7 @@
       <card level="6" id="2111" />
       <item level="7" id="3063" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".4" />
+    <find_item id="3062" drop_per_energy="0.4" />
   </campaign>
   <!-- Halloween 2017 Mecha -->
   <campaign>
@@ -5079,7 +5079,7 @@
       <card level="6" id="502" />
       <card level="7" id="503" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".2" />
+    <find_item id="3062" drop_per_energy="0.2" />
   </campaign>
   <!-- Boss Node Fireshard's Giant Mecha -->
   <campaign>
@@ -5112,7 +5112,7 @@
       <item level="6" id="3064" />
       <item level="7" id="3064" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".4" />
+    <find_item id="3062" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 6 Mecha weeks 5-8 -->
   <campaign>
@@ -5150,7 +5150,7 @@
       <card level="6" id="2060" />
       <item level="7" id="3063" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".6" />
+    <find_item id="3062" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1148</id>
@@ -5186,7 +5186,7 @@
       <card level="6" id="2024" />
       <item level="7" id="3063" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".8" />
+    <find_item id="3062" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 7 -->
   <!-- Extra Node -->
@@ -5213,7 +5213,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3065" drop_per_energy=".1" />
+    <find_item id="3065" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1150</id>
@@ -5248,7 +5248,7 @@
       <card level="6" id="512" />
       <item level="7" id="3066" />
     </rewards>
-    <find_item id="3065" drop_per_energy=".2" />
+    <find_item id="3065" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1151</id>
@@ -5284,7 +5284,7 @@
       <card level="6" id="2042" />
       <item level="7" id="3066" />
     </rewards>
-    <find_item id="3065" drop_per_energy=".4" />
+    <find_item id="3065" drop_per_energy="0.4" />
   </campaign>
   <!-- Christmas Event 2017 -->
   <campaign>
@@ -5313,7 +5313,7 @@
       <item level="6" id="104000" number="5" />
       <item level="7" id="104000" number="10" />
     </rewards>
-    <find_item id="3065" drop_per_energy=".2" />
+    <find_item id="3065" drop_per_energy="0.2" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -5346,7 +5346,7 @@
       <item level="6" id="3067" />
       <item level="7" id="3067" />
     </rewards>
-    <find_item id="3065" drop_per_energy=".4" />
+    <find_item id="3065" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 7 Weeks 5-8 -->
   <campaign>
@@ -5384,7 +5384,7 @@
       <card level="6" id="2058" />
       <item level="7" id="3066" />
     </rewards>
-    <find_item id="3065" drop_per_energy=".6" />
+    <find_item id="3065" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1155</id>
@@ -5420,7 +5420,7 @@
       <card level="6" id="2032" />
       <item level="7" id="3066" />
     </rewards>
-    <find_item id="3065" drop_per_energy=".8" />
+    <find_item id="3065" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 8 Angels -->
   <!-- Extra Node -->
@@ -5447,7 +5447,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".1" />
+    <find_item id="3068" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1157</id>
@@ -5482,7 +5482,7 @@
       <card level="6" id="512" />
       <item level="7" id="3069" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".2" />
+    <find_item id="3068" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1158</id>
@@ -5518,7 +5518,7 @@
       <card level="6" id="2027" />
       <item level="7" id="3069" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".4" />
+    <find_item id="3068" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1159</id>
@@ -5550,7 +5550,7 @@
       <item level="6" id="3070" />
       <item level="7" id="3070" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".4" />
+    <find_item id="3068" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1160</id>
@@ -5587,7 +5587,7 @@
       <card level="6" id="2067" />
       <item level="7" id="3069" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".6" />
+    <find_item id="3068" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1161</id>
@@ -5623,7 +5623,7 @@
       <card level="6" id="2045" />
       <item level="7" id="3069" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".8" />
+    <find_item id="3068" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 9 -->
   <!-- Extra Node -->
@@ -5650,7 +5650,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3071" drop_per_energy=".1" />
+    <find_item id="3071" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1163</id>
@@ -5685,7 +5685,7 @@
       <card level="6" id="512" />
       <item level="7" id="3072" />
     </rewards>
-    <find_item id="3071" drop_per_energy=".2" />
+    <find_item id="3071" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1164</id>
@@ -5721,7 +5721,7 @@
       <card level="6" id="2053" />
       <item level="7" id="3072" />
     </rewards>
-    <find_item id="3071" drop_per_energy=".4" />
+    <find_item id="3071" drop_per_energy="0.4" />
   </campaign>
   <!-- Knights on Strike April Fool's Campaigns -->
   <campaign>
@@ -5749,7 +5749,7 @@
       <item level="6" id="1011" />
       <item level="7" id="1012" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".6" />
+    <find_item id="3068" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1166</id>
@@ -5777,7 +5777,7 @@
       <card level="6" id="510" />
       <item level="7" id="2528" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".6" />
+    <find_item id="3068" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1167</id>
@@ -5806,7 +5806,7 @@
       <card level="6" id="2002" />
       <item level="7" id="4013" />
     </rewards>
-    <find_item id="3068" drop_per_energy=".6" />
+    <find_item id="3068" drop_per_energy="0.6" />
   </campaign>
   <!-- Campaign Event 9 -->
   <!-- A Test of Might -->
@@ -5840,7 +5840,7 @@
       <item level="6" id="3073" />
       <item level="7" id="3073" />
     </rewards>
-    <find_item id="3071" drop_per_energy=".4" />
+    <find_item id="3071" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 9 Weeks 5-8 -->
   <campaign>
@@ -5878,7 +5878,7 @@
       <card level="6" id="2002" />
       <item level="7" id="3072" />
     </rewards>
-    <find_item id="3071" drop_per_energy=".6" />
+    <find_item id="3071" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1170</id>
@@ -5914,7 +5914,7 @@
       <card level="6" id="2111" />
       <item level="7" id="3072" />
     </rewards>
-    <find_item id="3071" drop_per_energy=".8" />
+    <find_item id="3071" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 10 -->
   <!-- Extra Node -->
@@ -5941,7 +5941,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3074" drop_per_energy=".1" />
+    <find_item id="3074" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1172</id>
@@ -5976,7 +5976,7 @@
       <card level="6" id="512" />
       <item level="7" id="3075" />
     </rewards>
-    <find_item id="3074" drop_per_energy=".2" />
+    <find_item id="3074" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1173</id>
@@ -6012,7 +6012,7 @@
       <card level="6" id="2070" />
       <item level="7" id="3075" />
     </rewards>
-    <find_item id="3074" drop_per_energy=".4" />
+    <find_item id="3074" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Storm Lord Father -->
   <campaign>
@@ -6045,7 +6045,7 @@
       <item level="6" id="3076" />
       <item level="7" id="3076" />
     </rewards>
-    <find_item id="3074" drop_per_energy=".4" />
+    <find_item id="3074" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1175</id>
@@ -6082,7 +6082,7 @@
       <card level="6" id="2077" />
       <item level="7" id="3075" />
     </rewards>
-    <find_item id="3074" drop_per_energy=".6" />
+    <find_item id="3074" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1176</id>
@@ -6118,7 +6118,7 @@
       <card level="6" id="2099" />
       <item level="7" id="3075" />
     </rewards>
-    <find_item id="3074" drop_per_energy=".8" />
+    <find_item id="3074" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 11 -->
   <campaign>
@@ -6144,7 +6144,7 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3077" drop_per_energy=".1" />
+    <find_item id="3077" drop_per_energy="0.1" />
   </campaign>
   <campaign>
     <id>1178</id>
@@ -6179,7 +6179,7 @@
       <card level="6" id="512" />
       <item level="7" id="3078" />
     </rewards>
-    <find_item id="3077" drop_per_energy=".2" />
+    <find_item id="3077" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1179</id>
@@ -6215,7 +6215,7 @@
       <card level="6" id="2069" />
       <item level="7" id="3078" />
     </rewards>
-    <find_item id="3077" drop_per_energy=".4" />
+    <find_item id="3077" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Dream Awakened -->
   <campaign>
@@ -6248,7 +6248,7 @@
       <item level="6" id="3079" />
       <item level="7" id="3079" />
     </rewards>
-    <find_item id="3077" drop_per_energy=".4" />
+    <find_item id="3077" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 11 weeks 5-8 -->
   <campaign>
@@ -6286,7 +6286,7 @@
       <card level="6" id="2119" />
       <item level="7" id="3078" />
     </rewards>
-    <find_item id="3077" drop_per_energy=".6" />
+    <find_item id="3077" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1182</id>
@@ -6322,7 +6322,7 @@
       <card level="6" id="2081" />
       <item level="7" id="3078" />
     </rewards>
-    <find_item id="3077" drop_per_energy=".8" />
+    <find_item id="3077" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 12 Elemental -->
   <campaign>
@@ -6352,7 +6352,7 @@
       <card level="6" id="2118" />
       <item level="7" id="3081" />
     </rewards>
-    <find_item id="3080" drop_per_energy=".2" />
+    <find_item id="3080" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1184</id>
@@ -6382,7 +6382,7 @@
       <card level="6" id="2096" />
       <item level="7" id="3081" />
     </rewards>
-    <find_item id="3080" drop_per_energy=".4" />
+    <find_item id="3080" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Rifthowl -->
   <campaign>
@@ -6415,7 +6415,7 @@
       <item level="6" id="3082" />
       <item level="7" id="3082" />
     </rewards>
-    <find_item id="3080" drop_per_energy=".4" />
+    <find_item id="3080" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 12 weeks 5-8 -->
   <campaign>
@@ -6446,7 +6446,7 @@
       <card level="6" id="2115" />
       <item level="7" id="3081" />
     </rewards>
-    <find_item id="3080" drop_per_energy=".6" />
+    <find_item id="3080" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1187</id>
@@ -6476,7 +6476,7 @@
       <card level="6" id="2087" />
       <item level="7" id="3081" />
     </rewards>
-    <find_item id="3080" drop_per_energy=".8" />
+    <find_item id="3080" drop_per_energy="0.8" />
   </campaign>
   <!-- Halloween Undead 2018 -->
   <campaign>
@@ -6504,7 +6504,7 @@
       <card level="6" id="502" />
       <card level="7" id="12060" />
     </rewards>
-    <find_item id="3080" drop_per_energy=".4" />
+    <find_item id="3080" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 13 dragons -->
   <campaign>
@@ -6534,7 +6534,7 @@
       <card level="6" id="2046" />
       <item level="7" id="3084" />
     </rewards>
-    <find_item id="3083" drop_per_energy=".2" />
+    <find_item id="3083" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1190</id>
@@ -6564,7 +6564,7 @@
       <card level="6" id="2004" />
       <item level="7" id="3084" />
     </rewards>
-    <find_item id="3083" drop_per_energy=".4" />
+    <find_item id="3083" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node A Promise Left Behind -->
   <campaign>
@@ -6597,7 +6597,7 @@
       <item level="6" id="3085" />
       <item level="7" id="3085" />
     </rewards>
-    <find_item id="3083" drop_per_energy=".4" />
+    <find_item id="3083" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 13 dragons weeks 5-8 -->
   <campaign>
@@ -6628,7 +6628,7 @@
       <card level="6" id="2124" />
       <item level="7" id="3084" />
     </rewards>
-    <find_item id="3083" drop_per_energy=".6" />
+    <find_item id="3083" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1193</id>
@@ -6658,7 +6658,7 @@
       <card level="6" id="2107" />
       <item level="7" id="3084" />
     </rewards>
-    <find_item id="3083" drop_per_energy=".8" />
+    <find_item id="3083" drop_per_energy="0.8" />
   </campaign>
   <!-- Christmas Event 2018 -->
   <campaign>
@@ -6687,7 +6687,7 @@
       <item level="6" id="104013" number="5" />
       <item level="7" id="104013" number="10" />
     </rewards>
-    <find_item id="3083" drop_per_energy=".2" />
+    <find_item id="3083" drop_per_energy="0.2" />
   </campaign>
   <!-- Campaign Event 14 angels -->
   <campaign>
@@ -6717,7 +6717,7 @@
       <card level="6" id="2085" />
       <item level="7" id="3087" />
     </rewards>
-    <find_item id="3086" drop_per_energy=".2" />
+    <find_item id="3086" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1196</id>
@@ -6747,7 +6747,7 @@
       <card level="6" id="2084" />
       <item level="7" id="3087" />
     </rewards>
-    <find_item id="3086" drop_per_energy=".4" />
+    <find_item id="3086" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Schism -->
   <campaign>
@@ -6780,7 +6780,7 @@
       <item level="6" id="3088" />
       <item level="7" id="3088" />
     </rewards>
-    <find_item id="3086" drop_per_energy=".4" />
+    <find_item id="3086" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign event 14 weeks 5-8 -->
   <campaign>
@@ -6811,7 +6811,7 @@
       <card level="6" id="2125" />
       <item level="7" id="3087" />
     </rewards>
-    <find_item id="3086" drop_per_energy=".6" />
+    <find_item id="3086" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1199</id>
@@ -6841,7 +6841,7 @@
       <card level="6" id="2063" />
       <item level="7" id="3087" />
     </rewards>
-    <find_item id="3086" drop_per_energy=".8" />
+    <find_item id="3086" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 15 weeks 1-4 -->
   <campaign>
@@ -6871,7 +6871,7 @@
       <card level="6" id="2130" />
       <item level="7" id="3090" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".2" />
+    <find_item id="3089" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1201</id>
@@ -6901,7 +6901,7 @@
       <card level="6" id="2076" />
       <item level="7" id="3090" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".4" />
+    <find_item id="3089" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node A Brighter Future -->
   <campaign>
@@ -6934,7 +6934,7 @@
       <item level="6" id="3091" />
       <item level="7" id="3091" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".4" />
+    <find_item id="3089" drop_per_energy="0.4" />
   </campaign>
   <!-- Revenge of the Commons April Fool's Campaigns -->
   <campaign>
@@ -6965,7 +6965,7 @@
       <item level="6" id="514" />
       <item level="7" id="514" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".4" />
+    <find_item id="3089" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1204</id>
@@ -6996,7 +6996,7 @@
       <item level="6" id="514" />
       <item level="7" id="514" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".4" />
+    <find_item id="3089" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign event 15 weeks 5-8 -->
   <campaign>
@@ -7027,7 +7027,7 @@
       <card level="6" id="2032" />
       <item level="7" id="3090" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".6" />
+    <find_item id="3089" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1206</id>
@@ -7057,7 +7057,7 @@
       <card level="6" id="2120" />
       <item level="7" id="3090" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".8" />
+    <find_item id="3089" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 16 weeks 1-4 -->
   <campaign>
@@ -7087,7 +7087,7 @@
       <card level="6" id="2099" />
       <item level="7" id="3093" />
     </rewards>
-    <find_item id="3092" drop_per_energy=".2" />
+    <find_item id="3092" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1208</id>
@@ -7117,7 +7117,7 @@
       <card level="6" id="2098" />
       <item level="7" id="3093" />
     </rewards>
-    <find_item id="3092" drop_per_energy=".4" />
+    <find_item id="3092" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Memories Best Left Forgotten  -->
   <campaign>
@@ -7150,7 +7150,7 @@
       <item level="6" id="3094" />
       <item level="7" id="3094" />
     </rewards>
-    <find_item id="3092" drop_per_energy=".4" />
+    <find_item id="3092" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 16 weeks 4-8 -->
   <campaign>
@@ -7181,7 +7181,7 @@
       <card level="6" id="2060" />
       <item level="7" id="3093" />
     </rewards>
-    <find_item id="3092" drop_per_energy=".6" />
+    <find_item id="3092" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1211</id>
@@ -7211,7 +7211,7 @@
       <card level="6" id="2024" />
       <item level="7" id="3093" />
     </rewards>
-    <find_item id="3092" drop_per_energy=".8" />
+    <find_item id="3092" drop_per_energy="0.8" />
   </campaign>
   <!-- Campaign Event 17 weeks 1-4 -->
   <campaign>
@@ -7241,7 +7241,7 @@
       <card level="6" id="2012" />
       <item level="7" id="3096" />
     </rewards>
-    <find_item id="3095" drop_per_energy=".2" />
+    <find_item id="3095" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1213</id>
@@ -7271,7 +7271,7 @@
       <card level="6" id="2070" />
       <item level="7" id="3096" />
     </rewards>
-    <find_item id="3095" drop_per_energy=".4" />
+    <find_item id="3095" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Three Valiant Hearts -->
   <campaign>
@@ -7304,7 +7304,7 @@
       <item level="6" id="3097" />
       <item level="7" id="3097" />
     </rewards>
-    <find_item id="3095" drop_per_energy=".4" />
+    <find_item id="3095" drop_per_energy="0.4" />
   </campaign>
   <!-- Campaign Event 17 weeks 5-8 -->
   <campaign>
@@ -7335,7 +7335,7 @@
       <card level="6" id="2046" />
       <item level="7" id="3096" />
     </rewards>
-    <find_item id="3095" drop_per_energy=".6" />
+    <find_item id="3095" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1216</id>
@@ -7365,7 +7365,7 @@
       <card level="6" id="2067" />
       <item level="7" id="3096" />
     </rewards>
-    <find_item id="3095" drop_per_energy=".8" />
+    <find_item id="3095" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 18 weeks 1-4 / Return to the Abyss ================================== -->
   <campaign>
@@ -7402,7 +7402,7 @@
       <item level="7" id="3100" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".2" />
+    <find_item id="3098" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1218</id>
@@ -7439,7 +7439,7 @@
       <item level="7" id="3100" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".4" />
+    <find_item id="3098" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Releasing the Elements -->
   <campaign>
@@ -7476,7 +7476,7 @@
       <item level="7" id="3099" />
       <!--  Whitesail's Spellstone  -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".4" />
+    <find_item id="3098" drop_per_energy="0.4" />
     <!-- Pillar Soul  -->
   </campaign>
   <!-- ================================== Campaign Event 18 weeks 5-8 / Return to the Abyss ================================== -->
@@ -7515,7 +7515,7 @@
       <item level="7" id="3100" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".6" />
+    <find_item id="3098" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1221</id>
@@ -7552,7 +7552,7 @@
       <item level="7" id="3100" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".8" />
+    <find_item id="3098" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 19 weeks 1-4 / Stormy Seastone Citadel ================================== -->
   <campaign>
@@ -7589,7 +7589,7 @@
       <item level="7" id="3103" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".2" />
+    <find_item id="3101" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1223</id>
@@ -7626,7 +7626,7 @@
       <item level="7" id="3103" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".4" />
+    <find_item id="3101" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node Solaron's Chosen -->
   <campaign>
@@ -7663,7 +7663,7 @@
       <item level="7" id="3102" />
       <!--  Avalanche Spellstone  -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".4" />
+    <find_item id="3101" drop_per_energy="0.4" />
     <!-- Soul of Silver  -->
   </campaign>
   <!-- Halloween Elemental 2019 -->
@@ -7693,7 +7693,7 @@
       <card level="6" id="12170" />
       <item level="7" id="104025" number="150" />
     </rewards>
-    <find_item id="3101" drop_per_energy=".2" />
+    <find_item id="3101" drop_per_energy="0.2" />
   </campaign>
   <!-- ================================== Campaign Event 19 weeks 5-8 / Stormy Seastone Citadel ================================== -->
   <campaign>
@@ -7731,7 +7731,7 @@
       <item level="7" id="3103" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".6" />
+    <find_item id="3101" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1227</id>
@@ -7768,7 +7768,7 @@
       <item level="7" id="3103" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".8" />
+    <find_item id="3101" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 20 weeks 1-4 / World's Center ================================== -->
   <campaign>
@@ -7805,7 +7805,7 @@
       <item level="7" id="3105" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3104" drop_per_energy=".2" />
+    <find_item id="3104" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1229</id>
@@ -7842,7 +7842,7 @@
       <item level="7" id="3105" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3104" drop_per_energy=".4" />
+    <find_item id="3104" drop_per_energy="0.4" />
   </campaign>
   <!-- Christmas Event 2019 -->
   <campaign>
@@ -7874,7 +7874,7 @@
       <card level="6" id="12060" />
       <item level="7" id="104027" number="50" />
     </rewards>
-    <find_item id="3104" drop_per_energy=".2" />
+    <find_item id="3104" drop_per_energy="0.2" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -7911,7 +7911,7 @@
       <item level="7" id="3106" />
       <!--  Reks Spellstone  -->
     </rewards>
-    <find_item id="3104" drop_per_energy=".4" />
+    <find_item id="3104" drop_per_energy="0.4" />
   </campaign>
   <!-- ================================== Campaign Event 20 weeks 5-8 / World's Center ================================== -->
   <campaign>
@@ -7949,7 +7949,7 @@
       <item level="7" id="3105" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3104" drop_per_energy=".6" />
+    <find_item id="3104" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1233</id>
@@ -7986,7 +7986,7 @@
       <item level="7" id="3105" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3104" drop_per_energy=".8" />
+    <find_item id="3104" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 21 weeks 1-4 / Return to Elaria ================================== -->
   <campaign>
@@ -8023,7 +8023,7 @@
       <item level="7" id="3108" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3107" drop_per_energy=".2" />
+    <find_item id="3107" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1235</id>
@@ -8060,7 +8060,7 @@
       <item level="7" id="3108" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3107" drop_per_energy=".4" />
+    <find_item id="3107" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -8097,7 +8097,7 @@
       <item level="7" id="3109" />
       <!--  Wrath's Spellstone  -->
     </rewards>
-    <find_item id="3107" drop_per_energy=".4" />
+    <find_item id="3107" drop_per_energy="0.4" />
   </campaign>
   <!-- ================================== Campaign Event 21 weeks 5-8 / Return to Elaria ================================== -->
   <campaign>
@@ -8135,7 +8135,7 @@
       <item level="7" id="3108" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3107" drop_per_energy=".6" />
+    <find_item id="3107" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1238</id>
@@ -8172,7 +8172,7 @@
       <item level="7" id="3108" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3107" drop_per_energy=".8" />
+    <find_item id="3107" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 22 weeks 1-4 / Healed Dawnglow ================================== -->
   <campaign>
@@ -8209,7 +8209,7 @@
       <item level="7" id="3111" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3110" drop_per_energy=".2" />
+    <find_item id="3110" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1240</id>
@@ -8246,7 +8246,7 @@
       <item level="7" id="3111" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3110" drop_per_energy=".4" />
+    <find_item id="3110" drop_per_energy="0.4" />
   </campaign>
   <!-- New April Fool's Campaigns -->
   <campaign>
@@ -8277,7 +8277,7 @@
       <item level="6" id="514" />
       <item level="7" id="514" />
     </rewards>
-    <find_item id="3107" drop_per_energy=".4" />
+    <find_item id="3107" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1245</id>
@@ -8308,7 +8308,7 @@
       <item level="6" id="514" />
       <item level="7" id="514" />
     </rewards>
-    <find_item id="3107" drop_per_energy=".4" />
+    <find_item id="3107" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1246</id>
@@ -8339,7 +8339,7 @@
       <card level="6" id="12180" />
       <item level="7" id="104031" number="150" />
     </rewards>
-    <find_item id="3107" drop_per_energy=".4" />
+    <find_item id="3107" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -8376,7 +8376,7 @@
       <item level="7" id="3112" />
       <!--  Conjured Dragon Spellstone  -->
     </rewards>
-    <find_item id="3110" drop_per_energy=".4" />
+    <find_item id="3110" drop_per_energy="0.4" />
   </campaign>
   <!-- ================================== Campaign Event 22 weeks 5-8 / Healed Dawnglow ================================== -->
   <campaign>
@@ -8414,7 +8414,7 @@
       <item level="7" id="3111" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3110" drop_per_energy=".6" />
+    <find_item id="3110" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1249</id>
@@ -8451,7 +8451,7 @@
       <item level="7" id="3111" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3110" drop_per_energy=".8" />
+    <find_item id="3110" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 23 weeks 1-4 / Return to Luminis ================================== -->
   <campaign>
@@ -8488,7 +8488,7 @@
       <item level="7" id="3114" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3113" drop_per_energy=".2" />
+    <find_item id="3113" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1251</id>
@@ -8525,7 +8525,7 @@
       <item level="7" id="3114" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3113" drop_per_energy=".4" />
+    <find_item id="3113" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -8562,7 +8562,7 @@
       <item level="7" id="3115" />
       <!--  Bloodmist Harpy's Spellstone  -->
     </rewards>
-    <find_item id="3113" drop_per_energy=".4" />
+    <find_item id="3113" drop_per_energy="0.4" />
   </campaign>
   <!-- ================================== Campaign Event 23 weeks 5-8 / Return to Luminis ================================== -->
   <campaign>
@@ -8600,7 +8600,7 @@
       <item level="7" id="3114" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3113" drop_per_energy=".6" />
+    <find_item id="3113" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1254</id>
@@ -8637,7 +8637,7 @@
       <item level="7" id="3114" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3113" drop_per_energy=".8" />
+    <find_item id="3113" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 24 weeks 1-4 / Return to Karthos ================================== -->
   <campaign>
@@ -8674,7 +8674,7 @@
       <item level="7" id="3117" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3116" drop_per_energy=".2" />
+    <find_item id="3116" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1256</id>
@@ -8711,7 +8711,7 @@
       <item level="7" id="3117" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3116" drop_per_energy=".4" />
+    <find_item id="3116" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -8748,7 +8748,7 @@
       <item level="7" id="3118" />
       <!--  Slagspirit's Spellstone  -->
     </rewards>
-    <find_item id="3116" drop_per_energy=".4" />
+    <find_item id="3116" drop_per_energy="0.4" />
   </campaign>
   <!-- ================================== Campaign Event 24 weeks 5-8 / Return to Karthos ================================== -->
   <campaign>
@@ -8786,7 +8786,7 @@
       <item level="7" id="3117" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3116" drop_per_energy=".6" />
+    <find_item id="3116" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1259</id>
@@ -8823,7 +8823,7 @@
       <item level="7" id="3117" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3116" drop_per_energy=".8" />
+    <find_item id="3116" drop_per_energy="0.8" />
   </campaign>
   <!-- ================================== Campaign Event 25 weeks 1-4 / Return to Tarragon Peak ================================== -->
   <campaign>
@@ -8860,7 +8860,7 @@
       <item level="7" id="3120" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".2" />
+    <find_item id="3119" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1261</id>
@@ -8897,7 +8897,7 @@
       <item level="7" id="3120" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".4" />
+    <find_item id="3119" drop_per_energy="0.4" />
   </campaign>
   <!-- 5th Anniversary -->
   <campaign>
@@ -8974,7 +8974,7 @@
       <item level="7" id="3121" />
       <!--  Siren's Spellstone  -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".4" />
+    <find_item id="3119" drop_per_energy="0.4" />
   </campaign>
   <!-- ================================== Campaign Event 25 weeks 5-8 / Return to Tarragon Peak ================================== -->
   <campaign>
@@ -9012,7 +9012,7 @@
       <item level="7" id="3120" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".6" />
+    <find_item id="3119" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1265</id>
@@ -9049,7 +9049,7 @@
       <item level="7" id="3120" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".8" />
+    <find_item id="3119" drop_per_energy="0.8" />
   </campaign>
   <!-- Halloween 2020 -->
   <campaign>
@@ -9078,7 +9078,7 @@
       <card level="6" id="12197" />
       <item level="7" id="104038" number="150" />
     </rewards>
-    <find_item id="3119" drop_per_energy=".2" />
+    <find_item id="3119" drop_per_energy="0.2" />
   </campaign>
   <!-- ================================== Campaign Event 26 weeks 1-4 / Gladius Scriptorium ================================== -->
   <campaign>
@@ -9115,7 +9115,7 @@
       <item level="7" id="3123" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3122" drop_per_energy=".2" />
+    <find_item id="3122" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1268</id>
@@ -9152,7 +9152,7 @@
       <item level="7" id="3123" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3122" drop_per_energy=".4" />
+    <find_item id="3122" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -9191,7 +9191,7 @@
       <item level="7" id="3124" />
       <!--  Noble Swordfish Spellstone  -->
     </rewards>
-    <find_item id="3122" drop_per_energy=".4" />
+    <find_item id="3122" drop_per_energy="0.4" />
   </campaign>
   <!-- ================================== Campaign Event 26 weeks 5-8 / Gladius Scriptorium ================================== -->
   <campaign>
@@ -9231,7 +9231,7 @@
       <item level="7" id="3123" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3122" drop_per_energy=".6" />
+    <find_item id="3122" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1271</id>
@@ -9270,7 +9270,7 @@
       <item level="7" id="3123" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3122" drop_per_energy=".8" />
+    <find_item id="3122" drop_per_energy="0.8" />
   </campaign>
   <!-- ========== Campaign Event 27 weeks 1-4 / Skyhaven Assault ============ -->
   <campaign>
@@ -9309,7 +9309,7 @@
       <item level="7" id="3126" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3125" drop_per_energy=".2" />
+    <find_item id="3125" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1273</id>
@@ -9348,7 +9348,7 @@
       <item level="7" id="3126" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3125" drop_per_energy=".4" />
+    <find_item id="3125" drop_per_energy="0.4" />
   </campaign>
   <!-- Christmas Event 2020 -->
   <campaign>
@@ -9382,7 +9382,7 @@
       <card level="6" id="12041" />
       <item level="7" id="104040" number="50" />
     </rewards>
-    <find_item id="3122" drop_per_energy=".2" />
+    <find_item id="3122" drop_per_energy="0.2" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -9421,7 +9421,7 @@
       <item level="7" id="3127" />
       <!--  Herald of Judgment's Spellstone  -->
     </rewards>
-    <find_item id="3125" drop_per_energy=".4" />
+    <find_item id="3125" drop_per_energy="0.4" />
   </campaign>
   <!-- ========= Campaign Event 27 weeks 5-8 / Skyhaven Assault ========= -->
   <campaign>
@@ -9461,7 +9461,7 @@
       <item level="7" id="3126" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3125" drop_per_energy=".6" />
+    <find_item id="3125" drop_per_energy="0.6" />
   </campaign>
   <campaign>
     <id>1277</id>
@@ -9500,7 +9500,7 @@
       <item level="7" id="3126" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3125" drop_per_energy=".8" />
+    <find_item id="3125" drop_per_energy="0.8" />
   </campaign>
   <!-- ========== Campaign Event 28 weeks 1-4 / Conflux Convergence ============ -->
   <campaign>
@@ -9539,7 +9539,7 @@
       <item level="7" id="3129" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3128" drop_per_energy=".2" />
+    <find_item id="3128" drop_per_energy="0.2" />
   </campaign>
   <campaign>
     <id>1279</id>
@@ -9579,7 +9579,7 @@
       <item level="7" id="3129" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -9619,7 +9619,7 @@
       <item level="7" id="3130" />
       <!--  Shatterstone Anomaly's Spellstone  -->
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
   <!-- April Fool's Campaign 2021 -->
   <campaign>
@@ -9650,7 +9650,7 @@
       <item level="6" id="514" />
       <item level="7" id="514" />
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1282</id>
@@ -9681,7 +9681,7 @@
       <item level="6" id="514" />
       <item level="7" id="514" />
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1283</id>
@@ -9711,7 +9711,7 @@
       <card level="6" id="12209" />
       <item level="7" id="104044" number="150" />
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
   <!-- ========== Campaign Event 28 weeks 5-8 / Conflux Convergence ============ -->
   <campaign>
@@ -9752,7 +9752,7 @@
       <item level="7" id="3129" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
   <campaign>
     <id>1285</id>
@@ -9792,7 +9792,7 @@
       <item level="7" id="3129" />
       <!-- Crafting Item for Legendary Card -->
     </rewards>
-    <find_item id="3128" drop_per_energy=".4" />
+    <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
   <!-- Revisited map campaign events start -->
   <!-- Campaign Event 29 - Tarragon Peak -->
@@ -9835,7 +9835,7 @@
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3083" drop_per_energy=".4" />
+    <find_item id="3083" drop_per_energy="0.4" />
     <ignore_energy_reduction_until>1624554000</ignore_energy_reduction_until>
     <!-- Thursday, 24 June 2021 17:00:00 -->
   </campaign>
@@ -9879,7 +9879,7 @@
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3083" drop_per_energy=".4" />
+    <find_item id="3083" drop_per_energy="0.4" />
     <ignore_energy_reduction_until>1624554000</ignore_energy_reduction_until>
     <!-- Thursday, 24 June 2021 17:00:00 -->
   </campaign>
@@ -9923,7 +9923,7 @@
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3056" drop_per_energy=".6" />
+    <find_item id="3056" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1624554000</ignore_energy_reduction_until>
     <!-- Thursday, 24 June 2021 17:00:00 -->
   </campaign>
@@ -9967,7 +9967,7 @@
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3056" drop_per_energy=".8" />
+    <find_item id="3056" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1624554000</ignore_energy_reduction_until>
     <!-- Thursday, 24 June 2021 17:00:00 -->
   </campaign>
@@ -10012,7 +10012,7 @@
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3071" drop_per_energy=".6" />
+    <find_item id="3071" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1629392400</ignore_energy_reduction_until>
     <!-- Thursday, 19 August 2021 17:00:00 -->
   </campaign>
@@ -10056,7 +10056,7 @@
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3071" drop_per_energy=".8" />
+    <find_item id="3071" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1629392400</ignore_energy_reduction_until>
     <!-- Thursday, 19 August 2021 17:00:00 -->
   </campaign>
@@ -10101,7 +10101,7 @@
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3065" drop_per_energy=".6" />
+    <find_item id="3065" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1632330000</ignore_energy_reduction_until>
     <!-- Wednesday, 22 September 2021 17:00:00 -->
   </campaign>
@@ -10145,7 +10145,7 @@
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3065" drop_per_energy=".8" />
+    <find_item id="3065" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1632330000</ignore_energy_reduction_until>
     <!-- Wednesday, 22 September 2021 17:00:00 -->
   </campaign>
@@ -10188,7 +10188,7 @@
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3080" drop_per_energy=".6" />
+    <find_item id="3080" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1634662800</ignore_energy_reduction_until>
     <!-- Tuesday, 19 October 2021 17:00:00 -->
   </campaign>
@@ -10232,7 +10232,7 @@
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3080" drop_per_energy=".8" />
+    <find_item id="3080" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1634662800</ignore_energy_reduction_until>
     <!-- Tuesday, 19 October 2021 17:00:00 -->
   </campaign>
@@ -10276,7 +10276,7 @@
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3059" drop_per_energy=".6" />
+    <find_item id="3059" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1636650000</ignore_energy_reduction_until>
     <!-- Thursday, 11 November 2021 17:00:00 -->
   </campaign>
@@ -10320,7 +10320,7 @@
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3059" drop_per_energy=".8" />
+    <find_item id="3059" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1636650000</ignore_energy_reduction_until>
     <!-- Thursday, 11 November 2021 17:00:00 -->
   </campaign>
@@ -10402,7 +10402,7 @@
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3068" drop_per_energy=".6" />
+    <find_item id="3068" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1639069200</ignore_energy_reduction_until>
     <!-- Thursday, 9 December 2021 17:00:00 -->
   </campaign>
@@ -10446,7 +10446,7 @@
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3068" drop_per_energy=".8" />
+    <find_item id="3068" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1639069200</ignore_energy_reduction_until>
     <!-- Thursday, 9 December 2021 17:00:00 -->
   </campaign>
@@ -10490,7 +10490,7 @@
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3062" drop_per_energy=".6" />
+    <find_item id="3062" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
     <!-- Thursday, 6 January 2022 17:00:00 -->
   </campaign>
@@ -10534,7 +10534,7 @@
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3062" drop_per_energy=".8" />
+    <find_item id="3062" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
     <!-- Thursday, 6 January 2022 17:00:00 -->
   </campaign>
@@ -10567,7 +10567,7 @@
       <item level="6" id="104018" number="75" />
       <item level="7" id="104044" number="150" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".2" />
+    <find_item id="3062" drop_per_energy="0.2" />
   </campaign>
   <!-- Campaign Event 37 - Healed Dawnglow  -->
   <campaign>
@@ -10609,7 +10609,7 @@
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3110" drop_per_energy=".6" />
+    <find_item id="3110" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
     <!-- Thursday, 6 January 2022 17:00:00 -->
   </campaign>
@@ -10653,7 +10653,7 @@
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3110" drop_per_energy=".8" />
+    <find_item id="3110" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
     <!-- Thursday, 6 January 2022 17:00:00 -->
   </campaign>
@@ -10689,7 +10689,7 @@
       <item level="6" id="104004" number="100" />
       <item level="7" id="104018" number="125" />
     </rewards>
-    <find_item id="3110" drop_per_energy=".2" />
+    <find_item id="3110" drop_per_energy="0.2" />
   </campaign>
   <!-- Campaign Event 38 - World's Center  -->
   <campaign>
@@ -10731,7 +10731,7 @@
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3104" drop_per_energy=".6" />
+    <find_item id="3104" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1645722000</ignore_energy_reduction_until>
     <!-- Thursday, 24 February 2022 17:00:00 -->
   </campaign>
@@ -10775,7 +10775,7 @@
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3104" drop_per_energy=".8" />
+    <find_item id="3104" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1645722000</ignore_energy_reduction_until>
     <!-- Thursday, 24 February 2022 17:00:00 -->
   </campaign>
@@ -10819,7 +10819,7 @@
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".6" />
+    <find_item id="3098" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1648746000</ignore_energy_reduction_until>
     <!-- Thursday, 31 March 2022 17:00:00   -->
   </campaign>
@@ -10863,7 +10863,7 @@
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3098" drop_per_energy=".8" />
+    <find_item id="3098" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1648746000</ignore_energy_reduction_until>
     <!-- Thursday, 31 March 2022 17:00:00 -->
   </campaign>
@@ -10907,7 +10907,7 @@
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".6" />
+    <find_item id="3101" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1651165200</ignore_energy_reduction_until>
     <!-- Thursday, 28 April 2022 17:00:00  -->
   </campaign>
@@ -10951,11 +10951,11 @@
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".8" />
+    <find_item id="3101" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1651165200</ignore_energy_reduction_until>
     <!-- Thursday, 28 April 2022 17:00:00  -->
   </campaign>
-  <!-- Campaign Event 41 - Return to Tarragon Peak -->
+  <!-- Campaign Event 88 - Return to Tarragon Peak -->
   <campaign>
     <id>1313</id>
     <name>Taking a break</name>
@@ -10995,7 +10995,7 @@
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".6" />
+    <find_item id="3119" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1653584400</ignore_energy_reduction_until>
     <!-- Thursday, May 26, 2022 at 17:00:00  -->
   </campaign>
@@ -11039,7 +11039,7 @@
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".8" />
+    <find_item id="3119" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1653584400</ignore_energy_reduction_until>
     <!-- Thursday, May 26, 2022 at 17:00:00  -->
   </campaign>
@@ -11075,9 +11075,10 @@
       <item level="7" id="104022" number="50" />
       <!-- Bluefire Stones -->
     </rewards>
-    <find_item id="3119" drop_per_energy=".4" />
+    <find_item id="3119" drop_per_energy="0.4" />
   </campaign>
   <!-- April Fools Campaigns END -->
+  <!-- Campaign Event 89 - Return to Elaria -->
   <campaign>
     <id>1316</id>
     <name>The Abduction</name>
@@ -11117,7 +11118,7 @@
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3107" drop_per_energy=".6" />
+    <find_item id="3107" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1656003600</ignore_energy_reduction_until>
     <!-- Thursday, June 23, 2022 at 17:00:00  -->
   </campaign>
@@ -11161,7 +11162,7 @@
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3107" drop_per_energy=".8" />
+    <find_item id="3107" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1656003600</ignore_energy_reduction_until>
     <!-- Thursday, June 23, 2022 at 17:00:00  -->
   </campaign>
@@ -11555,7 +11556,7 @@
       <card level="6" id="512" />
       <item level="7" id="2530" />
     </rewards>
-    <find_item id="3062" drop_per_energy=".2" />
+    <find_item id="3062" drop_per_energy="0.2" />
   </campaign>
   <!-- Champion Bosses -->
   <!-- Tanit -->
@@ -11703,8 +11704,39 @@
       <card level="6" id="2006" />
       <item level="7" id="104057" number="100" />
     </rewards>
-    <find_item id="3119" drop_per_energy=".4" />
+    <find_item id="3119" drop_per_energy="0.4" />
   </campaign>
   <!-- LBN Vulcanos Dragon event 88 END -->
+  <!-- LBN Alyel Angel event 89  -->
+  <campaign>
+    <id>4002</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Alyel</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <location_id>27</location_id>
+    <x>200</x>
+    <y>270</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6825</mission_id>
+      <mission_id>6826</mission_id>
+      <mission_id>6827</mission_id>
+      <mission_id>6828</mission_id>
+      <mission_id>6829</mission_id>
+      <mission_id>6830</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2006" />
+      <card level="5" id="2006" />
+      <item level="6" id="104058" number="25" />
+      <item level="7" id="104058" number="75" />
+    </rewards>
+    <find_item id="3107" drop_per_energy=".6" />
+  </campaign>
+  <!-- LBN Alyel Angel event 89 END -->
 </root>
 

@@ -17537,6 +17537,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 90 - Avian - Node 1 -->
+  <achievement>
+    <id>3788</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Misleading a menace</name>
+    <desc>Complete the 'Misleading a menace' campaign on Mastery Level 1.</desc>
+    <mission_req>6831</mission_req>
+    <locked_start_time>1653584400</locked_start_time>
+    <!-- Thursday, 26 May 2022 17:00:00  -->
+    <req>
+      <campaign>1318</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3049" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7086" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3789</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Misleading a menace</name>
+    <desc>Complete the 'Misleading a menace' campaign on Mastery Level 2.</desc>
+    <mission_req>6831</mission_req>
+    <locked_start_time>1653584400</locked_start_time>
+    <!-- Thursday, 26 May 2022 17:00:00  -->
+    <achievement_req>3788</achievement_req>
+    <req>
+      <campaign>1318</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3790</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Misleading a menace</name>
+    <desc>Complete the 'Misleading a menace' campaign on Mastery Level 4.</desc>
+    <mission_req>6831</mission_req>
+    <locked_start_time>1653584400</locked_start_time>
+    <!-- Thursday, 26 May 2022 17:00:00  -->
+    <achievement_req>3789</achievement_req>
+    <req>
+      <campaign>1318</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3791</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Misleading a menace</name>
+    <desc>Complete the 'Misleading a menace' campaign on Mastery Level 6.</desc>
+    <mission_req>6831</mission_req>
+    <locked_start_time>1653584400</locked_start_time>
+    <!-- Thursday, 26 May 2022 17:00:00  -->
+    <achievement_req>3790</achievement_req>
+    <req>
+      <campaign>1318</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 90 - Avian - Node 2 -->
+  <achievement>
+    <id>3792</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The hunter has become the hunted</name>
+    <desc>Complete the 'The hunter has become the hunted' campaign on Mastery Level 2.</desc>
+    <mission_req>6837</mission_req>
+    <locked_start_time>1654794000</locked_start_time>
+    <!-- Thursday, 9 June 2022 17:00:00 -->
+    <req>
+      <campaign>1319</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3793</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The hunter has become the hunted</name>
+    <desc>Complete the 'The hunter has become the hunted' campaign on Mastery Level 4.</desc>
+    <mission_req>6837</mission_req>
+    <locked_start_time>1654794000</locked_start_time>
+    <!-- Thursday, 9 June 2022 17:00:00 -->
+    <achievement_req>3792</achievement_req>
+    <req>
+      <campaign>1319</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3794</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The hunter has become the hunted</name>
+    <desc>Complete the 'The hunter has become the hunted' campaign on Mastery Level 6.</desc>
+    <mission_req>6837</mission_req>
+    <locked_start_time>1654794000</locked_start_time>
+    <!-- Thursday, 9 June 2022 17:00:00 -->
+    <achievement_req>3793</achievement_req>
+    <req>
+      <campaign>1319</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -18502,7 +18635,7 @@
     <id>4042</id>
     <type>2</type>
     <order>639</order>
-    <name>Champion of Return to Tarragon Peak</name>
+    <name>Champion Tarragon Peak II</name>
     <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Return to Tarragon Peak.</desc>
     <icon>mapNavGlobe</icon>
     <mission_req>6486</mission_req>
@@ -18520,6 +18653,62 @@
       <campaign>1313</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1314</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Return to Elaria Revisited -->
+    <id>4043</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Return to Elaria</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Return to Elaria.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6813</mission_req>
+    <req>
+      <campaign>1234</campaign>
+      <!-- 1st node -->
+      <campaign>1235</campaign>
+      <!-- 2nd node -->
+      <campaign>1236</campaign>
+      <!-- Boss node -->
+      <campaign>1237</campaign>
+      <!-- 3rd node -->
+      <campaign>1238</campaign>
+      <!-- 4th node -->
+      <campaign>1316</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1317</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Frigore Revisited -->
+    <id>4044</id>
+    <type>2</type>
+    <order>632</order>
+    <name>Champion of Frigore</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Frigore.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6831</mission_req>
+    <req>
+      <campaign>1114</campaign>
+      <campaign>1115</campaign>
+      <campaign>1116</campaign>
+      <campaign>1117</campaign>
+      <campaign>1118</campaign>
+      <campaign>1119</campaign>
+      <campaign>1318</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1319</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>

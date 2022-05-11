@@ -1584,6 +1584,41 @@ var BATTLEGROUNDS = {
 		"id": "150",
 		"name": "Exalted Warfare"
 	},
+	"151": {
+		"desc": "All avians mark a random target upon activation, ignoring invisibility and hexing them for 15%. 0-2D will Weaken random targets equal to 15%. 3-4D gain Shroud equal to 10%. Values are base HP based",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "mark",
+				"mult": 0.15,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "weaken",
+				"mult": 0.15,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"mult": 0.1,
+				"y": "10"
+			}
+		],
+		"id": "151",
+		"name": "Evil Eye"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

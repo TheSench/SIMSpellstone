@@ -12,7 +12,7 @@
 
 		<add_skill>
 			id='absorb' 	skill name
-			mult='.1' 		multiplier
+			mult='0.1' 		multiplier
 			base='health' 	always needs a base; attack or health
 			x='3' 			x + (base*mult). If no mult that x is just the value.
 			all='1' 		if this is left out will be 1 random target
@@ -20,7 +20,7 @@
 
 		<skill>
 			id='heal' 	skill name
-			mult='.2' 		multiplier
+			mult='0.2' 		multiplier
 			base='health' 	depends on a skill to skill basis if this is needed or not
 			x='3' 			x + (base*mult). If no mult that x is just the value.
 			all='1' 		if this is left out will be 1 random target
@@ -36,8 +36,8 @@
 			</actor_effect>
 			<projectile_effect>
 				<prefab>PoisonProjectile</prefab>
-				<delay>.5</delay>
-				<duration>.5</duration>
+				<delay>0.5</delay>
+				<duration>0.5</duration>
 				<sound>scrape</sound>
 				<offset>2</offset>    	0=Center, 1=Health, 2=Attack, 3=skills
 			</projectile_effect>
@@ -59,7 +59,7 @@
     <web_picture>filter_dragon_64.png</web_picture>
     <icon>filter_dragon_64</icon>
     <effect>
-      <skill id="heal" mult=".25" all="1" y="9" />
+      <skill id="heal" mult="0.25" all="1" y="9" />
     </effect>
   </battleground>
   <battleground>
@@ -100,7 +100,7 @@
     <web_picture>filter_undead_64.png</web_picture>
     <icon>filter_undead_64</icon>
     <effect>
-      <add_skill id="berserk" mult=".15" base="health" y="7" />
+      <add_skill id="berserk" mult="0.15" base="health" y="7" />
     </effect>
   </battleground>
   <battleground>
@@ -115,13 +115,13 @@
         <projectile_effect>
           <prefab>Legion_Projectile</prefab>
           <delay>0</delay>
-          <duration>.5</duration>
-          <translation>.5</translation>
+          <duration>0.5</duration>
+          <translation>0.5</translation>
           <offset>2</offset>
         </projectile_effect>
         <target_effect>
           <prefab>Legion_Angel_Target</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
@@ -136,12 +136,12 @@
     <icon>filter_elementals_64</icon>
     <effect>
       <card_type>99</card_type>
-      <skill id="enlarge" mult=".75" all="1" y="5" />
+      <skill id="enlarge" mult="0.75" all="1" y="5" />
       <!-- mult is based on attack -->
       <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
         <target_effect>
           <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
@@ -155,7 +155,7 @@
     <web_picture>filter_frog_64.png</web_picture>
     <icon>filter_frog_64</icon>
     <effect>
-      <add_skill id="poisonstrike" mult=".5" base="attack" y="4" />
+      <add_skill id="poisonstrike" mult="0.5" base="attack" y="4" />
     </effect>
   </battleground>
   <battleground>
@@ -197,7 +197,7 @@
           <prefab>FireVengence_Reverse</prefab>
           <prefab_enemy>FireVengence</prefab_enemy>
           <bundle_id>69</bundle_id>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1.5</duration>
           <shake>true</shake>
         </target_effect>
@@ -216,14 +216,14 @@
           <prefab>goblinBombProjectile</prefab>
           <bundle_id>75</bundle_id>
           <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
           <offset>0</offset>
         </projectile_effect>
         <target_effect>
           <prefab>goblinBombTarget</prefab>
           <bundle_id>75</bundle_id>
-          <delay>.75</delay>
+          <delay>0.75</delay>
           <duration>1.25</duration>
           <shake>true</shake>
         </target_effect>
@@ -236,7 +236,7 @@
     <desc>All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 30% of their base Health while on delay.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
-      <skill id="protect_seafolk" mult=".3" base="health" all="1" y="12" />
+      <skill id="protect_seafolk" mult="0.3" base="health" all="1" y="12" />
       <skill id="displayEffect" trigger="onSkillDelay" s="protect_seafolk">
         <target_effect>
           <prefab>submerge_fadecloth_delay</prefab>
@@ -247,8 +247,8 @@
         </target_effect>
         <projectile_effect>
           <prefab>ProtectProjectile</prefab>
-          <delay>.5</delay>
-          <duration>.5</duration>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
         </projectile_effect>
       </skill>
       <skill id="displayEffect" trigger="onSkill" s="protect_seafolk">
@@ -261,8 +261,8 @@
         </target_effect>
         <projectile_effect>
           <prefab>ProtectProjectile</prefab>
-          <delay>.5</delay>
-          <duration>.5</duration>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
         </projectile_effect>
       </skill>
       <skill id="displayEffect" trigger="onSkillHit" s="protect_seafolk">
@@ -346,7 +346,7 @@
       <skill id="displayEffect" trigger="onSkill" s="enlarge">
         <target_effect>
           <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
@@ -404,17 +404,17 @@
     <icon>filter_elementals_64</icon>
     <effect>
       <card_type>99</card_type>
-      <skill id="enlarge" mult=".5" all="1" yy="1,5" />
+      <skill id="enlarge" mult="0.5" all="1" yy="1,5" />
       <!-- mult is based on attack -->
       <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
         <target_effect>
           <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
       </skill>
-      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2,5" />
+      <add_skill id="counter" mult="0.5" base="attack" all="1" yy="2,5" />
       <skill id="displayEffect" trigger="onSkill" yy="2,5" s="counter">
         <actor_effect>
           <prefab>elemental_BGE_chaos</prefab>
@@ -455,13 +455,13 @@
         <projectile_effect>
           <prefab>Legion_Projectile</prefab>
           <delay>0</delay>
-          <duration>.5</duration>
-          <translation>.5</translation>
+          <duration>0.5</duration>
+          <translation>0.5</translation>
           <offset>2</offset>
         </projectile_effect>
         <target_effect>
           <prefab>Legion_Angel_Target</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
@@ -474,7 +474,7 @@
     <desc>All Mechas have upgraded their protective protocols, gaining Ward equal to 3 plus 10% of their base Health.</desc>
     <icon>filter_mech_64</icon>
     <effect>
-      <add_skill id="absorb_mecha" mult=".1" base="health" x="3" all="1" y="16" />
+      <add_skill id="absorb_mecha" mult="0.1" base="health" x="3" all="1" y="16" />
       <skill id="displayEffect" trigger="onSkill" s="absorb_mecha">
         <target_effect>
           <prefab>ReinforceActive</prefab>
@@ -492,7 +492,7 @@
     <desc>Aether have their Attack and Health increased by 25% of the base.</desc>
     <icon>filter_aether_64</icon>
     <effect>
-      <skill id="enlarge" mult=".25" all="1" y="1" />
+      <skill id="enlarge" mult="0.25" all="1" y="1" />
       <!-- mult is based on attack -->
       <scale_health base="health" mult="0.25" yy="1" />
     </effect>
@@ -503,7 +503,7 @@
     <desc>Chaos have their Attack and Health increased by 25% of the base.</desc>
     <icon>filter_chaos_64</icon>
     <effect>
-      <skill id="enlarge" mult=".25" all="1" y="2" />
+      <skill id="enlarge" mult="0.25" all="1" y="2" />
       <!-- mult is based on attack -->
       <scale_health base="health" mult="0.25" yy="2" />
     </effect>
@@ -514,7 +514,7 @@
     <desc>Wyld have their Attack and Health increased by 25% of the base.</desc>
     <icon>filter_wyld_64</icon>
     <effect>
-      <skill id="enlarge" mult=".25" all="1" y="3" />
+      <skill id="enlarge" mult="0.25" all="1" y="3" />
       <!-- mult is based on attack -->
       <scale_health base="health" mult="0.25" yy="3" />
     </effect>
@@ -526,7 +526,7 @@
     <web_picture>filter_seafolk_64.png</web_picture>
     <icon>filter_seafolk_64</icon>
     <effect>
-      <!-- <skill id='enlarge' mult='.2' base='health' all='1' y='12' /> -->
+      <!-- <skill id='enlarge' mult='0.2' base='health' all='1' y='12' /> -->
       <scale_attack base="health" mult="0.15" yy="12" />
       <skill id="displayEffect" trigger="onPlay" yy="12">
         <actor_effect>
@@ -571,7 +571,7 @@
     <desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active non-tower ally creature by 20% of the Attacker's base Health.</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
-      <add_skill id="swarm" mult=".2" base="health" y="13" />
+      <add_skill id="swarm" mult="0.2" base="health" y="13" />
     </effect>
   </battleground>
   <battleground>
@@ -580,7 +580,7 @@
     <desc>Deals damage to opposing creatures and then heals self, even while on delay. Damage and heal are equal to 3 + 5% of the card's base Health. This damage cannot be increased.</desc>
     <icon>filter_undead_64.png</icon>
     <effect>
-      <add_skill id="vampirism" mult=".05" base="health" x="3" y="7" />
+      <add_skill id="vampirism" mult="0.05" base="health" x="3" y="7" />
     </effect>
   </battleground>
   <battleground>
@@ -589,7 +589,7 @@
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health and gain Pierce equal to their base Attack.</desc>
     <icon>filter_frog_64.png</icon>
     <effect>
-      <add_skill id="bash" mult=".25" base="health" y="4" />
+      <add_skill id="bash" mult="0.25" base="health" y="4" />
       <add_skill id="pierce" mult="1" base="attack" y="4" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
@@ -630,8 +630,8 @@
         </target_effect>
         <projectile_effect>
           <prefab>ProtectProjectile</prefab>
-          <delay>.5</delay>
-          <duration>.5</duration>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
         </projectile_effect>
       </skill>
       <skill id="displayEffect" trigger="onSkillHit" s="protect">
@@ -651,7 +651,7 @@
         </actor_effect>
       </skill>
       <add_skill id="burn" mult="0.20" all="1" base="health" yy="2,5" />
-      <add_skill id="bash" mult=".30" all="1" base="health" yy="3,5" />
+      <add_skill id="bash" mult="0.30" all="1" base="health" yy="3,5" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
           <prefab>frogbge_Target</prefab>
@@ -687,13 +687,13 @@
         <projectile_effect>
           <prefab>Legion_Projectile</prefab>
           <delay>0</delay>
-          <duration>.5</duration>
-          <translation>.5</translation>
+          <duration>0.5</duration>
+          <translation>0.5</translation>
           <offset>2</offset>
         </projectile_effect>
         <target_effect>
           <prefab>Legion_Angel_Target</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
@@ -719,7 +719,7 @@
       <add_skill id="burn" mult="0.2" base="health" y="9" delay="0,1,2" />
       <add_skill id="regenerate" mult="0.1" x="4" base="health" y="9" delay="3,4" />
       <!-- Elemental Discordance -->
-      <skill id="protect" ignore_nullify="1" mult=".1" x="4" all="1" base="health" yy="1,5" />
+      <skill id="protect" ignore_nullify="1" mult="0.1" x="4" all="1" base="health" yy="1,5" />
       <skill id="displayEffect" trigger="onSkill" s="protect">
         <target_effect>
           <prefab>submerge_fadecloth</prefab>
@@ -730,8 +730,8 @@
         </target_effect>
         <projectile_effect>
           <prefab>ProtectProjectile</prefab>
-          <delay>.5</delay>
-          <duration>.5</duration>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
         </projectile_effect>
       </skill>
       <skill id="displayEffect" trigger="onSkillHit" s="protect">
@@ -751,7 +751,7 @@
         </actor_effect>
       </skill>
       <add_skill id="burn" mult="0.75" all="1" base="attack" yy="2,5" />
-      <add_skill id="bash" mult=".25" all="1" base="health" yy="3,5" />
+      <add_skill id="bash" mult="0.25" all="1" base="health" yy="3,5" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
           <prefab>frogbge_Target</prefab>
@@ -762,9 +762,9 @@
         </target_effect>
       </skill>
       <!-- Poisonbolt Evolution -->
-      <add_skill id="poisonstrike" mult=".5" base="attack" y="4" />
+      <add_skill id="poisonstrike" mult="0.5" base="attack" y="4" />
       <!-- Undead Vampirism -->
-      <add_skill id="vampirism" mult=".05" base="health" x="3" y="7" />
+      <add_skill id="vampirism" mult="0.05" base="health" x="3" y="7" />
       <!-- Goblin Barrage -->
       <add_skill id="barrage" mult="1" base="attack" y="11" />
       <skill id="displayEffect" trigger="onSkill" y="11" s="barrage">
@@ -772,14 +772,14 @@
           <prefab>goblinBombProjectile</prefab>
           <bundle_id>75</bundle_id>
           <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
           <offset>0</offset>
         </projectile_effect>
         <target_effect>
           <prefab>goblinBombTarget</prefab>
           <bundle_id>75</bundle_id>
-          <delay>.75</delay>
+          <delay>0.75</delay>
           <duration>1.25</duration>
           <shake>true</shake>
         </target_effect>
@@ -805,7 +805,7 @@
         </actor_effect>
       </skill>
       <!-- Energy Warding -->
-      <add_skill id="absorb_mecha" mult=".1" base="health" x="3" all="1" y="16" />
+      <add_skill id="absorb_mecha" mult="0.1" base="health" x="3" all="1" y="16" />
       <skill id="displayEffect" trigger="onSkill" s="absorb_mecha">
         <target_effect>
           <prefab>ReinforceActive</prefab>
@@ -823,7 +823,7 @@
     <desc>Avian of 0-2 delay deal extra damage on their first attack each turn equal to 40% of their base Attack. Avians of 3-4 delay gain Shroud equal to 10% +2 of their base Health.</desc>
     <icon>filter_avian_64.png</icon>
     <effect>
-      <add_skill id="bash" mult=".40" base="attack" y="10" delay="0,1,2" />
+      <add_skill id="bash" mult="0.40" base="attack" y="10" delay="0,1,2" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
           <prefab>frogbge_Target</prefab>
@@ -833,7 +833,7 @@
           <sound>shield</sound>
         </target_effect>
       </skill>
-      <add_skill id="stasis" mult=".1" x="2" base="health" y="10" delay="3,4" />
+      <add_skill id="stasis" mult="0.1" x="2" base="health" y="10" delay="3,4" />
     </effect>
   </battleground>
   <battleground>
@@ -842,7 +842,7 @@
     <desc>All Mechas have modified their weaponry, increasing their Attack by 15% of their base Health!</desc>
     <icon>filter_mech_64</icon>
     <effect>
-      <!-- <skill id='enlarge' mult='.2' base='health' all='1' y='12' /> -->
+      <!-- <skill id='enlarge' mult='0.2' base='health' all='1' y='12' /> -->
       <scale_attack base="health" mult="0.15" yy="16" />
     </effect>
   </battleground>
@@ -852,8 +852,8 @@
     <desc>Dragons of 0-2 delay gain Hex equal to 20% of their base Health. Dragons of 3-4 delay gain Weaken equal to 30% of their base Health, and gain Vengeance 8.</desc>
     <icon>filter_dragon_64.png</icon>
     <effect>
-      <add_skill id="enfeeblebge" mult=".20" base="health" y="9" delay="0,1,2" />
-      <add_skill id="weakenbge" mult=".30" base="health" y="9" delay="3,4" />
+      <add_skill id="enfeeblebge" mult="0.20" base="health" y="9" delay="0,1,2" />
+      <add_skill id="weakenbge" mult="0.30" base="health" y="9" delay="3,4" />
       <add_skill id="counter" x="8" y="9" delay="3,4" />
     </effect>
   </battleground>
@@ -956,7 +956,7 @@
     <desc>All Seafolk gain barrier equal to 20% of their base health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base health and pierce equal to their base attack.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
-      <skill id="protect" ignore_nullify="1" mult=".2" all="1" base="health" y="12" delay="3,4" />
+      <skill id="protect" ignore_nullify="1" mult="0.2" all="1" base="health" y="12" delay="3,4" />
       <skill id="displayEffect" trigger="onSkill" s="protect">
         <target_effect>
           <prefab>submerge_fadecloth</prefab>
@@ -967,8 +967,8 @@
         </target_effect>
         <projectile_effect>
           <prefab>ProtectProjectile</prefab>
-          <delay>.5</delay>
-          <duration>.5</duration>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
         </projectile_effect>
       </skill>
       <skill id="displayEffect" trigger="onSkillHit" s="protect">
@@ -987,7 +987,7 @@
           <delay>0</delay>
         </actor_effect>
       </skill>
-      <add_skill id="bash" mult=".10" all="1" base="health" y="12" delay="0,1,2" />
+      <add_skill id="bash" mult="0.10" all="1" base="health" y="12" delay="0,1,2" />
       <add_skill id="pierce" mult="1" base="attack" y="12" delay="0,1,2" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
@@ -1012,13 +1012,13 @@
         <projectile_effect>
           <prefab>Legion_Projectile</prefab>
           <delay>0</delay>
-          <duration>.5</duration>
-          <translation>.5</translation>
+          <duration>0.5</duration>
+          <translation>0.5</translation>
           <offset>2</offset>
         </projectile_effect>
         <target_effect>
           <prefab>Legion_Angel_Target</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
@@ -1051,7 +1051,7 @@
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce and Siphon equal to their base Attack.</desc>
     <icon>filter_frog_64.png</icon>
     <effect>
-      <add_skill id="bash" mult=".25" base="health" y="4" />
+      <add_skill id="bash" mult="0.25" base="health" y="4" />
       <add_skill id="pierce" mult="1" base="attack" y="4" />
       <add_skill id="leech" mult="1" base="attack" y="4" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
@@ -1078,14 +1078,14 @@
           <prefab>goblinBombProjectile</prefab>
           <bundle_id>75</bundle_id>
           <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
           <offset>0</offset>
         </projectile_effect>
         <target_effect>
           <prefab>goblinBombTarget</prefab>
           <bundle_id>75</bundle_id>
-          <delay>.75</delay>
+          <delay>0.75</delay>
           <duration>1.25</duration>
           <shake>true</shake>
         </target_effect>
@@ -1125,18 +1125,45 @@
         <projectile_effect>
           <prefab>Legion_Projectile</prefab>
           <delay>0</delay>
-          <duration>.5</duration>
-          <translation>.5</translation>
+          <duration>0.5</duration>
+          <translation>0.5</translation>
           <offset>2</offset>
         </projectile_effect>
         <target_effect>
           <prefab>Legion_Angel_Target</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
       </skill>
       <add_skill id="fervor" mult="0.10" base="health" y="6" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>151</id>
+    <name>Evil Eye</name>
+    <desc>All avians mark a random target upon activation, ignoring invisibility and hexing them for 15%. 0-2D will Weaken random targets equal to 15%. 3-4D gain Shroud equal to 10%. Values are base HP based</desc>
+    <icon>filter_avian_64.png</icon>
+    <effect>
+      <!-- <add_skill id='mark' mult='0.3' base='attack' y='10' /> -->
+      <add_skill id="mark" mult="0.15" base="health" y="10" />
+      <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
+        <target_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+          <!-- <shake>true</shake> -->
+        </target_effect>
+        <actor_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </actor_effect>
+      </skill>
+      <add_skill id="weaken" mult="0.15" base="health" y="10" delay="0-2" />
+      <add_skill id="stasis" mult="0.10" base="health" y="10" delay="3,4" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -1221,7 +1248,7 @@
     <!-- Starting Raid Level -->
     <effect>
       <skill id="heal" x="1.1" all="1" />
-      <skill id="rally" x=".6" all="1" />
+      <skill id="rally" x="0.6" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1236,7 +1263,7 @@
     <!-- Starting Raid Level -->
     <effect>
       <skill id="heal" x="1.2" all="1" />
-      <skill id="rally" x=".7" all="1" />
+      <skill id="rally" x="0.7" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1252,7 +1279,7 @@
     <!-- Starting Raid Level -->
     <effect>
       <skill id="heal" x="1.1" all="1" />
-      <skill id="rally" x=".6" all="1" />
+      <skill id="rally" x="0.6" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1297,7 +1324,7 @@
           <prefab>elementalStorm</prefab>
           <bundle_id>0</bundle_id>
           <duration>1</duration>
-          <delay>.1</delay>
+          <delay>0.1</delay>
           <sound>card_drop</sound>
         </actor_effect>
       </skill>
@@ -1359,8 +1386,8 @@
     <starting_level>130</starting_level>
     <!-- Starting Raid Level -->
     <effect>
-      <skill id="heal" x=".2" all="1" />
-      <skill id="rally" x=".2" all="1" />
+      <skill id="heal" x="0.2" all="1" />
+      <skill id="rally" x="0.2" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1429,7 +1456,7 @@
     <icon>Barrier_BGE_64</icon>
     <icon_bundle>69</icon_bundle>
     <effect>
-      <skill id="protect" mult=".20" all="1" y="4" />
+      <skill id="protect" mult="0.20" all="1" y="4" />
     </effect>
   </battleground>
   <battleground>
@@ -1465,7 +1492,7 @@
     <!-- Starting Raid Level -->
     <effect>
       <skill id="heal" x="1.2" all="1" />
-      <skill id="rally" x=".7" all="1" />
+      <skill id="rally" x="0.7" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1608,7 +1635,7 @@
     <!-- actually _64 -->
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enrage" mult=".2" all="1" />
+      <skill id="enrage" mult="0.2" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1624,14 +1651,14 @@
           <prefab>goblinBombProjectile</prefab>
           <bundle_id>75</bundle_id>
           <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
           <offset>0</offset>
         </projectile_effect>
         <target_effect>
           <prefab>goblinBombTarget</prefab>
           <bundle_id>75</bundle_id>
-          <delay>.75</delay>
+          <delay>0.75</delay>
           <duration>1.25</duration>
           <shake>true</shake>
         </target_effect>
@@ -1666,17 +1693,17 @@
     <icon_bundle>110</icon_bundle>
     <effect>
       <card_type>99</card_type>
-      <skill id="enlarge" mult=".5" all="1" y="1" />
+      <skill id="enlarge" mult="0.5" all="1" y="1" />
       <!-- mult is based on attack -->
       <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
         <target_effect>
           <prefab>Empower_Target_Elemental</prefab>
-          <delay>.5</delay>
+          <delay>0.5</delay>
           <duration>1</duration>
           <shake>true</shake>
         </target_effect>
       </skill>
-      <add_skill id="counter" mult=".5" base="attack" all="1" yy="2" />
+      <add_skill id="counter" mult="0.5" base="attack" all="1" yy="2" />
       <skill id="displayEffect" trigger="onSkill" y="2" s="counter">
         <actor_effect>
           <prefab>elemental_BGE_chaos</prefab>
@@ -1845,14 +1872,14 @@
           <prefab>Firework_Projectile</prefab>
           <bundle_id>96</bundle_id>
           <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
           <offset>0</offset>
         </projectile_effect>
         <target_effect>
           <prefab>Firework_Target</prefab>
           <bundle_id>96</bundle_id>
-          <delay>.75</delay>
+          <delay>0.75</delay>
           <duration>1.25</duration>
           <shake>true</shake>
         </target_effect>
@@ -1914,9 +1941,9 @@
     <!-- REVISAR -->
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="backlash" mult=".5" all="1" />
-      <skill id="enhance" s="counterburn" mult=".5" all="1" />
-      <skill id="enhance" s="counter" mult=".5" all="1" />
+      <skill id="enhance" s="backlash" mult="0.5" all="1" />
+      <skill id="enhance" s="counterburn" mult="0.5" all="1" />
+      <skill id="enhance" s="counter" mult="0.5" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1926,8 +1953,8 @@
     <icon>filter_frog_64.png</icon>
     <!-- REVISAR -->
     <effect>
-      <add_skill id="bash" mult=".25" base="health" y="4" all="1" />
-      <add_skill id="bash" mult=".25" base="health" y="12" all="1" />
+      <add_skill id="bash" mult="0.25" base="health" y="4" all="1" />
+      <add_skill id="bash" mult="0.25" base="health" y="12" all="1" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
           <!-- REVISAR -->
@@ -1962,7 +1989,7 @@
       <skill id="enhance" s="strike" mult="1" all="1" />
       <skill id="enhance" s="frost" mult="1" all="1" />
       <skill id="enhance" s="enfeeble" mult="1" all="1" />
-      <scale_health base="health" mult=".5" all="1" />
+      <scale_health base="health" mult="0.5" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -1986,20 +2013,20 @@
     <icon>Barrage_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <add_skill id="barrage" mult=".5" base="health" all="1" />
+      <add_skill id="barrage" mult="0.5" base="health" all="1" />
       <skill id="displayEffect" trigger="onSkill" s="barrage">
         <projectile_effect>
           <prefab>goblinBombProjectile</prefab>
           <bundle_id>75</bundle_id>
           <delay>0</delay>
-          <duration>.75</duration>
-          <translation>.75</translation>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
           <offset>0</offset>
         </projectile_effect>
         <target_effect>
           <prefab>goblinBombTarget</prefab>
           <bundle_id>75</bundle_id>
-          <delay>.75</delay>
+          <delay>0.75</delay>
           <duration>1.25</duration>
           <shake>true</shake>
         </target_effect>
@@ -2124,7 +2151,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <battleground>
@@ -2140,7 +2167,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".0025" />
+      <scale_attributes base_mult="0.1" mult="0.0025" />
     </effect>
   </battleground>
   <battleground>
@@ -2156,7 +2183,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".15" mult=".0025" />
+      <scale_attributes base_mult="0.15" mult="0.0025" />
     </effect>
   </battleground>
   <battleground>
@@ -2172,7 +2199,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <battleground>
@@ -2189,7 +2216,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".0025" />
+      <scale_attributes base_mult="0.1" mult="0.0025" />
     </effect>
   </battleground>
   <battleground>
@@ -2204,7 +2231,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".4" mult=".016" />
+      <scale_attributes base_mult="0.4" mult="0.016" />
     </effect>
   </battleground>
   <battleground>
@@ -2221,7 +2248,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".13" mult=".0025" />
+      <scale_attributes base_mult="0.13" mult="0.0025" />
     </effect>
   </battleground>
   <battleground>
@@ -2238,7 +2265,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".04" />
+      <scale_attributes base_mult="0.1" mult="0.04" />
     </effect>
   </battleground>
   <battleground>
@@ -2255,7 +2282,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <battleground>
@@ -2272,7 +2299,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <battleground>
@@ -2287,7 +2314,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2304,8 +2331,8 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".13" mult=".0025" />
-      <!-- <scale_attributes base_mult='.01' mult='.025' /> -->
+      <scale_attributes base_mult="0.13" mult="0.0025" />
+      <!-- <scale_attributes base_mult='0.01' mult='0.025' /> -->
     </effect>
   </battleground>
   <battleground>
@@ -2322,7 +2349,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".04" />
+      <scale_attributes base_mult="0.1" mult="0.04" />
     </effect>
   </battleground>
   <battleground>
@@ -2338,7 +2365,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Mythic Node Scaling -->
@@ -2354,7 +2381,7 @@
     <starting_level>7</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 4 Boss -->
@@ -2369,7 +2396,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 4 weeks 5-8 -->
@@ -2386,7 +2413,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2402,7 +2429,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
+      <scale_attributes base_mult="0.2" mult="0.03" />
     </effect>
   </battleground>
   <!-- Campaign Event 5 -->
@@ -2419,7 +2446,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 5 Boss -->
@@ -2434,7 +2461,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 5 weeks 5-8 -->
@@ -2451,7 +2478,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2467,7 +2494,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
+      <scale_attributes base_mult="0.2" mult="0.03" />
     </effect>
   </battleground>
   <!-- Campaign Event 6 -->
@@ -2484,7 +2511,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 6 Boss -->
@@ -2499,7 +2526,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".25" mult=".03" />
+      <scale_attributes base_mult="0.25" mult="0.03" />
     </effect>
   </battleground>
   <!-- Campaign Event 6 weeks 5-8 -->
@@ -2516,7 +2543,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2532,7 +2559,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".03" />
+      <scale_attributes base_mult="0.1" mult="0.03" />
     </effect>
   </battleground>
   <!-- Mythic Node Scaling Viracocha -->
@@ -2547,7 +2574,7 @@
     <starting_level>7</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 7 -->
@@ -2564,7 +2591,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 7 Boss -->
@@ -2579,7 +2606,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
+      <scale_attributes base_mult="0.2" mult="0.03" />
     </effect>
   </battleground>
   <!-- Campaign Event 7 -->
@@ -2596,7 +2623,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2612,7 +2639,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 8 -->
@@ -2630,7 +2657,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 8 Boss -->
@@ -2646,7 +2673,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".03" />
+      <scale_attributes base_mult="0.2" mult="0.03" />
     </effect>
   </battleground>
   <!-- Campaign Event 8 -->
@@ -2664,7 +2691,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2681,7 +2708,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 9 -->
@@ -2699,7 +2726,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 9 Boss -->
@@ -2715,7 +2742,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2732,7 +2759,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2749,7 +2776,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 10 -->
@@ -2766,7 +2793,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 10 Boss Storm Lord Father -->
@@ -2781,7 +2808,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".25" mult=".01" />
+      <scale_attributes base_mult="0.25" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2797,7 +2824,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2813,7 +2840,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 11 -->
@@ -2830,7 +2857,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 11 Dream Awakened -->
@@ -2845,7 +2872,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".25" mult=".01" />
+      <scale_attributes base_mult="0.25" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 11 -->
@@ -2862,7 +2889,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2878,7 +2905,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 12 -->
@@ -2895,7 +2922,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Champion Boss Tanit -->
@@ -2910,7 +2937,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 12 Rifthowl -->
@@ -2925,7 +2952,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 12 weeks 5-8 -->
@@ -2942,7 +2969,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -2958,7 +2985,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 13 weeks 1-4 -->
@@ -2975,7 +3002,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 13 Boss A Promise Left Behind -->
@@ -2990,7 +3017,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 13 weeks 5-8 -->
@@ -3007,7 +3034,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3023,7 +3050,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 14 -->
@@ -3041,7 +3068,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 14 Boss Schism -->
@@ -3057,7 +3084,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 14 weeks 5-8 -->
@@ -3075,7 +3102,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3092,7 +3119,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 15 -->
@@ -3109,7 +3136,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 15 boss A Brighter Future -->
@@ -3124,7 +3151,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 15 weeks 5-8 -->
@@ -3141,7 +3168,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3157,7 +3184,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 16 -->
@@ -3174,7 +3201,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 16 Boss Node-->
@@ -3189,7 +3216,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Champion Boss Batara -->
@@ -3205,7 +3232,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <!-- Champion Boss Formos Ebonclaw -->
@@ -3220,7 +3247,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 16 weeks 5-8 -->
@@ -3237,7 +3264,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3253,7 +3280,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 17 weeks 1-4 -->
@@ -3270,7 +3297,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 17 Boss Node-->
@@ -3285,7 +3312,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 17 weeks 5-8 -->
@@ -3302,7 +3329,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3318,7 +3345,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 18 weeks 1-4 -->
@@ -3336,7 +3363,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 18 Boss Node-->
@@ -3351,7 +3378,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".01" />
+      <scale_attributes base_mult="0.2" mult="0.01" />
     </effect>
   </battleground>
   <!-- Universal EBGE weeks 5-8 -->
@@ -3368,7 +3395,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3384,7 +3411,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 19 weeks 1-4 -->
@@ -3402,7 +3429,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 19 Boss Node-->
@@ -3417,7 +3444,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 19 weeks 5-8 -->
@@ -3434,7 +3461,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3450,7 +3477,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 20 weeks 1-4 -->
@@ -3469,7 +3496,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 20 Boss Node-->
@@ -3484,7 +3511,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 20 weeks 5-8 -->
@@ -3501,7 +3528,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3517,7 +3544,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 21 weeks 1-4 -->
@@ -3536,7 +3563,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 21 Boss Node-->
@@ -3552,7 +3579,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 21 weeks 5-8 -->
@@ -3569,7 +3596,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3585,7 +3612,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 22 weeks 1-4 -->
@@ -3603,7 +3630,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 22 Boss Node-->
@@ -3618,7 +3645,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 22 weeks 5-8 -->
@@ -3635,7 +3662,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3651,7 +3678,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 23 weeks 1-4 -->
@@ -3669,7 +3696,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 23 Boss Node-->
@@ -3684,7 +3711,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 23 weeks 5-8 -->
@@ -3701,7 +3728,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3717,7 +3744,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 24 weeks 1-4 -->
@@ -3736,7 +3763,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 24 Boss Node-->
@@ -3751,7 +3778,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 24 weeks 5-8 -->
@@ -3768,7 +3795,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3784,7 +3811,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 25 weeks 1-4 -->
@@ -3803,7 +3830,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 25 Boss Node-->
@@ -3818,7 +3845,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 25 weeks 5-8 -->
@@ -3835,7 +3862,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3851,7 +3878,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 26 weeks 1-4 -->
@@ -3870,7 +3897,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 26 Boss Node-->
@@ -3886,7 +3913,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 25 weeks 5-8 -->
@@ -3904,7 +3931,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3921,7 +3948,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 27 weeks 1-4 -->
@@ -3940,7 +3967,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 27 Boss Node-->
@@ -3956,7 +3983,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 27 weeks 5-8 -->
@@ -3973,7 +4000,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -3989,7 +4016,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- Campaign Event 28 weeks 1-4 -->
@@ -4007,7 +4034,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".008" mult=".0025" />
+      <scale_attributes base_mult="0.008" mult="0.0025" />
     </effect>
   </battleground>
   <!-- Campaign Event 28 Boss Node-->
@@ -4022,7 +4049,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".3" mult=".01" />
+      <scale_attributes base_mult="0.3" mult="0.01" />
     </effect>
   </battleground>
   <!-- Campaign Event 27 weeks 5-8 -->
@@ -4039,7 +4066,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult="0.1" mult="0.01" />
     </effect>
   </battleground>
   <battleground>
@@ -4055,7 +4082,7 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".05" />
+      <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->

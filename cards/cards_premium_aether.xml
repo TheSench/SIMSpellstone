@@ -38612,6 +38612,139 @@
       <skill id="rally" x="7" all="1" y="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5300</id>
+    <card_type>2</card_type>
+    <name>Kinetic Initiate</name>
+    <picture>Angel_Kinetic_Mentor_A</picture>
+    <asset_bundle>246</asset_bundle>
+    <hidden_until_time>1653325200</hidden_until_time>
+    <attack>9</attack>
+    <health>38</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="counter" x="7" />
+    <skill id="strike" x="3" all="1" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <skill id="stasis" x="4" />
+      <skill id="counter" x="8" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="5" />
+      <skill id="counter" x="8" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15300</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Kinetic Mentor</name>
+    <picture>Angel_Kinetic_Mentor_A</picture>
+    <asset_bundle>246</asset_bundle>
+    <hidden_until_time>1653325200</hidden_until_time>
+    <attack>10</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="5" />
+    <skill id="counter" x="9" />
+    <skill id="strike" x="4" all="1" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <skill id="stasis" x="5" />
+      <skill id="counter" x="10" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="6" />
+      <skill id="counter" x="10" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25300</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Kinetic Master</name>
+    <picture>Angel_Kinetic_Mentor_B</picture>
+    <asset_bundle>246</asset_bundle>
+    <hidden_until_time>1653325200</hidden_until_time>
+    <attack>11</attack>
+    <health>45</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="6" />
+    <skill id="counter" x="10" />
+    <skill id="strike" x="5" all="1" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="stasis" x="6" />
+      <skill id="counter" x="11" />
+      <skill id="strike" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="7" />
+      <skill id="counter" x="11" />
+      <skill id="strike" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="7" />
+      <skill id="counter" x="12" />
+      <skill id="strike" x="6" all="1" />
+    </upgrade>
+  </unit>
   <!-- END AETHER PREMIUM SET -->
 </root>
 

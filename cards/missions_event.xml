@@ -57695,5 +57695,293 @@
       <card id="5031" mastery_level="7" name="Icelane Valkyrie" />
     </deck>
   </mission>
+  <mission>
+    <id>6831</id>
+    <name>Freezing Frigore</name>
+    <energy>18</energy>
+    <desc>After some time of meditation you decide that the perfect place to lose a tail would be Frigore. Anybody following you all the way there has no good intention.</desc>
+    <commander id="14" />
+    <deck>
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" name="Spelltalon" />
+      <card id="2185" name="Dark Hunter" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="2081" mastery_level="3" name="Starstriker" />
+      <card id="5110" mastery_level="4" name="Alectryon" />
+      <card id="5059" mastery_level="5" name="Bemola" />
+      <card id="7246" mastery_level="6" name="Snowfall Dancer" />
+      <card id="5209" mastery_level="7" name="Fowlmaster" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6832</id>
+    <name>Fishy Frigore</name>
+    <energy>18</energy>
+    <desc>Once you arrive at Frigore, you feel the cold penetrating into your bones. Something feels off, there is nobody around. This could be due to the cold, or else.</desc>
+    <commander id="307" />
+    <deck>
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" name="Spelltalon" />
+      <card id="2185" name="Dark Hunter" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="2081" mastery_level="3" name="Starstriker" />
+      <card id="5174" mastery_level="4" name="Cloudbreak Elites" />
+      <card id="7263" mastery_level="5" name="Cheggrub" />
+      <card id="5187" mastery_level="6" name="Star Chaser" />
+      <card id="5195" mastery_level="7" name="Owlnaut Z-3" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6833</id>
+    <name>Somebody's Watching Me</name>
+    <energy>18</energy>
+    <desc>Everywhere you go you can always feel as if somebody is watching you. As if you were constantly in danger.</desc>
+    <commander id="308" />
+    <deck>
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" name="Spelltalon" />
+      <card id="2185" name="Dark Hunter" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="2081" mastery_level="3" name="Starstriker" />
+      <card id="7247" mastery_level="4" name="Timberglide Striker" />
+      <card id="7287" mastery_level="5" name="Rhipi-Dura Spear" />
+      <card id="7205" mastery_level="6" name="Snapping Griffin" />
+      <card id="7174" mastery_level="7" name="Mugen and Young Hawk" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6834</id>
+    <name>Town Trouble</name>
+    <energy>18</energy>
+    <desc>You are heading into town when all of a sudden, while falling from the top of a building an avian strikes you down. The avian is so fast you don't even have a chance to react before you are laying on the ground.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" name="Spelltalon" />
+      <card id="2185" name="Dark Hunter" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="7293" mastery_level="3" name="Golden Promise" />
+      <card id="5177" mastery_level="4" name="Thunderbird" />
+      <card id="5034" mastery_level="5" name="Skyward Guardian" />
+      <card id="5056" mastery_level="6" name="Kaliri the Foremost" />
+      <card id="5198" mastery_level="7" name="Sea's Sky Forces" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6835</id>
+    <name>And his name is</name>
+    <energy>18</energy>
+    <desc>The avian pulls out a blade and is about to strike you when all of a sudden a spell strikes him in the chest, knocking him on his back.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" name="Spelltalon" />
+      <card id="2185" name="Dark Hunter" />
+      <card id="1345" mastery_level="2" name="Owltron" />
+      <card id="6272" mastery_level="3" name="Blazemaster Rookie" />
+      <card id="7207" mastery_level="4" name="Batrachia Spear" />
+      <card id="5059" mastery_level="5" name="Bemola" />
+      <card id="7292" mastery_level="6" name="Sunwarden" />
+      <card id="7292" mastery_level="7" name="Sunwarden" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6836</id>
+    <name>Vanished into thin air</name>
+    <energy>18</energy>
+    <desc>A group of penguin soldiers quickly arrive at the scene to aid you. Unfortunately, by the time you get up, the assassin is nowhere to be seen.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="5166" name="Hoarfrost Buzzard" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="7171" name="Warpwood Warlock" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="6115" name="Spelltalon" />
+      <card id="6115" name="Spelltalon" />
+      <card id="2185" name="Dark Hunter" />
+      <card id="7110" mastery_level="2" name="Toxin Glider" />
+      <card id="7110" mastery_level="3" name="Toxin Glider" />
+      <card id="7247" mastery_level="4" name="Timberglide Striker" />
+      <card id="7247" mastery_level="5" name="Timberglide Striker" />
+      <card id="7227" mastery_level="6" name="Five Color Flapper" />
+      <card id="7227" mastery_level="7" name="Five Color Flapper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6837</id>
+    <name>Auron</name>
+    <energy>18</energy>
+    <desc>A penguin mage greets you. He introduces himself as Auron. He mentions that were he to arrive a second later it would have probably been too late for you.</desc>
+    <commander id="14" />
+    <deck>
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2166" name="Minstrel of Owls" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="2081" mastery_level="3" name="Starstriker" />
+      <card id="6245" mastery_level="4" name="Crimsonwing Initiate" />
+      <card id="6244" mastery_level="5" name="Disgraced Disciple" />
+      <card id="5272" mastery_level="6" name="Balam Sphinx" />
+      <card id="7268" mastery_level="7" name="Feral Griffinmoth" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6838</id>
+    <name>Spread out</name>
+    <energy>18</energy>
+    <desc>The mage says this is not over, he orders his soldiers to spread out and find the assassin. Even though you are still dazed, you decide to join the hunt.</desc>
+    <commander id="307" />
+    <deck>
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2166" name="Minstrel of Owls" />
+      <card id="2081" mastery_level="2" name="Starstriker" />
+      <card id="7114" mastery_level="3" name="Worshipped Statue" />
+      <card id="7287" mastery_level="4" name="Rhipi-Dura Spear" />
+      <card id="7293" mastery_level="5" name="Golden Promise" />
+      <card id="7173" mastery_level="6" name="Wyris Shaman" />
+      <card id="7275" mastery_level="7" name="Winterheart Ballerina" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6839</id>
+    <name>Odd one out</name>
+    <energy>18</energy>
+    <desc>You are searching for the assassin when you suddenly reach a crowd of people. You can feel him, blending in between the citizens. You start to carefully examine everybody in the crowd.</desc>
+    <commander id="308" />
+    <deck>
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2166" name="Minstrel of Owls" />
+      <card id="6246" mastery_level="2" name="Chicken Besieger" />
+      <card id="6200" mastery_level="3" name="Embered Demise" />
+      <card id="7245" mastery_level="4" name="Ogrot Tamer" />
+      <card id="6243" mastery_level="5" name="Mohati Thief" />
+      <card id="6243" mastery_level="6" name="Mohati Thief" />
+      <card id="5209" mastery_level="7" name="Fowlmaster" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6840</id>
+    <name>Fool me once</name>
+    <energy>18</energy>
+    <desc>You are taking a deep look into the crowds when you turn around just in time to block the assassins strike. Fortunately, the assassin did not expect you to anticipate his moves.</desc>
+    <commander id="406" />
+    <deck>
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2041" name="Sharpwing" />
+      <card id="1044" name="Blackhawk Cavalier" />
+      <card id="1044" mastery_level="2" name="Blackhawk Cavalier" />
+      <card id="7207" mastery_level="3" name="Batrachia Spear" />
+      <card id="5174" mastery_level="4" name="Cloudbreak Elites" />
+      <card id="2083" mastery_level="5" name="Habrok, the Lance" />
+      <card id="2083" mastery_level="6" name="Habrok, the Lance" />
+      <card id="5049" mastery_level="7" name="Sky Fisher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6841</id>
+    <name>Down you go</name>
+    <energy>18</energy>
+    <desc>Auron's elites quickly take notice and between them and you, the injured assassin gets taken down. Auron proceeds to order his incarceration.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2041" name="Sharpwing" />
+      <card id="7186" name="Owlscar Dragon" />
+      <card id="7186" mastery_level="2" name="Owlscar Dragon" />
+      <card id="6231" mastery_level="3" name="Firemouth Moth" />
+      <card id="6231" mastery_level="4" name="Firemouth Moth" />
+      <card id="7058" mastery_level="5" name="Steppe Stalker" />
+      <card id="7111" mastery_level="6" name="Aurai" />
+      <card id="5148" mastery_level="7" name="Gribmalda of Wings" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6842</id>
+    <name>Insects in distress</name>
+    <energy>18</energy>
+    <desc>Auron has promised to keep the assassin incarcerated as long as necessary. You are about to head towards Skyhaven, when all of a sudden a distressed insect requests your aid.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="2215" name="Plagued Penguions" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2081" name="Starstriker" />
+      <card id="2081" name="Starstriker" />
+      <card id="5148" name="Gribmalda of Wings" />
+      <card id="5148" name="Gribmalda of Wings" />
+      <card id="7263" mastery_level="2" name="Cheggrub" />
+      <card id="7263" mastery_level="3" name="Cheggrub" />
+      <card id="5255" mastery_level="4" name="Batrachia Spear" />
+      <card id="6170" mastery_level="5" name="Ostromech Stepclaw" />
+      <card id="7274" mastery_level="6" name="Frozenclaw Summoner" />
+      <card id="2068" mastery_level="7" name="Whitesail Wyvern" />
+    </deck>
+  </mission>
 </root>
 
