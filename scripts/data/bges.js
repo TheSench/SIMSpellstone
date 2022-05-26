@@ -1597,10 +1597,12 @@ var BATTLEGROUNDS = {
 			{
 				"base": "health",
 				"delay": [
-					0
+					0,
+					1,
+					2
 				],
 				"effect_type": "add_skill",
-				"id": "weaken",
+				"id": "weakenbge",
 				"mult": 0.15,
 				"y": "10"
 			},

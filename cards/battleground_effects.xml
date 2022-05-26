@@ -1163,7 +1163,7 @@
           <duration>3</duration>
         </actor_effect>
       </skill>
-      <add_skill id="weaken" mult="0.15" base="health" y="10" delay="0-2" />
+      <add_skill id="weakenbge" mult="0.15" base="health" y="10" delay="0,1,2" />
       <add_skill id="stasis" mult="0.10" base="health" y="10" delay="3,4" />
     </effect>
   </battleground>
