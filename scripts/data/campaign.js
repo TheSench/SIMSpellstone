@@ -5733,6 +5733,39 @@ var CAMPAIGNS = {
 		],
 		"name": "On the hunt"
 	},
+	"1318": {
+		"id": "1318",
+		"items": {
+			"3049": 0.6
+		},
+		"location_id": "8",
+		"missions": [
+			"6831",
+			"6832",
+			"6833",
+			"6834",
+			"6835",
+			"6836"
+		],
+		"name": "Misleading a menace"
+	},
+	"1319": {
+		"battleground_id": "2019",
+		"id": "1319",
+		"items": {
+			"3049": 0.8
+		},
+		"location_id": "8",
+		"missions": [
+			"6837",
+			"6838",
+			"6839",
+			"6840",
+			"6841",
+			"6842"
+		],
+		"name": "The hunter has become the hunted"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -126244,5 +126277,365 @@ var MISSIONS = {
 		],
 		"id": "6842",
 		"name": "Insects in distress"
+	},
+	"6843": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "7111"
+			},
+			{
+				"id": "2068"
+			},
+			{
+				"id": "7274"
+			},
+			{
+				"id": "5059"
+			},
+			{
+				"id": "5059"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "5209"
+			},
+			{
+				"id": "5110",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5187",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5187",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6243",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6174",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6174",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6843",
+		"name": "Go time"
+	},
+	"6844": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "7174"
+			},
+			{
+				"id": "7111"
+			},
+			{
+				"id": "7111"
+			},
+			{
+				"id": "2068"
+			},
+			{
+				"id": "7274"
+			},
+			{
+				"id": "5059"
+			},
+			{
+				"id": "5059"
+			},
+			{
+				"id": "5148"
+			},
+			{
+				"id": "7112",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7112",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2220",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8049",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5148",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7616",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6844",
+		"name": "It's getting cold out here"
+	},
+	"6845": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "7174"
+			},
+			{
+				"id": "7111"
+			},
+			{
+				"id": "7111"
+			},
+			{
+				"id": "2068"
+			},
+			{
+				"id": "7274"
+			},
+			{
+				"id": "5111"
+			},
+			{
+				"id": "5111"
+			},
+			{
+				"id": "5148"
+			},
+			{
+				"id": "7112",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7112",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2220",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8049",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7616",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4000",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6845",
+		"name": "Enemy at the gates"
+	},
+	"6846": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "8102"
+			},
+			{
+				"id": "2043"
+			},
+			{
+				"id": "5207"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "5195"
+			},
+			{
+				"id": "2220"
+			},
+			{
+				"id": "2220"
+			},
+			{
+				"id": "4040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7110",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7298",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7298",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5177",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5177",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6846",
+		"name": "Ashanti’s Finest"
+	},
+	"6847": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "8102"
+			},
+			{
+				"id": "2043"
+			},
+			{
+				"id": "5207"
+			},
+			{
+				"id": "5287"
+			},
+			{
+				"id": "5287"
+			},
+			{
+				"id": "5207"
+			},
+			{
+				"id": "7298"
+			},
+			{
+				"id": "7298"
+			},
+			{
+				"id": "4040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "4023",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5600",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7298",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5187",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5187",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6847",
+		"name": "The art of the deal"
+	},
+	"6848": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "8102"
+			},
+			{
+				"id": "8102"
+			},
+			{
+				"id": "2043"
+			},
+			{
+				"id": "7298"
+			},
+			{
+				"id": "6196"
+			},
+			{
+				"id": "6196"
+			},
+			{
+				"id": "5207"
+			},
+			{
+				"id": "7298"
+			},
+			{
+				"id": "2094"
+			},
+			{
+				"id": "4040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "4023",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5600",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6613",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7612",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4048",
+				"mastery_level": "7"
+			}
+		],
+		"id": "6848",
+		"name": "Interesting information"
 	}
 };

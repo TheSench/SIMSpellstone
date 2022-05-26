@@ -60,6 +60,7 @@
     <icon>filter_dragon_64</icon>
     <effect>
       <skill id="heal" mult="0.25" all="1" y="9" />
+      <!--	<add_skill id='regenerate' mult='0.25' base='health' y='9' />  -->
     </effect>
   </battleground>
   <battleground>
@@ -1166,6 +1167,17 @@
       <add_skill id="stasis" mult="0.10" base="health" y="10" delay="3,4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>152</id>
+    <name>Void Alignment</name>
+    <desc>The Void is here once again. Void cards gain Regen and Nullify equal to 20% of their base health</desc>
+    <icon>event_53_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="regenerate" mult="0.20" base="health" y="9" />
+      <add_skill id="nullify" mult="0.20" base="health" y="9" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2066,11 +2078,11 @@
   <battleground>
     <id>558</id>
     <name>Enhanced Armor</name>
-    <desc>Armor is increased by 22</desc>
+    <desc>Armor is increased by 25</desc>
     <icon>armor_BGE_64</icon>
     <icon_bundle>87</icon_bundle>
     <effect>
-      <add_skill id="armored" x="22" all="1" />
+      <add_skill id="armored" x="25" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2086,11 +2098,11 @@
   <battleground>
     <id>560</id>
     <name>Improved Sigils</name>
-    <desc>All cards gain Ward 22.</desc>
+    <desc>All cards gain Ward 25.</desc>
     <icon>Ward99_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <add_skill id="absorb" x="22" all="1" />
+      <add_skill id="absorb" x="25" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2111,6 +2123,26 @@
     <icon_bundle>110</icon_bundle>
     <effect>
       <add_skill id="valor" x="15" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>563</id>
+    <name>Endless Life</name>
+    <desc>All cards gain Regenerate 99</desc>
+    <icon>Regenerate_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="regenerate" x="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>564</id>
+    <name>Endless Rage</name>
+    <desc>All cards gain Berserk 10</desc>
+    <icon>Berserk_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="berserk" x="10" all="1" />
     </effect>
   </battleground>
   <!-- ============================= -->

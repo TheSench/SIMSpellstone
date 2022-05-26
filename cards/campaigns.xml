@@ -11166,6 +11166,94 @@
     <ignore_energy_reduction_until>1656003600</ignore_energy_reduction_until>
     <!-- Thursday, June 23, 2022 at 17:00:00  -->
   </campaign>
+  <!-- Campaign Event 90 - Frigore -->
+  <campaign>
+    <id>1318</id>
+    <name>Misleading a menace</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1653584400</locked_start_time>
+    <!-- Thursday, 26 May 2022 17:00:00 -->
+    <location_id>8</location_id>
+    <x>130</x>
+    <!-- left right -->
+    <y>285</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6831</mission_id>
+      <mission_id>6832</mission_id>
+      <mission_id>6833</mission_id>
+      <mission_id>6834</mission_id>
+      <mission_id>6835</mission_id>
+      <mission_id>6836</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2641" number="25" />
+      /&gt;
+      <!-- Frigore Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2231" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2041" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2641" number="75" />
+      /&gt;
+      <!-- Frigore Flask -->
+      <card level="7" id="2232" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3049" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1658422800</ignore_energy_reduction_until>
+    <!-- Thursday, July 21, 2022 at 17:00:00 	  -->
+  </campaign>
+  <campaign>
+    <id>1319</id>
+    <name>The hunter has become the hunted</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1318" level="1" />
+    <locked_start_time>1654794000</locked_start_time>
+    <!-- Thursday, 9 June 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>8</location_id>
+    <x>770</x>
+    <!-- left right -->
+    <y>520</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6837</mission_id>
+      <mission_id>6838</mission_id>
+      <mission_id>6839</mission_id>
+      <mission_id>6840</mission_id>
+      <mission_id>6841</mission_id>
+      <mission_id>6842</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2641" number="25" />
+      /&gt;
+      <!-- Frigore Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2081" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2125" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2641" number="75" />
+      /&gt;
+      <!-- Frigore Flask -->
+      <card level="7" id="2232" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3049" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1658422800</ignore_energy_reduction_until>
+    <!-- Thursday, July 21, 2022 at 17:00:00 	  -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
@@ -11738,5 +11826,37 @@
     <find_item id="3107" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Alyel Angel event 89 END -->
+  <!-- LBN Ashanti Avian event 90  -->
+  <!--	<campaign>
+		<id>4003</id>
+		<event_only>1</event_only>
+		<hidden>1</hidden>
+		<name>Lightning Ashanti</name>
+		<icon id='gem_Boss_LG' bundle='0' />
+		<exclude_map_bges>1</exclude_map_bges>
+		<location_id>8</location_id>
+		<x>675</x>
+		<y>175</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>6843</mission_id>
+			<mission_id>6844</mission_id>
+			<mission_id>6845</mission_id>
+			<mission_id>6846</mission_id>
+			<mission_id>6847</mission_id> 
+			<mission_id>6848</mission_id> 
+		</missions>
+		<rewards>
+			<card level='1' id='510' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2006' />
+			<card level='5' id='2006' />
+			<item level='6' id='104059' number='25'/>
+			<item level='7' id='104059' number='75'/>
+		</rewards>
+		<find_item id='3049' drop_per_energy='.6' />
+	</campaign> -->
+  <!-- LBN Ashanti Avian event 90 END -->
 </root>
 

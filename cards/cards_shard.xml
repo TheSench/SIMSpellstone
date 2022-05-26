@@ -18,76 +18,76 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>3</type>
     <sub_type>10</sub_type>
-    <attack>12</attack>
-    <health>34</health>
+    <attack>14</attack>
+    <health>35</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="4" />
+    <skill id="armored" x="5" />
     <skill id="enfeeble" all="1" x="2" />
-    <skill id="pierce" x="12" />
+    <skill id="pierce" x="14" />
     <upgrade>
       <level>2</level>
-      <health>35</health>
-      <skill id="armored" x="5" />
+      <health>36</health>
+      <skill id="armored" x="6" />
       <skill id="enfeeble" all="1" x="3" />
-      <skill id="pierce" x="12" />
+      <skill id="pierce" x="14" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>13</attack>
-      <skill id="armored" x="5" />
+      <attack>15</attack>
+      <skill id="armored" x="6" />
       <skill id="enfeeble" all="1" x="3" />
-      <skill id="pierce" x="13" />
+      <skill id="pierce" x="15" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>37</health>
-      <skill id="armored" x="6" />
+      <health>38</health>
+      <skill id="armored" x="7" />
       <skill id="enfeeble" all="1" x="3" />
-      <skill id="pierce" x="13" />
+      <skill id="pierce" x="15" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>14</attack>
-      <health>38</health>
-      <skill id="armored" x="6" />
+      <attack>16</attack>
+      <health>39</health>
+      <skill id="armored" x="7" />
       <skill id="enfeeble" all="1" x="4" />
-      <skill id="pierce" x="14" />
+      <skill id="pierce" x="16" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>40</health>
-      <skill id="armored" x="7" />
+      <health>41</health>
+      <skill id="armored" x="8" />
       <skill id="enfeeble" all="1" x="4" />
-      <skill id="pierce" x="14" />
+      <skill id="pierce" x="16" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <skill id="armored" x="7" />
+      <skill id="armored" x="8" />
       <skill id="enfeeble" all="1" x="5" />
-      <skill id="pierce" x="14" />
+      <skill id="pierce" x="16" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <attack>15</attack>
-      <health>41</health>
-      <skill id="armored" x="7" />
+      <attack>17</attack>
+      <health>42</health>
+      <skill id="armored" x="8" />
       <skill id="enfeeble" all="1" x="5" />
-      <skill id="pierce" x="15" />
+      <skill id="pierce" x="17" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>43</health>
-      <skill id="armored" x="8" />
+      <health>44</health>
+      <skill id="armored" x="9" />
       <skill id="enfeeble" all="1" x="5" />
-      <skill id="pierce" x="15" />
+      <skill id="pierce" x="17" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <health>44</health>
-      <skill id="armored" x="8" />
+      <health>45</health>
+      <skill id="armored" x="9" />
       <skill id="enfeeble" all="1" x="6" />
-      <skill id="pierce" x="15" />
+      <skill id="pierce" x="17" />
     </upgrade>
   </unit>
   <unit>
@@ -4969,6 +4969,82 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4059</id>
+    <card_type>2</card_type>
+    <name>Ashanti, the Assassin</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Avian_Aerial_Assasin_A</picture>
+    <asset_bundle>248</asset_bundle>
+    <item_name>Ashanti Stone</item_name>
+    <item_desc>Collect Ashanti Stones to upgrade Ashanti, the Assassin!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <attack>10</attack>
+    <health>21</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="daze" x="8" />
+    <skill id="berserk" x="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="daze" x="10" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="daze" x="10" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="evade" x="3" />
+      <skill id="daze" x="11" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>25</health>
+      <skill id="evade" x="3" />
+      <skill id="daze" x="12" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>14</attack>
+      <skill id="evade" x="4" />
+      <skill id="daze" x="12" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>26</health>
+      <skill id="evade" x="4" />
+      <skill id="daze" x="12" />
+      <skill id="berserk" x="7" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -7671,6 +7747,91 @@
       <skill id="armored" x="9" />
       <skill id="protect" x="6" all="1" />
       <skill id="weaken" all="1" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5632</id>
+    <card_type>2</card_type>
+    <name>Auron, the Icewall</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Avian_Aurora_Protector_A</picture>
+    <asset_bundle>248</asset_bundle>
+    <item_name>Auron Stone</item_name>
+    <item_desc>Collect Auron Stones to upgrade the Legendary Auron, the Icewall card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <attack>13</attack>
+    <health>45</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="5" />
+    <skill id="heal" x="5" all="1" />
+    <skill id="jam" c="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>14</attack>
+      <skill id="stasis" x="5" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <skill id="stasis" x="6" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="stasis" x="6" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="stasis" x="6" />
+      <skill id="heal" x="7" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>15</attack>
+      <skill id="stasis" x="7" />
+      <skill id="heal" x="7" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="stasis" x="7" />
+      <skill id="heal" x="7" all="1" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>48</health>
+      <skill id="stasis" x="7" />
+      <skill id="heal" x="8" all="1" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>49</health>
+      <skill id="stasis" x="7" />
+      <skill id="heal" x="9" all="1" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>16</attack>
+      <skill id="stasis" x="8" />
+      <skill id="heal" x="9" all="1" />
+      <skill id="jam" c="2" />
     </upgrade>
   </unit>
   <!-- === AETHER END === -->

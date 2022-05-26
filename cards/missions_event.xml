@@ -57771,7 +57771,7 @@
     <id>6834</id>
     <name>Town Trouble</name>
     <energy>18</energy>
-    <desc>You are heading into town when all of a sudden, while falling from the top of a building an avian strikes you down. The avian is so fast you don't even have a chance to react before you are laying on the ground.</desc>
+    <desc>You are heading into town when suddenly a fast-moving avian strikes you while falling from a building. You don't even have a chance to react before you are laying on the ground.</desc>
     <commander id="325" />
     <deck>
       <card id="5166" name="Hoarfrost Buzzard" />
@@ -57795,7 +57795,7 @@
     <id>6835</id>
     <name>And his name is</name>
     <energy>18</energy>
-    <desc>The avian pulls out a blade and is about to strike you when all of a sudden a spell strikes him in the chest, knocking him on his back.</desc>
+    <desc>The avian pulls out a blade and is about to end you when a spell strikes him in the chest, knocking him down.</desc>
     <commander id="405" />
     <deck>
       <card id="5166" name="Hoarfrost Buzzard" />
@@ -57819,7 +57819,7 @@
     <id>6836</id>
     <name>Vanished into thin air</name>
     <energy>18</energy>
-    <desc>A group of penguin soldiers quickly arrive at the scene to aid you. Unfortunately, by the time you get up, the assassin is nowhere to be seen.</desc>
+    <desc>A group of penguin soldiers quickly arrive at the scene to aid you. Unfortunately, by the time you get up the assassin is nowhere to be found.</desc>
     <commander id="407" />
     <deck>
       <card id="5166" name="Hoarfrost Buzzard" />
@@ -57915,7 +57915,7 @@
     <id>6840</id>
     <name>Fool me once</name>
     <energy>18</energy>
-    <desc>You are taking a deep look into the crowds when you turn around just in time to block the assassins strike. Fortunately, the assassin did not expect you to anticipate his moves.</desc>
+    <desc>You are taking a deep look into the crowds when you turn around just in time to block the assassins strike. Fortunately, the killer did not expect you to be ready.</desc>
     <commander id="406" />
     <deck>
       <card id="7030" name="Arctic Ambusher" />
@@ -57939,7 +57939,7 @@
     <id>6841</id>
     <name>Down you go</name>
     <energy>18</energy>
-    <desc>Auron's elites quickly take notice and between them and you, the injured assassin gets taken down. Auron proceeds to order his incarceration.</desc>
+    <desc>Auron's elites quickly take notice and between them and you, the injured assassin gets taken down. Auron proceeds to order his imprisonment.</desc>
     <commander id="405" />
     <deck>
       <card id="7030" name="Arctic Ambusher" />
@@ -57963,7 +57963,7 @@
     <id>6842</id>
     <name>Insects in distress</name>
     <energy>18</energy>
-    <desc>Auron has promised to keep the assassin incarcerated as long as necessary. You are about to head towards Skyhaven, when all of a sudden a distressed insect requests your aid.</desc>
+    <desc>Auron has promised to keep the assassin restrained as long as necessary. You are about to head towards Skyhaven, when all of a sudden a distressed insect scout requests your aid.</desc>
     <commander id="325" />
     <deck>
       <card id="7030" name="Arctic Ambusher" />
@@ -57981,6 +57981,150 @@
       <card id="6170" mastery_level="5" name="Ostromech Stepclaw" />
       <card id="7274" mastery_level="6" name="Frozenclaw Summoner" />
       <card id="2068" mastery_level="7" name="Whitesail Wyvern" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6843</id>
+    <name>Go time</name>
+    <energy>18</energy>
+    <desc>Word reaches you that Ashanti is breaking out from prison. His avian allies have come from all around to aid him. Fortunately, Auron’s forces are ready to assist you in a counter offensive.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="7111" name="Aurai" />
+      <card id="2068" name="Whitesail Wyvern" />
+      <card id="7274" name="Frozenclaw Summoner" />
+      <card id="5059" name="Bemola" />
+      <card id="5059" name="Bemola" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="5209" name="Fowlmaster" />
+      <card id="5110" mastery_level="2" name="Alectryon" />
+      <card id="5187" mastery_level="3" name="Star Chaser" />
+      <card id="5187" mastery_level="4" name="Star Chaser" />
+      <card id="6243" mastery_level="5" name="Mohati Thief" />
+      <card id="6174" mastery_level="6" name="Deatheye Owl" />
+      <card id="6174" mastery_level="7" name="Deatheye Owl" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6844</id>
+    <name>It's getting cold out here</name>
+    <energy>18</energy>
+    <desc>You stand outside and you see mayhem all around. You decide to raid the prison before any more harm can be done. Unfortunately, the cold weather is slowing you down and Ashanti is taking advantage of this.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="7174" name="Mugen and Young Hawk" />
+      <card id="7111" name="Aurai" />
+      <card id="7111" name="Aurai" />
+      <card id="2068" name="Whitesail Wyvern" />
+      <card id="7274" name="Frozenclaw Summoner" />
+      <card id="5059" name="Bemola" />
+      <card id="5059" name="Bemola" />
+      <card id="5148" name="Gribmalda of Wings" />
+      <card id="7112" mastery_level="2" name="Fountain Guardian" />
+      <card id="7112" mastery_level="3" name="Fountain Guardian" />
+      <card id="2220" mastery_level="4" name="Frozenbolt chosen" />
+      <card id="8049" mastery_level="5" name="Spirit of the free" />
+      <card id="5148" mastery_level="6" name="Gribmalda of Wings" />
+      <card id="7616" mastery_level="7" name="Lechuza, the Skybinder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6845</id>
+    <name>Enemy at the gates</name>
+    <energy>18</energy>
+    <desc>Even though Ashanti’s forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="7174" name="Mugen and Young Hawk" />
+      <card id="7111" name="Aurai" />
+      <card id="7111" name="Aurai" />
+      <card id="2068" name="Whitesail Wyvern" />
+      <card id="7274" name="Frozenclaw Summoner" />
+      <card id="5111" name="Bennu" />
+      <card id="5111" name="Bennu" />
+      <card id="5148" name="Gribmalda of Wings" />
+      <card id="7112" mastery_level="2" name="Fountain Guardian" />
+      <card id="7112" mastery_level="3" name="Fountain Guardian" />
+      <card id="2220" mastery_level="4" name="Frozenbolt chosen" />
+      <card id="8049" mastery_level="5" name="Spirit of the free" />
+      <card id="7616" mastery_level="6" name="Lechuza, the Skybinder" />
+      <card id="4000" mastery_level="7" name="Noctrus Flintclaw" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6846</id>
+    <name>Ashanti’s Finest</name>
+    <energy>18</energy>
+    <desc>After defeating most of his army you rush inside and find him surrounded by his finest allies. All of them are fast and deadly assassins ready to take you down. You order Auron’s Elites to take down the assassins while you chase after Ashanti himself.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2043" name="Eos" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="5195" name="Owlnaut Z-3" />
+      <card id="2220" name="Frozenbolt chosen" />
+      <card id="2220" name="Frozenbolt chosen" />
+      <card id="4040" mastery_level="2" name="Iphelia, Voice of Pain" />
+      <card id="7110" mastery_level="3" name="Toxin Glider" />
+      <card id="7298" mastery_level="4" name="Mindtis" />
+      <card id="7298" mastery_level="5" name="Mindtis" />
+      <card id="5177" mastery_level="6" name="Thunderbird" />
+      <card id="5177" mastery_level="7" name="Thunderbird" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6847</id>
+    <name>The art of the deal</name>
+    <energy>18</energy>
+    <desc>After cornering Ashanti and realizing that there is now way out of this without a blood bath, you decide to offer him a deal. You offer to look the other way while he escapes in exchange for information on the frog who sent him.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2043" name="Eos" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="5287" name="Baby Delivery Stork" />
+      <card id="5287" name="Baby Delivery Stork" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="7298" name="Mindtis" />
+      <card id="7298" name="Mindtis" />
+      <card id="4040" mastery_level="2" name="Iphelia, Voice of Pain" />
+      <card id="4023" mastery_level="3" name="Paloma, Spear Knight" />
+      <card id="5600" mastery_level="4" name="Tanit, Divinity's Focus" />
+      <card id="7298" mastery_level="5" name="Mindtis" />
+      <card id="5187" mastery_level="6" name="Star Chaser" />
+      <card id="5187" mastery_level="7" name="Star Chaser" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6848</id>
+    <name>Interesting information</name>
+    <energy>18</energy>
+    <desc>Ashanti accepts your deal. He reveals that the contractor was no frog, even though the creature's height might have been similar to that of a frog. As he turns towards a window to conclude his escape, he warns you that this whole plot is probably bigger than it seems.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="2043" name="Eos" />
+      <card id="7298" name="Mindtis" />
+      <card id="6196" name="Raptrys" />
+      <card id="6196" name="Raptrys" />
+      <card id="5207" name="Hazrat Suma" />
+      <card id="7298" name="Mindtis" />
+      <card id="2094" name="Verus, the Galeheart" />
+      <card id="4040" mastery_level="2" name="Iphelia, Voice of Pain" />
+      <card id="4023" mastery_level="3" name="Paloma, Spear Knight" />
+      <card id="5600" mastery_level="4" name="Tanit, Divinity's Focus" />
+      <card id="6613" mastery_level="5" name="Skylo, Lord of the Wings" />
+      <card id="7612" mastery_level="6" name="Tzopilotl, the Beyonder" />
+      <card id="4048" mastery_level="7" name="Sgt. Clockoo" />
     </deck>
   </mission>
 </root>

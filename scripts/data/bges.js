@@ -1619,6 +1619,27 @@ var BATTLEGROUNDS = {
 		"id": "151",
 		"name": "Evil Eye"
 	},
+	"152": {
+		"desc": "The Void is here once again. Void cards gain Regen and Nullify equal to 20% of their base health",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.2,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "nullify",
+				"mult": 0.2,
+				"y": "9"
+			}
+		],
+		"id": "152",
+		"name": "Void Alignment"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -3302,13 +3323,13 @@ var BATTLEGROUNDS = {
 		"name": "Epic Madness"
 	},
 	"558": {
-		"desc": "Armor is increased by 22",
+		"desc": "Armor is increased by 25",
 		"effect": [
 			{
 				"all": "1",
 				"effect_type": "add_skill",
 				"id": "armored",
-				"x": 22
+				"x": 25
 			}
 		],
 		"id": "558",
@@ -3328,13 +3349,13 @@ var BATTLEGROUNDS = {
 		"name": "Touch of Death"
 	},
 	"560": {
-		"desc": "All cards gain Ward 22.",
+		"desc": "All cards gain Ward 25.",
 		"effect": [
 			{
 				"all": "1",
 				"effect_type": "add_skill",
 				"id": "absorb",
-				"x": 22
+				"x": 25
 			}
 		],
 		"id": "560",
@@ -3365,6 +3386,32 @@ var BATTLEGROUNDS = {
 		],
 		"id": "562",
 		"name": "Stubborn Ferocity"
+	},
+	"563": {
+		"desc": "All cards gain Regenerate 99",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"x": 99
+			}
+		],
+		"id": "563",
+		"name": "Endless Life"
+	},
+	"564": {
+		"desc": "All cards gain Berserk 10",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"x": 10
+			}
+		],
+		"id": "564",
+		"name": "Endless Rage"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
