@@ -38269,5 +38269,145 @@
       <skill id="strike" x="4" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6300</id>
+    <card_type>2</card_type>
+    <name>Branded Ragecrow</name>
+    <picture>Avian_Angry_Alfredo_A</picture>
+    <asset_bundle>248</asset_bundle>
+    <hidden_until_time>1655744400</hidden_until_time>
+    <attack>9</attack>
+    <health>50</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="counterburn" x="5" />
+    <skill id="enrage" x="4" all="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>51</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <health>52</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="backlash" x="4" />
+      <skill id="counterburn" x="6" />
+      <skill id="enrage" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="4" />
+      <skill id="counterburn" x="6" />
+      <skill id="enrage" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+      <health>53</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16300</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tormented Ragecrow</name>
+    <picture>Avian_Angry_Alfredo_A</picture>
+    <asset_bundle>248</asset_bundle>
+    <hidden_until_time>1655744400</hidden_until_time>
+    <attack>11</attack>
+    <health>54</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="4" />
+    <skill id="counterburn" x="7" />
+    <skill id="enrage" x="5" all="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>55</health>
+      <skill id="backlash" x="5" />
+      <skill id="counterburn" x="7" />
+      <skill id="enrage" x="5" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>56</health>
+      <skill id="backlash" x="5" />
+      <skill id="counterburn" x="7" />
+      <skill id="enrage" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <skill id="backlash" x="5" />
+      <skill id="counterburn" x="8" />
+      <skill id="enrage" x="6" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26300</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Blazing Ragecrow</name>
+    <picture>Avian_Angry_Alfredo_B</picture>
+    <asset_bundle>248</asset_bundle>
+    <hidden_until_time>1655744400</hidden_until_time>
+    <attack>13</attack>
+    <health>57</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="6" />
+    <skill id="counterburn" x="8" />
+    <skill id="enrage" x="7" all="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>58</health>
+      <skill id="backlash" x="6" />
+      <skill id="counterburn" x="9" />
+      <skill id="enrage" x="7" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>59</health>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="backlash" x="7" />
+      <skill id="counterburn" x="9" />
+      <skill id="enrage" x="7" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="7" />
+      <skill id="counterburn" x="10" />
+      <skill id="enrage" x="8" all="1" />
+    </upgrade>
+  </unit>
 </root>
 

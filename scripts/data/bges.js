@@ -2,12 +2,12 @@
 
 var BATTLEGROUNDS = {
 	"101": {
-		"desc": "All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 25%.",
+		"desc": "All Dragons are bestowed with extraordinary vitality, regenerating each turn by 25% of their base health.",
 		"effect": [
 			{
-				"all": "1",
-				"effect_type": "skill",
-				"id": "heal",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
 				"mult": 0.25,
 				"y": "9"
 			}
@@ -1641,6 +1641,61 @@ var BATTLEGROUNDS = {
 		],
 		"id": "152",
 		"name": "Void Alignment"
+	},
+	"153": {
+		"desc": "Insects gain Invisibility 3 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 20% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "swarm",
+				"mult": 0.2,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "evade",
+				"mult": 0.2,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "counterpoison",
+				"mult": 0.2,
+				"y": "13"
+			}
+		],
+		"id": "153",
+		"name": "Unstoppable Swarm"
+	},
+	"154": {
+		"desc": "Insects gain Backlash 3 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 20% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "swarm",
+				"mult": 0.2,
+				"y": "13"
+			},
+			{
+				"effect_type": "add_skill",
+				"id": "backlash",
+				"x": 3,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "counterpoison",
+				"mult": 0.2,
+				"y": "13"
+			}
+		],
+		"id": "154",
+		"name": "Counterblast Swarm"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
@@ -3364,7 +3419,7 @@ var BATTLEGROUNDS = {
 		"name": "Improved Sigils"
 	},
 	"561": {
-		"desc": "All cards gain Daze 10",
+		"desc": "All cards gain Daze 15",
 		"effect": [
 			{
 				"all": "1",

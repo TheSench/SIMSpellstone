@@ -57843,7 +57843,7 @@
     <id>6837</id>
     <name>Auron</name>
     <energy>18</energy>
-    <desc>A penguin mage greets you. He introduces himself as Auron. He mentions that were he to arrive a second later it would have probably been too late for you.</desc>
+    <desc>A penguin mage greets you and introduces himself as Auron. He mentions that were he to arrive a second later it would have probably been too late for you.</desc>
     <commander id="14" />
     <deck>
       <card id="7030" name="Arctic Ambusher" />
@@ -58035,7 +58035,7 @@
     <id>6845</id>
     <name>Enemy at the gates</name>
     <energy>18</energy>
-    <desc>Even though Ashanti’s forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
+    <desc>Even though Ashanti's forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
     <commander id="471" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -58057,9 +58057,9 @@
   </mission>
   <mission>
     <id>6846</id>
-    <name>Ashanti’s Finest</name>
+    <name>Ashanti's Finest</name>
     <energy>18</energy>
-    <desc>After defeating most of his army you rush inside and find him surrounded by his finest allies. All of them are fast and deadly assassins ready to take you down. You order Auron’s Elites to take down the assassins while you chase after Ashanti himself.</desc>
+    <desc>After defeating most of his army, you rush inside and find him surrounded by his finest allies. All of them are fast and deadly assassins ready to take you down. You order Auron’s Elites to take down the assassins while you chase after Ashanti himself.</desc>
     <commander id="471" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -58125,6 +58125,294 @@
       <card id="6613" mastery_level="5" name="Skylo, Lord of the Wings" />
       <card id="7612" mastery_level="6" name="Tzopilotl, the Beyonder" />
       <card id="4048" mastery_level="7" name="Sgt. Clockoo" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6849</id>
+    <name>Meet and greet</name>
+    <energy>18</energy>
+    <desc>The distressed insect leads you all the way to Forgotten Island. Apparently an unknown force has destroyed Beetleton, forcing most of the insects to flee. Once you arrive at the island you meet their leader, CHAMPNAME.</desc>
+    <commander id="432" />
+    <deck>
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="2136" name="Grazna, Beetle Tamer" />
+      <card id="2136" name="Grazna, Beetle Tamer" />
+      <card id="2157" name="Steelward Defender" />
+      <card id="2212" name="Preserved Arthropod" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2100" name="Kheptronos" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="8123" mastery_level="3" name="Fear of the Vanquished" />
+      <card id="7174" mastery_level="4" name="Mugen and Young Hawk" />
+      <card id="7174" mastery_level="5" name="Mugen and Young Hawk" />
+      <card id="1645" mastery_level="6" name="Sundermarr" />
+      <card id="7298" mastery_level="7" name="Mindtis" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6850</id>
+    <name>The staff</name>
+    <energy>18</energy>
+    <desc>CHAMPNAME asks for your help to retrieve a magic staff that was stolen from her. Apparently, ever since they got there a chaotic dragon has been constantly terrorizing them.</desc>
+    <commander id="434" />
+    <deck>
+      <card id="6231" name="Firemouth Moth" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="6231" name="Grazna, Beetle Tamer" />
+      <card id="2136" name="Firemouth Moth" />
+      <card id="2157" name="Steelward Defender" />
+      <card id="2212" name="Preserved Arthropod" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2100" name="Kheptronos" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="8123" mastery_level="3" name="Fear of the Vanquished" />
+      <card id="7174" mastery_level="4" name="Mugen and Young Hawk" />
+      <card id="7174" mastery_level="5" name="Mugen and Young Hawk" />
+      <card id="1645" mastery_level="6" name="Sundermarr" />
+      <card id="1645" mastery_level="7" name="Sundermarr" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6851</id>
+    <name>Champion Cemetery</name>
+    <energy>18</energy>
+    <desc>The staff was stolen when adventuring in the island's caves. In the depths of them, the type of insects you do not want to mess with dwell. One of them is known to be a weapon hoarder, an insect that by itself has defeated several champions.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="6231" name="Firemouth Moth" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="6231" name="Grazna, Beetle Tamer" />
+      <card id="2136" name="Firemouth Moth" />
+      <card id="2100" name="Kheptronos" />
+      <card id="2212" name="Preserved Arthropod" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2100" name="Kheptronos" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="8123" mastery_level="3" name="Fear of the Vanquished" />
+      <card id="7174" mastery_level="4" name="Mugen and Young Hawk" />
+      <card id="7174" mastery_level="5" name="Mugen and Young Hawk" />
+      <card id="7298" mastery_level="6" name="Mindtis" />
+      <card id="7298" mastery_level="7" name="Mindtis" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6852</id>
+    <name>A fair trade</name>
+    <energy>18</energy>
+    <desc>A bounty hunter guides you to the entrance. In exchange, it only asks for some of the weapons you find in your way, since it has a troll to defeat and it can't do it with its current equipment. You agree and head into the caves.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="6231" name="Firemouth Moth" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2100" name="Kheptronos" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="8123" mastery_level="3" name="Fear of the Vanquished" />
+      <card id="7295" mastery_level="4" name="Crystal Spider" />
+      <card id="7174" mastery_level="5" name="Mugen and Young Hawk" />
+      <card id="7298" mastery_level="6" name="Mindtis" />
+      <card id="7298" mastery_level="7" name="Mindtis" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6853</id>
+    <name>Heavy breathing</name>
+    <energy>18</energy>
+    <desc>You are exploring within the caves, every step you take deeper into them makes the smell become fouler and the air harder to breathe. You decide to keep pushing forward until you suddenly hear the crawling of an insect.</desc>
+    <commander id="366" />
+    <deck>
+      <card id="6231" name="Firemouth Moth" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2100" name="Kheptronos" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="8123" mastery_level="3" name="Fear of the Vanquished" />
+      <card id="7295" mastery_level="4" name="Crystal Spider" />
+      <card id="7174" mastery_level="5" name="Mugen and Young Hawk" />
+      <card id="2097" mastery_level="6" name="Mindtis" />
+      <card id="7298" mastery_level="7" name="Gem Harvester" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6854</id>
+    <name>The scorpion king</name>
+    <energy>18</energy>
+    <desc>You look in front of you and see a gigantic half undead scorpion starts rushing towards you. You run into a random direction hoping that the scorpion will get stuck in the caves behind you. After almost running out of breath, all of a sudden you trip... with a sword.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="6231" name="Firemouth Moth" />
+      <card id="7115" name="Airborne Battalion" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="6231" name="Firemouth Moth" />
+      <card id="6231" name="Firemouth Moth" />
+      <card id="2100" name="Kheptronos" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="8123" mastery_level="3" name="Fear of the Vanquished" />
+      <card id="7295" mastery_level="4" name="Crystal Spider" />
+      <card id="7174" mastery_level="5" name="Mugen and Young Hawk" />
+      <card id="2097" mastery_level="6" name="Mindtis" />
+      <card id="6231" mastery_level="7" name="Firemouth Moth" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6855</id>
+    <name>Sword Saint</name>
+    <energy>18</energy>
+    <desc>You lift your head just to see piles of weapons laying all around the cave. Fortunately, only a couple of them seem to stand out. Amongst them, a sword and what clearly looks like the staff you came in looking for.</desc>
+    <commander id="432" />
+    <deck>
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="6197" name="Monarch Scorcher" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="8132" mastery_level="2" name="Vindi-caterer Karna" />
+      <card id="5201" mastery_level="3" name="Cricket Caller" />
+      <card id="7268" mastery_level="4" name="Feral Griffinmoth" />
+      <card id="7268" mastery_level="5" name="Feral Griffinmoth" />
+      <card id="2100" mastery_level="6" name="Kheptronos" />
+      <card id="1645" mastery_level="7" name="Sundermarr" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6856</id>
+    <name>Sneaky beaky like</name>
+    <energy>18</energy>
+    <desc>The staff seems just a couple of steps away. The sword seems very valuable as well, but you realize it's too much of a stretch to go for both weapons. You grab a couple of short swords for the bounty hunter and sneak towards the staff.</desc>
+    <commander id="434" />
+    <deck>
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="6197" name="Monarch Scorcher" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="8132" mastery_level="2" name="Vindi-caterer Karna" />
+      <card id="5201" mastery_level="3" name="Cricket Caller" />
+      <card id="7268" mastery_level="4" name="Feral Griffinmoth" />
+      <card id="7268" mastery_level="5" name="Feral Griffinmoth" />
+      <card id="2100" mastery_level="6" name="Kheptronos" />
+      <card id="1645" mastery_level="7" name="Sundermarr" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6857</id>
+    <name>Time to go</name>
+    <energy>18</energy>
+    <desc>It is just within your reach, you manage to silently gather the staff and start heading back. While sneaking away, you hear an extremely loud screech coming from behind. You turn around and see a gigantic worm start to swing weapons in your direction.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7298" name="Mindtis" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="6197" name="Monarch Scorcher" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="8132" mastery_level="2" name="Vindi-caterer Karna" />
+      <card id="5201" mastery_level="3" name="Cricket Caller" />
+      <card id="7268" mastery_level="4" name="Feral Griffinmoth" />
+      <card id="7268" mastery_level="5" name="Feral Griffinmoth" />
+      <card id="2100" mastery_level="6" name="Kheptronos" />
+      <card id="1645" mastery_level="7" name="Sundermarr" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6858</id>
+    <name>Run adventurer run</name>
+    <energy>18</energy>
+    <desc>Running for your life, you start to dodge the weapons that the worm throws your way. Fortunately, you manage to get out of the caves alive.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7298" name="Mindtis" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="6197" name="Monarch Scorcher" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="8132" mastery_level="2" name="Vindi-caterer Karna" />
+      <card id="5201" mastery_level="3" name="Cricket Caller" />
+      <card id="7268" mastery_level="4" name="Feral Griffinmoth" />
+      <card id="2100" mastery_level="5" name="Kheptronos" />
+      <card id="2100" mastery_level="6" name="Kheptronos" />
+      <card id="1645" mastery_level="7" name="Sundermarr" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6859</id>
+    <name>Endless gratitude</name>
+    <energy>18</energy>
+    <desc>Waiting for you outside is the bounty hunter. You deliver the swords you gathered and it thanks you. Noticing that you are exhausted, it helps walk you towards CHAMPNAME. As soon as you see her, you notice a huge smile on her face.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7298" name="Mindtis" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="6197" name="Monarch Scorcher" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="8132" mastery_level="2" name="Vindi-caterer Karna" />
+      <card id="5201" mastery_level="3" name="Cricket Caller" />
+      <card id="7268" mastery_level="4" name="Feral Griffinmoth" />
+      <card id="2100" mastery_level="5" name="Kheptronos" />
+      <card id="2100" mastery_level="6" name="Kheptronos" />
+      <card id="1645" mastery_level="7" name="Sundermarr" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6860</id>
+    <name>Duskwillow it is</name>
+    <energy>18</energy>
+    <desc>She states that you have saved every insect on the island by recuperating the staff. Before you leave, the insect suggests you head towards Duskwillow and find a sleeping oracle that is thousands of years old. It will help you understand what is going on.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="2180" name="Hidden Monstrosity" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7298" name="Mindtis" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="6197" name="Monarch Scorcher" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="8132" mastery_level="2" name="Vindi-caterer Karna" />
+      <card id="6197" mastery_level="3" name="Monarch Scorcher" />
+      <card id="7268" mastery_level="4" name="Feral Griffinmoth" />
+      <card id="7295" mastery_level="5" name="Crystal Spider" />
+      <card id="7174" mastery_level="6" name="Mugen and Young Hawk" />
+      <card id="1645" mastery_level="7" name="Sundermarr" />
     </deck>
   </mission>
 </root>

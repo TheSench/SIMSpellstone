@@ -11827,36 +11827,36 @@
   </campaign>
   <!-- LBN Alyel Angel event 89 END -->
   <!-- LBN Ashanti Avian event 90  -->
-  <!--	<campaign>
-		<id>4003</id>
-		<event_only>1</event_only>
-		<hidden>1</hidden>
-		<name>Lightning Ashanti</name>
-		<icon id='gem_Boss_LG' bundle='0' />
-		<exclude_map_bges>1</exclude_map_bges>
-		<location_id>8</location_id>
-		<x>675</x>
-		<y>175</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>6843</mission_id>
-			<mission_id>6844</mission_id>
-			<mission_id>6845</mission_id>
-			<mission_id>6846</mission_id>
-			<mission_id>6847</mission_id> 
-			<mission_id>6848</mission_id> 
-		</missions>
-		<rewards>
-			<card level='1' id='510' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2006' />
-			<card level='5' id='2006' />
-			<item level='6' id='104059' number='25'/>
-			<item level='7' id='104059' number='75'/>
-		</rewards>
-		<find_item id='3049' drop_per_energy='.6' />
-	</campaign> -->
+  <campaign>
+    <id>4003</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Ashanti</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>8</location_id>
+    <x>635</x>
+    <y>160</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6843</mission_id>
+      <mission_id>6844</mission_id>
+      <mission_id>6845</mission_id>
+      <mission_id>6846</mission_id>
+      <mission_id>6847</mission_id>
+      <mission_id>6848</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2233" />
+      <card level="5" id="2233" />
+      <item level="6" id="104059" number="25" />
+      <item level="7" id="104059" number="75" />
+    </rewards>
+    <find_item id="3049" drop_per_energy=".6" />
+  </campaign>
   <!-- LBN Ashanti Avian event 90 END -->
 </root>
 

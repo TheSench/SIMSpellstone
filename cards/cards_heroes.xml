@@ -12202,7 +12202,7 @@
     <health>75</health>
     <rarity>4</rarity>
     <skill id="jam" c="5" all="1" />
-    <skill id="barrage" x="3" />
+    <skill id="barrage" x="2" />
     <skill id="protect" all="1" x="3" />
     <type>2</type>
     <set>9999</set>
@@ -12210,36 +12210,36 @@
       <level>2</level>
       <health>80</health>
       <skill id="jam" c="4" all="1" />
-      <skill id="barrage" x="4" />
+      <skill id="barrage" x="2" />
       <skill id="protect" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>85</health>
       <skill id="jam" c="4" all="1" />
-      <skill id="barrage" x="4" />
+      <skill id="barrage" x="3" />
       <skill id="protect" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>90</health>
       <skill id="jam" c="4" all="1" />
-      <skill id="barrage" x="5" />
+      <skill id="barrage" x="4" />
       <skill id="protect" all="1" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>95</health>
       <skill id="jam" c="3" all="1" />
-      <skill id="barrage" x="7" />
+      <skill id="barrage" x="5" />
       <skill id="protect" all="1" x="8" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
       <skill id="jam" c="2" all="1" />
-      <skill id="barrage" x="10" />
-      <skill id="protect" all="1" x="15" />
+      <skill id="barrage" x="8" />
+      <skill id="protect" all="1" x="13" />
     </upgrade>
   </unit>
 </root>
