@@ -27280,7 +27280,7 @@
     <name>Aikido Initiate</name>
     <picture>Insect_Aikido_Grasshopper_A</picture>
     <asset_bundle>250</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1654794000</hidden_until_time>
     <attack>4</attack>
     <health>26</health>
     <cost>2</cost>
@@ -27325,7 +27325,7 @@
     <name>Aikido Practitioner</name>
     <picture>Insect_Aikido_Grasshopper_A</picture>
     <asset_bundle>250</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1654794000</hidden_until_time>
     <attack>6</attack>
     <health>28</health>
     <cost>2</cost>
@@ -27370,7 +27370,7 @@
     <name>Aikido Master</name>
     <picture>Insect_Aikido_Grasshopper_B</picture>
     <asset_bundle>250</asset_bundle>
-    <hidden_until_time />
+    <hidden_until_time>1654794000</hidden_until_time>
     <attack>7</attack>
     <health>30</health>
     <cost>2</cost>
