@@ -38338,21 +38338,18 @@
     <upgrade>
       <level>3</level>
       <health>55</health>
-      <skill id="backlash" x="5" />
-      <skill id="counterburn" x="7" />
-      <skill id="enrage" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>56</health>
-      <skill id="backlash" x="5" />
+      <skill id="backlash" x="4" />
       <skill id="counterburn" x="7" />
       <skill id="enrage" x="6" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>13</attack>
-      <skill id="backlash" x="5" />
+      <skill id="backlash" x="4" />
       <skill id="counterburn" x="8" />
       <skill id="enrage" x="6" all="1" />
     </upgrade>
@@ -38398,13 +38395,10 @@
     <upgrade>
       <level>5</level>
       <health>60</health>
-      <skill id="backlash" x="7" />
-      <skill id="counterburn" x="9" />
-      <skill id="enrage" x="7" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="backlash" x="7" />
+      <skill id="backlash" x="6" />
       <skill id="counterburn" x="10" />
       <skill id="enrage" x="8" all="1" />
     </upgrade>
