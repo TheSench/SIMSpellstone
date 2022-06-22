@@ -11254,6 +11254,90 @@
     <ignore_energy_reduction_until>1658422800</ignore_energy_reduction_until>
     <!-- Thursday, July 21, 2022 at 17:00:00 	  -->
   </campaign>
+  <!-- Campaign Event 91 - Forgotten Island -->
+  <campaign>
+    <id>1320</id>
+    <name>Call to adventure</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1656003600</locked_start_time>
+    <!-- Thursday, June 23, 2022 at 17:00:00  -->
+    <location_id>16</location_id>
+    <x>385</x>
+    <y>370</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6849</mission_id>
+      <mission_id>6850</mission_id>
+      <mission_id>6851</mission_id>
+      <mission_id>6852</mission_id>
+      <mission_id>6853</mission_id>
+      <mission_id>6854</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2642" number="25" />
+      /&gt;
+      <!-- Forgotten Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2234" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2179" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2642" number="75" />
+      /&gt;
+      <!-- Forgotten Flask -->
+      <card level="7" id="2232" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3074" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1658422800</ignore_energy_reduction_until>
+    <!-- Thursday, July 21, 2022 at 17:00:00 	  -->
+  </campaign>
+  <campaign>
+    <id>1321</id>
+    <name>In deep danger</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1318" level="1" />
+    <locked_start_time>1657213200</locked_start_time>
+    <!-- Thursday, 7 July 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>16</location_id>
+    <x>435</x>
+    <y>260</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6855</mission_id>
+      <mission_id>6856</mission_id>
+      <mission_id>6857</mission_id>
+      <mission_id>6858</mission_id>
+      <mission_id>6859</mission_id>
+      <mission_id>6860</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2642" number="25" />
+      /&gt;
+      <!-- Forgotten Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2156" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2050" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2642" number="75" />
+      /&gt;
+      <!-- Forgotten Flask -->
+      <card level="7" id="2232" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3074" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1658422800</ignore_energy_reduction_until>
+    <!-- Thursday, July 21, 2022 at 17:00:00 	  -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

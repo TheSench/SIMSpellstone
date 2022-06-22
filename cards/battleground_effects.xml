@@ -1192,11 +1192,11 @@
   <battleground>
     <id>154</id>
     <name>Counterblast Swarm</name>
-    <desc>Insects gain Backlash 3 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 20% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.</desc>
+    <desc>Insects gain Backlash 2 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 20% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
       <add_skill id="swarm" mult="0.2" base="health" y="13" />
-      <add_skill id="backlash" x="3" y="13" />
+      <add_skill id="backlash" x="2" y="13" />
       <add_skill id="counterpoison" mult="0.2" base="health" y="13" />
     </effect>
   </battleground>

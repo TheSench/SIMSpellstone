@@ -708,7 +708,7 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>1</type>
     <sub_type>13</sub_type>
-    <attack>7</attack>
+    <attack>8</attack>
     <health>17</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -717,15 +717,15 @@
     <skill id="nullify" x="3" />
     <upgrade>
       <level>2</level>
-      <attack>8</attack>
-      <health>18</health>
+      <attack>9</attack>
+      <health>19</health>
       <skill id="absorb" x="5" />
       <skill id="burn" x="3" />
       <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>19</health>
+      <health>20</health>
       <skill id="absorb" x="6" />
       <skill id="burn" x="4" />
       <skill id="nullify" x="3" />
@@ -738,44 +738,44 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>9</attack>
+      <attack>10</attack>
       <skill id="absorb" x="7" />
       <skill id="burn" x="5" />
       <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>10</attack>
+      <attack>11</attack>
       <skill id="absorb" x="8" />
       <skill id="burn" x="6" />
       <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>20</health>
+      <health>21</health>
       <skill id="absorb" x="9" />
       <skill id="burn" x="6" />
       <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <attack>11</attack>
-      <health>21</health>
+      <attack>12</attack>
+      <health>22</health>
       <skill id="absorb" x="9" />
       <skill id="burn" x="6" />
       <skill id="nullify" x="5" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>22</health>
+      <health>23</health>
       <skill id="absorb" x="10" />
       <skill id="burn" x="7" />
       <skill id="nullify" x="5" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>12</attack>
-      <health>23</health>
+      <attack>13</attack>
+      <health>24</health>
       <skill id="absorb" x="10" />
       <skill id="burn" x="7" />
       <skill id="nullify" x="5" />
@@ -1644,7 +1644,7 @@
     <type>2</type>
     <sub_type>13</sub_type>
     <attack>8</attack>
-    <health>18</health>
+    <health>19</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="regenerate" x="5" />
@@ -1658,14 +1658,14 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>19</health>
+      <health>20</health>
       <skill id="regenerate" x="7" />
       <skill id="berserk" x="3" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>20</health>
+      <health>21</health>
       <skill id="regenerate" x="7" />
       <skill id="berserk" x="3" />
       <skill id="flurry" c="3" />
@@ -1686,18 +1686,17 @@
     <upgrade>
       <level>7</level>
       <attack>10</attack>
-      <health>21</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>22</health>
+      <health>23</health>
       <skill id="regenerate" x="9" />
       <skill id="berserk" x="4" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>22</health>
       <skill id="regenerate" x="10" />
       <skill id="berserk" x="4" />
       <skill id="flurry" c="2" />
@@ -1705,9 +1704,9 @@
     <upgrade>
       <level>10</level>
       <attack>10</attack>
-      <health>23</health>
+      <health>24</health>
       <skill id="regenerate" x="11" />
-      <skill id="berserk" x="4" />
+      <skill id="berserk" x="5" />
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
@@ -2592,8 +2591,8 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>2</type>
     <sub_type>13</sub_type>
-    <attack>8</attack>
-    <health>26</health>
+    <attack>9</attack>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="evade" x="2" />
@@ -2607,8 +2606,8 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>9</attack>
-      <health>27</health>
+      <attack>10</attack>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -2618,44 +2617,44 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>10</attack>
-      <health>28</health>
+      <attack>11</attack>
+      <health>30</health>
       <skill id="evade" x="3" />
       <skill id="absorb" x="8" />
       <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>11</attack>
+      <attack>12</attack>
       <skill id="evade" x="3" />
       <skill id="absorb" x="9" />
       <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>29</health>
+      <health>31</health>
       <skill id="evade" x="3" />
       <skill id="absorb" x="9" />
       <skill id="enfeeble" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>30</health>
+      <health>32</health>
       <skill id="evade" x="3" />
       <skill id="absorb" x="10" />
       <skill id="enfeeble" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>31</health>
+      <health>33</health>
       <skill id="evade" x="4" />
       <skill id="absorb" x="10" />
       <skill id="enfeeble" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>12</attack>
-      <health>32</health>
+      <attack>14</attack>
+      <health>34</health>
     </upgrade>
   </unit>
   <unit>
@@ -5045,6 +5044,92 @@
       <skill id="berserk" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4060</id>
+    <card_type>2</card_type>
+    <name>Yaritza</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Insect_Dragon_Slayer_A</picture>
+    <asset_bundle>250</asset_bundle>
+    <item_name>Yaritza Stone</item_name>
+    <item_desc>Collect Yaritza Stones to upgrade Yaritza!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <sub_type>5</sub_type>
+    <attack>0</attack>
+    <health>33</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="strike" all="1" x="4" />
+    <skill id="burn" x="4" />
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="backlash" x="3" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="backlash" x="4" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="burn" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="5" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="burn" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>37</health>
+      <skill id="backlash" x="5" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="burn" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>38</health>
+      <skill id="backlash" x="6" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="burn" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>39</health>
+      <skill id="backlash" x="6" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="burn" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="backlash" x="6" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="burn" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>40</health>
+      <skill id="backlash" x="6" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="burn" x="9" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -5585,70 +5670,70 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <sub_type>13</sub_type>
-    <attack>7</attack>
+    <attack>8</attack>
     <health>18</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="5" />
+    <skill id="armored" x="6" />
     <skill id="rally" all="1" x="2" />
-    <skill id="daze" x="5" />
+    <skill id="daze" x="6" />
     <upgrade>
       <level>2</level>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="6" />
       <skill id="rally" all="1" x="2" />
-      <skill id="daze" x="6" />
+      <skill id="daze" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>19</health>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="6" />
       <skill id="rally" all="1" x="3" />
-      <skill id="daze" x="6" />
+      <skill id="daze" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="6" />
       <skill id="rally" all="1" x="3" />
-      <skill id="daze" x="7" />
+      <skill id="daze" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>20</health>
-      <skill id="armored" x="6" />
-      <skill id="rally" all="1" x="3" />
-      <skill id="daze" x="7" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="armored" x="6" />
+      <skill id="armored" x="7" />
       <skill id="rally" all="1" x="3" />
       <skill id="daze" x="8" />
     </upgrade>
     <upgrade>
+      <level>6</level>
+      <skill id="armored" x="7" />
+      <skill id="rally" all="1" x="3" />
+      <skill id="daze" x="9" />
+    </upgrade>
+    <upgrade>
       <level>7</level>
-      <attack>8</attack>
+      <attack>10</attack>
       <health>21</health>
     </upgrade>
     <upgrade>
       <level>8</level>
-      <skill id="armored" x="7" />
+      <skill id="armored" x="8" />
       <skill id="rally" all="1" x="3" />
-      <skill id="daze" x="8" />
+      <skill id="daze" x="9" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <health>22</health>
-      <skill id="armored" x="7" />
+      <skill id="armored" x="8" />
       <skill id="rally" all="1" x="4" />
-      <skill id="daze" x="8" />
+      <skill id="daze" x="9" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>9</attack>
-      <health>23</health>
-      <skill id="armored" x="7" />
+      <attack>11</attack>
+      <health>24</health>
+      <skill id="armored" x="8" />
       <skill id="rally" all="1" x="4" />
-      <skill id="daze" x="9" />
+      <skill id="daze" x="10" />
     </upgrade>
   </unit>
   <unit>
@@ -6022,7 +6107,7 @@
     <type>1</type>
     <sub_type>12</sub_type>
     <sub_type>13</sub_type>
-    <attack>8</attack>
+    <attack>11</attack>
     <health>24</health>
     <cost>2</cost>
     <rarity>4</rarity>
@@ -6038,7 +6123,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>9</attack>
+      <attack>12</attack>
       <health>26</health>
       <skill id="absorb" x="6" />
       <skill id="armored" x="5" />
@@ -6060,36 +6145,39 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>10</attack>
+      <attack>13</attack>
       <health>29</health>
-    </upgrade>
-    <upgrade>
-      <level>7</level>
-      <attack>11</attack>
       <skill id="absorb" x="8" />
       <skill id="armored" x="7" />
       <skill id="weaken" x="4" all="1" />
     </upgrade>
     <upgrade>
-      <level>8</level>
-      <health>30</health>
+      <level>7</level>
+      <attack>14</attack>
       <skill id="absorb" x="9" />
-      <skill id="armored" x="7" />
+      <skill id="armored" x="8" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>31</health>
+      <skill id="absorb" x="10" />
+      <skill id="armored" x="8" />
       <skill id="weaken" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>31</health>
-      <skill id="absorb" x="10" />
-      <skill id="armored" x="7" />
+      <health>33</health>
+      <skill id="absorb" x="11" />
+      <skill id="armored" x="8" />
       <skill id="weaken" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>12</attack>
-      <health>32</health>
-      <skill id="absorb" x="10" />
-      <skill id="armored" x="8" />
+      <attack>15</attack>
+      <health>34</health>
+      <skill id="absorb" x="11" />
+      <skill id="armored" x="9" />
       <skill id="weaken" x="5" all="1" />
     </upgrade>
   </unit>
@@ -9700,6 +9788,95 @@
       <skill id="burn" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6622</id>
+    <card_type>2</card_type>
+    <name>Nophora, the Hoarder</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Insect_Weapon_Hoarder_A</picture>
+    <asset_bundle>250</asset_bundle>
+    <hidden_until_time>1656003600</hidden_until_time>
+    <!--Thursday, June 23, 2022 17:00:00	-->
+    <item_name>Nophora Stone</item_name>
+    <item_desc>Collect Nophora Stones to upgrade the Legendary Nophora, the Hoarder card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <attack>15</attack>
+    <health>54</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="8" />
+    <skill id="regenerate" x="8" />
+    <skill id="strike" all="1" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>56</health>
+      <skill id="counter" x="9" />
+      <skill id="regenerate" x="8" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>58</health>
+      <skill id="counter" x="9" />
+      <skill id="regenerate" x="10" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>16</attack>
+      <skill id="counter" x="9" />
+      <skill id="regenerate" x="11" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="counter" x="10" />
+      <skill id="regenerate" x="12" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>18</attack>
+      <skill id="counter" x="10" />
+      <skill id="regenerate" x="12" />
+      <skill id="strike" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>19</attack>
+      <health>61</health>
+      <skill id="counter" x="11" />
+      <skill id="regenerate" x="12" />
+      <skill id="strike" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>63</health>
+      <skill id="counter" x="11" />
+      <skill id="regenerate" x="12" />
+      <skill id="strike" all="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>20</attack>
+      <skill id="counter" x="12" />
+      <skill id="regenerate" x="13" />
+      <skill id="strike" all="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="counter" x="13" />
+      <skill id="regenerate" x="13" />
+      <skill id="strike" all="1" x="9" />
+    </upgrade>
+  </unit>
   <!-- === CHAOS END === -->
   <!-- ============================== -->
   <!-- === WYLD PREMIUM CHAMPIONS === -->
@@ -10514,69 +10691,69 @@
     <sub_type>11</sub_type>
     <sub_type>13</sub_type>
     <attack>5</attack>
-    <health>24</health>
+    <health>27</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="valor" x="7" />
-    <skill id="heal" x="3" y="13" all="1" />
+    <skill id="heal" x="4" y="13" all="1" />
     <skill id="fervor" x="3" y="13" />
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="valor" x="8" />
-      <skill id="heal" x="4" y="13" all="1" />
+      <skill id="heal" x="5" y="13" all="1" />
       <skill id="fervor" x="3" y="13" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>26</health>
+      <health>29</health>
       <skill id="valor" x="8" />
-      <skill id="heal" x="4" y="13" all="1" />
+      <skill id="heal" x="5" y="13" all="1" />
       <skill id="fervor" x="4" y="13" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>27</health>
+      <health>30</health>
       <skill id="valor" x="9" />
-      <skill id="heal" x="4" y="13" all="1" />
+      <skill id="heal" x="5" y="13" all="1" />
       <skill id="fervor" x="4" y="13" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="valor" x="9" />
-      <skill id="heal" x="4" y="13" all="1" />
+      <skill id="heal" x="5" y="13" all="1" />
       <skill id="fervor" x="5" y="13" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>28</health>
+      <health>31</health>
       <skill id="valor" x="10" />
-      <skill id="heal" x="5" y="13" all="1" />
+      <skill id="heal" x="6" y="13" all="1" />
       <skill id="fervor" x="5" y="13" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>29</health>
+      <health>32</health>
       <skill id="valor" x="10" />
-      <skill id="heal" x="5" y="13" all="1" />
+      <skill id="heal" x="6" y="13" all="1" />
       <skill id="fervor" x="6" y="13" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>30</health>
+      <health>33</health>
       <skill id="valor" x="11" />
-      <skill id="heal" x="5" y="13" all="1" />
-      <skill id="fervor" x="6" y="13" />
+      <skill id="heal" x="6" y="13" all="1" />
+      <skill id="fervor" x="7" y="13" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <health>31</health>
+      <health>34</health>
       <skill id="valor" x="11" />
-      <skill id="heal" x="6" y="13" all="1" />
-      <skill id="fervor" x="6" y="13" />
+      <skill id="heal" x="7" y="13" all="1" />
+      <skill id="fervor" x="8" y="13" />
     </upgrade>
   </unit>
   <unit>

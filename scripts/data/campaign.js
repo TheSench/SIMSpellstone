@@ -5766,6 +5766,39 @@ var CAMPAIGNS = {
 		],
 		"name": "The hunter has become the hunted"
 	},
+	"1320": {
+		"id": "1320",
+		"items": {
+			"3074": 0.6
+		},
+		"location_id": "16",
+		"missions": [
+			"6849",
+			"6850",
+			"6851",
+			"6852",
+			"6853",
+			"6854"
+		],
+		"name": "Call to adventure"
+	},
+	"1321": {
+		"battleground_id": "2019",
+		"id": "1321",
+		"items": {
+			"3074": 0.8
+		},
+		"location_id": "16",
+		"missions": [
+			"6855",
+			"6856",
+			"6857",
+			"6858",
+			"6859",
+			"6860"
+		],
+		"name": "In deep danger"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},

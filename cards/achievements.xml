@@ -17670,6 +17670,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 91 - Insect - Node 1 -->
+  <achievement>
+    <id>3795</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Call to adventure</name>
+    <desc>Complete the 'Call to adventure' campaign on Mastery Level 1.</desc>
+    <mission_req>6849</mission_req>
+    <locked_start_time>1656003600</locked_start_time>
+    <!-- Thursday, June 23, 2022 17:00:00  -->
+    <req>
+      <campaign>1320</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3074" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7087" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3796</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Call to adventure</name>
+    <desc>Complete the 'Call to adventure' campaign on Mastery Level 2.</desc>
+    <mission_req>6849</mission_req>
+    <locked_start_time>1656003600</locked_start_time>
+    <!-- Thursday, June 23, 2022 17:00:00  -->
+    <achievement_req>3795</achievement_req>
+    <req>
+      <campaign>1320</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3797</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Call to adventure</name>
+    <desc>Complete the 'Call to adventure' campaign on Mastery Level 4.</desc>
+    <mission_req>6849</mission_req>
+    <locked_start_time>1656003600</locked_start_time>
+    <!-- Thursday, June 23, 2022 17:00:00  -->
+    <achievement_req>3796</achievement_req>
+    <req>
+      <campaign>1320</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3798</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Call to adventure</name>
+    <desc>Complete the 'Call to adventure' campaign on Mastery Level 6.</desc>
+    <mission_req>6849</mission_req>
+    <locked_start_time>1656003600</locked_start_time>
+    <!-- Thursday, June 23, 2022 17:00:00  -->
+    <achievement_req>3797</achievement_req>
+    <req>
+      <campaign>1320</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 91 - Insect - Node 2 -->
+  <achievement>
+    <id>3799</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In deep danger</name>
+    <desc>Complete the 'In deep danger' campaign on Mastery Level 2.</desc>
+    <mission_req>6855</mission_req>
+    <locked_start_time>1657213200</locked_start_time>
+    <!-- Thursday, 7 July 2022 17:00:00 -->
+    <req>
+      <campaign>1321</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3800</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In deep danger</name>
+    <desc>Complete the 'In deep danger' campaign on Mastery Level 4.</desc>
+    <mission_req>6855</mission_req>
+    <locked_start_time>1657213200</locked_start_time>
+    <!-- Thursday, 7 July 2022 17:00:00 -->
+    <achievement_req>3799</achievement_req>
+    <req>
+      <campaign>1321</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3801</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In deep danger</name>
+    <desc>Complete the 'In deep danger' campaign on Mastery Level 6.</desc>
+    <mission_req>6855</mission_req>
+    <locked_start_time>1657213200</locked_start_time>
+    <!-- Thursday, 7 July 2022 17:00:00 -->
+    <achievement_req>3800</achievement_req>
+    <req>
+      <campaign>1321</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -18709,6 +18842,32 @@
       <campaign>1318</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1319</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Forgotten Island Revisited -->
+    <id>4045</id>
+    <type>2</type>
+    <order>632</order>
+    <name>Champion of Forgotten Island</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Forgotten Island.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6849</mission_req>
+    <req>
+      <campaign>1171</campaign>
+      <campaign>1172</campaign>
+      <campaign>1173</campaign>
+      <campaign>1174</campaign>
+      <campaign>1175</campaign>
+      <campaign>1176</campaign>
+      <campaign>1320</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1321</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>

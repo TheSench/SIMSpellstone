@@ -8602,13 +8602,13 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>16</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="rally" x="3" y="13" />
+      <skill id="rally" x="5" y="13" />
       <skill id="frost" x="1" />
-      <skill id="weaken" x="4" />
+      <skill id="weaken" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -8620,36 +8620,36 @@
     <asset_bundle>65</asset_bundle>
     <hidden_until_time>1468515600</hidden_until_time>
     <attack>4</attack>
-    <health>16</health>
+    <health>19</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="rally" x="4" y="13" />
+    <skill id="rally" x="6" y="13" />
     <skill id="frost" x="1" />
-    <skill id="weaken" x="4" />
+    <skill id="weaken" x="6" />
     <type>1</type>
     <sub_type>13</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>18</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>19</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="rally" x="5" y="13" />
-      <skill id="frost" x="2" />
-      <skill id="weaken" x="5" />
+      <skill id="rally" x="10" y="13" />
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="8" />
     </upgrade>
   </unit>
   <unit>

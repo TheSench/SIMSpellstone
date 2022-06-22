@@ -58131,7 +58131,7 @@
     <id>6849</id>
     <name>Meet and greet</name>
     <energy>18</energy>
-    <desc>The distressed insect leads you all the way to Forgotten Island. Apparently an unknown force has destroyed Beetleton, forcing most of the insects to flee. Once you arrive at the island you meet their leader, CHAMPNAME.</desc>
+    <desc>The distressed insect leads you all the way to Forgotten Island. Apparently an unknown force has destroyed Beetleton, forcing most of the insects to flee. Once you arrive at the island you meet their leader, Yaritza.</desc>
     <commander id="432" />
     <deck>
       <card id="7115" name="Airborne Battalion" />
@@ -58155,7 +58155,7 @@
     <id>6850</id>
     <name>The staff</name>
     <energy>18</energy>
-    <desc>CHAMPNAME asks for your help to retrieve a magic staff that was stolen from her. Apparently, ever since they got there a chaotic dragon has been constantly terrorizing them.</desc>
+    <desc>Yaritza asks for your help to retrieve a magic staff that was stolen from her. Apparently, ever since they got there, a chaotic dragon has been constantly terrorizing them.</desc>
     <commander id="434" />
     <deck>
       <card id="6231" name="Firemouth Moth" />
@@ -58203,7 +58203,7 @@
     <id>6852</id>
     <name>A fair trade</name>
     <energy>18</energy>
-    <desc>A bounty hunter guides you to the entrance. In exchange, it only asks for some of the weapons you find in your way, since it has a troll to defeat and it can't do it with its current equipment. You agree and head into the caves.</desc>
+    <desc>A bounty hunter guides you to the entrance, in exchange it only asks for some of the weapons you find in your way. This is because it has a troll to defeat and it can't do it with its current equipment. You agree and head into the caves.</desc>
     <commander id="326" />
     <deck>
       <card id="6231" name="Firemouth Moth" />
@@ -58371,7 +58371,7 @@
     <id>6859</id>
     <name>Endless gratitude</name>
     <energy>18</energy>
-    <desc>Waiting for you outside is the bounty hunter. You deliver the swords you gathered and it thanks you. Noticing that you are exhausted, it helps walk you towards CHAMPNAME. As soon as you see her, you notice a huge smile on her face.</desc>
+    <desc>Waiting for you outside is the bounty hunter. You deliver the swords you gathered and it thanks you. Noticing that you are exhausted, it helps walk you towards Yaritza. As soon as you see her, you notice a huge smile on her face.</desc>
     <commander id="367" />
     <deck>
       <card id="2180" name="Hidden Monstrosity" />
