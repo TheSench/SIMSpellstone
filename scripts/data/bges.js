@@ -1649,7 +1649,7 @@ var BATTLEGROUNDS = {
 				"base": "health",
 				"effect_type": "add_skill",
 				"id": "swarm",
-				"mult": 0.2,
+				"mult": 0.15,
 				"y": "13"
 			},
 			{
@@ -1661,6 +1661,10 @@ var BATTLEGROUNDS = {
 			},
 			{
 				"base": "health",
+				"delay": [
+					3,
+					4
+				],
 				"effect_type": "add_skill",
 				"id": "counterpoison",
 				"mult": 0.2,
@@ -1671,13 +1675,13 @@ var BATTLEGROUNDS = {
 		"name": "Unstoppable Swarm"
 	},
 	"154": {
-		"desc": "Insects gain Backlash 2 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 20% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.",
+		"desc": "Insects gain Backlash 2 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 15% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.",
 		"effect": [
 			{
 				"base": "health",
 				"effect_type": "add_skill",
 				"id": "swarm",
-				"mult": 0.2,
+				"mult": 0.15,
 				"y": "13"
 			},
 			{
@@ -1688,6 +1692,10 @@ var BATTLEGROUNDS = {
 			},
 			{
 				"base": "health",
+				"delay": [
+					3,
+					4
+				],
 				"effect_type": "add_skill",
 				"id": "counterpoison",
 				"mult": 0.2,
