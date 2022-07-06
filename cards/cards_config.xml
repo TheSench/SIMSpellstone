@@ -555,14 +555,13 @@
   <skillType>
     <id>poisonstrike</id>
     <order>500</order>
-    <icon>arcane_shot</icon>
+    <icon>poison_bolt</icon>
     <name>Poisonbolt</name>
     <desc>Deals bolt damage to a random enemy creature and leaves poison</desc>
     <desc_all>Deals bolt damage to all enemy creatures and leaves poison</desc_all>
     <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves poison</desc_faction>
     <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves poison</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>barrage</id>
@@ -809,6 +808,14 @@
     <icon>filter_wyld_32</icon>
   </unitType>
   <unitType>
+    <id>8</id>
+    <name>Void</name>
+    <icon>filter_void_32</icon>
+  </unitType>
+  <!-- =================== -->
+  <!-- === CARD TRIBES === -->
+  <!-- =================== -->
+  <unitType>
     <id>4</id>
     <name>Frog</name>
     <icon>filter_frog_32</icon>
@@ -827,12 +834,6 @@
     <id>7</id>
     <name>Undead</name>
     <icon>filter_undead_32</icon>
-  </unitType>
-  <unitType>
-    <id>8</id>
-    <name>Void</name>
-    <icon>filter_void_32</icon>
-    <hidden>1</hidden>
   </unitType>
   <unitType>
     <id>9</id>

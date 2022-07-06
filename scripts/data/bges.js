@@ -1649,7 +1649,7 @@ var BATTLEGROUNDS = {
 				"base": "health",
 				"effect_type": "add_skill",
 				"id": "swarm",
-				"mult": 0.15,
+				"mult": 0.2,
 				"y": "13"
 			},
 			{
@@ -1704,6 +1704,33 @@ var BATTLEGROUNDS = {
 		],
 		"id": "154",
 		"name": "Counterblast Swarm"
+	},
+	"155": {
+		"desc": "Vampirism deals damage to opposing creature and then heals self, even while on delay. Damage and heal are equal to 5% + 3 of the card’s base Health. This damage cannot be increased. Undead with 0-2 delay also gain armor equal to 10% of their base health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"mult": 0.05,
+				"x": 3,
+				"y": "7"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					null
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "7"
+			}
+		],
+		"id": "155",
+		"name": "Reinforced Undead Vampirism"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

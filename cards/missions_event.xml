@@ -58372,7 +58372,7 @@
     <name>Endless gratitude</name>
     <energy>18</energy>
     <desc>Waiting for you outside is the bounty hunter. You deliver the swords you gathered and it thanks you. Noticing that you are exhausted, it helps walk you towards Yaritza. As soon as you see her, you notice a huge smile on her face.</desc>
-    <commander id="367" />
+    <commander id="326" />
     <deck>
       <card id="2180" name="Hidden Monstrosity" />
       <card id="2097" name="Gem Harvester" />
@@ -58413,6 +58413,438 @@
       <card id="7295" mastery_level="5" name="Crystal Spider" />
       <card id="7174" mastery_level="6" name="Mugen and Young Hawk" />
       <card id="1645" mastery_level="7" name="Sundermarr" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6861</id>
+    <name>Returning for riches</name>
+    <energy>18</energy>
+    <desc>You decide to go back into the dark caves of Forgotten Island in order to retrieve some of the expensive items you saw lying around the worm's cave.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7201" name="Queen Bee" />
+      <card id="7299" name="Troll Chaser" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="7201" name="Queen Bee" />
+      <card id="7201" name="Queen Bee" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="7299" name="Troll Chaser" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="8123" mastery_level="2" name="Fear of the Vanquished" />
+      <card id="5201" mastery_level="3" name="Cricket Caller" />
+      <card id="7299" mastery_level="4" name="Troll Chaser" />
+      <card id="7295" mastery_level="5" name="Crystal Spider" />
+      <card id="7174" mastery_level="6" name="Mugen and Young Hawk" />
+      <card id="7609" mastery_level="7" name="Wrom, the Entomancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6862</id>
+    <name>Wrong Neighborhood</name>
+    <energy>18</energy>
+    <desc>While walking into the cave you start hearing crawling all around you. The fastest of the worm's minions have already caught your scent and they start to attack.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="2233" name="Aikido Initiate" />
+      <card id="7299" name="Troll Chaser" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="7174" name="Mugen and Young Hawk" />
+      <card id="7201" name="Queen Bee" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="7299" name="Troll Chaser" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="8123" mastery_level="2" name="Fear of the Vanquished" />
+      <card id="5201" mastery_level="3" name="Cricket Caller" />
+      <card id="7299" mastery_level="4" name="Troll Chaser" />
+      <card id="2233" mastery_level="5" name="Aikido Initiate" />
+      <card id="7174" mastery_level="6" name="Mugen and Young Hawk" />
+      <card id="7609" mastery_level="7" name="Wrom, the Entomancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6863</id>
+    <name>Here come the big ones</name>
+    <energy>18</energy>
+    <desc>The smaller insects have been defeated, unfortunately, the insects that probably feed on the  ones you just defeated have started to arrive.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7295" name="Crystal Spider" />
+      <card id="7299" name="Troll Chaser" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="7174" name="Mugen and Young Hawk" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7299" name="Troll Chaser" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="8123" mastery_level="2" name="Fear of the Vanquished" />
+      <card id="6232" mastery_level="3" name="Firetouch Deathmoth" />
+      <card id="6229" mastery_level="4" name="Killapede" />
+      <card id="2233" mastery_level="5" name="Aikido Initiate" />
+      <card id="7174" mastery_level="6" name="Mugen and Young Hawk" />
+      <card id="7609" mastery_level="7" name="Wrom, the Entomancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6864</id>
+    <name>Nophora</name>
+    <energy>18</energy>
+    <desc>After you defeat the insects, you reach the layer. There are weapons, gold and wealth as far as the eye can see. The worm's disembodied voice can be heard and it's telling you to leave before it's too late.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="7298" mastery_level="2" name="Mindtis" />
+      <card id="6232" mastery_level="3" name="Firetouch Deathmoth" />
+      <card id="6229" mastery_level="4" name="Killapede" />
+      <card id="6232" mastery_level="5" name="Firetouch Deathmoth" />
+      <card id="7298" mastery_level="6" name="Mindtis" />
+      <card id="6603" mastery_level="7" name="Kabuto" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6865</id>
+    <name>Standing your ground</name>
+    <energy>18</energy>
+    <desc>The worm jumps out of a pile of weapons and heads straight towards you. Its attack seems very slow and you manage to quickly strike it. You think that it will be an easy fight only to realize it has healed itself in a matter of seconds.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="6229" name="Killapede" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="6229" name="Killapede" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="7298" mastery_level="2" name="Mindtis" />
+      <card id="6232" mastery_level="3" name="Firetouch Deathmoth" />
+      <card id="6229" mastery_level="4" name="Killapede" />
+      <card id="6232" mastery_level="5" name="Firetouch Deathmoth" />
+      <card id="7298" mastery_level="6" name="Mindtis" />
+      <card id="6603" mastery_level="7" name="Kabuto" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6866</id>
+    <name>The escape</name>
+    <energy>18</energy>
+    <desc>Realizing that you won't be able to defeat it, you decide to grab as much loot as possible and head out while you still can. While heading out, you can still hear the worm chasing after you, which makes you run even faster!</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="6229" name="Killapede" />
+      <card id="6229" name="Killapede" />
+      <card id="6229" name="Killapede" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7298" name="Mindtis" />
+      <card id="7298" name="Mindtis" />
+      <card id="7298" mastery_level="2" name="Mindtis" />
+      <card id="7295" mastery_level="3" name="Crystal Spider" />
+      <card id="6229" mastery_level="4" name="Killapede" />
+      <card id="6232" mastery_level="5" name="Firetouch Deathmoth" />
+      <card id="7298" mastery_level="6" name="Mindtis" />
+      <card id="6603" mastery_level="7" name="Kabuto" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6867</id>
+    <name>Boots on the ground</name>
+    <energy>18</energy>
+    <desc>You have arrived at Duskwillow in search of the Oracle that Yaritza told you about. Unsure about where to start, you head towards the nearest inn.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="6165" name="Skelepede" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="1346" name="Wandmaker Demilich" />
+      <card id="6003" mastery_level="2" name="Black Knight" />
+      <card id="7259" mastery_level="3" name="Ranamuerta Bard" />
+      <card id="5122" mastery_level="4" name="Crow King" />
+      <card id="5087" mastery_level="5" name="Apollyon" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6868</id>
+    <name>The inn</name>
+    <energy>18</energy>
+    <desc>After asking around, you realize that the townspeople are trying their best to ignore your questions. Finally, somebody approaches you. The villager explains to you that the oracle you are looking for is called Veric and resides at the town's cemetery.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="6003" name="Black Knight" />
+      <card id="2145" mastery_level="2" name="Astaroth" />
+      <card id="7259" mastery_level="3" name="Ranamuerta Bard" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="5087" mastery_level="5" name="Apollyon" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6869</id>
+    <name>Undead Ambush</name>
+    <energy>18</energy>
+    <desc>After stepping outside, confused about the information that you have received, you head towards the cemetery. A few moments later, you realize that something is not right. You turn around, only to see an army of undead surrounding you.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="6003" name="Black Knight" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="5122" name="Crow King" />
+      <card id="2145" mastery_level="2" name="Astaroth" />
+      <card id="7259" mastery_level="3" name="Ranamuerta Bard" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6870</id>
+    <name>LEGENDARYMAGENAME</name>
+    <energy>18</energy>
+    <desc>A fire mage seems to be controlling the undead. You get ready to battle, but so do they. Commanded by the fire mage, the undead light themselves on fire. Realizing that they are too many, you decide to escape.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="2217" mastery_level="3" name="Virtuoso Mystic" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6871</id>
+    <name>Where are you Veric?</name>
+    <energy>18</energy>
+    <desc>With the undead closing in on you, you rapidly head straight towards the cemetery yelling out the oracle's name. The entire place seems abandoned, until you realize that one of the tombstones has the name Veric on it.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="6232" mastery_level="3" name="Firetouch Deathmoth" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6872</id>
+    <name>Nowhere to go</name>
+    <energy>18</energy>
+    <desc>Unsure about if you were simply fooled, you realize that there is no time left before the undead reach your position. Even though you implore for Verics help nothing seems to happen. You decide to stand your ground and fight.</desc>
+    <commander id="" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7121" name="Varachnis" />
+      <card id="7121" name="Varachnis" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="6232" mastery_level="3" name="Firetouch Deathmoth" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="2116" mastery_level="6" name="Messina's Choice" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6873</id>
+    <name>Rising from the dead</name>
+    <energy>18</energy>
+    <desc>You hear the ground beneath you start moving. You stand aside and you see an undead frog rising from its grave. The frog claims to have heard your pleading and decided to rise once again.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="6003" name="Black Knight" />
+      <card id="6003" name="Black Knight" />
+      <card id="2145" name="Astaroth" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="1346" mastery_level="5" name="Wandmaker Demilich" />
+      <card id="2116" mastery_level="6" name="Messina's Choice" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6874</id>
+    <name>Unstoppable menace</name>
+    <energy>18</energy>
+    <desc>Veric heads straight towards the mage, even though he is struck with all kinds of spells and strikes, these do not seem to harm him.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="2145" name="Astaroth" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="2116" mastery_level="5" name="Messina's Choice" />
+      <card id="6232" mastery_level="6" name="Firetouch Deathmoth" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6875</id>
+    <name>One frog army</name>
+    <energy>18</energy>
+    <desc>Veric manages to single handedly take down the mage, which causes the army of undead to instantly collapse. Even though he is not extremely powerful, his knowledge is unmatched. You realize that you came to the right place.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="6232" mastery_level="5" name="Firetouch Deathmoth" />
+      <card id="6232" mastery_level="6" name="Firetouch Deathmoth" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6876</id>
+    <name>Beetleton</name>
+    <energy>18</energy>
+    <desc>You explain to Veric what Yaritza told you that happened at Beetleton. This changes the look in his face to one of concern. You realize that he knows something.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6003" name="Black Knight" />
+      <card id="1644" name="Blackfin" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="2217" mastery_level="4" name="Virtuoso Mystic" />
+      <card id="7121" mastery_level="5" name="Varachnis" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6877</id>
+    <name>Could it be?</name>
+    <energy>18</energy>
+    <desc>Veric starts explaining, it is the Void. He could feel it but was not sure. The Void is trying to claw its way back into this world again and somebody is plotting to achieve it.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="2145" name="Astaroth" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="2116" mastery_level="2" name="Messina's Choice" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="2217" mastery_level="4" name="Virtuoso Mystic" />
+      <card id="7121" mastery_level="5" name="Varachnis" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6878</id>
+    <name>Skyhaven in danger</name>
+    <energy>18</energy>
+    <desc>You remember Terragon mentioning a possible attack on Skyhaven. This has to be it, they must be heading there.</desc>
+    <commander id="265" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1346" name="Wandmaker Demilich" />
+      <card id="6003" name="Black Knight" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2145" name="Astaroth" />
+      <card id="1644" name="Blackfin" />
+      <card id="7121" name="Varachnis" />
+      <card id="2116" mastery_level="2" name="Messina's Choice" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="2217" mastery_level="4" name="Virtuoso Mystic" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7279" mastery_level="6" name="Brainweb Recluse" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
     </deck>
   </mission>
 </root>
