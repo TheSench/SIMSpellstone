@@ -2318,7 +2318,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <attack>10</attack>
-    <health>48</health>
+    <health>51</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="stasis" x="4" />
@@ -2327,14 +2327,14 @@
     <upgrade>
       <level>2</level>
       <attack>11</attack>
-      <health>49</health>
+      <health>52</health>
       <skill id="stasis" x="5" />
       <skill id="enfeeble" x="3" all="1" />
       <skill id="enrage" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>50</health>
+      <health>53</health>
       <skill id="stasis" x="6" />
       <skill id="enfeeble" x="4" all="1" />
       <skill id="enrage" x="2" all="1" />
@@ -2342,7 +2342,7 @@
     <upgrade>
       <level>4</level>
       <attack>12</attack>
-      <health>51</health>
+      <health>54</health>
       <skill id="stasis" x="6" />
       <skill id="enfeeble" x="4" all="1" />
       <skill id="enrage" x="3" all="1" />
@@ -2350,7 +2350,7 @@
     <upgrade>
       <level>5</level>
       <attack>13</attack>
-      <health>52</health>
+      <health>55</health>
       <skill id="stasis" x="6" />
       <skill id="enfeeble" x="5" all="1" />
       <skill id="enrage" x="4" all="1" />
@@ -2358,14 +2358,14 @@
     <upgrade>
       <level>6</level>
       <attack>14</attack>
-      <health>53</health>
+      <health>56</health>
       <skill id="stasis" x="6" />
       <skill id="enfeeble" x="5" all="1" />
       <skill id="enrage" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>54</health>
+      <health>57</health>
       <skill id="stasis" x="7" />
       <skill id="enfeeble" x="6" all="1" />
       <skill id="enrage" x="5" all="1" />
@@ -2373,7 +2373,7 @@
     <upgrade>
       <level>8</level>
       <attack>15</attack>
-      <health>55</health>
+      <health>58</health>
       <skill id="stasis" x="7" />
       <skill id="enfeeble" x="6" all="1" />
       <skill id="enrage" x="6" all="1" />
@@ -2381,7 +2381,7 @@
     <upgrade>
       <level>9</level>
       <attack>15</attack>
-      <health>56</health>
+      <health>59</health>
       <skill id="stasis" x="8" />
       <skill id="enfeeble" x="6" all="1" />
       <skill id="enrage" x="6" all="1" />
@@ -2389,10 +2389,10 @@
     <upgrade>
       <level>10</level>
       <attack>16</attack>
-      <health>57</health>
+      <health>60</health>
       <skill id="stasis" x="8" />
       <skill id="enfeeble" x="7" all="1" />
-      <skill id="enrage" x="6" all="1" />
+      <skill id="enrage" x="7" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -5128,6 +5128,91 @@
       <skill id="backlash" x="6" />
       <skill id="strike" all="1" x="7" />
       <skill id="burn" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4061</id>
+    <card_type>2</card_type>
+    <name>Veric, the Undying</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undead_Frog_Veric_Undying_A</picture>
+    <asset_bundle>252</asset_bundle>
+    <item_name>Veric Stone</item_name>
+    <item_desc>Collect Veric Stones to upgrade Veric!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>4</sub_type>
+    <attack>12</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="8" />
+    <skill id="regenerate" x="8" />
+    <skill id="venom" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <skill id="absorb" x="8" />
+      <skill id="regenerate" x="9" />
+      <skill id="venom" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="absorb" x="10" />
+      <skill id="regenerate" x="9" />
+      <skill id="venom" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="10" />
+      <skill id="regenerate" x="10" />
+      <skill id="venom" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <skill id="absorb" x="11" />
+      <skill id="regenerate" x="10" />
+      <skill id="venom" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="absorb" x="12" />
+      <skill id="regenerate" x="10" />
+      <skill id="venom" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <skill id="absorb" x="12" />
+      <skill id="regenerate" x="11" />
+      <skill id="venom" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>15</attack>
+      <health>35</health>
+      <skill id="absorb" x="12" />
+      <skill id="regenerate" x="12" />
+      <skill id="venom" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>16</attack>
+      <health>36</health>
+      <skill id="absorb" x="12" />
+      <skill id="regenerate" x="12" />
+      <skill id="venom" x="8" />
     </upgrade>
   </unit>
   <!-- Reward End -->
@@ -9959,6 +10044,89 @@
       <skill id="evade" x="4" />
       <skill id="absorb" x="12" />
       <skill id="valor" x="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6624</id>
+    <card_type>2</card_type>
+    <name>Osseus, the Skeleball</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undead_Skeleball_A</picture>
+    <asset_bundle>252</asset_bundle>
+    --&gt;
+    <hidden_until_time>1658422800</hidden_until_time>
+    <!--Thursday, July 21, 2022 17:00:00	-->
+    <item_name>Osseus Stone</item_name>
+    <item_desc>Collect Osseus Stones to upgrade the Legendary Osseus, the Skeleball!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <attack>7</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="7" />
+    <skill id="berserk" x="3" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <skill id="armored" x="7" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="armored" x="7" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <skill id="armored" x="8" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="armored" x="9" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="armored" x="10" />
+      <skill id="berserk" x="4" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>34</health>
+      <skill id="armored" x="10" />
+      <skill id="berserk" x="5" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>35</health>
+      <skill id="armored" x="10" />
+      <skill id="berserk" x="6" />
+      <skill id="flurry" c="2" />
     </upgrade>
   </unit>
   <!-- === CHAOS END === -->

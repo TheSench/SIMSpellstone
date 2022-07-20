@@ -10793,30 +10793,30 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>36</health>
+      <health>43</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>37</health>
+      <health>45</health>
       <skill id="evade" x="2" />
       <skill id="weaken" x="3" all="1" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>38</health>
+      <health>47</health>
       <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>39</health>
+      <health>48</health>
       <skill id="evade" x="2" />
       <skill id="weaken" x="3" all="1" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>41</health>
+      <health>49</health>
     </upgrade>
   </unit>
   <unit>
@@ -10828,7 +10828,7 @@
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1475514000</hidden_until_time>
     <attack>13</attack>
-    <health>42</health>
+    <health>50</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="evade" x="2" />
@@ -10839,30 +10839,30 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>44</health>
+      <health>51</health>
       <attack>14</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>46</health>
+      <health>52</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>48</health>
+      <health>53</health>
       <skill id="evade" x="3" />
       <skill id="weaken" x="5" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>49</health>
+      <health>54</health>
       <skill id="evade" x="3" />
       <skill id="weaken" x="6" all="1" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>50</health>
+      <health>55</health>
       <skill id="evade" x="4" />
       <skill id="weaken" x="7" all="1" />
       <skill id="berserk" x="7" />
@@ -15201,7 +15201,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>44</health>
+      <health>50</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -15211,11 +15211,11 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>45</health>
+      <health>52</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>46</health>
+      <health>53</health>
       <skill id="corrosive" x="7" />
       <skill id="frost" x="2" />
       <skill id="flurry" c="3" />
@@ -15230,7 +15230,7 @@
     <asset_bundle>88</asset_bundle>
     <hidden_until_time>1491584400</hidden_until_time>
     <attack>10</attack>
-    <health>46</health>
+    <health>54</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="7" />
@@ -15242,23 +15242,23 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>47</health>
+      <health>55</health>
       <skill id="corrosive" x="7" />
       <skill id="frost" x="4" />
       <skill id="flurry" c="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>50</health>
+      <health>56</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>53</health>
-      <attack>12</attack>
+      <health>57</health>
+      <attack>13</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>55</health>
+      <health>58</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -21139,14 +21139,14 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>23</health>
+      <health>27</health>
       <skill id="evade" x="2" />
       <skill id="fervor" x="4" y="2" />
       <skill id="poison" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>24</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -21163,8 +21163,8 @@
     <picture>Frog_Wraith_Beastmaster_B</picture>
     <asset_bundle>112</asset_bundle>
     <hidden_until_time>1512406800</hidden_until_time>
-    <attack>6</attack>
-    <health>25</health>
+    <attack>8</attack>
+    <health>29</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="evade" x="2" />
@@ -21176,17 +21176,17 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>26</health>
-      <attack>7</attack>
+      <health>30</health>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>27</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>8</attack>
-      <health>28</health>
+      <attack>10</attack>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -28621,15 +28621,15 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>41</health>
+      <health>42</health>
       <skill id="counterburn" x="6" />
-      <skill id="regenerate" x="7" />
+      <skill id="regenerate" x="9" />
       <skill id="burn" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="counterburn" x="6" />
-      <skill id="regenerate" x="8" />
+      <skill id="counterburn" x="7" />
+      <skill id="regenerate" x="10" />
       <skill id="burn" x="7" />
     </upgrade>
   </unit>
@@ -38411,6 +38411,150 @@
       <skill id="backlash" x="5" />
       <skill id="counterburn" x="8" />
       <skill id="enrage" x="8" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6301</id>
+    <card_type>2</card_type>
+    <name>Vlad</name>
+    <picture>Undead_Dragon_Dragcula_A</picture>
+    <asset_bundle>252</asset_bundle>
+    <hidden_until_time>1659373200</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="rally" x="5" y="9" />
+    <skill id="leech" x="10" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="5" y="9" />
+      <skill id="leech" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="6" y="9" />
+      <skill id="leech" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="6" y="9" />
+      <skill id="leech" x="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16301</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Noble Vlad</name>
+    <picture>Undead_Dragon_Dragcula_A</picture>
+    <asset_bundle>252</asset_bundle>
+    <hidden_until_time>1659373200</hidden_until_time>
+    <attack>7</attack>
+    <health>19</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="rally" x="7" y="9" />
+    <skill id="leech" x="14" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="7" y="9" />
+      <skill id="leech" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="8" y="9" />
+      <skill id="leech" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="8" y="9" />
+      <skill id="leech" x="17" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26301</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Count Vlad</name>
+    <picture>Undead_Dragon_Dragcula_B</picture>
+    <asset_bundle>252</asset_bundle>
+    <hidden_until_time>1659373200</hidden_until_time>
+    <attack>9</attack>
+    <health>22</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="rally" x="8" y="9" />
+    <skill id="leech" x="17" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="9" y="9" />
+      <skill id="leech" x="18" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="9" y="9" />
+      <skill id="leech" x="19" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+      <skill id="evade" x="3" />
+      <skill id="rally" x="9" y="9" />
+      <skill id="leech" x="19" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="rally" x="10" y="9" />
+      <skill id="leech" x="20" />
     </upgrade>
   </unit>
 </root>

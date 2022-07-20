@@ -5799,6 +5799,39 @@ var CAMPAIGNS = {
 		],
 		"name": "In deep danger"
 	},
+	"1322": {
+		"id": "1322",
+		"items": {
+			"3089": 0.6
+		},
+		"location_id": "21",
+		"missions": [
+			"6867",
+			"6868",
+			"6869",
+			"6870",
+			"6871",
+			"6872"
+		],
+		"name": "Search Mission"
+	},
+	"1323": {
+		"battleground_id": "2019",
+		"id": "1323",
+		"items": {
+			"3089": 0.8
+		},
+		"location_id": "21",
+		"missions": [
+			"6873",
+			"6874",
+			"6875",
+			"6876",
+			"6877",
+			"6878"
+		],
+		"name": "A helping hand"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -127901,7 +127934,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6868",
-		"name": "The inn"
+		"name": "The tavern"
 	},
 	"6869": {
 		"commander": {
@@ -128021,7 +128054,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6870",
-		"name": "LEGENDARYMAGENAME"
+		"name": "Maleficient Commander"
 	},
 	"6871": {
 		"commander": {
@@ -128085,7 +128118,7 @@ var MISSIONS = {
 	},
 	"6872": {
 		"commander": {
-			"id": ""
+			"id": "231"
 		},
 		"deck": [
 			{

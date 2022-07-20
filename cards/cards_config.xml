@@ -795,21 +795,25 @@
   <unitType>
     <id>1</id>
     <name>Aether</name>
+    <tribe>0</tribe>
     <icon>filter_aether_32</icon>
   </unitType>
   <unitType>
     <id>2</id>
     <name>Chaos</name>
+    <tribe>0</tribe>
     <icon>filter_chaos_32</icon>
   </unitType>
   <unitType>
     <id>3</id>
     <name>Wyld</name>
+    <tribe>0</tribe>
     <icon>filter_wyld_32</icon>
   </unitType>
   <unitType>
     <id>8</id>
     <name>Void</name>
+    <tribe>0</tribe>
     <icon>filter_void_32</icon>
   </unitType>
   <!-- =================== -->
@@ -818,56 +822,67 @@
   <unitType>
     <id>4</id>
     <name>Frog</name>
+    <tribe>1</tribe>
     <icon>filter_frog_32</icon>
   </unitType>
   <unitType>
     <id>5</id>
     <name>Elemental</name>
+    <tribe>1</tribe>
     <icon>filter_elementals_32</icon>
   </unitType>
   <unitType>
     <id>6</id>
     <name>Angel</name>
+    <tribe>1</tribe>
     <icon>filter_angel_32</icon>
   </unitType>
   <unitType>
     <id>7</id>
     <name>Undead</name>
+    <tribe>1</tribe>
     <icon>filter_undead_32</icon>
   </unitType>
   <unitType>
     <id>9</id>
     <name>Dragon</name>
+    <tribe>1</tribe>
     <icon>filter_dragon_32</icon>
   </unitType>
   <unitType>
     <id>10</id>
     <name>Avian</name>
+    <tribe>1</tribe>
     <icon>filter_avian_32</icon>
   </unitType>
   <unitType>
     <id>11</id>
     <name>Goblin</name>
+    <tribe>1</tribe>
     <icon>filter_goblin_32</icon>
   </unitType>
   <unitType>
     <id>12</id>
     <name>Seafolk</name>
+    <tribe>1</tribe>
     <icon>filter_seafolk_32</icon>
   </unitType>
   <unitType>
     <id>13</id>
     <name>Insect</name>
+    <tribe>1</tribe>
     <icon>filter_insect_32</icon>
   </unitType>
   <unitType>
     <id>14</id>
+    <tribe>1</tribe>
     <name>Bear</name>
     <icon />
     <hidden>1</hidden>
   </unitType>
   <unitType>
     <id>15</id>
+    <tribe>1</tribe>
     <name>Token</name>
     <icon />
     <hidden>1</hidden>
@@ -875,11 +890,13 @@
   <unitType>
     <id>16</id>
     <name>Mecha</name>
+    <tribe>1</tribe>
     <icon>filter_mech_32</icon>
   </unitType>
   <unitType>
     <id>17</id>
     <name>Knight</name>
+    <tribe>1</tribe>
     <icon />
     <hidden>1</hidden>
   </unitType>

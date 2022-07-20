@@ -58491,7 +58491,7 @@
     <id>6864</id>
     <name>Nophora</name>
     <energy>18</energy>
-    <desc>After you defeat the insects, you reach the layer. There are weapons, gold and wealth as far as the eye can see. The worm's disembodied voice can be heard and it's telling you to leave before it's too late.</desc>
+    <desc>After you defeat the insects, you reach the lair. There are weapons, gold and wealth as far as the eye can see. The worm's disembodied voice can be heard and it's telling you to leave before it's too late.</desc>
     <commander id="472" />
     <deck>
       <card id="7295" name="Crystal Spider" />
@@ -58563,7 +58563,7 @@
     <id>6867</id>
     <name>Boots on the ground</name>
     <energy>18</energy>
-    <desc>You have arrived at Duskwillow in search of the Oracle that Yaritza told you about. Unsure about where to start, you head towards the nearest inn.</desc>
+    <desc>You have arrived at Duskwillow in search of the Oracle that Yaritza told you about. Unsure about where to start, you head towards the nearest tavern.</desc>
     <commander id="200" />
     <deck>
       <card id="1331" name="Fallen Soldiers" />
@@ -58585,7 +58585,7 @@
   </mission>
   <mission>
     <id>6868</id>
-    <name>The inn</name>
+    <name>The tavern</name>
     <energy>18</energy>
     <desc>After asking around, you realize that the townspeople are trying their best to ignore your questions. Finally, somebody approaches you. The villager explains to you that the oracle you are looking for is called Veric and resides at the town's cemetery.</desc>
     <commander id="229" />
@@ -58633,7 +58633,7 @@
   </mission>
   <mission>
     <id>6870</id>
-    <name>LEGENDARYMAGENAME</name>
+    <name>Maleficient Commander</name>
     <energy>18</energy>
     <desc>A fire mage seems to be controlling the undead. You get ready to battle, but so do they. Commanded by the fire mage, the undead light themselves on fire. Realizing that they are too many, you decide to escape.</desc>
     <commander id="229" />
@@ -58683,8 +58683,8 @@
     <id>6872</id>
     <name>Nowhere to go</name>
     <energy>18</energy>
-    <desc>Unsure about if you were simply fooled, you realize that there is no time left before the undead reach your position. Even though you implore for Verics help nothing seems to happen. You decide to stand your ground and fight.</desc>
-    <commander id="" />
+    <desc>Unsure about if you were simply fooled, you realize that the undead are about to reach your position. Even though you implore for Verics help, nothing seems to happen. You decide to stand your ground and fight.</desc>
+    <commander id="231" />
     <deck>
       <card id="6165" name="Skelepede" />
       <card id="2024" name="Dusk noble" />
@@ -58755,7 +58755,7 @@
     <id>6875</id>
     <name>One frog army</name>
     <energy>18</energy>
-    <desc>Veric manages to single handedly take down the mage, which causes the army of undead to instantly collapse. Even though he is not extremely powerful, his knowledge is unmatched. You realize that you came to the right place.</desc>
+    <desc>With nothing but a touch, Veric manages to take down the mage, which causes the army of undead to instantly collapse. He uses skills you have never seen before, his knowledge is clearly unmatched. You realize that you came to the right place.</desc>
     <commander id="200" />
     <deck>
       <card id="6165" name="Skelepede" />

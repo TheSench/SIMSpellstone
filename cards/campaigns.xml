@@ -11338,6 +11338,90 @@
     <ignore_energy_reduction_until>1658422800</ignore_energy_reduction_until>
     <!-- Thursday, July 21, 2022 at 17:00:00 	  -->
   </campaign>
+  <!-- Campaign Event 92 - Duskwillow rebuilt -->
+  <campaign>
+    <id>1322</id>
+    <name>Search Mission</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1658422800</locked_start_time>
+    <!-- Thursday, July 21, 2022 17:00:00  -->
+    <location_id>21</location_id>
+    <x>815</x>
+    <y>320</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6867</mission_id>
+      <mission_id>6868</mission_id>
+      <mission_id>6869</mission_id>
+      <mission_id>6870</mission_id>
+      <mission_id>6871</mission_id>
+      <mission_id>6872</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2655" number="25" />
+      /&gt;
+      <!-- Duskwillow Rebuilt Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2235" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2024" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2655" number="75" />
+      /&gt;
+      <!-- Duskwillow Rebuilt Flask -->
+      <card level="7" id="2236" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3089" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1663261200</ignore_energy_reduction_until>
+    <!-- Thursday, September 15, 2022 at 17:00:00 	  -->
+  </campaign>
+  <campaign>
+    <id>1323</id>
+    <name>A helping hand</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1318" level="1" />
+    <locked_start_time>1659632400</locked_start_time>
+    <!-- Thursday, 4 August 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>21</location_id>
+    <x>510</x>
+    <y>260</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6873</mission_id>
+      <mission_id>6874</mission_id>
+      <mission_id>6875</mission_id>
+      <mission_id>6876</mission_id>
+      <mission_id>6877</mission_id>
+      <mission_id>6878</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2655" number="25" />
+      /&gt;
+      <!-- Duskwillow Rebuilt Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2159" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2140" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2655" number="75" />
+      /&gt;
+      <!-- Duskwillow Rebuilt Flask -->
+      <card level="7" id="2236" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3089" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1663261200</ignore_energy_reduction_until>
+    <!-- Thursday, September 15, 2022 at 17:00:00 	  -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
