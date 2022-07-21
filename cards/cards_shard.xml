@@ -5147,26 +5147,26 @@
     <type>3</type>
     <sub_type>7</sub_type>
     <sub_type>4</sub_type>
-    <attack>12</attack>
+    <attack>10</attack>
     <health>30</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="8" />
     <skill id="regenerate" x="8" />
-    <skill id="venom" x="5" />
+    <skill id="venom" x="4" />
     <upgrade>
       <level>2</level>
       <health>31</health>
       <skill id="absorb" x="8" />
       <skill id="regenerate" x="9" />
-      <skill id="venom" x="5" />
+      <skill id="venom" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>32</health>
       <skill id="absorb" x="10" />
       <skill id="regenerate" x="9" />
-      <skill id="venom" x="5" />
+      <skill id="venom" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -5176,43 +5176,43 @@
       <level>5</level>
       <skill id="absorb" x="10" />
       <skill id="regenerate" x="10" />
-      <skill id="venom" x="6" />
+      <skill id="venom" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>13</attack>
+      <attack>11</attack>
       <skill id="absorb" x="11" />
       <skill id="regenerate" x="10" />
-      <skill id="venom" x="6" />
+      <skill id="venom" x="5" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <skill id="absorb" x="12" />
       <skill id="regenerate" x="10" />
-      <skill id="venom" x="7" />
+      <skill id="venom" x="6" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <attack>14</attack>
+      <attack>12</attack>
       <skill id="absorb" x="12" />
       <skill id="regenerate" x="11" />
-      <skill id="venom" x="7" />
+      <skill id="venom" x="6" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <attack>15</attack>
+      <attack>13</attack>
       <health>35</health>
       <skill id="absorb" x="12" />
       <skill id="regenerate" x="12" />
-      <skill id="venom" x="7" />
+      <skill id="venom" x="6" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>16</attack>
+      <attack>14</attack>
       <health>36</health>
       <skill id="absorb" x="12" />
       <skill id="regenerate" x="12" />
-      <skill id="venom" x="8" />
+      <skill id="venom" x="7" />
     </upgrade>
   </unit>
   <!-- Reward End -->
