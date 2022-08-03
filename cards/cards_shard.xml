@@ -8007,6 +8007,85 @@
       <skill id="jam" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5633</id>
+    <card_type>2</card_type>
+    <name>La Llorona</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undead_La_Llorona_A</picture>
+    <asset_bundle>252</asset_bundle>
+    <item_name>Llorona Stone</item_name>
+    <item_desc>Collect Llorona Stones to upgrade the Legendary La Llorona card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <attack>9</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="frost" x="4" />
+    <skill id="jam" c="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="3" />
+      <skill id="frost" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <skill id="evade" x="3" />
+      <skill id="frost" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="evade" x="3" />
+      <skill id="frost" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>12</attack>
+      <skill id="evade" x="4" />
+      <skill id="frost" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>13</attack>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>14</attack>
+      <skill id="evade" x="4" />
+      <skill id="frost" x="6" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>35</health>
+      <skill id="evade" x="4" />
+      <skill id="frost" x="7" />
+      <skill id="jam" c="2" />
+    </upgrade>
+  </unit>
   <!-- === AETHER END === -->
   <!-- =============================== -->
   <!-- === CHAOS PREMIUM CHAMPIONS === -->

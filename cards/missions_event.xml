@@ -56237,7 +56237,7 @@
     <id>6770</id>
     <name>The Reveal</name>
     <energy>18</energy>
-    <desc>Before anybody can notice, the goblin heads straight towards the center of the party where a huge birthday cake is being displayed and immediately trashes it. “My name is Remi the Bipolar!” he shouts out loudly. “This is for not inviting me to the birthday party!”.</desc>
+    <desc>Before anybody can notice, the goblin heads straight towards the center of the party where a huge birthday cake is being displayed and immediately trashes it. “My name is Remi!” he shouts out loudly. “This is for not inviting me to the birthday party!”.</desc>
     <commander id="285" />
     <deck>
       <card id="1026" name="Glass Colossus" />
@@ -58845,6 +58845,438 @@
       <card id="7279" mastery_level="5" name="Brainweb Recluse" />
       <card id="7279" mastery_level="6" name="Brainweb Recluse" />
       <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6879</id>
+    <name>Ghost hunters</name>
+    <energy>18</energy>
+    <desc>Local residents of Duskwillow have asked for your assistance. They want you to get rid of a specter that has been haunting them.</desc>
+    <commander id="473" />
+    <deck>
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="7037" name="Noxious Bane" />
+      <card id="7037" mastery_level="2" name="Noxious Bane" />
+      <card id="2061" mastery_level="3" name="Reks, the Forlorn" />
+      <card id="2236" mastery_level="4" name="Maleficient Commander" />
+      <card id="7259" mastery_level="5" name="Ranamuerta Bard" />
+      <card id="2236" mastery_level="6" name="Maleficient Initiate" />
+      <card id="6624" mastery_level="7" name="Osseus, the Skeleball" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6880</id>
+    <name>A cry for help</name>
+    <energy>18</energy>
+    <desc>You decide to wait until midnight, when the specter is supposed to come out. You start to roam the town when you suddenly hear screaming.</desc>
+    <commander id="473" />
+    <deck>
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="7121" name="Varachnis" />
+      <card id="7121" name="Varachnis" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="2217" mastery_level="2" name="Virtuoso Mystic" />
+      <card id="2236" mastery_level="3" name="Maleficient Initiate" />
+      <card id="6301" mastery_level="4" name="Vlad" />
+      <card id="6206" mastery_level="5" name="Bloodboil Cursemage" />
+      <card id="6206" mastery_level="6" name="Bloodboil Cursemage" />
+      <card id="5627" mastery_level="7" name="Drarm, the Soulbinder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6881</id>
+    <name>A swing and a miss</name>
+    <energy>18</energy>
+    <desc>After rushing towards the screaming, you find the specter. It seems to be chasing after some goblin children. You take a swing at the specter but it seems to have done no damage at all.</desc>
+    <commander id="473" />
+    <deck>
+      <card id="6301" name="Vlad" />
+      <card id="6301" name="Vlad" />
+      <card id="7121" name="Varachnis" />
+      <card id="2236" name="Maleficient Initiate" />
+      <card id="2236" name="Maleficient Initiate" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2061" mastery_level="2" name="Reks, the Forlorn" />
+      <card id="7037" mastery_level="3" name="Noxious Bane" />
+      <card id="2217" mastery_level="4" name="Virtuoso Mystic" />
+      <card id="6206" mastery_level="5" name="Bloodboil Cursemage" />
+      <card id="7037" mastery_level="6" name="Noxious Bane" />
+      <card id="5628" mastery_level="7" name="Gorgon, The Imprisoned" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6882</id>
+    <name>Slippery Specter</name>
+    <energy>18</energy>
+    <desc>You are having a hard time dealing damage to the specter. She seems to anticipate all of your moves before you can even make them.</desc>
+    <commander id="473" />
+    <deck>
+      <card id="6258" name="Two-Deaths Brute" />
+      <card id="6258" name="Two-Deaths Brute" />
+      <card id="5087" name="Apollyon" />
+      <card id="5087" name="Apollyon" />
+      <card id="7124" name="Enduring Appetite" />
+      <card id="7124" name="Enduring Appetite" />
+      <card id="1346" name="Wandmaker Demilich" />
+      <card id="1346" name="Wandmaker Demilich" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="1644" mastery_level="3" name="Blackfin" />
+      <card id="5122" mastery_level="4" name="Crow King" />
+      <card id="2116" mastery_level="5" name="Messina's Choice" />
+      <card id="6232" mastery_level="6" name="Firetouch Deathmoth" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6883</id>
+    <name>Backup</name>
+    <energy>18</energy>
+    <desc>You manage to take her down. Unfortunately, this seems to have only been the beginning. She rises again with a horde of undead creatures spawning all around her. It's time to put her down for good.</desc>
+    <commander id="473" />
+    <deck>
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="1644" name="Blackfin" />
+      <card id="5122" name="Crow King" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="5087" name="Apollyon" />
+      <card id="1346" name="Wandmaker Demilich" />
+      <card id="2217" name="Virtuoso Outsider" />
+      <card id="5087" mastery_level="2" name="Apollyon" />
+      <card id="7124" mastery_level="3" name="Immortal Appetite" />
+      <card id="2116" mastery_level="4" name="Messina's Choice" />
+      <card id="2217" mastery_level="5" name="Virtuoso Outsider" />
+      <card id="6232" mastery_level="6" name="Firetouch Deathmoth" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6884</id>
+    <name>My job here is done</name>
+    <energy>18</energy>
+    <desc>You have defeated her once again. She seems to fade away, taking all of the undead horde with her. The townsfolk of Duskwillow can finally rest assured that you got rid of the curse she had on them. Or have you?</desc>
+    <commander id="473" />
+    <deck>
+      <card id="5122" name="Crow King" />
+      <card id="5122" name="Crow King" />
+      <card id="7279" name="Brainweb Recluse" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="1644" name="Blackfin" />
+      <card id="2236" name="Maleficient Initiate" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="1346" mastery_level="2" name="Wandmaker Demilich" />
+      <card id="2145" mastery_level="3" name="Astaroth" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="2236" mastery_level="5" name="Maleficient Initiate" />
+      <card id="5628" mastery_level="6" name="Gorgon, The Imprisoned" />
+      <card id="5627" mastery_level="7" name="Drarm, the Soulbinder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6885</id>
+    <name>The message</name>
+    <energy>18</energy>
+    <desc>After realizing Skyhaven would be in danger you head there immediately. You manage to get there in time, only to realize that they already seem to be preparing for an attack.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5053" name="Anura witch" />
+      <card id="5053" name="Anura witch" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="5203" name="Skymar Cavalier" />
+      <card id="5203" name="Skymar Cavalier" />
+      <card id="7160" mastery_level="2" name="Perilous Stonesteps" />
+      <card id="5202" mastery_level="3" name="Alchebian" />
+      <card id="5202" mastery_level="4" name="Alchebian" />
+      <card id="6235" mastery_level="5" name="Mawcroak" />
+      <card id="5202" mastery_level="6" name="Alchebian" />
+      <card id="4021" mastery_level="7" name="Plyn Poisontrek" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6886</id>
+    <name>Anonymous</name>
+    <energy>18</energy>
+    <desc>An angel commander informs you that they very recently received an anonymous warning with very detailed information on the attack. All allies were called to defend the city.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5053" name="Anura witch" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="5203" name="Skymar Cavalier" />
+      <card id="7160" mastery_level="2" name="Perilous Stonesteps" />
+      <card id="7210" mastery_level="3" name="Battlefield Swindler" />
+      <card id="5202" mastery_level="4" name="Alchebian" />
+      <card id="6235" mastery_level="5" name="Mawcroak" />
+      <card id="5202" mastery_level="6" name="Alchebian" />
+      <card id="4021" mastery_level="7" name="Plyn Poisontrek" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6887</id>
+    <name>The assault</name>
+    <energy>18</energy>
+    <desc>Before you can ask any question, the city is being assaulted. You can see how docens of mercenary frogs are breaching the city's defenses.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="5053" name="Anura witch" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="7165" name="Raging Irontusk" />
+      <card id="6133" mastery_level="2" name="Cress, Flamespeaker" />
+      <card id="7210" mastery_level="3" name="Battlefield Swindler" />
+      <card id="6296" mastery_level="4" name="Pepe" />
+      <card id="6235" mastery_level="5" name="Mawcroak" />
+      <card id="6296" mastery_level="6" name="Pepe" />
+      <card id="4021" mastery_level="7" name="Plyn Poisontrek" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6888</id>
+    <name>Treason</name>
+    <energy>18</energy>
+    <desc>Amongst the crowd you can notice two particular individuals. The first one, wielding a sword and displaying his sharp teeth, is who seems to be their commander. And even though you can't believe your eyes, next to him is Alyel.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="2159" name="Toad Scourge" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2133" name="Dawnglow Smasher" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="7165" name="Raging Irontusk" />
+      <card id="6133" mastery_level="2" name="Cress, Flamespeaker" />
+      <card id="7210" mastery_level="3" name="Battlefield Swindler" />
+      <card id="5203" mastery_level="4" name="Skymar Cavalier" />
+      <card id="6133" mastery_level="5" name="Cress, Flamespeaker" />
+      <card id="2223" mastery_level="6" name="Stalker Hextongue" />
+      <card id="4021" mastery_level="7" name="Plyn Poisontrek" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6889</id>
+    <name>Breach</name>
+    <energy>18</energy>
+    <desc>You realize that the frog army is trying to breach into the throne room. You decide to take advantage of them being distracted to tackle Alyel and make her come to her senses.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="2159" name="Toad Scourge" />
+      <card id="5053" name="Anura witch" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="5202" name="Alchebian" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="6133" mastery_level="2" name="Cress, Flamespeaker" />
+      <card id="7203" mastery_level="3" name="Tuloom, Spirit Shaman" />
+      <card id="5203" mastery_level="4" name="Skymar Cavalier" />
+      <card id="7123" mastery_level="5" name="Soul Caller" />
+      <card id="2223" mastery_level="6" name="Stalker Hextongue" />
+      <card id="4021" mastery_level="7" name="Plyn Poisontrek" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6890</id>
+    <name>Confusion</name>
+    <energy>18</energy>
+    <desc>You manage to take down Alyel, only to realize that she looks lost, maybe even confused. She explains that she lost control over herself for a while, as if she was being manipulated by somebody else.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="2159" name="Toad Scourge" />
+      <card id="5053" name="Anura witch" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6296" name="Pepe" />
+      <card id="6296" name="Pepe" />
+      <card id="6235" name="Mawcroak" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7165" mastery_level="2" name="Raging Irontusk" />
+      <card id="7203" mastery_level="3" name="Tuloom, Spirit Shaman" />
+      <card id="5203" mastery_level="4" name="Skymar Cavalier" />
+      <card id="7123" mastery_level="5" name="Soul Caller" />
+      <card id="7165" mastery_level="6" name="Raging Irontusk" />
+      <card id="4021" mastery_level="7" name="Plyn Poisontrek" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6891</id>
+    <name>The raid</name>
+    <energy>18</energy>
+    <desc>You make Alyel come to her senses and tell her to leave immediately. Luckily, she seems to listen to reason and heads out. Unfortunately, by the time you get her to leave, the frogs have already raided the throne room.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="5053" name="Anura witch" />
+      <card id="5053" name="Anura witch" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2133" name="Skymar Cavalier" />
+      <card id="2133" name="Skymar Cavalier" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="5202" name="Alchebian" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7165" mastery_level="2" name="Raging Irontusk" />
+      <card id="7203" mastery_level="3" name="Tuloom, Spirit Shaman" />
+      <card id="5203" mastery_level="4" name="Skymar Cavalier" />
+      <card id="7123" mastery_level="5" name="Soul Caller" />
+      <card id="7165" mastery_level="6" name="Raging Irontusk" />
+      <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6892</id>
+    <name>Chaos Room</name>
+    <energy>18</energy>
+    <desc>You enter the throne room and see the entire place set on fire. The commander, who is laughing hysterically, orders his troops to attack you.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="5053" name="Anura witch" />
+      <card id="5053" name="Anura witch" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2216" name="Frogbies" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="5202" name="Alchebian" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7160" mastery_level="2" name="Perilous Stonesteps" />
+      <card id="6296" mastery_level="3" name="Pepe" />
+      <card id="5203" mastery_level="4" name="Skymar Cavalier" />
+      <card id="6235" mastery_level="5" name="Mawcroak" />
+      <card id="7165" mastery_level="6" name="Raging Irontusk" />
+      <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6893</id>
+    <name>The throne</name>
+    <energy>18</energy>
+    <desc>Together with the angel troops, you manage to defeat the frog army. The commander is still laughing hysterically, when all of a sudden the throne starts shining.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="5053" name="Anura witch" />
+      <card id="5053" name="Anura witch" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="5202" name="Alchebian" />
+      <card id="5202" name="Alchebian" />
+      <card id="5202" mastery_level="2" name="Alchebian" />
+      <card id="6296" mastery_level="3" name="Pepe" />
+      <card id="6201" mastery_level="4" name="Blasteye Sentry" />
+      <card id="6235" mastery_level="5" name="Mawcroak" />
+      <card id="7165" mastery_level="6" name="Raging Irontusk" />
+      <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6894</id>
+    <name>Not worthy</name>
+    <energy>18</energy>
+    <desc>The throne creates a barrier that puts out the fire in the entire room. Once it is cleared, it completely freezes the frog commander in his place, ending his havoc on Skyhaven.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="2216" name="Frogbies" />
+      <card id="2216" name="Frogbies" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="5202" name="Alchebian" />
+      <card id="5202" mastery_level="2" name="Alchebian" />
+      <card id="6133" mastery_level="3" name="Cress, Flamespeaker" />
+      <card id="6201" mastery_level="4" name="Blasteye Sentry" />
+      <card id="6235" mastery_level="5" name="Mawcroak" />
+      <card id="2223" mastery_level="6" name="Stalker Hextongue" />
+      <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6895</id>
+    <name>The arrival</name>
+    <energy>18</energy>
+    <desc>Angels from all over the continent start arriving at skyhaven. The frogs are now greatly outnumbered. You realize that the mercenary frogs never stood a chance.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="2159" name="Toad Scourge" />
+      <card id="2159" name="Toad Scourge" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="7123" name="Soul Caller" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="5202" name="Alchebian" />
+      <card id="5202" mastery_level="2" name="Alchebian" />
+      <card id="6133" mastery_level="3" name="Cress, Flamespeaker" />
+      <card id="6201" mastery_level="4" name="Blasteye Sentry" />
+      <card id="7203" mastery_level="5" name="Tuloom, Spirit Shaman" />
+      <card id="2223" mastery_level="6" name="Stalker Hextongue" />
+      <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6896</id>
+    <name>The realization</name>
+    <energy>18</energy>
+    <desc>You realize that this was all a setup. A huge distraction for something much bigger, you can feel it in the air now, what Veric told you was coming. You look up and see how the sky is slowly turning purple, becoming tainted by the Void.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1028" name="Heroic Frog" />
+      <card id="2159" name="Toad Scourge" />
+      <card id="2159" name="Toad Scourge" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="7123" name="Soul Caller" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="6133" name="Cress, Flamespeaker" />
+      <card id="2071" name="Sproutfrog Rainwisher" />
+      <card id="2223" name="Stalker Hextongue" />
+      <card id="5202" mastery_level="2" name="Alchebian" />
+      <card id="6133" mastery_level="3" name="Cress, Flamespeaker" />
+      <card id="6201" mastery_level="4" name="Blasteye Sentry" />
+      <card id="7259" mastery_level="5" name="Ranamuerta Bard" />
+      <card id="2223" mastery_level="6" name="Stalker Hextongue" />
+      <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
     </deck>
   </mission>
 </root>

@@ -12058,5 +12058,37 @@
     <find_item id="3074" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Nophora Insect event 91 END -->
+  <!-- LBN Llorona Undead event 92  -->
+  <campaign>
+    <id>4005</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Llorona</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>21</location_id>
+    <x>630</x>
+    <y>160</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6879</mission_id>
+      <mission_id>6880</mission_id>
+      <mission_id>6881</mission_id>
+      <mission_id>6882</mission_id>
+      <mission_id>6883</mission_id>
+      <mission_id>6884</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2145" />
+      <card level="5" id="2145" />
+      <item level="6" id="104061" number="25" />
+      <item level="7" id="104061" number="75" />
+    </rewards>
+    <find_item id="3089" drop_per_energy=".6" />
+  </campaign>
+  <!-- LBN Llorona Undead event 92 END -->
 </root>
 
