@@ -17936,6 +17936,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 93 - Frog - Node 1 -->
+  <achievement>
+    <id>3809</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Attack on Skyhaven</name>
+    <desc>Complete the 'Attack on Skyhaven' campaign on Mastery Level 1.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1660842000</locked_start_time>
+    <!-- Thursday, 18 August 2022 17:00:00  -->
+    <req>
+      <campaign>1324</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3125" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7089" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3810</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Attack on Skyhaven</name>
+    <desc>Complete the 'Attack on Skyhaven' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1660842000</locked_start_time>
+    <!-- Thursday, 18 August 2022 17:00:00  -->
+    <achievement_req>3809</achievement_req>
+    <req>
+      <campaign>1324</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3811</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Attack on Skyhaven</name>
+    <desc>Complete the 'Attack on Skyhaven' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1660842000</locked_start_time>
+    <!-- Thursday, 18 August 2022 17:00:00  -->
+    <achievement_req>3810</achievement_req>
+    <req>
+      <campaign>1324</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3812</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Attack on Skyhaven</name>
+    <desc>Complete the 'Attack on Skyhaven' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1660842000</locked_start_time>
+    <!-- Thursday, 18 August 2022 17:00:00  -->
+    <achievement_req>3811</achievement_req>
+    <req>
+      <campaign>1324</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 93 - Frog - Node 2 -->
+  <achievement>
+    <id>3813</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Throne Room</name>
+    <desc>Complete the 'Throne Room' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1662051600</locked_start_time>
+    <!-- Thursday, 1 September 2022 17:00:00 -->
+    <req>
+      <campaign>1325</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3814</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Throne Room</name>
+    <desc>Complete the 'A helping hand' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1662051600</locked_start_time>
+    <!-- Thursday, 1 September 2022 17:00:00 -->
+    <achievement_req>3813</achievement_req>
+    <req>
+      <campaign>1325</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3815</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Throne Room</name>
+    <desc>Complete the 'Throne Room' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1662051600</locked_start_time>
+    <!-- Thursday, 1 September 2022 17:00:00 -->
+    <achievement_req>3814</achievement_req>
+    <req>
+      <campaign>1325</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -19026,6 +19159,36 @@
       <campaign>1322</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1323</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Skyhaven Assault Revisited -->
+    <id>4047</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Skyhaven Assault</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Skyhaven Assault.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6550</mission_req>
+    <req>
+      <campaign>1272</campaign>
+      <!-- 1st node -->
+      <campaign>1273</campaign>
+      <!-- 2nd node -->
+      <campaign>1275</campaign>
+      <!-- Boss node -->
+      <campaign>1276</campaign>
+      <!-- 3rd node -->
+      <campaign>1277</campaign>
+      <!-- 4th node -->
+      <campaign>1324</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1325</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>

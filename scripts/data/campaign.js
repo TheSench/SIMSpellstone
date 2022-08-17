@@ -5832,6 +5832,39 @@ var CAMPAIGNS = {
 		],
 		"name": "A helping hand"
 	},
+	"1324": {
+		"id": "1324",
+		"items": {
+			"3125": 0.6
+		},
+		"location_id": "33",
+		"missions": [
+			"6885",
+			"6886",
+			"6887",
+			"6888",
+			"6889",
+			"6890"
+		],
+		"name": "Attack on Skyhaven"
+	},
+	"1325": {
+		"battleground_id": "2019",
+		"id": "1325",
+		"items": {
+			"3125": 0.8
+		},
+		"location_id": "33",
+		"missions": [
+			"6891",
+			"6892",
+			"6893",
+			"6894",
+			"6895",
+			"6896"
+		],
+		"name": "Throne Room"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},

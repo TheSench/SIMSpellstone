@@ -19463,16 +19463,16 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>8</attack>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>21</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="5" />
-      <skill id="enfeeble" x="2" all="1" />
+      <skill id="armored" x="7" />
+      <skill id="enfeeble" x="3" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
@@ -22335,11 +22335,11 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>9</attack>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>19</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -22350,8 +22350,8 @@
     <upgrade>
       <level>6</level>
       <skill id="jam" c="3" />
-      <skill id="leech" x="8" />
-      <skill id="berserk" x="4" />
+      <skill id="leech" x="10" />
+      <skill id="berserk" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -26702,7 +26702,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>55</health>
+      <health>57</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -28724,12 +28724,12 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
-      <health>29</health>
+      <attack>10</attack>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -28739,9 +28739,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="6" />
+      <skill id="armored" x="8" />
       <skill id="regenerate" x="8" />
-      <skill id="enfeeble" x="3" all="1" />
+      <skill id="enfeeble" x="4" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -29129,7 +29129,7 @@
     <upgrade>
       <level>3</level>
       <health>38</health>
-      <attack>11</attack>
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -29137,12 +29137,12 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>40</health>
+      <health>42</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="stasis" x="6" />
-      <skill id="enfeeble" x="4" all="1" />
+      <skill id="enfeeble" x="5" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
@@ -38991,6 +38991,146 @@
       <skill id="absorb" x="10" />
       <skill id="stasis" x="7" />
       <skill id="fervor" x="9" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7302</id>
+    <card_type>2</card_type>
+    <name>Sneaky Spitters</name>
+    <picture>Frog_Spitting_Trio_A</picture>
+    <asset_bundle>254</asset_bundle>
+    <hidden_until_time>1660842000</hidden_until_time>
+    <attack>7</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="strike" x="2" all="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="5" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="5" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17302</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Speedy Spitters</name>
+    <picture>Frog_Spitting_Trio_A</picture>
+    <asset_bundle>254</asset_bundle>
+    <hidden_until_time>1660842000</hidden_until_time>
+    <attack>9</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="strike" x="3" all="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <skill id="corrosive" x="6" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+      <skill id="corrosive" x="7" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="7" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27302</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Stunning Spitters</name>
+    <picture>Frog_Spitting_Trio_B</picture>
+    <asset_bundle>254</asset_bundle>
+    <hidden_until_time>1660842000</hidden_until_time>
+    <attack>12</attack>
+    <health>44</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="7" />
+    <skill id="strike" x="4" all="1" />
+    <skill id="strike" x="4" all="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="strike" x="5" all="1" />
     </upgrade>
   </unit>
 </root>

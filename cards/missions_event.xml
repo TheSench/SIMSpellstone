@@ -59043,7 +59043,7 @@
     <id>6887</id>
     <name>The assault</name>
     <energy>18</energy>
-    <desc>Before you can ask any question, the city is being assaulted. You can see how docens of mercenary frogs are breaching the city's defenses.</desc>
+    <desc>Before you can ask any questions, the city is being assaulted. You can see how docens of mercenary frogs are breaching the city's defenses.</desc>
     <commander id="400" />
     <deck>
       <card id="1028" name="Heroic Frog" />
@@ -59067,7 +59067,7 @@
     <id>6888</id>
     <name>Treason</name>
     <energy>18</energy>
-    <desc>Amongst the crowd you can notice two particular individuals. The first one, wielding a sword and displaying his sharp teeth, is who seems to be their commander. And even though you can't believe your eyes, next to him is Alyel.</desc>
+    <desc>Amongst the crowd, you can notice two particular individuals. The first one, wielding a sword and displaying his sharp teeth is who seems to be their commander. And even though you can't believe your eyes, next to him is Alyel.</desc>
     <commander id="252" />
     <deck>
       <card id="2159" name="Toad Scourge" />
@@ -59211,7 +59211,7 @@
     <id>6894</id>
     <name>Not worthy</name>
     <energy>18</energy>
-    <desc>The throne creates a barrier that puts out the fire in the entire room. Once it is cleared, it completely freezes the frog commander in his place, ending his havoc on Skyhaven.</desc>
+    <desc>The throne creates a barrier that puts out the fire in the entire room. Once it is cleared, it completely freezes the commander in his place, ending his havoc on Skyhaven.</desc>
     <commander id="252" />
     <deck>
       <card id="1028" name="Heroic Frog" />
@@ -59235,7 +59235,7 @@
     <id>6895</id>
     <name>The arrival</name>
     <energy>18</energy>
-    <desc>Angels from all over the continent start arriving at skyhaven. The frogs are now greatly outnumbered. You realize that the mercenary frogs never stood a chance.</desc>
+    <desc>Angels from all over the continent start arriving at Skyhaven. The frogs are now greatly outnumbered. You realize that the mercenary frogs never stood a chance.</desc>
     <commander id="249" />
     <deck>
       <card id="1028" name="Heroic Frog" />

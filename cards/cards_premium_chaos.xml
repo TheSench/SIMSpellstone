@@ -13065,11 +13065,11 @@
     <upgrade>
       <level>2</level>
       <health>16</health>
-      <attack>8</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>18</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -13079,9 +13079,9 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="2" />
-      <skill id="pierce" x="8" />
-      <skill id="berserk" x="3" />
+      <skill id="evade" x="3" />
+      <skill id="pierce" x="9" />
+      <skill id="berserk" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -13155,7 +13155,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>24</health>
+      <health>28</health>
       <skill id="fervor" x="4" y="4" />
       <skill id="nullify" x="1" />
       <skill id="berserk" x="2" />
@@ -13168,7 +13168,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>25</health>
+      <health>29</health>
       <skill id="fervor" x="4" y="4" />
       <skill id="nullify" x="2" />
       <skill id="berserk" x="3" />
@@ -13183,7 +13183,7 @@
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1483376400</hidden_until_time>
     <attack>7</attack>
-    <health>26</health>
+    <health>30</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="fervor" x="4" y="4" />
@@ -13194,7 +13194,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -13203,7 +13203,7 @@
     <upgrade>
       <level>4</level>
       <attack>9</attack>
-      <health>28</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -13214,9 +13214,9 @@
     <upgrade>
       <level>6</level>
       <attack>10</attack>
-      <skill id="fervor" x="5" y="4" />
+      <skill id="fervor" x="6" y="4" />
       <skill id="nullify" x="4" />
-      <skill id="berserk" x="5" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -25197,7 +25197,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>55</health>
+      <health>57</health>
     </upgrade>
     <upgrade>
       <level>5</level>

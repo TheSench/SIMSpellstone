@@ -11384,7 +11384,7 @@
     <id>1323</id>
     <name>A helping hand</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1318" level="1" />
+    <campaign_req id="1322" level="1" />
     <locked_start_time>1659632400</locked_start_time>
     <!-- Thursday, 4 August 2022 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -11421,6 +11421,94 @@
     <find_item id="3089" drop_per_energy=".8" />
     <ignore_energy_reduction_until>1663261200</ignore_energy_reduction_until>
     <!-- Thursday, September 15, 2022 at 17:00:00 	  -->
+  </campaign>
+  <!-- Campaign Event 93 -  Skyhaven Assault -->
+  <campaign>
+    <id>1324</id>
+    <name>Attack on Skyhaven</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1660842000</locked_start_time>
+    <!-- Thursday, 18 August 2022 17:00:00  -->
+    <location_id>33</location_id>
+    <x>375</x>
+    <!-- left right -->
+    <y>220</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6885</mission_id>
+      <mission_id>6886</mission_id>
+      <mission_id>6887</mission_id>
+      <mission_id>6888</mission_id>
+      <mission_id>6889</mission_id>
+      <mission_id>6890</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2662" number="25" />
+      /&gt;
+      <!-- Skyhaven Assault Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2237" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2216" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2662" number="75" />
+      /&gt;
+      <!-- Skyhaven Assault Flask -->
+      <card level="7" id="2236" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3125" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1665680400</ignore_energy_reduction_until>
+    <!-- Thursday, October 13, 2022 at 17:00:00 	  -->
+  </campaign>
+  <campaign>
+    <id>1325</id>
+    <name>Throne Room</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1324" level="1" />
+    <locked_start_time>1662051600</locked_start_time>
+    <!-- Thursday, 1 September 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>33</location_id>
+    <x>710</x>
+    <!-- left right -->
+    <y>240</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6891</mission_id>
+      <mission_id>6892</mission_id>
+      <mission_id>6893</mission_id>
+      <mission_id>6894</mission_id>
+      <mission_id>6895</mission_id>
+      <mission_id>6896</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2662" number="25" />
+      /&gt;
+      <!-- Skyhaven Assault Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2034" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2011" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2662" number="75" />
+      /&gt;
+      <!-- Skyhaven Assault Flask -->
+      <card level="7" id="2236" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3125" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1665680400</ignore_energy_reduction_until>
+    <!-- Thursday, October 13, 2022 at 17:00:00 	  -->
   </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
