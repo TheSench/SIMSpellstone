@@ -170,7 +170,7 @@
   <skillType>
     <id>counterpoison</id>
     <order>75</order>
-    <icon>poisonhide</icon>
+    <icon>corrupt</icon>
     <name>Poisonhide</name>
     <desc>When damaged by an attack, Poison the attacker.</desc>
     <status_flag>poison</status_flag>
@@ -566,7 +566,7 @@
   <skillType>
     <id>barrage</id>
     <order>500</order>
-    <icon>barrage</icon>
+    <icon>arcane_shot</icon>
     <name>barrage</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
