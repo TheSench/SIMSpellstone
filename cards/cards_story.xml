@@ -9294,53 +9294,5 @@
       <attack>3</attack>
     </upgrade>
   </unit>
-  <!-- ==== Confuse testing card for Caesar LBN ==== -->
-  <unit>
-    <id>8240</id>
-    <card_type>2</card_type>
-    <name>Confusion Champion</name>
-    <picture>Wasteland_Nomad_A</picture>
-    <asset_bundle>13</asset_bundle>
-    <attack>9</attack>
-    <health>29</health>
-    <cost>2</cost>
-    <rarity>4</rarity>
-    <skill id="absorb" x="7" />
-    <skill id="regenerate" x="7" />
-    <skill id="confuse" c="4" />
-    <type>8</type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <health>30</health>
-      <skill id="absorb" x="8" />
-      <skill id="regenerate" x="8" />
-      <skill id="confuse" c="4" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <attack>10</attack>
-      <skill id="absorb" x="8" />
-      <skill id="regenerate" x="8" />
-      <skill id="confuse" c="4" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <skill id="absorb" x="9" />
-      <skill id="regenerate" x="9" />
-      <skill id="confuse" c="3" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <health>31</health>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <health>33</health>
-      <skill id="absorb" x="10" />
-      <skill id="regenerate" x="10" />
-      <skill id="confuse" c="3" />
-    </upgrade>
-  </unit>
 </root>
 

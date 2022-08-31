@@ -451,19 +451,6 @@
     <attributes x="0" y="0" all="0" c="1" s="0" />
     <balance_points>10</balance_points>
   </skillType>
-  <!-- Skills 2022 -->
-  <skillType>
-    <id>confuse</id>
-    <order>300</order>
-    <icon>confuse</icon>
-    <name>Confusion</name>
-    <desc>Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally.</desc>
-    <desc_all>Every {c} turns, inflicts Confuse on a random enemy creature. On the enemy turn it will be forced to Attack an adjacent ally, on-hit effects also apply.</desc_all>
-    <status_flag>confused</status_flag>
-    <status_flag>confuse_countdown</status_flag>
-    <attributes x="0" y="0" all="1" c="1" s="0" />
-    <balance_points>10</balance_points>
-  </skillType>
   <!-- Mythic -->
   <skillType>
     <id>fury</id>
