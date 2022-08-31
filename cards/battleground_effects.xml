@@ -662,8 +662,8 @@
           <sound>shield</sound>
         </target_effect>
       </skill>
-      <add_skill id="venom" x="4" y="8,5" />
-      <add_skill id="leech" x="9" y="8,5" />
+      <add_skill id="regenerate" mult="0.15" base="health" y="8,5" delay="3,4" />
+      <add_skill id="leech" x="9" y="8,5" delay="0,1,2" />
     </effect>
   </battleground>
   <battleground>
@@ -1208,6 +1208,28 @@
     <effect>
       <add_skill id="vampirism" mult="0.05" base="health" x="3" y="7" />
       <add_skill id="armored" mult="0.10" base="health" y="7" delay="0,1,2" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>156</id>
+    <name>Elemental Disruption</name>
+    <desc>Aether gains Vengeance 15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gains Regenerate %15. All % are based on base health.</desc>
+    <web_picture>filter_elementals_64.png</web_picture>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <add_skill id="counter" mult="0.15" all="1" base="health" y="1,5" />
+      <add_skill id="burn" mult="0.20" all="1" base="health" y="2,5" />
+      <add_skill id="bash" mult="0.30" all="1" base="health" y="3,5" />
+      <skill id="displayEffect" trigger="onSkill" s="bash">
+        <target_effect>
+          <prefab>frogbge_Target</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+      <add_skill id="regenerate" mult="0.15" base="health" y="8,5" />
     </effect>
   </battleground>
   <!-- ================================= -->

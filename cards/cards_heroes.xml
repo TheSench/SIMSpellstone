@@ -351,7 +351,7 @@
     <upgrade>
       <level>6</level>
       <health>75</health>
-      <skill id="imbue" s="frost" x="3" />
+      <skill id="imbue" s="frost" x="2" />
       <skill id="protect" all="1" x="3" />
     </upgrade>
   </unit>
@@ -404,8 +404,8 @@
     <desc>Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.</desc>
     <attack>0</attack>
     <health>39</health>
-    <skill id="imbue" s="armored" all="1" x="1" />
-    <skill id="enhance" all="1" s="corrosive" x="1" />
+    <skill id="imbue" all="1" s="corrosive" x="1" />
+    <skill id="heal" x="2" />
     <rarity>4</rarity>
     <type>3</type>
     <set>7000</set>
@@ -416,26 +416,26 @@
     <upgrade>
       <level>3</level>
       <health>53</health>
-      <skill id="imbue" s="armored" all="1" x="1" />
-      <skill id="enhance" all="1" s="corrosive" x="2" />
+      <skill id="imbue" all="1" s="corrosive" x="1" />
+      <skill id="heal" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>60</health>
-      <skill id="imbue" s="armored" all="1" x="2" />
-      <skill id="enhance" all="1" s="corrosive" x="2" />
+      <skill id="imbue" all="1" s="corrosive" x="2" />
+      <skill id="heal" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>67</health>
-      <skill id="imbue" s="armored" all="1" x="2" />
-      <skill id="enhance" all="1" s="corrosive" x="3" />
+      <skill id="imbue" all="1" s="corrosive" x="2" />
+      <skill id="heal" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>75</health>
-      <skill id="imbue" s="armored" all="1" x="3" />
-      <skill id="enhance" all="1" s="corrosive" x="3" />
+      <skill id="imbue" all="1" s="corrosive" x="3" />
+      <skill id="heal" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -12338,6 +12338,57 @@
       <skill id="imbue" x="6" all="1" s="absorb" />
       <skill id="imbue" s="evade" all="1" x="3" />
       <skill id="enfeeble" all="1" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>474</id>
+    <card_type>2</card_type>
+    <name>Lightning Boss Caesar</name>
+    <portrait>Mini_Menace_Portrait1</portrait>
+    <!--Portrait_Mini_Menace  -->
+    <attack>0</attack>
+    <health>75</health>
+    <rarity>4</rarity>
+    <skill id="protect" all="1" x="1" />
+    <skill id="imbue" s="burn" all="1" x="1" />
+    <skill id="confuse" c="6" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>80</health>
+      <skill id="protect" all="1" x="3" />
+      <skill id="imbue" s="burn" all="1" x="2" />
+      <skill id="confuse" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>85</health>
+      <skill id="protect" all="1" x="5" />
+      <skill id="imbue" s="burn" all="1" x="3" />
+      <skill id="confuse" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>90</health>
+      <skill id="protect" all="1" x="8" />
+      <skill id="imbue" s="burn" all="1" x="3" />
+      <skill id="confuse" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>95</health>
+      <skill id="protect" all="1" x="9" />
+      <skill id="imbue" s="burn" all="1" x="4" />
+      <skill id="confuse" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="protect" all="1" x="13" />
+      <skill id="imbue" s="burn" all="1" x="4" />
+      <skill id="confuse" c="3" />
+      <!-- <skill id='imbue' s='burn' all='1' x='4' /> -->
     </upgrade>
   </unit>
 </root>
