@@ -583,12 +583,22 @@ var BATTLEGROUNDS = {
 				"y": "3,5"
 			},
 			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
 				"effect_type": "add_skill",
-				"id": "venom",
-				"x": 4,
+				"id": "regenerate",
+				"mult": 0.15,
 				"y": "8,5"
 			},
 			{
+				"delay": [
+					0,
+					1,
+					2
+				],
 				"effect_type": "add_skill",
 				"id": "leech",
 				"x": 9,
@@ -1731,6 +1741,44 @@ var BATTLEGROUNDS = {
 		],
 		"id": "155",
 		"name": "Reinforced Undead Vampirism"
+	},
+	"156": {
+		"desc": "Aether gains Vengeance 15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gains Regenerate %15. All % are based on base health.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "counter",
+				"mult": 0.15,
+				"y": "1,5"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.2,
+				"y": "2,5"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.3,
+				"y": "3,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "8,5"
+			}
+		],
+		"id": "156",
+		"name": "Elemental Disruption"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

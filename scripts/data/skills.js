@@ -55,6 +55,12 @@ var SKILL_DATA = {
 		"name": "Scorch Self",
 		"type": "activation"
 	},
+	"confuse": {
+		"desc": "Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally.",
+		"icon": "confuse",
+		"name": "Confusion",
+		"type": "activation"
+	},
 	"corrosive": {
 		"desc": "After taking Attack damage, inflicts Corrosive back, reducing Attack until Corrosive is not inflicted for two turns.",
 		"icon": "corrosive",
