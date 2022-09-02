@@ -5521,7 +5521,7 @@ var SIM_CONTROLLER = (function () {
 
 		// Deal damage to target
 		do_attack_damage(current_assault, target, damage, function (source, target, amount) {
-			echo += debug_name(source) + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
+			echo += debug_name(source) + (source.confused ? ' is confused and ' : '') + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
 
