@@ -379,7 +379,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = enemyUnits.length; key < len; key++) {
 				var target = enemyUnits[key];
 				if (target.isAlive()
-					&& (all || (target.isActiveNextTurn() && !target.confused))) {
+					&& (all || (target.isActiveNextTurn() && !target.confused && current_unit.isUnjammed()))) {
 					targets.push(key);
 				}
 			}
