@@ -227,6 +227,7 @@ var defaultStatusValues = {
     scorched: 0,
     warded: 0,
     // Boolean-Status
+    confused: false,
     jammed: false,
     jammedSelf: false,
     silenced: false,
@@ -603,7 +604,7 @@ var makeUnit = (function() {
         card.health = original_card.health;
         card.maxLevel = original_card.maxLevel;
         card.level = ((unit_level > card.maxLevel) ? card.maxLevel : unit_level);
-        card.cost = original_card.cost;
+        card.cost = original_card.cost || 0;
         card.rarity = original_card.rarity;
         card.card_type = original_card.card_type;
         card.type = original_card.type;

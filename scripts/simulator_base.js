@@ -368,6 +368,57 @@ var SIMULATOR = {};
 			return true;
 		},
 
+		confuse: function confuse(src_card, skill) {
+
+			var all = skill.all;
+
+			var enemyUnits = getEnemyUnits(src_card, field);
+
+			var targets = [];
+
+			for (var key = 0, len = enemyUnits.length; key < len; key++) {
+				var target = enemyUnits[key];
+				if (target.isAlive()
+					&& (all || (target.isActiveNextTurn() && !target.confused))) {
+					targets.push(key);
+				}
+			}
+
+			// No Targets
+			if (!targets.length) {
+				return 0;
+			}
+
+			// Check All
+			if (!all) targets = choose_random_target(targets);
+
+			var affected = 0;
+
+			for (var key = 0, len = targets.length; key < len; key++) {
+				var target = enemyUnits[targets[key]];
+
+				// Check Evade
+				if (target.invisible) {
+					target.invisible--;
+					// Missed - retry next turn
+					skill.countdown = 0;
+					if (debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + ' but it is invisible!<br>';
+					continue;
+				}
+
+				affected++;
+
+				target.confused = true;
+				if (debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + '<br>';
+
+				if (target.backlash) {
+					backlash(src_card, target);
+				}
+			}
+
+			return affected;
+		},
+
 		// Protect (Barrier)
 		// - Can target specific faction
 		// - Targets allied assaults
@@ -2391,7 +2442,11 @@ var SIMULATOR = {};
 					continue;
 				}
 
-				doAttack(current_assault, field_o_assaults, field_o_commander);
+				if (current_assault.confused) {
+					doAttack(current_assault, field_p_assaults, field_p_commander);
+				} else {
+					doAttack(current_assault, field_o_assaults, field_o_commander);
+				}
 
 				// WINNING CONDITION
 				if (!field_o_commander.isAlive() || !field_p_commander.isAlive()) {
@@ -2534,6 +2589,7 @@ var SIMULATOR = {};
 			} else {
 				current_assault.jammed = false;
 			}
+			current_assault.confused = false;
 			current_assault.attack_rally = 0;
 			current_assault.attack_weaken = 0;
 			current_assault.attackIncreasePrevention = 0;
@@ -2641,7 +2697,16 @@ var SIMULATOR = {};
 	function doAttack(current_assault, field_o_assaults, field_o_commander) {
 
 		// -- START ATTACK SEQUENCE --
-		var target = field_o_assaults[current_assault.key];
+		var target;
+		if (current_assault.confused) {
+			var adjacentAllies = [
+				field_o_assaults[current_assault.key-1],
+				field_o_assaults[current_assault.key+1]
+			].filter(function(it) { return !!it});
+			target = choose_random_target(adjacentAllies)[0];
+		} else {
+			target = field_o_assaults[current_assault.key];
+		}
 		if (!target || !target.isAlive()) {
 			target = field_o_commander;
 		} else {
@@ -2780,7 +2845,7 @@ var SIMULATOR = {};
 
 		// Deal damage to target
 		do_attack_damage(current_assault, target, damage, function (source, target, amount) {
-			echo += debug_name(source) + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
+			echo += debug_name(source) + (source.confused ? ' is confused and ' : '') + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
 
