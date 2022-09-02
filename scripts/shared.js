@@ -227,6 +227,7 @@ var defaultStatusValues = {
     scorched: 0,
     warded: 0,
     // Boolean-Status
+    confused: false,
     jammed: false,
     jammedSelf: false,
     silenced: false,
