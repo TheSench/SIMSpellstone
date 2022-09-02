@@ -2443,7 +2443,7 @@ var SIMULATOR = {};
 				}
 
 				if (current_assault.confused) {
-					doAttack(current_assault, field_p_assaults, field_p_commander);
+					doAttack(current_assault, field_o_assaults, field_p_commander);
 				} else {
 					doAttack(current_assault, field_o_assaults, field_o_commander);
 				}
