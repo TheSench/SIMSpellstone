@@ -2703,7 +2703,7 @@ var SIMULATOR = {};
 				field_o_assaults[current_assault.key-1],
 				field_o_assaults[current_assault.key+1]
 			].filter(function(it) { return !!it});
-			target = choose_random_target(adjacentAllies);
+			target = choose_random_target(adjacentAllies)[0];
 		} else {
 			target = field_o_assaults[current_assault.key];
 		}

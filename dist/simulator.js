@@ -988,7 +988,7 @@ var makeUnit = (function() {
         card.health = original_card.health;
         card.maxLevel = original_card.maxLevel;
         card.level = ((unit_level > card.maxLevel) ? card.maxLevel : unit_level);
-        card.cost = original_card.cost;
+        card.cost = original_card.cost || 0;
         card.rarity = original_card.rarity;
         card.card_type = original_card.card_type;
         card.type = original_card.type;
@@ -5379,7 +5379,7 @@ var SIM_CONTROLLER = (function () {
 				field_o_assaults[current_assault.key-1],
 				field_o_assaults[current_assault.key+1]
 			].filter(function(it) { return !!it});
-			target = choose_random_target(adjacentAllies);
+			target = choose_random_target(adjacentAllies)[0];
 		} else {
 			target = field_o_assaults[current_assault.key];
 		}
