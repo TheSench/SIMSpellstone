@@ -379,7 +379,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = enemyUnits.length; key < len; key++) {
 				var target = enemyUnits[key];
 				if (target.isAlive()
-					&& (all || (target.isActiveNextTurn() && !target.confused))) {
+					&& (all || (target.isActiveNextTurn() && !target.confused && current_unit.isUnjammed()))) {
 					targets.push(key);
 				}
 			}
@@ -2422,6 +2422,17 @@ var SIMULATOR = {};
 				if (debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
 			}
 
+			var opposingUnit;
+			if (current_assault.confused) {
+				var adjacentAllies = [
+					field_o_assaults[current_assault.key-1],
+					field_o_assaults[current_assault.key+1]
+				].filter(function(it) { return !!it});
+				opposingUnit = choose_random_target(adjacentAllies)[0];
+			} else {
+				opposingUnit = field_o_assaults[current_assault.key];
+			}
+
 			for (; activations > 0; activations--) {
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
@@ -2442,11 +2453,7 @@ var SIMULATOR = {};
 					continue;
 				}
 
-				if (current_assault.confused) {
-					doAttack(current_assault, field_p_assaults, field_p_commander);
-				} else {
-					doAttack(current_assault, field_o_assaults, field_o_commander);
-				}
+				doAttack(current_assault, opposingUnit, field_o_assaults, field_o_commander);
 
 				// WINNING CONDITION
 				if (!field_o_commander.isAlive() || !field_p_commander.isAlive()) {
@@ -2694,32 +2701,22 @@ var SIMULATOR = {};
 		}
 	}
 
-	function doAttack(current_assault, field_o_assaults, field_o_commander) {
+	function doAttack(current_assault, target, field_o_assaults, field_o_commander) {
 
 		// -- START ATTACK SEQUENCE --
-		var target;
-		if (current_assault.confused) {
-			var adjacentAllies = [
-				field_o_assaults[current_assault.key-1],
-				field_o_assaults[current_assault.key+1]
-			].filter(function(it) { return !!it});
-			target = choose_random_target(adjacentAllies)[0];
-		} else {
-			target = field_o_assaults[current_assault.key];
-		}
 		if (!target || !target.isAlive()) {
 			target = field_o_commander;
-		} else {
+		} else if (!current_assault.confused) {
 			// Check for taunt; if unit has taunt, attacks directed at it can't be "taunted" elsewhere
 			var taunted = false;
 			if (!target.taunt) {
 				// Check left first, then right
-				var adjacent = field_o_assaults[current_assault.key - 1];
+				var adjacent = field_o_assaults[target.key - 1];
 				if (adjacent && adjacent.taunt) {
 					target = adjacent;
 					taunted = true;
 				} else {
-					var adjacent = field_o_assaults[current_assault.key + 1];
+					var adjacent = field_o_assaults[target.key + 1];
 					if (adjacent && adjacent.taunt) {
 						target = adjacent;
 						taunted = true;
