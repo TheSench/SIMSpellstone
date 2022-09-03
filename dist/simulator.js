@@ -3055,7 +3055,7 @@ var SIM_CONTROLLER = (function () {
 			for (var key = 0, len = enemyUnits.length; key < len; key++) {
 				var target = enemyUnits[key];
 				if (target.isAlive()
-					&& (all || (target.isActiveNextTurn() && !target.confused && current_unit.isUnjammed()))) {
+					&& (all || (target.isActiveNextTurn() && !target.confused && target.isUnjammed()))) {
 					targets.push(key);
 				}
 			}
