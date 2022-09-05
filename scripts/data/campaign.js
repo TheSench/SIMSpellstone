@@ -6163,7 +6163,7 @@ var CAMPAIGNS = {
 	"4006": {
 		"id": "4006",
 		"items": {
-			"3089": 0.6
+			"3125": 0.6
 		},
 		"location_id": "33",
 		"missions": [

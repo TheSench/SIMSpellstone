@@ -12209,7 +12209,7 @@
       <item level="6" id="104062" number="25" />
       <item level="7" id="104062" number="75" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".6" />
+    <find_item id="3125" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Caesar Frog event 93 END -->
 </root>
