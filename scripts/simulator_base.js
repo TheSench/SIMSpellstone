@@ -2709,6 +2709,7 @@ var SIMULATOR = {};
 			target = field_o_commander;
 		} else if (!target.isAlive()) {
 			if (current_assault.confused) {
+				if (debug) echo += debug_name(current_assault) + ' is confused and attacks ' + debug_name(target) + ', but it is already dead<br>';
 				// If a confused unit killed an adjacent ally, don't target enemy/commander on subsequent hits of same turn
 				return
 			}
