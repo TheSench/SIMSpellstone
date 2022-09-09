@@ -2425,8 +2425,8 @@ var SIMULATOR = {};
 			var opposingUnit;
 			if (current_assault.confused) {
 				var adjacentAllies = [
-					field_o_assaults[current_assault.key-1],
-					field_o_assaults[current_assault.key+1]
+					field_p_assaults[current_assault.key-1],
+					field_p_assaults[current_assault.key+1]
 				].filter(function(it) { return it && it.isAlive(); });
 				opposingUnit = choose_random_target(adjacentAllies)[0];
 			} else {
