@@ -5103,7 +5103,7 @@ var SIM_CONTROLLER = (function () {
 				var adjacentAllies = [
 					field_o_assaults[current_assault.key-1],
 					field_o_assaults[current_assault.key+1]
-				].filter(function(it) { return !!it});
+				].filter(function(it) { return it && it.isAlive(); });
 				opposingUnit = choose_random_target(adjacentAllies)[0];
 			} else {
 				opposingUnit = field_o_assaults[current_assault.key];
@@ -5377,10 +5377,17 @@ var SIM_CONTROLLER = (function () {
 		}
 	}
 
-	function doAttack(current_assault, target, field_o_assaults, field_o_commander) {
+	function doAttack(current_assault, originalTarget, field_o_assaults, field_o_commander) {
 
+		var target = originalTarget
 		// -- START ATTACK SEQUENCE --
-		if (!target || !target.isAlive()) {
+		if (!target) {
+			target = field_o_commander;
+		} else if (!target.isAlive()) {
+			if (current_assault.confused) {
+				// If a confused unit killed an adjacent ally, don't target enemy/commander on subsequent hits of same turn
+				return
+			}
 			target = field_o_commander;
 		} else if (!current_assault.confused) {
 			// Check for taunt; if unit has taunt, attacks directed at it can't be "taunted" elsewhere
@@ -5518,7 +5525,7 @@ var SIM_CONTROLLER = (function () {
 
 		// Deal damage to target
 		do_attack_damage(current_assault, target, damage, function (source, target, amount) {
-			echo += debug_name(source) + (source.confused ? ' is confused and ' : '') + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
+			echo += debug_name(source) + ((source.confused && target === originalTarget) ? ' is confused and ' : '') + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
 
