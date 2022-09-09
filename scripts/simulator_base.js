@@ -2708,7 +2708,7 @@ var SIMULATOR = {};
 		if (!target) {
 			target = field_o_commander;
 		} else if (!target.isAlive()) {
-			if (current_assault.confused) {
+			if (current_assault.confused && originalTarget.owner === current_assault.owner) {
 				if (debug) echo += debug_name(current_assault) + ' is confused and attacks ' + debug_name(target) + ', but it is already dead<br>';
 				// If a confused unit killed an adjacent ally, don't target enemy/commander on subsequent hits of same turn
 				return
@@ -2850,7 +2850,9 @@ var SIMULATOR = {};
 
 		// Deal damage to target
 		do_attack_damage(current_assault, target, damage, function (source, target, amount) {
-			echo += debug_name(source) + ((source.confused && target === originalTarget) ? ' is confused and ' : '') + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
+			echo += debug_name(source)
+			if (source.confused) echo += ' is confused ' + (target.owner === current_assault.owner ? ' and ' : ' but ')
+			echo += ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
 
