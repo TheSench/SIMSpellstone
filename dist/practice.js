@@ -5104,7 +5104,9 @@ var SIM_CONTROLLER = (function () {
 					field_p_assaults[current_assault.key-1],
 					field_p_assaults[current_assault.key+1]
 				].filter(function(it) { return it && it.isAlive(); });
-				opposingUnit = choose_random_target(adjacentAllies)[0];
+				opposingUnit = (adjacentAllies.length
+					? choose_random_target(adjacentAllies)[0]
+					: field_o_assaults[current_assault.key]);
 			} else {
 				opposingUnit = field_o_assaults[current_assault.key];
 			}
