@@ -3020,13 +3020,15 @@ var SIMULATOR = {};
 				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
 			}
 			var enraged = target.enraged;
-			if (enraged > 0) {
+			if (enraged > 0 && target.isAlive()) {
 				enraged = adjustAttackIncrease(target, enraged);
 				target.attack_berserk += enraged;
 				if (debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
 			}
-
-			if(!current_assault.silenced) {
+		}
+		
+		if (damage > 0 && !current_assault.silenced) {
+			if (current_assault.isAlive()) {
 				// Berserk
 				// - Must have done some damage to an assault unit
 				if (current_assault.berserk) {
@@ -3062,12 +3064,12 @@ var SIMULATOR = {};
 						echo += '<br>';
 					}
 				}
+			}
 
-				// Swarm
-				// - Must have done some damage to an assault unit
-				if (current_assault.swarm) {
-					onAttackSkills.swarm(current_assault, target);
-				}
+			// Swarm
+			// - Must have done some damage to an assault unit
+			if (current_assault.swarm) {
+				onAttackSkills.swarm(current_assault, target);
 			}
 		}
 
@@ -3075,7 +3077,7 @@ var SIMULATOR = {};
 
 		// Corrosion
 		// - Target must have received some amount of damage
-		if (target.corrosive) {
+		if (damage > 0 && target.corrosive) {
 			var corrosion = target.corrosive || 0;
 			var enhanced = getEnhancement(target, 'corrosive', corrosion);
 			corrosion += enhanced;
