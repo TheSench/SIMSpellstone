@@ -3004,19 +3004,16 @@ var SIMULATOR = {};
 			// Fury
 			// - Target must have received some amount of damage
 			if (target.fury) {
-				var furyBase = target.fury;
-				var furyEnhancement = getEnhancement(target, 'counter', furyBase);
+				var fury = adjustAttackIncrease(target, target.fury);
 
 				if (target.isAlive()) {
-					var fury = furyBase + furyEnhancement;
-					fury = adjustAttackIncrease(target, fury);
 					target.attack_berserk += fury;
 					if (debug) {
 						echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
 					}
 				}
 
-				doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
+				doCounterDamage(current_assault, target, 'Fury', fury, 0);
 			}
 			var enraged = target.enraged;
 			if (enraged > 0 && target.isAlive()) {
