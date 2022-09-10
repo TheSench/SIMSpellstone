@@ -1778,7 +1778,6 @@ var SIMULATOR = {};
 			swarm += enhanced;
 
 			var weakest = choose_random_target(targets)[0];
-			swarm = adjustAttackIncrease(weakest, swarm);
 			weakest.attack_berserk += swarm;
 
 			if (debug) {
