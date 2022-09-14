@@ -59423,5 +59423,725 @@
       <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
     </deck>
   </mission>
+  <mission>
+    <id>6903</id>
+    <name>Void Plane</name>
+    <energy>18</energy>
+    <desc>With the help of Skyhavens angels, you manage to figure out that the Void's energy is coming from the Void Plane. Together with an army provided by Skyhaven, you head there with no time 	to waste.</desc>
+    <commander id="214" />
+    <deck>
+      <card id="6104" name="Night Lurker" />
+      <card id="6104" name="Night Lurker" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="5013" name="Radiance" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="5048" name="Highborn Rose" />
+      <card id="7194" mastery_level="2" name="Coralscape Grappler" />
+      <card id="5276" mastery_level="3" name="Snowback Coldossus" />
+      <card id="5276" mastery_level="4" name="Snowback Coldossus" />
+      <card id="1642" mastery_level="5" name="Icestone Beast" />
+      <card id="1642" mastery_level="6" name="Icestone Beast" />
+      <card id="2208" mastery_level="7" name="Shatterstone Anomaly" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6904</id>
+    <name>A portal to the other side</name>
+    <energy>18</energy>
+    <desc>Once you reach the Plane, you see with your own eyes what you feared the most. A huge portal the size of a giant is active, letting all kinds of Void creatures into our world. But what surprises you the most, is the individual responsible for opening the portal.</desc>
+    <commander id="228" />
+    <deck>
+      <card id="6104" name="Night Lurker" />
+      <card id="6104" name="Night Lurker" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="5059" name="Bemola" />
+      <card id="5013" name="Radiance" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7194" mastery_level="2" name="Coralscape Grappler" />
+      <card id="5276" mastery_level="3" name="Snowback Coldossus" />
+      <card id="5276" mastery_level="4" name="Snowback Coldossus" />
+      <card id="1642" mastery_level="5" name="Icestone Beast" />
+      <card id="2071" mastery_level="6" name="Sproutfrog Rainwisher" />
+      <card id="2208" mastery_level="7" name="Shatterstone Anomaly" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6905</id>
+    <name>Remi</name>
+    <energy>18</energy>
+    <desc>He who you thought to be nothing but a figment of your imagination, Remi. It was him all along, pulling strings and creating mayhem to distract you from what he was planning.</desc>
+    <commander id="220" />
+    <deck>
+      <card id="6104" name="Night Lurker" />
+      <card id="6104" name="Night Lurker" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1343" name="Firehorn" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="5059" name="Bemola" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7194" mastery_level="2" name="Coralscape Grappler" />
+      <card id="1343" mastery_level="3" name="Firehorn" />
+      <card id="2225" mastery_level="4" name="Trinomaly" />
+      <card id="1642" mastery_level="5" name="Icestone Beast" />
+      <card id="2071" mastery_level="6" name="Sproutfrog Rainwisher" />
+      <card id="2208" mastery_level="7" name="Shatterstone Anomaly" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6906</id>
+    <name>A bigger problem</name>
+    <energy>18</energy>
+    <desc>Just when you thought things couldn't get worse, a giant colossus crosses the portal from the void. Its size and powers are nothing like what you have ever seen before.</desc>
+    <commander id="215" />
+    <deck>
+      <card id="1326" name="Titan of Fire" />
+      <card id="6104" name="Night Lurker" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1343" name="Firehorn" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="5049" name="Joryl" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7194" mastery_level="2" name="Coralscape Grappler" />
+      <card id="1343" mastery_level="3" name="Firehorn" />
+      <card id="2225" mastery_level="4" name="Trinomaly" />
+      <card id="5049" mastery_level="5" name="Joryl" />
+      <card id="2071" mastery_level="6" name="Sproutfrog Rainwisher" />
+      <card id="2208" mastery_level="7" name="Shatterstone Anomaly" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6907</id>
+    <name>Go time</name>
+    <energy>18</energy>
+    <desc>You command a small group of Skyhavens army and have them follow you into battle. It's time to banish the Void creatures back to where they came from.</desc>
+    <commander id="266" />
+    <deck>
+      <card id="1326" name="Titan of Fire" />
+      <card id="6104" name="Night Lurker" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1343" name="Firehorn" />
+      <card id="5048" name="Highborn Rose" />
+      <card id="5049" name="Joryl" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="5013" mastery_level="2" name="Radiance" />
+      <card id="1343" mastery_level="3" name="Firehorn" />
+      <card id="2225" mastery_level="4" name="Trinomaly" />
+      <card id="5049" mastery_level="5" name="Joryl" />
+      <card id="7019" mastery_level="6" name="Lady of the Swamp" />
+      <card id="2208" mastery_level="7" name="Shatterstone Anomaly" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6908</id>
+    <name>The Giant from the Void</name>
+    <energy>18</energy>
+    <desc>You head straight towards the Void giant who happens to be near Remi himself. You are responsible for freeing him, now it's time to lock him up.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="1326" name="Titan of Fire" />
+      <card id="6104" name="Night Lurker" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1343" name="Firehorn" />
+      <card id="5048" name="Highborn Rose" />
+      <card id="5049" name="Joryl" />
+      <card id="5234" name="Stratosnail" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="5249" mastery_level="2" name="Seraph of Singularities" />
+      <card id="1343" mastery_level="3" name="Firehorn" />
+      <card id="2225" mastery_level="4" name="Trinomaly" />
+      <card id="5049" mastery_level="5" name="Joryl" />
+      <card id="7019" mastery_level="6" name="Lady of the Swamp" />
+      <card id="2208" mastery_level="7" name="Shatterstone Anomaly" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6909</id>
+    <name>Portal</name>
+    <energy>18</energy>
+    <desc>You arrive near the entrance of the portal expecting to see a counter attack towards your army, but you realize that something is off. The Void giant seems to be recognizing Remi as another enemy.</desc>
+    <commander id="214" />
+    <deck>
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="2056" name="Drainor" />
+      <card id="2056" name="Drainor" />
+      <card id="2015" name="Pumpking" />
+      <card id="5019" name="Vivid Aurora" />
+      <card id="5234" name="Stratosnail" />
+      <card id="5059" mastery_level="2" name="Bemola" />
+      <card id="5249" mastery_level="3" name="Seraph of Singularities" />
+      <card id="7194" mastery_level="4" name="Coralscape Grappler" />
+      <card id="5136" mastery_level="5" name="Lapis" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4022" mastery_level="7" name="Bluefire, Void Incarnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6910</id>
+    <name>Away he goes</name>
+    <energy>18</energy>
+    <desc>Remi looks astonished and proceeds to vanish into thin air. Before you can even process what happened, you see a huge boulder flying towards you.</desc>
+    <commander id="228" />
+    <deck>
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="2056" name="Drainor" />
+      <card id="5136" name="Lapis" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="5019" name="Vivid Aurora" />
+      <card id="5234" name="Stratosnail" />
+      <card id="5059" mastery_level="2" name="Bemola" />
+      <card id="5249" mastery_level="3" name="Seraph of Singularities" />
+      <card id="7194" mastery_level="4" name="Coralscape Grappler" />
+      <card id="7044" mastery_level="5" name="River Elemental" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4022" mastery_level="7" name="Bluefire, Void Incarnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6911</id>
+    <name>Victory</name>
+    <energy>18</energy>
+    <desc>You manage to dodge the boulder and proceed to command your army to attack. Soldiers start swarming the portal's entrance up until the point where the Void creatures, including the giant, are forced back into the portal.</desc>
+    <commander id="220" />
+    <deck>
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="5234" name="Stratosnail" />
+      <card id="2056" name="Drainor" />
+      <card id="5136" name="Lapis" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="1343" name="Firehorn" />
+      <card id="5276" name="Snowback Coldossus" />
+      <card id="5059" mastery_level="2" name="Bemola" />
+      <card id="5249" mastery_level="3" name="Seraph of Singularities" />
+      <card id="7194" mastery_level="4" name="Coralscape Grappler" />
+      <card id="7044" mastery_level="5" name="River Elemental" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4022" mastery_level="7" name="Bluefire, Void Incarnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6912</id>
+    <name>Mecha Menace</name>
+    <energy>18</energy>
+    <desc>Once the creatures are back in the portal, you start to think of ways to shut it down. You realize that the portal is being channeled from a small mecha right behind it. Together with some soldiers, you smash it until it can no longer power the portal.</desc>
+    <commander id="215" />
+    <deck>
+      <card id="1326" name="Titan of Fire" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="5234" name="Stratosnail" />
+      <card id="5234" name="Stratosnail" />
+      <card id="5136" name="Lapis" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="5136" name="Lapis" />
+      <card id="5059" mastery_level="2" name="Bemola" />
+      <card id="5249" mastery_level="3" name="Seraph of Singularities" />
+      <card id="7194" mastery_level="4" name="Coralscape Grappler" />
+      <card id="7044" mastery_level="5" name="River Elemental" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4022" mastery_level="7" name="Bluefire, Void Incarnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6913</id>
+    <name>Void on the loose</name>
+    <energy>18</energy>
+    <desc>Even though you have managed to close the portal, you don't know how many Void creatures had already been set loose. You now also know that Remi is capable of creating portal opening machines.</desc>
+    <commander id="266" />
+    <deck>
+      <card id="1026" name="Glass Colossus" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="5234" name="Stratosnail" />
+      <card id="5048" name="Highborn Rose" />
+      <card id="5136" name="Lapis" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="5136" name="Lapis" />
+      <card id="5013" mastery_level="2" name="Radiance" />
+      <card id="5249" mastery_level="3" name="Seraph of Singularities" />
+      <card id="7194" mastery_level="4" name="Coralscape Grappler" />
+      <card id="7044" mastery_level="5" name="River Elemental" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4022" mastery_level="7" name="Bluefire, Void Incarnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6914</id>
+    <name>Remi or not here I come</name>
+    <energy>18</energy>
+    <desc>The next steps are obvious, you need to hunt Remi down and lock him up for good. As long as he is free, he can keep creating portals to the Void. He must be stopped before it is too late.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="1026" name="Glass Colossus" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2230" name="Vengeful Holyfire" />
+      <card id="5234" name="Stratosnail" />
+      <card id="7044" name="River Elemental" />
+      <card id="5136" name="Lapis" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="7019" name="Lady of the Swamp" />
+      <card id="5136" name="Lapis" />
+      <card id="5249" mastery_level="2" name="Seraph of Singularities" />
+      <card id="5249" mastery_level="3" name="Seraph of Singularities" />
+      <card id="7194" mastery_level="4" name="Coralscape Grappler" />
+      <card id="2208" mastery_level="5" name="Shatterstone Anomaly" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4022" mastery_level="7" name="Bluefire, Void Incarnate" />
+    </deck>
+  </mission>
+  <!-- Spellstone 7th Year Anniversary Missions -->
+  <mission>
+    <id>6915</id>
+    <name>Year 2016</name>
+    <energy>1</energy>
+    <desc>Spellstone's 7th Anniversary celebration has begun! Defeat this node's enemies and get amazing rewards!</desc>
+    <commander id="449" />
+    <deck>
+      <card id="2121" />
+      <card id="2121" />
+      <card id="2182" />
+      <card id="2188" />
+      <card id="2118" />
+      <card id="2149" />
+      <card id="2150" />
+      <card id="2098" />
+      <card id="2191" />
+      <card id="2051" mastery_level="2" />
+      <card id="2080" mastery_level="3" />
+      <card id="4021" mastery_level="4" />
+      <card id="4014" mastery_level="5" />
+      <card id="4025" mastery_level="6" />
+      <card id="2016" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Six Years? That seems so long ago I can't even remember what the game was like back then.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>I think I used to say something like...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>You gotta fight.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>For your right.</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>To parrrrrty!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6916</id>
+    <name>Year 2017</name>
+    <energy>1</energy>
+    <desc>Spellstone's 7th Anniversary celebration has begun! Defeat this node's party titans and get amazing rewards!</desc>
+    <commander id="450" />
+    <deck>
+      <card id="2173" />
+      <card id="2173" />
+      <card id="2168" />
+      <card id="2169" />
+      <card id="2119" />
+      <card id="2163" />
+      <card id="2179" />
+      <card id="2081" />
+      <card id="2124" />
+      <card id="2100" mastery_level="2" />
+      <card id="2113" mastery_level="3" />
+      <card id="4031" mastery_level="4" />
+      <card id="4020" mastery_level="5" />
+      <card id="4016" mastery_level="6" />
+      <card id="2017" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Hi! My name is Solaron.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>And I like to party!</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>No. You don't.</text>
+      </line>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>You definitely don't.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Wait, who invited the void into this anniversary?</text>
+      </line>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>Let's party!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6917</id>
+    <name>Year 2018</name>
+    <energy>1</energy>
+    <desc>Spellstone's 7th Anniversary celebration has begun! Defeat this node's party titans and uninvited guests and get amazing rewards!</desc>
+    <commander id="451" />
+    <deck>
+      <card id="2173" />
+      <card id="2173" />
+      <card id="2168" />
+      <card id="2169" />
+      <card id="2119" />
+      <card id="2163" />
+      <card id="2179" />
+      <card id="2081" />
+      <card id="2124" />
+      <card id="2100" mastery_level="2" />
+      <card id="2113" mastery_level="3" />
+      <card id="4031" mastery_level="4" />
+      <card id="4020" mastery_level="5" />
+      <card id="4016" mastery_level="6" />
+      <card id="2017" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>C'mon! A little party never hurt anyone!</text>
+      </line>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>But then again... those parties didn't invite the void!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Indeed.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Oh come on, seriously?! Who told Bluefire about this? you know how he gets after a drink or two.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6918</id>
+    <name>Year 2019</name>
+    <energy>1</energy>
+    <desc>Spellstone's 7th Anniversary celebration has begun! Defeat this node's... (not very sober and voidish) entity of evil and get amazing rewards!</desc>
+    <commander id="452" />
+    <deck>
+      <card id="2194" />
+      <card id="2194" />
+      <card id="2188" />
+      <card id="2033" />
+      <card id="2179" />
+      <card id="2111" />
+      <card id="2098" />
+      <card id="2024" />
+      <card id="2167" />
+      <card id="8077" mastery_level="2" />
+      <card id="8078" mastery_level="3" />
+      <card id="8074" mastery_level="4" />
+      <card id="8079" mastery_level="5" />
+      <card id="8088" mastery_level="6" />
+      <card id="4022" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>I'm blue da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Such a catchy song! Do you know I'm also kinda blue...ish?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>I think Bluefire here is drunk...</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>We should do something before he starts spitting frozen alcoholic fire.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Solaron, that's no actually possible.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>I'm the master of order, you're not telling me what's possible and what's not.</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>Watch out, here it comes!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6919</id>
+    <name>Year 2020</name>
+    <energy>1</energy>
+    <desc>Spellstone's 7th Anniversary celebration manages to continue despite the booze-drinking void! Defeat this node's party titan and get amazing rewards!</desc>
+    <commander id="453" />
+    <deck>
+      <card id="2125" />
+      <card id="2125" />
+      <card id="2011" />
+      <card id="2121" />
+      <card id="2110" />
+      <card id="2118" />
+      <card id="2012" />
+      <card id="2060" />
+      <card id="2172" />
+      <card id="2116" mastery_level="2" />
+      <card id="2112" mastery_level="3" />
+      <card id="4020" mastery_level="4" />
+      <card id="4027" mastery_level="5" />
+      <card id="4014" mastery_level="6" />
+      <card id="2158" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Hi! Are you having a good time aroud this year? 2022 already? now time flies...</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>Come on, Fire, let's go do some drunken sparring outside!</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Just try not to destroy the entire lawn!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>... Don't mind them.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I just wanted to say something before this party gets wilder...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>Yeah! WYLDER!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>I mean, chaotic</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>Yeah! CHAOTIC!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Ahem!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Happy 6th Anniversary, Spellstone!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Now... Let's get this party start...continued! I mean there's one more round to go, ahem...these lazy devs.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6920</id>
+    <name>Year 2021</name>
+    <energy>1</energy>
+    <desc>Spellstone's 7th Anniversary celebration continues with some minor landscape damage! Defeat this node's party titan and get amazing rewards!</desc>
+    <commander id="453" />
+    <deck>
+      <card id="2125" />
+      <card id="2125" />
+      <card id="2011" />
+      <card id="2121" />
+      <card id="2110" />
+      <card id="2118" />
+      <card id="2012" />
+      <card id="2060" />
+      <card id="2172" />
+      <card id="2116" mastery_level="2" />
+      <card id="2112" mastery_level="3" />
+      <card id="4020" mastery_level="4" />
+      <card id="4027" mastery_level="5" />
+      <card id="4014" mastery_level="6" />
+      <card id="2158" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Another year, another go. Am I getting old for this, Vulcky?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>What's a year, anyway?</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>Da ba dee da ba daa!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>yeah well, that's going to continue for a while. My insurance primes are definitely going up this time.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Ahem...everyone! Time for the toast.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>What should we drink to?</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>More Bluefire Stones!</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>1</enemy>
+        <text>More runes!</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>1</enemy>
+        <text>I say to health runes buff, for increased vigor and wildness!</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>1</enemy>
+        <text>Just nerf Nuvis Already!</text>
+      </line>
+      <line>
+        <commander>obyto14</commander>
+        <enemy>1</enemy>
+        <text>No, not the nerf!</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Who said that?</text>
+      </line>
+      <line>
+        <commander>obyto14</commander>
+        <enemy>1</enemy>
+        <text>No one. I'm the voice of Spellstone.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Well I'm not so sure about that, but we can always discuss it in the forums my mate. Let's get this party started!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6921</id>
+    <name>Year 2022</name>
+    <energy>1</energy>
+    <desc>Spellstone's 7th Anniversary celebration is ending, this whole event seems like one huge deja vu for some reason.</desc>
+    <commander id="453" />
+    <deck>
+      <card id="2125" />
+      <card id="2125" />
+      <card id="2011" />
+      <card id="2121" />
+      <card id="2110" />
+      <card id="2118" />
+      <card id="2012" />
+      <card id="2060" />
+      <card id="2172" />
+      <card id="2116" mastery_level="2" />
+      <card id="2112" mastery_level="3" />
+      <card id="4020" mastery_level="4" />
+      <card id="4027" mastery_level="5" />
+      <card id="4014" mastery_level="6" />
+      <card id="2158" mastery_level="7" />
+    </deck>
+  </mission>
+  <!-- Spellstone 7th Year Anniversary Missions END -->
 </root>
 

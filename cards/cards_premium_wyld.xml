@@ -2637,17 +2637,17 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>25</health>
+      <health>28</health>
       <skill id="evade" x="1" />
       <skill id="rally" y="5" x="7" />
       <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>8</attack>
-      <skill id="evade" x="2" />
+      <attack>9</attack>
+      <skill id="evade" x="3" />
       <skill id="rally" y="5" x="8" />
-      <skill id="leech" x="8" />
+      <skill id="leech" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -26836,18 +26836,18 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>41</health>
+      <health>42</health>
       <skill id="absorb" x="9" />
       <skill id="heal" x="4" all="1" />
       <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="absorb" x="9" />
+      <skill id="absorb" x="10" />
       <skill id="heal" x="5" all="1" />
       <skill id="enfeeble" x="5" all="1" />
     </upgrade>
@@ -32521,11 +32521,11 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <attack>9</attack>
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -32541,7 +32541,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="regenerate" x="8" />
+      <skill id="regenerate" x="9" />
       <skill id="nullify" x="4" />
       <skill id="berserk" x="6" />
     </upgrade>

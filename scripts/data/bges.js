@@ -1743,14 +1743,16 @@ var BATTLEGROUNDS = {
 		"name": "Reinforced Undead Vampirism"
 	},
 	"156": {
-		"desc": "Aether gains Vengeance 15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gains Regenerate %15. All % are based on base health.",
+		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gets 20% regeneration. All % are based on base health.",
 		"effect": [
 			{
 				"all": "1",
 				"base": "health",
-				"effect_type": "add_skill",
-				"id": "counter",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
 				"mult": 0.15,
+				"x": 4,
 				"y": "1,5"
 			},
 			{
@@ -1773,7 +1775,7 @@ var BATTLEGROUNDS = {
 				"base": "health",
 				"effect_type": "add_skill",
 				"id": "regenerate",
-				"mult": 0.15,
+				"mult": 0.2,
 				"y": "8,5"
 			}
 		],

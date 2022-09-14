@@ -1728,7 +1728,7 @@
     <sub_type>5</sub_type>
     <sub_type>7</sub_type>
     <attack>12</attack>
-    <health>51</health>
+    <health>52</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="stasis" x="4" />
@@ -1736,7 +1736,7 @@
     <skill id="jam" c="3" />
     <upgrade>
       <level>2</level>
-      <health>52</health>
+      <health>53</health>
       <skill id="stasis" x="5" />
       <skill id="strike" all="1" x="4" />
       <skill id="jam" c="3" />
@@ -1744,7 +1744,7 @@
     <upgrade>
       <level>3</level>
       <attack>13</attack>
-      <health>53</health>
+      <health>54</health>
       <skill id="stasis" x="5" />
       <skill id="strike" all="1" x="5" />
       <skill id="jam" c="3" />
@@ -1752,14 +1752,14 @@
     <upgrade>
       <level>4</level>
       <attack>14</attack>
-      <health>54</health>
+      <health>55</health>
       <skill id="stasis" x="6" />
       <skill id="strike" all="1" x="5" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>55</health>
+      <health>56</health>
       <skill id="stasis" x="6" />
       <skill id="strike" all="1" x="6" />
       <skill id="jam" c="3" />
@@ -1767,7 +1767,7 @@
     <upgrade>
       <level>6</level>
       <attack>15</attack>
-      <health>56</health>
+      <health>57</health>
       <skill id="stasis" x="7" />
       <skill id="strike" all="1" x="6" />
       <skill id="jam" c="3" />
@@ -1775,14 +1775,14 @@
     <upgrade>
       <level>7</level>
       <attack>16</attack>
-      <health>57</health>
+      <health>58</health>
       <skill id="stasis" x="7" />
       <skill id="strike" all="1" x="7" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>58</health>
+      <health>59</health>
       <skill id="stasis" x="7" />
       <skill id="strike" all="1" x="8" />
       <skill id="jam" c="3" />
@@ -1797,7 +1797,7 @@
     <upgrade>
       <level>10</level>
       <attack>18</attack>
-      <health>59</health>
+      <health>60</health>
       <skill id="stasis" x="8" />
       <skill id="strike" all="1" x="8" />
       <skill id="jam" c="2" />
@@ -5295,6 +5295,90 @@
       <skill id="berserk" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4063</id>
+    <card_type>2</card_type>
+    <name>Viir, the Subjugator</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Void_Elemental_Void_Colossal_A</picture>
+    <asset_bundle>256</asset_bundle>
+    <item_name>Viir Stone</item_name>
+    <item_desc>Collect Viir Stones to upgrade Viir, the Subjugator!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>8</type>
+    <sub_type>5</sub_type>
+    <attack>11</attack>
+    <health>42</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="strike" all="1" x="4" />
+    <skill id="confuse" c="4" />
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+      <skill id="stasis" x="5" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="confuse" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+      <skill id="stasis" x="5" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="confuse" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="stasis" x="5" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="confuse" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>14</attack>
+      <skill id="stasis" x="6" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="confuse" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>44</health>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="confuse" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>45</health>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="confuse" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>15</attack>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="confuse" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>47</health>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="confuse" c="2" />
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -5405,73 +5489,73 @@
     <health>26</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="3" />
-    <skill id="frost" x="2" />
+    <skill id="armored" x="4" />
+    <skill id="frost" x="3" />
     <skill id="berserk" x="4" />
     <upgrade>
       <level>2</level>
       <attack>10</attack>
       <health>27</health>
-      <skill id="armored" x="4" />
-      <skill id="frost" x="2" />
+      <skill id="armored" x="5" />
+      <skill id="frost" x="3" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>28</health>
-      <skill id="armored" x="4" />
-      <skill id="frost" x="2" />
+      <skill id="armored" x="5" />
+      <skill id="frost" x="3" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>11</attack>
       <health>29</health>
-      <skill id="armored" x="5" />
-      <skill id="frost" x="3" />
+      <skill id="armored" x="6" />
+      <skill id="frost" x="4" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>12</attack>
       <health>30</health>
-      <skill id="armored" x="5" />
-      <skill id="frost" x="3" />
+      <skill id="armored" x="6" />
+      <skill id="frost" x="4" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>31</health>
-      <skill id="armored" x="6" />
-      <skill id="frost" x="4" />
+      <skill id="armored" x="7" />
+      <skill id="frost" x="5" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <attack>13</attack>
-      <skill id="armored" x="6" />
-      <skill id="frost" x="4" />
+      <skill id="armored" x="7" />
+      <skill id="frost" x="5" />
       <skill id="berserk" x="7" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <health>32</health>
-      <skill id="armored" x="6" />
-      <skill id="frost" x="4" />
+      <skill id="armored" x="7" />
+      <skill id="frost" x="5" />
       <skill id="berserk" x="7" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <attack>14</attack>
-      <skill id="armored" x="6" />
-      <skill id="frost" x="5" />
+      <skill id="armored" x="7" />
+      <skill id="frost" x="6" />
       <skill id="berserk" x="7" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <health>34</health>
-      <skill id="armored" x="7" />
-      <skill id="frost" x="5" />
+      <skill id="armored" x="8" />
+      <skill id="frost" x="6" />
       <skill id="berserk" x="8" />
     </upgrade>
   </unit>
@@ -5757,27 +5841,27 @@
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="stasis" x="3" />
-    <skill id="backlash" x="4" />
+    <skill id="backlash" x="5" />
     <skill id="strike" all="1" x="4" />
     <upgrade>
       <level>2</level>
       <health>39</health>
       <skill id="stasis" x="4" />
-      <skill id="backlash" x="4" />
+      <skill id="backlash" x="5" />
       <skill id="strike" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>13</attack>
       <skill id="stasis" x="5" />
-      <skill id="backlash" x="4" />
+      <skill id="backlash" x="5" />
       <skill id="strike" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>40</health>
       <skill id="stasis" x="5" />
-      <skill id="backlash" x="4" />
+      <skill id="backlash" x="5" />
       <skill id="strike" all="1" x="5" />
     </upgrade>
     <upgrade>
@@ -5785,7 +5869,7 @@
       <attack>14</attack>
       <health>41</health>
       <skill id="stasis" x="6" />
-      <skill id="backlash" x="4" />
+      <skill id="backlash" x="5" />
       <skill id="strike" all="1" x="5" />
     </upgrade>
     <upgrade>
@@ -5796,7 +5880,7 @@
     <upgrade>
       <level>7</level>
       <skill id="stasis" x="7" />
-      <skill id="backlash" x="4" />
+      <skill id="backlash" x="5" />
       <skill id="strike" all="1" x="5" />
     </upgrade>
     <upgrade>
@@ -5807,14 +5891,14 @@
     <upgrade>
       <level>9</level>
       <skill id="stasis" x="7" />
-      <skill id="backlash" x="4" />
+      <skill id="backlash" x="5" />
       <skill id="strike" all="1" x="6" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <health>44</health>
       <skill id="stasis" x="7" />
-      <skill id="backlash" x="5" />
+      <skill id="backlash" x="6" />
       <skill id="strike" all="1" x="6" />
     </upgrade>
   </unit>
@@ -8250,6 +8334,88 @@
       <skill id="backlash" x="6" />
       <skill id="strike" all="1" x="5" />
       <skill id="frost" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5635</id>
+    <card_type>2</card_type>
+    <name>Remi, the Banished</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Elemental_Goblin_Remi_Bipolar_A</picture>
+    <asset_bundle>256</asset_bundle>
+    <item_name>Remi Stone</item_name>
+    <item_desc>Collect Remi Stones to upgrade the Legendary Remi, the Banished card!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <sub_type>5</sub_type>
+    <attack>10</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="3" all="1" />
+    <skill id="frost" x="3" />
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="frost" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="frost" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>35</health>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>36</health>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="frost" x="7" />
     </upgrade>
   </unit>
   <!-- === AETHER END === -->

@@ -11510,6 +11510,131 @@
     <ignore_energy_reduction_until>1665680400</ignore_energy_reduction_until>
     <!-- Thursday, October 13, 2022 at 17:00:00 	  -->
   </campaign>
+  <!-- Campaign Event 94 -  The Void Plane -->
+  <campaign>
+    <id>1326</id>
+    <name>Old Friend</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1663261200</locked_start_time>
+    <!-- Thursday, 15 September 2022 17:00:00	  -->
+    <location_id>9</location_id>
+    <x>300</x>
+    <y>395</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6903</mission_id>
+      <mission_id>6904</mission_id>
+      <mission_id>6905</mission_id>
+      <mission_id>6906</mission_id>
+      <mission_id>6907</mission_id>
+      <mission_id>6908</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2663" number="25" />
+      /&gt;
+      <!-- Void Plane Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2238" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2168" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2663" number="75" />
+      /&gt;
+      <!-- Void Plane Flask -->
+      <card level="7" id="2239" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3053" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1668099600</ignore_energy_reduction_until>
+    <!-- Thursday, November 10, 2022 at 17:00:00   -->
+  </campaign>
+  <campaign>
+    <id>1327</id>
+    <name>Battling the Void</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1324" level="1" />
+    <locked_start_time>1664470800</locked_start_time>
+    <!-- Thursday, 29 September 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>9</location_id>
+    <x>135</x>
+    <!-- left right -->
+    <y>560</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6909</mission_id>
+      <mission_id>6910</mission_id>
+      <mission_id>6911</mission_id>
+      <mission_id>6912</mission_id>
+      <mission_id>6913</mission_id>
+      <mission_id>6914</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2663" number="25" />
+      /&gt;
+      <!-- Void Plane Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2058" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2095" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2663" number="75" />
+      /&gt;
+      <!-- Void Plane Flask -->
+      <card level="7" id="2239" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3053" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1668099600</ignore_energy_reduction_until>
+    <!-- Thursday, November 10, 2022 at 17:00:00   -->
+  </campaign>
+  <!-- 7th Anniversary -->
+  <campaign>
+    <id>1328</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Spellstone's 7th Anniversary</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <battleground_id>547</battleground_id>
+    <location_id>34</location_id>
+    <x>300</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6915</mission_id>
+      <mission_id>6916</mission_id>
+      <mission_id>6917</mission_id>
+      <mission_id>6918</mission_id>
+      <mission_id>6919</mission_id>
+      <mission_id>6920</mission_id>
+      <mission_id>6921</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104024" number="50" />
+      <!-- Widow Stones -->
+      <item level="2" id="104048" number="50" />
+      <!-- Clockoo Stones -->
+      <item level="3" id="104047" number="50" />
+      <!-- Ark Stones -->
+      <item level="4" id="104046" number="75" />
+      <!-- Agatha Stones -->
+      <item level="5" id="104038" number="75" />
+      <!-- Kalyt Stones -->
+      <item level="6" id="104044" number="75" />
+      <!-- Viracocha Stones -->
+      <item level="7" id="104022" number="150" />
+      <!-- Bluefire Stones -->
+    </rewards>
+  </campaign>
+  <!-- END 7th Anniversary -->
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

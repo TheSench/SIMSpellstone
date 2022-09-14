@@ -22382,7 +22382,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>41</health>
+      <health>43</health>
       <skill id="counterburn" x="6" />
       <skill id="burn" x="6" />
       <skill id="berserk" x="6" />
