@@ -1782,6 +1782,74 @@ var BATTLEGROUNDS = {
 		"id": "156",
 		"name": "Elemental Disruption"
 	},
+	"157": {
+		"desc": "Mechas gain Ward equal to 15% of their base health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.15,
+				"y": "16"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 3,
+				"y": "16"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 4,
+				"y": "16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"x": 5,
+				"y": "16"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counterpoison",
+				"x": 7,
+				"y": "16"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counterpoison",
+				"x": 9,
+				"y": "16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "counterpoison",
+				"x": 7,
+				"y": "0,16"
+			}
+		],
+		"id": "157",
+		"name": "Radioactive Steel"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

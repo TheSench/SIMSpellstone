@@ -59735,33 +59735,6 @@
       <card id="4025" mastery_level="6" />
       <card id="2016" mastery_level="7" />
     </deck>
-    <speech>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>Six Years? That seems so long ago I can't even remember what the game was like back then.</text>
-      </line>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>I think I used to say something like...</text>
-      </line>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>You gotta fight.</text>
-      </line>
-      <line>
-        <commander>aetherguardian</commander>
-        <enemy>1</enemy>
-        <text>For your right.</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>To parrrrrty!</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>6916</id>
@@ -59786,38 +59759,6 @@
       <card id="4016" mastery_level="6" />
       <card id="2017" mastery_level="7" />
     </deck>
-    <speech>
-      <line>
-        <commander>aetherguardian</commander>
-        <enemy>1</enemy>
-        <text>Hi! My name is Solaron.</text>
-      </line>
-      <line>
-        <commander>aetherguardian</commander>
-        <enemy>1</enemy>
-        <text>And I like to party!</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>No. You don't.</text>
-      </line>
-      <line>
-        <commander>void</commander>
-        <enemy>1</enemy>
-        <text>You definitely don't.</text>
-      </line>
-      <line>
-        <commander>aetherguardian</commander>
-        <enemy>1</enemy>
-        <text>Wait, who invited the void into this anniversary?</text>
-      </line>
-      <line>
-        <commander>void</commander>
-        <enemy>1</enemy>
-        <text>Let's party!</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>6917</id>
@@ -59842,28 +59783,6 @@
       <card id="4016" mastery_level="6" />
       <card id="2017" mastery_level="7" />
     </deck>
-    <speech>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>C'mon! A little party never hurt anyone!</text>
-      </line>
-      <line>
-        <commander>void</commander>
-        <enemy>1</enemy>
-        <text>But then again... those parties didn't invite the void!</text>
-      </line>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>Indeed.</text>
-      </line>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>Oh come on, seriously?! Who told Bluefire about this? you know how he gets after a drink or two.</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>6918</id>
@@ -59888,53 +59807,6 @@
       <card id="8088" mastery_level="6" />
       <card id="4022" mastery_level="7" />
     </deck>
-    <speech>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>I'm blue da ba dee da ba daa!</text>
-      </line>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa!</text>
-      </line>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>Such a catchy song! Do you know I'm also kinda blue...ish?</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>I think Bluefire here is drunk...</text>
-      </line>
-      <line>
-        <commander>aetherguardian</commander>
-        <enemy>1</enemy>
-        <text>We should do something before he starts spitting frozen alcoholic fire.</text>
-      </line>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>Solaron, that's no actually possible.</text>
-      </line>
-      <line>
-        <commander>aetherguardian</commander>
-        <enemy>1</enemy>
-        <text>I'm the master of order, you're not telling me what's possible and what's not.</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>Watch out, here it comes!</text>
-      </line>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>Da ba dee da ba daa!</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>6919</id>
@@ -59959,68 +59831,6 @@
       <card id="4014" mastery_level="6" />
       <card id="2158" mastery_level="7" />
     </deck>
-    <speech>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Hi! Are you having a good time aroud this year? 2022 already? now time flies...</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>Come on, Fire, let's go do some drunken sparring outside!</text>
-      </line>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>Da ba dee da ba daa!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Just try not to destroy the entire lawn!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>... Don't mind them.</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>I just wanted to say something before this party gets wilder...</text>
-      </line>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>Yeah! WYLDER!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>I mean, chaotic</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>Yeah! CHAOTIC!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Ahem!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Happy 6th Anniversary, Spellstone!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Now... Let's get this party start...continued! I mean there's one more round to go, ahem...these lazy devs.</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>6920</id>
@@ -60045,78 +59855,6 @@
       <card id="4014" mastery_level="6" />
       <card id="2158" mastery_level="7" />
     </deck>
-    <speech>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Another year, another go. Am I getting old for this, Vulcky?</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>What's a year, anyway?</text>
-      </line>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>Da ba dee da ba daa!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>yeah well, that's going to continue for a while. My insurance primes are definitely going up this time.</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Ahem...everyone! Time for the toast.</text>
-      </line>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>What should we drink to?</text>
-      </line>
-      <line>
-        <commander>bluefireVoidDragon</commander>
-        <enemy>1</enemy>
-        <text>More Bluefire Stones!</text>
-      </line>
-      <line>
-        <commander>chaosguardian</commander>
-        <enemy>1</enemy>
-        <text>More runes!</text>
-      </line>
-      <line>
-        <commander>wyldguardian</commander>
-        <enemy>1</enemy>
-        <text>I say to health runes buff, for increased vigor and wildness!</text>
-      </line>
-      <line>
-        <commander>aetherguardian</commander>
-        <enemy>1</enemy>
-        <text>Just nerf Nuvis Already!</text>
-      </line>
-      <line>
-        <commander>obyto14</commander>
-        <enemy>1</enemy>
-        <text>No, not the nerf!</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Who said that?</text>
-      </line>
-      <line>
-        <commander>obyto14</commander>
-        <enemy>1</enemy>
-        <text>No one. I'm the voice of Spellstone.</text>
-      </line>
-      <line>
-        <commander>Portraits_Ancient_Titan_Mecha</commander>
-        <enemy>1</enemy>
-        <text>Well I'm not so sure about that, but we can always discuss it in the forums my mate. Let's get this party started!</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>6921</id>
@@ -60143,5 +59881,149 @@
     </deck>
   </mission>
   <!-- Spellstone 7th Year Anniversary Missions END -->
+  <mission>
+    <id>6922</id>
+    <name>The search</name>
+    <energy>18</energy>
+    <desc>You set out to track down Remi after he escaped. While navigating through the Void Plane, the Aether looking goblin shows up in front of you.</desc>
+    <commander id="475" />
+    <deck>
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6179" name="Sol Doumu" />
+      <card id="6179" name="Sol Doumu" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="5049" name="Joryl" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="5178" name="Skadi, Snow Princess" />
+      <card id="6055" mastery_level="2" name="Embered Demise" />
+      <card id="1343" mastery_level="3" name="Firehorn" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
+      <card id="5238" mastery_level="5" name="Frostfire Apprentice" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4001" mastery_level="7" name="Foxfire" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6923</id>
+    <name>Blink of an eye</name>
+    <energy>18</energy>
+    <desc>Knowing him too well, you prepare for an attack. Remi in the blink of an eye manages to vanish only to appear right behind you, but now completely red, covered in chaos. He strikes, but you manage to evade him.</desc>
+    <commander id="475" />
+    <deck>
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6179" name="Sol Doumu" />
+      <card id="6179" name="Sol Doumu" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6298" name="Leaden Lava" />
+      <card id="6298" name="Leaden Lava" />
+      <card id="2015" name="Pumpking" />
+      <card id="6055" mastery_level="2" name="Embered Demise" />
+      <card id="1343" mastery_level="3" name="Firehorn" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
+      <card id="5238" mastery_level="5" name="Frostfire Apprentice" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4001" mastery_level="7" name="Foxfire" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6924</id>
+    <name>The plot</name>
+    <energy>18</energy>
+    <desc>Remi vanishes once again. You can hear his mischievous laugh all around you. You realize that he is somehow connected with more than one faction. This is probably related to him plotting for the Void to come into this world again.</desc>
+    <commander id="475" />
+    <deck>
+      <card id="6200" name="Embered Demise" />
+      <card id="6200" name="Embered Demise" />
+      <card id="2015" name="Pumpking" />
+      <card id="6179" name="Sol Doumu" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6298" name="Leaden Lava" />
+      <card id="6298" name="Leaden Lava" />
+      <card id="2015" name="Pumpking" />
+      <card id="6055" mastery_level="2" name="Embered Demise" />
+      <card id="6200" mastery_level="3" name="Embered Demise" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
+      <card id="5238" mastery_level="5" name="Frostfire Apprentice" />
+      <card id="2225" mastery_level="6" name="Trinomaly" />
+      <card id="4060" mastery_level="7" name="Yaritza" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6925</id>
+    <name>Absence of them all</name>
+    <energy>18</energy>
+    <desc>You try to make Remi come to his senses, you mention that the Void isn't the combination of all factions, but instead the absence of them. This seems to anger Remi, since you can no longer hear him laughing.</desc>
+    <commander id="475" />
+    <deck>
+      <card id="5178" name="Skadi, Snow Princess" />
+      <card id="5178" name="Skadi, Snow Princess" />
+      <card id="5059" name="Bemola" />
+      <card id="5059" name="Bemola" />
+      <card id="5049" name="Joryl" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="5136" name="Lapis" />
+      <card id="5230" name="Gustblood Djinn" />
+      <card id="1642" mastery_level="2" name="Icestone Beast" />
+      <card id="5137" mastery_level="3" name="Forgesoul Construct" />
+      <card id="5137" mastery_level="4" name="Forgesoul Construct" />
+      <card id="5059" mastery_level="5" name="Bemola" />
+      <card id="5136" mastery_level="6" name="Lapis" />
+      <card id="5628" mastery_level="7" name="Gorgon, The Imprisoned" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6926</id>
+    <name>Voices</name>
+    <energy>18</energy>
+    <desc>You start to hear different voices, as if Remi was arguing with himself. All of a sudden, you can't hear him anymore.</desc>
+    <commander id="475" />
+    <deck>
+      <card id="5178" name="Skadi, Snow Princess" />
+      <card id="5178" name="Skadi, Snow Princess" />
+      <card id="5059" name="Bemola" />
+      <card id="5059" name="Bemola" />
+      <card id="5249" name="Seraph of Singularities" />
+      <card id="5137" name="Forgesoul Construct" />
+      <card id="5136" name="Lapis" />
+      <card id="5230" name="Gustblood Djinn" />
+      <card id="5230" name="Gustblood Djinn" />
+      <card id="5230" mastery_level="2" name="Gustblood Djinn" />
+      <card id="5137" mastery_level="3" name="Forgesoul Construct" />
+      <card id="5137" mastery_level="4" name="Forgesoul Construct" />
+      <card id="5059" mastery_level="5" name="Bemola" />
+      <card id="5136" mastery_level="6" name="Lapis" />
+      <card id="5628" mastery_level="7" name="Gorgon, The Imprisoned" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6927</id>
+    <name>This is not over</name>
+    <energy>18</energy>
+    <desc>Remi comes out of nowhere and strikes you once again, you barely manage to block him in time. He proceeds to vanish, but as soon as he leaves you can hear him whisper that this is not over.</desc>
+    <commander id="475" />
+    <deck>
+      <card id="5178" name="Skadi, Snow Princess" />
+      <card id="5137" name="Forgesoul Construct" />
+      <card id="5059" name="Bemola" />
+      <card id="5059" name="Bemola" />
+      <card id="5249" name="Seraph of Singularities" />
+      <card id="5137" name="Forgesoul Construct" />
+      <card id="5136" name="Lapis" />
+      <card id="5230" name="Gustblood Djinn" />
+      <card id="5230" name="Gustblood Djinn" />
+      <card id="5082" mastery_level="2" name="Memory" />
+      <card id="5059" mastery_level="3" name="Bemola" />
+      <card id="5137" mastery_level="4" name="Forgesoul Construct" />
+      <card id="5136" mastery_level="5" name="Lapis" />
+      <card id="2239" mastery_level="6" name="Throne" />
+      <card id="5634" mastery_level="7" name="Eira, the Electrokinetic" />
+    </deck>
+  </mission>
 </root>
 

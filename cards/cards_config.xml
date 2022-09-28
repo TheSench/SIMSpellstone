@@ -463,7 +463,6 @@
     <status_flag>confuse_countdown</status_flag>
     <attributes x="0" y="0" all="1" c="1" s="0" />
     <balance_points>10</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <!-- Mythic -->
   <skillType>
