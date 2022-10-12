@@ -60025,5 +60025,293 @@
       <card id="5634" mastery_level="7" name="Eira, the Electrokinetic" />
     </deck>
   </mission>
+  <mission>
+    <id>6928</id>
+    <name>Welcome back</name>
+    <energy>18</energy>
+    <desc>After Remi escapes you manage to track him down to his last known location, the Salt Wastes.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="7251" mastery_level="4" name="Manic Dummy" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6929</id>
+    <name>The search</name>
+    <energy>18</energy>
+    <desc>You begin your search on these hostile lands. Even if you can't find him, you must destroy his technology to stop the Void from coming back.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="7251" mastery_level="4" name="Manic Dummy" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6930</id>
+    <name>The hideout</name>
+    <energy>18</energy>
+    <desc>Hidden behind a pile of rocks and dust you manage to spot what seems like an entrance. You can tell that somebody has been here recently and decide to head in.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6931</id>
+    <name>Void artifacts</name>
+    <energy>18</energy>
+    <desc>You enter the hideout only to see tons of scrap lying around and dozens of makeshift robots. This has to be a mecha workshop. That wouldn't be much of a problem if not for the fact that you can tell Remi is using Void artifacts to enhance his creations.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="6295" name="Creeperbots" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6932</id>
+    <name>There you are</name>
+    <energy>18</energy>
+    <desc>After taking a look around you continue to explore the workshop only to catch Remi red-handed. He seems to be doing some small adjustments on a menacing looking robot that is forged out of some purple looking metal.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2143" name="Lightning Stomper" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1348" name="Flailpod" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6933</id>
+    <name>Power on</name>
+    <energy>18</energy>
+    <desc>Before you can even take a step into Remi’s direction, you realize he just powered on the robot. The mecha starts channeling a void energy and is aiming your way. Remi has discovered how to use Void artifacts as weapons.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5248" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6934</id>
+    <name>Channeled into destruction</name>
+    <energy>18</energy>
+    <desc>The channeler starts heading your way, you try to strike it from afar but nothing seems to damage it. The mecha starts destroying everything in its path with its powerful weapons system.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1033" name="Valiant Charger" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6935</id>
+    <name>Powered by the Void</name>
+    <energy>18</energy>
+    <desc>You realize that the only reason for its immense power has to be a Void artifact located somewhere behind its armor.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="5248" name="Noble Ophanim" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6936</id>
+    <name>Chink in the armor</name>
+    <energy>18</energy>
+    <desc>You circle around the Mecha and manage to find a weak spot in its back. This is probably what Remi was trying to fix moments before you arrived. Before it can turn around, you manage to pierce through its weak spot, causing the mecha collapse.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6937</id>
+    <name>Left empty handed</name>
+    <energy>18</energy>
+    <desc>Even though Remi has managed to escape, he was in such a hurry that he could not take any of his equipment with him. He has left empty handed and has nowhere to go.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6938</id>
+    <name>Nothing but ashes</name>
+    <energy>18</energy>
+    <desc>To avoid having the equipment stolen you destroy all of Remis Void technology except for one thing. You keep one of Remi’s portal opening Mechas, so that next time you encounter a Void creature you can send it back to where it belongs.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2112" mastery_level="4" name="Warrior Karna" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6939</id>
+    <name>Duskwillow it is</name>
+    <energy>18</energy>
+    <desc>When destroying Remi’s equipment you find some suspicious documents. You realize that Remi was smuggling Void technology through a pirate organization. You now know where you are heading next.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="7251" mastery_level="2" name="Manic Dummy" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2112" mastery_level="4" name="Warrior Karna" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
 </root>
 

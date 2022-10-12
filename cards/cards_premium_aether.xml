@@ -19437,11 +19437,11 @@
     <picture>Armored_Lightning_Kraken_Seafolk_B</picture>
     <asset_bundle>104</asset_bundle>
     <hidden_until_time>1503939600</hidden_until_time>
-    <attack>11</attack>
-    <health>50</health>
+    <attack>12</attack>
+    <health>54</health>
     <cost>4</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="6" />
+    <skill id="armored" x="8" />
     <skill id="strike" x="7" all="1" />
     <skill id="nullify" x="7" />
     <type>1</type>
@@ -19450,27 +19450,27 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>51</health>
+      <health>55</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>52</health>
-      <attack>12</attack>
+      <health>56</health>
+      <attack>14</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>53</health>
+      <health>57</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>54</health>
-      <skill id="armored" x="7" />
+      <health>58</health>
+      <skill id="armored" x="9" />
       <skill id="strike" x="7" all="1" />
       <skill id="nullify" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="8" />
+      <skill id="armored" x="10" />
       <skill id="strike" x="8" all="1" />
       <skill id="nullify" x="8" />
     </upgrade>
@@ -20882,7 +20882,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>7</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -20890,9 +20890,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>19</health>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="7" y="16" />
+      <health>22</health>
+      <skill id="armored" x="6" />
+      <skill id="rally" x="8" y="16" />
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
@@ -24838,8 +24838,8 @@
     <picture>MechaMillipede_B</picture>
     <asset_bundle>132</asset_bundle>
     <hidden_until_time>1531414800</hidden_until_time>
-    <attack>9</attack>
-    <health>25</health>
+    <attack>10</attack>
+    <health>30</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="7" />
@@ -24857,12 +24857,12 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>26</health>
-      <attack>10</attack>
+      <health>31</health>
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>27</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -24872,9 +24872,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="absorb" x="8" />
+      <skill id="absorb" x="9" />
       <skill id="counter" x="9" />
-      <skill id="frost" x="4" />
+      <skill id="frost" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -31539,7 +31539,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>40</health>
+      <health>42</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -31555,9 +31555,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="absorb" x="6" />
-      <skill id="armored" x="6" />
-      <skill id="backlash" x="4" />
+      <skill id="absorb" x="10" />
+      <skill id="armored" x="8" />
+      <skill id="backlash" x="5" />
     </upgrade>
   </unit>
   <unit>

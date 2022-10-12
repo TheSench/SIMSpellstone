@@ -18202,6 +18202,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 95 - Mecha - Node 1 -->
+  <achievement>
+    <id>3823</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking a Trickster</name>
+    <desc>Complete the 'Tracking a Trickster' campaign on Mastery Level 1.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1665680400</locked_start_time>
+    <!-- Thursday, 13 October 2022 17:00:00	  -->
+    <req>
+      <campaign>1329</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3095" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7091" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3824</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking a Trickster</name>
+    <desc>Complete the 'Tracking a Trickster' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1665680400</locked_start_time>
+    <!-- Thursday, 13 October 2022 17:00:00	  -->
+    <achievement_req>3823</achievement_req>
+    <req>
+      <campaign>1329</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3825</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking a Trickster</name>
+    <desc>Complete the 'Tracking a Trickster' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1665680400</locked_start_time>
+    <!-- Thursday, 13 October 2022 17:00:00	  -->
+    <achievement_req>3824</achievement_req>
+    <req>
+      <campaign>1329</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3826</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking a Trickster</name>
+    <desc>Complete the 'Tracking a Trickster' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1665680400</locked_start_time>
+    <!-- Thursday, 13 October 2022 17:00:00	  -->
+    <achievement_req>3825</achievement_req>
+    <req>
+      <campaign>1329</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 95 - Mecha - Node 2 -->
+  <achievement>
+    <id>3827</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Channeler</name>
+    <desc>Complete the 'The Void Channeler' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1666890000</locked_start_time>
+    <!-- Thursday, 27 October 2022 17:00:00  -->
+    <req>
+      <campaign>1330</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3828</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Channeler</name>
+    <desc>Complete the 'The Void Channeler' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1666890000</locked_start_time>
+    <!-- Thursday, 27 October 2022 17:00:00  -->
+    <achievement_req>3827</achievement_req>
+    <req>
+      <campaign>1330</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3829</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Channeler</name>
+    <desc>Complete the 'The Void Channeler' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1666890000</locked_start_time>
+    <!-- Thursday, 27 October 2022 17:00:00  -->
+    <achievement_req>3828</achievement_req>
+    <req>
+      <campaign>1330</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -19348,6 +19481,31 @@
       <campaign>1326</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1327</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Salt Wastes -->
+    <id>4049</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of The Salt Wastes</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Salt Wastes.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6258</mission_req>
+    <req>
+      <campaign>1212</campaign>
+      <campaign>1213</campaign>
+      <campaign>1214</campaign>
+      <campaign>1215</campaign>
+      <campaign>1216</campaign>
+      <campaign>1329</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1330</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>

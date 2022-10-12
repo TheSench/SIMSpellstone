@@ -11923,11 +11923,11 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>40</health>
+      <health>42</health>
       <attack>13</attack>
       <skill id="counter" x="9" />
       <skill id="corrosive" x="8" />
-      <skill id="strike" x="4" all="1" />
+      <skill id="strike" x="5" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -20276,24 +20276,24 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>27</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>28</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="corrosive" x="7" />
-      <skill id="berserk" x="3" />
+      <skill id="berserk" x="4" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -24789,11 +24789,11 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>6</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>20</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -24803,9 +24803,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="burn" x="5" />
+      <skill id="burn" x="6" />
       <skill id="nullify" x="4" />
-      <skill id="poison" x="7" />
+      <skill id="poison" x="8" />
     </upgrade>
   </unit>
   <unit>
