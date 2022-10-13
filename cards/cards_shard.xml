@@ -10728,7 +10728,7 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>8</type>
     <sub_type>16</sub_type>
-    <attack>9</attack>
+    <attack>8</attack>
     <health>21</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -10743,7 +10743,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>10</attack>
+      <attack>9</attack>
       <health>22</health>
     </upgrade>
     <upgrade>
@@ -10762,7 +10762,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>11</attack>
+      <attack>10</attack>
       <skill id="armored" x="10" />
       <skill id="rally" x="9" y="8" />
       <skill id="confuse" c="4" />
@@ -10775,7 +10775,7 @@
     </upgrade>
     <upgrade>
       <level>8</level>
-      <attack>12</attack>
+      <attack>11</attack>
       <skill id="armored" x="11" />
       <skill id="rally" x="10" y="8" />
       <skill id="confuse" c="3" />
@@ -10789,8 +10789,8 @@
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>13</attack>
-      <skill id="armored" x="12" />
+      <attack>12</attack>
+      <skill id="armored" x="11" />
       <skill id="rally" x="12" y="8" />
       <skill id="confuse" c="3" />
     </upgrade>
