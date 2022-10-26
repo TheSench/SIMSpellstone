@@ -60313,5 +60313,273 @@
       <card id="6210" mastery_level="7" name="Burning Blade" />
     </deck>
   </mission>
+  <mission>
+    <id>6940</id>
+    <name>The Creeper</name>
+    <energy>18</energy>
+    <desc>A beast has emerged in Arcantica and its roaming the Salt Wastes to feast on unsuspecting victims until it is satisfied.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="1345" name="Owltron" />
+      <card id="1345" name="Owltron" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="7221" name="Icejaw Turtle" />
+      <card id="7221" name="Icejaw Turtle" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="1348" mastery_level="3" name="Flailpod" />
+      <card id="1348" mastery_level="4" name="Flailpod" />
+      <card id="6288" mastery_level="5" name="Ashen Cavalier" />
+      <card id="6288" mastery_level="6" name="Ashen Cavalier" />
+      <card id="5625" mastery_level="7" name="Aeronwen, the Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6941</id>
+    <name>Trick or Treat</name>
+    <energy>18</energy>
+    <desc>The creature seems to have been inhabiting these lands for hundreds of years and it is out for a treat once again.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="1345" name="Owltron" />
+      <card id="1345" name="Owltron" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6288" name="Ashen Cavalier" />
+      <card id="7221" name="Icejaw Turtle" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="1348" mastery_level="3" name="Flailpod" />
+      <card id="6295" mastery_level="4" name="Creeperbots" />
+      <card id="6288" mastery_level="5" name="Ashen Cavalier" />
+      <card id="6178" mastery_level="6" name="Bitumen Elemental" />
+      <card id="4036" mastery_level="7" name="Leroux, the Macabre" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6942</id>
+    <name>The Hunt</name>
+    <energy>18</energy>
+    <desc>You set out to hunt the beast and bring peace once again to these lands, but everywhere you look you can only see fire.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="1345" name="Owltron" />
+      <card id="1345" name="Owltron" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6288" name="Ashen Cavalier" />
+      <card id="6288" name="Ashen Cavalier" />
+      <card id="7304" name="Pumpkin Prototype" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="7304" mastery_level="3" name="Pumpkin Prototype" />
+      <card id="6295" mastery_level="4" name="Creeperbots" />
+      <card id="6288" mastery_level="5" name="Ashen Cavalier" />
+      <card id="6178" mastery_level="6" name="Bitumen Elemental" />
+      <card id="4052" mastery_level="7" name="Shadomeka" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6943</id>
+    <name>Blazing Blades</name>
+    <energy>18</energy>
+    <desc>From the flames, the flying beast emerges and heads straight towards you with its razor-sharp claws. You manage to dodge its strikes, but you can not see where it went.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="5142" name="Buzzblade" />
+      <card id="5142" name="Buzzblade" />
+      <card id="6161" name="Torero" />
+      <card id="6161" name="Torero" />
+      <card id="5196" name="Deca-mecha" />
+      <card id="5196" name="Deca-mecha" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" name="Vali, the Thunderer" />
+      <card id="2122" mastery_level="2" name="Warrior Karna" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="6198" mastery_level="4" name="Rattleclank Courtesan" />
+      <card id="6295" mastery_level="5" name="Creeperbots" />
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <card id="5636" mastery_level="7" name="Almet, the Ferromancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6944</id>
+    <name>Burn</name>
+    <energy>18</energy>
+    <desc>You start heading out of the fire, the heat given off by the combustion in your surroundings is causing you to feel light headed. Just when you get out of danger, the beast emerges again shooting fire out of its hands.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="5142" name="Buzzblade" />
+      <card id="5142" name="Buzzblade" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="5196" name="Deca-mecha" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" name="Vali, the Thunderer" />
+      <card id="2122" mastery_level="2" name="Warrior Karna" />
+      <card id="5137" mastery_level="3" name="Forgesoul Construct" />
+      <card id="6198" mastery_level="4" name="Rattleclank Courtesan" />
+      <card id="6295" mastery_level="5" name="Creeperbots" />
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <card id="4024" mastery_level="7" name="The Coalheart Widow" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6945</id>
+    <name>Back to sleep</name>
+    <energy>18</energy>
+    <desc>You see the beast approaching and just when it is about to scorch you down, you manage to strike it, damaging one of its wings. The beast has no choice but to retreat back to its lair and end its threat on Arcantica sooner than what it intended.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="5142" name="Buzzblade" />
+      <card id="5142" name="Buzzblade" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="5137" name="Forgesoul Construct" />
+      <card id="7304" name="Pumpkin Prototype" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="6295" name="Creeperbots" />
+      <card id="2122" mastery_level="2" name="Warrior Karna" />
+      <card id="5137" mastery_level="3" name="Forgesoul Construct" />
+      <card id="6198" mastery_level="4" name="Rattleclank Courtesan" />
+      <card id="6295" mastery_level="5" name="Creeperbots" />
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <card id="4052" mastery_level="7" name="Shadomeka" />
+    </deck>
+  </mission>
+  <!-- Halloween Event 2022 -->
+  <mission>
+    <id>6946</id>
+    <name>The Tale of Pumpking</name>
+    <energy>1</energy>
+    <desc>The goblins from Goblin Rise Stronghold retell to Daknak the tragic tale of Pumpking, a king who only wanted to spread goodwill by giving children candy. However, he met a tragic end when his rivals played an unfair trick upon him, cheating him of his rewards.</desc>
+    <commander id="240" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1319" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1330" />
+      <card id="11331" name="Haunted Soldiers" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2024" mastery_level="3" name="Dusk Noble" />
+      <card id="1626" mastery_level="4" name="Tusker" />
+      <card id="1632" mastery_level="5" name="Shadow Rider" />
+      <card id="5082" mastery_level="6" name="Memory" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Bahaha! Daknak laugh at silly Pumpking story! Might be fooled the first time they promised me rewards, but not this one!</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>Ooh, Boss! Be careful how many times you say that name; something bad happens if you say it three times!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6947</id>
+    <name>Pumpking's Appearance?</name>
+    <energy>1</energy>
+    <desc>Although the goblins warned Daknak about the power of Pumpking's name, Daknak tests his luck. He departs from the other goblins, laughing at their ghost story.</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="6017" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1628" name="Garganotos" />
+      <card id="2015" mastery_level="2" name="Pumpking" />
+      <card id="2015" mastery_level="3" name="Pumpking" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
+      <card id="2015" mastery_level="5" name="Pumpking" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Daknak say Pumpking, Pumpking, Pumpking!</text>
+      </line>
+      <line>
+        <commander>pumpkingPortrait</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>D-Daknak sorry! Please give me candy and the rewards of the node this time!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6948</id>
+    <name>More Trick Than Treat</name>
+    <energy>1</energy>
+    <desc>The strange apparition lays something by Daknak's feet, before turning and fading into the night. The goblins return in time to see Daknak holding the item.</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2032" name="Brimstone" />
+      <card id="2032" />
+      <card id="1628" name="Garganotos" />
+      <card id="1326" mastery_level="2" name="Titan of Fire" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
+      <card id="5021" mastery_level="4" name="Tower Spirit" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Ghost left... a pumpkin full of candy?</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>Thanks for getting us some sweet candy, Boss! Is this time for real or the devs messed it up again?</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Hey, no take! That's Daknak's candy!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
 

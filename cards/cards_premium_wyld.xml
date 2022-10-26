@@ -39424,5 +39424,147 @@
       <skill id="strike" x="6" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7305</id>
+    <card_type>2</card_type>
+    <name>Assistance Droid</name>
+    <picture>Mecha_Candybot_A</picture>
+    <asset_bundle>258</asset_bundle>
+    <hidden_until_time>1667840400</hidden_until_time>
+    <attack>8</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="3" />
+    <skill id="rally" x="3" all="1" y="16" />
+    <skill id="heal" x="4" all="1" y="16" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="stasis" x="4" />
+      <skill id="rally" x="4" all="1" y="16" />
+      <skill id="heal" x="4" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>39</health>
+      <skill id="stasis" x="4" />
+      <skill id="rally" x="4" all="1" y="16" />
+      <skill id="heal" x="5" all="1" y="16" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17305</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Medic Droid</name>
+    <picture>Mecha_Candybot_A</picture>
+    <asset_bundle>258</asset_bundle>
+    <hidden_until_time>1667840400</hidden_until_time>
+    <attack>11</attack>
+    <health>40</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="4" />
+    <skill id="rally" x="4" all="1" y="16" />
+    <skill id="heal" x="5" all="1" y="16" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="4" all="1" y="16" />
+      <skill id="heal" x="5" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="5" all="1" y="16" />
+      <skill id="heal" x="6" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>43</health>
+      <skill id="stasis" x="6" />
+      <skill id="rally" x="5" all="1" y="16" />
+      <skill id="heal" x="6" all="1" y="16" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27305</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Doctor Droid</name>
+    <picture>Mecha_Candybot_B</picture>
+    <asset_bundle>258</asset_bundle>
+    <hidden_until_time>1667840400</hidden_until_time>
+    <attack>13</attack>
+    <health>44</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="6" />
+    <skill id="rally" x="6" all="1" y="16" />
+    <skill id="heal" x="6" all="1" y="16" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="stasis" x="6" />
+      <skill id="rally" x="6" all="1" y="16" />
+      <skill id="heal" x="7" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>14</attack>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <attack>15</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="stasis" x="7" />
+      <skill id="rally" x="6" all="1" y="16" />
+      <skill id="heal" x="7" all="1" y="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="stasis" x="7" />
+      <skill id="rally" x="7" all="1" y="16" />
+      <skill id="heal" x="8" all="1" y="16" />
+    </upgrade>
+  </unit>
 </root>
 

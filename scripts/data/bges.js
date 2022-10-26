@@ -1850,6 +1850,43 @@ var BATTLEGROUNDS = {
 		"id": "157",
 		"name": "Radioactive Steel"
 	},
+	"158": {
+		"desc": "Seafolk gain base Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base health! Regenerate and Armor 10%, while Frostbreath is 15%.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.1,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.15,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "12"
+			}
+		],
+		"id": "158",
+		"name": "Revitalizing Waves"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

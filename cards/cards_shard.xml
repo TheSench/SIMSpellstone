@@ -8587,6 +8587,92 @@
       <skill id="corrosive" x="10" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5637</id>
+    <card_type>2</card_type>
+    <name>Moby, the Righteous</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Seafolk_Living_Ship_A</picture>
+    <asset_bundle>258</asset_bundle>
+    <item_name>Moby Stone</item_name>
+    <item_desc>Collect Moby Stones to upgrade the Legendary Moby, the Righteous!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <attack>12</attack>
+    <health>46</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="stasis" x="6" />
+    <skill id="strike" all="1" x="4" />
+    <skill id="frost" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+      <skill id="stasis" x="6" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <health>50</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+      <skill id="stasis" x="7" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>15</attack>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>51</health>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>16</attack>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="frost" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>52</health>
+      <skill id="stasis" x="8" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="frost" x="8" />
+    </upgrade>
+  </unit>
   <!-- === AETHER END === -->
   <!-- =============================== -->
   <!-- === CHAOS PREMIUM CHAMPIONS === -->

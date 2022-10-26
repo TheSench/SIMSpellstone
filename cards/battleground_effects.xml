@@ -1295,6 +1295,17 @@
       <!-- for Viracocha -->
     </effect>
   </battleground>
+  <battleground>
+    <id>158</id>
+    <name>Revitalizing Waves</name>
+    <desc>Seafolk gain base Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base health! Regenerate and Armor 10%, while Frostbreath is 15%.</desc>
+    <icon>filter_seafolk_64</icon>
+    <effect>
+      <add_skill id="regenerate" mult="0.10" base="health" y="12" />
+      <add_skill id="frost" mult="0.15" base="health" y="12" delay="0,1,2" />
+      <add_skill id="armored" mult="0.10" base="health" y="12" delay="3,4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
