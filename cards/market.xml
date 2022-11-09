@@ -9131,5 +9131,85 @@
       <card min_level="1" max_level="1" unit_id="6198" display_card_id="6198" />
     </cards>
   </store_item>
+  <store_item>
+    <id>5304</id>
+    <name>Ika-Roa Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFIka-Roa^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7150" display_card_id="7150" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5305</id>
+    <name>Shaman Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFShaman^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7235" display_card_id="7235" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5306</id>
+    <name>Twainblood Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFTwainblood^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5252" display_card_id="5252" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5307</id>
+    <name>Spearhunter Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFFrostclaw Spearhunter^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5228" display_card_id="5228" />
+    </cards>
+  </store_item>
 </root>
 

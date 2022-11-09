@@ -1851,7 +1851,7 @@ var BATTLEGROUNDS = {
 		"name": "Radioactive Steel"
 	},
 	"158": {
-		"desc": "Seafolk gain base Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base health! Regenerate and Armor 10%, while Frostbreath is 15%.",
+		"desc": "Seafolk gain Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armor. Values gained on each skill are equal to 10% of base health!",
 		"effect": [
 			{
 				"base": "health",
@@ -1869,7 +1869,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "frost",
-				"mult": 0.15,
+				"mult": 0.1,
 				"y": "12"
 			},
 			{

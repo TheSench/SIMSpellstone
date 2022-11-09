@@ -60581,5 +60581,293 @@
       </line>
     </speech>
   </mission>
+  <mission>
+    <id>6949</id>
+    <name>Help from a local</name>
+    <energy>18</energy>
+    <desc>You arrive at Duskwillow with your only objective being to find the pirate organization and retrieve any Void artifacts they might have. You spot a tavern and decide to head in and ask the locals about the pirates.</desc>
+    <commander id="235" />
+    <deck>
+      <card id="1635" name="Mergoat" />
+      <card id="1635" name="Mergoat" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="5294" name="Kani Defender" />
+      <card id="5294" name="Kani Defender" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="6185" mastery_level="2" name="Heilong" />
+      <card id="6185" mastery_level="3" name="Heilong" />
+      <card id="6293" mastery_level="4" name="Emberay" />
+      <card id="6293" mastery_level="5" name="Emberay" />
+      <card id="6296" mastery_level="6" name="Pepe" />
+      <card id="1644" mastery_level="7" name="Blackfin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6950</id>
+    <name>The Armada</name>
+    <energy>18</energy>
+    <desc>One of the locals tells you that the organization you are looking for is known as "The Armada". They also tell you that if you want more information on them, your best bet is to speak with their ancient rivals, the Dragon Family.</desc>
+    <commander id="246" />
+    <deck>
+      <card id="1635" name="Mergoat" />
+      <card id="1635" name="Mergoat" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="7151" name="Sawtooth" />
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6235" name="Mawcroak" />
+      <card id="5294" name="Kani Defender" />
+      <card id="6296" name="Pepe" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="2103" mastery_level="2" name="Siren" />
+      <card id="6185" mastery_level="3" name="Heilong" />
+      <card id="6293" mastery_level="4" name="Emberay" />
+      <card id="6293" mastery_level="5" name="Emberay" />
+      <card id="6296" mastery_level="6" name="Pepe" />
+      <card id="1644" mastery_level="7" name="Blackfin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6951</id>
+    <name>The Dragon Family</name>
+    <energy>18</energy>
+    <desc>You head towards the cliff where the local said the Dragons would be and there they are, a clan formed by dozens of dragons as far as you can tell. A peaceful yet fearsome looking Dragon approaches.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="1635" name="Mergoat" />
+      <card id="1635" name="Mergoat" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="7151" name="Sawtooth" />
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6235" name="Mawcroak" />
+      <card id="5294" name="Kani Defender" />
+      <card id="6296" name="Pepe" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="2103" mastery_level="2" name="Siren" />
+      <card id="6185" mastery_level="3" name="Heilong" />
+      <card id="6293" mastery_level="4" name="Emberay" />
+      <card id="6293" mastery_level="5" name="Emberay" />
+      <card id="6296" mastery_level="6" name="Pepe" />
+      <card id="1644" mastery_level="7" name="Blackfin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6952</id>
+    <name>Lost at sea</name>
+    <energy>18</energy>
+    <desc>After explaining your situation to the dragon, it explains to you that the pirates have recently crossed through the border between The Armada and their territory, breaking an ancient truce and forcing them to sink one of their ships.</desc>
+    <commander id="309" />
+    <deck>
+      <card id="1635" name="Mergoat" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="7151" name="Sawtooth" />
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6235" name="Mawcroak" />
+      <card id="1644" name="Blackfin" />
+      <card id="6296" name="Pepe" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="6185" mastery_level="3" name="Heilong" />
+      <card id="6293" mastery_level="4" name="Emberay" />
+      <card id="6293" mastery_level="5" name="Emberay" />
+      <card id="6296" mastery_level="6" name="Pepe" />
+      <card id="1644" mastery_level="7" name="Blackfin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6953</id>
+    <name>The Artifact</name>
+    <energy>18</energy>
+    <desc>You explain to them that it is likely that they are in possession of a Void artifact which can be used to craft weapons of immense power that nobody should ever wield. The Dragon looks concerned about this information.</desc>
+    <commander id="235" />
+    <deck>
+      <card id="1635" name="Mergoat" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="7151" name="Sawtooth" />
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6235" name="Mawcroak" />
+      <card id="1644" name="Blackfin" />
+      <card id="6296" name="Pepe" />
+      <card id="6293" name="Emberay" />
+      <card id="6293" mastery_level="2" name="Emberay" />
+      <card id="7235" mastery_level="3" name="Shell Shaman" />
+      <card id="6293" mastery_level="4" name="Emberay" />
+      <card id="6293" mastery_level="5" name="Emberay" />
+      <card id="6296" mastery_level="6" name="Pepe" />
+      <card id="1644" mastery_level="7" name="Blackfin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6954</id>
+    <name>Dragon Army</name>
+    <energy>18</energy>
+    <desc>The Dragon suggests that you join forces to cross the no man's land and recuperate the artifact before it is too late. You agree and head out to sea on ship, together with an army of Dragons swimming by your side.</desc>
+    <commander id="246" />
+    <deck>
+      <card id="1635" name="Mergoat" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="7151" name="Sawtooth" />
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6235" name="Mawcroak" />
+      <card id="1644" name="Blackfin" />
+      <card id="6296" name="Pepe" />
+      <card id="6293" name="Emberay" />
+      <card id="5294" mastery_level="2" name="Kani Defender" />
+      <card id="7235" mastery_level="3" name="Shell Shaman" />
+      <card id="1644" mastery_level="4" name="Blackfin" />
+      <card id="6296" mastery_level="5" name="Pepe" />
+      <card id="5153" mastery_level="6" name="Octopulse" />
+      <card id="5153" mastery_level="7" name="Octopulse" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6955</id>
+    <name>Barrage</name>
+    <energy>18</energy>
+    <desc>Once you cross the border into the no man's land you can easily spot the Armada of ships. Their black sails can be spotted as far as the eye can see. The pirates waste little time before they start firing your way.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="6110" name="Sea Mantis" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7151" name="Sawtooth" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6185" name="Heilong" />
+      <card id="7104" name="Croaker of the Deep" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="7194" mastery_level="2" name="Coralscape Grappler" />
+      <card id="7194" mastery_level="3" name="Coralscape Grappler" />
+      <card id="6293" mastery_level="4" name="Emberay" />
+      <card id="5153" mastery_level="5" name="Octopulse" />
+      <card id="2103" mastery_level="6" name="Siren" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6956</id>
+    <name>Awakening of the Hydra</name>
+    <energy>18</energy>
+    <desc>A fight breaks loose, the dragons start ramming the ships and the pirates start blasting their cannons towards them. In the midst of the fight you can start feeling how something is emerging from the depths of the ocean.</desc>
+    <commander id="309" />
+    <deck>
+      <card id="6110" name="Sea Mantis" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7151" name="Sawtooth" />
+      <card id="2103" name="Siren" />
+      <card id="6185" name="Heilong" />
+      <card id="2103" name="Siren" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="7194" mastery_level="2" name="Coralscape Grappler" />
+      <card id="7194" mastery_level="3" name="Coralscape Grappler" />
+      <card id="6296" mastery_level="4" name="Pepe" />
+      <card id="5153" mastery_level="5" name="Octopulse" />
+      <card id="2103" mastery_level="6" name="Siren" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6957</id>
+    <name>The Void Rises</name>
+    <energy>18</energy>
+    <desc>A Void looking Hydra emerges in the middle of the battle and starts attacking both sides indiscriminately. The Hydra proves to be stronger than both the Dragons and the Armadas ships.</desc>
+    <commander id="235" />
+    <deck>
+      <card id="1635" name="Mergoat" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7151" name="Sawtooth" />
+      <card id="2103" name="Siren" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="2103" name="Siren" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="7195" mastery_level="2" name="Undine Sprite" />
+      <card id="7194" mastery_level="3" name="Coralscape Grappler" />
+      <card id="6296" mastery_level="4" name="Pepe" />
+      <card id="5153" mastery_level="5" name="Octopulse" />
+      <card id="2103" mastery_level="6" name="Siren" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6958</id>
+    <name>A common enemy</name>
+    <energy>18</energy>
+    <desc>Both sides temporarily join forces and start attacking the Hydra. The cannon fire from above and the dragon's attacks from below prove to be too much for the Hydra, forcing it back into the depths of the ocean.</desc>
+    <commander id="246" />
+    <deck>
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7151" name="Sawtooth" />
+      <card id="2103" name="Siren" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="7195" mastery_level="2" name="Undine Sprite" />
+      <card id="7194" mastery_level="3" name="Coralscape Grappler" />
+      <card id="2103" mastery_level="4" name="Siren" />
+      <card id="5153" mastery_level="5" name="Octopulse" />
+      <card id="2103" mastery_level="6" name="Siren" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6959</id>
+    <name>Void Mutations</name>
+    <energy>18</energy>
+    <desc>After the Hydra is defeated, you come to the conclusion that the ship that was sunk before you arrived was probably carrying the Void artifact. A sea creature must have consumed it, making it mutate into what it has now become.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7151" name="Sawtooth" />
+      <card id="6185" name="Heilong" />
+      <card id="7104" name="Croaker of the Deep" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="7195" mastery_level="2" name="Undine Sprite" />
+      <card id="7194" mastery_level="3" name="Coralscape Grappler" />
+      <card id="2103" mastery_level="4" name="Siren" />
+      <card id="6185" mastery_level="5" name="Heilong" />
+      <card id="2103" mastery_level="6" name="Siren" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6960</id>
+    <name>Truce</name>
+    <energy>18</energy>
+    <desc>Both sides no longer have a reason to fight each other and without a handshake required, the truce is formed once again.</desc>
+    <commander id="309" />
+    <deck>
+      <card id="1637" name="Icy Lake Monster" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="2130" name="Sea's Saw" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="6185" name="Heilong" />
+      <card id="7104" name="Croaker of the Deep" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="7195" mastery_level="2" name="Undine Sprite" />
+      <card id="7194" mastery_level="3" name="Coralscape Grappler" />
+      <card id="7195" mastery_level="4" name="Undine Sprite" />
+      <card id="6185" mastery_level="5" name="Heilong" />
+      <card id="2103" mastery_level="6" name="Siren" />
+      <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
+    </deck>
+  </mission>
 </root>
 

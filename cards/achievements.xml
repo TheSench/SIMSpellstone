@@ -18335,6 +18335,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 96 - Seafolk - Node 1 -->
+  <achievement>
+    <id>3830</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Pirate Hunting</name>
+    <desc>Complete the 'Pirate Hunting' campaign on Mastery Level 1.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1668099600</locked_start_time>
+    <!-- Thursday, November 10, 2022 17:00:00	  -->
+    <req>
+      <campaign>1332</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3048" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7092" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3831</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Pirate Hunting</name>
+    <desc>Complete the 'Pirate Hunting' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1668099600</locked_start_time>
+    <!-- Thursday, November 10, 2022 17:00:00	  -->
+    <achievement_req>3830</achievement_req>
+    <req>
+      <campaign>1332</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3832</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Pirate Hunting</name>
+    <desc>Complete the 'Pirate Hunting' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1668099600</locked_start_time>
+    <!-- Thursday, November 10, 2022 17:00:00	  -->
+    <achievement_req>3831</achievement_req>
+    <req>
+      <campaign>1332</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3833</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Pirate Hunting</name>
+    <desc>Complete the 'Pirate Hunting' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1668099600</locked_start_time>
+    <!-- Thursday, November 10, 2022 17:00:00	  -->
+    <achievement_req>3832</achievement_req>
+    <req>
+      <campaign>1332</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 96 - Seafolk - Node 2 -->
+  <achievement>
+    <id>3834</id>
+    <type>2</type>
+    <order>101</order>
+    <name>No mans land</name>
+    <desc>Complete the 'No mans land' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1669309200</locked_start_time>
+    <!-- Thursday, 24 November 2022 17:00:00  -->
+    <req>
+      <campaign>1333</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3835</id>
+    <type>2</type>
+    <order>101</order>
+    <name>No mans land</name>
+    <desc>Complete the 'No mans land' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1669309200</locked_start_time>
+    <!-- Thursday, 24 November 2022 17:00:00  -->
+    <achievement_req>3834</achievement_req>
+    <req>
+      <campaign>1333</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3836</id>
+    <type>2</type>
+    <order>101</order>
+    <name>No mans land</name>
+    <desc>Complete the 'No mans land' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1669309200</locked_start_time>
+    <!-- Thursday, 24 November 2022 17:00:00  -->
+    <achievement_req>3835</achievement_req>
+    <req>
+      <campaign>1333</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -19506,6 +19639,32 @@
       <campaign>1329</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1330</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Duskwillow -->
+    <id>4050</id>
+    <type>2</type>
+    <order>631</order>
+    <name>Champion of Duskwillow</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Duskwillow.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>5469</mission_req>
+    <req>
+      <campaign>1108</campaign>
+      <campaign>1109</campaign>
+      <campaign>1110</campaign>
+      <campaign>1111</campaign>
+      <campaign>1112</campaign>
+      <campaign>1113</campaign>
+      <campaign>1332</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1333</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>
