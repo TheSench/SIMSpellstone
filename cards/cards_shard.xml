@@ -10987,65 +10987,65 @@
     <rarity>4</rarity>
     <skill id="absorb" x="7" />
     <skill id="strike" all="1" x="3" />
-    <skill id="barrage" x="6" />
+    <skill id="barrage" x="5" />
     <upgrade>
       <level>2</level>
       <attack>13</attack>
       <skill id="absorb" x="8" />
       <skill id="strike" all="1" x="3" />
-      <skill id="barrage" x="6" />
+      <skill id="barrage" x="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="absorb" x="9" />
       <skill id="strike" all="1" x="3" />
-      <skill id="barrage" x="7" />
+      <skill id="barrage" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>14</attack>
       <skill id="absorb" x="9" />
       <skill id="strike" all="1" x="4" />
-      <skill id="barrage" x="7" />
+      <skill id="barrage" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>33</health>
       <skill id="absorb" x="10" />
       <skill id="strike" all="1" x="4" />
-      <skill id="barrage" x="7" />
+      <skill id="barrage" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>34</health>
       <skill id="absorb" x="10" />
       <skill id="strike" all="1" x="4" />
-      <skill id="barrage" x="8" />
+      <skill id="barrage" x="7" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <attack>15</attack>
       <skill id="absorb" x="10" />
-      <skill id="strike" all="1" x="5" />
+      <skill id="strike" all="1" x="4" />
       <skill id="barrage" x="8" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <skill id="absorb" x="11" />
       <skill id="strike" all="1" x="5" />
-      <skill id="barrage" x="9" />
+      <skill id="barrage" x="8" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <health>35</health>
       <skill id="absorb" x="11" />
       <skill id="strike" all="1" x="5" />
-      <skill id="barrage" x="10" />
+      <skill id="barrage" x="9" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <skill id="absorb" x="12" />
-      <skill id="strike" all="1" x="6" />
+      <skill id="strike" all="1" x="5" />
       <skill id="barrage" x="10" />
     </upgrade>
   </unit>
