@@ -1965,7 +1965,7 @@
     <asset_bundle>36</asset_bundle>
     <cannot_salvage>1</cannot_salvage>
     <attack>11</attack>
-    <health>38</health>
+    <health>41</health>
     <cost>3</cost>
     <rarity>5</rarity>
     <skill id="evade" x="2" />
@@ -1976,7 +1976,7 @@
     <upgrade>
       <level>2</level>
       <attack>12</attack>
-      <health>43</health>
+      <health>46</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -1987,11 +1987,11 @@
     <upgrade>
       <level>4</level>
       <attack>13</attack>
-      <health>45</health>
+      <health>48</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>47</health>
+      <health>51</health>
       <skill id="evade" x="3" />
       <skill id="rally" x="4" all="1" />
       <skill id="invigorate" x="5" all="1" />
@@ -1999,7 +1999,7 @@
     <upgrade>
       <level>6</level>
       <attack>14</attack>
-      <health>49</health>
+      <health>53</health>
       <skill id="evade" x="4" />
       <skill id="rally" x="5" all="1" />
       <skill id="invigorate" x="6" all="1" />
@@ -2007,7 +2007,7 @@
     <upgrade>
       <level>7</level>
       <attack>15</attack>
-      <health>51</health>
+      <health>54</health>
       <skill id="evade" x="4" />
       <skill id="rally" x="6" all="1" />
       <skill id="invigorate" x="7" all="1" />
@@ -2024,14 +2024,14 @@
     <health>44</health>
     <cost>3</cost>
     <rarity>5</rarity>
-    <skill id="armored" x="4" />
+    <skill id="armored" x="6" />
     <skill id="protect" all="1" x="4" />
     <skill id="radiance" x="6" />
     <type>1</type>
     <set>2100</set>
     <upgrade>
       <level>2</level>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="7" />
       <skill id="protect" all="1" x="4" />
       <skill id="radiance" x="7" />
     </upgrade>
@@ -2043,15 +2043,15 @@
     <upgrade>
       <level>4</level>
       <health>48</health>
-      <skill id="armored" x="6" />
+      <skill id="armored" x="8" />
       <skill id="protect" all="1" x="4" />
       <skill id="radiance" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>13</attack>
-      <health>50</health>
-      <skill id="armored" x="7" />
+      <health>51</health>
+      <skill id="armored" x="9" />
       <skill id="protect" all="1" x="5" />
       <skill id="radiance" x="7" />
     </upgrade>
@@ -2059,7 +2059,7 @@
       <level>6</level>
       <attack>14</attack>
       <health>52</health>
-      <skill id="armored" x="8" />
+      <skill id="armored" x="10" />
       <skill id="protect" all="1" x="6" />
       <skill id="radiance" x="8" />
     </upgrade>
@@ -2067,7 +2067,7 @@
       <level>7</level>
       <attack>15</attack>
       <health>55</health>
-      <skill id="armored" x="10" />
+      <skill id="armored" x="12" />
       <skill id="protect" all="1" x="8" />
       <skill id="radiance" x="9" />
     </upgrade>
@@ -2080,7 +2080,7 @@
     <asset_bundle>36</asset_bundle>
     <cannot_salvage>1</cannot_salvage>
     <attack>12</attack>
-    <health>39</health>
+    <health>42</health>
     <cost>3</cost>
     <rarity>5</rarity>
     <skill id="counter" x="6" />
@@ -2090,7 +2090,7 @@
     <set>2100</set>
     <upgrade>
       <level>2</level>
-      <health>42</health>
+      <health>45</health>
       <skill id="counter" x="9" />
       <skill id="strike" all="1" x="5" />
       <skill id="scorchbreath" x="4" />
@@ -2105,12 +2105,12 @@
     <upgrade>
       <level>4</level>
       <attack>14</attack>
-      <health>44</health>
+      <health>47</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>15</attack>
-      <health>46</health>
+      <health>49</health>
       <skill id="counter" x="10" />
       <skill id="strike" all="1" x="5" />
       <skill id="scorchbreath" x="6" />
@@ -2118,7 +2118,7 @@
     <upgrade>
       <level>6</level>
       <attack>16</attack>
-      <health>48</health>
+      <health>52</health>
       <skill id="counter" x="11" />
       <skill id="strike" all="1" x="6" />
       <skill id="scorchbreath" x="6" />
@@ -2126,7 +2126,7 @@
     <upgrade>
       <level>7</level>
       <attack>17</attack>
-      <health>50</health>
+      <health>53</health>
       <skill id="counter" x="13" />
       <skill id="strike" all="1" x="7" />
       <skill id="scorchbreath" x="8" />
@@ -8275,7 +8275,7 @@
     <set>2100</set>
     <upgrade>
       <level>2</level>
-      <health>42</health>
+      <health>45</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -8286,11 +8286,11 @@
     <upgrade>
       <level>4</level>
       <attack>10</attack>
-      <health>44</health>
+      <health>47</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>46</health>
+      <health>49</health>
       <skill id="fury" x="7" />
       <skill id="enfeeble" all="1" x="5" />
       <skill id="jam" c="3" />
@@ -8298,12 +8298,12 @@
     <upgrade>
       <level>6</level>
       <attack>11</attack>
-      <health>48</health>
+      <health>51</health>
     </upgrade>
     <upgrade>
       <level>7</level>
       <attack>12</attack>
-      <health>50</health>
+      <health>53</health>
       <skill id="fury" x="8" />
       <skill id="enfeeble" all="1" x="6" />
       <skill id="jam" c="2" />

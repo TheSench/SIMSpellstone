@@ -1887,6 +1887,43 @@ var BATTLEGROUNDS = {
 		"id": "158",
 		"name": "Revitalizing Waves"
 	},
+	"159": {
+		"desc": "All goblins gain barrage equal to their base attack, 0-2 Delay goblins gain 15% siphon and 3-4 delay goblins gain 15% ward. Values gained on each skill are based on base health.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.15,
+				"y": "11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.15,
+				"y": "11"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 1,
+				"y": "11"
+			}
+		],
+		"id": "159",
+		"name": "Enhanced Battle Kit"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

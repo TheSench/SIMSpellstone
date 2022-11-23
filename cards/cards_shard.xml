@@ -5476,7 +5476,7 @@
     <picture>Void_Seafolk_Void_Hydra_A</picture>
     <asset_bundle>260</asset_bundle>
     <item_name>Lerna Stone</item_name>
-    <item_desc>Collect Lerna Stones to upgrade Lerna, the Deep Sea Horror!</item_desc>
+    <item_desc>Collect Lerna Stones to upgrade Lerna, the Mutated!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8754,6 +8754,89 @@
       <skill id="frost" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5638</id>
+    <card_type>2</card_type>
+    <name>The Dragon Family</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seafolk_Dragon_Dragon_Family_A</picture>
+    <asset_bundle>260</asset_bundle>
+    <item_name>Family Stone</item_name>
+    <item_desc>Collect Family Stones to upgrade the Legendary The Dragon Family!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <sub_type>12</sub_type>
+    <attack>12</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="vampirism" x="4" />
+    <skill id="evade" x="1" />
+    <skill id="frost" x="3" />
+    <upgrade>
+      <level>2</level>
+      <attack>13</attack>
+      <skill id="vampirism" x="4" />
+      <skill id="evade" x="2" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="vampirism" x="4" />
+      <skill id="evade" x="2" />
+      <skill id="frost" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="vampirism" x="5" />
+      <skill id="evade" x="3" />
+      <skill id="frost" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+      <skill id="vampirism" x="5" />
+      <skill id="evade" x="3" />
+      <skill id="frost" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="vampirism" x="6" />
+      <skill id="evade" x="3" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>15</attack>
+      <skill id="vampirism" x="7" />
+      <skill id="evade" x="3" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>35</health>
+      <skill id="vampirism" x="7" />
+      <skill id="evade" x="4" />
+      <skill id="frost" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="vampirism" x="8" />
+      <skill id="evade" x="4" />
+      <skill id="frost" x="7" />
+    </upgrade>
+  </unit>
   <!-- === AETHER END === -->
   <!-- =============================== -->
   <!-- === CHAOS PREMIUM CHAMPIONS === -->
@@ -10987,65 +11070,65 @@
     <rarity>4</rarity>
     <skill id="absorb" x="7" />
     <skill id="strike" all="1" x="3" />
-    <skill id="barrage" x="5" />
+    <skill id="barrage" x="6" />
     <upgrade>
       <level>2</level>
       <attack>13</attack>
       <skill id="absorb" x="8" />
       <skill id="strike" all="1" x="3" />
-      <skill id="barrage" x="5" />
+      <skill id="barrage" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="absorb" x="9" />
       <skill id="strike" all="1" x="3" />
-      <skill id="barrage" x="6" />
+      <skill id="barrage" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>14</attack>
       <skill id="absorb" x="9" />
       <skill id="strike" all="1" x="4" />
-      <skill id="barrage" x="6" />
+      <skill id="barrage" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>33</health>
       <skill id="absorb" x="10" />
       <skill id="strike" all="1" x="4" />
-      <skill id="barrage" x="6" />
+      <skill id="barrage" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>34</health>
       <skill id="absorb" x="10" />
       <skill id="strike" all="1" x="4" />
-      <skill id="barrage" x="7" />
+      <skill id="barrage" x="8" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <attack>15</attack>
       <skill id="absorb" x="10" />
-      <skill id="strike" all="1" x="4" />
+      <skill id="strike" all="1" x="5" />
       <skill id="barrage" x="8" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <skill id="absorb" x="11" />
       <skill id="strike" all="1" x="5" />
-      <skill id="barrage" x="8" />
+      <skill id="barrage" x="9" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <health>35</health>
       <skill id="absorb" x="11" />
       <skill id="strike" all="1" x="5" />
-      <skill id="barrage" x="9" />
+      <skill id="barrage" x="10" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <skill id="absorb" x="12" />
-      <skill id="strike" all="1" x="5" />
+      <skill id="strike" all="1" x="6" />
       <skill id="barrage" x="10" />
     </upgrade>
   </unit>

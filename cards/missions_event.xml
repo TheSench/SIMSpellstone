@@ -60869,5 +60869,150 @@
       <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
     </deck>
   </mission>
+  <!-- LBN 96 Lerna -->
+  <mission>
+    <id>6961</id>
+    <name>The alliance</name>
+    <energy>18</energy>
+    <desc>You manage to contact and hire The Armada's fleet to banish the Void Hydra together by using Remi's Machine to channel a portal.</desc>
+    <commander id="477" />
+    <deck>
+      <card id="2103" name="Siren" />
+      <card id="2103" name="Siren" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="7285" name="Noxious Jellyhead" />
+      <card id="7285" name="Noxious Jellyhead" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7194" name="Coralscape Grappler" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="7108" mastery_level="2" name="Quetee" />
+      <card id="1045" mastery_level="3" name="Cloudwhale Rider" />
+      <card id="2103" mastery_level="4" name="Siren" />
+      <card id="1045" mastery_level="5" name="Cloudwhale Rider" />
+      <card id="7306" mastery_level="6" name="Morkan" />
+      <card id="4050" mastery_level="7" name="Illu, Mirage of the Sea" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6962</id>
+    <name>Tracing a plan</name>
+    <energy>18</energy>
+    <desc>Together with their captain, you start to trace a complex and convoluted plan. Meanwhile, The Armada's sailors are changing their cannons for bigger ones, even using some of their goods as shields for the hull of their ships.</desc>
+    <commander id="477" />
+    <deck>
+      <card id="2528" name="Frostclaw Spearhunter" />
+      <card id="2528" name="Frostclaw Spearhunter" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="7108" name="Quetee" />
+      <card id="7108" name="Quetee" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="7083" mastery_level="2" name="Sludge Spine" />
+      <card id="2103" mastery_level="3" name="Siren" />
+      <card id="6296" mastery_level="4" name="Pepe" />
+      <card id="7194" mastery_level="5" name="Coralscape Grappler" />
+      <card id="7306" mastery_level="6" name="Morkan" />
+      <card id="4007" mastery_level="7" name="Typhoeus, Storm Father" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6963</id>
+    <name>The Raid</name>
+    <energy>18</energy>
+    <desc>Your feet tremble at the sight of the entire fleet and the sound of the battle cry made by each of the sailors. With the biggest ships in front, like an indestructible wall, you start facing the imponent Hydra.</desc>
+    <commander id="477" />
+    <deck>
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="7306" name="Morkan" />
+      <card id="7306" name="Morkan" />
+      <card id="5197" name="Deepcharge Caller" />
+      <card id="5197" name="Deepcharge Caller" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="7154" name="Mollusk Snarecaster" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="7194" mastery_level="2" name="Coralscape Grappler" />
+      <card id="2528" mastery_level="3" name="Frostclaw Spearhunter" />
+      <card id="7154" mastery_level="4" name="Mollusk Snarecaster" />
+      <card id="6198" mastery_level="5" name="Rattleclank Courtesan" />
+      <card id="7306" mastery_level="6" name="Morkan" />
+      <card id="5629" mastery_level="7" name="Kandrula, the Sly" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6964</id>
+    <name>Distraction</name>
+    <energy>18</energy>
+    <desc>With the fleet at the position, the War Galleons started the whirl formation around the Monster, with their sailors waiting to start shooting those horrible heads!</desc>
+    <commander id="477" />
+    <deck>
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="5294" name="Kani Defender" />
+      <card id="5294" name="Kani Defender" />
+      <card id="5150" name="Deepspear Warfarer" />
+      <card id="5150" name="Deepspear Warfarer" />
+      <card id="5198" name="Sea's Sky Forces" />
+      <card id="5198" name="Sea's Sky Forces" />
+      <card id="5197" name="Deepcharge Caller" />
+      <card id="5197" mastery_level="2" name="Deepcharge Caller" />
+      <card id="5153" mastery_level="3" name="Octopulse" />
+      <card id="5153" mastery_level="4" name="Octopulse" />
+      <card id="7235" mastery_level="5" name="Shell Shaman" />
+      <card id="7235" mastery_level="6" name="Shell Shaman" />
+      <card id="4039" mastery_level="7" name="Royal Fighter Lairel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6965</id>
+    <name>Infiltration</name>
+    <energy>18</energy>
+    <desc>Taking your boat and three of the best captain's men to give you a hand, you take the void machine and use the cannon shots to camouflage yourself and go unnoticed by those monstrous heads!</desc>
+    <commander id="477" />
+    <deck>
+      <card id="6296" name="Pepe" />
+      <card id="6296" name="Pepe" />
+      <card id="6293" name="Emberay" />
+      <card id="6293" name="Emberay" />
+      <card id="6106" name="Bailong" />
+      <card id="6106" name="Bailong" />
+      <card id="6235" name="Mawcroak" />
+      <card id="6235" name="Mawcroak" />
+      <card id="5294" name="Kani Defender" />
+      <card id="5294" mastery_level="2" name="Kani Defender" />
+      <card id="5153" mastery_level="3" name="Octopulse" />
+      <card id="5198" mastery_level="4" name="Sea's Sky Forces" />
+      <card id="7154" mastery_level="5" name="Mollusk Snarecaster" />
+      <card id="6198" mastery_level="6" name="Rattleclank Courtesan" />
+      <card id="5637" mastery_level="7" name="Moby, the Righteous" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6966</id>
+    <name>Pirates aren't so bad after all</name>
+    <energy>18</energy>
+    <desc>An enormous vortex starts to grow in the Hydra's body and swallows it, the monster screams and roars while trying to escape, but it's too late. Your plan was a tremendous success! The Void Hydra is now banished from our realm.</desc>
+    <commander id="477" />
+    <deck>
+      <card id="7235" name="Shell Shaman" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="5294" name="Kani Defender" />
+      <card id="5294" name="Kani Defender" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="5153" name="Octopulse" />
+      <card id="2103" mastery_level="2" name="Venomtouch Siren" />
+      <card id="5197" mastery_level="3" name="Deepcharge Herald" />
+      <card id="7235" mastery_level="4" name="Shell Shaman" />
+      <card id="7235" mastery_level="5" name="Shell Shaman" />
+      <card id="6235" mastery_level="6" name="Mawcroak" />
+      <card id="4056" mastery_level="7" name="Moklam, the Sea Colossus" />
+    </deck>
+  </mission>
 </root>
 

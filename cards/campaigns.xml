@@ -12613,5 +12613,38 @@
     <find_item id="3095" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Darkassan Mecha event 95 END -->
+  <!-- LBN Lerna Seafolk event 96  -->
+  <campaign>
+    <id>4009</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Lerna</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>7</location_id>
+    <x>125</x>
+    <y>405</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6961</mission_id>
+      <mission_id>6962</mission_id>
+      <mission_id>6963</mission_id>
+      <mission_id>6964</mission_id>
+      <mission_id>6965</mission_id>
+      <mission_id>6966</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2108" />
+      <card level="5" id="2108" />
+      <item level="6" id="104065" number="25" />
+      <item level="7" id="104065" number="75" />
+    </rewards>
+    <find_item id="3048" drop_per_energy=".6" />
+    <find_item id="2522" drop_per_energy="0.04" />
+  </campaign>
+  <!-- LBN Lerna Seafolk event 96 END -->
 </root>
 
