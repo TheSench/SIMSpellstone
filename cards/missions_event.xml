@@ -61014,5 +61014,293 @@
       <card id="4056" mastery_level="7" name="Moklam, the Sea Colossus" />
     </deck>
   </mission>
+  <mission>
+    <id>6967</id>
+    <name>Angel Reports</name>
+    <energy>18</energy>
+    <desc>Angel spies have spotted Void activity at Golden Crown Village. You decided to head there immediately with hopes of banishing another creature with the Void Channeler.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2134" mastery_level="2" name="Golden Rise Adventurers" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="6111" mastery_level="5" name="Aspects of the Ashes" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5088" mastery_level="7" name="Betrayal" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6968</id>
+    <name>Tech Adept</name>
+    <energy>18</energy>
+    <desc>As soon as you arrive you manage to spot the threat. A goblin that is clearly wielding one of Remi's Void gadgets. It seems like the trickster still has a couple of tricks up his sleeve.</desc>
+    <commander id="312" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="7019" mastery_level="2" name="Lady of the Swamp" />
+      <card id="7019" mastery_level="3" name="Lady of the Swamp" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="7237" mastery_level="5" name="Bogbringer" />
+      <card id="7230" mastery_level="6" name="Fungobble" />
+      <card id="7230" mastery_level="7" name="Fungobble" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6969</id>
+    <name>Pulverizer</name>
+    <energy>18</energy>
+    <desc>You head straight towards the goblin and realize that it isn't even looking at you. It fires its weapon and the bolt somehow manages to track its way towards you striking extremely close to your position.</desc>
+    <commander id="312" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6146" mastery_level="2" name="Dragonfly Runner" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="6098" mastery_level="4" name="Sheltering Wing" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6970</id>
+    <name>Void Strikes</name>
+    <energy>18</energy>
+    <desc>This weapon is more powerful than what it seemed. The goblin continues to fire its weapon, with each strike landing closer than the one before.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5148" mastery_level="2" name="Gribmalda of Wings" />
+      <card id="5148" mastery_level="3" name="Gribmalda of Wings" />
+      <card id="5292" mastery_level="4" name="Impudent Poachers" />
+      <card id="5281" mastery_level="5" name="Ramming Unit" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6971</id>
+    <name>Eureka</name>
+    <energy>18</energy>
+    <desc>After too many close calls you realize its weakness. You head towards the goblin at full speed and when it fires its weapon, you jump behind the goblin. The bolt continues to track you but goes through the goblin instead, pulverizing it in an instant.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2134" mastery_level="2" name="Golden Rise Adventurers" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="6111" mastery_level="5" name="Aspects of the Ashes" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5088" mastery_level="7" name="Betrayal" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6972</id>
+    <name>Portal</name>
+    <energy>18</energy>
+    <desc>Nothing but a damaged weapon remains from the encounter, you believe to have won but you realize something is wrong. Everything is quiet, too quiet. All of a sudden, you can hear a portal open up behind you.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="7019" mastery_level="2" name="Lady of the Swamp" />
+      <card id="7019" mastery_level="3" name="Lady of the Swamp" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="7237" mastery_level="5" name="Bogbringer" />
+      <card id="7230" mastery_level="6" name="Fungobble" />
+      <card id="7230" mastery_level="7" name="Fungobble" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6973</id>
+    <name>Surprise Strike</name>
+    <energy>18</energy>
+    <desc>You turn around and immediately get struck. Another Goblin wielding a Void gadget has now appeared and it is ready to take you down.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6146" mastery_level="2" name="Dragonfly Runner" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="6098" mastery_level="4" name="Sheltering Wing" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6974</id>
+    <name>The teleporter</name>
+    <energy>18</energy>
+    <desc>The goblin is wielding a gauntlet that allows it to open and close portals that are big enough for it to fit through them. This allows the goblin to appear wherever it wants to in a matter of seconds.</desc>
+    <commander id="312" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5148" mastery_level="2" name="Gribmalda of Wings" />
+      <card id="5148" mastery_level="3" name="Gribmalda of Wings" />
+      <card id="5292" mastery_level="4" name="Impudent Poachers" />
+      <card id="5281" mastery_level="5" name="Ramming Unit" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6975</id>
+    <name>Realization</name>
+    <energy>18</energy>
+    <desc>You try to anticipate where it will come from to no avail. You do manage to realize that as soon as the goblin goes into a portal, it appears at its new location in an instant.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8024" name="Fortune's Boatswain" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="2134" mastery_level="2" name="Golden Rise Adventurers" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="6111" mastery_level="5" name="Aspects of the Ashes" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5088" mastery_level="7" name="Betrayal" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6976</id>
+    <name>Piggyback into the Void</name>
+    <energy>18</energy>
+    <desc>Patiently, you wait for the goblin to strike again. Once it appears, you let it strike you, only for you to jump in right behind it onto the next portal it opens.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8086" name="Gobatron's Brutalizer" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="7019" mastery_level="2" name="Lady of the Swamp" />
+      <card id="7019" mastery_level="3" name="Lady of the Swamp" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="7237" mastery_level="5" name="Bogbringer" />
+      <card id="7230" mastery_level="6" name="Fungobble" />
+      <card id="7230" mastery_level="7" name="Fungobble" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6977</id>
+    <name>The tables turn</name>
+    <energy>18</energy>
+    <desc>You manage to appear right behind it at its next location, the goblin does not expect this and you manage to strike before it can even realize what happened. Defeated, the goblin uses its gauntlet to escape.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="8083" name="Gobatron's Firebrand" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6146" mastery_level="2" name="Dragonfly Runner" />
+      <card id="1344" mastery_level="3" name="Boomsting Duo" />
+      <card id="6098" mastery_level="4" name="Sheltering Wing" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6978</id>
+    <name>The Void is coming</name>
+    <energy>18</energy>
+    <desc>Before you can turn back, you can hear the mischievous laugh once again. You turn around only to find Remi taking the Void Channeler and then vanishing into thin air. You decide to send a message to Skyhaven, the Angels must assemble the army.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8091" name="Cannon Bomber" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7145" name="Metalsmith" />
+      <card id="7145" name="Metalsmith" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="2194" name="Warrior Twogre" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="5148" mastery_level="2" name="Gribmalda of Wings" />
+      <card id="5148" mastery_level="3" name="Gribmalda of Wings" />
+      <card id="5292" mastery_level="4" name="Impudent Poachers" />
+      <card id="5281" mastery_level="5" name="Ramming Unit" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
+    </deck>
+  </mission>
 </root>
 

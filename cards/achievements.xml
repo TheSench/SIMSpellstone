@@ -18468,6 +18468,139 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 97 - Goblin - Node 1 -->
+  <achievement>
+    <id>3837</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Void Activity</name>
+    <desc>Complete the 'Void Activity' campaign on Mastery Level 1.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1670518800</locked_start_time>
+    <!-- Thursday, 8 December 2022 17:00:00		  -->
+    <req>
+      <campaign>1334</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3077" number="50" />
+      <!-- Expediton Item -->
+      <event_points id="7093" number="50" />
+      <!-- Expediton ID -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3838</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Void Activity</name>
+    <desc>Complete the 'Void Activity' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1670518800</locked_start_time>
+    <!-- Thursday, 8 December 2022 17:00:00		  -->
+    <achievement_req>3837</achievement_req>
+    <req>
+      <campaign>1334</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3839</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Void Activity</name>
+    <desc>Complete the 'Void Activity' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1670518800</locked_start_time>
+    <!-- Thursday, 8 December 2022 17:00:00		  -->
+    <achievement_req>3838</achievement_req>
+    <req>
+      <campaign>1334</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3840</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Void Activity</name>
+    <desc>Complete the 'Void Activity' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1670518800</locked_start_time>
+    <!-- Thursday, 8 December 2022 17:00:00		  -->
+    <achievement_req>3839</achievement_req>
+    <req>
+      <campaign>1334</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 97 - Goblin - Node 2 -->
+  <achievement>
+    <id>3841</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The teleporter</name>
+    <desc>Complete the 'The teleporter' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1671728400</locked_start_time>
+    <!-- Thursday, 22 December 2022 17:00:00  -->
+    <req>
+      <campaign>1335</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3842</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The teleporter</name>
+    <desc>Complete the 'The teleporter' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1671728400</locked_start_time>
+    <!-- Thursday, 22 December 2022 17:00:00  -->
+    <achievement_req>3841</achievement_req>
+    <req>
+      <campaign>1335</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3843</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The teleporter</name>
+    <desc>Complete the 'The teleporter' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1671728400</locked_start_time>
+    <!-- Thursday, 22 December 2022 17:00:00  -->
+    <achievement_req>3842</achievement_req>
+    <req>
+      <campaign>1335</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -19665,6 +19798,32 @@
       <campaign>1332</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1333</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Golden Crown Village -->
+    <id>4051</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Golden Crown Village</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Golden Crown Village.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6037</mission_req>
+    <req>
+      <campaign>1177</campaign>
+      <campaign>1178</campaign>
+      <campaign>1179</campaign>
+      <campaign>1180</campaign>
+      <campaign>1181</campaign>
+      <campaign>1182</campaign>
+      <campaign>1334</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1335</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>

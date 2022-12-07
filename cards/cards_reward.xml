@@ -6853,7 +6853,7 @@
     <upgrade>
       <level>2</level>
       <health>27</health>
-      <attack>11</attack>
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -6868,7 +6868,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>30</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -7358,19 +7358,19 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
+      <attack>10</attack>
       <health>28</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>29</health>
+      <health>30</health>
       <skill id="legion" x="5" />
       <skill id="strike" x="10" />
       <skill id="burn" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>30</health>
+      <health>31</health>
       <skill id="legion" x="6" />
       <skill id="strike" x="11" />
       <skill id="burn" x="6" />
@@ -14340,7 +14340,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>46</health>
+      <health>50</health>
       <skill id="absorb" x="7" />
       <skill id="counter" x="5" />
       <skill id="heal" x="3" all="1" />
@@ -14348,7 +14348,7 @@
     <upgrade>
       <level>4</level>
       <attack>14</attack>
-      <health>47</health>
+      <health>52</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -14366,7 +14366,7 @@
     <asset_bundle>125</asset_bundle>
     <hidden_until_time>1522947600</hidden_until_time>
     <attack>15</attack>
-    <health>49</health>
+    <health>53</health>
     <cost>4</cost>
     <rarity>3</rarity>
     <skill id="absorb" x="7" />
@@ -14378,7 +14378,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>50</health>
+      <health>55</health>
       <skill id="absorb" x="8" />
       <skill id="counter" x="6" />
       <skill id="heal" x="4" all="1" />
@@ -14389,7 +14389,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>53</health>
+      <health>56</health>
       <skill id="absorb" x="9" />
       <skill id="counter" x="7" />
       <skill id="heal" x="4" all="1" />
@@ -17202,7 +17202,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>34</health>
+      <health>36</health>
       <skill id="stasis" x="5" />
       <skill id="heal" x="9" y="12" />
       <skill id="frost" x="4" />
@@ -17223,7 +17223,7 @@
     <asset_bundle>151</asset_bundle>
     <hidden_until_time>1549558800</hidden_until_time>
     <attack>9</attack>
-    <health>35</health>
+    <health>38</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="5" />
@@ -17235,18 +17235,18 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>36</health>
+      <health>40</health>
       <skill id="stasis" x="5" />
       <skill id="heal" x="11" y="12" />
       <skill id="frost" x="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>10</attack>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>37</health>
+      <health>42</health>
       <skill id="stasis" x="6" />
       <skill id="heal" x="11" y="12" />
       <skill id="frost" x="5" />
@@ -24928,7 +24928,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="6" />
+      <skill id="armored" x="7" />
       <skill id="valor" x="7" />
       <skill id="rally" x="4" all="1" y="3" />
     </upgrade>
@@ -28578,6 +28578,278 @@
       <skill id="stasis" x="6" />
       <skill id="strike" x="4" all="1" />
       <skill id="nullify" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2243</id>
+    <card_type>2</card_type>
+    <name>Mrs Krampus</name>
+    <picture>Goblin_Goblinch_Raiders_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1670518800</hidden_until_time>
+    <attack>6</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="heal" x="2" all="1" y="11" />
+    <skill id="strike" x="2" all="1" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="absorb" x="5" />
+      <skill id="heal" x="2" all="1" y="11" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+      <skill id="absorb" x="5" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12243</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Cheery Mrs Krampus</name>
+    <picture>Goblin_Goblinch_Raiders_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1670518800</hidden_until_time>
+    <attack>9</attack>
+    <health>37</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="heal" x="3" all="1" y="11" />
+    <skill id="strike" x="2" all="1" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="absorb" x="6" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="6" />
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>39</health>
+      <skill id="absorb" x="7" />
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <health>40</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22243</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Festive Mrs Krampus</name>
+    <picture>Goblin_Goblinch_Raiders_B</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1670518800</hidden_until_time>
+    <attack>11</attack>
+    <health>41</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="heal" x="5" all="1" y="11" />
+    <skill id="strike" x="3" all="1" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+      <skill id="absorb" x="8" />
+      <skill id="heal" x="5" all="1" y="11" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="9" />
+      <skill id="heal" x="6" all="1" y="11" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2244</id>
+    <card_type>2</card_type>
+    <name>Fizbo</name>
+    <picture>Goblin_Clown_Maker_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1670518800</hidden_until_time>
+    <attack>4</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="3" y="11" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <skill id="fervor" x="3" y="11" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <skill id="fervor" x="4" y="11" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>25</health>
+      <skill id="fervor" x="4" y="11" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12244</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Fizbo, the Jester</name>
+    <picture>Goblin_Clown_Maker_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1670518800</hidden_until_time>
+    <attack>6</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="4" y="11" />
+    <skill id="enfeeble" x="3" all="1" />
+    <skill id="leech" x="6" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="fervor" x="5" y="11" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="fervor" x="5" y="11" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="5" y="11" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="leech" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22244</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Fizbo, the Jester Maker</name>
+    <picture>Goblin_Clown_Maker_B</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1670518800</hidden_until_time>
+    <attack>8</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="6" y="11" />
+    <skill id="enfeeble" x="4" all="1" />
+    <skill id="leech" x="8" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="6" y="11" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="leech" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="fervor" x="6" y="11" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="leech" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="7" y="11" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="leech" x="10" />
     </upgrade>
   </unit>
 </root>

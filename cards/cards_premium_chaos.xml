@@ -9009,10 +9009,11 @@
     <upgrade>
       <level>4</level>
       <attack>4</attack>
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>19</health>
+      <health>20</health>
       <skill id="fervor" x="4" y="2" />
       <skill id="berserk" x="4" />
       <skill id="flurry" c="3" />
@@ -27504,7 +27505,7 @@
     <asset_bundle>151</asset_bundle>
     <hidden_until_time>1550768400</hidden_until_time>
     <attack>8</attack>
-    <health>25</health>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="backlash" x="3" />
@@ -27516,7 +27517,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>26</health>
+      <health>29</health>
       <skill id="backlash" x="3" />
       <skill id="strike" x="3" all="1" />
       <skill id="leech" x="8" />
@@ -27524,24 +27525,25 @@
     <upgrade>
       <level>3</level>
       <attack>9</attack>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>27</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>28</health>
+      <attack>10</attack>
+      <health>32</health>
       <skill id="backlash" x="4" />
       <skill id="strike" x="3" all="1" />
       <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>29</health>
       <skill id="backlash" x="5" />
       <skill id="strike" x="4" all="1" />
-      <skill id="leech" x="9" />
+      <skill id="leech" x="10" />
     </upgrade>
   </unit>
   <unit>
@@ -32358,7 +32360,7 @@
     <asset_bundle>176</asset_bundle>
     <hidden_until_time>1575306000</hidden_until_time>
     <attack>7</attack>
-    <health>27</health>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="6" />
@@ -32376,20 +32378,27 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>8</attack>
+      <health>30</health>
+      <skill id="absorb" x="8" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>29</health>
+      <attack>9</attack>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>10</attack>
+      <health>32</health>
       <skill id="absorb" x="8" />
-      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="4" all="1" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -34228,26 +34237,30 @@
     <upgrade>
       <level>2</level>
       <attack>11</attack>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <health>42</health>
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
       <level>4</level>
+      <health>44</health>
       <skill id="stasis" x="5" />
       <skill id="burn" x="5" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>45</health>
       <skill id="stasis" x="5" />
       <skill id="burn" x="6" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="stasis" x="5" />
+      <health>46</health>
+      <skill id="stasis" x="6" />
       <skill id="burn" x="6" />
       <skill id="berserk" x="7" />
     </upgrade>
@@ -38687,6 +38700,152 @@
       <skill id="evade" x="3" />
       <skill id="burn" x="6" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <!-- === Exception, this is a Void === -->
+  <unit>
+    <id>6303</id>
+    <card_type>2</card_type>
+    <name>Void Fighter</name>
+    <picture>Void_Goblin_Voidtech_Adept_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1671469200</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="rally" x="4" y="8" />
+    <skill id="weaken" x="2" all="1" />
+    <type>8</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="5" />
+      <skill id="rally" x="5" y="8" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <skill id="absorb" x="6" />
+      <skill id="rally" x="5" y="8" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+      <skill id="absorb" x="6" />
+      <skill id="rally" x="6" y="8" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16303</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Void Mercenary</name>
+    <picture>Void_Goblin_Voidtech_Adept_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1671469200</hidden_until_time>
+    <attack>7</attack>
+    <health>19</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="rally" x="6" y="8" />
+    <skill id="weaken" x="2" all="1" />
+    <type>8</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="absorb" x="7" />
+      <skill id="rally" x="7" y="8" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="7" />
+      <skill id="rally" x="7" y="8" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="8" />
+      <skill id="rally" x="7" y="8" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <skill id="absorb" x="8" />
+      <skill id="rally" x="8" y="8" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26303</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Void Commando</name>
+    <picture>Void_Goblin_Voidtech_Adept_B</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1671469200</hidden_until_time>
+    <attack>9</attack>
+    <health>22</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="8" />
+    <skill id="rally" x="8" y="8" />
+    <skill id="weaken" x="3" all="1" />
+    <type>8</type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+      <skill id="absorb" x="9" />
+      <skill id="rally" x="8" y="8" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="absorb" x="9" />
+      <skill id="rally" x="9" y="8" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="10" />
+      <skill id="rally" x="9" y="8" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="absorb" x="10" />
+      <skill id="rally" x="10" y="8" />
+      <skill id="weaken" x="4" all="1" />
     </upgrade>
   </unit>
 </root>

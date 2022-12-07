@@ -11556,7 +11556,7 @@
     <id>1327</id>
     <name>Battling the Void</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1324" level="1" />
+    <campaign_req id="1326" level="1" />
     <locked_start_time>1664470800</locked_start_time>
     <!-- Thursday, 29 September 2022 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -11681,7 +11681,7 @@
     <id>1330</id>
     <name>The Void Channeler</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1324" level="1" />
+    <campaign_req id="1329" level="1" />
     <locked_start_time>1666890000</locked_start_time>
     <!-- Thursday, 27 October 2022 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -11804,7 +11804,7 @@
     <id>1333</id>
     <name>No mans land</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1324" level="1" />
+    <campaign_req id="1332" level="1" />
     <locked_start_time>1669309200</locked_start_time>
     <!-- Thursday, 24 November 2022 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -11842,6 +11842,86 @@
     <find_item id="2522" drop_per_energy="0.04" />
     <ignore_energy_reduction_until>1672938000</ignore_energy_reduction_until>
     <!-- Thursday, January 5, 2023 at 17:00:00   -->
+  </campaign>
+  <!-- Campaign Event 97 -  Golden Crown Village -->
+  <campaign>
+    <id>1334</id>
+    <name>Void Activity</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1670518800</locked_start_time>
+    <!-- Thursday, 8 December 2022 17:00:00	 	  -->
+    <location_id>17</location_id>
+    <x>910</x>
+    <y>320</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6967</mission_id>
+      <mission_id>6968</mission_id>
+      <mission_id>6969</mission_id>
+      <mission_id>6970</mission_id>
+      <mission_id>6971</mission_id>
+      <mission_id>6972</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2672" number="25" />
+      <!-- Golden Flask test-->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2243" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2213" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2672" number="75" />
+      <!-- Golden Flask -->
+      <card level="7" id="2244" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3077" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1675357200</ignore_energy_reduction_until>
+    <!-- Thursday, February 2, 2023 at 17:00:00   -->
+  </campaign>
+  <campaign>
+    <id>1335</id>
+    <name>The Teleporter</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1334" level="1" />
+    <locked_start_time>1671728400</locked_start_time>
+    <!-- Thursday, 22 December 2022 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>17</location_id>
+    <x>940</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6973</mission_id>
+      <mission_id>6974</mission_id>
+      <mission_id>6975</mission_id>
+      <mission_id>6976</mission_id>
+      <mission_id>6977</mission_id>
+      <mission_id>6978</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2672" number="25" />
+      <!-- Golden Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2125" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2148" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2672" number="75" />
+      <!-- Golden Flask -->
+      <card level="7" id="2244" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3077" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1675357200</ignore_energy_reduction_until>
+    <!-- Thursday, February 2, 2023 at 17:00:00  -->
   </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
