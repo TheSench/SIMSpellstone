@@ -1924,6 +1924,107 @@ var BATTLEGROUNDS = {
 		"id": "159",
 		"name": "Enhanced Battle Kit"
 	},
+	"160": {
+		"desc": "Angels gain barrier 2+15%, 0-2 delay angels gain 10% legion and 3-4 delay angels gain 10% weaken. 0-2 delay voids gain 3+10% Siphon and 3-4 delay voids gain 3+10% Regenerate. Values based on HP!",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "protect",
+				"mult": 0.15,
+				"x": 2,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "legion",
+				"mult": 0.1,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "weakenbge",
+				"mult": 0.1,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.1,
+				"x": 3,
+				"y": "8"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.1,
+				"x": 3,
+				"y": "8"
+			}
+		],
+		"id": "160",
+		"name": "Angelical Voidness"
+	},
+	"161": {
+		"desc": "All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base health!.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "protect",
+				"mult": 0.15,
+				"x": 2,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "legion",
+				"mult": 0.1,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "weakenbge",
+				"mult": 0.1,
+				"y": "6"
+			}
+		],
+		"id": "161",
+		"name": "Celestial Raid"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

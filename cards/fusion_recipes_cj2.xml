@@ -10045,6 +10045,14 @@
     <card_id>28019</card_id>
     <resource card_id="18019" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17307</card_id>
+    <resource card_id="7307" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27307</card_id>
+    <resource card_id="17307" number="2" />
+  </fusion_recipe>
   <!-- END SET 8000 - Story Element Assaults -->
 </root>
 

@@ -39722,5 +39722,142 @@
       <skill id="poison" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7307</id>
+    <card_type>2</card_type>
+    <name>Hadoc</name>
+    <picture>Goblin_Goblin_Healer_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1672678800</hidden_until_time>
+    <attack>11</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="3" all="1" y="11" />
+    <skill id="protect" x="3" all="1" y="11" />
+    <skill id="leech" x="12" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="protect" x="3" all="1" y="11" />
+      <skill id="leech" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="protect" x="3" all="1" y="11" />
+      <skill id="leech" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="protect" x="4" all="1" y="11" />
+      <skill id="leech" x="13" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17307</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hadoc, the Aider</name>
+    <picture>Goblin_Goblin_Healer_A</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1672678800</hidden_until_time>
+    <attack>13</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="4" all="1" y="11" />
+    <skill id="protect" x="4" all="1" y="11" />
+    <skill id="leech" x="13" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="5" all="1" y="11" />
+      <skill id="protect" x="4" all="1" y="11" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+      <skill id="heal" x="5" all="1" y="11" />
+      <skill id="protect" x="5" all="1" y="11" />
+      <skill id="leech" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>31</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27307</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Hadoc, the Ancient</name>
+    <picture>Goblin_Goblin_Healer_B</picture>
+    <asset_bundle>262</asset_bundle>
+    <hidden_until_time>1672678800</hidden_until_time>
+    <attack>14</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="5" all="1" y="11" />
+    <skill id="protect" x="5" all="1" y="11" />
+    <skill id="leech" x="15" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>15</attack>
+      <skill id="heal" x="6" all="1" y="11" />
+      <skill id="protect" x="5" all="1" y="11" />
+      <skill id="leech" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>16</attack>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="6" all="1" y="11" />
+      <skill id="protect" x="5" all="1" y="11" />
+      <skill id="leech" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="7" all="1" y="11" />
+      <skill id="protect" x="6" all="1" y="11" />
+      <skill id="leech" x="16" />
+    </upgrade>
+  </unit>
 </root>
 

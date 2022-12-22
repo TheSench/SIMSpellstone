@@ -61302,5 +61302,326 @@
       <card id="5147" mastery_level="7" name="Bard of Gobsburg" />
     </deck>
   </mission>
+  <!-- Christmas Event 2022 -->
+  <mission>
+    <id>6979</id>
+    <name>Two Old Men Reunited</name>
+    <energy>1</energy>
+    <desc>Malchior has dragged Tarian out of the small shack. The two friends catch up on what they've missed over the last few months, as Malchior has been traveling on the airship.</desc>
+    <commander id="235" />
+    <deck>
+      <card id="5007" name="Arcane Scroll" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="5004" mastery_level="2" name="Lightning Lord" />
+      <card id="5161" mastery_level="3" name="Bolster Bot" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="5141" mastery_level="5" name="Nimbocaster" />
+      <card id="5027" mastery_level="6" name="Northern War-kin" />
+      <card id="5026" mastery_level="7" name="Frostfire Wyrm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Malchior, why did you call me out here?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>It's simple, my friend... I require your skills!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6980</id>
+    <name>World's Center Dangers</name>
+    <energy>1</energy>
+    <desc>Malchior takes Tarian past the rocky path, into the snowy forest. They pass many diseased, rotted trees; monsters and undead lurking in their shadows.</desc>
+    <commander id="351" />
+    <deck>
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5005" mastery_level="2" name="Storm Giant" />
+      <card id="5155" mastery_level="3" name="Silvertongue Fencer" />
+      <card id="5139" mastery_level="4" name="Loyal Guard" />
+      <card id="5127" mastery_level="5" name="Dynamo Drake" />
+      <card id="5032" mastery_level="6" name="Hail Hurler" />
+      <card id="5029" mastery_level="7" name="Snowback Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>There is an enemy that only you can feel...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Then this must be serious, if you're asking me over your adventurer friend.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6981</id>
+    <name>The Biggest Tree</name>
+    <energy>1</energy>
+    <desc>Malchior stops at a large tree, one of the few that hasn't been tainted by the disease. It grows strong and tall, evergreen pine needles sticking out from its branches.</desc>
+    <commander id="272" />
+    <deck>
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5089" name="Gomblit" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="5158" mastery_level="3" name="Chilltide Stormtender" />
+      <card id="6016" mastery_level="4" name="Skeletal Giant" />
+      <card id="5127" mastery_level="5" name="Dynamo Drake" />
+      <card id="5075" mastery_level="6" name="Arith" />
+      <card id="5151" mastery_level="7" name="Brinebelly" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>1</enemy>
+        <text>Right here! This gigantic pine tree!-</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6982</id>
+    <name>Ax of the Lich Lord</name>
+    <energy>1</energy>
+    <desc>Tarian stops cold. He has humored many of Malchior's outlandish requests in the past, but he cannot figure out his motivation behind this one.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="7006" name="Treant Sapling" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1617" name="Water Elemental" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5081" name="Brahzee" />
+      <card id="5114" name="Wingward" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6025" mastery_level="2" name="Dragon Keeper" />
+      <card id="5130" mastery_level="3" name="Drakeling Fosterer" />
+      <card id="6005" mastery_level="4" name="Gloomkin" />
+      <card id="6010" mastery_level="5" name="Cliffpass Defender" />
+      <card id="5074" mastery_level="6" name="Godfried the Hunter" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Malchior, my ax is meant for cleaving bone, not chopping firewood!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>6983</id>
+    <name>Holiday Presents</name>
+    <energy>1</energy>
+    <desc>Malchior begs Tarian to reconsider his earlier choice. The tree is meant for others who have never seen such things, not for one of Malchior's experiments.</desc>
+    <commander id="19" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1019" name="Oracle" />
+      <card id="1615" name="Rune Panther" />
+      <card id="1616" name="Werewarg" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6025" mastery_level="2" name="Dragon Keeper" />
+      <card id="6077" mastery_level="3" name="Enigma" />
+      <card id="5163" mastery_level="4" name="Bark Hound" />
+      <card id="5149" mastery_level="5" name="Flatfish Ward" />
+      <card id="5068" mastery_level="6" name="Aht-Aht Carrier" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>But think of the Chaos children back in Karthos, and how they'd decorate this big tree!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Fine, I'll do it, but don't you dare tell anyone about this. I have a reputation to uphold.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- LBN 97 Krampus -->
+  <mission>
+    <id>6984</id>
+    <name>A dangerous nap</name>
+    <energy>18</energy>
+    <desc>Krampus was a mean and grumpy fellow, on the night of Christmas, he felt quite mellow, he had no idea that his fate was so dire, for on the next day, he would get lost in the mire.</desc>
+    <commander id="478" />
+    <deck>
+      <card id="7294" name="Brute Hobgoblin" />
+      <card id="7294" name="Brute Hobgoblin" />
+      <card id="6269" name="Drogoblin Warrior" />
+      <card id="6269" name="Drogoblin Warrior" />
+      <card id="5239" name="Knightly Grumplo" />
+      <card id="5239" name="Knightly Grumplo" />
+      <card id="7190" name="Drix and Acidfire" />
+      <card id="7190" name="Drix and Acidfire" />
+      <card id="7143" name="Hog Bronco" />
+      <card id="6041" mastery_level="2" name="Armored Siegefist" />
+      <card id="5192" mastery_level="3" name="Dancer Hula" />
+      <card id="7190" mastery_level="4" name="Drix and Acidfire" />
+      <card id="7226" mastery_level="5" name="Froglin" />
+      <card id="7026" mastery_level="6" name="Frostjaw" />
+      <card id="6612" mastery_level="7" name="Zolb, Labyrinth King" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6985</id>
+    <name>The day after Christmas</name>
+    <energy>18</energy>
+    <desc>He started to yawn and he started to doze, Krampus fell asleep with his heart filled with woes, he didn't know that he'd be led astray. On the morning of December 26th, he'd lost the way.</desc>
+    <commander id="478" />
+    <deck>
+      <card id="7294" name="Brute Hobgoblin" />
+      <card id="7294" name="Brute Hobgoblin" />
+      <card id="6269" name="Drogoblin Warrior" />
+      <card id="6269" name="Drogoblin Warrior" />
+      <card id="7143" name="Hog Bronco" />
+      <card id="7143" name="Hog Bronco" />
+      <card id="7190" name="Drix and Acidfire" />
+      <card id="7190" name="Drix and Acidfire" />
+      <card id="7226" name="Froglin" />
+      <card id="5239" mastery_level="2" name="Knightly Grumplo" />
+      <card id="7226" mastery_level="3" name="Froglin" />
+      <card id="7026" mastery_level="4" name="Frostjaw" />
+      <card id="5225" mastery_level="5" name="Centurion Steelarm" />
+      <card id="6148" mastery_level="6" name="Narwhal Spiker" />
+      <card id="7624" mastery_level="7" name="Sigblin, the Trollskin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6986</id>
+    <name>The brazen robbery</name>
+    <energy>18</energy>
+    <desc>Krampus started to wander, his heart filled with glee, he took all the presents, leaving none for thee. He thought to himself he was doing no wrong, but the kids were so sad when the gifts were gone.</desc>
+    <commander id="478" />
+    <deck>
+      <card id="6148" name="Narwhal Spiker" />
+      <card id="6148" name="Narwhal Spiker" />
+      <card id="6269" name="Drogoblin Warrior" />
+      <card id="6269" name="Drogoblin Warrior" />
+      <card id="5239" name="Knightly Grumplo" />
+      <card id="5239" name="Knightly Grumplo" />
+      <card id="6041" name="Armored Siegefist" />
+      <card id="7190" name="Drix and Acidfire" />
+      <card id="7091" name="Wave Plunderer" />
+      <card id="5225" mastery_level="2" name="Centurion Steelarm" />
+      <card id="7026" mastery_level="3" name="Frostjaw" />
+      <card id="5192" mastery_level="4" name="Dancer Hula" />
+      <card id="6282" mastery_level="5" name="Cauldron Troop" />
+      <card id="7091" mastery_level="6" name="Wave Plunderer" />
+      <card id="7627" mastery_level="7" name="Crash and Zink, the Riders" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6987</id>
+    <name>Looking for the culprit</name>
+    <energy>18</energy>
+    <desc>Our Hero heard their cries, he had to investigate, he soon realized that their gifts had to be straight, he followed the clues, he followed the track. Krampus was the culprit, and he had to be attacked.</desc>
+    <commander id="478" />
+    <deck>
+      <card id="2103" name="Siren" />
+      <card id="2103" name="Siren" />
+      <card id="6220" name="Gobtoh the Risen" />
+      <card id="6220" name="Gobtoh the Risen" />
+      <card id="6254" name="Newfeet Grenadier" />
+      <card id="6254" name="Newfeet Grenadier" />
+      <card id="6297" name="Novice Drummer" />
+      <card id="6297" name="Novice Drummer" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="6218" mastery_level="2" name="Gliding Firemage" />
+      <card id="7245" mastery_level="3" name="Ogrot Tamer" />
+      <card id="2103" mastery_level="4" name="Siren" />
+      <card id="2214" mastery_level="5" name="Bloody Redcap" />
+      <card id="7306" mastery_level="6" name="Morkan" />
+      <card id="4016" mastery_level="7" name="Daknak Darkblade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6988</id>
+    <name>The villain's punishment</name>
+    <energy>18</energy>
+    <desc>Our Hero fought hard, he fought with all his might, but Krampus was tough, and he put up one hell of a fight. Our Hero was tired and his strength was low, but he was determined to make Krampus go.</desc>
+    <commander id="478" />
+    <deck>
+      <card id="6220" name="Gobtoh the Risen" />
+      <card id="6220" name="Gobtoh the Risen" />
+      <card id="6218" name="Gliding Firemage" />
+      <card id="6218" name="Gliding Firemage" />
+      <card id="7245" name="Ogrot Tamer" />
+      <card id="7245" name="Ogrot Tamer" />
+      <card id="5191" name="Bubble Gumm" />
+      <card id="5191" name="Bubble Gumm" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="6217" mastery_level="2" name="Dark Mage Tagati" />
+      <card id="2103" mastery_level="3" name="Siren" />
+      <card id="2214" mastery_level="4" name="Bloody Redcap" />
+      <card id="7306" mastery_level="5" name="Morkan" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5627" mastery_level="7" name="Drarm, the Soulbinder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6989</id>
+    <name>The miracle after Christmas</name>
+    <energy>18</energy>
+    <desc>With one final punch, our Hero made Krampus fall. He managed to get all the gifts back for all, the kids were so happy, their faces shone bright. It was a Christmas miracle, and all was alright.</desc>
+    <commander id="478" />
+    <deck>
+      <card id="6218" name="Gliding Firemage" />
+      <card id="6218" name="Gliding Firemage" />
+      <card id="7245" name="Ogrot Tamer" />
+      <card id="7245" name="Ogrot Tamer" />
+      <card id="2103" name="Siren" />
+      <card id="2103" name="Siren" />
+      <card id="2214" name="Bloody Redcap" />
+      <card id="1045" name="Cloudwhale Rider" />
+      <card id="6297" name="Novice Drummer" />
+      <card id="2214" mastery_level="2" name="Bloody Redcap" />
+      <card id="6217" mastery_level="3" name="Dark Mage Tagati" />
+      <card id="7306" mastery_level="4" name="Morkan" />
+      <card id="5088" mastery_level="5" name="Betrayal" />
+      <card id="1045" mastery_level="6" name="Cloudwhale Rider" />
+      <card id="4037" mastery_level="7" name="Nuvis, the Eye Collector" />
+    </deck>
+  </mission>
 </root>
 

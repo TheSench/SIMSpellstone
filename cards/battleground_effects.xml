@@ -1334,6 +1334,60 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>160</id>
+    <name>Angelical Voidness</name>
+    <desc>Angels gain barrier 2+15%, 0-2 delay angels gain 10% legion and 3-4 delay angels gain 10% weaken. 0-2 delay voids gain 3+10% Siphon and 3-4 delay voids gain 3+10% Regenerate. Values based on HP!</desc>
+    <icon>filter_void_64</icon>
+    <effect>
+      <add_skill id="protect" mult="0.15" x="2" base="health" y="6" />
+      <add_skill id="legion" mult="0.10" base="health" y="6" delay="0,1,2" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
+        <projectile_effect>
+          <prefab>Legion_Projectile</prefab>
+          <delay>0</delay>
+          <duration>0.5</duration>
+          <translation>0.5</translation>
+          <offset>2</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>Legion_Angel_Target</prefab>
+          <delay>0.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <add_skill id="weakenbge" mult="0.10" base="health" y="6" delay="3,4" />
+      <add_skill id="leech" mult="0.10" x="3" base="health" y="8" delay="0,1,2" />
+      <add_skill id="regenerate" mult="0.10" x="3" base="health" y="8" delay="3,4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>161</id>
+    <name>Celestial Raid</name>
+    <desc>All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base health!.</desc>
+    <icon>filter_angel_64</icon>
+    <effect>
+      <add_skill id="protect" mult="0.15" x="2" base="health" y="6" />
+      <add_skill id="legion" mult="0.10" base="health" y="6" delay="0,1,2" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
+        <projectile_effect>
+          <prefab>Legion_Projectile</prefab>
+          <delay>0</delay>
+          <duration>0.5</duration>
+          <translation>0.5</translation>
+          <offset>2</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>Legion_Angel_Target</prefab>
+          <delay>0.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <add_skill id="weakenbge" mult="0.10" base="health" y="6" delay="3,4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

@@ -11852,8 +11852,8 @@
     <locked_start_time>1670518800</locked_start_time>
     <!-- Thursday, 8 December 2022 17:00:00	 	  -->
     <location_id>17</location_id>
-    <x>910</x>
-    <y>320</y>
+    <x>382</x>
+    <y>331</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6967</mission_id>
@@ -11892,8 +11892,8 @@
     <!-- Thursday, 22 December 2022 17:00:00 -->
     <battleground_id>2019</battleground_id>
     <location_id>17</location_id>
-    <x>940</x>
-    <y>200</y>
+    <x>575</x>
+    <y>440</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6973</mission_id>
@@ -11922,6 +11922,40 @@
     <find_item id="3077" drop_per_energy=".8" />
     <ignore_energy_reduction_until>1675357200</ignore_energy_reduction_until>
     <!-- Thursday, February 2, 2023 at 17:00:00  -->
+  </campaign>
+  <!-- Christmas Event 2022 -->
+  <campaign>
+    <id>1336</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <!-- <campaign_req id='6' level='1' /> -->
+    <locked_start_time>1671555600</locked_start_time>
+    <!-- Tuesday, 20 December 2022 17:00:00 -->
+    <location_id>26</location_id>
+    <x>570</x>
+    <!-- left right -->
+    <y>370</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6979</mission_id>
+      <mission_id>6980</mission_id>
+      <mission_id>6981</mission_id>
+      <mission_id>6982</mission_id>
+      <mission_id>6983</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104037" number="50" />
+      <item level="2" id="104060" number="50" />
+      <item level="3" id="104052" number="65" />
+      <item level="4" id="104057" number="65" />
+      <item level="5" id="104056" number="75" />
+      <item level="6" id="104063" number="100" />
+      <item level="7" id="104059" number="125" />
+    </rewards>
+    <find_item id="3110" drop_per_energy="0.2" />
   </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
@@ -12726,5 +12760,37 @@
     <find_item id="2522" drop_per_energy="0.04" />
   </campaign>
   <!-- LBN Lerna Seafolk event 96 END -->
+  <!-- LBN Krampus Goblin event 97  -->
+  <campaign>
+    <id>4010</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Krampus</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>17</location_id>
+    <x>100</x>
+    <y>490</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6984</mission_id>
+      <mission_id>6985</mission_id>
+      <mission_id>6986</mission_id>
+      <mission_id>6987</mission_id>
+      <mission_id>6988</mission_id>
+      <mission_id>6989</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2108" />
+      <card level="5" id="2108" />
+      <item level="6" id="104066" number="25" />
+      <item level="7" id="104066" number="75" />
+    </rewards>
+    <find_item id="3077" drop_per_energy=".6" />
+  </campaign>
+  <!-- LBN Krampus Goblin event 97 END -->
 </root>
 
