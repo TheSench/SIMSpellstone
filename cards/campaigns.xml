@@ -11957,6 +11957,90 @@
     </rewards>
     <find_item id="3110" drop_per_energy="0.2" />
   </campaign>
+  <!-- Event 98 -->
+  <campaign>
+    <id>1337</id>
+    <name>The Menace Returns!</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1672938000</locked_start_time>
+    <!-- Thursday, January 5, 2023 17:00:00	 	  -->
+    <location_id>9</location_id>
+    <x>700</x>
+    <y>315</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6990</mission_id>
+      <mission_id>6991</mission_id>
+      <mission_id>6992</mission_id>
+      <mission_id>6993</mission_id>
+      <mission_id>6994</mission_id>
+      <mission_id>6995</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2673" number="25" />
+      /&gt;
+      <!-- Void Invasion Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2245" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2204" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2673" number="75" />
+      /&gt;
+      <!-- Void Invasion Flask -->
+      <card level="7" id="2244" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3053" drop_per_energy=".6" />
+    <ignore_energy_reduction_until>1677776400</ignore_energy_reduction_until>
+    <!-- Thursday, March 2, 2023 17:00:00	   -->
+  </campaign>
+  <campaign>
+    <id>1338</id>
+    <name>The Colossus</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1337" level="1" />
+    <locked_start_time>1674147600</locked_start_time>
+    <!-- Thursday, 19 January 2023 17:00:00 -->
+    <battleground_id>2019</battleground_id>
+    <location_id>9</location_id>
+    <x>850</x>
+    <y>175</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6996</mission_id>
+      <mission_id>6997</mission_id>
+      <mission_id>6998</mission_id>
+      <mission_id>6999</mission_id>
+      <mission_id>6700</mission_id>
+      <mission_id>6701</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2673" number="25" />
+      /&gt;
+      <!-- Void Invasion Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2203" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2219" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2673" number="75" />
+      /&gt;
+      <!-- Void invasion Flask -->
+      <card level="7" id="2244" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3053" drop_per_energy=".8" />
+    <ignore_energy_reduction_until>1675357200</ignore_energy_reduction_until>
+    <!-- Thursday, February 2, 2023 at 17:00:00  -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

@@ -1336,7 +1336,7 @@
   </battleground>
   <battleground>
     <id>160</id>
-    <name>Angelical Voidness</name>
+    <name>Celestial Voidness</name>
     <desc>Angels gain barrier 2+15%, 0-2 delay angels gain 10% legion and 3-4 delay angels gain 10% weaken. 0-2 delay voids gain 3+10% Siphon and 3-4 delay voids gain 3+10% Regenerate. Values based on HP!</desc>
     <icon>filter_void_64</icon>
     <effect>

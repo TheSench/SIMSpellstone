@@ -464,6 +464,32 @@
     <attributes x="0" y="0" all="1" c="1" s="0" />
     <balance_points>10</balance_points>
   </skillType>
+  <!-- old cleanse-->
+  <!-- <skillType>
+		<id>cleanse</id>
+		<order>310</order>
+		<icon>cleanse</icon>
+		<name>Cleanse</name>
+		<desc>Every {c} turns, remove the negative states of itself or an ally.</desc>
+		<desc_all>Every {c} turns, remove the negative states (Poison, Hex, Burn, Freeze, Venom, Weaken, Silence and Confuse) of itself or an ally.</desc_all>
+		<status_flag>cleanse_countdown</status_flag>
+		<attributes x='0' y='0' all='1' c='1' s='0' />
+		<balance_points>10</balance_points>
+		<upkeep>1</upkeep>
+	</skillType> -->
+  <!-- old cleanse-->
+  <skillType>
+    <id>cleanse</id>
+    <order>310</order>
+    <icon>cleanse</icon>
+    <name>Cleanse</name>
+    <desc>Every {c} turns, remove the negative states of itself or an ally.</desc>
+    <desc_all>Every {c} turns, remove the negative states (Poison, Hex, Burn, Freeze, Venom, Weaken, Silence and Confuse) of itself or an ally.</desc_all>
+    <status_flag>cleanse_countdown</status_flag>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>10</balance_points>
+    <upkeep>1</upkeep>
+  </skillType>
   <!-- Mythic -->
   <skillType>
     <id>fury</id>
@@ -549,6 +575,16 @@
     <name>Wing Guard</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
+    <hidden>1</hidden>
+  </skillType>
+  <!-- Mythic -->
+  <skillType>
+    <id>magicfield</id>
+    <order>1</order>
+    <icon>avian_barrier</icon>
+    <name>Anti-Magic Field</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Grants Ward to self and half as much to adjacent ally creatures.</desc>
     <hidden>1</hidden>
   </skillType>
   <!-- Special -->

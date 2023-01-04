@@ -15243,28 +15243,28 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>55</health>
+      <health>60</health>
       <skill id="corrosive" x="7" />
       <skill id="frost" x="4" />
       <skill id="flurry" c="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>56</health>
+      <health>61</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>57</health>
-      <attack>13</attack>
+      <health>62</health>
+      <attack>14</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>58</health>
+      <health>63</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="corrosive" x="10" />
-      <skill id="frost" x="5" />
+      <skill id="frost" x="6" />
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
@@ -22774,16 +22774,16 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>37</health>
+      <health>43</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>38</health>
+      <health>45</health>
       <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>39</health>
+      <health>46</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -22795,7 +22795,7 @@
       <level>6</level>
       <skill id="corrosive" x="8" />
       <skill id="fervor" x="8" y="6" />
-      <skill id="enfeeble" x="4" all="1" />
+      <skill id="enfeeble" x="5" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -26809,7 +26809,7 @@
     <asset_bundle>149</asset_bundle>
     <hidden_until_time>1547139600</hidden_until_time>
     <attack>7</attack>
-    <health>25</health>
+    <health>30</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="7" />
@@ -26821,16 +26821,15 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>26</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>27</health>
       <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>28</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>5</level>

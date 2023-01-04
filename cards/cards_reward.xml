@@ -8309,6 +8309,150 @@
       <skill id="jam" c="2" />
     </upgrade>
   </unit>
+  <!-- Midas -->
+  <!-- 	
+	<unit>
+		<id>30003</id>
+		<card_type>2</card_type>
+		<name>Midas, Epic</name>
+		<picture>Epic_Seafolk_A</picture>
+		<asset_bundle>38</asset_bundle>
+		<hidden_until_time>1484240400</hidden_until_time>
+		<cannot_salvage>1</cannot_salvage>
+		<attack>4</attack>
+		<health>24</health>
+		<skill id='magicfield' x='1' />
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<type>3</type>
+		<sub_type>12</sub_type>
+		<set>5000</set>
+		<upgrade>
+			<level>2</level>
+			<skill id='fury' x='1' />
+			<skill id='enfeeble' all='1' x='1' />
+			<skill id='jam' c='4' />
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<attack>5</attack>
+			<health>26</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>27</health>
+			<skill id='fury' x='2' />
+			<skill id='enfeeble' all='1' x='1' />
+			<skill id='jam' c='4' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>28</health>
+			<skill id='fury' x='2' />
+			<skill id='enfeeble' all='1' x='2' />
+			<skill id='jam' c='4' />
+		</upgrade>
+	</unit>
+	<unit>
+		<id>30004</id>
+		<card_type>2</card_type>
+		<name>Midas Legendary</name>
+		<picture>Legendary_Seafolk_A</picture>
+		<asset_bundle>38</asset_bundle>
+		<hidden_until_time>1484240400</hidden_until_time>
+		<cannot_salvage>1</cannot_salvage>
+		<attack>6</attack>
+		<health>29</health>
+		<skill id='magicfield' x='3' />
+		<cost>3</cost>
+		<rarity>4</rarity>
+		<type>3</type>
+		<sub_type>12</sub_type>
+		<set>5000</set>
+		<upgrade>
+			<level>2</level>
+			<health>30</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='fury' x='3' />
+			<skill id='enfeeble' all='1' x='2' />
+			<skill id='jam' c='4' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>32</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id='fury' x='3' />
+			<skill id='enfeeble' all='1' x='2' />
+			<skill id='jam' c='3' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<attack>7</attack>
+			<skill id='fury' x='3' />
+			<skill id='enfeeble' all='1' x='3' />
+			<skill id='jam' c='3' />
+		</upgrade>
+	</unit>
+<unit>
+		<id>30005</id>
+		<card_type>2</card_type>
+		<name>Midas Ultima,The Disruptor</name>
+		<asset_prefab>mythicMecha_A</asset_prefab>
+		<asset_prefab_alt>mythicMecha_A</asset_prefab_alt>
+		<picture>mythicMecha_A</picture>
+		<asset_bundle>57</asset_bundle>
+		<asset_bundle_alt>57</asset_bundle_alt>
+		<cannot_salvage>1</cannot_salvage>
+		<attack>13</attack>
+		<health>25</health>
+		<cost>2</cost>
+		<rarity>5</rarity>
+		<skill id="magicfield" x="4"/>
+		<type>2</type>
+		<sub_type>7</sub_type>
+		<set>2100</set>
+		<upgrade>
+			<level>2</level>
+			<attack>13</attack>
+			<health>26</health>
+			<skill id="magicfield" x="5"/>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<attack>14</attack>
+			<health>28</health>
+			<skill id="magicfield" x="6"/>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<attack>15</attack>
+			<health>30</health>
+			<skill id="magicfield" x="6"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<attack>16</attack>
+			<health>32</health>
+			<skill id="magicfield" x="7"/>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<attack>17</attack>
+			<health>34</health>
+			<skill id="magicfield" x="7"/>
+		</upgrade>
+		<upgrade>
+			<level>7</level>
+			<attack>18</attack>
+			<health>36</health>
+			<skill id="magicfield" x="7"/>
+		</upgrade>
+	</unit> -->
+  <!-- Midas -->
   <unit>
     <id>2075</id>
     <card_type>2</card_type>
@@ -23919,8 +24063,8 @@
     <picture>Angel_Apocalypse_Beast_B</picture>
     <asset_bundle>195</asset_bundle>
     <hidden_until_time>1610038800</hidden_until_time>
-    <attack>10</attack>
-    <health>55</health>
+    <attack>12</attack>
+    <health>58</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="counter" x="9" />
@@ -23932,27 +24076,27 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>56</health>
+      <health>59</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>11</attack>
+      <attack>13</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>57</health>
+      <health>62</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="counter" x="10" />
-      <skill id="enfeeble" x="3" all="1" />
-      <skill id="frost" x="5" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="frost" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="counter" x="10" />
-      <skill id="enfeeble" x="4" all="1" />
-      <skill id="frost" x="6" />
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="frost" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -28850,6 +28994,121 @@
       <skill id="fervor" x="7" y="11" />
       <skill id="enfeeble" x="5" all="1" />
       <skill id="leech" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2245</id>
+    <card_type>2</card_type>
+    <name>Winged Mercenaries</name>
+    <picture>Angel_Golden_Army_A</picture>
+    <asset_bundle>264</asset_bundle>
+    <hidden_until_time>1672938000</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="3" />
+    <skill id="rally" x="2" all="1" y="6" />
+    <skill id="legion" x="2" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="absorb" x="4" />
+      <skill id="rally" x="2" all="1" y="6" />
+      <skill id="legion" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12245</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Winged Troops</name>
+    <picture>Angel_Golden_Army_A</picture>
+    <asset_bundle>264</asset_bundle>
+    <hidden_until_time>1672938000</hidden_until_time>
+    <attack>7</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="4" />
+    <skill id="rally" x="3" all="1" y="6" />
+    <skill id="legion" x="3" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="absorb" x="4" />
+      <skill id="rally" x="3" all="1" y="6" />
+      <skill id="legion" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <skill id="absorb" x="5" />
+      <skill id="rally" x="3" all="1" y="6" />
+      <skill id="legion" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="5" />
+      <skill id="rally" x="3" all="1" y="6" />
+      <skill id="legion" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22245</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Winged Soldiers</name>
+    <picture>Angel_Golden_Army_B</picture>
+    <asset_bundle>264</asset_bundle>
+    <hidden_until_time>1672938000</hidden_until_time>
+    <attack>9</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="rally" x="3" all="1" y="6" />
+    <skill id="legion" x="5" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="7" />
+      <skill id="rally" x="3" all="1" y="6" />
+      <skill id="legion" x="5" />
     </upgrade>
   </unit>
 </root>

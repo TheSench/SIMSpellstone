@@ -18471,22 +18471,29 @@
   <!-- Wizard Event 97 - Goblin - Node 1 -->
   <achievement>
     <id>3837</id>
+    <!-- HERE  -->
     <type>2</type>
     <order>101</order>
     <name>Void Activity</name>
+    <!-- HERE  -->
     <desc>Complete the 'Void Activity' campaign on Mastery Level 1.</desc>
+    <!-- HERE  -->
     <mission_req>6550</mission_req>
     <locked_start_time>1670518800</locked_start_time>
-    <!-- Thursday, 8 December 2022 17:00:00		  -->
+    <!-- Thursday, 8 December 2022 17:00:00	 -->
+    <!-- HERE  -->
     <req>
       <campaign>1334</campaign>
+      <!-- HERE  -->
       <level>1</level>
     </req>
     <reward>
       <item id="3077" number="50" />
       <!-- Expediton Item -->
+      <!-- HERE  -->
       <event_points id="7093" number="50" />
       <!-- Expediton ID -->
+      <!-- HERE  -->
     </reward>
   </achievement>
   <achievement>
@@ -18499,6 +18506,7 @@
     <locked_start_time>1670518800</locked_start_time>
     <!-- Thursday, 8 December 2022 17:00:00		  -->
     <achievement_req>3837</achievement_req>
+    <!-- Dont forget requirement  -->
     <req>
       <campaign>1334</campaign>
       <level>2</level>
@@ -18594,6 +18602,151 @@
     <achievement_req>3842</achievement_req>
     <req>
       <campaign>1335</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 98 - Angel Void - Node 1 -->
+  <achievement>
+    <id>3844</id>
+    <!-- HERE  -->
+    <type>2</type>
+    <order>101</order>
+    <name>The Menace Returns!</name>
+    <!-- HERE  -->
+    <desc>Complete the 'The Menace Returns!' campaign on Mastery Level 1.</desc>
+    <!-- HERE  -->
+    <mission_req>6550</mission_req>
+    <locked_start_time>1672938000</locked_start_time>
+    <!-- Thursday, January 5, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <req>
+      <campaign>1337</campaign>
+      <!-- HERE  -->
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3053" number="50" />
+      <!-- Expediton Item -->
+      <!-- HERE  -->
+      <event_points id="7094" number="50" />
+      <!-- Expediton ID -->
+      <!-- HERE  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3845</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Menace Returns!</name>
+    <!-- HERE  -->
+    <desc>Complete the 'The Menace Returns!' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1672938000</locked_start_time>
+    <!-- Thursday, January 5, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3844</achievement_req>
+    <!-- Dont forget requirement  -->
+    <req>
+      <campaign>1337</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3846</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Menace Returns!</name>
+    <desc>Complete the 'The Menace Returns!' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1672938000</locked_start_time>
+    <!-- Thursday, January 5, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3845</achievement_req>
+    <req>
+      <campaign>1337</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3847</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Menace Returns!</name>
+    <desc>Complete the 'The Menace Returns!' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1672938000</locked_start_time>
+    <!-- Thursday, January 5, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3846</achievement_req>
+    <req>
+      <campaign>1337</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 98 - Angel Void - Node 2 -->
+  <achievement>
+    <id>3848</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Colossus</name>
+    <desc>Complete the 'The Colossus' campaign on Mastery Level 2.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1674147600</locked_start_time>
+    <!-- Thursday, 19 January 2023 17:00:00 -->
+    <req>
+      <campaign>1338</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3849</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Colossus</name>
+    <desc>Complete the 'The Colossus' campaign on Mastery Level 4.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1674147600</locked_start_time>
+    <!-- Thursday, 19 January 2023 17:00:00 -->
+    <achievement_req>3848</achievement_req>
+    <req>
+      <campaign>1338</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3850</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Colossus</name>
+    <desc>Complete the 'The Colossus' campaign on Mastery Level 6.</desc>
+    <mission_req>6550</mission_req>
+    <locked_start_time>1674147600</locked_start_time>
+    <!-- Thursday, 19 January 2023 17:00:00 -->
+    <achievement_req>3849</achievement_req>
+    <req>
+      <campaign>1338</campaign>
       <level>6</level>
     </req>
     <reward>
@@ -19806,6 +19959,7 @@
     </reward>
   </achievement>
   <achievement>
+    <!-- HERE copy from vanquisher -->
     <!-- Golden Crown Village -->
     <id>4051</id>
     <type>2</type>
@@ -19825,6 +19979,34 @@
       <!-- Gen2 node 1 -->
       <campaign>1335</campaign>
       <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Void Plane -->
+    <id>4052</id>
+    <type>2</type>
+    <order>633</order>
+    <name>Master of The Void Plane</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Void Plane.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7001</mission_req>
+    <req>
+      <campaign>1124</campaign>
+      <campaign>1125</campaign>
+      <campaign>1126</campaign>
+      <campaign>1127</campaign>
+      <campaign>1128</campaign>
+      <campaign>1129</campaign>
+      <campaign>1326</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1327</campaign>
+      <!-- Gen2 node 2 -->
+      <campaign>1337</campaign>
+      <campaign>1338</campaign>
       <level>7</level>
     </req>
     <reward>

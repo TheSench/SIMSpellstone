@@ -1985,7 +1985,7 @@ var BATTLEGROUNDS = {
 			}
 		],
 		"id": "160",
-		"name": "Angelical Voidness"
+		"name": "Celestial Voidness"
 	},
 	"161": {
 		"desc": "All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base health!.",

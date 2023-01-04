@@ -61623,5 +61623,293 @@
       <card id="4037" mastery_level="7" name="Nuvis, the Eye Collector" />
     </deck>
   </mission>
+  <mission>
+    <id>6990</id>
+    <name>The Calm Before the Storm</name>
+    <energy>18</energy>
+    <desc>All the inhabitants of Arcantica enjoyed the peace of vanishing the Void, but you heard that laugh and you know what that means, we need to be prepared. So, as fast as you can, you travel to Skyhaven, to alert the tribe of angels.</desc>
+    <commander id="203" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="2219" name="Freya scout" />
+      <card id="2204" name="Halo slave" />
+      <card id="2204" name="Halo slave" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="2086" mastery_level="2" name="Rimelight crusader" />
+      <card id="7263" mastery_level="3" name="Cheggrub" />
+      <card id="5121" mastery_level="4" name="Cauterizing psalm" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="2205" mastery_level="6" name="Herald of judgment" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6991</id>
+    <name>The Advice</name>
+    <energy>18</energy>
+    <desc>When you arrive at Skyhaven, you realize that the tribe of Angels was hoarding a massive amount of gold in this time of peace. When you give advice about the fact that Remi will return, all the angels start to be prepared for that moment.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="2219" name="Freya scout" />
+      <card id="2204" name="Halo slave" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="7263" name="Cheggrub" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="1041" name="Avenging angel" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5121" mastery_level="4" name="Cauterizing psalm" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6992</id>
+    <name>The Return of Remi</name>
+    <energy>18</energy>
+    <desc>The sound of the Angelical Army getting ready for the combat was silenced by the roar of multiple portals rifting everywhere. Remi has returned.</desc>
+    <commander id="306" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="1041" name="Avenging angel" />
+      <card id="2204" name="Halo slave" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="7263" name="Cheggrub" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="1041" name="Avenging angel" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5184" mastery_level="4" name="Icy grimkite" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6993</id>
+    <name>Gain some time</name>
+    <energy>18</energy>
+    <desc>The Void ambush was more quick than expected. The angelical army wasn't prepared yet, but you stand against the Void horde with a few angelical warriors at your side.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="7263" name="Cheggrub" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="1041" name="Avenging angel" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5184" mastery_level="4" name="Icy grimkite" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6994</id>
+    <name>The fight</name>
+    <energy>18</energy>
+    <desc>You feel like it's an endless horde of creatures from the void, but together with your winged partners resist bravely and start to advance, destroying each enemy that is put in front of you.</desc>
+    <commander id="365" />
+    <deck>
+      <card id="2219" name="Freya scout" />
+      <card id="2205" name="Herald of judgment" />
+      <card id="6272" name="Blazemaster rookie" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2030" name="Ebon duelist" />
+      <card id="1041" name="Avenging angel" />
+      <card id="5098" name="Skybound united" />
+      <card id="2086" name="Rimelight crusader" />
+      <card id="5184" name="Icy grimkite" />
+      <card id="6120" mastery_level="2" name="Oni blade" />
+      <card id="6181" mastery_level="3" name="Fearlord xerthis" />
+      <card id="5184" mastery_level="4" name="Icy grimkite" />
+      <card id="2205" mastery_level="5" name="Herald of judgment" />
+      <card id="5098" mastery_level="6" name="Skybound united" />
+      <card id="8055" mastery_level="7" name="Drynwyn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6995</id>
+    <name>Reaching the Portal</name>
+    <energy>18</energy>
+    <desc>With all your effort you can reach the first Void portal, but in that moment you hear the laugh of Remi, and a huge explosion pushes you away from the portal. Remi is ready to destroy Arcantica, and it seems you are the only one who can deal with it.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5154" mastery_level="3" name="Glaucus" />
+      <card id="5076" mastery_level="4" name="Sorath, the Valkyrie" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6996</id>
+    <name>The Retreat</name>
+    <energy>18</energy>
+    <desc>Remi and his horde were too much to deal with. You start your retreat, trying to make the way difficult for the enemies, who come towards you totally enraged.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="2141" name="Stormbreak beast" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5077" mastery_level="3" name="Evespark ace" />
+      <card id="5076" mastery_level="4" name="Sorath, the Valkyrie" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6997</id>
+    <name>Resist the Attack</name>
+    <energy>18</energy>
+    <desc>The Void horde led by Remi is relentless, but you receive reinforcements and a message that says that you need to resist because the angels are getting ready a final weapon to defeat Remi and the Void creatures.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="2141" name="Stormbreak beast" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5078" mastery_level="3" name="Asariel" />
+      <card id="5076" mastery_level="4" name="Sorath, the Valkyrie" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6998</id>
+    <name>Uncommon Allies</name>
+    <energy>18</energy>
+    <desc>The second wave of reinforcements came with a great surprise, the representatives of the three factions joined forces, Alyel, Leyla and Freya appeared side by side flying and destroying all the enemies in their way.</desc>
+    <commander id="306" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5040" name="Winged trumpeter" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5078" mastery_level="3" name="Asariel" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>6999</id>
+    <name>The Big Revelation</name>
+    <energy>18</energy>
+    <desc>You see how the horde seems to be multiplied after each hit, the hopes start to vanish from the angelical army and you start to lose your strength, but a massive light illuminates the skies, Midas, The Disruptor was released.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5078" name="Asariel" />
+      <card id="5078" name="Asariel" />
+      <card id="5078" mastery_level="2" name="Asariel" />
+      <card id="5078" mastery_level="3" name="Asariel" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6181" mastery_level="5" name="Fearlord xerthis" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7000</id>
+    <name>The Justice is Invincible</name>
+    <energy>18</energy>
+    <desc>Midas is a giant gold golem and the reason why the angels were hoarding that massive amount of gold, the power of this colossus is unstoppable. With each attack it destroys entire armies of void creatures.</desc>
+    <commander id="365" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2173" name="Soulstained reaper" />
+      <card id="5154" name="Glaucus" />
+      <card id="6181" name="Fearlord xerthis" />
+      <card id="5077" mastery_level="2" name="Evespark ace" />
+      <card id="7265" mastery_level="3" name="Halo-Weaver Huntress" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6184" mastery_level="5" name="Thundering hellwing" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7001</id>
+    <name>The Final Justice</name>
+    <energy>18</energy>
+    <desc>With the invaluable help of Midas you can reach Remi in a one on one battle, he tries to use his tricks and traps to escape, but you are faster and stronger than him, with a final blow you can capture and imprison him, the Justice was delivered.</desc>
+    <commander id="407" />
+    <deck>
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="2220" name="Frozenbolt adept" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="2141" name="Stormbreak beast" />
+      <card id="1025" name="Lightbound archer" />
+      <card id="6184" name="Thundering hellwing" />
+      <card id="5078" name="Asariel" />
+      <card id="5078" name="Asariel" />
+      <card id="6100" mastery_level="2" name="Tiamat" />
+      <card id="5217" mastery_level="3" name="Azazreal" />
+      <card id="6100" mastery_level="4" name="Tiamat" />
+      <card id="6184" mastery_level="5" name="Thundering hellwing" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
+    </deck>
+  </mission>
 </root>
 

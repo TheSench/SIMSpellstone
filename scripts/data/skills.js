@@ -55,6 +55,12 @@ var SKILL_DATA = {
 		"name": "Scorch Self",
 		"type": "activation"
 	},
+	"cleanse": {
+		"desc": "Every {c} turns, remove the negative states of itself or an ally.",
+		"icon": "cleanse",
+		"name": "Cleanse",
+		"type": "earlyActivation"
+	},
 	"confuse": {
 		"desc": "Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally.",
 		"icon": "confuse",
@@ -228,6 +234,12 @@ var SKILL_DATA = {
 		"icon": "legion",
 		"name": "Legion",
 		"type": "earlyActivation"
+	},
+	"magicfield": {
+		"desc": "Grants Ward to self and half as much to adjacent ally creatures.",
+		"icon": "avian_barrier",
+		"name": "Anti-Magic Field",
+		"type": "activation"
 	},
 	"mark": {
 		"desc": "Marks a random target upon first activation, Hexing them for 30% of their base Attack. The creature chooses a new mark when their current mark dies. Ignores Invisibility.",
