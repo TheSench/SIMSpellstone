@@ -1340,7 +1340,37 @@
     <desc>Angels gain barrier 2+15%, 0-2 delay angels gain 10% legion and 3-4 delay angels gain 10% weaken. 0-2 delay voids gain 3+10% Siphon and 3-4 delay voids gain 3+10% Regenerate. Values based on HP!</desc>
     <icon>filter_void_64</icon>
     <effect>
-      <add_skill id="protect" mult="0.15" x="2" base="health" y="6" />
+      <skill id="protect" ignore_nullify="1" mult="0.15" x="2" all="1" base="health" yy="6" />
+      <skill id="displayEffect" trigger="onSkill" s="protect">
+        <target_effect>
+          <prefab>submerge_fadecloth</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillHit" s="protect">
+        <actor_effect>
+          <prefab>submerge_barrier</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillBreak" s="protect">
+        <actor_effect>
+          <prefab>submerge_break</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
       <add_skill id="legion" mult="0.10" base="health" y="6" delay="0,1,2" />
       <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
         <projectile_effect>

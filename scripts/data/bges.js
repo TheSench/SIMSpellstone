@@ -1928,9 +1928,11 @@ var BATTLEGROUNDS = {
 		"desc": "Angels gain barrier 2+15%, 0-2 delay angels gain 10% legion and 3-4 delay angels gain 10% weaken. 0-2 delay voids gain 3+10% Siphon and 3-4 delay voids gain 3+10% Regenerate. Values based on HP!",
 		"effect": [
 			{
+				"all": "1",
 				"base": "health",
-				"effect_type": "add_skill",
+				"effect_type": "skill",
 				"id": "protect",
+				"ignore_nullify": "1",
 				"mult": 0.15,
 				"x": 2,
 				"y": "6"
