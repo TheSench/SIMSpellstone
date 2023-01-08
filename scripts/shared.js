@@ -1141,6 +1141,7 @@ function copy_skill(original_skill) {
     new_skill.z = original_skill.z;
     new_skill.c = original_skill.c;
     new_skill.s = original_skill.s;
+    new_skill.ignore_nullify = original_skill.ignore_nullify;
     return new_skill;
 }
 
