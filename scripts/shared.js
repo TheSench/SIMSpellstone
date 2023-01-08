@@ -163,9 +163,9 @@ function shuffle(list) {
 function initializeCard(card, p, newKey) {
     card.owner = p;
     card.timer = card.cost;
-    card.health_left = card.health;
     // Setup status effects
     applyDefaultStatuses(card);
+    card.health_left = card.health;
     card.key = newKey;
     if (!card.reusableSkills) card.resetTimers();
 }
