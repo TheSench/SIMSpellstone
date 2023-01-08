@@ -467,7 +467,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
