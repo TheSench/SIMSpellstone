@@ -196,8 +196,8 @@ var SIMULATOR = {};
 				// Check for Dualstrike
 				var dualstrike = current_unit.flurry;
 				if (dualstrike && dualstrike.countdown === 0) {
-					// Dual-strike does not activate if unit has 0 attack
-					if (current_unit.hasAttack()) {
+					// Dual-strike does not activate if unit has 0 attack (or is silenced)
+					if (current_unit.hasAttack() && !current_unit.silenced) {
 						dualstrike.countdown = dualstrike.c;
 						current_unit.dualstrike_triggered = true;
 					}
@@ -1117,7 +1117,7 @@ var SIMULATOR = {};
 		vampirism: function vampirism(sourceCard, enemyAssaults) {
 			var target = enemyAssaults[sourceCard.key];
 			
-			if (target && target.isAlive()) {
+			if (target && target.isAlive() && !sourceCard.silenced) {
 				var vampirism = sourceCard.vampirism;
 				var damageInfo = modifySkillDamage(target, vampirism, { enfeeble: true });
 				var damageDealt = damageInfo.damage;
@@ -2132,7 +2132,7 @@ var SIMULATOR = {};
 			}
 
 			// Check valor
-			if (current_assault.valor) {
+			if (current_assault.valor && !current_assault.silenced) {
 				var enemy = field_o_assaults[i];
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
 					var valor = adjustAttackIncrease(current_assault, current_assault.valor);
@@ -2705,7 +2705,11 @@ var SIMULATOR = {};
 			if (!current_assault.isAlive()) {
 				doOnDeathSkills(current_assault, null);
 			}
-
+			
+			if (current_assault.silenced) {
+				setPassiveStatus(current_assault, 'evade', 'invisible');
+				setPassiveStatus(current_assault, 'absorb', 'warded');
+			}
 			current_assault.silenced = false;
 		}
 	}
