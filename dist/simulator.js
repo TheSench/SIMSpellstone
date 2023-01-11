@@ -1525,6 +1525,7 @@ function copy_skill(original_skill) {
     new_skill.z = original_skill.z;
     new_skill.c = original_skill.c;
     new_skill.s = original_skill.s;
+    new_skill.ignore_nullify = original_skill.ignore_nullify;
     return new_skill;
 }
 
@@ -3144,7 +3145,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -3201,7 +3202,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[targets[key]];
 				
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!\n';
 					continue;
@@ -3264,7 +3265,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -3910,7 +3911,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -3953,7 +3954,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[target_key];
 				if (target && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					// Check Nullify
-					if (target.nullified) {
+					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
 						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
@@ -3996,7 +3997,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[target_key];
 				if (target && target.isActive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					// Check Nullify
-					if (target.nullified) {
+					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
 						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
@@ -4164,7 +4165,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -4223,7 +4224,7 @@ var SIM_CONTROLLER = (function () {
 				var amount = enrage;
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -4288,7 +4289,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
