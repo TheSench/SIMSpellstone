@@ -1,0 +1,4 @@
+paths:
+  - scripts
+paths-ignore:
+  - scripts/data
