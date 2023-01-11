@@ -3199,6 +3199,14 @@ var SIM_CONTROLLER = (function () {
 
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
+				
+				// Check Nullify
+				if (target.nullified) {
+					target.nullified--;
+					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!\n';
+					continue;
+				}
+				
 				target.protected += wingward;
 				var invisBoost = Math.ceil(wingward/2);
 				target.invisible += invisBoost;
