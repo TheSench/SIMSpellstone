@@ -2707,10 +2707,11 @@ var SIMULATOR = {};
 			}
 			
 			if (current_assault.silenced) {
+				current_assault.silenced = false;
+				// Now that silence is wearing off, re-enable these skills
 				setPassiveStatus(current_assault, 'evade', 'invisible');
 				setPassiveStatus(current_assault, 'absorb', 'warded');
 			}
-			current_assault.silenced = false;
 		}
 	}
 
