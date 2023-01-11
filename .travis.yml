@@ -9,7 +9,6 @@ addons:
 branches:
   only:
   - gh-pages
-  - /.*/
 cache:
   # Caches $HOME/.npm when npm ci is default script command
   # Caches node_modules in all other cases
