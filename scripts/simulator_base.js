@@ -524,7 +524,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[targets[key]];
 				
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!\n';
 					continue;
@@ -587,7 +587,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -1233,7 +1233,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -1276,7 +1276,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[target_key];
 				if (target && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					// Check Nullify
-					if (target.nullified) {
+					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
 						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
@@ -1319,7 +1319,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[target_key];
 				if (target && target.isActive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
 					// Check Nullify
-					if (target.nullified) {
+					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
 						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
@@ -1487,7 +1487,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -1546,7 +1546,7 @@ var SIMULATOR = {};
 				var amount = enrage;
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
@@ -1611,7 +1611,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[targets[key]];
 
 				// Check Nullify
-				if (target.nullified) {
+				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
