@@ -3092,7 +3092,7 @@ var SIMULATOR = {};
 				current_assault.corroded = { amount: corrosion, timer: 2 };
 			}
 			if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
-			current_assault.attack_corroded = corrosion;
+			current_assault.attack_corroded = current_assault.corroded.amount;
 			if (debug) {
 				echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 			}
