@@ -2693,6 +2693,12 @@ var SIMULATOR = {};
 					if (debug) {
 						echo += debug_name(current_assault) + ' recovers from corrosion<br>';
 					}
+				} else {
+					var corrosion = corroded.amount;
+					current_assault.attack_corroded = corrosion;
+					if (debug) {
+						echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
+					}
 				}
 			}
 
