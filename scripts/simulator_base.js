@@ -2138,7 +2138,7 @@ var SIMULATOR = {};
 			// Check valor
 			if (current_assault.valor && !current_assault.silenced) {
 				var enemy = field_o_assaults[i];
-				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
+				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack() && enemy.hasAttack()) {
 					var valor = adjustAttackIncrease(current_assault, current_assault.valor);
 					current_assault.attack_valor += valor;
 					if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
