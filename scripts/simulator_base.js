@@ -1059,19 +1059,23 @@ var SIMULATOR = {};
 			var all = skill.all;
 
 			var targets = [];
-			var getTargets = function (include0Strength) {
+			var getTargets = function (include0Strength, includeInactive) {
 				for (var key = 0, len = potentialTargets.length; key < len; key++) {
 					var target = potentialTargets[key];
 					if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
-						&& (all || (target.isActiveNextTurn() && target.isUnjammed() && (include0Strength || target.hasAttack())))) {
+						&& (all || (!target.isTower() && (includeInactive || target.isActiveNextTurn()) && (include0Strength || target.hasAttack())))) {
 						targets.push(key);
 					}
 				}
 			};
-			getTargets(false);
+			getTargets(false, false);
 			// Only target 0-strength units if there are no 1+ strength units left
 			if (!targets.length) {
-				getTargets(true);
+				getTargets(true, false);
+			}
+			// Target cards on delay (not active next turn) otherwise
+			if (!targets.length) {
+				getTargets(false, true);
 			}
 
 			// No Targets
