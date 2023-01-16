@@ -1185,6 +1185,23 @@ function debug_name(card, hideStats) {
     return output;
 }
 
+function debug_find_skill(target, s) {
+    var skill;
+    if (!target[s]) {
+        skill = target.skill.concat(target.earlyActivationSkills);
+        for (var i in skill) {
+            if (skill[i].id == s) {
+                skill = copy_skill(skill[i]);
+                break
+            }
+        }
+    }
+    else
+        skill = { 'id': s, 'x': target[s] };
+    skill.x += getEnhancement(target, s, skill.x);
+    return debug_skill(skill);
+}
+
 function debug_skill(skill) {
     var output = convertName(skill.id);
     if (skill.all) output += ' all';

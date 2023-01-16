@@ -526,7 +526,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!\n';
+					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 				
@@ -1503,10 +1503,10 @@ var SIMULATOR = {};
 				enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
 				if (x > 0) {
 					enhancements[s]['x'] += x;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+					if (debug) echo += debug_name(src_card) + ' enhances ' + convertName(s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
 				} else if (mult > 0) {
 					enhancements[s]['mult'] += mult;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					if (debug) echo += debug_name(src_card) + ' enhances ' + convertName(s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
 				}
 			}
 
@@ -1617,7 +1617,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -1626,8 +1626,8 @@ var SIMULATOR = {};
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
 					enhancements[s]['x'] += x;
-					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_skill(skill) + ' by ' + x + '<br>';
 				} else {
 					target.imbue(skill);
 					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
