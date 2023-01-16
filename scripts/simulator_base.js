@@ -1500,12 +1500,12 @@ var SIMULATOR = {};
 				affected++;
 
 				var enhancements = target.enhanced;
+				enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
 				if (x > 0) {
-					enhancements[s] = (enhancements[s] || 0) + x;
+					enhancements[s]['x'] += x;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
 				} else if (mult > 0) {
-					// temporarily use negatives for multiplier
-					enhancements[s] = -mult;
+					enhancements[s]['mult'] += mult;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
 				}
 			}
@@ -1625,7 +1625,8 @@ var SIMULATOR = {};
 
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
-					enhancements[s] = (enhancements[s] || 0) + x;
+					enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
+					enhancements[s]['x'] += x;
 					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_skill(skill) + ' by ' + x + '<br>';
 				} else {
 					target.imbue(skill);

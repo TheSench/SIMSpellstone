@@ -668,10 +668,9 @@ var makeUnit = (function() {
 
 var getEnhancement = function(card, s, base) {
     var enhancements = card.enhanced;
-    var enhanced = (enhancements ? (enhancements[s] || 0) : 0);
-    if (enhanced < 0) {
-        enhanced = Math.ceil(base * -enhanced);
-    }
+    var e = { 'x': 0, 'mult': 0 }; // Default value
+    var enhanced = (enhancements ? (enhancements[s] || e) : e);
+    enhanced = Math.ceil(base * enhanced['mult']) + enhanced['x'];
     return enhanced;
 };
 
