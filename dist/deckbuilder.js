@@ -682,10 +682,9 @@ var makeUnit = (function() {
 
 var getEnhancement = function(card, s, base) {
     var enhancements = card.enhanced;
-    var enhanced = (enhancements ? (enhancements[s] || 0) : 0);
-    if (enhanced < 0) {
-        enhanced = Math.ceil(base * -enhanced);
-    }
+    var e = { 'x': 0, 'mult': 0 }; // Default value
+    var enhanced = (enhancements ? (enhancements[s] || e) : e);
+    enhanced = Math.ceil(base * enhanced['mult']) + enhanced['x'];
     return enhanced;
 };
 
@@ -1198,6 +1197,23 @@ function debug_name(card, hideStats) {
     }
 
     return output;
+}
+
+function debug_find_skill(target, s) {
+    var skill;
+    if (!target[s]) {
+        skill = target.skill.concat(target.earlyActivationSkills);
+        for (var i in skill) {
+            if (skill[i].id == s) {
+                skill = copy_skill(skill[i]);
+                break
+            }
+        }
+    }
+    else
+        skill = { 'id': s, 'x': target[s] };
+    skill.x += getEnhancement(target, s, skill.x);
+    return debug_skill(skill);
 }
 
 function debug_skill(skill) {

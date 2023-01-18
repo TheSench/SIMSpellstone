@@ -1052,10 +1052,9 @@ var makeUnit = (function() {
 
 var getEnhancement = function(card, s, base) {
     var enhancements = card.enhanced;
-    var enhanced = (enhancements ? (enhancements[s] || 0) : 0);
-    if (enhanced < 0) {
-        enhanced = Math.ceil(base * -enhanced);
-    }
+    var e = { 'x': 0, 'mult': 0 }; // Default value
+    var enhanced = (enhancements ? (enhancements[s] || e) : e);
+    enhanced = Math.ceil(base * enhanced['mult']) + enhanced['x'];
     return enhanced;
 };
 
@@ -1568,6 +1567,23 @@ function debug_name(card, hideStats) {
     }
 
     return output;
+}
+
+function debug_find_skill(target, s) {
+    var skill;
+    if (!target[s]) {
+        skill = target.skill.concat(target.earlyActivationSkills);
+        for (var i in skill) {
+            if (skill[i].id == s) {
+                skill = copy_skill(skill[i]);
+                break
+            }
+        }
+    }
+    else
+        skill = { 'id': s, 'x': target[s] };
+    skill.x += getEnhancement(target, s, skill.x);
+    return debug_skill(skill);
 }
 
 function debug_skill(skill) {
@@ -3204,7 +3220,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!\n';
+					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 				
@@ -4178,13 +4194,13 @@ var SIM_CONTROLLER = (function () {
 				affected++;
 
 				var enhancements = target.enhanced;
+				enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
 				if (x > 0) {
-					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+					enhancements[s]['x'] += x;
+					if (debug) echo += debug_name(src_card) + ' enhances ' + convertName(s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
 				} else if (mult > 0) {
-					// temporarily use negatives for multiplier
-					enhancements[s] = -mult;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					enhancements[s]['mult'] += mult;
+					if (debug) echo += debug_name(src_card) + ' enhances ' + convertName(s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
 				}
 			}
 
@@ -4295,7 +4311,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -4303,8 +4319,9 @@ var SIM_CONTROLLER = (function () {
 
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
-					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_skill(skill) + ' by ' + x + '<br>';
+					enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
+					enhancements[s]['x'] += x;
 				} else {
 					target.imbue(skill);
 					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
