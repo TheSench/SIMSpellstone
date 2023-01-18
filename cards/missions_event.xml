@@ -61911,5 +61911,150 @@
       <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
     </deck>
   </mission>
+  <!-- LBN 98 Uncommon Allies -->
+  <mission>
+    <id>7002</id>
+    <name>Searching For Cooperation</name>
+    <energy>18</energy>
+    <desc>With Remi imprisoned, the conflict between the three factions of angels return with more power, but you saw the potential if they joined forces. So, now you put a mission to yourself; create the union of the three factions to reveal the true potential of the Angels tribe.</desc>
+    <commander id="479" />
+    <deck>
+      <card id="7071" name="Gorilleus" />
+      <card id="7071" name="Gorilleus" />
+      <card id="7040" name="Warden of the Leaf" />
+      <card id="7040" name="Warden of the Leaf" />
+      <card id="7223" name="Vombomber Recruit" />
+      <card id="7223" name="Vombomber Recruit" />
+      <card id="7224" name="Floral Sprite" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7179" name="Battlefield Berserker" />
+      <card id="7071" mastery_level="2" name="Gorilleus" />
+      <card id="7179" mastery_level="3" name="Battlefield Berserker" />
+      <card id="7297" mastery_level="4" name="Cursed Caserpent" />
+      <card id="7223" mastery_level="5" name="Vombomber Recruit" />
+      <card id="7263" mastery_level="6" name="Cheggrub" />
+      <card id="7608" mastery_level="7" name="The Triad of Fortunes" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7003</id>
+    <name>The Smallest Doesn't Mean The Weakest</name>
+    <energy>18</energy>
+    <desc>You approach Freya, the commandant of the Wyld faction in the Angel Tribe. When she hears your offer to create an alliance with the other factions, she asks for two things, the first one is, like in nature, an equal balance of power, and the second, a proof of your strength.</desc>
+    <commander id="479" />
+    <deck>
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7263" name="Cheggrub" />
+      <card id="7263" name="Cheggrub" />
+      <card id="7264" name="Apricot Qilin" />
+      <card id="7264" name="Apricot Qilin" />
+      <card id="7040" name="Warden of the Leaf" />
+      <card id="7224" name="Floral Sprite" />
+      <card id="7254" name="Halo Frenzier" />
+      <card id="7264" mastery_level="2" name="Apricot Qilin" />
+      <card id="7254" mastery_level="3" name="Halo Frenzier" />
+      <card id="7040" mastery_level="4" name="Warden of the Leaf" />
+      <card id="7297" mastery_level="5" name="Cursed Caserpent" />
+      <card id="7254" mastery_level="6" name="Halo Frenzier" />
+      <card id="6620" mastery_level="7" name="Abbadon, the Vicious" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7004</id>
+    <name>A Chaotic Reception</name>
+    <energy>18</energy>
+    <desc>Before you can reach Alyel, her troops stop you and ask you to prove yourself worth it so that Commander Alyel spends her valuable time.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="2205" name="Herald of Judgement" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="6214" name="Trampling Demon" />
+      <card id="6214" name="Trampling Demon" />
+      <card id="6117" name="Whispering Ophanim" />
+      <card id="6117" name="Whispering Ophanim" />
+      <card id="6182" name="Ezuth the Expelled" />
+      <card id="6182" name="Ezuth the Expelled" />
+      <card id="6100" name="Tiamat" />
+      <card id="6220" mastery_level="2" name="Gobtoh the Risen" />
+      <card id="6117" mastery_level="3" name="Whispering Ophanim" />
+      <card id="6213" mastery_level="4" name="Stonespeak Devil" />
+      <card id="6215" mastery_level="5" name="Sabriel" />
+      <card id="6294" mastery_level="6" name="Rogue Seraphim" />
+      <card id="7617" mastery_level="7" name="Bashira, the Half-Blooded" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7005</id>
+    <name>Even the Chaos has its logic</name>
+    <energy>18</energy>
+    <desc>Alyel was training some new recruits. When you arrived she told you that she knew what you wanted from her, but to just forget about it. She doesn't want an alliance, she only wants more power, so if you can show that to her she will be part of your plan.</desc>
+    <commander id="469" />
+    <deck>
+      <card id="2205" name="Herald of Judgement" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="6220" name="Gobtoh the Risen" />
+      <card id="6220" name="Gobtoh the Risen" />
+      <card id="6214" name="Trampling Demon" />
+      <card id="6214" name="Trampling Demon" />
+      <card id="6117" name="Whispering Ophanim" />
+      <card id="6100" name="Tiamat" />
+      <card id="6182" name="Ezuth the Expelled" />
+      <card id="6215" mastery_level="2" name="Sabriel" />
+      <card id="6213" mastery_level="3" name="Stonespeak Devil" />
+      <card id="2220" mastery_level="4" name="Frozenbolt Adept" />
+      <card id="6294" mastery_level="5" name="Rogue Seraphim" />
+      <card id="6100" mastery_level="6" name="Tiamat" />
+      <card id="6616" mastery_level="7" name="Mephisto, the Pactmaker" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7006</id>
+    <name>The Aether Puzzle</name>
+    <energy>18</energy>
+    <desc>When you stand in the magnificents doors of the Aether faction building a sign take your attention " Everyone that thinks is worthy needs to move across the Invisible Maze and survive ".</desc>
+    <commander id="480" />
+    <deck>
+      <card id="5260" name="Monkey Style Tenshi" />
+      <card id="5260" name="Monkey Style Tenshi" />
+      <card id="5154" name="Glaucus" />
+      <card id="5154" name="Glaucus" />
+      <card id="5031" name="Frostlance Valkyrie" />
+      <card id="5031" name="Frostlance Valkyrie" />
+      <card id="5224" name="Baaht, Fire Forger" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="5120" name="Seraph of Stone Rise" />
+      <card id="5224" mastery_level="2" name="Baaht, Fire Forger" />
+      <card id="2028" mastery_level="3" name="Infinity" />
+      <card id="5184" mastery_level="4" name="Icy Grimkite" />
+      <card id="5300" mastery_level="5" name="Kinetic Initiate" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="5625" mastery_level="7" name="Aeronwen, the Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7007</id>
+    <name>The Winged Union</name>
+    <energy>18</energy>
+    <desc>When you reach the final of the Aether Labyrinth, you go up some stairs and can see the three Angelicals commanders clapping and congratulating you. Now the Angel tribe is united, your next mission is to do the same with the other tribes.</desc>
+    <commander id="480" />
+    <deck>
+      <card id="5300" name="Kinetic Initiate" />
+      <card id="5300" name="Kinetic Initiate" />
+      <card id="5260" name="Monkey Style Tenshi" />
+      <card id="5260" name="Monkey Style Tenshi" />
+      <card id="5154" name="Glaucus" />
+      <card id="5154" name="Glaucus" />
+      <card id="5184" name="Icy Grimkite" />
+      <card id="5088" name="Betrayal" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="5088" mastery_level="2" name="Betrayal" />
+      <card id="2028" mastery_level="3" name="Infinity" />
+      <card id="5184" mastery_level="4" name="Icy Grimkite" />
+      <card id="5120" mastery_level="5" name="Seraph of Stone Rise" />
+      <card id="5184" mastery_level="6" name="Icy Grimkite" />
+      <card id="5624" mastery_level="7" name="Altos, the Implacable" />
+    </deck>
+  </mission>
 </root>
 

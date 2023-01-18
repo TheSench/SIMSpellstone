@@ -1993,9 +1993,11 @@ var BATTLEGROUNDS = {
 		"desc": "All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base health!.",
 		"effect": [
 			{
+				"all": "1",
 				"base": "health",
-				"effect_type": "add_skill",
+				"effect_type": "skill",
 				"id": "protect",
+				"ignore_nullify": "1",
 				"mult": 0.15,
 				"x": 2,
 				"y": "6"
@@ -2026,6 +2028,63 @@ var BATTLEGROUNDS = {
 		],
 		"id": "161",
 		"name": "Celestial Raid"
+	},
+	"162": {
+		"desc": "0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!. BGE subject to changes!",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"mult": 0.1,
+				"x": 2,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 0.2,
+				"x": 3,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"mult": 0.1,
+				"x": 2,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"mult": 0.07,
+				"x": 2,
+				"y": "13"
+			}
+		],
+		"id": "162",
+		"name": "Deadly Swarm"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

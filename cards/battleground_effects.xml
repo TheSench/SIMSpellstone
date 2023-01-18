@@ -1398,7 +1398,37 @@
     <desc>All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base health!.</desc>
     <icon>filter_angel_64</icon>
     <effect>
-      <add_skill id="protect" mult="0.15" x="2" base="health" y="6" />
+      <skill id="protect" ignore_nullify="1" mult="0.15" x="2" all="1" base="health" yy="6" />
+      <skill id="displayEffect" trigger="onSkill" s="protect">
+        <target_effect>
+          <prefab>submerge_fadecloth</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillHit" s="protect">
+        <actor_effect>
+          <prefab>submerge_barrier</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillBreak" s="protect">
+        <actor_effect>
+          <prefab>submerge_break</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
       <add_skill id="legion" mult="0.10" base="health" y="6" delay="0,1,2" />
       <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
         <projectile_effect>
@@ -1416,6 +1446,18 @@
         </target_effect>
       </skill>
       <add_skill id="weakenbge" mult="0.10" base="health" y="6" delay="3,4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>162</id>
+    <name>Deadly Swarm</name>
+    <desc>0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!. BGE subject to changes!</desc>
+    <icon>filter_insect_64.png</icon>
+    <effect>
+      <add_skill id="venom" mult="0.10" x="2" base="health" y="13" delay="0,1,2" />
+      <add_skill id="pierce" mult="0.20" x="3" base="health" y="13" delay="0,1,2" />
+      <add_skill id="corrosive" x="2" mult="0.10" base="health" yy="13" delay="3,4" />
+      <add_skill id="counter" x="2" mult="0.07" base="health" y="13" delay="3,4" />
     </effect>
   </battleground>
   <!-- ================================= -->

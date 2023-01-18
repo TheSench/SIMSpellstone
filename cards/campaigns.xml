@@ -12876,5 +12876,37 @@
     <find_item id="3077" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Krampus Goblin event 97 END -->
+  <!-- LBN Uncommon Allies event 98  -->
+  <campaign>
+    <id>4011</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Allies</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>9</location_id>
+    <x>125</x>
+    <y>200</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>7002</mission_id>
+      <mission_id>7003</mission_id>
+      <mission_id>7004</mission_id>
+      <mission_id>7005</mission_id>
+      <mission_id>7006</mission_id>
+      <mission_id>7007</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2220" />
+      <card level="5" id="2220" />
+      <item level="6" id="104067" number="25" />
+      <item level="7" id="104067" number="75" />
+    </rewards>
+    <find_item id="3053" drop_per_energy=".6" />
+  </campaign>
+  <!-- LBN Uncommon Allies event 98 END -->
 </root>
 

@@ -6451,6 +6451,22 @@ var CAMPAIGNS = {
 			"6989"
 		],
 		"name": "Lightning Krampus"
+	},
+	"4011": {
+		"id": "4011",
+		"items": {
+			"3053": 0.6
+		},
+		"location_id": "9",
+		"missions": [
+			"7002",
+			"7003",
+			"7004",
+			"7005",
+			"7006",
+			"7007"
+		],
+		"name": "Lightning Allies"
 	}
 };
 var MISSIONS = {
@@ -136256,5 +136272,365 @@ var MISSIONS = {
 		],
 		"id": "7001",
 		"name": "The Final Justice"
+	},
+	"7002": {
+		"commander": {
+			"id": "479"
+		},
+		"deck": [
+			{
+				"id": "7071"
+			},
+			{
+				"id": "7071"
+			},
+			{
+				"id": "7040"
+			},
+			{
+				"id": "7040"
+			},
+			{
+				"id": "7223"
+			},
+			{
+				"id": "7223"
+			},
+			{
+				"id": "7224"
+			},
+			{
+				"id": "7120"
+			},
+			{
+				"id": "7179"
+			},
+			{
+				"id": "7071",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7297",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7223",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7263",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7608",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7002",
+		"name": "Searching For Cooperation"
+	},
+	"7003": {
+		"commander": {
+			"id": "479"
+		},
+		"deck": [
+			{
+				"id": "7120"
+			},
+			{
+				"id": "7120"
+			},
+			{
+				"id": "7263"
+			},
+			{
+				"id": "7263"
+			},
+			{
+				"id": "7264"
+			},
+			{
+				"id": "7264"
+			},
+			{
+				"id": "7040"
+			},
+			{
+				"id": "7224"
+			},
+			{
+				"id": "7254"
+			},
+			{
+				"id": "7264",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7254",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7040",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7297",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7254",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6620",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7003",
+		"name": "The Smallest Doesn't Mean The Weakest"
+	},
+	"7004": {
+		"commander": {
+			"id": "469"
+		},
+		"deck": [
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "6117"
+			},
+			{
+				"id": "6117"
+			},
+			{
+				"id": "6182"
+			},
+			{
+				"id": "6182"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6117",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6213",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6215",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6294",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7617",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7004",
+		"name": "A Chaotic Reception"
+	},
+	"7005": {
+		"commander": {
+			"id": "469"
+		},
+		"deck": [
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "6220"
+			},
+			{
+				"id": "6220"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "6117"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6182"
+			},
+			{
+				"id": "6215",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6213",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2220",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6294",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6100",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6616",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7005",
+		"name": "Even the Chaos has its logic"
+	},
+	"7006": {
+		"commander": {
+			"id": "480"
+		},
+		"deck": [
+			{
+				"id": "5260"
+			},
+			{
+				"id": "5260"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "5031"
+			},
+			{
+				"id": "5031"
+			},
+			{
+				"id": "5224"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "5120"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2028",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5184",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5300",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5625",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7006",
+		"name": "The Aether Puzzle"
+	},
+	"7007": {
+		"commander": {
+			"id": "480"
+		},
+		"deck": [
+			{
+				"id": "5300"
+			},
+			{
+				"id": "5300"
+			},
+			{
+				"id": "5260"
+			},
+			{
+				"id": "5260"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "5184"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2028",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5184",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5120",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5184",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5624",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7007",
+		"name": "The Winged Union"
 	}
 };
