@@ -1500,12 +1500,12 @@ var SIMULATOR = {};
 				affected++;
 
 				var enhancements = target.enhanced;
-				enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
+				enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
 				if (x > 0) {
-					enhancements[s]['x'] += x;
+					enhancements[s].x += x;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + convertName(s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
 				} else if (mult > 0) {
-					enhancements[s]['mult'] += mult;
+					enhancements[s].mult += mult;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + convertName(s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
 				}
 			}
@@ -1625,9 +1625,9 @@ var SIMULATOR = {};
 
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
-					enhancements[s] = enhancements[s] || { 'x': 0, 'mult': 0 };
+					enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
 					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
-					enhancements[s]['x'] += x;
+					enhancements[s].x += x;
 				} else {
 					target.imbue(skill);
 					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
