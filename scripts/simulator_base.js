@@ -526,7 +526,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!\n';
+					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 				
@@ -1500,13 +1500,13 @@ var SIMULATOR = {};
 				affected++;
 
 				var enhancements = target.enhanced;
+				enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
 				if (x > 0) {
-					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+					enhancements[s].x += x;
 				} else if (mult > 0) {
-					// temporarily use negatives for multiplier
-					enhancements[s] = -mult;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					enhancements[s].mult += mult;
 				}
 			}
 
@@ -1617,7 +1617,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -1625,11 +1625,12 @@ var SIMULATOR = {};
 
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
-					enhancements[s] = (enhancements[s] || 0) + x;
-					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_skill(skill) + ' by ' + x + '<br>';
+					enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
+					enhancements[s].x += x;
 				} else {
 					target.imbue(skill);
-					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(target, skill) + '<br>';
 				}
 			}
 
