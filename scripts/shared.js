@@ -1198,17 +1198,16 @@ function debug_find_skill(target, s) {
     } else {
         skill = { id: s, x: target[s] };
     }
-    skill.x += getEnhancement(target, s, skill.x);
-    return debug_skill(skill);
+    return debug_skill(target, skill);
 }
 
-function debug_skill(skill) {
+function debug_skill(target, skill) {
     var output = convertName(skill.id);
     if (skill.all) output += ' all';
     if (skill.y) output += ' ' + factions.names[skill.y];
     if (skill.s) output += ' ' + convertName(skill.s);
     if (skill.c) output += ' every ' + skill.c + ' turns';
-    else if (skill.x) output += ' ' + skill.x;
+    else if (skill.x) output += ' ' + (skill.x + getEnhancement(target, skill.id, skill.x));
     return output;
 }
 
