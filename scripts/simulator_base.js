@@ -479,7 +479,7 @@ var SIMULATOR = {};
 					if (!target.isActive()) {
 						mult += (skill.on_delay_mult || 0);
 					}
-					protect_amt += Math.ceil(target.health * mult);
+					protect_amt += Math.ceil(target.base_health * mult);
 				}
 
 				target.protected += protect_amt;
