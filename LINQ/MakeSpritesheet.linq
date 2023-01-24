@@ -63,7 +63,7 @@ void Main()
 			if (images % dimensions > 0) height++;
 			if (height > dimensions) height = dimensions;
 			var sheetName = "SpriteSheet" + sheetIndex + ".jpg";
-			var backgroundImage = "background-image: url('../res/cardImages/" + sheetName + "');";
+			var backgroundImage = "background-image: url('../res/sprites/" + sheetName + "');";
 			using (var spriteSheet = new Bitmap(84 * dimensions, 120 * height))
 			{
 				var end = Math.Min(dimensions * dimensions, images - offset);
@@ -99,7 +99,7 @@ void Main()
 			if (images % dimensions > 0) height++;
 			if (height > dimensions) height = dimensions;
 			var sheetName = "PortraitSheet" + sheetIndex + ".jpg";
-			var backgroundImage = "background-image: url('../res/cardImages/" + sheetName + "');";
+			var backgroundImage = "background-image: url('../res/sprites/" + sheetName + "');";
 			using (var spriteSheet = new Bitmap(84 * dimensions, 100 * height))
 			{
 				var end = Math.Min(dimensions * dimensions, images - offset);

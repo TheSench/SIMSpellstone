@@ -1,6 +1,8 @@
 <Query Kind="Program">
   <Namespace>System.Drawing</Namespace>
   <Namespace>System.Drawing.Imaging</Namespace>
+  <NuGetReference>INHelpers.Json.Net</NuGetReference>
+  <Namespace>Newtonsoft.Json.Linq</Namespace>
 </Query>
 
 static string Folder = @"C:\Users\jsen\Desktop\JSEN\Spellstone\";
@@ -9,7 +11,7 @@ static string convertedFolder;
 static string _allImagesPath;
 bool overwrite = false;
 
-string assetName = "cardpack_event_040";
+// string assetName = "cardpack_event_040";
 static CardType type = CardType.Assault;
 static string imageFilter = "";
 
@@ -26,65 +28,74 @@ void Main()
 {
 	imagePath = Path.Combine(Folder, "Images");
 	convertedFolder = Path.Combine(imagePath, "Converted");
-	_allImagesPath = Path.Combine(imagePath, "All");
 
-	if (type == CardType.Item || type == CardType.Store)
+	foreach (var dir in new DirectoryInfo(Folder).GetDirectories())
 	{
-		_allImagesPath = Path.Combine(_allImagesPath, "Items");
-	}
-	else
-	{
-		_allImagesPath = Path.Combine(_allImagesPath, "Cards");
-	}
-	
-	var unknown_i = 1;
-	imageFormat = Formats[type];
-	if (imageFilter == String.Empty)
-	{
-		switch (type)
+		string assetName = dir.Name;
+		if (assetName.StartsWith("cardpack_event") || assetName.StartsWith("cardpack_expansion"))
 		{
-			case CardType.Commander:
-				imageFilter = "portrait";
-				break;
-
-			case CardType.Item:
-				imageFilter = "_collection";
-				break;
+			type = CardType.Assault;
 		}
-	}
-	var assetFolder = Path.Combine(Folder, assetName);
-	foreach (var file in new DirectoryInfo(assetFolder).GetFiles("*.txt"))
-	{
-		bool hasSprites = false;
-		var sprites = new List<Sprite>();
-		using (var reader = file.OpenText())
+		else if (assetName.StartsWith("portraitpack"))
 		{
-			while (!reader.EndOfStream)
+			type = CardType.Commander;
+		}
+		else
+		{
+			continue;
+		}
+
+		assetName.Dump("\n> Asset folder");
+
+		if (type == CardType.Item || type == CardType.Store)
+		{
+			_allImagesPath = Path.Combine(imagePath, "All", "Items");
+		}
+		else
+		{
+			_allImagesPath = Path.Combine(imagePath, "All", "Cards");
+		}
+		
+		var unknown_i = 1;
+		imageFormat = Formats[type];
+		if (imageFilter == String.Empty)
+		{
+			switch (type)
 			{
-				var line = reader.ReadLine();
-				if (line.EndsWith("Generic Mono data") || line.EndsWith("tk2dSpriteDefinition data"))
+				case CardType.Commander:
+					imageFilter = "portrait";
+					break;
+
+				case CardType.Item:
+					imageFilter = "_collection";
+					break;
+			}
+		}
+		var assetFolder = Path.Combine(Folder, assetName);
+		foreach (var file in new DirectoryInfo(assetFolder).GetFiles("*.json"))
+		{
+			bool hasSprites = false;
+			var sprites = new List<Sprite>();
+			using (var reader = file.OpenText())
+			{
+				JObject json = JObject.Parse(reader.ReadToEnd());
+				var spriteDefinitions = (JArray) json["spriteDefinitions"];
+				for (int i = 0; i < spriteDefinitions.Count; i++)
 				{
-					line = reader.ReadLine();
-					try
+					var sprite = (JObject) spriteDefinitions[i];
+					var name = sprite["name"].ToString();
+					if (String.IsNullOrWhiteSpace(name))
 					{
-						var name = line.Split(new[] { "string name = " }, 2, StringSplitOptions.None)[1].Trim('"');
-						/*if (String.IsNullOrWhiteSpace(name))
-						{
-							name = "nameless_" + (unknown_i++);
-						}*/
-						var vectors = GetVectors(reader);
-						var isFlipped = IsFlipped(reader);
-						sprites.Add(new Sprite(name, vectors, isFlipped));
+						continue;
 					}
-					catch (Exception e)
-					{
-					}
+					var vectors = GetVectors((JArray) sprite["uvs"]);
+					var isFlipped = IsFlipped((int) sprite["flipped"]);
+					sprites.Add(new Sprite(name, vectors, isFlipped));
 				}
-				else if (line.IndexOf("spriteCollectionName") > 0)
+				if (json.ContainsKey("spriteCollectionName"))
 				{
 					hasSprites = true;
-					var name = line.Split(new[] { "string spriteCollectionName = " }, 2, StringSplitOptions.None)[1].Trim('"');
-					var imageName = name.Split('@').Select(s => s/*.Substring(s.Length - 2)*/).First() + ".png";
+					var imageName = json["spriteCollectionName"].ToString() + ".png";
 					imageName.Dump("Sprite File");
 					//sprites.ForEach(sprite => sprite.Name.Dump());
 					var imageFile = Path.Combine(assetFolder, imageName);
@@ -98,54 +109,31 @@ void Main()
 					ParseFile(assetName, new FileInfo(imageFile), sprites);
 				}
 			}
+		nextFile:
+			if (!hasSprites)
+			{
+				file.Delete();
+			}
+			continue;
 		}
-	nextFile:
-		if (!hasSprites)
-		{
-			file.Delete();
-		}
-		continue;
 	}
 }
 
 // Define other methods and classes here
 
-private bool IsFlipped(StreamReader reader)
+private bool IsFlipped(int flipped)
 {
-	while (!reader.EndOfStream)
-	{
-		var line = reader.ReadLine();
-		if (line.Contains("int flipped"))
-		{
-			return (line.Split(new[] { "int flipped = " }, 2, StringSplitOptions.None)[1]) == "1";
-		}
-	}
-	return false;
+	return flipped == 1;
 }
 
-private List<Point> GetVectors(StreamReader reader)
+private List<Point> GetVectors(JArray uvs)
 {
-	while (!reader.EndOfStream)
-	{
-		var line = reader.ReadLine();
-		if (line.EndsWith("vector uvs"))
-		{
-			break;
-		}
-	}
-	
 	var vectors = new List<Point>();
-	while (!reader.EndOfStream && vectors.Count < 4)
+	for (var i = 0; i < uvs.Count; i++)
 	{
-		var line = reader.ReadLine();
-		if (line.EndsWith("Vector2f data"))
-		{
-			line = reader.ReadLine();
-			var x = float.Parse(line.Split(new[] { "float x = " }, 2, StringSplitOptions.None)[1]);
-			line = reader.ReadLine();
-			var y = float.Parse(line.Split(new[] { "float y = " }, 2, StringSplitOptions.None)[1]);
-			vectors.Add(new Point(x, y));
-		}
+		var x = (float) uvs[i]["x"];
+		var y = (float) uvs[i]["y"];
+		vectors.Add(new Point(x, y));
 	}
 	return vectors;
 }

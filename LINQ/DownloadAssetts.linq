@@ -4,7 +4,8 @@
 </Query>
 
 string folder = @"C:\Users\jsen\Desktop\JSEN\Spellstone";
-string baseURL = "http://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles/Unity5/";
+string baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles_live/2020_3_33f1/";
+string fileVersion = "_unity2020_3_33_webgl.unity3d";
 WebClient client = new WebClient();
 bool downloadFiles = true;
 bool outputCommands = false;
@@ -15,41 +16,42 @@ void Main()
 	DateTime startDate = DateTime.Now;
 	var fileTypes = new List<string>()
 	{
-		// Replace WebGL with Android
-		"arena_boxes_{3}_Unity5_4_2_Android",
-		"cardpack_{3}_Unity5_4_2_WebGL.unity3d",
-		"cardpack_event_{3}_Unity5_4_2_WebGL.unity3d",
-		"cardpack_expansion_{3}_Unity5_4_2_WebGL.unity3d",
-		"cardpack_aprilfools_001_Unity5_4_2_WebGL.unity3d",
-		"core_assets_{3}_Unity5_4_2_WebGL.unity3d",
-		"event{1}_Unity5_4_2_WebGL.unity3d",
-		"event_{3}_Unity5_4_2_WebGL.unity3d",
-		"frog_crystal_{2}_Unity5_4_2_WebGL.unity3d",
-		"guildwars_{3}_Unity5_4_2_WebGL.unity3d",
-		"item_{3}_Unity5_4_2_WebGL.unity3d",
-		"localizationpack_{3}_Unity5_4_2_WebGL.unity3d",
-		"mappack_{3}_Unity5_4_2_WebGL.unity3d",
-		"portraitpack_{3}_Unity5_4_2_WebGL.unity3d",
-		"pvp_bundle_{3}_Unity5_4_2_WebGL.unity3d",
-		"raid_001_Unity5_4_2_WebGL.unity3d",
-		"raid_002_Unity5_4_2_WebGL.unity3d",
-		"raid_003_Unity5_4_2_WebGL.unity3d",
-		"runepack_{3}_Unity5_4_2_WebGL.unity3d",
-		"santaBundle_{3}_Unity5_4_2_WebGL.unity3d",
-		"storepack_{3}_Unity5_4_2_WebGL.unity3d",
-		"event_002_Unity5_4_2_WebGL.unity3d",
-		"event_003_Unity5_4_2_WebGL.unity3d",
-		"event_004_Unity5_4_2_WebGL.unity3d",
-		"event_005_Unity5_4_2_WebGL.unity3d",
-		"event_006_Unity5_4_2_WebGL.unity3d",
-		"event_007_Unity5_4_2_WebGL.unity3d",
-		"event_008_Unity5_4_2_WebGL.unity3d",
-		"event_009_Unity5_4_2_WebGL.unity3d",
-		"event_010_Unity5_4_2_WebGL.unity3d",
-		"event_01{1}_Unity5_4_2_WebGL.unity3d",
-		"event_020_Unity5_4_2_WebGL.unity3d",
-		"event_02{1}_Unity5_4_2_WebGL.unity3d",
+		"arena_boxes_{3}",
+		"cardpack_{3}",
+		"cardpack_event_{3}",
+		"cardpack_expansion_{3}",
+		"cardpack_aprilfools_001",
+		"core_assets_{3}",
+		"event{1}",
+		"event_{3}",
+		"frog_crystal_{2}",
+		"guildwars_{3}",
+		"item_{3}",
+		"localizationpack_{3}",
+		"mappack_{3}",
+		"portraitpack_{3}",
+		"pvp_bundle_{3}",
+		"raid_001",
+		"raid_002",
+		"raid_003",
+		"runepack_{3}",
+		"santaBundle_{3}",
+		"storepack_{3}",
+		"event_002",
+		"event_003",
+		"event_004",
+		"event_005",
+		"event_006",
+		"event_007",
+		"event_008",
+		"event_009",
+		"event_010",
+		"event_01{1}",
+		"event_020",
+		"event_02{1}",
 	};
+	// Filtered list with updated card assaults/commanders
+	fileTypes = new List<string>(){ "cardpack_event_{3}", "portraitpack_{3}", "cardpack_expansion_{3}" };
 
 	if (downloadFiles)
 	{
@@ -63,6 +65,7 @@ void Main()
 				var i2 = iPadded.Substring(1, 2);
 				var i3 = iPadded.Substring(0, 3);
 				var fileName = String.Format(fileType, "", i1, i2, i3)/*.Dump()*/;
+				fileName += fileVersion;
 				if (filesChecked.Contains(fileName))
 				{
 					break;
@@ -74,16 +77,18 @@ void Main()
 			}
 		}
 
-		var mainClient = "spellstone-WebGL-v1_13_1.unity3d";
-		var clientURL = "http://chat.kongregate.com/gamez/0024/8326/live/" + mainClient;
-		DownloadFile(clientURL, mainClient);
+		// Main client assets don't work anymore with this method
+		// var mainClient = "spellstone-WebGL-v1_13_1.unity3d";
+		// var clientURL = "http://chat.kongregate.com/gamez/0024/8326/live/" + mainClient;
+		// DownloadFile(clientURL, mainClient);
 	}
 
 	if (outputCommands)
 	{
 		var directory = new DirectoryInfo(@"C:\Users\jsen\Desktop\JSEN\Spellstone");
 		var files = directory.GetFiles("*.unity3d");
-		var command = "call \"C:\\Users\\jsen\\Desktop\\JSEN\\disunity_3_4\\disunity.bat\" extract \"{0}\"";
+		// var command = "call \"C:\\Users\\jsen\\Desktop\\JSEN\\disunity_3_4\\disunity.bat\" extract \"{0}\"";
+		var command = "call disunity.py \"{0}\"";
 		foreach (var file in files)
 		{
 			var extractedName = Path.Combine(directory.FullName, file.Name.Replace(".unity3d", ""));
