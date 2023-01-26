@@ -19,3 +19,6 @@ saved_decks.js
 # /dist/deckbuilder.js
 # /dist/practice.js
 # /dist/simulator.js
+
+/Downloads
+/.venv

@@ -8,7 +8,21 @@ void Main()
 {
 	var path = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImages\");
 	var spritePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\sprites\");
-	var files = new DirectoryInfo(path).GetFiles().OrderBy(file => file.CreationTime);
+
+	var cssFile = new FileInfo(Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\styles\spritesheet.css"));
+	var existingSprites = File.ReadAllLines(cssFile.FullName)
+		.Where(line => line.StartsWith(".sprite-") || line.StartsWith(".portrait-"))
+		.Select(line => line.Substring(0, line.IndexOf("{")).Replace(".sprite-", "").Replace(".portrait-", ""))
+		.ToArray();
+	var spriteLookup = new Dictionary<String, int>();
+	for (var i = 0; i < existingSprites.Length; i++)
+	{
+		spriteLookup.Add(existingSprites[i], i);
+	}
+	
+	var files = new DirectoryInfo(path).GetFiles()
+		.OrderBy(file => spriteLookup.GetValueOrDefault(file.Name.Substring(0, file.Name.IndexOf(".")), int.MaxValue))
+		.ThenBy(file => file.CreationTime);
 	var imageFileNames = new List<string>();
 	var portraitFileNames = new List<string>();
 	foreach (var file in files)
@@ -30,8 +44,6 @@ void Main()
 			
 		}
 	}
-
-	var cssFile = new FileInfo(Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\styles\spritesheet.css"));
 	using (var writer = cssFile.CreateText())
 	{
 		writer.Write(
@@ -63,7 +75,7 @@ void Main()
 			if (images % dimensions > 0) height++;
 			if (height > dimensions) height = dimensions;
 			var sheetName = "SpriteSheet" + sheetIndex + ".jpg";
-			var backgroundImage = "background-image: url('../res/cardImages/" + sheetName + "');";
+			var backgroundImage = "background-image: url('../dist/sprites/" + sheetName + "');";
 			using (var spriteSheet = new Bitmap(84 * dimensions, 120 * height))
 			{
 				var end = Math.Min(dimensions * dimensions, images - offset);
@@ -99,7 +111,7 @@ void Main()
 			if (images % dimensions > 0) height++;
 			if (height > dimensions) height = dimensions;
 			var sheetName = "PortraitSheet" + sheetIndex + ".jpg";
-			var backgroundImage = "background-image: url('../res/cardImages/" + sheetName + "');";
+			var backgroundImage = "background-image: url('../dist/sprites/" + sheetName + "');";
 			using (var spriteSheet = new Bitmap(84 * dimensions, 100 * height))
 			{
 				var end = Math.Min(dimensions * dimensions, images - offset);
