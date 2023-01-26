@@ -4,6 +4,8 @@
   <Namespace>System.Drawing.Imaging</Namespace>
 </Query>
 
+static string resourcePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\Downloads\Images\All\Cards");
+
 void Main()
 {
 	var path = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImages\");
@@ -64,6 +66,7 @@ public static void ResizeImage(string inputFile, string outputFile, int newWidth
 
 public static void ResizePortrait(string inputFile, string outputFile, int newWidth, int newHeight)
 {
+	var outputPath = Path.Combine(resourcePath, outputFile);
 	var padding = 10;
 	using (var srcImage = Image.FromFile(inputFile))
 	{
@@ -96,8 +99,13 @@ public static void ResizePortrait(string inputFile, string outputFile, int newWi
 				graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
 				graphics.DrawImage(srcImage, new Rectangle(offsetX, offsetY, scaledWidth, scaledHeight));
 				srcImage.Dispose();
-				newImage.Save(outputFile, ImageFormat.Png);
+				newImage.Save(outputPath, ImageFormat.Png);
 			}
+		}
+		else if (!File.Exists(outputPath))
+		{
+			inputFile.Dump();
+			srcImage.Save(outputPath, ImageFormat.Png);
 		}
 	}
 }

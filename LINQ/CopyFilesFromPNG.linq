@@ -1,10 +1,10 @@
 <Query Kind="Program" />
 
-static string Folder = @"C:\Users\jsen\Desktop\JSEN\Spellstone\";
-static string imagePath = Path.Combine(Folder, "Images");
+static string folder = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), "../Downloads");
+static string imagePath = Path.Combine(folder, "Images");
 static string convertedFolder = Path.Combine(imagePath, "Converted");
 static string _allImagesPath = Path.Combine(imagePath, "All");
-bool overwrite = true;
+static bool overwrite = true;
 
 string assetName = "portraitpack_005";
 static CardType type = CardType.Commander;
@@ -44,7 +44,7 @@ void Main()
 				break;
 		}
 	}
-	var assetFolder = Path.Combine(Folder, assetName);
+	var assetFolder = Path.Combine(folder, assetName);
 	foreach (var file in new DirectoryInfo(assetFolder).GetFiles("*CAB*.png"))
 	{
 		if(!file.Name.StartsWith("atlas0-CAB"))

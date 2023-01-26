@@ -1,17 +1,16 @@
 <Query Kind="Program">
+  <NuGetReference>Newtonsoft.Json</NuGetReference>
+  <Namespace>Newtonsoft.Json.Linq</Namespace>
   <Namespace>System.Drawing</Namespace>
   <Namespace>System.Drawing.Imaging</Namespace>
-  <NuGetReference>INHelpers.Json.Net</NuGetReference>
-  <Namespace>Newtonsoft.Json.Linq</Namespace>
 </Query>
 
-static string Folder = @"C:\Users\jsen\Desktop\JSEN\Spellstone\";
+static string folder = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), "../Downloads");
 static string imagePath;
 static string convertedFolder;
 static string _allImagesPath;
 bool overwrite = false;
 
-// string assetName = "cardpack_event_040";
 static CardType type = CardType.Assault;
 static string imageFilter = "";
 
@@ -26,10 +25,12 @@ Dictionary<CardType, string> Formats = new Dictionary<UserQuery.CardType, string
 
 void Main()
 {
-	imagePath = Path.Combine(Folder, "Images");
+	imagePath = Path.Combine(folder, "Images");
 	convertedFolder = Path.Combine(imagePath, "Converted");
+	Directory.CreateDirectory(Path.Combine(imagePath, "All", "Items"));
+	Directory.CreateDirectory(Path.Combine(imagePath, "All", "Cards"));
 
-	foreach (var dir in new DirectoryInfo(Folder).GetDirectories())
+	foreach (var dir in new DirectoryInfo(folder).GetDirectories())
 	{
 		string assetName = dir.Name;
 		if (assetName.StartsWith("cardpack_event") || assetName.StartsWith("cardpack_expansion"))
@@ -56,7 +57,6 @@ void Main()
 			_allImagesPath = Path.Combine(imagePath, "All", "Cards");
 		}
 		
-		var unknown_i = 1;
 		imageFormat = Formats[type];
 		if (imageFilter == String.Empty)
 		{
@@ -71,7 +71,7 @@ void Main()
 					break;
 			}
 		}
-		var assetFolder = Path.Combine(Folder, assetName);
+		var assetFolder = Path.Combine(folder, assetName);
 		foreach (var file in new DirectoryInfo(assetFolder).GetFiles("*.json"))
 		{
 			bool hasSprites = false;
