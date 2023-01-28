@@ -79,7 +79,9 @@ void Main()
 
 private static bool ShouldSkip(string imageName, CardType type)
 {
-	return (imageName.ToLower().Contains("_collection") && type == CardType.Assault);
+	return (type == CardType.Assault &&
+		!imageName.Contains("Set") &&
+		!imageName.Contains("@1x"));
 }
 
 // Define other methods and classes here
