@@ -17,7 +17,7 @@ void Main()
 	var spriteLookup = new Dictionary<String, int>();
 	for (var i = 0; i < existingSprites.Length; i++)
 	{
-		spriteLookup.Add(existingSprites[i], i);
+		spriteLookup.TryAdd(existingSprites[i], i);
 	}
 	
 	var files = new DirectoryInfo(path).GetFiles()

@@ -32,8 +32,15 @@ void Main()
 	foreach (var fileName in assaultArt)
 	{
 		var newFileName = fileName.Replace(".png", ".jpg");
-		if (newFileName != fileName) fileName.Dump("Changed format");
-		ResizeImage(fileName, fileName, 84, 120);
+		if (newFileName != fileName)
+		{
+			fileName.Dump("Changed format");
+			File.Delete(fileName);
+		}
+		else
+		{
+			ResizeImage(fileName, fileName, 84, 120);
+		}
 	}
 }
 
