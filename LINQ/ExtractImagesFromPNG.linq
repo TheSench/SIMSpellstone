@@ -7,8 +7,7 @@
 
 static string folder = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), "../Downloads");
 static string cardImagePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImagesLarge\");
-static string imagePath = Path.Combine(folder, "Images");
-bool overwrite = true;
+bool overwrite = false;
 
 Dictionary<CardType, string> Formats = new Dictionary<UserQuery.CardType, string>()
 {
@@ -48,15 +47,19 @@ void Main()
 				{
 					imageName = (json["spriteCollectionName"].ToString() + ".png");
 				}
+				if (imageName.ToLower().Contains("portrait")) {
+					type = CardType.Commander;
+				}
 
 				if (String.IsNullOrWhiteSpace(imageName) || ShouldSkip(imageName, type))
 				{
+					file.Name.Dump("Skipping");					
 					reader.Close();
 					file.Delete();
 				}
 				else
 				{
-					imageName.Dump("Sprite File");
+					//imageName.Dump("Sprite File");
 					var imageFile = Path.Combine(assetFolder, imageName);
 
 					var sprites = json["spriteDefinitions"].Cast<JObject>()
@@ -150,15 +153,24 @@ private void ParseFile(string assetName, FileInfo file, IEnumerable<Sprite> spri
 
 private void ExtractImages(string assetName, string filename, Bitmap srcImage, IEnumerable<Sprite> sprites)
 {
-	var newPath = Path.Combine(imagePath, assetName);
-
 	using (srcImage)
 	{
 		var imageWidth = srcImage.Width;
 		var imageHeight = srcImage.Height;
 		foreach (var sprite in sprites)
 		{
-			try
+			var spriteName = sprite.Name;
+			if (sprite.Type == CardType.Commander)
+			{
+				spriteName = "portrait_" + spriteName.ToLower().Replace("portrait_", "").Replace("portraits_", "");
+			}
+			var imageFormat = Formats[sprite.Type];
+			var newFileName = String.Format("{0}.{1}", spriteName, imageFormat);
+			var saveLocation = Path.Combine(cardImagePath, newFileName);
+
+			if (overwrite || !File.Exists(saveLocation))
+			{
+				try
 			{
 				var points = sprite.Points;
 				var xMin = points.Min(p => p.GetX(imageWidth));
@@ -173,21 +185,14 @@ private void ExtractImages(string assetName, string filename, Bitmap srcImage, I
 				var rect = new Rectangle(xMin, yMin, width, height);
 				using (var cropped = srcImage.Clone(rect, srcImage.PixelFormat))
 				{
-					Directory.CreateDirectory(newPath);
-					var spriteName = sprite.Name;
-					if (sprite.Type == CardType.Commander)
-					{
-						spriteName = "portrait_" + spriteName.ToLower().Replace("portrait_", "").Replace("portraits_", "");
-					}
-					var imageFormat = Formats[sprite.Type];
-					var newFileName = String.Format("{0}.{1}", spriteName, imageFormat);
 					cropped.RotateFlip(rotation);
-					SaveImage(cropped, newPath, newFileName, imageFormat);
+					SaveImage(cropped, saveLocation, imageFormat);
 				}
 			}
 			catch (Exception e)
 			{
 				e.Dump();
+			}
 			}
 		}
 	}
@@ -201,17 +206,11 @@ private enum Corner
 	BottomLeft = 3
 }
 
-private void SaveImage(Bitmap image, string directory, string filename, string imageFormat)
+private void SaveImage(Bitmap image, string saveLocation, string imageFormat)
 {
 	var format = (imageFormat == "png" ? ImageFormat.Png : ImageFormat.Jpeg);
-
-	var saveLocation = Path.Combine(directory, filename);
-	if (overwrite || !File.Exists(saveLocation))
-	{
-		filename.Dump();
-		image.Save(saveLocation, format);
-		File.Copy(saveLocation, Path.Combine(cardImagePath, filename), true);
-	}
+	saveLocation.Dump();
+	image.Save(saveLocation, format);
 }
 
 public enum CardType
