@@ -4,9 +4,8 @@
   <Namespace>System.Drawing.Imaging</Namespace>
 </Query>
 
-static string rawImagePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\Downloads\Images\All\Cards");
+static string rawImagePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImagesLarge\");
 static string resourcePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImages\");
-static string resourcePathLarge = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImagesLarge\");
 
 void Main()
 {
@@ -16,8 +15,6 @@ void Main()
 	var commanderArt = new List<string>();
 	foreach (var file in files)
 	{
-		if (file.Name.Contains("SpriteSheet")) continue;
-		if (file.Name.Contains("PortraitSheet")) continue;
 		if (file.Name.Contains("portrait"))
 		{
 			commanderArt.Add(file.FullName);
@@ -35,7 +32,8 @@ void Main()
 	foreach (var fileName in assaultArt)
 	{
 		var newFileName = fileName.Replace(".png", ".jpg");
-		ResizeImage(fileName, newFileName, 84, 120);
+		if (newFileName != fileName) fileName.Dump("Changed format");
+		ResizeImage(fileName, fileName, 84, 120);
 	}
 }
 
@@ -44,38 +42,19 @@ void Main()
 public static void ResizeImage(string inputFile, string outputFile, int newWidth, int newHeight)
 {
 	var outputPath = Path.Combine(resourcePath, Path.GetFileName(outputFile));
-	var outputPathLarge = Path.Combine(resourcePathLarge, Path.GetFileName(outputFile));
 	using (var srcImage = Image.FromFile(inputFile))
 	{
 		if (!File.Exists(outputPath))
 		{
 			inputFile.Dump("Sprite");
-			if (srcImage.Height != newHeight || srcImage.Width != newWidth || inputFile.EndsWith(".png"))
+			if (srcImage.Height != newHeight || srcImage.Width != newWidth)
 			{
-				using (var newImage = new Bitmap(newWidth, newHeight))
-				using (var graphics = Graphics.FromImage(newImage))
-				{
-					graphics.SmoothingMode = SmoothingMode.AntiAlias;
-					graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-					graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-					graphics.DrawImage(srcImage, new Rectangle(0, 0, newWidth, newHeight));
-					srcImage.Dispose();
-					newImage.Save(outputPath, ImageFormat.Jpeg);
-					if (inputFile.EndsWith(".png"))
-					{
-						File.Delete(inputFile);
-					}
-				}
+				SaveScaledImage(srcImage, outputPath, newWidth, newHeight, 0, 0, newWidth, newHeight);
 			}
 			else
 			{
-				srcImage.Save(outputPath, ImageFormat.Png);
+				srcImage.Save(outputPath, ImageFormat.Jpeg);
 			}
-		}
-		if (!File.Exists(outputPathLarge))
-		{
-			inputFile.Dump("Large");
-			srcImage.Save(outputPathLarge, ImageFormat.Png);
 		}
 	}
 }
@@ -83,7 +62,6 @@ public static void ResizeImage(string inputFile, string outputFile, int newWidth
 public static void ResizePortrait(string inputFile, string outputFile, int newWidth, int newHeight)
 {
 	var outputPath = Path.Combine(resourcePath, Path.GetFileName(outputFile));
-	var outputPathLarge = Path.Combine(resourcePathLarge, Path.GetFileName(outputFile));
 	var padding = 10;
 	using (var srcImage = Image.FromFile(inputFile))
 	{
@@ -110,26 +88,26 @@ public static void ResizePortrait(string inputFile, string outputFile, int newWi
 				}
 				var offsetX = (paddedWidth - scaledWidth) / 2 + padding;
 				var offsetY = (paddedHeight - scaledHeight) / 2 + padding;
-				using (var newImage = new Bitmap(newWidth, newHeight))
-				using (var graphics = Graphics.FromImage(newImage))
-				{
-					graphics.SmoothingMode = SmoothingMode.AntiAlias;
-					graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-					graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-					graphics.DrawImage(srcImage, new Rectangle(offsetX, offsetY, scaledWidth, scaledHeight));
-					srcImage.Dispose();
-					newImage.Save(outputPath, ImageFormat.Png);
-				}
+				SaveScaledImage(srcImage, outputPath, newWidth, newHeight, offsetX, offsetY, scaledWidth, scaledHeight);
 			}
 			else
 			{
 				srcImage.Save(outputPath, ImageFormat.Png);
 			}
 		}
-		if (!File.Exists(outputPathLarge))
-		{
-			inputFile.Dump("Large");
-			srcImage.Save(outputPathLarge, ImageFormat.Png);
-		}
+	}
+}
+
+private static void SaveScaledImage(Image srcImage, String outputPath, int newWidth, int newHeight, int offsetX, int offsetY, int scaledWidth, int scaledHeight)
+{
+	using (var newImage = new Bitmap(newWidth, newHeight))
+	using (var graphics = Graphics.FromImage(newImage))
+	{
+		graphics.SmoothingMode = SmoothingMode.AntiAlias;
+		graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+		graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+		graphics.DrawImage(srcImage, new Rectangle(offsetX, offsetY, scaledWidth, scaledHeight));
+		srcImage.Dispose();
+		newImage.Save(outputPath, ImageFormat.Png);
 	}
 }
