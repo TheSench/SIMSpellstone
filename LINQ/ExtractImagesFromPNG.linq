@@ -6,34 +6,25 @@
 </Query>
 
 static string folder = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), "../Downloads");
-static string imagePath;
-static string convertedFolder;
-static string _allImagesPath;
+static string cardImagePath = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImagesLarge\");
 bool overwrite = false;
 
-static CardType type = CardType.Assault;
-static string imageFilter = "";
-
-static string imageFormat;
 Dictionary<CardType, string> Formats = new Dictionary<UserQuery.CardType, string>()
 {
 	{CardType.Commander, "png"},
 	{CardType.Assault, "jpg"},
-	{CardType.Item, "png"},
-	{CardType.Store, "png"}
+};
+static Dictionary<String, CardType> Overrides = new Dictionary<String, CardType> {
+	{"AprilFools_003Collection.png", CardType.Commander}
 };
 
 void Main()
 {
-	imagePath = Path.Combine(folder, "Images");
-	convertedFolder = Path.Combine(imagePath, "Converted");
-	Directory.CreateDirectory(Path.Combine(imagePath, "All", "Items"));
-	Directory.CreateDirectory(Path.Combine(imagePath, "All", "Cards"));
-
 	foreach (var dir in new DirectoryInfo(folder).GetDirectories())
 	{
 		string assetName = dir.Name;
-		if (assetName.StartsWith("cardpack_event") || assetName.StartsWith("cardpack_expansion"))
+		CardType type = CardType.Assault;
+		if (assetName.StartsWith("cardpack"))
 		{
 			type = CardType.Assault;
 		}
@@ -46,111 +37,75 @@ void Main()
 			continue;
 		}
 
-		assetName.Dump("\n> Asset folder");
+		//assetName.Dump("\n> Asset folder");
 
-		if (type == CardType.Item || type == CardType.Store)
-		{
-			_allImagesPath = Path.Combine(imagePath, "All", "Items");
-		}
-		else
-		{
-			_allImagesPath = Path.Combine(imagePath, "All", "Cards");
-		}
-		
-		imageFormat = Formats[type];
-		if (imageFilter == String.Empty)
-		{
-			switch (type)
-			{
-				case CardType.Commander:
-					imageFilter = "portrait";
-					break;
-
-				case CardType.Item:
-					imageFilter = "_collection";
-					break;
-			}
-		}
 		var assetFolder = Path.Combine(folder, assetName);
 		foreach (var file in new DirectoryInfo(assetFolder).GetFiles("*.json"))
 		{
-			bool hasSprites = false;
-			var sprites = new List<Sprite>();
 			using (var reader = file.OpenText())
 			{
 				JObject json = JObject.Parse(reader.ReadToEnd());
-				var spriteDefinitions = (JArray) json["spriteDefinitions"];
-				for (int i = 0; i < spriteDefinitions.Count; i++)
-				{
-					var sprite = (JObject) spriteDefinitions[i];
-					var name = sprite["name"].ToString();
-					if (String.IsNullOrWhiteSpace(name))
-					{
-						continue;
-					}
-					var vectors = GetVectors((JArray) sprite["uvs"]);
-					var isFlipped = IsFlipped((int) sprite["flipped"]);
-					sprites.Add(new Sprite(name, vectors, isFlipped));
-				}
+				var imageName = "";
 				if (json.ContainsKey("spriteCollectionName"))
 				{
-					hasSprites = true;
-					var imageName = json["spriteCollectionName"].ToString() + ".png";
-					imageName.Dump("Sprite File");
-					//sprites.ForEach(sprite => sprite.Name.Dump());
+					imageName = (json["spriteCollectionName"].ToString() + ".png");
+				}
+				if (imageName.ToLower().Contains("portrait"))
+				{
+					type = CardType.Commander;
+				}
+				type = Overrides.GetValueOrDefault(imageName, type);
+
+				if (String.IsNullOrWhiteSpace(imageName) || ShouldSkip(imageName, type))
+				{
+					file.Name.Dump("Skipping");
+					reader.Close();
+					file.Delete();
+				}
+				else
+				{
+					//imageName.Dump("Sprite File");
 					var imageFile = Path.Combine(assetFolder, imageName);
-					if (!String.IsNullOrWhiteSpace(imageFilter))
-					{
-						if (!imageName.ToLower().Contains(imageFilter.ToLower()))
-						{
-							goto nextFile;
-						}
-					}
+
+					var sprites = json["spriteDefinitions"].Cast<JObject>()
+						.Where(sprite => !String.IsNullOrWhiteSpace(sprite["name"].ToString()))
+						.Select(sprite => new Sprite(
+							sprite["name"].ToString(),
+							sprite.GetVectors(),
+							sprite.IsFlipped(),
+							type
+						));
 					ParseFile(assetName, new FileInfo(imageFile), sprites);
 				}
 			}
-		nextFile:
-			if (!hasSprites)
-			{
-				file.Delete();
-			}
-			continue;
 		}
 	}
+}
+
+private static bool ShouldSkip(string imageName, CardType type)
+{
+	return (type == CardType.Assault &&
+		!imageName.Contains("Set") &&
+		!imageName.Contains("@1x"));
 }
 
 // Define other methods and classes here
 
-private bool IsFlipped(int flipped)
-{
-	return flipped == 1;
-}
-
-private List<Point> GetVectors(JArray uvs)
-{
-	var vectors = new List<Point>();
-	for (var i = 0; i < uvs.Count; i++)
-	{
-		var x = (float) uvs[i]["x"];
-		var y = (float) uvs[i]["y"];
-		vectors.Add(new Point(x, y));
-	}
-	return vectors;
-}
-
 private class Sprite
 {
-	public Sprite(string name, List<Point> points, bool isFlipped)
+	public Sprite(string name, List<Point> points, bool isFlipped, CardType type)
 	{
 		Name = name;
 		Points = points;
 		IsFlipped = isFlipped;
+		Type = type;
 	}
 
 	public string Name { get; private set; }
 	public bool IsFlipped { get; private set; }
 	public List<Point> Points { get; private set; }
-	
+	public CardType Type { get; private set; }
+
 	public override string ToString()
 	{
 		var pointOutput = String.Join("\r\n", Points);
@@ -158,15 +113,15 @@ private class Sprite
 	}
 }
 
-private class Point
+public class Point
 {
 	public Point(float x, float y)
 	{
-		
+
 		X = x;
 		Y = y;
 	}
-	
+
 	public float X { get; private set; }
 	public float Y { get; private set; }
 
@@ -174,7 +129,7 @@ private class Point
 	{
 		return (int)Math.Round(X * size, 0, MidpointRounding.AwayFromZero);
 	}
-	
+
 	public int GetY(int size)
 	{
 		return size - (int)Math.Round(Y * size, 0, MidpointRounding.AwayFromZero);
@@ -187,7 +142,7 @@ private class Point
 }
 
 // Define other methods and classes here
-private void ParseFile(string assetName, FileInfo file, List<Sprite> sprites)
+private void ParseFile(string assetName, FileInfo file, IEnumerable<Sprite> sprites)
 {
 	if (file.Exists)
 	{
@@ -203,46 +158,48 @@ private void ParseFile(string assetName, FileInfo file, List<Sprite> sprites)
 	}
 }
 
-private void ExtractImages(string assetName, string filename, Bitmap srcImage, List<Sprite> sprites)
+private void ExtractImages(string assetName, string filename, Bitmap srcImage, IEnumerable<Sprite> sprites)
 {
-	var newPath = Path.Combine(imagePath, assetName);
-
-	filename.Dump();
 	using (srcImage)
 	{
 		var imageWidth = srcImage.Width;
 		var imageHeight = srcImage.Height;
 		foreach (var sprite in sprites)
 		{
-			try
+			var spriteName = sprite.Name;
+			if (sprite.Type == CardType.Commander)
 			{
-				var points = sprite.Points;
-				var xMin = points.Min(p => p.GetX(imageWidth));
-				var xMax = points.Max(p => p.GetX(imageWidth));
-				var yMin = points.Min(p => p.GetY(imageHeight));
-				var yMax = points.Max(p => p.GetY(imageHeight));
-
-				var rotation = (sprite.IsFlipped ? RotateFlipType.Rotate270FlipX : RotateFlipType.RotateNoneFlipNone);
-
-				var width = xMax - xMin;
-				var height = yMax - yMin;
-				var rect = new Rectangle(xMin, yMin, width, height);//.Dump(sprite.ToString());
-				using (var cropped = srcImage.Clone(rect, srcImage.PixelFormat))
-				{
-					Directory.CreateDirectory(newPath);
-					var spriteName = sprite.Name;
-					if (type == CardType.Commander)
-					{
-						spriteName = "portrait_" + spriteName.ToLower().Replace("portrait_", "").Replace("portraits_", "");
-					}
-					var newFileName = String.Format("{0}.{1}", spriteName, imageFormat).Dump();
-					cropped.RotateFlip(rotation);
-					SaveImage(cropped, newPath, newFileName);
-				}
+				spriteName = "portrait_" + spriteName.ToLower().Replace("portrait_", "").Replace("portraits_", "");
 			}
-			catch (Exception e)
+			var imageFormat = Formats[sprite.Type];
+			var newFileName = String.Format("{0}.{1}", spriteName, imageFormat);
+			var saveLocation = Path.Combine(cardImagePath, newFileName);
+
+			if (overwrite || !File.Exists(saveLocation))
 			{
-				e.Dump();
+				try
+				{
+					var points = sprite.Points;
+					var xMin = points.Min(p => p.GetX(imageWidth));
+					var xMax = points.Max(p => p.GetX(imageWidth));
+					var yMin = points.Min(p => p.GetY(imageHeight));
+					var yMax = points.Max(p => p.GetY(imageHeight));
+
+					var rotation = (sprite.IsFlipped ? RotateFlipType.Rotate270FlipX : RotateFlipType.RotateNoneFlipNone);
+
+					var width = xMax - xMin;
+					var height = yMax - yMin;
+					var rect = new Rectangle(xMin, yMin, width, height);
+					using (var cropped = srcImage.Clone(rect, srcImage.PixelFormat))
+					{
+						cropped.RotateFlip(rotation);
+						SaveImage(cropped, saveLocation, imageFormat);
+					}
+				}
+				catch (Exception e)
+				{
+					e.Dump();
+				}
 			}
 		}
 	}
@@ -256,17 +213,11 @@ private enum Corner
 	BottomLeft = 3
 }
 
-private void SaveImage(Bitmap image, string directory, string filename)
+private void SaveImage(Bitmap image, string saveLocation, string imageFormat)
 {
-	//image.RotateFlip(RotateFlipType.Rotate270FlipNone);
 	var format = (imageFormat == "png" ? ImageFormat.Png : ImageFormat.Jpeg);
-	
-	var saveLocation = Path.Combine(directory, filename);
-	if (overwrite || !File.Exists(saveLocation))
-	{
-		image.Save(Path.Combine(directory, filename), format);
-		File.Copy(Path.Combine(directory, filename), Path.Combine(_allImagesPath, filename));
-	}
+	saveLocation.Dump();
+	image.Save(saveLocation, format);
 }
 
 public enum CardType
@@ -275,4 +226,28 @@ public enum CardType
 	Assault,
 	Item,
 	Store
+}
+
+public static class Extensions
+{
+	public static void ForEach<T>(this IEnumerable<T> enumeration, Action<T> action)
+	{
+		foreach (T item in enumeration)
+		{
+			action(item);
+		}
+	}
+
+	public static bool IsFlipped(this JObject sprite)
+	{
+		return (int)sprite["flipped"] == 1;
+	}
+
+	public static List<UserQuery.Point> GetVectors(this JObject sprite)
+	{
+		return sprite["uvs"].Select(uv => new UserQuery.Point(
+				(float)uv["x"],
+				(float)uv["y"]
+			)).ToList();
+	}
 }
