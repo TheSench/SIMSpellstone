@@ -14,6 +14,9 @@ Dictionary<CardType, string> Formats = new Dictionary<UserQuery.CardType, string
 	{CardType.Commander, "png"},
 	{CardType.Assault, "jpg"},
 };
+static Dictionary<String, CardType> Overrides = new Dictionary<String, CardType> {
+	{"AprilFools_003Collection.png", CardType.Commander}
+};
 
 void Main()
 {
@@ -47,13 +50,15 @@ void Main()
 				{
 					imageName = (json["spriteCollectionName"].ToString() + ".png");
 				}
-				if (imageName.ToLower().Contains("portrait")) {
+				if (imageName.ToLower().Contains("portrait"))
+				{
 					type = CardType.Commander;
 				}
+				type = Overrides.GetValueOrDefault(imageName, type);
 
 				if (String.IsNullOrWhiteSpace(imageName) || ShouldSkip(imageName, type))
 				{
-					file.Name.Dump("Skipping");					
+					file.Name.Dump("Skipping");
 					reader.Close();
 					file.Delete();
 				}
@@ -173,28 +178,28 @@ private void ExtractImages(string assetName, string filename, Bitmap srcImage, I
 			if (overwrite || !File.Exists(saveLocation))
 			{
 				try
-			{
-				var points = sprite.Points;
-				var xMin = points.Min(p => p.GetX(imageWidth));
-				var xMax = points.Max(p => p.GetX(imageWidth));
-				var yMin = points.Min(p => p.GetY(imageHeight));
-				var yMax = points.Max(p => p.GetY(imageHeight));
-
-				var rotation = (sprite.IsFlipped ? RotateFlipType.Rotate270FlipX : RotateFlipType.RotateNoneFlipNone);
-
-				var width = xMax - xMin;
-				var height = yMax - yMin;
-				var rect = new Rectangle(xMin, yMin, width, height);
-				using (var cropped = srcImage.Clone(rect, srcImage.PixelFormat))
 				{
-					cropped.RotateFlip(rotation);
-					SaveImage(cropped, saveLocation, imageFormat);
+					var points = sprite.Points;
+					var xMin = points.Min(p => p.GetX(imageWidth));
+					var xMax = points.Max(p => p.GetX(imageWidth));
+					var yMin = points.Min(p => p.GetY(imageHeight));
+					var yMax = points.Max(p => p.GetY(imageHeight));
+
+					var rotation = (sprite.IsFlipped ? RotateFlipType.Rotate270FlipX : RotateFlipType.RotateNoneFlipNone);
+
+					var width = xMax - xMin;
+					var height = yMax - yMin;
+					var rect = new Rectangle(xMin, yMin, width, height);
+					using (var cropped = srcImage.Clone(rect, srcImage.PixelFormat))
+					{
+						cropped.RotateFlip(rotation);
+						SaveImage(cropped, saveLocation, imageFormat);
+					}
 				}
-			}
-			catch (Exception e)
-			{
-				e.Dump();
-			}
+				catch (Exception e)
+				{
+					e.Dump();
+				}
 			}
 		}
 	}
