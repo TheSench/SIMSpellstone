@@ -3117,6 +3117,14 @@ var SIMULATOR = {};
 				}
 			}
 
+			var enraged = target.enraged;
+			if (enraged > 0) {
+				enraged = adjustAttackIncrease(target, enraged);
+				if (target.isAlive()) {
+					target.attack_berserk += enraged;
+					if (debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
+				}
+			}
 			// Fury
 			// - Target must have received some amount of damage
 			if (target.fury) {
@@ -3130,12 +3138,6 @@ var SIMULATOR = {};
 				}
 
 				doCounterDamage(current_assault, target, 'Fury', fury, 0);
-			}
-			var enraged = target.enraged;
-			if (enraged > 0 && target.isAlive()) {
-				enraged = adjustAttackIncrease(target, enraged);
-				target.attack_berserk += enraged;
-				if (debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
 			}
 		}
 		
