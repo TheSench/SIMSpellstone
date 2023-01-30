@@ -4682,6 +4682,7 @@ var showAdvancedFilters = function (skill) {
 		case 'fury':
 		case 'heartseeker':
 		case 'leech':
+		case 'magicfield':
 		case 'nullify':
 		case 'pierce':
 		case 'poison':
@@ -4694,6 +4695,7 @@ var showAdvancedFilters = function (skill) {
 			break;
 
 		// x="1" y="1" all="0" c="0" s="0"
+		case 'radiance':
 		case 'silence':
 			$("div#amount").show();
 			$("div#faction").show();
@@ -4721,6 +4723,7 @@ var showAdvancedFilters = function (skill) {
 			break;
 
 		// x="1" y="0" all="1" c="0" s="0"
+		case 'cleanse':
 		case 'enfeeble':
 		case 'poisonstrike':
 		case 'strike':
@@ -4740,6 +4743,7 @@ var showAdvancedFilters = function (skill) {
 			break;
 
 		// x="0" y="0" all="1" c="1" s="0"
+		case 'confuse':
 		case 'jam':
 			$("label[for=all]").show();
 			$("div#timer").show();
@@ -4749,6 +4753,12 @@ var showAdvancedFilters = function (skill) {
 		case 'flurry':
 			$("div#timer").show();
 			break;
+		
+		// x="1" y="1" all="1" c="0" s="0"
+		case 'invigorate':
+			$("div#amount").show();
+			$("label[for=all]").show();
+			$("div#faction").show();
 		default:
 			return null;
 	}
