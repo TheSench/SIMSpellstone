@@ -1008,7 +1008,6 @@ var SIMULATOR = {};
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
-			target.enfeebled += heartseeker;
 			if (debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
 
 			return 1;
@@ -2247,7 +2246,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			current_assault.enfeebled = current_assault.envenomed + current_assault.heartseeker;
+			current_assault.enfeebled = current_assault.envenomed;
 			current_assault.enraged = 0;
 			current_assault.invisible = 0;
 			current_assault.protected = 0;
@@ -2862,6 +2861,10 @@ var SIMULATOR = {};
 		var enfeeble = target.enfeebled;
 		damage += enfeeble;
 
+		// Heartseeker
+		var heartseeker = target.heartseeker;
+		damage += heartseeker;
+
 		if (debug) {
 			echo += '<u>(Attack: +' + current_assault.attack;
 			if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
@@ -2871,6 +2874,7 @@ var SIMULATOR = {};
 			if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
 			if (current_assault.attack_corroded) echo += ' Corrosion: -' + current_assault.attack_corroded;
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+			if (heartseeker) echo += ' Heartseeker: +' + heartseeker;
 		}
 
 		// Pierce
