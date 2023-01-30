@@ -547,6 +547,18 @@ var makeUnit = (function() {
         permanentAttack: function() {
             return (this.attack + this.attack_berserk + this.attack_valor);
         },
+        
+        hasNegativeStatus: function() {
+            // Poison, Hex, Burn, Freeze, Venom, Weaken, Silence and Confuse
+            return this.poisoned ||
+                this.enfeebled ||
+                this.scorched ||
+                this.jammed ||
+                this.envenomed ||
+                this.attack_weaken ||
+                this.silenced ||
+                this.confused;
+        },
 
         // Filters by faction
         isInFaction: function(faction) {

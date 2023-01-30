@@ -1145,7 +1145,58 @@ var SIMULATOR = {};
 					drawField(field, null, null, turn, sourceCard);
 				}
 			}
-		}
+		},
+		
+		// - Targets allied assaults
+		cleanse: function (src_card, skill, invigorate) {
+
+			var all = skill.all;
+
+			var alliedUnits = getAlliedUnits(src_card, field);
+
+			var targets = [];
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && (all || target.hasNegativeStatus())) {
+					targets.push(key);
+				}
+			}
+
+			// No Targets
+			if (!targets.length) return 0;
+
+			// Check All
+			if (!all) {
+				targets = choose_random_target(targets);
+			}
+
+			for (var key = 0, len = targets.length; key < len; key++) {
+				var target = alliedUnits[targets[key]];
+
+				// Check Nullify
+				if (target.nullified && !skill.ignore_nullify) {
+					target.nullified--;
+					if (debug) echo += debug_name(src_card) + ' cleanses ' + debug_name(target) + ' but it is nullified!<br>';
+					continue;
+				}
+
+				target.poisoned = 0;
+                target.enfeebled = 0;
+                target.scorched = 0;
+                target.jammed = false;
+                target.envenomed = 0;
+                target.attack_weaken = 0;
+                target.silenced = false;
+                target.confused = false;
+
+				if (debug) {
+					echo += debug_name(src_card) + ' cleanses ' + debug_name(target);
+					echo += '<br>';
+				}
+			}
+
+			return true;
+		},
 	};
 
 	var earlyActivationSkills = {
