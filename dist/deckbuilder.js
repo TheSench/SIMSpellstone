@@ -5857,6 +5857,7 @@ if (function (type) {
       'berserk',
       'burn',
       //'burn2',
+      'cleanse',
       'confuse',
       'corrosive',
       'counter',
