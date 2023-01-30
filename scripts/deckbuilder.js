@@ -1647,6 +1647,7 @@ var showAdvancedFilters = function (skill) {
 		case 'frost':
 		case 'fury':
 		case 'heartseeker':
+		case 'ignite':
 		case 'leech':
 		case 'magicfield':
 		case 'nullify':
