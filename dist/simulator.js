@@ -3206,6 +3206,48 @@ var SIM_CONTROLLER = (function () {
 			return true;
 		},
 
+		
+		// - Targets allied assaults
+		magicfield: function (src_card, skill) {
+
+			var alliedUnits = getAlliedUnits(src_card, field);
+
+			var protect = (skill.x || 0);
+			var enhanced = getEnhancement(src_card, skill.id, protect);
+			protect += enhanced;
+
+			var affected = 0;
+
+			var left_ally = src_card.key - 1;
+			var right_ally = src_card.key + 1;
+			for (var key = left_ally; key <= right_ally; key++) {
+				var target = alliedUnits[key];
+				if (!target || target.isAlive()) continue;
+
+				// Check Nullify
+				if (target.nullified && !skill.ignore_nullify) {
+					target.nullified--;
+					if (debug) echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' but it is nullified!<br>';
+					continue;
+				}
+				
+				affected++;
+
+				var protect_amt = protect;
+				// Adjacent allies only get half
+				if (target != src_card) protect_amt = Math.ceil(protect_amt/2);
+
+				target.protected += protect_amt;
+				if (debug) {
+					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+					echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' by ' + protect_amt;
+					echo += '<br>';
+				}
+			}
+
+			return affected;
+		},
+
 		// Wing Guard
 		// - Targets self and leftmost ally
 		wingward: function (src_card, skill) {
