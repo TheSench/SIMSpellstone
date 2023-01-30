@@ -131,7 +131,7 @@ var SKILL_DATA = {
 		"desc": "Grants Enrage to a random ally creature, causing it to permanently increase Attack after taking Attack damage.",
 		"icon": "enrage",
 		"name": "Enrage",
-		"type": "earlyActivation"
+		"type": "activation"
 	},
 	"evade": {
 		"desc": "Avoids this many targeted enemy Skills each round.",

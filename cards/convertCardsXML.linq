@@ -118,7 +118,6 @@ return;
 		{"barrage", "earlyActivation"},
 		{"enhance", "earlyActivation"},
 		{"enlarge", "earlyActivation"},
-		{"enrage", "earlyActivation"},
 		{"fervor", "earlyActivation"},
 		{"imbue", "earlyActivation"},
 		{"legion", "earlyActivation"},
@@ -127,6 +126,7 @@ return;
 		// Activation
 		{"burn", "activation"},
 		{"enfeeble", "activation"},
+		{"enrage", "activation"},
 		{"evadebarrier", "activation"},
 		{"frost", "activation"},
 		{"heal", "activation"},

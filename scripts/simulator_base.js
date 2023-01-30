@@ -1152,6 +1152,63 @@ var SIMULATOR = {};
 			return true;
 		},
 
+		// Enrage
+		// - Can target specific faction
+		// - Targets allied assaults
+		// - Can be enhanced
+		enrage: function (src_card, skill) {
+
+			var faction = skill.y;
+			var rarity = skill.z;
+			var all = skill.all;
+
+			var alliedUnits = getAlliedUnits(src_card, field);
+
+			var targets = [];
+			for (var key = 0, len = alliedUnits.length; key < len; key++) {
+				var target = alliedUnits[key];
+				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
+					targets.push(key);
+				}
+			}
+
+			// No Targets
+			if (!targets.length) return 0;
+
+			// Check All
+			if (!all) {
+				targets = choose_random_target(targets);
+			}
+			
+			var enrage = (skill.x || 0);
+			var enhanced = getEnhancement(src_card, skill.id, enrage);
+			enrage += enhanced;
+
+			for (var key = 0, len = targets.length; key < len; key++) {
+				var target = alliedUnits[targets[key]];
+				var amount = enrage;
+
+				// Check Nullify
+				if (target.nullified && !skill.ignore_nullify) {
+					target.nullified--;
+					if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
+					continue;
+				}
+
+				if (skill.mult) {
+					amount = Math.ceil(skill.mult * target.health);
+				}
+
+				target.enraged += amount;
+				if (debug) {
+					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+					echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + amount + '<br>';
+				}
+			}
+
+			return true;
+		},
+
 		// Vampirism
 		// - Reduced by Barrier, Ward, and Shroud
 		// - Not blocked by Invisibility 
@@ -1604,63 +1661,6 @@ var SIMULATOR = {};
 			}
 
 			return affected;
-		},
-
-		// Enrage
-		// - Can target specific faction
-		// - Targets allied assaults
-		// - Can be enhanced
-		enrage: function (src_card, skill) {
-
-			var faction = skill.y;
-			var rarity = skill.z;
-			var all = skill.all;
-
-			var alliedUnits = getAlliedUnits(src_card, field);
-
-			var targets = [];
-			for (var key = 0, len = alliedUnits.length; key < len; key++) {
-				var target = alliedUnits[key];
-				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)) {
-					targets.push(key);
-				}
-			}
-
-			// No Targets
-			if (!targets.length) return 0;
-
-			// Check All
-			if (!all) {
-				targets = choose_random_target(targets);
-			}
-			
-			var enrage = (skill.x || 0);
-			var enhanced = getEnhancement(src_card, skill.id, enrage);
-			enrage += enhanced;
-
-			for (var key = 0, len = targets.length; key < len; key++) {
-				var target = alliedUnits[targets[key]];
-				var amount = enrage;
-
-				// Check Nullify
-				if (target.nullified && !skill.ignore_nullify) {
-					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
-					continue;
-				}
-
-				if (skill.mult) {
-					amount = Math.ceil(skill.mult * target.health);
-				}
-
-				target.enraged += amount;
-				if (debug) {
-					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-					echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + amount + '<br>';
-				}
-			}
-
-			return true;
 		},
 
 		// Enhance
