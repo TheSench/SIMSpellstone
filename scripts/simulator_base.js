@@ -1187,7 +1187,10 @@ var SIMULATOR = {};
 					drawField(field, null, null, turn, sourceCard);
 				}
 			}
-		},
+		}
+	};
+
+	var earlyActivationSkills = {
 		
 		// - Targets allied assaults
 		cleanse: function (src_card, skill, invigorate) {
@@ -1239,9 +1242,7 @@ var SIMULATOR = {};
 
 			return true;
 		},
-	};
 
-	var earlyActivationSkills = {
 		// Rally
 		// - Targets self
 		// - Can be enhanced
