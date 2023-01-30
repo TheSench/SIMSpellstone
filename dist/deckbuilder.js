@@ -639,6 +639,8 @@ var makeUnit = (function() {
             }
         }
 
+        card.base_health = card.health;
+
         original_skills = original_skills.slice();
 
         if (skillModifiers && skillModifiers.length) {

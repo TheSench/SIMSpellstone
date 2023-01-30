@@ -1009,6 +1009,8 @@ var makeUnit = (function() {
             }
         }
 
+        card.base_health = card.health;
+
         original_skills = original_skills.slice();
 
         if (skillModifiers && skillModifiers.length) {
@@ -3172,7 +3174,7 @@ var SIM_CONTROLLER = (function () {
 					if (!target.isActive()) {
 						mult += (skill.on_delay_mult || 0);
 					}
-					protect_amt += Math.ceil(target.health * mult);
+					protect_amt += Math.ceil(target.base_health * mult);
 				}
 
 				target.protected += protect_amt;
