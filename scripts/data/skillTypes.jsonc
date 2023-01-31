@@ -36,19 +36,20 @@
 
     // Early Activation
     "barrage": "earlyActivation",
+    "cleanse": "earlyActivation",
     "enhance": "earlyActivation",
     "enlarge": "earlyActivation",
-    "enrage": "earlyActivation",
     "fervor": "earlyActivation",
     "imbue": "earlyActivation",
     "mark": "earlyActivation",
     "legion": "earlyActivation",
     "radiance": "earlyActivation",
-    "rally": "earlyActivation",
+    "rally": "earlyActivation", // empower
     
     // Activation
     "burn": "activation",
     "enfeeble": "activation",
+    "enrage": "activation",
     "evadebarrier": "activation",
     "frost": "activation",
     "heal": "activation",
