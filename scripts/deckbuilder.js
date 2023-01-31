@@ -1642,6 +1642,7 @@ var showAdvancedFilters = function (skill) {
 		case 'corrosive':
 		case 'counter':
 		case 'counterburn':
+		case 'counterpoison':
 		case 'evade':
 		case 'evadebarrier':
 		case 'frost':
