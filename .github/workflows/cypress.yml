@@ -23,7 +23,7 @@ jobs:
           start: npm start
           wait-on: 'http://localhost:8080'
       # Run with recording on if previous step failed
-      - name: Cypress run
+      - name: Cypress run (failures)
         if: ${{ failure() }}
         uses: cypress-io/github-action@v5
         with:
