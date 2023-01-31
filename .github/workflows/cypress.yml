@@ -22,8 +22,6 @@ jobs:
           parallel: true
           start: npm start
           wait-on: 'http://localhost:8080'
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
       # Run with recording on if previous step failed
       - name: Cypress run
         if: ${{ failure() }}
