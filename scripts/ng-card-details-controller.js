@@ -284,6 +284,7 @@
       'corrosive',
       'counter',
       'counterburn',
+      'counterpoison',
       'daze',
       'enfeeble',
       'enhance',
