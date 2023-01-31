@@ -1,5 +1,12 @@
 name: End-to-end tests
-on: [push]
+on:
+  push:
+    branches: [ gh-pages ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ gh-pages ]
+    paths-ignore:
+      - '**/vendor.js'
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
@@ -10,3 +17,21 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          record: false
+          parallel: true
+          start: npm run start
+          wait-on: 'http://localhost:8080'
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+      # Run with recording on if previous step failed
+      - name: Cypress run
+        if: ${{ failure() }}
+        uses: cypress-io/github-action@v5
+        with:
+          record: true
+          parallel: true
+          start: npm run start
+          wait-on: 'http://localhost:8080'
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
