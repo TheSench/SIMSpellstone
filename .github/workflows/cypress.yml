@@ -19,7 +19,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           record: false
-          parallel: true
+          parallel: false
           start: npm start
           wait-on: 'http://localhost:8080'
       # Run with recording on if previous step failed
@@ -28,7 +28,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           record: true
-          parallel: true
+          parallel: false
           start: npm start
           wait-on: 'http://localhost:8080'
         env:
