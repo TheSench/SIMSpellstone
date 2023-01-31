@@ -87,7 +87,7 @@ var SKILL_DATA = {
 	},
 	"counterpoison": {
 		"desc": "When damaged by an attack, Poison the attacker.",
-		"icon": "counterburn",
+		"icon": "poisonhide",
 		"name": "Poisonhide",
 		"type": "onDamaged"
 	},
@@ -237,7 +237,7 @@ var SKILL_DATA = {
 	},
 	"magicfield": {
 		"desc": "Grants Ward to self and half as much to adjacent ally creatures.",
-		"icon": "avian_barrier",
+		"icon": "antimagicfield",
 		"name": "Anti-Magic Field",
 		"type": "activation"
 	},
