@@ -20,7 +20,7 @@ jobs:
         with:
           record: false
           parallel: true
-          start: npm run start
+          start: npm start
           wait-on: 'http://localhost:8080'
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -31,7 +31,7 @@ jobs:
         with:
           record: true
           parallel: true
-          start: npm run start
+          start: npm start
           wait-on: 'http://localhost:8080'
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
