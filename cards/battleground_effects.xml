@@ -1450,8 +1450,8 @@
   </battleground>
   <battleground>
     <id>162</id>
-    <name>Deadly Swarm</name>
-    <desc>0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!. BGE subject to changes!</desc>
+    <name>Deadly Sting</name>
+    <desc>0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!.</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
       <add_skill id="venom" mult="0.10" x="2" base="health" y="13" delay="0,1,2" />

@@ -12041,6 +12041,94 @@
     <ignore_energy_reduction_until>1675357200</ignore_energy_reduction_until>
     <!-- Thursday, February 2, 2023 at 17:00:00  -->
   </campaign>
+  <!-- Event 99 -->
+  <campaign>
+    <id>1339</id>
+    <name>Gossip about a Hero</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1675357200</locked_start_time>
+    <!-- Thursday, 2 February 2023 17:00:00 -->
+    <location_id>10</location_id>
+    <x>400</x>
+    <!-- left right -->
+    <y>350</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7008</mission_id>
+      <mission_id>7009</mission_id>
+      <mission_id>7010</mission_id>
+      <mission_id>7011</mission_id>
+      <mission_id>7012</mission_id>
+      <mission_id>7013</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2604" number="25" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2246" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2179" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2604" number="75" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="7" id="2247" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3056" drop_per_energy="0.6" />
+    <ignore_energy_reduction_until>1677776400</ignore_energy_reduction_until>
+    <!-- Thursday, March 2, 2023 at 17:00:00 	 -->
+  </campaign>
+  <campaign>
+    <id>1340</id>
+    <name>Unmasking the False Hero</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1339" level="1" />
+    <locked_start_time>1676566800</locked_start_time>
+    <!-- Thursday, 16 February 2023 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>10</location_id>
+    <x>200</x>
+    <!-- left right -->
+    <y>325</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7014</mission_id>
+      <mission_id>7015</mission_id>
+      <mission_id>7016</mission_id>
+      <mission_id>7017</mission_id>
+      <mission_id>7018</mission_id>
+      <mission_id>7019</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2604" number="25" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2246" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2157" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2604" number="75" />
+      /&gt;
+      <!-- Insect Flasks -->
+      <card level="7" id="2247" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3056" drop_per_energy="0.8" />
+    <ignore_energy_reduction_until>1677776400</ignore_energy_reduction_until>
+    <!-- Thursday, March 2, 2023 at 17:00:00  -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

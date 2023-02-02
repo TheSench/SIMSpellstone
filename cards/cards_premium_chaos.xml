@@ -1066,22 +1066,32 @@
     <upgrade>
       <level>3</level>
       <health>19</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
       <skill id="counter" x="7" />
       <skill id="leech" x="7" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
-      <level>5</level>
+      <level>4</level>
+      <attack>8</attack>
       <skill id="counter" x="7" />
       <skill id="leech" x="8" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <health>20</health>
+      <skill id="counter" x="7" />
+      <skill id="leech" x="9" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
       <level>6</level>
-      <attack>8</attack>
+      <attack>10</attack>
+      <health>21</health>
+      <skill id="counter" x="8" />
+      <skill id="leech" x="10" />
+      <skill id="flurry" c="3" />
     </upgrade>
   </unit>
   <unit>
@@ -8374,40 +8384,55 @@
     <picture>Legendary_Acid_Spitter_B</picture>
     <asset_bundle>65</asset_bundle>
     <hidden_until_time>1467910800</hidden_until_time>
-    <attack>8</attack>
-    <health>24</health>
+    <attack>9</attack>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="legion" x="4" />
     <skill id="poison" x="6" />
-    <skill id="leech" x="8" />
+    <skill id="leech" x="9" />
     <type>2</type>
     <sub_type>13</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>29</health>
+      <attack>10</attack>
+      <skill id="legion" x="4" />
+      <skill id="poison" x="7" />
+      <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>26</health>
-      <attack>9</attack>
+      <health>30</health>
+      <attack>11</attack>
+      <skill id="legion" x="4" />
+      <skill id="poison" x="7" />
+      <skill id="leech" x="11" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>27</health>
+      <health>31</health>
+      <attack>12</attack>
+      <skill id="legion" x="5" />
+      <skill id="poison" x="8" />
+      <skill id="leech" x="12" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="legion" x="5" />
-      <skill id="poison" x="7" />
-      <skill id="leech" x="9" />
+      <health>32</health>
+      <attack>13</attack>
+      <skill id="legion" x="6" />
+      <skill id="poison" x="9" />
+      <skill id="leech" x="13" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="legion" x="5" />
-      <skill id="poison" x="8" />
-      <skill id="leech" x="10" />
+      <health>33</health>
+      <attack>14</attack>
+      <skill id="legion" x="7" />
+      <skill id="poison" x="10" />
+      <skill id="leech" x="14" />
     </upgrade>
   </unit>
   <unit>
@@ -29379,7 +29404,7 @@
     <asset_bundle>162</asset_bundle>
     <hidden_until_time>1559235600</hidden_until_time>
     <attack>11</attack>
-    <health>48</health>
+    <health>49</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="backlash" x="3" />
@@ -29392,24 +29417,26 @@
     <upgrade>
       <level>2</level>
       <attack>12</attack>
-      <health>49</health>
+      <health>50</health>
     </upgrade>
     <upgrade>
       <level>3</level>
+      <health>52</health>
       <skill id="backlash" x="3" />
       <skill id="counterburn" x="3" />
       <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>50</health>
+      <health>53</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>51</health>
+      <health>54</health>
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>55</health>
       <skill id="backlash" x="4" />
       <skill id="counterburn" x="5" />
       <skill id="enfeeble" x="4" all="1" />
@@ -29424,7 +29451,7 @@
     <asset_bundle>162</asset_bundle>
     <hidden_until_time>1559235600</hidden_until_time>
     <attack>13</attack>
-    <health>51</health>
+    <health>60</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="backlash" x="4" />
@@ -29436,27 +29463,40 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>52</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>53</health>
-      <attack>14</attack>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>55</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
+      <health>61</health>
       <skill id="backlash" x="5" />
       <skill id="counterburn" x="6" />
       <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
-      <level>6</level>
+      <level>3</level>
+      <health>62</health>
+      <attack>14</attack>
       <skill id="backlash" x="5" />
-      <skill id="counterburn" x="6" />
+      <skill id="counterburn" x="7" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>63</health>
+      <skill id="backlash" x="5" />
+      <skill id="counterburn" x="8" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>64</health>
+      <attack>15</attack>
+      <skill id="backlash" x="5" />
+      <skill id="counterburn" x="9" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>65</health>
+      <attack>16</attack>
+      <skill id="backlash" x="6" />
+      <skill id="counterburn" x="10" />
       <skill id="enfeeble" x="5" all="1" />
     </upgrade>
   </unit>

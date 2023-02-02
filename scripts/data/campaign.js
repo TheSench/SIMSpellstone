@@ -6076,6 +6076,39 @@ var CAMPAIGNS = {
 		],
 		"name": "The Colossus"
 	},
+	"1339": {
+		"id": "1339",
+		"items": {
+			"3056": 0.6
+		},
+		"location_id": "10",
+		"missions": [
+			"7008",
+			"7009",
+			"7010",
+			"7011",
+			"7012",
+			"7013"
+		],
+		"name": "Gossip about a Hero"
+	},
+	"1340": {
+		"battleground_id": "2053",
+		"id": "1340",
+		"items": {
+			"3056": 0.8
+		},
+		"location_id": "10",
+		"missions": [
+			"7014",
+			"7015",
+			"7016",
+			"7017",
+			"7018",
+			"7019"
+		],
+		"name": "Unmasking the False Hero"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -136632,5 +136665,725 @@ var MISSIONS = {
 		],
 		"id": "7007",
 		"name": "The Winged Union"
+	},
+	"7008": {
+		"commander": {
+			"id": "292"
+		},
+		"deck": [
+			{
+				"id": "8070"
+			},
+			{
+				"id": "1010"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "6069"
+			},
+			{
+				"id": "5065"
+			},
+			{
+				"id": "2010"
+			},
+			{
+				"id": "2095"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "5065",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6165",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7201",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7268",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5068",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7008",
+		"name": "Return to the Cave"
+	},
+	"7009": {
+		"commander": {
+			"id": "366"
+		},
+		"deck": [
+			{
+				"id": "8070"
+			},
+			{
+				"id": "1010"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "6069"
+			},
+			{
+				"id": "5069"
+			},
+			{
+				"id": "2010"
+			},
+			{
+				"id": "2095"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6165",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7201",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7268",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6193",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7009",
+		"name": "Will my Memory be Wrong?"
+	},
+	"7010": {
+		"commander": {
+			"id": "432"
+		},
+		"deck": [
+			{
+				"id": "8134"
+			},
+			{
+				"id": "1010"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "5069"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6165",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7201",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6197",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6193",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7010",
+		"name": "A Surprising Reception"
+	},
+	"7011": {
+		"commander": {
+			"id": "214"
+		},
+		"deck": [
+			{
+				"id": "8123"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "5139"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "6066"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6165",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6186",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6197",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7138",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7011",
+		"name": "A Guided Tour"
+	},
+	"7012": {
+		"commander": {
+			"id": "282"
+		},
+		"deck": [
+			{
+				"id": "8138"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "5139"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "2180"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7135",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7233",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7279",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7138",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7012",
+		"name": "A Walk Through the Carnival"
+	},
+	"7013": {
+		"commander": {
+			"id": "282"
+		},
+		"deck": [
+			{
+				"id": "8136"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "5139"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "2180"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2179",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7135",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7199",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7064",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7048",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7013",
+		"name": "The Encounter with the Hero"
+	},
+	"7014": {
+		"commander": {
+			"id": "292"
+		},
+		"deck": [
+			{
+				"id": "8136"
+			},
+			{
+				"id": "1010"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "2050"
+			},
+			{
+				"id": "5065"
+			},
+			{
+				"id": "2098"
+			},
+			{
+				"id": "2095"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "5065",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6165",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5253",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7268",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5068",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7014",
+		"name": "A Bad Feeling"
+	},
+	"7015": {
+		"commander": {
+			"id": "366"
+		},
+		"deck": [
+			{
+				"id": "8081"
+			},
+			{
+				"id": "1010"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "2179"
+			},
+			{
+				"id": "2098"
+			},
+			{
+				"id": "2132"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6165",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7086",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7234",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6230",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7015",
+		"name": "The Interrogation Begins"
+	},
+	"7016": {
+		"commander": {
+			"id": "432"
+		},
+		"deck": [
+			{
+				"id": "8134"
+			},
+			{
+				"id": "1010"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "2156"
+			},
+			{
+				"id": "2131"
+			},
+			{
+				"id": "5069"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6165",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7201",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6197",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5138",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7016",
+		"name": "The False Hero Exposed"
+	},
+	"7017": {
+		"commander": {
+			"id": "214"
+		},
+		"deck": [
+			{
+				"id": "8123"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "2131"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "2131"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "6066"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5069",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5193",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7017",
+		"name": "The Fight"
+	},
+	"7018": {
+		"commander": {
+			"id": "282"
+		},
+		"deck": [
+			{
+				"id": "8138"
+			},
+			{
+				"id": "2131"
+			},
+			{
+				"id": "1318"
+			},
+			{
+				"id": "1613"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "1036"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "2180"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7135",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7233",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7018",
+		"name": "Crowd Control"
+	},
+	"7019": {
+		"commander": {
+			"id": "282"
+		},
+		"deck": [
+			{
+				"id": "8136"
+			},
+			{
+				"id": "1617"
+			},
+			{
+				"id": "1036"
+			},
+			{
+				"id": "2098"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "1036"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "2180"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2179",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7135",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7199",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5200",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7019",
+		"name": "The Truth Always Prevails"
 	}
 };

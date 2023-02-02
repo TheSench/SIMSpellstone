@@ -18754,6 +18754,151 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 99 - Insect - Node 1 -->
+  <achievement>
+    <id>3851</id>
+    <!-- HERE  -->
+    <type>2</type>
+    <order>101</order>
+    <name>Gossip about a Hero</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Gossip about a Hero' campaign on Mastery Level 1.</desc>
+    <!-- HERE  -->
+    <mission_req>7013</mission_req>
+    <locked_start_time>1675357200</locked_start_time>
+    <!-- Thursday, February 2, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <req>
+      <campaign>1339</campaign>
+      <!-- HERE  -->
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3056" number="50" />
+      <!-- Expediton Item -->
+      <!-- HERE  -->
+      <event_points id="7095" number="50" />
+      <!-- Expediton ID -->
+      <!-- HERE  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3852</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Gossip about a Hero</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Gossip about a Hero' campaign on Mastery Level 2.</desc>
+    <mission_req>7013</mission_req>
+    <locked_start_time>1675357200</locked_start_time>
+    <!-- Thursday, February 2, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3851</achievement_req>
+    <!-- Dont forget requirement  -->
+    <req>
+      <campaign>1339</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3853</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Gossip about a Hero</name>
+    <desc>Complete the 'Gossip about a Hero' campaign on Mastery Level 4.</desc>
+    <mission_req>7013</mission_req>
+    <locked_start_time>1675357200</locked_start_time>
+    <!-- Thursday, February 2, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3852</achievement_req>
+    <req>
+      <campaign>1339</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3854</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Gossip about a Hero</name>
+    <desc>Complete the 'Gossip about a Hero' campaign on Mastery Level 6.</desc>
+    <mission_req>7013</mission_req>
+    <locked_start_time>1675357200</locked_start_time>
+    <!-- Thursday, February 2, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3853</achievement_req>
+    <req>
+      <campaign>1339</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 99 - Insect - Node 2 -->
+  <achievement>
+    <id>3855</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Unmasking the False Hero</name>
+    <desc>Complete the 'Unmasking the False Hero' campaign on Mastery Level 2.</desc>
+    <mission_req>7019</mission_req>
+    <locked_start_time>1676566800</locked_start_time>
+    <!-- Thursday, 16 February 2023 17:00:00 -->
+    <req>
+      <campaign>1340</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3856</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Unmasking the False Hero</name>
+    <desc>Complete the 'Unmasking the False Hero' campaign on Mastery Level 4.</desc>
+    <mission_req>7019</mission_req>
+    <locked_start_time>1676566800</locked_start_time>
+    <!-- Thursday, 16 February 2023 17:00:00 -->
+    <achievement_req>3855</achievement_req>
+    <req>
+      <campaign>1340</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3857</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Unmasking the False Hero</name>
+    <desc>Complete the 'Unmasking the False Hero' campaign on Mastery Level 6.</desc>
+    <mission_req>7019</mission_req>
+    <locked_start_time>1676566800</locked_start_time>
+    <!-- Thursday, 16 February 2023 17:00:00 -->
+    <achievement_req>3856</achievement_req>
+    <req>
+      <campaign>1340</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -20011,6 +20156,32 @@
     </req>
     <reward>
       <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Beetleton Bunker Revisited -->
+    <id>4053</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Master of Beetleton Bunker</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Beetleton Bunker</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7019</mission_req>
+    <req>
+      <campaign>1130</campaign>
+      <campaign>1131</campaign>
+      <campaign>1132</campaign>
+      <campaign>1133</campaign>
+      <campaign>1134</campaign>
+      <campaign>1135</campaign>
+      <campaign>1288</campaign>
+      <campaign>1289</campaign>
+      <campaign>1339</campaign>
+      <campaign>1340</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="3056" number="1" />
     </reward>
   </achievement>
   <!-- Non-Core Maps Meta END -->

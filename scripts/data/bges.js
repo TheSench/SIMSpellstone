@@ -2030,7 +2030,7 @@ var BATTLEGROUNDS = {
 		"name": "Celestial Raid"
 	},
 	"162": {
-		"desc": "0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!. BGE subject to changes!",
+		"desc": "0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!.",
 		"effect": [
 			{
 				"base": "health",
@@ -2084,7 +2084,7 @@ var BATTLEGROUNDS = {
 			}
 		],
 		"id": "162",
-		"name": "Deadly Swarm"
+		"name": "Deadly Sting"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

@@ -1596,16 +1596,21 @@
     <resource item_id="2524" number="5000" />
   </fusion_recipe>
   <!-- Midas Ultima Item Fusion -->
-  <fusion_recipe>
-    <card_id>30004</card_id>
-    <resource card_id="30003" number="1" />
-    <resource item_id="30007" number="1000" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>30005</card_id>
-    <resource card_id="30004" number="1" />
-    <resource item_id="30007" number="5000" />
-  </fusion_recipe>
+  <!-- <fusion_recipe>
+		<card_id>30003</card_id>
+		<resource card_id="30002" number="1" />
+		<resource item_id="30007" number="200" />
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>30004</card_id>
+		<resource card_id="30003" number="1" />
+		<resource item_id="30007" number="750" />
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>30005</card_id>
+		<resource card_id="30004" number="1" />
+		<resource item_id="30007" number="1200" />
+	</fusion_recipe> -->
   <fusion_recipe>
     <card_id>12095</card_id>
     <resource card_id="2095" number="2" />
@@ -2789,6 +2794,22 @@
   <fusion_recipe>
     <card_id>22245</card_id>
     <resource card_id="12245" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12246</card_id>
+    <resource card_id="2246" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22246</card_id>
+    <resource card_id="12246" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12247</card_id>
+    <resource card_id="2247" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22247</card_id>
+    <resource card_id="12247" number="2" />
   </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
