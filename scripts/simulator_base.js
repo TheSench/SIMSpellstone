@@ -461,6 +461,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, protect);
 			protect += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 
@@ -470,6 +472,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
+
+				affected++;
 
 				var protect_amt = protect;
 				var mult = skill.mult;
@@ -494,7 +498,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		
@@ -560,6 +564,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, wingward);
 			wingward += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 				
@@ -569,6 +575,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
+				
+				affected++;
 				
 				target.protected += wingward;
 				var invisBoost = Math.ceil(wingward/2);
@@ -582,7 +590,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		invigorate: function (src_card, skill) {
@@ -705,6 +713,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, strike);
 			strike += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -714,6 +724,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
+
+				affected++;
 
 				var strike_damage = strike;
 
@@ -749,7 +761,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Intensify
@@ -786,6 +798,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, intensify);
 			intensify += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -798,6 +812,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
+
+				affected++;
 
 				if (target.scorched) {
 					target.scorched.amount += intensify;
@@ -813,7 +829,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Ignite
@@ -849,6 +865,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, ignite);
 			ignite += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -859,6 +877,8 @@ var SIMULATOR = {};
 					continue;
 				}
 
+				affected++;
+
 				target.scorch(ignite);
 				if (debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
 
@@ -867,7 +887,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Jam (Freeze)
@@ -960,6 +980,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, frost);
 			frost += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -969,6 +991,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
+
+				affected++;
 
 				var frost_damage = frost;
 
@@ -992,7 +1016,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		heartseeker: function (src_card, skill) {
@@ -1049,6 +1073,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, enfeeble);
 			enfeeble += enhanced;
 
+			var affected= 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = enemyUnits[targets[key]];
 
@@ -1059,6 +1085,8 @@ var SIMULATOR = {};
 					continue;
 				}
 
+				affected++;
+
 				target['enfeebled'] += enfeeble;
 				if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
 
@@ -1067,7 +1095,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Weaken
@@ -1131,6 +1159,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, weaken);
 			weaken += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = potentialTargets[targets[key]];
 
@@ -1141,6 +1171,8 @@ var SIMULATOR = {};
 					continue;
 				}
 
+				affected++;
+
 				target.attack_weaken += weaken;
 				target.attackIncreasePrevention += weaken;
 				if (debug) {
@@ -1149,7 +1181,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Enrage
@@ -1184,6 +1216,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, enrage);
 			enrage += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 				var amount = enrage;
@@ -1194,6 +1228,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
+
+				affected++;
 
 				if (skill.mult) {
 					amount = Math.ceil(skill.mult * target.health);
@@ -1206,7 +1242,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Vampirism
@@ -1271,6 +1307,8 @@ var SIMULATOR = {};
 				targets = choose_random_target(targets);
 			}
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 
@@ -1280,6 +1318,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' cleanses ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
+
+				affected++;
 
 				target.poisoned = 0;
                 target.enfeebled = 0;
@@ -1296,7 +1336,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Rally
@@ -1382,6 +1422,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, rally);
 			rally += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 
 				var target = alliedUnits[targets[key]];
@@ -1393,6 +1435,9 @@ var SIMULATOR = {};
 					continue;
 				}
 
+
+				affected++;
+
 				var rally_amt = rally + getSkillMult(skill, target, 'attack');
 				rally_amt = adjustAttackIncrease(target, rally_amt);
 
@@ -1403,7 +1448,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Legion
@@ -1493,7 +1538,7 @@ var SIMULATOR = {};
 		},
 
 		// Fervor
-		// - Targets self for each adjacent unjammed, active assault in specific faction
+		// - Targets self for each adjacent assault in specific faction
 		// - Can be enhanced?
 		fervor: function (src_card, skill) {
 
@@ -1550,6 +1595,9 @@ var SIMULATOR = {};
 
 			var enhanced = getEnhancement(src_card, skill.id, barrages);
 			barrages += enhanced;
+
+			var affected = 0;
+
 			for (var i = 0; i < barrages; i++) {
 				var targets = [];
 				for (var key = 0, len = enemyUnits.length; key < len; key++) {
@@ -1560,7 +1608,7 @@ var SIMULATOR = {};
 				}
 
 				// No Targets
-				if (!targets.length) return 0;
+				if (!targets.length) return affected;
 
 				// Check All
 				if (!all) {
@@ -1577,6 +1625,8 @@ var SIMULATOR = {};
 						if (debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
 						continue;
 					}
+
+					affected++;
 
 					var strike_damage = strike;
 
@@ -1595,7 +1645,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Enhance
