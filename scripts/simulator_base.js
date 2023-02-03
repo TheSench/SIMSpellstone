@@ -400,8 +400,6 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					// Missed - retry next turn
-					skill.countdown = 0;
 					if (debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
@@ -922,8 +920,6 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					// Missed - retry next turn
-					skill.countdown = 0;
 					if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
