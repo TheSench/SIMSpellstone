@@ -1145,6 +1145,7 @@ var SIMULATOR = {};
 				if (target.invisible) {
 					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -1154,6 +1155,8 @@ var SIMULATOR = {};
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
 				}
+				
+				if (target.backlash) { backlash(src_card, target); }
 			}
 
 			return true;
@@ -1582,6 +1585,7 @@ var SIMULATOR = {};
 					if (target.invisible) {
 						target.invisible--;
 						if (debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
+						if (target.backlash) { backlash(src_card, target); }
 						continue;
 					}
 
@@ -1599,6 +1603,8 @@ var SIMULATOR = {};
 						echo += debug_name(source) + ' throws a bomb at ' + debug_name(target) + ' for ' + amount + ' damage';
 						echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 					});
+					
+					if (target.backlash) { backlash(src_card, target); }
 				}
 			}
 
