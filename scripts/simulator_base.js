@@ -625,6 +625,8 @@ var SIMULATOR = {};
 			var enhanced = getEnhancement(src_card, skill.id, heal);
 			heal += enhanced;
 
+			var affected = 0;
+
 			for (var key = 0, len = targets.length; key < len; key++) {
 				var target = alliedUnits[targets[key]];
 
@@ -634,6 +636,8 @@ var SIMULATOR = {};
 					if (debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
+
+				affected++;
 
 				var heal_amt = heal + getSkillMult(skill, target);
 
@@ -663,7 +667,7 @@ var SIMULATOR = {};
 				}
 			}
 
-			return true;
+			return affected;
 		},
 
 		// Strike (Bolt)
