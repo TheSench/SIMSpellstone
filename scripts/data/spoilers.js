@@ -1,34 +1,5 @@
 "use strict"
 
 var spoilers = {
-	"2246": true,
-	"2247": true,
-	"4008": true,
-	"4030": true,
-	"4060": true,
-	"5066": true,
-	"5640": true,
-	"6601": true,
-	"6603": true,
-	"7628": true,
-	"12246": true,
-	"12247": true,
-	"15066": true,
-	"16232": true,
-	"22100": true,
-	"22157": true,
-	"22180": true,
-	"22246": true,
-	"22247": true,
-	"25066": true,
-	"25070": true,
-	"25200": true,
-	"26008": true,
-	"26067": true,
-	"26232": true,
-	"27068": true,
-	"27137": true,
-	"27141": true,
-	"27199": true,
-	"27200": true
+	"7628": true
 };
