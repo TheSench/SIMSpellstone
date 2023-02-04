@@ -703,7 +703,8 @@ var SIMULATOR = {};
 			}
 
 			// No Targets
-			if (!targets.length) return 0;
+			// Bolt always resets counter, even if it had no targets
+			if (!targets.length) return true;
 
 			// Check All
 			if (!all) {
@@ -763,7 +764,8 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			// Bolt always resets counter, even if it was evaded
+			return true;
 		},
 
 		// Intensify
@@ -1156,7 +1158,8 @@ var SIMULATOR = {};
 			}
 
 			// No Targets
-			if (!targets.length) return 0;
+			// Weaken always resets counter, even if it had no targets
+			if (!targets.length) return true;
 
 			// Check All
 			if (!all) {
@@ -1189,7 +1192,8 @@ var SIMULATOR = {};
 				}
 			}
 
-			return affected;
+			// Weaken always resets counter, even if it was evaded
+			return true;
 		},
 
 		// Enrage
