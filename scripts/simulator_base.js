@@ -3151,6 +3151,8 @@ var SIMULATOR = {};
 				var counterBase = 0 + target.counter;
 				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
 
+				counterBase += current_assault.envenomed;
+
 				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
 			}
 
@@ -3201,6 +3203,8 @@ var SIMULATOR = {};
 						echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
 					}
 				}
+
+				fury += current_assault.envenomed;
 
 				doCounterDamage(current_assault, target, 'Fury', fury, 0);
 			}
