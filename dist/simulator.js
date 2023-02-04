@@ -3110,6 +3110,7 @@ var SIM_CONTROLLER = (function () {
 					// Missed - retry next turn
 					skill.countdown = 0;
 					if (debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -3417,6 +3418,7 @@ var SIM_CONTROLLER = (function () {
 				if (target.invisible) {
 					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -3501,6 +3503,7 @@ var SIM_CONTROLLER = (function () {
 				if (target.invisible) {
 					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -3561,6 +3564,7 @@ var SIM_CONTROLLER = (function () {
 				if (target.invisible) {
 					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' ignites ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -3624,6 +3628,7 @@ var SIM_CONTROLLER = (function () {
 					// Missed - retry next turn
 					skill.countdown = 0;
 					if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -3674,6 +3679,7 @@ var SIM_CONTROLLER = (function () {
 				if (target.invisible) {
 					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -3763,6 +3769,7 @@ var SIM_CONTROLLER = (function () {
 				if (target.invisible) {
 					target.invisible--;
 					if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
+					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
 
@@ -3782,6 +3789,7 @@ var SIM_CONTROLLER = (function () {
 		// - Targets active_next_turn, unjammed, enemy assaults with attack > 0
 		// - Can be evaded
 		// - Can be enhanced
+		// - Does not trigger backlash
 		weakenself: function (src_card, skill) {
 			return activationSkills.weaken(src_card, skill);
 		},
@@ -4246,6 +4254,7 @@ var SIM_CONTROLLER = (function () {
 		// - Can be evaded
 		// - Must calculate enfeeble/protect
 		// - Can be enhanced
+		// - Does not trigger backlash
 		barrage: function (src_card, skill) {
 
 			var barrages = skill.x;
