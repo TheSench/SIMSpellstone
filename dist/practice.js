@@ -2994,7 +2994,7 @@ var SIM_CONTROLLER = (function () {
 		if (attacker.isAssault() && defender.isAlive()) {
 			var baseDamage = defender.backlash;
 			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
-			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement, 0);
+			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement, true);
 		}
 	}
 
@@ -3974,7 +3974,7 @@ var SIM_CONTROLLER = (function () {
 			
 			if (target && target.isAlive() && !sourceCard.silenced) {
 				var vampirism = sourceCard.vampirism;
-				var damageInfo = modifySkillDamage(target, vampirism, { enfeeble: true });
+				var damageInfo = modifySkillDamage(target, vampirism, { enfeeble: true, venom: true });
 				var damageDealt = damageInfo.damage;
 
 				do_damage(sourceCard, target, damageDealt, damageInfo.shatter, function (source, target, amount) {
@@ -4349,7 +4349,7 @@ var SIM_CONTROLLER = (function () {
 					var strike_damage = strike;
 
 					// Check Protect/Enfeeble
-					var damageInfo = modifySkillDamage(target, strike_damage, { enfeeble: true });
+					var damageInfo = modifySkillDamage(target, strike_damage, { enfeeble: true, venom: true });
 					strike_damage = damageInfo.damage;
 					var shatter = damageInfo.shatter;
 
@@ -5018,7 +5018,6 @@ var SIM_CONTROLLER = (function () {
 				}
 			}
 
-			current_assault.enfeebled = current_assault.envenomed;
 			current_assault.enraged = 0;
 			current_assault.invisible = 0;
 			current_assault.protected = 0;
@@ -5376,12 +5375,14 @@ var SIM_CONTROLLER = (function () {
 	function modifySkillDamage(target, damage, exclusions) {
 		// Check Protect/Enfeeble
 		exclusions = (exclusions || {});
+		// Note: Venom is currently included in enfeeble
 		var enfeeble = (exclusions.enfeeble ? 0 : (target.enfeebled || 0));
+		var envenomed = (exclusions.venom ? 0 : (target.envenomed || 0));
 		var shrouded = (exclusions.stasis ? 0 : checkShroud(target));
 		var protect = (exclusions.protect ? 0 : (target.protected || 0));
 		var warded = (exclusions.ward ? 0 : (target.warded || 0));
 
-		damage += enfeeble;
+		damage += enfeeble + envenomed;
 		var shatter = false;
 		if (warded) {
 			damage -= applyDamageReduction(target, 'warded', damage);
@@ -5399,6 +5400,7 @@ var SIM_CONTROLLER = (function () {
 		var echo = '';
 		if (debug) {
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+			if (envenomed) echo += ' Venom: +' + envenomed;
 			if (shrouded) echo += ' Shroud: -' + shrouded;
 			if (protect) echo += ' Barrier: -' + protect;
 			if (warded) echo += ' Ward: -' + warded;
@@ -5858,7 +5860,7 @@ var SIM_CONTROLLER = (function () {
 				var counterBase = 0 + target.counter;
 				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
 
-				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement, current_assault.envenomed);
+				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement, false);
 			}
 
 			// Counterburn
@@ -5909,7 +5911,7 @@ var SIM_CONTROLLER = (function () {
 					}
 				}
 
-				doCounterDamage(current_assault, target, 'Fury', fury, 0, current_assault.envenomed);
+				doCounterDamage(current_assault, target, 'Fury', fury, 0, false);
 			}
 		}
 		
@@ -5990,19 +5992,18 @@ var SIM_CONTROLLER = (function () {
 		// -- END OF STATUS INFLICTION --
 	}
 
-	function doCounterDamage(attacker, defender, counterType, counterBase, counterEnhancement, envenomed) {
+	function doCounterDamage(attacker, defender, counterType, counterBase, counterEnhancement, excludeVenom) {
 
-		var counterDamage = counterBase + counterEnhancement + envenomed;
+		var counterDamage = counterBase + counterEnhancement;
 
 		// Protect
-		var damageInfo = modifySkillDamage(attacker, counterDamage, { enfeeble: true });
+		var damageInfo = modifySkillDamage(attacker, counterDamage, { enfeeble: true, venom: excludeVenom });
 		counterDamage = damageInfo.damage;
 		var shatter = damageInfo.shatter;
 
 		if (debug) {
 			echo += '<u>(' + counterType + ': +' + counterBase;
 			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
-			if (envenomed) echo += ' Venom: +' + envenomed;
 			echo += damageInfo.echo;
 			echo += ') = ' + counterDamage + ' damage</u><br>';
 		}
@@ -8130,6 +8131,10 @@ var CARD_GUI = {};
         */
         if (card.enfeebled) {
             var status = createStatus("enfeeble", card.enfeebled);
+            debuffs.push(status);
+        }
+        if (card.envenomed) {
+            var status = createStatus("venom", card.envenomed);
             debuffs.push(status);
         }
         if (card.marked) {
