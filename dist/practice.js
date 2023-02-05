@@ -3410,8 +3410,7 @@ var SIM_CONTROLLER = (function () {
 			}
 
 			// No Targets
-			// Bolt always resets counter, even if it had no targets
-			if (!targets.length) return true;
+			if (!targets.length) return 0;
 
 			// Check All
 			if (!all) {
@@ -3865,8 +3864,7 @@ var SIM_CONTROLLER = (function () {
 			}
 
 			// No Targets
-			// Weaken always resets counter, even if it had no targets
-			if (!targets.length) return true;
+			if (!targets.length) return 0;
 
 			// Check All
 			if (!all) {
