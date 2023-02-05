@@ -2994,7 +2994,7 @@ var SIM_CONTROLLER = (function () {
 		if (attacker.isAssault() && defender.isAlive()) {
 			var baseDamage = defender.backlash;
 			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
-			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement);
+			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement, 0);
 		}
 	}
 
@@ -5858,7 +5858,7 @@ var SIM_CONTROLLER = (function () {
 				var counterBase = 0 + target.counter;
 				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
 
-				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
+				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement, current_assault.envenomed);
 			}
 
 			// Counterburn
@@ -5909,7 +5909,7 @@ var SIM_CONTROLLER = (function () {
 					}
 				}
 
-				doCounterDamage(current_assault, target, 'Fury', fury, 0);
+				doCounterDamage(current_assault, target, 'Fury', fury, 0, current_assault.envenomed);
 			}
 		}
 		
@@ -5990,9 +5990,9 @@ var SIM_CONTROLLER = (function () {
 		// -- END OF STATUS INFLICTION --
 	}
 
-	function doCounterDamage(attacker, defender, counterType, counterBase, counterEnhancement) {
+	function doCounterDamage(attacker, defender, counterType, counterBase, counterEnhancement, envenomed) {
 
-		var counterDamage = counterBase + counterEnhancement;
+		var counterDamage = counterBase + counterEnhancement + envenomed;
 
 		// Protect
 		var damageInfo = modifySkillDamage(attacker, counterDamage, { enfeeble: true });
@@ -6002,6 +6002,7 @@ var SIM_CONTROLLER = (function () {
 		if (debug) {
 			echo += '<u>(' + counterType + ': +' + counterBase;
 			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
+			if (envenomed) echo += ' Venom: +' + envenomed;
 			echo += damageInfo.echo;
 			echo += ') = ' + counterDamage + ' damage</u><br>';
 		}
