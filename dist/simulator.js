@@ -4386,7 +4386,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[key];
 				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))
-					&& target.hasSkill(s)) {
+					&& (all || target.hasSkill(s))) {
 					targets.push(key);
 				}
 			}
@@ -4416,6 +4416,10 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				affected++;
+
+				if (!target.hasSkill(s)) {
+					continue;
+				}
 
 				var enhancements = target.enhanced;
 				enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
