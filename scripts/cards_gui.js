@@ -507,6 +507,10 @@ var CARD_GUI = {};
             var status = createStatus("enfeeble", card.enfeebled);
             debuffs.push(status);
         }
+        if (card.envenomed) {
+            var status = createStatus("venom", card.envenomed);
+            debuffs.push(status);
+        }
         if (card.marked) {
             var status = createStatus("enfeeble", card.marked);
             debuffs.push(status);
