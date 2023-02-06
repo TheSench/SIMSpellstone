@@ -5018,6 +5018,7 @@ var SIM_CONTROLLER = (function () {
 				}
 			}
 
+			current_assault.enfeebled = 0;
 			current_assault.enraged = 0;
 			current_assault.invisible = 0;
 			current_assault.protected = 0;
@@ -5635,6 +5636,10 @@ var SIM_CONTROLLER = (function () {
 		var enfeeble = target.enfeebled;
 		damage += enfeeble;
 
+		// Venom
+		var envenomed = target.envenomed;
+		damage += envenomed;
+
 		// Heartseeker
 		var heartseeker = target.heartseeker;
 		damage += heartseeker;
@@ -5648,6 +5653,7 @@ var SIM_CONTROLLER = (function () {
 			if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
 			if (current_assault.attack_corroded) echo += ' Corrosion: -' + current_assault.attack_corroded;
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+			if (envenomed) echo += ' Venom: +' + envenomed;
 			if (heartseeker) echo += ' Heartseeker: +' + heartseeker;
 		}
 
@@ -5783,9 +5789,7 @@ var SIM_CONTROLLER = (function () {
 				venom += enhanced;
 
 				if (venom > target.envenomed) {
-					var hexIncrease = venom - target.envenomed;
 					target.envenomed = venom;
-					target.enfeebled += hexIncrease;
 					if (debug) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
 				}
 			}
