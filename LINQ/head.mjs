@@ -12,7 +12,7 @@ async function head(url = '') {
     });
 }
 
-var url = 'https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles_live/2020_3_33f1/cardpack_002_unity2020_3_33_webgl.unity3d';
+var url = 'https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles/2020_3_42f1/cardpack_002_unity2020_3_42_webgl.unity3d';
 
 var resp = await head(url);
 
