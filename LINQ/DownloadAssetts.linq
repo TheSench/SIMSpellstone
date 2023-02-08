@@ -4,8 +4,8 @@
 
 static string folder = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), "../Downloads");
 static DirectoryInfo directory = new DirectoryInfo(folder);
-static string baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles_live/2020_3_33f1/";
-static string fileVersion = "_unity2020_3_33_webgl.unity3d";
+static string baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles/2020_3_42f1/";
+static string fileVersion = "_unity2020_3_42_webgl.unity3d";
 static WebClient client = new WebClient();
 static bool downloadFiles = true;
 static bool runExtraction = true;
