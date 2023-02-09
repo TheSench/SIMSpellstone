@@ -8314,11 +8314,8 @@
 		<id>30002</id>
 		<card_type>2</card_type>
 		<name>Midas, the Golden Prototype</name>
-		<asset_prefab>Common_Construct_A</asset_prefab>
-		<asset_prefab_alt>Common_Construct_A</asset_prefab_alt>
 		<picture>Common_Construct_A</picture>
-		<asset_bundle>38</asset_bundle>
-		<asset_bundle_alt>38</asset_bundle_alt>
+		<asset_bundle>138</asset_bundle>
 		<cannot_salvage>1</cannot_salvage>
 		<attack>7</attack>
 		<health>29</health>
@@ -8348,11 +8345,8 @@
 		<id>30003</id>
 		<card_type>2</card_type>
 		<name>Midas, the Aurelian Construct</name>
-		<asset_prefab>Rare_Construct_A</asset_prefab>
-		<asset_prefab_alt>Rare_Construct_A</asset_prefab_alt>
 		<picture>Rare_Construct_A</picture>
-		<asset_bundle>38</asset_bundle>
-		<asset_bundle_alt>38</asset_bundle_alt>
+		<asset_bundle>138</asset_bundle>
 		<cannot_salvage>1</cannot_salvage>
 		<attack>11</attack>
 		<health>42</health>
@@ -8393,11 +8387,8 @@
 		<id>30004</id>
 		<card_type>2</card_type>
 		<name>Midas Alpha, the Antimage</name>
-		<asset_prefab>Legendary_Construct_A</asset_prefab>
-		<asset_prefab_alt>Legendary_Construct_A</asset_prefab_alt>
 		<picture>Legendary_Construct_A</picture>
-		<asset_bundle>38</asset_bundle>
-		<asset_bundle_alt>38</asset_bundle_alt>
+		<asset_bundle>138</asset_bundle>
 		<cannot_salvage>1</cannot_salvage>
 		<attack>12</attack>
 		<health>47</health>
