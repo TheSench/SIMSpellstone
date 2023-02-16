@@ -2086,6 +2086,45 @@ var BATTLEGROUNDS = {
 		"id": "162",
 		"name": "Deadly Sting"
 	},
+	"163": {
+		"desc": "All Dragons gain invisibility equal to 1 plus 10%, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base health.BGE subject to changes",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "evade",
+				"mult": 0.1,
+				"x": 1,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.1,
+				"x": 2,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"mult": 0.15,
+				"y": "9"
+			}
+		],
+		"id": "163",
+		"name": "Flaming Scales"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

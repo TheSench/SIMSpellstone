@@ -62346,5 +62346,150 @@
       <card id="1645" mastery_level="7" name="Sundermarr" />
     </deck>
   </mission>
+  <!-- Event 99 - LBN - Nophora -->
+  <mission>
+    <id>7020</id>
+    <name>After the Justice</name>
+    <energy>18</energy>
+    <desc>After the imprisonment of Kattoraki, you ask the inhabitants of Beetleton Bunker to unify all the tribe's factions, because you experienced first hand that if the factions are united, the potential is unlimited.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7235" name="Shell Shaman" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="5266" name="Formiant Squad" />
+      <card id="5266" name="Formiant Squad" />
+      <card id="5138" name="Geyser Rocva" />
+      <card id="5138" name="Geyser Rocva" />
+      <card id="5233" name="Buzzbolt" />
+      <card id="5234" name="Stratosnail" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="5233" mastery_level="2" name="Buzzbolt" />
+      <card id="7265" mastery_level="3" name="Halo-Weaver Huntress" />
+      <card id="6232" mastery_level="4" name="Firetouch Deathmoth" />
+      <card id="7298" mastery_level="4" name="Mindtis" />
+      <card id="6064" mastery_level="6" name="Dreaded Shock" />
+      <card id="6601" mastery_level="7" name="Elytragor, Beacon's Call" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7021</id>
+    <name>An Impossible Request</name>
+    <energy>18</energy>
+    <desc>The leaders of each faction said to you, that they think they reached that union with the false hero, but now they need a symbol of strength to follow and maintain that union. So they ask you to give them the Real Sword of Katto.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="7265" name="Halo-Weaver Huntress" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="7235" name="Shell Shaman" />
+      <card id="5266" name="Formiant Squad" />
+      <card id="5266" name="Formiant Squad" />
+      <card id="5138" name="Geyser Rocva" />
+      <card id="5234" name="Stratosnail" />
+      <card id="7295" name="Crystal Spider" />
+      <card id="7298" mastery_level="2" name="Mindtis" />
+      <card id="7199" mastery_level="3" name="Celesti Monstrosity" />
+      <card id="7267" mastery_level="4" name="Sower Ohmushi" />
+      <card id="6229" mastery_level="4" name="Killapede" />
+      <card id="6230" mastery_level="6" name="Emberdeath Beetle" />
+      <card id="7628" mastery_level="7" name="Ungoliant, The Poisonous Terror" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7022</id>
+    <name>On the Way to the Big Test</name>
+    <energy>18</energy>
+    <desc>You decide to go again to The Forgotten Island and face Nophora once more. You know that confrontation must be avoided, your only goal is to leave Forgotten Island alive with that Sword.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="7298" name="Mindtis" />
+      <card id="7298" name="Mindtis" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="7267" name="Sower Ohmushi" />
+      <card id="6229" name="Killapede" />
+      <card id="7199" name="Celesti Monstrosity" />
+      <card id="6064" name="Dreaded Shock" />
+      <card id="6230" mastery_level="2" name="Emberdeath Beetle" />
+      <card id="7265" mastery_level="3" name="Halo-Weaver Huntress" />
+      <card id="6229" mastery_level="4" name="Killapede" />
+      <card id="7199" mastery_level="4" name="Celesti Monstrosity" />
+      <card id="7295" mastery_level="6" name="Crystal Spider" />
+      <card id="6603" mastery_level="7" name="Kabuto, Samurai Myth" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7023</id>
+    <name>The Nophora's Cave</name>
+    <energy>18</energy>
+    <desc>At the exact time you put a foot inside of the Cave, the floor shakes indicating that Nophora knows about your presence. You will need all of your skill and a huge amount of luck to succeed on this mission.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="6065" name="Torchsnout" />
+      <card id="6065" name="Torchsnout" />
+      <card id="6192" name="Buzzing Elytrite" />
+      <card id="6192" name="Buzzing Elytrite" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6295" name="Creeperbots" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="7198" name="Graveclay Digger" />
+      <card id="6266" mastery_level="2" name="Sparkhurler Gaucho" />
+      <card id="5304" mastery_level="3" name="Cold Archer" />
+      <card id="7131" mastery_level="4" name="Darkmites" />
+      <card id="5196" mastery_level="4" name="Deca-mecha" />
+      <card id="7728" mastery_level="6" name="Shellcran Catcher" />
+      <card id="6623" mastery_level="7" name="Mortas, the Cursed" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7024</id>
+    <name>Facing Nophora</name>
+    <energy>18</energy>
+    <desc>When you reach the Lair, in that exact moment, Nophora emerges, attacking you fiercely. You use all your capabilities to avoid it and face the Katto's Sword, but Nophora is determined to kill you this time.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="6192" name="Buzzing Elytrite" />
+      <card id="6192" name="Buzzing Elytrite" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6295" name="Creeperbots" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="7198" name="Graveclay Digger" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="5304" mastery_level="2" name="Cold Archer" />
+      <card id="6057" mastery_level="3" name="Beammite" />
+      <card id="5196" mastery_level="4" name="Deca-mecha" />
+      <card id="7728" mastery_level="4" name="Shellcran Catcher" />
+      <card id="5200" mastery_level="6" name="Clyx, Advance Guard" />
+      <card id="4060" mastery_level="7" name="Yaritza" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7025</id>
+    <name>The Success</name>
+    <energy>18</energy>
+    <desc>You reach the sword and, in the exact moment that you have it in your power, a giant rock falls on Nophora, restraining it and giving you a safe path to flee. It's a miracle. Now on Beetleton Bunker, you finally complete your goal: the insect tribe is united.</desc>
+    <commander id="472" />
+    <deck>
+      <card id="6295" name="Creeperbots" />
+      <card id="6295" name="Creeperbots" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="5201" name="Cricket Caller" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="7198" name="Graveclay Digger" />
+      <card id="6266" name="Sparkhurler Gaucho" />
+      <card id="5304" name="Cold Archer" />
+      <card id="6057" mastery_level="2" name="Beammite" />
+      <card id="5196" mastery_level="3" name="Deca-mecha" />
+      <card id="7728" mastery_level="4" name="Shellcran Catcher" />
+      <card id="5200" mastery_level="4" name="Clyx, Advance Guard" />
+      <card id="6180" mastery_level="6" name="Cloaked Revenapod" />
+      <card id="4019" mastery_level="7" name="Formos Ebonclaw" />
+    </deck>
+  </mission>
 </root>
 

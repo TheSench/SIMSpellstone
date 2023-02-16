@@ -6500,6 +6500,22 @@ var CAMPAIGNS = {
 			"7007"
 		],
 		"name": "Lightning Allies"
+	},
+	"4012": {
+		"id": "4012",
+		"items": {
+			"3056": 0.6
+		},
+		"location_id": "10",
+		"missions": [
+			"7020",
+			"7021",
+			"7022",
+			"7023",
+			"7024",
+			"7025"
+		],
+		"name": "Lightning Nophora"
 	}
 };
 var MISSIONS = {
@@ -137385,5 +137401,365 @@ var MISSIONS = {
 		],
 		"id": "7019",
 		"name": "The Truth Always Prevails"
+	},
+	"7020": {
+		"commander": {
+			"id": "472"
+		},
+		"deck": [
+			{
+				"id": "7235"
+			},
+			{
+				"id": "7235"
+			},
+			{
+				"id": "5266"
+			},
+			{
+				"id": "5266"
+			},
+			{
+				"id": "5138"
+			},
+			{
+				"id": "5138"
+			},
+			{
+				"id": "5233"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "7295"
+			},
+			{
+				"id": "5233",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7265",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7298",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6064",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6601",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7020",
+		"name": "After the Justice"
+	},
+	"7021": {
+		"commander": {
+			"id": "472"
+		},
+		"deck": [
+			{
+				"id": "7265"
+			},
+			{
+				"id": "7265"
+			},
+			{
+				"id": "7235"
+			},
+			{
+				"id": "7235"
+			},
+			{
+				"id": "5266"
+			},
+			{
+				"id": "5266"
+			},
+			{
+				"id": "5138"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "7295"
+			},
+			{
+				"id": "7298",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7199",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7267",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6229",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6230",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7628",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7021",
+		"name": "An Impossible Request"
+	},
+	"7022": {
+		"commander": {
+			"id": "472"
+		},
+		"deck": [
+			{
+				"id": "7298"
+			},
+			{
+				"id": "7298"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "7267"
+			},
+			{
+				"id": "7267"
+			},
+			{
+				"id": "6229"
+			},
+			{
+				"id": "7199"
+			},
+			{
+				"id": "6064"
+			},
+			{
+				"id": "6230",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7265",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6229",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7199",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6603",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7022",
+		"name": "On the Way to the Big Test"
+	},
+	"7023": {
+		"commander": {
+			"id": "472"
+		},
+		"deck": [
+			{
+				"id": "6065"
+			},
+			{
+				"id": "6065"
+			},
+			{
+				"id": "6192"
+			},
+			{
+				"id": "6192"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "5201"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "7198"
+			},
+			{
+				"id": "6266",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5304",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7131",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5196",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7728",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6623",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7023",
+		"name": "The Nophora's Cave"
+	},
+	"7024": {
+		"commander": {
+			"id": "472"
+		},
+		"deck": [
+			{
+				"id": "6192"
+			},
+			{
+				"id": "6192"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "5201"
+			},
+			{
+				"id": "5201"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "7198"
+			},
+			{
+				"id": "6266"
+			},
+			{
+				"id": "5304",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6057",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5196",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7728",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5200",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4060",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7024",
+		"name": "Facing Nophora"
+	},
+	"7025": {
+		"commander": {
+			"id": "472"
+		},
+		"deck": [
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "5201"
+			},
+			{
+				"id": "5201"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "7198"
+			},
+			{
+				"id": "6266"
+			},
+			{
+				"id": "5304"
+			},
+			{
+				"id": "6057",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5196",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7728",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5200",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6180",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4019",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7025",
+		"name": "The Success"
 	}
 };

@@ -1460,6 +1460,17 @@
       <add_skill id="counter" x="2" mult="0.07" base="health" y="13" delay="3,4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>163</id>
+    <name>Flaming Scales</name>
+    <desc>All Dragons gain invisibility equal to 1 plus 10%, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base health.BGE subject to changes</desc>
+    <icon>filter_dragon_64.png</icon>
+    <effect>
+      <add_skill id="evade" x="1" mult="0.1" base="health" y="9" />
+      <add_skill id="burn" x="2" mult="0.1" base="health" y="9" delay="0,1,2" />
+      <add_skill id="counterburn" mult="0.15" base="health" y="9" delay="3,4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

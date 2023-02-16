@@ -12996,5 +12996,38 @@
     <find_item id="3053" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Uncommon Allies event 98 END -->
+  <!-- LBN Nophora event 99  -->
+  <campaign>
+    <id>4012</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Nophora</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>10</location_id>
+    <x>683</x>
+    <y>460</y>
+    <!-- up down -->
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>7020</mission_id>
+      <mission_id>7021</mission_id>
+      <mission_id>7022</mission_id>
+      <mission_id>7023</mission_id>
+      <mission_id>7024</mission_id>
+      <mission_id>7025</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2051" />
+      <card level="5" id="2051" />
+      <item level="6" id="105640" number="25" />
+      <item level="7" id="105640" number="75" />
+    </rewards>
+    <find_item id="3056" drop_per_energy=".6" />
+  </campaign>
+  <!-- LBN Nophora event 99 END -->
 </root>
 
