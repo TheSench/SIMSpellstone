@@ -62491,5 +62491,294 @@
       <card id="4019" mastery_level="7" name="Formos Ebonclaw" />
     </deck>
   </mission>
+  <!-- Event 100 - Dragons -->
+  <mission>
+    <id>7026</id>
+    <name>Trader mentality</name>
+    <energy>18</energy>
+    <desc>You arrive at Tarragon Peak after hearing about a delicious edible delicacy from the region. Your plan is to buy or collect a large quantity of these and take them to be traded with possible big profits as an exotic product.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="7012" name="Life Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6096" mastery_level="2" name="Desert Slitherer" />
+      <card id="2045" mastery_level="3" name="Chillbeard Giant" />
+      <card id="2090" mastery_level="4" name="Terra Dweller" />
+      <card id="7129" mastery_level="5" name="Zealous Snapjaw" />
+      <card id="5188" mastery_level="6" name="Movra, Dragon Ruler" />
+      <card id="8119" mastery_level="7" name="Brittle Ragescale" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7027</id>
+    <name>Beginning of the search</name>
+    <energy>18</energy>
+    <desc>Common sense suggests you start looking at places of commerce. Maybe restaurants, markets and barter shops. So you head in that direction, with the best attitude.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="7012" name="Life Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2197" name="Invoker of Darkness" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="6131" mastery_level="2" name="Winged Abducter" />
+      <card id="2066" mastery_level="3" name="Basalt Dragon" />
+      <card id="2067" mastery_level="4" name="Symbol of Elaria" />
+      <card id="2001" mastery_level="5" name="Dunetooth Demon" />
+      <card id="5129" mastery_level="6" name="Shackled Gatekeeper" />
+      <card id="7008" mastery_level="7" name="Rock Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7028</id>
+    <name>No delicacies to be found</name>
+    <energy>18</energy>
+    <desc>You pass through the places where there are more inhabitants and buildings. The less inhospitable areas and far from the bubbling hot lava, but you can't find where to get what you're looking for.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7029</id>
+    <name>It appears you came chasing a rumor</name>
+    <energy>18</energy>
+    <desc>After searching and asking everywhere, no one knows about said delicacy and now you doubt its true existence. Finally, after a long time, you find two familiar dragons to ask about the delicacy.</desc>
+    <commander id="284" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7030</id>
+    <name>Finally a clue</name>
+    <energy>18</energy>
+    <desc>You speak with Kuroilong and Howaito and they contradict each other in their stories. One says that he did hear about it and the other assures that this is false. Something in Howaito's look makes you suspicious.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1319" name="Wraith" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="7084" name="Witchwood" />
+      <card id="7095" name="Talonsaur" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="6061" mastery_level="3" name="Decagon" />
+      <card id="6096" mastery_level="4" name="Desert Slitherer" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="5213" mastery_level="6" name="Mountking Warder" />
+      <card id="6183" mastery_level="7" name="Knowledge Hoarder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7031</id>
+    <name>Follow the breadcrumbs</name>
+    <energy>18</energy>
+    <desc>Before saying goodbye to the dragons, one of them coughs as if he had something in his throat, his eyes reddened and his gaze placid, but he overcomes it. They both fly away in the direction of the forest.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="6081" name="Apparition" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="7129" mastery_level="3" name="Zealous Snapjaw" />
+      <card id="2001" mastery_level="4" name="Dunetooth Demon" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="6003" mastery_level="6" name="Black Knight" />
+      <card id="7060" mastery_level="7" name="Shenami" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7032</id>
+    <name>The right place for a delicacy</name>
+    <energy>18</energy>
+    <desc>Between doubt and curiosity to find the aforementioned delicacy, you arrive at a wooded area, quite warm and leafy. Great smells and colors everywhere.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="7012" name="Life Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6096" mastery_level="2" name="Desert Slitherer" />
+      <card id="2045" mastery_level="3" name="Chillbeard Giant" />
+      <card id="2090" mastery_level="4" name="Terra Dweller" />
+      <card id="7129" mastery_level="5" name="Zealous Snapjaw" />
+      <card id="5188" mastery_level="6" name="Movra, Dragon Ruler" />
+      <card id="8119" mastery_level="7" name="Brittle Ragescale" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7033</id>
+    <name>The watcher</name>
+    <energy>18</energy>
+    <desc>A large wooden-looking dragon, with runes and wings that look like foliage, seems to be watching you walk through the forest. Tiendroantun flies through the skies over the place.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="7012" name="Life Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2197" name="Invoker of Darkness" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="6131" mastery_level="2" name="Winged Abducter" />
+      <card id="2066" mastery_level="3" name="Basalt Dragon" />
+      <card id="2067" mastery_level="4" name="Symbol of Elaria" />
+      <card id="2001" mastery_level="5" name="Dunetooth Demon" />
+      <card id="5129" mastery_level="6" name="Shackled Gatekeeper" />
+      <card id="7008" mastery_level="7" name="Rock Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7034</id>
+    <name>Protector of Life</name>
+    <energy>18</energy>
+    <desc>After hours of traveling in the forest, you meet the Protector of Life. Tiendroantun comes with heavy steps, walking through the trees. His runes now glow reddish, not the cool blue you remember seeing in the past.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7035</id>
+    <name>The bet</name>
+    <energy>18</energy>
+    <desc>You go directly to the point and ask about the edible delicacy of the region. Tiendroantun with a smile on his face proposes a bet. If you win, you will be able to take a large sack with you. If not, you will lose a chunk of your gold.</desc>
+    <commander id="284" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5012" name="Static Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1334" name="Cinder Drake" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="7062" mastery_level="3" name="Brine Bellower" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="2123" mastery_level="5" name="Firestoke Clawsmith" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7036</id>
+    <name>Bright red fruits</name>
+    <energy>18</energy>
+    <desc>The great dragon presents a wooden bowl with bright red fruits. Tiendroantun says that only if you manage to eat more of these delicacies than him, you will win the bet.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1319" name="Wraith" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="7084" name="Witchwood" />
+      <card id="7095" name="Talonsaur" />
+      <card id="7128" name="Denizen of the Trees" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="6061" mastery_level="3" name="Decagon" />
+      <card id="6096" mastery_level="4" name="Desert Slitherer" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="5213" mastery_level="6" name="Mountking Warder" />
+      <card id="6183" mastery_level="7" name="Knowledge Hoarder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7037</id>
+    <name>Fire!</name>
+    <energy>18</energy>
+    <desc>After the first bite, you discover that they are amazingly delicious. As you sweat and tear your eyes up from all the heat, you think that this really could be a big deal. Luckily, the dragon didn't know that you are a fan of spicy food.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="8107" name="Firework Explosive" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="6081" name="Apparition" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="7129" mastery_level="3" name="Zealous Snapjaw" />
+      <card id="2001" mastery_level="4" name="Dunetooth Demon" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="6003" mastery_level="6" name="Black Knight" />
+      <card id="7060" mastery_level="7" name="Shenami" />
+    </deck>
+  </mission>
 </root>
 

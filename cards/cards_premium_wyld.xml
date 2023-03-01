@@ -12212,16 +12212,20 @@
     <upgrade>
       <level>4</level>
       <attack>12</attack>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>13</attack>
+      <health>32</health>
       <skill id="armored" x="6" />
       <skill id="poison" x="9" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>31</health>
+      <attack>14</attack>
+      <health>33</health>
       <skill id="armored" x="7" />
       <skill id="poison" x="10" />
       <skill id="berserk" x="6" />
@@ -23863,13 +23867,15 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>17</health>
       <skill id="daze" x="6" />
       <skill id="leech" x="6" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>17</health>
+      <attack>6</attack>
+      <health>18</health>
       <skill id="daze" x="6" />
       <skill id="leech" x="6" />
       <skill id="berserk" x="4" />
@@ -27965,6 +27971,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
+      <attack>11</attack>
       <health>38</health>
       <skill id="stasis" x="6" />
       <skill id="regenerate" x="8" />
@@ -27972,23 +27979,26 @@
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>12</attack>
       <health>39</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>12</attack>
+      <attack>13</attack>
       <health>40</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>42</health>
+      <attack>14</attack>
+      <health>41</health>
       <skill id="stasis" x="6" />
       <skill id="regenerate" x="9" />
       <skill id="heal" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>14</attack>
+      <attack>15</attack>
+      <health>47</health>
       <skill id="stasis" x="7" />
       <skill id="regenerate" x="10" />
       <skill id="heal" x="6" all="1" />
@@ -40027,6 +40037,142 @@
       <skill id="absorb" x="10" />
       <skill id="poison" x="9" />
       <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7309</id>
+    <card_type>2</card_type>
+    <name>Dulong, the Fierce</name>
+    <picture>Dragon_Poisonous_Dragon_A</picture>
+    <asset_bundle>268</asset_bundle>
+    <hidden_until_time>1678726800</hidden_until_time>
+    <attack>10</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="poison" x="5" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="3" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <skill id="corrosive" x="4" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>28</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17309</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dulong, the Menace</name>
+    <picture>Dragon_Poisonous_Dragon_A</picture>
+    <asset_bundle>268</asset_bundle>
+    <hidden_until_time>1678726800</hidden_until_time>
+    <attack>11</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="poison" x="7" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="4" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <skill id="corrosive" x="5" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27309</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dulong, the Toxic</name>
+    <picture>Dragon_Poisonous_Dragon_B</picture>
+    <asset_bundle>268</asset_bundle>
+    <hidden_until_time>1678726800</hidden_until_time>
+    <attack>13</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="weaken" x="2" all="1" />
+    <skill id="poison" x="8" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="5" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="5" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="6" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="poison" x="10" />
     </upgrade>
   </unit>
 </root>

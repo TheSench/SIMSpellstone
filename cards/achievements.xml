@@ -18899,6 +18899,151 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 100 - Dragon - Node 1 -->
+  <achievement>
+    <id>3858</id>
+    <!-- HERE  -->
+    <type>2</type>
+    <order>101</order>
+    <name>Just rumors?</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Just rumors?' campaign on Mastery Level 1.</desc>
+    <!-- HERE  -->
+    <mission_req>7031</mission_req>
+    <locked_start_time>1677776400</locked_start_time>
+    <!-- Thursday, 2 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <req>
+      <campaign>1341</campaign>
+      <!-- HERE  -->
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3083" number="50" />
+      <!-- Expediton Item -->
+      <!-- HERE  -->
+      <event_points id="7096" number="50" />
+      <!-- Expediton ID -->
+      <!-- HERE  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3859</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Just rumors?</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Just rumors?' campaign on Mastery Level 2.</desc>
+    <mission_req>7031</mission_req>
+    <locked_start_time>1677776400</locked_start_time>
+    <!-- Thursday, 2 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3858</achievement_req>
+    <!-- Dont forget requirement  -->
+    <req>
+      <campaign>1341</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3860</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Just rumors?</name>
+    <desc>Complete the 'Just rumors?' campaign on Mastery Level 4.</desc>
+    <mission_req>7031</mission_req>
+    <locked_start_time>1677776400</locked_start_time>
+    <!-- Thursday, 2 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3859</achievement_req>
+    <req>
+      <campaign>1341</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3861</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Just rumors?</name>
+    <desc>Complete the 'Just rumors?' campaign on Mastery Level 6.</desc>
+    <mission_req>7031</mission_req>
+    <locked_start_time>1677776400</locked_start_time>
+    <!-- Thursday, 2 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3860</achievement_req>
+    <req>
+      <campaign>1341</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 100 - Dragon - Node 2 -->
+  <achievement>
+    <id>3862</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Fire Fruits</name>
+    <desc>Complete the 'Fire Fruits' campaign on Mastery Level 2.</desc>
+    <mission_req>7037</mission_req>
+    <locked_start_time>1678986000</locked_start_time>
+    <!-- Thursday, 16 March 2023 17:00:00 -->
+    <req>
+      <campaign>1342</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3863</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Fire Fruits</name>
+    <desc>Complete the 'Fire Fruits' campaign on Mastery Level 4.</desc>
+    <mission_req>7037</mission_req>
+    <locked_start_time>1678986000</locked_start_time>
+    <!-- Thursday, 16 March 2023 17:00:00 -->
+    <achievement_req>3862</achievement_req>
+    <req>
+      <campaign>1342</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3864</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Fire Fruits</name>
+    <desc>Complete the 'Fire Fruits' campaign on Mastery Level 6.</desc>
+    <mission_req>7037</mission_req>
+    <locked_start_time>1678986000</locked_start_time>
+    <!-- Thursday, 16 March 2023 17:00:00 -->
+    <achievement_req>3863</achievement_req>
+    <req>
+      <campaign>1342</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -20181,7 +20326,32 @@
       <level>7</level>
     </req>
     <reward>
-      <item id="3056" number="1" />
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Tarragon Peak Revisited -->
+    <id>4054</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Master of Tarragon Peak</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Tarragon Peak.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7037</mission_req>
+    <req>
+      <campaign>1189</campaign>
+      <campaign>1190</campaign>
+      <campaign>1191</campaign>
+      <campaign>1192</campaign>
+      <campaign>1193</campaign>
+      <campaign>1286</campaign>
+      <campaign>1287</campaign>
+      <campaign>1341</campaign>
+      <campaign>1342</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
     </reward>
   </achievement>
   <!-- Non-Core Maps Meta END -->

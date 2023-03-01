@@ -2087,14 +2087,12 @@ var BATTLEGROUNDS = {
 		"name": "Deadly Sting"
 	},
 	"163": {
-		"desc": "All Dragons gain invisibility equal to 1 plus 10%, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base health.BGE subject to changes",
+		"desc": "All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base health.",
 		"effect": [
 			{
-				"base": "health",
 				"effect_type": "add_skill",
 				"id": "evade",
-				"mult": 0.1,
-				"x": 1,
+				"x": 3,
 				"y": "9"
 			},
 			{

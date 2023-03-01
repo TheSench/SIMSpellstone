@@ -12129,6 +12129,92 @@
     <ignore_energy_reduction_until>1677776400</ignore_energy_reduction_until>
     <!-- Thursday, March 2, 2023 at 17:00:00  -->
   </campaign>
+  <!-- Campaign Event 100 - Tarragon Peak -->
+  <campaign>
+    <id>1341</id>
+    <name>Just rumors?</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1677776400</locked_start_time>
+    <!-- Thursday, 2 March 2023 17:00:00 -->
+    <location_id>19</location_id>
+    <x>569</x>
+    <!-- left right -->
+    <y>520</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7026</mission_id>
+      <mission_id>7027</mission_id>
+      <mission_id>7028</mission_id>
+      <mission_id>7029</mission_id>
+      <mission_id>7030</mission_id>
+      <mission_id>7031</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2603" number="25" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2248" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2004" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2603" number="75" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="7" id="2247" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3083" drop_per_energy="0.4" />
+    <ignore_energy_reduction_until>1680195600</ignore_energy_reduction_until>
+    <!-- Thursday, March 30, 2023 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1342</id>
+    <name>Fire Fruits</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1341" level="1" />
+    <locked_start_time>1678986000</locked_start_time>
+    <!-- Thursday, 16 March 2023 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>19</location_id>
+    <x>30</x>
+    <y>223</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7032</mission_id>
+      <mission_id>7033</mission_id>
+      <mission_id>7034</mission_id>
+      <mission_id>7035</mission_id>
+      <mission_id>7036</mission_id>
+      <mission_id>7037</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2603" number="25" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2066" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2046" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2603" number="75" />
+      /&gt;
+      <!-- Dragon Flasks -->
+      <card level="7" id="2247" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3083" drop_per_energy="0.4" />
+    <ignore_energy_reduction_until>1680195600</ignore_energy_reduction_until>
+    <!-- Thursday, March 30, 2023 at 17:00:00 -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
