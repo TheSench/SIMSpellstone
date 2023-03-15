@@ -6549,6 +6549,22 @@ var CAMPAIGNS = {
 			"7025"
 		],
 		"name": "Lightning Nophora"
+	},
+	"4013": {
+		"id": "4013",
+		"items": {
+			"3083": 0.6
+		},
+		"location_id": "19",
+		"missions": [
+			"7038",
+			"7039",
+			"7040",
+			"7041",
+			"7042",
+			"7043"
+		],
+		"name": "Lightning Vulcanos Payback"
 	}
 };
 var MISSIONS = {
@@ -138514,5 +138530,365 @@ var MISSIONS = {
 		],
 		"id": "7037",
 		"name": "Fire!"
+	},
+	"7038": {
+		"commander": {
+			"id": "468"
+		},
+		"deck": [
+			{
+				"id": "5097"
+			},
+			{
+				"id": "5097"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "5008"
+			},
+			{
+				"id": "7243"
+			},
+			{
+				"id": "5162"
+			},
+			{
+				"id": "2068",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5128",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6059",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5290",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6130",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4022",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7038",
+		"name": "The vengeance is spicy"
+	},
+	"7039": {
+		"commander": {
+			"id": "468"
+		},
+		"deck": [
+			{
+				"id": "7131"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "5008"
+			},
+			{
+				"id": "5008"
+			},
+			{
+				"id": "7243"
+			},
+			{
+				"id": "5162"
+			},
+			{
+				"id": "2068"
+			},
+			{
+				"id": "5128",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6059",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5290",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6130",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6250",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4004",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7039",
+		"name": "Spark the Tribe Leader"
+	},
+	"7040": {
+		"commander": {
+			"id": "468"
+		},
+		"deck": [
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "5008"
+			},
+			{
+				"id": "5008"
+			},
+			{
+				"id": "7243"
+			},
+			{
+				"id": "7243"
+			},
+			{
+				"id": "5162"
+			},
+			{
+				"id": "2068"
+			},
+			{
+				"id": "5128"
+			},
+			{
+				"id": "6059",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5290",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6130",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6250",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6009",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6619",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7040",
+		"name": "Searching for the lava nightmare"
+	},
+	"7041": {
+		"commander": {
+			"id": "468"
+		},
+		"deck": [
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2006"
+			},
+			{
+				"id": "2006"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "5217"
+			},
+			{
+				"id": "5061"
+			},
+			{
+				"id": "2091"
+			},
+			{
+				"id": "6026",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5061",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7282",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6098",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5184",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4031",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7041",
+		"name": "Climbing the volcano"
+	},
+	"7042": {
+		"commander": {
+			"id": "468"
+		},
+		"deck": [
+			{
+				"id": "2006"
+			},
+			{
+				"id": "2006"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "5217"
+			},
+			{
+				"id": "5217"
+			},
+			{
+				"id": "5061"
+			},
+			{
+				"id": "6098"
+			},
+			{
+				"id": "7282"
+			},
+			{
+				"id": "2091",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5184",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7187",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6197",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6186",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5621",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7042",
+		"name": "The top of the Volcano"
+	},
+	"7043": {
+		"commander": {
+			"id": "468"
+		},
+		"deck": [
+			{
+				"id": "6289"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "5217"
+			},
+			{
+				"id": "5217"
+			},
+			{
+				"id": "5061"
+			},
+			{
+				"id": "5061"
+			},
+			{
+				"id": "6197"
+			},
+			{
+				"id": "6098"
+			},
+			{
+				"id": "6186"
+			},
+			{
+				"id": "7282",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7187",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6197",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6186",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4038",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7043",
+		"name": "The Reunion"
 	}
 };

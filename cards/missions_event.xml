@@ -62780,5 +62780,150 @@
       <card id="7060" mastery_level="7" name="Shenami" />
     </deck>
   </mission>
+  <!-- Event 100 - LBN - Vulcanos -->
+  <mission>
+    <id>7038</id>
+    <name>The vengeance is spicy</name>
+    <energy>18</energy>
+    <desc>With the Fire Fruits in your power, you decide to continue your mission of unifying all the factions for each tribe.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="5097" name="Sierra Dweller" />
+      <card id="5097" name="Sierra Dweller" />
+      <card id="7131" name="Xovrus, Death's End" />
+      <card id="7131" name="Xovrus, Death's End" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="5008" name="Ice Dragon" />
+      <card id="7243" name="Moonscale Drake" />
+      <card id="5162" name="Aloier, Dragon Sentinel" />
+      <card id="2068" mastery_level="2" name="Whitesail Wyvern" />
+      <card id="5128" mastery_level="3" name="Torchrime Terrorizer" />
+      <card id="6059" mastery_level="4" name="Violetfire Igniter" />
+      <card id="5290" mastery_level="4" name="Ofidi Ex Machina" />
+      <card id="6130" mastery_level="6" name="Shadowed Wyvern" />
+      <card id="4022" mastery_level="7" name="Bluefire, Void Incarnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7039</id>
+    <name>Spark the Tribe Leader</name>
+    <energy>18</energy>
+    <desc>Spark tells you that if you want to unify the proud Dragon tribe, you need to defeat the principal cause for this faction's rupture: Vulcanos.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="7131" name="Xovrus, Death's End" />
+      <card id="7131" name="Xovrus, Death's End" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="5008" name="Ice Dragon" />
+      <card id="5008" name="Ice Dragon" />
+      <card id="7243" name="Moonscale Drake" />
+      <card id="5162" name="Aloier, Dragon Sentinel" />
+      <card id="2068" name="Whitesail Wyvern" />
+      <card id="5128" mastery_level="2" name="Torchrime Terrorizer" />
+      <card id="6059" mastery_level="3" name="Violetfire Igniter" />
+      <card id="5290" mastery_level="4" name="Ofidi Ex Machina" />
+      <card id="6130" mastery_level="4" name="Shadowed Wyvern" />
+      <card id="6250" mastery_level="6" name="Witchflare Drake" />
+      <card id="4004" mastery_level="7" name="Lok'thor, the Reborn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7040</id>
+    <name>Searching for the lava nightmare</name>
+    <energy>18</energy>
+    <desc>Spark points to the Tarragon volcano, then tells you that after your recent fight, Vulcanos hid there to heal itself, absorbing all the lava to recover its strength.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="2205" name="Herald of Judgement" />
+      <card id="2205" name="Herald of Judgement" />
+      <card id="5008" name="Ice Dragon" />
+      <card id="5008" name="Ice Dragon" />
+      <card id="7243" name="Moonscale Drake" />
+      <card id="7243" name="Moonscale Drake" />
+      <card id="5162" name="Aloier, Dragon Sentinel" />
+      <card id="2068" name="Whitesail Wyvern" />
+      <card id="5128" name="Torchrime Terrorizer" />
+      <card id="6059" mastery_level="2" name="Violetfire Igniter" />
+      <card id="5290" mastery_level="3" name="Ofidi Ex Machina" />
+      <card id="6130" mastery_level="4" name="Shadowed Wyvern" />
+      <card id="6250" mastery_level="4" name="Witchflare Drake" />
+      <card id="6009" mastery_level="6" name="Siphon Dragon" />
+      <card id="6619" mastery_level="7" name="Darkon, the Deep Horror" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7041</id>
+    <name>Climbing the volcano</name>
+    <energy>18</energy>
+    <desc>You decide to reach the top of the Volcano and fight one more time against Vulcanos to stop it once and for all. Immediately, as soon as you start climbing, a lot of Fire Rocks are being shot at you at an incredible speed.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="2065" name="Pinpin, Dragon Handler" />
+      <card id="2065" name="Pinpin, Dragon Handler" />
+      <card id="2006" name="Zhulong" />
+      <card id="2006" name="Zhulong" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="5217" name="Azazreal, Herald" />
+      <card id="5061" name="Thunderfist Rex" />
+      <card id="2091" name="Ignus" />
+      <card id="6026" mastery_level="2" name="Smokefang" />
+      <card id="5061" mastery_level="3" name="Thunderfist Rex" />
+      <card id="7282" mastery_level="4" name="Egg Keeper" />
+      <card id="6098" mastery_level="4" name="Sheltering Wing" />
+      <card id="5184" mastery_level="6" name="Icy Grimkite" />
+      <card id="4031" mastery_level="7" name="Sparky, the Royal Pet" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7042</id>
+    <name>The top of the Volcano</name>
+    <energy>18</energy>
+    <desc>You can see that Vulcanos is waiting for you. Now it's even bigger and more aggressive than in your previous encounter, but you notice that also it is slower. Besides its power and with all the lava surrounding you, you manage to defeat it without big issues.</desc>
+    <commander id="468" />
+    <deck>
+      <card id="2006" name="Zhulong" />
+      <card id="2006" name="Zhulong" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="5217" name="Azazreal, Herald" />
+      <card id="5217" name="Azazreal, Herald" />
+      <card id="5061" name="Thunderfist Rex" />
+      <card id="6098" name="Sheltering Wing" />
+      <card id="7282" name="Egg Keeper" />
+      <card id="2091" mastery_level="2" name="Ignus" />
+      <card id="5184" mastery_level="3" name="Icy Grimkite" />
+      <card id="7187" mastery_level="4" name="Forest Hydra" />
+      <card id="6197" mastery_level="4" name="Monarch Scorcher" />
+      <card id="6186" mastery_level="6" name="Millidrake Regent" />
+      <card id="5621" mastery_level="7" name="Nayaara, the Airlight" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7043</id>
+    <name>The Reunion</name>
+    <energy>18</energy>
+    <desc>With Vulcanos finally vanished, you return to Tarragon Peak and all the leaders greet you with roars and breathing fire into the sky. Your goal is finally accomplished: The Dragon tribe is now united!</desc>
+    <commander id="468" />
+    <deck>
+      <card id="6289" name="Scalixir Trader" />
+      <card id="6289" name="Scalixir Trader" />
+      <card id="5217" name="Azazreal, Herald" />
+      <card id="5217" name="Azazreal, Herald" />
+      <card id="5061" name="Thunderfist Rex" />
+      <card id="5061" name="Thunderfist Rex" />
+      <card id="6197" name="Monarch Scorcher" />
+      <card id="6098" name="Sheltering Wing" />
+      <card id="6186" name="Millidrake Regent" />
+      <card id="7282" mastery_level="2" name="Egg Keeper" />
+      <card id="7187" mastery_level="3" name="Forest Hydra" />
+      <card id="6197" mastery_level="4" name="Monarch Scorcher" />
+      <card id="6186" mastery_level="4" name="Millidrake Regent" />
+      <card id="5241" mastery_level="6" name="Odd Rider" />
+      <card id="4038" mastery_level="7" name="Kalyt, the Last Word" />
+    </deck>
+  </mission>
 </root>
 
