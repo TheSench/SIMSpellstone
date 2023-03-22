@@ -1,8 +1,9 @@
+import fs from 'fs';
 import { downloadFile } from './download.mjs';
-import { getModifiedDate } from './head.mjs';
 import { fileTypes } from './fileTypes.mjs';
 import { getUrl } from './getUrl.mjs';
-import fs from 'fs';
+import { getModifiedDate } from './head.mjs';
+import { pathFromRoot } from './rootDir.mjs';
 
 export async function downloadFiles() {
     var filesChecked = {};
@@ -30,14 +31,14 @@ export async function downloadFiles() {
     }
 
     const newData = JSON.stringify(filesChecked, null, '  ');
-    fs.writeFileSync('D:/Programs/Source/Repos/SIMSpellstone/.github/actions/extract-images/fileTimes.json', newData, 'utf8');
+    fs.writeFileSync(pathFromRoot('.github/actions/extract-images/fileTimes.json'), newData, 'utf8');
 }
 
 async function setFileDate(filesChecked, fileName, url) {
     try {
         filesChecked[fileName] = await getModifiedDate(url);
         return true;
-    } catch(error) {
+    } catch (error) {
         console.error(error);
         return false;
     }
