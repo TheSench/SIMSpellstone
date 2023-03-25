@@ -1,6 +1,6 @@
 import path from 'path';
 
-let _rootDir = ''
+let _rootDir = path.resolve('.');
 
 export function setRootDir(rootDir) {
     _rootDir = rootDir;
