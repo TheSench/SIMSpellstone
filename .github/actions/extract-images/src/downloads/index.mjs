@@ -1,14 +1,17 @@
 import fs from 'fs';
+import { pathFromRoot } from '../rootDir.mjs';
 import { downloadFile } from './download.mjs';
 import { fileTypes } from './fileTypes.mjs';
 import { getUrl } from './getUrl.mjs';
 import { getModifiedDate } from './head.mjs';
-import { pathFromRoot } from './rootDir.mjs';
 
 export async function downloadFiles() {
-    var filesChecked = {};
+    const fileTimesPath = pathFromRoot('.github/actions/extract-images/src/downloads/fileTimes.json');
+    const fileTimesJson = fs.readFileSync(fileTimesPath, 'utf8');
+    var filesChecked = JSON.parse(fileTimesJson);
     var pattern = /{(\d+)}/
     for (const fileType of fileTypes) {
+        console.log(`Checking ${fileType}...`);
         var digitMatch = pattern.exec(fileType);
         if (digitMatch) {
             var numDigits = parseInt(digitMatch[1]);
@@ -16,30 +19,35 @@ export async function downloadFiles() {
                 if (i >= Math.pow(10, numDigits)) break;
                 var iPadded = i.toString().padStart(numDigits, '0');
                 var fileName = fileType.replace(`{${numDigits}}`, iPadded);
-                const url = getUrl(fileName);
-                if (filesChecked[fileName]) break;
-                if (!await setFileDate(filesChecked, fileName, url)) {
-                    break;
-                }
-                if (!downloadFile(fileName, url)) break;
+                if (!await tryDownloadFile(filesChecked, fileName)) break;
             }
         } else {
             var fileName = fileType;
-            if (filesChecked[fileName]) break;
-            await setFileDate(filesChecked, fileName);
+            if (!await tryDownloadFile(filesChecked, fileName)) break;
         }
     }
 
     const newData = JSON.stringify(filesChecked, null, '  ');
-    fs.writeFileSync(pathFromRoot('.github/actions/extract-images/fileTimes.json'), newData, 'utf8');
+    fs.writeFileSync(fileTimesPath, newData, 'utf8');
 }
 
-async function setFileDate(filesChecked, fileName, url) {
+async function tryDownloadFile(filesChecked, fileName) {
+    const url = getUrl(fileName);
+    const lastUpdated = await getLastUpdated(url);
+    if (!lastUpdated) return false;
+    const previousUpdate = filesChecked[fileName] && new Date(Date.parse(filesChecked[fileName]));
+    if (previousUpdate && previousUpdate >= lastUpdated) return true;
+    filesChecked[fileName] = lastUpdated;
+    return downloadFile(fileName, url);
+}
+
+async function getLastUpdated(url) {
     try {
-        filesChecked[fileName] = await getModifiedDate(url);
-        return true;
+        return await getModifiedDate(url);
     } catch (error) {
-        console.error(error);
-        return false;
+        console.error(error, url);
+        return null;
     }
 }
+
+await downloadFiles();

@@ -3,7 +3,7 @@ import https from 'https';
 import { pathFromRoot } from '../rootDir.mjs';
 
 export async function downloadFile(filename, url) {
-    const downloadLocation = pathFromRoot('Downloads', filename);
+    const downloadLocation = pathFromRoot('Downloads', `${filename}.unity3d`);
     const file = fs.createWriteStream(downloadLocation);
     return new Promise((resolve, reject) => {
         https.get(url, function (response) {
