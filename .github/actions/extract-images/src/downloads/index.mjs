@@ -53,5 +53,3 @@ async function getLastUpdated(url) {
         return null;
     }
 }
-
-await downloadFiles();
