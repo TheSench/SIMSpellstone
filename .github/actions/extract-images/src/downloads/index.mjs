@@ -27,7 +27,8 @@ export async function downloadFiles() {
         }
     }
 
-    const newData = JSON.stringify(filesChecked, null, '  ');
+    const sorted = Object.fromEntries(Object.entries(filesChecked).sort(([keyA], [keyB]) => keyA.localeCompare(keyB)));
+    const newData = JSON.stringify(sorted, null, '  ');
     fs.writeFileSync(fileTimesPath, newData, 'utf8');
 }
 
@@ -38,7 +39,10 @@ async function tryDownloadFile(filesChecked, fileName) {
     const previousUpdate = filesChecked[fileName] && new Date(Date.parse(filesChecked[fileName]));
     if (previousUpdate && previousUpdate >= lastUpdated) return true;
     filesChecked[fileName] = lastUpdated;
-    return downloadFile(fileName, url);
+    return await downloadFile(fileName, url).then(
+        () => true,
+        () => false,
+    );
 }
 
 async function getLastUpdated(url) {
