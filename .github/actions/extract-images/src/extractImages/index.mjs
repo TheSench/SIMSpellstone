@@ -1,13 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import { pathFromRoot } from '../rootDir.mjs';
+import { CardType } from './cardType.mjs';
 import { parseFile } from './extractImages.mjs';
 import { Sprite } from './sprite.mjs';
-import { pathFromRoot } from '../rootDir.mjs';
 
-const CardType = {
-	Commander: "Commander",
-	Assault: "Assault",
-};
 const overrides = {
 	"AprilFools_003Collection.png": CardType.Commander
 };
@@ -25,6 +22,7 @@ export async function extractImagesFromDownloads() {
 		} else {
 			continue;
 		}
+		console.log(`Extracting images from ${dir.name}`)
 
 		let assetFolder = path.join(folder, assetName);
 		const files = fs.readdirSync(assetFolder, { withFileTypes: true })
@@ -60,5 +58,3 @@ function shouldSkip(imageName, type) {
 		!imageName.includes("Set") &&
 		!imageName.includes("@1x"));
 }
-
-await extractImagesFromDownloads();

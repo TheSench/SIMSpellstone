@@ -1,8 +1,13 @@
-import { pathFromRoot } from "../rootDir.mjs";
 import fs from 'fs';
 import Jimp from 'jimp';
+import { pathFromRoot } from "../rootDir.mjs";
+import { CardType } from './cardType.mjs';
 
 const cardImagePath = "res/cardImagesLarge/";
+const formats = {
+	Commander: "png",
+	Assault: "jpg",
+};
 
 /**
  * @param {*} file 
