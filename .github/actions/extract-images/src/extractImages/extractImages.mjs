@@ -2,21 +2,19 @@ import { pathFromRoot } from "../rootDir.mjs";
 import fs from 'fs';
 import Jimp from 'jimp';
 
-
 const cardImagePath = "res/cardImagesLarge/";
 
- 
 /**
  * @param {*} file 
  * @param {Sprite[]} sprites 
  */
 export async function parseFile(file, sprites) {
-	if (fs.existsSync(file)) {
-		const srcImage = await Jimp.read(file);
-		await extractImages(srcImage, sprites);
-	} else {
-		console.log(`${sprites.map(s => s.name).join('\n')} is missing`);
-	}
+    if (fs.existsSync(file)) {
+        const srcImage = await Jimp.read(file);
+        await extractImages(srcImage, sprites);
+    } else {
+        console.log(`${sprites.map(s => s.name).join('\n')} is missing`);
+    }
 }
 
 /**
@@ -61,10 +59,4 @@ async function extractImages(srcImage, sprites, overwrite = false) {
             }
         }
     }
-}
-
-function saveImage(canvas, saveLocation, imageFormat) {
-    let format = (imageFormat == "png" ? 'image/png' : 'image/jpeg');
-    const buffer = canvas.toBuffer(format);
-    fs.writeFileSync(saveLocation, buffer);
 }

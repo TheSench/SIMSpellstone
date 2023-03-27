@@ -8,10 +8,6 @@ const CardType = {
 	Commander: "Commander",
 	Assault: "Assault",
 };
-const formats = {
-	Commander: "png",
-	Assault: "jpg",
-};
 const overrides = {
 	"AprilFools_003Collection.png": CardType.Commander
 };
@@ -64,3 +60,5 @@ function shouldSkip(imageName, type) {
 		!imageName.includes("Set") &&
 		!imageName.includes("@1x"));
 }
+
+await extractImagesFromDownloads();
