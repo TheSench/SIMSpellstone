@@ -6,8 +6,8 @@ import { setRootDir } from './rootDir.mjs';
 import { updateSpritesheets } from './spritesheet/index.mjs';
 
 try {
-  // const rootDir = core.getInput('working-directory');
-  // setRootDir(rootDir);
+  const rootDir = core.getInput('working-directory');
+  setRootDir(rootDir);
   await downloadFiles();
   await extractAssetsFromDownloads();
   await extractImagesFromAssets();

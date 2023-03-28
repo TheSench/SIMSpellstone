@@ -3,9 +3,6 @@ description: 'Greet someone and record the time'
 inputs:
   working-directory: 
     required: true
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
 runs:
   using: 'node16'
   main: 'dist/index.mjs'
