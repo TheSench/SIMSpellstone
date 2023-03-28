@@ -2,8 +2,8 @@ import { appendFileSync, renameSync } from 'fs';
 import Jimp from 'jimp';
 import { parse, join } from 'path';
 
-export async function createSpriteSheets(imageFileNames, spritePath, cssFilePath) {
-    await createSheet(imageFileNames, spritePath, cssFilePath, {
+export async function createSpriteSheets(imageFileNames, spritePath, cssFilePath, spriteLookup) {
+    await createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup, {
         sheetType: 'SpriteSheet',
         cssClassPrefix: 'sprite',
         addImage: addImage,
@@ -12,8 +12,8 @@ export async function createSpriteSheets(imageFileNames, spritePath, cssFilePath
     });
 }
 
-export async function createPortraitSheets(imageFileNames, spritePath, cssFilePath) {
-    await createSheet(imageFileNames, spritePath, cssFilePath, {
+export async function createPortraitSheets(imageFileNames, spritePath, cssFilePath, spriteLookup) {
+    await createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup, {
         sheetType: 'PortraitSheet',
         cssClassPrefix: 'portrait',
         addImage: addPortrait,
@@ -22,11 +22,28 @@ export async function createPortraitSheets(imageFileNames, spritePath, cssFilePa
     });
 }
 
-async function createSheet(imageFileNames, spritePath, cssFilePath, { sheetType, cssClassPrefix, addImage, width, writeAsPng }) {
+async function createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup, { sheetType, cssClassPrefix, addImage, width, writeAsPng }) {
+    // if (spriteLookup[parse(imageFileNames[imageFileNames.length-1]).name]) {
+    //     // Last image is already in the spritesheet
+    //     return;
+    // }
+
     let offset = 0;
     let sheetIndex = 1;
     let images = imageFileNames.length;
     let dimensions = 10;
+
+    while (offset < images) {
+        const lastImageInSheet = imageFileNames[offset + 99];
+        const lastImageName = lastImageInSheet && parse(lastImageInSheet).name;
+        if (spriteLookup[lastImageName]) {
+            offset += 100;
+            sheetIndex++;
+        } else {
+            break;
+        }
+    }
+
     while (offset < images) {
         let height = Math.ceil((images - offset) / dimensions);
         if (images % dimensions > 0) height++;
@@ -42,9 +59,11 @@ async function createSheet(imageFileNames, spritePath, cssFilePath, { sheetType,
             let x = 84 * (i % dimensions);
             let y = width * Math.floor(i / dimensions);
             let imageName = parse(fileName).name;
-            const cssClass = `.${cssClassPrefix}-${imageName}`;
-            const cssStyle = `background-position: -${x}px -${y}px; ${backgroundImage}`;
-            appendFileSync(cssFilePath, `${cssClass} { ${cssStyle} }\n`);
+            if (!spriteLookup[imageName]) {
+                const cssClass = `.${cssClassPrefix}-${imageName}`;
+                const cssStyle = `background-position: -${x}px -${y}px; ${backgroundImage}`;
+                appendFileSync(cssFilePath, `${cssClass} { ${cssStyle} }\n`);
+            }
             await addImage(fileName, spriteSheet, x, y);
         }
         const sheetFile = join(spritePath, sheetName);

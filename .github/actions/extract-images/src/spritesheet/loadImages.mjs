@@ -1,13 +1,13 @@
 import { readdirSync, statSync } from 'fs';
-import path from 'path';
+import { join, parse, basename } from 'path';
 
 export async function loadImages(cardImagesPath, spriteLookup) {
     const files = readdirSync(cardImagesPath)
         .filter(file => file.endsWith('.jpg') || file.endsWith('.png'))
-        .map(file => path.join(cardImagesPath, file))
+        .map(file => join(cardImagesPath, file))
         .sort((fileA, fileB) => {
-            const nameA = path.basename(fileA, path.extname(fileA));
-            const nameB = path.basename(fileB, path.extname(fileB));
+            const nameA = parse(fileA).name;
+            const nameB = parse(fileB).name;
             const indexA = spriteLookup[nameA] ?? Number.MAX_SAFE_INTEGER;
             const indexB = spriteLookup[nameB] ?? Number.MAX_SAFE_INTEGER;
             if (indexA !== indexB) {
@@ -20,7 +20,7 @@ export async function loadImages(cardImagesPath, spriteLookup) {
     const imageFileNames = [];
     const portraitFileNames = [];
     for (const file of files) {
-        const filename = path.basename(file)
+        const filename = basename(file)
         if (filename.startsWith("SpriteSheet") || filename.startsWith("PortraitSheet")) {
             continue;
         } else if (filename.startsWith("portrait_")) {

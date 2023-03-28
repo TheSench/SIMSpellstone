@@ -3,9 +3,8 @@ import { getRootDir } from '../rootDir.mjs';
 import { createPortraitSheets, createSpriteSheets } from './createSheet.mjs';
 import { loadImages } from './loadImages.mjs';
 import { buildSpriteLookup } from './spriteLookup.mjs';
-import { writeSpritesheetHeader } from './writeSpritesheetHeader.mjs';
 
-export async function createSpritesheets() {
+export async function updateSpritesheets() {
   const cardImagesPath = join(getRootDir(), './res/cardImages/');
   const spritePath = join(getRootDir(), './res/sprites/');
 
@@ -14,9 +13,8 @@ export async function createSpritesheets() {
 
   const { imageFileNames, portraitFileNames } = await loadImages(cardImagesPath, spriteLookup);
 
-  writeSpritesheetHeader(cssFilePath);
-  await createSpriteSheets(imageFileNames, spritePath, cssFilePath);
-  await createPortraitSheets(portraitFileNames, spritePath, cssFilePath);
+  await createSpriteSheets(imageFileNames, spritePath, cssFilePath, spriteLookup);
+  await createPortraitSheets(portraitFileNames, spritePath, cssFilePath, spriteLookup);
 }
 
-await createSpritesheets();
+await updateSpritesheets();
