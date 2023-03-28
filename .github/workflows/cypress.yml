@@ -2,11 +2,11 @@ name: End-to-end tests
 on:
   push:
     branches: [ gh-pages ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ gh-pages ]
-    paths-ignore:
-      - '**/vendor.js'
+  # pull_request:
+  #   # The branches below must be a subset of the branches above
+  #   branches: [ gh-pages ]
+  #   paths-ignore:
+  #     - '**/vendor.js'
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
