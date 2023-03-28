@@ -40736,14 +40736,6 @@ module.exports.implForWrapper = function (wrapper) {
 
 /***/ }),
 
-/***/ 1077:
-/***/ ((module) => {
-
-module.exports = eval("require")("./rootDir.mjs");
-
-
-/***/ }),
-
 /***/ 2877:
 /***/ ((module) => {
 
@@ -45006,17 +44998,17 @@ __nccwpck_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "fs"
 var external_fs_ = __nccwpck_require__(7147);
-// EXTERNAL MODULE: external "https"
-var external_https_ = __nccwpck_require__(5687);
 // EXTERNAL MODULE: ./src/rootDir.mjs
 var rootDir = __nccwpck_require__(3375);
+// EXTERNAL MODULE: external "https"
+var external_https_ = __nccwpck_require__(5687);
 ;// CONCATENATED MODULE: ./src/downloads/download.mjs
 
 
 
 
 async function downloadFile(filename, url) {
-    const downloadLocation = (0,rootDir/* pathFromRoot */.MM)('Downloads', filename);
+    const downloadLocation = (0,rootDir/* pathFromRoot */.MM)('Downloads', `${filename}.unity3d`);
     const file = external_fs_.createWriteStream(downloadLocation);
     return new Promise((resolve, reject) => {
         external_https_.get(url, function (response) {
@@ -45095,8 +45087,6 @@ async function getModifiedDate(url = '') {
     });
 }
 
-// EXTERNAL MODULE: ./node_modules/@vercel/ncc/dist/ncc/@@notfound.js?./rootDir.mjs
-var _notfoundrootDir = __nccwpck_require__(1077);
 ;// CONCATENATED MODULE: ./src/downloads/index.mjs
 
 
@@ -45106,9 +45096,12 @@ var _notfoundrootDir = __nccwpck_require__(1077);
 
 
 async function downloadFiles() {
-    var filesChecked = {};
+    const fileTimesPath = (0,rootDir/* pathFromRoot */.MM)('.github/actions/extract-images/src/downloads/fileTimes.json');
+    const fileTimesJson = external_fs_.readFileSync(fileTimesPath, 'utf8');
+    var filesChecked = JSON.parse(fileTimesJson);
     var pattern = /{(\d+)}/
     for (const fileType of fileTypes) {
+        console.log(`Checking ${fileType}...`);
         var digitMatch = pattern.exec(fileType);
         if (digitMatch) {
             var numDigits = parseInt(digitMatch[1]);
@@ -45116,43 +45109,106 @@ async function downloadFiles() {
                 if (i >= Math.pow(10, numDigits)) break;
                 var iPadded = i.toString().padStart(numDigits, '0');
                 var fileName = fileType.replace(`{${numDigits}}`, iPadded);
-                const url = getUrl(fileName);
-                if (filesChecked[fileName]) break;
-                if (!await setFileDate(filesChecked, fileName, url)) {
-                    break;
-                }
-                if (!downloadFile(fileName, url)) break;
+                if (!await tryDownloadFile(filesChecked, fileName)) break;
             }
         } else {
             var fileName = fileType;
-            if (filesChecked[fileName]) break;
-            await setFileDate(filesChecked, fileName);
+            if (!await tryDownloadFile(filesChecked, fileName)) break;
         }
     }
 
-    const newData = JSON.stringify(filesChecked, null, '  ');
-    external_fs_.writeFileSync((0,_notfoundrootDir.pathFromRoot)('.github/actions/extract-images/fileTimes.json'), newData, 'utf8');
+    const sorted = Object.fromEntries(Object.entries(filesChecked).sort(([keyA], [keyB]) => keyA.localeCompare(keyB)));
+    const newData = JSON.stringify(sorted, null, '  ');
+    external_fs_.writeFileSync(fileTimesPath, newData, 'utf8');
 }
 
-async function setFileDate(filesChecked, fileName, url) {
+async function tryDownloadFile(filesChecked, fileName) {
+    const url = getUrl(fileName);
+    const lastUpdated = await getLastUpdated(url);
+    if (!lastUpdated) return false;
+    const previousUpdate = filesChecked[fileName] && new Date(Date.parse(filesChecked[fileName]));
+    if (previousUpdate && previousUpdate >= lastUpdated) return true;
+    filesChecked[fileName] = lastUpdated;
+    return await downloadFile(fileName, url).then(
+        () => true,
+        () => false,
+    );
+}
+
+async function getLastUpdated(url) {
     try {
-        filesChecked[fileName] = await getModifiedDate(url);
-        return true;
+        return await getModifiedDate(url);
     } catch (error) {
-        console.error(error);
-        return false;
+        console.error(error, url);
+        return null;
     }
 }
 
+
 /***/ }),
 
-/***/ 4476:
+/***/ 3253:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 
 // EXPORTS
 __nccwpck_require__.d(__webpack_exports__, {
-  "G": () => (/* binding */ extractImagesFromDownloads)
+  "S": () => (/* binding */ extractAssetsFromDownloads)
+});
+
+;// CONCATENATED MODULE: external "child_process"
+const external_child_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("child_process");
+// EXTERNAL MODULE: external "fs"
+var external_fs_ = __nccwpck_require__(7147);
+// EXTERNAL MODULE: external "path"
+var external_path_ = __nccwpck_require__(1017);
+// EXTERNAL MODULE: ./src/rootDir.mjs
+var rootDir = __nccwpck_require__(3375);
+;// CONCATENATED MODULE: ./src/extractAssets/index.mjs
+
+
+
+
+
+
+function extractAssetsFromDownloads() {
+    const downloadsDir = (0,rootDir/* pathFromRoot */.MM)('Downloads');
+    (0,external_fs_.readdirSync)(downloadsDir)
+        .filter(filename => filename.endsWith('.unity3d'))
+        .forEach(fileName => extract(downloadsDir, fileName));
+}
+
+function extract(downloadsDir, fileName) {
+    const filePath = (0,external_path_.join)(downloadsDir, fileName);
+    const extractedName = fileName.replace('.unity3d', '');
+
+    if (!(0,external_fs_.existsSync)((0,external_path_.join)(downloadsDir, extractedName))) {
+        console.log(`${fileName} -> ${extractedName}`);
+        (0,external_child_process_namespaceObject.execFile)(
+            (0,rootDir/* pathFromRoot */.MM)('.venv', 'Scripts', 'python.exe'),
+            [(0,rootDir/* pathFromRoot */.MM)('.github', 'actions', 'extract-images', 'disunity.py'), filePath],
+            {
+                cwd: downloadsDir,
+            },
+            (error, _stdout, stderr) => {
+                if (error) {
+                    throw new Error(stderr);
+                }
+            }
+        );
+    }
+}
+
+
+/***/ }),
+
+/***/ 9054:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+
+// EXPORTS
+__nccwpck_require__.d(__webpack_exports__, {
+  "B": () => (/* binding */ extractImagesFromAssets)
 });
 
 // EXTERNAL MODULE: external "fs"
@@ -45161,28 +45217,36 @@ var external_fs_ = __nccwpck_require__(7147);
 var external_path_ = __nccwpck_require__(1017);
 // EXTERNAL MODULE: ./src/rootDir.mjs
 var rootDir = __nccwpck_require__(3375);
+;// CONCATENATED MODULE: ./src/extractImages/cardType.mjs
+const CardType = {
+	Commander: "Commander",
+	Assault: "Assault",
+};
 // EXTERNAL MODULE: ./node_modules/jimp/dist/index.js
 var dist = __nccwpck_require__(3794);
-;// CONCATENATED MODULE: ./src/extract/extractImages.mjs
+;// CONCATENATED MODULE: ./src/extractImages/extractImages.mjs
 
 
 
 
 
 const cardImagePath = "res/cardImagesLarge/";
+const formats = {
+	Commander: "png",
+	Assault: "jpg",
+};
 
- 
 /**
  * @param {*} file 
  * @param {Sprite[]} sprites 
  */
 async function parseFile(file, sprites) {
-	if (external_fs_.existsSync(file)) {
-		const srcImage = await dist.read(file);
-		await extractImages(srcImage, sprites);
-	} else {
-		console.log(`${sprites.map(s => s.name).join('\n')} is missing`);
-	}
+    if (external_fs_.existsSync(file)) {
+        const srcImage = await dist.read(file);
+        await extractImages(srcImage, sprites);
+    } else {
+        console.log(`${sprites.map(s => s.name).join('\n')} is missing`);
+    }
 }
 
 /**
@@ -45229,13 +45293,7 @@ async function extractImages(srcImage, sprites, overwrite = false) {
     }
 }
 
-function saveImage(canvas, saveLocation, imageFormat) {
-    let format = (imageFormat == "png" ? 'image/png' : 'image/jpeg');
-    const buffer = canvas.toBuffer(format);
-    fs.writeFileSync(saveLocation, buffer);
-}
-
-;// CONCATENATED MODULE: ./src/extract/sprite.mjs
+;// CONCATENATED MODULE: ./src/extractImages/sprite.mjs
 class Sprite {
 	constructor(spriteDefinition, type) {
 		this.name = spriteDefinition.name;
@@ -45270,38 +45328,33 @@ class Point {
 function roundAwayFromZero(num) {
 	return num < 0 ? Math.ceil(num - .5) : Math.floor(num + .5);
 }
-;// CONCATENATED MODULE: ./src/extract/index.mjs
+
+;// CONCATENATED MODULE: ./src/extractImages/index.mjs
 
 
 
 
 
 
-const extract_CardType = {
-	Commander: "Commander",
-	Assault: "Assault",
-};
-const extract_formats = {
-	Commander: "png",
-	Assault: "jpg",
-};
+
 const overrides = {
-	"AprilFools_003Collection.png": extract_CardType.Commander
+	"AprilFools_003Collection.png": CardType.Commander
 };
 
-async function extractImagesFromDownloads() {
+async function extractImagesFromAssets() {
 	const folder = (0,rootDir/* pathFromRoot */.MM)("Downloads");
 	const dirs = external_fs_.readdirSync(folder, { withFileTypes: true }).filter(child => child.isDirectory());
 	for (const dir of dirs) {
 		const assetName = dir.name;
-		let type = extract_CardType.Assault;
+		let type = CardType.Assault;
 		if (assetName.startsWith("cardpack")) {
-			type = extract_CardType.Assault;
+			type = CardType.Assault;
 		} else if (assetName.startsWith("portraitpack")) {
-			type = extract_CardType.Commander;
+			type = CardType.Commander;
 		} else {
 			continue;
 		}
+		console.log(`Extracting images from ${dir.name}`)
 
 		let assetFolder = external_path_.join(folder, assetName);
 		const files = external_fs_.readdirSync(assetFolder, { withFileTypes: true })
@@ -45314,7 +45367,7 @@ async function extractImagesFromDownloads() {
 				imageName = (json["spriteCollectionName"] + ".png");
 			}
 			if (imageName.toLowerCase().includes("portrait")) {
-				type = extract_CardType.Commander;
+				type = CardType.Commander;
 			}
 			type = overrides[imageName] ?? type;
 
@@ -45333,10 +45386,11 @@ async function extractImagesFromDownloads() {
 }
 
 function shouldSkip(imageName, type) {
-	return (type == extract_CardType.Assault &&
+	return (type == CardType.Assault &&
 		!imageName.includes("Set") &&
 		!imageName.includes("@1x"));
 }
+
 
 /***/ }),
 
@@ -45346,11 +45400,13 @@ function shouldSkip(imageName, type) {
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(2186);
 /* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(5873);
-/* harmony import */ var _extract_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(4476);
-/* harmony import */ var _rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(3375);
-/* harmony import */ var _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(9704);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_4__]);
-_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var _extractAssets_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(3253);
+/* harmony import */ var _extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(9054);
+/* harmony import */ var _rootDir_mjs__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(3375);
+/* harmony import */ var _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = __nccwpck_require__(9704);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__]);
+_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
 
 
 
@@ -45358,11 +45414,12 @@ _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependenc
 
 
 try {
-  const rootDir = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('working-directory');
-  (0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__/* .setRootDir */ .pz)(rootDir);
+  // const rootDir = core.getInput('working-directory');
+  // setRootDir(rootDir);
   await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_1__/* .downloadFiles */ .G)();
-  await (0,_extract_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .extractImagesFromDownloads */ .G)();
-  await (0,_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_4__/* .createSpritesheets */ .P)();
+  await (0,_extractAssets_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .extractAssetsFromDownloads */ .S)();
+  await (0,_extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_3__/* .extractImagesFromAssets */ .B)();
+  await (0,_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__/* .updateSpritesheets */ .o)();
 } catch (error) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
 }
@@ -45376,9 +45433,9 @@ __webpack_async_result__();
 
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
 /* harmony export */   "MM": () => (/* binding */ pathFromRoot),
-/* harmony export */   "ie": () => (/* binding */ getRootDir),
-/* harmony export */   "pz": () => (/* binding */ setRootDir)
+/* harmony export */   "ie": () => (/* binding */ getRootDir)
 /* harmony export */ });
+/* unused harmony export setRootDir */
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(1017);
 
 
@@ -45412,8 +45469,8 @@ function pathFromRoot(...pathParts) {
 
 
 
-async function createSpriteSheets(imageFileNames, spritePath, cssFilePath) {
-    await createSheet(imageFileNames, spritePath, cssFilePath, {
+async function createSpriteSheets(imageFileNames, spritePath, cssFilePath, spriteLookup) {
+    await createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup, {
         sheetType: 'SpriteSheet',
         cssClassPrefix: 'sprite',
         addImage: addImage,
@@ -45422,8 +45479,8 @@ async function createSpriteSheets(imageFileNames, spritePath, cssFilePath) {
     });
 }
 
-async function createPortraitSheets(imageFileNames, spritePath, cssFilePath) {
-    await createSheet(imageFileNames, spritePath, cssFilePath, {
+async function createPortraitSheets(imageFileNames, spritePath, cssFilePath, spriteLookup) {
+    await createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup, {
         sheetType: 'PortraitSheet',
         cssClassPrefix: 'portrait',
         addImage: addPortrait,
@@ -45432,11 +45489,28 @@ async function createPortraitSheets(imageFileNames, spritePath, cssFilePath) {
     });
 }
 
-async function createSheet(imageFileNames, spritePath, cssFilePath, { sheetType, cssClassPrefix, addImage, width, writeAsPng }) {
+async function createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup, { sheetType, cssClassPrefix, addImage, width, writeAsPng }) {
+    // if (spriteLookup[parse(imageFileNames[imageFileNames.length-1]).name]) {
+    //     // Last image is already in the spritesheet
+    //     return;
+    // }
+
     let offset = 0;
     let sheetIndex = 1;
     let images = imageFileNames.length;
     let dimensions = 10;
+
+    while (offset < images) {
+        const lastImageInSheet = imageFileNames[offset + 99];
+        const lastImageName = lastImageInSheet && (0,path__WEBPACK_IMPORTED_MODULE_2__.parse)(lastImageInSheet).name;
+        if (spriteLookup[lastImageName]) {
+            offset += 100;
+            sheetIndex++;
+        } else {
+            break;
+        }
+    }
+
     while (offset < images) {
         let height = Math.ceil((images - offset) / dimensions);
         if (images % dimensions > 0) height++;
@@ -45452,9 +45526,11 @@ async function createSheet(imageFileNames, spritePath, cssFilePath, { sheetType,
             let x = 84 * (i % dimensions);
             let y = width * Math.floor(i / dimensions);
             let imageName = (0,path__WEBPACK_IMPORTED_MODULE_2__.parse)(fileName).name;
-            const cssClass = `.${cssClassPrefix}-${imageName}`;
-            const cssStyle = `background-position: -${x}px -${y}px; ${backgroundImage}`;
-            (0,fs__WEBPACK_IMPORTED_MODULE_0__.appendFileSync)(cssFilePath, `${cssClass} { ${cssStyle} }\n`);
+            if (!spriteLookup[imageName]) {
+                const cssClass = `.${cssClassPrefix}-${imageName}`;
+                const cssStyle = `background-position: -${x}px -${y}px; ${backgroundImage}`;
+                (0,fs__WEBPACK_IMPORTED_MODULE_0__.appendFileSync)(cssFilePath, `${cssClass} { ${cssStyle} }\n`);
+            }
             await addImage(fileName, spriteSheet, x, y);
         }
         const sheetFile = (0,path__WEBPACK_IMPORTED_MODULE_2__.join)(spritePath, sheetName);
@@ -45493,22 +45569,20 @@ async function addPortrait(inputFile, spriteSheet, x, y) {
 
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "P": () => (/* binding */ createSpritesheets)
+/* harmony export */   "o": () => (/* binding */ updateSpritesheets)
 /* harmony export */ });
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(1017);
 /* harmony import */ var _rootDir_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(3375);
 /* harmony import */ var _createSheet_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(1692);
 /* harmony import */ var _loadImages_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(1440);
 /* harmony import */ var _spriteLookup_mjs__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(538);
-/* harmony import */ var _writeSpritesheetHeader_mjs__WEBPACK_IMPORTED_MODULE_5__ = __nccwpck_require__(478);
 
 
 
 
 
 
-
-async function createSpritesheets() {
+async function updateSpritesheets() {
   const cardImagesPath = (0,path__WEBPACK_IMPORTED_MODULE_0__.join)((0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_1__/* .getRootDir */ .ie)(), './res/cardImages/');
   const spritePath = (0,path__WEBPACK_IMPORTED_MODULE_0__.join)((0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_1__/* .getRootDir */ .ie)(), './res/sprites/');
 
@@ -45517,12 +45591,11 @@ async function createSpritesheets() {
 
   const { imageFileNames, portraitFileNames } = await (0,_loadImages_mjs__WEBPACK_IMPORTED_MODULE_3__/* .loadImages */ .l)(cardImagesPath, spriteLookup);
 
-  (0,_writeSpritesheetHeader_mjs__WEBPACK_IMPORTED_MODULE_5__/* .writeSpritesheetHeader */ .l)(cssFilePath);
-  await (0,_createSheet_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createSpriteSheets */ .y)(imageFileNames, spritePath, cssFilePath);
-  await (0,_createSheet_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createPortraitSheets */ .c)(portraitFileNames, spritePath, cssFilePath);
+  await (0,_createSheet_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createSpriteSheets */ .y)(imageFileNames, spritePath, cssFilePath, spriteLookup);
+  await (0,_createSheet_mjs__WEBPACK_IMPORTED_MODULE_2__/* .createPortraitSheets */ .c)(portraitFileNames, spritePath, cssFilePath, spriteLookup);
 }
 
-await createSpritesheets();
+await updateSpritesheets();
 
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } }, 1);
@@ -45543,10 +45616,10 @@ __webpack_async_result__();
 async function loadImages(cardImagesPath, spriteLookup) {
     const files = (0,fs__WEBPACK_IMPORTED_MODULE_0__.readdirSync)(cardImagesPath)
         .filter(file => file.endsWith('.jpg') || file.endsWith('.png'))
-        .map(file => path__WEBPACK_IMPORTED_MODULE_1__.join(cardImagesPath, file))
+        .map(file => (0,path__WEBPACK_IMPORTED_MODULE_1__.join)(cardImagesPath, file))
         .sort((fileA, fileB) => {
-            const nameA = path__WEBPACK_IMPORTED_MODULE_1__.basename(fileA, path__WEBPACK_IMPORTED_MODULE_1__.extname(fileA));
-            const nameB = path__WEBPACK_IMPORTED_MODULE_1__.basename(fileB, path__WEBPACK_IMPORTED_MODULE_1__.extname(fileB));
+            const nameA = (0,path__WEBPACK_IMPORTED_MODULE_1__.parse)(fileA).name;
+            const nameB = (0,path__WEBPACK_IMPORTED_MODULE_1__.parse)(fileB).name;
             const indexA = spriteLookup[nameA] ?? Number.MAX_SAFE_INTEGER;
             const indexB = spriteLookup[nameB] ?? Number.MAX_SAFE_INTEGER;
             if (indexA !== indexB) {
@@ -45559,7 +45632,7 @@ async function loadImages(cardImagesPath, spriteLookup) {
     const imageFileNames = [];
     const portraitFileNames = [];
     for (const file of files) {
-        const filename = path__WEBPACK_IMPORTED_MODULE_1__.basename(file)
+        const filename = (0,path__WEBPACK_IMPORTED_MODULE_1__.basename)(file)
         if (filename.startsWith("SpriteSheet") || filename.startsWith("PortraitSheet")) {
             continue;
         } else if (filename.startsWith("portrait_")) {
@@ -45598,39 +45671,6 @@ function buildSpriteLookup(cssFilePath) {
         spriteLookup[existingSprites[i]] = i;
     }
     return spriteLookup;
-}
-
-
-/***/ }),
-
-/***/ 478:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
-
-/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "l": () => (/* binding */ writeSpritesheetHeader)
-/* harmony export */ });
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(7147);
-
-
-function writeSpritesheetHeader(cssFile) {
-    (0,fs__WEBPACK_IMPORTED_MODULE_0__.writeFileSync)(
-        cssFile,
-`.sprite {
-    position: absolute;
-    background-repeat: no-repeat;
-    display: block;
-    width: 84px;
-    height: 120px;
-}
-.portrait {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-color: white;
-    display: block;
-    width: 84px;
-    height: 100px;
-}\n`
-    );
 }
 
 
