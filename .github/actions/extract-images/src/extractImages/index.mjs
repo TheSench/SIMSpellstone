@@ -9,7 +9,7 @@ const overrides = {
 	"AprilFools_003Collection.png": CardType.Commander
 };
 
-export async function extractImagesFromDownloads() {
+export async function extractImagesFromAssets() {
 	const folder = pathFromRoot("Downloads");
 	const dirs = fs.readdirSync(folder, { withFileTypes: true }).filter(child => child.isDirectory());
 	for (const dir of dirs) {

@@ -4,7 +4,7 @@ import { join } from 'path';
 import { pathFromRoot } from '../rootDir.mjs';
 import { existsSync } from 'fs';
 
-function main() {
+export function extractAssetsFromDownloads() {
     const downloadsDir = pathFromRoot('Downloads');
     readdirSync(downloadsDir)
         .filter(filename => filename.endsWith('.unity3d'))
@@ -31,5 +31,3 @@ function extract(downloadsDir, fileName) {
         );
     }
 }
-
-main();
