@@ -5988,9 +5988,7 @@ function loadPages(Jimp, dir, pages) {
   });
   return Promise.all(newPages);
 }
-
-const __dirname = '.';
-const dir = process.env.DIRNAME || `${__dirname}/../`;
+const dir = process.env.DIRNAME || `./../`;
 var _default = () => ({
   constants: {
     measureText: _measureText.measureText,
@@ -45406,6 +45404,7 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
 /* harmony import */ var _extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(9054);
 /* harmony import */ var _rootDir_mjs__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(3375);
 /* harmony import */ var _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = __nccwpck_require__(9704);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_6__ = __nccwpck_require__(7147);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__]);
 _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
@@ -45415,9 +45414,11 @@ _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependenc
 
 
 
+
 try {
-  // const rootDir = core.getInput('working-directory');
-  // setRootDir(rootDir);
+  const rootDir = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('working-directory');
+  (0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_4__/* .setRootDir */ .pz)(rootDir);
+  (0,fs__WEBPACK_IMPORTED_MODULE_6__.mkdirSync)((0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_4__/* .pathFromRoot */ .MM)('Downloads'), { recursive: true });
   await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_1__/* .downloadFiles */ .G)();
   await (0,_extractAssets_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .extractAssetsFromDownloads */ .S)();
   await (0,_extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_3__/* .extractImagesFromAssets */ .B)();
@@ -45435,9 +45436,9 @@ __webpack_async_result__();
 
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
 /* harmony export */   "MM": () => (/* binding */ pathFromRoot),
-/* harmony export */   "ie": () => (/* binding */ getRootDir)
+/* harmony export */   "ie": () => (/* binding */ getRootDir),
+/* harmony export */   "pz": () => (/* binding */ setRootDir)
 /* harmony export */ });
-/* unused harmony export setRootDir */
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(1017);
 
 
