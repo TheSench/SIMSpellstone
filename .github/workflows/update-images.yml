@@ -26,7 +26,7 @@ jobs:
         run: |
           python3 -m venv venv
 
-      - name: Extract Images
-        uses: ./.github/actions/extract-images
+      - name: Update Images
+        uses: ./.github/actions/update-images
         with:
           working-directory: ${{ env.GITHUB_WORKSPACE }}

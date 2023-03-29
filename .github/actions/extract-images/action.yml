@@ -1,8 +1,0 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
-inputs:
-  working-directory: 
-    required: true
-runs:
-  using: 'node16'
-  main: 'dist/index.mjs'
