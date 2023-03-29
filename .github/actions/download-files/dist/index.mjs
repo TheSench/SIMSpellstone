@@ -2891,7 +2891,7 @@ async function getModifiedDate(url = '') {
 
 
 async function downloadFiles() {
-    const fileTimesPath = (0,rootDir/* pathFromRoot */.MM)('.github/actions/update-images/src/downloads/fileTimes.json');
+    const fileTimesPath = (0,rootDir/* pathFromRoot */.MM)('fileTimes.json');
     const fileTimesJson = external_fs_.readFileSync(fileTimesPath, 'utf8');
     var filesChecked = JSON.parse(fileTimesJson);
     var pattern = /{(\d+)}/

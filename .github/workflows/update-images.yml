@@ -7,6 +7,8 @@ on:
       - 'dist/data.min.js'
   pull_request:
     branches: [ gh-pages ]
+    paths:
+      - '.github/**'
 jobs:
   update-images:
     runs-on: ubuntu-latest
