@@ -1,7 +1,7 @@
 import { execFile } from 'child_process';
 import { readdirSync } from 'fs';
 import { join } from 'path';
-import { pathFromRoot } from '../../../common/rootDir.mjsnpm ';
+import { pathFromRoot } from '../../../common/rootDir.mjs';
 import { existsSync } from 'fs';
 
 export function extractAssetsFromDownloads() {

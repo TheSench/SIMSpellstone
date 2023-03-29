@@ -1,5 +1,5 @@
 import core from '@actions/core';
-import { setRootDir } from './../../common/rootDir.mjs';
+import { setRootDir } from '../../common/rootDir.mjs';
 import { updateSpritesheets } from './spritesheet/index.mjs';
 
 try {

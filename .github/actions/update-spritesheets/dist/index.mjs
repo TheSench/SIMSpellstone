@@ -5988,7 +5988,7 @@ function loadPages(Jimp, dir, pages) {
   });
   return Promise.all(newPages);
 }
-const dir = process.env.DIRNAME || `${__dirname}/../`;
+const dir = process.env.DIRNAME || `./../`;
 var _default = () => ({
   constants: {
     measureText: _measureText.measureText,

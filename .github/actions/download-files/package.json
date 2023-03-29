@@ -1,11 +1,12 @@
 {
   "name": "download-files",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ncc build src/index.mjs -o dist"
+    "build": "ncc build src/index.mjs -o dist --target=es2020"
   },
   "author": "Jon Senchyna",
   "license": "ISC",

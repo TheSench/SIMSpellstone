@@ -2677,14 +2677,6 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 684:
-/***/ ((module) => {
-
-module.exports = eval("require")("../../../common/rootDir.mjsnpm ");
-
-
-/***/ }),
-
 /***/ 491:
 /***/ ((module) => {
 
@@ -2766,9 +2758,10 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("util");
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "MM": () => (/* binding */ pathFromRoot),
 /* harmony export */   "pz": () => (/* binding */ setRootDir)
 /* harmony export */ });
-/* unused harmony exports getRootDir, pathFromRoot */
+/* unused harmony export getRootDir */
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(17);
 
 
@@ -2783,7 +2776,7 @@ function getRootDir() {
 }
 
 function pathFromRoot(...pathParts) {
-    return path.join(_rootDir, ...pathParts);
+    return path__WEBPACK_IMPORTED_MODULE_0__.join(_rootDir, ...pathParts);
 }
 
 /***/ }),
@@ -2803,8 +2796,8 @@ const external_child_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(
 var external_fs_ = __nccwpck_require__(147);
 // EXTERNAL MODULE: external "path"
 var external_path_ = __nccwpck_require__(17);
-// EXTERNAL MODULE: ./node_modules/@vercel/ncc/dist/ncc/@@notfound.js?../../../common/rootDir.mjsnpm 
-var rootDir_mjsnpm_ = __nccwpck_require__(684);
+// EXTERNAL MODULE: ../common/rootDir.mjs
+var rootDir = __nccwpck_require__(789);
 ;// CONCATENATED MODULE: ./src/extractAssets/index.mjs
 
 
@@ -2813,7 +2806,7 @@ var rootDir_mjsnpm_ = __nccwpck_require__(684);
 
 
 function extractAssetsFromDownloads() {
-    const downloadsDir = (0,rootDir_mjsnpm_.pathFromRoot)('Downloads');
+    const downloadsDir = (0,rootDir/* pathFromRoot */.MM)('Downloads');
     (0,external_fs_.readdirSync)(downloadsDir)
         .filter(filename => filename.endsWith('.unity3d'))
         .forEach(fileName => extract(downloadsDir, fileName));
@@ -2826,8 +2819,8 @@ function extract(downloadsDir, fileName) {
     if (!(0,external_fs_.existsSync)((0,external_path_.join)(downloadsDir, extractedName))) {
         console.log(`${fileName} -> ${extractedName}`);
         (0,external_child_process_namespaceObject.execFile)(
-            (0,rootDir_mjsnpm_.pathFromRoot)('.venv', 'Scripts', 'python.exe'),
-            [(0,rootDir_mjsnpm_.pathFromRoot)('.github', 'actions', 'update-images', 'disunity.py'), filePath],
+            (0,rootDir/* pathFromRoot */.MM)('.venv', 'Scripts', 'python.exe'),
+            [(0,rootDir/* pathFromRoot */.MM)('.github', 'actions', 'update-images', 'disunity.py'), filePath],
             {
                 cwd: downloadsDir,
             },
