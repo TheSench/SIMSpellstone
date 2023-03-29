@@ -38,6 +38,7 @@ jobs:
 
       - name: Extract Images
         uses: ./.github/actions/extract-images
+        with:
           working-directory: ${{ env.GITHUB_WORKSPACE }}
 
       - name: Resize Images
