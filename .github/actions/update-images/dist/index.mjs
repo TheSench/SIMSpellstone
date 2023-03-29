@@ -45062,8 +45062,9 @@ const fileTypes = [
     //"event_02{1}",
 ];
 ;// CONCATENATED MODULE: ./src/downloads/getUrl.mjs
-const baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles_live/2020_3_33f1/";
-const fileVersion = "_unity2020_3_33_webgl.unity3d";
+const baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles/2020_3_42f1/";
+
+const fileVersion = "_unity2020_3_42_webgl.unity3d";
 
 function getUrl(fileName) {
     return (baseURL + fileName + fileVersion);
@@ -45096,7 +45097,7 @@ async function getModifiedDate(url = '') {
 
 
 async function downloadFiles() {
-    const fileTimesPath = (0,rootDir/* pathFromRoot */.MM)('.github/actions/extract-images/src/downloads/fileTimes.json');
+    const fileTimesPath = (0,rootDir/* pathFromRoot */.MM)('.github/actions/update-images/src/downloads/fileTimes.json');
     const fileTimesJson = external_fs_.readFileSync(fileTimesPath, 'utf8');
     var filesChecked = JSON.parse(fileTimesJson);
     var pattern = /{(\d+)}/
@@ -45186,7 +45187,7 @@ function extract(downloadsDir, fileName) {
         console.log(`${fileName} -> ${extractedName}`);
         (0,external_child_process_namespaceObject.execFile)(
             (0,rootDir/* pathFromRoot */.MM)('.venv', 'Scripts', 'python.exe'),
-            [(0,rootDir/* pathFromRoot */.MM)('.github', 'actions', 'extract-images', 'disunity.py'), filePath],
+            [(0,rootDir/* pathFromRoot */.MM)('.github', 'actions', 'update-images', 'disunity.py'), filePath],
             {
                 cwd: downloadsDir,
             },
@@ -45399,14 +45400,16 @@ function shouldSkip(imageName, type) {
 
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(2186);
-/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(5873);
-/* harmony import */ var _extractAssets_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(3253);
-/* harmony import */ var _extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(9054);
-/* harmony import */ var _rootDir_mjs__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(3375);
-/* harmony import */ var _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = __nccwpck_require__(9704);
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_6__ = __nccwpck_require__(7147);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__]);
-_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(7147);
+/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(5873);
+/* harmony import */ var _extractAssets_index_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(3253);
+/* harmony import */ var _extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(9054);
+/* harmony import */ var _resizeImages_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = __nccwpck_require__(6259);
+/* harmony import */ var _rootDir_mjs__WEBPACK_IMPORTED_MODULE_6__ = __nccwpck_require__(3375);
+/* harmony import */ var _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_7__ = __nccwpck_require__(9704);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_7__]);
+_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_7__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
 
 
 
@@ -45417,17 +45420,111 @@ _spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependenc
 
 try {
   const rootDir = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('working-directory');
-  (0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_4__/* .setRootDir */ .pz)(rootDir);
-  (0,fs__WEBPACK_IMPORTED_MODULE_6__.mkdirSync)((0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_4__/* .pathFromRoot */ .MM)('Downloads'), { recursive: true });
-  await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_1__/* .downloadFiles */ .G)();
-  await (0,_extractAssets_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .extractAssetsFromDownloads */ .S)();
-  await (0,_extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_3__/* .extractImagesFromAssets */ .B)();
-  await (0,_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_5__/* .updateSpritesheets */ .o)();
+  (0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_6__/* .setRootDir */ .pz)(rootDir);
+  (0,fs__WEBPACK_IMPORTED_MODULE_1__.mkdirSync)((0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_6__/* .pathFromRoot */ .MM)('Downloads'), { recursive: true });
+  await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .downloadFiles */ .G)();
+  await (0,_extractAssets_index_mjs__WEBPACK_IMPORTED_MODULE_3__/* .extractAssetsFromDownloads */ .S)();
+  await (0,_extractImages_index_mjs__WEBPACK_IMPORTED_MODULE_4__/* .extractImagesFromAssets */ .B)();
+  await (0,_resizeImages_index_mjs__WEBPACK_IMPORTED_MODULE_5__/* .resizeImages */ .V)();
+  await (0,_spritesheet_index_mjs__WEBPACK_IMPORTED_MODULE_7__/* .updateSpritesheets */ .o)();
 } catch (error) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
 }
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } }, 1);
+
+/***/ }),
+
+/***/ 6259:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "V": () => (/* binding */ resizeImages)
+/* harmony export */ });
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(1017);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(7147);
+/* harmony import */ var _rootDir_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(3375);
+/* harmony import */ var jimp__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(3794);
+
+
+
+
+
+async function resizeImages() {
+    const rawImagePath = (0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_2__/* .pathFromRoot */ .MM)('res', 'cardImagesLarge');
+    const resourcePath = (0,_rootDir_mjs__WEBPACK_IMPORTED_MODULE_2__/* .pathFromRoot */ .MM)('res', 'cardImages');
+    const files = (0,fs__WEBPACK_IMPORTED_MODULE_1__.readdirSync)(rawImagePath);
+    const assaultArt = [];
+    const commanderArt = [];
+    for (const file of files) {
+        if (file.includes('portrait')) {
+            commanderArt.push((0,path__WEBPACK_IMPORTED_MODULE_0__.join)(rawImagePath, file));
+        } else {
+            assaultArt.push((0,path__WEBPACK_IMPORTED_MODULE_0__.join)(rawImagePath, file));
+        }
+    }
+    for (const fileName of commanderArt) {
+        await resizePortrait(resourcePath, fileName, fileName, 84, 100);
+    }
+    for (const fileName of assaultArt) {
+        const newFileName = fileName.replace('.png', '.jpg');
+        if (newFileName !== fileName) {
+            console.log('Changed format:', fileName);
+            (0,fs__WEBPACK_IMPORTED_MODULE_1__.unlinkSync)(fileName);
+        } else {
+            await resizeImage(resourcePath, fileName, fileName, 84, 120);
+        }
+    }
+}
+
+async function resizeImage(resourcePath, inputFile, outputFile, newWidth, newHeight) {
+    const outputPath = (0,path__WEBPACK_IMPORTED_MODULE_0__.join)(resourcePath, (0,path__WEBPACK_IMPORTED_MODULE_0__.basename)(outputFile));
+    if (!(0,fs__WEBPACK_IMPORTED_MODULE_1__.existsSync)(outputPath)) {
+        console.log('Sprite:', inputFile);
+        const srcImage = await jimp__WEBPACK_IMPORTED_MODULE_3__.read(inputFile);
+        if (srcImage.bitmap.height !== newHeight || srcImage.bitmap.width !== newWidth) {
+            await saveScaledImage(srcImage, outputPath, newWidth, newHeight, 0, 0, newWidth, newHeight);
+        } else {
+            await srcImage.writeAsync(outputPath);
+        }
+    }
+}
+
+async function resizePortrait(resourcePath, inputFile, outputFile, newWidth, newHeight) {
+    const outputPath = (0,path__WEBPACK_IMPORTED_MODULE_0__.join)(resourcePath, (0,path__WEBPACK_IMPORTED_MODULE_0__.basename)(outputFile));
+    const padding = 10;
+    if (!(0,fs__WEBPACK_IMPORTED_MODULE_1__.existsSync)(outputPath)) {
+        console.log('Sprite:', inputFile);
+        const srcImage = await jimp__WEBPACK_IMPORTED_MODULE_3__.read(inputFile);
+        if (srcImage.bitmap.height !== newHeight || srcImage.bitmap.width !== newWidth) {
+            const paddedWidth = newWidth - 2 * padding;
+            const paddedHeight = newHeight - 2 * padding;
+            const srcWidth = srcImage.bitmap.width;
+            const srcHeight = srcImage.bitmap.height;
+            const scaleW = srcWidth / paddedWidth;
+            const scaleH = srcHeight / paddedHeight;
+            let scaledWidth = paddedWidth;
+            let scaledHeight = paddedHeight;
+            if (scaleW > scaleH) {
+                scaledHeight = Math.round(srcHeight / scaleW);
+            } else {
+                scaledWidth = Math.round(srcWidth / scaleH);
+            }
+            const offsetX = (paddedWidth - scaledWidth) / 2 + padding;
+            const offsetY = (paddedHeight - scaledHeight) / 2 + padding;
+            await saveScaledImage(srcImage, outputPath, newWidth, newHeight, offsetX, offsetY, scaledWidth, scaledHeight);
+        } else {
+            await srcImage.writeAsync(outputPath);
+        }
+    }
+}
+
+async function saveScaledImage(srcImage, outputPath, newWidth, newHeight, offsetX, offsetY, scaledWidth, scaledHeight) {
+    const newImage = new jimp__WEBPACK_IMPORTED_MODULE_3__(newWidth, newHeight);
+    newImage.composite(srcImage.clone().resize(scaledWidth, scaledHeight, jimp__WEBPACK_IMPORTED_MODULE_3__.RESIZE_BICUBIC), offsetX, offsetY);
+    await newImage.writeAsync(outputPath);
+}
+
 
 /***/ }),
 
