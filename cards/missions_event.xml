@@ -62925,5 +62925,293 @@
       <card id="4038" mastery_level="7" name="Kalyt, the Last Word" />
     </deck>
   </mission>
+  <mission>
+    <id>7044</id>
+    <name>A new kind of frog?</name>
+    <energy>18</energy>
+    <desc>During your travel, you are attacked by a small group of an unknown, agressive kind of lava frogs.. You reach the nearest town and ask about them. Someone tells you that they are related to an ancient lost tribe.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="7251" mastery_level="4" name="Manic Dummy" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7045</id>
+    <name>Suspicious Clues</name>
+    <energy>18</energy>
+    <desc>While doing some research, someone heard that another party with a similar goal went to the mountains and never returned. Also, similar aggressive frogs have been spotted there.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="7251" mastery_level="4" name="Manic Dummy" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7046</id>
+    <name>Following the Breadcrumbs</name>
+    <energy>18</energy>
+    <desc>You and your party travel to the mountains to investigate. There, you find scattered clothes and equipment. Meanwhile, in the distance, furious croaks can be heard coming from all directions, you've been ambushed!</desc>
+    <commander id="367" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7047</id>
+    <name>Unexpected Help</name>
+    <energy>18</energy>
+    <desc>You've been surrounded, apparently, by the Lost tribe that you were looking for, but also by a considerable group of ferocious lava frogs that suddenly attacks everyone. You get to fight alongside the tribe against them.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="6295" name="Creeperbots" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7048</id>
+    <name>An Ancient Evil has been Unleashed</name>
+    <energy>18</energy>
+    <desc>The tribe recites the legend of the ancient evil King, Worf. It was sealed in that mountain, the previous party is aiming to resurrect it! You return to the Wastes to look out for help but only the Tech tribe is willing to help.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2143" name="Lightning Stomper" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1348" name="Flailpod" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7049</id>
+    <name>Unlikely Alloys</name>
+    <energy>18</energy>
+    <desc>The Tech tribe lend you their latest invention: B4RN4B1. Altogether with the Lost tribe, you've returned to find out that Worf is alive and it is marching into the Wastes. Everyone agrees to fight to stop it.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5248" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7050</id>
+    <name>Remnants of the storm</name>
+    <energy>18</energy>
+    <desc>After bringing peace to the Wastes by defeating the evil Worf, there are rumors coming from a town about missing people. You've been asked to investigate it for a generous reward.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1033" name="Valiant Charger" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7051</id>
+    <name>Hunting in the town</name>
+    <energy>18</energy>
+    <desc>While searching for some clues throughout the town with the help of Atlatl, the best Hunter from the lost tribe, a group of strange looking, thug frogs follow your steps and demand you to stop the investigation.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="5248" name="Noble Ophanim" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7052</id>
+    <name>Time for an expected trap</name>
+    <energy>18</energy>
+    <desc>The thugs wore robes with a strange particular medallion and one of them has a scroll with an address with your names on it. You and the party steal these robes to disguise and follow this lead to the center of the town.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7053</id>
+    <name>Under Pressure</name>
+    <energy>18</energy>
+    <desc>Once you reach your destination, you only find an alley with a door. After knocking, you're requested with a password. You've been discovered and surrounded by more thug frogs.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7054</id>
+    <name>A Lunatic Scheme</name>
+    <energy>18</energy>
+    <desc>You manage to get inside and there, you see a lunatic, frenzied frog experimenting with some of the missing citizens and some lava minion frogs. Atlatl quickly attacks the minions while you have to deal with the lunatic frog.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2112" mastery_level="4" name="Warrior Karna" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7055</id>
+    <name>Light shines upon the city once more</name>
+    <energy>18</energy>
+    <desc>You managed, barely, to stop the frenzied frog and unmask its true identity: Lunatic Paul. He intended to create its own cult by fusing genes from other tribes into the lava minions, but you've put an end to its evil scheme.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="7251" mastery_level="2" name="Manic Dummy" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2112" mastery_level="4" name="Warrior Karna" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
 </root>
 

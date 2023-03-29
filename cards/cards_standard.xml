@@ -3577,7 +3577,7 @@
     <picture>Blackhawk_Knight_B</picture>
     <asset_bundle>38</asset_bundle>
     <attack>4</attack>
-    <health>24</health>
+    <health>26</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="4" />
@@ -3589,27 +3589,29 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>26</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>3</level>
+      <health>28</health>
       <skill id="armored" x="5" />
       <skill id="valor" x="8" />
       <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>28</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>30</health>
       <skill id="armored" x="6" />
       <skill id="valor" x="9" />
       <skill id="legion" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>29</health>
+      <health>31</health>
       <skill id="armored" x="7" />
       <skill id="valor" x="10" />
       <skill id="legion" x="7" />
@@ -9667,6 +9669,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>34</health>
       <skill id="evade" x="2" />
       <skill id="heal" x="4" all="1" y="4" />
       <skill id="enfeeble" x="3" all="1" />
@@ -9679,8 +9682,8 @@
     <name>Great Sage of Croaks</name>
     <picture>Frog_Sage_C</picture>
     <asset_bundle>9</asset_bundle>
-    <attack>6</attack>
-    <health>34</health>
+    <attack>9</attack>
+    <health>39</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="evade" x="2" />
@@ -9692,25 +9695,26 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>35</health>
+      <attack>10</attack>
+      <health>40</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
-      <health>36</health>
+      <attack>11</attack>
+      <health>41</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
-      <health>37</health>
+      <attack>12</attack>
+      <health>42</health>
       <skill id="evade" x="3" />
       <skill id="heal" x="5" all="1" y="4" />
       <skill id="enfeeble" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>10</attack>
-      <health>38</health>
+      <attack>13</attack>
+      <health>43</health>
       <skill id="evade" x="3" />
       <skill id="heal" x="6" all="1" y="4" />
       <skill id="enfeeble" x="4" all="1" />

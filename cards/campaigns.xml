@@ -12215,6 +12215,92 @@
     <ignore_energy_reduction_until>1680195600</ignore_energy_reduction_until>
     <!-- Thursday, March 30, 2023 at 17:00:00 -->
   </campaign>
+  <!-- Campaign Event 101 - Salt Wastes -->
+  <campaign>
+    <id>1343</id>
+    <name>In the search of the Lost Tribe</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1680195600</locked_start_time>
+    <!-- Thursday, 30 March 2023 17:00:00	 -->
+    <location_id>23</location_id>
+    <x>569</x>
+    <!-- left right -->
+    <y>520</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7044</mission_id>
+      <mission_id>7045</mission_id>
+      <mission_id>7046</mission_id>
+      <mission_id>7047</mission_id>
+      <mission_id>7048</mission_id>
+      <mission_id>7049</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2664" number="25" />
+      /&gt;
+      <!-- Salt Wastes Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2249" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2183" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2664" number="75" />
+      /&gt;
+      <!-- Salt Wastes Flask -->
+      <card level="7" id="2250" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3095" drop_per_energy="0.4" />
+    <ignore_energy_reduction_until>1682614800</ignore_energy_reduction_until>
+    <!-- Thursday, April 27, 2023 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1344</id>
+    <name>After the storm, comes the calm?</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1343" level="1" />
+    <locked_start_time>1681405200</locked_start_time>
+    <!-- Thursday, 13 April 2023 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>23</location_id>
+    <x>615</x>
+    <y>175</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7050</mission_id>
+      <mission_id>7051</mission_id>
+      <mission_id>7052</mission_id>
+      <mission_id>7053</mission_id>
+      <mission_id>7054</mission_id>
+      <mission_id>7055</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2664" number="25" />
+      /&gt;
+      <!-- Salt Wastes Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2014" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2184" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2664" number="75" />
+      /&gt;
+      <!-- Salt Wastes Flask -->
+      <card level="7" id="2250" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3095" drop_per_energy="0.4" />
+    <ignore_energy_reduction_until>1682614800</ignore_energy_reduction_until>
+    <!-- Thursday, April 27, 2023 at 17:00:00 -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

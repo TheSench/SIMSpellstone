@@ -1471,6 +1471,26 @@
       <add_skill id="counterburn" mult="0.15" base="health" y="9" delay="3,4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>164</id>
+    <name>Lily &amp; Vampiric Spear Formation Reinforced</name>
+    <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce equal to their base Attack and Siphon as 3 plus their Attack.</desc>
+    <icon>filter_frog_64.png</icon>
+    <effect>
+      <add_skill id="bash" mult="0.25" base="health" y="4" />
+      <add_skill id="pierce" mult="1" base="attack" y="4" />
+      <add_skill id="leech" x="3" mult="1" base="attack" y="4" />
+      <skill id="displayEffect" trigger="onSkill" s="bash">
+        <target_effect>
+          <prefab>frogbge_Target</prefab>
+          <bundle_id>96</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

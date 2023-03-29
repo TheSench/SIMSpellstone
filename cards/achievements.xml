@@ -19044,6 +19044,151 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 101 - Frog - Node 1 -->
+  <achievement>
+    <id>3865</id>
+    <!-- HERE  -->
+    <type>2</type>
+    <order>101</order>
+    <name>In the search of the Lost Tribe</name>
+    <!-- HERE  -->
+    <desc>Complete the 'In the search of the Lost Tribe' campaign on Mastery Level 1.</desc>
+    <!-- HERE  -->
+    <mission_req>7049</mission_req>
+    <locked_start_time>1680195600</locked_start_time>
+    <!-- Thursday, 30 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <req>
+      <campaign>1343</campaign>
+      <!-- HERE  -->
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3095" number="50" />
+      <!-- Expediton Item -->
+      <!-- HERE  -->
+      <event_points id="7097" number="50" />
+      <!-- Expediton ID -->
+      <!-- HERE  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3866</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In the search of the Lost Tribe</name>
+    <!-- HERE  -->
+    <desc>Complete the 'In the search of the Lost Tribe' campaign on Mastery Level 2.</desc>
+    <mission_req>7049</mission_req>
+    <locked_start_time>1680195600</locked_start_time>
+    <!-- Thursday, 30 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3865</achievement_req>
+    <!-- Dont forget requirement  -->
+    <req>
+      <campaign>1343</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3867</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In the search of the Lost Tribe</name>
+    <desc>Complete the 'In the search of the Lost Tribe' campaign on Mastery Level 4.</desc>
+    <mission_req>7049</mission_req>
+    <locked_start_time>1680195600</locked_start_time>
+    <!-- Thursday, 30 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3866</achievement_req>
+    <req>
+      <campaign>1343</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3868</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In the search of the Lost Tribe</name>
+    <desc>Complete the 'In the search of the Lost Tribe' campaign on Mastery Level 6.</desc>
+    <mission_req>7049</mission_req>
+    <locked_start_time>1680195600</locked_start_time>
+    <!-- Thursday, 30 March 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3867</achievement_req>
+    <req>
+      <campaign>1343</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 101 - Frog - Node 2 -->
+  <achievement>
+    <id>3869</id>
+    <type>2</type>
+    <order>101</order>
+    <name>After the storm, comes the calm?</name>
+    <desc>Complete the 'After the storm, comes the calm?' campaign on Mastery Level 2.</desc>
+    <mission_req>7055</mission_req>
+    <locked_start_time>1681405200</locked_start_time>
+    <!-- Thursday, 13 April 2023 17:00:00 -->
+    <req>
+      <campaign>1344</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3870</id>
+    <type>2</type>
+    <order>101</order>
+    <name>After the storm, comes the calm?</name>
+    <desc>Complete the 'After the storm, comes the calm?' campaign on Mastery Level 4.</desc>
+    <mission_req>7055</mission_req>
+    <locked_start_time>1681405200</locked_start_time>
+    <!-- Thursday, 13 April 2023 17:00:00 -->
+    <achievement_req>3869</achievement_req>
+    <req>
+      <campaign>1344</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3871</id>
+    <type>2</type>
+    <order>101</order>
+    <name>After the storm, comes the calm?</name>
+    <desc>Complete the 'After the storm, comes the calm?' campaign on Mastery Level 6.</desc>
+    <mission_req>7037</mission_req>
+    <locked_start_time>1681405200</locked_start_time>
+    <!-- Thursday, 13 April 2023 17:00:00 -->
+    <achievement_req>3870</achievement_req>
+    <req>
+      <campaign>1344</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -20348,6 +20493,35 @@
       <campaign>1287</campaign>
       <campaign>1341</campaign>
       <campaign>1342</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- The Salt Wastes -->
+    <id>4055</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Master of The Salt Wastes</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Salt Wastes.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7055</mission_req>
+    <req>
+      <campaign>1212</campaign>
+      <campaign>1213</campaign>
+      <campaign>1214</campaign>
+      <campaign>1215</campaign>
+      <campaign>1216</campaign>
+      <campaign>1329</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1330</campaign>
+      <!-- Gen2 node 2 -->
+      <campaign>1343</campaign>
+      <!-- Gen3 node 1 -->
+      <campaign>1344</campaign>
+      <!-- Gen3 node 2 -->
       <level>7</level>
     </req>
     <reward>

@@ -6142,6 +6142,39 @@ var CAMPAIGNS = {
 		],
 		"name": "Fire Fruits"
 	},
+	"1343": {
+		"id": "1343",
+		"items": {
+			"3095": 0.4
+		},
+		"location_id": "23",
+		"missions": [
+			"7044",
+			"7045",
+			"7046",
+			"7047",
+			"7048",
+			"7049"
+		],
+		"name": "In the search of the Lost Tribe"
+	},
+	"1344": {
+		"battleground_id": "2053",
+		"id": "1344",
+		"items": {
+			"3095": 0.4
+		},
+		"location_id": "23",
+		"missions": [
+			"7050",
+			"7051",
+			"7052",
+			"7053",
+			"7054",
+			"7055"
+		],
+		"name": "After the storm, comes the calm?"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -138890,5 +138923,725 @@ var MISSIONS = {
 		],
 		"id": "7043",
 		"name": "The Reunion"
+	},
+	"7044": {
+		"commander": {
+			"id": "277"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7044",
+		"name": "A new kind of frog?"
+	},
+	"7045": {
+		"commander": {
+			"id": "264"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7045",
+		"name": "Suspicious Clues"
+	},
+	"7046": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7046",
+		"name": "Following the Breadcrumbs"
+	},
+	"7047": {
+		"commander": {
+			"id": "269"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7047",
+		"name": "Unexpected Help"
+	},
+	"7048": {
+		"commander": {
+			"id": "353"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2143"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7048",
+		"name": "An Ancient Evil has been Unleashed"
+	},
+	"7049": {
+		"commander": {
+			"id": "413"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7049",
+		"name": "Unlikely Alloys"
+	},
+	"7050": {
+		"commander": {
+			"id": "269"
+		},
+		"deck": [
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7050",
+		"name": "Remnants of the storm"
+	},
+	"7051": {
+		"commander": {
+			"id": "277"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "5248"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7051",
+		"name": "Hunting in the town"
+	},
+	"7052": {
+		"commander": {
+			"id": "413"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7052",
+		"name": "Time for an expected trap"
+	},
+	"7053": {
+		"commander": {
+			"id": "264"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7053",
+		"name": "Under Pressure"
+	},
+	"7054": {
+		"commander": {
+			"id": "277"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2112",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7054",
+		"name": "A Lunatic Scheme"
+	},
+	"7055": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2112",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7055",
+		"name": "Light shines upon the city once more"
 	}
 };

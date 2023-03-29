@@ -2123,6 +2123,35 @@ var BATTLEGROUNDS = {
 		"id": "163",
 		"name": "Flaming Scales"
 	},
+	"164": {
+		"desc": "Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce equal to their base Attack and Siphon as 3 plus their Attack.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 1,
+				"y": "4"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 1,
+				"x": 3,
+				"y": "4"
+			}
+		],
+		"id": "164",
+		"name": "Lily & Vampiric Spear Formation Reinforced"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

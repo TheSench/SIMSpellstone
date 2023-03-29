@@ -1793,8 +1793,8 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
-    <attack>6</attack>
-    <health>22</health>
+    <attack>8</attack>
+    <health>24</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="evade" x="1" />
@@ -1805,23 +1805,26 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>24</health>
+      <attack>9</attack>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>10</attack>
+      <health>26</health>
       <skill id="evade" x="2" />
       <skill id="armored" x="5" />
       <skill id="fervor" y="4" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
-      <health>26</health>
+      <attack>11</attack>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>10</attack>
-      <health>27</health>
+      <attack>12</attack>
+      <health>28</health>
       <skill id="evade" x="2" />
       <skill id="armored" x="6" />
       <skill id="fervor" y="4" x="5" />
@@ -8120,7 +8123,7 @@
       <level>6</level>
       <skill id="valor" x="4" />
       <skill id="heal" x="3" all="1" y="4" />
-      <skill id="strike" x="4" />
+      <skill id="strike" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -8137,7 +8140,7 @@
     <rarity>4</rarity>
     <skill id="valor" x="5" />
     <skill id="heal" x="3" all="1" y="4" />
-    <skill id="strike" x="5" />
+    <skill id="strike" x="6" />
     <type>1</type>
     <sub_type>4</sub_type>
     <sub_type>5</sub_type>
@@ -8147,33 +8150,36 @@
       <health>27</health>
       <skill id="valor" x="6" />
       <skill id="heal" x="3" all="1" y="4" />
-      <skill id="strike" x="6" />
+      <skill id="strike" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>28</health>
       <attack>6</attack>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="4" all="1" y="4" />
+      <skill id="strike" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>29</health>
-      <skill id="valor" x="7" />
+      <skill id="valor" x="8" />
       <skill id="heal" x="4" all="1" y="4" />
-      <skill id="strike" x="7" />
+      <skill id="strike" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>30</health>
-      <skill id="valor" x="8" />
+      <skill id="valor" x="9" />
       <skill id="heal" x="5" all="1" y="4" />
-      <skill id="strike" x="8" />
+      <skill id="strike" x="10" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>31</health>
-      <skill id="valor" x="9" />
+      <skill id="valor" x="10" />
       <skill id="heal" x="6" all="1" y="4" />
-      <skill id="strike" x="9" />
+      <skill id="strike" x="11" />
     </upgrade>
   </unit>
   <unit>
@@ -15565,7 +15571,7 @@
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1532624400</hidden_until_time>
     <attack>9</attack>
-    <health>33</health>
+    <health>37</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="5" />
@@ -15576,25 +15582,32 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>34</health>
+      <health>38</health>
       <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>35</health>
+      <attack>11</attack>
+      <health>39</health>
+      <skill id="armored" x="6" />
+      <skill id="fervor" x="4" y="4" />
+      <skill id="daze" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>36</health>
+      <attack>12</attack>
+      <health>40</health>
       <skill id="armored" x="6" />
       <skill id="fervor" x="4" y="4" />
-      <skill id="daze" x="6" />
+      <skill id="daze" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>13</attack>
+      <health>41</health>
       <skill id="armored" x="6" />
       <skill id="fervor" x="5" y="4" />
-      <skill id="daze" x="7" />
+      <skill id="daze" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -21541,12 +21554,14 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>11</attack>
       <skill id="absorb" x="5" />
       <skill id="backlash" x="3" />
       <skill id="strike" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>12</attack>
       <skill id="absorb" x="7" />
       <skill id="backlash" x="4" />
       <skill id="strike" x="8" />
@@ -21640,7 +21655,7 @@
     <asset_bundle>190</asset_bundle>
     <hidden_until_time>1588266000</hidden_until_time>
     <attack>9</attack>
-    <health>35</health>
+    <health>37</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="4" />
@@ -21652,22 +21667,27 @@
     <upgrade>
       <level>2</level>
       <attack>10</attack>
+      <health>38</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>36</health>
+      <health>39</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>11</attack>
+      <health>40</health>
       <skill id="stasis" x="5" />
       <skill id="rally" x="9" y="4" />
-      <skill id="berserk" x="3" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>12</attack>
+      <health>41</health>
       <skill id="stasis" x="5" />
       <skill id="rally" x="10" y="4" />
-      <skill id="berserk" x="4" />
+      <skill id="berserk" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -29553,6 +29573,258 @@
       <skill id="armored" x="5" />
       <skill id="rally" x="4" all="1" y="9" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2249</id>
+    <card_type>2</card_type>
+    <name>Tiny Warrior</name>
+    <picture>Frog_Tiny_Angry_Squeaking_Frog_A</picture>
+    <asset_bundle>270</asset_bundle>
+    <hidden_until_time>1680195600</hidden_until_time>
+    <attack>2</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="valor" x="3" />
+    <skill id="legion" x="3" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="2" />
+      <skill id="valor" x="4" />
+      <skill id="legion" x="3" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+      <skill id="counter" x="3" />
+      <skill id="valor" x="4" />
+      <skill id="legion" x="3" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12249</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Angry Warrior</name>
+    <picture>Frog_Tiny_Angry_Squeaking_Frog_A</picture>
+    <asset_bundle>270</asset_bundle>
+    <hidden_until_time>1680195600</hidden_until_time>
+    <attack>3</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="valor" x="4" />
+    <skill id="legion" x="3" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="counter" x="3" />
+      <skill id="valor" x="4" />
+      <skill id="legion" x="4" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="3" />
+      <skill id="valor" x="5" />
+      <skill id="legion" x="4" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="valor" x="5" />
+      <skill id="legion" x="4" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22249</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tiny Angry Commander</name>
+    <picture>Frog_Tiny_Angry_Squeaking_Frog_B</picture>
+    <asset_bundle>270</asset_bundle>
+    <hidden_until_time>1680195600</hidden_until_time>
+    <attack>3</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="valor" x="5" />
+    <skill id="legion" x="4" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="valor" x="6" />
+      <skill id="legion" x="4" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="valor" x="6" />
+      <skill id="legion" x="5" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2250</id>
+    <card_type>2</card_type>
+    <name>Sad Joseph</name>
+    <picture>Frog_April_Fools_Pepe_A</picture>
+    <asset_bundle>270</asset_bundle>
+    <hidden_until_time>1680195600</hidden_until_time>
+    <attack>5</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="2" />
+    <skill id="enrage" x="4" all="1" y="4" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="3" />
+      <skill id="enrage" x="4" all="1" y="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12250</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Crying Joseph</name>
+    <picture>Frog_April_Fools_Pepe_A</picture>
+    <asset_bundle>270</asset_bundle>
+    <hidden_until_time>1680195600</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="3" />
+    <skill id="enrage" x="4" all="1" y="4" />
+    <skill id="berserk" x="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="backlash" x="3" />
+      <skill id="enrage" x="5" all="1" y="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="4" />
+      <skill id="enrage" x="5" all="1" y="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22250</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Angry Joseph</name>
+    <picture>Frog_April_Fools_Pepe_B</picture>
+    <asset_bundle>270</asset_bundle>
+    <hidden_until_time>1680195600</hidden_until_time>
+    <attack>8</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="4" />
+    <skill id="enrage" x="5" all="1" y="4" />
+    <skill id="berserk" x="5" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="backlash" x="4" />
+      <skill id="enrage" x="6" all="1" y="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="backlash" x="5" />
+      <skill id="enrage" x="6" all="1" y="4" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
 </root>
