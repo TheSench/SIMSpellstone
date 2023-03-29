@@ -30,3 +30,10 @@ jobs:
         uses: ./.github/actions/update-images
         with:
           working-directory: ${{ env.GITHUB_WORKSPACE }}
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'Jon Senchyna'
+          git config --global user.email 'TheSench@users.noreply.github.com'
+          git commit -am "Auto-update of Spellstone Images"
+          git push
