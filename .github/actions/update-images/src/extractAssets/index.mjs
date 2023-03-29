@@ -19,7 +19,7 @@ function extract(downloadsDir, fileName) {
         console.log(`${fileName} -> ${extractedName}`);
         execFile(
             pathFromRoot('.venv', 'Scripts', 'python.exe'),
-            [pathFromRoot('.github', 'actions', 'extract-images', 'disunity.py'), filePath],
+            [pathFromRoot('.github', 'actions', 'update-images', 'disunity.py'), filePath],
             {
                 cwd: downloadsDir,
             },

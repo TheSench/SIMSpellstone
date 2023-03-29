@@ -6,7 +6,7 @@ import { getUrl } from './getUrl.mjs';
 import { getModifiedDate } from './head.mjs';
 
 export async function downloadFiles() {
-    const fileTimesPath = pathFromRoot('.github/actions/extract-images/src/downloads/fileTimes.json');
+    const fileTimesPath = pathFromRoot('.github/actions/update-images/src/downloads/fileTimes.json');
     const fileTimesJson = fs.readFileSync(fileTimesPath, 'utf8');
     var filesChecked = JSON.parse(fileTimesJson);
     var pattern = /{(\d+)}/
