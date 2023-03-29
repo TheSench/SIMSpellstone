@@ -8,12 +8,12 @@ import { pathFromRoot, setRootDir } from './rootDir.mjs';
 import { updateSpritesheets } from './spritesheet/index.mjs';
 
 try {
-  // const rootDir = core.getInput('working-directory');
-  // setRootDir(rootDir);
-  // mkdirSync(pathFromRoot('Downloads'), { recursive: true });
-  // await downloadFiles();
-  // await extractAssetsFromDownloads();
-  // await extractImagesFromAssets();
+  const rootDir = core.getInput('working-directory');
+  setRootDir(rootDir);
+  mkdirSync(pathFromRoot('Downloads'), { recursive: true });
+  await downloadFiles();
+  await extractAssetsFromDownloads();
+  await extractImagesFromAssets();
   await resizeImages();
   await updateSpritesheets();
 } catch (error) {
