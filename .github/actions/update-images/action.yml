@@ -1,8 +1,0 @@
-name: 'Update Images'
-description: 'Update images and spritesheets with latest assets from Synapse'
-inputs:
-  working-directory: 
-    required: true
-runs:
-  using: 'node16'
-  main: 'dist/index.mjs'

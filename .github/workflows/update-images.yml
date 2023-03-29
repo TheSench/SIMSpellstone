@@ -26,8 +26,27 @@ jobs:
         run: |
           python3 -m venv venv
 
-      - name: Update Images
-        uses: ./.github/actions/update-images
+      - name: Download Files
+        uses: ./.github/actions/download-files
+        with:
+          working-directory: ${{ env.GITHUB_WORKSPACE }}
+
+      - name: Extract Assets
+        uses: ./.github/actions/extract-assets
+        with:
+          working-directory: ${{ env.GITHUB_WORKSPACE }}
+
+      - name: Extract Images
+        uses: ./.github/actions/extract-images
+          working-directory: ${{ env.GITHUB_WORKSPACE }}
+
+      - name: Resize Images
+        uses: ./.github/actions/resize-images
+        with:
+          working-directory: ${{ env.GITHUB_WORKSPACE }}
+
+      - name: Update Spritesheets
+        uses: ./.github/actions/update-spritesheets
         with:
           working-directory: ${{ env.GITHUB_WORKSPACE }}
 
