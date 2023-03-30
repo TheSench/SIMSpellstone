@@ -465,11 +465,14 @@ var CARD_GUI = {};
             htmlSkill.classList.add("increased");
         }
         if (skill.all) htmlSkill.innerHTML += (" All ");
+        if (!skill.all && (skill.y || skill.s)) htmlSkill.innerHTML += (" ");
         if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
+        if (skill.y && skill.s) htmlSkill.innerHTML += (" ");
         if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
         var x = (skill.x | 0) + enhancement;
         if (x) htmlSkill.innerHTML += (" " + x + " ");
         if (skill.c) {
+            if (!x) htmlSkill.innerHTML += (" ");
             htmlSkill.innerHTML += (skill.c);
             if (onField) htmlSkill.innerHTML += " (" + (skill.countdown ? skill.countdown : "0") + ")";
         }
