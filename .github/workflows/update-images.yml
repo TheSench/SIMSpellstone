@@ -22,7 +22,8 @@ jobs:
         env:
           AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
 
-      - run: pip install -r requirements.txt
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
       - name: Download Files
         uses: ./.github/actions/download-files
@@ -52,6 +53,21 @@ jobs:
       - name: Check for modified files
         id: git-check
         run: echo "modified=$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)" >> $GITHUB_OUTPUT
+
+
+      - name: Setup Node version
+        if: steps.git-check.outputs.modified == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Node dependencies
+        if: steps.git-check.outputs.modified == 'true'
+        run: npm ci
+
+      - name: Bundle changes
+        if: steps.git-check.outputs.modified == 'true'
+        run: npm run grunt images
 
       - name: Push changes
         if: steps.git-check.outputs.modified == 'true'
