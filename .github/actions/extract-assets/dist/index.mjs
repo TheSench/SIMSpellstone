@@ -2768,7 +2768,7 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("util");
 let _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve('.');
 
 function setRootDir(rootDir) {
-    _rootDir = rootDir;
+    _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve(rootDir);
 }
 
 function getRootDir() {
@@ -2804,7 +2804,6 @@ var rootDir = __nccwpck_require__(789);
 
 
 
-
 function extractAssetsFromDownloads() {
     const downloadsDir = (0,rootDir/* pathFromRoot */.MM)('Downloads');
     (0,external_fs_.readdirSync)(downloadsDir)
@@ -2818,9 +2817,9 @@ function extract(downloadsDir, fileName) {
 
     if (!(0,external_fs_.existsSync)((0,external_path_.join)(downloadsDir, extractedName))) {
         console.log(`${fileName} -> ${extractedName}`);
-        (0,external_child_process_namespaceObject.execFile)(
+        (0,external_child_process_namespaceObject.execFileSync)(
             (0,rootDir/* pathFromRoot */.MM)('.venv', 'Scripts', 'python.exe'),
-            [(0,rootDir/* pathFromRoot */.MM)('.github', 'actions', 'update-images', 'disunity.py'), filePath],
+            [(0,rootDir/* pathFromRoot */.MM)('.github', 'actions', 'extract-assets', 'disunity.py'), filePath],
             {
                 cwd: downloadsDir,
             },

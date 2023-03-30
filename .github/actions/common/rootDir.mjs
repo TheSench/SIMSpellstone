@@ -3,7 +3,7 @@ import path from 'path';
 let _rootDir = path.resolve('.');
 
 export function setRootDir(rootDir) {
-    _rootDir = rootDir;
+    _rootDir = path.resolve(rootDir);
 }
 
 export function getRootDir() {

@@ -1,8 +1,7 @@
-import { execFile } from 'child_process';
-import { readdirSync } from 'fs';
+import { execFileSync } from 'child_process';
+import { existsSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { pathFromRoot } from '../../../common/rootDir.mjs';
-import { existsSync } from 'fs';
 
 export function extractAssetsFromDownloads() {
     const downloadsDir = pathFromRoot('Downloads');
@@ -17,9 +16,9 @@ function extract(downloadsDir, fileName) {
 
     if (!existsSync(join(downloadsDir, extractedName))) {
         console.log(`${fileName} -> ${extractedName}`);
-        execFile(
+        execFileSync(
             pathFromRoot('.venv', 'Scripts', 'python.exe'),
-            [pathFromRoot('.github', 'actions', 'update-images', 'disunity.py'), filePath],
+            [pathFromRoot('.github', 'actions', 'extract-assets', 'disunity.py'), filePath],
             {
                 cwd: downloadsDir,
             },
