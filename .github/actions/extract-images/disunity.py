@@ -4,7 +4,7 @@ import sys, os, json
 
 file = sys.argv[-1] # last argument
 out = file[:file.rindex('\\') + 1] # output path
-folder = file[len(out) : file.index('_unity2020')] + '\\' # output folder for extracted assets
+folder = file[len(out) : file.index('.unity3d')] + '\\' # output folder for extracted assets
 out += folder
 
 bundle = UnityPy.load(file)

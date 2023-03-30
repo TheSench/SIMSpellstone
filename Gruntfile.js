@@ -329,6 +329,12 @@ module.exports = function (grunt) {
         grunt.task.run('cssmin');
         grunt.task.run('html');
     });
+    grunt.registerTask('images',  function() {
+        grunt.task.run('cssmin');
+        grunt.task.run('copy:images');
+        grunt.task.run('imagemin');
+        grunt.task.run('html');
+    });
     grunt.registerTask('build', ['clean', /*'jshint', */'sass', 'cssmin', 'copy:images', 'imagemin', 'scripts']);
 
     grunt.registerTask('default', ['scripts']);

@@ -1,0 +1,8 @@
+name: 'Extract Images'
+description: 'Extract images from assets'
+inputs:
+  working-directory: 
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.mjs'

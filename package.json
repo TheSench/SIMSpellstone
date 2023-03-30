@@ -31,7 +31,8 @@
     "cy:record:failures": "cypress run --record",
     "cy:open": "cypress open",
     "test": "npm run cy:run",
-    "start": "http-server -o --cors -p 8080"
+    "start": "http-server -o --cors -p 8080",
+    "grunt": "grunt"
   },
   "repository": {
     "type": "git",

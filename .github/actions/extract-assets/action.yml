@@ -1,0 +1,8 @@
+name: 'Extract Assets'
+description: 'Extract assets from Unity3D files'
+inputs:
+  working-directory: 
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.mjs'
