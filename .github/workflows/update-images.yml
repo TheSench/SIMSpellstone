@@ -5,6 +5,7 @@ on:
     # whenever card data is updated
     paths:
       - 'dist/data.min.js'
+  workflow_dispatch:
 jobs:
   update-images:
     runs-on: ubuntu-latest
