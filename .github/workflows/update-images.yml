@@ -1,11 +1,10 @@
 name: Update images
 on:
   push:
-    branches: [ gh-pages, feat/load-images-via-github-actions ]
+    branches: [ gh-pages ]
     # whenever card data is updated
     paths:
       - 'dist/data.min.js'
-      - '.github/**'
 jobs:
   update-images:
     runs-on: ubuntu-latest
