@@ -4,8 +4,8 @@ import sys, os, json
 import logging
 
 file = sys.argv[-1] # last argument
-out = file[:file.rindex('\\') + 1] # output path
-folder = file[len(out) : file.index('.unity3d')] + '\\' # output folder for extracted assets
+out = file[:file.rindex('/') + 1] # output path
+folder = file[len(out) : file.index('.unity3d')] + '/' # output folder for extracted assets
 out += folder
 
 bundle = UnityPy.load(file)
