@@ -12169,7 +12169,7 @@
       <card level="7" id="2247" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3083" drop_per_energy="0.4" />
+    <find_item id="3083" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1680195600</ignore_energy_reduction_until>
     <!-- Thursday, March 30, 2023 at 17:00:00 -->
   </campaign>
@@ -12211,7 +12211,7 @@
       <card level="7" id="2247" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3083" drop_per_energy="0.4" />
+    <find_item id="3083" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1680195600</ignore_energy_reduction_until>
     <!-- Thursday, March 30, 2023 at 17:00:00 -->
   </campaign>
@@ -12255,7 +12255,7 @@
       <card level="7" id="2250" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3095" drop_per_energy="0.4" />
+    <find_item id="3095" drop_per_energy="0.6" />
     <ignore_energy_reduction_until>1682614800</ignore_energy_reduction_until>
     <!-- Thursday, April 27, 2023 at 17:00:00 -->
   </campaign>
@@ -12297,7 +12297,7 @@
       <card level="7" id="2250" />
       <!-- Map Legendary -->
     </rewards>
-    <find_item id="3095" drop_per_energy="0.4" />
+    <find_item id="3095" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1682614800</ignore_energy_reduction_until>
     <!-- Thursday, April 27, 2023 at 17:00:00 -->
   </campaign>

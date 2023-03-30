@@ -23221,7 +23221,7 @@
       <level>4</level>
       <health>21</health>
       <skill id="armored" x="4" />
-      <skill id="pierce" x="7" />
+      <skill id="pierce" x="8" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
@@ -23229,7 +23229,7 @@
       <attack>9</attack>
       <health>22</health>
       <skill id="armored" x="5" />
-      <skill id="pierce" x="7" />
+      <skill id="pierce" x="9" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
@@ -23237,7 +23237,7 @@
       <attack>10</attack>
       <health>23</health>
       <skill id="armored" x="6" />
-      <skill id="pierce" x="8" />
+      <skill id="pierce" x="10" />
       <skill id="berserk" x="6" />
     </upgrade>
   </unit>

@@ -6112,7 +6112,7 @@ var CAMPAIGNS = {
 	"1341": {
 		"id": "1341",
 		"items": {
-			"3083": 0.4
+			"3083": 0.6
 		},
 		"location_id": "19",
 		"missions": [
@@ -6129,7 +6129,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2053",
 		"id": "1342",
 		"items": {
-			"3083": 0.4
+			"3083": 0.8
 		},
 		"location_id": "19",
 		"missions": [
@@ -6145,7 +6145,7 @@ var CAMPAIGNS = {
 	"1343": {
 		"id": "1343",
 		"items": {
-			"3095": 0.4
+			"3095": 0.6
 		},
 		"location_id": "23",
 		"missions": [
@@ -6162,7 +6162,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2053",
 		"id": "1344",
 		"items": {
-			"3095": 0.4
+			"3095": 0.8
 		},
 		"location_id": "23",
 		"missions": [
