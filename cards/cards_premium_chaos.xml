@@ -39137,7 +39137,7 @@
     <skill id="burn" x="4" />
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5100</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <health>39</health>
@@ -39182,7 +39182,7 @@
     <skill id="burn" x="5" />
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5100</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <attack>13</attack>
@@ -39230,7 +39230,7 @@
     <skill id="burn" x="7" />
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5100</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <health>46</health>

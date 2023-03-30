@@ -40251,7 +40251,7 @@
     <skill id="leech" x="8" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -40294,7 +40294,7 @@
     <skill id="leech" x="10" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -40338,7 +40338,7 @@
     <skill id="leech" x="11" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <health>22</health>
