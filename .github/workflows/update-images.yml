@@ -24,9 +24,7 @@ jobs:
         env:
           AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
 
-      - name: Create virtual environment
-        run: |
-          python3 -m venv venv
+      - run: pip install -r requirements.txt
 
       - name: Download Files
         uses: ./.github/actions/download-files

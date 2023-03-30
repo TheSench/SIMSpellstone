@@ -17,7 +17,7 @@ function extract(downloadsDir, fileName) {
     if (!existsSync(join(downloadsDir, extractedName))) {
         console.log(`${fileName} -> ${extractedName}`);
         execFileSync(
-            pathFromRoot('.venv', 'Scripts', 'python.exe'),
+            'python',
             [pathFromRoot('.github', 'actions', 'extract-assets', 'disunity.py'), filePath],
             {
                 cwd: downloadsDir,

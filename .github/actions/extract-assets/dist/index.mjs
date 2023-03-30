@@ -2818,7 +2818,7 @@ function extract(downloadsDir, fileName) {
     if (!(0,external_fs_.existsSync)((0,external_path_.join)(downloadsDir, extractedName))) {
         console.log(`${fileName} -> ${extractedName}`);
         (0,external_child_process_namespaceObject.execFileSync)(
-            (0,rootDir/* pathFromRoot */.MM)('.venv', 'Scripts', 'python.exe'),
+            'python',
             [(0,rootDir/* pathFromRoot */.MM)('.github', 'actions', 'extract-assets', 'disunity.py'), filePath],
             {
                 cwd: downloadsDir,
