@@ -2821,11 +2821,11 @@ async function downloadFile(filename, url) {
 ;// CONCATENATED MODULE: ./src/downloads/fileTypes.mjs
 const fileTypes = [
     //"arena_boxes_{3}",
-    // "cardpack_{3}",
-    // "cardpack_event_{3}",
-    // "cardpack_expansion_{3}",
-    // "cardpack_aprilfools_{3}",
-    // "cardpack_standardset_2020",
+    "cardpack_{3}",
+    "cardpack_event_{3}",
+    "cardpack_expansion_{3}",
+    "cardpack_aprilfools_{3}",
+    "cardpack_standardset_2020",
     // "core_assets_{3}",
     //"event{1}",
     //"event_{3}",
