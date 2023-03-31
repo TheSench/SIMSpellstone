@@ -3016,8 +3016,8 @@ _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencie
 
 try {
   (0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__/* .setRootDir */ .pz)(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('working-directory'));
-  const user = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('user');
-  const password = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('password');
+  const user = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('spellstone-user');
+  const password = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('spellstone-password');
   (0,fs__WEBPACK_IMPORTED_MODULE_1__.mkdirSync)((0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__/* .pathFromRoot */ .MM)('Downloads'), { recursive: true });
   await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .downloadFiles */ .G)(user, password);
 } catch (error) {
