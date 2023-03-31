@@ -21,5 +21,3 @@ async function tryDownloadFile(fileName) {
         () => false,
     );
 }
-
-await downloadFiles();

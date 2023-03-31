@@ -2781,13 +2781,13 @@ function pathFromRoot(...pathParts) {
 
 /***/ }),
 
-/***/ 916:
+/***/ 119:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 
 // EXPORTS
 __nccwpck_require__.d(__webpack_exports__, {
-  "g": () => (/* binding */ determineChanges)
+  "G": () => (/* binding */ downloadFiles)
 });
 
 // EXTERNAL MODULE: external "fs"
@@ -2879,48 +2879,29 @@ async function callApi(payload) {
     });
 }
 
-
-/***/ }),
-
-/***/ 694:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
-
-/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "S": () => (/* binding */ downloadFile)
-/* harmony export */ });
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(147);
-/* harmony import */ var https__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(687);
-/* harmony import */ var _common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(789);
+;// CONCATENATED MODULE: ./src/downloads/download.mjs
 
 
 
 
 async function downloadFile(filename, url) {
-    const downloadLocation = (0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_2__/* .pathFromRoot */ .MM)('Downloads', `${filename}.unity3d`);
-    const file = fs__WEBPACK_IMPORTED_MODULE_0__.createWriteStream(downloadLocation);
+    const downloadLocation = (0,rootDir/* pathFromRoot */.MM)('Downloads', `${filename}.unity3d`);
+    const file = external_fs_.createWriteStream(downloadLocation);
     return new Promise((resolve, reject) => {
-        https__WEBPACK_IMPORTED_MODULE_1__.get(url, function (response) {
+        external_https_.get(url, function (response) {
             response.pipe(file);
             file.on("finish", () => {
                 file.close(resolve);
             });
         }).on('error', err => {
-            fs__WEBPACK_IMPORTED_MODULE_0__.unlink(downloadLocation, () => {
+            external_fs_.unlink(downloadLocation, () => {
                 reject(err);
             });
         });
     });
 }
 
-
-/***/ }),
-
-/***/ 442:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
-
-/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "G": () => (/* binding */ fileTypes)
-/* harmony export */ });
+;// CONCATENATED MODULE: ./src/downloads/fileTypes.mjs
 const fileTypes = [
     //"arena_boxes",
     "cardpack",
@@ -2938,15 +2919,7 @@ const fileTypes = [
     //"santaBundle",
     //"storepack",
 ];
-
-/***/ }),
-
-/***/ 701:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
-
-/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "G": () => (/* binding */ getUrl)
-/* harmony export */ });
+;// CONCATENATED MODULE: ./src/downloads/getUrl.mjs
 const baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles/2020_3_42f1/";
 
 const fileVersion = "_unity2020_3_42_webgl.unity3d";
@@ -2954,28 +2927,15 @@ const fileVersion = "_unity2020_3_42_webgl.unity3d";
 function getUrl(fileName) {
     return (baseURL + fileName + fileVersion);
 }
-
-/***/ }),
-
-/***/ 18:
-/***/ ((__webpack_module__, __webpack_exports__, __nccwpck_require__) => {
-
-__nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "G": () => (/* binding */ downloadFiles)
-/* harmony export */ });
-/* harmony import */ var _determineChanges_mjs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(916);
-/* harmony import */ var _download_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(694);
-/* harmony import */ var _fileTypes_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(442);
-/* harmony import */ var _getUrl_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(701);
+;// CONCATENATED MODULE: ./src/downloads/index.mjs
 
 
 
 
 
 async function downloadFiles(user, password) {
-    const changes = await (0,_determineChanges_mjs__WEBPACK_IMPORTED_MODULE_0__/* .determineChanges */ .g)(user, password);
-    for (const fileType of _fileTypes_mjs__WEBPACK_IMPORTED_MODULE_2__/* .fileTypes */ .G) {
+    const changes = await determineChanges(user, password);
+    for (const fileType of fileTypes) {
         console.log(`Checking ${fileType}...`);
         for (const fileName of changes.filter(fileName => fileName.startsWith(fileType))) {
             console.log(`Downloading ${fileName}...`);
@@ -2985,17 +2945,13 @@ async function downloadFiles(user, password) {
 }
 
 async function tryDownloadFile(fileName) {
-    const url = (0,_getUrl_mjs__WEBPACK_IMPORTED_MODULE_3__/* .getUrl */ .G)(fileName);
-    return await (0,_download_mjs__WEBPACK_IMPORTED_MODULE_1__/* .downloadFile */ .S)(fileName, url).then(
+    const url = getUrl(fileName);
+    return await downloadFile(fileName, url).then(
         () => true,
         () => false,
     );
 }
 
-await downloadFiles();
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } }, 1);
 
 /***/ }),
 
@@ -3005,10 +2961,8 @@ __webpack_async_result__();
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(186);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(147);
-/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(18);
+/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(119);
 /* harmony import */ var _common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(789);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__]);
-_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
