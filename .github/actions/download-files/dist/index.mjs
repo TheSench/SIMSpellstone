@@ -2768,7 +2768,7 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("util");
 let _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve('.');
 
 function setRootDir(rootDir) {
-    _rootDir = rootDir;
+    _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve(rootDir);
 }
 
 function getRootDir() {
@@ -2781,81 +2781,172 @@ function pathFromRoot(...pathParts) {
 
 /***/ }),
 
-/***/ 873:
+/***/ 916:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 
 // EXPORTS
 __nccwpck_require__.d(__webpack_exports__, {
-  "G": () => (/* binding */ downloadFiles)
+  "g": () => (/* binding */ determineChanges)
 });
 
 // EXTERNAL MODULE: external "fs"
 var external_fs_ = __nccwpck_require__(147);
-// EXTERNAL MODULE: ../common/rootDir.mjs
-var rootDir = __nccwpck_require__(789);
 // EXTERNAL MODULE: external "https"
 var external_https_ = __nccwpck_require__(687);
-;// CONCATENATED MODULE: ./src/downloads/download.mjs
+;// CONCATENATED MODULE: external "querystring"
+const external_querystring_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("querystring");
+// EXTERNAL MODULE: ../common/rootDir.mjs
+var rootDir = __nccwpck_require__(789);
+;// CONCATENATED MODULE: ./src/downloads/determineChanges.mjs
+
+
+
+
+
+
+async function determineChanges(user_id, password) {
+    const previousAssetBundles = loadOldAssetBundles();
+    const assetBundlesPath = (0,rootDir/* pathFromRoot */.MM)('scripts', 'data', 'assetBundles.json');
+    console.time('downloadFiles');
+    const initData = await callApi({
+        message: 'init',
+        user_id,
+        password,
+    });
+    const assetBundles = {};
+    Object.values(initData.asset_bundles)
+        .sort((a, b) => a.bundle_name.localeCompare(b.bundle_name))
+        .forEach(({ bundle_name, version }) => {
+            assetBundles[bundle_name] = version;
+        });
+
+    const data = JSON.stringify(assetBundles, null, '  ');
+    external_fs_.writeFileSync(assetBundlesPath, data, 'utf8');
+    console.timeEnd('downloadFiles');
+    return diffAssetBundles(previousAssetBundles, assetBundles);
+}
+
+function diffAssetBundles(previousAssetBundles, assetBundles) {
+    const updates = [];
+    Object.entries(assetBundles).forEach(([assetBundle, currentVersion]) => {
+        const previousVersion = previousAssetBundles[assetBundle];
+        if (previousVersion !== currentVersion) {
+            updates.push(assetBundle);
+        }
+    });
+    return updates;
+}
+
+function loadOldAssetBundles() {
+    const assetBundlesPath = (0,rootDir/* pathFromRoot */.MM)('scripts', 'data', 'assetBundles.json');
+    if (!external_fs_.existsSync(assetBundlesPath)) {
+        return {};
+    }
+    const assetBundlesJson = external_fs_.readFileSync(assetBundlesPath, 'utf8');
+    return JSON.parse(assetBundlesJson);
+}
+
+async function callApi(payload) {
+    const postData = external_querystring_namespaceObject.stringify(payload);
+
+    const options = {
+        hostname: 'spellstone.synapse-games.com',
+        port: 443,
+        path: `/api.php?${postData}`,
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    };
+    return new Promise((resolve, reject) => {
+        const request = external_https_.request(options, function (response) {
+            let data = '';
+            response.on('data', chunk => {
+                data += chunk;
+            });
+
+            response.on('end', () => {
+                resolve(JSON.parse(data));
+            });
+        }).on('error', err => {
+            reject(err);
+        });
+        request.on('error', error => {
+            reject(error);
+        });
+        request.end();
+    });
+}
+
+
+/***/ }),
+
+/***/ 694:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "S": () => (/* binding */ downloadFile)
+/* harmony export */ });
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(147);
+/* harmony import */ var https__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(687);
+/* harmony import */ var _common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(789);
 
 
 
 
 async function downloadFile(filename, url) {
-    const downloadLocation = (0,rootDir/* pathFromRoot */.MM)('Downloads', `${filename}.unity3d`);
-    const file = external_fs_.createWriteStream(downloadLocation);
+    const downloadLocation = (0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_2__/* .pathFromRoot */ .MM)('Downloads', `${filename}.unity3d`);
+    const file = fs__WEBPACK_IMPORTED_MODULE_0__.createWriteStream(downloadLocation);
     return new Promise((resolve, reject) => {
-        external_https_.get(url, function (response) {
+        https__WEBPACK_IMPORTED_MODULE_1__.get(url, function (response) {
             response.pipe(file);
             file.on("finish", () => {
                 file.close(resolve);
             });
         }).on('error', err => {
-            external_fs_.unlink(downloadLocation, () => {
+            fs__WEBPACK_IMPORTED_MODULE_0__.unlink(downloadLocation, () => {
                 reject(err);
             });
         });
     });
 }
 
-;// CONCATENATED MODULE: ./src/downloads/fileTypes.mjs
+
+/***/ }),
+
+/***/ 442:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "G": () => (/* binding */ fileTypes)
+/* harmony export */ });
 const fileTypes = [
-    //"arena_boxes_{3}",
-    "cardpack_{3}",
-    "cardpack_event_{3}",
-    "cardpack_expansion_{3}",
-    "cardpack_aprilfools_{3}",
-    "cardpack_standardset_2020",
-    // "core_assets_{3}",
-    //"event{1}",
-    //"event_{3}",
-    //"frog_crystal_{2}",
-    //"guildwars_{3}",
-    //"item_{3}",
-    //"localizationpack_{3}",
-    //"mappack_{3}",
-    "portraitpack_{3}",
-    //"pvp_bundle_{3}",
-    //"raid_001",
-    //"raid_002",
-    //"raid_003",
-    //"runepack_{3}",
-    //"santaBundle_{3}",
-    //"storepack_{3}",
-    //"event_002",
-    //"event_003",
-    //"event_004",
-    //"event_005",
-    //"event_006",
-    //"event_007",
-    //"event_008",
-    //"event_009",
-    //"event_010",
-    //"event_01{1}",
-    //"event_020",
-    //"event_02{1}",
+    //"arena_boxes",
+    "cardpack",
+    //"core_assets",
+    //"event",
+    //"frog_crystal",
+    //"guildwars",
+    //"item",
+    //"localizationpack",
+    //"mappack",
+    "portraitpack",
+    //"pvp_bundle",
+    //"raid",
+    //"runepack",
+    //"santaBundle",
+    //"storepack",
 ];
-;// CONCATENATED MODULE: ./src/downloads/getUrl.mjs
+
+/***/ }),
+
+/***/ 701:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "G": () => (/* binding */ getUrl)
+/* harmony export */ });
 const baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles/2020_3_42f1/";
 
 const fileVersion = "_unity2020_3_42_webgl.unity3d";
@@ -2863,82 +2954,48 @@ const fileVersion = "_unity2020_3_42_webgl.unity3d";
 function getUrl(fileName) {
     return (baseURL + fileName + fileVersion);
 }
-;// CONCATENATED MODULE: ./src/downloads/head.mjs
 
+/***/ }),
 
+/***/ 18:
+/***/ ((__webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
-
-async function getModifiedDate(url = '') {
-    return new Promise((resolve, reject) => {
-        external_https_.request(url, { method: 'HEAD' }, (res) => {
-            if (res.statusCode === 200) {
-                resolve(new Date(res.headers['last-modified']));
-            } else {
-                reject(res.statusMessage);
-            }
-        }).on('error', (err) => {
-            reject(err);
-        }).end();
-    });
-}
-
-;// CONCATENATED MODULE: ./src/downloads/index.mjs
+__nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "G": () => (/* binding */ downloadFiles)
+/* harmony export */ });
+/* harmony import */ var _determineChanges_mjs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(916);
+/* harmony import */ var _download_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(694);
+/* harmony import */ var _fileTypes_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(442);
+/* harmony import */ var _getUrl_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(701);
 
 
 
 
 
-
-
-async function downloadFiles() {
-    const fileTimesPath = (0,rootDir/* pathFromRoot */.MM)('fileTimes.json');
-    const fileTimesJson = external_fs_.readFileSync(fileTimesPath, 'utf8');
-    var filesChecked = JSON.parse(fileTimesJson);
-    var pattern = /{(\d+)}/
-    for (const fileType of fileTypes) {
+async function downloadFiles(user, password) {
+    const changes = await (0,_determineChanges_mjs__WEBPACK_IMPORTED_MODULE_0__/* .determineChanges */ .g)(user, password);
+    for (const fileType of _fileTypes_mjs__WEBPACK_IMPORTED_MODULE_2__/* .fileTypes */ .G) {
         console.log(`Checking ${fileType}...`);
-        var digitMatch = pattern.exec(fileType);
-        if (digitMatch) {
-            var numDigits = parseInt(digitMatch[1]);
-            for (let i = 1; ; i++) {
-                if (i >= Math.pow(10, numDigits)) break;
-                var iPadded = i.toString().padStart(numDigits, '0');
-                var fileName = fileType.replace(`{${numDigits}}`, iPadded);
-                if (!await tryDownloadFile(filesChecked, fileName)) break;
-            }
-        } else {
-            var fileName = fileType;
-            if (!await tryDownloadFile(filesChecked, fileName)) break;
-        }
+        for (const fileName of changes.filter(fileName => fileName.startsWith(fileType))) {
+            console.log(`Downloading ${fileName}...`);
+            if (!await tryDownloadFile(fileName)) break;
+        };
     }
-
-    const sorted = Object.fromEntries(Object.entries(filesChecked).sort(([keyA], [keyB]) => keyA.localeCompare(keyB)));
-    const newData = JSON.stringify(sorted, null, '  ');
-    external_fs_.writeFileSync(fileTimesPath, newData, 'utf8');
 }
 
-async function tryDownloadFile(filesChecked, fileName) {
-    const url = getUrl(fileName);
-    const lastUpdated = await getLastUpdated(url);
-    if (!lastUpdated) return false;
-    const previousUpdate = filesChecked[fileName] && new Date(Date.parse(filesChecked[fileName]));
-    if (previousUpdate && previousUpdate >= lastUpdated) return true;
-    filesChecked[fileName] = lastUpdated;
-    return await downloadFile(fileName, url).then(
+async function tryDownloadFile(fileName) {
+    const url = (0,_getUrl_mjs__WEBPACK_IMPORTED_MODULE_3__/* .getUrl */ .G)(fileName);
+    return await (0,_download_mjs__WEBPACK_IMPORTED_MODULE_1__/* .downloadFile */ .S)(fileName, url).then(
         () => true,
         () => false,
     );
 }
 
-async function getLastUpdated(url) {
-    try {
-        return await getModifiedDate(url);
-    } catch (error) {
-        console.error(error, url);
-        return null;
-    }
-}
+await downloadFiles();
 
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } }, 1);
 
 /***/ }),
 
@@ -2948,8 +3005,10 @@ async function getLastUpdated(url) {
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(186);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(147);
-/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(873);
+/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(18);
 /* harmony import */ var _common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(789);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__]);
+_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
@@ -2957,8 +3016,10 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
 
 try {
   (0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__/* .setRootDir */ .pz)(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('working-directory'));
+  const user = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('user');
+  const password = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('password');
   (0,fs__WEBPACK_IMPORTED_MODULE_1__.mkdirSync)((0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__/* .pathFromRoot */ .MM)('Downloads'), { recursive: true });
-  await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .downloadFiles */ .G)();
+  await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .downloadFiles */ .G)(user, password);
 } catch (error) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
 }
