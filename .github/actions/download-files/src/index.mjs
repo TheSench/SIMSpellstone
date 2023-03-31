@@ -5,8 +5,10 @@ import { pathFromRoot, setRootDir } from '../../common/rootDir.mjs';
 
 try {
   setRootDir(core.getInput('working-directory'));
+  const user = core.getInput('user');
+  const password = core.getInput('password');
   mkdirSync(pathFromRoot('Downloads'), { recursive: true });
-  await downloadFiles();
+  await downloadFiles(user, password);
 } catch (error) {
   core.setFailed(error.message);
 }
