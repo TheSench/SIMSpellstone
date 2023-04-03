@@ -1242,7 +1242,7 @@ var SIMULATOR = {};
 				affected++;
 
 				if (skill.mult) {
-					amount = Math.ceil(skill.mult * target.health);
+					amount = Math.ceil(skill.mult * target.base_health);
 				}
 
 				target.enraged += amount;
