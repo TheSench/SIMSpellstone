@@ -2688,6 +2688,7 @@ var SIMULATOR = {};
 			}
 		}
 		if (shrouded) {
+			shrouded += getEnhancement(target, 'stasis', shrouded);
 			damage -= shrouded;
 		}
 
