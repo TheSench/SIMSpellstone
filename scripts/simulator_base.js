@@ -3147,6 +3147,29 @@ var SIMULATOR = {};
 					current_assault.protected += reinforce;
 					if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
 				}
+
+				// Devour
+				// - Must have done some damage to an assault unit
+				if (current_assault.devour) {
+
+					var devour = current_assault.devour;
+					var enhanced = getEnhancement(current_assault, 'devour', devour);
+					devour += enhanced;
+					devour = adjustAttackIncrease(current_assault, devour);
+
+					current_assault.attack_berserk += devour;
+
+					var healing = Math.min(devour, current_assault.health - current_assault.health_left);
+					if(healing) {
+						current_assault.health_left += healing;
+					}
+
+					if (debug) {
+						echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
+						if(healing) echo += ' and healing ' + healing + ' health';
+						echo += '<br>';
+					}
+				}
 			}
 
 			// Counter
@@ -3225,29 +3248,6 @@ var SIMULATOR = {};
 
 					current_assault.attack_berserk += berserk;
 					if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
-				}
-
-				// Devour
-				// - Must have done some damage to an assault unit
-				if (current_assault.devour) {
-
-					var devour = current_assault.devour;
-					var enhanced = getEnhancement(current_assault, 'devour', devour);
-					devour += enhanced;
-					devour = adjustAttackIncrease(current_assault, devour);
-
-					current_assault.attack_berserk += devour;
-
-					var healing = Math.min(devour, current_assault.health - current_assault.health_left);
-					if(healing) {
-						current_assault.health_left += healing;
-					}
-
-					if (debug) {
-						echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
-						if(healing) echo += ' and healing ' + healing + ' health';
-						echo += '<br>';
-					}
 				}
 			}
 
