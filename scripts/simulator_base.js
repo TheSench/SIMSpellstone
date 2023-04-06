@@ -2600,7 +2600,7 @@ var SIMULATOR = {};
 				].filter(function(it) { return it && it.isAlive(); });
 				opposingUnit = (adjacentAllies.length
 					? choose_random_target(adjacentAllies)[0]
-					: field_o_assaults[current_assault.key]);
+					: false);
 			} else {
 				opposingUnit = field_o_assaults[current_assault.key];
 			}
@@ -2886,6 +2886,10 @@ var SIMULATOR = {};
 		var target = originalTarget
 		// -- START ATTACK SEQUENCE --
 		if (!target) {
+			if (current_assault.confused) {
+				// no target and confused, doesn't attack enemy commander
+				return
+			}
 			target = field_o_commander;
 		} else if (!target.isAlive()) {
 			if (current_assault.confused && originalTarget.owner === current_assault.owner) {
