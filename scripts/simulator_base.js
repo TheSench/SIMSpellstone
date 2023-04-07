@@ -142,9 +142,9 @@ var SIMULATOR = {};
 		if (debug) logFn(source, target, damage);
 
 		// Silence
-		// - Attacker must have taken damage
+		// - Target must have taken damage
 		// - Target must be an assault
-		if (source.silence && target.isAssault()) {
+		if (source.silence && target.isAssault() && damage > 0 && !source.silenced) {
 			target.silenced = true;
 			// Remove passive statuses for this turn
 			target.invisible = 0;
@@ -2688,6 +2688,7 @@ var SIMULATOR = {};
 			}
 		}
 		if (shrouded) {
+			shrouded += getEnhancement(target, 'stasis', shrouded);
 			damage -= shrouded;
 		}
 
