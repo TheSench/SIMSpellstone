@@ -63213,5 +63213,149 @@
       <card id="6210" mastery_level="7" name="Burning Blade" />
     </deck>
   </mission>
+  <mission>
+    <id>7056</id>
+    <name>Trying to Unify</name>
+    <energy>18</energy>
+    <desc>With the Menace of Paul and Worf cleared, you have the confidence to ask the Frog tribe to dismantle the factions to Unify the whole tribe.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="5204" name="Fra'mu, the Wise" />
+      <card id="5204" name="Fra'mu, the Wise" />
+      <card id="5239" name="Knightly Grumplor" />
+      <card id="5239" name="Knightly Grumplo" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="5160" name="Tetsudo's Shield" />
+      <card id="6271" name="Walker Frototype" />
+      <card id="7052" name="Toad the Ravenous" />
+      <card id="5160" mastery_level="2" name="Tetsudo's Shield" />
+      <card id="7052" mastery_level="3" name="Toad the Ravenous" />
+      <card id="2108" mastery_level="4" name="Koi Jockey" />
+      <card id="2108" mastery_level="5" name="Koi Jockey" />
+      <card id="6271" mastery_level="6" name="Walker Frototype" />
+      <card id="4045" mastery_level="7" name="Korg, the Last Touch" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7057</id>
+    <name>The Problem</name>
+    <energy>18</energy>
+    <desc>Atlatl comments to you that there's a reason for the tribes to be divided: Caesar. A being that never stops creating problems between the factions because it simply loves to create chaos and destruction.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="5239" name="Knightly Grumplo" />
+      <card id="5239" name="Knightly Grumplo" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="6201" name="Blasteye Sentry" />
+      <card id="5160" name="Tetsudo's Shield" />
+      <card id="5160" name="Tetsudo's Shield" />
+      <card id="6199" name="Solblade" />
+      <card id="7302" name="Sneaky Spitters" />
+      <card id="6155" name="Jorang, Frog Chemist" />
+      <card id="5103" mastery_level="2" name="Mother of Solars" />
+      <card id="7226" mastery_level="3" name="Froglin" />
+      <card id="7160" mastery_level="4" name="Perilous Stonesteps" />
+      <card id="6199" mastery_level="5" name="Solblade" />
+      <card id="5103" mastery_level="6" name="Mother of Solars" />
+      <card id="4009" mastery_level="7" name="Kachina, the Dreamer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7058</id>
+    <name>Looking for Caesar</name>
+    <energy>18</energy>
+    <desc>As you experienced before, Caesar is slippery. So, you ask Atlatl if he knows where to find it. He tells you that there's actually some rumors about some stolen weapons, between the scouts of the factions.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="6199" name="Solblade" />
+      <card id="6199" name="Solblade" />
+      <card id="7302" name="Sneaky Spitters" />
+      <card id="7302" name="Sneaky Spitters" />
+      <card id="6155" name="Jorang, Frog Chemist" />
+      <card id="6155" name="Jorang, Frog Chemist" />
+      <card id="7160" name="Perilous Stonesteps" />
+      <card id="5103" name="Mother of Solars" />
+      <card id="7226" name="Froglin" />
+      <card id="5103" mastery_level="2" name="Mother of Solars" />
+      <card id="7226" mastery_level="3" name="Froglin" />
+      <card id="7160" mastery_level="4" name="Perilous Stonesteps" />
+      <card id="7160" mastery_level="5" name="Perilous Stonesteps" />
+      <card id="5156" mastery_level="6" name="Tiltyard Ribbot" />
+      <card id="5618" mastery_level="7" name="Raju, the Unyielding" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7059</id>
+    <name>A Fast Research</name>
+    <energy>18</energy>
+    <desc>You've spotted a group of scouts fighting intensely. As you come closer to stop the fight, you can recognize Caesar disguised as a Wyld faction scout laughing at the distance with a stolen box.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="5202" name="Alchebian" />
+      <card id="5202" name="Alchebian" />
+      <card id="5238" name="Frostfire Apprentice" />
+      <card id="5238" name="Frostfire Apprentice" />
+      <card id="7289" name="Windfall Acrobats" />
+      <card id="7289" name="Windfall Acrobats" />
+      <card id="5226" name="Magitech Raider" />
+      <card id="6052" name="Fuming Beast" />
+      <card id="6302" name="Frog Ballista" />
+      <card id="5269" mastery_level="2" name="Jolty Jouster" />
+      <card id="6238" mastery_level="3" name="Venomdart Scout" />
+      <card id="6152" mastery_level="4" name="Bladesear Infuser" />
+      <card id="2223" mastery_level="5" name="Stalker Hextongue" />
+      <card id="6238" mastery_level="6" name="Venomdart Scout" />
+      <card id="4042" mastery_level="7" name="Hidden Omy" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7060</id>
+    <name>A Fast Pursuit</name>
+    <energy>18</energy>
+    <desc>Your party begins pursuing Caesar and when you think you've lost him, Atlatl spots him and helps you to corner him. Caesar starts to attack you fiercely, he is stronger and faster now than he ever was!</desc>
+    <commander id="367" />
+    <deck>
+      <card id="5238" name="Frostfire Apprentice" />
+      <card id="5238" name="Frostfire Apprentice" />
+      <card id="7289" name="Windfall Acrobats" />
+      <card id="7289" name="Windfall Acrobats" />
+      <card id="5226" name="Magitech Raider" />
+      <card id="5226" name="Magitech Raider" />
+      <card id="6052" name="Fuming Beast" />
+      <card id="6302" name="Frog Ballista" />
+      <card id="5269" name="Jolty Jouster" />
+      <card id="6238" mastery_level="2" name="Venomdart Scout" />
+      <card id="6152" mastery_level="3" name="Bladesear Infuser" />
+      <card id="6133" mastery_level="4" name="Cress, Flamespeaker" />
+      <card id="7242" mastery_level="5" name="Littlepond Twins" />
+      <card id="7092" mastery_level="6" name="Lord Froggy" />
+      <card id="4021" mastery_level="7" name="Plyn Poisontrek" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7061</id>
+    <name>The Unification</name>
+    <energy>18</energy>
+    <desc>After a tough battle, you capture Caesar and show the evidence of his plan to prevent the tribe unification publicly. After that, Caesar is imprisoned forever, next to Paul. You've accomplished your mission to unify another tribe.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="2223" name="Stalker Hextongue" />
+      <card id="2223" name="Stalker Hextongue" />
+      <card id="5269" name="Jolty Jouster" />
+      <card id="5269" name="Jolty Jouster" />
+      <card id="6052" name="Fuming Beast" />
+      <card id="6052" name="Fuming Beast" />
+      <card id="6152" name="Bladesear Infuser" />
+      <card id="6302" name="Frog Ballista" />
+      <card id="7242" name="Littlepond Twins" />
+      <card id="7092" mastery_level="2" name="Lord Froggy" />
+      <card id="6133" mastery_level="3" name="Cress, Flamespeaker" />
+      <card id="6209" mastery_level="4" name="Wyribbit" />
+      <card id="6152" mastery_level="5" name="Bladesear Infuser" />
+      <card id="6209" mastery_level="6" name="Wyribbit" />
+      <card id="5634" mastery_level="7" name="Eira, the Electrokinetic" />
+    </deck>
+  </mission>
 </root>
 

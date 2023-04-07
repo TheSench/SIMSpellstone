@@ -13233,6 +13233,39 @@
     </rewards>
     <find_item id="3083" drop_per_energy=".6" />
   </campaign>
-  <!-- LBN Nophora event 99 END -->
+  <!-- LBN Vulcanos event 100 END -->
+  <!-- LBN Caesar event 101  -->
+  <campaign>
+    <id>4014</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Return of Caesar</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>23</location_id>
+    <x>250</x>
+    <y>130</y>
+    <!-- up down -->
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>7056</mission_id>
+      <mission_id>7057</mission_id>
+      <mission_id>7058</mission_id>
+      <mission_id>7059</mission_id>
+      <mission_id>7060</mission_id>
+      <mission_id>7061</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2220" />
+      <card level="5" id="2220" />
+      <item level="6" id="104069" number="25" />
+      <item level="7" id="104069" number="75" />
+    </rewards>
+    <find_item id="3095" drop_per_energy=".6" />
+  </campaign>
+  <!-- LBN Caesar event 101 END -->
 </root>
 
