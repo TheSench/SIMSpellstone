@@ -142,9 +142,9 @@ var SIMULATOR = {};
 		if (debug) logFn(source, target, damage);
 
 		// Silence
-		// - Attacker must have taken damage
+		// - Target must have taken damage
 		// - Target must be an assault
-		if (source.silence && target.isAssault()) {
+		if (source.silence && target.isAssault() && damage > 0 && !source.silenced) {
 			target.silenced = true;
 			// Remove passive statuses for this turn
 			target.invisible = 0;
@@ -1242,7 +1242,7 @@ var SIMULATOR = {};
 				affected++;
 
 				if (skill.mult) {
-					amount = Math.ceil(skill.mult * target.health);
+					amount = Math.ceil(skill.mult * target.base_health);
 				}
 
 				target.enraged += amount;
@@ -2688,6 +2688,7 @@ var SIMULATOR = {};
 			}
 		}
 		if (shrouded) {
+			shrouded += getEnhancement(target, 'stasis', shrouded);
 			damage -= shrouded;
 		}
 
@@ -3147,6 +3148,29 @@ var SIMULATOR = {};
 					current_assault.protected += reinforce;
 					if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
 				}
+
+				// Devour
+				// - Must have done some damage to an assault unit
+				if (current_assault.devour) {
+
+					var devour = current_assault.devour;
+					var enhanced = getEnhancement(current_assault, 'devour', devour);
+					devour += enhanced;
+					devour = adjustAttackIncrease(current_assault, devour);
+
+					current_assault.attack_berserk += devour;
+
+					var healing = Math.min(devour, current_assault.health - current_assault.health_left);
+					if(healing) {
+						current_assault.health_left += healing;
+					}
+
+					if (debug) {
+						echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
+						if(healing) echo += ' and healing ' + healing + ' health';
+						echo += '<br>';
+					}
+				}
 			}
 
 			// Counter
@@ -3225,29 +3249,6 @@ var SIMULATOR = {};
 
 					current_assault.attack_berserk += berserk;
 					if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
-				}
-
-				// Devour
-				// - Must have done some damage to an assault unit
-				if (current_assault.devour) {
-
-					var devour = current_assault.devour;
-					var enhanced = getEnhancement(current_assault, 'devour', devour);
-					devour += enhanced;
-					devour = adjustAttackIncrease(current_assault, devour);
-
-					current_assault.attack_berserk += devour;
-
-					var healing = Math.min(devour, current_assault.health - current_assault.health_left);
-					if(healing) {
-						current_assault.health_left += healing;
-					}
-
-					if (debug) {
-						echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
-						if(healing) echo += ' and healing ' + healing + ' health';
-						echo += '<br>';
-					}
 				}
 			}
 

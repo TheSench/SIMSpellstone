@@ -6598,6 +6598,22 @@ var CAMPAIGNS = {
 			"7043"
 		],
 		"name": "Lightning Vulcanos Payback"
+	},
+	"4014": {
+		"id": "4014",
+		"items": {
+			"3095": 0.6
+		},
+		"location_id": "23",
+		"missions": [
+			"7056",
+			"7057",
+			"7058",
+			"7059",
+			"7060",
+			"7061"
+		],
+		"name": "Lightning Return of Caesar"
 	}
 };
 var MISSIONS = {
@@ -139643,5 +139659,365 @@ var MISSIONS = {
 		],
 		"id": "7055",
 		"name": "Light shines upon the city once more"
+	},
+	"7056": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "5204"
+			},
+			{
+				"id": "5204"
+			},
+			{
+				"id": "5239"
+			},
+			{
+				"id": "5239"
+			},
+			{
+				"id": "6201"
+			},
+			{
+				"id": "6201"
+			},
+			{
+				"id": "5160"
+			},
+			{
+				"id": "6271"
+			},
+			{
+				"id": "7052"
+			},
+			{
+				"id": "5160",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7052",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2108",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2108",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6271",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4045",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7056",
+		"name": "Trying to Unify"
+	},
+	"7057": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "5239"
+			},
+			{
+				"id": "5239"
+			},
+			{
+				"id": "6201"
+			},
+			{
+				"id": "6201"
+			},
+			{
+				"id": "5160"
+			},
+			{
+				"id": "5160"
+			},
+			{
+				"id": "6199"
+			},
+			{
+				"id": "7302"
+			},
+			{
+				"id": "6155"
+			},
+			{
+				"id": "5103",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7226",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7160",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6199",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5103",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4009",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7057",
+		"name": "The Problem"
+	},
+	"7058": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "6199"
+			},
+			{
+				"id": "6199"
+			},
+			{
+				"id": "7302"
+			},
+			{
+				"id": "7302"
+			},
+			{
+				"id": "6155"
+			},
+			{
+				"id": "6155"
+			},
+			{
+				"id": "7160"
+			},
+			{
+				"id": "5103"
+			},
+			{
+				"id": "7226"
+			},
+			{
+				"id": "5103",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7226",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7160",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7160",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5156",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5618",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7058",
+		"name": "Looking for Caesar"
+	},
+	"7059": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "5202"
+			},
+			{
+				"id": "5202"
+			},
+			{
+				"id": "5238"
+			},
+			{
+				"id": "5238"
+			},
+			{
+				"id": "7289"
+			},
+			{
+				"id": "7289"
+			},
+			{
+				"id": "5226"
+			},
+			{
+				"id": "6052"
+			},
+			{
+				"id": "6302"
+			},
+			{
+				"id": "5269",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6238",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6152",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2223",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6238",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4042",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7059",
+		"name": "A Fast Research"
+	},
+	"7060": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "5238"
+			},
+			{
+				"id": "5238"
+			},
+			{
+				"id": "7289"
+			},
+			{
+				"id": "7289"
+			},
+			{
+				"id": "5226"
+			},
+			{
+				"id": "5226"
+			},
+			{
+				"id": "6052"
+			},
+			{
+				"id": "6302"
+			},
+			{
+				"id": "5269"
+			},
+			{
+				"id": "6238",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6152",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6133",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7092",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4021",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7060",
+		"name": "A Fast Pursuit"
+	},
+	"7061": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "2223"
+			},
+			{
+				"id": "2223"
+			},
+			{
+				"id": "5269"
+			},
+			{
+				"id": "5269"
+			},
+			{
+				"id": "6052"
+			},
+			{
+				"id": "6052"
+			},
+			{
+				"id": "6152"
+			},
+			{
+				"id": "6302"
+			},
+			{
+				"id": "7242"
+			},
+			{
+				"id": "7092",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6133",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6209",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6152",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6209",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5634",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7061",
+		"name": "The Unification"
 	}
 };
