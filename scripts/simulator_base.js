@@ -1153,7 +1153,7 @@ var SIMULATOR = {};
 			}
 			// Target cards on delay (not active next turn) otherwise
 			if (!targets.length) {
-				getTargets(false, true);
+				getTargets(true, true);
 			}
 
 			// No Targets
