@@ -2592,19 +2592,6 @@ var SIMULATOR = {};
 				if (debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
 			}
 
-			var opposingUnit;
-			if (current_assault.confused) {
-				var adjacentAllies = [
-					field_p_assaults[current_assault.key-1],
-					field_p_assaults[current_assault.key+1]
-				].filter(function(it) { return it && it.isAlive(); });
-				opposingUnit = (adjacentAllies.length
-					? choose_random_target(adjacentAllies)[0]
-					: field_o_assaults[current_assault.key]);
-			} else {
-				opposingUnit = field_o_assaults[current_assault.key];
-			}
-
 			for (; activations > 0; activations--) {
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
@@ -2623,6 +2610,19 @@ var SIMULATOR = {};
 				if (!current_assault.hasAttack()) {
 					if (debug && current_assault.permanentAttack() > 0) echo += debug_name(current_assault) + ' is weakened and cannot attack<br>';
 					continue;
+				}
+
+				var opposingUnit;
+				if (current_assault.confused) {
+					var adjacentAllies = [
+						field_p_assaults[current_assault.key - 1],
+						field_p_assaults[current_assault.key + 1]
+					].filter(function(it) { return it && it.isAlive(); });
+					opposingUnit = (adjacentAllies.length
+						? choose_random_target(adjacentAllies)[0]
+						: false);
+				} else {
+					opposingUnit = field_o_assaults[current_assault.key];
 				}
 
 				doAttack(current_assault, opposingUnit, field_o_assaults, field_o_commander);
@@ -2887,9 +2887,14 @@ var SIMULATOR = {};
 		var target = originalTarget
 		// -- START ATTACK SEQUENCE --
 		if (!target) {
+			if (current_assault.confused) {
+				// no target and confused, doesn't attack enemy commander
+				return
+			}
 			target = field_o_commander;
 		} else if (!target.isAlive()) {
 			if (current_assault.confused && originalTarget.owner === current_assault.owner) {
+				// shouldn't reach this anymore (switches DS target or doesn't attack non-existing target)
 				if (debug) echo += debug_name(current_assault) + ' is confused and attacks ' + debug_name(target) + ', but it is already dead<br>';
 				// If a confused unit killed an adjacent ally, don't target enemy/commander on subsequent hits of same turn
 				return
