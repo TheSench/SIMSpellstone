@@ -5395,6 +5395,7 @@ var SIM_CONTROLLER = (function () {
 			}
 		}
 		if (shrouded) {
+			shrouded += getEnhancement(target, 'stasis', shrouded);
 			damage -= shrouded;
 		}
 
