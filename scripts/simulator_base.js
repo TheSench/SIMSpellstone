@@ -1889,11 +1889,14 @@ var SIMULATOR = {};
 			var mult = skill.mult;
 			if (mult) {
 				// Unearthed card has scaled stats based on original card
-				unearthedCard.attack = Math.floor(dying.attack * mult);
-				unearthedCard.health = Math.floor(dying.health * mult);
+				unearthedCard.attack = Math.ceil(dying.attack * mult);
+				unearthedCard.health = Math.ceil(dying.health * mult);
 			}
 
 			play_card(unearthedCard, dying.owner, true);
+
+			setPassiveStatus(unearthedCard, 'evade', 'invisible');
+			setPassiveStatus(unearthedCard, 'absorb', 'warded');
 
 			if (debug) {
 				echo += debug_name(unearthedCard) + ' is unearthed</br>';
