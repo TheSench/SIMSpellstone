@@ -5,37 +5,37 @@ import { getUrl } from './getUrl.mjs';
 
 export async function downloadFiles(user, password) {
     const changes = await determineChanges(user, password);
-    const filesToDownload = fileTypes.flatMap(fileType =>
-        changes.filter(fileName => fileName.startsWith(fileType))
+    const filesToDowassetsToDownloadload = fileTypes.flatMap(fileType =>
+        changes.filter(assetName => assetName.includes(`/${fileType}`))
     );
-    return await downloadUpdatedFiles(filesToDownload);
+    return await downloadUpdatedFiles(filesToDowassetsToDownloadload);
 }
 
-async function downloadUpdatedFiles(filesToDownload) {
+async function downloadUpdatedFiles(assetsToDownload) {
     let i = 0;
     function downloadNextFile() {
-        if (i >= filesToDownload.length) {
+        if (i >= assetsToDownload.length) {
             return;
         }
-        const fileName = filesToDownload[i];
-        console.log(`Downloading ${fileName}...`);
-        return tryDownloadFile(fileName).then(
+        const assetName = assetsToDownload[i];
+        console.log(`Downloading ${assetName}...`);
+        return tryDownloadFile(assetName).then(
             () => {
                 i++;
                 downloadNextFile();
             },
             error => {
-                console.log(`Failed to download ${fileName}: ${error}`);
+                console.log(`Failed to download ${assetName}: ${error}`);
             },
         );
     }
-    const workers = Math.max(4, filesToDownload.length);
+    const workers = Math.max(4, assetsToDownload.length);
     await Promise.all(Array(workers).fill(0).map(downloadNextFile));
 }
 
-async function tryDownloadFile(fileName) {
-    const url = getUrl(fileName);
-    return await downloadFile(fileName, url).then(
+async function tryDownloadFile(assetName) {
+    const url = getUrl(assetName);
+    return await downloadFile(assetName, url).then(
         () => true,
         () => false,
     );
