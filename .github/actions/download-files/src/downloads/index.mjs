@@ -5,13 +5,32 @@ import { getUrl } from './getUrl.mjs';
 
 export async function downloadFiles(user, password) {
     const changes = await determineChanges(user, password);
-    for (const fileType of fileTypes) {
-        console.log(`Checking ${fileType}...`);
-        for (const fileName of changes.filter(fileName => fileName.startsWith(fileType))) {
-            console.log(`Downloading ${fileName}...`);
-            if (!await tryDownloadFile(fileName)) break;
-        };
+    const filesToDownload = fileTypes.flatMap(fileType =>
+        changes.filter(fileName => fileName.startsWith(fileType))
+    );
+    return await downloadUpdatedFiles(filesToDownload);
+}
+
+async function downloadUpdatedFiles(filesToDownload) {
+    let i = 0;
+    function downloadNextFile() {
+        if (i >= filesToDownload.length) {
+            return;
+        }
+        const fileName = filesToDownload[i];
+        console.log(`Downloading ${fileName}...`);
+        return tryDownloadFile(fileName).then(
+            () => {
+                i++;
+                downloadNextFile();
+            },
+            error => {
+                console.log(`Failed to download ${fileName}: ${error}`);
+            },
+        );
     }
+    const workers = Math.max(4, filesToDownload.length);
+    await Promise.all(Array(workers).fill(0).map(downloadNextFile));
 }
 
 async function tryDownloadFile(fileName) {
