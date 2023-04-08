@@ -265,6 +265,20 @@ var SIMULATOR = {};
 			var len = skills.length;
 			if (len === 0) return;
 
+			if (len > 1 && !dying.reanimated) {
+				for (var i = 0; i < len; i++) {
+					var skill = skills[i];
+					if (skill.id === "reanimate") {
+						// Do reanimate first, then the rest on the next "real" death (reanimate won't trigger again)
+						onDeathSkills[skill.id](dying, killer, skill);
+						if (showAnimations) {
+							drawField(field, null, null, turn, dying);
+						}
+						return;
+					}
+				}
+			}
+
 			for (var i = 0; i < len; i++) {
 				var skill = skills[i];
 				onDeathSkills[skill.id](dying, killer, skill);
