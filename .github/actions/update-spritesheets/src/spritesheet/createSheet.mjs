@@ -36,7 +36,7 @@ async function createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup
     while (offset < images) {
         const lastImageInSheet = imageFileNames[offset + 99];
         const lastImageName = lastImageInSheet && parse(lastImageInSheet).name;
-        if (spriteLookup[lastImageName]) {
+        if (spriteLookup[lastImageName] !== undefined) {
             offset += 100;
             sheetIndex++;
         } else {
@@ -59,7 +59,7 @@ async function createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup
             let x = 84 * (i % dimensions);
             let y = width * Math.floor(i / dimensions);
             let imageName = parse(fileName).name;
-            if (!spriteLookup[imageName]) {
+            if (spriteLookup[imageName] === undefined) {
                 const cssClass = `.${cssClassPrefix}-${imageName}`;
                 const cssStyle = `background-position: -${x}px -${y}px; ${backgroundImage}`;
                 appendFileSync(cssFilePath, `${cssClass} { ${cssStyle} }\n`);

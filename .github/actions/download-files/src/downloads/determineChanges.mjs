@@ -5,13 +5,12 @@ import { pathFromRoot } from '../../../common/rootDir.mjs';
 
 
 export async function determineChanges(user_id, password) {
-    const previousAssetBundles = loadOldAssetBundles();
-    const assetBundlesPath = pathFromRoot('scripts', 'data', 'assetBundles.json');
     console.time('downloadFiles');
     const initData = await callApi({
         message: 'init',
         user_id,
         password,
+        unity: 'Unity2020_3_42',
     });
     const assetBundles = {};
     Object.values(initData.asset_bundles)
@@ -21,6 +20,8 @@ export async function determineChanges(user_id, password) {
         });
 
     const data = JSON.stringify(assetBundles, null, '  ');
+    const assetBundlesPath = pathFromRoot('scripts', 'data', 'assetBundles.json');
+    const previousAssetBundles = loadOldAssetBundles(assetBundlesPath);
     fs.writeFileSync(assetBundlesPath, data, 'utf8');
     console.timeEnd('downloadFiles');
     return diffAssetBundles(previousAssetBundles, assetBundles);
@@ -37,8 +38,7 @@ function diffAssetBundles(previousAssetBundles, assetBundles) {
     return updates;
 }
 
-function loadOldAssetBundles() {
-    const assetBundlesPath = pathFromRoot('scripts', 'data', 'assetBundles.json');
+function loadOldAssetBundles(assetBundlesPath) {
     if (!fs.existsSync(assetBundlesPath)) {
         return {};
     }
