@@ -1155,6 +1155,8 @@ function copy_skill(original_skill) {
     new_skill.c = original_skill.c;
     new_skill.s = original_skill.s;
     new_skill.ignore_nullify = original_skill.ignore_nullify;
+    new_skill.card = original_skill.card;
+    new_skill.level = original_skill.level;
     return new_skill;
 }
 

@@ -1539,6 +1539,8 @@ function copy_skill(original_skill) {
     new_skill.c = original_skill.c;
     new_skill.s = original_skill.s;
     new_skill.ignore_nullify = original_skill.ignore_nullify;
+    new_skill.card = original_skill.card;
+    new_skill.level = original_skill.level;
     return new_skill;
 }
 
@@ -2971,6 +2973,20 @@ var SIM_CONTROLLER = (function () {
 			var skills = dying.onDeathSkills;
 			var len = skills.length;
 			if (len === 0) return;
+
+			if (len > 1 && !dying.reanimated) {
+				for (var i = 0; i < len; i++) {
+					var skill = skills[i];
+					if (skill.id === "reanimate") {
+						// Do reanimate first, then the rest on the next "real" death (reanimate won't trigger again)
+						onDeathSkills[skill.id](dying, killer, skill);
+						if (showAnimations) {
+							drawField(field, null, null, turn, dying);
+						}
+						return;
+					}
+				}
+			}
 
 			for (var i = 0; i < len; i++) {
 				var skill = skills[i];
@@ -4596,11 +4612,14 @@ var SIM_CONTROLLER = (function () {
 			var mult = skill.mult;
 			if (mult) {
 				// Unearthed card has scaled stats based on original card
-				unearthedCard.attack = Math.floor(dying.attack * mult);
-				unearthedCard.health = Math.floor(dying.health * mult);
+				unearthedCard.attack = Math.ceil(dying.attack * mult);
+				unearthedCard.health = Math.ceil(dying.health * mult);
 			}
 
 			play_card(unearthedCard, dying.owner, true);
+
+			setPassiveStatus(unearthedCard, 'evade', 'invisible');
+			setPassiveStatus(unearthedCard, 'absorb', 'warded');
 
 			if (debug) {
 				echo += debug_name(unearthedCard) + ' is unearthed</br>';
