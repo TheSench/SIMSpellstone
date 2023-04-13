@@ -304,10 +304,7 @@ var setupPopups = function () {
 		autoOpen: false,
 		modal: true,
 		resizable: false,
-		open: closeDialogOnOverlayClick,
-		close: function () {
-			cardDetailScope.visible = false;
-		}
+		open: closeDialogOnOverlayClick
 	});
 }
 
