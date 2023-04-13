@@ -376,7 +376,6 @@ var showDetails = function (event, htmlCard) {
 	var unit = getUnitFromCard(htmlCard);
 
 	cardDetailScope.setUnit(unit).$apply();
-	cardDetailScope.visible = true;
 
 	detailsDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 	detailsDialog.dialog("open");

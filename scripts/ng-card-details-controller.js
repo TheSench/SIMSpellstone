@@ -26,8 +26,6 @@
       return this;
     };
 
-    $scope.visible = false;
-
     $scope.getCardImage = function () {
       var image = new Image();
       image.src = "res/cardImagesLarge/" + loadCard($scope.card.id).picture + ".jpg";
