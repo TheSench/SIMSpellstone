@@ -3356,10 +3356,7 @@ var setupPopups = function () {
 		autoOpen: false,
 		modal: true,
 		resizable: false,
-		open: closeDialogOnOverlayClick,
-		close: function () {
-			cardDetailScope.visible = false;
-		}
+		open: closeDialogOnOverlayClick
 	});
 }
 
@@ -3431,7 +3428,6 @@ var showDetails = function (event, htmlCard) {
 	var unit = getUnitFromCard(htmlCard);
 
 	cardDetailScope.setUnit(unit).$apply();
-	cardDetailScope.visible = true;
 
 	detailsDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 	detailsDialog.dialog("open");
@@ -5610,8 +5606,6 @@ if (function (type) {
       }());
       return this;
     };
-
-    $scope.visible = false;
 
     $scope.getCardImage = function () {
       var image = new Image();
