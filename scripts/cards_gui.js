@@ -457,6 +457,7 @@ var CARD_GUI = {};
         var htmlSkill = document.createElement("span");
         htmlSkill.className = "skill";
         htmlSkill.appendChild(getSkillIcon(skill.id));
+        htmlSkill.innerHTML += ' ';
         var imbued = isImbued(card, skill.id, i);
         var enhancement = getEnhancement(card, skill.id, skill.x);
         if (imbued) {
@@ -464,15 +465,18 @@ var CARD_GUI = {};
         } else if (skill.boosted || enhancement) {
             htmlSkill.classList.add("increased");
         }
-        if (skill.all) htmlSkill.innerHTML += (" All ");
-        if (!skill.all && (skill.y || skill.s)) htmlSkill.innerHTML += (" ");
-        if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
-        if (skill.y && skill.s) htmlSkill.innerHTML += (" ");
-        if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
+        if (skill.all) htmlSkill.innerHTML += ('All ');
+        if (skill.y) {
+            htmlSkill.appendChild(getFactionIcon(skill.y));
+            htmlSkill.innerHTML += ' ';
+        }
+        if (skill.s) {
+            htmlSkill.appendChild(getSkillIcon(skill.s));
+            htmlSkill.innerHTML += ' ';
+        }
         var x = (skill.x | 0) + enhancement;
-        if (x) htmlSkill.innerHTML += (" " + x + " ");
+        if (x) htmlSkill.innerHTML += (x + ' ');
         if (skill.c) {
-            if (!x) htmlSkill.innerHTML += (" ");
             htmlSkill.innerHTML += (skill.c);
             if (onField) htmlSkill.innerHTML += " (" + (skill.countdown ? skill.countdown : "0") + ")";
         }
