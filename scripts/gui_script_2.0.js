@@ -90,7 +90,7 @@ $(function () {
         if (selectedRaid) {
             newDeck = load_deck_raid(selectedRaid, raidlevel.val());
             if (RAIDS[selectedRaid].type === "Dungeon") {
-                raidlevel.attr("max", 150);
+                raidlevel.attr("max", 500);
             } else {
                 raidlevel.attr("max", 40);
             }
