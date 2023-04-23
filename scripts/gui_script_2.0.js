@@ -72,7 +72,65 @@ $(function () {
             $deck.append(CARD_GUI.makeDeckHTML(newDeck, false, battlegrounds));
         }
     }
-    var accordions = $(".accordion").accordion({
+
+    function setDeckSortable(deckField, associatedHashField) {
+        $(deckField).sortable({
+            items: '.card:not(.commander):not(.blank)',
+            tolerance: "intersect",
+            helper: function (event, ui) {
+                return ui.clone();
+            },
+            start: function (event, ui) {
+                var origPos = ui.placeholder.index() - 1;
+                ui.item.data('origPos', origPos);
+                $(ui.item).hide();
+            },
+            stop: function (event, ui) {
+                var origPos = ui.item.data('origPos') - 1;
+                var newPos = ui.item.index() - 1;
+
+                var hashField = $(associatedHashField);
+                var deck = hash_decode(hashField.val());
+                var array = deck.deck;
+                array.splice(newPos, 0, array.splice(origPos, 1)[0]);
+                var hash = hash_encode(deck);
+                hashField.val(hash);
+            }
+        });
+    }
+
+    function onDeckLoaded(newHash, hashField) {
+        $(hashField).val(newHash).change();
+    }
+
+    function loadDeck(hashField) {
+        $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
+        loadDeckDialog.dialog("open");
+        loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    
+        loadDeckDialog.hashField = hashField;
+    }
+    document.querySelector('#load-player').addEventListener('click', function () { loadDeck('#deck1'); });
+    document.querySelector('#load-cpu').addEventListener('click', function () { loadDeck('#deck2'); });
+
+    document.querySelector('#config-map-bge').addEventListener('click', function showMapBGEs() {
+        mapBGEDialog.dialog("open");
+        mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    });
+
+    var dark = false;
+    document.querySelector('#toggleTheme').addEventListener('click', function toggleTheme() {
+        if (dark) {
+            $("#theme").attr("href", "dist/light.min.css");
+            $("#toggleTheme").val("Dark Theme");
+        } else {
+            $("#theme").attr("href", "dist/dark.min.css");
+            $("#toggleTheme").val("Light Theme");
+        }
+        dark = !dark;
+    });
+
+    $(".accordion").accordion({
         collapsible: true,
         active: false,
         heightStyle: "content"
@@ -163,65 +221,6 @@ $(function () {
     processQueryString();
 });
 
-function doneLoading() {
-    $("body").removeClass("loading");
-    checkTutorial();
-}
-
-function setDeckSortable(deckField, associatedHashField) {
-    $(deckField).sortable({
-        items: '.card:not(.commander):not(.blank)',
-        tolerance: "intersect",
-        helper: function (event, ui) {
-            return ui.clone();
-        },
-        start: function (event, ui) {
-            var origPos = ui.placeholder.index() - 1;
-            ui.item.data('origPos', origPos);
-            $(ui.item).hide();
-        },
-        stop: function (event, ui) {
-            var origPos = ui.item.data('origPos') - 1;
-            var newPos = ui.item.index() - 1;
-
-            var hashField = $(associatedHashField);
-            var deck = hash_decode(hashField.val());
-            var array = deck.deck;
-            array.splice(newPos, 0, array.splice(origPos, 1)[0]);
-            var hash = hash_encode(deck);
-            hashField.val(hash);
-        }
-    });
-}
-
-function showMapBGEs() {
-    mapBGEDialog.dialog("open");
-    mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
-}
-
-function loadDeck(hashField) {
-    $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
-    loadDeckDialog.dialog("open");
-    loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
-
-    loadDeckDialog.hashField = hashField;
-}
-
-function onDeckLoaded(newHash, hashField) {
-    $(hashField).val(newHash).change();
-}
-
-var dark = false;
-function toggleTheme() {
-    if (dark) {
-        $("#theme").attr("href", "dist/light.min.css");
-        $("#toggleTheme").val("Dark Theme");
-    } else {
-        $("#theme").attr("href", "dist/dark.min.css");
-        $("#toggleTheme").val("Light Theme");
-    }
-    dark = !dark;
-}
 
 var frames = [];
 var frameInterval = null;
