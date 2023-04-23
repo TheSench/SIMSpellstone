@@ -148,13 +148,8 @@ var initDeckBuilder = function () {
 		onClickFilter(event, filterDualFaction, event.altKey);
 	});
 
-	if (_DEFINED("spoilers") || _DEFINED("latestCards")) {
-		$("#loadingSplash").html("Checking for New Cards...");
-		updateGameData();
-	} else {
-		loadCardCache();
-		setTimeout(loadCards, 1);
-	}
+	loadCardCache();
+	setTimeout(loadCards, 1);
 
 	if (_DEFINED("unlimited")) {
 		$deck = $("#deck");
@@ -162,10 +157,6 @@ var initDeckBuilder = function () {
 	}
 
 	$("#graph-accordion").click(updateGraphs);
-}
-
-function updateGameData() {
-	setTimeout(DATA_UPDATER.updateData, 1, loadCards, true);
 }
 
 var loadCards = function () {

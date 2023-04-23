@@ -409,7 +409,6 @@ function showWinrate() {
 			current_deck = hash_encode(deck.player);
 		}
 
-		//battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
 		battle_history += winrate + ' (+/- ' + mErr + ') &nbsp; &nbsp; ' + current_deck + '<br>';
 	}
 
