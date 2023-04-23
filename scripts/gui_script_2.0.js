@@ -29,11 +29,6 @@ $(function () {
     for (var i = 0; i < bges.length; i++) {
         var lblBge = $(bges[i]);
         lblBge.hover(showTooltip, hideTooltip);
-        /*
-        var tooltip = $('<div class="tooltip">' + lblBge.attr("bge-desc") + '</div>');
-        var parent = lblBge.parent();
-        parent.append($('<div></div>').append([lblBge.prev(), lblBge, tooltip]));
-        */
     }
 
     function showTooltip(event) {
@@ -121,15 +116,12 @@ $(function () {
     loadDeckDialog = $("#loadDeckDialog").dialog({
         autoOpen: false,
         minWidth: 320,
-        /*
-        minHeight: 20,
-        */
         modal: true,
         resizable: false,
         buttons: {
             Delete: function () {
                 var name = $("#loadDeckName").val();
-                var newHash = storageAPI.deleteDeck(name);
+                storageAPI.deleteDeck(name);
             },
             Load: function () {
                 var name = $("#loadDeckName").val();
