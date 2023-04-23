@@ -39,7 +39,7 @@ var SIM_CONTROLLER = (function () {
         showAnimations = $('#animations').is(':checked');
 
         if ($('#auto_mode').length) {
-            auto_mode = $('#auto_mode').is(':checked');
+            var auto_mode = $('#auto_mode').is(':checked');
             SIMULATOR.user_controlled = !auto_mode;
         }
 
@@ -47,7 +47,6 @@ var SIM_CONTROLLER = (function () {
         tournament = $("#tournament").is(":checked");
 
         return {
-            auto_mode,
             enemybges,
             getbattleground,
             getcampaign,
@@ -72,7 +71,7 @@ var SIM_CONTROLLER = (function () {
             tower_level,
             tower_type,
             user_controlled,
-            
+
             debug,
             loss_debug,
             mass_debug,
