@@ -45,6 +45,39 @@ var SIM_CONTROLLER = (function () {
 
         // Not currently in UI - attacker's first card has +1 delay
         tournament = $("#tournament").is(":checked");
+
+        return {
+            auto_mode,
+            enemybges,
+            getbattleground,
+            getcampaign,
+            getdeck,
+            getdeck2,
+            getexactorder,
+            getexactorder2,
+            getmission,
+            getordered,
+            getordered2,
+            getraid,
+            getsiege,
+            mapbges,
+            missionlevel,
+            play_debug,
+            raidlevel,
+            selfbges,
+            showAnimations,
+            sims_left,
+            surge,
+            tournament,
+            tower_level,
+            tower_type,
+            user_controlled,
+            
+            debug,
+            loss_debug,
+            mass_debug,
+            win_debug,
+        };
     }
 
     // Loops through all simulations
