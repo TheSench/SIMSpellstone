@@ -2035,6 +2035,7 @@ var SIMULATOR = {};
 			}
 		};
 		SIMULATOR.field = field;
+		var simConfig = SIMULATOR.config;
 
 		// Load player deck
 		if (cache_player_deck_cards) {
@@ -2042,8 +2043,8 @@ var SIMULATOR = {};
 		}
 
 		// Load enemy deck
-		if (getmission && missionlevel > 1 && missionlevel < 7) {
-			cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+		if (simConfig.missionID && missionlevel > 1 && missionlevel < 7) {
+			cache_cpu_deck = load_deck_mission(simConfig.missionID, missionlevel);
 			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		} else if (getraid) {
 			cache_cpu_deck = load_deck_raid(getraid, raidlevel);
@@ -2110,6 +2111,7 @@ var SIMULATOR = {};
 	}
 
 	function setupDecks() {
+		var simConfig = SIMULATOR.config;
 		// Cache decks where possible
 		// Load player deck
 		if (getdeck) {
@@ -2123,9 +2125,9 @@ var SIMULATOR = {};
 		pvpAI = true;
 		if (getdeck2) {
 			cache_cpu_deck = hash_decode(getdeck2);
-			if (getmission) pvpAI = false;
-		} else if (getmission) {
-			cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+			if (simConfig.missionID) pvpAI = false;
+		} else if (simConfig.missionID) {
+			cache_cpu_deck = load_deck_mission(simConfig.missionID, missionlevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else if (getraid) {
 			cache_cpu_deck = load_deck_raid(getraid, raidlevel);

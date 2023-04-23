@@ -9,7 +9,6 @@ var SIM_CONTROLLER = (function () {
 
         getdeck2 = $('#deck2').val();
         getcampaign = $('#campaign').val();
-        getmission = $('#mission').val();
         missionlevel = $('#mission_level').val();
         getraid = $('#raid').val();
         raidlevel = $('#raid_level').val();
@@ -39,17 +38,19 @@ var SIM_CONTROLLER = (function () {
         // Not currently in UI - attacker's first card has +1 delay
         tournament = $("#tournament").is(":checked");
 
+        var missionID = $('#mission').val();
+
         SIMULATOR.config = {
             enemybges: BATTLEGROUNDS ? getSelectedBattlegrounds("enemy-") : '',
             getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
             selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
-            mapbges: BATTLEGROUNDS ? (getmission ? getSelectedMapBattlegrounds() : "") : '',
+            mapbges: BATTLEGROUNDS ? (missionID ? getSelectedMapBattlegrounds() : "") : '',
             getcampaign: getcampaign,
             getdeck: getdeck,
             getdeck2: getdeck2,
             getexactorder: getexactorder,
             getexactorder2: getexactorder2,
-            getmission: getmission,
+            missionID: missionID,
             getordered: getordered,
             getordered2: getordered2,
             getraid: getraid,
