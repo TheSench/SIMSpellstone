@@ -724,5 +724,3 @@ var choice = undefined;
 var auto_mode = false;
 var tournament = false;
 var suppressOutput = false;
-var orders = {};
-var cardStats = {};
