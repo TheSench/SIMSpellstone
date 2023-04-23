@@ -2,7 +2,7 @@
 
 var SIM_CONTROLLER = (function () {
 
-    function getConfiguration() {
+    function setConfiguration() {
         getdeck = $('#deck1').val();
         getordered = $('#ordered').is(':checked');
         getexactorder = $('#exactorder').is(':checked');
@@ -20,13 +20,6 @@ var SIM_CONTROLLER = (function () {
         getsiege = $('#siege').is(':checked');
         tower_level = $('#tower_level').val();
         tower_type = $('#tower_type').val();
-
-        if (BATTLEGROUNDS) {
-            getbattleground = getSelectedBattlegrounds();
-            selfbges = getSelectedBattlegrounds("self-");
-            enemybges = getSelectedBattlegrounds("enemy-");
-            mapbges = (getmission ? getSelectedMapBattlegrounds() : "");
-        }
 
         sims_left = $('#sims').val() || 1;
 
@@ -46,36 +39,36 @@ var SIM_CONTROLLER = (function () {
         // Not currently in UI - attacker's first card has +1 delay
         tournament = $("#tournament").is(":checked");
 
-        return {
-            enemybges,
-            getbattleground,
-            getcampaign,
-            getdeck,
-            getdeck2,
-            getexactorder,
-            getexactorder2,
-            getmission,
-            getordered,
-            getordered2,
-            getraid,
-            getsiege,
-            mapbges,
-            missionlevel,
-            play_debug,
-            raidlevel,
-            selfbges,
-            showAnimations,
-            sims_left,
-            surge,
-            tournament,
-            tower_level,
-            tower_type,
-            user_controlled,
+        SIMULATOR.config = {
+            enemybges: BATTLEGROUNDS ? getSelectedBattlegrounds("enemy-") : '',
+            getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
+            selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
+            mapbges: BATTLEGROUNDS ? (getmission ? getSelectedMapBattlegrounds() : "") : '',
+            getcampaign: getcampaign,
+            getdeck: getdeck,
+            getdeck2: getdeck2,
+            getexactorder: getexactorder,
+            getexactorder2: getexactorder2,
+            getmission: getmission,
+            getordered: getordered,
+            getordered2: getordered2,
+            getraid: getraid,
+            getsiege: getsiege,
+            missionlevel: missionlevel,
+            play_debug: play_debug,
+            raidlevel: raidlevel,
+            showAnimations: showAnimations,
+            sims_left: sims_left,
+            surge: surge,
+            tournament: tournament,
+            tower_level: tower_level,
+            tower_type: tower_type,
+            user_controlled: user_controlled,
 
-            debug,
-            loss_debug,
-            mass_debug,
-            win_debug,
+            debug: debug,
+            loss_debug: loss_debug,
+            mass_debug: mass_debug,
+            win_debug: win_debug,
         };
     }
 
@@ -115,7 +108,7 @@ var SIM_CONTROLLER = (function () {
     }
 
     return {
-        getConfiguration: getConfiguration,
+        setConfiguration: setConfiguration,
         debug_end: debug_end,
 
         end_sims_callback: null,

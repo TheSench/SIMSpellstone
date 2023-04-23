@@ -911,7 +911,7 @@ var MakeTrap = (function() {
     });
 }());
 
-var getBattlegrounds = function(getbattleground, selfbges, enemybges, mapbges, campaignID, missionlevel, raidID, raidlevel) {
+var getBattlegrounds = function() {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -919,23 +919,23 @@ var getBattlegrounds = function(getbattleground, selfbges, enemybges, mapbges, c
         onTurn: [],
         onCardPlayed: []
     };
-
-    addBgesFromList(battlegrounds, getbattleground);
-    addBgesFromList(battlegrounds, selfbges, 'player');
-    addBgesFromList(battlegrounds, enemybges, 'cpu');
-    addMapBGEs(battlegrounds, mapbges, 'player');
+    var simConfig = SIMULATOR.config;
+    addBgesFromList(battlegrounds, simConfig.getbattleground);
+    addBgesFromList(battlegrounds, simConfig.selfbges, 'player');
+    addBgesFromList(battlegrounds, simConfig.enemybges, 'cpu');
+    addMapBGEs(battlegrounds, simConfig.mapbges, 'player');
 
     if (campaignID) {
-        addMissionBGE(battlegrounds, campaignID, missionlevel);
+        addMissionBGE(battlegrounds, simConfig.campaignID, simConfig.missionlevel);
     } else if (raidID) {
-        addRaidBGE(battlegrounds, raidID, raidlevel);
+        addRaidBGE(battlegrounds, simConfig.raidID, simConfig.raidlevel);
     }
     return battlegrounds;
 };
 
-function addBgesFromList(battlegrounds, getbattleground, player) {
-    if (!getbattleground) return null;
-    var selected = getbattleground.split(",");
+function addBgesFromList(battlegrounds, battlegroundsToAdd, player) {
+    if (!battlegroundsToAdd) return null;
+    var selected = battlegroundsToAdd.split(",");
     for (var i = 0; i < selected.length; i++) {
         var id = selected[i];
         var battleground = BATTLEGROUNDS[id];

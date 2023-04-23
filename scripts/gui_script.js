@@ -26,6 +26,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	err_msg += "User-agent header: " + navigator.userAgent + "\n";
 	err_msg += "SimSpellstone version: " + text_version + "\n";
 
+	var simConfig = SIMULATOR.config;
 	if (getdeck) err_msg += "Deck hash: " + getdeck + "\n";
 	if (getordered) err_msg += "Ordered: Yes\n";
 	if (getexactorder) err_msg += "Exact-order: Yes\n";
@@ -33,9 +34,9 @@ window.addEventListener('error', function (message, url, linenumber) {
 	if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
 	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
 	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
-	if (getmission) err_msg += "Mission ID: " + getmission + "\n";
-	if (getraid) err_msg += "Raid ID: " + getraid + "\n";
-	if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
+	if (simConfig.getmission) err_msg += "Mission ID: " + simConfig.getmission + "\n";
+	if (simConfig.getraid) err_msg += "Raid ID: " + simConfig.getraid + "\n";
+	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";
 	if (games) err_msg += "Sims run so far: " + games + "\n";
 	try {
 		err_msg += "Link to reproduce: " + generate_link() + "\n";
@@ -262,30 +263,30 @@ function hideUI() {
 
 function getSelectedBattlegrounds(prefix) {
 	prefix = (prefix || "");
-	var getbattleground = [];
+	var selectedBattlegrounds = [];
 	var bgCheckBoxes = document.getElementsByName(prefix + "battleground");
 	for (var i = 0; i < bgCheckBoxes.length; i++) {
 		var checkbox = bgCheckBoxes[i];
 		if (checkbox && checkbox.checked) {
-			getbattleground.push(checkbox.value);
+			selectedBattlegrounds.push(checkbox.value);
 		}
 	}
-	getbattleground = getbattleground.join();
-	return getbattleground;
+	selectedBattlegrounds = selectedBattlegrounds.join();
+	return selectedBattlegrounds;
 }
 
 function getSelectedMapBattlegrounds() {
-	var getbattleground = [];
+	var selectedMapBattlegrounds = [];
 	var locationID = $("#location").val();
 	var selects = document.getElementsByName("map-battleground");
 	for (var i = 0; i < selects.length; i++) {
 		var select = selects[i];
 		if (select.value > 0) {
-			getbattleground.push(locationID + "-" + i + "-" + select.value);
+			selectedMapBattlegrounds.push(locationID + "-" + i + "-" + select.value);
 		}
 	}
-	getbattleground = getbattleground.join();
-	return getbattleground;
+	selectedMapBattlegrounds = selectedMapBattlegrounds.join();
+	return selectedMapBattlegrounds;
 }
 
 function setSelectedMapBattlegrounds(mapBgeString) {
@@ -694,10 +695,6 @@ var getmission = 0;
 var missionlevel = 0;
 var getraid = false;
 var raidlevel = 0;
-var getbattleground = '';
-var enemybges = '';
-var selfbges = '';
-var mapbges = '';
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
