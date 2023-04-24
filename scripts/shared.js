@@ -926,7 +926,7 @@ var getBattlegrounds = function() {
     addMapBGEs(battlegrounds, simConfig.mapbges, 'player');
 
     if (campaignID) {
-        addMissionBGE(battlegrounds, simConfig.campaignID, simConfig.missionlevel);
+        addMissionBGE(battlegrounds, simConfig.campaignID, simConfig.missionLevel);
     } else if (raidID) {
         addRaidBGE(battlegrounds, simConfig.raidID, simConfig.raidLevel);
     }

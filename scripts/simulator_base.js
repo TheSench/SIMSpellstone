@@ -2043,8 +2043,8 @@ var SIMULATOR = {};
 		}
 
 		// Load enemy deck
-		if (simConfig.missionID && missionlevel > 1 && missionlevel < 7) {
-			cache_cpu_deck = load_deck_mission(simConfig.missionID, missionlevel);
+		if (simConfig.missionID && simConfig.missionLevel > 1 && simConfig.missionLevel < 7) {
+			cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
 			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		} else if (simConfig.raidID) {
 			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
@@ -2127,7 +2127,7 @@ var SIMULATOR = {};
 			cache_cpu_deck = hash_decode(getdeck2);
 			if (simConfig.missionID) pvpAI = false;
 		} else if (simConfig.missionID) {
-			cache_cpu_deck = load_deck_mission(simConfig.missionID, missionlevel);
+			cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else if (simConfig.raidID) {
 			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
