@@ -690,7 +690,6 @@ var getordered = false;
 var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
-var getcampaign = 0;
 var missionlevel = 0;
 var getraid = false;
 var raidlevel = 0;

@@ -8,7 +8,6 @@ var SIM_CONTROLLER = (function () {
         getexactorder = $('#exactorder').is(':checked');
 
         getdeck2 = $('#deck2').val();
-        getcampaign = $('#campaign').val();
         missionlevel = $('#mission_level').val();
         getraid = $('#raid').val();
         raidlevel = $('#raid_level').val();
@@ -45,7 +44,6 @@ var SIM_CONTROLLER = (function () {
             getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
             selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
             mapbges: BATTLEGROUNDS ? (missionID ? getSelectedMapBattlegrounds() : "") : '',
-            getcampaign: getcampaign,
             getdeck: getdeck,
             getdeck2: getdeck2,
             getexactorder: getexactorder,
