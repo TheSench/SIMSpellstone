@@ -28,12 +28,12 @@ window.addEventListener('error', function (message, url, linenumber) {
 
 	var simConfig = SIMULATOR.config;
 	if (simConfig.playerDeck) err_msg += "Deck hash: " + simConfig.playerDeck + "\n";
-	if (getordered) err_msg += "Ordered: Yes\n";
-	if (getexactorder) err_msg += "Exact-order: Yes\n";
+	if (simConfig.playerOrdered) err_msg += "Ordered: Yes\n";
+	if (simConfig.playerExactOrdered) err_msg += "Exact-order: Yes\n";
 	if (surge) err_msg += "Surge: Yes\n";
 	if (simConfig.cpuDeck) err_msg += "Enemy deck hash: " + simConfig.cpuDeck + "\n";
-	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
-	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
+	if (simConfig.cpuOrdered) err_msg += "Enemy Ordered: Yes\n";
+	if (simConfig.cpuExactOrdered) err_msg += "Enemy Exact-order: Yes\n";
 	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
 	if (simConfig.raidID) err_msg += "Raid ID: " + simConfig.raidID + "\n";
 	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";
@@ -684,10 +684,6 @@ var win_debug = false;
 var found_desired = false;
 var play_debug = false;
 var showAnimations = false;
-var getordered = false;
-var getordered2 = false;
-var getexactorder = false;
-var getexactorder2 = false;
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;

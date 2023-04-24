@@ -3,11 +3,6 @@
 var SIM_CONTROLLER = (function () {
 
     function setConfiguration() {
-        getordered = $('#ordered').is(':checked');
-        getexactorder = $('#exactorder').is(':checked');
-
-        getordered2 = $('#ordered2').is(':checked');
-        getexactorder2 = $('#exactorder2').is(':checked');
         surge = $('#surge').is(':checked');
 
         getsiege = $('#siege').is(':checked');
@@ -39,13 +34,16 @@ var SIM_CONTROLLER = (function () {
             getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
             selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
             mapbges: BATTLEGROUNDS ? (missionID ? getSelectedMapBattlegrounds() : "") : '',
+
             playerDeck: $('#deck1').val(),
+            playerOrdered: $('#ordered').is(':checked'),
+            playerExactOrdered:  $('#ordered2').is(':checked'),
+
             cpuDeck: $('#deck2').val(),
-            getexactorder: getexactorder,
-            getexactorder2: getexactorder2,
+            cpuOrdered: $('#ordered2').is(':checked'),
+            cpuExactOrdered: $('#exactorder2').is(':checked'),
+            
             missionID: missionID,
-            getordered: getordered,
-            getordered2: getordered2,
             raidID: $('#raid').val(),
             raidLevel: $('#raid_level').val(),
             getsiege: getsiege,

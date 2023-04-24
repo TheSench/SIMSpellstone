@@ -2055,17 +2055,17 @@ var SIMULATOR = {};
 		}
 
 		// Set up deck order priority reference
-		if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
-		if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+		if (simConfig.playerOrdered && !simConfig.playerExactOrdered) deck.player.ordered = copy_card_list(deck.player.deck);
+		if (simConfig.cpuOrdered && !simConfig.cpuExactOrdered) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
 		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
-			: getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+			: simConfig.playerOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     // Player AI falls back on picking a random card
 
 		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
-								: */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+								: */simConfig.cpuOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
-					: getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
+					: simConfig.cpuExactOrdered ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
 						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
 
@@ -2075,16 +2075,17 @@ var SIMULATOR = {};
 
 		initializeBattle();
 
+		var simConfig = SIMULATOR.config;
 		// Shuffle decks
-		if (getexactorder) {
-			if (!getordered) {
+		if (simConfig.playerExactOrdered) {
+			if (!simConfig.playerOrdered) {
 				deck.player.shuffleHand = true;
 			}
 		} else {
 			shuffle(deck.player.deck);
 		}
-		if (getexactorder2) {
-			if (!getordered2) {
+		if (simConfig.cpuExactOrdered) {
+			if (!simConfig.cpuOrdered) {
 				deck.cpu.shuffleHand = true;
 			}
 		} else {
@@ -2349,7 +2350,6 @@ var SIMULATOR = {};
 		var deck_p = deck[p];
 		var deck_p_deck = deck_p.deck;
 		var deck_p_ordered = deck_p['ordered'];
-		var isOrdered = (p == 'player' ? getordered : getordered2);
 
 		if (livePvP && p === 'cpu' && drawCards) {
 			waitForOpponent(p, deck_p_deck, deck_p_ordered, turn, drawCards);
