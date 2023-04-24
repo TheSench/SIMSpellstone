@@ -2047,7 +2047,7 @@ var SIMULATOR = {};
 			cache_cpu_deck = load_deck_mission(simConfig.missionID, missionlevel);
 			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		} else if (simConfig.raidID) {
-			cache_cpu_deck = load_deck_raid(simConfig.raidID, raidlevel);
+			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
 			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		}
 		if (cache_cpu_deck_cards) {
@@ -2130,7 +2130,7 @@ var SIMULATOR = {};
 			cache_cpu_deck = load_deck_mission(simConfig.missionID, missionlevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else if (simConfig.raidID) {
-			cache_cpu_deck = load_deck_raid(simConfig.raidID, raidlevel);
+			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
 			cache_cpu_deck = createEmptyDeck();

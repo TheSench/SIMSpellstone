@@ -9,7 +9,6 @@ var SIM_CONTROLLER = (function () {
 
         getdeck2 = $('#deck2').val();
         missionlevel = $('#mission_level').val();
-        raidlevel = $('#raid_level').val();
         getordered2 = $('#ordered2').is(':checked');
         getexactorder2 = $('#exactorder2').is(':checked');
         surge = $('#surge').is(':checked');
@@ -51,10 +50,10 @@ var SIM_CONTROLLER = (function () {
             getordered: getordered,
             getordered2: getordered2,
             raidID: $('#raid').val(),
+            raidLevel: $('#raid_level').val(),
             getsiege: getsiege,
             missionlevel: missionlevel,
             play_debug: play_debug,
-            raidlevel: raidlevel,
             showAnimations: showAnimations,
             sims_left: sims_left,
             surge: surge,

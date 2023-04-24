@@ -139,17 +139,17 @@ $(function () {
     $("#raid, #raid_level").change(function () {
         var newDeck;
         var selectedRaid = $("#raid").val();
-        var raidlevel = $('#raid_level');
+        var raidLevel = $('#raid_level');
         if (selectedRaid) {
-            newDeck = load_deck_raid(selectedRaid, raidlevel.val());
+            newDeck = load_deck_raid(selectedRaid, raidLevel.val());
             if (RAIDS[selectedRaid].type === "Dungeon") {
-                raidlevel.attr("max", 500);
+                raidLevel.attr("max", 500);
             } else {
-                raidlevel.attr("max", 40);
+                raidLevel.attr("max", 40);
             }
         } else {
             newDeck = hash_decode('');
-            raidlevel.attr("max", 40);
+            raidLevel.attr("max", 40);
         }
 
         deckChanged("defend_deck", newDeck, 'cpu');

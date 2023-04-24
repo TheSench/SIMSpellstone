@@ -563,13 +563,13 @@ function load_deck_builder(player) {
 		var missionID;
 		var missionlevel;
 		var raidID;
-		var raidlevel;
+		var raidLevel;
 	} else {
 		var getdeck = $('#deck2').val();
 		var missionID = $('#mission').val();
 		var missionlevel = $('#mission_level').val();
 		var raidID = $('#raid').val();
-		var raidlevel = $('#raid_level').val();
+		var raidLevel = $('#raid_level').val();
 	}
 
 	// Load player deck
@@ -582,7 +582,7 @@ function load_deck_builder(player) {
 	} else if (missionID) {
 		deck = load_deck_mission(missionID, missionlevel);
 	} else if (raidID) {
-		deck = load_deck_raid(raidID, raidlevel);
+		deck = load_deck_raid(raidID, raidLevel);
 	}
 	var hash;
 	if (deck) {
@@ -691,7 +691,6 @@ var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
 var missionlevel = 0;
-var raidlevel = 0;
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
