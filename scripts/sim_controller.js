@@ -3,8 +3,6 @@
 var SIM_CONTROLLER = (function () {
 
     function setConfiguration() {
-        sims_left = $('#sims').val() || 1;
-
         debug = $('#debug').is(':checked');
         var logPlaysOnly = debug && $('#play_debug').is(':checked');
         if (logPlaysOnly) debug = false;
@@ -19,7 +17,9 @@ var SIM_CONTROLLER = (function () {
         tournament = $("#tournament").is(":checked");
 
         var missionID = $('#mission').val();
+        var simsToRun = ($('#sims').val() || 1);
 
+        SIMULATOR.simsLeft = simsToRun;
         SIMULATOR.config = {
             enemybges: BATTLEGROUNDS ? getSelectedBattlegrounds("enemy-") : '',
             getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
@@ -28,7 +28,7 @@ var SIM_CONTROLLER = (function () {
 
             playerDeck: $('#deck1').val(),
             playerOrdered: $('#ordered').is(':checked'),
-            playerExactOrdered:  $('#ordered2').is(':checked'),
+            playerExactOrdered: $('#ordered2').is(':checked'),
 
             cpuDeck: $('#deck2').val(),
             cpuOrdered: $('#ordered2').is(':checked'),
@@ -37,22 +37,22 @@ var SIM_CONTROLLER = (function () {
             surge: $('#surge').is(':checked'),
 
             siegeMode: $('#siege').is(':checked'),
-            towerType:  $('#tower_type').val(),
+            towerType: $('#tower_type').val(),
             towerLevel: $('#tower_level').val(),
 
             missionID: missionID,
             missionLevel: $('#mission_level').val(),
             raidID: $('#raid').val(),
             raidLevel: $('#raid_level').val(),
-            
+
             showAnimations: showAnimations,
-            sims_left: sims_left,
+            simsToRun: simsToRun,
             tournament: tournament,
             user_controlled: user_controlled,
 
             debug: debug,
             logPlaysOnly: logPlaysOnly,
-            massDebug:  $('#mass_debug').is(':checked'),
+            massDebug: $('#mass_debug').is(':checked'),
             findFirstWin: $('#win_debug').is(':checked'),
             findFirstLoss: $('#loss_debug').is(':checked'),
         };
@@ -64,7 +64,7 @@ var SIM_CONTROLLER = (function () {
 
         var result = SIM_CONTROLLER.processSimResult();
 
-        sims_left = 0;
+        SIMULATOR.simsLeft = 0;
         matchTimer.stop();
 
 

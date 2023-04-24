@@ -341,7 +341,7 @@ function outputTurns(turnData, showAll) {
 function showWinrate() {
 
 	if (suppressOutput) {
-	} else if (debug || sims_left == 0) {
+	} else if (debug || SIMULATOR.simsLeft == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -379,7 +379,7 @@ function showWinrate() {
 	mErr = mErr.toFixed(2) + "%";
 	$("#marginPercent").html(mErr);
 
-	var totalSims = games + sims_left;
+	var totalSims = games + SIMULATOR.simsLeft;
 	var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 	$(".battleCount").html(games);
 	$("#percentComplete").html(percentComplete);
@@ -392,7 +392,7 @@ function showWinrate() {
 	$("#winrateTable").show();
 	// Final output
 	var full_table = "";
-	if (sims_left == 0) {
+	if (SIMULATOR.simsLeft == 0) {
 		// Add generated links to final output
 		full_table += links;
 
@@ -423,7 +423,7 @@ function hideTable() {
 function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 	$("#simStatusMsg").html(simStatusMsg);
 	if (elapse && simsPerSec) {
-		var totalSims = games + sims_left;
+		var totalSims = games + SIMULATOR.simsLeft;
 		var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 		var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
 		$("#progress").html(progress);
@@ -690,7 +690,6 @@ var games = 0;
 var points = 0;
 var num_sims = 0;
 var last_games = [];
-var sims_left = 0;
 var current_timeout;
 var battleground = [];
 var total_turns = 0;

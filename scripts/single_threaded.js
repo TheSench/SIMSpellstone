@@ -66,13 +66,13 @@
         } else if ((debug || simConfig.logPlaysOnly) && !simConfig.massDebug && !simConfig.findFirstLoss && !simConfig.findFirstWin) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
-        } else if (sims_left > 0) {
+        } else if (SIMULATOR.simsLeft > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + sims_left) * 100;
+                    var temp = games / (games + SIMULATOR.simsLeft) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -90,8 +90,8 @@
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > sims_left) // Also limit by how many sims are left
-                    run_sims_batch = sims_left;
+                if (run_sims_batch > SIMULATOR.simsLeft) // Also limit by how many sims are left
+                    run_sims_batch = SIMULATOR.simsLeft;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
                 if ((debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
@@ -149,7 +149,7 @@
         }
 
         if (run_sims_batch > 0) {
-            if (sims_left > 0) sims_left--;
+            if (SIMULATOR.simsLeft > 0) SIMULATOR.simsLeft--;
             run_sims_count++;
         }
 
@@ -172,28 +172,28 @@
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>DRAW</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else if (result) {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
                 } else {
                     echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>LOSS</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 }
             } else if (simConfig.findFirstWin) {
                 if (result && result != 'draw') {
                     echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>WIN</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
@@ -208,7 +208,7 @@
                 }
             }
 
-            if (simConfig.massDebug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+            if (simConfig.massDebug && SIMULATOR.simsLeft) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
         }
 
         return result;
