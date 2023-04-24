@@ -2114,8 +2114,8 @@ var SIMULATOR = {};
 		var simConfig = SIMULATOR.config;
 		// Cache decks where possible
 		// Load player deck
-		if (getdeck) {
-			cache_player_deck = hash_decode(getdeck);
+		if (simConfig.playerDeck) {
+			cache_player_deck = hash_decode(simConfig.playerDeck);
 		} else {
 			cache_player_deck = createEmptyDeck();
 		}
@@ -2123,8 +2123,8 @@ var SIMULATOR = {};
 
 		// Load enemy deck
 		pvpAI = true;
-		if (getdeck2) {
-			cache_cpu_deck = hash_decode(getdeck2);
+		if (simConfig.cpuDeck) {
+			cache_cpu_deck = hash_decode(simConfig.cpuDeck);
 			if (simConfig.missionID) pvpAI = false;
 		} else if (simConfig.missionID) {
 			cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
@@ -3362,8 +3362,9 @@ var SIMULATOR = {};
 		healthStats.player.percent = healthStats.player.taken / healthStats.player.total;
 		healthStats.cpu.percent = healthStats.cpu.taken / healthStats.cpu.total;
 
+		var simConfig = SIMULATOR.config;
 		var commander_o = field.cpu.commander;
-		if (getdeck2) {
+		if (simConfig.cpuDeck) {
 			if (commander_o.isAlive() && !forceWin) {
 				// 0-25 points, based on percentage of damage dealt to enemy
 				var points = Math.floor(healthStats.cpu.percent * 25);

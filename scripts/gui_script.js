@@ -27,11 +27,11 @@ window.addEventListener('error', function (message, url, linenumber) {
 	err_msg += "SimSpellstone version: " + text_version + "\n";
 
 	var simConfig = SIMULATOR.config;
-	if (getdeck) err_msg += "Deck hash: " + getdeck + "\n";
+	if (simConfig.playerDeck) err_msg += "Deck hash: " + simConfig.playerDeck + "\n";
 	if (getordered) err_msg += "Ordered: Yes\n";
 	if (getexactorder) err_msg += "Exact-order: Yes\n";
 	if (surge) err_msg += "Surge: Yes\n";
-	if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
+	if (simConfig.cpuDeck) err_msg += "Enemy deck hash: " + simConfig.cpuDeck + "\n";
 	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
 	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
 	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
@@ -559,13 +559,13 @@ function addBoolParam(params, paramName) {
 var deckBuilders = {};
 function load_deck_builder(player) {
 	if (player == 'player') {
-		var getdeck = $('#deck1').val();
+		var playerDeck = $('#deck1').val();
 		var missionID;
 		var missionLevel;
 		var raidID;
 		var raidLevel;
 	} else {
-		var getdeck = $('#deck2').val();
+		var playerDeck = $('#deck2').val();
 		var missionID = $('#mission').val();
 		var missionLevel = $('#mission_level').val();
 		var raidID = $('#raid').val();
@@ -577,8 +577,8 @@ function load_deck_builder(player) {
 		commander: elariaCaptain,
 		deck: []
 	};
-	if (getdeck) {
-		deck = hash_decode(getdeck);
+	if (playerDeck) {
+		deck = hash_decode(playerDeck);
 	} else if (missionID) {
 		deck = load_deck_mission(missionID, missionLevel);
 	} else if (raidID) {
@@ -684,8 +684,6 @@ var win_debug = false;
 var found_desired = false;
 var play_debug = false;
 var showAnimations = false;
-var getdeck = '';
-var getdeck2 = '';
 var getordered = false;
 var getordered2 = false;
 var getexactorder = false;

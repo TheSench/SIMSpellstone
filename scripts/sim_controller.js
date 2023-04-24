@@ -3,11 +3,9 @@
 var SIM_CONTROLLER = (function () {
 
     function setConfiguration() {
-        getdeck = $('#deck1').val();
         getordered = $('#ordered').is(':checked');
         getexactorder = $('#exactorder').is(':checked');
 
-        getdeck2 = $('#deck2').val();
         getordered2 = $('#ordered2').is(':checked');
         getexactorder2 = $('#exactorder2').is(':checked');
         surge = $('#surge').is(':checked');
@@ -41,8 +39,8 @@ var SIM_CONTROLLER = (function () {
             getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
             selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
             mapbges: BATTLEGROUNDS ? (missionID ? getSelectedMapBattlegrounds() : "") : '',
-            getdeck: getdeck,
-            getdeck2: getdeck2,
+            playerDeck: $('#deck1').val(),
+            cpuDeck: $('#deck2').val(),
             getexactorder: getexactorder,
             getexactorder2: getexactorder2,
             missionID: missionID,
@@ -80,7 +78,7 @@ var SIM_CONTROLLER = (function () {
 
         var msg;
         var points = "";
-        if (getdeck2) {
+        if (SIMULATOR.config.cpuDeck) {
             points = " (" + SIMULATOR.calculatePoints() + " points)";
         }
         if (result == 'draw') {
