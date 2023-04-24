@@ -5,6 +5,7 @@ var SIMULATOR = {};
 	// Play card
 	function play_card(card, p, turn, quiet) {
 		var field_p_assaults = field[p].assaults;
+		var simConfig = SIMULATOR.config;
 
 		// Not a valid card
 		if (!card.id) return 0;
@@ -29,12 +30,12 @@ var SIMULATOR = {};
 				var o = (p === 'player' ? 'cpu' : 'player');
 
 				if (battleground.defender) {
-					if (!surge && p != 'cpu') continue;
-					if (surge && p != 'player') continue;
+					if (!simConfig.surge && p != 'cpu') continue;
+					if (simConfig.surge && p != 'player') continue;
 					battleground.owner = o;
 				} else if (battleground.attacker) {
-					if (!surge && p != 'player') continue;
-					if (surge && p != 'cpu') continue;
+					if (!simConfig.surge && p != 'player') continue;
+					if (simConfig.surge && p != 'cpu') continue;
 					battleground.owner = p;
 				} else {
 					if (battleground.enemy_only && p != 'cpu') continue;
@@ -2190,7 +2191,8 @@ var SIMULATOR = {};
 	function performTurnsInner(turn, drawCards) {
 		// Set up players
 		var first_player, second_player;
-		if (surge) {
+		var simConfig = SIMULATOR.config;
+		if (simConfig.surge) {
 			first_player = 'cpu';
 			second_player = 'player';
 		} else {
@@ -2214,7 +2216,7 @@ var SIMULATOR = {};
 				simulating = false;
 				return true;
 			}
-		} else if (!surge && SIMULATOR.sendBattleUpdate) {
+		} else if (!simConfig.surge && SIMULATOR.sendBattleUpdate) {
 			SIMULATOR.sendBattleUpdate(turn);
 		}
 

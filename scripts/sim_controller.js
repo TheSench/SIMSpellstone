@@ -3,8 +3,6 @@
 var SIM_CONTROLLER = (function () {
 
     function setConfiguration() {
-        surge = $('#surge').is(':checked');
-
         sims_left = $('#sims').val() || 1;
 
         debug = $('#debug').is(':checked');
@@ -39,22 +37,24 @@ var SIM_CONTROLLER = (function () {
             cpuOrdered: $('#ordered2').is(':checked'),
             cpuExactOrdered: $('#exactorder2').is(':checked'),
 
+            surge: $('#surge').is(':checked'),
+
             siegeMode: $('#siege').is(':checked'),
             towerType:  $('#tower_type').val(),
             towerLevel: $('#tower_level').val(),
 
             missionID: missionID,
+            missionLevel: $('#mission_level').val(),
             raidID: $('#raid').val(),
             raidLevel: $('#raid_level').val(),
-            missionLevel: $('#mission_level').val(),
-            play_debug: play_debug,
+            
             showAnimations: showAnimations,
             sims_left: sims_left,
-            surge: surge,
             tournament: tournament,
             user_controlled: user_controlled,
 
             debug: debug,
+            play_debug: play_debug,
             loss_debug: loss_debug,
             mass_debug: mass_debug,
             win_debug: win_debug,

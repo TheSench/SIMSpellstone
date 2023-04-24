@@ -30,7 +30,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	if (simConfig.playerDeck) err_msg += "Deck hash: " + simConfig.playerDeck + "\n";
 	if (simConfig.playerOrdered) err_msg += "Ordered: Yes\n";
 	if (simConfig.playerExactOrdered) err_msg += "Exact-order: Yes\n";
-	if (surge) err_msg += "Surge: Yes\n";
+	if (simConfig.surge) err_msg += "Surge: Yes\n";
 	if (simConfig.cpuDeck) err_msg += "Enemy deck hash: " + simConfig.cpuDeck + "\n";
 	if (simConfig.cpuOrdered) err_msg += "Enemy Ordered: Yes\n";
 	if (simConfig.cpuExactOrdered) err_msg += "Enemy Exact-order: Yes\n";
@@ -696,7 +696,6 @@ var num_sims = 0;
 var last_games = [];
 var sims_left = 0;
 var current_timeout;
-var surge = false;
 var battleground = [];
 var total_turns = 0;
 var cache_player_deck;
