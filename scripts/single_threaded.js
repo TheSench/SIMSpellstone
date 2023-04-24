@@ -57,12 +57,13 @@
     };
 
     function run_sims() {
+        var simConfig = SIMULATOR.simConfig;
 
         if (SIMULATOR.user_controlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((debug || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debug || simConfig.logPlaysOnly) && !simConfig.massDebug && !simConfig.findFirstLoss && !simConfig.findFirstWin) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
         } else if (sims_left > 0) {
@@ -93,7 +94,7 @@
                     run_sims_batch = sims_left;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                if ((debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(run_sims, 1);
@@ -134,6 +135,7 @@
     }
 
     SIM_CONTROLLER.processSimResult = function () {
+        var simConfig = SIMULATOR.simConfig;
 
         var result;
         if (!SIMULATOR.field.player.commander.isAlive()) {
@@ -165,8 +167,8 @@
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
 
-        if (debug || play_debug) {
-            if (loss_debug) {
+        if (debug || simConfig.logPlaysOnly) {
+            if (simConfig.findFirstLoss) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>DRAW</h1><br>';
@@ -183,7 +185,7 @@
                     echo += '<br><h1>LOSS</h1><br>';
                     sims_left = 0;
                 }
-            } else if (win_debug) {
+            } else if (simConfig.findFirstWin) {
                 if (result && result != 'draw') {
                     echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>WIN</h1><br>';
@@ -196,7 +198,7 @@
                         echo = '';
                     }
                 }
-            } else if (mass_debug) {
+            } else if (simConfig.massDebug) {
                 if (result == 'draw') {
                     echo += '<br><h1>DRAW</h1><br>';
                 } else if (result) {
@@ -206,7 +208,7 @@
                 }
             }
 
-            if (mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+            if (simConfig.massDebug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
         }
 
         return result;

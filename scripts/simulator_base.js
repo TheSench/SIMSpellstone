@@ -18,7 +18,7 @@ var SIMULATOR = {};
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((debug || play_debug) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+		if ((debug || simConfig.logPlaysOnly) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
 
 		if (card.isTrap()) {
 			doEarlyActivationSkills(card);

@@ -678,11 +678,7 @@ function display_history() {
 var battle_history = '';
 var max_turns = 100;
 var debug = false;
-var mass_debug = false;
-var loss_debug = false;
-var win_debug = false;
 var found_desired = false;
-var play_debug = false;
 var showAnimations = false;
 var pvpAI = true;
 var echo = '';

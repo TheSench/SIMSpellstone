@@ -6,11 +6,8 @@ var SIM_CONTROLLER = (function () {
         sims_left = $('#sims').val() || 1;
 
         debug = $('#debug').is(':checked');
-        play_debug = debug && $('#play_debug').is(':checked');
-        if (play_debug) debug = false;
-        mass_debug = $('#mass_debug').is(':checked');
-        win_debug = $('#win_debug').is(':checked');
-        loss_debug = $('#loss_debug').is(':checked');
+        var logPlaysOnly = debug && $('#play_debug').is(':checked');
+        if (logPlaysOnly) debug = false;
         showAnimations = $('#animations').is(':checked');
 
         if ($('#auto_mode').length) {
@@ -54,10 +51,10 @@ var SIM_CONTROLLER = (function () {
             user_controlled: user_controlled,
 
             debug: debug,
-            play_debug: play_debug,
-            loss_debug: loss_debug,
-            mass_debug: mass_debug,
-            win_debug: win_debug,
+            logPlaysOnly: logPlaysOnly,
+            massDebug:  $('#mass_debug').is(':checked'),
+            findFirstWin: $('#win_debug').is(':checked'),
+            findFirstLoss: $('#loss_debug').is(':checked'),
         };
     }
 
