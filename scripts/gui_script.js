@@ -35,7 +35,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
 	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
 	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
-	if (simConfig.getraid) err_msg += "Raid ID: " + simConfig.getraid + "\n";
+	if (simConfig.raidID) err_msg += "Raid ID: " + simConfig.raidID + "\n";
 	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";
 	if (games) err_msg += "Sims run so far: " + games + "\n";
 	try {
@@ -562,13 +562,13 @@ function load_deck_builder(player) {
 		var getdeck = $('#deck1').val();
 		var missionID;
 		var missionlevel;
-		var getraid;
+		var raidID;
 		var raidlevel;
 	} else {
 		var getdeck = $('#deck2').val();
 		var missionID = $('#mission').val();
 		var missionlevel = $('#mission_level').val();
-		var getraid = $('#raid').val();
+		var raidID = $('#raid').val();
 		var raidlevel = $('#raid_level').val();
 	}
 
@@ -581,8 +581,8 @@ function load_deck_builder(player) {
 		deck = hash_decode(getdeck);
 	} else if (missionID) {
 		deck = load_deck_mission(missionID, missionlevel);
-	} else if (getraid) {
-		deck = load_deck_raid(getraid, raidlevel);
+	} else if (raidID) {
+		deck = load_deck_raid(raidID, raidlevel);
 	}
 	var hash;
 	if (deck) {
@@ -691,7 +691,6 @@ var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
 var missionlevel = 0;
-var getraid = false;
 var raidlevel = 0;
 var getsiege = 0;
 var tower_level = 0;
