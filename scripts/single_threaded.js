@@ -25,7 +25,7 @@
         points = 0;
 
         outp(""); // Clear display
-        if (!SIMULATOR.user_controlled) {
+        if (!SIMULATOR.userControlled) {
             hideTable();
             setSimStatus("Initializing simulations...");
         } else {
@@ -47,7 +47,7 @@
 
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
-        if (!SIMULATOR.user_controlled) {
+        if (!SIMULATOR.userControlled) {
             setSimStatus("Simulations interrupted.", elapse, simpersec);
             showWinrate();
         }
@@ -57,9 +57,9 @@
     };
 
     function run_sims() {
-        var simConfig = SIMULATOR.simConfig;
+        var simConfig = SIMULATOR.config;
 
-        if (SIMULATOR.user_controlled) {
+        if (SIMULATOR.userControlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
@@ -94,7 +94,7 @@
                     run_sims_batch = SIMULATOR.simsLeft;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
+                // if ((debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(run_sims, 1);
@@ -135,7 +135,7 @@
     }
 
     SIM_CONTROLLER.processSimResult = function () {
-        var simConfig = SIMULATOR.simConfig;
+        var simConfig = SIMULATOR.config;
 
         var result;
         if (!SIMULATOR.field.player.commander.isAlive()) {

@@ -927,31 +927,29 @@ var MakeTrap = (function() {
 
 var getBattlegrounds = function() {
 
-    var { getbattleground, selfbges, enemybges, mapbges, campaignID, missionlevel, raidID, raidlevel } = SIMULATOR.simConfiguration;
-
     // Set up battleground effects, if any
     var battlegrounds = {
         onCreate: [],
         onTurn: [],
         onCardPlayed: []
     };
+    var simConfig = SIMULATOR.config;
+    addBgesFromList(battlegrounds, simConfig.getbattleground);
+    addBgesFromList(battlegrounds, simConfig.selfbges, 'player');
+    addBgesFromList(battlegrounds, simConfig.enemybges, 'cpu');
+    addMapBGEs(battlegrounds, simConfig.mapbges, 'player');
 
-    addBgesFromList(battlegrounds, getbattleground);
-    addBgesFromList(battlegrounds, selfbges, 'player');
-    addBgesFromList(battlegrounds, enemybges, 'cpu');
-    addMapBGEs(battlegrounds, mapbges, 'player');
-
-    if (campaignID) {
-        addMissionBGE(battlegrounds, campaignID, missionlevel);
-    } else if (raidID) {
-        addRaidBGE(battlegrounds, raidID, raidlevel);
+    if (simConfig.campaignID) {
+        addMissionBGE(battlegrounds, simConfig.campaignID, simConfig.missionLevel);
+    } else if (simConfig.raidID) {
+        addRaidBGE(battlegrounds, simConfig.raidID, simConfig.raidLevel);
     }
     return battlegrounds;
 };
 
-function addBgesFromList(battlegrounds, getbattleground, player) {
-    if (!getbattleground) return null;
-    var selected = getbattleground.split(",");
+function addBgesFromList(battlegrounds, battlegroundsToAdd, player) {
+    if (!battlegroundsToAdd) return null;
+    var selected = battlegroundsToAdd.split(",");
     for (var i = 0; i < selected.length; i++) {
         var id = selected[i];
         var battleground = BATTLEGROUNDS[id];
@@ -2035,80 +2033,59 @@ var factions = {
 
 var SIM_CONTROLLER = (function () {
 
-    function getConfiguration() {
-        getdeck = $('#deck1').val();
-        getordered = $('#ordered').is(':checked');
-        getexactorder = $('#exactorder').is(':checked');
-
-        getdeck2 = $('#deck2').val();
-        getcampaign = $('#campaign').val();
-        getmission = $('#mission').val();
-        missionlevel = $('#mission_level').val();
-        getraid = $('#raid').val();
-        raidlevel = $('#raid_level').val();
-        getordered2 = $('#ordered2').is(':checked');
-        getexactorder2 = $('#exactorder2').is(':checked');
-        surge = $('#surge').is(':checked');
-
-        getsiege = $('#siege').is(':checked');
-        tower_level = $('#tower_level').val();
-        tower_type = $('#tower_type').val();
-
-        if (BATTLEGROUNDS) {
-            getbattleground = getSelectedBattlegrounds();
-            selfbges = getSelectedBattlegrounds("self-");
-            enemybges = getSelectedBattlegrounds("enemy-");
-            mapbges = (getmission ? getSelectedMapBattlegrounds() : "");
-        }
-
-        sims_left = $('#sims').val() || 1;
-
+    function setConfiguration() {
         debug = $('#debug').is(':checked');
-        play_debug = debug && $('#play_debug').is(':checked');
-        if (play_debug) debug = false;
-        mass_debug = $('#mass_debug').is(':checked');
-        win_debug = $('#win_debug').is(':checked');
-        loss_debug = $('#loss_debug').is(':checked');
+        var logPlaysOnly = debug && $('#play_debug').is(':checked');
+        if (logPlaysOnly) debug = false;
         showAnimations = $('#animations').is(':checked');
 
         if ($('#auto_mode').length) {
             var auto_mode = $('#auto_mode').is(':checked');
-            SIMULATOR.user_controlled = !auto_mode;
+            SIMULATOR.userControlled = !auto_mode;
         }
 
         // Not currently in UI - attacker's first card has +1 delay
         tournament = $("#tournament").is(":checked");
 
-        return {
-            enemybges,
-            getbattleground,
-            getcampaign,
-            getdeck,
-            getdeck2,
-            getexactorder,
-            getexactorder2,
-            getmission,
-            getordered,
-            getordered2,
-            getraid,
-            getsiege,
-            mapbges,
-            missionlevel,
-            play_debug,
-            raidlevel,
-            selfbges,
-            showAnimations,
-            sims_left,
-            surge,
-            tournament,
-            tower_level,
-            tower_type,
-            user_controlled,
+        var missionID = $('#mission').val();
+        var simsToRun = ($('#sims').val() || 1);
 
-            debug,
-            loss_debug,
-            mass_debug,
-            win_debug,
+        SIMULATOR.simsLeft = simsToRun;
+        SIMULATOR.config = {
+            enemybges: BATTLEGROUNDS ? getSelectedBattlegrounds("enemy-") : '',
+            getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
+            selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
+            mapbges: BATTLEGROUNDS ? (missionID ? getSelectedMapBattlegrounds() : "") : '',
+
+            playerDeck: $('#deck1').val(),
+            playerOrdered: $('#ordered').is(':checked'),
+            playerExactOrdered: $('#ordered2').is(':checked'),
+
+            cpuDeck: $('#deck2').val(),
+            cpuOrdered: $('#ordered2').is(':checked'),
+            cpuExactOrdered: $('#exactorder2').is(':checked'),
+
+            surge: $('#surge').is(':checked'),
+
+            siegeMode: $('#siege').is(':checked'),
+            towerType: $('#tower_type').val(),
+            towerLevel: $('#tower_level').val(),
+
+            campaignID: $('#campaign').val(),
+            missionID: missionID,
+            missionLevel: $('#mission_level').val(),
+            raidID: $('#raid').val(),
+            raidLevel: $('#raid_level').val(),
+
+            showAnimations: showAnimations,
+            simsToRun: simsToRun,
+            tournament: tournament,
+
+            debug: debug,
+            logPlaysOnly: logPlaysOnly,
+            massDebug: $('#mass_debug').is(':checked'),
+            findFirstWin: $('#win_debug').is(':checked'),
+            findFirstLoss: $('#loss_debug').is(':checked'),
         };
     }
 
@@ -2118,13 +2095,13 @@ var SIM_CONTROLLER = (function () {
 
         var result = SIM_CONTROLLER.processSimResult();
 
-        sims_left = 0;
+        SIMULATOR.simsLeft = 0;
         matchTimer.stop();
 
 
         var msg;
         var points = "";
-        if (getdeck2) {
+        if (SIMULATOR.config.cpuDeck) {
             points = " (" + SIMULATOR.calculatePoints() + " points)";
         }
         if (result == 'draw') {
@@ -2148,7 +2125,7 @@ var SIM_CONTROLLER = (function () {
     }
 
     return {
-        getConfiguration: getConfiguration,
+        setConfiguration: setConfiguration,
         debug_end: debug_end,
 
         end_sims_callback: null,
@@ -2166,10 +2143,10 @@ var SIM_CONTROLLER = (function () {
         games = 0;
         run_sims_batch = 0;
 
-        SIMULATOR.simConfiguration = SIM_CONTROLLER.getConfiguration();
+        SIM_CONTROLLER.setConfiguration();
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = getBattlegrounds();
 
         hideUI();
 
@@ -2181,7 +2158,7 @@ var SIM_CONTROLLER = (function () {
         points = 0;
 
         outp(""); // Clear display
-        if (!SIMULATOR.user_controlled) {
+        if (!SIMULATOR.userControlled) {
             hideTable();
             setSimStatus("Initializing simulations...");
         } else {
@@ -2203,7 +2180,7 @@ var SIM_CONTROLLER = (function () {
 
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
-        if (!SIMULATOR.user_controlled) {
+        if (!SIMULATOR.userControlled) {
             setSimStatus("Simulations interrupted.", elapse, simpersec);
             showWinrate();
         }
@@ -2213,21 +2190,22 @@ var SIM_CONTROLLER = (function () {
     };
 
     function run_sims() {
+        var simConfig = SIMULATOR.config;
 
-        if (SIMULATOR.user_controlled) {
+        if (SIMULATOR.userControlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((debug || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debug || simConfig.logPlaysOnly) && !simConfig.massDebug && !simConfig.findFirstLoss && !simConfig.findFirstWin) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
-        } else if (sims_left > 0) {
+        } else if (SIMULATOR.simsLeft > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + sims_left) * 100;
+                    var temp = games / (games + SIMULATOR.simsLeft) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -2245,11 +2223,11 @@ var SIM_CONTROLLER = (function () {
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > sims_left) // Also limit by how many sims are left
-                    run_sims_batch = sims_left;
+                if (run_sims_batch > SIMULATOR.simsLeft) // Also limit by how many sims are left
+                    run_sims_batch = SIMULATOR.simsLeft;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                // if ((debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 current_timeout = setTimeout(run_sims, 1);
@@ -2290,6 +2268,7 @@ var SIM_CONTROLLER = (function () {
     }
 
     SIM_CONTROLLER.processSimResult = function () {
+        var simConfig = SIMULATOR.config;
 
         var result;
         if (!SIMULATOR.field.player.commander.isAlive()) {
@@ -2303,7 +2282,7 @@ var SIM_CONTROLLER = (function () {
         }
 
         if (run_sims_batch > 0) {
-            if (sims_left > 0) sims_left--;
+            if (SIMULATOR.simsLeft > 0) SIMULATOR.simsLeft--;
             run_sims_count++;
         }
 
@@ -2321,38 +2300,38 @@ var SIM_CONTROLLER = (function () {
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
 
-        if (debug || play_debug) {
-            if (loss_debug) {
+        if (debug || simConfig.logPlaysOnly) {
+            if (simConfig.findFirstLoss) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>DRAW</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else if (result) {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
                 } else {
                     echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>LOSS</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 }
-            } else if (win_debug) {
+            } else if (simConfig.findFirstWin) {
                 if (result && result != 'draw') {
                     echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>WIN</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
                 }
-            } else if (mass_debug) {
+            } else if (simConfig.massDebug) {
                 if (result == 'draw') {
                     echo += '<br><h1>DRAW</h1><br>';
                 } else if (result) {
@@ -2362,7 +2341,7 @@ var SIM_CONTROLLER = (function () {
                 }
             }
 
-            if (mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+            if (simConfig.massDebug && SIMULATOR.simsLeft) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
         }
 
         return result;
@@ -2378,6 +2357,7 @@ var SIM_CONTROLLER = (function () {
 	// Play card
 	function play_card(card, p, turn, quiet) {
 		var field_p_assaults = field[p].assaults;
+		var simConfig = SIMULATOR.config;
 
 		// Not a valid card
 		if (!card.id) return 0;
@@ -2390,7 +2370,7 @@ var SIM_CONTROLLER = (function () {
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((debug || play_debug) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+		if ((debug || simConfig.logPlaysOnly) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
 
 		if (card.isTrap()) {
 			doEarlyActivationSkills(card);
@@ -2402,12 +2382,12 @@ var SIM_CONTROLLER = (function () {
 				var o = (p === 'player' ? 'cpu' : 'player');
 
 				if (battleground.defender) {
-					if (!surge && p != 'cpu') continue;
-					if (surge && p != 'player') continue;
+					if (!simConfig.surge && p != 'cpu') continue;
+					if (simConfig.surge && p != 'player') continue;
 					battleground.owner = o;
 				} else if (battleground.attacker) {
-					if (!surge && p != 'player') continue;
-					if (surge && p != 'cpu') continue;
+					if (!simConfig.surge && p != 'player') continue;
+					if (simConfig.surge && p != 'cpu') continue;
 					battleground.owner = p;
 				} else {
 					if (battleground.enemy_only && p != 'cpu') continue;
@@ -4408,6 +4388,7 @@ var SIM_CONTROLLER = (function () {
 			}
 		};
 		SIMULATOR.field = field;
+		var simConfig = SIMULATOR.config;
 
 		// Load player deck
 		if (cache_player_deck_cards) {
@@ -4415,11 +4396,11 @@ var SIM_CONTROLLER = (function () {
 		}
 
 		// Load enemy deck
-		if (getmission && missionlevel > 1 && missionlevel < 7) {
-			cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+		if (simConfig.missionID && simConfig.missionLevel > 1 && simConfig.missionLevel < 7) {
+			cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
 			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
-		} else if (getraid) {
-			cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+		} else if (simConfig.raidID) {
+			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
 			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		}
 		if (cache_cpu_deck_cards) {
@@ -4427,17 +4408,17 @@ var SIM_CONTROLLER = (function () {
 		}
 
 		// Set up deck order priority reference
-		if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
-		if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+		if (simConfig.playerOrdered && !simConfig.playerExactOrdered) deck.player.ordered = copy_card_list(deck.player.deck);
+		if (simConfig.cpuOrdered && !simConfig.cpuExactOrdered) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
-		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
-			: getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+		deck.player.chooseCard = (SIMULATOR.userControlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
+			: simConfig.playerOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     // Player AI falls back on picking a random card
 
 		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
-								: */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+								: */simConfig.cpuOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
-					: getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
+					: simConfig.cpuExactOrdered ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
 						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
 
@@ -4447,16 +4428,17 @@ var SIM_CONTROLLER = (function () {
 
 		initializeBattle();
 
+		var simConfig = SIMULATOR.config;
 		// Shuffle decks
-		if (getexactorder) {
-			if (!getordered) {
+		if (simConfig.playerExactOrdered) {
+			if (!simConfig.playerOrdered) {
 				deck.player.shuffleHand = true;
 			}
 		} else {
 			shuffle(deck.player.deck);
 		}
-		if (getexactorder2) {
-			if (!getordered2) {
+		if (simConfig.cpuExactOrdered) {
+			if (!simConfig.cpuOrdered) {
 				deck.cpu.shuffleHand = true;
 			}
 		} else {
@@ -4465,9 +4447,9 @@ var SIM_CONTROLLER = (function () {
 
 		setupField(field);
 
-		if (getsiege) {
-			var towerBGE = BATTLEGROUNDS[tower_type];
-			var tower = towerBGE.effect[tower_level];
+		if (simConfig.siegeMode) {
+			var towerBGE = BATTLEGROUNDS[simConfig.towerType];
+			var tower = towerBGE.effect[simConfig.towerLevel];
 			if (tower) {
 				tower = makeUnitInfo(tower.id, tower.level);
 				var towerCard = get_card_apply_battlegrounds(tower);
@@ -4483,10 +4465,11 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function setupDecks() {
+		var simConfig = SIMULATOR.config;
 		// Cache decks where possible
 		// Load player deck
-		if (getdeck) {
-			cache_player_deck = hash_decode(getdeck);
+		if (simConfig.playerDeck) {
+			cache_player_deck = hash_decode(simConfig.playerDeck);
 		} else {
 			cache_player_deck = createEmptyDeck();
 		}
@@ -4494,14 +4477,14 @@ var SIM_CONTROLLER = (function () {
 
 		// Load enemy deck
 		pvpAI = true;
-		if (getdeck2) {
-			cache_cpu_deck = hash_decode(getdeck2);
-			if (getmission) pvpAI = false;
-		} else if (getmission) {
-			cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+		if (simConfig.cpuDeck) {
+			cache_cpu_deck = hash_decode(simConfig.cpuDeck);
+			if (simConfig.missionID) pvpAI = false;
+		} else if (simConfig.missionID) {
+			cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
-		} else if (getraid) {
-			cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+		} else if (simConfig.raidID) {
+			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
 			cache_cpu_deck = createEmptyDeck();
@@ -4550,7 +4533,7 @@ var SIM_CONTROLLER = (function () {
 			return false;
 		}
 		var done = performTurnsInner(turn, drawCards);
-		if (done && user_controlled) {
+		if (done && SIMULATOR.userControlled) {
 			SIM_CONTROLLER.debug_end();
 		}
 		return done;
@@ -4560,7 +4543,8 @@ var SIM_CONTROLLER = (function () {
 	function performTurnsInner(turn, drawCards) {
 		// Set up players
 		var first_player, second_player;
-		if (surge) {
+		var simConfig = SIMULATOR.config;
+		if (simConfig.surge) {
 			first_player = 'cpu';
 			second_player = 'player';
 		} else {
@@ -4584,7 +4568,7 @@ var SIM_CONTROLLER = (function () {
 				simulating = false;
 				return true;
 			}
-		} else if (!surge && SIMULATOR.sendBattleUpdate) {
+		} else if (!simConfig.surge && SIMULATOR.sendBattleUpdate) {
 			SIMULATOR.sendBattleUpdate(turn);
 		}
 
@@ -4720,7 +4704,6 @@ var SIM_CONTROLLER = (function () {
 		var deck_p = deck[p];
 		var deck_p_deck = deck_p.deck;
 		var deck_p_ordered = deck_p['ordered'];
-		var isOrdered = (p == 'player' ? getordered : getordered2);
 
 		if (livePvP && p === 'cpu' && drawCards) {
 			waitForOpponent(p, deck_p_deck, deck_p_ordered, turn, drawCards);
@@ -5733,8 +5716,9 @@ var SIM_CONTROLLER = (function () {
 		healthStats.player.percent = healthStats.player.taken / healthStats.player.total;
 		healthStats.cpu.percent = healthStats.cpu.taken / healthStats.cpu.total;
 
+		var simConfig = SIMULATOR.config;
 		var commander_o = field.cpu.commander;
-		if (getdeck2) {
+		if (simConfig.cpuDeck) {
 			if (commander_o.isAlive() && !forceWin) {
 				// 0-25 points, based on percentage of damage dealt to enemy
 				var points = Math.floor(healthStats.cpu.percent * 25);
@@ -5758,7 +5742,7 @@ var SIM_CONTROLLER = (function () {
 	var battlegrounds;
 	var simulation_turns = 0;
 	var simulating = false;
-	var user_controlled = false;
+	var userControlled = false;
 	var livePvP = false;
 	var turn = 0;
 	var totalDeckHealth = 0;
@@ -5842,12 +5826,12 @@ var SIM_CONTROLLER = (function () {
 				totalCpuDeckHealth = value;
 			}
 		},
-		user_controlled: {
+		userControlled: {
 			get: function () {
-				return user_controlled;
+				return userControlled;
 			},
 			set: function (value) {
-				user_controlled = value;
+				userControlled = value;
 			}
 		},
 		livePvP: {
@@ -6369,8 +6353,8 @@ $(function () {
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!_DEFINED("seedtest")) {
-            SIM_CONTROLLER.getConfiguration();
-            var battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+            SIM_CONTROLLER.setConfiguration();
+            var battlegrounds = getBattlegrounds();
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -6445,17 +6429,17 @@ $(function () {
     $("#raid, #raid_level").change(function () {
         var newDeck;
         var selectedRaid = $("#raid").val();
-        var raidlevel = $('#raid_level');
+        var raidLevel = $('#raid_level');
         if (selectedRaid) {
-            newDeck = load_deck_raid(selectedRaid, raidlevel.val());
+            newDeck = load_deck_raid(selectedRaid, raidLevel.val());
             if (RAIDS[selectedRaid].type === "Dungeon") {
-                raidlevel.attr("max", 500);
+                raidLevel.attr("max", 500);
             } else {
-                raidlevel.attr("max", 40);
+                raidLevel.attr("max", 40);
             }
         } else {
             newDeck = hash_decode('');
-            raidlevel.attr("max", 40);
+            raidLevel.attr("max", 40);
         }
 
         deckChanged("defend_deck", newDeck, 'cpu');
@@ -6587,16 +6571,18 @@ window.addEventListener('error', function (message, url, linenumber) {
 	err_msg += "User-agent header: " + navigator.userAgent + "\n";
 	err_msg += "SimSpellstone version: " + text_version + "\n";
 
-	if (getdeck) err_msg += "Deck hash: " + getdeck + "\n";
-	if (getordered) err_msg += "Ordered: Yes\n";
-	if (getexactorder) err_msg += "Exact-order: Yes\n";
-	if (surge) err_msg += "Surge: Yes\n";
-	if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
-	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
-	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
-	if (getmission) err_msg += "Mission ID: " + getmission + "\n";
-	if (getraid) err_msg += "Raid ID: " + getraid + "\n";
-	if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
+	var simConfig = SIMULATOR.config;
+	if (simConfig.playerDeck) err_msg += "Deck hash: " + simConfig.playerDeck + "\n";
+	if (simConfig.playerOrdered) err_msg += "Ordered: Yes\n";
+	if (simConfig.playerExactOrdered) err_msg += "Exact-order: Yes\n";
+	if (simConfig.surge) err_msg += "Surge: Yes\n";
+	if (simConfig.cpuDeck) err_msg += "Enemy deck hash: " + simConfig.cpuDeck + "\n";
+	if (simConfig.cpuOrdered) err_msg += "Enemy Ordered: Yes\n";
+	if (simConfig.cpuExactOrdered) err_msg += "Enemy Exact-order: Yes\n";
+	if (simConfig.campaignID) err_msg += "Campaign ID: " + simConfig.campaignID + "\n";
+	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
+	if (simConfig.raidID) err_msg += "Raid ID: " + simConfig.raidID + "\n";
+	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";
 	if (games) err_msg += "Sims run so far: " + games + "\n";
 	try {
 		err_msg += "Link to reproduce: " + generate_link() + "\n";
@@ -6823,30 +6809,30 @@ function hideUI() {
 
 function getSelectedBattlegrounds(prefix) {
 	prefix = (prefix || "");
-	var getbattleground = [];
+	var selectedBattlegrounds = [];
 	var bgCheckBoxes = document.getElementsByName(prefix + "battleground");
 	for (var i = 0; i < bgCheckBoxes.length; i++) {
 		var checkbox = bgCheckBoxes[i];
 		if (checkbox && checkbox.checked) {
-			getbattleground.push(checkbox.value);
+			selectedBattlegrounds.push(checkbox.value);
 		}
 	}
-	getbattleground = getbattleground.join();
-	return getbattleground;
+	selectedBattlegrounds = selectedBattlegrounds.join();
+	return selectedBattlegrounds;
 }
 
 function getSelectedMapBattlegrounds() {
-	var getbattleground = [];
+	var selectedMapBattlegrounds = [];
 	var locationID = $("#location").val();
 	var selects = document.getElementsByName("map-battleground");
 	for (var i = 0; i < selects.length; i++) {
 		var select = selects[i];
 		if (select.value > 0) {
-			getbattleground.push(locationID + "-" + i + "-" + select.value);
+			selectedMapBattlegrounds.push(locationID + "-" + i + "-" + select.value);
 		}
 	}
-	getbattleground = getbattleground.join();
-	return getbattleground;
+	selectedMapBattlegrounds = selectedMapBattlegrounds.join();
+	return selectedMapBattlegrounds;
 }
 
 function setSelectedMapBattlegrounds(mapBgeString) {
@@ -6901,7 +6887,7 @@ function outputTurns(turnData, showAll) {
 function showWinrate() {
 
 	if (suppressOutput) {
-	} else if (debug || sims_left == 0) {
+	} else if (debug || SIMULATOR.simsLeft == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -6939,7 +6925,7 @@ function showWinrate() {
 	mErr = mErr.toFixed(2) + "%";
 	$("#marginPercent").html(mErr);
 
-	var totalSims = games + sims_left;
+	var totalSims = games + SIMULATOR.simsLeft;
 	var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 	$(".battleCount").html(games);
 	$("#percentComplete").html(percentComplete);
@@ -6952,7 +6938,7 @@ function showWinrate() {
 	$("#winrateTable").show();
 	// Final output
 	var full_table = "";
-	if (sims_left == 0) {
+	if (SIMULATOR.simsLeft == 0) {
 		// Add generated links to final output
 		full_table += links;
 
@@ -6983,7 +6969,7 @@ function hideTable() {
 function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 	$("#simStatusMsg").html(simStatusMsg);
 	if (elapse && simsPerSec) {
-		var totalSims = games + sims_left;
+		var totalSims = games + SIMULATOR.simsLeft;
 		var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 		var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
 		$("#progress").html(progress);
@@ -7119,17 +7105,17 @@ function addBoolParam(params, paramName) {
 var deckBuilders = {};
 function load_deck_builder(player) {
 	if (player == 'player') {
-		var getdeck = $('#deck1').val();
-		var getmission;
-		var missionlevel;
-		var getraid;
-		var raidlevel;
+		var playerDeck = $('#deck1').val();
+		var missionID;
+		var missionLevel;
+		var raidID;
+		var raidLevel;
 	} else {
-		var getdeck = $('#deck2').val();
-		var getmission = $('#mission').val();
-		var missionlevel = $('#mission_level').val();
-		var getraid = $('#raid').val();
-		var raidlevel = $('#raid_level').val();
+		var playerDeck = $('#deck2').val();
+		var missionID = $('#mission').val();
+		var missionLevel = $('#mission_level').val();
+		var raidID = $('#raid').val();
+		var raidLevel = $('#raid_level').val();
 	}
 
 	// Load player deck
@@ -7137,12 +7123,12 @@ function load_deck_builder(player) {
 		commander: elariaCaptain,
 		deck: []
 	};
-	if (getdeck) {
-		deck = hash_decode(getdeck);
-	} else if (getmission) {
-		deck = load_deck_mission(getmission, missionlevel);
-	} else if (getraid) {
-		deck = load_deck_raid(getraid, raidlevel);
+	if (playerDeck) {
+		deck = hash_decode(playerDeck);
+	} else if (missionID) {
+		deck = load_deck_mission(missionID, missionLevel);
+	} else if (raidID) {
+		deck = load_deck_raid(raidID, raidLevel);
 	}
 	var hash;
 	if (deck) {
@@ -7238,30 +7224,8 @@ function display_history() {
 var battle_history = '';
 var max_turns = 100;
 var debug = false;
-var mass_debug = false;
-var loss_debug = false;
-var win_debug = false;
 var found_desired = false;
-var play_debug = false;
 var showAnimations = false;
-var getdeck = '';
-var getdeck2 = '';
-var getordered = false;
-var getordered2 = false;
-var getexactorder = false;
-var getexactorder2 = false;
-var getcampaign = 0;
-var getmission = 0;
-var missionlevel = 0;
-var getraid = false;
-var raidlevel = 0;
-var getbattleground = '';
-var enemybges = '';
-var selfbges = '';
-var mapbges = '';
-var getsiege = 0;
-var tower_level = 0;
-var tower_type = 0;
 var pvpAI = true;
 var echo = '';
 var closeDiv = false;
@@ -7272,9 +7236,7 @@ var games = 0;
 var points = 0;
 var num_sims = 0;
 var last_games = [];
-var sims_left = 0;
 var current_timeout;
-var surge = false;
 var battleground = [];
 var total_turns = 0;
 var cache_player_deck;

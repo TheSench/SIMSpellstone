@@ -34,6 +34,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	if (simConfig.cpuDeck) err_msg += "Enemy deck hash: " + simConfig.cpuDeck + "\n";
 	if (simConfig.cpuOrdered) err_msg += "Enemy Ordered: Yes\n";
 	if (simConfig.cpuExactOrdered) err_msg += "Enemy Exact-order: Yes\n";
+	if (simConfig.campaignID) err_msg += "Campaign ID: " + simConfig.campaignID + "\n";
 	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
 	if (simConfig.raidID) err_msg += "Raid ID: " + simConfig.raidID + "\n";
 	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";

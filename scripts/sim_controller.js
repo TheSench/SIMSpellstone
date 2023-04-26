@@ -10,7 +10,7 @@ var SIM_CONTROLLER = (function () {
 
         if ($('#auto_mode').length) {
             var auto_mode = $('#auto_mode').is(':checked');
-            SIMULATOR.user_controlled = !auto_mode;
+            SIMULATOR.userControlled = !auto_mode;
         }
 
         // Not currently in UI - attacker's first card has +1 delay
@@ -40,6 +40,7 @@ var SIM_CONTROLLER = (function () {
             towerType: $('#tower_type').val(),
             towerLevel: $('#tower_level').val(),
 
+            campaignID: $('#campaign').val(),
             missionID: missionID,
             missionLevel: $('#mission_level').val(),
             raidID: $('#raid').val(),
@@ -48,7 +49,6 @@ var SIM_CONTROLLER = (function () {
             showAnimations: showAnimations,
             simsToRun: simsToRun,
             tournament: tournament,
-            user_controlled: user_controlled,
 
             debug: debug,
             logPlaysOnly: logPlaysOnly,

@@ -2059,7 +2059,7 @@ var SIMULATOR = {};
 		if (simConfig.playerOrdered && !simConfig.playerExactOrdered) deck.player.ordered = copy_card_list(deck.player.deck);
 		if (simConfig.cpuOrdered && !simConfig.cpuExactOrdered) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
-		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
+		deck.player.chooseCard = (SIMULATOR.userControlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
 			: simConfig.playerOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     // Player AI falls back on picking a random card
 
@@ -2181,7 +2181,7 @@ var SIMULATOR = {};
 			return false;
 		}
 		var done = performTurnsInner(turn, drawCards);
-		if (done && user_controlled) {
+		if (done && SIMULATOR.userControlled) {
 			SIM_CONTROLLER.debug_end();
 		}
 		return done;
@@ -3390,7 +3390,7 @@ var SIMULATOR = {};
 	var battlegrounds;
 	var simulation_turns = 0;
 	var simulating = false;
-	var user_controlled = false;
+	var userControlled = false;
 	var livePvP = false;
 	var turn = 0;
 	var totalDeckHealth = 0;
@@ -3474,12 +3474,12 @@ var SIMULATOR = {};
 				totalCpuDeckHealth = value;
 			}
 		},
-		user_controlled: {
+		userControlled: {
 			get: function () {
-				return user_controlled;
+				return userControlled;
 			},
 			set: function (value) {
-				user_controlled = value;
+				userControlled = value;
 			}
 		},
 		livePvP: {
