@@ -63357,5 +63357,295 @@
       <card id="5634" mastery_level="7" name="Eira, the Electrokinetic" />
     </deck>
   </mission>
+  <!-- Event 102 Node 1 -->
+  <mission>
+    <id>7062</id>
+    <name>A new Challenge</name>
+    <energy>18</energy>
+    <desc>You arrive at the Gladius Scriptorium, a place where you had once been a champion. You are eager to compete once again but realize that the competition is much tougher than before.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8092" />
+      <card id="7007" />
+      <card id="2076" />
+      <card id="2076" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5011" />
+      <card id="1027" />
+      <card id="1023" />
+      <card id="1027" mastery_level="2" />
+      <card id="1032" mastery_level="3" />
+      <card id="5011" mastery_level="4" />
+      <card id="5104" mastery_level="5" />
+      <card id="5105" mastery_level="6" />
+      <card id="1044" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7063</id>
+    <name>The First Clashes</name>
+    <energy>18</energy>
+    <desc>As you start to walk around the place, you see some familiar faces and receive some minor challenges from young fighters who want to prove themselves against you.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8136" />
+      <card id="7007" />
+      <card id="5107" />
+      <card id="5107" />
+      <card id="2079" />
+      <card id="2079" />
+      <card id="2105" />
+      <card id="1047" />
+      <card id="1034" />
+      <card id="1047" mastery_level="2" />
+      <card id="1034" mastery_level="3" />
+      <card id="2105" mastery_level="4" />
+      <card id="5151" mastery_level="5" />
+      <card id="5153" mastery_level="6" />
+      <card id="2043" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7064</id>
+    <name>A Cold Fight</name>
+    <energy>18</energy>
+    <desc>After days in the Gladius Scriptorium, Austra, the Ice Mage, challenges you to a duel. Finally, a deserving opponent.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8092" />
+      <card id="7007" />
+      <card id="1035" />
+      <card id="1035" />
+      <card id="2148" />
+      <card id="2148" />
+      <card id="5073" />
+      <card id="2119" />
+      <card id="2125" />
+      <card id="2119" mastery_level="2" />
+      <card id="2125" mastery_level="3" />
+      <card id="5073" mastery_level="4" />
+      <card id="5198" mastery_level="5" />
+      <card id="5227" mastery_level="6" />
+      <card id="5148" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7065</id>
+    <name>Walking on Thin Ice</name>
+    <energy>18</energy>
+    <desc>That fight was a tough one. Austra was seeking revenge for a previous defeat, and apparently was preparing for a long time.</desc>
+    <commander id="303" />
+    <deck>
+      <card id="8136" />
+      <card id="7007" />
+      <card id="5016" />
+      <card id="5016" />
+      <card id="5108" />
+      <card id="5108" />
+      <card id="5149" />
+      <card id="5044" />
+      <card id="5114" />
+      <card id="5044" mastery_level="2" />
+      <card id="5114" mastery_level="3" />
+      <card id="5149" mastery_level="4" />
+      <card id="5258" mastery_level="5" />
+      <card id="5257" mastery_level="6" />
+      <card id="5034" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7066</id>
+    <name>The Flying Nightmare</name>
+    <energy>18</energy>
+    <desc>Then came Gaerriel. The Flying Nightmare is a fierce avian monster. He was expecting to catch you tired and injured. But in the end, you prevail again.</desc>
+    <commander id="243" />
+    <deck>
+      <card id="8092" />
+      <card id="7007" />
+      <card id="5166" />
+      <card id="5166" />
+      <card id="5152" />
+      <card id="5152" />
+      <card id="5073" />
+      <card id="5158" />
+      <card id="2117" />
+      <card id="5158" mastery_level="2" />
+      <card id="2117" mastery_level="3" />
+      <card id="5073" mastery_level="4" />
+      <card id="5284" mastery_level="5" />
+      <card id="5244" mastery_level="6" />
+      <card id="5047" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7067</id>
+    <name>Stop the competition</name>
+    <energy>18</energy>
+    <desc>After defeating them both, you are catching up, getting to know each other a little better, when a large group of bandit Avians enter the Scriptorium and start attacking you all.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8136" />
+      <card id="7007" />
+      <card id="2081" />
+      <card id="2081" />
+      <card id="1630" />
+      <card id="1630" />
+      <card id="2148" />
+      <card id="5113" />
+      <card id="5114" />
+      <card id="5113" mastery_level="2" />
+      <card id="5114" mastery_level="3" />
+      <card id="2148" mastery_level="4" />
+      <card id="5106" mastery_level="5" />
+      <card id="5105" mastery_level="6" />
+      <card id="5056" mastery_level="7" />
+    </deck>
+  </mission>
+  <!-- Event 102 Node 2 -->
+  <mission>
+    <id>7068</id>
+    <name>Defend the Scriptorium</name>
+    <energy>18</energy>
+    <desc>You, Austra and Gaerriel, and the other champions start defending the place. A great battle begins and many innocents are also involved.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8092" />
+      <card id="2076" />
+      <card id="2076" />
+      <card id="2079" />
+      <card id="2079" />
+      <card id="2105" />
+      <card id="2105" />
+      <card id="1027" />
+      <card id="1032" />
+      <card id="1027" mastery_level="2" />
+      <card id="1032" mastery_level="3" />
+      <card id="1045" mastery_level="4" />
+      <card id="2200" mastery_level="5" />
+      <card id="5257" mastery_level="6" />
+      <card id="5243" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7069</id>
+    <name>Gurk's Treason</name>
+    <energy>18</energy>
+    <desc>In the middle of the fight, you and your allies find out that Gurk has turned rogue. He is the one who has made deals with a group of avians who seek to destroy the Scriptorium.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8136" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5041" />
+      <card id="5041" />
+      <card id="5073" />
+      <card id="5073" />
+      <card id="2119" />
+      <card id="2186" />
+      <card id="2119" mastery_level="2" />
+      <card id="2186" mastery_level="3" />
+      <card id="5154" mastery_level="4" />
+      <card id="5197" mastery_level="5" />
+      <card id="5199" mastery_level="6" />
+      <card id="5122" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7070</id>
+    <name>Searching the Traitor</name>
+    <energy>18</energy>
+    <desc>You and the other champions must work together to defeat that much bandit Avians lead by The Traitor.</desc>
+    <commander id="263" />
+    <deck>
+      <card id="8092" />
+      <card id="5060" />
+      <card id="5060" />
+      <card id="1035" />
+      <card id="1035" />
+      <card id="2105" />
+      <card id="2105" />
+      <card id="5016" />
+      <card id="2186" />
+      <card id="5016" mastery_level="2" />
+      <card id="2186" mastery_level="3" />
+      <card id="5228" mastery_level="4" />
+      <card id="5237" mastery_level="5" />
+      <card id="5261" mastery_level="6" />
+      <card id="5187" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7071</id>
+    <name>Facing the Traitor</name>
+    <energy>18</energy>
+    <desc>Numerous fights test your skill. Many of your allies have fallen, when you finally come face to face with Gurk, the Traitor.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="8136" />
+      <card id="2081" />
+      <card id="2081" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5011" />
+      <card id="5011" />
+      <card id="2119" />
+      <card id="2125" />
+      <card id="2119" mastery_level="2" />
+      <card id="2125" mastery_level="3" />
+      <card id="5258" mastery_level="4" />
+      <card id="5095" mastery_level="5" />
+      <card id="5109" mastery_level="6" />
+      <card id="5198" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7072</id>
+    <name>Avoiding traps</name>
+    <energy>18</energy>
+    <desc>The two of you engage in a back-and-forth struggle. You must use all your wits and skill to overcome his tricks and deadly attacks. In the end, you emerge victorious.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8092" />
+      <card id="5041" />
+      <card id="5041" />
+      <card id="2151" />
+      <card id="2151" />
+      <card id="5011" />
+      <card id="5011" />
+      <card id="2186" />
+      <card id="5060" />
+      <card id="2186" mastery_level="2" />
+      <card id="5060" mastery_level="3" />
+      <card id="5150" mastery_level="4" />
+      <card id="5151" mastery_level="5" />
+      <card id="5227" mastery_level="6" />
+      <card id="5110" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7073</id>
+    <name>Another Glorious Victory</name>
+    <energy>18</energy>
+    <desc>After that long battle, you depart from the Gladius Scriptorium, content in the knowledge that you had once again proved your worth as a champion.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8136" />
+      <card id="5044" />
+      <card id="5044" />
+      <card id="5149" />
+      <card id="5149" />
+      <card id="5152" />
+      <card id="5152" />
+      <card id="5158" />
+      <card id="1034" />
+      <card id="5158" mastery_level="2" />
+      <card id="1034" mastery_level="3" />
+      <card id="5198" mastery_level="4" />
+      <card id="5197" mastery_level="5" />
+      <card id="5154" mastery_level="6" />
+      <card id="5057" mastery_level="7" />
+    </deck>
+  </mission>
 </root>
 

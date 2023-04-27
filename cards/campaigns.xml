@@ -12301,6 +12301,92 @@
     <ignore_energy_reduction_until>1682614800</ignore_energy_reduction_until>
     <!-- Thursday, April 27, 2023 at 17:00:00 -->
   </campaign>
+  <!-- Campaign Event 102 - Gladius Scriptorium -->
+  <campaign>
+    <id>1345</id>
+    <name>Looking for glory</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1682614800</locked_start_time>
+    <!-- Thursday, April 27, 2023 17:00:00	 -->
+    <location_id>32</location_id>
+    <x>290</x>
+    <!-- left right -->
+    <y>350</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7062</mission_id>
+      <mission_id>7063</mission_id>
+      <mission_id>7064</mission_id>
+      <mission_id>7065</mission_id>
+      <mission_id>7066</mission_id>
+      <mission_id>7067</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2680" number="25" />
+      /&gt;
+      <!-- Gladius Scriptorium Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2251" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2119" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2680" number="75" />
+      /&gt;
+      <!-- Gladius Scriptorium Flask -->
+      <card level="7" id="2250" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3122" drop_per_energy="0.6" />
+    <ignore_energy_reduction_until>1685034000</ignore_energy_reduction_until>
+    <!-- Thursday, May 25, 2023 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1346</id>
+    <name>The Betrayal</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1343" level="1" />
+    <locked_start_time>1683824400</locked_start_time>
+    <!-- Thursday, 11 May 2023 17:00:00 -->
+    <battleground_id>2053</battleground_id>
+    <location_id>32</location_id>
+    <x>615</x>
+    <y>220</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7068</mission_id>
+      <mission_id>7069</mission_id>
+      <mission_id>7070</mission_id>
+      <mission_id>7071</mission_id>
+      <mission_id>7072</mission_id>
+      <mission_id>7073</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2680" number="25" />
+      /&gt;
+      <!-- Gladius Scriptorium Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2117" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2165" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2680" number="75" />
+      /&gt;
+      <!-- Gladius Scriptorium Flask -->
+      <card level="7" id="2250" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3122" drop_per_energy="0.8" />
+    <ignore_energy_reduction_until>1685034000</ignore_energy_reduction_until>
+    <!-- Thursday, May 25, 2023 at 17:00:00 -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

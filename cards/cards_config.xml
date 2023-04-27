@@ -170,7 +170,7 @@
   <skillType>
     <id>counterpoison</id>
     <order>75</order>
-    <icon>corrupt</icon>
+    <icon>poisonhide</icon>
     <name>Poisonhide</name>
     <desc>When damaged by an attack, Poison the attacker.</desc>
     <status_flag>poison</status_flag>
@@ -615,13 +615,12 @@
   <skillType>
     <id>barrage</id>
     <order>500</order>
-    <icon>arcane_shot</icon>
+    <icon>barrage</icon>
     <name>barrage</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.</desc>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>slow</id>
@@ -670,7 +669,6 @@
     <desc>Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <vfx_location>center</vfx_location>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>reinforce</id>

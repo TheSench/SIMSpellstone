@@ -2152,6 +2152,82 @@ var BATTLEGROUNDS = {
 		"id": "164",
 		"name": "Lily & Vampiric Spear Formation Reinforced"
 	},
+	"165": {
+		"desc": "All Avians gain 2+delay Vengeance. Avian of 0-2 delay deal extra damage on their first attack each turn equal to 40% of their base Attack. Avians of 3-4 delay gain Shroud equal to 10% +2 of their base Health.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 2,
+				"y": "10"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 3,
+				"y": "10"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 4,
+				"y": "10"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 5,
+				"y": "10"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 6,
+				"y": "10"
+			},
+			{
+				"base": "attack",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.4,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"mult": 0.1,
+				"x": 2,
+				"y": "10"
+			}
+		],
+		"id": "165",
+		"name": "Sky Destruction"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

@@ -14236,7 +14236,7 @@
     <asset_bundle>85</asset_bundle>
     <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
-    <health>31</health>
+    <health>33</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="valor" x="6" />
@@ -14247,29 +14247,32 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
+      <health>34</health>
       <skill id="valor" x="7" />
       <skill id="rally" x="5" y="10" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>35</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>33</health>
+      <health>36</health>
       <skill id="valor" x="7" />
       <skill id="rally" x="5" y="10" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>37</health>
       <skill id="valor" x="7" />
       <skill id="rally" x="6" y="10" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>38</health>
       <skill id="valor" x="8" />
       <skill id="rally" x="6" y="10" />
       <skill id="jam" c="3" />
@@ -14284,7 +14287,7 @@
     <asset_bundle>85</asset_bundle>
     <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
-    <health>34</health>
+    <health>43</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="valor" x="8" />
@@ -14295,25 +14298,34 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
+      <health>44</health>
       <skill id="valor" x="9" />
       <skill id="rally" x="7" y="10" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>35</health>
+      <health>45</health>
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>6</attack>
+      <health>46</health>
+      <skill id="valor" x="10" />
+      <skill id="rally" x="8" y="10" />
+      <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>36</health>
+      <health>47</health>
+      <skill id="valor" x="11" />
+      <skill id="rally" x="8" y="10" />
+      <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="valor" x="10" />
+      <health>48</health>
+      <skill id="valor" x="12" />
       <skill id="rally" x="8" y="10" />
       <skill id="jam" c="3" />
     </upgrade>
