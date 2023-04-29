@@ -63,8 +63,9 @@ $(function () {
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!_DEFINED("seedtest")) {
-            SIM_CONTROLLER.setConfiguration();
-            var battlegrounds = getBattlegrounds();
+            var simConfig = SIM_CONTROLLER.getConfiguration();
+            SIMULATOR.config = simConfig;
+            var battlegrounds = getBattlegrounds(simConfig);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });

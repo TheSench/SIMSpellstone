@@ -925,7 +925,7 @@ var MakeTrap = (function() {
     });
 }());
 
-var getBattlegrounds = function() {
+var getBattlegrounds = function(simConfig) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -933,7 +933,6 @@ var getBattlegrounds = function() {
         onTurn: [],
         onCardPlayed: []
     };
-    var simConfig = SIMULATOR.config;
     addBgesFromList(battlegrounds, simConfig.getbattleground);
     addBgesFromList(battlegrounds, simConfig.selfbges, 'player');
     addBgesFromList(battlegrounds, simConfig.enemybges, 'cpu');
@@ -2033,7 +2032,7 @@ var factions = {
 
 var SIM_CONTROLLER = (function () {
 
-    function setConfiguration() {
+    function getConfiguration() {
         debug = $('#debug').is(':checked');
         var logPlaysOnly = debug && $('#play_debug').is(':checked');
         if (logPlaysOnly) debug = false;
@@ -2050,8 +2049,7 @@ var SIM_CONTROLLER = (function () {
         var missionID = $('#mission').val();
         var simsToRun = ($('#sims').val() || 1);
 
-        SIMULATOR.simsLeft = simsToRun;
-        SIMULATOR.config = {
+        return {
             enemybges: BATTLEGROUNDS ? getSelectedBattlegrounds("enemy-") : '',
             getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
             selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
@@ -2125,7 +2123,7 @@ var SIM_CONTROLLER = (function () {
     }
 
     return {
-        setConfiguration: setConfiguration,
+        getConfiguration: getConfiguration,
         debug_end: debug_end,
 
         end_sims_callback: null,
@@ -2140,22 +2138,24 @@ var SIM_CONTROLLER = (function () {
         total_turns = 0;
         matchTimer.reset();
         echo = '';
-        games = 0;
+        SIMULATOR.games = 0;
         run_sims_batch = 0;
 
-        SIM_CONTROLLER.setConfiguration();
+        var simConfig = SIM_CONTROLLER.getConfiguration();
+        SIMULATOR.simsLeft = simConfig.simsToRun;
+        SIMULATOR.config = simConfig;
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds();
+        SIMULATOR.battlegrounds = getBattlegrounds(simConfig);
 
         hideUI();
 
         SIMULATOR.setupDecks();
 
-        wins = 0;
-        losses = 0;
-        draws = 0;
-        points = 0;
+        SIMULATOR.wins = 0;
+        SIMULATOR.losses = 0;
+        SIMULATOR.draws = 0;
+        SIMULATOR.points = 0;
 
         outp(""); // Clear display
         if (!SIMULATOR.userControlled) {
@@ -2174,7 +2174,7 @@ var SIM_CONTROLLER = (function () {
     SIM_CONTROLLER.stopsim = function () {
         matchTimer.stop();
         var elapse = matchTimer.elapsed();
-        var simpersec = games / elapse;
+        var simpersec = SIMULATOR.games / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
 
@@ -2205,7 +2205,7 @@ var SIM_CONTROLLER = (function () {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + SIMULATOR.simsLeft) * 100;
+                    var temp = SIMULATOR.games / (SIMULATOR.games + SIMULATOR.simsLeft) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -2241,7 +2241,7 @@ var SIM_CONTROLLER = (function () {
             matchTimer.stop();
 
             var elapse = matchTimer.elapsed();
-            var simpersec = games / elapse;
+            var simpersec = SIMULATOR.games / elapse;
             simpersec = simpersec.toFixed(2);
 
             if (echo) {
@@ -2288,18 +2288,19 @@ var SIM_CONTROLLER = (function () {
 
         // Increment wins/losses/games
         if (result == 'draw') {
-            draws++;
+            SIMULATOR.draws++;
         } else if (result) {
-            wins++;
+            SIMULATOR.wins++;
         } else {
-            losses++;
+            SIMULATOR.losses++;
         }
-        points += SIMULATOR.calculatePoints();
-        games++;
-
+        SIMULATOR.points += SIMULATOR.calculatePoints();
+        SIMULATOR.games++;
+        
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
-
+        
+        var games = SIMULATOR.games;
         if (debug || simConfig.logPlaysOnly) {
             if (simConfig.findFirstLoss) {
                 if (result == 'draw') {
@@ -6353,8 +6354,9 @@ $(function () {
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!_DEFINED("seedtest")) {
-            SIM_CONTROLLER.setConfiguration();
-            var battlegrounds = getBattlegrounds();
+            var simConfig = SIM_CONTROLLER.getConfiguration();
+            SIMULATOR.config = simConfig;
+            var battlegrounds = getBattlegrounds(simConfig);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -6583,7 +6585,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
 	if (simConfig.raidID) err_msg += "Raid ID: " + simConfig.raidID + "\n";
 	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";
-	if (games) err_msg += "Sims run so far: " + games + "\n";
+	if (SIMULATOR.games) err_msg += "Sims run so far: " + SIMULATOR.games + "\n";
 	try {
 		err_msg += "Link to reproduce: " + generate_link() + "\n";
 	} catch (_) {}
@@ -6905,6 +6907,11 @@ function showWinrate() {
 		if (debug) return links;
 	}
 	// Win/Loss ratios
+	var wins = SIMULATOR.wins;
+	var losses = SIMULATOR.losses;
+	var draws = SIMULATOR.draws;
+	var games = SIMULATOR.games;
+	var points = SIMULATOR.points;
 	var winPercent = wins / games;
 	var winrate = (winPercent * 100).toFixed(2) + "%";
 	$("#wins").html(wins);
@@ -6969,6 +6976,7 @@ function hideTable() {
 function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 	$("#simStatusMsg").html(simStatusMsg);
 	if (elapse && simsPerSec) {
+		var games = SIMULATOR.games;
 		var totalSims = games + SIMULATOR.simsLeft;
 		var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 		var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
@@ -7229,11 +7237,6 @@ var showAnimations = false;
 var pvpAI = true;
 var echo = '';
 var closeDiv = false;
-var wins = 0;
-var losses = 0;
-var draws = 0;
-var games = 0;
-var points = 0;
 var num_sims = 0;
 var last_games = [];
 var current_timeout;

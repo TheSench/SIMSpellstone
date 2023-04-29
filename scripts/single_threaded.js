@@ -7,22 +7,24 @@
         total_turns = 0;
         matchTimer.reset();
         echo = '';
-        games = 0;
+        SIMULATOR.games = 0;
         run_sims_batch = 0;
 
-        SIM_CONTROLLER.setConfiguration();
+        var simConfig = SIM_CONTROLLER.getConfiguration();
+        SIMULATOR.simsLeft = simConfig.simsToRun;
+        SIMULATOR.config = simConfig;
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds();
+        SIMULATOR.battlegrounds = getBattlegrounds(simConfig);
 
         hideUI();
 
         SIMULATOR.setupDecks();
 
-        wins = 0;
-        losses = 0;
-        draws = 0;
-        points = 0;
+        SIMULATOR.wins = 0;
+        SIMULATOR.losses = 0;
+        SIMULATOR.draws = 0;
+        SIMULATOR.points = 0;
 
         outp(""); // Clear display
         if (!SIMULATOR.userControlled) {
@@ -41,7 +43,7 @@
     SIM_CONTROLLER.stopsim = function () {
         matchTimer.stop();
         var elapse = matchTimer.elapsed();
-        var simpersec = games / elapse;
+        var simpersec = SIMULATOR.games / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
 
@@ -72,7 +74,7 @@
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + SIMULATOR.simsLeft) * 100;
+                    var temp = SIMULATOR.games / (SIMULATOR.games + SIMULATOR.simsLeft) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -108,7 +110,7 @@
             matchTimer.stop();
 
             var elapse = matchTimer.elapsed();
-            var simpersec = games / elapse;
+            var simpersec = SIMULATOR.games / elapse;
             simpersec = simpersec.toFixed(2);
 
             if (echo) {
@@ -155,18 +157,19 @@
 
         // Increment wins/losses/games
         if (result == 'draw') {
-            draws++;
+            SIMULATOR.draws++;
         } else if (result) {
-            wins++;
+            SIMULATOR.wins++;
         } else {
-            losses++;
+            SIMULATOR.losses++;
         }
-        points += SIMULATOR.calculatePoints();
-        games++;
-
+        SIMULATOR.points += SIMULATOR.calculatePoints();
+        SIMULATOR.games++;
+        
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
-
+        
+        var games = SIMULATOR.games;
         if (debug || simConfig.logPlaysOnly) {
             if (simConfig.findFirstLoss) {
                 if (result == 'draw') {

@@ -2,7 +2,7 @@
 
 var SIM_CONTROLLER = (function () {
 
-    function setConfiguration() {
+    function getConfiguration() {
         debug = $('#debug').is(':checked');
         var logPlaysOnly = debug && $('#play_debug').is(':checked');
         if (logPlaysOnly) debug = false;
@@ -19,8 +19,7 @@ var SIM_CONTROLLER = (function () {
         var missionID = $('#mission').val();
         var simsToRun = ($('#sims').val() || 1);
 
-        SIMULATOR.simsLeft = simsToRun;
-        SIMULATOR.config = {
+        return {
             enemybges: BATTLEGROUNDS ? getSelectedBattlegrounds("enemy-") : '',
             getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
             selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
@@ -94,7 +93,7 @@ var SIM_CONTROLLER = (function () {
     }
 
     return {
-        setConfiguration: setConfiguration,
+        getConfiguration: getConfiguration,
         debug_end: debug_end,
 
         end_sims_callback: null,

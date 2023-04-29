@@ -925,7 +925,7 @@ var MakeTrap = (function() {
     });
 }());
 
-var getBattlegrounds = function() {
+var getBattlegrounds = function(simConfig) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -933,7 +933,6 @@ var getBattlegrounds = function() {
         onTurn: [],
         onCardPlayed: []
     };
-    var simConfig = SIMULATOR.config;
     addBgesFromList(battlegrounds, simConfig.getbattleground);
     addBgesFromList(battlegrounds, simConfig.selfbges, 'player');
     addBgesFromList(battlegrounds, simConfig.enemybges, 'cpu');

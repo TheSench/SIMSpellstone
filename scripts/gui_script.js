@@ -38,7 +38,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
 	if (simConfig.raidID) err_msg += "Raid ID: " + simConfig.raidID + "\n";
 	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";
-	if (games) err_msg += "Sims run so far: " + games + "\n";
+	if (SIMULATOR.games) err_msg += "Sims run so far: " + SIMULATOR.games + "\n";
 	try {
 		err_msg += "Link to reproduce: " + generate_link() + "\n";
 	} catch (_) {}
@@ -360,6 +360,11 @@ function showWinrate() {
 		if (debug) return links;
 	}
 	// Win/Loss ratios
+	var wins = SIMULATOR.wins;
+	var losses = SIMULATOR.losses;
+	var draws = SIMULATOR.draws;
+	var games = SIMULATOR.games;
+	var points = SIMULATOR.points;
 	var winPercent = wins / games;
 	var winrate = (winPercent * 100).toFixed(2) + "%";
 	$("#wins").html(wins);
@@ -424,6 +429,7 @@ function hideTable() {
 function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 	$("#simStatusMsg").html(simStatusMsg);
 	if (elapse && simsPerSec) {
+		var games = SIMULATOR.games;
 		var totalSims = games + SIMULATOR.simsLeft;
 		var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 		var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
@@ -684,11 +690,6 @@ var showAnimations = false;
 var pvpAI = true;
 var echo = '';
 var closeDiv = false;
-var wins = 0;
-var losses = 0;
-var draws = 0;
-var games = 0;
-var points = 0;
 var num_sims = 0;
 var last_games = [];
 var current_timeout;
