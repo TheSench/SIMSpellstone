@@ -3,7 +3,7 @@
 var SIM_CONTROLLER = (function () {
 
     function getConfiguration() {
-        debug = $('#debug').is(':checked');
+        var debug = $('#debug').is(':checked');
         var logPlaysOnly = debug && $('#play_debug').is(':checked');
         if (logPlaysOnly) debug = false;
         showAnimations = $('#animations').is(':checked');

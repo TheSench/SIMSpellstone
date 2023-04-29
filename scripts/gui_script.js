@@ -342,7 +342,7 @@ function outputTurns(turnData, showAll) {
 function showWinrate() {
 
 	if (suppressOutput) {
-	} else if (debug || SIMULATOR.simsLeft == 0) {
+	} else if (SIMULATOR.simConfig.debug || SIMULATOR.simsLeft == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -357,7 +357,7 @@ function showWinrate() {
 			'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
 			'<br>' +
 			'<br>';
-		if (debug) return links;
+		if (SIMULATOR.simConfig.debug) return links;
 	}
 	// Win/Loss ratios
 	var wins = SIMULATOR.wins;
@@ -686,7 +686,6 @@ function display_history() {
 // Initialize global variables
 var battle_history = '';
 var max_turns = 100;
-var debug = false;
 var found_desired = false;
 var showAnimations = false;
 var pvpAI = true;

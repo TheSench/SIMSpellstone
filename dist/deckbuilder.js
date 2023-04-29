@@ -706,7 +706,7 @@ var adjustAttackIncrease = function(card, originalIncrease) {
     if (card.attackIncreasePrevention) {
         var adjustment = Math.min(card.attackIncreasePrevention, originalIncrease);
         card.attackIncreasePrevention -= adjustment;
-        if (debug) { echo += '<u>(' + adjustment + ' attack increase prevented by weaken, ' + card.attackIncreasePrevention + ' prevention remains)</u><br/>'}
+        if (SIMULATOR.simConfig.debug) { echo += '<u>(' + adjustment + ' attack increase prevented by weaken, ' + card.attackIncreasePrevention + ' prevention remains)</u><br/>'}
         return originalIncrease - adjustment;
     } else {
         return originalIncrease;
@@ -912,7 +912,7 @@ var MakeTrap = (function() {
                     var index = (~~(Math.random() * targets.length));
                     targets[index].trap = trap;
 
-                    if (debug) {
+                    if (SIMULATOR.simConfig.debug) {
                         echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
                     }
                 }
