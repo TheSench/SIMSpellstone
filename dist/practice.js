@@ -4392,21 +4392,17 @@ var SIM_CONTROLLER = (function () {
 		var simConfig = SIMULATOR.config;
 
 		// Load player deck
-		if (cache_player_deck_cards) {
-			deck['player'] = copy_deck(cache_player_deck_cards);
-		}
+		deck['player'] = copy_deck(simConfig.cache_player_deck_cards);
 
 		// Load enemy deck
 		if (simConfig.missionID && simConfig.missionLevel > 1 && simConfig.missionLevel < 7) {
-			cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+			var cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
+			simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		} else if (simConfig.raidID) {
-			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+			var cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
+			simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		}
-		if (cache_cpu_deck_cards) {
-			deck['cpu'] = copy_deck(cache_cpu_deck_cards);
-		}
+		deck['cpu'] = copy_deck(simConfig.cache_cpu_deck_cards);
 
 		// Set up deck order priority reference
 		if (simConfig.playerOrdered && !simConfig.playerExactOrdered) deck.player.ordered = copy_card_list(deck.player.deck);
@@ -4469,15 +4465,17 @@ var SIM_CONTROLLER = (function () {
 		var simConfig = SIMULATOR.config;
 		// Cache decks where possible
 		// Load player deck
+		var cache_player_deck;
 		if (simConfig.playerDeck) {
 			cache_player_deck = hash_decode(simConfig.playerDeck);
 		} else {
 			cache_player_deck = createEmptyDeck();
 		}
-		cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
+		simConfig.cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
 		// Load enemy deck
 		pvpAI = true;
+		var cache_cpu_deck;
 		if (simConfig.cpuDeck) {
 			cache_cpu_deck = hash_decode(simConfig.cpuDeck);
 			if (simConfig.missionID) pvpAI = false;
@@ -4490,7 +4488,7 @@ var SIM_CONTROLLER = (function () {
 		} else {
 			cache_cpu_deck = createEmptyDeck();
 		}
-		cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+		simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 	}
 
 	function setupField(field) {
@@ -7242,10 +7240,6 @@ var last_games = [];
 var current_timeout;
 var battleground = [];
 var total_turns = 0;
-var cache_player_deck;
-var cache_cpu_deck;
-var cache_player_deck_cards;
-var cache_cpu_deck_cards;
 var choice = undefined;
 var tournament = false;
 var suppressOutput = false;;"use strict";
