@@ -4,7 +4,7 @@
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
-        total_turns = 0;
+        SIMULATOR.total_turns = 0;
         matchTimer.reset();
         echo = '';
         SIMULATOR.games = 0;
@@ -167,7 +167,7 @@
         SIMULATOR.games++;
         
         // Increment total turn count
-        total_turns += SIMULATOR.simulation_turns;
+        SIMULATOR.total_turns += SIMULATOR.simulation_turns;
         
         var games = SIMULATOR.games;
         if (debug || simConfig.logPlaysOnly) {

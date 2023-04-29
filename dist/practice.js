@@ -2135,7 +2135,7 @@ var SIM_CONTROLLER = (function () {
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
-        total_turns = 0;
+        SIMULATOR.total_turns = 0;
         matchTimer.reset();
         echo = '';
         SIMULATOR.games = 0;
@@ -2298,7 +2298,7 @@ var SIM_CONTROLLER = (function () {
         SIMULATOR.games++;
         
         // Increment total turn count
-        total_turns += SIMULATOR.simulation_turns;
+        SIMULATOR.total_turns += SIMULATOR.simulation_turns;
         
         var games = SIMULATOR.games;
         if (debug || simConfig.logPlaysOnly) {
@@ -6910,6 +6910,8 @@ function showWinrate() {
 	var draws = SIMULATOR.draws;
 	var games = SIMULATOR.games;
 	var points = SIMULATOR.points;
+	var simsLeft = SIMULATOR.simsLeft;
+	var totalTurns = SIMULATOR.total_turns;
 	var winPercent = wins / games;
 	var winrate = (winPercent * 100).toFixed(2) + "%";
 	$("#wins").html(wins);
@@ -6930,13 +6932,13 @@ function showWinrate() {
 	mErr = mErr.toFixed(2) + "%";
 	$("#marginPercent").html(mErr);
 
-	var totalSims = games + SIMULATOR.simsLeft;
+	var totalSims = games + simsLeft;
 	var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 	$(".battleCount").html(games);
 	$("#percentComplete").html(percentComplete);
 
 	// Calculate Average length of battle
-	$("#avgLength").html((total_turns / games).toFixed(1));
+	$("#avgLength").html((totalTurns / games).toFixed(1));
 
 	$("#avgPoints").html((points / games).toFixed(2));
 
@@ -7239,7 +7241,6 @@ var num_sims = 0;
 var last_games = [];
 var current_timeout;
 var battleground = [];
-var total_turns = 0;
 var choice = undefined;
 var tournament = false;
 var suppressOutput = false;;"use strict";
