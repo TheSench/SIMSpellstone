@@ -238,7 +238,7 @@ var SIMULATOR = {};
 						skill.countdown = skill.c;
 					}
 
-					if (showAnimations) {
+					if (SIMULATOR.config.showAnimations) {
 						drawField(field, null, null, turn, source_card);
 					}
 				}
