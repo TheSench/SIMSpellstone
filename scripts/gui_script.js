@@ -46,7 +46,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
 
 	// Stop the recursion if any
-	if (current_timeout) clearTimeout(current_timeout);
+	if (SIMULATOR.current_timeout) clearTimeout(SIMULATOR.current_timeout);
 });
 
 // When Page Loads...
@@ -92,9 +92,6 @@ function processQueryString() {
 
 	$('#ordered2').prop("checked", _DEFINED("ordered2"));
 	$('#exactorder2').prop("checked", _DEFINED("exactorder2"));
-	if (_DEFINED("randomAI")) {
-		pvpAI = false;
-	}
 
 	var locationID = _GET('location');
 	var campaignID = _GET('campaign');
@@ -685,9 +682,7 @@ function display_history() {
 
 // Initialize global variables
 var battle_history = '';
-var max_turns = 100;
 var showAnimations = false;
-var pvpAI = true;
 var echo = '';
 var closeDiv = false;
 var current_timeout;

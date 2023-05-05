@@ -2059,9 +2059,8 @@ var SIMULATOR = {};
 			: simConfig.playerOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     // Player AI falls back on picking a random card
 
-		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
-								: */simConfig.cpuOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-				: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
+		deck.cpu.chooseCard = (simConfig.cpuOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+				: simConfig.pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
 					: simConfig.cpuExactOrdered ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
 						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
@@ -2121,7 +2120,7 @@ var SIMULATOR = {};
 		simConfig.cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
 		// Load enemy deck
-		pvpAI = true;
+		var pvpAI = true;
 		var cache_cpu_deck;
 		if (simConfig.cpuDeck) {
 			cache_cpu_deck = hash_decode(simConfig.cpuDeck);
@@ -2135,6 +2134,7 @@ var SIMULATOR = {};
 		} else {
 			cache_cpu_deck = createEmptyDeck();
 		}
+		simConfig.pvpAI = pvpAI;
 		simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 	}
 
@@ -2220,8 +2220,8 @@ var SIMULATOR = {};
 
 		turn++;
 		// Continue simulation
-		for (; turn <= max_turns + 1; turn++) {
-			if (turn == max_turns + 1) {
+		for (; turn <= maxTurns + 1; turn++) {
+			if (turn == maxTurns + 1) {
 				// Ended in draw
 				simulating = false;
 				return true;
@@ -3394,6 +3394,7 @@ var SIMULATOR = {};
 	var turn = 0;
 	var totalDeckHealth = 0;
 	var totalCpuDeckHealth = 0;
+	var maxTurns = 100;
 
 	// public functions
 	SIMULATOR.simulate = simulate;
