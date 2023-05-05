@@ -77,7 +77,6 @@
     <desc_all_faction>Adds this Skill to all {y} allies.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="1" s="1" />
     <vfx_location>top</vfx_location>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>enhance</id>
@@ -92,7 +91,6 @@
     <desc_faction>Increases the effect of this Skill for a random {y} ally.</desc_faction>
     <desc_all_faction>Increases the effect of this Skill for all {y} allies.</desc_all_faction>
     =
-    <hidden>1</hidden>
   </skillType>
   <!-- Defensive -->
   <skillType>
@@ -112,7 +110,6 @@
     <desc>Attack damage dealt to adjacent creatures is dealt to this creature instead.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <balance_points>1</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>absorb</id>
@@ -478,115 +475,6 @@
 		<upkeep>1</upkeep>
 	</skillType> -->
   <!-- old cleanse-->
-  <skillType>
-    <id>cleanse</id>
-    <order>310</order>
-    <icon>cleanse</icon>
-    <name>Cleanse</name>
-    <desc>Every {c} turns, remove the negative states of itself or an ally.</desc>
-    <desc_all>Every {c} turns, remove the negative states (Poison, Hex, Burn, Freeze, Venom, Weaken, Silence and Confuse) of itself or an ally.</desc_all>
-    <status_flag>cleanse_countdown</status_flag>
-    <attributes x="1" y="0" all="1" c="0" s="0" />
-    <balance_points>10</balance_points>
-    <upkeep>1</upkeep>
-  </skillType>
-  <!-- Mythic -->
-  <skillType>
-    <id>fury</id>
-    <order>1</order>
-    <icon>fury</icon>
-    <name>Maelstrom's Fury</name>
-    <desc>After taking Attack damage, deals damage back and permanently increases Attack.</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>3</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>evadebarrier</id>
-    <order>1</order>
-    <icon>mystic_barrier</icon>
-    <name>Mystic Barrier</name>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>scorchbreath</id>
-    <order>175</order>
-    <icon>scorchbreath</icon>
-    <name>Scorchbreath</name>
-    <desc>Inflicts Scorch to the opposing creature and its adjacent creatures.</desc>
-    <status_flag>burn</status_flag>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>8</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>heartseeker</id>
-    <order>15</order>
-    <icon>heartseeker</icon>
-    <name>Heartseeker</name>
-    <desc>Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks.</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>radiance</id>
-    <order>145</order>
-    <icon>radiance</icon>
-    <name>radiance</name>
-    <upkeep>1</upkeep>
-    <!-- This skill occurs before all other actions -->
-    <desc>At start of turn, grant adjacent allies Legion and half as much Barrier.</desc>
-    <desc_faction>At start of turn, grant adjacent {y} allies Legion and half as much Barrier.</desc_faction>
-    <status_flag>attack_boost</status_flag>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <balance_points>5</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>devour</id>
-    <order>285</order>
-    <icon>devour</icon>
-    <name>devour</name>
-    <desc>After dealing Attack damage, permanently increases Attack and heals self.</desc>
-    <desc_faction>Berserk and heal.</desc_faction>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <balance_points>5</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>invigorate</id>
-    <order>125</order>
-    <icon>invigorate</icon>
-    <name>invigorate</name>
-    <desc>Heals a random ally creature and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc>
-    <desc_faction>Heals a random {y} ally and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_faction>
-    <desc_all>Heals all ally creatures and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_all>
-    <desc_all_faction>Heals all {y} allies and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_all_faction>
-    <attributes x="1" y="1" all="1" c="0" s="0" />
-    <balance_points>5</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>wingward</id>
-    <order>1</order>
-    <icon>avian_barrier</icon>
-    <name>Wing Guard</name>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
-    <hidden>1</hidden>
-  </skillType>
-  <!-- Mythic -->
-  <skillType>
-    <id>magicfield</id>
-    <order>1</order>
-    <icon>avian_barrier</icon>
-    <name>Anti-Magic Field</name>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Grants Ward to self and half as much to adjacent ally creatures.</desc>
-    <hidden>1</hidden>
-  </skillType>
   <!-- Special -->
   <skillType>
     <id>protect_ice</id>
@@ -698,7 +586,6 @@
     <desc>Deals damage to opposing creature, even while on delay. This damage cannot be increased. After dealing damage, heals self.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>6</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>bash</id>
@@ -754,7 +641,6 @@
     <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
     <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>burnself</id>
@@ -778,6 +664,108 @@
     <status_flag>jam_countdown</status_flag>
     <attributes x="0" y="0" all="1" c="1" s="0" />
     <hidden>1</hidden>
+  </skillType>
+  <!-- SKILLS THAT DON'T FIT In The Popup -->
+  <!-- Mythic -->
+  <skillType>
+    <id>fury</id>
+    <order>1</order>
+    <icon>fury</icon>
+    <name>Maelstrom's Fury</name>
+    <desc>After taking Attack damage, deals damage back and permanently increases Attack.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>3</balance_points>
+  </skillType>
+  <skillType>
+    <id>cleanse</id>
+    <order>310</order>
+    <icon>cleanse</icon>
+    <name>Cleanse</name>
+    <desc>Every {c} turns, remove the negative states of itself or an ally.</desc>
+    <desc_all>Every {c} turns, remove the negative states (Poison, Hex, Burn, Freeze, Venom, Weaken, Silence and Confuse) of itself or an ally.</desc_all>
+    <status_flag>cleanse_countdown</status_flag>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>10</balance_points>
+    <upkeep>1</upkeep>
+  </skillType>
+  <skillType>
+    <id>evadebarrier</id>
+    <order>1</order>
+    <icon>mystic_barrier</icon>
+    <name>Mystic Barrier</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>scorchbreath</id>
+    <order>175</order>
+    <icon>scorchbreath</icon>
+    <name>Scorchbreath</name>
+    <desc>Inflicts Scorch to the opposing creature and its adjacent creatures.</desc>
+    <status_flag>burn</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+  </skillType>
+  <skillType>
+    <id>heartseeker</id>
+    <order>15</order>
+    <icon>heartseeker</icon>
+    <name>Heartseeker</name>
+    <desc>Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+  </skillType>
+  <skillType>
+    <id>radiance</id>
+    <order>145</order>
+    <icon>radiance</icon>
+    <name>radiance</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <desc>At start of turn, grant adjacent allies Legion and half as much Barrier.</desc>
+    <desc_faction>At start of turn, grant adjacent {y} allies Legion and half as much Barrier.</desc_faction>
+    <status_flag>attack_boost</status_flag>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>5</balance_points>
+  </skillType>
+  <skillType>
+    <id>devour</id>
+    <order>285</order>
+    <icon>devour</icon>
+    <name>devour</name>
+    <desc>After dealing Attack damage, permanently increases Attack and heals self.</desc>
+    <desc_faction>Berserk and heal.</desc_faction>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>5</balance_points>
+  </skillType>
+  <skillType>
+    <id>invigorate</id>
+    <order>125</order>
+    <icon>invigorate</icon>
+    <name>invigorate</name>
+    <desc>Heals a random ally creature and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc>
+    <desc_faction>Heals a random {y} ally and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_faction>
+    <desc_all>Heals all ally creatures and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_all>
+    <desc_all_faction>Heals all {y} allies and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_all_faction>
+    <attributes x="1" y="1" all="1" c="0" s="0" />
+    <balance_points>5</balance_points>
+  </skillType>
+  <skillType>
+    <id>wingward</id>
+    <order>1</order>
+    <icon>avian_barrier</icon>
+    <name>Wing Guard</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
+  </skillType>
+  <!-- Mythic -->
+  <skillType>
+    <id>magicfield</id>
+    <order>1</order>
+    <icon>avian_barrier</icon>
+    <name>Anti-Magic Field</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Grants Ward to self and half as much to adjacent ally creatures.</desc>
   </skillType>
   <!-- TEST SKILLS -->
   <skillType>
@@ -808,7 +796,6 @@
     <desc>After dying the first time, revives self, healing and removing all effects.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <status_flag>reanimated</status_flag>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>resurrect</id>
