@@ -300,9 +300,9 @@ function outp(text) {
 }
 
 function outputTurns(turnData, showAll) {
-	if (closeDiv) {
+	if (SIMULATOR.closeDiv) {
 		turnData += "</div>";
-		closeDiv = false;
+		SIMULATOR.closeDiv = false;
 	}
 	turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
 	outp(turnData);
@@ -313,7 +313,7 @@ function outputTurns(turnData, showAll) {
 		options.push("<option value='" + i + "'>" + turn + "</option>");
 	}
 	var lastTurn = i - 1;
-	if (lastTurn && closeDiv) lastTurn--;
+	if (lastTurn && SIMULATOR.closeDiv) lastTurn--;
 	$("#turn-picker").append(options).change(function (event) {
 		var turn = event.target.selectedIndex;
 		$(".turn-info").hide().eq(turn).show();
@@ -682,5 +682,4 @@ function display_history() {
 // Initialize global variables
 var battle_history = '';
 var echo = '';
-var closeDiv = false;
 var choice = undefined;

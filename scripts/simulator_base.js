@@ -2252,7 +2252,7 @@ var SIMULATOR = {};
 			var o = first_player;
 		}
 
-		closeDiv = false;
+		SIMULATOR.closeDiv = false;
 		if (!choose_card(p, turn, drawCards)) {
 			return false;
 		} else {
@@ -2397,7 +2397,7 @@ var SIMULATOR = {};
 	function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
 
 		SIMULATOR.waiting = true;
-		closeDiv = true;
+		SIMULATOR.closeDiv = true;
 
 		if (drawCards) {
 			hideTable();
@@ -2413,7 +2413,7 @@ var SIMULATOR = {};
 	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
-		closeDiv = true;
+		SIMULATOR.closeDiv = true;
 		var cardsInHand = [];
 		var drawableHand = [];
 		for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
