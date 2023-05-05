@@ -2165,7 +2165,7 @@ var SIM_CONTROLLER = (function () {
             setSimStatus("");
         }
 
-        current_timeout = setTimeout(run_sims);
+        SIMULATOR.current_timeout = setTimeout(run_sims);
 
         return false;
     };
@@ -2179,7 +2179,7 @@ var SIM_CONTROLLER = (function () {
         SIMULATOR.simulating = false;
 
         // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
+        if (SIMULATOR.current_timeout) clearTimeout(SIMULATOR.current_timeout);
         if (!SIMULATOR.userControlled) {
             setSimStatus("Simulations interrupted.", elapse, simpersec);
             showWinrate();
@@ -2230,7 +2230,7 @@ var SIM_CONTROLLER = (function () {
                 // if ((SIMULATOR.simConfig.debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(run_sims, 1);
+                SIMULATOR.current_timeout = setTimeout(run_sims, 1);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     run_sim();
                 }
@@ -4412,9 +4412,8 @@ var SIM_CONTROLLER = (function () {
 			: simConfig.playerOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     // Player AI falls back on picking a random card
 
-		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
-								: */simConfig.cpuOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-				: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
+		deck.cpu.chooseCard = (simConfig.cpuOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+				: simConfig.pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
 					: simConfig.cpuExactOrdered ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
 						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
@@ -4474,7 +4473,7 @@ var SIM_CONTROLLER = (function () {
 		simConfig.cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
 		// Load enemy deck
-		pvpAI = true;
+		var pvpAI = true;
 		var cache_cpu_deck;
 		if (simConfig.cpuDeck) {
 			cache_cpu_deck = hash_decode(simConfig.cpuDeck);
@@ -4488,6 +4487,7 @@ var SIM_CONTROLLER = (function () {
 		} else {
 			cache_cpu_deck = createEmptyDeck();
 		}
+		simConfig.pvpAI = pvpAI;
 		simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 	}
 
@@ -4573,8 +4573,8 @@ var SIM_CONTROLLER = (function () {
 
 		turn++;
 		// Continue simulation
-		for (; turn <= max_turns + 1; turn++) {
-			if (turn == max_turns + 1) {
+		for (; turn <= maxTurns + 1; turn++) {
+			if (turn == maxTurns + 1) {
 				// Ended in draw
 				simulating = false;
 				return true;
@@ -5747,6 +5747,7 @@ var SIM_CONTROLLER = (function () {
 	var turn = 0;
 	var totalDeckHealth = 0;
 	var totalCpuDeckHealth = 0;
+	var maxTurns = 100;
 
 	// public functions
 	SIMULATOR.simulate = simulate;
@@ -6576,7 +6577,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
 
 	// Stop the recursion if any
-	if (current_timeout) clearTimeout(current_timeout);
+	if (SIMULATOR.current_timeout) clearTimeout(SIMULATOR.current_timeout);
 });
 
 // When Page Loads...
@@ -6622,9 +6623,6 @@ function processQueryString() {
 
 	$('#ordered2').prop("checked", _DEFINED("ordered2"));
 	$('#exactorder2').prop("checked", _DEFINED("exactorder2"));
-	if (_DEFINED("randomAI")) {
-		pvpAI = false;
-	}
 
 	var locationID = _GET('location');
 	var campaignID = _GET('campaign');
@@ -7215,9 +7213,7 @@ function display_history() {
 
 // Initialize global variables
 var battle_history = '';
-var max_turns = 100;
 var showAnimations = false;
-var pvpAI = true;
 var echo = '';
 var closeDiv = false;
 var current_timeout;
