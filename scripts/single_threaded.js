@@ -65,7 +65,7 @@
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((SIMULATOR.simConfig.debug || simConfig.logPlaysOnly) && !simConfig.massDebug && !simConfig.findFirstLoss && !simConfig.findFirstWin) {
+        } else if ((SIMULATOR.config.debug || simConfig.logPlaysOnly) && !simConfig.massDebug && !simConfig.findFirstLoss && !simConfig.findFirstWin) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
         } else if (SIMULATOR.simsLeft > 0) {
@@ -95,8 +95,8 @@
                 if (run_sims_batch > SIMULATOR.simsLeft) // Also limit by how many sims are left
                     run_sims_batch = SIMULATOR.simsLeft;
 
-                // Batch messes up mass SIMULATOR.simConfig.debug and loss SIMULATOR.simConfig.debug! var's disable batch!
-                // if ((SIMULATOR.simConfig.debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
+                // Batch messes up mass SIMULATOR.config.debug and loss SIMULATOR.config.debug! var's disable batch!
+                // if ((SIMULATOR.config.debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
                 SIMULATOR.current_timeout = setTimeout(run_sims, 1);
@@ -170,7 +170,7 @@
         SIMULATOR.total_turns += SIMULATOR.simulation_turns;
         
         var games = SIMULATOR.games;
-        if (SIMULATOR.simConfig.debug || simConfig.logPlaysOnly) {
+        if (SIMULATOR.config.debug || simConfig.logPlaysOnly) {
             if (simConfig.findFirstLoss) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;

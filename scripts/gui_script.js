@@ -339,7 +339,7 @@ function outputTurns(turnData, showAll) {
 function showWinrate() {
 
 	if (suppressOutput) {
-	} else if (SIMULATOR.simConfig.debug || SIMULATOR.simsLeft == 0) {
+	} else if (SIMULATOR.config.debug || SIMULATOR.simsLeft == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -354,7 +354,7 @@ function showWinrate() {
 			'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
 			'<br>' +
 			'<br>';
-		if (SIMULATOR.simConfig.debug) return links;
+		if (SIMULATOR.config.debug) return links;
 	}
 	// Win/Loss ratios
 	var wins = SIMULATOR.wins;
