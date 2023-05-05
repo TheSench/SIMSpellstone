@@ -2036,7 +2036,7 @@ var SIM_CONTROLLER = (function () {
         var debug = $('#debug').is(':checked');
         var logPlaysOnly = debug && $('#play_debug').is(':checked');
         if (logPlaysOnly) debug = false;
-        showAnimations = $('#animations').is(':checked');
+        var showAnimations = $('#animations').is(':checked');
 
         if ($('#auto_mode').length) {
             var auto_mode = $('#auto_mode').is(':checked');
@@ -2403,7 +2403,7 @@ var SIM_CONTROLLER = (function () {
 				battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
 			}
 		}
-		if (showAnimations) {
+		if (simConfig.showAnimations) {
 			drawField(field, null, null, turn);
 		}
 	}
@@ -2611,6 +2611,7 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function doOnDeathSkills(dying, killer) {
+		var simConfig = SIMULATOR.config;
 
 		if (dying.ondeath_triggered) return; // Check to make sure we don't trigger this twice
 
@@ -2625,7 +2626,7 @@ var SIM_CONTROLLER = (function () {
 					if (skill.id === "reanimate") {
 						// Do reanimate first, then the rest on the next "real" death (reanimate won't trigger again)
 						onDeathSkills[skill.id](dying, killer, skill);
-						if (showAnimations) {
+						if (SIMULATOR.config.showAnimations) {
 							drawField(field, null, null, turn, dying);
 						}
 						return;
@@ -2637,7 +2638,7 @@ var SIM_CONTROLLER = (function () {
 				var skill = skills[i];
 				onDeathSkills[skill.id](dying, killer, skill);
 
-				if (showAnimations) {
+				if (SIMULATOR.config.showAnimations) {
 					drawField(field, null, null, turn, dying);
 				}
 			}
@@ -3653,7 +3654,7 @@ var SIM_CONTROLLER = (function () {
 					sourceCard.health_left += healing;
 				}
 
-				if (showAnimations) {
+				if (SIMULATOR.config.showAnimations) {
 					drawField(field, null, null, turn, sourceCard);
 				}
 			}
@@ -4357,7 +4358,7 @@ var SIM_CONTROLLER = (function () {
 				skill.countdown = skill.c;
 			}
 
-			if (showAnimations) {
+			if (SIMULATOR.config.showAnimations) {
 				drawField(field, null, null, turn, src_card);
 			}
 		}
@@ -4604,7 +4605,7 @@ var SIM_CONTROLLER = (function () {
 			var o = first_player;
 		}
 
-		closeDiv = false;
+		SIMULATOR.closeDiv = false;
 		if (!choose_card(p, turn, drawCards)) {
 			return false;
 		} else {
@@ -4749,7 +4750,7 @@ var SIM_CONTROLLER = (function () {
 	function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
 
 		SIMULATOR.waiting = true;
-		closeDiv = true;
+		SIMULATOR.closeDiv = true;
 
 		if (drawCards) {
 			hideTable();
@@ -4765,7 +4766,7 @@ var SIM_CONTROLLER = (function () {
 	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
-		closeDiv = true;
+		SIMULATOR.closeDiv = true;
 		var cardsInHand = [];
 		var drawableHand = [];
 		for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
@@ -5256,7 +5257,7 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function doAttack(current_assault, originalTarget, field_o_assaults, field_o_commander) {
-
+		var simConfig = SIMULATOR.config;
 		var target = originalTarget
 		// -- START ATTACK SEQUENCE --
 		if (!target) {
@@ -5268,7 +5269,7 @@ var SIM_CONTROLLER = (function () {
 		} else if (!target.isAlive()) {
 			if (current_assault.confused && originalTarget.owner === current_assault.owner) {
 				// shouldn't reach this anymore (switches DS target or doesn't attack non-existing target)
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' is confused and attacks ' + debug_name(target) + ', but it is already dead<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' is confused and attacks ' + debug_name(target) + ', but it is already dead<br>';
 				// If a confused unit killed an adjacent ally, don't target enemy/commander on subsequent hits of same turn
 				return
 			}
@@ -5290,7 +5291,7 @@ var SIM_CONTROLLER = (function () {
 					}
 				}
 			}
-			if (taunted && SIMULATOR.config.debug) echo += debug_name(target) + ' taunts ' + debug_name(current_assault);
+			if (taunted && simConfig.debug) echo += debug_name(target) + ' taunts ' + debug_name(current_assault);
 		}
 
 		// -- CALCULATE DAMAGE --
@@ -5316,7 +5317,7 @@ var SIM_CONTROLLER = (function () {
 		var heartseeker = target.heartseeker;
 		damage += heartseeker;
 
-		if (SIMULATOR.config.debug) {
+		if (simConfig.debug) {
 			echo += '<u>(Attack: +' + current_assault.attack;
 			if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
 			if (current_assault.attack_valor) echo += ' Valor: +' + current_assault.attack_valor;
@@ -5346,18 +5347,18 @@ var SIM_CONTROLLER = (function () {
 		var shrouded = (target.silenced ? 0 : checkShroud(target));
 		// Barrier is applied BEFORE Armor
 		if (protect) {
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += ' Barrier: -' + protect;
 			}
 			// Remove pierce from Barrier
 			if (pierce) {
 				if (pierce >= protect) {
-					if (SIMULATOR.config.debug) echo += ' Pierce: +' + protect;
+					if (simConfig.debug) echo += ' Pierce: +' + protect;
 					pierce -= protect;
 					protect = 0;
 					target.protected = 0;
 				} else {
-					if (SIMULATOR.config.debug) echo += ' Pierce: +' + pierce;
+					if (simConfig.debug) echo += ' Pierce: +' + pierce;
 					protect -= pierce;
 					target.protected -= pierce;
 					// Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
@@ -5378,16 +5379,16 @@ var SIM_CONTROLLER = (function () {
 		}
 		if (shrouded) {
 			shrouded += getEnhancement(target, 'stasis', shrouded);
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += ' Shroud: -' + shrouded;
 			}
 			// Remove pierce from Shroud
 			if (pierce) {
 				if (pierce > shrouded) {
-					if (SIMULATOR.config.debug) echo += ' Pierce: +' + shrouded;
+					if (simConfig.debug) echo += ' Pierce: +' + shrouded;
 					shrouded = 0;
 				} else {
-					if (SIMULATOR.config.debug) echo += ' Pierce: +' + pierce;
+					if (simConfig.debug) echo += ' Pierce: +' + pierce;
 					shrouded -= pierce;
 				}
 			}
@@ -5395,16 +5396,16 @@ var SIM_CONTROLLER = (function () {
 		}
 		if (armor) {
 			armor += getEnhancement(target, 'armored', armor);
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += ' Armor: -' + armor;
 			}
 			// Remove pierce from Armor
 			if (pierce) {
 				if (pierce > armor) {
-					if (SIMULATOR.config.debug) echo += ' Pierce: +' + armor;
+					if (simConfig.debug) echo += ' Pierce: +' + armor;
 					armor = 0;
 				} else {
-					if (SIMULATOR.config.debug) echo += ' Pierce: +' + pierce;
+					if (simConfig.debug) echo += ' Pierce: +' + pierce;
 					armor -= pierce;
 				}
 			}
@@ -5413,7 +5414,7 @@ var SIM_CONTROLLER = (function () {
 
 		if (damage < 0) damage = 0;
 
-		if (SIMULATOR.config.debug) echo += ') = ' + damage + ' damage</u><br>';
+		if (simConfig.debug) echo += ') = ' + damage + ' damage</u><br>';
 
 		// -- END OF CALCULATE DAMAGE --
 
@@ -5425,7 +5426,7 @@ var SIM_CONTROLLER = (function () {
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
 
-		if (showAnimations) {
+		if (simConfig.showAnimations) {
 			drawField(field, null, null, turn, current_assault);
 		}
 
@@ -5446,7 +5447,7 @@ var SIM_CONTROLLER = (function () {
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
 				}
 			}
 
@@ -5462,7 +5463,7 @@ var SIM_CONTROLLER = (function () {
 
 				if (venom > target.envenomed) {
 					target.envenomed = venom;
-					if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
 				}
 			}
 
@@ -5474,7 +5475,7 @@ var SIM_CONTROLLER = (function () {
 				var enhanced = getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
 			}
 
 			// Daze
@@ -5487,7 +5488,7 @@ var SIM_CONTROLLER = (function () {
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target) + ' for ' + dazed + '<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target) + ' for ' + dazed + '<br>';
 			}
 		}
 
@@ -5515,7 +5516,7 @@ var SIM_CONTROLLER = (function () {
 					}
 
 					current_assault.health_left += leech_health;
-					if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
 				}
 
 				if (current_assault.reinforce) {
@@ -5524,7 +5525,7 @@ var SIM_CONTROLLER = (function () {
 					reinforce += enhanced;
 
 					current_assault.protected += reinforce;
-					if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
 				}
 
 				// Devour
@@ -5543,7 +5544,7 @@ var SIM_CONTROLLER = (function () {
 						current_assault.health_left += healing;
 					}
 
-					if (SIMULATOR.config.debug) {
+					if (simConfig.debug) {
 						echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
 						if(healing) echo += ' and healing ' + healing + ' health';
 						echo += '<br>';
@@ -5574,7 +5575,7 @@ var SIM_CONTROLLER = (function () {
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				if (SIMULATOR.config.debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+				if (simConfig.debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
 			}
 
 			// Counterpoison
@@ -5586,7 +5587,7 @@ var SIM_CONTROLLER = (function () {
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					if (SIMULATOR.config.debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+					if (simConfig.debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
 				}
 			}
 
@@ -5595,7 +5596,7 @@ var SIM_CONTROLLER = (function () {
 				enraged = adjustAttackIncrease(target, enraged);
 				if (target.isAlive()) {
 					target.attack_berserk += enraged;
-					if (SIMULATOR.config.debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
+					if (simConfig.debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
 				}
 			}
 			// Fury
@@ -5605,7 +5606,7 @@ var SIM_CONTROLLER = (function () {
 
 				if (target.isAlive()) {
 					target.attack_berserk += fury;
-					if (SIMULATOR.config.debug) {
+					if (simConfig.debug) {
 						echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
 					}
 				}
@@ -5626,7 +5627,7 @@ var SIM_CONTROLLER = (function () {
 					berserk = adjustAttackIncrease(current_assault, berserk);
 
 					current_assault.attack_berserk += berserk;
-					if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
 				}
 			}
 
@@ -5651,9 +5652,9 @@ var SIM_CONTROLLER = (function () {
 			} else {
 				current_assault.corroded = { amount: corrosion, timer: 2 };
 			}
-			if (SIMULATOR.config.debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
+			if (simConfig.debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
 			current_assault.attack_corroded = current_assault.corroded.amount;
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 			}
 		}
@@ -5662,7 +5663,7 @@ var SIM_CONTROLLER = (function () {
 			doOnDeathSkills(current_assault, target);
 		}
 
-		if (showAnimations) {
+		if (simConfig.showAnimations) {
 			drawField(field, null, null, turn, current_assault);
 		}
 		// -- END OF STATUS INFLICTION --
@@ -6831,9 +6832,9 @@ function outp(text) {
 }
 
 function outputTurns(turnData, showAll) {
-	if (closeDiv) {
+	if (SIMULATOR.closeDiv) {
 		turnData += "</div>";
-		closeDiv = false;
+		SIMULATOR.closeDiv = false;
 	}
 	turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
 	outp(turnData);
@@ -6844,7 +6845,7 @@ function outputTurns(turnData, showAll) {
 		options.push("<option value='" + i + "'>" + turn + "</option>");
 	}
 	var lastTurn = i - 1;
-	if (lastTurn && closeDiv) lastTurn--;
+	if (lastTurn && SIMULATOR.closeDiv) lastTurn--;
 	$("#turn-picker").append(options).change(function (event) {
 		var turn = event.target.selectedIndex;
 		$(".turn-info").hide().eq(turn).show();
@@ -6869,8 +6870,7 @@ function outputTurns(turnData, showAll) {
 // Return table of simulation results
 function showWinrate() {
 
-	if (suppressOutput) {
-	} else if (SIMULATOR.config.debug || SIMULATOR.simsLeft == 0) {
+	if (SIMULATOR.config.debug || SIMULATOR.simsLeft == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -7213,13 +7213,8 @@ function display_history() {
 
 // Initialize global variables
 var battle_history = '';
-var showAnimations = false;
 var echo = '';
-var closeDiv = false;
-var current_timeout;
-var choice = undefined;
-var tournament = false;
-var suppressOutput = false;;"use strict";
+var choice = undefined;;"use strict";
 var CARD_GUI = {};
 (function() {
     var assetsRoot = '';
