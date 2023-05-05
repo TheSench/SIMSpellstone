@@ -6,7 +6,7 @@ var SIM_CONTROLLER = (function () {
         var debug = $('#debug').is(':checked');
         var logPlaysOnly = debug && $('#play_debug').is(':checked');
         if (logPlaysOnly) debug = false;
-        showAnimations = $('#animations').is(':checked');
+        var showAnimations = $('#animations').is(':checked');
 
         if ($('#auto_mode').length) {
             var auto_mode = $('#auto_mode').is(':checked');

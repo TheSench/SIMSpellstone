@@ -682,10 +682,7 @@ function display_history() {
 
 // Initialize global variables
 var battle_history = '';
-var showAnimations = false;
 var echo = '';
 var closeDiv = false;
-var current_timeout;
 var choice = undefined;
-var tournament = false;
 var suppressOutput = false;
