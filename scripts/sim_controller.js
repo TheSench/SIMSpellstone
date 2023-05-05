@@ -14,7 +14,7 @@ var SIM_CONTROLLER = (function () {
         }
 
         // Not currently in UI - attacker's first card has +1 delay
-        tournament = $("#tournament").is(":checked");
+        var tournament = $("#tournament").is(":checked");
 
         var missionID = $('#mission').val();
         var simsToRun = ($('#sims').val() || 1);

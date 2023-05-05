@@ -2044,7 +2044,7 @@ var SIM_CONTROLLER = (function () {
         }
 
         // Not currently in UI - attacker's first card has +1 delay
-        tournament = $("#tournament").is(":checked");
+        var tournament = $("#tournament").is(":checked");
 
         var missionID = $('#mission').val();
         var simsToRun = ($('#sims').val() || 1);
@@ -4623,6 +4623,7 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function setup_turn(turn, first_player, second_player, field) {
+		var simConfig = SIMULATOR.simConfig;
 		simulation_turns = turn;
 
 		choice = undefined;
@@ -4635,7 +4636,7 @@ var SIM_CONTROLLER = (function () {
 			var o = first_player;
 		}
 
-		if (SIMULATOR.simConfig.debug) {
+		if (simConfig.debug) {
 			var commander_p = debug_name(field[p]['commander']);
 			var deck_p = deck[p].deck;
 			echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u><br>';
@@ -4661,9 +4662,9 @@ var SIM_CONTROLLER = (function () {
 			var current_assault = field_p_assaults[i];
 
 			if (current_assault.timer > 0) {
-				if (turn !== 3 || !tournament) {
+				if (turn !== 3 || !simConfig.tournament) {
 					current_assault.timer--;
-					if (SIMULATOR.simConfig.debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
 				}
 			}
 
@@ -4673,8 +4674,8 @@ var SIM_CONTROLLER = (function () {
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack() && enemy.hasAttack()) {
 					var valor = adjustAttackIncrease(current_assault, current_assault.valor);
 					current_assault.attack_valor += valor;
-					if (SIMULATOR.simConfig.debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
-				} else if (SIMULATOR.simConfig.debug) {
+					if (simConfig.debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
+				} else if (simConfig.debug) {
 					echo += debug_name(current_assault) + ' activates valor but ';
 					if (!enemy) {
 						echo += 'there is no opposing enemy.<br/>';
@@ -7215,15 +7216,11 @@ function display_history() {
 // Initialize global variables
 var battle_history = '';
 var max_turns = 100;
-var found_desired = false;
 var showAnimations = false;
 var pvpAI = true;
 var echo = '';
 var closeDiv = false;
-var num_sims = 0;
-var last_games = [];
 var current_timeout;
-var battleground = [];
 var choice = undefined;
 var tournament = false;
 var suppressOutput = false;;"use strict";

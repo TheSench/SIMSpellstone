@@ -2270,6 +2270,7 @@ var SIMULATOR = {};
 	}
 
 	function setup_turn(turn, first_player, second_player, field) {
+		var simConfig = SIMULATOR.simConfig;
 		simulation_turns = turn;
 
 		choice = undefined;
@@ -2282,7 +2283,7 @@ var SIMULATOR = {};
 			var o = first_player;
 		}
 
-		if (SIMULATOR.simConfig.debug) {
+		if (simConfig.debug) {
 			var commander_p = debug_name(field[p]['commander']);
 			var deck_p = deck[p].deck;
 			echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u><br>';
@@ -2308,9 +2309,9 @@ var SIMULATOR = {};
 			var current_assault = field_p_assaults[i];
 
 			if (current_assault.timer > 0) {
-				if (turn !== 3 || !tournament) {
+				if (turn !== 3 || !simConfig.tournament) {
 					current_assault.timer--;
-					if (SIMULATOR.simConfig.debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
 				}
 			}
 
@@ -2320,8 +2321,8 @@ var SIMULATOR = {};
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack() && enemy.hasAttack()) {
 					var valor = adjustAttackIncrease(current_assault, current_assault.valor);
 					current_assault.attack_valor += valor;
-					if (SIMULATOR.simConfig.debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
-				} else if (SIMULATOR.simConfig.debug) {
+					if (simConfig.debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
+				} else if (simConfig.debug) {
 					echo += debug_name(current_assault) + ' activates valor but ';
 					if (!enemy) {
 						echo += 'there is no opposing enemy.<br/>';
