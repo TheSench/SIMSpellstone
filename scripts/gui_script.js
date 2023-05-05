@@ -686,7 +686,6 @@ function display_history() {
 // Initialize global variables
 var battle_history = '';
 var max_turns = 100;
-var found_desired = false;
 var showAnimations = false;
 var pvpAI = true;
 var echo = '';
