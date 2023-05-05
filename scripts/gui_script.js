@@ -338,8 +338,7 @@ function outputTurns(turnData, showAll) {
 // Return table of simulation results
 function showWinrate() {
 
-	if (suppressOutput) {
-	} else if (SIMULATOR.config.debug || SIMULATOR.simsLeft == 0) {
+	if (SIMULATOR.config.debug || SIMULATOR.simsLeft == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -685,4 +684,3 @@ var battle_history = '';
 var echo = '';
 var closeDiv = false;
 var choice = undefined;
-var suppressOutput = false;
