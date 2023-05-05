@@ -34,7 +34,7 @@
             setSimStatus("");
         }
 
-        current_timeout = setTimeout(run_sims);
+        SIMULATOR.current_timeout = setTimeout(run_sims);
 
         return false;
     };
@@ -48,7 +48,7 @@
         SIMULATOR.simulating = false;
 
         // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
+        if (SIMULATOR.current_timeout) clearTimeout(SIMULATOR.current_timeout);
         if (!SIMULATOR.userControlled) {
             setSimStatus("Simulations interrupted.", elapse, simpersec);
             showWinrate();
@@ -99,7 +99,7 @@
                 // if ((SIMULATOR.simConfig.debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(run_sims, 1);
+                SIMULATOR.current_timeout = setTimeout(run_sims, 1);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     run_sim();
                 }
