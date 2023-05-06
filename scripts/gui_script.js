@@ -682,4 +682,3 @@ function display_history() {
 // Initialize global variables
 var battle_history = '';
 var echo = '';
-var choice = undefined;

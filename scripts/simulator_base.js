@@ -2274,7 +2274,7 @@ var SIMULATOR = {};
 		var simConfig = SIMULATOR.config;
 		simulation_turns = turn;
 
-		choice = undefined;
+		SIMULATOR.choice = undefined;
 
 		if (turn % 2) {
 			var p = first_player;
@@ -2428,11 +2428,11 @@ var SIMULATOR = {};
 			outputTurns(echo);
 			drawField(field, drawableHand, onCardChosen, turn);
 		}
-		if (choice === undefined) {
+		if (SIMULATOR.choice === undefined) {
 			return -1;
 
 		} else {
-			var card_picked = choice;
+			var card_picked = SIMULATOR.choice;
 			if (!card_picked) card_picked = 0;
 			return card_picked;
 		}

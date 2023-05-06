@@ -170,7 +170,7 @@ var CARD_GUI = {};
             if (callback) {
                 htmlCard.addEventListener("click", (function(inner) {
                     return function() {
-                        choice = inner;
+                        SIMULATOR.choice = inner;
                         callback(state);
                     };
                 })(i));
