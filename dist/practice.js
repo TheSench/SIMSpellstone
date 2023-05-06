@@ -14,376 +14,6 @@ for(var id in FUSIONS) {
 	REVERSE_FUSIONS[fusion] = id;
 };"use strict";
 
-var DATA_UPDATER = (function () {
-
-    var baseUrl = "https://spellstone.synapse-games.com";
-
-    var newCards = {};
-    var newBGEs = {};
-    var newFusions = {};
-    var lastUpdate = null;
-
-    function updateData(callback, forceUpdate) {
-
-        $("body").addClass("loading");
-        $("#loadingSplash").html("Checking for New Cards...");
-        // Don't update more than once per minute
-        var now = Date.now();
-        if (!lastUpdate || lastUpdate - now > 60000 || forceUpdate) {
-            lastUpdate = now;
-            newCards = {};
-            var promises = [];
-            promises.push(updateCards());
-            //promises.push(updateBGEs());
-            //promises.push(updateCampaignData());
-            var finishedLoading = function finishedLoading() {
-                saveCardCache();
-                doneLoading();
-                callback && callback();
-            };
-            $.when.apply($, promises).then(finishedLoading, finishedLoading);
-        } else {
-            if (callback) callback();
-        }
-    }
-
-    function updateBGEs() {
-        newBGEs = {};
-        return jQuery.ajax({
-            url: baseUrl + "/assets/battleground_effects.xml",
-            success: function (doc) {
-                var battlegrounds = doc.getElementsByTagName("battleground");
-                for (var i = 0; i < battlegrounds.length; i++) {
-                    var battleground = battlegrounds[i];
-                    var id = getValue(battleground, "id");
-                    var battlegroundData = getBattlegroundFromXML(battleground);
-
-                    if (JSON.stringify(BATTLEGROUNDS[id]) !== JSON.stringify(battlegroundData)) {
-                        newBGEs[id] = battlegroundData;
-                        BATTLEGROUNDS[id] = battlegroundData;
-                    }
-                }
-            },
-            async: true,
-            cache: false
-        });
-    }
-
-    function doneLoading() {
-        $("body").removeClass("loading");
-    }
-
-    var cardFiles = [
-        //"cards.xml"
-        "cards_heroes.xml",
-        "cards_premium_aether.xml",
-        "cards_premium_chaos.xml",
-        "cards_premium_wyld.xml",
-        "cards_reward.xml",
-        "cards_shard.xml",
-        "cards_special.xml",
-        "cards_standard.xml",
-        "cards_story.xml",
-        "fusion_recipes_cj2.xml"
-    ];
-    function updateCards() {
-        var promises = [];
-        for (var file = 0; file < cardFiles.length; file++) {
-            var promise = jQuery.ajax({
-                url: baseUrl + "/assets/" + cardFiles[file],
-                success: function (doc) {
-                    var trackNewCards = (typeof spoilers !== "undefined");
-                    var units = doc.getElementsByTagName("unit");
-                    for (var i = 0; i < units.length; i++) {
-                        var unit = units[i];
-                        var id = getValue(units[i], "id");
-                        var cardData = getUnitFromXML(units[i]);
-                        var newInfo = false;
-                        if (!CARDS[id]) {
-                            newInfo = true;
-                        } else if (JSON.stringify(CARDS[id]) !== JSON.stringify(cardData)) {
-                            newInfo = true;
-                        }
-                        if (newInfo) {
-                            if (trackNewCards) {
-                                spoilers[id] = true;
-                            }
-                            newCards[id] = cardData;
-                        }
-                        CARDS[id] = cardData;
-                    }
-                    var fusions = doc.getElementsByTagName("fusion_recipe");
-                    for (var i = 0; i < fusions.length; i++) {
-                        var node = fusions[i];
-                        var fusion = getValue(node, "card_id", false);
-                        var resource = node.getElementsByTagName("resource")[0];
-                        if (resource) {
-                            var base = getValue(resource, "card_id", true);
-                            if (!FUSIONS[base] || FUSIONS[base] != fusion) {
-                                newFusions[base] = fusion;
-                                FUSIONS[base] = fusion;
-                            }
-                        }
-                    }
-                },
-                async: true,
-                cache: false
-            });
-            promises.push(promise);
-        }
-
-        return $.when.apply($, promises);
-    }
-
-    function saveCardCache() {
-        if (typeof storageAPI !== "undefined") {
-            var cardData = storageAPI.getField("GameData", "CardCache");
-
-            if (cardData) {
-                cardData.newCards = (cardData.newCards || {});
-                cardData.newFusions = (cardData.newFusions || {});
-                $.extend(cardData.newCards, newCards);
-                $.extend(cardData.newFusions, newFusions);
-            } else {
-                cardData = {
-                    newCards: newCards,
-                    newFusions: newFusions
-                };
-            }
-            cardData.lastUpdated = Date.now();
-
-            storageAPI.setField("GameData", "CardCache", cardData);
-        }
-    }
-
-    function getUnitFromXML(node) {
-        var unit = {};
-        unit.id = getValue(node, "id");
-        unit.name = getValue(node, "name");
-        addField(unit, node, "desc");
-        unit.picture = getValue(node, "picture") || prefix(getValue(node, "asset_prefab"), "prefab_");
-        if (!unit.picture) {
-            var portrait = getValue(node, "portrait");
-            if (portrait) {
-                unit.picture = "portrait_" + portrait.toLowerCase().replace("portrait_", "");
-            } else {
-                unit.picture = "NotFound";
-            }
-        }
-        var hidden_until = (getValue(node, "hidden_until") || getValue(node, "hidden_until_time"));
-        if (hidden_until) unit.hidden_until = hidden_until + "000";
-        unit.rarity = getValue(node, "rarity");
-        unit.set = getValue(node, "set");
-        unit.card_type = getValue(node, "card_type") || "2";
-        addNumericField(unit, node, "shard_card");
-        unit.type = getValue(node, "type") || 0;
-        unit.sub_type = (getValues(node, "sub_type") || []);
-
-        addNumericField(unit, node, "health");
-        if (unit.card_type != "1") {
-            addNumericField(unit, node, "attack");
-            addNumericField(unit, node, "cost");
-        }
-        var upgrades = getUpgradesFromXML(node);
-        unit.maxLevel = 1 + Object.keys(upgrades).length;
-
-        unit.skill = getSkillsFromXML(node);
-        unit.upgrades = upgrades;
-
-        return unit;
-    }
-
-    function getSkillsFromXML(node) {
-        var children = node.childNodes;
-        var skills = [];
-        for (var i = 0; i < children.length; i++) {
-            var child = children[i];
-            if (child.nodeName === "skill") {
-                skills.push(getSkillFromXML(child));
-            }
-        }
-        return skills;
-    }
-
-    function getSkillFromXML(node) {
-        var skill = {
-            id: getValue(node, "id", true)
-        };
-        addNumericField(skill, node, "x", true);
-        addNumericField(skill, node, "mult", true);
-        addNumericField(skill, node, "on_delay_mult", true);
-        addField(skill, node, "y", true);
-        addNumericField(skill, node, "z", true);
-        addNumericField(skill, node, "c", true);
-        addField(skill, node, "s", true);
-        addField(skill, node, "all", true);
-        return skill;
-    }
-
-    function getUpgradesFromXML(node) {
-        var nodes = node.getElementsByTagName("upgrade");
-        var upgrades = {};
-        for (var i = 0; i < nodes.length; i++) {
-            upgrades[i + 2] = getUpgradeFromXML(nodes[i]);
-        }
-        return upgrades;
-    }
-
-    function getUpgradeFromXML(node) {
-        var upgrade = {};
-        addNumericField(upgrade, node, "attack");
-        addNumericField(upgrade, node, "health");
-        addNumericField(upgrade, node, "cost");
-        addField(upgrade, node, "desc");
-        upgrade.skill = getSkillsFromXML(node);
-        return upgrade;
-    }
-
-    function getBattlegroundFromXML(node) {
-        var battleground = {};
-        battleground.id = getValue(node, "id");
-        battleground.name = getValue(node, "name");
-        battleground.desc = getValue(node, "desc");
-        battleground.desc = getBool(node, "enemy_only");
-        addField(battleground, node, "scale_with_level");
-        addField(battleground, node, "starting_level");
-
-        return battleground;
-    }
-
-    function addField(object, node, field, isAtt) {
-        var value = getValue(node, field, isAtt);
-        if (value != null && value.length > 0) {
-            object[field] = value;
-        }
-    }
-
-    function addNumericField(object, node, field, isAtt) {
-        var value = getNumeric(node, field, isAtt);
-        if (value >= 0) {
-            object[field] = value;
-        }
-    }
-
-    function getValue(node, name, isAtt) {
-        if (isAtt) {
-            return node.getAttribute(name);
-        } else {
-            var values = getValues(node, name);
-            return (values ? values[0] : null);
-        }
-    }
-
-    function getBool(node, name, isAtt) {
-        var val;
-        if (isAtt) {
-            val = node.getAttribute(name);
-        } else {
-            var values = getValues(node, name);
-            val = (values ? values[0] : null);
-        }
-        return (val == 1);
-    }
-
-    function prefix(value, prefix) {
-        if (value) {
-            return prefix + value;
-        } else {
-            return value;
-        }
-    }
-
-    function getValues(node, name) {
-        var values = null;
-        var tags = $(node).children(name);
-        if (tags.length > 0) {
-            values = [];
-            for (var i = 0; i < tags.length; i++) {
-                values.push(tags[i].textContent);
-            }
-        }
-        return values;
-    }
-
-    function getNumeric(node, tagName, isAtt) {
-        var value = getValue(node, tagName, isAtt);
-        if (value != null) {
-            return Number(value);
-        } else {
-            return -1;
-        }
-    }
-
-    function updateCampaignData() {
-        var promises = [];
-        promises.push(updateCampaigns());
-        promises.push(updateMissions("/assets/missions.xml"));
-        promises.push(updateMissions("/assets/missions_event.xml"));
-        return $.when.apply($, promises);
-    }
-
-    function updateCampaigns() {
-        jQuery.ajax({
-            url: baseUrl + "/assets/campaigns.xml",
-            success: function (doc) {
-                var campaigns = doc.getElementsByTagName("campaign");
-                for (var i = 0; i < campaigns.length; i++) {
-                    var campaign = campaigns[i];
-                    var id = getValue(campaign, "id");
-                    if (!CAMPAIGNS[id]) {
-                        CAMPAIGNS[id] = getCampaignFromXML(campaign);
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
-    }
-
-    function getCampaignFromXML(node) {
-        var campaign = {
-            id: getValue(node, "id"),
-            name: getValue(node, "name"),
-            missions: getCampaignMissionsFromXML(node)
-        };
-        return campaign;
-    }
-
-    function getCampaignMissionsFromXML(node) {
-        var nodes = node.getElementsByTagName("mission_id");
-        var missions = [];
-        for (var i = 0; i < nodes.length; i++) {
-            missions.push(nodes[i].innerHTML);
-        }
-        return missions;
-    }
-
-    function updateMissions(fileURL) {
-        jQuery.ajax({
-            url: baseUrl + fileURL,
-            success: function (doc) {
-                var missions = doc.getElementsByTagName("mission");
-                for (var i = 0; i < missions.length; i++) {
-                    var mission = missions[i];
-                    var id = getValue(mission, "id");
-                    if (!MISSIONS[id]) {
-                        MISSIONS[id] = {
-                            id: id,
-                            name: getValue(mission, "name")
-                        };
-                    }
-                }
-            },
-            async: false,
-            cache: false
-        });
-    }
-
-    return {
-        updateData: updateData
-    };
-})();;"use strict";
-
 window.loadCardCache = function loadCardCache() {
     var cardData = storageAPI.getField("GameData", "CardCache");
     if (cardData && cardData.lastUpdated > DataUpdated) {
@@ -1076,7 +706,7 @@ var adjustAttackIncrease = function(card, originalIncrease) {
     if (card.attackIncreasePrevention) {
         var adjustment = Math.min(card.attackIncreasePrevention, originalIncrease);
         card.attackIncreasePrevention -= adjustment;
-        if (debug) { echo += '<u>(' + adjustment + ' attack increase prevented by weaken, ' + card.attackIncreasePrevention + ' prevention remains)</u><br/>'}
+        if (SIMULATOR.config.debug) { echo += '<u>(' + adjustment + ' attack increase prevented by weaken, ' + card.attackIncreasePrevention + ' prevention remains)</u><br/>'}
         return originalIncrease - adjustment;
     } else {
         return originalIncrease;
@@ -1282,7 +912,7 @@ var MakeTrap = (function() {
                     var index = (~~(Math.random() * targets.length));
                     targets[index].trap = trap;
 
-                    if (debug) {
+                    if (SIMULATOR.config.debug) {
                         echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
                     }
                 }
@@ -1295,7 +925,7 @@ var MakeTrap = (function() {
     });
 }());
 
-var getBattlegrounds = function(getbattleground, selfbges, enemybges, mapbges, campaignID, missionlevel, raidID, raidlevel) {
+var getBattlegrounds = function(simConfig) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -1303,23 +933,22 @@ var getBattlegrounds = function(getbattleground, selfbges, enemybges, mapbges, c
         onTurn: [],
         onCardPlayed: []
     };
+    addBgesFromList(battlegrounds, simConfig.getbattleground);
+    addBgesFromList(battlegrounds, simConfig.selfbges, 'player');
+    addBgesFromList(battlegrounds, simConfig.enemybges, 'cpu');
+    addMapBGEs(battlegrounds, simConfig.mapbges, 'player');
 
-    addBgesFromList(battlegrounds, getbattleground);
-    addBgesFromList(battlegrounds, selfbges, 'player');
-    addBgesFromList(battlegrounds, enemybges, 'cpu');
-    addMapBGEs(battlegrounds, mapbges, 'player');
-
-    if (campaignID) {
-        addMissionBGE(battlegrounds, campaignID, missionlevel);
-    } else if (raidID) {
-        addRaidBGE(battlegrounds, raidID, raidlevel);
+    if (simConfig.campaignID) {
+        addMissionBGE(battlegrounds, simConfig.campaignID, simConfig.missionLevel);
+    } else if (simConfig.raidID) {
+        addRaidBGE(battlegrounds, simConfig.raidID, simConfig.raidLevel);
     }
     return battlegrounds;
 };
 
-function addBgesFromList(battlegrounds, getbattleground, player) {
-    if (!getbattleground) return null;
-    var selected = getbattleground.split(",");
+function addBgesFromList(battlegrounds, battlegroundsToAdd, player) {
+    if (!battlegroundsToAdd) return null;
+    var selected = battlegroundsToAdd.split(",");
     for (var i = 0; i < selected.length; i++) {
         var id = selected[i];
         var battleground = BATTLEGROUNDS[id];
@@ -2404,48 +2033,58 @@ var factions = {
 var SIM_CONTROLLER = (function () {
 
     function getConfiguration() {
-        getdeck = $('#deck1').val();
-        getordered = $('#ordered').is(':checked');
-        getexactorder = $('#exactorder').is(':checked');
-
-        getdeck2 = $('#deck2').val();
-        getcampaign = $('#campaign').val();
-        getmission = $('#mission').val();
-        missionlevel = $('#mission_level').val();
-        getraid = $('#raid').val();
-        raidlevel = $('#raid_level').val();
-        getordered2 = $('#ordered2').is(':checked');
-        getexactorder2 = $('#exactorder2').is(':checked');
-        surge = $('#surge').is(':checked');
-
-        getsiege = $('#siege').is(':checked');
-        tower_level = $('#tower_level').val();
-        tower_type = $('#tower_type').val();
-
-        if (BATTLEGROUNDS) {
-            getbattleground = getSelectedBattlegrounds();
-            selfbges = getSelectedBattlegrounds("self-");
-            enemybges = getSelectedBattlegrounds("enemy-");
-            mapbges = (getmission ? getSelectedMapBattlegrounds() : "");
-        }
-
-        sims_left = $('#sims').val() || 1;
-
-        debug = $('#debug').is(':checked');
-        play_debug = debug && $('#play_debug').is(':checked');
-        if (play_debug) debug = false;
-        mass_debug = $('#mass_debug').is(':checked');
-        win_debug = $('#win_debug').is(':checked');
-        loss_debug = $('#loss_debug').is(':checked');
-        showAnimations = $('#animations').is(':checked');
+        var debug = $('#debug').is(':checked');
+        var logPlaysOnly = debug && $('#play_debug').is(':checked');
+        if (logPlaysOnly) debug = false;
+        var showAnimations = $('#animations').is(':checked');
 
         if ($('#auto_mode').length) {
-            auto_mode = $('#auto_mode').is(':checked');
-            SIMULATOR.user_controlled = !auto_mode;
+            var auto_mode = $('#auto_mode').is(':checked');
+            SIMULATOR.userControlled = !auto_mode;
         }
 
         // Not currently in UI - attacker's first card has +1 delay
-        tournament = $("#tournament").is(":checked");
+        var tournament = $("#tournament").is(":checked");
+
+        var missionID = $('#mission').val();
+        var simsToRun = ($('#sims').val() || 1);
+
+        return {
+            enemybges: BATTLEGROUNDS ? getSelectedBattlegrounds("enemy-") : '',
+            getbattleground: BATTLEGROUNDS ? getSelectedBattlegrounds() : '',
+            selfbges: BATTLEGROUNDS ? getSelectedBattlegrounds("self-") : '',
+            mapbges: BATTLEGROUNDS ? (missionID ? getSelectedMapBattlegrounds() : "") : '',
+
+            playerDeck: $('#deck1').val(),
+            playerOrdered: $('#ordered').is(':checked'),
+            playerExactOrdered: $('#ordered2').is(':checked'),
+
+            cpuDeck: $('#deck2').val(),
+            cpuOrdered: $('#ordered2').is(':checked'),
+            cpuExactOrdered: $('#exactorder2').is(':checked'),
+
+            surge: $('#surge').is(':checked'),
+
+            siegeMode: $('#siege').is(':checked'),
+            towerType: $('#tower_type').val(),
+            towerLevel: $('#tower_level').val(),
+
+            campaignID: $('#campaign').val(),
+            missionID: missionID,
+            missionLevel: $('#mission_level').val(),
+            raidID: $('#raid').val(),
+            raidLevel: $('#raid_level').val(),
+
+            showAnimations: showAnimations,
+            simsToRun: simsToRun,
+            tournament: tournament,
+
+            debug: debug,
+            logPlaysOnly: logPlaysOnly,
+            massDebug: $('#mass_debug').is(':checked'),
+            findFirstWin: $('#win_debug').is(':checked'),
+            findFirstLoss: $('#loss_debug').is(':checked'),
+        };
     }
 
     // Loops through all simulations
@@ -2454,13 +2093,13 @@ var SIM_CONTROLLER = (function () {
 
         var result = SIM_CONTROLLER.processSimResult();
 
-        sims_left = 0;
+        SIMULATOR.simsLeft = 0;
         matchTimer.stop();
 
 
         var msg;
         var points = "";
-        if (getdeck2) {
+        if (SIMULATOR.config.cpuDeck) {
             points = " (" + SIMULATOR.calculatePoints() + " points)";
         }
         if (result == 'draw') {
@@ -2478,8 +2117,6 @@ var SIM_CONTROLLER = (function () {
 
         showUI();
 
-        if (SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
-
         if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
     }
 
@@ -2496,35 +2133,37 @@ var SIM_CONTROLLER = (function () {
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
-        total_turns = 0;
+        SIMULATOR.total_turns = 0;
         matchTimer.reset();
         echo = '';
-        games = 0;
+        SIMULATOR.games = 0;
         run_sims_batch = 0;
 
-        SIM_CONTROLLER.getConfiguration();
+        var simConfig = SIM_CONTROLLER.getConfiguration();
+        SIMULATOR.simsLeft = simConfig.simsToRun;
+        SIMULATOR.config = simConfig;
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = getBattlegrounds(simConfig);
 
         hideUI();
 
         SIMULATOR.setupDecks();
 
-        wins = 0;
-        losses = 0;
-        draws = 0;
-        points = 0;
+        SIMULATOR.wins = 0;
+        SIMULATOR.losses = 0;
+        SIMULATOR.draws = 0;
+        SIMULATOR.points = 0;
 
         outp(""); // Clear display
-        if (!SIMULATOR.user_controlled) {
+        if (!SIMULATOR.userControlled) {
             hideTable();
             setSimStatus("Initializing simulations...");
         } else {
             setSimStatus("");
         }
 
-        current_timeout = setTimeout(run_sims);
+        SIMULATOR.current_timeout = setTimeout(run_sims);
 
         return false;
     };
@@ -2533,13 +2172,13 @@ var SIM_CONTROLLER = (function () {
     SIM_CONTROLLER.stopsim = function () {
         matchTimer.stop();
         var elapse = matchTimer.elapsed();
-        var simpersec = games / elapse;
+        var simpersec = SIMULATOR.games / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
 
         // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
-        if (!SIMULATOR.user_controlled) {
+        if (SIMULATOR.current_timeout) clearTimeout(SIMULATOR.current_timeout);
+        if (!SIMULATOR.userControlled) {
             setSimStatus("Simulations interrupted.", elapse, simpersec);
             showWinrate();
         }
@@ -2549,21 +2188,22 @@ var SIM_CONTROLLER = (function () {
     };
 
     function run_sims() {
+        var simConfig = SIMULATOR.config;
 
-        if (SIMULATOR.user_controlled) {
+        if (SIMULATOR.userControlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((debug || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((SIMULATOR.config.debug || simConfig.logPlaysOnly) && !simConfig.massDebug && !simConfig.findFirstLoss && !simConfig.findFirstWin) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
-        } else if (sims_left > 0) {
+        } else if (SIMULATOR.simsLeft > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + sims_left) * 100;
+                    var temp = SIMULATOR.games / (SIMULATOR.games + SIMULATOR.simsLeft) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -2581,14 +2221,14 @@ var SIM_CONTROLLER = (function () {
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > sims_left) // Also limit by how many sims are left
-                    run_sims_batch = sims_left;
+                if (run_sims_batch > SIMULATOR.simsLeft) // Also limit by how many sims are left
+                    run_sims_batch = SIMULATOR.simsLeft;
 
-                // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                // Batch messes up mass SIMULATOR.config.debug and loss SIMULATOR.config.debug! var's disable batch!
+                // if ((SIMULATOR.config.debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(run_sims, 1);
+                SIMULATOR.current_timeout = setTimeout(run_sims, 1);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     run_sim();
                 }
@@ -2599,7 +2239,7 @@ var SIM_CONTROLLER = (function () {
             matchTimer.stop();
 
             var elapse = matchTimer.elapsed();
-            var simpersec = games / elapse;
+            var simpersec = SIMULATOR.games / elapse;
             simpersec = simpersec.toFixed(2);
 
             if (echo) {
@@ -2626,6 +2266,7 @@ var SIM_CONTROLLER = (function () {
     }
 
     SIM_CONTROLLER.processSimResult = function () {
+        var simConfig = SIMULATOR.config;
 
         var result;
         if (!SIMULATOR.field.player.commander.isAlive()) {
@@ -2639,56 +2280,57 @@ var SIM_CONTROLLER = (function () {
         }
 
         if (run_sims_batch > 0) {
-            if (sims_left > 0) sims_left--;
+            if (SIMULATOR.simsLeft > 0) SIMULATOR.simsLeft--;
             run_sims_count++;
         }
 
         // Increment wins/losses/games
         if (result == 'draw') {
-            draws++;
+            SIMULATOR.draws++;
         } else if (result) {
-            wins++;
+            SIMULATOR.wins++;
         } else {
-            losses++;
+            SIMULATOR.losses++;
         }
-        points += SIMULATOR.calculatePoints();
-        games++;
-
+        SIMULATOR.points += SIMULATOR.calculatePoints();
+        SIMULATOR.games++;
+        
         // Increment total turn count
-        total_turns += SIMULATOR.simulation_turns;
-
-        if (debug || play_debug) {
-            if (loss_debug) {
+        SIMULATOR.total_turns += SIMULATOR.simulation_turns;
+        
+        var games = SIMULATOR.games;
+        if (SIMULATOR.config.debug || simConfig.logPlaysOnly) {
+            if (simConfig.findFirstLoss) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>DRAW</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else if (result) {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
                 } else {
                     echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>LOSS</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 }
-            } else if (win_debug) {
+            } else if (simConfig.findFirstWin) {
                 if (result && result != 'draw') {
                     echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>WIN</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
                 }
-            } else if (mass_debug) {
+            } else if (simConfig.massDebug) {
                 if (result == 'draw') {
                     echo += '<br><h1>DRAW</h1><br>';
                 } else if (result) {
@@ -2698,7 +2340,7 @@ var SIM_CONTROLLER = (function () {
                 }
             }
 
-            if (mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+            if (simConfig.massDebug && SIMULATOR.simsLeft) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
         }
 
         return result;
@@ -2726,7 +2368,7 @@ var SIM_CONTROLLER = (function () {
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((debug || play_debug) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+		if ((simConfig.debug || simConfig.logPlaysOnly) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
 
 		if (card.isTrap()) {
 			doEarlyActivationSkills(card);
@@ -2738,12 +2380,12 @@ var SIM_CONTROLLER = (function () {
 				var o = (p === 'player' ? 'cpu' : 'player');
 
 				if (battleground.defender) {
-					if (!surge && p != 'cpu') continue;
-					if (surge && p != 'player') continue;
+					if (!simConfig.surge && p != 'cpu') continue;
+					if (simConfig.surge && p != 'player') continue;
 					battleground.owner = o;
 				} else if (battleground.attacker) {
-					if (!surge && p != 'player') continue;
-					if (surge && p != 'cpu') continue;
+					if (!simConfig.surge && p != 'player') continue;
+					if (simConfig.surge && p != 'cpu') continue;
 					battleground.owner = p;
 				} else {
 					if (battleground.enemy_only && p != 'cpu') continue;
@@ -2758,7 +2400,7 @@ var SIM_CONTROLLER = (function () {
 				battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
 			}
 		}
-		if (showAnimations) {
+		if (simConfig.showAnimations) {
 			drawField(field, null, null, turn);
 		}
 	}
@@ -2777,13 +2419,13 @@ var SIM_CONTROLLER = (function () {
 			var current_assault = units[key];
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
-				if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
+						if (simConfig.debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
@@ -2829,7 +2471,7 @@ var SIM_CONTROLLER = (function () {
 			target.health_left -= damage;
 		}
 
-		if (debug) logFn(source, target, damage);
+		if (simConfig.debug) logFn(source, target, damage);
 
 		if (shatter) {
 			iceshatter(target);
@@ -2848,7 +2490,7 @@ var SIM_CONTROLLER = (function () {
 			target.health_left -= damage;
 		}
 
-		if (debug) logFn(source, target, damage);
+		if (simConfig.debug) logFn(source, target, damage);
 
 		// Silence
 		// - Target must have taken damage
@@ -2858,7 +2500,7 @@ var SIM_CONTROLLER = (function () {
 			// Remove passive statuses for this turn
 			target.invisible = 0;
 			target.warded = 0;
-			if (debug) echo += debug_name(source) + ' inflicts silence on ' + debug_name(target) + '<br>';
+			if (simConfig.debug) echo += debug_name(source) + ' inflicts silence on ' + debug_name(target) + '<br>';
 		}
 
 		if (!target.isAlive() && source) {
@@ -2886,7 +2528,7 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function notImplemented(src_card, skill) {
-		if (debug) {
+		if (simConfig.debug) {
 			var skillName = (SKILL_DATA[skill.id] ? SKILL_DATA[skill.id].name : skill.id);
 			echo += debug_name(src_card) + ' attempts to use ' + skillName + ' (' + skill.id + '), but it is not implemented.<br>';
 		}
@@ -2924,12 +2566,12 @@ var SIM_CONTROLLER = (function () {
 		if (len === 0) return;
 
 		if (source_card.silenced) {
-			if (debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>";
+			if (simConfig.debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
 		var dualstrike = source_card.dualstrike_triggered;
-		if (debug && dualstrike) {
+		if (simConfig.debug && dualstrike) {
 			// var main attack loop deal with resetting timer
 			echo += debug_name(source_card) + ' activates dualstrike<br>';
 		}
@@ -2946,7 +2588,7 @@ var SIM_CONTROLLER = (function () {
 						skill.countdown = skill.c;
 					}
 
-					if (showAnimations) {
+					if (simConfig.showAnimations) {
 						drawField(field, null, null, turn, source_card);
 					}
 				}
@@ -2966,7 +2608,6 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function doOnDeathSkills(dying, killer) {
-
 		if (dying.ondeath_triggered) return; // Check to make sure we don't trigger this twice
 
 		if(!dying.silenced) {
@@ -2980,7 +2621,7 @@ var SIM_CONTROLLER = (function () {
 					if (skill.id === "reanimate") {
 						// Do reanimate first, then the rest on the next "real" death (reanimate won't trigger again)
 						onDeathSkills[skill.id](dying, killer, skill);
-						if (showAnimations) {
+						if (simConfig.showAnimations) {
 							drawField(field, null, null, turn, dying);
 						}
 						return;
@@ -2992,7 +2633,7 @@ var SIM_CONTROLLER = (function () {
 				var skill = skills[i];
 				onDeathSkills[skill.id](dying, killer, skill);
 
-				if (showAnimations) {
+				if (simConfig.showAnimations) {
 					drawField(field, null, null, turn, dying);
 				}
 			}
@@ -3038,7 +2679,7 @@ var SIM_CONTROLLER = (function () {
 				src_card.scorched.amount += scorch;
 				src_card.scorched.timer = 2;
 			}
-			if (debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on itself<br>';
+			if (simConfig.debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on itself<br>';
 
 			return 1;
 		},
@@ -3085,7 +2726,7 @@ var SIM_CONTROLLER = (function () {
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				if (debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
 			}
 
 			return true;
@@ -3123,7 +2764,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -3131,7 +2772,7 @@ var SIM_CONTROLLER = (function () {
 				affected++;
 
 				target.confused = true;
-				if (debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -3193,7 +2834,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -3212,7 +2853,7 @@ var SIM_CONTROLLER = (function () {
 				if (additional) {
 					target[additional] = (target[additional] || 0) + protect_amt;
 				}
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect_amt;
 					if (typeof additionalDebug === "function") {
@@ -3246,7 +2887,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 				
@@ -3257,7 +2898,7 @@ var SIM_CONTROLLER = (function () {
 				if (target != src_card) protect_amt = Math.ceil(protect_amt/2);
 
 				target.protected += protect_amt;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' by ' + protect_amt;
 					echo += '<br>';
@@ -3296,7 +2937,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 				
@@ -3305,7 +2946,7 @@ var SIM_CONTROLLER = (function () {
 				target.protected += wingward;
 				var invisBoost = Math.ceil(wingward/2);
 				target.invisible += invisBoost;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + 
 						', protecting it by ' + wingward + 
@@ -3363,7 +3004,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -3389,7 +3030,7 @@ var SIM_CONTROLLER = (function () {
 					heal_amt = missingHealth;
 				}
 				target.health_left += heal_amt;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt;
 					if (additionalMaxHealth) echo += ' and increases its max health by ' + additionalMaxHealth;
@@ -3445,7 +3086,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -3535,7 +3176,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -3549,7 +3190,7 @@ var SIM_CONTROLLER = (function () {
 					target.poisoned += intensify;
 				}
 
-				if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' by ' + intensify + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' by ' + intensify + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -3600,7 +3241,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' ignites ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' ignites ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -3608,7 +3249,7 @@ var SIM_CONTROLLER = (function () {
 				affected++;
 
 				target.scorch(ignite);
-				if (debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -3628,7 +3269,7 @@ var SIM_CONTROLLER = (function () {
 
 			src_card.jammed = true;
 			src_card.jammedSelf = true;
-			if (debug) echo += debug_name(src_card) + ' freezes itself<br>';
+			if (simConfig.debug) echo += debug_name(src_card) + ' freezes itself<br>';
 
 			return 1;
 		},
@@ -3664,7 +3305,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -3672,7 +3313,7 @@ var SIM_CONTROLLER = (function () {
 				affected++;
 
 				target.jammed = true;
-				if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -3717,7 +3358,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -3762,7 +3403,7 @@ var SIM_CONTROLLER = (function () {
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
-			if (debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
+			if (simConfig.debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
 
 			return 1;
 		},
@@ -3811,7 +3452,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -3819,7 +3460,7 @@ var SIM_CONTROLLER = (function () {
 				affected++;
 
 				target['enfeebled'] += enfeeble;
-				if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -3899,7 +3540,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
@@ -3907,7 +3548,7 @@ var SIM_CONTROLLER = (function () {
 
 				target.attack_weaken += weaken;
 				target.attackIncreasePrevention += weaken;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
 				}
@@ -3958,7 +3599,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -3969,7 +3610,7 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				target.enraged += amount;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + amount + '<br>';
 				}
@@ -4008,7 +3649,7 @@ var SIM_CONTROLLER = (function () {
 					sourceCard.health_left += healing;
 				}
 
-				if (showAnimations) {
+				if (simConfig.showAnimations) {
 					drawField(field, null, null, turn, sourceCard);
 				}
 			}
@@ -4048,7 +3689,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' cleanses ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' cleanses ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -4063,7 +3704,7 @@ var SIM_CONTROLLER = (function () {
                 target.silenced = false;
                 target.confused = false;
 
-				if (debug) {
+				if (simConfig.debug) {
 					echo += debug_name(src_card) + ' cleanses ' + debug_name(target);
 					echo += '<br>';
 				}
@@ -4112,7 +3753,7 @@ var SIM_CONTROLLER = (function () {
 				rally_amt = adjustAttackIncrease(target, rally_amt);
 
 				target.attack_rally += rally_amt;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' enlarges ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 				}
@@ -4164,7 +3805,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -4175,7 +3816,7 @@ var SIM_CONTROLLER = (function () {
 				rally_amt = adjustAttackIncrease(target, rally_amt);
 
 				target.attack_rally += rally_amt;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 				}
@@ -4210,13 +3851,13 @@ var SIM_CONTROLLER = (function () {
 					// Check Nullify
 					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
-						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
+						if (simConfig.debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
 						var protectAmount = Math.ceil(rally * 0.5);
 						var rally_amt = adjustAttackIncrease(target, rally);
 						target.attack_rally += rally_amt;
 						target.protected += protectAmount;
-						if (debug) {
+						if (simConfig.debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 							echo += debug_name(src_card) + ' activates ' + skill.id +
 								', empowering ' + debug_name(target) + ' by ' + rally_amt +
@@ -4253,12 +3894,12 @@ var SIM_CONTROLLER = (function () {
 					// Check Nullify
 					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
-						if (debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
+						if (simConfig.debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
 						affected++;
 						var rally_amt = adjustAttackIncrease(target, rally);
 						target.attack_rally += rally_amt;
-						if (debug) {
+						if (simConfig.debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 							echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 						}
@@ -4301,7 +3942,7 @@ var SIM_CONTROLLER = (function () {
 			if (fervorAmount) {
 				fervorAmount = adjustAttackIncrease(src_card, fervorAmount);
 				src_card.attack_rally += fervorAmount;
-				if (debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
 				}
@@ -4356,7 +3997,7 @@ var SIM_CONTROLLER = (function () {
 					// Check Evade
 					if (target.invisible) {
 						target.invisible--;
-						if (debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
+						if (simConfig.debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
 						continue;
 					}
 
@@ -4427,7 +4068,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -4440,10 +4081,10 @@ var SIM_CONTROLLER = (function () {
 				var enhancements = target.enhanced;
 				enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
 				if (x > 0) {
-					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
 					enhancements[s].x += x;
 				} else if (mult > 0) {
-					if (debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
 					enhancements[s].mult += mult;
 				}
 			}
@@ -4498,7 +4139,7 @@ var SIM_CONTROLLER = (function () {
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -4507,11 +4148,11 @@ var SIM_CONTROLLER = (function () {
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
-					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
 					enhancements[s].x += x;
 				} else {
 					target.imbue(skill);
-					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(target, skill) + '<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(target, skill) + '<br>';
 				}
 			}
 
@@ -4558,7 +4199,7 @@ var SIM_CONTROLLER = (function () {
 				target.enfeebled += mark;
 				src_card.mark_target = target.uid;
 
-				if (debug) echo += debug_name(src_card) + ' marks ' + debug_name(target) + ' by ' + mark + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' marks ' + debug_name(target) + ' by ' + mark + '<br>';
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -4588,7 +4229,7 @@ var SIM_CONTROLLER = (function () {
 
 			target.timer += slow;
 
-			if (debug) {
+			if (simConfig.debug) {
 				echo += debug_name(src_card) + ' slows ' + debug_name(target) + ' by ' + slow + '<br>';
 			}
 
@@ -4621,7 +4262,7 @@ var SIM_CONTROLLER = (function () {
 			setPassiveStatus(unearthedCard, 'evade', 'invisible');
 			setPassiveStatus(unearthedCard, 'absorb', 'warded');
 
-			if (debug) {
+			if (simConfig.debug) {
 				echo += debug_name(unearthedCard) + ' is unearthed</br>';
 			}
 
@@ -4640,7 +4281,7 @@ var SIM_CONTROLLER = (function () {
 			dying.reanimated = true;
 			// TODO: Change art
 
-			if (debug) {
+			if (simConfig.debug) {
 				echo += ' and is reanimated</br>';
 			}
 
@@ -4677,7 +4318,7 @@ var SIM_CONTROLLER = (function () {
 			var weakest = choose_random_target(targets)[0];
 			weakest.attack_berserk += swarm;
 
-			if (debug) {
+			if (simConfig.debug) {
 				echo += debug_name(attacker) + ' activates swarm, boosting the attack of ' + debug_name(attacker) + ' by ' + swarm + '</br>';
 			}
 
@@ -4690,7 +4331,7 @@ var SIM_CONTROLLER = (function () {
 	function activation_skills(src_card) {
 
 		if (src_card.silenced) {
-			if (debug) echo += debug_name(src_card) + " is silenced and cannot use skills</br>";
+			if (simConfig.debug) echo += debug_name(src_card) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
@@ -4712,7 +4353,7 @@ var SIM_CONTROLLER = (function () {
 				skill.countdown = skill.c;
 			}
 
-			if (showAnimations) {
+			if (simConfig.showAnimations) {
 				drawField(field, null, null, turn, src_card);
 			}
 		}
@@ -4723,7 +4364,7 @@ var SIM_CONTROLLER = (function () {
 		SIMULATOR.simulation_turns = 0;
 
 		// Set up empty decks
-		var deck = {
+		deck = {
 			cpu: {
 				deck: []
 			},
@@ -4731,8 +4372,6 @@ var SIM_CONTROLLER = (function () {
 				deck: []
 			}
 		};
-
-		SIMULATOR.deck = deck;
 
 		// Set up empty field
 		var field = {
@@ -4746,34 +4385,29 @@ var SIM_CONTROLLER = (function () {
 		SIMULATOR.field = field;
 
 		// Load player deck
-		if (cache_player_deck_cards) {
-			deck['player'] = copy_deck(cache_player_deck_cards);
-		}
+		deck['player'] = copy_deck(simConfig.cache_player_deck_cards);
 
 		// Load enemy deck
-		if (getmission && missionlevel > 1 && missionlevel < 7) {
-			cache_cpu_deck = load_deck_mission(getmission, missionlevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
-		} else if (getraid) {
-			cache_cpu_deck = load_deck_raid(getraid, raidlevel);
-			cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+		if (simConfig.missionID && simConfig.missionLevel > 1 && simConfig.missionLevel < 7) {
+			var cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
+			simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+		} else if (simConfig.raidID) {
+			var cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
+			simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 		}
-		if (cache_cpu_deck_cards) {
-			deck['cpu'] = copy_deck(cache_cpu_deck_cards);
-		}
+		deck['cpu'] = copy_deck(simConfig.cache_cpu_deck_cards);
 
 		// Set up deck order priority reference
-		if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
-		if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+		if (simConfig.playerOrdered && !simConfig.playerExactOrdered) deck.player.ordered = copy_card_list(deck.player.deck);
+		if (simConfig.cpuOrdered && !simConfig.cpuExactOrdered) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
-		deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
-			: getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+		deck.player.chooseCard = (SIMULATOR.userControlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
+			: simConfig.playerOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
 				: chooseCardRandomly);                     // Player AI falls back on picking a random card
 
-		deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
-								: */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
-				: pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
-					: getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
+		deck.cpu.chooseCard = (simConfig.cpuOrdered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+				: simConfig.pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
+					: simConfig.cpuExactOrdered ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
 						: chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
 	}
 
@@ -4784,15 +4418,15 @@ var SIM_CONTROLLER = (function () {
 		initializeBattle();
 
 		// Shuffle decks
-		if (getexactorder) {
-			if (!getordered) {
+		if (simConfig.playerExactOrdered) {
+			if (!simConfig.playerOrdered) {
 				deck.player.shuffleHand = true;
 			}
 		} else {
 			shuffle(deck.player.deck);
 		}
-		if (getexactorder2) {
-			if (!getordered2) {
+		if (simConfig.cpuExactOrdered) {
+			if (!simConfig.cpuOrdered) {
 				deck.cpu.shuffleHand = true;
 			}
 		} else {
@@ -4801,9 +4435,9 @@ var SIM_CONTROLLER = (function () {
 
 		setupField(field);
 
-		if (getsiege) {
-			var towerBGE = BATTLEGROUNDS[tower_type];
-			var tower = towerBGE.effect[tower_level];
+		if (simConfig.siegeMode) {
+			var towerBGE = BATTLEGROUNDS[simConfig.towerType];
+			var tower = towerBGE.effect[simConfig.towerLevel];
 			if (tower) {
 				tower = makeUnitInfo(tower.id, tower.level);
 				var towerCard = get_card_apply_battlegrounds(tower);
@@ -4821,28 +4455,31 @@ var SIM_CONTROLLER = (function () {
 	function setupDecks() {
 		// Cache decks where possible
 		// Load player deck
-		if (getdeck) {
-			cache_player_deck = hash_decode(getdeck);
+		var cache_player_deck;
+		if (simConfig.playerDeck) {
+			cache_player_deck = hash_decode(simConfig.playerDeck);
 		} else {
 			cache_player_deck = createEmptyDeck();
 		}
-		cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
+		simConfig.cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
 		// Load enemy deck
-		pvpAI = true;
-		if (getdeck2) {
-			cache_cpu_deck = hash_decode(getdeck2);
-			if (getmission) pvpAI = false;
-		} else if (getmission) {
-			cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+		var pvpAI = true;
+		var cache_cpu_deck;
+		if (simConfig.cpuDeck) {
+			cache_cpu_deck = hash_decode(simConfig.cpuDeck);
+			if (simConfig.missionID) pvpAI = false;
+		} else if (simConfig.missionID) {
+			cache_cpu_deck = load_deck_mission(simConfig.missionID, simConfig.missionLevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
-		} else if (getraid) {
-			cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+		} else if (simConfig.raidID) {
+			cache_cpu_deck = load_deck_raid(simConfig.raidID, simConfig.raidLevel);
 			pvpAI = false;    // PvE decks do not use "Smart AI"
 		} else {
 			cache_cpu_deck = createEmptyDeck();
 		}
-		cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
+		simConfig.pvpAI = pvpAI;
+		simConfig.cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 	}
 
 	function setupField(field) {
@@ -4873,30 +4510,23 @@ var SIM_CONTROLLER = (function () {
 		});
 	}
 
-	SIMULATOR.pause = false;
-
 	function onCardChosen(turn, drawCards) {
 		clearFrames();
 		performTurns(turn, drawCards);
 	}
 
 	function performTurns(turn, drawCards) {
-		if (SIMULATOR.pause) {
-			SIMULATOR.pause = false;
-			return false;
-		}
 		var done = performTurnsInner(turn, drawCards);
-		if (done && user_controlled) {
+		if (done && SIMULATOR.userControlled) {
 			SIM_CONTROLLER.debug_end();
 		}
 		return done;
 	}
-	SIMULATOR.performTurns = performTurns;
 
 	function performTurnsInner(turn, drawCards) {
 		// Set up players
 		var first_player, second_player;
-		if (surge) {
+		if (simConfig.surge) {
 			first_player = 'cpu';
 			second_player = 'player';
 		} else {
@@ -4905,12 +4535,6 @@ var SIM_CONTROLLER = (function () {
 		}
 
 		if (turn > 0) {
-			if (livePvP) {
-				if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
-					simulating = false;
-					return true;
-				}
-			}
 			// Retry this turn - don't bother doing setup all over again
 			if (!performTurn(turn, field, first_player, second_player, drawCards)) {
 				// Try this turn again
@@ -4920,14 +4544,12 @@ var SIM_CONTROLLER = (function () {
 				simulating = false;
 				return true;
 			}
-		} else if (!surge && SIMULATOR.sendBattleUpdate) {
-			SIMULATOR.sendBattleUpdate(turn);
 		}
 
 		turn++;
 		// Continue simulation
-		for (; turn <= max_turns + 1; turn++) {
-			if (turn == max_turns + 1) {
+		for (; turn <= maxTurns + 1; turn++) {
+			if (turn == maxTurns + 1) {
 				// Ended in draw
 				simulating = false;
 				return true;
@@ -4940,7 +4562,7 @@ var SIM_CONTROLLER = (function () {
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+				if (simConfig.debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 				return true;
 			}
 		}
@@ -4957,7 +4579,7 @@ var SIM_CONTROLLER = (function () {
 			var o = first_player;
 		}
 
-		closeDiv = false;
+		SIMULATOR.closeDiv = false;
 		if (!choose_card(p, turn, drawCards)) {
 			return false;
 		} else {
@@ -4978,7 +4600,7 @@ var SIM_CONTROLLER = (function () {
 	function setup_turn(turn, first_player, second_player, field) {
 		simulation_turns = turn;
 
-		choice = undefined;
+		SIMULATOR.choice = undefined;
 
 		if (turn % 2) {
 			var p = first_player;
@@ -4988,7 +4610,7 @@ var SIM_CONTROLLER = (function () {
 			var o = first_player;
 		}
 
-		if (debug) {
+		if (simConfig.debug) {
 			var commander_p = debug_name(field[p]['commander']);
 			var deck_p = deck[p].deck;
 			echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u><br>';
@@ -5014,9 +4636,9 @@ var SIM_CONTROLLER = (function () {
 			var current_assault = field_p_assaults[i];
 
 			if (current_assault.timer > 0) {
-				if (turn !== 3 || !tournament) {
+				if (turn !== 3 || !simConfig.tournament) {
 					current_assault.timer--;
-					if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
 				}
 			}
 
@@ -5026,8 +4648,8 @@ var SIM_CONTROLLER = (function () {
 				if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack() && enemy.hasAttack()) {
 					var valor = adjustAttackIncrease(current_assault, current_assault.valor);
 					current_assault.attack_valor += valor;
-					if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
-				} else if (debug) {
+					if (simConfig.debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + valor + '<br/>';
+				} else if (simConfig.debug) {
 					echo += debug_name(current_assault) + ' activates valor but ';
 					if (!enemy) {
 						echo += 'there is no opposing enemy.<br/>';
@@ -5056,14 +4678,9 @@ var SIM_CONTROLLER = (function () {
 		var deck_p = deck[p];
 		var deck_p_deck = deck_p.deck;
 		var deck_p_ordered = deck_p['ordered'];
-		var isOrdered = (p == 'player' ? getordered : getordered2);
 
-		if (livePvP && p === 'cpu' && drawCards) {
-			waitForOpponent(p, deck_p_deck, deck_p_ordered, turn, drawCards);
-			return false;
-		} else if (deck_p_deck[0]) {
+		if (deck_p_deck[0]) {
 			// Deck not empty yet
-			SIMULATOR.waiting = false;
 			var card_picked = 0;
 
 			if (deck_p_deck.length == 1) {
@@ -5099,26 +4716,10 @@ var SIM_CONTROLLER = (function () {
 
 	}
 
-	function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
-
-		SIMULATOR.waiting = true;
-		closeDiv = true;
-
-		if (drawCards) {
-			hideTable();
-			outputTurns(echo);
-			drawField(field, null, performTurns, turn);
-			SIMULATOR.sendBattleUpdate(turn);
-		}
-
-		return -1;
-	}
-	SIMULATOR.waitForOpponent = waitForOpponent;
-
 	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
 		// Prepare 3-card hand
 		var hand = shuffledDeck.slice(0, 3);
-		closeDiv = true;
+		SIMULATOR.closeDiv = true;
 		var cardsInHand = [];
 		var drawableHand = [];
 		for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
@@ -5133,11 +4734,11 @@ var SIM_CONTROLLER = (function () {
 			outputTurns(echo);
 			drawField(field, drawableHand, onCardChosen, turn);
 		}
-		if (choice === undefined) {
+		if (SIMULATOR.choice === undefined) {
 			return -1;
 
 		} else {
-			var card_picked = choice;
+			var card_picked = SIMULATOR.choice;
 			if (!card_picked) card_picked = 0;
 			return card_picked;
 		}
@@ -5298,7 +4899,7 @@ var SIM_CONTROLLER = (function () {
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
 				}
-				if (debug) echo += debug_name(current_assault) + ' is not active yet<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' is not active yet<br>';
 				continue;
 			}
 
@@ -5308,14 +4909,14 @@ var SIM_CONTROLLER = (function () {
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
 				}
-				if (debug) echo += debug_name(current_assault) + ' is frozen and cannot attack<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' is frozen and cannot attack<br>';
 				continue;
 			}
 
 			var activations = 1;
 			if (current_assault.dualstrike_triggered) {
 				activations++;
-				if (debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
 			}
 
 			for (; activations > 0; activations--) {
@@ -5334,7 +4935,7 @@ var SIM_CONTROLLER = (function () {
 				// Check attack
 				// - check rally and weaken
 				if (!current_assault.hasAttack()) {
-					if (debug && current_assault.permanentAttack() > 0) echo += debug_name(current_assault) + ' is weakened and cannot attack<br>';
+					if (simConfig.debug && current_assault.permanentAttack() > 0) echo += debug_name(current_assault) + ' is weakened and cannot attack<br>';
 					continue;
 				}
 
@@ -5377,7 +4978,7 @@ var SIM_CONTROLLER = (function () {
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		remove_dead();
 
-		if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+		if (simConfig.debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -5419,7 +5020,7 @@ var SIM_CONTROLLER = (function () {
 		}
 
 		var echo = '';
-		if (debug) {
+		if (simConfig.debug) {
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 			if (envenomed) echo += ' Venom: +' + envenomed;
 			if (shrouded) echo += ' Shroud: -' + shrouded;
@@ -5457,7 +5058,7 @@ var SIM_CONTROLLER = (function () {
 		if (dualStrike && dualStrike.countdown) {
 			dualStrike.countdown--;
 
-			if (debug) {
+			if (simConfig.debug) {
 				if (dualStrike.countdown) {
 					echo += debug_name(unit) + ' charges  dualstrike (ready in ' + dualStrike.countdown + ' turns)<br/>';
 				} else {
@@ -5472,7 +5073,7 @@ var SIM_CONTROLLER = (function () {
 			var skill = skills[i];
 			if (skill.countdown) {
 				skill.countdown--;
-				if (debug) {
+				if (simConfig.debug) {
 					if (skill.countdown) {
 						echo += debug_name(unit) + ' charges ' + convertName(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
 					} else {
@@ -5518,7 +5119,7 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				current_assault.health_left += regen_health;
-				if (debug) echo += debug_name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
 			}
 
 			// Poison
@@ -5583,13 +5184,13 @@ var SIM_CONTROLLER = (function () {
 				if (corroded.timer < 0) {
 					current_assault.corroded = false;
 					current_assault.attack_corroded = 0;
-					if (debug) {
+					if (simConfig.debug) {
 						echo += debug_name(current_assault) + ' recovers from corrosion<br>';
 					}
 				} else {
 					var corrosion = corroded.amount;
 					current_assault.attack_corroded = corrosion;
-					if (debug) {
+					if (simConfig.debug) {
 						echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 					}
 				}
@@ -5609,7 +5210,6 @@ var SIM_CONTROLLER = (function () {
 	}
 
 	function doAttack(current_assault, originalTarget, field_o_assaults, field_o_commander) {
-
 		var target = originalTarget
 		// -- START ATTACK SEQUENCE --
 		if (!target) {
@@ -5621,7 +5221,7 @@ var SIM_CONTROLLER = (function () {
 		} else if (!target.isAlive()) {
 			if (current_assault.confused && originalTarget.owner === current_assault.owner) {
 				// shouldn't reach this anymore (switches DS target or doesn't attack non-existing target)
-				if (debug) echo += debug_name(current_assault) + ' is confused and attacks ' + debug_name(target) + ', but it is already dead<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' is confused and attacks ' + debug_name(target) + ', but it is already dead<br>';
 				// If a confused unit killed an adjacent ally, don't target enemy/commander on subsequent hits of same turn
 				return
 			}
@@ -5643,7 +5243,7 @@ var SIM_CONTROLLER = (function () {
 					}
 				}
 			}
-			if (taunted && debug) echo += debug_name(target) + ' taunts ' + debug_name(current_assault);
+			if (taunted && simConfig.debug) echo += debug_name(target) + ' taunts ' + debug_name(current_assault);
 		}
 
 		// -- CALCULATE DAMAGE --
@@ -5669,7 +5269,7 @@ var SIM_CONTROLLER = (function () {
 		var heartseeker = target.heartseeker;
 		damage += heartseeker;
 
-		if (debug) {
+		if (simConfig.debug) {
 			echo += '<u>(Attack: +' + current_assault.attack;
 			if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
 			if (current_assault.attack_valor) echo += ' Valor: +' + current_assault.attack_valor;
@@ -5699,18 +5299,18 @@ var SIM_CONTROLLER = (function () {
 		var shrouded = (target.silenced ? 0 : checkShroud(target));
 		// Barrier is applied BEFORE Armor
 		if (protect) {
-			if (debug) {
+			if (simConfig.debug) {
 				echo += ' Barrier: -' + protect;
 			}
 			// Remove pierce from Barrier
 			if (pierce) {
 				if (pierce >= protect) {
-					if (debug) echo += ' Pierce: +' + protect;
+					if (simConfig.debug) echo += ' Pierce: +' + protect;
 					pierce -= protect;
 					protect = 0;
 					target.protected = 0;
 				} else {
-					if (debug) echo += ' Pierce: +' + pierce;
+					if (simConfig.debug) echo += ' Pierce: +' + pierce;
 					protect -= pierce;
 					target.protected -= pierce;
 					// Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
@@ -5731,16 +5331,16 @@ var SIM_CONTROLLER = (function () {
 		}
 		if (shrouded) {
 			shrouded += getEnhancement(target, 'stasis', shrouded);
-			if (debug) {
+			if (simConfig.debug) {
 				echo += ' Shroud: -' + shrouded;
 			}
 			// Remove pierce from Shroud
 			if (pierce) {
 				if (pierce > shrouded) {
-					if (debug) echo += ' Pierce: +' + shrouded;
+					if (simConfig.debug) echo += ' Pierce: +' + shrouded;
 					shrouded = 0;
 				} else {
-					if (debug) echo += ' Pierce: +' + pierce;
+					if (simConfig.debug) echo += ' Pierce: +' + pierce;
 					shrouded -= pierce;
 				}
 			}
@@ -5748,16 +5348,16 @@ var SIM_CONTROLLER = (function () {
 		}
 		if (armor) {
 			armor += getEnhancement(target, 'armored', armor);
-			if (debug) {
+			if (simConfig.debug) {
 				echo += ' Armor: -' + armor;
 			}
 			// Remove pierce from Armor
 			if (pierce) {
 				if (pierce > armor) {
-					if (debug) echo += ' Pierce: +' + armor;
+					if (simConfig.debug) echo += ' Pierce: +' + armor;
 					armor = 0;
 				} else {
-					if (debug) echo += ' Pierce: +' + pierce;
+					if (simConfig.debug) echo += ' Pierce: +' + pierce;
 					armor -= pierce;
 				}
 			}
@@ -5766,7 +5366,7 @@ var SIM_CONTROLLER = (function () {
 
 		if (damage < 0) damage = 0;
 
-		if (debug) echo += ') = ' + damage + ' damage</u><br>';
+		if (simConfig.debug) echo += ') = ' + damage + ' damage</u><br>';
 
 		// -- END OF CALCULATE DAMAGE --
 
@@ -5778,7 +5378,7 @@ var SIM_CONTROLLER = (function () {
 			echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
 		});
 
-		if (showAnimations) {
+		if (simConfig.showAnimations) {
 			drawField(field, null, null, turn, current_assault);
 		}
 
@@ -5799,7 +5399,7 @@ var SIM_CONTROLLER = (function () {
 				poison += enhanced;
 				if (poison > target.poisoned) {
 					target.poisoned = poison;
-					if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
 				}
 			}
 
@@ -5815,7 +5415,7 @@ var SIM_CONTROLLER = (function () {
 
 				if (venom > target.envenomed) {
 					target.envenomed = venom;
-					if (debug) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
 				}
 			}
 
@@ -5827,7 +5427,7 @@ var SIM_CONTROLLER = (function () {
 				var enhanced = getEnhancement(current_assault, 'nullify', nullify);
 				nullify += enhanced;
 				target.nullified += nullify;
-				if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
 			}
 
 			// Daze
@@ -5840,7 +5440,7 @@ var SIM_CONTROLLER = (function () {
 				dazed += enhanced;
 
 				target.attack_weaken += dazed;
-				if (debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target) + ' for ' + dazed + '<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' dazed ' + debug_name(target) + ' for ' + dazed + '<br>';
 			}
 		}
 
@@ -5868,7 +5468,7 @@ var SIM_CONTROLLER = (function () {
 					}
 
 					current_assault.health_left += leech_health;
-					if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
 				}
 
 				if (current_assault.reinforce) {
@@ -5877,7 +5477,7 @@ var SIM_CONTROLLER = (function () {
 					reinforce += enhanced;
 
 					current_assault.protected += reinforce;
-					if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
 				}
 
 				// Devour
@@ -5896,7 +5496,7 @@ var SIM_CONTROLLER = (function () {
 						current_assault.health_left += healing;
 					}
 
-					if (debug) {
+					if (simConfig.debug) {
 						echo += debug_name(current_assault) + ' activates devour, gaining ' + devour + ' attack';
 						if(healing) echo += ' and healing ' + healing + ' health';
 						echo += '<br>';
@@ -5927,7 +5527,7 @@ var SIM_CONTROLLER = (function () {
 					current_assault.scorched.amount += scorch;
 					current_assault.scorched.timer = 2;
 				}
-				if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+				if (simConfig.debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
 			}
 
 			// Counterpoison
@@ -5939,7 +5539,7 @@ var SIM_CONTROLLER = (function () {
 
 				if (poison > current_assault.poisoned) {
 					current_assault.poisoned = poison;
-					if (debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
+					if (simConfig.debug) echo += debug_name(target) + ' inflicts counterpoison(' + poison + ') on ' + debug_name(current_assault) + '<br>';
 				}
 			}
 
@@ -5948,7 +5548,7 @@ var SIM_CONTROLLER = (function () {
 				enraged = adjustAttackIncrease(target, enraged);
 				if (target.isAlive()) {
 					target.attack_berserk += enraged;
-					if (debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
+					if (simConfig.debug) echo += debug_name(target) + " is enraged and gains " + enraged + " attack!</br>";
 				}
 			}
 			// Fury
@@ -5958,7 +5558,7 @@ var SIM_CONTROLLER = (function () {
 
 				if (target.isAlive()) {
 					target.attack_berserk += fury;
-					if (debug) {
+					if (simConfig.debug) {
 						echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
 					}
 				}
@@ -5979,7 +5579,7 @@ var SIM_CONTROLLER = (function () {
 					berserk = adjustAttackIncrease(current_assault, berserk);
 
 					current_assault.attack_berserk += berserk;
-					if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
+					if (simConfig.debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
 				}
 			}
 
@@ -6004,9 +5604,9 @@ var SIM_CONTROLLER = (function () {
 			} else {
 				current_assault.corroded = { amount: corrosion, timer: 2 };
 			}
-			if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
+			if (simConfig.debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
 			current_assault.attack_corroded = current_assault.corroded.amount;
-			if (debug) {
+			if (simConfig.debug) {
 				echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 			}
 		}
@@ -6015,7 +5615,7 @@ var SIM_CONTROLLER = (function () {
 			doOnDeathSkills(current_assault, target);
 		}
 
-		if (showAnimations) {
+		if (simConfig.showAnimations) {
 			drawField(field, null, null, turn, current_assault);
 		}
 		// -- END OF STATUS INFLICTION --
@@ -6030,7 +5630,7 @@ var SIM_CONTROLLER = (function () {
 		counterDamage = damageInfo.damage;
 		var shatter = damageInfo.shatter;
 
-		if (debug) {
+		if (simConfig.debug) {
 			echo += '<u>(' + counterType + ': +' + counterBase;
 			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
 			echo += damageInfo.echo;
@@ -6070,7 +5670,7 @@ var SIM_CONTROLLER = (function () {
 		healthStats.cpu.percent = healthStats.cpu.taken / healthStats.cpu.total;
 
 		var commander_o = field.cpu.commander;
-		if (getdeck2) {
+		if (simConfig.cpuDeck) {
 			if (commander_o.isAlive() && !forceWin) {
 				// 0-25 points, based on percentage of damage dealt to enemy
 				var points = Math.floor(healthStats.cpu.percent * 25);
@@ -6094,11 +5694,12 @@ var SIM_CONTROLLER = (function () {
 	var battlegrounds;
 	var simulation_turns = 0;
 	var simulating = false;
-	var user_controlled = false;
-	var livePvP = false;
+	var userControlled = false;
 	var turn = 0;
 	var totalDeckHealth = 0;
 	var totalCpuDeckHealth = 0;
+	var maxTurns = 100;
+	var simConfig = {};
 
 	// public functions
 	SIMULATOR.simulate = simulate;
@@ -6120,6 +5721,14 @@ var SIM_CONTROLLER = (function () {
 			},
 			set: function (value) {
 				setupField = value;
+			}
+		},
+		config: {
+			get: function() {
+				return simConfig;
+			},
+			set: function(value) {
+				simConfig = value;
 			}
 		},
 		deck: {
@@ -6178,20 +5787,12 @@ var SIM_CONTROLLER = (function () {
 				totalCpuDeckHealth = value;
 			}
 		},
-		user_controlled: {
+		userControlled: {
 			get: function () {
-				return user_controlled;
+				return userControlled;
 			},
 			set: function (value) {
-				user_controlled = value;
-			}
-		},
-		livePvP: {
-			get: function () {
-				return livePvP;
-			},
-			set: function (value) {
-				livePvP = value;
+				userControlled = value;
 			}
 		}
 	});
@@ -6671,11 +6272,6 @@ $(function () {
     for (var i = 0; i < bges.length; i++) {
         var lblBge = $(bges[i]);
         lblBge.hover(showTooltip, hideTooltip);
-        /*
-        var tooltip = $('<div class="tooltip">' + lblBge.attr("bge-desc") + '</div>');
-        var parent = lblBge.parent();
-        parent.append($('<div></div>').append([lblBge.prev(), lblBge, tooltip]));
-        */
     }
 
     function showTooltip(event) {
@@ -6710,8 +6306,9 @@ $(function () {
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!_DEFINED("seedtest")) {
-            SIM_CONTROLLER.getConfiguration();
-            var battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+            var simConfig = SIM_CONTROLLER.getConfiguration();
+            SIMULATOR.config = simConfig;
+            var battlegrounds = getBattlegrounds(simConfig);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -6719,7 +6316,65 @@ $(function () {
             $deck.append(CARD_GUI.makeDeckHTML(newDeck, false, battlegrounds));
         }
     }
-    var accordions = $(".accordion").accordion({
+
+    function setDeckSortable(deckField, associatedHashField) {
+        $(deckField).sortable({
+            items: '.card:not(.commander):not(.blank)',
+            tolerance: "intersect",
+            helper: function (event, ui) {
+                return ui.clone();
+            },
+            start: function (event, ui) {
+                var origPos = ui.placeholder.index() - 1;
+                ui.item.data('origPos', origPos);
+                $(ui.item).hide();
+            },
+            stop: function (event, ui) {
+                var origPos = ui.item.data('origPos') - 1;
+                var newPos = ui.item.index() - 1;
+
+                var hashField = $(associatedHashField);
+                var deck = hash_decode(hashField.val());
+                var array = deck.deck;
+                array.splice(newPos, 0, array.splice(origPos, 1)[0]);
+                var hash = hash_encode(deck);
+                hashField.val(hash);
+            }
+        });
+    }
+
+    function onDeckLoaded(newHash, hashField) {
+        $(hashField).val(newHash).change();
+    }
+
+    function loadDeck(hashField) {
+        $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
+        loadDeckDialog.dialog("open");
+        loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    
+        loadDeckDialog.hashField = hashField;
+    }
+    document.querySelector('#load-player').addEventListener('click', function () { loadDeck('#deck1'); });
+    document.querySelector('#load-cpu').addEventListener('click', function () { loadDeck('#deck2'); });
+
+    document.querySelector('#config-map-bge').addEventListener('click', function showMapBGEs() {
+        mapBGEDialog.dialog("open");
+        mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    });
+
+    var dark = false;
+    document.querySelector('#toggleTheme').addEventListener('click', function toggleTheme() {
+        if (dark) {
+            $("#theme").attr("href", "dist/light.min.css");
+            $("#toggleTheme").val("Dark Theme");
+        } else {
+            $("#theme").attr("href", "dist/dark.min.css");
+            $("#toggleTheme").val("Light Theme");
+        }
+        dark = !dark;
+    });
+
+    $(".accordion").accordion({
         collapsible: true,
         active: false,
         heightStyle: "content"
@@ -6728,17 +6383,17 @@ $(function () {
     $("#raid, #raid_level").change(function () {
         var newDeck;
         var selectedRaid = $("#raid").val();
-        var raidlevel = $('#raid_level');
+        var raidLevel = $('#raid_level');
         if (selectedRaid) {
-            newDeck = load_deck_raid(selectedRaid, raidlevel.val());
+            newDeck = load_deck_raid(selectedRaid, raidLevel.val());
             if (RAIDS[selectedRaid].type === "Dungeon") {
-                raidlevel.attr("max", 500);
+                raidLevel.attr("max", 500);
             } else {
-                raidlevel.attr("max", 40);
+                raidLevel.attr("max", 40);
             }
         } else {
             newDeck = hash_decode('');
-            raidlevel.attr("max", 40);
+            raidLevel.attr("max", 40);
         }
 
         deckChanged("defend_deck", newDeck, 'cpu');
@@ -6763,15 +6418,12 @@ $(function () {
     loadDeckDialog = $("#loadDeckDialog").dialog({
         autoOpen: false,
         minWidth: 320,
-        /*
-        minHeight: 20,
-        */
         modal: true,
         resizable: false,
         buttons: {
             Delete: function () {
                 var name = $("#loadDeckName").val();
-                var newHash = storageAPI.deleteDeck(name);
+                storageAPI.deleteDeck(name);
             },
             Load: function () {
                 var name = $("#loadDeckName").val();
@@ -6808,91 +6460,11 @@ $(function () {
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 
-    if (_DEFINED("latestCards")) {
-        var callback = null;
-        if (_DEFINED("autostart")) {
-            callback = function () {
-                SIM_CONTROLLER.startsim(1);
-            };
-        }
-        updateGameData(callback);
-    } else {
-        loadCardCache();
-    }
+    loadCardCache();
 
     processQueryString();
 });
 
-function doneLoading() {
-    $("body").removeClass("loading");
-    checkTutorial();
-}
-
-function updateGameData(callback) {
-    var done = doneLoading;
-    if (callback) {
-        done = function () {
-            doneLoading();
-            callback();
-        };
-    }
-    DATA_UPDATER.updateData(done, true);
-}
-
-function setDeckSortable(deckField, associatedHashField) {
-    $(deckField).sortable({
-        items: '.card:not(.commander):not(.blank)',
-        tolerance: "intersect",
-        helper: function (event, ui) {
-            return ui.clone();
-        },
-        start: function (event, ui) {
-            var origPos = ui.placeholder.index() - 1;
-            ui.item.data('origPos', origPos);
-            $(ui.item).hide();
-        },
-        stop: function (event, ui) {
-            var origPos = ui.item.data('origPos') - 1;
-            var newPos = ui.item.index() - 1;
-
-            var hashField = $(associatedHashField);
-            var deck = hash_decode(hashField.val());
-            var array = deck.deck;
-            array.splice(newPos, 0, array.splice(origPos, 1)[0]);
-            var hash = hash_encode(deck);
-            hashField.val(hash);
-        }
-    });
-}
-
-function showMapBGEs() {
-    mapBGEDialog.dialog("open");
-    mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
-}
-
-function loadDeck(hashField) {
-    $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
-    loadDeckDialog.dialog("open");
-    loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
-
-    loadDeckDialog.hashField = hashField;
-}
-
-function onDeckLoaded(newHash, hashField) {
-    $(hashField).val(newHash).change();
-}
-
-var dark = false;
-function toggleTheme() {
-    if (dark) {
-        $("#theme").attr("href", "dist/light.min.css");
-        $("#toggleTheme").val("Dark Theme");
-    } else {
-        $("#theme").attr("href", "dist/dark.min.css");
-        $("#toggleTheme").val("Light Theme");
-    }
-    dark = !dark;
-}
 
 var frames = [];
 var frameInterval = null;
@@ -6953,17 +6525,19 @@ window.addEventListener('error', function (message, url, linenumber) {
 	err_msg += "User-agent header: " + navigator.userAgent + "\n";
 	err_msg += "SimSpellstone version: " + text_version + "\n";
 
-	if (getdeck) err_msg += "Deck hash: " + getdeck + "\n";
-	if (getordered) err_msg += "Ordered: Yes\n";
-	if (getexactorder) err_msg += "Exact-order: Yes\n";
-	if (surge) err_msg += "Surge: Yes\n";
-	if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
-	if (getordered2) err_msg += "Enemy Ordered: Yes\n";
-	if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
-	if (getmission) err_msg += "Mission ID: " + getmission + "\n";
-	if (getraid) err_msg += "Raid ID: " + getraid + "\n";
-	if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
-	if (games) err_msg += "Sims run so far: " + games + "\n";
+	var simConfig = SIMULATOR.config;
+	if (simConfig.playerDeck) err_msg += "Deck hash: " + simConfig.playerDeck + "\n";
+	if (simConfig.playerOrdered) err_msg += "Ordered: Yes\n";
+	if (simConfig.playerExactOrdered) err_msg += "Exact-order: Yes\n";
+	if (simConfig.surge) err_msg += "Surge: Yes\n";
+	if (simConfig.cpuDeck) err_msg += "Enemy deck hash: " + simConfig.cpuDeck + "\n";
+	if (simConfig.cpuOrdered) err_msg += "Enemy Ordered: Yes\n";
+	if (simConfig.cpuExactOrdered) err_msg += "Enemy Exact-order: Yes\n";
+	if (simConfig.campaignID) err_msg += "Campaign ID: " + simConfig.campaignID + "\n";
+	if (simConfig.missionID) err_msg += "Mission ID: " + simConfig.missionID + "\n";
+	if (simConfig.raidID) err_msg += "Raid ID: " + simConfig.raidID + "\n";
+	if (simConfig.getbattleground) err_msg += "Battleground ID: " + simConfig.getbattleground + "\n";
+	if (SIMULATOR.games) err_msg += "Sims run so far: " + SIMULATOR.games + "\n";
 	try {
 		err_msg += "Link to reproduce: " + generate_link() + "\n";
 	} catch (_) {}
@@ -6971,7 +6545,7 @@ window.addEventListener('error', function (message, url, linenumber) {
 	outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
 
 	// Stop the recursion if any
-	if (current_timeout) clearTimeout(current_timeout);
+	if (SIMULATOR.current_timeout) clearTimeout(SIMULATOR.current_timeout);
 });
 
 // When Page Loads...
@@ -7017,9 +6591,6 @@ function processQueryString() {
 
 	$('#ordered2').prop("checked", _DEFINED("ordered2"));
 	$('#exactorder2').prop("checked", _DEFINED("exactorder2"));
-	if (_DEFINED("randomAI")) {
-		pvpAI = false;
-	}
 
 	var locationID = _GET('location');
 	var campaignID = _GET('campaign');
@@ -7189,30 +6760,30 @@ function hideUI() {
 
 function getSelectedBattlegrounds(prefix) {
 	prefix = (prefix || "");
-	var getbattleground = [];
+	var selectedBattlegrounds = [];
 	var bgCheckBoxes = document.getElementsByName(prefix + "battleground");
 	for (var i = 0; i < bgCheckBoxes.length; i++) {
 		var checkbox = bgCheckBoxes[i];
 		if (checkbox && checkbox.checked) {
-			getbattleground.push(checkbox.value);
+			selectedBattlegrounds.push(checkbox.value);
 		}
 	}
-	getbattleground = getbattleground.join();
-	return getbattleground;
+	selectedBattlegrounds = selectedBattlegrounds.join();
+	return selectedBattlegrounds;
 }
 
 function getSelectedMapBattlegrounds() {
-	var getbattleground = [];
+	var selectedMapBattlegrounds = [];
 	var locationID = $("#location").val();
 	var selects = document.getElementsByName("map-battleground");
 	for (var i = 0; i < selects.length; i++) {
 		var select = selects[i];
 		if (select.value > 0) {
-			getbattleground.push(locationID + "-" + i + "-" + select.value);
+			selectedMapBattlegrounds.push(locationID + "-" + i + "-" + select.value);
 		}
 	}
-	getbattleground = getbattleground.join();
-	return getbattleground;
+	selectedMapBattlegrounds = selectedMapBattlegrounds.join();
+	return selectedMapBattlegrounds;
 }
 
 function setSelectedMapBattlegrounds(mapBgeString) {
@@ -7228,9 +6799,9 @@ function outp(text) {
 }
 
 function outputTurns(turnData, showAll) {
-	if (closeDiv) {
+	if (SIMULATOR.closeDiv) {
 		turnData += "</div>";
-		closeDiv = false;
+		SIMULATOR.closeDiv = false;
 	}
 	turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
 	outp(turnData);
@@ -7241,7 +6812,7 @@ function outputTurns(turnData, showAll) {
 		options.push("<option value='" + i + "'>" + turn + "</option>");
 	}
 	var lastTurn = i - 1;
-	if (lastTurn && closeDiv) lastTurn--;
+	if (lastTurn && SIMULATOR.closeDiv) lastTurn--;
 	$("#turn-picker").append(options).change(function (event) {
 		var turn = event.target.selectedIndex;
 		$(".turn-info").hide().eq(turn).show();
@@ -7266,8 +6837,7 @@ function outputTurns(turnData, showAll) {
 // Return table of simulation results
 function showWinrate() {
 
-	if (suppressOutput) {
-	} else if (debug || sims_left == 0) {
+	if (SIMULATOR.config.debug || SIMULATOR.simsLeft == 0) {
 		// Generate links
 		var links = '';
 		links += '<br>' +
@@ -7282,9 +6852,16 @@ function showWinrate() {
 			'<a href="' + generate_link(1) + '">' + generate_link(1) + '</a>' +
 			'<br>' +
 			'<br>';
-		if (debug) return links;
+		if (SIMULATOR.config.debug) return links;
 	}
 	// Win/Loss ratios
+	var wins = SIMULATOR.wins;
+	var losses = SIMULATOR.losses;
+	var draws = SIMULATOR.draws;
+	var games = SIMULATOR.games;
+	var points = SIMULATOR.points;
+	var simsLeft = SIMULATOR.simsLeft;
+	var totalTurns = SIMULATOR.total_turns;
 	var winPercent = wins / games;
 	var winrate = (winPercent * 100).toFixed(2) + "%";
 	$("#wins").html(wins);
@@ -7305,20 +6882,20 @@ function showWinrate() {
 	mErr = mErr.toFixed(2) + "%";
 	$("#marginPercent").html(mErr);
 
-	var totalSims = games + sims_left;
+	var totalSims = games + simsLeft;
 	var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 	$(".battleCount").html(games);
 	$("#percentComplete").html(percentComplete);
 
 	// Calculate Average length of battle
-	$("#avgLength").html((total_turns / games).toFixed(1));
+	$("#avgLength").html((totalTurns / games).toFixed(1));
 
 	$("#avgPoints").html((points / games).toFixed(2));
 
 	$("#winrateTable").show();
 	// Final output
 	var full_table = "";
-	if (sims_left == 0) {
+	if (SIMULATOR.simsLeft == 0) {
 		// Add generated links to final output
 		full_table += links;
 
@@ -7336,7 +6913,6 @@ function showWinrate() {
 			current_deck = hash_encode(deck.player);
 		}
 
-		//battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
 		battle_history += winrate + ' (+/- ' + mErr + ') &nbsp; &nbsp; ' + current_deck + '<br>';
 	}
 
@@ -7350,7 +6926,8 @@ function hideTable() {
 function setSimStatus(simStatusMsg, elapse, simsPerSec) {
 	$("#simStatusMsg").html(simStatusMsg);
 	if (elapse && simsPerSec) {
-		var totalSims = games + sims_left;
+		var games = SIMULATOR.games;
+		var totalSims = games + SIMULATOR.simsLeft;
 		var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
 		var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
 		$("#progress").html(progress);
@@ -7486,17 +7063,17 @@ function addBoolParam(params, paramName) {
 var deckBuilders = {};
 function load_deck_builder(player) {
 	if (player == 'player') {
-		var getdeck = $('#deck1').val();
-		var getmission;
-		var missionlevel;
-		var getraid;
-		var raidlevel;
+		var playerDeck = $('#deck1').val();
+		var missionID;
+		var missionLevel;
+		var raidID;
+		var raidLevel;
 	} else {
-		var getdeck = $('#deck2').val();
-		var getmission = $('#mission').val();
-		var missionlevel = $('#mission_level').val();
-		var getraid = $('#raid').val();
-		var raidlevel = $('#raid_level').val();
+		var playerDeck = $('#deck2').val();
+		var missionID = $('#mission').val();
+		var missionLevel = $('#mission_level').val();
+		var raidID = $('#raid').val();
+		var raidLevel = $('#raid_level').val();
 	}
 
 	// Load player deck
@@ -7504,12 +7081,12 @@ function load_deck_builder(player) {
 		commander: elariaCaptain,
 		deck: []
 	};
-	if (getdeck) {
-		deck = hash_decode(getdeck);
-	} else if (getmission) {
-		deck = load_deck_mission(getmission, missionlevel);
-	} else if (getraid) {
-		deck = load_deck_raid(getraid, raidlevel);
+	if (playerDeck) {
+		deck = hash_decode(playerDeck);
+	} else if (missionID) {
+		deck = load_deck_mission(missionID, missionLevel);
+	} else if (raidID) {
+		deck = load_deck_raid(raidID, raidLevel);
 	}
 	var hash;
 	if (deck) {
@@ -7603,57 +7180,7 @@ function display_history() {
 
 // Initialize global variables
 var battle_history = '';
-var max_turns = 100;
-var debug = false;
-var mass_debug = false;
-var loss_debug = false;
-var win_debug = false;
-var found_desired = false;
-var play_debug = false;
-var showAnimations = false;
-var getdeck = '';
-var getdeck2 = '';
-var getordered = false;
-var getordered2 = false;
-var getexactorder = false;
-var getexactorder2 = false;
-var getcampaign = 0;
-var getmission = 0;
-var missionlevel = 0;
-var getraid = false;
-var raidlevel = 0;
-var getbattleground = '';
-var enemybges = '';
-var selfbges = '';
-var mapbges = '';
-var getsiege = 0;
-var tower_level = 0;
-var tower_type = 0;
-var pvpAI = true;
-var echo = '';
-var closeDiv = false;
-var wins = 0;
-var losses = 0;
-var draws = 0;
-var games = 0;
-var points = 0;
-var num_sims = 0;
-var last_games = [];
-var sims_left = 0;
-var current_timeout;
-var surge = false;
-var battleground = [];
-var total_turns = 0;
-var cache_player_deck;
-var cache_cpu_deck;
-var cache_player_deck_cards;
-var cache_cpu_deck_cards;
-var choice = undefined;
-var auto_mode = false;
-var tournament = false;
-var suppressOutput = false;
-var orders = {};
-var cardStats = {};;"use strict";
+var echo = '';;"use strict";
 var CARD_GUI = {};
 (function() {
     var assetsRoot = '';
@@ -7825,7 +7352,7 @@ var CARD_GUI = {};
             if (callback) {
                 htmlCard.addEventListener("click", (function(inner) {
                     return function() {
-                        choice = inner;
+                        SIMULATOR.choice = inner;
                         callback(state);
                     };
                 })(i));

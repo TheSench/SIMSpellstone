@@ -4,35 +4,37 @@
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
-        total_turns = 0;
+        SIMULATOR.total_turns = 0;
         matchTimer.reset();
         echo = '';
-        games = 0;
+        SIMULATOR.games = 0;
         run_sims_batch = 0;
 
-        SIM_CONTROLLER.getConfiguration();
+        var simConfig = SIM_CONTROLLER.getConfiguration();
+        SIMULATOR.simsLeft = simConfig.simsToRun;
+        SIMULATOR.config = simConfig;
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+        SIMULATOR.battlegrounds = getBattlegrounds(simConfig);
 
         hideUI();
 
         SIMULATOR.setupDecks();
 
-        wins = 0;
-        losses = 0;
-        draws = 0;
-        points = 0;
+        SIMULATOR.wins = 0;
+        SIMULATOR.losses = 0;
+        SIMULATOR.draws = 0;
+        SIMULATOR.points = 0;
 
         outp(""); // Clear display
-        if (!SIMULATOR.user_controlled) {
+        if (!SIMULATOR.userControlled) {
             hideTable();
             setSimStatus("Initializing simulations...");
         } else {
             setSimStatus("");
         }
 
-        current_timeout = setTimeout(run_sims);
+        SIMULATOR.current_timeout = setTimeout(run_sims);
 
         return false;
     };
@@ -41,13 +43,13 @@
     SIM_CONTROLLER.stopsim = function () {
         matchTimer.stop();
         var elapse = matchTimer.elapsed();
-        var simpersec = games / elapse;
+        var simpersec = SIMULATOR.games / elapse;
         simpersec = simpersec.toFixed(2);
         SIMULATOR.simulating = false;
 
         // Stop the recursion
-        if (current_timeout) clearTimeout(current_timeout);
-        if (!SIMULATOR.user_controlled) {
+        if (SIMULATOR.current_timeout) clearTimeout(SIMULATOR.current_timeout);
+        if (!SIMULATOR.userControlled) {
             setSimStatus("Simulations interrupted.", elapse, simpersec);
             showWinrate();
         }
@@ -57,21 +59,22 @@
     };
 
     function run_sims() {
+        var simConfig = SIMULATOR.config;
 
-        if (SIMULATOR.user_controlled) {
+        if (SIMULATOR.userControlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if ((debug || play_debug) && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((SIMULATOR.config.debug || simConfig.logPlaysOnly) && !simConfig.massDebug && !simConfig.findFirstLoss && !simConfig.findFirstWin) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
-        } else if (sims_left > 0) {
+        } else if (SIMULATOR.simsLeft > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
-                    var temp = games / (games + sims_left) * 100;
+                    var temp = SIMULATOR.games / (SIMULATOR.games + SIMULATOR.simsLeft) * 100;
                     temp = temp.toFixed(2);
 
                     var elapse = matchTimer.elapsed();
@@ -89,14 +92,14 @@
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
-                if (run_sims_batch > sims_left) // Also limit by how many sims are left
-                    run_sims_batch = sims_left;
+                if (run_sims_batch > SIMULATOR.simsLeft) // Also limit by how many sims are left
+                    run_sims_batch = SIMULATOR.simsLeft;
 
-                // Batch messes up mass debug and loss debug! var's disable batch!
-                if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
+                // Batch messes up mass SIMULATOR.config.debug and loss SIMULATOR.config.debug! var's disable batch!
+                // if ((SIMULATOR.config.debug || simConfig.logPlaysOnly) && (simConfig.massDebug || simConfig.findFirstLoss || simConfig.findFirstWin)) run_sims_batch = 1;
 
                 matchTimer.startBatch();
-                current_timeout = setTimeout(run_sims, 1);
+                SIMULATOR.current_timeout = setTimeout(run_sims, 1);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
                     run_sim();
                 }
@@ -107,7 +110,7 @@
             matchTimer.stop();
 
             var elapse = matchTimer.elapsed();
-            var simpersec = games / elapse;
+            var simpersec = SIMULATOR.games / elapse;
             simpersec = simpersec.toFixed(2);
 
             if (echo) {
@@ -134,6 +137,7 @@
     }
 
     SIM_CONTROLLER.processSimResult = function () {
+        var simConfig = SIMULATOR.config;
 
         var result;
         if (!SIMULATOR.field.player.commander.isAlive()) {
@@ -147,56 +151,57 @@
         }
 
         if (run_sims_batch > 0) {
-            if (sims_left > 0) sims_left--;
+            if (SIMULATOR.simsLeft > 0) SIMULATOR.simsLeft--;
             run_sims_count++;
         }
 
         // Increment wins/losses/games
         if (result == 'draw') {
-            draws++;
+            SIMULATOR.draws++;
         } else if (result) {
-            wins++;
+            SIMULATOR.wins++;
         } else {
-            losses++;
+            SIMULATOR.losses++;
         }
-        points += SIMULATOR.calculatePoints();
-        games++;
-
+        SIMULATOR.points += SIMULATOR.calculatePoints();
+        SIMULATOR.games++;
+        
         // Increment total turn count
-        total_turns += SIMULATOR.simulation_turns;
-
-        if (debug || play_debug) {
-            if (loss_debug) {
+        SIMULATOR.total_turns += SIMULATOR.simulation_turns;
+        
+        var games = SIMULATOR.games;
+        if (SIMULATOR.config.debug || simConfig.logPlaysOnly) {
+            if (simConfig.findFirstLoss) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>DRAW</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else if (result) {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
                 } else {
                     echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>LOSS</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 }
-            } else if (win_debug) {
+            } else if (simConfig.findFirstWin) {
                 if (result && result != 'draw') {
                     echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>WIN</h1><br>';
-                    sims_left = 0;
+                    SIMULATOR.simsLeft = 0;
                 } else {
-                    if (!sims_left) {
+                    if (!SIMULATOR.simsLeft) {
                         echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = 0;
+                        SIMULATOR.simsLeft = 0;
                     } else {
                         echo = '';
                     }
                 }
-            } else if (mass_debug) {
+            } else if (simConfig.massDebug) {
                 if (result == 'draw') {
                     echo += '<br><h1>DRAW</h1><br>';
                 } else if (result) {
@@ -206,7 +211,7 @@
                 }
             }
 
-            if (mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+            if (simConfig.massDebug && SIMULATOR.simsLeft) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
         }
 
         return result;

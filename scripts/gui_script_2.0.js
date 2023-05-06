@@ -29,11 +29,6 @@ $(function () {
     for (var i = 0; i < bges.length; i++) {
         var lblBge = $(bges[i]);
         lblBge.hover(showTooltip, hideTooltip);
-        /*
-        var tooltip = $('<div class="tooltip">' + lblBge.attr("bge-desc") + '</div>');
-        var parent = lblBge.parent();
-        parent.append($('<div></div>').append([lblBge.prev(), lblBge, tooltip]));
-        */
     }
 
     function showTooltip(event) {
@@ -68,8 +63,9 @@ $(function () {
         var $deck = $("#" + deckID);
         $deck.children().remove();
         if (!_DEFINED("seedtest")) {
-            SIM_CONTROLLER.getConfiguration();
-            var battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
+            var simConfig = SIM_CONTROLLER.getConfiguration();
+            SIMULATOR.config = simConfig;
+            var battlegrounds = getBattlegrounds(simConfig);
             battlegrounds = battlegrounds.onCreate.filter(function (bge) {
                 return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
             });
@@ -77,7 +73,65 @@ $(function () {
             $deck.append(CARD_GUI.makeDeckHTML(newDeck, false, battlegrounds));
         }
     }
-    var accordions = $(".accordion").accordion({
+
+    function setDeckSortable(deckField, associatedHashField) {
+        $(deckField).sortable({
+            items: '.card:not(.commander):not(.blank)',
+            tolerance: "intersect",
+            helper: function (event, ui) {
+                return ui.clone();
+            },
+            start: function (event, ui) {
+                var origPos = ui.placeholder.index() - 1;
+                ui.item.data('origPos', origPos);
+                $(ui.item).hide();
+            },
+            stop: function (event, ui) {
+                var origPos = ui.item.data('origPos') - 1;
+                var newPos = ui.item.index() - 1;
+
+                var hashField = $(associatedHashField);
+                var deck = hash_decode(hashField.val());
+                var array = deck.deck;
+                array.splice(newPos, 0, array.splice(origPos, 1)[0]);
+                var hash = hash_encode(deck);
+                hashField.val(hash);
+            }
+        });
+    }
+
+    function onDeckLoaded(newHash, hashField) {
+        $(hashField).val(newHash).change();
+    }
+
+    function loadDeck(hashField) {
+        $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
+        loadDeckDialog.dialog("open");
+        loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    
+        loadDeckDialog.hashField = hashField;
+    }
+    document.querySelector('#load-player').addEventListener('click', function () { loadDeck('#deck1'); });
+    document.querySelector('#load-cpu').addEventListener('click', function () { loadDeck('#deck2'); });
+
+    document.querySelector('#config-map-bge').addEventListener('click', function showMapBGEs() {
+        mapBGEDialog.dialog("open");
+        mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    });
+
+    var dark = false;
+    document.querySelector('#toggleTheme').addEventListener('click', function toggleTheme() {
+        if (dark) {
+            $("#theme").attr("href", "dist/light.min.css");
+            $("#toggleTheme").val("Dark Theme");
+        } else {
+            $("#theme").attr("href", "dist/dark.min.css");
+            $("#toggleTheme").val("Light Theme");
+        }
+        dark = !dark;
+    });
+
+    $(".accordion").accordion({
         collapsible: true,
         active: false,
         heightStyle: "content"
@@ -86,17 +140,17 @@ $(function () {
     $("#raid, #raid_level").change(function () {
         var newDeck;
         var selectedRaid = $("#raid").val();
-        var raidlevel = $('#raid_level');
+        var raidLevel = $('#raid_level');
         if (selectedRaid) {
-            newDeck = load_deck_raid(selectedRaid, raidlevel.val());
+            newDeck = load_deck_raid(selectedRaid, raidLevel.val());
             if (RAIDS[selectedRaid].type === "Dungeon") {
-                raidlevel.attr("max", 500);
+                raidLevel.attr("max", 500);
             } else {
-                raidlevel.attr("max", 40);
+                raidLevel.attr("max", 40);
             }
         } else {
             newDeck = hash_decode('');
-            raidlevel.attr("max", 40);
+            raidLevel.attr("max", 40);
         }
 
         deckChanged("defend_deck", newDeck, 'cpu');
@@ -121,15 +175,12 @@ $(function () {
     loadDeckDialog = $("#loadDeckDialog").dialog({
         autoOpen: false,
         minWidth: 320,
-        /*
-        minHeight: 20,
-        */
         modal: true,
         resizable: false,
         buttons: {
             Delete: function () {
                 var name = $("#loadDeckName").val();
-                var newHash = storageAPI.deleteDeck(name);
+                storageAPI.deleteDeck(name);
             },
             Load: function () {
                 var name = $("#loadDeckName").val();
@@ -166,91 +217,11 @@ $(function () {
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 
-    if (_DEFINED("latestCards")) {
-        var callback = null;
-        if (_DEFINED("autostart")) {
-            callback = function () {
-                SIM_CONTROLLER.startsim(1);
-            };
-        }
-        updateGameData(callback);
-    } else {
-        loadCardCache();
-    }
+    loadCardCache();
 
     processQueryString();
 });
 
-function doneLoading() {
-    $("body").removeClass("loading");
-    checkTutorial();
-}
-
-function updateGameData(callback) {
-    var done = doneLoading;
-    if (callback) {
-        done = function () {
-            doneLoading();
-            callback();
-        };
-    }
-    DATA_UPDATER.updateData(done, true);
-}
-
-function setDeckSortable(deckField, associatedHashField) {
-    $(deckField).sortable({
-        items: '.card:not(.commander):not(.blank)',
-        tolerance: "intersect",
-        helper: function (event, ui) {
-            return ui.clone();
-        },
-        start: function (event, ui) {
-            var origPos = ui.placeholder.index() - 1;
-            ui.item.data('origPos', origPos);
-            $(ui.item).hide();
-        },
-        stop: function (event, ui) {
-            var origPos = ui.item.data('origPos') - 1;
-            var newPos = ui.item.index() - 1;
-
-            var hashField = $(associatedHashField);
-            var deck = hash_decode(hashField.val());
-            var array = deck.deck;
-            array.splice(newPos, 0, array.splice(origPos, 1)[0]);
-            var hash = hash_encode(deck);
-            hashField.val(hash);
-        }
-    });
-}
-
-function showMapBGEs() {
-    mapBGEDialog.dialog("open");
-    mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
-}
-
-function loadDeck(hashField) {
-    $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
-    loadDeckDialog.dialog("open");
-    loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
-
-    loadDeckDialog.hashField = hashField;
-}
-
-function onDeckLoaded(newHash, hashField) {
-    $(hashField).val(newHash).change();
-}
-
-var dark = false;
-function toggleTheme() {
-    if (dark) {
-        $("#theme").attr("href", "dist/light.min.css");
-        $("#toggleTheme").val("Dark Theme");
-    } else {
-        $("#theme").attr("href", "dist/dark.min.css");
-        $("#toggleTheme").val("Light Theme");
-    }
-    dark = !dark;
-}
 
 var frames = [];
 var frameInterval = null;

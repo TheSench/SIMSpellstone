@@ -15,8 +15,7 @@
 </head>
 <body ng-controller="SimulatorCtrl" ng-init="campaignSections()">
     <header id="header"></header>
-    <input id="toggleTheme" type="button" onclick="toggleTheme()" value="Dark Theme" />
-    <input id="updateData" type="button" onclick="updateGameData()" value="Update Data" />
+    <input id="toggleTheme" type="button" value="Dark Theme" />
     <!--
     <div class="circle primary-black">Primary-Black</div>
     <div class="circle primary-neutral">Primary-Neutral</div>
@@ -45,7 +44,7 @@
                                     <input id="deck1" type="text" value="" onfocus="$(this).select();">
                                 </div>
                                 <input id="edit-player" type="button" onclick="load_deck_builder('player');" value="Edit" />
-                                <input id="load-player" type="button" onclick="loadDeck('#deck1');" value="Load" />
+                                <input id="load-player" type="button" value="Load" />
                                 <div id="attacker-advanced">
                                     <h6>Advanced Settings</h6>
                                     <div id="deckContainer" class="collapsible">
@@ -64,7 +63,7 @@
                                         <input type="text" id="deck2" value="" onfocus="$(this).select();">
                                     </div>
                                     <input id="edit-cpu" type="button" onclick="load_deck_builder('cpu');" value="Edit" />
-                                    <input id="load-cpu" type="button" onclick="loadDeck('#deck2');" value="Load" />
+                                    <input id="load-cpu" type="button" value="Load" />
                                 </div>
                                 <div id="pve-container">
                                     <h6>PvE Decks</h6>

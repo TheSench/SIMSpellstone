@@ -692,7 +692,7 @@ var adjustAttackIncrease = function(card, originalIncrease) {
     if (card.attackIncreasePrevention) {
         var adjustment = Math.min(card.attackIncreasePrevention, originalIncrease);
         card.attackIncreasePrevention -= adjustment;
-        if (debug) { echo += '<u>(' + adjustment + ' attack increase prevented by weaken, ' + card.attackIncreasePrevention + ' prevention remains)</u><br/>'}
+        if (SIMULATOR.config.debug) { echo += '<u>(' + adjustment + ' attack increase prevented by weaken, ' + card.attackIncreasePrevention + ' prevention remains)</u><br/>'}
         return originalIncrease - adjustment;
     } else {
         return originalIncrease;
@@ -898,7 +898,7 @@ var MakeTrap = (function() {
                     var index = (~~(Math.random() * targets.length));
                     targets[index].trap = trap;
 
-                    if (debug) {
+                    if (SIMULATOR.config.debug) {
                         echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
                     }
                 }
@@ -911,7 +911,7 @@ var MakeTrap = (function() {
     });
 }());
 
-var getBattlegrounds = function(getbattleground, selfbges, enemybges, mapbges, campaignID, missionlevel, raidID, raidlevel) {
+var getBattlegrounds = function(simConfig) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -919,23 +919,22 @@ var getBattlegrounds = function(getbattleground, selfbges, enemybges, mapbges, c
         onTurn: [],
         onCardPlayed: []
     };
+    addBgesFromList(battlegrounds, simConfig.getbattleground);
+    addBgesFromList(battlegrounds, simConfig.selfbges, 'player');
+    addBgesFromList(battlegrounds, simConfig.enemybges, 'cpu');
+    addMapBGEs(battlegrounds, simConfig.mapbges, 'player');
 
-    addBgesFromList(battlegrounds, getbattleground);
-    addBgesFromList(battlegrounds, selfbges, 'player');
-    addBgesFromList(battlegrounds, enemybges, 'cpu');
-    addMapBGEs(battlegrounds, mapbges, 'player');
-
-    if (campaignID) {
-        addMissionBGE(battlegrounds, campaignID, missionlevel);
-    } else if (raidID) {
-        addRaidBGE(battlegrounds, raidID, raidlevel);
+    if (simConfig.campaignID) {
+        addMissionBGE(battlegrounds, simConfig.campaignID, simConfig.missionLevel);
+    } else if (simConfig.raidID) {
+        addRaidBGE(battlegrounds, simConfig.raidID, simConfig.raidLevel);
     }
     return battlegrounds;
 };
 
-function addBgesFromList(battlegrounds, getbattleground, player) {
-    if (!getbattleground) return null;
-    var selected = getbattleground.split(",");
+function addBgesFromList(battlegrounds, battlegroundsToAdd, player) {
+    if (!battlegroundsToAdd) return null;
+    var selected = battlegroundsToAdd.split(",");
     for (var i = 0; i < selected.length; i++) {
         var id = selected[i];
         var battleground = BATTLEGROUNDS[id];
