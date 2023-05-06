@@ -5,7 +5,6 @@ var SIMULATOR = {};
 	// Play card
 	function play_card(card, p, turn, quiet) {
 		var field_p_assaults = field[p].assaults;
-		var simConfig = SIMULATOR.config;
 
 		// Not a valid card
 		if (!card.id) return 0;
@@ -18,7 +17,7 @@ var SIMULATOR = {};
 			field_p_assaults[newKey] = card;
 		}
 
-		if ((SIMULATOR.config.debug || simConfig.logPlaysOnly) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+		if ((simConfig.debug || simConfig.logPlaysOnly) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
 
 		if (card.isTrap()) {
 			doEarlyActivationSkills(card);
@@ -69,13 +68,13 @@ var SIMULATOR = {};
 			var current_assault = units[key];
 			// Starting at the first dead unit, start shifting.
 			if (!current_assault.isAlive()) {
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
 				var newkey = key;	// Store the new key value for the next alive unit
 				for (key++; key < len; key++) {
 					current_assault = units[key];
 					// If this unit is dead, don't update newkey, we still need to fill that slot
 					if (!current_assault.isAlive()) {
-						if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
+						if (simConfig.debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
 					}
 					// If this unit is alive, set its key to newkey, and then update newkey to be the next slot
 					else {
@@ -121,7 +120,7 @@ var SIMULATOR = {};
 			target.health_left -= damage;
 		}
 
-		if (SIMULATOR.config.debug) logFn(source, target, damage);
+		if (simConfig.debug) logFn(source, target, damage);
 
 		if (shatter) {
 			iceshatter(target);
@@ -140,7 +139,7 @@ var SIMULATOR = {};
 			target.health_left -= damage;
 		}
 
-		if (SIMULATOR.config.debug) logFn(source, target, damage);
+		if (simConfig.debug) logFn(source, target, damage);
 
 		// Silence
 		// - Target must have taken damage
@@ -150,7 +149,7 @@ var SIMULATOR = {};
 			// Remove passive statuses for this turn
 			target.invisible = 0;
 			target.warded = 0;
-			if (SIMULATOR.config.debug) echo += debug_name(source) + ' inflicts silence on ' + debug_name(target) + '<br>';
+			if (simConfig.debug) echo += debug_name(source) + ' inflicts silence on ' + debug_name(target) + '<br>';
 		}
 
 		if (!target.isAlive() && source) {
@@ -178,7 +177,7 @@ var SIMULATOR = {};
 	}
 
 	function notImplemented(src_card, skill) {
-		if (SIMULATOR.config.debug) {
+		if (simConfig.debug) {
 			var skillName = (SKILL_DATA[skill.id] ? SKILL_DATA[skill.id].name : skill.id);
 			echo += debug_name(src_card) + ' attempts to use ' + skillName + ' (' + skill.id + '), but it is not implemented.<br>';
 		}
@@ -216,12 +215,12 @@ var SIMULATOR = {};
 		if (len === 0) return;
 
 		if (source_card.silenced) {
-			if (SIMULATOR.config.debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>";
+			if (simConfig.debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
 		var dualstrike = source_card.dualstrike_triggered;
-		if (SIMULATOR.config.debug && dualstrike) {
+		if (simConfig.debug && dualstrike) {
 			// var main attack loop deal with resetting timer
 			echo += debug_name(source_card) + ' activates dualstrike<br>';
 		}
@@ -238,7 +237,7 @@ var SIMULATOR = {};
 						skill.countdown = skill.c;
 					}
 
-					if (SIMULATOR.config.showAnimations) {
+					if (simConfig.showAnimations) {
 						drawField(field, null, null, turn, source_card);
 					}
 				}
@@ -258,8 +257,6 @@ var SIMULATOR = {};
 	}
 
 	function doOnDeathSkills(dying, killer) {
-		var simConfig = SIMULATOR.config;
-
 		if (dying.ondeath_triggered) return; // Check to make sure we don't trigger this twice
 
 		if(!dying.silenced) {
@@ -273,7 +270,7 @@ var SIMULATOR = {};
 					if (skill.id === "reanimate") {
 						// Do reanimate first, then the rest on the next "real" death (reanimate won't trigger again)
 						onDeathSkills[skill.id](dying, killer, skill);
-						if (SIMULATOR.config.showAnimations) {
+						if (simConfig.showAnimations) {
 							drawField(field, null, null, turn, dying);
 						}
 						return;
@@ -285,7 +282,7 @@ var SIMULATOR = {};
 				var skill = skills[i];
 				onDeathSkills[skill.id](dying, killer, skill);
 
-				if (SIMULATOR.config.showAnimations) {
+				if (simConfig.showAnimations) {
 					drawField(field, null, null, turn, dying);
 				}
 			}
@@ -331,7 +328,7 @@ var SIMULATOR = {};
 				src_card.scorched.amount += scorch;
 				src_card.scorched.timer = 2;
 			}
-			if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on itself<br>';
+			if (simConfig.debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on itself<br>';
 
 			return 1;
 		},
@@ -378,7 +375,7 @@ var SIMULATOR = {};
 					target.scorched.amount += scorch;
 					target.scorched.timer = 2;
 				}
-				if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
 			}
 
 			return true;
@@ -416,7 +413,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -424,7 +421,7 @@ var SIMULATOR = {};
 				affected++;
 
 				target.confused = true;
-				if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' confuses ' + debug_name(target) + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -486,7 +483,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -505,7 +502,7 @@ var SIMULATOR = {};
 				if (additional) {
 					target[additional] = (target[additional] || 0) + protect_amt;
 				}
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect_amt;
 					if (typeof additionalDebug === "function") {
@@ -539,7 +536,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 				
@@ -550,7 +547,7 @@ var SIMULATOR = {};
 				if (target != src_card) protect_amt = Math.ceil(protect_amt/2);
 
 				target.protected += protect_amt;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' activates anti-magic field, protecting ' + debug_name(target) + ' by ' + protect_amt;
 					echo += '<br>';
@@ -589,7 +586,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 				
@@ -598,7 +595,7 @@ var SIMULATOR = {};
 				target.protected += wingward;
 				var invisBoost = Math.ceil(wingward/2);
 				target.invisible += invisBoost;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' wing guards ' + debug_name(target) + 
 						', protecting it by ' + wingward + 
@@ -656,7 +653,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' ' + skill.id + 's ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -682,7 +679,7 @@ var SIMULATOR = {};
 					heal_amt = missingHealth;
 				}
 				target.health_left += heal_amt;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt;
 					if (additionalMaxHealth) echo += ' and increases its max health by ' + additionalMaxHealth;
@@ -738,7 +735,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -828,7 +825,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -842,7 +839,7 @@ var SIMULATOR = {};
 					target.poisoned += intensify;
 				}
 
-				if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' by ' + intensify + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' by ' + intensify + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -893,7 +890,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' ignites ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' ignites ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -901,7 +898,7 @@ var SIMULATOR = {};
 				affected++;
 
 				target.scorch(ignite);
-				if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' ignites(' + ignite + ') ' + debug_name(target) + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -921,7 +918,7 @@ var SIMULATOR = {};
 
 			src_card.jammed = true;
 			src_card.jammedSelf = true;
-			if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' freezes itself<br>';
+			if (simConfig.debug) echo += debug_name(src_card) + ' freezes itself<br>';
 
 			return 1;
 		},
@@ -957,7 +954,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -965,7 +962,7 @@ var SIMULATOR = {};
 				affected++;
 
 				target.jammed = true;
-				if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -1010,7 +1007,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -1055,7 +1052,7 @@ var SIMULATOR = {};
 			heartseeker += enhanced;
 
 			target.heartseeker += heartseeker;
-			if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
+			if (simConfig.debug) echo += debug_name(src_card) + ' inflicts heartseeker ' + heartseeker + ' on ' + debug_name(target) + '<br>';
 
 			return 1;
 		},
@@ -1104,7 +1101,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
 					if (target.backlash) { backlash(src_card, target); }
 					continue;
 				}
@@ -1112,7 +1109,7 @@ var SIMULATOR = {};
 				affected++;
 
 				target['enfeebled'] += enfeeble;
-				if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
 
 				if (target.backlash) {
 					backlash(src_card, target);
@@ -1192,7 +1189,7 @@ var SIMULATOR = {};
 				// Check Evade
 				if (target.invisible) {
 					target.invisible--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
 					continue;
 				}
 
@@ -1200,7 +1197,7 @@ var SIMULATOR = {};
 
 				target.attack_weaken += weaken;
 				target.attackIncreasePrevention += weaken;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
 				}
@@ -1251,7 +1248,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -1262,7 +1259,7 @@ var SIMULATOR = {};
 				}
 
 				target.enraged += amount;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + amount + '<br>';
 				}
@@ -1301,7 +1298,7 @@ var SIMULATOR = {};
 					sourceCard.health_left += healing;
 				}
 
-				if (SIMULATOR.config.showAnimations) {
+				if (simConfig.showAnimations) {
 					drawField(field, null, null, turn, sourceCard);
 				}
 			}
@@ -1341,7 +1338,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' cleanses ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' cleanses ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -1356,7 +1353,7 @@ var SIMULATOR = {};
                 target.silenced = false;
                 target.confused = false;
 
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					echo += debug_name(src_card) + ' cleanses ' + debug_name(target);
 					echo += '<br>';
 				}
@@ -1405,7 +1402,7 @@ var SIMULATOR = {};
 				rally_amt = adjustAttackIncrease(target, rally_amt);
 
 				target.attack_rally += rally_amt;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' enlarges ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 				}
@@ -1457,7 +1454,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -1468,7 +1465,7 @@ var SIMULATOR = {};
 				rally_amt = adjustAttackIncrease(target, rally_amt);
 
 				target.attack_rally += rally_amt;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 				}
@@ -1503,13 +1500,13 @@ var SIMULATOR = {};
 					// Check Nullify
 					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
-						if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
+						if (simConfig.debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
 						var protectAmount = Math.ceil(rally * 0.5);
 						var rally_amt = adjustAttackIncrease(target, rally);
 						target.attack_rally += rally_amt;
 						target.protected += protectAmount;
-						if (SIMULATOR.config.debug) {
+						if (simConfig.debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 							echo += debug_name(src_card) + ' activates ' + skill.id +
 								', empowering ' + debug_name(target) + ' by ' + rally_amt +
@@ -1546,12 +1543,12 @@ var SIMULATOR = {};
 					// Check Nullify
 					if (target.nullified && !skill.ignore_nullify) {
 						target.nullified--;
-						if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
+						if (simConfig.debug) echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' but it is nullified!<br>';
 					} else {
 						affected++;
 						var rally_amt = adjustAttackIncrease(target, rally);
 						target.attack_rally += rally_amt;
-						if (SIMULATOR.config.debug) {
+						if (simConfig.debug) {
 							if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 							echo += debug_name(src_card) + ' activates ' + skill.id + ', empowering ' + debug_name(target) + ' by ' + rally_amt + '<br>';
 						}
@@ -1594,7 +1591,7 @@ var SIMULATOR = {};
 			if (fervorAmount) {
 				fervorAmount = adjustAttackIncrease(src_card, fervorAmount);
 				src_card.attack_rally += fervorAmount;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
 					echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
 				}
@@ -1649,7 +1646,7 @@ var SIMULATOR = {};
 					// Check Evade
 					if (target.invisible) {
 						target.invisible--;
-						if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
+						if (simConfig.debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
 						continue;
 					}
 
@@ -1720,7 +1717,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -1733,10 +1730,10 @@ var SIMULATOR = {};
 				var enhancements = target.enhanced;
 				enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
 				if (x > 0) {
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
 					enhancements[s].x += x;
 				} else if (mult > 0) {
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' enhances ' + debug_find_skill(target, s) + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
 					enhancements[s].mult += mult;
 				}
 			}
@@ -1791,7 +1788,7 @@ var SIMULATOR = {};
 				// Check Nullify
 				if (target.nullified && !skill.ignore_nullify) {
 					target.nullified--;
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target) + ' but it is nullified!<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target) + ' but it is nullified!<br>';
 					continue;
 				}
 
@@ -1800,11 +1797,11 @@ var SIMULATOR = {};
 				if (target.hasSkill(s)) {
 					var enhancements = target.enhanced;
 					enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_find_skill(target, s) + ' by ' + x + '<br>';
 					enhancements[s].x += x;
 				} else {
 					target.imbue(skill);
-					if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(target, skill) + '<br>';
+					if (simConfig.debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(target, skill) + '<br>';
 				}
 			}
 
@@ -1851,7 +1848,7 @@ var SIMULATOR = {};
 				target.enfeebled += mark;
 				src_card.mark_target = target.uid;
 
-				if (SIMULATOR.config.debug) echo += debug_name(src_card) + ' marks ' + debug_name(target) + ' by ' + mark + '<br>';
+				if (simConfig.debug) echo += debug_name(src_card) + ' marks ' + debug_name(target) + ' by ' + mark + '<br>';
 
 				// Set countdown so Mark can't trigger twice on dual-strike turn
 				skill.countdown = 1;
@@ -1881,7 +1878,7 @@ var SIMULATOR = {};
 
 			target.timer += slow;
 
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += debug_name(src_card) + ' slows ' + debug_name(target) + ' by ' + slow + '<br>';
 			}
 
@@ -1914,7 +1911,7 @@ var SIMULATOR = {};
 			setPassiveStatus(unearthedCard, 'evade', 'invisible');
 			setPassiveStatus(unearthedCard, 'absorb', 'warded');
 
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += debug_name(unearthedCard) + ' is unearthed</br>';
 			}
 
@@ -1933,7 +1930,7 @@ var SIMULATOR = {};
 			dying.reanimated = true;
 			// TODO: Change art
 
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += ' and is reanimated</br>';
 			}
 
@@ -1970,7 +1967,7 @@ var SIMULATOR = {};
 			var weakest = choose_random_target(targets)[0];
 			weakest.attack_berserk += swarm;
 
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				echo += debug_name(attacker) + ' activates swarm, boosting the attack of ' + debug_name(attacker) + ' by ' + swarm + '</br>';
 			}
 
@@ -1983,7 +1980,7 @@ var SIMULATOR = {};
 	function activation_skills(src_card) {
 
 		if (src_card.silenced) {
-			if (SIMULATOR.config.debug) echo += debug_name(src_card) + " is silenced and cannot use skills</br>";
+			if (simConfig.debug) echo += debug_name(src_card) + " is silenced and cannot use skills</br>";
 			return;
 		}
 
@@ -2005,7 +2002,7 @@ var SIMULATOR = {};
 				skill.countdown = skill.c;
 			}
 
-			if (SIMULATOR.config.showAnimations) {
+			if (simConfig.showAnimations) {
 				drawField(field, null, null, turn, src_card);
 			}
 		}
@@ -2016,7 +2013,7 @@ var SIMULATOR = {};
 		SIMULATOR.simulation_turns = 0;
 
 		// Set up empty decks
-		var deck = {
+		deck = {
 			cpu: {
 				deck: []
 			},
@@ -2024,8 +2021,6 @@ var SIMULATOR = {};
 				deck: []
 			}
 		};
-
-		SIMULATOR.deck = deck;
 
 		// Set up empty field
 		var field = {
@@ -2037,7 +2032,6 @@ var SIMULATOR = {};
 			}
 		};
 		SIMULATOR.field = field;
-		var simConfig = SIMULATOR.config;
 
 		// Load player deck
 		deck['player'] = copy_deck(simConfig.cache_player_deck_cards);
@@ -2072,7 +2066,6 @@ var SIMULATOR = {};
 
 		initializeBattle();
 
-		var simConfig = SIMULATOR.config;
 		// Shuffle decks
 		if (simConfig.playerExactOrdered) {
 			if (!simConfig.playerOrdered) {
@@ -2109,7 +2102,6 @@ var SIMULATOR = {};
 	}
 
 	function setupDecks() {
-		var simConfig = SIMULATOR.config;
 		// Cache decks where possible
 		// Load player deck
 		var cache_player_deck;
@@ -2167,30 +2159,22 @@ var SIMULATOR = {};
 		});
 	}
 
-	SIMULATOR.pause = false;
-
 	function onCardChosen(turn, drawCards) {
 		clearFrames();
 		performTurns(turn, drawCards);
 	}
 
 	function performTurns(turn, drawCards) {
-		if (SIMULATOR.pause) {
-			SIMULATOR.pause = false;
-			return false;
-		}
 		var done = performTurnsInner(turn, drawCards);
 		if (done && SIMULATOR.userControlled) {
 			SIM_CONTROLLER.debug_end();
 		}
 		return done;
 	}
-	SIMULATOR.performTurns = performTurns;
 
 	function performTurnsInner(turn, drawCards) {
 		// Set up players
 		var first_player, second_player;
-		var simConfig = SIMULATOR.config;
 		if (simConfig.surge) {
 			first_player = 'cpu';
 			second_player = 'player';
@@ -2200,12 +2184,6 @@ var SIMULATOR = {};
 		}
 
 		if (turn > 0) {
-			if (livePvP) {
-				if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
-					simulating = false;
-					return true;
-				}
-			}
 			// Retry this turn - don't bother doing setup all over again
 			if (!performTurn(turn, field, first_player, second_player, drawCards)) {
 				// Try this turn again
@@ -2215,8 +2193,6 @@ var SIMULATOR = {};
 				simulating = false;
 				return true;
 			}
-		} else if (!simConfig.surge && SIMULATOR.sendBattleUpdate) {
-			SIMULATOR.sendBattleUpdate(turn);
 		}
 
 		turn++;
@@ -2235,7 +2211,7 @@ var SIMULATOR = {};
 				return false;
 			} else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
 				simulating = false;
-				if (SIMULATOR.config.debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+				if (simConfig.debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 				return true;
 			}
 		}
@@ -2271,7 +2247,6 @@ var SIMULATOR = {};
 	}
 
 	function setup_turn(turn, first_player, second_player, field) {
-		var simConfig = SIMULATOR.config;
 		simulation_turns = turn;
 
 		SIMULATOR.choice = undefined;
@@ -2353,12 +2328,8 @@ var SIMULATOR = {};
 		var deck_p_deck = deck_p.deck;
 		var deck_p_ordered = deck_p['ordered'];
 
-		if (livePvP && p === 'cpu' && drawCards) {
-			waitForOpponent(p, deck_p_deck, deck_p_ordered, turn, drawCards);
-			return false;
-		} else if (deck_p_deck[0]) {
+		if (deck_p_deck[0]) {
 			// Deck not empty yet
-			SIMULATOR.waiting = false;
 			var card_picked = 0;
 
 			if (deck_p_deck.length == 1) {
@@ -2393,22 +2364,6 @@ var SIMULATOR = {};
 		deck.length = key;
 
 	}
-
-	function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
-
-		SIMULATOR.waiting = true;
-		SIMULATOR.closeDiv = true;
-
-		if (drawCards) {
-			hideTable();
-			outputTurns(echo);
-			drawField(field, null, performTurns, turn);
-			SIMULATOR.sendBattleUpdate(turn);
-		}
-
-		return -1;
-	}
-	SIMULATOR.waitForOpponent = waitForOpponent;
 
 	function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
 		// Prepare 3-card hand
@@ -2593,7 +2548,7 @@ var SIMULATOR = {};
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
 				}
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' is not active yet<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' is not active yet<br>';
 				continue;
 			}
 
@@ -2603,14 +2558,14 @@ var SIMULATOR = {};
 				if (current_assault.vampirism) {
 					activationSkills.vampirism(current_assault, field_o_assaults);
 				}
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' is frozen and cannot attack<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' is frozen and cannot attack<br>';
 				continue;
 			}
 
 			var activations = 1;
 			if (current_assault.dualstrike_triggered) {
 				activations++;
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
 			}
 
 			for (; activations > 0; activations--) {
@@ -2629,7 +2584,7 @@ var SIMULATOR = {};
 				// Check attack
 				// - check rally and weaken
 				if (!current_assault.hasAttack()) {
-					if (SIMULATOR.config.debug && current_assault.permanentAttack() > 0) echo += debug_name(current_assault) + ' is weakened and cannot attack<br>';
+					if (simConfig.debug && current_assault.permanentAttack() > 0) echo += debug_name(current_assault) + ' is weakened and cannot attack<br>';
 					continue;
 				}
 
@@ -2672,7 +2627,7 @@ var SIMULATOR = {};
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		remove_dead();
 
-		if (SIMULATOR.config.debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
+		if (simConfig.debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
 	}
 
 	function setPassiveStatus(assault, skillName, statusName) {
@@ -2714,7 +2669,7 @@ var SIMULATOR = {};
 		}
 
 		var echo = '';
-		if (SIMULATOR.config.debug) {
+		if (simConfig.debug) {
 			if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
 			if (envenomed) echo += ' Venom: +' + envenomed;
 			if (shrouded) echo += ' Shroud: -' + shrouded;
@@ -2752,7 +2707,7 @@ var SIMULATOR = {};
 		if (dualStrike && dualStrike.countdown) {
 			dualStrike.countdown--;
 
-			if (SIMULATOR.config.debug) {
+			if (simConfig.debug) {
 				if (dualStrike.countdown) {
 					echo += debug_name(unit) + ' charges  dualstrike (ready in ' + dualStrike.countdown + ' turns)<br/>';
 				} else {
@@ -2767,7 +2722,7 @@ var SIMULATOR = {};
 			var skill = skills[i];
 			if (skill.countdown) {
 				skill.countdown--;
-				if (SIMULATOR.config.debug) {
+				if (simConfig.debug) {
 					if (skill.countdown) {
 						echo += debug_name(unit) + ' charges ' + convertName(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
 					} else {
@@ -2813,7 +2768,7 @@ var SIMULATOR = {};
 				}
 
 				current_assault.health_left += regen_health;
-				if (SIMULATOR.config.debug) echo += debug_name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
+				if (simConfig.debug) echo += debug_name(current_assault) + ' regenerates ' + regen_health + ' health<br>';
 			}
 
 			// Poison
@@ -2878,13 +2833,13 @@ var SIMULATOR = {};
 				if (corroded.timer < 0) {
 					current_assault.corroded = false;
 					current_assault.attack_corroded = 0;
-					if (SIMULATOR.config.debug) {
+					if (simConfig.debug) {
 						echo += debug_name(current_assault) + ' recovers from corrosion<br>';
 					}
 				} else {
 					var corrosion = corroded.amount;
 					current_assault.attack_corroded = corrosion;
-					if (SIMULATOR.config.debug) {
+					if (simConfig.debug) {
 						echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
 					}
 				}
@@ -2904,7 +2859,6 @@ var SIMULATOR = {};
 	}
 
 	function doAttack(current_assault, originalTarget, field_o_assaults, field_o_commander) {
-		var simConfig = SIMULATOR.config;
 		var target = originalTarget
 		// -- START ATTACK SEQUENCE --
 		if (!target) {
@@ -3325,7 +3279,7 @@ var SIMULATOR = {};
 		counterDamage = damageInfo.damage;
 		var shatter = damageInfo.shatter;
 
-		if (SIMULATOR.config.debug) {
+		if (simConfig.debug) {
 			echo += '<u>(' + counterType + ': +' + counterBase;
 			if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
 			echo += damageInfo.echo;
@@ -3364,7 +3318,6 @@ var SIMULATOR = {};
 		healthStats.player.percent = healthStats.player.taken / healthStats.player.total;
 		healthStats.cpu.percent = healthStats.cpu.taken / healthStats.cpu.total;
 
-		var simConfig = SIMULATOR.config;
 		var commander_o = field.cpu.commander;
 		if (simConfig.cpuDeck) {
 			if (commander_o.isAlive() && !forceWin) {
@@ -3391,11 +3344,11 @@ var SIMULATOR = {};
 	var simulation_turns = 0;
 	var simulating = false;
 	var userControlled = false;
-	var livePvP = false;
 	var turn = 0;
 	var totalDeckHealth = 0;
 	var totalCpuDeckHealth = 0;
 	var maxTurns = 100;
+	var simConfig = {};
 
 	// public functions
 	SIMULATOR.simulate = simulate;
@@ -3417,6 +3370,14 @@ var SIMULATOR = {};
 			},
 			set: function (value) {
 				setupField = value;
+			}
+		},
+		config: {
+			get: function() {
+				return simConfig;
+			},
+			set: function(value) {
+				simConfig = value;
 			}
 		},
 		deck: {
@@ -3481,14 +3442,6 @@ var SIMULATOR = {};
 			},
 			set: function (value) {
 				userControlled = value;
-			}
-		},
-		livePvP: {
-			get: function () {
-				return livePvP;
-			},
-			set: function (value) {
-				livePvP = value;
 			}
 		}
 	});
