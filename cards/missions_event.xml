@@ -63647,5 +63647,149 @@
       <card id="5057" mastery_level="7" />
     </deck>
   </mission>
+  <mission>
+    <id>7074</id>
+    <name>Asking For Help</name>
+    <energy>18</energy>
+    <desc>After defeating that traitor of Gurk, you tell the Avian Tribe your plan to dismember the factions and unify the tribes.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="6170" name="Ostromech Stepclaw" />
+      <card id="6170" name="Ostromech Stepclaw" />
+      <card id="5110" name="Alectryon" />
+      <card id="5110" name="Alectryon" />
+      <card id="7274" name="Frozenclaw Summoner" />
+      <card id="7274" name="Frozenclaw Summoner" />
+      <card id="5000" name="Azure Sphinx" />
+      <card id="5047" name="Sky Fisher" />
+      <card id="5104" name="Pisces" />
+      <card id="5242" mastery_level="2" name="Gigantadactyl" />
+      <card id="5176" mastery_level="3" name="Raywing" />
+      <card id="5122" mastery_level="4" name="Crow King" />
+      <card id="2068" mastery_level="5" name="Whitesail Wyvern" />
+      <card id="5244" mastery_level="6" name="Mutant Scaupus" />
+      <card id="7616" mastery_level="7" name="Lechuza, the Skybinder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7075</id>
+    <name>The Real Champion</name>
+    <energy>18</energy>
+    <desc>Ashanti appears in front of you and claims to be the actual and real champion of the Gladius Scriptorium. He says that to consider your proposal, you need to pass his challenge and defeat him in combat.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="5110" name="Alectryon" />
+      <card id="5110" name="Alectryon" />
+      <card id="7274" name="Frozenclaw Summoner" />
+      <card id="7274" name="Frozenclaw Summoner" />
+      <card id="5000" name="Azure Sphinx" />
+      <card id="5000" name="Azure Sphinx" />
+      <card id="5047" name="Sky Fisher" />
+      <card id="5104" name="Pisces" />
+      <card id="5242" name="Gigantadactyl" />
+      <card id="5176" mastery_level="2" name="Raywing" />
+      <card id="5122" mastery_level="3" name="Crow King" />
+      <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
+      <card id="5244" mastery_level="5" name="Mutant Scaupus" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="5632" mastery_level="7" name="Auron, the Icewall" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7076</id>
+    <name>First Challenge</name>
+    <energy>18</energy>
+    <desc>The first challenge is to survive an obstacle course filled with deadly traps. You accept and start the trial. The danger was so high and, on many occasions, you were really close to failing and losing your life.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="5000" name="Azure Sphinx" />
+      <card id="5000" name="Azure Sphinx" />
+      <card id="5047" name="Sky Fisher" />
+      <card id="5047" name="Sky Fisher" />
+      <card id="5104" name="Pisces" />
+      <card id="5104" name="Pisces" />
+      <card id="5242" name="Gigantadactyl" />
+      <card id="5176" name="Raywing" />
+      <card id="5122" name="Crow King" />
+      <card id="2068" mastery_level="2" name="Whitesail Wyvern" />
+      <card id="5244" mastery_level="3" name="Mutant Scaupus" />
+      <card id="6053" mastery_level="4" name="Squire Gorger" />
+      <card id="6300" mastery_level="5" name="Branded Ragecrow" />
+      <card id="7101" mastery_level="6" name="Shriekers" />
+      <card id="5600" mastery_level="7" name="Tanit, Divinity's Focus" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7077</id>
+    <name>Second Challenge</name>
+    <energy>18</energy>
+    <desc>At the exact moment you reach the goal, you see a group of the fiercest fighters that you've ever seen before, waiting to fight with you, all at the same time. You manage to beat them, but you feel that you are almost fainting.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="6231" name="Firemouth Moth" />
+      <card id="6231" name="Firemouth Moth" />
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="5209" name="Fowlmaster" />
+      <card id="5209" name="Fowlmaster" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="2232" name="Aerial Fellow" />
+      <card id="5059" mastery_level="2" name="Bemola" />
+      <card id="5175" mastery_level="3" name="Spirit of Cygnus" />
+      <card id="5187" mastery_level="4" name="Star Chaser" />
+      <card id="6171" mastery_level="5" name="Kiki" />
+      <card id="6272" mastery_level="6" name="Blazemaster Rookie" />
+      <card id="4023" mastery_level="7" name="Paloma, Spear Knight" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7078</id>
+    <name>Final Challenge</name>
+    <energy>18</energy>
+    <desc>Ashanti stands up in front of you and praises your skills but, you still need to beat him in combat. He is fast and doesn't have any mercy on his attacks. You don't know how but you defeat him with your remaining energy.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="6173" name="Toxophilite Watcher" />
+      <card id="5209" name="Fowlmaster" />
+      <card id="5209" name="Fowlmaster" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="2232" name="Aerial Fellow" />
+      <card id="5059" name="Bemola" />
+      <card id="5175" mastery_level="2" name="Spirit of Cygnus" />
+      <card id="5187" mastery_level="3" name="Star Chaser" />
+      <card id="6171" mastery_level="4" name="Kiki" />
+      <card id="6272" mastery_level="5" name="Blazemaster Rookie" />
+      <card id="7174" mastery_level="6" name="Mugen and Young Hawk" />
+      <card id="6613" mastery_level="7" name="Skylo, Lord of the Wings" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7079</id>
+    <name>Glory to the New Champion</name>
+    <energy>18</energy>
+    <desc>You collapse aside an absolutely exhausted Ashanti and hear all the screams and praises from the audience. You are the new Champion, luck is on your side once again and your goal of unification is one step closer.</desc>
+    <commander id="471" />
+    <deck>
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="7246" name="Snowfall Dancer" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="5174" name="Cloudbreak Elites" />
+      <card id="2232" name="Aerial Fellow" />
+      <card id="2232" name="Aerial Fellow" />
+      <card id="5059" name="Bemola" />
+      <card id="5175" name="Spirit of Cygnus" />
+      <card id="5187" name="Star Chaser" />
+      <card id="6171" mastery_level="2" name="Kiki" />
+      <card id="6272" mastery_level="3" name="Blazemaster Rookie" />
+      <card id="7174" mastery_level="4" name="Mugen and Young Hawk" />
+      <card id="7207" mastery_level="5" name="Batrachia Spear" />
+      <card id="5203" mastery_level="6" name="Skymar Cavalier" />
+      <card id="4040" mastery_level="7" name="Iphelia, Voice of Pain" />
+    </deck>
+  </mission>
 </root>
 

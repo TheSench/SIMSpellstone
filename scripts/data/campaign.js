@@ -6647,6 +6647,22 @@ var CAMPAIGNS = {
 			"7061"
 		],
 		"name": "Lightning Return of Caesar"
+	},
+	"4015": {
+		"id": "4015",
+		"items": {
+			"3122": 0.6
+		},
+		"location_id": "32",
+		"missions": [
+			"7074",
+			"7075",
+			"7076",
+			"7077",
+			"7078",
+			"7079"
+		],
+		"name": "Lightning Boss Ashanti Trial"
 	}
 };
 var MISSIONS = {
@@ -140772,5 +140788,365 @@ var MISSIONS = {
 		],
 		"id": "7073",
 		"name": "Another Glorious Victory"
+	},
+	"7074": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "6170"
+			},
+			{
+				"id": "6170"
+			},
+			{
+				"id": "5110"
+			},
+			{
+				"id": "5110"
+			},
+			{
+				"id": "7274"
+			},
+			{
+				"id": "7274"
+			},
+			{
+				"id": "5000"
+			},
+			{
+				"id": "5047"
+			},
+			{
+				"id": "5104"
+			},
+			{
+				"id": "5242",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5176",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2068",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5244",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7616",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7074",
+		"name": "Asking For Help"
+	},
+	"7075": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "5110"
+			},
+			{
+				"id": "5110"
+			},
+			{
+				"id": "7274"
+			},
+			{
+				"id": "7274"
+			},
+			{
+				"id": "5000"
+			},
+			{
+				"id": "5000"
+			},
+			{
+				"id": "5047"
+			},
+			{
+				"id": "5104"
+			},
+			{
+				"id": "5242"
+			},
+			{
+				"id": "5176",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2068",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5244",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5632",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7075",
+		"name": "The Real Champion"
+	},
+	"7076": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "5000"
+			},
+			{
+				"id": "5000"
+			},
+			{
+				"id": "5047"
+			},
+			{
+				"id": "5047"
+			},
+			{
+				"id": "5104"
+			},
+			{
+				"id": "5104"
+			},
+			{
+				"id": "5242"
+			},
+			{
+				"id": "5176"
+			},
+			{
+				"id": "5122"
+			},
+			{
+				"id": "2068",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5244",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6053",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6300",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7101",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5600",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7076",
+		"name": "First Challenge"
+	},
+	"7077": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "6231"
+			},
+			{
+				"id": "6231"
+			},
+			{
+				"id": "6173"
+			},
+			{
+				"id": "6173"
+			},
+			{
+				"id": "5209"
+			},
+			{
+				"id": "5209"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "2232"
+			},
+			{
+				"id": "5059",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5175",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5187",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6171",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6272",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4023",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7077",
+		"name": "Second Challenge"
+	},
+	"7078": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "6173"
+			},
+			{
+				"id": "6173"
+			},
+			{
+				"id": "5209"
+			},
+			{
+				"id": "5209"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "2232"
+			},
+			{
+				"id": "5059"
+			},
+			{
+				"id": "5175",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5187",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6171",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6272",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7174",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6613",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7078",
+		"name": "Final Challenge"
+	},
+	"7079": {
+		"commander": {
+			"id": "471"
+		},
+		"deck": [
+			{
+				"id": "7246"
+			},
+			{
+				"id": "7246"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "2232"
+			},
+			{
+				"id": "2232"
+			},
+			{
+				"id": "5059"
+			},
+			{
+				"id": "5175"
+			},
+			{
+				"id": "5187"
+			},
+			{
+				"id": "6171",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6272",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7174",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7207",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5203",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4040",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7079",
+		"name": "Glory to the New Champion"
 	}
 };
