@@ -27557,20 +27557,23 @@
       <level>4</level>
       <attack>15</attack>
       <health>44</health>
+      <skill id="stasis" x="5" />
+      <skill id="counterburn" x="6" />
+      <skill id="heal" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>45</health>
       <skill id="stasis" x="6" />
-      <skill id="counterburn" x="6" />
-      <skill id="heal" x="5" all="1" />
+      <skill id="counterburn" x="7" />
+      <skill id="heal" x="6" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>46</health>
-      <skill id="stasis" x="6" />
-      <skill id="counterburn" x="7" />
-      <skill id="heal" x="6" all="1" />
+      <skill id="stasis" x="7" />
+      <skill id="counterburn" x="8" />
+      <skill id="heal" x="7" all="1" />
     </upgrade>
   </unit>
   <unit>
