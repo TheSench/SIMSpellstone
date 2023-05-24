@@ -10934,14 +10934,14 @@
       <health>63</health>
       <skill id="evade" x="3" />
       <skill id="weaken" x="5" all="1" />
-      <skill id="berserk" x="5" />
+      <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>64</health>
       <skill id="evade" x="3" />
       <skill id="weaken" x="6" all="1" />
-      <skill id="berserk" x="6" />
+      <skill id="berserk" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -10949,7 +10949,7 @@
       <health>65</health>
       <skill id="evade" x="4" />
       <skill id="weaken" x="7" all="1" />
-      <skill id="berserk" x="7" />
+      <skill id="berserk" x="8" />
     </upgrade>
   </unit>
   <unit>

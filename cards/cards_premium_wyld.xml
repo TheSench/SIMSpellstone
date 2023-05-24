@@ -15874,21 +15874,21 @@
       <health>63</health>
       <skill id="evade" x="3" />
       <skill id="armored" x="10" />
-      <skill id="corrosive" x="8" />
+      <skill id="corrosive" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>64</health>
       <skill id="evade" x="3" />
       <skill id="armored" x="11" />
-      <skill id="corrosive" x="8" />
+      <skill id="corrosive" x="10" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>65</health>
       <skill id="evade" x="4" />
       <skill id="armored" x="12" />
-      <skill id="corrosive" x="10" />
+      <skill id="corrosive" x="11" />
     </upgrade>
   </unit>
   <unit>
