@@ -19334,6 +19334,151 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 103 - Undead - Node 1 -->
+  <achievement>
+    <id>3879</id>
+    <!-- HERE  -->
+    <type>2</type>
+    <order>101</order>
+    <name>Into the chaos</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Into the chaos' campaign on Mastery Level 1.</desc>
+    <!-- HERE  -->
+    <mission_req>7085</mission_req>
+    <locked_start_time>1685034000</locked_start_time>
+    <!-- Thursday, May 25, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <req>
+      <campaign>1347</campaign>
+      <!-- HERE  -->
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3101" number="50" />
+      <!-- Expediton Item -->
+      <!-- HERE  -->
+      <event_points id="7099" number="50" />
+      <!-- Expediton ID -->
+      <!-- HERE  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3880</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Into the chaos</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Into the chaos' campaign on Mastery Level 2.</desc>
+    <mission_req>7085</mission_req>
+    <locked_start_time>1685034000</locked_start_time>
+    <!-- Thursday, May 25, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3879</achievement_req>
+    <!-- Dont forget requirement  -->
+    <req>
+      <campaign>1347</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3881</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Into the chaos</name>
+    <desc>Complete the 'Into the chaos' campaign on Mastery Level 4.</desc>
+    <mission_req>7085</mission_req>
+    <locked_start_time>1685034000</locked_start_time>
+    <!-- Thursday, May 25, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3880</achievement_req>
+    <req>
+      <campaign>1347</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3882</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Into the chaos</name>
+    <desc>Complete the 'Into the chaos' campaign on Mastery Level 6.</desc>
+    <mission_req>7085</mission_req>
+    <locked_start_time>1685034000</locked_start_time>
+    <!-- Thursday, May 25, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3881</achievement_req>
+    <req>
+      <campaign>1347</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 103 - Undead - Node 2 -->
+  <achievement>
+    <id>3883</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crazy chainsaws</name>
+    <desc>Complete the 'Crazy chainsaws' campaign on Mastery Level 2.</desc>
+    <mission_req>7091</mission_req>
+    <locked_start_time>1686243600</locked_start_time>
+    <!-- Thursday, 8 June 2023 17:00:00 -->
+    <req>
+      <campaign>1348</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3884</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crazy chainsaws</name>
+    <desc>Complete the 'Crazy chainsaws' campaign on Mastery Level 4.</desc>
+    <mission_req>7091</mission_req>
+    <locked_start_time>1686243600</locked_start_time>
+    <!-- Thursday, 8 June 2023 17:00:00 -->
+    <achievement_req>3883</achievement_req>
+    <req>
+      <campaign>1348</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3885</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Crazy chainsaws</name>
+    <desc>Complete the 'Crazy chainsaws' campaign on Mastery Level 6.</desc>
+    <mission_req>7091</mission_req>
+    <locked_start_time>1686243600</locked_start_time>
+    <!-- Thursday, 8 June 2023 17:00:00 -->
+    <achievement_req>3884</achievement_req>
+    <req>
+      <campaign>1348</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -20697,6 +20842,36 @@
       <!-- 5th node -->
       <campaign>1346</campaign>
       <!-- 6th node -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Stormy Seastone Citadel -->
+    <id>4057</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Stormy Seastone Citadel</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Stormy Seastone Citadel.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6292</mission_req>
+    <req>
+      <campaign>1222</campaign>
+      <!-- 1st node -->
+      <campaign>1223</campaign>
+      <!-- 2nd node -->
+      <campaign>1224</campaign>
+      <!-- Boss node -->
+      <campaign>1226</campaign>
+      <!-- 3rd node -->
+      <campaign>1227</campaign>
+      <!-- 4th node -->
+      <campaign>1311</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1312</campaign>
+      <!-- Gen2 node 2 -->
       <level>7</level>
     </req>
     <reward>

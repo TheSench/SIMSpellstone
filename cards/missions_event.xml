@@ -63791,5 +63791,293 @@
       <card id="4040" mastery_level="7" name="Iphelia, Voice of Pain" />
     </deck>
   </mission>
+  <mission>
+    <id>7080</id>
+    <name>Rise of the general</name>
+    <energy>18</energy>
+    <desc>You arrive at the Stormy Seastone Citadel to realize that it was taken over by the powerful General Naglar Chainsawpaw.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="6165" name="Skelepede" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="1346" name="Wandmaker Demilich" />
+      <card id="6003" mastery_level="2" name="Black Knight" />
+      <card id="7259" mastery_level="3" name="Ranamuerta Bard" />
+      <card id="5122" mastery_level="4" name="Crow King" />
+      <card id="5087" mastery_level="5" name="Apollyon" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7081</id>
+    <name>Destroying alliances</name>
+    <energy>18</energy>
+    <desc>Looking for answers, you find that Chainsawpaw is against any unification, establishing chaos as the main rule for the inhabitants of the citadel.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="6003" name="Black Knight" />
+      <card id="2145" mastery_level="2" name="Astaroth" />
+      <card id="7259" mastery_level="3" name="Ranamuerta Bard" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="5087" mastery_level="5" name="Apollyon" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7082</id>
+    <name>Agents of chaos</name>
+    <energy>18</energy>
+    <desc>In a matter of time, some spies realized that you've been asking too many questions. Because of that, they sent Agents of Chaos to catch you.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="6003" name="Black Knight" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="5122" name="Crow King" />
+      <card id="2145" mastery_level="2" name="Astaroth" />
+      <card id="7259" mastery_level="3" name="Ranamuerta Bard" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7083</id>
+    <name>Total madness</name>
+    <energy>18</energy>
+    <desc>Behind every wave of Agents of Chaos, more enemies are coming, only because they enjoy this new regime of madness and destruction and they will try to protect it.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="2217" name="Virtuoso Mystic" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="2217" mastery_level="3" name="Virtuoso Mystic" />
+      <card id="6174" mastery_level="4" name="Deatheye Owl" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7084</id>
+    <name>Freezing scream</name>
+    <energy>18</energy>
+    <desc>From the wave of enemies, you hear a deafening war cry: it's Katerina Snowfang, an officer of General Chainsawpaw, ready to destroy you.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="6232" mastery_level="3" name="Firetouch Deathmoth" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7085</id>
+    <name>Partner at fangs</name>
+    <energy>18</energy>
+    <desc>Once Katerina is defeated, she recognizes your worth as a warrior and joins your forces to face the rest of the chaotic enemies.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7121" name="Varachnis" />
+      <card id="7121" name="Varachnis" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="1644" mastery_level="2" name="Blackfin" />
+      <card id="6232" mastery_level="3" name="Firetouch Deathmoth" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="2116" mastery_level="6" name="Messina's Choice" />
+      <card id="8134" mastery_level="7" name="Servant in Silenced Death" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7086</id>
+    <name>Crazy for power</name>
+    <energy>18</energy>
+    <desc>Katerina mentions to you, that General Chainsawpaw is insane. That's why she will help you to get to him. But first, you must make your way to the throne, fighting against all the underlings.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="6003" name="Black Knight" />
+      <card id="6003" name="Black Knight" />
+      <card id="2145" name="Astaroth" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="1346" mastery_level="5" name="Wandmaker Demilich" />
+      <card id="2116" mastery_level="6" name="Messina's Choice" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7087</id>
+    <name>Undead vanguard</name>
+    <energy>18</energy>
+    <desc>Thanks to Katerina's help, both of you were able to reach the castle, ready to face the most powerful soldiers of the General.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="2145" name="Astaroth" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="2116" mastery_level="5" name="Messina's Choice" />
+      <card id="6232" mastery_level="6" name="Firetouch Deathmoth" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7088</id>
+    <name>Crimson redemption</name>
+    <energy>18</energy>
+    <desc>During the fight against the General's powerful guard, Katerina has been injured and will no longer be able to join you on your quest, you must keep moving forward and face the General alone.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="6174" name="Deatheye Owl" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="1346" mastery_level="4" name="Wandmaker Demilich" />
+      <card id="6232" mastery_level="5" name="Firetouch Deathmoth" />
+      <card id="6232" mastery_level="6" name="Firetouch Deathmoth" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7089</id>
+    <name>Starting savages engines</name>
+    <energy>18</energy>
+    <desc>Finally, you arrive at the throne room where General Naglar Chainsawpaw himself is turning on his powerful chainsaws. He furiously roars and challenges you to one of the greatest duels of your life.</desc>
+    <commander id="229" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="6003" name="Black Knight" />
+      <card id="1644" name="Blackfin" />
+      <card id="2061" name="Reks, the Forlorn" />
+      <card id="5122" mastery_level="2" name="Crow King" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="2217" mastery_level="4" name="Virtuoso Mystic" />
+      <card id="7121" mastery_level="5" name="Varachnis" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7090</id>
+    <name>Naglar chainsawpaw</name>
+    <energy>18</energy>
+    <desc>Naglar has been one of the best warriors that you have ever faced, his powerful chainsaws give you no truce, but eventually, you end victorious.</desc>
+    <commander id="231" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="2116" name="Messina's Choice" />
+      <card id="2145" name="Astaroth" />
+      <card id="1644" name="Blackfin" />
+      <card id="1644" name="Blackfin" />
+      <card id="2116" mastery_level="2" name="Messina's Choice" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="2217" mastery_level="4" name="Virtuoso Mystic" />
+      <card id="7121" mastery_level="5" name="Varachnis" />
+      <card id="7121" mastery_level="6" name="Varachnis" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7091</id>
+    <name>Reign of serenity?</name>
+    <energy>18</energy>
+    <desc>After days of intense battles, the citadel finally returns to normality, thanks to the fact that the General and his remaining underlings have been defeated and imprisoned for good.</desc>
+    <commander id="265" />
+    <deck>
+      <card id="6165" name="Skelepede" />
+      <card id="2024" name="Dusk noble" />
+      <card id="1632" name="Shadow rider" />
+      <card id="1346" name="Wandmaker Demilich" />
+      <card id="6003" name="Black Knight" />
+      <card id="7259" name="Ranamuerta Bard" />
+      <card id="2145" name="Astaroth" />
+      <card id="1644" name="Blackfin" />
+      <card id="7121" name="Varachnis" />
+      <card id="2116" mastery_level="2" name="Messina's Choice" />
+      <card id="5087" mastery_level="3" name="Apollyon" />
+      <card id="2217" mastery_level="4" name="Virtuoso Mystic" />
+      <card id="7279" mastery_level="5" name="Brainweb Recluse" />
+      <card id="7279" mastery_level="6" name="Brainweb Recluse" />
+      <card id="8075" mastery_level="7" name="Vorpal Magnate" />
+    </deck>
+  </mission>
 </root>
 

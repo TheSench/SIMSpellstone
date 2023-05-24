@@ -1716,7 +1716,7 @@ var BATTLEGROUNDS = {
 		"name": "Counterblast Swarm"
 	},
 	"155": {
-		"desc": "Vampirism deals damage to opposing creature and then heals self, even on delay. Values are equal to 5% + 3 of the card’s base Health. 0-2 delay also gain armor equal to 10% of their base health.",
+		"desc": "All undeads receive Vampirism to 5% + 3. 0-2 delay also gain armor equal to 10%. All values based on Health",
 		"effect": [
 			{
 				"base": "health",

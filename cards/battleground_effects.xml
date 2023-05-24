@@ -1203,7 +1203,7 @@
   <battleground>
     <id>155</id>
     <name>Reinforced Undead Vampirism</name>
-    <desc>Vampirism deals damage to opposing creature and then heals self, even on delay. Values are equal to 5% + 3 of the card’s base Health. 0-2 delay also gain armor equal to 10% of their base health.</desc>
+    <desc>All undeads receive Vampirism to 5% + 3. 0-2 delay also gain armor equal to 10%. All values based on Health</desc>
     <icon>filter_undead_64.png</icon>
     <effect>
       <add_skill id="vampirism" mult="0.05" base="health" x="3" y="7" />

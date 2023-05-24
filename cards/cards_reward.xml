@@ -10353,6 +10353,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>14</attack>
       <skill id="counter" x="8" />
       <skill id="burn" x="6" />
       <skill id="nullify" x="5" />
@@ -13491,7 +13492,7 @@
     <picture>Monster_Beneath_Hood_B</picture>
     <asset_bundle>112</asset_bundle>
     <hidden_until_time>1510851600</hidden_until_time>
-    <attack>8</attack>
+    <attack>9</attack>
     <health>40</health>
     <cost>3</cost>
     <rarity>4</rarity>
@@ -13504,27 +13505,33 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
+      <attack>10</attack>
       <health>41</health>
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>11</attack>
       <health>42</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
+      <attack>12</attack>
       <health>43</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>44</health>
-      <attack>10</attack>
+      <attack>13</attack>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>14</attack>
       <health>45</health>
-      <skill id="evade" x="3" />
-      <skill id="strike" x="4" all="1" />
+      <skill id="evade" x="4" />
+      <skill id="strike" x="5" all="1" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -25693,13 +25700,13 @@
       <level>5</level>
       <skill id="backlash" x="5" />
       <skill id="heal" x="5" all="1" />
-      <skill id="heal" x="8" y="7" />
+      <skill id="heal" x="9" y="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="backlash" x="5" />
       <skill id="heal" x="5" all="1" />
-      <skill id="heal" x="9" y="7" />
+      <skill id="heal" x="10" y="7" />
     </upgrade>
   </unit>
   <unit>
@@ -29970,6 +29977,261 @@
       <skill id="regenerate" x="9" />
       <skill id="legion" x="5" />
       <skill id="enrage" x="4" all="1" y="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2252</id>
+    <card_type>2</card_type>
+    <name>Zomby Goblin</name>
+    <picture>Undead_Goblin_Tiny_Terror_A</picture>
+    <asset_bundle>274</asset_bundle>
+    <hidden_until_time>1685034000</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="3" />
+    <skill id="fervor" x="1" y="7" />
+    <skill id="poison" x="4" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="4" />
+      <skill id="fervor" x="1" y="7" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="4" />
+      <skill id="fervor" x="1" y="7" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="4" />
+      <skill id="fervor" x="2" y="7" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12252</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Shadowbane Goblin</name>
+    <picture>Undead_Goblin_Tiny_Terror_A</picture>
+    <asset_bundle>274</asset_bundle>
+    <hidden_until_time>1685034000</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="5" />
+    <skill id="fervor" x="2" y="7" />
+    <skill id="poison" x="5" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="5" />
+      <skill id="fervor" x="2" y="7" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="5" />
+      <skill id="fervor" x="3" y="7" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="6" />
+      <skill id="fervor" x="3" y="7" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="6" />
+      <skill id="fervor" x="3" y="7" />
+      <skill id="poison" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22252</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dreadlord Goblin</name>
+    <picture>Undead_Goblin_Tiny_Terror_B</picture>
+    <asset_bundle>274</asset_bundle>
+    <hidden_until_time>1685034000</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="6" />
+    <skill id="fervor" x="4" y="7" />
+    <skill id="poison" x="7" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="7" />
+      <skill id="fervor" x="4" y="7" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="7" />
+      <skill id="fervor" x="4" y="7" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="7" />
+      <skill id="fervor" x="5" y="7" />
+      <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2253</id>
+    <card_type>2</card_type>
+    <name>Frostbound Walker</name>
+    <picture>Undead_Frozen_Warrior_A</picture>
+    <asset_bundle>274</asset_bundle>
+    <hidden_until_time>1685034000</hidden_until_time>
+    <attack>7</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="6" />
+    <skill id="frost" x="3" />
+    <skill id="berserk" x="3" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="7" />
+      <skill id="frost" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="7" />
+      <skill id="frost" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12253</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Frostheart Walker</name>
+    <picture>Undead_Frozen_Warrior_A</picture>
+    <asset_bundle>274</asset_bundle>
+    <hidden_until_time>1685034000</hidden_until_time>
+    <attack>9</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="7" />
+    <skill id="frost" x="4" />
+    <skill id="berserk" x="4" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="8" />
+      <skill id="frost" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="8" />
+      <skill id="frost" x="5" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22253</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Glacierheart Walker</name>
+    <picture>Undead_Frozen_Warrior_B</picture>
+    <asset_bundle>274</asset_bundle>
+    <hidden_until_time>1685034000</hidden_until_time>
+    <attack>11</attack>
+    <health>30</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="regenerate" x="8" />
+    <skill id="frost" x="5" />
+    <skill id="berserk" x="5" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="regenerate" x="9" />
+      <skill id="frost" x="5" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="regenerate" x="9" />
+      <skill id="frost" x="6" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
 </root>
