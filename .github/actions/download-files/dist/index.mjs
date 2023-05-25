@@ -2806,8 +2806,6 @@ var rootDir = __nccwpck_require__(789);
 
 
 async function determineChanges(user_id, password) {
-    const previousAssetBundles = loadOldAssetBundles();
-    const assetBundlesPath = (0,rootDir/* pathFromRoot */.MM)('scripts', 'data', 'assetBundles.json');
     console.time('downloadFiles');
     const initData = await callApi({
         message: 'init',
@@ -2825,6 +2823,8 @@ async function determineChanges(user_id, password) {
         });
 
     const data = JSON.stringify(assetBundles, null, '  ');
+    const assetBundlesPath = (0,rootDir/* pathFromRoot */.MM)('scripts', 'data', 'assetBundles.json');
+    const previousAssetBundles = loadOldAssetBundles(assetBundlesPath);
     external_fs_.writeFileSync(assetBundlesPath, data, 'utf8');
     console.timeEnd('downloadFiles');
     return diffAssetBundles(previousAssetBundles, assetBundles);
@@ -2841,8 +2841,7 @@ function diffAssetBundles(previousAssetBundles, assetBundles) {
     return updates;
 }
 
-function loadOldAssetBundles() {
-    const assetBundlesPath = (0,rootDir/* pathFromRoot */.MM)('scripts', 'data', 'assetBundles.json');
+function loadOldAssetBundles(assetBundlesPath) {
     if (!external_fs_.existsSync(assetBundlesPath)) {
         return {};
     }
@@ -2883,13 +2882,17 @@ async function callApi(payload) {
     });
 }
 
+// EXTERNAL MODULE: external "path"
+var external_path_ = __nccwpck_require__(17);
 ;// CONCATENATED MODULE: ./src/downloads/download.mjs
 
 
 
 
-async function downloadFile(filename, url) {
-    const downloadLocation = (0,rootDir/* pathFromRoot */.MM)('Downloads', `${filename}.unity3d`);
+
+async function downloadFile(assetName, url) {
+    const filename = external_path_.basename(assetName);
+    const downloadLocation = (0,rootDir/* pathFromRoot */.MM)('Downloads', filename);
     const file = external_fs_.createWriteStream(downloadLocation);
     return new Promise((resolve, reject) => {
         external_https_.get(url, function (response) {
@@ -2924,12 +2927,10 @@ const fileTypes = [
     //"storepack",
 ];
 ;// CONCATENATED MODULE: ./src/downloads/getUrl.mjs
-const baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/asset_bundles/2020_3_42f1/";
-
-const fileVersion = "_unity2020_3_42_webgl.unity3d";
+const baseURL = "https://d3splaxnu2bep2.cloudfront.net/spellstone/";
 
 function getUrl(fileName) {
-    return (baseURL + fileName + fileVersion);
+    return (baseURL + fileName);
 }
 ;// CONCATENATED MODULE: ./src/downloads/index.mjs
 
@@ -2939,18 +2940,37 @@ function getUrl(fileName) {
 
 async function downloadFiles(user, password) {
     const changes = await determineChanges(user, password);
-    for (const fileType of fileTypes) {
-        console.log(`Checking ${fileType}...`);
-        for (const fileName of changes.filter(fileName => fileName.startsWith(fileType))) {
-            console.log(`Downloading ${fileName}...`);
-            if (!await tryDownloadFile(fileName)) break;
-        };
-    }
+    const filesToDowassetsToDownloadload = fileTypes.flatMap(fileType =>
+        changes.filter(assetName => assetName.includes(`/${fileType}`))
+    );
+    return await downloadUpdatedFiles(filesToDowassetsToDownloadload);
 }
 
-async function tryDownloadFile(fileName) {
-    const url = getUrl(fileName);
-    return await downloadFile(fileName, url).then(
+async function downloadUpdatedFiles(assetsToDownload) {
+    let i = 0;
+    function downloadNextFile() {
+        if (i >= assetsToDownload.length) {
+            return;
+        }
+        const assetName = assetsToDownload[i];
+        console.log(`Downloading ${assetName}...`);
+        return tryDownloadFile(assetName).then(
+            () => {
+                i++;
+                downloadNextFile();
+            },
+            error => {
+                console.log(`Failed to download ${assetName}: ${error}`);
+            },
+        );
+    }
+    const workers = Math.max(4, assetsToDownload.length);
+    await Promise.all(Array(workers).fill(0).map(downloadNextFile));
+}
+
+async function tryDownloadFile(assetName) {
+    const url = getUrl(assetName);
+    return await downloadFile(assetName, url).then(
         () => true,
         () => false,
     );
