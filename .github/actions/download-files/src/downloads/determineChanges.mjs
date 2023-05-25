@@ -11,6 +11,8 @@ export async function determineChanges(user_id, password) {
         user_id,
         password,
         unity: 'Unity2020_3_42',
+        platform: 'web',
+        client_version: '70'
     });
     const assetBundles = {};
     Object.values(initData.asset_bundles)
