@@ -2857,6 +2857,7 @@ async function callApi(payload) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'User-Agent': 'Mozilla/5.0'
         }
     };
     return new Promise((resolve, reject) => {
