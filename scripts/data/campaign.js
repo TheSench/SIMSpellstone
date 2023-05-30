@@ -101,46 +101,6 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"25": {
-		"id": "25",
-		"name": "Stormy Seastone Citadel"
-	},
-	"26": {
-		"id": "26",
-		"name": "World's Center"
-	},
-	"27": {
-		"id": "27",
-		"name": "Return to Elaria"
-	},
-	"28": {
-		"id": "28",
-		"name": "Healed Dawnglow"
-	},
-	"29": {
-		"id": "29",
-		"name": "Return to Luminis"
-	},
-	"30": {
-		"id": "30",
-		"name": "Return to Karthos"
-	},
-	"31": {
-		"id": "31",
-		"name": "Return to Tarragon Peak"
-	},
-	"32": {
-		"id": "32",
-		"name": "Gladius Scriptorium"
-	},
-	"33": {
-		"id": "33",
-		"name": "Skyhaven Assault"
-	},
-	"34": {
-		"id": "34",
-		"name": "Conflux Convergence"
-	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
