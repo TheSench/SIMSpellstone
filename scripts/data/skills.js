@@ -381,7 +381,7 @@ var SKILL_DATA = {
 	},
 	"vampirism": {
 		"desc": "Deals damage to opposing creature, even while on delay. This damage cannot be increased. After dealing damage, heals self.",
-		"icon": "siphon",
+		"icon": "vampirism",
 		"name": "Vampirism",
 		"type": "passive"
 	},

@@ -12500,7 +12500,7 @@
   <unit>
     <id>6631</id>
     <card_type>2</card_type>
-    <name>Hellfire, Spirit Killer</name>
+    <name>Skids, Hellfire Liches</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
@@ -12508,8 +12508,8 @@
     <asset_bundle>274</asset_bundle>
     <hidden_until_time>1685034000</hidden_until_time>
     <!-- Thursday, May 25, 2023 17:00:00	 -->
-    <item_name>Spirit Stone</item_name>
-    <item_desc>Collect Spirit Stones to upgrade Hellfire, Spirit Killer!</item_desc>
+    <item_name>Liches Stone</item_name>
+    <item_desc>Collect Liches Stones to upgrade Skids, Hellfire Liches!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>

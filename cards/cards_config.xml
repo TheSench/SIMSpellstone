@@ -71,6 +71,7 @@
     <name>Imbue</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
+    <hidden>1</hidden>
     <desc>Adds this Skill to a random ally creature.</desc>
     <desc_all>Adds this Skill to all ally creatures.</desc_all>
     <desc_faction>Adds this Skill to a random {y} ally.</desc_faction>
@@ -85,6 +86,7 @@
     <name>Enhance</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
+    <hidden>1</hidden>
     <attributes x="1" y="1" all="1" c="1" s="1" />
     <desc>Increases the effect of this Skill for a random ally creature.</desc>
     <desc_all>Increases the effect of this Skill for all ally creatures.</desc_all>
@@ -581,7 +583,7 @@
   <skillType>
     <id>vampirism</id>
     <order>1</order>
-    <icon>siphon</icon>
+    <icon>vampirism</icon>
     <name>Vampirism</name>
     <desc>Deals damage to opposing creature, even while on delay. This damage cannot be increased. After dealing damage, heals self.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -673,6 +675,7 @@
     <icon>fury</icon>
     <name>Maelstrom's Fury</name>
     <desc>After taking Attack damage, deals damage back and permanently increases Attack.</desc>
+    <hidden>1</hidden>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
@@ -681,6 +684,7 @@
     <order>310</order>
     <icon>cleanse</icon>
     <name>Cleanse</name>
+    <hidden>1</hidden>
     <desc>Every {c} turns, remove the negative states of itself or an ally.</desc>
     <desc_all>Every {c} turns, remove the negative states (Poison, Hex, Burn, Freeze, Venom, Weaken, Silence and Confuse) of itself or an ally.</desc_all>
     <status_flag>cleanse_countdown</status_flag>
@@ -703,6 +707,7 @@
     <icon>scorchbreath</icon>
     <name>Scorchbreath</name>
     <desc>Inflicts Scorch to the opposing creature and its adjacent creatures.</desc>
+    <hidden>1</hidden>
     <status_flag>burn</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>8</balance_points>
@@ -712,6 +717,7 @@
     <order>15</order>
     <icon>heartseeker</icon>
     <name>Heartseeker</name>
+    <hidden>1</hidden>
     <desc>Inflicts Heartseeker on the opposing creature, permanently increasing damage taken from Attacks.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
   </skillType>
@@ -722,6 +728,7 @@
     <name>radiance</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
+    <hidden>1</hidden>
     <desc>At start of turn, grant adjacent allies Legion and half as much Barrier.</desc>
     <desc_faction>At start of turn, grant adjacent {y} allies Legion and half as much Barrier.</desc_faction>
     <status_flag>attack_boost</status_flag>
@@ -733,6 +740,7 @@
     <order>285</order>
     <icon>devour</icon>
     <name>devour</name>
+    <hidden>1</hidden>
     <desc>After dealing Attack damage, permanently increases Attack and heals self.</desc>
     <desc_faction>Berserk and heal.</desc_faction>
     <attributes x="1" y="1" all="0" c="0" s="0" />
@@ -743,6 +751,7 @@
     <order>125</order>
     <icon>invigorate</icon>
     <name>invigorate</name>
+    <hidden>1</hidden>
     <desc>Heals a random ally creature and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc>
     <desc_faction>Heals a random {y} ally and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_faction>
     <desc_all>Heals all ally creatures and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_all>
@@ -755,6 +764,7 @@
     <order>1</order>
     <icon>avian_barrier</icon>
     <name>Wing Guard</name>
+    <hidden>1</hidden>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
   </skillType>
@@ -764,6 +774,7 @@
     <order>1</order>
     <icon>avian_barrier</icon>
     <name>Anti-Magic Field</name>
+    <hidden>1</hidden>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Grants Ward to self and half as much to adjacent ally creatures.</desc>
   </skillType>
@@ -793,6 +804,7 @@
     <order>500</order>
     <icon>reanimate</icon>
     <name>Reanimate</name>
+    <hidden>1</hidden>
     <desc>After dying the first time, revives self, healing and removing all effects.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <status_flag>reanimated</status_flag>
