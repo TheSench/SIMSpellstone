@@ -2798,6 +2798,8 @@ var external_https_ = __nccwpck_require__(687);
 const external_querystring_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("querystring");
 // EXTERNAL MODULE: ../common/rootDir.mjs
 var rootDir = __nccwpck_require__(789);
+// EXTERNAL MODULE: external "crypto"
+var external_crypto_ = __nccwpck_require__(113);
 ;// CONCATENATED MODULE: ./src/downloads/determineChanges.mjs
 
 
@@ -2805,15 +2807,20 @@ var rootDir = __nccwpck_require__(789);
 
 
 
-async function determineChanges(user_id, password) {
+
+async function determineChanges(user_id, password, salt) {
     console.time('downloadFiles');
+    const client_time = Math.floor(Date.now() / 1000);
+    const client_signature = (0,external_crypto_.createHash)('md5').update(client_time + password + salt).digest('hex');
     const initData = await callApi({
         message: 'init',
         user_id,
         password,
         unity: 'Unity2020_3_42',
         platform: 'web',
-        client_version: '70'
+        client_version: '70',
+        client_time,
+        client_signature
     });
     const assetBundles = {};
     Object.values(initData.asset_bundles)
@@ -2938,8 +2945,8 @@ function getUrl(fileName) {
 
 
 
-async function downloadFiles(user, password) {
-    const changes = await determineChanges(user, password);
+async function downloadFiles(user, password, salt) {
+    const changes = await determineChanges(user, password, salt);
     const filesToDowassetsToDownloadload = fileTypes.flatMap(fileType =>
         changes.filter(assetName => assetName.includes(`/${fileType}`))
     );
@@ -2996,8 +3003,9 @@ try {
   (0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__/* .setRootDir */ .pz)(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('working-directory'));
   const user = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('spellstone-user');
   const password = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('spellstone-password');
+  const salt = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('spellstone-salt');
   (0,fs__WEBPACK_IMPORTED_MODULE_1__.mkdirSync)((0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__/* .pathFromRoot */ .MM)('Downloads'), { recursive: true });
-  await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .downloadFiles */ .G)(user, password);
+  await (0,_downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__/* .downloadFiles */ .G)(user, password, salt);
 } catch (error) {
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
 }
