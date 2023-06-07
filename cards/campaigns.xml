@@ -10737,9 +10737,9 @@
   </campaign>
   <campaign>
     <id>1308</id>
-    <name>Why can’t we be friends?</name>
+    <name>Why can't we be friends?</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <campaign_req id="1304" level="1" />
+    <campaign_req id="1307" level="1" />
     <locked_start_time>1642698000</locked_start_time>
     <!-- Thursday, 20 January 2022 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -13443,7 +13443,7 @@
     <find_item id="3095" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Caesar event 101 END -->
-  <!-- LBN Caesar event 101  -->
+  <!-- LBN Ashanti event 102  -->
   <campaign>
     <id>4015</id>
     <!-- HERE -->
@@ -13490,6 +13490,53 @@
     </rewards>
     <find_item id="3122" drop_per_energy=".6" />
   </campaign>
-  <!-- LBN Caesar event 101 END -->
+  <!-- LBN Ashanti event 102 END -->
+  <!-- LBN Llorona event 103  -->
+  <campaign>
+    <id>4016</id>
+    <!-- HERE -->
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Boss Llorona Reborn</name>
+    <!-- HERE -->
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>25</location_id>
+    <!-- HERE -->
+    <x>230</x>
+    <!-- left right -->
+    <y>580</y>
+    <!-- up down -->
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>7092</mission_id>
+      <!-- HERE -->
+      <mission_id>7093</mission_id>
+      <!-- HERE -->
+      <mission_id>7094</mission_id>
+      <!-- HERE -->
+      <mission_id>7095</mission_id>
+      <!-- HERE -->
+      <mission_id>7096</mission_id>
+      <!-- HERE -->
+      <mission_id>7097</mission_id>
+      <!-- HERE -->
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2089" />
+      <!-- HERE -->
+      <card level="5" id="2089" />
+      <!-- HERE -->
+      <item level="6" id="104071" number="25" />
+      <!-- HERE -->
+      <item level="7" id="104071" number="75" />
+      <!-- HERE -->
+    </rewards>
+    <find_item id="3101" drop_per_energy=".6" />
+  </campaign>
+  <!-- LBN Llorona event 103 END -->
 </root>
 

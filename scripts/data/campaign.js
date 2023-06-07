@@ -5542,7 +5542,7 @@ var CAMPAIGNS = {
 			"6763",
 			"6764"
 		],
-		"name": "Why can’t we be friends?"
+		"name": "Why can't we be friends?"
 	},
 	"1309": {
 		"id": "1309",
@@ -6656,6 +6656,22 @@ var CAMPAIGNS = {
 			"7079"
 		],
 		"name": "Lightning Boss Ashanti Trial"
+	},
+	"4016": {
+		"id": "4016",
+		"items": {
+			"3101": 0.6
+		},
+		"location_id": "25",
+		"missions": [
+			"7092",
+			"7093",
+			"7094",
+			"7095",
+			"7096",
+			"7097"
+		],
+		"name": "Lightning Boss Llorona Reborn"
 	}
 };
 var MISSIONS = {
@@ -141861,5 +141877,365 @@ var MISSIONS = {
 		],
 		"id": "7091",
 		"name": "Reign of serenity?"
+	},
+	"7092": {
+		"commander": {
+			"id": "481"
+		},
+		"deck": [
+			{
+				"id": "5087"
+			},
+			{
+				"id": "5087"
+			},
+			{
+				"id": "5215"
+			},
+			{
+				"id": "5215"
+			},
+			{
+				"id": "7123"
+			},
+			{
+				"id": "7123"
+			},
+			{
+				"id": "6257"
+			},
+			{
+				"id": "6085"
+			},
+			{
+				"id": "5169"
+			},
+			{
+				"id": "7169",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7238",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6087",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6292",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7033",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4035",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7092",
+		"name": "Bad News"
+	},
+	"7093": {
+		"commander": {
+			"id": "481"
+		},
+		"deck": [
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6257"
+			},
+			{
+				"id": "6257"
+			},
+			{
+				"id": "6277"
+			},
+			{
+				"id": "6085"
+			},
+			{
+				"id": "7168"
+			},
+			{
+				"id": "5169"
+			},
+			{
+				"id": "7169"
+			},
+			{
+				"id": "7238",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6087",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6292",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7033",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6258",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4027",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7093",
+		"name": "Skeletal Ambush"
+	},
+	"7094": {
+		"commander": {
+			"id": "481"
+		},
+		"deck": [
+			{
+				"id": "7301"
+			},
+			{
+				"id": "7301"
+			},
+			{
+				"id": "6085"
+			},
+			{
+				"id": "6085"
+			},
+			{
+				"id": "6233"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "7169"
+			},
+			{
+				"id": "7238"
+			},
+			{
+				"id": "6087"
+			},
+			{
+				"id": "6292",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7033",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6258",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5278",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6624",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7094",
+		"name": "The Crying Lady"
+	},
+	"7095": {
+		"commander": {
+			"id": "481"
+		},
+		"deck": [
+			{
+				"id": "6033"
+			},
+			{
+				"id": "6033"
+			},
+			{
+				"id": "5236"
+			},
+			{
+				"id": "5236"
+			},
+			{
+				"id": "7169"
+			},
+			{
+				"id": "7169"
+			},
+			{
+				"id": "7238"
+			},
+			{
+				"id": "6087"
+			},
+			{
+				"id": "6292"
+			},
+			{
+				"id": "7033",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6258",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5278",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6161",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7603",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7095",
+		"name": "Tears of Unification"
+	},
+	"7096": {
+		"commander": {
+			"id": "481"
+		},
+		"deck": [
+			{
+				"id": "5236"
+			},
+			{
+				"id": "5236"
+			},
+			{
+				"id": "5167"
+			},
+			{
+				"id": "5167"
+			},
+			{
+				"id": "7238"
+			},
+			{
+				"id": "7238"
+			},
+			{
+				"id": "6087"
+			},
+			{
+				"id": "6292"
+			},
+			{
+				"id": "7033"
+			},
+			{
+				"id": "6258",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5278",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6161",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5255",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7612",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7096",
+		"name": "Release the Chaos"
+	},
+	"7097": {
+		"commander": {
+			"id": "481"
+		},
+		"deck": [
+			{
+				"id": "5167"
+			},
+			{
+				"id": "5167"
+			},
+			{
+				"id": "6255"
+			},
+			{
+				"id": "6233"
+			},
+			{
+				"id": "6087"
+			},
+			{
+				"id": "6087"
+			},
+			{
+				"id": "6292"
+			},
+			{
+				"id": "6292"
+			},
+			{
+				"id": "7033"
+			},
+			{
+				"id": "6258",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5278",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6161",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5122",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5255",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7622",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7097",
+		"name": "An Illusion"
 	}
 };

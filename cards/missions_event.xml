@@ -64079,5 +64079,150 @@
       <card id="8075" mastery_level="7" name="Vorpal Magnate" />
     </deck>
   </mission>
+  <!-- Event 103 LBN -->
+  <mission>
+    <id>7092</id>
+    <name>Bad News</name>
+    <energy>18</energy>
+    <desc>You find a mysterious message painted on your Citadel room's wall: ''Naglar was a puppet. There's another. Bigger. Scarier.'' Suddenly, the ground cracks below your feet and skeletal hands reach out to get you!</desc>
+    <commander id="481" />
+    <deck>
+      <card id="5087" name="Apollyon" />
+      <card id="5087" name="Apollyon" />
+      <card id="5215" name="Goldshield Enchanter" />
+      <card id="5215" name="Goldshield Enchanter" />
+      <card id="7123" name="Soul Caller" />
+      <card id="7123" name="Soul Caller" />
+      <card id="6257" name="Ghostraid Fencer" />
+      <card id="6085" name="Released Captives" />
+      <card id="5169" name="Vengeful Spirit" />
+      <card id="7169" mastery_level="2" name="Mortalum, Axe Crusher" />
+      <card id="7238" mastery_level="3" name="Bogwater Horde" />
+      <card id="6087" mastery_level="4" name="Dread Obliterator" />
+      <card id="6292" mastery_level="5" name="Nightbreaker Lady" />
+      <card id="7033" mastery_level="6" name="Treebond Skull" />
+      <card id="4035" mastery_level="7" name="Vasile, the Night Duke" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7093</id>
+    <name>Skeletal Ambush</name>
+    <energy>18</energy>
+    <desc>You survived the first onslaught. Suddenly, you hear a woman weeping. But she's nowhere to be seen. From the shadows, more undead appear!</desc>
+    <commander id="481" />
+    <deck>
+      <card id="6226" name="Ember hound" />
+      <card id="6226" name="Ember hound" />
+      <card id="6257" name="Ghostraid Fencer" />
+      <card id="6257" name="Ghostraid Fencer" />
+      <card id="6277" name="Ironblood Ghoul" />
+      <card id="6085" name="Released Captives" />
+      <card id="7168" name="Werefang the Howler" />
+      <card id="5169" name="Vengeful Spirit" />
+      <card id="7169" name="Mortalum, Axe Crusher" />
+      <card id="7238" mastery_level="2" name="Bogwater Horde" />
+      <card id="6087" mastery_level="3" name="Dread Obliterator" />
+      <card id="6292" mastery_level="4" name="Nightbreaker Lady" />
+      <card id="7033" mastery_level="5" name="Treebond Skull" />
+      <card id="6258" mastery_level="6" name="Two-Deaths Brute" />
+      <card id="4027" mastery_level="7" name="Umbu, Life Releaser" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7094</id>
+    <name>The Crying Lady</name>
+    <energy>18</energy>
+    <desc>A lightning bolt strikes outside and Llorona reveals herself! ''I know about you. I know about your plans. You must be stopped!'', she says while crying.</desc>
+    <commander id="481" />
+    <deck>
+      <card id="7301" name="Zombroccolis" />
+      <card id="7301" name="Zombroccolis" />
+      <card id="6085" name="Released Captives" />
+      <card id="6085" name="Released Captives" />
+      <card id="6233" name="Sandbone Watcher" />
+      <card id="6033" name="Firebeard" />
+      <card id="7169" name="Mortalum, Axe Crusher" />
+      <card id="7238" name="Bogwater Horde" />
+      <card id="6087" name="Dread Obliterator" />
+      <card id="6292" mastery_level="2" name="Nightbreaker Lady" />
+      <card id="7033" mastery_level="3" name="Treebond Skull" />
+      <card id="6258" mastery_level="4" name="Two-Deaths Brute" />
+      <card id="5278" mastery_level="5" name="Glasslock Skeleton" />
+      <card id="5122" mastery_level="6" name="Crow King" />
+      <card id="6624" mastery_level="7" name="Osseus, the Skeleball" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7095</id>
+    <name>Tears of Unification</name>
+    <energy>18</energy>
+    <desc>The battle moves to other sections of the Citadel. Undead are chasing you, while Llorona wails ''My Chaos will reign! Chaos must reign!''</desc>
+    <commander id="481" />
+    <deck>
+      <card id="6033" name="Firebeard" />
+      <card id="6033" name="Firebeard" />
+      <card id="5236" name="Wisp Warrior" />
+      <card id="5236" name="Wisp Warrior" />
+      <card id="7169" name="Mortalum, Axe Crusher" />
+      <card id="7169" name="Mortalum, Axe Crusher" />
+      <card id="7238" name="Bogwater Horde" />
+      <card id="6087" name="Dread Obliterator" />
+      <card id="6292" name="Nightbreaker Lady" />
+      <card id="7033" mastery_level="2" name="Treebond Skull" />
+      <card id="6258" mastery_level="3" name="Two-Deaths Brute" />
+      <card id="5278" mastery_level="4" name="Glasslock Skeleton" />
+      <card id="6161" mastery_level="5" name="Torero" />
+      <card id="5122" mastery_level="6" name="Crow King" />
+      <card id="7603" mastery_level="7" name="Formyr the Desecrated" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7096</id>
+    <name>Release the Chaos</name>
+    <energy>18</energy>
+    <desc>''I'll finish what poor Naglar started. I'll extinguish your life and your childish dreams of unifying all tribes!''</desc>
+    <commander id="481" />
+    <deck>
+      <card id="5236" name="Wisp Warrior" />
+      <card id="5236" name="Wisp Warrior" />
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="7238" name="Bogwater Horde" />
+      <card id="7238" name="Bogwater Horde" />
+      <card id="6087" name="Dread Obliterator" />
+      <card id="6292" name="Nightbreaker Lady" />
+      <card id="7033" name="Treebond Skull" />
+      <card id="6258" mastery_level="2" name="Two-Deaths Brute" />
+      <card id="5278" mastery_level="3" name="Glasslock Skeleton" />
+      <card id="6161" mastery_level="4" name="Torero" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="5255" mastery_level="6" name="Cockaboo Fallen" />
+      <card id="7612" mastery_level="7" name="Tzopilotl, the Beyonder" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7097</id>
+    <name>An Illusion</name>
+    <energy>18</energy>
+    <desc>Finally, at the Citadel's rooftop. Under a terrible storm, the final battle against Llorona starts. ''Peace is an illusion! There's only Chaos… There can only be Chaos!'' she wails before summoning her last attack!</desc>
+    <commander id="481" />
+    <deck>
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="5167" name="Hierophant of Evening" />
+      <card id="6255" name="Sinchained Wraith" />
+      <card id="6233" name="Sandbone Watcher" />
+      <card id="6087" name="Dread Obliterator" />
+      <card id="6087" name="Dread Obliterator" />
+      <card id="6292" name="Nightbreaker Lady" />
+      <card id="6292" name="Nightbreaker Lady" />
+      <card id="7033" name="Treebond Skull" />
+      <card id="6258" mastery_level="2" name="Two-Deaths Brute" />
+      <card id="5278" mastery_level="3" name="Glasslock Skeleton" />
+      <card id="6161" mastery_level="4" name="Torero" />
+      <card id="5122" mastery_level="5" name="Crow King" />
+      <card id="5255" mastery_level="6" name="Cockaboo Fallen" />
+      <card id="7622" mastery_level="7" name="Gravy, the Ravenlyte" />
+    </deck>
+  </mission>
 </root>
 
