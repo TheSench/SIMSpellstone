@@ -34,6 +34,7 @@ jobs:
           working-directory: ${{ env.GITHUB_WORKSPACE }}
           spellstone-user: ${{ secrets.SPELLSTONE_USER }}
           spellstone-password: ${{ secrets.SPELLSTONE_PASSWORD }}
+          spellstone-salt: ${{ secrets.SPELLSTONE_SALT }}
 
       - name: Extract Assets
         uses: ./.github/actions/extract-assets

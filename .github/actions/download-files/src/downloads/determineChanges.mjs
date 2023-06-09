@@ -2,17 +2,22 @@ import fs from 'fs';
 import https from 'https';
 import querystring from 'querystring';
 import { pathFromRoot } from '../../../common/rootDir.mjs';
+import { createHash } from 'crypto';
 
 
-export async function determineChanges(user_id, password) {
+export async function determineChanges(user_id, password, salt) {
     console.time('downloadFiles');
+    const client_time = Math.floor(Date.now() / 1000);
+    const client_signature = createHash('md5').update(client_time + password + salt).digest('hex');
     const initData = await callApi({
         message: 'init',
         user_id,
         password,
         unity: 'Unity2020_3_42',
         platform: 'web',
-        client_version: '70'
+        client_version: '70',
+        client_time,
+        client_signature
     });
     const assetBundles = {};
     Object.values(initData.asset_bundles)

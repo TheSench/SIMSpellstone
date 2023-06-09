@@ -3,8 +3,8 @@ import { downloadFile } from './download.mjs';
 import { fileTypes } from './fileTypes.mjs';
 import { getUrl } from './getUrl.mjs';
 
-export async function downloadFiles(user, password) {
-    const changes = await determineChanges(user, password);
+export async function downloadFiles(user, password, salt) {
+    const changes = await determineChanges(user, password, salt);
     const filesToDowassetsToDownloadload = fileTypes.flatMap(fileType =>
         changes.filter(assetName => assetName.includes(`/${fileType}`))
     );

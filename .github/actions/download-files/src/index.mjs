@@ -7,8 +7,9 @@ try {
   setRootDir(core.getInput('working-directory'));
   const user = core.getInput('spellstone-user');
   const password = core.getInput('spellstone-password');
+  const salt = core.getInput('spellstone-salt');
   mkdirSync(pathFromRoot('Downloads'), { recursive: true });
-  await downloadFiles(user, password);
+  await downloadFiles(user, password, salt);
 } catch (error) {
   core.setFailed(error.message);
 }
