@@ -1,0 +1,8 @@
+name: 'Update Spritesheets'
+description: 'Update spritesheets with images'
+inputs:
+  working-directory: 
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.mjs'
