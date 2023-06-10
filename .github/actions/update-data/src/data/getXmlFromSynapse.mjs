@@ -19,6 +19,5 @@ export async function getXmlFromSynapse(filename) {
   var baseUrl = 'https://spellstone.synapse-games.com/assets/';
   var text = UrlFetchApp.fetch(baseUrl + filename).getContentText();
   writeFileSync(join(xmlDir, filename), text);
-  var xml = XmlService.parse(text);
-  return xml;
+  return text;
 }
