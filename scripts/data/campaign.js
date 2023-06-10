@@ -152,6 +152,7 @@ var LOCATIONS = {
 };
 var CAMPAIGNS = {
 	"1": {
+		"battleground_id": null,
 		"id": "1",
 		"items": {},
 		"location_id": "1",
@@ -161,9 +162,11 @@ var CAMPAIGNS = {
 			"13",
 			"14"
 		],
-		"name": "The Elaria Expedition"
+		"name": "The Elaria Expedition",
+		"side_mission": null
 	},
 	"2": {
+		"battleground_id": null,
 		"id": "2",
 		"items": {},
 		"location_id": "1",
@@ -173,9 +176,11 @@ var CAMPAIGNS = {
 			"23",
 			"24"
 		],
-		"name": "Rise of the Dead"
+		"name": "Rise of the Dead",
+		"side_mission": null
 	},
 	"3": {
+		"battleground_id": null,
 		"id": "3",
 		"items": {},
 		"location_id": "1",
@@ -185,9 +190,11 @@ var CAMPAIGNS = {
 			"33",
 			"34"
 		],
-		"name": "The Good, the Bad, and the Fiery"
+		"name": "The Good, the Bad, and the Fiery",
+		"side_mission": null
 	},
 	"4": {
+		"battleground_id": null,
 		"id": "4",
 		"items": {},
 		"location_id": "1",
@@ -197,9 +204,11 @@ var CAMPAIGNS = {
 			"43",
 			"44"
 		],
-		"name": "Source of Chaos"
+		"name": "Source of Chaos",
+		"side_mission": null
 	},
 	"5": {
+		"battleground_id": null,
 		"id": "5",
 		"items": {},
 		"location_id": "1",
@@ -209,9 +218,11 @@ var CAMPAIGNS = {
 			"53",
 			"54"
 		],
-		"name": "Wyldwood Depths"
+		"name": "Wyldwood Depths",
+		"side_mission": null
 	},
 	"6": {
+		"battleground_id": null,
 		"id": "6",
 		"items": {},
 		"location_id": "1",
@@ -221,9 +232,11 @@ var CAMPAIGNS = {
 			"63",
 			"64"
 		],
-		"name": "Chaos Contagion"
+		"name": "Chaos Contagion",
+		"side_mission": null
 	},
 	"7": {
+		"battleground_id": null,
 		"id": "7",
 		"items": {},
 		"location_id": "2",
@@ -233,9 +246,11 @@ var CAMPAIGNS = {
 			"73",
 			"74"
 		],
-		"name": "Road to Luminis"
+		"name": "Road to Luminis",
+		"side_mission": null
 	},
 	"8": {
+		"battleground_id": null,
 		"id": "8",
 		"items": {},
 		"location_id": "2",
@@ -245,9 +260,11 @@ var CAMPAIGNS = {
 			"83",
 			"84"
 		],
-		"name": "The Glowing Grove"
+		"name": "The Glowing Grove",
+		"side_mission": null
 	},
 	"9": {
+		"battleground_id": null,
 		"id": "9",
 		"items": {},
 		"location_id": "2",
@@ -257,9 +274,11 @@ var CAMPAIGNS = {
 			"93",
 			"94"
 		],
-		"name": "Mage's River"
+		"name": "Mage's River",
+		"side_mission": null
 	},
 	"10": {
+		"battleground_id": null,
 		"id": "10",
 		"items": {},
 		"location_id": "2",
@@ -269,9 +288,11 @@ var CAMPAIGNS = {
 			"103",
 			"104"
 		],
-		"name": "The City of Luminis"
+		"name": "The City of Luminis",
+		"side_mission": null
 	},
 	"11": {
+		"battleground_id": null,
 		"id": "11",
 		"items": {},
 		"location_id": "2",
@@ -281,9 +302,11 @@ var CAMPAIGNS = {
 			"113",
 			"114"
 		],
-		"name": "Aether's Scorn"
+		"name": "Aether's Scorn",
+		"side_mission": null
 	},
 	"12": {
+		"battleground_id": null,
 		"id": "12",
 		"items": {},
 		"location_id": "2",
@@ -293,9 +316,11 @@ var CAMPAIGNS = {
 			"123",
 			"124"
 		],
-		"name": "Castle on the Rocks"
+		"name": "Castle on the Rocks",
+		"side_mission": null
 	},
 	"13": {
+		"battleground_id": null,
 		"id": "13",
 		"items": {},
 		"location_id": "3",
@@ -305,9 +330,11 @@ var CAMPAIGNS = {
 			"133",
 			"134"
 		],
-		"name": "Chaos Arrives"
+		"name": "Chaos Arrives",
+		"side_mission": null
 	},
 	"14": {
+		"battleground_id": null,
 		"id": "14",
 		"items": {},
 		"location_id": "3",
@@ -317,9 +344,11 @@ var CAMPAIGNS = {
 			"143",
 			"144"
 		],
-		"name": "Siege of Karthos"
+		"name": "Siege of Karthos",
+		"side_mission": null
 	},
 	"15": {
+		"battleground_id": null,
 		"id": "15",
 		"items": {},
 		"location_id": "3",
@@ -329,9 +358,11 @@ var CAMPAIGNS = {
 			"153",
 			"154"
 		],
-		"name": "Karthos, Lair of Chaos"
+		"name": "Karthos, Lair of Chaos",
+		"side_mission": null
 	},
 	"16": {
+		"battleground_id": null,
 		"id": "16",
 		"items": {},
 		"location_id": "3",
@@ -341,9 +372,11 @@ var CAMPAIGNS = {
 			"163",
 			"164"
 		],
-		"name": "Across the Flames"
+		"name": "Across the Flames",
+		"side_mission": null
 	},
 	"17": {
+		"battleground_id": null,
 		"id": "17",
 		"items": {},
 		"location_id": "3",
@@ -353,9 +386,11 @@ var CAMPAIGNS = {
 			"173",
 			"174"
 		],
-		"name": "Securing an Exit"
+		"name": "Securing an Exit",
+		"side_mission": null
 	},
 	"18": {
+		"battleground_id": null,
 		"id": "18",
 		"items": {},
 		"location_id": "3",
@@ -365,9 +400,11 @@ var CAMPAIGNS = {
 			"183",
 			"184"
 		],
-		"name": "Void's Ambush"
+		"name": "Void's Ambush",
+		"side_mission": null
 	},
 	"19": {
+		"battleground_id": null,
 		"id": "19",
 		"items": {},
 		"location_id": "4",
@@ -377,9 +414,11 @@ var CAMPAIGNS = {
 			"193",
 			"194"
 		],
-		"name": "Caverns of Crossing"
+		"name": "Caverns of Crossing",
+		"side_mission": null
 	},
 	"20": {
+		"battleground_id": null,
 		"id": "20",
 		"items": {},
 		"location_id": "4",
@@ -389,9 +428,11 @@ var CAMPAIGNS = {
 			"203",
 			"204"
 		],
-		"name": "The Hermit"
+		"name": "The Hermit",
+		"side_mission": null
 	},
 	"21": {
+		"battleground_id": null,
 		"id": "21",
 		"items": {},
 		"location_id": "4",
@@ -401,9 +442,11 @@ var CAMPAIGNS = {
 			"213",
 			"214"
 		],
-		"name": "Eater of Rock"
+		"name": "Eater of Rock",
+		"side_mission": null
 	},
 	"22": {
+		"battleground_id": null,
 		"id": "22",
 		"items": {},
 		"location_id": "4",
@@ -413,9 +456,11 @@ var CAMPAIGNS = {
 			"223",
 			"224"
 		],
-		"name": "Impending Peril"
+		"name": "Impending Peril",
+		"side_mission": null
 	},
 	"23": {
+		"battleground_id": null,
 		"id": "23",
 		"items": {},
 		"location_id": "4",
@@ -425,9 +470,11 @@ var CAMPAIGNS = {
 			"233",
 			"234"
 		],
-		"name": "Wings of Void"
+		"name": "Wings of Void",
+		"side_mission": null
 	},
 	"24": {
+		"battleground_id": null,
 		"id": "24",
 		"items": {},
 		"location_id": "4",
@@ -437,9 +484,11 @@ var CAMPAIGNS = {
 			"243",
 			"244"
 		],
-		"name": "The Void Core"
+		"name": "The Void Core",
+		"side_mission": null
 	},
 	"25": {
+		"battleground_id": null,
 		"id": "25",
 		"items": {},
 		"location_id": "5",
@@ -449,9 +498,11 @@ var CAMPAIGNS = {
 			"253",
 			"254"
 		],
-		"name": "Swamp Lands"
+		"name": "Swamp Lands",
+		"side_mission": null
 	},
 	"26": {
+		"battleground_id": null,
 		"id": "26",
 		"items": {},
 		"location_id": "5",
@@ -461,9 +512,11 @@ var CAMPAIGNS = {
 			"263",
 			"264"
 		],
-		"name": "Exploring Dawnglow"
+		"name": "Exploring Dawnglow",
+		"side_mission": null
 	},
 	"27": {
+		"battleground_id": null,
 		"id": "27",
 		"items": {},
 		"location_id": "5",
@@ -473,9 +526,11 @@ var CAMPAIGNS = {
 			"273",
 			"274"
 		],
-		"name": "Plagued Waters"
+		"name": "Plagued Waters",
+		"side_mission": null
 	},
 	"28": {
+		"battleground_id": null,
 		"id": "28",
 		"items": {},
 		"location_id": "5",
@@ -485,9 +540,11 @@ var CAMPAIGNS = {
 			"283",
 			"284"
 		],
-		"name": "Small Prints"
+		"name": "Small Prints",
+		"side_mission": null
 	},
 	"29": {
+		"battleground_id": null,
 		"id": "29",
 		"items": {},
 		"location_id": "5",
@@ -497,9 +554,11 @@ var CAMPAIGNS = {
 			"293",
 			"294"
 		],
-		"name": "Corruption's Nest"
+		"name": "Corruption's Nest",
+		"side_mission": null
 	},
 	"30": {
+		"battleground_id": null,
 		"id": "30",
 		"items": {},
 		"location_id": "5",
@@ -509,9 +568,11 @@ var CAMPAIGNS = {
 			"303",
 			"304"
 		],
-		"name": "Big Mama"
+		"name": "Big Mama",
+		"side_mission": null
 	},
 	"31": {
+		"battleground_id": null,
 		"id": "31",
 		"items": {
 			"2515": 0.04
@@ -523,9 +584,11 @@ var CAMPAIGNS = {
 			"313",
 			"314"
 		],
-		"name": "Tales from the Swamp"
+		"name": "Tales from the Swamp",
+		"side_mission": null
 	},
 	"32": {
+		"battleground_id": null,
 		"id": "32",
 		"items": {
 			"2515": 0.04
@@ -537,9 +600,11 @@ var CAMPAIGNS = {
 			"323",
 			"324"
 		],
-		"name": "Finding the Lost"
+		"name": "Finding the Lost",
+		"side_mission": null
 	},
 	"33": {
+		"battleground_id": null,
 		"id": "33",
 		"items": {
 			"2515": 0.04
@@ -551,9 +616,11 @@ var CAMPAIGNS = {
 			"333",
 			"334"
 		],
-		"name": "Seastone Citadel"
+		"name": "Seastone Citadel",
+		"side_mission": null
 	},
 	"34": {
+		"battleground_id": null,
 		"id": "34",
 		"items": {
 			"2515": 0.04
@@ -565,9 +632,11 @@ var CAMPAIGNS = {
 			"343",
 			"344"
 		],
-		"name": "Brother from Another Mother"
+		"name": "Brother from Another Mother",
+		"side_mission": null
 	},
 	"35": {
+		"battleground_id": null,
 		"id": "35",
 		"items": {
 			"2515": 0.04
@@ -579,9 +648,11 @@ var CAMPAIGNS = {
 			"353",
 			"354"
 		],
-		"name": "Next Generation"
+		"name": "Next Generation",
+		"side_mission": null
 	},
 	"36": {
+		"battleground_id": null,
 		"id": "36",
 		"items": {
 			"2515": 0.04
@@ -593,9 +664,11 @@ var CAMPAIGNS = {
 			"363",
 			"364"
 		],
-		"name": "Trial by Fire"
+		"name": "Trial by Fire",
+		"side_mission": null
 	},
 	"1000": {
+		"battleground_id": null,
 		"id": "1000",
 		"items": {},
 		"location_id": "100",
@@ -607,9 +680,11 @@ var CAMPAIGNS = {
 			"5005",
 			"5006"
 		],
-		"name": "Demon's Pass"
+		"name": "Demon's Pass",
+		"side_mission": null
 	},
 	"1001": {
+		"battleground_id": null,
 		"id": "1001",
 		"items": {},
 		"location_id": "100",
@@ -621,9 +696,11 @@ var CAMPAIGNS = {
 			"5011",
 			"5012"
 		],
-		"name": "First Contact"
+		"name": "First Contact",
+		"side_mission": null
 	},
 	"1002": {
+		"battleground_id": null,
 		"id": "1002",
 		"items": {},
 		"location_id": "100",
@@ -635,9 +712,11 @@ var CAMPAIGNS = {
 			"5017",
 			"5018"
 		],
-		"name": "Aria's Fall"
+		"name": "Aria's Fall",
+		"side_mission": null
 	},
 	"1003": {
+		"battleground_id": null,
 		"id": "1003",
 		"items": {
 			"3004": 0.25
@@ -651,18 +730,22 @@ var CAMPAIGNS = {
 			"5023",
 			"5024"
 		],
-		"name": "Tarragon Quakes"
+		"name": "Tarragon Quakes",
+		"side_mission": null
 	},
 	"1004": {
+		"battleground_id": null,
 		"id": "1004",
 		"items": {},
 		"location_id": "101",
 		"missions": [
 			"5025"
 		],
-		"name": "Decim's Deceit"
+		"name": "Decim's Deceit",
+		"side_mission": null
 	},
 	"1005": {
+		"battleground_id": null,
 		"id": "1005",
 		"items": {
 			"3002": 0.65
@@ -671,9 +754,11 @@ var CAMPAIGNS = {
 		"missions": [
 			"5026"
 		],
-		"name": "Scorched Lands"
+		"name": "Scorched Lands",
+		"side_mission": null
 	},
 	"1006": {
+		"battleground_id": null,
 		"id": "1006",
 		"items": {
 			"3003": 0.5
@@ -682,18 +767,22 @@ var CAMPAIGNS = {
 		"missions": [
 			"5027"
 		],
-		"name": "Dragon's Aerie"
+		"name": "Dragon's Aerie",
+		"side_mission": null
 	},
 	"1007": {
+		"battleground_id": null,
 		"id": "1007",
 		"items": {},
 		"location_id": "101",
 		"missions": [
 			"5028"
 		],
-		"name": "Ice Dragon's Realm"
+		"name": "Ice Dragon's Realm",
+		"side_mission": null
 	},
 	"1008": {
+		"battleground_id": null,
 		"id": "1008",
 		"items": {},
 		"location_id": "102",
@@ -701,9 +790,11 @@ var CAMPAIGNS = {
 			"5029",
 			"5030"
 		],
-		"name": "The Strong Stone"
+		"name": "The Strong Stone",
+		"side_mission": null
 	},
 	"1009": {
+		"battleground_id": null,
 		"id": "1009",
 		"items": {
 			"3006": 0.5
@@ -715,9 +806,11 @@ var CAMPAIGNS = {
 			"5033",
 			"5034"
 		],
-		"name": "Golden Lava"
+		"name": "Golden Lava",
+		"side_mission": null
 	},
 	"1010": {
+		"battleground_id": null,
 		"id": "1010",
 		"items": {
 			"3006": 0.5
@@ -729,9 +822,11 @@ var CAMPAIGNS = {
 			"5037",
 			"5038"
 		],
-		"name": "Magma Explosion"
+		"name": "Magma Explosion",
+		"side_mission": null
 	},
 	"1011": {
+		"battleground_id": null,
 		"id": "1011",
 		"items": {},
 		"location_id": "102",
@@ -739,9 +834,11 @@ var CAMPAIGNS = {
 			"5039",
 			"5040"
 		],
-		"name": "Celestial Depths"
+		"name": "Celestial Depths",
+		"side_mission": null
 	},
 	"1012": {
+		"battleground_id": null,
 		"id": "1012",
 		"items": {
 			"3008": 0.9
@@ -751,9 +848,11 @@ var CAMPAIGNS = {
 			"5041",
 			"5042"
 		],
-		"name": "Capturing the Sky"
+		"name": "Capturing the Sky",
+		"side_mission": null
 	},
 	"1013": {
+		"battleground_id": null,
 		"id": "1013",
 		"items": {
 			"3011": 0.2
@@ -769,9 +868,11 @@ var CAMPAIGNS = {
 			"5049",
 			"5050"
 		],
-		"name": "Into the Marshes"
+		"name": "Into the Marshes",
+		"side_mission": null
 	},
 	"1014": {
+		"battleground_id": null,
 		"id": "1014",
 		"items": {
 			"3009": 0.4,
@@ -784,9 +885,11 @@ var CAMPAIGNS = {
 			"5053",
 			"5054"
 		],
-		"name": "High Grace"
+		"name": "High Grace",
+		"side_mission": null
 	},
 	"1015": {
+		"battleground_id": null,
 		"id": "1015",
 		"items": {
 			"3009": 0.4,
@@ -799,9 +902,11 @@ var CAMPAIGNS = {
 			"5057",
 			"5058"
 		],
-		"name": "Tadpole Collection"
+		"name": "Tadpole Collection",
+		"side_mission": null
 	},
 	"1016": {
+		"battleground_id": null,
 		"id": "1016",
 		"items": {
 			"3009": 0.4,
@@ -814,9 +919,11 @@ var CAMPAIGNS = {
 			"5061",
 			"5062"
 		],
-		"name": "Search and Rescue"
+		"name": "Search and Rescue",
+		"side_mission": null
 	},
 	"1017": {
+		"battleground_id": null,
 		"id": "1017",
 		"items": {
 			"3011": 0.25
@@ -826,9 +933,11 @@ var CAMPAIGNS = {
 			"5063",
 			"5064"
 		],
-		"name": "To The Throne"
+		"name": "To The Throne",
+		"side_mission": null
 	},
 	"1018": {
+		"battleground_id": null,
 		"id": "1018",
 		"items": {
 			"3004": 0.25,
@@ -843,9 +952,11 @@ var CAMPAIGNS = {
 			"5069",
 			"5070"
 		],
-		"name": "Tarragon Quakes"
+		"name": "Tarragon Quakes",
+		"side_mission": null
 	},
 	"1019": {
+		"battleground_id": null,
 		"id": "1019",
 		"items": {
 			"3012": 0.3
@@ -854,9 +965,11 @@ var CAMPAIGNS = {
 		"missions": [
 			"5071"
 		],
-		"name": "Decim's Deceit"
+		"name": "Decim's Deceit",
+		"side_mission": null
 	},
 	"1020": {
+		"battleground_id": null,
 		"id": "1020",
 		"items": {
 			"3002": 0.65,
@@ -866,9 +979,11 @@ var CAMPAIGNS = {
 		"missions": [
 			"5072"
 		],
-		"name": "Scorched Lands"
+		"name": "Scorched Lands",
+		"side_mission": null
 	},
 	"1021": {
+		"battleground_id": null,
 		"id": "1021",
 		"items": {
 			"3003": 0.5,
@@ -878,9 +993,11 @@ var CAMPAIGNS = {
 		"missions": [
 			"5073"
 		],
-		"name": "Dragon's Aerie"
+		"name": "Dragon's Aerie",
+		"side_mission": null
 	},
 	"1022": {
+		"battleground_id": null,
 		"id": "1022",
 		"items": {
 			"3012": 0.35
@@ -889,9 +1006,11 @@ var CAMPAIGNS = {
 		"missions": [
 			"5074"
 		],
-		"name": "Ice Dragon's Realm"
+		"name": "Ice Dragon's Realm",
+		"side_mission": null
 	},
 	"1023": {
+		"battleground_id": null,
 		"id": "1023",
 		"items": {
 			"3012": 0.45
@@ -903,9 +1022,11 @@ var CAMPAIGNS = {
 			"5077",
 			"5078"
 		],
-		"name": "Molten Eruption"
+		"name": "Molten Eruption",
+		"side_mission": null
 	},
 	"1024": {
+		"battleground_id": null,
 		"id": "1024",
 		"items": {
 			"3015": 0.2
@@ -917,9 +1038,11 @@ var CAMPAIGNS = {
 			"5081",
 			"5082"
 		],
-		"name": "To Frigore!"
+		"name": "To Frigore!",
+		"side_mission": null
 	},
 	"1025": {
+		"battleground_id": null,
 		"id": "1025",
 		"items": {
 			"3015": 0.2
@@ -931,9 +1054,11 @@ var CAMPAIGNS = {
 			"5085",
 			"5086"
 		],
-		"name": "Vapor Collection"
+		"name": "Vapor Collection",
+		"side_mission": null
 	},
 	"1026": {
+		"battleground_id": null,
 		"id": "1026",
 		"items": {
 			"3015": 0.25
@@ -947,9 +1072,11 @@ var CAMPAIGNS = {
 			"5091",
 			"5092"
 		],
-		"name": "Vapor Hunters"
+		"name": "Vapor Hunters",
+		"side_mission": null
 	},
 	"1027": {
+		"battleground_id": null,
 		"id": "1027",
 		"items": {
 			"3015": 0.2
@@ -961,9 +1088,11 @@ var CAMPAIGNS = {
 			"5095",
 			"5096"
 		],
-		"name": "Descent into Madness"
+		"name": "Descent into Madness",
+		"side_mission": null
 	},
 	"1028": {
+		"battleground_id": null,
 		"id": "1028",
 		"items": {
 			"3015": 0.3
@@ -973,9 +1102,11 @@ var CAMPAIGNS = {
 			"5097",
 			"5098"
 		],
-		"name": "Flashing Lights"
+		"name": "Flashing Lights",
+		"side_mission": null
 	},
 	"1029": {
+		"battleground_id": null,
 		"id": "1029",
 		"items": {
 			"3015": 0.4
@@ -988,9 +1119,11 @@ var CAMPAIGNS = {
 			"5102",
 			"5103"
 		],
-		"name": "Playing With Vapor"
+		"name": "Playing With Vapor",
+		"side_mission": null
 	},
 	"1030": {
+		"battleground_id": null,
 		"id": "1030",
 		"items": {
 			"3016": 0.22
@@ -1003,9 +1136,11 @@ var CAMPAIGNS = {
 			"5107",
 			"5108"
 		],
-		"name": "Closer to The Void"
+		"name": "Closer to The Void",
+		"side_mission": null
 	},
 	"1031": {
+		"battleground_id": null,
 		"id": "1031",
 		"items": {
 			"3016": 0.2
@@ -1017,9 +1152,11 @@ var CAMPAIGNS = {
 			"5111",
 			"5112"
 		],
-		"name": "Trial by Purple Fire"
+		"name": "Trial by Purple Fire",
+		"side_mission": null
 	},
 	"1032": {
+		"battleground_id": null,
 		"id": "1032",
 		"items": {
 			"3016": 0.2
@@ -1031,9 +1168,11 @@ var CAMPAIGNS = {
 			"5115",
 			"5116"
 		],
-		"name": "Climate Change"
+		"name": "Climate Change",
+		"side_mission": null
 	},
 	"1033": {
+		"battleground_id": null,
 		"id": "1033",
 		"items": {
 			"3016": 0.25
@@ -1047,9 +1186,11 @@ var CAMPAIGNS = {
 			"5121",
 			"5122"
 		],
-		"name": "Infection of The Void"
+		"name": "Infection of The Void",
+		"side_mission": null
 	},
 	"1034": {
+		"battleground_id": null,
 		"id": "1034",
 		"items": {
 			"3016": 0.3
@@ -1061,9 +1202,11 @@ var CAMPAIGNS = {
 			"5125",
 			"5126"
 		],
-		"name": "Lost Laboratory"
+		"name": "Lost Laboratory",
+		"side_mission": null
 	},
 	"1035": {
+		"battleground_id": null,
 		"id": "1035",
 		"items": {
 			"3016": 0.4
@@ -1073,9 +1216,11 @@ var CAMPAIGNS = {
 			"5127",
 			"5128"
 		],
-		"name": "Lay Down Your Burdens"
+		"name": "Lay Down Your Burdens",
+		"side_mission": null
 	},
 	"1036": {
+		"battleground_id": null,
 		"id": "1036",
 		"items": {
 			"3021": 0.2
@@ -1087,9 +1232,11 @@ var CAMPAIGNS = {
 			"5131",
 			"5132"
 		],
-		"name": "To Skyhaven"
+		"name": "To Skyhaven",
+		"side_mission": null
 	},
 	"1037": {
+		"battleground_id": null,
 		"id": "1037",
 		"items": {
 			"3021": 0.2
@@ -1101,9 +1248,11 @@ var CAMPAIGNS = {
 			"5135",
 			"5136"
 		],
-		"name": "Finding Your Way"
+		"name": "Finding Your Way",
+		"side_mission": null
 	},
 	"1038": {
+		"battleground_id": null,
 		"id": "1038",
 		"items": {
 			"3021": 0.22
@@ -1116,9 +1265,11 @@ var CAMPAIGNS = {
 			"5140",
 			"5141"
 		],
-		"name": "Home Sweet Home"
+		"name": "Home Sweet Home",
+		"side_mission": null
 	},
 	"1039": {
+		"battleground_id": null,
 		"id": "1039",
 		"items": {
 			"3021": 0.25
@@ -1132,9 +1283,11 @@ var CAMPAIGNS = {
 			"5146",
 			"5147"
 		],
-		"name": "Old Mistakes"
+		"name": "Old Mistakes",
+		"side_mission": null
 	},
 	"1040": {
+		"battleground_id": null,
 		"id": "1040",
 		"items": {
 			"3021": 0.23
@@ -1145,9 +1298,11 @@ var CAMPAIGNS = {
 			"5149",
 			"5150"
 		],
-		"name": "To Court"
+		"name": "To Court",
+		"side_mission": null
 	},
 	"1041": {
+		"battleground_id": null,
 		"id": "1041",
 		"items": {
 			"3021": 0.26
@@ -1158,9 +1313,11 @@ var CAMPAIGNS = {
 			"5152",
 			"5153"
 		],
-		"name": "History Repeats"
+		"name": "History Repeats",
+		"side_mission": null
 	},
 	"1042": {
+		"battleground_id": null,
 		"id": "1042",
 		"items": {
 			"3026": 0.2
@@ -1171,9 +1328,11 @@ var CAMPAIGNS = {
 			"5155",
 			"5156"
 		],
-		"name": "Scorched Villages"
+		"name": "Scorched Villages",
+		"side_mission": null
 	},
 	"1043": {
+		"battleground_id": null,
 		"id": "1043",
 		"items": {
 			"3026": 0.2
@@ -1184,9 +1343,11 @@ var CAMPAIGNS = {
 			"5158",
 			"5159"
 		],
-		"name": "Back to the Vaults"
+		"name": "Back to the Vaults",
+		"side_mission": null
 	},
 	"1044": {
+		"battleground_id": null,
 		"id": "1044",
 		"items": {
 			"3026": 0.22
@@ -1199,9 +1360,11 @@ var CAMPAIGNS = {
 			"5163",
 			"5164"
 		],
-		"name": "To Water Island"
+		"name": "To Water Island",
+		"side_mission": null
 	},
 	"1045": {
+		"battleground_id": null,
 		"id": "1045",
 		"items": {
 			"3026": 0.22
@@ -1215,9 +1378,11 @@ var CAMPAIGNS = {
 			"5169",
 			"5170"
 		],
-		"name": "Zen Gardens"
+		"name": "Zen Gardens",
+		"side_mission": null
 	},
 	"1046": {
+		"battleground_id": null,
 		"id": "1046",
 		"items": {
 			"3026": 0.22
@@ -1229,9 +1394,11 @@ var CAMPAIGNS = {
 			"5173",
 			"5174"
 		],
-		"name": "Quick Thinking"
+		"name": "Quick Thinking",
+		"side_mission": null
 	},
 	"1047": {
+		"battleground_id": null,
 		"id": "1047",
 		"items": {
 			"3026": 0.25
@@ -1243,9 +1410,11 @@ var CAMPAIGNS = {
 			"5177",
 			"5178"
 		],
-		"name": "Final Round"
+		"name": "Final Round",
+		"side_mission": null
 	},
 	"1048": {
+		"battleground_id": null,
 		"id": "1048",
 		"items": {
 			"3030": 0.2
@@ -1256,9 +1425,11 @@ var CAMPAIGNS = {
 			"5180",
 			"5181"
 		],
-		"name": "New Horizons"
+		"name": "New Horizons",
+		"side_mission": null
 	},
 	"1049": {
+		"battleground_id": null,
 		"id": "1049",
 		"items": {
 			"3030": 0.2
@@ -1269,9 +1440,11 @@ var CAMPAIGNS = {
 			"5183",
 			"5184"
 		],
-		"name": "Saying Goodbye"
+		"name": "Saying Goodbye",
+		"side_mission": null
 	},
 	"1050": {
+		"battleground_id": null,
 		"id": "1050",
 		"items": {
 			"3030": 0.22
@@ -1284,9 +1457,11 @@ var CAMPAIGNS = {
 			"5188",
 			"5189"
 		],
-		"name": "Golden Crown Banquet"
+		"name": "Golden Crown Banquet",
+		"side_mission": null
 	},
 	"1051": {
+		"battleground_id": null,
 		"id": "1051",
 		"items": {
 			"3030": 0.21
@@ -1297,9 +1472,11 @@ var CAMPAIGNS = {
 			"5191",
 			"5192"
 		],
-		"name": "Surprise from Above"
+		"name": "Surprise from Above",
+		"side_mission": null
 	},
 	"1052": {
+		"battleground_id": null,
 		"id": "1052",
 		"items": {
 			"3030": 0.22
@@ -1311,9 +1488,11 @@ var CAMPAIGNS = {
 			"5195",
 			"5196"
 		],
-		"name": "The Chase"
+		"name": "The Chase",
+		"side_mission": null
 	},
 	"1053": {
+		"battleground_id": null,
 		"id": "1053",
 		"items": {
 			"3030": 0.25
@@ -1327,9 +1506,11 @@ var CAMPAIGNS = {
 			"5201",
 			"5202"
 		],
-		"name": "Defensive Maneuvers"
+		"name": "Defensive Maneuvers",
+		"side_mission": null
 	},
 	"1054": {
+		"battleground_id": null,
 		"id": "1054",
 		"items": {},
 		"location_id": "108",
@@ -1339,9 +1520,11 @@ var CAMPAIGNS = {
 			"5205",
 			"5206"
 		],
-		"name": "Volcano of Eruptions"
+		"name": "Volcano of Eruptions",
+		"side_mission": null
 	},
 	"1055": {
+		"battleground_id": null,
 		"id": "1055",
 		"items": {},
 		"location_id": "108",
@@ -1351,9 +1534,11 @@ var CAMPAIGNS = {
 			"5209",
 			"5210"
 		],
-		"name": "A Man Who Loves Birds"
+		"name": "A Man Who Loves Birds",
+		"side_mission": null
 	},
 	"1056": {
+		"battleground_id": null,
 		"id": "1056",
 		"items": {},
 		"location_id": "108",
@@ -1363,9 +1548,11 @@ var CAMPAIGNS = {
 			"5213",
 			"5214"
 		],
-		"name": "Some Gloomy Lake"
+		"name": "Some Gloomy Lake",
+		"side_mission": null
 	},
 	"1057": {
+		"battleground_id": null,
 		"id": "1057",
 		"items": {
 			"3030": 0.25
@@ -1374,9 +1561,11 @@ var CAMPAIGNS = {
 		"missions": [
 			"5215"
 		],
-		"name": "Side Dish"
+		"name": "Side Dish",
+		"side_mission": null
 	},
 	"1058": {
+		"battleground_id": null,
 		"id": "1058",
 		"items": {
 			"3033": 0.22
@@ -1389,9 +1578,11 @@ var CAMPAIGNS = {
 			"5219",
 			"5220"
 		],
-		"name": "Avian Hideaway"
+		"name": "Avian Hideaway",
+		"side_mission": null
 	},
 	"1059": {
+		"battleground_id": null,
 		"id": "1059",
 		"items": {
 			"3033": 0.23
@@ -1403,9 +1594,11 @@ var CAMPAIGNS = {
 			"5223",
 			"5224"
 		],
-		"name": "Unwavered"
+		"name": "Unwavered",
+		"side_mission": null
 	},
 	"1060": {
+		"battleground_id": null,
 		"id": "1060",
 		"items": {
 			"3033": 0.23
@@ -1417,9 +1610,11 @@ var CAMPAIGNS = {
 			"5227",
 			"5228"
 		],
-		"name": "To Red Feather Valley"
+		"name": "To Red Feather Valley",
+		"side_mission": null
 	},
 	"1061": {
+		"battleground_id": null,
 		"id": "1061",
 		"items": {
 			"3033": 0.23
@@ -1433,9 +1628,11 @@ var CAMPAIGNS = {
 			"5233",
 			"5234"
 		],
-		"name": "Into the City"
+		"name": "Into the City",
+		"side_mission": null
 	},
 	"1062": {
+		"battleground_id": null,
 		"id": "1062",
 		"items": {
 			"3033": 0.24
@@ -1446,9 +1643,11 @@ var CAMPAIGNS = {
 			"5236",
 			"5237"
 		],
-		"name": "Through the Alleyway"
+		"name": "Through the Alleyway",
+		"side_mission": null
 	},
 	"1063": {
+		"battleground_id": null,
 		"id": "1063",
 		"items": {
 			"3033": 0.24
@@ -1459,9 +1658,11 @@ var CAMPAIGNS = {
 			"5239",
 			"5240"
 		],
-		"name": "Frobert and the Magistrate"
+		"name": "Frobert and the Magistrate",
+		"side_mission": null
 	},
 	"1064": {
+		"battleground_id": null,
 		"id": "1064",
 		"items": {
 			"3034": 0.2
@@ -1473,9 +1674,11 @@ var CAMPAIGNS = {
 			"5243",
 			"5244"
 		],
-		"name": "Lakeside"
+		"name": "Lakeside",
+		"side_mission": null
 	},
 	"1065": {
+		"battleground_id": null,
 		"id": "1065",
 		"items": {
 			"3034": 0.21
@@ -1487,9 +1690,11 @@ var CAMPAIGNS = {
 			"5247",
 			"5248"
 		],
-		"name": "Nasty Neighbours"
+		"name": "Nasty Neighbours",
+		"side_mission": null
 	},
 	"1066": {
+		"battleground_id": null,
 		"id": "1066",
 		"items": {
 			"3034": 0.22
@@ -1502,9 +1707,11 @@ var CAMPAIGNS = {
 			"5252",
 			"5253"
 		],
-		"name": "Lost Lambs"
+		"name": "Lost Lambs",
+		"side_mission": null
 	},
 	"1067": {
+		"battleground_id": null,
 		"id": "1067",
 		"items": {
 			"3034": 0.23
@@ -1515,9 +1722,11 @@ var CAMPAIGNS = {
 			"5255",
 			"5256"
 		],
-		"name": "Worst Fears"
+		"name": "Worst Fears",
+		"side_mission": null
 	},
 	"1068": {
+		"battleground_id": null,
 		"id": "1068",
 		"items": {
 			"3034": 0.24
@@ -1528,9 +1737,11 @@ var CAMPAIGNS = {
 			"5258",
 			"5259"
 		],
-		"name": "Goblins Afoot"
+		"name": "Goblins Afoot",
+		"side_mission": null
 	},
 	"1069": {
+		"battleground_id": null,
 		"id": "1069",
 		"items": {
 			"3034": 0.25
@@ -1543,9 +1754,11 @@ var CAMPAIGNS = {
 			"5263",
 			"5264"
 		],
-		"name": "Sinister Intentions"
+		"name": "Sinister Intentions",
+		"side_mission": null
 	},
 	"1070": {
+		"battleground_id": null,
 		"id": "1070",
 		"items": {
 			"3034": 0.25
@@ -1554,9 +1767,11 @@ var CAMPAIGNS = {
 		"missions": [
 			"5265"
 		],
-		"name": "High Flying"
+		"name": "High Flying",
+		"side_mission": null
 	},
 	"1071": {
+		"battleground_id": null,
 		"id": "1071",
 		"items": {
 			"3041": 0.2
@@ -1567,9 +1782,11 @@ var CAMPAIGNS = {
 			"5267",
 			"5268"
 		],
-		"name": "SOS"
+		"name": "SOS",
+		"side_mission": null
 	},
 	"1072": {
+		"battleground_id": null,
 		"id": "1072",
 		"items": {
 			"3041": 0.21
@@ -1580,9 +1797,11 @@ var CAMPAIGNS = {
 			"5270",
 			"5271"
 		],
-		"name": "To Beetleton Bunker"
+		"name": "To Beetleton Bunker",
+		"side_mission": null
 	},
 	"1073": {
+		"battleground_id": null,
 		"id": "1073",
 		"items": {
 			"3041": 0.22
@@ -1595,9 +1814,11 @@ var CAMPAIGNS = {
 			"5275",
 			"5276"
 		],
-		"name": "Town on Fire"
+		"name": "Town on Fire",
+		"side_mission": null
 	},
 	"1074": {
+		"battleground_id": null,
 		"id": "1074",
 		"items": {
 			"3041": 0.24
@@ -1611,9 +1832,11 @@ var CAMPAIGNS = {
 			"5281",
 			"5282"
 		],
-		"name": "Goblin Incoming"
+		"name": "Goblin Incoming",
+		"side_mission": null
 	},
 	"1075": {
+		"battleground_id": null,
 		"id": "1075",
 		"items": {
 			"3041": 0.23
@@ -1625,9 +1848,11 @@ var CAMPAIGNS = {
 			"5285",
 			"5286"
 		],
-		"name": "The Artifact"
+		"name": "The Artifact",
+		"side_mission": null
 	},
 	"1076": {
+		"battleground_id": null,
 		"id": "1076",
 		"items": {
 			"3041": 0.25
@@ -1638,9 +1863,11 @@ var CAMPAIGNS = {
 			"5288",
 			"5289"
 		],
-		"name": "Up, Up and Away"
+		"name": "Up, Up and Away",
+		"side_mission": null
 	},
 	"1077": {
+		"battleground_id": null,
 		"id": "1077",
 		"items": {
 			"3042": 0.2
@@ -1651,9 +1878,11 @@ var CAMPAIGNS = {
 			"5291",
 			"5292"
 		],
-		"name": "Rumor Mill"
+		"name": "Rumor Mill",
+		"side_mission": null
 	},
 	"1078": {
+		"battleground_id": null,
 		"id": "1078",
 		"items": {
 			"3042": 0.2
@@ -1664,9 +1893,11 @@ var CAMPAIGNS = {
 			"5294",
 			"5295"
 		],
-		"name": "Territory Control"
+		"name": "Territory Control",
+		"side_mission": null
 	},
 	"1079": {
+		"battleground_id": null,
 		"id": "1079",
 		"items": {
 			"3042": 0.22
@@ -1679,9 +1910,11 @@ var CAMPAIGNS = {
 			"5299",
 			"5300"
 		],
-		"name": "Redemption"
+		"name": "Redemption",
+		"side_mission": null
 	},
 	"1080": {
+		"battleground_id": null,
 		"id": "1080",
 		"items": {
 			"3042": 0.23
@@ -1692,9 +1925,11 @@ var CAMPAIGNS = {
 			"5302",
 			"5303"
 		],
-		"name": "Groundwork"
+		"name": "Groundwork",
+		"side_mission": null
 	},
 	"1081": {
+		"battleground_id": null,
 		"id": "1081",
 		"items": {
 			"3042": 0.23
@@ -1705,9 +1940,11 @@ var CAMPAIGNS = {
 			"5305",
 			"5306"
 		],
-		"name": "What was Sown"
+		"name": "What was Sown",
+		"side_mission": null
 	},
 	"1082": {
+		"battleground_id": null,
 		"id": "1082",
 		"items": {
 			"3042": 0.25
@@ -1721,9 +1958,11 @@ var CAMPAIGNS = {
 			"5311",
 			"5312"
 		],
-		"name": "Plan of Attack"
+		"name": "Plan of Attack",
+		"side_mission": null
 	},
 	"1083": {
+		"battleground_id": null,
 		"id": "1083",
 		"items": {
 			"3043": 0.25
@@ -1736,9 +1975,11 @@ var CAMPAIGNS = {
 			"5316",
 			"5317"
 		],
-		"name": "Salt Waste Empire"
+		"name": "Salt Waste Empire",
+		"side_mission": null
 	},
 	"1084": {
+		"battleground_id": null,
 		"id": "1084",
 		"items": {
 			"3043": 0.25
@@ -1752,9 +1993,11 @@ var CAMPAIGNS = {
 			"5322",
 			"5323"
 		],
-		"name": "Backup Plan"
+		"name": "Backup Plan",
+		"side_mission": null
 	},
 	"1085": {
+		"battleground_id": null,
 		"id": "1085",
 		"items": {
 			"3043": 0.25
@@ -1767,9 +2010,11 @@ var CAMPAIGNS = {
 			"5327",
 			"5328"
 		],
-		"name": "Ground Inspection"
+		"name": "Ground Inspection",
+		"side_mission": null
 	},
 	"1086": {
+		"battleground_id": null,
 		"id": "1086",
 		"items": {
 			"3043": 0.25
@@ -1785,9 +2030,11 @@ var CAMPAIGNS = {
 			"5335",
 			"5336"
 		],
-		"name": "Reks and the Tamer"
+		"name": "Reks and the Tamer",
+		"side_mission": null
 	},
 	"1087": {
+		"battleground_id": null,
 		"id": "1087",
 		"items": {
 			"3044": 0.25
@@ -1800,9 +2047,11 @@ var CAMPAIGNS = {
 			"5340",
 			"5341"
 		],
-		"name": "Light of the Wisps"
+		"name": "Light of the Wisps",
+		"side_mission": null
 	},
 	"1088": {
+		"battleground_id": null,
 		"id": "1088",
 		"items": {
 			"3044": 0.25
@@ -1816,9 +2065,11 @@ var CAMPAIGNS = {
 			"5346",
 			"5347"
 		],
-		"name": "A Difference of Opinion"
+		"name": "A Difference of Opinion",
+		"side_mission": null
 	},
 	"1089": {
+		"battleground_id": null,
 		"id": "1089",
 		"items": {
 			"3044": 0.25
@@ -1831,9 +2082,11 @@ var CAMPAIGNS = {
 			"5351",
 			"5352"
 		],
-		"name": "Influence of The Void"
+		"name": "Influence of The Void",
+		"side_mission": null
 	},
 	"1090": {
+		"battleground_id": null,
 		"id": "1090",
 		"items": {
 			"3044": 0.25
@@ -1849,9 +2102,11 @@ var CAMPAIGNS = {
 			"5359",
 			"5360"
 		],
-		"name": "Redemption"
+		"name": "Redemption",
+		"side_mission": null
 	},
 	"1091": {
+		"battleground_id": null,
 		"id": "1091",
 		"items": {
 			"3045": 0.25
@@ -1864,9 +2119,11 @@ var CAMPAIGNS = {
 			"5364",
 			"5365"
 		],
-		"name": "Decim and the Goblins"
+		"name": "Decim and the Goblins",
+		"side_mission": null
 	},
 	"1092": {
+		"battleground_id": null,
 		"id": "1092",
 		"items": {
 			"3045": 0.25
@@ -1879,9 +2136,11 @@ var CAMPAIGNS = {
 			"5369",
 			"5370"
 		],
-		"name": "Dungeon Depths"
+		"name": "Dungeon Depths",
+		"side_mission": null
 	},
 	"1093": {
+		"battleground_id": null,
 		"id": "1093",
 		"items": {
 			"3045": 0.25
@@ -1895,9 +2154,11 @@ var CAMPAIGNS = {
 			"5375",
 			"5376"
 		],
-		"name": "The Fugitive"
+		"name": "The Fugitive",
+		"side_mission": null
 	},
 	"1094": {
+		"battleground_id": null,
 		"id": "1094",
 		"items": {
 			"3045": 0.25
@@ -1909,9 +2170,11 @@ var CAMPAIGNS = {
 			"5379",
 			"5380"
 		],
-		"name": "Common Enemy"
+		"name": "Common Enemy",
+		"side_mission": null
 	},
 	"1095": {
+		"battleground_id": null,
 		"id": "1095",
 		"items": {
 			"3045": 0.25
@@ -1923,9 +2186,11 @@ var CAMPAIGNS = {
 			"5383",
 			"5384"
 		],
-		"name": "New Friends"
+		"name": "New Friends",
+		"side_mission": null
 	},
 	"1096": {
+		"battleground_id": null,
 		"id": "1096",
 		"items": {
 			"3045": 0.25
@@ -1936,9 +2201,11 @@ var CAMPAIGNS = {
 			"5386",
 			"5387"
 		],
-		"name": "Trick or Treat"
+		"name": "Trick or Treat",
+		"side_mission": null
 	},
 	"1097": {
+		"battleground_id": null,
 		"id": "1097",
 		"items": {
 			"3046": 0.25
@@ -1951,9 +2218,11 @@ var CAMPAIGNS = {
 			"5391",
 			"5392"
 		],
-		"name": "The Price of Freedom"
+		"name": "The Price of Freedom",
+		"side_mission": null
 	},
 	"1098": {
+		"battleground_id": null,
 		"id": "1098",
 		"items": {
 			"3046": 0.25
@@ -1967,9 +2236,11 @@ var CAMPAIGNS = {
 			"5397",
 			"5398"
 		],
-		"name": "Dragon Buddies"
+		"name": "Dragon Buddies",
+		"side_mission": null
 	},
 	"1099": {
+		"battleground_id": null,
 		"id": "1099",
 		"items": {
 			"3046": 0.25
@@ -1982,9 +2253,11 @@ var CAMPAIGNS = {
 			"5402",
 			"5403"
 		],
-		"name": "Cry of the Wild"
+		"name": "Cry of the Wild",
+		"side_mission": null
 	},
 	"1100": {
+		"battleground_id": null,
 		"id": "1100",
 		"items": {
 			"3046": 0.25
@@ -1996,9 +2269,11 @@ var CAMPAIGNS = {
 			"5406",
 			"5407"
 		],
-		"name": "Relentless Kidnappers"
+		"name": "Relentless Kidnappers",
+		"side_mission": null
 	},
 	"1101": {
+		"battleground_id": null,
 		"id": "1101",
 		"items": {
 			"3046": 0.25
@@ -2010,9 +2285,11 @@ var CAMPAIGNS = {
 			"5410",
 			"5411"
 		],
-		"name": "Showdown"
+		"name": "Showdown",
+		"side_mission": null
 	},
 	"1102": {
+		"battleground_id": null,
 		"id": "1102",
 		"items": {
 			"3047": 0.25
@@ -2025,9 +2302,11 @@ var CAMPAIGNS = {
 			"5415",
 			"5416"
 		],
-		"name": "The Secret Mission"
+		"name": "The Secret Mission",
+		"side_mission": null
 	},
 	"1103": {
+		"battleground_id": null,
 		"id": "1103",
 		"items": {
 			"3047": 0.25
@@ -2041,9 +2320,11 @@ var CAMPAIGNS = {
 			"5421",
 			"5422"
 		],
-		"name": "Gold Versus Dawn"
+		"name": "Gold Versus Dawn",
+		"side_mission": null
 	},
 	"1104": {
+		"battleground_id": null,
 		"id": "1104",
 		"items": {
 			"3047": 0.25
@@ -2056,9 +2337,11 @@ var CAMPAIGNS = {
 			"5426",
 			"5427"
 		],
-		"name": "Tracking the Corruption"
+		"name": "Tracking the Corruption",
+		"side_mission": null
 	},
 	"1105": {
+		"battleground_id": null,
 		"id": "1105",
 		"items": {
 			"3047": 0.25
@@ -2070,9 +2353,11 @@ var CAMPAIGNS = {
 			"5430",
 			"5431"
 		],
-		"name": "Corrupted Waters"
+		"name": "Corrupted Waters",
+		"side_mission": null
 	},
 	"1106": {
+		"battleground_id": null,
 		"id": "1106",
 		"items": {
 			"3047": 0.25
@@ -2084,9 +2369,11 @@ var CAMPAIGNS = {
 			"5434",
 			"5435"
 		],
-		"name": "Alternate Plan"
+		"name": "Alternate Plan",
+		"side_mission": null
 	},
 	"1107": {
+		"battleground_id": null,
 		"id": "1107",
 		"items": {
 			"3047": 0.25
@@ -2099,9 +2386,11 @@ var CAMPAIGNS = {
 			"5439",
 			"5440"
 		],
-		"name": "Spirits of Time"
+		"name": "Spirits of Time",
+		"side_mission": null
 	},
 	"1108": {
+		"battleground_id": null,
 		"id": "1108",
 		"items": {
 			"2522": 0.04,
@@ -2112,9 +2401,11 @@ var CAMPAIGNS = {
 			"5441",
 			"5442"
 		],
-		"name": "Weakening the Lady of the Sea"
+		"name": "Weakening the Lady of the Sea",
+		"side_mission": null
 	},
 	"1109": {
+		"battleground_id": null,
 		"id": "1109",
 		"items": {
 			"2522": 0.04,
@@ -2135,7 +2426,8 @@ var CAMPAIGNS = {
 			"5453",
 			"5454"
 		],
-		"name": "The Healer"
+		"name": "The Healer",
+		"side_mission": null
 	},
 	"1110": {
 		"battleground_id": "2002",
@@ -2159,7 +2451,8 @@ var CAMPAIGNS = {
 			"5465",
 			"5466"
 		],
-		"name": "The Guardian"
+		"name": "The Guardian",
+		"side_mission": null
 	},
 	"1111": {
 		"battleground_id": "2001",
@@ -2173,7 +2466,8 @@ var CAMPAIGNS = {
 			"5468",
 			"5469"
 		],
-		"name": "The Tide Swells..."
+		"name": "The Tide Swells...",
+		"side_mission": null
 	},
 	"1112": {
 		"battleground_id": "2003",
@@ -2198,7 +2492,8 @@ var CAMPAIGNS = {
 			"5481",
 			"5482"
 		],
-		"name": "The Assassin"
+		"name": "The Assassin",
+		"side_mission": null
 	},
 	"1113": {
 		"battleground_id": "2004",
@@ -2222,9 +2517,11 @@ var CAMPAIGNS = {
 			"5493",
 			"5494"
 		],
-		"name": "The Ranger"
+		"name": "The Ranger",
+		"side_mission": null
 	},
 	"1114": {
+		"battleground_id": null,
 		"id": "1114",
 		"items": {
 			"3049": 0.1
@@ -2234,9 +2531,11 @@ var CAMPAIGNS = {
 			"5495",
 			"5496"
 		],
-		"name": "Snowdust Forge"
+		"name": "Snowdust Forge",
+		"side_mission": null
 	},
 	"1115": {
+		"battleground_id": null,
 		"id": "1115",
 		"items": {
 			"3049": 0.2
@@ -2256,7 +2555,8 @@ var CAMPAIGNS = {
 			"5507",
 			"5508"
 		],
-		"name": "Ancient Aegis"
+		"name": "Ancient Aegis",
+		"side_mission": null
 	},
 	"1116": {
 		"battleground_id": "2005",
@@ -2279,7 +2579,8 @@ var CAMPAIGNS = {
 			"5519",
 			"5520"
 		],
-		"name": "Blazing Dyrnwyn"
+		"name": "Blazing Dyrnwyn",
+		"side_mission": null
 	},
 	"1117": {
 		"battleground_id": "2006",
@@ -2294,7 +2595,8 @@ var CAMPAIGNS = {
 			"5523",
 			"5524"
 		],
-		"name": "Dyrnwyn's Test"
+		"name": "Dyrnwyn's Test",
+		"side_mission": null
 	},
 	"1118": {
 		"battleground_id": "2007",
@@ -2318,7 +2620,8 @@ var CAMPAIGNS = {
 			"5536",
 			"5537"
 		],
-		"name": "Miracle Water"
+		"name": "Miracle Water",
+		"side_mission": null
 	},
 	"1119": {
 		"battleground_id": "2008",
@@ -2341,9 +2644,11 @@ var CAMPAIGNS = {
 			"5548",
 			"5549"
 		],
-		"name": "War Stratagem"
+		"name": "War Stratagem",
+		"side_mission": null
 	},
 	"1120": {
+		"battleground_id": null,
 		"id": "1120",
 		"items": {
 			"3052": 1
@@ -2355,9 +2660,11 @@ var CAMPAIGNS = {
 			"5552",
 			"5553"
 		],
-		"name": "Volcano of Eruptions"
+		"name": "Volcano of Eruptions",
+		"side_mission": null
 	},
 	"1121": {
+		"battleground_id": null,
 		"id": "1121",
 		"items": {
 			"3052": 1
@@ -2369,9 +2676,11 @@ var CAMPAIGNS = {
 			"5556",
 			"5557"
 		],
-		"name": "A Man Who Loves Birds"
+		"name": "A Man Who Loves Birds",
+		"side_mission": null
 	},
 	"1122": {
+		"battleground_id": null,
 		"id": "1122",
 		"items": {
 			"3052": 1
@@ -2383,7 +2692,8 @@ var CAMPAIGNS = {
 			"5560",
 			"5561"
 		],
-		"name": "Some Gloomy Lake"
+		"name": "Some Gloomy Lake",
+		"side_mission": null
 	},
 	"1123": {
 		"battleground_id": "2009",
@@ -2397,9 +2707,11 @@ var CAMPAIGNS = {
 			"5563",
 			"5564"
 		],
-		"name": "The Evil Castle"
+		"name": "The Evil Castle",
+		"side_mission": null
 	},
 	"1124": {
+		"battleground_id": null,
 		"id": "1124",
 		"items": {
 			"3053": 0.1
@@ -2409,9 +2721,11 @@ var CAMPAIGNS = {
 			"5565",
 			"5566"
 		],
-		"name": "Soul Power"
+		"name": "Soul Power",
+		"side_mission": null
 	},
 	"1125": {
+		"battleground_id": null,
 		"id": "1125",
 		"items": {
 			"3053": 0.2
@@ -2431,7 +2745,8 @@ var CAMPAIGNS = {
 			"5577",
 			"5578"
 		],
-		"name": "The Void Plane"
+		"name": "The Void Plane",
+		"side_mission": null
 	},
 	"1126": {
 		"battleground_id": "2010",
@@ -2454,7 +2769,8 @@ var CAMPAIGNS = {
 			"5589",
 			"5590"
 		],
-		"name": "Ruler of The Void"
+		"name": "Ruler of The Void",
+		"side_mission": null
 	},
 	"1127": {
 		"battleground_id": "2011",
@@ -2469,7 +2785,8 @@ var CAMPAIGNS = {
 			"5593",
 			"5594"
 		],
-		"name": "This is the Final Battle"
+		"name": "This is the Final Battle",
+		"side_mission": null
 	},
 	"1128": {
 		"battleground_id": "2012",
@@ -2493,7 +2810,8 @@ var CAMPAIGNS = {
 			"5606",
 			"5607"
 		],
-		"name": "The Abyss"
+		"name": "The Abyss",
+		"side_mission": null
 	},
 	"1129": {
 		"battleground_id": "2013",
@@ -2516,9 +2834,11 @@ var CAMPAIGNS = {
 			"5618",
 			"5619"
 		],
-		"name": "The Void's Harmony"
+		"name": "The Void's Harmony",
+		"side_mission": null
 	},
 	"1130": {
+		"battleground_id": null,
 		"id": "1130",
 		"items": {
 			"3056": 0.1
@@ -2528,9 +2848,11 @@ var CAMPAIGNS = {
 			"5624",
 			"5625"
 		],
-		"name": "Honey Buzz"
+		"name": "Honey Buzz",
+		"side_mission": null
 	},
 	"1131": {
+		"battleground_id": null,
 		"id": "1131",
 		"items": {
 			"3056": 0.2
@@ -2550,7 +2872,8 @@ var CAMPAIGNS = {
 			"5636",
 			"5637"
 		],
-		"name": "Heroes of the World"
+		"name": "Heroes of the World",
+		"side_mission": null
 	},
 	"1132": {
 		"battleground_id": "2014",
@@ -2573,7 +2896,8 @@ var CAMPAIGNS = {
 			"5648",
 			"5649"
 		],
-		"name": "Violent Coincidences"
+		"name": "Violent Coincidences",
+		"side_mission": null
 	},
 	"1133": {
 		"battleground_id": "2016",
@@ -2588,7 +2912,8 @@ var CAMPAIGNS = {
 			"5652",
 			"5653"
 		],
-		"name": "No Place is Home"
+		"name": "No Place is Home",
+		"side_mission": null
 	},
 	"1134": {
 		"battleground_id": "2017",
@@ -2612,7 +2937,8 @@ var CAMPAIGNS = {
 			"3665",
 			"3666"
 		],
-		"name": "Winds of Change"
+		"name": "Winds of Change",
+		"side_mission": null
 	},
 	"1135": {
 		"battleground_id": "2018",
@@ -2635,9 +2961,11 @@ var CAMPAIGNS = {
 			"3677",
 			"3678"
 		],
-		"name": "Family Grudge"
+		"name": "Family Grudge",
+		"side_mission": null
 	},
 	"1136": {
+		"battleground_id": null,
 		"id": "1136",
 		"items": {
 			"3059": 0.1
@@ -2647,9 +2975,11 @@ var CAMPAIGNS = {
 			"5654",
 			"5655"
 		],
-		"name": "Sea Temple Defenses"
+		"name": "Sea Temple Defenses",
+		"side_mission": null
 	},
 	"1137": {
+		"battleground_id": null,
 		"id": "1137",
 		"items": {
 			"3059": 0.2
@@ -2669,7 +2999,8 @@ var CAMPAIGNS = {
 			"5666",
 			"5667"
 		],
-		"name": "Beneath the Waves"
+		"name": "Beneath the Waves",
+		"side_mission": null
 	},
 	"1138": {
 		"battleground_id": "2019",
@@ -2692,7 +3023,8 @@ var CAMPAIGNS = {
 			"5678",
 			"5679"
 		],
-		"name": "The Temple's Judgement"
+		"name": "The Temple's Judgement",
+		"side_mission": null
 	},
 	"1139": {
 		"battleground_id": "2020",
@@ -2707,7 +3039,8 @@ var CAMPAIGNS = {
 			"5682",
 			"5683"
 		],
-		"name": "Through Fire and Water"
+		"name": "Through Fire and Water",
+		"side_mission": null
 	},
 	"1140": {
 		"battleground_id": "2021",
@@ -2731,7 +3064,8 @@ var CAMPAIGNS = {
 			"5699",
 			"5700"
 		],
-		"name": "Newfound Alliance"
+		"name": "Newfound Alliance",
+		"side_mission": null
 	},
 	"1141": {
 		"battleground_id": "2022",
@@ -2754,9 +3088,11 @@ var CAMPAIGNS = {
 			"5711",
 			"5712"
 		],
-		"name": "Warmonger"
+		"name": "Warmonger",
+		"side_mission": null
 	},
 	"1142": {
+		"battleground_id": null,
 		"id": "1142",
 		"items": {
 			"3062": 0.1
@@ -2766,9 +3102,11 @@ var CAMPAIGNS = {
 			"5713",
 			"5714"
 		],
-		"name": "Mining Resources"
+		"name": "Mining Resources",
+		"side_mission": null
 	},
 	"1143": {
+		"battleground_id": null,
 		"id": "1143",
 		"items": {
 			"3062": 0.2
@@ -2788,7 +3126,8 @@ var CAMPAIGNS = {
 			"5725",
 			"5726"
 		],
-		"name": "Journey to Fireshard Mine"
+		"name": "Journey to Fireshard Mine",
+		"side_mission": null
 	},
 	"1144": {
 		"battleground_id": "2023",
@@ -2811,9 +3150,11 @@ var CAMPAIGNS = {
 			"5737",
 			"5738"
 		],
-		"name": "First Contact"
+		"name": "First Contact",
+		"side_mission": null
 	},
 	"1145": {
+		"battleground_id": null,
 		"id": "1145",
 		"items": {
 			"3062": 0.2
@@ -2824,7 +3165,8 @@ var CAMPAIGNS = {
 			"5740",
 			"5741"
 		],
-		"name": "Trick or Treat"
+		"name": "Trick or Treat",
+		"side_mission": null
 	},
 	"1146": {
 		"battleground_id": "2024",
@@ -2839,7 +3181,8 @@ var CAMPAIGNS = {
 			"5744",
 			"5745"
 		],
-		"name": "Fireshard's Giant"
+		"name": "Fireshard's Giant",
+		"side_mission": null
 	},
 	"1147": {
 		"battleground_id": "2025",
@@ -2863,7 +3206,8 @@ var CAMPAIGNS = {
 			"5757",
 			"5758"
 		],
-		"name": "In Search of Love"
+		"name": "In Search of Love",
+		"side_mission": null
 	},
 	"1148": {
 		"battleground_id": "2026",
@@ -2886,9 +3230,11 @@ var CAMPAIGNS = {
 			"5769",
 			"5770"
 		],
-		"name": "Confronting the Robot Within"
+		"name": "Confronting the Robot Within",
+		"side_mission": null
 	},
 	"1149": {
+		"battleground_id": null,
 		"id": "1149",
 		"items": {
 			"3065": 0.1
@@ -2898,9 +3244,11 @@ var CAMPAIGNS = {
 			"5771",
 			"5772"
 		],
-		"name": "Orbs' Power Source"
+		"name": "Orbs' Power Source",
+		"side_mission": null
 	},
 	"1150": {
+		"battleground_id": null,
 		"id": "1150",
 		"items": {
 			"3065": 0.2
@@ -2920,7 +3268,8 @@ var CAMPAIGNS = {
 			"5783",
 			"5784"
 		],
-		"name": "Avian Arrival"
+		"name": "Avian Arrival",
+		"side_mission": null
 	},
 	"1151": {
 		"battleground_id": "2028",
@@ -2943,9 +3292,11 @@ var CAMPAIGNS = {
 			"5795",
 			"5796"
 		],
-		"name": "The Crimsonwings"
+		"name": "The Crimsonwings",
+		"side_mission": null
 	},
 	"1152": {
+		"battleground_id": null,
 		"id": "1152",
 		"items": {
 			"3065": 0.2
@@ -2958,7 +3309,8 @@ var CAMPAIGNS = {
 			"5800",
 			"5801"
 		],
-		"name": "The Giftbringer"
+		"name": "The Giftbringer",
+		"side_mission": null
 	},
 	"1153": {
 		"battleground_id": "2029",
@@ -2973,7 +3325,8 @@ var CAMPAIGNS = {
 			"5804",
 			"5805"
 		],
-		"name": "In the Name of the Nameless"
+		"name": "In the Name of the Nameless",
+		"side_mission": null
 	},
 	"1154": {
 		"battleground_id": "2030",
@@ -2997,7 +3350,8 @@ var CAMPAIGNS = {
 			"5817",
 			"5818"
 		],
-		"name": "An Ally in Red"
+		"name": "An Ally in Red",
+		"side_mission": null
 	},
 	"1155": {
 		"battleground_id": "2031",
@@ -3020,9 +3374,11 @@ var CAMPAIGNS = {
 			"5829",
 			"5830"
 		],
-		"name": "Forgotten Hero"
+		"name": "Forgotten Hero",
+		"side_mission": null
 	},
 	"1156": {
+		"battleground_id": null,
 		"id": "1156",
 		"items": {
 			"3068": 0.1
@@ -3032,9 +3388,11 @@ var CAMPAIGNS = {
 			"5831",
 			"5832"
 		],
-		"name": "The Word Eaters"
+		"name": "The Word Eaters",
+		"side_mission": null
 	},
 	"1157": {
+		"battleground_id": null,
 		"id": "1157",
 		"items": {
 			"3068": 0.2
@@ -3054,7 +3412,8 @@ var CAMPAIGNS = {
 			"5843",
 			"5844"
 		],
-		"name": "Skyhaven Secret"
+		"name": "Skyhaven Secret",
+		"side_mission": null
 	},
 	"1158": {
 		"battleground_id": "2032",
@@ -3077,7 +3436,8 @@ var CAMPAIGNS = {
 			"5855",
 			"5856"
 		],
-		"name": "Stone Guide"
+		"name": "Stone Guide",
+		"side_mission": null
 	},
 	"1159": {
 		"battleground_id": "2033",
@@ -3092,7 +3452,8 @@ var CAMPAIGNS = {
 			"5859",
 			"5860"
 		],
-		"name": "Buried Secrets"
+		"name": "Buried Secrets",
+		"side_mission": null
 	},
 	"1160": {
 		"battleground_id": "2034",
@@ -3116,7 +3477,8 @@ var CAMPAIGNS = {
 			"5872",
 			"5873"
 		],
-		"name": "The Crimson Hero"
+		"name": "The Crimson Hero",
+		"side_mission": null
 	},
 	"1161": {
 		"battleground_id": "2035",
@@ -3139,9 +3501,11 @@ var CAMPAIGNS = {
 			"5884",
 			"5885"
 		],
-		"name": "Crimsonwing Angels"
+		"name": "Crimsonwing Angels",
+		"side_mission": null
 	},
 	"1162": {
+		"battleground_id": null,
 		"id": "1162",
 		"items": {
 			"3071": 0.1
@@ -3151,9 +3515,11 @@ var CAMPAIGNS = {
 			"5886",
 			"5887"
 		],
-		"name": "For the Love of Dragons"
+		"name": "For the Love of Dragons",
+		"side_mission": null
 	},
 	"1163": {
+		"battleground_id": null,
 		"id": "1163",
 		"items": {
 			"3071": 0.2
@@ -3173,7 +3539,8 @@ var CAMPAIGNS = {
 			"5898",
 			"5899"
 		],
-		"name": "Best Laid Plans"
+		"name": "Best Laid Plans",
+		"side_mission": null
 	},
 	"1164": {
 		"battleground_id": "2036",
@@ -3196,9 +3563,11 @@ var CAMPAIGNS = {
 			"5910",
 			"5911"
 		],
-		"name": "The Missing Pyrokinetic"
+		"name": "The Missing Pyrokinetic",
+		"side_mission": null
 	},
 	"1165": {
+		"battleground_id": null,
 		"id": "1165",
 		"items": {
 			"3068": 0.6
@@ -3210,9 +3579,11 @@ var CAMPAIGNS = {
 			"5914",
 			"5915"
 		],
-		"name": "Knights on Strike"
+		"name": "Knights on Strike",
+		"side_mission": null
 	},
 	"1166": {
+		"battleground_id": null,
 		"id": "1166",
 		"items": {
 			"3068": 0.6
@@ -3224,7 +3595,8 @@ var CAMPAIGNS = {
 			"5918",
 			"5919"
 		],
-		"name": "Toknight's the Knight"
+		"name": "Toknight's the Knight",
+		"side_mission": null
 	},
 	"1167": {
 		"battleground_id": "526",
@@ -3239,7 +3611,8 @@ var CAMPAIGNS = {
 			"5922",
 			"5923"
 		],
-		"name": "Dragons... I Hate Dragons"
+		"name": "Dragons... I Hate Dragons",
+		"side_mission": null
 	},
 	"1168": {
 		"battleground_id": "2037",
@@ -3254,7 +3627,8 @@ var CAMPAIGNS = {
 			"5926",
 			"5927"
 		],
-		"name": "A Test of Might"
+		"name": "A Test of Might",
+		"side_mission": null
 	},
 	"1169": {
 		"battleground_id": "2038",
@@ -3278,7 +3652,8 @@ var CAMPAIGNS = {
 			"5939",
 			"5940"
 		],
-		"name": "Prisoner Escape"
+		"name": "Prisoner Escape",
+		"side_mission": null
 	},
 	"1170": {
 		"battleground_id": "2039",
@@ -3301,9 +3676,11 @@ var CAMPAIGNS = {
 			"5951",
 			"5952"
 		],
-		"name": "Direct Encounter"
+		"name": "Direct Encounter",
+		"side_mission": null
 	},
 	"1171": {
+		"battleground_id": null,
 		"id": "1171",
 		"items": {
 			"3074": 0.1
@@ -3313,9 +3690,11 @@ var CAMPAIGNS = {
 			"5953",
 			"5954"
 		],
-		"name": "Castaway Cove"
+		"name": "Castaway Cove",
+		"side_mission": null
 	},
 	"1172": {
+		"battleground_id": null,
 		"id": "1172",
 		"items": {
 			"3074": 0.2
@@ -3335,7 +3714,8 @@ var CAMPAIGNS = {
 			"5965",
 			"5966"
 		],
-		"name": "Island of Secrets"
+		"name": "Island of Secrets",
+		"side_mission": null
 	},
 	"1173": {
 		"battleground_id": "2040",
@@ -3358,7 +3738,8 @@ var CAMPAIGNS = {
 			"5977",
 			"5978"
 		],
-		"name": "Lost History"
+		"name": "Lost History",
+		"side_mission": null
 	},
 	"1174": {
 		"battleground_id": "2041",
@@ -3373,7 +3754,8 @@ var CAMPAIGNS = {
 			"5981",
 			"5982"
 		],
-		"name": "Storm Lord Father"
+		"name": "Storm Lord Father",
+		"side_mission": null
 	},
 	"1175": {
 		"battleground_id": "2042",
@@ -3397,7 +3779,8 @@ var CAMPAIGNS = {
 			"5994",
 			"5995"
 		],
-		"name": "Lost Civilization"
+		"name": "Lost Civilization",
+		"side_mission": null
 	},
 	"1176": {
 		"battleground_id": "2043",
@@ -3420,9 +3803,11 @@ var CAMPAIGNS = {
 			"6006",
 			"6007"
 		],
-		"name": "Storm Incarnate"
+		"name": "Storm Incarnate",
+		"side_mission": null
 	},
 	"1177": {
+		"battleground_id": null,
 		"id": "1177",
 		"items": {
 			"3077": 0.1
@@ -3432,9 +3817,11 @@ var CAMPAIGNS = {
 			"6008",
 			"6009"
 		],
-		"name": "Golden Leaves"
+		"name": "Golden Leaves",
+		"side_mission": null
 	},
 	"1178": {
+		"battleground_id": null,
 		"id": "1178",
 		"items": {
 			"3077": 0.2
@@ -3454,7 +3841,8 @@ var CAMPAIGNS = {
 			"6020",
 			"6021"
 		],
-		"name": "Crash Site"
+		"name": "Crash Site",
+		"side_mission": null
 	},
 	"1179": {
 		"battleground_id": "2044",
@@ -3477,7 +3865,8 @@ var CAMPAIGNS = {
 			"6032",
 			"6033"
 		],
-		"name": "Village Center"
+		"name": "Village Center",
+		"side_mission": null
 	},
 	"1180": {
 		"battleground_id": "2045",
@@ -3492,7 +3881,8 @@ var CAMPAIGNS = {
 			"6036",
 			"6037"
 		],
-		"name": "Dream Awakened"
+		"name": "Dream Awakened",
+		"side_mission": null
 	},
 	"1181": {
 		"battleground_id": "2046",
@@ -3516,7 +3906,8 @@ var CAMPAIGNS = {
 			"6049",
 			"6050"
 		],
-		"name": "Village Outskirts"
+		"name": "Village Outskirts",
+		"side_mission": null
 	},
 	"1182": {
 		"battleground_id": "2047",
@@ -3539,9 +3930,11 @@ var CAMPAIGNS = {
 			"6061",
 			"6062"
 		],
-		"name": "The Dream's Depths"
+		"name": "The Dream's Depths",
+		"side_mission": null
 	},
 	"1183": {
+		"battleground_id": null,
 		"id": "1183",
 		"items": {
 			"3080": 0.2
@@ -3555,7 +3948,8 @@ var CAMPAIGNS = {
 			"6067",
 			"6068"
 		],
-		"name": "Mysterious Light"
+		"name": "Mysterious Light",
+		"side_mission": null
 	},
 	"1184": {
 		"battleground_id": "2048",
@@ -3572,7 +3966,8 @@ var CAMPAIGNS = {
 			"6073",
 			"6074"
 		],
-		"name": "Inside the Barrier"
+		"name": "Inside the Barrier",
+		"side_mission": null
 	},
 	"1185": {
 		"battleground_id": "2050",
@@ -3587,7 +3982,8 @@ var CAMPAIGNS = {
 			"6081",
 			"6082"
 		],
-		"name": "Rift Howl"
+		"name": "Rift Howl",
+		"side_mission": null
 	},
 	"1186": {
 		"battleground_id": "2051",
@@ -3604,7 +4000,8 @@ var CAMPAIGNS = {
 			"6087",
 			"6088"
 		],
-		"name": "Barrier Destruction"
+		"name": "Barrier Destruction",
+		"side_mission": null
 	},
 	"1187": {
 		"battleground_id": "2052",
@@ -3621,9 +4018,11 @@ var CAMPAIGNS = {
 			"6093",
 			"6094"
 		],
-		"name": "The Spirit Between Planes"
+		"name": "The Spirit Between Planes",
+		"side_mission": null
 	},
 	"1188": {
+		"battleground_id": null,
 		"id": "1188",
 		"items": {
 			"3080": 0.4
@@ -3634,9 +4033,11 @@ var CAMPAIGNS = {
 			"6096",
 			"6097"
 		],
-		"name": "Legend of Pumpking"
+		"name": "Legend of Pumpking",
+		"side_mission": null
 	},
 	"1189": {
+		"battleground_id": null,
 		"id": "1189",
 		"items": {
 			"3083": 0.2
@@ -3650,7 +4051,8 @@ var CAMPAIGNS = {
 			"6102",
 			"6103"
 		],
-		"name": "Home of Dragons"
+		"name": "Home of Dragons",
+		"side_mission": null
 	},
 	"1190": {
 		"battleground_id": "2053",
@@ -3667,7 +4069,8 @@ var CAMPAIGNS = {
 			"6108",
 			"6109"
 		],
-		"name": "Dragon Fossils"
+		"name": "Dragon Fossils",
+		"side_mission": null
 	},
 	"1191": {
 		"battleground_id": "2054",
@@ -3682,7 +4085,8 @@ var CAMPAIGNS = {
 			"6112",
 			"6113"
 		],
-		"name": "A Promise Left Behind"
+		"name": "A Promise Left Behind",
+		"side_mission": null
 	},
 	"1192": {
 		"battleground_id": "2055",
@@ -3699,7 +4103,8 @@ var CAMPAIGNS = {
 			"6118",
 			"6119"
 		],
-		"name": "Living Fossil"
+		"name": "Living Fossil",
+		"side_mission": null
 	},
 	"1193": {
 		"battleground_id": "2056",
@@ -3716,9 +4121,11 @@ var CAMPAIGNS = {
 			"6124",
 			"6125"
 		],
-		"name": "Unknown Tribe"
+		"name": "Unknown Tribe",
+		"side_mission": null
 	},
 	"1194": {
+		"battleground_id": null,
 		"id": "1194",
 		"items": {
 			"3083": 0.2
@@ -3731,9 +4138,11 @@ var CAMPAIGNS = {
 			"6129",
 			"6130"
 		],
-		"name": "Winter Star's Eve"
+		"name": "Winter Star's Eve",
+		"side_mission": null
 	},
 	"1195": {
+		"battleground_id": null,
 		"id": "1195",
 		"items": {
 			"3086": 0.2
@@ -3747,7 +4156,8 @@ var CAMPAIGNS = {
 			"6135",
 			"6136"
 		],
-		"name": "Purity and Corruption"
+		"name": "Purity and Corruption",
+		"side_mission": null
 	},
 	"1196": {
 		"battleground_id": "2057",
@@ -3764,7 +4174,8 @@ var CAMPAIGNS = {
 			"6141",
 			"6142"
 		],
-		"name": "Warrior's Path"
+		"name": "Warrior's Path",
+		"side_mission": null
 	},
 	"1197": {
 		"battleground_id": "2058",
@@ -3779,7 +4190,8 @@ var CAMPAIGNS = {
 			"6145",
 			"6146"
 		],
-		"name": "Schism"
+		"name": "Schism",
+		"side_mission": null
 	},
 	"1198": {
 		"battleground_id": "2059",
@@ -3796,7 +4208,8 @@ var CAMPAIGNS = {
 			"6151",
 			"6152"
 		],
-		"name": "Shades of the Past"
+		"name": "Shades of the Past",
+		"side_mission": null
 	},
 	"1199": {
 		"battleground_id": "2060",
@@ -3813,9 +4226,11 @@ var CAMPAIGNS = {
 			"6157",
 			"6158"
 		],
-		"name": "Crimsonwing Foundation"
+		"name": "Crimsonwing Foundation",
+		"side_mission": null
 	},
 	"1200": {
+		"battleground_id": null,
 		"id": "1200",
 		"items": {
 			"3089": 0.2
@@ -3829,7 +4244,8 @@ var CAMPAIGNS = {
 			"6163",
 			"6164"
 		],
-		"name": "Notorious Reputation"
+		"name": "Notorious Reputation",
+		"side_mission": null
 	},
 	"1201": {
 		"battleground_id": "2061",
@@ -3846,7 +4262,8 @@ var CAMPAIGNS = {
 			"6169",
 			"6170"
 		],
-		"name": "Bridge Builder"
+		"name": "Bridge Builder",
+		"side_mission": null
 	},
 	"1202": {
 		"battleground_id": "2062",
@@ -3861,7 +4278,8 @@ var CAMPAIGNS = {
 			"6173",
 			"6174"
 		],
-		"name": "A Brighter Future"
+		"name": "A Brighter Future",
+		"side_mission": null
 	},
 	"1203": {
 		"battleground_id": "546",
@@ -3878,7 +4296,8 @@ var CAMPAIGNS = {
 			"6195",
 			"6196"
 		],
-		"name": "Revenge of the Commons!"
+		"name": "Revenge of the Commons!",
+		"side_mission": null
 	},
 	"1204": {
 		"battleground_id": "546",
@@ -3895,7 +4314,8 @@ var CAMPAIGNS = {
 			"6201",
 			"6202"
 		],
-		"name": "The Legends Come To Take Their Place!"
+		"name": "The Legends Come To Take Their Place!",
+		"side_mission": null
 	},
 	"1205": {
 		"battleground_id": "2063",
@@ -3912,7 +4332,8 @@ var CAMPAIGNS = {
 			"6183",
 			"6184"
 		],
-		"name": "Old Alliances Die Hard"
+		"name": "Old Alliances Die Hard",
+		"side_mission": null
 	},
 	"1206": {
 		"battleground_id": "2064",
@@ -3929,9 +4350,11 @@ var CAMPAIGNS = {
 			"6189",
 			"6190"
 		],
-		"name": "Goblins' Future"
+		"name": "Goblins' Future",
+		"side_mission": null
 	},
 	"1207": {
+		"battleground_id": null,
 		"id": "1207",
 		"items": {
 			"3092": 0.2
@@ -3945,7 +4368,8 @@ var CAMPAIGNS = {
 			"6207",
 			"6208"
 		],
-		"name": "Return to Beetleton"
+		"name": "Return to Beetleton",
+		"side_mission": null
 	},
 	"1208": {
 		"battleground_id": "2065",
@@ -3962,7 +4386,8 @@ var CAMPAIGNS = {
 			"6213",
 			"6214"
 		],
-		"name": "The Sage's Path"
+		"name": "The Sage's Path",
+		"side_mission": null
 	},
 	"1209": {
 		"battleground_id": "2066",
@@ -3977,7 +4402,8 @@ var CAMPAIGNS = {
 			"6217",
 			"6218"
 		],
-		"name": "Memories Best Left Forgotten"
+		"name": "Memories Best Left Forgotten",
+		"side_mission": null
 	},
 	"1210": {
 		"battleground_id": "2069",
@@ -3994,7 +4420,8 @@ var CAMPAIGNS = {
 			"6227",
 			"6228"
 		],
-		"name": "Priority Differences"
+		"name": "Priority Differences",
+		"side_mission": null
 	},
 	"1211": {
 		"battleground_id": "2070",
@@ -4011,9 +4438,11 @@ var CAMPAIGNS = {
 			"6233",
 			"6234"
 		],
-		"name": "A Dream's Rebirth"
+		"name": "A Dream's Rebirth",
+		"side_mission": null
 	},
 	"1212": {
+		"battleground_id": null,
 		"id": "1212",
 		"items": {
 			"3095": 0.2
@@ -4027,7 +4456,8 @@ var CAMPAIGNS = {
 			"6239",
 			"6240"
 		],
-		"name": "Welcome to the Salt Wastes"
+		"name": "Welcome to the Salt Wastes",
+		"side_mission": null
 	},
 	"1213": {
 		"battleground_id": "2071",
@@ -4044,7 +4474,8 @@ var CAMPAIGNS = {
 			"6245",
 			"6246"
 		],
-		"name": "Temple of Origin"
+		"name": "Temple of Origin",
+		"side_mission": null
 	},
 	"1214": {
 		"battleground_id": "2072",
@@ -4059,7 +4490,8 @@ var CAMPAIGNS = {
 			"6261",
 			"6262"
 		],
-		"name": "Three Valiant Hearts"
+		"name": "Three Valiant Hearts",
+		"side_mission": null
 	},
 	"1215": {
 		"battleground_id": "2073",
@@ -4076,7 +4508,8 @@ var CAMPAIGNS = {
 			"6251",
 			"6252"
 		],
-		"name": "Three-Pronged Attack"
+		"name": "Three-Pronged Attack",
+		"side_mission": null
 	},
 	"1216": {
 		"battleground_id": "2074",
@@ -4093,9 +4526,11 @@ var CAMPAIGNS = {
 			"6257",
 			"6258"
 		],
-		"name": "Door of Reckoning"
+		"name": "Door of Reckoning",
+		"side_mission": null
 	},
 	"1217": {
+		"battleground_id": null,
 		"id": "1217",
 		"items": {
 			"3098": 0.2
@@ -4109,7 +4544,8 @@ var CAMPAIGNS = {
 			"6267",
 			"6268"
 		],
-		"name": "Return to the Abyss"
+		"name": "Return to the Abyss",
+		"side_mission": null
 	},
 	"1218": {
 		"battleground_id": "2075",
@@ -4126,7 +4562,8 @@ var CAMPAIGNS = {
 			"6273",
 			"6274"
 		],
-		"name": "The Forgotten Hero"
+		"name": "The Forgotten Hero",
+		"side_mission": null
 	},
 	"1219": {
 		"battleground_id": "2076",
@@ -4141,7 +4578,8 @@ var CAMPAIGNS = {
 			"6289",
 			"6290"
 		],
-		"name": "Releasing the Elements"
+		"name": "Releasing the Elements",
+		"side_mission": null
 	},
 	"1220": {
 		"battleground_id": "2077",
@@ -4158,7 +4596,8 @@ var CAMPAIGNS = {
 			"6279",
 			"6280"
 		],
-		"name": "Hero's Goal"
+		"name": "Hero's Goal",
+		"side_mission": null
 	},
 	"1221": {
 		"battleground_id": "2078",
@@ -4175,9 +4614,11 @@ var CAMPAIGNS = {
 			"6285",
 			"6286"
 		],
-		"name": "The End of an Era"
+		"name": "The End of an Era",
+		"side_mission": null
 	},
 	"1222": {
+		"battleground_id": null,
 		"id": "1222",
 		"items": {
 			"3101": 0.2
@@ -4191,7 +4632,8 @@ var CAMPAIGNS = {
 			"6296",
 			"6297"
 		],
-		"name": "Return to Seastone Citadel"
+		"name": "Return to Seastone Citadel",
+		"side_mission": null
 	},
 	"1223": {
 		"battleground_id": "2079",
@@ -4208,7 +4650,8 @@ var CAMPAIGNS = {
 			"6302",
 			"6303"
 		],
-		"name": "Seastone Staff's Fate"
+		"name": "Seastone Staff's Fate",
+		"side_mission": null
 	},
 	"1224": {
 		"battleground_id": "2080",
@@ -4223,9 +4666,11 @@ var CAMPAIGNS = {
 			"6306",
 			"6307"
 		],
-		"name": "Solaron's Chosen"
+		"name": "Solaron's Chosen",
+		"side_mission": null
 	},
 	"1225": {
+		"battleground_id": null,
 		"id": "1225",
 		"items": {
 			"3101": 0.2
@@ -4236,7 +4681,8 @@ var CAMPAIGNS = {
 			"6309",
 			"6310"
 		],
-		"name": "Legend of Pumpking"
+		"name": "Legend of Pumpking",
+		"side_mission": null
 	},
 	"1226": {
 		"battleground_id": "2081",
@@ -4253,7 +4699,8 @@ var CAMPAIGNS = {
 			"6315",
 			"6316"
 		],
-		"name": "False Ideals"
+		"name": "False Ideals",
+		"side_mission": null
 	},
 	"1227": {
 		"battleground_id": "2082",
@@ -4270,9 +4717,11 @@ var CAMPAIGNS = {
 			"6321",
 			"6322"
 		],
-		"name": "Descent of Madness"
+		"name": "Descent of Madness",
+		"side_mission": null
 	},
 	"1228": {
+		"battleground_id": null,
 		"id": "1228",
 		"items": {
 			"3104": 0.2
@@ -4286,7 +4735,8 @@ var CAMPAIGNS = {
 			"6327",
 			"6328"
 		],
-		"name": "World's Center"
+		"name": "World's Center",
+		"side_mission": null
 	},
 	"1229": {
 		"battleground_id": "2083",
@@ -4303,9 +4753,11 @@ var CAMPAIGNS = {
 			"6333",
 			"6334"
 		],
-		"name": "Shack of Mysteries"
+		"name": "Shack of Mysteries",
+		"side_mission": null
 	},
 	"1230": {
+		"battleground_id": null,
 		"id": "1230",
 		"items": {
 			"3104": 0.2
@@ -4318,7 +4770,8 @@ var CAMPAIGNS = {
 			"6338",
 			"6339"
 		],
-		"name": "Tree Champion"
+		"name": "Tree Champion",
+		"side_mission": null
 	},
 	"1231": {
 		"battleground_id": "2084",
@@ -4333,7 +4786,8 @@ var CAMPAIGNS = {
 			"6342",
 			"6343"
 		],
-		"name": "Scyer the Haywire"
+		"name": "Scyer the Haywire",
+		"side_mission": null
 	},
 	"1232": {
 		"battleground_id": "2084",
@@ -4350,7 +4804,8 @@ var CAMPAIGNS = {
 			"6348",
 			"6349"
 		],
-		"name": "Silent Night"
+		"name": "Silent Night",
+		"side_mission": null
 	},
 	"1233": {
 		"battleground_id": "2085",
@@ -4367,9 +4822,11 @@ var CAMPAIGNS = {
 			"6354",
 			"6355"
 		],
-		"name": "Vulcanos's Warning"
+		"name": "Vulcanos's Warning",
+		"side_mission": null
 	},
 	"1234": {
+		"battleground_id": null,
 		"id": "1234",
 		"items": {
 			"3107": 0.2
@@ -4383,7 +4840,8 @@ var CAMPAIGNS = {
 			"6360",
 			"6361"
 		],
-		"name": "Return to Elaria"
+		"name": "Return to Elaria",
+		"side_mission": null
 	},
 	"1235": {
 		"battleground_id": "2087",
@@ -4400,7 +4858,8 @@ var CAMPAIGNS = {
 			"6366",
 			"6367"
 		],
-		"name": "Wyld Lands"
+		"name": "Wyld Lands",
+		"side_mission": null
 	},
 	"1236": {
 		"battleground_id": "2088",
@@ -4415,7 +4874,8 @@ var CAMPAIGNS = {
 			"6370",
 			"6371"
 		],
-		"name": "Wyld Uprising"
+		"name": "Wyld Uprising",
+		"side_mission": null
 	},
 	"1237": {
 		"battleground_id": "2089",
@@ -4432,7 +4892,8 @@ var CAMPAIGNS = {
 			"6376",
 			"6377"
 		],
-		"name": "Atlas, the Enduring"
+		"name": "Atlas, the Enduring",
+		"side_mission": null
 	},
 	"1238": {
 		"battleground_id": "2090",
@@ -4449,9 +4910,11 @@ var CAMPAIGNS = {
 			"6382",
 			"6383"
 		],
-		"name": "Angelic Catastrophe"
+		"name": "Angelic Catastrophe",
+		"side_mission": null
 	},
 	"1239": {
+		"battleground_id": null,
 		"id": "1239",
 		"items": {
 			"3110": 0.2
@@ -4465,7 +4928,8 @@ var CAMPAIGNS = {
 			"6388",
 			"6389"
 		],
-		"name": "Healed Dawnglow"
+		"name": "Healed Dawnglow",
+		"side_mission": null
 	},
 	"1240": {
 		"battleground_id": "2091",
@@ -4482,7 +4946,8 @@ var CAMPAIGNS = {
 			"6394",
 			"6395"
 		],
-		"name": "Mechanical Titan"
+		"name": "Mechanical Titan",
+		"side_mission": null
 	},
 	"1244": {
 		"battleground_id": "546",
@@ -4499,7 +4964,8 @@ var CAMPAIGNS = {
 			"6406",
 			"6407"
 		],
-		"name": "Revenge of the Commons!"
+		"name": "Revenge of the Commons!",
+		"side_mission": null
 	},
 	"1245": {
 		"battleground_id": "546",
@@ -4516,7 +4982,8 @@ var CAMPAIGNS = {
 			"6412",
 			"6413"
 		],
-		"name": "The Legends Come To Take Their Place!"
+		"name": "The Legends Come To Take Their Place!",
+		"side_mission": null
 	},
 	"1246": {
 		"battleground_id": "135",
@@ -4533,7 +5000,8 @@ var CAMPAIGNS = {
 			"6400",
 			"6401"
 		],
-		"name": "A new FOE has appeared!?"
+		"name": "A new FOE has appeared!?",
+		"side_mission": null
 	},
 	"1247": {
 		"battleground_id": "2092",
@@ -4548,7 +5016,8 @@ var CAMPAIGNS = {
 			"6416",
 			"6417"
 		],
-		"name": "Empty Titan"
+		"name": "Empty Titan",
+		"side_mission": null
 	},
 	"1248": {
 		"battleground_id": "2093",
@@ -4565,7 +5034,8 @@ var CAMPAIGNS = {
 			"6422",
 			"6423"
 		],
-		"name": "Manufactured Freedom"
+		"name": "Manufactured Freedom",
+		"side_mission": null
 	},
 	"1249": {
 		"battleground_id": "2094",
@@ -4582,9 +5052,11 @@ var CAMPAIGNS = {
 			"6428",
 			"6429"
 		],
-		"name": "Royal Interruption"
+		"name": "Royal Interruption",
+		"side_mission": null
 	},
 	"1250": {
+		"battleground_id": null,
 		"id": "1250",
 		"items": {
 			"3113": 0.2
@@ -4598,7 +5070,8 @@ var CAMPAIGNS = {
 			"6434",
 			"6435"
 		],
-		"name": "Return to Luminis"
+		"name": "Return to Luminis",
+		"side_mission": null
 	},
 	"1251": {
 		"battleground_id": "2095",
@@ -4615,7 +5088,8 @@ var CAMPAIGNS = {
 			"6440",
 			"6441"
 		],
-		"name": "Civil War"
+		"name": "Civil War",
+		"side_mission": null
 	},
 	"1252": {
 		"battleground_id": "2096",
@@ -4630,7 +5104,8 @@ var CAMPAIGNS = {
 			"6444",
 			"6445"
 		],
-		"name": "Constructing Aether"
+		"name": "Constructing Aether",
+		"side_mission": null
 	},
 	"1253": {
 		"battleground_id": "2097",
@@ -4647,7 +5122,8 @@ var CAMPAIGNS = {
 			"6450",
 			"6451"
 		],
-		"name": "The Power Coil"
+		"name": "The Power Coil",
+		"side_mission": null
 	},
 	"1254": {
 		"battleground_id": "2098",
@@ -4664,9 +5140,11 @@ var CAMPAIGNS = {
 			"6456",
 			"6457"
 		],
-		"name": "Aether Attunement"
+		"name": "Aether Attunement",
+		"side_mission": null
 	},
 	"1255": {
+		"battleground_id": null,
 		"id": "1255",
 		"items": {
 			"3116": 0.2
@@ -4680,7 +5158,8 @@ var CAMPAIGNS = {
 			"6462",
 			"6463"
 		],
-		"name": "Return to Karthos"
+		"name": "Return to Karthos",
+		"side_mission": null
 	},
 	"1256": {
 		"battleground_id": "2099",
@@ -4697,7 +5176,8 @@ var CAMPAIGNS = {
 			"6468",
 			"6469"
 		],
-		"name": "Chaos Power Coil"
+		"name": "Chaos Power Coil",
+		"side_mission": null
 	},
 	"1257": {
 		"battleground_id": "2100",
@@ -4712,7 +5192,8 @@ var CAMPAIGNS = {
 			"6472",
 			"6473"
 		],
-		"name": "Constructing Chaos"
+		"name": "Constructing Chaos",
+		"side_mission": null
 	},
 	"1258": {
 		"battleground_id": "2101",
@@ -4729,7 +5210,8 @@ var CAMPAIGNS = {
 			"6478",
 			"6479"
 		],
-		"name": "Chaos Allegiance"
+		"name": "Chaos Allegiance",
+		"side_mission": null
 	},
 	"1259": {
 		"battleground_id": "2102",
@@ -4746,9 +5228,11 @@ var CAMPAIGNS = {
 			"6484",
 			"6485"
 		],
-		"name": "Past Trickery Reveal"
+		"name": "Past Trickery Reveal",
+		"side_mission": null
 	},
 	"1260": {
+		"battleground_id": null,
 		"id": "1260",
 		"items": {
 			"3119": 0.2
@@ -4762,7 +5246,8 @@ var CAMPAIGNS = {
 			"6490",
 			"6491"
 		],
-		"name": "Return to Tarragon Peak"
+		"name": "Return to Tarragon Peak",
+		"side_mission": null
 	},
 	"1261": {
 		"battleground_id": "2103",
@@ -4779,9 +5264,11 @@ var CAMPAIGNS = {
 			"6496",
 			"6497"
 		],
-		"name": "First Order Remnants"
+		"name": "First Order Remnants",
+		"side_mission": null
 	},
 	"1262": {
+		"battleground_id": null,
 		"id": "1262",
 		"items": {},
 		"location_id": "31",
@@ -4792,7 +5279,8 @@ var CAMPAIGNS = {
 			"6501",
 			"6502"
 		],
-		"name": "Spellstone's 5th Anniversary"
+		"name": "Spellstone's 5th Anniversary",
+		"side_mission": null
 	},
 	"1263": {
 		"battleground_id": "2104",
@@ -4807,7 +5295,8 @@ var CAMPAIGNS = {
 			"6505",
 			"6506"
 		],
-		"name": "Daknak Fight!"
+		"name": "Daknak Fight!",
+		"side_mission": null
 	},
 	"1264": {
 		"battleground_id": "2105",
@@ -4824,7 +5313,8 @@ var CAMPAIGNS = {
 			"6511",
 			"6512"
 		],
-		"name": "Seastone Staff Secrets"
+		"name": "Seastone Staff Secrets",
+		"side_mission": null
 	},
 	"1265": {
 		"battleground_id": "2106",
@@ -4841,9 +5331,11 @@ var CAMPAIGNS = {
 			"6517",
 			"6518"
 		],
-		"name": "Missing Spiritual Strength"
+		"name": "Missing Spiritual Strength",
+		"side_mission": null
 	},
 	"1266": {
+		"battleground_id": null,
 		"id": "1266",
 		"items": {
 			"3119": 0.2
@@ -4854,9 +5346,11 @@ var CAMPAIGNS = {
 			"6520",
 			"6521"
 		],
-		"name": "Trick or Treat"
+		"name": "Trick or Treat",
+		"side_mission": null
 	},
 	"1267": {
+		"battleground_id": null,
 		"id": "1267",
 		"items": {
 			"3122": 0.2
@@ -4870,7 +5364,8 @@ var CAMPAIGNS = {
 			"6526",
 			"6527"
 		],
-		"name": "Beneath Skyhaven"
+		"name": "Beneath Skyhaven",
+		"side_mission": null
 	},
 	"1268": {
 		"battleground_id": "2107",
@@ -4887,7 +5382,8 @@ var CAMPAIGNS = {
 			"6532",
 			"6533"
 		],
-		"name": "Search for Dyrnwyn"
+		"name": "Search for Dyrnwyn",
+		"side_mission": null
 	},
 	"1269": {
 		"battleground_id": "2108",
@@ -4902,7 +5398,8 @@ var CAMPAIGNS = {
 			"6536",
 			"6537"
 		],
-		"name": "Arena Rematch"
+		"name": "Arena Rematch",
+		"side_mission": null
 	},
 	"1270": {
 		"battleground_id": "2109",
@@ -4919,7 +5416,8 @@ var CAMPAIGNS = {
 			"6542",
 			"6543"
 		],
-		"name": "Solaron's Domain"
+		"name": "Solaron's Domain",
+		"side_mission": null
 	},
 	"1271": {
 		"battleground_id": "2110",
@@ -4936,9 +5434,11 @@ var CAMPAIGNS = {
 			"6548",
 			"6549"
 		],
-		"name": "Aether Imbalance"
+		"name": "Aether Imbalance",
+		"side_mission": null
 	},
 	"1272": {
+		"battleground_id": null,
 		"id": "1272",
 		"items": {
 			"3125": 0.2
@@ -4952,7 +5452,8 @@ var CAMPAIGNS = {
 			"6554",
 			"6555"
 		],
-		"name": "A Monk's Sanity"
+		"name": "A Monk's Sanity",
+		"side_mission": null
 	},
 	"1273": {
 		"battleground_id": "2111",
@@ -4969,9 +5470,11 @@ var CAMPAIGNS = {
 			"6560",
 			"6561"
 		],
-		"name": "Battle for Skyhaven"
+		"name": "Battle for Skyhaven",
+		"side_mission": null
 	},
 	"1274": {
+		"battleground_id": null,
 		"id": "1274",
 		"items": {
 			"3122": 0.2
@@ -4984,7 +5487,8 @@ var CAMPAIGNS = {
 			"6565",
 			"6566"
 		],
-		"name": "Tree Champion"
+		"name": "Tree Champion",
+		"side_mission": null
 	},
 	"1275": {
 		"battleground_id": "2112",
@@ -4999,7 +5503,8 @@ var CAMPAIGNS = {
 			"6569",
 			"6570"
 		],
-		"name": "Constructing Wyld"
+		"name": "Constructing Wyld",
+		"side_mission": null
 	},
 	"1276": {
 		"battleground_id": "2113",
@@ -5016,7 +5521,8 @@ var CAMPAIGNS = {
 			"6575",
 			"6576"
 		],
-		"name": "Wyld Power Coil"
+		"name": "Wyld Power Coil",
+		"side_mission": null
 	},
 	"1277": {
 		"battleground_id": "2114",
@@ -5033,9 +5539,11 @@ var CAMPAIGNS = {
 			"6581",
 			"6582"
 		],
-		"name": "New Hope"
+		"name": "New Hope",
+		"side_mission": null
 	},
 	"1278": {
+		"battleground_id": null,
 		"id": "1278",
 		"items": {
 			"3128": 0.2
@@ -5049,7 +5557,8 @@ var CAMPAIGNS = {
 			"6587",
 			"6588"
 		],
-		"name": "World Conflux"
+		"name": "World Conflux",
+		"side_mission": null
 	},
 	"1279": {
 		"battleground_id": "2115",
@@ -5066,7 +5575,8 @@ var CAMPAIGNS = {
 			"6593",
 			"6594"
 		],
-		"name": "Dyrnwyn's Judgement"
+		"name": "Dyrnwyn's Judgement",
+		"side_mission": null
 	},
 	"1280": {
 		"battleground_id": "2116",
@@ -5081,7 +5591,8 @@ var CAMPAIGNS = {
 			"6597",
 			"6598"
 		],
-		"name": "Faction Weakness Awakening"
+		"name": "Faction Weakness Awakening",
+		"side_mission": null
 	},
 	"1281": {
 		"battleground_id": "546",
@@ -5098,7 +5609,8 @@ var CAMPAIGNS = {
 			"6622",
 			"6623"
 		],
-		"name": "Revenge of the Commons!"
+		"name": "Revenge of the Commons!",
+		"side_mission": null
 	},
 	"1282": {
 		"battleground_id": "546",
@@ -5115,7 +5627,8 @@ var CAMPAIGNS = {
 			"6628",
 			"6629"
 		],
-		"name": "The Legends Come To Take Their Place!"
+		"name": "The Legends Come To Take Their Place!",
+		"side_mission": null
 	},
 	"1283": {
 		"battleground_id": "135",
@@ -5132,7 +5645,8 @@ var CAMPAIGNS = {
 			"6616",
 			"6617"
 		],
-		"name": "Director's Cut"
+		"name": "Director's Cut",
+		"side_mission": null
 	},
 	"1284": {
 		"battleground_id": "2117",
@@ -5149,7 +5663,8 @@ var CAMPAIGNS = {
 			"6603",
 			"6604"
 		],
-		"name": "Titan Conflux"
+		"name": "Titan Conflux",
+		"side_mission": null
 	},
 	"1285": {
 		"battleground_id": "2118",
@@ -5166,9 +5681,11 @@ var CAMPAIGNS = {
 			"6609",
 			"6610"
 		],
-		"name": "Spellstone's End"
+		"name": "Spellstone's End",
+		"side_mission": null
 	},
 	"1286": {
+		"battleground_id": null,
 		"id": "1286",
 		"items": {
 			"3083": 0.4
@@ -5182,7 +5699,8 @@ var CAMPAIGNS = {
 			"6634",
 			"6635"
 		],
-		"name": "A Trip to Tarragon Peak"
+		"name": "A Trip to Tarragon Peak",
+		"side_mission": null
 	},
 	"1287": {
 		"battleground_id": "2053",
@@ -5199,9 +5717,11 @@ var CAMPAIGNS = {
 			"6640",
 			"6641"
 		],
-		"name": "Relaxation by Incineration"
+		"name": "Relaxation by Incineration",
+		"side_mission": null
 	},
 	"1288": {
+		"battleground_id": null,
 		"id": "1288",
 		"items": {
 			"3056": 0.6
@@ -5215,7 +5735,8 @@ var CAMPAIGNS = {
 			"6646",
 			"6647"
 		],
-		"name": "Deep in Trouble"
+		"name": "Deep in Trouble",
+		"side_mission": null
 	},
 	"1289": {
 		"battleground_id": "2053",
@@ -5232,7 +5753,8 @@ var CAMPAIGNS = {
 			"6652",
 			"6653"
 		],
-		"name": "The Swarm Thickens"
+		"name": "The Swarm Thickens",
+		"side_mission": null
 	},
 	"1290": {
 		"battleground_id": "2053",
@@ -5249,7 +5771,8 @@ var CAMPAIGNS = {
 			"6658",
 			"6659"
 		],
-		"name": "Surprise Goblin Plot"
+		"name": "Surprise Goblin Plot",
+		"side_mission": null
 	},
 	"1291": {
 		"battleground_id": "2053",
@@ -5266,7 +5789,8 @@ var CAMPAIGNS = {
 			"6664",
 			"6665"
 		],
-		"name": "Ain't Nobody wants to Thwart This"
+		"name": "Ain't Nobody wants to Thwart This",
+		"side_mission": null
 	},
 	"1292": {
 		"battleground_id": "2053",
@@ -5283,7 +5807,8 @@ var CAMPAIGNS = {
 			"6670",
 			"6671"
 		],
-		"name": "The Stars are Left"
+		"name": "The Stars are Left",
+		"side_mission": null
 	},
 	"1293": {
 		"battleground_id": "2053",
@@ -5300,7 +5825,8 @@ var CAMPAIGNS = {
 			"6676",
 			"6677"
 		],
-		"name": "A not so Unexpected Journey"
+		"name": "A not so Unexpected Journey",
+		"side_mission": null
 	},
 	"1294": {
 		"battleground_id": "2048",
@@ -5317,7 +5843,8 @@ var CAMPAIGNS = {
 			"6682",
 			"6683"
 		],
-		"name": "Questing for Rest and Peace"
+		"name": "Questing for Rest and Peace",
+		"side_mission": null
 	},
 	"1295": {
 		"battleground_id": "2048",
@@ -5334,9 +5861,11 @@ var CAMPAIGNS = {
 			"6688",
 			"6689"
 		],
-		"name": "Undying Conflicts"
+		"name": "Undying Conflicts",
+		"side_mission": null
 	},
 	"1296": {
+		"battleground_id": null,
 		"id": "1296",
 		"items": {
 			"3059": 0.6
@@ -5350,7 +5879,8 @@ var CAMPAIGNS = {
 			"6694",
 			"6695"
 		],
-		"name": "Bureaucra-Sea"
+		"name": "Bureaucra-Sea",
+		"side_mission": null
 	},
 	"1297": {
 		"battleground_id": "2019",
@@ -5367,7 +5897,8 @@ var CAMPAIGNS = {
 			"6700",
 			"6701"
 		],
-		"name": "Ranger of the Cute"
+		"name": "Ranger of the Cute",
+		"side_mission": null
 	},
 	"1298": {
 		"battleground_id": "547",
@@ -5382,9 +5913,11 @@ var CAMPAIGNS = {
 			"6706",
 			"6707"
 		],
-		"name": "Spellstone's 6th Anniversary"
+		"name": "Spellstone's 6th Anniversary",
+		"side_mission": null
 	},
 	"1299": {
+		"battleground_id": null,
 		"id": "1299",
 		"items": {
 			"3068": 0.6
@@ -5398,7 +5931,8 @@ var CAMPAIGNS = {
 			"6712",
 			"6713"
 		],
-		"name": "The High Journey"
+		"name": "The High Journey",
+		"side_mission": null
 	},
 	"1300": {
 		"battleground_id": "2019",
@@ -5415,9 +5949,11 @@ var CAMPAIGNS = {
 			"6718",
 			"6719"
 		],
-		"name": "Winged Conspiracy"
+		"name": "Winged Conspiracy",
+		"side_mission": null
 	},
 	"1301": {
+		"battleground_id": null,
 		"id": "1301",
 		"items": {
 			"3062": 0.6
@@ -5431,7 +5967,8 @@ var CAMPAIGNS = {
 			"6724",
 			"6725"
 		],
-		"name": "Wrong turn"
+		"name": "Wrong turn",
+		"side_mission": null
 	},
 	"1302": {
 		"battleground_id": "2019",
@@ -5448,9 +5985,11 @@ var CAMPAIGNS = {
 			"6730",
 			"6731"
 		],
-		"name": "Fireshards way of fun"
+		"name": "Fireshards way of fun",
+		"side_mission": null
 	},
 	"1303": {
+		"battleground_id": null,
 		"id": "1303",
 		"items": {
 			"3062": 0.2
@@ -5461,9 +6000,11 @@ var CAMPAIGNS = {
 			"6733",
 			"6734"
 		],
-		"name": "False Halloween?"
+		"name": "False Halloween?",
+		"side_mission": null
 	},
 	"1304": {
+		"battleground_id": null,
 		"id": "1304",
 		"items": {
 			"3110": 0.6
@@ -5477,7 +6018,8 @@ var CAMPAIGNS = {
 			"6740",
 			"6741"
 		],
-		"name": "Frog Society"
+		"name": "Frog Society",
+		"side_mission": null
 	},
 	"1305": {
 		"battleground_id": "2019",
@@ -5494,9 +6036,11 @@ var CAMPAIGNS = {
 			"6746",
 			"6747"
 		],
-		"name": "Froggsters"
+		"name": "Froggsters",
+		"side_mission": null
 	},
 	"1306": {
+		"battleground_id": null,
 		"id": "1306",
 		"items": {
 			"3110": 0.2
@@ -5509,9 +6053,11 @@ var CAMPAIGNS = {
 			"6751",
 			"6752"
 		],
-		"name": "Tree Champion"
+		"name": "Tree Champion",
+		"side_mission": null
 	},
 	"1307": {
+		"battleground_id": null,
 		"id": "1307",
 		"items": {
 			"3104": 0.6
@@ -5525,7 +6071,8 @@ var CAMPAIGNS = {
 			"6757",
 			"6758"
 		],
-		"name": "Goblinball"
+		"name": "Goblinball",
+		"side_mission": null
 	},
 	"1308": {
 		"battleground_id": "2019",
@@ -5542,9 +6089,11 @@ var CAMPAIGNS = {
 			"6763",
 			"6764"
 		],
-		"name": "Why can't we be friends?"
+		"name": "Why can't we be friends?",
+		"side_mission": null
 	},
 	"1309": {
+		"battleground_id": null,
 		"id": "1309",
 		"items": {
 			"3098": 0.6
@@ -5558,7 +6107,8 @@ var CAMPAIGNS = {
 			"6769",
 			"6770"
 		],
-		"name": "I hate portals"
+		"name": "I hate portals",
+		"side_mission": null
 	},
 	"1310": {
 		"battleground_id": "2019",
@@ -5575,9 +6125,11 @@ var CAMPAIGNS = {
 			"6775",
 			"6776"
 		],
-		"name": "Elemental Enemies"
+		"name": "Elemental Enemies",
+		"side_mission": null
 	},
 	"1311": {
+		"battleground_id": null,
 		"id": "1311",
 		"items": {
 			"3101": 0.6
@@ -5591,7 +6143,8 @@ var CAMPAIGNS = {
 			"6781",
 			"6782"
 		],
-		"name": "Shipwreck"
+		"name": "Shipwreck",
+		"side_mission": null
 	},
 	"1312": {
 		"battleground_id": "2019",
@@ -5608,9 +6161,11 @@ var CAMPAIGNS = {
 			"6787",
 			"6788"
 		],
-		"name": "One shell of a place"
+		"name": "One shell of a place",
+		"side_mission": null
 	},
 	"1313": {
+		"battleground_id": null,
 		"id": "1313",
 		"items": {
 			"3119": 0.6
@@ -5624,7 +6179,8 @@ var CAMPAIGNS = {
 			"6799",
 			"6800"
 		],
-		"name": "Taking a break"
+		"name": "Taking a break",
+		"side_mission": null
 	},
 	"1314": {
 		"battleground_id": "2019",
@@ -5641,7 +6197,8 @@ var CAMPAIGNS = {
 			"6805",
 			"6806"
 		],
-		"name": "Exploring Tarragon peak"
+		"name": "Exploring Tarragon peak",
+		"side_mission": null
 	},
 	"1315": {
 		"battleground_id": "546",
@@ -5658,9 +6215,11 @@ var CAMPAIGNS = {
 			"6793",
 			"6794"
 		],
-		"name": "Return of the Commons!"
+		"name": "Return of the Commons!",
+		"side_mission": null
 	},
 	"1316": {
+		"battleground_id": null,
 		"id": "1316",
 		"items": {
 			"3107": 0.6
@@ -5674,7 +6233,8 @@ var CAMPAIGNS = {
 			"6817",
 			"6818"
 		],
-		"name": "The Abduction"
+		"name": "The Abduction",
+		"side_mission": null
 	},
 	"1317": {
 		"battleground_id": "2019",
@@ -5691,9 +6251,11 @@ var CAMPAIGNS = {
 			"6823",
 			"6824"
 		],
-		"name": "On the hunt"
+		"name": "On the hunt",
+		"side_mission": null
 	},
 	"1318": {
+		"battleground_id": null,
 		"id": "1318",
 		"items": {
 			"3049": 0.6
@@ -5707,7 +6269,8 @@ var CAMPAIGNS = {
 			"6835",
 			"6836"
 		],
-		"name": "Misleading a menace"
+		"name": "Misleading a menace",
+		"side_mission": null
 	},
 	"1319": {
 		"battleground_id": "2019",
@@ -5724,9 +6287,11 @@ var CAMPAIGNS = {
 			"6841",
 			"6842"
 		],
-		"name": "The hunter has become the hunted"
+		"name": "The hunter has become the hunted",
+		"side_mission": null
 	},
 	"1320": {
+		"battleground_id": null,
 		"id": "1320",
 		"items": {
 			"3074": 0.6
@@ -5740,7 +6305,8 @@ var CAMPAIGNS = {
 			"6853",
 			"6854"
 		],
-		"name": "Call to adventure"
+		"name": "Call to adventure",
+		"side_mission": null
 	},
 	"1321": {
 		"battleground_id": "2019",
@@ -5757,9 +6323,11 @@ var CAMPAIGNS = {
 			"6859",
 			"6860"
 		],
-		"name": "In deep danger"
+		"name": "In deep danger",
+		"side_mission": null
 	},
 	"1322": {
+		"battleground_id": null,
 		"id": "1322",
 		"items": {
 			"3089": 0.6
@@ -5773,7 +6341,8 @@ var CAMPAIGNS = {
 			"6871",
 			"6872"
 		],
-		"name": "Search Mission"
+		"name": "Search Mission",
+		"side_mission": null
 	},
 	"1323": {
 		"battleground_id": "2019",
@@ -5790,9 +6359,11 @@ var CAMPAIGNS = {
 			"6877",
 			"6878"
 		],
-		"name": "A helping hand"
+		"name": "A helping hand",
+		"side_mission": null
 	},
 	"1324": {
+		"battleground_id": null,
 		"id": "1324",
 		"items": {
 			"3125": 0.6
@@ -5806,7 +6377,8 @@ var CAMPAIGNS = {
 			"6889",
 			"6890"
 		],
-		"name": "Attack on Skyhaven"
+		"name": "Attack on Skyhaven",
+		"side_mission": null
 	},
 	"1325": {
 		"battleground_id": "2019",
@@ -5823,9 +6395,11 @@ var CAMPAIGNS = {
 			"6895",
 			"6896"
 		],
-		"name": "Throne Room"
+		"name": "Throne Room",
+		"side_mission": null
 	},
 	"1326": {
+		"battleground_id": null,
 		"id": "1326",
 		"items": {
 			"3053": 0.6
@@ -5839,7 +6413,8 @@ var CAMPAIGNS = {
 			"6907",
 			"6908"
 		],
-		"name": "Old Friend"
+		"name": "Old Friend",
+		"side_mission": null
 	},
 	"1327": {
 		"battleground_id": "2019",
@@ -5856,7 +6431,8 @@ var CAMPAIGNS = {
 			"6913",
 			"6914"
 		],
-		"name": "Battling the Void"
+		"name": "Battling the Void",
+		"side_mission": null
 	},
 	"1328": {
 		"battleground_id": "547",
@@ -5872,9 +6448,11 @@ var CAMPAIGNS = {
 			"6920",
 			"6921"
 		],
-		"name": "Spellstone's 7th Anniversary"
+		"name": "Spellstone's 7th Anniversary",
+		"side_mission": null
 	},
 	"1329": {
+		"battleground_id": null,
 		"id": "1329",
 		"items": {
 			"3095": 0.6
@@ -5888,7 +6466,8 @@ var CAMPAIGNS = {
 			"6932",
 			"6933"
 		],
-		"name": "Tracking a Trickster"
+		"name": "Tracking a Trickster",
+		"side_mission": null
 	},
 	"1330": {
 		"battleground_id": "2019",
@@ -5905,9 +6484,11 @@ var CAMPAIGNS = {
 			"6938",
 			"6939"
 		],
-		"name": "The Void Channeler"
+		"name": "The Void Channeler",
+		"side_mission": null
 	},
 	"1331": {
+		"battleground_id": null,
 		"id": "1331",
 		"items": {
 			"3095": 0.2
@@ -5918,9 +6499,11 @@ var CAMPAIGNS = {
 			"6947",
 			"6948"
 		],
-		"name": "False Halloween?"
+		"name": "False Halloween?",
+		"side_mission": null
 	},
 	"1332": {
+		"battleground_id": null,
 		"id": "1332",
 		"items": {
 			"2522": 0.04,
@@ -5935,7 +6518,8 @@ var CAMPAIGNS = {
 			"6953",
 			"6954"
 		],
-		"name": "Pirate Hunting"
+		"name": "Pirate Hunting",
+		"side_mission": null
 	},
 	"1333": {
 		"battleground_id": "2019",
@@ -5953,9 +6537,11 @@ var CAMPAIGNS = {
 			"6959",
 			"6960"
 		],
-		"name": "No mans land"
+		"name": "No mans land",
+		"side_mission": null
 	},
 	"1334": {
+		"battleground_id": null,
 		"id": "1334",
 		"items": {
 			"3077": 0.6
@@ -5969,7 +6555,8 @@ var CAMPAIGNS = {
 			"6971",
 			"6972"
 		],
-		"name": "Void Activity"
+		"name": "Void Activity",
+		"side_mission": null
 	},
 	"1335": {
 		"battleground_id": "2019",
@@ -5986,9 +6573,11 @@ var CAMPAIGNS = {
 			"6977",
 			"6978"
 		],
-		"name": "The Teleporter"
+		"name": "The Teleporter",
+		"side_mission": null
 	},
 	"1336": {
+		"battleground_id": null,
 		"id": "1336",
 		"items": {
 			"3110": 0.2
@@ -6001,9 +6590,11 @@ var CAMPAIGNS = {
 			"6982",
 			"6983"
 		],
-		"name": "Tree Champion"
+		"name": "Tree Champion",
+		"side_mission": null
 	},
 	"1337": {
+		"battleground_id": null,
 		"id": "1337",
 		"items": {
 			"3053": 0.6
@@ -6017,7 +6608,8 @@ var CAMPAIGNS = {
 			"6994",
 			"6995"
 		],
-		"name": "The Menace Returns!"
+		"name": "The Menace Returns!",
+		"side_mission": null
 	},
 	"1338": {
 		"battleground_id": "2019",
@@ -6034,9 +6626,11 @@ var CAMPAIGNS = {
 			"7000",
 			"7001"
 		],
-		"name": "The Colossus"
+		"name": "The Colossus",
+		"side_mission": null
 	},
 	"1339": {
+		"battleground_id": null,
 		"id": "1339",
 		"items": {
 			"3056": 0.6
@@ -6050,7 +6644,8 @@ var CAMPAIGNS = {
 			"7012",
 			"7013"
 		],
-		"name": "Gossip about a Hero"
+		"name": "Gossip about a Hero",
+		"side_mission": null
 	},
 	"1340": {
 		"battleground_id": "2053",
@@ -6067,9 +6662,11 @@ var CAMPAIGNS = {
 			"7018",
 			"7019"
 		],
-		"name": "Unmasking the False Hero"
+		"name": "Unmasking the False Hero",
+		"side_mission": null
 	},
 	"1341": {
+		"battleground_id": null,
 		"id": "1341",
 		"items": {
 			"3083": 0.6
@@ -6083,7 +6680,8 @@ var CAMPAIGNS = {
 			"7030",
 			"7031"
 		],
-		"name": "Just rumors?"
+		"name": "Just rumors?",
+		"side_mission": null
 	},
 	"1342": {
 		"battleground_id": "2053",
@@ -6100,9 +6698,11 @@ var CAMPAIGNS = {
 			"7036",
 			"7037"
 		],
-		"name": "Fire Fruits"
+		"name": "Fire Fruits",
+		"side_mission": null
 	},
 	"1343": {
+		"battleground_id": null,
 		"id": "1343",
 		"items": {
 			"3095": 0.6
@@ -6116,7 +6716,8 @@ var CAMPAIGNS = {
 			"7048",
 			"7049"
 		],
-		"name": "In the search of the Lost Tribe"
+		"name": "In the search of the Lost Tribe",
+		"side_mission": null
 	},
 	"1344": {
 		"battleground_id": "2053",
@@ -6133,9 +6734,11 @@ var CAMPAIGNS = {
 			"7054",
 			"7055"
 		],
-		"name": "After the storm, comes the calm?"
+		"name": "After the storm, comes the calm?",
+		"side_mission": null
 	},
 	"1345": {
+		"battleground_id": null,
 		"id": "1345",
 		"items": {
 			"3122": 0.6
@@ -6149,7 +6752,8 @@ var CAMPAIGNS = {
 			"7066",
 			"7067"
 		],
-		"name": "Looking for glory"
+		"name": "Looking for glory",
+		"side_mission": null
 	},
 	"1346": {
 		"battleground_id": "2053",
@@ -6166,9 +6770,11 @@ var CAMPAIGNS = {
 			"7072",
 			"7073"
 		],
-		"name": "The Betrayal"
+		"name": "The Betrayal",
+		"side_mission": null
 	},
 	"1347": {
+		"battleground_id": null,
 		"id": "1347",
 		"items": {
 			"3101": 0.6
@@ -6182,7 +6788,8 @@ var CAMPAIGNS = {
 			"7084",
 			"7085"
 		],
-		"name": "Into the chaos"
+		"name": "Into the chaos",
+		"side_mission": null
 	},
 	"1348": {
 		"battleground_id": "2019",
@@ -6199,9 +6806,11 @@ var CAMPAIGNS = {
 			"7090",
 			"7091"
 		],
-		"name": "Crazy chainsaws"
+		"name": "Crazy chainsaws",
+		"side_mission": null
 	},
 	"3000": {
+		"battleground_id": null,
 		"id": "3000",
 		"items": {},
 		"location_id": "1",
@@ -6215,6 +6824,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3001": {
+		"battleground_id": null,
 		"id": "3001",
 		"items": {},
 		"location_id": "2",
@@ -6228,6 +6838,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3002": {
+		"battleground_id": null,
 		"id": "3002",
 		"items": {},
 		"location_id": "3",
@@ -6241,6 +6852,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3003": {
+		"battleground_id": null,
 		"id": "3003",
 		"items": {},
 		"location_id": "0",
@@ -6256,6 +6868,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3004": {
+		"battleground_id": null,
 		"id": "3004",
 		"items": {},
 		"location_id": "0",
@@ -6271,6 +6884,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3005": {
+		"battleground_id": null,
 		"id": "3005",
 		"items": {},
 		"location_id": "0",
@@ -6286,6 +6900,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3006": {
+		"battleground_id": null,
 		"id": "3006",
 		"items": {},
 		"location_id": "0",
@@ -6301,6 +6916,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3007": {
+		"battleground_id": null,
 		"id": "3007",
 		"items": {},
 		"location_id": "0",
@@ -6316,6 +6932,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3008": {
+		"battleground_id": null,
 		"id": "3008",
 		"items": {},
 		"location_id": "0",
@@ -6359,6 +6976,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"3011": {
+		"battleground_id": null,
 		"id": "3011",
 		"items": {
 			"3062": 0.2
@@ -6372,7 +6990,8 @@ var CAMPAIGNS = {
 			"1552",
 			"1553"
 		],
-		"name": "Tinman's Change of Heart"
+		"name": "Tinman's Change of Heart",
+		"side_mission": null
 	},
 	"3012": {
 		"battleground_id": "2049",
@@ -6417,6 +7036,7 @@ var CAMPAIGNS = {
 		"side_mission": "1"
 	},
 	"4001": {
+		"battleground_id": null,
 		"id": "4001",
 		"items": {
 			"3119": 0.4
@@ -6430,9 +7050,11 @@ var CAMPAIGNS = {
 			"6811",
 			"6812"
 		],
-		"name": "Lightning Vulcanos"
+		"name": "Lightning Vulcanos",
+		"side_mission": null
 	},
 	"4002": {
+		"battleground_id": null,
 		"id": "4002",
 		"items": {
 			"3107": 0.6
@@ -6446,9 +7068,11 @@ var CAMPAIGNS = {
 			"6829",
 			"6830"
 		],
-		"name": "Lightning Alyel"
+		"name": "Lightning Alyel",
+		"side_mission": null
 	},
 	"4003": {
+		"battleground_id": null,
 		"id": "4003",
 		"items": {
 			"3049": 0.6
@@ -6462,9 +7086,11 @@ var CAMPAIGNS = {
 			"6847",
 			"6848"
 		],
-		"name": "Lightning Ashanti"
+		"name": "Lightning Ashanti",
+		"side_mission": null
 	},
 	"4004": {
+		"battleground_id": null,
 		"id": "4004",
 		"items": {
 			"3074": 0.6
@@ -6478,9 +7104,11 @@ var CAMPAIGNS = {
 			"6865",
 			"6866"
 		],
-		"name": "Lightning Nophora"
+		"name": "Lightning Nophora",
+		"side_mission": null
 	},
 	"4005": {
+		"battleground_id": null,
 		"id": "4005",
 		"items": {
 			"3089": 0.6
@@ -6494,9 +7122,11 @@ var CAMPAIGNS = {
 			"6883",
 			"6884"
 		],
-		"name": "Lightning Llorona"
+		"name": "Lightning Llorona",
+		"side_mission": null
 	},
 	"4006": {
+		"battleground_id": null,
 		"id": "4006",
 		"items": {
 			"3125": 0.6
@@ -6510,9 +7140,11 @@ var CAMPAIGNS = {
 			"6901",
 			"6902"
 		],
-		"name": "Lightning Caesar"
+		"name": "Lightning Caesar",
+		"side_mission": null
 	},
 	"4007": {
+		"battleground_id": null,
 		"id": "4007",
 		"items": {
 			"3053": 0.6
@@ -6526,9 +7158,11 @@ var CAMPAIGNS = {
 			"6926",
 			"6927"
 		],
-		"name": "Lightning Remi"
+		"name": "Lightning Remi",
+		"side_mission": null
 	},
 	"4008": {
+		"battleground_id": null,
 		"id": "4008",
 		"items": {
 			"3095": 0.6
@@ -6542,9 +7176,11 @@ var CAMPAIGNS = {
 			"6944",
 			"6945"
 		],
-		"name": "Lightning Darkassan"
+		"name": "Lightning Darkassan",
+		"side_mission": null
 	},
 	"4009": {
+		"battleground_id": null,
 		"id": "4009",
 		"items": {
 			"2522": 0.04,
@@ -6559,9 +7195,11 @@ var CAMPAIGNS = {
 			"6965",
 			"6966"
 		],
-		"name": "Lightning Lerna"
+		"name": "Lightning Lerna",
+		"side_mission": null
 	},
 	"4010": {
+		"battleground_id": null,
 		"id": "4010",
 		"items": {
 			"3077": 0.6
@@ -6575,9 +7213,11 @@ var CAMPAIGNS = {
 			"6988",
 			"6989"
 		],
-		"name": "Lightning Krampus"
+		"name": "Lightning Krampus",
+		"side_mission": null
 	},
 	"4011": {
+		"battleground_id": null,
 		"id": "4011",
 		"items": {
 			"3053": 0.6
@@ -6591,9 +7231,11 @@ var CAMPAIGNS = {
 			"7006",
 			"7007"
 		],
-		"name": "Lightning Allies"
+		"name": "Lightning Allies",
+		"side_mission": null
 	},
 	"4012": {
+		"battleground_id": null,
 		"id": "4012",
 		"items": {
 			"3056": 0.6
@@ -6607,9 +7249,11 @@ var CAMPAIGNS = {
 			"7024",
 			"7025"
 		],
-		"name": "Lightning Nophora"
+		"name": "Lightning Nophora",
+		"side_mission": null
 	},
 	"4013": {
+		"battleground_id": null,
 		"id": "4013",
 		"items": {
 			"3083": 0.6
@@ -6623,9 +7267,11 @@ var CAMPAIGNS = {
 			"7042",
 			"7043"
 		],
-		"name": "Lightning Vulcanos Payback"
+		"name": "Lightning Vulcanos Payback",
+		"side_mission": null
 	},
 	"4014": {
+		"battleground_id": null,
 		"id": "4014",
 		"items": {
 			"3095": 0.6
@@ -6639,9 +7285,11 @@ var CAMPAIGNS = {
 			"7060",
 			"7061"
 		],
-		"name": "Lightning Return of Caesar"
+		"name": "Lightning Return of Caesar",
+		"side_mission": null
 	},
 	"4015": {
+		"battleground_id": null,
 		"id": "4015",
 		"items": {
 			"3122": 0.6
@@ -6655,9 +7303,11 @@ var CAMPAIGNS = {
 			"7078",
 			"7079"
 		],
-		"name": "Lightning Boss Ashanti Trial"
+		"name": "Lightning Boss Ashanti Trial",
+		"side_mission": null
 	},
 	"4016": {
+		"battleground_id": null,
 		"id": "4016",
 		"items": {
 			"3101": 0.6
@@ -6671,7 +7321,8 @@ var CAMPAIGNS = {
 			"7096",
 			"7097"
 		],
-		"name": "Lightning Boss Llorona Reborn"
+		"name": "Lightning Boss Llorona Reborn",
+		"side_mission": null
 	}
 };
 var MISSIONS = {
@@ -6818,8 +7469,7 @@ var MISSIONS = {
 	},
 	"14": {
 		"commander": {
-			"id": "200",
-			"level": "1"
+			"id": "200"
 		},
 		"deck": [
 			{
@@ -7680,8 +8330,7 @@ var MISSIONS = {
 	},
 	"63": {
 		"commander": {
-			"id": "200",
-			"level": "2"
+			"id": "200"
 		},
 		"deck": [
 			{
@@ -8354,8 +9003,7 @@ var MISSIONS = {
 	},
 	"103": {
 		"commander": {
-			"id": "2",
-			"level": "2"
+			"id": "2"
 		},
 		"deck": [
 			{
@@ -8437,8 +9085,7 @@ var MISSIONS = {
 	},
 	"111": {
 		"commander": {
-			"id": "2",
-			"level": "2"
+			"id": "2"
 		},
 		"deck": [
 			{
@@ -8562,8 +9209,7 @@ var MISSIONS = {
 	},
 	"114": {
 		"commander": {
-			"id": "2",
-			"level": "2"
+			"id": "2"
 		},
 		"deck": [
 			{
@@ -8603,8 +9249,7 @@ var MISSIONS = {
 	},
 	"121": {
 		"commander": {
-			"id": "203",
-			"level": "3"
+			"id": "203"
 		},
 		"deck": [
 			{
@@ -8643,8 +9288,7 @@ var MISSIONS = {
 	},
 	"122": {
 		"commander": {
-			"id": "203",
-			"level": "2"
+			"id": "203"
 		},
 		"deck": [
 			{
@@ -8685,8 +9329,7 @@ var MISSIONS = {
 	},
 	"123": {
 		"commander": {
-			"id": "218",
-			"level": "2"
+			"id": "218"
 		},
 		"deck": [
 			{
@@ -8969,8 +9612,7 @@ var MISSIONS = {
 	},
 	"142": {
 		"commander": {
-			"id": "210",
-			"level": "2"
+			"id": "210"
 		},
 		"deck": [
 			{
@@ -9048,8 +9690,7 @@ var MISSIONS = {
 	},
 	"144": {
 		"commander": {
-			"id": "231",
-			"level": "2"
+			"id": "231"
 		},
 		"deck": [
 			{
@@ -9088,8 +9729,7 @@ var MISSIONS = {
 	},
 	"151": {
 		"commander": {
-			"id": "5",
-			"level": "2"
+			"id": "5"
 		},
 		"deck": [
 			{
@@ -9128,8 +9768,7 @@ var MISSIONS = {
 	},
 	"152": {
 		"commander": {
-			"id": "5",
-			"level": "2"
+			"id": "5"
 		},
 		"deck": [
 			{
@@ -9168,8 +9807,7 @@ var MISSIONS = {
 	},
 	"153": {
 		"commander": {
-			"id": "206",
-			"level": "2"
+			"id": "206"
 		},
 		"deck": [
 			{
@@ -9276,8 +9914,7 @@ var MISSIONS = {
 	},
 	"162": {
 		"commander": {
-			"id": "231",
-			"level": "2"
+			"id": "231"
 		},
 		"deck": [
 			{
@@ -9316,8 +9953,7 @@ var MISSIONS = {
 	},
 	"163": {
 		"commander": {
-			"id": "206",
-			"level": "2"
+			"id": "206"
 		},
 		"deck": [
 			{
@@ -9395,8 +10031,7 @@ var MISSIONS = {
 	},
 	"171": {
 		"commander": {
-			"id": "206",
-			"level": "2"
+			"id": "206"
 		},
 		"deck": [
 			{
@@ -10025,8 +10660,7 @@ var MISSIONS = {
 	},
 	"211": {
 		"commander": {
-			"id": "220",
-			"level": "2"
+			"id": "220"
 		},
 		"deck": [
 			{
@@ -10066,8 +10700,7 @@ var MISSIONS = {
 	},
 	"212": {
 		"commander": {
-			"id": "220",
-			"level": "2"
+			"id": "220"
 		},
 		"deck": [
 			{
@@ -10184,8 +10817,7 @@ var MISSIONS = {
 	},
 	"221": {
 		"commander": {
-			"id": "210",
-			"level": "2"
+			"id": "210"
 		},
 		"deck": [
 			{
@@ -10224,8 +10856,7 @@ var MISSIONS = {
 	},
 	"222": {
 		"commander": {
-			"id": "210",
-			"level": "2"
+			"id": "210"
 		},
 		"deck": [
 			{
@@ -10264,8 +10895,7 @@ var MISSIONS = {
 	},
 	"223": {
 		"commander": {
-			"id": "210",
-			"level": "3"
+			"id": "210"
 		},
 		"deck": [
 			{
@@ -10304,8 +10934,7 @@ var MISSIONS = {
 	},
 	"224": {
 		"commander": {
-			"id": "210",
-			"level": "3"
+			"id": "210"
 		},
 		"deck": [
 			{
@@ -10422,8 +11051,7 @@ var MISSIONS = {
 	},
 	"233": {
 		"commander": {
-			"id": "2",
-			"level": "3"
+			"id": "2"
 		},
 		"deck": [
 			{
@@ -10462,8 +11090,7 @@ var MISSIONS = {
 	},
 	"234": {
 		"commander": {
-			"id": "2",
-			"level": "3"
+			"id": "2"
 		},
 		"deck": [
 			{
@@ -10499,8 +11126,7 @@ var MISSIONS = {
 	},
 	"241": {
 		"commander": {
-			"id": "3",
-			"level": "2"
+			"id": "3"
 		},
 		"deck": [
 			{
@@ -10539,8 +11165,7 @@ var MISSIONS = {
 	},
 	"242": {
 		"commander": {
-			"id": "3",
-			"level": "4"
+			"id": "3"
 		},
 		"deck": [
 			{
@@ -10576,8 +11201,7 @@ var MISSIONS = {
 	},
 	"243": {
 		"commander": {
-			"id": "3",
-			"level": "6"
+			"id": "3"
 		},
 		"deck": [
 			{
