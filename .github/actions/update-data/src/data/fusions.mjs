@@ -16,10 +16,10 @@ async function getFusionsJson() {
     rootNodes: ['fusion_recipe'],
     rawRootMaps: {
       fusion_recipe: function (element) {
-        var baseId = element.getChildren("resource").map(function (res) {
+        var baseId = element.resource.map(function (res) {
           var identity = res.getAttribute("card_id");
           return identity && identity.getValue();
-        }).find(identity_);
+        }).find(it => it);
         fusions[baseId] = element.getChildText("card_id");
       }
     }

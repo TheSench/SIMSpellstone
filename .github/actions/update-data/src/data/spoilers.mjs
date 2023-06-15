@@ -1,4 +1,3 @@
-import { getScriptFromGithub } from './data/getScriptFromGithub.mjs';
 import { stableStringify } from "./stableStringify.mjs";
 
 var spoilersJson;

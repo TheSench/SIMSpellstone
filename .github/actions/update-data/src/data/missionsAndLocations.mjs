@@ -16,7 +16,7 @@ export async function getCampaignJs() {
 }
 
 async function getLocationsJson() {
-  var locations = await makeAPICall("updateEvents").locations;
+  var locations = await makeAPICall("init").locations;
   for (var id in locations) {
     var location = locations[id];
     locations[id] = {

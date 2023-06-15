@@ -111,5 +111,5 @@ function xmlToJsonInner([nodeName, element], options, propName) {
 }
 
 export function convertedValue(name, originalValue, options) {
-  return (options.conversions[name] || identity_)(originalValue, options);
+  return (options.conversions[name] || (it => it))(originalValue, options);
 }

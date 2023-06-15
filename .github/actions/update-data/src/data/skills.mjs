@@ -1,4 +1,4 @@
-import { getScriptFromGithub } from './data/getScriptFromGithub.mjs';
+import { getScriptFromGithub } from './getScriptFromGithub.mjs';
 import { getJsonFromSynapse } from './getXmlFromSynapse.mjs';
 
 var skillSeedData = {

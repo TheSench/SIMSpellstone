@@ -6,5 +6,5 @@ const scriptDir = join(getRootDir(), './scripts/data/');
 
 export function getScriptFromGithub(scriptName) {
     const scriptPath = join(scriptDir, scriptName);
-    return readFileSync(scriptPath);
+    return readFileSync(scriptPath, 'utf8');
 }

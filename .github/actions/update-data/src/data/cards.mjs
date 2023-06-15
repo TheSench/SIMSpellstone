@@ -1,5 +1,5 @@
 import { addToMap } from "./helpers.mjs";
-import { getJsonFromSynapse } from "./getJsonFromSynapse.mjs";
+import { getJsonFromSynapse } from "./getXmlFromSynapse.mjs";
 
 var cardsJson;
 

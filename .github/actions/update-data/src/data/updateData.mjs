@@ -1,6 +1,6 @@
 import { getRunesJs } from './runes.mjs';
 import { getBgesJs } from './bges.mjs';
-import { getCampaignJs } from './data/campaign.mjs';
+import { getCampaignJs } from './missionsAndLocations.mjs';
 import { getFusionsJs } from './fusions.mjs';
 import { getMapBgesJs } from './mapBges.mjs';
 import { getSkillsJs } from './skills.mjs';
@@ -75,7 +75,7 @@ async function getXmlChanges() {
     'missions_event.xml',
     'passive_missions.xml',
     'tutorial1.xml'
-  ].map(getXmlChanges)))
+  ].map(getXmlChangesInner)))
     .filter(it => it !== null);
 }
 
@@ -93,6 +93,7 @@ async function compareFile(changes, scriptPath, scriptFunction, folder) {
   }
   var oldScript = getScriptFromGithub(scriptPath);
   var newScript = await scriptFunction();
+  writeFileSync(join(folder, scriptPath), newScript);
 
   if (oldScript !== newScript) {
     changes.push({
@@ -107,7 +108,7 @@ async function compareFile(changes, scriptPath, scriptFunction, folder) {
   }
 }
 
-async function getXmlChanges(xmlFile) {
+async function getXmlChangesInner(xmlFile) {
   var oldXml = getXmlFromGithub_(xmlFile);
   var newXml = await normalizeXml(xmlFile);
   if (oldXml !== newXml) {

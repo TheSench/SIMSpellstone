@@ -6,5 +6,6 @@ try {
   setRootDir(core.getInput('working-directory'));
   await updateData();
 } catch (error) {
+  console.error(error.message);
   core.setFailed(error.message);
 }

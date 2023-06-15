@@ -1,6 +1,7 @@
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 import { xmlDocToJson } from './xmlToJson.mjs';
+import { getRootDir } from '../../../common/rootDir.mjs';
 
 const xmlDir = join(getRootDir(), './cards/');
 

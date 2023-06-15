@@ -4,15 +4,16 @@ import { convertedValue } from "./xmlToJson.mjs";
 
 var runesJson;
 
-export function getRunesJs() {
-  runesJson = getRunesJson();
+export async function getRunesJs() {
+  runesJson = await getRunesJson();
   var jsFile = '"use strict"\n\n' +
     'var RUNES = ' + stableStringify(runesJson, null, '\t') + ';';
   return jsFile;
 }
 
 async function getRunesJson() {
-  var items = await makeAPICall("getStoreData").item_data;
+  var items = await makeAPICall("init");
+  items = items.item_data;
 
   var runes = {};
   for (var key in items) {

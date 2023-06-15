@@ -1,10 +1,15 @@
 import core from '@actions/core';
+import https from 'https';
+import { createHash } from 'crypto';
+import init from './initResponse.mjs';
 
 const user = core.getInput('spellstone-user');
 const password = core.getInput('spellstone-password');
 const salt = core.getInput('spellstone-salt');
 
-const responseCache = {};
+const responseCache = {
+    init
+};
 
 export async function makeAPICall(message) {
     console.time(`Calling API method: ${message}`);
@@ -24,30 +29,32 @@ function cacheResponse(message, response) {
 }
 
 async function makeAPICallInner(message) {
-    const client_time = Math.floor(Date.now() / 1000);
+    const client_time = Math.floor(Date.now() / 1000).toString();
     const client_signature = createHash('md5').update(client_time + password + salt).digest('hex');
-    const postData = querystring.stringify({
-        message: message,
-        user_id: user,
-        password: password,
+    const postData = Object.entries({
+        password,
         unity: 'Unity2020_3_42',
         platform: 'web',
         client_version: '70',
-        client_time: client_time,
-        client_signature: client_signature
-    });
+        client_time,
+        client_signature
+    }).map(([key, value]) =>
+        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+    ).join('&');
 
     const options = {
         hostname: 'spellstone.synapse-games.com',
         port: 443,
-        path: `/api.php?${postData}`,
+        path: `/api.php?message=${message}&user_id=${user}`,
+        postData,
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'User-Agent': 'Mozilla/5.0'
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0',
+            'Content-Length': postData.length
         }
     };
-    return new Promise((resolve, reject) => {
+    return await new Promise((resolve, reject) => {
         const request = https.request(options, function (response) {
             let data = '';
             response.on('data', chunk => {
@@ -63,6 +70,7 @@ async function makeAPICallInner(message) {
         request.on('error', error => {
             reject(error);
         });
+        request.write(postData);
         request.end();
     });
 }
