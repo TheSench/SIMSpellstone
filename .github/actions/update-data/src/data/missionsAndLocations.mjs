@@ -1,6 +1,7 @@
 import { addToMap } from './helpers.mjs';
 import { makeAPICall } from './spellstoneAPI.mjs';
 import { getJsonFromSynapse } from './getXmlFromSynapse.mjs';
+import { stableStringify } from './stableStringify.mjs';
 
 var campaignDataJson;
 
@@ -16,7 +17,7 @@ export async function getCampaignJs() {
 }
 
 async function getLocationsJson() {
-  var locations = await makeAPICall("init").locations;
+  var locations = (await makeAPICall("init")).locations;
   for (var id in locations) {
     var location = locations[id];
     locations[id] = {
@@ -45,6 +46,7 @@ async function getCampaignsJson() {
   };
   var options = {
     rootNodes: ['location', 'mission', 'campaign'],
+    arrayRoots: { 'find_item': 'find_item' },
     rawRootMaps: {
       location: addLocation(locations),
       campaign: addCampaign(campaigns),
@@ -64,19 +66,19 @@ async function getCampaignsJson() {
 
 function addMission(missions) {
   const addToMissions = addToMap(missions);
-  return function (element) {
+  return function ([name, element]) {
     addToMissions({
-      id: element.getChildText("id"),
-      name: element.getChildText("name"),
+      id: element.id,
+      name,
       commander: {
-        id: element.getChild("commander").getAttribute("id").getValue()
+        id: element.commander['@id']
       },
-      deck: element.getChild("deck").getChildren("card").map(function (card) {
-        const level = getAttributeValue(card, "level");
-        const mastery_level = getAttributeValue(card, "mastery_level");
-        const remove_mastery_level = getAttributeValue(card, "remove_mastery_level");
+      deck: element.deck.card.map(function (card) {
+        const level = card['@level'];
+        const mastery_level = card['@mastery_level'];
+        const remove_mastery_level = card['@remove_mastery_level'];
         const result = {
-          id: card.getAttribute("id").getValue()
+          id: card['@id']
         }
         if (level) result.level = level;
         if (mastery_level) result.mastery_level = mastery_level;
@@ -94,16 +96,16 @@ function getAttributeValue(element, name) {
 
 function addCampaign(campaigns) {
   var addToCampaigns = addToMap(campaigns);
-  return function (element) {
+  return function ([name, element]) {
     addToCampaigns({
-      id: element.getChildText('id'),
-      name: element.getChildText('name'),
-      location_id: element.getChildText('location_id'),
-      side_mission: element.getChildText('side_mission'),
-      battleground_id: element.getChildText('battleground_id'),
-      missions: element.getChild('missions').getChildren("mission_id").map(function (child) { return child.getText(); }),
-      items: element.getChildren('find_item').reduce(function (items, item) {
-        items[item.getAttribute("id").getValue()] = parseFloat(item.getAttribute("drop_per_energy").getValue());
+      id: element.id,
+      name,
+      location_id: element.location_id,
+      side_mission: element.side_mission,
+      battleground_id: element.battleground_id,
+      missions: element.missions.mission_id,
+      items: (element.find_item || []).reduce(function (items, item) {
+        items[item['@id']] = parseFloat(item['@drop_per_energy']);
         return items;
       }, {})
     });
@@ -114,8 +116,8 @@ function addLocation(locations) {
   var addToLocations = addToMap(locations);
   return function (element) {
     addToLocations({
-      id: element.getChildText("id"),
-      name: element.getChildText("name")
+      id: element.id,
+      name: element.name
     });
   }
 }

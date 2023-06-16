@@ -31,7 +31,7 @@ export async function getRaidsJs() {
 
 async function getRaidsJson() {
   var raid = null;
-  var events = await makeAPICall("init").upcoming_events;
+  var events = (await makeAPICall("init")).upcoming_events;
   var raids = {};
   for(var id in events) {
     var event = events[id];
@@ -40,7 +40,7 @@ async function getRaidsJson() {
       raids[raid.id] = raid;
     }
   }
-  var events = await makeAPICall("init").active_events;
+  var events = (await makeAPICall("init")).active_events;
   for(var id in events) {
     var event = events[id];
     if(event.type == 5 || event.type == 8) {

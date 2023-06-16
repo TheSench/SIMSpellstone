@@ -12,8 +12,7 @@ export async function getRunesJs() {
 }
 
 async function getRunesJson() {
-  var items = await makeAPICall("init");
-  items = items.item_data;
+  var items = (await makeAPICall("init")).item_data;
 
   var runes = {};
   for (var key in items) {
@@ -49,7 +48,8 @@ function convertRuneObject(object) {
             c: parseFloat,
             mult: parseFloat,
             min_bonus: parseFloat
-          }
+          },
+          arrayRoots: {}
         });
       }
     }

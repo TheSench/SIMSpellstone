@@ -1,5 +1,6 @@
 import { getScriptFromGithub } from './getScriptFromGithub.mjs';
 import { getJsonFromSynapse } from './getXmlFromSynapse.mjs';
+import { stableStringify } from './stableStringify.mjs';
 
 var skillSeedData = {
   "protect_seafolk": {
@@ -38,19 +39,19 @@ export async function getSkillsJs() {
 }
 
 async function getSkillsJson() {
-  var skills = await getJsonFromSynapse('cards_config.xml', {
-    rootNodes: ['skillType']
-  });
   var json = skillSeedData;
-  skills.forEach(function (skill) {
-    var id = skill.id;
-    if (skill.desc) {
-      json[skill.id] = {
-        desc: skill.desc,
-        icon: (iconRemappings[id] || skill.icon),
-        name: (skillRenames[id] || skill.name),
-        type: (skillTypes[id] || (skill.upkeep ? 'earlyActivation' : 'activation'))
-      };
+  await getJsonFromSynapse('cards_config.xml', {
+    rootNodes: ['skillType'],
+    rawRootMaps: {
+      skillType: function ([name, skill]) {
+        const id = skill['@id'];
+        json[id] = {
+          desc: skill.desc,
+          icon: (iconRemappings[id] || skill.icon),
+          name: (skillRenames[id] || skill.name),
+          type: (skillTypes[id] || (skill.upkeep ? 'earlyActivation' : 'activation'))
+        };
+      }
     }
   });
   return json;

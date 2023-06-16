@@ -13,9 +13,10 @@ export function xmlDocToJson(xml, options) {
   options.rawRootMaps = options.rawRootMaps || {};
 
   const parser = new XMLParser({
-    attributeNamePrefix: '',
+    attributeNamePrefix: '@',
+    ignoreAttributes: false,
     isArray:  function (name) {
-      return options.arrayRoots[name];
+      return options.arrayRoots[name] || (options.rootNodes && options.rootNodes[name]);
     }
   });
   const parsed = parser.parse(xml);
@@ -33,18 +34,19 @@ function arrayToMap(array) {
 function xmlRootsToJson(xml, options) {
   var rawRootMaps = options.rawRootMaps;
   var collection = [];
-  function addToCollection(element) {
+  function addToCollection([name, element],) {
     collection.push(xmlToJson([name, element], options));
   }
   Object.entries(xml).forEach(function ([name, element]) {
     if (!options.rootNodes || options.rootNodes[name]) {
-      (rawRootMaps[name] || addToCollection)(element);
+      element.forEach(entry => (rawRootMaps[name] || addToCollection)([name, entry]));
     }
   });
 
-  return convertedValue("root",
-    collection,
-    options);
+  return collection;
+  // return convertedValue("root",
+  //   collection,
+  //   options);
 }
 
 function xmlCollectionToJson(xml, options, propName) {
@@ -84,22 +86,6 @@ function xmlToJsonInner([nodeName, element], options, propName) {
     }
   });
 
-  xml.getChildren().forEach(function (element) {
-    var elName = element.getName();
-    if (!options.filteredProps[elName]) {
-      var savedAsName = (options.renames[elName] || elName);
-      if (options.arrayRoots[elName]) {
-        obj[elName] = xmlCollectionToJson(element, options, options.arrayRoots[elName]);
-      } else if (options.arrayProps[elName]) {
-        savedAsName = (options.arrayProps[elName] || savedAsName);
-        obj[savedAsName] = (obj[savedAsName] || []);
-        obj[savedAsName].push(xmlToJson(element, options));
-      } else {
-        obj[savedAsName] = xmlToJson(element, options);
-      }
-    }
-  });
-
   var calculatedProps = options.calculatedProps[nodeName];
   if (calculatedProps) {
     Object.keys(calculatedProps).forEach(function (prop) {
@@ -111,5 +97,11 @@ function xmlToJsonInner([nodeName, element], options, propName) {
 }
 
 export function convertedValue(name, originalValue, options) {
-  return (options.conversions[name] || (it => it))(originalValue, options);
+  return (options.conversions[name] || defaultConversion(name))(originalValue, options);
+}
+
+function defaultConversion(name) {
+  return function (originalValue, options) {
+    xmlToJsonInner([name, originalValue], options, options.arrayRoots[name]);
+  }
 }

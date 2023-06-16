@@ -1,4 +1,5 @@
 import { getScriptFromGithub } from './getScriptFromGithub.mjs';
+import { makeAPICall } from './spellstoneAPI.mjs';
 
 var newCommonJs;
 
@@ -24,13 +25,13 @@ export async function getCommonJs(otherChanges) {
 }
 
 function dataUpdatedLine() {
-  return Utilities.formatString('var DataUpdated = %s;', Date.now());
+  return `var DataUpdated = ${Date.now()};`;
 }
 
 async function getCurrentBges() {
   var currentBges = [];
   
-  var events = await makeAPICall("updateEvents").active_events;
+  var events = (await makeAPICall("updateEvents")).active_events;
   for(var id in events) {
     var effect = events[id].effect;
     if(effect && !effect.clash_only && !effect.guildwar_only) {

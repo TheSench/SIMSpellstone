@@ -1,15 +1,17 @@
-import { getRunesJs } from './runes.mjs';
+import { writeFileSync } from 'fs';
+import { join } from 'path';
 import { getBgesJs } from './bges.mjs';
-import { getCampaignJs } from './missionsAndLocations.mjs';
-import { getFusionsJs } from './fusions.mjs';
-import { getMapBgesJs } from './mapBges.mjs';
-import { getSkillsJs } from './skills.mjs';
 import { getCardsJs } from './cards.mjs';
-import { getSpoilersJs } from './spoilers.mjs';
-import { getRaidsJs } from './raids.mjs';
 import { getCommonJs } from './common.mjs';
+import { getFusionsJs } from './fusions.mjs';
+import { getScriptFromGithub, getXmlFromGithub } from './getScriptFromGithub.mjs';
 import { getXmlFromSynapse } from './getXmlFromSynapse.mjs';
-import { getScriptFromGithub } from './getScriptFromGithub.mjs';
+import { getMapBgesJs } from './mapBges.mjs';
+import { getCampaignJs } from './missionsAndLocations.mjs';
+import { getRaidsJs } from './raids.mjs';
+import { getRunesJs } from './runes.mjs';
+import { getSkillsJs } from './skills.mjs';
+import { getSpoilersJs } from './spoilers.mjs';
 
 export async function updateData() {
   const changes = [];
@@ -109,8 +111,8 @@ async function compareFile(changes, scriptPath, scriptFunction, folder) {
 }
 
 async function getXmlChangesInner(xmlFile) {
-  var oldXml = getXmlFromGithub_(xmlFile);
-  var newXml = await normalizeXml(xmlFile);
+  var oldXml = getXmlFromGithub(xmlFile);
+  var newXml = await getXmlFromSynapse(xmlFile);
   if (oldXml !== newXml) {
     return {
       folder: 'cards/',
@@ -120,9 +122,4 @@ async function getXmlChangesInner(xmlFile) {
   }
 
   return null;
-}
-
-async function normalizeXml(xmlFile) {
-  var xml = await getXmlFromSynapse(xmlFile);
-  return XmlService.getPrettyFormat().format(xml);
 }

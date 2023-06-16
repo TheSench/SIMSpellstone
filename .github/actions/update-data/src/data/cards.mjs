@@ -1,5 +1,6 @@
 import { addToMap } from "./helpers.mjs";
 import { getJsonFromSynapse } from "./getXmlFromSynapse.mjs";
+import { stableStringify } from "./stableStringify.mjs";
 
 var cardsJson;
 

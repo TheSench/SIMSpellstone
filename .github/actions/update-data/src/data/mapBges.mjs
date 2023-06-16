@@ -1,4 +1,5 @@
 import { makeAPICall } from "./spellstoneAPI.mjs";
+import { stableStringify } from "./stableStringify.mjs";
 
 var mapBgesJson;
 
@@ -10,7 +11,7 @@ export async function getMapBgesJs() {
 }
 
 async function getMapBgesJson() {
-  var mapExpansions = await makeAPICall("init").map_expansion_data;
+  var mapExpansions = (await makeAPICall("init")).map_expansion_data;
   
   var mapBges = {};
   for (var key in mapExpansions) {
