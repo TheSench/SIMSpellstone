@@ -1633,7 +1633,7 @@
     <name>What Lurks</name>
     <energy>7</energy>
     <commander id="248" />
-    <desc>You found the cave where the first tadpole rests. Careful, creatures lurk outside the entrance...</desc>
+    <desc>You found the cave where the first tadpole rests. Careful, creatures lurk outside the entrance... </desc>
     <deck>
       <card id="1604" name="Toad Warrior" />
       <card id="1604" />
@@ -2992,7 +2992,7 @@
     <id>5104</id>
     <name>Void Voyage</name>
     <energy>13</energy>
-    <desc>Malchior and Tarian have made their way through the cold Frigore mountains. They are now nearing the center of The Void.</desc>
+    <desc>Malchior and Tarian have made their way through the cold Frigore mountains. They are now nearing the center of The Void. </desc>
     <commander id="266" />
     <!-- strike enfeeble  | void minions -->
     <deck>
@@ -3016,7 +3016,7 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text>I believe we are getting closer to the Center of The Void. The concentration of Arcane Vapor has gotten a lot stronger since Frigore.</text>
+        <text>I believe we are getting closer to the Center of The Void. The concentration of Arcane Vapor has gotten a lot stronger since Frigore. </text>
       </line>
       <line>
         <commander>lichking</commander>
@@ -3153,7 +3153,7 @@
     <id>5109</id>
     <name>Light My Fire</name>
     <energy>8</energy>
-    <desc>Tarian spots Purple Fire further along the trail. Malchior frantically collects his things as they continue to investigate the strange phenomenon.</desc>
+    <desc>Tarian spots Purple Fire further along the trail. Malchior frantically collects his things as they continue to investigate the strange phenomenon. </desc>
     <commander id="267" />
     <!-- Evade Frost Undead | Wraith -->
     <deck>
@@ -3373,7 +3373,7 @@
     <id>5117</id>
     <name>Unseen Company</name>
     <energy>11</energy>
-    <desc>Malchior notes an already disassembled Turret next to the one they just defeated. It looks like it was recently active. They must not be the only ones in the area.</desc>
+    <desc>Malchior notes an already disassembled Turret next to the one they just defeated. It looks like it was recently active. They must not be the only ones in the area. </desc>
     <commander id="265" />
     <!-- undead  and poison leech on epics and up | Void Abomination -->
     <deck>
@@ -3461,7 +3461,7 @@
     <id>5120</id>
     <name>But a Scratch</name>
     <energy>11</energy>
-    <desc>Malchior looks particularly disturbed as he stares at the scientist. His body seems to be infected by the void.</desc>
+    <desc>Malchior looks particularly disturbed as he stares at the scientist. His body seems to be infected by the void. </desc>
     <commander id="266" />
     <!-- stirke undead flurry | Void Minions -->
     <deck>
@@ -3566,7 +3566,7 @@
   </mission>
   <mission>
     <id>5124</id>
-    <name>Scanner Darkly</name>
+    <name>Scanner Darkly </name>
     <energy>9</energy>
     <desc>The building is dark. A familiar humming noise can be heard throughout the long corridor that lies in front of them.</desc>
     <commander id="265" />
@@ -3644,7 +3644,7 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>…What's a molhecular configbulator?</text>
+        <text>…What's a molhecular configbulator? </text>
       </line>
     </speech>
   </mission>
@@ -3677,7 +3677,7 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Wait! We are not of The Void!</text>
+        <text>Wait! We are not of The Void! </text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -3863,7 +3863,7 @@
       <line>
         <commander>sleepymailman</commander>
         <enemy>1</enemy>
-        <text>Waa! I wasn't asleep! Stay away from my mail!</text>
+        <text>Waa! I wasn't asleep! Stay away from my mail! </text>
       </line>
     </speech>
   </mission>
@@ -3872,7 +3872,7 @@
     <id>5133</id>
     <name>Lost Packages</name>
     <energy>8</energy>
-    <desc>The Mail Man seems startled. He begins frantically looking through his mail ship.</desc>
+    <desc>The Mail Man seems startled. He begins frantically looking through his mail ship. </desc>
     <commander id="273" />
     <deck>
       <card id="1617" name="Water Elemental" />
@@ -3895,7 +3895,7 @@
       <line>
         <commander>sleepymailman</commander>
         <enemy>1</enemy>
-        <text>Oh, sorry about that. I thought you were those thugs trying to steal my mail.</text>
+        <text>Oh, sorry about that. I thought you were those thugs trying to steal my mail. </text>
       </line>
       <line>
         <commander>sleepymailman</commander>
@@ -4091,7 +4091,7 @@
       <line>
         <commander>seraph</commander>
         <enemy>0</enemy>
-        <text>What exactly are you planning on doing with it?</text>
+        <text> What exactly are you planning on doing with it?</text>
       </line>
     </speech>
   </mission>
@@ -4252,7 +4252,7 @@
     <id>5146</id>
     <name>A Lost Mind</name>
     <energy>11</energy>
-    <desc>The Queen's Engineer was bitten by the beast! He kneels to the floor, holding his wound.</desc>
+    <desc>The Queen's Engineer was bitten by the beast! He kneels to the floor, holding his wound. </desc>
     <commander id="277" />
     <deck>
       <card id="5006" name="Arms Enforcer" />
@@ -4333,7 +4333,7 @@
     <id>5149</id>
     <name>Strange Fiends</name>
     <energy>10</energy>
-    <desc>The team returns to the Kingdom. The Engineer has been examining the tech they found. He is eager to get to the Queen's court.</desc>
+    <desc>The team returns to the Kingdom. The Engineer has been examining the tech they found. He is eager to get to the Queen's court. </desc>
     <commander id="276" />
     <deck>
       <card id="6017" name="Tar Pit Stalker" />
@@ -4357,7 +4357,7 @@
     <id>5150</id>
     <name>Butterfingers</name>
     <energy>10</energy>
-    <desc>As they approach the court, Yuriel spots the Mail Man looking under a wagon. He seems to have lost something...</desc>
+    <desc>As they approach the court, Yuriel spots the Mail Man looking under a wagon. He seems to have lost something... </desc>
     <commander id="274" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
@@ -4473,7 +4473,7 @@
       <line>
         <commander>seraph</commander>
         <enemy>0</enemy>
-        <text>No! No one should have this kind of power!</text>
+        <text>No! No one should have this kind of power! </text>
       </line>
     </speech>
   </mission>
@@ -4660,7 +4660,7 @@
   </mission>
   <mission>
     <id>5160</id>
-    <name>Burning the Furnace</name>
+    <name>Burning the Furnace </name>
     <energy>13</energy>
     <desc>To Rayne's disbelief, the Lava Island is now overcome with fire. She is beginning to see why Decim is having trouble controlling his powers.</desc>
     <commander id="244" />
@@ -4692,7 +4692,7 @@
     <id>5161</id>
     <name>Apprentice and Master</name>
     <energy>13</energy>
-    <desc>Rayne takes Decim to the Water Island and sets up more targets. Decim still has an abundance of energy and is having trouble controlling his powers. Rayne makes notes as he tries to regain his composure.</desc>
+    <desc>Rayne takes Decim to the Water Island and sets up more targets. Decim still has an abundance of energy and is having trouble controlling his powers. Rayne makes notes as he tries to regain his composure.  </desc>
     <commander id="243" />
     <deck>
       <card id="7006" name="Treant Sapling" />
@@ -4716,7 +4716,7 @@
     <id>5162</id>
     <name>Burning Passion</name>
     <energy>13</energy>
-    <desc>Rayne notes that the strength of Decim's abilities are linked to how excited he is. Time for Decim to learn a thing or two about meditation.</desc>
+    <desc>Rayne notes that the strength of Decim's abilities are linked to how excited he is. Time for Decim to learn a thing or two about meditation. </desc>
     <commander id="238" />
     <deck>
       <card id="1019" name="Oracle" />
@@ -4746,7 +4746,7 @@
     <id>5163</id>
     <name>Practice Makes Perfect</name>
     <energy>13</energy>
-    <desc>Rayne asks Decim to still his thoughts and listen to the sounds of the waterfall. Deep breath in...and exhale.</desc>
+    <desc>Rayne asks Decim to still his thoughts and listen to the sounds of the waterfall. Deep breath in...and exhale. </desc>
     <commander id="242" />
     <deck>
       <card id="1015" name="Windfrog" />
@@ -4792,7 +4792,7 @@
     <id>5165</id>
     <name>Meditation Master</name>
     <energy>11</energy>
-    <desc>Rayne is impressed by Decim's progress so far. Decim continues to show control over his abilities with each session of meditation.</desc>
+    <desc>Rayne is impressed by Decim's progress so far. Decim continues to show control over his abilities with each session of meditation. </desc>
     <commander id="287" />
     <deck>
       <card id="7017" name="Coral Elemental" />
@@ -4825,9 +4825,9 @@
   </mission>
   <mission>
     <id>5166</id>
-    <name>Long Distance</name>
+    <name>Long Distance </name>
     <energy>11</energy>
-    <desc>Rayne thinks Decim is ready for a bigger challenge. She wants to test his abilities when they are being put under heavy strain. She tells him to shoot at the lavafall from the Water Island.</desc>
+    <desc>Rayne thinks Decim is ready for a bigger challenge. She wants to test his abilities when they are being put under heavy strain. She tells him to shoot at the lavafall from the Water Island. </desc>
     <commander id="243" />
     <deck>
       <card id="5017" name="Steam Tempest" />
@@ -5087,7 +5087,7 @@
       <line>
         <commander>elementalhero</commander>
         <enemy>0</enemy>
-        <text>...Yeah... maybe we can start by visiting some of the villages in Karthos.</text>
+        <text>...Yeah... maybe we can start by visiting some of the villages in Karthos. </text>
       </line>
     </speech>
   </mission>
@@ -5138,7 +5138,7 @@
   </mission>
   <mission>
     <id>5178</id>
-    <name>Downstairs Rumble</name>
+    <name>Downstairs Rumble </name>
     <energy>8</energy>
     <desc>A close competition indeed. As Rayne claims her win, the ground begins to rumble. Looks like their competition has upset something on the island...</desc>
     <commander id="288" />
@@ -5177,7 +5177,7 @@
   <!-- Canopy :  Berserk frog hex strike -->
   <mission>
     <id>5179</id>
-    <name>Nice View</name>
+    <name>Nice View </name>
     <energy>11</energy>
     <desc>Cedric sits in his estate overlooking Golden Crown Village. He has spent many years protecting his home, but he knows the threat of The Void must be stopped. There is a knock on his door...</desc>
     <commander id="292" />
@@ -5757,7 +5757,7 @@
       <line>
         <commander>froghero</commander>
         <enemy>0</enemy>
-        <text>The boy is struggling against the Avian Soldiers. It is slowing them down. We may be able to catch up to them if we keep up our pace.</text>
+        <text>The boy is struggling against the Avian Soldiers. It is slowing them down. We may be able to catch up to them if we keep up our pace. </text>
       </line>
     </speech>
   </mission>
@@ -6180,7 +6180,7 @@
     <id>5215</id>
     <name>Quick Stop</name>
     <energy>13</energy>
-    <desc>Ursurio sees some food unattended. He goes over to get a better whiff.</desc>
+    <desc>Ursurio sees some food unattended. He goes over to get a better whiff. </desc>
     <commander id="249" />
     <deck>
       <card id="7006" name="Treant Sapling" />
@@ -6202,12 +6202,12 @@
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>Ooo, this must be the sides for the feast! I'm sure no one will mind if I just take a litt-</text>
+        <text>Ooo, this must be the sides for the feast! I'm sure no one will mind if I just take a litt- </text>
       </line>
       <line>
         <commander>frogscout</commander>
         <enemy>1</enemy>
-        <text>Hey! What are you doing over there!</text>
+        <text>Hey! What are you doing over there! </text>
       </line>
     </speech>
   </mission>
@@ -6442,7 +6442,7 @@
     <id>5224</id>
     <name>Distant Gaze</name>
     <energy>8</energy>
-    <desc>Cedric is becoming visibly frustrated with all the setbacks they have encountered. Ursurio is beginning to suspect something deeper is upsetting him.</desc>
+    <desc>Cedric is becoming visibly frustrated with all the setbacks they have encountered. Ursurio is beginning to suspect something deeper is upsetting him. </desc>
     <commander id="304" />
     <deck>
       <card id="5006" name="Arms Enforcer" />
@@ -6749,7 +6749,7 @@
     <id>5234</id>
     <name>Out of Sight, Out of Mind</name>
     <energy>11</energy>
-    <desc>Cedric and Ursurio make it into the city! They quickly head towards the side streets to keep out of sight.</desc>
+    <desc>Cedric and Ursurio make it into the city! They quickly head towards the side streets to keep out of sight. </desc>
     <commander id="304" />
     <deck>
       <card id="1017" name="Judgment" />
@@ -6888,7 +6888,7 @@
   </mission>
   <mission>
     <id>5239</id>
-    <name>Magistrate Quarters</name>
+    <name> Magistrate Quarters</name>
     <energy>11</energy>
     <desc>They make their way inside the capital. Cedric is familiar with the layout. He suspects they are keeping Frobert in the Avian Magistrate's quarters. Luckily, they are not far from it.</desc>
     <commander id="307" />
@@ -7071,7 +7071,7 @@
       <line>
         <commander>moltendragon</commander>
         <enemy>0</enemy>
-        <text>...Raowr...</text>
+        <text> ...Raowr...</text>
       </line>
     </speech>
   </mission>
@@ -7888,7 +7888,7 @@
       <line>
         <commander>elementalhero</commander>
         <enemy>0</enemy>
-        <text>Considering some of my other companions, I am not surprised by fires any longer. Show us the way. We will do what we can.</text>
+        <text>Considering some of my other companions, I am not surprised by fires any longer. Show us the way. We will do what we can. </text>
       </line>
     </speech>
   </mission>
@@ -8430,7 +8430,7 @@
       <line>
         <commander>dragonridingringleader</commander>
         <enemy>1</enemy>
-        <text>Oh puddin', you wouldn't be the first to try.</text>
+        <text>Oh puddin', you wouldn't be the first to try. </text>
       </line>
     </speech>
   </mission>
@@ -8485,7 +8485,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Did... did he just call me 'puddin' ?! That's it. Everyone burns!!!</text>
+        <text> Did... did he just call me 'puddin' ?! That's it. Everyone burns!!!</text>
       </line>
       <line>
         <commander>architectbug</commander>
@@ -9114,7 +9114,7 @@
     <id>5309</id>
     <name>Ancient History</name>
     <energy>11</energy>
-    <desc>Yuriel has been searching through his books for hours. At last, he finds what he's been looking for. An ancient book about the history of the Salt Wastes.</desc>
+    <desc>Yuriel has been searching through his books for hours. At last, he finds what he's been looking for. An ancient book about the history of the Salt Wastes. </desc>
     <commander id="324" />
     <deck>
       <card id="1011" name="Archive Keeper" />
@@ -9297,7 +9297,7 @@
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>Dormic, my dearest general, may I have a word with you?</text>
+        <text>Dormic, my dearest general, may I have a word with you? </text>
       </line>
       <line>
         <commander>Portrait_Goblin_Captain</commander>
@@ -9429,7 +9429,7 @@
       <line>
         <commander>orchero</commander>
         <enemy>0</enemy>
-        <text>Howdy, neighbors! Just droppin' by, wanted t' give ya a warm welcome in our neighborhood. Ya can put those fancy lookin' arrows down if ya want.</text>
+        <text> Howdy, neighbors! Just droppin' by, wanted t' give ya a warm welcome in our neighborhood. Ya can put those fancy lookin' arrows down if ya want.</text>
       </line>
       <line>
         <commander>goblinfootmen</commander>
@@ -9444,7 +9444,7 @@
       <line>
         <commander>orchero</commander>
         <enemy>0</enemy>
-        <text>If you promise to leave my tribe in peace, I can show you a thing or two about the Salt Wastes.</text>
+        <text>If you promise to leave my tribe in peace, I can show you a thing or two about the Salt Wastes.  </text>
       </line>
     </speech>
   </mission>
@@ -9503,7 +9503,7 @@
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>Guards! Why have you let this orc buffoon into the fortress?! Get him outta here!</text>
+        <text> Guards! Why have you let this orc buffoon into the fortress?! Get him outta here! </text>
       </line>
       <line>
         <commander>orchero</commander>
@@ -9521,7 +9521,7 @@
     <id>5321</id>
     <name>Around the War Table</name>
     <energy>11</energy>
-    <desc>Our heroes are gathered in the airship. They discuss their strategy against the growing goblin threat. Allies from all over the continent where goblins have caused trouble have shown up to lend their aid.</desc>
+    <desc>Our heroes are gathered in the airship. They discuss their strategy against the growing goblin threat. Allies from all over the continent where goblins have caused trouble have shown up to lend their aid. </desc>
     <commander id="291" />
     <deck>
       <card id="7017" name="Coral Elemental" />
@@ -9637,7 +9637,7 @@
       <line>
         <commander>elementalhero</commander>
         <enemy>0</enemy>
-        <text>Now, where are these ground elementals hiding?</text>
+        <text>Now, where are these ground elementals hiding? </text>
       </line>
     </speech>
   </mission>
@@ -9690,7 +9690,7 @@
       <line>
         <commander>groundelemental2</commander>
         <enemy>0</enemy>
-        <text>Who gives Milton head scratches!</text>
+        <text>Who gives Milton head scratches! </text>
       </line>
       <line>
         <commander>elementalhero</commander>
@@ -9761,7 +9761,7 @@
     <id>5329</id>
     <name>Through the Valley</name>
     <energy>10</energy>
-    <desc>Reks has assembled his army. They lay low on their way to Tarragon Peak, moving  towards the valley Orgoth has advised.</desc>
+    <desc>Reks has assembled his army. They lay low on their way to Tarragon Peak, moving  towards the valley Orgoth has advised. </desc>
     <commander id="311" />
     <deck>
       <card id="1317" name="Fire Imp" />
@@ -9783,7 +9783,7 @@
       <line>
         <commander>orchero</commander>
         <enemy>0</enemy>
-        <text>This path has good protection, Reks. It should cover your army into the north.</text>
+        <text>This path has good protection, Reks. It should cover your army into the north. </text>
       </line>
       <line>
         <commander>Portrait_King_Goblin</commander>
@@ -9793,7 +9793,7 @@
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>GUARD! Put the orc under close watch.</text>
+        <text>GUARD! Put the orc under close watch. </text>
       </line>
     </speech>
   </mission>
@@ -9859,7 +9859,7 @@
     <id>5332</id>
     <name>Around the Bend</name>
     <energy>10</energy>
-    <desc>The army begins to round the last bend of the valley. A welcoming party of dragons and heroes sits waiting for their arrival.</desc>
+    <desc>The army begins to round the last bend of the valley. A welcoming party of dragons and heroes sits waiting for their arrival. </desc>
     <commander id="329" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -9886,12 +9886,12 @@
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>Typical orc treachery! Why'd I even listen to you?!</text>
+        <text>Typical orc treachery! Why'd I even listen to you?! </text>
       </line>
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>GUARD! Call in the air troops!</text>
+        <text>GUARD! Call in the air troops! </text>
       </line>
     </speech>
   </mission>
@@ -9921,12 +9921,12 @@
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>You know what they say. Never travel without a backup dragon guard. Sorry tamer, you have been outmatched this time.</text>
+        <text>You know what they say. Never travel without a backup dragon guard. Sorry tamer, you have been outmatched this time. </text>
       </line>
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>But perhaps, if you ask real nice, I can confiscate your dragons and let you go on your way.</text>
+        <text>But perhaps, if you ask real nice, I can confiscate your dragons and let you go on your way. </text>
       </line>
       <line>
         <commander>dragontamer</commander>
@@ -9939,7 +9939,7 @@
     <id>5334</id>
     <name>Rain from Above</name>
     <energy>10</energy>
-    <desc>Angels and Ground Elementals emerge from the cracks in the valley. Barrages of arrows and rocks fall on the Goblin forces.</desc>
+    <desc>Angels and Ground Elementals emerge from the cracks in the valley. Barrages of arrows and rocks fall on the Goblin forces. </desc>
     <commander id="321" />
     <deck>
       <card id="1018" name="Armored Eagle" />
@@ -9961,17 +9961,17 @@
       <line>
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
-        <text>Ah, not bad puddin, teamin' up with the angels like this. Hah! Let's see what they can do against my dragons.</text>
+        <text>Ah, not bad puddin, teamin' up with the angels like this. Hah! Let's see what they can do against my dragons. </text>
       </line>
       <line>
         <commander>dragontamer</commander>
         <enemy>0</enemy>
-        <text>Well lucky for you I am just full of surprises today! Dilbert! Unleash the catapults!</text>
+        <text>Well lucky for you I am just full of surprises today! Dilbert! Unleash the catapults! </text>
       </line>
       <line>
         <commander>architectbug</commander>
         <enemy>0</enemy>
-        <text>Just finished building them! Alight, here we go!</text>
+        <text>Just finished building them! Alight, here we go! </text>
       </line>
     </speech>
   </mission>
@@ -10191,7 +10191,7 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text>Look at how the light converges on that shack. Fascinating. Closer, Tarian! We must get closer!</text>
+        <text> Look at how the light converges on that shack. Fascinating. Closer, Tarian! We must get closer!</text>
       </line>
       <line>
         <commander>lichking</commander>
@@ -10381,7 +10381,7 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Malchior!!</text>
+        <text>Malchior!! </text>
       </line>
     </speech>
   </mission>
@@ -10492,7 +10492,7 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text>Over here! This is no ordinary Spellstone. Look at those odd tendrils of magic around it - it must be the medium for The Void's power.</text>
+        <text>Over here! This is no ordinary Spellstone. Look at those odd tendrils of magic around it - it must be the medium for The Void's power. </text>
       </line>
       <line>
         <commander>maniacgeneral</commander>
@@ -10585,7 +10585,7 @@
     <id>5353</id>
     <name>Found Sanity</name>
     <energy>11</energy>
-    <desc>Malchior sprinkles the Will-O-Wisps' essence upon the Chaos general.</desc>
+    <desc>Malchior sprinkles the Will-O-Wisps' essence upon the Chaos general. </desc>
     <commander id="265" />
     <deck>
       <card id="1319" name="Wraith" />
@@ -10874,7 +10874,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>Whoa, all the people here are so GREEN! Don't they get enough sunlight?!</text>
+        <text> Whoa, all the people here are so GREEN! Don't they get enough sunlight?!</text>
       </line>
       <line>
         <commander>flamebender</commander>
@@ -11313,7 +11313,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>FREEDOM!</text>
+        <text> FREEDOM!</text>
       </line>
     </speech>
   </mission>
@@ -11373,7 +11373,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>We did it! I don't suppose one of you baby dragonlings wants to stick around and be MY dragon, would you?</text>
+        <text> We did it! I don't suppose one of you baby dragonlings wants to stick around and be MY dragon, would you?</text>
       </line>
       <line>
         <commander>flamebender</commander>
@@ -11810,7 +11810,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>What happened, and why is everything destroyed? Where is everyone?!</text>
+        <text>What happened, and why is everything destroyed? Where is everyone?! </text>
       </line>
       <line>
         <commander>goblinraider</commander>
@@ -11983,7 +11983,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>There ya go, dragon buddies!</text>
+        <text>There ya go, dragon buddies! </text>
       </line>
       <line>
         <commander>flamebender</commander>
@@ -12289,7 +12289,7 @@
     <id>5405</id>
     <name>Rematch</name>
     <energy>11</energy>
-    <desc>An entire troop of goblins have caught up with Decim and the drake! But Decim will not let them take the drake back into captivity...</desc>
+    <desc>An entire troop of goblins have caught up with Decim and the drake! But Decim will not let them take the drake back into captivity... </desc>
     <commander id="323" />
     <deck>
       <card id="1615" name="Rune Panther" />
@@ -13861,7 +13861,7 @@
       <line>
         <commander>goldencrownmayor</commander>
         <enemy>1</enemy>
-        <text>We originally came here to help those afflicted by The Void's power.</text>
+        <text>We originally came here to help those afflicted by The Void's power. </text>
       </line>
       <line>
         <commander>goldencrownmayor</commander>
@@ -13992,7 +13992,7 @@
       <line>
         <commander>lanternguardian</commander>
         <enemy>0</enemy>
-        <text>-raises lantern, deflecting the attack directed at Decim-</text>
+        <text> -raises lantern, deflecting the attack directed at Decim-</text>
       </line>
     </speech>
   </mission>
@@ -14456,7 +14456,7 @@
       <line>
         <commander>aviansoldier2</commander>
         <enemy>1</enemy>
-        <text>...And you don't have any of those things, do you.</text>
+        <text> ...And you don't have any of those things, do you.</text>
       </line>
       <line>
         <commander>feralbird</commander>
@@ -14912,7 +14912,7 @@
       <line>
         <commander>ranger</commander>
         <enemy>0</enemy>
-        <text>Ahoy there, adventurer! Long time no see. The Elarian researchers sent me here t' collect some samples of Mist Pearls. But ya can see the mess this place is in now.</text>
+        <text>Ahoy there, adventurer! Long time no see. The Elarian researchers sent me here t' collect some samples of Mist Pearls. But ya can see the mess this place is in now. </text>
       </line>
       <line>
         <commander>ranger</commander>
@@ -15157,7 +15157,7 @@
       <line>
         <commander>invisibleassassin</commander>
         <enemy>0</enemy>
-        <text>Less talk, more killing.</text>
+        <text>Less talk, more killing. </text>
       </line>
       <line>
         <commander>goldencrownmayor</commander>
@@ -15829,7 +15829,7 @@
     <id>5516</id>
     <name>Lost Faith</name>
     <energy>9</energy>
-    <desc>The angels have given up, even though Samael still tries to fight. The sword slips from his hand, piercing into the frozen ground. Samael grabs the handle, trying desperately to draw it out of the earth. But the blade refuses...</desc>
+    <desc>The angels have given up, even though Samael still tries to fight. The sword slips from his hand, piercing into the frozen ground. Samael grabs the handle, trying desperately to draw it out of the earth. But the blade refuses... </desc>
     <commander id="264" />
     <deck>
       <card id="1014" name="Cherub" />
@@ -16728,7 +16728,7 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text>Adventurer, how close are you to that magical sword? If we use the Heart of Blue Fire as a catalyst, and channel our energy...</text>
+        <text>Adventurer, how close are you to that magical sword? If we use the Heart of Blue Fire as a catalyst, and channel our energy... </text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -18738,7 +18738,7 @@
       <line>
         <commander>elyse</commander>
         <enemy>0</enemy>
-        <text>Our world's not perfect, but that's part of what makes it beautiful.</text>
+        <text>Our world's not perfect, but that's part of what makes it beautiful. </text>
       </line>
       <line>
         <commander>elyse</commander>
@@ -18858,7 +18858,7 @@
       <line>
         <commander>templeguardian</commander>
         <enemy>0</enemy>
-        <text>He's up to something...</text>
+        <text>He's up to something... </text>
       </line>
     </speech>
   </mission>
@@ -22580,7 +22580,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>But we were clearly mistaken. The mine was abandoned when we realized the cache was nothing more than a pile of Fireshards.</text>
+        <text>But we were clearly mistaken. The mine was abandoned when we realized the cache was nothing more than a pile of Fireshards. </text>
       </line>
     </speech>
   </mission>
@@ -22916,7 +22916,7 @@
     <id>5727</id>
     <name>Mine Dwellers</name>
     <energy>9</energy>
-    <desc>The shell of a gigantic mecha lays in ruins. Its head is nowhere to be found, vegetation snaking up along its immobile limbs. Mechas, not unlike the ones that attacked you, approach you and Aria...</desc>
+    <desc>The shell of a gigantic mecha lays in ruins. Its head is nowhere to be found, vegetation snaking up along its immobile limbs. Mechas, not unlike the ones that attacked you, approach you and Aria... </desc>
     <commander id="401" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
@@ -23434,7 +23434,7 @@
     <id>5743</id>
     <name>Remnant Fireshards</name>
     <energy>9</energy>
-    <desc>The silent Mecha teeters uncertainly. Cracks run across its body, the weight of time still heavy upon its limbs. Chunks of fireshards stick to its body, infusing it with just enough energy to fight.</desc>
+    <desc>The silent Mecha teeters uncertainly. Cracks run across its body, the weight of time still heavy upon its limbs. Chunks of fireshards stick to its body, infusing it with just enough energy to fight. </desc>
     <commander id="403" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
@@ -24244,7 +24244,7 @@
     <id>5770</id>
     <name>Fireshard's Protector</name>
     <energy>9</energy>
-    <desc>The giant mecha stomps towards you! The smaller Mechas flee, doing their best not to get trampled underfoot.</desc>
+    <desc>The giant mecha stomps towards you! The smaller Mechas flee, doing their best not to get trampled underfoot. </desc>
     <commander id="404" />
     <deck>
       <card id="8099" name="Prototype Cybot Beta" />
@@ -24714,7 +24714,7 @@
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>If the orbs are destroyed, the Celestial Vault will fall!</text>
+        <text>If the orbs are destroyed, the Celestial Vault will fall! </text>
       </line>
       <line>
         <commander>froghero</commander>
@@ -25817,7 +25817,7 @@
       <line>
         <commander>Portrait_Avian_Cultist</commander>
         <enemy>1</enemy>
-        <text>Shall we work together like the old times in Redfeather Village, or have you thrown in your lot with the wingless?</text>
+        <text>Shall we work together like the old times in Redfeather Village, or have you thrown in your lot with the wingless? </text>
       </line>
       <line>
         <commander>avianmagistrate</commander>
@@ -26264,7 +26264,7 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text>Oh I'm so glad to finally meet you, your Majesty!</text>
+        <text>Oh I'm so glad to finally meet you, your Majesty! </text>
       </line>
       <line>
         <commander>angelqueen</commander>
@@ -27102,7 +27102,7 @@
       <line>
         <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
-        <text>However, the goblins and orcs formed an alliance, and invaded the other tribes' homes.</text>
+        <text>However, the goblins and orcs formed an alliance, and invaded the other tribes' homes. </text>
       </line>
     </speech>
   </mission>
@@ -27733,7 +27733,7 @@
       <line>
         <commander>Portraits_Crimson_Winged_Angel</commander>
         <enemy>1</enemy>
-        <text>I see you have no intention of leaving the continent.</text>
+        <text>I see you have no intention of leaving the continent. </text>
       </line>
       <line>
         <commander>Portraits_Crimson_Winged_Angel</commander>
@@ -27942,7 +27942,7 @@
       <line>
         <commander>dragontamer</commander>
         <enemy>0</enemy>
-        <text>I'm glad you could make it, adventurer.</text>
+        <text>I'm glad you could make it, adventurer. </text>
       </line>
       <line>
         <commander>dragontamer</commander>
@@ -28326,7 +28326,7 @@
     <id>5901</id>
     <name>New Tribal Leader</name>
     <energy>9</energy>
-    <desc>Even without Reks or his sister Xerkahn, it seems the goblins have continued their original plans. The strength of their arms has increased since you last saw them.</desc>
+    <desc>Even without Reks or his sister Xerkahn, it seems the goblins have continued their original plans. The strength of their arms has increased since you last saw them. </desc>
     <commander id="341" />
     <deck>
       <card id="8106" name="Mecha Hammer Creation" />
@@ -30601,7 +30601,7 @@
     <id>5972</id>
     <name>The Spriggan Seer</name>
     <energy>9</energy>
-    <desc>The spriggan poses elegantly, bowing and shaking his fronds in your direction. His  speech is very formal, the opposite of what you've come to expect on this wilderness island.</desc>
+    <desc>The spriggan poses elegantly, bowing and shaking his fronds in your direction. His  speech is very formal, the opposite of what you've come to expect on this wilderness island. </desc>
     <commander id="303" />
     <deck>
       <card id="8120" name="Carnivorous Gorillaroar" />
@@ -30624,7 +30624,7 @@
       <line>
         <commander>Portrait_Spriggan_Sage</commander>
         <enemy>0</enemy>
-        <text>I am a very important person.</text>
+        <text>I am a very important person. </text>
       </line>
       <line>
         <commander>bearcommander</commander>
@@ -30706,7 +30706,7 @@
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>Pirate treasure? Food?</text>
+        <text>Pirate treasure? Food? </text>
       </line>
     </speech>
   </mission>
@@ -31673,7 +31673,7 @@
     <id>6005</id>
     <name>Escape from Monsoon</name>
     <energy>9</energy>
-    <desc>Your airship circles around, battered fiercely from the storm. Elyse appears at the airship's entrance. She tosses a rope down to you and Ursurio.</desc>
+    <desc>Your airship circles around, battered fiercely from the storm. Elyse appears at the airship's entrance. She tosses a rope down to you and Ursurio. </desc>
     <commander id="359" />
     <deck>
       <card id="8120" name="Carnivorous Gorillaroar" />
@@ -31853,7 +31853,7 @@
     <id>6011</id>
     <name>Damaged Airship</name>
     <energy>9</energy>
-    <desc>The airship has sustained visible damage. Multiple windows, including the gigantic windshield have broken, leaving fragmented glass shards on the ground.</desc>
+    <desc>The airship has sustained visible damage. Multiple windows, including the gigantic windshield have broken, leaving fragmented glass shards on the ground. </desc>
     <commander id="315" />
     <deck>
       <card id="8121" name="Canopy Monster" />
@@ -31961,7 +31961,7 @@
     <id>6014</id>
     <name>Cedric's Memory</name>
     <energy>9</energy>
-    <desc>Cedric looks at the golden leaves and the gigantic trees. They tower far into the sky, patches of light filtering through their holes.</desc>
+    <desc>Cedric looks at the golden leaves and the gigantic trees. They tower far into the sky, patches of light filtering through their holes. </desc>
     <commander id="249" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -32129,7 +32129,7 @@
     <id>6019</id>
     <name>Kachina, the Dreamer</name>
     <energy>9</energy>
-    <desc>Cedric recognizes the frog. He tells you that Kachina is the Frog Emperor's Dreamer, and that she often provides advice and runs the Emperor's errands.</desc>
+    <desc>Cedric recognizes the frog. He tells you that Kachina is the Frog Emperor's Dreamer, and that she often provides advice and runs the Emperor's errands. </desc>
     <commander id="292" />
     <deck>
       <card id="8121" name="Canopy Monster" />
@@ -33481,7 +33481,7 @@
     <id>6063</id>
     <name>Signal of Light</name>
     <energy>18</energy>
-    <desc>With the aid of the Golden Crown frogs, you were able to get your airship back up and running. However, you had barely started flying when your group noticed a gigantic ray of light in the night sky, emitting from the destroyed Redfeather Village...</desc>
+    <desc>With the aid of the Golden Crown frogs, you were able to get your airship back up and running. However, you had barely started flying when your group noticed a gigantic ray of light in the night sky, emitting from the destroyed Redfeather Village... </desc>
     <commander id="343" />
     <deck>
       <card id="8121" name="Canopy Monster" />
@@ -33794,7 +33794,7 @@
       <line>
         <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
-        <text>Look! The light is disappearing...</text>
+        <text>Look! The light is disappearing... </text>
       </line>
     </speech>
   </mission>
@@ -34362,7 +34362,7 @@
     <id>6093</id>
     <name>The Light's Source</name>
     <energy>18</energy>
-    <desc>As if it had heard Garrick's musing, the ray of light abruptly blasts into the night sky again. It is accompanied by a bestial wolf howl, the source extremely close. Your eyes take a moment to adjust...</desc>
+    <desc>As if it had heard Garrick's musing, the ray of light abruptly blasts into the night sky again. It is accompanied by a bestial wolf howl, the source extremely close. Your eyes take a moment to adjust... </desc>
     <commander id="270" />
     <deck>
       <card id="5006" name="Arms Enforcer" />
@@ -34463,7 +34463,7 @@
       <line>
         <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
-        <text>It gives me the chills, sir.</text>
+        <text>It gives me the chills, sir. </text>
       </line>
     </speech>
   </mission>
@@ -34967,7 +34967,7 @@
     <id>6111</id>
     <name>Alliance Formation</name>
     <energy>9</energy>
-    <desc>A gloved hand is placed on the dragon's snout. The trustworthy human makes a promise. With the dragons, she will stand. A mutual alliance of Rhynio and dragonkin. When she leaves, the dragon does not trust the others.</desc>
+    <desc>A gloved hand is placed on the dragon's snout. The trustworthy human makes a promise. With the dragons, she will stand. A mutual alliance of Rhynio and dragonkin. When she leaves, the dragon does not trust the others. </desc>
     <commander id="423" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -36448,7 +36448,7 @@
       <line>
         <commander>Portrait_Angel_Demon_Samurai</commander>
         <enemy>1</enemy>
-        <text>It's regrettable how history chooses to remember.</text>
+        <text>It's regrettable how history chooses to remember. </text>
       </line>
       <line>
         <commander>Portrait_Angel_Demon_Samurai</commander>
@@ -36503,7 +36503,7 @@
     <id>6159</id>
     <name>Devious Activities</name>
     <energy>18</energy>
-    <desc>Fiona has noticed unusual goblin activity in Duskwillow. You agreed to meet up with her and get to the bottom of this mystery.</desc>
+    <desc>Fiona has noticed unusual goblin activity in Duskwillow. You agreed to meet up with her and get to the bottom of this mystery. </desc>
     <commander id="395" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -36692,7 +36692,7 @@
     <id>6165</id>
     <name>Boldur's Stand</name>
     <energy>18</energy>
-    <desc>The goblin forces are disorganized. Boldur stands his ground as you approach. A few of the goblins take heart at his response, readying their weapons as you get nearer.</desc>
+    <desc>The goblin forces are disorganized. Boldur stands his ground as you approach. A few of the goblins take heart at his response, readying their weapons as you get nearer. </desc>
     <commander id="412" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -36828,7 +36828,7 @@
       <line>
         <commander>Portraits_Boldur</commander>
         <enemy>1</enemy>
-        <text>Us goblins been fightin' and fightin'. But we can't do that forever.</text>
+        <text>Us goblins been fightin' and fightin'. But we can't do that forever. </text>
       </line>
     </speech>
   </mission>
@@ -37399,7 +37399,7 @@
       <line>
         <commander>Portraits_Boldur</commander>
         <enemy>0</enemy>
-        <text>I know the Crimsonwings are gonna come after us next, if they beat you up.</text>
+        <text>I know the Crimsonwings are gonna come after us next, if they beat you up. </text>
       </line>
     </speech>
   </mission>
@@ -40112,7 +40112,7 @@
     <id>6288</id>
     <name>Aether</name>
     <energy>9</energy>
-    <desc>Solaron's form stands twisted before you, when a memory comes unbidden into your mind: Fierce winds wearing down the tallest mountains, grinding it down through the passage of time until nothing but dust remains. Clouds swell until they burst with rain, claiming earth and fire.</desc>
+    <desc>Solaron's form stands twisted before you, when a memory comes unbidden into your mind: Fierce winds wearing down the tallest mountains, grinding it down through the passage of time until nothing but dust remains. Clouds swell until they burst with rain, claiming earth and fire. </desc>
     <commander id="439" />
     <deck>
       <card id="8080" name="Solaron's Gust" />
@@ -40998,7 +40998,7 @@
     <id>6305</id>
     <name>Forbidden Pact</name>
     <energy>9</energy>
-    <desc>Kensho reaches out his hand, meeting the wispy tendril of a wind Elemental. Its energy seeps further, soaking into Kensho's body. The air becomes more and more frigid with each passing second.</desc>
+    <desc>Kensho reaches out his hand, meeting the wispy tendril of a wind Elemental. Its energy seeps further, soaking into Kensho's body. The air becomes more and more frigid with each passing second. </desc>
     <commander id="442" />
     <deck>
       <card id="2058" name="Bismuth Bully" />
@@ -41613,7 +41613,7 @@
     <id>6324</id>
     <name>Chaos Mission</name>
     <energy>18</energy>
-    <desc>You and Aria travel the lonely path up the hill, crows cawing in the distance. Scyer runs up the hill, then back down, then back up again.</desc>
+    <desc>You and Aria travel the lonely path up the hill, crows cawing in the distance. Scyer runs up the hill, then back down, then back up again. </desc>
     <commander id="377" />
     <deck>
       <card id="8084" name="Gobatron's Bomber" />
@@ -41826,7 +41826,7 @@
       <line>
         <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
-        <text>I just got a lot of bad memories up there.</text>
+        <text>I just got a lot of bad memories up there. </text>
       </line>
       <line>
         <commander>maniacgeneralreformed</commander>
@@ -41985,7 +41985,7 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Malchior, why did you call me out here?</text>
+        <text>Malchior, why did you call me out here? </text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -42210,7 +42210,7 @@
     <id>6343</id>
     <name>Rescue Mission</name>
     <energy>9</energy>
-    <desc>You and Aria focus on saving Scyer. Aria slams dark blasts of energy against him. The strange, powerful aura has taken ahold of the Mecha, yet you and Aria are immune to its effect.</desc>
+    <desc>You and Aria focus on saving Scyer. Aria slams dark blasts of energy against him. The strange, powerful aura has taken ahold of the Mecha, yet you and Aria are immune to its effect. </desc>
     <commander id="402" />
     <deck>
       <card id="5167" name="Hierophant of Evening" />
@@ -43541,7 +43541,7 @@
       <line>
         <commander>froghero</commander>
         <enemy>0</enemy>
-        <text>This isn't the first time that the Titans meddled with our world.</text>
+        <text>This isn't the first time that the Titans meddled with our world. </text>
       </line>
       <line>
         <commander>froghero</commander>
@@ -43900,7 +43900,7 @@
       <line>
         <commander>tyrantshiva</commander>
         <enemy>0</enemy>
-        <text>Well... I'm sure the players can handle this.</text>
+        <text>Well... I'm sure the players can handle this. </text>
       </line>
       <line>
         <commander>tyrantshiva</commander>
@@ -43915,7 +43915,7 @@
       <line>
         <commander>bgeboss</commander>
         <enemy>1</enemy>
-        <text>... Unless you stop me, of course.</text>
+        <text> ... Unless you stop me, of course.</text>
       </line>
     </speech>
   </mission>
@@ -45656,7 +45656,7 @@
       <line>
         <commander>windstormelemental</commander>
         <enemy>1</enemy>
-        <text>Commencing initialization welcome sequence. Greetings, sentients.</text>
+        <text>Commencing initialization welcome sequence. Greetings, sentients. </text>
       </line>
     </speech>
   </mission>
@@ -45754,7 +45754,7 @@
       <line>
         <commander>windstormelemental</commander>
         <enemy>1</enemy>
-        <text>To fully reboot, you must help me attune to Aether.</text>
+        <text>To fully reboot, you must help me attune to Aether. </text>
       </line>
       <line>
         <commander>windstormelemental</commander>
@@ -45809,7 +45809,7 @@
     <id>6452</id>
     <name>Tricky Question</name>
     <energy>18</energy>
-    <desc>As part of the test, some of the Elementals have begun fighting you. The wind Elemental continues to grill you on your Aether knowledge.</desc>
+    <desc>As part of the test, some of the Elementals have begun fighting you. The wind Elemental continues to grill you on your Aether knowledge. </desc>
     <commander id="343" />
     <deck>
       <card id="8094" name="Viracocha's Familiar" />
@@ -46192,7 +46192,7 @@
       <line>
         <commander>firetitan</commander>
         <enemy>1</enemy>
-        <text>Commencing initialization welcome sequence. Greetings, sentients.</text>
+        <text>Commencing initialization welcome sequence. Greetings, sentients. </text>
       </line>
     </speech>
   </mission>
@@ -48165,7 +48165,7 @@
       <line>
         <commander>Portrait_Daknak</commander>
         <enemy>0</enemy>
-        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak!</text>
+        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak! </text>
       </line>
       <line>
         <commander>Portrait_Daknak</commander>
@@ -48211,7 +48211,7 @@
       <line>
         <commander>Portrait_Daknak</commander>
         <enemy>0</enemy>
-        <text>Ghost left... a pumpkin full of candy?</text>
+        <text>Ghost left... a pumpkin full of candy? </text>
       </line>
       <line>
         <commander>goblinfootmen</commander>
@@ -49599,7 +49599,7 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Malchior, why did you call me out here?</text>
+        <text>Malchior, why did you call me out here? </text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -49999,7 +49999,7 @@
       <line>
         <commander>canopyhunter</commander>
         <enemy>1</enemy>
-        <text>I am an AI designed to simulate Wyld.</text>
+        <text>I am an AI designed to simulate Wyld. </text>
       </line>
       <line>
         <commander>canopyhunter</commander>
@@ -50235,7 +50235,7 @@
       <line>
         <commander>elyse</commander>
         <enemy>0</enemy>
-        <text>Phew.... that was a close one.</text>
+        <text>Phew.... that was a close one. </text>
       </line>
       <line>
         <commander>oldmonk</commander>
@@ -51706,7 +51706,7 @@
       <line>
         <commander>tyrantshiva</commander>
         <enemy>0</enemy>
-        <text>Well... I'm sure the players can handle this.</text>
+        <text>Well... I'm sure the players can handle this. </text>
       </line>
       <line>
         <commander>tyrantshiva</commander>
@@ -51721,7 +51721,7 @@
       <line>
         <commander>bgeboss</commander>
         <enemy>1</enemy>
-        <text>... Unless you stop me, of course.</text>
+        <text> ... Unless you stop me, of course.</text>
       </line>
     </speech>
   </mission>
@@ -52559,7 +52559,7 @@
     <id>6632</id>
     <name>Lava Fact</name>
     <energy>18</energy>
-    <desc>"When lava is inside the earth, it is actually called magma." You remember the weirdest facts when your life is in danger of being charred by lava and devoured by dragons.</desc>
+    <desc>"When lava is inside the earth, it is actually called magma." You remember the weirdest facts when your life is in danger of being charred by lava and devoured by dragons. </desc>
     <commander id="340" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -52920,7 +52920,7 @@
     <id>6647</id>
     <name>Way over the top</name>
     <energy>18</energy>
-    <desc>Draconic Insects? The one with the scorpion tail was just too much, and the weirdness just went off the end of your meter. You're finishing this and getting away from this place, at least for a good while.</desc>
+    <desc>Draconic Insects? The one with the scorpion tail was just too much, and the weirdness just went off the end of your meter. You're finishing this and getting away from this place, at least for a good while. </desc>
     <commander id="282" />
     <deck>
       <card id="8136" name="Shore Scourer" />
@@ -53242,7 +53242,7 @@
       <card id="2101" name="Rot Goblin" />
       <card id="1628" name="Garganotos" />
       <card id="1628" name="Garganotos" />
-      &gt;
+      >
       <card id="2172" name="Hob and Gob Duo" />
       <card id="2172" name="Hob and Gob Duo" />
       <card id="2102" name="Lowbog Shaman" />
@@ -54946,7 +54946,7 @@
     <id>6720</id>
     <name>Where am I?</name>
     <energy>18</energy>
-    <desc>You were heading on your vacation towards Celestial Vault but you take a wrong turn and end up at Fireshard mines. You decide to stroll around and ask for directions when you accidentally bump into a mean looking Mecha.</desc>
+    <desc> You were heading on your vacation towards Celestial Vault but you take a wrong turn and end up at Fireshard mines. You decide to stroll around and ask for directions when you accidentally bump into a mean looking Mecha.</desc>
     <commander id="413" />
     <deck>
       <card id="1014" />
@@ -55295,7 +55295,7 @@
       <line>
         <commander>Portrait_Daknak</commander>
         <enemy>0</enemy>
-        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak!</text>
+        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak! </text>
       </line>
       <line>
         <commander>Portrait_Daknak</commander>
@@ -55341,7 +55341,7 @@
       <line>
         <commander>Portrait_Daknak</commander>
         <enemy>0</enemy>
-        <text>Ghost left... a pumpkin full of candy?</text>
+        <text>Ghost left... a pumpkin full of candy? </text>
       </line>
       <line>
         <commander>goblinfootmen</commander>
@@ -55674,7 +55674,7 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Malchior, why did you call me out here?</text>
+        <text>Malchior, why did you call me out here? </text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -55900,7 +55900,7 @@
     <id>6756</id>
     <name>Fouled out</name>
     <energy>18</energy>
-    <desc>Goblins realize that they won’t be able to beat you fair and square, to no one's surprise, they start fouling you every time they can.</desc>
+    <desc>Goblins realize that they won’t be able to beat you fair and square, to no one's surprise, they start fouling you every time they can. </desc>
     <commander id="320" />
     <deck>
       <card id="8091" name="Cannon Bomber" />
@@ -56908,7 +56908,7 @@
     <id>6798</id>
     <name>Run boy run</name>
     <energy>18</energy>
-    <desc>Tired of your bad puns, the dragons start chasing you out of the hotel. You have no option but to run into the resort's wilderness and hide until it is all clear.</desc>
+    <desc>Tired of your bad puns, the dragons start chasing you out of the hotel. You have no option but to run into the resort's wilderness and hide until it is all clear. </desc>
     <commander id="318" />
     <deck>
       <card id="1336" />
@@ -57051,7 +57051,7 @@
     <id>6804</id>
     <name>Funny business</name>
     <energy>18</energy>
-    <desc>You ask the dragon about the raiders and she answers that she overheard one of their conversations and that's why they wanted to silence her for good.</desc>
+    <desc>You ask the dragon about the raiders and she answers that she overheard one of their conversations and that's why they wanted to silence her for good. </desc>
     <commander id="318" />
     <deck>
       <card id="1334" />
@@ -57387,7 +57387,7 @@
     <id>6818</id>
     <name>Toe to toe</name>
     <energy>18</energy>
-    <desc>After heading up the cliff you realize the angel is standing beneath you. There is no backing out now. You fearlessly jump right in front of her and whisper "Halo there".</desc>
+    <desc>After heading up the cliff you realize the angel is standing beneath you. There is no backing out now. You fearlessly jump right in front of her and whisper &quot;Halo there&quot;. </desc>
     <commander id="407" />
     <deck>
       <card id="2141" name="Stormbreak beast" />
@@ -57987,7 +57987,7 @@
     <id>6843</id>
     <name>Go time</name>
     <energy>18</energy>
-    <desc>Word reaches you that Ashanti is breaking out from prison. His avian allies have come from all around to aid him. Fortunately, Auron’s forces are ready to assist you in a counter offensive.</desc>
+    <desc>Word reaches you that Ashanti is breaking out from prison. His avian allies have come from all around to aid him. Fortunately, Auron’s forces are ready to assist you in a counter offensive. </desc>
     <commander id="471" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -58009,7 +58009,7 @@
   </mission>
   <mission>
     <id>6844</id>
-    <name>It's getting cold out here</name>
+    <name>It&apos;s getting cold out here</name>
     <energy>18</energy>
     <desc>You stand outside and you see mayhem all around. You decide to raid the prison before any more harm can be done. Unfortunately, the cold weather is slowing you down and Ashanti is taking advantage of this.</desc>
     <commander id="471" />
@@ -58035,7 +58035,7 @@
     <id>6845</id>
     <name>Enemy at the gates</name>
     <energy>18</energy>
-    <desc>Even though Ashanti's forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
+    <desc>Even though Ashanti&apos;s forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
     <commander id="471" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -58057,7 +58057,7 @@
   </mission>
   <mission>
     <id>6846</id>
-    <name>Ashanti's Finest</name>
+    <name>Ashanti&apos;s Finest</name>
     <energy>18</energy>
     <desc>After defeating most of his army, you rush inside and find him surrounded by his finest allies. All of them are fast and deadly assassins ready to take you down. You order Auron’s Elites to take down the assassins while you chase after Ashanti himself.</desc>
     <commander id="471" />
@@ -58251,7 +58251,7 @@
     <id>6854</id>
     <name>The scorpion king</name>
     <energy>18</energy>
-    <desc>You look in front of you and see a gigantic half undead scorpion starts rushing towards you. You run into a random direction hoping that the scorpion will get stuck in the caves behind you. After almost running out of breath, all of a sudden you trip... with a sword.</desc>
+    <desc>You look in front of you and see a gigantic half undead scorpion starts rushing towards you. You run into a random direction hoping that the scorpion will get stuck in the caves behind you. After almost running out of breath, all of a sudden you trip&#46;&#46;&#46; with a sword.</desc>
     <commander id="326" />
     <deck>
       <card id="6231" name="Firemouth Moth" />
@@ -60413,7 +60413,7 @@
     <id>6944</id>
     <name>Burn</name>
     <energy>18</energy>
-    <desc>You start heading out of the fire, the heat given off by the combustion in your surroundings is causing you to feel light headed. Just when you get out of danger, the beast emerges again shooting fire out of its hands.</desc>
+    <desc>You start heading out of the fire, the heat given off by the combustion in your surroundings is causing you to feel light headed. Just when you get out of danger, the beast emerges again shooting fire out of its hands. </desc>
     <commander id="476" />
     <deck>
       <card id="5142" name="Buzzblade" />
@@ -60521,7 +60521,7 @@
       <line>
         <commander>Portrait_Daknak</commander>
         <enemy>0</enemy>
-        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak!</text>
+        <text>Daknak have no fear of Pumpking! Daknak say Pumpking name more times than Daknak! </text>
       </line>
       <line>
         <commander>Portrait_Daknak</commander>
@@ -60567,7 +60567,7 @@
       <line>
         <commander>Portrait_Daknak</commander>
         <enemy>0</enemy>
-        <text>Ghost left... a pumpkin full of candy?</text>
+        <text>Ghost left... a pumpkin full of candy? </text>
       </line>
       <line>
         <commander>goblinfootmen</commander>
@@ -60609,7 +60609,7 @@
     <id>6950</id>
     <name>The Armada</name>
     <energy>18</energy>
-    <desc>One of the locals tells you that the organization you are looking for is known as "The Armada". They also tell you that if you want more information on them, your best bet is to speak with their ancient rivals, the Dragon Family.</desc>
+    <desc>One of the locals tells you that the organization you are looking for is known as &quot;The Armada&quot;. They also tell you that if you want more information on them, your best bet is to speak with their ancient rivals, the Dragon Family.</desc>
     <commander id="246" />
     <deck>
       <card id="1635" name="Mergoat" />
@@ -60874,7 +60874,7 @@
     <id>6961</id>
     <name>The alliance</name>
     <energy>18</energy>
-    <desc>You manage to contact and hire The Armada's fleet to banish the Void Hydra together by using Remi's Machine to channel a portal.</desc>
+    <desc>You manage to contact and hire The Armada&apos;s fleet to banish the Void Hydra together by using Remi&apos;s Machine to channel a portal.</desc>
     <commander id="477" />
     <deck>
       <card id="2103" name="Siren" />
@@ -60898,7 +60898,7 @@
     <id>6962</id>
     <name>Tracing a plan</name>
     <energy>18</energy>
-    <desc>Together with their captain, you start to trace a complex and convoluted plan. Meanwhile, The Armada's sailors are changing their cannons for bigger ones, even using some of their goods as shields for the hull of their ships.</desc>
+    <desc>Together with their captain, you start to trace a complex and convoluted plan. Meanwhile, The Armada&apos;s sailors are changing their cannons for bigger ones, even using some of their goods as shields for the hull of their ships.</desc>
     <commander id="477" />
     <deck>
       <card id="2528" name="Frostclaw Spearhunter" />
@@ -60970,7 +60970,7 @@
     <id>6965</id>
     <name>Infiltration</name>
     <energy>18</energy>
-    <desc>Taking your boat and three of the best captain's men to give you a hand, you take the void machine and use the cannon shots to camouflage yourself and go unnoticed by those monstrous heads!</desc>
+    <desc>Taking your boat and three of the best captain&apos;s men to give you a hand, you take the void machine and use the cannon shots to camouflage yourself and go unnoticed by those monstrous heads!</desc>
     <commander id="477" />
     <deck>
       <card id="6296" name="Pepe" />
@@ -60992,9 +60992,9 @@
   </mission>
   <mission>
     <id>6966</id>
-    <name>Pirates aren't so bad after all</name>
+    <name>Pirates aren&apos;t so bad after all</name>
     <energy>18</energy>
-    <desc>An enormous vortex starts to grow in the Hydra's body and swallows it, the monster screams and roars while trying to escape, but it's too late. Your plan was a tremendous success! The Void Hydra is now banished from our realm.</desc>
+    <desc>An enormous vortex starts to grow in the Hydra&apos;s body and swallows it, the monster screams and roars while trying to escape, but it&apos;s too late. Your plan was a tremendous success! The Void Hydra is now banished from our realm.</desc>
     <commander id="477" />
     <deck>
       <card id="7235" name="Shell Shaman" />
@@ -61042,7 +61042,7 @@
     <id>6968</id>
     <name>Tech Adept</name>
     <energy>18</energy>
-    <desc>As soon as you arrive you manage to spot the threat. A goblin that is clearly wielding one of Remi's Void gadgets. It seems like the trickster still has a couple of tricks up his sleeve.</desc>
+    <desc>As soon as you arrive you manage to spot the threat. A goblin that is clearly wielding one of Remi&apos;s Void gadgets. It seems like the trickster still has a couple of tricks up his sleeve.</desc>
     <commander id="312" />
     <deck>
       <card id="8086" name="Gobatron's Brutalizer" />
@@ -61066,7 +61066,7 @@
     <id>6969</id>
     <name>Pulverizer</name>
     <energy>18</energy>
-    <desc>You head straight towards the goblin and realize that it isn't even looking at you. It fires its weapon and the bolt somehow manages to track its way towards you striking extremely close to your position.</desc>
+    <desc>You head straight towards the goblin and realize that it isn&apos;t even looking at you. It fires its weapon and the bolt somehow manages to track its way towards you striking extremely close to your position.</desc>
     <commander id="312" />
     <deck>
       <card id="8083" name="Gobatron's Firebrand" />
@@ -61330,7 +61330,7 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Malchior, why did you call me out here?</text>
+        <text>Malchior, why did you call me out here? </text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -61507,7 +61507,7 @@
     <id>6985</id>
     <name>The day after Christmas</name>
     <energy>18</energy>
-    <desc>He started to yawn and he started to doze, Krampus fell asleep with his heart filled with woes, he didn't know that he'd be led astray. On the morning of December 26th, he'd lost the way.</desc>
+    <desc>He started to yawn and he started to doze, Krampus fell asleep with his heart filled with woes, he didn&apos;t know that he&apos;d be led astray. On the morning of December 26th, he&apos;d lost the way.</desc>
     <commander id="478" />
     <deck>
       <card id="7294" name="Brute Hobgoblin" />
@@ -61699,7 +61699,7 @@
     <id>6993</id>
     <name>Gain some time</name>
     <energy>18</energy>
-    <desc>The Void ambush was more quick than expected. The angelical army wasn't prepared yet, but you stand against the Void horde with a few angelical warriors at your side.</desc>
+    <desc>The Void ambush was more quick than expected. The angelical army wasn&apos;t prepared yet, but you stand against the Void horde with a few angelical warriors at your side.</desc>
     <commander id="277" />
     <deck>
       <card id="2219" name="Freya scout" />
@@ -61723,7 +61723,7 @@
     <id>6994</id>
     <name>The fight</name>
     <energy>18</energy>
-    <desc>You feel like it's an endless horde of creatures from the void, but together with your winged partners resist bravely and start to advance, destroying each enemy that is put in front of you.</desc>
+    <desc>You feel like it&apos;s an endless horde of creatures from the void, but together with your winged partners resist bravely and start to advance, destroying each enemy that is put in front of you.</desc>
     <commander id="365" />
     <deck>
       <card id="2219" name="Freya scout" />
@@ -61747,7 +61747,7 @@
     <id>6995</id>
     <name>Reaching the Portal</name>
     <energy>18</energy>
-    <desc>With all your effort you can reach the first Void portal, but in that moment you hear the laugh of Remi, and a huge explosion pushes you away from the portal. Remi is ready to destroy Arcantica, and it seems you are the only one who can deal with it.</desc>
+    <desc>With all your effort you can reach the first Void portal, but in that moment you hear the laugh of Remi, and a huge explosion pushes you away from the portal. Remi is ready to destroy Arcantica, and it seems you are the only one who can deal with it. </desc>
     <commander id="407" />
     <deck>
       <card id="2141" name="Stormbreak beast" />
@@ -61938,7 +61938,7 @@
   </mission>
   <mission>
     <id>7003</id>
-    <name>The Smallest Doesn't Mean The Weakest</name>
+    <name>The Smallest Doesn&apos;t Mean The Weakest</name>
     <energy>18</energy>
     <desc>You approach Freya, the commandant of the Wyld faction in the Angel Tribe. When she hears your offer to create an alliance with the other factions, she asks for two things, the first one is, like in nature, an equal balance of power, and the second, a proof of your strength.</desc>
     <commander id="479" />
@@ -61988,7 +61988,7 @@
     <id>7005</id>
     <name>Even the Chaos has its logic</name>
     <energy>18</energy>
-    <desc>Alyel was training some new recruits. When you arrived she told you that she knew what you wanted from her, but to just forget about it. She doesn't want an alliance, she only wants more power, so if you can show that to her she will be part of your plan.</desc>
+    <desc>Alyel was training some new recruits. When you arrived she told you that she knew what you wanted from her, but to just forget about it. She doesn&apos;t want an alliance, she only wants more power, so if you can show that to her she will be part of your plan.</desc>
     <commander id="469" />
     <deck>
       <card id="2205" name="Herald of Judgement" />
@@ -62012,7 +62012,7 @@
     <id>7006</id>
     <name>The Aether Puzzle</name>
     <energy>18</energy>
-    <desc>When you stand in the magnificents doors of the Aether faction building a sign take your attention " Everyone that thinks is worthy needs to move across the Invisible Maze and survive ".</desc>
+    <desc>When you stand in the magnificents doors of the Aether faction building a sign take your attention &quot; Everyone that thinks is worthy needs to move across the Invisible Maze and survive &quot;.</desc>
     <commander id="480" />
     <deck>
       <card id="5260" name="Monkey Style Tenshi" />
@@ -62326,7 +62326,7 @@
     <id>7019</id>
     <name>The Truth Always Prevails</name>
     <energy>18</energy>
-    <desc>Now with all its hypnotized army dismantled, Kattoraki cries for mercy and promises you wealth and power if you let him free. But you don't agree with it, and vanish it to the prisoner's cellar.</desc>
+    <desc>Now with all its hypnotized army dismantled, Kattoraki cries for mercy and promises you wealth and power if you let him free. But you don&apos;t agree with it, and vanish it to the prisoner&apos;s cellar.</desc>
     <commander id="282" />
     <deck>
       <card id="8136" name="Shore Scourer" />
@@ -62351,7 +62351,7 @@
     <id>7020</id>
     <name>After the Justice</name>
     <energy>18</energy>
-    <desc>After the imprisonment of Kattoraki, you ask the inhabitants of Beetleton Bunker to unify all the tribe's factions, because you experienced first hand that if the factions are united, the potential is unlimited.</desc>
+    <desc>After the imprisonment of Kattoraki, you ask the inhabitants of Beetleton Bunker to unify all the tribe&apos;s factions, because you experienced first hand that if the factions are united, the potential is unlimited.</desc>
     <commander id="472" />
     <deck>
       <card id="7235" name="Shell Shaman" />
@@ -62421,7 +62421,7 @@
   </mission>
   <mission>
     <id>7023</id>
-    <name>The Nophora's Cave</name>
+    <name>The Nophora&apos;s Cave</name>
     <energy>18</energy>
     <desc>At the exact time you put a foot inside of the Cave, the floor shakes indicating that Nophora knows about your presence. You will need all of your skill and a huge amount of luck to succeed on this mission.</desc>
     <commander id="472" />
@@ -62447,7 +62447,7 @@
     <id>7024</id>
     <name>Facing Nophora</name>
     <energy>18</energy>
-    <desc>When you reach the Lair, in that exact moment, Nophora emerges, attacking you fiercely. You use all your capabilities to avoid it and face the Katto's Sword, but Nophora is determined to kill you this time.</desc>
+    <desc>When you reach the Lair, in that exact moment, Nophora emerges, attacking you fiercely. You use all your capabilities to avoid it and face the Katto&apos;s Sword, but Nophora is determined to kill you this time.</desc>
     <commander id="472" />
     <deck>
       <card id="6192" name="Buzzing Elytrite" />
@@ -62471,7 +62471,7 @@
     <id>7025</id>
     <name>The Success</name>
     <energy>18</energy>
-    <desc>You reach the sword and, in the exact moment that you have it in your power, a giant rock falls on Nophora, restraining it and giving you a safe path to flee. It's a miracle. Now on Beetleton Bunker, you finally complete your goal: the insect tribe is united.</desc>
+    <desc>You reach the sword and, in the exact moment that you have it in your power, a giant rock falls on Nophora, restraining it and giving you a safe path to flee. It&apos;s a miracle. Now on Beetleton Bunker, you finally complete your goal: the insect tribe is united.</desc>
     <commander id="472" />
     <deck>
       <card id="6295" name="Creeperbots" />
@@ -62544,7 +62544,7 @@
     <id>7028</id>
     <name>No delicacies to be found</name>
     <energy>18</energy>
-    <desc>You pass through the places where there are more inhabitants and buildings. The less inhospitable areas and far from the bubbling hot lava, but you can't find where to get what you're looking for.</desc>
+    <desc>You pass through the places where there are more inhabitants and buildings. The less inhospitable areas and far from the bubbling hot lava, but you can&apos;t find where to get what you&apos;re looking for.</desc>
     <commander id="340" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -62592,7 +62592,7 @@
     <id>7030</id>
     <name>Finally a clue</name>
     <energy>18</energy>
-    <desc>You speak with Kuroilong and Howaito and they contradict each other in their stories. One says that he did hear about it and the other assures that this is false. Something in Howaito's look makes you suspicious.</desc>
+    <desc>You speak with Kuroilong and Howaito and they contradict each other in their stories. One says that he did hear about it and the other assures that this is false. Something in Howaito&apos;s look makes you suspicious.</desc>
     <commander id="286" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -62760,7 +62760,7 @@
     <id>7037</id>
     <name>Fire!</name>
     <energy>18</energy>
-    <desc>After the first bite, you discover that they are amazingly delicious. As you sweat and tear your eyes up from all the heat, you think that this really could be a big deal. Luckily, the dragon didn't know that you are a fan of spicy food.</desc>
+    <desc>After the first bite, you discover that they are amazingly delicious. As you sweat and tear your eyes up from all the heat, you think that this really could be a big deal. Luckily, the dragon didn&apos;t know that you are a fan of spicy food.</desc>
     <commander id="293" />
     <deck>
       <card id="8107" name="Firework Explosive" />
@@ -62809,7 +62809,7 @@
     <id>7039</id>
     <name>Spark the Tribe Leader</name>
     <energy>18</energy>
-    <desc>Spark tells you that if you want to unify the proud Dragon tribe, you need to defeat the principal cause for this faction's rupture: Vulcanos.</desc>
+    <desc>Spark tells you that if you want to unify the proud Dragon tribe, you need to defeat the principal cause for this faction&apos;s rupture: Vulcanos.</desc>
     <commander id="468" />
     <deck>
       <card id="7131" name="Xovrus, Death's End" />
@@ -62881,7 +62881,7 @@
     <id>7042</id>
     <name>The top of the Volcano</name>
     <energy>18</energy>
-    <desc>You can see that Vulcanos is waiting for you. Now it's even bigger and more aggressive than in your previous encounter, but you notice that also it is slower. Besides its power and with all the lava surrounding you, you manage to defeat it without big issues.</desc>
+    <desc>You can see that Vulcanos is waiting for you. Now it&apos;s even bigger and more aggressive than in your previous encounter, but you notice that also it is slower. Besides its power and with all the lava surrounding you, you manage to defeat it without big issues.</desc>
     <commander id="468" />
     <deck>
       <card id="2006" name="Zhulong" />
@@ -62977,7 +62977,7 @@
     <id>7046</id>
     <name>Following the Breadcrumbs</name>
     <energy>18</energy>
-    <desc>You and your party travel to the mountains to investigate. There, you find scattered clothes and equipment. Meanwhile, in the distance, furious croaks can be heard coming from all directions, you've been ambushed!</desc>
+    <desc>You and your party travel to the mountains to investigate. There, you find scattered clothes and equipment. Meanwhile, in the distance, furious croaks can be heard coming from all directions, you&apos;ve been ambushed!</desc>
     <commander id="367" />
     <deck>
       <card id="1333" name="Steelcat Mechanist" />
@@ -63001,7 +63001,7 @@
     <id>7047</id>
     <name>Unexpected Help</name>
     <energy>18</energy>
-    <desc>You've been surrounded, apparently, by the Lost tribe that you were looking for, but also by a considerable group of ferocious lava frogs that suddenly attacks everyone. You get to fight alongside the tribe against them.</desc>
+    <desc>You&apos;ve been surrounded, apparently, by the Lost tribe that you were looking for, but also by a considerable group of ferocious lava frogs that suddenly attacks everyone. You get to fight alongside the tribe against them.</desc>
     <commander id="269" />
     <deck>
       <card id="1333" name="Steelcat Mechanist" />
@@ -63049,7 +63049,7 @@
     <id>7049</id>
     <name>Unlikely Alloys</name>
     <energy>18</energy>
-    <desc>The Tech tribe lend you their latest invention: B4RN4B1. Altogether with the Lost tribe, you've returned to find out that Worf is alive and it is marching into the Wastes. Everyone agrees to fight to stop it.</desc>
+    <desc>The Tech tribe lend you their latest invention: B4RN4B1. Altogether with the Lost tribe, you&apos;ve returned to find out that Worf is alive and it is marching into the Wastes. Everyone agrees to fight to stop it.</desc>
     <commander id="413" />
     <deck>
       <card id="1333" name="Steelcat Mechanist" />
@@ -63073,7 +63073,7 @@
     <id>7050</id>
     <name>Remnants of the storm</name>
     <energy>18</energy>
-    <desc>After bringing peace to the Wastes by defeating the evil Worf, there are rumors coming from a town about missing people. You've been asked to investigate it for a generous reward.</desc>
+    <desc>After bringing peace to the Wastes by defeating the evil Worf, there are rumors coming from a town about missing people. You&apos;ve been asked to investigate it for a generous reward.</desc>
     <commander id="269" />
     <deck>
       <card id="1033" name="Valiant Charger" />
@@ -63145,7 +63145,7 @@
     <id>7053</id>
     <name>Under Pressure</name>
     <energy>18</energy>
-    <desc>Once you reach your destination, you only find an alley with a door. After knocking, you're requested with a password. You've been discovered and surrounded by more thug frogs.</desc>
+    <desc>Once you reach your destination, you only find an alley with a door. After knocking, you&apos;re requested with a password. You&apos;ve been discovered and surrounded by more thug frogs.</desc>
     <commander id="264" />
     <deck>
       <card id="2138" name="Magma Cougar" />
@@ -63193,7 +63193,7 @@
     <id>7055</id>
     <name>Light shines upon the city once more</name>
     <energy>18</energy>
-    <desc>You managed, barely, to stop the frenzied frog and unmask its true identity: Lunatic Paul. He intended to create its own cult by fusing genes from other tribes into the lava minions, but you've put an end to its evil scheme.</desc>
+    <desc>You managed, barely, to stop the frenzied frog and unmask its true identity: Lunatic Paul. He intended to create its own cult by fusing genes from other tribes into the lava minions, but you&apos;ve put an end to its evil scheme.</desc>
     <commander id="367" />
     <deck>
       <card id="2138" name="Magma Cougar" />
@@ -63241,7 +63241,7 @@
     <id>7057</id>
     <name>The Problem</name>
     <energy>18</energy>
-    <desc>Atlatl comments to you that there's a reason for the tribes to be divided: Caesar. A being that never stops creating problems between the factions because it simply loves to create chaos and destruction.</desc>
+    <desc>Atlatl comments to you that there&apos;s a reason for the tribes to be divided: Caesar. A being that never stops creating problems between the factions because it simply loves to create chaos and destruction.</desc>
     <commander id="367" />
     <deck>
       <card id="5239" name="Knightly Grumplo" />
@@ -63265,7 +63265,7 @@
     <id>7058</id>
     <name>Looking for Caesar</name>
     <energy>18</energy>
-    <desc>As you experienced before, Caesar is slippery. So, you ask Atlatl if he knows where to find it. He tells you that there's actually some rumors about some stolen weapons, between the scouts of the factions.</desc>
+    <desc>As you experienced before, Caesar is slippery. So, you ask Atlatl if he knows where to find it. He tells you that there&apos;s actually some rumors about some stolen weapons, between the scouts of the factions.</desc>
     <commander id="367" />
     <deck>
       <card id="6199" name="Solblade" />
@@ -63289,7 +63289,7 @@
     <id>7059</id>
     <name>A Fast Research</name>
     <energy>18</energy>
-    <desc>You've spotted a group of scouts fighting intensely. As you come closer to stop the fight, you can recognize Caesar disguised as a Wyld faction scout laughing at the distance with a stolen box.</desc>
+    <desc>You&apos;ve spotted a group of scouts fighting intensely. As you come closer to stop the fight, you can recognize Caesar disguised as a Wyld faction scout laughing at the distance with a stolen box.</desc>
     <commander id="367" />
     <deck>
       <card id="5202" name="Alchebian" />
@@ -63313,7 +63313,7 @@
     <id>7060</id>
     <name>A Fast Pursuit</name>
     <energy>18</energy>
-    <desc>Your party begins pursuing Caesar and when you think you've lost him, Atlatl spots him and helps you to corner him. Caesar starts to attack you fiercely, he is stronger and faster now than he ever was!</desc>
+    <desc>Your party begins pursuing Caesar and when you think you&apos;ve lost him, Atlatl spots him and helps you to corner him. Caesar starts to attack you fiercely, he is stronger and faster now than he ever was!</desc>
     <commander id="367" />
     <deck>
       <card id="5238" name="Frostfire Apprentice" />
@@ -63337,7 +63337,7 @@
     <id>7061</id>
     <name>The Unification</name>
     <energy>18</energy>
-    <desc>After a tough battle, you capture Caesar and show the evidence of his plan to prevent the tribe unification publicly. After that, Caesar is imprisoned forever, next to Paul. You've accomplished your mission to unify another tribe.</desc>
+    <desc>After a tough battle, you capture Caesar and show the evidence of his plan to prevent the tribe unification publicly. After that, Caesar is imprisoned forever, next to Paul. You&apos;ve accomplished your mission to unify another tribe.</desc>
     <commander id="367" />
     <deck>
       <card id="2223" name="Stalker Hextongue" />
@@ -63529,7 +63529,7 @@
   </mission>
   <mission>
     <id>7069</id>
-    <name>Gurk's Treason</name>
+    <name>Gurk&apos;s Treason</name>
     <energy>18</energy>
     <desc>In the middle of the fight, you and your allies find out that Gurk has turned rogue. He is the one who has made deals with a group of avians who seek to destroy the Scriptorium.</desc>
     <commander id="269" />
@@ -63723,7 +63723,7 @@
     <id>7077</id>
     <name>Second Challenge</name>
     <energy>18</energy>
-    <desc>At the exact moment you reach the goal, you see a group of the fiercest fighters that you've ever seen before, waiting to fight with you, all at the same time. You manage to beat them, but you feel that you are almost fainting.</desc>
+    <desc>At the exact moment you reach the goal, you see a group of the fiercest fighters that you&apos;ve ever seen before, waiting to fight with you, all at the same time. You manage to beat them, but you feel that you are almost fainting.</desc>
     <commander id="471" />
     <deck>
       <card id="6231" name="Firemouth Moth" />
@@ -63747,7 +63747,7 @@
     <id>7078</id>
     <name>Final Challenge</name>
     <energy>18</energy>
-    <desc>Ashanti stands up in front of you and praises your skills but, you still need to beat him in combat. He is fast and doesn't have any mercy on his attacks. You don't know how but you defeat him with your remaining energy.</desc>
+    <desc>Ashanti stands up in front of you and praises your skills but, you still need to beat him in combat. He is fast and doesn&apos;t have any mercy on his attacks. You don&apos;t know how but you defeat him with your remaining energy.</desc>
     <commander id="471" />
     <deck>
       <card id="6173" name="Toxophilite Watcher" />
@@ -63795,7 +63795,7 @@
     <id>7080</id>
     <name>Rise of the general</name>
     <energy>18</energy>
-    <desc>You arrive at the Stormy Seastone Citadel to realize that it was taken over by the powerful General Naglar Chainsawpaw.</desc>
+    <desc>You arrive at the Stormy Seastone Citadel to realize that it was taken over by the powerful General Naglar Chainsawpaw. </desc>
     <commander id="200" />
     <deck>
       <card id="1331" name="Fallen Soldiers" />
@@ -63843,7 +63843,7 @@
     <id>7082</id>
     <name>Agents of chaos</name>
     <energy>18</energy>
-    <desc>In a matter of time, some spies realized that you've been asking too many questions. Because of that, they sent Agents of Chaos to catch you.</desc>
+    <desc>In a matter of time, some spies realized that you&apos;ve been asking too many questions. Because of that, they sent Agents of Chaos to catch you.</desc>
     <commander id="200" />
     <deck>
       <card id="6165" name="Skelepede" />
@@ -63891,7 +63891,7 @@
     <id>7084</id>
     <name>Freezing scream</name>
     <energy>18</energy>
-    <desc>From the wave of enemies, you hear a deafening war cry: it's Katerina Snowfang, an officer of General Chainsawpaw, ready to destroy you.</desc>
+    <desc>From the wave of enemies, you hear a deafening war cry: it&apos;s Katerina Snowfang, an officer of General Chainsawpaw, ready to destroy you.</desc>
     <commander id="231" />
     <deck>
       <card id="6165" name="Skelepede" />
@@ -63939,7 +63939,7 @@
     <id>7086</id>
     <name>Crazy for power</name>
     <energy>18</energy>
-    <desc>Katerina mentions to you, that General Chainsawpaw is insane. That's why she will help you to get to him. But first, you must make your way to the throne, fighting against all the underlings.</desc>
+    <desc>Katerina mentions to you, that General Chainsawpaw is insane. That&apos;s why she will help you to get to him. But first, you must make your way to the throne, fighting against all the underlings.</desc>
     <commander id="200" />
     <deck>
       <card id="6165" name="Skelepede" />
@@ -63963,7 +63963,7 @@
     <id>7087</id>
     <name>Undead vanguard</name>
     <energy>18</energy>
-    <desc>Thanks to Katerina's help, both of you were able to reach the castle, ready to face the most powerful soldiers of the General.</desc>
+    <desc>Thanks to Katerina&apos;s help, both of you were able to reach the castle, ready to face the most powerful soldiers of the General.</desc>
     <commander id="229" />
     <deck>
       <card id="6165" name="Skelepede" />
@@ -63987,7 +63987,7 @@
     <id>7088</id>
     <name>Crimson redemption</name>
     <energy>18</energy>
-    <desc>During the fight against the General's powerful guard, Katerina has been injured and will no longer be able to join you on your quest, you must keep moving forward and face the General alone.</desc>
+    <desc>During the fight against the General&apos;s powerful guard, Katerina has been injured and will no longer be able to join you on your quest, you must keep moving forward and face the General alone.</desc>
     <commander id="200" />
     <deck>
       <card id="6165" name="Skelepede" />
@@ -64225,4 +64225,3 @@
     </deck>
   </mission>
 </root>
-

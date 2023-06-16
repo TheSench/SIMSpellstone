@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
   <!-- Commanders       - 1-899 -->
@@ -834,8 +833,8 @@
   <!-- <icon_bundle>	bundle tag -->
   <unitType>
     <id>0</id>
-    <name />
-    <icon />
+    <name></name>
+    <icon></icon>
     <hidden>1</hidden>
   </unitType>
   <unitType>
@@ -923,14 +922,14 @@
     <id>14</id>
     <tribe>1</tribe>
     <name>Bear</name>
-    <icon />
+    <icon></icon>
     <hidden>1</hidden>
   </unitType>
   <unitType>
     <id>15</id>
     <tribe>1</tribe>
     <name>Token</name>
-    <icon />
+    <icon></icon>
     <hidden>1</hidden>
   </unitType>
   <unitType>
@@ -943,7 +942,7 @@
     <id>17</id>
     <name>Knight</name>
     <tribe>1</tribe>
-    <icon />
+    <icon></icon>
     <hidden>1</hidden>
   </unitType>
   <!-- =================== -->
@@ -1054,4 +1053,3 @@
     <visible>0</visible>
   </cardSet>
 </root>
-

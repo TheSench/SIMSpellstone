@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
   <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
@@ -30235,4 +30234,3 @@
     </upgrade>
   </unit>
 </root>
-

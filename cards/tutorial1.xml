@@ -1164,7 +1164,7 @@
         <line>
           <skill>silence</skill>
           <commander>raven</commander>
-          <text>This creature has Silence; enemy creatures dealt damage by it have all of their skills removed temporarily.</text>
+          <text>This creature has Silence; enemy creatures dealt damage by it have all of their skills removed temporarily. </text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1377,4 +1377,3 @@
     </step>
   </guide>
 </root>
-

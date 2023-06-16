@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!-- ID's based on set and faction. -->
   <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
@@ -1841,7 +1840,7 @@
     <card_type>1</card_type>
     <name>Decim, Flame Incarnate</name>
     <portrait>flamebender</portrait>
-    <desc />
+    <desc></desc>
     <attack>0</attack>
     <health>18</health>
     <rarity>3</rarity>
@@ -7178,7 +7177,7 @@
       <skill id="imbue" s="nullify" x="2" />
       <skill id="protect" x="2" />
       <skill id="protect" x="1" all="1" />
-      &gt;
+      >
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -9431,7 +9430,7 @@
     <name>Toknight</name>
     <portrait>Portrait_Knight_001</portrait>
     <asset_bundle>109</asset_bundle>
-    <desc />
+    <desc></desc>
     <health>35</health>
     <rarity>4</rarity>
     <type>1</type>
@@ -9464,7 +9463,7 @@
     <name>Knight of Representation</name>
     <portrait>Portrait_Knight_002</portrait>
     <asset_bundle>109</asset_bundle>
-    <desc />
+    <desc></desc>
     <health>35</health>
     <rarity>4</rarity>
     <type>1</type>
@@ -9497,7 +9496,7 @@
     <name>Knight of Vengeance</name>
     <portrait>Portrait_Knight_003</portrait>
     <asset_bundle>109</asset_bundle>
-    <desc />
+    <desc></desc>
     <health>35</health>
     <rarity>4</rarity>
     <type>1</type>
@@ -12737,4 +12736,3 @@
     </upgrade>
   </unit>
 </root>
-
