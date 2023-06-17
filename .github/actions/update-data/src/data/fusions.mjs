@@ -3,7 +3,7 @@ import { getJsonFromSynapse } from "./getXmlFromSynapse.mjs";
 
 var fusionsJson;
 export async function getFusionsJs() {
-  fusionsJson = getFusionsJson();
+  fusionsJson = await getFusionsJson();
   var jsFile = '"use strict"\n\n' +
     'var FUSIONS = ' + stableStringify(fusionsJson, null, '\t') + ';';
   return jsFile;
@@ -18,7 +18,7 @@ async function getFusionsJson() {
     rawRootMaps: {
       fusion_recipe: function ([name, element]) {
         var baseId = element.resource.map(it => it['@card_id']).find(it => it);
-        fusions[baseId] = element.card_id;
+        fusions[baseId] = element.card_id.toString();
       }
     }
   };
@@ -27,3 +27,5 @@ async function getFusionsJson() {
 
   return fusions;
 }
+
+await getFusionsJs();
