@@ -44,7 +44,8 @@ async function getSkillsJson() {
     rootNodes: ['skillType'],
     rawRootMaps: {
       skillType: function ([name, skill]) {
-        const id = skill['@id'];
+        const id = skill.id;
+        if (['displayEffect', '0'].includes(id.toString())) return;
         json[id] = {
           desc: skill.desc,
           icon: (iconRemappings[id] || skill.icon),
