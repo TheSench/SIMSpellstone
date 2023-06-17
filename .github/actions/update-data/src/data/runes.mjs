@@ -1,6 +1,5 @@
 import { stableStringify } from "./stableStringify.mjs";
 import { makeAPICall } from "./spellstoneAPI.mjs";
-import { convertedValue } from "./xmlToJson.mjs";
 
 var runesJson;
 
@@ -35,25 +34,28 @@ function convertRuneObject(object) {
       delete object[key];
     } else {
       var value = object[key];
-      if (typeof value === "object") {
+      if (Array.isArray(value)) {
+        object[key] = value.map(convertRuneObject);
+      } else if (typeof value === "object") {
         object[key] = convertRuneObject(value);
       } else {
         object[key] = convertedValue(key, value, {
-          conversions: {
-            attack: parseFloat,
-            health: parseFloat,
-            cost: parseFloat,
-            rarity: parseFloat,
-            x: parseFloat,
-            c: parseFloat,
-            mult: parseFloat,
-            min_bonus: parseFloat
-          },
-          arrayRoots: {}
+          attack: parseFloat,
+          health: parseFloat,
+          cost: parseFloat,
+          rarity: parseFloat,
+          x: parseFloat,
+          c: parseFloat,
+          mult: parseFloat,
+          min_bonus: parseFloat
         });
       }
     }
   });
 
   return object;
+}
+
+function convertedValue(name, originalValue, conversions) {
+  return (conversions[name] || (it => it))(originalValue);
 }
