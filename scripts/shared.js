@@ -948,11 +948,12 @@ function addMissionBGE(battlegrounds, campaignID, missionLevel) {
         var id = campaign.battleground_id;
         if (id) {
             var battleground = BATTLEGROUNDS[id];
-            missionLevel = Number(missionLevel) - 1; // Convert to 0-based
-            if (!battleground.starting_level || Number(battleground.starting_level) <= missionLevel) {
+            var effectiveLevel = Math.min(missionLevel, Number(battleground.max_level) || Infinity);
+            effectiveLevel = Number(effectiveLevel) - 1; // Convert to 0-based
+            if (!battleground.starting_level || Number(battleground.starting_level) <= effectiveLevel) {
                 if (battleground.scale_with_level) {
                     battleground = JSON.parse(JSON.stringify(battleground));
-                    var levelsToScale = missionLevel - Number(battleground.starting_level);
+                    var levelsToScale = effectiveLevel - Number(battleground.starting_level);
                     for (var i = 0; i < battleground.effect.length; i++) {
                         var effect = battleground.effect[i];
                         effect.mult = effect.base_mult + effect.mult * levelsToScale;
