@@ -46,7 +46,7 @@ async function getCampaignsJson() {
   };
   var options = {
     rootNodes: ['location', 'mission', 'campaign'],
-    arrayRoots: { 'find_item': 'find_item' },
+    arrayRoots: { 'find_item': 'find_item', 'mission_id': 'mission_id' },
     rawRootMaps: {
       location: addLocation(locations),
       campaign: addCampaign(campaigns),
@@ -68,10 +68,11 @@ function addMission(missions) {
   const addToMissions = addToMap(missions);
   return function ([name, element]) {
     addToMissions({
-      id: element.id,
-      name,
+      id: element.id.toString(),
+      name: element.name,
       commander: {
-        id: element.commander['@id']
+        id: element.commander['@id'],
+        level: element.commander['@level']
       },
       deck: element.deck.card.map(function (card) {
         const level = card['@level'];
@@ -98,12 +99,12 @@ function addCampaign(campaigns) {
   var addToCampaigns = addToMap(campaigns);
   return function ([name, element]) {
     addToCampaigns({
-      id: element.id,
-      name,
-      location_id: element.location_id,
-      side_mission: element.side_mission,
-      battleground_id: element.battleground_id,
-      missions: element.missions.mission_id,
+      id: element.id.toString(),
+      name: element.name,
+      location_id: element.location_id.toString(),
+      side_mission: element.side_mission?.toString(),// && element.side_mission === "1",
+      battleground_id: element.battleground_id?.toString(),
+      missions: element.missions.mission_id?.map(it => it.toString()),
       items: (element.find_item || []).reduce(function (items, item) {
         items[item['@id']] = parseFloat(item['@drop_per_energy']);
         return items;
@@ -114,9 +115,9 @@ function addCampaign(campaigns) {
 
 function addLocation(locations) {
   var addToLocations = addToMap(locations);
-  return function (element) {
+  return function ([name, element]) {
     addToLocations({
-      id: element.id,
+      id: element.id.toString(),
       name: element.name
     });
   }

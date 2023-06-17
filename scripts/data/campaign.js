@@ -101,6 +101,46 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
+	"25": {
+		"id": "25",
+		"name": "Stormy Seastone Citadel"
+	},
+	"26": {
+		"id": "26",
+		"name": "World's Center"
+	},
+	"27": {
+		"id": "27",
+		"name": "Return to Elaria"
+	},
+	"28": {
+		"id": "28",
+		"name": "Healed Dawnglow"
+	},
+	"29": {
+		"id": "29",
+		"name": "Return to Luminis"
+	},
+	"30": {
+		"id": "30",
+		"name": "Return to Karthos"
+	},
+	"31": {
+		"id": "31",
+		"name": "Return to Tarragon Peak"
+	},
+	"32": {
+		"id": "32",
+		"name": "Gladius Scriptorium"
+	},
+	"33": {
+		"id": "33",
+		"name": "Skyhaven Assault"
+	},
+	"34": {
+		"id": "34",
+		"name": "Conflux Convergence"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -11328,7 +11368,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "251",
-		"name": "Call From the Emperor "
+		"name": "Call From the Emperor"
 	},
 	"252": {
 		"commander": {
@@ -13011,7 +13051,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "332",
-		"name": "The Hidden Citadel "
+		"name": "The Hidden Citadel"
 	},
 	"333": {
 		"commander": {
@@ -13317,7 +13357,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "344",
-		"name": "Hidden Treasures "
+		"name": "Hidden Treasures"
 	},
 	"351": {
 		"commander": {
@@ -13722,7 +13762,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "364",
-		"name": "Final Round "
+		"name": "Final Round"
 	},
 	"1500": {
 		"commander": {
@@ -25502,7 +25542,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "5124",
-		"name": "Scanner Darkly "
+		"name": "Scanner Darkly"
 	},
 	"5125": {
 		"commander": {
@@ -27629,7 +27669,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "5160",
-		"name": "Burning the Furnace "
+		"name": "Burning the Furnace"
 	},
 	"5161": {
 		"commander": {
@@ -27975,7 +28015,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "5166",
-		"name": "Long Distance "
+		"name": "Long Distance"
 	},
 	"5167": {
 		"commander": {
@@ -28667,7 +28707,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "5178",
-		"name": "Downstairs Rumble "
+		"name": "Downstairs Rumble"
 	},
 	"5179": {
 		"commander": {
@@ -28728,7 +28768,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "5179",
-		"name": "Nice View "
+		"name": "Nice View"
 	},
 	"5180": {
 		"commander": {
@@ -32217,7 +32257,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "5239",
-		"name": " Magistrate Quarters"
+		"name": "Magistrate Quarters"
 	},
 	"5240": {
 		"commander": {
