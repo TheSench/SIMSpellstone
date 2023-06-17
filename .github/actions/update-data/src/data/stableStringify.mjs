@@ -46,7 +46,7 @@ export function stableStringify(obj, replacer, space) {
     if (isArray(node)) {
       var out = [];
       for (var i = 0; i < node.length; i++) {
-        var item = stringify(node, i, node[i], level + 1) || json.stringify(null);
+        var item = stringify(node, i, node[i], level + 1) || JSON.stringify(null);
         out.push(indent + space + item);
       }
       return '[' + out.join(',') + (out.length ? indent : '') + ']';
