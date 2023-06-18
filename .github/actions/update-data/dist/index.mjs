@@ -4763,7 +4763,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 7155:
+/***/ 1455:
 /***/ (function(module, exports, __nccwpck_require__) {
 
 
@@ -4771,7 +4771,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const xml_parser_xo_1 = __importDefault(__nccwpck_require__(1377));
+const xml_parser_xo_1 = __importDefault(__nccwpck_require__(7028));
 function newLine(state) {
     if (!state.options.indentation && !state.options.lineSeparator)
         return;
@@ -4955,7 +4955,7 @@ exports["default"] = formatXml;
 
 /***/ }),
 
-/***/ 1377:
+/***/ 7028:
 /***/ ((module, exports) => {
 
 
@@ -5699,8 +5699,8 @@ function parseArrayOfInt(values) {
 function parseBool(value) {
   return value === '1';
 }
-// EXTERNAL MODULE: ../../../node_modules/xml-formatter/dist/cjs/index.js
-var cjs = __nccwpck_require__(7155);
+// EXTERNAL MODULE: ./node_modules/xml-formatter/dist/cjs/index.js
+var cjs = __nccwpck_require__(1455);
 // EXTERNAL MODULE: ../common/rootDir.mjs
 var rootDir = __nccwpck_require__(4789);
 // EXTERNAL MODULE: ./node_modules/fast-xml-parser/src/fxp.js
