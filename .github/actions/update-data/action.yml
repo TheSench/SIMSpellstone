@@ -3,6 +3,12 @@ description: 'Update data with latest from Synapse'
 inputs:
   working-directory: 
     required: true
+  spellstone-user:
+    required: true
+  spellstone-password:
+    required: true
+  spellstone-salt:
+    required: true
 runs:
   using: 'node16'
   main: 'dist/index.mjs'
