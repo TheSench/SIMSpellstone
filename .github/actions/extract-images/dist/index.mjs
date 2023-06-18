@@ -45001,7 +45001,7 @@ module.exports = __toCommonJS(src_exports);
 let _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve('.');
 
 function setRootDir(rootDir) {
-    _rootDir = rootDir;
+    _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve(rootDir);
 }
 
 function getRootDir() {

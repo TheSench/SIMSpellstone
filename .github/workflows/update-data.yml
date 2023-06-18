@@ -1,13 +1,7 @@
 name: Update data
 on:
   schedule:
-    - cron: '0 1 * * *'
-    - cron: '0 3 * * *'
-    - cron: '0 5 * * *'
-    - cron: '0 7 * * *'
-    - cron: '0 9 * * *'
-    - cron: '0 11 * * *'
-    - cron: '0 13 * * *'
+    - cron: '0 10-22/2 * * *'
   workflow_dispatch:
 
 jobs:

@@ -3,6 +3,7 @@ declare -a actions=("download-files" "extract-assets" "extract-images" "resize-i
  
 for action in "${actions[@]}"
 do
+    echo "Building $action"
     pushd $action
     npm install
     npm run build

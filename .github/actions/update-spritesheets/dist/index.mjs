@@ -45001,7 +45001,7 @@ module.exports = __toCommonJS(src_exports);
 let _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve('.');
 
 function setRootDir(rootDir) {
-    _rootDir = rootDir;
+    _rootDir = path__WEBPACK_IMPORTED_MODULE_0__.resolve(rootDir);
 }
 
 function getRootDir() {
@@ -45086,7 +45086,7 @@ async function createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup
     while (offset < images) {
         const lastImageInSheet = imageFileNames[offset + 99];
         const lastImageName = lastImageInSheet && (0,path__WEBPACK_IMPORTED_MODULE_2__.parse)(lastImageInSheet).name;
-        if (spriteLookup[lastImageName]) {
+        if (spriteLookup[lastImageName] !== undefined) {
             offset += 100;
             sheetIndex++;
         } else {
@@ -45109,7 +45109,7 @@ async function createSheet(imageFileNames, spritePath, cssFilePath, spriteLookup
             let x = 84 * (i % dimensions);
             let y = width * Math.floor(i / dimensions);
             let imageName = (0,path__WEBPACK_IMPORTED_MODULE_2__.parse)(fileName).name;
-            if (!spriteLookup[imageName]) {
+            if (spriteLookup[imageName] === undefined) {
                 const cssClass = `.${cssClassPrefix}-${imageName}`;
                 const cssStyle = `background-position: -${x}px -${y}px; ${backgroundImage}`;
                 (0,fs__WEBPACK_IMPORTED_MODULE_0__.appendFileSync)(cssFilePath, `${cssClass} { ${cssStyle} }\n`);
