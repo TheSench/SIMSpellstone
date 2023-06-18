@@ -1,4 +1,4 @@
-name: Update images
+name: Update data
 on:
   schedule:
     - cron: '0 1 * * *'
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-images:
+  update-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,7 +21,7 @@ jobs:
           token: ${{ secrets.BOT_TOKEN }}
 
       - name: Update Data
-        uses: ./.github/actions/updata-data
+        uses: ./.github/actions/update-data
         with:
           working-directory: ${{ env.GITHUB_WORKSPACE }}
           spellstone-user: ${{ secrets.SPELLSTONE_USER }}

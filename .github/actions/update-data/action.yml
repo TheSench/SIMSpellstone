@@ -1,5 +1,5 @@
-name: 'Update Spritesheets'
-description: 'Update spritesheets with images'
+name: 'Update Dat'
+description: 'Update data with latest from Synapse'
 inputs:
   working-directory: 
     required: true
