@@ -5198,6 +5198,14 @@ exports["default"] = parseXml;
 
 /***/ }),
 
+/***/ 7396:
+/***/ ((module) => {
+
+module.exports = eval("require")("@actions/core");
+
+
+/***/ }),
+
 /***/ 9491:
 /***/ ((module) => {
 
@@ -5302,7 +5310,7 @@ function pathFromRoot(...pathParts) {
 
 /***/ }),
 
-/***/ 6828:
+/***/ 3676:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 
@@ -5315,13 +5323,13 @@ __nccwpck_require__.d(__webpack_exports__, {
 var external_fs_ = __nccwpck_require__(7147);
 // EXTERNAL MODULE: external "path"
 var external_path_ = __nccwpck_require__(1017);
-// EXTERNAL MODULE: ./node_modules/@actions/core/lib/core.js
-var core = __nccwpck_require__(2186);
+// EXTERNAL MODULE: ./node_modules/@vercel/ncc/dist/ncc/@@notfound.js?@actions/core
+var core = __nccwpck_require__(7396);
 // EXTERNAL MODULE: external "crypto"
 var external_crypto_ = __nccwpck_require__(6113);
 // EXTERNAL MODULE: external "https"
 var external_https_ = __nccwpck_require__(5687);
-;// CONCATENATED MODULE: ./src/data/spellstoneAPI.mjs
+;// CONCATENATED MODULE: ../common/spellstoneAPI.mjs
 
 
 
@@ -5395,6 +5403,8 @@ async function makeAPICallInner(message) {
         request.end();
     });
 }
+
+;// CONCATENATED MODULE: ./src/data/spellstoneAPI.mjs
 
 ;// CONCATENATED MODULE: ./src/data/stableStringify.mjs
 function stableStringify(obj, replacer, space) {
@@ -6750,7 +6760,7 @@ async function getXmlChangesInner(xmlFile) {
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(2186);
 /* harmony import */ var _common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(4789);
-/* harmony import */ var _data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(6828);
+/* harmony import */ var _data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(3676);
 
 
 

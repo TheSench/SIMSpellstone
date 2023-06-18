@@ -2677,6 +2677,14 @@ exports["default"] = _default;
 
 /***/ }),
 
+/***/ 396:
+/***/ ((module) => {
+
+module.exports = eval("require")("@actions/core");
+
+
+/***/ }),
+
 /***/ 491:
 /***/ ((module) => {
 
@@ -2781,7 +2789,7 @@ function pathFromRoot(...pathParts) {
 
 /***/ }),
 
-/***/ 119:
+/***/ 7:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 
@@ -2798,10 +2806,86 @@ var external_https_ = __nccwpck_require__(687);
 const external_querystring_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("querystring");
 // EXTERNAL MODULE: ../common/rootDir.mjs
 var rootDir = __nccwpck_require__(789);
+// EXTERNAL MODULE: ./node_modules/@vercel/ncc/dist/ncc/@@notfound.js?@actions/core
+var core = __nccwpck_require__(396);
 // EXTERNAL MODULE: external "crypto"
 var external_crypto_ = __nccwpck_require__(113);
-;// CONCATENATED MODULE: ./src/downloads/determineChanges.mjs
+;// CONCATENATED MODULE: ../common/spellstoneAPI.mjs
 
+
+
+
+const user = core.getInput('spellstone-user');
+const spellstoneAPI_password = core.getInput('spellstone-password');
+const salt = core.getInput('spellstone-salt');
+
+const responseCache = {};
+
+async function makeAPICall(message) {
+    console.time(`Calling API method: ${message}`);
+    const response = getCachedResponse(message) || await makeAPICallInner(message);
+    const cached = cacheResponse(message, response);
+    console.timeEnd(`Calling API method: ${message}`);
+    return cached;
+}
+
+function getCachedResponse(message) {
+    return responseCache[message];
+}
+
+function cacheResponse(message, response) {
+    responseCache[message] = response;
+    return responseCache[message];
+}
+
+async function makeAPICallInner(message) {
+    const client_time = Math.floor(Date.now() / 1000).toString();
+    const client_signature = (0,external_crypto_.createHash)('md5').update(client_time + spellstoneAPI_password + salt).digest('hex');
+    const postData = Object.entries({
+        password: spellstoneAPI_password,
+        unity: 'Unity2020_3_42',
+        platform: 'web',
+        client_version: '70',
+        client_time,
+        client_signature
+    }).map(([key, value]) =>
+        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+    ).join('&');
+
+    const options = {
+        hostname: 'spellstone.synapse-games.com',
+        port: 443,
+        path: `/api.php?message=${message}&user_id=${user}`,
+        postData,
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0',
+            'Content-Length': postData.length
+        }
+    };
+    return await new Promise((resolve, reject) => {
+        const request = external_https_.request(options, function (response) {
+            let data = '';
+            response.on('data', chunk => {
+                data += chunk;
+            });
+
+            response.on('end', () => {
+                resolve(JSON.parse(data));
+            });
+        }).on('error', err => {
+            reject(err);
+        });
+        request.on('error', error => {
+            reject(error);
+        });
+        request.write(postData);
+        request.end();
+    });
+}
+
+;// CONCATENATED MODULE: ./src/downloads/determineChanges.mjs
 
 
 
@@ -2810,18 +2894,7 @@ var external_crypto_ = __nccwpck_require__(113);
 
 async function determineChanges(user_id, password, salt) {
     console.time('downloadFiles');
-    const client_time = Math.floor(Date.now() / 1000);
-    const client_signature = (0,external_crypto_.createHash)('md5').update(client_time + password + salt).digest('hex');
-    const initData = await callApi({
-        message: 'init',
-        user_id,
-        password,
-        unity: 'Unity2020_3_42',
-        platform: 'web',
-        client_version: '70',
-        client_time,
-        client_signature
-    });
+    const initData = await makeAPICall('init');
     const assetBundles = {};
     Object.values(initData.asset_bundles)
         .sort((a, b) => a.bundle_name.localeCompare(b.bundle_name))
@@ -2854,39 +2927,6 @@ function loadOldAssetBundles(assetBundlesPath) {
     }
     const assetBundlesJson = external_fs_.readFileSync(assetBundlesPath, 'utf8');
     return JSON.parse(assetBundlesJson);
-}
-
-async function callApi(payload) {
-    const postData = external_querystring_namespaceObject.stringify(payload);
-
-    const options = {
-        hostname: 'spellstone.synapse-games.com',
-        port: 443,
-        path: `/api.php?${postData}`,
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'User-Agent': 'Mozilla/5.0'
-        }
-    };
-    return new Promise((resolve, reject) => {
-        const request = external_https_.request(options, function (response) {
-            let data = '';
-            response.on('data', chunk => {
-                data += chunk;
-            });
-
-            response.on('end', () => {
-                resolve(JSON.parse(data));
-            });
-        }).on('error', err => {
-            reject(err);
-        });
-        request.on('error', error => {
-            reject(error);
-        });
-        request.end();
-    });
 }
 
 // EXTERNAL MODULE: external "path"
@@ -2992,7 +3032,7 @@ async function tryDownloadFile(assetName) {
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(186);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(147);
-/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(119);
+/* harmony import */ var _downloads_index_mjs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(7);
 /* harmony import */ var _common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(789);
 
 
