@@ -7,9 +7,6 @@
     "lib": "lib",
     "test": "tests"
   },
-  "dependencies": {
-    "xml-formatter": "^3.4.1"
-  },
   "devDependencies": {
     "cypress": "^12.4.1",
     "grunt": "^1.5.3",
