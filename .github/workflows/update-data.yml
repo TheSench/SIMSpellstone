@@ -1,0 +1,57 @@
+name: Update images
+on:
+  schedule:
+    - cron: '0 1 * * *'
+    - cron: '0 3 * * *'
+    - cron: '0 5 * * *'
+    - cron: '0 7 * * *'
+    - cron: '0 9 * * *'
+    - cron: '0 11 * * *'
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.push.head.ref }}
+          token: ${{ secrets.BOT_TOKEN }}
+
+      - name: Update Data
+        uses: ./.github/actions/updata-data
+        with:
+          working-directory: ${{ env.GITHUB_WORKSPACE }}
+          spellstone-user: ${{ secrets.SPELLSTONE_USER }}
+          spellstone-password: ${{ secrets.SPELLSTONE_PASSWORD }}
+          spellstone-salt: ${{ secrets.SPELLSTONE_SALT }}
+
+      - name: Check for modified files
+        id: git-check
+        run: echo "modified=$(if [[ $(git status --porcelain) ]]; then echo "true"; else echo "false"; fi)" >> $GITHUB_OUTPUT
+
+      - name: Setup Node version
+        if: steps.git-check.outputs.modified == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Node dependencies
+        if: steps.git-check.outputs.modified == 'true'
+        run: npm ci
+
+      - name: Bundle changes
+        if: steps.git-check.outputs.modified == 'true'
+        run: npm run grunt images
+
+      - name: Push changes
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Jon Senchyna'
+          git config --global user.email 'TheSench@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git add .
+          git commit -m "Auto-update of Spellstone Images"
+          git push
