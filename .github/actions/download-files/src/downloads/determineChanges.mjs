@@ -2,23 +2,11 @@ import fs from 'fs';
 import https from 'https';
 import querystring from 'querystring';
 import { pathFromRoot } from '../../../common/rootDir.mjs';
-import { createHash } from 'crypto';
-
+import { makeAPICall } from '../../../common/spellstoneAPI.mjs';
 
 export async function determineChanges(user_id, password, salt) {
     console.time('downloadFiles');
-    const client_time = Math.floor(Date.now() / 1000);
-    const client_signature = createHash('md5').update(client_time + password + salt).digest('hex');
-    const initData = await callApi({
-        message: 'init',
-        user_id,
-        password,
-        unity: 'Unity2020_3_42',
-        platform: 'web',
-        client_version: '70',
-        client_time,
-        client_signature
-    });
+    const initData = await makeAPICall('init');
     const assetBundles = {};
     Object.values(initData.asset_bundles)
         .sort((a, b) => a.bundle_name.localeCompare(b.bundle_name))
@@ -51,37 +39,4 @@ function loadOldAssetBundles(assetBundlesPath) {
     }
     const assetBundlesJson = fs.readFileSync(assetBundlesPath, 'utf8');
     return JSON.parse(assetBundlesJson);
-}
-
-async function callApi(payload) {
-    const postData = querystring.stringify(payload);
-
-    const options = {
-        hostname: 'spellstone.synapse-games.com',
-        port: 443,
-        path: `/api.php?${postData}`,
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'User-Agent': 'Mozilla/5.0'
-        }
-    };
-    return new Promise((resolve, reject) => {
-        const request = https.request(options, function (response) {
-            let data = '';
-            response.on('data', chunk => {
-                data += chunk;
-            });
-
-            response.on('end', () => {
-                resolve(JSON.parse(data));
-            });
-        }).on('error', err => {
-            reject(err);
-        });
-        request.on('error', error => {
-            reject(error);
-        });
-        request.end();
-    });
 }
