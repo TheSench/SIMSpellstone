@@ -19,7 +19,6 @@ export async function getJsonFromSynapse(filename, options) {
 }
 
 export async function getXmlFromSynapse(filename) {
-  return getXmlFromGithub(filename);
   console.time('Retrieving ' + filename);
   const options = {
     hostname: 'spellstone.synapse-games.com',

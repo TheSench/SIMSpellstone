@@ -1,15 +1,12 @@
 import core from '@actions/core';
-import https from 'https';
 import { createHash } from 'crypto';
-import init from './initResponse.mjs';
+import https from 'https';
 
 const user = core.getInput('spellstone-user');
 const password = core.getInput('spellstone-password');
 const salt = core.getInput('spellstone-salt');
 
-const responseCache = {
-    init
-};
+const responseCache = {};
 
 export async function makeAPICall(message) {
     console.time(`Calling API method: ${message}`);

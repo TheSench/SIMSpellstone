@@ -27,5 +27,3 @@ async function getFusionsJson() {
 
   return fusions;
 }
-
-await getFusionsJs();
