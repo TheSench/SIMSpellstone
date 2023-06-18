@@ -672,16 +672,6 @@ var BATTLEGROUNDS = {
 			},
 			{
 				"all": "1",
-				"base": "health",
-				"effect_type": "skill",
-				"id": "protect",
-				"ignore_nullify": "1",
-				"mult": 0.1,
-				"x": 4,
-				"y": "1,5"
-			},
-			{
-				"all": "1",
 				"base": "attack",
 				"effect_type": "add_skill",
 				"id": "burn",
@@ -720,12 +710,6 @@ var BATTLEGROUNDS = {
 			},
 			{
 				"base": "health",
-				"effect_type": "scale_attack",
-				"mult": 0.15,
-				"y": "12"
-			},
-			{
-				"base": "health",
 				"effect_type": "add_skill",
 				"id": "armored",
 				"mult": 0.1,
@@ -739,6 +723,22 @@ var BATTLEGROUNDS = {
 				"mult": 0.1,
 				"x": 3,
 				"y": "16"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"x": 4,
+				"y": "1,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_attack",
+				"mult": 0.15,
+				"y": "12"
 			}
 		],
 		"id": "135",
@@ -2400,8 +2400,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "503",
 		"name": "Frostbite's Aura",
-		"scale_with_level": "1",
-		"starting_level": "26"
+		"scale_with_level": true,
+		"starting_level": 26
 	},
 	"504": {
 		"desc": "Nethergore Heals and Empowers all of his allies, increasing in strength as he levels up.",
@@ -2423,8 +2423,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "504",
 		"name": "Nethergore's Reckoning",
-		"scale_with_level": "1",
-		"starting_level": "26"
+		"scale_with_level": true,
+		"starting_level": 26
 	},
 	"505": {
 		"desc": "Fortune's Favor Heals and Empowers all of its allies, increasing in strength as it levels up.",
@@ -2446,8 +2446,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "505",
 		"name": "Fortune's Favoring",
-		"scale_with_level": "1",
-		"starting_level": "26"
+		"scale_with_level": true,
+		"starting_level": 26
 	},
 	"506": {
 		"desc": "All enemies start with a Tree of Life card.",
@@ -2650,8 +2650,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "510",
 		"name": "Dungeon's Despair",
-		"scale_with_level": "1",
-		"starting_level": "130"
+		"scale_with_level": true,
+		"starting_level": 130
 	},
 	"511": {
 		"desc": "Barrier and Barrier All skills are 50% more effective.",
@@ -2836,8 +2836,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "518",
 		"name": "Goblin's Treachery",
-		"scale_with_level": "1",
-		"starting_level": "26"
+		"scale_with_level": true,
+		"starting_level": 26
 	},
 	"519": {
 		"desc": "Corrosive skills are 50% more effective.",
@@ -3245,12 +3245,6 @@ var BATTLEGROUNDS = {
 				"z": "1"
 			},
 			{
-				"base": "health",
-				"effect_type": "scale_health",
-				"mult": 5,
-				"rarity": 1
-			},
-			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
@@ -3369,6 +3363,12 @@ var BATTLEGROUNDS = {
 				"mult": 5,
 				"s": "counterburn",
 				"z": "1"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 5,
+				"rarity": 1
 			}
 		],
 		"id": "546",
@@ -3757,12 +3757,6 @@ var BATTLEGROUNDS = {
 				"z": "3"
 			},
 			{
-				"base": "health",
-				"effect_type": "scale_health",
-				"mult": 1,
-				"rarity": 3
-			},
-			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
@@ -3905,6 +3899,12 @@ var BATTLEGROUNDS = {
 				"mult": 1,
 				"s": "valor",
 				"z": "3"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1,
+				"rarity": 3
 			}
 		],
 		"id": "557",
@@ -4042,9 +4042,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2001",
+		"max_level": 7,
 		"name": "Scylla's Presence",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2002": {
 		"desc": "Enemies become stronger with each passing Mastery level.",
@@ -4058,9 +4059,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2002",
+		"max_level": 7,
 		"name": "Riptide Nightsong",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2003": {
 		"desc": "Enemies become stronger with each passing Mastery level.",
@@ -4074,9 +4076,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2003",
+		"max_level": 7,
 		"name": "Riptide Nightsong",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2004": {
 		"desc": "Enemies become stronger with each passing Mastery level.",
@@ -4090,9 +4093,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2004",
+		"max_level": 7,
 		"name": "Riptide Nightsong",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2005": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4106,9 +4110,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2005",
+		"max_level": 7,
 		"name": "Anthem of the Tenacious",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2006": {
 		"desc": "Dyrnwyn's Spirit fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4123,8 +4128,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2006",
 		"name": "Elegy of a Hero",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2007": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4138,9 +4143,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2007",
+		"max_level": 7,
 		"name": "Requiem of the Relentless",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2008": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4154,9 +4160,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2008",
+		"max_level": 7,
 		"name": "Requiem of the Relentless",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2009": {
 		"desc": "Gets stronger every level. Yeah it's not fair. Not sorry.",
@@ -4170,9 +4177,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2009",
+		"max_level": 7,
 		"name": "Developer Hacks",
-		"scale_with_level": "1",
-		"starting_level": "6"
+		"scale_with_level": true,
+		"starting_level": 6
 	},
 	"2010": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4186,9 +4194,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2010",
+		"max_level": 7,
 		"name": "Harmonious Sphere Chorus",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2011": {
 		"desc": "Bluefire, Void Master fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4203,8 +4212,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2011",
 		"name": "Harmonious World Refrain",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2012": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4218,9 +4227,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2012",
+		"max_level": 7,
 		"name": "Harmonious Sphere Chorus",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2013": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4234,9 +4244,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2013",
+		"max_level": 7,
 		"name": "Harmonious Sphere Chorus",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2014": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4250,9 +4261,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2014",
+		"max_level": 7,
 		"name": "Six-Stanza Sonata",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2015": {
 		"desc": "Bluefire, Mythic Master fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4267,8 +4279,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2015",
 		"name": "Dirge of the World",
-		"scale_with_level": "1",
-		"starting_level": "7"
+		"scale_with_level": true,
+		"starting_level": 7
 	},
 	"2016": {
 		"desc": "The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4283,8 +4295,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2016",
 		"name": "Buzzsaw Aphidsong",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2017": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4298,9 +4310,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2017",
+		"max_level": 7,
 		"name": "Six-Stanza Sonata",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2018": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4314,9 +4327,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2018",
+		"max_level": 7,
 		"name": "Firecracker Tango",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2019": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4330,9 +4344,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2019",
+		"max_level": 7,
 		"name": "Coralflow Ballad",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2020": {
 		"desc": "Xerkahn, the Avenger fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4347,8 +4362,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2020",
 		"name": "Blazing Tidal Etude",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2021": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4362,9 +4377,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2021",
+		"max_level": 7,
 		"name": "Coralflow Ballad",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2022": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4378,9 +4394,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2022",
+		"max_level": 7,
 		"name": "Coralflow Ballad",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2023": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4394,9 +4411,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2023",
+		"max_level": 7,
 		"name": "Ion-pitched Chiptune",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2024": {
 		"desc": "Fireshard's Giant fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4411,8 +4429,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2024",
 		"name": "Gearweight Metal",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2025": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4426,9 +4444,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2025",
+		"max_level": 7,
 		"name": "Ion-pitched Chiptune",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2026": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4442,9 +4461,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2026",
+		"max_level": 7,
 		"name": "Ion-pitched Chiptune",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2027": {
 		"desc": "Viracocha, Titan Aspirer fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4459,8 +4479,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2027",
 		"name": "Rhythm of the Soul",
-		"scale_with_level": "1",
-		"starting_level": "7"
+		"scale_with_level": true,
+		"starting_level": 7
 	},
 	"2028": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4474,9 +4494,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2028",
+		"max_level": 7,
 		"name": "Crimsonwing Anthem",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2029": {
 		"desc": "Hero's Blessed, Yakov fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4491,8 +4512,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2029",
 		"name": "Crimsondrip Lullaby",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2030": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4506,9 +4527,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2030",
+		"max_level": 7,
 		"name": "Crimsonwing Anthem",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2031": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4522,9 +4544,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2031",
+		"max_level": 7,
 		"name": "Crimsonwing Anthem",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2032": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4538,9 +4561,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2032",
+		"max_level": 7,
 		"name": "Crystalsky Hymn",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2033": {
 		"desc": "Razi, Whisper Worshipper fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4555,8 +4579,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2033",
 		"name": "Crimsondrop Lullaby",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2034": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4570,9 +4594,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2034",
+		"max_level": 7,
 		"name": "Crystalsky Hymn",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2035": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4586,9 +4611,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2035",
+		"max_level": 7,
 		"name": "Crystalsky Hymn",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2036": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4602,9 +4628,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2036",
+		"max_level": 7,
 		"name": "Metalschema Samba",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2037": {
 		"desc": "Boldur, the Bravest fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4619,8 +4646,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2037",
 		"name": "Arbitrator Sing-Along",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2038": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4634,9 +4661,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2038",
+		"max_level": 7,
 		"name": "Metalschema Samba",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2039": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4650,9 +4678,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2039",
+		"max_level": 7,
 		"name": "Metalschema Samba",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2040": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4666,9 +4695,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2040",
+		"max_level": 7,
 		"name": "Streaming Amnesic Hula",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2041": {
 		"desc": "Typheous, Ship Devourer fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4683,8 +4713,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2041",
 		"name": "Tumultuous Rain Dance",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2042": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4698,9 +4728,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2042",
+		"max_level": 7,
 		"name": "Streaming Amnesic Hula",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2043": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4714,9 +4745,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2043",
+		"max_level": 7,
 		"name": "Streaming Amnesic Hula",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2044": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4730,9 +4762,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2044",
+		"max_level": 7,
 		"name": "Sunrisen Divertimento",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2045": {
 		"desc": "Kachina, Transcended fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4747,8 +4780,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2045",
 		"name": "Prelude of Light",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2046": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4762,9 +4795,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2046",
+		"max_level": 7,
 		"name": "Sunrisen Divertimento",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2047": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4778,9 +4812,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2047",
+		"max_level": 7,
 		"name": "Sunrisen Divertimento",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2048": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4794,9 +4829,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2048",
+		"max_level": 7,
 		"name": "Shattered Rifthowl",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2049": {
 		"desc": "Tanit, First Dreamer fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4811,8 +4847,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2049",
 		"name": "Harmonious Crimson Litany",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2050": {
 		"desc": "Agonized Amarok fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4827,8 +4863,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2050",
 		"name": "Fracturing Dirge",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2051": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4842,9 +4878,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2051",
+		"max_level": 7,
 		"name": "Shattered Rifthowl",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2052": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4858,9 +4895,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2052",
+		"max_level": 7,
 		"name": "Shattered Rifthowl",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2053": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4874,9 +4912,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2053",
+		"max_level": 7,
 		"name": "Burning Bolero",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2054": {
 		"desc": "Teroxis the Steadfast fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4891,8 +4930,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2054",
 		"name": "Searing Memoria",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2055": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4906,9 +4945,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2055",
+		"max_level": 7,
 		"name": "Burning Bolero",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2056": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4922,9 +4962,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2056",
+		"max_level": 7,
 		"name": "Burning Bolero",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2057": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4938,9 +4979,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2057",
+		"max_level": 7,
 		"name": "Celestial Duet",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2058": {
 		"desc": "Fallen Gladiator fights harder with each passing Mastery level, increasing cards' stats!",
@@ -4955,8 +4997,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2058",
 		"name": "Empty Etude",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2059": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4970,9 +5012,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2059",
+		"max_level": 7,
 		"name": "Celestial Duet",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2060": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -4986,9 +5029,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2060",
+		"max_level": 7,
 		"name": "Celestial Duet",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2061": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5002,9 +5046,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2061",
+		"max_level": 7,
 		"name": "Melancholy Melody",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2062": {
 		"desc": "Corrupted Merman fights harder with each passing Mastery level, increasing cards' stats!",
@@ -5019,8 +5064,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2062",
 		"name": "Sea's Serenade",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2063": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5034,9 +5079,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2063",
+		"max_level": 7,
 		"name": "Melancholy Melody",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2064": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5050,9 +5096,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2064",
+		"max_level": 7,
 		"name": "Melancholy Melody",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2065": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5066,9 +5113,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2065",
+		"max_level": 7,
 		"name": "Rift's Chorus",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2066": {
 		"desc": "Agatha, Forgettable Elder fights harder with each passing Mastery level, increasing cards' stats!",
@@ -5083,8 +5131,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2066",
 		"name": "Rift's Choir",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2067": {
 		"desc": "Batara, Blood Reprisal fights harder with each passing Mastery level, increasing cards' stats!",
@@ -5099,8 +5147,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2067",
 		"name": "Harmonious Crimson Litany",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2068": {
 		"desc": "Ebonclaw, Silencer fights harder with each passing Mastery level, increasing cards' stats!",
@@ -5115,8 +5163,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2068",
 		"name": "Harmonious Crimson Litany",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2069": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5130,9 +5178,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2069",
+		"max_level": 7,
 		"name": "Rift's Chorus",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2070": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5146,9 +5195,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2070",
+		"max_level": 7,
 		"name": "Rift's Chorus",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2071": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5162,9 +5212,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2071",
+		"max_level": 7,
 		"name": "Dawntouched Divertimento",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2072": {
 		"desc": "Frog Defense fights harder with each passing Mastery level, increasing cards' stats!",
@@ -5179,8 +5230,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2072",
 		"name": "Dawn Ascension",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2073": {
 		"desc": "Frog Defense fights harder with each passing Mastery level, increasing cards' stats!",
@@ -5194,9 +5245,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2073",
+		"max_level": 7,
 		"name": "Dawntouched Divertimento",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2074": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5210,9 +5262,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2074",
+		"max_level": 7,
 		"name": "Dawntouched Divertimento",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2075": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5226,9 +5279,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2075",
+		"max_level": 7,
 		"name": "Enemy Anthem",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2076": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5243,8 +5297,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2076",
 		"name": "Powerful Foe Anthem",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2077": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5258,9 +5312,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2077",
+		"max_level": 7,
 		"name": "Enemy Anthem",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2078": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5274,9 +5329,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2078",
+		"max_level": 7,
 		"name": "Enemy Anthem",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2079": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5290,9 +5346,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2079",
+		"max_level": 7,
 		"name": "Chorus of Thunder",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2080": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5307,8 +5364,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2080",
 		"name": "Thunderstorm March",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2081": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5322,9 +5379,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2081",
+		"max_level": 7,
 		"name": "Chorus of Thunder",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2082": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5338,9 +5396,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2082",
+		"max_level": 7,
 		"name": "Chorus of Thunder",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2083": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5354,9 +5413,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2083",
+		"max_level": 7,
 		"name": "Requiem of the Relentless",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2084": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5371,8 +5431,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2084",
 		"name": "March of the Relentless",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2085": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5386,9 +5446,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2085",
+		"max_level": 7,
 		"name": "Requiem of the Relentless",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2086": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5402,9 +5463,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2086",
+		"max_level": 7,
 		"name": "Requiem of the Relentless",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2087": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5418,9 +5480,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2087",
+		"max_level": 7,
 		"name": "Celestial Duet",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2088": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5435,8 +5498,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2088",
 		"name": "Harmonious Hymn",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2089": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5450,9 +5513,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2089",
+		"max_level": 7,
 		"name": "Enemy Requiem",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2090": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5466,9 +5530,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2090",
+		"max_level": 7,
 		"name": "Enemy Requiem",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2091": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5482,9 +5547,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2091",
+		"max_level": 7,
 		"name": "Chorus of Fire",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2092": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5499,8 +5565,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2092",
 		"name": "Firestorm Hymn",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2093": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5514,9 +5580,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2093",
+		"max_level": 7,
 		"name": "Requiem of the Poisonous",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2094": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5530,9 +5597,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2094",
+		"max_level": 7,
 		"name": "Requiem of the Poisonous",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2095": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5546,9 +5614,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2095",
+		"max_level": 7,
 		"name": "Enemy Anthem",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2096": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5563,8 +5632,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2096",
 		"name": "Powerful Foe Hymn",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2097": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5578,9 +5647,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2097",
+		"max_level": 7,
 		"name": "Chorus of Thunder",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2098": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5594,9 +5664,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2098",
+		"max_level": 7,
 		"name": "Chorus of Thunder",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2099": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5610,9 +5681,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2099",
+		"max_level": 7,
 		"name": "Undead Anthem",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2100": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5627,8 +5699,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2100",
 		"name": "March of the Relentless",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2101": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5642,9 +5714,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2101",
+		"max_level": 7,
 		"name": "Chorus of Metal",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2102": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5658,9 +5731,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2102",
+		"max_level": 7,
 		"name": "Chorus of Metal",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2103": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5674,9 +5748,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2103",
+		"max_level": 7,
 		"name": "Enemy Anthem",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2104": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5691,8 +5766,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2104",
 		"name": "Firecracker Shuffle",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2105": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5706,9 +5781,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2105",
+		"max_level": 7,
 		"name": "Chorus of Fire",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2106": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5722,9 +5798,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2106",
+		"max_level": 7,
 		"name": "Chorus of Fire",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2107": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5738,9 +5815,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2107",
+		"max_level": 7,
 		"name": "Melancholy Symphony",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2108": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5755,8 +5833,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2108",
 		"name": "Ocean Shuffle",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2109": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5770,9 +5848,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2109",
+		"max_level": 7,
 		"name": "Chorus of Air",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2110": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5786,9 +5865,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2110",
+		"max_level": 7,
 		"name": "Chorus of Air",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2111": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5802,9 +5882,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2111",
+		"max_level": 7,
 		"name": "Celestial Duet",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2112": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5819,8 +5900,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2112",
 		"name": "Heavenly Dance",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2113": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5834,9 +5915,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2113",
+		"max_level": 7,
 		"name": "Sticky Steps",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2114": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5850,9 +5932,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2114",
+		"max_level": 7,
 		"name": "Tongue Tango",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2115": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5866,9 +5949,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2115",
+		"max_level": 7,
 		"name": "Elemental Funk ",
-		"scale_with_level": "1",
-		"starting_level": "5"
+		"scale_with_level": true,
+		"starting_level": 5
 	},
 	"2116": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5883,8 +5967,8 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2116",
 		"name": "Flawed Elemental Funk",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2117": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5898,9 +5982,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2117",
+		"max_level": 7,
 		"name": "Power Coil Bachata",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"2118": {
 		"desc": "Non-token enemies become stronger with each passing Mastery level.",
@@ -5914,9 +5999,10 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2118",
+		"max_level": 7,
 		"name": "Cumbia of Viracocha",
-		"scale_with_level": "1",
-		"starting_level": "0"
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
@@ -5989,5 +6075,11 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "5003",
 		"name": "The Arena"
+	},
+	"6001": {
+		"effect": [],
+		"hidden": true,
+		"id": "6001",
+		"name": "Global VFX"
 	}
 };

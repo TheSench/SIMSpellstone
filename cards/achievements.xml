@@ -3458,7 +3458,7 @@
       <item id="4011" number="1" />
     </reward>
   </achievement>
-  --&gt;
+  -->
   <!-- EPIC RUNES UPDATE BEGIN -->
   <achievement>
     <id>1359</id>
@@ -3620,7 +3620,7 @@
       <item id="4012" number="1" />
     </reward>
   </achievement>
-  --&gt;
+  -->
   <!-- BEGIN LEGENDARY RUNE UPDATE -->
   <achievement>
     <id>1369</id>
@@ -7120,7 +7120,7 @@
     <reward>
       <item id="3049" number="50" />
       <event_points id="7018" number="50" />
-      --&gt;
+      -->
     </reward>
   </achievement>
   <achievement>
@@ -7440,7 +7440,7 @@
     <achievement_req>3223</achievement_req>
     <req>
       <campaign>1119</campaign>
-      &gt;
+      >
       <level>7</level>
     </req>
     <reward>
@@ -20884,4 +20884,3 @@
   </achievement>
   <!-- Non-Core Maps Meta END -->
 </root>
-

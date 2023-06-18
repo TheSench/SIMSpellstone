@@ -163,7 +163,7 @@
     <category>4</category>
     <key>map</key>
     <name>Basics</name>
-    <description />
+    <description></description>
   </guide>
   <!-- <guide>
 		<id>400</id>
@@ -201,7 +201,7 @@
     <category>5</category>
     <key>pvp</key>
     <name>Basics</name>
-    <description />
+    <description></description>
   </guide>
   <!-- <guide>
 		<id>500</id>
@@ -236,4 +236,3 @@
   <!-- Skills -->
   <!-- automatically added from the skills XML -->
 </root>
-

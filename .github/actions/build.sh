@@ -1,5 +1,5 @@
 
-declare -a actions=("download-files" "extract-assets" "extract-images" "resize-images" "update-spritesheets")
+declare -a actions=("download-files" "extract-assets" "extract-images" "resize-images" "update-spritesheets" "update-data")
  
 for action in "${actions[@]}"
 do

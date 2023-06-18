@@ -11832,7 +11832,7 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Insect_Undead_Scorpion_King_A</picture>
     <asset_bundle>250</asset_bundle>
-    --&gt;
+    -->
     <hidden_until_time>1657213200</hidden_until_time>
     <!--Thursday, 7 July 2022 17:00:00	-->
     <item_name>Mortas Stone</item_name>
@@ -11916,7 +11916,7 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Undead_Skeleball_A</picture>
     <asset_bundle>252</asset_bundle>
-    --&gt;
+    -->
     <hidden_until_time>1658422800</hidden_until_time>
     <!--Thursday, July 21, 2022 17:00:00	-->
     <item_name>Osseus Stone</item_name>
@@ -15273,4 +15273,3 @@
   </unit>
   <!-- === WYLD END === -->
 </root>
-

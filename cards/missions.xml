@@ -3565,9 +3565,9 @@
   <!-- START The Dawnglow Missions -->
   <mission>
     <id>251</id>
-    <name>Call From the Emperor</name>
+    <name>Call From the Emperor </name>
     <energy>6</energy>
-    <desc>Groc has received a distress letter from the Emperor of Dawnglow Swamp. He is worried about the health of his citizens. Groc and Ursurio head out to the swamps to investigate the issue.</desc>
+    <desc>Groc has received a distress letter from the Emperor of Dawnglow Swamp. He is worried about the health of his citizens. Groc and Ursurio head out to the swamps to investigate the issue. </desc>
     <commander id="280" />
     <deck>
       <card id="8231" name="Werewarg" />
@@ -3770,7 +3770,7 @@
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>*chomp**chomp* ...hmm?</text>
+        <text>*chomp**chomp* ...hmm? </text>
       </line>
     </speech>
   </mission>
@@ -3874,7 +3874,7 @@
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>I do not feel well exploring here. I have felt similar sensations while traversing The Void.</text>
+        <text>I do not feel well exploring here. I have felt similar sensations while traversing The Void. </text>
       </line>
     </speech>
   </mission>
@@ -4495,7 +4495,7 @@
   </mission>
   <mission>
     <id>332</id>
-    <name>The Hidden Citadel</name>
+    <name>The Hidden Citadel </name>
     <energy>8</energy>
     <desc>The area around the Citadel is wild. Outside of the Citadel the environment looks completely untouched. It's clear that whatever this Citadel holds, it is not meant to be found by others.</desc>
     <commander id="298" />
@@ -4668,7 +4668,7 @@
   </mission>
   <mission>
     <id>344</id>
-    <name>Hidden Treasures</name>
+    <name>Hidden Treasures </name>
     <energy>8</energy>
     <desc>The monk looks surprised they know of the artifact. Even within the Order, it was a secret item.</desc>
     <commander id="301" />
@@ -4838,7 +4838,7 @@
     <id>362</id>
     <name>First Wave</name>
     <energy>12</energy>
-    <desc>Oda easily deals with the first wave of enemies. More creatures begin to emerge from the circle.</desc>
+    <desc>Oda easily deals with the first wave of enemies. More creatures begin to emerge from the circle. </desc>
     <commander id="266" />
     <deck>
       <card id="8231" name="Werewarg" />
@@ -4880,7 +4880,7 @@
   </mission>
   <mission>
     <id>364</id>
-    <name>Final Round</name>
+    <name>Final Round </name>
     <energy>12</energy>
     <desc>Oda is starting to sweat as he defeats another wave of enemies. As he wipes his brow, the ground begins to shake...</desc>
     <commander id="303" />
@@ -5945,7 +5945,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>It's hatching! Finally my ferocious baby boy is here...or girl? I don't know how to tell with this thing!</text>
+        <text>It's hatching! Finally my ferocious baby boy is here...or girl? I don't know how to tell with this thing! </text>
       </line>
       <line>
         <commander>flamebender</commander>
@@ -6642,4 +6642,3 @@
     </speech>
   </mission>
 </root>
-
