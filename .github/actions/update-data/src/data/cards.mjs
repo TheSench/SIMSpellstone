@@ -39,8 +39,8 @@ async function getCardsJson() {
     "cards_special.xml",
     "cards_standard.xml",
     "cards_story.xml"
-  ].map(function (cardFile) {
-    getJsonFromSynapse(cardFile, options);
+  ].map(async function (cardFile) {
+    await getJsonFromSynapse(cardFile, options);
   }));
 
   return cards;
