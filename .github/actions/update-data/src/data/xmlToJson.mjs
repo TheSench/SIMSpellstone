@@ -15,7 +15,7 @@ export function xmlDocToJson(xml, options) {
   const parser = new XMLParser({
     attributeNamePrefix: '@',
     ignoreAttributes: false,
-    isArray:  function (name) {
+    isArray: function (name) {
       return options.arrayRoots[name] || (options.rootNodes && options.rootNodes[name]);
     }
   });
@@ -79,12 +79,19 @@ function xmlToJsonInner([nodeName, element], options, propName) {
   var obj = (options.defaults[nodeName] || emptyObject)();
   if (propName) obj[propName] = nodeName;
 
-  Object.entries(element).forEach(function ([name, element]) {
-    if (!options.filteredProps[name]) {
-      var savedAsName = (options.renames[name] || name);
-      obj[savedAsName] = convertedValue(name, element, options);
+  const convertEntry = function ([name, element]) {
+    const normalizedName = name.replace('@', '');
+    if (!options.filteredProps[normalizedName]) {
+      var savedAsName = (options.renames[normalizedName] || normalizedName);
+      obj[savedAsName] = convertedValue(normalizedName, element, options);
     }
-  });
+  }
+
+  if (Array.isArray(element)) {
+    element.map((element) => convertEntry([nodeName, element]));
+  } else {
+    Object.entries(element).forEach(convertEntry);
+  }
 
   var calculatedProps = options.calculatedProps[nodeName];
   if (calculatedProps) {
@@ -97,7 +104,8 @@ function xmlToJsonInner([nodeName, element], options, propName) {
 }
 
 export function convertedValue(name, originalValue, options) {
-  return (options.conversions[name] || defaultConversion(name))(originalValue, options);
+  const normalizedName = name.replace('@', '');
+  return (options.conversions[normalizedName] || defaultConversion(normalizedName))(originalValue, options);
 }
 
 function defaultConversion(name) {
