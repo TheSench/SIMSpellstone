@@ -12477,6 +12477,91 @@
     <ignore_energy_reduction_until>1687453200</ignore_energy_reduction_until>
     <!-- Thursday, June 22, 2023 at 17:00:00  -->
   </campaign>
+  <!-- Campaign Event 104 - Return To Luminis -->
+  <campaign>
+    <id>1349</id>
+    <name>Dark side of the science</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1687453200</locked_start_time>
+    <!--  Thursday, June 22, 2023 17:00:00 -->
+    <battleground_id>2097</battleground_id>
+    <location_id>29</location_id>
+    <x>780</x>
+    <y>270</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7098</mission_id>
+      <mission_id>7099</mission_id>
+      <mission_id>7100</mission_id>
+      <mission_id>7101</mission_id>
+      <mission_id>7102</mission_id>
+      <mission_id>7103</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2682" number="25" />
+      />
+      <!-- Return to Luminis Ultimate Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2254" />
+      <!-- Epic Reward A (New) -->
+      <card level="5" id="2144" />
+      <!-- Epic Reward B (Old) -->
+      <item level="6" id="2682" number="75" />
+      />
+      <!-- Return to Luminis Ultimate Flask -->
+      <card level="7" id="2253" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3113" drop_per_energy="0.6" />
+    <ignore_energy_reduction_until>1689872400</ignore_energy_reduction_until>
+    <!-- Thursday, July 20, 2023 at 17:00:00 	  -->
+  </campaign>
+  <campaign>
+    <id>1350</id>
+    <name>When an experiment goes wrong...</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <campaign_req id="1349" level="1" />
+    <locked_start_time>1688662800</locked_start_time>
+    <!--  Thursday, 8 June 2023 17:00:00 -->
+    <battleground_id>2098</battleground_id>
+    <location_id>29</location_id>
+    <x>250</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7104</mission_id>
+      <mission_id>7105</mission_id>
+      <mission_id>7106</mission_id>
+      <mission_id>7107</mission_id>
+      <mission_id>7108</mission_id>
+      <mission_id>7109</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <!-- Arcane Ore -->
+      <item level="2" id="2682" number="25" />
+      />
+      <!-- Return to Luminis Ultimate Flask -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="2221" />
+      <!-- Epic Reward C (Old) -->
+      <card level="5" id="2192" />
+      <!-- Epic Reward D (Old) -->
+      <item level="6" id="2682" number="75" />
+      />
+      <!-- Return to Luminis Ultimate Flask -->
+      <card level="7" id="2253" />
+      <!-- Map Legendary -->
+    </rewards>
+    <find_item id="3113" drop_per_energy="0.8" />
+    <ignore_energy_reduction_until>1689872400</ignore_energy_reduction_until>
+    <!-- Thursday, July 20, 2023 at 17:00:00 	  -->
+  </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

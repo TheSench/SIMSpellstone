@@ -2228,6 +2228,69 @@ var BATTLEGROUNDS = {
 		"id": "165",
 		"name": "Sky Destruction"
 	},
+	"166": {
+		"desc": "All Mechas gain base Ward 3 + Delay, and increase their Attack by 15% of their base Health.",
+		"effect": [
+			{
+				"all": "1",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 3,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 4,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 5,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 6,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 7,
+				"y": "16"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_attack",
+				"mult": 0.15,
+				"y": "16"
+			}
+		],
+		"id": "166",
+		"name": "Steel's Edge V2.0"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

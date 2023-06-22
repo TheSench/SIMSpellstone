@@ -64224,4 +64224,292 @@
       <card id="7622" mastery_level="7" name="Gravy, the Ravenlyte" />
     </deck>
   </mission>
+  <mission>
+    <id>7098</id>
+    <name>Unsettling reports</name>
+    <energy>18</energy>
+    <desc>You&apos;ve been requested to check if some rumors about mysterious kidnappings in the outskirts of Luminis.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="7251" mastery_level="4" name="Manic Dummy" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7099</id>
+    <name>Misleading clues?</name>
+    <energy>18</energy>
+    <desc>You&apos;ve reached the outskirts and conducted a throughly search but the only thing that you&apos;ve found is several incomplete marks on the ground from, apparently, different animals that do not belong to the area.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="7251" mastery_level="4" name="Manic Dummy" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7100</id>
+    <name>Retreating for good</name>
+    <energy>18</energy>
+    <desc>After you decide it&apos;s time to return to Luminis to rest, you start to get a feeling that you&apos;re being silently watched and followed.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="2145" mastery_level="6" name="Astaroth" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7101</id>
+    <name>Ambushed by animals?</name>
+    <energy>18</energy>
+    <desc>Just before you leave the forest, a group of angry beasts appears in front and behind you. It was an ambush! Their eyes are completely red and they don&apos;t move naturally for some reason, but they&apos;re rushing to attack you.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="6295" name="Creeperbots" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1345" name="Owltron" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7102</id>
+    <name>A disturbing glare</name>
+    <energy>18</energy>
+    <desc>This fight is not that difficult but tiring, since these creatures were made of metal and they won&apos;t stop moving &apos;til they are complete wreckage. You get to see a pair of red eyes watching at your direction through the bushes.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2143" name="Lightning Stomper" />
+      <card id="2138" name="Magma Cougar" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1345" name="Owltron" />
+      <card id="1348" name="Flailpod" />
+      <card id="1348" name="Flailpod" />
+      <card id="1645" name="Sundermarr" />
+      <card id="6241" mastery_level="2" name="Grimkite Model" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7103</id>
+    <name>A deafening whistle</name>
+    <energy>18</energy>
+    <desc>Small but endless waves kept coming to you, until a quite strong whistle is heard. These animals retreat, running through the forest and that pair of eyes is nowhere to be found. You quickly pick some of the metal pieces and return to Luminis.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2106" name="Pharite Snapjaw" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="7251" mastery_level="5" name="Manic Dummy" />
+      <card id="5248" mastery_level="6" name="Noble Ophanim" />
+      <card id="5248" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7104</id>
+    <name>Examine the wreckage</name>
+    <energy>18</energy>
+    <desc>Immediately after you tell what happened, a team is dispatched to retrieve more wreckage to study these. No one noticed that a small bird was watching everything.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1033" name="Valiant Charger" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7105</id>
+    <name>As if nothing ever happened</name>
+    <energy>18</energy>
+    <desc>The team returned empty-handed, but they noticed a strange looking bird flying in the middle of the night and captured it. In the distance, that whistle that you heard before is echoing. You suggest that everyone must get ready for an attack.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="5248" name="Noble Ophanim" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7106</id>
+    <name>No time to waste</name>
+    <energy>18</energy>
+    <desc>The bird won&apos;t stop croaking and slamming itself against the cage. It also has the very same red eyes as the animals that attacked you. An explosion is heard and battle noises begin to arise outside.</desc>
+    <commander id="413" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="2124" name="Bulbscale Construct" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7107</id>
+    <name>Unlikely Alliances</name>
+    <energy>18</energy>
+    <desc>You decide to help in the battle and there&apos;s a bizarre scene ocurring: a mecha zombie is using its blunderbuss against the mecha animals, so you decide to fight side by side with it.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2106" mastery_level="4" name="Pharite Snapjaw" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7108</id>
+    <name>An incredible sight</name>
+    <energy>18</energy>
+    <desc>After a short while, you notice a glaring pair of red eyes emerging from the fire: it&apos;s a robot and it seems to command the swarm of mecha animals. From the sky, you hear a dragon&apos;s roar. It&apos;s a mecha dragon flying in your direction, breathing fire against anyone who&apos;s near it.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="1037" name="Steambelly Digger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2113" mastery_level="2" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2112" mastery_level="4" name="Warrior Karna" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7109</id>
+    <name>The calm after the storm</name>
+    <energy>18</energy>
+    <desc>You and the mecha zombie, along with the people of Luminis, managed to stop the attack, but the robot is nowhere to be found. Someone reveals that it was a rumor, but it used to be a former scientist involved with the Mecha tribe until its body suffered an horrendous accident.</desc>
+    <commander id="367" />
+    <deck>
+      <card id="2138" name="Magma Cougar" />
+      <card id="1033" name="Valiant Charger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="2112" name="Warrior Karna" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="7251" mastery_level="2" name="Manic Dummy" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="2112" mastery_level="4" name="Warrior Karna" />
+      <card id="5142" mastery_level="5" name="Buzzblade" />
+      <card id="6295" mastery_level="6" name="Creeperbots" />
+      <card id="6210" mastery_level="7" name="Burning Blade" />
+    </deck>
+  </mission>
 </root>

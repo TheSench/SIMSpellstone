@@ -6241,6 +6241,40 @@ var CAMPAIGNS = {
 		],
 		"name": "Crazy chainsaws"
 	},
+	"1349": {
+		"battleground_id": "2097",
+		"id": "1349",
+		"items": {
+			"3113": 0.6
+		},
+		"location_id": "29",
+		"missions": [
+			"7098",
+			"7099",
+			"7100",
+			"7101",
+			"7102",
+			"7103"
+		],
+		"name": "Dark side of the science"
+	},
+	"1350": {
+		"battleground_id": "2098",
+		"id": "1350",
+		"items": {
+			"3113": 0.8
+		},
+		"location_id": "29",
+		"missions": [
+			"7104",
+			"7105",
+			"7106",
+			"7107",
+			"7108",
+			"7109"
+		],
+		"name": "When an experiment goes wrong..."
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -142277,5 +142311,725 @@ var MISSIONS = {
 		],
 		"id": "7097",
 		"name": "An Illusion"
+	},
+	"7098": {
+		"commander": {
+			"id": "277"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7098",
+		"name": "Unsettling reports"
+	},
+	"7099": {
+		"commander": {
+			"id": "264"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7099",
+		"name": "Misleading clues?"
+	},
+	"7100": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7100",
+		"name": "Retreating for good"
+	},
+	"7101": {
+		"commander": {
+			"id": "269"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7101",
+		"name": "Ambushed by animals?"
+	},
+	"7102": {
+		"commander": {
+			"id": "353"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "2143"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1348"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7102",
+		"name": "A disturbing glare"
+	},
+	"7103": {
+		"commander": {
+			"id": "413"
+		},
+		"deck": [
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5248",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7103",
+		"name": "A deafening whistle"
+	},
+	"7104": {
+		"commander": {
+			"id": "269"
+		},
+		"deck": [
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7104",
+		"name": "Examine the wreckage"
+	},
+	"7105": {
+		"commander": {
+			"id": "277"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "5248"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7105",
+		"name": "As if nothing ever happened"
+	},
+	"7106": {
+		"commander": {
+			"id": "413"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7106",
+		"name": "No time to waste"
+	},
+	"7107": {
+		"commander": {
+			"id": "264"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7107",
+		"name": "Unlikely Alliances"
+	},
+	"7108": {
+		"commander": {
+			"id": "277"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2112",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7108",
+		"name": "An incredible sight"
+	},
+	"7109": {
+		"commander": {
+			"id": "367"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "2112"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2112",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7109",
+		"name": "The calm after the storm"
 	}
 };
