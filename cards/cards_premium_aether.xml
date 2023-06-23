@@ -32040,33 +32040,39 @@
       <level>2</level>
       <attack>12</attack>
       <health>43</health>
+      <skill id="armored" x="5" />
+      <skill id="counterburn" x="5" />
+      <skill id="rally" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>44</health>
+      <skill id="armored" x="6" />
+      <skill id="counterburn" x="6" />
+      <skill id="rally" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>45</health>
-      <skill id="armored" x="5" />
-      <skill id="counterburn" x="5" />
+      <skill id="armored" x="7" />
+      <skill id="counterburn" x="7" />
       <skill id="rally" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>13</attack>
       <health>46</health>
-      <skill id="armored" x="5" />
-      <skill id="counterburn" x="6" />
-      <skill id="rally" x="4" all="1" />
+      <skill id="armored" x="8" />
+      <skill id="counterburn" x="8" />
+      <skill id="rally" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>14</attack>
       <health>47</health>
-      <skill id="armored" x="7" />
-      <skill id="counterburn" x="7" />
-      <skill id="rally" x="5" all="1" />
+      <skill id="armored" x="9" />
+      <skill id="counterburn" x="9" />
+      <skill id="rally" x="6" all="1" />
     </upgrade>
   </unit>
   <unit>
