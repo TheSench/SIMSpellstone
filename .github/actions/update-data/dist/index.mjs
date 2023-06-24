@@ -9319,31 +9319,12 @@ async function updateData() {
 
   const cardChanges = await compareFile(changes, 'cards.js', getCardsJs);
   if (cardChanges) {
-    const spoilersJs = await getSpoilersJs(cardChanges);
-    changes.push({
-      folder: 'scripts/data/',
-      filename: 'spoilers.js',
-      contents: spoilersJs
-    });
+    await compareFile(changes, 'spoilers.js', getSpoilersJs, cardChanges);
   }
 
-  const raidsJs = await getRaidsJs();
-  if (raidsJs) {
-    changes.push({
-      folder: 'scripts/data/',
-      filename: 'raids.js',
-      contents: raidsJs
-    });
-  }
+  const raidsJs = await compareFile(changes, 'raids.js', getRaidsJs);
 
-  const commonJs = await getCommonJs(changes.length);
-  if (commonJs) {
-    changes.push({
-      folder: 'scripts/data/',
-      filename: 'common.js',
-      contents: commonJs
-    });
-  }
+  const commonJs = await compareFile(changes, 'common.js', getCommonJs, changes.length);
 }
 
 async function getXmlChanges() {
@@ -9384,12 +9365,15 @@ function updateXmlFiles() {
   }
 }
 
-async function compareFile(changes, scriptPath, scriptFunction, folder) {
+async function compareFile(changes, scriptPath, scriptFunction, scriptParameter, folder) {
   if (!folder) {
     folder = 'scripts/data/';
   }
   var oldScript = getScriptFromGithub(scriptPath);
-  var newScript = await scriptFunction();
+  var newScript = await scriptFunction(scriptParameter);
+  if (!newScript) {
+    return;
+  }
   (0,external_fs_.writeFileSync)((0,external_path_.join)(folder, scriptPath), newScript);
 
   if (oldScript !== newScript) {
