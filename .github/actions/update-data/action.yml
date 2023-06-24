@@ -1,4 +1,4 @@
-name: 'Update Dat'
+name: 'Update Data'
 description: 'Update data with latest from Synapse'
 inputs:
   working-directory: 
