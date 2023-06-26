@@ -28111,7 +28111,7 @@
     <picture>Mecha_Archer_B</picture>
     <asset_bundle>147</asset_bundle>
     <hidden_until_time>1544720400</hidden_until_time>
-    <attack>6</attack>
+    <attack>7</attack>
     <health>18</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -28127,7 +28127,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
+      <attack>8</attack>
       <health>20</health>
       <skill id="rally" x="7" />
       <skill id="pierce" x="9" />
@@ -28135,7 +28135,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>8</attack>
+      <attack>9</attack>
       <health>21</health>
       <skill id="rally" x="8" />
       <skill id="pierce" x="9" />
@@ -28143,7 +28143,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>9</attack>
+      <attack>10</attack>
       <health>22</health>
       <skill id="rally" x="9" />
       <skill id="pierce" x="10" />
@@ -28151,7 +28151,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>10</attack>
+      <attack>11</attack>
       <health>23</health>
       <skill id="rally" x="10" />
       <skill id="pierce" x="11" />
@@ -28283,7 +28283,7 @@
       <health>21</health>
       <skill id="absorb" x="8" />
       <skill id="protect" x="6" y="16" />
-      <skill id="protect" x="5" />
+      <skill id="protect" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -28291,7 +28291,7 @@
       <health>22</health>
       <skill id="absorb" x="9" />
       <skill id="protect" x="7" y="16" />
-      <skill id="protect" x="5" />
+      <skill id="protect" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -28299,7 +28299,7 @@
       <health>23</health>
       <skill id="absorb" x="10" />
       <skill id="protect" x="8" y="16" />
-      <skill id="protect" x="6" />
+      <skill id="protect" x="8" />
     </upgrade>
   </unit>
   <unit>

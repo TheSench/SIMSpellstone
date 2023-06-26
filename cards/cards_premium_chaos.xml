@@ -35955,30 +35955,33 @@
     <upgrade>
       <level>3</level>
       <health>62</health>
+      <skill id="stasis" x="5" />
+      <skill id="fervor" x="8" y="2" />
+      <skill id="enrage" x="5" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>15</attack>
       <health>63</health>
-      <skill id="stasis" x="4" />
+      <skill id="stasis" x="6" />
       <skill id="fervor" x="9" y="2" />
-      <skill id="enrage" x="5" all="1" />
+      <skill id="enrage" x="6" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>16</attack>
       <health>64</health>
-      <skill id="stasis" x="4" />
+      <skill id="stasis" x="7" />
       <skill id="fervor" x="9" y="2" />
-      <skill id="enrage" x="6" all="1" />
+      <skill id="enrage" x="7" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>17</attack>
       <health>65</health>
-      <skill id="stasis" x="5" />
+      <skill id="stasis" x="8" />
       <skill id="fervor" x="9" y="2" />
-      <skill id="enrage" x="6" all="1" />
+      <skill id="enrage" x="8" all="1" />
     </upgrade>
   </unit>
   <unit>

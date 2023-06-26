@@ -24782,22 +24782,25 @@
     <upgrade>
       <level>4</level>
       <health>21</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="5" y="16" />
+      <skill id="pierce" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>9</attack>
       <health>22</health>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="6" />
       <skill id="rally" x="5" y="16" />
-      <skill id="pierce" x="7" />
+      <skill id="pierce" x="9" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>10</attack>
       <health>23</health>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="7" />
       <skill id="rally" x="6" y="16" />
-      <skill id="pierce" x="8" />
+      <skill id="pierce" x="10" />
     </upgrade>
   </unit>
   <unit>

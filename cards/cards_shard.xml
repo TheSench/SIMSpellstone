@@ -7972,7 +7972,7 @@
       <level>10</level>
       <skill id="evade" x="4" />
       <skill id="heal" x="8" y="16" all="1" />
-      <skill id="enrage" x="7" y="16" all="1" />
+      <skill id="enrage" x="8" y="16" all="1" />
     </upgrade>
   </unit>
   <unit>
