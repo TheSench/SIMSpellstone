@@ -7984,6 +7984,7 @@ function pathFromRoot(...pathParts) {
 
 // EXPORTS
 __nccwpck_require__.d(__webpack_exports__, {
+  "$": () => (/* binding */ getXmlChanges),
   "V": () => (/* binding */ updateData)
 });
 
@@ -8388,15 +8389,10 @@ var fxp = __nccwpck_require__(2603);
 function xmlDocToJson(xml, options) {
   options = Object.create(options);
   options.arrayRoots = options.arrayRoots || {};
-  options.arrayProps = options.arrayProps || {};
-  options.calculatedProps = options.calculatedProps || {};
-  options.conversions = options.conversions || {};
-  options.defaults = options.defaults || {};
-  options.element = options.renames || {};
   options.filteredProps = arrayToMap(options.filteredProps);
-  options.renames = options.renames || {};
   options.rootNodes = options.rootNodes && arrayToMap(options.rootNodes);
   options.rawRootMaps = options.rawRootMaps || {};
+  options.stopNodes = (options.stopNodes || []).map(el => `*.${el}`);
 
   const parser = new fxp.XMLParser({
     attributeNamePrefix: '@',
@@ -8430,9 +8426,6 @@ function xmlRootsToJson(xml, options) {
   });
 
   return collection;
-  // return convertedValue("root",
-  //   collection,
-  //   options);
 }
 
 function xmlCollectionToJson(xml, options, propName) {
@@ -8453,23 +8446,18 @@ function xmlToJson([name, element], options, propName) {
   return convertedValue(name, value, options);
 }
 
-function emptyObject() {
-  return {};
-}
-
 function xmlToJsonInner([nodeName, element], options, propName) {
   if (typeof element !== 'object') {
     return element;
   }
 
-  var obj = (options.defaults[nodeName] || emptyObject)();
+  var obj = {};
   if (propName) obj[propName] = nodeName;
 
   const convertEntry = function ([name, element]) {
     const normalizedName = name.replace('@', '');
     if (!options.filteredProps[normalizedName]) {
-      var savedAsName = (options.renames[normalizedName] || normalizedName);
-      obj[savedAsName] = convertedValue(normalizedName, element, options);
+      obj[normalizedName] = convertedValue(normalizedName, element, options);
     }
   }
 
@@ -8479,26 +8467,14 @@ function xmlToJsonInner([nodeName, element], options, propName) {
     Object.entries(element).forEach(convertEntry);
   }
 
-  var calculatedProps = options.calculatedProps[nodeName];
-  if (calculatedProps) {
-    Object.keys(calculatedProps).forEach(function (prop) {
-      obj[prop] = calculatedProps[prop](obj);
-    });
-  }
-
   return obj;
 }
 
 function convertedValue(name, originalValue, options) {
   const normalizedName = name.replace('@', '');
-  return (options.conversions[normalizedName] || defaultConversion(normalizedName))(originalValue, options);
+  return xmlToJsonInner([normalizedName, originalValue], options);
 }
 
-function defaultConversion(name) {
-  return function (originalValue, options) {
-    xmlToJsonInner([name, originalValue], options, options.arrayRoots[name]);
-  }
-}
 ;// CONCATENATED MODULE: ./src/data/getScriptFromGithub.mjs
 
 
@@ -8512,7 +8488,7 @@ function getScriptFromGithub(scriptName) {
     return (0,external_fs_.readFileSync)(scriptPath, 'utf8');
 }
 
-function getScriptFromGithub_getXmlFromGithub(xmlName) {
+function getXmlFromGithub(xmlName) {
     const xmlPath = join(xmlDir, xmlName);
     return readFileSync(xmlPath, 'utf8');
 }
@@ -8531,14 +8507,14 @@ const getXmlFromSynapse_xmlDir = (0,external_path_.join)((0,rootDir/* getRootDir
 
 async function getJsonFromSynapse(filename, options) {
   console.log('Processing XML file: ' + filename);
-  var xml = await getXmlFromSynapse_getXmlFromSynapse(filename);
+  var xml = await getXmlFromSynapse(filename);
   console.time('Processing ' + filename);
   const results = xmlDocToJson(xml, options);
   console.timeEnd('Processing ' + filename);
   return results;
 }
 
-async function getXmlFromSynapse_getXmlFromSynapse(filename) {
+async function getXmlFromSynapse(filename) {
   console.time('Retrieving ' + filename);
   const options = {
     hostname: 'spellstone.synapse-games.com',
@@ -8603,7 +8579,8 @@ async function getCardsJson() {
     rootNodes: ['unit'],
     rawRootMaps: {
       unit: addCard(cards)
-    }
+    },
+    stopNodes: ['asset_bundle', 'asset_bundle_alt', 'picture_alt', 'cannot_salvage', 'give_full_salvage', 'salvage_bonus', 'item_name', 'item_desc', 'item_icon', 'item_bundle_id', 'item_overflow_item_id', 'release_set', 'fusion_level', 'mythic']
   };
 
   await Promise.all([
@@ -8745,29 +8722,17 @@ function convertTime(time) {
 
 var newCommonJs;
 
-async function getCommonJs(otherChanges) {
-  var oldJsFile = getOldCommonJs();
+async function getCommonJs() {
+  var oldJsFile = getScriptFromGithub('common.js');
   
   var currentBGEs = await getCurrentBges();
   if(currentBGEs.length) {
     newCommonJs = '"use strict"\n\n' + 
                 'var text_version = \'v2.0\';\n' +
-                'var battle_sim = false;\n' +
                 'var current_bges = ' + JSON.stringify(currentBGEs) + ';\n';
   } else {
     newCommonJs = oldJsFile;
   }
-  
-  if(otherChanges || newCommonJs !== oldJsFile) {
-    newCommonJs += dataUpdatedLine();
-  } else {
-    newCommonJs = null;
-  }
-  return newCommonJs;
-}
-
-function dataUpdatedLine() {
-  return `var DataUpdated = ${Date.now()};`;
 }
 
 async function getCurrentBges() {
@@ -8792,12 +8757,6 @@ async function getCurrentBges() {
   return currentBges;
 }
 
-function getOldCommonJs() {
-  var oldCommonJs = getScriptFromGithub('common.js')
-  .replace(/var DataUpdated = (\d|\.)+;/, '');
-  
-  return oldCommonJs;
-}
 ;// CONCATENATED MODULE: ./src/data/fusions.mjs
 
 
@@ -9309,98 +9268,74 @@ function getCardsFromScript(script) {
 
 
 async function updateData() {
-  const changes = [];
-  await compareFile(changes, 'runes.js', getRunesJs);
-  await compareFile(changes, 'bges.js', getBgesJs);
-  await compareFile(changes, 'campaign.js', getCampaignJs);
-  await compareFile(changes, 'fusions.js', getFusionsJs);
-  await compareFile(changes, 'mapBGEs.js', getMapBgesJs);
-  await compareFile(changes, 'skills.js', getSkillsJs);
+  await updateFile('runes.js', getRunesJs);
+  await updateFile('bges.js', getBgesJs);
+  await updateFile('campaign.js', getCampaignJs);
+  await updateFile('fusions.js', getFusionsJs);
+  await updateFile('mapBGEs.js', getMapBgesJs);
+  await updateFile('skills.js', getSkillsJs);
 
-  const cardChanges = await compareFile(changes, 'cards.js', getCardsJs);
+  const cardChanges = await compareFile('cards.js', getCardsJs);
   if (cardChanges) {
-    await compareFile(changes, 'spoilers.js', getSpoilersJs, cardChanges);
+    await updateFile('spoilers.js', () => getSpoilersJs(cardChanges));
   }
 
-  const raidsJs = await compareFile(changes, 'raids.js', getRaidsJs);
-
-  const commonJs = await compareFile(changes, 'common.js', getCommonJs, changes.length);
+  await updateFile('raids.js', getRaidsJs);
+  await updateFile('common.js', getCommonJs);
 }
 
 async function getXmlChanges() {
-  return (await Promise.all([
-    'achievements.xml',
-    'arena.xml',
-    'battleground_effects.xml',
-    'campaigns.xml',
-    'cards.xml',
-    'cards_config.xml',
-    'cards_heroes.xml',
-    'cards_premium_aether.xml',
-    'cards_premium_chaos.xml',
-    'cards_premium_wyld.xml',
-    'cards_reward.xml',
-    'cards_shard.xml',
-    'cards_special.xml',
-    'cards_standard.xml',
-    'cards_story.xml',
-    'fusion_recipes_cj2.xml',
-    'guide.xml',
-    'guilds.xml',
-    'levels.xml',
-    'market.xml',
-    'missions.xml',
-    'missions_event.xml',
-    'passive_missions.xml',
-    'tutorial1.xml'
-  ].map(getXmlChangesInner)))
-    .filter(it => it !== null);
+  await Promise.all(
+    [
+      'achievements.xml',
+      'arena.xml',
+      'battleground_effects.xml',
+      'campaigns.xml',
+      'cards.xml',
+      'cards_config.xml',
+      'cards_heroes.xml',
+      'cards_premium_aether.xml',
+      'cards_premium_chaos.xml',
+      'cards_premium_wyld.xml',
+      'cards_reward.xml',
+      'cards_shard.xml',
+      'cards_special.xml',
+      'cards_standard.xml',
+      'cards_story.xml',
+      'fusion_recipes_cj2.xml',
+      'guide.xml',
+      'guilds.xml',
+      'levels.xml',
+      'market.xml',
+      'missions.xml',
+      'missions_event.xml',
+      'passive_missions.xml',
+      'tutorial1.xml'
+    ].map(getXmlFromSynapse)
+  );
 }
 
-function updateXmlFiles() {
-  var changes = getXmlChanges();
-
-  if (changes.length) {
-    commitMultipleFilesToGithub_("XML", changes);
+async function updateFile(scriptPath, scriptFunction) {
+  var newScript = await scriptFunction();
+  if (newScript) {
+    (0,external_fs_.writeFileSync)((0,external_path_.join)('scripts/data/', scriptPath), newScript);
   }
 }
 
-async function compareFile(changes, scriptPath, scriptFunction, scriptParameter, folder) {
-  if (!folder) {
-    folder = 'scripts/data/';
-  }
+async function compareFile(scriptPath, scriptFunction) {
   var oldScript = getScriptFromGithub(scriptPath);
-  var newScript = await scriptFunction(scriptParameter);
+  var newScript = await scriptFunction();
   if (!newScript) {
     return;
   }
-  (0,external_fs_.writeFileSync)((0,external_path_.join)(folder, scriptPath), newScript);
+  (0,external_fs_.writeFileSync)((0,external_path_.join)('scripts/data/', scriptPath), newScript);
 
   if (oldScript !== newScript) {
-    changes.push({
-      folder: folder,
-      filename: scriptPath,
-      contents: newScript
-    });
     return {
       oldScript: oldScript,
       newScript: newScript
     };
   }
-}
-
-async function getXmlChangesInner(xmlFile) {
-  var oldXml = getXmlFromGithub(xmlFile);
-  var newXml = await getXmlFromSynapse(xmlFile);
-  if (oldXml !== newXml) {
-    return {
-      folder: 'cards/',
-      filename: xmlFile,
-      contents: newXml
-    };
-  }
-
-  return null;
 }
 
 
@@ -9420,6 +9355,7 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
 try {
   (0,_common_rootDir_mjs__WEBPACK_IMPORTED_MODULE_1__/* .setRootDir */ .pz)(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('working-directory'));
   await (0,_data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__/* .updateData */ .V)();
+  await (0,_data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__/* .getXmlChanges */ .$)();
 } catch (error) {
   console.error(error.message);
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);

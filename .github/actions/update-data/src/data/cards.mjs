@@ -25,7 +25,8 @@ async function getCardsJson() {
     rootNodes: ['unit'],
     rawRootMaps: {
       unit: addCard(cards)
-    }
+    },
+    stopNodes: ['asset_bundle', 'asset_bundle_alt', 'picture_alt', 'cannot_salvage', 'give_full_salvage', 'salvage_bonus', 'item_name', 'item_desc', 'item_icon', 'item_bundle_id', 'item_overflow_item_id', 'release_set', 'fusion_level', 'mythic']
   };
 
   await Promise.all([
