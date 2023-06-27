@@ -14,25 +14,6 @@ for(var id in FUSIONS) {
 	REVERSE_FUSIONS[fusion] = id;
 };"use strict";
 
-window.loadCardCache = function loadCardCache() {
-    var cardData = storageAPI.getField("GameData", "CardCache");
-    if (cardData && cardData.lastUpdated > DataUpdated) {
-        if (cardData.newCards) {
-            $.extend(CARDS, cardData.newCards);
-            $.extend(FUSIONS, cardData.newFusions);
-        }
-        DataUpdated = cardData.lastUpdated;
-    } else {
-        // Clear cached info to reduce storage used
-        var CARDS_cache = {
-            newCards: {},
-            newFusions: {},
-            lastUpdated: Date.now()
-        };
-        storageAPI.setField("GameData", "CardCache", CARDS_cache);
-    }
-};
-
 if (typeof String.prototype.format !== 'function') {
     String.prototype.format = function() {
         var args = arguments;
@@ -962,11 +943,12 @@ function addMissionBGE(battlegrounds, campaignID, missionLevel) {
         var id = campaign.battleground_id;
         if (id) {
             var battleground = BATTLEGROUNDS[id];
-            missionLevel = Number(missionLevel) - 1; // Convert to 0-based
-            if (!battleground.starting_level || Number(battleground.starting_level) <= missionLevel) {
+            var effectiveLevel = Math.min(missionLevel, Number(battleground.max_level) || Infinity);
+            effectiveLevel = Number(effectiveLevel) - 1; // Convert to 0-based
+            if (!battleground.starting_level || Number(battleground.starting_level) <= effectiveLevel) {
                 if (battleground.scale_with_level) {
                     battleground = JSON.parse(JSON.stringify(battleground));
-                    var levelsToScale = missionLevel - Number(battleground.starting_level);
+                    var levelsToScale = effectiveLevel - Number(battleground.starting_level);
                     for (var i = 0; i < battleground.effect.length; i++) {
                         var effect = battleground.effect[i];
                         effect.mult = effect.base_mult + effect.mult * levelsToScale;
@@ -6443,8 +6425,6 @@ $(function () {
 
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
-
-    loadCardCache();
 
     processQueryString();
 });

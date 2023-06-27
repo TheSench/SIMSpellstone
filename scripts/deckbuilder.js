@@ -148,7 +148,6 @@ var initDeckBuilder = function () {
 		onClickFilter(event, filterDualFaction, event.altKey);
 	});
 
-	loadCardCache();
 	setTimeout(loadCards, 1);
 
 	if (_DEFINED("unlimited")) {

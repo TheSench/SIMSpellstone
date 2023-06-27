@@ -217,8 +217,6 @@ $(function () {
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 
-    loadCardCache();
-
     processQueryString();
 });
 

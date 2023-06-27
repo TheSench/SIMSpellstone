@@ -2,15 +2,10 @@ import { XMLParser } from 'fast-xml-parser';
 export function xmlDocToJson(xml, options) {
   options = Object.create(options);
   options.arrayRoots = options.arrayRoots || {};
-  options.arrayProps = options.arrayProps || {};
-  options.calculatedProps = options.calculatedProps || {};
-  options.conversions = options.conversions || {};
-  options.defaults = options.defaults || {};
-  options.element = options.renames || {};
   options.filteredProps = arrayToMap(options.filteredProps);
-  options.renames = options.renames || {};
   options.rootNodes = options.rootNodes && arrayToMap(options.rootNodes);
   options.rawRootMaps = options.rawRootMaps || {};
+  options.stopNodes = (options.stopNodes || []).map(el => `*.${el}`);
 
   const parser = new XMLParser({
     attributeNamePrefix: '@',
@@ -44,9 +39,6 @@ function xmlRootsToJson(xml, options) {
   });
 
   return collection;
-  // return convertedValue("root",
-  //   collection,
-  //   options);
 }
 
 function xmlCollectionToJson(xml, options, propName) {
@@ -67,23 +59,18 @@ function xmlToJson([name, element], options, propName) {
   return convertedValue(name, value, options);
 }
 
-function emptyObject() {
-  return {};
-}
-
 function xmlToJsonInner([nodeName, element], options, propName) {
   if (typeof element !== 'object') {
     return element;
   }
 
-  var obj = (options.defaults[nodeName] || emptyObject)();
+  var obj = {};
   if (propName) obj[propName] = nodeName;
 
   const convertEntry = function ([name, element]) {
     const normalizedName = name.replace('@', '');
     if (!options.filteredProps[normalizedName]) {
-      var savedAsName = (options.renames[normalizedName] || normalizedName);
-      obj[savedAsName] = convertedValue(normalizedName, element, options);
+      obj[normalizedName] = convertedValue(normalizedName, element, options);
     }
   }
 
@@ -93,23 +80,10 @@ function xmlToJsonInner([nodeName, element], options, propName) {
     Object.entries(element).forEach(convertEntry);
   }
 
-  var calculatedProps = options.calculatedProps[nodeName];
-  if (calculatedProps) {
-    Object.keys(calculatedProps).forEach(function (prop) {
-      obj[prop] = calculatedProps[prop](obj);
-    });
-  }
-
   return obj;
 }
 
 export function convertedValue(name, originalValue, options) {
   const normalizedName = name.replace('@', '');
-  return (options.conversions[normalizedName] || defaultConversion(normalizedName))(originalValue, options);
-}
-
-function defaultConversion(name) {
-  return function (originalValue, options) {
-    xmlToJsonInner([name, originalValue], options, options.arrayRoots[name]);
-  }
+  return xmlToJsonInner([normalizedName, originalValue], options);
 }

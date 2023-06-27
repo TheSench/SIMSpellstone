@@ -3,29 +3,17 @@ import { makeAPICall } from './spellstoneAPI.mjs';
 
 var newCommonJs;
 
-export async function getCommonJs(otherChanges) {
-  var oldJsFile = getOldCommonJs();
+export async function getCommonJs() {
+  var oldJsFile = getScriptFromGithub('common.js');
   
   var currentBGEs = await getCurrentBges();
   if(currentBGEs.length) {
     newCommonJs = '"use strict"\n\n' + 
                 'var text_version = \'v2.0\';\n' +
-                'var battle_sim = false;\n' +
                 'var current_bges = ' + JSON.stringify(currentBGEs) + ';\n';
   } else {
     newCommonJs = oldJsFile;
   }
-  
-  if(otherChanges || newCommonJs !== oldJsFile) {
-    newCommonJs += dataUpdatedLine();
-  } else {
-    newCommonJs = null;
-  }
-  return newCommonJs;
-}
-
-function dataUpdatedLine() {
-  return `var DataUpdated = ${Date.now()};`;
 }
 
 async function getCurrentBges() {
@@ -48,11 +36,4 @@ async function getCurrentBges() {
   }
   
   return currentBges;
-}
-
-function getOldCommonJs() {
-  var oldCommonJs = getScriptFromGithub('common.js')
-  .replace(/var DataUpdated = (\d|\.)+;/, '');
-  
-  return oldCommonJs;
 }

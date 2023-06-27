@@ -14,96 +14,72 @@ import { getSkillsJs } from './skills.mjs';
 import { getSpoilersJs } from './spoilers.mjs';
 
 export async function updateData() {
-  const changes = [];
-  await compareFile(changes, 'runes.js', getRunesJs);
-  await compareFile(changes, 'bges.js', getBgesJs);
-  await compareFile(changes, 'campaign.js', getCampaignJs);
-  await compareFile(changes, 'fusions.js', getFusionsJs);
-  await compareFile(changes, 'mapBGEs.js', getMapBgesJs);
-  await compareFile(changes, 'skills.js', getSkillsJs);
+  await updateFile('runes.js', getRunesJs);
+  await updateFile('bges.js', getBgesJs);
+  await updateFile('campaign.js', getCampaignJs);
+  await updateFile('fusions.js', getFusionsJs);
+  await updateFile('mapBGEs.js', getMapBgesJs);
+  await updateFile('skills.js', getSkillsJs);
 
-  const cardChanges = await compareFile(changes, 'cards.js', getCardsJs);
+  const cardChanges = await compareFile('cards.js', getCardsJs);
   if (cardChanges) {
-    await compareFile(changes, 'spoilers.js', getSpoilersJs, cardChanges);
+    await updateFile('spoilers.js', () => getSpoilersJs(cardChanges));
   }
 
-  const raidsJs = await compareFile(changes, 'raids.js', getRaidsJs);
-
-  const commonJs = await compareFile(changes, 'common.js', getCommonJs, changes.length);
+  await updateFile('raids.js', getRaidsJs);
+  await updateFile('common.js', getCommonJs);
 }
 
-async function getXmlChanges() {
-  return (await Promise.all([
-    'achievements.xml',
-    'arena.xml',
-    'battleground_effects.xml',
-    'campaigns.xml',
-    'cards.xml',
-    'cards_config.xml',
-    'cards_heroes.xml',
-    'cards_premium_aether.xml',
-    'cards_premium_chaos.xml',
-    'cards_premium_wyld.xml',
-    'cards_reward.xml',
-    'cards_shard.xml',
-    'cards_special.xml',
-    'cards_standard.xml',
-    'cards_story.xml',
-    'fusion_recipes_cj2.xml',
-    'guide.xml',
-    'guilds.xml',
-    'levels.xml',
-    'market.xml',
-    'missions.xml',
-    'missions_event.xml',
-    'passive_missions.xml',
-    'tutorial1.xml'
-  ].map(getXmlChangesInner)))
-    .filter(it => it !== null);
+export async function getXmlChanges() {
+  await Promise.all(
+    [
+      'achievements.xml',
+      'arena.xml',
+      'battleground_effects.xml',
+      'campaigns.xml',
+      'cards.xml',
+      'cards_config.xml',
+      'cards_heroes.xml',
+      'cards_premium_aether.xml',
+      'cards_premium_chaos.xml',
+      'cards_premium_wyld.xml',
+      'cards_reward.xml',
+      'cards_shard.xml',
+      'cards_special.xml',
+      'cards_standard.xml',
+      'cards_story.xml',
+      'fusion_recipes_cj2.xml',
+      'guide.xml',
+      'guilds.xml',
+      'levels.xml',
+      'market.xml',
+      'missions.xml',
+      'missions_event.xml',
+      'passive_missions.xml',
+      'tutorial1.xml'
+    ].map(getXmlFromSynapse)
+  );
 }
 
-function updateXmlFiles() {
-  var changes = getXmlChanges();
-
-  if (changes.length) {
-    commitMultipleFilesToGithub_("XML", changes);
+async function updateFile(scriptPath, scriptFunction) {
+  var newScript = await scriptFunction();
+  if (newScript) {
+    writeFileSync(join('scripts/data/', scriptPath), newScript);
   }
 }
 
-async function compareFile(changes, scriptPath, scriptFunction, scriptParameter, folder) {
-  if (!folder) {
-    folder = 'scripts/data/';
-  }
+async function compareFile(scriptPath, scriptFunction) {
   var oldScript = getScriptFromGithub(scriptPath);
-  var newScript = await scriptFunction(scriptParameter);
+  var newScript = await scriptFunction();
   if (!newScript) {
     return;
   }
-  writeFileSync(join(folder, scriptPath), newScript);
+  writeFileSync(join('scripts/data/', scriptPath), newScript);
 
   if (oldScript !== newScript) {
-    changes.push({
-      folder: folder,
-      filename: scriptPath,
-      contents: newScript
-    });
     return {
       oldScript: oldScript,
       newScript: newScript
     };
   }
-}
-
-async function getXmlChangesInner(xmlFile) {
-  var oldXml = getXmlFromGithub(xmlFile);
-  var newXml = await getXmlFromSynapse(xmlFile);
-  if (oldXml !== newXml) {
-    return {
-      folder: 'cards/',
-      filename: xmlFile,
-      contents: newXml
-    };
-  }
-
-  return null;
 }

@@ -19479,6 +19479,151 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Wizard Event 104 - Mecha - Node 1 -->
+  <achievement>
+    <id>3886</id>
+    <!-- HERE  -->
+    <type>2</type>
+    <order>101</order>
+    <name>Dark side of the science</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Dark side of the science' campaign on Mastery Level 1.</desc>
+    <!-- HERE  -->
+    <mission_req>7103</mission_req>
+    <locked_start_time>1687453200</locked_start_time>
+    <!-- Thursday, June 22, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <req>
+      <campaign>1349</campaign>
+      <!-- HERE  -->
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3113" number="50" />
+      <!-- Expediton Item -->
+      <!-- HERE  -->
+      <event_points id="7100" number="50" />
+      <!-- Expediton ID -->
+      <!-- HERE  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3887</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dark side of the science</name>
+    <!-- HERE  -->
+    <desc>Complete the 'Dark side of the science' campaign on Mastery Level 2.</desc>
+    <mission_req>7103</mission_req>
+    <locked_start_time>1687453200</locked_start_time>
+    <!-- Thursday, June 22, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3886</achievement_req>
+    <!-- Dont forget requirement  -->
+    <req>
+      <campaign>1349</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3888</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dark side of the science</name>
+    <desc>Complete the 'Dark side of the science' campaign on Mastery Level 4.</desc>
+    <mission_req>7103</mission_req>
+    <locked_start_time>1687453200</locked_start_time>
+    <!-- Thursday, June 22, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3887</achievement_req>
+    <req>
+      <campaign>1349</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3889</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dark side of the science</name>
+    <desc>Complete the 'Dark side of the science' campaign on Mastery Level 6.</desc>
+    <mission_req>7103</mission_req>
+    <locked_start_time>1687453200</locked_start_time>
+    <!-- Thursday, June 22, 2023 17:00:00	 -->
+    <!-- HERE  -->
+    <achievement_req>3888</achievement_req>
+    <req>
+      <campaign>1349</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 104 - Mecha - Node 2 -->
+  <achievement>
+    <id>3890</id>
+    <type>2</type>
+    <order>101</order>
+    <name>When an experiment goes wrong...</name>
+    <desc>Complete the 'When an experiment goes wrong...' campaign on Mastery Level 2.</desc>
+    <mission_req>7109</mission_req>
+    <locked_start_time>1688662800</locked_start_time>
+    <!-- Thursday, 6 July 2023 17:00:00 -->
+    <req>
+      <campaign>1350</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3891</id>
+    <type>2</type>
+    <order>101</order>
+    <name>When an experiment goes wrong...</name>
+    <desc>Complete the 'When an experiment goes wrong...' campaign on Mastery Level 4.</desc>
+    <mission_req>7109</mission_req>
+    <locked_start_time>1688662800</locked_start_time>
+    <!-- Thursday, 6 July 2023 17:00:00 -->
+    <achievement_req>3883</achievement_req>
+    <req>
+      <campaign>1350</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3892</id>
+    <type>2</type>
+    <order>101</order>
+    <name>When an experiment goes wrong...</name>
+    <desc>Complete the 'When an experiment goes wrong...' campaign on Mastery Level 6.</desc>
+    <mission_req>7109</mission_req>
+    <locked_start_time>1688662800</locked_start_time>
+    <!-- Thursday, 6 July 2023 17:00:00 -->
+    <achievement_req>3884</achievement_req>
+    <req>
+      <campaign>1350</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -20875,6 +21020,36 @@
       <campaign>1347</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1348</campaign>
+      <!-- Gen2 node 2 -->
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <!-- Return to Luminis -->
+    <id>4058</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Return to Luminis</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Luminis.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>6430</mission_req>
+    <req>
+      <campaign>1250</campaign>
+      <!-- 1st node -->
+      <campaign>1251</campaign>
+      <!-- 2nd node -->
+      <campaign>1252</campaign>
+      <!-- Boss node -->
+      <campaign>1253</campaign>
+      <!-- 3rd node -->
+      <campaign>1254</campaign>
+      <!-- 4th node -->
+      <campaign>1349</campaign>
+      <!-- Gen2 node 1 -->
+      <campaign>1350</campaign>
       <!-- Gen2 node 2 -->
       <level>7</level>
     </req>
