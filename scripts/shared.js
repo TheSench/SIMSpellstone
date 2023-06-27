@@ -1,24 +1,5 @@
 "use strict";
 
-window.loadCardCache = function loadCardCache() {
-    var cardData = storageAPI.getField("GameData", "CardCache");
-    if (cardData && cardData.lastUpdated > DataUpdated) {
-        if (cardData.newCards) {
-            $.extend(CARDS, cardData.newCards);
-            $.extend(FUSIONS, cardData.newFusions);
-        }
-        DataUpdated = cardData.lastUpdated;
-    } else {
-        // Clear cached info to reduce storage used
-        var CARDS_cache = {
-            newCards: {},
-            newFusions: {},
-            lastUpdated: Date.now()
-        };
-        storageAPI.setField("GameData", "CardCache", CARDS_cache);
-    }
-};
-
 if (typeof String.prototype.format !== 'function') {
     String.prototype.format = function() {
         var args = arguments;

@@ -13,5 +13,3 @@
         CARD_GUI.draw_cards(SIMULATOR.field);   // Draw battlefield with no hand
     }
 })();
-
-var battle_sim = true;
