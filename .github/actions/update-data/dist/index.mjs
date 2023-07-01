@@ -8027,14 +8027,15 @@ function cacheResponse(message, response) {
 }
 
 async function makeAPICallInner(message) {
+    const platform = 'web';
     const client_time = Math.floor(Date.now() / 1000).toString();
-    const client_signature = (0,external_crypto_.createHash)('md5').update(client_time + spellstoneAPI_password + salt).digest('hex');
+    const client_signature = (0,external_crypto_.createHash)('md5').update(message + client_time + spellstoneAPI_password + platform + salt).digest('hex');
     const postData = Object.entries({
-        password: spellstoneAPI_password,
         unity: 'Unity2020_3_42',
-        platform: 'web',
-        client_version: '70',
+        client_version: '72',
         client_time,
+        password: spellstoneAPI_password,
+        platform,
         client_signature
     }).map(([key, value]) =>
         `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
@@ -8738,7 +8739,7 @@ async function getCommonJs() {
 async function getCurrentBges() {
   var currentBges = [];
   
-  var events = (await makeAPICall("updateEvents")).active_events;
+  var events = (await makeAPICall("init")).active_events;
   for(var id in events) {
     var effect = events[id].effect;
     if(effect && !effect.clash_only && !effect.guildwar_only) {

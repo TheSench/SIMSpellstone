@@ -19,7 +19,7 @@ export async function getCommonJs() {
 async function getCurrentBges() {
   var currentBges = [];
   
-  var events = (await makeAPICall("updateEvents")).active_events;
+  var events = (await makeAPICall("init")).active_events;
   for(var id in events) {
     var effect = events[id].effect;
     if(effect && !effect.clash_only && !effect.guildwar_only) {
