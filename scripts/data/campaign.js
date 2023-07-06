@@ -6746,6 +6746,22 @@ var CAMPAIGNS = {
 			"7097"
 		],
 		"name": "Lightning Boss Llorona Reborn"
+	},
+	"4017": {
+		"id": "4017",
+		"items": {
+			"3113": 0.6
+		},
+		"location_id": "29",
+		"missions": [
+			"7110",
+			"7111",
+			"7112",
+			"7113",
+			"7114",
+			"7115"
+		],
+		"name": "Lightning Darkassan Trial"
 	}
 };
 var MISSIONS = {
@@ -143031,5 +143047,365 @@ var MISSIONS = {
 		],
 		"id": "7109",
 		"name": "The calm after the storm"
+	},
+	"7110": {
+		"commander": {
+			"id": "476"
+		},
+		"deck": [
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "7221"
+			},
+			{
+				"id": "7221"
+			},
+			{
+				"id": "6095"
+			},
+			{
+				"id": "6095"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1348",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1348",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6288",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6288",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5625",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7110",
+		"name": "Is there any good news?"
+	},
+	"7111": {
+		"commander": {
+			"id": "476"
+		},
+		"deck": [
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6288"
+			},
+			{
+				"id": "7221"
+			},
+			{
+				"id": "6095"
+			},
+			{
+				"id": "6095"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1348",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6288",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6178",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4036",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7111",
+		"name": "Unconditional help"
+	},
+	"7112": {
+		"commander": {
+			"id": "476"
+		},
+		"deck": [
+			{
+				"id": "1345"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6288"
+			},
+			{
+				"id": "6288"
+			},
+			{
+				"id": "7304"
+			},
+			{
+				"id": "6095"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7304",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6288",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6178",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4052",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7112",
+		"name": "Leave no stone unturned"
+	},
+	"7113": {
+		"commander": {
+			"id": "476"
+		},
+		"deck": [
+			{
+				"id": "5142"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "6161"
+			},
+			{
+				"id": "6161"
+			},
+			{
+				"id": "5196"
+			},
+			{
+				"id": "5196"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113"
+			},
+			{
+				"id": "2122",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6198",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5636",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7113",
+		"name": "A distressing signal"
+	},
+	"7114": {
+		"commander": {
+			"id": "476"
+		},
+		"deck": [
+			{
+				"id": "5142"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "6198"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "5196"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "2113"
+			},
+			{
+				"id": "2122",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6198",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4024",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7114",
+		"name": "Undercover agenda"
+	},
+	"7115": {
+		"commander": {
+			"id": "476"
+		},
+		"deck": [
+			{
+				"id": "5142"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "6198"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "5137"
+			},
+			{
+				"id": "7304"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "2122",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5137",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6198",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4052",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7115",
+		"name": "Was everything an illusion?"
 	}
 };

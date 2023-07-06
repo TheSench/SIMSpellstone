@@ -64512,4 +64512,148 @@
       <card id="6210" mastery_level="7" name="Burning Blade" />
     </deck>
   </mission>
+  <mission>
+    <id>7110</id>
+    <name>Is there any good news?</name>
+    <energy>18</energy>
+    <desc>After the exhausting battle in the middle of the night, you get to talk to the mecha zombie that helped you. It gives you an unsettling but revealing clue about the leader of these abominations: its name is Dr. Mechau and he&apos;s being helped by Darkassan itself.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="1345" name="Owltron" />
+      <card id="1345" name="Owltron" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="7221" name="Icejaw Turtle" />
+      <card id="7221" name="Icejaw Turtle" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="1348" mastery_level="3" name="Flailpod" />
+      <card id="1348" mastery_level="4" name="Flailpod" />
+      <card id="6288" mastery_level="5" name="Ashen Cavalier" />
+      <card id="6288" mastery_level="6" name="Ashen Cavalier" />
+      <card id="5625" mastery_level="7" name="Aeronwen, the Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7111</id>
+    <name>Unconditional help</name>
+    <energy>18</energy>
+    <desc>This mecha hunter shares its own research about that dreadful pair: Darkassan brings the subjects for the Doctor to experiment on and create an army of robots. Since the hunter offered its help, you decide that you&apos;ll stick together until they are stopped.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="1345" name="Owltron" />
+      <card id="1345" name="Owltron" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6288" name="Ashen Cavalier" />
+      <card id="7221" name="Icejaw Turtle" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="1348" mastery_level="3" name="Flailpod" />
+      <card id="6295" mastery_level="4" name="Creeperbots" />
+      <card id="6288" mastery_level="5" name="Ashen Cavalier" />
+      <card id="6178" mastery_level="6" name="Bitumen Elemental" />
+      <card id="4036" mastery_level="7" name="Leroux, the Macabre" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7112</id>
+    <name>Leave no stone unturned</name>
+    <energy>18</energy>
+    <desc>You attempted to find the hideout of Doctor Mechau with a little bit of help. While you were gone, the hunter managed to create a device with the robot&apos;s wreckage that can pinpoint Mechau&apos;s controlling signal and therefore, its lair.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="1345" name="Owltron" />
+      <card id="1345" name="Owltron" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6210" name="Burning Blade" />
+      <card id="6288" name="Ashen Cavalier" />
+      <card id="6288" name="Ashen Cavalier" />
+      <card id="7304" name="Pumpkin Prototype" />
+      <card id="6095" name="Gearplate Dragon" />
+      <card id="6178" name="Bitumen Elemental" />
+      <card id="1645" mastery_level="2" name="Sundermarr" />
+      <card id="7304" mastery_level="3" name="Pumpkin Prototype" />
+      <card id="6295" mastery_level="4" name="Creeperbots" />
+      <card id="6288" mastery_level="5" name="Ashen Cavalier" />
+      <card id="6178" mastery_level="6" name="Bitumen Elemental" />
+      <card id="4052" mastery_level="7" name="Shadomeka" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7113</id>
+    <name>A distressing signal</name>
+    <energy>18</energy>
+    <desc>The mecha hunter wasted no time talking and marched at sunrise. You manage to catch up with him and find the Doctor&apos;s lair. Mechau receives you with Darkassan and a relentless army of robots, attacking you fiercely.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="5142" name="Buzzblade" />
+      <card id="5142" name="Buzzblade" />
+      <card id="6161" name="Torero" />
+      <card id="6161" name="Torero" />
+      <card id="5196" name="Deca-mecha" />
+      <card id="5196" name="Deca-mecha" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" name="Vali, the Thunderer" />
+      <card id="2122" mastery_level="2" name="Warrior Karna" />
+      <card id="2113" mastery_level="3" name="Vali, the Thunderer" />
+      <card id="6198" mastery_level="4" name="Rattleclank Courtesan" />
+      <card id="6295" mastery_level="5" name="Creeperbots" />
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <card id="5636" mastery_level="7" name="Almet, the Ferromancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7114</id>
+    <name>Undercover agenda</name>
+    <energy>18</energy>
+    <desc>Suddenly, in the middle of the fight, Mechau falls into the ground with a hole on its chest and Darkassan smiles behind him. &apos;&apos;Thanks to you, now I can do my will everywhere. This machine will give me endless soldiers!&apos;&apos;. He removes the controller from its head and continues the battle.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="5142" name="Buzzblade" />
+      <card id="5142" name="Buzzblade" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="5196" name="Deca-mecha" />
+      <card id="2145" name="Astaroth" />
+      <card id="2145" name="Astaroth" />
+      <card id="2113" name="Vali, the Thunderer" />
+      <card id="2122" mastery_level="2" name="Warrior Karna" />
+      <card id="5137" mastery_level="3" name="Forgesoul Construct" />
+      <card id="6198" mastery_level="4" name="Rattleclank Courtesan" />
+      <card id="6295" mastery_level="5" name="Creeperbots" />
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <card id="4024" mastery_level="7" name="The Coalheart Widow" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7115</id>
+    <name>Was everything an illusion?</name>
+    <energy>18</energy>
+    <desc>While facing Darkassan, the hunter aims to the machine in order to stop the endless army. An explosion that hurts Darkassan&apos;s wings, gives you a chance to knock him off with a ferocious punch, your ally is nowhere to be seen. You&apos;ve survived and restored peace once more.</desc>
+    <commander id="476" />
+    <deck>
+      <card id="5142" name="Buzzblade" />
+      <card id="5142" name="Buzzblade" />
+      <card id="6198" name="Rattleclank Courtesan" />
+      <card id="6295" name="Creeperbots" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="5137" name="Forgesoul Construct" />
+      <card id="7304" name="Pumpkin Prototype" />
+      <card id="6241" name="Grimkite Model" />
+      <card id="6295" name="Creeperbots" />
+      <card id="2122" mastery_level="2" name="Warrior Karna" />
+      <card id="5137" mastery_level="3" name="Forgesoul Construct" />
+      <card id="6198" mastery_level="4" name="Rattleclank Courtesan" />
+      <card id="6295" mastery_level="5" name="Creeperbots" />
+      <card id="6241" mastery_level="6" name="Grimkite Model" />
+      <card id="4052" mastery_level="7" name="Shadomeka" />
+    </deck>
+  </mission>
 </root>

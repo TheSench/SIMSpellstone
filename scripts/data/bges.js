@@ -2291,6 +2291,62 @@ var BATTLEGROUNDS = {
 		"id": "166",
 		"name": "Steel's Edge V2.0"
 	},
+	"167": {
+		"desc": "All Aether is going to receive Legion at 20%, Chaos receive Scorch at 30% and Wyld receive Berserk at 30%. All the stats are based on Attack",
+		"effect": [
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "legion",
+				"mult": 0.2,
+				"y": "1"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.3,
+				"y": "2"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.3,
+				"y": "3"
+			}
+		],
+		"id": "167",
+		"name": "Faction Power"
+	},
+	"168": {
+		"desc": "All Aether is going to receive Ward at 30%, Chaos receive Weaken at 30% and Wyld receive Armor at 20%. All the stats are based on Attack",
+		"effect": [
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.3,
+				"y": "1"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "weakenbge",
+				"mult": 0.3,
+				"y": "2"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.2,
+				"y": "3"
+			}
+		],
+		"id": "168",
+		"name": "Faction Resistance"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
