@@ -11864,6 +11864,8 @@
       <health>40</health>
       <attack>12</attack>
       <skill id="armored" x="7" />
+      <skill id="regenerate" x="8" />
+      <skill id="rally" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>

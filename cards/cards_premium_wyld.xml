@@ -40918,8 +40918,8 @@
     <id>7313</id>
     <card_type>2</card_type>
     <name>Beetleton Guard</name>
-    <picture>Beetle_Protector_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <picture>Insect_Beetle_Protector_A</picture>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1690822800</hidden_until_time>
     <attack>6</attack>
     <health>35</health>
@@ -40974,8 +40974,8 @@
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
     <name>Beetleton Grenadier</name>
-    <picture>Beetle_Protector_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <picture>Insect_Beetle_Protector_A</picture>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1690822800</hidden_until_time>
     <attack>9</attack>
     <health>41</health>
@@ -41029,8 +41029,8 @@
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
     <name>Beetleton Bombardier</name>
-    <picture>Beetle_Protector_B</picture>
-    <asset_bundle>276</asset_bundle>
+    <picture>Insect_Beetle_Protector_B</picture>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1690822800</hidden_until_time>
     <attack>12</attack>
     <health>46</health>

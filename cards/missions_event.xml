@@ -64805,360 +64805,360 @@
       <card id="27158" mastery_level="7" name="Toadfly" />
       <card id="4030" mastery_level="7" name="Mothmo, the Cryptid" />
     </deck>
-    <mission>
-      <id>7120</id>
-      <name>The Crash</name>
-      <energy>18</energy>
-      <desc>A skittering sound echoes through the pitch-black caves, growing steadily louder... then, silence. After a brief pause, something collides with the ship! Gripping the wheel, you're forced to land in unrelenting darkness.</desc>
-      <commander id="214" />
-      <!-- Tremor Wurm -->
-      <deck>
-        <card id="6139" name="Sand Wurm" />
-        <card id="6139" name="Sand Wurm" />
-        <card id="2218" name="Spineworm Delver" />
-        <card id="2218" name="Spineworm Delver" />
-        <card id="7198" name="Graveclay Digger" />
-        <card id="7198" name="Graveclay Digger" />
-        <card id="1638" name="Termite Breacher" />
-        <card id="1638" name="Termite Breacher" />
-        <card id="16008" mastery_level="2" name="Thousand Arm Demon" />
-        <card id="16008" mastery_level="3" name="Thousand Arm Demon" />
-        <card id="15196" mastery_level="4" name="Deca-mecha" />
-        <card id="15196" mastery_level="5" name="Deca-mecha" />
-        <card id="26139" mastery_level="6" name="Sand Wurm" />
-        <card id="26139" mastery_level="7" name="Sand Wurm" />
-        <card id="6622" mastery_level="7" name="Nophora, the Hoarder" />
-      </deck>
-      <speech>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>M-Mayday! MAYDAY!</text>
-        </line>
-      </speech>
-    </mission>
-    <mission>
-      <id>7121</id>
-      <name>Poisonbolt from the Blue</name>
-      <energy>18</energy>
-      <desc>When you and Dilbert emerge from the wreckage, you spot the cause of the unexpected landing. A foul, green projectile has soaked into the hull. Fortunately, the ship's headlamps still work... It's not much, but it's a start.</desc>
-      <commander id="366" />
-      <!-- Tomb Tunneler -->
-      <deck>
-        <card id="2156" name="Bladed Wayfarer" />
-        <card id="2156" name="Bladed Wayfarer" />
-        <card id="6180" name="Cloaked Revanapod" />
-        <card id="6180" name="Cloaked Revanapod" />
-        <card id="7048" name="Bogskull Widow" />
-        <card id="7048" name="Bogskull Widow" />
-        <card id="7233" name="Arsenite Pest" />
-        <card id="7233" name="Arsenite Pest" />
-        <card id="16193" mastery_level="2" name="Scorpio Stinger" />
-        <card id="16193" mastery_level="3" name="Scorpio Stinger" />
-        <card id="17063" mastery_level="4" name="Poisac Crawler" />
-        <card id="17063" mastery_level="5" name="Poisac Crawler" />
-        <card id="27130" mastery_level="6" name="Fluttering Stinger" />
-        <card id="27130" mastery_level="7" name="Fluttering Stinger" />
-        <card id="4073" mastery_level="7" name="Helvius, Spraying Mantis" />
-      </deck>
-      <speech>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>Oh, thank the gods... We're safe!</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>Wait, where are we?</text>
-        </line>
-        <line>
-          <commander>feralbug</commander>
-          <enemy>1</enemy>
-          <text>NONE SHALL PASSSSS</text>
-        </line>
-      </speech>
-    </mission>
-    <mission>
-      <id>7122</id>
-      <name>Sunless Stone</name>
-      <energy>18</energy>
-      <desc>After fending off the ambush, you follow the headlamps' light to a foreboding stone structure that leads even deeper into the depths. You recognize the style of carvings from the Forgotten Island, where you first met Agatha.</desc>
-      <commander id="366" />
-      <!-- Tomb Tunneler -->
-      <deck>
-        <card id="6068" name="Night Larva" />
-        <card id="6068" name="Night Larva" />
-        <card id="6068" name="Night Larva" />
-        <card id="6068" name="Night Larva" />
-        <card id="7137" name="Darkmites" />
-        <card id="7137" name="Darkmites" />
-        <card id="7137" name="Darkmites" />
-        <card id="7137" name="Darkmites" />
-        <card id="17065" mastery_level="2" name="Disturbed Swarm" />
-        <card id="17065" mastery_level="3" name="Disturbed Swarm" />
-        <card id="16291" mastery_level="4" name="Miteark Sorcerer" />
-        <card id="16291" mastery_level="5" name="Miteark Sorcerer" />
-        <card id="26037" mastery_level="6" name="Keeper of Souls" />
-        <card id="26037" mastery_level="7" name="Keeper of Souls" />
-        <card id="7619" mastery_level="7" name="Rima, the Impaler" />
-      </deck>
-      <speech>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>This is it, Adventurer! The ruins I was telling you about!</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>But it looks like something happened since my team was here last.</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>These doors weren't open before... I don't like this...</text>
-        </line>
-      </speech>
-    </mission>
-    <mission>
-      <id>7123</id>
-      <name>Open Wide</name>
-      <energy>18</energy>
-      <desc>There are obvious scorch marks marring the double doors ahead. You brace yourself for another struggle. Dilbert follows behind you in trepidation as you venture deeper inside, holding an old, beaten-up lantern full of fireflies.</desc>
-      <commander id="214" />
-      <!-- Tremor Wurm -->
-      <deck>
-        <card id="5065" name="Hive Guard" />
-        <card id="5065" name="Hive Guard" />
-        <card id="5065" name="Hive Guard" />
-        <card id="5065" name="Hive Guard" />
-        <card id="5139" name="Loyal Guard" />
-        <card id="5139" name="Loyal Guard" />
-        <card id="5139" name="Loyal Guard" />
-        <card id="5139" name="Loyal Guard" />
-        <card id="12100" mastery_level="2" name="Khreptronos" />
-        <card id="12100" mastery_level="3" name="Khreptronos" />
-        <card id="15200" mastery_level="4" name="Clyx, Advance Guard" />
-        <card id="15200" mastery_level="5" name="Clyx, Advance Guard" />
-        <card id="22233" mastery_level="6" name="Aikido Initiate" />
-        <card id="22233" mastery_level="7" name="Aikido Initiate" />
-        <card id="4019" mastery_level="7" name="Formos Ebonclaw" />
-      </deck>
-    </mission>
-    <mission>
-      <id>7124</id>
-      <name>Inner Sanctum</name>
-      <energy>18</energy>
-      <desc>You descend the first flight of stairs you see. The moment you enter the next chamber, torches on the walls suddenly crackle to life with crimson flame. The room is bathed in light, and an elaborate mural is unveiled before your eyes.</desc>
-      <commander id="326" />
-      <!-- Dirt Digger -->
-      <deck>
-        <card id="2211" name="Firelight Patrol" />
-        <card id="2211" name="Firelight Patrol" />
-        <card id="2255" name="Lavafly" />
-        <card id="2255" name="Lavafly" />
-        <card id="6044" name="Firewalker" />
-        <card id="6044" name="Firewalker" />
-        <card id="2049" name="Contrapede" />
-        <card id="2049" name="Contrapede" />
-        <card id="16065" mastery_level="2" name="Torchsnout" />
-        <card id="16065" mastery_level="3" name="Torchsnout" />
-        <card id="16266" mastery_level="4" name="Sparkhurler Gaucho" />
-        <card id="16266" mastery_level="5" name="Sparkhurler Gaucho" />
-        <card id="25142" mastery_level="6" name="Buzzblade" />
-        <card id="25142" mastery_level="7" name="Buzzblade" />
-        <card id="4060" mastery_level="7" name="Yaritza" />
-      </deck>
-      <speech>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>Adventurer, look at these old drawings!</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>I don't believe it! These look like...</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>It is! This is what Beetleton Bunker looked like when my great-great-great-grandfather was a grub!</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>But, if this building is related to Beetleton...</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>Why did no one discover it until recently?</text>
-        </line>
-      </speech>
-    </mission>
-    <mission>
-      <id>7125</id>
-      <name>The Spraying Mantis</name>
-      <energy>18</energy>
-      <desc>You're about to ponder Dilbert's question when you hear a harsh skittering sound, distant at first, but gaining and gaining fast. A huge, armored mantis darts into the sanctum. Liquid drips from its sickles as it lets out a hiss.</desc>
-      <commander id="366" />
-      <!-- Tomb Tunneler -->
-      <deck>
-        <card id="5070" name="Hornslicer" />
-        <card id="5070" name="Hornslicer" />
-        <card id="5070" name="Hornslicer" />
-        <card id="7067" name="Mantis" />
-        <card id="7067" name="Mantis" />
-        <card id="7067" name="Mantis" />
-        <card id="4046" level="1" name="Agatha, Myth Warden" />
-        <card id="4073" level="1" name="Helvius, Spraying Mantis" />
-        <card id="12098" mastery_level="2" name="Cocoon Crawler" />
-        <card id="12098" mastery_level="3" name="Cocoon Crawler" />
-        <card id="16138" mastery_level="4" name="Bitter Therix" />
-        <card id="16138" mastery_level="5" name="Bitter Therix" />
-        <card id="27298" mastery_level="6" name="Mindtis" />
-        <card id="27298" mastery_level="7" name="Mindtis" />
-        <card id="5606" mastery_level="7" name="Volvel, Golden Pride" />
-      </deck>
-      <speech>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>Aaaah! Adventurer! Watch out!</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>That creature! I know that scent!</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>That's the poison that damaged the airship...!</text>
-        </line>
-      </speech>
-    </mission>
-    <mission>
-      <id>7126</id>
-      <name>Rhynio Reunion</name>
-      <energy>18</energy>
-      <desc>The mantis's head rears back, and its eyes glow a fearsome green. But before it can spit its toxins at you, a bolt of fiery magic strikes it. It manages to fire a gout of green liquid harmlessly against the wall before collapsing to the floor.</desc>
-      <commander id="434" />
-      <!-- Agatha -->
-      <deck>
-        <card id="2050" name="Slithering Pincer" />
-        <card id="2050" name="Slithering Pincer" />
-        <card id="2050" name="Slithering Pincer" />
-        <card id="7067" name="Mantis" />
-        <card id="7067" name="Mantis" />
-        <card id="7067" name="Mantis" />
-        <card id="4046" level="3" name="Agatha, Myth Warden" />
-        <card id="4073" level="3" name="Helvius, Spraying Mantis" />
-        <card id="16110" mastery_level="2" name="Sea Mantis" />
-        <card id="16110" mastery_level="3" name="Sea Mantis" />
-        <card id="15193" mastery_level="4" name="Rhynio Battlecharger" />
-        <card id="15193" mastery_level="5" name="Rhynio Battlecharger" />
-        <card id="27298" mastery_level="6" name="Mindtis" />
-        <card id="27298" mastery_level="7" name="Mindtis" />
-        <card id="4008" mastery_level="7" name="Rhynio Sun Warrior" />
-      </deck>
-      <speech>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <!-- Agatha -->
-          <enemy>1</enemy>
-          <text>Helvius! That is enough! You will not harm another innocent!</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>Champion... what brings you here, to this painful reminder of olden times?</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>We're here to explore these ruins! Beetleton Bunker depends on it.</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>I am afraid you've dug far too deep for your own good.</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>This was once a secret haven for the Rhynio, when the Forgotten Hero was my child... my pride and joy.</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>When the Void surged through our island, a chosen few braved the darkness connecting us to the mainland. </text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>We erected this. A shelter, if the Crimsonwings should fall.</text>
-        </line>
-        <line>
-          <commander>architectbug</commander>
-          <enemy>0</enemy>
-          <text>But nobody's here but that... monster!</text>
-        </line>
-      </speech>
-    </mission>
-    <mission>
-      <id>7127</id>
-      <name>Myth Warden's Despair</name>
-      <energy>18</energy>
-      <desc>A look of grief clouds Agatha's face. She closes her eyes, fluttering over to the wall behind you. Your eyes follow her, and at last you understand. Pictured there is the mantis, applying a green poultice to another insect's wounds.</desc>
-      <commander id="434" />
-      <!-- Agatha -->
-      <deck>
-        <card id="22112" name="Vindicator Karna" />
-        <card id="22112" name="Vindicator Karna" />
-        <card id="26295" name="Roasterbots" />
-        <card id="26295" name="Roasterbots" />
-        <card id="26197" name="Monarch Incinerator" />
-        <card id="26197" name="Monarch Incinerator" />
-        <card id="4046" level="5" name="Agatha, Myth Warden" />
-        <card id="4073" level="5" name="Helvius, Spraying Mantis" />
-        <card id="26230" mastery_level="2" name="Emberdeath King" />
-        <card id="26230" mastery_level="3" name="Emberdeath King" />
-        <card id="26206" mastery_level="4" name="Bloodboil Cursemage" />
-        <card id="26206" mastery_level="5" name="Bloodboil Cursemage" />
-        <card id="26232" mastery_level="6" name="Viofire Deathmoth" />
-        <card id="26232" mastery_level="7" name="Viofire Deathmoth" />
-        <card id="7628" mastery_level="7" name="Ungoliant, Poisonous Terror" />
-      </deck>
-      <speech>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>Helvius was once the pride of the Rhynio people, beetle.</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>But when he stayed behind to heal the sick, he succumbed to the power of the Void. Soon, he was beyond even our reach.</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>Our finest Sun Warriors could not break the curse and return his mind. So, we had no recourse...</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>We sealed him away in this sanctuary, a place we once called our safe haven from the Void.</text>
-        </line>
-        <line>
-          <commander>Portrait_Insect_Sage</commander>
-          <enemy>1</enemy>
-          <text>And, in the end, the rest of our civilization would follow him into the abyss.</text>
-        </line>
-      </speech>
-    </mission>
+  </mission>
+  <mission>
+    <id>7120</id>
+    <name>The Crash</name>
+    <energy>18</energy>
+    <desc>A skittering sound echoes through the pitch-black caves, growing steadily louder... then, silence. After a brief pause, something collides with the ship! Gripping the wheel, you're forced to land in unrelenting darkness.</desc>
+    <commander id="214" />
+    <!-- Tremor Wurm -->
+    <deck>
+      <card id="6139" name="Sand Wurm" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="2218" name="Spineworm Delver" />
+      <card id="2218" name="Spineworm Delver" />
+      <card id="7198" name="Graveclay Digger" />
+      <card id="7198" name="Graveclay Digger" />
+      <card id="1638" name="Termite Breacher" />
+      <card id="1638" name="Termite Breacher" />
+      <card id="16008" mastery_level="2" name="Thousand Arm Demon" />
+      <card id="16008" mastery_level="3" name="Thousand Arm Demon" />
+      <card id="15196" mastery_level="4" name="Deca-mecha" />
+      <card id="15196" mastery_level="5" name="Deca-mecha" />
+      <card id="26139" mastery_level="6" name="Sand Wurm" />
+      <card id="26139" mastery_level="7" name="Sand Wurm" />
+      <card id="6622" mastery_level="7" name="Nophora, the Hoarder" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>M-Mayday! MAYDAY!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7121</id>
+    <name>Poisonbolt from the Blue</name>
+    <energy>18</energy>
+    <desc>When you and Dilbert emerge from the wreckage, you spot the cause of the unexpected landing. A foul, green projectile has soaked into the hull. Fortunately, the ship's headlamps still work... It's not much, but it's a start.</desc>
+    <commander id="366" />
+    <!-- Tomb Tunneler -->
+    <deck>
+      <card id="2156" name="Bladed Wayfarer" />
+      <card id="2156" name="Bladed Wayfarer" />
+      <card id="6180" name="Cloaked Revanapod" />
+      <card id="6180" name="Cloaked Revanapod" />
+      <card id="7048" name="Bogskull Widow" />
+      <card id="7048" name="Bogskull Widow" />
+      <card id="7233" name="Arsenite Pest" />
+      <card id="7233" name="Arsenite Pest" />
+      <card id="16193" mastery_level="2" name="Scorpio Stinger" />
+      <card id="16193" mastery_level="3" name="Scorpio Stinger" />
+      <card id="17063" mastery_level="4" name="Poisac Crawler" />
+      <card id="17063" mastery_level="5" name="Poisac Crawler" />
+      <card id="27130" mastery_level="6" name="Fluttering Stinger" />
+      <card id="27130" mastery_level="7" name="Fluttering Stinger" />
+      <card id="4073" mastery_level="7" name="Helvius, Spraying Mantis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Oh, thank the gods... We're safe!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Wait, where are we?</text>
+      </line>
+      <line>
+        <commander>feralbug</commander>
+        <enemy>1</enemy>
+        <text>NONE SHALL PASSSSS</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7122</id>
+    <name>Sunless Stone</name>
+    <energy>18</energy>
+    <desc>After fending off the ambush, you follow the headlamps' light to a foreboding stone structure that leads even deeper into the depths. You recognize the style of carvings from the Forgotten Island, where you first met Agatha.</desc>
+    <commander id="366" />
+    <!-- Tomb Tunneler -->
+    <deck>
+      <card id="6068" name="Night Larva" />
+      <card id="6068" name="Night Larva" />
+      <card id="6068" name="Night Larva" />
+      <card id="6068" name="Night Larva" />
+      <card id="7137" name="Darkmites" />
+      <card id="7137" name="Darkmites" />
+      <card id="7137" name="Darkmites" />
+      <card id="7137" name="Darkmites" />
+      <card id="17065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="17065" mastery_level="3" name="Disturbed Swarm" />
+      <card id="16291" mastery_level="4" name="Miteark Sorcerer" />
+      <card id="16291" mastery_level="5" name="Miteark Sorcerer" />
+      <card id="26037" mastery_level="6" name="Keeper of Souls" />
+      <card id="26037" mastery_level="7" name="Keeper of Souls" />
+      <card id="7619" mastery_level="7" name="Rima, the Impaler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>This is it, Adventurer! The ruins I was telling you about!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>But it looks like something happened since my team was here last.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>These doors weren't open before... I don't like this...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7123</id>
+    <name>Open Wide</name>
+    <energy>18</energy>
+    <desc>There are obvious scorch marks marring the double doors ahead. You brace yourself for another struggle. Dilbert follows behind you in trepidation as you venture deeper inside, holding an old, beaten-up lantern full of fireflies.</desc>
+    <commander id="214" />
+    <!-- Tremor Wurm -->
+    <deck>
+      <card id="5065" name="Hive Guard" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="12100" mastery_level="2" name="Khreptronos" />
+      <card id="12100" mastery_level="3" name="Khreptronos" />
+      <card id="15200" mastery_level="4" name="Clyx, Advance Guard" />
+      <card id="15200" mastery_level="5" name="Clyx, Advance Guard" />
+      <card id="22233" mastery_level="6" name="Aikido Initiate" />
+      <card id="22233" mastery_level="7" name="Aikido Initiate" />
+      <card id="4019" mastery_level="7" name="Formos Ebonclaw" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7124</id>
+    <name>Inner Sanctum</name>
+    <energy>18</energy>
+    <desc>You descend the first flight of stairs you see. The moment you enter the next chamber, torches on the walls suddenly crackle to life with crimson flame. The room is bathed in light, and an elaborate mural is unveiled before your eyes.</desc>
+    <commander id="326" />
+    <!-- Dirt Digger -->
+    <deck>
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2211" name="Firelight Patrol" />
+      <card id="2255" name="Lavafly" />
+      <card id="2255" name="Lavafly" />
+      <card id="6044" name="Firewalker" />
+      <card id="6044" name="Firewalker" />
+      <card id="2049" name="Contrapede" />
+      <card id="2049" name="Contrapede" />
+      <card id="16065" mastery_level="2" name="Torchsnout" />
+      <card id="16065" mastery_level="3" name="Torchsnout" />
+      <card id="16266" mastery_level="4" name="Sparkhurler Gaucho" />
+      <card id="16266" mastery_level="5" name="Sparkhurler Gaucho" />
+      <card id="25142" mastery_level="6" name="Buzzblade" />
+      <card id="25142" mastery_level="7" name="Buzzblade" />
+      <card id="4060" mastery_level="7" name="Yaritza" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, look at these old drawings!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>I don't believe it! These look like...</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>It is! This is what Beetleton Bunker looked like when my great-great-great-grandfather was a grub!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>But, if this building is related to Beetleton...</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Why did no one discover it until recently?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7125</id>
+    <name>The Spraying Mantis</name>
+    <energy>18</energy>
+    <desc>You're about to ponder Dilbert's question when you hear a harsh skittering sound, distant at first, but gaining and gaining fast. A huge, armored mantis darts into the sanctum. Liquid drips from its sickles as it lets out a hiss.</desc>
+    <commander id="366" />
+    <!-- Tomb Tunneler -->
+    <deck>
+      <card id="5070" name="Hornslicer" />
+      <card id="5070" name="Hornslicer" />
+      <card id="5070" name="Hornslicer" />
+      <card id="7067" name="Mantis" />
+      <card id="7067" name="Mantis" />
+      <card id="7067" name="Mantis" />
+      <card id="4046" level="1" name="Agatha, Myth Warden" />
+      <card id="4073" level="1" name="Helvius, Spraying Mantis" />
+      <card id="12098" mastery_level="2" name="Cocoon Crawler" />
+      <card id="12098" mastery_level="3" name="Cocoon Crawler" />
+      <card id="16138" mastery_level="4" name="Bitter Therix" />
+      <card id="16138" mastery_level="5" name="Bitter Therix" />
+      <card id="27298" mastery_level="6" name="Mindtis" />
+      <card id="27298" mastery_level="7" name="Mindtis" />
+      <card id="5606" mastery_level="7" name="Volvel, Golden Pride" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Aaaah! Adventurer! Watch out!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>That creature! I know that scent!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>That's the poison that damaged the airship...!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7126</id>
+    <name>Rhynio Reunion</name>
+    <energy>18</energy>
+    <desc>The mantis's head rears back, and its eyes glow a fearsome green. But before it can spit its toxins at you, a bolt of fiery magic strikes it. It manages to fire a gout of green liquid harmlessly against the wall before collapsing to the floor.</desc>
+    <commander id="434" />
+    <!-- Agatha -->
+    <deck>
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="7067" name="Mantis" />
+      <card id="7067" name="Mantis" />
+      <card id="7067" name="Mantis" />
+      <card id="4046" level="3" name="Agatha, Myth Warden" />
+      <card id="4073" level="3" name="Helvius, Spraying Mantis" />
+      <card id="16110" mastery_level="2" name="Sea Mantis" />
+      <card id="16110" mastery_level="3" name="Sea Mantis" />
+      <card id="15193" mastery_level="4" name="Rhynio Battlecharger" />
+      <card id="15193" mastery_level="5" name="Rhynio Battlecharger" />
+      <card id="27298" mastery_level="6" name="Mindtis" />
+      <card id="27298" mastery_level="7" name="Mindtis" />
+      <card id="4008" mastery_level="7" name="Rhynio Sun Warrior" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <!-- Agatha -->
+        <enemy>1</enemy>
+        <text>Helvius! That is enough! You will not harm another innocent!</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>Champion... what brings you here, to this painful reminder of olden times?</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>We're here to explore these ruins! Beetleton Bunker depends on it.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>I am afraid you've dug far too deep for your own good.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>This was once a secret haven for the Rhynio, when the Forgotten Hero was my child... my pride and joy.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>When the Void surged through our island, a chosen few braved the darkness connecting us to the mainland. </text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>We erected this. A shelter, if the Crimsonwings should fall.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>But nobody's here but that... monster!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7127</id>
+    <name>Myth Warden's Despair</name>
+    <energy>18</energy>
+    <desc>A look of grief clouds Agatha's face. She closes her eyes, fluttering over to the wall behind you. Your eyes follow her, and at last you understand. Pictured there is the mantis, applying a green poultice to another insect's wounds.</desc>
+    <commander id="434" />
+    <!-- Agatha -->
+    <deck>
+      <card id="22112" name="Vindicator Karna" />
+      <card id="22112" name="Vindicator Karna" />
+      <card id="26295" name="Roasterbots" />
+      <card id="26295" name="Roasterbots" />
+      <card id="26197" name="Monarch Incinerator" />
+      <card id="26197" name="Monarch Incinerator" />
+      <card id="4046" level="5" name="Agatha, Myth Warden" />
+      <card id="4073" level="5" name="Helvius, Spraying Mantis" />
+      <card id="26230" mastery_level="2" name="Emberdeath King" />
+      <card id="26230" mastery_level="3" name="Emberdeath King" />
+      <card id="26206" mastery_level="4" name="Bloodboil Cursemage" />
+      <card id="26206" mastery_level="5" name="Bloodboil Cursemage" />
+      <card id="26232" mastery_level="6" name="Viofire Deathmoth" />
+      <card id="26232" mastery_level="7" name="Viofire Deathmoth" />
+      <card id="7628" mastery_level="7" name="Ungoliant, Poisonous Terror" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>Helvius was once the pride of the Rhynio people, beetle.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>But when he stayed behind to heal the sick, he succumbed to the power of the Void. Soon, he was beyond even our reach.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>Our finest Sun Warriors could not break the curse and return his mind. So, we had no recourse...</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>We sealed him away in this sanctuary, a place we once called our safe haven from the Void.</text>
+      </line>
+      <line>
+        <commander>Portrait_Insect_Sage</commander>
+        <enemy>1</enemy>
+        <text>And, in the end, the rest of our civilization would follow him into the abyss.</text>
+      </line>
+    </speech>
   </mission>
 </root>

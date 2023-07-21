@@ -30447,7 +30447,7 @@
     <card_type>2</card_type>
     <name>Lavafly</name>
     <picture>Insect_Flaming_fly_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>1</attack>
     <health>12</health>
@@ -30493,7 +30493,7 @@
     <fusion_level>1</fusion_level>
     <name>Blazing Lavafly</name>
     <picture>Insect_Flaming_fly_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>2</attack>
     <health>15</health>
@@ -30539,7 +30539,7 @@
     <fusion_level>2</fusion_level>
     <name>Pyroclastic Lavafly</name>
     <picture>Insect_Flaming_fly_B</picture>
-    <asset_bundle>276</asset_bundle>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>3</attack>
     <health>18</health>
@@ -30584,7 +30584,7 @@
     <card_type>2</card_type>
     <name>Circuit Burster</name>
     <picture>Insect_Mecha_Internal_Bug_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>8</attack>
     <health>20</health>
@@ -30593,7 +30593,7 @@
     <skill id="backlash" x="2" />
     <skill id="heal" x="4" y="16" />
     <skill id="poison" x="3" />
-    <type>1</type>
+    <type>3</type>
     <sub_type>13</sub_type>
     <sub_type>16</sub_type>
     <set>2000</set>
@@ -30639,7 +30639,7 @@
     <fusion_level>1</fusion_level>
     <name>Circuit Invader</name>
     <picture>Insect_Mecha_Internal_Bug_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>10</attack>
     <health>25</health>
@@ -30648,7 +30648,7 @@
     <skill id="backlash" x="3" />
     <skill id="heal" x="6" y="16" />
     <skill id="poison" x="6" />
-    <type>1</type>
+    <type>3</type>
     <sub_type>13</sub_type>
     <sub_type>16</sub_type>
     <set>2000</set>
@@ -30692,9 +30692,9 @@
     <id>22256</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Circuit Re-Animator</name>
+    <name>Circuit Re-Activator</name>
     <picture>Insect_Mecha_Internal_Bug_B</picture>
-    <asset_bundle>276</asset_bundle>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>13</attack>
     <health>29</health>
@@ -30703,7 +30703,7 @@
     <skill id="backlash" x="4" />
     <skill id="heal" x="9" y="16" />
     <skill id="poison" x="9" />
-    <type>1</type>
+    <type>3</type>
     <sub_type>13</sub_type>
     <sub_type>16</sub_type>
     <set>2000</set>

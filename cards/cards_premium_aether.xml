@@ -8625,6 +8625,8 @@
       <level>3</level>
       <health>28</health>
       <skill id="counter" x="6" />
+      <skill id="strike" x="7" />
+      <skill id="weaken" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -39935,8 +39937,8 @@
     <id>5307</id>
     <card_type>2</card_type>
     <name>Frost Drakefly</name>
-    <picture>Dragon_Fly_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <picture>Insect_Dragon_Dragon_Fly_A</picture>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1692032400</hidden_until_time>
     <attack>6</attack>
     <health>21</health>
@@ -39989,8 +39991,8 @@
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
     <name>Chilling Drakefly</name>
-    <picture>Dragon_Fly_A</picture>
-    <asset_bundle>276</asset_bundle>
+    <picture>Insect_Dragon_Dragon_Fly_A</picture>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1692032400</hidden_until_time>
     <attack>7</attack>
     <health>26</health>
@@ -40044,8 +40046,8 @@
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
     <name>Bittercold Drakefly</name>
-    <picture>Dragon_Fly_B</picture>
-    <asset_bundle>276</asset_bundle>
+    <picture>Insect_Dragon_Dragon_Fly_B</picture>
+    <asset_bundle>278</asset_bundle>
     <hidden_until_time>1692032400</hidden_until_time>
     <attack>8</attack>
     <health>31</health>
