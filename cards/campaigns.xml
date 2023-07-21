@@ -10453,7 +10453,7 @@
   <!-- Campaign Event 36 - Fireshard Mine  -->
   <campaign>
     <id>1301</id>
-    <name>Wrong turn</name>
+    <name>Wrong Turn</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1636650000</locked_start_time>
@@ -10496,7 +10496,7 @@
   </campaign>
   <campaign>
     <id>1302</id>
-    <name>Fireshards way of fun</name>
+    <name>Fireshards Way of Fun</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1301" level="1" />
     <locked_start_time>1637859600</locked_start_time>
@@ -10737,7 +10737,7 @@
   </campaign>
   <campaign>
     <id>1308</id>
-    <name>Why can&apos;t we be friends?</name>
+    <name>Why Can&apos;t We Be Friends?</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1307" level="1" />
     <locked_start_time>1642698000</locked_start_time>
@@ -10782,7 +10782,7 @@
   <!-- Campaign Event 39 - The Abyss  -->
   <campaign>
     <id>1309</id>
-    <name>I hate portals</name>
+    <name>I Hate Portals</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1643907600</locked_start_time>
@@ -10913,7 +10913,7 @@
   </campaign>
   <campaign>
     <id>1312</id>
-    <name>One shell of a place</name>
+    <name>One Shell of a Place</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1311" level="1" />
     <locked_start_time>1647536400</locked_start_time>
@@ -10958,7 +10958,7 @@
   <!-- Campaign Event 88 - Return to Tarragon Peak -->
   <campaign>
     <id>1313</id>
-    <name>Taking a break</name>
+    <name>Taking a Break</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1648746000</locked_start_time>
@@ -11001,7 +11001,7 @@
   </campaign>
   <campaign>
     <id>1314</id>
-    <name>Exploring Tarragon peak</name>
+    <name>Exploring Tarragon Peak</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1313" level="1" />
     <locked_start_time>1649955600</locked_start_time>
@@ -11124,7 +11124,7 @@
   </campaign>
   <campaign>
     <id>1317</id>
-    <name>On the hunt</name>
+    <name>On the Hunt</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1316" level="1" />
     <locked_start_time>1652374800</locked_start_time>
@@ -11169,7 +11169,7 @@
   <!-- Campaign Event 90 - Frigore -->
   <campaign>
     <id>1318</id>
-    <name>Misleading a menace</name>
+    <name>Misleading a Menace</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1653584400</locked_start_time>
@@ -11212,7 +11212,7 @@
   </campaign>
   <campaign>
     <id>1319</id>
-    <name>The hunter has become the hunted</name>
+    <name>The Hunter Has Become the Hunted</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1318" level="1" />
     <locked_start_time>1654794000</locked_start_time>
@@ -11257,7 +11257,7 @@
   <!-- Campaign Event 91 - Forgotten Island -->
   <campaign>
     <id>1320</id>
-    <name>Call to adventure</name>
+    <name>Call to Adventure</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1656003600</locked_start_time>
@@ -11298,7 +11298,7 @@
   </campaign>
   <campaign>
     <id>1321</id>
-    <name>In deep danger</name>
+    <name>In Deep Danger</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1318" level="1" />
     <locked_start_time>1657213200</locked_start_time>
@@ -11382,7 +11382,7 @@
   </campaign>
   <campaign>
     <id>1323</id>
-    <name>A helping hand</name>
+    <name>A Helping Hand</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1322" level="1" />
     <locked_start_time>1659632400</locked_start_time>
@@ -11802,7 +11802,7 @@
   </campaign>
   <campaign>
     <id>1333</id>
-    <name>No mans land</name>
+    <name>No Mans land</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1332" level="1" />
     <locked_start_time>1669309200</locked_start_time>
@@ -12044,7 +12044,7 @@
   <!-- Event 99 -->
   <campaign>
     <id>1339</id>
-    <name>Gossip about a Hero</name>
+    <name>Gossip About a Hero</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1675357200</locked_start_time>
@@ -12132,7 +12132,7 @@
   <!-- Campaign Event 100 - Tarragon Peak -->
   <campaign>
     <id>1341</id>
-    <name>Just rumors?</name>
+    <name>Just Rumors?</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1677776400</locked_start_time>
@@ -12218,7 +12218,7 @@
   <!-- Campaign Event 101 - Salt Wastes -->
   <campaign>
     <id>1343</id>
-    <name>In the search of the Lost Tribe</name>
+    <name>In Search of the Lost Tribe</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1680195600</locked_start_time>
@@ -12261,7 +12261,7 @@
   </campaign>
   <campaign>
     <id>1344</id>
-    <name>After the storm, comes the calm?</name>
+    <name>After the Storm, Comes the Calm?</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1343" level="1" />
     <locked_start_time>1681405200</locked_start_time>
@@ -12304,7 +12304,7 @@
   <!-- Campaign Event 102 - Gladius Scriptorium -->
   <campaign>
     <id>1345</id>
-    <name>Looking for glory</name>
+    <name>Looking for Glory</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1682614800</locked_start_time>
@@ -12392,7 +12392,7 @@
   <!-- Campaign Event 103 - Stormy Seastone Citadel -->
   <campaign>
     <id>1347</id>
-    <name>Into the chaos</name>
+    <name>Into the Chaos</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1685034000</locked_start_time>
@@ -12435,7 +12435,7 @@
   </campaign>
   <campaign>
     <id>1348</id>
-    <name>Crazy chainsaws</name>
+    <name>Crazy Chainsaws</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1347" level="1" />
     <locked_start_time>1686243600</locked_start_time>
@@ -12480,7 +12480,7 @@
   <!-- Campaign Event 104 - Return To Luminis -->
   <campaign>
     <id>1349</id>
-    <name>Dark side of the science</name>
+    <name>Dark Side of the Science</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="6" level="1" />
     <locked_start_time>1687453200</locked_start_time>
@@ -12522,7 +12522,7 @@
   </campaign>
   <campaign>
     <id>1350</id>
-    <name>When an experiment goes wrong...</name>
+    <name>When an Experiment Goes Wrong...</name>
     <icon id="node_gem_yellow" bundle="15" />
     <campaign_req id="1349" level="1" />
     <locked_start_time>1688662800</locked_start_time>
@@ -12560,6 +12560,87 @@
     </rewards>
     <find_item id="3113" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1689872400</ignore_energy_reduction_until>
+    <!-- Thursday, July 20, 2023 at 17:00:00 	  -->
+  </campaign>
+  <!-- Campaign Event 105 - Distorted Beetleton -->
+  <campaign>
+    <id>1351</id>
+    <name>A Flight in the Dark</name>
+    <icon id="Lava_Vial" bundle="17" />
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1689872400</locked_start_time>
+    <!--  Thursday, July 20, 2023 17:00:00 -->
+    <location_id>22</location_id>
+    <x>400</x>
+    <y>350</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7116</mission_id>
+      <mission_id>7117</mission_id>
+      <mission_id>7118</mission_id>
+      <mission_id>7119</mission_id>
+      <mission_id>7120</mission_id>
+      <mission_id>7121</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2255" />
+      <!-- New Reward Epic -->
+      <item level="2" id="2683" number="25" />
+      <!-- New Distorted Beetleton Flask -->
+      <card level="3" id="2255" />
+      <!-- New Reward Epic -->
+      <card level="4" id="2256" />
+      <!-- New Reward Legendary -->
+      <item level="5" id="2683" number="50" />
+      <!-- New Distorted Beetleton Flask -->
+      <card level="6" id="2256" />
+      <!-- New Reward Legendary -->
+      <item level="7" id="2683" number="125" />
+      <!-- New Distorted Beetleton Flask -->
+    </rewards>
+    <find_item id="3092" drop_per_energy="1.7" />
+    <!-- Doubled to account for no energy halving, halve this number for next BGE -->
+    <ignore_energy_reduction_until>1692291600</ignore_energy_reduction_until>
+    <!-- Thursday, August 17, 2023 at 17:00:00 	  -->
+  </campaign>
+  <campaign>
+    <id>1352</id>
+    <name>The Healer's Prison</name>
+    <icon id="Lava_Vial" bundle="17" />
+    <campaign_req id="1351" level="1" />
+    <locked_start_time>1691082000</locked_start_time>
+    <!--  Thursday, August 3, 2023 17:00:00 -->
+    <location_id>22</location_id>
+    <x>600</x>
+    <y>500</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7122</mission_id>
+      <mission_id>7123</mission_id>
+      <mission_id>7124</mission_id>
+      <mission_id>7125</mission_id>
+      <mission_id>7126</mission_id>
+      <mission_id>7127</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2255" />
+      <!-- New Reward Epic -->
+      <item level="2" id="2683" number="25" />
+      <!-- New Distorted Beetleton Flask -->
+      <card level="3" id="2255" />
+      <!-- New Reward Epic -->
+      <card level="4" id="2256" />
+      <!-- New Reward Legendary -->
+      <item level="5" id="2683" number="50" />
+      <!-- New Distorted Beetleton Flask -->
+      <card level="6" id="2256" />
+      <!-- New Reward Legendary -->
+      <item level="7" id="2683" number="125" />
+      <!-- New Distorted Beetleton Flask -->
+    </rewards>
+    <find_item id="3092" drop_per_energy="1.8" />
+    <!-- Doubled to account for no energy halving, halve this number for next BGE -->
+    <ignore_energy_reduction_until>1692291600</ignore_energy_reduction_until>
     <!-- Thursday, July 20, 2023 at 17:00:00 	  -->
   </campaign>
   <!-- End campaign events -->

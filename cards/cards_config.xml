@@ -111,6 +111,7 @@
     <desc>Attack damage dealt to adjacent creatures is dealt to this creature instead.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <balance_points>1</balance_points>
+    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>absorb</id>
@@ -642,6 +643,7 @@
     <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
     <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
+    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>burnself</id>

@@ -1541,39 +1541,12 @@
   </battleground>
   <battleground>
     <id>167</id>
-    <name>Faction Power</name>
-    <desc>All Aether is going to receive Legion at 20%, Chaos receive Scorch at 30% and Wyld receive Berserk at 30%. All the stats are based on Attack</desc>
-    <icon>filter_aether_64</icon>
+    <name>Thriving Swarm</name>
+    <desc>All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.</desc>
+    <icon>filter_insect_64.png</icon>
     <effect>
-      <add_skill id="legion" mult="0.20" base="attack" y="1" />
-      <skill id="displayEffect" trigger="onSkill" y="1" s="legion">
-        <projectile_effect>
-          <prefab>Legion_Projectile</prefab>
-          <delay>0</delay>
-          <duration>0.5</duration>
-          <translation>0.5</translation>
-          <offset>2</offset>
-        </projectile_effect>
-        <target_effect>
-          <prefab>Legion_Angel_Target</prefab>
-          <delay>0.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
-      <add_skill id="burn" mult="0.3" base="attack" y="2" />
-      <add_skill id="berserk" mult="0.3" base="attack" y="3" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>168</id>
-    <name>Faction Resistance</name>
-    <desc>All Aether is going to receive Ward at 30%, Chaos receive Weaken at 30% and Wyld receive Armor at 20%. All the stats are based on Attack</desc>
-    <icon>filter_aether_64</icon>
-    <effect>
-      <add_skill id="absorb" mult="0.3" base="attack" y="1" />
-      <add_skill id="weakenbge" mult="0.30" base="attack" y="2" />
-      <add_skill id="armored" mult="0.20" base="attack" y="3" />
+      <scale_health base="health" mult="0.10" yy="13" />
+      <add_skill id="swarm" mult="0.15" base="health" y="13" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -1793,7 +1766,7 @@
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
-    <starting_level>130</starting_level>
+    <starting_level>100</starting_level>
     <!-- Starting Raid Level -->
     <effect>
       <skill id="heal" x="0.2" all="1" />

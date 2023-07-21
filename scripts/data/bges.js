@@ -2292,60 +2292,24 @@ var BATTLEGROUNDS = {
 		"name": "Steel's Edge V2.0"
 	},
 	"167": {
-		"desc": "All Aether is going to receive Legion at 20%, Chaos receive Scorch at 30% and Wyld receive Berserk at 30%. All the stats are based on Attack",
+		"desc": "All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.",
 		"effect": [
 			{
-				"base": "attack",
-				"effect_type": "add_skill",
-				"id": "legion",
-				"mult": 0.2,
-				"y": "1"
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.1,
+				"y": "13"
 			},
 			{
-				"base": "attack",
+				"base": "health",
 				"effect_type": "add_skill",
-				"id": "burn",
-				"mult": 0.3,
-				"y": "2"
-			},
-			{
-				"base": "attack",
-				"effect_type": "add_skill",
-				"id": "berserk",
-				"mult": 0.3,
-				"y": "3"
+				"id": "swarm",
+				"mult": 0.15,
+				"y": "13"
 			}
 		],
 		"id": "167",
-		"name": "Faction Power"
-	},
-	"168": {
-		"desc": "All Aether is going to receive Ward at 30%, Chaos receive Weaken at 30% and Wyld receive Armor at 20%. All the stats are based on Attack",
-		"effect": [
-			{
-				"base": "attack",
-				"effect_type": "add_skill",
-				"id": "absorb",
-				"mult": 0.3,
-				"y": "1"
-			},
-			{
-				"base": "attack",
-				"effect_type": "add_skill",
-				"id": "weakenbge",
-				"mult": 0.3,
-				"y": "2"
-			},
-			{
-				"base": "attack",
-				"effect_type": "add_skill",
-				"id": "armored",
-				"mult": 0.2,
-				"y": "3"
-			}
-		],
-		"id": "168",
-		"name": "Faction Resistance"
+		"name": "Thriving Swarm"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
@@ -2770,7 +2734,7 @@ var BATTLEGROUNDS = {
 		"id": "510",
 		"name": "Dungeon's Despair",
 		"scale_with_level": true,
-		"starting_level": 130
+		"starting_level": 100
 	},
 	"511": {
 		"desc": "Barrier and Barrier All skills are 50% more effective.",

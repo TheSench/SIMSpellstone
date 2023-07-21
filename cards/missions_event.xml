@@ -56835,7 +56835,7 @@
   </mission>
   <mission>
     <id>6795</id>
-    <name>Small detour</name>
+    <name>Small Detour</name>
     <energy>18</energy>
     <desc>When sailing with your buddies you decide to take a break and re-supply at the hotel you once stayed at in Tarragon peak. You make a stop at the hotel and head towards the front desk.</desc>
     <commander id="468" />
@@ -56859,7 +56859,7 @@
   </mission>
   <mission>
     <id>6796</id>
-    <name>No vacancy</name>
+    <name>No Vacancy</name>
     <energy>18</energy>
     <desc>Unfortunately, one of the hotel´s employees informs you that there is no vacancy. You try to have them make room for you but there is no way to convince them. You yell at the employee, FANGS FOR NOTHING! They do not take your joke kindly.</desc>
     <commander id="293" />
@@ -56882,7 +56882,7 @@
   </mission>
   <mission>
     <id>6797</id>
-    <name>In the heat of the moment</name>
+    <name>In the Heat of the Moment</name>
     <energy>18</energy>
     <desc>The employee calls security and they start ganging up on you. As a response to their aggression you continue to mock them and answer that they have no reason to get all fired up and that you are going to stay at the hotel wyvern they like it or not!</desc>
     <commander id="310" />
@@ -56906,7 +56906,7 @@
   </mission>
   <mission>
     <id>6798</id>
-    <name>Run boy run</name>
+    <name>Run Boy Run</name>
     <energy>18</energy>
     <desc>Tired of your bad puns, the dragons start chasing you out of the hotel. You have no option but to run into the resort's wilderness and hide until it is all clear. </desc>
     <commander id="318" />
@@ -56954,7 +56954,7 @@
   </mission>
   <mission>
     <id>6800</id>
-    <name>Nice to meet you</name>
+    <name>Nice to Meet You</name>
     <energy>18</energy>
     <desc>You look at the huge dragon with its gigantic fangs and horns and can't help being slightly scared for your life. He asks you to stay for a bite, but you decide to politely decline by running away in the opposite direction.</desc>
     <commander id="340" />
@@ -57002,7 +57002,7 @@
   </mission>
   <mission>
     <id>6802</id>
-    <name>Under attack</name>
+    <name>Under Attack</name>
     <energy>18</energy>
     <desc>You can see from your safe spot that a powerful but outnumbered dragon is defending her hatchling from a group of frog raiders. You decide to intervene and help out the dragon.</desc>
     <commander id="293" />
@@ -57025,7 +57025,7 @@
   </mission>
   <mission>
     <id>6803</id>
-    <name>Tipping the scales</name>
+    <name>Tipping the Scales</name>
     <energy>18</energy>
     <desc>After a fierce fight where the dragon is losing, your intervention seems to have tipped the scales and you manage to defeat all of the raiders.</desc>
     <commander id="310" />
@@ -57049,7 +57049,7 @@
   </mission>
   <mission>
     <id>6804</id>
-    <name>Funny business</name>
+    <name>Funny Business</name>
     <energy>18</energy>
     <desc>You ask the dragon about the raiders and she answers that she overheard one of their conversations and that's why they wanted to silence her for good. </desc>
     <commander id="318" />
@@ -57073,7 +57073,7 @@
   </mission>
   <mission>
     <id>6805</id>
-    <name>Wrong time wrong place</name>
+    <name>Wrong Time Wrong Place</name>
     <energy>18</energy>
     <desc>The Dragon tells you that she could take a glimpse at their leader, she describes him as a small and chaotic frog. You realize that the dragons lives could still be in danger and you decide to offer them a ride to someplace safer.</desc>
     <commander id="324" />
@@ -57097,7 +57097,7 @@
   </mission>
   <mission>
     <id>6806</id>
-    <name>Just winging it</name>
+    <name>Just Winging It</name>
     <energy>18</energy>
     <desc>The dragon asks where you will be taking them and you answer that you are honestly just winging it as you go. She obviously does not find this amusing as their lives depend on you, but unfortunately for them you are still the best option they have.</desc>
     <commander id="340" />
@@ -57121,7 +57121,7 @@
   </mission>
   <mission>
     <id>6807</id>
-    <name>Vulcanos is back</name>
+    <name>Vulcanos is Back</name>
     <energy>7</energy>
     <desc>Vulcanos has emerged with thunders of dragons by its side, banish him from these lands in order to reap the rewards.</desc>
     <commander id="468" />
@@ -57145,7 +57145,7 @@
   </mission>
   <mission>
     <id>6808</id>
-    <name>First thunder</name>
+    <name>First Thunder</name>
     <energy>7</energy>
     <desc>You stand in front of the first thunder of dragons, they seem fast and deadly. Nothing you haven’t handled in the past though.</desc>
     <commander id="468" />
@@ -57265,7 +57265,7 @@
   </mission>
   <mission>
     <id>6813</id>
-    <name>Ambushed at sea</name>
+    <name>Ambushed at Sea</name>
     <energy>18</energy>
     <desc>When traveling near the shores of Elaria, all of a sudden you can feel the ship being rammed. Screams are being heard all around. You have been ambushed!</desc>
     <commander id="203" />
@@ -57289,7 +57289,7 @@
   </mission>
   <mission>
     <id>6814</id>
-    <name>All out war</name>
+    <name>All-out War</name>
     <energy>18</energy>
     <desc>You head towards the deck and you can see fights happening everywhere. They mostly seem like random mercenaries but one of the enemies stands out, an infuriated angel flying while striking down everything in its path.</desc>
     <commander id="273" />
@@ -57313,7 +57313,7 @@
   </mission>
   <mission>
     <id>6815</id>
-    <name>Things just got worse</name>
+    <name>Things Just Got Worse</name>
     <energy>18</energy>
     <desc>You and your crew manage to repel the attack. Unfortunately, when you turn around you see Terragon lying down on the ground wounded. The worst part about it, the hatchling has been abducted.</desc>
     <commander id="306" />
@@ -57337,7 +57337,7 @@
   </mission>
   <mission>
     <id>6816</id>
-    <name>I will find you</name>
+    <name>I Will Find You</name>
     <energy>18</energy>
     <desc>Due to Terragon being wounded, you make a promise to her. You will go to Elaria and rescue her hatchling all by yourself.</desc>
     <commander id="277" />
@@ -57385,7 +57385,7 @@
   </mission>
   <mission>
     <id>6818</id>
-    <name>Toe to toe</name>
+    <name>Toe to Toe</name>
     <energy>18</energy>
     <desc>After heading up the cliff you realize the angel is standing beneath you. There is no backing out now. You fearlessly jump right in front of her and whisper &quot;Halo there&quot;. </desc>
     <commander id="407" />
@@ -57457,7 +57457,7 @@
   </mission>
   <mission>
     <id>6821</id>
-    <name>Together we go</name>
+    <name>Together We Go</name>
     <energy>18</energy>
     <desc>Alyel decides to join you in rescuing the hatchling. Fortunately she knows where the mercenaries stay and you head over there together.</desc>
     <commander id="306" />
@@ -57481,7 +57481,7 @@
   </mission>
   <mission>
     <id>6822</id>
-    <name>Payback time</name>
+    <name>Payback Time</name>
     <energy>18</energy>
     <desc>You find the mercenary base and you can see how they locked the hatchling in a cage. Alyel can barely hold her anger for a split second before she enters in a rage frenzy and starts taking out all of the mercenaries.</desc>
     <commander id="277" />
@@ -57505,7 +57505,7 @@
   </mission>
   <mission>
     <id>6823</id>
-    <name>Back in loving arms</name>
+    <name>Back in Loving Arms</name>
     <energy>18</energy>
     <desc>After rescuing the hatchling, you head back towards the ship and reunite with Terragon.</desc>
     <commander id="365" />
@@ -57553,7 +57553,7 @@
   </mission>
   <mission>
     <id>6825</id>
-    <name>A challenger rises</name>
+    <name>A Challenger Rises</name>
     <energy>18</energy>
     <desc>Look who comes around, another filthy adventurer who believes they can defeat me. I would like to see you try.</desc>
     <commander id="469" />
@@ -57577,7 +57577,7 @@
   </mission>
   <mission>
     <id>6826</id>
-    <name>Stronger than you look</name>
+    <name>Stronger Than You Look</name>
     <energy>18</energy>
     <desc>You survived huh? I see you are not as weak as you look. Although to be fair, I was only just getting started.</desc>
     <commander id="469" />
@@ -57601,7 +57601,7 @@
   </mission>
   <mission>
     <id>6827</id>
-    <name>Wall of pain</name>
+    <name>Wall of Pain</name>
     <energy>18</energy>
     <desc>I have had enough of you already. I have unchained a little surprise.</desc>
     <commander id="469" />
@@ -57625,7 +57625,7 @@
   </mission>
   <mission>
     <id>6828</id>
-    <name>One day I shall return</name>
+    <name>One Day I Shall Return</name>
     <energy>18</energy>
     <desc>Leave while you still can, adventurer, I have been expelled from my home once and I will not let it happen again.</desc>
     <commander id="469" />
@@ -57673,7 +57673,7 @@
   </mission>
   <mission>
     <id>6830</id>
-    <name>Rush of fury</name>
+    <name>Rush of Fury</name>
     <energy>18</energy>
     <desc>I know to acknowledge a good warrior when I see one. Although to prove yourself worthy, you must defeat the rush of fury.</desc>
     <commander id="469" />
@@ -57793,7 +57793,7 @@
   </mission>
   <mission>
     <id>6835</id>
-    <name>And his name is</name>
+    <name>And his Name is</name>
     <energy>18</energy>
     <desc>The avian pulls out a blade and is about to end you when a spell strikes him in the chest, knocking him down.</desc>
     <commander id="405" />
@@ -57817,7 +57817,7 @@
   </mission>
   <mission>
     <id>6836</id>
-    <name>Vanished into thin air</name>
+    <name>Vanished into Thin Air</name>
     <energy>18</energy>
     <desc>A group of penguin soldiers quickly arrive at the scene to aid you. Unfortunately, by the time you get up the assassin is nowhere to be found.</desc>
     <commander id="407" />
@@ -57865,7 +57865,7 @@
   </mission>
   <mission>
     <id>6838</id>
-    <name>Spread out</name>
+    <name>Spread Out</name>
     <energy>18</energy>
     <desc>The mage says this is not over, he orders his soldiers to spread out and find the assassin. Even though you are still dazed, you decide to join the hunt.</desc>
     <commander id="307" />
@@ -57889,7 +57889,7 @@
   </mission>
   <mission>
     <id>6839</id>
-    <name>Odd one out</name>
+    <name>Odd One Out</name>
     <energy>18</energy>
     <desc>You are searching for the assassin when you suddenly reach a crowd of people. You can feel him, blending in between the citizens. You start to carefully examine everybody in the crowd.</desc>
     <commander id="308" />
@@ -57913,7 +57913,7 @@
   </mission>
   <mission>
     <id>6840</id>
-    <name>Fool me once</name>
+    <name>Fool Me Once</name>
     <energy>18</energy>
     <desc>You are taking a deep look into the crowds when you turn around just in time to block the assassins strike. Fortunately, the killer did not expect you to be ready.</desc>
     <commander id="406" />
@@ -57937,7 +57937,7 @@
   </mission>
   <mission>
     <id>6841</id>
-    <name>Down you go</name>
+    <name>Down You Go</name>
     <energy>18</energy>
     <desc>Auron's elites quickly take notice and between them and you, the injured assassin gets taken down. Auron proceeds to order his imprisonment.</desc>
     <commander id="405" />
@@ -57961,7 +57961,7 @@
   </mission>
   <mission>
     <id>6842</id>
-    <name>Insects in distress</name>
+    <name>Insects in Distress</name>
     <energy>18</energy>
     <desc>Auron has promised to keep the assassin restrained as long as necessary. You are about to head towards Skyhaven, when all of a sudden a distressed insect scout requests your aid.</desc>
     <commander id="325" />
@@ -57985,7 +57985,7 @@
   </mission>
   <mission>
     <id>6843</id>
-    <name>Go time</name>
+    <name>Go Time</name>
     <energy>18</energy>
     <desc>Word reaches you that Ashanti is breaking out from prison. His avian allies have come from all around to aid him. Fortunately, Auron’s forces are ready to assist you in a counter offensive. </desc>
     <commander id="471" />
@@ -58009,7 +58009,7 @@
   </mission>
   <mission>
     <id>6844</id>
-    <name>It&apos;s getting cold out here</name>
+    <name>It&apos;s Getting Cold Out Here</name>
     <energy>18</energy>
     <desc>You stand outside and you see mayhem all around. You decide to raid the prison before any more harm can be done. Unfortunately, the cold weather is slowing you down and Ashanti is taking advantage of this.</desc>
     <commander id="471" />
@@ -58033,7 +58033,7 @@
   </mission>
   <mission>
     <id>6845</id>
-    <name>Enemy at the gates</name>
+    <name>Enemy at the Gates</name>
     <energy>18</energy>
     <desc>Even though Ashanti&apos;s forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
     <commander id="471" />
@@ -58081,7 +58081,7 @@
   </mission>
   <mission>
     <id>6847</id>
-    <name>The art of the deal</name>
+    <name>The Art of the Deal</name>
     <energy>18</energy>
     <desc>After cornering Ashanti and realizing that there is now way out of this without a blood bath, you decide to offer him a deal. You offer to look the other way while he escapes in exchange for information on the frog who sent him.</desc>
     <commander id="471" />
@@ -58105,7 +58105,7 @@
   </mission>
   <mission>
     <id>6848</id>
-    <name>Interesting information</name>
+    <name>Interesting Information</name>
     <energy>18</energy>
     <desc>Ashanti accepts your deal. He reveals that the contractor was no frog, even though the creature's height might have been similar to that of a frog. As he turns towards a window to conclude his escape, he warns you that this whole plot is probably bigger than it seems.</desc>
     <commander id="471" />
@@ -58129,7 +58129,7 @@
   </mission>
   <mission>
     <id>6849</id>
-    <name>Meet and greet</name>
+    <name>Meet and Greet</name>
     <energy>18</energy>
     <desc>The distressed insect leads you all the way to Forgotten Island. Apparently an unknown force has destroyed Beetleton, forcing most of the insects to flee. Once you arrive at the island you meet their leader, Yaritza.</desc>
     <commander id="432" />
@@ -58153,7 +58153,7 @@
   </mission>
   <mission>
     <id>6850</id>
-    <name>The staff</name>
+    <name>The Staff</name>
     <energy>18</energy>
     <desc>Yaritza asks for your help to retrieve a magic staff that was stolen from her. Apparently, ever since they got there, a chaotic dragon has been constantly terrorizing them.</desc>
     <commander id="434" />
@@ -58201,7 +58201,7 @@
   </mission>
   <mission>
     <id>6852</id>
-    <name>A fair trade</name>
+    <name>A Fair Trade</name>
     <energy>18</energy>
     <desc>A bounty hunter guides you to the entrance, in exchange it only asks for some of the weapons you find in your way. This is because it has a troll to defeat and it can't do it with its current equipment. You agree and head into the caves.</desc>
     <commander id="326" />
@@ -58225,7 +58225,7 @@
   </mission>
   <mission>
     <id>6853</id>
-    <name>Heavy breathing</name>
+    <name>Heavy Breathing</name>
     <energy>18</energy>
     <desc>You are exploring within the caves, every step you take deeper into them makes the smell become fouler and the air harder to breathe. You decide to keep pushing forward until you suddenly hear the crawling of an insect.</desc>
     <commander id="366" />
@@ -58249,7 +58249,7 @@
   </mission>
   <mission>
     <id>6854</id>
-    <name>The scorpion king</name>
+    <name>The Scorpion King</name>
     <energy>18</energy>
     <desc>You look in front of you and see a gigantic half undead scorpion starts rushing towards you. You run into a random direction hoping that the scorpion will get stuck in the caves behind you. After almost running out of breath, all of a sudden you trip&#46;&#46;&#46; with a sword.</desc>
     <commander id="326" />
@@ -58297,7 +58297,7 @@
   </mission>
   <mission>
     <id>6856</id>
-    <name>Sneaky beaky like</name>
+    <name>Sneaky Beaky-like</name>
     <energy>18</energy>
     <desc>The staff seems just a couple of steps away. The sword seems very valuable as well, but you realize it's too much of a stretch to go for both weapons. You grab a couple of short swords for the bounty hunter and sneak towards the staff.</desc>
     <commander id="434" />
@@ -58345,7 +58345,7 @@
   </mission>
   <mission>
     <id>6858</id>
-    <name>Run adventurer run</name>
+    <name>Run Adventurer Run</name>
     <energy>18</energy>
     <desc>Running for your life, you start to dodge the weapons that the worm throws your way. Fortunately, you manage to get out of the caves alive.</desc>
     <commander id="326" />
@@ -58369,7 +58369,7 @@
   </mission>
   <mission>
     <id>6859</id>
-    <name>Endless gratitude</name>
+    <name>Endless Gratitude</name>
     <energy>18</energy>
     <desc>Waiting for you outside is the bounty hunter. You deliver the swords you gathered and it thanks you. Noticing that you are exhausted, it helps walk you towards Yaritza. As soon as you see her, you notice a huge smile on her face.</desc>
     <commander id="326" />
@@ -58417,7 +58417,7 @@
   </mission>
   <mission>
     <id>6861</id>
-    <name>Returning for riches</name>
+    <name>Returning for Riches</name>
     <energy>18</energy>
     <desc>You decide to go back into the dark caves of Forgotten Island in order to retrieve some of the expensive items you saw lying around the worm's cave.</desc>
     <commander id="472" />
@@ -58465,7 +58465,7 @@
   </mission>
   <mission>
     <id>6863</id>
-    <name>Here come the big ones</name>
+    <name>Here Come the Big Ones</name>
     <energy>18</energy>
     <desc>The smaller insects have been defeated, unfortunately, the insects that probably feed on the  ones you just defeated have started to arrive.</desc>
     <commander id="472" />
@@ -58513,7 +58513,7 @@
   </mission>
   <mission>
     <id>6865</id>
-    <name>Standing your ground</name>
+    <name>Standing your Ground</name>
     <energy>18</energy>
     <desc>The worm jumps out of a pile of weapons and heads straight towards you. Its attack seems very slow and you manage to quickly strike it. You think that it will be an easy fight only to realize it has healed itself in a matter of seconds.</desc>
     <commander id="472" />
@@ -58537,7 +58537,7 @@
   </mission>
   <mission>
     <id>6866</id>
-    <name>The escape</name>
+    <name>The Escape</name>
     <energy>18</energy>
     <desc>Realizing that you won't be able to defeat it, you decide to grab as much loot as possible and head out while you still can. While heading out, you can still hear the worm chasing after you, which makes you run even faster!</desc>
     <commander id="472" />
@@ -58561,7 +58561,7 @@
   </mission>
   <mission>
     <id>6867</id>
-    <name>Boots on the ground</name>
+    <name>Boots on the Ground</name>
     <energy>18</energy>
     <desc>You have arrived at Duskwillow in search of the Oracle that Yaritza told you about. Unsure about where to start, you head towards the nearest tavern.</desc>
     <commander id="200" />
@@ -58585,7 +58585,7 @@
   </mission>
   <mission>
     <id>6868</id>
-    <name>The tavern</name>
+    <name>The Tavern</name>
     <energy>18</energy>
     <desc>After asking around, you realize that the townspeople are trying their best to ignore your questions. Finally, somebody approaches you. The villager explains to you that the oracle you are looking for is called Veric and resides at the town's cemetery.</desc>
     <commander id="229" />
@@ -58705,7 +58705,7 @@
   </mission>
   <mission>
     <id>6873</id>
-    <name>Rising from the dead</name>
+    <name>Rising from the Dead</name>
     <energy>18</energy>
     <desc>You hear the ground beneath you start moving. You stand aside and you see an undead frog rising from its grave. The frog claims to have heard your pleading and decided to rise once again.</desc>
     <commander id="200" />
@@ -58729,7 +58729,7 @@
   </mission>
   <mission>
     <id>6874</id>
-    <name>Unstoppable menace</name>
+    <name>Unstoppable Menace</name>
     <energy>18</energy>
     <desc>Veric heads straight towards the mage, even though he is struck with all kinds of spells and strikes, these do not seem to harm him.</desc>
     <commander id="229" />
@@ -58753,7 +58753,7 @@
   </mission>
   <mission>
     <id>6875</id>
-    <name>One frog army</name>
+    <name>One-Frog Army</name>
     <energy>18</energy>
     <desc>With nothing but a touch, Veric manages to take down the mage, which causes the army of undead to instantly collapse. He uses skills you have never seen before, his knowledge is clearly unmatched. You realize that you came to the right place.</desc>
     <commander id="200" />
@@ -58825,7 +58825,7 @@
   </mission>
   <mission>
     <id>6878</id>
-    <name>Skyhaven in danger</name>
+    <name>Skyhaven in Danger</name>
     <energy>18</energy>
     <desc>You remember Terragon mentioning a possible attack on Skyhaven. This has to be it, they must be heading there.</desc>
     <commander id="265" />
@@ -58849,7 +58849,7 @@
   </mission>
   <mission>
     <id>6879</id>
-    <name>Ghost hunters</name>
+    <name>Ghost Hunters</name>
     <energy>18</energy>
     <desc>Local residents of Duskwillow have asked for your assistance. They want you to get rid of a specter that has been haunting them.</desc>
     <commander id="473" />
@@ -58873,7 +58873,7 @@
   </mission>
   <mission>
     <id>6880</id>
-    <name>A cry for help</name>
+    <name>A Cry for Help</name>
     <energy>18</energy>
     <desc>You decide to wait until midnight, when the specter is supposed to come out. You start to roam the town when you suddenly hear screaming.</desc>
     <commander id="473" />
@@ -58897,7 +58897,7 @@
   </mission>
   <mission>
     <id>6881</id>
-    <name>A swing and a miss</name>
+    <name>A Swing and a Miss</name>
     <energy>18</energy>
     <desc>After rushing towards the screaming, you find the specter. It seems to be chasing after some goblin children. You take a swing at the specter but it seems to have done no damage at all.</desc>
     <commander id="473" />
@@ -58969,7 +58969,7 @@
   </mission>
   <mission>
     <id>6884</id>
-    <name>My job here is done</name>
+    <name>My Job Here is Done</name>
     <energy>18</energy>
     <desc>You have defeated her once again. She seems to fade away, taking all of the undead horde with her. The townsfolk of Duskwillow can finally rest assured that you got rid of the curse she had on them. Or have you?</desc>
     <commander id="473" />
@@ -58993,7 +58993,7 @@
   </mission>
   <mission>
     <id>6885</id>
-    <name>The message</name>
+    <name>The Message</name>
     <energy>18</energy>
     <desc>After realizing Skyhaven would be in danger you head there immediately. You manage to get there in time, only to realize that they already seem to be preparing for an attack.</desc>
     <commander id="249" />
@@ -59041,7 +59041,7 @@
   </mission>
   <mission>
     <id>6887</id>
-    <name>The assault</name>
+    <name>The Assault</name>
     <energy>18</energy>
     <desc>Before you can ask any questions, the city is being assaulted. You can see how docens of mercenary frogs are breaching the city's defenses.</desc>
     <commander id="400" />
@@ -59137,7 +59137,7 @@
   </mission>
   <mission>
     <id>6891</id>
-    <name>The raid</name>
+    <name>The Raid</name>
     <energy>18</energy>
     <desc>You make Alyel come to her senses and tell her to leave immediately. Luckily, she seems to listen to reason and heads out. Unfortunately, by the time you get her to leave, the frogs have already raided the throne room.</desc>
     <commander id="249" />
@@ -59185,7 +59185,7 @@
   </mission>
   <mission>
     <id>6893</id>
-    <name>The throne</name>
+    <name>The Throne</name>
     <energy>18</energy>
     <desc>Together with the angel troops, you manage to defeat the frog army. The commander is still laughing hysterically, when all of a sudden the throne starts shining.</desc>
     <commander id="400" />
@@ -59209,7 +59209,7 @@
   </mission>
   <mission>
     <id>6894</id>
-    <name>Not worthy</name>
+    <name>Not Worthy</name>
     <energy>18</energy>
     <desc>The throne creates a barrier that puts out the fire in the entire room. Once it is cleared, it completely freezes the commander in his place, ending his havoc on Skyhaven.</desc>
     <commander id="252" />
@@ -59233,7 +59233,7 @@
   </mission>
   <mission>
     <id>6895</id>
-    <name>The arrival</name>
+    <name>The Arrival</name>
     <energy>18</energy>
     <desc>Angels from all over the continent start arriving at Skyhaven. The frogs are now greatly outnumbered. You realize that the mercenary frogs never stood a chance.</desc>
     <commander id="249" />
@@ -59257,7 +59257,7 @@
   </mission>
   <mission>
     <id>6896</id>
-    <name>The realization</name>
+    <name>The Realization</name>
     <energy>18</energy>
     <desc>You realize that this was all a setup. A huge distraction for something much bigger, you can feel it in the air now, what Veric told you was coming. You look up and see how the sky is slowly turning purple, becoming tainted by the Void.</desc>
     <commander id="290" />
@@ -59329,7 +59329,7 @@
   </mission>
   <mission>
     <id>6899</id>
-    <name>A spark was all he needed</name>
+    <name>A Spark was All he Needed</name>
     <energy>18</energy>
     <desc>A fully armored angel comes in to help you. The angel manages to use its chain to trap Caesar. Unfortunately, the chains create the sparks that he needs in order to scorch the entire cell and free himself from the ice that traps him.</desc>
     <commander id="474" />
@@ -59377,7 +59377,7 @@
   </mission>
   <mission>
     <id>6901</id>
-    <name>Chained for too long</name>
+    <name>Chained for Too Long</name>
     <energy>18</energy>
     <desc>Caesar seems weak, you confront him and he does not seem able to put up a good fight against you. Angel reinforcements start arriving at the cell. The commander finds himself cornered and uses his powers one last time to escape.</desc>
     <commander id="474" />
@@ -59401,7 +59401,7 @@
   </mission>
   <mission>
     <id>6902</id>
-    <name>Nice try</name>
+    <name>Nice Try</name>
     <energy>18</energy>
     <desc>Caesar scorches everything around him, creating twice as much fire as before. Unfortunately for him, reinforcements have arrived and he does not manage to escape from your grip.</desc>
     <commander id="474" />
@@ -59449,7 +59449,7 @@
   </mission>
   <mission>
     <id>6904</id>
-    <name>A portal to the other side</name>
+    <name>A Portal to the Other Side</name>
     <energy>18</energy>
     <desc>Once you reach the Plane, you see with your own eyes what you feared the most. A huge portal the size of a giant is active, letting all kinds of Void creatures into our world. But what surprises you the most, is the individual responsible for opening the portal.</desc>
     <commander id="228" />
@@ -59497,7 +59497,7 @@
   </mission>
   <mission>
     <id>6906</id>
-    <name>A bigger problem</name>
+    <name>A Bigger Problem</name>
     <energy>18</energy>
     <desc>Just when you thought things couldn't get worse, a giant colossus crosses the portal from the void. Its size and powers are nothing like what you have ever seen before.</desc>
     <commander id="215" />
@@ -59521,7 +59521,7 @@
   </mission>
   <mission>
     <id>6907</id>
-    <name>Go time</name>
+    <name>Go Time</name>
     <energy>18</energy>
     <desc>You command a small group of Skyhavens army and have them follow you into battle. It's time to banish the Void creatures back to where they came from.</desc>
     <commander id="266" />
@@ -59593,7 +59593,7 @@
   </mission>
   <mission>
     <id>6910</id>
-    <name>Away he goes</name>
+    <name>Away he Goes</name>
     <energy>18</energy>
     <desc>Remi looks astonished and proceeds to vanish into thin air. Before you can even process what happened, you see a huge boulder flying towards you.</desc>
     <commander id="228" />
@@ -59665,7 +59665,7 @@
   </mission>
   <mission>
     <id>6913</id>
-    <name>Void on the loose</name>
+    <name>Void on the Loose</name>
     <energy>18</energy>
     <desc>Even though you have managed to close the portal, you don't know how many Void creatures had already been set loose. You now also know that Remi is capable of creating portal opening machines.</desc>
     <commander id="266" />
@@ -59883,7 +59883,7 @@
   <!-- Spellstone 7th Year Anniversary Missions END -->
   <mission>
     <id>6922</id>
-    <name>The search</name>
+    <name>The Search</name>
     <energy>18</energy>
     <desc>You set out to track down Remi after he escaped. While navigating through the Void Plane, the Aether looking goblin shows up in front of you.</desc>
     <commander id="475" />
@@ -59907,7 +59907,7 @@
   </mission>
   <mission>
     <id>6923</id>
-    <name>Blink of an eye</name>
+    <name>Blink of an Eye</name>
     <energy>18</energy>
     <desc>Knowing him too well, you prepare for an attack. Remi in the blink of an eye manages to vanish only to appear right behind you, but now completely red, covered in chaos. He strikes, but you manage to evade him.</desc>
     <commander id="475" />
@@ -59931,7 +59931,7 @@
   </mission>
   <mission>
     <id>6924</id>
-    <name>The plot</name>
+    <name>The Plot</name>
     <energy>18</energy>
     <desc>Remi vanishes once again. You can hear his mischievous laugh all around you. You realize that he is somehow connected with more than one faction. This is probably related to him plotting for the Void to come into this world again.</desc>
     <commander id="475" />
@@ -59955,7 +59955,7 @@
   </mission>
   <mission>
     <id>6925</id>
-    <name>Absence of them all</name>
+    <name>Absence of Them All</name>
     <energy>18</energy>
     <desc>You try to make Remi come to his senses, you mention that the Void isn't the combination of all factions, but instead the absence of them. This seems to anger Remi, since you can no longer hear him laughing.</desc>
     <commander id="475" />
@@ -60003,7 +60003,7 @@
   </mission>
   <mission>
     <id>6927</id>
-    <name>This is not over</name>
+    <name>This is not Over</name>
     <energy>18</energy>
     <desc>Remi comes out of nowhere and strikes you once again, you barely manage to block him in time. He proceeds to vanish, but as soon as he leaves you can hear him whisper that this is not over.</desc>
     <commander id="475" />
@@ -60027,7 +60027,7 @@
   </mission>
   <mission>
     <id>6928</id>
-    <name>Welcome back</name>
+    <name>Welcome Back</name>
     <energy>18</energy>
     <desc>After Remi escapes you manage to track him down to his last known location, the Salt Wastes.</desc>
     <commander id="277" />
@@ -60051,7 +60051,7 @@
   </mission>
   <mission>
     <id>6929</id>
-    <name>The search</name>
+    <name>The Search</name>
     <energy>18</energy>
     <desc>You begin your search on these hostile lands. Even if you can't find him, you must destroy his technology to stop the Void from coming back.</desc>
     <commander id="264" />
@@ -60075,7 +60075,7 @@
   </mission>
   <mission>
     <id>6930</id>
-    <name>The hideout</name>
+    <name>The Hideout</name>
     <energy>18</energy>
     <desc>Hidden behind a pile of rocks and dust you manage to spot what seems like an entrance. You can tell that somebody has been here recently and decide to head in.</desc>
     <commander id="367" />
@@ -60099,7 +60099,7 @@
   </mission>
   <mission>
     <id>6931</id>
-    <name>Void artifacts</name>
+    <name>Void Artifacts</name>
     <energy>18</energy>
     <desc>You enter the hideout only to see tons of scrap lying around and dozens of makeshift robots. This has to be a mecha workshop. That wouldn't be much of a problem if not for the fact that you can tell Remi is using Void artifacts to enhance his creations.</desc>
     <commander id="269" />
@@ -60123,7 +60123,7 @@
   </mission>
   <mission>
     <id>6932</id>
-    <name>There you are</name>
+    <name>There You Are</name>
     <energy>18</energy>
     <desc>After taking a look around you continue to explore the workshop only to catch Remi red-handed. He seems to be doing some small adjustments on a menacing looking robot that is forged out of some purple looking metal.</desc>
     <commander id="353" />
@@ -60147,7 +60147,7 @@
   </mission>
   <mission>
     <id>6933</id>
-    <name>Power on</name>
+    <name>Power On</name>
     <energy>18</energy>
     <desc>Before you can even take a step into Remi’s direction, you realize he just powered on the robot. The mecha starts channeling a void energy and is aiming your way. Remi has discovered how to use Void artifacts as weapons.</desc>
     <commander id="413" />
@@ -60171,7 +60171,7 @@
   </mission>
   <mission>
     <id>6934</id>
-    <name>Channeled into destruction</name>
+    <name>Channeled into Destruction</name>
     <energy>18</energy>
     <desc>The channeler starts heading your way, you try to strike it from afar but nothing seems to damage it. The mecha starts destroying everything in its path with its powerful weapons system.</desc>
     <commander id="269" />
@@ -60219,7 +60219,7 @@
   </mission>
   <mission>
     <id>6936</id>
-    <name>Chink in the armor</name>
+    <name>Chink in the Armor</name>
     <energy>18</energy>
     <desc>You circle around the Mecha and manage to find a weak spot in its back. This is probably what Remi was trying to fix moments before you arrived. Before it can turn around, you manage to pierce through its weak spot, causing the mecha collapse.</desc>
     <commander id="413" />
@@ -60243,7 +60243,7 @@
   </mission>
   <mission>
     <id>6937</id>
-    <name>Left empty handed</name>
+    <name>Left Empty-handed</name>
     <energy>18</energy>
     <desc>Even though Remi has managed to escape, he was in such a hurry that he could not take any of his equipment with him. He has left empty handed and has nowhere to go.</desc>
     <commander id="264" />
@@ -60291,7 +60291,7 @@
   </mission>
   <mission>
     <id>6939</id>
-    <name>Duskwillow it is</name>
+    <name>Duskwillow It Is</name>
     <energy>18</energy>
     <desc>When destroying Remi’s equipment you find some suspicious documents. You realize that Remi was smuggling Void technology through a pirate organization. You now know where you are heading next.</desc>
     <commander id="367" />
@@ -60435,7 +60435,7 @@
   </mission>
   <mission>
     <id>6945</id>
-    <name>Back to sleep</name>
+    <name>Back to Sleep</name>
     <energy>18</energy>
     <desc>You see the beast approaching and just when it is about to scorch you down, you manage to strike it, damaging one of its wings. The beast has no choice but to retreat back to its lair and end its threat on Arcantica sooner than what it intended.</desc>
     <commander id="476" />
@@ -60583,7 +60583,7 @@
   </mission>
   <mission>
     <id>6949</id>
-    <name>Help from a local</name>
+    <name>Help from a Local</name>
     <energy>18</energy>
     <desc>You arrive at Duskwillow with your only objective being to find the pirate organization and retrieve any Void artifacts they might have. You spot a tavern and decide to head in and ask the locals about the pirates.</desc>
     <commander id="235" />
@@ -60655,7 +60655,7 @@
   </mission>
   <mission>
     <id>6952</id>
-    <name>Lost at sea</name>
+    <name>Lost at Sea</name>
     <energy>18</energy>
     <desc>After explaining your situation to the dragon, it explains to you that the pirates have recently crossed through the border between The Armada and their territory, breaking an ancient truce and forcing them to sink one of their ships.</desc>
     <commander id="309" />
@@ -60799,7 +60799,7 @@
   </mission>
   <mission>
     <id>6958</id>
-    <name>A common enemy</name>
+    <name>A Common Enemy</name>
     <energy>18</energy>
     <desc>Both sides temporarily join forces and start attacking the Hydra. The cannon fire from above and the dragon's attacks from below prove to be too much for the Hydra, forcing it back into the depths of the ocean.</desc>
     <commander id="246" />
@@ -60872,7 +60872,7 @@
   <!-- LBN 96 Lerna -->
   <mission>
     <id>6961</id>
-    <name>The alliance</name>
+    <name>The Alliance</name>
     <energy>18</energy>
     <desc>You manage to contact and hire The Armada&apos;s fleet to banish the Void Hydra together by using Remi&apos;s Machine to channel a portal.</desc>
     <commander id="477" />
@@ -60896,7 +60896,7 @@
   </mission>
   <mission>
     <id>6962</id>
-    <name>Tracing a plan</name>
+    <name>Tracing a Plan</name>
     <energy>18</energy>
     <desc>Together with their captain, you start to trace a complex and convoluted plan. Meanwhile, The Armada&apos;s sailors are changing their cannons for bigger ones, even using some of their goods as shields for the hull of their ships.</desc>
     <commander id="477" />
@@ -60992,7 +60992,7 @@
   </mission>
   <mission>
     <id>6966</id>
-    <name>Pirates aren&apos;t so bad after all</name>
+    <name>Pirates Aren&apos;t So Bad After All</name>
     <energy>18</energy>
     <desc>An enormous vortex starts to grow in the Hydra&apos;s body and swallows it, the monster screams and roars while trying to escape, but it&apos;s too late. Your plan was a tremendous success! The Void Hydra is now banished from our realm.</desc>
     <commander id="477" />
@@ -61184,7 +61184,7 @@
   </mission>
   <mission>
     <id>6974</id>
-    <name>The teleporter</name>
+    <name>The Teleporter</name>
     <energy>18</energy>
     <desc>The goblin is wielding a gauntlet that allows it to open and close portals that are big enough for it to fit through them. This allows the goblin to appear wherever it wants to in a matter of seconds.</desc>
     <commander id="312" />
@@ -61256,7 +61256,7 @@
   </mission>
   <mission>
     <id>6977</id>
-    <name>The tables turn</name>
+    <name>The Tables Turn</name>
     <energy>18</energy>
     <desc>You manage to appear right behind it at its next location, the goblin does not expect this and you manage to strike before it can even realize what happened. Defeated, the goblin uses its gauntlet to escape.</desc>
     <commander id="323" />
@@ -61280,7 +61280,7 @@
   </mission>
   <mission>
     <id>6978</id>
-    <name>The Void is coming</name>
+    <name>The Void is Coming</name>
     <energy>18</energy>
     <desc>Before you can turn back, you can hear the mischievous laugh once again. You turn around only to find Remi taking the Void Channeler and then vanishing into thin air. You decide to send a message to Skyhaven, the Angels must assemble the army.</desc>
     <commander id="341" />
@@ -61481,7 +61481,7 @@
   <!-- LBN 97 Krampus -->
   <mission>
     <id>6984</id>
-    <name>A dangerous nap</name>
+    <name>A Dangerous Nap</name>
     <energy>18</energy>
     <desc>Krampus was a mean and grumpy fellow, on the night of Christmas, he felt quite mellow, he had no idea that his fate was so dire, for on the next day, he would get lost in the mire.</desc>
     <commander id="478" />
@@ -61505,7 +61505,7 @@
   </mission>
   <mission>
     <id>6985</id>
-    <name>The day after Christmas</name>
+    <name>The Day After Christmas</name>
     <energy>18</energy>
     <desc>He started to yawn and he started to doze, Krampus fell asleep with his heart filled with woes, he didn&apos;t know that he&apos;d be led astray. On the morning of December 26th, he&apos;d lost the way.</desc>
     <commander id="478" />
@@ -61529,7 +61529,7 @@
   </mission>
   <mission>
     <id>6986</id>
-    <name>The brazen robbery</name>
+    <name>The Brazen Robbery</name>
     <energy>18</energy>
     <desc>Krampus started to wander, his heart filled with glee, he took all the presents, leaving none for thee. He thought to himself he was doing no wrong, but the kids were so sad when the gifts were gone.</desc>
     <commander id="478" />
@@ -61553,7 +61553,7 @@
   </mission>
   <mission>
     <id>6987</id>
-    <name>Looking for the culprit</name>
+    <name>Looking for the Culprit</name>
     <energy>18</energy>
     <desc>Our Hero heard their cries, he had to investigate, he soon realized that their gifts had to be straight, he followed the clues, he followed the track. Krampus was the culprit, and he had to be attacked.</desc>
     <commander id="478" />
@@ -61577,7 +61577,7 @@
   </mission>
   <mission>
     <id>6988</id>
-    <name>The villain's punishment</name>
+    <name>The Villain's Punishment</name>
     <energy>18</energy>
     <desc>Our Hero fought hard, he fought with all his might, but Krampus was tough, and he put up one hell of a fight. Our Hero was tired and his strength was low, but he was determined to make Krampus go.</desc>
     <commander id="478" />
@@ -61601,7 +61601,7 @@
   </mission>
   <mission>
     <id>6989</id>
-    <name>The miracle after Christmas</name>
+    <name>The Miracle After Christmas</name>
     <energy>18</energy>
     <desc>With one final punch, our Hero made Krampus fall. He managed to get all the gifts back for all, the kids were so happy, their faces shone bright. It was a Christmas miracle, and all was alright.</desc>
     <commander id="478" />
@@ -61697,7 +61697,7 @@
   </mission>
   <mission>
     <id>6993</id>
-    <name>Gain some time</name>
+    <name>Gain Some Time</name>
     <energy>18</energy>
     <desc>The Void ambush was more quick than expected. The angelical army wasn&apos;t prepared yet, but you stand against the Void horde with a few angelical warriors at your side.</desc>
     <commander id="277" />
@@ -61721,7 +61721,7 @@
   </mission>
   <mission>
     <id>6994</id>
-    <name>The fight</name>
+    <name>The Fight</name>
     <energy>18</energy>
     <desc>You feel like it&apos;s an endless horde of creatures from the void, but together with your winged partners resist bravely and start to advance, destroying each enemy that is put in front of you.</desc>
     <commander id="365" />
@@ -61986,7 +61986,7 @@
   </mission>
   <mission>
     <id>7005</id>
-    <name>Even the Chaos has its logic</name>
+    <name>Even Chaos has its Logic</name>
     <energy>18</energy>
     <desc>Alyel was training some new recruits. When you arrived she told you that she knew what you wanted from her, but to just forget about it. She doesn&apos;t want an alliance, she only wants more power, so if you can show that to her she will be part of your plan.</desc>
     <commander id="469" />
@@ -62494,7 +62494,7 @@
   <!-- Event 100 - Dragons -->
   <mission>
     <id>7026</id>
-    <name>Trader mentality</name>
+    <name>Trader Mentality</name>
     <energy>18</energy>
     <desc>You arrive at Tarragon Peak after hearing about a delicious edible delicacy from the region. Your plan is to buy or collect a large quantity of these and take them to be traded with possible big profits as an exotic product.</desc>
     <commander id="293" />
@@ -62518,7 +62518,7 @@
   </mission>
   <mission>
     <id>7027</id>
-    <name>Beginning of the search</name>
+    <name>Beginning of the Search</name>
     <energy>18</energy>
     <desc>Common sense suggests you start looking at places of commerce. Maybe restaurants, markets and barter shops. So you head in that direction, with the best attitude.</desc>
     <commander id="310" />
@@ -62542,7 +62542,7 @@
   </mission>
   <mission>
     <id>7028</id>
-    <name>No delicacies to be found</name>
+    <name>No Delicacies to be Found</name>
     <energy>18</energy>
     <desc>You pass through the places where there are more inhabitants and buildings. The less inhospitable areas and far from the bubbling hot lava, but you can&apos;t find where to get what you&apos;re looking for.</desc>
     <commander id="340" />
@@ -62566,7 +62566,7 @@
   </mission>
   <mission>
     <id>7029</id>
-    <name>It appears you came chasing a rumor</name>
+    <name>It Appears You Came Chasing a Rumor</name>
     <energy>18</energy>
     <desc>After searching and asking everywhere, no one knows about said delicacy and now you doubt its true existence. Finally, after a long time, you find two familiar dragons to ask about the delicacy.</desc>
     <commander id="284" />
@@ -62590,7 +62590,7 @@
   </mission>
   <mission>
     <id>7030</id>
-    <name>Finally a clue</name>
+    <name>Finally a Clue</name>
     <energy>18</energy>
     <desc>You speak with Kuroilong and Howaito and they contradict each other in their stories. One says that he did hear about it and the other assures that this is false. Something in Howaito&apos;s look makes you suspicious.</desc>
     <commander id="286" />
@@ -62662,7 +62662,7 @@
   </mission>
   <mission>
     <id>7033</id>
-    <name>The watcher</name>
+    <name>The Watcher</name>
     <energy>18</energy>
     <desc>A large wooden-looking dragon, with runes and wings that look like foliage, seems to be watching you walk through the forest. Tiendroantun flies through the skies over the place.</desc>
     <commander id="310" />
@@ -62710,7 +62710,7 @@
   </mission>
   <mission>
     <id>7035</id>
-    <name>The bet</name>
+    <name>The Bet</name>
     <energy>18</energy>
     <desc>You go directly to the point and ask about the edible delicacy of the region. Tiendroantun with a smile on his face proposes a bet. If you win, you will be able to take a large sack with you. If not, you will lose a chunk of your gold.</desc>
     <commander id="284" />
@@ -62734,7 +62734,7 @@
   </mission>
   <mission>
     <id>7036</id>
-    <name>Bright red fruits</name>
+    <name>Bright Red Fruits</name>
     <energy>18</energy>
     <desc>The great dragon presents a wooden bowl with bright red fruits. Tiendroantun says that only if you manage to eat more of these delicacies than him, you will win the bet.</desc>
     <commander id="286" />
@@ -62783,7 +62783,7 @@
   <!-- Event 100 - LBN - Vulcanos -->
   <mission>
     <id>7038</id>
-    <name>The vengeance is spicy</name>
+    <name>The Vengeance is Spicy</name>
     <energy>18</energy>
     <desc>With the Fire Fruits in your power, you decide to continue your mission of unifying all the factions for each tribe.</desc>
     <commander id="468" />
@@ -62831,7 +62831,7 @@
   </mission>
   <mission>
     <id>7040</id>
-    <name>Searching for the lava nightmare</name>
+    <name>Searching for the Lava Nightmare</name>
     <energy>18</energy>
     <desc>Spark points to the Tarragon volcano, then tells you that after your recent fight, Vulcanos hid there to heal itself, absorbing all the lava to recover its strength.</desc>
     <commander id="468" />
@@ -62855,7 +62855,7 @@
   </mission>
   <mission>
     <id>7041</id>
-    <name>Climbing the volcano</name>
+    <name>Climbing the Volcano</name>
     <energy>18</energy>
     <desc>You decide to reach the top of the Volcano and fight one more time against Vulcanos to stop it once and for all. Immediately, as soon as you start climbing, a lot of Fire Rocks are being shot at you at an incredible speed.</desc>
     <commander id="468" />
@@ -62879,7 +62879,7 @@
   </mission>
   <mission>
     <id>7042</id>
-    <name>The top of the Volcano</name>
+    <name>The Top of the Volcano</name>
     <energy>18</energy>
     <desc>You can see that Vulcanos is waiting for you. Now it&apos;s even bigger and more aggressive than in your previous encounter, but you notice that also it is slower. Besides its power and with all the lava surrounding you, you manage to defeat it without big issues.</desc>
     <commander id="468" />
@@ -62927,7 +62927,7 @@
   </mission>
   <mission>
     <id>7044</id>
-    <name>A new kind of frog?</name>
+    <name>A New Kind of Frog?</name>
     <energy>18</energy>
     <desc>During your travel, you are attacked by a small group of an unknown, agressive kind of lava frogs.. You reach the nearest town and ask about them. Someone tells you that they are related to an ancient lost tribe.</desc>
     <commander id="277" />
@@ -63071,7 +63071,7 @@
   </mission>
   <mission>
     <id>7050</id>
-    <name>Remnants of the storm</name>
+    <name>Remnants of the Storm</name>
     <energy>18</energy>
     <desc>After bringing peace to the Wastes by defeating the evil Worf, there are rumors coming from a town about missing people. You&apos;ve been asked to investigate it for a generous reward.</desc>
     <commander id="269" />
@@ -63095,7 +63095,7 @@
   </mission>
   <mission>
     <id>7051</id>
-    <name>Hunting in the town</name>
+    <name>Hunting in the Town</name>
     <energy>18</energy>
     <desc>While searching for some clues throughout the town with the help of Atlatl, the best Hunter from the lost tribe, a group of strange looking, thug frogs follow your steps and demand you to stop the investigation.</desc>
     <commander id="277" />
@@ -63119,7 +63119,7 @@
   </mission>
   <mission>
     <id>7052</id>
-    <name>Time for an expected trap</name>
+    <name>Time For An Expected Trap</name>
     <energy>18</energy>
     <desc>The thugs wore robes with a strange particular medallion and one of them has a scroll with an address with your names on it. You and the party steal these robes to disguise and follow this lead to the center of the town.</desc>
     <commander id="413" />
@@ -63191,7 +63191,7 @@
   </mission>
   <mission>
     <id>7055</id>
-    <name>Light shines upon the city once more</name>
+    <name>Light Shines Upon the City Once More</name>
     <energy>18</energy>
     <desc>You managed, barely, to stop the frenzied frog and unmask its true identity: Lunatic Paul. He intended to create its own cult by fusing genes from other tribes into the lava minions, but you&apos;ve put an end to its evil scheme.</desc>
     <commander id="367" />
@@ -63360,7 +63360,7 @@
   <!-- Event 102 Node 1 -->
   <mission>
     <id>7062</id>
-    <name>A new Challenge</name>
+    <name>A New Challenge</name>
     <energy>18</energy>
     <desc>You arrive at the Gladius Scriptorium, a place where you had once been a champion. You are eager to compete once again but realize that the competition is much tougher than before.</desc>
     <commander id="300" />
@@ -63480,7 +63480,7 @@
   </mission>
   <mission>
     <id>7067</id>
-    <name>Stop the competition</name>
+    <name>Stop the Competition</name>
     <energy>18</energy>
     <desc>After defeating them both, you are catching up, getting to know each other a little better, when a large group of bandit Avians enter the Scriptorium and start attacking you all.</desc>
     <commander id="313" />
@@ -63601,7 +63601,7 @@
   </mission>
   <mission>
     <id>7072</id>
-    <name>Avoiding traps</name>
+    <name>Avoiding Traps</name>
     <energy>18</energy>
     <desc>The two of you engage in a back-and-forth struggle. You must use all your wits and skill to overcome his tricks and deadly attacks. In the end, you emerge victorious.</desc>
     <commander id="405" />
@@ -63793,7 +63793,7 @@
   </mission>
   <mission>
     <id>7080</id>
-    <name>Rise of the general</name>
+    <name>Rise of the General</name>
     <energy>18</energy>
     <desc>You arrive at the Stormy Seastone Citadel to realize that it was taken over by the powerful General Naglar Chainsawpaw. </desc>
     <commander id="200" />
@@ -63817,7 +63817,7 @@
   </mission>
   <mission>
     <id>7081</id>
-    <name>Destroying alliances</name>
+    <name>Destroying Alliances</name>
     <energy>18</energy>
     <desc>Looking for answers, you find that Chainsawpaw is against any unification, establishing chaos as the main rule for the inhabitants of the citadel.</desc>
     <commander id="229" />
@@ -63841,7 +63841,7 @@
   </mission>
   <mission>
     <id>7082</id>
-    <name>Agents of chaos</name>
+    <name>Agents of Chaos</name>
     <energy>18</energy>
     <desc>In a matter of time, some spies realized that you&apos;ve been asking too many questions. Because of that, they sent Agents of Chaos to catch you.</desc>
     <commander id="200" />
@@ -63865,7 +63865,7 @@
   </mission>
   <mission>
     <id>7083</id>
-    <name>Total madness</name>
+    <name>Total Madness</name>
     <energy>18</energy>
     <desc>Behind every wave of Agents of Chaos, more enemies are coming, only because they enjoy this new regime of madness and destruction and they will try to protect it.</desc>
     <commander id="229" />
@@ -63889,7 +63889,7 @@
   </mission>
   <mission>
     <id>7084</id>
-    <name>Freezing scream</name>
+    <name>Freezing Scream</name>
     <energy>18</energy>
     <desc>From the wave of enemies, you hear a deafening war cry: it&apos;s Katerina Snowfang, an officer of General Chainsawpaw, ready to destroy you.</desc>
     <commander id="231" />
@@ -63913,7 +63913,7 @@
   </mission>
   <mission>
     <id>7085</id>
-    <name>Partner at fangs</name>
+    <name>Partner at Fangs</name>
     <energy>18</energy>
     <desc>Once Katerina is defeated, she recognizes your worth as a warrior and joins your forces to face the rest of the chaotic enemies.</desc>
     <commander id="231" />
@@ -63937,7 +63937,7 @@
   </mission>
   <mission>
     <id>7086</id>
-    <name>Crazy for power</name>
+    <name>Crazy for Power</name>
     <energy>18</energy>
     <desc>Katerina mentions to you, that General Chainsawpaw is insane. That&apos;s why she will help you to get to him. But first, you must make your way to the throne, fighting against all the underlings.</desc>
     <commander id="200" />
@@ -63961,7 +63961,7 @@
   </mission>
   <mission>
     <id>7087</id>
-    <name>Undead vanguard</name>
+    <name>Undead Vanguard</name>
     <energy>18</energy>
     <desc>Thanks to Katerina&apos;s help, both of you were able to reach the castle, ready to face the most powerful soldiers of the General.</desc>
     <commander id="229" />
@@ -63985,7 +63985,7 @@
   </mission>
   <mission>
     <id>7088</id>
-    <name>Crimson redemption</name>
+    <name>Crimson Redemption</name>
     <energy>18</energy>
     <desc>During the fight against the General&apos;s powerful guard, Katerina has been injured and will no longer be able to join you on your quest, you must keep moving forward and face the General alone.</desc>
     <commander id="200" />
@@ -64009,7 +64009,7 @@
   </mission>
   <mission>
     <id>7089</id>
-    <name>Starting savages engines</name>
+    <name>Starting Savages Engines</name>
     <energy>18</energy>
     <desc>Finally, you arrive at the throne room where General Naglar Chainsawpaw himself is turning on his powerful chainsaws. He furiously roars and challenges you to one of the greatest duels of your life.</desc>
     <commander id="229" />
@@ -64033,7 +64033,7 @@
   </mission>
   <mission>
     <id>7090</id>
-    <name>Naglar chainsawpaw</name>
+    <name>Naglar Chainsawpaw</name>
     <energy>18</energy>
     <desc>Naglar has been one of the best warriors that you have ever faced, his powerful chainsaws give you no truce, but eventually, you end victorious.</desc>
     <commander id="231" />
@@ -64057,7 +64057,7 @@
   </mission>
   <mission>
     <id>7091</id>
-    <name>Reign of serenity?</name>
+    <name>Reign of Serenity?</name>
     <energy>18</energy>
     <desc>After days of intense battles, the citadel finally returns to normality, thanks to the fact that the General and his remaining underlings have been defeated and imprisoned for good.</desc>
     <commander id="265" />
@@ -64226,7 +64226,7 @@
   </mission>
   <mission>
     <id>7098</id>
-    <name>Unsettling reports</name>
+    <name>Unsettling Reports</name>
     <energy>18</energy>
     <desc>You&apos;ve been requested to check if some rumors about mysterious kidnappings in the outskirts of Luminis.</desc>
     <commander id="277" />
@@ -64250,7 +64250,7 @@
   </mission>
   <mission>
     <id>7099</id>
-    <name>Misleading clues?</name>
+    <name>Misleading Clues?</name>
     <energy>18</energy>
     <desc>You&apos;ve reached the outskirts and conducted a throughly search but the only thing that you&apos;ve found is several incomplete marks on the ground from, apparently, different animals that do not belong to the area.</desc>
     <commander id="264" />
@@ -64274,7 +64274,7 @@
   </mission>
   <mission>
     <id>7100</id>
-    <name>Retreating for good</name>
+    <name>Retreating for Good</name>
     <energy>18</energy>
     <desc>After you decide it&apos;s time to return to Luminis to rest, you start to get a feeling that you&apos;re being silently watched and followed.</desc>
     <commander id="367" />
@@ -64298,7 +64298,7 @@
   </mission>
   <mission>
     <id>7101</id>
-    <name>Ambushed by animals?</name>
+    <name>Ambushed by Animals?</name>
     <energy>18</energy>
     <desc>Just before you leave the forest, a group of angry beasts appears in front and behind you. It was an ambush! Their eyes are completely red and they don&apos;t move naturally for some reason, but they&apos;re rushing to attack you.</desc>
     <commander id="269" />
@@ -64322,7 +64322,7 @@
   </mission>
   <mission>
     <id>7102</id>
-    <name>A disturbing glare</name>
+    <name>A Disturbing Glare</name>
     <energy>18</energy>
     <desc>This fight is not that difficult but tiring, since these creatures were made of metal and they won&apos;t stop moving &apos;til they are complete wreckage. You get to see a pair of red eyes watching at your direction through the bushes.</desc>
     <commander id="353" />
@@ -64346,7 +64346,7 @@
   </mission>
   <mission>
     <id>7103</id>
-    <name>A deafening whistle</name>
+    <name>A Deafening Whistle</name>
     <energy>18</energy>
     <desc>Small but endless waves kept coming to you, until a quite strong whistle is heard. These animals retreat, running through the forest and that pair of eyes is nowhere to be found. You quickly pick some of the metal pieces and return to Luminis.</desc>
     <commander id="413" />
@@ -64370,7 +64370,7 @@
   </mission>
   <mission>
     <id>7104</id>
-    <name>Examine the wreckage</name>
+    <name>Examine the Wreckage</name>
     <energy>18</energy>
     <desc>Immediately after you tell what happened, a team is dispatched to retrieve more wreckage to study these. No one noticed that a small bird was watching everything.</desc>
     <commander id="269" />
@@ -64394,7 +64394,7 @@
   </mission>
   <mission>
     <id>7105</id>
-    <name>As if nothing ever happened</name>
+    <name>As If Nothing Ever Happened</name>
     <energy>18</energy>
     <desc>The team returned empty-handed, but they noticed a strange looking bird flying in the middle of the night and captured it. In the distance, that whistle that you heard before is echoing. You suggest that everyone must get ready for an attack.</desc>
     <commander id="277" />
@@ -64418,7 +64418,7 @@
   </mission>
   <mission>
     <id>7106</id>
-    <name>No time to waste</name>
+    <name>No Time to Waste</name>
     <energy>18</energy>
     <desc>The bird won&apos;t stop croaking and slamming itself against the cage. It also has the very same red eyes as the animals that attacked you. An explosion is heard and battle noises begin to arise outside.</desc>
     <commander id="413" />
@@ -64466,7 +64466,7 @@
   </mission>
   <mission>
     <id>7108</id>
-    <name>An incredible sight</name>
+    <name>An Incredible Sight</name>
     <energy>18</energy>
     <desc>After a short while, you notice a glaring pair of red eyes emerging from the fire: it&apos;s a robot and it seems to command the swarm of mecha animals. From the sky, you hear a dragon&apos;s roar. It&apos;s a mecha dragon flying in your direction, breathing fire against anyone who&apos;s near it.</desc>
     <commander id="277" />
@@ -64490,7 +64490,7 @@
   </mission>
   <mission>
     <id>7109</id>
-    <name>The calm after the storm</name>
+    <name>The Calm After the Storm</name>
     <energy>18</energy>
     <desc>You and the mecha zombie, along with the people of Luminis, managed to stop the attack, but the robot is nowhere to be found. Someone reveals that it was a rumor, but it used to be a former scientist involved with the Mecha tribe until its body suffered an horrendous accident.</desc>
     <commander id="367" />
@@ -64514,7 +64514,7 @@
   </mission>
   <mission>
     <id>7110</id>
-    <name>Is there any good news?</name>
+    <name>Is There Any Good News?</name>
     <energy>18</energy>
     <desc>After the exhausting battle in the middle of the night, you get to talk to the mecha zombie that helped you. It gives you an unsettling but revealing clue about the leader of these abominations: its name is Dr. Mechau and he&apos;s being helped by Darkassan itself.</desc>
     <commander id="476" />
@@ -64538,7 +64538,7 @@
   </mission>
   <mission>
     <id>7111</id>
-    <name>Unconditional help</name>
+    <name>Unconditional Help</name>
     <energy>18</energy>
     <desc>This mecha hunter shares its own research about that dreadful pair: Darkassan brings the subjects for the Doctor to experiment on and create an army of robots. Since the hunter offered its help, you decide that you&apos;ll stick together until they are stopped.</desc>
     <commander id="476" />
@@ -64562,7 +64562,7 @@
   </mission>
   <mission>
     <id>7112</id>
-    <name>Leave no stone unturned</name>
+    <name>Leave No Stone Unturned</name>
     <energy>18</energy>
     <desc>You attempted to find the hideout of Doctor Mechau with a little bit of help. While you were gone, the hunter managed to create a device with the robot&apos;s wreckage that can pinpoint Mechau&apos;s controlling signal and therefore, its lair.</desc>
     <commander id="476" />
@@ -64586,7 +64586,7 @@
   </mission>
   <mission>
     <id>7113</id>
-    <name>A distressing signal</name>
+    <name>A Distressing Signal</name>
     <energy>18</energy>
     <desc>The mecha hunter wasted no time talking and marched at sunrise. You manage to catch up with him and find the Doctor&apos;s lair. Mechau receives you with Darkassan and a relentless army of robots, attacking you fiercely.</desc>
     <commander id="476" />
@@ -64610,7 +64610,7 @@
   </mission>
   <mission>
     <id>7114</id>
-    <name>Undercover agenda</name>
+    <name>Undercover Agenda</name>
     <energy>18</energy>
     <desc>Suddenly, in the middle of the fight, Mechau falls into the ground with a hole on its chest and Darkassan smiles behind him. &apos;&apos;Thanks to you, now I can do my will everywhere. This machine will give me endless soldiers!&apos;&apos;. He removes the controller from its head and continues the battle.</desc>
     <commander id="476" />
@@ -64634,7 +64634,7 @@
   </mission>
   <mission>
     <id>7115</id>
-    <name>Was everything an illusion?</name>
+    <name>Was Everything an Illusion?</name>
     <energy>18</energy>
     <desc>While facing Darkassan, the hunter aims to the machine in order to stop the endless army. An explosion that hurts Darkassan&apos;s wings, gives you a chance to knock him off with a ferocious punch, your ally is nowhere to be seen. You&apos;ve survived and restored peace once more.</desc>
     <commander id="476" />
@@ -64655,5 +64655,510 @@
       <card id="6241" mastery_level="6" name="Grimkite Model" />
       <card id="4052" mastery_level="7" name="Shadomeka" />
     </deck>
+  </mission>
+  <!-- Event 105: Insects ComDev -->
+  <mission>
+    <id>7116</id>
+    <name>Knock Knock</name>
+    <energy>18</energy>
+    <desc>After foiling the dastardly plans of Doctor Mechau, you prepare to depart from the city of Luminis. Just before you take off, you are interrupted by a knock on the ship's hull. It's Dilbert, the insect architect from Beetleton Bunker!</desc>
+    <commander id="319" />
+    <!-- Rabid Jumper -->
+    <deck>
+      <card id="2048" name="Sandmite" />
+      <card id="2048" name="Sandmite" />
+      <card id="2210" name="Wyvermin" />
+      <card id="2210" name="Wyvermin" />
+      <card id="7140" name="Clawgro" />
+      <card id="7140" name="Clawgro" />
+      <card id="6165" name="Skelepede" />
+      <card id="6165" name="Skelepede" />
+      <card id="15066" mastery_level="2" name="Scarab Beast" />
+      <card id="15066" mastery_level="3" name="Scarab Beast" />
+      <card id="16057" mastery_level="4" name="Beammite" />
+      <card id="16057" mastery_level="5" name="Beammite" />
+      <card id="26129" mastery_level="6" name="Scorgod Trapper" />
+      <card id="26129" mastery_level="7" name="Scorgod Trapper" />
+      <card id="5640" mastery_level="7" name="Kattoraki, the Sword Savior" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <!-- Dilbert -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>R-Remember me, adventurer? Oh, gods! It feels like it's been years since we last talked.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>The Goblins might have the Spellstone Hammer now, but we've been working around the clock to rebuild our fair city.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Say what you will about him, but if Kattoraki proved one thing, it's that nothing is stronger than love...</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>So strong, in fact, that people keep telling me the city is too cramped.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>With all the new grubs crawling around, there just aren't enough houses anymore.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7117</id>
+    <name>Beetleton Baby Boom</name>
+    <energy>18</energy>
+    <desc>An exhausted Dilbert explains that the next generation of insects is in need of a new home: one that's built even deeper into the Beetleton cave network. But he seems fearful about the prospects of digging deeper...</desc>
+    <commander id="326" />
+    <!-- Dirt Digger -->
+    <deck>
+      <!--- Sundermarr spam in relation to baby boom lore -->
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" name="Sundermarr" />
+      <card id="1645" name="Sundermarr" />
+      <card id="11645" mastery_level="2" name="Sundermarr" />
+      <card id="11645" mastery_level="3" name="Sundermarr" />
+      <card id="11645" mastery_level="4" name="Sundermarr" />
+      <card id="11645" mastery_level="5" name="Sundermarr" />
+      <card id="11645" mastery_level="6" name="Sundermarr" />
+      <card id="21645" mastery_level="7" name="Sundermarr" />
+      <card id="21645" mastery_level="7" name="Sundermarr" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>We were starting to dig when we found... some real, honest-to-the-gods ancient ruins!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>We hoped you could help scout the area, Adventurer. But first, you should see our beautiful city!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7118</id>
+    <name>Joy to the Bunker</name>
+    <energy>18</energy>
+    <desc>Though you aren't looking forward to the "exotic" insect cuisine, you agree to accompany Dilbert back to Beetleton. The underground city is alive with vibrant leaves, mushrooms, and bugs, happier and busier than ever before.</desc>
+    <commander id="319" />
+    <!-- Rabid Jumper -->
+    <deck>
+      <card id="2048" name="Sandmite" />
+      <card id="2048" name="Sandmite" />
+      <card id="2210" name="Wyvermin" />
+      <card id="2210" name="Wyvermin" />
+      <card id="2207" name="Beauty Conglomeration" />
+      <card id="2207" name="Beauty Conglomeration" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5065" name="Hive Guard" />
+      <card id="12213" mastery_level="2" name="Rexim" />
+      <card id="12213" mastery_level="3" name="Rexim" />
+      <card id="12247" mastery_level="4" name="Bee Nice" />
+      <card id="12247" mastery_level="5" name="Bee Nice" />
+      <card id="26129" mastery_level="6" name="Scorgod Trapper" />
+      <card id="26129" mastery_level="7" name="Scorgod Trapper" />
+      <card id="7629" mastery_level="7" name="Tilly, the Love Keeper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>This is the harmony our Carnival of Couples has created!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7119</id>
+    <name>We Need to Go Deeper</name>
+    <energy>18</energy>
+    <desc>Dilbert directs your airship past the festivities and swarming citizens, into the depths of the underground. The ship's headlights only barely pierce through the gloom. You grow more and more unsettled the farther you fly.</desc>
+    <commander id="326" />
+    <!-- Dirt Digger -->
+    <deck>
+      <card id="6231" name="Firemouth Moth" />
+      <card id="6231" name="Firemouth Moth" />
+      <card id="7312" name="Clockwork Moth" />
+      <card id="7312" name="Clockwork Moth" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="6232" name="Firetouch Deathmoth" />
+      <card id="7268" name="Feral Griffinmoth" />
+      <card id="7268" name="Feral Griffinmoth" />
+      <card id="16146" mastery_level="2" name="Dragonfly Runner" />
+      <card id="16146" mastery_level="3" name="Dragonfly Runner" />
+      <card id="17064" mastery_level="4" name="Willowfly" />
+      <card id="17064" mastery_level="5" name="Willowfly" />
+      <card id="27158" mastery_level="6" name="Toadfly" />
+      <card id="27158" mastery_level="7" name="Toadfly" />
+      <card id="4030" mastery_level="7" name="Mothmo, the Cryptid" />
+    </deck>
+    <mission>
+      <id>7120</id>
+      <name>The Crash</name>
+      <energy>18</energy>
+      <desc>A skittering sound echoes through the pitch-black caves, growing steadily louder... then, silence. After a brief pause, something collides with the ship! Gripping the wheel, you're forced to land in unrelenting darkness.</desc>
+      <commander id="214" />
+      <!-- Tremor Wurm -->
+      <deck>
+        <card id="6139" name="Sand Wurm" />
+        <card id="6139" name="Sand Wurm" />
+        <card id="2218" name="Spineworm Delver" />
+        <card id="2218" name="Spineworm Delver" />
+        <card id="7198" name="Graveclay Digger" />
+        <card id="7198" name="Graveclay Digger" />
+        <card id="1638" name="Termite Breacher" />
+        <card id="1638" name="Termite Breacher" />
+        <card id="16008" mastery_level="2" name="Thousand Arm Demon" />
+        <card id="16008" mastery_level="3" name="Thousand Arm Demon" />
+        <card id="15196" mastery_level="4" name="Deca-mecha" />
+        <card id="15196" mastery_level="5" name="Deca-mecha" />
+        <card id="26139" mastery_level="6" name="Sand Wurm" />
+        <card id="26139" mastery_level="7" name="Sand Wurm" />
+        <card id="6622" mastery_level="7" name="Nophora, the Hoarder" />
+      </deck>
+      <speech>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>M-Mayday! MAYDAY!</text>
+        </line>
+      </speech>
+    </mission>
+    <mission>
+      <id>7121</id>
+      <name>Poisonbolt from the Blue</name>
+      <energy>18</energy>
+      <desc>When you and Dilbert emerge from the wreckage, you spot the cause of the unexpected landing. A foul, green projectile has soaked into the hull. Fortunately, the ship's headlamps still work... It's not much, but it's a start.</desc>
+      <commander id="366" />
+      <!-- Tomb Tunneler -->
+      <deck>
+        <card id="2156" name="Bladed Wayfarer" />
+        <card id="2156" name="Bladed Wayfarer" />
+        <card id="6180" name="Cloaked Revanapod" />
+        <card id="6180" name="Cloaked Revanapod" />
+        <card id="7048" name="Bogskull Widow" />
+        <card id="7048" name="Bogskull Widow" />
+        <card id="7233" name="Arsenite Pest" />
+        <card id="7233" name="Arsenite Pest" />
+        <card id="16193" mastery_level="2" name="Scorpio Stinger" />
+        <card id="16193" mastery_level="3" name="Scorpio Stinger" />
+        <card id="17063" mastery_level="4" name="Poisac Crawler" />
+        <card id="17063" mastery_level="5" name="Poisac Crawler" />
+        <card id="27130" mastery_level="6" name="Fluttering Stinger" />
+        <card id="27130" mastery_level="7" name="Fluttering Stinger" />
+        <card id="4073" mastery_level="7" name="Helvius, Spraying Mantis" />
+      </deck>
+      <speech>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>Oh, thank the gods... We're safe!</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>Wait, where are we?</text>
+        </line>
+        <line>
+          <commander>feralbug</commander>
+          <enemy>1</enemy>
+          <text>NONE SHALL PASSSSS</text>
+        </line>
+      </speech>
+    </mission>
+    <mission>
+      <id>7122</id>
+      <name>Sunless Stone</name>
+      <energy>18</energy>
+      <desc>After fending off the ambush, you follow the headlamps' light to a foreboding stone structure that leads even deeper into the depths. You recognize the style of carvings from the Forgotten Island, where you first met Agatha.</desc>
+      <commander id="366" />
+      <!-- Tomb Tunneler -->
+      <deck>
+        <card id="6068" name="Night Larva" />
+        <card id="6068" name="Night Larva" />
+        <card id="6068" name="Night Larva" />
+        <card id="6068" name="Night Larva" />
+        <card id="7137" name="Darkmites" />
+        <card id="7137" name="Darkmites" />
+        <card id="7137" name="Darkmites" />
+        <card id="7137" name="Darkmites" />
+        <card id="17065" mastery_level="2" name="Disturbed Swarm" />
+        <card id="17065" mastery_level="3" name="Disturbed Swarm" />
+        <card id="16291" mastery_level="4" name="Miteark Sorcerer" />
+        <card id="16291" mastery_level="5" name="Miteark Sorcerer" />
+        <card id="26037" mastery_level="6" name="Keeper of Souls" />
+        <card id="26037" mastery_level="7" name="Keeper of Souls" />
+        <card id="7619" mastery_level="7" name="Rima, the Impaler" />
+      </deck>
+      <speech>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>This is it, Adventurer! The ruins I was telling you about!</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>But it looks like something happened since my team was here last.</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>These doors weren't open before... I don't like this...</text>
+        </line>
+      </speech>
+    </mission>
+    <mission>
+      <id>7123</id>
+      <name>Open Wide</name>
+      <energy>18</energy>
+      <desc>There are obvious scorch marks marring the double doors ahead. You brace yourself for another struggle. Dilbert follows behind you in trepidation as you venture deeper inside, holding an old, beaten-up lantern full of fireflies.</desc>
+      <commander id="214" />
+      <!-- Tremor Wurm -->
+      <deck>
+        <card id="5065" name="Hive Guard" />
+        <card id="5065" name="Hive Guard" />
+        <card id="5065" name="Hive Guard" />
+        <card id="5065" name="Hive Guard" />
+        <card id="5139" name="Loyal Guard" />
+        <card id="5139" name="Loyal Guard" />
+        <card id="5139" name="Loyal Guard" />
+        <card id="5139" name="Loyal Guard" />
+        <card id="12100" mastery_level="2" name="Khreptronos" />
+        <card id="12100" mastery_level="3" name="Khreptronos" />
+        <card id="15200" mastery_level="4" name="Clyx, Advance Guard" />
+        <card id="15200" mastery_level="5" name="Clyx, Advance Guard" />
+        <card id="22233" mastery_level="6" name="Aikido Initiate" />
+        <card id="22233" mastery_level="7" name="Aikido Initiate" />
+        <card id="4019" mastery_level="7" name="Formos Ebonclaw" />
+      </deck>
+    </mission>
+    <mission>
+      <id>7124</id>
+      <name>Inner Sanctum</name>
+      <energy>18</energy>
+      <desc>You descend the first flight of stairs you see. The moment you enter the next chamber, torches on the walls suddenly crackle to life with crimson flame. The room is bathed in light, and an elaborate mural is unveiled before your eyes.</desc>
+      <commander id="326" />
+      <!-- Dirt Digger -->
+      <deck>
+        <card id="2211" name="Firelight Patrol" />
+        <card id="2211" name="Firelight Patrol" />
+        <card id="2255" name="Lavafly" />
+        <card id="2255" name="Lavafly" />
+        <card id="6044" name="Firewalker" />
+        <card id="6044" name="Firewalker" />
+        <card id="2049" name="Contrapede" />
+        <card id="2049" name="Contrapede" />
+        <card id="16065" mastery_level="2" name="Torchsnout" />
+        <card id="16065" mastery_level="3" name="Torchsnout" />
+        <card id="16266" mastery_level="4" name="Sparkhurler Gaucho" />
+        <card id="16266" mastery_level="5" name="Sparkhurler Gaucho" />
+        <card id="25142" mastery_level="6" name="Buzzblade" />
+        <card id="25142" mastery_level="7" name="Buzzblade" />
+        <card id="4060" mastery_level="7" name="Yaritza" />
+      </deck>
+      <speech>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>Adventurer, look at these old drawings!</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>I don't believe it! These look like...</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>It is! This is what Beetleton Bunker looked like when my great-great-great-grandfather was a grub!</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>But, if this building is related to Beetleton...</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>Why did no one discover it until recently?</text>
+        </line>
+      </speech>
+    </mission>
+    <mission>
+      <id>7125</id>
+      <name>The Spraying Mantis</name>
+      <energy>18</energy>
+      <desc>You're about to ponder Dilbert's question when you hear a harsh skittering sound, distant at first, but gaining and gaining fast. A huge, armored mantis darts into the sanctum. Liquid drips from its sickles as it lets out a hiss.</desc>
+      <commander id="366" />
+      <!-- Tomb Tunneler -->
+      <deck>
+        <card id="5070" name="Hornslicer" />
+        <card id="5070" name="Hornslicer" />
+        <card id="5070" name="Hornslicer" />
+        <card id="7067" name="Mantis" />
+        <card id="7067" name="Mantis" />
+        <card id="7067" name="Mantis" />
+        <card id="4046" level="1" name="Agatha, Myth Warden" />
+        <card id="4073" level="1" name="Helvius, Spraying Mantis" />
+        <card id="12098" mastery_level="2" name="Cocoon Crawler" />
+        <card id="12098" mastery_level="3" name="Cocoon Crawler" />
+        <card id="16138" mastery_level="4" name="Bitter Therix" />
+        <card id="16138" mastery_level="5" name="Bitter Therix" />
+        <card id="27298" mastery_level="6" name="Mindtis" />
+        <card id="27298" mastery_level="7" name="Mindtis" />
+        <card id="5606" mastery_level="7" name="Volvel, Golden Pride" />
+      </deck>
+      <speech>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>Aaaah! Adventurer! Watch out!</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>That creature! I know that scent!</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>That's the poison that damaged the airship...!</text>
+        </line>
+      </speech>
+    </mission>
+    <mission>
+      <id>7126</id>
+      <name>Rhynio Reunion</name>
+      <energy>18</energy>
+      <desc>The mantis's head rears back, and its eyes glow a fearsome green. But before it can spit its toxins at you, a bolt of fiery magic strikes it. It manages to fire a gout of green liquid harmlessly against the wall before collapsing to the floor.</desc>
+      <commander id="434" />
+      <!-- Agatha -->
+      <deck>
+        <card id="2050" name="Slithering Pincer" />
+        <card id="2050" name="Slithering Pincer" />
+        <card id="2050" name="Slithering Pincer" />
+        <card id="7067" name="Mantis" />
+        <card id="7067" name="Mantis" />
+        <card id="7067" name="Mantis" />
+        <card id="4046" level="3" name="Agatha, Myth Warden" />
+        <card id="4073" level="3" name="Helvius, Spraying Mantis" />
+        <card id="16110" mastery_level="2" name="Sea Mantis" />
+        <card id="16110" mastery_level="3" name="Sea Mantis" />
+        <card id="15193" mastery_level="4" name="Rhynio Battlecharger" />
+        <card id="15193" mastery_level="5" name="Rhynio Battlecharger" />
+        <card id="27298" mastery_level="6" name="Mindtis" />
+        <card id="27298" mastery_level="7" name="Mindtis" />
+        <card id="4008" mastery_level="7" name="Rhynio Sun Warrior" />
+      </deck>
+      <speech>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <!-- Agatha -->
+          <enemy>1</enemy>
+          <text>Helvius! That is enough! You will not harm another innocent!</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>Champion... what brings you here, to this painful reminder of olden times?</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>We're here to explore these ruins! Beetleton Bunker depends on it.</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>I am afraid you've dug far too deep for your own good.</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>This was once a secret haven for the Rhynio, when the Forgotten Hero was my child... my pride and joy.</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>When the Void surged through our island, a chosen few braved the darkness connecting us to the mainland. </text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>We erected this. A shelter, if the Crimsonwings should fall.</text>
+        </line>
+        <line>
+          <commander>architectbug</commander>
+          <enemy>0</enemy>
+          <text>But nobody's here but that... monster!</text>
+        </line>
+      </speech>
+    </mission>
+    <mission>
+      <id>7127</id>
+      <name>Myth Warden's Despair</name>
+      <energy>18</energy>
+      <desc>A look of grief clouds Agatha's face. She closes her eyes, fluttering over to the wall behind you. Your eyes follow her, and at last you understand. Pictured there is the mantis, applying a green poultice to another insect's wounds.</desc>
+      <commander id="434" />
+      <!-- Agatha -->
+      <deck>
+        <card id="22112" name="Vindicator Karna" />
+        <card id="22112" name="Vindicator Karna" />
+        <card id="26295" name="Roasterbots" />
+        <card id="26295" name="Roasterbots" />
+        <card id="26197" name="Monarch Incinerator" />
+        <card id="26197" name="Monarch Incinerator" />
+        <card id="4046" level="5" name="Agatha, Myth Warden" />
+        <card id="4073" level="5" name="Helvius, Spraying Mantis" />
+        <card id="26230" mastery_level="2" name="Emberdeath King" />
+        <card id="26230" mastery_level="3" name="Emberdeath King" />
+        <card id="26206" mastery_level="4" name="Bloodboil Cursemage" />
+        <card id="26206" mastery_level="5" name="Bloodboil Cursemage" />
+        <card id="26232" mastery_level="6" name="Viofire Deathmoth" />
+        <card id="26232" mastery_level="7" name="Viofire Deathmoth" />
+        <card id="7628" mastery_level="7" name="Ungoliant, Poisonous Terror" />
+      </deck>
+      <speech>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>Helvius was once the pride of the Rhynio people, beetle.</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>But when he stayed behind to heal the sick, he succumbed to the power of the Void. Soon, he was beyond even our reach.</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>Our finest Sun Warriors could not break the curse and return his mind. So, we had no recourse...</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>We sealed him away in this sanctuary, a place we once called our safe haven from the Void.</text>
+        </line>
+        <line>
+          <commander>Portrait_Insect_Sage</commander>
+          <enemy>1</enemy>
+          <text>And, in the end, the rest of our civilization would follow him into the abyss.</text>
+        </line>
+      </speech>
+    </mission>
   </mission>
 </root>

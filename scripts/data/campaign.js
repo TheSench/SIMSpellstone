@@ -5471,7 +5471,7 @@ var CAMPAIGNS = {
 			"6724",
 			"6725"
 		],
-		"name": "Wrong turn"
+		"name": "Wrong Turn"
 	},
 	"1302": {
 		"battleground_id": "2019",
@@ -5488,7 +5488,7 @@ var CAMPAIGNS = {
 			"6730",
 			"6731"
 		],
-		"name": "Fireshards way of fun"
+		"name": "Fireshards Way of Fun"
 	},
 	"1303": {
 		"id": "1303",
@@ -5582,7 +5582,7 @@ var CAMPAIGNS = {
 			"6763",
 			"6764"
 		],
-		"name": "Why can't we be friends?"
+		"name": "Why Can't We Be Friends?"
 	},
 	"1309": {
 		"id": "1309",
@@ -5598,7 +5598,7 @@ var CAMPAIGNS = {
 			"6769",
 			"6770"
 		],
-		"name": "I hate portals"
+		"name": "I Hate Portals"
 	},
 	"1310": {
 		"battleground_id": "2019",
@@ -5648,7 +5648,7 @@ var CAMPAIGNS = {
 			"6787",
 			"6788"
 		],
-		"name": "One shell of a place"
+		"name": "One Shell of a Place"
 	},
 	"1313": {
 		"id": "1313",
@@ -5664,7 +5664,7 @@ var CAMPAIGNS = {
 			"6799",
 			"6800"
 		],
-		"name": "Taking a break"
+		"name": "Taking a Break"
 	},
 	"1314": {
 		"battleground_id": "2019",
@@ -5681,7 +5681,7 @@ var CAMPAIGNS = {
 			"6805",
 			"6806"
 		],
-		"name": "Exploring Tarragon peak"
+		"name": "Exploring Tarragon Peak"
 	},
 	"1315": {
 		"battleground_id": "546",
@@ -5731,7 +5731,7 @@ var CAMPAIGNS = {
 			"6823",
 			"6824"
 		],
-		"name": "On the hunt"
+		"name": "On the Hunt"
 	},
 	"1318": {
 		"id": "1318",
@@ -5747,7 +5747,7 @@ var CAMPAIGNS = {
 			"6835",
 			"6836"
 		],
-		"name": "Misleading a menace"
+		"name": "Misleading a Menace"
 	},
 	"1319": {
 		"battleground_id": "2019",
@@ -5764,7 +5764,7 @@ var CAMPAIGNS = {
 			"6841",
 			"6842"
 		],
-		"name": "The hunter has become the hunted"
+		"name": "The Hunter Has Become the Hunted"
 	},
 	"1320": {
 		"id": "1320",
@@ -5780,7 +5780,7 @@ var CAMPAIGNS = {
 			"6853",
 			"6854"
 		],
-		"name": "Call to adventure"
+		"name": "Call to Adventure"
 	},
 	"1321": {
 		"battleground_id": "2019",
@@ -5797,7 +5797,7 @@ var CAMPAIGNS = {
 			"6859",
 			"6860"
 		],
-		"name": "In deep danger"
+		"name": "In Deep Danger"
 	},
 	"1322": {
 		"id": "1322",
@@ -5830,7 +5830,7 @@ var CAMPAIGNS = {
 			"6877",
 			"6878"
 		],
-		"name": "A helping hand"
+		"name": "A Helping Hand"
 	},
 	"1324": {
 		"id": "1324",
@@ -5993,7 +5993,7 @@ var CAMPAIGNS = {
 			"6959",
 			"6960"
 		],
-		"name": "No mans land"
+		"name": "No Mans land"
 	},
 	"1334": {
 		"id": "1334",
@@ -6090,7 +6090,7 @@ var CAMPAIGNS = {
 			"7012",
 			"7013"
 		],
-		"name": "Gossip about a Hero"
+		"name": "Gossip About a Hero"
 	},
 	"1340": {
 		"battleground_id": "2053",
@@ -6123,7 +6123,7 @@ var CAMPAIGNS = {
 			"7030",
 			"7031"
 		],
-		"name": "Just rumors?"
+		"name": "Just Rumors?"
 	},
 	"1342": {
 		"battleground_id": "2053",
@@ -6156,7 +6156,7 @@ var CAMPAIGNS = {
 			"7048",
 			"7049"
 		],
-		"name": "In the search of the Lost Tribe"
+		"name": "In Search of the Lost Tribe"
 	},
 	"1344": {
 		"battleground_id": "2053",
@@ -6173,7 +6173,7 @@ var CAMPAIGNS = {
 			"7054",
 			"7055"
 		],
-		"name": "After the storm, comes the calm?"
+		"name": "After the Storm, Comes the Calm?"
 	},
 	"1345": {
 		"id": "1345",
@@ -6189,7 +6189,7 @@ var CAMPAIGNS = {
 			"7066",
 			"7067"
 		],
-		"name": "Looking for glory"
+		"name": "Looking for Glory"
 	},
 	"1346": {
 		"battleground_id": "2053",
@@ -6222,7 +6222,7 @@ var CAMPAIGNS = {
 			"7084",
 			"7085"
 		],
-		"name": "Into the chaos"
+		"name": "Into the Chaos"
 	},
 	"1348": {
 		"battleground_id": "2019",
@@ -6239,7 +6239,7 @@ var CAMPAIGNS = {
 			"7090",
 			"7091"
 		],
-		"name": "Crazy chainsaws"
+		"name": "Crazy Chainsaws"
 	},
 	"1349": {
 		"battleground_id": "2097",
@@ -6256,7 +6256,7 @@ var CAMPAIGNS = {
 			"7102",
 			"7103"
 		],
-		"name": "Dark side of the science"
+		"name": "Dark Side of the Science"
 	},
 	"1350": {
 		"battleground_id": "2098",
@@ -6273,7 +6273,39 @@ var CAMPAIGNS = {
 			"7108",
 			"7109"
 		],
-		"name": "When an experiment goes wrong..."
+		"name": "When an Experiment Goes Wrong..."
+	},
+	"1351": {
+		"id": "1351",
+		"items": {
+			"3092": 1.7
+		},
+		"location_id": "22",
+		"missions": [
+			"7116",
+			"7117",
+			"7118",
+			"7119",
+			"7120",
+			"7121"
+		],
+		"name": "A Flight in the Dark"
+	},
+	"1352": {
+		"id": "1352",
+		"items": {
+			"3092": 1.8
+		},
+		"location_id": "22",
+		"missions": [
+			"7122",
+			"7123",
+			"7124",
+			"7125",
+			"7126",
+			"7127"
+		],
+		"name": "The Healer's Prison"
 	},
 	"3000": {
 		"id": "3000",
@@ -124213,7 +124245,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6795",
-		"name": "Small detour"
+		"name": "Small Detour"
 	},
 	"6796": {
 		"commander": {
@@ -124269,7 +124301,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6796",
-		"name": "No vacancy"
+		"name": "No Vacancy"
 	},
 	"6797": {
 		"commander": {
@@ -124329,7 +124361,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6797",
-		"name": "In the heat of the moment"
+		"name": "In the Heat of the Moment"
 	},
 	"6798": {
 		"commander": {
@@ -124389,7 +124421,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6798",
-		"name": "Run boy run"
+		"name": "Run Boy Run"
 	},
 	"6799": {
 		"commander": {
@@ -124509,7 +124541,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6800",
-		"name": "Nice to meet you"
+		"name": "Nice to Meet You"
 	},
 	"6801": {
 		"commander": {
@@ -124625,7 +124657,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6802",
-		"name": "Under attack"
+		"name": "Under Attack"
 	},
 	"6803": {
 		"commander": {
@@ -124685,7 +124717,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6803",
-		"name": "Tipping the scales"
+		"name": "Tipping the Scales"
 	},
 	"6804": {
 		"commander": {
@@ -124745,7 +124777,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6804",
-		"name": "Funny business"
+		"name": "Funny Business"
 	},
 	"6805": {
 		"commander": {
@@ -124805,7 +124837,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6805",
-		"name": "Wrong time wrong place"
+		"name": "Wrong Time Wrong Place"
 	},
 	"6806": {
 		"commander": {
@@ -124865,7 +124897,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6806",
-		"name": "Just winging it"
+		"name": "Just Winging It"
 	},
 	"6807": {
 		"commander": {
@@ -124925,7 +124957,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6807",
-		"name": "Vulcanos is back"
+		"name": "Vulcanos is Back"
 	},
 	"6808": {
 		"commander": {
@@ -124986,7 +125018,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6808",
-		"name": "First thunder"
+		"name": "First Thunder"
 	},
 	"6809": {
 		"commander": {
@@ -125286,7 +125318,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6813",
-		"name": "Ambushed at sea"
+		"name": "Ambushed at Sea"
 	},
 	"6814": {
 		"commander": {
@@ -125346,7 +125378,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6814",
-		"name": "All out war"
+		"name": "All-out War"
 	},
 	"6815": {
 		"commander": {
@@ -125406,7 +125438,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6815",
-		"name": "Things just got worse"
+		"name": "Things Just Got Worse"
 	},
 	"6816": {
 		"commander": {
@@ -125466,7 +125498,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6816",
-		"name": "I will find you"
+		"name": "I Will Find You"
 	},
 	"6817": {
 		"commander": {
@@ -125586,7 +125618,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6818",
-		"name": "Toe to toe"
+		"name": "Toe to Toe"
 	},
 	"6819": {
 		"commander": {
@@ -125766,7 +125798,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6821",
-		"name": "Together we go"
+		"name": "Together We Go"
 	},
 	"6822": {
 		"commander": {
@@ -125826,7 +125858,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6822",
-		"name": "Payback time"
+		"name": "Payback Time"
 	},
 	"6823": {
 		"commander": {
@@ -125886,7 +125918,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6823",
-		"name": "Back in loving arms"
+		"name": "Back in Loving Arms"
 	},
 	"6824": {
 		"commander": {
@@ -126006,7 +126038,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6825",
-		"name": "A challenger rises"
+		"name": "A Challenger Rises"
 	},
 	"6826": {
 		"commander": {
@@ -126066,7 +126098,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6826",
-		"name": "Stronger than you look"
+		"name": "Stronger Than You Look"
 	},
 	"6827": {
 		"commander": {
@@ -126126,7 +126158,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6827",
-		"name": "Wall of pain"
+		"name": "Wall of Pain"
 	},
 	"6828": {
 		"commander": {
@@ -126186,7 +126218,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6828",
-		"name": "One day I shall return"
+		"name": "One Day I Shall Return"
 	},
 	"6829": {
 		"commander": {
@@ -126306,7 +126338,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6830",
-		"name": "Rush of fury"
+		"name": "Rush of Fury"
 	},
 	"6831": {
 		"commander": {
@@ -126606,7 +126638,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6835",
-		"name": "And his name is"
+		"name": "And his Name is"
 	},
 	"6836": {
 		"commander": {
@@ -126666,7 +126698,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6836",
-		"name": "Vanished into thin air"
+		"name": "Vanished into Thin Air"
 	},
 	"6837": {
 		"commander": {
@@ -126786,7 +126818,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6838",
-		"name": "Spread out"
+		"name": "Spread Out"
 	},
 	"6839": {
 		"commander": {
@@ -126846,7 +126878,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6839",
-		"name": "Odd one out"
+		"name": "Odd One Out"
 	},
 	"6840": {
 		"commander": {
@@ -126906,7 +126938,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6840",
-		"name": "Fool me once"
+		"name": "Fool Me Once"
 	},
 	"6841": {
 		"commander": {
@@ -126966,7 +126998,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6841",
-		"name": "Down you go"
+		"name": "Down You Go"
 	},
 	"6842": {
 		"commander": {
@@ -127026,7 +127058,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6842",
-		"name": "Insects in distress"
+		"name": "Insects in Distress"
 	},
 	"6843": {
 		"commander": {
@@ -127086,7 +127118,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6843",
-		"name": "Go time"
+		"name": "Go Time"
 	},
 	"6844": {
 		"commander": {
@@ -127146,7 +127178,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6844",
-		"name": "It's getting cold out here"
+		"name": "It's Getting Cold Out Here"
 	},
 	"6845": {
 		"commander": {
@@ -127206,7 +127238,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6845",
-		"name": "Enemy at the gates"
+		"name": "Enemy at the Gates"
 	},
 	"6846": {
 		"commander": {
@@ -127326,7 +127358,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6847",
-		"name": "The art of the deal"
+		"name": "The Art of the Deal"
 	},
 	"6848": {
 		"commander": {
@@ -127386,7 +127418,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6848",
-		"name": "Interesting information"
+		"name": "Interesting Information"
 	},
 	"6849": {
 		"commander": {
@@ -127446,7 +127478,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6849",
-		"name": "Meet and greet"
+		"name": "Meet and Greet"
 	},
 	"6850": {
 		"commander": {
@@ -127506,7 +127538,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6850",
-		"name": "The staff"
+		"name": "The Staff"
 	},
 	"6851": {
 		"commander": {
@@ -127626,7 +127658,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6852",
-		"name": "A fair trade"
+		"name": "A Fair Trade"
 	},
 	"6853": {
 		"commander": {
@@ -127686,7 +127718,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6853",
-		"name": "Heavy breathing"
+		"name": "Heavy Breathing"
 	},
 	"6854": {
 		"commander": {
@@ -127746,7 +127778,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6854",
-		"name": "The scorpion king"
+		"name": "The Scorpion King"
 	},
 	"6855": {
 		"commander": {
@@ -127866,7 +127898,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6856",
-		"name": "Sneaky beaky like"
+		"name": "Sneaky Beaky-like"
 	},
 	"6857": {
 		"commander": {
@@ -127986,7 +128018,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6858",
-		"name": "Run adventurer run"
+		"name": "Run Adventurer Run"
 	},
 	"6859": {
 		"commander": {
@@ -128046,7 +128078,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6859",
-		"name": "Endless gratitude"
+		"name": "Endless Gratitude"
 	},
 	"6860": {
 		"commander": {
@@ -128166,7 +128198,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6861",
-		"name": "Returning for riches"
+		"name": "Returning for Riches"
 	},
 	"6862": {
 		"commander": {
@@ -128286,7 +128318,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6863",
-		"name": "Here come the big ones"
+		"name": "Here Come the Big Ones"
 	},
 	"6864": {
 		"commander": {
@@ -128406,7 +128438,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6865",
-		"name": "Standing your ground"
+		"name": "Standing your Ground"
 	},
 	"6866": {
 		"commander": {
@@ -128466,7 +128498,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6866",
-		"name": "The escape"
+		"name": "The Escape"
 	},
 	"6867": {
 		"commander": {
@@ -128526,7 +128558,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6867",
-		"name": "Boots on the ground"
+		"name": "Boots on the Ground"
 	},
 	"6868": {
 		"commander": {
@@ -128586,7 +128618,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6868",
-		"name": "The tavern"
+		"name": "The Tavern"
 	},
 	"6869": {
 		"commander": {
@@ -128886,7 +128918,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6873",
-		"name": "Rising from the dead"
+		"name": "Rising from the Dead"
 	},
 	"6874": {
 		"commander": {
@@ -128946,7 +128978,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6874",
-		"name": "Unstoppable menace"
+		"name": "Unstoppable Menace"
 	},
 	"6875": {
 		"commander": {
@@ -129006,7 +129038,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6875",
-		"name": "One frog army"
+		"name": "One-Frog Army"
 	},
 	"6876": {
 		"commander": {
@@ -129186,7 +129218,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6878",
-		"name": "Skyhaven in danger"
+		"name": "Skyhaven in Danger"
 	},
 	"6879": {
 		"commander": {
@@ -129246,7 +129278,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6879",
-		"name": "Ghost hunters"
+		"name": "Ghost Hunters"
 	},
 	"6880": {
 		"commander": {
@@ -129306,7 +129338,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6880",
-		"name": "A cry for help"
+		"name": "A Cry for Help"
 	},
 	"6881": {
 		"commander": {
@@ -129366,7 +129398,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6881",
-		"name": "A swing and a miss"
+		"name": "A Swing and a Miss"
 	},
 	"6882": {
 		"commander": {
@@ -129546,7 +129578,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6884",
-		"name": "My job here is done"
+		"name": "My Job Here is Done"
 	},
 	"6885": {
 		"commander": {
@@ -129606,7 +129638,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6885",
-		"name": "The message"
+		"name": "The Message"
 	},
 	"6886": {
 		"commander": {
@@ -129726,7 +129758,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6887",
-		"name": "The assault"
+		"name": "The Assault"
 	},
 	"6888": {
 		"commander": {
@@ -129966,7 +129998,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6891",
-		"name": "The raid"
+		"name": "The Raid"
 	},
 	"6892": {
 		"commander": {
@@ -130086,7 +130118,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6893",
-		"name": "The throne"
+		"name": "The Throne"
 	},
 	"6894": {
 		"commander": {
@@ -130146,7 +130178,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6894",
-		"name": "Not worthy"
+		"name": "Not Worthy"
 	},
 	"6895": {
 		"commander": {
@@ -130206,7 +130238,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6895",
-		"name": "The arrival"
+		"name": "The Arrival"
 	},
 	"6896": {
 		"commander": {
@@ -130266,7 +130298,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6896",
-		"name": "The realization"
+		"name": "The Realization"
 	},
 	"6897": {
 		"commander": {
@@ -130446,7 +130478,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6899",
-		"name": "A spark was all he needed"
+		"name": "A Spark was All he Needed"
 	},
 	"6900": {
 		"commander": {
@@ -130566,7 +130598,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6901",
-		"name": "Chained for too long"
+		"name": "Chained for Too Long"
 	},
 	"6902": {
 		"commander": {
@@ -130626,7 +130658,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6902",
-		"name": "Nice try"
+		"name": "Nice Try"
 	},
 	"6903": {
 		"commander": {
@@ -130746,7 +130778,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6904",
-		"name": "A portal to the other side"
+		"name": "A Portal to the Other Side"
 	},
 	"6905": {
 		"commander": {
@@ -130866,7 +130898,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6906",
-		"name": "A bigger problem"
+		"name": "A Bigger Problem"
 	},
 	"6907": {
 		"commander": {
@@ -130926,7 +130958,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6907",
-		"name": "Go time"
+		"name": "Go Time"
 	},
 	"6908": {
 		"commander": {
@@ -131106,7 +131138,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6910",
-		"name": "Away he goes"
+		"name": "Away he Goes"
 	},
 	"6911": {
 		"commander": {
@@ -131286,7 +131318,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6913",
-		"name": "Void on the loose"
+		"name": "Void on the Loose"
 	},
 	"6914": {
 		"commander": {
@@ -131826,7 +131858,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6922",
-		"name": "The search"
+		"name": "The Search"
 	},
 	"6923": {
 		"commander": {
@@ -131886,7 +131918,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6923",
-		"name": "Blink of an eye"
+		"name": "Blink of an Eye"
 	},
 	"6924": {
 		"commander": {
@@ -131946,7 +131978,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6924",
-		"name": "The plot"
+		"name": "The Plot"
 	},
 	"6925": {
 		"commander": {
@@ -132006,7 +132038,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6925",
-		"name": "Absence of them all"
+		"name": "Absence of Them All"
 	},
 	"6926": {
 		"commander": {
@@ -132126,7 +132158,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6927",
-		"name": "This is not over"
+		"name": "This is not Over"
 	},
 	"6928": {
 		"commander": {
@@ -132186,7 +132218,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6928",
-		"name": "Welcome back"
+		"name": "Welcome Back"
 	},
 	"6929": {
 		"commander": {
@@ -132246,7 +132278,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6929",
-		"name": "The search"
+		"name": "The Search"
 	},
 	"6930": {
 		"commander": {
@@ -132306,7 +132338,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6930",
-		"name": "The hideout"
+		"name": "The Hideout"
 	},
 	"6931": {
 		"commander": {
@@ -132366,7 +132398,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6931",
-		"name": "Void artifacts"
+		"name": "Void Artifacts"
 	},
 	"6932": {
 		"commander": {
@@ -132426,7 +132458,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6932",
-		"name": "There you are"
+		"name": "There You Are"
 	},
 	"6933": {
 		"commander": {
@@ -132486,7 +132518,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6933",
-		"name": "Power on"
+		"name": "Power On"
 	},
 	"6934": {
 		"commander": {
@@ -132546,7 +132578,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6934",
-		"name": "Channeled into destruction"
+		"name": "Channeled into Destruction"
 	},
 	"6935": {
 		"commander": {
@@ -132666,7 +132698,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6936",
-		"name": "Chink in the armor"
+		"name": "Chink in the Armor"
 	},
 	"6937": {
 		"commander": {
@@ -132726,7 +132758,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6937",
-		"name": "Left empty handed"
+		"name": "Left Empty-handed"
 	},
 	"6938": {
 		"commander": {
@@ -132846,7 +132878,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6939",
-		"name": "Duskwillow it is"
+		"name": "Duskwillow It Is"
 	},
 	"6940": {
 		"commander": {
@@ -133206,7 +133238,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6945",
-		"name": "Back to sleep"
+		"name": "Back to Sleep"
 	},
 	"6946": {
 		"commander": {
@@ -133446,7 +133478,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6949",
-		"name": "Help from a local"
+		"name": "Help from a Local"
 	},
 	"6950": {
 		"commander": {
@@ -133626,7 +133658,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6952",
-		"name": "Lost at sea"
+		"name": "Lost at Sea"
 	},
 	"6953": {
 		"commander": {
@@ -133986,7 +134018,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6958",
-		"name": "A common enemy"
+		"name": "A Common Enemy"
 	},
 	"6959": {
 		"commander": {
@@ -134166,7 +134198,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6961",
-		"name": "The alliance"
+		"name": "The Alliance"
 	},
 	"6962": {
 		"commander": {
@@ -134226,7 +134258,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6962",
-		"name": "Tracing a plan"
+		"name": "Tracing a Plan"
 	},
 	"6963": {
 		"commander": {
@@ -134466,7 +134498,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6966",
-		"name": "Pirates aren't so bad after all"
+		"name": "Pirates Aren't So Bad After All"
 	},
 	"6967": {
 		"commander": {
@@ -134946,7 +134978,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6974",
-		"name": "The teleporter"
+		"name": "The Teleporter"
 	},
 	"6975": {
 		"commander": {
@@ -135126,7 +135158,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6977",
-		"name": "The tables turn"
+		"name": "The Tables Turn"
 	},
 	"6978": {
 		"commander": {
@@ -135186,7 +135218,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6978",
-		"name": "The Void is coming"
+		"name": "The Void is Coming"
 	},
 	"6979": {
 		"commander": {
@@ -135546,7 +135578,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6984",
-		"name": "A dangerous nap"
+		"name": "A Dangerous Nap"
 	},
 	"6985": {
 		"commander": {
@@ -135606,7 +135638,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6985",
-		"name": "The day after Christmas"
+		"name": "The Day After Christmas"
 	},
 	"6986": {
 		"commander": {
@@ -135666,7 +135698,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6986",
-		"name": "The brazen robbery"
+		"name": "The Brazen Robbery"
 	},
 	"6987": {
 		"commander": {
@@ -135726,7 +135758,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6987",
-		"name": "Looking for the culprit"
+		"name": "Looking for the Culprit"
 	},
 	"6988": {
 		"commander": {
@@ -135786,7 +135818,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6988",
-		"name": "The villain's punishment"
+		"name": "The Villain's Punishment"
 	},
 	"6989": {
 		"commander": {
@@ -135846,7 +135878,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6989",
-		"name": "The miracle after Christmas"
+		"name": "The Miracle After Christmas"
 	},
 	"6990": {
 		"commander": {
@@ -136086,7 +136118,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6993",
-		"name": "Gain some time"
+		"name": "Gain Some Time"
 	},
 	"6994": {
 		"commander": {
@@ -136146,7 +136178,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6994",
-		"name": "The fight"
+		"name": "The Fight"
 	},
 	"6995": {
 		"commander": {
@@ -136806,7 +136838,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7005",
-		"name": "Even the Chaos has its logic"
+		"name": "Even Chaos has its Logic"
 	},
 	"7006": {
 		"commander": {
@@ -138066,7 +138098,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7026",
-		"name": "Trader mentality"
+		"name": "Trader Mentality"
 	},
 	"7027": {
 		"commander": {
@@ -138126,7 +138158,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7027",
-		"name": "Beginning of the search"
+		"name": "Beginning of the Search"
 	},
 	"7028": {
 		"commander": {
@@ -138186,7 +138218,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7028",
-		"name": "No delicacies to be found"
+		"name": "No Delicacies to be Found"
 	},
 	"7029": {
 		"commander": {
@@ -138246,7 +138278,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7029",
-		"name": "It appears you came chasing a rumor"
+		"name": "It Appears You Came Chasing a Rumor"
 	},
 	"7030": {
 		"commander": {
@@ -138306,7 +138338,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7030",
-		"name": "Finally a clue"
+		"name": "Finally a Clue"
 	},
 	"7031": {
 		"commander": {
@@ -138486,7 +138518,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7033",
-		"name": "The watcher"
+		"name": "The Watcher"
 	},
 	"7034": {
 		"commander": {
@@ -138606,7 +138638,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7035",
-		"name": "The bet"
+		"name": "The Bet"
 	},
 	"7036": {
 		"commander": {
@@ -138666,7 +138698,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7036",
-		"name": "Bright red fruits"
+		"name": "Bright Red Fruits"
 	},
 	"7037": {
 		"commander": {
@@ -138786,7 +138818,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7038",
-		"name": "The vengeance is spicy"
+		"name": "The Vengeance is Spicy"
 	},
 	"7039": {
 		"commander": {
@@ -138906,7 +138938,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7040",
-		"name": "Searching for the lava nightmare"
+		"name": "Searching for the Lava Nightmare"
 	},
 	"7041": {
 		"commander": {
@@ -138966,7 +138998,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7041",
-		"name": "Climbing the volcano"
+		"name": "Climbing the Volcano"
 	},
 	"7042": {
 		"commander": {
@@ -139026,7 +139058,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7042",
-		"name": "The top of the Volcano"
+		"name": "The Top of the Volcano"
 	},
 	"7043": {
 		"commander": {
@@ -139146,7 +139178,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7044",
-		"name": "A new kind of frog?"
+		"name": "A New Kind of Frog?"
 	},
 	"7045": {
 		"commander": {
@@ -139506,7 +139538,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7050",
-		"name": "Remnants of the storm"
+		"name": "Remnants of the Storm"
 	},
 	"7051": {
 		"commander": {
@@ -139566,7 +139598,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7051",
-		"name": "Hunting in the town"
+		"name": "Hunting in the Town"
 	},
 	"7052": {
 		"commander": {
@@ -139626,7 +139658,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7052",
-		"name": "Time for an expected trap"
+		"name": "Time For An Expected Trap"
 	},
 	"7053": {
 		"commander": {
@@ -139806,7 +139838,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7055",
-		"name": "Light shines upon the city once more"
+		"name": "Light Shines Upon the City Once More"
 	},
 	"7056": {
 		"commander": {
@@ -140226,7 +140258,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7062",
-		"name": "A new Challenge"
+		"name": "A New Challenge"
 	},
 	"7063": {
 		"commander": {
@@ -140526,7 +140558,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7067",
-		"name": "Stop the competition"
+		"name": "Stop the Competition"
 	},
 	"7068": {
 		"commander": {
@@ -140826,7 +140858,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7072",
-		"name": "Avoiding traps"
+		"name": "Avoiding Traps"
 	},
 	"7073": {
 		"commander": {
@@ -141306,7 +141338,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7080",
-		"name": "Rise of the general"
+		"name": "Rise of the General"
 	},
 	"7081": {
 		"commander": {
@@ -141366,7 +141398,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7081",
-		"name": "Destroying alliances"
+		"name": "Destroying Alliances"
 	},
 	"7082": {
 		"commander": {
@@ -141426,7 +141458,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7082",
-		"name": "Agents of chaos"
+		"name": "Agents of Chaos"
 	},
 	"7083": {
 		"commander": {
@@ -141486,7 +141518,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7083",
-		"name": "Total madness"
+		"name": "Total Madness"
 	},
 	"7084": {
 		"commander": {
@@ -141546,7 +141578,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7084",
-		"name": "Freezing scream"
+		"name": "Freezing Scream"
 	},
 	"7085": {
 		"commander": {
@@ -141606,7 +141638,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7085",
-		"name": "Partner at fangs"
+		"name": "Partner at Fangs"
 	},
 	"7086": {
 		"commander": {
@@ -141666,7 +141698,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7086",
-		"name": "Crazy for power"
+		"name": "Crazy for Power"
 	},
 	"7087": {
 		"commander": {
@@ -141726,7 +141758,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7087",
-		"name": "Undead vanguard"
+		"name": "Undead Vanguard"
 	},
 	"7088": {
 		"commander": {
@@ -141786,7 +141818,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7088",
-		"name": "Crimson redemption"
+		"name": "Crimson Redemption"
 	},
 	"7089": {
 		"commander": {
@@ -141846,7 +141878,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7089",
-		"name": "Starting savages engines"
+		"name": "Starting Savages Engines"
 	},
 	"7090": {
 		"commander": {
@@ -141906,7 +141938,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7090",
-		"name": "Naglar chainsawpaw"
+		"name": "Naglar Chainsawpaw"
 	},
 	"7091": {
 		"commander": {
@@ -141966,7 +141998,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7091",
-		"name": "Reign of serenity?"
+		"name": "Reign of Serenity?"
 	},
 	"7092": {
 		"commander": {
@@ -142386,7 +142418,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7098",
-		"name": "Unsettling reports"
+		"name": "Unsettling Reports"
 	},
 	"7099": {
 		"commander": {
@@ -142446,7 +142478,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7099",
-		"name": "Misleading clues?"
+		"name": "Misleading Clues?"
 	},
 	"7100": {
 		"commander": {
@@ -142506,7 +142538,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7100",
-		"name": "Retreating for good"
+		"name": "Retreating for Good"
 	},
 	"7101": {
 		"commander": {
@@ -142566,7 +142598,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7101",
-		"name": "Ambushed by animals?"
+		"name": "Ambushed by Animals?"
 	},
 	"7102": {
 		"commander": {
@@ -142626,7 +142658,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7102",
-		"name": "A disturbing glare"
+		"name": "A Disturbing Glare"
 	},
 	"7103": {
 		"commander": {
@@ -142686,7 +142718,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7103",
-		"name": "A deafening whistle"
+		"name": "A Deafening Whistle"
 	},
 	"7104": {
 		"commander": {
@@ -142746,7 +142778,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7104",
-		"name": "Examine the wreckage"
+		"name": "Examine the Wreckage"
 	},
 	"7105": {
 		"commander": {
@@ -142806,7 +142838,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7105",
-		"name": "As if nothing ever happened"
+		"name": "As If Nothing Ever Happened"
 	},
 	"7106": {
 		"commander": {
@@ -142866,7 +142898,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7106",
-		"name": "No time to waste"
+		"name": "No Time to Waste"
 	},
 	"7107": {
 		"commander": {
@@ -142986,7 +143018,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7108",
-		"name": "An incredible sight"
+		"name": "An Incredible Sight"
 	},
 	"7109": {
 		"commander": {
@@ -143046,7 +143078,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7109",
-		"name": "The calm after the storm"
+		"name": "The Calm After the Storm"
 	},
 	"7110": {
 		"commander": {
@@ -143106,7 +143138,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7110",
-		"name": "Is there any good news?"
+		"name": "Is There Any Good News?"
 	},
 	"7111": {
 		"commander": {
@@ -143166,7 +143198,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7111",
-		"name": "Unconditional help"
+		"name": "Unconditional Help"
 	},
 	"7112": {
 		"commander": {
@@ -143226,7 +143258,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7112",
-		"name": "Leave no stone unturned"
+		"name": "Leave No Stone Unturned"
 	},
 	"7113": {
 		"commander": {
@@ -143286,7 +143318,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7113",
-		"name": "A distressing signal"
+		"name": "A Distressing Signal"
 	},
 	"7114": {
 		"commander": {
@@ -143346,7 +143378,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "7114",
-		"name": "Undercover agenda"
+		"name": "Undercover Agenda"
 	},
 	"7115": {
 		"commander": {
@@ -143406,6 +143438,250 @@ var MISSIONS = {
 			}
 		],
 		"id": "7115",
-		"name": "Was everything an illusion?"
+		"name": "Was Everything an Illusion?"
+	},
+	"7116": {
+		"commander": {
+			"id": "319"
+		},
+		"deck": [
+			{
+				"id": "2048"
+			},
+			{
+				"id": "2048"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "7140"
+			},
+			{
+				"id": "7140"
+			},
+			{
+				"id": "6165"
+			},
+			{
+				"id": "6165"
+			},
+			{
+				"id": "15066",
+				"mastery_level": "2"
+			},
+			{
+				"id": "15066",
+				"mastery_level": "3"
+			},
+			{
+				"id": "16057",
+				"mastery_level": "4"
+			},
+			{
+				"id": "16057",
+				"mastery_level": "5"
+			},
+			{
+				"id": "26129",
+				"mastery_level": "6"
+			},
+			{
+				"id": "26129",
+				"mastery_level": "7"
+			},
+			{
+				"id": "5640",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7116",
+		"name": "Knock Knock"
+	},
+	"7117": {
+		"commander": {
+			"id": "326"
+		},
+		"deck": [
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "1645"
+			},
+			{
+				"id": "11645",
+				"mastery_level": "2"
+			},
+			{
+				"id": "11645",
+				"mastery_level": "3"
+			},
+			{
+				"id": "11645",
+				"mastery_level": "4"
+			},
+			{
+				"id": "11645",
+				"mastery_level": "5"
+			},
+			{
+				"id": "11645",
+				"mastery_level": "6"
+			},
+			{
+				"id": "21645",
+				"mastery_level": "7"
+			},
+			{
+				"id": "21645",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7117",
+		"name": "Beetleton Baby Boom"
+	},
+	"7118": {
+		"commander": {
+			"id": "319"
+		},
+		"deck": [
+			{
+				"id": "2048"
+			},
+			{
+				"id": "2048"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "2210"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "2207"
+			},
+			{
+				"id": "5065"
+			},
+			{
+				"id": "5065"
+			},
+			{
+				"id": "12213",
+				"mastery_level": "2"
+			},
+			{
+				"id": "12213",
+				"mastery_level": "3"
+			},
+			{
+				"id": "12247",
+				"mastery_level": "4"
+			},
+			{
+				"id": "12247",
+				"mastery_level": "5"
+			},
+			{
+				"id": "26129",
+				"mastery_level": "6"
+			},
+			{
+				"id": "26129",
+				"mastery_level": "7"
+			},
+			{
+				"id": "7629",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7118",
+		"name": "Joy to the Bunker"
+	},
+	"7119": {
+		"commander": {
+			"id": "326"
+		},
+		"deck": [
+			{
+				"id": "6231"
+			},
+			{
+				"id": "6231"
+			},
+			{
+				"id": "7312"
+			},
+			{
+				"id": "7312"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "7268"
+			},
+			{
+				"id": "7268"
+			},
+			{
+				"id": "16146",
+				"mastery_level": "2"
+			},
+			{
+				"id": "16146",
+				"mastery_level": "3"
+			},
+			{
+				"id": "17064",
+				"mastery_level": "4"
+			},
+			{
+				"id": "17064",
+				"mastery_level": "5"
+			},
+			{
+				"id": "27158",
+				"mastery_level": "6"
+			},
+			{
+				"id": "27158",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4030",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7119",
+		"name": "We Need to Go Deeper"
 	}
 };
