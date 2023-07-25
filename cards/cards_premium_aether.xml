@@ -8423,12 +8423,16 @@
       <attack>7</attack>
       <health>55</health>
       <skill id="armored" x="6" />
+      <skill id="pierce" x="7" />
+      <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>8</attack>
       <health>56</health>
       <skill id="armored" x="7" />
+      <skill id="pierce" x="7" />
+      <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -17832,6 +17836,8 @@
       <level>4</level>
       <health>27</health>
       <skill id="counter" x="6" />
+      <skill id="legion" x="4" />
+      <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -17904,6 +17910,8 @@
       <level>2</level>
       <health>15</health>
       <skill id="armored" x="3" />
+      <skill id="valor" x="5" />
+      <skill id="protect" x="3" y="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -18221,6 +18229,8 @@
       <level>3</level>
       <attack>10</attack>
       <skill id="armored" x="5" />
+      <skill id="burn" x="4" />
+      <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -34577,6 +34587,8 @@
       <level>5</level>
       <health>44</health>
       <skill id="armored" x="5" />
+      <skill id="legion" x="6" />
+      <skill id="flurry" c="2" />
     </upgrade>
     <upgrade>
       <level>6</level>

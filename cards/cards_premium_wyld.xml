@@ -17823,11 +17823,15 @@
       <level>4</level>
       <attack>12</attack>
       <skill id="protect" x="7" y="13" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>32</health>
       <skill id="protect" x="8" y="13" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -20148,6 +20152,8 @@
       <attack>14</attack>
       <health>32</health>
       <skill id="rally" x="6" y="13" />
+      <skill id="fervor" x="4" y="4" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -26033,7 +26039,7 @@
     <upgrade>
       <level>6</level>
       <attack>9</attack>
-      <skill id="rally" x="3" all="1" y="13" />
+      <skill id="rally" x="4" all="1" y="13" />
       <skill id="heal" x="4" all="1" y="13" />
       <skill id="fervor" x="4" y="13" />
     </upgrade>
@@ -30747,6 +30753,8 @@
       <level>4</level>
       <health>61</health>
       <skill id="armored" x="8" />
+      <skill id="heal" x="6" all="1" />
+      <skill id="protect" x="6" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>

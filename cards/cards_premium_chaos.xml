@@ -1066,6 +1066,8 @@
       <level>2</level>
       <health>18</health>
       <skill id="counter" x="7" />
+      <skill id="leech" x="6" />
+      <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -17800,12 +17802,16 @@
       <level>2</level>
       <health>52</health>
       <skill id="counter" x="8" />
+      <skill id="corrosive" x="7" />
+      <skill id="leech" x="16" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>53</health>
       <attack>17</attack>
       <skill id="counter" x="9" />
+      <skill id="corrosive" x="7" />
+      <skill id="leech" x="16" />
     </upgrade>
     <upgrade>
       <level>4</level>

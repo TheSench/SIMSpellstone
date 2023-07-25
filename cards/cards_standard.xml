@@ -5845,8 +5845,6 @@
     <upgrade>
       <level>3</level>
       <health>10</health>
-      <skill id="poison" x="1" />
-      <skill id="leech" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -10443,7 +10441,9 @@
       <level>2</level>
       <health>25</health>
       <attack>7</attack>
+      <skill id="evade" x="2" />
       <skill id="heal" x="8" y="13" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>

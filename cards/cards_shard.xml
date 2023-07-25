@@ -6865,7 +6865,7 @@
       <level>10</level>
       <attack>11</attack>
       <health>25</health>
-      <skill id="armored" x="8" />
+      <skill id="armored" x="9" />
       <skill id="rally" all="1" x="4" />
       <skill id="daze" x="12" />
     </upgrade>
