@@ -14,6 +14,7 @@ export async function getCommonJs() {
   } else {
     newCommonJs = oldJsFile;
   }
+  return newCommonJs;
 }
 
 async function getCurrentBges() {
