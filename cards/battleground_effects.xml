@@ -1549,6 +1549,48 @@
       <add_skill id="swarm" mult="0.15" base="health" y="13" />
     </effect>
   </battleground>
+  <battleground>
+    <id>168</id>
+    <name>Goblin Civil War</name>
+    <desc>All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 15% + Delay Barrage, Wyld gain 7% + Delay Venom. Void gain Siphon equal to base Attack. Values are based on base health.</desc>
+    <icon>filter_goblin_64</icon>
+    <effect>
+      <add_skill id="armored" mult="0.1" base="health" y="11" />
+      <add_skill id="frost" mult="0.07" base="health" delay="0" yy="1,11" />
+      <add_skill id="frost" mult="0.07" base="health" x="1" delay="1" yy="1,11" />
+      <add_skill id="frost" mult="0.07" base="health" x="2" delay="2" yy="1,11" />
+      <add_skill id="frost" mult="0.07" base="health" x="3" delay="3" yy="1,11" />
+      <add_skill id="frost" mult="0.07" base="health" x="4" delay="4" yy="1,11" />
+      <add_skill id="barrage" mult="0.15" base="health" delay="0" yy="2,11" />
+      <add_skill id="barrage" mult="0.15" base="health" x="1" delay="1" yy="2,11" />
+      <add_skill id="barrage" mult="0.15" base="health" x="2" delay="2" yy="2,11" />
+      <add_skill id="barrage" mult="0.15" base="health" x="3" delay="3" yy="2,11" />
+      <add_skill id="barrage" mult="0.15" base="health" x="4" delay="4" yy="2,11" />
+      <add_skill id="venom" mult="0.07" base="health" delay="0" yy="3,11" />
+      <add_skill id="venom" mult="0.07" base="health" x="1" delay="1" yy="3,11" />
+      <add_skill id="venom" mult="0.07" base="health" x="2" delay="2" yy="3,11" />
+      <add_skill id="venom" mult="0.07" base="health" x="3" delay="3" yy="3,11" />
+      <add_skill id="venom" mult="0.07" base="health" x="4" delay="4" yy="3,11" />
+      <add_skill id="leech" mult="1" base="attack" yy="8,11" />
+      <skill id="displayEffect" trigger="onSkill" yy="2,11" s="barrage">
+        <projectile_effect>
+          <prefab>goblinBombProjectile</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0</delay>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
+          <offset>0</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>goblinBombTarget</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0.75</delay>
+          <duration>1.25</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

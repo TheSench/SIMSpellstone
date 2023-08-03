@@ -30451,7 +30451,7 @@
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>1</attack>
     <health>12</health>
-    <cost>2</cost>
+    <cost>1</cost>
     <rarity>3</rarity>
     <skill id="burn" x="2" />
     <skill id="pierce" x="6" />
@@ -30495,7 +30495,7 @@
     <picture>Insect_Flaming_fly_A</picture>
     <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
-    <attack>2</attack>
+    <attack>1</attack>
     <health>15</health>
     <cost>2</cost>
     <rarity>3</rarity>
@@ -30543,7 +30543,7 @@
     <hidden_until_time>1689872400</hidden_until_time>
     <attack>3</attack>
     <health>18</health>
-    <cost>2</cost>
+    <cost>1</cost>
     <rarity>3</rarity>
     <skill id="burn" x="4" />
     <skill id="pierce" x="12" />

@@ -2311,6 +2311,189 @@ var BATTLEGROUNDS = {
 		"id": "167",
 		"name": "Thriving Swarm"
 	},
+	"168": {
+		"desc": "All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 15% + Delay Barrage, Wyld gain 7% + Delay Venom. Void gain Siphon equal to base Attack. Values are based on base health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.07,
+				"y": "1,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.07,
+				"x": 1,
+				"y": "1,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.07,
+				"x": 2,
+				"y": "1,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.07,
+				"x": 3,
+				"y": "1,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.07,
+				"x": 4,
+				"y": "1,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.15,
+				"y": "2,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.15,
+				"x": 1,
+				"y": "2,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.15,
+				"x": 2,
+				"y": "2,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.15,
+				"x": 3,
+				"y": "2,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.15,
+				"x": 4,
+				"y": "2,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"mult": 0.07,
+				"y": "3,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"mult": 0.07,
+				"x": 1,
+				"y": "3,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"mult": 0.07,
+				"x": 2,
+				"y": "3,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"mult": 0.07,
+				"x": 3,
+				"y": "3,11"
+			},
+			{
+				"base": "health",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "venom",
+				"mult": 0.07,
+				"x": 4,
+				"y": "3,11"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 1,
+				"y": "8,11"
+			}
+		],
+		"id": "168",
+		"name": "Goblin Civil War"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

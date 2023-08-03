@@ -19573,8 +19573,8 @@
     <id>3890</id>
     <type>2</type>
     <order>101</order>
-    <name>When an experiment goes wrong...</name>
-    <desc>Complete the 'When an experiment goes wrong...' campaign on Mastery Level 2.</desc>
+    <name>When An Experiment Goes Wrong...</name>
+    <desc>Complete the 'When An Experiment Goes Wrong...' campaign on Mastery Level 2.</desc>
     <mission_req>7109</mission_req>
     <locked_start_time>1688662800</locked_start_time>
     <!-- Thursday, 6 July 2023 17:00:00 -->
@@ -19590,12 +19590,12 @@
     <id>3891</id>
     <type>2</type>
     <order>101</order>
-    <name>When an experiment goes wrong...</name>
-    <desc>Complete the 'When an experiment goes wrong...' campaign on Mastery Level 4.</desc>
+    <name>When An Experiment Goes Wrong...</name>
+    <desc>Complete the 'When An Experiment Goes Wrong...' campaign on Mastery Level 4.</desc>
     <mission_req>7109</mission_req>
     <locked_start_time>1688662800</locked_start_time>
     <!-- Thursday, 6 July 2023 17:00:00 -->
-    <achievement_req>3883</achievement_req>
+    <achievement_req>3890</achievement_req>
     <req>
       <campaign>1350</campaign>
       <level>4</level>
@@ -19609,12 +19609,12 @@
     <id>3892</id>
     <type>2</type>
     <order>101</order>
-    <name>When an experiment goes wrong...</name>
-    <desc>Complete the 'When an experiment goes wrong...' campaign on Mastery Level 6.</desc>
+    <name>When An Experiment Goes Wrong...</name>
+    <desc>Complete the 'When An Experiment Goes Wrong...' campaign on Mastery Level 6.</desc>
     <mission_req>7109</mission_req>
     <locked_start_time>1688662800</locked_start_time>
     <!-- Thursday, 6 July 2023 17:00:00 -->
-    <achievement_req>3884</achievement_req>
+    <achievement_req>3891</achievement_req>
     <req>
       <campaign>1350</campaign>
       <level>6</level>
@@ -19622,6 +19622,201 @@
     <reward>
       <sp>60</sp>
       <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 105 - insects BGE - Node 1 -->
+  <achievement>
+    <id>3893</id>
+    <!-- Make sure id # is +1 from prev quest & is an unused id# -->
+    <type>2</type>
+    <order>101</order>
+    <name>A Flight in the Dark</name>
+    <!-- name found in campaign.xml -->
+    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 1.</desc>
+    <mission_req>7121</mission_req>
+    <!-- last mission id found in campaign.xml -->
+    <locked_start_time>1689872400</locked_start_time>
+    <!--  Thursday, July 20, 2023 17:00:00, campaign.xml -->
+    <req>
+      <campaign>1351</campaign>
+      <!-- campaign.xml seek id#  -->
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3092" number="50" />
+      <!-- Expedition Item, see items_dsvn3j.xml -->
+      <event_points id="7101" number="50" />
+      <!-- Expedition ID found event_timeline_expeditions.xml -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3894</id>
+    <!-- Make sure id # is +1 from prev quest & is an unused id# -->
+    <type>2</type>
+    <order>101</order>
+    <name>A Flight in the Dark</name>
+    <!-- From campaign.xml -->
+    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 2.</desc>
+    <mission_req>7121</mission_req>
+    <!-- last mission -A flight in the dark- in campaign.xml -->
+    <locked_start_time>1689872400</locked_start_time>
+    <!--  Thursday, July 20, 2023 17:00:00, campaign.xml -->
+    <req>
+      <achievement_req>3893</achievement_req>
+      <!-- requires prev quest to be completed -->
+      <campaign>1351</campaign>
+      <level>2</level>
+      <!-- quest requires level 2 completions of flight in dark -->
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3895</id>
+    <!-- Make sure id # is +1 from prev quest & is an unused id# -->
+    <type>2</type>
+    <order>101</order>
+    <name>A Flight in the Dark</name>
+    <!-- from campaign.xml -->
+    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 4.</desc>
+    <mission_req>7121</mission_req>
+    <locked_start_time>1689872400</locked_start_time>
+    <!--  Thursday, July 20, 2023 17:00:00, campaign.xml -->
+    <achievement_req>3894</achievement_req>
+    <!-- requires prev quest to be completed -->
+    <req>
+      <campaign>1351</campaign>
+      <!-- Requires lv 4 completion of A Flight in the dark -->
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3896</id>
+    <!-- Make sure id # is +1 from prev quest & is an unused id# -->
+    <type>2</type>
+    <order>101</order>
+    <name>A Flight in the Dark</name>
+    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 6.</desc>
+    <mission_req>7121</mission_req>
+    <locked_start_time>1689872400</locked_start_time>
+    <!--  Thursday, July 20, 2023 17:00:00, campaign.xml -->
+    <achievement_req>3895</achievement_req>
+    <!-- req prev quest to be completed -->
+    <req>
+      <campaign>1351</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Wizard Event 105 - Insects BGE - Node 2 -->
+  <achievement>
+    <id>3897</id>
+    <!-- Make sure id # is +1 from prev quest & is an unused id# -->
+    <type>2</type>
+    <order>101</order>
+    <name>The Healer's Prison</name>
+    <!-- name found in campaign.xml   -->
+    <desc>Complete the 'The Healer's Prison' campaign on Mastery Level 2.</desc>
+    <mission_req>7127</mission_req>
+    <!-- last mission id found in campaign.xml -->
+    <locked_start_time>1691082000</locked_start_time>
+    <!--  Thursday, August 3, 2023 17:00:00, campaign.xml -->
+    <req>
+      <campaign>1352</campaign>
+      <!-- campaign.xml seek id#  -->
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3898</id>
+    <!-- Make sure id # is +1 from prev quest & is an unused id# -->
+    <type>2</type>
+    <order>101</order>
+    <name>The Healer's Prison</name>
+    <!-- name found in campaign.xml   -->
+    <desc>Complete the 'The Healer's Prison' campaign on Mastery Level 4.</desc>
+    <mission_req>7127</mission_req>
+    <locked_start_time>1691082000</locked_start_time>
+    <!--  Thursday, August 3, 2023 17:00:00, found in campaigns.xml -->
+    <achievement_req>3897</achievement_req>
+    <!-- requires prev achievement to be finished -->
+    <req>
+      <campaign>1352</campaign>
+      <!-- campaign id from campaign.xml -->
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3899</id>
+    <!-- Make sure id # is +1 from prev quest & is an unused id# -->
+    <type>2</type>
+    <order>101</order>
+    <name>The Healer's Prison</name>
+    <!-- name found in campaign.xml   -->
+    <desc>Complete the 'The Healer's Prison' campaign on Mastery Level 6.</desc>
+    <mission_req>7127</mission_req>
+    <!-- req last mission id# found in campaign.xml -->
+    <locked_start_time>1691082000</locked_start_time>
+    <!--  Thursday, August 3, 2023 17:00:00, found in campaigns.xml -->
+    <achievement_req>3898</achievement_req>
+    <!-- req prev achievement to be finished -->
+    <req>
+      <campaign>1352</campaign>
+      <!-- campaign.xml -->
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- arcane Dust  -->
+    </reward>
+  </achievement>
+  <!-- END Event Quests  -->
+  <!-- Mastery lev 7 on all basic campaign + 2 new nodes + existing boss node -->
+  <achievement>
+    <!-- E105: Distorted Beetleton -->
+    <id>4059</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Distorted Beetleton</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Distorted Beetleton.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7127</mission_req>
+    <req>
+      <campaign>1207</campaign>
+      <!-- Return to Beetleton, Pink1 -->
+      <campaign>1208</campaign>
+      <!-- The Sage's Path, Pink2 -->
+      <campaign>1209</campaign>
+      <!-- Memories Best Left Forgotten, Boss Node -->
+      <campaign>1210</campaign>
+      <!-- Priority Differences, Pink3 -->
+      <campaign>1211</campaign>
+      <!-- A Dream's Rebirth, Pink4 -->
+      <campaign>1351</campaign>
+      <!-- A Flight in the Dark, Gen2 node 1 -->
+      <campaign>1352</campaign>
+      <!-- The Healer's Prison, Gen2 Node 2 -->
+      <level>7</level>
+      <!-- mastery level 7 -->
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion -->
     </reward>
   </achievement>
   <!-- END Event Quests  -->
