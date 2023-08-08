@@ -17923,6 +17923,8 @@
       <level>4</level>
       <health>16</health>
       <skill id="armored" x="4" />
+      <skill id="valor" x="5" />
+      <skill id="protect" x="3" y="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -29210,7 +29212,7 @@
     <rarity>4</rarity>
     <skill id="valor" x="2" />
     <skill id="protect" x="1" all="1" y="12" />
-    <skill id="frost" />
+    <skill id="frost" x="1" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>3000</set>
@@ -29226,7 +29228,7 @@
       <level>4</level>
       <skill id="valor" x="3" />
       <skill id="protect" x="1" all="1" y="12" />
-      <skill id="frost" />
+      <skill id="frost" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -29236,7 +29238,7 @@
       <level>6</level>
       <skill id="valor" x="4" />
       <skill id="protect" x="1" all="1" y="12" />
-      <skill id="frost" />
+      <skill id="frost" x="1" />
     </upgrade>
   </unit>
   <unit>
@@ -29253,7 +29255,7 @@
     <rarity>4</rarity>
     <skill id="valor" x="4" />
     <skill id="protect" x="1" all="1" y="12" />
-    <skill id="frost" />
+    <skill id="frost" x="1" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>3000</set>
@@ -29261,7 +29263,7 @@
       <level>2</level>
       <skill id="valor" x="4" />
       <skill id="protect" x="2" all="1" y="12" />
-      <skill id="frost" />
+      <skill id="frost" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>

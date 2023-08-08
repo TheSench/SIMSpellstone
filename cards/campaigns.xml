@@ -12611,7 +12611,7 @@
     <locked_start_time>1691082000</locked_start_time>
     <!--  Thursday, August 3, 2023 17:00:00 -->
     <location_id>22</location_id>
-    <x>600</x>
+    <x>650</x>
     <y>500</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
@@ -13738,4 +13738,46 @@
     <find_item id="3113" drop_per_energy=".6" />
   </campaign>
   <!-- LBN Darkassan Mecha event 104 END -->
+  <!-- Event 105: Insects ComDev Lightning Node-->
+  <campaign>
+    <id>4018</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Nophora's Counterblast</name>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <location_id>22</location_id>
+    <!-- Distorted Beetleton -->
+    <x>790</x>
+    <!-- left right -->
+    <y>480</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7128</mission_id>
+      <mission_id>7129</mission_id>
+      <mission_id>7130</mission_id>
+      <mission_id>7131</mission_id>
+      <mission_id>7132</mission_id>
+      <mission_id>7133</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="516" />
+      <!-- Thank You crate (energy and bounty refill) -->
+      <card level="2" id="22048" />
+      <!-- Sandroach -->
+      <card level="3" id="22049" />
+      <!-- Duplicipede -->
+      <card level="4" id="2043" />
+      <!-- Eos -->
+      <card level="5" id="2043" />
+      <!-- Eos -->
+      <item level="6" id="104073" number="100" />
+      <!-- Helvius -->
+      <item level="7" id="2" number="120" />
+      <!-- Shard equivalent of 2 keys -->
+    </rewards>
+    <find_item id="3092" drop_per_energy="1.8" />
+    <!-- Matches the rate of the final in the map node -->
+  </campaign>
 </root>

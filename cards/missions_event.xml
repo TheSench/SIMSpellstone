@@ -65161,4 +65161,225 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 105: Insects ComDev Lightning Node-->
+  <mission>
+    <id>7128</id>
+    <name>A Rock and a Dark Place</name>
+    <energy>8</energy>
+    <desc>Beyond Helvius's sanctum lies a seemingly endless maze of cave passages. Agatha escorts you and Dilbert through the darkness, guided only by her memory. You ask yourself if it's even possible to escape.</desc>
+    <commander id="482" />
+    <!-- Wounded Nophora -->
+    <deck>
+      <card id="6622" />
+      <!-- Nophora -->
+      <card id="7065" />
+      <!-- Furious Swarm -->
+      <card id="7065" />
+      <!-- Furious Swarm -->
+      <card id="2246" />
+      <!-- Xaggavea -->
+      <card id="2246" />
+      <!-- Xaggavea -->
+      <card id="2099" />
+      <!-- Regemage -->
+      <card id="2099" />
+      <!-- Regemage -->
+      <card id="2099" />
+      <!-- Regemage -->
+      <card id="2099" />
+      <!-- Regemage -->
+      <card id="6129" mastery_level="2" />
+      <!-- Scorgon -->
+      <card id="6129" mastery_level="3" />
+      <card id="6129" mastery_level="4" />
+      <card id="6129" mastery_level="5" />
+      <card id="6129" mastery_level="6" />
+      <card id="6129" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7129</id>
+    <name>Weapons, Warnings, Worms</name>
+    <energy>8</energy>
+    <desc>The deeper you travel, the more you spot the discarded weapons of fallen soldiers. Agatha's wings hesitate. She's reluctant to fly any farther, since she can smell something she calls a Phomoran Ogerworm.</desc>
+    <commander id="482" />
+    <!-- Wounded Nophora -->
+    <deck>
+      <card id="6622" />
+      <!-- Nophora -->
+      <card id="7199" />
+      <!-- Celesti -->
+      <card id="7199" />
+      <!-- Celesti -->
+      <card id="5234" />
+      <!-- Stratosquall -->
+      <card id="5234" />
+      <!-- Stratosquall -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="2051" />
+      <!-- Dune Slammer -->
+      <card id="2051" />
+      <!-- Dune Slammer -->
+      <card id="1645" mastery_level="2" />
+      <!-- Sundermarr -->
+      <card id="1645" mastery_level="3" />
+      <card id="1645" mastery_level="4" />
+      <card id="1645" mastery_level="5" />
+      <card id="1645" mastery_level="6" />
+      <card id="1645" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7130</id>
+    <name>I've Just Been in This Place Before</name>
+    <energy>8</energy>
+    <desc>Agatha describes a massive, nearly immortal beast with a sharp mind and an aggressive temperament. You can't help but think of Nophora, a foe so fearsome that you only barely survived it when a cave-in saved you...</desc>
+    <commander id="482" />
+    <!-- Wounded Nophora -->
+    <deck>
+      <card id="6622" />
+      <!-- Nophora -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="5266" />
+      <!-- Formiant Guard -->
+      <card id="5266" />
+      <!-- Formiant Guard -->
+      <card id="2100" />
+      <!-- Kheptronos -->
+      <card id="2100" />
+      <!-- Kheptronos -->
+      <card id="5200" />
+      <!-- Clyx -->
+      <card id="5200" />
+      <!-- Clyx -->
+      <card id="2233" mastery_level="2" />
+      <!-- Aikido Master -->
+      <card id="2233" mastery_level="3" />
+      <card id="2233" mastery_level="4" />
+      <card id="2233" mastery_level="5" />
+      <card id="2233" mastery_level="6" />
+      <card id="2233" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7131</id>
+    <name>Bold and Boulder</name>
+    <energy>8</energy>
+    <desc>Before you waits a boulder with fourteen writhing legs. You take a hesitant step closer, and it crumbles to pieces! Nophora emerges from underneath, its red eyes full of hate. Orange poison leaks from its body.</desc>
+    <commander id="482" />
+    <!-- Wounded Nophora -->
+    <deck>
+      <card id="6622" />
+      <!-- Nophora -->
+      <card id="6008" />
+      <!-- Thousand Arm Hellion -->
+      <card id="5196" />
+      <!-- Millimecha -->
+      <card id="6193" />
+      <!-- Scorpio Striker -->
+      <card id="6304" />
+      <!-- Beekeeper -->
+      <card id="5233" />
+      <!-- Obliterator -->
+      <card id="6064" />
+      <!-- Dreaded Quake -->
+      <card id="7300" />
+      <!-- Honey Thief -->
+      <card id="6229" />
+      <!-- Killapede -->
+      <card id="7235" mastery_level="2" />
+      <!-- Sea Shaman -->
+      <card id="7235" mastery_level="3" />
+      <card id="7235" mastery_level="4" />
+      <card id="7235" mastery_level="5" />
+      <card id="7235" mastery_level="6" />
+      <card id="7235" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>7132</id>
+    <name>Phomo-Rollercoaster Ride</name>
+    <energy>8</energy>
+    <desc>The worm lunges at you, but its injuries have made its movements slow and telegraphed. Leaping to one side, you manage to climb onto Nophora's body. It screams. You're forced to hold tight as it goes on a blind rampage!</desc>
+    <commander id="482" />
+    <!-- Wounded Nophora -->
+    <deck>
+      <card id="6622" />
+      <!-- Nophora -->
+      <card id="5606" />
+      <!-- Volvel -->
+      <card id="5645" />
+      <!-- Nano Swarm -->
+      <card id="7619" />
+      <!-- Rima -->
+      <card id="4060" />
+      <!-- Yaritza -->
+      <card id="7629" />
+      <!-- Tilly -->
+      <card id="5611" />
+      <!-- Zhu-Lath -->
+      <card id="5622" />
+      <!-- Pollutarax -->
+      <card id="6623" />
+      <!-- Mortas -->
+      <card id="6632" mastery_level="2" />
+      <!-- Nuri and Nera -->
+      <card id="7609" mastery_level="3" />
+      <!-- Wrom -->
+      <card id="6601" mastery_level="4" />
+      <!-- Elytragor -->
+      <card id="6603" mastery_level="5" />
+      <!-- Kabuto -->
+      <card id="5646" mastery_level="6" />
+      <!-- Ungoliant -->
+      <card id="7628" mastery_level="7" />
+      <!-- Frazzil -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7133</id>
+    <name>The Last Wriggle</name>
+    <energy>8</energy>
+    <desc>You hold onto the tiny spikes covering Nophora's segments with a steely grip. They act as footholds, even as they dig into your body. At last, you climb to the top of Nophora's head... and plunge your blade deep into its eye!</desc>
+    <commander id="482" />
+    <!-- Wounded Nophora -->
+    <deck>
+      <card id="6622" />
+      <!-- Nophora -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" />
+      <!-- Deathmoth -->
+      <card id="6232" mastery_level="2" />
+      <!-- Deathmoth -->
+      <card id="6232" mastery_level="3" />
+      <!-- Deathmoth -->
+      <card id="6232" mastery_level="4" />
+      <!-- Deathmoth -->
+      <card id="6232" mastery_level="5" />
+      <!-- Deathmoth -->
+      <card id="6232" mastery_level="6" />
+      <!-- Deathmoth -->
+      <card id="6232" mastery_level="7" />
+      <!-- Deathmoth -->
+    </deck>
+  </mission>
 </root>

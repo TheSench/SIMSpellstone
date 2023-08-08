@@ -1043,6 +1043,7 @@
       <attack>7</attack>
       <skill id="counter" x="5" />
       <skill id="leech" x="5" />
+      <skill id="flurry" c="3" />
     </upgrade>
   </unit>
   <unit>

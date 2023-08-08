@@ -6794,6 +6794,22 @@ var CAMPAIGNS = {
 			"7115"
 		],
 		"name": "Lightning Darkassan Trial"
+	},
+	"4018": {
+		"id": "4018",
+		"items": {
+			"3092": 1.8
+		},
+		"location_id": "22",
+		"missions": [
+			"7128",
+			"7129",
+			"7130",
+			"7131",
+			"7132",
+			"7133"
+		],
+		"name": "Lightning Nophora's Counterblast"
 	}
 };
 var MISSIONS = {
@@ -144177,5 +144193,365 @@ var MISSIONS = {
 		],
 		"id": "7127",
 		"name": "Myth Warden's Despair"
+	},
+	"7128": {
+		"commander": {
+			"id": "482"
+		},
+		"deck": [
+			{
+				"id": "6622"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "7065"
+			},
+			{
+				"id": "2246"
+			},
+			{
+				"id": "2246"
+			},
+			{
+				"id": "2099"
+			},
+			{
+				"id": "2099"
+			},
+			{
+				"id": "2099"
+			},
+			{
+				"id": "2099"
+			},
+			{
+				"id": "6129",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6129",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6129",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6129",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6129",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6129",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7128",
+		"name": "A Rock and a Dark Place"
+	},
+	"7129": {
+		"commander": {
+			"id": "482"
+		},
+		"deck": [
+			{
+				"id": "6622"
+			},
+			{
+				"id": "7199"
+			},
+			{
+				"id": "7199"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "5234"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "2051"
+			},
+			{
+				"id": "2051"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1645",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7129",
+		"name": "Weapons, Warnings, Worms"
+	},
+	"7130": {
+		"commander": {
+			"id": "482"
+		},
+		"deck": [
+			{
+				"id": "6622"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "5266"
+			},
+			{
+				"id": "5266"
+			},
+			{
+				"id": "2100"
+			},
+			{
+				"id": "2100"
+			},
+			{
+				"id": "5200"
+			},
+			{
+				"id": "5200"
+			},
+			{
+				"id": "2233",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2233",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2233",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2233",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2233",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2233",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7130",
+		"name": "I've Just Been in This Place Before"
+	},
+	"7131": {
+		"commander": {
+			"id": "482"
+		},
+		"deck": [
+			{
+				"id": "6622"
+			},
+			{
+				"id": "6008"
+			},
+			{
+				"id": "5196"
+			},
+			{
+				"id": "6193"
+			},
+			{
+				"id": "6304"
+			},
+			{
+				"id": "5233"
+			},
+			{
+				"id": "6064"
+			},
+			{
+				"id": "7300"
+			},
+			{
+				"id": "6229"
+			},
+			{
+				"id": "7235",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7235",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7235",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7235",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7235",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7235",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7131",
+		"name": "Bold and Boulder"
+	},
+	"7132": {
+		"commander": {
+			"id": "482"
+		},
+		"deck": [
+			{
+				"id": "6622"
+			},
+			{
+				"id": "5606"
+			},
+			{
+				"id": "5645"
+			},
+			{
+				"id": "7619"
+			},
+			{
+				"id": "4060"
+			},
+			{
+				"id": "7629"
+			},
+			{
+				"id": "5611"
+			},
+			{
+				"id": "5622"
+			},
+			{
+				"id": "6623"
+			},
+			{
+				"id": "6632",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7609",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6601",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6603",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5646",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7628",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7132",
+		"name": "Phomo-Rollercoaster Ride"
+	},
+	"7133": {
+		"commander": {
+			"id": "482"
+		},
+		"deck": [
+			{
+				"id": "6622"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7133",
+		"name": "The Last Wriggle"
 	}
 };
