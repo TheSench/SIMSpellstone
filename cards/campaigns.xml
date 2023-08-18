@@ -12672,14 +12672,14 @@
       <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
       <card level="2" id="512" number="2" />
       <!-- Arcane Deposit -->
-      <item level="3" id="3200" />
-      <!-- New Random Goblin Reward Epic Choice -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
       <card level="4" id="2064" number="2" />
       <!-- Tome Thief Reward Epic -->
       <card level="5" id="2100" number="2" />
       <!-- Kheptronos Reward Legendary -->
-      <item level="6" id="3200" />
-      <!-- New Random Goblin Reward Epic Choice -->
+      <card level="6" id="511" />
+      <!-- Arcane Ore -->
       <item level="7" id="2700" number="150" />
       <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
     </rewards>
@@ -12716,14 +12716,14 @@
       <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
       <card level="2" id="512" number="2" />
       <!-- Arcane Deposit -->
-      <item level="3" id="3200" />
-      <!-- New Random Goblin Reward Epic Choice -->
+      <card level="3" id="2100" />
+      <!-- Kheptronos Reward Legendary -->
       <card level="4" id="2064" number="2" />
       <!-- Tome Thief Reward Epic -->
       <card level="5" id="2100" number="2" />
       <!-- Kheptronos Reward Legendary -->
-      <item level="6" id="3200" />
-      <!-- New Random Goblin Reward Epic Choice -->
+      <card level="6" id="2100" />
+      <!-- Kheptronos Reward Legendary -->
       <item level="7" id="2700" number="150" />
       <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
     </rewards>
@@ -12743,8 +12743,6 @@
     <name>Lightning Boss Gobtoh</name>
     <icon id="energy_refill" bundle="30" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="1354" level="1" />
-    <!-- Require main story nodes in event -->
     <location_id>30</location_id>
     <!-- From map_config.xml -->
     <x>700</x>
@@ -12763,10 +12761,10 @@
     <rewards>
       <item level="1" id="516" />
       <!-- Thank You crate (energy and bounty refill) -->
-      <item level="2" id="3200" />
-      <!-- New Random Goblin Reward Epic Choice -->
-      <item level="3" id="3200" />
-      <!-- New Random Goblin Reward Epic Choice -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
       <item level="4" id="104074" number="25" />
       <!-- Sivun -->
       <item level="5" id="104074" number="75" />
@@ -13299,7 +13297,6 @@
     <name>Classic Lightning Vulcanos</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13336,7 +13333,6 @@
     <name>Classic Lightning Alyel</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13373,7 +13369,6 @@
     <name>Classic Lightning Ashanti</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13410,7 +13405,6 @@
     <name>Classic Lightning Nophora</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13447,7 +13441,6 @@
     <name>Classic Lightning Llorona</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13484,7 +13477,6 @@
     <name>Classic Lightning Caesar</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13521,7 +13513,6 @@
     <name>Classic Lightning Remi</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13558,7 +13549,6 @@
     <name>Classic Lightning Darkassan</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13595,7 +13585,6 @@
     <name>Classic Lightning Lerna</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13632,7 +13621,6 @@
     <name>Classic Lightning Krampus</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13669,7 +13657,6 @@
     <name>Classic Lightning Allies</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13706,7 +13693,6 @@
     <name>Classic Lightning Nophora's Return</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13743,7 +13729,6 @@
     <name>Classic Lightning Vulcanos' Payback</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13780,7 +13765,6 @@
     <name>Classic Lightning Caesar's Return</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13819,7 +13803,6 @@
     <!-- HERE -->
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13868,7 +13851,6 @@
     <!-- HERE -->
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13915,7 +13897,6 @@
     <name>Classic Lightning Darkassan's Trial</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13952,7 +13933,6 @@
     <name>Classic Lightning Nophora's Counterblast</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <campaign_req id="36" level="1" />
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
