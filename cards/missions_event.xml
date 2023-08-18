@@ -57551,10 +57551,11 @@
       <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
     </deck>
   </mission>
+  <!-- Event 89: Alyel Lightning Node-->
   <mission>
     <id>6825</id>
     <name>A Challenger Rises</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Look who comes around, another filthy adventurer who believes they can defeat me. I would like to see you try.</desc>
     <commander id="469" />
     <deck>
@@ -57578,7 +57579,7 @@
   <mission>
     <id>6826</id>
     <name>Stronger Than You Look</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You survived huh? I see you are not as weak as you look. Although to be fair, I was only just getting started.</desc>
     <commander id="469" />
     <deck>
@@ -57602,7 +57603,7 @@
   <mission>
     <id>6827</id>
     <name>Wall of Pain</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>I have had enough of you already. I have unchained a little surprise.</desc>
     <commander id="469" />
     <deck>
@@ -57626,7 +57627,7 @@
   <mission>
     <id>6828</id>
     <name>One Day I Shall Return</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Leave while you still can, adventurer, I have been expelled from my home once and I will not let it happen again.</desc>
     <commander id="469" />
     <deck>
@@ -57650,7 +57651,7 @@
   <mission>
     <id>6829</id>
     <name>Birthright</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>It was my chaotic nature together with my sister's betrayal that made me lose my birthright. Yet it is also that same nature makes me stronger than her… and you.</desc>
     <commander id="469" />
     <deck>
@@ -57674,7 +57675,7 @@
   <mission>
     <id>6830</id>
     <name>Rush of Fury</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>I know to acknowledge a good warrior when I see one. Although to prove yourself worthy, you must defeat the rush of fury.</desc>
     <commander id="469" />
     <deck>
@@ -57695,6 +57696,7 @@
       <card id="5031" mastery_level="7" name="Icelane Valkyrie" />
     </deck>
   </mission>
+  <!-- END Alyel Lightning Node-->
   <mission>
     <id>6831</id>
     <name>Freezing Frigore</name>
@@ -57983,10 +57985,11 @@
       <card id="2068" mastery_level="7" name="Whitesail Wyvern" />
     </deck>
   </mission>
+  <!-- Event 90: Ashanti Lightning Node-->
   <mission>
     <id>6843</id>
     <name>Go Time</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Word reaches you that Ashanti is breaking out from prison. His avian allies have come from all around to aid him. Fortunately, Auron’s forces are ready to assist you in a counter offensive. </desc>
     <commander id="471" />
     <deck>
@@ -58009,8 +58012,8 @@
   </mission>
   <mission>
     <id>6844</id>
-    <name>It&apos;s Getting Cold Out Here</name>
-    <energy>18</energy>
+    <name>It's Getting Cold Out Here</name>
+    <energy>7</energy>
     <desc>You stand outside and you see mayhem all around. You decide to raid the prison before any more harm can be done. Unfortunately, the cold weather is slowing you down and Ashanti is taking advantage of this.</desc>
     <commander id="471" />
     <deck>
@@ -58034,8 +58037,8 @@
   <mission>
     <id>6845</id>
     <name>Enemy at the Gates</name>
-    <energy>18</energy>
-    <desc>Even though Ashanti&apos;s forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
+    <energy>7</energy>
+    <desc>Even though Ashanti's forces make their best efforts to stop you, it is not enough. You manage to arrive at the gate and gather enough strength to push through his outer defenses.</desc>
     <commander id="471" />
     <deck>
       <card id="8102" name="Crimsonwing's Reach" />
@@ -58057,8 +58060,8 @@
   </mission>
   <mission>
     <id>6846</id>
-    <name>Ashanti&apos;s Finest</name>
-    <energy>18</energy>
+    <name>Ashanti's Finest</name>
+    <energy>7</energy>
     <desc>After defeating most of his army, you rush inside and find him surrounded by his finest allies. All of them are fast and deadly assassins ready to take you down. You order Auron’s Elites to take down the assassins while you chase after Ashanti himself.</desc>
     <commander id="471" />
     <deck>
@@ -58082,7 +58085,7 @@
   <mission>
     <id>6847</id>
     <name>The Art of the Deal</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>After cornering Ashanti and realizing that there is now way out of this without a blood bath, you decide to offer him a deal. You offer to look the other way while he escapes in exchange for information on the frog who sent him.</desc>
     <commander id="471" />
     <deck>
@@ -58106,7 +58109,7 @@
   <mission>
     <id>6848</id>
     <name>Interesting Information</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Ashanti accepts your deal. He reveals that the contractor was no frog, even though the creature's height might have been similar to that of a frog. As he turns towards a window to conclude his escape, he warns you that this whole plot is probably bigger than it seems.</desc>
     <commander id="471" />
     <deck>
@@ -58127,6 +58130,7 @@
       <card id="4048" mastery_level="7" name="Sgt. Clockoo" />
     </deck>
   </mission>
+  <!-- END Ashanti Lightning Node-->
   <mission>
     <id>6849</id>
     <name>Meet and Greet</name>
@@ -58415,10 +58419,11 @@
       <card id="1645" mastery_level="7" name="Sundermarr" />
     </deck>
   </mission>
+  <!-- Event 91: Nophora Lightning Node-->
   <mission>
     <id>6861</id>
     <name>Returning for Riches</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You decide to go back into the dark caves of Forgotten Island in order to retrieve some of the expensive items you saw lying around the worm's cave.</desc>
     <commander id="472" />
     <deck>
@@ -58442,7 +58447,7 @@
   <mission>
     <id>6862</id>
     <name>Wrong Neighborhood</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>While walking into the cave you start hearing crawling all around you. The fastest of the worm's minions have already caught your scent and they start to attack.</desc>
     <commander id="472" />
     <deck>
@@ -58466,8 +58471,8 @@
   <mission>
     <id>6863</id>
     <name>Here Come the Big Ones</name>
-    <energy>18</energy>
-    <desc>The smaller insects have been defeated, unfortunately, the insects that probably feed on the  ones you just defeated have started to arrive.</desc>
+    <energy>7</energy>
+    <desc>The smaller insects have been defeated, unfortunately, the insects that probably feed on the ones you just defeated have started to arrive.</desc>
     <commander id="472" />
     <deck>
       <card id="7295" name="Crystal Spider" />
@@ -58490,7 +58495,7 @@
   <mission>
     <id>6864</id>
     <name>Nophora</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>After you defeat the insects, you reach the lair. There are weapons, gold and wealth as far as the eye can see. The worm's disembodied voice can be heard and it's telling you to leave before it's too late.</desc>
     <commander id="472" />
     <deck>
@@ -58514,7 +58519,7 @@
   <mission>
     <id>6865</id>
     <name>Standing your Ground</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>The worm jumps out of a pile of weapons and heads straight towards you. Its attack seems very slow and you manage to quickly strike it. You think that it will be an easy fight only to realize it has healed itself in a matter of seconds.</desc>
     <commander id="472" />
     <deck>
@@ -58538,7 +58543,7 @@
   <mission>
     <id>6866</id>
     <name>The Escape</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Realizing that you won't be able to defeat it, you decide to grab as much loot as possible and head out while you still can. While heading out, you can still hear the worm chasing after you, which makes you run even faster!</desc>
     <commander id="472" />
     <deck>
@@ -58559,6 +58564,7 @@
       <card id="6603" mastery_level="7" name="Kabuto" />
     </deck>
   </mission>
+  <!-- END Nophora Lightning Node-->
   <mission>
     <id>6867</id>
     <name>Boots on the Ground</name>
@@ -58847,10 +58853,11 @@
       <card id="8075" mastery_level="7" name="Vorpal Magnate" />
     </deck>
   </mission>
+  <!-- Event 92: Llorona Lightning Node-->
   <mission>
     <id>6879</id>
     <name>Ghost Hunters</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Local residents of Duskwillow have asked for your assistance. They want you to get rid of a specter that has been haunting them.</desc>
     <commander id="473" />
     <deck>
@@ -58874,7 +58881,7 @@
   <mission>
     <id>6880</id>
     <name>A Cry for Help</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You decide to wait until midnight, when the specter is supposed to come out. You start to roam the town when you suddenly hear screaming.</desc>
     <commander id="473" />
     <deck>
@@ -58898,7 +58905,7 @@
   <mission>
     <id>6881</id>
     <name>A Swing and a Miss</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>After rushing towards the screaming, you find the specter. It seems to be chasing after some goblin children. You take a swing at the specter but it seems to have done no damage at all.</desc>
     <commander id="473" />
     <deck>
@@ -58922,7 +58929,7 @@
   <mission>
     <id>6882</id>
     <name>Slippery Specter</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You are having a hard time dealing damage to the specter. She seems to anticipate all of your moves before you can even make them.</desc>
     <commander id="473" />
     <deck>
@@ -58941,12 +58948,22 @@
       <card id="2116" mastery_level="5" name="Messina's Choice" />
       <card id="6232" mastery_level="6" name="Firetouch Deathmoth" />
       <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
+      <card id="4020" mastery_level="7" name="Sound of Death" />
     </deck>
   </mission>
   <mission>
     <id>6883</id>
     <name>Backup</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You manage to take her down. Unfortunately, this seems to have only been the beginning. She rises again with a horde of undead creatures spawning all around her. It's time to put her down for good.</desc>
     <commander id="473" />
     <deck>
@@ -58970,7 +58987,7 @@
   <mission>
     <id>6884</id>
     <name>My Job Here is Done</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You have defeated her once again. She seems to fade away, taking all of the undead horde with her. The townsfolk of Duskwillow can finally rest assured that you got rid of the curse she had on them. Or have you?</desc>
     <commander id="473" />
     <deck>
@@ -58991,6 +59008,7 @@
       <card id="5627" mastery_level="7" name="Drarm, the Soulbinder" />
     </deck>
   </mission>
+  <!-- END Llorona Lightning Node-->
   <mission>
     <id>6885</id>
     <name>The Message</name>
@@ -59279,10 +59297,11 @@
       <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
     </deck>
   </mission>
+  <!-- Event 93: Caesar Lightning Node-->
   <mission>
     <id>6897</id>
     <name>Interrogation</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Caesar was captured and sent into a cell deep within Skyhaven. You have decided to head there and interrogate the mercenary commander.</desc>
     <commander id="474" />
     <deck>
@@ -59306,7 +59325,7 @@
   <mission>
     <id>6898</id>
     <name>Maniac</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Caesar is being held in an ice cell, due to it being his weakness. He seems out of his mind and babbling nonsense. You get closer to hear what the frog is saying, when all of a sudden Caesar bites into you with his sharp teeth.</desc>
     <commander id="474" />
     <deck>
@@ -59330,7 +59349,7 @@
   <mission>
     <id>6899</id>
     <name>A Spark was All he Needed</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>A fully armored angel comes in to help you. The angel manages to use its chain to trap Caesar. Unfortunately, the chains create the sparks that he needs in order to scorch the entire cell and free himself from the ice that traps him.</desc>
     <commander id="474" />
     <deck>
@@ -59354,7 +59373,7 @@
   <mission>
     <id>6900</id>
     <name>Scorch Extinguisher</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You start putting out the flames as fast as you can. There is fire everywhere but you manage to create an opening to confront Caesar.</desc>
     <commander id="474" />
     <deck>
@@ -59378,7 +59397,7 @@
   <mission>
     <id>6901</id>
     <name>Chained for Too Long</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Caesar seems weak, you confront him and he does not seem able to put up a good fight against you. Angel reinforcements start arriving at the cell. The commander finds himself cornered and uses his powers one last time to escape.</desc>
     <commander id="474" />
     <deck>
@@ -59402,7 +59421,7 @@
   <mission>
     <id>6902</id>
     <name>Nice Try</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Caesar scorches everything around him, creating twice as much fire as before. Unfortunately for him, reinforcements have arrived and he does not manage to escape from your grip.</desc>
     <commander id="474" />
     <deck>
@@ -59423,6 +59442,7 @@
       <card id="6617" mastery_level="7" name="Domhain, the Fomorian" />
     </deck>
   </mission>
+  <!-- END Caesar Lightning Node-->
   <mission>
     <id>6903</id>
     <name>Void Plane</name>
@@ -59881,10 +59901,11 @@
     </deck>
   </mission>
   <!-- Spellstone 7th Year Anniversary Missions END -->
+  <!-- Event 94: Remi Lightning Node-->
   <mission>
     <id>6922</id>
     <name>The Search</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You set out to track down Remi after he escaped. While navigating through the Void Plane, the Aether looking goblin shows up in front of you.</desc>
     <commander id="475" />
     <deck>
@@ -59908,7 +59929,7 @@
   <mission>
     <id>6923</id>
     <name>Blink of an Eye</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Knowing him too well, you prepare for an attack. Remi in the blink of an eye manages to vanish only to appear right behind you, but now completely red, covered in chaos. He strikes, but you manage to evade him.</desc>
     <commander id="475" />
     <deck>
@@ -59932,7 +59953,7 @@
   <mission>
     <id>6924</id>
     <name>The Plot</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Remi vanishes once again. You can hear his mischievous laugh all around you. You realize that he is somehow connected with more than one faction. This is probably related to him plotting for the Void to come into this world again.</desc>
     <commander id="475" />
     <deck>
@@ -59956,7 +59977,7 @@
   <mission>
     <id>6925</id>
     <name>Absence of Them All</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You try to make Remi come to his senses, you mention that the Void isn't the combination of all factions, but instead the absence of them. This seems to anger Remi, since you can no longer hear him laughing.</desc>
     <commander id="475" />
     <deck>
@@ -59980,7 +60001,7 @@
   <mission>
     <id>6926</id>
     <name>Voices</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You start to hear different voices, as if Remi was arguing with himself. All of a sudden, you can't hear him anymore.</desc>
     <commander id="475" />
     <deck>
@@ -60004,7 +60025,7 @@
   <mission>
     <id>6927</id>
     <name>This is not Over</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Remi comes out of nowhere and strikes you once again, you barely manage to block him in time. He proceeds to vanish, but as soon as he leaves you can hear him whisper that this is not over.</desc>
     <commander id="475" />
     <deck>
@@ -60025,6 +60046,7 @@
       <card id="5634" mastery_level="7" name="Eira, the Electrokinetic" />
     </deck>
   </mission>
+  <!-- END Remi Lightning Node-->
   <mission>
     <id>6928</id>
     <name>Welcome Back</name>
@@ -60313,10 +60335,11 @@
       <card id="6210" mastery_level="7" name="Burning Blade" />
     </deck>
   </mission>
+  <!-- Event 95: Darkassan Lightning Node-->
   <mission>
     <id>6940</id>
     <name>The Creeper</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>A beast has emerged in Arcantica and its roaming the Salt Wastes to feast on unsuspecting victims until it is satisfied.</desc>
     <commander id="476" />
     <deck>
@@ -60340,7 +60363,7 @@
   <mission>
     <id>6941</id>
     <name>Trick or Treat</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>The creature seems to have been inhabiting these lands for hundreds of years and it is out for a treat once again.</desc>
     <commander id="476" />
     <deck>
@@ -60364,7 +60387,7 @@
   <mission>
     <id>6942</id>
     <name>The Hunt</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You set out to hunt the beast and bring peace once again to these lands, but everywhere you look you can only see fire.</desc>
     <commander id="476" />
     <deck>
@@ -60388,7 +60411,7 @@
   <mission>
     <id>6943</id>
     <name>Blazing Blades</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>From the flames, the flying beast emerges and heads straight towards you with its razor-sharp claws. You manage to dodge its strikes, but you can not see where it went.</desc>
     <commander id="476" />
     <deck>
@@ -60412,7 +60435,7 @@
   <mission>
     <id>6944</id>
     <name>Burn</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You start heading out of the fire, the heat given off by the combustion in your surroundings is causing you to feel light headed. Just when you get out of danger, the beast emerges again shooting fire out of its hands. </desc>
     <commander id="476" />
     <deck>
@@ -60436,7 +60459,7 @@
   <mission>
     <id>6945</id>
     <name>Back to Sleep</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You see the beast approaching and just when it is about to scorch you down, you manage to strike it, damaging one of its wings. The beast has no choice but to retreat back to its lair and end its threat on Arcantica sooner than what it intended.</desc>
     <commander id="476" />
     <deck>
@@ -60457,6 +60480,7 @@
       <card id="4052" mastery_level="7" name="Shadomeka" />
     </deck>
   </mission>
+  <!-- END Darkassan Lightning Node-->
   <!-- Halloween Event 2022 -->
   <mission>
     <id>6946</id>
@@ -60869,11 +60893,11 @@
       <card id="6198" mastery_level="7" name="Rattleclank Courtesan" />
     </deck>
   </mission>
-  <!-- LBN 96 Lerna -->
+  <!-- Event 96: Lerna Lightning Node-->
   <mission>
     <id>6961</id>
     <name>The Alliance</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You manage to contact and hire The Armada&apos;s fleet to banish the Void Hydra together by using Remi&apos;s Machine to channel a portal.</desc>
     <commander id="477" />
     <deck>
@@ -60897,7 +60921,7 @@
   <mission>
     <id>6962</id>
     <name>Tracing a Plan</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Together with their captain, you start to trace a complex and convoluted plan. Meanwhile, The Armada&apos;s sailors are changing their cannons for bigger ones, even using some of their goods as shields for the hull of their ships.</desc>
     <commander id="477" />
     <deck>
@@ -60921,7 +60945,7 @@
   <mission>
     <id>6963</id>
     <name>The Raid</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Your feet tremble at the sight of the entire fleet and the sound of the battle cry made by each of the sailors. With the biggest ships in front, like an indestructible wall, you start facing the imponent Hydra.</desc>
     <commander id="477" />
     <deck>
@@ -60945,7 +60969,7 @@
   <mission>
     <id>6964</id>
     <name>Distraction</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>With the fleet at the position, the War Galleons started the whirl formation around the Monster, with their sailors waiting to start shooting those horrible heads!</desc>
     <commander id="477" />
     <deck>
@@ -60969,7 +60993,7 @@
   <mission>
     <id>6965</id>
     <name>Infiltration</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Taking your boat and three of the best captain&apos;s men to give you a hand, you take the void machine and use the cannon shots to camouflage yourself and go unnoticed by those monstrous heads!</desc>
     <commander id="477" />
     <deck>
@@ -60993,7 +61017,7 @@
   <mission>
     <id>6966</id>
     <name>Pirates Aren&apos;t So Bad After All</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>An enormous vortex starts to grow in the Hydra&apos;s body and swallows it, the monster screams and roars while trying to escape, but it&apos;s too late. Your plan was a tremendous success! The Void Hydra is now banished from our realm.</desc>
     <commander id="477" />
     <deck>
@@ -61014,6 +61038,7 @@
       <card id="4056" mastery_level="7" name="Moklam, the Sea Colossus" />
     </deck>
   </mission>
+  <!-- END Lerna Lightning Node-->
   <mission>
     <id>6967</id>
     <name>Angel Reports</name>
@@ -61478,11 +61503,11 @@
       </line>
     </speech>
   </mission>
-  <!-- LBN 97 Krampus -->
+  <!-- Event 97: Krampus Lightning Node-->
   <mission>
     <id>6984</id>
     <name>A Dangerous Nap</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Krampus was a mean and grumpy fellow, on the night of Christmas, he felt quite mellow, he had no idea that his fate was so dire, for on the next day, he would get lost in the mire.</desc>
     <commander id="478" />
     <deck>
@@ -61506,7 +61531,7 @@
   <mission>
     <id>6985</id>
     <name>The Day After Christmas</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>He started to yawn and he started to doze, Krampus fell asleep with his heart filled with woes, he didn&apos;t know that he&apos;d be led astray. On the morning of December 26th, he&apos;d lost the way.</desc>
     <commander id="478" />
     <deck>
@@ -61530,7 +61555,7 @@
   <mission>
     <id>6986</id>
     <name>The Brazen Robbery</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Krampus started to wander, his heart filled with glee, he took all the presents, leaving none for thee. He thought to himself he was doing no wrong, but the kids were so sad when the gifts were gone.</desc>
     <commander id="478" />
     <deck>
@@ -61554,7 +61579,7 @@
   <mission>
     <id>6987</id>
     <name>Looking for the Culprit</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Our Hero heard their cries, he had to investigate, he soon realized that their gifts had to be straight, he followed the clues, he followed the track. Krampus was the culprit, and he had to be attacked.</desc>
     <commander id="478" />
     <deck>
@@ -61578,7 +61603,7 @@
   <mission>
     <id>6988</id>
     <name>The Villain's Punishment</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Our Hero fought hard, he fought with all his might, but Krampus was tough, and he put up one hell of a fight. Our Hero was tired and his strength was low, but he was determined to make Krampus go.</desc>
     <commander id="478" />
     <deck>
@@ -61602,7 +61627,7 @@
   <mission>
     <id>6989</id>
     <name>The Miracle After Christmas</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>With one final punch, our Hero made Krampus fall. He managed to get all the gifts back for all, the kids were so happy, their faces shone bright. It was a Christmas miracle, and all was alright.</desc>
     <commander id="478" />
     <deck>
@@ -61623,6 +61648,7 @@
       <card id="4037" mastery_level="7" name="Nuvis, the Eye Collector" />
     </deck>
   </mission>
+  <!-- END Krampus Lightning Node-->
   <mission>
     <id>6990</id>
     <name>The Calm Before the Storm</name>
@@ -61911,11 +61937,11 @@
       <card id="8129" mastery_level="7" name="Heaven breaker asariel" />
     </deck>
   </mission>
-  <!-- LBN 98 Uncommon Allies -->
+  <!-- Event 98: Allies Lightning Node-->
   <mission>
     <id>7002</id>
     <name>Searching For Cooperation</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>With Remi imprisoned, the conflict between the three factions of angels return with more power, but you saw the potential if they joined forces. So, now you put a mission to yourself; create the union of the three factions to reveal the true potential of the Angels tribe.</desc>
     <commander id="479" />
     <deck>
@@ -61939,7 +61965,7 @@
   <mission>
     <id>7003</id>
     <name>The Smallest Doesn&apos;t Mean The Weakest</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You approach Freya, the commandant of the Wyld faction in the Angel Tribe. When she hears your offer to create an alliance with the other factions, she asks for two things, the first one is, like in nature, an equal balance of power, and the second, a proof of your strength.</desc>
     <commander id="479" />
     <deck>
@@ -61963,7 +61989,7 @@
   <mission>
     <id>7004</id>
     <name>A Chaotic Reception</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Before you can reach Alyel, her troops stop you and ask you to prove yourself worth it so that Commander Alyel spends her valuable time.</desc>
     <commander id="469" />
     <deck>
@@ -61987,7 +62013,7 @@
   <mission>
     <id>7005</id>
     <name>Even Chaos has its Logic</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Alyel was training some new recruits. When you arrived she told you that she knew what you wanted from her, but to just forget about it. She doesn&apos;t want an alliance, she only wants more power, so if you can show that to her she will be part of your plan.</desc>
     <commander id="469" />
     <deck>
@@ -62011,8 +62037,8 @@
   <mission>
     <id>7006</id>
     <name>The Aether Puzzle</name>
-    <energy>18</energy>
-    <desc>When you stand in the magnificents doors of the Aether faction building a sign take your attention &quot; Everyone that thinks is worthy needs to move across the Invisible Maze and survive &quot;.</desc>
+    <energy>7</energy>
+    <desc>When you stand in the magnificent doors of the Aether faction building a sign takes your attention &quot; Everyone that thinks is worthy needs to move across the Invisible Maze and survive &quot;.</desc>
     <commander id="480" />
     <deck>
       <card id="5260" name="Monkey Style Tenshi" />
@@ -62035,7 +62061,7 @@
   <mission>
     <id>7007</id>
     <name>The Winged Union</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>When you reach the final of the Aether Labyrinth, you go up some stairs and can see the three Angelicals commanders clapping and congratulating you. Now the Angel tribe is united, your next mission is to do the same with the other tribes.</desc>
     <commander id="480" />
     <deck>
@@ -62056,6 +62082,7 @@
       <card id="5624" mastery_level="7" name="Altos, the Implacable" />
     </deck>
   </mission>
+  <!-- END Allies Lightning Node-->
   <!-- Event 99 - Insect - Node 1 -->
   <mission>
     <id>7008</id>
@@ -62346,11 +62373,11 @@
       <card id="1645" mastery_level="7" name="Sundermarr" />
     </deck>
   </mission>
-  <!-- Event 99 - LBN - Nophora -->
+  <!-- Event 99: Nophora 2 Lightning Node-->
   <mission>
     <id>7020</id>
     <name>After the Justice</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>After the imprisonment of Kattoraki, you ask the inhabitants of Beetleton Bunker to unify all the tribe&apos;s factions, because you experienced first hand that if the factions are united, the potential is unlimited.</desc>
     <commander id="472" />
     <deck>
@@ -62374,7 +62401,7 @@
   <mission>
     <id>7021</id>
     <name>An Impossible Request</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>The leaders of each faction said to you, that they think they reached that union with the false hero, but now they need a symbol of strength to follow and maintain that union. So they ask you to give them the Real Sword of Katto.</desc>
     <commander id="472" />
     <deck>
@@ -62398,7 +62425,7 @@
   <mission>
     <id>7022</id>
     <name>On the Way to the Big Test</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You decide to go again to The Forgotten Island and face Nophora once more. You know that confrontation must be avoided, your only goal is to leave Forgotten Island alive with that Sword.</desc>
     <commander id="472" />
     <deck>
@@ -62421,8 +62448,8 @@
   </mission>
   <mission>
     <id>7023</id>
-    <name>The Nophora&apos;s Cave</name>
-    <energy>18</energy>
+    <name>The Nophora's Cave</name>
+    <energy>7</energy>
     <desc>At the exact time you put a foot inside of the Cave, the floor shakes indicating that Nophora knows about your presence. You will need all of your skill and a huge amount of luck to succeed on this mission.</desc>
     <commander id="472" />
     <deck>
@@ -62446,7 +62473,7 @@
   <mission>
     <id>7024</id>
     <name>Facing Nophora</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>When you reach the Lair, in that exact moment, Nophora emerges, attacking you fiercely. You use all your capabilities to avoid it and face the Katto&apos;s Sword, but Nophora is determined to kill you this time.</desc>
     <commander id="472" />
     <deck>
@@ -62470,7 +62497,7 @@
   <mission>
     <id>7025</id>
     <name>The Success</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You reach the sword and, in the exact moment that you have it in your power, a giant rock falls on Nophora, restraining it and giving you a safe path to flee. It&apos;s a miracle. Now on Beetleton Bunker, you finally complete your goal: the insect tribe is united.</desc>
     <commander id="472" />
     <deck>
@@ -62491,6 +62518,7 @@
       <card id="4019" mastery_level="7" name="Formos Ebonclaw" />
     </deck>
   </mission>
+  <!-- END Nophora 2 Lightning Node-->
   <!-- Event 100 - Dragons -->
   <mission>
     <id>7026</id>
@@ -62780,11 +62808,11 @@
       <card id="7060" mastery_level="7" name="Shenami" />
     </deck>
   </mission>
-  <!-- Event 100 - LBN - Vulcanos -->
+  <!-- Event 100: Vulcanos 2 Lightning Node-->
   <mission>
     <id>7038</id>
     <name>The Vengeance is Spicy</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>With the Fire Fruits in your power, you decide to continue your mission of unifying all the factions for each tribe.</desc>
     <commander id="468" />
     <deck>
@@ -62808,7 +62836,7 @@
   <mission>
     <id>7039</id>
     <name>Spark the Tribe Leader</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Spark tells you that if you want to unify the proud Dragon tribe, you need to defeat the principal cause for this faction&apos;s rupture: Vulcanos.</desc>
     <commander id="468" />
     <deck>
@@ -62832,7 +62860,7 @@
   <mission>
     <id>7040</id>
     <name>Searching for the Lava Nightmare</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Spark points to the Tarragon volcano, then tells you that after your recent fight, Vulcanos hid there to heal itself, absorbing all the lava to recover its strength.</desc>
     <commander id="468" />
     <deck>
@@ -62856,7 +62884,7 @@
   <mission>
     <id>7041</id>
     <name>Climbing the Volcano</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You decide to reach the top of the Volcano and fight one more time against Vulcanos to stop it once and for all. Immediately, as soon as you start climbing, a lot of Fire Rocks are being shot at you at an incredible speed.</desc>
     <commander id="468" />
     <deck>
@@ -62880,7 +62908,7 @@
   <mission>
     <id>7042</id>
     <name>The Top of the Volcano</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You can see that Vulcanos is waiting for you. Now it&apos;s even bigger and more aggressive than in your previous encounter, but you notice that also it is slower. Besides its power and with all the lava surrounding you, you manage to defeat it without big issues.</desc>
     <commander id="468" />
     <deck>
@@ -62904,7 +62932,7 @@
   <mission>
     <id>7043</id>
     <name>The Reunion</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>With Vulcanos finally vanished, you return to Tarragon Peak and all the leaders greet you with roars and breathing fire into the sky. Your goal is finally accomplished: The Dragon tribe is now united!</desc>
     <commander id="468" />
     <deck>
@@ -62925,6 +62953,7 @@
       <card id="4038" mastery_level="7" name="Kalyt, the Last Word" />
     </deck>
   </mission>
+  <!-- END Vulcanos 2 Lightning Node-->
   <mission>
     <id>7044</id>
     <name>A New Kind of Frog?</name>
@@ -63213,10 +63242,11 @@
       <card id="6210" mastery_level="7" name="Burning Blade" />
     </deck>
   </mission>
+  <!-- Event 101: Caesar 2 Lightning Node-->
   <mission>
     <id>7056</id>
     <name>Trying to Unify</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>With the Menace of Paul and Worf cleared, you have the confidence to ask the Frog tribe to dismantle the factions to Unify the whole tribe.</desc>
     <commander id="367" />
     <deck>
@@ -63240,7 +63270,7 @@
   <mission>
     <id>7057</id>
     <name>The Problem</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Atlatl comments to you that there&apos;s a reason for the tribes to be divided: Caesar. A being that never stops creating problems between the factions because it simply loves to create chaos and destruction.</desc>
     <commander id="367" />
     <deck>
@@ -63264,7 +63294,7 @@
   <mission>
     <id>7058</id>
     <name>Looking for Caesar</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>As you experienced before, Caesar is slippery. So, you ask Atlatl if he knows where to find it. He tells you that there&apos;s actually some rumors about some stolen weapons, between the scouts of the factions.</desc>
     <commander id="367" />
     <deck>
@@ -63288,7 +63318,7 @@
   <mission>
     <id>7059</id>
     <name>A Fast Research</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You&apos;ve spotted a group of scouts fighting intensely. As you come closer to stop the fight, you can recognize Caesar disguised as a Wyld faction scout laughing at the distance with a stolen box.</desc>
     <commander id="367" />
     <deck>
@@ -63312,7 +63342,7 @@
   <mission>
     <id>7060</id>
     <name>A Fast Pursuit</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Your party begins pursuing Caesar and when you think you&apos;ve lost him, Atlatl spots him and helps you to corner him. Caesar starts to attack you fiercely, he is stronger and faster now than he ever was!</desc>
     <commander id="367" />
     <deck>
@@ -63336,7 +63366,7 @@
   <mission>
     <id>7061</id>
     <name>The Unification</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>After a tough battle, you capture Caesar and show the evidence of his plan to prevent the tribe unification publicly. After that, Caesar is imprisoned forever, next to Paul. You&apos;ve accomplished your mission to unify another tribe.</desc>
     <commander id="367" />
     <deck>
@@ -63357,6 +63387,7 @@
       <card id="5634" mastery_level="7" name="Eira, the Electrokinetic" />
     </deck>
   </mission>
+  <!-- END Caesar 2 Lightning Node-->
   <!-- Event 102 Node 1 -->
   <mission>
     <id>7062</id>
@@ -63647,10 +63678,11 @@
       <card id="5057" mastery_level="7" />
     </deck>
   </mission>
+  <!-- Event 102: Ashanti 2 Lightning Node-->
   <mission>
     <id>7074</id>
     <name>Asking For Help</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>After defeating that traitor of Gurk, you tell the Avian Tribe your plan to dismember the factions and unify the tribes.</desc>
     <commander id="471" />
     <deck>
@@ -63674,7 +63706,7 @@
   <mission>
     <id>7075</id>
     <name>The Real Champion</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Ashanti appears in front of you and claims to be the actual and real champion of the Gladius Scriptorium. He says that to consider your proposal, you need to pass his challenge and defeat him in combat.</desc>
     <commander id="471" />
     <deck>
@@ -63698,7 +63730,7 @@
   <mission>
     <id>7076</id>
     <name>First Challenge</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>The first challenge is to survive an obstacle course filled with deadly traps. You accept and start the trial. The danger was so high and, on many occasions, you were really close to failing and losing your life.</desc>
     <commander id="471" />
     <deck>
@@ -63722,7 +63754,7 @@
   <mission>
     <id>7077</id>
     <name>Second Challenge</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>At the exact moment you reach the goal, you see a group of the fiercest fighters that you&apos;ve ever seen before, waiting to fight with you, all at the same time. You manage to beat them, but you feel that you are almost fainting.</desc>
     <commander id="471" />
     <deck>
@@ -63746,7 +63778,7 @@
   <mission>
     <id>7078</id>
     <name>Final Challenge</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Ashanti stands up in front of you and praises your skills but, you still need to beat him in combat. He is fast and doesn&apos;t have any mercy on his attacks. You don&apos;t know how but you defeat him with your remaining energy.</desc>
     <commander id="471" />
     <deck>
@@ -63770,7 +63802,7 @@
   <mission>
     <id>7079</id>
     <name>Glory to the New Champion</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You collapse aside an absolutely exhausted Ashanti and hear all the screams and praises from the audience. You are the new Champion, luck is on your side once again and your goal of unification is one step closer.</desc>
     <commander id="471" />
     <deck>
@@ -63791,6 +63823,7 @@
       <card id="4040" mastery_level="7" name="Iphelia, Voice of Pain" />
     </deck>
   </mission>
+  <!-- END Ashanti 2 Lightning Node-->
   <mission>
     <id>7080</id>
     <name>Rise of the General</name>
@@ -64079,11 +64112,11 @@
       <card id="8075" mastery_level="7" name="Vorpal Magnate" />
     </deck>
   </mission>
-  <!-- Event 103 LBN -->
+  <!-- Event 103: Llorona 2 Lightning Node-->
   <mission>
     <id>7092</id>
     <name>Bad News</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You find a mysterious message painted on your Citadel room's wall: ''Naglar was a puppet. There's another. Bigger. Scarier.'' Suddenly, the ground cracks below your feet and skeletal hands reach out to get you!</desc>
     <commander id="481" />
     <deck>
@@ -64107,7 +64140,7 @@
   <mission>
     <id>7093</id>
     <name>Skeletal Ambush</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>You survived the first onslaught. Suddenly, you hear a woman weeping. But she's nowhere to be seen. From the shadows, more undead appear!</desc>
     <commander id="481" />
     <deck>
@@ -64131,7 +64164,7 @@
   <mission>
     <id>7094</id>
     <name>The Crying Lady</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>A lightning bolt strikes outside and Llorona reveals herself! ''I know about you. I know about your plans. You must be stopped!'', she says while crying.</desc>
     <commander id="481" />
     <deck>
@@ -64155,7 +64188,7 @@
   <mission>
     <id>7095</id>
     <name>Tears of Unification</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>The battle moves to other sections of the Citadel. Undead are chasing you, while Llorona wails ''My Chaos will reign! Chaos must reign!''</desc>
     <commander id="481" />
     <deck>
@@ -64179,7 +64212,7 @@
   <mission>
     <id>7096</id>
     <name>Release the Chaos</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>''I'll finish what poor Naglar started. I'll extinguish your life and your childish dreams of unifying all tribes!''</desc>
     <commander id="481" />
     <deck>
@@ -64203,7 +64236,7 @@
   <mission>
     <id>7097</id>
     <name>An Illusion</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>Finally, at the Citadel's rooftop. Under a terrible storm, the final battle against Llorona starts. ''Peace is an illusion! There's only Chaos… There can only be Chaos!'' she wails before summoning her last attack!</desc>
     <commander id="481" />
     <deck>
@@ -64224,6 +64257,7 @@
       <card id="7622" mastery_level="7" name="Gravy, the Ravenlyte" />
     </deck>
   </mission>
+  <!-- END Llorana Lightning Node-->
   <mission>
     <id>7098</id>
     <name>Unsettling Reports</name>
@@ -64512,11 +64546,12 @@
       <card id="6210" mastery_level="7" name="Burning Blade" />
     </deck>
   </mission>
+  <!-- Event 104: Darkassan 2 Lightning Node-->
   <mission>
     <id>7110</id>
     <name>Is There Any Good News?</name>
-    <energy>18</energy>
-    <desc>After the exhausting battle in the middle of the night, you get to talk to the mecha zombie that helped you. It gives you an unsettling but revealing clue about the leader of these abominations: its name is Dr. Mechau and he&apos;s being helped by Darkassan itself.</desc>
+    <energy>7</energy>
+    <desc>After the exhausting battle in the middle of the night, you get to talk to the mecha zombie that helped you. It gives you an unsettling but revealing clue about the leader of these abominations: his name is Dr. Mechau and he&apos;s being helped by Darkassan himself.</desc>
     <commander id="476" />
     <deck>
       <card id="1345" name="Owltron" />
@@ -64539,8 +64574,8 @@
   <mission>
     <id>7111</id>
     <name>Unconditional Help</name>
-    <energy>18</energy>
-    <desc>This mecha hunter shares its own research about that dreadful pair: Darkassan brings the subjects for the Doctor to experiment on and create an army of robots. Since the hunter offered its help, you decide that you&apos;ll stick together until they are stopped.</desc>
+    <energy>7</energy>
+    <desc>This mecha hunter shares its own research about that dreadful pair: Darkassan brings the subjects for the Doctor to experiment on and create an army of robots. Since the hunter offered his help, you decide that you&apos;ll stick together until they are stopped.</desc>
     <commander id="476" />
     <deck>
       <card id="1345" name="Owltron" />
@@ -64563,8 +64598,8 @@
   <mission>
     <id>7112</id>
     <name>Leave No Stone Unturned</name>
-    <energy>18</energy>
-    <desc>You attempted to find the hideout of Doctor Mechau with a little bit of help. While you were gone, the hunter managed to create a device with the robot&apos;s wreckage that can pinpoint Mechau&apos;s controlling signal and therefore, its lair.</desc>
+    <energy>7</energy>
+    <desc>You attempted to find the hideout of Doctor Mechau with a little bit of help. While you were gone, the hunter managed to create a device with the robot&apos;s wreckage that can pinpoint Mechau&apos;s controlling signal and therefore, his lair.</desc>
     <commander id="476" />
     <deck>
       <card id="1345" name="Owltron" />
@@ -64587,7 +64622,7 @@
   <mission>
     <id>7113</id>
     <name>A Distressing Signal</name>
-    <energy>18</energy>
+    <energy>7</energy>
     <desc>The mecha hunter wasted no time talking and marched at sunrise. You manage to catch up with him and find the Doctor&apos;s lair. Mechau receives you with Darkassan and a relentless army of robots, attacking you fiercely.</desc>
     <commander id="476" />
     <deck>
@@ -64611,8 +64646,8 @@
   <mission>
     <id>7114</id>
     <name>Undercover Agenda</name>
-    <energy>18</energy>
-    <desc>Suddenly, in the middle of the fight, Mechau falls into the ground with a hole on its chest and Darkassan smiles behind him. &apos;&apos;Thanks to you, now I can do my will everywhere. This machine will give me endless soldiers!&apos;&apos;. He removes the controller from its head and continues the battle.</desc>
+    <energy>7</energy>
+    <desc>Suddenly, in the middle of the fight, Mechau falls into the ground with a hole on his chest and Darkassan smiles behind him. &apos;&apos;Thanks to you, now I can do my will everywhere. This machine will give me endless soldiers!&apos;&apos;. He removes the controller from his head and continues the battle.</desc>
     <commander id="476" />
     <deck>
       <card id="5142" name="Buzzblade" />
@@ -64635,8 +64670,8 @@
   <mission>
     <id>7115</id>
     <name>Was Everything an Illusion?</name>
-    <energy>18</energy>
-    <desc>While facing Darkassan, the hunter aims to the machine in order to stop the endless army. An explosion that hurts Darkassan&apos;s wings, gives you a chance to knock him off with a ferocious punch, your ally is nowhere to be seen. You&apos;ve survived and restored peace once more.</desc>
+    <energy>7</energy>
+    <desc>While facing Darkassan, the hunter aims at the machine in order to stop the endless army. An explosion that hurts Darkassan&apos;s wings, gives you a chance to knock him down with a ferocious punch, but your ally is nowhere to be seen. You&apos;ve survived and restored peace once more.</desc>
     <commander id="476" />
     <deck>
       <card id="5142" name="Buzzblade" />
@@ -64656,6 +64691,7 @@
       <card id="4052" mastery_level="7" name="Shadomeka" />
     </deck>
   </mission>
+  <!-- END Darkassan 2 Lightning Node-->
   <!-- Event 105: Insects ComDev -->
   <mission>
     <id>7116</id>
@@ -64985,7 +65021,7 @@
       <line>
         <commander>architectbug</commander>
         <enemy>0</enemy>
-        <text>It is! This is what Beetleton Bunker looked like when my great-great-great-grandfather was a grub!</text>
+        <text>It is! This is what Beetleton Bunker looked like when my great-great-great-grandpa was a grub!</text>
       </line>
       <line>
         <commander>architectbug</commander>
@@ -65165,7 +65201,7 @@
   <mission>
     <id>7128</id>
     <name>A Rock and a Dark Place</name>
-    <energy>8</energy>
+    <energy>7</energy>
     <desc>Beyond Helvius's sanctum lies a seemingly endless maze of cave passages. Agatha escorts you and Dilbert through the darkness, guided only by her memory. You ask yourself if it's even possible to escape.</desc>
     <commander id="482" />
     <!-- Wounded Nophora -->
@@ -65200,7 +65236,7 @@
   <mission>
     <id>7129</id>
     <name>Weapons, Warnings, Worms</name>
-    <energy>8</energy>
+    <energy>7</energy>
     <desc>The deeper you travel, the more you spot the discarded weapons of fallen soldiers. Agatha's wings hesitate. She's reluctant to fly any farther, since she can smell something she calls a Phomoran Ogerworm.</desc>
     <commander id="482" />
     <!-- Wounded Nophora -->
@@ -65235,7 +65271,7 @@
   <mission>
     <id>7130</id>
     <name>I've Just Been in This Place Before</name>
-    <energy>8</energy>
+    <energy>7</energy>
     <desc>Agatha describes a massive, nearly immortal beast with a sharp mind and an aggressive temperament. You can't help but think of Nophora, a foe so fearsome that you only barely survived it when a cave-in saved you...</desc>
     <commander id="482" />
     <!-- Wounded Nophora -->
@@ -65270,7 +65306,7 @@
   <mission>
     <id>7131</id>
     <name>Bold and Boulder</name>
-    <energy>8</energy>
+    <energy>7</energy>
     <desc>Before you waits a boulder with fourteen writhing legs. You take a hesitant step closer, and it crumbles to pieces! Nophora emerges from underneath, its red eyes full of hate. Orange poison leaks from its body.</desc>
     <commander id="482" />
     <!-- Wounded Nophora -->
@@ -65305,7 +65341,7 @@
   <mission>
     <id>7132</id>
     <name>Phomo-Rollercoaster Ride</name>
-    <energy>8</energy>
+    <energy>7</energy>
     <desc>The worm lunges at you, but its injuries have made its movements slow and telegraphed. Leaping to one side, you manage to climb onto Nophora's body. It screams. You're forced to hold tight as it goes on a blind rampage!</desc>
     <commander id="482" />
     <!-- Wounded Nophora -->
@@ -65345,7 +65381,7 @@
   <mission>
     <id>7133</id>
     <name>The Last Wriggle</name>
-    <energy>8</energy>
+    <energy>7</energy>
     <desc>You hold onto the tiny spikes covering Nophora's segments with a steely grip. They act as footholds, even as they dig into your body. At last, you climb to the top of Nophora's head... and plunge your blade deep into its eye!</desc>
     <commander id="482" />
     <!-- Wounded Nophora -->
@@ -65381,5 +65417,1086 @@
       <card id="6232" mastery_level="7" />
       <!-- Deathmoth -->
     </deck>
+  </mission>
+  <!-- Event 106: ComDev Goblin - Return to Karthos -->
+  <!-- E106 Node 1: The Return of a King -->
+  <mission>
+    <id>7134</id>
+    <name>Prologue</name>
+    <energy>18</energy>
+    <desc>Amidst thunder and lightning, mysterious shadows are engaged in a hushed conversation with a hooded goblin witch</desc>
+    <commander id="227" />
+    <!-- Wasteland Wraiths -->
+    <deck>
+      <card id="2102" />
+      <!-- Lowbog Shaman -->
+      <card id="2102" />
+      <!-- Lowbog Shaman -->
+      <card id="2102" />
+      <!-- Lowbog Shaman -->
+      <card id="5280" />
+      <!-- Portal Witch -->
+      <card id="5280" />
+      <!-- Portal Witch -->
+      <card id="5280" />
+      <!-- Portal Witch -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="5251" mastery_level="2" />
+      <!-- Spellbuster Witch -->
+      <card id="5251" mastery_level="3" />
+      <card id="5251" mastery_level="4" />
+      <card id="6217" mastery_level="5" />
+      <!-- Tagati -->
+      <card id="6217" mastery_level="6" />
+      <card id="5627" mastery_level="7" />
+      <!-- Drarm -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_068_chance_sandwitch</commander>
+        <!-- Sandspirit -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>When shall we meet again?</text>
+      </line>
+      <line>
+        <commander>wraithden</commander>
+        <!-- Mysterious shadows -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>When the battle is lost and won.</text>
+      </line>
+      <line>
+        <commander>event_068_chance_sandwitch</commander>
+        <!-- Sandspirit -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Where?</text>
+      </line>
+      <line>
+        <commander>wraithden</commander>
+        <!-- Mysterious shadows -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Hover through the fog and filthy air.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7135</id>
+    <name>Up in the Air</name>
+    <energy>18</energy>
+    <desc>You finally make your way back to the surface, as Dilbert and his carpenters do their best to make the ship airworthy again. But after rejoining Ursurio, you notice someone unusual in the distance.</desc>
+    <commander id="394" />
+    <!-- Xerkahn the Vengeant -->
+    <deck>
+      <card id="6187" />
+      <!-- Xerkahn Ship -->
+      <card id="6187" />
+      <!-- Xerkahn Ship -->
+      <card id="6187" />
+      <!-- Xerkahn Ship -->
+      <card id="7146" />
+      <!-- Xerkahn Brigand-->
+      <card id="7146" />
+      <!-- Xerkahn Brigand-->
+      <card id="7146" />
+      <!-- Xerkahn Brigand-->
+      <card id="8090" />
+      <!-- Xerkahn Crew -->
+      <card id="8090" />
+      <!-- Xerkahn Crew -->
+      <card id="8090" />
+      <!-- Xerkahn Crew -->
+      <card id="6252" mastery_level="2" />
+      <!-- Hexer Rogue -->
+      <card id="6252" mastery_level="3" />
+      <card id="6252" mastery_level="4" />
+      <card id="7256" mastery_level="5" />
+      <!-- Soldier of Fortune -->
+      <card id="7256" mastery_level="6" />
+      <card id="6605" mastery_level="7" />
+      <!-- Xerkahn -->
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <!-- Dilbert -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>I think that&apos;s the best we can do without the Hammer or finding new parts.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <!-- Dilbert -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Having surveyed the damage, you should count yourself lucky!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <!-- Ursurio -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>But at least we saved all our food provisions!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <!-- Dilbert -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Hold up! Why don"t we just ask that ship up there for spares?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <!-- Ursurio -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Whoa there, I recognise that ship! But my eyes must be deceiving me! Was it something I ate?</text>
+      </line>
+      <line>
+        <commander>event_036_w1</commander>
+        <!-- Xerkahn Flagship -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Curses! The others must also be huntin&apos; for The Hoarder&apos;s weapons.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7136</id>
+    <name>Back from the Dead</name>
+    <energy>18</energy>
+    <desc>Confused as to how a very un-undead Xerkahn has returned, you travel to Karthos to seek Tarian for an explanation.</desc>
+    <commander id="398" />
+    <!-- Xerkahn the Avenger -->
+    <deck>
+      <card id="6187" />
+      <!-- Xerkahn Ship -->
+      <card id="6187" />
+      <!-- Xerkahn Ship -->
+      <card id="6187" />
+      <!-- Xerkahn Ship -->
+      <card id="7146" />
+      <!-- Xerkahn Brigand-->
+      <card id="7146" />
+      <!-- Xerkahn Brigand-->
+      <card id="7146" />
+      <!-- Xerkahn Brigand-->
+      <card id="8090" />
+      <!-- Xerkahn Crew -->
+      <card id="8090" />
+      <!-- Xerkahn Crew -->
+      <card id="8090" />
+      <!-- Xerkahn Crew -->
+      <card id="6252" mastery_level="2" />
+      <!-- Hexer Rogue -->
+      <card id="6252" mastery_level="3" />
+      <card id="6252" mastery_level="4" />
+      <card id="7256" mastery_level="5" />
+      <!-- Soldier of Fortune -->
+      <card id="7256" mastery_level="6" />
+      <card id="6605" mastery_level="7" />
+      <!-- Xerkahn -->
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <!-- Tarian -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>I&apos;m as confused as you all. I&apos;ve had no reports of unusual activity, and I&apos;m sure I would have noticed her coming back from the dead.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <!-- Tarian -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>And you&apos;re absolutely certain she was fully alive? Not an undead rancor?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <!-- Ursurio -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>There&apos;s no mistaking her and her flagship!</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>...</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>I guess you&apos;re all here looking for the same thing I am...</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Answers.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7137</id>
+    <name>Double Trouble</name>
+    <energy>18</energy>
+    <desc>The armored goblin continues his surprisingly eloquent tale. It would seem that Xerkahn is not the only goblin that has returned from the dead.</desc>
+    <commander id="329" />
+    <!-- Reks -->
+    <deck>
+      <card id="5090" />
+      <!-- Reks Faithful -->
+      <card id="5090" />
+      <!-- Reks Faithful -->
+      <card id="5090" />
+      <!-- Reks Faithful -->
+      <card id="7146" />
+      <!-- Reks Brigand-->
+      <card id="7146" />
+      <!-- Reks Brigand-->
+      <card id="7146" />
+      <!-- Reks Brigand-->
+      <card id="1628" />
+      <!-- Gargantos -->
+      <card id="1628" />
+      <!-- Gargantos -->
+      <card id="1628" />
+      <!-- Gargantos -->
+      <card id="2244" mastery_level="2" />
+      <!-- Fizbo the Jester -->
+      <card id="2244" mastery_level="3" />
+      <card id="2244" mastery_level="4" />
+      <card id="2061" mastery_level="5" />
+      <!-- Reks Forlorn -->
+      <card id="2061" mastery_level="6" />
+      <card id="4054" mastery_level="7" />
+      <!-- Reks Dragonslayer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>I&apos;m afraid those goblins always remained loyal followers of Reks. War was inevitable as soon as news spread.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <!-- Ursurio -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>And what&apos;s his goal?</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>To reclaim the throne, I&apos;m sure.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <!-- Tarian -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Hold right there, goblin. You haven&apos;t told us who you are. For all we know, you could be a spy.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7138</id>
+    <name>If You Stare Into the Void</name>
+    <energy>18</energy>
+    <desc>Tarian is suspicious of the goblin and wants to know who this visitor to Karthos is.</desc>
+    <commander id="454" />
+    <!-- Daknak -->
+    <deck>
+      <card id="7148" />
+      <!-- Pointystick Pezack -->
+      <card id="7148" />
+      <!-- Pointystick Pezack -->
+      <card id="7148" />
+      <!-- Pointystick Pezack -->
+      <card id="5091" />
+      <!-- Armor Thief-->
+      <card id="5091" />
+      <!-- Armor Thief-->
+      <card id="5091" />
+      <!-- Armor Thief-->
+      <card id="7145" />
+      <!-- Metalsmith -->
+      <card id="7145" />
+      <!-- Metalsmith -->
+      <card id="7145" />
+      <!-- Metalsmith -->
+      <card id="6303" mastery_level="2" />
+      <!-- Void Fighter -->
+      <card id="6303" mastery_level="3" />
+      <card id="6303" mastery_level="4" />
+      <card id="6303" mastery_level="5" />
+      <card id="6627" mastery_level="6" />
+      <!-- Vig -->
+      <card id="4016" mastery_level="7" />
+      <!-- Daknak -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>And you never asked until now. Very well, allow me to introduce myself. I am...</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>I was once a centurion in Daknak&apos;s personal guard. But fear not. I have no quarrel with you.</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Rather than work with Boldur, Daknak has gone chasing rumors. He&apos;s looking for weapons Remi might have left behind.</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>But even if they exist, they will be infused with the Void. He is foolish to think he can handle them.</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Daknak made his decision. I was not prepared to follow.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7139</id>
+    <name>The Void Stares Back Through You</name>
+    <energy>18</energy>
+    <desc>Armed with the knowledge that Daknak, and likely Xerkahn also, are seeking out a cache of Void weapons, you start pondering on where to begin your search. Little do you realize other eyes were looking at you...</desc>
+    <commander id="412" />
+    <!-- Goblin Ringleader -->
+    <deck>
+      <card id="2062" />
+      <!-- Deadeye -->
+      <card id="2062" />
+      <!-- Deadeye -->
+      <card id="2062" />
+      <!-- Deadeye -->
+      <card id="2062" />
+      <!-- Deadeye -->
+      <card id="2062" />
+      <!-- Deadeye -->
+      <card id="2062" />
+      <!-- Deadeye -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="1344" mastery_level="2" />
+      <!-- Boomsting -->
+      <card id="1344" mastery_level="3" />
+      <card id="6141" mastery_level="4" />
+      <!-- Zabzod -->
+      <card id="6141" mastery_level="5" />
+      <card id="6141" mastery_level="6" />
+      <card id="4074" mastery_level="7" />
+      <!-- Sivun -->
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <!-- Tarian -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Well, that would explain why Xerkahn was near Nophora&apos;s lair. The worm is known as a weapon hoarder.</text>
+      </line>
+      <line>
+        <commander>event_036_w2</commander>
+        <!-- Goblin Plane -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Aye, aye, cap&apos;n Sivun. Target spotted!</text>
+      </line>
+      <line>
+        <commander>event_036_w2</commander>
+        <!-- Goblin Plane -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Ack! I didn&apos;t mean it like that!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E106 Node 2: Warring Factions -->
+  <mission>
+    <id>7140</id>
+    <name>A Civil War</name>
+    <energy>18</energy>
+    <desc>Interfactional fighting has consumed the goblin tribes. Spurred by sightings of their former king, goblins have risen up against Boldur. Compounding the chaos, Daknak has also raised an army, driven by ambition and rumors of powerful treasure, ignoring even his most loyal advisors.</desc>
+    <commander id="321" />
+    <!-- Goblin Footmen -->
+    <deck>
+      <card id="4016" />
+      <!-- Daknak -->
+      <card id="7255" />
+      <!-- Hooflin Ranger -->
+      <card id="7255" />
+      <!-- Hooflin Ranger -->
+      <card id="2063" />
+      <!-- Hob Fletcher -->
+      <card id="2063" />
+      <!-- Hob Fletcher -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5225" />
+      <!-- Centurion -->
+      <card id="5225" />
+      <!-- Centurion -->
+      <card id="6605" mastery_level="2" />
+      <!-- Xerkahn -->
+      <card id="4054" mastery_level="3" />
+      <!-- Reks -->
+      <card id="4005" mastery_level="4" />
+      <!-- Boldur -->
+      <card id="4037" mastery_level="5" />
+      <!-- Nuvis -->
+      <card id="4074" mastery_level="6" />
+      <!-- Sivun -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi -->
+    </deck>
+    <speech>
+      <line>
+        <commander>wraithden</commander>
+        <!-- Mysterious shadows -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>You will find what you desire at your journey&quot;s end.</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <!-- Daknak -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Daknak find treasure! Daknak use treasure! Daknak do what Boldur does not!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <!-- Daknak -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Daknak jump into Void! Daknak owe no explanation to those who stand and watch!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7141</id>
+    <name>Stolen Eye-dentity</name>
+    <energy>18</energy>
+    <desc>Back in Karthos, Xerkahn&apos;s goblins have begun an air assault. Far above the mountaintops, you can spot a blind goblin leader shouting orders.</desc>
+    <commander id="341" />
+    <!-- Goblin Mechanic -->
+    <deck>
+      <card id="2053" />
+      <!-- Rocket Rider -->
+      <card id="2053" />
+      <!-- Rocket Rider -->
+      <card id="2053" />
+      <!-- Rocket Rider -->
+      <card id="6146" />
+      <!-- Dragonfly Runner -->
+      <card id="6146" />
+      <!-- Dragonfly Runner -->
+      <card id="6146" />
+      <!-- Dragonfly Runner -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5209" mastery_level="2" />
+      <!-- Fowlmaster -->
+      <card id="5209" mastery_level="3" />
+      <card id="6141" mastery_level="4" />
+      <!-- Zabzod -->
+      <card id="6141" mastery_level="5" />
+      <card id="4074" mastery_level="6" />
+      <!-- Sivun -->
+      <card id="6605" mastery_level="7" />
+      <!-- Xerkahn -->
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <!-- Ursurio -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Nuvis!</text>
+      </line>
+      <line>
+        <commander>mechanicgoblin</commander>
+        <!-- Mechanic Goblin -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>That not Nuvis! That Sivun! Nuvis brother! Nuvis steal Sivun eyes as joke at Goblin Military School. Sivun hate Nuvis!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <!-- Ursurio -->
+        <enemy>0</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>More ships over there!</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <!-- Mechanic Goblin -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Hand over the weapons ya got from that worm!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7142</id>
+    <name>When You Come At the King...</name>
+    <energy>18</energy>
+    <desc>The skies fill up with ships from multiple factions. You know you don&apos;t possess what Xerkahn is demanding but aren&apos;t quite sure how to convince her. Taking evasive maneuvers, you find yourself near a squadron of dragon-riding goblins.</desc>
+    <commander id="329" />
+    <!-- Reks -->
+    <deck>
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="7190" />
+      <!-- Drix -->
+      <card id="7190" />
+      <!-- Drix -->
+      <card id="7190" />
+      <!-- Drix -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="7217" mastery_level="2" />
+      <!-- Amrita -->
+      <card id="7217" mastery_level="3" />
+      <card id="4016" mastery_level="4" />
+      <!-- Daknak -->
+      <card id="4037" mastery_level="5" />
+      <!-- Nuvis -->
+      <card id="4074" mastery_level="6" />
+      <!-- Sivun -->
+      <card id="4054" mastery_level="7" />
+      <!-- Reks -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portal_King_Goblin</commander>
+        <!-- Reks -->
+        <enemy>1</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>Well, well, well. I wouldn"t believe it if I didn&apos;t see it with my own two eyes.</text>
+      </line>
+      <line>
+        <commander>event_036_w2</commander>
+        <!-- Goblin Plane -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>There&apos;s our signal lads! Follow Sivun&apos;s lead!</text>
+      </line>
+      <line>
+        <commander>event_036_w2</commander>
+        <!-- Goblin Plane -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>BOMBS AWAY!!!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <!-- Daknak -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Daknak see Nuvis brother! Daknak order Nuvis attack!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7143</id>
+    <name>You Best Not Miss</name>
+    <energy>18</energy>
+    <desc>Bombs burst in the skies above Karthos as the goblin civil war explodes into an all out air battle. You send out a call for help. But unbeknownst to you, Daknak has boarded your ship. Though some, more so than others, are unhappy to see him, he has come with an offer.</desc>
+    <commander id="454" />
+    <!-- Daknak -->
+    <deck>
+      <card id="5287" />
+      <!-- Delivery Stork -->
+      <card id="5287" />
+      <!-- Delivery Stork -->
+      <card id="5287" />
+      <!-- Delivery Stork -->
+      <card id="6218" />
+      <!-- Gliding Firemage -->
+      <card id="6218" />
+      <!-- Gliding Firemage -->
+      <card id="6218" />
+      <!-- Gliding Firemage -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="6254" mastery_level="2" />
+      <!-- Grenadier -->
+      <card id="6254" mastery_level="3" />
+      <card id="4016" mastery_level="4" />
+      <!-- Daknak -->
+      <card id="4037" mastery_level="5" />
+      <!-- Nuvis -->
+      <card id="4074" mastery_level="6" />
+      <!-- Sivun -->
+      <card id="4054" mastery_level="7" />
+      <!-- Reks -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <!-- Daknak -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Daknak see many familiar faces! Daknak not friends with those faces.</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <!-- Daknak -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>But Daknak come in peace. Daknak need help.</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <!-- Daknak -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Daknak air commander tells him Reks is fake Reks. Nuvis say he see real identity</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7144</id>
+    <name>Identity Revealed</name>
+    <energy>18</energy>
+    <desc>You agree to work with Daknak to lure the imposter king into a trap. Your aerial reinforcements from Yuriel and Samael just in time. Daknak sends his air force as bait whilst you send the owl mystic armed with his knowledge of dispelling magic.</desc>
+    <commander id="329" />
+    <!-- Reks -->
+    <deck>
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="7190" />
+      <!-- Drix -->
+      <card id="7190" />
+      <!-- Drix -->
+      <card id="7190" />
+      <!-- Drix -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="7217" mastery_level="2" />
+      <!-- Amrita -->
+      <card id="7217" mastery_level="3" />
+      <card id="6269" mastery_level="4" />
+      <!-- Drogoblin -->
+      <card id="6269" mastery_level="5" />
+      <card id="4074" mastery_level="6" />
+      <!-- Sivun -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portal_King_Goblin</commander>
+        <!-- Reks -->
+        <enemy>1</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>HUH?! What? Who are you?!</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <!-- Yuriel -->
+        <enemy>0</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Time to find out who you really are!</text>
+      </line>
+      <line>
+        <commander>Portal_King_Goblin</commander>
+        <!-- Reks -->
+        <enemy>1</enemy>
+        <!-- Speech coming from left hand side -->
+        <text>NO! ARGH! THE LIGHT!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <!-- Samael -->
+        <enemy>0</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>... you!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <!-- Gobtoh -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Damnation!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7145</id>
+    <name>An Angel in Goblin Clothing</name>
+    <energy>18</energy>
+    <desc>You unmask the real identity of the returning king: Gobtoh! But before you can ponder the important questions such as whether Xerkahn is real or whether Reks&apos; followers also saw, you find yourself attacked from all sides.</desc>
+    <commander id="412" />
+    <!-- Goblin Ringleader -->
+    <deck>
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="2065" />
+      <!-- Pinpin -->
+      <card id="6049" />
+      <!-- Goblin Explosioneer -->
+      <card id="6049" />
+      <!-- Goblin Explosioneer -->
+      <card id="6049" />
+      <!-- Goblin Explosioneer -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="5190" />
+      <!-- Goblin Rise Cadet -->
+      <card id="6253" mastery_level="2" />
+      <!-- Tricky Boomsquad -->
+      <card id="6253" mastery_level="3" />
+      <card id="6143" mastery_level="4" />
+      <!-- Dyanmic Entry -->
+      <card id="6143" mastery_level="5" />
+      <card id="4074" mastery_level="6" />
+      <!-- Sivun -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+    </deck>
+  </mission>
+  <!-- Event 106: ComDev Goblin - New Lightning Node -->
+  <!-- Lightning Boss Gobtoh (Return to Karthos) -->
+  <mission>
+    <id>2001</id>
+    <name>No Allies Here</name>
+    <energy>7</energy>
+    <desc>Now that the supposed Goblin King has been unmasked as an imposter, you hoped his followers would lay down their weapons or turn on their false king. How wrong you were. It&apos;s almost as if the goblins were simply itching for a war.</desc>
+    <commander id="483" />
+    <!-- Gobtoh -->
+    <deck>
+      <!-- All Champions -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+      <card id="4016" />
+      <!-- Daknak -->
+      <card id="6605" />
+      <!-- Xerkahn -->
+      <card id="4054" />
+      <!-- Reks -->
+      <card id="4005" />
+      <!-- Boldur -->
+      <card id="4037" />
+      <!-- Nuvis -->
+      <card id="4026" />
+      <!-- Spikes -->
+      <card id="4047" />
+      <!-- Ark -->
+      <card id="4074" />
+      <!-- Sivun -->
+      <card id="6600" mastery_level="2" />
+      <!-- Sigix -->
+      <card id="5627" mastery_level="3" />
+      <!-- Drarm -->
+      <card id="7609" mastery_level="4" />
+      <!-- Wrom -->
+      <card id="4066" mastery_level="5" />
+      <!-- Krampus -->
+      <card id="6627" mastery_level="6" />
+      <!-- Vig -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2002</id>
+    <name>Which Witch is Which?</name>
+    <energy>7</energy>
+    <desc>You begin to uncover how Gobtoh maintained his deception: dark magic powered by witches and mages that Gobtoh gathered in his entourage. You make a beeline for the concentration of arcane energy.</desc>
+    <commander id="483" />
+    <!-- Gobtoh -->
+    <deck>
+      <!-- Sandspirit Spam + 0D + Drarm -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="6147" />
+      <!-- Sandspirit -->
+      <card id="7225" />
+      <!-- Lishara -->
+      <card id="7144" />
+      <!-- Kazamo -->
+      <card id="6147" mastery_level="2" />
+      <!-- Sandspirit -->
+      <card id="6147" mastery_level="3" />
+      <!-- Sandspirit -->
+      <card id="6168" mastery_level="4" />
+      <!-- Chainwraith Spirit -->
+      <card id="6168" mastery_level="5" />
+      <!-- Chainwraith Spirit -->
+      <card id="6168" mastery_level="6" />
+      <!-- Chainwraith Spirit -->
+      <card id="5627" mastery_level="7" />
+      <!-- Drarm -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2003</id>
+    <name>Vengeful Demons</name>
+    <energy>7</energy>
+    <desc>Seeing your strategy, Gobtoh attempts to outflank you. Caught off guard you have no choice but to brace for his counterattack!</desc>
+    <commander id="483" />
+    <!-- Gobtoh -->
+    <deck>
+      <!-- Vengeance deck -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+      <card id="2101" />
+      <!-- Rot Goblin -->
+      <card id="2101" />
+      <!-- Rot Goblin -->
+      <card id="5147" />
+      <!-- Bard -->
+      <card id="5147" />
+      <!-- Bard -->
+      <card id="2125" />
+      <!-- Bezoar -->
+      <card id="2125" />
+      <!-- Bezoar -->
+      <card id="2125" />
+      <!-- Bezoar -->
+      <card id="2125" />
+      <!-- Bezoar -->
+      <card id="5239" mastery_level="2" />
+      <!-- Knightly Grumplo -->
+      <card id="5239" mastery_level="3" />
+      <!-- Knightly Grumplo -->
+      <card id="5239" mastery_level="4" />
+      <!-- Knightly Grumplo -->
+      <card id="5225" mastery_level="5" />
+      <!-- Centurion -->
+      <card id="5225" mastery_level="5" />
+      <!-- Centurion -->
+      <card id="5225" mastery_level="5" />
+      <!-- Centurion -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2004</id>
+    <name>A Fateful Encounter</name>
+    <energy>7</energy>
+    <desc>As luck would have it, amidst the chaos and fog of war, you find Gobtoh separated from his army and cornered. You understand now is your best chance to defeat him once and for all.</desc>
+    <commander id="483" />
+    <!-- Gobtoh -->
+    <deck>
+      <!-- Fast deck supporting Gobtoh -->
+      <card id="6220" />
+      <!-- Gobtoh -->
+      <card id="5145" />
+      <!-- Gobsnout -->
+      <card id="5145" />
+      <!-- Gobsnout -->
+      <card id="5145" />
+      <!-- Gobsnout -->
+      <card id="5145" />
+      <!-- Gobsnout -->
+      <card id="5253" />
+      <!-- Bullywhack -->
+      <card id="5253" />
+      <!-- Bullywhack -->
+      <card id="5253" />
+      <!-- Bullywhack -->
+      <card id="5253" />
+      <!-- Bullywhack -->
+      <card id="6220" mastery_level="2" />
+      <!-- Gobtoh -->
+      <card id="6220" mastery_level="3" />
+      <!-- Gobtoh -->
+      <card id="6220" mastery_level="4" />
+      <!-- Gobtoh -->
+      <card id="6220" mastery_level="5" />
+      <!-- Gobtoh -->
+      <card id="6220" mastery_level="6" />
+      <!-- Gobtoh -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2005</id>
+    <name>Betrayal!</name>
+    <energy>7</energy>
+    <desc>Just as you are about to deliver a finishing below to Gobtoh, your swing is broken by a spear. A spear belonging to the goblin centurion!</desc>
+    <commander id="483" />
+    <!-- Gobtoh -->
+    <deck>
+      <!--- Betrayal spam -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="5088" mastery_level="2" />
+      <!-- Betrayal -->
+      <card id="5088" mastery_level="3" />
+      <!-- Betrayal -->
+      <card id="5088" mastery_level="4" />
+      <!-- Betrayal -->
+      <card id="5088" mastery_level="5" />
+      <!-- Betrayal -->
+      <card id="5088" mastery_level="6" />
+      <!-- Betrayal -->
+      <card id="5088" mastery_level="7" />
+      <!-- Betrayal -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>I&quot;m sorry but I can"t let you do that.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2006</id>
+    <name>A Final Twist</name>
+    <energy>7</energy>
+    <desc>Gobtoh has escaped! You and your allies turn on the Centurion, furious at his treachery. Yet he remains stoic, almost as if he had a good reason to stop you.</desc>
+    <commander id="483" />
+    <!-- Gobtoh -->
+    <deck>
+      <!-- Freeze spam -->
+      <card id="6220" mastery_level="7" />
+      <!-- Gobtoh -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="5092" />
+      <!-- Tundra Reaver -->
+      <card id="5092" />
+      <!-- Tundra Reaver -->
+      <card id="5088" />
+      <!-- Magitech Raider -->
+      <card id="5088" />
+      <!-- Magitech Raider -->
+      <card id="7226" />
+      <!-- Froglin -->
+      <card id="7226" />
+      <!-- Froglin -->
+      <card id="7091" mastery_level="2" />
+      <!-- Wave Plunderer -->
+      <card id="7091" mastery_level="3" />
+      <!-- Wave Plunderer -->
+      <card id="7091" mastery_level="4" />
+      <!-- Wave Plunderer -->
+      <card id="7620" mastery_level="5" />
+      <!-- Klevit -->
+      <card id="6627" mastery_level="6" />
+      <!-- Vig -->
+      <card id="5627" mastery_level="7" />
+      <!-- Drarm -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>Sivun is working for Gobtoh, not Boldur. And Sivun attacked you before Gobtoh, disguised as false Reks, even checked your ship for any of Nophora&quot;s weapons.</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <!-- Centurion -->
+        <enemy>1</enemy>
+        <!-- Speech coming from right hand side -->
+        <text>That means Gobtoh must know where the real cache is hidden. You can&quot;t smite him now, adventurer. You need him to lead you to the weapons!</text>
+      </line>
+    </speech>
   </mission>
 </root>

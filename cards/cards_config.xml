@@ -504,7 +504,7 @@
   </skillType>
   <skillType>
     <id>barrage</id>
-    <order>500</order>
+    <order>155</order>
     <icon>barrage</icon>
     <name>barrage</name>
     <upkeep>1</upkeep>

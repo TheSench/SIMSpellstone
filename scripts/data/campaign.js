@@ -6278,7 +6278,7 @@ var CAMPAIGNS = {
 	"1351": {
 		"id": "1351",
 		"items": {
-			"3092": 1.7
+			"3092": 0.85
 		},
 		"location_id": "22",
 		"missions": [
@@ -6294,7 +6294,7 @@ var CAMPAIGNS = {
 	"1352": {
 		"id": "1352",
 		"items": {
-			"3092": 1.8
+			"3092": 0.9
 		},
 		"location_id": "22",
 		"missions": [
@@ -6306,6 +6306,38 @@ var CAMPAIGNS = {
 			"7127"
 		],
 		"name": "The Healer's Prison"
+	},
+	"1353": {
+		"id": "1353",
+		"items": {
+			"3116": 1.7
+		},
+		"location_id": "30",
+		"missions": [
+			"7134",
+			"7135",
+			"7136",
+			"7137",
+			"7138",
+			"7139"
+		],
+		"name": "The Return of a King"
+	},
+	"1354": {
+		"id": "1354",
+		"items": {
+			"3116": 1.8
+		},
+		"location_id": "30",
+		"missions": [
+			"7140",
+			"7141",
+			"7142",
+			"7143",
+			"7144",
+			"7145"
+		],
+		"name": "Warring Factions"
 	},
 	"3000": {
 		"id": "3000",
@@ -6525,9 +6557,9 @@ var CAMPAIGNS = {
 	"4001": {
 		"id": "4001",
 		"items": {
-			"3119": 0.4
+			"2515": 0.04
 		},
-		"location_id": "31",
+		"location_id": "6",
 		"missions": [
 			"6807",
 			"6808",
@@ -6536,14 +6568,14 @@ var CAMPAIGNS = {
 			"6811",
 			"6812"
 		],
-		"name": "Lightning Vulcanos"
+		"name": "Classic Lightning Vulcanos"
 	},
 	"4002": {
 		"id": "4002",
 		"items": {
-			"3107": 0.6
+			"2515": 0.04
 		},
-		"location_id": "27",
+		"location_id": "6",
 		"missions": [
 			"6825",
 			"6826",
@@ -6552,14 +6584,14 @@ var CAMPAIGNS = {
 			"6829",
 			"6830"
 		],
-		"name": "Lightning Alyel"
+		"name": "Classic Lightning Alyel"
 	},
 	"4003": {
 		"id": "4003",
 		"items": {
-			"3049": 0.6
+			"2515": 0.04
 		},
-		"location_id": "8",
+		"location_id": "6",
 		"missions": [
 			"6843",
 			"6844",
@@ -6568,14 +6600,14 @@ var CAMPAIGNS = {
 			"6847",
 			"6848"
 		],
-		"name": "Lightning Ashanti"
+		"name": "Classic Lightning Ashanti"
 	},
 	"4004": {
 		"id": "4004",
 		"items": {
-			"3074": 0.6
+			"2515": 0.04
 		},
-		"location_id": "16",
+		"location_id": "6",
 		"missions": [
 			"6861",
 			"6862",
@@ -6584,14 +6616,14 @@ var CAMPAIGNS = {
 			"6865",
 			"6866"
 		],
-		"name": "Lightning Nophora"
+		"name": "Classic Lightning Nophora"
 	},
 	"4005": {
 		"id": "4005",
 		"items": {
-			"3089": 0.6
+			"2515": 0.04
 		},
-		"location_id": "21",
+		"location_id": "6",
 		"missions": [
 			"6879",
 			"6880",
@@ -6600,14 +6632,14 @@ var CAMPAIGNS = {
 			"6883",
 			"6884"
 		],
-		"name": "Lightning Llorona"
+		"name": "Classic Lightning Llorona"
 	},
 	"4006": {
 		"id": "4006",
 		"items": {
-			"3125": 0.6
+			"2515": 0.04
 		},
-		"location_id": "33",
+		"location_id": "6",
 		"missions": [
 			"6897",
 			"6898",
@@ -6616,14 +6648,14 @@ var CAMPAIGNS = {
 			"6901",
 			"6902"
 		],
-		"name": "Lightning Caesar"
+		"name": "Classic Lightning Caesar"
 	},
 	"4007": {
 		"id": "4007",
 		"items": {
-			"3053": 0.6
+			"2515": 0.04
 		},
-		"location_id": "9",
+		"location_id": "6",
 		"missions": [
 			"6922",
 			"6923",
@@ -6632,14 +6664,14 @@ var CAMPAIGNS = {
 			"6926",
 			"6927"
 		],
-		"name": "Lightning Remi"
+		"name": "Classic Lightning Remi"
 	},
 	"4008": {
 		"id": "4008",
 		"items": {
-			"3095": 0.6
+			"2515": 0.04
 		},
-		"location_id": "23",
+		"location_id": "6",
 		"missions": [
 			"6940",
 			"6941",
@@ -6648,15 +6680,14 @@ var CAMPAIGNS = {
 			"6944",
 			"6945"
 		],
-		"name": "Lightning Darkassan"
+		"name": "Classic Lightning Darkassan"
 	},
 	"4009": {
 		"id": "4009",
 		"items": {
-			"2522": 0.04,
-			"3048": 0.6
+			"2515": 0.04
 		},
-		"location_id": "7",
+		"location_id": "6",
 		"missions": [
 			"6961",
 			"6962",
@@ -6665,14 +6696,14 @@ var CAMPAIGNS = {
 			"6965",
 			"6966"
 		],
-		"name": "Lightning Lerna"
+		"name": "Classic Lightning Lerna"
 	},
 	"4010": {
 		"id": "4010",
 		"items": {
-			"3077": 0.6
+			"2515": 0.04
 		},
-		"location_id": "17",
+		"location_id": "6",
 		"missions": [
 			"6984",
 			"6985",
@@ -6681,14 +6712,14 @@ var CAMPAIGNS = {
 			"6988",
 			"6989"
 		],
-		"name": "Lightning Krampus"
+		"name": "Classic Lightning Krampus"
 	},
 	"4011": {
 		"id": "4011",
 		"items": {
-			"3053": 0.6
+			"2515": 0.04
 		},
-		"location_id": "9",
+		"location_id": "6",
 		"missions": [
 			"7002",
 			"7003",
@@ -6697,14 +6728,14 @@ var CAMPAIGNS = {
 			"7006",
 			"7007"
 		],
-		"name": "Lightning Allies"
+		"name": "Classic Lightning Allies"
 	},
 	"4012": {
 		"id": "4012",
 		"items": {
-			"3056": 0.6
+			"2515": 0.04
 		},
-		"location_id": "10",
+		"location_id": "6",
 		"missions": [
 			"7020",
 			"7021",
@@ -6713,14 +6744,14 @@ var CAMPAIGNS = {
 			"7024",
 			"7025"
 		],
-		"name": "Lightning Nophora"
+		"name": "Classic Lightning Nophora's Return"
 	},
 	"4013": {
 		"id": "4013",
 		"items": {
-			"3083": 0.6
+			"2515": 0.04
 		},
-		"location_id": "19",
+		"location_id": "6",
 		"missions": [
 			"7038",
 			"7039",
@@ -6729,14 +6760,14 @@ var CAMPAIGNS = {
 			"7042",
 			"7043"
 		],
-		"name": "Lightning Vulcanos Payback"
+		"name": "Classic Lightning Vulcanos' Payback"
 	},
 	"4014": {
 		"id": "4014",
 		"items": {
-			"3095": 0.6
+			"2515": 0.04
 		},
-		"location_id": "23",
+		"location_id": "6",
 		"missions": [
 			"7056",
 			"7057",
@@ -6745,14 +6776,14 @@ var CAMPAIGNS = {
 			"7060",
 			"7061"
 		],
-		"name": "Lightning Return of Caesar"
+		"name": "Classic Lightning Caesar's Return"
 	},
 	"4015": {
 		"id": "4015",
 		"items": {
-			"3122": 0.6
+			"2515": 0.04
 		},
-		"location_id": "32",
+		"location_id": "6",
 		"missions": [
 			"7074",
 			"7075",
@@ -6761,14 +6792,14 @@ var CAMPAIGNS = {
 			"7078",
 			"7079"
 		],
-		"name": "Lightning Boss Ashanti Trial"
+		"name": "Classic Lightning Ashanti's Trial"
 	},
 	"4016": {
 		"id": "4016",
 		"items": {
-			"3101": 0.6
+			"2515": 0.04
 		},
-		"location_id": "25",
+		"location_id": "6",
 		"missions": [
 			"7092",
 			"7093",
@@ -6777,14 +6808,14 @@ var CAMPAIGNS = {
 			"7096",
 			"7097"
 		],
-		"name": "Lightning Boss Llorona Reborn"
+		"name": "Classic Lightning Llorona's Rebirth"
 	},
 	"4017": {
 		"id": "4017",
 		"items": {
-			"3113": 0.6
+			"2515": 0.04
 		},
-		"location_id": "29",
+		"location_id": "6",
 		"missions": [
 			"7110",
 			"7111",
@@ -6793,14 +6824,14 @@ var CAMPAIGNS = {
 			"7114",
 			"7115"
 		],
-		"name": "Lightning Darkassan Trial"
+		"name": "Classic Lightning Darkassan's Trial"
 	},
 	"4018": {
 		"id": "4018",
 		"items": {
-			"3092": 1.8
+			"2515": 0.04
 		},
-		"location_id": "22",
+		"location_id": "6",
 		"missions": [
 			"7128",
 			"7129",
@@ -6809,7 +6840,23 @@ var CAMPAIGNS = {
 			"7132",
 			"7133"
 		],
-		"name": "Lightning Nophora's Counterblast"
+		"name": "Classic Lightning Nophora's Counterblast"
+	},
+	"5001": {
+		"id": "5001",
+		"items": {
+			"3116": 0.9
+		},
+		"location_id": "30",
+		"missions": [
+			"2001",
+			"2002",
+			"2003",
+			"2004",
+			"2005",
+			"2006"
+		],
+		"name": "Lightning Boss Gobtoh"
 	}
 };
 var MISSIONS = {
@@ -16380,6 +16427,371 @@ var MISSIONS = {
 		],
 		"id": "1553",
 		"name": "Yesterday's Enemy"
+	},
+	"2001": {
+		"commander": {
+			"id": "483"
+		},
+		"deck": [
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4016"
+			},
+			{
+				"id": "6605"
+			},
+			{
+				"id": "4054"
+			},
+			{
+				"id": "4005"
+			},
+			{
+				"id": "4037"
+			},
+			{
+				"id": "4026"
+			},
+			{
+				"id": "4047"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "6600",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5627",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7609",
+				"mastery_level": "4"
+			},
+			{
+				"id": "4066",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6627",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5635",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2001",
+		"name": "No Allies Here"
+	},
+	"2002": {
+		"commander": {
+			"id": "483"
+		},
+		"deck": [
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "7225"
+			},
+			{
+				"id": "7144"
+			},
+			{
+				"id": "6147",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6147",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6168",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6168",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6168",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5627",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2002",
+		"name": "Which Witch is Which?"
+	},
+	"2003": {
+		"commander": {
+			"id": "483"
+		},
+		"deck": [
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			},
+			{
+				"id": "2101"
+			},
+			{
+				"id": "2101"
+			},
+			{
+				"id": "5147"
+			},
+			{
+				"id": "5147"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "2125"
+			},
+			{
+				"id": "5239",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5239",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5239",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5225",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5225",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5225",
+				"mastery_level": "5"
+			}
+		],
+		"id": "2003",
+		"name": "Vengeful Demons"
+	},
+	"2004": {
+		"commander": {
+			"id": "483"
+		},
+		"deck": [
+			{
+				"id": "6220"
+			},
+			{
+				"id": "5145"
+			},
+			{
+				"id": "5145"
+			},
+			{
+				"id": "5145"
+			},
+			{
+				"id": "5145"
+			},
+			{
+				"id": "5253"
+			},
+			{
+				"id": "5253"
+			},
+			{
+				"id": "5253"
+			},
+			{
+				"id": "5253"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2004",
+		"name": "A Fateful Encounter"
+	},
+	"2005": {
+		"commander": {
+			"id": "483"
+		},
+		"deck": [
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5088",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2005",
+		"name": "Betrayal!"
+	},
+	"2006": {
+		"commander": {
+			"id": "483"
+		},
+		"deck": [
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			},
+			{
+				"id": "2103"
+			},
+			{
+				"id": "2103"
+			},
+			{
+				"id": "5092"
+			},
+			{
+				"id": "5092"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "7226"
+			},
+			{
+				"id": "7226"
+			},
+			{
+				"id": "7091",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7091",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7091",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7620",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6627",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5627",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2006",
+		"name": "A Final Twist"
 	},
 	"3654": {
 		"commander": {
@@ -129471,6 +129883,46 @@ var MISSIONS = {
 			{
 				"id": "4020",
 				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
+			},
+			{
+				"id": "4020",
+				"mastery_level": "7"
 			}
 		],
 		"id": "6882",
@@ -144553,5 +145005,725 @@ var MISSIONS = {
 		],
 		"id": "7133",
 		"name": "The Last Wriggle"
+	},
+	"7134": {
+		"commander": {
+			"id": "227"
+		},
+		"deck": [
+			{
+				"id": "2102"
+			},
+			{
+				"id": "2102"
+			},
+			{
+				"id": "2102"
+			},
+			{
+				"id": "5280"
+			},
+			{
+				"id": "5280"
+			},
+			{
+				"id": "5280"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "6147"
+			},
+			{
+				"id": "5251",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5251",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5251",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6217",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6217",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5627",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7134",
+		"name": "Prologue"
+	},
+	"7135": {
+		"commander": {
+			"id": "394"
+		},
+		"deck": [
+			{
+				"id": "6187"
+			},
+			{
+				"id": "6187"
+			},
+			{
+				"id": "6187"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "8090"
+			},
+			{
+				"id": "8090"
+			},
+			{
+				"id": "8090"
+			},
+			{
+				"id": "6252",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6252",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6252",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7256",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7256",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6605",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7135",
+		"name": "Up in the Air"
+	},
+	"7136": {
+		"commander": {
+			"id": "398"
+		},
+		"deck": [
+			{
+				"id": "6187"
+			},
+			{
+				"id": "6187"
+			},
+			{
+				"id": "6187"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "8090"
+			},
+			{
+				"id": "8090"
+			},
+			{
+				"id": "8090"
+			},
+			{
+				"id": "6252",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6252",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6252",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7256",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7256",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6605",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7136",
+		"name": "Back from the Dead"
+	},
+	"7137": {
+		"commander": {
+			"id": "329"
+		},
+		"deck": [
+			{
+				"id": "5090"
+			},
+			{
+				"id": "5090"
+			},
+			{
+				"id": "5090"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "7146"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "1628"
+			},
+			{
+				"id": "2244",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2244",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2244",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2061",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2061",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4054",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7137",
+		"name": "Double Trouble"
+	},
+	"7138": {
+		"commander": {
+			"id": "454"
+		},
+		"deck": [
+			{
+				"id": "7148"
+			},
+			{
+				"id": "7148"
+			},
+			{
+				"id": "7148"
+			},
+			{
+				"id": "5091"
+			},
+			{
+				"id": "5091"
+			},
+			{
+				"id": "5091"
+			},
+			{
+				"id": "7145"
+			},
+			{
+				"id": "7145"
+			},
+			{
+				"id": "7145"
+			},
+			{
+				"id": "6303",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6303",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6303",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6303",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6627",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4016",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7138",
+		"name": "If You Stare Into the Void"
+	},
+	"7139": {
+		"commander": {
+			"id": "412"
+		},
+		"deck": [
+			{
+				"id": "2062"
+			},
+			{
+				"id": "2062"
+			},
+			{
+				"id": "2062"
+			},
+			{
+				"id": "2062"
+			},
+			{
+				"id": "2062"
+			},
+			{
+				"id": "2062"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "1344",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1344",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6141",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6141",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6141",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4074",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7139",
+		"name": "The Void Stares Back Through You"
+	},
+	"7140": {
+		"commander": {
+			"id": "321"
+		},
+		"deck": [
+			{
+				"id": "4016"
+			},
+			{
+				"id": "7255"
+			},
+			{
+				"id": "7255"
+			},
+			{
+				"id": "2063"
+			},
+			{
+				"id": "2063"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5225"
+			},
+			{
+				"id": "5225"
+			},
+			{
+				"id": "6605",
+				"mastery_level": "2"
+			},
+			{
+				"id": "4054",
+				"mastery_level": "3"
+			},
+			{
+				"id": "4005",
+				"mastery_level": "4"
+			},
+			{
+				"id": "4037",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4074",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5635",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7140",
+		"name": "A Civil War"
+	},
+	"7141": {
+		"commander": {
+			"id": "341"
+		},
+		"deck": [
+			{
+				"id": "2053"
+			},
+			{
+				"id": "2053"
+			},
+			{
+				"id": "2053"
+			},
+			{
+				"id": "6146"
+			},
+			{
+				"id": "6146"
+			},
+			{
+				"id": "6146"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5209",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5209",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6141",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6141",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4074",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6605",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7141",
+		"name": "Stolen Eye-dentity"
+	},
+	"7142": {
+		"commander": {
+			"id": "329"
+		},
+		"deck": [
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "7190"
+			},
+			{
+				"id": "7190"
+			},
+			{
+				"id": "7190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "3"
+			},
+			{
+				"id": "4016",
+				"mastery_level": "4"
+			},
+			{
+				"id": "4037",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4074",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4054",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7142",
+		"name": "When You Come At the King..."
+	},
+	"7143": {
+		"commander": {
+			"id": "454"
+		},
+		"deck": [
+			{
+				"id": "5287"
+			},
+			{
+				"id": "5287"
+			},
+			{
+				"id": "5287"
+			},
+			{
+				"id": "6218"
+			},
+			{
+				"id": "6218"
+			},
+			{
+				"id": "6218"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "6254",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6254",
+				"mastery_level": "3"
+			},
+			{
+				"id": "4016",
+				"mastery_level": "4"
+			},
+			{
+				"id": "4037",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4074",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4054",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7143",
+		"name": "You Best Not Miss"
+	},
+	"7144": {
+		"commander": {
+			"id": "329"
+		},
+		"deck": [
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "7190"
+			},
+			{
+				"id": "7190"
+			},
+			{
+				"id": "7190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7217",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6269",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6269",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4074",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7144",
+		"name": "Identity Revealed"
+	},
+	"7145": {
+		"commander": {
+			"id": "412"
+		},
+		"deck": [
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "6049"
+			},
+			{
+				"id": "6049"
+			},
+			{
+				"id": "6049"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "5190"
+			},
+			{
+				"id": "6253",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6253",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6143",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6143",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4074",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6220",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7145",
+		"name": "An Angel in Goblin Clothing"
 	}
 };

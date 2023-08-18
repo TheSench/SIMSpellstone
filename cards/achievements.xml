@@ -19819,6 +19819,191 @@
       <!-- Inventory Expansion -->
     </reward>
   </achievement>
+  <!-- Event 106: ComDev Goblin - Return to Karthos -->
+  <!-- E106 Node 1: The Return of a King -->
+  <achievement>
+    <id>3900</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Return of a King</name>
+    <!-- Campaign ID 1353, see campaigns.xml -->
+    <desc>Complete the 'The Return of a King' campaign on Mastery Level 1.</desc>
+    <mission_req>7139</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1692291600</locked_start_time>
+    <!--  Thursday, August 17, 2023 17:00:00 -->
+    <req>
+      <campaign>1353</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3116" number="50" />
+      <!-- Expediton Item ID, see campaigns.xml -->
+      <event_points id="7102" number="50" />
+      <!-- Expediton ID, see event_timeline_expeditions -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3901</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Return of a King</name>
+    <!-- Campaign ID 1353, see campaigns.xml -->
+    <desc>Complete the 'The Return of a King' campaign on Mastery Level 2.</desc>
+    <mission_req>7139</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1692291600</locked_start_time>
+    <!--  Thursday, August 17, 2023 17:00:00 -->
+    <achievement_req>3900</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1353</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3902</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Return of a King</name>
+    <!-- Campaign ID 1353, see campaigns.xml -->
+    <desc>Complete the 'The Return of a King' campaign on Mastery Level 4.</desc>
+    <mission_req>7139</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1692291600</locked_start_time>
+    <!--  Thursday, August 17, 2023 17:00:00 -->
+    <achievement_req>3901</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1353</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3903</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Return of a King</name>
+    <!-- Campaign ID 1353, see campaigns.xml -->
+    <desc>Complete the 'The Return of a King' campaign on Mastery Level 6.</desc>
+    <mission_req>7139</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1692291600</locked_start_time>
+    <!--  Thursday, August 17, 2023 17:00:00 -->
+    <achievement_req>3902</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1353</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- E106 Node 2: Warring Factions -->
+  <achievement>
+    <id>3904</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warring Factions</name>
+    <!-- Campaign ID 1354, see campaigns.xml -->
+    <desc>Complete the 'Warring Factions' campaign on Mastery Level 2.</desc>
+    <mission_req>7145</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1693501200</locked_start_time>
+    <!--  Thursday, August 31, 2023 17:00:00 -->
+    <req>
+      <campaign>1354</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3905</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warring Factions</name>
+    <!-- Campaign ID 1354, see campaigns.xml -->
+    <desc>Complete the 'Warring Factions' campaign on Mastery Level 4.</desc>
+    <mission_req>7145</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1693501200</locked_start_time>
+    <!--  Thursday, August 31, 2023 17:00:00 -->
+    <achievement_req>3904</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1354</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3906</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warring Factions</name>
+    <!-- Campaign ID 1354, see campaigns.xml -->
+    <desc>Complete the 'Warring Factions' campaign on Mastery Level 6.</desc>
+    <mission_req>7145</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1693501200</locked_start_time>
+    <!--  Thursday, August 31, 2023 17:00:00 -->
+    <achievement_req>3905</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1354</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <sp>60</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <!-- Event 106: ComDev Goblin - Return to Karthos -->
+  <achievement>
+    <id>4060</id>
+    <type>2</type>
+    <order>639</order>
+    <name>Champion of Return to Karthos</name>
+    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Karthos.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7145</mission_req>
+    <req>
+      <campaign>1255</campaign>
+      <!-- Return to Karthos, Pink1 -->
+      <campaign>1256</campaign>
+      <!-- Chaos Power Cell, Pink2 -->
+      <campaign>1257</campaign>
+      <!-- Constructing Chaos, Boss Node -->
+      <campaign>1258</campaign>
+      <!-- Chaos Allegiance, Pink3 -->
+      <campaign>1259</campaign>
+      <!-- Past Trickery Reveal, Pink4 -->
+      <campaign>1353</campaign>
+      <!-- The Return of a King, ComDev Node 1 -->
+      <campaign>1354</campaign>
+      <!-- Warring Factions, ComDev Node 2 -->
+      <level>7</level>
+      <!-- Mastery Level 7 -->
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory expansion -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

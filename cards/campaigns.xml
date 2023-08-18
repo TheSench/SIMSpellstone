@@ -12566,11 +12566,12 @@
   <campaign>
     <id>1351</id>
     <name>A Flight in the Dark</name>
-    <icon id="Lava_Vial" bundle="17" />
-    <campaign_req id="6" level="1" />
+    <icon id="machine_parts" bundle="17" />
+    <campaign_req id="36" level="1" />
     <locked_start_time>1689872400</locked_start_time>
     <!--  Thursday, July 20, 2023 17:00:00 -->
     <location_id>22</location_id>
+    <!-- From map_config.xml -->
     <x>400</x>
     <y>350</y>
     <combatBG>CombatBGVoid</combatBG>
@@ -12598,19 +12599,19 @@
       <item level="7" id="2683" number="125" />
       <!-- New Distorted Beetleton Flask -->
     </rewards>
-    <find_item id="3092" drop_per_energy="1.7" />
-    <!-- Doubled to account for no energy halving, halve this number for next BGE -->
+    <find_item id="3092" drop_per_energy="0.85" />
     <ignore_energy_reduction_until>1692291600</ignore_energy_reduction_until>
-    <!-- Thursday, August 17, 2023 at 17:00:00 	  -->
+    <!-- Thursday, August 17, 2023 at 17:00:00 -->
   </campaign>
   <campaign>
     <id>1352</id>
     <name>The Healer's Prison</name>
-    <icon id="Lava_Vial" bundle="17" />
+    <icon id="machine_parts" bundle="17" />
     <campaign_req id="1351" level="1" />
     <locked_start_time>1691082000</locked_start_time>
     <!--  Thursday, August 3, 2023 17:00:00 -->
     <location_id>22</location_id>
+    <!-- From map_config.xml -->
     <x>650</x>
     <y>500</y>
     <combatBG>CombatBGVoid</combatBG>
@@ -12638,10 +12639,147 @@
       <item level="7" id="2683" number="125" />
       <!-- New Distorted Beetleton Flask -->
     </rewards>
-    <find_item id="3092" drop_per_energy="1.8" />
-    <!-- Doubled to account for no energy halving, halve this number for next BGE -->
+    <find_item id="3092" drop_per_energy="0.9" />
     <ignore_energy_reduction_until>1692291600</ignore_energy_reduction_until>
-    <!-- Thursday, July 20, 2023 at 17:00:00 	  -->
+    <!-- Thursday, August 17, 2023 at 17:00:00 -->
+  </campaign>
+  <!-- Event 106: ComDev Goblin - Return to Karthos -->
+  <campaign>
+    <id>1353</id>
+    <name>The Return of a King</name>
+    <icon id="machine_parts" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <!-- From now on, all ComDev nodes require first 6 maps up to Seastone Citadel to be completed -->
+    <locked_start_time>1692291600</locked_start_time>
+    <!--  Thursday, August 17, 2023 17:00:00 -->
+    <location_id>30</location_id>
+    <!-- From map_config.xml -->
+    <x>530</x>
+    <!-- Left Right -->
+    <y>380</y>
+    <!-- Up Down -->
+    <combatBG>CombatBGKarthos</combatBG>
+    <missions>
+      <mission_id>7134</mission_id>
+      <mission_id>7135</mission_id>
+      <mission_id>7136</mission_id>
+      <mission_id>7137</mission_id>
+      <mission_id>7138</mission_id>
+      <mission_id>7139</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2700" number="50" />
+      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+      <card level="2" id="512" number="2" />
+      <!-- Arcane Deposit -->
+      <item level="3" id="3200" />
+      <!-- New Random Goblin Reward Epic Choice -->
+      <card level="4" id="2064" number="2" />
+      <!-- Tome Thief Reward Epic -->
+      <card level="5" id="2100" number="2" />
+      <!-- Kheptronos Reward Legendary -->
+      <item level="6" id="3200" />
+      <!-- New Random Goblin Reward Epic Choice -->
+      <item level="7" id="2700" number="150" />
+      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+    </rewards>
+    <find_item id="3116" drop_per_energy="1.7" />
+    <!-- Halve to 0.85 after end of BGE -->
+    <ignore_energy_reduction_until>1694710800</ignore_energy_reduction_until>
+    <!-- Thursday, September 14, 2023 at 17:00:00	   -->
+  </campaign>
+  <campaign>
+    <id>1354</id>
+    <name>Warring Factions</name>
+    <icon id="machine_parts" bundle="17" />
+    <campaign_req id="1353" level="1" />
+    <!-- Require previous node in event -->
+    <locked_start_time>1693501200</locked_start_time>
+    <!--  Thursday, August 31, 2023 17:00:00 -->
+    <location_id>30</location_id>
+    <!-- From map_config.xml -->
+    <x>220</x>
+    <!-- Left Right -->
+    <y>600</y>
+    <!-- Up Down -->
+    <combatBG>CombatBGKarthos</combatBG>
+    <missions>
+      <mission_id>7140</mission_id>
+      <mission_id>7141</mission_id>
+      <mission_id>7142</mission_id>
+      <mission_id>7143</mission_id>
+      <mission_id>7144</mission_id>
+      <mission_id>7145</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2700" number="50" />
+      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+      <card level="2" id="512" number="2" />
+      <!-- Arcane Deposit -->
+      <item level="3" id="3200" />
+      <!-- New Random Goblin Reward Epic Choice -->
+      <card level="4" id="2064" number="2" />
+      <!-- Tome Thief Reward Epic -->
+      <card level="5" id="2100" number="2" />
+      <!-- Kheptronos Reward Legendary -->
+      <item level="6" id="3200" />
+      <!-- New Random Goblin Reward Epic Choice -->
+      <item level="7" id="2700" number="150" />
+      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+    </rewards>
+    <find_item id="3116" drop_per_energy="1.8" />
+    <!-- Halve to 0.9 after end of BGE -->
+    <ignore_energy_reduction_until>1694710800</ignore_energy_reduction_until>
+    <!-- Thursday, September 14, 2023 at 17:00:00	   -->
+  </campaign>
+  <!-- =================================================== -->
+  <!-- = START (5001-) New One-Time Lightning Boss Nodes = -->
+  <!-- =================================================== -->
+  <!-- Event 106: ComDev Goblin - New Lightning Node-->
+  <campaign>
+    <id>5001</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Boss Gobtoh</name>
+    <icon id="energy_refill" bundle="30" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <campaign_req id="1354" level="1" />
+    <!-- Require main story nodes in event -->
+    <location_id>30</location_id>
+    <!-- From map_config.xml -->
+    <x>700</x>
+    <!-- Left Right -->
+    <y>620</y>
+    <!-- Up Down -->
+    <combatBG>CombatBGKarthos</combatBG>
+    <missions>
+      <mission_id>2001</mission_id>
+      <mission_id>2002</mission_id>
+      <mission_id>2003</mission_id>
+      <mission_id>2004</mission_id>
+      <mission_id>2005</mission_id>
+      <mission_id>2006</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="516" />
+      <!-- Thank You crate (energy and bounty refill) -->
+      <item level="2" id="3200" />
+      <!-- New Random Goblin Reward Epic Choice -->
+      <item level="3" id="3200" />
+      <!-- New Random Goblin Reward Epic Choice -->
+      <item level="4" id="104074" number="25" />
+      <!-- Sivun -->
+      <item level="5" id="104074" number="75" />
+      <!-- Sivun -->
+      <item level="6" id="2801" number="25" />
+      <!-- Goblin Civil War Flask -->
+      <item level="7" id="2801" number="75" />
+      <!-- Goblin Civil War Flask -->
+      <gold level="7" number="1000" />
+      <!-- Gold reward test -->
+    </rewards>
+    <find_item id="3116" drop_per_energy="0.9" />
+    <!-- Matches final node (with energy reduction) -->
   </campaign>
   <!-- End campaign events -->
   <!-- ============================ -->
@@ -13151,19 +13289,24 @@
     <ignore_energy_reduction>1</ignore_energy_reduction>
   </campaign>
   <!-- ============================ -->
-  <!-- START Lightning Boss Nodes Campaigns -->
+  <!-- START Classic Lightning Boss Nodes Campaigns -->
   <!-- ============================ -->
-  <!-- LBN Vulcanos Dragon event 88  -->
+  <!-- LBN Vulcanos Dragon event 88 -->
   <campaign>
     <id>4001</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Vulcanos</name>
+    <name>Classic Lightning Vulcanos</name>
     <icon id="gem_Boss_LG" bundle="0" />
-    <location_id>31</location_id>
+    <exclude_map_bges>1</exclude_map_bges>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
-    <y>500</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6807</mission_id>
       <mission_id>6808</mission_id>
@@ -13181,20 +13324,26 @@
       <card level="6" id="2006" />
       <item level="7" id="104057" number="100" />
     </rewards>
-    <find_item id="3119" drop_per_energy="0.4" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Vulcanos Dragon event 88 END -->
-  <!-- LBN Alyel Angel event 89  -->
+  <!-- LBN Alyel Angel event 89 -->
   <campaign>
     <id>4002</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Alyel</name>
+    <name>Classic Lightning Alyel</name>
     <icon id="gem_Boss_LG" bundle="0" />
-    <location_id>27</location_id>
-    <x>200</x>
-    <y>270</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <exclude_map_bges>1</exclude_map_bges>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6825</mission_id>
       <mission_id>6826</mission_id>
@@ -13212,21 +13361,26 @@
       <item level="6" id="104058" number="25" />
       <item level="7" id="104058" number="75" />
     </rewards>
-    <find_item id="3107" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Alyel Angel event 89 END -->
-  <!-- LBN Ashanti Avian event 90  -->
+  <!-- LBN Ashanti Avian event 90 -->
   <campaign>
     <id>4003</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Ashanti</name>
+    <name>Classic Lightning Ashanti</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>8</location_id>
-    <x>635</x>
-    <y>160</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6843</mission_id>
       <mission_id>6844</mission_id>
@@ -13244,21 +13398,26 @@
       <item level="6" id="104059" number="25" />
       <item level="7" id="104059" number="75" />
     </rewards>
-    <find_item id="3049" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Ashanti Avian event 90 END -->
-  <!-- LBN Nophora Insect event 91  -->
+  <!-- LBN Nophora Insect event 91 -->
   <campaign>
     <id>4004</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Nophora</name>
+    <name>Classic Lightning Nophora</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>16</location_id>
-    <x>670</x>
-    <y>180</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6861</mission_id>
       <mission_id>6862</mission_id>
@@ -13276,21 +13435,26 @@
       <item level="6" id="104060" number="25" />
       <item level="7" id="104060" number="75" />
     </rewards>
-    <find_item id="3074" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Nophora Insect event 91 END -->
-  <!-- LBN Llorona Undead event 92  -->
+  <!-- LBN Llorona Undead event 92 -->
   <campaign>
     <id>4005</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Llorona</name>
+    <name>Classic Lightning Llorona</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>21</location_id>
-    <x>630</x>
-    <y>160</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6879</mission_id>
       <mission_id>6880</mission_id>
@@ -13308,23 +13472,26 @@
       <item level="6" id="104061" number="25" />
       <item level="7" id="104061" number="75" />
     </rewards>
-    <find_item id="3089" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Llorona Undead event 92 END -->
-  <!-- LBN Caesar Frog event 93  -->
+  <!-- LBN Caesar Frog event 93 -->
   <campaign>
     <id>4006</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Caesar</name>
+    <name>Classic Lightning Caesar</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>33</location_id>
-    <x>615</x>
-    <!-- left right -->
-    <y>450</y>
-    <!-- up down -->
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6897</mission_id>
       <mission_id>6898</mission_id>
@@ -13342,23 +13509,26 @@
       <item level="6" id="104062" number="25" />
       <item level="7" id="104062" number="75" />
     </rewards>
-    <find_item id="3125" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Caesar Frog event 93 END -->
-  <!-- LBN Remi Elemental event 94  -->
+  <!-- LBN Remi Elemental event 94 -->
   <campaign>
     <id>4007</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Remi</name>
+    <name>Classic Lightning Remi</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>9</location_id>
-    <x>725</x>
-    <!-- left right -->
-    <y>480</y>
-    <!-- up down -->
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6922</mission_id>
       <mission_id>6923</mission_id>
@@ -13376,23 +13546,26 @@
       <item level="6" id="104063" number="25" />
       <item level="7" id="104063" number="75" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Remi Frog event 94 END -->
-  <!-- LBN Darkassan Mecha event 95  -->
+  <!-- LBN Darkassan Mecha event 95 -->
   <campaign>
     <id>4008</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Darkassan</name>
+    <name>Classic Lightning Darkassan</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>23</location_id>
-    <x>400</x>
-    <!-- left right -->
-    <y>450</y>
-    <!-- up down -->
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6940</mission_id>
       <mission_id>6941</mission_id>
@@ -13410,21 +13583,26 @@
       <item level="6" id="104064" number="25" />
       <item level="7" id="104064" number="75" />
     </rewards>
-    <find_item id="3095" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Darkassan Mecha event 95 END -->
-  <!-- LBN Lerna Seafolk event 96  -->
+  <!-- LBN Lerna Seafolk event 96 -->
   <campaign>
     <id>4009</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Lerna</name>
+    <name>Classic Lightning Lerna</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>7</location_id>
-    <x>125</x>
-    <y>405</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6961</mission_id>
       <mission_id>6962</mission_id>
@@ -13442,22 +13620,26 @@
       <item level="6" id="104065" number="25" />
       <item level="7" id="104065" number="75" />
     </rewards>
-    <find_item id="3048" drop_per_energy=".6" />
-    <find_item id="2522" drop_per_energy="0.04" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Lerna Seafolk event 96 END -->
-  <!-- LBN Krampus Goblin event 97  -->
+  <!-- LBN Krampus Goblin event 97 -->
   <campaign>
     <id>4010</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Krampus</name>
+    <name>Classic Lightning Krampus</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>17</location_id>
-    <x>100</x>
-    <y>490</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>6984</mission_id>
       <mission_id>6985</mission_id>
@@ -13475,20 +13657,25 @@
       <item level="6" id="104066" number="25" />
       <item level="7" id="104066" number="75" />
     </rewards>
-    <find_item id="3077" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Krampus Goblin event 97 END -->
-  <!-- LBN Uncommon Allies event 98  -->
+  <!-- LBN Uncommon Allies event 98 -->
   <campaign>
     <id>4011</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Allies</name>
+    <name>Classic Lightning Allies</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>9</location_id>
-    <x>125</x>
-    <y>200</y>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7002</mission_id>
@@ -13507,21 +13694,25 @@
       <item level="6" id="104067" number="25" />
       <item level="7" id="104067" number="75" />
     </rewards>
-    <find_item id="3053" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Uncommon Allies event 98 END -->
-  <!-- LBN Nophora event 99  -->
+  <!-- LBN Nophora event 99 -->
   <campaign>
     <id>4012</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Nophora</name>
+    <name>Classic Lightning Nophora's Return</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>10</location_id>
-    <x>683</x>
-    <y>460</y>
-    <!-- up down -->
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7020</mission_id>
@@ -13540,21 +13731,25 @@
       <item level="6" id="105640" number="25" />
       <item level="7" id="105640" number="75" />
     </rewards>
-    <find_item id="3056" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Nophora event 99 END -->
-  <!-- LBN Vulcanos event 100  -->
+  <!-- LBN Vulcanos event 100 -->
   <campaign>
     <id>4013</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Vulcanos Payback</name>
+    <name>Classic Lightning Vulcanos' Payback</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>19</location_id>
-    <x>300</x>
-    <y>130</y>
-    <!-- up down -->
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7038</mission_id>
@@ -13573,21 +13768,25 @@
       <item level="6" id="104068" number="25" />
       <item level="7" id="104068" number="75" />
     </rewards>
-    <find_item id="3083" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Vulcanos event 100 END -->
-  <!-- LBN Caesar event 101  -->
+  <!-- LBN Caesar event 101 -->
   <campaign>
     <id>4014</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Return of Caesar</name>
+    <name>Classic Lightning Caesar's Return</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>23</location_id>
-    <x>250</x>
-    <y>130</y>
-    <!-- up down -->
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7056</mission_id>
@@ -13606,26 +13805,27 @@
       <item level="6" id="104069" number="25" />
       <item level="7" id="104069" number="75" />
     </rewards>
-    <find_item id="3095" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Caesar event 101 END -->
-  <!-- LBN Ashanti event 102  -->
+  <!-- LBN Ashanti event 102 -->
   <campaign>
     <id>4015</id>
     <!-- HERE -->
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Boss Ashanti Trial</name>
+    <name>Classic Lightning Ashanti's Trial</name>
     <!-- HERE -->
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>32</location_id>
-    <!-- HERE -->
-    <x>453</x>
-    <!-- HERE -->
-    <y>120</y>
-    <!-- up down -->
-    <!-- HERE -->
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7074</mission_id>
@@ -13654,25 +13854,27 @@
       <item level="7" id="104070" number="75" />
       <!-- HERE -->
     </rewards>
-    <find_item id="3122" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Ashanti event 102 END -->
-  <!-- LBN Llorona event 103  -->
+  <!-- LBN Llorona event 103 -->
   <campaign>
     <id>4016</id>
     <!-- HERE -->
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Boss Llorona Reborn</name>
+    <name>Classic Lightning Llorona's Rebirth</name>
     <!-- HERE -->
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>25</location_id>
-    <!-- HERE -->
-    <x>230</x>
-    <!-- left right -->
-    <y>580</y>
-    <!-- up down -->
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
     <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7092</mission_id>
@@ -13701,23 +13903,26 @@
       <item level="7" id="104071" number="75" />
       <!-- HERE -->
     </rewards>
-    <find_item id="3101" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Llorona event 103 END -->
-  <!-- LBN Darkassan Mecha event 104  -->
+  <!-- LBN Darkassan Mecha event 104 -->
   <campaign>
     <id>4017</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Darkassan Trial</name>
+    <name>Classic Lightning Darkassan's Trial</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>29</location_id>
-    <x>195</x>
-    <!-- left right -->
-    <y>390</y>
-    <!-- up down -->
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7110</mission_id>
       <mission_id>7111</mission_id>
@@ -13735,7 +13940,8 @@
       <item level="6" id="104072" number="25" />
       <item level="7" id="104072" number="75" />
     </rewards>
-    <find_item id="3113" drop_per_energy=".6" />
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
   <!-- LBN Darkassan Mecha event 104 END -->
   <!-- Event 105: Insects ComDev Lightning Node-->
@@ -13743,16 +13949,17 @@
     <id>4018</id>
     <event_only>1</event_only>
     <hidden>1</hidden>
-    <name>Lightning Nophora's Counterblast</name>
+    <name>Classic Lightning Nophora's Counterblast</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>22</location_id>
-    <!-- Distorted Beetleton -->
-    <x>790</x>
-    <!-- left right -->
-    <y>480</y>
-    <!-- up down -->
-    <combatBG>CombatBGVoid</combatBG>
+    <campaign_req id="36" level="1" />
+    <location_id>6</location_id>
+    <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
+    <x>450</x>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <y>550</y>
+    <!-- All Classic Lightning Bosses will be in the same position -->
+    <combatBG>CombatBGEvent008</combatBG>
     <missions>
       <mission_id>7128</mission_id>
       <mission_id>7129</mission_id>
@@ -13772,12 +13979,12 @@
       <!-- Eos -->
       <card level="5" id="2043" />
       <!-- Eos -->
-      <item level="6" id="104073" number="100" />
+      <item level="6" id="104073" number="25" />
       <!-- Helvius -->
-      <item level="7" id="2" number="120" />
-      <!-- Shard equivalent of 2 keys -->
+      <item level="7" id="104073" number="75" />
+      <!-- Helvius -->
     </rewards>
-    <find_item id="3092" drop_per_energy="1.8" />
-    <!-- Matches the rate of the final in the map node -->
+    <find_item id="2515" drop_per_energy="0.04" />
+    <!-- Embersouls -->
   </campaign>
 </root>

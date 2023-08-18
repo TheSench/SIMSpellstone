@@ -2312,7 +2312,7 @@ var BATTLEGROUNDS = {
 		"name": "Thriving Swarm"
 	},
 	"168": {
-		"desc": "All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 15% + Delay Barrage, Wyld gain 7% + Delay Venom. Void gain Siphon equal to base Attack. Values are based on base health.",
+		"desc": "All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 20% + Delay Barrage, Wyld gain 10% + delay Venom, Void gain Siphon equal to base Attack. Values are based on base health.",
 		"effect": [
 			{
 				"base": "health",
@@ -2382,7 +2382,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 0.15,
+				"mult": 0.2,
 				"y": "2,11"
 			},
 			{
@@ -2392,7 +2392,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 0.15,
+				"mult": 0.2,
 				"x": 1,
 				"y": "2,11"
 			},
@@ -2403,7 +2403,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 0.15,
+				"mult": 0.2,
 				"x": 2,
 				"y": "2,11"
 			},
@@ -2414,7 +2414,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 0.15,
+				"mult": 0.2,
 				"x": 3,
 				"y": "2,11"
 			},
@@ -2425,7 +2425,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 0.15,
+				"mult": 0.2,
 				"x": 4,
 				"y": "2,11"
 			},
@@ -2436,7 +2436,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "venom",
-				"mult": 0.07,
+				"mult": 0.1,
 				"y": "3,11"
 			},
 			{
@@ -2446,7 +2446,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "venom",
-				"mult": 0.07,
+				"mult": 0.1,
 				"x": 1,
 				"y": "3,11"
 			},
@@ -2457,7 +2457,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "venom",
-				"mult": 0.07,
+				"mult": 0.1,
 				"x": 2,
 				"y": "3,11"
 			},
@@ -2468,7 +2468,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "venom",
-				"mult": 0.07,
+				"mult": 0.1,
 				"x": 3,
 				"y": "3,11"
 			},
@@ -2479,7 +2479,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "venom",
-				"mult": 0.07,
+				"mult": 0.1,
 				"x": 4,
 				"y": "3,11"
 			},
