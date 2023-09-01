@@ -2494,6 +2494,86 @@ var BATTLEGROUNDS = {
 		"id": "168",
 		"name": "Goblin Civil War"
 	},
+	"169": {
+		"desc": "0-2D Elementals gain Scorch, Weaken and Pierce equal to 15% base health. 3-4D Elementals gain Barrier and Vengeance and are Enraged for 10% base health.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.15,
+				"y": "5"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "weakenbge",
+				"mult": 0.15,
+				"y": "5"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 0.15,
+				"y": "5"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"mult": 0.1,
+				"y": "5"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"y": "5"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "skill",
+				"id": "enrage",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"y": "5"
+			}
+		],
+		"id": "169",
+		"name": "Elemental Meltdown"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

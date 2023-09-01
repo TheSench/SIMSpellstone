@@ -12566,7 +12566,7 @@
   <campaign>
     <id>1351</id>
     <name>A Flight in the Dark</name>
-    <icon id="machine_parts" bundle="17" />
+    <icon id="machine_parts_200" bundle="17" />
     <campaign_req id="36" level="1" />
     <locked_start_time>1689872400</locked_start_time>
     <!--  Thursday, July 20, 2023 17:00:00 -->
@@ -12606,7 +12606,7 @@
   <campaign>
     <id>1352</id>
     <name>The Healer's Prison</name>
-    <icon id="machine_parts" bundle="17" />
+    <icon id="machine_parts_200" bundle="17" />
     <campaign_req id="1351" level="1" />
     <locked_start_time>1691082000</locked_start_time>
     <!--  Thursday, August 3, 2023 17:00:00 -->
@@ -12647,7 +12647,7 @@
   <campaign>
     <id>1353</id>
     <name>The Return of a King</name>
-    <icon id="machine_parts" bundle="17" />
+    <icon id="machine_parts_200" bundle="17" />
     <campaign_req id="36" level="1" />
     <!-- From now on, all ComDev nodes require first 6 maps up to Seastone Citadel to be completed -->
     <locked_start_time>1692291600</locked_start_time>
@@ -12670,13 +12670,13 @@
     <rewards>
       <item level="1" id="2700" number="50" />
       <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
-      <card level="2" id="512" number="2" />
+      <card level="2" id="512" />
       <!-- Arcane Deposit -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
-      <card level="4" id="2064" number="2" />
+      <card level="4" id="2064" />
       <!-- Tome Thief Reward Epic -->
-      <card level="5" id="2100" number="2" />
+      <card level="5" id="2100" />
       <!-- Kheptronos Reward Legendary -->
       <card level="6" id="511" />
       <!-- Arcane Ore -->
@@ -12691,7 +12691,7 @@
   <campaign>
     <id>1354</id>
     <name>Warring Factions</name>
-    <icon id="machine_parts" bundle="17" />
+    <icon id="machine_parts_200" bundle="17" />
     <campaign_req id="1353" level="1" />
     <!-- Require previous node in event -->
     <locked_start_time>1693501200</locked_start_time>
@@ -12714,13 +12714,13 @@
     <rewards>
       <item level="1" id="2700" number="50" />
       <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
-      <card level="2" id="512" number="2" />
+      <card level="2" id="512" />
       <!-- Arcane Deposit -->
       <card level="3" id="2100" />
       <!-- Kheptronos Reward Legendary -->
-      <card level="4" id="2064" number="2" />
+      <card level="4" id="2064" />
       <!-- Tome Thief Reward Epic -->
-      <card level="5" id="2100" number="2" />
+      <card level="5" id="2100" />
       <!-- Kheptronos Reward Legendary -->
       <card level="6" id="2100" />
       <!-- Kheptronos Reward Legendary -->
@@ -13297,6 +13297,7 @@
     <name>Classic Lightning Vulcanos</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13333,6 +13334,7 @@
     <name>Classic Lightning Alyel</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13369,6 +13371,7 @@
     <name>Classic Lightning Ashanti</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13405,6 +13408,7 @@
     <name>Classic Lightning Nophora</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13441,6 +13445,7 @@
     <name>Classic Lightning Llorona</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13477,6 +13482,7 @@
     <name>Classic Lightning Caesar</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13513,6 +13519,7 @@
     <name>Classic Lightning Remi</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13549,6 +13556,7 @@
     <name>Classic Lightning Darkassan</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13585,6 +13593,7 @@
     <name>Classic Lightning Lerna</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13621,6 +13630,7 @@
     <name>Classic Lightning Krampus</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13657,6 +13667,7 @@
     <name>Classic Lightning Allies</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13693,6 +13704,7 @@
     <name>Classic Lightning Nophora's Return</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13729,6 +13741,7 @@
     <name>Classic Lightning Vulcanos' Payback</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13765,6 +13778,7 @@
     <name>Classic Lightning Caesar's Return</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13803,6 +13817,7 @@
     <!-- HERE -->
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13851,6 +13866,7 @@
     <!-- HERE -->
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13897,6 +13913,7 @@
     <name>Classic Lightning Darkassan's Trial</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>
@@ -13933,6 +13950,7 @@
     <name>Classic Lightning Nophora's Counterblast</name>
     <icon id="gem_Boss_LG" bundle="0" />
     <exclude_map_bges>1</exclude_map_bges>
+    <side_mission>1</side_mission>
     <location_id>6</location_id>
     <!-- All Classic Lightning Bosses will be in Seastone Citadel -->
     <x>450</x>

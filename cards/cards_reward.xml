@@ -26502,8 +26502,8 @@
     <picture>Frog_Shadow_Jumper_A</picture>
     <asset_bundle>236</asset_bundle>
     <hidden_until_time>1639069200</hidden_until_time>
-    <attack>5</attack>
-    <health>11</health>
+    <attack>4</attack>
+    <health>9</health>
     <cost>0</cost>
     <rarity>4</rarity>
     <skill id="valor" x="3" />
@@ -26520,15 +26520,15 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>12</health>
+      <health>10</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>13</health>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>14</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -26545,8 +26545,8 @@
     <picture>Frog_Shadow_Jumper_A</picture>
     <asset_bundle>236</asset_bundle>
     <hidden_until_time>1639069200</hidden_until_time>
-    <attack>5</attack>
-    <health>14</health>
+    <attack>4</attack>
+    <health>12</health>
     <cost>0</cost>
     <rarity>4</rarity>
     <skill id="valor" x="4" />
@@ -26557,26 +26557,26 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="valor" x="4" />
-      <skill id="enfeeble" x="2" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
       <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>16</health>
+      <health>14</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>17</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="valor" x="5" />
-      <skill id="enfeeble" x="2" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
       <skill id="flurry" c="4" />
     </upgrade>
   </unit>
@@ -26588,38 +26588,40 @@
     <picture>Frog_Shadow_Jumper_B</picture>
     <asset_bundle>236</asset_bundle>
     <hidden_until_time>1639069200</hidden_until_time>
-    <attack>5</attack>
-    <health>17</health>
+    <attack>4</attack>
+    <health>15</health>
     <cost>0</cost>
     <rarity>4</rarity>
     <skill id="valor" x="5" />
-    <skill id="enfeeble" x="2" all="1" />
+    <skill id="enfeeble" x="1" all="1" />
     <skill id="flurry" c="3" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>18</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>19</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>20</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="valor" x="6" />
+      <skill id="valor" x="5" />
       <skill id="enfeeble" x="2" all="1" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>4</attack>
+      <health>18</health>
       <skill id="valor" x="6" />
-      <skill id="enfeeble" x="3" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>

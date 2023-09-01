@@ -65550,7 +65550,7 @@
         <!-- Dilbert -->
         <enemy>0</enemy>
         <!-- Speech coming from left hand side -->
-        <text>Hold up! Why don"t we just ask that ship up there for spares?</text>
+        <text>Hold up! Why don&apos;t we just ask that ship up there for spares?</text>
       </line>
       <line>
         <commander>bearcommander</commander>
@@ -65896,7 +65896,7 @@
         <!-- Mysterious shadows -->
         <enemy>1</enemy>
         <!-- Speech coming from right hand side -->
-        <text>You will find what you desire at your journey&quot;s end.</text>
+        <text>You will find what you desire at your journey&apos;s end.</text>
       </line>
       <line>
         <commander>Portrait_Daknak</commander>
@@ -66022,11 +66022,11 @@
     </deck>
     <speech>
       <line>
-        <commander>Portal_King_Goblin</commander>
+        <commander>Portrait_King_Goblin </commander>
         <!-- Reks -->
         <enemy>1</enemy>
         <!-- Speech coming from left hand side -->
-        <text>Well, well, well. I wouldn"t believe it if I didn&apos;t see it with my own two eyes.</text>
+        <text>Well, well, well. I wouldn&apos;t believe it if I didn&apos;t see it with my own two eyes.</text>
       </line>
       <line>
         <commander>event_036_w2</commander>
@@ -66117,7 +66117,7 @@
     <id>7144</id>
     <name>Identity Revealed</name>
     <energy>18</energy>
-    <desc>You agree to work with Daknak to lure the imposter king into a trap. Your aerial reinforcements from Yuriel and Samael just in time. Daknak sends his air force as bait whilst you send the owl mystic armed with his knowledge of dispelling magic.</desc>
+    <desc>You agree to work with Daknak to lure the imposter king into a trap. Your aerial reinforcements from Yuriel and Samael arrive just in time. Daknak sends his air force as bait whilst you send the owl mystic armed with his knowledge of dispelling magic.</desc>
     <commander id="329" />
     <!-- Reks -->
     <deck>
@@ -66152,7 +66152,7 @@
     </deck>
     <speech>
       <line>
-        <commander>Portal_King_Goblin</commander>
+        <commander>Portrait_King_Goblin </commander>
         <!-- Reks -->
         <enemy>1</enemy>
         <!-- Speech coming from left hand side -->
@@ -66166,7 +66166,7 @@
         <text>Time to find out who you really are!</text>
       </line>
       <line>
-        <commander>Portal_King_Goblin</commander>
+        <commander>Portrait_King_Goblin </commander>
         <!-- Reks -->
         <enemy>1</enemy>
         <!-- Speech coming from left hand side -->
@@ -66438,7 +66438,7 @@
         <!-- Centurion -->
         <enemy>1</enemy>
         <!-- Speech coming from right hand side -->
-        <text>I&quot;m sorry but I can"t let you do that.</text>
+        <text>I&apos;m sorry but I can&apos;t let you do that.</text>
       </line>
     </speech>
   </mission>
@@ -66488,14 +66488,14 @@
         <!-- Centurion -->
         <enemy>1</enemy>
         <!-- Speech coming from right hand side -->
-        <text>Sivun is working for Gobtoh, not Boldur. And Sivun attacked you before Gobtoh, disguised as false Reks, even checked your ship for any of Nophora&quot;s weapons.</text>
+        <text>Sivun is working for Gobtoh, not Boldur. And Sivun attacked you before Gobtoh, disguised as false Reks, even checked your ship for any of Nophora&apos;s weapons.</text>
       </line>
       <line>
         <commander>event_047_box_goblinspikedshell</commander>
         <!-- Centurion -->
         <enemy>1</enemy>
         <!-- Speech coming from right hand side -->
-        <text>That means Gobtoh must know where the real cache is hidden. You can&quot;t smite him now, adventurer. You need him to lead you to the weapons!</text>
+        <text>That means Gobtoh must know where the real cache is hidden. You can&apos;t smite him now, adventurer. You need him to lead you to the weapons!</text>
       </line>
     </speech>
   </mission>

@@ -20,68 +20,68 @@
     <level>1</level>
     <salvage0>1</salvage0>
     <!-- Fusion 0 salvage amount -->
-    <salvage1>40</salvage1>
+    <salvage1>42</salvage1>
     <!-- Fusion 1 salvage amount -->
-    <salvage2>120</salvage2>
+    <salvage2>124</salvage2>
     <!-- Fusion 2 salvage amount -->
     <sp_cost>5</sp_cost>
     <!-- This is how much it costs to increase to next level, not how much this level costs -->
-    <buyback_cost0>10</buyback_cost0>
+    <buyback_cost0>5</buyback_cost0>
     <!-- Cost to get this card from buyback at Fusion 0 -->
-    <buyback_cost1>80</buyback_cost1>
+    <buyback_cost1>60</buyback_cost1>
     <!-- Cost to get this card from buyback at Fusion 1 -->
-    <buyback_cost2>240</buyback_cost2>
+    <buyback_cost2>150</buyback_cost2>
     <!-- Cost to get this card from buyback at Fusion 2 -->
   </card_level>
   <card_level>
     <rarity>1</rarity>
     <level>2</level>
-    <salvage0>5</salvage0>
-    <salvage1>45</salvage1>
-    <salvage2>125</salvage2>
+    <salvage0>6</salvage0>
+    <salvage1>47</salvage1>
+    <salvage2>129</salvage2>
     <sp_cost>15</sp_cost>
   </card_level>
   <card_level>
     <rarity>1</rarity>
     <level>3</level>
-    <salvage0>20</salvage0>
-    <salvage1>60</salvage1>
-    <salvage2>140</salvage2>
+    <salvage0>21</salvage0>
+    <salvage1>62</salvage1>
+    <salvage2>144</salvage2>
   </card_level>
   <!-- Rare -->
   <card_level>
     <rarity>2</rarity>
     <level>1</level>
     <salvage0>8</salvage0>
-    <salvage1>100</salvage1>
-    <salvage2>300</salvage2>
+    <salvage1>116</salvage1>
+    <salvage2>332</salvage2>
     <sp_cost>5</sp_cost>
-    <buyback_cost0>60</buyback_cost0>
-    <buyback_cost1>160</buyback_cost1>
+    <buyback_cost0>20</buyback_cost0>
+    <buyback_cost1>140</buyback_cost1>
     <buyback_cost2>360</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>2</rarity>
     <level>2</level>
-    <salvage0>5</salvage0>
-    <salvage1>105</salvage1>
-    <salvage2>305</salvage2>
+    <salvage0>13</salvage0>
+    <salvage1>121</salvage1>
+    <salvage2>337</salvage2>
     <sp_cost>15</sp_cost>
   </card_level>
   <card_level>
     <rarity>2</rarity>
     <level>3</level>
-    <salvage0>20</salvage0>
-    <salvage1>120</salvage1>
-    <salvage2>320</salvage2>
+    <salvage0>28</salvage0>
+    <salvage1>136</salvage1>
+    <salvage2>352</salvage2>
     <sp_cost>30</sp_cost>
   </card_level>
   <card_level>
     <rarity>2</rarity>
     <level>4</level>
-    <salvage0>50</salvage0>
-    <salvage1>150</salvage1>
-    <salvage2>350</salvage2>
+    <salvage0>58</salvage0>
+    <salvage1>166</salvage1>
+    <salvage2>382</salvage2>
   </card_level>
   <!-- Epic -->
   <card_level>

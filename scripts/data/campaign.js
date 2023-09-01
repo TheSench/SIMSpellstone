@@ -6568,7 +6568,8 @@ var CAMPAIGNS = {
 			"6811",
 			"6812"
 		],
-		"name": "Classic Lightning Vulcanos"
+		"name": "Classic Lightning Vulcanos",
+		"side_mission": "1"
 	},
 	"4002": {
 		"id": "4002",
@@ -6584,7 +6585,8 @@ var CAMPAIGNS = {
 			"6829",
 			"6830"
 		],
-		"name": "Classic Lightning Alyel"
+		"name": "Classic Lightning Alyel",
+		"side_mission": "1"
 	},
 	"4003": {
 		"id": "4003",
@@ -6600,7 +6602,8 @@ var CAMPAIGNS = {
 			"6847",
 			"6848"
 		],
-		"name": "Classic Lightning Ashanti"
+		"name": "Classic Lightning Ashanti",
+		"side_mission": "1"
 	},
 	"4004": {
 		"id": "4004",
@@ -6616,7 +6619,8 @@ var CAMPAIGNS = {
 			"6865",
 			"6866"
 		],
-		"name": "Classic Lightning Nophora"
+		"name": "Classic Lightning Nophora",
+		"side_mission": "1"
 	},
 	"4005": {
 		"id": "4005",
@@ -6632,7 +6636,8 @@ var CAMPAIGNS = {
 			"6883",
 			"6884"
 		],
-		"name": "Classic Lightning Llorona"
+		"name": "Classic Lightning Llorona",
+		"side_mission": "1"
 	},
 	"4006": {
 		"id": "4006",
@@ -6648,7 +6653,8 @@ var CAMPAIGNS = {
 			"6901",
 			"6902"
 		],
-		"name": "Classic Lightning Caesar"
+		"name": "Classic Lightning Caesar",
+		"side_mission": "1"
 	},
 	"4007": {
 		"id": "4007",
@@ -6664,7 +6670,8 @@ var CAMPAIGNS = {
 			"6926",
 			"6927"
 		],
-		"name": "Classic Lightning Remi"
+		"name": "Classic Lightning Remi",
+		"side_mission": "1"
 	},
 	"4008": {
 		"id": "4008",
@@ -6680,7 +6687,8 @@ var CAMPAIGNS = {
 			"6944",
 			"6945"
 		],
-		"name": "Classic Lightning Darkassan"
+		"name": "Classic Lightning Darkassan",
+		"side_mission": "1"
 	},
 	"4009": {
 		"id": "4009",
@@ -6696,7 +6704,8 @@ var CAMPAIGNS = {
 			"6965",
 			"6966"
 		],
-		"name": "Classic Lightning Lerna"
+		"name": "Classic Lightning Lerna",
+		"side_mission": "1"
 	},
 	"4010": {
 		"id": "4010",
@@ -6712,7 +6721,8 @@ var CAMPAIGNS = {
 			"6988",
 			"6989"
 		],
-		"name": "Classic Lightning Krampus"
+		"name": "Classic Lightning Krampus",
+		"side_mission": "1"
 	},
 	"4011": {
 		"id": "4011",
@@ -6728,7 +6738,8 @@ var CAMPAIGNS = {
 			"7006",
 			"7007"
 		],
-		"name": "Classic Lightning Allies"
+		"name": "Classic Lightning Allies",
+		"side_mission": "1"
 	},
 	"4012": {
 		"id": "4012",
@@ -6744,7 +6755,8 @@ var CAMPAIGNS = {
 			"7024",
 			"7025"
 		],
-		"name": "Classic Lightning Nophora's Return"
+		"name": "Classic Lightning Nophora's Return",
+		"side_mission": "1"
 	},
 	"4013": {
 		"id": "4013",
@@ -6760,7 +6772,8 @@ var CAMPAIGNS = {
 			"7042",
 			"7043"
 		],
-		"name": "Classic Lightning Vulcanos' Payback"
+		"name": "Classic Lightning Vulcanos' Payback",
+		"side_mission": "1"
 	},
 	"4014": {
 		"id": "4014",
@@ -6776,7 +6789,8 @@ var CAMPAIGNS = {
 			"7060",
 			"7061"
 		],
-		"name": "Classic Lightning Caesar's Return"
+		"name": "Classic Lightning Caesar's Return",
+		"side_mission": "1"
 	},
 	"4015": {
 		"id": "4015",
@@ -6792,7 +6806,8 @@ var CAMPAIGNS = {
 			"7078",
 			"7079"
 		],
-		"name": "Classic Lightning Ashanti's Trial"
+		"name": "Classic Lightning Ashanti's Trial",
+		"side_mission": "1"
 	},
 	"4016": {
 		"id": "4016",
@@ -6808,7 +6823,8 @@ var CAMPAIGNS = {
 			"7096",
 			"7097"
 		],
-		"name": "Classic Lightning Llorona's Rebirth"
+		"name": "Classic Lightning Llorona's Rebirth",
+		"side_mission": "1"
 	},
 	"4017": {
 		"id": "4017",
@@ -6824,7 +6840,8 @@ var CAMPAIGNS = {
 			"7114",
 			"7115"
 		],
-		"name": "Classic Lightning Darkassan's Trial"
+		"name": "Classic Lightning Darkassan's Trial",
+		"side_mission": "1"
 	},
 	"4018": {
 		"id": "4018",
@@ -6840,7 +6857,8 @@ var CAMPAIGNS = {
 			"7132",
 			"7133"
 		],
-		"name": "Classic Lightning Nophora's Counterblast"
+		"name": "Classic Lightning Nophora's Counterblast",
+		"side_mission": "1"
 	},
 	"5001": {
 		"id": "5001",
