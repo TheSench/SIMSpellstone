@@ -101,45 +101,9 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"25": {
-		"id": "25",
-		"name": "Stormy Seastone Citadel"
-	},
-	"26": {
-		"id": "26",
-		"name": "World's Center"
-	},
-	"27": {
-		"id": "27",
-		"name": "Return to Elaria"
-	},
-	"28": {
-		"id": "28",
-		"name": "Healed Dawnglow"
-	},
-	"29": {
-		"id": "29",
-		"name": "Return to Luminis"
-	},
 	"30": {
 		"id": "30",
 		"name": "Return to Karthos"
-	},
-	"31": {
-		"id": "31",
-		"name": "Return to Tarragon Peak"
-	},
-	"32": {
-		"id": "32",
-		"name": "Gladius Scriptorium"
-	},
-	"33": {
-		"id": "33",
-		"name": "Skyhaven Assault"
-	},
-	"34": {
-		"id": "34",
-		"name": "Conflux Convergence"
 	},
 	"100": {
 		"id": "100",
@@ -6510,7 +6474,8 @@ var CAMPAIGNS = {
 			"1552",
 			"1553"
 		],
-		"name": "Tinman's Change of Heart"
+		"name": "Tinman's Change of Heart",
+		"side_mission": "1"
 	},
 	"3012": {
 		"battleground_id": "2049",
@@ -6874,7 +6839,8 @@ var CAMPAIGNS = {
 			"2005",
 			"2006"
 		],
-		"name": "Lightning Boss Gobtoh"
+		"name": "Lightning Boss Gobtoh",
+		"side_mission": "1"
 	}
 };
 var MISSIONS = {

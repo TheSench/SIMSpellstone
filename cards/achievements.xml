@@ -3483,7 +3483,6 @@
       <item id="4011" number="1" />
     </reward>
   </achievement>
-  -->
   <!-- EPIC RUNES UPDATE BEGIN -->
   <achievement>
     <id>1359</id>
@@ -3645,7 +3644,6 @@
       <item id="4012" number="1" />
     </reward>
   </achievement>
-  -->
   <!-- BEGIN LEGENDARY RUNE UPDATE -->
   <achievement>
     <id>1369</id>
@@ -7145,7 +7143,7 @@
     <reward>
       <item id="3049" number="50" />
       <event_points id="7018" number="50" />
-      -->
+      --&gt;
     </reward>
   </achievement>
   <achievement>
@@ -7465,7 +7463,6 @@
     <achievement_req>3223</achievement_req>
     <req>
       <campaign>1119</campaign>
-      >
       <level>7</level>
     </req>
     <reward>
@@ -19811,39 +19808,6 @@
     </reward>
   </achievement>
   <!-- END Event Quests  -->
-  <!-- Mastery lev 7 on all basic campaign + 2 new nodes + existing boss node -->
-  <achievement>
-    <!-- E105: Distorted Beetleton -->
-    <id>4059</id>
-    <type>2</type>
-    <order>639</order>
-    <name>Champion of Distorted Beetleton</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Distorted Beetleton.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7127</mission_req>
-    <req>
-      <campaign>1207</campaign>
-      <!-- Return to Beetleton, Pink1 -->
-      <campaign>1208</campaign>
-      <!-- The Sage's Path, Pink2 -->
-      <campaign>1209</campaign>
-      <!-- Memories Best Left Forgotten, Boss Node -->
-      <campaign>1210</campaign>
-      <!-- Priority Differences, Pink3 -->
-      <campaign>1211</campaign>
-      <!-- A Dream's Rebirth, Pink4 -->
-      <campaign>1351</campaign>
-      <!-- A Flight in the Dark, Gen2 node 1 -->
-      <campaign>1352</campaign>
-      <!-- The Healer's Prison, Gen2 Node 2 -->
-      <level>7</level>
-      <!-- mastery level 7 -->
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory Expansion -->
-    </reward>
-  </achievement>
   <!-- Event 106: ComDev Goblin - Return to Karthos -->
   <!-- E106 Node 1: The Return of a King -->
   <achievement>
@@ -19995,38 +19959,6 @@
     <reward>
       <sp>60</sp>
       <!-- Dust  -->
-    </reward>
-  </achievement>
-  <!-- Event 106: ComDev Goblin - Return to Karthos -->
-  <achievement>
-    <id>4060</id>
-    <type>2</type>
-    <order>639</order>
-    <name>Champion of Return to Karthos</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Karthos.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7145</mission_req>
-    <req>
-      <campaign>1255</campaign>
-      <!-- Return to Karthos, Pink1 -->
-      <campaign>1256</campaign>
-      <!-- Chaos Power Cell, Pink2 -->
-      <campaign>1257</campaign>
-      <!-- Constructing Chaos, Boss Node -->
-      <campaign>1258</campaign>
-      <!-- Chaos Allegiance, Pink3 -->
-      <campaign>1259</campaign>
-      <!-- Past Trickery Reveal, Pink4 -->
-      <campaign>1353</campaign>
-      <!-- The Return of a King, ComDev Node 1 -->
-      <campaign>1354</campaign>
-      <!-- Warring Factions, ComDev Node 2 -->
-      <level>7</level>
-      <!-- Mastery Level 7 -->
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory expansion -->
     </reward>
   </achievement>
   <!-- END Event Quests  -->
@@ -20233,7 +20165,7 @@
     <!-- Forgotten Island -->
     <id>4010</id>
     <type>2</type>
-    <order>639</order>
+    <order>640</order>
     <name>Vanquisher of Forgotten Island</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Forgotten Island.</desc>
     <icon>mapNavGlobe</icon>
@@ -20255,7 +20187,7 @@
     <!-- Golden Crown Village -->
     <id>4011</id>
     <type>2</type>
-    <order>639</order>
+    <order>641</order>
     <name>Vanquisher of Golden Crown Village</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Golden Crown Village.</desc>
     <icon>mapNavGlobe</icon>
@@ -20277,7 +20209,7 @@
     <!-- Desolate Red Valley -->
     <id>4012</id>
     <type>2</type>
-    <order>639</order>
+    <order>642</order>
     <name>Vanquisher of Desolate Red Valley</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Desolate Red Valley.</desc>
     <icon>mapNavGlobe</icon>
@@ -20298,7 +20230,7 @@
     <!-- Tarragon Peak -->
     <id>4013</id>
     <type>2</type>
-    <order>639</order>
+    <order>643</order>
     <name>Vanquisher of Tarragon Peak</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Tarragon Peak.</desc>
     <icon>mapNavGlobe</icon>
@@ -20319,7 +20251,7 @@
     <!-- Gladius Arena -->
     <id>4014</id>
     <type>2</type>
-    <order>639</order>
+    <order>644</order>
     <name>Vanquisher of Gladius Arena</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Gladius Arena.</desc>
     <icon>mapNavGlobe</icon>
@@ -20340,7 +20272,7 @@
     <!-- Duskwillow Rebuilt -->
     <id>4015</id>
     <type>2</type>
-    <order>639</order>
+    <order>645</order>
     <name>Vanquisher of Duskwillow Rebuilt</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Duskwillow Rebuilt.</desc>
     <icon>mapNavGlobe</icon>
@@ -20361,7 +20293,7 @@
     <!-- Distorted Beetleton -->
     <id>4016</id>
     <type>2</type>
-    <order>639</order>
+    <order>646</order>
     <name>Vanquisher of Distorted Beetleton</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Distorted Beetleton.</desc>
     <icon>mapNavGlobe</icon>
@@ -20382,7 +20314,7 @@
     <!-- The Salt Wastes -->
     <id>4017</id>
     <type>2</type>
-    <order>639</order>
+    <order>647</order>
     <name>Vanquisher of The Salt Wastes</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Salt Wastes.</desc>
     <icon>mapNavGlobe</icon>
@@ -20403,7 +20335,7 @@
     <!-- The Abyss -->
     <id>4018</id>
     <type>2</type>
-    <order>639</order>
+    <order>648</order>
     <name>Vanquisher of The Abyss</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Abyss.</desc>
     <icon>mapNavGlobe</icon>
@@ -20430,7 +20362,7 @@
     <!-- Stormy Seastone -->
     <id>4020</id>
     <type>2</type>
-    <order>639</order>
+    <order>649</order>
     <name>Vanquisher of Stormy Seastone Citadel</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Stormy Seastone Citadel.</desc>
     <icon>mapNavGlobe</icon>
@@ -20456,7 +20388,7 @@
     <!-- World's Center -->
     <id>4021</id>
     <type>2</type>
-    <order>639</order>
+    <order>650</order>
     <name>Vanquisher of World's Center</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in World's Center.</desc>
     <icon>mapNavGlobe</icon>
@@ -20482,7 +20414,7 @@
     <!-- Return to Elaria -->
     <id>4022</id>
     <type>2</type>
-    <order>639</order>
+    <order>651</order>
     <name>Vanquisher of Return to Elaria</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Elaria.</desc>
     <icon>mapNavGlobe</icon>
@@ -20508,7 +20440,7 @@
     <!-- Healed Dawnglow -->
     <id>4023</id>
     <type>2</type>
-    <order>639</order>
+    <order>652</order>
     <name>Vanquisher of Healed Dawnglow</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Healed Dawnglow.</desc>
     <icon>mapNavGlobe</icon>
@@ -20534,7 +20466,7 @@
     <!-- Return to Luminis -->
     <id>4024</id>
     <type>2</type>
-    <order>639</order>
+    <order>653</order>
     <name>Vanquisher of Return to Luminis</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Luminis.</desc>
     <icon>mapNavGlobe</icon>
@@ -20560,7 +20492,7 @@
     <!-- Return to Karthos -->
     <id>4025</id>
     <type>2</type>
-    <order>639</order>
+    <order>654</order>
     <name>Vanquisher of Return to Karthos</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Karthos.</desc>
     <icon>mapNavGlobe</icon>
@@ -20586,7 +20518,7 @@
     <!-- Return to Tarragon Peak -->
     <id>4026</id>
     <type>2</type>
-    <order>639</order>
+    <order>655</order>
     <name>Vanquisher of Return to Tarragon Peak</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Tarragon Peak.</desc>
     <icon>mapNavGlobe</icon>
@@ -20612,7 +20544,7 @@
     <!-- Gladius Scriptorium -->
     <id>4027</id>
     <type>2</type>
-    <order>639</order>
+    <order>656</order>
     <name>Vanquisher of Gladius Scriptorium</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Gladius Scriptorium.</desc>
     <icon>mapNavGlobe</icon>
@@ -20638,7 +20570,7 @@
     <!-- Skyhaven Assault -->
     <id>4028</id>
     <type>2</type>
-    <order>639</order>
+    <order>657</order>
     <name>Vanquisher of Skyhaven Assault</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Skyhaven Assault.</desc>
     <icon>mapNavGlobe</icon>
@@ -20664,7 +20596,7 @@
     <!-- Conflux Convergence -->
     <id>4029</id>
     <type>2</type>
-    <order>639</order>
+    <order>658</order>
     <name>Vanquisher of Conflux Convergence</name>
     <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Conflux Convergence.</desc>
     <icon>mapNavGlobe</icon>
@@ -20690,17 +20622,18 @@
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Tarragon Peak.</desc>
+    <desc>Complete Mastery Level 7 on the first pair of gold campaigns in Tarragon Peak.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6113</mission_req>
+    <mission_req>6630</mission_req>
     <req>
-      <campaign>1189</campaign>
-      <campaign>1190</campaign>
-      <campaign>1191</campaign>
-      <campaign>1192</campaign>
-      <campaign>1193</campaign>
+      <!-- Hidden Missions
+			<campaign>1189</campaign>
+			<campaign>1190</campaign>
+			<campaign>1191</campaign>
+			<campaign>1192</campaign>
+			<campaign>1193</campaign>-->
       <campaign>1286</campaign>
       <campaign>1287</campaign>
       <level>7</level>
@@ -20713,18 +20646,19 @@
     <!-- Beetleton Bunker Revisited -->
     <id>4031</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Beetleton Bunker</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Beetleton Bunker</desc>
+    <desc>Complete Mastery Level 7 on the first pair of gold campaigns in Beetleton Bunker.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5653</mission_req>
+    <mission_req>6642</mission_req>
     <req>
-      <campaign>1130</campaign>
-      <campaign>1131</campaign>
-      <campaign>1132</campaign>
-      <campaign>1133</campaign>
-      <campaign>1134</campaign>
-      <campaign>1135</campaign>
+      <!-- Hidden Missions
+			<campaign>1130</campaign>
+			<campaign>1131</campaign>
+			<campaign>1132</campaign>
+			<campaign>1133</campaign>
+			<campaign>1134</campaign>
+			<campaign>1135</campaign>-->
       <campaign>1288</campaign>
       <campaign>1289</campaign>
       <level>7</level>
@@ -20737,18 +20671,19 @@
     <!-- Goblin Rise Stronghold Revisited -->
     <id>4032</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Goblin Rise Stronghold</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Goblin Rise Stronghold</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Goblin Rise Stronghold.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5927</mission_req>
+    <mission_req>6654</mission_req>
     <req>
-      <campaign>1162</campaign>
-      <campaign>1163</campaign>
-      <campaign>1164</campaign>
-      <campaign>1168</campaign>
-      <campaign>1169</campaign>
-      <campaign>1170</campaign>
+      <!-- Hidden Missions
+			<campaign>1162</campaign>
+			<campaign>1163</campaign>
+			<campaign>1164</campaign>
+			<campaign>1168</campaign>
+			<campaign>1169</campaign>
+			<campaign>1170</campaign>-->
       <campaign>1290</campaign>
       <campaign>1291</campaign>
       <level>7</level>
@@ -20761,18 +20696,19 @@
     <!-- Celestial Vault Revisited -->
     <id>4033</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of The Celestial Vault</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in The Celestial Vault</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in The Celestial Vault.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5927</mission_req>
+    <mission_req>6666</mission_req>
     <req>
-      <campaign>1149</campaign>
-      <campaign>1150</campaign>
-      <campaign>1151</campaign>
-      <campaign>1153</campaign>
-      <campaign>1154</campaign>
-      <campaign>1155</campaign>
+      <!-- Hidden Missions
+			<campaign>1149</campaign>
+			<campaign>1150</campaign>
+			<campaign>1151</campaign>
+			<campaign>1153</campaign>
+			<campaign>1154</campaign>
+			<campaign>1155</campaign>-->
       <campaign>1292</campaign>
       <campaign>1293</campaign>
       <level>7</level>
@@ -20785,17 +20721,18 @@
     <!-- Desolate Red Valley Revisited -->
     <id>4034</id>
     <type>2</type>
-    <order>639</order>
-    <name>Champion of The Desolate Red Valley</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in The Desolate Red Valley</desc>
+    <order>659</order>
+    <name>Champion of Desolate Red Valley</name>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Desolate Red Valley.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5927</mission_req>
+    <mission_req>6678</mission_req>
     <req>
-      <campaign>1183</campaign>
-      <campaign>1184</campaign>
-      <campaign>1185</campaign>
-      <campaign>1186</campaign>
-      <campaign>1187</campaign>
+      <!-- Hidden Missions
+			<campaign>1183</campaign>
+			<campaign>1184</campaign>
+			<campaign>1185</campaign>
+			<campaign>1186</campaign>
+			<campaign>1187</campaign>-->
       <campaign>1294</campaign>
       <campaign>1295</campaign>
       <level>7</level>
@@ -20808,18 +20745,19 @@
     <!-- Pharos Temple Revisited -->
     <id>4035</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Pharos Temple</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Pharos Temple</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Pharos Temple.</desc>
     <icon>mapNavGlobe</icon>
     <mission_req>6690</mission_req>
     <req>
-      <campaign>1136</campaign>
-      <campaign>1137</campaign>
-      <campaign>1138</campaign>
-      <campaign>1139</campaign>
-      <campaign>1140</campaign>
-      <campaign>1141</campaign>
+      <!-- Hidden Missions
+			<campaign>1136</campaign>
+			<campaign>1137</campaign>
+			<campaign>1138</campaign>
+			<campaign>1139</campaign>
+			<campaign>1140</campaign>
+			<campaign>1141</campaign>-->
       <campaign>1296</campaign>
       <campaign>1297</campaign>
       <level>7</level>
@@ -20832,18 +20770,19 @@
     <!-- Skyhaven revisited -->
     <id>4036</id>
     <type>2</type>
-    <order>638</order>
+    <order>659</order>
     <name>Champion of Skyhaven</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Skyhaven.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Skyhaven.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5860</mission_req>
+    <mission_req>6708</mission_req>
     <req>
-      <campaign>1156</campaign>
-      <campaign>1157</campaign>
-      <campaign>1158</campaign>
-      <campaign>1159</campaign>
-      <campaign>1160</campaign>
-      <campaign>1161</campaign>
+      <!-- Hidden Missions
+			<campaign>1156</campaign>
+			<campaign>1157</campaign>
+			<campaign>1158</campaign>
+			<campaign>1159</campaign>
+			<campaign>1160</campaign>
+			<campaign>1161</campaign>-->
       <campaign>1299</campaign>
       <campaign>1300</campaign>
       <level>7</level>
@@ -20856,18 +20795,19 @@
     <!-- Fireshard Mine Revisited -->
     <id>4037</id>
     <type>2</type>
-    <order>636</order>
+    <order>659</order>
     <name>Champion of Fireshard Mine</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Fireshard Mine.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Fireshard Mine.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5745</mission_req>
+    <mission_req>6720</mission_req>
     <req>
-      <campaign>1142</campaign>
-      <campaign>1143</campaign>
-      <campaign>1144</campaign>
-      <campaign>1146</campaign>
-      <campaign>1147</campaign>
-      <campaign>1148</campaign>
+      <!-- Hidden Missions
+			<campaign>1142</campaign>
+			<campaign>1143</campaign>
+			<campaign>1144</campaign>
+			<campaign>1146</campaign>
+			<campaign>1147</campaign>
+			<campaign>1148</campaign>-->
       <campaign>1301</campaign>
       <campaign>1302</campaign>
       <level>7</level>
@@ -20880,17 +20820,18 @@
     <!-- Healed Dawnglow Revisited -->
     <id>4038</id>
     <type>2</type>
-    <order>636</order>
+    <order>659</order>
     <name>Champion of Healed Dawnglow</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Healed Dawnglow.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Healed Dawnglow.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6384</mission_req>
+    <mission_req>6736</mission_req>
     <req>
-      <campaign>1239</campaign>
-      <campaign>1240</campaign>
-      <campaign>1247</campaign>
-      <campaign>1248</campaign>
-      <campaign>1249</campaign>
+      <!-- Hidden Missions
+			<campaign>1239</campaign>
+			<campaign>1240</campaign>
+			<campaign>1247</campaign>
+			<campaign>1248</campaign>
+			<campaign>1249</campaign>-->
       <campaign>1304</campaign>
       <campaign>1305</campaign>
       <level>7</level>
@@ -20903,22 +20844,18 @@
     <!-- World's Center Revisited -->
     <id>4039</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of World's Center</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in World's Center.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in World's Center.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6323</mission_req>
+    <mission_req>6753</mission_req>
     <req>
-      <campaign>1228</campaign>
-      <!-- 1st node -->
-      <campaign>1229</campaign>
-      <!-- 2nd node -->
-      <campaign>1231</campaign>
-      <!-- Boss node -->
-      <campaign>1232</campaign>
-      <!-- 3rd node -->
-      <campaign>1233</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1228</campaign> 1st node
+			<campaign>1229</campaign> 2nd node
+			<campaign>1231</campaign> Boss node
+			<campaign>1232</campaign> 3rd node
+			<campaign>1233</campaign> 4th node -->
       <campaign>1307</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1308</campaign>
@@ -20933,22 +20870,18 @@
     <!-- The Abyss Revisited -->
     <id>4040</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of The Abyss</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in The Abyss.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in The Abyss.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6771</mission_req>
+    <mission_req>6765</mission_req>
     <req>
-      <campaign>1217</campaign>
-      <!-- 1st node -->
-      <campaign>1218</campaign>
-      <!-- 2nd node -->
-      <campaign>1219</campaign>
-      <!-- Boss node -->
-      <campaign>1220</campaign>
-      <!-- 3rd node -->
-      <campaign>1221</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1217</campaign> 1st node
+			<campaign>1218</campaign> 2nd node
+			<campaign>1219</campaign> Boss node
+			<campaign>1220</campaign> 3rd node
+			<campaign>1221</campaign> 4th node -->
       <campaign>1309</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1310</campaign>
@@ -20963,22 +20896,18 @@
     <!-- Stormy Seastone Revisited -->
     <id>4041</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Stormy Seastone Citadel</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Stormy Seastone Citadel.</desc>
+    <desc>Complete Mastery Level 7 on the first pair of gold campaigns in Stormy Seastone Citadel.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6292</mission_req>
+    <mission_req>6777</mission_req>
     <req>
-      <campaign>1222</campaign>
-      <!-- 1st node -->
-      <campaign>1223</campaign>
-      <!-- 2nd node -->
-      <campaign>1224</campaign>
-      <!-- Boss node -->
-      <campaign>1226</campaign>
-      <!-- 3rd node -->
-      <campaign>1227</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1222</campaign> 1st node
+			<campaign>1223</campaign> 2nd node
+			<campaign>1224</campaign> Boss node
+			<campaign>1226</campaign> 3rd node
+			<campaign>1227</campaign> 4th node -->
       <campaign>1311</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1312</campaign>
@@ -20993,22 +20922,18 @@
     <!-- Return to Tarragon Peak Revisited -->
     <id>4042</id>
     <type>2</type>
-    <order>639</order>
-    <name>Champion Tarragon Peak II</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Return to Tarragon Peak.</desc>
+    <order>659</order>
+    <name>Champion of Return to Tarragon Peak</name>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Return to Tarragon Peak.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6486</mission_req>
+    <mission_req>6795</mission_req>
     <req>
-      <campaign>1260</campaign>
-      <!-- 1st node -->
-      <campaign>1261</campaign>
-      <!-- 2nd node -->
-      <campaign>1263</campaign>
-      <!-- Boss node -->
-      <campaign>1264</campaign>
-      <!-- 3rd node -->
-      <campaign>1265</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1260</campaign> 1st node
+			<campaign>1261</campaign> 2nd node
+			<campaign>1263</campaign> Boss node
+			<campaign>1264</campaign> 3rd node
+			<campaign>1265</campaign> 4th node -->
       <campaign>1313</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1314</campaign>
@@ -21023,22 +20948,18 @@
     <!-- Return to Elaria Revisited -->
     <id>4043</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Return to Elaria</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Return to Elaria.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Return to Elaria.</desc>
     <icon>mapNavGlobe</icon>
     <mission_req>6813</mission_req>
     <req>
-      <campaign>1234</campaign>
-      <!-- 1st node -->
-      <campaign>1235</campaign>
-      <!-- 2nd node -->
-      <campaign>1236</campaign>
-      <!-- Boss node -->
-      <campaign>1237</campaign>
-      <!-- 3rd node -->
-      <campaign>1238</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1234</campaign> 1st node
+			<campaign>1235</campaign> 2nd node
+			<campaign>1236</campaign> Boss node
+			<campaign>1237</campaign> 3rd node
+			<campaign>1238</campaign> 4th node -->
       <campaign>1316</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1317</campaign>
@@ -21053,18 +20974,19 @@
     <!-- Frigore Revisited -->
     <id>4044</id>
     <type>2</type>
-    <order>632</order>
+    <order>659</order>
     <name>Champion of Frigore</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Frigore.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Frigore.</desc>
     <icon>mapNavGlobe</icon>
     <mission_req>6831</mission_req>
     <req>
-      <campaign>1114</campaign>
-      <campaign>1115</campaign>
-      <campaign>1116</campaign>
-      <campaign>1117</campaign>
-      <campaign>1118</campaign>
-      <campaign>1119</campaign>
+      <!-- Hidden Missions
+		<campaign>1114</campaign>
+		<campaign>1115</campaign>
+		<campaign>1116</campaign>
+		<campaign>1117</campaign>
+		<campaign>1118</campaign>
+		<campaign>1119</campaign> -->
       <campaign>1318</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1319</campaign>
@@ -21079,18 +21001,19 @@
     <!-- Forgotten Island Revisited -->
     <id>4045</id>
     <type>2</type>
-    <order>632</order>
+    <order>659</order>
     <name>Champion of Forgotten Island</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, the boss and new nodes in Forgotten Island.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Forgotten Island.</desc>
     <icon>mapNavGlobe</icon>
     <mission_req>6849</mission_req>
     <req>
-      <campaign>1171</campaign>
-      <campaign>1172</campaign>
-      <campaign>1173</campaign>
-      <campaign>1174</campaign>
-      <campaign>1175</campaign>
-      <campaign>1176</campaign>
+      <!-- Hidden Missions
+		<campaign>1171</campaign>
+		<campaign>1172</campaign>
+		<campaign>1173</campaign>
+		<campaign>1174</campaign>
+		<campaign>1175</campaign>
+		<campaign>1176</campaign> -->
       <campaign>1320</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1321</campaign>
@@ -21105,17 +21028,18 @@
     <!-- Duskwillow Rebuilt Revisited -->
     <id>4046</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Duskwillow Rebuilt</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Duskwillow Rebuilt.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Duskwillow Rebuilt.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6190</mission_req>
+    <mission_req>6867</mission_req>
     <req>
-      <campaign>1200</campaign>
-      <campaign>1201</campaign>
-      <campaign>1202</campaign>
-      <campaign>1205</campaign>
-      <campaign>1206</campaign>
+      <!-- Hidden Missions
+			<campaign>1200</campaign>
+			<campaign>1201</campaign>
+			<campaign>1202</campaign>
+			<campaign>1205</campaign>
+			<campaign>1206</campaign>-->
       <campaign>1322</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1323</campaign>
@@ -21130,22 +21054,18 @@
     <!-- Skyhaven Assault Revisited -->
     <id>4047</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Skyhaven Assault</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Skyhaven Assault.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Skyhaven Assault.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6550</mission_req>
+    <mission_req>6885</mission_req>
     <req>
-      <campaign>1272</campaign>
-      <!-- 1st node -->
-      <campaign>1273</campaign>
-      <!-- 2nd node -->
-      <campaign>1275</campaign>
-      <!-- Boss node -->
-      <campaign>1276</campaign>
-      <!-- 3rd node -->
-      <campaign>1277</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1272</campaign> 1st node
+			<campaign>1273</campaign> 2nd node
+			<campaign>1275</campaign> Boss node
+			<campaign>1276</campaign> 3rd node
+			<campaign>1277</campaign> 4th node -->
       <campaign>1324</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1325</campaign>
@@ -21160,18 +21080,19 @@
     <!-- The Void Plane -->
     <id>4048</id>
     <type>2</type>
-    <order>633</order>
+    <order>659</order>
     <name>Champion of The Void Plane</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Void Plane.</desc>
+    <desc>Complete Mastery Level 7 on the first pair of gold campaigns in The Void Plane.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5594</mission_req>
+    <mission_req>6903</mission_req>
     <req>
-      <campaign>1124</campaign>
-      <campaign>1125</campaign>
-      <campaign>1126</campaign>
-      <campaign>1127</campaign>
-      <campaign>1128</campaign>
-      <campaign>1129</campaign>
+      <!-- Hidden Missions
+			<campaign>1124</campaign>
+			<campaign>1125</campaign>
+			<campaign>1126</campaign>
+			<campaign>1127</campaign>
+			<campaign>1128</campaign>
+			<campaign>1129</campaign>-->
       <campaign>1326</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1327</campaign>
@@ -21186,17 +21107,18 @@
     <!-- The Salt Wastes -->
     <id>4049</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of The Salt Wastes</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Salt Wastes.</desc>
+    <desc>Complete Mastery Level 7 on the first pair of gold campaigns in The Salt Wastes.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6258</mission_req>
+    <mission_req>6928</mission_req>
     <req>
-      <campaign>1212</campaign>
-      <campaign>1213</campaign>
-      <campaign>1214</campaign>
-      <campaign>1215</campaign>
-      <campaign>1216</campaign>
+      <!-- Hidden Missions
+			<campaign>1212</campaign>
+			<campaign>1213</campaign>
+			<campaign>1214</campaign>
+			<campaign>1215</campaign>
+			<campaign>1216</campaign>-->
       <campaign>1329</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1330</campaign>
@@ -21211,18 +21133,19 @@
     <!-- Duskwillow -->
     <id>4050</id>
     <type>2</type>
-    <order>631</order>
+    <order>659</order>
     <name>Champion of Duskwillow</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Duskwillow.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Duskwillow.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>5469</mission_req>
+    <mission_req>6949</mission_req>
     <req>
-      <campaign>1108</campaign>
-      <campaign>1109</campaign>
-      <campaign>1110</campaign>
-      <campaign>1111</campaign>
-      <campaign>1112</campaign>
-      <campaign>1113</campaign>
+      <!-- Hidden Missions
+			<campaign>1108</campaign>
+			<campaign>1109</campaign>
+			<campaign>1110</campaign>
+			<campaign>1111</campaign>
+			<campaign>1112</campaign>
+			<campaign>1113</campaign>-->
       <campaign>1332</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1333</campaign>
@@ -21238,18 +21161,19 @@
     <!-- Golden Crown Village -->
     <id>4051</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Golden Crown Village</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Golden Crown Village.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Golden Crown Village.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6037</mission_req>
+    <mission_req>6967</mission_req>
     <req>
-      <campaign>1177</campaign>
-      <campaign>1178</campaign>
-      <campaign>1179</campaign>
-      <campaign>1180</campaign>
-      <campaign>1181</campaign>
-      <campaign>1182</campaign>
+      <!-- Hidden Missions
+			<campaign>1177</campaign>
+			<campaign>1178</campaign>
+			<campaign>1179</campaign>
+			<campaign>1180</campaign>
+			<campaign>1181</campaign>
+			<campaign>1182</campaign>-->
       <campaign>1334</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1335</campaign>
@@ -21264,22 +21188,21 @@
     <!-- The Void Plane -->
     <id>4052</id>
     <type>2</type>
-    <order>633</order>
+    <order>660</order>
     <name>Master of The Void Plane</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Void Plane.</desc>
+    <desc>Complete Mastery Level 7 on the second pair of gold campaigns in The Void Plane.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>7001</mission_req>
+    <mission_req>6990</mission_req>
     <req>
-      <campaign>1124</campaign>
-      <campaign>1125</campaign>
-      <campaign>1126</campaign>
-      <campaign>1127</campaign>
-      <campaign>1128</campaign>
-      <campaign>1129</campaign>
-      <campaign>1326</campaign>
-      <!-- Gen2 node 1 -->
-      <campaign>1327</campaign>
-      <!-- Gen2 node 2 -->
+      <!-- Hidden Missions
+			<campaign>1124</campaign>
+			<campaign>1125</campaign>
+			<campaign>1126</campaign>
+			<campaign>1127</campaign>
+			<campaign>1128</campaign>
+			<campaign>1129</campaign>
+			<campaign>1326</campaign> Gen2 node 1
+			<campaign>1327</campaign> Gen2 node 2 -->
       <campaign>1337</campaign>
       <campaign>1338</campaign>
       <level>7</level>
@@ -21292,20 +21215,21 @@
     <!-- Beetleton Bunker Revisited -->
     <id>4053</id>
     <type>2</type>
-    <order>639</order>
+    <order>660</order>
     <name>Master of Beetleton Bunker</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Beetleton Bunker</desc>
+    <desc>Complete Mastery Level 7 on the second pair of gold campaigns in Beetleton Bunker.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>7019</mission_req>
+    <mission_req>7008</mission_req>
     <req>
-      <campaign>1130</campaign>
-      <campaign>1131</campaign>
-      <campaign>1132</campaign>
-      <campaign>1133</campaign>
-      <campaign>1134</campaign>
-      <campaign>1135</campaign>
-      <campaign>1288</campaign>
-      <campaign>1289</campaign>
+      <!-- Hidden Missions
+			<campaign>1130</campaign>
+			<campaign>1131</campaign>
+			<campaign>1132</campaign>
+			<campaign>1133</campaign>
+			<campaign>1134</campaign>
+			<campaign>1135</campaign>
+			<campaign>1288</campaign>
+			<campaign>1289</campaign>-->
       <campaign>1339</campaign>
       <campaign>1340</campaign>
       <level>7</level>
@@ -21318,19 +21242,20 @@
     <!-- Tarragon Peak Revisited -->
     <id>4054</id>
     <type>2</type>
-    <order>639</order>
+    <order>660</order>
     <name>Master of Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns, boss and new nodes in Tarragon Peak.</desc>
+    <desc>Complete Mastery Level 7 on the second pair of gold campaigns in Tarragon Peak.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>7037</mission_req>
+    <mission_req>7026</mission_req>
     <req>
-      <campaign>1189</campaign>
-      <campaign>1190</campaign>
-      <campaign>1191</campaign>
-      <campaign>1192</campaign>
-      <campaign>1193</campaign>
-      <campaign>1286</campaign>
-      <campaign>1287</campaign>
+      <!-- Hidden Missions
+			<campaign>1189</campaign>
+			<campaign>1190</campaign>
+			<campaign>1191</campaign>
+			<campaign>1192</campaign>
+			<campaign>1193</campaign>
+			<campaign>1286</campaign>
+			<campaign>1287</campaign>-->
       <campaign>1341</campaign>
       <campaign>1342</campaign>
       <level>7</level>
@@ -21343,21 +21268,20 @@
     <!-- The Salt Wastes -->
     <id>4055</id>
     <type>2</type>
-    <order>639</order>
+    <order>660</order>
     <name>Master of The Salt Wastes</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Salt Wastes.</desc>
+    <desc>Complete Mastery Level 7 on the second pair of gold campaigns in The Salt Wastes.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>7055</mission_req>
+    <mission_req>7044</mission_req>
     <req>
-      <campaign>1212</campaign>
-      <campaign>1213</campaign>
-      <campaign>1214</campaign>
-      <campaign>1215</campaign>
-      <campaign>1216</campaign>
-      <campaign>1329</campaign>
-      <!-- Gen2 node 1 -->
-      <campaign>1330</campaign>
-      <!-- Gen2 node 2 -->
+      <!-- Hidden Missions
+			<campaign>1212</campaign>
+			<campaign>1213</campaign>
+			<campaign>1214</campaign>
+			<campaign>1215</campaign>
+			<campaign>1216</campaign>
+			<campaign>1329</campaign> Gen2 node 1
+			<campaign>1330</campaign> Gen2 node 2 -->
       <campaign>1343</campaign>
       <!-- Gen3 node 1 -->
       <campaign>1344</campaign>
@@ -21372,22 +21296,18 @@
     <!-- Gladius Scriptorium -->
     <id>4056</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Gladius Scriptorium</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Gladius Scriptorium.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Gladius Scriptorium.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6522</mission_req>
+    <mission_req>7062</mission_req>
     <req>
-      <campaign>1267</campaign>
-      <!-- 1st node -->
-      <campaign>1268</campaign>
-      <!-- 2nd node -->
-      <campaign>1269</campaign>
-      <!-- Boss node -->
-      <campaign>1270</campaign>
-      <!-- 3rd node -->
-      <campaign>1271</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1267</campaign> 1st node
+			<campaign>1268</campaign> 2nd node
+			<campaign>1269</campaign> Boss node
+			<campaign>1270</campaign> 3rd node
+			<campaign>1271</campaign> 4th node -->
       <campaign>1345</campaign>
       <!-- 5th node -->
       <campaign>1346</campaign>
@@ -21402,26 +21322,20 @@
     <!-- Stormy Seastone Citadel -->
     <id>4057</id>
     <type>2</type>
-    <order>639</order>
-    <name>Champion of Stormy Seastone Citadel</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Stormy Seastone Citadel.</desc>
+    <order>660</order>
+    <name>Master of Stormy Seastone Citadel</name>
+    <desc>Complete Mastery Level 7 on the second pair of gold campaigns in Stormy Seastone Citadel.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6292</mission_req>
+    <mission_req>7080</mission_req>
     <req>
-      <campaign>1222</campaign>
-      <!-- 1st node -->
-      <campaign>1223</campaign>
-      <!-- 2nd node -->
-      <campaign>1224</campaign>
-      <!-- Boss node -->
-      <campaign>1226</campaign>
-      <!-- 3rd node -->
-      <campaign>1227</campaign>
-      <!-- 4th node -->
-      <campaign>1311</campaign>
-      <!-- Gen2 node 1 -->
-      <campaign>1312</campaign>
-      <!-- Gen2 node 2 -->
+      <!-- Hidden Missions
+			<campaign>1222</campaign> 1st node
+			<campaign>1223</campaign> 2nd node
+			<campaign>1224</campaign> Boss node
+			<campaign>1226</campaign> 3rd node
+			<campaign>1227</campaign> 4th node
+			<campaign>1311</campaign> Gen2 node 1
+			<campaign>1312</campaign> Gen2 node 2 -->
       <campaign>1347</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1348</campaign>
@@ -21436,22 +21350,18 @@
     <!-- Return to Luminis -->
     <id>4058</id>
     <type>2</type>
-    <order>639</order>
+    <order>659</order>
     <name>Champion of Return to Luminis</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Luminis.</desc>
+    <desc>Complete Mastery Level 7 on all gold campaigns in Return to Luminis.</desc>
     <icon>mapNavGlobe</icon>
-    <mission_req>6430</mission_req>
+    <mission_req>7098</mission_req>
     <req>
-      <campaign>1250</campaign>
-      <!-- 1st node -->
-      <campaign>1251</campaign>
-      <!-- 2nd node -->
-      <campaign>1252</campaign>
-      <!-- Boss node -->
-      <campaign>1253</campaign>
-      <!-- 3rd node -->
-      <campaign>1254</campaign>
-      <!-- 4th node -->
+      <!-- Hidden Missions
+			<campaign>1250</campaign> 1st node
+			<campaign>1251</campaign> 2nd node
+			<campaign>1252</campaign> Boss node
+			<campaign>1253</campaign> 3rd node
+			<campaign>1254</campaign> 4th node -->
       <campaign>1349</campaign>
       <!-- Gen2 node 1 -->
       <campaign>1350</campaign>
@@ -21463,4 +21373,62 @@
     </reward>
   </achievement>
   <!-- Non-Core Maps Meta END -->
+  <!-- START Mastery level 7 Achievements on ComDev nodes -->
+  <!-- E105: Distorted Beetleton -->
+  <achievement>
+    <id>4059</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Distorted Beetleton</name>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Distorted Beetleton.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7127</mission_req>
+    <req>
+      <!--
+			<campaign>1207</campaign> Return to Beetleton, Pink1
+			<campaign>1208</campaign> The Sage's Path, Pink2
+			<campaign>1209</campaign> Memories Best Left Forgotten, Boss Node
+			<campaign>1210</campaign> Priority Differences, Pink3
+			<campaign>1211</campaign> A Dream's Rebirth, Pink4 -->
+      <campaign>1351</campaign>
+      <!-- A Flight in the Dark, ComDev Node 1 -->
+      <campaign>1352</campaign>
+      <!-- The Healer's Prison, ComDev Node 2 -->
+      <level>7</level>
+      <!-- Mastery level 7 -->
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </reward>
+  </achievement>
+  <!-- Event 106: ComDev Goblin - Return to Karthos -->
+  <achievement>
+    <id>4060</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Return to Karthos</name>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Return to Karthos.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7145</mission_req>
+    <req>
+      <!--
+			<campaign>1255</campaign> Return to Karthos, Pink1
+			<campaign>1256</campaign> Chaos Power Cell, Pink2
+			<campaign>1257</campaign> Constructing Chaos, Boss Node
+			<campaign>1258</campaign> Chaos Allegiance, Pink3
+			<campaign>1259</campaign> Past Trickery Reveal, Pink4 -->
+      <campaign>1353</campaign>
+      <!-- The Return of a King, ComDev Node 1 -->
+      <campaign>1354</campaign>
+      <!-- Warring Factions, ComDev Node 2 -->
+      <level>7</level>
+      <!-- Mastery Level 7 -->
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory expansion -->
+    </reward>
+  </achievement>
+  <!-- END Mastery level 7 Achievements on ComDev nodes -->
 </root>
