@@ -66022,7 +66022,7 @@
     </deck>
     <speech>
       <line>
-        <commander>Portrait_King_Goblin </commander>
+        <commander>Portrait_King_Goblin</commander>
         <!-- Reks -->
         <enemy>1</enemy>
         <!-- Speech coming from left hand side -->
@@ -66152,7 +66152,7 @@
     </deck>
     <speech>
       <line>
-        <commander>Portrait_King_Goblin </commander>
+        <commander>Portrait_King_Goblin</commander>
         <!-- Reks -->
         <enemy>1</enemy>
         <!-- Speech coming from left hand side -->
@@ -66166,7 +66166,7 @@
         <text>Time to find out who you really are!</text>
       </line>
       <line>
-        <commander>Portrait_King_Goblin </commander>
+        <commander>Portrait_King_Goblin</commander>
         <!-- Reks -->
         <enemy>1</enemy>
         <!-- Speech coming from left hand side -->
@@ -66496,6 +66496,1015 @@
         <enemy>1</enemy>
         <!-- Speech coming from right hand side -->
         <text>That means Gobtoh must know where the real cache is hidden. You can&apos;t smite him now, adventurer. You need him to lead you to the weapons!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 107: ComDev Elementals - Conflux Convergence -->
+  <!-- E107 Node 1: The Goblins&apos; Conflux -->
+  <mission>
+    <id>7146</id>
+    <name>Return to the Convergence</name>
+    <energy>18</energy>
+    <desc>Tailing Gobtoh from the ashes of Karthos, you arrive in the sanctum at the center of Dawnglow Swamp, where elements and factions collide.</desc>
+    <commander id="221" />
+    <!-- Alpha Wisp -->
+    <deck>
+      <card id="1026" />
+      <!-- Glass Titan -->
+      <card id="1029" />
+      <!-- Master of Elements -->
+      <card id="1032" />
+      <!-- Moonlight Elemental -->
+      <card id="1325" />
+      <!-- Chaos Tempest -->
+      <card id="1326" />
+      <!-- Titan of Inferno -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1629" />
+      <!-- Mountain Titan -->
+      <card id="1641" />
+      <!-- Heart of the Wyld -->
+      <card id="1642" />
+      <!-- Icestone Demon -->
+      <card id="1029" mastery_level="2" />
+      <!-- Master of Elements -->
+      <card id="1029" mastery_level="3" />
+      <!-- Master of Elements -->
+      <card id="1029" mastery_level="4" />
+      <!-- Master of Elements -->
+      <card id="1029" mastery_level="5" />
+      <!-- Master of Elements -->
+      <card id="1029" mastery_level="6" />
+      <!-- Master of Elements -->
+      <card id="1029" mastery_level="7" />
+      <!-- Master of Elements -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Look! Daknak sees him! Daknak sees Gobtoh!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7147</id>
+    <name>War Comes Home</name>
+    <energy>18</energy>
+    <desc>The rumour of a secret stash of weapons, and therefore the goblins&apos; infighting, has spread all throughout Conflux Convergence.</desc>
+    <commander id="311" />
+    <!-- Goblin Footgang -->
+    <deck>
+      <card id="2096" />
+      <!-- Magma Tsunami -->
+      <card id="2096" />
+      <!-- Magma Tsunami -->
+      <card id="2096" />
+      <!-- Magma Tsunami -->
+      <card id="6176" />
+      <!-- Searsteel Commander -->
+      <card id="6176" />
+      <!-- Searsteel Commander -->
+      <card id="6176" />
+      <!-- Searsteel Commander -->
+      <card id="7189" />
+      <!-- Tidal Hexmaster -->
+      <card id="7189" />
+      <!-- Tidal Hexmaster -->
+      <card id="7189" />
+      <!-- Tidal Hexmaster -->
+      <card id="7019" mastery_level="2" />
+      <!-- Queen of the Swamp -->
+      <card id="7019" mastery_level="3" />
+      <!-- Queen of the Swamp -->
+      <card id="7019" mastery_level="4" />
+      <!-- Queen of the Swamp -->
+      <card id="7230" mastery_level="5" />
+      <!-- Fungobblor -->
+      <card id="7230" mastery_level="6" />
+      <!-- Fungobblor -->
+      <card id="7230" mastery_level="7" />
+      <!-- Fungobblor -->
+    </deck>
+    <speech>
+      <line>
+        <commander>goblinraider</commander>
+        <enemy>1</enemy>
+        <text>Destroy the Chaos scum!</text>
+      </line>
+      <line>
+        <commander>event_036_w2</commander>
+        <enemy>1</enemy>
+        <text>You&apos;ll never escape Sivun!</text>
+      </line>
+      <line>
+        <commander>mechanicgoblin</commander>
+        <enemy>1</enemy>
+        <text>Long live the Aether!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Fear the might of my true self, the great Gobtoh Ascended!!</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Ah-hahahahaaa!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7148</id>
+    <name>Aether's Chagrin</name>
+    <energy>18</energy>
+    <desc>From the comfort of the airship, Yuriel, Samael, and seemingly Daknak all watch on with dismay. As members of the Aether, they instinctively shrink away from such anarchy.</desc>
+    <commander id="243" />
+    <!-- Windstorm Avatar -->
+    <deck>
+      <card id="2010" />
+      <!-- Silver Wind Soul -->
+      <card id="2010" />
+      <!-- Silver Wind Soul -->
+      <card id="2010" />
+      <!-- Silver Wind Soul -->
+      <card id="2137" />
+      <!-- Eolian Djinn -->
+      <card id="2137" />
+      <!-- Eolian Djinn -->
+      <card id="2137" />
+      <!-- Eolian Djinn -->
+      <card id="5013" />
+      <!-- Brilliant Radiance -->
+      <card id="5013" />
+      <!-- Brilliant Radiance -->
+      <card id="5013" />
+      <!-- Brilliant Radiance -->
+      <card id="5301" mastery_level="2" />
+      <!-- Starfall Spirit -->
+      <card id="5238" mastery_level="3" />
+      <!-- Frostfire Mage -->
+      <card id="5249" mastery_level="4" />
+      <!-- Seraph of the Paradox -->
+      <card id="5248" mastery_level="5" />
+      <!-- Exalted Ophanim -->
+      <card id="5133" mastery_level="6" />
+      <!-- Magnetic Master -->
+      <card id="4020" mastery_level="7" />
+      <!-- Sound of Death -->
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Whooo could just stand there and watch this...? It&apos;s senseless.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>We must stay the course. You and I once fought the Goblins as one tribe.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>They&apos;ll be left with nothing if the war continues.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Even the weakest goblin child knows that no one can battle forever.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7149</id>
+    <name>Daknak Plan!</name>
+    <energy>18</energy>
+    <desc>Daknak lets slip that he might know a shortcut to end the war.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="2119" />
+      <!-- Searing Hailwing -->
+      <card id="2229" />
+      <!-- Savage Terragon -->
+      <card id="7175" />
+      <!-- Leafsurge Gazer -->
+      <card id="5178" />
+      <!-- Skadi, Snow Queen -->
+      <card id="5080" />
+      <!-- Djinnflame Master -->
+      <card id="2071" />
+      <!-- Sproutfrog Stormchaser -->
+      <card id="5132" />
+      <!-- Gale Whirlwinder -->
+      <card id="7253" />
+      <!-- Rockheart Giant -->
+      <card id="7079" />
+      <!-- Supernova Carina -->
+      <card id="2071" mastery_level="2" />
+      <!-- Sproutfrog Stormchaser -->
+      <card id="7232" mastery_level="3" />
+      <!-- Revitalea Blossom -->
+      <card id="2095" mastery_level="4" />
+      <!-- Spoutal Wavesmasher -->
+      <card id="7290" mastery_level="5" />
+      <!-- Dandelion Sylph -->
+      <card id="2208" mastery_level="6" />
+      <!-- Shatterstone Horror -->
+      <card id="4063" mastery_level="7" />
+      <!-- Viir, the Subjugator -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak sees where Gobtoh hid Remi&apos;s weapons.</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>With weapons in Daknak&apos;s hand, I rule! Daknak bring peace as king of the Goblins, forever and ever!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7150</id>
+    <name>Final Warning</name>
+    <energy>18</energy>
+    <desc>Samael&apos;s face darkens at the mere mention of the Void. As a former victim of its curse, he has sworn never to allow another being under its thrall.</desc>
+    <commander id="363" />
+    <!-- Samael of White-Hilt -->
+    <deck>
+      <card id="5249" />
+      <!-- Seraph of the Paradox -->
+      <card id="2122" />
+      <!-- Voidlight Corrupted -->
+      <card id="2122" />
+      <!-- Voidlight Corrupted -->
+      <card id="2230" />
+      <!-- Punisher Holyfire -->
+      <card id="2230" />
+      <!-- Punisher Holyfire -->
+      <card id="5136" />
+      <!-- Lapis, Wavebreaker -->
+      <card id="5136" />
+      <!-- Lapis, Wavebreaker -->
+      <card id="5274" />
+      <!-- Voltwing Archangel -->
+      <card id="5274" />
+      <!-- Voltwing Archangel -->
+      <card id="7178" mastery_level="2" />
+      <!-- Oxylus, Earth Warden -->
+      <card id="7178" mastery_level="3" />
+      <!-- Oxylus, Earth Warden -->
+      <card id="7178" mastery_level="4" />
+      <!-- Oxylus, Earth Warden -->
+      <card id="5249" mastery_level="5" />
+      <!-- Seraph of the Paradox -->
+      <card id="5249" mastery_level="6" />
+      <!-- Seraph of the Paradox -->
+      <card id="4020" mastery_level="7" />
+      <!-- Sound of Death -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Daknak, you fool... Your centurion was right! You have no idea what madness you speak! </text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Anyone who claims they can control the Void is playing with a fire worse than any Chaos&apos;s magic!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7151</id>
+    <name>A Warning Unheeded</name>
+    <energy>18</energy>
+    <desc>Daknak refuses to listen to Samael. He leaps from the airship, right onto the battlefield, and draws his cursed blade!</desc>
+    <commander id="368" />
+    <!-- Soul of the Brave -->
+    <deck>
+      <card id="6136" />
+      <!-- Cosmic Anomaly -->
+      <card id="6136" />
+      <!-- Cosmic Anomaly -->
+      <card id="7251" />
+      <!-- Manic Scarecrow -->
+      <card id="7251" />
+      <!-- Manic Scarecrow -->
+      <card id="5082" />
+      <!-- Vindictive Memory -->
+      <card id="5082" />
+      <!-- Vindictive Memory -->
+      <card id="6136" />
+      <!-- Cosmic Anomaly -->
+      <card id="7028" />
+      <!-- Frozen Torrent -->
+      <card id="7028" />
+      <!-- Frozen Torrent -->
+      <card id="6043" mastery_level="2" />
+      <!-- Sandsunder -->
+      <card id="7176" mastery_level="3" />
+      <!-- Floodbender -->
+      <card id="5301" mastery_level="4" />
+      <!-- Starfall Spirit -->
+      <card id="5082" mastery_level="5" />
+      <!-- Vindictive Memory -->
+      <card id="5082" mastery_level="6" />
+      <!-- Vindictive Memory -->
+      <card id="6609" mastery_level="7" />
+      <!-- Hedron, the Critical Threat -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Bahaha! Angels too WEAK to understand Daknak plan! Just like Boldur! WEAK!!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E107 Node 2: Furious Clouds -->
+  <mission>
+    <id>7152</id>
+    <name>Chasing a Dream</name>
+    <energy>18</energy>
+    <desc>Samael balls his hands into fists and vows to slay every Goblin who dares pursue Remi&apos;s cache of Void weapons any farther.</desc>
+    <commander id="363" />
+    <!-- Samael of White-Hilt -->
+    <deck>
+      <card id="1326" />
+      <!-- Titan of Inferno -->
+      <card id="2008" />
+      <!-- Ash Bringer -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2032" />
+      <!-- Brimstone Spewer -->
+      <card id="2189" />
+      <!-- Blazetorch Spirit -->
+      <card id="2238" />
+      <!-- Flamey, the Firestorm -->
+      <card id="6135" />
+      <!-- Ballisticshell -->
+      <card id="2119" />
+      <!-- Searing Hailwing -->
+      <card id="5080" />
+      <!-- Djinnflame Master -->
+      <card id="2229" mastery_level="2" />
+      <!-- Savage Terragon -->
+      <card id="2091" mastery_level="3" />
+      <!-- Ignus, Hellbringer -->
+      <card id="2225" mastery_level="4" />
+      <!-- Uncontrolled Trinomaly -->
+      <card id="1343" mastery_level="5" />
+      <!-- Blazehorn -->
+      <card id="2015" mastery_level="6" />
+      <!-- Pumpking Kong -->
+      <card id="4001" mastery_level="7" />
+      <!-- Foxfire -->
+    </deck>
+    <speech>
+      <line>
+        <commander>samaelWithFiresword</commander>
+        <enemy>0</enemy>
+        <text>Traitor! You will pay for your hubris!</text>
+      </line>
+      <line>
+        <commander>samaelWithFiresword</commander>
+        <enemy>0</enemy>
+        <text>I don&apos;t care if I have to wield Dyrnwyn against your entire tribe. No mortal trifles with the Void!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hooo... adventurer, will you go with him? </text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>The last time he got like this, I had to clean the ashes out of my feathers for 11 days straight!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7153</id>
+    <name>Elemental Meltdown</name>
+    <energy>18</energy>
+    <desc>In the Convergence, you notice enraged Elementals that awoke in response to the war. As an Elemental himself, Remi&apos;s cache threatens this world&apos;s balance.</desc>
+    <commander id="457" />
+    <!-- Rampaging Magma Elemental -->
+    <deck>
+      <card id="2096" />
+      <!-- Magma Tsunami -->
+      <card id="2096" />
+      <!-- Magma Tsunami -->
+      <card id="2096" />
+      <!-- Magma Tsunami -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="6076" />
+      <!-- Magmatic Blast -->
+      <card id="6076" />
+      <!-- Magmatic Blast -->
+      <card id="6076" />
+      <!-- Magmatic Blast -->
+      <card id="6251" mastery_level="2" />
+      <!-- Lavahorn Monster -->
+      <card id="6251" mastery_level="3" />
+      <!-- Lavahorn Monster -->
+      <card id="6298" mastery_level="4" />
+      <!-- Loaded Lava -->
+      <card id="6228" mastery_level="5" />
+      <!-- Mag 'The Crag' Ma -->
+      <card id="6228" mastery_level="6" />
+      <!-- Mag 'The Crag' Ma -->
+      <card id="6604" mastery_level="7" />
+      <!-- Styxia, the Headless -->
+    </deck>
+    <speech>
+      <line>
+        <commander>windstormelemental</commander>
+        <enemy>1</enemy>
+        <text>WHOOOSH!!</text>
+      </line>
+      <line>
+        <commander>goldelemental</commander>
+        <enemy>1</enemy>
+        <text>GLOOOOP!!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I was afraid of this... We&apos;ll fend them off together, adventurer! </text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7154</id>
+    <name>Daknak Found!!</name>
+    <energy>18</energy>
+    <desc>You and Samael find Daknak only to notice he has found something too. Daknak reaches for an elaborate pocket watch, which you immediately recognize it as Remi&apos;s.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="7021" />
+      <!-- Darkness Elemental -->
+      <card id="6046" />
+      <!-- Celerity Burst -->
+      <card id="6046" />
+      <!-- Celerity Burst -->
+      <card id="6046" />
+      <!-- Celerity Burst -->
+      <card id="2208" />
+      <!-- Shatterstone Horror -->
+      <card id="2208" />
+      <!-- Shatterstone Horror -->
+      <card id="2208" />
+      <!-- Shatterstone Horror -->
+      <card id="7110" />
+      <!-- Contagion Glider -->
+      <card id="7110" />
+      <!-- Contagion Glider -->
+      <card id="7176" mastery_level="2" />
+      <!-- Floodbender -->
+      <card id="6275" mastery_level="3" />
+      <!-- Charmite Coallector -->
+      <card id="6200" mastery_level="4" />
+      <!-- Embered Death -->
+      <card id="7138" mastery_level="5" />
+      <!-- Deadly Spores -->
+      <card id="7137" mastery_level="6" />
+      <!-- Berserking Darkmites -->
+      <card id="7625" mastery_level="7" />
+      <!-- Quad, the Gatherer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>The secret weapon... is TIME!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>With time on Daknak&apos;s side, Daknak change the flow of the war!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak turn all Goblins slow with the power of the Void!!!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Hands off that piece of clockwork, Daknak!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Remi the Banished was barred from the elemental plane for his folly!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Who knows what will happen if you try to use his powers for yourself?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7155</id>
+    <name>Crossed Swords</name>
+    <energy>18</energy>
+    <desc>Samael draws Dyrnwyn, the legendary sword that severs the Void. Angel and goblin battle in a flurry of blades. Black clouds fall over the horizon, portending a decisive battle!</desc>
+    <commander id="384" />
+    <!-- Shadowdusk Minions -->
+    <deck>
+      <card id="7021" />
+      <!-- Darkness Elemental -->
+      <card id="7021" />
+      <!-- Darkness Elemental -->
+      <card id="7021" />
+      <!-- Darkness Elemental -->
+      <card id="7137" />
+      <!-- Berserking Darkmites -->
+      <card id="7137" />
+      <!-- Berserking Darkmites -->
+      <card id="7137" />
+      <!-- Berserking Darkmites -->
+      <card id="6042" />
+      <!-- Shadow of Storms -->
+      <card id="6042" />
+      <!-- Shadow of Storms -->
+      <card id="6042" />
+      <!-- Shadow of Storms -->
+      <card id="6045" mastery_level="2" />
+      <!-- Shadowflame -->
+      <card id="6045" mastery_level="3" />
+      <!-- Shadowflame -->
+      <card id="6104" mastery_level="4" />
+      <!-- Gloom Lurker -->
+      <card id="6104" mastery_level="5" />
+      <!-- Gloom Lurker -->
+      <card id="6104" mastery_level="6" />
+      <!-- Gloom Lurker -->
+      <card id="5634" mastery_level="7" />
+      <!-- Eira, the Electrokinetic -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7156</id>
+    <name>Daknak Time!!!</name>
+    <energy>18</energy>
+    <desc>Daknak makes a sudden, valorous strike that stuns Samael long enough for him to grab Remi&apos;s pocket watch.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="2097" />
+      <!-- Jewel Harvester -->
+      <card id="2097" />
+      <!-- Jewel Harvester -->
+      <card id="2225" />
+      <!-- Uncontrolled Trinomaly -->
+      <card id="2225" />
+      <!-- Uncontrolled Trinomaly -->
+      <card id="2007" />
+      <!-- Platinum Champion -->
+      <card id="2007" />
+      <!-- Platinum Champion -->
+      <card id="2239" />
+      <!-- Enchanted Aether Throne -->
+      <card id="2239" />
+      <!-- Enchanted Aether Throne -->
+      <card id="6077" />
+      <!-- Enigma Solutionist -->
+      <card id="5019" mastery_level="2" />
+      <!-- Blazing Aurora -->
+      <card id="5046" mastery_level="3" />
+      <!-- Dawnrise -->
+      <card id="5249" mastery_level="4" />
+      <!-- Seraph of the Paradox -->
+      <card id="5210" mastery_level="5" />
+      <!-- Dying Light -->
+      <card id="7607" mastery_level="6" />
+      <!-- Malik, Hollow Djinn -->
+      <card id="4055" mastery_level="7" />
+      <!-- Frostfire, the Corrupted -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>You don&apos;t know how long Daknak waited for this...!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>No more Boldur! No more war! Daknak reign supreme over all Goblinkind!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Then everyone listen to Daknak for once! </text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Everyone stop forgetting Daknak, and treating Daknak like weak outcast!!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak is strong! And goblins finally THINK Daknak strong!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Daknak, you IDIOT! You&apos;ve doomed us all!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7157</id>
+    <name>Cataclysm</name>
+    <energy>18</energy>
+    <desc>The instant Daknak touches the watch, a fearsome power emanates from within it! An explosion of Void magic cracks the air open. The cracks spread across the sky. And the world shatters...</desc>
+    <commander id="337" />
+    <!-- Dark Dweller -->
+    <deck>
+      <card id="6046" />
+      <!-- Celerity Burst -->
+      <card id="6046" />
+      <!-- Celerity Burst -->
+      <card id="6046" />
+      <!-- Celerity Burst -->
+      <card id="5230" />
+      <!-- Rageblood Djinn -->
+      <card id="5230" />
+      <!-- Rageblood Djinn -->
+      <card id="5230" />
+      <!-- Rageblood Djinn -->
+      <card id="5015" />
+      <!-- Gravity Bender -->
+      <card id="5015" />
+      <!-- Gravity Bender -->
+      <card id="5015" />
+      <!-- Gravity Bender -->
+      <card id="7138" mastery_level="2" />
+      <!-- Deadly Spores -->
+      <card id="6200" mastery_level="3" />
+      <!-- Embered Death -->
+      <card id="7160" mastery_level="4" />
+      <!-- Fatal Stonesteps -->
+      <card id="6147" mastery_level="5" />
+      <!-- Sandspirit Breaker -->
+      <card id="4020" mastery_level="6" />
+      <!-- Sound of Death -->
+      <card id="5619" mastery_level="7" />
+      <!-- Chlorox Omega -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Now look what you&apos;ve done!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I know this magic. It&apos;s the ultimate power of the Void... but it&apos;s never done this before!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>What&apos;s happening...?!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>All Daknak wanted was... respect!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 107: ComDev Elementals - New Lightning Node-->
+  <mission>
+    <id>2007</id>
+    <name>Portrait of the Apocalypse</name>
+    <energy>7</energy>
+    <desc>You are having a dream. Ominous purple cracks spread across Arcantica, and a bubbling rainbow of chaotic possibilities bleeds out from within them.</desc>
+    <commander id="484" />
+    <!-- Lightning Boss K&apos;luum -->
+    <deck>
+      <card id="4075" />
+      <!-- K'luum, the Unbound Void -->
+      <card id="1641" />
+      <!-- Heart of the Wyld -->
+      <card id="1641" />
+      <!-- Heart of the Wyld -->
+      <card id="1641" />
+      <!-- Heart of the Wyld -->
+      <card id="1642" />
+      <!-- Icestone Demon -->
+      <card id="1642" />
+      <!-- Icestone Demon -->
+      <card id="1642" />
+      <!-- Icestone Demon -->
+      <card id="2047" />
+      <!-- Lustrous Dragon -->
+      <card id="2047" />
+      <!-- Lustrous Dragon -->
+      <card id="2047" mastery_level="2" />
+      <!-- Lustrous Dragon -->
+      <card id="7194" mastery_level="3" />
+      <!-- Coralscape Strangler -->
+      <card id="7194" mastery_level="4" />
+      <!-- Coralscape Strangler -->
+      <card id="7081" mastery_level="5" />
+      <!-- Llinella, Wave's Caller -->
+      <card id="7081" mastery_level="6" />
+      <!-- Llinella, Wave's Caller -->
+      <card id="5276" mastery_level="7" />
+      <!-- Winterback Coldossus -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2008</id>
+    <name>Primordial Riverbed</name>
+    <energy>7</energy>
+    <desc>The world drowns in those infinite colors, and then the universe. Then, the waters still. Everything gives way to ominous black. Not even the stars are visible.</desc>
+    <commander id="484" />
+    <!-- Lightning Boss K&apos;luum -->
+    <deck>
+      <card id="4075" />
+      <!-- K'luum, the Unbound Void -->
+      <card id="5301" />
+      <!-- Starfall Spirit -->
+      <card id="5301" />
+      <!-- Starfall Spirit -->
+      <card id="5182" />
+      <!-- Lunar Seles -->
+      <card id="5182" />
+      <!-- Lunar Seles -->
+      <card id="5175" />
+      <!-- Avatar of Cygnus -->
+      <card id="5175" />
+      <!-- Avatar of Cygnus -->
+      <card id="6080" />
+      <!-- Refined Titanirous -->
+      <card id="6080" />
+      <!-- Refined Titanirous -->
+      <card id="6274" mastery_level="2" />
+      <!-- Venus Deathtrap -->
+      <card id="6274" mastery_level="3" />
+      <!-- Venus Deathtrap -->
+      <card id="6274" mastery_level="4" />
+      <!-- Venus Deathtrap -->
+      <card id="5249" mastery_level="5" />
+      <!-- Seraph of the Paradox -->
+      <card id="5249" mastery_level="6" />
+      <!-- Seraph of the Paradox -->
+      <card id="5249" mastery_level="7" />
+      <!-- Seraph of the Paradox -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2009</id>
+    <name>In the Darkness</name>
+    <energy>7</energy>
+    <desc>You cannot perceive anymore. And yet, you can hear a voice call out to you. The whispering is oddly familiar to you... and so is the harsh presence all around you.</desc>
+    <commander id="484" />
+    <!-- Lightning Boss K&apos;luum -->
+    <deck>
+      <card id="4075" />
+      <!-- K'luum, the Unbound Void -->
+      <card id="6226" />
+      <!-- Inferno Hound -->
+      <card id="6226" />
+      <!-- Inferno Hound -->
+      <card id="6210" />
+      <!-- Blazing Blade -->
+      <card id="6210" />
+      <!-- Blazing Blade -->
+      <card id="6210" />
+      <!-- Blazing Blade -->
+      <card id="6228" />
+      <!-- Mag 'The Crag' Ma -->
+      <card id="6228" />
+      <!-- Mag 'The Crag' Ma -->
+      <card id="6228" />
+      <!-- Mag 'The Crag' Ma -->
+      <card id="6202" mastery_level="2" />
+      <!-- Wildblaze -->
+      <card id="6202" mastery_level="3" />
+      <!-- Wildblaze -->
+      <card id="6202" mastery_level="4" />
+      <!-- Wildblaze -->
+      <card id="6179" mastery_level="5" />
+      <!-- Solstice Doumu -->
+      <card id="6179" mastery_level="6" />
+      <!-- Solstice Doumu -->
+      <card id="6179" mastery_level="7" />
+      <!-- Solstice Doumu -->
+    </deck>
+    <speech>
+      <line>
+        <commander>voidminions</commander>
+        <enemy>1</enemy>
+        <text>...come with us! Come with us! Come with us!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2010</id>
+    <name>The Void Unbound</name>
+    <energy>7</energy>
+    <desc>Voidlings usher you mindlessly through the shadows. A million purple eyes open. The presence clawing at your sanity is the all-encompassing darkness.</desc>
+    <commander id="484" />
+    <!-- Lightning Boss K&apos;luum -->
+    <deck>
+      <card id="4075" />
+      <!-- K'luum, the Unbound Void -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" />
+      <!-- Void Commando -->
+      <card id="6303" mastery_level="2" />
+      <!-- Void Commando -->
+      <card id="6625" mastery_level="3" />
+      <!-- R3-M1, the Channeler -->
+      <card id="4065" mastery_level="4" />
+      <!-- Lerna, the Mutated -->
+      <card id="6627" mastery_level="5" />
+      <!-- Vig, the Leaper -->
+      <card id="4063" mastery_level="6" />
+      <!-- Viir, the Subjugator -->
+      <card id="4022" mastery_level="7" />
+      <!-- Bluefire, Void Incarnate -->
+    </deck>
+    <speech>
+      <line>
+        <commander>voidminions</commander>
+        <enemy>1</enemy>
+        <text>We meet again...</text>
+      </line>
+      <line>
+        <commander>tremorwurm</commander>
+        <enemy>0</enemy>
+        <text>In many shapes...</text>
+      </line>
+      <line>
+        <commander>dawnglowmonster</commander>
+        <enemy>1</enemy>
+        <text>In many faces...</text>
+      </line>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>0</enemy>
+        <text>Thy quest continues...</text>
+      </line>
+      <line>
+        <commander>balrog</commander>
+        <enemy>1</enemy>
+        <text>But all in vain...</text>
+      </line>
+      <line>
+        <commander>baronSkeleton</commander>
+        <enemy>0</enemy>
+        <text>This world begins and ends in nothing...</text>
+      </line>
+      <line>
+        <commander>bluefireVoidDragon</commander>
+        <enemy>1</enemy>
+        <text>And through nothing...</text>
+      </line>
+      <line>
+        <commander>void2</commander>
+        <enemy>1</enemy>
+        <text>We have unlimited potential.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2011</id>
+    <name>Dream No More</name>
+    <energy>7</energy>
+    <desc>You raise your blade and your Spellstones in defiance against the protean Void. The voices taunt you, but you keep what is left of your wits and battle on!</desc>
+    <commander id="484" />
+    <!-- Lightning Boss K&apos;luum -->
+    <deck>
+      <card id="4075" />
+      <!-- K'luum, the Unbound Void -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="5049" mastery_level="2" />
+      <!-- Joryl of Onyx Marble -->
+      <card id="5049" mastery_level="3" />
+      <!-- Joryl of Onyx Marble -->
+      <card id="5049" mastery_level="4" />
+      <!-- Joryl of Onyx Marble -->
+      <card id="5049" mastery_level="5" />
+      <!-- Joryl of Onyx Marble -->
+      <card id="5049" mastery_level="6" />
+      <!-- Joryl of Onyx Marble -->
+      <card id="5049" mastery_level="7" />
+      <!-- Joryl of Onyx Marble -->
+    </deck>
+    <speech>
+      <line>
+        <commander>void2</commander>
+        <enemy>1</enemy>
+        <text>Thy heart. Thy soul. Thy spirit.</text>
+      </line>
+      <line>
+        <commander>void2</commander>
+        <enemy>1</enemy>
+        <text>All flowing... into one single stream.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2012</id>
+    <name>To a World Rewritten</name>
+    <energy>7</energy>
+    <desc>As you flail around uselessly, you sense the Void bore of this fight. The very air pulses with rage. The more you fight, the more your head throbs. Soon you fall into a vast black sleep, and you know no more.</desc>
+    <commander id="484" />
+    <!-- Lightning Boss K&apos;luum -->
+    <deck>
+      <card id="4075" />
+      <!-- K'luum, the Unbound Void -->
+      <card id="4063" />
+      <!-- Viir, the Subjugator -->
+      <card id="5605" />
+      <!-- Medusozoa, the Immortal -->
+      <card id="4001" />
+      <!-- Foxfire -->
+      <card id="4055" />
+      <!-- Frostfire, the Corrupted -->
+      <card id="7611" />
+      <!-- Vsov, Blizzard Djinn -->
+      <card id="4020" />
+      <!-- Sound of Death -->
+      <card id="5601" />
+      <!-- Volsung Icewind -->
+      <card id="4060" />
+      <!-- Yaritza -->
+      <card id="4025" mastery_level="2" />
+      <!-- Quageye, the Masher -->
+      <card id="4024" mastery_level="3" />
+      <!-- The Coalheart Widow -->
+      <card id="4018" mastery_level="4" />
+      <!-- Kensho, the Aeromaster -->
+      <card id="5608" mastery_level="5" />
+      <!-- Windsage Gama -->
+      <card id="5628" mastery_level="6" />
+      <!-- Gorgon, The Imprisoned -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>void2</commander>
+        <enemy>1</enemy>
+        <text>Go, our Champion.</text>
+      </line>
+      <line>
+        <commander>void2</commander>
+        <enemy>1</enemy>
+        <text>Return... from whence thou came...</text>
       </line>
     </speech>
   </mission>

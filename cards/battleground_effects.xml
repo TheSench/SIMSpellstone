@@ -1594,45 +1594,14 @@
   <battleground>
     <id>169</id>
     <name>Elemental Meltdown</name>
-    <desc>0-2D Elementals gain Scorch, Weaken and Pierce equal to 15% base health. 3-4D Elementals gain Barrier and Vengeance and are Enraged for 10% base health.</desc>
+    <desc>All Elementals are Enraged for 7% health. 0-2D Elementals gain Weaken and Pierce equal to 15% base health. 3-4D Elementals gain Shroud and Vengeance for 10% base health.</desc>
     <icon>filter_elementals_64</icon>
     <effect>
-      <add_skill id="burn" mult="0.15" base="health" y="5" delay="0,1,2" />
       <add_skill id="weakenbge" mult="0.15" base="health" y="5" delay="0,1,2" />
       <add_skill id="pierce" mult="0.15" base="health" y="5" delay="0,1,2" />
-      <skill id="protect" ignore_nullify="1" mult="0.10" all="1" base="health" y="5" delay="3,4" />
-      <skill id="displayEffect" trigger="onSkill" s="protect">
-        <target_effect>
-          <prefab>submerge_fadecloth</prefab>
-          <bundle_id>82</bundle_id>
-          <duration>1</duration>
-          <loop>true</loop>
-          <sound>shield</sound>
-        </target_effect>
-        <projectile_effect>
-          <prefab>ProtectProjectile</prefab>
-          <delay>0.5</delay>
-          <duration>0.5</duration>
-        </projectile_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkillHit" s="protect">
-        <actor_effect>
-          <prefab>submerge_barrier</prefab>
-          <bundle_id>82</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
-      <skill id="displayEffect" trigger="onSkillBreak" s="protect">
-        <actor_effect>
-          <prefab>submerge_break</prefab>
-          <bundle_id>82</bundle_id>
-          <duration>1</duration>
-          <delay>0</delay>
-        </actor_effect>
-      </skill>
+      <add_skill id="stasis" mult="0.10" base="health" y="5" delay="3,4" />
       <add_skill id="counter" mult="0.10" base="health" y="5" delay="3,4" />
-      <skill id="enrage" ignore_nullify="1" mult="0.10" all="1" base="health" y="5" delay="3,4" />
+      <skill id="enrage" ignore_nullify="1" mult="0.07" all="1" base="health" y="5" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -4572,6 +4541,48 @@
     <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult="0.1" mult="0.05" />
+    </effect>
+  </battleground>
+  <!-- Gold Nodes Enemy Scaling - More difficult than all pink nodes -->
+  <battleground>
+    <id>2119</id>
+    <name>Golden Campaign</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>bge_Smoldering_Ember_icon</icon>
+    <icon_bundle>197</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult="0.1" mult="0.05" />
+    </effect>
+  </battleground>
+  <!-- ComDev Nodes Enemy Scaling - More difficult than all pink and gold nodes -->
+  <battleground>
+    <id>2120</id>
+    <name>A New Challenge</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_void_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult="0.08" mult="0.06" />
+    </effect>
+  </battleground>
+  <!-- Lightning Nodes -->
+  <battleground>
+    <id>2121</id>
+    <name>Rune Escape</name>
+    <desc>Runes have no effect in this Lightning Boss Node.</desc>
+    <icon>Rune_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <rune_mult>0</rune_mult>
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->

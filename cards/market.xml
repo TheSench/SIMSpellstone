@@ -741,6 +741,21 @@
     </cards>
   </store_item>
   <store_item>
+    <id>45</id>
+    <name>Double Legendary Reward Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one ^cE7FFLegendary ^cFFFFcard from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>legendary_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>5000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="2000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
     <id>51</id>
     <name>Pile of Gold Coins</name>
     <category>2</category>
@@ -1205,6 +1220,21 @@
       <item id="2524" quantity="150" weight="0.1" />
     </item_pack>
   </store_item>
+  <!--
+	<store_item>
+		<id>97</id>
+		<name>Universal Solvent</name>
+		<category>2</category>
+		<desc>Craft with Expedition Items to get a Double ^cE7FFLegendary ^cFFFFReward Pack!</desc>
+		<show_desc>1</show_desc>
+		<priority>51</priority>
+		<sc_cost>10000</sc_cost>
+		<asset_prefab>arcane_vapor</asset_prefab>
+		<icon>arcane_vapor</icon>
+		<bundle>17</bundle>
+		<item_req>8030</item_req>
+		<item id='4002' quantity='1' />
+	</store_item>-->
   <!-- =============================== -->
   <!-- ======= SPECIAL MARKET ======== -->
   <!-- =============================== -->
@@ -3016,14 +3046,14 @@
     <name>Cycling Card</name>
     <category>4</category>
     <vip_level_req>5</vip_level_req>
-    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases each purchase!</desc>
-    <preview_desc>Unlocks a random Epic or Legendary card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 5.</preview_desc>
+    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
+    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFor ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours! Requires VIP Level 5.</preview_desc>
     <priority>30</priority>
     <icon>icon_blue_crystal</icon>
     <scale_prices>1</scale_prices>
     <tied_id>4005</tied_id>
-    <rarity3scaling purchase1="60" purchase2="100" purchase3="175" purchase4="300" scalar="150" />
-    <rarity4scaling purchase1="150" purchase2="250" purchase3="400" purchase4="600" scalar="200" />
+    <rarity3scaling purchase1="60" purchase2="60" purchase3="60" purchase4="60" scalar="40" />
+    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
     <!-- cycle length in seconds. Keep same per pack or may break everything -->
@@ -3058,19 +3088,18 @@
     <name>Cycling Card</name>
     <category>4</category>
     <vip_level_req>13</vip_level_req>
-    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases each purchase!</desc>
-    <preview_desc>Unlocks a random Epic or Legendary card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 13.</preview_desc>
+    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
+    <preview_desc>Unlocks a random ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours! Requires VIP Level 13.</preview_desc>
     <priority>50</priority>
     <icon>icon_blue_crystal</icon>
     <scale_prices>1</scale_prices>
     <tied_id>4003</tied_id>
-    <rarity3scaling purchase1="60" purchase2="100" purchase3="175" purchase4="300" scalar="150" />
-    <rarity4scaling purchase1="150" purchase2="250" purchase3="400" purchase4="600" scalar="200" />
+    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -3079,7 +3108,7 @@
     <category>4</category>
     <vip_level_req>0</vip_level_req>
     <desc>Gives a single copy of the displayed Reward card. May be purchased multiple times, but the price increases each purchase!</desc>
-    <preview_desc>Unlocks a random Epic Reward card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
+    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFReward card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
     <priority>10</priority>
     <icon>icon_blue_crystal</icon>
     <scale_prices>1</scale_prices>
@@ -3087,7 +3116,6 @@
     <!-- Items -->
     <cost item="5" />
     <rarity3scaling purchase1="600" purchase2="750" purchase3="900" purchase4="1200" scalar="300" />
-    <rarity4scaling purchase1="10000" scalar="5000" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
@@ -9683,6 +9711,96 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="5239" display_card_id="5239" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5331</id>
+    <name>Double Legendary Elemental Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed ^cE7FFLegendary ^cFFFFElemental card from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5332</id>
+    <name>Mag Ma Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMag "The Pebble" Ma^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6228" display_card_id="6228" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5333</id>
+    <name>Lapis Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFLapis^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5136" display_card_id="5136" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5334</id>
+    <name>Embered Demise Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFEmbered Demise^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6200" display_card_id="6200" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5335</id>
+    <name>Oxylus Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFOxylus, Might Warden^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7178" display_card_id="7178" />
     </cards>
   </store_item>
 </root>

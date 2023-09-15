@@ -582,7 +582,7 @@
   </skillType>
   <skillType>
     <id>vampirism</id>
-    <order>1</order>
+    <order>85</order>
     <icon>vampirism</icon>
     <name>Vampirism</name>
     <desc>Deals damage to opposing creature, even while on delay. This damage cannot be increased. After dealing damage, heals self.</desc>

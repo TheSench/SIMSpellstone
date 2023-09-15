@@ -19961,6 +19961,183 @@
       <!-- Dust  -->
     </reward>
   </achievement>
+  <!-- Event 107: ComDev Elementals - Conflux Convergence -->
+  <!-- E107 Node 1: The Goblins' Conflux -->
+  <achievement>
+    <id>3907</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Goblins' Conflux</name>
+    <!-- Campaign ID 1355, see campaigns.xml -->
+    <desc>Complete the The Goblins' Conflux campaign on Mastery Level 1.</desc>
+    <mission_req>7151</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1694710800</locked_start_time>
+    <!-- Thursday, 14 September 2023 at 17:00:00 -->
+    <req>
+      <campaign>1355</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3128" number="100" />
+      <!-- Expediton Item ID, see campaigns.xml -->
+      <event_points id="7103" number="100" />
+      <!-- Expediton ID, see event_timeline_expeditions -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3908</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Goblins' Conflux</name>
+    <!-- Campaign ID 1355, see campaigns.xml -->
+    <desc>Complete the The Goblins' Conflux campaign on Mastery Level 2.</desc>
+    <mission_req>7151</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1694710800</locked_start_time>
+    <!-- Thursday, 14 September 2023 at 17:00:00 -->
+    <achievement_req>3907</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1355</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3909</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Goblins' Conflux</name>
+    <!-- Campaign ID 1355, see campaigns.xml -->
+    <desc>Complete the The Goblins' Conflux campaign on Mastery Level 4.</desc>
+    <mission_req>7151</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1694710800</locked_start_time>
+    <!-- Thursday, 14 September 2023 at 17:00:00 -->
+    <achievement_req>3908</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1355</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>250</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3910</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Goblins' Conflux</name>
+    <!-- Campaign ID 1355, see campaigns.xml -->
+    <desc>Complete the The Goblins' Conflux campaign on Mastery Level 6.</desc>
+    <mission_req>7151</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1694710800</locked_start_time>
+    <!-- Thursday, 14 September 2023 at 17:00:00 -->
+    <achievement_req>3909</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1355</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards  -->
+    </reward>
+  </achievement>
+  <!-- E107 Node 2: Furious Clouds -->
+  <achievement>
+    <id>3911</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Furious Clouds</name>
+    <!-- Campaign ID 1356, see campaigns.xml -->
+    <desc>Complete the Furious Clouds campaign on Mastery Level 1.</desc>
+    <mission_req>7157</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1695920400</locked_start_time>
+    <!--  Thursday, 28 September 2023 17:00:00 -->
+    <req>
+      <campaign>1356</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3128" number="100" />
+      <!-- Expediton Item ID, see campaigns.xml -->
+      <event_points id="7103" number="100" />
+      <!-- Expediton ID, see event_timeline_expeditions -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3912</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Furious Clouds</name>
+    <!-- Campaign ID 1356, see campaigns.xml -->
+    <desc>Complete the Furious Clouds campaign on Mastery Level 2.</desc>
+    <mission_req>7157</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1695920400</locked_start_time>
+    <!--  Thursday, 28 September 2023 17:00:00 -->
+    <achievement_req>3911</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1356</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3913</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Furious Clouds</name>
+    <!-- Campaign ID 1356, see campaigns.xml -->
+    <desc>Complete the Furious Clouds campaign on Mastery Level 4.</desc>
+    <mission_req>7157</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1695920400</locked_start_time>
+    <!--  Thursday, 28 September 2023 17:00:00 -->
+    <achievement_req>3912</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1356</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>250</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3914</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Furious Clouds</name>
+    <!-- Campaign ID 1356, see campaigns.xml -->
+    <desc>Complete the Furious Clouds campaign on Mastery Level 6.</desc>
+    <mission_req>7157</mission_req>
+    <!-- Last mission ID of campaign, see campaigns.xml -->
+    <locked_start_time>1695920400</locked_start_time>
+    <!--  Thursday, 28 September 2023 17:00:00 -->
+    <achievement_req>3913</achievement_req>
+    <!-- Don't forget requirement is the previous achievement -->
+    <req>
+      <campaign>1356</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards  -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -21422,6 +21599,28 @@
       <!-- The Return of a King, ComDev Node 1 -->
       <campaign>1354</campaign>
       <!-- Warring Factions, ComDev Node 2 -->
+      <level>7</level>
+      <!-- Mastery Level 7 -->
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory expansion -->
+    </reward>
+  </achievement>
+  <!-- Event 107: ComDev Elementals - Conflux Convergence -->
+  <achievement>
+    <id>4061</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Conflux Convergence</name>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Conflux Convergence.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7157</mission_req>
+    <req>
+      <campaign>1355</campaign>
+      <!-- The Goblins' Conflux, ComDev Node 1 -->
+      <campaign>1356</campaign>
+      <!-- Furious Clouds, ComDev Node 2 -->
       <level>7</level>
       <!-- Mastery Level 7 -->
     </req>

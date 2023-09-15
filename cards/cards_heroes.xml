@@ -180,40 +180,40 @@
     <desc>Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton after all.</desc>
     <attack>0</attack>
     <health>56</health>
-    <skill id="imbue" s="leech" all="1" x="2" />
-    <skill id="imbue" s="daze" x="1" />
+    <skill id="imbue" s="leech" all="1" x="1" />
+    <skill id="imbue" s="vampirism" x="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
       <health>62</health>
-      <skill id="imbue" s="leech" all="1" x="3" />
-      <skill id="imbue" s="daze" x="2" />
+      <skill id="imbue" s="leech" all="1" x="2" />
+      <skill id="imbue" s="vampirism" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>68</health>
-      <skill id="imbue" s="leech" all="1" x="3" />
-      <skill id="imbue" s="daze" all="1" x="2" />
+      <skill id="imbue" s="leech" all="1" x="2" />
+      <skill id="imbue" s="vampirism" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>74</health>
-      <skill id="imbue" s="leech" all="1" x="4" />
-      <skill id="imbue" s="daze" all="1" x="2" />
+      <skill id="imbue" s="leech" all="1" x="3" />
+      <skill id="imbue" s="vampirism" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>80</health>
-      <skill id="imbue" s="leech" all="1" x="5" />
-      <skill id="imbue" s="daze" all="1" x="2" />
+      <skill id="imbue" s="leech" all="1" x="3" />
+      <skill id="imbue" s="vampirism" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>86</health>
-      <skill id="imbue" s="leech" all="1" x="6" />
-      <skill id="imbue" s="daze" all="1" x="3" />
+      <skill id="imbue" s="leech" all="1" x="4" />
+      <skill id="imbue" s="vampirism" all="1" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -12847,6 +12847,56 @@
       <skill id="imbue" x="8" s="leech" all="1" />
       <skill id="imbue" x="8" s="absorb" all="1" />
       <skill id="rally" x="8" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>484</id>
+    <card_type>1</card_type>
+    <name>Lightning Boss K'luum</name>
+    <portrait>void2</portrait>
+    <asset_bundle>5</asset_bundle>
+    <attack>0</attack>
+    <health>75</health>
+    <rarity>4</rarity>
+    <skill id="barrage" x="4" />
+    <skill id="confuse" c="5" />
+    <skill id="imbue" x="1" all="1" s="evade" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>80</health>
+      <skill id="barrage" x="6" />
+      <skill id="confuse" c="4" />
+      <skill id="imbue" x="2" all="1" s="evade" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>85</health>
+      <skill id="barrage" x="8" />
+      <skill id="confuse" c="3" />
+      <skill id="imbue" x="3" all="1" s="evade" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>90</health>
+      <skill id="barrage" x="11" />
+      <skill id="confuse" c="2" />
+      <skill id="imbue" x="4" all="1" s="evade" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>95</health>
+      <skill id="barrage" x="15" />
+      <skill id="confuse" c="1" />
+      <skill id="imbue" x="5" all="1" s="evade" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="barrage" x="20" />
+      <skill id="confuse" c="1" />
+      <skill id="imbue" x="6" all="1" s="evade" />
     </upgrade>
   </unit>
 </root>

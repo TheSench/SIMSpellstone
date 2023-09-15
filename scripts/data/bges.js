@@ -2495,20 +2495,8 @@ var BATTLEGROUNDS = {
 		"name": "Goblin Civil War"
 	},
 	"169": {
-		"desc": "0-2D Elementals gain Scorch, Weaken and Pierce equal to 15% base health. 3-4D Elementals gain Barrier and Vengeance and are Enraged for 10% base health.",
+		"desc": "All Elementals are Enraged for 7% health. 0-2D Elementals gain Weaken and Pierce equal to 15% base health. 3-4D Elementals gain Shroud and Vengeance for 10% base health.",
 		"effect": [
-			{
-				"base": "health",
-				"delay": [
-					0,
-					1,
-					2
-				],
-				"effect_type": "add_skill",
-				"id": "burn",
-				"mult": 0.15,
-				"y": "5"
-			},
 			{
 				"base": "health",
 				"delay": [
@@ -2540,6 +2528,17 @@ var BATTLEGROUNDS = {
 					4
 				],
 				"effect_type": "add_skill",
+				"id": "stasis",
+				"mult": 0.1,
+				"y": "5"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
 				"id": "counter",
 				"mult": 0.1,
 				"y": "5"
@@ -2547,27 +2546,10 @@ var BATTLEGROUNDS = {
 			{
 				"all": "1",
 				"base": "health",
-				"delay": [
-					3,
-					4
-				],
-				"effect_type": "skill",
-				"id": "protect",
-				"ignore_nullify": "1",
-				"mult": 0.1,
-				"y": "5"
-			},
-			{
-				"all": "1",
-				"base": "health",
-				"delay": [
-					3,
-					4
-				],
 				"effect_type": "skill",
 				"id": "enrage",
 				"ignore_nullify": "1",
-				"mult": 0.1,
+				"mult": 0.07,
 				"y": "5"
 			}
 		],
@@ -6349,6 +6331,50 @@ var BATTLEGROUNDS = {
 		"name": "Cumbia of Viracocha",
 		"scale_with_level": true,
 		"starting_level": 0
+	},
+	"2119": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.1,
+				"effect_type": "scale_attributes",
+				"mult": 0.05
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2119",
+		"name": "Golden Campaign",
+		"scale_with_level": true,
+		"starting_level": 0
+	},
+	"2120": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.08,
+				"effect_type": "scale_attributes",
+				"mult": 0.06
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2120",
+		"name": "A New Challenge",
+		"scale_with_level": true,
+		"starting_level": 0
+	},
+	"2121": {
+		"desc": "Runes have no effect in this Lightning Boss Node.",
+		"effect": [
+			{
+				"effect_type": "runeMultiplier",
+				"mult": 0
+			}
+		],
+		"hidden": true,
+		"id": "2121",
+		"name": "Rune Escape"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",

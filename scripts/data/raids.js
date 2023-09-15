@@ -30187,5 +30187,395 @@ var RAIDS = {
 		"name": "Goblin Ruins Dungeon",
 		"type": "Dungeon",
 		"upgradeLevels": "100"
+	},
+	"28069": {
+		"bge": "510",
+		"commander": {
+			"card": [
+				{
+					"id": "343",
+					"max_mastery_level": "40"
+				},
+				{
+					"id": "345",
+					"max_mastery_level": "50"
+				},
+				{
+					"id": "347",
+					"max_mastery_level": "60"
+				},
+				{
+					"id": "288",
+					"max_mastery_level": "115",
+					"min_mastery_level": "40"
+				},
+				{
+					"id": "348",
+					"max_mastery_level": "120",
+					"min_mastery_level": "50"
+				},
+				{
+					"id": "350",
+					"max_mastery_level": "130",
+					"min_mastery_level": "60"
+				},
+				{
+					"id": "349",
+					"max_mastery_level": "140",
+					"min_mastery_level": "115"
+				},
+				{
+					"id": "442",
+					"min_mastery_level": "126"
+				},
+				{
+					"id": "441",
+					"min_mastery_level": "135"
+				}
+			]
+		},
+		"deck": {
+			"card": [
+				{
+					"max_rarity": "2",
+					"min_rarity": "1",
+					"remove_mastery_level": "20",
+					"set": "1000,2000,3000"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "1",
+					"remove_mastery_level": "20",
+					"set": "1000,2000,3000"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "1",
+					"remove_mastery_level": "25",
+					"set": "1000,2000,3000"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "1",
+					"remove_mastery_level": "30",
+					"set": "1000,2000,3000"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "1",
+					"remove_mastery_level": "35",
+					"set": "1000,2000,3000"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "2",
+					"remove_mastery_level": "35",
+					"set": "1000,2000,3000",
+					"type": "5"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "2",
+					"remove_mastery_level": "40",
+					"set": "1000,2000,3000",
+					"type": "5"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "2",
+					"remove_mastery_level": "40",
+					"set": "1000,2000,3000",
+					"type": "5"
+				},
+				{
+					"max_rarity": "2",
+					"min_rarity": "2",
+					"remove_mastery_level": "45",
+					"set": "1000,2000,3000"
+				},
+				{
+					"max_rarity": "3",
+					"min_rarity": "2",
+					"remove_mastery_level": "45",
+					"set": "1000,2000,3000",
+					"type": "5"
+				},
+				{
+					"max_rarity": "3",
+					"min_rarity": "2",
+					"remove_mastery_level": "50",
+					"set": "1000,2000,3000",
+					"type": "5"
+				},
+				{
+					"max_rarity": "3",
+					"min_rarity": "3",
+					"remove_mastery_level": "50",
+					"set": "1000,2000,3000"
+				},
+				{
+					"mastery_level": "5",
+					"max_rarity": "3",
+					"min_rarity": "3",
+					"remove_mastery_level": "55",
+					"set": "3000,4000"
+				},
+				{
+					"mastery_level": "13",
+					"max_rarity": "3",
+					"min_rarity": "3",
+					"remove_mastery_level": "60",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "13",
+					"max_rarity": "3",
+					"min_rarity": "3",
+					"remove_mastery_level": "65",
+					"set": "3000,4000"
+				},
+				{
+					"mastery_level": "20",
+					"max_rarity": "3",
+					"min_rarity": "3",
+					"remove_mastery_level": "70",
+					"set": "3000,4000"
+				},
+				{
+					"mastery_level": "20",
+					"max_rarity": "3",
+					"min_rarity": "3",
+					"remove_mastery_level": "75",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "25",
+					"max_rarity": "3",
+					"min_rarity": "3",
+					"remove_mastery_level": "75",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "30",
+					"max_rarity": "4",
+					"min_rarity": "3",
+					"remove_mastery_level": "80",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "35",
+					"max_rarity": "4",
+					"min_rarity": "3",
+					"remove_mastery_level": "85",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "35",
+					"max_rarity": "4",
+					"min_rarity": "3",
+					"remove_mastery_level": "90",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "40",
+					"max_rarity": "4",
+					"min_rarity": "3",
+					"remove_mastery_level": "95",
+					"set": "3000,4000"
+				},
+				{
+					"mastery_level": "40",
+					"max_rarity": "4",
+					"min_rarity": "3",
+					"remove_mastery_level": "100",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "45",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "105",
+					"set": "3000,4000"
+				},
+				{
+					"mastery_level": "45",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "110",
+					"set": "3000,4000"
+				},
+				{
+					"mastery_level": "50",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "115",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "50",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "120",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "55",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "125",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "60",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "130",
+					"set": "4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "65",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "130",
+					"set": "4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "70",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "130",
+					"set": "4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "75",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "130",
+					"set": "4000",
+					"type": "5"
+				},
+				{
+					"id": "2239",
+					"mastery_level": "75"
+				},
+				{
+					"mastery_level": "80",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "134",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "85",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "134",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "90",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "138",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"mastery_level": "95",
+					"max_rarity": "4",
+					"min_rarity": "4",
+					"remove_mastery_level": "138",
+					"set": "3000,4000",
+					"type": "5"
+				},
+				{
+					"id": "2071",
+					"mastery_level": "100"
+				},
+				{
+					"id": "7044",
+					"mastery_level": "105"
+				},
+				{
+					"id": "5230",
+					"mastery_level": "110"
+				},
+				{
+					"id": "5238",
+					"mastery_level": "115"
+				},
+				{
+					"id": "6019",
+					"mastery_level": "115"
+				},
+				{
+					"id": "8125",
+					"mastery_level": "120"
+				},
+				{
+					"id": "7013",
+					"mastery_level": "120"
+				},
+				{
+					"id": "7178",
+					"mastery_level": "125"
+				},
+				{
+					"id": "5249",
+					"mastery_level": "125"
+				},
+				{
+					"id": "7074",
+					"mastery_level": "125"
+				},
+				{
+					"id": "6228",
+					"mastery_level": "130"
+				},
+				{
+					"id": "5136",
+					"mastery_level": "130"
+				},
+				{
+					"id": "6179",
+					"mastery_level": "130"
+				},
+				{
+					"id": "7189",
+					"mastery_level": "134"
+				},
+				{
+					"id": "7230",
+					"mastery_level": "134"
+				},
+				{
+					"id": "5049",
+					"mastery_level": "138"
+				},
+				{
+					"id": "7019",
+					"mastery_level": "138"
+				}
+			]
+		},
+		"id": "28069",
+		"name": "Dark Elemental Dungeon",
+		"type": "Dungeon",
+		"upgradeLevels": "100"
 	}
 };
