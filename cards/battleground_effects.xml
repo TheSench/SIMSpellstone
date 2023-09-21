@@ -4555,6 +4555,8 @@
     <!-- Boolean -->
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult="0.1" mult="0.05" />
     </effect>
@@ -4570,6 +4572,8 @@
     <!-- Boolean -->
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
     <effect>
       <scale_attributes base_mult="0.08" mult="0.06" />
     </effect>

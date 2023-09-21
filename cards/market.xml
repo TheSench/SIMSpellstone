@@ -9735,7 +9735,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFMag "The Pebble" Ma^cFFFF! May be purchased four times.</desc>
+    <desc>Gives one copy of a ^cE7FFMag &quot;The Pebble&quot; Ma^cFFFF! May be purchased four times.</desc>
     <background_prefab>legendary_card_banner</background_prefab>
     <bundle>35</bundle>
     <icon>icon_blue_crystal</icon>

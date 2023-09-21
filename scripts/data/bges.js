@@ -6344,6 +6344,7 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2119",
+		"max_level": 7,
 		"name": "Golden Campaign",
 		"scale_with_level": true,
 		"starting_level": 0
@@ -6360,6 +6361,7 @@ var BATTLEGROUNDS = {
 		"enemy_only": true,
 		"hidden": true,
 		"id": "2120",
+		"max_level": 7,
 		"name": "A New Challenge",
 		"scale_with_level": true,
 		"starting_level": 0
