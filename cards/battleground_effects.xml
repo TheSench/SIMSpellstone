@@ -1604,6 +1604,30 @@
       <skill id="enrage" ignore_nullify="1" mult="0.07" all="1" base="health" y="5" />
     </effect>
   </battleground>
+  <battleground>
+    <id>170</id>
+    <name>Eye of the Maelstrom</name>
+    <desc>All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health. This BGE is subject to change.</desc>
+    <icon>filter_seafolk_64</icon>
+    <effect>
+      <add_skill id="regenerate" mult="0.15" base="health" y="12" delay="3,4" />
+      <add_skill id="mark" mult="0.15" base="health" y="12" />
+      <skill id="displayEffect" trigger="onSkill" y="12" s="mark">
+        <target_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </target_effect>
+        <actor_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </actor_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2538,7 +2562,7 @@
     <icon>Weaken_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <add_skill id="daze" x="10" all="1" />
+      <add_skill id="daze" x="15" all="1" />
     </effect>
   </battleground>
   <battleground>

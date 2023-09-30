@@ -105,6 +105,10 @@ var LOCATIONS = {
 		"id": "30",
 		"name": "Return to Karthos"
 	},
+	"31": {
+		"id": "31",
+		"name": "Return to Tarragon Peak"
+	},
 	"34": {
 		"id": "34",
 		"name": "Conflux Convergence"
@@ -6523,7 +6527,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2049",
 		"id": "3012",
 		"items": {},
-		"location_id": "17",
+		"location_id": "12",
 		"missions": [
 			"6075",
 			"6076",
@@ -6537,7 +6541,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2067",
 		"id": "3013",
 		"items": {},
-		"location_id": "20",
+		"location_id": "12",
 		"missions": [
 			"6175",
 			"6176",
@@ -6551,7 +6555,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2068",
 		"id": "3014",
 		"items": {},
-		"location_id": "22",
+		"location_id": "12",
 		"missions": [
 			"6219",
 			"6220",
@@ -6883,6 +6887,41 @@ var CAMPAIGNS = {
 		],
 		"name": "Lightning Boss Gobtoh",
 		"side_mission": "1"
+	},
+	"5002": {
+		"battleground_id": "2121",
+		"id": "5002",
+		"items": {
+			"3128": 0.9
+		},
+		"location_id": "34",
+		"missions": [
+			"2007",
+			"2008",
+			"2009",
+			"2010",
+			"2011",
+			"2012"
+		],
+		"name": "Lightning Boss K'luum"
+	},
+	"5003": {
+		"id": "5003",
+		"items": {
+			"3128": 0.9
+		},
+		"location_id": "34",
+		"missions": [
+			"2013",
+			"2014",
+			"2015",
+			"2016",
+			"2017",
+			"2018",
+			"2019",
+			"2020"
+		],
+		"name": "Spellstone's 8th Anniversary"
 	}
 };
 var MISSIONS = {
@@ -17178,6 +17217,486 @@ var MISSIONS = {
 		],
 		"id": "2012",
 		"name": "To a World Rewritten"
+	},
+	"2013": {
+		"commander": {
+			"id": "449"
+		},
+		"deck": [
+			{
+				"id": "2016"
+			},
+			{
+				"id": "2000"
+			},
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7047"
+			},
+			{
+				"id": "7009"
+			},
+			{
+				"id": "7031"
+			},
+			{
+				"id": "7002"
+			},
+			{
+				"id": "7000"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1600",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1602",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1605",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1610",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1614",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2013",
+		"name": "Celebrating Year 1"
+	},
+	"2014": {
+		"commander": {
+			"id": "450"
+		},
+		"deck": [
+			{
+				"id": "2017"
+			},
+			{
+				"id": "5002"
+			},
+			{
+				"id": "5004"
+			},
+			{
+				"id": "5005"
+			},
+			{
+				"id": "5006"
+			},
+			{
+				"id": "5007"
+			},
+			{
+				"id": "5009"
+			},
+			{
+				"id": "5027"
+			},
+			{
+				"id": "5028"
+			},
+			{
+				"id": "5030",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2021",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1019",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1017",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1007",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1006",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2014",
+		"name": "Celebrating Year 2"
+	},
+	"2015": {
+		"commander": {
+			"id": "451"
+		},
+		"deck": [
+			{
+				"id": "2018"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "6001",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6025",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6028",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6030",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1317",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1312",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2015",
+		"name": "Celebrating Year 3"
+	},
+	"2016": {
+		"commander": {
+			"id": "485"
+		},
+		"deck": [
+			{
+				"id": "2039"
+			},
+			{
+				"id": "2035"
+			},
+			{
+				"id": "2035"
+			},
+			{
+				"id": "2035"
+			},
+			{
+				"id": "2035"
+			},
+			{
+				"id": "2036"
+			},
+			{
+				"id": "2036"
+			},
+			{
+				"id": "2036"
+			},
+			{
+				"id": "2036"
+			},
+			{
+				"id": "2037",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2037",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2037",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2038",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2038",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2038",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2016",
+		"name": "Celebrating Year 4"
+	},
+	"2017": {
+		"commander": {
+			"id": "486"
+		},
+		"deck": [
+			{
+				"id": "2074"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2072"
+			},
+			{
+				"id": "2073",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2073",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2073",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2073",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2073",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2073",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2017",
+		"name": "Celebrating Year 5"
+	},
+	"2018": {
+		"commander": {
+			"id": "487"
+		},
+		"deck": [
+			{
+				"id": "2094"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "2093",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2093",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2093",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2093",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2093",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2093",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2018",
+		"name": "Celebrating Year 6"
+	},
+	"2019": {
+		"commander": {
+			"id": "488"
+		},
+		"deck": [
+			{
+				"id": "2158"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607"
+			},
+			{
+				"id": "607",
+				"mastery_level": "2"
+			},
+			{
+				"id": "607",
+				"mastery_level": "3"
+			},
+			{
+				"id": "607",
+				"mastery_level": "4"
+			},
+			{
+				"id": "607",
+				"mastery_level": "5"
+			},
+			{
+				"id": "607",
+				"mastery_level": "6"
+			},
+			{
+				"id": "607",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2019",
+		"name": "Celebrating Year 7"
+	},
+	"2020": {
+		"commander": {
+			"id": "489"
+		},
+		"deck": [
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500",
+				"mastery_level": "2"
+			},
+			{
+				"id": "500",
+				"mastery_level": "3"
+			},
+			{
+				"id": "500",
+				"mastery_level": "4"
+			},
+			{
+				"id": "500",
+				"mastery_level": "5"
+			},
+			{
+				"id": "500",
+				"mastery_level": "6"
+			},
+			{
+				"id": "500",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2020",
+		"name": "Celebrating Year 8"
 	},
 	"3654": {
 		"commander": {

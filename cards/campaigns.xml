@@ -4773,8 +4773,7 @@
   <campaign>
     <id>1136</id>
     <name>Sea Temple Defenses</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <location_id>11</location_id>
@@ -4800,8 +4799,7 @@
   <campaign>
     <id>1137</id>
     <name>Beneath the Waves</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <location_id>11</location_id>
@@ -4836,8 +4834,7 @@
   <campaign>
     <id>1138</id>
     <name>The Temple's Judgement</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1137" level="1"/> -->
+    <campaign_req id="1137" level="1" />
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -4876,8 +4873,7 @@
     <name>Through Fire and Water</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1137" level="1"/> -->
+    <campaign_req id="1137" level="1" />
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <battleground_id>2020</battleground_id>
@@ -4908,8 +4904,7 @@
   <campaign>
     <id>1140</id>
     <name>Newfound Alliance</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1138" level="1"/> -->
+    <campaign_req id="1138" level="1" />
     <locked_start_time>1506013200</locked_start_time>
     <!-- Thu, 21 Sept 2017 17:00:00 -->
     <battleground_id>2021</battleground_id>
@@ -4946,8 +4941,7 @@
   <campaign>
     <id>1141</id>
     <name>Warmonger</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1140" level="1"/> -->
+    <campaign_req id="1140" level="1" />
     <locked_start_time>1507222800</locked_start_time>
     <!-- Thu, 5 Oct 2017 17:00:00 -->
     <battleground_id>2022</battleground_id>
@@ -6922,8 +6916,7 @@
   <campaign>
     <id>1200</id>
     <name>Notorious Reputation</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1551978000</locked_start_time>
     <!-- Thu, 07 March 2019 17:00:00 GMT -->
     <location_id>21</location_id>
@@ -6952,8 +6945,7 @@
   <campaign>
     <id>1201</id>
     <name>Bridge Builder</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1200" level="1"/> -->
+    <campaign_req id="1200" level="1" />
     <locked_start_time>1553187600</locked_start_time>
     <!--  Thu, March 21 2019 17:00:00 -->
     <battleground_id>2061</battleground_id>
@@ -6986,8 +6978,7 @@
     <name>A Brighter Future</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1200" level="1"/> -->
+    <campaign_req id="1200" level="1" />
     <locked_start_time>1553187600</locked_start_time>
     <!-- Thu, March 21 2019 17:00:00 -->
     <battleground_id>2062</battleground_id>
@@ -7080,8 +7071,7 @@
   <campaign>
     <id>1205</id>
     <name>Old Alliances Die Hard</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1201" level="1"/> -->
+    <campaign_req id="1201" level="1" />
     <locked_start_time>1554397200</locked_start_time>
     <!-- Thu, April 04 2019 17:00:00 -->
     <battleground_id>2063</battleground_id>
@@ -7111,8 +7101,7 @@
   <campaign>
     <id>1206</id>
     <name>Goblins' Future</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1205" level="1"/> -->
+    <campaign_req id="1205" level="1" />
     <locked_start_time>1555606800</locked_start_time>
     <!-- Thursday, February 21, 2019  -->
     <battleground_id>2064</battleground_id>
@@ -8949,8 +8938,7 @@
   <campaign>
     <id>1260</id>
     <name>Return to Tarragon Peak</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1600362000</locked_start_time>
     <!-- Thursday, 17 September 2020 17:00:00 -->
     <location_id>31</location_id>
@@ -8986,8 +8974,7 @@
   <campaign>
     <id>1261</id>
     <name>First Order Remnants</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1260" level="1"/> -->
+    <campaign_req id="1260" level="1" />
     <locked_start_time>1601571600</locked_start_time>
     <!-- Thursday, 1 October 2020 17:00:00 -->
     <battleground_id>2103</battleground_id>
@@ -9067,8 +9054,7 @@
     <name>Daknak Fight!</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1260" level="1"/> -->
+    <campaign_req id="1260" level="1" />
     <locked_start_time>1601571600</locked_start_time>
     <!--  Thursday, 1 October 2020 17:00:00 -->
     <battleground_id>2104</battleground_id>
@@ -9103,8 +9089,7 @@
   <campaign>
     <id>1264</id>
     <name>Seastone Staff Secrets</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1261" level="1"/> -->
+    <campaign_req id="1261" level="1" />
     <locked_start_time>1602781200</locked_start_time>
     <!--  Thursday, 15 October 2020 17:00:00 -->
     <battleground_id>2105</battleground_id>
@@ -9141,8 +9126,7 @@
   <campaign>
     <id>1265</id>
     <name>Missing Spiritual Strength</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1264" level="1"/> -->
+    <campaign_req id="1264" level="1" />
     <locked_start_time>1603990800</locked_start_time>
     <!--  Thursday, 29 October 2020 17:00:00 -->
     <battleground_id>2106</battleground_id>
@@ -13339,7 +13323,7 @@
     <side_mission>1</side_mission>
     <battleground_id>2049</battleground_id>
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>17</location_id>
+    <location_id>12</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
     <x>485</x>
@@ -13377,11 +13361,11 @@
     <side_mission>1</side_mission>
     <battleground_id>2067</battleground_id>
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>20</location_id>
+    <location_id>12</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
     <x>825</x>
-    <y>500</y>
+    <y>350</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>6175</mission_id>
@@ -13415,10 +13399,10 @@
     <side_mission>1</side_mission>
     <battleground_id>2068</battleground_id>
     <exclude_map_bges>1</exclude_map_bges>
-    <location_id>22</location_id>
+    <location_id>12</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
-    <x>715</x>
+    <x>515</x>
     <y>182</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
@@ -14184,5 +14168,90 @@
     </rewards>
     <find_item id="3116" drop_per_energy="0.9" />
     <!-- Matches final node (with energy reduction) -->
+  </campaign>
+  <!-- Event 107: ComDev Elementals - New Lightning Node-->
+  <campaign>
+    <id>5002</id>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <name>Lightning Boss K'luum</name>
+    <icon id="energy_refill" bundle="30" />
+    <exclude_map_bges>1</exclude_map_bges>
+    <battleground_id>2121</battleground_id>
+    <!-- No rune effect BGE in battleground_effects.xml -->
+    <location_id>34</location_id>
+    <!-- Conflux Convergence in map_config.xml -->
+    <x>900</x>
+    <!-- Left Right -->
+    <y>200</y>
+    <!-- Up Down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>2007</mission_id>
+      <mission_id>2008</mission_id>
+      <mission_id>2009</mission_id>
+      <mission_id>2010</mission_id>
+      <mission_id>2011</mission_id>
+      <mission_id>2012</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="516" />
+      <!-- Thank You crate (energy and bounty refill) -->
+      <item level="2" id="22031" />
+      <!-- Quad Anima Dryad -->
+      <item level="3" id="22019" />
+      <!-- Quad Chalirazer -->
+      <item level="4" id="104075" number="25" />
+      <!-- Kluum -->
+      <item level="5" id="104075" number="75" />
+      <!-- Kluum -->
+      <item level="6" id="2802" number="50" />
+      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
+      <item level="7" id="2802" number="100" />
+      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
+    </rewards>
+    <find_item id="3128" drop_per_energy="0.9" />
+    <!-- Matches final node (with energy reduction) -->
+  </campaign>
+  <!-- Spellstone 8th Anniversary -->
+  <campaign>
+    <id>5003</id>
+    <name>Spellstone's 8th Anniversary</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <exclude_map_bges>1</exclude_map_bges>
+    <icon id="firework" bundle="96" />
+    <location_id>34</location_id>
+    <x>260</x>
+    <y>320</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>2013</mission_id>
+      <mission_id>2014</mission_id>
+      <mission_id>2015</mission_id>
+      <mission_id>2016</mission_id>
+      <mission_id>2017</mission_id>
+      <mission_id>2018</mission_id>
+      <mission_id>2019</mission_id>
+      <mission_id>2020</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104067" number="100" />
+      <!-- Uncommon Allies -->
+      <item level="2" id="105640" number="100" />
+      <!-- Kattoraki, the Sword Savior -->
+      <item level="3" id="104068" number="100" />
+      <!-- Spark, Sky Menace -->
+      <item level="4" id="104069" number="100" />
+      <!-- Atlatl, Forest Hunter -->
+      <item level="5" id="104070" number="100" />
+      <!-- Gurk, The Traitor -->
+      <item level="6" id="104071" number="100" />
+      <!-- Naglar Chainsawpaw -->
+      <item level="7" id="104072" number="100" />
+      <!-- Doctor Mechau -->
+    </rewards>
+    <find_item id="3128" drop_per_energy="0.9" />
+    <!-- Matches final node with energy reduction -->
   </campaign>
 </root>

@@ -2556,6 +2556,31 @@ var BATTLEGROUNDS = {
 		"id": "169",
 		"name": "Elemental Meltdown"
 	},
+	"170": {
+		"desc": "All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health. This BGE is subject to change.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "mark",
+				"mult": 0.15,
+				"y": "12"
+			}
+		],
+		"id": "170",
+		"name": "Eye of the Maelstrom"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4284,7 +4309,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "add_skill",
 				"id": "daze",
-				"x": 10
+				"x": 15
 			}
 		],
 		"id": "561",

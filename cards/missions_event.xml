@@ -67201,7 +67201,7 @@
     <energy>7</energy>
     <desc>You are having a dream. Ominous purple cracks spread across Arcantica, and a bubbling rainbow of chaotic possibilities bleeds out from within them.</desc>
     <commander id="484" />
-    <!-- Lightning Boss K&apos;luum -->
+    <!-- Lightning Boss K'luum -->
     <deck>
       <card id="4075" />
       <!-- K'luum, the Unbound Void -->
@@ -67241,7 +67241,7 @@
     <energy>7</energy>
     <desc>The world drowns in those infinite colors, and then the universe. Then, the waters still. Everything gives way to ominous black. Not even the stars are visible.</desc>
     <commander id="484" />
-    <!-- Lightning Boss K&apos;luum -->
+    <!-- Lightning Boss K'luum -->
     <deck>
       <card id="4075" />
       <!-- K'luum, the Unbound Void -->
@@ -67281,7 +67281,7 @@
     <energy>7</energy>
     <desc>You cannot perceive anymore. And yet, you can hear a voice call out to you. The whispering is oddly familiar to you... and so is the harsh presence all around you.</desc>
     <commander id="484" />
-    <!-- Lightning Boss K&apos;luum -->
+    <!-- Lightning Boss K'luum -->
     <deck>
       <card id="4075" />
       <!-- K'luum, the Unbound Void -->
@@ -67328,7 +67328,7 @@
     <energy>7</energy>
     <desc>Voidlings usher you mindlessly through the shadows. A million purple eyes open. The presence clawing at your sanity is the all-encompassing darkness.</desc>
     <commander id="484" />
-    <!-- Lightning Boss K&apos;luum -->
+    <!-- Lightning Boss K'luum -->
     <deck>
       <card id="4075" />
       <!-- K'luum, the Unbound Void -->
@@ -67410,7 +67410,7 @@
     <energy>7</energy>
     <desc>You raise your blade and your Spellstones in defiance against the protean Void. The voices taunt you, but you keep what is left of your wits and battle on!</desc>
     <commander id="484" />
-    <!-- Lightning Boss K&apos;luum -->
+    <!-- Lightning Boss K'luum -->
     <deck>
       <card id="4075" />
       <!-- K'luum, the Unbound Void -->
@@ -67462,7 +67462,7 @@
     <energy>7</energy>
     <desc>As you flail around uselessly, you sense the Void bore of this fight. The very air pulses with rage. The more you fight, the more your head throbs. Soon you fall into a vast black sleep, and you know no more.</desc>
     <commander id="484" />
-    <!-- Lightning Boss K&apos;luum -->
+    <!-- Lightning Boss K'luum -->
     <deck>
       <card id="4075" />
       <!-- K'luum, the Unbound Void -->
@@ -67505,6 +67505,498 @@
         <commander>void2</commander>
         <enemy>1</enemy>
         <text>Return... from whence thou came...</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Spellstone 8th Anniversary -->
+  <mission>
+    <id>2013</id>
+    <name>Celebrating Year 1</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and we definitely remembered. Definitely nothing last minute about this celebration.</desc>
+    <commander id="449" />
+    <!-- Atlas, Party Titan -->
+    <deck>
+      <card id="2016" />
+      <!-- Atlas, the Ancient -->
+      <card id="2000" />
+      <!-- Wasteland Nomad -->
+      <card id="7011" />
+      <!-- Wolf Girl -->
+      <card id="7047" />
+      <!-- Shaman of the Wild -->
+      <card id="7009" />
+      <!-- Rhino Beast -->
+      <card id="7031" />
+      <!-- Saberjaw Elite -->
+      <card id="7002" />
+      <!-- Cerberus -->
+      <card id="7000" />
+      <!-- Treant King -->
+      <card id="1625" />
+      <!-- Ferocious Clawkin -->
+      <card id="1626" mastery_level="2" />
+      <!-- Tusker -->
+      <card id="1600" mastery_level="3" />
+      <!-- Woodland Fairy -->
+      <card id="1602" mastery_level="4" />
+      <!-- Dire Wolf -->
+      <card id="1605" mastery_level="5" />
+      <!-- Flying Squirrel -->
+      <card id="1610" mastery_level="6" />
+      <!-- Ranger -->
+      <card id="1614" mastery_level="7" />
+      <!-- Druid -->
+    </deck>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <enemy>0</enemy>
+        <text>SQUAK! It&apos;s Spellstone&apos;s 8th anniversary! Did you remember to invite the party Titans?</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblinspikedshell</commander>
+        <enemy>1</enemy>
+        <text>... Um ... ...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>0</enemy>
+        <text>Oh hey there. We and the other Titans heard there was a celebration party.</text>
+      </line>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>0</enemy>
+        <text>It certainly has been a very eventful year hasn&apos;t it?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>0</enemy>
+        <text>But let&apos;s not dwell on the past. Time to celebrate and look ahead to another year!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2014</id>
+    <name>Celebrating Year 2</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and time to start the celebration with an old classic.</desc>
+    <commander id="450" />
+    <!-- Solaron, Likes to Party -->
+    <deck>
+      <card id="2017" />
+      <!-- Solaron, the Origin -->
+      <card id="5002" />
+      <!-- Twilight Mirror -->
+      <card id="5004" />
+      <!-- Lightning Lord -->
+      <card id="5005" />
+      <!-- Storm Giant -->
+      <card id="5006" />
+      <!-- Arms Enforcer -->
+      <card id="5007" />
+      <!-- Arcane Scroll -->
+      <card id="5009" />
+      <!-- Royal Guardian -->
+      <card id="5027" />
+      <!-- Northern War-kin -->
+      <card id="5028" />
+      <!-- Winter Blacksmith -->
+      <card id="5030" mastery_level="2" />
+      <!-- Loxphas Mage -->
+      <card id="2021" mastery_level="3" />
+      <!-- Snowstep Ranger -->
+      <card id="1019" mastery_level="4" />
+      <!-- Oracle -->
+      <card id="1017" mastery_level="5" />
+      <!-- Judgment -->
+      <card id="1007" mastery_level="6" />
+      <!-- Fox Trickster -->
+      <card id="1006" mastery_level="7" />
+      <!-- Soul Wisp -->
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>0</enemy>
+        <text>The Vengeance buff is coming! And everybody&apos;s jumping!</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>0</enemy>
+        <text>Wait, you don&apos;t even have Vengenace.</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>0</enemy>
+        <text>I hope he knows it&apos;s just a joke...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2015</id>
+    <name>Celebrating Year 3</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and the DJ is blasting out tunes. Except that everyone probably has the music muted.</desc>
+    <commander id="451" />
+    <!-- Vulcanos, Party Titan -->
+    <deck>
+      <card id="2018" />
+      <!-- Vulcanos, the Forge -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6043" />
+      <!-- Sandstorm -->
+      <card id="6001" mastery_level="2" />
+      <!-- Orobas -->
+      <card id="6025" mastery_level="3" />
+      <!-- Dragon Keeper -->
+      <card id="6028" mastery_level="4" />
+      <!-- Brahmet -->
+      <card id="6030" mastery_level="5" />
+      <!-- Noveria Yeti -->
+      <card id="1317" mastery_level="6" />
+      <!-- Fire Imp -->
+      <card id="1312" mastery_level="7" />
+      <!-- Scythe Demon -->
+    </deck>
+    <speech>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>0</enemy>
+        <text>What&apos;s the name of this song?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2016</id>
+    <name>Celebrating Year 4</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and new party guests have arrived.</desc>
+    <commander id="485" />
+    <!-- Party Mythic Narix -->
+    <deck>
+      <card id="2039" />
+      <!-- Narix, Dragonlord -->
+      <card id="2035" />
+      <!-- Mysterious Egg -->
+      <card id="2035" />
+      <!-- Mysterious Egg -->
+      <card id="2035" />
+      <!-- Mysterious Egg -->
+      <card id="2035" />
+      <!-- Mysterious Egg -->
+      <card id="2036" />
+      <!-- Narix, Dragon Whelp -->
+      <card id="2036" />
+      <!-- Narix, Dragon Whelp -->
+      <card id="2036" />
+      <!-- Narix, Dragon Whelp -->
+      <card id="2036" />
+      <!-- Narix, Dragon Whelp -->
+      <card id="2037" mastery_level="2" />
+      <!-- Narix, the Defiant -->
+      <card id="2037" mastery_level="3" />
+      <!-- Narix, the Defiant -->
+      <card id="2037" mastery_level="4" />
+      <!-- Narix, the Defiant -->
+      <card id="2038" mastery_level="5" />
+      <!-- Narix, the Tyrant -->
+      <card id="2038" mastery_level="6" />
+      <!-- Narix, the Tyrant -->
+      <card id="2038" mastery_level="7" />
+      <!-- Narix, the Tyrant -->
+    </deck>
+    <speech>
+      <line>
+        <commander>narix</commander>
+        <enemy>1</enemy>
+        <text>So y&apos;all having a party and didn&apos;t invite the other Mythics?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Look! I wasted 500 gold buying you as an egg before I knew what it was for!</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <enemy>0</enemy>
+        <text>SQUAK! Technically it was the goblin merchant that swindled you.</text>
+      </line>
+      <line>
+        <commander>goblinmerchant</commander>
+        <enemy>1</enemy>
+        <text>Hey! This is a celebration not a feedback session!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2017</id>
+    <name>Celebrating Year 5</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and a queen is doing her own little thing.</desc>
+    <commander id="486" />
+    <!-- Party Mythic Scylla -->
+    <deck>
+      <card id="2074" />
+      <!-- Scylla, Sea's Torment -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="2073" mastery_level="2" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2073" mastery_level="3" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2073" mastery_level="4" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2073" mastery_level="5" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2073" mastery_level="6" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2073" mastery_level="7" />
+      <!-- Scylla, Smuggler's End -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Mythic_Seafolk</commander>
+        <enemy>1</enemy>
+        <text>If you liked it then you shoulda put a rune on it!</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Seafolk</commander>
+        <enemy>1</enemy>
+        <text>Don&apos;t be mad once you see others have Health on it</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>0</enemy>
+        <text>People put a rune on me way before you though...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2018</id>
+    <name>Celebrating Year 6</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and we are celebrating all our successes and victories.</desc>
+    <commander id="487" />
+    <!-- Party Mythic Verus -->
+    <deck>
+      <card id="2094" />
+      <!-- Verus, the Galeheart -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="2093" mastery_level="2" />
+      <!-- Verus, the Wind Dancer -->
+      <card id="2093" mastery_level="3" />
+      <!-- Verus, the Wind Dancer -->
+      <card id="2093" mastery_level="4" />
+      <!-- Verus, the Wind Dancer -->
+      <card id="2093" mastery_level="5" />
+      <!-- Verus, the Wind Dancer -->
+      <card id="2093" mastery_level="6" />
+      <!-- Verus, the Wind Dancer -->
+      <card id="2093" mastery_level="7" />
+      <!-- Verus, the Wind Dancer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>We are the champions, my friends...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>0</enemy>
+        <text>Um, we&apos;re mythics, not champions.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>... Speak for yourself!</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>And we&apos;ll keep on fighting til the end...</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>0</enemy>
+        <text>OK, that&apos;s definitely not true in your case</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2019</id>
+    <name>Celebrating Year 7</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and things are getting animated. Reanimated even.</desc>
+    <commander id="488" />
+    <!-- Party Mythic Mortagan -->
+    <deck>
+      <card id="2158" />
+      <!-- Mortagan, Grave General -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" mastery_level="2" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" mastery_level="3" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" mastery_level="4" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" mastery_level="5" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" mastery_level="6" />
+      <!-- Unearthed Skeleton -->
+      <card id="607" mastery_level="7" />
+      <!-- Unearthed Skeleton -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_undead</commander>
+        <enemy>1</enemy>
+        <text>I fell in to a burning ring of fire... Went down, down, down, and the flames went higher...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_undead</commander>
+        <enemy>1</enemy>
+        <text>And it burns, burns, burns... the ring of fire, the ring of fire!</text>
+      </line>
+      <line>
+        <commander>wyldguardian</commander>
+        <enemy>0</enemy>
+        <text>Yeah, but I hit skip so you don&apos;t catch fire for me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2020</id>
+    <name>Celebrating Year 8</name>
+    <energy>1</energy>
+    <desc>It&apos;s Spellstone&apos;s 8th anniversary and it&apos; time to finish this mastery level and get an amazing reward!</desc>
+    <commander id="489" />
+    <!-- Party Mythic Midas -->
+    <deck>
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" />
+      <!-- Arcane Dustling -->
+      <card id="500" mastery_level="2" />
+      <!-- Arcane Dustling -->
+      <card id="500" mastery_level="3" />
+      <!-- Arcane Dustling -->
+      <card id="500" mastery_level="4" />
+      <!-- Arcane Dustling -->
+      <card id="500" mastery_level="5" />
+      <!-- Arcane Dustling -->
+      <card id="500" mastery_level="6" />
+      <!-- Arcane Dustling -->
+      <card id="500" mastery_level="7" />
+      <!-- Arcane Dustling -->
+    </deck>
+    <speech>
+      <line>
+        <commander>aetherguardian</commander>
+        <enemy>0</enemy>
+        <text>Wait, is that?</text>
+      </line>
+      <line>
+        <commander>chaosguardian</commander>
+        <enemy>0</enemy>
+        <text>... for real?</text>
+      </line>
+      <line>
+        <commander>narix</commander>
+        <enemy>0</enemy>
+        <text>So the rumors were true!</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Seafolk</commander>
+        <enemy>1</enemy>
+        <text>It has to be!</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>1</enemy>
+        <text>It&apos;s so shiny!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_undead</commander>
+        <enemy>1</enemy>
+        <text>I cannot wait to see his skills!</text>
       </line>
     </speech>
   </mission>

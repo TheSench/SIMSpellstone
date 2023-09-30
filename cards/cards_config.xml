@@ -1006,11 +1006,11 @@
     <id>5100</id>
     <name>Champion Premium</name>
     <visible>1</visible>
-    <icon>set_icon_shard</icon>
-    <picture>set_icon_shard</picture>
-    <!-- <icon>set_icon_shard_premium</icon>
-		<picture>set_icon_shard_premium</picture>
-		<picture_bundle>30</picture_bundle> -->
+    <!--<icon>set_icon_shard</icon>
+		<picture>set_icon_shard</picture>-->
+    <icon>set_icon_shard_premium</icon>
+    <picture>set_icon_shard_premium</picture>
+    <picture_bundle>30</picture_bundle>
   </cardSet>
   <cardSet>
     <id>5200</id>

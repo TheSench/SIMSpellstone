@@ -20138,6 +20138,127 @@
       <!-- Shards  -->
     </reward>
   </achievement>
+  <!-- Spellstone 8th Anniversary -->
+  <achievement>
+    <id>3915</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's 8th Anniversary</name>
+    <desc>Complete the Spellstone's 8th Anniversary campaign on Mastery Level 1.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>5003</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+      <!-- Legendary Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3916</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's 8th Anniversary</name>
+    <desc>Complete the Spellstone's 8th Anniversary campaign on Mastery Level 2.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3915</achievement_req>
+    <req>
+      <campaign>5003</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>8888</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3917</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's 8th Anniversary</name>
+    <desc>Complete the Spellstone's 8th Anniversary campaign on Mastery Level 3.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3916</achievement_req>
+    <req>
+      <campaign>5003</campaign>
+      <level>3</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+      <!-- Legendary Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3918</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's 8th Anniversary</name>
+    <desc>Complete the Spellstone's 8th Anniversary campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3917</achievement_req>
+    <req>
+      <campaign>5003</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>888</sp>
+      <!-- Dust  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3919</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's 8th Anniversary</name>
+    <desc>Complete the Spellstone's 8th Anniversary campaign on Mastery Level 5.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3918</achievement_req>
+    <req>
+      <campaign>5003</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+      <!-- Legendary Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3920</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's 8th Anniversary</name>
+    <desc>Complete the Spellstone's 8th Anniversary campaign on Mastery Level 6.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3919</achievement_req>
+    <req>
+      <campaign>5003</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>80</wb>
+      <!-- Shards  -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3921</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spellstone's 8th Anniversary</name>
+    <desc>Complete the Spellstone's 8th Anniversary campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3920</achievement_req>
+    <req>
+      <campaign>5003</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory expansion -->
+      <!-- <item id="5013" number="1"/> -->
+      <!-- Legendary Health Rune -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
