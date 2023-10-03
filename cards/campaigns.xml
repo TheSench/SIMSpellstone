@@ -14197,9 +14197,9 @@
     <rewards>
       <item level="1" id="516" />
       <!-- Thank You crate (energy and bounty refill) -->
-      <item level="2" id="22031" />
+      <card level="2" id="22031" />
       <!-- Quad Anima Dryad -->
-      <item level="3" id="22019" />
+      <card level="3" id="22019" />
       <!-- Quad Chalirazer -->
       <item level="4" id="104075" number="25" />
       <!-- Kluum -->

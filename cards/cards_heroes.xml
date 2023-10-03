@@ -12856,7 +12856,7 @@
     <portrait>void2</portrait>
     <asset_bundle>5</asset_bundle>
     <attack>0</attack>
-    <health>75</health>
+    <health>18</health>
     <rarity>4</rarity>
     <skill id="barrage" x="4" />
     <skill id="confuse" c="5" />
@@ -12865,37 +12865,37 @@
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>80</health>
+      <health>19</health>
       <skill id="barrage" x="6" />
       <skill id="confuse" c="4" />
       <skill id="imbue" x="2" all="1" s="evade" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>85</health>
+      <health>20</health>
       <skill id="barrage" x="8" />
-      <skill id="confuse" c="3" />
+      <skill id="confuse" c="4" />
       <skill id="imbue" x="3" all="1" s="evade" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>90</health>
+      <health>21</health>
       <skill id="barrage" x="11" />
-      <skill id="confuse" c="2" />
+      <skill id="confuse" c="3" />
       <skill id="imbue" x="4" all="1" s="evade" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>95</health>
+      <health>22</health>
       <skill id="barrage" x="15" />
-      <skill id="confuse" c="1" />
+      <skill id="confuse" c="3" />
       <skill id="imbue" x="5" all="1" s="evade" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>99</health>
+      <health>23</health>
       <skill id="barrage" x="20" />
-      <skill id="confuse" c="1" />
+      <skill id="confuse" c="2" />
       <skill id="imbue" x="6" all="1" s="evade" />
     </upgrade>
   </unit>
